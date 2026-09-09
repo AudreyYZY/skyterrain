@@ -35,7 +35,7 @@ const RULE = val("--rule") ?? "C6d";
 const match = SENTENCE_RULES[RULE];
 if (!match) {
   console.error(`未知规则 --rule ${RULE}；可用：${Object.keys(SENTENCE_RULES).join(" / ")}`);
-  console.error("（C6i 与 D1b 是条目级/整段级判据，不是逐句的，只在 npm run check:claims 里报）");
+  console.error("（C6i / D1b / C6k 不在这里：前两个是条目级/整段级判据，C6k 要按条目所属国家查表，都只在 npm run check:claims 里报）");
   process.exit(2);
 }
 const COUNTRY = val("--country");

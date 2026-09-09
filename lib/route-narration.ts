@@ -1540,7 +1540,7 @@ export const ROUTE_NARRATION: Record<
       "飞过爱尔兰海，北爱尔兰一侧最先出现的是莫恩山——一片花岗岩的圆顶山，几乎从海边直接拔起。贝尔法斯特就在莫恩山以北、拉甘河汇入贝尔法斯特湾处。",
     "en-US":
       "London to Belfast crosses from south-east England to the north-east of the island of Ireland. After take-off come the Chiltern chalk hills, then the plains of the west Midlands, where the Severn — the longest river in Britain — winds, with a huge tidal range at its mouth." +
-      " Then into Wales and, below, Snowdonia: an old glacier-carved range in north Wales, its highest peak Snowdon (in Welsh, Yr Wyddfa) at 1,085 m, with deep valleys and glacial lakes between the summits." +
+      " Then into Wales and, below, Eryri, the range known in English as Snowdonia: an old glacier-carved range in north Wales, its highest peak Yr Wyddfa at 1,085 m, with deep valleys and glacial lakes between the summits." +
       " Across the Irish Sea, the first thing to appear on the Northern Ireland side is the Mourne Mountains — a cluster of rounded granite domes that rise almost straight from the sea. Belfast is north of the Mournes, where the River Lagan meets Belfast Lough.",
     },
     travel: {

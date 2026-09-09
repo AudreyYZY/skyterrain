@@ -9,11 +9,18 @@
 /** 句子里出现年份就算交代了时点 */
 export const HAS_YEAR = /(1[89]|20)\d{2}/;
 
-/** C6：**人口**这类逐年变化的量（只盯人口，面积/海拔/长度基本不随时间变） */
+/**
+ * C6：**人口**这类逐年变化的量（只盯人口，面积/海拔/长度基本不随时间变）。
+ *
+ * **第二条正则是 2026-09-08 补的**：原来只认「人口」「居民」这类词，于是
+ * 「悉尼……**都会区约 530 万人**」「米兰……**都会区约 320 万人**」这种**不带「人口」二字的
+ * 人口数字整片漏掉**（一次补测扫出 51 处）。判据是「口径词 + 数字 + 万人/million」，
+ * 收得很紧 —— 只认真正的行政/统计口径词打头，避免把「每年吸引上百万人」这类访客数一起报进来。
+ */
 export const PERISHABLE_ZH =
-  /(常住人口|户籍人口|城区人口|都会区人口|市区人口|人口|居民)[^。；！？]{0,20}?\d[\d.,]*\s*(万|亿|人|户)/;
+  /(常住人口|户籍人口|城区人口|都会区人口|市区人口|人口|居民)[^。；！？]{0,20}?\d[\d.,]*\s*(万|亿|人|户)|(都会区|城区|市区|市镇|全市|全岛|大区|连绵区|聚合区|建成区|都市圈|首都圈)[^。；！？]{0,8}?\d[\d.,]*\s*万人/;
 export const PERISHABLE_EN =
-  /\b(population|inhabitants|residents)\b[^.;!?]{0,40}?[\d.,]+\s*(million|billion|thousand|people|residents|inhabitants)/i;
+  /\b(population|inhabitants|residents)\b[^.;!?]{0,40}?[\d.,]+\s*(million|billion|thousand|people|residents|inhabitants)|\b(metro(?:politan)? area|urban area|built-up area|metropolitan region)\b[^.;!?]{0,30}?[\d.,]+\s*(million|thousand)/i;
 
 /**
  * 「定义上就不逐年更新」的系列 —— 报出来只会让人去改一个本来就正确的句子。

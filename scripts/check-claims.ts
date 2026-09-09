@@ -10,6 +10,7 @@
  *   C1b  排名断言没有口径 —— 横滨「日本人口第二多的市」错在把两种口径混了
  *   C6i  同一条目的 identity 与 howItWorks 给出两个互相矛盾的「全市人口」
  *   D1b  「公报未单列市区人口」之后又给出一个市区人口 —— 免责声明与数字自相矛盾
+ *   C6k  用了**这个国家官方统计里根本不存在的口径** —— 「市区常住人口」在中国不是官方称谓
  *   D4   拼接漏空格造成的粘连句 —— 「…of the flight.Easter Island lies…」
  *
  * 存量很大，一次性清不完，所以这里不是「有就报错」，而是**棘轮**：
@@ -23,6 +24,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
+import { CITY_REGISTRY } from "../lib/places-registry.ts";
+import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
 import {
   FRESH_SINCE,
   CENSUS_ZH,
@@ -57,6 +60,116 @@ const PERISHABLE_EN =
 
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
+
+/**
+ * C6k：**这个国家的官方统计里根本没有这个口径**。
+ *
+ * `C6-c` 一直是靠人核出来的：「口径先于数字 —— 先确认这个口径在该国官方统计里存不存在」。
+ * 2026-09-08 那批把它推到了极端：**福州、济南、长沙、南宁、海口、兰州六个条目的
+ * identity 段全都写着「市区常住人口约 N 百万」**，中英同步，而中国地级市年度公报
+ * 只有「全市常住人口」与「城镇常住人口」两档官方称谓 —— 「市区常住人口」是编的。
+ *
+ * 六条一个错误，说明是同一批写出来的。**逐条核实永远发现不了这种错**（每条单看都
+ * 「有数字、句式规范」），只有把同一国家的条目并排看才显形。这条规则就是把「并排看」
+ * 这件事交给脚本。
+ *
+ * **判据是按国家的**，因为同一个词在不同国家的合法性不同：
+ * 「都会区」在美国（MSA）、日本（都市圏）都有官方口径，在丹麦与中国则没有。
+ *
+ * **只写已经核实过的国家**。没核过的国家不要凭印象往里加 —— 那等于用一条猜测去
+ * 拦另一条猜测。表里每一行都要能指到 known-errors 里的一个实例。
+ */
+interface FakeCaliber { re: RegExp; why: string }
+const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
+  // known-errors C6-c / C6-c-5：中国公报只有「全市常住人口」与「城镇常住人口」两档
+  china: [
+    { re: /(市区|中心城区|主城区)常住人口/, why: "中国地级市年度公报只有「全市常住人口」与「城镇常住人口」两档" },
+    { re: /都会区人口|都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "「都会区」在中国不是官方统计口径" },
+  ],
+  // known-errors C6-c-5：挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档，没有「市区」
+  // 2026-09-08 那批 8 个挪威条目的 identity 全都写着「市区人口」—— 与中国那批同一形状，
+  // 而且更隐蔽：同一个自造标签底下，narvik/alta 的数字其实是 tettsted、其余是 kommune。
+  norway: [
+    { re: /市区人口/, why: "挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "同上，SSB 没有「都会区」这一档；数字要么是 tettsted 被贴错标签，要么查无官方来源" },
+    { re: /\bmetro(?:politan)? area\b/i, why: "SSB publishes no metropolitan-area tier" },
+  ],
+  // known-errors C6-c-5：CBS 约 2016 报告年度起停止发布 agglomeratie / stadsgewest；
+  // 「兰斯塔德」从来不是一张按年发布的统计表。现行只有 gemeente / provincie / COROP。
+  netherlands: [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "CBS 已停止发布 agglomeratie / stadsgewest，现行只有 gemeente / provincie / COROP" },
+    { re: /兰斯塔德[^。；]{0,14}?[\d.,]+\s*万/, why: "「兰斯塔德」不是按年发布的官方统计单元" },
+    { re: /\bmetro(?:politan)? area\b[^.;]{0,24}?[\d.,]+/i, why: "CBS publishes no agglomeration tier any more" },
+  ],
+  // known-errors C6-c-5：日本没有「市区人口」这个复合概念（「市」与「区」是平行的不同层级），
+  // 也从未使用「都会区」——総務省的官方专名是「東京圏」「近畿大都市圏」「中京大都市圏」。
+  japan: [
+    { re: /市区人口/, why: "日本按「市区町村」逐一发布人口，没有「市区人口」这个复合口径" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "総務省用的是「大都市圏」（東京圏/近畿/中京），从无「都会区」" },
+  ],
+  // known-errors C6-c-5：ISTAT 只有 comune 常住人口；città metropolitana 是行政建制不是统计口径
+  italy: [
+    { re: /市区人口/, why: "意大利 ISTAT 只发布 comune（市镇）常住人口" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "ISTAT 没有「都会区」这一称谓；该写「大都会市（città metropolitana）」" },
+  ],
+  // known-errors C6-c-5：Stats NZ 只有 region / territorial authority / urban area 三档，
+  // 「都会区」在这批条目里曾同时指代四种不同的东西（大区 / 四市相加 / 自造三区相加 / TA 辖区）。
+  "new-zealand": [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "新西兰 Stats NZ 只有 region / territorial authority / urban area 三档" },
+  ],
+  // known-errors C6-c-4 ②：丹麦统计局只有 kommune 与 byområde 两档，没有「都会区」
+  denmark: [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "丹麦统计局只有 kommune（市镇）与 byområde（城区）两档，没有「都会区」" },
+    { re: /\bmetropolitan (?:area|population)\b[^.;]{0,24}?[\d.,]+\s*(?:million|thousand)/i, why: "Statistics Denmark publishes no metropolitan-area tier" },
+  ],
+  // 瑞士：BFS 的官方层级是 Gemeinde/commune（市镇）→ Kanton（州）→ Agglomeration（集聚区，
+  // 见《Raumgliederungen der Schweiz》）。「市区人口」不是 BFS 用语；「城市连绵区」是本仓库
+  // 自己造的说法，两个都不能当口径名用。「都会区」不列进来——巴塞尔的三国区、日内瓦的
+  // 大日内瓦确有跨境机构在统计，只要写明发布方就是可核的（2026-09-09 核）。
+  switzerland: [
+    { re: /市区人口/, why: "瑞士联邦统计局只有市镇（Gemeinde/commune）、州与集聚区（Agglomeration）三档，没有「市区人口」" },
+    { re: /城市连绵区/, why: "「城市连绵区」不是 BFS 的口径名，对应的官方档是「集聚区（Agglomeration）」" },
+  ],
+  // 冰岛：Hagstofa Íslands 的档是 sveitarfélag（市镇）、byggðakjarni/þéttbýlisstaður（城镇聚落）、
+  // höfuðborgarsvæðið（首都区）。「市区人口」不是其中任何一档（2026-09-09 核）。
+  iceland: [
+    { re: /市区人口/, why: "冰岛统计局只有市镇、城镇聚落与首都区三档，没有「市区人口」" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "冰岛统计局没有「都会区」这一档，首都区（höfuðborgarsvæðið）才是官方分组" },
+  ],
+  // 爱尔兰：CSO 的档是普查总人口（全国/各郡）、城市法定辖区（全国仅 5 座法定城市）、
+  // 「城市及郊区」建成区（2022 年普查起启用）、以及只到 NUTS3 的年度估计。
+  // **没有「都会区 / metro area」这一档**（2026-09-09 核，都柏林与利默里克两条都中过招）。
+  // 瑞典**不**列进来：Stormalmö 是通行的统计概念、Göteborgsregionen 是有法人地位的市镇联合体，
+  // 只要写明发布方与年份就是可核的 —— 与瑞士的巴塞尔三国区、大日内瓦同理。
+  ireland: [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "爱尔兰 CSO 没有「都会区」这一档，官方档是「城市及郊区」建成区或郡" },
+    { re: /\b(?:greater )?metro(?:politan)? area\b[^.;]{0,24}?[\d.,]+/i, why: "Ireland's CSO publishes no metropolitan-area tier — use the census city-and-suburbs count or the county" },
+  ],
+};
+
+/**
+ * 免责语：句子本身就在说「这个口径不存在 / 公报没单列」时不算命中 ——
+ * 那正是**正确**的写法（D1b 拦的是「说了没有又给出一个数」，不是「说了没有」本身）。
+ */
+const CALIBER_DISCLAIMER =
+  /(未单列|不单列|没有单列|没有这一档|不是[^。；]{0,14}官方|非官方|并未发布|没有发布|口径已停|已停止发布|does not (?:report|give|publish)|no official|not an official|not a single official)/i;
+
+/**
+ * **合法的例外**，不算命中：
+ *
+ * - **普查确实会单列市辖区**。「市区约 122 万（2020 年普查口径）」不是自造口径 ——
+ *   人口普查按市辖区汇总，是有的；不存在的是**年度公报**里的「市区常住人口」。
+ *   句子里点明了普查/市辖区就放过（与 C6d 对普查的豁免同一个道理：**口径写出来了就不算含糊**）。
+ * - **跨境城市群**：哥本哈根—马尔默那句「连成跨国的都会区」说的是厄勒海峡两岸的城市群，
+ *   不是在引用丹麦统计局的某一档数字。
+ */
+const CALIBER_OK =
+  /(普查|市辖区|国势调查|跨国|跨境|census|cross-border)/i;
+
+/** 条目 → 国家（travel 走城市注册表，terrain 走地形注册表） */
+const COUNTRY_OF = new Map<string, string>();
+for (const c of CITY_REGISTRY) COUNTRY_OF.set(`travel/${c.id}`, c.country);
+for (const t of TERRAIN_REGISTRY) COUNTRY_OF.set(`terrain/${t.id}`, t.country);
 
 /**
  * D1b：**一句话里先声明「公报没有单列市区人口」，紧接着又给出一个市区人口**。
@@ -95,11 +208,26 @@ const CROSS_SUB_ZH =
   /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口|城市本身|市镇|县|岛上|全岛|府|州|旧城|市中心)/;
 const CROSS_SUB_EN =
   /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates|register|registered)\b/i;
-const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)/;
-const CROSS_POP_EN = /\b(population|people|residents|inhabitants)\b/i;
+/**
+ * **这里曾经有和 C6 一模一样的洞**（2026-09-09 修）：判据要求句子里出现「人口 / 居民」，
+ * 于是「温尼伯……**都会区约 85 万人**」这种句子 C6i 根本看不见 —— 那一段压根没进比较。
+ * C6 的同一个洞在 2026-09-08 补过一次（`PERISHABLE_ZH` 加了「口径词 + 数字 + 万人」分支），
+ * **但补一处不等于补了另一处**：两条规则各有一份自己的正则，改一份的时候没想到另一份。
+ * 这也是为什么温尼伯「把 CSD 的数贴上都会区标签」那条要靠人工核实才发现。
+ */
+const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)|(都会区|大都会市|城区|市域|全市|全岛|连绵区)[^。；！？]{0,8}?\d[\d.,]*\s*万人/;
+const CROSS_POP_EN = /\b(population|people|residents|inhabitants)\b|\b(metro(?:politan)? area|urban area|conurbation)\b[^.;!?]{0,24}?[\d,]{4,}/i;
 /** 中文数字紧跟在「人口」后；英文数字通常在词之前，所以取句中第一个带单位的数 */
 const CROSS_NUM_ZH = /(?:人口|居民)[^。；！？]{0,10}?([\d.,]+)\s*(万|亿)/;
 const CROSS_NUM_EN = /([\d.,]+)\s*(million|thousand)\b/i;
+/** 口径词直接接数字的写法（「都会区约 85 万人」），C6 那边也补过同一条分支 */
+const CROSS_NUM_ZH_CALIBER = /(?:都会区|大都会市|城区|市域|全市|全岛|连绵区)[^。；！？]{0,8}?([\d.,]+)\s*(万|亿)人/;
+const CROSS_NUM_EN_CALIBER = /(?:metro(?:politan)? area|urban area|conurbation)[^.;!?]{0,24}?([\d,]{4,})(?!\s*(?:million|thousand))/i;
+/** 两种写法都试一遍，先试带「人口/居民」的那种 */
+function crossNumMatch(s: string, zh: boolean): RegExpExecArray | null {
+  return (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s)
+    ?? (zh ? CROSS_NUM_ZH_CALIBER : CROSS_NUM_EN_CALIBER).exec(s);
+}
 /**
  * 次级口径词只在**数字所在的那个分句**里才算数。
  *
@@ -143,13 +271,49 @@ function nearSub(s: string, at: number, len: number, zh: boolean): boolean {
  */
 const CROSS_TOLERANCE = 0.20;
 
-function crossValue(s: string, zh: boolean): number | null {
-  const m = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
+/**
+ * **C6i-b：两段都点名「都会区」这一档，数字却对不上**（2026-09-09 加）。
+ *
+ * C6i 主轨**有意只比「全市档」** —— `CROSS_SUB_ZH` 里明明白白列着「都会区」，
+ * 带子口径的数字一律被 `nearSub` 排除掉。这个设计是对的（拿都会区的数去和市的数比会满屏误报），
+ * 但它留下一个盲区：**两段都写「都会区」、数字却对不上**的情况，主轨根本看不见。
+ *
+ * 温尼伯就是这么漏掉的：identity 写「**都会区**约 85 万」，howItWorks 写
+ * 「市域约 85 万、**都会区**约 95 万」—— 85 万其实是 CSD（市镇）的数被贴上了都会区的标签，
+ * 两个数字都是真的、错的是标签。卡尔加里（161 万 vs 184 万）是同一种。
+ *
+ * 所以另开一条轨：**只在两段都点名同一档口径时比**，容差收到 5% ——
+ * 都指同一个东西，就没有「一段取整、一段精确」的余地了。
+ */
+const SAME_CALIBER_TOLERANCE = 0.05;
+const METRO_CALIBER_ZH = /(都会区|大都会市|城市连绵区|连绵建成区)/;
+const METRO_CALIBER_EN = /\b(metro(?:politan)? area|metropolitan region|conurbation)\b/i;
+/** 取**紧跟在口径词之后**的那个数字（同一句里往往还有市域人口，不能取错） */
+const METRO_NUM_ZH = /(?:都会区|大都会市|城市连绵区|连绵建成区)[^。；！？]{0,10}?([\d.,]+)\s*(万|亿)/;
+const METRO_NUM_EN_FWD =
+  /(?:metro(?:politan)? area|metropolitan region|conurbation)[^.;!?]{0,30}?([\d.,]+)\s*(million|thousand)?/i;
+const METRO_NUM_EN_BACK =
+  /([\d.,]+)\s*(million|thousand)?\s+in the (?:metro(?:politan)? area|metropolitan region)/i;
+function metroValue(s: string, zh: boolean): number | null {
+  const m = zh
+    ? METRO_NUM_ZH.exec(s)
+    : (METRO_NUM_EN_BACK.exec(s) ?? METRO_NUM_EN_FWD.exec(s));
   if (!m) return null;
   const n = parseFloat(m[1]!.replace(/,/g, ""));
   if (!Number.isFinite(n)) return null;
-  const unit = m[2]!.toLowerCase();
-  const mult = unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : 1e3;
+  const unit = (m[2] ?? "").toLowerCase();
+  return n * (unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : unit === "thousand" ? 1e3 : 1);
+}
+
+function crossValue(s: string, zh: boolean): number | null {
+  const m = crossNumMatch(s, zh);
+  if (!m) return null;
+  const n = parseFloat(m[1]!.replace(/,/g, ""));
+  if (!Number.isFinite(n)) return null;
+  // 口径词分支（英文）没有单位词，数字本身就是人数
+  const unit = (m[2] ?? "").toLowerCase();
+  const mult =
+    unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : unit === "thousand" ? 1e3 : 1;
   return n * mult;
 }
 
@@ -164,6 +328,7 @@ type Rule =
   | "C1b-排名断言缺口径"
   | "C6i-同条目两段人口打架"
   | "D1b-说了没单列市区人口又给出市区人口"
+  | "C6k-用了这个国家没有的口径"
   | "D4-粘连句";
 
 interface Hit {
@@ -192,6 +357,8 @@ const hits: Hit[] = [];
 const exempted: { key: string; e: Exempt }[] = [];
 /** C6i 用：按「条目 + 语言」攒 identity / howItWorks 两段的全市人口 */
 const crossByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
+/** C6i-b 用：同样按条目+语言，但只攒**点名了「都会区」这一档**的数字 */
+const metroByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
 
 const { segments } = await collectTtsSegments();
 
@@ -216,8 +383,16 @@ for (const seg of segments) {
     seg.kind === "travel" && (seg.section === "identity" || seg.section === "howItWorks");
 
   for (const s of splitSentences(seg.text)) {
+    if (crossable && (zh ? METRO_CALIBER_ZH : METRO_CALIBER_EN).test(s)) {
+      const mv = metroValue(s, zh);
+      if (mv !== null && mv >= 1000) {
+        const key = `${seg.id}|${seg.lang}`;
+        if (!metroByEntry.has(key)) metroByEntry.set(key, { seg, rows: [] });
+        metroByEntry.get(key)!.rows.push({ section: seg.section, sentence: s, v: mv, census: false });
+      }
+    }
     if (crossable && (zh ? CROSS_POP_ZH : CROSS_POP_EN).test(s)) {
-      const nm = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
+      const nm = crossNumMatch(s, zh);
       const v = nm && !nearSub(s, nm.index, nm[0].length, zh) ? crossValue(s, zh) : null;
       if (v !== null && v >= 1000) {
         const key = `${seg.id}|${seg.lang}`;
@@ -257,6 +432,17 @@ for (const seg of segments) {
     if (isUnqualifiedRank(s, zh)) {
       hits.push({ ...seg, rule: "C1b-排名断言缺口径", sentence: s });
     }
+    // C6k：按条目所属国家查「这个国家没有的口径」；句子自己在说「没有这一档」时放过
+    const country = COUNTRY_OF.get(`${seg.kind}/${seg.id}`);
+    const fakes = country ? FAKE_CALIBER[country] : undefined;
+    if (fakes && !CALIBER_DISCLAIMER.test(s) && !CALIBER_OK.test(s)) {
+      for (const f of fakes) {
+        if (f.re.test(s)) {
+          hits.push({ ...seg, rule: "C6k-用了这个国家没有的口径", sentence: `${s}  ← ${f.why}` });
+          break;
+        }
+      }
+    }
   }
 }
 
@@ -277,6 +463,21 @@ for (const [, { seg, rows }] of crossByEntry) {
   });
 }
 
+// C6i-b：两段都点名「都会区」这一档，数字却对不上（容差 5%）
+for (const [, { seg, rows }] of metroByEntry) {
+  const ident = rows.filter((r) => r.section === "identity");
+  const hiw = rows.filter((r) => r.section === "howItWorks");
+  if (!ident.length || !hiw.length) continue;
+  const a = ident.reduce((m, r) => (r.v > m.v ? r : m));
+  const b = hiw.reduce((m, r) => (r.v > m.v ? r : m));
+  if (Math.abs(a.v - b.v) / Math.max(a.v, b.v) <= SAME_CALIBER_TOLERANCE) continue;
+  hits.push({
+    ...seg,
+    rule: "C6i-同条目两段人口打架",
+    sentence: `【都会区档】identity「${a.sentence.slice(0, 40)}」 vs howItWorks「${b.sentence.slice(0, 40)}」`,
+  });
+}
+
 // ── 报告 ───────────────────────────────────────────────────────────────
 
 const counts: Record<string, number> = {};
@@ -291,6 +492,7 @@ const RULES: Rule[] = [
   "C1b-排名断言缺口径",
   "C6i-同条目两段人口打架",
   "D1b-说了没单列市区人口又给出市区人口",
+  "C6k-用了这个国家没有的口径",
   "D4-粘连句",
 ];
 

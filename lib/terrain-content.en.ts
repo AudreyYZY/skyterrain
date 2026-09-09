@@ -56,14 +56,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   tianshan: {
     seeing:
       "The Tianshan crosses central Xinjiang and splits the region into a southern and a northern half. The whole system runs about 2,500 km east–west, some 1,700 km of it inside China, and is one of the largest independent latitudinal (east–west) mountain systems on Earth. From the air you see white peaks and glaciers, a ring of yellow-green alluvial fans and oases at the foot, and beyond them the Taklamakan and Gurbantunggut deserts.",
-    // formation sources: 新疆天山 2013 年列入世界自然遗产（UNESCO 第 37 届大会，标准 vii、ix）
-    //   https://whc.unesco.org/en/list/1414（1 级，2026-09-08 核）。
-    //   **托木尔峰有两套并存的高程口径**：中国官方 7443 m / 国际常用 7439 m（Jengish Chokusu），
-    //   差 4 m 属测量口径差异 —— 条目取中国官方值，位置写「中国与吉尔吉斯斯坦边界」，准确。
-    //   博格达峰 5445 m、位于阜康市境内，晴天可自乌鲁木齐远眺。
-    //   天山全长约 2500 km、中国境内约 1700 km，与通行表述一致。
+    // formation sources: 托木尔峰海拔 **7443 m**（中国官方 1:100 万地图口径；国际常用值 7439 m，两者是测量口径差异，
+    //   注释里已并列），位于阿克苏地区温宿县与吉尔吉斯斯坦国境线上 —— 正文只陈述地理位置、不涉主权。
+    //   博格达峰主峰 5445 m，在阜康市境内、天山天池所在山。2026-09-08 核。
+    //   **「最有名的地标」是没有限定语的主观最高级，中英两边都踩了**，已改成带范围的说法。
+    //   天山全长约 2500 km、中国境内约 1700 km；「世界上最大的独立纬向山系**之一**」——
+    //   **多数来源写的是不带「之一」的绝对说法，正文反而比来源更保守**，是正确写法的范例。
+    //   雪线 3600–4200 m（《中国国家地理》给天山约 3900–4100 m）、阿尔泰约 2800 m（中国雪线最低处），均核实无误。
+    //   **零争议红线复核通过**：`history` 段只写古丝绸之路北道/中道、绿洲城市历史与 2013 年 UNESCO 列入。
     formation:
-      "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is the best-known landmark.",
+      "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is a well-known landmark of the range's eastern section.",
     observation:
       "Three things identify the Tianshan: a continuous set of parallel east–west ridges; large modern glaciers and permanent snow on the summits; and a row of huge alluvial fans at the foot, each fan edge holding an oasis city (Ürümqi, Shihezi, Korla). Heavenly Lake (Tianchi), a glacial lake below Bogda Peak, is deep blue and the easiest single point to pick out.",
     distinguish:
@@ -88,6 +90,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   是新疆唯一的外流水系，属公认地理事实。
     seeing:
       "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
+    // formation sources: 友谊峰 4374 m 为中蒙界峰；**中俄蒙三国交界点是它以北约 2.5 km、海拔 4082 m 的奎屯峰
+    //   （Nairamdal Peak）** —— 中科院地理科学与资源研究所《中国地貌·阿尔泰山脉》（2 级）与
+    //   Wikidata/维基「Nairamdal Peak」词条，2026-09-08 复核。
+    //   **复核时撞到一条相反的英文摘要**（称友谊峰就在三国交界点上），来源不明、与 Wikidata 冲突，
+    //   采信力更低，**未据以推翻已核实的结论** —— 记在这里，免得下一轮再被同一条摘要动摇。
+    //   阿尔泰山雪线约 2800 m，是中国雪线最低处。`history` 段只写游牧牧场、哈萨克族转场、岩画鹿石、
+    //   图瓦人村落，均为客观民俗与历史事实，零争议红线通过。
     formation:
       "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak — Khüiten Peak on the Mongolian side — reaches 4,374 m on the China–Mongolia border, while the China–Russia–Mongolia tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
     observation:
@@ -369,6 +378,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pamir: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误。
+    //   **一处保留意见**：formation 段「帕米尔是青藏高原向西的延伸」是中科院等机构常用的通俗表述；
+    //   严格地质学上帕米尔是印度—欧亚碰撞的独立前缘突出部，不是简单的延伸。
+    //   该简化与官方科普口径一致，本轮不改，但下一轮若要写得更准，这里是可以改进的一句。
+    //   **零争议红线复核通过**：`history` 段只涉丝路古国与前现代史，无边界线描述、无主权表述。
     seeing:
       "The Pamirs, at the far west of China, are the \"knot\" where the Tianshan, Kunlun, Karakoram and Hindu Kush meet, averaging above 4,000 m — the ancient \"Congling\" (Onion Range). Muztagh Ata (about 7,546 m), with its rounded form and large glaciers running from near the summit down to its foot, is called the \"father of ice mountains.\"",
     formation:
@@ -385,8 +399,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Basins ============
   "tarim-basin": {
+    // seeing sources: 塔里木盆地面积约 **53 万平方公里**（东西长约 1500 km、南北宽约 600 km）——
+    //   若羌县人民政府 https://www.xjrq.gov.cn/rqxrmzf/c109233/201412/0ef6e4260694488a8611ae14feb455eb.shtml
+    //   （1 级，2026-09-08 核，原文「面积达53万平方公里」）。
+    //   **原文的「约 40 万」少了约四分之一，任何一手来源里都找不到依据** ——
+    //   它接近塔克拉玛干沙漠本身的量级（33.76 万 km²），像是把盆地和盆地中央的沙漠混了一层。
+    //   盆地底部沉积厚 800–1300 m、塔里木克拉通、绿洲环列等其余表述经复核准确。
     seeing:
-      "The Tarim Basin, in southern Xinjiang, is enclosed on all four sides by the Tianshan, Kunlun, Pamirs and Altun ranges — China's largest inland basin (about 400,000 km²). Its centre is China's largest desert, the Taklamakan, with a ring of oases holding the sand in.",
+      "The Tarim Basin, in southern Xinjiang, is enclosed on all four sides by the Tianshan, Kunlun, Pamirs and Altun ranges — China's largest inland basin (about 530,000 km²). Its centre is China's largest desert, the Taklamakan, with a ring of oases holding the sand in.",
     formation:
       "The Tarim Basin is an old, stable block (the Tarim craton); debris shed from the surrounding rising ranges has long accumulated in it, forming thick sediments that also hold rich oil and gas. The basin floor is about 800–1,300 m.",
     observation:
@@ -420,6 +440,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   qaidam: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（海拔 2600–3000 m、察尔汗盐湖为中国最大盐湖、
+    //   盐壳上修筑公路与铁路、雅丹地貌），未发现事实性错误，本轮无需改动。
     seeing:
       "The Qaidam Basin, in north-western Qinghai, is a large basin on the Tibetan Plateau at 2,600–3,000 m. \"Qaidam\" means \"salt marsh\" in Mongolian — salt lakes are everywhere, and the Qarhan Salt Lake, China's largest, has a salt crust so thick that highways and railways are built directly on it.",
     formation:
@@ -435,6 +457,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   sichuan: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（盆地底部海拔 250–750 m、都江堰公元前 256 年建成、
+    //   三国蜀汉史实），未发现事实性错误，本轮无需改动。
     seeing:
       "The Sichuan Basin, in south-west China, is enclosed by the Tibetan Plateau, the Daba Shan, the Wu Shan and the Yunnan–Guizhou Plateau. It is the only one of China's four great basins that is humid and rich — the historic \"land of abundance.\" Its rocks are largely purple-red sandstone and mudstone, so it is also called the \"Red Basin\" or \"Purple Basin.\"",
     formation:
@@ -450,6 +474,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "turpan-basin": {
+    // seeing sources: 艾丁湖湖面 **−154.31 m**（2008 年国家测绘公布数据），与正文「约 −154 米」相符；
+    //   博格达峰 5445 m、与艾丁湖高差约 5600 m；地表温度实测常达 75–88℃，正文「超 70℃」成立；
+    //   坎儿井与长城、大运河并称「中国古代三大工程」——2026-09-08 逐句核实，全篇 6 板块无误。
     seeing:
       "The Turpan Basin, in the eastern Tianshan of Xinjiang, is the lowest place in China — the surface of Lake Aydingkol in the basin is about 154 m below sea level. It is also one of the hottest and driest places in China, with ground temperatures over 70 °C in summer, hence the name \"the land of fire.\"",
     formation:
@@ -466,6 +493,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Plains ============
   northeast: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（中国面积最大的平原约 35 万 km²、黑土区、闯关东、大庆油田），
+    //   未发现事实性错误。**正文没有写具体面积数字**，因此不构成「缺年份/缺口径」的问题，本轮无需改动。
     seeing:
       "The Northeast Plain is China's largest plain, made up of the Songnen, Liaohe and Sanjiang plains, ringed by the Greater and Lesser Khingan ranges and Changbai Shan. It has vast tracts of fertile black soil and is China's most important commodity-grain base — the \"great northern granary.\"",
     formation:
@@ -489,13 +518,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the North China Plain is a huge, dense expanse of rectangular fields and towns, with almost no relief visible. The lower Yellow River is a broad golden band clearly higher than the land on either side; at the mouth, silt fans out into the sea as a muddy yellow plume against the blue water.",
     distinguish:
       "The North China Plain versus the Northeast Plain: North China is at lower latitude, dominated by Yellow River loess, two harvests a year, and severely short of water; the Northeast is at higher latitude, black soil, one harvest a year, and relatively water-rich. Versus the Middle-Lower Yangtze Plain: North China is shaped by the Yellow River, drier, dryland farming; the Yangtze plain is shaped by the Yangtze, water-netted, paddy farming.",
-    // concept sources: 黄河含沙量居世界首位 —— 中科院地理科学与资源研究所《输沙量最大的河——黄河》
-    //   http://igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692531.html（1 级）；
-    //   Science Advances 亦称其 exceptional sediment load（2 级），2026-09-08 核。
-    //   **这条断言已自带口径**（比的是「含沙量」这个指标），不属于要补口径的那一类。
-    //   **但有一条会过期的提醒**：近年水土保持与水库拦沙让**年输沙总量**大幅下降 ——
-    //   那是另一个口径。如果以后想改写成强调「输沙总量」，必须另加时间限定。
-    //   「地上悬河」的机制表述与华北平原城市归属经复核准确。
+    // concept sources: 「黄河含沙量世界第一」**在 2026-09 仍然成立** —— 黄委会（1 级）与新华网（2 级）2023—2024 年的
+    //   报道仍称其为「世界上公认含沙量最大、最难治理的河流」，2026-09-08 复核。
+    //   **必须分清两个口径**：**含沙量**（每立方米水含多少泥沙）与**年输沙总量**是两回事。
+    //   后者近二十年因水土保持大幅下降（2001—2020 年中游年均约 2.4 亿吨，较历史峰值降七成以上）——
+    //   **如果以后要改写成强调「输沙总量」，那个数字必须带年份**（known-errors C6-j）。
+    //   地上悬河机制、开封段最典型，均核实无误。
     concept:
       "The most characteristic idea of the North China Plain is the \"suspended river\": the Yellow River carries the world's highest sediment load, which builds up its lower bed until it stands several to more than ten metres above the land (most dramatically at Kaifeng), so a breach is a disaster. The Yellow River has changed course many times through history, and the range of those floods is roughly the outline of today's North China Plain. The plain is also one of China's most water-short, supplied by the South-to-North Water Diversion.",
     history:
@@ -503,6 +531,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   yangtze: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（江湖调蓄机制、崇明岛成因、三峡工程对下游水沙节律的影响），
+    //   未发现事实性错误，本轮无需改动 —— 机制类表述没有被简化成错的，这一点专门核过。
     seeing:
       "The Middle-Lower Yangtze Plain runs from Yichang in Hubei to the mouth of the Yangtze — a string of alluvial plains along the river (the Two-Lakes Plain, the Poyang Lake Plain, the Chaohu Plain, the Yangtze Delta). It is water-netted and lake-rich, home to China's largest group of freshwater lakes, and has been a \"land of fish and rice\" since ancient times.",
     formation:
@@ -519,6 +549,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Deserts / corridors / canyons ============
   taklamakan: {
+    // seeing sources: 面积约 33 万 km²（中科院新疆生态与地理研究所口径 33.76 万），中国最大沙漠；
+    //   「世界第二大流动沙漠」次于鲁卜哈利沙漠 —— 正文用「常被称为」的限定写法，成立。
+    //   年降水量不足 100 mm、沙丘相对高度 100–300 m、1995 年塔里木沙漠公路建成，均核实准确。
+    //   **名称释义处理得当**：正文明确写了「有多种说法」并列民间与学界解释，没有单挑一个当定论。
+    //   2026-09-08 核。**零争议红线复核通过**。
     seeing:
       "The Taklamakan Desert lies in the centre of the Tarim Basin, about 330,000 km² — the largest desert in China and often called the second-largest shifting-sand desert in the world. The meaning of \"Taklamakan\" is disputed; it is popularly glossed as \"go in and you won't come out,\" while scholars propose \"old abandoned place\" or \"vineyard place.\" Almost all of it is tall moving dunes, dune chain after dune chain.",
     formation:
@@ -534,6 +569,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hexi-corridor": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（长约 1000 km、西汉设河西四郡、莫高窟），
+    //   未发现事实性错误，本轮无需改动。
     seeing:
       "The Hexi Corridor, in western Gansu, is a long narrow strip of level ground, about 1,000 km long and anywhere from a few to over a hundred kilometres wide, between the Qilian Mountains and the Heli and Longshou ranges to the north. \"Hexi\" means \"west of the (Yellow) River.\" It is a corridor that links the Central Plains with the Western Regions, the single most important section of the ancient Silk Road.",
     formation:
@@ -567,6 +604,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tsangpo-gorge": {
+    // seeing sources: 长约 504 km、平均深约 2268 m、最深约 6009 m，均据 **1994 年中国科学家测算**，
+    //   正文已如实标注测算方与年份，**没有做无限定的「世界最深」绝对断言** —— 正确写法的范例。
+    //   1998 年中国科考队首次徒步穿越；下游称布拉马普特拉河、汇入孟加拉湾（纯地理事实）。
+    //   2026-09-08 核。**零争议红线复核通过**：`history` 段无边界线描述、无主权表述。
     seeing:
       "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the 1994 measurements of Chinese scientists it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — the deepest and longest canyon in the world.",
     formation:
@@ -583,8 +624,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Lakes / islands ============
   "qinghai-lake": {
+    // seeing sources: 青海湖水体面积 **4,650.08 km²（2024-12-20 监测）**，较 2023 年同期增 28.1 km²，
+    //   **已连续约二十年扩张**（2005 年低点约 4,237 km²）；水位约 3,196.72 m（2024-09 监测）——
+    //   新华网转青海省监测数据 http://www.qh.xinhuanet.com/20241222/642252c2ce2b4e60ab173787387bb0b1/c.html
+    //   （2 级）；另见青海省人民政府 2024-03 发布的另一次监测 4,540.98 km²（1 级），2026-09-08 核。
+    //   **同一年里两次监测就差一百多平方公里 —— 湖泊面积必须带监测时点，写一个裸数就是错的。**
+    //   原文的「约 4500 平方公里」是中途某一年的旧数且没交代时点。
+    //   **下一轮回来刷新**：青海省年末例行发布，注意换成当时的最新一期。
     seeing:
-      "Qinghai Lake, in north-eastern Qinghai on the north-eastern Tibetan Plateau, is the largest lake in China and its largest salt lake — surface elevation about 3,196 m, area about 4,500 km². Its Tibetan name is Tso Ngonpo and its Mongolian name Kokonur, both meaning \"blue sea.\"",
+      "Qinghai Lake, in north-eastern Qinghai on the north-eastern Tibetan Plateau, is the largest lake in China and its largest salt lake. It has been expanding for about two decades: monitoring at the end of 2024 put its surface elevation at about 3,196 m and its water area at about 4,650 km². Its Tibetan name is Tso Ngonpo and its Mongolian name Kokonur, both meaning \"blue sea.\"",
     formation:
       "Qinghai Lake was originally an exterior-drainage freshwater lake connected to the Yellow River system. Some hundred-odd thousand years ago the surrounding mountains rose and blocked its outlet, making it an interior-drainage lake: water only enters, is lost to evaporation, and salts accumulate, so it turned salty, and its area has slowly shrunk and rebounded.",
     observation:
@@ -598,6 +646,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   poyang: {
+    // seeing sources: **鄱阳湖面积丰枯水期能差好几倍**，正文写的是「丰水期可达 3000 多 km²、枯水期只有几百 km²」
+    //   这样的季节性区间，**没有给出误导性的单一定数** —— 这是正确写法的范例，与青海湖那条
+    //   （写了一个不带时点的裸数）正好构成对照。
+    //   鄱阳湖之战 36 天鏖战、退田还湖、洞庭湖历史上因淤积围垦让位于鄱阳湖，均核实准确，2026-09-08。
     seeing:
       "Poyang Lake, in northern Jiangxi on the south bank of the Yangtze, is China's largest freshwater lake (at high water). Its signature is transformation: in summer flood it is a vast open lake (over 3,000 km²), in winter drought it shrinks to winding channels plus large grass flats and mudflats (a few hundred km²) — locally, \"a lake at high water, a river at low water.\"",
     formation:
@@ -630,7 +682,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   taiwan: {
     seeing:
-      "Taiwan is China's largest island, off the south-east of the mainland at the western edge of the Pacific, facing Fujian across the Taiwan Strait. It is a long, narrow, mountainous island: a Central Range runs the length of it from north to south, splitting the island into an eastern and a western half, and the main summit, Yushan, at 3,952 m, is the highest point in south-eastern China and in north-east Asia (higher than Japan's Mount Fuji).",
+      "Taiwan is China's largest island, off the south-east of the mainland at the western edge of the Pacific, facing Fujian across the Taiwan Strait. It is a long, narrow, mountainous island: a Central Range runs the length of it from north to south, splitting the island into an eastern and a western half, and the main summit, Yushan, at 3,952 m, is the highest point in south-eastern China, higher than Japan's Mount Fuji (3,776 m).",
     formation:
       "Taiwan sits exactly on the collision belt between the Eurasian plate and the Philippine Sea plate; the collision squeezes sea-floor sediments up into mountains, and the island is still rising fast (about 0.5–1 cm a year), with frequent earthquakes and many hot springs. The Central, Xueshan, Yushan, Alishan and Coastal ranges run roughly parallel.",
     observation:
@@ -639,14 +691,27 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Taiwan versus Hainan: both are continental islands with a range running the length. But Taiwan's mountains are higher, steeper and earthquake-prone (an active collision belt), and span tropical and subtropical lowlands up to an alpine cold zone; Hainan's mountains are low, the geology stable, the whole island tropical, and the terrain a ring.",
     concept:
       "Taiwan is a living specimen of \"young collision mountain-building\": it shows that building mountains does not take tens of millions of years — under fierce plate collision, near-4,000 m mountains can be piled up in a few million years, and they are still growing. The steep-east, gentle-west asymmetry is exactly the direction of the collision squeeze.",
+    // history sources: 玉山主峰 **3952 m**（2003 年内政部土地测量局实测 3951.798 ± 0.072 m，公告值 3952 m）；
+    //   中央山脉现今隆升速率约 1 cm/年、扣除侵蚀后净增约 0.5 cm/年（2 级），与正文「约 0.5—1 厘米」相符。
+    //   2026-09-09 核。
+    //   **`history` 段删掉了两句**：首句的主权断言与末句的近代治理更迭 ——
+    //   CLAUDE.md 零争议红线写明 `history` 只写地质史与广泛记载的前现代史，不碰现代政治与领土。
+    //   中间三句（三国、隋朝的记载；元朝澎湖巡检司；1885 年建省）是前现代行政史，保留。
+    //   **这是同一条原则的第三次应用**：青藏高原「1951 年西藏和平解放」、长白山天池分界比例、这一处。
+    //   **「东北亚地区的最高峰」也已删**：见 terrain/taiwan/rank。
     history:
-      "Taiwan has been Chinese territory since ancient times. The histories record that both the Three Kingdoms and the Sui dynasty sent people there; the Yuan set up the Penghu Inspectorate; and it formally became a province in 1885. After the Treaty of Shimonoseki it was occupied by Japan for fifty years, and it returned to China in 1945 after victory in the war of resistance.",
+      "The histories record that both the Three Kingdoms and the Sui dynasty sent people there; the Yuan set up the Penghu Inspectorate; and it formally became a province in 1885.",
   },
 
   // ================= AUSTRALIA =================
   "great-dividing-range": {
+    // seeing sources: 长度 3,500+ km、从昆士兰北部经新南威尔士到维多利亚、是澳大利亚的主分水岭 —— 多方一致，2026-09-08 核。
+    //   **「世界第三长的陆地山系」已删**：这个名次在来源之间自相矛盾（科普站点说第三、英文维基正文写
+    //   fifth-longest），Geoscience Australia 官网没有这一表述，**而且没有任何一方交代按什么口径**
+    //   （「land-based range」含不含分支山系、怎么算起讫）。给不出限定语就不写名次。
+    //   海拔大部 300–1500 m、最高处在南端的澳洲阿尔卑斯、1813 年翻越蓝山，均核实无误。
     seeing:
-      "The Great Dividing Range runs more than 3,500 km down the eastern edge of Australia, from far north Queensland through New South Wales and Victoria — the third-longest land-based range on Earth. It is Australia's main watershed: rivers on the east flow a short way to the Pacific, rivers on the west drain inland toward the Murray–Darling. From the air it reads as a long, low, forested rampart set back from the coast.",
+      "The Great Dividing Range runs more than 3,500 km down the eastern edge of Australia, from far north Queensland through New South Wales and Victoria — among the longest mountain chains lying entirely within a single country. It is Australia's main watershed: rivers on the east flow a short way to the Pacific, rivers on the west drain inland toward the Murray–Darling. From the air it reads as a long, low, forested rampart set back from the coast.",
     formation:
       "Despite the name, it is not a single alpine chain but a broad belt of plateaus, escarpments and low ranges — the uplifted and dissected eastern margin of the continent, worn down over more than 100 million years. Most of it is 300–1,500 m; the highest ground is in the Australian Alps at its southern end. Eastward-flowing rivers have cut deep gorges into its seaward side.",
     observation:
@@ -660,6 +725,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "australian-alps": {
+    // seeing sources: 科修斯科峰 2,228 m。**正文已正确限定为「澳大利亚大陆最高峰」** ——
+    //   赫德岛的莫森峰 2,745 m 更高但属海外领地，原文规避了这个坑，是正确写法的范例。
+    //   蓝湖等四个冰斗湖（Blue / Cootapatamba / Albina / Club）是**澳大利亚大陆上仅有的冰川湖** ——
+    //   DCCEEW https://www.dcceew.gov.au/water/wetlands/australian-ramsar-wetlands/blue-lake（2 级）。
+    //   雪山工程 1949-10-17 动工、1974 年竣工 —— DCCEEW 国家遗产名录（2 级）。2026-09-08 核，全篇无误。
     seeing:
       "The Australian Alps are the highest part of the continent, straddling the New South Wales–Victoria border at the southern end of the Great Dividing Range. Mount Kosciuszko, at 2,228 m, is the highest point in mainland Australia. It is the only substantial area of the Australian mainland that holds a reliable winter snowpack.",
     formation:
@@ -675,6 +745,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "macdonnell-ranges": {
+    // seeing sources: 长约 644 km（正文「约 640 公里」相符）；齐尔山 1,531 m 确为北领地最高峰；
+    //   褶皱年代与 Alice Springs 造山运动约 300–350 Ma 的地质学口径一致；
+    //   陆上电报线 1870–1872 年建成、爱丽斯泉电报站 1871 年选址于 Heavitree Gap —— 2026-09-08 核，全篇无误。
     seeing:
       "The MacDonnell Ranges run east–west across the centre of Australia for about 640 km, with Alice Springs sitting in a gap near their middle. They are a set of sharp parallel ridges rising a few hundred metres above the surrounding desert plain, cut through by dramatic gorges. Mount Zeil (1,531 m) is the highest peak in the Northern Territory.",
     formation:
@@ -690,6 +763,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "flinders-ranges": {
+    // seeing sources: 长约 430 km，圣玛丽峰（Ngarri Mudlanha）1,171 m 为该山脉最高峰。
+    //   **埃迪卡拉丘陵是埃迪卡拉纪（Ediacaran）的命名地**，其 GSSP 于 2004 年获国际地层委员会批准 ——
+    //   正文「已知最早的复杂动物化石之一」用了「之一」，措辞克制。2026-09-08 核，全篇无误。
     seeing:
       "The Flinders Ranges are South Australia's largest mountain range, running about 430 km north from near Adelaide into the arid outback. Their signature is Wilpena Pound (Ikara), a huge natural amphitheatre of rock ringed by cliffs. St Mary Peak, on its rim, reaches 1,171 m.",
     formation:
@@ -705,6 +781,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "blue-mountains": {
+    // seeing sources: 大蓝山地区 **2000-11-29 列入世界遗产**，认定标准聚焦桉树在冈瓦纳分离后的演化多样性 ——
+    //   DCCEEW https://www.dcceew.gov.au/parks-heritage/heritage/places/world/blue-mountains（1 级，2026-09-08 核）。
+    //   卡通巴一带台地海拔约 1000–1050 m、山地内局部制高点约 1100–1200 m，正文「约 1100 米」相符。全篇无误。
     seeing:
       "The Blue Mountains rise just west of Sydney — not really mountains but a deeply dissected sandstone plateau, standing about 1,100 m and slashed by sheer-walled valleys. The famous view is of the Three Sisters and the Jamison Valley from the escarpment at Katoomba. The blue haze that names them is generally attributed to fine oil droplets from the eucalypts, together with the air itself, scattering sunlight.",
     formation:
@@ -720,6 +799,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pilbara: {
+    // seeing sources: 梅哈里山 1,249 m 为西澳最高峰（Karijini 国家公园哈默斯利岭内）；
+    //   皮尔巴拉克拉通基底逾 30 亿年（部分逾 35 亿年）；哈默斯利群主要条带状铁建造约 2.48–2.5 Ga ——
+    //   与正文「25 亿年前」相符。穆鲁久加（布鲁普半岛）约 100 万—200 万幅岩刻，
+    //   正文「世界上岩画最密集的遗址之一」用了「之一」，成立。2026-09-08 核，全篇无误。
+    //   **下一轮可补**：穆鲁久加已于 2025 年列入 UNESCO 世界遗产，正文未提 —— 不是错误，是可以加的一句。
     seeing:
       "The Pilbara is a vast, ancient, iron-rich region of north-western Australia. Its heart is the Hamersley Range, whose banded rocks are cut by the deep red gorges of Karijini National Park; Mount Meharry (1,249 m) is the highest point in Western Australia. This is one of the oldest, most stable pieces of land on the planet — and the source of most of Australia's iron ore.",
     formation:
@@ -767,6 +851,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-victoria-desert": {
+    // seeing sources: 大维多利亚沙漠约 **348,750 km²**，澳大利亚面积最大的沙漠，正文「约 35 万」属合理取整，2026-09-08 核。
+    //   马拉林加核试验 1950—60 年代、对原住民社区造成长期伤害 —— 官方认定的史实，
+    //   正文作客观陈述、未涉现代政治评价，红线复核通过。
     seeing:
       "The Great Victoria Desert is the largest desert in Australia, about 350,000 km², sprawling across Western Australia and South Australia. It is a mix of long sand dunes, gravel plains and dry salt lakes, sparsely covered with spinifex, mulga and desert oak. It is one of the least-populated regions on Earth.",
     formation:
@@ -782,6 +869,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "nullarbor-plain": {
+    // seeing sources: 纳拉伯平原约 **200,000 km²**，「世界上最大的一整块石灰岩」为广泛认可的表述，未查到有力反例或竞争说法；
+    //   横贯澳大利亚铁路 **478 km（297 英里）直线段**为世界最长完全无弯曲的铁路直线段；
+    //   艾尔与同伴 Wylie 1840—41 年完成有记录的首次欧洲人穿越。2026-09-08 核，全篇无误。
     seeing:
       "The Nullarbor is a vast, flat, treeless plain on the southern edge of Australia — its name is Latin-derived for \"no trees.\" It is the world's largest single slab of limestone, about 200,000 km², and it ends abruptly at the Bunda Cliffs, which drop straight into the Great Australian Bight for hundreds of kilometres.",
     formation:
@@ -797,6 +887,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-artesian-basin": {
+    // seeing sources: 大自流盆地逾 **170 万 km²** —— Geoscience Australia
+    //   https://www.ga.gov.au/scientific-topics/water/groundwater/gab（1 级，2026-09-08 核）。
+    //   **正文没有写「世界最大自流盆地」这类排名断言**，只客观陈述面积，因此不需要补限定语 ——
+    //   这是「不写名次」这条规矩的正面例子。
+    //   首口自流井 1878 年钻于 Bourke 附近的 Kallara 站，正文用「约」字留了余地。
     seeing:
       "The Great Artesian Basin is not a landform you can see as a shape — it is a vast underground reservoir of water beneath about one-fifth of Australia, roughly 1.7 million km². Rain that fell on the eastern highlands hundreds of thousands to a million years ago slowly seeps through porous rock and emerges, sometimes hot, at natural springs and bores far out in the dry inland.",
     formation:
@@ -812,6 +907,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-eyre": {
+    // seeing sources: 卡蒂坦达—埃尔湖湖底约 **−15 m**，澳大利亚陆地最低点；满水时约 9,500 km²，全澳最大湖泊；
+    //   唐纳德·坎贝尔 1964-07-17 驾 Bluebird-Proteus CN7 在干涸湖床创下 648.7 km/h 的陆上极速世界纪录。
+    //   2026-09-08 核，全篇无误。
+    //   **注意**：这个湖大部分时间是干的、满水期面积差别极大，正文没有把「满水面积」当成常态面积来写 ——
+    //   与青海湖那条（写了一个不带时点的裸数）正好构成对照，见 known-errors C6-j。
     seeing:
       "Kati Thanda–Lake Eyre, in the South Australian outback, is the lowest point in Australia — its floor lies about 15 m below sea level. It is the country's largest lake, but it is usually a blinding white salt pan; it fills completely only a few times a century, when monsoon rains far to the north drain down into it.",
     formation:
@@ -833,8 +933,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Uluṟu is the tilted, upturned edge of a thick bed of hard sandstone (arkose), laid down by rivers about 550 million years ago, then folded almost vertical and buried. As the softer surrounding rock eroded away over hundreds of millions of years, this resistant slab was left standing — most of it is still underground. Its surface is grey; the famous red is a thin skin of iron oxide.",
     observation:
       "From the air Uluṟu is an isolated, smooth, elongated dome with steep sides and parallel grooves running down its flanks, marking the near-vertical rock layers. It glows deep red at sunrise and sunset because low-angle light passes through more dust and air. Waterholes and shady gorges hide at its base.",
+    // distinguish sources: 乌鲁鲁高 348 m、底部周长 9.4 km；岩石为 **arkose，粗粒长石砂岩**（course-grained sandstone
+    //   rich in the mineral feldspar）—— Parks Australia《Geology Fact sheet》(uluru.gov.au, 2023-09 版，1 级)
+    //   与 https://uluru.gov.au/discover/highlights/amazing-facts/（1 级），2026-09-08 核。
+    //   **原 distinguish 段写「细砂岩」是错的**，而同条目 formation 段写的「坚硬砂岩（长石砂岩）」是对的 ——
+    //   **同一篇里一处对一处错**；同样的错还被抄到了 kata-tjuta 的 distinguish 段。
+    //   约 5.5 亿年前由河流沉积、之后在 Alice Springs 造山运动中被掀转近 90°（正文只说「之后」、
+    //   没坐实褶皱年代，写法克制、可接受）。
+    //   **「世界上最大的裸露岩石之一」已用「之一」限定** —— 与西澳 Mount Augustus 常被称更大这一点不冲突，
+    //   Parks Australia 官网自己也不做「世界最大」的断言。
+    //   **攀爬于 2019-10-26（归还 34 周年）永久关闭**，正文写的正是这一条，没有过期。
+    //   **原住民文化表述复核通过**：「传统主人」「阿南古」「法与故事」（对应 Tjukurpa）均为管理局公开材料
+    //   里明确使用的词，未转述二手渠道对圣地含义的解释。
     distinguish:
-      "Uluṟu is an inselberg — an \"island mountain\" — not a plateau or a volcano. Nearby Kata Tjuṯa is made of coarse conglomerate and forms many separate domes, whereas Uluṟu is one continuous block of fine sandstone. It is not a meteorite and not hollow.",
+      "Uluṟu is an inselberg — an \"island mountain\" — not a plateau or a volcano. Nearby Kata Tjuṯa is made of coarse conglomerate and forms many separate domes, whereas Uluṟu is one continuous block of coarse-grained sandstone (arkose). It is not a meteorite and not hollow.",
     concept:
       "An inselberg is what is left when erosion strips a plain but a body of especially hard rock resists and stands proud. Uluṟu's near-vertical layering — you can see the bedding running up its sides — shows how far the rock has been tilted from its original flat-lying position.",
     history:
@@ -844,12 +956,21 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "kata-tjuta": {
     seeing:
       "Kata Tjuṯa (\"many heads\"), also called the Olgas, is a cluster of 36 steep-sided rock domes rising from the desert about 30 km west of Uluṟu. The tallest, Mount Olga, stands about 546 m above the plain — higher than Uluṟu. Deep, sheer-walled gorges run between the domes.",
+    // formation sources: 卡塔丘塔 36 座圆丘，最高的奥尔加山高出平原约 546 m（比乌鲁鲁高 198 m）——
+    //   https://uluru.gov.au/discover/highlights/kata-tjuta/（1 级，2026-09-08 核）。
+    //   砾岩的**胶结基质是沙与泥**（cemented by sand and mud），Parks Australia《Geology Fact sheet》
+    //   （1 级）—— 原文写「胶结在砂岩里」不对。砾石成分（花岗岩、玄武岩）、约 5.5 亿年前、
+    //   源自当时耸立在南方的山脉，均核实无误。
+    //   **掀转角度**：乌鲁鲁被掀转近 90°，卡塔丘塔仅约 15—20°，已写进 distinguish 段。
+    //   **「男性圣址、详细故事受限」的表述复核通过**：与管理局官网「the stories and cultural knowledge
+    //   associated with these rock formations are not shared with visitors」完全对应，
+    //   没有僭越去描述管理局未公开的具体含义。
     formation:
-      "Kata Tjuṯa is made of conglomerate — pebbles and boulders of granite and basalt cemented in sandstone — deposited by fast rivers pouring off a mountain range that once stood to the south, around 550 million years ago. Weathering has since worked along cracks in this coarse rock, rounding it into separate domes rather than one block.",
+      "Kata Tjuṯa is made of conglomerate — pebbles and boulders of granite and basalt cemented in a matrix of sand and mud — deposited by fast rivers pouring off a mountain range that once stood to the south, around 550 million years ago. Weathering has since worked along cracks in this coarse rock, rounding it into separate domes rather than one block.",
     observation:
       "From the air Kata Tjuṯa looks like a group of giant red loaves or knuckles set close together, with dark chasms between them — the Valley of the Winds threading through the middle. The rock surface is knobbly with embedded cobbles, unlike Uluṟu's smoother sandstone.",
     distinguish:
-      "Uluṟu and Kata Tjuṯa share an origin — both are the eroded remains of sediment shed off the same vanished mountains — but Uluṟu is fine sandstone tilted almost vertical and eroded into one mass, while Kata Tjuṯa is coarse conglomerate, less steeply tilted, broken into many domes.",
+      "Uluṟu and Kata Tjuṯa share an origin — both are the eroded remains of sediment shed off the same vanished mountains — but Uluṟu is coarse-grained sandstone (arkose) tilted almost vertical and eroded into one mass, while Kata Tjuṯa is coarse conglomerate, tilted only about 15 to 20 degrees, broken into many domes.",
     concept:
       "The pair is a lesson in how rock type controls landform: same age, same setting, different sediment — and one becomes a single monolith, the other a field of domes. The pebbles in Kata Tjuṯa's rock are direct evidence of the ancient mountains that supplied them.",
     history:
@@ -857,6 +978,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-barrier-reef": {
+    // seeing sources: 长约 2300 km、约 2900—3000 座礁体、约 900 座岛屿 —— GBRMPA 官方口径，2026-09-08 核；
+    //   1975 年设海洋公园、1981 年列入世界遗产、1770 年库克「奋进号」在此搁浅，均无误。
+    //   **白化的写法要特别注意**：`concept` 段没有把某一年钉死为「最近一次白化」，因此不会过期 ——
+    //   这是正确写法。**如果以后要补一句具体年份，必须知道 AIMS 每年 8 月发布长期监测年报**
+    //   （最近一次 2025-26 年报于 2026 年 8 月发布，显示 2024 年大规模白化后覆盖率正在回升；
+    //   2025 年 3 月又发生一次大规模白化，与宁格罗礁同步，是两处世界遗产礁首次同时白化）。
+    //   **珊瑚覆盖率与白化次数属 known-errors C6-j 那一类会变的量。**
     seeing:
       "The Great Barrier Reef stretches about 2,300 km along the north-east coast of Australia — the largest coral reef system in the world and the largest structure built by living organisms. It is made of roughly 3,000 individual reefs and 900 islands, and is visible from space.",
     formation:
@@ -874,12 +1002,26 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "twelve-apostles": {
     seeing:
       "The Twelve Apostles are a group of tall limestone stacks standing in the Southern Ocean just off the Great Ocean Road in Victoria. They rise up to about 45 m out of the surf, a short way from sheer coastal cliffs. Despite the name there were never twelve; today only seven or eight remain standing.",
+    // formation sources: **岩石年代约 860 万—1400 万年前** —— 墨尔本大学 Gallagher 团队，《Australian Journal of
+    //   Earth Sciences》2026-04-24 发表；ABC News（2 级）
+    //   https://www.abc.net.au/news/science/2026-04-24/how-victorias-twelve-apostles-formed-over-millions-of-years/106594348
+    //   与 The Conversation（3 级）报道，2026-09-08 核。
+    //   **这是一项刚发表几个月的单一同行评审研究**，已标注研究年份 —— 下一轮要确认它是否被学界广泛
+    //   采纳、或已有后续修正。（与盖帕奇冰川、罗布泊干涸年代同属「会被新研究修正的量」。）
+    //   **现存岩柱数是会变的量**：2005 年倒了一座、2009 年又倒一座，Parks Victoria 口径现存七座
+    //   （截至 2026-09 核实）—— 下一轮要重新确认是否又有崩塌。
+    //   45 米高度、约 2 cm/年的侵蚀速率、「从未有过十二座」、旧名「母猪与小猪」与 1920 年代改名、
+    //   大洋路由一战归国士兵修建，均核实无误。
     formation:
-      "The cliffs are soft limestone, laid down on a sea floor 10–20 million years ago. The Southern Ocean's waves attack the base of the cliff, cutting caves, then arches, then — when an arch collapses — leaving an isolated pillar, or stack. The stacks are slowly undercut in turn and fall; one dropped in 2005. New ones are being cut from the retreating cliff.",
+      "The cliffs are soft limestone, most of it laid down between roughly 8.6 and 14 million years ago — the 2026 dating by a University of Melbourne team; older accounts gave a vaguer 10–20 million years. The Southern Ocean's waves attack the base of the cliff, cutting caves, then arches, then — when an arch collapses — leaving an isolated pillar, or stack. The stacks are slowly undercut in turn and fall: one dropped in 2005 and another in 2009, leaving seven standing on Parks Victoria's count as of 2026. New ones are being cut from the retreating cliff.",
     observation:
       "From the air the coast is a straight line of yellow cliffs with the stacks standing just offshore, wave trains wrapping around them, and the flat green farmland running right to the cliff edge. Gorges, blowholes and half-collapsed arches (London Bridge, the Grotto) punctuate the cliff line.",
+    // distinguish sources: 「霍伊老人」是**老红砂岩**（Old Red Sandstone，泥盆纪，约 3.7—3.8 亿年前）——
+    //   英国地质学会 https://www.geolsoc.org.uk/GeositesHoy 与英国地质调查局（均 1 级，2026-09-08 核）。
+    //   **原文写成「白垩海蚀柱」是错的**；英国真正的白垩海蚀柱是怀特岛的「针石」或多塞特的「老哈利岩」。
+    //   **拿别处的地貌作类比时，类比的那一头也要核** —— 侵蚀过程写对了，举的例子岩性错了。
     distinguish:
-      "These are sea stacks — erosional remnants of a retreating cliff — not reefs, not volcanic plugs, not deposited features. The process is the same one that made chalk stacks like the Old Man of Hoy, in softer, younger rock.",
+      "These are sea stacks — erosional remnants of a retreating cliff — not reefs, not volcanic plugs, not deposited features. The process is the same one that made Old Red Sandstone stacks like the Old Man of Hoy in Orkney, in softer and younger rock here.",
     concept:
       "Sea stacks record coastal erosion in progress: cliff → cave → arch → stack → stump. The \"Twelve Apostles\" are a snapshot of a coastline eating landward at roughly 2 cm a year. The number will keep changing as old stacks fall and new ones are isolated.",
     history:
@@ -897,8 +1039,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Like Hainan and Taiwan, Tasmania is a continental island cut off by rising sea level — its rocks and (former) wildlife are mainland stock. Unlike them it is cool, wet and heavily glaciated, with landforms closer to New Zealand's South Island than to tropical China.",
     concept:
       "Tasmania shows what glaciation does to a landscape even at modest altitude: at these latitudes ice-age glaciers reached low, leaving lake-filled cirques and troughs across the highlands. Its isolation also preserved species lost on the mainland — it was the last stronghold of the thylacine.",
+    // history sources: 塔斯马尼亚荒野世界遗产区面积约 **158.4 万公顷**，**覆盖全岛近四分之一**（UNESCO 与澳大利亚
+    //   联邦环境部原文均为 almost a quarter）—— https://www.dcceew.gov.au/parks-heritage/heritage/places/world/tasmanian-wilderness
+    //   （1 级，2026-09-08 核）。全岛约 6.84 万 km²，158,400 ÷ 68,400 ≈ 23%，原文的「五分之一」偏低。
+    //   与大陆分离约 1.2 万年前（巴斯海峡陆桥沉没）、全岛近一半是国家公园/保护区（塔州 DNRE 口径约 40%—50.4%）、
+    //   袋狼最后据点、富兰克林大坝运动史实，均核实无误。
     history:
-      "Tasmanian Aboriginal people lived on the island for tens of thousands of years, cut off after the land bridge drowned; colonisation from 1803 was catastrophic for them. The Tasmanian Wilderness World Heritage Area, secured after the Franklin Dam campaign of the early 1980s, covers about a fifth of the state.",
+      "Tasmanian Aboriginal people lived on the island for tens of thousands of years, cut off after the land bridge drowned; colonisation from 1803 was catastrophic for them. The Tasmanian Wilderness World Heritage Area, secured after the Franklin Dam campaign of the early 1980s, covers almost a quarter of the state.",
   },
 
   "murray-darling": {
@@ -923,6 +1070,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kgari: {
+    // seeing sources: **K'gari 是 2023-06-07 昆士兰州政府公告正式恢复的原住民名**（原 Fraser Island），
+    //   正文用的正是现行官方名 —— 这一条本轮特意核过，没有停在旧名。
+    //   世界最大沙岛、约 122—123 km 长、1992 年列入世界遗产、逾 40 km 彩色沙崖、
+    //   博曼金湖为世界最大悬湖、约半数世界悬湖在此、1991 年停止伐木次年列世遗，均核实无误。
+    //   布查拉人（Butchulla）作为传统所有者的表述与官方用法一致。2026-09-08 核。
     seeing:
       "K'gari (Fraser Island), off the south-east coast of Queensland, is about 123 km long and the largest sand island in the world. It is made almost entirely of quartz sand, yet grows rainforest over 30 m tall — the only place on Earth where rainforest grows on pure sand. World Heritage-listed in 1992; \"K'gari\" means \"paradise\" in the local language.",
     formation:
@@ -938,6 +1090,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kakadu: {
+    // seeing sources: 约 2 万 km²（官方精确值 19,804 km²）、断崖长约 500 km 高 30—330 m、约 1.4 亿年前浅海、
+    //   退蚀速率每千年约 1 m、旱季末水鸟可达约 200 万只、玛杰贝贝岩棚约 6.5 万年 ——
+    //   均为 Parks Australia / DCCEEW 一手口径（1 级，2026-09-08 核）。
+    //   比尼／蒙古伊人作为传统所有者的表述与官方用法一致，未转述管理局未公开的内容。
     seeing:
       "Kakadu, in Australia's Northern Territory, covers about 20,000 km² — Australia's largest terrestrial national park, and one of the few places listed as World Heritage for both natural and cultural value. Its frame is the Arnhem Land sandstone plateau and, along its western edge, an escarpment running about 500 km and 30–330 m high, with vast seasonally flooded wetlands below it.",
     formation:
@@ -963,11 +1119,23 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Grampians' cuestas are different from the body of the Great Dividing Range (a low, gentle upwarp) — they are clear \"cliff-plus-slope\" asymmetric ridges. Their sandstone is older than the Blue Mountains' and much more folded: the Blue Mountains beds are still roughly horizontal, the Grampians beds are visibly tilted.",
     concept:
       "A cuesta is the textbook landform of \"differential erosion on tilted beds\": soft layers are stripped to a gentle slope, the cut edge of a hard sandstone layer stands as a cliff, and the cliff faces the up-dip direction. A whole set of parallel cuestas like the Grampians is the best outcrop for reading the dip of the rock in the field.",
+    // history sources: 1991 年曾一度改名为 Grampians (Gariwerd) National Park，1992 年州政府换届后撤回；
+    //   **1998 年维多利亚州《地名法》确立双名制度后，Gariwerd 作为官方双名被重新确立并沿用至今**
+    //   （3 级，澳大利亚国立大学出版社专著章节，2026-09-08 核）。
+    //   **原文写「近年被恢复」已经过期近三十年** —— 「近年」「最近」「新近」这类相对时间词本身就是
+    //   会过期的写法，写的时候一律换成年份。
+    //   主峰威廉山约 1167 m、约 4 亿年前泥盆纪沉积、约 3.95 亿年前花岗岩侵入、维多利亚州约八成原住民
+    //   岩画在此，均核实无误；雅德瓦贾利与贾布伍隆两族名的拼写与官方用法一致。
     history:
-      "Gariwerd is deeply significant to the Jardwadjali and Djab Wurrung peoples, and holds about 80% of Victoria's known Aboriginal rock art sites. The explorer Thomas Mitchell named the range in 1836 after the Grampian Mountains of Scotland. \"Gariwerd\" has recently been restored as an official dual name.",
+      "Gariwerd is deeply significant to the Jardwadjali and Djab Wurrung peoples, and holds about 80% of Victoria's known Aboriginal rock art sites. The explorer Thomas Mitchell named the range in 1836 after the Grampian Mountains of Scotland. \"Gariwerd\" became the official dual name under Victoria's Geographic Place Names Act 1998 and remains so today.",
   },
 
   ningaloo: {
+    // seeing sources: 长约 300 km（UNESCO 原文 almost 300 km）、澳大利亚最大裾礁、2011 年与凯普山脉一同列入
+    //   世界遗产、3—8 月鲸鲨聚集季 —— https://whc.unesco.org/en/list/1369/（1 级，2026-09-08 核）。
+    //   伊尼古杜拉人作为传统所有者的表述与官方用法一致。
+    //   **注意**：2025 年 3 月宁格罗与大堡礁同步发生大规模白化（两处世界遗产礁首次同时白化），
+    //   正文未写死白化年份，暂时合规；日后要写必须带年份。
     seeing:
       "Ningaloo Reef, on the north-west coast of Western Australia, is about 300 km long and Australia's largest fringing reef — a coral reef growing right against the shore, in places only a hundred metres or two out. It is World Heritage-listed together with the inland Cape Range (2011). Between March and August one of the world's largest aggregations of whale sharks gathers here.",
     formation:
@@ -985,8 +1153,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "shark-bay": {
     seeing:
       "Shark Bay is a large embayment on the mid-west coast of Western Australia, at the westernmost point of the Australian mainland, where north–south peninsulas and islands divide the water into a series of shallow gulfs. It is World Heritage-listed for three things: its vast seagrass beds, its dugong population, and the living stromatolites of Hamelin Pool.",
+    // formation sources: 厚度 **up to 10 metres** 核实无误 —— 西澳 DBCA 官方公园页
+    //   https://exploreparks.dbca.wa.gov.au/park/shell-beach-conservation-park（1 级，2026-09-08 核）。
+    //   **长度没有统一口径**：DBCA 自己的页面正文一处写 over 70km、另一处写 60km；维基约 60 km；
+    //   鲨鱼湾世界遗产游客中心约 120 km。**原文的「100 公里」在所有来源里都没出现过** ——
+    //   它像是在几个互相矛盾的数字之间取了个中间值。**遇到官方页面自相矛盾，正确做法是写明分歧、
+    //   不写死数字**，而不是每一轮再猜一个中间值。
+    //   哈梅林池盐度约为普通海水两倍、1616 年德克·哈托格登陆并留下锡盘、1991 年列入世界遗产，均核实无误。
     formation:
-      "The parallel peninsulas (Peron and others) are drowned former coastal sand dunes now standing as ridges. Hamelin Pool lies behind a shallow underwater bar at the south of the bay, so seawater exchange is slow; with strong evaporation the water is about twice as saline as normal seawater. Shell Beach is built from the shells of a small cockle that thrives in the low-diversity water, washed ashore over a stretch about 100 km long and up to about 10 m deep.",
+      "The parallel peninsulas (Peron and others) are drowned former coastal sand dunes now standing as ridges. Hamelin Pool lies behind a shallow underwater bar at the south of the bay, so seawater exchange is slow; with strong evaporation the water is about twice as saline as normal seawater. Shell Beach is built from the shells of a small cockle that thrives in the low-diversity water, washed ashore over a stretch several tens of kilometres long — the WA park authority's own page gives both 60 km and over 70 km, and other accounts cite more than 100 km, with no settled figure — and up to about 10 m deep.",
     observation:
       "From the air Shark Bay looks like an open hand: red-brown peninsulas reach into pale-green shallows, with channels of varying depth between them. The water around Hamelin Pool is whitish-green, and dark bands of stromatolite reef show close to shore. Shell Beach is a glaring line of pure white.",
     distinguish:
@@ -998,6 +1173,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   purnululu: {
+    // seeing sources: 邦格尔邦格尔山高约 200—300 m、约 3.5 亿年前泥盆纪砂岩、约 2000 万年侵蚀成塔、
+    //   1987 年设立国家公园、2003 年列入世界遗产、UNESCO「砂岩喀斯特」表述，均核实无误，2026-09-08。
+    //   **`history` 段写的是 1983 年纪录片使其「进入公众视野」，不是「被发现」** ——
+    //   这个措辞差别很重要：那片地方的传统所有者一直知道它在哪。本批 4 篇（普努鲁鲁、卡尔卢卡尔卢、
+    //   波浪岩、国王峡谷）都用了这种写法，是正确范例。
     seeing:
       "Purnululu National Park is in the Kimberley region of north-eastern Western Australia. Its centrepiece is the Bungle Bungle Range — a mass of orange-and-grey, beehive-shaped sandstone cones rising about 200–300 m above flat surrounding grassland. It came to wide public notice only in the 1980s.",
     formation:
@@ -1013,6 +1193,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "wave-rock": {
+    // seeing sources: 高约 15 m、长约 110 m；岩体属伊尔冈克拉通、约 26 亿年花岗岩；1928 年在岩顶砌截水墙引流蓄水。
+    //   2026-09-08 核，全篇无误。巴拉东·努恩加人的相关表述与官方用法一致。
     seeing:
       "Wave Rock, beside the town of Hyden in the Western Australian wheatbelt, is a granite slope about 15 m high and 110 m long shaped like a breaking ocean wave \"frozen\" in place. It is in fact just a small part of the north side of a large inselberg called Hyden Rock.",
     formation:
@@ -1028,6 +1210,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "karlu-karlu": {
+    // seeing sources: 花岗岩约 16 亿年前（落在业界常见区间内）；**1953 年一块巨石被移走用作约翰·弗林的墓碑，
+    //   2008 年归还** —— 2026-09-08 核。
+    //   瓦鲁蒙古／凯特泰／阿利亚瓦拉／瓦尔皮里四族与官方双名 Karlu Karlu / Devils Marbles 的用法
+    //   与北领地公园管理机构一致，未转述圣地的具体含义。
     seeing:
       "Karlu Karlu, south of Tennant Creek in the Northern Territory, is a field of huge rounded granite boulders scattered across pale-red flat ground — some sitting alone, some balanced two-high as if about to roll — ranging from half a metre to six metres across. It is an important sacred site to the Warumungu and other peoples.",
     formation:
@@ -1043,6 +1229,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "kings-canyon": {
+    // seeing sources: 崖高约 100 m、梅里尼（Mereenie）砂岩约 4 亿年前、1989 年设立瓦塔卡国家公园、
+    //   Watarrka 是当地对一种金合欢的称呼 —— 2026-09-08 核，全篇无误。
+    //   卢里恰人（Luritja）的相关表述与官方用法一致。
     seeing:
       "Kings Canyon, in Watarrka National Park in the Northern Territory, is a deep valley cut by a creek through the George Gill Range, walled by near-vertical red-and-white sandstone cliffs about 100 m high. A permanent waterhole on the canyon floor is known as the \"Garden of Eden.\"",
     formation:
@@ -1058,6 +1247,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   nitmiluk: {
+    // seeing sources: 孔博尔吉砂岩 **1,650 Ma（约 16.5 亿年）** —— 北领地政府官方考察指南（2 级，2026-09-09 核）。
+    //   旱季水位低时峡谷断成 **13 段**独立深潭，多来源一致。
+    //   **1989-09-10 土地正式归还 Jawoyn 人**，此后在 99 年租约下与北领地公园部门联合管理（ABC News，2 级）。
+    //   地名 Nitmiluk 意为「蝉之地」（Cicada Place / place of the cicada dreaming）——
+    //   Jawoyn 官方旅游资料（2 级）。
+    //   **这是官方双名（Nitmiluk / Katherine Gorge）用法正确的范例**：现行官方名在前、旧名并列，不作主次断言。
     seeing:
       "Nitmiluk, north-east of the town of Katherine in the Northern Territory, is a chain of gorges where the Katherine River cuts through a sandstone plateau — at low water in the dry season it breaks into 13 separate deep pools divided by rock bars; when the wet season raises the river it joins back into one continuous flow.",
     formation:
@@ -1073,6 +1268,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "glasshouse-mountains": {
+    // seeing sources: 比尔瓦山（Mount Beerwah）**556 m**；火山颈年代学界普遍给 **26—27 Ma**（渐新世早期），
+    //   正文的「约 2500—2700 万年前」吻合（3 级交叉，2026-09-09 核）。
+    //   库克 **1770-05-17** 的日记原话即以约克郡的玻璃窑（glass houses）作比，命名沿用至今（2 级，昆州档案馆）。
+    //   **联邦环境部（DCCEEW）国家名录页确认此地是 Jinibara（及 Kabi Kabi）传统土地，多座山峰为圣址，
+    //   传统主人建议不要攀爬**（1 级）—— 正文的「多座山峰是圣址」与官方表述一致。
     seeing:
       "The Glass House Mountains, in south-east Queensland about 70 km north of Brisbane, are a group of steep peaks rising abruptly and alone from a flat coastal plain, the highest being Mount Beerwah at about 556 m. Their shapes are striking — some like round towers, some like knife-backs — and they do not connect to each other.",
     formation:
@@ -1106,8 +1306,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "great-australian-bight": {
     seeing:
       "The Great Australian Bight is a huge, open, curved gulf on the central southern coast of Australia, facing the Southern Ocean. Its best-known stretch of coast is the Bunda Cliffs: a straight limestone cliff line running about 210 km, some 60–120 m high, with the edge of the Nullarbor Plain at the top and deep sea directly below.",
+    // formation sources: **「澳大利亚与南极分离」不是一个可以钉在某一年的事件**：裂解始于白垩纪晚期（约 85—99 Ma），
+    //   深水通道完全打通（洋流意义上的分离）多篇地球物理文献定在约 **30—35 Ma**；
+    //   科普材料常用「约 5000 万年前」甚至「约 6500 万年前」，**找不到可作定论的一手（GA / 澳南极局）口径**
+    //   （3 级学术论文 + 2 级澳大利亚南极局，2026-09-09 核）。已改成过程性表述，不写单一年代。
+    //   邦达崖连续约 210 km、高约 60—120 m；岩石为中—晚始新世的威尔逊崖石灰岩（欧克拉盆地最老最厚的
+    //   石灰岩单元），均核实无误。南露脊鲸 5—10 月带幼崽近岸，与 Head of Bight 官方及海洋公园的季节限制一致。
+    //   1840—41 年艾尔与向导 Wylie 完成有记录的首次陆路穿越。
     formation:
-      "The Bunda Cliffs are Eocene Wilson Bluff Limestone, then a shallow sea floor. About 50 million years ago Australia separated from Antarctica and drifted north; this continental margin was uplifted and then cut back by the constant pounding of the Southern Ocean's swell into this near-vertical cliff line. The clifftop is almost featureless because the Nullarbor itself is one uncut slab of limestone.",
+      "The Bunda Cliffs are Eocene Wilson Bluff Limestone, then a shallow sea floor. Since the Late Cretaceous, Australia has been slowly separating from Antarctica and drifting north; this continental margin was uplifted and then cut back by the constant pounding of the Southern Ocean's swell into this near-vertical cliff line. The clifftop is almost featureless because the Nullarbor itself is one uncut slab of limestone.",
     observation:
       "From the air there are three parallel bands — plain, cliff, sea: inland is the pale-yellow, treeless Nullarbor Plain, then abruptly a white cliff wall, and immediately below it the deep-blue Southern Ocean, with almost no beach in between. The cliff line is extremely straight, notched only here and there by small bays. Around the Head of Bight, southern right whales with calves appear close inshore from about May to October.",
     distinguish:
@@ -1129,13 +1336,21 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pinnacles are residual bodies left by dissolution plus differential erosion — not stalagmites (they do not grow by dripping water) and not fossil tree trunks. They are similar in form and related in origin to Purnululu's sandstone cones (both shaped by water eroding along cracks), but the Pinnacles are far smaller individually and develop in young coastal limestone.",
     concept:
       "This pillar field shows that a coastal dune is not just an inert pile of sand: given enough rainfall, seeping water can, over tens of thousands of years, rework the interior of a calcareous dune into alternating hard pillars and soft sand — and once the wind removes the soft part, the underground form is turned up to the surface.",
+    // history sources: **1658 年荷兰航海图标的是海岸沙丘状导航地标（South / North Hummocks），不是尖峰石阵** ——
+    //   石柱群在内陆、从海上根本看不见；它直到 **1934 年**地质调查才首次被记录，
+    //   1967 年先划为保护区、1994 年三块保护区合并设立南邦国家公园（3 级，2026-09-09 核）。
+    //   **原文把「荷兰航图标了这段海岸的地标」和「荷兰航图标了尖峰石阵」混成了一件事** ——
+    //   与「霍伊老人被写成白垩海蚀柱」「湄功河被写成湄公河」同一形状。
+    //   母岩确为塔马拉石灰岩；**成因至今没有定论**（溶蚀管模型 vs 钙结层/根管模型，2024 年仍有新研究
+    //   在修正认知）—— **正文写的是「学界还有不同看法」，是正确写法**。
+    //   Yued（努恩加语言群）作为传统主人的表述与官方一致。
     history:
-      "The Nambung area is the country of the Yued Noongar people. A 17th-century Dutch chart already marked \"limestone pinnacles\" near this coast. The pillar field was long covered by drifting sand and only came to wide notice in the 1960s; it was added to the national park in 1994.",
+      "The Nambung area is the country of the Yued Noongar people. A 17th-century Dutch chart already marked the coastal dunes here as navigation landmarks (the \"Hummocks\"), but the pillars themselves lie inland and are invisible from the sea. The pillar field was long covered by drifting sand, was first recorded by a geological survey in 1934, and only came to wide notice in the 1960s; it was added to the national park in 1994.",
   },
 
   "willandra-lakes": {
     seeing:
-      "The Willandra Lakes Region, in the dry interior of south-western New South Wales, is a chain of about 17 long-dry Pleistocene lake beds. Today there is no water — only flat lake floors and, on the eastern shore of each, a crescent-shaped ridge of sand and clay. Lake Mungo is the most thoroughly studied of them.",
+      "The Willandra Lakes Region, in the dry interior of south-western New South Wales, is a chain of 19 long-dry Pleistocene lake beds — five larger interconnected basins and fourteen smaller ones. Today there is no water — only flat lake floors and, on the eastern shore of each, a crescent-shaped ridge of sand and clay. Lake Mungo is the most thoroughly studied of them.",
     formation:
       "The lakes were once fed by Willandra Creek, formerly a branch of the Lachlan River. In wetter glacial times the lakes joined into one sheet of water; about 18,500 years ago the river shifted course and the climate dried, and the lakes dried out for good. While the lakes existed, prevailing westerly winds carried sand and clay from the lake shores to the eastern side and piled them into crescent-shaped \"lunettes\"; the one at Lake Mungo is known as the \"Walls of China.\"",
     observation:
@@ -1144,8 +1359,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Willandra's basins are dry lakes left behind after the climate dried, unlike Lake Eyre, an \"active salt lake that fills only occasionally\": Lake Eyre still fills in big flood years, whereas the Willandra lakes have held no water for more than ten thousand years. Its lunettes are the key evidence for \"there was once a lake here, and this is the wind that blew then.\"",
     concept:
       "A lunette is the \"fingerprint\" of an ancient lake: it always sits on the downwind shore, and within it a layer of quartz sand marks a time when the lake held water, a layer of clay a time when the lake shrank to a salt flat. Reading a section through a lunette reconstructs the wet–dry history of that lake over tens of thousands of years.",
+    // history sources: **「归还」与「重新安葬」是分属不同年份的两件事**：
+    //   **芒戈女士 1992 年归还传统所有者保管、芒戈先生 2017 年归还；2022 年是正式重新安葬（reburial）**，
+    //   连同其他遗骸共 108 具 —— ABC News（2 级，2026-09-09 核）。原文把三个年份压成了「2022 年归还并重新安葬」。
+    //   **遗骸年代约 4 万年前（40,000 ± 2,000 BP）是 Bowler 等 2003 年在《Nature》重新测年的结果**，
+    //   取代了此前 6.2 万年的旧说 —— 正文用的是现行共识，没有停在旧说。
+    //   发现年份 1968（芒戈女士火化遗迹）与 1974（芒戈先生）、约 460 处化石脚印（2003 年发现，
+    //   已知世界最大规模更新世人类脚印遗迹群）、1981 年列入世界遗产，均核实无误。
+    //   族名 Mutthi Mutthi / Ngiyampaa / Paakantyi(Barkindji) 与 NSW NPWS、UNESCO 的官方表述一致。
+    //   **干涸时间「约 1.85 万年前」是会被新研究修正的量**：NSW 环境局给「约 1.9 万年前开始干涸」，
+    //   另有研究给约 1.4 万年前完全断流 —— 干涸是渐进过程，下一轮留意区间是否收窄。
     history:
-      "Willandra is the country of the Mutthi Mutthi, Ngiyampaa and Paakantyi (Barkindji) peoples, continuously occupied for at least tens of thousands of years. In 1968 and 1974, geologists found in the Lake Mungo lunette two sets of human remains about 40,000 years old (known as \"Mungo Lady\" and \"Mungo Man\"), and later about 460 fossil footprints; these findings are all scientifically published and are central to the area's 1981 World Heritage listing. The remains were returned to the local community and reburied in 2022.",
+      "Willandra is the country of the Mutthi Mutthi, Ngiyampaa and Paakantyi (Barkindji) peoples, continuously occupied for at least tens of thousands of years. In 1968 and 1974, geologists found in the Lake Mungo lunette two sets of human remains about 40,000 years old (known as \"Mungo Lady\" and \"Mungo Man\"), and later about 460 fossil footprints; these findings are all scientifically published and are central to the area's 1981 World Heritage listing. Mungo Lady's remains were returned to the custody of the traditional owners in 1992 and Mungo Man's in 2017; in 2022 the two were formally reburied along with other remains, 108 sets in all.",
   },
 
   "mount-gambier": {
@@ -1159,6 +1384,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Blue Lake is a crater lake, entirely different in origin from a glacially scoured lake like Kanas or a fault-subsidence lake like Qinghai Lake. It also differs from a Hawaiian-style shield volcano that pours out sheets of lava — this was an explosive eruption where magma met groundwater, and the product is a pit, not a lava flow.",
     concept:
       "The Blue Lake's summer colour is generally attributed to warming of the surface water and the crystallisation of tiny calcium carbonate crystals in the lake, which scatter the blue light in sunlight so the water looks blue; when it cools the crystals dissolve and the blue fades. The exact mechanism is still under study. It is a reminder that a lake's colour can be a physical phenomenon that changes with the season, not a dye.",
+    // history sources: **这一篇是「把不确定性如实写出来」的正面范例**：
+    //   最近一次喷发年代的估计范围极宽（**4,300—28,000 年前**不等，最新放射性碳测年给约 6,000 年前），
+    //   正文用了「不同方法」「若……成立」「可能」**三重限定**，与文献的不确定程度相符 —— 不需要改。
+    //   蓝湖变蓝写的是「确切机制仍在研究」：学术研究确认色变与钙华（calcite）析出、光散射有关，
+    //   但具体驱动（脱气 / 腐殖质共沉淀等）仍有不同表述 —— 同样没把有争议的机制写成定论。
+    //   maar（低平火山口）的岩浆遇地下水爆炸成因与标准地质学一致；
+    //   布安迪克（Boandik）人为传统主人，蓝湖的 Boandik 语名为 WarWar（1 级，甘比尔山市政府双名页）；
+    //   1884 年建成抽水站取水供应市镇，沿用至今（2 级，南澳水务）。
+    //   **火山测年会随新方法持续修正，下一轮回来复核这个区间。**
     history:
       "This area is the country of the Boandik people. Different methods give ages for the last eruption ranging from about 28,000 to about 6,000 years ago; if the most recent figure of about 6,000 years is correct, this may be the most recent volcanic eruption known on the Australian mainland. The Blue Lake has been Mount Gambier's drinking-water supply since 1884.",
   },
@@ -1166,6 +1400,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   kanas: {
     seeing:
       "Kanas Lake lies deep in the Altai Mountains at the far northern tip of China, at about 1,370 m — a long, narrow alpine lake. Its water changes colour with the weather, the season and the amount of suspended silt, from jade green to near-black blue, which is why it is called the \"colour-changing lake.\" It is ringed by dense Siberian conifer forest.",
+    // formation sources: 海拔 1374 m、长约 24.5 km、最深 197 m（另一说 188.5 m）——
+    //   喀纳斯景区管理委员会 https://www.kns.gov.cn/004/004004/20181122/5c36ad14-a023-450c-b4d3-947f8b9b2e8c.html
+    //   （1 级，2026-09-08 核）。
+    //   **「中国最深的湖泊之一」用了「之一」，且排序成立**（长白山天池最深 373 m > 喀纳斯 188.5 m >
+    //   抚仙湖 158.9 m）—— 正确写法的范例。图瓦人聚落、属北冰洋水系等表述经复核准确。全篇 6 板块无误。
     formation:
       "Kanas is a glacial-scour lake: a Quaternary glacier gouged a U-shaped valley, and after the ice retreated a terminal moraine (a ridge of glacier-carried gravel) dammed the valley mouth, so meltwater and rain pooled behind it. The lake is about 24 km long and around 190 m deep — one of the deepest lakes in China.",
     observation:
@@ -1181,6 +1420,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   sayram: {
     seeing:
       "Sayram Lake sits on the northern slope of the Tianshan at the south-western edge of the Junggar Basin, at about 2,070 m — the largest alpine lake in Xinjiang. It is a closed, internal-drainage lake, walled in by Tianshan mountain country, with deep blue, highly transparent water.",
+    // formation sources: 海拔 2073 m、面积 453 km²，官方表述为「新疆海拔最高、面积最大的高山冷水湖」（3 级，2026-09-08 核）。
+    //   成因：断陷盆地构造湖 + 第四纪冰川改造，与地质研究吻合。全篇 6 板块无误。
     formation:
       "Sayram is generally taken to be a tectonic lake in a fault-depression mountain basin, later modified by glaciers. It is fed by snowmelt and rain off the surrounding mountains, has no outlet, and balances by evaporation, so it is slightly saline. Several old shorelines around the lake show that the water once stood higher than it does now.",
     observation:
@@ -1196,6 +1437,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   tianchi: {
     seeing:
       "Tianchi (Heavenly Lake) of the Tianshan lies on the northern slope of Bogda Peak, about 100 km east of Ürümqi, at around 1,900 m — a glacial-scour lake hung partway up the mountainside. From the window you can see the deep-blue lake, the spruce forest at its shore and the permanently snow-capped Bogda Peak behind it all at once. It was anciently called \"Yaochi.\"",
+    // formation sources: 海拔 1910 m、长 3400 m、最深约 105 m —— 阜康市人民政府
+    //   https://www.fk.gov.cn/zjfk/mlfk/mqgj/842410.htm（1 级，2026-09-08 核）。
+    //   1982 年首批国家重点风景名胜区；「瑶池」传说与长白山天池的成因区分（冰川堰塞 vs 火山口湖）
+    //   经复核准确 —— **这两个「天池」同名不同地、成因也不同，是最容易被混成一件事的一对**。全篇无误。
     formation:
       "Tianchi is a lake where a Quaternary glacier gouged a U-shaped valley, then a moraine ridge dammed the valley mouth after the ice retreated and meltwater pooled behind it. The lake is about 3 km long and around 100 m deep. Glacial striations, roches moutonnées and several moraine ridges around it record repeated advances and retreats of the ice.",
     observation:
@@ -1209,6 +1454,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   bosten: {
+    // seeing sources: 海拔 1048 m；大湖面积约 988 km²，含小湖区共 1646 km² —— 新疆维吾尔自治区文化和旅游厅
+    //   https://wlt.xinjiang.gov.cn/wlt/c112782/202208/008cef60035646c3ae9d0397e613f8fa.shtml（1 级，2026-09-08 核）。
+    //   「中国最大的内陆淡水湖」成立：这个口径专指不入海的内流区淡水湖，呼伦湖微咸且经额尔古纳河
+    //   间歇外泄、洪泽湖属外流区，都不计入；正文用「常被称为」做了软化。
+    //   **面积数字有意没写进正文** —— 湖面面积逐年变化（近年因生态调水水位回升近 2 米），
+    //   日后若要补面积必须注明监测年份（known-errors C6-j）。
     seeing:
       "Bosten Lake lies in the Yanqi Basin at the southern foot of the Tianshan, at about 1,050 m, and is often called China's largest inland freshwater lake. The Kaidu River enters from the north-west and the Konqi River leaves to the south-west — it is an unusual inland lake with both an inflow and an outflow. Its west shore has extensive reed wetlands. It was anciently called the \"Western Sea.\"",
     formation:
@@ -1224,6 +1475,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   aibi: {
+    // seeing sources: 海拔 189 m（博乐市人民政府，1 级）；「新疆最大的咸水湖」为官方与主流媒体一致表述。
+    //   **2007-04-06 国务院办公厅批准艾比湖湿地晋升国家级自然保护区** ——
+    //   https://www.gov.cn/gzdt/2007-05/28/content_628018.htm（1 级，2026-09-08 核）。
+    //   **水域面积有意没写进正文**：受上游用水影响逐年剧烈波动、近几十年萎缩明显，
+    //   日后若要补面积必须标注监测年份与来源，不能写成固定值（known-errors C6-j）。
     seeing:
       "Lake Ebi sits in the south-western corner of the Junggar Basin, just inside the Alataw Pass — the largest saltwater lake in Xinjiang. It is the lowest collecting point of the western Junggar Basin, at about 190 m. Its area swings widely with the season and the inflow, and it is ringed by broad white salt flats and desert.",
     formation:
@@ -1241,8 +1497,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "lop-nur": {
     seeing:
       "Lop Nur lies at the far eastern end of the Tarim Basin. It was once the terminal lake of the Tarim, Konqi and other rivers, and one of the largest lakes of the Western Regions. It dried out completely in the mid-to-late 20th century and is now a plain of salt crust and yardangs. In satellite images, rings of former shoreline make the dry lake bed look like an ear — the \"ear of the Earth.\"",
+    // formation sources: **最后干涸时间约 1962 年** —— 中国科学院新疆生态与地理研究所 2008 年「东方道迩罗布泊大型
+    //   综合考察」依据实地与遥感资料的结论（中新社报道，2 级，2026-09-08 核）
+    //   http://www.chinanews.com.cn/cul/news/2008/12-25/1503302.shtml。
+    //   **原文写「1970 年代前后」，是把「卫星第一次拍到」当成了「实际干涸」**：
+    //   1972 年美国地球资源卫星拍到那张「大耳朵」影像时，湖底早已是干的。
+    //   学界另有二十世纪三四十年代之说，但没有主流研究支持 1970 年代这个年代。
+    //   同条目 `seeing` 段用的「20 世纪中后期」更稳，两处原本口径不一致，已把 formation 收紧到有出处的结论。
+    //   1964-10-16 中国首颗原子弹在罗布泊地区试爆、1980 年彭加木失踪、1996 年余纯顺遇难，均核实无误。
+    //   **这是一个会被新考察结论修正的量**，日后有权威新结论要回来更新。
     formation:
-      "Lop Nur is the lowest collecting area of the Tarim Basin, and historically it \"wandered\" around the basin as the rivers changed course, growing and shrinking. In modern times heavy upstream irrigation plus a drying climate cut the inflow sharply, and the lake dried out completely around the 1970s, leaving a salt crust tens of centimetres thick. Wind erosion has carved fields of yardangs across the dry bed and its surroundings.",
+      "Lop Nur is the lowest collecting area of the Tarim Basin, and historically it \"wandered\" around the basin as the rivers changed course, growing and shrinking. In modern times heavy upstream irrigation plus a drying climate cut the inflow sharply, and a Chinese Academy of Sciences survey concluded the lake dried out completely around 1962, though scholars still disagree on the exact date, leaving a salt crust tens of centimetres thick. Wind erosion has carved fields of yardangs across the dry bed and its surroundings.",
     observation:
       "From the air Lop Nur is a large, stark-white salt-crust plain in the eastern basin, with concentric pale stripes (the \"big ear\") marking shorelines of different ages. To the north-west is a field of yardang mounds; to the south, the gobi of the Altun Mountains. In recent years large, regular blue-green ponds have appeared in the lake area — artificial brine ponds for mining potash.",
     distinguish:
@@ -1255,8 +1520,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
 
   "tarim-river": {
+    // seeing sources: **塔里木河长度有两套并存口径，差别接近一倍**：
+    //   ① **干流 1321 km**（三条源流在肖夹克汇合处 → 台特玛湖）—— 新疆塔里木河流域管理局口径（2 级）；
+    //   ② **含最长源流** 2137 / 2179 / 2327 / 2486 km（从叶尔羌河源头算起）—— 各家数字还互不统一，
+    //      新疆水利厅《水利百科》给 2179 km（1 级）
+    //      http://slt.xinjiang.gov.cn/slt/slbk/201803/a23aa18292b54492b41bbda5049991da.shtml，2026-09-08 核。
+    //   **原文的「约 2000 公里」卡在两者中间，哪一套都不是**，而同条目 formation 段写的是「三条源流汇合而成」
+    //   （暗示从汇合点起算）—— 一篇之内自相矛盾。**写正文前先确认是干流还是含源流**，
+    //   这与达令河「干流 1545 km / 含最长源头支流 2740 km」是同一形状的坑。
+    //   20 世纪 70 年代起下游约 400 km 断流、台特玛湖干涸，2000 年起生态输水（至 2024 年已第 25 次、
+    //   累计约 98 亿 m³），台特玛湖重新维持水面 —— 经复核准确。
     seeing:
-      "The Tarim River runs west to east along the northern rim of the Tarim Basin for about 2,000 km — China's longest inland river. It has no outlet to the sea and finally dies away in the desert and terminal lakes of the south-eastern basin. From the air it is a curving line at the edge of the yellow sand sea, fringed with dark-green wild poplar and farmland.",
+      "The Tarim River runs west to east along the northern rim of the Tarim Basin — China's longest inland river; its main stem, from where the three source rivers meet to Lake Taitema, is 1,321 km, or over 2,000 km measured from the source of its longest tributary, the Yarkand. It has no outlet to the sea and finally dies away in the desert and terminal lakes of the south-eastern basin. From the air it is a curving line at the edge of the yellow sand sea, fringed with dark-green wild poplar and farmland.",
     formation:
       "The Tarim forms where three source rivers — the Aksu, the Yarkand and the Hotan — meet near Alar, carrying snowmelt from the Tianshan, Kunlun and Pamirs. The basin floor is extremely flat and the water is silt-laden, so the channel keeps silting up and shifting — a classic \"wandering river\" — and its floodplain grows salt- and drought-tolerant wild poplar.",
     observation:
@@ -1270,6 +1545,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   ertis: {
+    // seeing sources: 「中国唯一流入北冰洋的河流」—— 新疆维吾尔自治区自然资源厅
+    //   https://zrzyt.xinjiang.gov.cn/xjgtzy/mtxc/202106/9e1ee097d1ee466ea7ebf86005ddaa43.shtml（1 级，2026-09-08 核）。
+    //   喀纳斯经喀纳斯河→布尔津河汇入额尔齐斯河、同属该水系，正文的简化表述没有把两条河混成一件事。
+    //   **出境后的流路用的是中性水文表述，不描述边界线、不表态主权** —— 零争议红线复核通过。全篇无误。
     seeing:
       "The Irtysh rises on the southern slope of the Altai and flows from south-east to north-west across northern Xinjiang; beyond the border it runs through Kazakhstan and Russia and finally reaches the Arctic Ocean — the only river in China belonging to an Arctic drainage. From the air it meanders in a broad, flat valley lined with continuous poplar woods and green meadow.",
     formation:
@@ -1285,8 +1564,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yarkant-river": {
+    // seeing sources: 在三源汇合处，**阿克苏河多年平均水量占三源总水量约 78%（33.58 亿 m³）**，是塔里木河干流
+    //   唯一常年补给源；**叶尔羌河同处年均水量仅 0.23 亿 m³（约 0.5%）**，出山后大部分渗漏蒸发于沙漠，
+    //   只有洪水期才有余水汇入干流 —— 中国科学院新疆生态与地理研究所
+    //   https://egi.cas.cn/xwdt/mtsm/202308/t20230814_6859047.html（1 级，2026-09-08 核）。
+    //   **原文的「最大的一条源流」按水量是错的，只有按河道长度才成立** ——
+    //   「最大」这个词在河流里至少可以指长度、水量、流域面积三样，不写明按哪一样就会指向不同的河。
+    //   同条目 distinguish 段写的「主要水源之一」是对的，两处原本自相矛盾。
     seeing:
-      "The Yarkand River rises on the northern slope of the Karakoram and flows from south-west to north-east through the western parts of the Kashgar and Hotan areas — the largest single source of the Tarim River. From the air it comes out of the brown mountains toward the Kunlun and spreads into a huge alluvial fan at the mountain front, with a string of oases along the fan edge.",
+      "The Yarkand River rises on the northern slope of the Karakoram and flows from south-west to north-east through the western parts of the Kashgar and Hotan areas — the longest of the Tarim's three source rivers by course, though it carries far less water than the Aksu, which is the main stem's principal year-round source. From the air it comes out of the brown mountains toward the Kunlun and spreads into a huge alluvial fan at the mountain front, with a string of oases along the fan edge.",
     formation:
       "The Yarkand's water is glacial meltwater from the Karakoram and the Pamirs. It carries a heavy silt load and builds a very large alluvial fan on the south-western rim of the Tarim Basin; the oases of Yarkand, Makit and Bachu all sit on this fan. Its lower channel wanders and shifts.",
     observation:
@@ -1302,6 +1588,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ili-valley": {
     seeing:
       "The Ili Valley, in western Xinjiang, is a triangular valley in the Tianshan that opens to the west. The Ili River winds along its floor between farmland, orchards and grassland, with the snow peaks of the Tianshan to the north. Greener and moister than anywhere else in Xinjiang, it is called \"the Jiangnan beyond the passes.\"",
+    // formation sources: 伊犁河谷平均年降水量约 417 mm、山区达 600–700 mm，为新疆最湿润区域 —— 中国气象局
+    //   https://www.cma.gov.cn/kppd/kppdsytj/202111/t20211103_4154439.html（1 级，2026-09-08 核）。
+    //   **正文写的是「局部……可达 500 毫米以上」，没有把山区数据当成全谷平均值** —— 正确写法。
+    //   伊犁河向西流入巴尔喀什湖属外流河，是中性水文表述，不涉边界线与主权，红线复核通过。
     formation:
       "The valley mouth faces west, straight into the prevailing westerlies, so moisture from the Atlantic and Central Asia is funnelled in and drops more rain on the windward slopes (locally over 500 mm a year, far more than southern Xinjiang). River alluvium has laid a flat, fertile plain on the valley floor, and the flanking mountains carry vertical belts of forest and meadow.",
     observation:
@@ -1333,6 +1623,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   bayanbulak: {
+    // seeing sources: 平均海拔 2400 m —— 和静县人民政府（1 级，2026-09-08 核）；另有二手资料给 2500 m，两说并存，
+    //   正文与政府侧数据一致。四面环山的高山盆地里的曲流成因、蒙古语词源、天鹅湖国家级自然保护区
+    //   均经复核准确。全篇 6 板块无误。
     seeing:
       "The Bayanbulak grassland lies in a mountain-ringed high basin in the central Tianshan, above about 2,400 m. The basin floor is very flat and poorly drained, with wide areas of marsh and meandering channels. The Kaidu River loops through it in countless tight bends — the famous \"Nine Bends and Eighteen Turns.\"",
     formation:
@@ -1348,6 +1641,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kuche: {
+    // seeing sources: 2026-09-09 逐句核实全篇 6 板块：库车大峡谷的中生代—新生代红色砂泥岩侵蚀成因、
+    //   与火焰山的区分、龟兹古国与克孜尔石窟的丝路佛教史 —— 均为前现代史实性表述，无数字类断言。
+    //   **零争议红线复核通过**：不涉现代政治、宗教评价或族群评价。
     seeing:
       "The Kuqa (Kizilya) Grand Canyon lies in the mountains north of Kuqa city, on the southern slope of the Tianshan. It is a narrow canyon cut into red rock, with sheer walls, a slot at its narrowest that admits only one or two people abreast, and only a strip of sky overhead. The rock is an intense ochre-red in the sun.",
     formation:
@@ -1371,6 +1667,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Flaming Mountains are a continuous red rock ridge with regularly spaced gullies on the north side of the Turpan Basin, gobi and karez oasis to the south, the brown mountains of the Tianshan to the north. Several streams (such as Mutou Gully and Grape Valley) cut straight across the range, and those gullies are green strips.",
     distinguish:
       "See the Kuqa Grand Canyon entry. The Flaming Mountains are \"broad and low, regularly gullied, continuous as a ridge\" — you look at the continuous red massif and its sharp contrast with the oasis to the south; the Kuqa Grand Canyon is a single \"narrow and deep\" gorge.",
+    // concept sources: 东西绵延约 100 km（东起鄯善兰干流沙河、西止吐鲁番桃儿沟），最宽处约 10 km，多方一致，2026-09-08 核。
+    //   **「地表温度」与「气象站气温」是两回事**：火焰山地表近年多次测得 80–89℃（景区温度计），
+    //   那是裸露沙石的地表温度；中国最热地区的气温纪录出自吐鲁番的气象站。
+    //   **正文已明确把两者分开、并用「之一」做了限定，是正确写法的范例**，本轮无需改动。
+    //   **具体温度数字有意没写进正文** —— 那是逐年刷新的极值，写死就会过期（known-errors C6-j）。
     concept:
       "The Flaming Mountains are a combination of \"anticline ridge plus dry heat\": the beds were arched into an anticline, the exposed soft red layers were cut by water into regular gullies; add a closed, low basin, clear skies and dark rock that absorbs heat strongly, and you get the extreme ground temperatures here. The actual temperature records come from nearby weather stations, not from the range itself.",
     history:
@@ -1429,8 +1730,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lesser and Greater Khingan: the Greater Khingan is the long north–south body dividing the Inner Mongolian Plateau from the Northeast Plain, grassland on its west; the Lesser Khingan lies to the north-east, trends more east–west (NW–SE), divides the Songnen and Sanjiang plains, and is lower, farther east and moister. Versus Changbai Shan: Changbai is an isolated high volcano, the Lesser Khingan a continuous low fold range.",
     concept:
       "The Lesser Khingan is an example of \"a low range as an important geographic line\": it is not high, but as a watershed it separates two great plains of the Songhua system, and it is the northern limit of the Korean pine forest. With the Greater Khingan and Changbai Shan it forms the \"green screen\" on three sides of the Northeast Plain.",
+    // history sources: **黑龙江重点国有林区（含伊春一带）自 2014-04-01 起全面停止天然林商业性采伐**；
+    //   伊春市本身 2013 年即已先行全面停伐 —— 伊春市人民政府
+    //   https://www.yc.gov.cn/ycsrmzf/c101986/202505/400158.shtml（1 级）与新华网（2 级），2026-09-08 核。
+    //   **原文写「近年」——相对时间词本身就是会过期的写法**，与格兰坪「近年恢复官方双名」（实为 1998 年）
+    //   同一形状。海拔 500–800 m、五大连池火山群在其西南缘，均核实无误。
     history:
-      "The Lesser Khingan is traditional hunting ground of the Oroqen and Ewenki, and was once one of China's most important logging regions (the Yichun area was called \"the home of Korean pine\"). Commercial logging of natural forest has now stopped entirely, replaced by conservation and eco-tourism.",
+      "The Lesser Khingan is traditional hunting ground of the Oroqen and Ewenki, and was once one of China's most important logging regions (the Yichun area was called \"the home of Korean pine\"). In 2014, commercial logging of natural forest in Heilongjiang's key state forest areas stopped entirely, replaced by conservation and eco-tourism.",
   },
 
   yinshan: {
@@ -1449,6 +1755,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   luliang: {
+    // seeing sources: 主峰关帝山（又名孝文山、孝文峰）海拔 **2831 m**，位于交城县与方山县之间 —— 多来源一致，2026-09-08 核。
+    //   全篇 6 板块逐句核实无误，本轮无需改动。
     seeing:
       "The Lüliang Mountains run north–south through western Shanxi and are the watershed between the Yellow River (west) and the Fen River (east). The range is buried under thick loess, with rolling ridges and hills cut by a maze of gullies and severe soil erosion. The main peak, Guandi (Xiaowen) Shan, is about 2,831 m.",
     formation:
@@ -1464,6 +1772,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   liupan: {
+    // seeing sources: 主峰米缸山（又名美高山）海拔 **2942 m**，在泾源县与隆德县交界 —— 多来源一致，2026-09-08 核。
+    //   全篇 6 板块逐句核实无误，本轮无需改动。
     seeing:
       "The Liupan Mountains lie in southern Ningxia and eastern Gansu, a rocky north–south range in the western Loess Plateau. It is higher and far moister than the loess hills around it, with stands of forest on its slopes — a \"green island\" on the Loess Plateau. The main peak, Migang Shan, is about 2,942 m.",
     formation:
@@ -1479,6 +1789,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dabashan: {
+    // seeing sources: 主峰化龙山 **2917 m**（大巴山中段）；大巴山分东、中、西三段，米仓山即西段、横亘陕川交界，2026-09-08 核。
+    //   成因：华北与扬子两大板块之间强烈褶皱、逆冲抬升 —— 方向正确；更精确的说法是**秦岭造山带南缘
+    //   中生代以来的复合变形**（《地质通报》大巴山冲断推覆构造研究，2 级）。属常见简化，未被简化成错。
     seeing:
       "The Daba Mountains straddle the borders of Shaanxi, Sichuan, Chongqing and Hubei, lying across the northern rim of the Sichuan Basin and trending roughly NW–SE. With the Qinling to the north they form a double screen against north–south air movement. The main peak, Hualong Shan, is about 2,917 m. The Micang Shan to the west is part of the range.",
     formation:
@@ -1494,6 +1807,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   xuefeng: {
+    // seeing sources: 主峰苏宝顶 **1934 m**；雪峰山是公认的中国地形第二、三级阶梯分界线之一（与大兴安岭、太行山、
+    //   巫山并列）—— **正文用「大致对应」作了限定，是正确写法的范例**，2026-09-08 核。
+    //   1945 年雪峰山会战（湘西会战，04-09 至 06-07）为抗战正面战场最后一次大规模会战，以中国军队获胜结束。
     seeing:
       "The Xuefeng Mountains run NE–SW through western Hunan, a range on the eastern edge of the Yunnan–Guizhou Plateau where it grades into the Hunan hills and the Dongting Lake plain. Within Hunan it roughly marks the boundary between China's second and third topographic steps. The main peak, Subaoding, is about 1,934 m.",
     formation:
@@ -1509,6 +1825,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   wuyi: {
+    // seeing sources: 主峰黄岗山 **2160.8 m**，称「华东最高峰」「东南 10 省区最高峰」——
+    //   **这是有明确地理范围限定的排名断言，不是空泛的主观最高级**，成立（2 级，2026-09-08 核）。
+    //   武夷山 **1999 年**列入世界文化与自然双重遗产（第 23 届世界遗产委员会会议，符合自然标准 vii、x
+    //   与文化标准 iii、vi）—— https://whc.unesco.org/en/list/911/（1 级）。
+    //   `history` 段只写朱子理学与茶文化，零争议红线通过。
     seeing:
       "The Wuyi Mountains straddle the Fujian–Jiangxi border, trending NE–SW, an important range of south-east China. The main peak, Huanggang Shan, is about 2,161 m, the highest point in mainland south-east China. The range is known for two things: the Danxia landform around the Nine-Bend Stream, and well-preserved mid-subtropical forest.",
     formation:
@@ -1526,6 +1847,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   dabie: {
     seeing:
       "The Dabie Mountains straddle the borders of Hubei, Henan and Anhui, trending NW–SE, and are the watershed between the Yangtze and the Huai, roughly also the transition between the northern subtropics and the warm temperate zone. They are not high — the main peak, Baima Jian, is about 1,777 m — with a heavy, rounded profile.",
+    // formation sources: 大别山—苏鲁超高压变质带因出露大量榴辉岩闻名国际地质学界，是大陆深俯冲研究的关键窗口 ——
+    //   公认地质事实，2026-09-08 复核；`concept` 段用的是「关键窗口**之一**」，有限定，写法正确。
     formation:
       "The Dabie Shan is part of the collision belt between the North China and Yangtze blocks and has undergone intense metamorphism; the rock is mostly gneiss and other metamorphic rock, and it also exposes special rocks that record deep geological processes (such as eclogite), making it an important area for geological research. Long erosion has left it as rounded low-to-mid mountains.",
     observation:
@@ -1539,6 +1862,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dalou: {
+    // seeing sources: 主峰金佛山（凤凰岭/风吹岭）**2238 m**，多方一致（3 级，2026-09-09 核）；
+    //   赤水河谷为白酒产区、丹霞与喀斯特景观集中，均无误。
+    //   **核实方建议删掉 history 段「1935 年娄山关战斗 + 毛泽东《忆秦娥·娄山关》」，本轮未采纳。**
+    //   理由：仓库里 **六盘山**（1935 年长征翻越 + 《清平乐·六盘山》）、**吕梁**（晋绥根据地）、
+    //   **大巴山**（多个革命根据地）、**大别山**（鄂豫皖苏区、1947 年挺进大别山）四篇早已是同一写法；
+    //   上一轮核中国山地时也明确判过「属历史事实陈述、非评价性表述，与项目现有尺度一致」。
+    //   **只删大娄山会让同类内容尺度不一**，且这一改动超出「核实事实」的范围 ——
+    //   若要调整，应当是一次覆盖全部同类条目的口径决定，不是在某一批里顺手改掉一条。
     seeing:
       "The Dalou Mountains lie in northern Guizhou and southern Chongqing, trending NE–SW, the boundary range between the Yunnan–Guizhou Plateau and the Sichuan Basin. They separate the Guizhou plateau from the Chongqing basin and are the watershed of rivers such as the Wu and the Chishui. The main peak, Jinfo Shan, is about 2,238 m.",
     formation:
@@ -1554,6 +1885,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   altun: {
+    // seeing sources: 主峰苏拉木塔格峰约 **6295 m**，西段最高点约 6161 m —— 均超过 6000 m，与正文相符（3 级，2026-09-09 核）。
+    //   **零争议红线复核通过**：`history` 段只写阿尔金断裂的科学意义与前现代史，不涉现代政治、领土、宗教或族群评价。
     seeing:
       "The Altun Mountains lie in south-eastern Xinjiang and north-western Qinghai, trending roughly NE–SW, across the gap between the Tarim Basin and the Qaidam Basin and the Tibetan Plateau. They are the link between the Kunlun and the Qilian; the range is high, extremely arid and almost uninhabited, with summits over 6,000 m.",
     formation:
@@ -1570,8 +1903,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
 
   "chengdu-plain": {
+    // seeing sources: 面积 **1.881 万 km²**（科普中国，2 级）—— 与正文的「约 1.9 万」吻合；
+    //   另有广义 2.29 万、狭义 0.734 万两个常见口径，**写的时候要知道自己用的是哪一个**。
+    //   海拔：从都江堰约 **730 m** 降到成都主城区约 **500 m**（同源），另一独立来源给 460—750 m ——
+    //   **两个来源都不支持原文的 450 m 下限**，已改为 500—730 m。2026-09-08 核。
+    //   **注意别与「成都平原经济区」混用** —— 那是行政/经济概念，不是同一个地貌单元。
     seeing:
-      "The Chengdu Plain occupies the western Sichuan Basin — the largest and flattest plain in the basin, about 19,000 km², at 450–750 m. It was built by the Min, Tuo and other rivers as they left the mountains, and its fertile, easily irrigated land is the core of the \"land of abundance.\"",
+      "The Chengdu Plain occupies the western Sichuan Basin — the largest and flattest plain in the basin, about 19,000 km², at 500–730 m. It was built by the Min, Tuo and other rivers as they left the mountains, and its fertile, easily irrigated land is the core of the \"land of abundance.\"",
     formation:
       "The Chengdu Plain is a compound fan plain made of the alluvial fans of several rivers merged together. The Min River leaves the Longmen Mountains to the west and, below the mountain gap, spreads out the gravel and silt it carries, finer downstream. The Dujiangyan works split the Min River at the fan head into a self-flowing irrigation network covering the whole plain.",
     observation:
@@ -1585,6 +1923,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "guanzhong-plain": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块：断陷地堑盆地机制、「八百里秦川」别称、周秦汉唐建都关中、
+    //   战国郑国渠、「关中」因函谷关/大散关等得名 —— 均为学界公认表述，未发现数字或口径问题。
+    //   `history` 段只涉前现代史，零争议红线通过。
     seeing:
       "The Guanzhong Plain, also called the Wei River Plain, lies in central Shaanxi between the Qinling to the south and the Weibei uplands (the Northern Mountains) to the north, built by the Wei River and its tributaries. It is long east–west and narrow north–south, anciently called \"the eight hundred li of Qin.\" Xi'an sits in the middle of it.",
     formation:
@@ -1600,6 +1941,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hetao-plain": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块。正文不含可核验的量化断言；
+    //   「黄河百害，唯富一套」为广泛流传的谚语；秦汉设郡屯田属广泛记载的前现代史。
+    //   **这是本批两个位于边境地带的条目之一（另一个是戈壁），零争议红线专项核对通过** ——
+    //   没有边界线描述、没有主权表态、没有把现代政治议题带进来。
     seeing:
       "The Hetao Plain lies inside the great \"几\"-shaped bend of the Yellow River, south of the Yin Mountains — a string of plains laid down by the Yellow River as it flows through Ningxia and Inner Mongolia. In the narrow sense it is the Rear Tao (around Bayannur) and the Front Tao (the Tumochuan around Hohhot) inside Inner Mongolia; in a broader sense the Ningxia Plain (the West Tao) upstream is sometimes counted in as well. There is a saying: \"the Yellow River brings a hundred harms and enriches only the one Tao.\"",
     formation:
@@ -1615,8 +1960,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yangtze-delta": {
+    // seeing sources: 长江三角洲（**地貌学口径**，北纬 30°20′—32°30′、东经 119°24′—122°30′）**面积达 4 万 km²** ——
+    //   中科院地理科学与资源研究所引《中国大百科全书》
+    //   https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692356.html（2 级，2026-09-08 核）。
+    //   **原文的「约 5 万」既不是地貌口径的 4 万，也不是国家规划的「长三角地区」（沪苏浙皖一体化范围
+    //   35.8 万 km²）—— 是两个口径之间的一个中间值**，与塔里木河「约 2000 公里」是同一形状的错。
+    //   崇明岛为「世界上最大的河口冲积岛」经上海市崇明区人民政府官网确认（1 级）；
+    //   「近几十年输沙量大幅下降、部分岸段转为侵蚀后退」为学界公认（多站点较建库前降 74.8%—92.7%），
+    //   机制表述没有被简化成错。
     seeing:
-      "The Yangtze Delta is the huge alluvial plain the Yangtze has built at its mouth, spreading east from around Zhenjiang and Yangzhou in Jiangsu to the sea, about 50,000 km². The land is extremely low and flat and water-netted; Lake Tai is its central lake, and Shanghai, Suzhou, Wuxi and Nantong are all on it.",
+      "The Yangtze Delta is the huge alluvial plain the Yangtze has built at its mouth, spreading east from around Zhenjiang and Yangzhou in Jiangsu to the sea, about 40,000 km². The land is extremely low and flat and water-netted; Lake Tai is its central lake, and Shanghai, Suzhou, Wuxi and Nantong are all on it.",
     formation:
       "The Yangtze carries huge amounts of silt to its mouth each year, and under tides and waves the silt keeps building up and prograding on both sides of the mouth and underwater, pushing the coastline far to the east over thousands of years. Sandbars in the channel gradually join the shore or grow — that is how Chongming Island formed, now the largest estuary alluvial island in the world.",
     observation:
@@ -1630,6 +1983,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pearl-delta": {
+    // seeing sources: 珠江三角洲约 **1.1 万—1.13 万 km²**（狭义口径：西北江三角洲 + 东江三角洲 8,601.1 km²）——
+    //   多来源一致，2026-09-08 核（中科院 IGSNRR 原链接证书异常，经搜索摘要交叉确认，2—3 级）。
+    //   **「岛式三角洲」「丘陵性三角洲」是地貌学界的公认描述** —— 发育在一个被海水淹没的多岛屿古海湾里，
+    //   与长江三角洲那种典型的河口沉积三角洲成因不同。桑基鱼塘的运作方式（挖塘养鱼、塘泥上基种桑、
+    //   桑叶养蚕、蚕沙喂鱼）描述准确。
     seeing:
       "The Pearl River Delta, in south-central Guangdong, is the compound delta built where the West, North and East rivers meet near Guangzhou and reach the sea together, about 11,000 km². Its features are an especially dense river network and many isolated small hills scattered through it. Guangzhou, Shenzhen, Foshan, Dongguan, Hong Kong and Macau are all here.",
     formation:
@@ -1697,11 +2055,21 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kubuqi and the Mu Us Sandy Land (both around Ordos): the Kubuqi is on the northern plateau rim, along the Yellow River, mostly moving dunes; the Mu Us is in the southern plateau, a semi-arid \"sandy land\" with a better vegetation base, mostly fixed and semi-fixed. The Kubuqi and the Tengger: one hugs the Yellow River, the other hugs the river and the railway, both key sand-control areas.",
     concept:
       "The Kubuqi is a case of sand control moving from engineering to industry: combining straw-checkerboard fixing, drought-tolerant planting, solar power and desert cash crops so that fixing the sand also produces income. It also shows that much sand-land expansion has human causes, and that easing grazing and cultivation pressure plus planted measures can reverse part of it.",
+    // history sources: UNCCD **COP13 于 2017-09-06 至 09-16 在内蒙古鄂尔多斯召开**（1 级，UNCCD 官方文件，2026-09-09 核），
+    //   库布其治沙经验作为大会背景素材被广泛报道。
+    //   **面积仍是 unknown**：本轮另找到人民网（2 级）复述 **1.86 万 km²**，与正文一致，
+    //   且「中国第七大沙漠」「距北京最近的沙漠（约 800 余公里）」也由人民网等复述 ——
+    //   **但仍未拿到国家林草局全国荒漠化和沙化调查报告的一手数字**，无法仲裁 1.86 万 vs 另一批来源的 1.39 万。
+    //   证据往 1.86 万那边偏，issue 继续开着等一手来源。
     history:
       "The Kubuqi desert edge was historically a farming–herding frontier. In the late 20th century it was badly desertified and a frequent dust source. Since the 1990s local companies and residents have kept building roads, planting trees and developing desert industries; in 2017 the Kubuqi sand-control experience was presented at the conference of the UN Convention to Combat Desertification.",
   },
 
   "ulan-buh": {
+    // seeing sources: 乌兰布和沙漠面积：二手来源收敛在 **0.91 万—1.03 万 km²**，与正文「约 1 万」相符（3 级，2026-09-08 核）。
+    //   **没有一手政府/科研机构的公报数字**（巴彦淖尔市政府原链接已失效 404），下一轮补核。
+    //   汉代文献记载的古湖「屠申泽」干涸后、湖底沙被风扬起再堆积成沙丘 —— 当地地貌与历史地理学界公认的因果链，
+    //   未被简化成错。
     seeing:
       "The Ulan Buh Desert lies in eastern Alxa Left Banner and around Dengkou in Bayannur, Inner Mongolia, about 10,000 km². \"Ulan Buh\" means \"red bull\" in Mongolian. It sits on the west bank of the Yellow River, right next to the Hetao Plain to the north-east — the desert closest to the river and its farmland.",
     formation:
@@ -1718,20 +2086,34 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   muus: {
     seeing:
-      "The Mu Us Sandy Land straddles northern Shaanxi, southern Ordos in Inner Mongolia and eastern Ningxia, about 42,000 km². Note that it is a \"sandy land,\" not a \"desert\": it is in a semi-arid zone with more rainfall than a true desert, has a base of grassland and vegetation, and its dunes are mostly fixed and semi-fixed.",
+      "The Mu Us Sandy Land straddles northern Shaanxi, southern Ordos in Inner Mongolia and eastern Ningxia, about 42,000 km² by a 2023 Shaanxi Provincial Forestry Bureau report, or 38,000 km² in a more recent national forestry monitoring round — two official figures in parallel. Note that it is a \"sandy land,\" not a \"desert\": it is in a semi-arid zone with more rainfall than a true desert, has a base of grassland and vegetation, and its dunes are mostly fixed and semi-fixed.",
     formation:
       "The Mu Us area was historically grassland with fairly good water and grass. Climate swings, shrinking rivers and lakes, and long overgrazing, cultivation and war damage to the vegetation let drifting sand gradually expand, producing a \"sandy land\" of dunes alternating with flats and lake basins. Its desertification is largely reversible.",
     observation:
       "From the air the Mu Us is a mottled landscape on the northern edge of the Loess Plateau: fixed dunes carrying shrubs and planted forest, with grassy flats, farmland and small lakes between them, and only patches of moving dune left. After decades of management most of the area is now green.",
     distinguish:
       "The Mu Us (sandy land) and the Badain Jaran or Taklamakan (deserts): a desert is in an arid zone, almost without vegetation, mostly moving dunes, hard to change fundamentally; a sandy land is in a semi-arid zone, with a vegetation base, mostly fixed and semi-fixed, and can be reversed over large areas by management. The Mu Us and the Kubuqi: the Kubuqi is farther north, drier and has more drifting sand.",
+    // concept sources: **官方口径是「治理率」，不是「治理完成」，而且这是有意的措辞**：
+    //   陕西省林业局（2023-01-13）https://lyj.shaanxi.gov.cn/zwxx/mtbd/202301/t20230113_2271585.html（1 级）：
+    //   「沙区治理率超过 80%，林木覆盖率达 30%，流沙基本『拴牢』」；
+    //   国家林草局 https://www.forestry.gov.cn/c/www/zxdt/593401.jhtml（1 级）：「毛乌素沙地已八成染绿」、
+    //   2020 年榆林沙化土地治理率 93.24% —— **但同一篇特意强调「这个绿是不稳固的，仅仅刚走过初级阶段」**。
+    //   原文的「大部分已经治理完成」把持续过程写成了已完结的结论，与流传很广的
+    //   「毛乌素即将消失／已被消灭」是同一类夸大。2026-09-08 核。
+    //   **治理率本身也是会变的量**，下一轮回来刷新（known-errors C6-j）。
     concept:
-      "The Mu Us represents \"a sandy land is not a desert, and desertification can be reversed\": in a semi-arid zone with some rainfall, simply stopping overgrazing and cultivation, plus planting grass and trees and laying straw checkerboards, can re-fix the dunes and bring the vegetation back. By around 2020 most of the Mu Us Sandy Land in Shaanxi had been brought under control.",
+      "The Mu Us represents \"a sandy land is not a desert, and desertification can be reversed\": in a semi-arid zone with some rainfall, simply stopping overgrazing and cultivation, plus planting grass and trees and laying straw checkerboards, can re-fix the dunes and bring the vegetation back. More than 80 per cent of the Mu Us Sandy Land within Shaanxi has been brought under treatment, according to a 2023 report by the Shaanxi Provincial Forestry Bureau — though officials stress that this new vegetation cover is still fragile and that holding back the sand is an ongoing effort, not a finished job.",
     history:
       "The Mu Us area was once an important base of the Xiongnu (the city of Tongwancheng was built here), when the vegetation was far better than in modern times. In recent decades Yulin in Shaanxi, Ordos in Inner Mongolia and others have kept planting forest and grass and spreading straw checkerboards, turning this sandy land from expanding to shrinking — a model of China's desertification control.",
   },
 
   gobi: {
+    // seeing sources: **「戈壁」有两个意思：地表类型（砾质荒漠）与地名（蒙古国与中国内蒙古之间那片区域）。**
+    //   本篇从头到尾用的是前者，没有把两件事混成一件 —— 这是 2026-09-08 专项核对的结论。
+    //   风力分选留下搬不动的砾石、结成「荒漠砾幂」，是公认的干旱地貌学机制，未被简化成错。
+    //   **酒泉卫星发射中心实际在内蒙古阿拉善盟额济纳旗东风镇，不在甘肃酒泉市** ——
+    //   正文写的是「设在这片戈壁里」，避开了这个很常见的地理误解。居延汉简出土为公认考古史实。
+    //   `history` 段只涉汉代屯戍等前现代史，零争议红线通过。
     seeing:
       "\"Gobi\" here means the large gravel desert of western Inner Mongolia (around Alxa and Ejin). \"Gobi\" is Mongolian for land that can barely grow plants, its surface covered with gravel and coarse sand. It differs from a sand desert — a sand desert's surface is sand, a gobi's surface is stone.",
     formation:
@@ -1748,6 +2130,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
 
   "liaodong-hills": {
+    // seeing sources: 主峰步云山 **1130.7 m**，称「辽南第一峰」—— 多来源一致，2026-09-08 核。
+    //   **与山东丘陵的 distinguish 段交叉核对**：辽东丘陵是长白山脉向西南延伸的余脉（花岗岩、变质岩剥蚀低山），
+    //   山东丘陵中的泰山、鲁山、沂山、蒙山是沿断裂抬升的断块山 —— 两篇的归属与相对高度关系一致，
+    //   没有出现乌鲁鲁/卡塔丘塔那种「区分段互相抄错方向」的问题。
     seeing:
       "The Liaodong Hills occupy the Liaodong Peninsula in south-eastern Liaoning — the south-westward spur of the Changbai mountain system, surrounded by the Yellow and Bohai seas on three sides. They are not high, mostly below 500 m, with the main peak Buyun Shan about 1,130 m, rounded and gentle, covered in forest and orchards.",
     formation:
@@ -1763,6 +2149,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "shandong-hills": {
+    // seeing sources: 泰山（玉皇顶）标准高程 **1532.7 m** —— 2007-04-27 国家测绘局与建设部联合公布，
+    //   是目前最权威、最精确的数据，景区官方与学术文献均沿用（2026-09-08 核）。
+    //   泰山 **1987 年**列入《世界遗产名录》，为文化与自然双重遗产、也是世界第一个双重遗产 ——
+    //   https://whc.unesco.org/zh/list/437（1 级）。
     seeing:
       "The Shandong Hills include the mountains of central-southern Shandong and the hills of the Jiaodong Peninsula, ringed on three sides by the North China Plain and the Yellow River delta. They are a low mountain-and-hill area bulging up in the middle of the plain, mostly around 500 m, with the main peak of Tai Shan about 1,533 m — the highest here.",
     formation:
@@ -1784,6 +2174,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Jiangnan Hills have varied rock — granite, sandstone, slate and more — deeply weathered by a long hot, wet climate into a thick red crust. Differential uplift has pushed some rock bodies up into mountains: the granite of Huang Shan, the fault block of Lu Shan, the sandstone-conglomerate of Longhu Shan (Danxia) and others are scattered through the hills.",
     observation:
       "From the air the Jiangnan Hills are a continuous, ridge-less, rolling stretch of green low mountains south of the Yangtze, with red-earth slopes and terraces between and paddy fields, towns in the basins. A few famous peaks such as Huang Shan and Lu Shan stand out with sheer rock above the surrounding gentle hills. Seas of cloud often flow among the hills after rain.",
+    // distinguish sources: **镜像交叉核对（2026-09-08）**：与两广丘陵条目的 distinguish / seeing 段逐句对照，
+    //   两篇对「江南丘陵在南岭以北、红壤与花岗岩/砂岩为主」「两广丘陵在南岭以南、石灰岩喀斯特峰林为主」
+    //   的归属完全一致，没有出现上一批乌鲁鲁/卡塔丘塔那种「区分段互相抄错方向」的问题。
+    //   **相邻条目的「区分」段是互相镜像的，一处写错就会传染 —— 这类条目要成对核。**
+    //   南岭作为两者分界为公认地理界线。
     distinguish:
       "The Jiangnan Hills and the Liangguang Hills: both are southern hills, but the Jiangnan Hills are north of the Nanling and mainly red earth with granite/sandstone landforms; the Liangguang Hills are south of the Nanling, with limestone karst (peak forest) most typical. The Jiangnan Hills and the Yunnan–Guizhou Plateau: the plateau is a coherently uplifted highland with scarped edges; the Jiangnan Hills have no clear coherent uplift or edge scarp, and are lower.",
     concept:
@@ -1803,11 +2198,21 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Liangguang Hills' karst and the Yunnan–Guizhou Plateau's karst: the landform types are similar (peak forest, caves), but the Yunnan–Guizhou Plateau is high overall (1,000–2,000 m), an uplifted highland; the Liangguang Hills are far lower, and the peak forest mostly rises from plains. The Liangguang Hills and the Jiangnan Hills: one is marked by karst peak forest, the other by red-earth low hills and famous granite mountains.",
     concept:
       "The Guilin peak forest of the Liangguang Hills is a classic of \"tropical–subtropical karst\": the hotter and wetter the climate, the stronger and faster the limestone dissolves, until a continuous limestone surface is \"eaten\" down to isolated rock peaks standing on a dissolution plain. This \"peak-forest plain\" is a late stage of karst development.",
+    // history sources: 灵渠沟通湘江（长江水系）与漓江（珠江水系），公元前 214 年前后秦始皇为统一岭南而修建 ——
+    //   广泛记载的水利与军事史常识，只涉前现代史，零争议红线通过（2026-09-08 核）。
+    //   **与江南丘陵的 distinguish/seeing 段再次交叉复核**：南岭为界、两广以喀斯特峰林为标志、
+    //   江南以红壤低山与花岗岩名山为标志，两篇互相印证，未出现抄错方向。
     history:
       "The scenery of Guilin has long been called \"the finest under heaven\" and appears again and again in Chinese landscape painting and travel writing. The Lingqu Canal links the Xiang and Li rivers, letting the Central Plains reach the Pearl system by water — a key work in the Qin unification of the far south.",
   },
 
   namtso: {
+    // seeing sources: 纳木错湖面海拔 **4718 m**；**色林错自 2014 年监测起面积超过纳木错，成为西藏第一大湖**，
+    //   纳木错退居第二 —— https://www.chinanews.com.cn/sh/2014/07-21/6407632.shtml（2 级，2026-09-09 核）。
+    //   对比用的青海湖湖面 3196 m 与中科院口径一致。
+    //   **正文刻意没有给纳木错的具体面积数字** —— 那是会随冰川融水变化的量（近年呈扩张趋势），
+    //   不写死是正确处理（known-errors C6-j）；日后若要加，必须带监测年份与机构。
+    //   `history` 段只写藏传佛教圣湖的民俗事实，零争议红线通过。
     seeing:
       "Nam Co lies in central Tibet at the northern foot of the Nyainqentanglha range, at about 4,718 m — one of the highest large lakes in the world, and the second-largest lake in Tibet (after Serling Co). It is a closed saltwater lake with intensely deep-blue water, and one of the three great sacred lakes of Tibetan Buddhism.",
     formation:
@@ -1823,6 +2228,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dongting: {
+    // seeing sources: 洞庭湖**现有水面 2625 km²，是全国水量最大、水面面积第二的淡水湖泊** ——
+    //   湖南省人民政府 https://www.hunan.gov.cn/topic/2020hnjksc/jkscwzewm/202412/t20241223_33533635.html
+    //   （1 级，2024-12 发布页，2026-09-09 核）；鄱阳湖平水位约 3150 km²、高水位超 4125 km²，均更大。
+    //   **正文只写「退居第二」、没有给具体面积数字，回避了会随季节与围垦剧烈变化的量** —— 正确写法。
+    //   **但这个名次本身也是会变的**（洞庭湖历史上曾是第一），下一轮要连同监测时点一起复核。
     seeing:
       "Dongting Lake lies in northern Hunan on the south bank of the middle Yangtze. It was historically China's largest freshwater lake, and heavy silt accumulation and lake-to-farmland reclamation have dropped it to second (behind Poyang). Like Poyang it \"changes face\" sharply: a vast lake in flood, and in the dry season a set of winding channels plus wide areas of exposed flats.",
     formation:
@@ -1853,6 +2263,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   leizhou: {
+    // seeing sources: 2026-09-09 逐句核实全篇 6 板块：玄武岩台地、湖光岩玛珥湖（玛珥式火山口湖）成因属标准地质表述；
+    //   `history` 段的雷州得名、贬官流放史、热带作物均为前现代与客观地理事实。中英对照一致，无需改动。
     seeing:
       "The Leizhou Peninsula, in south-western Guangdong, is the southernmost peninsula of the Chinese mainland, facing Hainan Island across the Qiongzhou Strait. It is broadly a low basalt platform, mostly below 100 m, with a red weathering soil, an indented coast, and abundant volcanic landforms.",
     formation:
@@ -1874,6 +2286,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ North America · United States ============
   "rocky-mountains": {
+    // seeing sources: 长约 4800 km、最高峰埃尔伯特山 4401 m、拉勒米造山运动约 8000 万—5500 万年前、
+    //   科罗拉多五十余座 14,000 英尺峰 —— 2026-09-09 逐句核实，全篇 6 板块无误，本轮无需改动。
     seeing:
       "The Rocky Mountains are the backbone of western North America, running about 4,800 km from British Columbia in Canada to New Mexico in the United States. They carry the Continental Divide — rivers on the two sides of the crest drain to the Pacific and (via the Gulf of Mexico) to the Atlantic. The highest peak on the U.S. side is Mount Elbert in Colorado, about 4,401 m.",
     formation:
@@ -1889,6 +2303,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "appalachian-mountains": {
+    // seeing sources: 长约 2400 km、最高峰米切尔山 2037 m、4.8 亿—2.6 亿年前造山、
+    //   阿巴拉契亚步道约 3500 km / 跨 14 州 —— 2026-09-09 逐句核实，全篇 6 板块无误。
     seeing:
       "The Appalachian Mountains run about 2,400 km along the eastern edge of North America, from Newfoundland in Canada to Alabama in the United States. They are not high — the highest, Mount Mitchell, is about 2,037 m — but they are continuous, parallel and heavily forested, the main topographic barrier of eastern North America, and long an obstacle to European settlers moving inland.",
     formation:
@@ -1904,6 +2320,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sierra-nevada-us": {
+    // seeing sources: 长约 640 km、惠特尼山 4421 m（本土 48 州最高峰，限定语正确）、内华达岩基逾 1 亿年、
+    //   断块抬升 + 冰川雕刻的机制表述准确 —— 2026-09-09 核。
+    //   **条目已主动澄清它与西班牙的 Sierra Nevada 同名不同地** —— 同名不同地正是本项目反复踩的一类，
+    //   这里处理得当。
     seeing:
       "The Sierra Nevada is a range in eastern California about 640 km long, running north–south. Its western slope rises gently from the Central Valley; its eastern side drops as a steep fault scarp into the Owens Valley, a fall of up to about 3,000 m. The high point, Mount Whitney, is about 4,421 m — the highest peak in the 48 contiguous United States. Winter moisture off the Pacific falls here as heavy snow, making the range an important natural reservoir for California.",
     formation:
@@ -1921,6 +2341,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "cascade-range": {
     seeing:
       "The Cascade Range is a volcanic mountain range in the Pacific Northwest of North America, running from southern British Columbia in Canada into northern California. Its signature is a line of widely spaced, steep-sided stratovolcano cones, of which Mount Rainier, about 4,392 m, is the highest and is an active volcano. The range separates the wet coastal region from the dry interior plateau.",
+    // formation sources: 雷尼尔山 4392 m；卡斯卡迪亚俯冲带的火山弧机制（约 100 km 深处脱水熔融产生岩浆）与地质教材一致；
+    //   1980-05-18 圣海伦斯侧向喷发 —— 2026-09-09 核，全篇 6 板块无误。
     formation:
       "The Cascades are a subduction-zone volcanic arc: the Juan de Fuca plate subducts beneath North America from the west, melting at about 100 km depth to produce magma that rises to build volcanoes. The range has two parts — an older, eroded base of volcanic rock in the west, and a line of young stratovolcanoes sitting on it (Rainier, Adams, St. Helens, Hood, Shasta and others). Mount St. Helens had a major lateral eruption in 1980.",
     observation:
@@ -1934,8 +2356,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "alaska-range": {
+    // seeing sources: 海拔 **约 6190 m**，USGS **2015 年**实测（此前流传 6,194 m）——
+    //   https://www.usgs.gov/news/national-news-release/new-elevation-nations-highest-peak（1 级，2026-09-09 核）。
+    //   **名称问题按零争议红线处理，正文不断言哪个是「官方名」**：
+    //   联邦名 2015 年由 McKinley 改为 Denali，2025 年 1 月的行政令与 2 月的内政部命令又把 GNIS 主名
+    //   改回 Mount McKinley（迪纳利国家公园与保护区的名称未变，阿拉斯加州政府仍用 Denali）。
+    //   **这不是地质意义上的不确定，而是会随执政更替反复变的政治决定** —— 断言任何一方都会
+    //   ① 过期、② 读作立场表态。现在两个名字并列、都说明在使用。
+    //   山脉长约 650 km；迪纳利断层走滑 + 太平洋板块推挤（Yakutat 地体碰撞）驱动抬升；
+    //   迪纳利国家公园 1917 年设立、约 2.4 万 km² —— 均核实无误。
     seeing:
-      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (U.S. Geological Survey figure; the federal official name is also given as Mount McKinley). Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
+      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (measured by the U.S. Geological Survey in 2015). The peak goes by two current names — Denali, from a local Native language, meaning \"the high one\", and Mount McKinley — and both are in use. Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
     formation:
       "The Alaska Range runs along a large strike-slip fault (the Denali Fault) and is the result of the Pacific-side plate pushing north, compressing and displacing crust upward; it is still slowly rising and is seismically active. The rock is mostly sedimentary and granitic, and the upper range is covered by huge valley glaciers — the Kahiltna and others flow tens of kilometres down from around Denali.",
     observation:
@@ -1959,6 +2390,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Colorado Plateau and the Tibetan Plateau are both \"plateaus\", but the Tibetan Plateau was squeezed up by continental collision, sits above 4,000 m and has strongly deformed rock; the Colorado Plateau is only 1,500 to 2,100 m, its layers are essentially flat, and it was raised evenly as a block. Versus the neighbouring Great Basin: the Great Basin has been pulled apart into a set of fault troughs and parallel ranges; the Colorado Plateau is one intact block that was not torn.",
     concept:
       "The Colorado Plateau shows that what matters for a \"plateau\" is a large area raised relatively intact — not necessarily great height. A common misconception is that canyons were \"ripped open\": the Grand Canyon was sawn down over millions of years by the Colorado River, faster where the plateau rose faster. Flat layers plus a dry climate make this a classic region worldwide for studying sedimentary rock and river erosion.",
+    // history sources: **「Anasazi」是 NPS 已弃用的他称** —— 纳瓦霍语词，本意接近「敌人的祖先」；
+    //   霍皮等普韦布洛部落自 1990 年代起提出异议，梅萨维德等国家公园的官方材料改用
+    //   Ancestral Puebloan / Ancestral Pueblo people ——
+    //   https://www.nps.gov/meve/learn/historyculture/upload/ancestral_pueblo_people_2018_508_01-24-18-2.pdf（1 级，2026-09-09 核）。
+    //   **这同时是一处中英不同步**：英文版本身没有这个括注，只有中文加了 —— 已删。
+    //   **族群名称的「哪个词现在还在用」是会变的**，与地名更名同类，要按管理机构的现行用法写。
+    //   高原面积约 33.7 万—34 万 km²、平均海拔 1500—2100 m、抬升 1500—2000 m 而岩层未褶皱、
+    //   纳瓦霍族保留地为美国面积最大的印第安保留地，均核实无误。
     history:
       "The Colorado Plateau is home to the Navajo, Hopi, Ute and other Native nations; the Navajo Nation is the largest Indian reservation in the United States, and places such as Monument Valley are managed by Navajo Parks. The plateau also holds many Ancestral Puebloan cliff-dwelling sites, such as Mesa Verde. Today it is dominated by its cluster of national parks and outdoor tourism.",
   },
@@ -1967,18 +2406,28 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Grand Canyon is the vast canyon the Colorado River cut through the Colorado Plateau, in northern Arizona — about 446 km long, up to about 29 km wide, and up to about 1,857 m deep. Its walls of clearly bedded red and yellow rock record nearly 1.8 billion years of Earth history. Most visitors look out from the South Rim, at about 2,100 m.",
     formation:
-      "The Grand Canyon formed mainly over the past 5 to 6 million years, as the Colorado River kept cutting down while the Colorado Plateau was being raised. The river does the \"cutting deeper\"; wall retreat and side gullies do the \"widening\"; and the dry climate slows collapse and plant cover, keeping the layers sharp. The Vishnu Schist exposed at the bottom is about 1.8 billion years old, among the oldest rock in North America; the Kaibab Limestone at the top is about 270 million years old.",
+      "The continuous canyon seen today is, on the mainstream view, the work of the past 5 to 6 million years, as the Colorado River kept cutting down while the Colorado Plateau rose and linked up several older palaeocanyon segments — some cut nearly to their present depth as long as about 70 million years ago. The timing and mechanism of the individual segments are still debated. The river does the \"cutting deeper\"; wall retreat and side gullies do the \"widening\"; and the dry climate slows collapse and plant cover, keeping the layers sharp. The Vishnu Schist exposed at the bottom is about 1.8 billion years old, among the oldest rock in North America; the Kaibab Limestone at the top is about 270 million years old.",
     observation:
       "From the air the Grand Canyon is an extremely deep, wide, crook-edged gash in the plateau surface; inside are stepped-back terraces and cliffs, colours shading from pale at the top to deep, from yellow to red to grey-black going down. A deep-green ribbon of river runs along the bottom. The North Rim is clearly higher than the South Rim and more forested. Low sun at sunrise and sunset makes the layering most three-dimensional.",
     distinguish:
       "The Grand Canyon and China's Yangtze Three Gorges are both canyons cut by a big river, but the Three Gorges is the Yangtze cutting across a mountain belt, with steep V-shaped rock walls; the Grand Canyon is the Colorado cutting into a plateau of flat layers, so its walls are stepped, wider and paler. Versus the Yarlung Tsangpo Grand Canyon: that one is deeper, narrower, wetter and more forested; the Grand Canyon is wider, drier and bare-rock.",
     concept:
       "The Grand Canyon is often wrongly called the \"deepest\" or \"largest\" canyon — by depth and length it is neither first (the Yarlung Tsangpo Grand Canyon is deeper and longer). What is genuinely special is its width, its continuous exposure of rock layers, and the way the dry climate makes about 1.8 billion years of geology legible at a glance. It is a classic case of river down-cutting combined with block uplift.",
+    // history sources: NPS 官方的大峡谷国家公园「传统关联部落」共 11 个：Havasupai、Hopi、Hualapai、
+    //   Kaibab Band of Paiute、Las Vegas Paiute、Moapa Band of Paiute、Navajo Nation、
+    //   Paiute Indian Tribe of Utah、San Juan Southern Paiute、Pueblo of Zuni、Yavapai-Apache Nation ——
+    //   https://www.nps.gov/grca/learn/historyculture/associated-tribes.htm（1 级，2026-09-09 核）。
+    //   **原文写的「犹特（Ute）」不在名单里** —— Ute 与 Paiute 是两个不同的民族，名字相近极易混。
+    //   **写族名要照着管理机构的官方名单核，不能凭发音相近推**。
+    //   长 446 km / 最宽 29 km / 最深 1857 m、南缘约 2100 m、毗湿奴片岩约 18 亿年、
+    //   凯巴布石灰岩约 2.7 亿年、1919 年设园、1979 年列入世界遗产，均核实无误。
     history:
-      "The Grand Canyon and its surroundings have long been home to the Havasupai, Hualapai, Navajo, Hopi, Ute and other Native nations, and tribal communities still live in and around the canyon. Grand Canyon National Park was established in 1919 and listed as a World Heritage site in 1979. Grand Canyon Village on the South Rim is the main visitor hub.",
+      "The Grand Canyon and its surroundings have long been home to the Havasupai, Hualapai, Navajo, Hopi, Paiute and other Native nations, and tribal communities still live in and around the canyon. Grand Canyon National Park was established in 1919 and listed as a World Heritage site in 1979. Grand Canyon Village on the South Rim is the main visitor hub.",
   },
 
   "great-plains-us": {
+    // seeing sources: 西部约 1800 m 降至东部约 500 m、奥加拉拉含水层、内布拉斯加沙丘、1930 年代黑风暴、
+    //   100°W 与 500 mm 年降水线大致重合作为分界 —— 2026-09-09 核，全篇 6 板块无误。
     seeing:
       "The Great Plains are a broad, gently sloping plain east of the Rocky Mountains, running from the Prairie provinces of Canada down to Texas and several hundred kilometres wide. They fall from about 1,800 m in the west to about 500 m in the east so gradually that the slope is barely perceptible. Once continuous tall- and short-grass prairie with huge bison herds, they are now a major U.S. wheat, corn and cattle belt.",
     formation:
@@ -2002,6 +2451,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Great Basin is a strikingly regular set of north–south stripes: brown ranges alternating with pale, flat valleys, one after another. The valley centres often hold white salt flats or dry lake beds (playas). Vegetation is mostly grey-green sagebrush, thinning toward the basin floors. The Great Salt Lake is a shallow, salty, pinkish-white sheet of water in the north-east corner.",
     distinguish:
       "The Great Basin and the Tarim Basin are both dry, internally drained basins, but the Tarim is a single large basin ringed by high mountains with one continuous desert in the middle; the Great Basin is not a basin at all but a whole \"Basin and Range\" province of dozens of small basins and small ranges. Versus the Colorado Plateau: the plateau is an intact block that was not torn; the Great Basin is a block that was stretched apart.",
+    // concept sources: 面积约 50 万 km²、盆岭构造的地壳抻张机制、邦纳维尔湖为冰期古湖、1847 年摩门教徒定居大盐湖畔 ——
+    //   2026-09-09 核，全篇 6 板块无误。
+    //   **「大盆地」有三个不完全重合的范围**：地貌省、水文内流区、沙漠生态区 ——
+    //   **正文自己就把这一点写明了**，是正确写法的范例（与「戈壁」那篇分清地表类型与地名同一类处理）。
     concept:
       "The name \"Great Basin\" is misleading — it is not one bowl-shaped hollow but an area where all water is trapped inland, made of many small basins. The test is the drainage: any region whose rivers ultimately do not reach the sea and vanish inland is an area of internal drainage. It is at once a landform region (Basin and Range), a hydrologic region (internal drainage) and a desert region (the Great Basin Desert), and the three do not match exactly.",
     history:
@@ -2009,8 +2462,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "death-valley": {
+    // seeing sources: 望远镜峰 3,366 m、巴德沃特盆地 −86 m，高差 11,331 英尺（约 3,454 m）——
+    //   NPS https://www.nps.gov/deva/planyourvisit/telescope-peak.htm（1 级，2026-09-09 核），与正文海拔差吻合。
+    //   **水平距离约 15—17 英里（24—27 km）**（3 级，多来源一致）；NPS 官方页面本身没给这个距离。
+    //   **原文的「约 30 公里」偏高 10%—25%，是一次性写错，不属于会被修正的动态数字。**
     seeing:
-      "Death Valley is a deep north–south valley in eastern California, part of the Great Basin. Its floor at Badwater Basin lies at −86 m, the lowest point in North America, while Telescope Peak on its western side rises to 3,366 m — only about 30 km apart horizontally. Summers are extremely hot, among the hottest recorded anywhere on Earth, and it is the driest place in the contiguous United States.",
+      "Death Valley is a deep north–south valley in eastern California, part of the Great Basin. Its floor at Badwater Basin lies at −86 m, the lowest point in North America, while Telescope Peak on its western side rises to 3,366 m — only about 24 to 27 km apart horizontally. Summers are extremely hot, among the hottest recorded anywhere on Earth, and it is the driest place in the contiguous United States.",
     formation:
       "Death Valley is a \"pull-apart basin\" — the crust has been stretched along faults so that the whole valley floor keeps dropping relative to the ranges on either side, while receiving debris washed down from the mountains. With almost no outlet and very strong evaporation, the floor has accumulated thick salt, mud and sand, forming large salt flats, cracked salt crust and seasonal shallow salt lakes. The alluvial fans along the valley edge are large and steep.",
     observation:
@@ -2024,6 +2481,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mojave-desert": {
+    // seeing sources: 海拔 600—1200 m、约书亚树为标志植物、内华达山脉与横断山脉的雨影机制、
+    //   与大盆地（更冷、灌木荒漠）和索诺兰沙漠（夏季降水、柱状仙人掌）按降水季节与植被区分 ——
+    //   2026-09-09 核，全篇 6 板块无误。
     seeing:
       "The Mojave Desert lies in south-eastern California, southern Nevada and the neighbouring corners of Arizona and Utah, wedged between the Great Basin to the north and the Sonoran Desert to the south. It is a relatively high desert, mostly 600 to 1,200 m. Its signature plant is the Joshua tree, a tall yucca that grows only in the Mojave. Las Vegas, Death Valley and Joshua Tree National Park are all within it.",
     formation:
@@ -2039,6 +2499,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-lakes": {
+    // seeing sources: 总面积约 24.4 万 km²、约占全球地表淡水两成、末次冰盖约 1.4 万年前退去 ——
+    //   Michigan Sea Grant（2/3 级，2026-09-09 核）。
+    //   **「密歇根湖与休伦湖在水文上是一体（经麦基诺水道连通、同一水位），习惯上算两个湖」——
+    //   正文写明了这一点**，是正确写法；与东非大湖（裂谷成因）、里海（咸水、内流）的区分也写清了。
     seeing:
       "The Great Lakes are a set of connected large freshwater lakes in the middle of North America — Superior, Michigan, Huron, Erie and Ontario, running from west to east across the U.S.–Canada border. Their combined area is about 244,000 km², and they hold roughly a fifth of the world's surface liquid fresh water. Their water eventually reaches the Atlantic via the St. Lawrence River. Chicago, Toronto and Detroit are among the big cities on their shores.",
     formation:
@@ -2054,8 +2518,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   yellowstone: {
+    // seeing sources: 黄石破火山口 **85 × 45 km（53 × 28 mi）** —— USGS https://www.usgs.gov/volcanoes/yellowstone
+    //   （1 级，2026-09-09 核）；原文写的 72×55 km 不是这个口径。
+    //   三次超大规模喷发年代 **208 万 / 130 万 / 63.1 万年前**，与正文「过去约 210 万年、最近一次约 64 万年前」一致。
+    //   **「超级火山即将喷发」一类说法**：YVO 明确表示没有迹象表明近期会喷发 —— 正文 concept 段的口径与此一致。
+    //   **「世界上最早的国家公园之一」这句反而比 NPS 自己的表述更保守**（NPS 官网径直写 The World's First
+    //   National Park），正文加了「之一」，稳妥。热点固定 + 北美板块西南移 + 斯内克河平原轨迹的机制与 USGS 一致。
     seeing:
-      "The Yellowstone Plateau lies in the northern Rockies across Wyoming, Montana and Idaho, at about 2,400 m. It sits on top of a large active volcano — an underground magma chamber has domed the surface into an upland — and in the past 2.1 million years it has had three enormous eruptions, the most recent about 640,000 years ago, which collapsed a caldera about 72 by 55 km. As a result the surface has the densest concentration of geysers, hot springs and mud pots in the world, and Yellowstone (1872) was one of the first national parks anywhere.",
+      "The Yellowstone Plateau lies in the northern Rockies across Wyoming, Montana and Idaho, at about 2,400 m. It sits on top of a large active volcano — an underground magma chamber has domed the surface into an upland — and in the past 2.1 million years it has had three enormous eruptions, the most recent about 640,000 years ago, which collapsed a caldera about 85 by 45 km (53 by 28 miles). As a result the surface has the densest concentration of geysers, hot springs and mud pots in the world, and Yellowstone (1872) was one of the first national parks anywhere.",
     formation:
       "The energy of the Yellowstone volcano comes from a roughly fixed mantle hot spot. As the North American plate moves south-west, it has left a line of older eruptive centres trailing north-east (the Snake River Plain). The current magma chamber is still there, heating the surface: rain and snowmelt sink underground, are heated, and rise back along fractures; where they pass through travertine or silica plumbing they build geysers. The Grand Canyon of the Yellowstone is where the Yellowstone River has cut into volcanic rock stained yellow by hydrothermal alteration.",
     observation:
@@ -2069,6 +2539,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yosemite-valley": {
+    // seeing sources: 谷长 7.5 英里（约 12.1 km）、谷底约 4,000 英尺（约 1,200 m）—— NPS 溯源资料（3 级但直接标注 NPS 出处，2026-09-09 核）。
+    //   正文「约 11 公里」比 NPS 数字略短约 10%，用了「约」字、海拔完全吻合，本轮不判为错；
+    //   **若要更精确可改成「约 12 公里」**，记在这里供下一轮参考。
+    //   **1864 年林肯签署的是优胜美地授地法案（州级保护），1890 年才设立国家公园** ——
+    //   正文把两件事分开写了，没有把 1864 年说成建园年，处理正确。
     seeing:
       "Yosemite Valley is a deep valley about 11 km long in the Sierra Nevada, its floor at about 1,200 m, walled by nearly vertical pale granite cliffs — El Capitan, Half Dome, Sentinel Rock. The Merced River runs through it, and side streams drop straight off the rim as high waterfalls including Yosemite Falls. The valley is the heart of Yosemite National Park and one of the birthplaces of rock climbing.",
     formation:
@@ -2084,6 +2559,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mississippi-river": {
+    // seeing sources: USGS：密西西比干流 **2,340 英里（约 3,766 km）**；密苏里—密西西比水系合计 **3,710 英里（约 5,971 km）**；
+    //   流域约占美国本土 41%—42%（不同 USGS 出版物给 40%—42%）——1 级，2026-09-09 核。
+    //   **正文已经把「干流」与「含最长支流」两套口径分开写了，是正确写法的范例** ——
+    //   与塔里木河「约 2000 公里」、达令河「约 2700 公里」那两条把两套口径混成一个数的错正好构成对照。
     seeing:
       "The Mississippi River is the main stem of the largest river system in North America, rising at Lake Itasca in Minnesota and flowing about 3,700 km south to the Gulf of Mexico; measured from its longest tributary, the Missouri, the system is about 6,000 km long. Together with its tributaries it drains roughly 40% of the surface runoff of the contiguous United States. Its lower reaches run through a broad, flat floodplain, and its mouth is a \"bird's-foot\" delta reaching into the sea.",
     formation:
@@ -2099,6 +2578,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "central-valley-ca": {
+    // seeing sources: 长约 400 英里（约 644 km）、平均宽约 50 英里（约 80 km）—— USGS 加州水科学中心（1 级，2026-09-09 核）。
+    //   正文的「80 到 100 公里宽」上限略宽于平均值，但 USGS 自己也说局部更宽，落在合理范围内。
     seeing:
       "The Central Valley is a flat lowland about 650 km long and 80 to 100 km wide between the Sierra Nevada and the Coast Ranges of California. Its northern half is drained by the Sacramento River and its southern half by the San Joaquin River; the two meet in a delta that reaches the sea through San Francisco Bay. The climate is dry summers and wet winters, the soil is deep, and it is one of the most productive agricultural regions in the United States.",
     formation:
@@ -2114,6 +2595,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   everglades: {
+    // seeing sources: **全球唯一美洲鳄与短吻鳄野外共存之地** —— 美洲鳄分布的最北端与短吻鳄分布的最南端在此重叠
+    //   （3 级转述 NPS 材料，2026-09-09 核）。
+    //   **1947-12-06 建园，是美国第一个主要为保护生态系统（而非风景）而设立的国家公园** —— 与官方史料一致。
     seeing:
       "The Everglades are a very broad, very gently sloping wetland at the southern end of the Florida peninsula. In the wet season, water spills from Lake Okeechobee in the centre and forms a sheet tens of centimetres deep and over a hundred kilometres wide, creeping south across sawgrass prairie at a few hundred metres a day and finally spreading into Florida Bay — which is why it is called the \"river of grass\". It is the only place where the American alligator and the American crocodile live side by side.",
     formation:
@@ -2129,6 +2613,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sonoran-desert": {
+    // seeing sources: 巨柱仙人掌（saguaro）天然**仅分布于索诺兰沙漠** —— USGS（1 级，2026-09-09 核）；
+    //   不见于莫哈韦、奇瓦瓦、大盆地三大荒漠。
+    //   索诺兰沙漠纬度约北纬 25°—33°，是北美四大荒漠中最靠南、最热的一个，正文用了「之一」限定，稳妥。
     seeing:
       "The Sonoran Desert covers southern Arizona, a small part of south-eastern California, and the Mexican states of Sonora and Baja California — one of the lowest-latitude and hottest deserts in North America. Its signature is the saguaro cactus, which can grow more than ten metres tall and live over a century, and grows only in the Sonoran Desert. Phoenix and Tucson are both within it.",
     formation:
@@ -2144,6 +2631,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "monument-valley": {
+    // seeing sources: 纪念碑谷由**纳瓦霍部落公园与游憩局（Navajo Nation Parks & Recreation）**管理，**不是国家公园** ——
+    //   https://navajonationparks.org/navajo-tribal-parks/monument-valley/（1 级，部落官方机构，2026-09-09 核）。
+    //   **这是很常见的误解，正文避开了。** 进入核心区需购票、部分区域需向导，正文也写明了；
+    //   未把「原住民早已知道的地方」写成「被发现」。
+    //   **地层年代（二叠纪至三叠纪红色砂岩与页岩）本轮未能核到官方一手表述，已另记 unknown。**
     seeing:
       "Monument Valley lies on the Colorado Plateau at the Utah–Arizona border — a group of red sandstone mesas and buttes standing on a flat red desert, with a relief of about 100 to 300 m. Classic forms such as the East and West Mitten Buttes and the Merrick Butte appear often in films and photographs. It is managed by the Navajo Nation as a tribal park and is part of the Navajo reservation.",
     formation:
@@ -2159,8 +2651,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hawaiian-islands": {
+    // seeing sources: 夏威夷主要岛屿共 8 个（夏威夷岛/毛伊/瓦胡/考爱/摩洛凯/拉奈/尼豪/卡霍奥拉威），
+    //   **其中卡霍奥拉威岛目前没有常住人口** —— 由夏威夷州卡霍奥拉威岛保留地委员会（KIRC）管理、
+    //   仅限文化与生态活动准入，官方称 uninhabited：https://kahoolawe.hawaii.gov/（1 级，2026-09-09 核）。
+    //   太平洋板块以约 7—10 cm/年向西北移动；夏威夷—天皇海山链的拐弯约 4700 万年前，
+    //   主流解释是板块运动方向改变（另有 2019 年论文提出热点自身漂移说，学界仍在讨论）——
+    //   正文用的是通行表述，不算错。
+    //   **火山活动是持续更新的事实**：基拉韦厄自 2024-12-23 起的哈雷毛毛火口喷发序列到 2026 年 8 月仍在持续；
+    //   冒纳罗亚 2022 年那次已结束。**正文只写「是活火山」、没点名具体喷发年份，这是正确的保守处理** ——
+    //   日后若要加「最近一次喷发」必须带年份，并知道下一轮要回来刷新。
     seeing:
-      "The Hawaiian Islands are a chain of volcanic islands in the middle of the Pacific, forming the U.S. state of Hawaii. There are 8 main inhabited islands; the largest and youngest is the Island of Hawaii (the \"Big Island\") at the south-east end, where Mauna Loa and Kīlauea are active volcanoes. Toward the north-west the islands get older, lower and smaller, and finally sink below the surface as reefs and seamounts.",
+      "The Hawaiian Islands are a chain of volcanic islands in the middle of the Pacific, forming the U.S. state of Hawaii. There are 8 main islands, 7 of them inhabited; the largest and youngest is the Island of Hawaii (the \"Big Island\") at the south-east end, where Mauna Loa and Kīlauea are active volcanoes. Toward the north-west the islands get older, lower and smaller, and finally sink below the surface as reefs and seamounts.",
     formation:
       "The Hawaiian Islands sit above a roughly fixed mantle hot spot. The Pacific plate moves north-west at about 7 to 10 cm a year, carrying away, one by one like a conveyor belt, the volcanoes that form over the hot spot — leaving a chain of volcanoes that gets progressively younger from north-west to south-east. Each island above the surface is one or several shield volcanoes, built up gradually by layer on layer of very fluid basalt lava, with gentle slopes and a shield-like outline.",
     observation:
@@ -2174,6 +2675,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "columbia-plateau": {
+    // seeing sources: 哥伦比亚河玄武岩群（CRBG）覆盖 **over 210,000 km²**；主体喷发约 **16.7—5.5 Ma**，
+    //   其中 93% 的体积集中在 16.7—15.6 Ma —— USGS（1 级，2026-09-09 核）。
+    //   正文的「约 1700 万到 600 万年前」在合理取整范围内。
     seeing:
       "The Columbia Plateau is in the north-western United States, across eastern Washington, eastern Oregon and western Idaho — a broad upland built of basalt. In the Miocene (about 17 to 6 million years ago) large volumes of very fluid lava poured out of a set of fissures and spread across the region in sheet after sheet; the basalt covers a total of about 210,000 km². The Columbia and Snake rivers have cut deep canyons into the plateau.",
     formation:
@@ -2189,8 +2693,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-salt-lake": {
+    // seeing sources: USGS Saltair 监测站（10010000）**2026-08-08 读数约海拔 4,190.4 英尺**，低于犹他州认定的
+    //   生态健康水位 **4,198 英尺**；2022 年 11 月的历史最低是 4,188 英尺；2026 年冬季雪量不足往年一半 ——
+    //   https://waterdata.usgs.gov/ut/nwis/uv?site_no=10010000（1 级实时站）与犹他州 DNR（1 级），2026-09-09 核。
+    //   **这是 known-errors C6-j 里风险最高的一类：每次核实都必须回去查实时监测站，不能沿用任何一次查到的数字。**
+    //   原文用「近年偏低」这种相对时间词回避了具体数字 —— 看似稳妥，其实「近年」本身就会过期。
+    //   **含盐量那句**（「从略高于海水到接近饱和」）是定性描述、不随年份作废，本轮未逐一核具体百分比；
+    //   若日后要写具体盐度，同样必须带年份（盐度随水位波动，水位越低南北两半差异越极端）。
+    //   邦纳维尔湖约 1.3 万—1.45 万年前骤降（犹他州地质调查局，1 级）、1847 年摩门教移民定居，均核实无误。
     seeing:
-      "The Great Salt Lake is in north-western Utah, the largest saltwater lake in the Western Hemisphere. It has no outlet — rivers flow in and water leaves only by evaporation, so salt keeps concentrating, and salinity ranges from a little above seawater to near-saturation in different parts of the lake. The lake is shallow, only a few metres deep over much of its area, so a small change in level moves the shoreline a long way. In recent years, sustained drought and upstream water use have kept it low.",
+      "The Great Salt Lake is in north-western Utah, the largest saltwater lake in the Western Hemisphere. It has no outlet — rivers flow in and water leaves only by evaporation, so salt keeps concentrating, and salinity ranges from a little above seawater to near-saturation in different parts of the lake. The lake is shallow, only a few metres deep over much of its area, so a small change in level moves the shoreline a long way. Sustained drought and upstream water use have kept the lake low: the USGS gauge at Saltair read about 4,190 ft in August 2026, below the 4,198 ft that Utah treats as a healthy level. The reading swings from year to year with precipitation and upstream use, so it is worth checking the current gauge.",
     formation:
       "The Great Salt Lake is the remnant of a much larger freshwater lake of the ice ages, Lake Bonneville. About 14,000 years ago the climate dried, Bonneville shrank drastically, and only the Great Salt Lake was left in the lowest ground; the old shorelines are still cut into the hillsides around it like contour lines. The south-east shore has river deltas and wetlands; the rest is mostly flat salt flat.",
     observation:
@@ -2227,6 +2739,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "atlantic-coastal-plain": {
     seeing:
       "The Atlantic Coastal Plain is a low, flat belt along the eastern edge of North America, beginning around New York and New Jersey and widening southward all the way to Florida and around into the Gulf coast. It is relatively recently emerged sea floor, made of loose sand, mud and shell material, very gently sloping, with a coast of barrier islands, lagoons and drowned river mouths. Cities such as Washington and Richmond sit roughly along its boundary with the Appalachian foothills.",
+    // formation sources: 「瀑布线」（Fall Line）成因：河流从阿巴拉契亚山麓的坚硬结晶岩基底跌到沿岸平原的松散沉积层上，
+    //   差异侵蚀形成一串小瀑布与急流 —— 教科书级地质共识，2026-09-09 复核未见与权威资料矛盾。
+    //   对比用的大平原海拔（落基山麓约 1,500—1,800 m）与 Britannica 一致。
     formation:
       "The Atlantic Coastal Plain is essentially the landward extension of the continental shelf — over the past tens of millions of years, sea level has risen and fallen repeatedly, flooding and exposing this shallow sea floor, each time leaving a nearly horizontal, seaward-tilted layer of sediment. When sea level was low in the ice ages, rivers cut valleys across the plain; when it rose afterward, the valley mouths were drowned into wide bays (such as Chesapeake Bay). The plain's edge against the foothills is the \"Fall Line\", where rivers drop from hard old rock onto soft sediment in a set of small falls and rapids.",
     observation:
@@ -2240,6 +2755,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "florida-peninsula": {
+    // seeing sources: 佛罗里达**半岛**最高点为莱克县的 Sugarloaf Mountain **95 m（312 ft）**，正文「约 100 米左右」准确。
+    //   **注意别与佛罗里达「州」全境最高点 Britton Hill（105 m）混淆** —— 后者在狭长地带（panhandle）、
+    //   不属于半岛。**正文没有混，处理正确**（3 级，2026-09-09 核）。
+    //   半岛长约 650 km 与常见地理描述一致；1513 年庞塞·德莱昂登陆命名 La Florida、
+    //   1821 年《亚当斯-奥尼斯条约》后归美国，均属公认史实。
     seeing:
       "The Florida Peninsula is a low, flat strip of land reaching south-east into the sea from North America, about 650 km long. It is really the emerged part of a huge limestone platform; even its highest point is only about 100 m above sea level. Limestone dissolves easily in water, so the peninsula is full of sinkholes, underground rivers and clear large springs; the southern end is the Everglades, and the coast is fringed with barrier islands and coral reefs (the Florida Keys).",
     formation:
@@ -2271,6 +2791,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ North America · Canada ============
   "canadian-shield": {
+    // seeing sources: 加拿大地盾约占国土 **50%**；已知最古老岩石为西北地区**阿卡斯塔片麻岩约 40.3 亿年** ——
+    //   加拿大自然资源部（1 级，2026-09-09 核）。
+    //   **正文写「有的超过 30 亿年」比实际更保守** —— 方向正确、没有夸大，是可接受的写法；
+    //   若日后要写得更具体，可点名阿卡斯塔片麻岩并带年代。
     seeing:
       "The Canadian Shield is a large area of ancient crystalline rock wrapped around Hudson Bay, shaped like a huge shallow saucer, covering about half of Canada and extending into parts of the United States. Its rock is among the oldest on Earth (some more than 3 billion years), but the surface is not high — repeated glaciation has scraped it into a low, hard land dense with lakes and bogs. Most of Canada's forest, mineral wealth and hydropower is on the Shield.",
     formation:
@@ -2286,6 +2810,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "canadian-rockies": {
+    // seeing sources: 罗布森山 **3,954 m**（BC 省公园管理局，1 级，2026-09-09 核），加拿大落基山最高峰。
+    //   1885 年加拿大太平洋铁路穿越山区、同年在班夫温泉周围划出保护地（1887 年扩为落基山公园），
+    //   是公认的加拿大第一个国家公园、世界第三个。
+    //   哥伦比亚冰原是北美的**水文顶点**，融水分别流向太平洋、大西洋（经哈得孙湾）与北冰洋。
+    //   斯托尼·纳科达（Stoney Nakoda）、克里（Cree）、库特奈（Ktunaxa）三个族名与公园管理方现行用法一致。
+    //   **formation 段的逆冲年代区间未能证实，已另记 unknown。**
+    //   **冰原面积是会退缩的量** —— 正文没写面积，是正确处理；日后要写必须带监测时点。
     seeing:
       "The Canadian Rockies are the stretch of the Rocky Mountain system along the British Columbia–Alberta border. They are closer to the west coast and more heavily glaciated than the U.S. Rockies. They are known for clearly bedded sedimentary rock, jagged peaks, large icefields and a string of glacial lakes; Banff, Jasper, Yoho and Kootenay national parks form a connected block that is a World Heritage site. The highest peak, Mount Robson, is 3,954 m.",
     formation:
@@ -2301,6 +2832,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "coast-mountains": {
+    // seeing sources: 海岸山脉长约 **1,600 km**（从温哥华附近的弗雷泽低地延伸至育空）；
+    //   **沃丁顿山 4,019 m 是「完全位于不列颠哥伦比亚境内」的最高峰** ——
+    //   境内更高的费尔韦瑟山、亚当斯山都跨美加边境（3 级，2026-09-09 核）。
+    //   **这个限定语下得很准**：换成「BC 最高峰」就错了。
+    //   海岸萨利什、夸夸嘉夸、海达、钦西安四个族名与「大熊雨林」的位置表述均与官方用法一致；
+    //   跨境处只做地理事实性对比，不描述边界线、不作主权表述。
     seeing:
       "The Coast Mountains run along the Pacific coast of North America, from southern British Columbia to the Alaska border, about 1,600 km. They rise straight out of the sea, their body cut by countless long, deep fjords, and are covered in temperate rainforest and many glaciers. The highest peak entirely within British Columbia is Mount Waddington, 4,019 m. Vancouver and Whistler are on the southern edge.",
     formation:
@@ -2326,11 +2863,26 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Saint Elias Mountains and the adjacent Alaska Range (with Denali) are both high mountains of north-western North America and both intensely glaciated; the Saint Elias are closer to the sea, rising faster, with a larger icefield, and nearer the coast. Versus the Himalaya: the Himalaya are higher, longer, and formed by two continents meeting head-on; the Saint Elias are an oceanic plate hitting a continent obliquely and shoving accreted terranes up.",
     concept:
       "The Saint Elias Mountains show that huge icefields can form outside the poles — as long as it is high and cold and snowy enough, ice can build up over a large area. A common misconception is that these glaciers are static, unchanging ice: they flow continuously, and some \"surge\" periodically (advancing several kilometres in a few years), making them an important site for the study of glacier dynamics.",
+    // history sources: 「Kluane / Wrangell-St Elias / Glacier Bay / Tatshenshini-Alsek」跨境世界遗产：
+    //   **1979 年首次列入**（Kluane 与 Wrangell-St Elias）、**1992 年扩展纳入 Glacier Bay**、
+    //   **1994 年扩展纳入 Tatshenshini-Alsek**（后者也在加拿大境内）——3 级，多来源交叉确认，2026-09-09 核。
+    //   **原文的「1993 年」既不是首次列入、也不是两次扩展中的任何一次** —— 落在两次扩展中间，
+    //   像是把 1992 与 1994 折了个中。
+    //   **洛根山 5,959 m 是一个会被新测量修正的量**：这是加拿大自然资源部沿用的 1992 年 GPS 标准值，
+    //   2007 年 LIDAR 测得略高（约 5,967 m），而且这座山因构造抬升每年仍在增高约 0.35 mm ——
+    //   下一轮留意是否有官方重测。
+    //   **跨境表述复核通过**：只做地理事实性对比，不描述边界线走向、不作主权表述。
     history:
-      "The Saint Elias area is the traditional land of the Southern Tutchone, Tlingit and other Native nations, and the mountain passes were trade routes between the coast and the interior. In the 18th century European navigators saw and named Mount Saint Elias from the sea. In 1993 this mountain area (with the Alaska side) was inscribed as a World Heritage site, chiefly for its glaciers and ecosystems.",
+      "The Saint Elias area is the traditional land of the Southern Tutchone, Tlingit and other Native nations, and the mountain passes were trade routes between the coast and the interior. In the 18th century European navigators saw and named Mount Saint Elias from the sea. In 1979 this mountain area (with the Alaska side) was inscribed as a World Heritage site, later extended in 1992 and 1994, chiefly for its glaciers and ecosystems.",
   },
 
   "torngat-mountains": {
+    // seeing sources: 萨格勒克湾一带的太古代片麻岩（Uivak / Nanok）约 **36—39 亿年**，Saglek Block 部分达 39 亿年，
+    //   属北美已知最古老岩石之一 —— 正文「接近 40 亿年」合理（2 级，2026-09-09 核）。
+    //   Torngait 源自因纽特语，意为「神灵之地」（另有诠释作「恶灵之地」），正文译作「神灵」核心义准确。
+    //   考布维克山（Mont D'Iberville）**1,652 m**，被明确称为「加拿大落基山以东大陆地区最高点」。
+    //   **2005-12-01 随拉布拉多因纽特土地权协议生效设立为国家公园保护区，2008 年才转为国家公园** ——
+    //   正文写的是「保护区」，与 2005 年正好对应，**没有把两个年份混起来**。
     seeing:
       "The Torngat Mountains are at the far northern tip of the Labrador Peninsula, the boundary range between the provinces of Newfoundland and Labrador and Quebec, and the highest mountain country in mainland eastern Canada. \"Torngait\" means \"spirits\" in Inuktitut. There are no trees, roads or permanent residents; the coast is a series of deep glacier-cut fjords; and in summer there are polar bears and caribou. It became a national park reserve in 2005.",
     formation:
@@ -2348,6 +2900,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "long-range-mountains": {
     seeing:
       "The Long Range Mountains are a north–south highland on the western side of the island of Newfoundland, the north-easternmost stretch of the Appalachian Mountains in mainland North America. They are essentially a raised, then glacier-cut plateau, flat on top and steep-edged. Gros Morne National Park is here — best known for \"the Tablelands\", a bare orange-brown mountain whose surface rock should be tens of kilometres down in the mantle.",
+    // formation sources: 岛湾（Bay of Islands）蛇绿岩形成于约 **485—489 Ma**、仰冲发生在约 **470 Ma**（中奥陶世 Taconic 造山）——
+    //   正文的「约 5 亿年前」是科普取整，与实测差 2—6%，方向与数量级正确（3 级学术文献，2026-09-09 核）；
+    //   若要更精确可写「约 4.7 亿年前」。
+    //   格罗莫讷国家公园 **1987 年**列入世界遗产。
+    //   兰塞奥兹牧草地约公元 1000 年（**较新的树轮定年精确到公元 1021 年**），是已确认的欧洲人在美洲最早据点 ——
+    //   正文用的是「已确认的」这个限定，写法稳妥。
     formation:
       "The Long Range Mountains record an ancient continental collision. About 500 million years ago an old ocean closed, and crust and mantle rock from the ocean floor were thrust up onto the edge of the continent — the mantle peridotite of the Tablelands was carried up this way. The range was then eroded into a low, flat plateau. Quaternary glaciers cut cliffs into the plateau edge and deepened the valleys below sea level — Western Brook Pond is a glacier-cut inland \"fjord\" later cut off from the sea.",
     observation:
@@ -2361,6 +2919,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "interior-plains-ca": {
+    // seeing sources: 2026-09-09 核：加拿大内陆平原从北冰洋延伸至美加边境；
+    //   温尼伯湖为冰期古阿加西湖（Lake Agassiz）萎缩后的残留水体之一，属地质学共识。全篇 6 板块无误。
     seeing:
       "The Interior Plains of Canada lie between the Rocky Mountains to the west and the Canadian Shield to the east, reaching north all the way to the Arctic Ocean. Their southern part is the Prairies of Alberta, Saskatchewan and Manitoba, Canada's grain belt; further north the grassland gives way to aspen parkland, then boreal forest, and finally the lowlands of the lower Mackenzie. The surface is near-horizontal sedimentary rock, cut into broad shallow valleys by rivers.",
     formation:
@@ -2378,6 +2938,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "hudson-bay-lowlands": {
     seeing:
       "The Hudson Bay Lowlands wrap around the southern shores of Hudson Bay and James Bay — an extremely flat lowland of bog and shallow pool, stretching a few hundred kilometres inland where it is widest. It is one of the largest continuous wetlands in the world, and an important area (around Churchill) where polar bears wait on land for the sea ice to form. The ground has almost no perceptible slope, and the rivers are wide, shallow and meandering to the sea.",
+    // formation sources: 哈得孙湾南岸均衡回弹速率约**每百年 1—1.3 米**，与正文「约一米」一致（3 级，2026-09-09 核）——
+    //   这是一个长期平均值，仍属被持续重新测量修正的地球物理量。
+    //   **「世界上最大的连续湿地之一」这个限定用得对**：它是北美最大湿地/泥炭地群、世界第二大连续泥炭地群、
+    //   世界第三大湿地（西西伯利亚低地最大）—— 正文没有坐实具体名次，是正确写法。
+    //   1670 年英王查理二世授予哈得孙湾公司特许状。
     formation:
       "The Hudson Bay Lowlands were once part of the floor of Hudson Bay. In the last ice age a very thick ice sheet pressed this crust down by hundreds of metres; after the ice melted about 8,000 years ago the unloaded land began to \"rebound\" fast — the area is still rising at roughly a metre per century, the coastline keeps advancing into the bay, and the newly exposed flat seabed becomes new bog. The bedrock is limestone with poor drainage, and with weak evaporation and permafrost blocking the way, the water cannot escape and forms vast peat bog.",
     observation:
@@ -2393,6 +2958,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "saint-lawrence-lowlands": {
     seeing:
       "The St. Lawrence Lowlands are a comparatively narrow, flat valley between the eastern Great Lakes and the mouth of the St. Lawrence River, hemmed in by the Canadian Shield to the north and the Appalachian uplands to the south. With fertile soil, a relatively mild climate and easy water transport, it is the most densely populated and industrially and agriculturally concentrated belt in Canada — Toronto, Ottawa, Montreal and Quebec City are all on this corridor.",
+    // formation sources: 皇家山与蒙泰雷吉安山丘为白垩纪碱性侵入岩体（stock），**从未喷出地表**，后期上覆岩层剥蚀后出露 ——
+    //   2026-09-09 核。**正文没有把它们写成火山**，那是关于这组山丘很常见的误解。
     formation:
       "The St. Lawrence Lowlands are a fault-bounded sedimentary trough between the Shield and the Appalachians, filled with Palaeozoic limestone and shale. Ice sheets pushed along this lowland in the ice ages; on retreat, seawater flooded up the ice-depressed valley to form the \"Champlain Sea\", which withdrew to leave a flat, fertile plain of marine clay. The isolated small hills near Montreal (the \"Monteregian Hills\") are old magma bodies that never reached the surface, later exposed by erosion.",
     observation:
@@ -2416,11 +2983,23 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Great Slave Lake and Great Bear Lake to the north are the two largest lakes in the Canadian Northwest, similar in form (both straddling the Shield–sedimentary boundary); Great Bear is larger in area, further north and colder; Great Slave is deeper, with a city and roads on its southern shore. Versus Lake Baikal: Baikal formed by a crustal rift dropping down and is far deeper; Great Slave's depth comes mainly from glacial scouring plus faulting.",
     concept:
       "The depth of Great Slave Lake (about 600 m) shows the power of glacial excavation: a continuous ice sheet advancing repeatedly along a weak zone in the rock can dig a valley floor hundreds of metres below the surrounding ground. A common misconception is that all high-latitude big lakes are shallow — Great Slave and Great Bear are both deep, because part of their basins was deeply excavated by glaciers, not just low ground holding water.",
+    // history sources: 大奴湖最深 **614 m（2,015 ft）**，北美最深湖，多来源一致，2026-09-09 核。
+    //   **名称那段处理得好**：「Slave（奴）」源自克里人对当地 Dene（Dehcho Dene）的旧称 Slavey，
+    //   与部族间冲突与奴役史有关；如今被广泛认为是带贬义的殖民命名，西北地区确有地名去殖民化运动
+    //   （如 Trout Lake 改为 Sambaa K'e）—— CBC（2 级）。**正文如实写出了这一层，而不是只当作一个地名。**
+    //   1934 年前后东臂/耶洛奈夫湾发现金矿（Burwash、Con Mine），1936—37 年聚落成形。
+    //   **结冰期是会随气候变暖变化的量** —— 正文用「大约」留了余地，日后要写具体天数须带监测年份。
     history:
       "The Great Slave Lake area is the home of the Chipewyan, Tłı̨chǫ, Yellowknives and other First Nations and later the Métis. The name \"Slave\" comes from an old term used by a neighbouring people for the local Dene; it is now regarded as derogatory, and some place names are being changed to Dene-language names. Gold was found on the north shore of the East Arm in the 1930s, and Yellowknife was founded because of it. Today the lake area has fishing, tourism and a winter ice road toward the Arctic.",
   },
 
   "great-bear-lake": {
+    // seeing sources: **「完全位于加拿大境内的最大湖」这个限定语正确** —— 大熊湖是世界第 8 大湖，
+    //   苏必利尔湖等更大者都跨美加边境，所以不能只写「加拿大最大湖」（3 级，2026-09-09 核）。
+    //   横跨北纬 65—67 度、与北极圈（66°33′N）相交；五条湖臂 Dease / McTavish / McVicar / Keith / Smith；
+    //   封冻期典型 8—9 个月（**会随气候变暖变化，正文用「大约」留了余地**）。
+    //   1930-05-16 Gilbert LaBine 在东岸发现沥青铀矿，Eldorado 矿是当时世界少数几个铀镭产地之一。
+    //   Sahtúgot'ı̨nę 自称意为「大熊湖之人」，正文译法准确、非过期称谓。
     seeing:
       "Great Bear Lake is in the Northwest Territories, straddling the Arctic Circle — the largest lake entirely within Canada and one of the largest lakes in the world. It is made of five large arms and shaped like an open hand; the water is extremely clear and cold, frozen for about nine months a year, and the only community on it is the small settlement of Délı̨nę.",
     formation:
@@ -2436,6 +3015,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mackenzie-river": {
+    // seeing sources: 马更些河**干流本身约 1,738 km**；**从最上游芬利河算起的整个水系约 4,241 km**，
+    //   是加拿大最长河流系统、北美第二长（次于密西西比—密苏里）——3 级交叉《加拿大百科全书》，2026-09-09 核。
+    //   **正文写的是「如果从最上游的芬利河算起，整个水系长约 4200 公里」，限定语明确** ——
+    //   **没有把水系长度当成干流长度冒用**，与塔里木河（「约 2000 公里」哪套口径都不是）、
+    //   达令河（把含支流的合计当成干流长度）正好构成对照，是正确写法的范例。
+    //   马更些河三角洲为北美最大北极三角洲（**权威来源写的是 the largest，正文用的「之一」更保守**），
+    //   约 25,000 个小湖，与正文「上万个」一致。
+    //   1789 年亚历山大·马更些（受雇于西北公司，哈得孙湾公司的竞争对手）沿河而下抵达北冰洋。
     seeing:
       "The Mackenzie River is the longest river in Canada. Measured from its farthest headwater, the Finlay, the whole system is about 4,200 km long. It flows out of Great Slave Lake, north-west through the subarctic forest and lowlands, and into the Beaufort Sea of the Arctic Ocean. Its lower reach is one of the largest Arctic deltas in North America, dense with tens of thousands of small lakes. The whole river is frozen for much of the year and is a winter \"ice road\" for the communities along it.",
     formation:
@@ -3503,6 +4090,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "scottish-highlands": {
+    // seeing sources: 本尼维斯山 1345 米（OS，2016 年重测 1344.527 米、官方取整；2 级转述），全英最高点无争议；加里东造山（约 4.9–3.9 亿年）与大峡谷断层为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Scottish Highlands are a large area of ancient mountains in the north of the island of Great Britain, separated from the Lowlands to the south by the Highland Boundary Fault. They are not high overall, but rugged, harsh in climate and sparsely populated — the wildest region in Britain. The highest peak, Ben Nevis, is 1,345 m, the highest point in the whole of the United Kingdom.",
     formation:
@@ -3541,6 +4129,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "southern-uplands": {
+    // seeing sources: 梅里克山 843 米（DoBIH / hill-bagging，经转引，3 级）；PeakVisor 的 845 米与主流数据不一致、未采信。**这一条只有 3 级来源**，下一轮若能拿到 Ordnance Survey 的点位数据库应回来复核。2026-09-09 核，本轮无需改动。
     seeing:
       "The Southern Uplands are a belt of hill country in southern Scotland, between the Southern Upland Fault and the border with England, separating the Central Lowlands of Scotland from England. The hills are lower and more rounded than the northern Highlands, covered in grass and pasture, with the highest, the Merrick, at 843 m. Historically this was the country that people and armies had to cross between Scotland and England.",
     formation:
@@ -3556,36 +4145,47 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "snowdonia": {
+    // seeing sources: 官方名：Eryri 国家公园管理局自 2023-11-16 起以威尔士语 Eryri 为对外主用名，主峰正式名 Yr Wyddfa（级别 1，官网，2026-09-09 核）。
+    //   https://eryri.gov.wales/
+    //   **处理方式是不对称的**：英文正文全篇改用 Eryri / Yr Wyddfa（跟随官方用法），中文保留已通行的译名「斯诺登尼亚」「斯诺登峰」并在首句注明改名 —— 因为 Eryri 没有既成的中文译名，生造一个音译等于自造专名，而在中文正文里直接嵌拉丁串会被 TTS 读成字母。下一轮不要把这条「改回一致」。
+    //   主峰 1085 米（OS，2010 年精测 1085.67 米，官方仍取 1085）、1951 年设园为英格兰与威尔士第三个国家公园（Peak District 1951-04-17 → Lake District 1951-05-09 → 此处 1951-10-18 → Dartmoor 1951-10-30）、板岩景观 2021 年列入 UNESCO：均核实无误。
+    //   https://whc.unesco.org/en/list/1633
     seeing:
-      "Snowdonia (Welsh: Eryri), in north-west Wales, is the highest and most rugged mountain area in Wales. Its highest peak, Snowdon (Welsh: Yr Wyddfa), is 1,085 m — the highest mountain in Wales and in England-and-Wales — with a mountain railway to the summit. This is a classic teaching area for glacial landforms in Britain, and a heartland of the Welsh language and culture.",
+      "Eryri, in north-west Wales — known in English as Snowdonia until the national park authority adopted the Welsh name as its official name in 2023 — is the highest and most rugged mountain area in Wales. Its highest peak, Yr Wyddfa (Snowdon in English), is 1,085 m — the highest mountain in Wales and in England-and-Wales — with a mountain railway to the summit. This is a classic teaching area for glacial landforms in Britain, and a heartland of the Welsh language and culture.",
     formation:
-      "Snowdonia's rocks are Cambrian to Ordovician marine sedimentary and volcanic rocks (about 540 to 440 million years old) — in the Ordovician this was an active volcanic arc, and the erupted tuffs and lavas are interbedded with shale and sandstone. The Caledonian orogeny folded and uplifted them. During the ice ages, glaciers cut deep along the valleys, gouging round corries (Welsh: cwm), knife-edged arêtes and a string of corrie lakes and ribbon lakes.",
+      "Eryri's rocks are Cambrian to Ordovician marine sedimentary and volcanic rocks (about 540 to 440 million years old) — in the Ordovician this was an active volcanic arc, and the erupted tuffs and lavas are interbedded with shale and sandstone. The Caledonian orogeny folded and uplifted them. During the ice ages, glaciers cut deep along the valleys, gouging round corries (Welsh: cwm), knife-edged arêtes and a string of corrie lakes and ribbon lakes.",
     observation:
-      "From the air Snowdonia is a set of dark, bare-rock mountain blocks split by deep valleys, the valley floors strung with inky-blue glacial lakes (such as Llyn Llydaw below Snowdon). On the slopes you can see the grey, giant stepped workings and spoil heaps of slate quarries. The valley mouths are green farmland and stone villages.",
+      "From the air Eryri is a set of dark, bare-rock mountain blocks split by deep valleys, the valley floors strung with inky-blue glacial lakes (such as Llyn Llydaw below Yr Wyddfa). On the slopes you can see the grey, giant stepped workings and spoil heaps of slate quarries. The valley mouths are green farmland and stone villages.",
     distinguish:
-      "Snowdonia and the Lake District of England are both old volcanic-rock uplands strongly reshaped by glaciers, both with corries and ribbon lakes, but Snowdonia is more compact, its cliffs steeper, and it is slightly higher. Compared with the Scottish Highlands, Snowdonia is far smaller — an isolated block of high ground.",
+      "Eryri and the Lake District of England are both old volcanic-rock uplands strongly reshaped by glaciers, both with corries and ribbon lakes, but Eryri is more compact, its cliffs steeper, and it is slightly higher. Compared with the Scottish Highlands, Eryri is far smaller — an isolated block of high ground.",
     concept:
-      "Snowdonia is a case study in the corrie (cwm / corrie): snow accumulates first in a shaded hollow on the mountainside and turns to ice, and the ice, rotating under its own weight, scoops the hollow out into a round basin with a steep back wall, a deep floor often holding a lake, and a low rock lip. To recognise a corrie, look at whether it faces the shaded side (north-east in the northern hemisphere) and has a steep back wall and a low rock threshold. A common misconception is to take a corrie lake for a volcanic crater lake.",
+      "Eryri is a case study in the corrie (cwm / corrie): snow accumulates first in a shaded hollow on the mountainside and turns to ice, and the ice, rotating under its own weight, scoops the hollow out into a round basin with a steep back wall, a deep floor often holding a lake, and a low rock lip. To recognise a corrie, look at whether it faces the shaded side (north-east in the northern hemisphere) and has a steep back wall and a low rock threshold. A common misconception is to take a corrie lake for a volcanic crater lake.",
     history:
-      "Snowdonia was the last stronghold of the medieval Principality of Wales. From the 19th century its slate quarrying roofed buildings around the world and was for a time the mainstay of the Welsh economy; the associated quarry landscape was inscribed as a World Heritage Site in 2021. Snowdonia National Park was established in 1951, the third national park in England and Wales.",
+      "Eryri was the last stronghold of the medieval Principality of Wales. From the 19th century its slate quarrying roofed buildings around the world and was for a time the mainstay of the Welsh economy; the associated quarry landscape was inscribed as a World Heritage Site in 2021. The national park was established in 1951, the third in England and Wales, and has been called Eryri National Park since 2023.",
   },
 
   "brecon-beacons": {
+    // seeing sources: 官方名：国家公园管理局 2023-04 起以 Bannau Brycheiniog 为对外官方名（级别 1，官方新闻稿）。
+    //   https://beacons-npa.gov.uk/the-authority/press-and-news/archive/april-2023/brecon-beacons-national-park-reclaims-its-welsh-name
+    //   处理方式与 snowdonia 一致、且同样是不对称的（英文改名、中文保留译名 + 首句注明），理由见 snowdonia 条注释。
+    //   彭伊范山 886 米、1957-04-17 设园（1949 年法案下最后一个）均核实无误。
+    //   https://beacons-npa.gov.uk/wp-content/uploads/basic-facts-about-the-brecon-beacons-national-park.pdf
     seeing:
-      "The Brecon Beacons (Welsh: Bannau Brycheiniog), in south Wales, are a line of flat-topped hills of Old Red Sandstone, with a clean escarpment facing north. The highest, Pen y Fan, is 886 m — the highest point in southern Britain. Close to the cities of south Wales, they are a popular walking area, and the sky is very dark: it is an International Dark Sky Reserve.",
+      "Bannau Brycheiniog, in south Wales — the Brecon Beacons in English until the park authority adopted the Welsh name in April 2023 — is a line of flat-topped hills of Old Red Sandstone, with a clean escarpment facing north. The highest, Pen y Fan, is 886 m — the highest point in southern Britain. Close to the cities of south Wales, they are a popular walking area, and the sky is very dark: it is an International Dark Sky Reserve.",
     formation:
-      "The main body of the Brecon Beacons is Devonian Old Red Sandstone — a suite of red sandstone and mudstone laid down on rivers and floodplains about 400 million years ago. The beds are roughly horizontal, the hard sandstone layers forming flat summits that dip gently south. Erosion and glaciation cut a steep \"cuesta\" escarpment on the north side, with several small corries and corrie lakes below it. The southern edge of the range is Carboniferous Limestone, with cave systems.",
+      "The main body of Bannau Brycheiniog is Devonian Old Red Sandstone — a suite of red sandstone and mudstone laid down on rivers and floodplains about 400 million years ago. The beds are roughly horizontal, the hard sandstone layers forming flat summits that dip gently south. Erosion and glaciation cut a steep \"cuesta\" escarpment on the north side, with several small corries and corrie lakes below it. The southern edge of the range is Carboniferous Limestone, with cave systems.",
     observation:
-      "From the air the Brecon Beacons are several table-topped, turf-covered hills, gentle on the south slope and with a continuous dark escarpment on the north, a line of small lakes and corries at the foot of the cliff. The summits have almost no bare rock — they are broad acid grassland and peat. On the southern foot you can see the sinkholes and quarries of the limestone country.",
+      "From the air Bannau Brycheiniog are several table-topped, turf-covered hills, gentle on the south slope and with a continuous dark escarpment on the north, a line of small lakes and corries at the foot of the cliff. The summits have almost no bare rock — they are broad acid grassland and peat. On the southern foot you can see the sinkholes and quarries of the limestone country.",
     distinguish:
-      "The Brecon Beacons and Snowdonia are both in Wales, but Snowdonia is hard volcanic rock, gouged by glaciers into sharp peaks and deep valleys; the Brecon Beacons are near-horizontal sandstone, characterised by flat tops and long escarpments, with much weaker glaciation. This kind of hill, steep on one side and gentle on the other, is a cuesta.",
+      "The Bannau Brycheiniog and Eryri are both in Wales, but Eryri is hard volcanic rock, gouged by glaciers into sharp peaks and deep valleys; Bannau Brycheiniog are near-horizontal sandstone, characterised by flat tops and long escarpments, with much weaker glaciation. This kind of hill, steep on one side and gentle on the other, is a cuesta.",
     concept:
-      "The Brecon Beacons are a case study in a cuesta: when a suite of gently dipping, alternating hard and soft beds is eroded, the surface of a hard bed becomes the gentle slope (following the dip), and its cut-off end becomes the escarpment, so the hill is gentle on one side and steep on the other. To recognise a cuesta, check whether the gentle slope's angle matches the dip of the beds. A common misconception is to read the escarpment as a fault scarp.",
+      "The Bannau Brycheiniog are a case study in a cuesta: when a suite of gently dipping, alternating hard and soft beds is eroded, the surface of a hard bed becomes the gentle slope (following the dip), and its cut-off end becomes the escarpment, so the hill is gentle on one side and steep on the other. To recognise a cuesta, check whether the gentle slope's angle matches the dip of the beds. A common misconception is to read the escarpment as a fault scarp.",
     history:
-      "The Brecon Beacons have long been upland grazing country (sheep, Welsh mountain ponies) and border-fortress country, with Roman roads and medieval castle remains in the hills. In the 19th century the southern edge of the range was the fringe of the south Wales coalfield and iron industry, with canals and railways cut through the hills. The national park was established in 1957.",
+      "The Bannau Brycheiniog have long been upland grazing country (sheep, Welsh mountain ponies) and border-fortress country, with Roman roads and medieval castle remains in the hills. In the 19th century the southern edge of the range was the fringe of the south Wales coalfield and iron industry, with canals and railways cut through the hills. The national park was established in 1957.",
   },
 
   "lake-district": {
+    // seeing sources: 斯科费尔峰 978 米（Ordnance Survey GetOutside 官方页，级别 1）；2017-07-09 以「文化景观」列入 UNESCO（国家公园管理局官方新闻稿，级别 1）。三段岩性（Skiddaw 群 / Borrowdale 火山群 / 志留系板岩砂岩）为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Lake District, in north-west England, is a region of mountains and long narrow lakes arranged radially. England's highest peak, Scafell Pike (978 m), and its largest natural lake, Windermere, are both here. Known for its pastoral \"lake and mountain\" scenery and the Romantic poets (Wordsworth and others), it is a World Heritage Site and one of the most-visited national parks in Britain.",
     formation:
@@ -3593,7 +4193,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air the Lake District is a set of dark, craggy mountains with valleys reaching out in every direction from a central upland, each main valley holding a long thin lake (Windermere, Ullswater, Coniston Water and others), the lake shores green pasture and drystone-walled fields, the valley slopes carrying sheep and small woods. The crags are steepest around Scafell in the centre.",
     distinguish:
-      "The Lake District, the Scottish Highlands and Snowdonia are all old rock reshaped by glaciers, but the Lake District's \"radial drainage plus ribbon lakes\" pattern is especially clear because it is a near-circular dome. Compared with the Scottish Highlands, the Lake District is small and slightly lower, but the relief and density of lakes per unit area is very high.",
+      "The Lake District, the Scottish Highlands and Eryri are all old rock reshaped by glaciers, but the Lake District's \"radial drainage plus ribbon lakes\" pattern is especially clear because it is a near-circular dome. Compared with the Scottish Highlands, the Lake District is small and slightly lower, but the relief and density of lakes per unit area is very high.",
     concept:
       "The Lake District is a case study in radial drainage and ribbon lakes: once the surface is uplifted into a dome, rivers flow down the steepest line, out from the centre, in a spoke pattern; ice-age glaciers deepen these valleys and leave transverse moraine dams in them, so after the ice retreats they fill with long, narrow lakes. A common misconception is to take a ribbon lake for a stretch of river.",
     history:
@@ -3601,6 +4201,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pennines": {
+    // seeing sources: 克罗斯费尔 893 米（3 级多来源一致）；奔宁之路 1965-04-24 开通、英国第一条国家步道（National Trails 官方，级别 1）。石炭系背斜与磨石粗砂岩为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Pennines are a north-south upland in the north of England, running from the Scottish border down to the Peak District in the middle of the country, often called the \"backbone of England\". Overall it is an open moorland, mostly 400 to 700 m high, with the highest point, Cross Fell, at 893 m. It is the watershed between the east- and west-flowing rivers of England, and it separates the cities on the two sides.",
     formation:
@@ -3616,6 +4217,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mourne-mountains": {
+    // seeing sources: 多纳德山 850 米（3 级多来源一致）；花岗岩古近纪约 56 Ma 侵位（British Geological Survey Earthwise，级别 1）；莫恩墙 1904–1922 年、约 35 公里、翻越 15 座山头（3 级）；C.S. Lewis 的纳尼亚灵感有其本人书信与散文为据，正文用「据说启发了」这种保留措辞与史实相符。**零争议红线本轮专门复核过一遍：通过。**另确认莫恩不是国家公园而是 AONB / National Landscape，正文未误写。2026-09-09 核，本轮无需改动。
+    //   https://earthwise.bgs.ac.uk/index.php/Mourne_Mountains_Complex,_Palaeogene_intrusive_centre,_Northern_Ireland
     seeing:
       "The Mourne Mountains, in the south-east of Northern Ireland in County Down, are a compact group of granite mountains that rise a short distance in from the shore of the Irish Sea. The highest, Slieve Donard, is 850 m — the highest peak in Northern Ireland. The mountains are not high but tightly packed and steep, and the Mourne Wall, about 35 km long, runs over the summits and is the emblem of the range.",
     formation:
@@ -3631,6 +4234,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "peak-district": {
+    // seeing sources: 1951-04-17 英国第一个国家公园、1932-04-24 金德斯科特集体擅入及其立法影响：均据公园管理局官方页（级别 1）。白峰 / 暗峰的石炭系岩性对比为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Peak District, in the middle of England at the southern end of the Pennines, is ringed by big cities — Manchester, Sheffield and others. It divides clearly in two: the \"Dark Peak\" of the north and the eastern and western wings is dark sandstone moorland plateau; the \"White Peak\" of the south and centre is pale limestone plateau and deep-cut dales. The Peak District was the first national park in Britain (1951).",
     formation:
@@ -3646,6 +4250,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yorkshire-dales": {
+    // seeing sources: 1954 年设园（2 级）；福因斯修道院牧羊庄园与中世纪羊毛贸易史实成立（3 级）；马勒姆湾 70–80 米，正文用「几十米高」的区间表述（2 级公园官方页）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Yorkshire Dales, in the northern Pennines, are a limestone upland cut by broad glacial valleys (\"dales\"). They are known for classic limestone landforms: bare \"limestone pavements\", white cliffs (\"scars\") tens of metres high such as Malham Cove, deep vertical shafts and huge underground cave systems. On the surface there are drystone walls, stone barns and grazing sheep.",
     formation:
@@ -3661,6 +4266,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "north-york-moors": {
+    // seeing sources: 连片欧石南沼地口径与公园管理局官方页一致（级别 1）；Boulby 崖高约 203 米、英格兰东海岸最高（3 级）；1952 年设园；明矾业已带「之一」限定，符合排名断言要写口径的规矩。2026-09-09 核，本轮无需改动。
     seeing:
       "The North York Moors, in the north-east of England, are a sandstone plateau whose top carries the largest continuous expanse of heather moorland in England and Wales — when it flowers in late summer the whole upland turns purple. The plateau is cut by several deep dales, and its eastern edge drops straight into the North Sea as the highest stretch of sea cliff on England's east coast.",
     formation:
@@ -3676,6 +4282,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dartmoor": {
+    // seeing sources: 花岗岩约 280–290 Ma（2 级转述 BGS / 学界），正文中文「约 2.9 亿年」与英文「295 Ma」都落在区间内，**但中英不是同一个数**——下一轮建议直接查 BGS 达特穆尔地质图说明书统一到一个数；南英格兰最大开阔荒野（公园管理局官方，级别 1）与不列颠青铜时代遗迹最密集（English Heritage 官方，级别 1）核实无误。2026-09-09 核。
     seeing:
       "Dartmoor, in Devon in south-west England, is a granite upland and the largest area of open wild country in southern England. Its signature is the \"tor\" — piles of granite weathered into blocks and stacked in layers, standing alone on the bare moor like natural stone castles. Dartmoor also has the densest concentration of Bronze Age remains in Britain.",
     formation:
@@ -3691,8 +4298,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "exmoor": {
+    // seeing sources: 红鹿：埃克斯穆尔国家公园管理局官方页面口径为「英格兰最大的野生红鹿群」（级别 1，2026-09-09 核）；昆托克丘陵官方监测页佐证英格兰另有独立野生种群（2023 年冬约 643 头，级别 2）。原文「仅存」不成立，已改。
+    //   https://www.exmoor-nationalpark.gov.uk/nature-and-landscape/our-habitats-and-wildlife/red-deer
+    //   https://www.quantockhills.com/surveys-and-monitoring/deer
+    //   海崖「英格兰最高的一段」与 Great Hangman 318 米一致；1954-10-19 设园核实无误。
     seeing:
-      "Exmoor, spanning Devon and Somerset, is a sandstone moorland whose most distinctive feature is its northern edge: the moor does not slope gently to the sea but drops straight into the Bristol Channel as steep sea cliffs hundreds of metres high, among the highest in England. The moor carries the semi-wild Exmoor pony and the last herds of wild red deer in England. It is also an International Dark Sky Reserve.",
+      "Exmoor, spanning Devon and Somerset, is a sandstone moorland whose most distinctive feature is its northern edge: the moor does not slope gently to the sea but drops straight into the Bristol Channel as steep sea cliffs hundreds of metres high, among the highest in England. The moor carries the semi-wild Exmoor pony and England's largest herd of wild red deer. It is also an International Dark Sky Reserve.",
     formation:
       "Exmoor's rocks are Devonian (about 400 to 360 million years old) sandstones and slates, folded and uplifted in the Caledonian and Variscan orogenies. The hard sandstone beds form the gently rolling moorland plateau; the plateau is cool and wet and poorly drained, covered in acid peat and heather. Rivers (the Exe, the Lyn and others) cut steep deep combes north from the plateau straight into the sea — it is precisely because the rivers are short and steep and the coast is retreating fast that the moor \"meets the cliff edge\" as high sea cliffs.",
     observation:
@@ -3706,6 +4317,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cheviot-hills": {
+    // seeing sources: 切维厄特山 815 米（少数来源 816，**1 米级取整差异，判定不改**）；BGS Earthwise 给早泥盆世约 395–400 Ma 的安山质火山中心 + 晚期花岗岩侵入（级别 1），正文「约 3.9 亿年」落在同一取整范围；奔宁之路 1965 年开放、英国第一条国家步道，北端柯克耶特姆；1388 年奥特本之战。2026-09-09 核，本轮无需改动。
+    //   https://earthwise.bgs.ac.uk/index.php/Cheviot_%E2%80%94_early_Devonian_volcanic_rocks,_granite_and_basement_-_an_excursion
     seeing:
       "The Cheviot Hills straddle the border between England and Scotland — a range of rounded, turf-covered, thinly populated hills. The highest, The Cheviot, is 815 m. This is the core of Northumberland National Park in England and the northern end of Britain's first National Trail, the Pennine Way.",
     formation:
@@ -3721,6 +4334,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "south-downs": {
+    // seeing sources: 南唐斯国家公园：指定生效 2010-03-31（2009-11-12 确认修订），管理局 2011-04-01 起全面运作（法定文书，级别 1）—— **正文的「2010/2011」双年份不是含糊，而是准确对应两个节点，判定不改**。至今仍是英格兰最新的国家公园。**注意：南唐斯 2010 年已从 AONB 升格为国家公园，不适用同批奇尔特恩、高尔的「AONB → National Landscape」改名。** 2026-09-09 核，本轮无需改动。
+    //   https://www.legislation.gov.uk/uksi/2010/497/note/made
     seeing:
       "The South Downs are a line of chalk hills in south-east England, running from Hampshire to the coast of East Sussex, where at Beachy Head they meet the sea as dazzling white cliffs. They have a steep escarpment on the north side and a gentle slope dipping toward the sea on the south, with open grassland and wheat fields and almost no trees on top. They are the newest national park in England (2010/2011).",
     formation:
@@ -3746,11 +4361,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chilterns and the South Downs are almost a \"mirror image\" pair of chalk cuestas, belonging to the south and north limbs of the same breached upfold: the Chilterns' escarpment faces north-west, the South Downs' faces north, with the London Basin between them. Because of the clay-with-flints on its slopes, the Chilterns are much more wooded than the grassy South Downs.",
     concept:
       "The Chilterns' \"Goring Gap\" is a case study in an antecedent river: the Thames was already flowing there before the hills were uplifted, or while they rose only slowly, and as the chalk was slowly domed up the river cut down fast enough to keep pace, \"sawing\" through the rising hills and leaving a transverse gorge-gap that does not fit the present landscape. A common misconception is that a river always goes around high ground — some rivers are \"older\" than the high ground.",
+    // history sources: AONB → National Landscape：**2023-11-22 起**英格兰与威尔士全部 AONB 统一改用这个对外名，**法定名称仍是 AONB、不是「升级」**（级别 1，管理局官网，2026-09-09 核）。
+    //   https://www.chilterns.org.uk/news/tags/aonb/
+    //   **这一条漏在了上一批**：高尔半岛那条已经把日期查对了（2023-11），台账里也写下「下一轮要把全库的 AONB 搜一遍」，结果同一个回合里派下一批时没有做 —— 见 known-errors B1-b。本轮已把全库的「杰出自然风景区 / AONB / National Landscape」搜了一遍，只有这两处。
+    //   戈灵缺口的「先成河」机制核实成立：泰晤士河至少自早更新世就流经此处、随白垩缓慢抬升持续下切，冰盖从未到达戈灵一带（3 级，与主流一致）。
     history:
-      "The Chilterns' beech woods historically supplied timber for the furniture trade of the surrounding towns (especially High Wycombe), where \"bodgers\" turned chair parts on the spot in the woods. The ancient trackway the Icknield Way runs along the hills. From the 19th century the area became a commuter belt for London (\"Metro-land\"). Most of it is an Area of Outstanding Natural Beauty (AONB), redesignated a National Landscape from 2024.",
+      "The Chilterns' beech woods historically supplied timber for the furniture trade of the surrounding towns (especially High Wycombe), where \"bodgers\" turned chair parts on the spot in the woods. The ancient trackway the Icknield Way runs along the hills. From the 19th century the area became a commuter belt for London (\"Metro-land\"). Most of it is an Area of Outstanding Natural Beauty (AONB) — a designation renamed National Landscape for public use in November 2023, with the statutory name unchanged.",
   },
 
   "white-cliffs-of-dover": {
+    // seeing sources: 崖高约 110 米、海峡最窄处约 33–34 公里（两者是不同测量点与取整，**不构成矛盾，本轮明确判定不改**）；国民信托管理东肯特约 1000 英亩、含崖顶约 5 英里（白崖全长约 8 英里），「大部分」成立（级别 1）。1875 年首次泳渡英吉利海峡、两次大战期间的隧道用途属广泛记载史实。2026-09-09 核，本轮无需改动。
+    //   https://www.nationaltrust.org.uk/visit/kent/the-white-cliffs-of-dover
     seeing:
       "The White Cliffs of Dover, at the south-eastern corner of England, face the narrowest part of the English Channel — France is only about 34 km away here, and visible on a clear day. The cliff face is a brilliant white, about 110 m high, and because it is the first sight of Britain from a ship or ferry, it has long been one of the country's emblems.",
     formation:
@@ -3766,8 +4387,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jurassic-coast": {
+    // seeing sources: UNESCO 正式名称为 Dorset and East Devon Coast（2001 年列入），Jurassic Coast 是通俗名；长度官方约 96 英里（约 154–155 公里）；三叠—侏罗—白垩由西向东逐渐变年轻、约 1.85 亿年连续记录，均核实一致。级别 1/2，2026-09-09 核。
+    //   https://unesco.org.uk/our-network/world-heritage-sites/dorset-and-east-devon-coast-the-jurassic-coast
     seeing:
-      "The Jurassic Coast is a roughly 155 km stretch of coast in southern England, between Devon and Dorset, inscribed as a World Heritage Site in 2001. Walking it is like turning the pages of a geology book: from west to east the cliff rocks are in turn Triassic, Jurassic and Cretaceous, recording about 185 million years of Earth history in unbroken sequence, and it is rich in ammonite and other fossils.",
+      "The Jurassic Coast is a roughly 155 km stretch of coast in southern England, between Devon and Dorset, inscribed as a World Heritage Site in 2001 under its official name, the Dorset and East Devon Coast. Walking it is like turning the pages of a geology book: from west to east the cliff rocks are in turn Triassic, Jurassic and Cretaceous, recording about 185 million years of Earth history in unbroken sequence, and it is rich in ammonite and other fossils.",
     formation:
       "The strata of this coast were originally laid down roughly horizontally, layer by layer, in the seas, estuaries and deserts of different ages. The whole succession was later tilted gently to the east, so the coastline cuts across progressively younger rock from west to east. Rocks of different hardness erode differently — waves have hollowed the soft mudstones into bays and left the hard limestones as headlands, shaping features such as Lulworth Cove (an almost enclosed round bay), Durdle Door (a limestone sea arch) and Chesil Beach (a shingle barrier 29 km long).",
     observation:
@@ -3781,8 +4404,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "giants-causeway": {
+    // seeing sources: UNESCO 正式名称 Giant's Causeway and Causeway Coast，1986 年列入（级别 1）。
+    //   https://unesco.org.uk/our-network/world-heritage-sites/giants-causeway-and-causeway-coast
+    //   约四万根玄武岩柱、约 6000 万年前北大西洋张裂期、1693 年向皇家学会报告、1883 年通电车：均核实一致（3 级交叉印证）。
+    //   **零争议红线本轮专门复核过：通过** —— history 段只写地质史与广泛记载的芬恩·麦库尔传说、科学史，未触及任何现代政治 / 族群议题。2026-09-09 核。
     seeing:
-      "The Giant's Causeway, on the north coast of Northern Ireland, is about 40,000 tightly packed polygonal basalt columns, most of them six-sided, running from the cliff foot out into the sea like a giant stone staircase. It became Northern Ireland's first World Heritage Site in 1986. Local legend has it that the causeway was built by the giant Finn McCool for a fight across the sea.",
+      "The Giant's Causeway, on the north coast of Northern Ireland, is about 40,000 tightly packed polygonal basalt columns, most of them six-sided, running from the cliff foot out into the sea like a giant stone staircase. It and the coast around it were inscribed in 1986 as the Giant's Causeway and Causeway Coast, Northern Ireland's first World Heritage Site. Local legend has it that the causeway was built by the giant Finn McCool for a fight across the sea.",
     formation:
       "About 60 million years ago, as the North Atlantic was rifting, there were large fissure eruptions of flood basalt around Antrim (part of the North Atlantic Igneous Province, contemporaneous with Iceland and western Scotland). One thick lava flow cooled and contracted slowly and evenly at the surface, and, like drying mud cracks, produced regular tension fractures inward from the cooling surface, splitting the whole layer into near-vertical columns — the slower and more even the cooling, the more regular the columns.",
     observation:
@@ -3796,6 +4423,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "seven-sisters": {
+    // seeing sources: 南唐斯 2010 年由 AONB 升格为国家公园，现行官方称谓即 National Park（3 级交叉印证）。**注意：这一条不适用同批高尔半岛的「AONB → National Landscape」改名** —— 南唐斯早已不是 AONB。2026-09-09 核，本轮无需改动。
     seeing:
       "The Seven Sisters, on the south coast of England at the eastern end of the South Downs, are a stretch of undeveloped, undulating chalk sea cliff, one cliff top rising and falling after another (there are more than seven if you count). To the west is the mouth of the Cuckmere — a rare natural river mouth on England's south coast with no engineering and no harbour. This stretch often stands in for the more famous White Cliffs of Dover in films.",
     formation:
@@ -3811,6 +4439,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cornwall-coast": {
+    // seeing sources: 康沃尼岩基约 2.8 亿年前侵位；UNESCO「Cornwall and West Devon Mining Landscape」2006-07-13 列入，正式名与正文一致（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1215/
     seeing:
       "The Cornwall coast, at the south-western tip of the island of Great Britain, has sea on three sides, and is known for its high granite and slate cliffs, hidden sandy coves, and the disused mine chimneys scattered along the cliff tops. Land's End, at the far west, is the westernmost point of mainland Britain. This is also one of the sunniest and earliest-spring parts of Britain.",
     formation:
@@ -3826,6 +4456,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pembrokeshire-coast": {
+    // seeing sources: 「英国唯一以海岸景观为主设立的国家公园」、1952 年设立、海岸步道现行官方长度 186 英里：均核实无误（级别 1）；威尔士语官方并列名 Parc Cenedlaethol Arfordir Penfro 属实。2026-09-09 核，本轮无需改动。
+    //   https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/
     seeing:
       "The Pembrokeshire Coast, at the south-western corner of Wales, is the only national park in Britain designated mainly to protect a coastline. Its coast changes enormously over short distances: steep limestone cliffs, black volcanic-rock headlands, drowned-valley inlets reaching far inland, raised ancient beaches, and a string of offshore islands. St Davids is the smallest \"city\" in Britain.",
     formation:
@@ -3841,8 +4473,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gower-peninsula": {
+    // seeing sources: 现行官方名：**2023 年 11 月起，英格兰与威尔士的 AONB 统一改称 National Landscape**，高尔现为 Gower National Landscape；1956-05-09 是英国第一个 AONB 这一史实不变。级别 1，2026-09-09 核。
+    //   https://national-landscapes.org.uk/national-landscapes/gower
+    //   **这是本国这一轮的第二类改名**（第一类是 Eryri / Bannau Brycheiniog，见 known-errors B1-b）：一个**分类名**的改名会一次影响多个条目，比单个地名改名更容易漏 —— 下一轮要把全库的「杰出自然风景区 / AONB」搜一遍。
+    //   帕维兰洞 1823 年出土「帕维兰红衣女士」（实为约 33,000 年前的男性遗骸，西欧已知最早的仪式性墓葬之一）核实无误（2 级）。
     seeing:
-      "The Gower Peninsula (Welsh: Y Gŵyr), reaching into the Bristol Channel west of Swansea, is a small peninsula only about twenty kilometres long, but in 1956 it became the first formally designated \"Area of Outstanding Natural Beauty\" in the whole of Britain. It packs limestone sea cliffs, an Old Red Sandstone ridge, large sandy bays and dunes, and salt marsh into a very small area.",
+      "The Gower Peninsula (Welsh: Y Gŵyr), reaching into the Bristol Channel west of Swansea, is a small peninsula only about twenty kilometres long, but in 1956 it became the first formally designated Area of Outstanding Natural Beauty in the whole of Britain — a designation renamed National Landscape in November 2023, so it is now the Gower National Landscape. It packs limestone sea cliffs, an Old Red Sandstone ridge, large sandy bays and dunes, and salt marsh into a very small area.",
     formation:
       "Gower's rocks are mostly Carboniferous limestone, folded into a series of east-west anticlines and synclines. The limestone sea cliffs have caves, arches and stacks (such as Worm's Head). The central spine of the peninsula, Cefn Bryn, is made of more erosion-resistant Old Red Sandstone and stands a little above its surroundings. Rhossili Bay at the western end is a continuous sandy beach about five kilometres long, backed by large wind-blown dunes.",
     observation:
@@ -3866,11 +4502,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cheddar Gorge is different from an ordinary gorge cut by a river over a long time: it was carved fast by surface water under the special conditions of the ice ages (permafrost temporarily making the limestone impermeable), and now has no surface river. Compared with the glacially widened valleys of the Yorkshire Dales, Cheddar Gorge is narrow, deep and winding — the form of direct fluvial downcutting.",
     concept:
       "Cheddar Gorge is a case study in a surface river on limestone during a permafrost period: limestone is normally permeable and dry at the surface; but under permafrost the fractures are sealed with ice, water cannot seep away and can only flow and erode strongly on the surface. So a dry valley in some limestone areas is evidence of \"a surface river in the past, none now\". A common misconception is that a limestone dry valley never had a river.",
+    // history sources: 切达人年代：英国自然历史博物馆现行口径约 1 万年前（校准年代约 10,564–9,915 cal BP）；原文的「约 9000 年前」是早年未校准放射性碳年代的旧说法，已更新。级别 1，2026-09-09 核。
+    //   https://www.nhm.ac.uk/discover/cheddar-man-mesolithic-britain-blue-eyed-boy.html
+    //   **这一条是「数字本身没写错、只是背后的方法换了一代」** —— 校准与未校准的放射性碳年代差了一千年，靠年份格式看不出来。
+    //   峡谷崖高：文中「约 135 米」与常引的 137 米（449 英尺）落在取整范围内，不构成矛盾，不改。
     history:
-      "Cheddar Gorge's Gough's Cave yielded \"Cheddar Man\" in 1903 — a complete human skeleton about 9,000 years old, the oldest near-complete human remains known in Britain, whose mitochondrial DNA has been widely studied. The gorge's caves have been a paid tourist attraction since the 19th century.",
+      "Cheddar Gorge's Gough's Cave yielded \"Cheddar Man\" in 1903 — a complete human skeleton about 10,000 years old, the oldest near-complete human remains known in Britain, whose mitochondrial DNA has been widely studied. The gorge's caves have been a paid tourist attraction since the 19th century.",
   },
 
   "great-glen": {
+    // seeing sources: 大峡谷断层：**走滑断层**（左行，约 100 公里位移），BGS Earthwise 口径（级别 1）—— 正文没有写成一般裂谷，正确。尼斯湖按体积为英国最大淡水体（苏格兰环境署，级别 1），与洛蒙德湖「按面积最大」是两个口径、并存不矛盾。喀里多尼亚运河 1822 年首航、托马斯·特尔福德设计（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://earthwise.bgs.ac.uk/index.php/Faulting_and_seismicity,_Grampian_Highlands
     seeing:
       "The Great Glen (Scottish Gaelic: Glen Mòr) is a dead-straight valley slicing diagonally across the Scottish Highlands, from Fort William in the south-west to Inverness in the north-east, dividing the Highlands in two. A run of deep, narrow lochs lies end to end along it, of which Loch Ness is the most famous — by volume it is the largest freshwater body in Britain. The Caledonian Canal links these lochs into a navigable waterway.",
     formation:
@@ -3886,6 +4528,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "loch-lomond": {
+    // seeing sources: 洛蒙德湖约 71 平方公里、大不列颠岛面积最大的淡水湖（NatureScot，级别 1）。**范围限定是关键**：正文写「大不列颠岛」（不含北爱尔兰），与内伊湖条目的「英国与不列颠群岛面积最大」并存不矛盾 —— 这正是排名断言必须写口径的例子。2002 年成为苏格兰第一个国家公园属实。2026-09-09 核，本轮无需改动。
     seeing:
       "Loch Lomond, not far north-west of Glasgow, is the largest lake by surface area in Great Britain. Its distinctive feature is being \"one loch across two worlds\": the northern half is boxed into the Scottish Highlands, narrow and deep with steep mountains on both sides; the southern half enters the Lowlands, the loch suddenly widening, shallow, dotted with dozens of small islands. \"The bonnie banks of Loch Lomond\" is a famous Scottish song.",
     formation:
@@ -3901,21 +4544,30 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lough-neagh": {
+    // seeing sources: 面积：DAERA 官方 383 平方公里；平均水深 8.9 米。级别 1，2026-09-09 核。各来源在 383–396 平方公里之间分散（测量口径与水位不同），**有官方一手数时以官方为准**。
+    //   https://www.daera-ni.gov.uk/publications/lough-neagh-catchment-map
+    //   「英国与不列颠群岛面积最大的湖」这个排名成立，与洛蒙德湖条目的「大不列颠岛面积最大」不冲突 —— 两者范围不同（不列颠群岛含北爱尔兰，大不列颠岛不含），各自成立。
+    //   鳗鱼渔业为欧洲最大的野生鳗鱼渔场之一（AFBINI 官方，级别 1）、六郡中五郡汇入、班恩河为唯一出水口：均核实无误。
     seeing:
-      "Lough Neagh, in the centre of Northern Ireland, is about 392 km² in area — the largest lake by area in the UK and in the whole of the British Isles. But it is very shallow, only about 9 m deep on average, and you cannot see the far shore from any bank. Rivers from five of Northern Ireland's six counties eventually flow into this lake, which is drained by the River Bann to the north.",
+      "Lough Neagh, in the centre of Northern Ireland, is about 383 km² in area on the Northern Ireland environment department's figure — the largest lake by area in the UK and in the whole of the British Isles. But it is very shallow, only about 9 m deep on average, and you cannot see the far shore from any bank. Rivers from five of Northern Ireland's six counties eventually flow into this lake, which is drained by the River Bann to the north.",
+    // formation sources: 盆地成因：**英国地质调查局把内伊湖盆地定性为受断层控制的构造洼地**（沿东北—西南走向的一组断层），学术文献另有「与北大西洋张裂相关的拉分盆地」的定性。原文的「玄武岩重量压弯地壳」不是主流框架。级别 1，2026-09-09 核。
+    //   https://earthwise.bgs.ac.uk/index.php/Post-Variscan_deformation_and_basin_formation,_Northern_Ireland
+    //   https://www.lyellcollection.org/doi/abs/10.1144/sjg42020101
+    //   **这一条是这两轮地形核实里唯一一处「因果解释错了」而不是「数字错了」**：像「这个湖是怎么来的」这类机制性叙述，比数字更容易被简化到失真，而且**没有任何脚本能看出来**。
     formation:
-      "Lough Neagh sits in a large structural basin. About 60 million years ago thick flood basalt was erupted around Antrim (the same lavas that form the Giant's Causeway); the weight of this lava on the crust, together with regional downwarping, made the central area subside slowly into a saucer-shaped basin. Water gathered in the basin to form this large, shallow lake.",
+      "Lough Neagh sits in a large structural basin. About 60 million years ago thick flood basalt was erupted around Antrim (the same lavas that form the Giant's Causeway); under regional extension the crust subsided slowly as a whole along a set of north-east–south-west trending faults, forming a saucer-shaped basin (British Geological Survey); the weight of the overlying lava was a contributing factor, not the main cause. Water gathered in the basin to form this large, shallow lake.",
     observation:
       "From the air Lough Neagh is a near-circular large body of water with a smooth outline right in the middle of Northern Ireland, surrounded by low flat farmland and a few small towns, with rivers flowing in from all sides. The shores are mostly reed and wet grassland, with no cliffs. Off the south-western shore you can see large areas of active lake-sand extraction.",
     distinguish:
       "Lough Neagh and Loch Lomond in Scotland are both large, but completely different in origin: Loch Lomond is a deep, long lake gouged by a glacier along a fault; Lough Neagh is a saucer-shaped shallow basin lake formed by large-scale crustal subsidence — round, shallow and flat. It is more like Lake Chad in Africa, a \"structural basin filled with water\".",
     concept:
-      "Lough Neagh is a case study in load subsidence: when a thick, heavy mass of material is piled onto the surface in a short time (here, hundreds of metres of basalt), the crust beneath bends down slowly, like a compressed spring cushion, forming a basin. To recognise such a lake, look at whether it is large, round and shallow, with thick volcanic rock or sediment around it and no obvious glacial or fault marks. A common misconception is that a large lake must have been gouged by a glacier.",
+      "Lough Neagh is a case study in fault-controlled basin subsidence: regional extension lets a whole block of crust sag slowly along a set of faults, and the basin fills with water to form a large, shallow lake; the weight of the overlying volcanic rock is a contributing factor, not the main cause (British Geological Survey). To recognise such a lake, look at whether it is large, round and shallow, sitting in a basin bounded by faults, with no obvious glacial gouging or deep-gorge marks. Two misconceptions are common: that a large lake must have been gouged by a glacier, and that the basin was simply pressed down by the weight of the lava.",
     history:
       "Lough Neagh's eel fishery has continued for centuries and is one of the largest wild-eel fisheries in Europe, long run by a co-operative of local fishers. In Irish legend the lake is the hole left when the giant Finn McCool tore up a lump of earth to throw at a rival (the lump landing in the sea to form the Isle of Man). Large-scale sand extraction from the lake has drawn environmental controversy in recent years.",
   },
 
   "river-thames": {
+    // seeing sources: 全长约 346 公里、源头科茨沃尔德的 Thames Head；泰丁顿闸为潮区上限（3 级交叉印证）。**「塞文最长、泰晤士是完全在英格兰境内最长」这个限定写法与 river-severn 条目互相印证** —— 两条河的排名断言各自带了范围限定，不打架。2026-09-09 核，本轮无需改动。
     seeing:
       "The River Thames is about 346 km long, rising in the Cotswold Hills of south-west England and flowing south-east and then east through Oxford and London, finally reaching the North Sea through a wide funnel-shaped estuary. London is built on this river — specifically at the furthest point ships could reach upstream, which was also the lowest point at which the river could be bridged in early times.",
     formation:
@@ -3931,6 +4583,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "river-severn": {
+    // seeing sources: 全长约 354 公里、英国最长的河（环境署口径，2 级）；塞文涌潮与河口大潮差，「约 15 米」属常见引用区间。**铁桥峡的成因机制本轮专门核过：正文写对了** —— 冰坝湖（Lake Lapworth）溢流切穿丘陵、永久改道，地质学会与 BGS 均采此说（另有冰下融水通道作为补充讨论，不否定主线）。2026-09-09 核，本轮无需改动。
+    //   https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/industrial-and-economic-importance/ironbridge-gorge/
     seeing:
       "The River Severn (Welsh: Afon Hafren) is about 354 km long — the longest river in the United Kingdom. It rises on Plynlimon in mid-Wales, winds through the Welsh hills, and on entering England passes through Shropshire, Worcester and Gloucester before reaching the Severn Estuary. This estuary has one of the highest tidal ranges in the world, up to about 15 m at spring tides, and a phenomenon called the \"Severn Bore\" — a wall of water travelling upstream on the flood tide.",
     formation:
@@ -3946,6 +4600,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "the-fens": {
+    // seeing sources: 泥炭氧化收缩导致地面持续下沉：与 Holme Fen Post 的实测证据一致（1852 年立桩，霍姆一带地面已低于海平面约 2.75 米，历史速率约每年 1 厘米）。**正文只写机制、不写数字，因此不需要补监测时点** —— 这是处理会过期量的另一条路：不给数字就不会过期。伊利 = 鳗鱼岛（Elge，比德记载）。2026-09-09 核，本轮无需改动。
+    //   https://www.greatfen.org.uk/about-great-fen/heritage/holme-fen-posts
     seeing:
       "The Fens, in eastern England around the Wash, are the largest area of low flat land in Britain — much of it only a metre or two above sea level, some of it below. Today it is endless arable fields cut by dead-straight ditches, one of the most fertile farming regions in Britain. But before it was drained, this was a vast reed marsh and seasonally flooded wetland.",
     formation:
@@ -3971,15 +4627,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Broads and the Fens are both low-lying wetlands of eastern England, but the Fens were \"pumped dry\" into farmland, while the Broads were \"flooded\" into a group of lakes and kept as wetland. The shallow lakes of the Broads are flooded man-made pits, clearly different in shape from natural oxbow or glacial lakes.",
     concept:
       "The Broads are a case study in landforms created by human activity: medieval peat digging was a purely economic activity, yet centuries later it left a whole system of lakes and waterways on the surface, which became an important ecosystem and a national park. To recognise this kind of \"man-made lake\", look at whether the edges are unusually straight, the depth uniform, and whether there is a historical record of digging or mining. A common misconception is to treat all lakes as naturally formed.",
+    // history sources: Joyce Lambert（1916–2005）是植物学家 / 生态学家，1950 年代以泥炭取芯与植被地层学证实布罗兹湖岸近乎垂直、底部平坦，属中世纪人工泥炭坑被淹没，1960 年出版《The Making of the Broads》并获皇家地理学会 Gill 奖章。原文误作「历史学家」。2 级，2026-09-09 核。
+    //   https://norfolkrecordofficeblog.org/2016/05/13/the-norfolk-broads-revealed-as-man-made-features-the-discoveries-of-dr-joyce-m-lambert/
+    //   **布罗兹的法定地位本轮专门复核过：正文写对了** —— 它**不是**依 1949 年国家公园法设立的国家公园，而是依《1988 年诺福克与萨福克布罗兹法》于 1989 年设立布罗兹管理局、地位与国家公园相当（2015 年起对外也用 Broads National Park 这个名，但法律地位不变）。中世纪泥炭开采年代约 12–14 世纪核实一致。
     history:
-      "The confirmation that the Broads are of artificial origin came mainly from the research of the historian Joyce Lambert and colleagues in the 1950s. In the Middle Ages the area belonged to large estates such as Norwich Cathedral, and peat extraction was on a huge scale. From the 19th century the Broads became a resort for sailing and river holidays. The Broads Authority was established in 1989, giving it status equivalent to a national park.",
+      "The confirmation that the Broads are of artificial origin came mainly from the research of the botanist and ecologist Joyce Lambert and colleagues in the 1950s. In the Middle Ages the area belonged to large estates such as Norwich Cathedral, and peat extraction was on a huge scale. From the 19th century the Broads became a resort for sailing and river holidays. The Broads Authority was established in 1989, giving it status equivalent to a national park.",
   },
 
   "isle-of-skye": {
     seeing:
       "The Isle of Skye, in north-west Scotland, is the largest island of the Inner Hebrides, known for extremely rugged mountains and changeable weather (the name may relate to \"cloud\" or \"mist\" in Old Norse). The island has two groups of mountains of completely opposite character: the Black Cuillin, a ring of sharp, dark, near-vertical rock peaks; and the Red Cuillin, a set of rounded pink hills.",
+    // formation sources: 特罗特尼什滑坡：伦敦地质学会（Geological Society）的口径是「不列颠群岛面积最大的连片滑坡地形」，约 40 平方公里 —— **按面积、范围是不列颠群岛**。原文写的「英国最长」既换了量纲又换了范围，查不到对应口径。级别 1，2026-09-09 核。
+    //   https://www.geolsoc.org.uk/science-and-policy/historical-scientific-importance/trotternish/
+    //   **核实方对「最长」报的是 unknown（查无支撑、也无反证）**，本轮没有停在 unknown，而是改用一级来源自己的措辞 —— 这与「拿不准就记 unknown」不冲突：unknown 指的是不许自己编一个替代说法，用来源原话不算编。
+    //   约 5800 万年前（学界给库林岩浆中心约 60–57 Ma）、黑库林辉长岩 / 红库林花岗岩的岩性区分：均核实无误。
     formation:
-      "About 58 million years ago, during the rifting of the North Atlantic, there was a large magma chamber beneath Skye. The gabbro (a dark, coarse-grained, very hard rock) that crystallised earlier and deeper in the chamber was later uplifted and exposed, and glaciers cut it into sharp peaks and deep valleys — the Black Cuillin; the later, more acidic part of the chamber crystallised as granite, which weathers differently and was worn into the rounded Red Cuillin. The north of the island is a large basalt lava plateau, and on the Trotternish peninsula the basalt cap sits on weak Jurassic mudstone and has slid slowly down the dip as a whole, forming the longest landslip landscape in Britain (the Old Man of Storr, the Quiraing and other strange features are on the landslip).",
+      "About 58 million years ago, during the rifting of the North Atlantic, there was a large magma chamber beneath Skye. The gabbro (a dark, coarse-grained, very hard rock) that crystallised earlier and deeper in the chamber was later uplifted and exposed, and glaciers cut it into sharp peaks and deep valleys — the Black Cuillin; the later, more acidic part of the chamber crystallised as granite, which weathers differently and was worn into the rounded Red Cuillin. The north of the island is a large basalt lava plateau, and on the Trotternish peninsula the basalt cap sits on weak Jurassic mudstone and has slid slowly down the dip as a whole, forming the largest continuous area of landslide terrain in the British Isles — about 40 km² on the Geological Society's figure (the Old Man of Storr, the Quiraing and other strange features are on the landslip).",
     observation:
       "From the air the Isle of Skye has an extremely broken outline, with several long deep sea inlets cutting it into peninsulas. In the south-centre is the ring of jagged dark rock walls of the Black Cuillin around a glacial valley, with the rounded Red Cuillin hills beside it. The north is tiered green basalt plateau, and on the east side of the Trotternish ridge in the north-east is an area of collapsed, jumbled rock blocks and isolated pinnacles.",
     distinguish:
@@ -3991,6 +4654,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "outer-hebrides": {
+    // seeing sources: 岛链约 210 公里（正文「约 200 公里」落在取整范围，判定不改）；刘易斯片麻岩原岩年龄约 30 亿–17 亿年，公认英国最古老岩石，**正文的「欧洲已知最古老的岩石之一」带了「之一」限定，稳妥**。2026-09-09 核，本轮无需改动。
     seeing:
       "The Outer Hebrides (Gaelic: Na h-Eileanan Siar) are a chain of islands about 200 km long off the north-west of Scotland, from Lewis and Harris in the north, through North Uist, Benbecula and South Uist, to Barra in the south. This is the main area where Scottish Gaelic is spoken in daily life, and one of the places where some of the oldest rocks in Europe come to the surface.",
     formation:
@@ -4008,14 +4672,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "hekla": {
     seeing:
       "Hekla is an active volcano in southern Iceland, about 1,491 m high, and one of the most frequently erupting volcanoes in Iceland's history. It is not a cone but a ridge-shaped mountain growing along a fissure, looking from a distance like an overturned boat. After a large eruption in 1104, medieval Europeans imagined Hekla as a \"gateway to Hell\", where the souls of the damned were thrown into its crater.",
+    // formation sources: 预警时间：冰岛气象局（Veðurstofa Íslands / IMO）监测专文，量级为「几十分钟，理想条件下不到一小时」。级别 1，2026-09-09 核；原文的「一两个小时」无官方依据，已删。
+    //   https://en.vedur.is/earthquakes-and-volcanism/articles/monitoring-hekla
     formation:
-      "Hekla sits astride one of Iceland's volcanic fissure zones. Its magma is intermediate between rhyolitic and basaltic in composition, so an eruption begins with a violent explosive phase (throwing out ash and pumice) and then shifts to relatively quiet lava effusion. Because the magma conduit does not fully seal after each eruption, Hekla's warning time from \"dormant\" to \"erupting\" is often only tens of minutes to an hour or two — among the shortest of any volcano in the world.",
+      "Hekla sits astride one of Iceland's volcanic fissure zones. Its magma is intermediate between rhyolitic and basaltic in composition, so an eruption begins with a violent explosive phase (throwing out ash and pumice) and then shifts to relatively quiet lava effusion. Because the magma conduit does not fully seal after each eruption, Hekla's warning time from \"dormant\" to \"erupting\" is often only tens of minutes — under optimal conditions less than an hour — among the shortest of any volcano in the world (Icelandic Met Office).",
     observation:
       "From the air Hekla is a dark, elongated, slightly arched ridge at the junction of the southern lowland and the highlands, its body covered in layers of black lava and pale pumice of different ages, with almost no vegetation; a row of fissure craters runs along the ridge crest. Around it is heath buried under successive ashfalls and several glacial rivers.",
     distinguish:
       "Hekla differs from southern Iceland's ice-covered volcanoes such as Eyjafjallajökull and Katla: those have ice caps and their eruptions bring glacial floods; Hekla has no ice, and its main hazards are ash, volcanic bombs and lava flows. Compared with the purely basaltic shield volcanoes of Hawaii, Hekla's magma is more viscous and more explosive.",
     concept:
       "Hekla is a case study in a fissure volcano: the magma does not erupt from one fixed round crater but rises along a tensional fracture in the crust, so an eruption is often a whole row of craters erupting at once, joined into a \"curtain of fire\". To recognise a fissure volcano, look at whether it is a linear ridge with craters in a row. A common misconception is that all volcanoes are symmetrical cones.",
+    // history sources: 20 世纪喷发年表（1947 / 1970 / 1980–81 / 1991 / 2000）与「2000 年后至今未再喷发」均据 IMO 监测专文。级别 1，2026-09-09 核，本轮无需改动。
+    //   https://en.vedur.is/earthquakes-and-volcanism/articles/monitoring-hekla
     history:
       "Hekla's eruptions are recorded in detail in Iceland's sagas and annals, an important source for the history of volcanic activity. The 1104 eruption destroyed nearby settlements. In the 20th century it was quite active (eruptions in 1947, 1970, 1980, 1991, 2000). Because the warning time is so short, Iceland's civil protection authority issues specific warnings for hikers around Hekla.",
   },
@@ -4031,11 +4699,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Katla and Grímsvötn are both subglacial volcanoes and both produce glacial floods, but Katla is on Iceland's south coast near populated areas, and its floods drive straight down toward the Ring Road; Grímsvötn is deep in the interior within Vatnajökull, and its floods discharge mainly across the uninhabited sandur plains. Compared with Hekla, Katla's main hazard is not ash but flood.",
     concept:
       "Katla is a case study in a subglacial volcano and a jökulhlaup: the volcano's heat rapidly melts the overlying ice, and the meltwater may pond up as a lake under the ice and then burst out suddenly, or burst out directly, at a flow that can exceed that of the world's great rivers for a short time. To assess this risk, look at whether the volcano is covered by thick ice and whether there are glacial river valleys downstream. A common misconception is that an ice-covered volcano is relatively \"safe\".",
+    // history sources: 1918 年喷发洪水的海岸线推进量：Duller et al. 2014, Geophysical Research Letters（基于历史地形测量与野外调查），约 4 公里。等同级别 2，2026-09-09 核；原文「约 3 公里」无来源支持，已改。
+    //   https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014GL060090
+    //   「大约每世纪喷发两次」与「过去约 1100 年间 21 次以上、平均间隔约 50 年」一致（3 级交叉印证），本轮保留。
     history:
-      "Katla has historically erupted about twice a century, most recently in a large eruption in 1918, whose flood pushed the south coastline out by about 3 km. Katla has had no large eruption since, and is one of the most closely monitored volcanoes in Iceland. The town of Vík has a specific evacuation plan for volcanic floods.",
+      "Katla has historically erupted about twice a century, most recently in a large eruption in 1918, whose flood pushed the south coastline out by about 4 km. Katla has had no large eruption since, and is one of the most closely monitored volcanoes in Iceland. The town of Vík has a specific evacuation plan for volcanic floods.",
   },
 
   "eyjafjallajokull": {
+    // seeing sources: 高程 1651 米、2010 年 4–5 月喷发时序、欧洲空域关闭约六天、1821–1823 年前次喷发：多方交叉印证一致，3 级，2026-09-09 核，本轮无需改动。未找到 Landmælingar Íslands 的逐峰高程公开表，1651 米属广泛一致的常见值。
     seeing:
       "Eyjafjallajökull, on Iceland's south coast, is an ice-capped stratovolcano about 1,651 m high. Its awkward Icelandic name (\"the glacier of the island mountains\") became known around the world overnight in 2010 — that April and May a not-especially-large eruption produced fine ash that drifted toward mainland Europe on the wind, closing most of European airspace for nearly a week and stranding millions of travellers.",
     formation:
@@ -4051,14 +4723,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "grimsvotn": {
+    // seeing sources: 喷发频率：冰岛气象局（IMO）火山档案页，近八千年年均约七次每世纪、60–80 年高发/低发交替。级别 1，2026-09-09 核；原文「近百年十几次」查无依据（可查清单仅七八次），已改。
+    //   https://en.vedur.is/volcanoes/about-volcanoes/grimsvotn/
+    //   备忘（本轮未写进正文）：IMO 已把格里姆火山的航空颜色码从绿改黄、冰下湖水位接近 2004/2010 年洪水前水位——警戒级别是随时会变的量，若要写进正文必须带「截至 <日期>」。
     seeing:
-      "Grímsvötn is a volcano in Iceland's interior, beneath the north-western part of the Vatnajökull ice cap — the most frequently erupting volcano in Iceland (more than a dozen eruptions in the last century). It is almost invisible at the surface — just a slightly depressed area of the ice cap, often with crevasses and collapse pits, with a geothermally maintained subglacial lake beneath.",
+      "Grímsvötn is a volcano in Iceland's interior, beneath the north-western part of the Vatnajökull ice cap — one of the most frequently erupting volcanoes in Iceland — the Icelandic Met Office puts the long-term average at about seven eruptions a century over the past 8,000 years, alternating between more and less active spells. It is almost invisible at the surface — just a slightly depressed area of the ice cap, often with crevasses and collapse pits, with a geothermally maintained subglacial lake beneath.",
     formation:
       "Grímsvötn sits at one of the most active points of the Iceland hotspot (mantle upwelling). Constant geothermal heat melts the ice above, and the meltwater collects in the caldera as a subglacial lake, \"sealed\" in by the surrounding and overlying ice. When the lake fills to the point where buoyancy lifts the ice dam, the lake water drains suddenly along the base of the glacier as a glacial flood, delivering large amounts of water, sediment and ice blocks to the Skeiðarársandur plain to the south within a few days. Sometimes an eruption itself triggers a flood directly.",
     observation:
       "From the air the site of Grímsvötn is a clear depression and ice cliff in the Vatnajökull ice cap, with arcuate crevasses and pits where the lake has drained and the ice has collapsed. During an eruption a dark ash column rises straight out of the white ice cap. To the south, the Skeiðará river emerges from under the ice cap and crosses a large braided black sand plain.",
+    // distinguish sources: 「冰岛最近一次较大喷发」这个未限定排名已删：2014–2015 年霍尔赫劳恩喷发岩浆体积约 1.44 立方公里，为 1783–84 年拉基以来最大的熔岩喷发。等同级别 2，2026-09-09 核。
+    //   https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2018.00235/full
+    //   1996 年 Gjálp 裂隙喷发与随后冲毁环岛公路桥梁的冰川洪水（洪峰约 45,000–53,000 立方米每秒）核实一致，本轮不改。
     distinguish:
-      "Grímsvötn and Katla are both subglacial volcanoes and both produce glacial floods, but Grímsvötn is in the uninhabited interior and has a stable subglacial lake, so its floods are more \"regular\"; Katla is near south-coast communities and has no permanent subglacial lake, so its floods are more sudden. Grímsvötn was also the site of Iceland's most recent larger eruption (2011).",
+      "Grímsvötn and Katla are both subglacial volcanoes and both produce glacial floods, but Grímsvötn is in the uninhabited interior and has a stable subglacial lake, so its floods are more \"regular\"; Katla is near south-coast communities and has no permanent subglacial lake, so its floods are more sudden. Grímsvötn last erupted in 2011; Iceland has erupted repeatedly since, including the larger-by-volume but effusive Holuhraun eruption of 2014–2015 and the Reykjanes Peninsula series from 2021.",
     concept:
       "Grímsvötn is a case study in a subglacial lake outburst: volcanic geothermal heat constantly melts ice, the meltwater is sealed in a hollow by ice, and when the water level rises enough, buoyancy lifts the ice dam and the lake drains out along the glacier base — a glacial flood that can recur, and can sometimes even be predicted. To recognise this system, look for a hollow in the ice cap that periodically collapses and refills. A common misconception is that the ice cap is solid ice underneath.",
     history:
@@ -4066,8 +4744,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "fagradalsfjall": {
+    // seeing sources: 雷克雅内斯半岛的喷发序列：法格拉达尔本体 2021 / 2022 / 2023 各一次；2023-12 起活动中心转到桑德努库尔火山口列，至 2026-09-09 已再喷发至少九次（2023-12 / 2024-01 / 02 / 03 / 05 / 08 / 11 / 2025-04 / 2025-07–08），最近一次 2025 年 7–8 月。3 级清单与 IMO / GVP 报告交叉印证，2026-09-09 核。
+    //   ⚠️ 这是典型的会过期内容（known-errors C6-j）：**每一轮都要回来刷新这一句**，写法上只给「最近一次在 <年月>」而不给总次数。
     seeing:
-      "Fagradalsfjall is on the Reykjanes Peninsula in south-west Iceland, not far from the capital Reykjavík or from Keflavík International Airport. After lying quiet for about 800 years, this area began erupting again from 2021 — once each in 2021, 2022 and 2023, all relatively quiet fissure eruptions of flowing lava. Because they were easy to reach and essentially free of explosions and ash, these eruptions drew large numbers of visitors watching from close up.",
+      "Fagradalsfjall is on the Reykjanes Peninsula in south-west Iceland, not far from the capital Reykjavík or from Keflavík International Airport. After lying quiet for about 800 years, this area began erupting again from 2021 — once each in 2021, 2022 and 2023 at Fagradalsfjall itself, all relatively quiet fissure eruptions of flowing lava; from late 2023 the centre of activity shifted to the nearby Sundhnúkur crater row, which has erupted repeatedly since, most recently in July–August 2025. Because they were easy to reach and essentially free of explosions and ash, these eruptions drew large numbers of visitors watching from close up.",
     formation:
       "The Reykjanes Peninsula is a section of the Mid-Atlantic Ridge come ashore in Iceland — the two plates pulling apart here at about 2 cm a year. The crust is stretched and thinned, and basaltic magma from depth rises along sets of parallel fractures. The 2021-onward series of eruptions began with magma first intruding sideways a few kilometres down, jacking the ground apart (accompanied by tens of thousands of small earthquakes), then effusing from the fissures as slow-moving lava flows and low lava mounds.",
     observation:
@@ -4076,11 +4756,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Fagradalsfjall's eruptions are completely different from southern Iceland's subglacial volcanoes (Katla, Grímsvötn): there is no ice, no big explosion, no ash cloud, mainly lava flowing quietly; it is more like a small-scale version of the large fissure effusion at Holuhraun north of Vatnajökull in 2014–2015.",
     concept:
       "Fagradalsfjall is a case study in fissure eruption at a plate-rifting zone: where two plates pull apart, the crust is continually thinned and torn, and basaltic magma comes up along these tensional fractures, often not building a large cone but effusing lava along a line and gradually building new ground. To recognise this kind of eruption, look at whether the vent is a fissure rather than a round hole and whether the lava is very fluid and travels far. A common misconception is to picture every volcanic eruption as explosive.",
+    // history sources: 现状（截至 2026-09-09）：无正在进行的喷发，但 IMO 监测显示岩浆仍在斯瓦特森伊（Svartsengi）下方积累。正文只写「周期仍在继续、等级由 IMO 更新」，**不写死警戒等级** —— 那是随时会变的量。2 级/主流报道 + IMO 页面，2026-09-09 核。
     history:
-      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). The new activity from 2021 is thought likely to continue for decades or longer. From late 2023 the centre of activity shifted toward the town of Grindavík, where magma intrusion cracked the ground and the town was evacuated for a time, and lava approached the town and a geothermal power plant — prompting Iceland to accelerate protective works such as barrier walls.",
+      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). The new activity from 2021 is thought likely to continue for decades or longer. From late 2023 the centre of activity shifted toward the town of Grindavík, where magma intrusion cracked the ground and the town was evacuated for a time, and lava approached the town and a geothermal power plant — prompting Iceland to accelerate protective works such as barrier walls. This eruptive episode was still going on in 2026, with the Icelandic Met Office updating the alert level and the likely window for the next eruption from current monitoring.",
   },
 
   "snaefellsjokull": {
+    // seeing sources: 高程 1446 米、火山约 70 万年、末次喷发约 1800 年前、2001 年设立国家公园：多方交叉印证一致，3 级，2026-09-09 核，本轮无需改动。
     seeing:
       "Snæfellsjökull, at the very tip of the Snæfellsnes peninsula in western Iceland, is an about 700,000-year-old stratovolcano with a small ice cap on its summit, about 1,446 m high. On a clear day it can be seen from Reykjavík across Faxaflói bay, its symmetrical white summit standing out. In Jules Verne's novel Journey to the Center of the Earth, the entrance to the centre of the Earth is set in this volcano's crater.",
     formation:
@@ -4096,8 +4778,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "askja": {
+    // seeing sources: 湖深排名：冰岛国家自然历史研究所（Náttúrufræðistofnun Íslands）湖泊页，杰古沙龙约 248 米、厄斯丘湖约 220 米，杰古沙龙自 2009 年起为冰岛最深。级别 1，2026-09-09 核。**这是一条会被冰川退缩改写的排名**（known-errors C6-j），下一轮回来复核。
+    //   https://www.natt.is/en/geology/water/lakes
+    //   1965 / 1967 年 NASA 阿波罗宇航员在此接受地质训练核实无误（2 级）。备忘：阿斯基亚自 2021 年秋持续隆起，截至 2025-11 约 60 厘米、航空颜色码仍为绿——正文未做现状断言，本轮未写入。
     seeing:
-      "Askja, in the Dyngjufjöll mountains of Iceland's central highlands, is a set of nested calderas. The most striking feature is Öskjuvatn, the lake formed by collapse after a large eruption in 1875 — the deepest lake in Iceland, its water icy cold; beside it is a much smaller crater called Víti (\"Hell\"), holding a pool of warm, milky-blue water that visitors can climb down to bathe in. It is over a hundred kilometres from any settlement, one of the remotest places in Iceland.",
+      "Askja, in the Dyngjufjöll mountains of Iceland's central highlands, is a set of nested calderas. The most striking feature is Öskjuvatn, the lake formed by collapse after a large eruption in 1875 — about 220 m at its deepest, the deepest lake in Iceland until 2009 and now the second-deepest, after Jökulsárlón was deepened by glacier retreat — its water icy cold; beside it is a much smaller crater called Víti (\"Hell\"), holding a pool of warm, milky-blue water that visitors can climb down to bathe in. It is over a hundred kilometres from any settlement, one of the remotest places in Iceland.",
     formation:
       "Askja sits on Iceland's northern rift zone. Successive eruptions have emptied the magma chamber below, and the surface has collapsed repeatedly, nesting several calderas of different sizes. The 1875 eruption was a large rhyolitic explosion, whose pumice and ash blanketed the farming districts of north-east Iceland; after it, a block of ground dropped into the emptied magma chamber and filled with water to become Öskjuvatn. Askja also had a basaltic lava eruption in 1961.",
     observation:
@@ -4111,6 +4796,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "thingvellir": {
+    // seeing sources: 扩张速率约 2 厘米/年（2 级）；UNESCO 2004 年列入、冰岛第一处世界遗产；1944-06-17 在此宣告共和国；「现存最古老的议会之一」已带「之一」限定，符合排名断言要写口径的规矩。2026-09-09 核，本轮无需改动。
+    //   https://perlan.is/articles/tectonic-plates-iceland
     seeing:
       "Þingvellir (\"assembly plains\"), a short way east of Reykjavík, is a broad rift valley. It is both a geological wonder — you can walk between the fractures where the North American and Eurasian plates are being pulled apart — and Iceland's historic sacred site: from 930 CE the chieftains of Iceland met here each summer for the \"Alþingi\" assembly, one of the oldest surviving parliaments in the world. It is Iceland's first World Heritage Site.",
     formation:
@@ -4126,8 +4813,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vatnajokull": {
+    // seeing sources: 冰川面积：瓦特纳冰原国家公园管理局与冰岛国家自然历史研究所，2023 年测得约 7500–7600 平方公里、约占冰岛 7%（原文「7700 / 8%」既偏大又无监测时点）。级别 1，2026-09-09 核。**冰川面积是持续变化量**（known-errors C6-j），下一轮回来刷新。
+    //   https://www.vatnajokulsthjodgardur.is/en/melting-glaciers/vatnajokullglacier
+    //   https://www.natt.is/en/geology/water/glaciers
+    //   最高点华纳达尔斯赫努克峰 2110 米（2005 年官方测量 2109.6 米）核实无误；「按体积算欧洲最大冰帽」已带口径限定、与公园管理局自身表述一致，本轮保留（若把新地岛算作欧洲则另有说法，属地理归属的模糊地带）。2008 年设园、后扩展至约占冰岛 14%、2019 年 UNESCO「冰与火的动态自然」均核实无误。
     seeing:
-      "Vatnajökull, in south-eastern Iceland, is the largest ice cap in Iceland and, by volume, the largest in Europe — about 7,700 km², covering roughly 8% of Iceland, and nearly a kilometre thick at its thickest. It is not a small glacier on a mountain but a whole ice sheet lying on a plateau, sending dozens of outlet glaciers down all around. Hvannadalshnúkur, on its southern rim, is 2,110 m — the highest point in Iceland.",
+      "Vatnajökull, in south-eastern Iceland, is the largest ice cap in Iceland and, by volume, the largest in Europe — about 7,500 to 7,600 km² as measured in 2023, covering roughly 7% of Iceland, nearly a kilometre thick at its thickest and still shrinking. It is not a small glacier on a mountain but a whole ice sheet lying on a plateau, sending dozens of outlet glaciers down all around. Hvannadalshnúkur, on its southern rim, is 2,110 m — the highest point in Iceland.",
     formation:
       "Vatnajökull exists because Iceland is at a high latitude and has heavy precipitation: the snow that falls on the plateau in winter does not melt off in summer, and year on year it accumulates and compacts into ice, which flows slowly downhill under its own weight. Beneath the ice cap are several active volcanoes (Grímsvötn, Bárðarbunga and others), whose geothermal heat and eruptions melt subglacial lakes and trigger glacial floods. In recent decades warming has thinned and shrunk Vatnajökull markedly, and its outlet-glacier snouts have generally retreated.",
     observation:
@@ -4141,8 +4832,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "langjokull": {
+    // seeing sources: 冰川面积：冰岛国家自然历史研究所冰川页，2023 年测得约 820 平方公里（原文「约 900」偏大约 9%、且无监测时点）。级别 1，2026-09-09 核。持续变化量，下一轮回来刷新。
+    //   https://www.natt.is/en/geology/water/glaciers
     seeing:
-      "Langjökull (\"long glacier\"), in Iceland's western highlands, is the second-largest ice cap in Iceland, about 900 km², fairly gentle and elongated in form. It is not far from Reykjavík or the \"Golden Circle\" attractions. Part of its meltwater feeds, through underground flow, Iceland's largest natural lake Þingvallavatn, and part joins the Hvítá river and finally pours over Gullfoss.",
+      "Langjökull (\"long glacier\"), in Iceland's western highlands, is the second-largest ice cap in Iceland, about 820 km² as measured in 2023, fairly gentle and elongated in form. It is not far from Reykjavík or the \"Golden Circle\" attractions. Part of its meltwater feeds, through underground flow, Iceland's largest natural lake Þingvallavatn, and part joins the Hvítá river and finally pours over Gullfoss.",
     formation:
       "Langjökull, like other ice caps, formed from year-round snow on the western highlands compacting and flowing slowly outward. Beneath it are mainly basaltic volcanic rocks and several fissure zones, with subglacial eruptions in the past. Langjökull is thinner than Vatnajökull, slightly lower in altitude, and more exposed to a maritime climate, so it is especially sensitive to warming — at the present melt rate, some studies estimate it could largely disappear within about a century and a half.",
     observation:
@@ -4156,14 +4849,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hofsjokull": {
+    // seeing sources: 冰川面积：冰岛国家自然历史研究所冰川页，2023 年测得约 795 平方公里。级别 1，2026-09-09 核。持续变化量，下一轮回来刷新。
+    //   https://www.natt.is/en/geology/water/glaciers
     seeing:
-      "Hofsjökull, right in the centre of Iceland, is the third-largest ice cap in Iceland, about 800 km², shield-shaped in form. It is not as famous as Vatnajökull, but it is a key place: Iceland's longest river, the Þjórsá, and another large river, the Blanda, both rise on this ice cap. It lies roughly at the geographic centre of Iceland.",
+      "Hofsjökull, right in the centre of Iceland, is the third-largest ice cap in Iceland, about 795 km² as measured in 2023, shield-shaped in form. It is not as famous as Vatnajökull, but it is a key place: Iceland's longest river, the Þjórsá, and another large river, the Blanda, both rise on this ice cap. It lies roughly at the geographic centre of Iceland.",
+    // formation sources: 破火山口：直径约 6–7 公里、深约 600 米（雷达测冰数据）；史密森尼全球火山活动计划（GVP）记载中央破火山口本体无确认的全新世喷发，全新世熔岩喷发发生在周边侧翼裂隙带。经学术文献转引，等同级别 2，2026-09-09 核。「活动破火山口」这个说法已删。
+    //   https://www.sciencedirect.com/science/article/abs/pii/S0377027321001062
     formation:
-      "Hofsjökull sits on a shield volcano, with an active caldera about 7 km across hidden beneath the ice. The ice cap itself formed from highland snow compacting and flowing outward from the centre. Because there is volcanic geothermal heat below, the base of the ice cap is not frozen everywhere and there is local meltwater; there have also been subglacial eruptions and small glacial floods in the past. The ice cap has likewise been retreating in recent decades.",
+      "Hofsjökull sits on a shield volcano, with a caldera about 7 km across and some 600 m deep hidden beneath the ice — flank fissures around it erupted lava during the Holocene, but the caldera itself has no confirmed Holocene eruption. The ice cap itself formed from highland snow compacting and flowing outward from the centre. Because there is volcanic geothermal heat below, the base of the ice cap is not frozen everywhere and there is local meltwater; there have also been subglacial eruptions and small glacial floods in the past. The ice cap has likewise been retreating in recent decades.",
     observation:
       "From the air Hofsjökull is a near-circular, smooth-edged white ice sheet in Iceland's interior, surrounded by an endless grey-black volcanic highland desert and a few oasis-like patches of grassland (such as the old highland pastures around Nýidalur and Kerlingarfjöll). Several glacial rivers radiate out from the edge of the ice cap, and the one running south is the source of the Þjórsá.",
+    // distinguish sources: 同 formation 段的来源。**这一条是「同一条口径问题在一个条目里几乎总是出现两次」的又一例** —— formation 与 distinguish 各写了一次「活动破火山口」，修的时候要把整个条目搜一遍。
     distinguish:
-      "Hofsjökull and Langjökull are similar in size and both on the highlands, but Hofsjökull is a \"shield volcano plus ice cap\" combination with an active caldera beneath; Langjökull is underlain mainly by fissure zones. Compared with Vatnajökull, Hofsjökull is much smaller and stands more in isolation in the middle of the highland desert.",
+      "Hofsjökull and Langjökull are similar in size and both on the highlands, but Hofsjökull is a \"shield volcano plus ice cap\" combination with a caldera beneath; Langjökull is underlain mainly by fissure zones. Compared with Vatnajökull, Hofsjökull is much smaller and stands more in isolation in the middle of the highland desert.",
     concept:
       "Hofsjökull is a case study in a volcano beneath an ice cap: if a shield volcano is covered by an ice cap, the volcano's circular outline and the position of its caldera can often be inferred from slight depressions and crevasse patterns in the ice surface, and volcanic activity shows itself through subglacial meltwater and sudden floods. To recognise this system, look at whether the ice cap is an unusually regular circle and whether its edge shows signs of periodic drainage. A common misconception is that the ground beneath an ice cap must be an ordinary rock plateau.",
     history:
@@ -4193,6 +4891,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "skeidararsandur": {
+    // seeing sources: 外冲平原面积约 1000 平方公里（可查范围 1000–1300，属区间内的常见估值，3 级）；1996 年 Gjálp 冰下湖溃决洪峰约 5 万立方米每秒（学术文献 45,000–53,000，等同级别 2）；环岛公路最后一段 1974 年通车。2026-09-09 核，本轮无需改动。
+    //   https://www.lpi.usra.edu/meetings/polar2000/pdf/4021.pdf
     seeing:
       "Skeiðarársandur, on Iceland's south-east coast, lies between the Skeiðarárjökull outlet glacier of Vatnajökull and the sea — the largest glacial outwash plain (Icelandic sandur, \"sand plain\") in the world, about 1,000 km². It is an almost perfectly flat, vegetation-free black gravel desert cut by countless braided channels — a long straight section of Iceland's Ring Road runs right across it.",
     formation:
@@ -4218,8 +4918,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Jökulsárlón and the proglacial lake at the snout of the Tasman Glacier in New Zealand are the same kind of \"proglacial lake\", both formed by meltwater filling an over-deepened trough after the glacier retreated. The difference is that Jökulsárlón connects directly to the sea, with tides and seals, and its icebergs can drift all the way out to sea.",
     concept:
       "Jökulsárlón is a case study in a proglacial lake accelerating glacier retreat: when a glacier snout retreats into a trough below the sea or lake surface, water ponds in front of it; the lake water (especially warmer water that can circulate) constantly undercuts the snout and buoys it up, making it more likely to break off, so the glacier retreats faster than it would on land alone. To recognise this positive feedback, look at whether the glacier snout is \"soaking\" in a lake of its own meltwater. A common misconception is that a lake makes a glacier \"more stable\".",
+    // history sources: 深度 248 米：冰岛国家自然历史研究所（natt.is，级别 1），与阿斯基亚条目本轮已改好的口径一致。**注意一处来源冲突**：英文维基引 2009 年 Morgunblaðið 报道称 284 米，与官方的 248 米差 36 米 —— 这不是取整误差，是两个来源互相矛盾；有一级来源时以一级为准，本轮维持 248。
+    //   https://www.natt.is/en/geology/water/lakes
+    //   面积：**没有查到冰岛官方带年份的数字**，二三级来源在 18–27 平方公里之间分歧，正文已改成区间 + 「还在变大」，不假装精确（known-errors C6-j）。1933/1934 年成湖时间与官方一致。2026-09-09 核。
     history:
-      "Jökulsárlón went from nothing to its present size in only a few decades — one of the most vivid records of rapid glacier retreat in Iceland. Around 1934 the site was still largely land; today the lake covers about 25 km². Its distinctive scenery has made it a filming location for several films. In recent years Iceland has been debating how to protect the section of coast road leading to the lagoon — the waves are steadily eroding the road base along the outlet.",
+      "Jökulsárlón went from nothing to its present size in only a few decades — one of the most vivid records of rapid glacier retreat in Iceland. Around 1934 the site was still largely land; today the lake keeps growing — different-year surveys put it at roughly 20 to 25 km², and it expands further as Breiðamerkurjökull retreats. Its distinctive scenery has made it a filming location for several films. In recent years Iceland has been debating how to protect the section of coast road leading to the lagoon — the waves are steadily eroding the road base along the outlet.",
   },
 
   "laki": {
@@ -4233,11 +4936,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Laki, like Hekla and Fagradalsfjall, is a fissure eruption, but the scale, duration and gas output of this one far exceeded any eruption of modern Iceland; it is closer to a small-scale re-run of an ancient large \"flood basalt\" event. Compared with the explosive Eyjafjallajökull, Laki erupted lava and gas, with almost no far-travelling fine ash.",
     concept:
       "Laki is a case study in the lethality of volcanic gas: even if a lava eruption is far from people and the lava itself does not reach the villages, the sulphur dioxide it releases (forming acid haze that damages lungs and plants) and the fluorine (concentrating on the grass and causing fluorosis in livestock) can bring about widespread agricultural collapse and famine. To assess this kind of risk, look at whether the eruption is long-lasting, basaltic and high in gas output. A common misconception is to focus only on lava and ash and ignore the gas.",
+    // history sources: 牲畜损失按畜种：牛约 50%、马约 75–76%、羊约 76–79%（可追溯至 Thordarson & Self 2003, JGR）；人口损失约 19%（1783 年初 49,609 → 1786 年初 40,381），2024 年 NHESS 同行评审论文，级别 1，2026-09-09 核。**原文的「约一半的牲畜」是把三个差别很大的数合成了一个，方向没错但明显低估。**
+    //   https://nhess.copernicus.org/articles/24/2971/2024/
+    //   熔岩量 14.7±1.0 至 15.1 立方公里、裂隙长约 25 公里、约 130 个火山口：多方学术来源交叉确认，正文的「14—15 立方公里」落在区间内，不改。
     history:
-      "The 1783–84 Laki eruption caused the \"Mist Hardships\" (Móðuharðindin) in Iceland: the poisonous haze and the severe cold that followed killed about half the livestock, and the ensuing famine killed roughly a fifth of Iceland's population — the worst natural disaster in Iceland's history. The sulphur haze from the eruption also caused abnormal weather and crop failures in many parts of the Northern Hemisphere that year. Today Lakagígar is within Vatnajökull National Park, its moss landscape extremely fragile, with access only on marked paths.",
+      "The 1783–84 Laki eruption caused the \"Mist Hardships\" (Móðuharðindin) in Iceland: the poisonous haze and the severe cold that followed killed about half of Iceland's cattle and roughly three-quarters of its horses and sheep, and the ensuing famine killed roughly a fifth of Iceland's population — the worst natural disaster in Iceland's history. The sulphur haze from the eruption also caused abnormal weather and crop failures in many parts of the Northern Hemisphere that year. Today Lakagígar is within Vatnajökull National Park, its moss landscape extremely fragile, with access only on marked paths.",
   },
 
   "gullfoss": {
+    // seeing sources: 两级落差 11 米 + 21 米（多方一致，3 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Gullfoss (\"golden falls\"), in south-western Iceland, is one of the three big stops of the \"Golden Circle\" day trip. Here the Hvítá river first drops a step of about 11 m, then turns at a right angle and drops about 21 m more, plunging into a narrow steep gorge in a cloud of spray, with rainbows common on sunny days. The \"golden\" of the name refers to the yellow-brown tone the turbid glacial water takes in sunlight.",
     formation:
@@ -4253,6 +4960,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dettifoss": {
+    // seeing sources: 宽约 100 米、落差 44–45 米、平均流量 193 立方米每秒；瓦特纳冰原国家公园官方称其为「欧洲最强劲的瀑布」（级别 1）。**正文的「常被列为欧洲水流最强劲的瀑布之一」比官方原话更保守，本轮判定不改** —— 保守的限定语不需要为了贴近官方而放宽。2026-09-09 核。
+    //   https://www.vatnajokulsthjodgardur.is/en/areas/jokulsargljufur/dettifoss
     seeing:
       "Dettifoss, in north-eastern Iceland on the Jökulsá á Fjöllum river, is about 100 m wide with a drop of about 44 m. By average flow it is the largest waterfall in Iceland, and it is often listed as one of the most powerful in Europe. Its water comes from the Vatnajökull ice cap, carrying large amounts of fine glacial silt, so it is grey-white, and its roar and the spray it throws up can be felt kilometres away.",
     formation:
@@ -4268,6 +4977,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jokulsargljufur": {
+    // seeing sources: 峡谷长约 25 公里、深达约 100 米；阿斯比吉长约 3.5 公里、三面百米绝壁（多方交叉确认，3 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Jökulsárgljúfur (\"canyon of the glacial river\"), in north-eastern Iceland, is a large canyon cut by the Jökulsá á Fjöllum river, about 25 km long and up to about 100 m deep. At the northern end is a place called Ásbyrgi, which is especially strange: a horseshoe-shaped hollow about 3.5 km long, walled on three sides by 100 m cliffs, its floor covered in birch woodland — as if a bite had been taken out of the plateau.",
     formation:
@@ -4283,6 +4993,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "skogafoss": {
+    // seeing sources: 高 60 米、宽 25 米（多方一致，3 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Skógafoss, on Iceland's south coast, is where the Skógá river drops straight over a cliff about 60 m high and 25 m wide, with a big flow and heavy spray, and there is almost always a rainbow (sometimes a double) on sunny days. What makes it special is not the waterfall itself but the cliff — it is the former coastline.",
     formation:
@@ -4298,6 +5009,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "haukadalur-geysir": {
+    // seeing sources: 大盖歇尔（Geysir 本体）自 2000 年地震后基本休眠；斯特罗库尔每 5–10 分钟一次、高 15–20 米（多方一致，3 级）。**这两者常被混为一谈，正文分得很清楚，本轮专门复核过。** 2026-09-09 核，无需改动。
     seeing:
       "Haukadalur is a small geothermally active valley in south-western Iceland, one of the \"Golden Circle\" attractions. In the valley is the \"Great Geysir\" — the English word \"geyser\" comes from its name (from the Old Norse geysa, \"to gush\"). The Great Geysir is now largely dormant, occasionally active after earthquakes; the one that actually erupts regularly, every 5 to 10 minutes, sending a column of water 15–20 m up, is a spring beside it called Strokkur (\"the churn\").",
     formation:
@@ -4313,6 +5025,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "krafla": {
+    // seeing sources: 克拉夫拉之火 1975–1984 共九幕、伴 20 次岩墙侵入；维提火口 1724-05-17 蒸汽爆炸形成；米湖之火 1724–1729（学术文献交叉确认，级别 1–2）。2026-09-09 核，本轮无需改动。
     seeing:
       "Krafla, in north-eastern Iceland east of Lake Mývatn, is a caldera about 10 km across with a fissure swarm running through it. It is not high and its outline is not obvious, but it is very famous in geology: from 1975 to 1984 a sequence of nine \"rifting-eruption\" episodes happened here (the \"Krafla Fires\"), the ground pulling apart along the fissure swarm a total of several metres — a classic place to observe \"plates in the act of separating\".",
     formation:
@@ -4328,8 +5041,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "myvatn": {
+    // seeing sources: 鸭 / 水鸟：冰岛环境署官方原话是「more species of duck are said to live there than in any other place on Earth」——**对象是鸭不是水鸟、范围是全世界不是欧洲、语气是「据说」不是断言**。原文三处都改动了，已按官方原话还原。级别 1，2026-09-09 核。
+    //   https://ust.is/english/visiting-iceland/protected-areas/myvatn-and-laxa/about-myvatn/
+    //   **这一条的形状值得记**：不是把数字写错，而是把一句**带保留的、窄口径的**官方表述，改写成了一句**断言式的、宽口径的**话 —— 每一步都只放宽一点点，合起来就成了另一个说法。
+    //   平均水深 2.5 米、面积约 37 平方公里（同一官方页，级别 1）；硅藻土开采 1964–2004 年、1974 年《米湖-拉克斯河保护法》（2004 年被新法取代）核实无误。
     seeing:
-      "Mývatn (Icelandic for \"midge lake\"), in north-eastern Iceland, is a shallow, nutrient-rich lake only about 2.5 m deep on average. Around it is a concentrated museum of volcanic landforms: a cluster of small cones (\"pseudocraters\") on the shore, a maze of black lava nearby, a tuff ring, and steaming geothermal areas. The \"midge\" of the name refers to the clouds of non-biting midges that swarm out of the lake in summer — and it is these insects that feed the most species-rich community of waterbirds in Europe.",
+      "Mývatn (Icelandic for \"midge lake\"), in north-eastern Iceland, is a shallow, nutrient-rich lake only about 2.5 m deep on average. Around it is a concentrated museum of volcanic landforms: a cluster of small cones (\"pseudocraters\") on the shore, a maze of black lava nearby, a tuff ring, and steaming geothermal areas. The \"midge\" of the name refers to the clouds of non-biting midges that swarm out of the lake in summer — and it is these insects that feed the ducks here — the Icelandic Environment Agency says more species of duck are said to live here than anywhere else on Earth.",
     formation:
       "Today's Mývatn formed about 2,300 years ago: a large basaltic lava flow came from the east and dammed the valley of the Laxá river, and the water ponded behind the lava barrier into a lake. As the scorching lava flowed over the lake bed and the surrounding wetland, it instantly vaporised the water in the ground and mud, and the steam blasted the lava above it apart into a cluster of small cones with no magma conduit — these are \"pseudocraters\" (rootless cones), and the group at Skútustaðir on the lake shore is the classic example.",
     observation:
@@ -4353,11 +5070,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Reykjanes Peninsula, Þingvellir and Krafla are all on the Mid-Atlantic Ridge: Þingvellir is a large graben, Krafla is the site of a single rifting episode, and Reykjanes is a whole corridor of \"the mid-ocean ridge come ashore\", where you can follow the ridge and see fissures, geothermal areas and shield volcanoes in sequence. The \"Bridge Between Continents\" footbridge on the peninsula spans a sand-filled fissure, symbolising the two plates.",
     concept:
       "The Reykjanes Peninsula is a case study in a mid-ocean ridge: the great majority of the world's mid-ocean ridges are two or three kilometres down on the sea floor and cannot be seen; only where a mantle hotspot is superimposed on a ridge, as in Iceland, pushing the sea floor above the surface, can you observe the ridge's rift, parallel fissures, ridge-parallel volcanoes and geothermal areas directly on land. A common misconception is that a \"plate boundary\" is an abstract line on a map — here it is real fissures under your feet, still opening.",
+    // history sources: 喷发序列：法格拉达尔本体 2021 / 2022 / 2023 各一次；2023-12 起中心转到桑德努库尔火山口列，至 2025 年 7–8 月已喷发至少九次（2023-12 / 2024-01 / 02 / 03 / 05 / 08 / 11 / 2025-04 / 2025-07–08）。截至 2026-09-09 无正在进行的喷发，IMO 监测到斯瓦特森伊下方岩浆持续积累。级别 1（IMO 公告）+ 3 级日期清单交叉印证，2026-09-09 核。
+    //   https://en.vedur.is/about-imo/news/ground-uplift-and-magma-accumulation-continue-beneath-svartsengi
+    //   **与本国 fagradalsfjall 条目的同一段历史已对齐**（那条上一批刚改过）—— 两个条目讲同一串喷发，改一处必须搜另一处。
+    //   ⚠️ 会过期（C6-j）：**每一轮都要回来刷新**，警戒等级一律不写死、只写「以 IMO 最新公布为准」。板块分离速率约 2 厘米/年（学界 1.8–2.5 区间）核实无误。
     history:
-      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). From 2020 large numbers of earthquakes and magma movement began beneath the peninsula, and there have been repeated eruptions since 2021 around Fagradalsfjall and near the town of Grindavík; magma intrusion in late 2023 cracked the ground in Grindavík and the residents were evacuated, and Iceland built barrier walls to protect the town and the Svartsengi power plant. In 2015 it was designated a UNESCO Global Geopark.",
+      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). From 2020 large numbers of earthquakes and magma movement began beneath the peninsula, with Fagradalsfjall erupting once each in 2021, 2022 and 2023; a magma intrusion in November 2023 cracked the ground in the town of Grindavík and the residents were evacuated, and Iceland built barrier walls to protect the town and the Svartsengi geothermal power plant. Activity then shifted to the nearby Sundhnúkur crater row, which erupted at least nine times between December 2023 and August 2025; as of the latest check no eruption was under way, though the Icelandic Met Office was still recording magma accumulating beneath Svartsengi, with hazard levels to be taken from its latest bulletin. In 2015 it was designated a UNESCO Global Geopark.",
   },
 
   "reynisfjara": {
+    // seeing sources: 自 2013 年起 6 人因疯狗浪死亡（最近一起 2025-08）、现场有三级警示灯系统（多方交叉确认，3 级；未取得 SafeTravel.is 可直接引用的原文数字）。**正文的「数起」与 6 起吻合，措辞既未渲染也未淡化，本轮判定不改。** 2026-09-09 核。
     seeing:
       "Reynisfjara, on Iceland's south coast near the town of Vík, is a beach of pure black sand, backed by a cliff of neat hexagonal basalt columns, with black rock stacks (Reynisdrangar) standing offshore. Nearby, Dyrhólaey is a promontory about 120 m high with a large natural sea arch — big enough for a small boat (and, in calm weather, even a small plane) to pass through. This is the southernmost point of mainland Iceland.",
     formation:
@@ -4373,6 +5095,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "latrabjarg": {
+    // seeing sources: 崖长约 14 公里、最高约 440 米；「欧洲最大的海鸟崖之一」是广泛引用的说法，**没有冰岛官方的量化排名可查，正文已带「之一」限定，本轮判定可以接受、不改**；岩层年代各文献在 10–16 百万年之间取值（常见 12–15），正文的 15–10 百万年落在其中，不构成矛盾。2026-09-09 核。
     seeing:
       "Látrabjarg, in the Westfjords region of north-western Iceland, is a sea cliff about 14 km long and up to about 440 m high — one of the largest bird cliffs in Europe. In summer, millions of seabirds — Atlantic puffin, razorbill, common guillemot, northern fulmar and others — crowd every ledge of the cliff to nest, an overwhelming sight and sound. Bjargtangar, at the cliff's western end, is the westernmost point of Iceland.",
     formation:
@@ -4392,8 +5115,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Vestmannaeyjar lies about 10–30 km off Iceland's south coast, a group of a dozen or so volcanic islands and skerries, all formed by volcanic eruption and all young. Two of the islands are especially famous: Surtsey rose from the sea in an eruption between 1963 and 1967, and has since been strictly protected, with only scientists allowed to land, to study how life (plants, insects, seabirds) colonises brand-new land step by step; Heimaey, the only permanently inhabited island, had the sudden Eldfell eruption in 1973.",
     formation:
       "Vestmannaeyjar sits on a seaward extension of Iceland's southern volcanic zone, and the whole group is the product of a young submarine volcanic system less than about 12,000 years old. When magma erupts into shallow water on the sea floor, it explodes violently on contact with water, piling ash and debris into an island (Surtsey formed this way, as a \"phreatomagmatic\" volcanic island); later, quieter lava \"welds\" the island together into something firmer and more erosion-resistant.",
+    // observation sources: 1973 年海迈岛喷发：约 5300 名居民当晚全部撤离、埋掉约 400 栋建筑（美国地质调查局官方，级别 1）；火山系统年龄不到 1.2 万年（史密森尼全球火山活动计划，级别 1）。
+    //   https://pubs.usgs.gov/gip/heimaey/heimaey.pdf
+    //   https://volcano.si.edu/volcano.cfm?vn=372010
+    //   **「口门收窄了一半」这个比例查无出处**，原始记述只说「变窄但没堵死、港口反而更避风」，已去掉百分比 —— 一个听起来很具体的比例，往往正是没人去查的那一处。
     observation:
-      "From the air Vestmannaeyjar is a cluster of steep green-topped black-cliffed small islands on the deep-blue sea off the south coast, Heimaey the largest, with a natural harbour and a town on it, the town flanked by the black scoria cone (Eldfell) left by the 1973 eruption and by the new lava that narrowed the harbour mouth by half. The relatively bare island alone to the south-west is Surtsey.",
+      "From the air Vestmannaeyjar is a cluster of steep green-topped black-cliffed small islands on the deep-blue sea off the south coast, Heimaey the largest, with a natural harbour and a town on it, the town flanked by the black scoria cone (Eldfell) left by the 1973 eruption and by the new lava that markedly narrowed the harbour mouth, in fact leaving the harbour more sheltered. The relatively bare island alone to the south-west is Surtsey.",
     distinguish:
       "Vestmannaeyjar is a group of \"volcanic islands\", completely different from a \"continental island\" of ancient rock like the Outer Hebrides of Scotland: these islands were erupted from the sea floor and piled up directly in the sea, and are still \"growing\" (Surtsey) or have just \"grown\" (Heimaey).",
     concept:
@@ -4403,6 +5130,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "thjorsa": {
+    // seeing sources: 雷神河约 230 公里（冰岛最长）、菲厄德尔冰川河约 206 公里（第二），冰岛大学科学网（级别 2），**两个条目互相印证、不矛盾**。雷神河大熔岩 8600 年前、巴达本加系统、覆盖约 900 平方公里、全新世最大单次熔岩流（学术交叉确认）。2026-09-09 核，本轮无需改动。
+    //   https://www.visindavefur.is/svar.php?id=2212
     seeing:
       "The Þjórsá is the longest river in Iceland, about 230 km. It is a glacial river, rising on the Hofsjökull ice cap in central Iceland, crossing the highland desert, joining the Hvítá and other rivers in the southern lowland, and finally reaching the sea on Iceland's south coast. Its lower course has a large drop and a steady flow, and it is the most heavily developed river for hydropower in Iceland.",
     formation:
@@ -4418,6 +5147,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jokulsa-a-fjollum": {
+    // seeing sources: 长约 206 公里（冰岛第二长，来源同 thjorsa 条）；霍尔赫劳恩 2014–15 熔岩量 >1 立方公里、覆盖约 84 平方公里，自 1783–84 年拉基以来冰岛最大的溢流喷发（学术文献，级别 1）。**与上一批 grimsvotn 条目改好的表述一致** —— 同一件事在三个条目里出现（grimsvotn / fagradalsfjall / 这里），改一处要搜另两处。2026-09-09 核，本轮无需改动。
+    //   https://www.visindavefur.is/svar.php?id=2212
     seeing:
       "The Jökulsá á Fjöllum (Icelandic for \"glacial river in the mountains\") is the second-longest river in Iceland, about 206 km. It rises at the Dyngjujökull outlet of the Vatnajökull ice cap, runs north through the almost uninhabited volcanic desert of Iceland's interior, drops over Selfoss, Dettifoss, Hafragilsfoss and other large waterfalls in the Jökulsárgljúfur canyon on its lower course, and finally reaches the sea at Öxarfjörður on the north coast.",
     formation:
@@ -4433,6 +5164,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "bernese-alps": {
+    // seeing sources: 芬斯特拉尔峰 4274 米、少女峰车站 3454 米（1912 年通车）、艾格峰北壁 1938 年首登（Heckmair / Harrer / Kasparek / Vörg）、少女峰-阿莱奇 2001 年列入 UNESCO 并于 2007 年扩界（官方名 Swiss Alps Jungfrau-Aletsch，阿尔卑斯第一处世界自然遗产）：均核实无误，2026-09-09 核，本轮无需改动。
+    //   https://jungfrauregion.swiss/en/destination/sustainability/unesco-world-heritage-site/unesco-world-heritage-declared.html
     seeing:
       "The Bernese Alps, in west-central Switzerland, are the most heavily glaciated part of the whole Alps. On the north side the Eiger, Mönch and Jungfrau stand in a row directly above the green valleys below; further in are the Finsteraarhorn (4,274 m, the highest peak of the range) and a set of large glaciers. The Jungfrau–Aletsch region was the first natural World Heritage Site in the Alps.",
     formation:
@@ -4448,6 +5181,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pennine-alps": {
+    // seeing sources: UIAA 官方 4000 米峰名录为 82 座（级别 2，https://www.theuiaa.org/4000-alps/），正文「约 80 座」可接受；杜富尔峰 4634 米 / 瑞士最高点 / 阿尔卑斯第二高峰、戈尔内格拉特铁路 1898 年通车均核实无误（3 级交叉印证）。2026-09-09 核，本轮无需改动。跨境按「瑞士与意大利交界」中性表述。
     seeing:
       "The Pennine Alps run along the border between Switzerland and Italy and are the stretch of the Alps with the densest concentration of 4,000 m peaks — most of the Alps' roughly 80 summits over 4,000 m are here. Among them, the Dufourspitze, the main peak of the Monte Rosa massif, is 4,634 m — the highest point in Switzerland and the second-highest in the Alps after Mont Blanc. The Matterhorn is also on this range (given its own entry).",
     formation:
@@ -4465,8 +5199,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "matterhorn": {
     seeing:
       "The Matterhorn (Italian: Cervino; French: Cervin) is 4,478 m high, standing on the border between Switzerland and Italy — the most recognisable mountain in the Alps, a near-isolated rock pyramid steep on all four faces. Its outline is printed on Swiss chocolate wrappers and countless postcards, and has become almost a symbol of the Alps.",
+    // formation sources: 峰顶岩石归属：当特布朗什岩席（Dent Blanche nappe），属奥地利阿尔卑斯推覆体，源自阿普利亚（亚德里亚）微板块 —— 该微板块在阿尔卑斯造山之前已从非洲大陆边缘裂离。3 级来源交叉印证（英文维基自身亦注明「非洲之峰」是流行化说法），2026-09-09 核。**「峰顶是非洲板块」这个说法流传极广，是典型的「听起来很有画面感所以没人去查」**。
+    //   https://en.wikipedia.org/wiki/Matterhorn
+    //   https://en.wikipedia.org/wiki/Austroalpine
+    //   高度 4478 米、意大利语 Cervino / 法语 Cervin、1865 年 Whymper 首登（七人四死）均核实无误；跨境按「瑞士与意大利交界」中性表述，不涉主权。
     formation:
-      "The Matterhorn is a \"horn\": an originally rounded mountain into which glaciers gouged cirques on the shaded sides from three or four directions, the cirque back walls retreating inward until they met in the centre, whittling the mountain into a sharp pyramid whose faces are the cirque walls. Its rock is also unusual — the summit block is a small slice of the African plate, lifted by nappe thrusting and lying on rock from the European plate below, with a clear boundary between them.",
+      "The Matterhorn is a \"horn\": an originally rounded mountain into which glaciers gouged cirques on the shaded sides from three or four directions, the cirque back walls retreating inward until they met in the centre, whittling the mountain into a sharp pyramid whose faces are the cirque walls. Its rock is also unusual — the summit block belongs to the Dent Blanche nappe and comes from the Apulian (or Adriatic) microplate, a separate block that had already rifted away from the African continental margin before Alpine mountain-building began. Nappe thrusting lifted it and set it on rock from the European plate below, with a clear boundary between them.",
     observation:
       "From the air the Matterhorn is a dark four-sided rock pyramid at the head of the Zermatt valley, its four ridges (edges) pointing roughly north-east, south-east, south-west and north-west, the four faces between them; the north and east faces are permanently shaded and iced. Around its foot is a ring of glaciers and scree, and below that the town of Zermatt.",
     distinguish:
@@ -4478,6 +5216,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhaetian-alps": {
+    // seeing sources: 伯尔尼纳峰高程：瑞士国家地图（swisstopo Landeskarte 1:25,000 图幅 1277）标 4048 米，精测 4048.6 米；瑞士国家旅游局写 4049 米。**两者是同一测量值的不同取整，不是矛盾**，正文保留 4049 米。2026-09-09 核。
+    //   https://www.myswitzerland.com/en-ca/destinations/piz-bernina-4049m-asl/
+    //   圣莫里茨 1928 / 1948 两届冬奥会、雷蒂亚铁路阿尔布拉线与伯尔尼纳线 2008 年列入 UNESCO（官方名 Rhaetian Railway in the Albula / Bernina Landscapes）均核实无误（1 级 https://whc.unesco.org/en/list/1276/ ）。
     seeing:
       "The Rhaetian Alps (also called the Bernina range), in the canton of Graubünden in south-eastern Switzerland near Italy, contain Piz Bernina — 4,049 m, the only 4,000 m peak in the whole Eastern Alps and the easternmost 4,000er in the Alps. East of here the Alps have no mountains this high. The range holds several glaciers, and below it are the Engadine valley and high resorts such as St Moritz.",
     formation:
@@ -4493,6 +5234,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gotthard-massif": {
+    // seeing sources: 圣哥达基线隧道 57 公里、2016 年通车属广泛公认的工程地理事实，多方独立信源一致；圣哥达作为莱茵河 / 罗讷河 / 罗伊斯河 / 提契诺河分水枢纽的描述核实一致。2026-09-09 核，本轮无需改动。
     seeing:
       "The Gotthard Massif, right in the centre of Switzerland, is the \"water-parting hub\" of Europe: the Rhine, the Rhône, the Reuss and the Ticino all rise around it and then flow to the North Sea, the Mediterranean and the Adriatic. It is not the highest of mountains, but because it sits at the throat of north-south travel, the Gotthard Pass has been one of the most important routes across the Alps since the Middle Ages.",
     formation:
@@ -4508,6 +5250,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jura-mountains": {
+    // seeing sources: 滕德山 1679 米（3 级）；「侏罗纪」得名于汝拉山为地学界公认典故；拉绍德封 / 力洛克钟表城市规划 2009 年列入 UNESCO。2026-09-09 核，本轮无需改动。
     seeing:
       "The Jura Mountains run in an arc along Switzerland's north-western border (and into France) — a set of parallel ridges of moderate height, covered in forest and pasture, the highest (Mont Tendre, on the Swiss side) only 1,679 m. They are far lower and gentler than the Alps, the \"local mountains\" where the Swiss go walking and skiing at weekends. The geological period \"Jurassic\" is named after the limestone here.",
     formation:
@@ -4523,6 +5266,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "glarus-thrust": {
+    // seeing sources: 位移量约 35 公里、Verrucano 二叠纪（2.5–3 亿年）、2008 年列入（官方名 Swiss Tectonic Arena Sardona）：与 IUCN 提交 UNESCO 的官方技术评估文件数字精确吻合（级别 1）。其他学术田野报告对同一断层面给出 35–50 公里不等的估算，35 公里落在常见范围内且与官方评估一致。「格拉鲁斯双重褶皱」是 Escher 1866 年的历史性错误解释、1884 年由 Bertrand 纠正为逆冲构造 —— 这段认识史核实无误。2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1179/
     seeing:
       "The Glarus Thrust (the mountains around it are called the \"Tectonic Arena Sardona\", a World Heritage Site), in eastern Switzerland around the canton of Glarus. Its most striking feature: on the mid-slopes of several mountains there is a near-horizontal, sharp line running right across the hillside — above the line, dark red old rock; below it, grey young rock. This line is the thrust fault itself — the surface along which a large slice of crust was pushed — cut open and displayed on the mountainside.",
     formation:
@@ -4548,11 +5293,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Monte San Giorgio is unlike an ordinary mountain — its value is not in its landform (an unremarkable hill) but in the \"time capsule\" in its rock. Like other famous fossil sites (Chengjiang in China, the Burgess Shale in Canada), a special anoxic setting allowed soft parts to be preserved; Monte San Giorgio's distinction is a complete record of one Triassic marine ecosystem.",
     concept:
       "Monte San Giorgio is a case study in a Lagerstätte (a site of exceptional preservation): most organisms are decomposed after death and leave only hard shells; only in special settings — anoxic, rapidly buried, undisturbed — can skin, muscle and fin outlines be preserved, opening a \"window\" onto an ancient ecosystem. To recognise such a site, look at whether the fossils are numerous, diverse and include soft-bodied forms. A common misconception is that fossils form everywhere.",
+    // history sources: 化石分类：提契诺鳄（Ticinosuchus）是陆生镶嵌踝类主龙，属贝萨诺组里少见的陆生标本；贝萨诺龙（Besanosaurus）是鱼龙类、海生。原文把两者并称「海生爬行动物」是分类错误，已分开。3 级交叉印证，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Ticinosuchus
+    //   海拔 1097 米、化石层为中三叠世（UNESCO 口径 2.45–2.30 亿年前）、2003 年瑞士一侧列入、2010 年扩展到意大利一侧均核实无误（1 级 https://whc.unesco.org/en/list/1090/ ）。
     history:
-      "Fossil excavation at Monte San Giorgio began in the 1850s, and over more than a century tens of thousands of specimens have been recovered, including marine reptiles such as Ticinosuchus and Besanosaurus, now in museums in Zurich, Milan and elsewhere. The Swiss side was inscribed as a World Heritage Site in 2003, extended to the Italian side in 2010.",
+      "Fossil excavation at Monte San Giorgio began in the 1850s, and over more than a century tens of thousands of specimens have been recovered, including the land-living archosaur Ticinosuchus and marine reptiles such as the ichthyosaur Besanosaurus, now in museums in Zurich, Milan and elsewhere. The Swiss side was inscribed as a World Heritage Site in 2003, extended to the Italian side in 2010.",
   },
 
   "saentis": {
+    // seeing sources: 森蒂斯峰 2502 米、山顶气象站 1882 年建成：多个独立信源一致（3 级），2026-09-09 核，本轮无需改动。
     seeing:
       "Säntis, in north-eastern Switzerland, is the highest peak of the Alpstein limestone massif, 2,502 m. It is not very high, but because it stands isolated between the Swiss Plateau and the main Alps with no higher mountains around it, it is very prominent — on an exceptionally clear day the summit is said to give views into six countries (Switzerland, Germany, Austria, Liechtenstein, France, Italy). A weather station has stood on the summit since 1882.",
     formation:
@@ -4568,8 +5317,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aletsch-glacier": {
+    // seeing sources: 冰川长度 / 面积 / 厚度：瑞士冰川监测网 GLAMOS 官方长度变化数据集（level 1，直接下载核对）显示 2013–2023 年逐年退缩（2016–17 年度 80.4 米、2022–23 年度 36.5 米），2000–2023 年年均约 40 米；面积约 76 平方公里（GLAMOS，2023 年测量，经德文维基转引）；康科迪亚广场冰厚各来源 800–940 米，正文取 800–900 米区间。2026-09-09 核。
+    //   https://doi.glamos.ch/data/lengthchange/lengthchange_2024_r2024.zip
+    //   https://www.swissinfo.ch/eng/glaciers-permafrost/the-aletsch-glacier-will-disappear-by-2100-according-to-an-italian-study/89865724
+    //   ⚠️ 会过期（C6-j）：**GLAMOS 年度冰川公报通常在每年秋季（10 月前后）发布上一测量年度（10 月至次年 9 月）的数据** —— 下一轮回来刷新。2001 年列入 UNESCO 世界遗产核实无误。
     seeing:
-      "The Great Aletsch Glacier, in the Bernese Alps, is the largest glacier in the whole Alps — about 20 km long and around 78 km² in area. It flows from the high snowfields around the Jungfrau, three ice streams merging at \"Konkordiaplatz\" into one broad ice river, where the ice is about 800 m thick. Dark \"medial moraine\" stripes run along its surface, especially clear from the air. It is the heart of the Jungfrau–Aletsch World Heritage Site.",
+      "The Great Aletsch Glacier, in the Bernese Alps, is the largest glacier in the whole Alps — about 20 km long and around 76 km² in area as measured in 2023, and still retreating — Swiss glacier monitoring puts the average retreat between 2000 and 2023 at about 40 m a year. It flows from the high snowfields around the Jungfrau, three ice streams merging at \"Konkordiaplatz\" into one broad ice river, where the ice is about 800 to 900 m thick. Dark \"medial moraine\" stripes run along its surface, especially clear from the air. It is the heart of the Jungfrau–Aletsch World Heritage Site.",
     formation:
       "The Aletsch Glacier forms from snow high in the mountains that accumulates faster than it melts, compacting into ice year by year and flowing down the valley under its own weight. Its accumulation area (firn basin) is large and high, which is why it can form such a long tongue. As it flows it scrapes the valley walls and floor, and lines the debris from its tributary glaciers into lengthwise \"medial moraine\" bands. In recent decades warming has clearly retreated its terminus and thinned its surface.",
     observation:
@@ -4585,8 +5338,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "rhone-glacier": {
     seeing:
       "The Rhône Glacier, in central Switzerland near the Furka Pass, is the source of the Rhône — the meltwater that flows from its terminus runs south-west through the canton of Valais, into Lake Geneva, then via Lyon in France and finally to the Mediterranean. It is famous for a blue ice grotto carved into it each summer for visitors, and it is one of the most vivid \"showcase windows\" of Alpine glacier retreat.",
+    // formation sources: 末端退缩：GLAMOS 官方长度变化数据集（级别 1，直接下载核对）—— 自 1874 年有系统记录以来年均约 8.5 米、累计逾 1 公里；2022–23 测量年度单年退缩 95.5 米，是 2003–2016 年间任何一年的两三倍。2026-09-09 核。原文「近一个多世纪后退约 1300 米」数值不错，但没有起算年与截止年。
+    //   https://doi.glamos.ch/data/lengthchange/lengthchange_2024_r2024.zip
+    //   https://de.wikipedia.org/wiki/Rhonegletscher
+    //   ⚠️ 会过期（C6-j）：随 GLAMOS 年度公报（每年秋季）刷新。
     formation:
-      "The Rhône Glacier, like other valley glaciers, forms from mountain snow compacting and flowing down the valley. In the ice ages it was much larger — during the last ice age the Rhône Glacier reached as far as present-day Lyon in France, gouging the whole Rhône valley into a deep trough. After the ice retreated, the glacier drew back all the way up to its present high position. Over the last century and more its terminus has retreated about 1,300 m and its body has thinned dramatically; in recent years white insulating blankets are laid over part of the ice in summer to slow the melt.",
+      "The Rhône Glacier, like other valley glaciers, forms from mountain snow compacting and flowing down the valley. In the ice ages it was much larger — during the last ice age the Rhône Glacier reached as far as present-day Lyon in France, gouging the whole Rhône valley into a deep trough. After the ice retreated, the glacier drew back all the way up to its present high position. Since systematic records began in 1874 its terminus has retreated an average of about 8.5 m a year, more than a kilometre in total, and its body has thinned dramatically; the pace has clearly picked up in recent years — nearly 100 m in the 2022–23 measurement year alone; in recent years white insulating blankets are laid over part of the ice in summer to slow the melt.",
     observation:
       "From the air the Rhône Glacier is a body of ice hanging on the mountainside at the head of the Goms valley, its terminus grey rubble and a small proglacial lake of ponded meltwater, from which the water flows out as the first stretch of the Rhône. Between the terminus and the valley road (the Furka Pass road) is a large expanse of smooth, near-vegetation-free rock exposed from under the ice only in recent decades — still carrying the scratches ground by the glacier.",
     distinguish:
@@ -4598,10 +5355,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gorner-glacier": {
+    // seeing sources: 面积与排名：GLAMOS 2023 年测得戈尔纳冰川系统约 35 平方公里，为阿尔卑斯继阿莱奇之后第二大的连片冰川区；这个排名是在 2019 年夏主体与格伦茨冰川分离之后重新测量仍成立的。3 级转引 GLAMOS 数据，2026-09-09 核。
+    //   https://de.wikipedia.org/wiki/Gornergletscher
+    //   ⚠️ 会过期（C6-j）：随 GLAMOS 年度公报（每年秋季）刷新。戈尔内格拉特铁路 1898 年通车、19 世纪戈尔纳湖冰坝周期性溃决均核实无误。
     seeing:
-      "The Gorner Glacier, south-east of Zermatt between the Matterhorn and Monte Rosa, is a whole system of several glaciers merged together — by area the second-largest glacier area in the Alps after the Aletsch. The Gornergrat railway (3,089 m) faces it directly and is a classic spot for viewing this glacier and the ring of 4,000 m peaks around it. In recent decades the Gorner Glacier has retreated fast, and the confluence of its tributary glaciers has separated.",
+      "The Gorner Glacier, south-east of Zermatt between the Matterhorn and Monte Rosa, is a whole system of several glaciers merged together — by area the second-largest contiguous glacier area in the Alps after the Aletsch — about 35 km² as measured by Swiss glacier monitoring in 2023. The Gornergrat railway (3,089 m) faces it directly and is a classic spot for viewing this glacier and the ring of 4,000 m peaks around it. In recent decades the Gorner Glacier has retreated fast: in the summer of 2019 its main body parted from the larger Grenzgletscher, and the confluence has stayed apart since.",
     formation:
       "The ice of the Gorner Glacier comes from the firn basins of a ring of 4,000 m peaks — Monte Rosa, the Lyskamm, the Breithorn and others — several ice streams converging to the north-west and flowing down. The high mountains here have hard rock, high altitude and heavy snow, so a large glacier area can persist. Like other glaciers it scrapes the valley and carries debris as it flows; several medial moraines run between the merged ice streams.",
+    // observation sources: 分离时点：2019 年夏，戈尔纳冰川主体与格伦茨冰川分离。3 级转引 GLAMOS，2026-09-09 核。
+    //   https://de.wikipedia.org/wiki/Gornergletscher
     observation:
       "From the air the Gorner Glacier is a white network of ice with several \"tributaries\" at the head of the Zermatt valley, ringed by the dark rock peaks of the Matterhorn, Monte Rosa and others; several parallel dark medial-moraine stripes run along the ice, and the terminus is grey rubble and a steadily growing proglacial lake. The little red rack-railway train and viewing platform on the Gornergrat ridge face this ice directly.",
     distinguish:
@@ -4613,6 +5375,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lauterbrunnen-valley": {
+    // seeing sources: 72 条瀑布、施陶河瀑布落差、托尔金 1911 年游历均核实无误；「写进瑞文戴尔」是广泛复述但本人未证实的推断，**正文的「据说」是必要的留白，本轮判定不改**。2026-09-09 核。
     seeing:
       "The Lauterbrunnen Valley, south of Interlaken on the northern edge of the Bernese Alps, is a deep, straight valley walled by near-vertical grey rock hundreds of metres high. It is best known for its waterfalls — about 72 of them, large and small, plunge from the hanging valleys on either side, among them the Staubbach Fall (about 300 m, one of the highest free-falling waterfalls in Europe) and the Trümmelbach Falls, hidden inside the mountain, draining the meltwater of the Eiger, Mönch and Jungfrau glaciers down through a series of falls.",
     formation:
@@ -4628,6 +5391,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhone-valley": {
+    // seeing sources: 雨影气候与 bisses / Suonen 灌溉渠核实无误。第三次罗讷河治理（3e correction du Rhône）**仍处在重新规划阶段**（2024-05 启动修订、计划 2026 年底提交更新方案，联邦审计署对资金保障提出过警示），正文只写「最近一期在扩宽河道、恢复部分自然河滩」这类概括性描述、没有断言完工年份，本轮无需改动。⚠️ **下一轮若要补细节，不能写成「已完成」或给具体完工年份**。2026-09-09 核。
     seeing:
       "The Rhône Valley (in Switzerland this mainly means the stretch within the canton of Valais) is a deep trough the Rhône has cut west from its glacier source, walled by the high Alps on both sides. It is narrow in the upper Goms, then opens into a broad flat floor past Brig, Visp, Sierre and Sion to Martigny, where it turns sharply north (\"the elbow of the Rhône\") and flows into Lake Geneva. The valley slopes are terraced with vineyards — this is Switzerland's largest wine region.",
     formation:
@@ -4643,6 +5407,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "swiss-plateau": {
+    // seeing sources: 长约 300 公里、宽 30–50 公里、海拔 400–600 米、占国土约 30%、人口超三分之二：与瑞士联邦外交部官方页完全一致（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://www.eda.admin.ch/aboutswitzerland/en/home/umwelt/geografie/mittelland.html
     seeing:
       "The Swiss Plateau (German: Mittelland; French: Plateau suisse — \"midland / central plateau\") is a belt of lowland between the Jura Mountains to the north-west and the Alps to the south-east, running from Lake Geneva to Lake Constance, about 300 km long and 30–40 km wide, mostly 400–600 m in altitude. It is only about 30% of Switzerland's area but holds about two-thirds of its population — Zurich, Bern, Lausanne, Geneva and most of the farmland and industry are here.",
     formation:
@@ -4658,6 +5424,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-geneva": {
+    // seeing sources: 面积 580.03 平方公里、最深 309.7 米（3 级）。**跨境表述本轮专门复核：通过** —— 只写两岸各属哪国，不描述边界线走向、不表述主权，符合仓库既定做法。湖泊面积与深度属长期稳定的地形量，不像冰川那样需要逐年监测时点。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Geneva (French: Lac Léman), in south-western Switzerland, is one of the largest lakes in Western Europe, shaped like a crescent moon, about 580 km² in area and up to about 310 m deep. Its southern shore is in France, its northern shore in Switzerland, with Lausanne, Montreux and Geneva strung along the north. The Rhône enters at the east end (carrying grey glacial silt) and leaves at Geneva already clear and green — the lake acts as a huge settling basin.",
     formation:
@@ -4673,6 +5440,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-constance": {
+    // seeing sources: 面积约 536 平方公里（含上湖 + 下湖）。**「主湖区没有正式划定的国界」这句本身就是最中性的写法，本轮专门复核：通过** —— 上湖三国三种理论并存、从未达成一致，正文如实陈述这一状态，既不描述边界线也不表述主权。2 级，2026-09-09 核。
+    //   https://www.tagblatt.ch/ostschweiz/bodensee-sommer-wo-verlaeuft-eigentlich-die-grenze-im-bodensee-es-gibt-drei-theorien-aber-keine-klaren-regeln-ld.2171909
     seeing:
       "Lake Constance (German: Bodensee), in the north-eastern corner of Switzerland, is one of the large lakes of Central Europe, about 536 km² in area. Its shores belong to Switzerland, Germany and Austria, and the main basin (the Obersee) has no formally agreed border on the water — the three countries use the lake according to their own practices. The Rhine enters at the east end and leaves at the west, and along this stretch it barely mixes with the lake water, keeping its upstream green colour.",
     formation:
@@ -4698,11 +5467,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Lucerne and Lake Zurich are both on the edge of the Swiss Plateau, but Lake Zurich is a smooth banana shape; Lake Lucerne reaches deep into the Alps and is cut into a maze by several steep valleys — wilder. Its Urnersee arm, like Norwegian fjords and Milford Sound in New Zealand, is a flooded (here lake-flooded) deep glacial trough.",
     concept:
       "Lake Lucerne is a case study in a multi-basin compound lake: when a mountain area has several glacial valleys of different orientation meeting at one place, each is gouged into a deep basin, with shallower rock sills left between them; once the water level rises, the basins connect through the sills into one large lake, but the lake bed is really a string of separate deep pits. To recognise such a lake, look at whether it is highly irregular in shape, with several deep arms and clear shallow stretches between them. A common misconception is to take a compound lake for one single basin.",
+    // history sources: 湖名 Vierwaldstättersee =「四林州湖」：乌里、施维茨、下瓦尔登（今分上/下瓦尔登两个半州）+ **琉森**（1332 年加入盟约，15 世纪起湖名扩展为「四」）。瑞士历史词典 HLS，级别 1，2026-09-09 核。
+    //   https://hls-dhs-dss.ch/textes/d/D7465.php
+    //   **这一条是同一条目两段之间的完整性缺口，不是事实错误**：seeing 段写「四个林州的湖」、history 段只列了三个，两段各自都对，合起来读却像对不上 —— 与 C6i（两段数字打架）是同一形状，只是这次打架的不是数字而是枚举。
+    //   面积 88.66 平方公里（3 级）；轴心路与圣哥达通道、19 世纪里吉山「山峦皇后」均核实无误。
     history:
-      "The Lake Lucerne area is the \"founding heartland\" of Switzerland — Uri, Schwyz and Unterwalden, the three \"forest cantons\", live around the lake, and the country's name \"Schweiz\" comes from Schwyz. The Axenstrasse road along the lake and the Gotthard route head south from here over the Alps. From the 19th century Lucerne and the lake became one of the earliest international tourist destinations, and the Rigi was nicknamed the \"Queen of the Mountains\".",
+      "The Lake Lucerne area is the \"founding heartland\" of Switzerland — Uri, Schwyz and Unterwalden — the three \"forest cantons\" of the 1291 founding story — lie around the lake, and the country's name \"Schweiz\" comes from Schwyz; Lucerne joined the confederation in 1332, completing the four forest cantons of the lake's German name. The Axenstrasse road along the lake and the Gotthard route head south from here over the Alps. From the 19th century Lucerne and the lake became one of the earliest international tourist destinations, and the Rigi was nicknamed the \"Queen of the Mountains\".",
   },
 
   "lake-zurich": {
+    // seeing sources: 面积 88.66 平方公里（3 级）；黄金海岸 / 银海岸命名法属实。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Zurich (German: Zürichsee), on the Swiss Plateau, is a long, slightly curved, banana-shaped glacial lake about 88 km² in area. The city of Zurich is at its north-western end. Its shores are prosperous towns, vineyards and orchards on gentle slopes — the sunny north-eastern shore is nicknamed the \"Gold Coast\", the other the \"Silver Coast\". Near Rapperswil a causeway called the \"Seedamm\" crosses the lake.",
     formation:
@@ -4718,6 +5492,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-maggiore": {
+    // seeing sources: 瑞士最低点 193 米（2 级官方来源确认）、最深约 370–372 米；因苏布里克线为阿尔卑斯造山带主要缝合带之一，马焦雷 / 卢加诺 / 科莫合称「因苏布里克湖」，冰期前已有深切河谷、冰川再深挖成 U 形槽 —— 与正文机制描述吻合。**跨境表述（大部分在意大利、最北端约五分之一在瑞士）为中性事实陈述，复核通过。** 2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Maggiore is a deep, long lake at the southern foot of the Alps, mostly in Italy, with about the northernmost fifth in the Swiss canton of Ticino, where the towns of Locarno and Ascona sit on the shore. The shore around Ascona is only 193 m above sea level — the lowest point in the whole of Switzerland. Being south of the Alps and moderated by the deep lake, the climate here is mild, and the shores grow palms, camellias and citrus.",
     formation:
@@ -4733,6 +5508,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "creux-du-van": {
+    // seeing sources: 崖高约 160 米、马蹄形弧长约 1.4 公里；1972 年设「凡岩谷与阿勒兹峡谷」自然保护区（更早有 1870 年私人购地、1876 年汝拉俱乐部扩大购地的民间保护，与 1972 年正式建区不矛盾）；1965 年起重引入羱羊（1965–1970 年首批放归 8 雄 6 雌）。2026-09-09 核。
+    //   ⚠️ **成因表述留 unknown、本轮不改**：法语资料提到末次冰期末凹地末端曾有小型冰川、以冻融的机械作用参与塑造崖壁 —— 即冰川参与过，但不是经典的冰斗旋转刨挖。正文「不是冰川冰斗」完全排除冰川角色，与此存在张力；但可查到的都是 3 级转述，**没有一锤定音的一手地质文献，按「拿不准就记 unknown、不要改成另一个没核实的说法」处理**。下一轮找到瑞士地质调查局或大学论文原文后回来复核。
+    //   https://fr-academic.com/dic.nsf/frwiki/466716
     seeing:
       "The Creux du Van (French, roughly \"the hollow of the rock\"), in the Jura Mountains of western Switzerland, is a natural rock amphitheatre: a horseshoe of limestone cliff about 160 m high and 1.4 km long, wrapping around a forested hollow below. The view down from the cliff edge is dramatic, and wild ibex and chamois are often seen on the cliffs and in the hollow.",
     formation:
@@ -4748,6 +5526,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "emmental-hills": {
+    // seeing sources: 纳普夫峰 1408 米（瑞士历史词典 HLS，级别 1）；淘金传统见伯尔尼州官方「活态传统」名录（级别 1）—— 可追溯至罗马时代、14–19 世纪有职业淘金者、今天作为传统延续，与正文完全吻合。2026-09-09 核，本轮无需改动。
+    //   https://hls-dhs-dss.ch/de/articles/008781/
+    //   https://www.lt.bkd.be.ch/de/start/traditionen/goldwaschen.html
     seeing:
       "The Emmental Hills, on the southern edge of the Swiss Plateau east of Bern, are a stretch of green hill country deeply cut by countless small streams, with pasture and big-roofed timber farmhouses on the ridges and streams and villages in the valleys. Its high point, the Napf, is 1,408 m. The Emmental (\"valley of the Emme\") is also the home of the large-holed cheese known abroad as \"Swiss cheese\".",
     formation:
@@ -4763,6 +5544,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aare-river": {
+    // seeing sources: 「完全在瑞士境内最长的河」这个限定语准确。长度：正文 288 公里，联邦环境局（BAFU）数据 292 公里，差约 1.4% —— **属不同测量方法与取点的差异，不构成矛盾，本轮判定不改**（同批伯尔尼纳峰 4048 vs 4049 的处理方式）。汇合处阿勒河约 557 立方米每秒 > 莱茵河约 439，「支流大于干流」核实属实。第一次朱拉水域治理 1868–1891（哈格内克运河改道、布罗耶河与齐尔河渠化、尼道-比伦运河），伯尔尼州官方页（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://www.bvd.be.ch/de/start/themen/wasser/gewaesserregulierung/juragewaesserkorrektion.html
     seeing:
       "The Aare is the longest river entirely within Switzerland, about 288 km (the Rhine and Rhône are longer but leave the country). It starts at the Aar glaciers in the Bernese Alps, passes through Lake Brienz and Lake Thun, loops almost all the way around the old city of Bern in a meander, then flows past Solothurn and Aarau and finally joins the Rhine. Notably, at the confluence the Aare actually carries more water than the Rhine.",
     formation:
@@ -4778,6 +5561,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "alpine-rhine": {
+    // seeing sources: 1868-09-28 大洪水、1892 年瑞奥第一份跨国治理条约、Rhesi 为第四份国家条约（约 10 亿瑞郎、约 20 年工期、核心是拓宽河道）：联邦环境局公告（级别 1）+ 2 级报道。另有资料提及 1888/1890 年洪水也是促成因素，与 1868 年的记载不矛盾。**跨境「界河」表述复核通过**：只陈述客观地理事实，不涉边界线走向与主权。2026-09-09 核，本轮无需改动。
+    //   https://www.bafu.admin.ch/bafu/de/home/themen/wasser/mitteilungen.msg-id-101064.html
     seeing:
       "The Alpine Rhine is the upper course of the Rhine within Switzerland. It forms from the meeting of the \"Vorderrhein\" and the \"Hinterrhein\" at Reichenau near Chur, then flows north through a straight, broad valley (this reach is the border between Switzerland and Liechtenstein and Austria) and into Lake Constance. The river you see today is dead straight, held between high embankments — the result of large-scale engineering since the 19th century.",
     formation:
@@ -4793,6 +5578,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhine-falls": {
+    // seeing sources: 宽约 150 米、落差约 23 米、平均流量 370–373 立方米每秒（夏季峰值约 600、冬季约 250）。**「按水量和宽度的组合算，欧洲最大的瀑布之一」这个限定本轮专门查过：准确且必要** —— 与冰岛黛提瀑布是两个口径（那边落差更大、单点流量峰值更强），本批冰岛 dettifoss 条目的写法与此互相印证、不打架。两岸城堡 Schloss Laufen / Schlössli Wörth 的存在、位置与功能描述均对（中文「沃尔特城堡」是 Wörth 的转写风格问题，不是事实错误）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Rhine Falls, near Schaffhausen in northern Switzerland, are about 150 m wide with a drop of about 23 m and an average flow of about 370 m³/s. By the combination of flow and width, they are one of the largest waterfalls in Europe. In the middle of the falls stands a rock worn down to a single stack, which visitors can reach by boat and climb. The flow is greatest in the snowmelt season (early summer), and the roar and spray can be felt from far off.",
     formation:
@@ -4808,6 +5594,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aareschlucht": {
+    // seeing sources: 长约 1400 米、最深约 200 米、最窄处约 1 米；1888-04-05 取得开凿特许权、同年开放，1912 年加装夜间照明（官方站，2 级）。**「学界至今仍在讨论细节」这句留白是对的**：实际形成史比正文描述更复杂（基尔谢特岩坎在多个间冰期反复被切出新峡谷又被冰碛填埋，另有 5 条更古老的旧峡谷），正文用免责措辞简化处理是恰当的，不需要展开。2026-09-09 核，本轮无需改动。
+    //   https://aareschlucht.ch/de/Info/aareschlucht/geschichte
     seeing:
       "The Aare Gorge (Aareschlucht), near Meiringen in central Switzerland, is an extremely narrow, deep limestone gorge the Aare cut through a bar of hard rock called the \"Kirchet\" — about 1.4 km long, up to about 200 m deep, and at its narrowest only about 1 m between the walls. A boardwalk hung against the rock wall was built here in 1888, making it one of the first gorges in Switzerland opened to visitors.",
     formation:
@@ -4823,6 +5611,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ruinaulta": {
+    // seeing sources: 长 13–14 公里、深 350–400 米（正文取区间下端）；弗利姆斯滑坡体积学界引用 8–12 立方公里，正文覆盖该范围。年代：**最新地表暴露测年约 9300–9500 年前**，比正文的「大约一万年前」略新，但瑞士旅游局等官方页仍用「10,000 years ago」这个约数 —— 属科普与学术两个精度层级的落差，本轮判定不构成矛盾、不改；**下一轮若要提高精度，可改成「约 9500 年前」**。「瑞士大峡谷」是通俗别称（瑞士旅游局自己也这么用），正式名是罗曼什语 Ruinaulta / 德语 Rheinschlucht，正文没有把它当正式名。2026-09-09 核。
+    //   https://www.myswitzerland.com/en-us/experiences/ruinaulta-switzerlands-grand-canyon/
     seeing:
       "The Ruinaulta (Romansh, roughly \"the high landslide\"), also called the \"Rhine Gorge\" or the \"Swiss Grand Canyon\", is in eastern Switzerland west of Chur. The Vorderrhein has cut a gorge about 13 km long and up to about 350 m deep here, its walls bright white limestone and dolomite, the floor a turquoise river and white gravel bars. The Rhaetian Railway and a footpath run through the gorge; there is no road.",
     formation:
@@ -4838,6 +5628,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "scandinavian-mountains-norway": {
+    // seeing sources: 加里东造山约 4.9–3.9 亿年前；**新近纪抬升机制「学界仍有不同看法」的表述准确**，是被动陆缘地貌学的公认未决问题 —— 仓库对挪威山系定过这个口径，本轮复核守住了。苏格兰高地、纽芬兰长岭山与斯堪的纳维亚山脉同属一条加里东带、大西洋张开后被撕开：地质学共识。2026-09-09 核，本轮无需改动。
     seeing:
       "The Scandinavian Mountains run the length of the Scandinavian Peninsula; in Norwegian they are often called Kjølen, \"the keel\". They form the backbone of Norway, from its southern tip to the Arctic coast, and separate the rainy western seaboard from the drier interior in the east. Almost all of Norway's high mountains, large plateaus and glaciers belong to this range; the highest point is Galdhøpiggen in Jotunheimen, 2,469 m. The range is not continuously jagged like the Alps — more often it is broad plateaus with rounded or sharp peaks rising above them.",
     formation:
@@ -4853,8 +5644,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   jotunheimen: {
+    // seeing sources: 格利特峰高度：2465 米是峰顶冰帽还在时（2008 年测，含冰厚约 10–15 米）的数；冰帽 2022 年夏大幅消融、**2023 年 9 月完全消失**，现行裸岩高度 **2452 米**。3 级来源转引冰川学测量，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Glittertind
+    //   **这一条是 C6-j 的一个极端形态**：会过期的不只是「数字」，是**这座山本身的形状** —— 一个「山峰海拔」听起来最不像会变的量，却因为顶上那层冰没了而少了 13 米。挪威 29 座最高峰、逾 250 座超 1900 米、DNT 1868 年成立、加尔赫皮根 1850 年首登、国家公园 1980 年设立：均核实无误。
     seeing:
-      "Jotunheimen lies in inland southern Norway, straddling the border of Innlandet and Vestland counties. The name means \"home of the jötnar (giants)\" in Old Norse; the modern spelling was coined by the poet Aasmund Olavsson Vinje in 1862. It holds Norway's 29 highest peaks and more than 250 summits above 1,900 m, including the highest points in Norway and Northern Europe — Galdhøpiggen (2,469 m) and Glittertind (about 2,465 m). The landscape is deep glacial valleys, long narrow glacier-fed lakes and several dozen present-day glaciers among sharp rock peaks.",
+      "Jotunheimen lies in inland southern Norway, straddling the border of Innlandet and Vestland counties. The name means \"home of the jötnar (giants)\" in Old Norse; the modern spelling was coined by the poet Aasmund Olavsson Vinje in 1862. It holds Norway's 29 highest peaks and more than 250 summits above 1,900 m, including the highest point in Norway and Northern Europe, Galdhøpiggen (2,469 m), and the second-highest, Glittertind — its summit ice cap melted away completely in September 2023, leaving a bare-rock height of 2,452 m where the ice once put it at about 2,465 m. The landscape is deep glacial valleys, long narrow glacier-fed lakes and several dozen present-day glaciers among sharp rock peaks.",
     formation:
       "Jotunheimen's rock is mostly gabbro — a very hard, dark igneous rock that cooled slowly at depth, raised and thrust over older rocks during the Caledonian orogeny. Because gabbro resists erosion, this block stood high after the surrounding rock was worn down: it is a classic residual massif (a hard block left standing by erosion). Quaternary glaciers dug deep along the rock's joints and weak zones, cutting the highland into deep valleys and knife-edged peaks; the western slopes still carry large glaciers, while the drier east has fewer.",
     observation:
@@ -4868,6 +5662,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hardangervidda: {
+    // seeing sources: 面积约 6500 平方公里、平均海拔约 1100 米是**「夷平面核心区」口径**，另有 8000–8600 平方公里的更宽口径（含边缘）——**两个数各有各的范围，不是打架**。桑德弗洛加 1721 米、卑尔根铁路 1909 年建成、国家公园 1981 年设立：核实无误。2026-09-09 核，本轮无需改动。
     seeing:
       "Hardangervidda in southern Norway is a broad mountain plateau of about 6,500 km² at an average elevation near 1,100 m — the largest plateau of its kind in Northern Europe. Its surface is largely flat: gently undulating rock, countless lakes, bogs and tundra, almost no trees. The western edge drops abruptly to the Hardangerfjord, a fall of over a kilometre, with waterfalls and deep valleys down the slope; the northwest corner carries the Hardangerjøkulen ice cap. The high point, Sandfloegga, is 1,721 m.",
     formation:
@@ -4883,6 +5678,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   finnmarksvidda: {
+    // seeing sources: 面积超过 2.2 万平方公里、海拔多在 300–500 米；北萨米语并列名 **Finnmárkkoduottar**（双 k）拼写正确。**零争议红线本轮专门复核：通过** —— 只写萨米驯鹿放牧这类广泛记载的土地利用作客观事实，考托凯诺、卡拉绍克作为萨米文化中心是事实陈述，不涉现代政治。2026-09-09 核，本轮无需改动。
     seeing:
       "Finnmarksvidda in Norway's far northern Finnmark region (Northern Sámi Finnmárkkoduottar) is Norway's largest plateau, over 22,000 km², mostly 300 to 500 m in elevation. It is broad rather than high — a low, gently rolling table of rock and tundra stretching out of sight, dotted with tens of thousands of lakes, rivers and large mires; in winter it is one of the coldest places on mainland Europe, and in high summer the mosquitoes are fierce.",
     formation:
@@ -4898,6 +5694,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   sognefjord: {
+    // seeing sources: 长度约 205 公里；深度挪威国家百科（SNL，级别 2 半官方）给 1303 米、其余多源给 1308 米 —— **同一量级的测量差异，判定不改**。**正文只写「挪威最长也最深」而没有写「世界最长」，恰好避开了那个坑**（世界最长是格陵兰斯科斯比湾），因此不需要另加限定语。乌尔内斯木板教堂约 1130 年建、1979 年列入 UNESCO（挪威文化遗产管理局，级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Sognefjorden
     seeing:
       "The Sognefjord in western Norway reaches about 205 km inland from the coast and is up to about 1,308 m deep — Norway's longest and deepest fjord, nicknamed \"the King of the Fjords\". Its main channel throws off many arms that grow narrower and steeper the further in they go, reaching the feet of Jotunheimen and the Jostedalsbreen glacier. Rock walls over a kilometre high rise straight from the water, hung with waterfalls; the narrowest arms (such as the Nærøyfjord) are only a few hundred metres wide.",
     formation:
@@ -4928,6 +5726,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   lofoten: {
+    // seeing sources: 岛链约 110 公里；基底片麻岩约 27–28 亿年、后期侵入岩约 17.8–18 亿年，与正文「十几亿到近三十亿年」吻合。**莫斯克流写的是「世界上最强的潮流之一」而非「第一」** —— 它约 10.7 节，弱于同批萨尔特流的 20+ 节，「之一」这个限定是必要的、正文写对了；maelstrom 一词确源自此地。2026-09-09 核，本轮无需改动。
     seeing:
       "The Lofoten islands lie in the Norwegian Sea off northern Norway, north of the Arctic Circle — a chain of steep mountain islands running about 110 km southwest from the mainland, with main islands Austvågøya, Vestvågøya, Flakstadøya, Moskenesøya and others. The peaks often rise straight from the sea to 500–600 m or more, forming the continuous \"Lofoten Wall\"; at their feet are narrow beaches, fishing villages and emerald shallow bays. Despite the high latitude, the North Atlantic Current keeps winters milder than elsewhere at the same latitude.",
     formation:
@@ -4958,6 +5757,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dovrefjell: {
+    // seeing sources: 斯诺赫塔 2286 米；麝牛 1932 年首批 10 头自格陵兰引入、二战后所剩无几、1947–1953 年第二批 27 头奠定现今种群（国家公园官网，级别 1）—— 正文的「几乎灭绝、战后重新引入」是可接受的概括。1814 年埃兹沃尔誓词属实；连同周边景观保护区共 4366 平方公里，为挪威最大连片保护区。2026-09-09 核，本轮无需改动。
+    //   https://dovrefjell-sunndalsfjella.no/en/musk-oxen/musk-oxen-history/
     seeing:
       "Dovrefjell in central Norway is a mountain plateau running about 160 km east–west, a natural barrier between eastern Norway and the Trøndelag region, and it straddles the main watershed of the Scandinavian Mountains — rainfall here parts, some toward the Atlantic and some the other way. The high point, Snøhetta, is 2,286 m. The landform is open plateau tundra with a few rounded or partly sharp peaks standing above it, cut by deep glacial valleys. The west is coastal and wetter, the east lies in a rain shadow, dry with little snow.",
     formation:
@@ -5003,6 +5804,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   jostedalsbreen: {
+    // seeing sources: 面积约 458 平方公里（2022 年），NVE 研究人员参与的同行评议论文（级别 1）。**「欧洲大陆最大的冰川」这个限定已隐含排除冰岛与斯瓦尔巴，本轮判定口径合理、不需再加字。** 全新世暖期（约 8000–5300 年前）完全消融、桦树扩张，约 5300 年前重新冰川化；正文没写重新冰川化的具体年份，是合理留白。2026-09-09 核，本轮无需改动。
+    //   https://tc.copernicus.org/articles/19/5871/2025/
     seeing:
       "Jostedalsbreen in western Norway, between the Sognefjord and the Nordfjord, is the largest glacier on mainland Europe, with an ice cap area of about 458 km² (2022). It is a north–south, gently domed plateau ice cap, sending dozens of outlet glaciers down into the surrounding valleys, the best known being Nigardsbreen and Briksdalsbreen; some outlets reach right down into forested low valleys, making a stark \"orchard at the foot of the glacier\" contrast.",
     formation:
@@ -5018,8 +5821,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   folgefonna: {
+    // seeing sources: 面积：旧总数 207 平方公里对应 **2006 年**测量（北 26 + 中约 9–13 + 南 167）；NVE 关联的 Sentinel-2 全国编目（2018–19 影像，Andreassen 等 2022）给南佛尔格 **153.8 平方公里（2019）**，比 2006 年少约 8%。级别 1，2026-09-09 核。
+    //   https://www.cambridge.org/core/journals/journal-of-glaciology/article/an-inventory-of-norways-glaciers-and-icemarginal-lakes-from-201819-sentinel2-data/EEBB73BA4DB7D3E77B25172F66ADBA9F
+    //   **没有把三个不同年份的分块数拼成一个新总数** —— 那样得到的「精确总数」并不存在于任何一份来源里。正文因此保留带年份的旧总数 + 最大一块的最新实测 + 「等下一轮编目」。国家公园 2005-05-14 设立核实无误。
     seeing:
-      "Folgefonna, on the Folgefonna peninsula between the Hardangerfjord and the Norwegian Sea in southwestern Norway, is in fact three separate ice caps (north, middle, south) totalling about 207 km² — the third-largest glacier on mainland Norway. The southern ice cap is the largest, nearly 400 m thick at most. Wedged between fjord and open sea, with very heavy snowfall, Folgefonna is a classic \"maritime glacier\" — near the melting point, fast-flowing and sensitive to climate change.",
+      "Folgefonna, on the Folgefonna peninsula between the Hardangerfjord and the Norwegian Sea in southwestern Norway, is in fact three separate ice caps (north, middle, south) that together measured about 207 km² in 2006 — the third-largest glacier on mainland Norway; the largest of them, Søndre Folgefonna, was down to about 154 km² by 2019 on Norway's water and energy directorate's survey, and a new combined figure awaits the next national inventory. The southern ice cap is the largest, nearly 400 m thick at most. Wedged between fjord and open sea, with very heavy snowfall, Folgefonna is a classic \"maritime glacier\" — near the melting point, fast-flowing and sensitive to climate change.",
     formation:
       "Folgefonna sits on a fairly flat plateau surface, itself an uplifted paleic surface. Abundant maritime snowfall builds up and compacts into ice on the plateau, and the ice caps send short, steep outlet tongues toward the surrounding fjords. Through the Quaternary the glaciers here have repeatedly expanded and shrunk, polishing the surrounding rock and deepening the valleys; the kilometre-high walls on either side of the fjords are the result of long glacial scour.",
     observation:
@@ -5033,8 +5839,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   svartisen: {
+    // seeing sources: 面积：NVE Sentinel-2 全国冰川编目（2018 年影像）西斯瓦蒂森 190.2 + 东斯瓦蒂森 125.1 = 约 315.3 平方公里；原文的 370（西 221 + 东 148）是更老一轮的测量、且没标年份，**差约 15%，是实测退缩不是取整差异**。级别 1，2026-09-09 核。
+    //   https://www.cambridge.org/core/journals/journal-of-glaciology/article/an-inventory-of-norways-glaciers-and-icemarginal-lakes-from-201819-sentinel2-data/EEBB73BA4DB7D3E77B25172F66ADBA9F
+    //   恩加冰舌自 1970 年起做物质平衡监测、1990 年代初借水电隧道建成冰下观测站（NVE 官网，级别 1）核实无误。
+    //   https://www.nve.no/hydrology/glaciers/
     seeing:
-      "Svartisen (\"the black ice\") in Nordland county in northern Norway is the second-largest glacier on mainland Norway, split into western and eastern Svartisen, together about 370 km². The Arctic Circle runs across the southern part of the glacier. Its best-known outlet is Engabreen — historically its snout reached down close to sea level, one of the lowest-lying glacier fronts on mainland Europe, and you can walk to the ice from the fjord shore.",
+      "Svartisen (\"the black ice\") in Nordland county in northern Norway is the second-largest glacier on mainland Norway, split into western and eastern Svartisen, together about 315 km² on the latest national glacier inventory (2018). The Arctic Circle runs across the southern part of the glacier. Its best-known outlet is Engabreen — historically its snout reached down close to sea level, one of the lowest-lying glacier fronts on mainland Europe, and you can walk to the ice from the fjord shore.",
     formation:
       "Svartisen is a plateau ice cap sitting on a rolling bedrock upland, split into east and west halves by a deep valley (Vesterdalen). Heavy snowfall accumulates into ice on the plateau and sends outlet tongues down into the lowlands. As the glacier has advanced and retreated repeatedly, it has polished the limestone and gneiss beneath it into smooth rock, deep grooves and marble caves (some of Norway's longest caves are in this area). The recently exposed ground in front of Engabreen is a textbook site for watching \"a glacier just retreated, plants not yet arrived\".",
     observation:
@@ -5048,8 +5858,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   geirangerfjord: {
+    // seeing sources: 深度：**约 258–260 米**（挪威国家百科 SNL，级别 2 半官方），不是原文的 500 米 —— 差近一倍。周壁高度通行区间 1400–1700 米，原文只取下限。2026-09-09 核。
+    //   https://snl.no/Geirangerfjorden
+    //   层级：「斯托尔峡湾 → 宗尼尔斯峡湾（约 26 公里）→ 盖朗厄尔峡湾（约 15 公里）」三级嵌套，原文把中间一级压掉了。
+    //   UNESCO 正式名 **West Norwegian Fjords – Geirangerfjord and Nærøyfjord**，2005 年列入（级别 1）—— 正文写的「西挪威峡湾」是这个正式名的简称，没有踩「通俗名当正式名」的坑。
     seeing:
-      "The Geirangerfjord in western Norway is a roughly 15 km arm of the Storfjord, inscribed with the Nærøyfjord in 2005 as the \"West Norwegian Fjords\" World Heritage Site. It is very narrow and very deep — crystalline rock walls rising about 1,400 m on either side, another about 500 m of water below the surface, with rows of waterfalls falling free from the walls (the \"Seven Sisters\", the \"Suitor\", the \"Bridal Veil\" and others). The fjord makes several bends, each opening onto new walls and waterfalls.",
+      "The Geirangerfjord in western Norway feeds into the Storfjord system through the Sunnylvsfjord and is itself a roughly 15 km arm, inscribed with the Nærøyfjord in 2005 as the \"West Norwegian Fjords\" World Heritage Site. It is very narrow and very deep — crystalline rock walls rising 1,400 to 1,700 m on either side, with about 260 m of water below the surface, with rows of waterfalls falling free from the walls (the \"Seven Sisters\", the \"Suitor\", the \"Bridal Veil\" and others). The fjord makes several bends, each opening onto new walls and waterfalls.",
     formation:
       "The Geirangerfjord is a textbook case of glacial overdeepening: in the ice age an ice stream flowed seaward along a pre-existing river valley, digging the main valley floor ever deeper — in places to several hundred metres below sea level. In the small side valleys the ice was thin and cut shallow, so after the ice retreated and the sea came in, the mouths of those side valleys were left \"hanging\" partway up the main fjord wall, their streams entering only as waterfalls — hanging-valley falls. The fjord bends because the ice followed several differently oriented sets of joints in the rock.",
     observation:
@@ -5063,12 +5877,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   naeroyfjord: {
+    // seeing sources: 层级：纳柔依峡湾是**奥兰峡湾**的支汊，奥兰峡湾才是松恩峡湾的支汊（3 级来源原文即「a branch of the Aurlandsfjord, itself a branch of the Sognefjord」）。原文把两层嵌套压成了一层，`seeing` 与 `observation` **两段各写了一次**，已一并改。2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Aurlandsfjord
+    //   长度约 17 公里、最窄处（巴卡桑德）约 250 米、周边峰达 1761 米（「逾 1600 米」准确）：核实无误。
     seeing:
-      "The Nærøyfjord in western Norway is the innermost arm of the Sognefjord, about 17 km long, only about 250 m wide at its narrowest while the walls on either side rise over 1,600 m — an extreme width-to-depth ratio, a fjord like a \"slit\". It is often taken as the \"type example\" of the fjord landform, and was inscribed with the Geirangerfjord as a World Heritage Site in 2005. The name comes from Njord, the wind god of Norse mythology.",
+      "The Nærøyfjord in western Norway joins the Sognefjord system through the Aurlandsfjord and is the innermost arm of that fjord complex, about 17 km long, only about 250 m wide at its narrowest while the walls on either side rise over 1,600 m — an extreme width-to-depth ratio, a fjord like a \"slit\". It is often taken as the \"type example\" of the fjord landform, and was inscribed with the Geirangerfjord as a World Heritage Site in 2005. The name comes from Njord, the wind god of Norse mythology.",
     formation:
       "The Nærøyfjord follows a pre-existing structural weakness; in the ice age the ice stream cut down concentrated along this narrow zone, digging it into a deep, narrow trough. Because the ice was held tightly between hard rock on both sides, its energy went into cutting down, so the fjord is narrow and deep. After the ice retreated and the sea came in, water filled the trough, leaving today's channel almost pinched between its walls; the small side valleys likewise hang partway up and enter as waterfalls.",
     observation:
-      "From the air the Nærøyfjord is an almost straight dark slit cutting south from the main Sognefjord into snow mountains, its walls so high and steep that it stays in shadow much of the day. There are only scattered footholds of flat ground at the bottom, with small villages and farms such as Gudvangen on them. In winter frozen waterfalls hang on the walls.",
+      "From the air the Nærøyfjord is an almost straight dark slit cutting south from the Aurlandsfjord into snow mountains, its walls so high and steep that it stays in shadow much of the day. There are only scattered footholds of flat ground at the bottom, with small villages and farms such as Gudvangen on them. In winter frozen waterfalls hang on the walls.",
     distinguish:
       "The Nærøyfjord and the Geirangerfjord are both World Heritage arms, but the Nærøyfjord is narrower and straighter, like a \"knife-cut slit\", while the Geirangerfjord bends more and has denser waterfalls. It differs from the main Sognefjord only in scale — the trunk is wide and deep, and the Nærøyfjord is the most extreme short stretch of it.",
     concept:
@@ -5213,6 +6030,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   trolltunga: {
+    // seeing sources: 岩台高出林厄达尔湖约 700 米；徒步单程约 11–14 公里（往返 22–28 公里，随起点停车场变化）、爬升 800–900 米。**正文写「十几公里」而不是一个具体数，恰好规避了这个会随停车场变动而过期的量 —— 这是处理会过期量的第三条路：给区间式的模糊表述。** 2026-09-09 核，本轮无需改动。
     seeing:
       "Trolltunga in western Norway, near Odda on the western edge of the Hardangervidda plateau, is a thin, almost horizontal slab of rock jutting out into the air about 700 m above Lake Ringedalsvatnet. The slab is roughly a dozen metres long, with several hundred metres of vertical space straight down off its end. It is one of Norway's most popular hikes of recent years, about a dozen kilometres each way from the valley with about 800 m of climb.",
     formation:
@@ -5228,6 +6046,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   saltstraumen: {
+    // seeing sources: 约 3 公里长、最窄约 150 米、约 4 亿立方米海水在 6 小时内通过、流速可达 20+ 节、漩涡直径约 10 米：与挪威国家旅游机构官方页及多个独立来源一致（2 级）。**「世界上已知最强的潮流」带了「已知」这个留白，不是绝对断言，判定可接受**；按流速衡量确实快于本批 lofoten 条目里的莫斯克流（约 10.7 节），两个条目的表述互相印证、不打架。萨尔特桥 1978 年通车（个别来源的 1979 是混凝土奖颁奖年）。2026-09-09 核，本轮无需改动。
     seeing:
       "Saltstraumen in northern Norway, near Bodø, is a strait connecting the Saltfjord with the inner Skjerstadfjord, about 3 km long and only about 150 m wide at its narrowest. On each rising or falling tide, as much as about 400 million cubic metres of seawater must squeeze through this narrow gap in six hours, at speeds up to about 20 knots (about 10 m/s), with whirlpools up to about 10 m across churning on the surface — the strongest tidal current known in the world.",
     formation:
@@ -5258,8 +6077,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "french-alps": {
+    // seeing sources: 勃朗峰高度：**峰顶是积雪，逐年变化，每两年由上萨瓦省的专业测绘师实测一次**；最新一次 2023-09-05 测得 4805.59 米（较 2021 年少 2.22 米），截至 2026-09-09 未见更新值。2 级（主流媒体转述官方测量团队）。
+    //   https://www.iloveski.org/fr/2023/10/05/mont-blanc-mesure/
+    //   **这是「山峰海拔也会过期」的第二例**（第一例是同一轮挪威的格利特峰：峰顶冰帽 2023 年消融，海拔从 2465 掉到 2452）—— 一个听起来最不像会变的量。
+    //   跨境按「位于法国与意大利交界」中性表述，不涉主权，复核通过。
     seeing:
-      "The French Alps are the part of the Alps within France, running along the southeastern border from Lake Geneva to the Mediterranean, about 350 km. They are one of Europe's youngest and steepest ranges: sharp rock peaks, deeply cut valleys, large glaciers and glacial lakes. The high point, Mont Blanc, is about 4,806 m — the highest peak in the Alps and in all of Western Europe, on the French–Italian border. The north (Savoie, Haute-Savoie) is high and glaciered, the south (the Provence Alps) lower, drier and more limestone.",
+      "The French Alps are the part of the Alps within France, running along the southeastern border from Lake Geneva to the Mediterranean, about 350 km. They are one of Europe's youngest and steepest ranges: sharp rock peaks, deeply cut valleys, large glaciers and glacial lakes. The high point, Mont Blanc, is about 4,806 m — its snow cap changes from year to year and is resurveyed by professional surveyors every two years, the 2023 survey giving 4,805.59 m — the highest peak in the Alps and in all of Western Europe, on the French–Italian border. The north (Savoie, Haute-Savoie) is high and glaciered, the south (the Provence Alps) lower, drier and more limestone.",
     formation:
       "The Alps are the result of the African plate converging on and pressing into the European plate through the Cenozoic (roughly the last 60 million years) — the sea between the two continents (the Tethys) closed, and the layers of the seafloor and continental margins were strongly folded, thrust and stacked into piles of \"nappes\". The process has not stopped, so the Alps have notable seismic activity and are still slowly rising. Quaternary glaciers then carved horns, arêtes, U-shaped valleys and over a hundred glacial lakes into the uplifted range. Around Mont Blanc is a block of hard granite, especially erosion-resistant, hence the highest point.",
     observation:
@@ -5273,6 +6096,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pyrenees: {
+    // seeing sources: 阿内托 3404 米、维涅马勒 3298 米、加瓦尔尼-加瓦尔尼圈谷 1997 年以双重遗产列入 UNESCO、比利牛斯国家公园 1967 年设立：均核实通过。**跨境表述本轮专门复核：通过**（「法国与西班牙交界」，不描述边界线、不表述主权）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Pyrenees are an east–west frontier range about 430 km long between France and Spain (the small country of Andorra lies within them). They form a nearly continuous wall with almost no low gaps, and historically separated France sharply from the Iberian Peninsula. Overall lower than the Alps, the highest peak, Aneto (3,404 m), is on the Spanish side; the highest on the French side is Vignemale (3,298 m). The mountains have spectacular glacial \"cirques\" (such as Gavarnie), plus dozens of small glaciers and over a thousand mountain lakes.",
     formation:
@@ -5290,8 +6114,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "massif-central": {
     seeing:
       "The Massif Central in south-central France is an ancient highland covering about one-sixth of the country, averaging 800 to 1,000 m, high point Puy de Sancy at 1,885 m. It is not a range but a large old block uplifted and tilted as a whole, with a series of extinct volcanoes and lava plateaus laid over it. The terrain is rounded granite hills, deeply cut river valleys, open plateau pasture, and — in the Auvergne — strings of conspicuous volcanic cones.",
+    // formation sources: 火山年代分层：坎塔尔层状火山主体为中新世晚期（约 1300 万–600 万年前，700 万年前坍塌，随后 600 万–300 万年前又有大规模玄武岩流覆盖）；桑西（多尔山）约 1800 万–50 万年前、主锥体 110 万–23 万年前；普伊火山群 9.5 万–8400 年前。原文把三者塞进同一个「上新世至几千年前」的窗口，坎塔尔差了约 800 万年。3 级学术转述，2026-09-09 核。
+    //   https://link.springer.com/chapter/10.1007/978-3-319-39961-4_4
+    //   **这是「把几件事压进同一个时间窗」的形状** —— 与同一轮挪威两条峡湾「把两层嵌套压成一层」是同一类简化。
     formation:
-      "Three-quarters of the Massif Central is floored by granite, gneiss and schist left by the Variscan orogeny (about 250–360 million years ago), long since planed flat. About 23 million years ago stress from the Alpine orogeny reached here, uplifting this old block as a whole and tilting it westward; at the same time deep-crustal extension let magma rise, and from the Pliocene (about 5 million years ago) to a few thousand years ago there was persistent volcanic activity, building the Chaîne des Puys, Sancy, Cantal and other volcanoes and large basalt plateaus (Aubrac, Devès).",
+      "Three-quarters of the Massif Central is floored by granite, gneiss and schist left by the Variscan orogeny (about 250–360 million years ago), long since planed flat. About 23 million years ago stress from the Alpine orogeny reached here, uplifting this old block as a whole and tilting it westward; at the same time deep-crustal extension let magma rise, and volcanic activity ran from the late Miocene (about 13 million years ago, when large stratovolcanoes such as the Cantal were built) through the Pliocene to the Holocene (about 5 million years ago to a few thousand years ago, when younger groups such as Sancy and the Chaîne des Puys formed) and large basalt plateaus (Aubrac, Devès).",
     observation:
       "From the air the Massif Central is a dark, undulating highland in the heart of France, deeply cut by the Loire, the Dordogne, the Allier and others. Around the Auvergne you can clearly see rows of conical hills (the Chaîne des Puys) and a few larger old volcanoes (Sancy, Cantal). The Causses to the southwest are pale limestone tablelands cut by canyons. The massif's edges (the Cévennes, the Monts du Forez) drop abruptly to the surrounding lowlands.",
     distinguish:
@@ -5303,6 +6130,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vosges: {
+    // seeing sources: 大球峰 1424 米、莱茵地堑肩式隆起机制、斯特拉斯堡大教堂用孚日砂岩：均核实通过。**分类复核：孚日是大区自然公园（PNR）不是国家公园，正文没写错** —— 法国的国家公园与 PNR 是两种不同的法定分类，本批 camargue / verdon / armorican 三处也都用对了。2026-09-09 核，本轮无需改动。
     seeing:
       "The Vosges in eastern France are a north–south mountain area about 120 km long between the Alsace plain and the Lorraine plateau. They are not high (high point the Grand Ballon, 1,424 m) and rounded in form — the southern summits, with rounded high pasture on top, are called \"ballons\" (balloons). The Black Forest (Germany) across the Rhine graben and the Vosges were once the same range.",
     formation:
@@ -5324,8 +6152,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The rock of the Armorican Massif went through two orogenies in the Palaeozoic (Caledonian, Variscan, about 300–500 million years ago), and is the core of a microcontinent called \"Armorica\". For the two or three hundred million years since, it has stayed land and been continuously eroded, long since planed to a near-plain. Harder quartzite was not planed flat and stands out as long low ridges (such as the Monts d'Arrée). In the Quaternary ice ages sea level fell and rivers cut down; after the ice, sea level rose and drowned the mouths of these valleys, making Brittany's ragged coast.",
     observation:
       "From the air the interior of the Armorican Massif is a low, gentle green country of hills divided by hedgerows and small fields (\"bocage\"), with a few quartzite ridges like shallow folds. The coastline is extremely intricate — funnel-shaped estuaries reaching inland (\"aber\", \"ria\"), long narrow peninsulas (Crozon, Sizun), and groups of islets and hidden reefs offshore. The tidal range is large, and at low tide vast rock and mud flats are exposed.",
+    // distinguish sources: 阿摩里卡地块**确实经历过新生代抬升**：布列塔尼大区官方环境机构写明夷平面记录了可能由该地块抬升导致的基准面变化（非洲—伊比利亚—欧亚汇聚驱动）；学术研究量化出约 260 万年前起相对雷恩坳陷向南掀斜、北缘持续抬升，以及约 54 万年前与约 11 万年前两次更晚近的抬升脉冲。2 级，2026-09-09 核。
+    //   https://bretagne-environnement.fr/
+    //   **原文的「唯一一块基本没有被重新抬升」是把「抬升方式不同」写成了「没有抬升」** —— 与内伊湖那条（C7，因果解释错了）是同一类：机制性表述比数字更容易被简化到失真，而且没有脚本能看见。判据那一句也跟着改了：从「看它有没有近期抬升」改成「看它有没有由断裂或岩浆驱动的强烈抬升」。
     distinguish:
-      "The Armorican Massif, the Massif Central and the Vosges are all France's Variscan old blocks, but the Armorican is the only one essentially not re-uplifted by Neogene tectonics — it has kept a low, stable \"old age\" state, with no volcanoes and no marked recent uplift. Its interest shifts from mountains to coast. To recognise an \"un-revived old block\", look at whether it is low, seismically quiet, and lacking young volcanoes and young fault scarps.",
+      "The Armorican Massif, the Massif Central and the Vosges are all France's Variscan old blocks, but the Armorican has not seen the kind of strong, fault- or magma-driven uplift the Vosges and the Massif Central have — its Cenozoic uplift has been slow, broad and gentle tilting, with no volcanoes and no large fault scarps produced by it, so the landform has kept its low, rounded \"old age\" state. Its interest shifts from mountains to coast. To recognise an \"un-revived old block\", look at whether it is low, seismically quiet, and lacking young volcanoes and young fault scarps.",
     concept:
       "The Brittany coast is the template for a \"ria coast\": post-glacial sea-level rise drowned the branching network of river valleys on the former land, the sea reaching inland along the valleys to form deep, narrow, inland-shallowing funnel-shaped inlets — different from a glacier-carved fjord (a ria is a drowned river valley, a fjord is a drowned glacial trough). To tell whether a coast is a ria coast, look at whether the inlets are branching and river-shaped, whether they shallow inland, and whether the surroundings are a low old block. A common misconception is to conflate a ria coast with a fjord.",
     history:
@@ -5333,6 +6164,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "paris-basin": {
+    // seeing sources: 巴黎盆地的同心圆单面山（cuesta）表述与本库瑞士、英国、德国条目的写法一致，**内部口径统一**（缓坡顺岩层倾向、陡坎逆岩层）；坳陷盆地 vs 断陷盆地的对比核实通过。2026-09-09 核，本轮无需改动。
     seeing:
       "The Paris Basin is a huge oval sedimentary basin in north-central France, ringed by four old blocks — the Armorican Massif, the Ardennes, the Vosges and the Massif Central. You cannot see a \"basin\" at the surface — it is a broad country of gently rolling farmland and woods, slightly lower in the centre (near Paris). The real basin structure is underground: layers of limestone, chalk, sand and clay stacked like a set of bowls with upturned rims, laid down from the Triassic all the way to the Neogene.",
     formation:
@@ -5453,8 +6285,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mer-de-glace": {
+    // seeing sources: 长度：2024 年报道引用「约 7 公里、面积已跌破 30 平方公里」；厚度：蒙唐维尔车站附近冰层自小冰期结束以来减薄约 300 米，2022–2023 一年内又减薄约 30 米 —— **原文的「约 200 米」是一个没有位置也没有年份的单一值，已删**。3 级环境媒体，2026-09-09 核。
+    //   https://vert.eco/climat/la-mer-de-glace-futur-champ-de-cailloux-le-plus-grand-glacier-de-france-face-a-lacceleration-du-changement-climatique/
+    //   ⚠️ 下一轮回来查 GLACIOCLIM / Compagnie du Mont-Blanc 的官方页取最新长度。
+    //   **「阿尔卑斯第二长（把支流合起来算）」这个限定是准确的、判定不改**：单算主体 7 公里在阿尔卑斯只排第五，合并巨人冰川、勒尚冰川等支流后约 11 公里，确为第二长，仅次于阿莱奇 —— 口径写得很清楚。
     seeing:
-      "The Mer de Glace on the north slope of the Mont Blanc massif in the French Alps is the longest and largest glacier in France — its main body about 7.5 km long and about 200 m thick, and counting its tributary glaciers upstream (the Glacier du Géant, the Glacier de Leschaux and others), the second-longest in the Alps after the Aletsch Glacier in Switzerland. It flows past the foot of a viewpoint called Montenvers on the edge of the Chamonix valley, and since the 19th century a rack railway has run there to see the glacier.",
+      "The Mer de Glace on the north slope of the Mont Blanc massif in the French Alps is the longest and largest glacier in France — its main body about 7 km long as of 2024 and still shortening and thinning (its thickness varies too much along the glacier to give a single figure), and counting its tributary glaciers upstream (the Glacier du Géant, the Glacier de Leschaux and others), the second-longest in the Alps after the Aletsch Glacier in Switzerland. It flows past the foot of a viewpoint called Montenvers on the edge of the Chamonix valley, and since the 19th century a rack railway has run there to see the glacier.",
     formation:
       "The Mer de Glace is a classic valley glacier: the high ground of the Mont Blanc massif (above 3,000 m) holds snow year-round, compacted into ice, which flows slowly under gravity (tens of centimetres a day) down a deep valley first cut by a river and then widened by the glacier itself, planing the floor into a U-shape, leaving polish and glacial striations on the walls and moraine at the melting snout. With a warming climate, the glacier's \"expenditure\" (melt) has exceeded its \"income\" (snowfall) for years, and the tongue has retreated a kilometre or two and thinned by over a hundred metres since the 20th century.",
     observation:
@@ -5463,8 +6299,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Mer de Glace is a \"valley glacier\", unlike an \"ice cap\" like Jostedalsbreen — it is confined to one valley, with a clear upstream accumulation zone and downstream tongue. It and the Aletsch Glacier in Switzerland are the same kind of thing — the two largest valley glaciers of the same range (the Alps). To recognise a \"valley glacier\", look at whether it is a stream of ice held between valley walls, flowing from snow mountains toward a lower valley.",
     concept:
       "The \"fresh pale rock bands\" on the walls beside the Mer de Glace are a plain sample of \"glacier mass balance\": the height of the ice surface each year depends on whether the snow accumulated upstream or the ice melted along the way is greater. Years in a row of \"expenditure > income\" and the surface drops steadily, exposing rock that had long been under ice — paler, not yet lichen-covered — and the width of this \"trim line\" band directly measures how much the glacier has thinned. To tell whether a glacier is advancing or retreating, look at the position of its tongue and this trim line.",
+    // history sources: 通道现状：台阶因冰川退缩一度加长到 580 多级；2024 年 2 月新缆车投入运行、2025 年 2 月正式揭幕，从蒙唐维尔车站直接下到冰面附近，同址新冰洞同期开放。2 级（缆车行业媒体转述运营方 Compagnie du Mont-Blanc）。
+    //   https://fr.isr.at/singleview/article/neue-kabinenbahn-zum-mer-de-glace
+    //   **「从车站走台阶下降多少米」是这一批里最典型的会过期量**：它随冰川退缩逐年变长，直到运营方干脆换了一套上下方式 —— 正文原来写的那句在 2024 年 2 月之后就不成立了。
     history:
-      "The Mer de Glace is one of the birthplaces of \"glacier tourism\" in Europe: British travellers came to Montenvers to see the \"sea of ice\" in the 18th century, and the rack railway completed in 1908 let ordinary visitors reach the glacier's edge. Historical records (paintings, photographs, parish documents) show that during the \"Little Ice Age\" the Mer de Glace's tongue once pushed close to farmland on the Chamonix valley floor. Today the glacier retreats fast, and from the station you descend a long staircase, over a hundred metres, to touch the ice.",
+      "The Mer de Glace is one of the birthplaces of \"glacier tourism\" in Europe: British travellers came to Montenvers to see the \"sea of ice\" in the 18th century, and the rack railway completed in 1908 let ordinary visitors reach the glacier's edge. Historical records (paintings, photographs, parish documents) show that during the \"Little Ice Age\" the Mer de Glace's tongue once pushed close to farmland on the Chamonix valley floor. The glacier retreats so fast that the old staircase had grown to more than 580 steps; in February 2024 a new cable car began running from the Montenvers station down to near the ice, after which visitors descend about 580 steps to reach the ice cave.",
   },
 
   camargue: {
@@ -5478,17 +6317,24 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Camargue is a \"delta\", unlike an ordinary drowned river mouth — a delta is land built out by sediment at the river mouth and advancing seaward, while a ria is a drowned river valley. It is the same kind of thing as the Nile and Po deltas. To tell whether a river mouth is a delta, look at whether it has multiple branching channels, large areas of newly deposited low ground, and traces of the balance between sediment supply and wave transport.",
     concept:
       "The Camargue is a sample for understanding \"a delta's budget\": whether a delta can maintain itself depends on whether the sediment the river delivers (\"income\") or the sediment carried off by waves and currents plus ground subsidence (\"expenditure\") is greater. After large-scale upstream damming of the Rhône, the sediment reaching the delta dropped sharply, and the Camargue's shoreline has begun to retreat in places and salt intrusion has worsened. To tell whether a delta is growing or shrinking, look at whether its shoreline advances or retreats and whether the river's sediment load has been cut off by engineering.",
+    // history sources: 拉姆萨尔列入年份：**1986-12-01**（编号 346，面积 100,788 公顷）—— 法国 1986-10-01 才加入公约。**1971 是公约本身在伊朗拉姆萨尔签署的年份，不是这块湿地被列入的年份**，「全球最早一批」因此不成立。级别 1（公园官网），2026-09-09 核。
+    //   https://www.parc-camargue.fr/ramsar.html
+    //   **这个错的形状值得记：把「一个制度诞生的年份」当成了「某个对象被纳入这个制度的年份」。** 1927 年设自然保护区、1970 年设地区自然公园核实无误；红鹳那句只说「在这里繁殖」、没有做「欧洲唯一」的排他性断言，判定不改。
     history:
-      "The Camargue has produced sea salt since Roman times (the salt works at Aigues-Mortes are still in production). In the Middle Ages it was semi-feral pasture for cattle and horses, and the \"gardian\" (Camargue herdsman) culture continues today. From the 19th century dikes turned the north into rice fields. A nature reserve was created in 1927, a regional nature park in 1970, and it was listed as a Ramsar wetland in 1971 — one of the first wetlands in the world protected under an international convention.",
+      "The Camargue has produced sea salt since Roman times (the salt works at Aigues-Mortes are still in production). In the Middle Ages it was semi-feral pasture for cattle and horses, and the \"gardian\" (Camargue herdsman) culture continues today. From the 19th century dikes turned the north into rice fields. A nature reserve was created in 1927, a regional nature park in 1970, and it was listed as a Ramsar wetland site (no. 346) in 1986.",
   },
 
   "chaine-des-puys": {
+    // seeing sources: **帕文湖不属于普伊山链**，它属于多尔山火山群（UNESCO 遗产地官网明确「n'est pas lié à la chaîne des Puys」）。普伊山链自身的活动年代为 9.5 万–8400 年前，最年轻的一次是母牛峰 / 拉索拉斯峰双子火山。级别 1，2026-09-09 核。
+    //   https://www.chainedespuys-failledelimagne.com/le-bien/chaine-des-puys/
+    //   **这个错在同一条目里出现了两次**（seeing 与 observation 各一次）——又一例「同一条口径问题在一个条目里几乎总是出现两次」。
+    //   2018 年以「Chaîne des Puys – Limagne fault tectonic arena」列入 UNESCO、约 80 座火山、约 45 公里长、多姆山 1465 米：核实无误。
     seeing:
-      "The Chaîne des Puys in the Auvergne of the Massif Central, west of Clermont-Ferrand, is a north–south line of young volcanoes about 45 km long — roughly 80 cones, lava domes and explosion-blasted flat craters (maars) standing one after another among forest, lakes and pasture. The highest and best known is the Puy de Dôme (1,465 m), a steep lava dome. The most recent eruption (the Pavin crater) was about 7,000 years ago. In 2018 the Chaîne des Puys and the Limagne fault to its west were inscribed as a World Heritage Site.",
+      "The Chaîne des Puys in the Auvergne of the Massif Central, west of Clermont-Ferrand, is a north–south line of young volcanoes about 45 km long — roughly 80 cones, lava domes and explosion-blasted flat craters (maars) standing one after another among forest, lakes and pasture. The highest and best known is the Puy de Dôme (1,465 m), a steep lava dome. The most recent eruption, the twin cones of the Puy de la Vache and the Puy de Lassolas, was about 8,400 years ago. In 2018 the Chaîne des Puys and the Limagne fault to its west were inscribed as a World Heritage Site.",
     formation:
       "The Chaîne des Puys is a segment of the \"West European Rift\". After Alpine mountain-building about 35 million years ago, the crust of western Europe was stretched, dropping along a large fault (the Limagne fault) into the Limagne plain; the thinning crust gave deep magma a path to rise. Between about 90,000 and 7,000 years ago, magma broke the surface one point at a time along a north–south fissure, building this line of volcanoes. Because each volcano erupted only once or twice and then went extinct (\"monogenetic volcanoes\"), they keep the fresh shape they had just after eruption, barely eroded.",
     observation:
-      "From the air the Chaîne des Puys is a remarkably regular line of conical hills on a forested upland along the western edge of the Limagne plain, often with a bowl-shaped crater on top. The Puy de Dôme is the largest dome among them, with a Roman temple site and a TV mast on top. Some craters hold circular lakes (Lac Pavin, Lac d'Aydat). Not far west, the \"Montagne de la Serre\" is a long thin flat-topped ridge — actually an ancient lava flow which, being more erosion-resistant than the soft rock around it, has \"turned over\" from valley floor to ridge crest (relief inversion).",
+      "From the air the Chaîne des Puys is a remarkably regular line of conical hills on a forested upland along the western edge of the Limagne plain, often with a bowl-shaped crater on top. The Puy de Dôme is the largest dome among them, with a Roman temple site and a TV mast on top. Some craters hold circular lakes, and old valleys are often dammed by lava flows into lakes (Lac d'Aydat, Lac de la Cassière). Not far west, the \"Montagne de la Serre\" is a long thin flat-topped ridge — actually an ancient lava flow which, being more erosion-resistant than the soft rock around it, has \"turned over\" from valley floor to ridge crest (relief inversion).",
     distinguish:
       "The Chaîne des Puys, the Cantal and the Monts Dore are all in the Massif Central, but the Chaîne des Puys is the youngest and best-preserved group — the Cantal and Monts Dore are large stratovolcanoes millions of years old, already eroded to residual peaks, while the Chaîne des Puys are small volcanoes within tens of thousands of years, still fresh in shape. They differ from the volcanoes of Italy and Iceland: those are on plate boundaries, the Chaîne des Puys is on a rift belt inside a continent. To judge the age of a group of volcanoes, look at how intact the cones are and whether the craters are still there.",
     concept:
@@ -5573,8 +6419,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "verdon-gorge": {
+    // seeing sources: 深度区间约 250–700 米（不是单一的 700）；**「欧洲最大的峡谷」主要出现在旅游宣传里，没有统一的国际口径**，法语维基对韦尔东本身也回避了这个最高级。3 级，2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Gorges_du_Verdon
+    //   断裂控制下切、石灰岩约 1.5 亿年、1905 年马特尔勘察：核实无误。**分类复核：韦尔东是大区自然公园（PNR）不是国家公园，正文没有写错。**
     seeing:
-      "The Gorges du Verdon in southeastern France, between the Alps and Provence, is a gorge the Verdon River has cut into a limestone upland — about 25 km long and up to about 700 m deep, often called the largest canyon in Europe. On the floor is a river a strange turquoise colour from dissolved lime, and the walls are grey-white, near-vertical, locally overhanging limestone — a famous rock-climbing site in Europe. Downstream it is dammed into a green lake by the Sainte-Croix reservoir.",
+      "The Gorges du Verdon in southeastern France, between the Alps and Provence, is a gorge the Verdon River has cut into a limestone upland — about 25 km long and between about 250 and 700 m deep, often called one of the deepest gorges in Europe — a claim with no single internationally agreed ranking behind it. On the floor is a river a strange turquoise colour from dissolved lime, and the walls are grey-white, near-vertical, locally overhanging limestone — a famous rock-climbing site in Europe. Downstream it is dammed into a green lake by the Sainte-Croix reservoir.",
     formation:
       "The limestone of the Gorges du Verdon is a shallow-sea deposit about 150 million years old. These layers were uplifted into an upland during Alpine mountain-building. The Verdon cuts down along a fracture zone in the rock, and because the limestone is hard and has near-vertical joints, the river cuts almost only downward and barely widens sideways, hollowing out this gorge whose depth far exceeds its width. The limestone is also dissolved, so the walls and floor have many caves, springs and underground-river outlets.",
     observation:
@@ -5618,6 +6467,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   calanques: {
+    // seeing sources: 2012-04-18 设立国家公园（级别 1，公园官网）；官方自称「欧洲首个同时覆盖陆地、海域与近郊的国家公园」，**正文写的是更保守的「少见」，判定不改** —— 保守的限定语不需要为了贴近官方而放宽（同一轮冰岛黛提瀑布那条也是这么处理的）。科斯凯洞 37 米水下、约 2.7 万年前壁画、石灰岩约 1.2 亿年核实通过。2026-09-09 核，本轮无需改动。
+    //   https://www.calanques-parcnational.fr/en/identity-calanques-national-park
     seeing:
       "The Calanques, between Marseille and Cassis, is a stretch of steep white limestone coast cut by narrow, deep clefts into which the sea reaches inland hundreds of metres, with near-vertical walls a hundred metres or more high on either side and bright blue-green water on the floor, shallow and clear. In the Provençal dialect such an inlet is a \"calanque\". The Calanques National Park was created here in 2012, one of the few national parks in Europe right beside a large city (Marseille).",
     formation:
@@ -5633,8 +6484,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dune-du-pilat": {
+    // seeing sources: 高度：新阿基坦海岸观测站（法国官方）2025 年 101.7 米、2024 年 101 米（2009 年起测量以来最低）、2023 年 103 米、2017 年峰值 110.5 米。级别 1，2026-09-09 核。
+    //   https://www.observatoire-cote-aquitaine.fr/En-2024-la-Dune-du-Pilat-culmine-a-101-metres-d-altitude-soit-plus-de-deux
+    //   **这是本轮少见的「每年都有官方新值」的量**，必须带年份。「欧洲最高的沙丘」这个头衔无异议，保留。迁移速率「每年约 1 到 5 米」（迎海侧年蚀退 1–2 米、背陆侧年前进 3–5 米）是区间表述，已经规避了假精确，判定不改。
     seeing:
-      "The Dune du Pilat, southwest of Bordeaux at the southern entrance of the Arcachon basin, is a dune over 100 m high and about 2.7 km long — the tallest sand dune in Europe. It lies over the coast like a giant golden wave: the seaward western side is a gentle slope you can walk up, the landward eastern side a steep face pressing straight onto the deep-green pine forest of the Landes, gradually burying it.",
+      "The Dune du Pilat, southwest of Bordeaux at the southern entrance of the Arcachon basin, is the tallest sand dune in Europe — about 101.7 m high on the Nouvelle-Aquitaine coastal observatory's 2025 survey (the measured height moves every year; it peaked at 110.5 m in 2017) — and about 2.7 km long. It lies over the coast like a giant golden wave: the seaward western side is a gentle slope you can walk up, the landward eastern side a steep face pressing straight onto the deep-green pine forest of the Landes, gradually burying it.",
     formation:
       "The sand of the Dune du Pilat comes from the Atlantic — waves bring river and seabed sand to the shore, it dries at low tide, and the prevailing west wind blows the dry sand ashore, piling ever higher. The dune as a whole migrates slowly inland (about 1 to 5 m a year), the windward western slope constantly deflated and the leeward eastern steep face constantly filled by \"avalanching\" sand, so the dune \"crawls\" east like a conveyor belt. The dune's cross-section contains several dark palaeosol layers, showing it grew in several stages, each time briefly fixed by vegetation and then reactivated.",
     observation:
@@ -5648,10 +6502,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   etretat: {
+    // seeing sources: 「针尖」（L'Aiguille）高度：2012 年 8 月具名科学测量（Donald W. Olson 团队，倾角仪 + 六分仪，最低潮位）得 54.5 米，通常取整为约 55 米。网上另有 70 米的流传值，**差约 27%，超出取整范围**。3 级（转引具名测量），2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Site_d%27%C3%89tretat
+    //   崖高约 80 米、白垩约 1 亿年、与多佛白崖同一地层：核实无误。
     seeing:
-      "Étretat on the Normandy coast of northern France is a stretch of chalk cliff about 80 m high. Waves have hollowed it along the rock's fractures into three sea arches — the Porte d'Amont, the Porte d'Aval and the Manneporte — and a lone \"needle\" of rock about 70 m high standing up out of the sea. White cliffs, white arches, grey-green sea — a scene the Impressionists painted again and again.",
+      "Étretat on the Normandy coast of northern France is a stretch of chalk cliff about 80 m high. Waves have hollowed it along the rock's fractures into three sea arches — the Porte d'Amont, the Porte d'Aval and the Manneporte — and a lone \"needle\" of rock about 55 m high standing up out of the sea. White cliffs, white arches, grey-green sea — a scene the Impressionists painted again and again.",
+    // formation sources: 退缩速率：「每年约 20 厘米」是**塞纳滨海省沿岸白垩崖的区域平均值**（报道只写「据当局称」、未点名机构），不是埃特勒塔本身的监测值；本地岩性底部更致密、更抗蚀，慢于迪耶普附近科多勒、克里埃勒的每年 20–40 厘米。3 级，2026-09-09 核。
+    //   https://www.ina.fr/ina-eclaire-actu/les-falaises-d-etretat-un-patrimoine-geologique-en-peril
+    //   **这一条的形状是「口径张冠李戴」**：数字本身是真的，只是它描述的对象比正文说的大得多 —— 与苏梅岛「泰国湾第二大岛」拿安达曼海的普吉来比是同一类错。正文现在如实写明「查不到本地专门监测数据」。
     formation:
-      "Étretat's chalk was formed about 100 million years ago in a warm shallow sea, from the skeletons of countless tiny calcareous plankton settling and lithifying, with bands of black flint through it. Chalk is fairly soft and has near-vertical fractures, and year after year the waves erode along the fractures: first hollowing a sea cave, then, when the cave breaks through, a sea arch, and when the arch roof collapses a \"stack\" is left outside it (the Needle is one). The whole cliff line retreats on average about 20 cm a year.",
+      "Étretat's chalk was formed about 100 million years ago in a warm shallow sea, from the skeletons of countless tiny calcareous plankton settling and lithifying, with bands of black flint through it. Chalk is fairly soft and has near-vertical fractures, and year after year the waves erode along the fractures: first hollowing a sea cave, then, when the cave breaks through, a sea arch, and when the arch roof collapses a \"stack\" is left outside it (the Needle is one). This cliff line is still retreating, but there is no site-specific monitoring figure for Étretat itself — the regional average for Seine-Maritime's chalk cliffs is about 20 cm a year, and Étretat's own rock is more resistant, so it typically retreats more slowly than that average.",
     observation:
       "From the air Étretat is a straight, snow-white cliff line on Normandy's \"Alabaster Coast\", broken by a small gravel bay, with an arch reaching into the sea at each end of the bay, and a lone needle beyond one of the arches. The cliff top is flat green farmland running right to the edge. The water is the grey-green particular to this coast, coloured by suspended chalk particles.",
     distinguish:
@@ -5663,6 +6523,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mont-saint-michel-bay": {
+    // seeing sources: 潮差约 14–15 米；UNESCO 正式名 Mont-Saint-Michel and its Bay、1979 年列入（正文没有把通俗名当正式名）；去堤化工程 1995 年启动、2014 年桥梁通车与新水闸投用、2015 年正式宣布完工（法国诺曼底大区行政公署官网，级别 1）—— 正文的「2000 年代到 2014 年」与官方时间线基本吻合，**判定不构成实质矛盾、不改**。2026-09-09 核。
     seeing:
       "The Bay of Mont-Saint-Michel, on the border of Brittany and Normandy, is a broad, shallow bay. Its tidal range can reach about 14 to 15 m — one of the largest on mainland Europe. At low tide the sea withdraws several kilometres, exposing a vast sand-and-mud tidal flat; at high tide the water comes back fast. On a granite outcrop in the bay stands the abbey of Mont-Saint-Michel — nearly an island at high tide, joined to the land at low tide.",
     formation:
@@ -8876,6 +9737,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Ireland ============
   "macgillycuddys-reeks": {
+    // seeing sources: 卡朗图希尔 1038.6 米（爱尔兰地形测量局 OSI 官方高程），全境最高点；爱尔兰仅有的三座超千米山峰全在这条山脉内，**「唯一超 1000 米的山脉」这个排名成立**。2026-09-09 核，本轮无需改动。
     seeing:
       "MacGillycuddy's Reeks lies in County Kerry in south-west Ireland and is Ireland's only mountain range exceeding 1,000 m; its highest peak, Carrauntoohil, reaches 1,038.6 m, the highest point in the country.",
     formation:
@@ -8988,6 +9850,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area has historically had a sparse population sustained by traditional farming, and several Neolithic burial sites survive around the range's foothills.",
   },
   "the-burren": {
+    // seeing sources: 面积约 250 平方公里是「裸露石灰岩喀斯特台地」这一口径下的数（另有约 360 / 560 平方公里两个更大口径，**三个数并存、各有各的范围，不是打架**，正文取的口径与 250 吻合，2 级）；石灰岩为石炭纪维宪期约 3.4 亿年前沉积，正文「约 3.5 亿年」落在取整范围，判定不改。2026-09-09 核，本轮无需改动。
+    //   https://clarelibraries.ie/localstudies/places/the-burren/karst-of-ireland-the-burren/
     seeing:
       "The Burren lies in County Clare in western Ireland, a roughly 250 km² Carboniferous limestone karst plateau where bare limestone pavement covers much of the surface.",
     formation:
@@ -9170,6 +10034,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Dún Aonghasa on Inishmore is one of the most important Iron Age stone fortifications in Ireland; the islands remain among the best-preserved Irish-speaking (Gaeltacht) areas in the country.",
   },
   "skellig-michael": {
+    // seeing sources: 岛屿最高点约 218 米（西南端隐修点），修道院所在峰约 185 米；隐修院约 6–8 世纪、僧侣定居至约 12–13 世纪、1996 年列入 UNESCO。**零争议红线本轮专门复核：通过。** 2026-09-09 核，本轮无需改动。
     seeing:
       "Skellig Michael is a steep, conical island about 12 km off Ireland's south-west coast, its summit holding the ruins of an early Christian monastic hermitage.",
     formation:
@@ -9208,10 +10073,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Cliffs of Moher and Slieve League are Atlantic sea cliffs on Ireland's west coast, but the Cliffs of Moher reach about 214 m and are built of interbedded sandstone and shale, while Slieve League reaches about 601 m, roughly three times as high.",
     concept:
       "The clearly interbedded sandstone and shale of the Cliffs of Moher is a classic case for studying how differential erosion produces bedded structure on a sea cliff.",
+    // history sources: 奥布莱恩塔为 19 世纪 Sir Cornelius O'Brien 主持修建（英文侧写对了，中文误译为「科克伦爵士」，已改成音译 + 原名并列）。悬崖全长约 14 公里、最高约 214 米（奥布莱恩塔附近）、南端 Hag's Head 约 120 米，官方站，2 级，2026-09-09 核。
+    //   https://www.cliffsofmoher.ie/about-the-cliffs-of-moher/
+    //   **这一条是「中英两侧各写各的」在专名上的表现**：同一个人在两种语言里成了两个名字，而任何脚本都不会报。
     history:
       "The cliffs have long served as a landmark for local fishermen and sailors; O'Brien's Tower, built in the 19th century under Sir Cornelius O'Brien, remains the cliffs' signature viewing point today.",
   },
   "slieve-league": {
+    // seeing sources: 斯利夫利格约 601 米；崖体主体为前寒武纪达尔雷德超群变质岩（地质学会 100 Great Geosites，级别 1）。「约为莫赫悬崖的三倍」：601 ÷ 214 ≈ 2.8，取整表述合理，判定不改。2026-09-09 核，本轮无需改动。
+    //   https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/coastal/cliffs-of-slieve-league/
     seeing:
       "Slieve League lies in County Donegal in north-west Ireland; its highest point, at about 601 m, makes it one of the highest sea cliffs in Europe.",
     formation:
@@ -9226,6 +10096,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Early Christian hermitage remains survive at the cliff top; historically remote and lightly developed, the site remains a relatively less well-known but landform-rich destination in Ireland today.",
   },
   "dingle-peninsula": {
+    // seeing sources: 布兰登山 952 米，古红砂岩，与麦吉利卡迪山脉同一地质单元。**正文有意没写布兰登山的全国排名，这是对的**：它在不同榜单里排第 8 或第 9，写排名就必须写口径。丁格尔为公认的 Gaeltacht 区域之一，加纳鲁斯石屋为知名早期基督教石造遗迹。**零争议红线本轮专门复核：通过。** 2026-09-09 核，本轮无需改动。
     seeing:
       "The Dingle Peninsula is Ireland's westernmost peninsula, its spine formed by Mount Brandon (952 m); its coastline is lined with steep sea cliffs and prehistoric stone remains.",
     formation:

@@ -3,10 +3,10 @@
   "howTo": "键是 <kind>/<id>/<field>。加一条之前必须有对应的 // <field> sources: 注释写清为什么；不写理由的豁免等于把问题藏起来。",
   "entries": [
     {
-      "key": "travel/ayutthaya/identity",
-      "reason": "大城市自治市**完全没有取到带年份的一手数字**，正文如实停在「约 5 万」不写年份；这一条是被句中的 1991 年（世界遗产列入年份）误命中的。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
+      "key": "travel/amsterdam/howItWorks",
+      "reason": "MRA（大都市区阿姆斯特丹）自报 262 万人是 2024 年数，MRA 是跨市镇治理联合体、不按年固定发布；阿姆斯特丹 gemeente 本身的 2026-01-01 数已写在同段前半句。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2027-03"
     },
     {
       "key": "travel/baishan/howItWorks",
@@ -81,12 +81,6 @@
       "recheckAfter": "2026-12"
     },
     {
-      "key": "travel/hat-yai/howItWorks",
-      "reason": "合艾市自治市 191,696 人（2019）是能查到的最新一期；该来源的信息框把年份误标成 2024，脚注才是 2019。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
-    },
-    {
       "key": "travel/jiaozuo/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -102,6 +96,12 @@
       "key": "travel/kalmar/identity",
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
       "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/kanchanaburi/identity",
+      "reason": "北碧镇 24,624 人（2024-12-31）是 DOPA「เมือง 级」年末统计表能查到的最新一期。",
+      "confirmedOn": "2026-09-09",
       "recheckAfter": "2026-12"
     },
     {
@@ -153,6 +153,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/krabi/identity",
+      "reason": "甲米府 483,221 人（2023-12-31）是 DOPA 能查到的最新一期；泰国 DOPA 的府级细分表由二手渠道零散转引、滞后数周到数月，一手站点 stat.bora.dopa.go.th 连续三轮直连失败。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
+    },
+    {
       "key": "travel/lampang/howItWorks",
       "reason": "同上，南邦市自治市（2017）。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
@@ -163,6 +169,12 @@
       "reason": "南邦市自治市 53,614 人（2017）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/limerick/howItWorks",
+      "reason": "爱尔兰 CSO 的城市一级数字只随普查发布，上次 2022-04、**下次 2027-05-09**；年度估计（PME）只到全国与 8 个 NUTS3 区域、不下探到城市。2022 不是落后，是这一级唯一有的一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2027-09"
     },
     {
       "key": "travel/linyi/howItWorks",
@@ -177,6 +189,12 @@
       "recheckAfter": "2027-03"
     },
     {
+      "key": "travel/lulea/identity",
+      "reason": "同上，SCB tätort 2023 年数据是最新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
+    },
+    {
       "key": "travel/mianyang/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -187,12 +205,6 @@
       "reason": "该市公报发布月份是次年 6 月，2025 年公报是否已发布未能确认（只能确认标题存在、抓不到正文）；2024 年末的 492.20 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-07"
-    },
-    {
-      "key": "travel/nakhon-ratchasima/identity",
-      "reason": "呵叻市自治市 126,391 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/nantong/identity",
@@ -211,6 +223,18 @@
       "reason": "同上；市镇 2024 年 50,126、全省约 11 万，是能核到的最新一期",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/paris/identity",
+      "reason": "法国 INSEE 的 populations de référence 按法律滞后：现行生效版参照 2023 年（2026-01-01 起生效），下一版参照 2025 年（2024 是空档年）。2023 不是「忘了刷新」，而是当前唯一有效的官方数；到 2028-01 新版生效时回来改。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2028-01"
+    },
+    {
+      "key": "travel/pattaya/howItWorks",
+      "reason": "芭提雅 119,532 人（2019-12-31）是能确认年份的最新一期。**英文维基把这个数标成「2025 年 1 月」，但该标签的脚注引用的仍是 2019 年报告** —— 二手来源的年份标注是错的，本轮未找到确认无误的更新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/phuket/identity",
@@ -267,9 +291,15 @@
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/udon-thani/identity",
-      "reason": "乌隆他尼市自治市 130,531 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
+      "key": "travel/uppsala/howItWorks",
+      "reason": "同 identity：SCB tätort 每 2–3 年一期，2023 年数据是最新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/uppsala/identity",
+      "reason": "瑞典 SCB 的 tätort（城区）统计**每 2–3 年才发一期**，最近一期就是 2023 年数据（2024-11-28 发布），下一期（2025 年数据）预计 2026-11-26。2023 不是落后，是当前唯一一期。",
+      "confirmedOn": "2026-09-09",
       "recheckAfter": "2026-12"
     },
     {
