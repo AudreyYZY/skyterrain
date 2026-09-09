@@ -9173,16 +9173,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月是南部旅游旺季、日照最长；拉普兰地区12-次年3月可观测极光，6-7月可见极昼；跨越南北的行程建议乘国内航班衔接，火车更适合区域内深度游览。",
   },
   helsinki: {
-    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：赫尔辛基市镇 694,392（2025-12-31）；**首都圈（4 市镇）约 1,267,272、大赫尔辛基约 1,606,104（2024-12-31）**——
-    //   原来写的「都会区约 150 万」卡在这两个官方口径之间，不对应任何一个。
-    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
-    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
-    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   赫尔辛基市 694,392、首都圈四市 1,283,382、大赫尔辛基 1,630,200，**均为 2025-12-31**（3 级但四市数字可交叉验证 + 2 级区域官方统计门户），2026-09-10 核 —— 比原注释引的 2024-12-31 新一期。
+    //   https://www.helsinginseudunsuunnat.fi/fi/vakiluvun-muutos
     identity:
-      "赫尔辛基是芬兰首都与最大城市，人口约69万（2025年末；首都圈四市约127万，大赫尔辛基约161万），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
-    // howItWorks sources: Wikipedia (2026-09): Helsinki (land ~214 km²; ~694,000; mayor elected by council since 2017; capital region 4 municipalities ~1.3 million; Greater Helsinki ~1.6 million ≈ quarter of Finland; HSL zones; bilingual, Swedish 5.4%; Suomenlinna UNESCO 1991; airport in Vantaa); Municipalities of Finland (Helsinki keeps own health services)
+      "赫尔辛基是芬兰首都与最大城市，人口约69万（2025年末；首都圈四市约128万，大赫尔辛基约163万，均为2025年末），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
+    // howItWorks sources: 给人口数补年份（2025 年末，与同条目 identity 一致）。
+    //   **顺带记一条脚本行为**：`C6d` 取句中最大年份当统计时点，所以「人口没写年份 + 同句提到某个更早的年份（这里是 2017 年起采用市长制）」会被误判成「用了 2017 年的人口数」。**这不是规则写错了 —— 它指出的问题是真的（那个人口数确实缺年份），补上年份两个问题一起消失。**
     howItWorks:
-      "人们口中的赫尔辛基，在行政上只是陆地约 214 平方公里的赫尔辛基市，人口约 69 万；2017 年起它由市议会选出的专职市长治理，是芬兰第一个采用市长制的市镇。芬兰的市镇管学校、规划与地方交通，2023 年起医疗与社会服务移交给福利服务县，唯独赫尔辛基保留了自己的医疗体系，国家管警察与大学。首都圈由赫尔辛基、埃斯波、万塔、考尼艾宁四个独立的市镇组成，约 130 万人，大赫尔辛基约 160 万，占芬兰的四分之一；机场在万塔。HSL 交通局统管首都圈的地铁、有轨电车、通勤火车与渡轮，按 ABCD 票价区计费，一条地铁线的支线 2017 与 2022 年延伸到了埃斯波。参议院广场与克鲁努哈卡是老城，坎皮是商业中心，卡利奥是旧工人区，托洛是 20 世纪初的街区，卡拉萨塔马与耶特卡萨里是旧港区改成的新区，芬兰堡 1991 年列入世界遗产，三百多座岛屿属于市镇。市镇法定双语，路牌先芬兰语后瑞典语，瑞典语人口约 5%。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把赫尔辛基市当作整个首都圈，而埃斯波与万塔是两座有自己市政府的城市。",
+      "人们口中的赫尔辛基，在行政上只是陆地约 214 平方公里的赫尔辛基市，2025 年末人口约 69 万；2017 年起它由市议会选出的专职市长治理，是芬兰第一个采用市长制的市镇。芬兰的市镇管学校、规划与地方交通，2023 年起医疗与社会服务移交给福利服务县，唯独赫尔辛基保留了自己的医疗体系，国家管警察与大学。首都圈由赫尔辛基、埃斯波、万塔、考尼艾宁四个独立的市镇组成，2025 年末约 128 万人，大赫尔辛基 2025 年末约 163 万，占芬兰的四分之一；机场在万塔。HSL 交通局统管首都圈的地铁、有轨电车、通勤火车与渡轮，按 ABCD 票价区计费，一条地铁线的支线 2017 与 2022 年延伸到了埃斯波。参议院广场与克鲁努哈卡是老城，坎皮是商业中心，卡利奥是旧工人区，托洛是 20 世纪初的街区，卡拉萨塔马与耶特卡萨里是旧港区改成的新区，芬兰堡 1991 年列入世界遗产，三百多座岛屿属于市镇。市镇法定双语，路牌先芬兰语后瑞典语，瑞典语人口约 5%。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把赫尔辛基市当作整个首都圈，而埃斯波与万塔是两座有自己市政府的城市。",
     layout:
       "市中心以元老院广场与赫尔辛基大教堂为核心，向南延伸至港口区与市场广场，岩石教堂、西贝柳斯公园等地标分布在各片区，市郊由数百座岛屿组成的群岛环绕。",
     gettingAround:
@@ -9216,11 +9215,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，也是群岛海航行的最佳季节；建议安排一日乘船探索邻近群岛，感受世界最密集岛屿群之一的风光。",
   },
   mariehamn: {
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   玛丽港 **11,957（2025-12-31）**，奥兰统计与研究局（ÅSUB）官方页，级别 1，2026-09-10 核。
+    //   https://www.asub.ax/sv/statistik/invanarantalet-31122025
     identity:
-      "玛丽港是奥兰群岛的首府，人口约1.2万，是芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心。",
+      "玛丽港是奥兰群岛的首府，2025 年末人口约1.2万，是芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mariehamn (capital of Åland, an autonomous Swedish-speaking region of Finland and the seat of its government and parliament; ~11,957 in late 2025, about 40 per cent of Åland's population; founded 21 February 1861 and named after Empress Maria Alexandrovna; Western Harbour with daily ferries to Sweden, Estonia and mainland Finland, Eastern Harbour a large marina; the four-masted Pommern as a museum ship; Mariehamn Airport; about 1.5 million visitors a year)
     howItWorks:
-      "玛丽港是奥兰的首府，人口约 1.2 万，约占奥兰总人口的四成。奥兰是芬兰的一个自治区，讲瑞典语，有自己的议会与政府，也有自己的居民权制度；政府与议会都设在这座城里，因此它虽小，却是一整个自治区的行政中心，学校、医疗与地方立法都在这里决定。城市 1861 年 2 月 21 日建立，名字取自当时的俄国皇后玛丽亚·亚历山德罗夫娜，“玛丽的港”是它的字面意思。它有两个港：西港是国际港，每天有渡轮开往瑞典、爱沙尼亚与芬兰本土，四桅帆船“波美恩号”作为博物馆船停在这里；东港是北欧最大的游艇码头之一。机场在城外，每年约一百五十万人次到访。初来的人最容易犯的错，是把玛丽港当作芬兰本土的一座小城，而它是一个讲瑞典语的自治区的首府，规则与本土并不相同。",
+      "玛丽港是奥兰的首府，2025 年末人口约 1.2 万，约占奥兰总人口的四成。奥兰是芬兰的一个自治区，讲瑞典语，有自己的议会与政府，也有自己的居民权制度；政府与议会都设在这座城里，因此它虽小，却是一整个自治区的行政中心，学校、医疗与地方立法都在这里决定。城市 1861 年 2 月 21 日建立，名字取自当时的俄国皇后玛丽亚·亚历山德罗夫娜，“玛丽的港”是它的字面意思。它有两个港：西港是国际港，每天有渡轮开往瑞典、爱沙尼亚与芬兰本土，四桅帆船“波美恩号”作为博物馆船停在这里；东港是北欧最大的游艇码头之一。机场在城外，每年约一百五十万人次到访。初来的人最容易犯的错，是把玛丽港当作芬兰本土的一座小城，而它是一个讲瑞典语的自治区的首府，规则与本土并不相同。",
     layout:
       "小城分为西港与东港两片港区，西港以现代游艇码头为主，东港保留传统渔港风貌，市中心街道以瑞典风格建筑为主。",
     gettingAround:
@@ -9297,10 +9299,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，7月歌剧节期间住宿紧张、建议提前预订；蓬卡哈尔尤距市区约30公里，是萨翁林纳周边最经典的一日游目的地。",
   },
   kuopio: {
-    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：库奥皮奥市镇 126,572（2025-12-31），全国第八。
-    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
-    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
-    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   库奥皮奥 126,626（2025 年末，市政府官方新闻稿，2 级）vs 仓库的 126,572（统计局初步数，3 级转引）—— **差 54 人是市自身登记与统计局初步数的口径微差，判定不改**。2026-09-10 复核，维持 2026-09-08 的结论。
     identity:
       "库奥皮奥是芬兰中东部湖区的核心城市，人口约12.7万（2025年末），坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuopio (Finland; regional capital of North Savo, about 126,572 residents, the eighth-most populous municipality, the region about 148,000; nearly surrounded by Lake Kallavesi, Finland's tenth-largest lake at 472.76 km²; Puijo tower and ski jumps with annual World Cup ski jumping; kalakukko, the Savonian fish pastry; the market square and market hall; until 2018 the seat of the primate of the Finnish Orthodox Church; University of Eastern Finland; Kuopio Airport in Siilinjärvi, the fifth busiest in Finland)
@@ -9339,10 +9339,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月适合探索沿海风光，2-3月冬季海冰稳固期可体验独特的破冰船与海冰徒步活动，奥卢也是前往罗瓦涅米的中转门户。",
   },
   rovaniemi: {
-    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：罗瓦涅米市镇 66,191（2025-12-31），在全国市镇人口序列里排第 17。
-    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
-    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
-    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   罗瓦涅米 66,191（2025-12-31，芬兰统计局，3 级转引），与仓库完全一致、是最新一期。2026-09-10 复核，维持既有结论，本轮无需改动。
     identity:
       "罗瓦涅米是芬兰拉普兰省的首府，人口约6.6万（2025年末），坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rovaniemi (Finland; regional capital of Lapland, about 66,191 residents, the 17th largest city, one of the largest municipalities in Europe by area; about 6 km south of the Arctic Circle at the confluence of the Kemijoki and Ounasjoki; about 90 per cent of buildings destroyed by German forces in 1944, rebuilt to Alvar Aalto's plan in the shape of a reindeer's head with the roads as antlers; Santa Claus Village at the Arctic Circle, the slogan trademarked in 2009; midnight sun 7 June–6 July, December under six minutes of sunshine a day; auroras up to 200 nights a year; University of Lapland)
@@ -9360,8 +9358,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12月至次年3月是观测极光与圣诞主题旅游旺季，也是全年游客最多的时段；6-7月可见极昼、适合户外活动，冬季务必备好极地保暖装备。",
   },
   kuusamo: {
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   库萨莫 14,792（2025-12-31，芬兰统计局初步数，3 级转引），与同条目 howItWorks 已引的 1.48 万一致。2026-09-10 核。
     identity:
-      "库萨莫是芬兰东北部的小城，人口约1.5万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
+      "库萨莫是芬兰东北部的小城，2025 年末人口约1.48万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuusamo (Finland; town and municipality in North Ostrobothnia near the eastern border; population 14,800 over 5,809 km², the eleventh largest municipality by area; about 60 km south of the Arctic Circle; Ruka ski resort on the 492 m Rukatunturi; about a million tourists a year, tourism 149 million euros in 2024, 18 per cent of output; Oulanka National Park and the 80 km Karhunkierros trail; snow cover about 200 days a year, late October to mid-May; 166 lakes, forests 90 per cent of the land; Kuusamo Airport 6 km from town, 129,373 passengers in 2024)
     howItWorks:
       "库萨莫是芬兰北博滕区的市镇，人口约 1.48 万，市域约 5,809 平方公里，是全国面积第 11 大的市镇，在北极圈以南约 60 公里；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。人少地大是这里的常态：森林占了九成的土地，境内有 166 个湖，河流分别流向白海与波的尼亚湾。经济几乎押在旅游上——2024 年旅游收入 1.49 亿欧元，占本地产出的约 18%，每年约一百万人次到访，主要去的是城北 25 公里、鲁卡山上的鲁卡滑雪场；奥兰卡国家公园与全长 80 公里的“熊之径”徒步道在东面靠边境处。这里一年约有两百天积雪，从十月底到五月中；空气质量按国际监测常年居前列。机场在镇外 6 公里，2024 年运送约 12.9 万人次，赫尔辛基有直飞。初来的人最容易犯的错，是把鲁卡当作库萨莫的市中心，而它是山上的度假区，镇子在山下另一个地方。",
@@ -9377,8 +9377,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-9月是徒步旺季，12月至次年4月是滑雪旺季；奥兰卡国家公园距库萨莫市区约30公里，建议安排至少一日徒步行程。",
   },
   inari: {
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   伊纳里村：芬兰统计局 `taajama`（聚居区）口径 **632（2022-12-31）**，本轮未找到更新一期（**taajama 不是每年更新**）。原注释引的 en.wikipedia 信息框「581（2014）」已 12 年旧，而正文写成了 550 且无年份。3 级转引统计局表，2026-09-10 核。
+    //   **与同条目 howItWorks 的市镇口径 7,244（2025-12-31）是两个不同的地理单元，不是数字打架** —— 这一点写在这里，免得下一轮有人把它们「统一」掉。
     identity:
-      "伊纳里是芬兰北极圈内拉普兰地区的村落，人口约550人，坐落于伊纳里湖畔，是芬兰萨米原住民文化的核心聚居区。",
+      "伊纳里是芬兰北极圈内拉普兰地区的村落，按芬兰统计局的聚居区口径，2022 年末约630人（本轮未找到更新一期），坐落于伊纳里湖畔，是芬兰萨米原住民文化的核心聚居区。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Inari (Finland; the largest municipality in Finland by area at 17,333.65 km² and among the most sparsely populated, 7,244 residents in December 2025, density 0.48 per km²; four official languages — Finnish (86.4 per cent), Northern Sámi, Inari Sámi and Skolt Sámi; widely called the capital of Sámi culture; the Sámi Parliament of Finland and the Siida museum at Inari village; registered Sámi about 31 per cent of residents; Lake Inari 1,043 km², Finland's third-largest; Ivalo Airport and European route E75; tourism, services and cold-climate testing)
     howItWorks:
       "伊纳里是芬兰面积最大的市镇，约 17,334 平方公里，2025 年底人口 7,244，每平方公里不到半个人，是全国人口最稀的地方之一；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它最特别的地方是语言：这里有四种官方语言——芬兰语，以及北萨米语、伊纳里萨米语与斯科尔特萨米语三种萨米语言，其中伊纳里萨米语只在这一个市镇使用，路牌与公文都要并列。芬兰的萨米议会设在伊纳里村的萨约斯文化中心，旁边是介绍萨米文化与北方自然的西达博物馆，因此这里常被称作芬兰萨米文化的中心，登记的萨米人约占居民的三成。伊纳里湖面积 1,043 平方公里，是芬兰第三大湖；最大的村落与机场都在伊瓦洛，E75 公路穿境通往挪威。初来的人最容易犯的错，是把萨米文化当作展演项目，而它是这里日常使用的语言与生计。",
@@ -9616,9 +9619,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
       "清迈是泰国北部最大城市，2025年市自治市登记人口约11.2万（城市实际连绵范围远超市界，但无官方统计口径），坐落于平河河谷，曾是兰纳王国古都，是泰国北部文化与手工艺中心。",
-    // howItWorks sources: Wikipedia (2026-09): Chiang Mai (thesaban nakhon 40.2 km², ~127,000; urban area ~1 million+; Lanna capital 1296; northern rail terminus; smoke season Feb–Apr); Local government in Thailand (appointed provincial governors)
+    // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   清迈市自治市 **111,809（2568/2025 年末，DOPA 口径）**，与同条目 identity 一致；原 howItWorks 的 127,240 是 **2562/2019** 的旧数。3 级转引 DOPA 整表页，2026-09-10 核。
+    //   https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2
+    //   **这一条的形状与前几批相反**：前几批（爱尔兰、捷克、意大利、德国）都是 identity 停在旧数、howItWorks 是对的；泰国这批连着三条（清迈、呵叻、北碧）都是**identity 已经更新、howItWorks 没有回填** —— 说明上一轮批量更新时只挑了 identity 改。
     howItWorks:
-      "清迈是清迈府的府治，府尹由内政部任命；清迈市本身是一个“城市自治市”，有民选的市长和市议会，但市域只有约 40 平方公里、约 12.7 万人，而城市的实际范围早已蔓延到周边几个县，连绵的城区约 100 万人，分属十几个各有自己自治机构的乡镇。护城河围住的方形老城是 1296 年兰纳王国的都城，至今是城市的坐标原点；宁曼路是老城西面的新商业区，夜市在老城东面的滨河一带，素贴山在西北方俯视全城。超级公路环线是本地人心里的市区边界。没有轨道交通，红色双条车与嘟嘟车承担出行，火车站是泰国铁路的北端终点。北部方言“Kham Mueang”仍是许多本地人的日常语言。地址写“门牌、soi、路、乡镇”。每年二至四月的烧荒季空气污染严重。初来的人最容易犯的错，是把老城当作整个清迈，而市政府管辖的范围只是这片城区的很小一角。",
+      "清迈是清迈府的府治，府尹由内政部任命；清迈市本身是一个“城市自治市”，有民选的市长和市议会，但市域只有约 40 平方公里、2025 年末约 11.2 万人，而城市的实际范围早已蔓延到周边几个县，连绵的城区约 100 万人，分属十几个各有自己自治机构的乡镇。护城河围住的方形老城是 1296 年兰纳王国的都城，至今是城市的坐标原点；宁曼路是老城西面的新商业区，夜市在老城东面的滨河一带，素贴山在西北方俯视全城。超级公路环线是本地人心里的市区边界。没有轨道交通，红色双条车与嘟嘟车承担出行，火车站是泰国铁路的北端终点。北部方言“Kham Mueang”仍是许多本地人的日常语言。地址写“门牌、soi、路、乡镇”。每年二至四月的烧荒季空气污染严重。初来的人最容易犯的错，是把老城当作整个清迈，而市政府管辖的范围只是这片城区的很小一角。",
     layout:
       "古城区呈方形，四面城墙与护城河环绕，寺庙密集分布城内，尼曼路一带是现代咖啡馆与设计店聚集区。",
     gettingAround:
@@ -9631,10 +9637,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人；2-4月部分年份受周边农业焚烧影响空气质量下降，出行前建议查询空气质量指数。",
   },
   phuket: {
-    // identity sources: 普吉府（即全岛）DOPA 登记人口 **429,583 人（2024-12-31）** ——
-    //   泰国国家统计局普吉府统计报告
-    //   https://phuket.nso.go.th/images/documents/Phuket%20Provincial%20Statistical%20Report/2568/1.demography68.pdf
-    //   （1 级，2026-09-08 核）。原 identity 写 42 万，与本条目 howItWorks 的 43 万对不上。
+    // identity sources: 普吉府 429,583（2024-12-31，NSO 报告，级别 1）；普吉镇 71,284（2024，3 级）。**identity 用府口径、howItWorks 用镇口径，两段各自准确、不是数字打架** —— 这一点写在这里免得下一轮被「统一」掉。截至 2026-09-10 未见 2025 年末更新一期（NSO 报告惯例次年发布，值得下一轮回来确认）。2026-09-10 复核，维持 2026-09-09 结论。
     identity:
       "普吉岛是泰国最大的岛屿，2024年登记人口约43万，坐落于安达曼海，是泰国最负盛名的海岛度假目的地。",
     // howItWorks sources: Wikipedia (2026-09): Phuket (city) (thesaban nakhon ~12 km², 71,284 2024; provincial capital; Old Town Sino-Portuguese; airport 36 km; Patong in Kathu district); Local government in Thailand
@@ -9675,8 +9678,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年4月为旱季，海况平稳，适合跳岛游；5-10月雨季部分离岛航线会暂停。",
   },
   pattaya: {
+    // identity sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   芭提雅登记人口约 12 万为 **2019 年（พ.ศ. 2562）** 的内政部数据，本轮未找到可信的更新一期。
+    //   https://en.wikipedia.org/wiki/Pattaya
+    //   ⚠️ **这是本库第三次确认同一个坑**：en.wikipedia 的 Pattaya 信息框把这个 2019 年的数标成「2025 年 1 月」，**脚注引的却是 2019 年的报告** —— 二手来源的年份标注本身可能是错的，凡引二手必须点开脚注看一手。
     identity:
-      "芭提雅是泰国东部湾区一座海滨度假城市，人口约12万（旅游旺季实际流动人口更多），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
+      "芭提雅是泰国东部湾区一座海滨度假城市，2019 年登记人口约12万（旅游旺季实际流动人口更多；本轮未找到可信的更新一期），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
     // howItWorks sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
     //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
     //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
@@ -9849,17 +9856,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
       "呵叻（那空叻差是玛）是泰国东北部依善地区的门户城市，2025年登记人口约11.1万，是探索考艾山国家公园与呵叻高原的重要基地。",
-    // howItWorks sources: **面积排名在权威来源之间互相打架，本轮改为不写名次**：
-    //   ① 3 级来源：呵叻 20,736 km²（第二）、清迈 22,311 km²（第一）—— 上一轮据此改成「第二大」；
-    //   ② **泰国国家统计局 PDF（1 级）**：呵叻 **20,493.964 km²（第一）**、清迈 20,107.057 km²（第二）
-    //      https://nksawan.nso.go.th/images/report/01size_of_area.pdf；
-    //   ③ 泰国国家广播局清迈台（2 级，2023-09-21）：清迈边界纠纷解决后增至 22,436 km²、重夺第一。
-    //   **三组互不一致，1 级来源与此前采信的 3 级来源结论相反。**
-    //   **这条记下来是因为它推翻了上一轮我自己刚做的修正** —— 一次修正不等于一劳永逸；
-    //   **当依据是 3 级来源时，下一轮拿到 1 级来源要准备好推翻自己。**
-    //   北碧条目「泰国第三大府」（19,483 km²）不受影响，仍成立。
+    // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   呵叻市自治市 **110,641（2568/2025 年末）**，与同条目 identity 一致；那空叻差是玛府 **2,613,132（2568/2025 年末）**。3 级转引 DOPA，2026-09-10 核。
+    //   https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2
+    //   **「泰国面积最大的府」这个名次仍然不写** —— 上一轮的教训：3 级来源给的名次被泰国 NSO 的 1 级 PDF 推翻过一次，各来源的面积与名次至今互相矛盾。
     howItWorks:
-      "呵叻是那空叻差是玛府的府治，那空叻差是玛是泰国面积最大的几个府之一（各来源给出的面积与名次互相矛盾，见来源注释），府尹由内政部任命，全府约 260 万人；呵叻市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 47 万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
+      "呵叻是那空叻差是玛府的府治，那空叻差是玛是泰国面积最大的几个府之一（各来源给出的面积与名次互相矛盾，见来源注释），府尹由内政部任命，全府2025年末约261万人；呵叻市是一个“城市自治市”，有民选的市长，2025年末登记人口约11.1万，城区约47万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
     layout:
       "城市保留有他玛叻古城墙与护城河遗迹，是连接曼谷与依善地区的传统交通枢纽。",
     gettingAround:
@@ -9885,13 +9887,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   北碧府 19,483 km²「泰国面积第三大」经核成立。
     identity:
       "北碧在曼谷以西约120公里，在桂诺河与桂艾河汇成湄功河（Mae Klong，与湄公河 Mekong 是两条完全不同的河）的地方，市镇2024年登记人口约2.5万。二战期间日军用盟军战俘和亚洲劳工修建泰缅铁路（“死亡铁路”），约半数劳工死于疾病、虐待和事故，桂河大桥、北碧战争公墓、泰缅铁路中心和地狱火通道是这段历史的纪念地。北碧府境内还有七层的爱侣湾瀑布、赛育瀑布和缅甸边境的桑卡武里孟族木桥，是曼谷周边最受欢迎的一日和两日游目的地之一。",
-    // howItWorks sources: 北碧镇 DOPA 登记 **25,651 人（2017，年份偏旧，本轮未找到更新数）**；
-    //   北碧府 **19,482 km²，泰国面积第三大府**（清迈 22,311 > 那空叻差是玛 20,736 > 北碧 19,482）
-    //   ——3 级，2026-09-08 核。
-    //   **这条排序正是发现呵叻条目「泰国面积最大的府」有误的线索** ——
-    //   同一个仓库里两处排名互相矛盾，本身就是可以自查的信号。
+    // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   北碧镇 **24,624（2024-12-31，DOPA）**，与同条目 identity 一致；原 howItWorks 的 25,651 是 **2017 年**旧数。2026-09-10 复核。
+    //   **这是泰国这批「identity 已更新、howItWorks 没回填」的第三例**（清迈、呵叻、北碧）—— 见 known-errors 里对这个方向的记录。
     howItWorks:
-      "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，人口约 2.6 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
+      "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，2024 年末人口约 2.5 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
     layout:
       "市镇在桂艾河东岸，河边一带是酒店、水上屋和餐馆，桂河大桥在市镇北面约3公里的河上，战争公墓和泰缅铁路中心在火车站旁，JEATH 战争博物馆在河边。死亡铁路从桂河大桥向西北沿桂诺河到南多（Nam Tok），沿途有塔告山岩栈道；地狱火通道在西北约80公里。爱侣湾国家公园在北面约65公里，赛育在西北约100公里，桑卡武里在西北约220公里。",
     gettingAround:
@@ -9990,8 +9990,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–4月最好，斯米兰只在此期间开放；12–2月最挤。住三到五晚，配一次斯米兰。雨季酒店便宜但海况差、部分关闭。",
   },
   "ko-lanta": {
+    // identity sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   兰塔岛：10,830（2012）是可查到的最后一个全岛口径数；**乡镇级数据显示兰达耶乡镇 2022 年末已降到 6,942**（沙拉丹镇 1983 年已分出、是另一个乡镇），提示全岛口径大概率也在下降。**本轮没有找到能可靠合并两个乡镇的全岛最新数，因此只补年份 + 写明可能已下降，不换一个没核到的数。** 3 级，2026-09-10 核。
     identity:
-      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，人口约1.1万。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
+      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，2012 年人口约1.1万（本轮未找到可信的更新一期，乡镇级 2022 年的数据显示可能已下降）。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
     // howItWorks sources: 兰达耶岛（主岛）**10,830 人（2012）**；兰达县（含大小兰达岛）30,500 人（2012）
     //   或 26,805（2010 年 NSO 普查）——3 级，2026-09-08 核。
     //   **howItWorks 原写的「约 2 万」三个数都对不上**：注释称它转引自英文维基关于苏梅岛的

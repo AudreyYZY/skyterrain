@@ -3657,8 +3657,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "kaikoura-ranges": {
     seeing:
       "The Kaikōura Ranges, in the north-east of the South Island, are two parallel greywacke ranges that rise very steeply a short distance inland from the Pacific. Tapuae-o-Uenuku, in the Inland Kaikōura Range, is 2,885 m — the highest mountain in New Zealand outside the main Southern Alps. The town of Kaikōura and its small peninsula are known for sperm whales that can be seen year-round because deep water lies close to shore.",
+    // formation sources: 2016-11-14 凯库拉地震（M7.8）：GeoNet / GNS Science 官方报告的最大抬升实测值为**韦帕帕湾约 5.5 米**，官方原话强调**该数不代表整段海岸**（哈夫穆恩湾附近仅 2.1–2.4 米）。级别 1，2026-09-10 核。
+    //   https://www.geonet.org.nz/news/3kTum4hHVCEI2YwMoUWmEm
+    //   **这是「一个真数字用在了比它大得多的对象上」的又一形状** —— 只是这次连数字本身也偏大了。「一次撕裂了十几条断层」与 GNS 主导的《Science》论文「至少 12 条」一致，不改。
+    //   **Kaikōura 现行官方拼写带长音符，正文中英两侧都已一致使用。** 塔普埃奥韦努库峰 2885 米、地名释义「吃小龙虾的地方」、19 世纪捕鲸站转生态旅游：均核实无误。
     formation:
-      "The Kaikōura Ranges sit on a belt of active faults where the Pacific and Australian plates meet, and are being uplifted and offset continuously. The November 2016 Kaikōura earthquake (magnitude 7.8) ruptured more than a dozen faults at once and lifted parts of the coast by up to about 6 m, raising broad areas of former seabed permanently above the water.",
+      "The Kaikōura Ranges sit on a belt of active faults where the Pacific and Australian plates meet, and are being uplifted and offset continuously. The November 2016 Kaikōura earthquake (magnitude 7.8) ruptured more than a dozen faults at once and lifted parts of the coast — a localised maximum of about 5.5 m at Waipapa Bay, with most of the coastline rising far less — raising broad areas of former seabed permanently above the water.",
     observation:
       "From the air the Kaikōura Ranges are a steep wall hard against the coastline: wide inland valleys on the west, and on the east the mountains drop almost straight into the Pacific, with snow on the tops in winter and green pasture, road and rail squeezed onto a narrow coastal terrace below. Offshore the sea colour deepens quickly over the Kaikōura Canyon.",
     distinguish:
@@ -3670,6 +3674,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "the-remarkables": {
+    // seeing sources: Double Cone 2319 米（ClimbNZ 引 LINZ Topo50，3 级）—— **英文维基自身正文与信息框互相矛盾，未采用**。「Kawarau」是传统称呼、**未见 NZGB 正式并名的公报证据**，正文用「（毛利语 X）」框架、没有声称官方并名，处理正确。2026-09-10 核，本轮无需改动。
     seeing:
       "The Remarkables (Māori: Kawarau) rise on the eastern shore of Lake Wakatipu, south-east of Queenstown, as a fault-block range that climbs almost sheer from the lake. The highest point, Double Cone, is 2,319 m. Their sharp saw-toothed skyline above Queenstown is one of the most photographed mountain views in New Zealand, and there is a ski field on the range.",
     formation:
@@ -3685,6 +3690,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tararua-range": {
+    // seeing sources: 米特雷峰 1571 米；马纳瓦图峡谷为经典先成河案例，**因果方向与正文一致**；塔拉鲁瓦为纯挤压褶皱山脉、不含火山。2026-09-10 核，本轮无需改动。
     seeing:
       "The Tararua Range is part of the North Island's axial mountain chain, north of Wellington, dividing the Kāpiti Coast on the west from the Wairarapa on the east. The mountains are not very high — Mitre, the highest, is 1,571 m — but because they face straight into the wind funnel of Cook Strait and the weather changes fast, they have long been a proving ground for New Zealand tramping and mountain training.",
     formation:
@@ -3853,6 +3859,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-wanaka": {
+    // seeing sources: 第四大湖；瓦纳卡湖面 300 米 vs 哈威亚湖面 348 米，**水位差约 48 米**，正文的「几十米」成立（3 级）。**英文侧长音符 Wānaka 与注册表 nameEn 一致 —— 本轮专门核过。** 「Clutha River / Mata-Au」这个并名沿用上一批已核实的法定写法。2026-09-10 核，本轮无需改动。
     seeing:
       "Lake Wānaka, in Central Otago in the South Island, is a glacier-carved ribbon lake — the fourth-largest lake in New Zealand — with the resort town of Wānaka on its shore, second only to Queenstown as a holiday base. Its water drains south via the Clutha River / Mata-Au. It is separated from Lake Hāwea to the east by a very narrow isthmus (locally \"the Neck\"), yet the two lake surfaces differ by tens of metres in height.",
     formation:
@@ -3868,8 +3875,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "canterbury-plains": {
+    // seeing sources: 尺寸：长约 180 公里（新西兰官方百科 Te Ara，级别 1，仅确认长度）、最宽处约 70 公里（多方 3 级收敛）。原文的「宽约 50 公里」比实际窄约 30–40%、且查不到权威支撑。2026-09-10 核。
+    //   https://teara.govt.nz/en/canterbury-region/page-3
+    //   ⚠️ **Te Ara 没有给出精确宽度值**，70 公里来自 3 级来源的收敛，下一轮若能拿到更高级别来源应回来复核。
+    //   **「冲积扇群叠合而成」这个成因本轮专门核过：正文写对了** —— 是拉凯亚 / 怀马卡里里 / 朗伊塔塔等河的冲积扇并合，不是普通的曲流冲积平原（学术文献，级别 1）。2010–2011 年地震序列的液化与河口软土地基的关联也核实无误。
     seeing:
-      "The Canterbury Plains, on the east coast of the South Island, are the largest continuous area of flat land in New Zealand, running from the foothills of the Southern Alps to the Pacific, about 50 km wide. They are an important farming region and the site of Christchurch, one of the country's largest cities. Several braided rivers rising in the mountains cut straight across the plains to the sea.",
+      "The Canterbury Plains, on the east coast of the South Island, are the largest continuous area of flat land in New Zealand, running from the foothills of the Southern Alps to the Pacific, about 180 km long and up to about 70 km wide. They are an important farming region and the site of Christchurch, one of the country's largest cities. Several braided rivers rising in the mountains cut straight across the plains to the sea.",
     formation:
       "The Canterbury Plains are built of gravel carried down by several rivers from the Southern Alps (the Rakaia, Waimakariri, Rangitata and others): each river spreads a huge alluvial fan at its mountain mouth, and the neighbouring fans coalesce into one broad gravel plain sloping gently to the sea. The ice ages produced especially large amounts of glacially ground debris, the main source of the plains' gravel.",
     observation:
@@ -3883,6 +3894,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mackenzie-basin": {
+    // seeing sources: 海拔：麦肯齐地区议会官方海拔清单 —— 普卡基湖区/特威泽尔约 470–532 米、特卡波湖面约 700–710 米，盆地跨度接近 450–720 米。级别 2（地方政府官方文件），2026-09-10 核。
+    //   https://www.mackenzie.govt.nz/__data/assets/pdf_file/0010/742078/Elevations-of-the-Mackenzie-District-1.pdf
+    //   **这是「中英两侧各写各的」在数字上的又一例**：英文写 500–700 米（贴近实况），中文写「约五六百米」（低估上限）—— 两侧各自都通顺，只有并排看才发现不一致。已把中文改成与英文一致。
+    //   **「Te Manahuna」是常用毛利语名，正文只作「（毛利语 X）」平行标注、未声称官方并名 —— 本轮核实：NZGB 没有正式并名的公报证据，正文的处理是对的。** 2012 年 6 月获国际暗夜协会认定、James Mackenzie 1855-03-04 在此被抓获（「1850 年代」这个更宽表述成立）：均核实无误。
     seeing:
       "The Mackenzie Basin (Māori: Te Manahuna), on the eastern side of the Southern Alps, is a high basin ringed by mountains, at about 500–700 m elevation. It lies in the rain shadow of the mountains — dry and open, its floor covered in tawny tussock grassland dotted with the milky-blue glacial lakes Tekapo, Pukaki and Ōhau. Its night sky is very dark: it is the Aoraki Mackenzie International Dark Sky Reserve.",
     formation:
@@ -3904,8 +3919,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Central Otago's bedrock is schist. Under crustal compression the schist broke along a series of parallel faults; some blocks were lifted into long, narrow ranges (the Dunstan, Pisa, Old Man and others), and the blocks between them dropped relatively into basins (the Manuherikia, Maniototo and others) — a range, then a basin, then a range: this alternating structure is called basin-and-range. The range tops still carry remnants of an ancient, gently rolling plateau surface.",
     observation:
       "From the air Central Otago is a set of long parallel ridges and wide valleys running north-east to south-west, the ranges pale-brown dry grass slopes often topped by bare schist tors, the valleys green with irrigated orchards and vineyards and a few winding rivers. The Clutha River and its tributaries string together several reservoirs.",
+    // distinguish sources: 成因对比：美国盆岭省是**伸展构造**（地壳拉张、正断层塌陷，Geosphere/GSA，级别 1）；中奥塔哥是**挤压构造**（沿逆断层抬升，NZ Journal of Geology and Geophysics，级别 1）。2026-09-10 核。
+    //   https://pubs.geoscienceworld.org/gsa/geosphere/article/20/5/1247/646605
+    //   https://www.tandfonline.com/doi/abs/10.1080/00288306.2023.2176892
+    //   **C7 的又一例，而且是「把外形相似当成机制相同」这一种** —— 更糟的是**同一条目的 `formation` 段自己就写着「地壳受挤压」**，两段互相打架而没人发现。这与奥克兰火山场那条（formation 给的判据被 observation 举的例子推翻）是同一形状：**条目内部的自相矛盾，逐段读不出来，要把六段并排读。**
     distinguish:
-      "Central Otago's basin-and-range is the same kind of structure as the Basin and Range province of the western United States, only on a smaller scale and in schist. Compared with the Mackenzie Basin, Central Otago is more of a \"mature fault-block landscape\" with a whole series of ranges and basins; the Mackenzie is a single large basin deeply reworked by glaciers.",
+      "Central Otago's basin-and-range looks like the Basin and Range province of the western United States — alternating ranges and basins — but the mechanism is the opposite: the American province formed by crustal extension along normal faults, while Central Otago was pushed up by compression along reverse faults, at a much smaller scale and in schist. Compared with the Mackenzie Basin, Central Otago is more of a \"mature fault-block landscape\" with a whole series of ranges and basins; the Mackenzie is a single large basin deeply reworked by glaciers.",
     concept:
       "Central Otago is a case study in basin-and-range: when the crust is stretched or compressed it breaks into parallel blocks along faults, one rising into a range and the next dropping into a basin, giving alternating ranges and basins. To recognise this landscape, look at whether the ridges and basins are long, parallel and aligned in the same direction. A common misconception is to read these parallel valleys as river-cut — they are mainly fault-controlled.",
     history:
@@ -3948,6 +3967,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "clutha-river": {
+    // seeing sources: 克卢萨 338 公里（全国第二长）、平均流量 614 立方米每秒（全国最大），新西兰官方百科 Te Ara（级别 1）。**「水量最大」与「长度第二」两个排名各自带了口径，正文写对了。** 上游三个大冰蚀湖的削峰填谷调节作用为标准水文学表述、因果方向正确。2026-09-10 核，本轮无需改动。
+    //   https://teara.govt.nz/en/otago-places/page-12
     seeing:
       "The Clutha River (Māori: Mata-Au) has the greatest flow of any river in New Zealand and is the second longest (about 338 km). It flows out of Lake Wānaka, runs south through the dry schist gorges and several large reservoirs of Central Otago, and finally splits into two branches with a small delta to reach the Pacific near Balclutha in the south-east of the South Island.",
     formation:
@@ -3963,6 +3984,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "bay-of-islands": {
+    // seeing sources: 144 座岛（新西兰旅游局官网，2 级；另有约 150 的计数口径）。《怀唐伊条约》1840-02-06 在此首次签署（新西兰政府官方历史网站，级别 1）。
+    //   https://nzhistory.govt.nz/politics/treaty/location/waitangi/6-february-1840
+    //   **零争议红线本轮逐句复核：通过** —— 正文只写「1840 年 2 月在此签署」这一史实本身，不评价条约内容、不涉及后续索赔与争议。「这份文件至今是新西兰宪制关系的基础」是客观陈述、无评价色彩，保留。
+    //   **毛利语名的处理也正确**：Bay of Islands 常见的毛利语名有 Te Pēwhairangi / Ipipiri / Tokerau 三个并用，**未见 NZGB 把其中之一定为唯一官方并名**，正文没有做这个断言。
     seeing:
       "The Bay of Islands, in the north of the North Island, is a subtropical coast with about 140-odd small islands scattered through the bay. The climate is warm and the water clear, and this was one of the earliest areas of European settlement in New Zealand; the Treaty of Waitangi was signed here in 1840. Today it is known for sailing, dolphins and the historic towns of Paihia and Russell.",
     formation:
@@ -3978,6 +4003,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "abel-tasman-coast": {
+    // seeing sources: 阿贝尔塔斯曼国家公园 1942 年设立、22,530 公顷、新西兰面积最小的国家公园（3 级，与 DOC 资料一致）。花岗岩差异风化机制正确。**1642 年金湾冲突：正文只写冲突本身、未作评价，红线通过。** 2026-09-10 核，本轮无需改动。
     seeing:
       "The Abel Tasman Coast, at the top of the South Island, is the smallest national park in New Zealand. Its characteristic scene is weathered golden granite headlands, curving soft golden beaches, tidal estuary flats that look completely different at high and low water, and evergreen native forest behind. The coast track and sea kayaking are its signature.",
     formation:
@@ -3993,6 +4019,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "coromandel-peninsula": {
+    // seeing sources: 科罗曼德火山带中新世至上新世（约 18–1.95 Ma），Coromandel Group（18–3.8 Ma，安山岩/英安岩）+ Whitianga Group（11–1.5 Ma，流纹岩）叠置（学术文献，级别 1）。1820 年 HMS Coromandel 号采购贝壳杉桅材。**与 banks-peninsula 条目的对比表述互相吻合 —— 本轮专门对照过两条目。** 2026-09-10 核，本轮无需改动。
     seeing:
       "The Coromandel Peninsula extends north from the north-east of the North Island as a narrow, rugged, mountainous peninsula. Down its centre runs a forest-covered volcanic-rock ridge, and both coasts are intricate, with rocky bays, arches and hot-water beaches. It is close to Auckland and a popular holiday and tramping area.",
     formation:
@@ -4037,8 +4064,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Although \"Sound\" is in the English name, the Marlborough Sounds differ in origin from the glacial fiords of Fiordland: they are drowned river valleys, V-shaped in cross-section and branching like a tree; glacial fiords are U-shaped, deep and straight, with a sill at the mouth. They are of the same kind as the North Island's Bay of Islands, only with higher hills and longer, deeper waterways.",
     concept:
       "The Marlborough Sounds are a case study in a drowned dendritic drainage: a system of tributaries feeding into a main stem, once flooded by the sea, becomes a system of side-arms feeding into a main waterway — the plan shape is still that \"tree\". A common misconception is to see a \"Sound\" and assume it was carved by a glacier.",
+    // history sources: Te Tau Ihu 全称 **Te Tau Ihu o Te Waka a Māui**，官方与地方机构一致释义为「毛伊独木舟的船头」（南岛在毛利传统里被视为一艘独木舟）。级别 2（区域发展政府机构），2026-09-10 核。
+    //   https://www.growregions.govt.nz/regions/in-your-region/top-south-te-tau-ihu
+    //   **层级处理本轮专门核过：正文是对的** —— Te Tau Ihu 指的是尼尔森 / 马尔堡 / 塔斯曼整个「南岛之北」，正文用「马尔堡峡湾**一带**」把它框成区域而不是峡湾的官方名，没有把两层压成一层。峡湾内部分水道另有各自的 NZGB 并名（Queen Charlotte Sound/Tōtaranui、Ship Cove/Meretoto），与「Marlborough Sounds」整体无关，不要混为一层。
+    //   **下沉机制本轮专门核过：正文写对了** —— 学术文献确认下沉速率与倾斜方向确实向北北东增大，与冰后期海侵叠加，**是被淹没的河谷（ria）不是冰蚀峡湾**（Nicol et al. 2011，级别 1）。
+    //   https://rsnz.onlinelibrary.wiley.com/doi/10.1080/00288306.2010.523079
     history:
-      "The area (Māori: Te Tau Ihu, \"the prow of the island\") is the traditional territory of several Māori iwi, and the waterways were important canoe routes. In 1770 Cook anchored repeatedly at Ship Cove in Queen Charlotte Sound to repair and resupply his ship. From the 19th century there was scattered logging, whaling and farming; today large areas of water are green-lipped mussel and salmon farms.",
+      "The area (Māori: Te Tau Ihu, \"the prow of Māui's canoe\") is the traditional territory of several Māori iwi, and the waterways were important canoe routes. In 1770 Cook anchored repeatedly at Ship Cove in Queen Charlotte Sound to repair and resupply his ship. From the 19th century there was scattered logging, whaling and farming; today large areas of water are green-lipped mussel and salmon farms.",
   },
 
   "whakaari-white-island": {
@@ -4060,6 +4092,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "stewart-island": {
+    // seeing sources: 新西兰第三大岛；拉基乌拉国家公园约 1400 平方公里、占全岛约 85%；2023 年人口约 450。**「Stewart Island/Rakiura」是法定并名**（恩加伊塔胡法 Schedule 96），正文与注册表一致。**零争议红线复核：羊鸟习俗采集权只写「这项传统至今保留」这一客观事实，通过。** 2026-09-10 核，本轮无需改动。
     seeing:
       "Stewart Island (Māori: Rakiura, \"glowing skies\", for the aurora australis often seen here) lies off the southern end of the South Island across Foveaux Strait, and is the third-largest island in New Zealand. About 85% of it is Rakiura National Park, and its population of only a few hundred is concentrated in the small town of Oban at Halfmoon Bay. It is cool and wet, densely forested, and one of the easiest places to see kiwi in the wild.",
     formation:
@@ -4111,6 +4144,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "banks-peninsula": {
+    // seeing sources: 火山年代：**GNS Science 官方地质图**（Forsyth et al. 2008《Geology of the Christchurch area》1:250,000）—— 利特尔顿 11–9.7 Ma、阿卡罗阿 9–8 Ma，合并区间与正文的「1100 万到 800 万年前」**精确吻合**（级别 1，经转引）。
+    //   https://en.wikipedia.org/wiki/Banks_Peninsula_Volcano
+    //   **本批点名的高风险项，结果是正文写对了**：班克斯半岛被写成两座**侵蚀火山**的残体、港湾是淹没的火山中心，**不是「隆起的陆块」**；「陆连岛」成因（先有岛、后被坎特伯雷平原的砾石接上大陆）方向也正确。2026-09-10 核，本轮无需改动。
     seeing:
       "Banks Peninsula, on the east coast of the South Island next to Christchurch, is a hilly block jutting out into the sea, with two large deep harbours in its middle — Lyttelton Harbour and Akaroa Harbour. It was originally an island, later joined to the mainland by the gravels of the Canterbury Plains on its western side. The peninsula is pasture, remnant native forest and an intricate volcanic coast.",
     formation:
