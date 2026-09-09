@@ -11513,7 +11513,7 @@ const GEUM_RIVER: TerrainEntry = {
 };
 
 const HOERYONGPO_ANDONG_MEANDER: TerrainEntry = {
-  id: "hoeryongpo-andong-meander",
+  id: "hahoe-andong-meander",
   nameZh: "安东河回村曲流",
   nameEn: "Hahoe (Andong) Incised Meander",
   category: "valley",
