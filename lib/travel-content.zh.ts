@@ -3156,7 +3156,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   「佛州第四大城市」在最新数据下仍成立（杰克逊维尔＞迈阿密＞坦帕＞奥兰多）。
     identity:
       "奥兰多在佛罗里达州中部，市本身人口约33.4万、都会区约296万（2025年估计），是世界上最大的主题公园集中地：1971年开园的华特迪士尼世界在城西南约34公里的贝湖和布埃纳维斯塔湖一带（不在市界内），1990年开园的奥兰多环球影城在市区西南（是唯一在市界内的主题公园），另有海洋世界等。城东约80公里的卡纳维拉尔角有肯尼迪航天中心。奥兰多国际机场是美国最繁忙的机场之一，市中心本身以伊奥拉湖和周边的湖泊、橡树街区为特色。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Orlando (Florida; county seat of Orange County; ~119 sq mi; 307,573 in 2020, fourth-most populous in Florida, metro ~2.7 million; fourth-most visited US destination, more theme parks than anywhere in the world; Walt Disney World opened 1971 and lies in Bay Lake and Lake Buena Vista, not the city; Universal Orlando in the city area; International Drive; Orange County Convention Center second-largest in the US; MCO seventh-busiest US airport; University of Central Florida ~69,320 students)
+    // howItWorks sources: 美国人口普查局 Population Estimates Vintage 2025（基准 2025-07-01，county/metro 档 2026-03-26 发布，OMB Bulletin 23-01 定界）：Orlando-Kissimmee-Sanford, FL MSA = 2,957,672；奥兰多市 333,888。子代理下载官方 CSV 全表核对，级别 1，2026-09-09 核。
+    //   https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv
+    //   下一期 Vintage 2026 预计 2027-03 发布。
+    //   （此段其余结构性内容仍来自 en.wikipedia 2026-09：Orange County 县治、约 119 sq mi、佛州第四大城、MCO、Walt Disney World 位于 Bay Lake / Lake Buena Vista 而非市内。）
     howItWorks:
       "奥兰多是佛罗里达州奥兰治县的县治，市域约 310 平方公里，2025 年估计人口约 33.4 万，是佛州第四大城市，都会区约 296 万人；市议会管地方服务，县与州分管其余，学校由县学区办。它是全美第四大旅游目的地，主题公园的数量居世界之首，但最有名的那一座不在市界之内：1971 年开业的华特迪士尼世界在西南约 30 公里的贝湖与布埃纳文图拉湖两个自治市镇里，那片土地长期由一个特别管理区自治；环球影城则在市区范围内，国际大道是酒店与餐厅的走廊，奥兰治县会展中心是全美第二大。中佛罗里达大学有约六万九千名学生，是全美最大的公立大学之一；奥兰多国际机场是全美第七繁忙的。城市在内陆，四周是湖，没有海滩。初来的人最容易犯的错，是以为迪士尼在奥兰多市里，而它在两个另设的市镇里，市政府管不到那片地。",
     layout:
@@ -3171,11 +3174,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "1–2月和9月人最少、价格低；3月春假、6–8月和圣诞假期最挤最热。每座大公园至少一天，迪士尼四园通常三到四天。夏季午后雷雨，行程留弹性。与迈阿密、坦帕连成佛罗里达线路。",
   },
   atlanta: {
+    // identity sources: 美国人口普查局 Population Estimates Vintage 2025（基准 2025-07-01，2026-03-26 发布，OMB Bulletin 23-01 定界）：Atlanta-Sandy Springs-Roswell, GA MSA（CBSA 12060）= 6,482,182；CSA「Atlanta–Athens-Clarke County–Sandy Springs, GA-AL」= 7,426,769。市本身 498,715 系 2020 年普查。级别 1，2026-09-09 核。
+    //   https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv
+    //   https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/csa-est2025-alldata.csv
+    //   MSA 与 CSA 都是美国的官方口径（这也是 check:claims 的 C6k 表里刻意**不**收美国的原因）；下一期 Vintage 2026 预计 2027-03 发布。
     identity:
-      "亚特兰大是佐治亚州首府、美国东南部的中心城市，1847年因铁路交汇而建市，人口约49.9万（2020年普查），都会区超过600万。它是马丁·路德·金的出生地，民权运动的重要城市；可口可乐、CNN、达美航空的总部在这里，1996年举办夏季奥运会。哈茨菲尔德—杰克逊机场自1998年起（除2020年外）一直是世界客运量最大的机场。城市绿树成荫，绰号“森林中的城市”。",
-    // howItWorks sources: Wikipedia (2026-09): Atlanta (15-member council; ~350 km²; 2020 census 498,715; metro 6.4 million; I-285 Perimeter; MARTA limited counties; 242 neighbourhoods)
+      "亚特兰大是佐治亚州首府、美国东南部的中心城市，1847年因铁路交汇而建市，人口约49.9万（2020年普查），都会统计区（MSA）约 648 万人（2025 年估计）。它是马丁·路德·金的出生地，民权运动的重要城市；可口可乐、CNN、达美航空的总部在这里，1996年举办夏季奥运会。哈茨菲尔德—杰克逊机场自1998年起（除2020年外）一直是世界客运量最大的机场。城市绿树成荫，绰号“森林中的城市”。",
+    // howItWorks sources: 人口数同 identity 注释（Census Vintage 2025，MSA 6,482,182 / CSA 7,426,769，2026-09-09 核，级别 1）。
+    //   https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv
+    //   （15 人市议会、约 350 平方公里、I-285「环线」、MARTA 只覆盖部分县、242 个社区等结构性内容仍来自 Wikipedia 2026-09。）
     howItWorks:
-      "亚特兰大市由一位市长和 15 人的市议会治理，面积约 350 平方公里，2020 年普查人口约 50 万；而人们口中的亚特兰大是一个约 640 万人的都会区，散布在富尔顿、迪卡尔布、科布、格威内特等许多县和几十座独立城市里，桑迪斯普林斯、玛丽埃塔都不属于亚特兰大市。285 号州际公路围出的“环线”是本地人最重要的分界，“环内”“环外”是身份的一部分；地铁 MARTA 只覆盖部分县，环外的生活几乎全靠汽车。城市沿桃树街排开三个高楼中心：市中心、中城和北面 13 公里的巴克黑德，官方划定的街区有 242 个。初来的人最容易犯的错，是以为亚特兰大市就是亚特兰大，而都会区里十二个人中只有一个住在市界之内。",
+      "亚特兰大市由一位市长和 15 人的市议会治理，面积约 350 平方公里，2020 年普查人口约 50 万；而人们口中的亚特兰大是一个约 648 万人的都会统计区（MSA，2025 年估计；若把雅典-克拉克县等相邻区域一并计入，更大一档的组合统计区 CSA 约 743 万人），散布在富尔顿、迪卡尔布、科布、格威内特等许多县和几十座独立城市里，桑迪斯普林斯、玛丽埃塔都不属于亚特兰大市。285 号州际公路围出的“环线”是本地人最重要的分界，“环内”“环外”是身份的一部分；地铁 MARTA 只覆盖部分县，环外的生活几乎全靠汽车。城市沿桃树街排开三个高楼中心：市中心、中城和北面 13 公里的巴克黑德，官方划定的街区有 242 个。初来的人最容易犯的错，是以为亚特兰大市就是亚特兰大，而都会区里十二个人中只有一个住在市界之内。",
     layout:
       "市中心（Downtown）在铁路交汇处的高地上，百年奥林匹克公园周围集中了佐治亚水族馆、可口可乐世界、民权与人权中心；马丁·路德·金国家历史公园在市中心东面的甜奥本区。中城（Midtown）在北面，有皮德蒙特公园、高等艺术博物馆和植物园；巴克海特在更北面，是高档商业区。BeltLine 环线步道沿旧铁路环绕市区。石山公园在城东约25公里。机场在市中心南约16公里。",
     gettingAround:
@@ -3450,8 +3459,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   "st-johns": {
+    // identity sources: 加拿大统计局表 17-10-0148-01（Subprovincial areas 年度系列，基准 2025-07-01，随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布）：St. John's CMA = 243,478。级别 1，2026-09-09 复核，与本条目 howItWorks 已有的数一致。
+    //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710014801
+    //   下一期预计 2027-01 发布。CMA（普查大都市区）与 CSD（市本身）是两档，不要混用。
     identity:
-      "圣约翰斯是纽芬兰-拉布拉多省的省会，位于纽芬兰岛最东端，都会区约 20 多万人，是北美大陆最靠东的城市，也是欧洲人在北美最早建立的定居点之一。相传其名来自施洗者圣约翰的节日（1497 年 6 月 24 日，传统上认为约翰·卡伯特在这一天抵达此地）。",
+      "圣约翰斯是纽芬兰-拉布拉多省的省会，位于纽芬兰岛最东端，都会区约 24.3 万人（2025 年 7 月估计），是北美大陆最靠东的城市，也是欧洲人在北美最早建立的定居点之一。相传其名来自施洗者圣约翰的节日（1497 年 6 月 24 日，传统上认为约翰·卡伯特在这一天抵达此地）。",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
@@ -4974,11 +4986,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   paris: {
+    // identity sources: INSEE 参照人口（populations de référence）现行生效版参照 2023 年、2026-01-01 起生效；下一版参照 2025 年（2024 是空档年，无普查滚动样本参照）。各档 2023 年数：commune de Paris 2,103,778 / unité urbaine 11,013,774 / aire d'attraction des villes（2020 版划定）13,320,752 / région Île-de-France 12,463,067 / Métropole du Grand Paris（2016 年设立的行政建制，131 市镇，**不是统计口径**）7,142,540。级别 1，2026-09-09 核。
+    //   https://www.insee.fr/fr/statistiques/2011101?geo=COM-75056
+    //   https://www.insee.fr/fr/statistiques/2011101?geo=AAV2020-001
+    //   https://www.insee.fr/fr/statistiques/8684539
+    //   本条目约定：正文说「都会区 / metropolitan area」一律指 aire d'attraction；行政大区一律用「法兰西岛大区」专名，不套用「都会区」。已停用的 aire urbaine 不再引用（仓库在尼斯条目上踩过一次）。
     identity:
-      "巴黎是法国首都，市区人口约 210 万、都会区约 1300 万，位于法国北部塞纳河中游的一处河湾里。两千多年来它一直是这一带的政治文化中心，19 世纪奥斯曼男爵的大改造塑造了今天看到的宽林荫大道和石造联排建筑，是世界上博物馆和艺术收藏最密集的城市之一。",
-    // howItWorks sources: Wikipedia (2026-09): Paris (commune + department since 2019; 20 arrondissements, Paris Centre 2020; 105 km²; ~2.05 million; Île-de-France ~12 million; Métropole du Grand Paris 131 communes 2016; Grand Paris Express); Communes of France
+      "巴黎是法国首都，巴黎市（commune）2023 年参照人口约 210 万，按 INSEE「城市吸引区」口径的都会区约 1332 万人（2023 年），位于法国北部塞纳河中游的一处河湾里。两千多年来它一直是这一带的政治文化中心，19 世纪奥斯曼男爵的大改造塑造了今天看到的宽林荫大道和石造联排建筑，是世界上博物馆和艺术收藏最密集的城市之一。",
+    // howItWorks sources: 人口各档同 identity 注释（INSEE 2023 参照人口，2026-09-09 核，级别 1）。
+    //   https://www.insee.fr/fr/statistiques/2011101?geo=COM-75056
+    //   https://www.insee.fr/fr/statistiques/8684539
+    //   https://www.insee.fr/fr/statistiques/2011101?geo=EPCI-200054781
+    //   （市与省合一 2019、20 个区与 2020 年起的「巴黎中心区」、Navigo、大巴黎快线等结构性内容来自 Wikipedia 2026-09。）
     howItWorks:
-      "人们口中的巴黎，在行政上只是环城公路以内约 105 平方公里的一座城，2019 年起市与省合一，由市长和巴黎议会治理；市下分 20 个区（arrondissement），从中心顺时针螺旋排开，各有自己的区长和区议会，2020 年起一至四区合并为“巴黎中心区”。市区 2026 年人口约 205 万，而法兰西岛大区约 1,200 万人，2016 年设立的大巴黎都会区由 131 个市镇组成，拉德芳斯商务区、各个机场与大多数人的家都在市界之外。塞纳河把城市分成左岸与右岸。地址写“街道、门牌、邮编”，邮编 750 之后的两位数就是区号，本地人以区号说位置。地铁与区域快线用一张 Navigo 卡贯通，2030 年前后建成的大巴黎快线正把郊区之间连起来。初来的人最容易犯的错，是把 20 个区当作整个巴黎，而它是一片 1,200 万人都会区的核心。",
+      "人们口中的巴黎，在行政上只是环城公路以内约 105 平方公里的一座城，2019 年起市与省合一，由市长和巴黎议会治理；市下分 20 个区（arrondissement），从中心顺时针螺旋排开，各有自己的区长和区议会，2020 年起一至四区合并为“巴黎中心区”。巴黎市 2023 年参照人口约 210 万，而法兰西岛大区约 1246 万人（2023 年）——它是一个行政大区，与统计意义上的都会区不是一回事；按 INSEE 城市吸引区口径，巴黎的都会区约 1332 万人（2023 年）；2016 年设立的大巴黎都会区则是一个行政建制而非统计口径，由 131 个市镇、约 714 万人（2023 年）组成，拉德芳斯商务区、各个机场与大多数人的家都在市界之外。塞纳河把城市分成左岸与右岸。地址写“街道、门牌、邮编”，邮编 750 之后的两位数就是区号，本地人以区号说位置。地铁与区域快线用一张 Navigo 卡贯通，2030 年前后建成的大巴黎快线正把郊区之间连起来。初来的人最容易犯的错，是把 20 个区当作整个巴黎，而它只是这片约 1332 万人都会区的核心。",
     layout:
       "巴黎以塞纳河为轴，分左岸（南岸，传统上学术和艺术气息更浓，拉丁区、蒙帕纳斯）和右岸（北岸，商业和行政中心，卢浮宫、香榭丽舍）。市区呈螺旋形的 20 个区（arrondissement）从中心向外编号。埃菲尔铁塔在西南、圣心大教堂在北面的蒙马特高地，两者都是制高点。城市外环有拉德芳斯新区的现代高楼。",
     gettingAround:

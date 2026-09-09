@@ -9,12 +9,6 @@
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/ayutthaya/identity",
-      "reason": "大城市自治市**完全没有取到带年份的一手数字**，正文如实停在「约 5 万」不写年份；这一条是被句中的 1991 年（世界遗产列入年份）误命中的。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
-    },
-    {
       "key": "travel/baishan/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -83,12 +77,6 @@
     {
       "key": "travel/harnosand/identity",
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
-    },
-    {
-      "key": "travel/hat-yai/howItWorks",
-      "reason": "合艾市自治市 191,696 人（2019）是能查到的最新一期；该来源的信息框把年份误标成 2024，脚注才是 2019。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
     },
@@ -207,12 +195,6 @@
       "recheckAfter": "2027-07"
     },
     {
-      "key": "travel/nakhon-ratchasima/identity",
-      "reason": "呵叻市自治市 126,391 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
-    },
-    {
       "key": "travel/nantong/identity",
       "reason": "2025 年公报把整个「人口」章节删了（第十二章标题从「人口、人民生活和社会保障」改成「人民生活和社会保障」）；2024 年末的 775.0 万是最新可查数",
       "confirmedOn": "2026-09-08",
@@ -229,6 +211,12 @@
       "reason": "同上；市镇 2024 年 50,126、全省约 11 万，是能核到的最新一期",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/paris/identity",
+      "reason": "法国 INSEE 的 populations de référence 按法律滞后：现行生效版参照 2023 年（2026-01-01 起生效），下一版参照 2025 年（2024 是空档年）。2023 不是「忘了刷新」，而是当前唯一有效的官方数；到 2028-01 新版生效时回来改。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2028-01"
     },
     {
       "key": "travel/pattaya/howItWorks",
@@ -289,12 +277,6 @@
       "reason": "同上；2017 年的 2.16 万是能核到的最新一期，基准年已九年",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/udon-thani/identity",
-      "reason": "乌隆他尼市自治市 130,531 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/visby/identity",

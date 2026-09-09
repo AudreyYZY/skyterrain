@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: be3e8ae
+lastVerifiedCommit: 37a5e52
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: be3e8ae
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-09 | travel/orlando, travel/atlanta, travel/st-johns, travel/paris（2026-09-09 C6i-b 首轮：同条目两段引同一档口径、数字对不上（4 城）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain-content 6 篇 × 6 板块：尼特米卢克/玻璃屋山/大澳大利亚湾/南邦尖峰石阵/威兰德拉湖区/甘比尔山 —— 澳大利亚 34 篇至此全部有核实留痕（地形讲解核实 · 批 15（澳大利亚收尾 6 篇）） | 7 | 3 / 4 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel-content 美加条目的 identity / howItWorks 人口口径（一手 CSV 全表核对）（城市人口口径核实 · 美国 7 城 + 加拿大 7 城） | 22 | 0 / 22 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain-content 12 篇 × 6 板块：加拿大地盾/落基山/海岸山脉/圣伊莱亚斯/托恩加特/长岭山脉/内陆平原/哈得孙湾低地/圣劳伦斯低地/大奴湖/大熊湖/马更些河（地形讲解核实 · 批 14（加拿大 12 篇）） | 13 | 11 / 1 / 1 | 当场修 12 条；新开 issue 1、关闭 0 |
