@@ -4317,6 +4317,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cheviot-hills": {
+    // seeing sources: 切维厄特山 815 米（少数来源 816，**1 米级取整差异，判定不改**）；BGS Earthwise 给早泥盆世约 395–400 Ma 的安山质火山中心 + 晚期花岗岩侵入（级别 1），正文「约 3.9 亿年」落在同一取整范围；奔宁之路 1965 年开放、英国第一条国家步道，北端柯克耶特姆；1388 年奥特本之战。2026-09-09 核，本轮无需改动。
+    //   https://earthwise.bgs.ac.uk/index.php/Cheviot_%E2%80%94_early_Devonian_volcanic_rocks,_granite_and_basement_-_an_excursion
     seeing:
       "The Cheviot Hills straddle the border between England and Scotland — a range of rounded, turf-covered, thinly populated hills. The highest, The Cheviot, is 815 m. This is the core of Northumberland National Park in England and the northern end of Britain's first National Trail, the Pennine Way.",
     formation:
@@ -4332,6 +4334,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "south-downs": {
+    // seeing sources: 南唐斯国家公园：指定生效 2010-03-31（2009-11-12 确认修订），管理局 2011-04-01 起全面运作（法定文书，级别 1）—— **正文的「2010/2011」双年份不是含糊，而是准确对应两个节点，判定不改**。至今仍是英格兰最新的国家公园。**注意：南唐斯 2010 年已从 AONB 升格为国家公园，不适用同批奇尔特恩、高尔的「AONB → National Landscape」改名。** 2026-09-09 核，本轮无需改动。
+    //   https://www.legislation.gov.uk/uksi/2010/497/note/made
     seeing:
       "The South Downs are a line of chalk hills in south-east England, running from Hampshire to the coast of East Sussex, where at Beachy Head they meet the sea as dazzling white cliffs. They have a steep escarpment on the north side and a gentle slope dipping toward the sea on the south, with open grassland and wheat fields and almost no trees on top. They are the newest national park in England (2010/2011).",
     formation:
@@ -4357,8 +4361,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chilterns and the South Downs are almost a \"mirror image\" pair of chalk cuestas, belonging to the south and north limbs of the same breached upfold: the Chilterns' escarpment faces north-west, the South Downs' faces north, with the London Basin between them. Because of the clay-with-flints on its slopes, the Chilterns are much more wooded than the grassy South Downs.",
     concept:
       "The Chilterns' \"Goring Gap\" is a case study in an antecedent river: the Thames was already flowing there before the hills were uplifted, or while they rose only slowly, and as the chalk was slowly domed up the river cut down fast enough to keep pace, \"sawing\" through the rising hills and leaving a transverse gorge-gap that does not fit the present landscape. A common misconception is that a river always goes around high ground — some rivers are \"older\" than the high ground.",
+    // history sources: AONB → National Landscape：**2023-11-22 起**英格兰与威尔士全部 AONB 统一改用这个对外名，**法定名称仍是 AONB、不是「升级」**（级别 1，管理局官网，2026-09-09 核）。
+    //   https://www.chilterns.org.uk/news/tags/aonb/
+    //   **这一条漏在了上一批**：高尔半岛那条已经把日期查对了（2023-11），台账里也写下「下一轮要把全库的 AONB 搜一遍」，结果同一个回合里派下一批时没有做 —— 见 known-errors B1-b。本轮已把全库的「杰出自然风景区 / AONB / National Landscape」搜了一遍，只有这两处。
+    //   戈灵缺口的「先成河」机制核实成立：泰晤士河至少自早更新世就流经此处、随白垩缓慢抬升持续下切，冰盖从未到达戈灵一带（3 级，与主流一致）。
     history:
-      "The Chilterns' beech woods historically supplied timber for the furniture trade of the surrounding towns (especially High Wycombe), where \"bodgers\" turned chair parts on the spot in the woods. The ancient trackway the Icknield Way runs along the hills. From the 19th century the area became a commuter belt for London (\"Metro-land\"). Most of it is an Area of Outstanding Natural Beauty (AONB), redesignated a National Landscape from 2024.",
+      "The Chilterns' beech woods historically supplied timber for the furniture trade of the surrounding towns (especially High Wycombe), where \"bodgers\" turned chair parts on the spot in the woods. The ancient trackway the Icknield Way runs along the hills. From the 19th century the area became a commuter belt for London (\"Metro-land\"). Most of it is an Area of Outstanding Natural Beauty (AONB) — a designation renamed National Landscape for public use in November 2023, with the statutory name unchanged.",
   },
 
   "white-cliffs-of-dover": {
@@ -4559,6 +4567,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "river-thames": {
+    // seeing sources: 全长约 346 公里、源头科茨沃尔德的 Thames Head；泰丁顿闸为潮区上限（3 级交叉印证）。**「塞文最长、泰晤士是完全在英格兰境内最长」这个限定写法与 river-severn 条目互相印证** —— 两条河的排名断言各自带了范围限定，不打架。2026-09-09 核，本轮无需改动。
     seeing:
       "The River Thames is about 346 km long, rising in the Cotswold Hills of south-west England and flowing south-east and then east through Oxford and London, finally reaching the North Sea through a wide funnel-shaped estuary. London is built on this river — specifically at the furthest point ships could reach upstream, which was also the lowest point at which the river could be bridged in early times.",
     formation:
@@ -4574,6 +4583,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "river-severn": {
+    // seeing sources: 全长约 354 公里、英国最长的河（环境署口径，2 级）；塞文涌潮与河口大潮差，「约 15 米」属常见引用区间。**铁桥峡的成因机制本轮专门核过：正文写对了** —— 冰坝湖（Lake Lapworth）溢流切穿丘陵、永久改道，地质学会与 BGS 均采此说（另有冰下融水通道作为补充讨论，不否定主线）。2026-09-09 核，本轮无需改动。
+    //   https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/industrial-and-economic-importance/ironbridge-gorge/
     seeing:
       "The River Severn (Welsh: Afon Hafren) is about 354 km long — the longest river in the United Kingdom. It rises on Plynlimon in mid-Wales, winds through the Welsh hills, and on entering England passes through Shropshire, Worcester and Gloucester before reaching the Severn Estuary. This estuary has one of the highest tidal ranges in the world, up to about 15 m at spring tides, and a phenomenon called the \"Severn Bore\" — a wall of water travelling upstream on the flood tide.",
     formation:
@@ -4589,6 +4600,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "the-fens": {
+    // seeing sources: 泥炭氧化收缩导致地面持续下沉：与 Holme Fen Post 的实测证据一致（1852 年立桩，霍姆一带地面已低于海平面约 2.75 米，历史速率约每年 1 厘米）。**正文只写机制、不写数字，因此不需要补监测时点** —— 这是处理会过期量的另一条路：不给数字就不会过期。伊利 = 鳗鱼岛（Elge，比德记载）。2026-09-09 核，本轮无需改动。
+    //   https://www.greatfen.org.uk/about-great-fen/heritage/holme-fen-posts
     seeing:
       "The Fens, in eastern England around the Wash, are the largest area of low flat land in Britain — much of it only a metre or two above sea level, some of it below. Today it is endless arable fields cut by dead-straight ditches, one of the most fertile farming regions in Britain. But before it was drained, this was a vast reed marsh and seasonally flooded wetland.",
     formation:
@@ -4614,8 +4627,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Broads and the Fens are both low-lying wetlands of eastern England, but the Fens were \"pumped dry\" into farmland, while the Broads were \"flooded\" into a group of lakes and kept as wetland. The shallow lakes of the Broads are flooded man-made pits, clearly different in shape from natural oxbow or glacial lakes.",
     concept:
       "The Broads are a case study in landforms created by human activity: medieval peat digging was a purely economic activity, yet centuries later it left a whole system of lakes and waterways on the surface, which became an important ecosystem and a national park. To recognise this kind of \"man-made lake\", look at whether the edges are unusually straight, the depth uniform, and whether there is a historical record of digging or mining. A common misconception is to treat all lakes as naturally formed.",
+    // history sources: Joyce Lambert（1916–2005）是植物学家 / 生态学家，1950 年代以泥炭取芯与植被地层学证实布罗兹湖岸近乎垂直、底部平坦，属中世纪人工泥炭坑被淹没，1960 年出版《The Making of the Broads》并获皇家地理学会 Gill 奖章。原文误作「历史学家」。2 级，2026-09-09 核。
+    //   https://norfolkrecordofficeblog.org/2016/05/13/the-norfolk-broads-revealed-as-man-made-features-the-discoveries-of-dr-joyce-m-lambert/
+    //   **布罗兹的法定地位本轮专门复核过：正文写对了** —— 它**不是**依 1949 年国家公园法设立的国家公园，而是依《1988 年诺福克与萨福克布罗兹法》于 1989 年设立布罗兹管理局、地位与国家公园相当（2015 年起对外也用 Broads National Park 这个名，但法律地位不变）。中世纪泥炭开采年代约 12–14 世纪核实一致。
     history:
-      "The confirmation that the Broads are of artificial origin came mainly from the research of the historian Joyce Lambert and colleagues in the 1950s. In the Middle Ages the area belonged to large estates such as Norwich Cathedral, and peat extraction was on a huge scale. From the 19th century the Broads became a resort for sailing and river holidays. The Broads Authority was established in 1989, giving it status equivalent to a national park.",
+      "The confirmation that the Broads are of artificial origin came mainly from the research of the botanist and ecologist Joyce Lambert and colleagues in the 1950s. In the Middle Ages the area belonged to large estates such as Norwich Cathedral, and peat extraction was on a huge scale. From the 19th century the Broads became a resort for sailing and river holidays. The Broads Authority was established in 1989, giving it status equivalent to a national park.",
   },
 
   "isle-of-skye": {
@@ -4638,6 +4654,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "outer-hebrides": {
+    // seeing sources: 岛链约 210 公里（正文「约 200 公里」落在取整范围，判定不改）；刘易斯片麻岩原岩年龄约 30 亿–17 亿年，公认英国最古老岩石，**正文的「欧洲已知最古老的岩石之一」带了「之一」限定，稳妥**。2026-09-09 核，本轮无需改动。
     seeing:
       "The Outer Hebrides (Gaelic: Na h-Eileanan Siar) are a chain of islands about 200 km long off the north-west of Scotland, from Lewis and Harris in the north, through North Uist, Benbecula and South Uist, to Barra in the south. This is the main area where Scottish Gaelic is spoken in daily life, and one of the places where some of the oldest rocks in Europe come to the surface.",
     formation:
@@ -9649,6 +9666,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Ireland ============
   "macgillycuddys-reeks": {
+    // seeing sources: 卡朗图希尔 1038.6 米（爱尔兰地形测量局 OSI 官方高程），全境最高点；爱尔兰仅有的三座超千米山峰全在这条山脉内，**「唯一超 1000 米的山脉」这个排名成立**。2026-09-09 核，本轮无需改动。
     seeing:
       "MacGillycuddy's Reeks lies in County Kerry in south-west Ireland and is Ireland's only mountain range exceeding 1,000 m; its highest peak, Carrauntoohil, reaches 1,038.6 m, the highest point in the country.",
     formation:
@@ -9761,6 +9779,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area has historically had a sparse population sustained by traditional farming, and several Neolithic burial sites survive around the range's foothills.",
   },
   "the-burren": {
+    // seeing sources: 面积约 250 平方公里是「裸露石灰岩喀斯特台地」这一口径下的数（另有约 360 / 560 平方公里两个更大口径，**三个数并存、各有各的范围，不是打架**，正文取的口径与 250 吻合，2 级）；石灰岩为石炭纪维宪期约 3.4 亿年前沉积，正文「约 3.5 亿年」落在取整范围，判定不改。2026-09-09 核，本轮无需改动。
+    //   https://clarelibraries.ie/localstudies/places/the-burren/karst-of-ireland-the-burren/
     seeing:
       "The Burren lies in County Clare in western Ireland, a roughly 250 km² Carboniferous limestone karst plateau where bare limestone pavement covers much of the surface.",
     formation:
@@ -9943,6 +9963,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Dún Aonghasa on Inishmore is one of the most important Iron Age stone fortifications in Ireland; the islands remain among the best-preserved Irish-speaking (Gaeltacht) areas in the country.",
   },
   "skellig-michael": {
+    // seeing sources: 岛屿最高点约 218 米（西南端隐修点），修道院所在峰约 185 米；隐修院约 6–8 世纪、僧侣定居至约 12–13 世纪、1996 年列入 UNESCO。**零争议红线本轮专门复核：通过。** 2026-09-09 核，本轮无需改动。
     seeing:
       "Skellig Michael is a steep, conical island about 12 km off Ireland's south-west coast, its summit holding the ruins of an early Christian monastic hermitage.",
     formation:
@@ -9981,10 +10002,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Cliffs of Moher and Slieve League are Atlantic sea cliffs on Ireland's west coast, but the Cliffs of Moher reach about 214 m and are built of interbedded sandstone and shale, while Slieve League reaches about 601 m, roughly three times as high.",
     concept:
       "The clearly interbedded sandstone and shale of the Cliffs of Moher is a classic case for studying how differential erosion produces bedded structure on a sea cliff.",
+    // history sources: 奥布莱恩塔为 19 世纪 Sir Cornelius O'Brien 主持修建（英文侧写对了，中文误译为「科克伦爵士」，已改成音译 + 原名并列）。悬崖全长约 14 公里、最高约 214 米（奥布莱恩塔附近）、南端 Hag's Head 约 120 米，官方站，2 级，2026-09-09 核。
+    //   https://www.cliffsofmoher.ie/about-the-cliffs-of-moher/
+    //   **这一条是「中英两侧各写各的」在专名上的表现**：同一个人在两种语言里成了两个名字，而任何脚本都不会报。
     history:
       "The cliffs have long served as a landmark for local fishermen and sailors; O'Brien's Tower, built in the 19th century under Sir Cornelius O'Brien, remains the cliffs' signature viewing point today.",
   },
   "slieve-league": {
+    // seeing sources: 斯利夫利格约 601 米；崖体主体为前寒武纪达尔雷德超群变质岩（地质学会 100 Great Geosites，级别 1）。「约为莫赫悬崖的三倍」：601 ÷ 214 ≈ 2.8，取整表述合理，判定不改。2026-09-09 核，本轮无需改动。
+    //   https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/coastal/cliffs-of-slieve-league/
     seeing:
       "Slieve League lies in County Donegal in north-west Ireland; its highest point, at about 601 m, makes it one of the highest sea cliffs in Europe.",
     formation:
@@ -9999,6 +10025,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Early Christian hermitage remains survive at the cliff top; historically remote and lightly developed, the site remains a relatively less well-known but landform-rich destination in Ireland today.",
   },
   "dingle-peninsula": {
+    // seeing sources: 布兰登山 952 米，古红砂岩，与麦吉利卡迪山脉同一地质单元。**正文有意没写布兰登山的全国排名，这是对的**：它在不同榜单里排第 8 或第 9，写排名就必须写口径。丁格尔为公认的 Gaeltacht 区域之一，加纳鲁斯石屋为知名早期基督教石造遗迹。**零争议红线本轮专门复核：通过。** 2026-09-09 核，本轮无需改动。
     seeing:
       "The Dingle Peninsula is Ireland's westernmost peninsula, its spine formed by Mount Brandon (952 m); its coastline is lined with steep sea cliffs and prehistoric stone remains.",
     formation:

@@ -4015,7 +4015,7 @@ const GOWER_PENINSULA: TerrainEntry = {
   landmark: { name: "沃姆斯角（Worm's Head）", lon: -4.334, lat: 51.567, elevation: 30, kind: "escarpment" },
   bbox: [-4.35, 51.53, -3.95, 51.63],
   label: { lon: -4.15, lat: 51.57, rotation: 0 },
-  source: "高尔半岛：斯旺西以西的小半岛，1956年成为英国第一个“杰出自然风景区”；石炭纪石灰岩海崖 + 老红砂岩山脊 + 罗西利大沙湾（Natural Resources Wales）",
+  source: "高尔半岛：斯旺西以西的小半岛，1956年成为英国第一个“杰出自然风景区”（该分类 2023-11 起对外改称“国家风景区”National Landscape，法定名不变；核实 2026-09-09）；石炭纪石灰岩海崖 + 老红砂岩山脊 + 罗西利大沙湾（Natural Resources Wales）",
 };
 
 const CHEDDAR_GORGE: TerrainEntry = {

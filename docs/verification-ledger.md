@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 978f84b
+lastVerifiedCommit: 47c1b94
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 978f84b
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-09 | terrain · 英国（收尾）/ 爱尔兰（2026-09-09 地形核实：英国收尾 8 篇 + 爱尔兰第 1 批 6 篇） | 14 | 11 / 3 / 0 | 当场修 14 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel · 爱尔兰 / 瑞典（2026-09-09 城市核实：爱尔兰/瑞典补丁） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel · 爱尔兰 / 瑞典（2026-09-09 城市核实：爱尔兰 7 城 + 瑞典 7 城） | 18 | 0 / 17 / 1 | 当场修 17 条；新开 issue 1、关闭 0 |
 | 2026-09-09 | terrain · 瑞士（跨境湖泊 / 河流 / 峡谷 / 高原）（2026-09-09 地形核实：瑞士第 2 批 15 篇） | 15 | 14 / 1 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
