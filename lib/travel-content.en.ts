@@ -12575,9 +12575,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Sunrise or late afternoon brings fewer crowds and softer light for photos; midday summer heat is intense and the terraces reflect strong sunlight, so bring sun protection and avoid the midday hours if possible.",
   },
-  // 零改动留痕（2026-09-10）：TZX 机场代码现行有效；前 756 年米利都殖民地特拉佩祖斯、1204 年第四次十字军后的
-  //   特拉比松帝国、1461 年入奥斯曼——均为广泛记载的前现代史，未涉现代议题。
   trabzon: {
+    // 零改动留痕（2026-09-10）：TZX 机场代码现行有效；前 756 年米利都殖民地特拉佩祖斯、1204 年第四次十字军后的
+    //   特拉比松帝国、1461 年入奥斯曼——均为广泛记载的前现代史，未涉现代议题。
     // identity sources: 人口：identity 的「逾 80 万」是**省**人口（TÜİK 2025 823,323），howItWorks 的「约 33.5 万」是**中心区奥尔塔希萨尔**（2025 年 335,116）——两个都对，原来只是都没写口径，并排读像打架。2026-09-10 核。
     identity:
       "Trabzon is a major port city on Turkey's eastern Black Sea coast, with a provincial population of over 820,000 in 2025 (TÜİK; Trabzon Province has matched the metropolitan boundary since 2014); historically a port on a Silk Road branch and the capital of the Byzantine-era Empire of Trebizond, it is the core gateway for exploring the Black Sea mountains.",
@@ -12595,10 +12595,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June to September brings relatively warm, drier weather, well suited to visiting Sümela and Uzungöl; the Black Sea region is rainy year-round, so carry rain gear, and allow extra time on the winding mountain roads.",
   },
-  // 零改动留痕（2026-09-10）：KYA 机场代码现行有效。identity 的「因苏菲派诗人鲁米与旋转苦行僧传统闻名，是重要的
-  //   宗教文化中心」经专项复核为**客观史实／文旅表述**，与伊兹密尔那句「相对世俗开放」的国内比较评价不同，
-  //   ✅ 不在红线之内，不改。
   konya: {
+    // 零改动留痕（2026-09-10）：KYA 机场代码现行有效。identity 的「因苏菲派诗人鲁米与旋转苦行僧传统闻名，是重要的
+    //   宗教文化中心」经专项复核为**客观史实／文旅表述**，与伊兹密尔那句「相对世俗开放」的国内比较评价不同，
+    //   ✅ 不在红线之内，不改。
     // identity sources: 人口：TÜİK 2025 科尼亚省 2,343,409。**howItWorks 早就写清了口径、identity 没跟上**——C6-h「注释／另一段写对了，这一段没同步」的又一例。「宗教文化中心」是客观史实表述，与伊兹密尔那句国内比较评价不同，不踩红线、保留。2026-09-10 核。
     identity:
       "Konya is a major city in Central Anatolia with a provincial population of over 2.34 million in 2025 (TÜİK; the province matches the metropolitan boundary); historically the capital of the Seljuk Sultanate in Anatolia, it is renowned for the Sufi poet Rumi and the whirling dervish tradition, and is an important religious and cultural center in Turkey.",
@@ -12616,10 +12616,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "A formal whirling dervish ceremony can be seen during Rumi's death-anniversary commemoration week (Şeb-i Arus) in mid-December, though it draws crowds and tickets should be booked ahead; April to June and September to October offer the most pleasant travel weather.",
   },
-  // 零改动留痕（2026-09-10）：howItWorks 段全篇没有写人口数字，与其余五城的体例不一致，但**不是错误**，本轮不补——
-  //   补数字要连口径一起写，等下一轮连同布尔萨城区口径（三个中心区）一起查清再补。
-  //   1326 年攻取、1360 年代迁都埃迪尔内、2014 年「布尔萨与朱马勒克兹克：奥斯曼帝国的诞生」列入 UNESCO：均核实无误。
   bursa: {
+    // 零改动留痕（2026-09-10）：howItWorks 段全篇没有写人口数字，与其余五城的体例不一致，但**不是错误**，本轮不补——
+    //   补数字要连口径一起写，等下一轮连同布尔萨城区口径（三个中心区）一起查清再补。
+    //   1326 年攻取、1360 年代迁都埃迪尔内、2014 年「布尔萨与朱马勒克兹克：奥斯曼帝国的诞生」列入 UNESCO：均核实无误。
     // identity sources: 人口：原文 216 万**量级就不对**——TÜİK 2025 布尔萨省 3,263,011。216 万接近三个中心区的城区规模，属把城区数当全市数用（C6-c）。「第四大」按省人口排名成立（伊斯坦布尔、安卡拉、伊兹密尔之后）。2 级转引 TÜİK。2026-09-10 核。
     identity:
       "Bursa is Turkey's fourth-largest city, with a provincial population of over 3.26 million in 2025 (TÜİK; the province matches the metropolitan boundary), and was the first capital of the Ottoman Empire (1326–1365); known as 'Green Bursa' for its many mosques and its proximity to the Uludağ ski resort.",
@@ -12654,9 +12654,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September is peak season on the coast, with July and August the hottest and most crowded; May, June, and September offer pleasant weather and lower prices. Inland Zagreb suits any season and has a Christmas market in winter. Travel between the coast and interior can take a while, so plan enough days.",
   },
-  // 零改动留痕（2026-09-10）：ZAG（弗拉尼奥·图季曼机场）代码现行有效；history 段止于中世纪格拉德茨与卡普托尔
-  //   两座山丘小镇，未涉 1990 年代及以后议题。✅ 零争议红线通过。
   zagreb: {
+    // 零改动留痕（2026-09-10）：ZAG（弗拉尼奥·图季曼机场）代码现行有效；history 段止于中世纪格拉德茨与卡普托尔
+    //   两座山丘小镇，未涉 1990 年代及以后议题。✅ 零争议红线通过。
     // identity sources: 人口：DZS 年中估计 777,744（2025 年年中，STAN-2026-3-1，2026-09-04 发布，1 级）。萨格勒布因「市 = 县」地位在该序列里单列，所以它**有**年度更新数，不同于其他克罗地亚城市。2026-09-10 核。
     identity:
       "Zagreb is Croatia's capital and largest city, with a mid-2025 population of about 778,000 (DZS), and the country's political, economic, and cultural center. The city's history traces back to the medieval hill towns of Gradec and Kaptol.",
@@ -12674,9 +12674,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "April to June and September to October are the best seasons to visit Zagreb. December's Christmas market draws more visitors but has a festive atmosphere. As an inland city, Zagreb is worth visiting year-round, independent of the coastal tourist season.",
   },
-  // 零改动留痕（2026-09-10）：SPU 机场代码现行有效；戴克里先宫 1979 年列入 UNESCO 属实；
-  //   history 段止于古罗马—威尼斯—哈布斯堡，未涉现代议题。✅ 零争议红线通过。
   split: {
+    // 零改动留痕（2026-09-10）：SPU 机场代码现行有效；戴克里先宫 1979 年列入 UNESCO 属实；
+    //   history 段止于古罗马—威尼斯—哈布斯堡，未涉现代议题。✅ 零争议红线通过。
     // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
       "Split is the largest city in Dalmatia, with a population of about 161,000 in the 2021 census, famous as the site where the Roman emperor Diocletian built his retirement palace, which over nearly 1,700 years evolved into the core of today's old town.",
@@ -12711,9 +12711,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to June and September to October bring pleasant weather with relatively fewer visitors; July and August are hot and heavily visited by cruise passengers. The city walls have no shade, so avoid midday and bring plenty of water.",
   },
-  // 零改动留痕（2026-09-10）：RJK 机场代码现行有效。history 段的「1924–1945 年费乌梅／苏沙克分界」是两次大战之间的
-  //   行政边界事实（费乌梅自由邦），早于 1990 年代那条线，✅ 零争议红线通过、不改。
   rijeka: {
+    // 零改动留痕（2026-09-10）：RJK 机场代码现行有效。history 段的「1924–1945 年费乌梅／苏沙克分界」是两次大战之间的
+    //   行政边界事实（费乌梅自由邦），早于 1990 年代那条线，✅ 零争议红线通过、不改。
     // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
       "Rijeka is Croatia's largest seaport and third-largest city, with a population of about 108,000 in the 2021 census. It has been an important port linking Central Europe to the Mediterranean since Austro-Hungarian times, and remains a city with a deep industrial and maritime tradition.",
@@ -12731,8 +12731,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September brings pleasant weather. Rijeka sees fewer visitors than the Dalmatian coastal cities, making it a good fit for travelers who enjoy a local atmosphere. As the Kvarner Gulf's gateway, it's an ideal starting point for visiting Učka and the islands.",
   },
-  // 零改动留痕（2026-09-10）：ZAD 机场代码现行有效；history 段止于古罗马至威尼斯时期。✅ 零争议红线通过。
   zadar: {
+    // 零改动留痕（2026-09-10）：ZAD 机场代码现行有效；history 段止于古罗马至威尼斯时期。✅ 零争议红线通过。
     // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
       "Zadar is a historic town in northern Dalmatia with a population of about 71,000 in the 2021 census, its history dating back to Roman times; it holds some of Croatia's richest Roman remains.",
@@ -12750,8 +12750,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September brings pleasant weather, with sunset the best time to experience the Sea Organ and Sun Salutation together. Zadar is the main gateway city for visiting Kornati National Park.",
   },
-  // 零改动留痕（2026-09-10）：PUY 机场代码现行有效；history 段止于古罗马—威尼斯共和国—奥匈帝国。✅ 零争议红线通过。
   pula: {
+    // 零改动留痕（2026-09-10）：PUY 机场代码现行有效；history 段止于古罗马—威尼斯共和国—奥匈帝国。✅ 零争议红线通过。
     // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
       "Pula is the largest city on the Istrian peninsula, with a population of about 52,000 in the 2021 census, famous for its well-preserved Roman amphitheater; it was successively ruled by Rome, the Republic of Venice, and Austria-Hungary.",
@@ -12769,9 +12769,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September brings pleasant weather; summer often brings lively music-festival events at the Arena, so book tickets in advance. Pula is an ideal base for exploring the red-soil coastal towns of Istria.",
   },
-  // 零改动留痕（2026-09-10）：OSI 机场代码现行有效；history 段止于奥斯曼—哈布斯堡治理，未涉 1990 年代及以后议题。
-  //   ✅ 零争议红线通过——这一条本轮专门查过，因为斯拉沃尼亚是红线最敏感的一带。
   osijek: {
+    // 零改动留痕（2026-09-10）：OSI 机场代码现行有效；history 段止于奥斯曼—哈布斯堡治理，未涉 1990 年代及以后议题。
+    //   ✅ 零争议红线通过——这一条本轮专门查过，因为斯拉沃尼亚是红线最敏感的一带。
     // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
       "Osijek is the largest city in the Slavonia region and Croatia's fourth-largest city, with a population of about 96,000 in the 2021 census. The Drava River runs through it, and it was successively ruled by the Ottoman Empire and the Habsburg monarchy.",

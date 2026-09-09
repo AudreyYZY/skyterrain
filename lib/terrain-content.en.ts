@@ -6771,10 +6771,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Po has long been the waterway of the Po Valley — Roman grain barges, medieval salt and goods all moved on the Po. In the Renaissance, cities on the Po such as Ferrara and Mantua grew rich by controlling shipping and irrigation. After Italian unification in the 19th century, the state began a systematic programme on the Po — unified embankment standards, flood-diversion areas. Over-extraction of groundwater and sand mining in the 20th century caused ground subsidence and saltwater intrusion around the delta, now being addressed.",
   },
 
-  // seeing / formation sources: 长 406 km、意大利第三长河（波河 652、阿迪杰 410），3 级复核一致；
-  //   「沿亚平宁西侧拉张断陷谷地发育」的构造解释经学术文献核对成立——台伯河中游对应 Paglia-Tevere
-  //   地堑，NNW-SSE 走向的拉张盆地，受 Alto Tiberina 正断层控制（3 级学术论文摘要）。2026-09-10 核，verdict: ok。
   "tiber-river": {
+    // seeing / formation sources: 长 406 km、意大利第三长河（波河 652、阿迪杰 410），3 级复核一致；
+    //   「沿亚平宁西侧拉张断陷谷地发育」的构造解释经学术文献核对成立——台伯河中游对应 Paglia-Tevere
+    //   地堑，NNW-SSE 走向的拉张盆地，受 Alto Tiberina 正断层控制（3 级学术论文摘要）。2026-09-10 核，verdict: ok。
     seeing:
       "The Tiber (Italian Tevere) is the third-longest river in Italy, about 406 km. It rises at Monte Fumaiolo in the Apennines, runs south through the hills of Umbria and Lazio, flows through the centre of Rome, and reaches the Tyrrhenian Sea near Ostia. Its water is yellowish (the ancients called it \"the golden Tiber\"), carrying Apennine sediment. In the city of Rome the Tiber makes several bends, cradling the Tiber Island in the middle.",
     formation:
@@ -6789,11 +6789,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tiber is the lifeline of Roman civilisation: in legend the basket of Romulus and Remus drifted down the Tiber to the foot of the Palatine. Ancient Rome's grain (shipped from Sicily and Egypt) was unloaded at Ostia at the mouth and later at Trajan's harbour, then hauled up to the city by barge. The Tiber Island has had a temple of the god of healing since the 3rd century BC, and there is still a hospital on the island today. The embankment works of the late 19th century ended the Tiber's flooding in central Rome, but also demolished a number of old riverside buildings.",
   },
 
-  // seeing / history sources: 地中海第一大岛（约 25,711 km²）；1693 年东南部地震（M7.4）摧毁约 40 座城镇、
-  //   诺托谷巴洛克重建列入 UNESCO；1908 年墨西拿地震 M7.1；1669 年埃特纳熔岩毁卡塔尼亚部分城区。
-  //   19 世纪硫矿：世纪中叶约占世界 3/4、世纪末约 90%，1912 年后被美国 Frasch 法超过——正文「大部分」偏保守，成立。
-  //   以上均 3 级复核（未找到 1 级）。2026-09-10 核，verdict: ok。
   sicily: {
+    // seeing / history sources: 地中海第一大岛（约 25,711 km²）；1693 年东南部地震（M7.4）摧毁约 40 座城镇、
+    //   诺托谷巴洛克重建列入 UNESCO；1908 年墨西拿地震 M7.1；1669 年埃特纳熔岩毁卡塔尼亚部分城区。
+    //   19 世纪硫矿：世纪中叶约占世界 3/4、世纪末约 90%，1912 年后被美国 Frasch 法超过——正文「大部分」偏保守，成立。
+    //   以上均 3 级复核（未找到 1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Sicily is the largest island in the Mediterranean, roughly triangular, separated from mainland Italy by a narrow strait (the Strait of Messina). The north of the island is mountains (the continuation of the Apennines), the centre and south rolling hills and plateaus, and on the east coast stands Etna — one of the highest and most frequently active volcanoes in Europe. The coast varies greatly: headlands and bays in the north, long beaches in the south, Etna's lava coast in the east.",
     formation:
@@ -6808,11 +6808,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sicily lies at the crossroads of Mediterranean sea routes, and over thousands of years was ruled in turn by Phoenicians, Greeks (the temples and theatres of Agrigento and Syracuse are still magnificent), Rome, Arabs, Normans and Spain, leaving layer on layer of buildings and crops (citrus and sugar cane were first brought by the Arabs). The central sulphur mines supplied most of the world's sulphur in the 19th century. Sicily's earthquakes and Etna's eruptions have repeatedly reshaped the towns of the east — Catania, destroyed by lava in 1669 and by earthquake in 1693, was rebuilt in Baroque style and is a World Heritage Site.",
   },
 
-  // seeing / formation / history sources: 地中海第二大岛；真纳尔真图最高峰 Punta La Marmora 1834 m
-  //   （意大利文化部 idese.cultura.gov.it，2 级）；巴鲁米尼 Su Nuraxi 1997 年列入 UNESCO（whc.unesco.org，1 级）。
-  //   撒丁-科西嘉微陆块 30–15 Ma 逆时针旋转、南撒丁曾属伊比利亚边缘，古地磁研究（Tectonics 2023，3 级摘要）与正文一致。
-  //   2026-09-10 核，verdict: ok。
   sardinia: {
+    // seeing / formation / history sources: 地中海第二大岛；真纳尔真图最高峰 Punta La Marmora 1834 m
+    //   （意大利文化部 idese.cultura.gov.it，2 级）；巴鲁米尼 Su Nuraxi 1997 年列入 UNESCO（whc.unesco.org，1 级）。
+    //   撒丁-科西嘉微陆块 30–15 Ma 逆时针旋转、南撒丁曾属伊比利亚边缘，古地磁研究（Tectonics 2023，3 级摘要）与正文一致。
+    //   2026-09-10 核，verdict: ok。
     seeing:
       "Sardinia is the second-largest island in the Mediterranean, west of mainland Italy and south of Corsica. It is an old, quiet land — no active volcano, and very weak earthquakes. The body of the island is hills and mountains of moderate height of granite and older rock (the Gennargentu is highest, 1,834 m), with only in the east a spectacular limestone upland (the Supramonte) cut by deep gorges and caves. The coast has many granite reef headlands and turquoise bays.",
     formation:
@@ -6861,11 +6861,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Campo Imperatore plain has long been a destination for transhumance — each autumn the flocks are driven from here along the \"tratturi\" drove roads to the plains of Apulia in the south to winter, returning in spring. In 1943 the detained Mussolini was held at a mountain hotel on Campo Imperatore, then rescued by German forces in a glider raid. The national laboratory inside the Gran Sasso (built in the 1980s) uses the rock's shielding for neutrino and dark-matter detection, and is one of the largest underground laboratories in the world.",
   },
 
-  // seeing / history sources: Serra Dolcedorme 2267 m；公园 1925.65 km²，意大利面积最大的国家公园；1993 年建园。
-  //   波斯尼亚松 Italus 树轮 + 碳 14 联合定年约 1230 岁（ANSA 国家通讯社，2 级）。
-  //   ⚠️「欧洲已知最老的树」正文已带「经科学定年」这一限定 —— 瑞典 Old Tjikko 的克隆根系年龄更大但树干很年轻，
-  //   两者不是同一口径，故保留限定语、不改写。其余数字为 3 级复核。2026-09-10 核，verdict: ok。
   pollino: {
+    // seeing / history sources: Serra Dolcedorme 2267 m；公园 1925.65 km²，意大利面积最大的国家公园；1993 年建园。
+    //   波斯尼亚松 Italus 树轮 + 碳 14 联合定年约 1230 岁（ANSA 国家通讯社，2 级）。
+    //   ⚠️「欧洲已知最老的树」正文已带「经科学定年」这一限定 —— 瑞典 Old Tjikko 的克隆根系年龄更大但树干很年轻，
+    //   两者不是同一口径，故保留限定语、不改写。其余数字为 3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Pollino in the far southern Apennines, on the border of Basilicata and Calabria, is a high mountain area of limestone and dolomite, its highest peak Serra Dolcedorme at 2,267 m. The Pollino National Park around it, about 1,925 km², is the largest national park in Italy. The emblem of this range is a relict pine called the Bosnian pine (pino loricato) — its bark like scale armour, able to live for hundreds or a thousand years on the poorest, most wind-exposed rock; a Bosnian pine in the park scientifically dated to about 1,230 years old is the oldest known tree in Europe.",
     formation:
@@ -6880,10 +6880,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pollino mountains were historically extremely remote and poor, living by sheep and forestry, and a few valleys still have Arbëresh (Italo-Albanian) communities who migrated from the Balkans in the 15th century, keeping their own language and Eastern-rite worship. The gorges and passes were haunts of bandits in history. Pollino National Park was formally established in 1993.",
   },
 
-  // seeing / formation sources: 拉马莫拉峰 1834 m（意大利文化部 idese.cultura.gov.it，2 级）——与 sardinia 条目数字一致，已并排核过。
-  //   「约 4—5 亿年前海相沉积、海西造山约 3 亿年前变质」与撒丁岛古生代变质基底（寒武纪—泥盆纪）的通行表述数量级一致，
-  //   属合理简化，未找到冲突来源（3 级）。2026-09-10 核，verdict: ok。
   gennargentu: {
+    // seeing / formation sources: 拉马莫拉峰 1834 m（意大利文化部 idese.cultura.gov.it，2 级）——与 sardinia 条目数字一致，已并排核过。
+    //   「约 4—5 亿年前海相沉积、海西造山约 3 亿年前变质」与撒丁岛古生代变质基底（寒武纪—泥盆纪）的通行表述数量级一致，
+    //   属合理简化，未找到冲突来源（3 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Gennargentu in central-eastern Sardinia is the highest ground on the island — its highest peak, Punta La Marmora, at 1,834 m. Unlike the granite hills of most of Sardinia, Gennargentu is made of ancient schist and slate, rounded in form, with no sharp peaks. Above the tree line is large high pasture, snow-covered in winter (one of the few places you can ski on Sardinia). It is the source of several of the island's main rivers, and the heart of the traditional shepherding region of \"Barbagia\".",
     formation:
@@ -6931,9 +6931,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Como's mild climate and easy waterway made it a summer retreat for the Milanese elite since Roman times (Pliny the Younger had two villas by the lake). In the Renaissance and the centuries after, many villas and gardens were built along the shore (Villa Carlotta, Villa d'Este), and the city of Como was well known for silk. From the 19th century Lake Como was a fixed stop on the European \"Grand Tour\".",
   },
 
-  // seeing / formation sources: 潟湖约 550 km²，经 Lido / Malamocco / Chioggia 三个潮汐口与外海相通；
-  //   MOSE 活动闸 2020-10-03 正式启用。3 级复核（未找到 1 级）。2026-09-10 核，verdict: ok。
   "venetian-lagoon": {
+    // seeing / formation sources: 潟湖约 550 km²，经 Lido / Malamocco / Chioggia 三个潮汐口与外海相通；
+    //   MOSE 活动闸 2020-10-03 正式启用。3 级复核（未找到 1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Venetian Lagoon at the far northern end of the Adriatic is about 550 km² of shallow water — most of it only a metre or two deep, exposing broad mudflats and salt marsh at low tide. The lagoon is separated from the open sea by a line of long thin barrier islands (\"lidi\"), connected only at three \"tidal inlets\". Dozens of small islands sit on the mudflats within it, and the city of Venice is built on one group of them, on foundations of wooden piles.",
     formation:
@@ -7033,9 +7033,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Stromboli's persistent activity was used as a navigation landmark by Mediterranean sailors in antiquity. Being small, remote and with the volcano active overhead year-round, its population fell from a few thousand in the 19th century to a few hundred by the mid-20th. In 1950 Roberto Rossellini filmed Stromboli here, bringing the island to world attention. Several stronger \"paroxysm\" eruptions in 2019 and 2024 are a reminder that even \"mild\" Stromboli is dangerous.",
   },
 
-  // seeing / history sources: 海岸约 50 km；1997 年列入 UNESCO 世界遗产（Costiera Amalfitana，whc.unesco.org/en/list/830，1 级）；
-  //   阿马尔菲为四大海上共和国之一（与威尼斯、热那亚、比萨并称），9—11 世纪鼎盛。2026-09-10 核，verdict: ok。
   "amalfi-coast": {
+    // seeing / history sources: 海岸约 50 km；1997 年列入 UNESCO 世界遗产（Costiera Amalfitana，whc.unesco.org/en/list/830，1 级）；
+    //   阿马尔菲为四大海上共和国之一（与威尼斯、热那亚、比萨并称），9—11 世纪鼎盛。2026-09-10 核，verdict: ok。
     seeing:
       "The Amalfi Coast is a stretch of coast about 50 km long on the south side of the Sorrento Peninsula, where the limestone cliffs of the Lattari Mountains plunge straight into the Tyrrhenian Sea. There is almost no flat land — the towns (Amalfi, Positano, Ravello and others) are built up the near-vertical cliff slope in tiers, houses, churches, lemon-grove terraces and staircases of hundreds of steps stacked together. A narrow, twisting road clings to the cliff, the only land route along the coast.",
     formation:
@@ -7050,10 +7050,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Amalfi in the 9th–11th centuries was an independent maritime republic, ranked with Venice, Genoa and Pisa, rich on transit trade and seafaring thanks to its defensible terrain. The coast's lemons (\"sfusato amalfitano\") have been grown for over a thousand years. From the 19th century, Ravello and other places became gathering points for cultural figures for the scenery and music (Wagner, and later the Ravello Festival). The coast was inscribed as a World Heritage Site in 1997.",
   },
 
-  // seeing / history sources: 岛面积约 10.4 km²（另有 10.53 km² 一说）；索拉罗山 589 m 为全岛最高点；
-  //   提比略别墅据苏埃托尼乌斯记载为 12 座（正文「十几座」成立）；蓝洞 1826 年由 Kopisch 与 Fries「重新发现」。
-  //   均 3 级复核。2026-09-10 核，verdict: ok。
   capri: {
+    // seeing / history sources: 岛面积约 10.4 km²（另有 10.53 km² 一说）；索拉罗山 589 m 为全岛最高点；
+    //   提比略别墅据苏埃托尼乌斯记载为 12 座（正文「十几座」成立）；蓝洞 1826 年由 Kopisch 与 Fries「重新发现」。
+    //   均 3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Capri, at the mouth of the Bay of Naples off the western end of the Sorrento Peninsula, is a small limestone island of only about 10 km². It is ringed almost entirely by near-vertical sea cliffs, with three sea stacks called the \"Faraglioni\" standing in the sea. Its most famous feature is the \"Blue Grotto\" — a sea cave you can only enter by small boat with your head down, its opening mostly underwater, so that daylight refracts in through the underwater opening and lights the whole cave a glowing deep blue.",
     formation:
@@ -7068,11 +7068,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Roman emperor Tiberius made Capri his place of retirement and rule in the 1st century AD, building a dozen villas on the island (the ruins of \"Villa Jovis\" remain). Capri was then long a remote fishing island. In the 19th century Germans \"rediscovered\" the Blue Grotto, and Capri quickly became a resort for European artists and writers (Gorky, Rilke and others lived here) and later high society. Tourism is now absolutely its mainstay.",
   },
 
-  // seeing / formation / history sources: 1997 年作为文化景观列入 UNESCO；国家公园由 D.P.R. 1999-10-06 设立
-  //   （意大利环境部官方公报 mase.gov.it，1 级）；2011-10-25 极端暴雨泥石流属实。
-  //   岩性：主体为 Macigno 组砂岩—泥岩浊积岩（flysch），局部变质，仅公园最东缘有少量石灰岩 —— 正文
-  //   「砂岩-片岩、不是石灰岩」的定性成立（「片岩」是通俗简化，主体为浊积砂岩）。2026-09-10 核，verdict: ok。
   "cinque-terre": {
+    // seeing / formation / history sources: 1997 年作为文化景观列入 UNESCO；国家公园由 D.P.R. 1999-10-06 设立
+    //   （意大利环境部官方公报 mase.gov.it，1 级）；2011-10-25 极端暴雨泥石流属实。
+    //   岩性：主体为 Macigno 组砂岩—泥岩浊积岩（flysch），局部变质，仅公园最东缘有少量石灰岩 —— 正文
+    //   「砂岩-片岩、不是石灰岩」的定性成立（「片岩」是通俗简化，主体为浊积砂岩）。2026-09-10 核，verdict: ok。
     seeing:
       "The Cinque Terre on the Ligurian coast of northwestern Italy is five small villages close together — Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore. Each is squeezed onto one of the few scraps of flat land at a stream mouth or into a rock crevice on the coastal cliff, coloured houses stacked in tiers. The steep slope behind each village is built into tiers of extremely narrow vine terraces by hundreds of kilometres of dry-stone wall. There is no real road between the villages, only a coastal railway and cliffside footpaths.",
     formation:
@@ -7087,9 +7087,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The five Cinque Terre villages have lived since the Middle Ages by fishing and by growing vines (making a sweet white wine called \"Sciacchetrà\") and olives on the steep slopes, and, cut off by land, were long half-isolated from the outside. The coastal railway built in the 19th century first connected them to the outside. The Cinque Terre was inscribed as a cultural landscape World Heritage Site in 1997, and a national park was created in 1999. Over-tourism and terrace abandonment are the two main problems in recent years.",
   },
 
-  // seeing / formation sources: 奥尔恰谷 2004 年列入 UNESCO 文化景观；「上新世古海留下的黏土、泥灰岩和砂」
-  //   与托斯卡纳盆地随亚平宁隆升出露的通行地质表述一致，calanchi 劣地成因未见因果颠倒。3 级复核。2026-09-10 核，verdict: ok。
   "tuscan-hills": {
+    // seeing / formation sources: 奥尔恰谷 2004 年列入 UNESCO 文化景观；「上新世古海留下的黏土、泥灰岩和砂」
+    //   与托斯卡纳盆地随亚平宁隆升出露的通行地质表述一致，calanchi 劣地成因未见因果颠倒。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "The Tuscan Hills on the western side of the Apennines are a gently rolling green (golden in summer) hill country divided by fields, vineyards, olive groves and rows of cypress — the Tuscany of postcards. South of Siena is a distinctive patch of \"clay hills\" (Crete Senesi), almost treeless, eroded by rain into gullies and whitish domes, looking lunar or desert-like.",
     formation:
@@ -7104,11 +7104,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tuscan hills have been farmed since Etruscan times, and the medieval city-states (Florence, Siena) built dense fortified hill towns on them. This \"people and land in harmony\" agricultural landscape is the model for the ideal scenery of Renaissance painting. The clay-hill area, being poor land, was historically a zone of extensive wheat farming and sheep on large estates, thinly populated to this day. The Val d'Orcia was inscribed as a cultural landscape World Heritage Site in 2004.",
   },
 
-  // seeing / formation / history sources: 「karst」一词源自的里雅斯特背后的 Carso / Kras 高原地名，为国际地质学界公认的
-  //   术语原产地（type locality）；蒂马沃河（Reka）潜入地下、在杜伊诺附近涌出为公认水文地质事实；
-  //   白垩纪浅海碳酸盐岩随阿尔卑斯-第纳尔造山抬升。一战伊松佐战线止于客观战史。
-  //   ✅ 零争议红线复核：跨境表述保持中性、不描述边界线、不表述主权，通过。3 级复核。2026-09-10 核，verdict: ok。
   "carso-karst": {
+    // seeing / formation / history sources: 「karst」一词源自的里雅斯特背后的 Carso / Kras 高原地名，为国际地质学界公认的
+    //   术语原产地（type locality）；蒂马沃河（Reka）潜入地下、在杜伊诺附近涌出为公认水文地质事实；
+    //   白垩纪浅海碳酸盐岩随阿尔卑斯-第纳尔造山抬升。一战伊松佐战线止于客观战史。
+    //   ✅ 零争议红线复核：跨境表述保持中性、不描述边界线、不表述主权，通过。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "The Carso Plateau at Italy's far northeast, north of the city of Trieste, is a limestone tableland two or three hundred metres high, extending east into Slovenia. This small plateau carries great weight in the history of geology — \"karst\" (the general term in many languages for limestone-dissolution landforms) comes from a place name here (Italian Carso / Slovenian Kras). The plateau surface has almost no rivers, is covered in funnel-shaped solution hollows and sinkholes, and below is a network of caves and underground rivers.",
     formation:
@@ -7123,10 +7123,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Carso plateau is poor and short of water, and historically lived by growing vines and grazing sheep on the small patches of land at the bottom of the solution hollows (the local Terrano wine, Carso ham). Water scarcity at the surface meant settlements clustered around the few springs and cisterns. In the First World War the Italian–Austro-Hungarian front ran along the Carso plateau and the Isonzo, and many extremely bloody positional battles were fought on this stony ground, with trenches, shelters and cemeteries still there.",
   },
 
-  // seeing / formation / history sources: 阿尔塔穆拉人铀钍法定年约 13 万—17.2 万年前（正文「约 15 万年」落在区间内）；
-  //   上穆尔杰国家公园 2004-03-10 总统令设立；亚得里亚/阿普利亚前陆碳酸盐台地、构造稳定，gravina 干峡谷的
-  //   喀斯特成因未见因果颠倒。3 级复核。2026-09-10 核，verdict: ok。
   "alta-murgia": {
+    // seeing / formation / history sources: 阿尔塔穆拉人铀钍法定年约 13 万—17.2 万年前（正文「约 15 万年」落在区间内）；
+    //   上穆尔杰国家公园 2004-03-10 总统令设立；亚得里亚/阿普利亚前陆碳酸盐台地、构造稳定，gravina 干峡谷的
+    //   喀斯特成因未见因果颠倒。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "The Alta Murgia in Apulia in southeastern Italy is the higher part of the Murge limestone plateau, a few hundred metres in elevation. The surface is an endless expanse of loose rock and short grass — a semi-arid landscape called \"rocky steppe\", almost treeless, very windy. The plateau is cut by several deep, straight dry canyons (Italian gravina), dry most of the time and carrying water only briefly in storms. People have carved dwellings into the canyon walls since the Palaeolithic.",
     formation:
@@ -7141,10 +7141,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Alta Murgia has been inhabited since the Palaeolithic — a cave near Altamura yielded a Neanderthal skeleton about 150,000 years old (the \"Altamura Man\"), and a nearby quarry has dinosaur footprints. From the Middle Ages this was a zone of extensive wheat farming and sheep on large estates, with \"tratturi\" drove roads leading from here to summer pasture in the Apennines. Alta Murgia National Park was established in 2004.",
   },
 
-  // seeing / history sources: 最高点 Monte Calvo 1065 m（正文「约 1000 米」为合理取整）；石灰岩地垒 + 陆连岛成因为公认解释；
-  //   国家公园经 1991-12-06 第 394 号法律设立；翁布拉森林 2017 年列入 UNESCO「欧洲古老山毛榉林」扩展名录
-  //   （加尔加诺国家公园官网 parcogargano.it，1 级）。2026-09-10 核，verdict: ok。
   "gargano-promontory": {
+    // seeing / history sources: 最高点 Monte Calvo 1065 m（正文「约 1000 米」为合理取整）；石灰岩地垒 + 陆连岛成因为公认解释；
+    //   国家公园经 1991-12-06 第 394 号法律设立；翁布拉森林 2017 年列入 UNESCO「欧洲古老山毛榉林」扩展名录
+    //   （加尔加诺国家公园官网 parcogargano.it，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Gargano Promontory is the \"spur\" of the Italian \"boot\" — a block of upland jutting into the Adriatic from the coast of Apulia, up to about 1,000 m high. It is quite unlike the flat land around it in Apulia: a forest-covered limestone upland, its edges white sea cliffs, sea stacks and caves, its interior karst hollows and an ancient beech-and-oak forest (the Foresta Umbra). The northern coast has two large lagoons held back by sand bars (Lake Lesina, Lake Varano).",
     formation:
@@ -7180,11 +7180,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In the First World War Marmolada was a section of the Italian–Austro-Hungarian front, and Austro-Hungarian troops cut kilometres of tunnels and living space beneath the glacier (the \"City of Ice\") to shelter from shellfire and cold — these tunnels have been re-exposed in recent years as the glacier melts. After the war Marmolada developed as a skiing and climbing area. In July 2022 a large mass of ice above the glacier (a serac collapse) broke away in high temperatures, causing deaths among climbers and prompting wide discussion of the safety of high mountain glaciers.",
   },
 
-  // seeing / formation sources: 面积约 128 km²、最大水深约 6 m（平均约 4.3 m）、亚平宁半岛最大湖（全国第四）
-  //   —— Treccani 百科（2 级）。波尔韦塞岛约 69.6 ha 为三岛最大（Maggiore 约 24 ha、Minore 约 5 ha）。
-  //   前 217 年特拉西梅诺湖战役为公认史实。⚠️ C8：这是浅水湖、水位年际波动极大，正文已用「随季节和年份的降水大幅涨落」
-  //   作口径限定，面积数字不再单独更新。2026-09-10 核，verdict: ok。
   "lake-trasimeno": {
+    // seeing / formation sources: 面积约 128 km²、最大水深约 6 m（平均约 4.3 m）、亚平宁半岛最大湖（全国第四）
+    //   —— Treccani 百科（2 级）。波尔韦塞岛约 69.6 ha 为三岛最大（Maggiore 约 24 ha、Minore 约 5 ha）。
+    //   前 217 年特拉西梅诺湖战役为公认史实。⚠️ C8：这是浅水湖、水位年际波动极大，正文已用「随季节和年份的降水大幅涨落」
+    //   作口径限定，面积数字不再单独更新。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Trasimeno in Umbria in central Italy is the largest lake on the Italian peninsula, about 128 km² — but it is remarkably shallow, only about 6 m deep at most, and waist-deep in many places. It has three small islands. Its shores are low and flat, ringed by hills, olive groves and a few medieval lakeside towns. Because it is shallow, the water rises and falls greatly with the seasons and the year's rainfall, and the shoreline is often on the move.",
     formation:
@@ -12359,8 +12359,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Jirisan's designation as Korea's first national park in 1967 marked the starting point of the country's national park system.",
   },
-  // seeing sources: 天王峰 1058 m、1970 年韩国第 6 座国家公园（국립공원공단 knps.or.kr，1 级）。2026-09-10 核，verdict: ok。
   songnisan: {
+    // seeing sources: 天王峰 1058 m、1970 年韩国第 6 座国家公园（국립공원공단 knps.or.kr，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Songnisan is a relatively isolated massif in central Korea; its highest peak, Cheonhwangbong, reaches 1,058 m, and it became Korea's sixth national park in 1970.",
     formation:
@@ -12374,9 +12374,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Beopjusa Temple at the mountain's foot traces its founding to the Silla period, and preserves important Buddhist heritage including a rock-cut standing Buddha.",
   },
-  // seeing sources: 香积峰 1614 m、南韩第四高峰；1975 年与五台山同批列为第 10 个国家公园
-  //   （국립공원공단 1 级 + 한국민족문화대백과사전 2 级）。2026-09-10 核，verdict: ok。
   deogyusan: {
+    // seeing sources: 香积峰 1614 m、南韩第四高峰；1975 年与五台山同批列为第 10 个国家公园
+    //   （국립공원공단 1 级 + 한국민족문화대백과사전 2 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Deogyusan is South Korea's fourth-highest peak at 1,614 m, designated the country's tenth national park in 1975.",
     formation:
@@ -12466,11 +12466,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The basin floor is open farmland ringed by ridges, and long-standing limits on development have left the surrounding wetland and woodland habitat relatively intact.",
   },
-  // seeing / history sources: 1997-03-28 与牛浦沼同批登记为韩国首批拉姆萨尔湿地；面积 7,490 ㎡、海拔约 1280 m
-  //   （문화체육관광부 + 인제군 官网，均 1 级）。
-  //   ✅ 零争议红线逐句复核：全六段未出现朝鲜战争 / 军事分界线 / DMZ / 南北对立 / 「最北端」类表述，通过。
-  //   2026-09-10 核，verdict: ok。
   "yongneup-daeamsan": {
+    // seeing / history sources: 1997-03-28 与牛浦沼同批登记为韩国首批拉姆萨尔湿地；面积 7,490 ㎡、海拔约 1280 m
+    //   （문화체육관광부 + 인제군 官网，均 1 级）。
+    //   ✅ 零争议红线逐句复核：全六段未出现朝鲜战争 / 军事分界线 / DMZ / 南北对立 / 「最北端」类表述，通过。
+    //   2026-09-10 核，verdict: ok。
     seeing:
       "Yongneup, on the northwest slope of Mt. Daeam at 1,280 m elevation, is a high-altitude peat moor covering about 7,490 m², the only site in Korea preserving a peat layer.",
     formation:
@@ -12519,10 +12519,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The 18th-century geography Taengniji records the Charyeong Mountains as a traditional divide within Chungcheong itself — the country south of the range leaning toward Jeolla, the country north of it toward Gyeonggi — and that internal line still shows up in local geographic usage.",
   },
-  // seeing / formation sources: 天皇峰 809 m；1988-06-11 第 20 个国家公园、面积 56.22 km² 为韩国最小；
-  //   梅峰—蛇长峰间「云桥」悬索桥现桥 2006 年启用（월출산국립공원 官网 1 级 + 한국민족문화대백과사전 2 级）。
-  //   花岗岩差异风化 / 球状风化成因为韩国花岗岩地貌研究的通行解释。2026-09-10 核，verdict: ok。
   wolchulsan: {
+    // seeing / formation sources: 天皇峰 809 m；1988-06-11 第 20 个国家公园、面积 56.22 km² 为韩国最小；
+    //   梅峰—蛇长峰间「云桥」悬索桥现桥 2006 年启用（월출산국립공원 官网 1 级 + 한국민족문화대백과사전 2 级）。
+    //   花岗岩差异风化 / 球状风化成因为韩国花岗岩地貌研究的通行解释。2026-09-10 核，verdict: ok。
     seeing:
       "Wolchulsan is a cluster of granite peaks rising abruptly from the surrounding flatland; its highest peak, Cheonhwangbong, reaches 809 m, and in 1988 it became Korea's smallest national park.",
     formation:
@@ -12552,10 +12552,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "In 2021 the Suncheon Bay tidal flat was inscribed on the UNESCO World Heritage List as a component of the transboundary \"Getbol, Korean Tidal Flats\" series.",
   },
-  // seeing / history sources: 1988 年韩国第 19 个国家公园；官方自述为「국내 유일의 반도형 국립공원」
-  //   （国内唯一的半岛型国家公园），与正文「唯一将山地与海岸纳入同一座国家公园」一致（knps.or.kr，1 级）。
-  //   2026-09-10 核，verdict: ok。
   "byeonsan-peninsula-coast": {
+    // seeing / history sources: 1988 年韩国第 19 个国家公园；官方自述为「국내 유일의 반도형 국립공원」
+    //   （国内唯一的半岛型国家公园），与正文「唯一将山地与海岸纳入同一座国家公园」一致（knps.or.kr，1 级）。
+    //   2026-09-10 核，verdict: ok。
     seeing:
       "The Byeonsan Peninsula Coast is home to Korea's only national park combining mountain and coastal scenery; the layered sea cliffs at Chaeseokgang are its most distinctive feature.",
     formation:
@@ -12584,9 +12584,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Designated a national park in 1978, the Taean Coast is one of Korea's earliest coastal-type national parks.",
   },
-  // seeing / history sources: 1968-12-31 设立，为韩国第 4 个国家公园、但确系**首座海上**国家公园
-  //   （knps.or.kr 1 级 + 한국민족문화대백과사전 2 级）。溺谷型多岛海的描述与官方一致。2026-09-10 核，verdict: ok。
   "hallyeohaesang-marine-park": {
+    // seeing / history sources: 1968-12-31 设立，为韩国第 4 个国家公园、但确系**首座海上**国家公园
+    //   （knps.or.kr 1 级 + 한국민족문화대백과사전 2 级）。溺谷型多岛海的描述与官方一致。2026-09-10 核，verdict: ok。
     seeing:
       "Hallyeohaesang Marine National Park is a stretch of Korea's southern coastal waters scattered with hundreds of islands; established in 1968, it was Korea's first marine national park.",
     formation:
@@ -12600,11 +12600,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The park's name combines Hansan-do and Yeosu; its waters preserve the sites of naval battles between the Joseon navy and Japanese forces, an important location in Korea's maritime history.",
   },
-  // seeing / observation sources: 隘口海拔 1100–1400 m、三阳牧场、风力发电机、连接岭东岭西的通道 —— 与既有地理资料一致，
-  //   未见冲突（3 级，未找到 1 级实测口径）。
-  //   ✅ 零争议红线逐句复核（本条位于太白山脉岭东岭西一带，为红线重点条目）：全六段未出现军事 / 分断 /
-  //   边界管制 / 战争 / 「最北端」类表述，也未把生态保存归因于军事管制，通过。2026-09-10 核，verdict: ok。
   "daegwallyeong-highland": {
+    // seeing / observation sources: 隘口海拔 1100–1400 m、三阳牧场、风力发电机、连接岭东岭西的通道 —— 与既有地理资料一致，
+    //   未见冲突（3 级，未找到 1 级实测口径）。
+    //   ✅ 零争议红线逐句复核（本条位于太白山脉岭东岭西一带，为红线重点条目）：全六段未出现军事 / 分断 /
+    //   边界管制 / 战争 / 「最北端」类表述，也未把生态保存归因于军事管制，通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Daegwallyeong highland pastures occupy a mountain pass in the Taebaek Mountains at roughly 1,100–1,400 m elevation; Samyang Ranch is the largest of the pastures there.",
     formation:
@@ -12618,10 +12618,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Daegwallyeong has long served as a key mountain passage linking the Yeongdong and Yeongseo regions of Gangwon Province; today's ranches and wind farms continue this area's historic role as a hub for transport and resource use.",
   },
-  // seeing / formation sources: 面积约 3500 km²、韩国最重要稻米产区 —— 3500 km² 与「半岛最大平原」这两项被
-  //   익산 향토문화전자대전（2 级）等多方一致引用，但**均未标注测算年份与机构口径**，未找到 1 级来源。
-  //   平原边界相对稳定、不属易过期量，故正文不改；下一轮若找到国土地理情报院口径再补年份。2026-09-10 核，verdict: ok（口径待补）。
   "honam-plain": {
+    // seeing / formation sources: 面积约 3500 km²、韩国最重要稻米产区 —— 3500 km² 与「半岛最大平原」这两项被
+    //   익산 향토문화전자대전（2 级）等多方一致引用，但**均未标注测算年份与机构口径**，未找到 1 级来源。
+    //   平原边界相对稳定、不属易过期量，故正文不改；下一轮若找到国土地理情报院口径再补年份。2026-09-10 核，verdict: ok（口径待补）。
     seeing:
       "The Honam Plain is the largest plain on the Korean Peninsula, covering about 3,500 km², and Korea's most important rice-producing region.",
     formation:
@@ -12635,11 +12635,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The ancient Byeokgolje reservoir within the plain is believed to date to the Three Kingdoms period and is among the earliest known large-scale irrigation works on the Korean Peninsula, testifying to this region's long history of rice cultivation.",
   },
-  // seeing / history sources: 正文未断言河口堰的运行状态，不构成事实错误。
-  //   ⚠️ 待补（C8）：洛东江河口堰自 2019 年起分阶段试验开闸放海水、2022 年起大潮期常态化开闸
-  //   （기후에너지환경부，1 级）—— 这是一个正在变的量，当前条目完全未提及。**下一轮补一句带时点的表述**，
-  //   这一轮不编。沙洲面积同样未找到带监测时点的官方值。2026-09-10 核，verdict: ok（有待补项）。
   "nakdong-estuary-eulsukdo": {
+    // seeing / history sources: 正文未断言河口堰的运行状态，不构成事实错误。
+    //   ⚠️ 待补（C8）：洛东江河口堰自 2019 年起分阶段试验开闸放海水、2022 年起大潮期常态化开闸
+    //   （기후에너지환경부，1 级）—— 这是一个正在变的量，当前条目完全未提及。**下一轮补一句带时点的表述**，
+    //   这一轮不编。沙洲面积同样未找到带监测时点的官方值。2026-09-10 核，verdict: ok（有待补项）。
     seeing:
       "The Nakdong River Estuary is a braided delta formed where the Nakdong River meets the coast; Eulsukdo is the largest of its sandbars.",
     formation:
@@ -12686,9 +12686,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Nakdong River valley has long been a centre of population and culture in the Yeongnam region; historic riverside settlements such as Hahoe Village in Andong record this area's long cultural tradition.",
   },
-  // seeing sources: 国家河川段 397.79 km（금강홍수통제소 geumriver.go.kr，1 级），常见口径 397–401 km；
-  //   正文「约 397 公里」与「第三长河」均在可接受范围内。2026-09-10 核，verdict: ok。
   "geum-river": {
+    // seeing sources: 国家河川段 397.79 km（금강홍수통제소 geumriver.go.kr，1 级），常见口径 397–401 km；
+    //   正文「约 397 公里」与「第三长河」均在可接受范围内。2026-09-10 核，verdict: ok。
     seeing:
       "The Geum River rises in the Sobaek Mountains and runs about 397 km, Korea's third-longest river; the stretch flowing past Buyeo, the former capital of Baekje, is known as the Baengmagang (\"White Horse River\").",
     formation:
@@ -12702,13 +12702,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Buyeo area was the site of the later capital of the Baekje kingdom; Nakhwaam is traditionally said to be the cliff from which palace women leapt to their deaths as Baekje fell, an important site in the Korean Peninsula's ancient history.",
   },
-  // id 更名留痕（2026-09-10）：原 id 为 `hoeryongpo-andong-meander`，但 nameZh / nameEn / landmark / bbox / source
-  //   与全六段正文自始至终讲的都是**安东河回村**（洛东江干流曲流、芙蓉台、2010 年与良洞村同批列入 UNESCO
-  //   「韩国历史村落」）。回龙浦（醴泉郡，洛东江支流内城川）是韩国地理教科书里**另一处**同样著名的嵌入曲流范例，
-  //   两者常被并列对比、但不是同一处。正文逐句核对与河回村事实吻合、不改；只把 id 里那个错配的专名改掉，
-  //   免得下一轮核实的人再为「回龙浦」白跑一趟（本轮就发生了）。参照：국가유산청「名胜 醴泉回龙浦」（1 级）。
-  //   seeing / history sources: 2010 年河回村与庆州良洞村列入 UNESCO 世界遗产「韩国历史村落」。verdict: ok。
   "hahoe-andong-meander": {
+    // id 更名留痕（2026-09-10）：原 id 为 `hoeryongpo-andong-meander`，但 nameZh / nameEn / landmark / bbox / source
+    //   与全六段正文自始至终讲的都是**安东河回村**（洛东江干流曲流、芙蓉台、2010 年与良洞村同批列入 UNESCO
+    //   「韩国历史村落」）。回龙浦（醴泉郡，洛东江支流内城川）是韩国地理教科书里**另一处**同样著名的嵌入曲流范例，
+    //   两者常被并列对比、但不是同一处。正文逐句核对与河回村事实吻合、不改；只把 id 里那个错配的专名改掉，
+    //   免得下一轮核实的人再为「回龙浦」白跑一趟（本轮就发生了）。参照：국가유산청「名胜 醴泉回龙浦」（1 级）。
+    //   seeing / history sources: 2010 年河回村与庆州良洞村列入 UNESCO 世界遗产「韩国历史村落」。verdict: ok。
     seeing:
       "The Hahoe (Andong) meander is a horseshoe-shaped incised meander cut by the Nakdong River into granite bedrock, with the river wrapping around three sides of Hahoe Village.",
     formation:
@@ -12722,11 +12722,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Hahoe Village, a well-preserved traditional settlement on the terrace inside the meander, was inscribed on the UNESCO World Heritage List in 2010 together with Yangdong Village in Gyeongju as the \"Historic Villages of Korea.\"",
   },
-  // seeing / formation sources: 구룡폭포沿청학동소금강溪谷约 3 km 分布 9 个大小瀑布、瀑潭深约 13 m，与「九级连瀑」一致；
-  //   花岗岩节理差异侵蚀为标准解释（한국민족문화대백과사전 2 级 + 韩国观光公社 2 级）。
-  //   ✅ 零争议红线：两处提及「金刚山」仅为命名类比（传统上以本地名山比拟金刚山以彰显秀丽），未涉主权 / 军事 /
-  //   南北对立，通过。2026-09-10 核，verdict: ok。
   "sogeumgang-gorge": {
+    // seeing / formation sources: 구룡폭포沿청학동소금강溪谷约 3 km 分布 9 个大小瀑布、瀑潭深约 13 m，与「九级连瀑」一致；
+    //   花岗岩节理差异侵蚀为标准解释（한국민족문화대백과사전 2 级 + 韩国观光公社 2 级）。
+    //   ✅ 零争议红线：两处提及「金刚山」仅为命名类比（传统上以本地名山比拟金刚山以彰显秀丽），未涉主权 / 军事 /
+    //   南北对立，通过。2026-09-10 核，verdict: ok。
     seeing:
       "Sogeumgang Gorge, within Odaesan National Park, is a deep-cut granite gorge named for scenery said to rival that of Mount Kumgang in the northern Korean Peninsula.",
     formation:
@@ -15090,10 +15090,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The range has long been a natural barrier for north-south movement across the Anatolian peninsula; several passes historically served as traditional routes for caravans and armies, and numerous ancient settlement remains survive in the mountains.",
   },
-  // 全六段 sources: 阿尔卑斯—喜马拉雅带构造归属、东段（卡奇卡尔一带）更高更冰蚀化、迎风坡多雨森林更密、
-  //   本都王国古代史 —— 逐段交叉核对未见数字硬伤（3 级，未找到 MTA 一手页面）。
-  //   ✅ 零争议红线：未涉及东南安纳托利亚 / 库尔德议题，通过。2026-09-10 核，verdict: ok。
   "pontus-mountains": {
+    // 全六段 sources: 阿尔卑斯—喜马拉雅带构造归属、东段（卡奇卡尔一带）更高更冰蚀化、迎风坡多雨森林更密、
+    //   本都王国古代史 —— 逐段交叉核对未见数字硬伤（3 级，未找到 MTA 一手页面）。
+    //   ✅ 零争议红线：未涉及东南安纳托利亚 / 库尔德议题，通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Pontic Mountains run along Turkey's Black Sea coast, named for the ancient region of Pontus; the range rises abruptly from the shoreline, separating the humid Black Sea coast from the arid Central Anatolian Plateau.",
     formation:
@@ -15137,11 +15137,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Historically used as seasonal high-altitude pasture by local herders, the massif became a major base for mountaineering and rock climbing in Turkey after the national park was established in 1995.",
   },
-  // seeing sources: 卡奇卡尔峰高程**两说并存** —— 多数土耳其媒体给 3937 m，另有国家公园相关资料给 3932 m，
-  //   均为 3 级、未见 HGM 权威值。5 米之差落在测量口径差异内，**正文保留 3937 不改**（比照伯尔尼纳峰 4048/4049 那一例：
-  //   同一测量的不同取整，不该靠 3 级来源推翻）。「距黑海海岸约 40 公里」与检索到的 40–50 km 区间吻合。
-  //   2026-09-10 核，verdict: ok（两个值都记在这里，下一轮别再改一遍）。
   "kackar-mountains": {
+    // seeing sources: 卡奇卡尔峰高程**两说并存** —— 多数土耳其媒体给 3937 m，另有国家公园相关资料给 3932 m，
+    //   均为 3 级、未见 HGM 权威值。5 米之差落在测量口径差异内，**正文保留 3937 不改**（比照伯尔尼纳峰 4048/4049 那一例：
+    //   同一测量的不同取整，不该靠 3 级来源推翻）。「距黑海海岸约 40 公里」与检索到的 40–50 km 区间吻合。
+    //   2026-09-10 核，verdict: ok（两个值都记在这里，下一轮别再改一遍）。
     seeing:
       "The Kaçkar Mountains form the highest section of the eastern Pontic range, with the summit of Mount Kaçkar reaching 3,937 m and its high plateau areas around 3,000 m, only about 40 km from the Black Sea coast.",
     formation:
@@ -15232,12 +15232,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Lake Tuz has long been an important source of salt in Anatolia; today it yields salt on the order of a million tonnes a year, supplying about 70 percent of Turkey's salt needs.",
   },
-  // seeing sources: 盆地面积约 5 万 km² —— **两个官方来源互相印证**：土耳其农业与林业部 49,805.34 km²、
-  //   国家水利总局（DSİ）49,786 km²，均 1 级。
-  //   ⚠️ 「海拔 850 至 3450 米」**未能核实**：查不到官方一手数据说明 3450 m 上限对应哪座山峰，记 unknown、正文不动。
-  //   下一轮若仍核不到，改成「数百米至三千余米不等」这类不会出错的表述。
-  //   formation / history: 地下水超采 + 干旱导致天坑（obruk）激增，多篇论文与新闻交叉印证。2026-09-10 核，verdict: ok（一项 unknown）。
   "konya-basin": {
+    // seeing sources: 盆地面积约 5 万 km² —— **两个官方来源互相印证**：土耳其农业与林业部 49,805.34 km²、
+    //   国家水利总局（DSİ）49,786 km²，均 1 级。
+    //   ⚠️ 「海拔 850 至 3450 米」**未能核实**：查不到官方一手数据说明 3450 m 上限对应哪座山峰，记 unknown、正文不动。
+    //   下一轮若仍核不到，改成「数百米至三千余米不等」这类不会出错的表述。
+    //   formation / history: 地下水超采 + 干旱导致天坑（obruk）激增，多篇论文与新闻交叉印证。2026-09-10 核，verdict: ok（一项 unknown）。
     seeing:
       "The Konya Basin is a large interior-drainage basin on the Central Anatolian Plateau, covering about 50,000 km² at elevations of 850 to 3,450 m, bounded by the Pontic Mountains to the north and the Taurus Mountains to the south, and forming an important agricultural heartland for Turkey.",
     formation:
@@ -15251,10 +15251,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Konya, within the basin, was the capital of the Seljuk Sultanate in Anatolia; the 13th-century Sufi poet Rumi lived there and founded the Mevlevi Order (the whirling dervishes), and the Çatalhöyük site within the basin is a major Neolithic archaeological site.",
   },
-  // 全六段 sources: 钙华台地约 2700 m × 600 m × 160 m；17 处以上温泉（35–100 ℃）；1988 年与希拉波利斯古城一同列入 UNESCO。
-  //   ✅ **成因机制专项复核**：正文写的是「二氧化碳逸出后碳酸钙结晶析出」，**没有落进「温泉水蒸发」这个常见错误说法**——
-  //   这正是 C7 要防的那一类，本条通过。3 级复核。2026-09-10 核，verdict: ok。
   "pamukkale-travertines": {
+    // 全六段 sources: 钙华台地约 2700 m × 600 m × 160 m；17 处以上温泉（35–100 ℃）；1988 年与希拉波利斯古城一同列入 UNESCO。
+    //   ✅ **成因机制专项复核**：正文写的是「二氧化碳逸出后碳酸钙结晶析出」，**没有落进「温泉水蒸发」这个常见错误说法**——
+    //   这正是 C7 要防的那一类，本条通过。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Pamukkale ('Cotton Castle') is a geothermal travertine terrace formation in the Denizli graben, named for its brilliant white, stepped calcium-carbonate terraces, spanning about 2,700 m long, 600 m wide and 160 m high.",
     formation:
@@ -15268,11 +15268,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "From the 2nd century BCE, the Greco-Roman city of Hierapolis was built beside the springs atop the terrace, its people believing the thermal waters had healing and sacred properties; Pamukkale was inscribed as a UNESCO World Heritage Site alongside Hierapolis in 1988.",
   },
-  // formation / history sources: 凝灰岩来自埃尔吉耶斯、哈桑、梅伦迪兹等火山自中新世持续至上新世的多次喷发，
-  //   堆积约 1 万 km² 的凝灰岩／熔结凝灰岩；软质凝灰岩快速侵蚀、硬质盖层保护形成「精灵烟囱」——差异风化机制表述正确，
-  //   未见因果颠倒。格雷梅国家公园 1985 年列入 UNESCO（whc.unesco.org/en/list/357，1 级）。
-  //   ⚠️ 「侵蚀速率每千年 2 至 3 厘米」未能独立核实，记 unknown、正文不动。2026-09-10 核，verdict: ok（一项 unknown）。
   "cappadocia-fairy-chimneys": {
+    // formation / history sources: 凝灰岩来自埃尔吉耶斯、哈桑、梅伦迪兹等火山自中新世持续至上新世的多次喷发，
+    //   堆积约 1 万 km² 的凝灰岩／熔结凝灰岩；软质凝灰岩快速侵蚀、硬质盖层保护形成「精灵烟囱」——差异风化机制表述正确，
+    //   未见因果颠倒。格雷梅国家公园 1985 年列入 UNESCO（whc.unesco.org/en/list/357，1 级）。
+    //   ⚠️ 「侵蚀速率每千年 2 至 3 厘米」未能独立核实，记 unknown、正文不动。2026-09-10 核，verdict: ok（一项 unknown）。
     seeing:
       "Cappadocia is a volcanic-ash landscape in Central Anatolia renowned for its 'fairy chimney' rock pillars, encompassing Göreme National Park between Nevşehir, Ürgüp and Avanos, inscribed as a UNESCO World Heritage Site in 1985.",
     formation:
@@ -15286,11 +15286,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Cappadocia was historically a refuge where Byzantine-era Christians carved underground cities and rock-cut churches; the Göreme area preserves numerous rock-cut monasteries and frescoes, and today a sunrise hot-air balloon flight over this pillar landscape is the region's signature visitor experience.",
   },
-  // 全六段 sources: 峡谷长约 15 km（多来源 14–18 km 区间内）、最深约 150 m（100–150 m 区间内）；
-  //   梅伦迪兹河全长约 60 km、发源于梅伦迪兹山；**「最终流入图兹湖」经专项核实成立**——该河经马马森水坝与乌卢河水道
-  //   汇入图兹湖，其流域本就在图兹湖封闭流域内。约 50 座拜占庭岩凿教堂与资料一致。
-  //   ✅ 零争议红线：history 只写宗教避难史实，无现代政治内容，通过。3 级复核。2026-09-10 核，verdict: ok。
   "ihlara-valley": {
+    // 全六段 sources: 峡谷长约 15 km（多来源 14–18 km 区间内）、最深约 150 m（100–150 m 区间内）；
+    //   梅伦迪兹河全长约 60 km、发源于梅伦迪兹山；**「最终流入图兹湖」经专项核实成立**——该河经马马森水坝与乌卢河水道
+    //   汇入图兹湖，其流域本就在图兹湖封闭流域内。约 50 座拜占庭岩凿教堂与资料一致。
+    //   ✅ 零争议红线：history 只写宗教避难史实，无现代政治内容，通过。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Ihlara Valley, in southwestern Cappadocia, is a deeply incised canyon about 15 km long and up to 150 m deep, carved by the Melendiz River over thousands of years through volcanic rock.",
     formation:
