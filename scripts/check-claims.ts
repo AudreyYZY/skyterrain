@@ -136,6 +136,15 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
     { re: /市区人口/, why: "冰岛统计局只有市镇、城镇聚落与首都区三档，没有「市区人口」" },
     { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "冰岛统计局没有「都会区」这一档，首都区（höfuðborgarsvæðið）才是官方分组" },
   ],
+  // 爱尔兰：CSO 的档是普查总人口（全国/各郡）、城市法定辖区（全国仅 5 座法定城市）、
+  // 「城市及郊区」建成区（2022 年普查起启用）、以及只到 NUTS3 的年度估计。
+  // **没有「都会区 / metro area」这一档**（2026-09-09 核，都柏林与利默里克两条都中过招）。
+  // 瑞典**不**列进来：Stormalmö 是通行的统计概念、Göteborgsregionen 是有法人地位的市镇联合体，
+  // 只要写明发布方与年份就是可核的 —— 与瑞士的巴塞尔三国区、大日内瓦同理。
+  ireland: [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "爱尔兰 CSO 没有「都会区」这一档，官方档是「城市及郊区」建成区或郡" },
+    { re: /\b(?:greater )?metro(?:politan)? area\b[^.;]{0,24}?[\d.,]+/i, why: "Ireland's CSO publishes no metropolitan-area tier — use the census city-and-suburbs count or the county" },
+  ],
 };
 
 /**

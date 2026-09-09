@@ -8423,8 +8423,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月天气相对稳定、日照较长，是旅游旺季；沿大西洋海岸线的“狂野大西洋之路”自驾是探索西海岸的经典方式，山区与海崖步道需注意突变天气与防风防雨装备。",
   },
   dublin: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   都柏林：2022 年普查，NUTS3「Dublin」区（四个地方政府）合计 1,458,154；都柏林市议会辖区约 59 万。CSO 官方新闻稿，级别 1，2026-09-09 核。
+    //   https://www.cso.ie/en/csolatestnews/pressreleases/2023pressreleases/pressstatementcensusofpopulation2022-summaryresultsdublin
+    //   **原文的「都会区约 120 万」是自造口径**（CSO 没有 metro area 这一档），而同条目 howItWorks 早就写着约 146 万 —— 又一次「一个条目里两段各写各的」。
+    //   另有一个数量级接近的官方档：CSO 2022 年起启用的「都柏林市及郊区」建成区约 126 万，但本轮**没能回到 CSO 一手表格逐字核对**，只有 3 级转引，因此正文未采用。
     identity:
-      "都柏林是爱尔兰首都与最大城市，人口约120万（都会区），坐落于利菲河口都柏林湾畔，是爱尔兰的政治、经济与文化中心，也是欧洲重要的科技与金融枢纽之一。",
+      "都柏林是爱尔兰首都与最大城市，都柏林市议会辖区人口约59万、连同周边共四个地方政府合计约146万（2022年普查），坐落于利菲河口都柏林湾畔，是爱尔兰的政治、经济与文化中心，也是欧洲重要的科技与金融枢纽之一。",
     // howItWorks sources: Wikipedia (2026-09): Dublin (Dublin City Council 117.8 km², 592,713 2022, 63 councillors, ceremonial Lord Mayor, chief executive; 4 councils in County Dublin; County Dublin ~1.46 million; GDA ~2.1 million; postal districts odd north/even south; Luas/DART/Leap); Local government in the Republic of Ireland
     howItWorks:
       "人们口中的都柏林，在行政上分成四块：都柏林市议会管辖约 118 平方公里、2022 年约 59 万人，此外芬戈、南都柏林、邓莱里—拉斯当各有自己的议会，四者合成都柏林郡，约 146 万人；大都柏林区约 200 万，占爱尔兰的四成。爱尔兰的地方议会由民选议员组成，但行政由任命的首席执行官掌管，市长（Lord Mayor）是每年轮换的礼仪职位；议会管住房、规划、道路、图书馆与消防，警察、学校与医疗归中央政府。利菲河把城市分成北岸与南岸，邮政区号单数在北、双数在南——“都柏林 4”“都柏林 8”是本地人的地址语言，2015 年起又加了 Eircode。乔治时期的广场在南岸，圣殿酒吧区在河边，码头区是金融与科技公司的所在，凤凰公园在西面。地址写“门牌、街道、邮政区号、Eircode”。两条 Luas 有轨电车线、DART 沿海铁路与公交用一张 Leap 卡贯通，没有地铁。初来的人最容易犯的错，是把都柏林市议会的辖区当作整座城，而它只占都柏林郡人口的四成。",
@@ -8440,8 +8445,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月天气相对温暖、日照较长；圣帕特里克节（3月17日前后）游客较多、住宿紧张，建议提前预订；市内景点集中，步行加公交足以覆盖。",
   },
   kilkenny: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   本条目数字取自 CSO 2022 年普查（与同条目 howItWorks 一致），3 级转引 CSO 建成区排名表复核，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_Republic_of_Ireland_by_population
+    //   ⚠️ **2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市/郡一级没有官方更新数** —— 沿用 2022 不算过期（CSO 的年度估计只到全国与 8 个 NUTS3 区域）。
     identity:
-      "基尔肯尼是爱尔兰东南部伦斯特省一座保存完好的中世纪城镇，人口约2.7万，以诺曼城堡与中世纪街巷闻名，被称为爱尔兰的“中世纪之都”。",
+      "基尔肯尼是爱尔兰东南部伦斯特省一座保存完好的中世纪城镇，人口约2.7万（2022年普查），以诺曼城堡与中世纪街巷闻名，被称为爱尔兰的“中世纪之都”。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kilkenny (Ireland; city in County Kilkenny in Leinster with 27,184 residents in 2022, the thirteenth-largest urban centre in the country; a 6th-century ecclesiastical settlement of Saint Canice, a town charter from William Marshall in 1207 and city status by royal charter of James I in 1609; the Confederation of Kilkenny operated here from 1642 to 1649; Kilkenny Castle, formerly the Butler seat; St Canice's Cathedral with its 9th-century round tower; nicknamed the Marble City for the local black limestone with white fossils; the Kilkenny Arts Festival, the Cat Laughs comedy festival and the Roots Festival; Cartoon Saloon and a craft and design scene; rail to Dublin and Waterford)
     howItWorks:
       "基尔肯尼是爱尔兰东南部的城市，2022 年人口 27,184，是全国第十三大城区。它在法律上是城市：1609 年詹姆斯一世授予城市特许状，但爱尔兰 2014 年废除了市镇一级议会，如今由基尔肯尼郡议会统一管辖，因此“城市”是历史身份而非行政层级。城市的骨架是一条“中世纪一英里”：南端是巴特勒家族的基尔肯尼城堡，北端是圣卡尼斯大教堂与 9 世纪的圆塔，两者之间由几条窄巷串起，1207 年威廉·马歇尔颁发的城镇特许状划定的范围大致就是这一段。它得名“大理石之城”是因为本地黑色石灰岩里嵌着白色化石，磨光后像大理石，老建筑多用它砌成。1642 至 1649 年“基尔肯尼同盟”在此运作，是爱尔兰史上常被提及的一段。夏天的艺术节与喜剧节把全城占满，铁路通往都柏林与沃特福德。初来的人最容易犯的错，是按“城市”二字预期规模，而这里步行半小时可以走穿。",
@@ -8457,8 +8466,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；基尔肯尼艺术节（8月）期间游客较多；作为内陆小城，适合作为探索伦斯特省东南部乡村的一到两日落脚点。",
   },
   cork: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   本条目数字取自 CSO 2022 年普查（与同条目 howItWorks 一致），3 级转引 CSO 建成区排名表复核，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_Republic_of_Ireland_by_population
+    //   ⚠️ **2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市/郡一级没有官方更新数** —— 沿用 2022 不算过期（CSO 的年度估计只到全国与 8 个 NUTS3 区域）。
     identity:
-      "科克是爱尔兰第二大城市，人口约22万，坐落在利河河口，是爱尔兰南部芒斯特省的经济与文化中心，当地人常戏称科克为爱尔兰“真正的首都”。",
+      "科克是爱尔兰第二大城市（按2022年普查的城市及郊区人口计），人口约22万（2022年普查），坐落在利河河口，是爱尔兰南部芒斯特省的经济与文化中心，当地人常戏称科克为爱尔兰“真正的首都”。",
     // howItWorks sources: Wikipedia (2026-09): Cork (Cork City Council ~187 km² after 2019 extension; 224,004 2022; separate from Cork County Council; island in the Lee; UCC; Apple; buses; suburban rail to Cobh/Midleton); Local government in the Republic of Ireland
     howItWorks:
       "科克是爱尔兰第二大城市，科克市议会 2019 年扩界后管辖约 187 平方公里、2022 年约 22 万人，与科克郡议会是两个独立的地方政府；议会由民选议员组成，行政由任命的首席执行官掌管，市长每年轮换，警察、学校与医疗归中央。市中心在利河两条河汊之间的岛上，圣帕特里克街与英国市场在那里，主街之下曾是河道；北岸的香登区在山坡上，南岸向科克港延伸——世界最大的天然港之一，科夫与林加斯基迪的制药业在港边。科克大学与苹果的欧洲总部是两个最大的雇主。公共交通只有公交，市郊铁路通往科夫与米德尔顿。科克人自称“真正的首都”，口音的抑扬是它的标签。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把科克当作一座小城，而它的市议会辖区在 2019 年扩大了近五倍，港口一带的产业规模不逊于都柏林。",
@@ -8474,8 +8487,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；科克是探索芒斯特省南部海岸与凯里郡的理想门户，火车可直达都柏林（约2.5小时）。",
   },
   killarney: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   本条目数字取自 CSO 2022 年普查（与同条目 howItWorks 一致），3 级转引 CSO 建成区排名表复核，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_Republic_of_Ireland_by_population
+    //   ⚠️ **2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市/郡一级没有官方更新数** —— 沿用 2022 不算过期（CSO 的年度估计只到全国与 8 个 NUTS3 区域）。
     identity:
-      "基拉尼是爱尔兰西南部凯里郡的小城，人口约1.4万，紧邻麦吉利卡迪山脉与基拉尼湖群，是探索凯里之环与爱尔兰最高峰的传统门户。",
+      "基拉尼是爱尔兰西南部凯里郡的小城，人口约1.4万（2022年普查），紧邻麦吉利卡迪山脉与基拉尼湖群，是探索凯里之环与爱尔兰最高峰的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Killarney (Ireland; town in County Kerry with 14,412 residents in 2022, the second largest in the county; a monastery founded on Innisfallen Island in 640; tourism has underpinned the town's economy for more than two and a half centuries, with Queen Victoria's visit of 1861 raising its profile; the Lakes of Killarney, Ross Castle, Muckross House and Abbey, MacGillycuddy's Reeks and the Gap of Dunloe; the Muckross estate presented to the Irish state in 1932 to create the country's first national park; tourism worth about 410 million euros a year with about 1.1 million visitors; the Liebherr plant of 1958 a major employer; the N22, rail to Dublin, Cork and Tralee, and Kerry Airport at Farranfore)
     howItWorks:
       "基拉尼是爱尔兰凯里郡的城镇，2022 年人口 14,412，是全郡第二大；爱尔兰 2014 年废除了市镇一级议会，本地事务由凯里郡议会办理。这座镇的经济两个半世纪以来一直靠旅游，1861 年维多利亚女王来访使它在英语世界出名，如今每年约一百一十万人次到访，旅游收入约四亿一千万欧元。它的资本是身后的山与湖：基拉尼国家公园是爱尔兰第一座国家公园，1932 年马克罗斯庄园捐给国家而设立，此后不断扩大，园内有基拉尼三湖、罗斯城堡、马克罗斯宅邸与修道院；麦吉利卡迪山脉是爱尔兰最高的山群，敦洛峡在其中，“凯里之环”环形公路从镇上出发。马车至今在公园里载客。1958 年设厂的利勃海尔是镇上另一大雇主，铁路通往都柏林、科克与特拉利，凯里机场在法兰福尔。初来的人最容易犯的错，是把“凯里之环”当作一天的轻松兜风，而它是一条约 180 公里的窄路。",
@@ -8508,8 +8525,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；半岛沿海道路狭窄且多急弯，自驾需谨慎；小镇夜晚的传统音乐酒吧是体验当地文化的好去处。",
   },
   waterford: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   本条目数字取自 CSO 2022 年普查（与同条目 howItWorks 一致），3 级转引 CSO 建成区排名表复核，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_Republic_of_Ireland_by_population
+    //   ⚠️ **2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市/郡一级没有官方更新数** —— 沿用 2022 不算过期（CSO 的年度估计只到全国与 8 个 NUTS3 区域）。
     identity:
-      "沃特福德是爱尔兰最古老的城市，由维京人于914年建立，人口约6万，位于爱尔兰东南部苏尔河口，以水晶工艺闻名。",
+      "沃特福德是爱尔兰最古老的城市，由维京人于914年建立，人口约6万（2022年普查），位于爱尔兰东南部苏尔河口，以水晶工艺闻名。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Waterford (Ireland; city in the south-east in Munster, the oldest city in the state, founded by Vikings in 914, with 60,079 residents in 2022, the fifth most populous city in the state; the Viking Triangle is the tenth-century settlement, with Reginald's Tower of the 13th to 14th century as its landmark; the motto Urbs Intacta Manet Waterfordia earned after repelling sieges in the 15th century; Waterford Crystal made here from 1783 until early 2009 and resumed in 2010; the port handles about 12 per cent of Ireland's external trade by value, on the River Suir; South East Technological University established 2022; the M9 to Dublin and rail from Plunkett station; the airport currently without scheduled flights)
     howItWorks:
       "沃特福德是爱尔兰东南部的城市，2022 年人口 60,079，是爱尔兰共和国第五大城市，也是最古老的一座——公元 914 年由维京人建城，比都柏林还早。城市治理归沃特福德市与郡议会：2014 年爱尔兰的地方改革把原来的市议会与郡议会合并，如今一个议会同时管城与郡。老城最核心的一块叫“维京三角”，就是 10 世纪的原始聚落所在，13 至 14 世纪的雷金纳德塔立在河边，是全国现存最古老的城市建筑之一；15 世纪它两次挡住围城，因此得了“沃特福德城完好无损”的城市箴言。沃特福德水晶自 1783 年在此生产，2009 年初停产，2010 年恢复了规模较小的生产与展示。港口在舒尔河上，按货值约占爱尔兰对外贸易的一成二；东南理工大学 2022 年成立，M9 高速与铁路通往都柏林，本地机场目前没有定期航班。初来的人最容易犯的错，是以为都柏林最老，而这座城早了将近半个世纪。",
@@ -8525,11 +8546,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；作为爱尔兰最古老的城市，沃特福德适合安排半日到一日深度探访其维京—诺曼历史街区。",
   },
   limerick: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   本条目数字取自 CSO 2022 年普查（与同条目 howItWorks 一致），3 级转引 CSO 建成区排名表复核，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_Republic_of_Ireland_by_population
+    //   ⚠️ **2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市/郡一级没有官方更新数** —— 沿用 2022 不算过期（CSO 的年度估计只到全国与 8 个 NUTS3 区域）。
     identity:
-      "利默里克是爱尔兰第三大城市，人口约10万，坐落于香农河口，是爱尔兰中西部芒斯特省的重要城市与门户。",
-    // howItWorks sources: Wikipedia (2026-09): Limerick (Limerick City and County Council 2014; first directly elected mayor in Ireland June 2024; city ~102,300 2022; metro ~162,400; King's Island; Newtown Pery grid; UL Castletroy; Shannon Airport 25 km); Local government in the Republic of Ireland
+      "利默里克是爱尔兰第三大城市（按2022年普查的城市及郊区人口计），人口约10万（2022年普查），坐落于香农河口，是爱尔兰中西部芒斯特省的重要城市与门户。",
+    // howItWorks sources: 利默里克城市及郊区约 102,000（2022 年普查，CSO）。**「都会区约 16 万」是自造口径** —— CSO 没有 metro area 这一档，与 dublin 条目同型，本轮一并清掉。2026-09-09 核。
+    //   https://www.cso.ie/
+    //   2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市一级没有官方更新数。
     howItWorks:
-      "利默里克是爱尔兰第三大城市，2014 年市与郡合并为利默里克市郡议会，2024 年 6 月它选出了爱尔兰第一位直选市长，其他地方议会的市长仍是每年轮换的礼仪职位；2022 年城区人口约 10 万，都会区约 16 万。议会管住房、规划与道路，警察、学校与医疗归中央。城市在香农河口：国王岛上的中世纪城区有 1210 年的约翰王城堡，河南岸的纽敦佩里是 18 世纪的乔治式格网，奥康奈尔街是它的主街，这种格网在爱尔兰城市里独一无二；利默里克大学在东郊的卡斯尔特罗伊，香农机场在西面约 25 公里。橄榄球是这座城的宗教，芒斯特队的主场托蒙德公园在国王岛旁。“利默里克 2030”的再生计划正在改造市中心。公共交通只有公交，铁路通往都柏林。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把利默里克当作去克莱尔郡的过路站，而它是中西部的行政与大学中心。",
+      "利默里克是爱尔兰第三大城市，2014 年市与郡合并为利默里克市郡议会，2024 年 6 月它选出了爱尔兰第一位直选市长，其他地方议会的市长仍是每年轮换的礼仪职位；2022 年普查的城市及郊区人口约 10.2 万；爱尔兰官方没有「都会区」这一档，更大范围只能按郡计。议会管住房、规划与道路，警察、学校与医疗归中央。城市在香农河口：国王岛上的中世纪城区有 1210 年的约翰王城堡，河南岸的纽敦佩里是 18 世纪的乔治式格网，奥康奈尔街是它的主街，这种格网在爱尔兰城市里独一无二；利默里克大学在东郊的卡斯尔特罗伊，香农机场在西面约 25 公里。橄榄球是这座城的宗教，芒斯特队的主场托蒙德公园在国王岛旁。“利默里克 2030”的再生计划正在改造市中心。公共交通只有公交，铁路通往都柏林。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把利默里克当作去克莱尔郡的过路站，而它是中西部的行政与大学中心。",
     layout:
       "老城沿香农河而建，国王约翰城堡扼守河道要冲，市区分为爱尔兰镇、英格兰镇与纽敦佩里等历史片区。",
     gettingAround:
@@ -8542,8 +8569,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；利默里克是探索香农河沿岸与克莱尔郡（伯伦高原、莫赫悬崖）的便捷门户，距莫赫悬崖车程约1.5小时。",
   },
   galway: {
+    // identity sources: **爱尔兰的官方人口口径**（CSO，2026-09-09 核）：普查总人口（全国 / 各郡）· 城市法定辖区（City Council administrative area，2014 年地方政府改革后全国仅 5 座法定「城市」）· **「城市及郊区」建成区（City and suburbs / Built-Up Area，2022 年普查起正式启用）** · 年度人口估计（Population and Migration Estimates，**只到全国与 8 个 NUTS3 区域，不下探到郡或城市**，每年 4 月基准、8 月下旬发布）。**官方没有「都会区 / metro area」这一档。** 普查每 5 年一次，上次 2022-04、下次 **2027-05-09**；因此 2023–2026 年间城市与郡一级本来就没有官方更新数，沿用 2022 普查数字不算过期。
+    //   本条目数字取自 CSO 2022 年普查（与同条目 howItWorks 一致），3 级转引 CSO 建成区排名表复核，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/List_of_urban_areas_in_the_Republic_of_Ireland_by_population
+    //   ⚠️ **2022 普查之后到 2027-05-09 下次普查之间，爱尔兰城市/郡一级没有官方更新数** —— 沿用 2022 不算过期（CSO 的年度估计只到全国与 8 个 NUTS3 区域）。
     identity:
-      "戈尔韦是爱尔兰西部康诺特省的核心城市，人口约8万，坐落于科里布河口戈尔韦湾畔，是探索康尼马拉与阿伦群岛的门户，也是爱尔兰重要的盖尔语文化中心。",
+      "戈尔韦是爱尔兰西部康诺特省的核心城市，人口约8.6万（2022年普查），坐落于科里布河口戈尔韦湾畔，是探索康尼马拉与阿伦群岛的门户，也是爱尔兰重要的盖尔语文化中心。",
     // howItWorks sources: Wikipedia (2026-09): Galway (Galway City Council 57.3 km²; 85,910 2022; separate from County Galway; Corrib/Galway Bay; University of Galway ~19,000; Gaeltacht neighbourhoods; medtech; buses only); Local government in the Republic of Ireland
     howItWorks:
       "戈尔韦是爱尔兰西部最大的城市，戈尔韦市议会管辖约 57 平方公里、2022 年约 8.6 万人，与戈尔韦郡议会是两个独立的地方政府；议会管住房、规划与道路，警察、学校与医疗归中央。城市在科里布河注入戈尔韦湾的地方：中世纪的拉丁区沿商店街到西班牙拱门，艾尔广场是市中心，克拉达在河西岸，索尔特希尔的海滨长廊向西延伸。戈尔韦大学约 1.9 万学生，占市民的四分之一；市内的几个街区属于盖尔语区，康尼马拉的盖尔语区就在西面，路牌与剧院双语并行。医疗器械是最大的产业，美敦力与波士顿科学的工厂在城里。艺术节与赛马周是一年的两个高潮。公共交通只有公交，铁路通往都柏林，渡轮通往阿伦群岛。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把戈尔韦当作一座旅游小镇，而它是西部的大学与医疗器械之城。",
@@ -8872,9 +8903,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
       "斯德哥尔摩是瑞典首都与最大城市，人口约100万（2025年末；斯德哥尔摩省约249万），坐落于梅拉伦湖与波罗的海交汇处，由14座主要岛屿组成，是北欧重要的政治、经济与设计中心。",
-    // howItWorks sources: Wikipedia (2026-09): Stockholm (municipality ~188 km²; ~996,000 2025; 11 district councils since 2023; Region Stockholm 26 municipalities ~2.5 million runs healthcare + SL; 14 islands; tunnelbana 3 lines); Municipalities of Sweden
+    // howItWorks sources: **瑞典的官方人口口径**（SCB，2026-09-09 核）：`kommun`（市镇年末登记人口，含郊区与乡村，**每年 12-31 基准、次年 2 月下旬发布**）· `tätort`（城区/建成区，**每 2–3 年一期**，最近一期 2023 年数据、2024-11-28 发布，下一期预计 2026-11-26）· `län` / `Region`（省 / 大区）。**没有统一官方定义的「都会区」**，但部分是有法人地位的市镇联合体（如 Göteborgsregionen），可具名引用并附该机构自己的数字。三档能差好几倍（卡尔马市镇约 7.3 万 vs 城区 4.26 万），**写哪一档必须点名**。
+    //   斯德哥尔摩大区 2025 年末约 249 万（SCB，级别 1）。
+    //   https://www.scb.se/pressmeddelande/lagsta-folkokningen-pa-25-ar/
     howItWorks:
-      "人们口中的斯德哥尔摩，在行政上只是约 188 平方公里的斯德哥尔摩市，2025 年人口约 100 万，由市议会治理，市长（财政市政委员）由多数派推举；市下分 11 个区（2023 年从 14 个合并而来），各有自己的区委员会，管小学、社会服务与文化。瑞典的市镇管学校、养老与规划，21 个大区管医院与公共交通，国家管警察与大学：斯德哥尔摩大区有 26 个市镇、约 250 万人，SL 的公交网覆盖整个大区，索尔纳、纳卡、松德比贝里各是独立的市镇。城市建在梅拉伦湖入海处的 14 座岛上，三成是水面、三成是绿地：老城在中央的小岛上，南岛、东城、国王岛、北城各是内城的一片，动物园岛是博物馆区；内城之外，南区与西区是战后的郊区。三条地铁线、通勤火车与公交用一张 SL 卡贯通，阿兰达机场在北面约 40 公里。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把斯德哥尔摩市当作整座城，而它只占大区人口的四成。",
+      "人们口中的斯德哥尔摩，在行政上只是约 188 平方公里的斯德哥尔摩市，2025 年人口约 100 万，由市议会治理，市长（财政市政委员）由多数派推举；市下分 11 个区（2023 年从 14 个合并而来），各有自己的区委员会，管小学、社会服务与文化。瑞典的市镇管学校、养老与规划，21 个大区管医院与公共交通，国家管警察与大学：斯德哥尔摩大区 2025 年末有 26 个市镇、约 249 万人，SL 的公交网覆盖整个大区，索尔纳、纳卡、松德比贝里各是独立的市镇。城市建在梅拉伦湖入海处的 14 座岛上，三成是水面、三成是绿地：老城在中央的小岛上，南岛、东城、国王岛、北城各是内城的一片，动物园岛是博物馆区；内城之外，南区与西区是战后的郊区。三条地铁线、通勤火车与公交用一张 SL 卡贯通，阿兰达机场在北面约 40 公里。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把斯德哥尔摩市当作整座城，而它只占大区人口的四成。",
     layout:
       "老城加姆拉斯坦坐落在中心岛屿，保留中世纪街巷格局，王宫、大教堂环列其间；南岛、北岛与国王岛等片区通过多座桥梁相连，向东延伸即为斯德哥尔摩群岛。",
     gettingAround:
@@ -8887,11 +8920,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人、日照最长；斯德哥尔摩群岛游船是夏季体验城市周边自然风光的经典方式，建议预留至少半日行程。",
   },
   uppsala: {
+    // identity sources: **瑞典的官方人口口径**（SCB，2026-09-09 核）：`kommun`（市镇年末登记人口，含郊区与乡村，**每年 12-31 基准、次年 2 月下旬发布**）· `tätort`（城区/建成区，**每 2–3 年一期**，最近一期 2023 年数据、2024-11-28 发布，下一期预计 2026-11-26）· `län` / `Region`（省 / 大区）。**没有统一官方定义的「都会区」**，但部分是有法人地位的市镇联合体（如 Göteborgsregionen），可具名引用并附该机构自己的数字。三档能差好几倍（卡尔马市镇约 7.3 万 vs 城区 4.26 万），**写哪一档必须点名**。
+    //   乌普萨拉城区（tätort）174,982（2023 年，SCB 2024-11-28 发布），全国第四大城区（斯德哥尔摩 1,652,895 > 哥德堡 674,529 > 马尔默 339,316 > 乌普萨拉）。级别 1，2026-09-09 核。
+    //   https://www.scb.se/pressmeddelande/fler-bor-i-stora-tatorter-men-regionala-skillnader/
+    //   原文引的是 2019 年的 177,074，**落后一期**；tätort 每 2–3 年一期，下一期（2025 年数据）预计 2026-11-26。
     identity:
-      "乌普萨拉是瑞典历史最悠久的大学城，人口约17万，坐落于斯德哥尔摩以北约70公里，乌普萨拉大学创立于1477年，是北欧最古老的大学。",
+      "乌普萨拉是瑞典历史最悠久的大学城，城区人口约17.5万（2023年），坐落于斯德哥尔摩以北约70公里，乌普萨拉大学创立于1477年，是北欧最古老的大学。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Uppsala (Sweden; fourth-largest urban area, 177,074 in 2019; 71 km north of Stockholm; seat of the Archbishop of Sweden since 1164, cathedral inaugurated 1435, the largest in Scandinavia at about 119 m; Uppsala University 1477, the oldest centre of higher education in Scandinavia, Celsius and Linnaeus; Fyris river divides old west from modern east; Central Station ~45,000 passengers a day; Gamla Uppsala mounds 5 km north; Arlanda ~30 km)
     howItWorks:
-      "乌普萨拉是瑞典第四大城区，2019 年人口约 17.7 万，在斯德哥尔摩以北 71 公里，由民选的市议会治理；瑞典的市镇管学校、养老与规划，大区管医院与公共交通，国家管警察与大学。这座城有两个身份：1164 年起它是瑞典大主教的驻地，1435 年落成的大教堂高约 119 米，是斯堪的纳维亚最大的教堂，至今是瑞典教会的中心；1477 年创办的乌普萨拉大学是北欧最古老的高等学府，摄氏温标的创立者摄尔修斯与分类学的林奈都在这里任教，学生的社团与四月三十日的春节庆典是城市的节奏。菲吕斯河把城市分成两半：西岸是大教堂与城堡的老城，东岸是车站与现代街区；旧乌普萨拉的王家土丘在城北 5 公里，是基督教之前的祭祀中心。中央车站每天约 4.5 万旅客，阿兰达机场在南面约 30 公里。初来的人最容易犯的错，是把乌普萨拉当作斯德哥尔摩的卧城，而它是瑞典教会与最老大学的所在地。",
+      "乌普萨拉是瑞典第四大城区，2023 年城区人口约 17.5 万，在斯德哥尔摩以北 71 公里，由民选的市议会治理；瑞典的市镇管学校、养老与规划，大区管医院与公共交通，国家管警察与大学。这座城有两个身份：1164 年起它是瑞典大主教的驻地，1435 年落成的大教堂高约 119 米，是斯堪的纳维亚最大的教堂，至今是瑞典教会的中心；1477 年创办的乌普萨拉大学是北欧最古老的高等学府，摄氏温标的创立者摄尔修斯与分类学的林奈都在这里任教，学生的社团与四月三十日的春节庆典是城市的节奏。菲吕斯河把城市分成两半：西岸是大教堂与城堡的老城，东岸是车站与现代街区；旧乌普萨拉的王家土丘在城北 5 公里，是基督教之前的祭祀中心。中央车站每天约 4.5 万旅客，阿兰达机场在南面约 30 公里。初来的人最容易犯的错，是把乌普萨拉当作斯德哥尔摩的卧城，而它是瑞典教会与最老大学的所在地。",
     layout:
       "老城以乌普萨拉大教堂（斯堪的纳维亚最高的教堂建筑）为中心，大学主楼与植物园环绕周边，弗于里斯河穿城而过。",
     gettingAround:
@@ -8909,9 +8946,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
       "哥德堡是瑞典第二大城市，人口约61万（2025年末；大哥德堡都会区约110万），坐落于瑞典西海岸约塔河口，是瑞典重要的港口城市与探索布胡斯兰海岸的门户。",
-    // howItWorks sources: Wikipedia (2026-09): Gothenburg (municipality ~450 km²; ~612,000; Västra Götaland seat; metro ~1.1 million; Göta älv/Hisingen; largest Nordic port; largest tram network in Scandinavia; founded 1621); Municipalities of Sweden
+    // howItWorks sources: **瑞典的官方人口口径**（SCB，2026-09-09 核）：`kommun`（市镇年末登记人口，含郊区与乡村，**每年 12-31 基准、次年 2 月下旬发布**）· `tätort`（城区/建成区，**每 2–3 年一期**，最近一期 2023 年数据、2024-11-28 发布，下一期预计 2026-11-26）· `län` / `Region`（省 / 大区）。**没有统一官方定义的「都会区」**，但部分是有法人地位的市镇联合体（如 Göteborgsregionen），可具名引用并附该机构自己的数字。三档能差好几倍（卡尔马市镇约 7.3 万 vs 城区 4.26 万），**写哪一档必须点名**。
+    //   哥德堡市镇 2025 年末约 61.3 万；**「都会区」换成具名的 Göteborgsregionen（GR，13 个市镇的市镇联合体）**，GR 官方 2025 年末 1,093,760 人（级别 1）。
+    //   https://goteborgsregionen.se/kunskapsbank/folkmangdigoteborgsregionen2024.5.3d3d65dc17ee36e9de7ce73.html
+    //   **做法与瑞士巴塞尔三国区、大日内瓦一致**：不是官方统计口径不等于不能写，写明是谁统计的、哪一年就可核。
     howItWorks:
-      "哥德堡是瑞典第二大城市，西约塔兰省的省府；市镇约 450 平方公里，包括群岛，人口约 61 万，由市议会治理。市镇管学校、养老与规划，大区管医院与公共交通公司 Västtrafik，国家管警察与大学；都会区约 110 万人，默尔恩达尔、帕蒂勒各是独立的市镇。约塔河把城市分成两岸：南岸是 1621 年按荷兰运河城市规划建起的市中心——城墙内区、林荫大道与哈加老街区，北岸的希辛恩岛是沃尔沃的总部与林德霍尔门科技园，桥与渡轮把两岸连起来。港口是北欧最大的港，有轨电车网是斯堪的纳维亚最大的，哥德堡群岛属于市镇，靠渡轮往来。查尔姆斯理工大学与哥德堡大学是两所大学，里瑟本游乐园是城市的标志。哥德堡人的幽默与冷面笑话是全国有名的性格。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把哥德堡当作一座港口工业城，而它的市中心是一座运河与林荫大道的城市。",
+      "哥德堡是瑞典第二大城市，西约塔兰省的省府；市镇约 450 平方公里，包括群岛，2025 年末人口约 61.3 万，由市议会治理。市镇管学校、养老与规划，大区管医院与公共交通公司 Västtrafik，国家管警察与大学；哥德堡地区（13 个市镇组成的市镇联合体）2025 年末约 109.4 万人，默尔恩达尔、帕蒂勒各是独立的市镇。约塔河把城市分成两岸：南岸是 1621 年按荷兰运河城市规划建起的市中心——城墙内区、林荫大道与哈加老街区，北岸的希辛恩岛是沃尔沃的总部与林德霍尔门科技园，桥与渡轮把两岸连起来。港口是北欧最大的港，有轨电车网是斯堪的纳维亚最大的，哥德堡群岛属于市镇，靠渡轮往来。查尔姆斯理工大学与哥德堡大学是两所大学，里瑟本游乐园是城市的标志。哥德堡人的幽默与冷面笑话是全国有名的性格。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把哥德堡当作一座港口工业城，而它的市中心是一座运河与林荫大道的城市。",
     layout:
       "市中心以运河环绕的历史街区为核心，仿荷兰式的运河系统是17世纪建城时的规划遗产，阿夫瑞德海滨区经近年改造成为文化休闲地带。",
     gettingAround:
@@ -8929,9 +8969,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
       "马尔默是瑞典第三大城市，人口约37万（2025年末），坐落于瑞典最南端，经厄勒海峡大桥与丹麦哥本哈根相连，是斯科讷平原的核心城市。",
-    // howItWorks sources: Wikipedia (2026-09): Malmö (municipality ~157 km²; 368,135 2024; Skåne seat; Greater Malmö ~780,000/12 municipalities; Øresund Bridge 2000, 30–40 min to Copenhagen; Citytunneln 2010; ~40% commute by bike; trams ceased 1973; ~half foreign background; Danish until 1658); Municipalities of Sweden
+    // howItWorks sources: 马尔默市镇 2025 年末约 37 万（SCB，kommun 口径，年末基准、次年 2 月下旬发布）。原文停在 2024 年、与同条目 identity 的 2025 年末对不上，已统一。2026-09-09 核。
     howItWorks:
-      "马尔默是瑞典第三大城市，斯科讷省的省府；市镇约 157 平方公里，2024 年人口约 37 万，由市议会治理。市镇管学校、养老与规划，斯科讷大区管医院与公共交通公司 Skånetrafiken，国家管警察与大学；大马尔默 12 个市镇约 78 万人。2000 年通车的厄勒海峡大桥把它与哥本哈根连成一座跨国都会区，火车 30 到 40 分钟一趟，每天有大量人跨境通勤；2010 年通车的城市隧道让火车从中央车站经三角站到许利耶站穿过市区。老城以大广场与小广场为中心，西港是旧船厂改成的新区，旋转中心大楼是它的标志，默勒旺是移民街区与市集，罗森戈德是 1960 年代的住宅区。1658 年以前这座城属于丹麦，考库姆船厂是它的工业过去。约半数市民有外国背景，来自约 180 个国家。有轨电车 1973 年停运，公交与自行车承担出行，约四成通勤靠自行车。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把马尔默当作哥本哈根的郊区，而它是瑞典南部的省府，有自己的大学与港口。",
+      "马尔默是瑞典第三大城市，斯科讷省的省府；市镇约 157 平方公里，2025 年末人口约 37 万，由市议会治理。市镇管学校、养老与规划，斯科讷大区管医院与公共交通公司 Skånetrafiken，国家管警察与大学；大马尔默（Stormalmö）12 个市镇 2025 年约 78 万人。2000 年通车的厄勒海峡大桥把它与哥本哈根连成一座跨国都会区，火车 30 到 40 分钟一趟，每天有大量人跨境通勤；2010 年通车的城市隧道让火车从中央车站经三角站到许利耶站穿过市区。老城以大广场与小广场为中心，西港是旧船厂改成的新区，旋转中心大楼是它的标志，默勒旺是移民街区与市集，罗森戈德是 1960 年代的住宅区。1658 年以前这座城属于丹麦，考库姆船厂是它的工业过去。约半数市民有外国背景，来自约 180 个国家。有轨电车 1973 年停运，公交与自行车承担出行，约四成通勤靠自行车。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把马尔默当作哥本哈根的郊区，而它是瑞典南部的省府，有自己的大学与港口。",
     layout:
       "老城中心保留中世纪街巷格局，马尔默城堡与老城广场是历史核心，西港区经近年改造成为可持续发展示范街区，标志性建筑“旋转大厦”坐落于此。",
     gettingAround:
@@ -8949,9 +8989,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     identity:
       "维斯比是哥得兰岛的主要城镇，城区人口约2.6万（2023年），完整保留中世纪城墙与建筑格局，12世纪起是汉萨同盟重要的贸易城市。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Visby (Sweden; ~24,330; the most populous Swedish locality outside the mainland, reached only by ferry or air; on Gotland; former Hanseatic centre, flourishing in the 14th century; Valdemar IV of Denmark took Gotland in 1361; UNESCO 1995, one of the best-preserved medieval cities in Scandinavia; 3.4 km town wall from about 1300; Almedalen Week; Medieval Week; ferries from Nynäshamn and Oskarshamn; airport)
+    // howItWorks sources: **瑞典的官方人口口径**（SCB，2026-09-09 核）：`kommun`（市镇年末登记人口，含郊区与乡村，**每年 12-31 基准、次年 2 月下旬发布**）· `tätort`（城区/建成区，**每 2–3 年一期**，最近一期 2023 年数据、2024-11-28 发布，下一期预计 2026-11-26）· `län` / `Region`（省 / 大区）。**没有统一官方定义的「都会区」**，但部分是有法人地位的市镇联合体（如 Göteborgsregionen），可具名引用并附该机构自己的数字。三档能差好几倍（卡尔马市镇约 7.3 万 vs 城区 4.26 万），**写哪一档必须点名**。
+    //   维斯比城区 26,305（2023 年，SCB 2024-11-28 发布，经瑞典语维基信息框转引核对，3 级）。**原来 identity 写 26,305、howItWorks 写 24,330，同一条目两段打架**，已统一。2026-09-09 核。
     howItWorks:
-      "维斯比是哥特兰岛上的城镇，人口约 2.4 万，是瑞典本土之外人口最多的聚落，只能坐船或飞机到达；整座哥特兰岛是一个市镇，同时行使大区的职权，称为“哥特兰区域”，管学校、养老与医院，国家管警察。中世纪它是汉萨同盟在波罗的海的重要商埠，14 世纪最盛，1361 年丹麦国王瓦尔德马四世攻占哥特兰，城下战死一千八百人；此后城市长期衰落，反而把中世纪的城区原样留住，1995 年列入世界遗产，是斯堪的纳维亚保存最完好的中世纪城市之一。约 1300 年建成的城墙长 3.4 公里，至今围着老城，城内散着十几座教堂废墟。每年七月的“阿尔梅达尔周”把瑞典的政党、媒体与游说者都请到这里开会，中世纪周则让全城穿上戏服；渡轮从尼奈斯港与奥斯卡港开来，机场在城北。初来的人最容易犯的错，是把维斯比当作哥特兰，而岛长约 170 公里，村庄与海滩散在四周。",
+      "维斯比是哥特兰岛上的城镇，2023 年城区人口 26,305，是瑞典本土之外人口最多的聚落，只能坐船或飞机到达；整座哥特兰岛是一个市镇，同时行使大区的职权，称为“哥特兰区域”，管学校、养老与医院，国家管警察。中世纪它是汉萨同盟在波罗的海的重要商埠，14 世纪最盛，1361 年丹麦国王瓦尔德马四世攻占哥特兰，城下战死一千八百人；此后城市长期衰落，反而把中世纪的城区原样留住，1995 年列入世界遗产，是斯堪的纳维亚保存最完好的中世纪城市之一。约 1300 年建成的城墙长 3.4 公里，至今围着老城，城内散着十几座教堂废墟。每年七月的“阿尔梅达尔周”把瑞典的政党、媒体与游说者都请到这里开会，中世纪周则让全城穿上戏服；渡轮从尼奈斯港与奥斯卡港开来，机场在城北。初来的人最容易犯的错，是把维斯比当作哥特兰，而岛长约 170 公里，村庄与海滩散在四周。",
     layout:
       "老城被长约3.4公里的中世纪城墙环绕，鹅卵石街巷、玫瑰花墙与教堂遗址密布其间，是波罗的海地区保存最完好的中世纪商贸城市之一。",
     gettingAround:
@@ -8986,9 +9027,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     identity:
       "卡尔马是瑞典东南部小科鲁德省的核心城市，城区人口约4.3万（2023年），卡尔马城堡是瑞典保存最完好的文艺复兴城堡之一，也是探索厄兰岛的门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalmar (Sweden; ~42,600; capital of Kalmar County; Kalmar Castle, where the Kalmar Union of Sweden, Norway and Denmark was signed on 13 July 1397, lasting until 1523; castle rebuilt in the Renaissance; Öland bridge 6 km, the longest in Sweden, opened 1972; Linnaeus University campus; cathedral 1703; airport 5 km; harbour)
+    // howItWorks sources: **瑞典的官方人口口径**（SCB，2026-09-09 核）：`kommun`（市镇年末登记人口，含郊区与乡村，**每年 12-31 基准、次年 2 月下旬发布**）· `tätort`（城区/建成区，**每 2–3 年一期**，最近一期 2023 年数据、2024-11-28 发布，下一期预计 2026-11-26）· `län` / `Region`（省 / 大区）。**没有统一官方定义的「都会区」**，但部分是有法人地位的市镇联合体（如 Göteborgsregionen），可具名引用并附该机构自己的数字。三档能差好几倍（卡尔马市镇约 7.3 万 vs 城区 4.26 万），**写哪一档必须点名**。
+    //   卡尔马城区 42,622（2023 年，SCB 2024-11-28 发布，3 级转引核对）。**注意与市镇口径的差别**：卡尔马市镇约 7.3 万，城区 4.26 万，差近一倍 —— 正文现在点了「城区」。2026-09-09 核。
     howItWorks:
-      "卡尔马是瑞典卡尔马省的省会，人口约 4.3 万，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。城市在波罗的海西岸，正对厄兰岛。1397 年 7 月 13 日，丹麦、挪威与瑞典的代表在卡尔马城堡里签订了卡尔马联盟条约，三国共戴一君，直到 1523 年瑞典退出；城堡后来在文艺复兴时期改建成今天的样子，仍立在城南的水边。老城在城堡北面，1703 年落成的巴洛克大教堂在广场上。1972 年通车的厄兰大桥长 6 公里，是瑞典最长的桥，把它与厄兰岛连起来，夏天全国的人从这座桥上过去度假；林奈大学在城里有校区，机场在城西 5 公里。初来的人最容易犯的错，是把卡尔马当作去厄兰岛的路过点，而它是一座有城堡、大教堂与六百年历史的省会。",
+      "卡尔马是瑞典卡尔马省的省会，2023 年城区人口 42,622，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。城市在波罗的海西岸，正对厄兰岛。1397 年 7 月 13 日，丹麦、挪威与瑞典的代表在卡尔马城堡里签订了卡尔马联盟条约，三国共戴一君，直到 1523 年瑞典退出；城堡后来在文艺复兴时期改建成今天的样子，仍立在城南的水边。老城在城堡北面，1703 年落成的巴洛克大教堂在广场上。1972 年通车的厄兰大桥长 6 公里，是瑞典最长的桥，把它与厄兰岛连起来，夏天全国的人从这座桥上过去度假；林奈大学在城里有校区，机场在城西 5 公里。初来的人最容易犯的错，是把卡尔马当作去厄兰岛的路过点，而它是一座有城堡、大教堂与六百年历史的省会。",
     layout:
       "老城以卡尔马城堡为核心沿海岸展开，17世纪规划的巴洛克式新城街区保存完好，一座跨海大桥连接卡尔马与厄兰岛。",
     gettingAround:
@@ -9022,11 +9064,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-7月可见极昼、是徒步与户外活动旺季；12-1月是观测极光的最佳时段，冬季务必备好极地保暖装备。",
   },
   lulea: {
+    // identity sources: **瑞典的官方人口口径**（SCB，2026-09-09 核）：`kommun`（市镇年末登记人口，含郊区与乡村，**每年 12-31 基准、次年 2 月下旬发布**）· `tätort`（城区/建成区，**每 2–3 年一期**，最近一期 2023 年数据、2024-11-28 发布，下一期预计 2026-11-26）· `län` / `Region`（省 / 大区）。**没有统一官方定义的「都会区」**，但部分是有法人地位的市镇联合体（如 Göteborgsregionen），可具名引用并附该机构自己的数字。三档能差好几倍（卡尔马市镇约 7.3 万 vs 城区 4.26 万），**写哪一档必须点名**。
+    //   吕勒奥城区（tätort）49,123（2023 年，SCB，级别 1 + 3 级转引核对精确数）。2026-09-09 核。
+    //   https://www.scb.se/pressmeddelande/fler-bor-i-stora-tatorter-men-regionala-skillnader/
     identity:
-      "吕勒奥是瑞典北部诺尔博滕省的核心城市，人口约4.9万，坐落于波的尼亚湾沿岸，是探索瑞典北部群岛与拉普兰的门户城市。",
+      "吕勒奥是瑞典北部诺尔博滕省的核心城市，城区人口约4.9万（2023年），坐落于波的尼亚湾沿岸，是探索瑞典北部群岛与拉普兰的门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Luleå (Sweden; ~49,646 in the urban core; capital of Norrbotten County; chartered 1621 by Gustavus Adolphus, moved in 1649 because post-glacial rebound made the harbour too shallow; 1887 fire; Gammelstad Church Town UNESCO 1996; the world's largest brackish-water archipelago with 1,312 islands; Luleå University of Technology; SSAB steelworks; Facebook's first European data centre from 2012; fifth-largest airport; seventh-busiest cargo port; northern lights September–March)
     howItWorks:
-      "吕勒奥是瑞典北博滕省的省会，城区人口约 5 万，在波的尼亚湾北端，由民选的市议体治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。1621 年古斯塔夫二世·阿道夫给它城市特许状，1649 年它整体搬了一次家——冰后回弹让陆地不断抬升，原来的港口太浅了，城只好往海边挪；旧址留下的“加梅尔斯塔德教堂村”有四百多栋教友过夜用的小木屋，1996 年列入世界遗产。1887 年的大火烧掉了大半个城，1893 年落成的新哥特式大教堂是幸存下来的最高建筑。今天 SSAB 的钢厂与吕勒奥理工大学是最大的雇主，2012 年脸书把它在欧洲的第一座数据中心建在这里，看中的是冷空气与水电；外海是世界最大的半咸水群岛，有 1,312 座岛，冬天在冰上开车通行。初来的人最容易犯的错，是把加梅尔斯塔德当作一座村，而它是这座城原来的位置。",
+      "吕勒奥是瑞典北博滕省的省会，2023 年城区人口 49,123，在波的尼亚湾北端，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。1621 年古斯塔夫二世·阿道夫给它城市特许状，1649 年它整体搬了一次家——冰后回弹让陆地不断抬升，原来的港口太浅了，城只好往海边挪；旧址留下的“加梅尔斯塔德教堂村”有四百多栋教友过夜用的小木屋，1996 年列入世界遗产。1887 年的大火烧掉了大半个城，1893 年落成的新哥特式大教堂是幸存下来的最高建筑。今天 SSAB 的钢厂与吕勒奥理工大学是最大的雇主，2012 年脸书把它在欧洲的第一座数据中心建在这里，看中的是冷空气与水电；外海是世界最大的半咸水群岛，有 1,312 座岛，冬天在冰上开车通行。初来的人最容易犯的错，是把加梅尔斯塔德当作一座村，而它是这座城原来的位置。",
     layout:
       "市中心格默尔斯塔德教堂村是保存完好的木结构教堂村落，1996年列入世界遗产；现代城区沿波的尼亚湾海岸展开，冬季海湾结冰后形成独特的冰上通行景观。",
     gettingAround:

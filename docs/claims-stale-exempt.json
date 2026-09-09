@@ -171,6 +171,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/limerick/howItWorks",
+      "reason": "爱尔兰 CSO 的城市一级数字只随普查发布，上次 2022-04、**下次 2027-05-09**；年度估计（PME）只到全国与 8 个 NUTS3 区域、不下探到城市。2022 不是落后，是这一级唯一有的一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2027-09"
+    },
+    {
       "key": "travel/linyi/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -181,6 +187,12 @@
       "reason": "2025 年公报整版没有人口章节（目录只有八章，逐段核对不含常住人口与城镇化率）；2024 年末的 1084.84 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/lulea/identity",
+      "reason": "同上，SCB tätort 2023 年数据是最新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/mianyang/howItWorks",
@@ -277,6 +289,18 @@
       "reason": "同上；2017 年的 2.16 万是能核到的最新一期，基准年已九年",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/uppsala/howItWorks",
+      "reason": "同 identity：SCB tätort 每 2–3 年一期，2023 年数据是最新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/uppsala/identity",
+      "reason": "瑞典 SCB 的 tätort（城区）统计**每 2–3 年才发一期**，最近一期就是 2023 年数据（2024-11-28 发布），下一期（2025 年数据）预计 2026-11-26。2023 不是落后，是当前唯一一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/visby/identity",
