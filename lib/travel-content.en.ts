@@ -10123,7 +10123,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     // 零改动留痕（2026-09-10）：MOIS 住民登录人口 2025-12 为 1,091,948、2026-07 为 1,086,756，「约 110 万」两期都成立。
     //   KTX 蔚山站在蔚州郡三南邑、不在市区（蔚山市官网，1 级），正文表述准确。
     identity:
-      "Ulsan is a major heavy-industry city in South Korea, with a population of about 1.1 million, known for shipbuilding, automobiles, and petrochemicals, and also home to the Taehwa River ecological park and a whale-watching culture.",
+      "Ulsan is a major heavy-industry city in South Korea, with a registered population of about 1.09 million in 2026, known for shipbuilding, automobiles, and petrochemicals, and also home to the Taehwa River ecological park and a whale-watching culture.",
     // howItWorks sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   蔚山：4 个自治区（中区/南区/东区/北区）+ 蔚州郡，共 5 个次级单位（市政府官网，级别 1）。人口住民登录 1,091,948（2025 年 12 月末，不含外国人；含登记外国人 30,175 则为 1,122,123）—— **两种口径都落在「约 110 万」的取整范围内，正文判定不改**。
     //   https://ulsan.go.kr/u/english/contents.ulsan?mId=001001002005000000
