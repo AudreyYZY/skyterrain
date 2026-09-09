@@ -10120,6 +10120,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Cherry blossom season in spring (April) and autumn (October–November) are most pleasant; plan at least two days to cover both the city-centre sites and Bulguksa/Seokguram separately.",
   },
   ulsan: {
+    // 零改动留痕（2026-09-10）：MOIS 住民登录人口 2025-12 为 1,091,948、2026-07 为 1,086,756，「约 110 万」两期都成立。
+    //   KTX 蔚山站在蔚州郡三南邑、不在市区（蔚山市官网，1 级），正文表述准确。
     identity:
       "Ulsan is a major heavy-industry city in South Korea, with a population of about 1.1 million, known for shipbuilding, automobiles, and petrochemicals, and also home to the Taehwa River ecological park and a whale-watching culture.",
     // howItWorks sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
@@ -10160,6 +10162,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Summer (June–August) is beach season, and the cable car's night view is best around dusk; plan one evening dedicated to Yeosu's night scenery.",
   },
   pohang: {
+    // 零改动留痕（2026-09-10）：MOIS 住民登录人口 2026-06 末 487,008，「约 49 万」成立，未查到更新月份的公开转引。
+    //   📌 下一轮直接走浦项市官方数据门户 phdata.pohang.go.kr/popltn/rsgstStatus（1 级），别再走 3 级聚合站。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   浦项住民登录人口 487,008（2026 年 6 月末），3 级聚合自行政安全部住民登录人口。**下一轮建议直接抓浦项市官方数据门户（phdata.pohang.go.kr）这个 1 级页面。** 「庆尚北道人口最多的城市」按住民登录口径成立。2026-09-09 核。
     identity:
@@ -10199,15 +10203,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The Gangneung Danoje Festival around Dano (5th day of the 5th lunar month) is the best time to experience local tradition; summer is beach season, winter is ski and hot-spring season.",
   },
   sokcho: {
+    // 零改动留痕（2026-09-10）：✅ **零争议红线复查干净**——逐句复读七段中英全文（identity / howItWorks / layout /
+    //   gettingAround / culture / seeAndDo / whenAndTips），未发现残留的 军事 / 分界线 / DMZ / 38 度 / 停战 / 边境 类表述，
+    //   上一轮改掉的三处是彻底的，**没有第四处漏网**。
     // identity sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
     //   **这一条不是核实方报的，是我在处理韩国批之后对全库做 `朝鲜战争 / Korean War / 军事分界线 / Military Demarcation / 非军事区 / DMZ / 38 度 / 停战` 的正则扫描扫出来的** —— 核实方只看它那一批的 14 个条目，扫全库才发现同一类表述还散在别处。**「派一批去核」和「把这一类在全库搜一遍」是两件事。**
     //   束草这一条**在 identity、howItWorks、culture 三段里各踩了一次**，三处都已改成可核实的地理、产业与生活事实。
     identity:
       "Sokcho is a coastal city in north-eastern Gangwon, with a population of about 80,000, the traditional gateway to Seoraksan National Park and a significant fishing port and seafood market on the east coast.",
-    // howItWorks sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
-    //   **这一段里有三处踩线**，全部按红线处理：① 开头的 1945/1951/1953 时间线 —— 删，不改写；② 结尾的「北面是高城与非军事区」—— 改成「北面是高城」；③ 把这座城定性为「边境城市」—— 改成「有渔港与自己节奏的城市」。**阿爸村、手摇渡船、鱼糕这些可核实的生活事实保留下来了，只是不再交代它的成因** —— 按仓库口径，这类内容宁可少说一层，也不写可能读作立场表态的句子。2026-09-10。
+    // howItWorks sources: 人口：MOIS 住民登录人口 2026-08 为 78,788。英文侧原写 81,000 属旧数残留，中文侧「约 8 万」无误。MOIS 按月发布、滞后约 1 个月。2026-09-10 核。
     howItWorks:
-      "Sokcho is a city of Gangwon State covering about 106 km², with about 81,000 people. The Abai village at Cheongho-dong is a distinct quarter of the city, linked to the far bank by a hand-pulled ferry; that ferry and the local fish cake are still Sokcho's emblems. The town is pressed between the East Sea and Seoraksan: the national park gate lies 10 km west with Sinheungsa and the cable car inside, Yeongnang lake sits in the middle of town and the fish market of Daepo harbour at its southern end. Seoul is about an hour and a half away, Yangyang airport 20 km south, and Goseong lies north. Newcomers most often go wrong by taking Sokcho for the gate of Seoraksan, when it is a coastal city with a fishing port and a rhythm of its own.",
+      "Sokcho is a city of Gangwon State covering about 106 km², with about 79,000 people (August 2026). The Abai village at Cheongho-dong is a distinct quarter of the city, linked to the far bank by a hand-pulled ferry; that ferry and the local fish cake are still Sokcho's emblems. The town is pressed between the East Sea and Seoraksan: the national park gate lies 10 km west with Sinheungsa and the cable car inside, Yeongnang lake sits in the middle of town and the fish market of Daepo harbour at its southern end. Seoul is about an hour and a half away, Yangyang airport 20 km south, and Goseong lies north. Newcomers most often go wrong by taking Sokcho for the gate of Seoraksan, when it is a coastal city with a fishing port and a rhythm of its own.",
     layout:
       "The city sits right on the east coast, with Cheongcho Lake lagoon and Sokcho Port within the city, while the entrance to Seoraksan National Park lies inland, about 15 km to the west.",
     gettingAround:
@@ -10222,6 +10228,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Autumn (October) foliage at Seoraksan is nationally famous, so book accommodation ahead; summer beaches and winter skiing each have their own peak season.",
   },
   chuncheon: {
+    // 零改动留痕（2026-09-10）：✅ 零争议红线逐段复查通过（本条与 sokcho 同在江原、临近北汉江，属红线重点条目）。
+    //   ⚠️ 人口存疑不改：MOIS 2026-01 末 290,468、**2026-06 末已降至约 285,027**，正文「约 29 万」取的是较早一端。
+    //   两个数都在注释里、都属实，只是取整偏向了旧的那一期。下一轮直接抓 chuncheon.go.kr 官方页拿 7/8 月数再决定是否降为「约 28 万」。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   春川住民登录人口 2026-01 末 290,468、2026-06 末约 285,027（2 级本国地方媒体报道官方数 + 3 级聚合），与同条目 howItWorks 的约 29 万统一。2026-09-09 核。
     identity:
@@ -10241,6 +10250,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Autumn foliage on Nami Island and winter snow scenery are the most popular seasons; an easy day trip from Seoul.",
   },
   andong: {
+    // 零改动留痕（2026-09-10）：MOIS 2026-06 约 151,864，「约 15 万」成立。
+    //   「韩国精神文化的首都」经核为市宣传口号、**非法定称号**，正文用「被称为」的被动式处理，与仓库对同类非官方称号的惯例一致，不再降级。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   安东人口 152,610（2025-07）/ 约 151,864（2026-06），市官网（级别 1）。
     //   **「韩国精神文化的首都」是安东市的城市宣传口号，不是法定称号** —— 正文写的是「被称为」，已经是被动、非断言官方认证的写法，与本库对胡萨维克「欧洲观鲸之都」、基尔肯尼「中世纪之都」的处理一致，**判定不必再降级**。2026-09-09 复核，本轮无需改动。
@@ -10305,13 +10316,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April–May and September–October are most comfortable; summers are humid and winters cold. An easy day trip from Seoul; long-haul transit passengers can overnight on Yeongjong Island or in Songdo near the airport. Ganghwa Island needs its own day.",
   },
   suwon: {
+    // 零改动留痕（2026-09-10）：含登记外国人的总人口 2026-08 为 1,229,190，住民登录人口（不含外国人）2026-06 约 1,185,770；
+    //   正文取总人口口径且已在注释点名区分，「约 123 万 / 超过 120 万」均成立。
+    //   📌 特例市（특례시）现行名单已扩至 **5 座**（2022 年首批水原／龙仁／高阳／昌原 + **华城 2025-01-01 加入**）——
+    //   正文只说水原「是一座特例市」、没有做穷举式断言，不构成错误；记在这里供下次涉及华城时参考。
+    //   另注：昌原 2026-05 含外国人约 100.99 万，已逼近 100 万门槛，有跌出资格的风险。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   **水原是这一批里唯一一个两套口径都在用的城市**：住民登录人口（不含外国人）2026-06 约 1,185,770（约 119 万）；含登记外国人的总人口 2026-08 为 1,229,190（约 123 万，外国人约 6%）。正文的「约 123 万 / 超过 120 万」对应后者、且是最新值，**本轮判定不改**；但如果日后要把全库韩国城市统一到住民登录口径，这一条要降到约 119 万。2 级 + 3 级，2026-09-09 核。**这两个数不是打架，是两个口径 —— 不能合并成一个数字。**
     identity:
-      "Suwon is the seat of Gyeonggi Province about 30 km south of Seoul, with about 1.23 million people (2026). Hwaseong Fortress, built in 1794–1796 by King Jeongjo when he moved his father Crown Prince Sado's tomb here, is the masterpiece of late-Joseon fortification — 5.7 km of wall, four gates, the palace and the bastions survive — and was inscribed as a World Heritage site in 1997; the king's yearly procession from Seoul to Suwon is the model for the Hwaseong Cultural Festival. Samsung Electronics was founded in Suwon in 1969 and keeps its headquarters and research campus in Yeongtong district. Suwon galbi (grilled beef ribs) is the local dish, and the Korean Folk Village lies in neighbouring Yongin.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Suwon (capital of Gyeonggi Province; special case city with lesser self-governance than a metropolitan city; 4 gu; population over 1.2 million; Hwaseong Fortress built under King Jeongjo 1796, UNESCO with the Hwaseong Seongyeok Uigwe record; Samsung Electronics headquarters in Yeongtong since 2016; three Seoul Metro lines, 14 stations, ~30 km from Seoul; Suwon galbi; World Cup Stadium 2002)
+      "Suwon is the seat of Gyeonggi Province about 30 km south of Seoul, with about 1.23 million people (2026). Hwaseong Fortress, built in 1794–1796 by King Jeongjo when he moved his father Crown Prince Sado's tomb here, is the masterpiece of late-Joseon fortification — 5.7 km of wall, four gates, the palace and the bastions survive — and was inscribed as a World Heritage site in 1997; the king's yearly procession from Seoul to Suwon is the model for the Hwaseong Cultural Festival. Samsung Electronics was founded in 1969 and has had its headquarters and production base in Suwon since 1973, with the head office and research campus in Yeongtong district. Suwon galbi (grilled beef ribs) is the local dish, and the Korean Folk Village lies in neighbouring Yongin.",
+    // howItWorks sources: 三星电子：**1969 年创立、1973 年起水原为总部与生产基地、2016 年 3 月首尔支援部门并入水原**，是三件不同的事。原文 identity 写「1969 年创立于水原」、howItWorks 写「1973 年把总部迁来」，各取一件且都没说清是哪一件，并排读像打架。**核实方要求把 1973 改成 1969，未采纳** —— 1973 有韩国先驱报（2 级）支撑；「创立于水原」反而是更没把握的那半句。两段统一改成「创立年 + 总部年」的同一结构。2026-09-10 核。
     howItWorks:
-      "Suwon is the seat of Gyeonggi Province with more than 1.2 million people, more than several metropolitan cities, yet because it lies within a province it is only a 'special case city' with less self-government than a metropolitan city; it has four autonomous districts and an elected mayor. Hwaseong Fortress, built by King Jeongjo in 1796 when he moved his father's tomb, rings the old town, and its walls and palace were inscribed as World Heritage in 1997, the construction record Hwaseong Seongyeok Uigwe so detailed that the fortress could be rebuilt from it after the war; Samsung Electronics moved its headquarters here in 1973, with the research campus and head office in Yeongtong district to the east as the city's largest employer. Three Seoul Metro lines call at more than a dozen stations in the city, the KTX stops here, and Seoul lies about 30 km north; Suwon galbi and the Gwanggyo new town are its other two names. Newcomers most often go wrong by taking Suwon for a satellite of Seoul, when it is the seat of Gyeonggi Province with more people than most Seoul districts.",
+      "Suwon is the seat of Gyeonggi Province with more than 1.2 million people, more than several metropolitan cities, yet because it lies within a province it is only a 'special case city' with less self-government than a metropolitan city; it has four autonomous districts and an elected mayor. Hwaseong Fortress, built by King Jeongjo in 1796 when he moved his father's tomb, rings the old town, and its walls and palace were inscribed as World Heritage in 1997, the construction record Hwaseong Seongyeok Uigwe so detailed that the fortress could be rebuilt from it after the war; Samsung Electronics, founded in 1969, has had its headquarters and production base here since 1973, with the research campus and head office in Yeongtong district to the east as the city's largest employer. Three Seoul Metro lines call at more than a dozen stations in the city, the KTX stops here, and Seoul lies about 30 km north; Suwon galbi and the Gwanggyo new town are its other two names. Newcomers most often go wrong by taking Suwon for a satellite of Seoul, when it is the seat of Gyeonggi Province with more people than most Seoul districts.",
     layout:
       "Hwaseong encloses the old town: Paldalmun in the south, Janganmun in the north, Hwahongmun over the Suwoncheon stream in the north-east and the Seojangdae command post on Paldalsan hill to the west; the Haenggung palace stands in the middle and Paldalmun market by the south gate. Suwon Station is about 2 km south-west of the walls, with the sports complex and World Cup stadium outside. The Samsung campus lies east in Yeongtong and the Gwanggyo new town north-east. The Korean Folk Village is about 15 km east in Yongin, with Everland further east.",
     gettingAround:
@@ -12843,8 +12859,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April to June and September to October are pleasant with relatively fewer visitors; July and August are peak season with higher temperatures; December's Christmas markets have a festive atmosphere. The Old Town core is entirely walkable, and early morning is the best time to photograph Charles Bridge before crowds arrive.",
   },
   brno: {
+    // 零改动留痕（2026-09-10）：注释已更新到 ČSÚ 2026-01-01 最新一期。正文取整「约 40 万」在新旧两期下都成立。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
-    //   ČSÚ 2025-01-01 数据为 402,739，与同条目 howItWorks 的「2026 年约 40 万」一致 —— identity 的 38 万已过期偏低。「捷克第二大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 402,739 > 俄斯特拉发 283,187 > 皮尔森 187,928）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
+    //   ČSÚ **2026-01-01** 数据为 404,296（2026-09-10 复核时更新到最新一期；上一期 2025-01-01 为 402,739，正文取整「约 40 万」两期都成立）—— identity 的 38 万已过期偏低。「捷克第二大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 404,296 > 俄斯特拉发 > 皮尔森 187,863）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/
     identity:
       "Brno is Czechia's second-largest city and the center of Moravia, with a population of about 400,000. It was historically the capital of the Margraviate of Moravia, and today is an important research and university city.",
@@ -12863,8 +12880,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant; as a university city, some student-oriented facilities close in summer and the atmosphere is livelier during term time; Brno makes a good base for day trips to the Moravian Karst and the Lednice-Valtice estate.",
   },
   plzen: {
+    // 零改动留痕（2026-09-10）：注释已更新到 ČSÚ 2026-01-01（**直接取自 ČSÚ 官方 PDF，1 级**）。
+    //   「捷克第四大城市」按 ČSÚ 市镇口径用最新一期复核，排序未变。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
-    //   ČSÚ 2025-01-01 数据为 187,928，与同条目 howItWorks 的约 19 万一致 —— identity 的 17 万已过期偏低。「捷克第四大城市」按市镇口径成立。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
+    //   ČSÚ **2026-01-01** 数据为 187,863（直接取自 ČSÚ 官方 PDF，1 级，2026-09-10 复核；上一期 2025-01-01 为 187,928，正文取整「约 19 万」两期都成立），与同条目 howItWorks 的约 19 万一致 —— identity 的 17 万已过期偏低。「捷克第四大城市」按市镇口径成立。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/
     identity:
       "Plzeň (Pilsen) is a major city in western Czechia and the seat of the Plzeň Region, with a population of about 190,000. In 1842, the world's first golden bottom-fermented lager — Pilsner — was brewed here, making it the birthplace of lager beer worldwide.",
@@ -12883,6 +12902,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant; booking the brewery tour in advance is recommended; a day trip from Prague is convenient, taking about 1 to 1.5 hours each way.",
   },
   "karlovy-vary": {
+    // 零改动留痕（2026-09-10）：48,788（2026-01-01，ČSÚ）与注释一致，**本批已用上最新一期的三城之一**。
+    //   ⚠️ 复核时 mistopisy.cz 一度显示 41,257，经核为该站数据异常／非同一统计对象，**不采纳**——记在这里免得下一轮被它带偏。
+    //   「相传查理四世打猎发现温泉」已用传说式措辞；可考史实是 1370-08-14 授予皇家城市特权（市官方旅游页，2 级）。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
     //   人口 48,788（2026-01-01，ČSÚ DataStat，2026-05-18 发布，3 级转引但直接标注一手来源与发布日）。
     //   「最著名的温泉城市」是主观最高级、无可核口径，已软化为「著名的温泉城市之一」（该城 2021 年是 UNESCO「欧洲大温泉城」成员之一）。
@@ -12905,8 +12927,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant, with the film festival in July drawing the largest crowds; check with a local pharmacy or doctor for guidance on drinking the mineral water; it's about a 2-hour drive from Prague, with train and bus options also available.",
   },
   "cesky-krumlov": {
+    // 零改动留痕（2026-09-10）：正文「约 1.3 万」不改（12,658 按千位取整仍是 1.3 万），只更正了注释里的误引数。
+    //   「捷克境内规模第二大的城堡建筑群（仅次于布拉格城堡）」经捷克官方旅游局页（2 级）核实成立。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
-    //   切斯基克鲁姆洛夫 13,148（2026 年初，ČSÚ，经本国地方媒体报道，2 级），与正文「约 1.3 万」吻合。2026-09-09 核，本轮无需改动。
+    //   切斯基克鲁姆洛夫 **12,658（2026-01-01，ČSÚ）**，与正文「约 1.3 万」吻合。⚠️ 此处原记 13,148、注明「2026 年初，经本国地方媒体报道」，**但该数在这个镇的人口序列上找不到对应年份**（2021 普查 12,278、2024-12-31 为 12,797，多年稳定在 12,200—12,800 区间），判为误引，2026-09-10 更正。2026-09-09 核，本轮无需改动。
     identity:
       "Český Krumlov is a medieval town in South Bohemia with a population of about 13,000, named for the deep meander of the Vltava that nearly encircles its historic core (\"Krumlov\" comes from the German \"Krumme Aue,\" meaning \"crooked meadow\"). Its historic center was inscribed as a UNESCO World Heritage Site in 1992.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Český Krumlov (Czechia; town in the South Bohemian Region about 20 km south-west of České Budějovice, about 13,000 inhabitants over 22.16 km²; the historic centre inscribed by UNESCO in 1992 for well-preserved Gothic, Renaissance and Baroque architecture within its medieval street layout; Český Krumlov Castle, one of the largest castle complexes in Central Europe at 7 hectares, its moat filled not with water but with bears, referring to the Orsini family; the castle Baroque theatre built in 1680–1682 and renovated in 1765–1766, among the oldest surviving 18th-century theatres in the world with its original stage machinery; the Five-Petalled Rose Festival at the summer solstice and an international music festival in July and August; among the most visited places in the country)
@@ -12924,6 +12948,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant and also the best season for river rafting; the old town gets crowded in summer, so visit key sights early morning or evening; an overnight stay from Prague is recommended to fully experience the old town at night.",
   },
   "kutna-hora": {
+    // 零改动留痕（2026-09-10）：21,787（2026-01-01，ČSÚ）与注释完全一致，**本批已用上最新一期的三城之一**。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
     //   ČSÚ 中波希米亚州官方页：库特纳霍拉 2026-01-01 为 21,787，与同条目 howItWorks 的约 2.2 万一致 —— identity 的「约 2 万」取整过粗、两段读起来对不上。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/stc/pocet-obyvatel-v-obcich-stredoceskeho-kraje-k-1-1-2026
@@ -12944,6 +12969,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Worth visiting year-round, with May to September the most pleasant; book tickets in advance for the ossuary to avoid peak crowds; it makes a feasible day trip from Prague, or can be planned separately from a Karlovy Vary or Český Krumlov itinerary.",
   },
   olomouc: {
+    // 零改动留痕（2026-09-10）：105,297（2026-01-01，ČSÚ）与注释一致——注释里的「2025 年末 105,297」与「2026-01-01」
+    //   是同一时点的两种写法，**不是两个不同数字**，不构成矛盾。「捷克第六大城市」用最新一期复核排序未变（利贝雷茨约 10.8 万仍在其上）。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
     //   奥洛穆茨 2025 年末 105,297、2026 年模型估计约 105,847，与同条目 howItWorks 的约 10.5 万一致 —— identity 的「约 10 万」偏保守。「捷克第六大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 > 俄斯特拉发 > 皮尔森 > 利贝雷茨 108,090 > 奥洛穆茨）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/
