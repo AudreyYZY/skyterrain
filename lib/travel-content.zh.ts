@@ -12486,28 +12486,31 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "安卡拉属大陆性气候，夏季炎热干燥、冬季寒冷，4月至6月与9月至10月是较适宜的旅行季节；安尼特卡比尔参观需着装得体，游客较多建议避开土耳其国定假日高峰时段。",
   },
   izmir: {
+    // identity sources: 人口：**TÜİK 的「伊兹密尔人口」是全省数**（2014 年起省界 = 大都会市界），4,504,185（2025-12-31，2026-02-09 发布）。「第三大城市」按省人口排名成立。2 级转引 TÜİK。2026-09-10 核。
     identity:
-      "伊兹密尔是土耳其第三大城市，人口逾450万，是爱琴海沿岸重要港口，因相对世俗开放的城市氛围与滨海科尔顿长廊而被称为“爱琴海明珠”。",
+      "伊兹密尔是土耳其第三大城市（按省人口排名，伊兹密尔省自2014年起与大都会市同界），2025年省人口逾450万（土耳其统计局），是爱琴海沿岸重要港口，滨海的科尔顿长廊是城市地标，因此被称为“爱琴海明珠”。",
     // howItWorks sources: Wikipedia (2026-09): İzmir (metropolitan municipality = province; 30 districts; ~4.5 million 2024; Gulf of İzmir; Konak/Alsancak/Karşıyaka/Bornova/Bayraklı; İzban/metro/ferries; Ephesus 80 km); Metropolitan municipalities in Turkey
     howItWorks:
-      "伊兹密尔在行政上是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，市下分 30 个区，各区有自己的民选区长和区议会，区之下是有民选社区长的 mahalle。2024 年人口约 450 万，是土耳其第三大城市。城市环抱着伊兹密尔湾：科纳克与阿尔桑贾克是市中心，海滨的科尔敦长廊是市民散步的地方，凯麦拉尔特集市与古代士麦那的市集遗址在老城，卡迪费卡莱山俯瞰全城；对岸的卡尔希亚卡靠渡轮往来，博尔诺瓦是大学区，巴伊拉克勒是新的高楼商务区。İzban 通勤铁路、地铁与渡轮用一张卡贯通。港口与自由贸易区是经济支柱，以弗所在南面约 80 公里。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把伊兹密尔当作去以弗所的中转站，而它是一座围着海湾生长、靠渡轮把两岸连成一体的大城市。",
+      "伊兹密尔在行政上是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，市下分 30 个区，各区有自己的民选区长和区议会，区之下是有民选社区长的 mahalle。2025 年省人口约 450 万（土耳其统计局），是土耳其第三大城市。城市环抱着伊兹密尔湾：科纳克与阿尔桑贾克是市中心，海滨的科尔敦长廊是市民散步的地方，凯麦拉尔特集市与古代士麦那的市集遗址在老城，卡迪费卡莱山俯瞰全城；对岸的卡尔希亚卡靠渡轮往来，博尔诺瓦是大学区，巴伊拉克勒是新的高楼商务区。İzban 通勤铁路、地铁与渡轮用一张卡贯通。港口与自由贸易区是经济支柱，以弗所在南面约 80 公里。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把伊兹密尔当作去以弗所的中转站，而它是一座围着海湾生长、靠渡轮把两岸连成一体的大城市。",
     layout:
       "城市沿伊兹密尔湾呈弧形展开，科尔顿海滨长廊是市民日常休闲核心区；老城区卡迪费卡莱城堡所在的科纳克一带保留历史街区，士麦那古市集遗址位于市中心。",
     gettingAround:
       "阿德南·门德雷斯机场（ADB）距市区约18公里；市内有地铁与轻轨网络，前往以弗所古城通常需乘火车或大巴至邻近的塞尔柱镇，车程约1小时。",
+    // culture sources: ⚠️ 零争议红线（D-redline）：identity 与 culture 两段原本都写了「相对世俗开放 / 世俗化程度较高」——对土耳其国内城市在世俗／宗教轴上做比较评价，2026-09-10 一并删除，换成不带评价的城市事实。
     culture:
-      "官方语言土耳其语。伊兹密尔是土耳其世俗化程度较高的城市之一，衣着相对自由；进入清真寺仍需遵守脱鞋、女性备头巾等基本礼仪。餐厅小费一般为账单的10%至15%。",
+      "官方语言土耳其语。伊兹密尔是滨海度假与商贸氛围较浓的城市，日常衣着以休闲为主；进入清真寺仍需遵守脱鞋、女性备头巾等基本礼仪。餐厅小费一般为账单的10%至15%。",
     seeAndDo:
       "科尔顿海滨长廊（日落时分观景与用餐胜地）；卡迪费卡莱城堡；士麦那古市集遗址；以伊兹密尔为基地前往以弗所古城（古希腊罗马时期重要城邦遗址）一日游。",
     whenAndTips:
       "4月至6月、9月至10月气候最为宜人，7、8月沿海地区炎热且游客较多；前往以弗所建议安排一整天行程，早晨出发可避开旅游团高峰。",
   },
   antalya: {
+    // identity sources: 人口：TÜİK 2025 安塔利亚省 2,777,677（省界 = 大市界，2014 年起）。「地中海沿岸最大」经与阿达纳 2,283,609、梅尔辛比对成立。2026-09-10 核。
     identity:
-      "安塔利亚是土耳其地中海沿岸最大城市，人口逾270万，是土耳其地中海（土耳其里维埃拉）旅游的核心枢纽，古城卡莱伊奇临海而建。",
-    // howItWorks sources: Wikipedia (2026-09): Antalya (metropolitan municipality = province since 2014; 19 districts, 5 central; ~2.7 million province / ~1.4 million urban 2024; Kaleiçi; Konyaaltı/Lara; AntRay; airport); Metropolitan municipalities in Turkey
+      "安塔利亚是土耳其地中海沿岸最大城市（按省人口，2025年省人口逾277万，土耳其统计局），是土耳其地中海（土耳其里维埃拉）旅游的核心枢纽，古城卡莱伊奇临海而建。",
+    // howItWorks sources: 人口：省 2,777,677（TÜİK 2025）。**「城区约 140 万」核不到 TÜİK 一手口径**（疑为维基自定义 urban area），已撤下、记 unknown，不用另一个没核到的数替换。2026-09-10 核。
     howItWorks:
-      "安塔利亚自 2014 年起是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，省下分 19 个区，各区有自己的民选区长和区议会；其中穆拉特帕夏、凯佩兹、科尼亚阿尔特、多谢梅阿尔特与阿克苏 5 个区构成城市本身，2024 年全省约 270 万人，城区约 140 万。人们心中的“安塔利亚度假区”多在别的区：贝莱克、锡德、阿拉尼亚、凯梅尔各在自己的区里，离市区几十到一百多公里。城市本身建在托罗斯山与地中海之间的海岸台地上：卡莱伊奇老城在港口上方的悬崖上，科尼亚阿尔特海滩在西，拉拉海滩在东，杜登瀑布从台地直接跌入海里。安塔利亚机场是土耳其最繁忙的机场之一，旅客多是度假者；AntRay 有轨电车连起市区。柑橘与温室农业是旅游之外的产业。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把安塔利亚市当作度假村，而它是一座 140 万人的省会，度假村在几十公里外。",
+      "安塔利亚自 2014 年起是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，省下分 19 个区，各区有自己的民选区长和区议会；其中穆拉特帕夏、凯佩兹、科尼亚阿尔特、多谢梅阿尔特与阿克苏 5 个区构成城市本身，2024 年全省约 278 万人（2025年，土耳其统计局）；城区人口另有估算，但核不到官方口径，这里不写。人们心中的“安塔利亚度假区”多在别的区：贝莱克、锡德、阿拉尼亚、凯梅尔各在自己的区里，离市区几十到一百多公里。城市本身建在托罗斯山与地中海之间的海岸台地上：卡莱伊奇老城在港口上方的悬崖上，科尼亚阿尔特海滩在西，拉拉海滩在东，杜登瀑布从台地直接跌入海里。安塔利亚机场是土耳其最繁忙的机场之一，旅客多是度假者；AntRay 有轨电车连起市区。柑橘与温室农业是旅游之外的产业。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把安塔利亚市当作度假村，而它本身是一座省会城市，度假村在几十公里外。",
     layout:
       "老城卡莱伊奇以哈德良门为标志性入口，保留奥斯曼时期街巷与港湾；城市周边分布科尼亚勒特、伦达等多处知名海滩，杜登瀑布位于市区东北侧。",
     gettingAround:
@@ -12537,11 +12540,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至6月、9月至10月是热气球飞行成功率较高、气候最宜人的季节；热气球飞行受天气条件影响，建议预留备用日期以防取消；冬季偶有降雪，为岩柱地貌增添别样景观但飞行取消概率更高。",
   },
   bodrum: {
+    // identity sources: 人口：博德鲁姆是穆拉省下的**区（ilçe）**、不是省会，故用区人口而非省人口（穆拉全省 2025 年 1,099,547，不适用）。TÜİK 2025 区人口 207,196，2/3 级转引。2026-09-10 核。
     identity:
-      "博德鲁姆是土耳其爱琴海南岸半岛度假胜地，人口约20万，因白色建筑、风车与圣彼得城堡闻名，是土耳其地中海式生活方式的代表城镇之一。",
+      "博德鲁姆是土耳其爱琴海南岸半岛度假胜地，2025年区人口约20.7万（土耳其统计局），因白色建筑、风车与圣彼得城堡闻名，是土耳其地中海式生活方式的代表城镇之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodrum (Turkey; town and district of Muğla Province, the ancient Halicarnassus, whose Mausoleum was one of the Seven Wonders of the Ancient World; Bodrum Castle built by the Knights of St John from 1402 using stone from the Mausoleum, now the Museum of Underwater Archaeology; the district population grew from about 26,000 in 1965 to about 198,000 in 2023 as tourism replaced fishing and sponge diving; white-washed building mandated since 2006; peninsula villages including Yalıkavak, Gümüşlük and Türkbükü; marinas and gulet yachting; Milas-Bodrum Airport; ferries to Kos)
     howItWorks:
-      "博德鲁姆是土耳其穆拉省的一个县与同名县城，在爱琴海边的一处半岛上；穆拉是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。它是古代的哈利卡纳苏斯：公元前 4 世纪的摩索拉斯陵墓曾是世界七大奇迹之一，后毁于地震，1402 年起圣约翰骑士团用陵墓的石料在海岬上建起博德鲁姆城堡，如今这座城堡是水下考古博物馆，藏有从附近海域打捞的古代沉船。20 世纪中期这里还是渔业与采海绵的小镇，1965 年全县约 2.6 万人，2023 年已约 19.8 万，旅游把它彻底改写；2006 年起当地规定新建筑一律刷白，因此整个半岛外观统一。真正的度假区分散在半岛上的村子里——亚勒卡瓦克、居米什吕克、蒂尔克比库各有不同的气质，县城只是港口与交通的中心。米拉斯—博德鲁姆机场在东北，渡轮通往希腊的科斯岛。初来的人最容易犯的错，是把住宿定在县城，而多数人想去的海湾在半岛另一侧，开车还要半小时以上。",
+      "博德鲁姆是土耳其穆拉省的一个县与同名县城，在爱琴海边的一处半岛上；穆拉是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。它是古代的哈利卡纳苏斯：公元前 4 世纪的摩索拉斯陵墓曾是世界七大奇迹之一，后毁于地震，1402 年起圣约翰骑士团用陵墓的石料在海岬上建起博德鲁姆城堡，如今这座城堡是水下考古博物馆，藏有从附近海域打捞的古代沉船。20 世纪中期这里还是渔业与采海绵的小镇，1965 年全县约 2.6 万人，2023 年已约 19.8 万、2025 年约 20.7 万（土耳其统计局），旅游把它彻底改写；2006 年起当地规定新建筑一律刷白，因此整个半岛外观统一。真正的度假区分散在半岛上的村子里——亚勒卡瓦克、居米什吕克、蒂尔克比库各有不同的气质，县城只是港口与交通的中心。米拉斯—博德鲁姆机场在东北，渡轮通往希腊的科斯岛。初来的人最容易犯的错，是把住宿定在县城，而多数人想去的海湾在半岛另一侧，开车还要半小时以上。",
     layout:
       "城市围绕博德鲁姆湾呈半圆形分布，圣彼得城堡（博德鲁姆城堡）矗立于港湾中央的岬角上，将港湾分为东、西两个海湾；半岛周边分布图尔古特雷斯、亚利卡瓦克等多个度假小镇。",
     gettingAround:
@@ -12570,12 +12574,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "日出或傍晚时段游客相对较少、光线柔和适合拍摄；夏季正午气温较高，梯田表面反光强烈，建议携带防晒用品并避开正午时段前往。",
   },
+  // 零改动留痕（2026-09-10）：TZX 机场代码现行有效；前 756 年米利都殖民地特拉佩祖斯、1204 年第四次十字军后的
+  //   特拉比松帝国、1461 年入奥斯曼——均为广泛记载的前现代史，未涉现代议题。
   trabzon: {
+    // identity sources: 人口：identity 的「逾 80 万」是**省**人口（TÜİK 2025 823,323），howItWorks 的「约 33.5 万」是**中心区奥尔塔希萨尔**（2025 年 335,116）——两个都对，原来只是都没写口径，并排读像打架。2026-09-10 核。
     identity:
-      "特拉布宗是土耳其黑海东岸重要港口城市，人口逾80万，历史上曾是丝绸之路支线港口与拜占庭特拉比松帝国都城，是探索黑海山地景观的核心门户。",
+      "特拉布宗是土耳其黑海东岸重要港口城市，2025年省人口逾82万（土耳其统计局，特拉布宗省自2014年起与大市同界），历史上曾是丝绸之路支线港口与拜占庭特拉比松帝国都城，是探索黑海山地景观的核心门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trabzon (Turkey; city and capital of Trabzon Province on the north-eastern Black Sea coast, urban population about 335,000; founded in 756 BC as the Greek colony Trapezus, capital of the Empire of Trebizond, a successor state of Byzantium after the Fourth Crusade of 1204, until Ottoman rule began in 1461; the Hagia Sophia of Trabzon; Sumela Monastery about 45 km away at Maçka; steep mountains behind the coast and the wettest region of Turkey; hazelnuts and tea the main exports, anchovies known throughout Turkey as hamsi; Uzungöl; Trabzonspor; Trabzon Airport)
     howItWorks:
-      "特拉布宗是土耳其特拉布宗省的省会，在黑海东南岸，城区人口约 33.5 万；特拉布宗是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。地形决定了这座城的形状：庞廷山脉在离岸很近的地方陡然升起，可用的平地只有沿海一条窄带，因此城市顺着海岸拉长，往山上一层层叠着建，公路与隧道是日常。公元前 756 年它作为希腊殖民城市特拉佩苏斯建立，1204 年第四次十字军东征之后成为特拉比松帝国的都城，1461 年起入奥斯曼治下；13 世纪的圣索菲亚教堂建筑保存至今，苏梅拉修道院嵌在城南约 45 公里马奇卡的悬崖上。这一带是土耳其降水最多的地区，山坡上密植茶树与榛子，两者是本地的主要出口；黑海的凤尾鱼在土耳其称“哈姆西”，是这座城最有名的食物。乌宗湖在南面山中。初来的人最容易犯的错，是按地中海沿岸的印象预期这里，而黑海岸多雨、多云、山陡。",
+      "特拉布宗是土耳其特拉布宗省的省会，在黑海东南岸，中心城区（奥尔塔希萨尔区）2025年人口约 33.5 万（土耳其统计局）；特拉布宗是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。地形决定了这座城的形状：庞廷山脉在离岸很近的地方陡然升起，可用的平地只有沿海一条窄带，因此城市顺着海岸拉长，往山上一层层叠着建，公路与隧道是日常。公元前 756 年它作为希腊殖民城市特拉佩苏斯建立，1204 年第四次十字军东征之后成为特拉比松帝国的都城，1461 年起入奥斯曼治下；13 世纪的圣索菲亚教堂建筑保存至今，苏梅拉修道院嵌在城南约 45 公里马奇卡的悬崖上。这一带是土耳其降水最多的地区，山坡上密植茶树与榛子，两者是本地的主要出口；黑海的凤尾鱼在土耳其称“哈姆西”，是这座城最有名的食物。乌宗湖在南面山中。初来的人最容易犯的错，是按地中海沿岸的印象预期这里，而黑海岸多雨、多云、山陡。",
     layout:
       "城市沿黑海海岸带状分布，老城区保留拜占庭时期特拉布宗圣索菲亚教堂等历史建筑，市郊山区分布苏美拉修道院与乌宗湖等自然与人文景观。",
     gettingAround:
@@ -12587,12 +12594,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "6月至9月气候相对温暖干燥，是探访苏美拉修道院与乌宗湖的适宜季节；黑海地区全年多雨，出行建议随身携带雨具，山区道路多弯建议预留充足车程时间。",
   },
+  // 零改动留痕（2026-09-10）：KYA 机场代码现行有效。identity 的「因苏菲派诗人鲁米与旋转苦行僧传统闻名，是重要的
+  //   宗教文化中心」经专项复核为**客观史实／文旅表述**，与伊兹密尔那句「相对世俗开放」的国内比较评价不同，
+  //   ✅ 不在红线之内，不改。
   konya: {
+    // identity sources: 人口：TÜİK 2025 科尼亚省 2,343,409。**howItWorks 早就写清了口径、identity 没跟上**——C6-h「注释／另一段写对了，这一段没同步」的又一例。「宗教文化中心」是客观史实表述，与伊兹密尔那句国内比较评价不同，不踩红线、保留。2026-09-10 核。
     identity:
-      "科尼亚是土耳其中安纳托利亚重要城市，人口逾220万，历史上是塞尔柱王朝在安纳托利亚的都城，因苏菲派诗人鲁米与旋转苦行僧传统闻名，是土耳其重要的宗教文化中心。",
+      "科尼亚是土耳其中安纳托利亚重要城市，2025年省人口逾234万（土耳其统计局，省界与大市同域），历史上是塞尔柱王朝在安纳托利亚的都城，因苏菲派诗人鲁米与旋转苦行僧传统闻名，是土耳其重要的宗教文化中心。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Konya (Turkey; city and capital of Konya Province, the largest province of Turkey by area, the metropolitan municipality counting 2,330,024 in 2024 and the sixth most populous city in Turkey; historically Iconium, capital of the Seljuk Sultanate of Rum in the 12th and 13th centuries with its Seljuk architecture; Rumi, called Mevlâna, spent his last years here and his turquoise-domed tomb is the chief visitor site, with authentic sema performances each Saturday at the Mevlana Cultural Centre and the Şeb-i Arûs in December; on the south-western edge of the Central Anatolian Plateau in Turkey's largest plain, a cold semi-arid climate; among the Anatolian Tigers economically; high-speed rail to Ankara, Istanbul and Karaman; Çatalhöyük nearby; etli ekmek)
     howItWorks:
-      "科尼亚是土耳其科尼亚省的省会，科尼亚是土耳其面积最大的省；这里实行“大市”制，市界与省界重合，2024 年大市辖区人口 2,330,024——因此这个数字包括了广阔的农村，不是市区人口，市区在其中约占一半，全国排第六。城市在中安纳托利亚高原西南缘的大平原上，气候属冷半干旱，冬冷夏热、雨少，这片平原是土耳其最大的产粮区，小麦与甜菜是它的支柱，本地因经济活跃被归入“安纳托利亚之虎”。12 至 13 世纪它是塞尔柱罗姆苏丹国的首都，城中的塞尔柱式清真寺与经学院留自那个时代。13 世纪的苏非诗人鲁米在此度过晚年，绿松石圆顶的梅夫拉纳陵是全城最主要的参观地，每周六在文化中心有旋转舞“塞玛”的正式演出，12 月的“谢比阿鲁斯”纪念活动规模最大。高铁通往安卡拉与伊斯坦布尔，恰塔霍裕克遗址在东南约 40 公里。初来的人最容易犯的错，是用大市人口来估计城市规模，而那是全省的数字。",
+      "科尼亚是土耳其科尼亚省的省会，科尼亚是土耳其面积最大的省；这里实行“大市”制，市界与省界重合，2025 年大市辖区人口 2,343,409——因此这个数字包括了广阔的农村，不是市区人口，市区在其中约占一半，全国排第六。城市在中安纳托利亚高原西南缘的大平原上，气候属冷半干旱，冬冷夏热、雨少，这片平原是土耳其最大的产粮区，小麦与甜菜是它的支柱，本地因经济活跃被归入“安纳托利亚之虎”。12 至 13 世纪它是塞尔柱罗姆苏丹国的首都，城中的塞尔柱式清真寺与经学院留自那个时代。13 世纪的苏非诗人鲁米在此度过晚年，绿松石圆顶的梅夫拉纳陵是全城最主要的参观地，每周六在文化中心有旋转舞“塞玛”的正式演出，12 月的“谢比阿鲁斯”纪念活动规模最大。高铁通往安卡拉与伊斯坦布尔，恰塔霍裕克遗址在东南约 40 公里。初来的人最容易犯的错，是用大市人口来估计城市规模，而那是全省的数字。",
     layout:
       "梅夫拉纳博物馆（鲁米陵墓所在地）是老城核心地标，周边分布阿拉丁清真寺、细长尖塔神学院博物馆等塞尔柱时期建筑，是科尼亚历史城区的核心区域。",
     gettingAround:
@@ -12604,9 +12615,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "每年12月中旬鲁米逝世纪念周（Şeb-i Arus）期间可观赏正式的旋转苦行僧仪式，但游客较多需提前订票；4月至6月、9月至10月是气候较宜人的旅行季节。",
   },
+  // 零改动留痕（2026-09-10）：howItWorks 段全篇没有写人口数字，与其余五城的体例不一致，但**不是错误**，本轮不补——
+  //   补数字要连口径一起写，等下一轮连同布尔萨城区口径（三个中心区）一起查清再补。
+  //   1326 年攻取、1360 年代迁都埃迪尔内、2014 年「布尔萨与朱马勒克兹克：奥斯曼帝国的诞生」列入 UNESCO：均核实无误。
   bursa: {
+    // identity sources: 人口：原文 216 万**量级就不对**——TÜİK 2025 布尔萨省 3,263,011。216 万接近三个中心区的城区规模，属把城区数当全市数用（C6-c）。「第四大」按省人口排名成立（伊斯坦布尔、安卡拉、伊兹密尔之后）。2 级转引 TÜİK。2026-09-10 核。
     identity:
-      "布尔萨是土耳其第四大城市，人口逾216万，是奥斯曼帝国首个都城（1326至1365年），因清真寺众多与紧邻乌鲁山滑雪场而被称为“绿色布尔萨”。",
+      "布尔萨是土耳其第四大城市，2025年省人口逾326万（土耳其统计局，省界与大市同域），是奥斯曼帝国首个都城（1326至1365年），因清真寺众多与紧邻乌鲁山滑雪场而被称为“绿色布尔萨”。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bursa (Turkey; city and capital of Bursa Province, the fourth most populous city in Turkey and second in the Marmara Region after Istanbul; captured from the Byzantines in 1326 and the capital of the early Ottoman state until the 1360s, when the capital moved to Edirne; Bursa and Cumalıkızık: the Birth of the Ottoman Empire, UNESCO World Heritage 2014; the Grand Mosque with twenty domes in four rows of five, the Green Mosque and Green Tomb, the Koza Han silk market; Mount Uludağ above the city with skiing and thermal springs used since Roman times; the largest production centre of the Turkish automotive industry with Fiat, Renault and Bosch, plus textiles and food; called Yeşil Bursa, green Bursa)
     howItWorks:
       "布尔萨是土耳其布尔萨省的省会，是土耳其第四大城市、马尔马拉地区仅次于伊斯坦布尔的第二大城市；布尔萨实行“大市”制，市界与省界重合，本地事务由大市与县两级办理。1326 年奥斯曼势力从拜占庭手中取得此城，此后到 1360 年代它是奥斯曼国家的第一个主要都城，之后迁往埃迪尔内；2014 年“布尔萨与楚马勒克兹克：奥斯曼帝国的诞生”列入世界遗产，涵盖大清真寺、绿色清真寺与绿陵以及山坡上的老村楚马勒克兹克。大清真寺的屋顶由二十个穹顶按四排五列排开，科扎商栈曾是丝绸交易的中心——布尔萨长期是丝绸之路西端的丝织重镇。城市贴着乌鲁山的北坡，山上有滑雪场与缆车，罗马时代起就利用这里的温泉，因此市内多浴场，绿地多，本地自称“绿布尔萨”。今天它是土耳其汽车工业最大的生产中心，菲亚特、雷诺与博世都在此设厂。初来的人最容易犯的错，是把它当作伊斯坦布尔的一日游，而它是一座工业与遗产并重的大城。",
@@ -12638,12 +12653,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "5月至9月是沿海旅游旺季，7、8月气温高、游客最多，5、6月与9月气候宜人且价格较低；内陆萨格勒布四季皆宜，冬季有圣诞集市；沿海与内陆之间车程较长，建议合理安排行程天数。",
   },
+  // 零改动留痕（2026-09-10）：ZAG（弗拉尼奥·图季曼机场）代码现行有效；history 段止于中世纪格拉德茨与卡普托尔
+  //   两座山丘小镇，未涉 1990 年代及以后议题。✅ 零争议红线通过。
   zagreb: {
+    // identity sources: 人口：DZS 年中估计 777,744（2025 年年中，STAN-2026-3-1，2026-09-04 发布，1 级）。萨格勒布因「市 = 县」地位在该序列里单列，所以它**有**年度更新数，不同于其他克罗地亚城市。2026-09-10 核。
     identity:
-      "萨格勒布是克罗地亚首都与最大城市，人口约80万，是全国政治、经济与文化中心，城市历史可追溯至中世纪的格拉德茨与卡普托尔两座山丘小镇。",
-    // howItWorks sources: Wikipedia (2026-09): Zagreb (City of Zagreb with county status; 17 city districts with elected councils, 218 local committees; ~641 km²; ~767,000 2021 ≈ quarter of Croatia; metro ~1.1 million; Upper/Lower Town, Novi Zagreb; ZET trams, no metro; ~70 settlements incl. Sesvete)
+      "萨格勒布是克罗地亚首都与最大城市，2025年年中人口约77.8万（克罗地亚统计局），是全国政治、经济与文化中心，城市历史可追溯至中世纪的格拉德茨与卡普托尔两座山丘小镇。",
+    // howItWorks sources: 人口：DZS 年中估计 777,744（2025 年年中，STAN-2026-3-1，2026-09-04 发布，1 级）；占全国 20.1%。原文「都会区约 110 万」核不到发布方——DZS 不发布这一档，已撤下（Eurostat FUA 一类有具名发布方的口径不禁用，但要写明是谁发的、哪一年）。2026-09-10 核。
     howItWorks:
-      "萨格勒布既是克罗地亚的首都，也是一个与县同级的行政区，与四周的萨格勒布县是两个不同的政府；由民选的市长与市议会治理，市下分 17 个区（gradska četvrt），各有民选的区议会，区之下是 218 个地方委员会。市域约 641 平方公里，包括塞斯韦特等约 70 个聚落，2021 年人口约 77 万，约占克罗地亚的四分之一，都会区约 110 万。城市从北向南分成三层：山坡上的上城是格拉德茨与卡普托尔两座中世纪城镇合成的老城，下城是 19 世纪的格网，耶拉契奇总督广场是坐标原点，绿色马蹄形的公园群穿过其中；萨瓦河对岸的新萨格勒布是战后建起的住宅区。梅德韦德尼察山在北面，是市民的后山。ZET 的有轨电车是市内交通的骨架，没有地铁；缆车连接上下城，多拉茨市场在市中心。地址写“街道、门牌、五位邮编”，邮编 10000 开头。初来的人最容易犯的错，是把上城与下城当作整座城，而萨瓦河以南住着几十万人。",
+      "萨格勒布既是克罗地亚的首都，也是一个与县同级的行政区，与四周的萨格勒布县是两个不同的政府；由民选的市长与市议会治理，市下分 17 个区（gradska četvrt），各有民选的区议会，区之下是 218 个地方委员会。市域约 641 平方公里，包括塞斯韦特等约 70 个聚落，2025 年年中人口约 77.8 万（克罗地亚统计局），约占克罗地亚的五分之一；克罗地亚统计局不单独发布「都会区」这一档，更大范围只能按县计。城市从北向南分成三层：山坡上的上城是格拉德茨与卡普托尔两座中世纪城镇合成的老城，下城是 19 世纪的格网，耶拉契奇总督广场是坐标原点，绿色马蹄形的公园群穿过其中；萨瓦河对岸的新萨格勒布是战后建起的住宅区。梅德韦德尼察山在北面，是市民的后山。ZET 的有轨电车是市内交通的骨架，没有地铁；缆车连接上下城，多拉茨市场在市中心。地址写“街道、门牌、五位邮编”，邮编 10000 开头。初来的人最容易犯的错，是把上城与下城当作整座城，而萨瓦河以南住着几十万人。",
     layout:
       "城市分为上城区（历史老城，圣马可教堂与总督府所在地）与下城区（19世纪规划的方格状街区，包含中央广场耶拉契奇总督广场与众多博物馆）；多拉茨市场是连接上下城的传统市集。",
     gettingAround:
@@ -12655,12 +12673,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "4月至6月、9月至10月气候宜人，是探访萨格勒布的最佳季节；12月圣诞集市期间游客较多但氛围浓厚；作为内陆城市，萨格勒布全年皆可游览，不受沿海旅游季节限制。",
   },
+  // 零改动留痕（2026-09-10）：SPU 机场代码现行有效；戴克里先宫 1979 年列入 UNESCO 属实；
+  //   history 段止于古罗马—威尼斯—哈布斯堡，未涉现代议题。✅ 零争议红线通过。
   split: {
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "斯普利特是达尔马提亚地区最大城市，人口约16万，因古罗马皇帝戴克里先在此建造退位宫殿而闻名，宫殿建筑群历经近1700年演变为城市老城核心。",
-    // howItWorks sources: Wikipedia (2026-09): Split (79.4 km²; ~160,600 2021; Split-Dalmatia seat; 27 kotari; Diocletian's Palace UNESCO 1979; Riva, Marjan, Bačvice; conurbation ~307,000 with Solin/Kaštela; Promet buses; airport in Kaštela ~20 km)
+      "斯普利特是达尔马提亚地区最大城市，2021年人口普查约16.1万，因古罗马皇帝戴克里先在此建造退位宫殿而闻名，宫殿建筑群历经近1700年演变为城市老城核心。",
+    // howItWorks sources: ⚠️ 「约 31 万」原本挂在索林 + 卡什泰拉两个市镇上，实际那是斯普利特连同周边十余个市镇的**加总**（2021 年普查 307,289，含斯普利特本身 16.1 万）。索林 24,912 + 卡什泰拉 37,951 ≈ 6.3 万。DZS 不发布「都会区」档，故写成「加总」而不是造一个口径。2026-09-10 核。
     howItWorks:
-      "斯普利特是克罗地亚第二大城市，斯普利特—达尔马提亚县的县治；市镇约 79 平方公里，2021 年人口约 16 万，由民选的市长与市议会治理，市下分 27 个区（kotar）。这座城是从戴克里先宫里长出来的：公元 4 世纪的罗马皇宫本身就是老城，居民至今住在宫墙之内，1979 年列入世界遗产，里瓦海滨长廊在宫的南墙外；马里安半岛是城西的森林山丘，巴奇维采是市中心的海滩。港口是亚得里亚海最大的客运港之一，渡轮通往赫瓦尔、布拉奇、维斯与意大利。索林（古萨洛纳）与卡什泰拉是城区连绵的另外两座市镇，合计约 31 万人，机场在卡什泰拉，约 20 公里。Promet 的公交承担出行，没有轨道交通。哈伊杜克队与波柳德球场是这座城的身份，克拉帕合唱是达尔马提亚的声音。地址写“街道、门牌、五位邮编”，邮编 21000 开头。初来的人最容易犯的错，是把戴克里先宫当作一处遗址，而它是一座住着人的老城。",
+      "斯普利特是克罗地亚第二大城市，斯普利特—达尔马提亚县的县治；市镇约 79 平方公里，2021 年人口约 16 万，由民选的市长与市议会治理，市下分 27 个区（kotar）。这座城是从戴克里先宫里长出来的：公元 4 世纪的罗马皇宫本身就是老城，居民至今住在宫墙之内，1979 年列入世界遗产，里瓦海滨长廊在宫的南墙外；马里安半岛是城西的森林山丘，巴奇维采是市中心的海滩。港口是亚得里亚海最大的客运港之一，渡轮通往赫瓦尔、布拉奇、维斯与意大利。与市区连绵的另外两座市镇是索林（古萨洛纳）与卡什泰拉，二者合计约 6.3 万人（2021年普查）；把斯普利特连同周边十余个市镇一并加总则约 30.7 万（2021年普查加总，克罗地亚统计局并不单独发布「都会区」这一档）。机场在卡什泰拉，约 20 公里。Promet 的公交承担出行，没有轨道交通。哈伊杜克队与波柳德球场是这座城的身份，克拉帕合唱是达尔马提亚的声音。地址写“街道、门牌、五位邮编”，邮编 21000 开头。初来的人最容易犯的错，是把戴克里先宫当作一处遗址，而它是一座住着人的老城。",
     layout:
       "老城完整坐落于戴克里先宫遗址之上，宫殿地下室、圣多姆尼乌斯主教座堂（原戴克里先陵墓）与街巷格局至今保留罗马时期布局；里瓦滨海长廊是老城与港口之间的日常休闲地带。",
     gettingAround:
@@ -12689,9 +12710,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "5月至6月、9月至10月气候宜人、游客相对较少，7、8月气温高且邮轮游客密集；城墙步道无遮蔽，建议避开正午时段并携带充足饮水。",
   },
+  // 零改动留痕（2026-09-10）：RJK 机场代码现行有效。history 段的「1924–1945 年费乌梅／苏沙克分界」是两次大战之间的
+  //   行政边界事实（费乌梅自由邦），早于 1990 年代那条线，✅ 零争议红线通过、不改。
   rijeka: {
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "里耶卡是克罗地亚最大海港与第三大城市，人口约11万，自奥匈帝国时期起即是中欧通往地中海的重要港口，是一座工业与港口传统深厚的城市。",
+      "里耶卡是克罗地亚最大海港与第三大城市，2021年人口普查约10.8万，自奥匈帝国时期起即是中欧通往地中海的重要港口，是一座工业与港口传统深厚的城市。",
     // howItWorks sources: Wikipedia (2026-09): Rijeka (43.4 km²; 107,964 2021; Primorje-Gorski Kotar seat; largest port; Korzo; Trsat; Rječina Fiume/Sušak 1924–45; Opatija 15 km; ECoC 2020; torpedo 1874; University of Rijeka)
     howItWorks:
       "里耶卡是克罗地亚第三大城市，也是最大的港口，滨海和山区县的县治；市镇约 43 平方公里，2021 年人口约 11 万，由民选的市长与市议会治理。城市沿克瓦尔内尔湾的山脚展开，只有一条窄带：科尔佐步行街是市中心，特尔萨特城堡在山上俯瞰全城，列奇纳河把老城与东面的苏沙克分开——1924 至 1945 年间这条河曾是两座城市的边界。奥匈帝国时期它是帝国的主要港口，1913 年位列欧洲第十繁忙的港，1874 年怀特黑德在这里造出了第一枚鱼雷，1882 年建起欧洲第一座工业炼油厂。2020 年它是欧洲文化之都，里耶卡大学在城里。奥帕蒂亚海滨在西面 15 公里，是另一座市镇，克尔克岛上的机场约 30 公里。Autotrolej 的公交承担出行，没有轨道交通。地址写“街道、门牌、五位邮编”，邮编 51000 开头。初来的人最容易犯的错，是把里耶卡当作去岛屿的码头，而它是一座有自己工业史与大学的港口城市。",
@@ -12706,9 +12730,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "5月至9月气候适宜，里耶卡游客量低于达尔马提亚沿海城市，适合喜欢本地生活氛围的旅行者；作为克瓦内尔湾门户，是探访乌奇卡山与岛屿的理想出发点。",
   },
+  // 零改动留痕（2026-09-10）：ZAD 机场代码现行有效；history 段止于古罗马至威尼斯时期。✅ 零争议红线通过。
   zadar: {
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "扎达尔是北达尔马提亚古城，人口约7万，城市历史可追溯至古罗马时期，是克罗地亚保留罗马遗迹最丰富的城市之一。",
+      "扎达尔是北达尔马提亚古城，2021年人口普查约7.1万，城市历史可追溯至古罗马时期，是克罗地亚保留罗马遗迹最丰富的城市之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zadar (Croatia; the seat of Zadar County and the fifth-largest city in the country, with 70,779 residents in the 2021 census; the oldest continuously inhabited city in Croatia, beginning as the Liburnian settlement Iader in the 9th century BC, a Roman municipality in 59 BC and a Roman colony in 48 BC, held in turn by Byzantine, Venetian, Hungarian and Austrian rule; the 9th-century Church of St Donatus, the cathedral and the Roman forum; the Sea Organ and the Monument to the Sun installed in the 2000s; the fortified city inscribed by UNESCO in 2017 as part of the Venetian defensive works; a ferry port for the Zadar archipelago; Zadar Airport)
     howItWorks:
       "扎达尔是克罗地亚扎达尔县的首府，2021 年普查人口 70,779，是全国第五大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理，县管区域事务。它是克罗地亚有人连续居住时间最长的城市：公元前 9 世纪利布尔尼亚人在此建聚落，称“亚德尔”，公元前 59 年成为罗马自治市、前 48 年升为殖民城，此后历经拜占庭、威尼斯共和国、匈牙利与哈布斯堡的治理。老城建在一条伸入海中的半岛上，街道至今沿用罗马时期的方格布局，广场上留着罗马集市的遗址；9 世纪的圣多纳特教堂是达尔马提亚早期教堂建筑的代表，主教座堂在旁。2017 年这座城的防御工事随“威尼斯共和国防御体系”列入世界遗产。海边的“海风琴”与“向太阳致敬”是 2000 年代加建的两件装置，前者用海浪推动管风琴发声。渡轮从这里通往扎达尔群岛，1396 年创办的大学是克罗地亚最早的一所。初来的人最容易犯的错，是把老城当作步行几分钟的小片，而半岛上层层叠着从罗马到威尼斯的两千年。",
@@ -12723,9 +12749,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "5月至9月气候适宜，日落时分海之风琴与向太阳致敬两处景点最具氛围；扎达尔是探访科尔纳蒂群岛国家公园的主要门户城市。",
   },
+  // 零改动留痕（2026-09-10）：PUY 机场代码现行有效；history 段止于古罗马—威尼斯共和国—奥匈帝国。✅ 零争议红线通过。
   pula: {
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "普拉是伊斯特拉半岛最大城市，人口约5万，因保存完好的古罗马竞技场闻名，历史上先后受古罗马、威尼斯共和国、奥匈帝国治理。",
+      "普拉是伊斯特拉半岛最大城市，2021年人口普查约5.2万，因保存完好的古罗马竞技场闻名，历史上先后受古罗马、威尼斯共和国、奥匈帝国治理。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pula (Croatia; the largest city in Istria County and the seventh-largest in the country with 52,220 residents in 2021, though it was the administrative centre of Istria from Roman times until superseded by Pazin in 1991; the Pula Arena, one of the best preserved Roman amphitheatres and among the six largest surviving, still used for concerts and a film festival; the Temple of Augustus and the 1st-century Arch of the Sergii; under Austro-Hungarian rule the natural harbour became Austria's main naval base and a major shipbuilding centre from 1856; James Joyce taught English here from 30 October 1904 to March 1905; Brijuni National Park nearby; Pula Airport)
     howItWorks:
       "普拉是克罗地亚伊斯特拉县最大的城市，2021 年人口 52,220，是全国第七大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。这里有一处容易弄错的关系：从罗马时代起普拉一直是伊斯特拉半岛的行政中心，但 1991 年之后县治迁到了内陆的帕津，如今它是最大的城市而非首府。城中的圆形竞技场是保存最完好的罗马竞技场之一，也是现存规模最大的六座之一，四座边塔完整保留，至今用于演出与电影节；奥古斯都神庙与公元 1 世纪的塞尔吉凯旋门也在老城。它的近代面貌来自军港：1856 年起奥匈帝国把这处天然良港建成海军主基地与造船中心，城市因此扩张，乌利亚尼克船厂沿用至今。1904 年 10 月至次年 3 月，乔伊斯曾在此教英语。布里俄尼国家公园在西北的海上，普拉机场在城东。初来的人最容易犯的错，是以为普拉是伊斯特拉的首府，而县政府在帕津。",
@@ -12740,9 +12768,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     whenAndTips:
       "5月至9月气候适宜，夏季竞技场常有音乐节活动、氛围热烈但门票需提前预订；普拉是探索伊斯特拉半岛红土海岸城镇群的理想出发点。",
   },
+  // 零改动留痕（2026-09-10）：OSI 机场代码现行有效；history 段止于奥斯曼—哈布斯堡治理，未涉 1990 年代及以后议题。
+  //   ✅ 零争议红线通过——这一条本轮专门查过，因为斯拉沃尼亚是红线最敏感的一带。
   osijek: {
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "奥西耶克是斯拉沃尼亚地区最大城市，人口约9.6万，克罗地亚第四大城市，德拉瓦河穿城而过，历史上曾先后受奥斯曼帝国、哈布斯堡王朝治理。",
+      "奥西耶克是斯拉沃尼亚地区最大城市，2021年人口普查约9.6万，克罗地亚第四大城市，德拉瓦河穿城而过，历史上曾先后受奥斯曼帝国、哈布斯堡王朝治理。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Osijek (Croatia; the fourth-largest city in the country and the seat of Osijek-Baranja County, the largest city in Slavonia, with 96,313 residents in 2021; on the Drava about 25 km upstream from its confluence with the Danube; the Roman settlement of Mursa, an important military colony, later under Ottoman control for over 150 years until Habsburg forces took it in 1687; the Tvrđa, an 18th-century Baroque fortress quarter; the neo-Gothic co-cathedral whose 90 m tower is the second-highest church tower in Croatia; agriculture and food industry, with Saponia, the Osječko brewery and Kandit; Kopački rit nature park; a tram system running since 1884, the only one in Croatia outside Zagreb; Osijek Airport and the university)
     howItWorks:
       "奥西耶克是克罗地亚第四大城市，也是奥西耶克-巴拉尼亚县的首府与斯拉沃尼亚地区最大的城市，2021 年人口 96,313；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。城市在德拉瓦河边，往下游约 25 公里就是德拉瓦河汇入多瑙河之处，四周是潘诺尼亚平原——这片平原是克罗地亚的粮仓，因此本地的产业以农业与食品加工为主，肥皂与洗涤剂厂萨波尼亚、奥西耶克啤酒厂与糖果厂坎迪特都是老企业。罗马时期这里是名为“穆尔萨”的军事殖民城；此后奥斯曼治理了一个半世纪以上，1687 年哈布斯堡军队取得此城，并在 18 世纪沿河建起“特弗尔贾”棱堡城区，那一整片巴洛克营房与广场至今完整保留，是全城最有辨识度的地方。新哥特式共同主教座堂的塔高 90 米，在克罗地亚居第二。1884 年通车的有轨电车是萨格勒布之外克罗地亚唯一仍在运营的一套。科帕奇基里特自然公园在东北的河汊湿地上。初来的人最容易犯的错，是以为克罗地亚都是海岸，而这里离海很远。",
