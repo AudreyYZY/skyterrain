@@ -12449,7 +12449,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   https://mgeo.kigam.re.kr/geoinfo/mt_geomorph/report/ch_16_0.html
     //   盆地比周边山地低约 400–800 米，正文的「500 至 800 米」在取值范围内、判定不改。
     seeing:
-      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, roughly 10 km north-south and 7 km east-west; its bowl-like shape has given it the nickname \"Punchbowl\".",
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon, roughly 10 km north-south and 7 km east-west; its bowl-like shape has given it the nickname \"Punchbowl\".",
     formation:
       "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
     observation:
@@ -12612,11 +12612,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, the gently rolling pastures of Daegwallyeong stretch out continuously, with white wind turbines lined along the ridge and grazing livestock scattered across the open green grassland — a striking contrast to the forest-covered mountains typical elsewhere in Korea.",
     distinguish:
-      "The Daegwallyeong highland pastures and the main body of the Taebaek Mountains are both in Gangwon Province, but Daegwallyeong is a comparatively flat, open mountain-pass grassland, while the main Taebaek range is dominated by steep, forested mountains.",
+      "The Daegwallyeong highland pastures and the main body of the Taebaek Mountains are both in Gangwon, but Daegwallyeong is a comparatively flat, open mountain-pass grassland, while the main Taebaek range is dominated by steep, forested mountains.",
     concept:
       "The Daegwallyeong highland pastures are a rare example in Korea of large-scale mountain grassland, offering a sample for studying how specific wind and climate conditions produce non-forest vegetation cover in temperate mountains.",
     history:
-      "Daegwallyeong has long served as a key mountain passage linking the Yeongdong and Yeongseo regions of Gangwon Province; today's ranches and wind farms continue this area's historic role as a hub for transport and resource use.",
+      "Daegwallyeong has long served as a key mountain passage linking the Yeongdong and Yeongseo regions of Gangwon; today's ranches and wind farms continue this area's historic role as a hub for transport and resource use.",
   },
   "honam-plain": {
     // seeing / formation sources: 面积约 3500 km²、韩国最重要稻米产区 —— 3500 km² 与「半岛最大平原」这两项被
