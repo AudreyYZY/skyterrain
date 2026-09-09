@@ -122,6 +122,20 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
     { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "丹麦统计局只有 kommune（市镇）与 byområde（城区）两档，没有「都会区」" },
     { re: /\bmetropolitan (?:area|population)\b[^.;]{0,24}?[\d.,]+\s*(?:million|thousand)/i, why: "Statistics Denmark publishes no metropolitan-area tier" },
   ],
+  // 瑞士：BFS 的官方层级是 Gemeinde/commune（市镇）→ Kanton（州）→ Agglomeration（集聚区，
+  // 见《Raumgliederungen der Schweiz》）。「市区人口」不是 BFS 用语；「城市连绵区」是本仓库
+  // 自己造的说法，两个都不能当口径名用。「都会区」不列进来——巴塞尔的三国区、日内瓦的
+  // 大日内瓦确有跨境机构在统计，只要写明发布方就是可核的（2026-09-09 核）。
+  switzerland: [
+    { re: /市区人口/, why: "瑞士联邦统计局只有市镇（Gemeinde/commune）、州与集聚区（Agglomeration）三档，没有「市区人口」" },
+    { re: /城市连绵区/, why: "「城市连绵区」不是 BFS 的口径名，对应的官方档是「集聚区（Agglomeration）」" },
+  ],
+  // 冰岛：Hagstofa Íslands 的档是 sveitarfélag（市镇）、byggðakjarni/þéttbýlisstaður（城镇聚落）、
+  // höfuðborgarsvæðið（首都区）。「市区人口」不是其中任何一档（2026-09-09 核）。
+  iceland: [
+    { re: /市区人口/, why: "冰岛统计局只有市镇、城镇聚落与首都区三档，没有「市区人口」" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "冰岛统计局没有「都会区」这一档，首都区（höfuðborgarsvæðið）才是官方分组" },
+  ],
 };
 
 /**

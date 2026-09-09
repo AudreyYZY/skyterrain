@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 7f08e25
+lastVerifiedCommit: 58da894
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 7f08e25
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-09 | travel · 瑞士 / 冰岛（2026-09-09 城市核实：瑞士 7 城 + 冰岛 7 城（口径先于数字）） | 28 | 0 / 25 / 3 | 当场修 25 条；新开 issue 3、关闭 0 |
 | 2026-09-09 | terrain · 英国（高地 / 国家公园 / 沼地 / 海崖）（2026-09-09 地形核实：英国第 1 批 12 篇） | 28 | 9 / 19 / 0 | 当场修 28 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain · 瑞士（阿尔卑斯山系 / 冰川 / 逆冲断层 / 化石山）（2026-09-09 地形核实：瑞士第 1 批 12 篇） | 13 | 8 / 5 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain · 冰岛（火山 / 冰帽 / 裂谷 / 外冲平原）（2026-09-09 地形核实：冰岛第 1 批 12 篇） | 17 | 5 / 12 / 0 | 当场修 17 条；新开 issue 0、关闭 0 |

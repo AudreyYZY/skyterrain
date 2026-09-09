@@ -4336,8 +4336,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   reykjavik: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   雷克雅未克市镇 139,804（2026-01-01，占全国 394,324 的 35.5%），Hagstofa Íslands 官方稿，级别 1。
+    //   https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldi-1-januar-2026/
+    //   ⚠️ **首都区的合计总人口本轮没能核到一个自洽的官方数**：不同发布给出 244,536（2025-01-01）/ 约 247,000（推算）/ 251,900（正文旧值）/ 264,056（2026 Q1 估计）四个互相矛盾的数字，正文因此只写占比、不改总数，另开 issue，下一轮直接从 Hagstofa PxWeb 表 MAN02005 把 7 个市镇加总。
     identity:
-      "雷克雅未克是冰岛首都，也是世界上最靠北的主权国家首都，市区人口约 14 万、连同周边约占全国六成。名字在古诺尔斯语里意为“冒烟的湾”——最早的定居者看到地热蒸汽而得名。城市小而低矮，靠地热供暖，几乎没有工业烟囱。",
+      "雷克雅未克是冰岛首都，也是世界上最靠北的主权国家首都，2026 年初市镇人口约 14 万，连同首都区其余市镇约占全国六成三。名字在古诺尔斯语里意为“冒烟的湾”——最早的定居者看到地热蒸汽而得名。城市小而低矮，靠地热供暖，几乎没有工业烟囱。",
     // howItWorks sources: Wikipedia (2026-09): Reykjavík (municipality; 23-member council appoints mayor; 139,804 2026 ≈ 35.5% of Iceland; Capital Region 7 municipalities ~251,900 ≈ 64%; 10 hverfi; Strætó buses, no rail; Keflavík 50 km; postcodes 101–113)
     howItWorks:
       "雷克雅未克是冰岛的首都，也是一个市镇，由 23 名议员的市议会治理，市长由市议会任命而非民选；2026 年人口约 14 万，占全国的三分之一强，而包括科帕沃于尔、哈夫纳夫约杜尔、加尔扎拜尔等 7 个市镇的首都区约 25 万人，占全国的 64%，这些邻市各有自己的市议会。市下分 10 个片区。老城在半岛的顶端：劳加维古尔街是主商业街，议会大厦在奥斯特沃德勒广场，哈尔格林姆教堂在山顶，旧港在北面；劳加达勒是体育与温泉泳池的所在。地址写“街道、门牌、邮编”，邮编 101 至 113 是身份的标签——“101 雷克雅未克”指的是市中心那种生活。冰岛没有铁路，公交只有 Strætó 的巴士，汽车是日常；全城以地热集中供暖。凯夫拉维克国际机场在西南约 50 公里。初来的人最容易犯的错，是把雷克雅未克市当作整个首都区，而首都区一半以上的人住在邻近的市镇里。",
@@ -4354,11 +4358,19 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   keflavik: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   雷克雅内斯拜尔市镇 24,557（2026-07-01，国家登记处 Þjóðskrá 数据，经地方媒体转述，2 级）；凯夫拉维克 + 纳尔兹维克城镇聚落 22,377（2025，Hagstofa，级别 1）。
+    //   https://www.vf.is/frettir/ibuathroun-a-sudurnesjum-haegir-a-vexti-og-faekkun-i-reykjanesbae
+    //   https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldi-eftir-byggdakjornum-og-thettbylisstodum-2025/
+    //   **这条是「市镇 vs 城镇聚落」混用的典型**：同一个地名在冰岛有两个官方数，差 2000 多人，不写明是哪一档就没法核。
     identity:
-      "凯夫拉维克是雷克雅内斯半岛上的一座港口小镇，与邻镇合并后正式名为“雷克雅内斯拜尔”，人口约 2 万。冰岛的国际机场就在旁边，多数游客抵离冰岛都经过这里。半岛本身几乎全是熔岩原和地热区，2021 年以来附近多次火山喷发。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Keflavík (Iceland; a town within the municipality of Reykjanesbær, formed by the merger of Keflavík, Njarðvík and Hafnir in the mid-1990s; about 15,930 people with Njarðvík as of 2018; the name means driftwood bay; settled from the 16th century around fishing and fish processing; the US military built the airport in the Second World War and Naval Air Station Keflavik was strategically important through the Cold War, American forces withdrawing in 2006; Keflavík International Airport adjacent to the town is Iceland's main international gateway near Reykjavík; nicknamed bítlabærinn, the Beatles town, for the musicians it produced in the 1960s and 1970s; basalt rubble landscape)
+      "凯夫拉维克是雷克雅内斯半岛上的一座港口小镇，与邻镇合并后正式名为“雷克雅内斯拜尔”，作为市镇，2026 年年中人口约 2.5 万，其中凯夫拉维克与纳尔兹维克两镇的城镇人口 2025 年合计约 2.2 万。冰岛的国际机场就在旁边，多数游客抵离冰岛都经过这里。半岛本身几乎全是熔岩原和地热区，2021 年以来附近多次火山喷发。",
+    // howItWorks sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   同 identity 注释。原文停在 2018 年的 15,930，落后四期以上。
+    //   https://www.vf.is/frettir/ibuathroun-a-sudurnesjum-haegir-a-vexti-og-faekkun-i-reykjanesbae
+    //   https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldi-eftir-byggdakjornum-og-thettbylisstodum-2025/
     howItWorks:
-      "凯夫拉维克是冰岛西南雷恰角半岛上的城镇，1990 年代中期它与纳尔兹维克、哈布尼尔合并成雷恰内斯拜市镇，2018 年与纳尔兹维克合计约 1.6 万人；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名意为“浮木湾”，16 世纪起这里因渔业与鱼加工成镇，四周是玄武岩碎石与苔藓的荒野。二战期间美军在镇旁修建机场，冷战时期凯夫拉维克海军航空站是监视北方海域的重要基地，2006 年美军撤离，营区改作民用与住宅。凯夫拉维克国际机场就在镇边，是冰岛的国际门户，几乎所有进出冰岛的航班都在这里起降，雷克雅未克在东北约 50 公里。1960、70 年代这里出了许多乐手，本地因此有“披头士镇”的绰号。初来的人最容易犯的错，是把机场当作雷克雅未克的一部分，而它在另一个市镇，进城还要坐将近一小时的车。",
+      "凯夫拉维克是冰岛西南雷恰角半岛上的城镇，1990 年代中期它与纳尔兹维克、哈布尼尔合并成雷恰内斯拜市镇，凯夫拉维克与纳尔兹维克两镇的城镇人口 2025 年合计约 2.2 万，整个市镇 2026 年年中约 2.5 万；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名意为“浮木湾”，16 世纪起这里因渔业与鱼加工成镇，四周是玄武岩碎石与苔藓的荒野。二战期间美军在镇旁修建机场，冷战时期凯夫拉维克海军航空站是监视北方海域的重要基地，2006 年美军撤离，营区改作民用与住宅。凯夫拉维克国际机场就在镇边，是冰岛的国际门户，几乎所有进出冰岛的航班都在这里起降，雷克雅未克在东北约 50 公里。1960、70 年代这里出了许多乐手，本地因此有“披头士镇”的绰号。初来的人最容易犯的错，是把机场当作雷克雅未克的一部分，而它在另一个市镇，进城还要坐将近一小时的车。",
     layout:
       "凯夫拉维克在半岛西侧海边，机场在镇西南。整个雷克雅内斯半岛是一片年轻的黑色熔岩台地，几乎没有树，地表冒着地热蒸汽；著名的蓝湖（Blue Lagoon）在半岛中部，是地热发电站排出的富矿物温水形成的。半岛南岸有海崖、灯塔和大陆桥（横跨美洲-欧亚板块裂缝的小桥）。",
     gettingAround:
@@ -4390,8 +4402,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   hofn: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   赫本镇（byggðakjarni）1,802（2025）；霍尔纳峡湾市镇（sveitarfélag）2,589（2025）—— **两档不要混用**。2026-09-09 核。
+    //   瓦特纳冰原：按**体积**是欧洲最大的冰帽（与瓦特纳冰原国家公园管理局自身表述一致），按**面积**次于俄罗斯新地岛北岛冰帽。原文「欧洲最大的冰川」不带口径。
+    //   https://en.wikipedia.org/wiki/Vatnaj%C3%B6kull
+    //   **跨系统的不一致**：同一个事实在地形条目 vatnajokull 里带了「按体积算」的限定，在这个城市条目里没带 —— 两套内容各写各的，修一处要顺手搜另一套。
     identity:
-      "赫本（全名 Höfn í Hornafirði，“赫本”在冰岛语里就是“港口”）是冰岛东南部的渔港小镇，人口约 1700 人，坐落在一处潟湖口的沙嘴上，背后是欧洲最大的冰川——瓦特纳冰原，及其一条条从山间伸下来的冰川舌。这里以龙虾（langoustine）出名。",
+      "赫本（全名 Höfn í Hornafirði，“赫本”在冰岛语里就是“港口”）是冰岛东南部的渔港小镇，2025 年镇上人口约 1,800，坐落在一处潟湖口的沙嘴上，背后是瓦特纳冰原——按体积算是欧洲最大的冰帽，及其一条条从山间伸下来的冰川舌。这里以龙虾（langoustine）出名。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Höfn (Iceland; town in Hornafjörður municipality in the south-east with 1,802 residents in 2025, on a peninsula surrounded by sea on three sides; the name means harbour; founded in 1897 by the merchant Ottó Tuliníus, who moved a trading post from Papós, with growth after the Hornafjarðarbrú bridge of 1961; fishing, particularly langoustine and saltfish, and tourism around Vatnajökull, Europe's largest ice cap by volume, and the nearby glaciers; the annual lobster festival in early July; on the Ring Road about 455 km from Reykjavík, the Almannaskarðsgöng tunnel of 2005 improving winter access; a regional airport with flights to Reykjavík)
     howItWorks:
       "赫本是冰岛东南部霍尔纳峡湾市镇的城镇，2025 年人口约 1,800；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名就是“港”的意思，镇子建在一处三面环海的小半岛上。它 1897 年由商人奥托·图利尼乌斯创立，把原在帕波斯的贸易点迁到这里，1961 年霍尔纳峡湾大桥通车后才真正长起来。渔业是老本行，尤以海螯虾与咸鳕鱼闻名，每年七月初办海螯虾节。它的另一半生计来自身后的冰：瓦特纳冰原是欧洲体积最大的冰盖，就压在镇北的山上，杰古沙龙冰河湖在西面约 80 公里，冰川旅游把这座小镇变成了东南岸的落脚点。环岛公路从这里经过，雷克雅未克在西面约 455 公里；2005 年通车的阿尔曼纳斯卡兹隧道改善了冬季通行，另有支线机场飞雷克雅未克。初来的人最容易犯的错，是以为冰河湖在镇边，而那是一小时以上的车程。",
@@ -4408,8 +4425,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   egilsstadir: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   埃伊尔斯塔济城镇聚落 2,632（2024），与本条目 howItWorks 已引的数一致（3 级，2026-09-09 复核）。「冰岛东部最大的城镇」断言成立。
     identity:
-      "埃伊尔斯塔济是冰岛东部最大的城镇，人口约 2500 人，是东部峡湾地区的交通、服务和行政中心。它坐落在冰岛第三大湖——拉加尔湖（Lagarfljót）畔，湖细长，据当地民间传说里住着一条“湖怪”。周围是冰岛少见的大片林地。",
+      "埃伊尔斯塔济是冰岛东部最大的城镇，2024 年人口 2,632 人，是东部峡湾地区的交通、服务和行政中心。它坐落在冰岛第三大湖——拉加尔湖（Lagarfljót）畔，湖细长，据当地民间传说里住着一条“湖怪”。周围是冰岛少见的大片林地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Egilsstaðir (Iceland; town in east Iceland on the banks of the Lagarfljót, 2,632 residents in 2024, the largest settlement in the eastern region; formally established only in 1947, though the farmer Jón Bergsson had begun developing the site earlier in the 20th century; growth during the 2004–2008 hydropower and aluminium boom; a crossroads where the main regional routes meet, the area's transport, service and administrative centre, with airport, gymnasium and health clinic; Hallormsstaðaskógur, the biggest forest in Iceland, plus Hengifoss and Skriðuklaustur nearby; subarctic climate with mild summers, a record 29.8 °C in August 2025)
     howItWorks:
       "埃伊尔斯塔济是冰岛东部最大的城镇，2024 年人口 2,632，在拉加尔湖流出的河边；冰岛只有国家与市镇两级，本镇属于 2020 年合并成立的穆拉辛市镇，市镇管学校、规划与地方服务，医疗与警察归国家。这是一座很年轻的城镇：1947 年才正式建镇，在此之前只有一处农场，20 世纪初农场主约恩·贝格松开始在此建设，2004 至 2008 年间东部的水电与铝厂工程带来了一轮扩张。它的位置解释了它的存在——东部几条主要公路在这里交汇，因此机场、医院门诊、中学与政府机构都设在此地，周边峡湾的居民办事都要进城。冰岛最大的森林哈德洛尔姆斯塔泽尔就在湖的南岸，亨吉瀑布与斯克里祖克劳斯图尔庄园在附近。翻过山口是塞济斯菲厄泽，开往丹麦与法罗群岛的渡轮从那里出发。初来的人最容易犯的错，是来找一座老镇，而这座城镇比多数居民的年纪还小。",
@@ -4426,8 +4445,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   akureyri: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   阿克雷里市镇 20,284（2026-01-01，Hagstofa，级别 1 交叉确认）。
+    //   埃亚峡湾：通行表述是「冰岛最长的峡湾**之一**」（约 60 公里），**查不到支持绝对「最长」的权威来源**，已降级。2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Eyjafj%C3%B6r%C3%B0ur
     identity:
-      "阿克雷里是冰岛北部最大的城市，人口约 2 万，被称为“北方之都”，坐落在冰岛最长的峡湾——埃亚峡湾（Eyjafjörður）深处，三面环山。虽然离北极圈只有约 100 公里，但因为在长峡湾尽头、受海洋调节，气候比想象中温和，还能种出成片的树。",
+      "阿克雷里是冰岛北部最大的城市，2026 年初人口约 2 万，被称为“北方之都”，坐落在冰岛最长的峡湾之一——埃亚峡湾（Eyjafjörður）深处，三面环山。虽然离北极圈只有约 100 公里，但因为在长峡湾尽头、受海洋调节，气候比想象中温和，还能种出成片的树。",
     // howItWorks sources: Wikipedia (2026-09): Akureyri (municipality Akureyrarbær; 11-member council appoints mayor; 20,284 2026; largest outside Capital Region; university 1987; hospital; airport; Hrísey and Grímsey in municipality; Ring Road ~390 km)
     howItWorks:
       "阿克雷里是冰岛首都区之外最大的城镇，2026 年人口约 2 万，被称为“北冰岛的首都”：市镇由 11 名议员的镇议会治理，镇长由议会任命。它有全国两家主要医院之一、1987 年创办的阿克雷里大学、有雷克雅未克航班的机场与夏季停靠邮轮的不冻港，是整个北部的服务中心。城镇沿埃亚峡湾的西岸展开：哈夫纳街是市中心的主街，阿克雷里教堂的台阶是坐标原点，植物园是世界上最靠北的之一，赫利扎山滑雪场在城西的山上。赫里塞岛与北极圈上的格里姆塞岛也属于这个市镇。环岛公路到雷克雅未克约 390 公里，冬天常因风雪封闭，飞机 45 分钟。地址写“街道、门牌、邮编”，邮编 600 开头。红灯是心形的，是这座城的小标志。初来的人最容易犯的错，是把阿克雷里当作一座小镇，而它是北冰岛的行政、医疗与教育中心。",
@@ -4444,8 +4467,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   husavik: {
+    // identity sources: 「欧洲观鲸之都」经查证是当地旅游业的自我宣传口号（多家站点均写「bills itself as」），无官方或独立评选出处，已降级为「当地常自称」。3 级，2026-09-09 核。
+    //   https://visitorsguide.is/husavik-the-whale-watching-capital-of-europe/
+    //   人口 2,300–2,500 的区间表述本轮未找到更精确的单一官方数，保留区间。
     identity:
-      "胡萨维克是冰岛北部一座渔港小镇，人口约 2300 人，被称为“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
+      "胡萨维克是冰岛北部一座渔港小镇，人口约 2300 人，以观鲸闻名、当地常自称“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Húsavík (Iceland; town in Norðurþing municipality on the north coast with about 2,300–2,500 residents, on Skjálfandi bay; a centre of whale watching in Iceland because whales of several species enter the bay; the wooden church Húsavíkurkirkja of 1907 the chief landmark; the Húsavík Whale Museum, the Exploration Museum and a Eurovision museum opened in 2021; recorded as the first place in Iceland settled by a Norseman, the Swedish Viking Garðar Svavarsson wintering here around 870; the 2020 film Eurovision Song Contest: The Story of Fire Saga set here, its title song Oscar-nominated; Akureyri within an hour via the Vaðlaheiðargöng tunnel of 2019; flights ended in 2024)
     howItWorks:
       "胡萨维克是冰岛北岸的城镇，属北辛市镇，人口约 2,300 至 2,500；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子面朝斯乔尔万迪湾，几种鲸每年夏天进湾觅食，因此这里成了冰岛观鲸的中心——出海的船从港口发出，鲸鱼博物馆就在码头边，本地经济由此从渔业转向了旅游。1907 年建成的木造教堂立在坡上，是全镇的标志。按记载，这里是冰岛最早被北欧人过冬居住的地方：约公元 870 年瑞典人加尔达尔·斯瓦瓦尔松在此越冬。2020 年一部以欧洲歌唱大赛为题材的电影把故事放在这座镇上，主题曲获奥斯卡提名，之后镇里开了一间相关的小博物馆。2019 年瓦兹拉海济隧道通车后，到阿克雷里只要一小时；本地机场的定期航班 2024 年停飞。初来的人最容易犯的错，是把观鲸当作全年项目，而它按季节与天气开船。",
@@ -4462,8 +4488,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   isafjordur: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   伊萨菲厄泽 2,744（2023-01），与本条目 howItWorks 已引的数一致（2 级，2026-09-09 复核）。「西部峡湾地区最大的城镇」断言成立。**这个数已经是 2023 年的**，下一轮应回到 Hagstofa 城镇聚落表取最新一期。
     identity:
-      "伊萨菲厄泽是冰岛“西部峡湾”地区最大的城镇，人口约 2700 人。西部峡湾是冰岛最古老、最偏远的一角，一片被无数深峡湾和陡峭平顶山切碎的半岛，公路少、隧道多、冬季常被大雪封住。伊萨菲厄泽是这里的中心。",
+      "伊萨菲厄泽是冰岛“西部峡湾”地区最大的城镇，2023 年 1 月人口约 2,744 人。西部峡湾是冰岛最古老、最偏远的一角，一片被无数深峡湾和陡峭平顶山切碎的半岛，公路少、隧道多、冬季常被大雪封住。伊萨菲厄泽是这里的中心。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ísafjörður (Iceland; the largest town in the Westfjords, in Ísafjarðarbær municipality, with about 2,744 residents in January 2023, on a sandy spit in Skutulsfjörður off Ísafjarðardjúp; settled in the 9th century according to the Landnámabók, a trading centre from the 1500s, granted municipal status in 1786; timber buildings surviving from the 1700s including Krambúð 1757, Faktorshús 1765, Tjöruhúsið 1781 and Turnhúsið 1784; the coolest area in Iceland at sea level with a tundra climate, high winds and few sunny days; fishing historically dominant, now also the University Centre of the Westfjords and a gateway to the Hornstrandir nature reserve; the Aldrei fór ég suður music festival)
     howItWorks:
       "伊萨菲厄泽是冰岛西部峡湾地区最大的城镇，2023 年 1 月人口约 2,744，属伊萨菲厄泽市镇；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子建在斯库图尔峡湾里一条伸进水面的沙嘴上，三面是几百米高的陡壁，只有一条窄路通往外面——这种地形决定了西部峡湾的一切：冬天雪崩与封路是常事，镇上因此修了防雪崩的导流堤，山下也打了隧道。按《定居之书》，9 世纪已有人在此定居；16 世纪起它是贸易点，1786 年获得城镇地位，港边还留着 18 世纪的几栋木屋，最早的建于 1757 年。这里是冰岛海平面上最冷的一片，属苔原气候，风大、晴天少。渔业曾是全部生计，如今西部峡湾大学中心也设在这里，霍恩斯特兰迪尔自然保护区从这里出发。初来的人最容易犯的错，是按公路里程安排行程，而冬天这条路随时可能关闭。",
@@ -4497,11 +4525,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   zurich: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   苏黎世市镇 440,935（2025 年末）、苏黎世州 1,628,081（2025 年末，州统计官方页，级别 1）。
+    //   https://www.zh.ch/de/soziales/bevoelkerungszahlen/bestand-struktur.html
+    //   ⚠️ **集聚区那个约 150 万只查到第三方按 STATPOP 重算的值（3 级）**，没能回溯到 BFS 一手表 —— 已开 issue，下一轮直接查 BFS 的 STATPOP by Agglomeration。
     identity:
-      "苏黎世是瑞士最大的城市，都会区约 140 万人，位于苏黎世湖北端、利马特河出湖处，是全国的金融、商业和交通中心，也是德语区的核心。它不是首都（首都是伯尔尼），但常年在“全球宜居城市”榜单前列，物价也是世界最高之一。",
-    // howItWorks sources: Wikipedia (2026-09): Zürich (Stadt Zürich; Stadtrat 9 + Gemeinderat 125; 12 Kreise, 34 Quartiere; ~88 km²; 436,551 2024; canton ~1.6 million; agglomeration ~1.45 million; Winterthur separate; ZVV); Municipalities of Switzerland
+      "苏黎世是瑞士最大的城市，2025 年末市镇人口约 44.1 万，联邦统计局口径的集聚区约 150 万人，位于苏黎世湖北端、利马特河出湖处，是全国的金融、商业和交通中心，也是德语区的核心。它不是首都（首都是伯尔尼），但常年在“全球宜居城市”榜单前列，物价也是世界最高之一。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   数字同 identity 注释（2025 年末，级别 1）。
+    //   https://www.zh.ch/de/soziales/bevoelkerungszahlen/bestand-struktur.html
     howItWorks:
-      "苏黎世市是苏黎世州的首府，由 9 人的市政委员会（Stadtrat）和 125 人的市议会（Gemeinderat）治理，市长由市民直选；市下分 12 个区（Kreis）和 34 个街区（Quartier）。瑞士的联邦制把权力放在州与市镇：苏黎世州掌管警察、学校与医院，市政府管地方服务并征收自己的一份所得税，市民每年多次就市、州、联邦的议题投票。市域约 88 平方公里，2024 年人口约 44 万，而苏黎世州约 160 万人，城市连绵区约 145 万，温特图尔是州内另一座独立的城市。城市从湖的北端沿利马特河展开：老城与尼德多夫在河的两岸，班霍夫大街是银行与商店的主街，苏黎世西区是旧工业区改成的新区，厄利孔是北面的副中心。地址写“街道、门牌、四位邮编”，邮编 80 开头，本地人以 Kreis 的数字说位置。ZVV 的有轨电车与 S-Bahn 按票价区计费。瑞士德语是日常语言，书面是标准德语。初来的人最容易犯的错，是把苏黎世当作瑞士的首都，而首都是伯尔尼。",
+      "苏黎世市是苏黎世州的首府，由 9 人的市政委员会（Stadtrat）和 125 人的市议会（Gemeinderat）治理，市长由市民直选；市下分 12 个区（Kreis）和 34 个街区（Quartier）。瑞士的联邦制把权力放在州与市镇：苏黎世州掌管警察、学校与医院，市政府管地方服务并征收自己的一份所得税，市民每年多次就市、州、联邦的议题投票。市域约 88 平方公里，2025 年末人口约 44.1 万，而苏黎世州约 163 万人，联邦统计局口径的集聚区约 150 万，温特图尔是州内另一座独立的城市。城市从湖的北端沿利马特河展开：老城与尼德多夫在河的两岸，班霍夫大街是银行与商店的主街，苏黎世西区是旧工业区改成的新区，厄利孔是北面的副中心。地址写“街道、门牌、四位邮编”，邮编 80 开头，本地人以 Kreis 的数字说位置。ZVV 的有轨电车与 S-Bahn 按票价区计费。瑞士德语是日常语言，书面是标准德语。初来的人最容易犯的错，是把苏黎世当作瑞士的首都，而首都是伯尔尼。",
     layout:
       "苏黎世建在苏黎世湖北端、利马特河两岸的缓坡上，天气好时湖对面能看到阿尔卑斯的雪峰。老城（Altstadt）分跨河两岸，有中世纪教堂和行会会馆；班霍夫大街是从火车站到湖边的高端购物街。城市背后是于特利山，坐小火车上去能俯瞰全城和湖。",
     gettingAround:
@@ -4515,11 +4549,19 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bern: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   伯尔尼市 146,867（2025 年末，市政府官方新闻稿，级别 1）；伯尔尼州 1,076,127（2025 年末，州财政厅公共统计，级别 1）。
+    //   https://www.bern.ch/mediencenter/medienmitteilungen/aktuell_sta/wohnbevoelkerung-2025-stadt-bern-waechst-um-rund-400-personen
+    //   https://www.fin.be.ch/de/start/themen/OeffentlicheStatistik/bevoelkerungsstatistik/bevoelkerungsstand-und--struktur.html
     identity:
-      "伯尔尼是瑞士首都、伯尔尼州的首府，市区人口约 13 万，老城建在阿勒河一个深深的曲流环里，三面被河和峭壁围住，中世纪格局几乎完整保留，是世界遗产。城市据传因创建者猎到一只熊（Bär）而得名，熊至今是城徽和吉祥物。",
-    // howItWorks sources: Wikipedia (2026-09): Bern (federal city, no de jure capital; Gemeinderat 5 + Stadtrat 80; 6 Stadtteile; ~52 km²; ~146,000 2024; agglomeration ~407,000; Old City UNESCO 1983; Bernmobil/Libero); Municipalities of Switzerland
+      "伯尔尼是瑞士首都、伯尔尼州的首府，2025 年末市镇人口约 14.7 万，老城建在阿勒河一个深深的曲流环里，三面被河和峭壁围住，中世纪格局几乎完整保留，是世界遗产。城市据传因创建者猎到一只熊（Bär）而得名，熊至今是城徽和吉祥物。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   市镇 146,867、州 1,076,127（均 2025 年末，级别 1）。
+    //   https://www.bern.ch/mediencenter/medienmitteilungen/aktuell_sta/wohnbevoelkerung-2025-stadt-bern-waechst-um-rund-400-personen
+    //   https://www.fin.be.ch/de/start/themen/OeffentlicheStatistik/bevoelkerungsstatistik/bevoelkerungsstand-und--struktur.html
+    //   ⚠️ 原文的「城市连绵区约 41 万」本轮**没能核到一级来源**（第三方给约 44.3 万），已从正文撤下并开 issue —— 不用一个没核到的数去替换另一个没核到的数。
     howItWorks:
-      "伯尔尼是瑞士的“联邦城市”——瑞士没有法定的首都，联邦议会与政府所在的伯尔尼是事实上的首都。它是伯尔尼州的首府，由 5 人的市政委员会（Gemeinderat）和 80 人的市议会（Stadtrat）治理，市下分 6 个片区；州掌管警察、学校与医院，市管地方服务，市民定期就各级议题投票。市域约 52 平方公里，2024 年人口约 15 万，城市连绵区约 41 万，克尼茨、奥斯特蒙迪根各是独立的市镇。老城建在阿勒河的一个河湾环抱的半岛上，1983 年列入世界遗产：六公里长的拱廊（Lauben）是欧洲最长的有顶商业街，钟楼、大教堂与联邦宫都在这条半岛上，熊园在河湾的对岸。Bernmobil 的有轨电车与公交按 Libero 票价区计费。伯尔尼德语是日常语言，伯尔尼州同时有法语区。地址写“街道、门牌、四位邮编”，邮编 30 开头。初来的人最容易犯的错，是以为伯尔尼是一座大城市，而这座首都的人口不到苏黎世的一半。",
+      "伯尔尼是瑞士的“联邦城市”——瑞士没有法定的首都，联邦议会与政府所在的伯尔尼是事实上的首都。它是伯尔尼州的首府，由 5 人的市政委员会（Gemeinderat）和 80 人的市议会（Stadtrat）治理，市下分 6 个片区；州掌管警察、学校与医院，市管地方服务，市民定期就各级议题投票。市域约 52 平方公里，2025 年末人口约 14.7 万，伯尔尼州约 108 万人，克尼茨、奥斯特蒙迪根各是独立的市镇。老城建在阿勒河的一个河湾环抱的半岛上，1983 年列入世界遗产：六公里长的拱廊（Lauben）是欧洲最长的有顶商业街，钟楼、大教堂与联邦宫都在这条半岛上，熊园在河湾的对岸。Bernmobil 的有轨电车与公交按 Libero 票价区计费。伯尔尼德语是日常语言，伯尔尼州同时有法语区。地址写“街道、门牌、四位邮编”，邮编 30 开头。初来的人最容易犯的错，是以为伯尔尼是一座大城市，而这座首都的人口不到苏黎世的一半。",
     layout:
       "伯尔尼老城在阿勒河曲流形成的半岛上，一条主轴大街从火车站一直通到河边的“熊苑”，两侧是六公里长的拱廊（可遮雨的骑楼商业街）。天文钟塔（Zytglogge）在主街中段。河对岸高地上是玫瑰园，能俯瞰整个红屋顶老城和背后的阿尔卑斯。",
     gettingAround:
@@ -4533,11 +4575,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   basel: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   巴塞尔市镇 186,332 / 巴塞尔城市州（含里恩、贝廷根）210,529，均 2025 年末，巴塞尔城市州统计局数据（级别 1 数据、2 级转述）。
+    //   https://www.swissinfo.ch/ger/in-basel-stadt-lebten-ende-dezember-2025-%c3%bcber-210%27000-menschen/90818092
     identity:
-      "巴塞尔在瑞士西北角、莱茵河由东西流向转为向北流的“莱茵河膝弯”处，正好在瑞士、法国、德国三国交界，市区人口约 17 万。它是瑞士的制药和化工中心，也是这个国家的艺术之都——博物馆密度极高，每年 6 月的巴塞尔艺术展是全球艺术市场的大事。",
-    // howItWorks sources: Wikipedia (2026-09): Basel (canton Basel-Stadt = Basel + Riehen + Bettingen, ~37 km², ~200,000; Regierungsrat 7 + Grosser Rat 100 serve as both city and canton; split 1833; trinational ~830,000; EuroAirport in France; cross-border trams); Municipalities of Switzerland
+      "巴塞尔在瑞士西北角、莱茵河由东西流向转为向北流的“莱茵河膝弯”处，正好在瑞士、法国、德国三国交界，2025 年末市镇人口约 18.6 万。它是瑞士的制药和化工中心，也是这个国家的艺术之都——博物馆密度极高，每年 6 月的巴塞尔艺术展是全球艺术市场的大事。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   巴塞尔城市州 210,529（2025 年末，级别 1 数据）。
+    //   https://www.swissinfo.ch/ger/in-basel-stadt-lebten-ende-dezember-2025-%c3%bcber-210%27000-menschen/90818092
+    //   **跨境的「三国都会区」不是 BFS 口径**，由 Trinational Eurodistrict Basel / Regio Basiliensis 发布，各来源在 83–90 万以上浮动，本轮核不到单一权威年份数 —— 正文只给数量级并写明发布方。
     howItWorks:
-      "巴塞尔既是一座城，也是一个州：巴塞尔城市州由巴塞尔市与里恩、贝廷根两个市镇组成，约 37 平方公里、约 20 万人，1833 年与巴塞尔乡村州分家；巴塞尔市没有自己的市政府，7 人的州政府委员会与 100 人的州议会同时就是市政府与市议会。这座城的日常跨着三个国家：机场在法国境内，有轨电车开到德国的魏尔与法国的圣路易，三国都会区约 83 万人，每天有大量人从德法两侧跨境上班。莱茵河在这里拐弯，把城市分成南岸的大巴塞尔与北岸的小巴塞尔，中桥把两岸连起来，大教堂在南岸的高地上；夏天顺流游泳、把衣物装进防水袋是本地人的日常。罗氏与诺华的总部与高楼是这座城的经济，巴塞尔艺术展与狂欢节是它的节日。BVB 的有轨电车按 TNW 票价区计费。地址写“街道、门牌、四位邮编”，邮编 40 开头。初来的人最容易犯的错，是以为巴塞尔的机场在瑞士，而它在法国，从瑞士一侧出关有单独的通道。",
+      "巴塞尔既是一座城，也是一个州：巴塞尔城市州由巴塞尔市与里恩、贝廷根两个市镇组成，约 37 平方公里、2025 年末约 21.1 万人，1833 年与巴塞尔乡村州分家；巴塞尔市没有自己的市政府，7 人的州政府委员会与 100 人的州议会同时就是市政府与市议会。这座城的日常跨着三个国家：机场在法国境内，有轨电车开到德国的魏尔与法国的圣路易，按跨境合作机构的统计，三国都会区人口超过 80 万——这不是瑞士联邦统计局的口径，每天有大量人从德法两侧跨境上班。莱茵河在这里拐弯，把城市分成南岸的大巴塞尔与北岸的小巴塞尔，中桥把两岸连起来，大教堂在南岸的高地上；夏天顺流游泳、把衣物装进防水袋是本地人的日常。罗氏与诺华的总部与高楼是这座城的经济，巴塞尔艺术展与狂欢节是它的节日。BVB 的有轨电车按 TNW 票价区计费。地址写“街道、门牌、四位邮编”，邮编 40 开头。初来的人最容易犯的错，是以为巴塞尔的机场在瑞士，而它在法国，从瑞士一侧出关有单独的通道。",
     layout:
       "巴塞尔跨莱茵河而建：大巴塞尔（Grossbasel）在河的西南岸，是老城、大教堂和大学所在；小巴塞尔（Kleinbasel）在东北岸。莱茵河在这里已经是一条大河，夏天当地人把衣物装进防水袋当浮标，顺流游泳。城市向北无缝接入德国、向西接入法国，有轨电车直接开进两国。",
     gettingAround:
@@ -4551,11 +4599,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   lucerne: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   卢塞恩市 86,699（2025 年末，LUSTAT Statistik Luzern 官方，级别 1）。
+    //   https://www.lustat.ch/monitoring/kennzahlen-stadt-luzern/bevoelkerung/bevoelkerungsentwicklung
+    //   原来 identity 写 8 万、howItWorks 写 8.2 万，两段不一致，本轮统一。
     identity:
-      "卢塞恩在瑞士中部、卢塞恩湖（德语 Vierwaldstättersee，“四林州湖”）西端、罗伊斯河出湖处，市区人口约 8 万，是中部德语区最受游客欢迎的城市，被雪山环抱，湖光山色是它的招牌。瑞士联邦最早的几个州就在这个湖周围，1291 年的结盟传说也发生在湖边的吕特利草地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lucerne (Switzerland; capital of the canton of Lucerne, about 82,000 residents, the most populous city in Central Switzerland; where Lake Lucerne drains into the Reuss; a Benedictine monastery from about 750, independence 1178, joined the Swiss Confederacy in 1332, Battle of Sempach 1386; the Chapel Bridge of 1333, 204 m, the oldest covered bridge in Europe, its interior largely destroyed by fire in 1993 and restored by 1994; the Musegg wall with eight towers; the Lion Monument; the twin-towered Church of St Leodegar; Lucerne Festival)
+      "卢塞恩在瑞士中部、卢塞恩湖（德语 Vierwaldstättersee，“四林州湖”）西端、罗伊斯河出湖处，2025 年末市镇人口约 8.7 万，是中部德语区最受游客欢迎的城市，被雪山环抱，湖光山色是它的招牌。瑞士联邦最早的几个州就在这个湖周围，1291 年的结盟传说也发生在湖边的吕特利草地。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   同 identity 注释（LUSTAT，2025 年末 86,699，级别 1）。
+    //   https://www.lustat.ch/monitoring/kennzahlen-stadt-luzern/bevoelkerung/bevoelkerungsentwicklung
     howItWorks:
-      "卢塞恩是瑞士卢塞恩州的首府，人口约 8.2 万，是中部瑞士最大的城市；瑞士是联邦制，州在教育、警务与税收上拥有相当大的自主权，市镇再管本地事务，因此这座城首先属于它的州。地形决定了城市的形态：琉森湖在这里收窄，湖水注入罗伊斯河，老城就骑在河的两岸，桥是它的骨架。1333 年建成的卡佩尔廊桥长 204 米，是欧洲最古老的有顶木桥，1993 年一场大火烧毁了桥内的大部分绘画，1994 年修复通行；穆塞格城墙上留着八座塔，可以走上去。狮子纪念碑凿在城北的岩壁上，圣莱奥德伽尔教堂的双塔在湖边。这座城约 750 年从一座本笃会修道院起步，1178 年获得独立地位，1332 年加入瑞士邦联。夏天的琉森音乐节是欧洲重要的古典音乐节之一，皮拉图斯山与瑞吉山的登山铁路从湖边出发。初来的人最容易犯的错，是把琉森湖当作一个圆湖，而它是伸进群山的几条湖臂。",
+      "卢塞恩是瑞士卢塞恩州的首府，2025 年末人口约 8.7 万，是中部瑞士最大的城市；瑞士是联邦制，州在教育、警务与税收上拥有相当大的自主权，市镇再管本地事务，因此这座城首先属于它的州。地形决定了城市的形态：琉森湖在这里收窄，湖水注入罗伊斯河，老城就骑在河的两岸，桥是它的骨架。1333 年建成的卡佩尔廊桥长 204 米，是欧洲最古老的有顶木桥，1993 年一场大火烧毁了桥内的大部分绘画，1994 年修复通行；穆塞格城墙上留着八座塔，可以走上去。狮子纪念碑凿在城北的岩壁上，圣莱奥德伽尔教堂的双塔在湖边。这座城约 750 年从一座本笃会修道院起步，1178 年获得独立地位，1332 年加入瑞士邦联。夏天的琉森音乐节是欧洲重要的古典音乐节之一，皮拉图斯山与瑞吉山的登山铁路从湖边出发。初来的人最容易犯的错，是把琉森湖当作一个圆湖，而它是伸进群山的几条湖臂。",
     layout:
       "卢塞恩老城在罗伊斯河北岸，保留着带壁画的老房子和两座中世纪木廊桥——卡佩尔桥（欧洲最古老的有顶木桥之一，桥塔曾作水塔）和斯普洛耶桥。城墙和塔楼在山坡上。湖岸有大型火车站、KKL 文化会议中心和游船码头。城南是皮拉图斯山，城东是里吉山，都可乘齿轨或缆车上。",
     gettingAround:
@@ -4569,11 +4623,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   geneva: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   日内瓦市 210,601 / 日内瓦州 537,191，均 2025 年末，州统计局 OCSTAT（级别 1）。
+    //   https://statistique.ge.ch/communes/apercu.asp?commune=21
     identity:
-      "日内瓦（法语 Genève）在瑞士最西端、日内瓦湖（法语 Lac Léman）出湖处、罗讷河重新成河的地方，几乎被法国领土三面包围，市区人口约 20 万。它是法语区最大的城市，也是众多国际组织的所在地——联合国欧洲总部、世界卫生组织、国际红十字会（1863 年在这里创立）、大型强子对撞机（CERN，跨瑞法边界）都在这里。",
-    // howItWorks sources: Wikipedia (2026-09): Geneva (City ~16 km², ~205,000 2024; canton 45 municipalities ~520,000; 4.5 km border with rest of Switzerland vs 103 km with France; Grand Genève ~1 million; Nations district; Léman Express 2019; ~40% foreign nationals); Municipalities of Switzerland
+      "日内瓦（法语 Genève）在瑞士最西端、日内瓦湖（法语 Lac Léman）出湖处、罗讷河重新成河的地方，几乎被法国领土三面包围，2025 年末市镇人口约 21.1 万。它是法语区最大的城市，也是众多国际组织的所在地——联合国欧洲总部、世界卫生组织、国际红十字会（1863 年在这里创立）、大型强子对撞机（CERN，跨瑞法边界）都在这里。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   日内瓦市 210,601 / 州 537,191（2025 年末，OCSTAT，级别 1）。
+    //   https://statistique.ge.ch/communes/apercu.asp?commune=21
+    //   **「大日内瓦（Grand Genève）」不是 BFS 口径**：由法瑞跨境合作机构 GLCT 发布，最近一手数 1,025,316（2019-01-01），此后未见更新 —— 正文因此写明是哪一年、由谁统计。
     howItWorks:
-      "人们口中的日内瓦，在行政上分成两层：日内瓦市只有约 16 平方公里、2024 年约 20 万人，由行政委员会与 80 人的市议会治理，管文化、公园与地方事务；日内瓦州有 45 个市镇、约 52 万人，掌管警察、学校、医院与大多数公共服务。这个州与瑞士其余部分只有 4.5 公里的边界，与法国的边界却有 103 公里，跨境的大日内瓦都会区约 100 万人，每天有十多万人从法国跨境上班，机场跨在两国边界上。罗讷河把城市分成两岸：左岸是老城与罗讷街的钟表店，右岸是车站、帕基区与万国宫所在的国际区，联合国、红十字国际委员会与世卫组织都在那里。大喷泉是坐标原点。TPG 的有轨电车与 2019 年通车的跨境铁路 Léman Express 用 Unireso 票制贯通。法语是官方语言，约四成居民是外国籍。地址写“街道、门牌、四位邮编”，邮编 12 开头。初来的人最容易犯的错，是把日内瓦市当作整座城，而大多数在日内瓦上班的人住在州内的其他市镇或法国。",
+      "人们口中的日内瓦，在行政上分成两层：日内瓦市只有约 16 平方公里、2025 年末约 21.1 万人，由行政委员会与 80 人的市议会治理，管文化、公园与地方事务；日内瓦州有 45 个市镇、2025 年末约 53.7 万人，掌管警察、学校、医院与大多数公共服务。这个州与瑞士其余部分只有 4.5 公里的边界，与法国的边界却有 103 公里，跨境的大日内瓦地区由法瑞跨境合作机构统计、不是瑞士联邦口径，2019 年超过 100 万人，每天有十多万人从法国跨境上班，机场跨在两国边界上。罗讷河把城市分成两岸：左岸是老城与罗讷街的钟表店，右岸是车站、帕基区与万国宫所在的国际区，联合国、红十字国际委员会与世卫组织都在那里。大喷泉是坐标原点。TPG 的有轨电车与 2019 年通车的跨境铁路 Léman Express 用 Unireso 票制贯通。法语是官方语言，约四成居民是外国籍。地址写“街道、门牌、四位邮编”，邮编 12 开头。初来的人最容易犯的错，是把日内瓦市当作整座城，而大多数在日内瓦上班的人住在州内的其他市镇或法国。",
     layout:
       "日内瓦在湖的西南尖端，罗讷河从湖里流出、把城市分成两岸。左岸是老城（大教堂、旧城墙、钟表店）和购物区；右岸是火车站和多数国际组织。湖上标志性的大喷泉（Jet d'Eau）水柱高达 140 米。湖对岸远处是勃朗峰。",
     gettingAround:
@@ -4587,11 +4647,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   lausanne: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   洛桑市 151,284（2025 年末，市政府居民管理处，级别 1）。
+    //   https://www.lausanne.ch/officiel/administration/securite-et-economie/controle-des-habitants/a-propos/statistiques/evolution-mensuelle-nombre-habitants-2025.html
+    //   「瑞士第四大城市」这个排名**按市镇人口口径成立**：苏黎世 440,935 > 日内瓦 210,601 > 巴塞尔 186,332 > 洛桑 151,284 > 伯尔尼 146,867（均 2025 年末）—— 正文已补上「按市镇人口计」这个限定。
     identity:
-      "洛桑（法语 Lausanne）在日内瓦湖北岸、一片陡坡上，市区人口约 14 万，是沃州首府、法语区第二大城市。它是国际奥林匹克委员会的总部所在地（1915 年迁来），被称为“奥林匹克之都”，有奥林匹克博物馆和多个国际体育组织。也是一座大学城。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lausanne (Switzerland; capital of the canton of Vaud, the fourth-largest Swiss city with about 150,000 residents, on Lake Geneva with roughly 500 m of vertical range across steep slopes; the Olympic Capital — International Olympic Committee headquarters, the Court of Arbitration for Sport and about 55 international sports organisations; the m2 metro, making it the smallest city in the world with a rapid transit system, 28 stations; Gothic cathedral; the Roman settlement Lousanna; the Treaty of Lausanne signed here in 1923; University of Lausanne and EPFL; about 42 per cent foreign nationals; French-speaking)
+      "洛桑（法语 Lausanne）在日内瓦湖北岸、一片陡坡上，2025 年末市镇人口约 15.1 万，是沃州首府、法语区第二大城市。它是国际奥林匹克委员会的总部所在地（1915 年迁来），被称为“奥林匹克之都”，有奥林匹克博物馆和多个国际体育组织。也是一座大学城。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   同 identity 注释。排名的口径限定「按市镇人口计」是必须的 —— 换成集聚区口径名次会变。
     howItWorks:
-      "洛桑是瑞士沃州的首府，人口约 15 万，是瑞士第四大城市；瑞士是联邦制，州在教育、警务与税收上有相当大的自主权，市镇再管本地事务，法语是这里的语言。城市建在日内瓦湖北岸的陡坡上，从湖边的乌希到山脊的老城，垂直落差约 500 米——这一点决定了它的日常：街道分层，桥从一条街跨到另一条街的屋顶高度，出行靠 m2 地铁上下爬坡，那是瑞士唯一的地铁，也让洛桑成为世界上拥有地铁的最小城市之一。它是“奥林匹克之都”：国际奥委会总部自 20 世纪初设在这里，国际体育仲裁院与约五十五个国际体育组织也在城内，奥林匹克博物馆在湖边。哥特式的大教堂立在老城最高处，守夜人至今每晚在钟楼上报时。洛桑大学与洛桑联邦理工学院在西郊，外国籍居民约占四成。初来的人最容易犯的错，是按平面地图估计步行距离，而这座城的距离要算高差。",
+      "洛桑是瑞士沃州的首府，2025 年末人口约 15.1 万，按市镇人口计是瑞士第四大城市；瑞士是联邦制，州在教育、警务与税收上有相当大的自主权，市镇再管本地事务，法语是这里的语言。城市建在日内瓦湖北岸的陡坡上，从湖边的乌希到山脊的老城，垂直落差约 500 米——这一点决定了它的日常：街道分层，桥从一条街跨到另一条街的屋顶高度，出行靠 m2 地铁上下爬坡，那是瑞士唯一的地铁，也让洛桑成为世界上拥有地铁的最小城市之一。它是“奥林匹克之都”：国际奥委会总部自 20 世纪初设在这里，国际体育仲裁院与约五十五个国际体育组织也在城内，奥林匹克博物馆在湖边。哥特式的大教堂立在老城最高处，守夜人至今每晚在钟楼上报时。洛桑大学与洛桑联邦理工学院在西郊，外国籍居民约占四成。初来的人最容易犯的错，是按平面地图估计步行距离，而这座城的距离要算高差。",
     layout:
       "洛桑从湖边一直爬到山上，落差约 500 米，是欧洲少见的建在陡坡上的城市，有一条全自动地铁（m2 线）像缆车一样把湖边、市中心和上城连起来。老城和哥特式大教堂在高处；乌希（Ouchy）在湖边，是公园、码头和奥林匹克博物馆所在。",
     gettingAround:
@@ -4659,11 +4724,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   lugano: {
+    // identity sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   卢加诺市常住居民 64,548（2025-12-31，城市统计局 Statistica Urbana，级别 1；连同非常住居民共 68,633）。
+    //   https://statistica.lugano.ch/site/
     identity:
-      "卢加诺在瑞士南部提契诺州、卢加诺湖畔，市区人口约 6 万，是瑞士说意大利语的地区最大的城市。翻过阿尔卑斯主脊到了南坡，这里的气候、建筑、饮食和生活节奏都更像意大利北部——棕榈树、廊柱广场、傍晚的散步（passeggiata）——但仍是瑞士。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lugano (Switzerland; the largest city of Ticino, the Italian-speaking canton, 63,495 residents in December 2024, the ninth-largest Swiss city and the country's third financial centre after Zurich and Geneva, with over a hundred banking institutions; on Lake Lugano between Monte Brè at 925 m and Monte San Salvatore at 912 m, the municipality about 75 km² across both sides of the lake after mergers absorbed surrounding villages; 80.3 per cent Italian-speaking, 38.1 per cent without Swiss citizenship, cross-border commuters about 13 per cent of the workforce; humid subtropical climate with about 1,560 mm of rain, among the sunniest Swiss cities; about 38,000 service jobs)
+      "卢加诺在瑞士南部提契诺州、卢加诺湖畔，2025 年末市镇常住人口约 6.5 万，是瑞士说意大利语的地区最大的城市。翻过阿尔卑斯主脊到了南坡，这里的气候、建筑、饮食和生活节奏都更像意大利北部——棕榈树、廊柱广场、傍晚的散步（passeggiata）——但仍是瑞士。",
+    // howItWorks sources: **瑞士的官方人口口径**（瑞士联邦统计局 BFS，2026-09-09 核）：Gemeinde / commune（市镇）→ Kanton（州）→ Agglomeration（BFS 在《Raumgliederungen der Schweiz》里定义的集聚区，边界按人口与岗位密度、建成区连片度定期重划，不逐年更新）。**「市区人口」不是 BFS 的用语**，本批一律改成「市镇人口」。STATPOP 年末常住人口：临时数每年 4 月、确定数每年 8 月发布。
+    //   同 identity 注释（Statistica Urbana Città di Lugano，2025 年末，级别 1）。
+    //   https://statistica.lugano.ch/site/
     howItWorks:
-      "卢加诺是瑞士提契诺州最大的城市，2024 年 12 月人口 63,495，是瑞士第九大城市；提契诺是瑞士唯一以意大利语为主的州，全城八成人口讲意大利语，瑞士的联邦制让这个州在教育与文化上按自己的语言运行。城市在卢加诺湖畔的一道弧形岸线上，布雷山与圣萨尔瓦托雷山从两侧夹住它；2004 年起本市多次与周边村镇合并，市域扩到约 75 平方公里，跨到湖的两岸，因此“卢加诺”今天包含许多原本独立的村子。它是继苏黎世与日内瓦之后瑞士的第三大金融中心，一百多家银行机构在此设点，服务业提供约 3.8 万个岗位；居民中约 38% 不持瑞士国籍，跨境通勤者约占劳动力的 13%，意大利边境就在城南。气候比阿尔卑斯以北温暖湿润，年降水约 1,560 毫米，日照在瑞士各城中居前列。初来的人最容易犯的错，是按瑞士其他城市的习惯来预期这里，而卢加诺在语言、作息与气候上更接近意大利北部。",
+      "卢加诺是瑞士提契诺州最大的城市，2025 年末常住人口 64,548，是瑞士第九大城市；提契诺是瑞士唯一以意大利语为主的州，全城八成人口讲意大利语，瑞士的联邦制让这个州在教育与文化上按自己的语言运行。城市在卢加诺湖畔的一道弧形岸线上，布雷山与圣萨尔瓦托雷山从两侧夹住它；2004 年起本市多次与周边村镇合并，市域扩到约 75 平方公里，跨到湖的两岸，因此“卢加诺”今天包含许多原本独立的村子。它是继苏黎世与日内瓦之后瑞士的第三大金融中心，一百多家银行机构在此设点，服务业提供约 3.8 万个岗位；居民中约 38% 不持瑞士国籍，跨境通勤者约占劳动力的 13%，意大利边境就在城南。气候比阿尔卑斯以北温暖湿润，年降水约 1,560 毫米，日照在瑞士各城中居前列。初来的人最容易犯的错，是按瑞士其他城市的习惯来预期这里，而卢加诺在语言、作息与气候上更接近意大利北部。",
     layout:
       "卢加诺在湖的一个弯里，被两座锥形山——圣萨尔瓦托雷山和布雷山——夹住。老城是无车的意式石板街区和拱廊广场，湖滨是一条长长的公园和棕榈道。城市周围山坡上散布着别墅和小镇。湖向南延伸进入意大利。",
     gettingAround:
