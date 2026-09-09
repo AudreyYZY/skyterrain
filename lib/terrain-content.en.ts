@@ -5628,6 +5628,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "scandinavian-mountains-norway": {
+    // seeing sources: 加里东造山约 4.9–3.9 亿年前；**新近纪抬升机制「学界仍有不同看法」的表述准确**，是被动陆缘地貌学的公认未决问题 —— 仓库对挪威山系定过这个口径，本轮复核守住了。苏格兰高地、纽芬兰长岭山与斯堪的纳维亚山脉同属一条加里东带、大西洋张开后被撕开：地质学共识。2026-09-09 核，本轮无需改动。
     seeing:
       "The Scandinavian Mountains run the length of the Scandinavian Peninsula; in Norwegian they are often called Kjølen, \"the keel\". They form the backbone of Norway, from its southern tip to the Arctic coast, and separate the rainy western seaboard from the drier interior in the east. Almost all of Norway's high mountains, large plateaus and glaciers belong to this range; the highest point is Galdhøpiggen in Jotunheimen, 2,469 m. The range is not continuously jagged like the Alps — more often it is broad plateaus with rounded or sharp peaks rising above them.",
     formation:
@@ -5643,8 +5644,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   jotunheimen: {
+    // seeing sources: 格利特峰高度：2465 米是峰顶冰帽还在时（2008 年测，含冰厚约 10–15 米）的数；冰帽 2022 年夏大幅消融、**2023 年 9 月完全消失**，现行裸岩高度 **2452 米**。3 级来源转引冰川学测量，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Glittertind
+    //   **这一条是 C6-j 的一个极端形态**：会过期的不只是「数字」，是**这座山本身的形状** —— 一个「山峰海拔」听起来最不像会变的量，却因为顶上那层冰没了而少了 13 米。挪威 29 座最高峰、逾 250 座超 1900 米、DNT 1868 年成立、加尔赫皮根 1850 年首登、国家公园 1980 年设立：均核实无误。
     seeing:
-      "Jotunheimen lies in inland southern Norway, straddling the border of Innlandet and Vestland counties. The name means \"home of the jötnar (giants)\" in Old Norse; the modern spelling was coined by the poet Aasmund Olavsson Vinje in 1862. It holds Norway's 29 highest peaks and more than 250 summits above 1,900 m, including the highest points in Norway and Northern Europe — Galdhøpiggen (2,469 m) and Glittertind (about 2,465 m). The landscape is deep glacial valleys, long narrow glacier-fed lakes and several dozen present-day glaciers among sharp rock peaks.",
+      "Jotunheimen lies in inland southern Norway, straddling the border of Innlandet and Vestland counties. The name means \"home of the jötnar (giants)\" in Old Norse; the modern spelling was coined by the poet Aasmund Olavsson Vinje in 1862. It holds Norway's 29 highest peaks and more than 250 summits above 1,900 m, including the highest point in Norway and Northern Europe, Galdhøpiggen (2,469 m), and the second-highest, Glittertind — its summit ice cap melted away completely in September 2023, leaving a bare-rock height of 2,452 m where the ice once put it at about 2,465 m. The landscape is deep glacial valleys, long narrow glacier-fed lakes and several dozen present-day glaciers among sharp rock peaks.",
     formation:
       "Jotunheimen's rock is mostly gabbro — a very hard, dark igneous rock that cooled slowly at depth, raised and thrust over older rocks during the Caledonian orogeny. Because gabbro resists erosion, this block stood high after the surrounding rock was worn down: it is a classic residual massif (a hard block left standing by erosion). Quaternary glaciers dug deep along the rock's joints and weak zones, cutting the highland into deep valleys and knife-edged peaks; the western slopes still carry large glaciers, while the drier east has fewer.",
     observation:
@@ -5658,6 +5662,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hardangervidda: {
+    // seeing sources: 面积约 6500 平方公里、平均海拔约 1100 米是**「夷平面核心区」口径**，另有 8000–8600 平方公里的更宽口径（含边缘）——**两个数各有各的范围，不是打架**。桑德弗洛加 1721 米、卑尔根铁路 1909 年建成、国家公园 1981 年设立：核实无误。2026-09-09 核，本轮无需改动。
     seeing:
       "Hardangervidda in southern Norway is a broad mountain plateau of about 6,500 km² at an average elevation near 1,100 m — the largest plateau of its kind in Northern Europe. Its surface is largely flat: gently undulating rock, countless lakes, bogs and tundra, almost no trees. The western edge drops abruptly to the Hardangerfjord, a fall of over a kilometre, with waterfalls and deep valleys down the slope; the northwest corner carries the Hardangerjøkulen ice cap. The high point, Sandfloegga, is 1,721 m.",
     formation:
@@ -5673,6 +5678,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   finnmarksvidda: {
+    // seeing sources: 面积超过 2.2 万平方公里、海拔多在 300–500 米；北萨米语并列名 **Finnmárkkoduottar**（双 k）拼写正确。**零争议红线本轮专门复核：通过** —— 只写萨米驯鹿放牧这类广泛记载的土地利用作客观事实，考托凯诺、卡拉绍克作为萨米文化中心是事实陈述，不涉现代政治。2026-09-09 核，本轮无需改动。
     seeing:
       "Finnmarksvidda in Norway's far northern Finnmark region (Northern Sámi Finnmárkkoduottar) is Norway's largest plateau, over 22,000 km², mostly 300 to 500 m in elevation. It is broad rather than high — a low, gently rolling table of rock and tundra stretching out of sight, dotted with tens of thousands of lakes, rivers and large mires; in winter it is one of the coldest places on mainland Europe, and in high summer the mosquitoes are fierce.",
     formation:
@@ -5688,6 +5694,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   sognefjord: {
+    // seeing sources: 长度约 205 公里；深度挪威国家百科（SNL，级别 2 半官方）给 1303 米、其余多源给 1308 米 —— **同一量级的测量差异，判定不改**。**正文只写「挪威最长也最深」而没有写「世界最长」，恰好避开了那个坑**（世界最长是格陵兰斯科斯比湾），因此不需要另加限定语。乌尔内斯木板教堂约 1130 年建、1979 年列入 UNESCO（挪威文化遗产管理局，级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Sognefjorden
     seeing:
       "The Sognefjord in western Norway reaches about 205 km inland from the coast and is up to about 1,308 m deep — Norway's longest and deepest fjord, nicknamed \"the King of the Fjords\". Its main channel throws off many arms that grow narrower and steeper the further in they go, reaching the feet of Jotunheimen and the Jostedalsbreen glacier. Rock walls over a kilometre high rise straight from the water, hung with waterfalls; the narrowest arms (such as the Nærøyfjord) are only a few hundred metres wide.",
     formation:
@@ -5718,6 +5726,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   lofoten: {
+    // seeing sources: 岛链约 110 公里；基底片麻岩约 27–28 亿年、后期侵入岩约 17.8–18 亿年，与正文「十几亿到近三十亿年」吻合。**莫斯克流写的是「世界上最强的潮流之一」而非「第一」** —— 它约 10.7 节，弱于同批萨尔特流的 20+ 节，「之一」这个限定是必要的、正文写对了；maelstrom 一词确源自此地。2026-09-09 核，本轮无需改动。
     seeing:
       "The Lofoten islands lie in the Norwegian Sea off northern Norway, north of the Arctic Circle — a chain of steep mountain islands running about 110 km southwest from the mainland, with main islands Austvågøya, Vestvågøya, Flakstadøya, Moskenesøya and others. The peaks often rise straight from the sea to 500–600 m or more, forming the continuous \"Lofoten Wall\"; at their feet are narrow beaches, fishing villages and emerald shallow bays. Despite the high latitude, the North Atlantic Current keeps winters milder than elsewhere at the same latitude.",
     formation:
@@ -5748,6 +5757,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dovrefjell: {
+    // seeing sources: 斯诺赫塔 2286 米；麝牛 1932 年首批 10 头自格陵兰引入、二战后所剩无几、1947–1953 年第二批 27 头奠定现今种群（国家公园官网，级别 1）—— 正文的「几乎灭绝、战后重新引入」是可接受的概括。1814 年埃兹沃尔誓词属实；连同周边景观保护区共 4366 平方公里，为挪威最大连片保护区。2026-09-09 核，本轮无需改动。
+    //   https://dovrefjell-sunndalsfjella.no/en/musk-oxen/musk-oxen-history/
     seeing:
       "Dovrefjell in central Norway is a mountain plateau running about 160 km east–west, a natural barrier between eastern Norway and the Trøndelag region, and it straddles the main watershed of the Scandinavian Mountains — rainfall here parts, some toward the Atlantic and some the other way. The high point, Snøhetta, is 2,286 m. The landform is open plateau tundra with a few rounded or partly sharp peaks standing above it, cut by deep glacial valleys. The west is coastal and wetter, the east lies in a rain shadow, dry with little snow.",
     formation:
@@ -5793,6 +5804,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   jostedalsbreen: {
+    // seeing sources: 面积约 458 平方公里（2022 年），NVE 研究人员参与的同行评议论文（级别 1）。**「欧洲大陆最大的冰川」这个限定已隐含排除冰岛与斯瓦尔巴，本轮判定口径合理、不需再加字。** 全新世暖期（约 8000–5300 年前）完全消融、桦树扩张，约 5300 年前重新冰川化；正文没写重新冰川化的具体年份，是合理留白。2026-09-09 核，本轮无需改动。
+    //   https://tc.copernicus.org/articles/19/5871/2025/
     seeing:
       "Jostedalsbreen in western Norway, between the Sognefjord and the Nordfjord, is the largest glacier on mainland Europe, with an ice cap area of about 458 km² (2022). It is a north–south, gently domed plateau ice cap, sending dozens of outlet glaciers down into the surrounding valleys, the best known being Nigardsbreen and Briksdalsbreen; some outlets reach right down into forested low valleys, making a stark \"orchard at the foot of the glacier\" contrast.",
     formation:
@@ -5808,8 +5821,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   folgefonna: {
+    // seeing sources: 面积：旧总数 207 平方公里对应 **2006 年**测量（北 26 + 中约 9–13 + 南 167）；NVE 关联的 Sentinel-2 全国编目（2018–19 影像，Andreassen 等 2022）给南佛尔格 **153.8 平方公里（2019）**，比 2006 年少约 8%。级别 1，2026-09-09 核。
+    //   https://www.cambridge.org/core/journals/journal-of-glaciology/article/an-inventory-of-norways-glaciers-and-icemarginal-lakes-from-201819-sentinel2-data/EEBB73BA4DB7D3E77B25172F66ADBA9F
+    //   **没有把三个不同年份的分块数拼成一个新总数** —— 那样得到的「精确总数」并不存在于任何一份来源里。正文因此保留带年份的旧总数 + 最大一块的最新实测 + 「等下一轮编目」。国家公园 2005-05-14 设立核实无误。
     seeing:
-      "Folgefonna, on the Folgefonna peninsula between the Hardangerfjord and the Norwegian Sea in southwestern Norway, is in fact three separate ice caps (north, middle, south) totalling about 207 km² — the third-largest glacier on mainland Norway. The southern ice cap is the largest, nearly 400 m thick at most. Wedged between fjord and open sea, with very heavy snowfall, Folgefonna is a classic \"maritime glacier\" — near the melting point, fast-flowing and sensitive to climate change.",
+      "Folgefonna, on the Folgefonna peninsula between the Hardangerfjord and the Norwegian Sea in southwestern Norway, is in fact three separate ice caps (north, middle, south) that together measured about 207 km² in 2006 — the third-largest glacier on mainland Norway; the largest of them, Søndre Folgefonna, was down to about 154 km² by 2019 on Norway's water and energy directorate's survey, and a new combined figure awaits the next national inventory. The southern ice cap is the largest, nearly 400 m thick at most. Wedged between fjord and open sea, with very heavy snowfall, Folgefonna is a classic \"maritime glacier\" — near the melting point, fast-flowing and sensitive to climate change.",
     formation:
       "Folgefonna sits on a fairly flat plateau surface, itself an uplifted paleic surface. Abundant maritime snowfall builds up and compacts into ice on the plateau, and the ice caps send short, steep outlet tongues toward the surrounding fjords. Through the Quaternary the glaciers here have repeatedly expanded and shrunk, polishing the surrounding rock and deepening the valleys; the kilometre-high walls on either side of the fjords are the result of long glacial scour.",
     observation:
@@ -5823,8 +5839,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   svartisen: {
+    // seeing sources: 面积：NVE Sentinel-2 全国冰川编目（2018 年影像）西斯瓦蒂森 190.2 + 东斯瓦蒂森 125.1 = 约 315.3 平方公里；原文的 370（西 221 + 东 148）是更老一轮的测量、且没标年份，**差约 15%，是实测退缩不是取整差异**。级别 1，2026-09-09 核。
+    //   https://www.cambridge.org/core/journals/journal-of-glaciology/article/an-inventory-of-norways-glaciers-and-icemarginal-lakes-from-201819-sentinel2-data/EEBB73BA4DB7D3E77B25172F66ADBA9F
+    //   恩加冰舌自 1970 年起做物质平衡监测、1990 年代初借水电隧道建成冰下观测站（NVE 官网，级别 1）核实无误。
+    //   https://www.nve.no/hydrology/glaciers/
     seeing:
-      "Svartisen (\"the black ice\") in Nordland county in northern Norway is the second-largest glacier on mainland Norway, split into western and eastern Svartisen, together about 370 km². The Arctic Circle runs across the southern part of the glacier. Its best-known outlet is Engabreen — historically its snout reached down close to sea level, one of the lowest-lying glacier fronts on mainland Europe, and you can walk to the ice from the fjord shore.",
+      "Svartisen (\"the black ice\") in Nordland county in northern Norway is the second-largest glacier on mainland Norway, split into western and eastern Svartisen, together about 315 km² on the latest national glacier inventory (2018). The Arctic Circle runs across the southern part of the glacier. Its best-known outlet is Engabreen — historically its snout reached down close to sea level, one of the lowest-lying glacier fronts on mainland Europe, and you can walk to the ice from the fjord shore.",
     formation:
       "Svartisen is a plateau ice cap sitting on a rolling bedrock upland, split into east and west halves by a deep valley (Vesterdalen). Heavy snowfall accumulates into ice on the plateau and sends outlet tongues down into the lowlands. As the glacier has advanced and retreated repeatedly, it has polished the limestone and gneiss beneath it into smooth rock, deep grooves and marble caves (some of Norway's longest caves are in this area). The recently exposed ground in front of Engabreen is a textbook site for watching \"a glacier just retreated, plants not yet arrived\".",
     observation:
@@ -5838,8 +5858,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   geirangerfjord: {
+    // seeing sources: 深度：**约 258–260 米**（挪威国家百科 SNL，级别 2 半官方），不是原文的 500 米 —— 差近一倍。周壁高度通行区间 1400–1700 米，原文只取下限。2026-09-09 核。
+    //   https://snl.no/Geirangerfjorden
+    //   层级：「斯托尔峡湾 → 宗尼尔斯峡湾（约 26 公里）→ 盖朗厄尔峡湾（约 15 公里）」三级嵌套，原文把中间一级压掉了。
+    //   UNESCO 正式名 **West Norwegian Fjords – Geirangerfjord and Nærøyfjord**，2005 年列入（级别 1）—— 正文写的「西挪威峡湾」是这个正式名的简称，没有踩「通俗名当正式名」的坑。
     seeing:
-      "The Geirangerfjord in western Norway is a roughly 15 km arm of the Storfjord, inscribed with the Nærøyfjord in 2005 as the \"West Norwegian Fjords\" World Heritage Site. It is very narrow and very deep — crystalline rock walls rising about 1,400 m on either side, another about 500 m of water below the surface, with rows of waterfalls falling free from the walls (the \"Seven Sisters\", the \"Suitor\", the \"Bridal Veil\" and others). The fjord makes several bends, each opening onto new walls and waterfalls.",
+      "The Geirangerfjord in western Norway feeds into the Storfjord system through the Sunnylvsfjord and is itself a roughly 15 km arm, inscribed with the Nærøyfjord in 2005 as the \"West Norwegian Fjords\" World Heritage Site. It is very narrow and very deep — crystalline rock walls rising 1,400 to 1,700 m on either side, with about 260 m of water below the surface, with rows of waterfalls falling free from the walls (the \"Seven Sisters\", the \"Suitor\", the \"Bridal Veil\" and others). The fjord makes several bends, each opening onto new walls and waterfalls.",
     formation:
       "The Geirangerfjord is a textbook case of glacial overdeepening: in the ice age an ice stream flowed seaward along a pre-existing river valley, digging the main valley floor ever deeper — in places to several hundred metres below sea level. In the small side valleys the ice was thin and cut shallow, so after the ice retreated and the sea came in, the mouths of those side valleys were left \"hanging\" partway up the main fjord wall, their streams entering only as waterfalls — hanging-valley falls. The fjord bends because the ice followed several differently oriented sets of joints in the rock.",
     observation:
@@ -5853,12 +5877,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   naeroyfjord: {
+    // seeing sources: 层级：纳柔依峡湾是**奥兰峡湾**的支汊，奥兰峡湾才是松恩峡湾的支汊（3 级来源原文即「a branch of the Aurlandsfjord, itself a branch of the Sognefjord」）。原文把两层嵌套压成了一层，`seeing` 与 `observation` **两段各写了一次**，已一并改。2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Aurlandsfjord
+    //   长度约 17 公里、最窄处（巴卡桑德）约 250 米、周边峰达 1761 米（「逾 1600 米」准确）：核实无误。
     seeing:
-      "The Nærøyfjord in western Norway is the innermost arm of the Sognefjord, about 17 km long, only about 250 m wide at its narrowest while the walls on either side rise over 1,600 m — an extreme width-to-depth ratio, a fjord like a \"slit\". It is often taken as the \"type example\" of the fjord landform, and was inscribed with the Geirangerfjord as a World Heritage Site in 2005. The name comes from Njord, the wind god of Norse mythology.",
+      "The Nærøyfjord in western Norway joins the Sognefjord system through the Aurlandsfjord and is the innermost arm of that fjord complex, about 17 km long, only about 250 m wide at its narrowest while the walls on either side rise over 1,600 m — an extreme width-to-depth ratio, a fjord like a \"slit\". It is often taken as the \"type example\" of the fjord landform, and was inscribed with the Geirangerfjord as a World Heritage Site in 2005. The name comes from Njord, the wind god of Norse mythology.",
     formation:
       "The Nærøyfjord follows a pre-existing structural weakness; in the ice age the ice stream cut down concentrated along this narrow zone, digging it into a deep, narrow trough. Because the ice was held tightly between hard rock on both sides, its energy went into cutting down, so the fjord is narrow and deep. After the ice retreated and the sea came in, water filled the trough, leaving today's channel almost pinched between its walls; the small side valleys likewise hang partway up and enter as waterfalls.",
     observation:
-      "From the air the Nærøyfjord is an almost straight dark slit cutting south from the main Sognefjord into snow mountains, its walls so high and steep that it stays in shadow much of the day. There are only scattered footholds of flat ground at the bottom, with small villages and farms such as Gudvangen on them. In winter frozen waterfalls hang on the walls.",
+      "From the air the Nærøyfjord is an almost straight dark slit cutting south from the Aurlandsfjord into snow mountains, its walls so high and steep that it stays in shadow much of the day. There are only scattered footholds of flat ground at the bottom, with small villages and farms such as Gudvangen on them. In winter frozen waterfalls hang on the walls.",
     distinguish:
       "The Nærøyfjord and the Geirangerfjord are both World Heritage arms, but the Nærøyfjord is narrower and straighter, like a \"knife-cut slit\", while the Geirangerfjord bends more and has denser waterfalls. It differs from the main Sognefjord only in scale — the trunk is wide and deep, and the Nærøyfjord is the most extreme short stretch of it.",
     concept:
@@ -6003,6 +6030,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   trolltunga: {
+    // seeing sources: 岩台高出林厄达尔湖约 700 米；徒步单程约 11–14 公里（往返 22–28 公里，随起点停车场变化）、爬升 800–900 米。**正文写「十几公里」而不是一个具体数，恰好规避了这个会随停车场变动而过期的量 —— 这是处理会过期量的第三条路：给区间式的模糊表述。** 2026-09-09 核，本轮无需改动。
     seeing:
       "Trolltunga in western Norway, near Odda on the western edge of the Hardangervidda plateau, is a thin, almost horizontal slab of rock jutting out into the air about 700 m above Lake Ringedalsvatnet. The slab is roughly a dozen metres long, with several hundred metres of vertical space straight down off its end. It is one of Norway's most popular hikes of recent years, about a dozen kilometres each way from the valley with about 800 m of climb.",
     formation:
@@ -6018,6 +6046,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   saltstraumen: {
+    // seeing sources: 约 3 公里长、最窄约 150 米、约 4 亿立方米海水在 6 小时内通过、流速可达 20+ 节、漩涡直径约 10 米：与挪威国家旅游机构官方页及多个独立来源一致（2 级）。**「世界上已知最强的潮流」带了「已知」这个留白，不是绝对断言，判定可接受**；按流速衡量确实快于本批 lofoten 条目里的莫斯克流（约 10.7 节），两个条目的表述互相印证、不打架。萨尔特桥 1978 年通车（个别来源的 1979 是混凝土奖颁奖年）。2026-09-09 核，本轮无需改动。
     seeing:
       "Saltstraumen in northern Norway, near Bodø, is a strait connecting the Saltfjord with the inner Skjerstadfjord, about 3 km long and only about 150 m wide at its narrowest. On each rising or falling tide, as much as about 400 million cubic metres of seawater must squeeze through this narrow gap in six hours, at speeds up to about 20 knots (about 10 m/s), with whirlpools up to about 10 m across churning on the surface — the strongest tidal current known in the world.",
     formation:
@@ -6048,8 +6077,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "french-alps": {
+    // seeing sources: 勃朗峰高度：**峰顶是积雪，逐年变化，每两年由上萨瓦省的专业测绘师实测一次**；最新一次 2023-09-05 测得 4805.59 米（较 2021 年少 2.22 米），截至 2026-09-09 未见更新值。2 级（主流媒体转述官方测量团队）。
+    //   https://www.iloveski.org/fr/2023/10/05/mont-blanc-mesure/
+    //   **这是「山峰海拔也会过期」的第二例**（第一例是同一轮挪威的格利特峰：峰顶冰帽 2023 年消融，海拔从 2465 掉到 2452）—— 一个听起来最不像会变的量。
+    //   跨境按「位于法国与意大利交界」中性表述，不涉主权，复核通过。
     seeing:
-      "The French Alps are the part of the Alps within France, running along the southeastern border from Lake Geneva to the Mediterranean, about 350 km. They are one of Europe's youngest and steepest ranges: sharp rock peaks, deeply cut valleys, large glaciers and glacial lakes. The high point, Mont Blanc, is about 4,806 m — the highest peak in the Alps and in all of Western Europe, on the French–Italian border. The north (Savoie, Haute-Savoie) is high and glaciered, the south (the Provence Alps) lower, drier and more limestone.",
+      "The French Alps are the part of the Alps within France, running along the southeastern border from Lake Geneva to the Mediterranean, about 350 km. They are one of Europe's youngest and steepest ranges: sharp rock peaks, deeply cut valleys, large glaciers and glacial lakes. The high point, Mont Blanc, is about 4,806 m — its snow cap changes from year to year and is resurveyed by professional surveyors every two years, the 2023 survey giving 4,805.59 m — the highest peak in the Alps and in all of Western Europe, on the French–Italian border. The north (Savoie, Haute-Savoie) is high and glaciered, the south (the Provence Alps) lower, drier and more limestone.",
     formation:
       "The Alps are the result of the African plate converging on and pressing into the European plate through the Cenozoic (roughly the last 60 million years) — the sea between the two continents (the Tethys) closed, and the layers of the seafloor and continental margins were strongly folded, thrust and stacked into piles of \"nappes\". The process has not stopped, so the Alps have notable seismic activity and are still slowly rising. Quaternary glaciers then carved horns, arêtes, U-shaped valleys and over a hundred glacial lakes into the uplifted range. Around Mont Blanc is a block of hard granite, especially erosion-resistant, hence the highest point.",
     observation:
@@ -6063,6 +6096,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pyrenees: {
+    // seeing sources: 阿内托 3404 米、维涅马勒 3298 米、加瓦尔尼-加瓦尔尼圈谷 1997 年以双重遗产列入 UNESCO、比利牛斯国家公园 1967 年设立：均核实通过。**跨境表述本轮专门复核：通过**（「法国与西班牙交界」，不描述边界线、不表述主权）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Pyrenees are an east–west frontier range about 430 km long between France and Spain (the small country of Andorra lies within them). They form a nearly continuous wall with almost no low gaps, and historically separated France sharply from the Iberian Peninsula. Overall lower than the Alps, the highest peak, Aneto (3,404 m), is on the Spanish side; the highest on the French side is Vignemale (3,298 m). The mountains have spectacular glacial \"cirques\" (such as Gavarnie), plus dozens of small glaciers and over a thousand mountain lakes.",
     formation:
@@ -6080,8 +6114,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "massif-central": {
     seeing:
       "The Massif Central in south-central France is an ancient highland covering about one-sixth of the country, averaging 800 to 1,000 m, high point Puy de Sancy at 1,885 m. It is not a range but a large old block uplifted and tilted as a whole, with a series of extinct volcanoes and lava plateaus laid over it. The terrain is rounded granite hills, deeply cut river valleys, open plateau pasture, and — in the Auvergne — strings of conspicuous volcanic cones.",
+    // formation sources: 火山年代分层：坎塔尔层状火山主体为中新世晚期（约 1300 万–600 万年前，700 万年前坍塌，随后 600 万–300 万年前又有大规模玄武岩流覆盖）；桑西（多尔山）约 1800 万–50 万年前、主锥体 110 万–23 万年前；普伊火山群 9.5 万–8400 年前。原文把三者塞进同一个「上新世至几千年前」的窗口，坎塔尔差了约 800 万年。3 级学术转述，2026-09-09 核。
+    //   https://link.springer.com/chapter/10.1007/978-3-319-39961-4_4
+    //   **这是「把几件事压进同一个时间窗」的形状** —— 与同一轮挪威两条峡湾「把两层嵌套压成一层」是同一类简化。
     formation:
-      "Three-quarters of the Massif Central is floored by granite, gneiss and schist left by the Variscan orogeny (about 250–360 million years ago), long since planed flat. About 23 million years ago stress from the Alpine orogeny reached here, uplifting this old block as a whole and tilting it westward; at the same time deep-crustal extension let magma rise, and from the Pliocene (about 5 million years ago) to a few thousand years ago there was persistent volcanic activity, building the Chaîne des Puys, Sancy, Cantal and other volcanoes and large basalt plateaus (Aubrac, Devès).",
+      "Three-quarters of the Massif Central is floored by granite, gneiss and schist left by the Variscan orogeny (about 250–360 million years ago), long since planed flat. About 23 million years ago stress from the Alpine orogeny reached here, uplifting this old block as a whole and tilting it westward; at the same time deep-crustal extension let magma rise, and volcanic activity ran from the late Miocene (about 13 million years ago, when large stratovolcanoes such as the Cantal were built) through the Pliocene to the Holocene (about 5 million years ago to a few thousand years ago, when younger groups such as Sancy and the Chaîne des Puys formed) and large basalt plateaus (Aubrac, Devès).",
     observation:
       "From the air the Massif Central is a dark, undulating highland in the heart of France, deeply cut by the Loire, the Dordogne, the Allier and others. Around the Auvergne you can clearly see rows of conical hills (the Chaîne des Puys) and a few larger old volcanoes (Sancy, Cantal). The Causses to the southwest are pale limestone tablelands cut by canyons. The massif's edges (the Cévennes, the Monts du Forez) drop abruptly to the surrounding lowlands.",
     distinguish:
@@ -6093,6 +6130,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vosges: {
+    // seeing sources: 大球峰 1424 米、莱茵地堑肩式隆起机制、斯特拉斯堡大教堂用孚日砂岩：均核实通过。**分类复核：孚日是大区自然公园（PNR）不是国家公园，正文没写错** —— 法国的国家公园与 PNR 是两种不同的法定分类，本批 camargue / verdon / armorican 三处也都用对了。2026-09-09 核，本轮无需改动。
     seeing:
       "The Vosges in eastern France are a north–south mountain area about 120 km long between the Alsace plain and the Lorraine plateau. They are not high (high point the Grand Ballon, 1,424 m) and rounded in form — the southern summits, with rounded high pasture on top, are called \"ballons\" (balloons). The Black Forest (Germany) across the Rhine graben and the Vosges were once the same range.",
     formation:
@@ -6114,8 +6152,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The rock of the Armorican Massif went through two orogenies in the Palaeozoic (Caledonian, Variscan, about 300–500 million years ago), and is the core of a microcontinent called \"Armorica\". For the two or three hundred million years since, it has stayed land and been continuously eroded, long since planed to a near-plain. Harder quartzite was not planed flat and stands out as long low ridges (such as the Monts d'Arrée). In the Quaternary ice ages sea level fell and rivers cut down; after the ice, sea level rose and drowned the mouths of these valleys, making Brittany's ragged coast.",
     observation:
       "From the air the interior of the Armorican Massif is a low, gentle green country of hills divided by hedgerows and small fields (\"bocage\"), with a few quartzite ridges like shallow folds. The coastline is extremely intricate — funnel-shaped estuaries reaching inland (\"aber\", \"ria\"), long narrow peninsulas (Crozon, Sizun), and groups of islets and hidden reefs offshore. The tidal range is large, and at low tide vast rock and mud flats are exposed.",
+    // distinguish sources: 阿摩里卡地块**确实经历过新生代抬升**：布列塔尼大区官方环境机构写明夷平面记录了可能由该地块抬升导致的基准面变化（非洲—伊比利亚—欧亚汇聚驱动）；学术研究量化出约 260 万年前起相对雷恩坳陷向南掀斜、北缘持续抬升，以及约 54 万年前与约 11 万年前两次更晚近的抬升脉冲。2 级，2026-09-09 核。
+    //   https://bretagne-environnement.fr/
+    //   **原文的「唯一一块基本没有被重新抬升」是把「抬升方式不同」写成了「没有抬升」** —— 与内伊湖那条（C7，因果解释错了）是同一类：机制性表述比数字更容易被简化到失真，而且没有脚本能看见。判据那一句也跟着改了：从「看它有没有近期抬升」改成「看它有没有由断裂或岩浆驱动的强烈抬升」。
     distinguish:
-      "The Armorican Massif, the Massif Central and the Vosges are all France's Variscan old blocks, but the Armorican is the only one essentially not re-uplifted by Neogene tectonics — it has kept a low, stable \"old age\" state, with no volcanoes and no marked recent uplift. Its interest shifts from mountains to coast. To recognise an \"un-revived old block\", look at whether it is low, seismically quiet, and lacking young volcanoes and young fault scarps.",
+      "The Armorican Massif, the Massif Central and the Vosges are all France's Variscan old blocks, but the Armorican has not seen the kind of strong, fault- or magma-driven uplift the Vosges and the Massif Central have — its Cenozoic uplift has been slow, broad and gentle tilting, with no volcanoes and no large fault scarps produced by it, so the landform has kept its low, rounded \"old age\" state. Its interest shifts from mountains to coast. To recognise an \"un-revived old block\", look at whether it is low, seismically quiet, and lacking young volcanoes and young fault scarps.",
     concept:
       "The Brittany coast is the template for a \"ria coast\": post-glacial sea-level rise drowned the branching network of river valleys on the former land, the sea reaching inland along the valleys to form deep, narrow, inland-shallowing funnel-shaped inlets — different from a glacier-carved fjord (a ria is a drowned river valley, a fjord is a drowned glacial trough). To tell whether a coast is a ria coast, look at whether the inlets are branching and river-shaped, whether they shallow inland, and whether the surroundings are a low old block. A common misconception is to conflate a ria coast with a fjord.",
     history:
@@ -6123,6 +6164,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "paris-basin": {
+    // seeing sources: 巴黎盆地的同心圆单面山（cuesta）表述与本库瑞士、英国、德国条目的写法一致，**内部口径统一**（缓坡顺岩层倾向、陡坎逆岩层）；坳陷盆地 vs 断陷盆地的对比核实通过。2026-09-09 核，本轮无需改动。
     seeing:
       "The Paris Basin is a huge oval sedimentary basin in north-central France, ringed by four old blocks — the Armorican Massif, the Ardennes, the Vosges and the Massif Central. You cannot see a \"basin\" at the surface — it is a broad country of gently rolling farmland and woods, slightly lower in the centre (near Paris). The real basin structure is underground: layers of limestone, chalk, sand and clay stacked like a set of bowls with upturned rims, laid down from the Triassic all the way to the Neogene.",
     formation:
@@ -6243,8 +6285,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mer-de-glace": {
+    // seeing sources: 长度：2024 年报道引用「约 7 公里、面积已跌破 30 平方公里」；厚度：蒙唐维尔车站附近冰层自小冰期结束以来减薄约 300 米，2022–2023 一年内又减薄约 30 米 —— **原文的「约 200 米」是一个没有位置也没有年份的单一值，已删**。3 级环境媒体，2026-09-09 核。
+    //   https://vert.eco/climat/la-mer-de-glace-futur-champ-de-cailloux-le-plus-grand-glacier-de-france-face-a-lacceleration-du-changement-climatique/
+    //   ⚠️ 下一轮回来查 GLACIOCLIM / Compagnie du Mont-Blanc 的官方页取最新长度。
+    //   **「阿尔卑斯第二长（把支流合起来算）」这个限定是准确的、判定不改**：单算主体 7 公里在阿尔卑斯只排第五，合并巨人冰川、勒尚冰川等支流后约 11 公里，确为第二长，仅次于阿莱奇 —— 口径写得很清楚。
     seeing:
-      "The Mer de Glace on the north slope of the Mont Blanc massif in the French Alps is the longest and largest glacier in France — its main body about 7.5 km long and about 200 m thick, and counting its tributary glaciers upstream (the Glacier du Géant, the Glacier de Leschaux and others), the second-longest in the Alps after the Aletsch Glacier in Switzerland. It flows past the foot of a viewpoint called Montenvers on the edge of the Chamonix valley, and since the 19th century a rack railway has run there to see the glacier.",
+      "The Mer de Glace on the north slope of the Mont Blanc massif in the French Alps is the longest and largest glacier in France — its main body about 7 km long as of 2024 and still shortening and thinning (its thickness varies too much along the glacier to give a single figure), and counting its tributary glaciers upstream (the Glacier du Géant, the Glacier de Leschaux and others), the second-longest in the Alps after the Aletsch Glacier in Switzerland. It flows past the foot of a viewpoint called Montenvers on the edge of the Chamonix valley, and since the 19th century a rack railway has run there to see the glacier.",
     formation:
       "The Mer de Glace is a classic valley glacier: the high ground of the Mont Blanc massif (above 3,000 m) holds snow year-round, compacted into ice, which flows slowly under gravity (tens of centimetres a day) down a deep valley first cut by a river and then widened by the glacier itself, planing the floor into a U-shape, leaving polish and glacial striations on the walls and moraine at the melting snout. With a warming climate, the glacier's \"expenditure\" (melt) has exceeded its \"income\" (snowfall) for years, and the tongue has retreated a kilometre or two and thinned by over a hundred metres since the 20th century.",
     observation:
@@ -6253,8 +6299,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Mer de Glace is a \"valley glacier\", unlike an \"ice cap\" like Jostedalsbreen — it is confined to one valley, with a clear upstream accumulation zone and downstream tongue. It and the Aletsch Glacier in Switzerland are the same kind of thing — the two largest valley glaciers of the same range (the Alps). To recognise a \"valley glacier\", look at whether it is a stream of ice held between valley walls, flowing from snow mountains toward a lower valley.",
     concept:
       "The \"fresh pale rock bands\" on the walls beside the Mer de Glace are a plain sample of \"glacier mass balance\": the height of the ice surface each year depends on whether the snow accumulated upstream or the ice melted along the way is greater. Years in a row of \"expenditure > income\" and the surface drops steadily, exposing rock that had long been under ice — paler, not yet lichen-covered — and the width of this \"trim line\" band directly measures how much the glacier has thinned. To tell whether a glacier is advancing or retreating, look at the position of its tongue and this trim line.",
+    // history sources: 通道现状：台阶因冰川退缩一度加长到 580 多级；2024 年 2 月新缆车投入运行、2025 年 2 月正式揭幕，从蒙唐维尔车站直接下到冰面附近，同址新冰洞同期开放。2 级（缆车行业媒体转述运营方 Compagnie du Mont-Blanc）。
+    //   https://fr.isr.at/singleview/article/neue-kabinenbahn-zum-mer-de-glace
+    //   **「从车站走台阶下降多少米」是这一批里最典型的会过期量**：它随冰川退缩逐年变长，直到运营方干脆换了一套上下方式 —— 正文原来写的那句在 2024 年 2 月之后就不成立了。
     history:
-      "The Mer de Glace is one of the birthplaces of \"glacier tourism\" in Europe: British travellers came to Montenvers to see the \"sea of ice\" in the 18th century, and the rack railway completed in 1908 let ordinary visitors reach the glacier's edge. Historical records (paintings, photographs, parish documents) show that during the \"Little Ice Age\" the Mer de Glace's tongue once pushed close to farmland on the Chamonix valley floor. Today the glacier retreats fast, and from the station you descend a long staircase, over a hundred metres, to touch the ice.",
+      "The Mer de Glace is one of the birthplaces of \"glacier tourism\" in Europe: British travellers came to Montenvers to see the \"sea of ice\" in the 18th century, and the rack railway completed in 1908 let ordinary visitors reach the glacier's edge. Historical records (paintings, photographs, parish documents) show that during the \"Little Ice Age\" the Mer de Glace's tongue once pushed close to farmland on the Chamonix valley floor. The glacier retreats so fast that the old staircase had grown to more than 580 steps; in February 2024 a new cable car began running from the Montenvers station down to near the ice, after which visitors descend about 580 steps to reach the ice cave.",
   },
 
   camargue: {
@@ -6268,17 +6317,24 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Camargue is a \"delta\", unlike an ordinary drowned river mouth — a delta is land built out by sediment at the river mouth and advancing seaward, while a ria is a drowned river valley. It is the same kind of thing as the Nile and Po deltas. To tell whether a river mouth is a delta, look at whether it has multiple branching channels, large areas of newly deposited low ground, and traces of the balance between sediment supply and wave transport.",
     concept:
       "The Camargue is a sample for understanding \"a delta's budget\": whether a delta can maintain itself depends on whether the sediment the river delivers (\"income\") or the sediment carried off by waves and currents plus ground subsidence (\"expenditure\") is greater. After large-scale upstream damming of the Rhône, the sediment reaching the delta dropped sharply, and the Camargue's shoreline has begun to retreat in places and salt intrusion has worsened. To tell whether a delta is growing or shrinking, look at whether its shoreline advances or retreats and whether the river's sediment load has been cut off by engineering.",
+    // history sources: 拉姆萨尔列入年份：**1986-12-01**（编号 346，面积 100,788 公顷）—— 法国 1986-10-01 才加入公约。**1971 是公约本身在伊朗拉姆萨尔签署的年份，不是这块湿地被列入的年份**，「全球最早一批」因此不成立。级别 1（公园官网），2026-09-09 核。
+    //   https://www.parc-camargue.fr/ramsar.html
+    //   **这个错的形状值得记：把「一个制度诞生的年份」当成了「某个对象被纳入这个制度的年份」。** 1927 年设自然保护区、1970 年设地区自然公园核实无误；红鹳那句只说「在这里繁殖」、没有做「欧洲唯一」的排他性断言，判定不改。
     history:
-      "The Camargue has produced sea salt since Roman times (the salt works at Aigues-Mortes are still in production). In the Middle Ages it was semi-feral pasture for cattle and horses, and the \"gardian\" (Camargue herdsman) culture continues today. From the 19th century dikes turned the north into rice fields. A nature reserve was created in 1927, a regional nature park in 1970, and it was listed as a Ramsar wetland in 1971 — one of the first wetlands in the world protected under an international convention.",
+      "The Camargue has produced sea salt since Roman times (the salt works at Aigues-Mortes are still in production). In the Middle Ages it was semi-feral pasture for cattle and horses, and the \"gardian\" (Camargue herdsman) culture continues today. From the 19th century dikes turned the north into rice fields. A nature reserve was created in 1927, a regional nature park in 1970, and it was listed as a Ramsar wetland site (no. 346) in 1986.",
   },
 
   "chaine-des-puys": {
+    // seeing sources: **帕文湖不属于普伊山链**，它属于多尔山火山群（UNESCO 遗产地官网明确「n'est pas lié à la chaîne des Puys」）。普伊山链自身的活动年代为 9.5 万–8400 年前，最年轻的一次是母牛峰 / 拉索拉斯峰双子火山。级别 1，2026-09-09 核。
+    //   https://www.chainedespuys-failledelimagne.com/le-bien/chaine-des-puys/
+    //   **这个错在同一条目里出现了两次**（seeing 与 observation 各一次）——又一例「同一条口径问题在一个条目里几乎总是出现两次」。
+    //   2018 年以「Chaîne des Puys – Limagne fault tectonic arena」列入 UNESCO、约 80 座火山、约 45 公里长、多姆山 1465 米：核实无误。
     seeing:
-      "The Chaîne des Puys in the Auvergne of the Massif Central, west of Clermont-Ferrand, is a north–south line of young volcanoes about 45 km long — roughly 80 cones, lava domes and explosion-blasted flat craters (maars) standing one after another among forest, lakes and pasture. The highest and best known is the Puy de Dôme (1,465 m), a steep lava dome. The most recent eruption (the Pavin crater) was about 7,000 years ago. In 2018 the Chaîne des Puys and the Limagne fault to its west were inscribed as a World Heritage Site.",
+      "The Chaîne des Puys in the Auvergne of the Massif Central, west of Clermont-Ferrand, is a north–south line of young volcanoes about 45 km long — roughly 80 cones, lava domes and explosion-blasted flat craters (maars) standing one after another among forest, lakes and pasture. The highest and best known is the Puy de Dôme (1,465 m), a steep lava dome. The most recent eruption, the twin cones of the Puy de la Vache and the Puy de Lassolas, was about 8,400 years ago. In 2018 the Chaîne des Puys and the Limagne fault to its west were inscribed as a World Heritage Site.",
     formation:
       "The Chaîne des Puys is a segment of the \"West European Rift\". After Alpine mountain-building about 35 million years ago, the crust of western Europe was stretched, dropping along a large fault (the Limagne fault) into the Limagne plain; the thinning crust gave deep magma a path to rise. Between about 90,000 and 7,000 years ago, magma broke the surface one point at a time along a north–south fissure, building this line of volcanoes. Because each volcano erupted only once or twice and then went extinct (\"monogenetic volcanoes\"), they keep the fresh shape they had just after eruption, barely eroded.",
     observation:
-      "From the air the Chaîne des Puys is a remarkably regular line of conical hills on a forested upland along the western edge of the Limagne plain, often with a bowl-shaped crater on top. The Puy de Dôme is the largest dome among them, with a Roman temple site and a TV mast on top. Some craters hold circular lakes (Lac Pavin, Lac d'Aydat). Not far west, the \"Montagne de la Serre\" is a long thin flat-topped ridge — actually an ancient lava flow which, being more erosion-resistant than the soft rock around it, has \"turned over\" from valley floor to ridge crest (relief inversion).",
+      "From the air the Chaîne des Puys is a remarkably regular line of conical hills on a forested upland along the western edge of the Limagne plain, often with a bowl-shaped crater on top. The Puy de Dôme is the largest dome among them, with a Roman temple site and a TV mast on top. Some craters hold circular lakes, and old valleys are often dammed by lava flows into lakes (Lac d'Aydat, Lac de la Cassière). Not far west, the \"Montagne de la Serre\" is a long thin flat-topped ridge — actually an ancient lava flow which, being more erosion-resistant than the soft rock around it, has \"turned over\" from valley floor to ridge crest (relief inversion).",
     distinguish:
       "The Chaîne des Puys, the Cantal and the Monts Dore are all in the Massif Central, but the Chaîne des Puys is the youngest and best-preserved group — the Cantal and Monts Dore are large stratovolcanoes millions of years old, already eroded to residual peaks, while the Chaîne des Puys are small volcanoes within tens of thousands of years, still fresh in shape. They differ from the volcanoes of Italy and Iceland: those are on plate boundaries, the Chaîne des Puys is on a rift belt inside a continent. To judge the age of a group of volcanoes, look at how intact the cones are and whether the craters are still there.",
     concept:
@@ -6363,8 +6419,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "verdon-gorge": {
+    // seeing sources: 深度区间约 250–700 米（不是单一的 700）；**「欧洲最大的峡谷」主要出现在旅游宣传里，没有统一的国际口径**，法语维基对韦尔东本身也回避了这个最高级。3 级，2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Gorges_du_Verdon
+    //   断裂控制下切、石灰岩约 1.5 亿年、1905 年马特尔勘察：核实无误。**分类复核：韦尔东是大区自然公园（PNR）不是国家公园，正文没有写错。**
     seeing:
-      "The Gorges du Verdon in southeastern France, between the Alps and Provence, is a gorge the Verdon River has cut into a limestone upland — about 25 km long and up to about 700 m deep, often called the largest canyon in Europe. On the floor is a river a strange turquoise colour from dissolved lime, and the walls are grey-white, near-vertical, locally overhanging limestone — a famous rock-climbing site in Europe. Downstream it is dammed into a green lake by the Sainte-Croix reservoir.",
+      "The Gorges du Verdon in southeastern France, between the Alps and Provence, is a gorge the Verdon River has cut into a limestone upland — about 25 km long and between about 250 and 700 m deep, often called one of the deepest gorges in Europe — a claim with no single internationally agreed ranking behind it. On the floor is a river a strange turquoise colour from dissolved lime, and the walls are grey-white, near-vertical, locally overhanging limestone — a famous rock-climbing site in Europe. Downstream it is dammed into a green lake by the Sainte-Croix reservoir.",
     formation:
       "The limestone of the Gorges du Verdon is a shallow-sea deposit about 150 million years old. These layers were uplifted into an upland during Alpine mountain-building. The Verdon cuts down along a fracture zone in the rock, and because the limestone is hard and has near-vertical joints, the river cuts almost only downward and barely widens sideways, hollowing out this gorge whose depth far exceeds its width. The limestone is also dissolved, so the walls and floor have many caves, springs and underground-river outlets.",
     observation:
@@ -6408,6 +6467,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   calanques: {
+    // seeing sources: 2012-04-18 设立国家公园（级别 1，公园官网）；官方自称「欧洲首个同时覆盖陆地、海域与近郊的国家公园」，**正文写的是更保守的「少见」，判定不改** —— 保守的限定语不需要为了贴近官方而放宽（同一轮冰岛黛提瀑布那条也是这么处理的）。科斯凯洞 37 米水下、约 2.7 万年前壁画、石灰岩约 1.2 亿年核实通过。2026-09-09 核，本轮无需改动。
+    //   https://www.calanques-parcnational.fr/en/identity-calanques-national-park
     seeing:
       "The Calanques, between Marseille and Cassis, is a stretch of steep white limestone coast cut by narrow, deep clefts into which the sea reaches inland hundreds of metres, with near-vertical walls a hundred metres or more high on either side and bright blue-green water on the floor, shallow and clear. In the Provençal dialect such an inlet is a \"calanque\". The Calanques National Park was created here in 2012, one of the few national parks in Europe right beside a large city (Marseille).",
     formation:
@@ -6423,8 +6484,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dune-du-pilat": {
+    // seeing sources: 高度：新阿基坦海岸观测站（法国官方）2025 年 101.7 米、2024 年 101 米（2009 年起测量以来最低）、2023 年 103 米、2017 年峰值 110.5 米。级别 1，2026-09-09 核。
+    //   https://www.observatoire-cote-aquitaine.fr/En-2024-la-Dune-du-Pilat-culmine-a-101-metres-d-altitude-soit-plus-de-deux
+    //   **这是本轮少见的「每年都有官方新值」的量**，必须带年份。「欧洲最高的沙丘」这个头衔无异议，保留。迁移速率「每年约 1 到 5 米」（迎海侧年蚀退 1–2 米、背陆侧年前进 3–5 米）是区间表述，已经规避了假精确，判定不改。
     seeing:
-      "The Dune du Pilat, southwest of Bordeaux at the southern entrance of the Arcachon basin, is a dune over 100 m high and about 2.7 km long — the tallest sand dune in Europe. It lies over the coast like a giant golden wave: the seaward western side is a gentle slope you can walk up, the landward eastern side a steep face pressing straight onto the deep-green pine forest of the Landes, gradually burying it.",
+      "The Dune du Pilat, southwest of Bordeaux at the southern entrance of the Arcachon basin, is the tallest sand dune in Europe — about 101.7 m high on the Nouvelle-Aquitaine coastal observatory's 2025 survey (the measured height moves every year; it peaked at 110.5 m in 2017) — and about 2.7 km long. It lies over the coast like a giant golden wave: the seaward western side is a gentle slope you can walk up, the landward eastern side a steep face pressing straight onto the deep-green pine forest of the Landes, gradually burying it.",
     formation:
       "The sand of the Dune du Pilat comes from the Atlantic — waves bring river and seabed sand to the shore, it dries at low tide, and the prevailing west wind blows the dry sand ashore, piling ever higher. The dune as a whole migrates slowly inland (about 1 to 5 m a year), the windward western slope constantly deflated and the leeward eastern steep face constantly filled by \"avalanching\" sand, so the dune \"crawls\" east like a conveyor belt. The dune's cross-section contains several dark palaeosol layers, showing it grew in several stages, each time briefly fixed by vegetation and then reactivated.",
     observation:
@@ -6438,10 +6502,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   etretat: {
+    // seeing sources: 「针尖」（L'Aiguille）高度：2012 年 8 月具名科学测量（Donald W. Olson 团队，倾角仪 + 六分仪，最低潮位）得 54.5 米，通常取整为约 55 米。网上另有 70 米的流传值，**差约 27%，超出取整范围**。3 级（转引具名测量），2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Site_d%27%C3%89tretat
+    //   崖高约 80 米、白垩约 1 亿年、与多佛白崖同一地层：核实无误。
     seeing:
-      "Étretat on the Normandy coast of northern France is a stretch of chalk cliff about 80 m high. Waves have hollowed it along the rock's fractures into three sea arches — the Porte d'Amont, the Porte d'Aval and the Manneporte — and a lone \"needle\" of rock about 70 m high standing up out of the sea. White cliffs, white arches, grey-green sea — a scene the Impressionists painted again and again.",
+      "Étretat on the Normandy coast of northern France is a stretch of chalk cliff about 80 m high. Waves have hollowed it along the rock's fractures into three sea arches — the Porte d'Amont, the Porte d'Aval and the Manneporte — and a lone \"needle\" of rock about 55 m high standing up out of the sea. White cliffs, white arches, grey-green sea — a scene the Impressionists painted again and again.",
+    // formation sources: 退缩速率：「每年约 20 厘米」是**塞纳滨海省沿岸白垩崖的区域平均值**（报道只写「据当局称」、未点名机构），不是埃特勒塔本身的监测值；本地岩性底部更致密、更抗蚀，慢于迪耶普附近科多勒、克里埃勒的每年 20–40 厘米。3 级，2026-09-09 核。
+    //   https://www.ina.fr/ina-eclaire-actu/les-falaises-d-etretat-un-patrimoine-geologique-en-peril
+    //   **这一条的形状是「口径张冠李戴」**：数字本身是真的，只是它描述的对象比正文说的大得多 —— 与苏梅岛「泰国湾第二大岛」拿安达曼海的普吉来比是同一类错。正文现在如实写明「查不到本地专门监测数据」。
     formation:
-      "Étretat's chalk was formed about 100 million years ago in a warm shallow sea, from the skeletons of countless tiny calcareous plankton settling and lithifying, with bands of black flint through it. Chalk is fairly soft and has near-vertical fractures, and year after year the waves erode along the fractures: first hollowing a sea cave, then, when the cave breaks through, a sea arch, and when the arch roof collapses a \"stack\" is left outside it (the Needle is one). The whole cliff line retreats on average about 20 cm a year.",
+      "Étretat's chalk was formed about 100 million years ago in a warm shallow sea, from the skeletons of countless tiny calcareous plankton settling and lithifying, with bands of black flint through it. Chalk is fairly soft and has near-vertical fractures, and year after year the waves erode along the fractures: first hollowing a sea cave, then, when the cave breaks through, a sea arch, and when the arch roof collapses a \"stack\" is left outside it (the Needle is one). This cliff line is still retreating, but there is no site-specific monitoring figure for Étretat itself — the regional average for Seine-Maritime's chalk cliffs is about 20 cm a year, and Étretat's own rock is more resistant, so it typically retreats more slowly than that average.",
     observation:
       "From the air Étretat is a straight, snow-white cliff line on Normandy's \"Alabaster Coast\", broken by a small gravel bay, with an arch reaching into the sea at each end of the bay, and a lone needle beyond one of the arches. The cliff top is flat green farmland running right to the edge. The water is the grey-green particular to this coast, coloured by suspended chalk particles.",
     distinguish:
@@ -6453,6 +6523,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mont-saint-michel-bay": {
+    // seeing sources: 潮差约 14–15 米；UNESCO 正式名 Mont-Saint-Michel and its Bay、1979 年列入（正文没有把通俗名当正式名）；去堤化工程 1995 年启动、2014 年桥梁通车与新水闸投用、2015 年正式宣布完工（法国诺曼底大区行政公署官网，级别 1）—— 正文的「2000 年代到 2014 年」与官方时间线基本吻合，**判定不构成实质矛盾、不改**。2026-09-09 核。
     seeing:
       "The Bay of Mont-Saint-Michel, on the border of Brittany and Normandy, is a broad, shallow bay. Its tidal range can reach about 14 to 15 m — one of the largest on mainland Europe. At low tide the sea withdraws several kilometres, exposing a vast sand-and-mud tidal flat; at high tide the water comes back fast. On a granite outcrop in the bay stands the abbey of Mont-Saint-Michel — nearly an island at high tide, joined to the land at low tide.",
     formation:
