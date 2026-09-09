@@ -6652,8 +6652,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "italian-alps": {
+    // seeing sources: 「完全落在意大利境内的最高峰」这个说法**两派资料打架**：Britannica 等支持大帕拉迪索（勃朗峰、罗莎峰的最高点都在国界上）；但罗莎峰山群的科尔诺内罗峰 4321 米、文森峰金字塔 4215 米**本身完全在意大利境内且更高**，只是不是独立山峰。**反例只有 3 级来源，按规矩不足以推翻正文** —— 因此没有改数字，只补了「独立山峰」这一档限定，让句子在两种读法下都成立。2026-09-10 核。
+    //   **这一条的处理值得记：遇到「3 级来源提出的反例」时，不是二选一，而是找一句在两种情况下都为真的写法。** 同一断言在 `gran-paradiso` 条目里也出现了一次，已一并改。
     seeing:
-      "The Italian Alps are the great arc the Alps make along Italy's northern border, from Piedmont in the west to near Slovenia in the east. They are a high wall between the Po Valley and the countries to the north, closing Italy off on the south side. Mont Blanc, the Matterhorn and Monte Rosa — famous Alpine peaks — are all near the Italian–French or Italian–Swiss border; the highest peak lying entirely within Italy is Gran Paradiso, 4,061 m.",
+      "The Italian Alps are the great arc the Alps make along Italy's northern border, from Piedmont in the west to near Slovenia in the east. They are a high wall between the Po Valley and the countries to the north, closing Italy off on the south side. Mont Blanc, the Matterhorn and Monte Rosa — famous Alpine peaks — are all near the Italian–French or Italian–Swiss border; the highest freestanding peak lying entirely within Italy is Gran Paradiso, 4,061 m.",
     formation:
       "The Alps are the result of the African plate (with the Adriatic \"promontory\" ahead of it) pressing into Europe in the Cenozoic — the Tethys Ocean between the two continents closed, and the layers of the seafloor and continental margins were folded, thrust and stacked into piles of nappes. The Italian side faces the direction of the push, so you can see much \"older-over-younger\" inverted stratigraphy. Quaternary glaciers flowed south from the main crest into Italy's valleys, deepening the floors and leaving huge terminal moraines at the valley mouths; after the ice, those moraine dams held back a string of large \"Pre-Alpine\" lakes — Garda, Como and others.",
     observation:
@@ -6667,6 +6669,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   apennines: {
+    // seeing sources: 大角峰 2912 米；2009 年拉奎拉地震、2016 年阿马特里切地震均为广泛记录的事件、年份准确。2026-09-10 核，本轮无需改动。
     seeing:
       "The Apennines are the \"backbone\" running the length of the Italian peninsula, from Liguria in the northwest to Calabria in the far south, about 1,200 km long. As a whole they are much lower than the Alps, the highest peak the Corno Grande (part of the Gran Sasso) at 2,912 m. The range is not wide, but it divides the peninsula into two sides different in climate and drainage — the Adriatic side short and steep, the Tyrrhenian side broad and gentle with some volcanic areas and coastal plains.",
     formation:
@@ -6682,6 +6685,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dolomites: {
+    // seeing sources: UNESCO「The Dolomites」2009-06-26 列入（编号 1237，级别 1）。
+    //   https://whc.unesco.org/en/list/1237/
+    //   白云石化机制（富镁卤水改造礁体）与现有地质文献一致。**零争议红线本轮专门复核：通过** —— `history` 段只写拉迪恩语、19 世纪登山史、一战山地战的简短事实，不碰自治省政治（这是仓库对意大利定过的口径）。2026-09-10 核，本轮无需改动。
     seeing:
       "The Dolomites in northeastern Italy are a range of unusually pale (near-white) carbonate-rock peaks — vertical walls, rows of spires, flat-topped tablelands — rearing abruptly out of deep-green meadow and forest. This distinctive rock and mountain form made it a mecca of mountaineering and tourism as early as the 19th century, and it was inscribed as a World Heritage Site in 2009. The name comes from the French mineralogist Dolomieu — both the mineral dolomite and this range are named for him.",
     formation:
@@ -6697,6 +6703,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "po-valley": {
+    // seeing sources: 面积约 4.6 万平方公里（各资料 4.6 万–4.78 万，**属统计边界口径差异、判定不改**）。**前陆盆地成因本轮专门核过：正文写对了** —— 两侧造山带对挤使地壳下弯、再被沉积物充填，不是「河流冲积出来的平原」。2026-09-10 核，本轮无需改动。
     seeing:
       "The Po Valley (Italian Pianura Padana) is the largest lowland in Italy — about 650 km east–west, about 46,000 km², running from the foot of the Western Alps all the way to the Adriatic. The surface is extremely flat, an agricultural and industrial core filled with fields, canals, roads and cities (Turin, Milan, Bologna, Venice and others). Ringed on three sides by the Alps and the Apennines, and with persistent fog and stagnant air, it is one of the more air-polluted regions of Europe.",
     formation:
@@ -6712,6 +6719,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "po-river": {
+    // seeing sources: 约 652 公里，与波河流域管理局（Autorità di Bacino Distrettuale del Fiume Po）官方口径一致（级别 1）。2026-09-10 核，本轮无需改动。
+    //   https://www.adbpo.it/
     seeing:
       "The Po is the longest river in Italy, about 652 km. It starts at the foot of Monviso in the Western Alps, runs almost straight east across the whole Po Valley, taking in many tributaries from the Alps (the Ticino, the Adda, the Mincio and others) and the Apennines (the Tanaro, the Secchia and others), and finally builds a large, still-advancing delta on the Adriatic. Its lower bed, silted up, is now higher than the farmland on either side — a \"perched river\", held only by two high embankments.",
     formation:
@@ -6772,8 +6781,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gran-paradiso": {
+    // seeing sources: 同 `italian-alps` 条目的注释。**这个断言在两个条目里各写了一次** —— 又一例「同一条口径问题在库里出现两次，修一处要搜另一处」。1922-12-03 设立、意大利第一个国家公园（1919 年国王宣布捐赠）核实无误。
     seeing:
-      "Gran Paradiso in the western Italian Alps, between the Aosta Valley and Piedmont, is a high mountain area of mainly gneiss, its highest peak Gran Paradiso at 4,061 m — the highest peak lying entirely within Italy (Mont Blanc and Monte Rosa are on the border). It has dozens of glaciers and over a hundred mountain lakes, with forest and pasture in the valleys. In 1922 Italy's first national park was created here.",
+      "Gran Paradiso in the western Italian Alps, between the Aosta Valley and Piedmont, is a high mountain area of mainly gneiss, its highest peak Gran Paradiso at 4,061 m — the highest freestanding peak lying entirely within Italy (the summits of Mont Blanc and Monte Rosa are on the border). It has dozens of glaciers and over a hundred mountain lakes, with forest and pasture in the valleys. In 1922 Italy's first national park was created here.",
     formation:
       "Gran Paradiso's rock is a block of ancient granitic crust, buried deep and metamorphosed to gneiss during Alpine mountain-building, then lifted as a whole and pushed northwest along thrust faults — geologically an \"internal crystalline massif\", the same kind as the Écrins and the Vanoise in France. It is much harder than the folded sedimentary rock around it, so it stands out as a high mountain area. Quaternary glaciers dug deep along the rock's joints, cutting it into sharp peaks, arêtes and rings of cirques, with ice still hanging in the cirques today.",
     observation:
@@ -6789,8 +6799,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "gran-sasso": {
     seeing:
       "The Gran Sasso d'Italia (\"the great rock of Italy\") in the central Apennines, in the Abruzzo region, is a high mountain area of limestone, its highest peak the Corno Grande at 2,912 m, the highest point of the whole Apennines — its snowy top is visible from the Adriatic coast to the east. On the north side of the Corno Grande is the Calderone glacier, which since 1913 has been the southernmost glacier in Europe and is now shrunk to a thin sheet of ice that could vanish at any time. The southern slope is an open high plain called Campo Imperatore, so empty and plateau-like it is nicknamed \"Little Tibet\".",
+    // formation sources: 卡尔代罗内：**技术分类已变** —— 不再有整体流动、2000 年前后分裂成两块，CNR 与意大利冰川学委员会现归类为 glacionevato（永久冰雪体）而非严格意义的冰川；2022-04 探地雷达测到残冰仅约 25 米厚、每年约损失 1 米。级别 1（CNR 官方新闻稿），2026-09-10 核。
+    //   https://www.cnr.it/it/comunicato-stampa/11058/calderone-restano-circa-25-metri-di-ghiaccio
+    //   「自 1913 年起是欧洲纬度最南的冰川」这个位置仍成立（西班牙内华达山的 Corral del Veleta 在此之前已实质消亡）。**正文里「冰川」这个通俗称呼保留、不逐处替换 —— 补一句分类变化就够了。** CNR-ISP 近年约每 2–3 年做一次探地雷达实地调查。
     formation:
-      "The Gran Sasso's limestone is a shallow-sea deposit about 200 million years old, strongly folded and thrust into an upland during Apennine mountain-building. Because the Apennines are still stretching (on the west), the Gran Sasso area is cut and uplifted by several large normal faults, forming steep rock walls and the down-faulted plain of Campo Imperatore at its foot. Karst action on the limestone is strong — the surface is short of water and there are many caves and underground rivers below. A world-renowned underground physics laboratory is also cut into the mountain, precisely for the rock's shielding of cosmic rays.",
+      "The Gran Sasso's limestone is a shallow-sea deposit about 200 million years old, strongly folded and thrust into an upland during Apennine mountain-building. Because the Apennines are still stretching (on the west), the Gran Sasso area is cut and uplifted by several large normal faults, forming steep rock walls and the down-faulted plain of Campo Imperatore at its foot. The Calderone on the north side no longer flows as a glacier does and split into two bodies around 2000; ground-penetrating radar in 2022 found only about 25 m of ice left, and scientists now classify it as a permanent ice-and-snow body rather than a true glacier — it keeps its place as Europe's southernmost glacial remnant, but its technical classification has changed. Karst action on the limestone is strong — the surface is short of water and there are many caves and underground rivers below. A world-renowned underground physics laboratory is also cut into the mountain, precisely for the rock's shielding of cosmic rays.",
     observation:
       "From the air the Gran Sasso is an unusually striking white limestone mountain wall in the central Apennines, its north face near-vertical rock (the Corno Grande's \"east face\"), its south side grading gently into the yellow-green high plain of Campo Imperatore, with grazing horses and sheep and a few seasonal lakes on the plain. The glacier is only a remnant in a small shaded hollow on the Corno Grande.",
     distinguish:
@@ -6832,6 +6845,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-garda": {
+    // seeing sources: 面积约 370 平方公里、最深约 346 米，多方一致（3 级但互相印证）。2026-09-10 核，本轮无需改动。
     seeing:
       "Lake Garda in northern Italy, on the northern edge of the Po Valley, is the largest lake in Italy by surface area (about 370 km²). Its shape is distinctive: the northern part is narrow and deep, wedged between Alpine cliffs (like a fjord), up to about 346 m deep; the southern part is wide and shallow, ringed by low vineyard hills. This \"narrow at the top, wide at the bottom\" contrast directly records the glacier that made it.",
     formation:
@@ -6847,6 +6861,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-como": {
+    // seeing sources: 最深约 410 米（ARPA Lombardia，区域官方一手，级别 1）—— 另有 414–425 米的 3 级说法，**属测量口径差异，且官方数据支持正文，判定不改**；湖面海拔 199 米、隐洼地 199 − 410 = −211 米算术核对无误。**加尔达湖与科莫湖是冰川超深挖的槽谷湖，不是断层湖 —— 本轮专门核过，正文写对了。** 2026-09-10 核。
+    //   https://www.arpalombardia.it/territori/como/lago-di-como/
     seeing:
       "Lake Como, at the foot of the Alps north of Milan, is an inverted \"Y\"-shaped deep lake — three long narrow arms meeting near Bellagio. It is one of the deepest lakes in Europe (up to about 410 m), its bed far below sea level. Its shores are steep mountain slopes, with dense forest and villas, churches and fishing villages at the waterline, making up the iconic \"Lake Como\" picture.",
     formation:
@@ -6877,6 +6893,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-vesuvius": {
+    // seeing sources: 主峰 1281 米；1631 年喷发死亡人数各研究在 3000–6000 以上不等，**正文用「数千人」而不是一个精确数，是稳妥的写法、判定不改**；1944 年最近一次喷发。2026-09-10 核，本轮无需改动。
     seeing:
       "Mount Vesuvius on the eastern shore of the Bay of Naples is the only active volcano on mainland Europe, about 1,281 m high. Today's cone actually sits within a ring of older, half-broken crater rim — that old rim is \"Monte Somma\", left by a series of larger cone collapses and eruptions over tens of thousands of years. The whole \"Somma–Vesuvius\" volcano is right next to the Naples metropolitan area, with hundreds of thousands of people at its foot.",
     formation:
@@ -6892,8 +6909,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-etna": {
+    // seeing sources: 峰顶高度：**随每次喷发变化，INGV 用无人机不定期复测** —— 2021-08 东南火山口 3357 米 → 2023-12 修正 3354 米 → 2024-07 Voragine 东侧沿口约 3369 米 → **2024-09-12 复测约 3403 米（迄今最高）**。2025–2026 年仍持续喷发（2026 年 6–8 月 Voragine / 东北火山口一带多次活动），截至 2026-09-10 未检索到更新的官方复测数字。级别 1（INGV 官方博客）+ 2/3 级交叉，2026-09-10 核。
+    //   https://ingvvulcani.com/2024/07/10/la-voragine-fa-la-voce-grossa-e-diventa-la-nuova-vetta-delletna/
+    //   **这是 `C8`（连海拔也会过期）最典型的一例**：三年之内官方数字动了四次，而原文停在「约 3350 米」。⚠️ **下一轮先查 INGV 有没有针对 2025–2026 年活动发布新的无人机测绘结果。**
+    //   「欧洲最高的活火山」通行的限定是**不计高加索**（厄尔布鲁士 5642 米），已补。
     seeing:
-      "Mount Etna on the east coast of Sicily, about 3,350 m, is the tallest active volcano in Europe and one of the most active in the world — with an eruption or lava flow almost every year, and smoke almost never stopping. It is huge, with a base circumference of about 140 km, its slopes covered with hundreds of parasitic cones. On the east flank is a huge horseshoe-shaped collapse depression, the \"Valle del Bove\". The summit is snow-covered year-round, an odd contrast with the smoking craters.",
+      "Mount Etna on the east coast of Sicily has a summit that shifts with every eruption — a drone survey in September 2024 put it at about 3,403 m, the highest yet recorded, and it has kept erupting since, so the current figure is whatever Italy's geophysics and volcanology institute last measured. It is the tallest active volcano in Europe outside the Caucasus, and one of the most active in the world — with an eruption or lava flow almost every year, and smoke almost never stopping. It is huge, with a base circumference of about 140 km, its slopes covered with hundreds of parasitic cones. On the east flank is a huge horseshoe-shaped collapse depression, the \"Valle del Bove\". The summit is snow-covered year-round, an odd contrast with the smoking craters.",
     formation:
       "Etna's position is special — it is roughly at the meeting of the African plate, Ionian oceanic crust and several large faults, where the crust is being torn open, letting mantle-derived magma rise fairly freely. Etna's magma is fairly basic and runny, and gas escapes easily, so most of its eruptions are relatively \"mild\" — effusive lava, persistent small explosions at the summit craters, occasional lava fountains. This \"high-frequency, low-intensity\" style is how it built such a huge mountain over hundreds of thousands of years.",
     observation:
@@ -6907,6 +6928,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "campi-flegrei": {
+    // seeing sources: **正文没有写死警戒级别或数字 —— 这是对的，判定不改。** 截至 2026-09-10：坎皮弗莱格瑞持续处于「2 级·注意（黄色预警）」；地面持续抬升（2025-12 起月均约 15±3 毫米、2026-02 起约 10±3 毫米；自 2005-11 累计约 167.5 厘米，2025 年以来约 30 厘米）；2025 年 3/5/6 月与 2026 年 5 月有 4.4–4.6 级地震，**2026 年 7 月记录到该区有仪器记录以来能量最大的一次地震（M4.7±0.3）**。级别 1（民防部 + INGV 维苏威观测站），2026-09-10 核。
+    //   https://www.ov.ingv.it/index.php/flegrei-stato-attuale
+    //   ⚠️ 警戒等级由民防部按 INGV 建议动态调整、**无固定发布周期，按事件触发查询**；正文一律不写死。
     seeing:
       "Campi Flegrei (Italian for \"burning fields\") west of Naples is not a mountain but a large caldera a dozen or so kilometres across. Within it is an undulating lowland and bays, dotted with dozens of small cones, circular crater lakes (Lake Averno) and fumaroles steaming with sulphur (the Solfatara). Towns such as Pozzuoli are built inside the caldera.",
     formation:
@@ -6922,6 +6946,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aeolian-islands": {
+    // seeing sources: UNESCO「Isole Eolie (Aeolian Islands)」2000 年列入、编号 908（级别 1）—— **正文没有直接写年份，因此没有可错的地方**，备查。2026-09-10 核，本轮无需改动。
     seeing:
       "The Aeolian Islands in the Tyrrhenian Sea north of Sicily are a line of 7 main volcanic islands (Lipari, Vulcano, Salina, Stromboli, Filicudi, Alicudi, Panarea). Some are still active (Stromboli erupts mildly year-round, Vulcano has fumaroles and mud baths), some dormant. The islands are black and white volcanic-rock cliffs, conical mountains, and vines and capers grown on volcanic soil.",
     formation:
@@ -6937,6 +6962,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   stromboli: {
+    // seeing sources: 2019-07-03 阵发（喷发柱 2.5–3 公里，一名徒步者遇难）、2024-07-11 阵发（火山碎屑流沿「火流」入海，无伤亡）；INGV 记录里近 120 年最强的几次阵发为 1919 / 1930 / 2003 / 2019 / 2024。级别 1，2026-09-10 核，本轮无需改动。
     seeing:
       "Stromboli is the northernmost of the Aeolian Islands, about 924 m high, almost the whole island a volcanic cone rising from the seabed. It has hardly stopped erupting for over two thousand years — every few minutes to few tens of minutes the summit crater bursts with a \"puff\", throwing hot fragments tens to hundreds of metres up. Seen from the sea at night, these repeated bursts are like a light blinking on and off, hence \"the Lighthouse of the Mediterranean\". Locals call the volcano \"Iddu\" (\"him\").",
     formation:
@@ -7057,16 +7083,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   marmolada: {
+    // seeing sources: 冰川面积：帕多瓦大学「参与式冰川调查」（联合意大利冰川学委员会与 ARPAV，**每年夏末 8–9 月发布**）—— 2022 年约 1.12 平方公里（已是 2000 年的一半）、2023 年约 1.00、2025 年约 0.92、**2026 年约 0.83**；2026 年一夏消退 23 米，是 2025 年 8 米的近三倍。级别 1（大学官方新闻稿）+ 2 级报道，2026-09-10 核。
+    //   https://www.unipd.it/news/marmolada-ghiacciaio-dimezzato-ultimi-25-anni
+    //   原文的「约 1.6 平方公里」约是 2000 年前后的数 —— **这类数字沿用二十年而不带年份，读者无从判断它有多旧**。⚠️ 每年 8–9 月回来刷新。
     seeing:
-      "Marmolada is the highest peak of the Dolomites, its summit Punta Penia 3,343 m. In a range known for white spires and walls, Marmolada is the only \"big block\" — a huge slab tilted to the south, with a near-1,000 m vertical wall on its south side and a relatively gentle slope on the north, covered by the only glacier in the Dolomites. This glacier has shrunk to about 1.6 km² and is retreating very fast.",
+      "Marmolada is the highest peak of the Dolomites, its summit Punta Penia 3,343 m. In a range known for white spires and walls, Marmolada is the only \"big block\" — a huge slab tilted to the south, with a near-1,000 m vertical wall on its south side and a relatively gentle slope on the north, covered by the only glacier in the Dolomites. This glacier is shrinking fast — annual surveys by the University of Padua put its area at about 1.12 km² in 2022 and about 0.83 km² by 2026.",
     formation:
       "Unlike most Dolomite peaks, which are dolomite, Marmolada is a single mass of grey limestone — a reef body at the edge of a Triassic carbonate platform that was not fully dolomitised, so it kept a grey colour and is also relatively more intact. Alpine mountain-building lifted this slab and tilted it south, and glaciers then scoured the concave north side, forming today's asymmetric cross-section of \"steep south wall, gentle north slope with a glacier\". The glacier, being small and marginal in both latitude and elevation, is extremely sensitive to warming.",
     observation:
       "From the air Marmolada is a distinctly larger, more continuous mass of rock among the Dolomite peaks, its south face a straight grey wall overlooking Lake Fedaia below, its north side a white glacier slope, the glacier's snout retreating uphill year by year and exposing fresh pale rock and rubble. There are crevasses and a few collapsed séracs on the ice. The summit has a cable-car station and weather and observation facilities.",
     distinguish:
       "Marmolada, compared with the Dolomite spires around it, has different rock (grey limestone versus pale dolomite), a different bulk (one mass versus separate towers), and is the only one in the range with a glacier. Compared with the large glaciers elsewhere in the Alps (the Mer de Glace, the Aletsch), it is far smaller, more marginal, and vanishing faster. To tell how long a glacier can survive, look at its size, its latitude and elevation, and how close it is to the snowline.",
+    // concept sources: 消失预测：CNR 旧预测「25–30 年内」（约 2040 年代中）→ Legambiente 2024 年报告给 **2040 年** → 2026 年调查的 Varotto 教授称若酷暑重复出现**可能只剩约十年**。级别 1（CNR 新闻稿）+ 2 级，2026-09-10 核。
+    //   https://www.cnr.it/it/comunicato-stampa/9125/tra-25-30-anni-il-ghiacciaio-della-marmolada-non-ci-sara-piu
+    //   **做法是写「预测点在提前」这个序列，而不是换一个新的单点** —— 单点会在下一份报告出来时再次过期，而「一直在提前」这件事本身是稳定的、也更接近读者需要知道的东西。
     concept:
-      "The Marmolada glacier is a sample for understanding \"the amplified response of a marginal glacier to climate\": a glacier that is small, thin and low stores little \"buffer\", and a slight rise in temperature or drop in snowfall makes it shrink far faster than a large glacier — because it is already on the minimum condition line for a glacier to exist. Such glaciers are the most sensitive indicators of climate change and the first to disappear. The Marmolada glacier is predicted to largely vanish around the middle of this century.",
+      "The Marmolada glacier is a sample for understanding \"the amplified response of a marginal glacier to climate\": a glacier that is small, thin and low stores little \"buffer\", and a slight rise in temperature or drop in snowfall makes it shrink far faster than a large glacier — because it is already on the minimum condition line for a glacier to exist. Such glaciers are the most sensitive indicators of climate change and the first to disappear. Estimates of when it will vanish keep moving earlier: older predictions pointed to mid-century, a 2024 glacier-monitoring report gave 2040, and researchers after the 2026 survey said that if hot summers like 2026 recur it may have only about a decade left.",
     history:
       "In the First World War Marmolada was a section of the Italian–Austro-Hungarian front, and Austro-Hungarian troops cut kilometres of tunnels and living space beneath the glacier (the \"City of Ice\") to shelter from shellfire and cold — these tunnels have been re-exposed in recent years as the glacier melts. After the war Marmolada developed as a skiing and climbing area. In July 2022 a large mass of ice above the glacier (a serac collapse) broke away in high temperatures, causing deaths among climbers and prompting wide discussion of the safety of high mountain glaciers.",
   },
@@ -12201,6 +12233,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ South Korea ============
   "taebaek-mountains": {
+    // seeing sources: 太白山 1566.7 米（正文取整为 1567，3 级）。2026-09-10 核，本轮无需改动。
     seeing:
       "The Taebaek Mountains form the north-south spine along Korea's east coast, dividing the peninsula's landscape and climate; the range's namesake peak, Mount Taebaek, rises to 1,567 m.",
     formation:
@@ -12215,6 +12248,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The summit altar atop Mount Taebaek has long served as a site for sky-worship rites, one of the representative surviving traditions of mountain veneration on the Korean Peninsula.",
   },
   seoraksan: {
+    // seeing sources: 大青峰 1708 米、韩国第三高峰；1965 年天然纪念物、1982 年韩国首个 UNESCO 生物圈保护区（3 级）。正文没有写 1970 年的国家公园年份，但已写的两个年份都对。2026-09-10 核，本轮无需改动。
     seeing:
       "Seoraksan is South Korea's third-highest peak at 1,708 m, known for its granite peaks, deep-cut gorges, and clearly banded seasonal vegetation.",
     formation:
@@ -12229,6 +12263,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a Natural Monument protection area in 1965 and a UNESCO Biosphere Reserve in 1982, Seoraksan is one of the first mountain areas in Korea to receive systematic nature protection.",
   },
   jirisan: {
+    // seeing sources: 天王峰 1915 米、跨三道、1967 年韩国第一个国家公园（3 级）。**「韩国内陆最高峰」这个限定必要且正确**（汉拏山在济州岛，是全国最高峰）—— 正文写对了。2026-09-10 核，本轮无需改动。
     seeing:
       "Jirisan is the highest peak on mainland South Korea at 1,915 m, spanning three provinces; it became Korea's first national park in 1967.",
     formation:
@@ -12271,6 +12306,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Muju area at the mountain's foot developed into one of Korea's earliest alpine ski resorts from the mid-20th century, an important site in the history of Korean winter sports.",
   },
   hallasan: {
+    // seeing sources: 汉拏山 1947 米（国土地理情报院 2005 年测量、2008 年公布 1947.269 米；KIGAM 激光雷达 1947.06 米，级别 2 转述）。UNESCO「Jeju Volcanic Island and Lava Tubes」2007 年列入，**由三个要素组成**（拒文岳熔岩洞系统 + 城山日出峰 + 汉拏山国家公园山顶区）—— 正文说汉拏山是「核心组成部分」措辞略强，但它确是其中面积与知名度最大的要素，**判定不构成事实错误、不改**。2026-09-10 核。
     seeing:
       "Hallasan, South Korea's highest peak at 1,947 m, is the shield volcano at the centre of Jeju Island; its summit crater lake, Baengnokdam, formed where water pooled in the caldera.",
     formation:
@@ -12287,8 +12323,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "jeju-island": {
     seeing:
       "Jeju Island, South Korea's largest island, was built entirely by basaltic volcanic activity; 368 small parasitic cones known as oreum dot the island, and its coastline is known for lava landforms and tuff sea-cliffs.",
+    // formation sources: 火山分期：济州道世界地质公园官方页 —— 约 180 万年前起水成火山活动 → 中更新世（约 40–80 万年前）转为熔岩溢流为主、形成熔岩台地 → **全新世中期（数千年前）仍有水成火山喷发**（城山日出峰、松岳山等）→ 有记录的最近一次活动约在千年前。级别 1，2026-09-10 核。
+    //   https://www.jeju.go.kr/geopark/park/jejuintro/volcanic.htm
+    //   **原文两处都错**：① 「25 万年前」这个终点查无官方来源，疑似把「寄生火山锥形成于 120 万至 25 万年前」误套到了「岛屿主体」上；② **因果说反** —— 城山日出峰是约 5000 年前一次水成火山喷发**堆出来的凝灰岩锥**，海蚀只是后来把它削出崖面，不是「火山活动结束后由海蚀塑造出的地貌」。**这是 C7 的又一例。**
+    //   368 座오름（Invest Korea 官方页，级别 2）、「单一火山周边寄生火山锥数量之最」（同一官方页原话）、2010 年 UNESCO 世界地质公园（IGGP 官方，级别 1）：均核实无误。
     formation:
-      "The island's main body formed through repeated basaltic eruptions between roughly 1.8 million and 250,000 years ago; after volcanism ceased, sea erosion of the coastal lava layers carved landforms such as the tuff sea-cliffs of Seongsan Ilchulbong.",
+      "Jeju's volcanic activity began about 1.8 million years ago and built the island up through several stages of basaltic eruption, with eruptions continuing until a few thousand years ago. Seongsan Ilchulbong is one of the later ones — a tuff cone thrown up by a hydrovolcanic eruption around 5,000 years ago, which the waves then cut back into the sea cliff seen today.",
     observation:
       "From the air, the island is roughly oval, with Hallasan rising at its centre and numerous low, rounded parasitic cones scattered around it; on the east coast, Seongsan Ilchulbong juts into the sea like a great green crown.",
     distinguish:
@@ -12301,8 +12341,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   ulleungdo: {
     seeing:
       "Ulleungdo is a Quaternary volcanic island in the waters east of the Korean Peninsula; its highest point, Seonginbong, reaches 984 m, and it is the emergent summit of a stratovolcano rising roughly 3,000 m from the seafloor.",
+    // formation sources: 起始年代：**郁陵岛自身的火山活动始于约 250 万年前**（郁陵郡官方 + 《数字郁陵文化大典》，级别 1/2；史密森尼全球火山活动计划给 2.7 Ma–0.01 Ma 佐证）；原文的 460 万年是该海域内**另一处火山地质体**的年代，被张冠李戴。2026-09-10 核。
+    //   https://ulleung.grandculture.net/ulleung/toc/GC01500385
+    //   **零争议红线本轮逐句检查：通过** —— `seeing` / `formation` / `observation` / `distinguish` / `concept` / `history` 全六段**未出现独岛、竹岛，也没有「附近有 X 岛」这类指向性表述**。圣人峰 984 米、纳里破火山口全新世早期喷发的火山灰远至日本本州中部沉积：均核实无误。
     formation:
-      "The island built up through multiple phases of submarine and subaerial eruption from about 4.6 million to roughly 5,000 years ago, with volcanic rock consisting mainly of trachyte, andesite, and basalt.",
+      "The island built up through multiple phases of submarine and subaerial eruption from about 2.5 million to roughly 5,000 years ago, with volcanic rock consisting mainly of trachyte, andesite, and basalt.",
     observation:
       "From the air, Ulleungdo's outline is steep and compact; at its centre, the Nari Basin is a well-preserved caldera landform ringed by high volcanic walls.",
     distinguish:
@@ -12313,18 +12356,30 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ulleungdo's volcanic record spans several million years, with its most recent eruption roughly 5,000 years ago; the Nari Basin remains a key site for studying the island's volcanic evolution.",
   },
   "haean-basin": {
+    // seeing sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条踩线了，已按红线删掉战史归因**：原文写「被**朝鲜战争期间的联合国军**称为 Punchbowl」，现在只保留「俗称 Punchbowl」这个事实本身。2026-09-10 核。
+    //   尺寸：南北长约 10 公里、东西宽约 7 公里（韩国民族文化大百科事典，级别 2）—— 原文的「直径约 5 公里」约为实际的一半。
+    //   https://encykorea.aks.ac.kr/Article/E0062645
+    //   **成因本轮专门核过：正文写对了** —— 韩国地质资源研究院（KIGAM）明确写明是前寒武纪片麻岩被侏罗纪花岗岩侵入、花岗岩抗风化更弱而被优先侵蚀掏空形成的**差异侵蚀盆地**，**不是陨石坑也不是火山口**（级别 1）。
+    //   https://mgeo.kigam.re.kr/geoinfo/mt_geomorph/report/ch_16_0.html
+    //   盆地比周边山地低约 400–800 米，正文的「500 至 800 米」在取值范围内、判定不改。
     seeing:
-      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, about 5 km across; its bowl-like shape led UN forces during the Korean War to nickname it the \"Punchbowl.\"",
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, roughly 10 km north-south and 7 km east-west; its bowl-like shape has given it the nickname \"Punchbowl\".",
     formation:
       "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
     observation:
       "From the air, the basin forms a neat, roughly oval depression, ringed by ridges rising 500–800 m above its floor; villages and fields are laid out neatly on the basin floor, contrasting sharply with the steep terrain around it.",
+    // distinguish sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **同一条红线问题在这个条目里出现了三次**（`seeing` 的战史归因、`history` 的整句、`distinguish` 的定位），三处都已改。
+    //   **这一条不是核实方报的，是我在处理韩国批之后对全库做 `朝鲜战争 / Korean War / 军事分界线 / Military Demarcation / 非军事区 / DMZ / 38 度 / 停战` 的正则扫描扫出来的** —— 核实方只看它那一批的 14 个条目，扫全库才发现同一类表述还散在别处。**「派一批去核」和「把这一类在全库搜一遍」是两件事。**
     distinguish:
-      "The Haean Basin and Yongneup on Mt. Daeam are both in the Gangwon mountains near the Military Demarcation Line, but the Haean Basin is a large-scale erosional basin, while Yongneup is a small high-altitude peat moor.",
+      "The Haean Basin and Yongneup on Mt. Daeam are both in the mountains of northern Gangwon, but the Haean Basin is a large-scale erosional basin, while Yongneup is a small high-altitude peat moor.",
     concept:
       "The Haean Basin's bowl-shaped depression, formed by differential weathering, is a clear example of how contrasting rock resistance shapes basin topography.",
+    // history sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条整句踩线，已按红线替换**：原句写「邻近朝鲜战争期间形成的军事分界线」「别称源自朝鲜战争时期联合国军的战地记录」—— 两处都是战史。替换句只写可核实的地貌与生境事实（盆底农田、山脊围合、人为活动受限带来的生境保存），**不勉强补一段新的历史内容**。2026-09-10 核。
     history:
-      "The basin's northern edge lies near the Military Demarcation Line established during the Korean War, and its nickname \"Punchbowl\" originates from UN forces' wartime field records.",
+      "The basin floor is open farmland ringed by ridges, and long-standing limits on development have left the surrounding wetland and woodland habitat relatively intact.",
   },
   "yongneup-daeamsan": {
     seeing:
@@ -12351,8 +12406,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Cheorwon Lava Plateau and Juwangsan Gorge both display columnar jointing, but the Cheorwon plateau formed from solidified basalt lava flows later re-incised by a river, while Juwangsan Gorge formed from a river eroding rhyolitic tuff.",
     concept:
       "The Cheorwon Lava Plateau shows a two-stage landform evolution — lava accumulating along an ancient valley, then a new river course cutting back into it — making it an important case for studying Quaternary basalt plateau formation.",
+    // history sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条踩线了，已按红线删句**（不是改写）：原 `history` 段后半句写「这一区域也是朝鲜战争期间军事活动的历史地点之一」—— 条目就在非军事区一带，按仓库口径这类叙述一律不写。2026-09-10 核。
+    //   UNESCO 官方名是 **Hantangang UNESCO Global Geopark**，2020 年认定（级别 1）；正文原来把「汉滩江熔岩地貌」这句描述当成专名放进了引号，已订正。
+    //   https://www.unesco.org/en/iggp/hantangang-unesco-global-geopark
+    //   熔岩源出的오리산（454 米）在韩文资料里标注为休眠火山，第四纪曾十余次喷发、熔岩向南流约 95 公里（另有「逾 110 公里」的口径，属统计方式不同）；`seeing`/`formation`/`observation`/`distinguish`/`concept` 五段逐句检查**未见军事或政治内容，通过**。
     history:
-      "In 2020 the \"Hantangang River volcanic landforms\" were designated a UNESCO Global Geopark; the area was also a site of military activity during the Korean War.",
+      "In 2020 the Hantangang area was designated a UNESCO Global Geopark.",
   },
   "charyeong-mountains": {
     seeing:
@@ -12383,6 +12443,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Wolchulsan has long been regarded as a notable mountain of south-western Korea for its striking isolated-peak scenery; the temples and rock-cut Buddha images on its slopes record a long local Buddhist tradition.",
   },
   "suncheon-bay-wetland": {
+    // seeing sources: 2006-01-20 列入拉姆萨尔（韩国首个滨海湿地站点）；2021 年 UNESCO「Getbol, Korean Tidal Flats」列入，顺天湾属最初四个组成部分之一（级别 1）。**正文的「作为……的组成部分」这个限定必要且正确** —— 系列遗产不能写成整体列入。2026-09-10 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1591/
     seeing:
       "Suncheon Bay Wetland is an estuarine wetland made up of a stream, tidal flats, and reed beds; in 2006 it became Korea's first coastal wetland listed under the Ramsar Convention.",
     formation:
@@ -12411,6 +12473,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1988 the Byeonsan Peninsula was designated a national park, the only case in Korea where mountain and coastal landscapes are combined within a single national park.",
   },
   "taean-coast-dunes": {
+    // seeing sources: 泰安海岸国立公园 1978 年设立（韩国第 13 个）、海岸线约 230 公里；新斗里沙丘为韩国最大规模海岸沙丘（3 级）。2026-09-10 核，本轮无需改动。
     seeing:
       "The Taean Coast is a roughly 230-km stretch of shoreline on the west coast, designated a national park in 1978; the Sinduri area preserves Korea's largest coastal dune field.",
     formation:
@@ -12483,18 +12546,23 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "han-river": {
     seeing:
       "The Han River rises in the Taebaek Mountains and runs about 508 km through Seoul, South Korea's capital, making it one of the most important rivers in central Korea.",
+    // formation sources: 源头：**南汉江发源于太白山脉（太白市境内），北汉江源出金刚山一带**，原文的「分别发源于太白山脉不同支脉」对北汉江不成立。3 级，2026-09-10 核。
+    //   https://en.wikipedia.org/wiki/Bukhan_River
+    //   **改法是只写南汉江的源头、不写北汉江的源头** —— 既订正了事实，又避免在正文里描述朝鲜半岛北段的地理归属（零争议红线）。
+    //   汉江全长 508 公里；`distinguish` 段只涉及汉江的传统主源，未断言北汉江也发源于太白山脉，**属可接受的简化、判定不改**。
     formation:
-      "The Han River's upper course splits into the Namhan (South Han) and Bukhan (North Han) branches, each rising from a different spur of the Taebaek Mountains; the two meet at Yangsu-ri (Dumulmeori) to form the main Han River, which then flows west through Seoul to the Yellow Sea.",
+      "The Han River's upper course splits into the Namhan (South Han) and Bukhan (North Han) branches, the Namhan rising in the Taebaek Mountains; the two meet at Yangsu-ri (Dumulmeori) to form the main Han River, which then flows west through Seoul to the Yellow Sea.",
     observation:
       "From the air, the two Han River branches meet at Yangsu-ri in a Y-shaped confluence; the water is broad and calm, and the green sandbar at the junction, together with the hills on either bank, forms a layered river-valley scene.",
     distinguish:
       "The Han River and the Nakdong River both rise in the Taebaek Mountains, but the Han flows west through Seoul to the Yellow Sea, while the Nakdong flows south through the Yeongnam region to Korea's south-eastern coast.",
     concept:
-      "The confluence of the Han River's two main branches is a classic case for studying how the Korean Peninsula's river systems are organised around the Taebaek Mountains as a watershed.",
+      "The Han River forms its main channel where two branches rising in different source areas meet — a classic case for understanding how a large river is assembled from separate headwaters.",
     history:
       "The rapid urbanisation and economic development along the Han River in Seoul during the late 20th century is often referred to as the \"Miracle on the Han River,\" a phrase now a common shorthand in accounts of Korea's modernisation.",
   },
   "nakdong-river": {
+    // seeing sources: 洛东江发源于太白市（太白山脉范围内）、全长 510 公里、**完全流经韩国境内的最长河流**（3 级）。**「韩国境内最长」这个限定必要且正确** —— 正文写对了，与汉江条目不冲突。2026-09-10 核，本轮无需改动。
     seeing:
       "The Nakdong River rises in the Taebaek Mountains and runs about 510 km, making it the longest river in South Korea; it flows past several major cities in the Yeongnam region.",
     formation:
@@ -12565,6 +12633,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2003 Juwangsan was designated a UNESCO Global Geopark for its distinctive volcanic geological heritage, one of the earlier areas in Korea to receive this international geological-heritage recognition.",
   },
   "soyang-lake": {
+    // seeing sources: 昭阳江大坝 1967-04-15 动工、1973-10-15 竣工，总库容约 29 亿立方米，韩国库容最大的水库（3 级 + 2 级转述）。**正文写明是「人工水库」，没有与天然湖混用口径** —— 本轮专门核过这一点。2026-09-10 核，本轮无需改动。
     seeing:
       "Soyang Lake is an artificial reservoir created in 1973 by damming the Soyang River, holding roughly 2.9 billion m³ of water — Korea's largest reservoir by capacity.",
     formation:
@@ -12579,6 +12648,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Soyang Dam was begun in 1967 and completed in 1973, serving flood control, water supply, and hydropower generation — a significant project in the history of 20th-century Korean water infrastructure.",
   },
   "gyeongpo-lagoon": {
+    // seeing sources: 镜浦湖约 6000 年前原为海湾，沙嘴在湾口堆积逐渐封闭形成潟湖（3 级）—— **成因方向与正文一致，本轮专门核过**。2026-09-10 核，本轮无需改动。
     seeing:
       "Gyeongpo Lagoon, on Korea's east coast, is a lagoon formed where a coastal sandbar closed off a bay; its name means \"lake as clear as a mirror.\"",
     formation:

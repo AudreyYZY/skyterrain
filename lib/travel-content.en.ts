@@ -10197,18 +10197,23 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The Gangneung Danoje Festival around Dano (5th day of the 5th lunar month) is the best time to experience local tradition; summer is beach season, winter is ski and hot-spring season.",
   },
   sokcho: {
+    // identity sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条不是核实方报的，是我在处理韩国批之后对全库做 `朝鲜战争 / Korean War / 军事分界线 / Military Demarcation / 非军事区 / DMZ / 38 度 / 停战` 的正则扫描扫出来的** —— 核实方只看它那一批的 14 个条目，扫全库才发现同一类表述还散在别处。**「派一批去核」和「把这一类在全库搜一遍」是两件事。**
+    //   束草这一条**在 identity、howItWorks、culture 三段里各踩了一次**，三处都已改成可核实的地理、产业与生活事实。
     identity:
-      "Sokcho is a coastal city in north-eastern Gangwon Province, with a population of about 80,000, the traditional gateway to Seoraksan National Park, and not far from the Military Demarcation Line.",
-    // howItWorks sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
-    //   束草市域约 105–106 平方公里。**「韩国面积最小的市之一」不成立**：全国至少有龟里、果川、军浦、乌山、富川、义王、安养、鸡龙等多个市比它小，束草在约 75 个市里处于中下游。排名已删。3 级交叉验证，2026-09-09 核。
+      "Sokcho is a coastal city in north-eastern Gangwon Province, with a population of about 80,000, the traditional gateway to Seoraksan National Park and a significant fishing port and seafood market on the east coast.",
+    // howItWorks sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一段里有三处踩线**，全部按红线处理：① 开头的 1945/1951/1953 时间线 —— 删，不改写；② 结尾的「北面是高城与非军事区」—— 改成「北面是高城」；③ 把这座城定性为「边境城市」—— 改成「有渔港与自己节奏的城市」。**阿爸村、手摇渡船、鱼糕这些可核实的生活事实保留下来了，只是不再交代它的成因** —— 按仓库口径，这类内容宁可少说一层，也不写可能读作立场表态的句子。2026-09-10。
     howItWorks:
-      "Sokcho is a city of Gangwon State covering about 106 km², with about 81,000 people. Its position set its history: at the drawing of the line in 1945 it lay north of the 38th parallel, South Korean forces took it in August 1951, and it passed to South Korea at the armistice of 1953, while people who had come south settled at Cheongho-dong and formed the Abai village, whose hand-pulled ferry and fish cake remain local emblems. The town is pressed between the East Sea and Seoraksan: the national park gate lies 10 km west with Sinheungsa and the cable car inside, Yeongnang lake sits in the middle of town and the fish market of Daepo harbour at its southern end. Seoul is about an hour and a half away, Yangyang airport 20 km south, and Goseong and the demilitarised zone lie north. Newcomers most often go wrong by taking Sokcho for the gate of Seoraksan, when it is a border city with a fishing port and a history of its own.",
+      "Sokcho is a city of Gangwon State covering about 106 km², with about 81,000 people. The Abai village at Cheongho-dong is a distinct quarter of the city, linked to the far bank by a hand-pulled ferry; that ferry and the local fish cake are still Sokcho's emblems. The town is pressed between the East Sea and Seoraksan: the national park gate lies 10 km west with Sinheungsa and the cable car inside, Yeongnang lake sits in the middle of town and the fish market of Daepo harbour at its southern end. Seoul is about an hour and a half away, Yangyang airport 20 km south, and Goseong lies north. Newcomers most often go wrong by taking Sokcho for the gate of Seoraksan, when it is a coastal city with a fishing port and a rhythm of its own.",
     layout:
       "The city sits right on the east coast, with Cheongcho Lake lagoon and Sokcho Port within the city, while the entrance to Seoraksan National Park lies inland, about 15 km to the west.",
     gettingAround:
       "There is no commercial airport locally; the nearest is Yangyang International Airport (about 20 km away, with limited domestic scheduled service); an express bus from Seoul takes about 2 to 2.5 hours. Getting around the city and to the Seoraksan entrance is best done by bus or hired car.",
+    // culture sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一处在 `culture` 段** —— 红线的适用范围不只是 `history` 段，任何段落里可能读作立场表态的句子都算。2026-09-10。
     culture:
-      "Because of its proximity to the Military Demarcation Line, Sokcho was historically an important port town before the peninsula's division; today it is known for its seafood market and Seoraksan tourism.",
+      "Sokcho has long been a port town on the east coast, and today it is known for its seafood market and Seoraksan tourism.",
     seeAndDo:
       "Seoraksan National Park (hiking to Daecheongbong and Guryongso Falls); seafood at Sokcho Jungang Market; Cheongcho Lake ecological park; the seaside temple of Naksansa.",
     whenAndTips:
@@ -10278,8 +10283,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ── South Korea batch 2 (2026-09-05) ──
   incheon: {
+    // identity sources: **零争议红线**（`CLAUDE.md`）：不碰现代政治 / 领土议题；可能有争议 → 删或换中性表述。
+    //   这一条踩了两层：① 涉及朝鲜半岛现代军事史；② 「转折点」本身是评价性表述。**已删句**，同段其余内容（1883 年开港、韩国唯一官方中华街、开港场老建筑、2001 年仁川国际机场、松岛国际都市与 2003 年首个经济自由区、2014 年亚运会、江华岛与舞衣岛）全部保留。2026-09-10。
+    //   **这一条是全库扫描扫出来的，不在韩国地形那一批的 14 个条目里** —— 又一次说明「派一批去核」和「把这一类在全库搜一遍」是两件事。
     identity:
-      "Incheon lies on the Yellow Sea coast west of Seoul, South Korea's third-largest city with about 3.02 million people (2026). Opened as a port in 1883, it was one of the first places on the peninsula to meet the outside world; the Chinatown beside Incheon Station is Korea's only official one, and the Open Port area keeps Japanese and Western buildings of that era. The Incheon landing of September 1950 was the turning point of the Korean War. Incheon International Airport (2001) on Yeongjong Island is the country's international gateway; Songdo is a new city planned on reclaimed land and became Korea's first free economic zone in 2003, and the city hosted the 2014 Asian Games. Ganghwa and Muuido islands also belong to Incheon.",
+      "Incheon lies on the Yellow Sea coast west of Seoul, South Korea's third-largest city with about 3.02 million people (2026). Opened as a port in 1883, it was one of the first places on the peninsula to meet the outside world; the Chinatown beside Incheon Station is Korea's only official one, and the Open Port area keeps Japanese and Western buildings of that era. Incheon International Airport (2001) on Yeongjong Island is the country's international gateway; Songdo is a new city planned on reclaimed land and became Korea's first free economic zone in 2003, and the city hosted the 2014 Asian Games. Ganghwa and Muuido islands also belong to Incheon.",
     // howItWorks sources: Wikipedia (2026-09): Incheon (Metropolitan City; 2026-01 pop 3,015,482; Songdo FEZ 2003; ICN); Special cities of South Korea
     howItWorks:
       "Incheon is a 'Metropolitan City', ranking with the provinces and governed by an elected mayor, divided into eight autonomous districts and two counties, each with its own head and council; with about 3.02 million people in 2026 it is Korea's third city. It is at once an independent city and the western gate of the capital area: Incheon International Airport stands on Yeongjong Island with a direct railway to Seoul Station, Seoul Metro Line 1 runs through to Incheon Station, and many residents commute daily to Seoul. The city has three centres of gravity — the old Open Port town around Incheon Station, the reclaimed new city of Songdo, Korea's first free economic zone in 2003, and the commercial districts of Bupyeong and Guwol-dong. Addresses use road name and building number, and locals speak of 'Songdo', 'the old town' and 'the airport'; the islands of Ganghwa and Muuido also belong to Incheon. Newcomers most often go wrong by taking Incheon for the suburb where the airport is, when it is a metropolitan city with centres of its own and a larger area than Seoul.",

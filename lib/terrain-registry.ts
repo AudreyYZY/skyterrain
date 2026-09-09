@@ -11317,7 +11317,7 @@ const HAEAN_BASIN: TerrainEntry = {
   landmark: { name: "海安里", lon: 128.1075, lat: 38.2967, elevation: 450, kind: "city" },
   bbox: [128.03, 38.24, 128.20, 38.35],
   label: { lon: 128.11, lat: 38.29, rotation: 0 },
-  source: "海安盆地：江原道杨口郡一处近椭圆形侵蚀盆地，中心为侏罗纪花岗岩、边缘为前寒武纪变质岩，二者抗风化能力的差异被认为是盆地成因，盆地直径约5公里，四周山脊高出盆底500至800米，朝鲜战争期间联合国军因其形似大碗将其称为\"Punchbowl\"（韩国地质资源研究院KIGAM）",
+  source: "海安盆地：江原道杨口郡一处近椭圆形侵蚀盆地，中心为侏罗纪花岗岩、边缘为前寒武纪变质岩，二者抗风化能力的差异被认为是盆地成因（韩国地质资源研究院 KIGAM，核实 2026-09-10）；南北长约10km、东西宽约7km，四周山脊高出盆底约400至800m，因形似大碗而俗称 Punchbowl",
 };
 
 const YONGNEUP_DAEAMSAN: TerrainEntry = {
