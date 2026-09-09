@@ -177,12 +177,6 @@
       "recheckAfter": "2026-12"
     },
     {
-      "key": "travel/limerick/howItWorks",
-      "reason": "爱尔兰 CSO 的城市一级数字只随普查发布，上次 2022-04、**下次 2027-05-09**；年度估计（PME）只到全国与 8 个 NUTS3 区域、不下探到城市。2022 不是落后，是这一级唯一有的一期。",
-      "confirmedOn": "2026-09-09",
-      "recheckAfter": "2027-09"
-    },
-    {
       "key": "travel/linyi/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
