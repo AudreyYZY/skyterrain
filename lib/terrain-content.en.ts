@@ -4362,6 +4362,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "white-cliffs-of-dover": {
+    // seeing sources: 崖高约 110 米、海峡最窄处约 33–34 公里（两者是不同测量点与取整，**不构成矛盾，本轮明确判定不改**）；国民信托管理东肯特约 1000 英亩、含崖顶约 5 英里（白崖全长约 8 英里），「大部分」成立（级别 1）。1875 年首次泳渡英吉利海峡、两次大战期间的隧道用途属广泛记载史实。2026-09-09 核，本轮无需改动。
+    //   https://www.nationaltrust.org.uk/visit/kent/the-white-cliffs-of-dover
     seeing:
       "The White Cliffs of Dover, at the south-eastern corner of England, face the narrowest part of the English Channel — France is only about 34 km away here, and visible on a clear day. The cliff face is a brilliant white, about 110 m high, and because it is the first sight of Britain from a ship or ferry, it has long been one of the country's emblems.",
     formation:
@@ -4377,8 +4379,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jurassic-coast": {
+    // seeing sources: UNESCO 正式名称为 Dorset and East Devon Coast（2001 年列入），Jurassic Coast 是通俗名；长度官方约 96 英里（约 154–155 公里）；三叠—侏罗—白垩由西向东逐渐变年轻、约 1.85 亿年连续记录，均核实一致。级别 1/2，2026-09-09 核。
+    //   https://unesco.org.uk/our-network/world-heritage-sites/dorset-and-east-devon-coast-the-jurassic-coast
     seeing:
-      "The Jurassic Coast is a roughly 155 km stretch of coast in southern England, between Devon and Dorset, inscribed as a World Heritage Site in 2001. Walking it is like turning the pages of a geology book: from west to east the cliff rocks are in turn Triassic, Jurassic and Cretaceous, recording about 185 million years of Earth history in unbroken sequence, and it is rich in ammonite and other fossils.",
+      "The Jurassic Coast is a roughly 155 km stretch of coast in southern England, between Devon and Dorset, inscribed as a World Heritage Site in 2001 under its official name, the Dorset and East Devon Coast. Walking it is like turning the pages of a geology book: from west to east the cliff rocks are in turn Triassic, Jurassic and Cretaceous, recording about 185 million years of Earth history in unbroken sequence, and it is rich in ammonite and other fossils.",
     formation:
       "The strata of this coast were originally laid down roughly horizontally, layer by layer, in the seas, estuaries and deserts of different ages. The whole succession was later tilted gently to the east, so the coastline cuts across progressively younger rock from west to east. Rocks of different hardness erode differently — waves have hollowed the soft mudstones into bays and left the hard limestones as headlands, shaping features such as Lulworth Cove (an almost enclosed round bay), Durdle Door (a limestone sea arch) and Chesil Beach (a shingle barrier 29 km long).",
     observation:
@@ -4392,8 +4396,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "giants-causeway": {
+    // seeing sources: UNESCO 正式名称 Giant's Causeway and Causeway Coast，1986 年列入（级别 1）。
+    //   https://unesco.org.uk/our-network/world-heritage-sites/giants-causeway-and-causeway-coast
+    //   约四万根玄武岩柱、约 6000 万年前北大西洋张裂期、1693 年向皇家学会报告、1883 年通电车：均核实一致（3 级交叉印证）。
+    //   **零争议红线本轮专门复核过：通过** —— history 段只写地质史与广泛记载的芬恩·麦库尔传说、科学史，未触及任何现代政治 / 族群议题。2026-09-09 核。
     seeing:
-      "The Giant's Causeway, on the north coast of Northern Ireland, is about 40,000 tightly packed polygonal basalt columns, most of them six-sided, running from the cliff foot out into the sea like a giant stone staircase. It became Northern Ireland's first World Heritage Site in 1986. Local legend has it that the causeway was built by the giant Finn McCool for a fight across the sea.",
+      "The Giant's Causeway, on the north coast of Northern Ireland, is about 40,000 tightly packed polygonal basalt columns, most of them six-sided, running from the cliff foot out into the sea like a giant stone staircase. It and the coast around it were inscribed in 1986 as the Giant's Causeway and Causeway Coast, Northern Ireland's first World Heritage Site. Local legend has it that the causeway was built by the giant Finn McCool for a fight across the sea.",
     formation:
       "About 60 million years ago, as the North Atlantic was rifting, there were large fissure eruptions of flood basalt around Antrim (part of the North Atlantic Igneous Province, contemporaneous with Iceland and western Scotland). One thick lava flow cooled and contracted slowly and evenly at the surface, and, like drying mud cracks, produced regular tension fractures inward from the cooling surface, splitting the whole layer into near-vertical columns — the slower and more even the cooling, the more regular the columns.",
     observation:
@@ -4407,6 +4415,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "seven-sisters": {
+    // seeing sources: 南唐斯 2010 年由 AONB 升格为国家公园，现行官方称谓即 National Park（3 级交叉印证）。**注意：这一条不适用同批高尔半岛的「AONB → National Landscape」改名** —— 南唐斯早已不是 AONB。2026-09-09 核，本轮无需改动。
     seeing:
       "The Seven Sisters, on the south coast of England at the eastern end of the South Downs, are a stretch of undeveloped, undulating chalk sea cliff, one cliff top rising and falling after another (there are more than seven if you count). To the west is the mouth of the Cuckmere — a rare natural river mouth on England's south coast with no engineering and no harbour. This stretch often stands in for the more famous White Cliffs of Dover in films.",
     formation:
@@ -4422,6 +4431,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cornwall-coast": {
+    // seeing sources: 康沃尼岩基约 2.8 亿年前侵位；UNESCO「Cornwall and West Devon Mining Landscape」2006-07-13 列入，正式名与正文一致（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1215/
     seeing:
       "The Cornwall coast, at the south-western tip of the island of Great Britain, has sea on three sides, and is known for its high granite and slate cliffs, hidden sandy coves, and the disused mine chimneys scattered along the cliff tops. Land's End, at the far west, is the westernmost point of mainland Britain. This is also one of the sunniest and earliest-spring parts of Britain.",
     formation:
@@ -4437,6 +4448,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pembrokeshire-coast": {
+    // seeing sources: 「英国唯一以海岸景观为主设立的国家公园」、1952 年设立、海岸步道现行官方长度 186 英里：均核实无误（级别 1）；威尔士语官方并列名 Parc Cenedlaethol Arfordir Penfro 属实。2026-09-09 核，本轮无需改动。
+    //   https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/
     seeing:
       "The Pembrokeshire Coast, at the south-western corner of Wales, is the only national park in Britain designated mainly to protect a coastline. Its coast changes enormously over short distances: steep limestone cliffs, black volcanic-rock headlands, drowned-valley inlets reaching far inland, raised ancient beaches, and a string of offshore islands. St Davids is the smallest \"city\" in Britain.",
     formation:
@@ -4452,8 +4465,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gower-peninsula": {
+    // seeing sources: 现行官方名：**2023 年 11 月起，英格兰与威尔士的 AONB 统一改称 National Landscape**，高尔现为 Gower National Landscape；1956-05-09 是英国第一个 AONB 这一史实不变。级别 1，2026-09-09 核。
+    //   https://national-landscapes.org.uk/national-landscapes/gower
+    //   **这是本国这一轮的第二类改名**（第一类是 Eryri / Bannau Brycheiniog，见 known-errors B1-b）：一个**分类名**的改名会一次影响多个条目，比单个地名改名更容易漏 —— 下一轮要把全库的「杰出自然风景区 / AONB」搜一遍。
+    //   帕维兰洞 1823 年出土「帕维兰红衣女士」（实为约 33,000 年前的男性遗骸，西欧已知最早的仪式性墓葬之一）核实无误（2 级）。
     seeing:
-      "The Gower Peninsula (Welsh: Y Gŵyr), reaching into the Bristol Channel west of Swansea, is a small peninsula only about twenty kilometres long, but in 1956 it became the first formally designated \"Area of Outstanding Natural Beauty\" in the whole of Britain. It packs limestone sea cliffs, an Old Red Sandstone ridge, large sandy bays and dunes, and salt marsh into a very small area.",
+      "The Gower Peninsula (Welsh: Y Gŵyr), reaching into the Bristol Channel west of Swansea, is a small peninsula only about twenty kilometres long, but in 1956 it became the first formally designated Area of Outstanding Natural Beauty in the whole of Britain — a designation renamed National Landscape in November 2023, so it is now the Gower National Landscape. It packs limestone sea cliffs, an Old Red Sandstone ridge, large sandy bays and dunes, and salt marsh into a very small area.",
     formation:
       "Gower's rocks are mostly Carboniferous limestone, folded into a series of east-west anticlines and synclines. The limestone sea cliffs have caves, arches and stacks (such as Worm's Head). The central spine of the peninsula, Cefn Bryn, is made of more erosion-resistant Old Red Sandstone and stands a little above its surroundings. Rhossili Bay at the western end is a continuous sandy beach about five kilometres long, backed by large wind-blown dunes.",
     observation:
@@ -4477,11 +4494,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cheddar Gorge is different from an ordinary gorge cut by a river over a long time: it was carved fast by surface water under the special conditions of the ice ages (permafrost temporarily making the limestone impermeable), and now has no surface river. Compared with the glacially widened valleys of the Yorkshire Dales, Cheddar Gorge is narrow, deep and winding — the form of direct fluvial downcutting.",
     concept:
       "Cheddar Gorge is a case study in a surface river on limestone during a permafrost period: limestone is normally permeable and dry at the surface; but under permafrost the fractures are sealed with ice, water cannot seep away and can only flow and erode strongly on the surface. So a dry valley in some limestone areas is evidence of \"a surface river in the past, none now\". A common misconception is that a limestone dry valley never had a river.",
+    // history sources: 切达人年代：英国自然历史博物馆现行口径约 1 万年前（校准年代约 10,564–9,915 cal BP）；原文的「约 9000 年前」是早年未校准放射性碳年代的旧说法，已更新。级别 1，2026-09-09 核。
+    //   https://www.nhm.ac.uk/discover/cheddar-man-mesolithic-britain-blue-eyed-boy.html
+    //   **这一条是「数字本身没写错、只是背后的方法换了一代」** —— 校准与未校准的放射性碳年代差了一千年，靠年份格式看不出来。
+    //   峡谷崖高：文中「约 135 米」与常引的 137 米（449 英尺）落在取整范围内，不构成矛盾，不改。
     history:
-      "Cheddar Gorge's Gough's Cave yielded \"Cheddar Man\" in 1903 — a complete human skeleton about 9,000 years old, the oldest near-complete human remains known in Britain, whose mitochondrial DNA has been widely studied. The gorge's caves have been a paid tourist attraction since the 19th century.",
+      "Cheddar Gorge's Gough's Cave yielded \"Cheddar Man\" in 1903 — a complete human skeleton about 10,000 years old, the oldest near-complete human remains known in Britain, whose mitochondrial DNA has been widely studied. The gorge's caves have been a paid tourist attraction since the 19th century.",
   },
 
   "great-glen": {
+    // seeing sources: 大峡谷断层：**走滑断层**（左行，约 100 公里位移），BGS Earthwise 口径（级别 1）—— 正文没有写成一般裂谷，正确。尼斯湖按体积为英国最大淡水体（苏格兰环境署，级别 1），与洛蒙德湖「按面积最大」是两个口径、并存不矛盾。喀里多尼亚运河 1822 年首航、托马斯·特尔福德设计（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://earthwise.bgs.ac.uk/index.php/Faulting_and_seismicity,_Grampian_Highlands
     seeing:
       "The Great Glen (Scottish Gaelic: Glen Mòr) is a dead-straight valley slicing diagonally across the Scottish Highlands, from Fort William in the south-west to Inverness in the north-east, dividing the Highlands in two. A run of deep, narrow lochs lies end to end along it, of which Loch Ness is the most famous — by volume it is the largest freshwater body in Britain. The Caledonian Canal links these lochs into a navigable waterway.",
     formation:
@@ -4497,6 +4520,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "loch-lomond": {
+    // seeing sources: 洛蒙德湖约 71 平方公里、大不列颠岛面积最大的淡水湖（NatureScot，级别 1）。**范围限定是关键**：正文写「大不列颠岛」（不含北爱尔兰），与内伊湖条目的「英国与不列颠群岛面积最大」并存不矛盾 —— 这正是排名断言必须写口径的例子。2002 年成为苏格兰第一个国家公园属实。2026-09-09 核，本轮无需改动。
     seeing:
       "Loch Lomond, not far north-west of Glasgow, is the largest lake by surface area in Great Britain. Its distinctive feature is being \"one loch across two worlds\": the northern half is boxed into the Scottish Highlands, narrow and deep with steep mountains on both sides; the southern half enters the Lowlands, the loch suddenly widening, shallow, dotted with dozens of small islands. \"The bonnie banks of Loch Lomond\" is a famous Scottish song.",
     formation:
@@ -4512,16 +4536,24 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lough-neagh": {
+    // seeing sources: 面积：DAERA 官方 383 平方公里；平均水深 8.9 米。级别 1，2026-09-09 核。各来源在 383–396 平方公里之间分散（测量口径与水位不同），**有官方一手数时以官方为准**。
+    //   https://www.daera-ni.gov.uk/publications/lough-neagh-catchment-map
+    //   「英国与不列颠群岛面积最大的湖」这个排名成立，与洛蒙德湖条目的「大不列颠岛面积最大」不冲突 —— 两者范围不同（不列颠群岛含北爱尔兰，大不列颠岛不含），各自成立。
+    //   鳗鱼渔业为欧洲最大的野生鳗鱼渔场之一（AFBINI 官方，级别 1）、六郡中五郡汇入、班恩河为唯一出水口：均核实无误。
     seeing:
-      "Lough Neagh, in the centre of Northern Ireland, is about 392 km² in area — the largest lake by area in the UK and in the whole of the British Isles. But it is very shallow, only about 9 m deep on average, and you cannot see the far shore from any bank. Rivers from five of Northern Ireland's six counties eventually flow into this lake, which is drained by the River Bann to the north.",
+      "Lough Neagh, in the centre of Northern Ireland, is about 383 km² in area on the Northern Ireland environment department's figure — the largest lake by area in the UK and in the whole of the British Isles. But it is very shallow, only about 9 m deep on average, and you cannot see the far shore from any bank. Rivers from five of Northern Ireland's six counties eventually flow into this lake, which is drained by the River Bann to the north.",
+    // formation sources: 盆地成因：**英国地质调查局把内伊湖盆地定性为受断层控制的构造洼地**（沿东北—西南走向的一组断层），学术文献另有「与北大西洋张裂相关的拉分盆地」的定性。原文的「玄武岩重量压弯地壳」不是主流框架。级别 1，2026-09-09 核。
+    //   https://earthwise.bgs.ac.uk/index.php/Post-Variscan_deformation_and_basin_formation,_Northern_Ireland
+    //   https://www.lyellcollection.org/doi/abs/10.1144/sjg42020101
+    //   **这一条是这两轮地形核实里唯一一处「因果解释错了」而不是「数字错了」**：像「这个湖是怎么来的」这类机制性叙述，比数字更容易被简化到失真，而且**没有任何脚本能看出来**。
     formation:
-      "Lough Neagh sits in a large structural basin. About 60 million years ago thick flood basalt was erupted around Antrim (the same lavas that form the Giant's Causeway); the weight of this lava on the crust, together with regional downwarping, made the central area subside slowly into a saucer-shaped basin. Water gathered in the basin to form this large, shallow lake.",
+      "Lough Neagh sits in a large structural basin. About 60 million years ago thick flood basalt was erupted around Antrim (the same lavas that form the Giant's Causeway); under regional extension the crust subsided slowly as a whole along a set of north-east–south-west trending faults, forming a saucer-shaped basin (British Geological Survey); the weight of the overlying lava was a contributing factor, not the main cause. Water gathered in the basin to form this large, shallow lake.",
     observation:
       "From the air Lough Neagh is a near-circular large body of water with a smooth outline right in the middle of Northern Ireland, surrounded by low flat farmland and a few small towns, with rivers flowing in from all sides. The shores are mostly reed and wet grassland, with no cliffs. Off the south-western shore you can see large areas of active lake-sand extraction.",
     distinguish:
       "Lough Neagh and Loch Lomond in Scotland are both large, but completely different in origin: Loch Lomond is a deep, long lake gouged by a glacier along a fault; Lough Neagh is a saucer-shaped shallow basin lake formed by large-scale crustal subsidence — round, shallow and flat. It is more like Lake Chad in Africa, a \"structural basin filled with water\".",
     concept:
-      "Lough Neagh is a case study in load subsidence: when a thick, heavy mass of material is piled onto the surface in a short time (here, hundreds of metres of basalt), the crust beneath bends down slowly, like a compressed spring cushion, forming a basin. To recognise such a lake, look at whether it is large, round and shallow, with thick volcanic rock or sediment around it and no obvious glacial or fault marks. A common misconception is that a large lake must have been gouged by a glacier.",
+      "Lough Neagh is a case study in fault-controlled basin subsidence: regional extension lets a whole block of crust sag slowly along a set of faults, and the basin fills with water to form a large, shallow lake; the weight of the overlying volcanic rock is a contributing factor, not the main cause (British Geological Survey). To recognise such a lake, look at whether it is large, round and shallow, sitting in a basin bounded by faults, with no obvious glacial gouging or deep-gorge marks. Two misconceptions are common: that a large lake must have been gouged by a glacier, and that the basin was simply pressed down by the weight of the lava.",
     history:
       "Lough Neagh's eel fishery has continued for centuries and is one of the largest wild-eel fisheries in Europe, long run by a co-operative of local fishers. In Irish legend the lake is the hole left when the giant Finn McCool tore up a lump of earth to throw at a rival (the lump landing in the sea to form the Isle of Man). Large-scale sand extraction from the lake has drawn environmental controversy in recent years.",
   },
@@ -4589,8 +4621,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "isle-of-skye": {
     seeing:
       "The Isle of Skye, in north-west Scotland, is the largest island of the Inner Hebrides, known for extremely rugged mountains and changeable weather (the name may relate to \"cloud\" or \"mist\" in Old Norse). The island has two groups of mountains of completely opposite character: the Black Cuillin, a ring of sharp, dark, near-vertical rock peaks; and the Red Cuillin, a set of rounded pink hills.",
+    // formation sources: 特罗特尼什滑坡：伦敦地质学会（Geological Society）的口径是「不列颠群岛面积最大的连片滑坡地形」，约 40 平方公里 —— **按面积、范围是不列颠群岛**。原文写的「英国最长」既换了量纲又换了范围，查不到对应口径。级别 1，2026-09-09 核。
+    //   https://www.geolsoc.org.uk/science-and-policy/historical-scientific-importance/trotternish/
+    //   **核实方对「最长」报的是 unknown（查无支撑、也无反证）**，本轮没有停在 unknown，而是改用一级来源自己的措辞 —— 这与「拿不准就记 unknown」不冲突：unknown 指的是不许自己编一个替代说法，用来源原话不算编。
+    //   约 5800 万年前（学界给库林岩浆中心约 60–57 Ma）、黑库林辉长岩 / 红库林花岗岩的岩性区分：均核实无误。
     formation:
-      "About 58 million years ago, during the rifting of the North Atlantic, there was a large magma chamber beneath Skye. The gabbro (a dark, coarse-grained, very hard rock) that crystallised earlier and deeper in the chamber was later uplifted and exposed, and glaciers cut it into sharp peaks and deep valleys — the Black Cuillin; the later, more acidic part of the chamber crystallised as granite, which weathers differently and was worn into the rounded Red Cuillin. The north of the island is a large basalt lava plateau, and on the Trotternish peninsula the basalt cap sits on weak Jurassic mudstone and has slid slowly down the dip as a whole, forming the longest landslip landscape in Britain (the Old Man of Storr, the Quiraing and other strange features are on the landslip).",
+      "About 58 million years ago, during the rifting of the North Atlantic, there was a large magma chamber beneath Skye. The gabbro (a dark, coarse-grained, very hard rock) that crystallised earlier and deeper in the chamber was later uplifted and exposed, and glaciers cut it into sharp peaks and deep valleys — the Black Cuillin; the later, more acidic part of the chamber crystallised as granite, which weathers differently and was worn into the rounded Red Cuillin. The north of the island is a large basalt lava plateau, and on the Trotternish peninsula the basalt cap sits on weak Jurassic mudstone and has slid slowly down the dip as a whole, forming the largest continuous area of landslide terrain in the British Isles — about 40 km² on the Geological Society's figure (the Old Man of Storr, the Quiraing and other strange features are on the landslip).",
     observation:
       "From the air the Isle of Skye has an extremely broken outline, with several long deep sea inlets cutting it into peninsulas. In the south-centre is the ring of jagged dark rock walls of the Black Cuillin around a glacial valley, with the rounded Red Cuillin hills beside it. The north is tiered green basalt plateau, and on the east side of the Trotternish ridge in the north-east is an area of collapsed, jumbled rock blocks and isolated pinnacles.",
     distinguish:
@@ -4865,8 +4901,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Jökulsárlón and the proglacial lake at the snout of the Tasman Glacier in New Zealand are the same kind of \"proglacial lake\", both formed by meltwater filling an over-deepened trough after the glacier retreated. The difference is that Jökulsárlón connects directly to the sea, with tides and seals, and its icebergs can drift all the way out to sea.",
     concept:
       "Jökulsárlón is a case study in a proglacial lake accelerating glacier retreat: when a glacier snout retreats into a trough below the sea or lake surface, water ponds in front of it; the lake water (especially warmer water that can circulate) constantly undercuts the snout and buoys it up, making it more likely to break off, so the glacier retreats faster than it would on land alone. To recognise this positive feedback, look at whether the glacier snout is \"soaking\" in a lake of its own meltwater. A common misconception is that a lake makes a glacier \"more stable\".",
+    // history sources: 深度 248 米：冰岛国家自然历史研究所（natt.is，级别 1），与阿斯基亚条目本轮已改好的口径一致。**注意一处来源冲突**：英文维基引 2009 年 Morgunblaðið 报道称 284 米，与官方的 248 米差 36 米 —— 这不是取整误差，是两个来源互相矛盾；有一级来源时以一级为准，本轮维持 248。
+    //   https://www.natt.is/en/geology/water/lakes
+    //   面积：**没有查到冰岛官方带年份的数字**，二三级来源在 18–27 平方公里之间分歧，正文已改成区间 + 「还在变大」，不假装精确（known-errors C6-j）。1933/1934 年成湖时间与官方一致。2026-09-09 核。
     history:
-      "Jökulsárlón went from nothing to its present size in only a few decades — one of the most vivid records of rapid glacier retreat in Iceland. Around 1934 the site was still largely land; today the lake covers about 25 km². Its distinctive scenery has made it a filming location for several films. In recent years Iceland has been debating how to protect the section of coast road leading to the lagoon — the waves are steadily eroding the road base along the outlet.",
+      "Jökulsárlón went from nothing to its present size in only a few decades — one of the most vivid records of rapid glacier retreat in Iceland. Around 1934 the site was still largely land; today the lake keeps growing — different-year surveys put it at roughly 20 to 25 km², and it expands further as Breiðamerkurjökull retreats. Its distinctive scenery has made it a filming location for several films. In recent years Iceland has been debating how to protect the section of coast road leading to the lagoon — the waves are steadily eroding the road base along the outlet.",
   },
 
   "laki": {
@@ -4880,11 +4919,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Laki, like Hekla and Fagradalsfjall, is a fissure eruption, but the scale, duration and gas output of this one far exceeded any eruption of modern Iceland; it is closer to a small-scale re-run of an ancient large \"flood basalt\" event. Compared with the explosive Eyjafjallajökull, Laki erupted lava and gas, with almost no far-travelling fine ash.",
     concept:
       "Laki is a case study in the lethality of volcanic gas: even if a lava eruption is far from people and the lava itself does not reach the villages, the sulphur dioxide it releases (forming acid haze that damages lungs and plants) and the fluorine (concentrating on the grass and causing fluorosis in livestock) can bring about widespread agricultural collapse and famine. To assess this kind of risk, look at whether the eruption is long-lasting, basaltic and high in gas output. A common misconception is to focus only on lava and ash and ignore the gas.",
+    // history sources: 牲畜损失按畜种：牛约 50%、马约 75–76%、羊约 76–79%（可追溯至 Thordarson & Self 2003, JGR）；人口损失约 19%（1783 年初 49,609 → 1786 年初 40,381），2024 年 NHESS 同行评审论文，级别 1，2026-09-09 核。**原文的「约一半的牲畜」是把三个差别很大的数合成了一个，方向没错但明显低估。**
+    //   https://nhess.copernicus.org/articles/24/2971/2024/
+    //   熔岩量 14.7±1.0 至 15.1 立方公里、裂隙长约 25 公里、约 130 个火山口：多方学术来源交叉确认，正文的「14—15 立方公里」落在区间内，不改。
     history:
-      "The 1783–84 Laki eruption caused the \"Mist Hardships\" (Móðuharðindin) in Iceland: the poisonous haze and the severe cold that followed killed about half the livestock, and the ensuing famine killed roughly a fifth of Iceland's population — the worst natural disaster in Iceland's history. The sulphur haze from the eruption also caused abnormal weather and crop failures in many parts of the Northern Hemisphere that year. Today Lakagígar is within Vatnajökull National Park, its moss landscape extremely fragile, with access only on marked paths.",
+      "The 1783–84 Laki eruption caused the \"Mist Hardships\" (Móðuharðindin) in Iceland: the poisonous haze and the severe cold that followed killed about half of Iceland's cattle and roughly three-quarters of its horses and sheep, and the ensuing famine killed roughly a fifth of Iceland's population — the worst natural disaster in Iceland's history. The sulphur haze from the eruption also caused abnormal weather and crop failures in many parts of the Northern Hemisphere that year. Today Lakagígar is within Vatnajökull National Park, its moss landscape extremely fragile, with access only on marked paths.",
   },
 
   "gullfoss": {
+    // seeing sources: 两级落差 11 米 + 21 米（多方一致，3 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Gullfoss (\"golden falls\"), in south-western Iceland, is one of the three big stops of the \"Golden Circle\" day trip. Here the Hvítá river first drops a step of about 11 m, then turns at a right angle and drops about 21 m more, plunging into a narrow steep gorge in a cloud of spray, with rainbows common on sunny days. The \"golden\" of the name refers to the yellow-brown tone the turbid glacial water takes in sunlight.",
     formation:
@@ -4900,6 +4943,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dettifoss": {
+    // seeing sources: 宽约 100 米、落差 44–45 米、平均流量 193 立方米每秒；瓦特纳冰原国家公园官方称其为「欧洲最强劲的瀑布」（级别 1）。**正文的「常被列为欧洲水流最强劲的瀑布之一」比官方原话更保守，本轮判定不改** —— 保守的限定语不需要为了贴近官方而放宽。2026-09-09 核。
+    //   https://www.vatnajokulsthjodgardur.is/en/areas/jokulsargljufur/dettifoss
     seeing:
       "Dettifoss, in north-eastern Iceland on the Jökulsá á Fjöllum river, is about 100 m wide with a drop of about 44 m. By average flow it is the largest waterfall in Iceland, and it is often listed as one of the most powerful in Europe. Its water comes from the Vatnajökull ice cap, carrying large amounts of fine glacial silt, so it is grey-white, and its roar and the spray it throws up can be felt kilometres away.",
     formation:
@@ -4915,6 +4960,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jokulsargljufur": {
+    // seeing sources: 峡谷长约 25 公里、深达约 100 米；阿斯比吉长约 3.5 公里、三面百米绝壁（多方交叉确认，3 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Jökulsárgljúfur (\"canyon of the glacial river\"), in north-eastern Iceland, is a large canyon cut by the Jökulsá á Fjöllum river, about 25 km long and up to about 100 m deep. At the northern end is a place called Ásbyrgi, which is especially strange: a horseshoe-shaped hollow about 3.5 km long, walled on three sides by 100 m cliffs, its floor covered in birch woodland — as if a bite had been taken out of the plateau.",
     formation:
@@ -4930,6 +4976,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "skogafoss": {
+    // seeing sources: 高 60 米、宽 25 米（多方一致，3 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Skógafoss, on Iceland's south coast, is where the Skógá river drops straight over a cliff about 60 m high and 25 m wide, with a big flow and heavy spray, and there is almost always a rainbow (sometimes a double) on sunny days. What makes it special is not the waterfall itself but the cliff — it is the former coastline.",
     formation:
@@ -4945,6 +4992,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "haukadalur-geysir": {
+    // seeing sources: 大盖歇尔（Geysir 本体）自 2000 年地震后基本休眠；斯特罗库尔每 5–10 分钟一次、高 15–20 米（多方一致，3 级）。**这两者常被混为一谈，正文分得很清楚，本轮专门复核过。** 2026-09-09 核，无需改动。
     seeing:
       "Haukadalur is a small geothermally active valley in south-western Iceland, one of the \"Golden Circle\" attractions. In the valley is the \"Great Geysir\" — the English word \"geyser\" comes from its name (from the Old Norse geysa, \"to gush\"). The Great Geysir is now largely dormant, occasionally active after earthquakes; the one that actually erupts regularly, every 5 to 10 minutes, sending a column of water 15–20 m up, is a spring beside it called Strokkur (\"the churn\").",
     formation:
@@ -4960,6 +5008,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "krafla": {
+    // seeing sources: 克拉夫拉之火 1975–1984 共九幕、伴 20 次岩墙侵入；维提火口 1724-05-17 蒸汽爆炸形成；米湖之火 1724–1729（学术文献交叉确认，级别 1–2）。2026-09-09 核，本轮无需改动。
     seeing:
       "Krafla, in north-eastern Iceland east of Lake Mývatn, is a caldera about 10 km across with a fissure swarm running through it. It is not high and its outline is not obvious, but it is very famous in geology: from 1975 to 1984 a sequence of nine \"rifting-eruption\" episodes happened here (the \"Krafla Fires\"), the ground pulling apart along the fissure swarm a total of several metres — a classic place to observe \"plates in the act of separating\".",
     formation:
@@ -4975,8 +5024,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "myvatn": {
+    // seeing sources: 鸭 / 水鸟：冰岛环境署官方原话是「more species of duck are said to live there than in any other place on Earth」——**对象是鸭不是水鸟、范围是全世界不是欧洲、语气是「据说」不是断言**。原文三处都改动了，已按官方原话还原。级别 1，2026-09-09 核。
+    //   https://ust.is/english/visiting-iceland/protected-areas/myvatn-and-laxa/about-myvatn/
+    //   **这一条的形状值得记**：不是把数字写错，而是把一句**带保留的、窄口径的**官方表述，改写成了一句**断言式的、宽口径的**话 —— 每一步都只放宽一点点，合起来就成了另一个说法。
+    //   平均水深 2.5 米、面积约 37 平方公里（同一官方页，级别 1）；硅藻土开采 1964–2004 年、1974 年《米湖-拉克斯河保护法》（2004 年被新法取代）核实无误。
     seeing:
-      "Mývatn (Icelandic for \"midge lake\"), in north-eastern Iceland, is a shallow, nutrient-rich lake only about 2.5 m deep on average. Around it is a concentrated museum of volcanic landforms: a cluster of small cones (\"pseudocraters\") on the shore, a maze of black lava nearby, a tuff ring, and steaming geothermal areas. The \"midge\" of the name refers to the clouds of non-biting midges that swarm out of the lake in summer — and it is these insects that feed the most species-rich community of waterbirds in Europe.",
+      "Mývatn (Icelandic for \"midge lake\"), in north-eastern Iceland, is a shallow, nutrient-rich lake only about 2.5 m deep on average. Around it is a concentrated museum of volcanic landforms: a cluster of small cones (\"pseudocraters\") on the shore, a maze of black lava nearby, a tuff ring, and steaming geothermal areas. The \"midge\" of the name refers to the clouds of non-biting midges that swarm out of the lake in summer — and it is these insects that feed the ducks here — the Icelandic Environment Agency says more species of duck are said to live here than anywhere else on Earth.",
     formation:
       "Today's Mývatn formed about 2,300 years ago: a large basaltic lava flow came from the east and dammed the valley of the Laxá river, and the water ponded behind the lava barrier into a lake. As the scorching lava flowed over the lake bed and the surrounding wetland, it instantly vaporised the water in the ground and mud, and the steam blasted the lava above it apart into a cluster of small cones with no magma conduit — these are \"pseudocraters\" (rootless cones), and the group at Skútustaðir on the lake shore is the classic example.",
     observation:
@@ -5000,11 +5053,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Reykjanes Peninsula, Þingvellir and Krafla are all on the Mid-Atlantic Ridge: Þingvellir is a large graben, Krafla is the site of a single rifting episode, and Reykjanes is a whole corridor of \"the mid-ocean ridge come ashore\", where you can follow the ridge and see fissures, geothermal areas and shield volcanoes in sequence. The \"Bridge Between Continents\" footbridge on the peninsula spans a sand-filled fissure, symbolising the two plates.",
     concept:
       "The Reykjanes Peninsula is a case study in a mid-ocean ridge: the great majority of the world's mid-ocean ridges are two or three kilometres down on the sea floor and cannot be seen; only where a mantle hotspot is superimposed on a ridge, as in Iceland, pushing the sea floor above the surface, can you observe the ridge's rift, parallel fissures, ridge-parallel volcanoes and geothermal areas directly on land. A common misconception is that a \"plate boundary\" is an abstract line on a map — here it is real fissures under your feet, still opening.",
+    // history sources: 喷发序列：法格拉达尔本体 2021 / 2022 / 2023 各一次；2023-12 起中心转到桑德努库尔火山口列，至 2025 年 7–8 月已喷发至少九次（2023-12 / 2024-01 / 02 / 03 / 05 / 08 / 11 / 2025-04 / 2025-07–08）。截至 2026-09-09 无正在进行的喷发，IMO 监测到斯瓦特森伊下方岩浆持续积累。级别 1（IMO 公告）+ 3 级日期清单交叉印证，2026-09-09 核。
+    //   https://en.vedur.is/about-imo/news/ground-uplift-and-magma-accumulation-continue-beneath-svartsengi
+    //   **与本国 fagradalsfjall 条目的同一段历史已对齐**（那条上一批刚改过）—— 两个条目讲同一串喷发，改一处必须搜另一处。
+    //   ⚠️ 会过期（C6-j）：**每一轮都要回来刷新**，警戒等级一律不写死、只写「以 IMO 最新公布为准」。板块分离速率约 2 厘米/年（学界 1.8–2.5 区间）核实无误。
     history:
-      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). From 2020 large numbers of earthquakes and magma movement began beneath the peninsula, and there have been repeated eruptions since 2021 around Fagradalsfjall and near the town of Grindavík; magma intrusion in late 2023 cracked the ground in Grindavík and the residents were evacuated, and Iceland built barrier walls to protect the town and the Svartsengi power plant. In 2015 it was designated a UNESCO Global Geopark.",
+      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). From 2020 large numbers of earthquakes and magma movement began beneath the peninsula, with Fagradalsfjall erupting once each in 2021, 2022 and 2023; a magma intrusion in November 2023 cracked the ground in the town of Grindavík and the residents were evacuated, and Iceland built barrier walls to protect the town and the Svartsengi geothermal power plant. Activity then shifted to the nearby Sundhnúkur crater row, which erupted at least nine times between December 2023 and August 2025; as of the latest check no eruption was under way, though the Icelandic Met Office was still recording magma accumulating beneath Svartsengi, with hazard levels to be taken from its latest bulletin. In 2015 it was designated a UNESCO Global Geopark.",
   },
 
   "reynisfjara": {
+    // seeing sources: 自 2013 年起 6 人因疯狗浪死亡（最近一起 2025-08）、现场有三级警示灯系统（多方交叉确认，3 级；未取得 SafeTravel.is 可直接引用的原文数字）。**正文的「数起」与 6 起吻合，措辞既未渲染也未淡化，本轮判定不改。** 2026-09-09 核。
     seeing:
       "Reynisfjara, on Iceland's south coast near the town of Vík, is a beach of pure black sand, backed by a cliff of neat hexagonal basalt columns, with black rock stacks (Reynisdrangar) standing offshore. Nearby, Dyrhólaey is a promontory about 120 m high with a large natural sea arch — big enough for a small boat (and, in calm weather, even a small plane) to pass through. This is the southernmost point of mainland Iceland.",
     formation:
@@ -5020,6 +5078,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "latrabjarg": {
+    // seeing sources: 崖长约 14 公里、最高约 440 米；「欧洲最大的海鸟崖之一」是广泛引用的说法，**没有冰岛官方的量化排名可查，正文已带「之一」限定，本轮判定可以接受、不改**；岩层年代各文献在 10–16 百万年之间取值（常见 12–15），正文的 15–10 百万年落在其中，不构成矛盾。2026-09-09 核。
     seeing:
       "Látrabjarg, in the Westfjords region of north-western Iceland, is a sea cliff about 14 km long and up to about 440 m high — one of the largest bird cliffs in Europe. In summer, millions of seabirds — Atlantic puffin, razorbill, common guillemot, northern fulmar and others — crowd every ledge of the cliff to nest, an overwhelming sight and sound. Bjargtangar, at the cliff's western end, is the westernmost point of Iceland.",
     formation:
@@ -5039,8 +5098,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Vestmannaeyjar lies about 10–30 km off Iceland's south coast, a group of a dozen or so volcanic islands and skerries, all formed by volcanic eruption and all young. Two of the islands are especially famous: Surtsey rose from the sea in an eruption between 1963 and 1967, and has since been strictly protected, with only scientists allowed to land, to study how life (plants, insects, seabirds) colonises brand-new land step by step; Heimaey, the only permanently inhabited island, had the sudden Eldfell eruption in 1973.",
     formation:
       "Vestmannaeyjar sits on a seaward extension of Iceland's southern volcanic zone, and the whole group is the product of a young submarine volcanic system less than about 12,000 years old. When magma erupts into shallow water on the sea floor, it explodes violently on contact with water, piling ash and debris into an island (Surtsey formed this way, as a \"phreatomagmatic\" volcanic island); later, quieter lava \"welds\" the island together into something firmer and more erosion-resistant.",
+    // observation sources: 1973 年海迈岛喷发：约 5300 名居民当晚全部撤离、埋掉约 400 栋建筑（美国地质调查局官方，级别 1）；火山系统年龄不到 1.2 万年（史密森尼全球火山活动计划，级别 1）。
+    //   https://pubs.usgs.gov/gip/heimaey/heimaey.pdf
+    //   https://volcano.si.edu/volcano.cfm?vn=372010
+    //   **「口门收窄了一半」这个比例查无出处**，原始记述只说「变窄但没堵死、港口反而更避风」，已去掉百分比 —— 一个听起来很具体的比例，往往正是没人去查的那一处。
     observation:
-      "From the air Vestmannaeyjar is a cluster of steep green-topped black-cliffed small islands on the deep-blue sea off the south coast, Heimaey the largest, with a natural harbour and a town on it, the town flanked by the black scoria cone (Eldfell) left by the 1973 eruption and by the new lava that narrowed the harbour mouth by half. The relatively bare island alone to the south-west is Surtsey.",
+      "From the air Vestmannaeyjar is a cluster of steep green-topped black-cliffed small islands on the deep-blue sea off the south coast, Heimaey the largest, with a natural harbour and a town on it, the town flanked by the black scoria cone (Eldfell) left by the 1973 eruption and by the new lava that markedly narrowed the harbour mouth, in fact leaving the harbour more sheltered. The relatively bare island alone to the south-west is Surtsey.",
     distinguish:
       "Vestmannaeyjar is a group of \"volcanic islands\", completely different from a \"continental island\" of ancient rock like the Outer Hebrides of Scotland: these islands were erupted from the sea floor and piled up directly in the sea, and are still \"growing\" (Surtsey) or have just \"grown\" (Heimaey).",
     concept:
@@ -5050,6 +5113,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "thjorsa": {
+    // seeing sources: 雷神河约 230 公里（冰岛最长）、菲厄德尔冰川河约 206 公里（第二），冰岛大学科学网（级别 2），**两个条目互相印证、不矛盾**。雷神河大熔岩 8600 年前、巴达本加系统、覆盖约 900 平方公里、全新世最大单次熔岩流（学术交叉确认）。2026-09-09 核，本轮无需改动。
+    //   https://www.visindavefur.is/svar.php?id=2212
     seeing:
       "The Þjórsá is the longest river in Iceland, about 230 km. It is a glacial river, rising on the Hofsjökull ice cap in central Iceland, crossing the highland desert, joining the Hvítá and other rivers in the southern lowland, and finally reaching the sea on Iceland's south coast. Its lower course has a large drop and a steady flow, and it is the most heavily developed river for hydropower in Iceland.",
     formation:
@@ -5065,6 +5130,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jokulsa-a-fjollum": {
+    // seeing sources: 长约 206 公里（冰岛第二长，来源同 thjorsa 条）；霍尔赫劳恩 2014–15 熔岩量 >1 立方公里、覆盖约 84 平方公里，自 1783–84 年拉基以来冰岛最大的溢流喷发（学术文献，级别 1）。**与上一批 grimsvotn 条目改好的表述一致** —— 同一件事在三个条目里出现（grimsvotn / fagradalsfjall / 这里），改一处要搜另两处。2026-09-09 核，本轮无需改动。
+    //   https://www.visindavefur.is/svar.php?id=2212
     seeing:
       "The Jökulsá á Fjöllum (Icelandic for \"glacial river in the mountains\") is the second-longest river in Iceland, about 206 km. It rises at the Dyngjujökull outlet of the Vatnajökull ice cap, runs north through the almost uninhabited volcanic desert of Iceland's interior, drops over Selfoss, Dettifoss, Hafragilsfoss and other large waterfalls in the Jökulsárgljúfur canyon on its lower course, and finally reaches the sea at Öxarfjörður on the north coast.",
     formation:
@@ -5291,6 +5358,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lauterbrunnen-valley": {
+    // seeing sources: 72 条瀑布、施陶河瀑布落差、托尔金 1911 年游历均核实无误；「写进瑞文戴尔」是广泛复述但本人未证实的推断，**正文的「据说」是必要的留白，本轮判定不改**。2026-09-09 核。
     seeing:
       "The Lauterbrunnen Valley, south of Interlaken on the northern edge of the Bernese Alps, is a deep, straight valley walled by near-vertical grey rock hundreds of metres high. It is best known for its waterfalls — about 72 of them, large and small, plunge from the hanging valleys on either side, among them the Staubbach Fall (about 300 m, one of the highest free-falling waterfalls in Europe) and the Trümmelbach Falls, hidden inside the mountain, draining the meltwater of the Eiger, Mönch and Jungfrau glaciers down through a series of falls.",
     formation:
@@ -5306,6 +5374,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhone-valley": {
+    // seeing sources: 雨影气候与 bisses / Suonen 灌溉渠核实无误。第三次罗讷河治理（3e correction du Rhône）**仍处在重新规划阶段**（2024-05 启动修订、计划 2026 年底提交更新方案，联邦审计署对资金保障提出过警示），正文只写「最近一期在扩宽河道、恢复部分自然河滩」这类概括性描述、没有断言完工年份，本轮无需改动。⚠️ **下一轮若要补细节，不能写成「已完成」或给具体完工年份**。2026-09-09 核。
     seeing:
       "The Rhône Valley (in Switzerland this mainly means the stretch within the canton of Valais) is a deep trough the Rhône has cut west from its glacier source, walled by the high Alps on both sides. It is narrow in the upper Goms, then opens into a broad flat floor past Brig, Visp, Sierre and Sion to Martigny, where it turns sharply north (\"the elbow of the Rhône\") and flows into Lake Geneva. The valley slopes are terraced with vineyards — this is Switzerland's largest wine region.",
     formation:
@@ -5321,6 +5390,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "swiss-plateau": {
+    // seeing sources: 长约 300 公里、宽 30–50 公里、海拔 400–600 米、占国土约 30%、人口超三分之二：与瑞士联邦外交部官方页完全一致（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://www.eda.admin.ch/aboutswitzerland/en/home/umwelt/geografie/mittelland.html
     seeing:
       "The Swiss Plateau (German: Mittelland; French: Plateau suisse — \"midland / central plateau\") is a belt of lowland between the Jura Mountains to the north-west and the Alps to the south-east, running from Lake Geneva to Lake Constance, about 300 km long and 30–40 km wide, mostly 400–600 m in altitude. It is only about 30% of Switzerland's area but holds about two-thirds of its population — Zurich, Bern, Lausanne, Geneva and most of the farmland and industry are here.",
     formation:
@@ -5336,6 +5407,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-geneva": {
+    // seeing sources: 面积 580.03 平方公里、最深 309.7 米（3 级）。**跨境表述本轮专门复核：通过** —— 只写两岸各属哪国，不描述边界线走向、不表述主权，符合仓库既定做法。湖泊面积与深度属长期稳定的地形量，不像冰川那样需要逐年监测时点。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Geneva (French: Lac Léman), in south-western Switzerland, is one of the largest lakes in Western Europe, shaped like a crescent moon, about 580 km² in area and up to about 310 m deep. Its southern shore is in France, its northern shore in Switzerland, with Lausanne, Montreux and Geneva strung along the north. The Rhône enters at the east end (carrying grey glacial silt) and leaves at Geneva already clear and green — the lake acts as a huge settling basin.",
     formation:
@@ -5351,6 +5423,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-constance": {
+    // seeing sources: 面积约 536 平方公里（含上湖 + 下湖）。**「主湖区没有正式划定的国界」这句本身就是最中性的写法，本轮专门复核：通过** —— 上湖三国三种理论并存、从未达成一致，正文如实陈述这一状态，既不描述边界线也不表述主权。2 级，2026-09-09 核。
+    //   https://www.tagblatt.ch/ostschweiz/bodensee-sommer-wo-verlaeuft-eigentlich-die-grenze-im-bodensee-es-gibt-drei-theorien-aber-keine-klaren-regeln-ld.2171909
     seeing:
       "Lake Constance (German: Bodensee), in the north-eastern corner of Switzerland, is one of the large lakes of Central Europe, about 536 km² in area. Its shores belong to Switzerland, Germany and Austria, and the main basin (the Obersee) has no formally agreed border on the water — the three countries use the lake according to their own practices. The Rhine enters at the east end and leaves at the west, and along this stretch it barely mixes with the lake water, keeping its upstream green colour.",
     formation:
@@ -5376,11 +5450,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Lucerne and Lake Zurich are both on the edge of the Swiss Plateau, but Lake Zurich is a smooth banana shape; Lake Lucerne reaches deep into the Alps and is cut into a maze by several steep valleys — wilder. Its Urnersee arm, like Norwegian fjords and Milford Sound in New Zealand, is a flooded (here lake-flooded) deep glacial trough.",
     concept:
       "Lake Lucerne is a case study in a multi-basin compound lake: when a mountain area has several glacial valleys of different orientation meeting at one place, each is gouged into a deep basin, with shallower rock sills left between them; once the water level rises, the basins connect through the sills into one large lake, but the lake bed is really a string of separate deep pits. To recognise such a lake, look at whether it is highly irregular in shape, with several deep arms and clear shallow stretches between them. A common misconception is to take a compound lake for one single basin.",
+    // history sources: 湖名 Vierwaldstättersee =「四林州湖」：乌里、施维茨、下瓦尔登（今分上/下瓦尔登两个半州）+ **琉森**（1332 年加入盟约，15 世纪起湖名扩展为「四」）。瑞士历史词典 HLS，级别 1，2026-09-09 核。
+    //   https://hls-dhs-dss.ch/textes/d/D7465.php
+    //   **这一条是同一条目两段之间的完整性缺口，不是事实错误**：seeing 段写「四个林州的湖」、history 段只列了三个，两段各自都对，合起来读却像对不上 —— 与 C6i（两段数字打架）是同一形状，只是这次打架的不是数字而是枚举。
+    //   面积 88.66 平方公里（3 级）；轴心路与圣哥达通道、19 世纪里吉山「山峦皇后」均核实无误。
     history:
-      "The Lake Lucerne area is the \"founding heartland\" of Switzerland — Uri, Schwyz and Unterwalden, the three \"forest cantons\", live around the lake, and the country's name \"Schweiz\" comes from Schwyz. The Axenstrasse road along the lake and the Gotthard route head south from here over the Alps. From the 19th century Lucerne and the lake became one of the earliest international tourist destinations, and the Rigi was nicknamed the \"Queen of the Mountains\".",
+      "The Lake Lucerne area is the \"founding heartland\" of Switzerland — Uri, Schwyz and Unterwalden — the three \"forest cantons\" of the 1291 founding story — lie around the lake, and the country's name \"Schweiz\" comes from Schwyz; Lucerne joined the confederation in 1332, completing the four forest cantons of the lake's German name. The Axenstrasse road along the lake and the Gotthard route head south from here over the Alps. From the 19th century Lucerne and the lake became one of the earliest international tourist destinations, and the Rigi was nicknamed the \"Queen of the Mountains\".",
   },
 
   "lake-zurich": {
+    // seeing sources: 面积 88.66 平方公里（3 级）；黄金海岸 / 银海岸命名法属实。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Zurich (German: Zürichsee), on the Swiss Plateau, is a long, slightly curved, banana-shaped glacial lake about 88 km² in area. The city of Zurich is at its north-western end. Its shores are prosperous towns, vineyards and orchards on gentle slopes — the sunny north-eastern shore is nicknamed the \"Gold Coast\", the other the \"Silver Coast\". Near Rapperswil a causeway called the \"Seedamm\" crosses the lake.",
     formation:
@@ -5396,6 +5475,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-maggiore": {
+    // seeing sources: 瑞士最低点 193 米（2 级官方来源确认）、最深约 370–372 米；因苏布里克线为阿尔卑斯造山带主要缝合带之一，马焦雷 / 卢加诺 / 科莫合称「因苏布里克湖」，冰期前已有深切河谷、冰川再深挖成 U 形槽 —— 与正文机制描述吻合。**跨境表述（大部分在意大利、最北端约五分之一在瑞士）为中性事实陈述，复核通过。** 2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Maggiore is a deep, long lake at the southern foot of the Alps, mostly in Italy, with about the northernmost fifth in the Swiss canton of Ticino, where the towns of Locarno and Ascona sit on the shore. The shore around Ascona is only 193 m above sea level — the lowest point in the whole of Switzerland. Being south of the Alps and moderated by the deep lake, the climate here is mild, and the shores grow palms, camellias and citrus.",
     formation:
@@ -5411,6 +5491,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "creux-du-van": {
+    // seeing sources: 崖高约 160 米、马蹄形弧长约 1.4 公里；1972 年设「凡岩谷与阿勒兹峡谷」自然保护区（更早有 1870 年私人购地、1876 年汝拉俱乐部扩大购地的民间保护，与 1972 年正式建区不矛盾）；1965 年起重引入羱羊（1965–1970 年首批放归 8 雄 6 雌）。2026-09-09 核。
+    //   ⚠️ **成因表述留 unknown、本轮不改**：法语资料提到末次冰期末凹地末端曾有小型冰川、以冻融的机械作用参与塑造崖壁 —— 即冰川参与过，但不是经典的冰斗旋转刨挖。正文「不是冰川冰斗」完全排除冰川角色，与此存在张力；但可查到的都是 3 级转述，**没有一锤定音的一手地质文献，按「拿不准就记 unknown、不要改成另一个没核实的说法」处理**。下一轮找到瑞士地质调查局或大学论文原文后回来复核。
+    //   https://fr-academic.com/dic.nsf/frwiki/466716
     seeing:
       "The Creux du Van (French, roughly \"the hollow of the rock\"), in the Jura Mountains of western Switzerland, is a natural rock amphitheatre: a horseshoe of limestone cliff about 160 m high and 1.4 km long, wrapping around a forested hollow below. The view down from the cliff edge is dramatic, and wild ibex and chamois are often seen on the cliffs and in the hollow.",
     formation:
@@ -5426,6 +5509,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "emmental-hills": {
+    // seeing sources: 纳普夫峰 1408 米（瑞士历史词典 HLS，级别 1）；淘金传统见伯尔尼州官方「活态传统」名录（级别 1）—— 可追溯至罗马时代、14–19 世纪有职业淘金者、今天作为传统延续，与正文完全吻合。2026-09-09 核，本轮无需改动。
+    //   https://hls-dhs-dss.ch/de/articles/008781/
+    //   https://www.lt.bkd.be.ch/de/start/traditionen/goldwaschen.html
     seeing:
       "The Emmental Hills, on the southern edge of the Swiss Plateau east of Bern, are a stretch of green hill country deeply cut by countless small streams, with pasture and big-roofed timber farmhouses on the ridges and streams and villages in the valleys. Its high point, the Napf, is 1,408 m. The Emmental (\"valley of the Emme\") is also the home of the large-holed cheese known abroad as \"Swiss cheese\".",
     formation:
@@ -5441,6 +5527,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aare-river": {
+    // seeing sources: 「完全在瑞士境内最长的河」这个限定语准确。长度：正文 288 公里，联邦环境局（BAFU）数据 292 公里，差约 1.4% —— **属不同测量方法与取点的差异，不构成矛盾，本轮判定不改**（同批伯尔尼纳峰 4048 vs 4049 的处理方式）。汇合处阿勒河约 557 立方米每秒 > 莱茵河约 439，「支流大于干流」核实属实。第一次朱拉水域治理 1868–1891（哈格内克运河改道、布罗耶河与齐尔河渠化、尼道-比伦运河），伯尔尼州官方页（级别 1）。2026-09-09 核，本轮无需改动。
+    //   https://www.bvd.be.ch/de/start/themen/wasser/gewaesserregulierung/juragewaesserkorrektion.html
     seeing:
       "The Aare is the longest river entirely within Switzerland, about 288 km (the Rhine and Rhône are longer but leave the country). It starts at the Aar glaciers in the Bernese Alps, passes through Lake Brienz and Lake Thun, loops almost all the way around the old city of Bern in a meander, then flows past Solothurn and Aarau and finally joins the Rhine. Notably, at the confluence the Aare actually carries more water than the Rhine.",
     formation:
@@ -5456,6 +5544,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "alpine-rhine": {
+    // seeing sources: 1868-09-28 大洪水、1892 年瑞奥第一份跨国治理条约、Rhesi 为第四份国家条约（约 10 亿瑞郎、约 20 年工期、核心是拓宽河道）：联邦环境局公告（级别 1）+ 2 级报道。另有资料提及 1888/1890 年洪水也是促成因素，与 1868 年的记载不矛盾。**跨境「界河」表述复核通过**：只陈述客观地理事实，不涉边界线走向与主权。2026-09-09 核，本轮无需改动。
+    //   https://www.bafu.admin.ch/bafu/de/home/themen/wasser/mitteilungen.msg-id-101064.html
     seeing:
       "The Alpine Rhine is the upper course of the Rhine within Switzerland. It forms from the meeting of the \"Vorderrhein\" and the \"Hinterrhein\" at Reichenau near Chur, then flows north through a straight, broad valley (this reach is the border between Switzerland and Liechtenstein and Austria) and into Lake Constance. The river you see today is dead straight, held between high embankments — the result of large-scale engineering since the 19th century.",
     formation:
@@ -5471,6 +5561,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhine-falls": {
+    // seeing sources: 宽约 150 米、落差约 23 米、平均流量 370–373 立方米每秒（夏季峰值约 600、冬季约 250）。**「按水量和宽度的组合算，欧洲最大的瀑布之一」这个限定本轮专门查过：准确且必要** —— 与冰岛黛提瀑布是两个口径（那边落差更大、单点流量峰值更强），本批冰岛 dettifoss 条目的写法与此互相印证、不打架。两岸城堡 Schloss Laufen / Schlössli Wörth 的存在、位置与功能描述均对（中文「沃尔特城堡」是 Wörth 的转写风格问题，不是事实错误）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Rhine Falls, near Schaffhausen in northern Switzerland, are about 150 m wide with a drop of about 23 m and an average flow of about 370 m³/s. By the combination of flow and width, they are one of the largest waterfalls in Europe. In the middle of the falls stands a rock worn down to a single stack, which visitors can reach by boat and climb. The flow is greatest in the snowmelt season (early summer), and the roar and spray can be felt from far off.",
     formation:
@@ -5486,6 +5577,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aareschlucht": {
+    // seeing sources: 长约 1400 米、最深约 200 米、最窄处约 1 米；1888-04-05 取得开凿特许权、同年开放，1912 年加装夜间照明（官方站，2 级）。**「学界至今仍在讨论细节」这句留白是对的**：实际形成史比正文描述更复杂（基尔谢特岩坎在多个间冰期反复被切出新峡谷又被冰碛填埋，另有 5 条更古老的旧峡谷），正文用免责措辞简化处理是恰当的，不需要展开。2026-09-09 核，本轮无需改动。
+    //   https://aareschlucht.ch/de/Info/aareschlucht/geschichte
     seeing:
       "The Aare Gorge (Aareschlucht), near Meiringen in central Switzerland, is an extremely narrow, deep limestone gorge the Aare cut through a bar of hard rock called the \"Kirchet\" — about 1.4 km long, up to about 200 m deep, and at its narrowest only about 1 m between the walls. A boardwalk hung against the rock wall was built here in 1888, making it one of the first gorges in Switzerland opened to visitors.",
     formation:
@@ -5501,6 +5594,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ruinaulta": {
+    // seeing sources: 长 13–14 公里、深 350–400 米（正文取区间下端）；弗利姆斯滑坡体积学界引用 8–12 立方公里，正文覆盖该范围。年代：**最新地表暴露测年约 9300–9500 年前**，比正文的「大约一万年前」略新，但瑞士旅游局等官方页仍用「10,000 years ago」这个约数 —— 属科普与学术两个精度层级的落差，本轮判定不构成矛盾、不改；**下一轮若要提高精度，可改成「约 9500 年前」**。「瑞士大峡谷」是通俗别称（瑞士旅游局自己也这么用），正式名是罗曼什语 Ruinaulta / 德语 Rheinschlucht，正文没有把它当正式名。2026-09-09 核。
+    //   https://www.myswitzerland.com/en-us/experiences/ruinaulta-switzerlands-grand-canyon/
     seeing:
       "The Ruinaulta (Romansh, roughly \"the high landslide\"), also called the \"Rhine Gorge\" or the \"Swiss Grand Canyon\", is in eastern Switzerland west of Chur. The Vorderrhein has cut a gorge about 13 km long and up to about 350 m deep here, its walls bright white limestone and dolomite, the floor a turquoise river and white gravel bars. The Rhaetian Railway and a footpath run through the gorge; there is no road.",
     formation:
