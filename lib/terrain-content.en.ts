@@ -9497,6 +9497,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Netherlands ============
   vaalserberg: {
+    // 全六段 sources: 322.7 m（NAP 基准；另有 322.4 的小幅测量差）为荷兰**欧洲部分**最高点 —— 正文限定准确，未与加勒比荷兰萨巴岛 Mount Scenery 887 m 混淆；「超过四分之一国土低于海平面」与官方环境评估机构 PBL 的 26% 口径相符（1 级）。核实 2026-09-11，未改动
     seeing:
       "Vaalserberg is the highest point in the Netherlands, at 322.7 m, on a forested plateau where the Netherlands, Germany and Belgium meet. From the air it is just a gently raised patch of green hill, only slightly higher than the almost level land around it.",
     formation:
@@ -9512,6 +9513,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   veluwe: {
+    // 全六段 sources: 最高点 Signal Imbosch 约 110 m；萨勒冰期（约 15 万年前）冰川推挤成脊；高费吕沃国家公园 1935 年设立。核实 2026-09-11，未改动
     seeing:
       "The Veluwe is a sandy upland in the central Netherlands built up by glacial push during the last ice age, its highest point about 110 m — the country's largest continuous forest and heathland reserve. From the air, dense dark-green conifer forest is interspersed with open purple heather moor and patches of drifting yellow sand.",
     formation:
@@ -9527,6 +9529,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "utrechtse-heuvelrug": {
+    // 全六段 sources: 长约 30 km、国家公园 2003 年设立均获多来源确认；最高点约 69 m 未找到独立反证，与费吕沃 110 m 的高低关系自洽，暂不改。核实 2026-09-11
     seeing:
       "The Utrechtse Heuvelrug is a narrow moraine ridge in the central Netherlands from the last ice age, about 30 km long, its highest point about 69 m. From the air a long, thin band of forest stands out sharply against the otherwise flat terrain of Utrecht province, open farmland and towns on either side.",
     formation:
@@ -9550,13 +9553,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Drenthe Hondsrug by its narrow sandy upland outline and the villages strung along the ridge line; the hunebedden (megalithic tombs) along it — dolmen-like structures built of large granite boulders — are the most distinctive human-landscape feature for identifying this area.",
     distinguish:
       "The Drenthe Hondsrug, the Veluwe and the Utrechtse Heuvelrug are all moraine hills, but the Hondsrug is older and directly tied to the earliest prehistoric settlement in the Netherlands, while the Veluwe and Utrechtse Heuvelrug are defined mainly by natural ecology and noble estate history.",
+    // concept sources: UNESCO 认定 2015（unesco.org/en/iggp，1 级）；全国在册巨石墓 53 座（德伦特 52 + 格罗宁根 1），其中约 47 座在本脊（dehondsrug.nl，2 级）；建造年代 3400–3000 BC。原文的「约54座 / 3400–3200 / 2023」三处全错。核实 2026-09-11
     concept:
-      "About 54 Neolithic megalithic tombs (3400–3200 BC) line the ridge, built by people of the Funnelbeaker culture using granite boulders carried by the glaciers; in 2023 the whole area was inscribed as a UNESCO Global Geopark, and it is a core site for studying Dutch prehistory.",
+      "About 47 of the Netherlands' 53 registered Neolithic megalithic tombs (3400-3000 BC) line the ridge, built by people of the Funnelbeaker culture using granite boulders carried by the glaciers; in 2015 the whole area was inscribed as a UNESCO Global Geopark, and it is a core site for studying Dutch prehistory.",
     history:
       "This upland has been continuously inhabited since the Neolithic, from prehistoric megalithic tombs through medieval villages to modern farming settlements — a record of thousands of years of continuous human use on a single geographic ridge.",
   },
 
   "flevoland-polder": {
+    // 全六段 sources: 东弗莱福兰 1950 合龙 / 1957 排干，南弗莱福兰 1959 合龙 / 1968 排干 —— 正文「1950–1968」准确覆盖本条 bbox 对应的两块圩田，**未把 1942 年单独排干的东北圩田混进来**；1986 年设为第 12 省。吉尼斯认定 Flevopolder 为世界最大人工岛，正文用「之一」更保守。核实 2026-09-11，未改动
     seeing:
       "The Flevoland Polder is land drained and reclaimed from the former Zuiderzee between 1950 and 1968, most of it below sea level — one of the largest artificial land reclamations in the world. From the air, endless grid-pattern farmland stretches to the horizon, straight drainage canals and windbreak tree lines dividing it neatly.",
     formation:
@@ -9572,6 +9577,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   zuidplaspolder: {
+    // 全六段 sources: 最低点 −6.76 m（2005 年校准值）、1840 年完成排干；正文写的是「荷兰全境最低点」，**未误用为「欧盟最低点」**（那是与丹麦 Lammefjord 并列的另一层级表述，正文未提）。核实 2026-09-11，未改动
     seeing:
       "The Zuidplaspolder is a former lake basin drained in 1840, its lowest point about −6.76 m — the lowest point in the entire Netherlands. From the air the area shows almost no visible height difference from its surroundings; only precise survey data confirms it as the country's low point.",
     formation:
@@ -9595,13 +9601,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Loonse en Drunense Duinen by its large stretches of continuous bare sand and rolling dune relief — such desert-like ground is very rare in the temperate, humid Netherlands, and the sharp contrast with the dense forest around it is the easiest way to spot it.",
     distinguish:
       "Both the Loonse en Drunense Duinen and the Holland Dunes are dune landscapes, but the Loonse en Drunense Duinen is a deep-inland exposure of an old wind-blown sand layer uncovered by human overuse, while the Holland Dunes are young, active coastal dunes continuously replenished by waves and wind.",
+    // concept sources: 国家公园 2002 年设立（2024 年并入梵高国家公园），非 1971（nationaleparken.nl，2 级）；面积约 35 km²、中世纪过度放牧暴露冰期风成沙层的成因叙述核实无误。核实 2026-09-11
     concept:
-      "The national park established here in 1971 protects the dunes rather than fully greening and fixing them, because the drifting dunes are themselves a distinctive semi-natural landscape with real geological-education and ecological-research value; management aims to control excessive spread while preserving the dunes' natural mobility.",
+      "The national park established here in 2002 protects the dunes rather than fully greening and fixing them, because the drifting dunes are themselves a distinctive semi-natural landscape with real geological-education and ecological-research value; management aims to control excessive spread while preserving the dunes' natural mobility.",
     history:
       "From a product of medieval overuse, to an area once treated as 'wasteland' and afforested to fix the sand in the early 20th century, to being recognised today as a distinctive natural heritage worth protecting, the site reflects a changing understanding of the value of such human-caused landscapes.",
   },
 
   "wadden-sea-nl": {
+    // 全六段 sources: 与本库已核的德国侧 wadden-sea **并排读一致** —— 2009 年荷德段列入、2014 年丹麦段并入（whc.unesco.org/en/list/1314，1 级）；本条只陈述 2009 年荷德段列入，不涉后续扩边，属实。正文用「全球最大潮间带生态系统之一」，比 UNESCO 官方的 the largest 更保守。核实 2026-09-11，未改动
     seeing:
       "The Wadden Sea is the world's largest continuous system of intertidal mudflats, running along the south-eastern North Sea coast; the Dutch stretch lies inside the West Frisian Islands. From the air, broad brown mud and sand flats are exposed at low tide and submerged again at high tide, with tidal channels branching like tree limbs across the flats.",
     formation:
@@ -9617,6 +9625,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "zeeland-delta": {
+    // 全六段 sources: 1953 年北海风暴潮荷兰官方死亡数 1836 人，正文「约1800人」为合理近似；东斯海尔德风暴潮屏障长约 9 km、65 座墩柱，「平时开放、风暴时关闭」与 Rijkswaterstaat 官方描述一致（1 级）。核实 2026-09-11，未改动
     seeing:
       "The Zeeland Delta is the complex delta where the Rhine, Meuse and Scheldt rivers together reach the sea, and the Eastern Scheldt storm surge barrier is the largest of its flood defences. From the air, a chain of enormous concrete gates spans the bay, dividing what was once open water into a series of controllable channels.",
     formation:
@@ -9632,6 +9641,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   westerschelde: {
+    // 全六段 sources: ⚠️ 「安特卫普港」这处**不需要**改成 2022 年合并后的「安特卫普—布鲁日港」—— 判据与同批 scheldt-river-be 一致：这句描述的是「通往这座港口城市的唯一航道」这一地理/功能事实，是**地理指代**而非港口正式机构名。漏斗状河口未被闸坝封闭、荷比疏浚费用分摊协议均核实无误。核实 2026-09-11，未改动
     seeing:
       "The Westerschelde is the broad tidal estuary the Scheldt forms in Zeeland province before reaching the North Sea. From the air the water is wide and the tide range clearly visible, with extensive salt marsh and mudflat on both banks, and large cargo ships passing near Vlissingen.",
     formation:
@@ -9647,6 +9657,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "holland-dunes": {
+    // 全六段 sources: 「沙引擎」（Zandmotor）2011 年建成于代尔夫兰海岸，为全球首例此类沙滩补给工程；正文写「近几十年发展出」未给死年份，不触发缺年份判据。核实 2026-09-11，未改动
     seeing:
       "The Holland Dunes are a continuous dune belt along the North Sea coast running from Zeeland to the Wadden Islands — the Netherlands' natural coastal defence line. From the air, an undulating yellow-green dune band runs along the coastline, with the densely populated Randstad conurbation just inland.",
     formation:
@@ -9664,8 +9675,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   biesbosch: {
     seeing:
       "The Biesbosch is a freshwater tidal wetland where the Meuse meets a branch of the Rhine, formed after a 1421 dike breach flooded the original land. From the air, crisscrossing channels cut the area into countless small islands and reed beds — a rare, densely water-networked stretch of the Netherlands.",
+    // formation sources: 公园官方历史页专门辟谣「一夜之间由风暴潮造出比斯博斯」的说法 —— 堤坝溃决前已因泥炭开采削弱，此后数十年逐步演变；「以淡水为主」是 1970 年前后三角洲工程封闭哈灵水道之后才稳定下来的（此前潮差可达 2 m、咸淡水混合）。国家公园 1994 年设立、二战期间约 300 名潜伏者在此活动均核实无误。核实 2026-09-11
     formation:
-      "The 1421 St Elizabeth's Flood broke through the dikes and permanently submerged the original land; over the following centuries river sediment kept accumulating, gradually forming this tide-dominated freshwater wetland of interlocking land and water.",
+      "The 1421 St Elizabeth's Flood broke through dikes already hollowed out and weakened by peat digging, and the land behind them went under; over the following decades river sediment kept accumulating and the basin turned into a tide-dominated wetland of interlocking land and water. Only when the Delta Works closed off the Haringvliet around 1970 was its tidal link to the open sea largely severed, settling it into the predominantly freshwater tidal wetland it is today.",
     observation:
       "From the air, identify the Biesbosch by its dense, web-like network of channels and the extensive reed beds and willow stands between them — a sharp contrast to the neat, planned reclaimed farmland around it, and the most direct sign of its unplanned, naturally evolved water network.",
     distinguish:
@@ -9677,6 +9689,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   maasvlakte: {
+    // 全六段 sources: Maasvlakte 2 于 2013-05-22 启用（鹿特丹港务局，1 级）；「欧洲最大港口」按货物总吨位口径仍成立（2025 Q3 鹿特丹 99.0 Mt vs 安特卫普—布鲁日 56.5 Mt，Eurostat 1 级；后者仅在 2025 Q1 集装箱 TEU 单项上短暂反超）。填海面积是会变的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "The Maasvlakte is artificial land the Port of Rotterdam has been building since the 1970s in the North Sea west of the Meuse estuary, with the second phase, completed in 2013, extending it about 2 km further out to sea. From the air, a perfectly straight man-made coastline, dense container terminals and rows of wind turbines form a highly industrialised landscape.",
     formation:
@@ -9692,6 +9705,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   afsluitdijk: {
+    // 全六段 sources: 长约 32 km、1927 动工 1932 完工、方案由 Cornelis Lely 提出（Rijkswaterstaat 官方，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Afsluitdijk is a roughly 32 km barrier dam completed in 1932, enclosing the once-open Zuiderzee to form today's freshwater IJsselmeer. From the air, a dead-straight grey dike spans the open water, separating two bodies of water with slightly different colours.",
     formation:
@@ -9707,6 +9721,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   ijsselmeer: {
+    // 全六段 sources: 面积约 1100 km²、荷兰最大湖泊；与 markermeer（约 700 km²）、afsluitdijk（1932）、flevoland-polder（1950–1968）四条工程链上的面积与年份**并排核对彼此一致**，未打架。核实 2026-09-11，未改动
     seeing:
       "The IJsselmeer is the largest lake in the Netherlands, about 1,100 sq km, gradually freshened from the former saline Zuiderzee bay after the Afsluitdijk was completed in 1932. From the air, an open, pale freshwater lake sits near the centre of the north-central Netherlands, its shoreline irregular with several stretches now reclaimed as land.",
     formation:
@@ -9722,6 +9737,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   markermeer: {
+    // 全六段 sources: 面积约 700 km²；1976 年 Houtribdijk 建成使其与艾瑟尔湖分离；原围垦计划 Markerwaard 因环保意识增强而搁置；Marker Wadden 生态修复工程真实存在（Natuurmonumenten 官方项目页，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Markermeer is a separate freshwater lake, about 700 sq km, cut off from the southern IJsselmeer by a barrier dam built in 1976. From the air its water looks noticeably murkier and greener than the IJsselmeer, and the dead-straight dam separating the two lakes is clearly visible.",
     formation:
@@ -9737,6 +9753,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   grevelingen: {
+    // 全六段 sources: 1971 年布劳沃斯坝完工封闭成咸水湖；官方/媒体称其为西欧最大咸水湖（约 11,000 ha），正文用「之一」更保守；近年经 Getij Grevelingen 项目开凿限流通道恢复潮汐交换以解决湖底缺氧（Zuidwestelijke Delta，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Grevelingen is a saltwater lake formed when a former river-mouth bay was sealed during the Delta Works — one of the largest saltwater lakes in Western Europe. From the air the water is clear and blue, a sharp contrast to the mostly murky freshwater lakes elsewhere in the Netherlands, with several small islands scattered across it.",
     formation:
@@ -9760,13 +9777,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Lauwersmeer by the interlocking pattern of open water and extensive reed beds and shallows — this half-lake, half-marsh transitional landscape, together with its position on the edge of the Wadden Sea, is the main way to recognise this area.",
     distinguish:
       "Both the Lauwersmeer and the IJsselmeer are water bodies freshened after a bay was sealed by a barrier dam, but the Lauwersmeer is much smaller and dominated by wetland and marsh ecology, while the IJsselmeer is the Netherlands' largest open freshwater lake, used mainly for shipping and reclamation.",
+    // concept sources: 国家公园 2003-11-12 设立（此前为自然保护区、2000 年列为拉姆萨尔湿地，都不是国家公园）；1969-05-25 拦海坝封闭 Lauwerszee 核实无误。核实 2026-09-11
     concept:
-      "Since Lauwersmeer National Park was established in 1990, managers have experimented with restoring some areas to saline ecology (reintroducing seawater), contrasting with the other fully freshened former Zuiderzee waters — an example of the Netherlands' diversified approach to wetland ecological restoration.",
+      "Since Lauwersmeer National Park was established in 2003, managers have experimented with restoring some areas to saline ecology (reintroducing seawater), contrasting with the other fully freshened former Zuiderzee waters — an example of the Netherlands' diversified approach to wetland ecological restoration.",
     history:
       "Before the barrier dam was built, residents here long depended on the Wadden Sea's fisheries and farming; after enclosure, land and water use gradually shifted toward nature conservation, and the area is now a popular spot for observing migratory birds.",
   },
 
   "weerribben-wieden": {
+    // 全六段 sources: 国家公园 1992-06-24 设立；泥炭开采实际自 16 世纪中叶起延续至二战前后，正文笼统写「18-19世纪」属范围收窄、仍在开采活跃期内，且未作排他性时间断言，不改。核实 2026-09-11，未改动
     seeing:
       "Weerribben-Wieden is a lake-and-marsh wetland in the north-western Netherlands formed by historic large-scale peat digging — one of the largest surviving lowland peat bogs in Western Europe. From the air, criss-crossing narrow channels and reed beds divide the area into neat strips, a regular geometric pattern that betrays its history of manual excavation.",
     formation:
@@ -9782,6 +9801,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhine-delta-nl": {
+    // 全六段 sources: 实际分流是两级 —— 莱茵河先在 Pannerdensche Kop 分出瓦尔河（约 2/3 水量）与潘纳尔登运河，运河再在阿纳姆一带的 IJsselkop 分出艾瑟尔河，余下才是下莱茵河/莱克河。正文把二级分流略去，属面向空中概览的合理简化；艾瑟尔河在本库另有独立条目（ijssel-river，其「阿纳姆附近分出」方向未错），并排读不冲突。核实 2026-09-11，未改动
     seeing:
       "The Rhine Delta in the Netherlands is the stretch where the Rhine splits into the Nederrijn/Lek and the Waal near the Pannerden Canal after entering the country — one of Europe's most important inland shipping corridors. From the air, broad channels carry a constant stream of barges and cargo ships, with the Netherlands' densely populated cities and port facilities lining the banks.",
     formation:
@@ -9797,6 +9817,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meuse-river-nl": {
+    // 全六段 sources: 1993、1995 年莱茵/马斯河严重洪灾（疏散约 25 万人）→ 2006 年批准「还地于河」计划、2007–2018 实施 34 个项目。正文写的是因果（洪灾促成计划），未断言计划在 1990 年代即启动，与时间线不矛盾。核实 2026-09-11，未改动
     seeing:
       "The Meuse in the Netherlands rises in France and flows through Belgium into the southern Dutch province of Limburg, where around Maastricht the valley narrows with low hills on either side. From the air, the river shows a stretch of valley relief rare elsewhere in the Netherlands as it crosses Limburg, then widens and slows as it enters North Brabant province further north.",
     formation:
@@ -9812,6 +9833,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ijssel-river": {
+    // 全六段 sources: 长度各来源 116–125 km，正文「约120公里」落在区间内；代芬特尔、坎彭、聚特芬历史上均为汉萨同盟城市。核实 2026-09-11，未改动
     seeing:
       "The IJssel is a branch the Rhine (Nederrijn) splits off near Arnhem, flowing north about 120 km to the IJsselmeer. From the air a relatively narrow channel winds northward, past the historic towns of Deventer and Kampen, with open pasture lining most of its banks.",
     formation:
@@ -9827,6 +9849,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vecht-river": {
+    // 全六段 sources: 17–18 世纪阿姆斯特丹商人沿河修建避暑庄园属荷兰黄金时代广泛记载的史实，无可核数字/年代类断言。核实 2026-09-11，未改动
     seeing:
       "The Vecht is a slow-flowing small river in the central Netherlands, along which 17th–18th-century Amsterdam merchants built numerous country estates. From the air, the winding river is lined on both banks with historic manor houses and gardens, giving a village landscape of pleasant density amid the open pasture around it.",
     formation:
@@ -9842,6 +9865,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "wadden-islands": {
+    // 全六段 sources: 特塞尔岛为西弗里西亚群岛中面积最大、人口最多者（约 1.36 万人；弗利兰 1194 / 特斯海灵 4870 / 阿默兰 3746 / 斯希蒙尼克 931）。核实 2026-09-11，未改动
     seeing:
       "The West Frisian Islands are a chain of dune-built barrier islands outside the Wadden Sea in the northern Netherlands, running west to east through Texel, Vlieland, Terschelling, Ameland, Schiermonnikoog and others. From the air, a string of narrow sandy islands lies roughly parallel to the mainland coast, with broad beaches on the outer (North Sea) side and mudflats on the inner (Wadden Sea) side.",
     formation:
@@ -10805,8 +10829,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Central Jutland Highlands are the area of most pronounced relief in mainland Denmark; Møllehøj, at 170.86 m, was confirmed by a new survey in 2005 as the highest point in mainland Denmark.",
     formation:
       "The highlands are built of terminal moraine ridges pushed up during last-glacial advances; repeated glacial advance and retreat left several parallel hill ridges here, a classic moraine landscape.",
+    // observation sources: 默勒霍伊 170.86 m 为 2005 年测量确认的本土最高点；观景塔（1924 年建、12.5 m、可望五湖）在 270 m 外的埃耶尔巴内霍伊上，**不在最高点**。三峰高差：默勒霍伊 170.86 / 伊丁森林高地去除人工墓丘后 170.77 / 埃耶尔巴内霍伊 170.35 —— 正文「相差数十厘米」成立。核实 2026-09-11
     observation:
-      "From the air, the hills show gentle undulation, with forest and pasture interspersed, standing out against the otherwise flat terrain typical of the rest of Denmark; an observation tower at the summit overlooks the surrounding lake district.",
+      "From the air, the hills show gentle undulation, with forest and pasture interspersed, standing out against the otherwise flat terrain typical of the rest of Denmark; an observation tower on the neighbouring hill of Ejer Bavnehøj, 270 m away, overlooks the surrounding lake district.",
     distinguish:
       "Both the Central Jutland Highlands and Mols Bjerge are Danish moraine hill country, but the Central Highlands are slightly higher and hold mainland Denmark's highest point, while Mols Bjerge lies on the eastern peninsula with more tightly clustered hills.",
     concept:
@@ -10815,6 +10840,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The summit of Møllehøj holds a millstone, a remnant of the Ejer windmill that stood from 1838 to 1917; the 2005 remeasurement formally established it as mainland Denmark's highest point.",
   },
   "mols-bjerge": {
+    // 全六段 sources: 阿格里巴内霍伊 137 m 为莫尔斯山地最高点（国家公园官网，2 级）；国家公园 2009-08-29 揭幕，是丹麦第二座（首座为提 Thy，2008-08；随后瓦登海 2010-10）—— 正文「首批之一」成立。核实 2026-09-11，未改动
     seeing:
       "Mols Bjerge lies on the Djursland peninsula in eastern Jutland and is one of Denmark's few areas of pronounced hill terrain; its highest point, Agri Bavnehøj, reaches 137 m.",
     formation:
@@ -10839,10 +10865,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Rebild Bakker and Jutland Heath preserve classic heather vegetation, but Rebild Bakker shows clear moraine-hill relief next to extensive forest, while Jutland Heath is flatter, a remnant of heath on an outwash plain.",
     concept:
       "The combination of heather moor and forest at Rebild Bakker is a classic case for studying how vegetation naturally succeeds on poor moraine soil alongside deliberate human conservation.",
+    // history sources: 1911 年集资购地、1912 年献地契给国王，两步两年（发起人 Max Henius）。核实 2026-09-11
     history:
-      "In 1912, Danish emigrants living in the United States raised funds to buy this land and donate it to the Danish state, creating Denmark's first large protected nature area; a US Independence Day commemoration has been held here annually ever since.",
+      "Danish emigrants living in the United States raised funds to buy this land in 1911 and formally donated it to the Danish state in 1912, creating Denmark's first large protected nature area; a US Independence Day commemoration has been held here annually ever since.",
   },
   "bornholm-almindingen": {
+    // 全六段 sources: 骑士峰 162 m 为全岛最高自然点（Trap Danmark / lex.dk，2 级）；Britannica 确认岛屿北部三分之二为花岗岩，属波罗的地盾南缘出露，与正文「约三分之二」一致；「丹麦境内波罗的地盾唯一出露区」未见反例。⚠️ 本库航线解说 cph-rnn 曾把「……的地区之一」写成「唯一」，已于 2026-09-11 同步补回限定。核实 2026-09-11，未改动
     seeing:
       "The Almindingen forest highland at the centre of Bornholm is the island's highest ground; its peak, Rytterknægten, reaches 162 m and the area is one of the only places in Denmark where granite bedrock is exposed over a wide area.",
     formation:
@@ -10857,6 +10885,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Almindingen forest was historically a royal hunting ground; it is now an important outdoor-recreation area for the island.",
   },
   "mons-klint": {
+    // 全六段 sources: 崖顶最高处约 128 m（Dronningestolen）是崖体本身的高度 —— **未与附近独立山丘 Aborrebjerg（142/143 m）混淆**；白垩为马斯特里赫特期约 70 Ma 颗石藻钙质残骸堆积，末次冰期冰川挤压致褶皱变形。核实 2026-09-11，未改动
     seeing:
       "Møns Klint is Denmark's tallest sea cliff, reaching about 128 m at its highest point, built of Late Cretaceous chalk.",
     formation:
@@ -10871,6 +10900,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The chalk cliffs have been an important natural tourist attraction in Denmark since the 19th century, and a geology centre at the clifftop explains the chalk's formation and its fossil discoveries.",
   },
   "stevns-klint": {
+    // 全六段 sources: 「鱼粘土」层记录 66 Ma 白垩纪—古近纪灭绝事件、富含铱；崖长按 UNESCO 官方口径 15 km（部分二手来源作 17 km，正文取官方口径）；2014-06-23 列入 UNESCO。赫耶鲁普老教堂约 1250 年建、1928-03-16 圣坛坍塌入海 —— 正文「13 世纪建、20 世纪坍塌」两个世纪都对。核实 2026-09-11，未改动
     seeing:
       "Stevns Klint is a chalk cliff on the south-eastern coast of Zealand; a dark clay layer within the cliff face records geological evidence of the Cretaceous-Paleogene extinction event 66 million years ago.",
     formation:
@@ -10885,6 +10915,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Højerup Old Church was built in the 13th century; as the cliff has continued to erode and retreat, part of the church collapsed into the sea in the 20th century, and it remains a well-known landmark of the cliff's ongoing geological change.",
   },
   "skagen-odde": {
+    // 全六段 sources: ⚠️ 正文「约一万年来持续延伸」用的是「末次冰期以来」这一**通俗口径**；较新研究认为沙嘴主体约 7150 年前才开始发育、5500 年内成今状。两种口径在二手资料中并存，正文非错但精度可再收紧，下轮若查到 GEUS 一手结论再改。19 世纪末斯卡恩画派属广泛记载的艺术史。核实 2026-09-11
     seeing:
       "Skagen Odde is a sand spit extending continuously into the sea from the northern tip of Jutland; its point, Grenen, is where the currents of the North Sea and the Kattegat meet.",
     formation:
@@ -10899,6 +10930,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The town of Skagen was historically an important Danish fishing port; in the late 19th century its distinctive Nordic light drew a group of painters who settled and worked there, forming the well-known \"Skagen Painters\" movement.",
   },
   "rubjerg-knude": {
+    // 全六段 sources: 灯塔 1900-12-27 首次点亮（1899 年动工）、1968-08-01 停用、2019-10 整体向内陆迁移 70 m —— 三个年份均核实无误。沙丘仍在移动，是会变的量。核实 2026-09-11，未改动
     seeing:
       "Rubjerg Knude is an active dune on Jutland's North Sea coast; its lighthouse, built in 1900, was relocated intact in 2019 after being progressively buried by the migrating dune.",
     formation:
@@ -10913,6 +10945,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lighthouse was built in 1900 and taken out of service in 1968 as the dune advanced; in 2019, as coastal erosion brought it dangerously close to the cliff edge, the whole structure was moved about 70 m inland to avoid falling into the sea.",
   },
   limfjord: {
+    // 全六段 sources: 1825 年 2 月风暴潮（「二月洪灾」）冲开阿格尔堤，形成利姆海峡西端与北海的永久通道。核实 2026-09-11，未改动
     seeing:
       "The Limfjord is a long, narrow waterway crossing northern Jutland, separating the Vendsyssel-Thy peninsula from the rest of the mainland; a storm surge in 1825 permanently opened its western connection to the North Sea.",
     formation:
@@ -10927,6 +10960,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A powerful storm surge in February 1825 permanently opened the western channel to the North Sea, reshaping the geography of northern Jutland; before that, the waterway had long been semi-enclosed.",
   },
   "isefjord-roskilde-fjord": {
+    // 全六段 sources: 罗斯基勒峡湾本身深入内陆约 40 km（伊瑟峡湾主体约 35 km），正文以「约40公里」笼统描述整个水系，在合理近似内；罗斯基勒大教堂 1995 年列入 UNESCO；哈拉尔蓝牙王（卒 986 年）葬于此，与「自10世纪起」一致。核实 2026-09-11，未改动
     seeing:
       "Isefjord and Roskilde Fjord form a fjord system reaching about 40 km inland into northern Zealand, with Roskilde Fjord as its eastern branch.",
     formation:
@@ -10941,6 +10975,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Roskilde was Denmark's religious and political centre for centuries starting in the 10th century; Roskilde Cathedral is the traditional burial site of Danish monarchs and was inscribed on the UNESCO World Heritage List in 1995.",
   },
   "wadden-sea-dk": {
+    // 全六段 sources: 与本库已核的德国侧 wadden-sea、荷兰侧 wadden-sea-nl **三方并排读一致** —— 2009 年德荷段列入、丹麦段因等待国家公园设立延后到 2014 年并入（丹麦瓦登海国家公园官网，2 级；whc.unesco.org/en/list/1314，1 级）。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Danish section of the Wadden Sea is the northernmost part of the North Sea's intertidal mudflat and barrier-island system, which together with the German and Dutch sections forms the world's largest continuous intertidal ecosystem.",
     formation:
@@ -10955,6 +10990,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area has historically been an important Danish fishing and shipping region; in 2014 the Danish section joined the existing German and Dutch sections on the UNESCO World Heritage Wadden Sea listing, forming a single protected area spanning all three countries.",
   },
   "bornholm-granite-coast": {
+    // 全六段 sources: 哈默伦岬角前寒武纪花岗岩崖壁与 bornholm-almindingen 的波罗的地盾出露事实一致；哈默斯胡斯城堡多个来源直接称「北欧最大的城堡遗址」（不带之一），正文用「之一」更保守，不与更强信源冲突。核实 2026-09-11，未改动
     seeing:
       "The Bornholm Granite Coast lies at the island's northern tip; the Hammeren headland's steep cliffs are built of Precambrian granite, the only large area of exposed granite bedrock anywhere on the Danish coast.",
     formation:
@@ -10969,6 +11005,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Granite on the island has been quarried for building stone since the Middle Ages; the Hammeren area also holds the medieval fortress of Hammershus, one of the largest castle ruins in Northern Europe.",
   },
   "silkeborg-lake-district": {
+    // 全六段 sources: ⚠️「丹麦本土唯一的湖区式地貌集群」是较强的排他断言 —— 官方区域旅游局称 Søhøjlandet 为丹麦最高地区、坐拥 50 余座湖泊，未查到可与之相提并论的第二个集群，现有资料范围内未见反例，暂留但下轮留意。锡尔克堡镇 1844 年 Michael Drewsen 建造纸厂而兴起，「19 世纪」属实。核实 2026-09-11，未改动
     seeing:
       "The Silkeborg Lake District is a chain of glacially carved lakes along the middle course of the Gudenå, Denmark's longest river — the only lake-district-style landform cluster in mainland Denmark.",
     formation:
@@ -10983,6 +11020,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The town of Silkeborg grew up along the Gudenå from the 19th century around its paper industry; the lake district is now an important destination for river cruising and outdoor recreation in Denmark.",
   },
   arresoe: {
+    // 全六段 sources: 面积 40.72 km²，丹麦最大湖泊；平均水深 3.1 m，与正文「约3米」一致；与 furesoe（最深 37.7 m）互为 distinguish 对照，「更大更浅 vs 更小更深」两条并读自洽。history 段的 19 世纪围垦尝试见 issue。核实 2026-09-11
     seeing:
       "Arresø is Denmark's largest lake, covering about 40 km², draining via a river channel into Isefjord.",
     formation:
@@ -10997,8 +11035,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake has historically been an important fishery for northern Zealand; a 19th-century attempt to drain and reclaim the lakebed for farmland was made, and the surrounding area is now an important nature reserve.",
   },
   furesoe: {
+    // seeing sources: 最深 37.7 m（菲于瑟市官网，2 级；丹麦语维基与自然署页面一致），非 37.8。与 arresoe（40.72 km²、均深 3.1 m，丹麦最大湖）互为 distinguish 对照，两条并读自洽。核实 2026-09-11
     seeing:
-      "Furesø is Denmark's deepest lake, with a maximum depth of about 37.8 m, located in the northern suburbs of Copenhagen.",
+      "Furesø is Denmark's deepest lake, with a maximum depth of about 37.7 m, located in the northern suburbs of Copenhagen.",
     formation:
       "The lake basin occupies a deep trough gouged by last-glacial ice, where erosion was more intense than in the surrounding area, producing a deep-basin lake landform rare in Denmark.",
     observation:
@@ -11011,6 +11050,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake area has been a favoured villa retreat for Copenhagen's wealthy since the 19th century and remains an important near-suburban recreational water body for greater Copenhagen today.",
   },
   "gudenaa-river": {
+    // 全六段 sources: 全长约 158 km、丹麦最长水道、注入兰讷斯峡湾（锡尔克堡市官方古德诺河信息站，2 级）；与 west-jutland-outwash-plain 的斯克恩河（丹麦流量最大）分属长度与流量两个口径，两条并读不冲突。核实 2026-09-11，未改动
     seeing:
       "The Gudenå is Denmark's longest river, running about 158 km from its source near the Central Jutland Highlands to meet Randers Fjord near the town of Randers.",
     formation:
@@ -11025,6 +11065,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The river has historically been an important inland shipping route in Denmark; the industrial development of towns such as Silkeborg once relied heavily on river transport, and today it is an important canoeing and cruising river in Denmark.",
   },
   "sydfynske-oehav-aeroe": {
+    // 全六段 sources: 埃勒斯考宾为丹麦保存最完好的 18 世纪小镇，2002 年获欧罗巴诺斯特拉奖；淹没冰碛丘陵成群岛的机制与 lolland-falster-lowland 对比无冲突。核实 2026-09-11，未改动
     seeing:
       "The South Funen Archipelago is a cluster of dozens of small islands south of Funen; Ærøskøbing on the island of Ærø preserves the most complete 18th-century half-timbered town quarter in Denmark.",
     formation:
@@ -11049,10 +11090,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Læsø and Anholt are Danish islands in the Kattegat, but Læsø is larger, known for its historic salt production and seaweed-thatched houses, while Anholt is known for the lichen-heath \"desert\" landscape on its eastern side.",
     concept:
       "The wind erosion and sand mobilisation on Læsø, driven by historic overlogging for the salt-boiling industry, is a classic case for studying how human economic activity can accelerate coastal sandy-landform change.",
+    // history sources: GEUS 2010 年基于约 1700 处中世纪制盐遗址的研究 —— 1585 年后快速衰退、1652 年停止，主因是小冰期变冷使可形成高盐地下水的海岸带降至不足原来 15%，燃料短缺为次因（1 级）。砍伐导致 17 世纪王室禁伐令属实。formation 段只讲「砍伐→风蚀沙化」的地貌机制，不涉产业衰退因果，不改。核实 2026-09-11
     history:
-      "Salt production on the island dates to the Middle Ages, at its peak supplying large quantities of salt to the Danish crown; the industry declined in the 17th century after the forests were exhausted, while the tradition of seaweed-thatched roofing survives to this day.",
+      "Salt production on the island dates to the Middle Ages, at its peak supplying large quantities of salt to the Danish crown; deforestation for fuel led to a 17th-century royal ban on wood-fired salt-boiling, but a 2010 study by the Geological Survey of Denmark and Greenland found the industry's rapid decline after 1585 and its end in 1652 owed more to Little Ice Age cooling, which sharply shortened the stretches of coast able to form hypersaline groundwater; the tradition of seaweed-thatched roofing survives to this day.",
   },
   "jutland-heath": {
+    // 全六段 sources: 兰伯尔荒原 750 ha，为丹麦最大内陆荒原残余；1700 年代至 19 世纪初中/西日德兰荒原覆盖率约 50%，正文「近半」属实；丹麦石楠荒原协会由 Enrico Dalgas 于 1866 年创立、主导排水植树（丹麦国家历史百科，2 级）。核实 2026-09-11，未改动
     seeing:
       "Jutland Heath once covered a large expanse of poor, sandy glacial-outwash land in western Jutland; Randbøl Hede is the largest surviving continuous remnant of this heather moorland in Denmark.",
     formation:
@@ -11067,6 +11110,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Before the 19th century, heather moorland covered nearly half of western Jutland; from the 19th century the Danish Heath Society led a large-scale programme of drainage and tree-planting that converted most of it to farm and forest land, leaving Randbøl Hede as one of the few continuous remnants surviving today.",
   },
   "anholt-oerkenen": {
+    // 全六段 sources: Ørkenen 为北欧最大同类地衣荒原景观；学术研究确认风成沙丘与地衣群落的发育与历史性砍伐直接相关，砍伐高峰在 16—17 世纪，与正文「16 世纪森林砍伐后」方向一致；正文明写它「非真正沙漠」，与学界口径（地衣荒原而非气候学沙漠）一致。核实 2026-09-11，未改动
     seeing:
       "About three-quarters of the eastern side of Anholt is covered in a lichen-heath landscape locally called \"Ørkenen\" (the Desert), the largest lichen heath in Northern Europe.",
     formation:
@@ -11081,6 +11125,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "After the island's forests disappeared due to overlogging in the 16th century, wind-blown dunes gradually expanded and buried part of the farmland and settlements, forcing islanders to adapt their livelihoods; the \"Desert\" landscape has since become Anholt's most recognisable natural feature.",
   },
   "store-vildmose": {
+    // 全六段 sources: 1917 年潜艇战危机促成 1918 年立法，1920—1945 年国家主导垦荒（1920 年代征地建 57 座农场）；二战期间因棉花等进口中断确有亚麻、大麻种植记录。正文「20 世纪初」与实际启动（1917–1920s）基本吻合。核实 2026-09-11，未改动
     seeing:
       "Store Vildmose is a former large raised peat bog basin in northern Jutland, converted to farmland through drainage works in the early 20th century.",
     formation:
@@ -11105,8 +11150,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the West Jutland Outwash Plain and Jutland Heath lie in the poor, sandy area of western Jutland, but the outwash plain is defined by the Skjern Å delta landform, while Jutland Heath is defined by the surviving heather shrub vegetation on poor soil.",
     concept:
       "The West Jutland Outwash Plain is a classic case for studying how meltwater at the margin of a last-glacial ice sheet builds up a broad, flat sandy plain over time, and a key area for understanding the origins of western Denmark's landforms.",
+    // history sources: 渠化 1962–1968（4000 ha 湿地转耕地）；复原工程 1999-06 开工、2002 年秋基本完工（议会决议 1987），2003 年已是收尾监测期 —— 原文的「20世纪初」与「2003年起启动」两个年份都错、顺序也反了。斯克恩河为丹麦流量最大的河流（平均约 30 m³/s）。核实 2026-09-11
     history:
-      "In the early 20th century Denmark carried out a large-scale project to reroute and drain the Skjern Å to expand farmland; by the early 2000s this was judged to have damaged the ecosystem, and from 2003 the Danish government began a restoration project to return the river to something closer to its original course and wetlands.",
+      "Between 1962 and 1968 Denmark carried out a large-scale project to reroute and drain the Skjern Å to expand farmland; this was later judged to have damaged the ecosystem, and the Danish government ran a restoration project from 1999 to its substantial completion in 2002, returning the river to something closer to its original course and wetlands.",
   },
   "lolland-falster-lowland": {
     seeing:
@@ -11119,10 +11165,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Lolland-Falster Lowland and the Funen Rolling Farmland are important Danish farming regions, but Lolland-Falster is extremely flat, with land partly reclaimed behind dikes, while Funen retains more noticeable rolling-hill relief.",
     concept:
       "The parts of the Lolland-Falster Lowland reclaimed behind dikes are a classic case for studying the history of artificial land reclamation and land-use change in Denmark's low-lying coastal areas.",
+    // history sources: 洛兰大堤 1873–1878 年修建、全长 63 km，起因为 1872 年风暴潮（80 人死亡），是丹麦史上最大的海岸防护工程。原文的「17世纪荷兰移民围垦」实为 **1521 年荷兰农民定居阿马厄岛**的史实 —— 真事挪错了岛、也挪错了世纪。核实 2026-09-11
     history:
-      "The region has been an important farming area since the Middle Ages; from the 17th century, reclamation techniques brought by Dutch settlers were applied here, converting drained coastal low ground behind dikes into arable farmland.",
+      "The region has been an important farming area since the Middle Ages; after a storm surge flooded large parts of Lolland in 1872 and killed 80 people, Denmark built the 63 km Lolland Dike between 1873 and 1878, converting drained coastal low ground behind it into arable farmland.",
   },
   "funen-rolling-farmland": {
+    // 全六段 sources: 「丹麦花园」称号据传出自安徒生本人（1805–1875），欧登塞为其出生地（1805），「19 世纪起」属实。核实 2026-09-11，未改动
     seeing:
       "The Funen Rolling Farmland is a landscape of gently rolling fields on young last-glacial moraine, long known as the \"Garden of Denmark.\"",
     formation:
@@ -11137,6 +11185,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Funen has been an important farming region since the Middle Ages; from the 19th century, its fertile soil and abundant produce earned it the nickname \"Garden of Denmark,\" and Odense is the birthplace of the famous Danish fairy-tale author Hans Christian Andersen.",
   },
   grejsdalen: {
+    // 全六段 sources: ⚠️ 河谷南段（格赖斯湖至格赖斯镇）确为冰下融水侵蚀的隧道谷，但**北段（南北走向部分）实为地表融水（Bøgager 冰湖溃决）侵蚀的 V 形谷** —— 正文把整条河谷统一描述为隧道谷，是对两段不同成因的简化，非错但有精度损失，下轮考虑分段表述（Ökolariet 地区自然中心，2 级）。history 段的磨坊见 issue。核实 2026-09-11
     seeing:
       "Grejsdalen is a representative example of a tunnel valley in Jutland, with comparatively steep valley walls and dense forest on its floor.",
     formation:
