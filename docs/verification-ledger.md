@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: ce0b690
+lastVerifiedCommit: 311dee5
 
 ## 覆盖现状（截至 2026-09-08）
 
