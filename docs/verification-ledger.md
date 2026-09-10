@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 1156cf7
+lastVerifiedCommit: e00a4ca
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,9 @@ lastVerifiedCommit: 1156cf7
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-10 | 回头 grep：本轮已修错值在全库的其余落点（R16e） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | 西班牙收尾 12 条（R16d） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | 比利时收尾 6 条（hageland / ourthe-valley / vesdre-valley / lesse-valley / sambre-river / ijzer-river）（R16c） | 9 | 0 / 7 / 2 | 当场修 7 条；新开 issue 2、关闭 0 |
 | 2026-09-10 | 奥地利+比利时收尾 / 瑞典批1 / 西班牙批1（42 条目）（R16b） | 26 | 0 / 19 / 7 | 当场修 23 条；新开 issue 3、关闭 0 |
 | 2026-09-10 | cities: greece 4 + uk 3 + netherlands 3（第十六轮 a（希腊 4 + 英国 3 + 荷兰 3 城）） | 7 | 0 / 0 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | cities: kazakhstan 5 + mongolia 4（第十五轮 g（哈萨克 5 + 蒙古 4 城）） | 10 | 0 / 0 / 0 | 当场修 10 条；新开 issue 0、关闭 0 |

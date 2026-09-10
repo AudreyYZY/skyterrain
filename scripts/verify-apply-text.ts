@@ -23,6 +23,7 @@
  *               howItWorks 的 "with about 25,000 people in 2021" 一起命中。
  *               短句是前缀时要把后文一起带上（"…people — the largest settlement"）。
  *   sourceNote  写进 `// <field> sources: ...` 的完整来源（可多行，用 \n 分隔）
+ *               **只写正文**，前缀由本脚本加；自带前缀会被剥掉（防 `// x sources: // x sources:`）
  *
  * 只有 resolution === "fixed" 才应用 —— 与 verify-apply.ts 同一条规矩。
  */
@@ -129,7 +130,14 @@ function patchEntry(src: string, id: string, p: TextPatch, where: string): strin
 function upsertSourceNote(src: string, id: string, field: string, note: string, where: string): string {
   const [start, end] = entryRange(src, id);
   let block = src.slice(start, end);
-  const lines = note.split("\n");
+  /**
+   * `sourceNote` 只写正文，**不要自带 `// <field> sources:` 前缀** —— 这里会加。
+   * 自带了就会写出 `// history sources: // history sources: ……`（2026-09-10 一轮里写出 28 处，
+   * 中英各 28）。前缀重复不影响编译、不影响任何检查、肉眼扫过去也像正常留痕，
+   * 所以只能在写入这一刻拦。既然是我自己反复犯的手误，就地剥掉而不是报错。
+   */
+  const body = note.replace(/^\s*\/\/\s*[A-Za-z/]+\s+sources:\s*/, "");
+  const lines = body.split("\n");
   const comment =
     `    // ${field} sources: ${lines[0]}\n` +
     lines.slice(1).map((l) => `    //   ${l}\n`).join("");
