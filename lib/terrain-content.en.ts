@@ -3432,8 +3432,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "kanto-plain": {
+    // formation sources: 缓慢下沉的构造盆地 + 河流冲积 + 台地（武藏野台地等）上覆来自富士山与箱根的风成火山灰（关东壤土），
+    //   与日本地学界公认机制一致。2026-09-10 核，verdict: ok。
+    // seeing sources: 人口：正文所指是**东京圈（1 都 3 县）** 口径，2020 年国势调查 36,914,000（占全国 29.3%，総務省統計局，1 级）。原文「约四千万」偏高且无年份口径。关东平原面积约 1.7 万 km²、日本第一大平原（第二石狩约 4000、第三十胜约 3600）核实无误。2026-09-10 核。
     seeing:
-      "The Kanto Plain is the largest plain in Japan, about 17,000 km², in central Honshu on the Pacific side. Japan's largest metropolitan area — Tokyo, Yokohama, Saitama and Chiba running together — is built on it, home to about 40 million people. The plain is enclosed by mountains on three sides (the Kanto Mountains to the west, the Ashio and Echigo ranges to the north) and opens south-east onto Tokyo Bay and the Pacific.",
+      "The Kanto Plain is the largest plain in Japan, about 17,000 km², in central Honshu on the Pacific side. Japan's largest metropolitan area — Tokyo, Yokohama, Saitama and Chiba running together — is built on it, home to about 37 million people (2020 census, the Tokyo-ken of Tokyo, Kanagawa, Saitama and Chiba). The plain is enclosed by mountains on three sides (the Kanto Mountains to the west, the Ashio and Echigo ranges to the north) and opens south-east onto Tokyo Bay and the Pacific.",
     formation:
       "The Kanto Plain is a slowly subsiding structural basin that has long received sediment carried down from the surrounding mountains by the Tone, Ara, Tama and other rivers. It is not a single lowland at one level: near the rivers is low alluvial ground, and between them rise several river-cut terraces (such as the Musashino Terrace), capped by a thick layer of wind-blown volcanic ash from Mount Fuji, Hakone and other volcanoes (the \"Kanto loam\").",
     observation:
@@ -3447,6 +3450,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "nobi-plain": {
+    // 全六段 sources: 1959 年伊势湾台风官方统计死亡 4,697 + 失踪 401 = 5,098 人，正文「超过 5000 人」准确（名古屋市官网，2 级）；
+    //   浓尾平原坐落在养老断层控制的倾动地块上（西沉东升），与内阁府地形地质指南口径一致（1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Nōbi Plain is in central Honshu on the northern shore of Ise Bay, the alluvial plain of the Nagoya area. Three large rivers — the Kiso, the Nagara and the Ibi — cross the plain almost side by side and empty together into Ise Bay. The south-western part of the plain is very low, with a substantial area of ground below sea level (below high tide), and it has always fought with floods.",
     formation:
@@ -3462,6 +3467,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "osaka-plain": {
+    // seeing / concept sources: 平原面积约 1600 km²（北摄山地—生驹／金刚山地—和泉山脉—大阪湾之间），多部词典百科一致；
+    //   1995 年阪神大地震与六甲—淡路岛断层带活动直接相关，六甲山系本身即由该断层带隆升。2026-09-10 核，verdict: ok。
     seeing:
       "The Osaka Plain is in western Honshu, on the eastern and northern shores of Osaka Bay — the core of the Kansai region. The three big cities of Osaka, Kyoto and Kobe and the continuous urban area between them lie on this plain and in the valleys around it. The plain is not large (about 1,600 km²) and is tightly hemmed in by rows of fault-block mountains such as Ikoma and Rokkō, with a very clear boundary between mountain and plain.",
     formation:
@@ -3472,11 +3479,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Osaka Plain and the Kanto Plain are both big-city plains of Japan, but the Kanto Plain is open and has volcanic-ash terraces; the Osaka Plain is cut to pieces by fault-block mountains, assembled from a string of small plains and basins, with a closer relationship between mountain and city. Versus the Nōbi Plain: the Osaka Plain does not have the large below-sea-level area that Nōbi does, so its flood problem is less extreme.",
     concept:
       "The Osaka Plain shows how block movement shapes settlement: the surrounding mountains are lifted along faults, the block between drops and is filled flat by rivers, and the cities grow in these dropped lowlands — with the fault often right at the mountain foot. There is an active fault at the base of Rokkō, and the 1995 Great Hanshin earthquake came from it. A common misconception is to take the mountain foot for the safest \"backed-by-mountain\" spot — in fault-block mountain country, the mountain foot often faces an active fault.",
+    // history sources: ⚠️ 原文把飞鸟、平城京并进了大阪平原。内阁府地形地质指南的大阪平原四至（北摄山地—生驹／金刚山地—和泉山脉—大阪湾）**不含奈良盆地**，飞鸟与平城京都在奈良盆地内；平安京在京都盆地。难波确在平原上。1 级。2026-09-10 核。
     history:
-      "The Osaka Plain was one of the centres of ancient Japanese civilisation — Naniwa, Asuka, Heijō-kyō (Nara) and Heian-kyō (Kyoto) were all in this area. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area.",
+      "The Osaka Plain was one of the centres of ancient Japanese civilisation: Naniwa stood on the plain itself, while Asuka and Heijō-kyō (Nara) lie in the neighbouring Nara Basin to the east — strictly outside the Osaka Plain — and Heian-kyō (Kyoto) sits in the Kyoto Basin to the north. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area.",
   },
 
   "ishikari-plain": {
+    // 全六段 sources: 北海道最大平原；过去是排水不畅的石狩泥炭地，经排水改造成稻田。
+    //   ✅ **专项复核「五大平原有没有被写成同一套成因」**：石狩（泥炭冲积低地）与十胜（火山灰台地）在本库里**写的是两套机制**、distinguish 段也明写了差异，没有混用（内阁府地形地质指南，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Ishikari Plain is the largest plain in Hokkaido, in the south-west of the island, on the lower Ishikari River. Sapporo, the capital of Hokkaido, is built on the southern edge of the plain, which also holds cities such as Asahikawa and large areas of rice paddy. It is enclosed by mountains and hills on three sides and opens north-west through Ishikari Bay to the Sea of Japan.",
     formation:
@@ -3492,6 +3502,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tokachi-plain": {
+    // 全六段 sources: 内阁府地形地质指南给十胜平原界限「北为然别火山、东为白糠丘陵、南为丰顷丘陵与太平洋、西为日高山脉」——
+    //   正文以「大雪山」概称北界山系（然别火山属大雪山火山群）可接受，东西两向精确对应。成因为叠置冲积扇 + 火山灰台地（洪積台地）。1 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Tokachi Plain is in south-eastern Hokkaido, a fan-shaped plain built out from the surrounding mountains by the Tokachi River and its tributaries, enclosed by the Hidaka Mountains to the west, Daisetsuzan to the north and the Shiranuka Hills to the east. With plenty of sunshine and dry summers, it is one of the few areas in Japan given over to large-scale, mechanised dryland farming and dairying — potatoes, sugar beet, beans and wide hayfields. The central city is Obihiro.",
     formation:
@@ -3615,6 +3627,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sanriku-coast": {
+    // 全六段 sources: 海岸约 600 km（青森八户至宫城石卷牡鹿半岛）；北山崎断崖高约 200 m。
+    //   ✅ **零争议红线专项复核**：通读六段中英全文，**未出现伤亡数字、未提及核事故、无任何评价**；
+    //   2011 年海啸只写了波高（「十几米甚至更高的浪高」/ run-up over ten metres）这一地学量，符合「只写地貌机制、不写灾害后果」的要求。
+    //   1896／1933 年历史海啸属广泛记载的自然灾害史。2026-09-10 核，verdict: ok。
     seeing:
       "The Sanriku Coast is about 600 km of the Pacific side of north-eastern Honshu (roughly from southern Aomori to northern Miyagi). It has two halves: the north is raised marine terraces, forming flat-topped tablelands and continuous cliffs up to 200 m high (such as Kitayamazaki); the south is a drowned-valley \"ria coast\" — the sea has flooded a set of parallel valleys, forming a jagged line of long narrow bays reaching inland.",
     formation:
@@ -3651,8 +3667,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tottori-sand-dunes": {
+    // formation / concept sources: ✅ **成因专项复核**：沙来自千代川从中国山地搬运的花岗岩风化砂，
+    //   经「河供砂—浪搬运—风堆积」的循环形成，**不是「沙漠化」的产物**（山阴海岸世界地质公园，2 级）。
+    //   正文的「常被当作『日本唯一的沙漠景观』，但从气候上看这里并不干旱」是**把流行说法与事实并列**的正确写法，保留。
+    //   ⚠️ C8：沙丘因上游筑坝、护岸与防风林导致供砂与风减少而一度缩小、被杂草侵占，当地靠人工除草维持流动状态——
+    //   正文用的是定性表述、没给会过期的年份数字，符合处理惯例。2026-09-10 核，verdict: ok。
+    // seeing sources: 尺度：16 km × **2.4 km**（山阴海岸世界地质公园官方，2 级）；**最大高低差约 90 m**，而 47 m 是「马の背」第二砂丘列自身的标高（鸟取县砂丘事务所，1 级；第三砂丘列约 60 m）。原文把一条沙丘列的标高当成了整片的相对高差。2026-09-10 核。
     seeing:
-      "The Tottori Sand Dunes are on the Sea of Japan coast in western Honshu — the largest dune field in Japan, about 16 km east–west and 2 km north–south, with a local relief of about 47 m. In rainy, mountainous, forested Japan, such an open field of moving dunes is unusual, and it is often called \"Japan's only desert landscape\", though the climate here is not actually dry.",
+      "The Tottori Sand Dunes are on the Sea of Japan coast in western Honshu — the largest dune field in Japan, about 16 km east–west and 2.4 km north–south, with a maximum relief of about 90 m — the crest of the \"Umanose\" ridge alone standing some 47 m high. In rainy, mountainous, forested Japan, such an open field of moving dunes is unusual, and it is often called \"Japan's only desert landscape\", though the climate here is not actually dry.",
     formation:
       "The sand of the Tottori Dunes comes from the Sendai River. The Sendai River carries large amounts of granite-weathered sand from the Chūgoku Mountains into the Sea of Japan, waves push the sand back to the shore, and the strong winter monsoon winds off the Sea of Japan blow the dry sand onshore and pile it beyond the coast. Since the ice ages this cycle of \"river supply — wave transport — wind deposition\" has continued, forming today's dunes. There are groundwater-fed hollows between the dunes.",
     observation:
@@ -3666,6 +3688,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   yakushima: {
+    // 全六段 sources: 宫之浦岳 1936 m，为整个九州地方最高峰（正文写「九州以南最高峰」偏保守、不算错）；
+    //   1993 年与白神山地同为日本首批 UNESCO 世界自然遗产；山区年降水量可超 10,000 mm（气象厅，1 级）。
+    //   ✅ **绳文杉树龄专项复核**：测年结果差异极大——1976 年推定 7000 年以上、外圈年轮约 2700 年、学习院大学碳测年最大仅 2170 年、
+    //   1996 年约 2600 年、2018 年岐阜大学约 2800 年。**正文用「常被说成……但争议很大」的并列写法、没有坐实单一数字**，判定不改。2026-09-10 核，verdict: ok。
     seeing:
       "Yakushima is off the southern tip of Kyushu — a nearly circular granite island about 25 km across. Its centre is mountain country above 3,000 feet, the highest peak Miyanoura-dake at 1,936 m, the highest mountain south of Kyushu. It is known for extreme rainfall (there is a saying that it \"rains 35 days a month\"), a complete vertical sequence of vegetation zones from subtropical to subarctic, and Japanese cedars (\"Yakusugi\") that may be thousands of years old; it was inscribed as a World Heritage site in 1993.",
     formation:
@@ -3681,6 +3707,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ryukyu-islands": {
+    // seeing / formation / observation / distinguish / concept sources: 「琉球群岛（日本称南西诸岛）」用的是无争议的主链表述。
+    //   UNESCO 两项：2000 年「琉球王国のグスク及び関連遺産群」（文化）、2021 年「奄美大島、徳之島、沖縄島北部及び西表島」（自然），年份核实无误（1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Ryukyu Islands (called the Nansei Islands in Japan) are a chain of islands stretching about 1,000 km south-west from Kyushu, separating the Pacific from the East China Sea. The climate is subtropical maritime, coral reefs are widely developed around the islands, and many islands' surface is \"Ryukyu limestone\" formed from uplifted coral reef, so there are limestone terraces, caves (\"gama\") and karst landforms. Amami-Ōshima, northern Okinawa Island and other islands were inscribed as a World Heritage site in 2021 for their well-preserved subtropical broadleaf evergreen forest.",
     formation:
@@ -3691,11 +3719,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ryukyu Islands are unlike the islands of the Japanese mainland: the mainland islands are dominated by volcanoes and drowned mountains, while the Ryukyus are dominated by coral reef and uplifted limestone, with a subtropical climate and an ecology closer to Taiwan and southern China. Versus pure coral islands like the Maldives: the Ryukyu islands have a rock base and mountains, and are not simple atolls.",
     concept:
       "The \"uplifted coral reef\" landform of the Ryukyus shows how crustal uplift and sea-level change act together: coral reef can only grow in warm shallow seas, and once lifted out of the sea it stops growing and turns to limestone; if reef accumulates and is uplifted repeatedly through different high-sea-level periods, a staircase of coral-reef terraces forms. A common misconception is to treat all tropical islands as volcanic — many Ryukyu islands have a surface of \"petrified coral\".",
+    // history sources: ⚠️ 零争议红线：删去「冲绳战役是……规模最大的地面战」一句（中英各一处）。**与意大利「一战山地战（简短事实）」的先例区别在于**：这是一个关于战役的**最高级排名**、不是定位性简短事实，且冲绳战役与至今仍在进行的基地与地方认同讨论直接缠绕，属「仍在持续的对立状态」一侧；它对这条地形条目也无地理价值。
+    //   ✅ 其余五段复核通过：未出现尖阁诸岛／钓鱼岛或任何可指向它的表述，未涉施政权移交、1972 年复归；琉球王国只作前现代史、未写「并入日本」的过程与评价。UNESCO 两项（2000 年琉球王国のグスク及び関連遺産群、2021 年奄美大島等自然遗产）年份核实无误（1 级）。
     history:
-      "Many of the Ryukyu Islands were long ruled by the Ryukyu Kingdom, which had close tribute and trade ties with China, Japan and South-East Asia; sites such as Shuri Castle (\"Gusuku Sites and Related Properties of the Kingdom of Ryukyu\") are a World Heritage cultural site. The area has a strong local character in language, music, food and religion. The Battle of Okinawa (1945) was the largest ground battle within Japanese home territory in the Pacific War.",
+      "Many of the Ryukyu Islands were long ruled by the Ryukyu Kingdom, which had close tribute and trade ties with China, Japan and South-East Asia; sites such as Shuri Castle (\"Gusuku Sites and Related Properties of the Kingdom of Ryukyu\") are a World Heritage cultural site. The area has a strong local character in language, music, food and religion.",
   },
 
   "shinano-river": {
+    // 全六段 sources: 全长 367 km（长野境内千曲川约 214 km + 新潟境内信浓川约 153 km），日本第一长河
+    //   （国交省北陆地方整备局信浓川河川事务所，1 级）；大河津分水路 1909 年动工、1922-08-25 通水（同，1 级）。
+    //   ✅ **专项复核「最长 vs 流域最大有没有混」**：distinguish 段正确区分了信浓川（最长 367 km）与利根川（流域最大 16,840 km²）两项不同排名，没有混用。2026-09-10 核，verdict: ok。
     seeing:
       "The Shinano River is the longest river in Japan, about 367 km (called the Chikuma River within Nagano Prefecture, and the Shinano River after it enters Niigata Prefecture). It rises in the Kanto Mountains of central Honshu, passes through the Nagano Basin, cuts through the Echigo Mountains, and finally empties into the Sea of Japan on the Echigo Plain in Niigata. The lower Echigo Plain is one of Japan's important rice-growing areas.",
     formation:
@@ -3711,6 +3744,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tone-river": {
+    // 全六段 sources: 流域面积 16,840 km²，日本第一（国交省关东地方整备局，1 级）；
+    //   利根川东迁为江户时代 17 世纪跨越数十年的改道工程，最终改由铫子入太平洋；1947 年卡斯林台风在栗桥附近决堤，此后大幅提高治水标准（同，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Tone River has the largest drainage basin in Japan (about 16,800 km²) and runs right across the Kanto Plain. Historically it was nicknamed \"Bandō Tarō\" (\"Bandō\" is an old name for Kanto, and \"Tarō\" means eldest son, the biggest). It rises in the mountains of northern Kanto, gathers many tributaries on the Kanto Plain, and finally empties into the Pacific at Chōshi in Chiba Prefecture. It supplies a great deal of the domestic and industrial water for the Tokyo metropolitan area.",
     formation:
@@ -8157,6 +8192,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-athos": {
+    // 全六段 sources: 主峰 2033 m；1988 年作为**混合遗产**列入 UNESCO（whc.unesco.org/en/list/454，1 级）；
+    //   9 世纪起隐修、10 世纪拜占庭皇帝特许状、20 座修道院。
+    //   ✅ **零争议红线专项复核**：正文**根本没有提及**只允许男性进入的规定（άβατον），也未涉自治地位、教义评价或现代政治——
+    //   完全落在红线许可范围内，无需改动。2026-09-10 核，verdict: ok。
     seeing:
       "Mount Athos forms the easternmost of the three prongs of the Halkidiki Peninsula, a narrow mountainous spur; its peak reaches 2,033 m and the massif drops steeply into the Aegean — a distinctive mountain-and-monastery landscape in northern Greece.",
     formation:
@@ -8172,6 +8211,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "white-mountains-crete": {
+    // seeing sources: 主峰帕赫内斯 2453 m；萨马利亚峡谷 1962 年经皇家法令设为国家公园。3 级多方互证。2026-09-10 核，verdict: ok。
     seeing:
       "The White Mountains rise over western Crete; the highest peak, Pachnes, reaches 2,453 m, named for snow that lingers into early summer and gives the range its pale, distant colour.",
     formation:
@@ -8187,8 +8227,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-pilio": {
+    // seeing sources: 最高峰：**Pourianos Stavros 1624 m**（峰顶有军事设施、公众不可登顶）。Pliasidi 是另一座峰、约 1547—1548 m。原文把真数字挂到了错的峰名上——与阿基尔岛那处同型。3 级多方互证。2026-09-10 核。
     seeing:
-      "Mount Pelion is a forested mountain peninsula reaching into the Aegean from eastern Thessaly; its highest point, Pliasidi, reaches 1,624 m, and its slopes are covered in beech and chestnut forest.",
+      "Mount Pelion is a forested mountain peninsula reaching into the Aegean from eastern Thessaly; its highest point, Pourianos Stavros, reaches 1,624 m, and its slopes are covered in beech and chestnut forest.",
     formation:
       "The massif is built mainly of schist and limestone, an eastward extension of the Pindus orogenic belt; comparatively high rainfall has produced dense forest and numerous streams, making Pelion one of Greece's more heavily forested mountains.",
     observation:
@@ -8204,8 +8245,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   methana: {
     seeing:
       "Methana is a volcanic peninsula on the north-eastern Peloponnese, built up from several coalesced lava domes — the westernmost active centre of the South Aegean Volcanic Arc.",
+    // formation sources: 前 230 年喷发形成的熔岩穹丘是**卡梅尼霍拉（Kameni Chora）**，在半岛西北、熔岩入海（EAGME，1 级）。原文的「弗莱韦斯」是雅典近郊海外的一座无人小岛，与甲基火山群无关——纯地名张冠李戴。2026-09-10 核。
     formation:
-      "The peninsula is built of andesite lava domes formed over several eruptive episodes, producing broken, hummocky terrain between the domes; the most recent known eruption, around 230 BCE, formed the Fleves islet lava dome.",
+      "The peninsula is built of andesite lava domes formed over several eruptive episodes, producing broken, hummocky terrain between the domes; the most recent known eruption, around 230 BCE, formed the Kameni Chora lava dome.",
     observation:
       "From the air, Methana shows a classic lava-dome landscape — a cluster of rounded, rough-surfaced highs, in clear contrast with the gentler Peloponnesian coastline around it.",
     distinguish:
@@ -8217,6 +8259,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lasithi-plateau": {
+    // seeing sources: 高原平均海拔约 840 m，各来源在 800—850 m 间浮动，正文「约 850 米」在「约」字容许的误差内，不改。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Lasithi Plateau is an enclosed highland basin in eastern Crete at about 850 m elevation, ringed by mountains; thousands of white canvas-sailed windmills once pumped water for irrigation here.",
     formation:
@@ -8253,6 +8296,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "santorini-caldera": {
+    // 全六段 sources: ✅ **两处专项复核都通过**。① 正文**没有**把米诺斯喷发写成「摧毁了米诺斯文明」——
+    //   那是流传极广但学界并不支持的因果推论（克诺索斯等宫殿在喷发后仍延续了一个多世纪）；② 亚特兰蒂斯已明确写成
+    //   「仅是后世的一种猜测性关联，并非确证的历史事实」。**假说没有被写成定论。**
+    //   放射性碳测年集中在前 1627—1600 年、VEI 7；淹没破火山口约 7.5 × 11 km（正文「约 12 公里」落在长轴范围内）。2026-09-10 核，verdict: ok。
     seeing:
       "The Santorini caldera is a vast collapse crater in the Aegean, formed when a massive Late Bronze Age eruption around 1600 BCE caused the island's centre to collapse; the surviving arc of islands forms today's Thira.",
     formation:
@@ -8268,8 +8315,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   nisyros: {
+    // seeing sources: 斯特凡诺斯火山口：椭圆形，长径约 350 m、短径约 260 m、最深 27 m（尼西罗斯世界地质公园官网，1 级）。原文只写了短轴、会被读成圆形。2026-09-10 核。
     seeing:
-      "Nisyros is a near-circular stratovolcano island in the Dodecanese; its central Stefanos crater is about 260 m across and still hosts active fumaroles and geothermal activity.",
+      "Nisyros is a near-circular stratovolcano island in the Dodecanese; its central Stefanos crater is elliptical, roughly 260 by 350 m and still hosts active fumaroles and geothermal activity.",
     formation:
       "The volcanic island is built up from andesite and dacite erupted over several episodes; the central crater formed through a more recent phreatic eruption — explosive but without a large fresh-magma outflow — and its floor remains bare to this day.",
     observation:
@@ -8283,6 +8331,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gulf-of-corinth": {
+    // 全六段 sources: 已作恰当限定（「较快……之一」「具体速率因测算方法不同而有所差异」），**没有给出会过期的单一精确速率**。
+    //   ✅ 专项复核：**地峡（古已有之的陆路通道）与科林斯运河（1893 年前后人工开凿）两件事区分清楚**，未混为一谈。2026-09-10 核，verdict: ok。
     seeing:
       "The Gulf of Corinth is a long, narrow inlet separating the Peloponnese from mainland Greece — essentially an active rift graben where the two shores continue to pull apart.",
     formation:
@@ -8335,6 +8385,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "zakynthos-navagio": {
+    // 全六段 sources: ⚠️ C8 现状：2022 年地震后海湾因落石被希腊环境部划为不安全、**禁止登滩**，封闭已延长至 2026 年 10 月底；
+    //   游客仍可乘船靠近或在崖顶观景台俯瞰。正文写的是「仅能经海路或崖顶观景点抵达」，**没有断言可以下到沙滩**，与现状不冲突，判定不改。
+    //   📌 但「经海路……抵达」今后若被读作「可乘船登陆」需随现状调整——记在这里。3 级媒体。2026-09-10 核，verdict: ok。
     seeing:
       "Navagio Beach is a small cove on the north-western coast of Zakynthos, enclosed by steep white limestone cliffs and reachable only by boat or from a clifftop viewpoint.",
     formation:
@@ -8350,6 +8403,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mani-peninsula": {
+    // 全六段 sources: ✅ **零争议红线专项复核**：正文只写了塔楼式民居的建筑传统，**没有**提及家族世仇／宗族械斗，也没有族群性格评价，通过。
+    //   泰纳隆角为希腊大陆最南端、欧洲大陆第二南端，正文用「常被视为」这一限定准确。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Mani Peninsula is a rugged mountainous cape at the southern tip of the Peloponnese, a continuation of Taygetus southward, with rough terrain and much exposed limestone.",
     formation:
@@ -8365,6 +8420,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   crete: {
+    // 全六段 sources: 希腊第一大岛；伊达山（普西罗里蒂斯）2456 m 为全岛最高点；希腊弧（非洲板块向爱琴微板块俯冲）持续隆升。
+    //   📌 交叉留痕：**本条的 2456 m 正是证伪 `samothraki`「整个爱琴海诸岛最高点」的依据**——两条同在一批里，并排读才对上。2026-09-10 核，verdict: ok。
     seeing:
       "Crete is Greece's largest island, its terrain rising and falling from west to east across several mountain ranges — the White Mountains, Mount Ida (Psiloritis, 2,456 m, the island's highest point) — with the Messara Plain in the south-central part of the island.",
     formation:
@@ -8380,8 +8437,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   samothraki: {
+    // seeing sources: ⚠️ 原文「整个爱琴海诸岛中的最高点」**被本库 `crete` 条目自己证伪**（伊达山 2456 m），埃维亚岛迪尔菲斯山 1743 m 亦高于它，芬加里峰实排第三。第五次「排他性断言被本库另一条目证伪」，且这次两条同在一批里。2026-09-10 核。
     seeing:
-      "Samothrace is a predominantly granite island in the northern Aegean; its central peak, Mount Fengari, reaches 1,611 m — the highest point of any Aegean island.",
+      "Samothrace is a predominantly granite island in the northern Aegean; its central peak, Mount Fengari, reaches 1,611 m — the third-highest summit of any Aegean island, after Mount Ida on Crete and Mount Dirfys on Evia.",
     formation:
       "The island is built of granite, with steep terrain and numerous waterfalls and streams — among the most dramatically relieved of the Aegean islands despite its modest area, with striking relative relief.",
     observation:
@@ -8395,6 +8453,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   corfu: {
+    // 全六段 sources: 伊奥尼亚群岛最北、面积第二大的主要岛屿；潘托克拉托山 906 m；科孚老城 2007 年列入 UNESCO
+    //   （whc.unesco.org/en/list/978，1 级），威尼斯统治期 1386—1797 年。
+    //   ✅ 零争议红线：威尼斯／英国保护领时期只作建筑史陈述、无评价，未涉现代政治与国际关系。2026-09-10 核，verdict: ok。
     seeing:
       "Corfu is the northernmost major island of the Ionian Islands; its highest point, Mount Pantokrator, reaches 906 m, and its vegetation stays green year-round thanks to rainfall notably higher than the Aegean islands receive.",
     formation:
@@ -8410,6 +8471,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   milos: {
+    // seeing sources: ✅ 零争议红线：《米洛斯的维纳斯》1820 年发现、现藏卢浮宫——**只作发现与收藏的事实陈述，未涉文物归还争议**，通过。2026-09-10 核。
     seeing:
       "Milos is a volcanic island on the South Aegean Volcanic Arc, its varied and colourful volcanic rock layers forming a distinctive landscape, most striking at the Sarakiniko coast.",
     formation:
@@ -8420,8 +8482,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Milos and Nisyros are islands on the South Aegean Volcanic Arc, but Milos is known for its colourful, varied volcanic rock and mineral resources, while Nisyros is defined by its well-preserved crater landform.",
     concept:
       "Milos's colourful landscape reflects successive layers of volcanic material from different eruptive episodes and rock types — a textbook case in the surface lithological diversity of volcanic islands; the island still produces kaolin, perlite and bentonite.",
+    // history sources: 黑曜岩贸易起点：弗兰赫蒂洞穴**中石器时代**地层（约前 9 千纪）已有米洛斯黑曜岩，早于新石器。只有 3 级综述，故正文写「史前 / 最早可追溯至中石器时代」、不写死千纪。2026-09-10 核。
     history:
-      "Milos has traded obsidian since the Neolithic era; the statue known as the Venus de Milo, discovered on the island in 1820, is now held in the Louvre.",
+      "Milos has traded obsidian since prehistoric times, with evidence of it crossing the sea as early as the Mesolithic; the statue known as the Venus de Milo, discovered on the island in 1820, is now held in the Louvre.",
   },
 
   rhodes: {

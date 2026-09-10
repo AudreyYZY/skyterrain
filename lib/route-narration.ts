@@ -5064,7 +5064,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京飞阿斯塔纳，向西横穿中国北方与中亚，全程都在中纬度大陆腹地飞行。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
       "继续向西，飞机进入准噶尔盆地——天山与阿尔泰山之间一片被沙漠和绿洲环绕的内陆盆地，中国最大的油田之一克拉玛依便坐落于此。跨过中哈边境后，地貌转为萨雷阿尔卡草原：哈萨克丘陵腹地一片起伏平缓的干旱草原，是哈萨克斯坦国土面积最大的地理单元之一，历史上是欧亚草原游牧文化的重要组成部分。" +
-      "飞机最终降落在草原深处的阿斯塔纳——一座2024年更名前后延续着努尔苏丹旧称的年轻都城，坐落在伊希姆河畔的平坦草原上。这趟航班穿越了从戈壁到欧亚大草原的连续地貌带。",
+      "飞机最终降落在草原深处的阿斯塔纳——一座1997年才迁来的年轻都城，坐落在伊希姆河畔的平坦草原上。这趟航班穿越了从戈壁到欧亚大草原的连续地貌带。",
     "en-US":
       "Beijing to Astana flies west across northern China and Central Asia, staying over mid-latitude continental interior the whole way. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, a broad expanse of gravel desert stretching to the horizon." +
       " Farther west the plane crosses the Junggar Basin, an inland basin ringed by desert and oases between the Tianshan and Altai ranges, home to Karamay, one of China's largest oil fields. After crossing the China-Kazakhstan border the landscape becomes the Saryarka Steppe, a gently rolling arid steppe at the heart of the Kazakh Uplands and one of Kazakhstan's largest geographic regions, historically part of the wider Eurasian steppe nomadic world." +
