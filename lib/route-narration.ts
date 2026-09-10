@@ -1651,11 +1651,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "雷克雅未克飞埃伊尔斯塔济，从西南首都区一直飞到东部峡湾，几乎是冰岛最长的一条国内航线。起飞后先越过辛格维利尔的板块裂谷，然后进入中央高地的火山荒漠。" +
-      "航线中段掠过冰岛正中心的霍夫斯冰原——一座圆盾形的冰帽，下面压着火山。再往东南，脚下是欧洲最大的冰川瓦特纳冰原的北缘：一片望不到边的白色高原，几条冰川舌从边缘伸进黑色的山谷，冰下还有活火山（格里姆火山等）。" +
+      "航线中段掠过冰岛正中心的霍夫斯冰原——一座圆盾形的冰帽，下面压着火山。再往东南，脚下是按体积算欧洲最大的冰帽瓦特纳冰原的北缘：一片望不到边的白色高原，几条冰川舌从边缘伸进黑色的山谷，冰下还有活火山（格里姆火山等）。" +
       "越过冰原，地面陷成东部的峡湾和河谷，埃伊尔斯塔济在一条细长的湖边、冰岛少有的大片林地旁。",
     "en-US":
       "Reykjavík to Egilsstaðir flies from the south-western capital area to the eastern fjords, one of the longest domestic routes in Iceland. After take-off you cross the plate rift at Þingvellir, then enter the volcanic desert of the central highland." +
-      " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, the largest glacier in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
+      " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, by volume the largest ice cap in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
       " Over the ice cap the land drops into the eastern fjords and valleys, and Egilsstaðir is by a long, thin lake beside one of Iceland's rare large areas of woodland.",
     },
     travel: {
@@ -1697,11 +1697,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "雷克雅未克飞赫本，几乎全程沿冰岛南岸，是一条“瀑布—火山—冰川”的风景线。起飞后向东，先经过海克拉火山——冰岛历史上喷发最频繁的火山之一，中世纪的欧洲人叫它“地狱之门”，山体是一道长长的火山脊。" +
-      "往东南，脚下越来越白：那是欧洲最大的冰川瓦特纳冰原，占了冰岛约八分之一的面积，几条冰川舌从边缘伸进冰水冲积平原（sandur）。" +
+      "往东南，脚下越来越白：那是按体积算欧洲最大的冰帽瓦特纳冰原，2023年测得覆盖冰岛约7%的国土，几条冰川舌从边缘伸进冰水冲积平原（sandur）。" +
       "接近赫本，冰原边缘出现一个连着海的泻湖，里面漂满淡蓝色的浮冰——杰古沙龙冰河湖，冰是从冰川舌上崩落、顺水流向大海的。赫本就在冰原对面、一处潟湖口的沙嘴上。",
     "en-US":
       "Reykjavík to Höfn runs almost entirely along Iceland's south coast, a 'waterfalls–volcanoes–glaciers' scenic line. After take-off you head east, first past Hekla — one of the most frequently erupting volcanoes in Iceland's history, which medieval Europeans called the 'gateway to Hell', its body a long volcanic ridge." +
-      " South-east the ground grows whiter: Vatnajökull, the largest glacier in Europe, covering about an eighth of Iceland, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
+      " South-east the ground grows whiter: Vatnajökull, by volume the largest ice cap in Europe, covering about 7% of Iceland as measured in 2023, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
       " Approaching Höfn, a lagoon connected to the sea appears at the ice edge, full of pale blue floes — Jökulsárlón, where ice breaks off the glacier tongue and drifts to the sea. Höfn is opposite the ice cap, on a spit at the mouth of a lagoon.",
     },
     travel: {
@@ -1936,12 +1936,12 @@ export const ROUTE_NARRATION: Record<
       "巴黎飞尼斯，从法国北部一路飞到地中海岸，横穿这个国家的几个主要地形单元。起飞后先越过巴黎盆地——一个巨大的沉积盆地，塞纳河及其支流在这里冲出层层叠叠的低丘和田野，法国近一半人口住在这一带。" +
       "往南地面渐渐隆起，进入中央高原：一大片以死火山为主的老高原，多姆山链一带的熔岩穹丘和火口湖清晰可辨，是欧洲少见的、地表还能读出火山轮廓的地区之一。" +
       "越过高原东南缘，罗讷河河谷出现在脚下——这条从阿尔卑斯冰川发源、一路收纳支流南下的大河，是连接法国北部与地中海的历史通道。" +
-      "接近尼斯，地面变成普罗旺斯阿尔卑斯的山地，凡尔登峡谷——欧洲最大的峡谷之一，由绿松石色的河水切出——就在这一带，最后飞机沿海岸线降落，蔚蓝海岸的弧形海湾展开在眼前。",
+      "接近尼斯，地面变成普罗旺斯阿尔卑斯的山地，凡尔登峡谷——常被称作欧洲最深的峡谷之一，由绿松石色的河水切出——就在这一带，最后飞机沿海岸线降落，蔚蓝海岸的弧形海湾展开在眼前。",
     "en-US":
       "Paris to Nice flies from the north of France to the Mediterranean coast, crossing several of the country's major landform provinces. After take-off you cross the Paris Basin — a huge sedimentary basin where the Seine and its tributaries have carved layered low hills and fields, home to nearly half of France's population." +
       " South the land gradually rises into the Massif Central: a large old plateau of mostly extinct volcanoes, with the lava domes and crater lakes of the Chaîne des Puys clearly visible — one of the few places in Europe where volcanic shapes are still readable on the surface." +
       " Over the south-eastern edge of the plateau, the Rhône valley appears below — the great river that rises from Alpine glaciers and gathers tributaries flowing south, historically the corridor linking northern France to the Mediterranean." +
-      " Approaching Nice, the land becomes the mountains of the Provençal Alps, with the Gorges du Verdon — one of the largest canyons in Europe, cut by turquoise water — in this area, and finally the plane follows the coastline down to the curved bay of the Côte d'Azur.",
+      " Approaching Nice, the land becomes the mountains of the Provençal Alps, with the Gorges du Verdon — often called one of Europe's deepest canyons, cut by turquoise water — in this area, and finally the plane follows the coastline down to the curved bay of the Côte d'Azur.",
     },
     travel: {
     "zh-CN":
@@ -2878,10 +2878,10 @@ export const ROUTE_NARRATION: Record<
   "dub-cfn": {
     study: {
     "zh-CN":
-      "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积最大的国家公园的核心景观。" +
+      "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积第二大的国家公园的核心景观。" +
       "飞机随后降落在多尼戈尔湾畔的卡里克芬机场，这条航线是连接爱尔兰西北部与首都的重要生命线，也是俯瞰爱尔兰荒野山地地貌的难得视角。",
     "en-US":
-      "Flying from Dublin to Donegal is a government-subsidised route linking Ireland's capital with a remote part of the north-west; soon after take-off the flight turns north-west, crossing the rural countryside of north-central Ireland. Approaching County Donegal, Glenveagh comes into view below — a deeply cut glacial trough valley whose narrow Lough Veagh is flanked by steep cliffs, with Glenveagh Castle set deep in the valley against a backdrop of wilderness, the centrepiece of Ireland's largest national park." +
+      "Flying from Dublin to Donegal is a government-subsidised route linking Ireland's capital with a remote part of the north-west; soon after take-off the flight turns north-west, crossing the rural countryside of north-central Ireland. Approaching County Donegal, Glenveagh comes into view below — a deeply cut glacial trough valley whose narrow Lough Veagh is flanked by steep cliffs, with Glenveagh Castle set deep in the valley against a backdrop of wilderness, the centrepiece of what is, by area, Ireland's second-largest national park." +
       " The flight then descends into Carrickfinn Airport on Donegal Bay; this route is an important lifeline connecting north-west Ireland with the capital, and offers a rare aerial view of Ireland's wilderness upland terrain.",
     },
     travel: {
@@ -2951,7 +2951,7 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "哥本哈根飞博恩霍尔姆，是一趟跨越波罗的海、抵达丹麦最东端孤悬海岛的航线。起飞后飞机向东南方向飞越开阔的波罗的海海域，脚下先是西兰岛与丹麦本土渐渐远去的海岸线，随后进入一片看不见陆地的开阔海域，约半小时后抵达博恩霍尔姆岛上空。" +
-      "降落前脚下展开阿尔明丁根森林高地——岛屿中部的花岗岩高地，骑士峰海拔162米，是丹麦全境唯一大面积可见花岗岩基岩的地区，前寒武纪花岗岩基岩是波罗的地盾向南延伸出露的一部分，茂密森林与裸露岩体交织，与丹麦本土常见的平坦冰碛地貌截然不同，飞机随后降落在岛屿西岸的龙讷，博恩霍尔姆岛也因阳光充足而被称为“丹麦的阳光岛”。",
+      "降落前脚下展开阿尔明丁根森林高地——岛屿中部的花岗岩高地，骑士峰海拔162米，是丹麦全境少数大面积可见花岗岩基岩的地区之一，前寒武纪花岗岩基岩是波罗的地盾向南延伸出露的一部分，茂密森林与裸露岩体交织，与丹麦本土常见的平坦冰碛地貌截然不同，飞机随后降落在岛屿西岸的龙讷，博恩霍尔姆岛也因阳光充足而被称为“丹麦的阳光岛”。",
     "en-US":
       "Flying from Copenhagen to Bornholm crosses the open Baltic Sea to reach Denmark's easternmost, isolated island. After take-off the flight heads south-east across open Baltic waters, arriving over Bornholm after about half an hour." +
       " Before landing, the Almindingen forest highland comes into view below — a granite highland at the island's centre; its peak, Rytterknægten, reaches 162 m, and the area is one of the only places in Denmark where granite bedrock is exposed over a wide area, dense forest interwoven with bare rock, quite unlike the flat moraine landforms typical of mainland Denmark. The flight then descends into Rønne on the island's western shore.",
@@ -5413,11 +5413,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "圣地亚哥飞特木科，是一条从中央谷地一路飞入智利南部湖区北缘的航线。起飞后，舷窗下方先是熟悉的方格状农田，随着航程推进，田野间开始出现连绵的低矮森林与散布的湖泊——这是湖区特有的地貌开始显现。" +
-      "临近降落前，飞机会靠近利亚伊马火山——智利中南部海拔最高、喷发最频繁的活火山之一，历史记载喷发超过50次。它由两个叠合的火山锥组成，山顶常年积雪，山麓保存着智利“活化石”南洋杉的原始林。" +
+      "临近降落前，飞机会靠近利亚伊马火山——智利中南部海拔最高、喷发最频繁的活火山之一，历史记载喷发约50次。它由两个叠合的火山锥组成，山顶常年积雪，山麓保存着智利“活化石”南洋杉的原始林。" +
       "飞机最终降落在特木科，这是通往维亚里卡火山、普孔等湖区热门目的地的门户城市，也是智利马普切原住民文化最集中的城市之一。这条航线让乘客在一次飞行里，从中央谷地的农业景观直接过渡到湖区特有的“火山—森林—湖泊”组合地貌。",
     "en-US":
       "Santiago to Temuco flies from the Central Valley into the northern edge of Chile's southern Lake District. After takeoff the familiar grid of farmland lies below; as the flight continues, patches of low forest and scattered lakes begin to appear — the Lake District's distinctive landscape coming into view." +
-      " Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with more than 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
+      " Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with about 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
       " The flight lands at Temuco, the gateway city to Villarrica Volcano, Pucón, and other Lake District highlights, and one of the cities with the largest concentration of Mapuche Indigenous culture in Chile. In a single flight, passengers move from the Central Valley's farmland straight into the Lake District's signature combination of volcano, forest, and lake.",
     },
     travel: {
