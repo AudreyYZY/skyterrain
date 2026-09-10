@@ -245,7 +245,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "kr-capital": { zh: "首都圈", en: "Capital Area", order: 280 },
   "kr-yeongnam": { zh: "岭南地区", en: "Yeongnam Region", order: 281 },
   "kr-honam": { zh: "湖南地区", en: "Honam Region", order: 282 },
-  "kr-gangwon": { zh: "江原道", en: "Gangwon Province", order: 283 },
+  "kr-gangwon": { zh: "江原", en: "Gangwon", order: 283 },
   "kr-jeju": { zh: "济州岛", en: "Jeju Island", order: 284 },
   "kr-chungcheong": { zh: "忠清地区", en: "Chungcheong Region", order: 285 },
   // 波兰（马佐夫舍—小波兰—大波兰与西里西亚—波美拉尼亚—瓦尔米亚马祖里与波德拉谢）

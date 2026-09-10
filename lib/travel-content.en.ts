@@ -8209,8 +8209,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   linz: {
+    // 零改动留痕（2026-09-10）：2009 年欧洲文化之都、2014-12-01 入选 UNESCO 媒体艺术之都，均核实属实。
+    //   ✅ 零争议红线：正文只写现代的钢铁与港口经济、文化之都与电子艺术节，**未涉及纳粹时期的城市规划与工业史**，通过。
+    // identity sources: 人口：林茨市政府公报 2026-01-01 为 215,040（1 级）。**howItWorks 早已写对、identity 没跟上**（C6-h）。2026-09-10 核。
     identity:
-      "Linz is the capital of Upper Austria and Austria's third-largest city, with a population of about 210,000, set on the Danube — an important industrial and cultural city.",
+      "Linz is the capital of Upper Austria and Austria's third-largest city, with a population of about 215,000 at the start of 2026, set on the Danube — an important industrial and cultural city.",
     // howItWorks sources: 林茨市政府官方新闻稿（2026 年 1 月）：2026-01-01 市人口 215,040，
     //   https://www.linz.at/medienservice/2026/202601_133824.php（1 级，2026-09-08 核）。
     //   **原文的「都会区约 82 万」已删**：林茨市政府自己的「Ballungsraum」口径（含 13 个直接相邻市镇）
@@ -8306,8 +8309,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   bregenz: {
+    // 零改动留痕（2026-09-10）：「比州内最大的城市多恩比恩还小」经核属实（多恩比恩 52,252 > 布雷根茨 29,270）；
+    //   水上舞台约 7,000 座、「世界最大湖上舞台」的说法有多方来源支撑。
+    // identity sources: 人口：2026-01-01 为 29,270（Statistik Austria 终版，经 3 级转引）。同条目 howItWorks 的「多恩比恩比布雷根茨大」经核属实（多恩比恩 52,252）。2026-09-10 核。
     identity:
-      "Bregenz is the capital of Vorarlberg, with a population of about 30,000, set on the eastern shore of Lake Constance — Austria's westernmost city, facing Switzerland and Germany across the lake.",
+      "Bregenz is the capital of Vorarlberg, with a population of about 29,000 at the start of 2026, set on the eastern shore of Lake Constance — Austria's westernmost city, facing Switzerland and Germany across the lake.",
     // howItWorks sources: Statistik Austria 2026-01-01 终版：布雷根茨 29,270（2023 年约 29,600，略降）。
     //   https://www.citypopulation.de/de/austria/vorarlberg/bregenz/80207__bregenz/
     //   （3 级，标注「Die Einwohnerzahlen für 2026 sind endgültig」转引官方终版，2026-09-08 核）。
@@ -8326,11 +8332,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "zell-am-see": {
+    // 零改动留痕（2026-09-10）：市域 55.2 km² 与正文「约 55 平方公里」一致；当地无民用商业机场，正文表述无误。
+    // identity sources: 人口：2026-01-01 为 10,217（Statistik Austria 终版）；萨尔茨堡州政府 2025-01-01 为 10,227（1 级）。原文「约 9,900」是未标年的旧值。2026-09-10 核。
     identity:
-      "Zell am See is a lakeside town in the Pinzgau region of Salzburg state, with a population of about 10,000, set on the shore of the Zeller See at the foot of the Kitzsteinhorn — an Alpine resort offering both lake and glacier scenery.",
+      "Zell am See is a lakeside town in the Pinzgau region of Salzburg state, with a population of about 10,200 at the start of 2026, set on the shore of the Zeller See at the foot of the Kitzsteinhorn — an Alpine resort offering both lake and glacier scenery.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zell am See (town in Salzburg state, district seat; 55 km²; ~9,900; Lake Zell; Schmittenhöhe 138 km pistes; Kaprun/Kitzsteinhorn 10 km separate municipality; Grossglockner ~30 km; rail 1875; Salzburg ~80 km)
     howItWorks:
-      "Zell am See is a town of Salzburg state and the seat of Zell am See district, about 55 km² with about 9,900 people, an elected council and mayor, and police and schools belonging to the state. The town lies on the west shore of Lake Zell, a resort of the aristocracy since the railway of 1875, the Schmittenhöhe cable car climbing from the edge of town to 138 km of pistes, Kaprun 10 km south another municipality with the glacier ski area of the Kitzsteinhorn, the two marketed as one resort, the Grossglockner about 30 km south, visitors from the Gulf filling the town in summer, and Salzburg about 80 km north. Newcomers most often go wrong by taking 'Zell am See-Kaprun' for one town, when they are two municipalities, the glacier at Kaprun and the lake at Zell.",
+      "Zell am See is a town of Salzburg state and the seat of Zell am See district, about 55 km² with about 10,200 people at the start of 2026, an elected council and mayor, and police and schools belonging to the state. The town lies on the west shore of Lake Zell, a resort of the aristocracy since the railway of 1875, the Schmittenhöhe cable car climbing from the edge of town to 138 km of pistes, Kaprun 10 km south another municipality with the glacier ski area of the Kitzsteinhorn, the two marketed as one resort, the Grossglockner about 30 km south, visitors from the Gulf filling the town in summer, and Salzburg about 80 km north. Newcomers most often go wrong by taking 'Zell am See-Kaprun' for one town, when they are two municipalities, the glacier at Kaprun and the lake at Zell.",
     layout:
       "The old-town centre preserves a medieval street layout along the western shore of the Zeller See; cable car stations connect the town to the Kitzsteinhorn ski area, where the summit holds snow year-round for skiing in every season.",
     gettingAround:
@@ -8362,6 +8370,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is most comfortable, with apricot blossom in early April (in the Wachau). Half a day for the town, a full day with the Wachau. An easy day trip from Vienna.",
   },
   krems: {
+    // 零改动留痕（2026-09-10）：正文已带年份与数字（约 2.6 万，2026 年初），是本批 10 城里唯一一开始就写全的。
+    //   📌 来源可升级：克雷姆斯市政府官网「Krems in Zahlen」给 2026 年 1 月主住所 **25,840**（1 级），
+    //   比注释原引的 citypopulation.de（3 级，25,581）级别更高，两者都落在「约 2.6 万」内。「特许市（Statutarstadt）」身份属实。
     // identity sources: Statistik Austria 2026-01-01 终版：克雷姆斯（官方全名 Krems an der Donau，法定市）25,581。
     //   https://citypopulation.de/de/austria/niederosterreich/krems_an_der_donau_stadt/30101__krems_an_der_donau/
     //   （3 级，标注官方终版，2026-09-08 核）。
@@ -8382,11 +8393,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Early April for blossom, July for apricots and September–October for the harvest are best; boats stop and taverns close in winter. Half a day for Krems, a day for the Wachau. An easy day trip from Vienna, or a night in Dürnstein.",
   },
   "bad-ischl": {
+    // 零改动留痕（2026-09-10）：市域 162.85 km² 与正文「约 163 平方公里」一致；当地无民用商业机场，正文表述无误。
+    //   哈布斯堡避暑史（1854 年皇帝别墅、1914-07-28 宣战书在此签署）为广泛记载史实、无评价性表述。
+    // identity sources: 人口：2026-01-01 主住所 14,116（Statistik Austria 终版）；市政府官网 2025-01-01 为 14,129（1 级）。**只取主住所口径**——另有约 3,140 副住所，合计约 1.73 万，不要混用。2026-09-10 核。
     identity:
-      "Bad Ischl lies in the Salzkammergut of Upper Austria where the Ischl meets the Traun, with about 14,000 people. Brine cures made it a fashionable spa in the nineteenth century; in 1854 the mother of Emperor Franz Joseph I gave him the Kaiservilla as a wedding present, and for nearly sixty years he spent every summer here — on 28 July 1914 he signed the declaration of war on Serbia in the villa. The composer Lehár lived here, Brahms and Bruckner visited, and the Zauner pastry shop founded in 1832 served the court. In 2024 Bad Ischl and the Salzkammergut were European Capital of Culture, with Hallstatt and the Wolfgangsee close by.",
+      "Bad Ischl lies in the Salzkammergut of Upper Austria where the Ischl meets the Traun, with about 14,000 people at the start of 2026. Brine cures made it a fashionable spa in the nineteenth century; in 1854 the mother of Emperor Franz Joseph I gave him the Kaiservilla as a wedding present, and for nearly sixty years he spent every summer here — on 28 July 1914 he signed the declaration of war on Serbia in the villa. The composer Lehár lived here, Brahms and Bruckner visited, and the Zauner pastry shop founded in 1832 served the court. In 2024 Bad Ischl and the Salzkammergut were European Capital of Culture, with Hallstatt and the Wolfgangsee close by.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bad Ischl (town in Gmunden district, Upper Austria; 163 km²; ~14,000; Salzkammergut centre; Kaiservilla 1854; Zauner 1832; Lehár villa; ECoC 2024 with Salzkammergut; Traun; Salzburg ~55 km; Hallstatt ~20 km)
     howItWorks:
-      "Bad Ischl is a town of Gmunden district in Upper Austria, about 163 km² with about 14,000 people, an elected council and mayor, and police and schools belonging to the state. It is the centre of the Salzkammergut: a fashionable spa for brine cures from the early nineteenth century, from 1854 Emperor Franz Joseph spent every summer at the Kaiservilla north of town, the court and the composers followed, Lehár's villa stands by the river and the Zauner café opened in 1832 still trades on the main street; the town lies where the Ischl meets the Traun, in 2024 it was European Capital of Culture together with the whole region, Salzburg lies about 55 km west and Hallstatt about 20 km south. Newcomers most often go wrong by taking Bad Ischl for a stop on the way to Hallstatt, when it is the historic centre and transport hub of the lake district.",
+      "Bad Ischl is a town of Gmunden district in Upper Austria, about 163 km² with about 14,000 people at the start of 2026, an elected council and mayor, and police and schools belonging to the state. It is the centre of the Salzkammergut: a fashionable spa for brine cures from the early nineteenth century, from 1854 Emperor Franz Joseph spent every summer at the Kaiservilla north of town, the court and the composers followed, Lehár's villa stands by the river and the Zauner café opened in 1832 still trades on the main street; the town lies where the Ischl meets the Traun, in 2024 it was European Capital of Culture together with the whole region, Salzburg lies about 55 km west and Hallstatt about 20 km south. Newcomers most often go wrong by taking Bad Ischl for a stop on the way to Hallstatt, when it is the historic centre and transport hub of the lake district.",
     layout:
       "The town sits in the valley where the two rivers meet, with the pedestrian Pfarrgasse, the Zauner café and the parish church at the centre on the east bank of the Traun, the Kaiservilla and its park at the foot of the hill on the west bank, and the Lehár Villa on the Traun. The station lies south of the centre. The salt mine is in the hills to the south-east. Hallstatt is about 20 km south, the Wolfgangsee about 10 km west, and Gmunden and the Traunsee about 30 km north.",
     gettingAround:
@@ -10020,7 +10034,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a resident-registered population of about 51.12 million at the end of 2024 (Ministry of the Interior and Safety); the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
     layout:
-      "The country divides broadly into five regions: the Capital Area (Seoul, Incheon and surroundings), the Yeongnam region (Busan, Gyeongju, Ulsan and other south-eastern cities), the Honam region (Jeonju and other south-western cities), Gangwon Province (Gangneung, Sokcho and the eastern coast and mountains), and Jeju Island (a volcanic island to the south).",
+      "The country divides broadly into five regions: the Capital Area (Seoul, Incheon and surroundings), the Yeongnam region (Busan, Gyeongju, Ulsan and other south-eastern cities), the Honam region (Jeonju and other south-western cities), Gangwon (Gangneung, Sokcho and the eastern coast and mountains), and Jeju Island (a volcanic island to the south).",
     gettingAround:
       "The KTX high-speed rail links Seoul with Busan, Gangneung, and other major cities and is the mainstay of intercity travel; domestic flights are centred on Seoul's Gimpo Airport, and the Gimpo–Jeju route is one of the busiest domestic air routes in the world. Within cities, the T-money card works across subway, bus, and taxi. Entry requires a separate electronic arrival card, and electronic travel-authorisation exemption arrangements for short-term visitors from various countries follow the latest official announcements.",
     culture:
@@ -10028,7 +10042,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     seeAndDo:
       "Natural landforms: the granite peaks of Seoraksan and Jirisan, the volcanic landscape of Hallasan and Jeju Island, and the tidal wetlands of Suncheon Bay and the Nakdong River estuary. Heritage and culture: Gyeongbokgung Palace in Seoul, the Silla-dynasty heritage sites of Gyeongju, and Hahoe Village in Andong. Islands and coast: Jeju Island, the archipelago of Hallyeohaesang Marine National Park, and the east-coast cities of Gangneung and Sokcho.",
     whenAndTips:
-      "Cherry blossoms in spring (April–May) and autumn foliage (September–November) are the most popular travel seasons; summer (July–August) is hot, humid, and prone to typhoons, while winter (December–February) is cold but marks peak season for Gangwon Province's ski resorts.",
+      "Cherry blossoms in spring (April–May) and autumn foliage (September–November) are the most popular travel seasons; summer (July–August) is hot, humid, and prone to typhoons, while winter (December–February) is cold but marks peak season for the ski resorts of Gangwon.",
   },
   seoul: {
     // identity sources: 首尔住民登录人口 9,284,263（2026 年 7 月末，行政安全部按月发布）——
@@ -10120,8 +10134,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Cherry blossom season in spring (April) and autumn (October–November) are most pleasant; plan at least two days to cover both the city-centre sites and Bulguksa/Seokguram separately.",
   },
   ulsan: {
+    // 零改动留痕（2026-09-10）：MOIS 住民登录人口 2025-12 为 1,091,948、2026-07 为 1,086,756，「约 110 万」两期都成立。
+    //   KTX 蔚山站在蔚州郡三南邑、不在市区（蔚山市官网，1 级），正文表述准确。
     identity:
-      "Ulsan is a major heavy-industry city in South Korea, with a population of about 1.1 million, known for shipbuilding, automobiles, and petrochemicals, and also home to the Taehwa River ecological park and a whale-watching culture.",
+      "Ulsan is a major heavy-industry city in South Korea, with a registered population of about 1.09 million in 2026, known for shipbuilding, automobiles, and petrochemicals, and also home to the Taehwa River ecological park and a whale-watching culture.",
     // howItWorks sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   蔚山：4 个自治区（中区/南区/东区/北区）+ 蔚州郡，共 5 个次级单位（市政府官网，级别 1）。人口住民登录 1,091,948（2025 年 12 月末，不含外国人；含登记外国人 30,175 则为 1,122,123）—— **两种口径都落在「约 110 万」的取整范围内，正文判定不改**。
     //   https://ulsan.go.kr/u/english/contents.ulsan?mId=001001002005000000
@@ -10160,6 +10176,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Summer (June–August) is beach season, and the cable car's night view is best around dusk; plan one evening dedicated to Yeosu's night scenery.",
   },
   pohang: {
+    // 零改动留痕（2026-09-10）：MOIS 住民登录人口 2026-06 末 487,008，「约 49 万」成立，未查到更新月份的公开转引。
+    //   📌 下一轮直接走浦项市官方数据门户 phdata.pohang.go.kr/popltn/rsgstStatus（1 级），别再走 3 级聚合站。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   浦项住民登录人口 487,008（2026 年 6 月末），3 级聚合自行政安全部住民登录人口。**下一轮建议直接抓浦项市官方数据门户（phdata.pohang.go.kr）这个 1 级页面。** 「庆尚北道人口最多的城市」按住民登录口径成立。2026-09-09 核。
     identity:
@@ -10183,7 +10201,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   https://superkts.com/population/data/Gangwon-do/Gangneung-si（3 级，注明数据源为행정안전부，2026-09-08 核）。
     //   跌破 21 万这个节点当地媒体 2023-08 已报道（江原日报，2 级）。
     identity:
-      "Gangneung is a representative city on Gangwon Province's east coast, with a registered population of about 206,000 (March 2026), having fallen below 210,000; it co-hosted the 2018 Winter Olympics and is known for its coffee culture and the Gyeongpo Lagoon.",
+      "Gangneung is a representative city on the east coast of Gangwon, with a registered population of about 206,000 (March 2026), having fallen below 210,000; it co-hosted the 2018 Winter Olympics and is known for its coffee culture and the Gyeongpo Lagoon.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Gangneung (city in Gangwon State; ~1,040 km²; ~208,000 2024; east coast below the Taebaek range; Gyeongpo beach and lagoon; Jeongdongjin; Anmok coffee street; Ojukheon; Danoje UNESCO 2005; 2018 Olympic ice venues; Gyeonggang KTX 2017 ~114 min from Seoul)
     howItWorks:
       "Gangneung is a city of Gangwon State covering about 1,040 km² with a registered population of about 206,000 in March 2026, governed by an elected mayor. The city lies east of the Taebaek range on the East Sea, a narrow strip between mountains and water: Gyeongpo beach and its lagoon lie north of the centre, Jeongdongjin on the cliffs to the south is where people watch the sunrise, the coffee street at Anmok grew from vending machines in the 1990s into an industry of its own, and Ojukheon is the birthplace of Shin Saimdang and Yi I; the Gangneung Danoje festival, 1,300 years old, was inscribed as intangible heritage in 2005. All the ice events of the 2018 Winter Olympics were held here and the venues still stand east of town; the Gyeonggang KTX line opened in 2017 cut the journey from Seoul from six hours to about an hour and fifty minutes. Newcomers most often go wrong by taking Gangneung for a beach, when it is the regional city of the Yeongdong coast and the beach only its eastern edge.",
@@ -10199,15 +10217,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The Gangneung Danoje Festival around Dano (5th day of the 5th lunar month) is the best time to experience local tradition; summer is beach season, winter is ski and hot-spring season.",
   },
   sokcho: {
+    // 零改动留痕（2026-09-10）：✅ **零争议红线复查干净**——逐句复读七段中英全文（identity / howItWorks / layout /
+    //   gettingAround / culture / seeAndDo / whenAndTips），未发现残留的 军事 / 分界线 / DMZ / 38 度 / 停战 / 边境 类表述，
+    //   上一轮改掉的三处是彻底的，**没有第四处漏网**。
     // identity sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
     //   **这一条不是核实方报的，是我在处理韩国批之后对全库做 `朝鲜战争 / Korean War / 军事分界线 / Military Demarcation / 非军事区 / DMZ / 38 度 / 停战` 的正则扫描扫出来的** —— 核实方只看它那一批的 14 个条目，扫全库才发现同一类表述还散在别处。**「派一批去核」和「把这一类在全库搜一遍」是两件事。**
     //   束草这一条**在 identity、howItWorks、culture 三段里各踩了一次**，三处都已改成可核实的地理、产业与生活事实。
     identity:
-      "Sokcho is a coastal city in north-eastern Gangwon Province, with a population of about 80,000, the traditional gateway to Seoraksan National Park and a significant fishing port and seafood market on the east coast.",
-    // howItWorks sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
-    //   **这一段里有三处踩线**，全部按红线处理：① 开头的 1945/1951/1953 时间线 —— 删，不改写；② 结尾的「北面是高城与非军事区」—— 改成「北面是高城」；③ 把这座城定性为「边境城市」—— 改成「有渔港与自己节奏的城市」。**阿爸村、手摇渡船、鱼糕这些可核实的生活事实保留下来了，只是不再交代它的成因** —— 按仓库口径，这类内容宁可少说一层，也不写可能读作立场表态的句子。2026-09-10。
+      "Sokcho is a coastal city in north-eastern Gangwon, with a population of about 80,000, the traditional gateway to Seoraksan National Park and a significant fishing port and seafood market on the east coast.",
+    // howItWorks sources: 人口：MOIS 住民登录人口 2026-08 为 78,788。英文侧原写 81,000 属旧数残留，中文侧「约 8 万」无误。MOIS 按月发布、滞后约 1 个月。2026-09-10 核。
     howItWorks:
-      "Sokcho is a city of Gangwon State covering about 106 km², with about 81,000 people. The Abai village at Cheongho-dong is a distinct quarter of the city, linked to the far bank by a hand-pulled ferry; that ferry and the local fish cake are still Sokcho's emblems. The town is pressed between the East Sea and Seoraksan: the national park gate lies 10 km west with Sinheungsa and the cable car inside, Yeongnang lake sits in the middle of town and the fish market of Daepo harbour at its southern end. Seoul is about an hour and a half away, Yangyang airport 20 km south, and Goseong lies north. Newcomers most often go wrong by taking Sokcho for the gate of Seoraksan, when it is a coastal city with a fishing port and a rhythm of its own.",
+      "Sokcho is a city of Gangwon State covering about 106 km², with about 79,000 people (August 2026). The Abai village at Cheongho-dong is a distinct quarter of the city, linked to the far bank by a hand-pulled ferry; that ferry and the local fish cake are still Sokcho's emblems. The town is pressed between the East Sea and Seoraksan: the national park gate lies 10 km west with Sinheungsa and the cable car inside, Yeongnang lake sits in the middle of town and the fish market of Daepo harbour at its southern end. Seoul is about an hour and a half away, Yangyang airport 20 km south, and Goseong lies north. Newcomers most often go wrong by taking Sokcho for the gate of Seoraksan, when it is a coastal city with a fishing port and a rhythm of its own.",
     layout:
       "The city sits right on the east coast, with Cheongcho Lake lagoon and Sokcho Port within the city, while the entrance to Seoraksan National Park lies inland, about 15 km to the west.",
     gettingAround:
@@ -10222,10 +10242,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Autumn (October) foliage at Seoraksan is nationally famous, so book accommodation ahead; summer beaches and winter skiing each have their own peak season.",
   },
   chuncheon: {
+    // 零改动留痕（2026-09-10）：✅ 零争议红线逐段复查通过（本条与 sokcho 同在江原、临近北汉江，属红线重点条目）。
+    //   ⚠️ 人口存疑不改：MOIS 2026-01 末 290,468、**2026-06 末已降至约 285,027**，正文「约 29 万」取的是较早一端。
+    //   两个数都在注释里、都属实，只是取整偏向了旧的那一期。下一轮直接抓 chuncheon.go.kr 官方页拿 7/8 月数再决定是否降为「约 28 万」。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   春川住民登录人口 2026-01 末 290,468、2026-06 末约 285,027（2 级本国地方媒体报道官方数 + 3 级聚合），与同条目 howItWorks 的约 29 万统一。2026-09-09 核。
     identity:
-      "Chuncheon is the seat of Gangwon Province's provincial government, with a population of about 290,000, sitting at the confluence of the Soyang and North Han rivers; it is known for its lake scenery and as the birthplace of dakgalbi (spicy stir-fried chicken).",
+      "Chuncheon is the seat of the Gangwon State provincial government, with a population of about 290,000, sitting at the confluence of the Soyang and North Han rivers; it is known for its lake scenery and as the birthplace of dakgalbi (spicy stir-fried chicken).",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chuncheon (capital of Gangwon State; 1,166.8 km²; ~290,000; confluence of the Soyang and Bukhan rivers; Soyang and Uiam dams; Nami Island; Legoland Korea 2022; dak-galbi invented here in the 1960s and mak-guksu; Gyeongchun line and ITX-Cheongchun from Seoul; Kangwon National University; mime festival)
     howItWorks:
       "Chuncheon is the seat of Gangwon State, covering about 1,167 km² with about 290,000 people, governed by an elected mayor, with the provincial government and assembly in town. The city lies in the valley where the Soyang and Bukhan rivers meet, the Soyang and Uiam dams damming them into a chain of lakes that ring the town, which is why it is called the lake city; dak-galbi, invented by a pork butcher here in the 1960s, and buckwheat mak-guksu are its two dishes; Nami Island lies about 25 km south-west and belongs administratively to Gapyeong county in Gyeonggi Province, and Legoland Korea opened in 2022 on an island in Uiam lake. The Gyeongchun line and the ITX-Cheongchun run direct from Seoul in about an hour, and Kangwon National University and Hallym University are in town. Newcomers most often go wrong by taking Nami Island for a Chuncheon sight, when it lies in a county of the neighbouring province and is merely easiest to reach from here.",
@@ -10241,6 +10264,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Autumn foliage on Nami Island and winter snow scenery are the most popular seasons; an easy day trip from Seoul.",
   },
   andong: {
+    // 零改动留痕（2026-09-10）：MOIS 2026-06 约 151,864，「约 15 万」成立。
+    //   「韩国精神文化的首都」经核为市宣传口号、**非法定称号**，正文用「被称为」的被动式处理，与仓库对同类非官方称号的惯例一致，不再降级。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   安东人口 152,610（2025-07）/ 约 151,864（2026-06），市官网（级别 1）。
     //   **「韩国精神文化的首都」是安东市的城市宣传口号，不是法定称号** —— 正文写的是「被称为」，已经是被动、非断言官方认证的写法，与本库对胡萨维克「欧洲观鲸之都」、基尔肯尼「中世纪之都」的处理一致，**判定不必再降级**。2026-09-09 复核，本轮无需改动。
@@ -10267,7 +10292,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   全州住民登录人口 **620,874（2026 年 6 月末）**，2 级本国地方媒体报道全北道厅官方统计。
     //   **这一条同时暴露了一个二手来源的问题**：条目原注释引的维基「约 638,000（2026）」没有标月份、本身已经滞后 —— 又一次印证「二手来源的年份标注可能是错的」。下一轮直接核对全北特别自治道的道政现况统计（stat.jeonbuk.go.kr）这个 1 级页面。2026-09-09 核。
     identity:
-      "Jeonju is the seat of North Jeolla Province's provincial government, with a population of about 620,000 (June 2026); the Jeonju Hanok Village preserves several hundred traditional hanok buildings and represents Korea's food culture and traditional-heritage experiences.",
+      "Jeonju is the seat of the Jeonbuk State provincial government, with a population of about 620,000 (June 2026); the Jeonju Hanok Village preserves several hundred traditional hanok buildings and represents Korea's food culture and traditional-heritage experiences.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jeonju (capital of Jeonbuk State; 2 gu Wansan and Deokjin; 206.22 km²; ~638,000 2026; Hanok Village with over 800 hanok; Gyeonggijeon with the portrait of Yi Seong-gye; Jeondong Cathedral 1908–14; Pungnammun; bibimbap; UNESCO City of Gastronomy 2012; film festival; ancestral home of the Joseon royal house)
     howItWorks:
       "Jeonju is the seat of Jeonbuk State, divided into the two autonomous districts of Wansan and Deokjin, covering about 206 km² with about 621,000 people in June 2026, governed by an elected mayor, with the provincial government and assembly in town. It is the ancestral seat of the Yi house of Joseon: Gyeonggijeon holds the portrait of the founder Yi Seong-gye, and Pungnammun is the only surviving gate of the old wall; the Hanok Village in Wansan gathers more than eight hundred traditional houses, the largest urban hanok quarter in Korea, with the Jeondong Cathedral of 1908–14 outside its gate; Jeonju bibimbap and its rice wine made it a UNESCO City of Gastronomy in 2012, and the international film festival draws about fifty thousand people a year. The KTX reaches Seoul in about an hour and a half, and there is no airport in the city. Newcomers most often go wrong by taking the Hanok Village for Jeonju, when it is one quarter of Wansan district and the city itself is a provincial capital of 638,000.",
@@ -10305,13 +10330,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April–May and September–October are most comfortable; summers are humid and winters cold. An easy day trip from Seoul; long-haul transit passengers can overnight on Yeongjong Island or in Songdo near the airport. Ganghwa Island needs its own day.",
   },
   suwon: {
+    // 零改动留痕（2026-09-10）：含登记外国人的总人口 2026-08 为 1,229,190，住民登录人口（不含外国人）2026-06 约 1,185,770；
+    //   正文取总人口口径且已在注释点名区分，「约 123 万 / 超过 120 万」均成立。
+    //   📌 特例市（특례시）现行名单已扩至 **5 座**（2022 年首批水原／龙仁／高阳／昌原 + **华城 2025-01-01 加入**）——
+    //   正文只说水原「是一座特例市」、没有做穷举式断言，不构成错误；记在这里供下次涉及华城时参考。
+    //   另注：昌原 2026-05 含外国人约 100.99 万，已逼近 100 万门槛，有跌出资格的风险。
     // identity sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
     //   **水原是这一批里唯一一个两套口径都在用的城市**：住民登录人口（不含外国人）2026-06 约 1,185,770（约 119 万）；含登记外国人的总人口 2026-08 为 1,229,190（约 123 万，外国人约 6%）。正文的「约 123 万 / 超过 120 万」对应后者、且是最新值，**本轮判定不改**；但如果日后要把全库韩国城市统一到住民登录口径，这一条要降到约 119 万。2 级 + 3 级，2026-09-09 核。**这两个数不是打架，是两个口径 —— 不能合并成一个数字。**
     identity:
-      "Suwon is the seat of Gyeonggi Province about 30 km south of Seoul, with about 1.23 million people (2026). Hwaseong Fortress, built in 1794–1796 by King Jeongjo when he moved his father Crown Prince Sado's tomb here, is the masterpiece of late-Joseon fortification — 5.7 km of wall, four gates, the palace and the bastions survive — and was inscribed as a World Heritage site in 1997; the king's yearly procession from Seoul to Suwon is the model for the Hwaseong Cultural Festival. Samsung Electronics was founded in Suwon in 1969 and keeps its headquarters and research campus in Yeongtong district. Suwon galbi (grilled beef ribs) is the local dish, and the Korean Folk Village lies in neighbouring Yongin.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Suwon (capital of Gyeonggi Province; special case city with lesser self-governance than a metropolitan city; 4 gu; population over 1.2 million; Hwaseong Fortress built under King Jeongjo 1796, UNESCO with the Hwaseong Seongyeok Uigwe record; Samsung Electronics headquarters in Yeongtong since 2016; three Seoul Metro lines, 14 stations, ~30 km from Seoul; Suwon galbi; World Cup Stadium 2002)
+      "Suwon is the seat of Gyeonggi Province about 30 km south of Seoul, with about 1.23 million people (2026). Hwaseong Fortress, built in 1794–1796 by King Jeongjo when he moved his father Crown Prince Sado's tomb here, is the masterpiece of late-Joseon fortification — 5.7 km of wall, four gates, the palace and the bastions survive — and was inscribed as a World Heritage site in 1997; the king's yearly procession from Seoul to Suwon is the model for the Hwaseong Cultural Festival. Samsung Electronics was founded in 1969 and has had its headquarters and production base in Suwon since 1973, with the head office and research campus in Yeongtong district. Suwon galbi (grilled beef ribs) is the local dish, and the Korean Folk Village lies in neighbouring Yongin.",
+    // howItWorks sources: 三星电子：**1969 年创立、1973 年起水原为总部与生产基地、2016 年 3 月首尔支援部门并入水原**，是三件不同的事。原文 identity 写「1969 年创立于水原」、howItWorks 写「1973 年把总部迁来」，各取一件且都没说清是哪一件，并排读像打架。**核实方要求把 1973 改成 1969，未采纳** —— 1973 有韩国先驱报（2 级）支撑；「创立于水原」反而是更没把握的那半句。两段统一改成「创立年 + 总部年」的同一结构。2026-09-10 核。
     howItWorks:
-      "Suwon is the seat of Gyeonggi Province with more than 1.2 million people, more than several metropolitan cities, yet because it lies within a province it is only a 'special case city' with less self-government than a metropolitan city; it has four autonomous districts and an elected mayor. Hwaseong Fortress, built by King Jeongjo in 1796 when he moved his father's tomb, rings the old town, and its walls and palace were inscribed as World Heritage in 1997, the construction record Hwaseong Seongyeok Uigwe so detailed that the fortress could be rebuilt from it after the war; Samsung Electronics moved its headquarters here in 1973, with the research campus and head office in Yeongtong district to the east as the city's largest employer. Three Seoul Metro lines call at more than a dozen stations in the city, the KTX stops here, and Seoul lies about 30 km north; Suwon galbi and the Gwanggyo new town are its other two names. Newcomers most often go wrong by taking Suwon for a satellite of Seoul, when it is the seat of Gyeonggi Province with more people than most Seoul districts.",
+      "Suwon is the seat of Gyeonggi Province with more than 1.2 million people, more than several metropolitan cities, yet because it lies within a province it is only a 'special case city' with less self-government than a metropolitan city; it has four autonomous districts and an elected mayor. Hwaseong Fortress, built by King Jeongjo in 1796 when he moved his father's tomb, rings the old town, and its walls and palace were inscribed as World Heritage in 1997, the construction record Hwaseong Seongyeok Uigwe so detailed that the fortress could be rebuilt from it after the war; Samsung Electronics, founded in 1969, has had its headquarters and production base here since 1973, with the research campus and head office in Yeongtong district to the east as the city's largest employer. Three Seoul Metro lines call at more than a dozen stations in the city, the KTX stops here, and Seoul lies about 30 km north; Suwon galbi and the Gwanggyo new town are its other two names. Newcomers most often go wrong by taking Suwon for a satellite of Seoul, when it is the seat of Gyeonggi Province with more people than most Seoul districts.",
     layout:
       "Hwaseong encloses the old town: Paldalmun in the south, Janganmun in the north, Hwahongmun over the Suwoncheon stream in the north-east and the Seojangdae command post on Paldalsan hill to the west; the Haenggung palace stands in the middle and Paldalmun market by the south gate. Suwon Station is about 2 km south-west of the walls, with the sports complex and World Cup stadium outside. The Samsung campus lies east in Yeongtong and the Gwanggyo new town north-east. The Korean Folk Village is about 15 km east in Yongin, with Everland further east.",
     gettingAround:
@@ -10454,11 +10484,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season; Kraków is an ideal gateway for exploring Lesser Poland (Zakopane, Wieliczka) — plan at least two to three days for a deep dive into the old town and nearby sights.",
   },
   zakopane: {
+    // 零改动留痕（2026-09-10）：Górale（高地人）文化写作客观的地方文化事实、无族群评价，✅ 红线通过。
+    //   无民用机场，最近为克拉科夫机场——正文表述无误。
+    // identity sources: 人口：原文对应 2017 年的 27,266，**落后九年**。GUS BDL 2025 年约 24,921，持续下降（PAP 报道市政府警示人口流失，2 级）。2026-09-10 核。
     identity:
-      "Zakopane is a mountain town at the foot of the northern Tatras in southern Poland, with a population of about 27,000, known as Poland's \"winter capital\" and the traditional gateway to Tatra National Park.",
+      "Zakopane is a mountain town at the foot of the northern Tatras in southern Poland, with a population of about 24,900 in 2025 (GUS; still falling), known as Poland's \"winter capital\" and the traditional gateway to Tatra National Park.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakopane (Poland; town in Lesser Poland Voivodeship at the foot of the Tatra Mountains near the Slovak border, 27,266 residents in 2017, at 800–1,100 m; called the winter capital of Poland with more than 2.5 million visitors a year; the centre at the crossing of Krupówki and Kościuszko streets; the Zakopane Style of Stanisław Witkiewicz joining Carpathian vernacular with modern design, as in Villa Koliba of 1892–93 and the Tatra Museum of 1913–24; a centre of Góral highlander culture, costume, music and oscypek cheese; the Kasprowy Wierch cable car completed 1936, Gubałówka, and the Wielka Krokiew ski jump opened 1925; Nordic World Ski Championships in 1929, 1939 and 1962)
     howItWorks:
-      "Zakopane is a town of Lesser Poland Voivodeship at the northern foot of the Tatra Mountains near the Slovak border, with 27,266 residents in 2017 at between 800 and 1,100 m; Polish local government has three tiers, voivodeship, county and commune, and this town lies in Tatra County, the commune running local affairs and the voivodeship regional planning. It calls itself Poland's winter capital and receives more than 2.5 million visitors a year, nearly all the country's skiing, mountaineering and summer hill-going converging on this one place, with the crossing of Krupówki and Kościuszko streets as its centre. This is the heart of Góral highlander culture, from which the costume, music, timber houses and smoked sheep's cheese called oscypek come; at the end of the nineteenth century the painter Stanisław Witkiewicz joined local carpentry with modern design into the Zakopane Style, of which Villa Koliba of 1892 and the Tatra Museum of 1913 to 1924 are the chief works, later taken as a Polish national architectural language. The Kasprowy Wierch cable car of 1936 and the Wielka Krokiew ski jump of 1925 are still in use, and the Nordic World Ski Championships were held here in 1929, 1939 and 1962. Newcomers most often go wrong by taking it for a ski resort alone, when it is also where a school of design began.",
+      "Zakopane is a town of Lesser Poland Voivodeship at the northern foot of the Tatra Mountains near the Slovak border, with about 24,900 residents in 2025 and still falling, at between 800 and 1,100 m; Polish local government has three tiers, voivodeship, county and commune, and this town lies in Tatra County, the commune running local affairs and the voivodeship regional planning. It calls itself Poland's winter capital and receives more than 2.5 million visitors a year, nearly all the country's skiing, mountaineering and summer hill-going converging on this one place, with the crossing of Krupówki and Kościuszko streets as its centre. This is the heart of Góral highlander culture, from which the costume, music, timber houses and smoked sheep's cheese called oscypek come; at the end of the nineteenth century the painter Stanisław Witkiewicz joined local carpentry with modern design into the Zakopane Style, of which Villa Koliba of 1892 and the Tatra Museum of 1913 to 1924 are the chief works, later taken as a Polish national architectural language. The Kasprowy Wierch cable car of 1936 and the Wielka Krokiew ski jump of 1925 are still in use, and the Nordic World Ski Championships were held here in 1929, 1939 and 1962. Newcomers most often go wrong by taking it for a ski resort alone, when it is also where a school of design began.",
     layout:
       "The town is built along a valley at the foot of the Tatras, with Krupówki Street the liveliest pedestrian shopping street, and several cable-car stations linking the town to surrounding peaks.",
     gettingAround:
@@ -10471,8 +10504,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "December–March is peak ski season, June–September is peak hiking season; the cable car and popular trails get busy in peak season, so an early start is recommended.",
   },
   rzeszow: {
+    // 零改动留痕（2026-09-10）：howItWorks 的「2026 年 1 月约 19.9 万」与 GUS 官方 199,436（2025-12-31，1 级）接近，属实。
+    //   「F-16 发动机世界仅两家制造商之一」经核基本属实（F-16 只有普惠 F100 与通用电气 F110 两家供应商，普惠在热舒夫设厂产 F100 零部件）；「航空谷」产业集群属实。
+    //   机场专名「热舒夫—亚西翁卡机场」为现行官方名。
+    // identity sources: 人口：GUS 热舒夫统计局 2025-12-31 为 199,436（1 级）。原 identity 的 19.6 万缺年份、且与同条目 howItWorks 的 19.9 万打架。「波兰第 15 大城市」排名成立。2026-09-10 核。
     identity:
-      "Rzeszów is a city in Lesser Poland in south-eastern Poland, with a population of about 196,000, the gateway for exploring the Bieszczady Mountains and an important Polish aerospace-industry centre.",
+      "Rzeszów is a city in Lesser Poland in south-eastern Poland, with a population of about 199,000 at the end of 2025 (GUS), the gateway for exploring the Bieszczady Mountains and an important Polish aerospace-industry centre.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rzeszów (Poland; capital of Subcarpathian Voivodeship and the largest city in south-eastern Poland, about 198,540 inhabitants in January 2026, the 15th largest Polish city, on both banks of the Wisłok in the Sandomierz Basin; unusually among Polish cities of its size the population is growing, with municipal boundaries extended between 2017 and 2021; town rights from Casimir III the Great in 1354; historically on the east-west trade route; Asseco Poland and G2A.COM, and aerospace manufacturing including one of the world's two makers of F-16 engines; the Renaissance town hall, Rzeszów Castle and preserved synagogues; the underground tourist route; Rzeszów-Jasionka Airport; the A4 motorway)
     howItWorks:
       "Rzeszów is the capital of Subcarpathian Voivodeship and the largest city in south-eastern Poland with about 198,500 inhabitants in January 2026, the fifteenth largest Polish city; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. It lies on both banks of the Wisłok in the Sandomierz Basin, received town rights from Casimir III the Great in 1354 and stood historically on the trade route running east and west. Unlike Polish cities of comparable size, which are generally shrinking, Rzeszów is growing, and it repeatedly extended its boundaries over neighbouring communes between 2017 and 2021. Two industries carry it: software and information technology, with Asseco Poland and G2A headquartered here, and aerospace manufacturing, where the local Aviation Valley cluster and the Rzeszów University of Technology support each other and one of the world's only two makers of F-16 engines has a plant. The Renaissance town hall and the old castle stand in the centre, an underground route runs through the cellars beneath the old town, and surviving synagogue buildings remain in the old quarter. Jasionka airport lies north and the A4 motorway passes by. Newcomers most often go wrong by taking south-eastern Poland for farming country, when this is a concentration of the aerospace industry.",
@@ -10488,11 +10525,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season; Rzeszów is a convenient gateway for the połoniny meadows of the Bieszczady Mountains — plan at least one to two days for mountain hiking.",
   },
   wroclaw: {
+    // 零改动留痕（2026-09-10）：机场专名「弗罗茨瓦夫机场」为现行官方名。前现代史与建筑史（大教堂岛、集市广场、
+    //   1913 年百年厅、2006 年列入世界遗产）照留，只删了 1945 年前后人口更替那一句。
+    // identity sources: 人口：GUS 2025-06-30 为 672,545。**⚠️ 不要用「89.3 万」或「超 110 万」**——那是弗罗茨瓦夫大学的「生活痕迹」实验性估算，不是 GUS 登记人口口径。「波兰第三大城市」成立（2021 年普查后超越罗兹，与其差距很小）。2026-09-10 核。
     identity:
-      "Wrocław is the core city of Silesia in south-western Poland, with a population of about 640,000, on the Oder, known for its hundred-plus bridges and the small bronze \"Wrocław dwarf\" statues found throughout the city.",
-    // howItWorks sources: Wikipedia (2026-09): Wrocław (48 osiedla; 293 km²; 672,545 2025; Oder islands and bridges; Breslau until 1945; Centennial Hall UNESCO 2006; ~130,000 students); Administrative divisions of Poland
+      "Wrocław is the core city of Silesia in south-western Poland, with a population of about 672,000 (2025, GUS), on the Oder, known for its hundred-plus bridges and the small bronze \"Wrocław dwarf\" statues found throughout the city.",
+    // howItWorks sources: ⚠️ 零争议红线：原 howItWorks 有一句陈述 1945 年前后人口与语言整体更替，2026-09-10 整句删除（比照 CLAUDE.md 对捷克「1938/1945 年人口迁移一律不写」的既有规定）。前现代史与建筑史照留。
     howItWorks:
-      "Wrocław is the capital of Lower Silesia, a city with county status governed by an elected mayor and council, whose basic units are 48 osiedla, each with a residents' council — the district tier was abolished here in 1990. It covers about 293 km² with about 673,000 people in 2025, Poland's third city. The Oder and its arms cut the city into a dozen islands joined by more than a hundred bridges: Cathedral Island is where the city began, the Market Square is the medieval centre, and the Centennial Hall of 1913 in the eastern park district was inscribed as World Heritage in 2006. Before 1945 the city was Breslau, and after the war its population and language changed wholesale, so today's residents are largely descendants of post-war settlers. Trams are the backbone of the city, and some 130,000 students make it a university town. Addresses give street, number and postcode. Newcomers most often go wrong by taking Wrocław for an ordinary Polish city, when its street plan and buildings remember another history.",
+      "Wrocław is the capital of Lower Silesia, a city with county status governed by an elected mayor and council, whose basic units are 48 osiedla, each with a residents' council — the district tier was abolished here in 1990. It covers about 293 km² with about 673,000 people in 2025, Poland's third city. The Oder and its arms cut the city into a dozen islands joined by more than a hundred bridges: Cathedral Island is where the city began, the Market Square is the medieval centre, and the Centennial Hall of 1913 in the eastern park district was inscribed as World Heritage in 2006.  Trams are the backbone of the city, and some 130,000 students make it a university town. Addresses give street, number and postcode. Newcomers most often go wrong by taking Wrocław for an ordinary Polish city, when its street plan and buildings remember another history.",
     layout:
       "The old town is built on several islands formed by the Oder and its tributaries, with the Market Square at its core and Ostrów Tumski (Cathedral Island) preserving a cluster of medieval religious buildings.",
     gettingAround:
@@ -10547,11 +10587,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season and also peak time for Baltic seaside holidays; Gdańsk is a convenient gateway for exploring the Hel Peninsula and the Słowiński dunes.",
   },
   szczecin: {
+    // identity sources: 人口：什切青统计局 2025-12-31 约 38.4 万（1 级）。「波兰第七大城市」按最新 GUS 排序成立。2026-09-10 核。
     identity:
-      "Szczecin is a port city at the mouth of the Oder in north-western Poland, with a population of about 390,000, right on the German border and an important Polish seaport and industrial city.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Szczecin (Poland; capital of West Pomeranian Voivodeship and the seventh-largest Polish city, the largest city of north-western Poland; on the Oder south of the Szczecin Lagoon and the Bay of Pomerania, a major seaport; recorded from the 8th century, a major Baltic trading town under the House of Griffin, under the Swedish Empire from 1630 and Prussia from 1720, becoming part of Poland after the Second World War under the Potsdam Agreement; the 19th-century street plan influenced by Haussmann's Paris with star-shaped junctions and much green space; the Ducal Castle; the Wały Chrobrego terraces; headquarters of NATO's Multinational Corps Northeast since 1999; several universities)
+      "Szczecin is a port city at the mouth of the Oder in north-western Poland, with a population of about 384,000 at the end of 2025 (GUS), right on the German border and an important Polish seaport and industrial city.",
+    // howItWorks sources: ⚠️ 零争议红线：删去「二战后依波茨坦协定划归波兰」这半句（1945 年边界变动陈述）。1630 瑞典 / 1720 普鲁士属前现代史，照留。
+    //   **核实方另建议把 culture 段「历史上曾长期属德国管辖，建筑风貌融合德国与波兰印记」也一并软化，未采纳** —— 那一句与克罗地亚条目写「哈布斯堡 / 威尼斯建筑遗产」是同一种处理，本身是建筑史事实、无评价成分；它之所以看着敏感，是因为**紧挨着上面那句波茨坦协定**。上面那句删掉之后，这一句就回到了与克罗地亚一致的尺度。**删一句和删一段是两件事**，2026-09-10 判定。
     howItWorks:
-      "Szczecin is the capital of West Pomeranian Voivodeship, the seventh-largest Polish city and the largest in the north-west; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. The city lies on the lower Oder south of the Szczecin Lagoon, separated from the open sea by an inland waterway, and its port together with Świnoujście nearer the coast forms one of Poland's largest port complexes, with Berlin about 130 km west. It is recorded from the eighth century, became an important Baltic trading town under the House of Griffin, passed to the Swedish Empire in 1630 and to Prussia in 1720, and became part of Poland after the Second World War under the Potsdam Agreement. What shows its history best today is the street plan: the nineteenth-century rebuilding followed Haussmann's Paris, and radiating star-shaped junctions and broad avenues run through the whole city, whose share of parkland and water is among the highest of large Polish cities. The Ducal Castle of the Griffins and the Wały Chrobrego terraces above the river are the chief landmarks, and NATO's Multinational Corps Northeast has been headquartered here since 1999. Newcomers most often go wrong by assuming this port city stands on the sea, when it stands on a river some 65 km from open water.",
+      "Szczecin is the capital of West Pomeranian Voivodeship, the seventh-largest Polish city and the largest in the north-west; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. The city lies on the lower Oder south of the Szczecin Lagoon, separated from the open sea by an inland waterway, and its port together with Świnoujście nearer the coast forms one of Poland's largest port complexes, with Berlin about 130 km west. It is recorded from the eighth century, became an important Baltic trading town under the House of Griffin, passed to the Swedish Empire in 1630 and to Prussia in 1720. What shows its history best today is the street plan: the nineteenth-century rebuilding followed Haussmann's Paris, and radiating star-shaped junctions and broad avenues run through the whole city, whose share of parkland and water is among the highest of large Polish cities. The Ducal Castle of the Griffins and the Wały Chrobrego terraces above the river are the chief landmarks, and NATO's Multinational Corps Northeast has been headquartered here since 1999. Newcomers most often go wrong by assuming this port city stands on the sea, when it stands on a river some 65 km from open water.",
     layout:
       "The old town is built along a tributary of the Oder, with Ducal Castle of Pomerania standing on high ground; the port district extends along the Oder, and the city holds one of the largest urban green-space systems in Poland.",
     gettingAround:
@@ -10606,11 +10648,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season and also peak time for sailing in the Masurian Lake District; Olsztyn is an ideal base for exploring the lakes — plan at least a day for a boat trip or sailing experience.",
   },
   bialystok: {
+    // 零改动留痕（2026-09-10）：✅ 零争议红线通过——「族群与信仰混杂」「东正教堂」「犹太教堂遗址」均作客观历史／建筑事实呈现，
+    //   未触及二战、族群冲突或现代政治；柴门霍夫创制世界语的动机写作「混杂的语言环境」，无冲突性措辞。
+    //   机场：比亚韦斯托克—克雷夫拉尼（EPBK）是通用航空机场、**无定期商业客运**，在建的萨尼基机场尚未投运——正文「客运航班有限」准确、留有余地。
+    // identity sources: 人口：GUS 2025-12-31 约 28.92 万。原 identity 的 29.7 万偏高且与同条目 howItWorks 的 28.9 万打架（C6i）——**howItWorks 是对的一侧**。2026-09-10 核。
     identity:
-      "Białystok is the core city of the Podlasie region in north-eastern Poland, with a population of about 297,000, the gateway for exploring Białowieża primeval forest and the Biebrza Marshes.",
+      "Białystok is the core city of the Podlasie region in north-eastern Poland, with a population of about 289,000 at the end of 2025 (GUS), the gateway for exploring Białowieża primeval forest and the Biebrza Marshes.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Białystok (Poland; capital of Podlaskie Voivodeship and the largest city in north-eastern Poland, about 289,000 residents, tenth nationally, with the second-highest population density among Polish cities; about 200 km north-east of Warsaw on the Białystok Uplands along the Biała; recorded from about 1437 when a member of the Raczków family received a wilderness area along the river; flourished in the 18th century under the Branicki family, the Branicki Palace compared to Versailles; a major textile centre in the 19th century, called the Manchester of the North; L. L. Zamenhof, creator of Esperanto, born here in 1859; a historically multi-ethnic and multi-faith city with Orthodox churches; the fifth most forested Polish municipality, about 1,846 ha or 18 per cent)
     howItWorks:
-      "Białystok is the capital of Podlaskie Voivodeship and the largest city in north-eastern Poland with about 289,000 residents, tenth in the country and second among large Polish cities in population density; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. Warsaw lies about 200 km south-west. The town is recorded from about 1437 and took shape in the eighteenth century under the Branicki family, who built it as a court city; the Baroque Branicki Palace and its French gardens are still the core of the centre, which is why it is called the Versailles of Podlachia. In the nineteenth century it became a textile centre, known for a time as the Manchester of the North. This country has long been mixed in people and faith, Catholic and Orthodox churches standing side by side to this day and a substantial share of Poland's Orthodox believers living in this region; L. L. Zamenhof, who devised Esperanto, was born here in 1859 and said that this mixture of languages prompted his idea. Woodland covers about 1,846 hectares, eighteen per cent of the municipality, and the Białowieża Forest lies south-east. Newcomers most often go wrong by assuming Poland is only Catholic, when this city has long held several faiths together.",
+      "Białystok is the capital of Podlaskie Voivodeship and the largest city in north-eastern Poland with about 289,000 residents at the end of 2025, tenth in the country and second among large Polish cities in population density; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. Warsaw lies about 200 km south-west. The town is recorded from about 1437 and took shape in the eighteenth century under the Branicki family, who built it as a court city; the Baroque Branicki Palace and its French gardens are still the core of the centre, which is why it is called the Versailles of Podlachia. In the nineteenth century it became a textile centre, known for a time as the Manchester of the North. This country has long been mixed in people and faith, Catholic and Orthodox churches standing side by side to this day and a substantial share of Poland's Orthodox believers living in this region; L. L. Zamenhof, who devised Esperanto, was born here in 1859 and said that this mixture of languages prompted his idea. Woodland covers about 1,846 hectares, eighteen per cent of the municipality, and the Białowieża Forest lies south-east. Newcomers most often go wrong by assuming Poland is only Catholic, when this city has long held several faiths together.",
     layout:
       "The old town is centred on the Branicki Palace and its Baroque gardens, known as the \"Versailles of Podlasie\"; a mix of religious buildings (Catholic, Orthodox, and the remains of a synagogue) bears witness to the region's historically diverse cultural makeup.",
     gettingAround:
@@ -12843,8 +12889,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April to June and September to October are pleasant with relatively fewer visitors; July and August are peak season with higher temperatures; December's Christmas markets have a festive atmosphere. The Old Town core is entirely walkable, and early morning is the best time to photograph Charles Bridge before crowds arrive.",
   },
   brno: {
+    // 零改动留痕（2026-09-10）：注释已更新到 ČSÚ 2026-01-01 最新一期。正文取整「约 40 万」在新旧两期下都成立。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
-    //   ČSÚ 2025-01-01 数据为 402,739，与同条目 howItWorks 的「2026 年约 40 万」一致 —— identity 的 38 万已过期偏低。「捷克第二大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 402,739 > 俄斯特拉发 283,187 > 皮尔森 187,928）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
+    //   ČSÚ **2026-01-01** 数据为 404,296（2026-09-10 复核时更新到最新一期；上一期 2025-01-01 为 402,739，正文取整「约 40 万」两期都成立）—— identity 的 38 万已过期偏低。「捷克第二大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 404,296 > 俄斯特拉发 > 皮尔森 187,863）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/
     identity:
       "Brno is Czechia's second-largest city and the center of Moravia, with a population of about 400,000. It was historically the capital of the Margraviate of Moravia, and today is an important research and university city.",
@@ -12863,8 +12910,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant; as a university city, some student-oriented facilities close in summer and the atmosphere is livelier during term time; Brno makes a good base for day trips to the Moravian Karst and the Lednice-Valtice estate.",
   },
   plzen: {
+    // 零改动留痕（2026-09-10）：注释已更新到 ČSÚ 2026-01-01（**直接取自 ČSÚ 官方 PDF，1 级**）。
+    //   「捷克第四大城市」按 ČSÚ 市镇口径用最新一期复核，排序未变。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
-    //   ČSÚ 2025-01-01 数据为 187,928，与同条目 howItWorks 的约 19 万一致 —— identity 的 17 万已过期偏低。「捷克第四大城市」按市镇口径成立。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
+    //   ČSÚ **2026-01-01** 数据为 187,863（直接取自 ČSÚ 官方 PDF，1 级，2026-09-10 复核；上一期 2025-01-01 为 187,928，正文取整「约 19 万」两期都成立），与同条目 howItWorks 的约 19 万一致 —— identity 的 17 万已过期偏低。「捷克第四大城市」按市镇口径成立。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/
     identity:
       "Plzeň (Pilsen) is a major city in western Czechia and the seat of the Plzeň Region, with a population of about 190,000. In 1842, the world's first golden bottom-fermented lager — Pilsner — was brewed here, making it the birthplace of lager beer worldwide.",
@@ -12883,6 +12932,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant; booking the brewery tour in advance is recommended; a day trip from Prague is convenient, taking about 1 to 1.5 hours each way.",
   },
   "karlovy-vary": {
+    // 零改动留痕（2026-09-10）：48,788（2026-01-01，ČSÚ）与注释一致，**本批已用上最新一期的三城之一**。
+    //   ⚠️ 复核时 mistopisy.cz 一度显示 41,257，经核为该站数据异常／非同一统计对象，**不采纳**——记在这里免得下一轮被它带偏。
+    //   「相传查理四世打猎发现温泉」已用传说式措辞；可考史实是 1370-08-14 授予皇家城市特权（市官方旅游页，2 级）。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
     //   人口 48,788（2026-01-01，ČSÚ DataStat，2026-05-18 发布，3 级转引但直接标注一手来源与发布日）。
     //   「最著名的温泉城市」是主观最高级、无可核口径，已软化为「著名的温泉城市之一」（该城 2021 年是 UNESCO「欧洲大温泉城」成员之一）。
@@ -12905,8 +12957,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant, with the film festival in July drawing the largest crowds; check with a local pharmacy or doctor for guidance on drinking the mineral water; it's about a 2-hour drive from Prague, with train and bus options also available.",
   },
   "cesky-krumlov": {
+    // 零改动留痕（2026-09-10）：正文「约 1.3 万」不改（12,658 按千位取整仍是 1.3 万），只更正了注释里的误引数。
+    //   「捷克境内规模第二大的城堡建筑群（仅次于布拉格城堡）」经捷克官方旅游局页（2 级）核实成立。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
-    //   切斯基克鲁姆洛夫 13,148（2026 年初，ČSÚ，经本国地方媒体报道，2 级），与正文「约 1.3 万」吻合。2026-09-09 核，本轮无需改动。
+    //   切斯基克鲁姆洛夫 **12,658（2026-01-01，ČSÚ）**，与正文「约 1.3 万」吻合。⚠️ 此处原记 13,148、注明「2026 年初，经本国地方媒体报道」，**但该数在这个镇的人口序列上找不到对应年份**（2021 普查 12,278、2024-12-31 为 12,797，多年稳定在 12,200—12,800 区间），判为误引，2026-09-10 更正。2026-09-09 核，本轮无需改动。
     identity:
       "Český Krumlov is a medieval town in South Bohemia with a population of about 13,000, named for the deep meander of the Vltava that nearly encircles its historic core (\"Krumlov\" comes from the German \"Krumme Aue,\" meaning \"crooked meadow\"). Its historic center was inscribed as a UNESCO World Heritage Site in 1992.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Český Krumlov (Czechia; town in the South Bohemian Region about 20 km south-west of České Budějovice, about 13,000 inhabitants over 22.16 km²; the historic centre inscribed by UNESCO in 1992 for well-preserved Gothic, Renaissance and Baroque architecture within its medieval street layout; Český Krumlov Castle, one of the largest castle complexes in Central Europe at 7 hectares, its moat filled not with water but with bears, referring to the Orsini family; the castle Baroque theatre built in 1680–1682 and renovated in 1765–1766, among the oldest surviving 18th-century theatres in the world with its original stage machinery; the Five-Petalled Rose Festival at the summer solstice and an international music festival in July and August; among the most visited places in the country)
@@ -12924,6 +12978,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is pleasant and also the best season for river rafting; the old town gets crowded in summer, so visit key sights early morning or evening; an overnight stay from Prague is recommended to fully experience the old town at night.",
   },
   "kutna-hora": {
+    // 零改动留痕（2026-09-10）：21,787（2026-01-01，ČSÚ）与注释完全一致，**本批已用上最新一期的三城之一**。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
     //   ČSÚ 中波希米亚州官方页：库特纳霍拉 2026-01-01 为 21,787，与同条目 howItWorks 的约 2.2 万一致 —— identity 的「约 2 万」取整过粗、两段读起来对不上。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/stc/pocet-obyvatel-v-obcich-stredoceskeho-kraje-k-1-1-2026
@@ -12944,6 +12999,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Worth visiting year-round, with May to September the most pleasant; book tickets in advance for the ossuary to avoid peak crowds; it makes a feasible day trip from Prague, or can be planned separately from a Karlovy Vary or Český Krumlov itinerary.",
   },
   olomouc: {
+    // 零改动留痕（2026-09-10）：105,297（2026-01-01，ČSÚ）与注释一致——注释里的「2025 年末 105,297」与「2026-01-01」
+    //   是同一时点的两种写法，**不是两个不同数字**，不构成矛盾。「捷克第六大城市」用最新一期复核排序未变（利贝雷茨约 10.8 万仍在其上）。
     // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
     //   奥洛穆茨 2025 年末 105,297、2026 年模型估计约 105,847，与同条目 howItWorks 的约 10.5 万一致 —— identity 的「约 10 万」偏保守。「捷克第六大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 > 俄斯特拉发 > 皮尔森 > 利贝雷茨 108,090 > 奥洛穆茨）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
     //   https://csu.gov.cz/

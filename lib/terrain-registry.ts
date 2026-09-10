@@ -11238,7 +11238,7 @@ const JIRISAN: TerrainEntry = {
   landmark: { name: "天王峰", lon: 127.7306, lat: 35.3372, elevation: 1915, kind: "peak" },
   bbox: [127.40, 35.15, 127.85, 35.45],
   label: { lon: 127.65, lat: 35.30, rotation: 0 },
-  source: "智异山：韩国内陆最高峰(1915米)，1967年设为韩国第一座国家公园，山体横跨全罗南道、全罗北道、庆尚南道三道（韩国国立公园公团）",
+  source: "智异山：韩国内陆最高峰(1915米)，1967年设为韩国第一座国家公园，山体横跨全罗南道、全北特别自治道、庆尚南道三道（韩国国立公园公团）",
 };
 
 const SONGNISAN: TerrainEntry = {
@@ -11317,7 +11317,7 @@ const HAEAN_BASIN: TerrainEntry = {
   landmark: { name: "海安里", lon: 128.1075, lat: 38.2967, elevation: 450, kind: "city" },
   bbox: [128.03, 38.24, 128.20, 38.35],
   label: { lon: 128.11, lat: 38.29, rotation: 0 },
-  source: "海安盆地：江原道杨口郡一处近椭圆形侵蚀盆地，中心为侏罗纪花岗岩、边缘为前寒武纪变质岩，二者抗风化能力的差异被认为是盆地成因（韩国地质资源研究院 KIGAM，核实 2026-09-10）；南北长约10km、东西宽约7km，四周山脊高出盆底约400至800m，因形似大碗而俗称 Punchbowl",
+  source: "海安盆地：江原杨口郡一处近椭圆形侵蚀盆地，中心为侏罗纪花岗岩、边缘为前寒武纪变质岩，二者抗风化能力的差异被认为是盆地成因（韩国地质资源研究院 KIGAM，核实 2026-09-10）；南北长约10km、东西宽约7km，四周山脊高出盆底约400至800m，因形似大碗而俗称 Punchbowl",
 };
 
 const YONGNEUP_DAEAMSAN: TerrainEntry = {
@@ -11438,7 +11438,7 @@ const DAEGWALLYEONG_HIGHLAND: TerrainEntry = {
   landmark: { name: "三阳牧场", lon: 128.7239, lat: 37.6889, elevation: 1140, kind: "pass" },
   bbox: [128.65, 37.63, 128.80, 37.75],
   label: { lon: 128.72, lat: 37.69, rotation: 0 },
-  source: "大关岭高原牧场：太白山脉一处海拔约1100至1400米的高山隘口地带，冷凉多风的气候条件使其成为韩国少见的大规模高山草场与风力发电场所在地，三阳牧场为其中规模最大的牧场（韩国国立公园公团/江原道）",
+  source: "大关岭高原牧场：太白山脉一处海拔约1100至1400米的高山隘口地带，冷凉多风的气候条件使其成为韩国少见的大规模高山草场与风力发电场所在地，三阳牧场为其中规模最大的牧场（韩国国立公园公团/江原）",
 };
 
 const HONAM_PLAIN: TerrainEntry = {

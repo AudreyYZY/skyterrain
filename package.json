@@ -25,7 +25,8 @@
     "check:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-anchors.ts",
     "gen:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-route-anchors.ts",
     "verify:apply-text": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/verify-apply-text.ts",
-    "list:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/list-claims.ts"
+    "list:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/list-claims.ts",
+    "check:zhen": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-zh-en-numbers.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
