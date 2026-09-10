@@ -8631,6 +8631,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "peneda-geres": {
+    // 全六段 sources: Nevosa 峰 1545 m；1971 年设立，是葡萄牙目前唯一的国家公园（全国仅此一座，非「之一」的弱化）——ICNF，1 级。核实 2026-09-10，未改动
     seeing:
       "Peneda-Gerês sits in Portugal's north-western corner, contiguous with the mountains of Spanish Galicia, its highest point about 1,545 m. From the air it is rolling granite upland dotted with bare boulders, reservoirs and green pasture — home to Portugal's only national park.",
     formation:
@@ -8646,6 +8647,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-da-estrela": {
+    // 全六段 sources: 托雷峰 1993 m 为葡萄牙**大陆**最高点；与 pico-mountain 的「全境最高点 2351 m」两个口径分列清楚、并排核对无混淆（西班牙 teide / sierra-nevada 那类口径打架未在此重现）。Estrela UNESCO 世界地质公园 2020-07-10 批准（2 级）。核实 2026-09-10，未改动
     seeing:
       "Serra da Estrela is mainland Portugal's highest range, its peak, Torre, at 1,993 m — the highest point on the Portuguese mainland. From the air the massif looks like a broad granite plateau, snow-capped in winter, home to Portugal's only ski area.",
     formation:
@@ -8661,6 +8663,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-sintra": {
+    // 全六段 sources: 最高点约 528 m；辛特拉文化景观 1995 年列入 UNESCO，是欧洲首个以「文化景观」类别列入的遗产地（whc.unesco.org/en/list/723，1 级）。核实 2026-09-10，未改动
     seeing:
       "Serra de Sintra is a small granite range west of Lisbon, its highest point about 528 m. From the air the massif is often wrapped in Atlantic sea mist, contrasting with the flat coastal plains and plateaus around it, with brightly coloured palace buildings scattered across its slopes.",
     formation:
@@ -8676,6 +8679,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-monchique": {
+    // 全六段 sources: 福亚峰 902 m 为阿尔加维大区最高点（3 级多方一致）。核实 2026-09-10，未改动
     seeing:
       "Serra de Monchique is a range inland from Portugal's Algarve, its highest point, Fóia, at 902 m — the highest point in the Algarve. From the air the vegetation is noticeably denser and greener than the drier coastal Algarve to the south, forming a clear layered contrast.",
     formation:
@@ -8691,6 +8695,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-montesinho": {
+    // 全六段 sources: 最高点约 1481 m；自然公园 1979-08-30 依第 355/79 号法令设立（Infopédia，2 级）。核实 2026-09-10，未改动
     seeing:
       "Serra de Montesinho lies in Portugal's north-eastern corner near the Spanish border, its highest point about 1,481 m. From the air the massif is an old range of slate and gneiss, heavily forested, dotted with many traditional stone-built villages.",
     formation:
@@ -8706,6 +8711,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-aire-candeeiros": {
+    // 全六段 sources: 最高点约 679 m；自然公园 1979-05-04 依第 188/79 号法令设立；米拉德艾雷洞已知延伸约 11 km，为葡萄牙已知最大溶洞系统（运营方官网，2 级）。核实 2026-09-10，未改动
     seeing:
       "Serra de Aire e Candeeiros is a Jurassic limestone upland in west-central Portugal, its highest point about 679 m. From the air the surface shows a classic pale grey karst landscape, sharply contrasting with the green farmland and forest around it.",
     formation:
@@ -8721,6 +8727,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tras-os-montes-plateau": {
+    // 全六段 sources: 米兰德斯语 1999 年经第 7/99 号法律获官方承认为葡萄牙第二语言——正文未写死年份，表述本身准确（2 级）。核实 2026-09-10，未改动
     seeing:
       "The Trás-os-Montes Plateau lies in Portugal's north-eastern corner, mostly 600–900 m in elevation. From the air it is a relatively flat, open old plateau, in sharp contrast with the deep gorge the Douro has cut along its southern edge.",
     formation:
@@ -8744,13 +8751,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Alentejo Plain by its vast, gently undulating expanse and the evenly spaced oaks of the savanna (montado), a striking contrast to the steep terrain of the northern mountains and the Douro Valley.",
     distinguish:
       "Both the Alentejo Plain and the Trás-os-Montes Plateau are open Portuguese uplands, but Alentejo has a more pronounced Mediterranean climate and is dominated by oak savanna, while Trás-os-Montes has a more continental climate dominated by farmland and forest.",
+    // concept sources: 蒙塔多的 GIAHS 是「Serpa Hills Montado」，2025 年获批、范围仅塞尔帕市（fao.org/giahs，1 级）；2016 年葡萄牙入选的是北部特拉斯山的 Barroso 农牧系统，两者是不同案例。核实 2026-09-10
     concept:
-      "Alentejo's cork oak savanna (montado) is the world's main source of cork; the UN Food and Agriculture Organization designated it a Globally Important Agricultural Heritage System in 2016 — a low-intensity agroforestry system balancing production and ecological protection.",
+      "Alentejo's cork oak savanna (montado) is the world's main source of cork; the montado system of the Serpa Hills was designated a Globally Important Agricultural Heritage System by the UN Food and Agriculture Organization in 2025 — a low-intensity agroforestry system balancing production and ecological protection.",
     history:
       "Alentejo has been an important grain-producing region since Roman times ('Alentejo' means 'beyond the Tagus'), and cities such as Évora preserve extensive Roman and later architectural remains.",
   },
 
   "douro-valley": {
+    // 全六段 sources: 1756 年划定法定产区；杜罗河谷葡萄酒产区 2001-12-14 作为文化景观列入 UNESCO（第 1046 号，1 级）。正文用「最早之一」而非「最早」——托卡伊/基安蒂另有更早之说，限定语留了余地。核实 2026-09-10，未改动
     seeing:
       "The Douro Valley is the vineyard region on both banks of the middle Douro in northern Portugal, its hand-built stone terraces about 2,000 years old. From the air, the steep valley sides are covered with tiered terraced vineyards — one of the world's oldest protected, legally defined wine regions.",
     formation:
@@ -8766,6 +8775,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "douro-international": {
+    // 全六段 sources: 无单一可核数字；峡谷成因、金雕/秃鹫栖息地、葡西两国分别设国际杜罗河谷自然公园共同保护，与公开地理文献一致；跨境表述保持中性、未描述边界线。与本库西班牙侧 duero-river 并排读无冲突。核实 2026-09-10，未改动
     seeing:
       "The International Douro is a deep canyon the Douro has cut through old crystalline plateau rock along the Portugal–Spain border. From the air, the canyon walls are steep, with drops of several hundred metres, in sharp contrast to the relatively open terraced valley upstream.",
     formation:
@@ -8781,8 +8791,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tagus-river": {
+    // seeing sources: 全长口径不一 —— CADC-Albufeira（西葡联合管理委员会，1 级）给 1,130 km；葡方另有 1,007 km 一说；原写的 1038 km 不落在任何一处。正文改写成区间，不择一。「半岛最长」各口径一致。核实 2026-09-10
     seeing:
-      "The Tagus (Tejo) is the longest river on the Iberian Peninsula, about 1,038 km, rising in Spain and crossing central Portugal before reaching the Atlantic. From the air, the river is wide and gentle around Santarém, with important irrigated farmland on both banks.",
+      "The Tagus (Tejo) is the longest river on the Iberian Peninsula, rising in Spain and crossing central Portugal before reaching the Atlantic; its total length is given as anywhere from about 1,000 to 1,130 km depending on whether the Portuguese or the Spanish measurement is used. From the air, the river is wide and gentle around Santarém, with important irrigated farmland on both banks.",
     formation:
       "The Tagus follows a tectonic fault line; in its middle and lower reaches it crosses relatively soft sedimentary rock, widening and flattening its valley to form one of central Portugal's most important alluvial plains.",
     observation:
@@ -8796,6 +8807,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "minho-river": {
+    // 全六段 sources: 下游自梅尔加索至入海口约 75 km 为界河（蒙桑市政府官网，2 级）；跨境表述中性。核实 2026-09-10，未改动
     seeing:
       "The Minho rises in Spanish Galicia; its lower 75 km forms the border between Portugal and Spain. From the air, the river winds broadly around Valença, with Portuguese and Spanish towns on opposite banks, and important wetlands near its mouth.",
     formation:
@@ -8811,6 +8823,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mondego-river": {
+    // 全六段 sources: 「唯一完全发源并流经葡萄牙境内的主要河流」多方一致；长度有 227 与 234 km 两种流传数字（不同测量口径，差约 3%），未找到能证伪 227 的权威反证，暂不改——下轮若查到 LNEG/APA 的一手数据再定。核实 2026-09-10
     seeing:
       "The Mondego is the longest river to both rise and flow entirely within Portugal, about 227 km, rising in the Serra da Estrela and flowing through Coimbra before reaching the Atlantic. From the air, the river is wide and gentle around Coimbra, with the university city built along its banks.",
     formation:
@@ -8826,6 +8839,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "guadiana-river": {
+    // 全六段 sources: 圣多明戈斯矿区 1854–1966 年开采铜/硫，为伊比利亚黄铁矿带主要矿区之一（DGEG 葡萄牙能源地质总局 Roteiro das Minas，1 级）；梅尔托拉主教堂由清真寺改建为广泛记载的史实。核实 2026-09-10，未改动
     seeing:
       "The Guadiana rises on Spain's La Mancha plateau; its lower course forms the Portugal–Spain border before reaching the Atlantic at Vila Real de Santo António. From the air, the valley winds around Mértola, its banks lined with low slate hills.",
     formation:
@@ -8849,13 +8863,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Alqueva Reservoir by its huge, irregularly shaped water body reaching into multiple tributary valleys inland, forming a striking colour and landform contrast with the dry oak savanna of the Alentejo Plain.",
     distinguish:
       "The Alqueva Reservoir and the Guadiana River belong to the same water system, but Alqueva is a still, artificial body of water formed by the dam, while the Guadiana (especially around Mértola) is a naturally flowing, meandering river channel.",
+    // concept sources: 2011 年获西班牙星光基金会（Fundación Starlight，受 UNESCO/IAU 支持）「星光旅游目的地」认证，为世界首个、亦为全球首个跨境认证；与 IDA 的「Dark Sky Reserve」是两套不同体系，检索未见阿尔克瓦在 IDA 名录上。大坝 2002 年蓄水、水面约 250 km²、西欧最大人工湖均核实无误。核实 2026-09-10
     concept:
-      "The Alqueva Reservoir is used mainly for irrigation, hydropower and regional water supply, significantly changing the long-standing water scarcity of Alentejo agriculture; thanks to very low local light pollution, it was designated one of Europe's first officially certified Dark Sky Reserves in 2011.",
+      "The Alqueva Reservoir is used mainly for irrigation, hydropower and regional water supply, significantly changing the long-standing water scarcity of Alentejo agriculture; thanks to very low local light pollution, Spain's Starlight Foundation certified it in 2011 as the world's first Starlight Tourism Destination, and the first such destination anywhere to span a border.",
     history:
       "Before the reservoir was filled, archaeologists carried out rescue documentation and relocation of prehistoric rock art and other remains in the area to be flooded — a notable case of heritage protection during a major modern Portuguese engineering project.",
   },
 
   "tagus-estuary": {
+    // 全六段 sources: ⚠️ 两个口径别混：ICNF 法定「特茹河口自然保护区」面积约 141.92 km²（14,192 ha，1 级），而整个河口水体（俗称「草海」Mar da Palha）约 340 km²。正文 seeing 段写的 320 km² 说的是整个河口湾、不是保护区边界，与 340 差约 6%，属测算差异；concept 段的 1976 年设立与 141.92 km² 说的是保护区——两段各自指代不同对象，都成立。核实 2026-09-10，未改动
     seeing:
       "The Tagus Estuary is the broad river mouth the Tagus forms east of Lisbon before reaching the Atlantic, locally called the 'Sea of Straw', covering about 320 sq km. From the air, vast shallow flats and salt marshes spread beside the Lisbon metropolitan area — an unusually large wetland this close to a major city.",
     formation:
@@ -8871,6 +8887,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "algarve-coast": {
+    // 全六段 sources: 第三纪石灰岩海蚀拱/柱地貌、「阿尔加维」源自阿拉伯语 al-Gharb，均为常识性地质与语源事实，无数字断言。核实 2026-09-10，未改动
     seeing:
       "The Algarve Coast is Portugal's southernmost limestone coastline, known for golden cliffs, sea arches, sea stacks and numerous small beaches, with Ponta da Piedade near Lagos its most representative stretch. From the air, winding golden cliffs contrast sharply with the deep blue sea.",
     formation:
@@ -8894,13 +8911,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify Ria Formosa by its lagoon enclosed by thin barrier islands, with channels crisscrossing the inner waters — quite different from the cliff-dominated rocky stretches of the Algarve Coast.",
     distinguish:
       "Both Ria Formosa and the Tagus Estuary are important Portuguese coastal wetlands, but Ria Formosa is a barrier-island lagoon system characterised by tidal channels and sandbars, while the Tagus Estuary is a broad tidal river-mouth bay with flats.",
+    // concept sources: 原写的「地中海最多白头鹮繁殖地」查无实据（且福尔摩沙潟湖在大西洋岸不在地中海）；该地实际的鸟类纪录是德塞尔塔岛的奥杜安鸥繁殖种群，2024 年 SPEA 调查逾 7000 巢、为已知全球最大且仍在扩大（SPEA / PÚBLICO，2 级）—— 这是会变的量，下轮复核。核实 2026-09-10
     concept:
-      "Ria Formosa Natural Park, established in 1987, hosts one of the largest breeding populations of the Eurasian spoonbill in the Mediterranean region, and is also an important Portuguese shellfish-farming area; its dynamic sandbar system requires ongoing geological monitoring.",
+      "Ria Formosa Natural Park, established in 1987, is an important Portuguese shellfish-farming area; on its Ilha Deserta a 2024 survey by the Portuguese Society for the Study of Birds counted over 7,000 nests of Audouin's gull, the largest such colony known anywhere; its dynamic sandbar system requires ongoing geological monitoring.",
     history:
       "Coastal towns such as Faro have long depended on the lagoon for fishing and shellfish farming, with some traditional fishing and salt-making methods continuing in part today.",
   },
 
   "costa-vicentina": {
+    // 全六段 sources: 西南阿连特茹暨维森特角自然公园 1995 年设立（前身为 1988 年的保护景观区）。核实 2026-09-10，未改动
     seeing:
       "Costa Vicentina is a stretch of Atlantic-facing cliff coastline at Portugal's south-western tip, running north from Cabo de São Vicente for over a hundred kilometres. From the air, the cliffs are straight and steep with almost no large-scale development — one of the best-preserved natural coastlines at the south-western end of the Iberian Peninsula.",
     formation:
@@ -8916,6 +8935,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "arrabida-coast": {
+    // 全六段 sources: 崖壁最高点约 500 m；自然公园 1976-07-28 依第 565/76 号法令设立（Infopédia，2 级）。核实 2026-09-10，未改动
     seeing:
       "The Arrábida Coast is a stretch of limestone mountain south of Lisbon on the Setúbal Peninsula, dropping steeply into the Atlantic, its highest point about 500 m. From the air, the mountain nearly meets the sea vertically, with unusually clear pale-blue water offshore a defining feature.",
     formation:
@@ -8931,6 +8951,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   berlengas: {
+    // 全六段 sources: 主岛大贝尔伦加长约 1.5 km；自然保护区 1981-09 依第 264/81 号法令设立；2011 年列入 UNESCO 生物圈保护区（葡萄牙第 5 个）—— 三项均核实无误。⚠️「葡萄牙第一处海洋自然保护区」这句排他断言未能核实（ICNF 页面 JS 渲染抓不到正文，其余来源均未用「第一」这个说法；另 1465 年阿方索五世曾禁猎于此，更早但性质不同），见 issue。核实 2026-09-10
     seeing:
       "The Berlengas are a group of granite islets about 10–17 km off the coast at Peniche, the main island, Berlenga Grande, about 1.5 km long. From the air, a few bare granite islets stand out sharply against the deep blue Atlantic, with a 17th-century lighthouse-fort on the main island.",
     formation:
@@ -8946,6 +8967,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pico-mountain": {
+    // 全六段 sources: 皮库山 2351 m 为葡萄牙**全境**最高点（与 serra-da-estrela 的「大陆最高点 1993 m」口径分列清楚）；皮库岛葡萄园文化景观 2004 年列入 UNESCO。核实 2026-09-10，未改动
     seeing:
       "Mount Pico is a stratovolcano on Pico Island in the Azores, at 2,351 m — the highest point in all of Portugal. From the air, a near-perfect cone rises straight out of the Atlantic, often wreathed in cloud at the summit, with black basalt stone-walled vineyards covering its lower slopes.",
     formation:
@@ -8961,6 +8983,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sete-cidades-caldera": {
+    // 全六段 sources: 破火山口直径各来源 5–6.3 km（平均约 5.3 km，另有 6×5 km 一说），正文「约5公里」落在区间内。核实 2026-09-10，未改动
     seeing:
       "Sete Cidades is a caldera about 5 km across at the western tip of São Miguel Island in the Azores. From the air, two connected lakes on the caldera floor — one large, one small — often appear in contrasting blue and green due to light refraction, ringed by lush green crater walls.",
     formation:
@@ -8976,6 +8999,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "furnas-caldera": {
+    // 全六段 sources: 地热喷气孔/沸泥塘/温泉与 cozido das Furnas 地热焖煮传统均为广泛记载的事实，无数字或年代断言需核。核实 2026-09-10，未改动
     seeing:
       "Furnas is an active volcanic caldera in eastern São Miguel Island in the Azores, with strong geothermal activity inside. From the air, steaming fumaroles and hot springs are scattered across the caldera floor, contrasting with the lush vegetation around it.",
     formation:
@@ -8991,6 +9015,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "madeira-mountains": {
+    // 全六段 sources: 皮库鲁伊武 1862 m 为马德拉岛最高点、葡萄牙第三高峰（官方旅游局 visitmadeira.com，2 级）；马德拉月桂林（Laurisilva）2007 年列入 UNESCO 自然遗产。核实 2026-09-10，未改动
     seeing:
       "The Madeira Mountains are a central ridge on Madeira Island built up by volcanic eruptions, its highest point, Pico Ruivo, at 1,862 m. From the air, a steep ridgeline rises from the island's centre, its slopes covered in extensive dark-green primeval laurel forest.",
     formation:
@@ -9006,6 +9031,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cabo-girao": {
+    // 全六段 sources: 崖顶至海面落差约 580 m；正文写「欧洲最高的海崖之一」而非部分小众来源夸大的「世界第二高」，限定克制。核实 2026-09-10，未改动
     seeing:
       "Cabo Girão is a nearly vertical sea cliff on Madeira Island's south coast, dropping about 580 m from clifftop to sea — one of the highest sea cliffs in Europe. From the air, the sheer wall plunges straight into the deep-blue Atlantic, with a suspended glass viewing platform at the top.",
     formation:
