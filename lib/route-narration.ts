@@ -4766,7 +4766,7 @@ export const ROUTE_NARRATION: Record<
   "pek-ubn": {
     study: {
     "zh-CN":
-      "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界第六大沙漠。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
+      "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界上面积最大的荒漠之一。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
     "en-US":
       "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks as the world's sixth-largest desert. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
     },
