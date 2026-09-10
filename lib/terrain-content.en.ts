@@ -7341,6 +7341,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "picos-de-europa": {
+    // 全六段 sources: 1918-07-22 设立（初名 Montaña de Covadonga），西班牙第一座国家公园；奥德萨同年 8 月为第二座，与 ordesa-canyon 条目并读一致。核实 2026-09-10，未改动
     seeing:
       "The Picos de Europa, in the middle stretch of the Cantabrian Mountains in northern Spain, is a small but unusually steep limestone massif — peaks and deep gorges packed into less than 20 km east–west. The name is thought to date from the age of sail: the first sight of Europe for ships returning from the Atlantic was these snow-streaked peaks, hence \"Peaks of Europe\".",
     formation:
@@ -7356,6 +7357,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sistema-central": {
+    // 全六段 sources: 阿尔曼索尔峰 2592m 为中央山系最高点；1905 年阿方索十三世设格雷多斯王室狩猎保护区以护伊比利亚野山羊。核实 2026-09-10，未改动
     seeing:
       "The Sistema Central is a granite mountain range running north-east to south-west right across the middle of Spain's Meseta plateau, splitting it into a northern and a southern half. It includes the Sierra de Guadarrama, the Sierra de Gredos and other sections; the highest point, Pico Almanzor in the Gredos, is 2,592 m, with snow often lingering on top into early summer.",
     formation:
@@ -7401,6 +7403,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sierra-nevada-es": {
+    // 全六段 sources: 穆拉森峰 3479m 为伊比利亚半岛最高点（与 teide「全西班牙最高」口径不冲突，已并排核对）；1986 年 UNESCO 生物圈保护区（unesco.org/en/mab/sierra-nevada，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Sierra Nevada, in Andalusia at the southern tip of Spain, holds the highest point on the Iberian Peninsula: Mulhacén at 3,479 m, yet it lies only about 40 km from the Mediterranean coast — snow on its summit is visible from the city of Granada for most of the year.",
     formation:
@@ -7431,6 +7434,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "garrotxa-volcanic-zone": {
+    // 全六段 sources: 40 余座渣锥；克罗斯卡特约 1.15 万年前最后喷发、为半岛已知最年轻火山（另有 1.3–1.4 万年区间说，同数量级）；1982 年加泰罗尼亚议会立法设自然公园。核实 2026-09-10，未改动
     seeing:
       "La Garrotxa Volcanic Zone, inland in north-eastern Catalonia, is a rare patch of volcanic landscape on the Iberian Peninsula — more than 40 low cinder cones packed into under 20 km², covered in dense oak forest and looking more like rolling hills than volcanoes.",
     formation:
@@ -7448,8 +7452,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   teide: {
     seeing:
       "Teide, on the island of Tenerife in the Canary Islands, rises to 3,715 m — the highest point in all of Spain and the highest peak on any Atlantic island. It rises from the centre of a huge caldera plain, its conical outline visible from the sea tens of kilometres away.",
+    // formation sources: // formation sources: Las Cañadas 成因在垂直塌陷说与侧向滑坡说之间尚无定论；本库 caldera-de-taburiente/distinguish 同批一并改为中性表述。核实 2026-09-10
     formation:
-      "Teide is a stratovolcano, built up from many eruptions of lava flow and pyroclastic material, sitting inside an older, much larger caldera (Las Cañadas) — itself the hollow left by an earlier, even larger volcano after a flank collapse. Measured from its base on the Atlantic sea floor, Teide's total height is about 7,500 m, the third-tallest volcanic structure on Earth after Mauna Kea and Mauna Loa in Hawaii.",
+      "Teide is a stratovolcano, built up from many eruptions of lava flow and pyroclastic material, sitting inside an older, much larger caldera (Las Cañadas) — whose own origin is still debated: one view holds it is the hollow left by an earlier, larger volcano after a lateral flank collapse, the other that it formed by vertical collapse when an underlying magma chamber emptied, and evidence has been found for both. Measured from its base on the Atlantic sea floor, Teide's total height is about 7,500 m, the third-tallest volcanic structure on Earth after Mauna Kea and Mauna Loa in Hawaii.",
     observation:
       "From the air Teide is an almost perfectly symmetrical cone, its summit sometimes snow-capped, surrounded by the broad, flat pyroclastic plain of Las Cañadas — whose rim, a ring of steep cliffs, clearly traces the outline of the older volcano that once stood here.",
     distinguish:
@@ -7461,6 +7466,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-tramuntana": {
+    // 全六段 sources: 梅杰峰 1445m、萨坎帕纳洞 358m（马略卡最深洞）、2011-06-29 以文化景观类列入 UNESCO（whc.unesco.org/en/list/1371，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Serra de Tramuntana runs about 90 km along the north-west coast of Mallorca in the Balearic Islands, a steep limestone range with the Mediterranean on one side and the island's plain on the other; its highest point, Puig Major, is 1,445 m.",
     formation:
@@ -7476,6 +7482,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meseta-central": {
+    // 全六段 sources: 约占伊比利亚半岛四成面积；平均海拔各来源在 600–760m 之间，正文「600—800米」落在区间内（Britannica，2 级）。核实 2026-09-10，未改动
     seeing:
       "The Meseta Central covers nearly two-fifths of the Iberian Peninsula, one of the largest plateaus in Europe, averaging 600–800 m in elevation. It is not a single flat sheet but a gently undulating, ancient tableland, with Madrid sitting near its centre.",
     formation:
@@ -7527,8 +7534,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "This area was still shallow sea about 8 million years ago, after which thick marine marl and shale were deposited. This kind of rock has very fine grains, is almost impermeable, and carries almost no vegetation to hold the surface — every heavy rainstorm sends water racing down tiny surface cracks, cutting them deeper, and over a few decades a dense network of gullies forms. This thoroughly dissected landscape is generically called badland.",
     observation:
       "From the air Tabernas is a yellow-brown, rolling landscape covered in dense, parallel gullies with almost no continuous vegetation; the ridgelines between gullies branch repeatedly like tree limbs — a drainage pattern very typical of badland terrain. It is ringed by the Sierra de los Filabres and the Sierra Alhamilla, whose somewhat greener slopes stand in clear contrast.",
+    // distinguish sources: // distinguish sources: 塔韦纳斯范围内并存柯本 BWh/BWk 与半干旱气候，不宜整体定性为任一种；核实 2026-09-10
     distinguish:
-      "The Tabernas Desert and Bardenas Reales are both Spanish badlands, but Tabernas is dominated by marl and is more densely and finely gullied, while Bardenas Reales has harder limestone and gypsum layers interbedded in its rock and so retains isolated tablelands and pinnacles. By strict climatological standards, Tabernas's rainfall-to-evaporation ratio actually makes it semi-arid rather than true desert — \"Europe's only desert\" is a popular rather than a technical label.",
+      "The Tabernas Desert and Bardenas Reales are both Spanish badlands, but Tabernas is dominated by marl and is more densely and finely gullied, while Bardenas Reales has harder limestone and gypsum layers interbedded in its rock and so retains isolated tablelands and pinnacles. Climatologists differ on whether Tabernas as a whole meets the strict desert threshold: parts of it receive under 250 mm of rain a year and do qualify as desert climate, while most of the surrounding area is semi-arid — \"Europe's only desert\" is a popular rather than a technical label.",
     concept:
       "Badland terrain shows how the absence of vegetation amplifies erosion: wherever rainfall is scarce and the rock is impermeable and easily broken, and there is no vegetation to hold the surface, erosion runs far ahead of vegetated ground nearby — which is why badland often appears on one small, especially poor rock unit within a semi-arid region, not across the whole dry zone.",
     history:
@@ -7546,11 +7554,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bardenas Reales and the Tabernas Desert are both Spanish badlands, but Bardenas has more hard limestone and gypsum interbedded in its rock and so more readily preserves isolated tablelands and spires; Tabernas is dominated by marl and erodes more uniformly and thoroughly, rarely leaving isolated residual landforms.",
     concept:
       "Isolated tablelands and spires are a direct product of differential erosion: a layer of hard rock acts like a cap, protecting the softer rock below from being washed away, while the unprotected soft rock around it is worn down lower and lower, leaving the protected part standing relatively proud — the same process behind the \"butte\" landforms of the American West.",
+    // history sources: // history sources: 882 年纳瓦拉国王 Sancho García 授龙卡尔谷地放牧权；Reales = 纳瓦拉王室的（bardenasreales.es / visitnavarra.es，2 级）。核实 2026-09-10
     history:
-      "Bardenas Reales has been a pasture reserved for the Kingdom of Aragon's royal house since the Middle Ages — \"Reales\" means \"royal\" — and remains a shared seasonal grazing ground for local herders today. It was UNESCO Biosphere Reserve-listed in 2000 and has served as a location for numerous films.",
+      "Bardenas Reales has been a pasture reserved for the Kingdom of Navarre's royal house since the Middle Ages, the title passing to the Crown of Castile after Navarre's incorporation — \"Reales\" means \"royal\" — and remains a shared seasonal grazing ground for local herders today. It was UNESCO Biosphere Reserve-listed in 2000 and has served as a location for numerous films.",
   },
 
   timanfaya: {
+    // 全六段 sources: 1730–1736 年喷发历时约 2055 天；逾百个喷口（含短暂活动的小喷口，与 observation 段「几十个渣锥」指永久保留者，不矛盾）；约 200 km² 农田被覆盖、最厚熔岩层近百米；1974 年建园。核实 2026-09-10，未改动
     seeing:
       "Timanfaya, on the island of Lanzarote in the Canary Islands, is a field of pure-black lava with almost no vegetation, known as the \"Montañas del Fuego\" (Mountains of Fire). This landscape is not an ancient relic but the direct result of an eruption less than 300 years ago, lasting six years from 1730 to 1736.",
     formation:
@@ -7569,11 +7579,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Caldera de Taburiente, on the island of La Palma in the Canary Islands, is a huge hollow about 8 km across and more than 2,000 m deep, its walls as steep as a bowl — one of the largest erosion calderas in the world.",
     formation:
-      "About 400,000 years ago this was the site of a huge shield volcano (built up slowly from many lava flows). One flank of that volcano gave way in a massive landslide, carrying away a large volume of the volcano's interior and leaving a huge hollow; over the following hundreds of thousands of years running water kept eroding and deepening that hollow, hollowing it out further into today's scale. It is therefore not a \"caldera\" blown out by a single eruption, but an \"erosion caldera\" shaped jointly by a landslide and long-term water erosion.",
+      "Several hundred thousand years ago this was the site of a huge shield volcano (built up slowly from many lava flows). One flank of that volcano gave way in a massive landslide, carrying away a large volume of the volcano's interior and leaving a huge hollow; over the following hundreds of thousands of years running water kept eroding and deepening that hollow, hollowing it out further into today's scale. It is therefore not a \"caldera\" blown out by a single eruption, but an \"erosion caldera\" shaped jointly by a landslide and long-term water erosion.",
     observation:
       "From the air the Caldera de Taburiente is a huge circular hollow in the north of the island, its walls near-vertical volcanic rock on which layers of lava and pyroclastic material from different periods can be made out; dense Canary pine forest grows on the floor of the hollow, in sharp contrast with the bare rock walls around it.",
+    // distinguish sources: // distinguish/formation sources: 本条不再点名 Las Cañadas 作反例（其成因学界未定，见 teide 条目同批改动）；塔布连特为侵蚀火山口这一判断符合 Carracedo & Troll 2016 / Groom et al. 2023。核实 2026-09-10
     distinguish:
-      "The Caldera de Taburiente differs from most true calderas (such as Las Cañadas beneath Teide) — those usually form when an underground magma chamber empties during an eruption and the surface collapses; Taburiente is entirely the product of a landslide plus long-term water erosion, with no single collapse event.",
+      "The Caldera de Taburiente differs from a typical eruption-collapse caldera — where an underground magma chamber empties and the surface subsides — in that Taburiente is entirely the product of a landslide plus long-term water erosion, with no single collapse event.",
     concept:
       "The name \"erosion caldera\" is itself a reminder: not every huge caldera-like hollow was blown out directly by an eruption — some form when a volcanic edifice collapses under its own weight and is then hollowed out over time by running water; telling the two apart requires reading the rock structure and erosion evidence, not just the shape.",
     history:
@@ -7581,6 +7592,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rias-baixas": {
+    // 全六段 sources: 维戈/蓬特维德拉/阿罗萨/穆罗斯-诺亚四湾名称准确；ría（未冰川化河谷海侵）与 fjord（冰川 U 形谷海侵）成因区分符合地貌学标准定义；加利西亚贻贝约占西班牙产量八成。注：ría 一词更精确的词源是加利西亚语（源自 río），西班牙语沿用。核实 2026-09-10，未改动
     seeing:
       "The Rías Baixas, on the south-west coast of Galicia in north-west Spain, are made up of four deep, funnel-shaped inlets cutting far inland — the Ría de Vigo, Ría de Pontevedra, Ría de Arousa and Ría de Muros e Noia — giving the coastline an extremely jagged outline; the region is Spain's most important mussel-farming area.",
     formation:
@@ -7626,6 +7638,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   donana: {
+    // 全六段 sources: 1969 年建园（初 3.46 万 ha，后扩至约 5.4 万 ha）、1994 年列入 UNESCO；地名源自 1585 年 Doña Ana de Silva y Mendoza 的猎苑。正文只写季节性丰枯的自然过程，未给地下水超采监测数字，不属须带监测时点的量。核实 2026-09-10，未改动
     seeing:
       "Doñana, at the mouth of the Guadalquivir River, is a wetland of about 54,000 hectares made up of seasonal marshes, shifting dunes and Mediterranean pine forest — one of Europe's most important habitats for migratory birds, with hundreds of thousands of waterfowl passing through each year between Europe and Africa.",
     formation:
@@ -7673,8 +7686,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ordesa-canyon": {
     seeing:
       "The Ordesa Canyon, on the Spanish side of the Pyrenees, is a deep valley cut into the north face of Monte Perdido, its walls near-vertical and its floor thickly forested; at the head of the valley a waterfall called the Cola de Caballo (\"Horsetail\") drops straight down a cliff — the most spectacular stretch of Pyrenean landscape on Spanish soil.",
+    // formation sources: // formation sources: Añisclo 深逾 1000m 属实；「比奥德萨更深」无来源支持，各来源作「至少与奥德萨相当」。核实 2026-09-10
     formation:
-      "Monte Perdido is Europe's highest limestone massif, at 3,355 m. The canyon is the product of repeated Ice Age glacial carving followed by long-term water dissolution — glaciers first cut a broad U-shaped valley floor, and afterward running water continued cutting down along fractures in the limestone, sharpening the walls further. The neighbouring Añisclo Canyon is even deeper than Ordesa, over 1,000 m, and both belong to the same limestone karst massif.",
+      "Monte Perdido is Europe's highest limestone massif, at 3,355 m. The canyon is the product of repeated Ice Age glacial carving followed by long-term water dissolution — glaciers first cut a broad U-shaped valley floor, and afterward running water continued cutting down along fractures in the limestone, sharpening the walls further. The neighbouring Añisclo Canyon is similarly over 1,000 m deep, comparable to Ordesa, and both belong to the same limestone karst massif.",
     observation:
       "From the air the Ordesa valley is a densely forested U-shaped gorge, its floor flat and its walls steep and towering, with a height difference of more than 800 m; the round headwall at the end of the valley is a classic glacial cirque, and the Cola de Caballo waterfall drops from the cliff at that head.",
     distinguish:
@@ -9136,8 +9150,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Semois Valley and the Ourthe Valley are important Ardennes river valleys, but the Semois Valley is known for its extreme, deeply incised meanders, while the Ourthe Valley's channel is comparatively less winding.",
     concept:
       "The deeply incised meanders of the Semois Valley are a textbook case study in \"entrenched meander\" landforms, formed by the combined effect of lateral and downward river erosion.",
+    // history sources: // history sources: 塞穆瓦河谷国家公园与桑布尔—默兹之间国家公园同为瓦隆大区 2023-01-01 生效的首批国家公园，无先后；核实 2026-09-10
     history:
-      "Historic towns such as Bouillon line the Semois Valley; in 2023 most of the valley was designated Wallonia's first national park, strengthening protection of this landscape.",
+      "Historic towns such as Bouillon line the Semois Valley; in 2023 most of the valley was designated one of Wallonia's first two national parks, strengthening protection of this landscape.",
   },
 
   "ourthe-valley": {
@@ -9188,16 +9203,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ambleve-gorge": {
     seeing:
       "The Amblève Gorge is a stretch of valley cut by the Amblève River through the eastern Ardennes; the Coo Waterfall within the gorge is one of Belgium's better-known falls.",
+    // formation sources: // formation/concept/history sources: 截弯改道为史实，目的在法语来源中分为「供磨坊」与「防洪保村」两说，本库不再择一断言；核实 2026-09-10
     formation:
-      "The gorge was carved by long-term erosion of the eastern Ardennes bedrock by the Amblève; the Coo Waterfall within it is not natural but was created artificially in the 18th century, when local monks cut through a river bend to feed a watermill, producing a drop of about 15 m.",
+      "The gorge was carved by long-term erosion of the eastern Ardennes bedrock by the Amblève; the Coo Waterfall within it is not natural but was created artificially in the 18th century, when local monks cut through a river bend, producing a drop of about 15 m; accounts differ as to why, some saying it fed an abbey watermill, others that it protected the village inside the bend from flooding.",
     observation:
       "From the air, the Amblève Gorge shows a deeply cut, forest-ringed valley outline; the Coo Waterfall's vertical white curtain of water stands out sharply against the green slopes, marking this stretch of gorge unmistakably.",
     distinguish:
       "Unlike Alpine gorges such as Liechtensteinklamm in Austria, the Amblève Gorge's Coo Waterfall is not purely natural but the product of a historical artificial diversion, and its drop is far smaller than the large falls of the Alps.",
     concept:
-      "The Coo Waterfall is a case study in how humans have historically modified river terrain to harness hydropower, illustrating artificial intervention in a river channel during the era of traditional watermills.",
+      "The Coo Waterfall is a case study in how humans have historically modified river terrain, illustrating pre-industrial artificial cut-through of a natural river meander.",
     history:
-      "The Coo Waterfall takes its name from an 18th-century channel diversion built by local monks to supply a watermill; today it is an important tourist attraction in the Belgian Ardennes, and a pumped-storage power station nearby makes use of the local elevation drop.",
+      "The Coo Waterfall takes its name from an 18th-century channel diversion built by local monks; today it is an important tourist attraction in the Belgian Ardennes, and a pumped-storage power station nearby makes use of the local elevation drop.",
   },
 
   "han-sur-lesse-caves": {
@@ -9226,15 +9242,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Viroin Valley shows a gorge-like outline, its exposed grey-white limestone cliffs on both banks contrasting sharply with the forest and grassland on the valley floor.",
     distinguish:
       "Both the Viroin Valley and the Lesse Valley lie on the Calestienne limestone belt, but the Viroin Valley is defined mainly by exposed surface cliffs and gorge scenery, while the Lesse Valley is better known for its underground streams and large cave system.",
+    // concept sources: // concept/history sources: Parc naturel Viroin-Hermeton 设立于 1998；Famenne-Ardenne UNESCO Global Geopark 的 8 个市镇不含 Viroinval（geoparcfamenneardenne.be，1 级，核实 2026-09-10）
     concept:
-      "The Viroin Valley lies within the core zone of the Famenne-Ardenne UNESCO Global Geopark, an important case study in Middle Devonian marine limestone deposition and subsequent karstification.",
+      "The Viroin Valley is an important case study in Middle Devonian marine limestone deposition and subsequent karstification, its limestone cliffs and incised river together forming a classic karst gorge landscape.",
     history:
-      "Owing to its outstanding geological and ecological value, the Viroin Valley area was recognised as a UNESCO Global Geopark in 2018 alongside the wider Famenne-Ardenne region.",
+      "Owing to its outstanding geological and ecological value, the Viroin Valley area was brought under protection in 1998 as part of the Viroin-Hermeton Nature Park.",
   },
 
   "scheldt-river-be": {
+    // seeing sources: // seeing sources: 2022 年安特卫普港与泽布吕赫港合并为 Port of Antwerp-Bruges（portofantwerpbruges.com，1 级，核实 2026-09-10）；条目其余段落提到的「安特卫普港」是地理指代，未改
     seeing:
-      "The Scheldt runs about 435 km in total, with roughly 200 km flowing through Belgium; the port of Antwerp, on its lower course, is Europe's second-largest port.",
+      "The Scheldt runs about 435 km in total, with roughly 200 km flowing through Belgium; the Antwerp docks sit on its lower course and merged with Zeebrugge in 2022 to form Port of Antwerp-Bruges, Europe's second-largest port by throughput.",
     formation:
       "The Scheldt has been an important waterway since Roman times; its estuary (the Westerschelde) flows out to sea through the Netherlands, and Belgium and the Netherlands maintain a long-standing agreement on the passage and maintenance of this waterway.",
     observation:
@@ -9319,8 +9337,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   zwin: {
+    // seeing sources: // seeing sources: 2016—2019 跨境扩建新增约 120 ha（Agentschap voor Natuur en Bos，1 级）；比利时一侧现行总面积各来源不一（扩建前约 125–155 ha、扩建后约 235–265 ha），正文不写总数，见 issue
     seeing:
-      "The Zwin, on the Belgium-Netherlands border, is a tidal salt-marsh wetland regularly flooded by the sea at high tide, covering about 180 ha on the Belgian side.",
+      "The Zwin, on the Belgium-Netherlands border, is a tidal salt-marsh wetland regularly flooded by the sea at high tide; a cross-border expansion project in 2016-2019 added roughly 120 ha of tidal area on the Belgian side.",
     formation:
       "The wetland was shaped over time by North Sea tidal currents; its distinctive salinity gradient supports salt-tolerant plant communities including sea lavender, a classic intertidal salt-marsh ecosystem.",
     observation:
@@ -10202,6 +10221,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "millstatter-see": {
+    // 全六段 sources: 米尔施泰特湖水深/面积与湖畔修道院史实本轮逐段核对无出入（Land Kärnten 官方湖泊数据，1 级），未改动；核实 2026-09-10
     seeing:
       "The Millstätter See is Carinthia's second-largest lake, about 13.3 km² in area with an average depth of about 89 m and a maximum of 142 m — among the deepest lakes in Austria.",
     formation:
@@ -10217,6 +10237,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hallstattersee: {
+    // 全六段 sources: 哈尔施塔特湖冰蚀成因、盐矿开采史与 1997 年 UNESCO 文化景观列入本轮逐段核对无出入（whc.unesco.org/en/list/806，1 级），未改动；核实 2026-09-10
     seeing:
       "The Hallstättersee is a long, narrow glacially carved lake in the Salzkammergut, about 8.55 km² in area with a maximum depth of about 125 m; the village of Hallstatt sits on its eastern shore at the foot of the Dachstein.",
     formation:
@@ -11072,10 +11093,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Kebnekaise and Sarek are high-mountain landforms in Swedish Lapland, but Kebnekaise is Sweden's single highest peak with a striking north-south contrast between its twin summits, while Sarek is a continuous massif holding six peaks above 2,000 m.",
     concept:
       "The reversal in elevation between Kebnekaise's north and south peaks is a classic — and continually updating — case for studying how mountain glacier melt under a warming climate can directly change which point holds a country's highest-point title.",
+    // history sources: // history sources: 首登 1883 Charles Rabot；Tarfala 研究站 1946 由斯德哥尔摩大学设立；南峰高度逐年实测（2025-09-10 为 2088.4m），正文只作趋势表述不写死数字。核实 2026-09-10
     history:
-      "Swedish geologist Axel Hamberg first systematically surveyed the mountain in 1880; it is now an important Swedish mountaineering destination and one of the most important sites for long-term monitoring of Nordic mountain glaciers.",
+      "French geographer Charles Rabot made the mountain's first recorded ascent in 1883; Stockholm University's Tarfala Research Station, established nearby in 1946, remains one of the most important sites for long-term monitoring of Nordic mountain glaciers.",
   },
   "sarek-mountains": {
+    // 全六段 sources: 6 座 2000m 以上山峰、逾 100 条活动冰川、1909 年设立（瑞典 1909 年《国家公园法》一次设立 9 座，为欧洲最早一批，「最早的国家公园之一」限定成立）—— sverigesnationalparker.se（1/2 级）；核实 2026-09-10，未改动
     seeing:
       "Sarek forms the core of Sarek National Park, established in 1909 and one of Sweden's earliest national parks; the park holds six peaks above 2,000 m.",
     formation:
@@ -11092,8 +11115,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "oland-alvar": {
     seeing:
       "Stora Alvaret is a roughly 40-km stretch of bare limestone plateau on the southern half of Öland, covering about a quarter of the island — the largest surviving example of this type of limestone barren in Europe.",
+    // formation sources: // formation sources: 大阿尔瓦基岩为奥陶纪石灰岩（约4.5亿年前）；核实 2026-09-10
     formation:
-      "The plateau's foundation is Carboniferous limestone; last-glacial ice scouring stripped away the soil cover over a wide area, leaving an extremely thin, high-pH soil that supports a distinctive, poor limestone-barren ecosystem.",
+      "The plateau's foundation is Ordovician limestone; last-glacial ice scouring stripped away the soil cover over a wide area, leaving an extremely thin, high-pH soil that supports a distinctive, poor limestone-barren ecosystem.",
     observation:
       "From the air, the plateau surface shows a distinctive texture of grey bare rock interwoven with sparse vegetation, in sharp contrast with the farmland landscape elsewhere on the island.",
     distinguish:
@@ -11104,8 +11128,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area has some five thousand years of human settlement history, with residents long adapting their land use to the natural constraints of the limestone plateau; the Agricultural Landscape of Southern Öland was inscribed on the UNESCO World Heritage List in 2000 as a result.",
   },
   vindelfjallen: {
+    // seeing sources: // seeing sources: Länsstyrelsen Västerbotten 现行面积 564,918 ha（2017 扩界后）；1 级，核实 2026-09-10
     seeing:
-      "Vindelfjällen Nature Reserve is Sweden's largest protected area, covering about 555,000 hectares, dominated by a mountain plateau landform transitioning between birch forest and alpine tundra.",
+      "Vindelfjällen Nature Reserve is Sweden's largest protected area, covering about 565,000 hectares after its 2017 expansion, dominated by a mountain plateau landform transitioning between birch forest and alpine tundra.",
     formation:
       "The reserve sits on the eastern slope of the Scandinavian Mountains; last-glacial erosion shaped its undulating mountain plateau terrain, with conifer forest, birch forest and alpine tundra vegetation zones arranged in sequence up the elevation gradient.",
     observation:
@@ -11120,8 +11145,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "siljan-ring": {
     seeing:
       "The Siljan Ring formed around 377 million years ago in the Devonian period when a roughly 5-km-diameter body struck the Earth; the resulting ring structure is about 52 km in diameter, the largest known impact structure in Europe.",
+    // formation sources: // formation sources: 今日环形洼地由末次冰期冰川融水侵蚀构造内较软沉积岩形成，非撞击瞬间产物（Lantmäteriet Geoskolan，1 级，核实 2026-09-10）
     formation:
-      "The impact violently deformed the originally flat Precambrian granite basement; the ring structure preserves sedimentary rock layers from the Lower Cambrian through the Devonian, with Lake Siljan sitting in a low point along the ring's south-western margin.",
+      "The impact violently deformed the originally flat Precambrian granite basement and left sedimentary rock layers from the Lower Cambrian through the Devonian; at the end of the last ice age, glacial meltwater preferentially eroded the softer sedimentary rock inside the structure, carving out the ring-shaped depression seen today, along which Lake Siljan and its neighbours lie — the lake itself along the ring's south-western margin.",
     observation:
       "From the air, the ring structure's outline is faintly traceable in the terrain and drainage pattern; Lake Siljan and several smaller lakes are arranged along the ring's margin — a distinctive impact landform in Sweden.",
     distinguish:
@@ -11132,6 +11158,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The structure drew scientific attention from the 19th century onward because of unusual geological phenomena in the area; its impact origin was confirmed in the 20th century, and today the Siljan Geopark is Sweden's first national geopark.",
   },
   "store-mosse": {
+    // 全六段 sources: 「瑞典拉普兰以南最大隆起泥炭沼泽」与 1982 年建园经 Naturvårdsverket 转述来源确认；与 siljan-ring 的成因对比（泥炭堆积 vs 撞击构造）两条并读无矛盾。核实 2026-09-10，未改动
     seeing:
       "Store Mosse is the largest raised peat bog south of Swedish Lapland; a national park was established here in 1982.",
     formation:
@@ -11146,6 +11173,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area historically remained in a natural state because the peat bog was difficult to farm; a national park was formally established in 1982, making it an important wetland conservation area in southern Sweden.",
   },
   vanern: {
+    // 全六段 sources: 5650 km²、欧盟境内最大湖（欧洲最大的拉多加/奥涅加在俄罗斯、不在欧盟，口径区分正确）、经约塔河注入卡特加特；与 vattern「瑞典第二大」、malaren「第三大」三条并排核对不冲突。核实 2026-09-10，未改动
     seeing:
       "Vänern is the largest lake in the European Union, covering about 5,650 km²; its water drains via the Göta River into the Kattegat.",
     formation:
@@ -11160,6 +11188,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Since the Göta Canal opened to navigation in the 19th century, Vänern has been an important link in the inland waterway connecting Sweden's east and west coasts; historic buildings such as Läckö Castle along its shore bear witness to the lake region's long history of development.",
   },
   vattern: {
+    // 全六段 sources: 面积 1912 km² 为瑞典第二大湖、最大水深 128m、Vättern graben 构造成因，多来源交叉印证一致。核实 2026-09-10，未改动
     seeing:
       "Vättern is Sweden's second-largest lake and one of the clearest large lakes in Europe, with a maximum depth of about 128 m.",
     formation:
@@ -11174,6 +11203,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island of Visingsö in the lake has been an important site for religious and royal activity since the Middle Ages; Vadstena Abbey on the shore was founded by the Swedish saint Bridget and is an important medieval religious heritage site in Sweden.",
   },
   malaren: {
+    // 全六段 sources: 瑞典四大湖序为维纳恩>韦特恩>梅拉伦>耶尔马伦，「第三大」成立；冰后地壳均衡抬升致其约 12–13 世纪与波罗的海分离。核实 2026-09-10，未改动
     seeing:
       "Mälaren is Sweden's third-largest lake, with an extremely intricate, many-branched shoreline; Stockholm sits at its eastern outlet to the sea.",
     formation:
@@ -11188,6 +11218,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The shores of Mälaren have been an important political and trading centre for Sweden since Viking times; Stockholm was founded as a city in the 13th century, and Drottningholm Palace was inscribed on the UNESCO World Heritage List in 1991.",
   },
   tornetrask: {
+    // 全六段 sources: 最大水深 168m（SMHI，1 级）；该湖属受保护的「国家河流」流域、实际未经水电调节，正文未作水位调节声称，无矛盾；阿比斯科科学站 1935 年设立。核实 2026-09-10，未改动
     seeing:
       "Torneträsk is a long, narrow tectonic lake in Swedish Lapland, with a maximum depth of about 168 m; the lakeside village of Abisko is a well-known spot for observing the northern lights.",
     formation:
@@ -11202,8 +11233,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Abisko has been an important Swedish alpine ecology and climate research station since the early 20th century; the Abisko Scientific Research Station, established in 1935, is one of the oldest polar research stations in Northern Europe.",
   },
   taakern: {
+    // seeing sources: // seeing sources: 均深约 0.8m、最深约 2.5m（takern.se 2 级 + Länsstyrelsen Östergötland 1 级）；核实 2026-09-10
     seeing:
-      "Tåkern is a shallow lake in southern Sweden, less than 1.5 m deep, with extensive reed marsh, and an important bird habitat in the country.",
+      "Tåkern is a shallow lake in southern Sweden with an average depth of about 0.8 m and a maximum of no more than 2.5 m, with extensive reed marsh, and an important bird habitat in the country.",
     formation:
       "The lake basin occupies a shallow depression carved by last-glacial erosion; the extremely shallow water and nutrient-rich bottom sediment provide favourable conditions for reeds and other aquatic plants.",
     observation:
@@ -11220,14 +11252,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Torne River is one of Sweden's longest rivers without hydroelectric development, running about 520 km; its lower course forms the border between Sweden and Finland.",
     formation:
       "The river rises in the mountains of Swedish Lapland and flows south-east along a structurally weak zone; because it has never been dammed for hydropower, its channel retains natural seasonal flow variation and riverbed form.",
+    // observation sources: // observation/history sources: 汇流点在 Pello 附近（约67°10′N），河口在 Haparanda/Tornio（约65.85°N）；Struve 测地弧 2005 年列入 UNESCO（whc.unesco.org/en/list/1187）。核实 2026-09-10
     observation:
-      "From the air, the channel winds through Arctic Circle forest and tundra; at its mouth it joins with Finland's Könkämäeno river system to form a cross-border river-valley ecosystem.",
+      "From the air, the channel winds through Arctic Circle forest and tundra; well upstream of its mouth it meets the Könkämäeno-Muonio river system flowing down from near the Norwegian border, marking the start of the border reach and forming a cross-border river-valley ecosystem.",
     distinguish:
       "The Torne River and southern Swedish rivers such as the Dalälven and Klarälven are all important Swedish waterways, but the Torne lies within the Arctic Circle and retains a natural, undammed channel, while the Dalälven and Klarälven flow through south-central Sweden and have sections used for hydropower.",
     concept:
       "As one of Sweden's few large rivers without hydroelectric development, the Torne is an important sample for studying the natural hydrology of an Arctic river unaffected by human regulation.",
     history:
-      "The river's lower course has historically been an important channel for cross-border trade and movement between Sweden and Finland; the Sweden-Finland cross-border section was inscribed on the UNESCO World Heritage List in 2000 as part of the Struve Geodetic Arc's Torne/Muonio/Könkämä valley listing.",
+      "The river's lower course has historically been an important channel for cross-border trade and movement between Sweden and Finland; survey points along this border reach were inscribed on the UNESCO World Heritage List in 2005 as part of the ten-country Struve Geodetic Arc.",
   },
   dalalven: {
     seeing:
@@ -11268,8 +11301,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Lapporten and the Abisko Canyon are glacially related landforms in Lapland, but Lapporten is a broad, symmetrical U-shaped glacial trough, while the Abisko Canyon is a narrower canyon cut by a river along a structural fault.",
     concept:
       "Lapporten is a frequently cited textbook example of a U-shaped glacial trough worldwide, directly illustrating the fundamental difference in valley cross-section between glacial and river erosion.",
+    // history sources: // history sources: Lapporten 为瑞典语名；北萨米语 Čuonjávággi =「鹅谷」；核实 2026-09-10
     history:
-      "In Northern Sámi the valley is called \"Lapporten,\" meaning \"the gate of Lapland\"; it has historically been an important landmark on Sámi reindeer migration routes and is now a well-known viewpoint along the Kungsleden trail.",
+      "\"Lapporten\" is the Swedish name, meaning \"the gate of Lapland\"; in Northern Sámi the valley is called Čuonjávággi, \"Goose Valley.\" It has historically been an important landmark on Sámi reindeer migration routes and is now a well-known viewpoint along the Kungsleden trail.",
   },
   "abisko-canyon": {
     seeing:
@@ -11294,8 +11328,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the coastline is steep and winding, studded with islands and bays; the High Coast Bridge spans a narrow bay along the shore, making it an excellent landmark for observing this uplifting coastal landform.",
     distinguish:
       "The High Coast, the Bohuslän Coast and the Stockholm Archipelago all display Sweden's granite coastal landforms, but the High Coast is uniquely known for its ongoing isostatic rebound, and is the only one of the three inscribed as a World Heritage Site.",
+    // concept sources: // concept sources: 2000 列入、2006 扩展为 High Coast / Kvarken Archipelago 跨国遗产（whc.unesco.org/en/list/898，1 级）；distinguish 段「三者中唯一列入世界遗产」在补入 2006 信息后仍成立。核实 2026-09-10
     concept:
-      "The High Coast's ongoing isostatic rebound is one of the world's most important field laboratories for studying post-glacial crustal rebound after ice-sheet melting, which is why it was inscribed on the UNESCO World Heritage List in 2000.",
+      "The High Coast's ongoing isostatic rebound is one of the world's most important field laboratories for studying post-glacial crustal rebound after ice-sheet melting, which is why it was inscribed on the UNESCO World Heritage List in 2000 and extended in 2006 to take in Finland's geologically complementary Kvarken Archipelago, becoming a transboundary site.",
     history:
       "Local fishing villages have historically had to periodically move their docks and buildings seaward as the coastline continued to rise — a living human record of the ongoing land-uplift process.",
   },

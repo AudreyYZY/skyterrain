@@ -3829,8 +3829,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   london: {
+    // 其余 sources: 「伦敦金融城（一平方英里）+ 周围 32 个自治市、没有单一市政厅式中心」这一层核实无误。
+    //   五座机场 LHR／LGW／STN／LTN／LCY 代码现行有效、无更名。2026-09-10 核。
+    // identity sources: ⚠️ **原文的「都会区约 1400 万」对不上任何一档 ONS 口径**：大伦敦 2024 年中约 910 万、伦敦建成区 2021 年普查约 1056 万、伦敦金融城约 8 千人。1400 万只见于非 ONS 发布的通勤区／FUA 口径。按仓库规矩「都会区」不禁用、**但要写明发布方与年份** —— 写不出就不写，改用大伦敦口径。
+    //   📌 待办：ONS 的 mid-2025 年中估计已于 **2026-07-29** 发布（较 mid-2024 降约 0.29%），本轮未取到大伦敦精确表格值；下一轮走 Nomis 表拿到精确数后更新。若要恢复都会区那一档，必须找到具名发布方（如 Eurostat FUA）并写明年份。
     identity:
-      "London is the capital of the United Kingdom and of England, with a metro area of about 14 million, and one of the world's centres of finance, culture and transport. The city straddles the River Thames and has grown from the Roman 'Londinium' over two thousand years as the centre of this region. It is made up of the City of London (the square-mile old core) and 32 surrounding boroughs, with no single town-hall-style centre.",
+      "London is the capital of the United Kingdom and of England, with a Greater London population of about 9.1 million at mid-2024 (ONS), and one of the world's centres of finance, culture and transport. The city straddles the River Thames and has grown from the Roman 'Londinium' over two thousand years as the centre of this region. It is made up of the City of London (the square-mile old core) and 32 surrounding boroughs, with no single town-hall-style centre.",
     // howItWorks sources: Wikipedia: Greater London (2024 pop, 1,572 km²); London boroughs (responsibilities, Inner/Outer); Greater London Authority. See docs/city-depth-redesign-2026-09-06.md §4
     howItWorks:
       "The London people speak of is officially Greater London, made up of 32 London boroughs and the City of London. The Greater London Authority, created in 2000, has an elected Mayor and Assembly in charge of transport, policing, fire and strategic planning, with Transport for London running the network; schools, housing, social services, waste, local roads, planning applications and council tax are the business of the borough councils. The City of London covers barely 2.9 km², yet has its own corporation and its own Lord Mayor. London is polycentric: the City and Westminster are the traditional centres, and Canary Wharf is a financial district built since the 1980s. Londoners give a location by postcode district — SW1, E14 — rather than by borough, and Transport for London's fare zones 1 to 9 shape the cost of commuting and the choice of where to live. Newcomers most often go wrong by taking the City of London for 'the city of London', or by assuming the Mayor of London also runs local services such as waste and schools.",
@@ -3982,8 +3986,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   edinburgh: {
+    // 零改动留痕（2026-09-10）：EDI 机场代码现行有效。
+    //   ✅ **零争议红线判定（判据：涉及仍在持续的对立状态、或带评价性表述 → 删；定位性简短事实 → 留）**：
+    //   全文**未出现**苏格兰独立公投或相关政治议题；老城与新城的世界遗产、城堡、8 月艺术节与军乐节、启蒙运动史
+    //   都是定位性事实、无评价 —— **留，不改**。
+    // identity sources: 人口：City of Edinburgh 议会区 **531,370（2025 年年中，NRS，1 级，2026-07-14 发布）**。原文「约 55 万」偏高且无年份，而 howItWorks 早已写对（C6-h）。
+    //   📌 苏格兰的普查与统计**独立于英格兰与威尔士**：苏格兰普查 2022 年（因疫情比英威晚一年），下一次 2031 年。
     identity:
-      "Edinburgh is the capital of Scotland, with a population of about 550,000, built on several plugs of volcanic rock and glacier-carved terrain, with the Old Town and New Town together a World Heritage Site. The city is known for its castle, the August festivals (the International Festival and the Military Tattoo), and its Enlightenment history. It is not the UK capital, but it has its own parliament.",
+      "Edinburgh is the capital of Scotland, with a City of Edinburgh council-area population of about 531,000 at mid-2025 (National Records of Scotland), built on several plugs of volcanic rock and glacier-carved terrain, with the Old Town and New Town together a World Heritage Site. The city is known for its castle, the August festivals (the International Festival and the Military Tattoo), and its Enlightenment history. It is not the UK capital, but it has its own parliament.",
     // howItWorks sources: 苏格兰国家档案局（NRS）《Mid-2025 population estimates》官方时间序列表（Table 1），时点 2025-06-30，2026-07-14 发布。子代理下载原表逐行解析，**级别 1**。
     //   https://www.nrscotland.gov.uk/publications/mid-2025-population-estimates/
     //   发布节奏：**周期不固定**（mid-2025 滞后约 13 个月于 2026-07 发布，历史上也有 4 月发布的年份）。下一期按「参考日 + 12–14 个月」估算，并到 NRS publications 页看该年是否已标 (outdated)。
@@ -4058,8 +4068,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   inverness: {
+    // 零改动留痕（2026-09-10）：INV 机场代码现行有效。盖尔语「尼斯河口」的地名释义属实。
+    //   ✅ **零争议红线判定**：卡洛登战场用的是「庄重的历史遗址」这类中性词，**「高地清洗」（Highland Clearances）这个词组根本没有出现在正文里** ——
+    //   按判据（定位性简短事实 → 留），**不改**。
+    // identity sources: 人口：城镇（settlement）**48,248（2022 年普查）**，原文「约 6 万」高了约四分之一。⚠️ **因弗内斯没有独立的 council**，归高地议会（Highland Council，约 2.57 万 km²、2025 年中约 23.7 万人）辖——「市区人口」这个说法容易与整个议会区混淆，已改为写明「城镇」这一档。
+    //   📌 NRS 的聚落／城镇口径**已停止年度滚动更新**，只能用普查年份（上次 2022、下次 2031）——所以这个数不算过期。
+    //   ✅ 「英国最北的城市之一」带「之一」限定，符合规范，不改。
     identity:
-      "Inverness is the capital of the Scottish Highlands, where the River Ness meets the Moray Firth at the north-eastern end of the Great Glen, with a city population of about 60,000 — one of the northernmost cities in the UK, and the gateway to the Highlands, the Isle of Skye and the northern coast. The name means 'mouth of the Ness' in Gaelic.",
+      "Inverness is the capital of the Scottish Highlands, where the River Ness meets the Moray Firth at the north-eastern end of the Great Glen, with a settlement population of about 48,000 at the 2022 census (National Records of Scotland) — one of the northernmost cities in the UK, and the gateway to the Highlands, the Isle of Skye and the northern coast. The name means 'mouth of the Ness' in Gaelic.",
     // howItWorks sources: 苏格兰国家档案局（NRS）《Mid-2025 population estimates》官方时间序列表（Table 1），时点 2025-06-30，2026-07-14 发布。子代理下载原表逐行解析，**级别 1**。
     //   https://www.nrscotland.gov.uk/publications/mid-2025-population-estimates/
     //   发布节奏：**周期不固定**（mid-2025 滞后约 13 个月于 2026-07 发布，历史上也有 4 月发布的年份）。下一期按「参考日 + 12–14 个月」估算，并到 NRS publications 页看该年是否已标 (outdated)。
@@ -6760,8 +6776,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "rhodes-town": {
+    // 零改动留痕（2026-09-10）：ZTH 不适用；罗德机场 RHO 代码现行有效、无更名。
+    //   ✅ 零争议红线：奥斯曼／威尼斯／拜占庭统治史按「这段历史在城里留下了痕迹」这类定位性事实表述，无评价、
+    //   未牵涉现存的希土／爱琴海／北马其顿争议 —— 留。与本库地形条目 `rhodes` 并排读一致。
+    // identity sources: 人口：罗德市镇单元（即罗德城）**56,440（2021 年普查，ELSTAT）**。⚠️ 口径分层：2011 年起**整个罗德岛是一个市镇**（约 1400 km²、约 12.5 万人），罗德城只是其中的市镇单元。**专项核过「城 vs 岛」有没有混——没有混。** 与本库地形条目 `rhodes` 并排读无矛盾（那一条不含人口数字）。
     identity:
-      "Rhodes Town is the capital of Rhodes, with a population of about 50,000. Its medieval old town was fortified by the Knights Hospitaller between the 14th and 16th centuries and is one of Europe's best-preserved medieval walled towns.",
+      "Rhodes Town is the capital of Rhodes, with a municipal-unit population of about 56,400 at the 2021 census (ELSTAT). Its medieval old town was fortified by the Knights Hospitaller between the 14th and 16th centuries and is one of Europe's best-preserved medieval walled towns.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rhodes city (seat of the municipality of Rhodes covering the whole island since 2011, ~1,400 km², ~125,000; city ~56,000 2021; capital of the South Aegean region and Dodecanese; Old Town UNESCO 1988, Knights 1309–1523; Mandraki; airport 14 km Paradisi; ferries Piraeus; Lindos ~50 km; Turkey ~18 km)
     howItWorks:
       "Rhodes city is the main town of the island of Rhodes, which since 2011 has been one municipality of about 1,400 km² and 125,000 people governed by an elected mayor, the city itself about 56,000; it is also the capital of the South Aegean region and the Dodecanese, the region under an elected governor, and police and schools belonging to the state. Medieval walls enclose the Old Town, where the Knights of St John built the Street of the Knights and the Grand Master's Palace between 1309 and 1523, World Heritage since 1988, Mandraki harbour lies north of the walls where the Colossus is said to have stood; the new town and Elli beach lie north of the old, the airport 14 km south-west at Paradisi, Lindos about 50 km south, the Turkish coast about 18 km across the water, and the ferry to Piraeus takes a dozen hours. Newcomers most often go wrong by taking the Old Town for Rhodes, when the municipality is the whole island 80 km long and the Old Town one corner at its northern tip.",
@@ -6846,8 +6866,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   ioannina: {
+    // 零改动留痕（2026-09-10）：IOA 机场代码现行有效。✅ 零争议红线通过。
+    // identity sources: 人口：城区（settlement）**64,896（2021 年普查）**；市镇单元 81,627、整个市镇 113,978——三档差很远，正文写明用的是城区档。该数**早已在本条目 howItWorks 的注释里**，只是没进 identity（C6-h）。
     identity:
-      "Ioannina is the centre of the Epirus region, with a population of about 70,000, set on the shore of Lake Pamvotis — the gateway city to Greece's north-western Pindus mountains.",
+      "Ioannina is the centre of the Epirus region, with a town population of about 65,000 at the 2021 census (ELSTAT), set on the shore of Lake Pamvotis — the gateway city to Greece's north-western Pindus mountains.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ioannina (municipality ~403 km²; 113,978 2021, city 64,896; Epirus capital; 500 m; Lake Pamvotis with island; castle with mosques; silversmithing; university ~25,000; Ottoman 1430–1913; Zagori/Vikos ~40 km; Egnatia; airport)
     howItWorks:
       "Ioannina is the capital of the Epirus region, a municipality of about 403 km² with about 114,000 people in 2021 under an elected mayor, the city itself about 65,000; the region has an elected governor, and police and schools belong to the state. The city lies at 500 m on the west shore of Lake Pamvotis, the castle on a peninsula by the lake holding Byzantine and Ottoman buildings, the island in the lake with six monasteries reached by ferry, from 1430 to 1913 a major administrative centre of the Ottoman Empire, and silverwork its old craft; the university founded in 1970 has about 25,000 students, the stone villages of Zagori and the Vikos gorge lie about 40 km north, the Egnatia motorway joins it to Thessaloniki, and the airport lies north of town. Newcomers most often go wrong by taking Ioannina for a staging post for Zagori, when it is the university town and administrative centre of north-western Greece.",
@@ -6887,8 +6909,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   volos: {
+    // 零改动留痕（2026-09-10）：✅ 零争议红线通过；本批未出现价格与签证天数（C6e／C6f 不适用）。
+    // identity sources: 人口：市镇单元 **85,803（2021 年普查）**，数字本身对，补上年份与口径。⚠️ 沃洛斯**市镇** 139,670 与**市镇单元** 85,803 是两个差很多的数，不写口径会被读成全市。
     identity:
-      "Volos is the main port city of Thessaly, with a population of about 86,000, set on the Pagasetic Gulf at the foot of Mount Pelion — the gateway city for exploring the Pelion peninsula.",
+      "Volos is the main port city of Thessaly, with a municipal-unit population of about 85,800 at the 2021 census (ELSTAT), set on the Pagasetic Gulf at the foot of Mount Pelion — the gateway city for exploring the Pelion peninsula.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Volos (municipality ~387 km², ~140,000; municipal unit 85,803 2021; Magnesia capital, Thessaly; Pagasetic Gulf, third port of mainland Greece; Argonauts waterfront; tsipouradika; Pelion villages 20–40 km; ferries to Sporades; University of Thessaly; steel; 2023 storm Daniel)
     howItWorks:
       "Volos is the capital of the Magnesia regional unit of Thessaly, a municipality of about 387 km² with about 140,000 people under an elected mayor, the urban core about 86,000; the region has an elected governor, and police and schools belong to the state. The city lies at the head of the Pagasetic Gulf below Mount Pelion, the third port of mainland Greece, the Argonauts avenue running along the waterfront, the tsipouro taverns its daily life, the University of Thessaly in town and steel and cement its industry; the villages of Pelion lie on the slopes 20 to 40 km east with the little train climbing from the edge of town, ferries sail from the port to Skiathos and Skopelos, and the storm Daniel of 2023 flooded the town. Newcomers most often go wrong by taking Volos for the pier to the Sporades, when it is a regional capital with a port, a university and industry, and the Pelion villages lie up the mountain.",
@@ -6983,8 +7007,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April–June and September–October are most comfortable, with the carnival in January–February; summers are hot. A day for the city. The port for the Italy ferries or a stepping stone to Olympia and Kefalonia.",
   },
   zakynthos: {
+    // 零改动留痕（2026-09-10）：ZTH 机场代码现行有效、无更名。
+    // identity sources: 人口：扎金索斯镇城区 **9,760**、全岛（单一市镇）**40,508**，均 2021 年普查。✅ **专项核过「城 vs 岛」有没有混——两个数都对、没有混**（这正是拉布安巴焦栽过的那种形状）。
+    //   ✅ 「2022 年地震后沙滩关闭」经核属实：2022-09 扎金索斯与凯法利尼亚间海域 5.4 级地震致纳瓦吉奥崖体崩塌，封闭延长至 2026-10-31。1953 年地震重建、1980 年帕纳约蒂斯号搁浅、1999 年国家海洋公园均属实。
     identity:
-      "Zakynthos (Zante in Italian) is the southern island of the Ionian group; its capital, Zakynthos town, has about 10,000 people and the island about 40,000. The great earthquake of 1953 all but destroyed the town, rebuilt afterwards in Venetian style; Solomos Square is named after Dionysios Solomos, author of the Greek national anthem, and the church of St Dionysios is that of the island's patron saint. Navagio (Shipwreck) Bay on the north-west coast — where the smuggling ship Panagiotis ran aground in 1980 beneath white cliffs — is one of the most famous views in Greece; since the 2022 earthquake the beach itself has been closed for rockfall risk and is seen only from the clifftop platform or from boats. Laganas Bay on the south coast is a national marine park established in 1999 where loggerhead turtles nest, and the airport bans night flights in summer to protect them.",
+      "Zakynthos (Zante in Italian) is the southern island of the Ionian group; its capital, Zakynthos town, has a town population of about 10,000 and the island — a single municipality — about 40,000, both at the 2021 census (ELSTAT). The great earthquake of 1953 all but destroyed the town, rebuilt afterwards in Venetian style; Solomos Square is named after Dionysios Solomos, author of the Greek national anthem, and the church of St Dionysios is that of the island's patron saint. Navagio (Shipwreck) Bay on the north-west coast — where the smuggling ship Panagiotis ran aground in 1980 beneath white cliffs — is one of the most famous views in Greece; since the 2022 earthquake the beach itself has been closed for rockfall risk and is seen only from the clifftop platform or from boats. Laganas Bay on the south coast is a national marine park established in 1999 where loggerhead turtles nest, and the airport bans night flights in summer to protect them.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakynthos town (seat of the island municipality; island ~406 km², ~40,000; municipal unit ~17,000, town ~9,800 2021; Ionian Islands region; rebuilt after 1953 earthquake; Solomos square; Bochali castle; Navagio ~30 km; Laganas turtles/marine park 8 km; airport 4 km; ferry Kyllini 1 h)
     howItWorks:
       "Zakynthos town is the main town of the island of Zakynthos, the whole island of about 406 km² and 40,000 people forming one municipality under an elected mayor, the town itself about 10,000; the Ionian Islands region has an elected governor, and police and schools belong to the state. The earthquake of 1953 all but flattened the Venetian town, and today's town was rebuilt to earthquake standards, Solomos square and the waterfront its centre, the castle of Bochali on the hill above; Navagio, the Shipwreck beach, lies about 30 km north-west below the cliffs and can be seen only from the sea, Laganas 8 km south is both a turtle reserve and a party beach, the Blue Caves lie at the northern tip, the airport 4 km south of town and the ferry to Kyllini about an hour. Newcomers most often go wrong by taking Navagio for Zakynthos, when it lies at the far end of the island and life in town has nothing to do with the cliffs on the postcard.",
@@ -7821,6 +7848,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   delft: {
+    // 零改动留痕（2026-09-10）：✅ identity 正文**已经是「2026 年 1 月 1 日市镇人口约 X 万（荷兰中央统计局）」的完整写法**——
+    //   年份、口径（gemeente）、机构都在正文里，不是只藏在注释中。这是本轮十城里唯一一开始就做对的一组。
+    //   ✅ 口径：已确认荷兰**没有官方「都会区」口径**（CBS 已停发聚集区／城市地区分类，Randstad 也从来不是年度统计表），正文未出现无出处的都会区数字。
+    //   ⚠️ 本轮尝试直接抓 CBS 表格逐位复核数值，但那是 Excel 下载、抓不到明细行；数值系 2026-09-09 同批核实、留有一手 CBS 出处注释，未发现矛盾证据。
+    //   下一轮若要坐实，用能读 StatLine API 的工具核数字本身即可，**不必再查「要不要写年份口径」——那件事已经做对了**。
     // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
     //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
     //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
@@ -7847,6 +7879,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   leiden: {
+    // 零改动留痕（2026-09-10）：同 delft —— identity 正文已含年份、gemeente 口径与 CBS 机构名；无无出处的「都会区」数字。
+    //   CBS 发布节奏：1 月 1 日口径的**临时数次年 3 月上旬**、**定编数同年 6 月下旬**（2026-01-01 定编数已于 2026-06-23 补齐）。
     // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
     //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
     //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
@@ -7952,6 +7986,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   zwolle: {
+    // 零改动留痕（2026-09-10）：同 delft —— identity 正文已含年份、gemeente 口径与 CBS 机构名；无无出处的「都会区」数字。
+    //   ✅ 零争议红线：未涉殖民史评价或移民／融合议题。
     // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
     //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
     //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
