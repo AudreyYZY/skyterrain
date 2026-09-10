@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: e00a4ca
+lastVerifiedCommit: 2332390
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,8 @@ lastVerifiedCommit: e00a4ca
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-10 | 德国批2（13 条：北德平原 / 瓦登海 / 吕根白垩崖 / 黑尔戈兰 / 米里茨 / 施普雷森林 / 易北河 / 摩泽尔河谷 / 莱茵峡谷 / 多瑙峡谷 / 萨克森小瑞士 / 里斯坑 / 基姆湖）（R17b） | 4 | 0 / 2 / 2 | 当场修 2 条；新开 issue 2、关闭 0 |
+| 2026-09-10 | 德国批1（13 条：巴伐利亚阿尔卑斯 / 黑森林 / 哈茨 / 厄尔士 / 巴伐利亚森林 / 罗恩 / 艾费尔 / 福格尔斯 / 图林根森林 / 施瓦本汝拉 / 弗兰肯汝拉 / 条顿堡森林 / 拉赫湖）（R17a） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | 回头 grep：本轮已修错值在全库的其余落点（R16e） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | 西班牙收尾 12 条（R16d） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | 比利时收尾 6 条（hageland / ourthe-valley / vesdre-valley / lesse-valley / sambre-river / ijzer-river）（R16c） | 9 | 0 / 7 / 2 | 当场修 7 条；新开 issue 2、关闭 0 |

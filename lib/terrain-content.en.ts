@@ -7759,8 +7759,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "bavarian-alps": {
     seeing:
       "The Bavarian Alps, at the very south of Germany, are the northernmost stretch of the Northern Limestone Alps within the country; the highest peak, the Zugspitze, is 2,962 m — the highest point in all of Germany. Its summit sits right on the Germany–Austria border, and snow on top is visible from the town of Garmisch-Partenkirchen for most of the year.",
+    // formation sources: 楚格峰 2962 m 为 LDBV 官方高程（阿姆斯特丹基准）；德国现存冰川四片（楚格峰的北施内费尔纳、赫伦塔尔 + 贝希特斯加登的 Blaueis、Watzmanngletscher），南施内费尔纳 2022 年经巴伐利亚科学院测量归类为死冰而除名 —— 这是会变的量，下轮回来复核。核实 2026-09-10
     formation:
-      "The range belongs to the Wetterstein Mountains, built mainly of thick Wetterstein limestone laid down on a Triassic (over 200-million-year-old) shallow-sea platform and later folded and uplifted to near 3,000 m by the Alpine orogeny. The Zugspitze summit still carries one of only two small glaciers remaining in Germany — though both have been shrinking steadily in recent decades.",
+      "The range belongs to the Wetterstein Mountains, built mainly of thick Wetterstein limestone laid down on a Triassic (over 200-million-year-old) shallow-sea platform and later folded and uplifted to near 3,000 m by the Alpine orogeny. The Zugspitze still carries two small glaciers, the Nördlicher Schneeferner and the Höllentalferner — two of the four left in Germany, after the Südlicher Schneeferner lost its glacier status in 2022 when its ice grew too thin. All four keep shrinking.",
     observation:
       "From the air the Bavarian Alps are a grey-white wall of steep limestone peaks rising abruptly above Bavaria's gentler hills and lakes, snow lingering on the summits for much or all of the year in sharp contrast with the green pastures below. The cable-car station and weather observatory buildings on the Zugspitze summit are clearly visible.",
     distinguish:
@@ -7772,6 +7773,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "black-forest": {
+    // 全六段 sources: 费尔德山 1493 m（部分测量给 1494.2 m，同峰不同基准，在测量误差内）；基底片麻岩的变质事件为海西造山期约 300 Ma，与「约10亿年前原岩」的科普口径相容。核实 2026-09-10，未改动
     seeing:
       "The Black Forest, in Germany's south-west corner, is an old massif stretching about 160 km north–south, named for its dense, perpetually shaded woods; its highest point, the Feldberg, is 1,493 m, the tallest mountain in Germany outside the Alps.",
     formation:
@@ -7789,8 +7791,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "harz-mountains": {
     seeing:
       "The Harz, in north-central Germany, is an old massif rising in isolation from the North German Plain; its highest peak, the Brocken, is 1,141 m — the tallest mountain in northern Germany and the only place on the north German plain with a genuinely alpine microclimate.",
+    // formation sources: 布罗肯峰 1141 m；花岗岩侵入 293 Ma（森肯贝格 2020 锆石铀铅测年），比海西造山主体挤压期晚约 40 Myr，与泛大陆早期裂解有关 —— 年份原本就对，改的是因果暗示；最古老岩层（埃克岩系）560+ Ma。核实 2026-09-10
     formation:
-      "The massif was strongly uplifted during the Hercynian orogeny (about 300 million years ago); its oldest rock dates back 560 million years. The Brocken summit itself is a granite body intruded about 290 million years ago, harder than the surrounding rock and left standing as the highest point after long erosion wore down what was around it.",
+      "The massif was strongly uplifted during the Hercynian orogeny (about 300 million years ago); its oldest rock dates back 560 million years. The Brocken summit itself is a granite body intruded about 290 million years ago — some forty million years after the orogenic compression ended, linked to the early break-up of Pangaea rather than being a direct product of that compression — harder than the surrounding rock and left standing as the highest point after long erosion wore down what was around it.",
     observation:
       "From the air the Harz is a dark, forested massif rising abruptly from the flat farmland of the North German Plain, its boundary sharply defined; the Brocken summit is shrouded in cloud almost year-round — nearly 300 foggy days a year on average, among the foggiest spots in Germany.",
     distinguish:
@@ -7802,6 +7805,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   erzgebirge: {
+    // 全六段 sources: 菲希特尔山（Fichtelberg，勿与费希特尔山脉 Fichtelgebirge 混）1215 m 为萨克森州及厄尔士山脉德国一侧最高点，捷克一侧 Klínovec 1243.7 m 更高——正文的「德国一侧」限定成立；矿业文化景观 2019-07 跨德捷列入 UNESCO，官方表述为「近 800 年持续技术革新」（德国 UNESCO 委员会，1 级）。银矿繁荣期官方口径约 1450–1620，正文「1460—1560」落在其中。核实 2026-09-10，未改动
     seeing:
       "The Erzgebirge (Ore Mountains), along the border between Saxony and the Czech Republic, is an old range trending south-west to north-east; the highest point on the German side, the Fichtelberg, is 1,215 m. The name means \"ore mountains\", from nearly 800 years of almost continuous mining in the region.",
     formation:
@@ -7817,6 +7821,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "bavarian-forest": {
+    // 全六段 sources: 大拉黑尔峰 1453 m 为国家公园范围内最高峰（森林区整体最高为境外一侧的大阿尔伯山 1456 m，正文限定在公园/巴伐利亚森林范围内，不冲突）；1970 年设立，为德国第一个国家公园。核实 2026-09-10，未改动
     seeing:
       "The Bavarian Forest, on the border between Germany and the Czech Republic, is an old low range that continues the Bohemian Massif onto German soil; its highest point, the Großer Rachel, is 1,453 m. Germany's first national park was established here in 1970.",
     formation:
@@ -7832,6 +7837,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhon-mountains": {
+    // 全六段 sources: 瓦塞尔库佩峰 950 m 为黑森州最高点；玄武质火山活动约 18–22 Ma 起、约 10 Ma 止，正文「2000万至700万年前」的下限略早于常见口径但同数量级；1991-03-06 跨黑森/巴伐利亚/图林根三州列入 UNESCO 生物圈保护区（保护区官方，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Rhön Mountains sit where Hesse, Bavaria and Thuringia meet; the highest point of the core \"High Rhön\" area, the Wasserkuppe, is 950 m — the remnant of a long-extinct volcano. Thanks to its open views and steady air currents it became the birthplace of German gliding in the early 20th century.",
     formation:
@@ -7847,6 +7853,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   eifel: {
+    // 全六段 sources: 西艾费尔火山场起始约 70 万年前（东艾费尔约 46 万年更晚，正文以整体最早起始概述）；拉赫湖东南岸持续有岩浆源 CO₂ 渗出、深部低频地震群在监测中，研究者明确「近期不预期喷发」—— 正文写「尚未完全停止」而非「即将喷发」，措辞与监测结论一致。核实 2026-09-10，未改动
     seeing:
       "The Eifel, in western Germany near the Belgian border, is an upland dense with Quaternary volcanic remnants — more than 100 low cinder cones, maar craters and domes packed into a few thousand square kilometres, one of continental Europe's most typical maar volcanic fields.",
     formation:
@@ -7862,14 +7869,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vogelsberg: {
+    // seeing sources: HLNUG 地质概述原文「ein Schildvulkan ist der Vogelsberg allerdings nicht」—— 外观呈盾状但非单一盾体，是多喷发中心叠加的火山区（1 级）。主活动期 18.2–16.3 Ma（宽泛 19–15 Ma），正文「约1900万年前起」落在区间内。面积约 2500 km² 远大于艾费尔西场约 600 km²，该比较成立。核实 2026-09-10
     seeing:
-      "The Vogelsberg, in the state of Hesse, is the largest continuous volcanic-rock landform in Central Europe, covering about 2,500 km²; its highest point, the Taufstein, is 773 m, and it is Germany's only shield-volcano landform.",
+      "The Vogelsberg, in the state of Hesse, is the largest continuous volcanic-rock landform in Central Europe, covering about 2,500 km²; its highest point, the Taufstein, is 773 m. Its overall profile is broad and shield-like, but Hesse's state geological survey is explicit that it is not a shield volcano: it is a volcanic field built from hundreds of overlapping eruption centres.",
     formation:
-      "About 19 million years ago countless relatively mild basalt eruptions built up layer upon layer here into a broad shield, working on the same principle as Hawaii's lava-flow shield volcanoes, just on a much smaller scale and long since inactive. Long weathering has left the mountain descending in stepped, ring-shaped terraces from the central \"Oberwald\" plateau outward.",
+      "From about 19 million years ago, hundreds of separate eruption centres repeatedly released relatively mild basalt lava that stacked up into a broad highland — each flow working much as Hawaii's shield-volcano flows do, though the Vogelsberg as a whole is a multi-vent volcanic field rather than a single shield. Its eruptions ended long ago. Long weathering has left the mountain descending in stepped, ring-shaped terraces from the central \"Oberwald\" plateau outward.",
     observation:
       "From the air the Vogelsberg is a broad upland made of concentric ring-shaped terraces, the central \"Oberwald\" plateau at the highest elevation and each outer ring stepping down slightly, gradually merging into the surrounding lowland; the whole area is covered in forest and pasture, with a gentle shape that gives no hint of a typical conical volcano.",
     distinguish:
-      "The Vogelsberg and the Eifel are both basaltic volcanic remnants in Germany, but the Vogelsberg is one continuous shield volcano far larger in area than the Eifel's scattered field of cinder cones and maars; the Vogelsberg's eruptions were also earlier and ended sooner than the Eifel's.",
+      "The Vogelsberg and the Eifel are both basaltic volcanic remnants in Germany, but the Vogelsberg is a continuous, broadly shield-shaped volcanic field built from many overlapping eruption centres, far larger in area than the Eifel's scattered field of cinder cones and maars; the Vogelsberg's eruptions were also earlier and ended sooner than the Eifel's.",
     concept:
       "The Vogelsberg shows how mild eruptions build broad, gentle terrain: when magma has low viscosity and erupts without much violence, lava spreads out layer by layer into a gently sloping shield, as at the Vogelsberg and in Hawaii; more explosive eruptions instead leave entirely different landforms, like the Eifel's maars or the Rhön's volcanic necks.",
     history:
@@ -7877,6 +7885,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "thuringian-forest": {
+    // 全六段 sources: 大贝尔山 982.9 m 为图林根森林及图林根州最高点，未与相邻施内科普夫峰（978 m）混淆；劳沙玻璃业为广泛记载的传统产业，属客观经济地理史。核实 2026-09-10，未改动
     seeing:
       "The Thuringian Forest, in southern Thuringia, is an old range about 70 km long trending north-west to south-east, its ridge rounded and continuous, its highest point the Großer Beerberg at 983 m.",
     formation:
@@ -7892,10 +7901,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "swabian-jura": {
+    // seeing sources: 阿尔布陡崖长约 200 km、高 300–400 m（geopark-alb.de，1/2 级）；洞穴数按巴登-符腾堡州名录截至 2026 年已逾 2800 个（会增长的量，下轮复核）；2015 年列入 UNESCO 世界地质公园（unesco.org/en/iggp，1 级）。核实 2026-09-10
     seeing:
-      "The Swabian Jura, in south-west Germany, is a karst tableland about 220 km long, 500–1,000 m in elevation; its north-western edge is a continuous cliff line nearly 180 km long and up to 300 m high (the Albtrauf), overlooking the Neckar valley, while the south-east side slopes gently down to the Danube valley.",
+      "The Swabian Jura, in south-west Germany, is a karst tableland about 220 km long, 500–1,000 m in elevation; its north-western edge is a continuous cliff line about 200 km long and 300-400 m high (the Albtrauf), overlooking the Neckar valley, while the south-east side slopes gently down to the Danube valley.",
     formation:
-      "The tableland is built of Jurassic limestone laid down in a shallow sea about 145–200 million years ago; the hardest uppermost \"White Jura\" layer has long resisted erosion, forming the Albtrauf as a continuous cuesta scarp. Because the limestone is porous and easily dissolved by groundwater, the tableland's interior has developed more than 2,500 caves and many dry valleys.",
+      "The tableland is built of Jurassic limestone laid down in a shallow sea about 145–200 million years ago; the hardest uppermost \"White Jura\" layer has long resisted erosion, forming the Albtrauf as a continuous cuesta scarp. Because the limestone is porous and easily dissolved by groundwater, the tableland's interior has developed many dry valleys and, as of 2026, more than 2,800 caves on the state cave register.",
     observation:
       "From the air the Swabian Jura is a sharp topographic boundary — the land on the north-west side drops several hundred metres toward the Neckar valley, while the tableland surface itself is relatively flat and open, covered in farmland and pasture; the dry valleys (with flow only occasionally in the wet season) and cave entrances typical of karst terrain mark this tableland out.",
     distinguish:
@@ -7907,6 +7917,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "franconian-jura": {
+    // 全六段 sources: 索伦霍芬-艾希施泰特始祖鸟系列产地 2022-10 由 IUGS 列入首批「百大地质遗产」（iugs-geoheritage.org，1 级）；潟湖高盐缺氧少扰动保存精细化石的成因解释与 IUGS 口径一致；与 swabian-jura 的 distinguish 段并排核对，两条对分界（多瑙河谷）与侧重的表述互相一致、无矛盾。核实 2026-09-10，未改动
     seeing:
       "The Franconian Jura is the same Jurassic limestone tableland continuing north-east from the Swabian Jura, known for the fine-grained limestone quarried around Solnhofen — which preserves a wealth of exquisite fossils, including Archaeopteryx, and is considered one of the key sites for studying the origin of birds.",
     formation:
@@ -7922,6 +7933,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "saxon-switzerland": {
+    // 全六段 sources: 巴斯泰观景台海拔 305.4 m、高出易北河 194 m；砂岩为白垩纪约 100 Ma 浅海沉积；1824 年建首座木桥、1851 年改建石桥。跨境的砂岩区表述保持中性、未描述边界线。核实 2026-09-10，未改动
     seeing:
       "Saxon Switzerland, along the Elbe in eastern Germany, is a landscape of table mountains and deep gorges cut into sandstone, named after 18th-century Swiss painters who felt the scenery reminded them of their Alpine homeland. The Bastei is the most famous group of sandstone towers, rising about 194 m above the Elbe.",
     formation:
@@ -7937,6 +7949,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "teutoburg-forest": {
+    // 全六段 sources: 奥斯宁砂岩约 120 Ma（早白垩世）浅海沉积、约 70 Ma 经构造掀斜成单面山脊；公元 9 年瓦鲁斯战役为可核实的历史事件（判据：已结束、无持续对立的定位性史实 → 留），正文明写「具体交战地点学界仍有讨论」，与卡尔克里泽是否为战场的现存争议相符，未擅自定论；正文未涉赫尔曼纪念碑的民族主义诠释。核实 2026-09-10，未改动
     seeing:
       "The Teutoburg Forest, in north-western Germany, is a band of parallel cuesta ridges; its most famous landmark is the Externsteine, a group of tall rock pillars left standing by the weathering of sandstone.",
     formation:
@@ -7952,6 +7965,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "north-german-plain": {
+    // 全六段 sources: 吕讷堡石楠草原 1921-12-29 设保护区（下萨克森最古老、德国第二古老），正文「最早……之一」的限定成立；distinguish 段引用的梅塞塔「600米以上」与本库 meseta-central 的「平均600—800米」一致，跨条目口径未冲突。核实 2026-09-10，未改动
     seeing:
       "The North German Plain lies between Germany's central uplands and the North Sea and Baltic coasts, a vast lowland repeatedly reshaped by Quaternary glaciation; the Lüneburg Heath is a classic heather-shrub landscape on this glacial sandy ground.",
     formation:
@@ -7967,6 +7981,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "nordlinger-ries": {
+    // 全六段 sources: 撞击约 14.8 Ma（近年高精度测年集中在 14.75–14.92 Ma，正文落在区间内）；1960 年代经 Shoemaker 等以冲击石英确认撞击成因（此前曾被误判为火山口）；1970 年 NASA 阿波罗宇航员在此做月球地质训练。与本库 siljan-ring 并排读，未出现「把撞击瞬间和今日地貌压成一件事」的问题。核实 2026-09-10，未改动
     seeing:
       "The Nördlinger Ries, in western Bavaria, is a circular depression about 24 km across, formed when an asteroid more than a kilometre wide struck Earth about 14.8 million years ago — one of the best-preserved, best-studied impact craters in Europe. The medieval town of Nördlingen's walls sit entirely within the flat basin at the crater's floor.",
     formation:
@@ -7982,6 +7997,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhine-gorge": {
+    // 全六段 sources: UNESCO「上中莱茵河谷」范围即科布伦茨—宾根/吕德斯海姆约 65 km，2002 年列入（whc.unesco.org/en/list/1066，1 级）；罗蕾莱河段收窄至约 130 m（另有 113 m 一说，130 m 为较常引用口径）。核实 2026-09-10，未改动
     seeing:
       "The Rhine Gorge is the roughly 65 km stretch of the Rhine between Koblenz and Bingen, lined with castles and terraced vineyards; the Loreley reach is the narrowest, deepest section of the whole gorge and one of Germany's best-known natural and cultural landmarks.",
     formation:
@@ -7999,8 +8015,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "danube-gorge": {
     seeing:
       "The Danube Gorge, on the southern edge of the Franconian Jura, is a canyon the Danube has cut through a stretch of Jurassic limestone, about 5 km long with cliffs up to 70 m high; Weltenburg Abbey, within the gorge, is said to be one of Bavaria's oldest monasteries.",
+    // formation sources: 峡谷由另一条支流（因戈尔施塔特阿尔布缘河）历经数百万年溯源侵蚀切穿，多瑙河约 8 万年前被施特河袭夺才改道入谷（LfU 官方展板，1 级）—— 原文的「约20万年前」在两个节点之间，查无出处。崖高见 issue（40/70/80 三个数并存）。魏尔滕堡修道院 1978-03-05 获欧洲保护地文凭（2 级）。核实 2026-09-10
     formation:
-      "The rock the gorge cuts through is limestone laid down by a shallow-sea coral reef about 150 million years ago in the Jurassic, harder and denser than the surrounding rock. About 200,000 years ago, a branch of the ancient Danube began cutting down along joints in this limestone, gradually carving today's narrow, steep gorge channel.",
+      "The rock the gorge cuts through is limestone laid down by a shallow-sea coral reef about 150 million years ago in the Jurassic, harder and denser than the surrounding rock. The gorge was not cut by the Danube at all. A separate tributary carved it, working headward along joints in this limestone over several million years, while the Danube itself ran through the Altmühl valley. Only about 80,000 years ago was the Danube captured here by the Schutter and diverted into the gorge that was already there.",
     observation:
       "From the air the Danube Gorge is a deep green slot that appears suddenly in the otherwise gentle tableland surface of the Franconian Jura, its grey-white walls on both sides near-vertical, a stark contrast with the open farmland tableland around it; Weltenburg Abbey at the gorge's entrance sits on an open terrace at a bend in the river.",
     distinguish:
@@ -8012,6 +8029,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "moselle-valley": {
+    // 全六段 sources: 摩泽尔板岩为泥盆纪（约 400 Ma）沉积；摩泽尔为公认的德国最古老葡萄种植区（罗马时期已有专业酿酒记录），本库其余德国条目无与之冲突的「最古老」断言。核实 2026-09-10，未改动
     seeing:
       "The Moselle Valley is a deep valley the Moselle has cut into Devonian slate, its course extremely winding — steep slopes along its banks are covered in vineyards, making it Germany's oldest wine region and one of the world's most concentrated areas of extremely steep vineyard slopes.",
     formation:
@@ -8027,6 +8045,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "elbe-river": {
+    // 全六段 sources: 全长 1094 km 为通行口径，约三分之二（≈729 km）在德国境内，正文「约727公里」属合理取整。核实 2026-09-10，未改动
     seeing:
       "The Elbe rises in the Krkonoše Mountains in the Czech Republic and runs about 1,094 km, of which about 727 km flows through Germany, north-west through Dresden and Magdeburg before becoming a broad, tide-influenced estuary near Hamburg and emptying into the North Sea.",
     formation:
@@ -8042,6 +8061,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   spreewald: {
+    // 全六段 sources: 水道网由 200 多条自然与人工水道构成、总长逾 1500 km，与生物圈保护区官方口径一致。核实 2026-09-10，未改动
     seeing:
       "The Spreewald, south-east of Berlin, is an inland delta of the Spree River, where it splits into more than 200 natural and artificial channels totalling about 1,500 km, winding through alder forest and wet meadow; traditional transport and farming here rely on flat-bottomed wooden boats moving along the channels.",
     formation:
@@ -8057,6 +8077,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   chiemsee: {
+    // 全六段 sources: 湖面约 79.9 km²，巴伐利亚最大、德国第三大湖；原湖面积约 240 km²（约今 3 倍），末次冰期末段约 1 万年前冰舌退却积水成湖；与 muritz 互为 distinguish 比较对象，两条数字双向自洽。核实 2026-09-10，未改动
     seeing:
       "The Chiemsee is Bavaria's largest lake and Germany's third-largest, its surface covering about 80 km²; for its open scenery and the fine Alpine backdrop it is often called the \"Bavarian Sea.\"",
     formation:
@@ -8072,6 +8093,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   muritz: {
+    // 全六段 sources: 米里茨湖 117.8 km²，为完全在德国境内的最大湖泊（博登湖 536 km² 更大但跨三国，正文已写明这一限定）；国家公园由 1990-09-12 东德部长会议末次会议批准的首批 5 个之一、10-01 正式成立。核实 2026-09-10，未改动
     seeing:
       "The Müritz covers about 117 km², the largest lake entirely within German territory (after the cross-border Lake Constance); the surrounding Mecklenburg Lake District carries thousands of lakes left by Quaternary glaciation, and Müritz National Park is one of the largest national parks on mainland Germany.",
     formation:
@@ -8087,6 +8109,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "laacher-see": {
+    // 全六段 sources: 严格分类上是岩浆房排空后塌陷的破火山口湖而非玛珥（俗称玛珥湖），正文已把「严格意义/俗称」两层写清；喷发约 12,900 年前（2023 年树轮研究修订为 12,880，同量级）、VEI 6，与 1991 年皮纳图博同级；2026 年监测显示深部地震群与氦同位素上升，结论是「活跃岩浆系统但近期无喷发风险」，正文「休眠而非死亡」与之吻合。核实 2026-09-10，未改动
     seeing:
       "The Laacher See, in the eastern Eifel volcanic field, formed from the crater of the youngest major eruption in the Eifel's volcanic history (about 12,900 years ago), an eruption on a scale comparable to Mount Pinatubo's in the Philippines in 1991.",
     formation:
@@ -8102,6 +8125,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "wadden-sea": {
+    // 全六段 sources: UNESCO 官方描述即「the largest unbroken system of intertidal sand and mud flats in the world」；2009 年德国（下萨克森+石荷）与荷兰段列入、2014 年丹麦段并入（whc.unesco.org/en/list/1314，1 级）。2011 年另有一次技术性扩边（汉堡瓦登海国家公园并入既有德国部分，面积增约 1.4%），不涉新增国家，正文主线不受影响。核实 2026-09-10，未改动
     seeing:
       "The Wadden Sea is the largest continuous system of intertidal flats in the world, on the south-eastern shore of the North Sea, running along the coasts of the Netherlands, Germany and Denmark; the German stretch is fronted by two chains of barrier islands, the East Frisian and North Frisian islands.",
     formation:
@@ -8117,6 +8141,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rugen-chalk-cliffs": {
+    // 全六段 sources: 王座崖（Königsstuhl）118 m 是这一处地标的实测值，未与全岛最高点 Piekberg 161 m 混淆——正文指代明确，不属「区域值挂到局部对象」；崖岸长度各来源 11–15 km，正文「约12公里」落在区间内；白垩为晚白垩世约 70 Ma 颗石藻钙质骨骼沉积。核实 2026-09-10，未改动
     seeing:
       "Rügen is the largest island in the Baltic Sea, and a stretch of chalk cliff about 12 km long and up to 118 m high on its north-eastern coast is one of Germany's most recognisable coastal landscapes; the Königsstuhl (\"King's Chair\") is its best-known viewpoint.",
     formation:
@@ -8132,8 +8157,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   helgoland: {
+    // seeing sources: 原文「56 米」实为该岛西南侧砂岩在海面以下继续延伸的深度，被误作崖高；海面以上崖壁普遍约 50 m、最高处上城约 61 m —— 可查来源仅 3 级，故正文只写指代明确的 61 m，不对「一圈崖壁平均高度」下断言，见 issue。砂岩为早三叠世（Buntsandstein）；1890 年黑尔戈兰—桑给巴尔条约划归德国（2 级）。核实 2026-09-10
     seeing:
-      "Helgoland is Germany's only offshore island far from the mainland, about 50 km from the nearest coast; the main island is ringed by red sandstone cliffs about 56 m high — extremely rare along Germany's mostly sandy, muddy North Sea coast.",
+      "Helgoland is Germany's only offshore island far from the mainland, about 50 km from the nearest coast; the main island is ringed by red sandstone cliffs rising to about 61 m at their highest, on the Oberland — extremely rare along Germany's mostly sandy, muddy North Sea coast.",
     formation:
       "The island's red cliffs are Early Triassic sandstone, coloured a bright red by iron oxide; this sandstone tableland has stood isolated for a long time on a raised structure on the North Sea floor, while the rock layers that once connected to it elsewhere have been eroded away and submerged over long geological history — only this block, relatively raised by tectonic uplift, has survived to the present as the only rocky island exposed above the surface in the southern North Sea.",
     observation:
