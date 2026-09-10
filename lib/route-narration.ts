@@ -44,12 +44,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "舷窗下先是一片被水汽晕开的绿——成都平原，都江堰引岷江水灌溉了两千多年的沃土，阡陌规整如棋盘，头顶却常年裹着一层灰白云雾，四川盆地很少能看清太阳。起飞不过十几分钟，这片温软的绿已经被甩在身后：龙门山猝然立起，盆地边缘骤然收紧，地面开始起皱。" +
-      "再往西，皱纹变成刀刻般的沟壑——横断山脉。这是中国唯一一片南北走向的高大山群：一道雪岭、一道深谷、再一道雪岭，金沙江、澜沧江、怒江被高山逼得并肩南流。这片山地是川藏茶马古道的必经段——古时的商队从成都、雅安出发，翻过打箭炉（今康定）附近的垭口，把川茶驮进高原，再换回藏地的马匹。天气好时，右前方会立起一座格外陡峭、格外孤傲的雪峰——贡嘎山，海拔7508.9米，横断山脉最高点，峰顶终年裹着云，云开的瞬间才能看清它完整的轮廓。" +
+      "再往西，皱纹变成刀刻般的沟壑——横断山脉。这是中国规模最大的一片南北走向高大山群：一道雪岭、一道深谷、再一道雪岭，金沙江、澜沧江、怒江被高山逼得并肩南流。这片山地是川藏茶马古道的必经段——古时的商队从成都、雅安出发，翻过打箭炉（今康定）附近的垭口，把川茶驮进高原，再换回藏地的马匹。天气好时，右前方会立起一座格外陡峭、格外孤傲的雪峰——贡嘎山，海拔7508.9米，横断山脉最高点，峰顶终年裹着云，云开的瞬间才能看清它完整的轮廓。" +
       "等飞机稳定巡航，窗外的世界已经换了一个海拔量级。翻过横断山脉最后一道山脊，地面忽然松弛下来——山尖消失了，峡谷不见了，取而代之的是一整片浑厚、平缓、泛着黄褐色的高地，一直铺到目力所及的天边：青藏高原的高原面，平均海拔四千米以上，地球上最高、最大的高原。深蓝色的湖泊像打翻的墨点散落其间，空气稀薄得让阳光显得格外白、格外硬。" +
       "飞机几乎贴着这片高原面一路飞到接近拉萨，才顺着雅鲁藏布江的支流拉萨河收拢翅膀、滑进河谷。两个多小时，从常年见不到太阳的湿润盆地，飞到了日光城拉萨——中间只隔着一列山、一片高原，和四千多米的落差。",
     "en-US":
       "Look down and the first thing you see is a green so soft it seems to blur at the edges — the Chengdu Plain, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years, its fields laid out like a checkerboard under a lid of grey-white haze; the Sichuan Basin rarely sees a clear sun. Within minutes of take-off that soft green is already behind you: the Longmen Mountains rear up abruptly at the basin's rim, and the ground begins to crease." +
-      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the only belt of high, north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
+      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the largest belt of high north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
       " By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
       " The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
   },
@@ -240,11 +240,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "重庆飞拉萨，从长江边的山城，一路爬上青藏高原的东南缘。起飞时脚下是四川盆地——四周被山环抱的红层丘陵盆地，云雾多，重庆的房子顺着山坡和江岸层层叠叠。" +
-      "飞机向西爬升，很快进入横断山脉：这是中国唯一一片南北走向的高大山群，一条雪山、一条深谷，再一条雪山，像搓衣板一样排列，金沙江、澜沧江、怒江在这里被挤在一起并行南流。" +
+      "飞机向西爬升，很快进入横断山脉：这是中国规模最大的一片南北走向高大山群，一条雪山、一条深谷，再一条雪山，像搓衣板一样排列，金沙江、澜沧江、怒江在这里被挤在一起并行南流。" +
       "越过横断山脉，进入藏东南。这一带因为有印度洋的水汽顺着河谷灌进来，是高原东南缘最湿润、最绿的角落，森林一直长到很高的地方。雅鲁藏布江在这里绕着南迦巴瓦峰拐了一个大弯，切出很深的峡谷。飞机再往西，地面转为相对平坦开阔的高原面，沿拉萨河谷下降到拉萨。",
     "en-US":
       "Chongqing to Lhasa climbs from a river city among hills up onto the south-eastern edge of the Tibetan Plateau. On take-off you are over the Sichuan Basin — a red-bed basin of hills ringed by mountains, often cloudy, with Chongqing's buildings stacked up the slopes and river banks." +
-      " Climbing west, the plane soon enters the Hengduan Mountains, the only belt of high ranges in China that runs north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
+      " Climbing west, the plane soon enters the Hengduan Mountains, the largest belt of high ranges in China running north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
       " Beyond the Hengduan is south-eastern Tibet. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The Yarlung Tsangpo makes a great bend around Namcha Barwa here, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
     },
     travel: {
