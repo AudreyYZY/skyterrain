@@ -5179,8 +5179,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "reykjanes-peninsula": {
+    // seeing sources: ⚠️ 原文「全世界唯一能在陆地上清楚看到这条大洋中脊的一段」**被同条目的 distinguish 与 concept 两段直接否掉**（前者点名辛格维利尔、克拉夫拉也在洋脊上，后者说的是「只有在冰岛这样的地方」），本库的 `thingvellir` 条目亦写明它骑在洋脊上。整个冰岛都在洋脊上，亚速尔亦然。2026-09-10 全库排他性断言扫描发现，改为「少数几处之一 + 登陆的那一段」。
     seeing:
-      "The Reykjanes Peninsula, at the south-western corner of Iceland, has Keflavík International Airport on it and is the first piece of Iceland most visitors set foot on. It is geologically remarkable: the Mid-Atlantic Ridge comes \"ashore\" here, the only place in the world where this mid-ocean ridge can be clearly seen on land. The peninsula is covered in young black lava, open ground fissures, and large high-temperature geothermal areas (the famous Blue Lagoon is the outflow lagoon of the Svartsengi geothermal power station).",
+      "The Reykjanes Peninsula, at the south-western corner of Iceland, has Keflavík International Airport on it and is the first piece of Iceland most visitors set foot on. It is geologically remarkable: the Mid-Atlantic Ridge comes \"ashore\" here — most of the world's mid-ocean ridges lie two or three kilometres down, and Iceland is one of the few places where this one can be seen on land at all; Reykjanes is the stretch where it makes landfall. The peninsula is covered in young black lava, open ground fissures, and large high-temperature geothermal areas (the famous Blue Lagoon is the outflow lagoon of the Svartsengi geothermal power station).",
     formation:
       "The Reykjanes Peninsula has four en-echelon (offset parallel) fissure swarms, corresponding to four volcanic systems. The North American and Eurasian plates separate here at about 2 cm a year, the crust is repeatedly thinned and torn, and basaltic magma rises along the fissures and effuses lava, while heat at depth turns groundwater (much of it infiltrated seawater) into high-temperature geothermal fluid. The peninsula's rock is almost all volcanic rock formed in the last ten-odd thousand years.",
     observation:
