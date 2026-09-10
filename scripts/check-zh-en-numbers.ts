@@ -22,8 +22,15 @@
 import { TERRAIN_CONTENT_ZH } from "@/lib/terrain-content.zh";
 import { TERRAIN_CONTENT_EN } from "@/lib/terrain-content.en";
 import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
+import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
+import { TRAVEL_CONTENT_EN } from "@/lib/travel-content.en";
+import { CITY_REGISTRY } from "@/lib/places-registry";
 
-const FIELDS = ["seeing", "formation", "observation", "distinguish", "concept", "history"] as const;
+/** 地形的 6 板块与城市的 7 段，两套字段名不同，各扫各的 */
+const TERRAIN_FIELDS = ["seeing", "formation", "observation", "distinguish", "concept", "history"] as const;
+const CITY_FIELDS = [
+  "identity", "howItWorks", "layout", "gettingAround", "culture", "seeAndDo", "whenAndTips",
+] as const;
 const TOLERANCE = 0.06;
 
 function nums(s: string): Map<string, Set<number>> {
@@ -49,11 +56,22 @@ const near = (a: number, b: number) => Math.abs(a - b) <= Math.max(1, a * TOLERA
 
 let pairs = 0, fields = 0;
 const hits: string[] = [];
+
+type Pair = { kind: string; id: string; country: string; zh: any; en: any; fields: readonly string[] };
+const all: Pair[] = [];
 for (const t of TERRAIN_REGISTRY) {
   const zh = TERRAIN_CONTENT_ZH[t.id], en = TERRAIN_CONTENT_EN[t.id];
-  if (!zh || !en) continue;
-  for (const f of FIELDS) {
-    const a = nums(zh[f] ?? ""), b = nums(en[f] ?? "");
+  if (zh && en) all.push({ kind: "地形", id: t.id, country: t.country, zh, en, fields: TERRAIN_FIELDS });
+}
+for (const c of CITY_REGISTRY) {
+  const zh = (TRAVEL_CONTENT_ZH as any)[c.id], en = (TRAVEL_CONTENT_EN as any)[c.id];
+  if (zh && en) all.push({ kind: "城市", id: c.id, country: c.country, zh, en, fields: CITY_FIELDS });
+}
+
+for (const t of all) {
+  const { zh, en } = t;
+  for (const f of t.fields) {
+    const a = nums((zh as any)[f] ?? ""), b = nums((en as any)[f] ?? "");
     for (const [u, av] of a) {
       const bv = b.get(u);
       if (!bv?.size) continue;
@@ -62,16 +80,29 @@ for (const t of TERRAIN_REGISTRY) {
       const enOnly = [...bv].filter((v) => ![...av].some((w) => near(v, w)));
       if (zhOnly.length && enOnly.length) {
         hits.push(
-          `\n  ${t.country}/${t.id}/${f}  单位 ${u} —— 中文独有 ${zhOnly.join(", ")}｜英文独有 ${enOnly.join(", ")}` +
-          `\n     zh: ${(zh[f] ?? "").slice(0, 120)}` +
-          `\n     en: ${(en[f] ?? "").slice(0, 120)}`,
+          `\n  [${t.kind}] ${t.country}/${t.id}/${f}  单位 ${u} —— 中文独有 ${zhOnly.join(", ")}｜英文独有 ${enOnly.join(", ")}` +
+          `\n     zh: ${((zh as any)[f] ?? "").slice(0, 120)}` +
+          `\n     en: ${((en as any)[f] ?? "").slice(0, 120)}`,
         );
       }
     }
   }
 }
 
-console.log(`中英同单位数字比对：${fields} 个字段两侧都有可比数字，实际比较 ${pairs} 对`);
+/**
+ * 字段名写错了会**静默跳过**那一段 —— 和忘了 await 是同一种危险。
+ * 所以先断言：每个声明的字段名，至少要在一个条目上真的存在。
+ * （第一版就把城市段写成了 `food`，而 TravelGuide 里根本没有这个字段。）
+ */
+const seen = new Set<string>();
+for (const t of all) for (const f of t.fields) if (typeof (t.zh as any)[f] === "string") seen.add(f);
+const bogus = [...new Set([...TERRAIN_FIELDS, ...CITY_FIELDS])].filter((f) => !seen.has(f));
+if (bogus.length) {
+  console.error(`\n✗ 这些字段名在任何条目上都不存在，等于白扫：${bogus.join(", ")}`);
+  process.exit(1);
+}
+
+console.log(`中英同单位数字比对（地形 6 板块 + 城市 7 段）：${fields} 个字段两侧都有可比数字，实际比较 ${pairs} 对`);
 if (pairs === 0) {
   console.error("\n✗ 一对都没比到 —— 这不是「全部通过」，是这个脚本自己坏了（内容文件的导出改了？）");
   process.exit(1);
