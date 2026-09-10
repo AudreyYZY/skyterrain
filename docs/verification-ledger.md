@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 9f315ee
+lastVerifiedCommit: ce0b690
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,8 @@ lastVerifiedCommit: 9f315ee
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-10 | cities: vietnam 5 + indonesia 5（第十四轮 d（越南 5 + 印尼 5 城）） | 11 | 0 / 0 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: chile 14（第十四轮 c（智利地形收尾）） | 8 | 0 / 0 / 0 | 当场修 8 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | terrain: japan 11（第十四轮 b（日本地形收尾）） | 4 | 0 / 0 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | terrain: greece 14（第十四轮 a（希腊地形批 2）） | 5 | 0 / 0 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | cities: austria 5 + poland 5（第十三轮 e（奥地利 5 + 波兰 5 城）） | 15 | 0 / 0 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |

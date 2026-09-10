@@ -16737,6 +16737,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Valle de la Luna was designated a national reserve in 1982 and is the best-known viewpoint near San Pedro de Atacama; because its terrain closely resembles the lunar surface, it has historically also been used as an analogue site for planetary geology research.",
   },
   "lake-llanquihue": {
+    // seeing / history sources: 面积主流口径 870.5 km²（另有 860／877 km²，同一量级），智利第二大湖（次于赫内拉尔卡雷拉湖）；
+    //   湖区德国移民始于 1850 年代（维森特·佩雷斯·罗萨莱斯移民法案），属广泛记载史实。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Llanquihue covers about 860 km², making it Chile's second-largest lake; its shores are famed for reflecting Osorno and Calbuco volcanoes, one of the iconic scenes of Chile's Lake District.",
     formation:
@@ -16751,6 +16753,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Beginning in the mid-19th century, large numbers of German immigrants settled around Lake Llanquihue, bringing a distinctive architectural style and way of life; lakeside towns such as Puerto Varas retain a strong German character today, the heart of the Lake District's 'German settlement belt.'",
   },
   "lake-villarrica": {
+    // 全六段 sources: 面积约 176 km²，学术论文与市政资料一致，无冲突。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Villarrica covers about 176 km²; it is a glacial lake, and the town of Pucón on its shore faces the permanently steaming Villarrica Volcano, one of the Lake District's most representative 'volcano-and-lake' pairings.",
     formation:
@@ -16765,12 +16768,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The combination of lake and volcano has made Pucón the Lake District's most popular outdoor tourism hub, with hot springs, kayaking, and crater climbs drawing visitors year-round — a key pillar of southern Chile's tourism industry.",
   },
   "lake-general-carrera": {
+    // seeing sources: ⚠️ 两处：① 删掉「南美洲第二大湖」——的的喀喀湖 8,372 km²，本湖全湖仅 1,850 km²（智利侧 970），够不上；英文维基只作「智利最大、阿根廷第四大」。属「限定语用错范围」第三例（前两例：苏梅岛、altiplano-chile，后者同为智利）。② 绿松石色是**冰川乳（rock flour）**、不是碳酸钙——**本条目 concept 段写的就是冰川乳**，seeing/formation 却写成碳酸钙，条目内部自相矛盾。2026-09-10 核。
     seeing:
-      "Lake General Carrera is Chile's largest lake and South America's second-largest, its water taking on a rare turquoise color from suspended calcium carbonate carried by glacial meltwater; the lake spans both Chile and Argentina.",
+      "Lake General Carrera is Chile's largest lake, its water taking on a rare turquoise colour from the fine rock flour carried in by glacial meltwater; the lake spans both Chile and Argentina.",
     formation:
-      "The lake basin is a glacial depression left behind as the Patagonian Ice Field retreated; glaciers upstream continuously carry fine calcium-carbonate-rich sediment into the lake, which is the main reason for its distinctive turquoise color.",
+      "The lake basin is a glacial depression left behind as the Patagonian Ice Field retreated; glaciers upstream continuously carry fine rock flour, ground off the bedrock by glacial abrasion, into the lake, which is the main reason for its distinctive turquoise color.",
+    // observation sources: 大理石教堂：岩体约 3 亿年（古生代），但**洞穴是末次冰期结束后数千年间掏蚀出来的**。原文把岩石年龄当成了地貌年龄，差三个数量级。2026-09-10 核。
     observation:
-      "From the air, the lake's vivid turquoise water contrasts sharply with the barren Patagonian highland around it; on the Chilean side, the 'Marble Caves' are a cave system carved into a marble formation by millions of years of lake erosion, accessible by boat directly from the water.",
+      "From the air, the lake's vivid turquoise water contrasts sharply with the barren Patagonian highland around it; on the Chilean side, the 'Marble Caves' are a cave system carved into a marble formation over the few thousand years since the ice age ended, accessible by boat directly from the water.",
     distinguish:
       "Lake General Carrera and lakes Llanquihue and Villarrica to the north are all of glacial origin, but General Carrera is far larger, its water color far more distinctive, and it spans two countries rather than lying entirely within Chile.",
     concept:
@@ -16779,6 +16784,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Marble Caves have long been known to local fishermen and travelers as a hidden gem; in recent years their striking water-level cave scenery has made them one of the most visited natural sites in Chilean Patagonia, typically reached by boat from Puerto Río Tranquilo on the Chilean shore.",
   },
   "rio-loa": {
+    // 全六段 sources: 全长约 440 km，智利最长河流；流域面积 33,570 km² 为智利最大流域。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:
       "The Loa is Chile's longest river, about 440 km long, flowing south and then bending west across the Atacama Desert before emptying into the Pacific — one of the few year-round surface flows in the heart of the desert.",
     formation:
@@ -16793,6 +16799,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Loa's banks have long served as an important corridor for human activity in the Atacama Desert; Calama and the surrounding oasis settlements have long relied on the river for irrigation and drinking water, and since the 20th century the river has also been a key water source for nearby copper mining.",
   },
   "rio-baker": {
+    // seeing / formation / concept sources: 智利流量最大的河流（均值约 870—1500 m³/s，**正文没有写具体流量数字**，无过度精确风险）。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:
       "The Baker is Chile's highest-volume river, originating at Lake General Carrera and flowing west to the Pacific; its water takes on a distinctive turquoise color from glacial meltwater.",
     formation:
@@ -16803,10 +16810,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Baker and the Loa are both among Chile's most representative rivers, but the Baker is Chile's highest-volume river, originating from Patagonian lakes and ice fields in a wet, water-rich region; the Loa is Chile's longest river, originating in and crossing the extremely arid northern desert.",
     concept:
       "The Baker's high flow directly reflects the role of the Patagonian Ice Field as a 'natural water tower' — its continuous meltwater supplies the river with far more water than local rainfall alone could sustain, making it a classic case study of a glacier-fed river.",
+    // history sources: 法定类别：2001 年第 282 号法令列为**Zona Típica（典型区域）**，不是 Monumento Histórico（历史纪念地）——智利《国家纪念物法》下两个不同类别（附近的「死人岛」2003 年才是历史纪念地）。1 级。
+    //   ⚠️ 「2008 年才通电」**记 unknown**：市政厅历史页与英文维基都查不到通电年份，既证不实也证不伪，正文不动。下一轮可查智利能源部（CNE）或市政厅档案。2026-09-10 核。
     history:
-      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; it did not receive electricity until 2008, and because of its distinctive 'village on stilts' way of life, the Chilean government designated it a historic monument in 2001.",
+      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; it did not receive electricity until 2008, and because of its distinctive 'village on stilts' way of life, the Chilean government designated it a Zona Típica — a protected typical zone — in 2001.",
   },
   "elqui-valley": {
+    // 其余 sources: ✅ **天文台选址专项复核**：正文把「海拔适中、空气洁净、晴夜多」三重因素并列写出，
+    //   **没有把海拔当成唯一原因**。皮斯科白兰地产区史属广泛记载。2026-09-10 核，verdict: ok。
     seeing:
       "Elqui Valley is a narrow oasis valley in northern Chile irrigated by the Elqui River, its floor layered with vineyards and pisco brandy distilleries, flanked by arid Andean foothills.",
     formation:
@@ -16817,10 +16828,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Elqui Valley and Cajón del Maipo are both Andean-foothill valley landforms, but Elqui is defined by irrigated agriculture and viticulture in a dry, low-rainfall climate, while Cajón del Maipo is known for hot springs and near-capital Andean scenery, closer to Santiago.",
     concept:
       "Elqui Valley is a sample for studying 'arid-zone oasis agriculture' landforms: river irrigation carves out a band of arable land in otherwise dry mountains, illustrating how water availability determines the pattern of agriculture and settlement in an extreme arid environment.",
+    // history sources: 晴夜：年均 280—300 个晴夜（约占全年 77%—82%），原文「几乎全年无云」是无限定的绝对化表述。✅ 天文台选址的三重因素（海拔适中／空气洁净／晴夜多）正文并列写出，**没有把海拔当成唯一原因**。2026-09-10 核。
     history:
-      "Because of its moderate elevation, clean air, and near-total lack of cloud cover, the upper valley hosts several international observatories including Cerro Tololo Inter-American Observatory, and is a globally recognized stargazing destination; the valley is also one of Chile's principal pisco-producing regions, with distilling traditions dating back to the Spanish colonial era.",
+      "Because of its moderate elevation, clean air and an average of more than 280 clear nights a year, the upper valley hosts several international observatories including Cerro Tololo Inter-American Observatory, and is a globally recognized stargazing destination; the valley is also one of Chile's principal pisco-producing regions, with distilling traditions dating back to the Spanish colonial era.",
   },
   "cajon-del-maipo": {
+    // 全六段 sources: 迈波河下切构造山体、圣何塞火山邻近、供水圣地亚哥、埃尔莫拉多冰川徒步——
+    //   因果链与地质常识一致，未见成因颠倒；无会过期的数字断言。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Cajón del Maipo is a deep canyon carved by the Maipo River through the western foothills of the Andes, about an hour's drive from Santiago — the Andean landform Santiago residents visit most often.",
     formation:
@@ -16835,6 +16849,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cajón del Maipo has been a traditional weekend destination for Santiago residents since the 19th century, with hot-spring resorts developed early along its length; the El Morado Glacier and its glacial lake within the canyon have become a popular hiking destination in recent years.",
   },
   "chilean-fjords": {
+    // formation / history sources: ✅ **成因专项复核**：正文写的是「更新世冰川深切 U 形谷 + 冰期结束后海侵淹没」这套标准两段式解释，
+    //   **没有**写成「构造断裂」或「河流下切」。族群称谓用**卡维斯卡尔人（Kawésqar）、雅甘人（Yaghan）**——均为现行官方名，未用已废弃的 Alacalufe 旧称；未涉人口锐减史。✅ 红线通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Chilean Fjords are a system of fjords and channels formed as glaciers deeply carved the coastline from the Aysén to Magallanes regions in southern Chile; the shoreline is long, convoluted, and dotted with countless islands, making it one of the most complex fjord coastlines in the world.",
     formation:
@@ -16849,6 +16865,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "These waters have long served as traditional canoe routes for seafaring Indigenous peoples such as the Kawésqar and Yaghan; today they form one of South America's most important cruise routes and important habitat for South American sea lions and Magellanic penguins.",
   },
   "strait-of-magellan": {
+    // seeing sources: 全长常见口径 565 km（西语维基按 305 海里换算），智利海军水道局 DIRECTEMAR 用另一组端点给 611 km——
+    //   **端点定义不同导致的差异**，正文「约 570 公里」落在合理区间内。第一海峡最窄处官方 3.7 km，正文「约 3 公里」属可接受取整（DIRECTEMAR，1 级）。
+    //   ✅ **零争议红线专项复核**：未描述智利—阿根廷边界线，未提 1881 年边界条约或 1978 年比格尔海峡危机；只写麦哲伦 1520 年通过海峡的航海史实。通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Strait of Magellan is a natural passage connecting the Atlantic and Pacific oceans, about 570 km long, running between mainland South America and Tierra del Fuego; it is named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe.",
     formation:
@@ -16863,6 +16882,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1520, Magellan's fleet took 38 days to cross this strait, becoming, by the historical record, among the first Europeans to complete this key leg of a circumnavigation; Punta Arenas, the main city on the strait's northern shore, grew rapidly in the late 19th century on shipping and the wool trade, at one point becoming the southernmost major port city in the Southern Hemisphere.",
   },
   "la-portada-coast": {
+    // seeing sources: 海蚀岩柱高约 43 m（CONAF 官网，1 级）。成因为差异侵蚀 + 海浪掏蚀，未写成风蚀。2026-09-10 核，verdict: ok。
     seeing:
       "La Portada is a sea arch near Antofagasta, about 43 m high, carved from Tertiary sedimentary rock by long-term wave erosion — a representative landmark of the 'desert meets coast' boundary where the Atacama Desert reaches the Pacific.",
     formation:
@@ -16873,10 +16893,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "La Portada shares a similar formation process with sea-stack coastlines such as the Twelve Apostles, but La Portada sits right beside the extremely arid Atacama Desert, illustrating the unusual 'desert meets coast' boundary rather than a typical temperate coastal erosion landform.",
     concept:
       "La Portada is a textbook sample for studying how a sea arch forms: waves repeatedly erode a weak point in the rock to form a sea cave, which enlarges and breaks through to form an arch; if the arch's roof eventually collapses, an isolated sea stack remains.",
+    // history sources: 设立年份：**1990 年**（农业部最高法令第 51 号，CONAF 官网 1 级），原文的 1945 年差了 45 年。海蚀岩柱高约 43 m 核实无误（同源）。2026-09-10 核。
     history:
-      "La Portada was designated a national natural monument by the Chilean government in 1945, the most representative natural landmark around Antofagasta, and an important habitat for local seabirds and sea lions.",
+      "La Portada was designated a national natural monument by the Chilean government in 1990, under Supreme Decree No. 51, the most representative natural landmark around Antofagasta, and an important habitat for local seabirds and sea lions.",
   },
   "chiloe-archipelago": {
+    // seeing sources: 主岛面积约 8,394 km²（另有约 9,000 km² 的宽口径），智利岛屿面积第二（次于智利一侧火地岛）。
+    //   ✅ 零争议红线：木教堂与传统文化只作建筑与遗产事实，**未写殖民时期传教与原住民关系的评价**。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Chiloé Archipelago is Chile's second-largest island and its surrounding island group; the main island, Chiloé, covers about 8,400 km² and has a consistently rainy, humid climate. Its distinctive stilted wooden churches and folklore are cultural hallmarks of the region.",
     formation:
@@ -16887,8 +16910,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Chiloé and the Chilean Fjords further south are both fragmented, complex coastal belts in southern Chile, but Chiloé has a relatively mild climate and extensive settled farming and fishing communities, while the area south of the fjords is far more sparsely populated and dominated by wilderness scenery.",
     concept:
       "Chiloé is a classic sample for studying how the Coastal Range, as it extends south, is gradually submerged by the sea to form an archipelago landform; it is also a human-geography case study of how a distinctive folk wooden-building tradition evolved within an isolated island setting.",
+    // history sources: UNESCO 列入：**2000-12 先列 14 座，2001-06 增补 2 座**，合计 16。原文写成 2000 年整体列入，把分两次的事合并成了一次（2 级，智利文化部下属机构）。2026-09-10 核。
     history:
-      "The archipelago's 16 wooden churches blend European Catholic architectural tradition with local Indigenous building techniques; Spanish colonizers founded the town of Castro in 1567, and in 2000 the 16 churches were collectively inscribed as a UNESCO World Heritage Site.",
+      "The archipelago's 16 wooden churches blend European Catholic architectural tradition with local Indigenous building techniques; Spanish colonizers founded the town of Castro in 1567, and fourteen of the churches were inscribed as a UNESCO World Heritage Site in 2000, with two more added in 2001 to make sixteen.",
   },
   "easter-island": {
     // 史实 sources: 波利尼西亚人约公元 1200—1250 年定居（Hunt & Lipo 的「迟到定居说」为当前学界主流，旧说 400—800 年已被推翻）；
@@ -16910,6 +16934,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Polynesians arrived and settled the island around 1200–1250 CE, gradually developing the distinctive moai-carving culture; Dutch explorer Jacob Roggeveen 'discovered' the island on Easter Sunday in 1722, giving it its name; the island was annexed by Chile in 1888, and the entire island was inscribed as a UNESCO World Heritage Site in 1995.",
   },
   "juan-fernandez-archipelago": {
+    // 全六段 sources: 距智利大陆约 670 km；埃永克峰 915 m；塞尔柯克 1704 年被弃、1709-02 获救（四年零四个月，与「四年多」吻合）；
+    //   1977 年列入 UNESCO 人与生物圈保护区（CONAF，1 级）。
+    //   📌 事前提示的「2010 年海啸／人口需带时点」在本条**不适用**——正文完全没提人口规模或海啸，无需处理。2026-09-10 核，verdict: ok。
     seeing:
       "The Juan Fernández Archipelago is a volcanic island group about 670 km from mainland Chile; its main island is now named Robinson Crusoe Island, and its highest point, El Yunque, reaches 915 m.",
     formation:
@@ -16924,6 +16951,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1704, Scottish sailor Alexander Selkirk was marooned on the island after a dispute with his captain and survived alone for more than four years before being rescued; his experience inspired Daniel Defoe's 1719 novel Robinson Crusoe. The archipelago was designated a UNESCO Biosphere Reserve in 1977.",
   },
   "tierra-del-fuego-chile": {
+    // seeing sources: 智利一侧约占主岛 61.4%（约 29,485 / 48,100 km²），正文「约西部三分之二」属合理取整。
+    //   ✅ **零争议红线专项复核（本批重点）**：未描述智利—阿根廷边界线本身（只给面积占比）、未提 1881 年条约或任何边界争端；
+    //   族称用**雅甘人、塞尔克南人**（现行规范名，非已废弃的「奥纳人」Ona）；**未涉 19 世纪末至 20 世纪初的原住民人口锐减史**，
+    //   只以过去式笼统写「曾是……家园」而不展开原因。波韦尼尔的淘金与养羊史属客观地方史。通过。2026-09-10 核，verdict: ok。
     seeing:
       "Tierra del Fuego is the main island of the archipelago at the southernmost tip of South America, split between Chile and Argentina; the Chilean side accounts for roughly the western two-thirds and is dominated by sub-Antarctic grassland, southern beech forest, and the old-growth forest of Karukinka Natural Park.",
     formation:
@@ -16938,6 +16969,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island was long home to Indigenous peoples such as the Yaghan and Selk'nam, who developed distinctive ways of life adapted to the polar climate; Porvenir was founded in the late 19th century during a gold rush and sheep-ranching boom, and remains the largest settlement on the Chilean side.",
   },
   "patagonian-steppe-chile": {
+    // formation sources: ✅ **专项复核**：巴塔哥尼亚草原的干旱**确系安第斯雨影单一主导机制**——
+    //   与阿塔卡马的「三重叠加」不同，这里不需要强行叠加纬度或洋流因素，正文的单一机制表述本身准确。
+    //   帕利艾克国家公园的火山渣锥与熔岩流描述与该火山场的通行记述一致。2026-09-10 核，verdict: ok。
     seeing:
       "The Chilean Patagonian Steppe is an open, arid grassland in the eastern Magallanes Region; lying in the Andes' rain shadow with sparse precipitation, its vegetation is dominated by low grasses and shrubs, traditionally used for sheep grazing.",
     formation:
@@ -16948,7 +16982,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chilean Patagonian Steppe and the Southern Patagonian Ice Field both belong to the Patagonia region, but the steppe sits in the dry rain-shadow belt east of the Andes, while the ice field occupies the high-precipitation zone within the Andes themselves — their climate conditions are nearly opposite.",
     concept:
       "This steppe is a direct case study of how the 'rain shadow effect' can produce sharply different climate zones within a single region — just tens of kilometers away, the western slope of the Andes receives heavy rainfall and supports dense forest, while the eastern slope is already dry grassland.",
+    // history sources: 位置：米洛敦洞穴在**普埃尔托纳塔莱斯**西北约 24 km，不在帕利艾克国家公园附近（后者在蓬塔阿雷纳斯东北约 196 km），两地相距逾 200 km。1895 年埃伯哈德发现地懒化石属实。1 级。2026-09-10 核。
     history:
-      "The Cueva del Milodón near Pali Aike National Park yielded fossilized fur and bones of the extinct giant ground sloth in 1895, making it an important site for studying the relationship between Patagonia's late-Pleistocene fauna and early human activity; the steppe remains the core area for traditional sheep ranching today.",
+      "The Cueva del Milodón near Puerto Natales yielded fossilized fur and bones of the extinct giant ground sloth in 1895, making it an important site for studying the relationship between Patagonia's late-Pleistocene fauna and early human activity; the steppe remains the core area for traditional sheep ranching today.",
   },
 };

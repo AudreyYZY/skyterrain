@@ -10685,8 +10685,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "国土狭长，南北气候差异明显：北部11月至次年3月凉爽干燥，南部全年温暖、5-10月为雨季；建议按目的地查询当地具体季节安排。",
   },
   hanoi: {
+    // identity sources: 人口：GSO/NSO 2024 年中期人口与住房调查（基准 2024-04-01）**8,685,607**（1 级）。此前正文 850 万、howItWorks 886 万（英文维基推算）、官方 869 万三个数打架，统一取 GSO。2026-09-10 核。
     identity:
-      "河内定都的传说本身就与这座城市的名字有关——1010年李朝开国君主李太祖把都城从地势险要但闭塞的华闾（今宁平）迁到这里时，相传见到一条巨龙从红河腾空而起，因此把新都命名为“升龙”（Thăng Long），此后近八百年间它一直是越南的政治中心。河内是越南首都，人口约850万，坐落于红河右岸，是越南政治、文化中心。",
+      "河内定都的传说本身就与这座城市的名字有关——1010年李朝开国君主李太祖把都城从地势险要但闭塞的华闾（今宁平）迁到这里时，相传见到一条巨龙从红河腾空而起，因此把新都命名为“升龙”（Thăng Long），此后近八百年间它一直是越南的政治中心。河内是越南首都，2024年4月中期人口调查约869万人（越南统计总局），坐落于红河右岸，是越南政治、文化中心。",
     // howItWorks sources: Wikipedia (2026-09): Hanoi (centrally-governed city; 3,360 km² after 2008 Hà Tây merger; ~8.86 million 2025; 51 wards + 75 communes after 2025 reform); Administrative divisions of Vietnam (district level abolished 2025-07-01)
     howItWorks:
       "河内是越南的“中央直辖市”，级别与省相同，由人民委员会与人民议会治理；2025 年 7 月 1 日起越南撤销了县区一级，全国 63 个省级单位合并为 34 个，河内之下直接是 126 个坊与社——51 个坊、75 个社——过去的“郡”只留在人们的口语和地名里。2008 年河西省并入后市域约 3,360 平方公里，2025 年人口约 886 万，红河把它分成两岸，主城在西岸。城市从还剑湖向外生长：三十六行街的老城区在湖北，法国区在湖南，巴亭是政府与使馆所在，西湖畔是富裕的住宅区，纸桥、美亭、河东是 2000 年代以来的新城，红河东岸的龙边正在成为新的一片。地址写“门牌、街、坊”，门牌之下常有 ngõ（巷）、ngách（弄）的层层编号。两条城市铁路线运营中，摩托车仍是绝对的主角。初来的人最容易犯的错，是把老城区当作整个河内，而这座城的大部分是 2000 年后建起的新区。",
@@ -10822,11 +10823,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10-12月与3-4月气候最宜人；建议选择过夜游船体验，在船上欣赏下龙湾日出日落。",
   },
   "nha-trang-city": {
+    // identity sources: 人口：改制前原市区约 50 万（与本条目 howItWorks 一致）；原文 54 万缺年份且与 howItWorks 打架。行政：2025-07-01 庆和省与宁顺省合并，**省名仍为庆和省**、省会在芽庄。2026-09-10 核。
     identity:
-      "芽庄是越南南中部沿海城市，人口约54万，坐落于芽庄湾畔，是越南知名的海滨度假与潜水目的地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nha Trang (former city ~500,000; since 2025-06-16 the core is Nha Trang ward, 47 km², 136,118, under Khánh Hòa province, which absorbed Ninh Thuận, capital Nha Trang; 6 km Trần Phú beach; Po Nagar; Vinpearl Hòn Tre; Cam Ranh airport ~35 km; railway) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+      "芽庄是庆和省省会（2025年庆和省与宁顺省合并后仍称庆和省），改制前原市区人口约50万，坐落于芽庄湾畔，是越南知名的海滨度假与潜水目的地。",
+    // howItWorks sources: ⚠️ **合并方向原本写反了**：是宁顺省并入庆和省、新省仍名庆和省、中心在芽庄（新省 8,555.9 km²、约 188.2 万人）。注册表 admin1Zh 写的是「庆和省」——**注册表对、正文反**。**英文侧本来就写对了，只有中文写反** —— 纯中英不同步，check:zhen 只比数字、看不见方向。由全库越南合并扫描发现，非核实方报出。2026-09-10 核。
     howItWorks:
-      "芽庄是庆和省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属庆和省的坊，市中心的那一片就叫芽庄坊，约 47 平方公里、13.6 万人，整个原市区约 50 万人；庆和省同年并入了宁顺省。城市沿 6 公里的海滩展开，陈富路是海滨的主轴，酒店排在路的一侧，本地人的街区在后面几个街区，婆那加占塔在城北的河口，珍珠岛度假区在海上的竹岛，靠缆车与渡轮往来，火车站在市中心，金兰机场在南面约 35 公里。初来的人最容易犯的错，是把海滨大道当作芽庄，而本地人的市场与生活在离海几条街的后面。",
+      "芽庄是庆和省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属庆和省的坊，市中心的那一片就叫芽庄坊，约 47 平方公里、13.6 万人，整个原市区约 50 万人；宁顺省同年并入庆和省，新省仍称庆和省，行政中心就设在芽庄。城市沿 6 公里的海滩展开，陈富路是海滨的主轴，酒店排在路的一侧，本地人的街区在后面几个街区，婆那加占塔在城北的河口，珍珠岛度假区在海上的竹岛，靠缆车与渡轮往来，火车站在市中心，金兰机场在南面约 35 公里。初来的人最容易犯的错，是把海滨大道当作芽庄，而本地人的市场与生活在离海几条街的后面。",
     layout:
       "城市沿芽庄湾海滩展开，占婆塔遗址位于市区北侧，多座离岛分布于海湾之中，是跳岛游的主要目的地。",
     gettingAround:
@@ -10839,8 +10841,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "1-8月旱季最宜人，9-12月雨季偶有台风；跳岛游建议提前查询海况，雨季部分离岛航线会暂停。",
   },
   "da-lat": {
+    // identity sources: 人口：2022-12-31 为 258,014。⚠️ 官网 lamdong.gov.vn 的人口页本轮 WebFetch 被截断、未取到一手原文与口径（户籍 vs 常住），**故记 2 级**；下一轮重试该页确认。2026-09-10 核。
     identity:
-      "大叻是越南中部高原一座避暑山城，人口约23万，海拔约1500米，法国殖民时期即被开发为避暑胜地，如今是越南重要的花卉与农产品产区。",
+      "大叻是林同省省会（2025年林同省吸收平顺、得农两省后仍称林同省），2022年底人口约25.8万，海拔约1500米，法国殖民时期即被开发为避暑胜地，如今是越南重要的花卉与农产品产区。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Đà Lạt (former provincial city ceased 2025-07-01; capital of Lâm Đồng province, which absorbed Bình Thuận and Đắk Nông; ~1,500 m Langbiang plateau; Yersin 1893, French hill station; Xuân Hương lake; Liên Khương airport ~30 km; no rail) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
     howItWorks:
       "大叻是林同省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属林同省的坊；林同省同年并入了平顺与得农两省，省域从高原一直到海边。城市在海拔约 1,500 米的朗平高原上，1893 年耶尔森发现这片高地后，法国人把它建成避暑地，别墅与松林是它的底色，春香湖在市中心，市场在湖边的坡上，花与蔬菜的农场围着市区，莲姜机场在南面约 30 公里，没有铁路，老火车站只留作纪念。初来的人最容易犯的错，是按越南的气候来想象大叻，而这里一天有四季，晚上要穿外套。",
@@ -10877,8 +10880,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12月至次年4月旱季最宜人；水上市场建议清晨5至7点前往，此时交易最为热闹。",
   },
   "phu-quoc-city": {
+    // identity sources: 人口：阳东坊 2020 年 44,607。**原文「约 2 万」偏低一倍以上。** 2025 年改革后阳东并入富国特区（2024-12-31 特区口径 157,629），坊一级不再单独发布 —— 已写进 claims-stale-exempt。2026-09-10 核。
     identity:
-      "阳东是富国岛最主要的城镇，人口约2万，是富国岛旅游与渔业活动的核心区域。",
+      "阳东是富国岛最主要的城镇，2020年人口约4.5万（2025年行政改革后阳东并入富国特区，坊一级不再单独统计），是富国岛旅游与渔业活动的核心区域。",
     // howItWorks sources: 免签天数**不写死**，只说以官方最新公布为准 —— 这是项目既有口径（CLAUDE.md「中国政策类内容口径」那一条的通用化），现已由 npm run check:claims 的 C6-f 规则强制。哈萨克斯坦概览那条「多国公民可享受最长30天免签入境，具体以哈萨克斯坦外交部最新公布为准」是正确写法的范例，因为带了转向官方口径的免责语。核实日 2026-09-07
     howItWorks:
       "富国岛是越南最大的岛，约 575 平方公里，2021 年设市，2025 年 6 月县级单位撤销后改为“特区”，直属安江省——坚江省同年并入安江，省会在迪石。岛上人口约 18 万，主镇阳东在西岸，机场、夜市与长滩都在附近，安泰在南端，缆车通往海上的香岛，北面是新建的度假城，鱼露与胡椒是老产业，2012 年启用的国际机场，加上对多国游客的免签入境（具体天数与适用国家以越南主管部门最新公布为准），让它成为面向国际的度假岛。初来的人最容易犯的错，是把富国当作一座度假村，而它是一个有 18 万居民、南北 50 公里的岛，特区政府在阳东。",
@@ -10894,8 +10898,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年4月旱季最宜人，海况平稳适合出海活动；5-10月雨季偶有强降雨，出行前建议查询天气。",
   },
   "ninh-binh": {
+    // identity sources: 人口：原宁平市 2023-12-31 为 153,992（2022 年 148,869）。**该统计单元已消失**——2024 年底并入华闾县、2025-07-01 再与河南、南定合并为新宁平省，只能停在改革前最后一版，已写进 claims-stale-exempt。
+    //   ⚠️ 另记：howItWorks 写「省会设在华闾坊」过度简化——2025-07-01 后原华闾市拆为华闾、东华闾、西华闾、南华闾 4 个坊，行政中心在原宁庆坊一带。下一轮软化这个专名。2026-09-10 核。
     identity:
-      "宁平的华闾曾是越南历史上第一个统一王朝的都城——968年丁部领在此建立大瞿越国、定都华闾，看中的正是这里喀斯特峰丛环绕、易守难攻的地形；丁朝与前黎朝先后在此建都四十余年，直到1010年李太祖认为这里地势过于闭塞、不利发展，才把都城迁往河内（升龙）。宁平是越南北部一座以喀斯特稻田景观闻名的城市，人口约13万，是探索长安名胜群与陆龙湾的核心门户，常被称为“陆上下龙湾”。",
+      "宁平的华闾曾是越南历史上第一个统一王朝的都城——968年丁部领在此建立大瞿越国、定都华闾，看中的正是这里喀斯特峰丛环绕、易守难攻的地形；丁朝与前黎朝先后在此建都四十余年，直到1010年李太祖认为这里地势过于闭塞、不利发展，才把都城迁往河内（升龙）。宁平是越南北部一座以喀斯特稻田景观闻名的城市，改制前原市区2023年底人口约15.4万，是探索长安名胜群与陆龙湾的核心门户，常被称为“陆上下龙湾”。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ninh Bình (province merged with Hà Nam and Nam Định 2025, capital at Hoa Lư ward — the former Ninh Bình city; Đáy river; Tràng An complex UNESCO 2014 — Tam Cốc, Tràng An, Bái Đính, Hoa Lư 10th-century capital — 7–15 km west; Hanoi ~95 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
     howItWorks:
       "宁平原是宁平省的省会城市，2025 年宁平省与河南、南定两省合并，省会设在华闾坊——也就是原宁平市与华闾县合并后的市区，县级单位撤销后坊直属于省。市镇在沱河边，是一座平淡的省城，火车站与长途车站在这里，河内在北面约 95 公里；人们来宁平要看的都在城西 7 到 15 公里的喀斯特山里：长安与三谷的游船、拜顶寺、10 世纪的华闾古都，2014 年一起列入世界遗产。初来的人最容易犯的错，是在宁平城里找山水，而山水在城外的田野与河道里，城只是一个下车的地方。",
@@ -12091,8 +12097,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "旱季（5至9月）总体更适合出行，火山徒步与海岛活动受天气影响较小；雨季（10月至次年4月）局部地区多雨、部分山区道路可能受影响。跨岛出行建议预留充足中转时间，偏远岛屿的航班班次有限、易受天气取消。入境对肉类、部分药品与毒品管制严格，毒品相关罪行处罚极重，务必了解并遵守当地法规。",
   },
   jakarta: {
+    // identity sources: ⚠️ 首都地位：2024 年《DKJ 法》把雅加达法定名称改为「雅加达特区」、首都职能规划迁往努桑塔拉，**但迁都总统令尚未生效**；印尼宪法法院 2026-05 裁定在此之前雅加达仍是法定首都（1 级）。**正文改成带时点、不预断结果的写法。** howItWorks 早已带限定语、identity 没跟上（C6-h）。
+    //   人口：Jabodetabek **是 BPS 有官方统计的口径**（《Jabodetabek 通勤统计》，1 级），这个词可用；缺的是年份，各口径近年在 2800—3200 万之间。2026-09-10 核。
     identity:
-      "雅加达是印度尼西亚首都，都会区人口逾3000万，是全国政治、经济、金融与交通中心，也是东南亚最大的城市之一，坐落于爪哇岛西北岸。",
+      "雅加达目前仍是印度尼西亚的法定首都——2022 与 2024 年的立法已规划把首都职能迁往努桑塔拉，但迁都总统令尚未生效；大雅加达（Jabodetabek）都会区近年估计在2800万至3200万之间，是全国政治、经济、金融与交通中心，也是东南亚最大的城市之一，坐落于爪哇岛西北岸。",
     // howItWorks sources: 雅加达（2024 年《UU No.2/2024》起法律地位改为 DKJ 雅加达特区）2025 年上半年
     //   Dukcapil 户籍登记人口 11,010,514；该口径**每半年发布一次**。
     //   https://m.beritajakarta.id/read/149477/jumlah-penduduk-jakarta-tercatat-1101-juta-jiwa（2 级，2026-09-08 核）。
@@ -12220,8 +12228,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "前往多巴湖或武吉拉旺建议预留至少2至3天行程；旱季（多在5至9月前后）道路条件更佳，雨季山区道路可能因降雨受影响。",
   },
   makassar: {
+    // identity sources: 人口：2025 年约 149 万（与本条目 howItWorks 一致）。原 identity 把年份剥掉了。**未取得 BPS 一手数字，本轮按 3 级记**。「苏拉威西岛最大城市」排名可信（南苏拉威西省会 + 主要港口）。2026-09-10 核。
     identity:
-      "望加锡是苏拉威西岛最大城市，人口约150万，是南苏拉威西省首府与该岛主要海港与商贸中心，也是通往塔纳托拉查高地的门户。",
+      "望加锡是苏拉威西岛最大城市，2025年人口约149万，是南苏拉威西省首府与该岛主要海港与商贸中心，也是通往塔纳托拉查高地的门户。",
     // howItWorks sources: Wikipedia (2026-09): Makassar (South Sulawesi capital; 15 kecamatan; 2025 pop ~1.49 million; Mamminasata ~2.8 million; renamed from Ujung Pandang 1999); Subdivisions of Indonesia
     howItWorks:
       "望加锡是南苏拉威西省的首府，有民选的市长和市议会，市下分 15 个区（kecamatan）；2025 年人口约 149 万，是印度尼西亚东部最大的城市，而包括马罗斯、哥瓦、塔卡拉尔的都会区约 280 万人。1971 至 1999 年它叫乌戎潘当，之后恢复旧名。城市围绕港口生长：鹿特丹堡是荷兰时期的要塞，港口至今停泊着布吉人与望加锡人的皮尼西帆船，罗萨里海滩是填海造出的海滨广场。它是通往巴布亚、马鲁古的空中与海上枢纽，往东的航班多从这里转。布吉—望加锡文化里的航海传统是这座城的底色。地址在街道之下还写 RT/RW 邻里编号。市内出行靠汽车、摩托与公交。初来的人最容易犯的错，是把望加锡当作去托拉查的中转站，而它是整个印尼东部的中心城市。",
@@ -12237,8 +12246,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "前往塔纳托拉查建议预留至少2天行程，山路车程较长；旱季（约5至9月）道路条件更佳。当地传统葬礼仪式如逢机会参观需事先了解当地礼俗、保持尊重。",
   },
   "labuan-bajo": {
+    // identity sources: 人口：镇区 2024 年中约 7,226（与本条目 howItWorks 一致）；科莫多县（kecamatan）同期 62,224。**原文「约 3 万」两个口径都对不上、查无出处**，且与本条目 howItWorks 自相矛盾。2026-09-10 核。
     identity:
-      "拉布安巴焦是弗洛雷斯岛西端的港口小镇，人口约3万，是探索科莫多国家公园与周边岛屿的核心门户，近年因潜水与快艇跳岛游迅速发展为国际旅游城镇。",
+      "拉布安巴焦是弗洛雷斯岛西端的港口小镇，2024年年中镇区人口约7,200，是探索科莫多国家公园与周边岛屿的核心门户，近年因潜水与快艇跳岛游迅速发展为国际旅游城镇。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Labuan Bajo (Indonesia; a fishing town and the seat of West Manggarai Regency in East Nusa Tenggara, on the western tip of Flores, with a mid-2024 population of about 7,226; the main entry point to Komodo National Park, a UNESCO World Heritage Site of 128 islands, the largest being Komodo and Rinca, home to the Komodo dragon; designated in 2018 as one of five "super-priority" tourism destinations to spread visitors beyond Bali, with 13 five-star hotels, 68 other hotels, 4 villas and 26 dormitories by 2019; Komodo Airport 3 km from the centre; waste management a growing pressure, with the park and surrounding area producing an average of about 13 tonnes of rubbish a day)
     howItWorks:
       "拉布安巴焦是印度尼西亚东努沙登加拉省西曼加莱县的县城，在弗洛勒斯岛西端，2024 年中人口约 7,226；印尼实行地方自治，省与县（市）两级的行政首长均由直选产生，县政府管本地事务，国家公园则由中央的林业与环境部门管辖，两套系统并行。这座镇的角色是门户：科莫多国家公园由 128 座岛屿组成，其中科莫多岛与林卡岛最大，科莫多巨蜥只分布在这一带，1991 年列入世界遗产，而进园的船几乎都从这个港口出发。2018 年印尼把它列为五个“超级优先”旅游目的地之一，用意是把游客从巴厘岛分流出去，此后新建了大量住宿——到 2019 年已有 13 家五星级酒店与近百家其他住宿。快速增长也带来压力：公园与周边区域平均每天产生约 13 吨垃圾，其中不少是难以回收的塑料。科莫多机场在镇外 3 公里，巴厘岛有直飞。初来的人最容易犯的错，是以为在镇上就能看到巨蜥，而它们只在几座岛上，需坐船前往。",
@@ -12254,8 +12264,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至10月旱季海况更稳定，是跳岛游与潜水的最佳季节；11月至次年3月雨季偶有强风影响出海行程，建议提前确认船只出行安排。",
   },
   balikpapan: {
+    // identity sources: 人口：2024 年中 757,418（与本条目 howItWorks 一致），原 identity 的「约 70 万」低了近 8 万且无年份。3 级。「通往努桑塔拉的主要空中门户」「新首都在建设中」已妥善带不确定性限定，不改。2026-09-10 核。
     identity:
-      "巴厘巴板是东加里曼丹省的石油工业城市，人口约70万，是印尼在婆罗洲最重要的经济中心之一，也是通往正在建设中的新首都努桑塔拉的主要空中门户。",
+      "巴厘巴板是东加里曼丹省的石油工业城市，2024年年中人口约75.7万，是印尼在婆罗洲最重要的经济中心之一，也是通往正在建设中的新首都努桑塔拉的主要空中门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Balikpapan (Indonesia; a seaport city on the east coast of Borneo in East Kalimantan, 757,418 residents in mid-2024, the second-largest city in the province after Samarinda, which is the provincial capital; the financial centre of Kalimantan; the first oil drilling began here on 10 February 1897, making it the birthplace of the Indonesian oil industry, with the Pertamina refinery still central and international energy companies keeping regional offices; originally a Buginese fishing settlement, developed by the Dutch Bataafsche Petroleum Maatschappij from 1907, devastated in the Second World War and the refinery rebuilt by 1950; the Sungai Wain protected forest and its sun bears, orangutans and proboscis monkeys under pressure; Sultan Aji Muhammad Sulaiman Sepinggan International Airport; a toll road to Samarinda completed in 2021)
     howItWorks:
       "巴厘巴板是印尼东加里曼丹省的港口城市，2024 年中人口 757,418；印尼实行地方自治，省与市（县）两级首长均由直选产生。这里有一处常被弄错的关系：巴厘巴板是全省最大的经济中心，却不是省会——省会在东北的三马林达，两地之间 2021 年通了收费高速。它的存在源于石油：1897 年 2 月 10 日这里打出第一口油井，是印尼石油工业的起点，1907 年起荷兰的石油公司在此建厂，二战中城市与炼油厂被摧毁，1950 年重建，如今国营的佩尔塔米纳炼油厂仍是全城的核心，国际能源公司在此设区域办公室，加里曼丹的金融业务也集中于此。因为围绕工业统一规划，这座城市的街道与市容比同规模的印尼城市整齐。近年它又多了一重身份：印尼正在建设的新首都努山塔拉就在西北邻近的两个县内，进出工地多经此城。宋盖韦恩保护林在市郊，是马来熊与长鼻猴的栖息地。初来的人最容易犯的错，是以为它是省会，而省会在三马林达。",
@@ -12271,8 +12282,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "旱季（约5至9月）道路与航班更稳定；作为新首都建设的门户城市，基础设施仍在快速变化中，出行前建议核实最新交通与住宿信息。",
   },
   manado: {
+    // identity sources: 人口：2025 年中约 46.3 万（与本条目 howItWorks 一致），原 identity 剥掉了年份。3 级。
+    //   ✅ 零争议红线：宗教构成写的是「本地基督徒占多数、与全国穆斯林主体不同」——这是**万鸦老与全国**的客观人口构成对比，不是红线点名要回避的「万鸦老 vs 望加锡」两城对比，也无评价性用词，通过。
     identity:
-      "万鸦老是北苏拉威西省首府，人口约45万，是印尼东部重要港口城市，也是布纳肯国家公园潜水胜地的门户，与全国以穆斯林为主体的宗教构成不同，本地以基督教徒为多数。",
+      "万鸦老是北苏拉威西省首府，2025年年中人口约46万，是印尼东部重要港口城市，也是布纳肯国家公园潜水胜地的门户，与全国以穆斯林为主体的宗教构成不同，本地以基督教徒为多数。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Manado (Indonesia; capital of North Sulawesi Province with about 462,658 residents in mid-2025 over 162.35 km²; the indigenous Minahasa people form the majority; Protestant Christianity is the major religion at about 62.89 per cent of residents in 2023, and the city is nicknamed the city of a thousand churches, hosting Indonesia's largest annual Christmas celebration; Bunaken National Marine Park offshore is the principal attraction; Mount Lokon, Mount Mahawu and Lake Linow nearby; Sam Ratulangi International Airport connects to major Asian cities; the local motto that all are family)
     howItWorks:
       "万鸦老是印尼北苏拉威西省的省会，2025 年中人口约 46.3 万，市域约 162 平方公里；印尼实行地方自治，省与市（县）两级首长均由直选产生，省会集中全省的行政、医疗与高等教育。这座城最鲜明的特征是它的构成：本地米纳哈萨人是主体族群，2023 年约 62.89% 的居民信奉基督新教，是印尼基督徒比例最高的大城市之一，市内教堂密集，本地因此自称“千教堂之城”，每年的圣诞庆典是全国规模最大的。它的地理同样特别：城市在苏拉威西岛北端的火山带上，洛孔火山与马哈武火山就在南面的托莫洪一带，利瑙湖是火山口湖；外海的布纳肯国家海洋公园以陡直的珊瑚墙闻名，是印尼最早设立的海洋公园之一，潜水者多为此而来。萨姆拉图兰吉国际机场有通往东亚多座城市的航班。本地菜以辛辣著称。初来的人最容易犯的错，是按印尼其他地区的习惯预期这里的饮食与节庆，而万鸦老在这两件事上都自成一格。",
