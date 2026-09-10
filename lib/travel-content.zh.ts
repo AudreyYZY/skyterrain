@@ -8208,8 +8208,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   linz: {
+    // 零改动留痕（2026-09-10）：2009 年欧洲文化之都、2014-12-01 入选 UNESCO 媒体艺术之都，均核实属实。
+    //   ✅ 零争议红线：正文只写现代的钢铁与港口经济、文化之都与电子艺术节，**未涉及纳粹时期的城市规划与工业史**，通过。
+    // identity sources: 人口：林茨市政府公报 2026-01-01 为 215,040（1 级）。**howItWorks 早已写对、identity 没跟上**（C6-h）。2026-09-10 核。
     identity:
-      "林茨是上奥地利州首府，奥地利第三大城市，人口约21万，坐落在多瑙河畔，是奥地利重要的工业与文化城市。",
+      "林茨是上奥地利州首府，奥地利第三大城市，2026年初人口约21.5万（林茨市政府），坐落在多瑙河畔，是奥地利重要的工业与文化城市。",
     // howItWorks sources: 林茨市政府官方新闻稿（2026 年 1 月）：2026-01-01 市人口 215,040，
     //   https://www.linz.at/medienservice/2026/202601_133824.php（1 级，2026-09-08 核）。
     //   **原文的「都会区约 82 万」已删**：林茨市政府自己的「Ballungsraum」口径（含 13 个直接相邻市镇）
@@ -8305,8 +8308,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bregenz: {
+    // 零改动留痕（2026-09-10）：「比州内最大的城市多恩比恩还小」经核属实（多恩比恩 52,252 > 布雷根茨 29,270）；
+    //   水上舞台约 7,000 座、「世界最大湖上舞台」的说法有多方来源支撑。
+    // identity sources: 人口：2026-01-01 为 29,270（Statistik Austria 终版，经 3 级转引）。同条目 howItWorks 的「多恩比恩比布雷根茨大」经核属实（多恩比恩 52,252）。2026-09-10 核。
     identity:
-      "布雷根茨是福拉尔贝格州首府，人口约3万，坐落在博登湖东岸，是奥地利最西端的城市，与瑞士、德国隔湖相望。",
+      "布雷根茨是福拉尔贝格州首府，2026年初人口约2.9万，坐落在博登湖东岸，是奥地利最西端的城市，与瑞士、德国隔湖相望。",
     // howItWorks sources: Statistik Austria 2026-01-01 终版：布雷根茨 29,270（2023 年约 29,600，略降）。
     //   https://www.citypopulation.de/de/austria/vorarlberg/bregenz/80207__bregenz/
     //   （3 级，标注「Die Einwohnerzahlen für 2026 sind endgültig」转引官方终版，2026-09-08 核）。
@@ -8325,11 +8331,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   "zell-am-see": {
+    // 零改动留痕（2026-09-10）：市域 55.2 km² 与正文「约 55 平方公里」一致；当地无民用商业机场，正文表述无误。
+    // identity sources: 人口：2026-01-01 为 10,217（Statistik Austria 终版）；萨尔茨堡州政府 2025-01-01 为 10,227（1 级）。原文「约 9,900」是未标年的旧值。2026-09-10 核。
     identity:
-      "采尔湖畔采尔是萨尔茨堡州皮恩茨高地区一座湖畔小镇，人口约1万，坐落在采尔湖畔、基茨施泰因峰脚下，是阿尔卑斯山区兼具湖泊与雪山景观的度假地。",
+      "采尔湖畔采尔是萨尔茨堡州皮恩茨高地区一座湖畔小镇，2026年初人口约1.02万，坐落在采尔湖畔、基茨施泰因峰脚下，是阿尔卑斯山区兼具湖泊与雪山景观的度假地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zell am See (town in Salzburg state, district seat; 55 km²; ~9,900; Lake Zell; Schmittenhöhe 138 km pistes; Kaprun/Kitzsteinhorn 10 km separate municipality; Grossglockner ~30 km; rail 1875; Salzburg ~80 km)
     howItWorks:
-      "采尔湖畔采尔是萨尔茨堡州的一座镇与采尔湖县的县治，市域约 55 平方公里，人口约 9,900，有民选的镇议会与镇长，警察与学校归州。镇子在采尔湖的西岸，1875 年铁路通车后成为贵族的避暑地，施米滕山的缆车从镇边上山，有 138 公里雪道，卡普伦在南面 10 公里，是另一个市镇，基茨施泰因峰的冰川雪场在那里，两地合称一个度假区，大格洛克纳山在南面约 30 公里，夏天海湾国家的游客把镇子填满，萨尔茨堡在北面约 80 公里。初来的人最容易犯的错，是把“采尔湖—卡普伦”当作一个镇，而它们是两个市镇，冰川在卡普伦，湖在采尔。",
+      "采尔湖畔采尔是萨尔茨堡州的一座镇与采尔湖县的县治，市域约 55 平方公里，2026 年初人口约 1.02 万，有民选的镇议会与镇长，警察与学校归州。镇子在采尔湖的西岸，1875 年铁路通车后成为贵族的避暑地，施米滕山的缆车从镇边上山，有 138 公里雪道，卡普伦在南面 10 公里，是另一个市镇，基茨施泰因峰的冰川雪场在那里，两地合称一个度假区，大格洛克纳山在南面约 30 公里，夏天海湾国家的游客把镇子填满，萨尔茨堡在北面约 80 公里。初来的人最容易犯的错，是把“采尔湖—卡普伦”当作一个镇，而它们是两个市镇，冰川在卡普伦，湖在采尔。",
     layout:
       "老城中心保留着中世纪街道格局，沿采尔湖西岸展开；缆车站连接小镇与基茨施泰因峰滑雪区（山顶常年积雪，可全年滑雪）。",
     gettingAround:
@@ -8361,6 +8369,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–9月最舒服，杏花在4月初（瓦豪）。市区半天，与瓦豪连成一天。从维也纳当日往返方便。",
   },
   krems: {
+    // 零改动留痕（2026-09-10）：正文已带年份与数字（约 2.6 万，2026 年初），是本批 10 城里唯一一开始就写全的。
+    //   📌 来源可升级：克雷姆斯市政府官网「Krems in Zahlen」给 2026 年 1 月主住所 **25,840**（1 级），
+    //   比注释原引的 citypopulation.de（3 级，25,581）级别更高，两者都落在「约 2.6 万」内。「特许市（Statutarstadt）」身份属实。
     // identity sources: Statistik Austria 2026-01-01 终版：克雷姆斯（官方全名 Krems an der Donau，法定市）25,581。
     //   https://citypopulation.de/de/austria/niederosterreich/krems_an_der_donau_stadt/30101__krems_an_der_donau/
     //   （3 级，标注官方终版，2026-09-08 核）。
@@ -8381,11 +8392,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月初杏花、7月杏子、9–10月葡萄采收最好；冬季游船停运、酒馆少。克雷姆斯半天，瓦豪一天。从维也纳当日往返方便，也可在杜恩施泰因住一晚。",
   },
   "bad-ischl": {
+    // 零改动留痕（2026-09-10）：市域 162.85 km² 与正文「约 163 平方公里」一致；当地无民用商业机场，正文表述无误。
+    //   哈布斯堡避暑史（1854 年皇帝别墅、1914-07-28 宣战书在此签署）为广泛记载史实、无评价性表述。
+    // identity sources: 人口：2026-01-01 主住所 14,116（Statistik Austria 终版）；市政府官网 2025-01-01 为 14,129（1 级）。**只取主住所口径**——另有约 3,140 副住所，合计约 1.73 万，不要混用。2026-09-10 核。
     identity:
-      "巴特伊舍尔在上奥地利的萨尔茨卡默古特地区，特劳恩河与伊舍尔河交汇处，人口约1.4万。十九世纪盐水疗养让它成为时髦的温泉小镇，1854年皇帝弗朗茨·约瑟夫一世的母亲把皇帝别墅作为结婚礼物送给他，此后近60年他每年夏天都在这里避暑，1914年7月28日对塞尔维亚的宣战书就在别墅里签署。作曲家莱哈尔在此居住，勃拉姆斯、布鲁克纳都来过；1832年创办的察乌纳糕点店是皇家御用。2024年巴特伊舍尔与萨尔茨卡默古特一起是欧洲文化之都，哈尔施塔特、沃尔夫冈湖都在附近。",
+      "巴特伊舍尔在上奥地利的萨尔茨卡默古特地区，特劳恩河与伊舍尔河交汇处，2026年初人口约1.41万。十九世纪盐水疗养让它成为时髦的温泉小镇，1854年皇帝弗朗茨·约瑟夫一世的母亲把皇帝别墅作为结婚礼物送给他，此后近60年他每年夏天都在这里避暑，1914年7月28日对塞尔维亚的宣战书就在别墅里签署。作曲家莱哈尔在此居住，勃拉姆斯、布鲁克纳都来过；1832年创办的察乌纳糕点店是皇家御用。2024年巴特伊舍尔与萨尔茨卡默古特一起是欧洲文化之都，哈尔施塔特、沃尔夫冈湖都在附近。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bad Ischl (town in Gmunden district, Upper Austria; 163 km²; ~14,000; Salzkammergut centre; Kaiservilla 1854; Zauner 1832; Lehár villa; ECoC 2024 with Salzkammergut; Traun; Salzburg ~55 km; Hallstatt ~20 km)
     howItWorks:
-      "巴特伊舍尔是上奥地利州格蒙登县的一座镇，市域约 163 平方公里，人口约 1.4 万，有民选的镇议会与镇长，警察与学校归州。它是萨尔茨卡默古特地区的中心：19 世纪初因盐水疗养成为时髦的温泉地，1854 年起皇帝弗朗茨·约瑟夫每年夏天住在城北的皇帝别墅，宫廷与作曲家随之而来，莱哈尔的别墅在河边，1832 年开业的曹纳咖啡馆至今在主街上；镇子在特劳恩河与伊舍尔河汇合处，2024 年它与整个地区一起是欧洲文化之都，萨尔茨堡在西面约 55 公里，哈尔施塔特在南面约 20 公里。初来的人最容易犯的错，是把巴特伊舍尔当作去哈尔施塔特的过路站，而它是这片湖区的历史中心与交通枢纽。",
+      "巴特伊舍尔是上奥地利州格蒙登县的一座镇，市域约 163 平方公里，2026 年初人口约 1.41 万，有民选的镇议会与镇长，警察与学校归州。它是萨尔茨卡默古特地区的中心：19 世纪初因盐水疗养成为时髦的温泉地，1854 年起皇帝弗朗茨·约瑟夫每年夏天住在城北的皇帝别墅，宫廷与作曲家随之而来，莱哈尔的别墅在河边，1832 年开业的曹纳咖啡馆至今在主街上；镇子在特劳恩河与伊舍尔河汇合处，2024 年它与整个地区一起是欧洲文化之都，萨尔茨堡在西面约 55 公里，哈尔施塔特在南面约 20 公里。初来的人最容易犯的错，是把巴特伊舍尔当作去哈尔施塔特的过路站，而它是这片湖区的历史中心与交通枢纽。",
     layout:
       "小镇在两河交汇的谷地里，步行街（Pfarrgasse）、察乌纳咖啡馆和教堂在特劳恩河东岸的中心，皇帝别墅和公园在河西岸的山脚，莱哈尔别墅在特劳恩河边。火车站在中心南侧。盐矿在镇东南的山里。哈尔施塔特在南面约20公里，沃尔夫冈湖在西面约10公里，格蒙登和特劳恩湖在北面约30公里。",
     gettingAround:
@@ -10469,11 +10483,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；克拉科夫是探索小波兰地区（扎科帕内、维利奇卡）的理想门户，建议至少安排两到三日深度游览老城与周边景点。",
   },
   zakopane: {
+    // 零改动留痕（2026-09-10）：Górale（高地人）文化写作客观的地方文化事实、无族群评价，✅ 红线通过。
+    //   无民用机场，最近为克拉科夫机场——正文表述无误。
+    // identity sources: 人口：原文对应 2017 年的 27,266，**落后九年**。GUS BDL 2025 年约 24,921，持续下降（PAP 报道市政府警示人口流失，2 级）。2026-09-10 核。
     identity:
-      "扎科帕内是波兰南部塔特拉山脉北麓的山城，人口约2.7万，被称为波兰的“冬季首都”，是探索塔特拉国家公园的传统门户。",
+      "扎科帕内是波兰南部塔特拉山脉北麓的山城，2025年人口约2.49万（GUS，仍在下降），被称为波兰的“冬季首都”，是探索塔特拉国家公园的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakopane (Poland; town in Lesser Poland Voivodeship at the foot of the Tatra Mountains near the Slovak border, 27,266 residents in 2017, at 800–1,100 m; called the winter capital of Poland with more than 2.5 million visitors a year; the centre at the crossing of Krupówki and Kościuszko streets; the Zakopane Style of Stanisław Witkiewicz joining Carpathian vernacular with modern design, as in Villa Koliba of 1892–93 and the Tatra Museum of 1913–24; a centre of Góral highlander culture, costume, music and oscypek cheese; the Kasprowy Wierch cable car completed 1936, Gubałówka, and the Wielka Krokiew ski jump opened 1925; Nordic World Ski Championships in 1929, 1939 and 1962)
     howItWorks:
-      "扎科帕内是波兰小波兰省的城镇，2017 年人口 27,266，海拔 800 至 1,100 米，在塔特拉山北麓、靠近斯洛伐克边境；波兰的地方行政分省、县与市镇三级，本镇属塔特拉县，市镇管本地事务，省管区域规划。它自称波兰的“冬都”，每年到访者超过两百五十万，几乎全国的滑雪、登山与暑期避暑都往这一处集中，克鲁普夫基街与科希丘什科街的交叉口是全城的中心。这里是戈拉尔高地人文化的中心，服饰、音乐、木屋与羊奶熏酪“奥斯齐佩克”都出自这一支；19 世纪末画家斯坦尼斯瓦夫·维特凯维奇把当地木构做法与现代设计合成“扎科帕内风格”，1892 年的科利巴别墅与 1913 至 1924 年的塔特拉博物馆是代表作，这套样式后来被视为波兰的民族建筑语言。1936 年通车的卡斯普罗维山缆车与 1925 年启用的大克罗基耶夫跳台仍在使用，1929、1939 与 1962 年三次举办北欧滑雪世锦赛。初来的人最容易犯的错，是把它当作单纯的雪场，而它同时是一个文化流派的发源地。",
+      "扎科帕内是波兰小波兰省的城镇，2025 年人口约 2.49 万（仍在下降），海拔 800 至 1,100 米，在塔特拉山北麓、靠近斯洛伐克边境；波兰的地方行政分省、县与市镇三级，本镇属塔特拉县，市镇管本地事务，省管区域规划。它自称波兰的“冬都”，每年到访者超过两百五十万，几乎全国的滑雪、登山与暑期避暑都往这一处集中，克鲁普夫基街与科希丘什科街的交叉口是全城的中心。这里是戈拉尔高地人文化的中心，服饰、音乐、木屋与羊奶熏酪“奥斯齐佩克”都出自这一支；19 世纪末画家斯坦尼斯瓦夫·维特凯维奇把当地木构做法与现代设计合成“扎科帕内风格”，1892 年的科利巴别墅与 1913 至 1924 年的塔特拉博物馆是代表作，这套样式后来被视为波兰的民族建筑语言。1936 年通车的卡斯普罗维山缆车与 1925 年启用的大克罗基耶夫跳台仍在使用，1929、1939 与 1962 年三次举办北欧滑雪世锦赛。初来的人最容易犯的错，是把它当作单纯的雪场，而它同时是一个文化流派的发源地。",
     layout:
       "小城沿塔特拉山脉北麓山谷而建，克鲁普夫基大街是当地最热闹的商业步行街，多座缆车站连接城区与周边山峰。",
     gettingAround:
@@ -10486,8 +10503,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12月至次年3月是滑雪旺季，6-9月是徒步旺季；缆车与热门徒步路线在旺季人流较多，建议清晨出发。",
   },
   rzeszow: {
+    // 零改动留痕（2026-09-10）：howItWorks 的「2026 年 1 月约 19.9 万」与 GUS 官方 199,436（2025-12-31，1 级）接近，属实。
+    //   「F-16 发动机世界仅两家制造商之一」经核基本属实（F-16 只有普惠 F100 与通用电气 F110 两家供应商，普惠在热舒夫设厂产 F100 零部件）；「航空谷」产业集群属实。
+    //   机场专名「热舒夫—亚西翁卡机场」为现行官方名。
+    // identity sources: 人口：GUS 热舒夫统计局 2025-12-31 为 199,436（1 级）。原 identity 的 19.6 万缺年份、且与同条目 howItWorks 的 19.9 万打架。「波兰第 15 大城市」排名成立。2026-09-10 核。
     identity:
-      "热舒夫是波兰东南部小波兰地区的城市，人口约19.6万，是探索别什恰迪山脉的门户，也是波兰重要的航空工业中心。",
+      "热舒夫是波兰东南部小波兰地区的城市，2025年末人口约19.9万（GUS），是探索别什恰迪山脉的门户，也是波兰重要的航空工业中心。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rzeszów (Poland; capital of Subcarpathian Voivodeship and the largest city in south-eastern Poland, about 198,540 inhabitants in January 2026, the 15th largest Polish city, on both banks of the Wisłok in the Sandomierz Basin; unusually among Polish cities of its size the population is growing, with municipal boundaries extended between 2017 and 2021; town rights from Casimir III the Great in 1354; historically on the east-west trade route; Asseco Poland and G2A.COM, and aerospace manufacturing including one of the world's two makers of F-16 engines; the Renaissance town hall, Rzeszów Castle and preserved synagogues; the underground tourist route; Rzeszów-Jasionka Airport; the A4 motorway)
     howItWorks:
       "热舒夫是波兰喀尔巴阡山省的省会，也是波兰东南部最大的城市，2026 年 1 月人口约 19.9 万，是波兰第 15 大城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会的所在。它在维斯沃克河两岸的桑多梅日盆地里，1354 年由卡齐米日三世授予城市权，历史上位于连接欧洲与东方的商路上。与波兰同等规模的城市普遍收缩不同，热舒夫的人口在增长，2017 至 2021 年间还多次扩大市界并入周边乡镇。支撑它的是两样产业：一是软件与信息技术，Asseco Poland 与 G2A 的总部在此；二是航空制造，本地的“航空谷”产业集群与热舒夫工业大学相互支撑，世界上仅有的两家 F-16 发动机制造商之一在这里设厂。文艺复兴式的市政厅与老城堡在市中心，地下有一条穿过老城地窖的参观通道，保存下来的犹太会堂建筑也在老城。亚西翁卡机场在城北，A4 高速从旁经过。初来的人最容易犯的错，是把波兰东南部当作农业地带，而这里是航空工业的集中区。",
@@ -10503,11 +10524,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；热舒夫是探索别什恰迪山脉波沃尼纳草甸的便捷门户，山区徒步建议安排至少一到两日。",
   },
   wroclaw: {
+    // 零改动留痕（2026-09-10）：机场专名「弗罗茨瓦夫机场」为现行官方名。前现代史与建筑史（大教堂岛、集市广场、
+    //   1913 年百年厅、2006 年列入世界遗产）照留，只删了 1945 年前后人口更替那一句。
+    // identity sources: 人口：GUS 2025-06-30 为 672,545。**⚠️ 不要用「89.3 万」或「超 110 万」**——那是弗罗茨瓦夫大学的「生活痕迹」实验性估算，不是 GUS 登记人口口径。「波兰第三大城市」成立（2021 年普查后超越罗兹，与其差距很小）。2026-09-10 核。
     identity:
-      "弗罗茨瓦夫是波兰西南部西里西亚地区的核心城市，人口约64万，坐落于奥得河畔，以百余座桥梁与遍布全城的“弗罗茨瓦夫小矮人”雕塑闻名。",
-    // howItWorks sources: Wikipedia (2026-09): Wrocław (48 osiedla; 293 km²; 672,545 2025; Oder islands and bridges; Breslau until 1945; Centennial Hall UNESCO 2006; ~130,000 students); Administrative divisions of Poland
+      "弗罗茨瓦夫是波兰西南部西里西亚地区的核心城市，2025年人口约67万（GUS），坐落于奥得河畔，以百余座桥梁与遍布全城的“弗罗茨瓦夫小矮人”雕塑闻名。",
+    // howItWorks sources: ⚠️ 零争议红线：原 howItWorks 有一句陈述 1945 年前后人口与语言整体更替，2026-09-10 整句删除（比照 CLAUDE.md 对捷克「1938/1945 年人口迁移一律不写」的既有规定）。前现代史与建筑史照留。
     howItWorks:
-      "弗罗茨瓦夫是下西里西亚省的省会，是一个拥有县地位的市，由民选市长和市议会治理，市下的基层单位是 48 个 osiedle，各有自己的居民议会——这里在 1990 年就撤销了区一级。市域约 293 平方公里，2025 年人口约 67 万，是波兰第三大城市。奥得河及其支流把城市切成十几座岛，一百多座桥把它们连起来：大教堂岛是城市的发源地，集市广场是中世纪的中心，1913 年建成的百年厅在东面的公园区，2006 年列入世界遗产。1945 年以前这座城名为布雷斯劳，战后城市的居民与语言整体更替，今天的市民多是战后迁入者的后代。有轨电车是市内的主干。约 13 万学生让它成为一座大学城。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把弗罗茨瓦夫当作一座普通的波兰城市，而它的街道格局与建筑记着另一段历史。",
+      "弗罗茨瓦夫是下西里西亚省的省会，是一个拥有县地位的市，由民选市长和市议会治理，市下的基层单位是 48 个 osiedle，各有自己的居民议会——这里在 1990 年就撤销了区一级。市域约 293 平方公里，2025 年人口约 67 万，是波兰第三大城市。奥得河及其支流把城市切成十几座岛，一百多座桥把它们连起来：大教堂岛是城市的发源地，集市广场是中世纪的中心，1913 年建成的百年厅在东面的公园区，2006 年列入世界遗产。有轨电车是市内的主干。约 13 万学生让它成为一座大学城。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把弗罗茨瓦夫当作一座普通的波兰城市，而它的街道格局与建筑记着另一段历史。",
     layout:
       "老城建于奥得河及其支流形成的多座岛屿之上，主集市广场是老城核心，教堂岛保留有中世纪宗教建筑群。",
     gettingAround:
@@ -10562,11 +10586,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人，也是波罗的海海滨度假旺季；格但斯克是探索海尔半岛与斯沃文斯基沙丘的便捷门户。",
   },
   szczecin: {
+    // identity sources: 人口：什切青统计局 2025-12-31 约 38.4 万（1 级）。「波兰第七大城市」按最新 GUS 排序成立。2026-09-10 核。
     identity:
-      "什切青是波兰西北部奥得河口的港口城市，人口约39万，紧邻德国边境，是波兰重要的海港与工业城市。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Szczecin (Poland; capital of West Pomeranian Voivodeship and the seventh-largest Polish city, the largest city of north-western Poland; on the Oder south of the Szczecin Lagoon and the Bay of Pomerania, a major seaport; recorded from the 8th century, a major Baltic trading town under the House of Griffin, under the Swedish Empire from 1630 and Prussia from 1720, becoming part of Poland after the Second World War under the Potsdam Agreement; the 19th-century street plan influenced by Haussmann's Paris with star-shaped junctions and much green space; the Ducal Castle; the Wały Chrobrego terraces; headquarters of NATO's Multinational Corps Northeast since 1999; several universities)
+      "什切青是波兰西北部奥得河口的港口城市，2025年末人口约38.4万（GUS），紧邻德国边境，是波兰重要的海港与工业城市。",
+    // howItWorks sources: ⚠️ 零争议红线：删去「二战后依波茨坦协定划归波兰」这半句（1945 年边界变动陈述）。1630 瑞典 / 1720 普鲁士属前现代史，照留。
+    //   **核实方另建议把 culture 段「历史上曾长期属德国管辖，建筑风貌融合德国与波兰印记」也一并软化，未采纳** —— 那一句与克罗地亚条目写「哈布斯堡 / 威尼斯建筑遗产」是同一种处理，本身是建筑史事实、无评价成分；它之所以看着敏感，是因为**紧挨着上面那句波茨坦协定**。上面那句删掉之后，这一句就回到了与克罗地亚一致的尺度。**删一句和删一段是两件事**，2026-09-10 判定。
     howItWorks:
-      "什切青是波兰西滨海省的省会，是波兰第七大城市，也是西北部最大的城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。城市在奥得河下游、什切青潟湖以南，与外海之间隔着一段内水航道，港口与更靠海的希维诺乌伊希切共同构成波兰最大的港口群之一，柏林在西面约 130 公里。它的记载可追到 8 世纪，中世纪在格里芬王朝治下成为波罗的海重要商埠，1630 年起属瑞典，1720 年归普鲁士，二战后依波茨坦协定划归波兰。今天最能看出它历史的是街道：19 世纪的改造仿照奥斯曼改造后的巴黎，放射状的星形广场与宽林荫道贯穿全城，市区绿地与水面的比例在波兰各大城市中居前列。格里芬王朝的公爵城堡与河岸上的赫罗布雷堤台是主要地标，1999 年起北约的东北多国军团总部设在此。初来的人最容易犯的错，是以为这座港口城市临海，而它在河上，离开阔海面还有约 65 公里。",
+      "什切青是波兰西滨海省的省会，是波兰第七大城市，也是西北部最大的城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。城市在奥得河下游、什切青潟湖以南，与外海之间隔着一段内水航道，港口与更靠海的希维诺乌伊希切共同构成波兰最大的港口群之一，柏林在西面约 130 公里。它的记载可追到 8 世纪，中世纪在格里芬王朝治下成为波罗的海重要商埠，1630 年起属瑞典，1720 年归普鲁士。今天最能看出它历史的是街道：19 世纪的改造仿照奥斯曼改造后的巴黎，放射状的星形广场与宽林荫道贯穿全城，市区绿地与水面的比例在波兰各大城市中居前列。格里芬王朝的公爵城堡与河岸上的赫罗布雷堤台是主要地标，1999 年起北约的东北多国军团总部设在此。初来的人最容易犯的错，是以为这座港口城市临海，而它在河上，离开阔海面还有约 65 公里。",
     layout:
       "老城沿奥得河支流而建，波美拉尼亚公爵城堡矗立在城市高地，港口区沿奥得河展开，是波兰面积最大的城市绿地系统之一的所在地。",
     gettingAround:
@@ -10621,11 +10647,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人，也是马祖里湖区帆船活动旺季；奥尔什丁是探索湖区的理想基地，建议安排至少一日湖区游船或帆船体验。",
   },
   bialystok: {
+    // 零改动留痕（2026-09-10）：✅ 零争议红线通过——「族群与信仰混杂」「东正教堂」「犹太教堂遗址」均作客观历史／建筑事实呈现，
+    //   未触及二战、族群冲突或现代政治；柴门霍夫创制世界语的动机写作「混杂的语言环境」，无冲突性措辞。
+    //   机场：比亚韦斯托克—克雷夫拉尼（EPBK）是通用航空机场、**无定期商业客运**，在建的萨尼基机场尚未投运——正文「客运航班有限」准确、留有余地。
+    // identity sources: 人口：GUS 2025-12-31 约 28.92 万。原 identity 的 29.7 万偏高且与同条目 howItWorks 的 28.9 万打架（C6i）——**howItWorks 是对的一侧**。2026-09-10 核。
     identity:
-      "比亚韦斯托克是波兰东北部波德拉谢地区的核心城市，人口约29.7万，是探索比亚沃维耶扎原始森林与别布扎沼泽的门户。",
+      "比亚韦斯托克是波兰东北部波德拉谢地区的核心城市，2025年末人口约28.9万（GUS），是探索比亚沃维耶扎原始森林与别布扎沼泽的门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Białystok (Poland; capital of Podlaskie Voivodeship and the largest city in north-eastern Poland, about 289,000 residents, tenth nationally, with the second-highest population density among Polish cities; about 200 km north-east of Warsaw on the Białystok Uplands along the Biała; recorded from about 1437 when a member of the Raczków family received a wilderness area along the river; flourished in the 18th century under the Branicki family, the Branicki Palace compared to Versailles; a major textile centre in the 19th century, called the Manchester of the North; L. L. Zamenhof, creator of Esperanto, born here in 1859; a historically multi-ethnic and multi-faith city with Orthodox churches; the fifth most forested Polish municipality, about 1,846 ha or 18 per cent)
     howItWorks:
-      "比亚韦斯托克是波兰波德拉谢省的省会，也是波兰东北部最大的城市，人口约 28.9 万，居全国第十，人口密度在波兰各大城市中位居第二；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。华沙在西南约 200 公里。城市约 1437 年见于记载，18 世纪在布拉尼茨基家族治下成型：他们把这里建成一座宫廷城市，巴洛克的布拉尼茨基宫与法式园林至今是市中心的核心，因此本地常称它“波德拉谢的凡尔赛”。19 世纪它成为纺织业中心，一度被称作“北方的曼彻斯特”。这一带历史上族群与信仰混杂，天主教堂与东正教堂并立至今，波兰的东正教徒有相当一部分集中在这个省；1859 年世界语的创制者柴门霍夫生于此城，他自述这种混杂的语言环境促成了他的想法。全市森林约 1,846 公顷、占市域一成八，比亚沃维耶扎原始森林在东南。初来的人最容易犯的错，是以为波兰只有天主教，而这里长期是多信仰并存之地。",
+      "比亚韦斯托克是波兰波德拉谢省的省会，也是波兰东北部最大的城市，2025 年末人口约 28.9 万，居全国第十，人口密度在波兰各大城市中位居第二；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。华沙在西南约 200 公里。城市约 1437 年见于记载，18 世纪在布拉尼茨基家族治下成型：他们把这里建成一座宫廷城市，巴洛克的布拉尼茨基宫与法式园林至今是市中心的核心，因此本地常称它“波德拉谢的凡尔赛”。19 世纪它成为纺织业中心，一度被称作“北方的曼彻斯特”。这一带历史上族群与信仰混杂，天主教堂与东正教堂并立至今，波兰的东正教徒有相当一部分集中在这个省；1859 年世界语的创制者柴门霍夫生于此城，他自述这种混杂的语言环境促成了他的想法。全市森林约 1,846 公顷、占市域一成八，比亚沃维耶扎原始森林在东南。初来的人最容易犯的错，是以为波兰只有天主教，而这里长期是多信仰并存之地。",
     layout:
       "老城以布拉尼茨基宫及其巴洛克花园为核心，被称为“波德拉谢的凡尔赛”，多元宗教建筑（天主教、东正教、犹太教堂遗址）见证了当地历史上的多元文化格局。",
     gettingAround:

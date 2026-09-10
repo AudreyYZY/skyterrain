@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 87644d2
+lastVerifiedCommit: 9ed75dd
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,11 @@ lastVerifiedCommit: 87644d2
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-10 | cities: austria 5 + poland 5（第十三轮 e（奥地利 5 + 波兰 5 城）） | 15 | 0 / 0 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: ireland 8 + greece 6（第十三轮 d（爱尔兰收尾 + 希腊批 1）） | 6 | 0 / 0 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: chile 14（第十三轮 c（智利地形批 1）） | 4 | 0 / 0 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: norway romsdalen（第十三轮 b（zh/en 数字比对）） | 1 | 0 / 0 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: iceland reykjanes（第十三轮 a（全库排他性断言扫描）） | 1 | 0 / 0 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | cities: south-korea 6 + czechia 6（第十二轮 d（韩国 6 + 捷克 6 城）） | 3 | 0 / 0 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain: ireland glenveagh（第十二轮 c（格伦维）） | 2 | 0 / 0 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain: turkey 14 + ireland 14（第十二轮 b（土耳其收尾 + 爱尔兰批 2）） | 6 | 0 / 0 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |

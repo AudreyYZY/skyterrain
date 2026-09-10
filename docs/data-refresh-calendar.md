@@ -461,3 +461,12 @@ PSA 的行政层级里到底是哪一级。
 - **捷克 ČSÚ 市镇年度人口（Počet obyvatel v obcích）** —— 基准日每年 **1 月 1 日**，
   **次年 5 月中下旬**按州（kraj）页面陆续发布（实测 2026-01-01 基准数据于 2026-05 已发布，
   与此前记的「约 4.5 个月滞后」一致）。
+
+- **Statistik Austria（Bevölkerungsstand）** —— Stichtag 每年 **1 月 1 日**。**临时数（vorläufig）
+  约次年 2 月上旬**发布（实测：2026-01-01 的数据 2026-02-09 发布）；**确定数（endgültig）约当年 7 月末**。
+  转引站点会标注「Die Einwohnerzahlen für 20XX sind endgültig」，可据此判断拿到的是哪一版。
+- **GUS（波兰，ludność faktycznie zamieszkała）** —— **12-31 口径约次年 4 月末**发布；
+  另有 **6-30 口径约当年 10—11 月**（这一档的确切发布月份仍待核实）。
+  ⚠️ **GUS 近年的「实验性数据」（ślady życia / dane eksperymentalne）不是官方常住人口口径**
+  —— 弗罗茨瓦夫流传的「89.3 万」乃至「超 110 万」就出自这一套方法，**不能用作本库的人口数字**，
+  本库一律走 Bank Danych Lokalnych 的登记／常住人口。
