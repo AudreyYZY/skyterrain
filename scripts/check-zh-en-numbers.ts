@@ -25,12 +25,21 @@ import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
 import { TRAVEL_CONTENT_EN } from "@/lib/travel-content.en";
 import { CITY_REGISTRY } from "@/lib/places-registry";
+import { ROUTE_NARRATION } from "@/lib/route-narration";
 
 /** 地形的 6 板块与城市的 7 段，两套字段名不同，各扫各的 */
 const TERRAIN_FIELDS = ["seeing", "formation", "observation", "distinguish", "concept", "history"] as const;
 const CITY_FIELDS = [
   "identity", "howItWorks", "layout", "gettingAround", "culture", "seeAndDo", "whenAndTips",
 ] as const;
+/**
+ * 航线解说是**第三套内容**（2026-09-10 补）。地形与城市各有注册表和字段名，
+ * 航线解说的形状不一样：`ROUTE_NARRATION[id].{study,travel}[lang]` 是整段字符串，
+ * 没有分字段。这里把 study / travel 当成两个「字段」来比，
+ * 双语的键分别是 `zh-CN` / `en-US`（不是 `zh` / `en`）。
+ * 之所以要补：这套内容分批核实从来没覆盖过它，而它同样是中英分开写的。
+ */
+const ROUTE_FIELDS = ["study", "travel"] as const;
 const TOLERANCE = 0.06;
 
 function nums(s: string): Map<string, Set<number>> {
@@ -55,6 +64,8 @@ function nums(s: string): Map<string, Set<number>> {
 const near = (a: number, b: number) => Math.abs(a - b) <= Math.max(1, a * TOLERANCE);
 
 let pairs = 0, fields = 0;
+/** 按内容系统分别计数 —— 见文件末尾的断言：任何一套比到 0 对都当失败 */
+const pairsByKind = new Map<string, number>();
 const hits: string[] = [];
 
 type Pair = { kind: string; id: string; country: string; zh: any; en: any; fields: readonly string[] };
@@ -67,6 +78,15 @@ for (const c of CITY_REGISTRY) {
   const zh = (TRAVEL_CONTENT_ZH as any)[c.id], en = (TRAVEL_CONTENT_EN as any)[c.id];
   if (zh && en) all.push({ kind: "城市", id: c.id, country: c.country, zh, en, fields: CITY_FIELDS });
 }
+for (const [id, n] of Object.entries(ROUTE_NARRATION)) {
+  // 摊平成和上面两套一样的形状：{ study: <中文串>, travel: <中文串> } / 英文同理
+  const zh: Record<string, string> = {}, en: Record<string, string> = {};
+  for (const f of ROUTE_FIELDS) {
+    zh[f] = (n as any)[f]?.["zh-CN"] ?? "";
+    en[f] = (n as any)[f]?.["en-US"] ?? "";
+  }
+  all.push({ kind: "航线", id, country: "-", zh, en, fields: ROUTE_FIELDS });
+}
 
 for (const t of all) {
   const { zh, en } = t;
@@ -76,6 +96,7 @@ for (const t of all) {
       const bv = b.get(u);
       if (!bv?.size) continue;
       fields++; pairs += av.size * bv.size;
+      pairsByKind.set(t.kind, (pairsByKind.get(t.kind) ?? 0) + av.size * bv.size);
       const zhOnly = [...av].filter((v) => ![...bv].some((w) => near(v, w)));
       const enOnly = [...bv].filter((v) => ![...av].some((w) => near(v, w)));
       if (zhOnly.length && enOnly.length) {
@@ -96,15 +117,32 @@ for (const t of all) {
  */
 const seen = new Set<string>();
 for (const t of all) for (const f of t.fields) if (typeof (t.zh as any)[f] === "string") seen.add(f);
-const bogus = [...new Set([...TERRAIN_FIELDS, ...CITY_FIELDS])].filter((f) => !seen.has(f));
+const bogus = [...new Set([...TERRAIN_FIELDS, ...CITY_FIELDS, ...ROUTE_FIELDS])].filter((f) => !seen.has(f));
 if (bogus.length) {
   console.error(`\n✗ 这些字段名在任何条目上都不存在，等于白扫：${bogus.join(", ")}`);
   process.exit(1);
 }
 
-console.log(`中英同单位数字比对（地形 6 板块 + 城市 7 段）：${fields} 个字段两侧都有可比数字，实际比较 ${pairs} 对`);
+const byKind = new Map<string, number>();
+for (const t of all) byKind.set(t.kind, (byKind.get(t.kind) ?? 0) + 1);
+console.log(
+  `中英同单位数字比对（地形 6 板块 + 城市 7 段 + 航线 2 套解说）：` +
+  `扫了 ${[...byKind].map(([k, v]) => `${k} ${v}`).join(" / ")}，` +
+  `${fields} 个字段两侧都有可比数字，实际比较 ${pairs} 对`,
+);
 if (pairs === 0) {
   console.error("\n✗ 一对都没比到 —— 这不是「全部通过」，是这个脚本自己坏了（内容文件的导出改了？）");
+  process.exit(1);
+}
+/**
+ * 总数不为 0 还不够：**某一套内容单独取不到值也会被总数盖住**。
+ * 航线解说的双语键是 `zh-CN`/`en-US` 而不是 `zh`/`en`，写错一个字母，
+ * 那 280 条就会整体变成空串、静默比 0 对，而屏幕上仍然是「全部通过」。
+ * 所以逐套断言 —— 和当初忘了 await 是同一个洞。
+ */
+const emptyKinds = [...byKind.keys()].filter((k) => !(pairsByKind.get(k) ?? 0));
+if (emptyKinds.length) {
+  console.error(`\n✗ 这几套内容一对都没比到，等于没扫：${emptyKinds.join("、")}（键名或导出改了？）`);
   process.exit(1);
 }
 if (hits.length) {
