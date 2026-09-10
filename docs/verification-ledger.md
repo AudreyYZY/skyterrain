@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 311dee5
+lastVerifiedCommit: df90bfd
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,13 @@ lastVerifiedCommit: 311dee5
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-10 | cities: kazakhstan 5 + mongolia 4（第十五轮 g（哈萨克 5 + 蒙古 4 城）） | 10 | 0 / 0 / 0 | 当场修 10 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: greece+austria+belgium（第十五轮 f（本轮新增 unknown）） | 10 | 0 / 0 / 10 | 当场修 0 条；新开 issue 10、关闭 0 |
+| 2026-09-10 | terrain: belgium 14 + austria 14（第十五轮 e（比利时批 1 + 奥地利批 2）） | 10 | 0 / 0 / 0 | 当场修 10 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain: greece 5 + austria 8（第十五轮 d（希腊收尾 + 奥地利批 1）） | 6 | 0 / 0 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | cities: ko-lanta（第十五轮 c（关掉 #222）） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 1 |
+| 2026-09-10 | cities: ko-lanta（第十五轮 a（issue 清理）） | 1 | 0 / 0 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
+| 2026-09-10 | terrain+cities: 累积 unknown（第十五轮 b（把历轮 unknown 落成 issue）） | 17 | 0 / 0 / 17 | 当场修 0 条；新开 issue 17、关闭 0 |
 | 2026-09-10 | cities: vietnam 5 + indonesia 5（第十四轮 d（越南 5 + 印尼 5 城）） | 11 | 0 / 0 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | terrain: chile 14（第十四轮 c（智利地形收尾）） | 8 | 0 / 0 / 0 | 当场修 8 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | terrain: japan 11（第十四轮 b（日本地形收尾）） | 4 | 0 / 0 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |

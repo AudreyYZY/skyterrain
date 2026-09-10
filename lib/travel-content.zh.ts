@@ -10004,10 +10004,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–4月最好，斯米兰只在此期间开放；12–2月最挤。住三到五晚，配一次斯米兰。雨季酒店便宜但海况差、部分关闭。",
   },
   "ko-lanta": {
-    // identity sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
-    //   兰塔岛：10,830（2012）是可查到的最后一个全岛口径数；**乡镇级数据显示兰达耶乡镇 2022 年末已降到 6,942**（沙拉丹镇 1983 年已分出、是另一个乡镇），提示全岛口径大概率也在下降。**本轮没有找到能可靠合并两个乡镇的全岛最新数，因此只补年份 + 写明可能已下降，不换一个没核到的数。** 3 级，2026-09-10 核。
+    // identity sources: 桥：**西里兰塔大桥 2016-04-22 通车，连的是兰达诺伊 ↔ 兰达耶两岛之间**；到大陆仍靠汽车渡轮（Klong Mak ↔ Ban Hua Hin），没有通往大陆的桥。原 identity 写「2015 年」「连到大陆」**两处都错**，而同条目 howItWorks 一直是对的。对应 issue #222。（另有通往大陆的桥在规划中，**不写** —— 那是会过期的承诺。）2026-09-10 核。
     identity:
-      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，2012 年人口约1.1万（本轮未找到可信的更新一期，乡镇级 2022 年的数据显示可能已下降）。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
+      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，2012 年人口约1.1万（本轮未找到可信的更新一期，乡镇级 2022 年的数据显示可能已下降）。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2016年通车的西里兰塔大桥把大小兰塔两岛连了起来，再往大陆仍要坐汽车渡轮，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
     // howItWorks sources: 兰达耶岛（主岛）**10,830 人（2012）**；兰达县（含大小兰达岛）30,500 人（2012）
     //   或 26,805（2010 年 NSO 普查）——3 级，2026-09-08 核。
     //   **howItWorks 原写的「约 2 万」三个数都对不上**：注释称它转引自英文维基关于苏梅岛的
@@ -11549,8 +11548,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人；作为工业城市，游客较少，适合对蒙古现代工业发展感兴趣的旅行者短暂停留。",
   },
   darkhan: {
+    // identity sources: ⚠️ **省份**：达尔汗属**达尔汗乌勒省**（1994 年从色楞格省分出），原 identity 写「色楞格省」是分省前的旧归属；**本条目 howItWorks 与 places-registry 的 admin1Zh 都是对的，只有 identity 错**。
+    //   人口：2022 年 87,696。「蒙古第三大城市」经交叉验证成立（与本库 erdenet「第二大」并排读自洽）。
+    //   📌 另记：places-registry 写「达尔汗乌**勒**省」、travel-content 的 howItWorks 写「达尔汗乌**拉**省」——同一省名两种音译并存，下一轮统一。
     identity:
-      "达尔汗是蒙古第三大城市，人口约9万，坐落于蒙古北部色楞格省，是蒙古纵贯铁路线上的重要工业与交通枢纽城市。",
+      "达尔汗是蒙古第三大城市，2022年人口约8.8万（蒙古国家统计局），坐落于蒙古北部达尔汗乌勒省，是蒙古纵贯铁路线上的重要工业与交通枢纽城市。",
     // howItWorks sources: Wikipedia (2026-09): Darkhan (city) (Darkhan-Uul capital; 87,696 2022; founded 1961 with Comecon aid; old/new Darkhan; 220 km N of Ulaanbaatar; Trans-Mongolian Railway; 86% in apartments)
     howItWorks:
       "达尔汗是蒙古国第三大城市，也是达尔汗乌拉省的省会——这个省 1994 年设立，是全国面积最小的省之一。2022 年人口约 8.8 万。这座城 1961 年在经互会的援助下作为工业城市从零建起，波兰、匈牙利等国的专家参与了建设，木材、肉类加工与建材是最初的产业，如今煤矿、冶金与建材是支柱。城市分成两片：老达尔汗是最早的工业区与车站一带，新达尔汗是后来规划的居住区，约 86% 的市民住在公寓里，蒙古包区在城市边缘，这在蒙古国的城市里是少见的比例。它在蒙古纵贯铁路与主干公路上，乌兰巴托在南面约 220 公里，俄罗斯边境在北面百余公里，周围是蒙古国重要的农业区。地址写“区、街、楼、门”。初来的人最容易犯的错，是把达尔汗当作过路的车站，而它是一座有自己规划与工业的城市。",
@@ -11583,8 +11585,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人；建议留出充足时间探索鄂尔浑河谷文化景观周边的游牧牧场体验，不宜只做古城遗址的短暂停留。",
   },
   moron: {
+    // identity sources: 人口：取**有明确年份**的 2017 年 39,404。⚠️ 网上流传的 46,918 在英文维基同一条目里与 infobox 的 2017 数并存且**没有年份**——按「拿不准就不要编一个年份」，不采用。1212.mn 证书错误无法访问，已进豁免表。「蒙古第五大城市」经与乔巴山条目互证仍成立、不受数字选择影响。
     identity:
-      "木伦是蒙古北部库苏古尔省首府，人口约4.7万，是探索库苏古尔湖的核心门户城市。",
+      "木伦是蒙古北部库苏古尔省首府，2017年人口约3.94万（蒙古国家统计局），是探索库苏古尔湖的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mörön (Mongolia; administrative centre of Khövsgöl Province, about 46,918 residents, the fifth most populous city in Mongolia; on the Delgermörön river at 1,710 m, the name meaning "river"; grown from a monastery of about 1809–1811 that housed some 1,300 monks before its destruction in 1937; Danzadardscha Khiid rebuilt in 1990; Museum of Khövsgöl Province with over 3,600 artifacts; electricity in 2004, paved road to Ulaanbaatar completed December 2014; Mörön Airport since 1957; record low −47.2 °C)
     howItWorks:
       "木伦是蒙古国库苏古尔省的省会，人口约 4.7 万，是蒙古第五大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中了全省的行政、医疗与中学。城市在德勒格尔木伦河边，海拔约 1,710 米，名字在蒙古语里就是“河”的意思。它从一座寺院长起来：约 1809 至 1811 年间此地建寺，鼎盛时住着约一千三百名僧人，1937 年被毁，1990 年在原址附近重建了丹赞达尔扎寺。省博物馆藏有三千六百多件文物。这座城的现代化来得很晚——2004 年才通电，到乌兰巴托的柏油公路 2014 年 12 月才修通，机场则从 1957 年就在运行，因此长期以来飞机比公路更管用。库苏古尔湖在北面约 100 公里的哈特嘎勒，省内还有驯鹿放牧的查坦人。冬季最低纪录约零下 47 度。初来的人最容易犯的错，是把木伦当作湖边的镇，而湖在一百公里之外。",
@@ -11600,8 +11603,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人，是探索库苏古尔湖的最佳季节；冬季湖面结冰，部分年份可开展冰上活动，但需专业向导安排。",
   },
   dalanzadgad: {
+    // identity sources: 人口：2024 年 32,674，底层引用**南戈壁省统计局 2025 年发布**——是这批九城里来源质量最好的一条（与本条目 howItWorks 一致）。
     identity:
-      "达兰扎德嘎德是蒙古南部南戈壁省首府，人口约3.3万，是探索戈壁古尔班赛罕国家公园的核心门户城市。",
+      "达兰扎德嘎德是蒙古南部南戈壁省首府，2024年人口约3.27万（南戈壁省统计局），是探索戈壁古尔班赛罕国家公园的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dalanzadgad (Mongolia; capital of Ömnögovi (South Gobi) Province, about 32,674 residents in 2024 over 476 km², divided into ten bags; 540 km south of Ulaanbaatar, paved road completed 2014; one of the warmest places in Mongolia in winter, extremes −36.1 °C to 39.9 °C, annual precipitation 134 mm; Yolyn Am gorge in Gurvan Saikhan National Park with streams and grass in the desert; dinosaur fossil sites and major mining in the province; airport runway the second longest in the country)
     howItWorks:
       "达兰扎德嘎德是蒙古国南戈壁省的省会，2024 年人口约 3.3 万，市域约 476 平方公里，下分十个“巴格”；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。它在戈壁的中部，乌兰巴托在北面 540 公里，柏油公路 2014 年才通到这里。这里的气候是戈壁式的：年降水量只有约 134 毫米，极端气温从零下 36 度到近 40 度，但按蒙古的标准，它的冬天算是全国最暖的地方之一。城西约 50 公里的三美山国家公园里有约林安峡谷，谷底有流水与青草，夏天仍能见到残冰，与四周的荒漠形成反差；洪高林沙丘与巴彦扎格的“火焰崖”分别在更远处，后者以恐龙蛋化石的发现闻名。省内的奥尤陶勒盖与塔本陶勒盖是蒙古最重要的两处矿区，采矿与旅游共同支撑本地。机场的跑道长度在全国仅次于乌兰巴托。初来的人最容易犯的错，是以为景点就在城边，而戈壁的距离以数百公里计。",
@@ -11658,8 +11662,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月是徒步塔王博格达山群的最佳季节；每年10月的金雕节是观赏哈萨克族传统猎鹰文化的最佳时机，但气温已转冷，需注意保暖。",
   },
   choibalsan: {
+    // identity sources: 人口：2025 年 38,537（与本条目 howItWorks 一致），是这批里最新的一期；原 identity 的「约 3.9 万」取整偏松，已与 howItWorks 对齐。
+    //   「蒙古第四大城市」经维基原文「after Ulaanbaatar, Darkhan, and Erdenet」直接印证。
+    //   ✅ 红线：howItWorks 提到 1939 年哈拉哈河战役与朱可夫纪念馆——广泛记载的军事史事实、不涉现代邻国关系或评价，**判定保留**。
     identity:
-      "乔巴山是蒙古东部道尔诺德省首府，人口约3.9万，坐落于克鲁伦河畔，是探索蒙古东部达乌尔草原的核心门户城市。",
+      "乔巴山是蒙古东部道尔诺德省首府，2025年人口约3.85万（蒙古国家统计局），坐落于克鲁伦河畔，是探索蒙古东部达乌尔草原的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Choibalsan (Mongolia; capital of Dornod Province in the east, 38,537 residents in 2025, the fourth-largest city in Mongolia after Ulaanbaatar, Darkhan and Erdenet; on the Kherlen river at 747 m; called Bayan Tümen until 1941, renamed for the 20th anniversary of the 1921 revolution after Khorloogiin Choibalsan; mainly Khalkha with Buryat and other groups; Choibalsan Airport with flights to Ulaanbaatar and Chinese cities; a railway to the Trans-Siberian, passenger service ending at Chuluunkhoroot on the border; museum to Georgy Zhukov near the site of the Battle of Khalkhin Gol; extremes −41.1 °C to 41.9 °C)
     howItWorks:
       "乔巴山是蒙古国东部道尔诺德省的省会，2025 年人口约 3.85 万，是继乌兰巴托、达尔汗与额尔登特之后蒙古第四大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。城市在克鲁伦河边，海拔约 747 米，四周是蒙古东部一望无际的草原——这片草原是世界上保存最完整的温带草原之一，蒙原羚成群迁徙的地方就在附近。它原名巴彦图门，1941 年为纪念 1921 年革命二十周年，改用当时领导人霍尔洛·乔巴山的名字。20 世纪它是通往北方铁路的节点，一条支线从这里接上西伯利亚大铁路，但客运只开到边境的楚伦霍洛特。城郊有纪念格奥尔基·朱可夫的博物馆，因为 1939 年的哈拉哈河战役就发生在这个省。机场有飞往乌兰巴托与中国城市的航班。极端气温从零下 41 度到近 42 度。初来的人最容易犯的错，是以为可以坐火车从这里出境，而客运列车只到边境为止。",
@@ -12392,8 +12399,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "希姆肯特夏季炎热干燥，5月与9月气候相对宜人；前往突厥斯坦建议安排一整天行程，往返车程加上陵墓参观需数小时。",
   },
   aktau: {
+    // identity sources: 人口：2023 年 270,886（与本条目 howItWorks 一致）。⚠️ 俄文维基 infobox 另有「306,650（2026）」，但其引用链接返回 404、同页正文却仍停在 2020 年的 183,097——**三个数字互相矛盾，且 stat.gov.kz 深层页对自动抓取返回 500/404**，本轮不采用那个更高的数。下一轮换带会话的浏览器工具直接取一手。
     identity:
-      "阿克套是曼格斯套州首府，人口约27万，是哈萨克斯坦里海沿岸最大城市，气候干燥少雨，是探索曼格斯套荒漠奇观（博兹吉拉、卡拉吉耶、托雷什）的核心门户。",
+      "阿克套是曼格斯套州首府，2023年人口约27万（哈萨克斯坦国家统计局），是哈萨克斯坦里海沿岸最大城市，气候干燥少雨，是探索曼格斯套荒漠奇观（博兹吉拉、卡拉吉耶、托雷什）的核心门户。",
     // howItWorks sources: Wikipedia (2026-09): Aktau (Mangystau capital; ~270,886 2023; founded 1958/1963, Shevchenko 1964–1991; BN-350 1973–1999; port + Baku ferry; Caspian Depression; microdistrict addressing)
     howItWorks:
       "阿克套是曼吉斯套州的首府，在里海东岸的曼吉什拉克半岛上，2023 年人口约 27 万。这座城 1958 年因铀矿勘探而生，1964 至 1991 年间名为舍甫琴科；它建在沙漠里，大部分市区低于海平面，淡水曾靠 BN-350 快中子反应堆的海水淡化供应——那座反应堆 1973 年运行、1999 年关闭，是世界上第一座工业规模的核能海水淡化装置。今天石油是支柱产业，港口与通往巴库的里海渡轮把它连向高加索。城市按苏联的规划建成，没有街名：地址写“小区号—楼号—门号”，本地人以小区号说位置，这在哈萨克斯坦是独一无二的。公交承担出行，没有轨道交通。乌斯秋尔特高原与博兹吉拉的地貌在市外的沙漠里。初来的人最容易犯的错，是在这座城里找街道名，而它从建成之日起就只有编号。",
@@ -12426,8 +12434,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候相对温和，是参观陵墓与户外遗址的适宜季节；亚萨维陵墓建议安排至少半天时间，细看帖木儿时期未完工建筑留下的独特结构痕迹。",
   },
   karaganda: {
+    // identity sources: 人口：2020 年普查 497,777（与本条目 howItWorks 一致）。⚠️ 俄文维基 infobox 另有 2023 年 515,632，但引用页返回 404、**无法在一手来源上坐实**，本轮不采用。下一轮复核。
     identity:
-      "卡拉干达是哈萨克丘陵中部的工业城市，人口逾50万，历史上因煤炭开采而兴起，是哈萨克斯坦中部重要的矿业与工业中心，也是探索卡尔卡拉雷山与别克套阿塔的门户之一。",
+      "卡拉干达是哈萨克丘陵中部的工业城市，2020年人口普查49.8万（哈萨克斯坦国家统计局），历史上因煤炭开采而兴起，是哈萨克斯坦中部重要的矿业与工业中心，也是探索卡尔卡拉雷山与别克套阿塔的门户之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Karaganda (Kazakhstan; capital of Karaganda Region in central Kazakhstan about 230 km south-east of Astana, 497,777 residents in the 2020 census, the fifth-most populous city in the country; coal mining anchors the economy, production beginning in 1930 and the railway arriving in February 1931 bringing supplies and qualified staff, with 8 coal mines today against as many as 26 in the Soviet period; the Karlag camp was in the region and by 1939 the city held about 100,000 people; ethnic Germans, many deported Volga Germans, were a large share of inhabitants in the 1940s and more than 100,000 people have emigrated to Germany since 1991; Karaganda State University; Sary-Arka Airport 20 km south-east; the highest PM2.5 levels measured among Kazakh cities from 2017 to 2022)
     howItWorks:
       "卡拉干达是哈萨克斯坦卡拉干达州的首府，在阿斯塔纳东南约 230 公里，2020 年人口 497,777，是全国第五大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这座城因煤而生：1930 年这里开始大规模采煤，1931 年 2 月铁路通到矿区，物资与技术人员随之进入，城市在草原上迅速成形，苏联时期最多时有 26 座煤矿，如今在产的约 8 座，钢铁重镇特米尔套在北面，两地构成一个连片的工业区。20 世纪的人口来源也与制度有关：卡拉干达劳改营设在本州，1939 年全城约十万人；1940 年代大量被强制迁移的伏尔加德意志人被安置在此，德裔曾占相当比例，1991 年后有十万以上的人移居德国，城市的族群构成因此几经变化。卡拉干达大学在城中，萨雷阿尔卡机场在东南 20 公里。2017 至 2022 年的监测中，这里的细颗粒物浓度在哈萨克斯坦各城市中最高。初来的人最容易犯的错，是以为草原上的城都很古老，而它不到一百年。",
@@ -12443,8 +12452,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候相对温和，是前往卡尔卡拉雷与别克套阿塔徒步的最佳季节；两处景点均路途较远，建议各安排一整天行程。",
   },
   semey: {
+    // identity sources: 人口：2024-11 为 312,764（与本条目 howItWorks 一致）。identity 的重心改为阿拜·库南巴耶夫的故乡与 19 世纪文化重镇（新设阿拜州即以他命名）。
+    //   ⚠️ 机场专名待改（B1-b，低优先级）：现名 **Semei International Airport**（以阿拜命名），正文写的是「谢梅伊机场」；IATA（PLX）与坐标无误，只是名称精度问题。
     identity:
-      "谢梅伊是哈萨克斯坦东部沿额尔齐斯河而建的历史城市，人口逾30万，历史上曾是苏联时期塞米巴拉金斯克核试验场的行政中心，如今是额尔齐斯河沿岸重要的文化与教育城市。",
+      "谢梅伊是哈萨克斯坦东部沿额尔齐斯河而建的历史城市，2024年11月人口约31.3万（哈萨克斯坦国家统计局）；它是哈萨克近代诗人与思想家阿拜·库南巴耶夫的故乡、19世纪的文化重镇，2022年新设的阿拜州即以他命名，如今是额尔齐斯河沿岸重要的文化与教育城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semey (Kazakhstan; formerly Semipalatinsk, capital of Abai Region, created in 2022, on the Irtysh near the Russian border, population 312,764 in November 2024; the settlement began in 1718 as a Russian fort near ruins of seven buildings that gave it the name meaning seven-chambered city; capital of the Alash Autonomy as Alash-Qala between 1917 and 1920; renamed Semey in 2007; Dostoevsky was exiled here from 1854 to 1859 and the Dostoevsky Literary Memorial Museum is the only one outside Russia; the poet and philosopher Abai Qunanbaiuly and the Abai Museum; the Semipalatinsk nuclear test site established 180 km west in 1949, where 456 tests took place between 1949 and 1989, the site closed on 29 August 1991)
     howItWorks:
       "谢梅伊是哈萨克斯坦阿拜州的首府——这个州 2022 年新设，首府定在此城；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。城市在额尔齐斯河边、靠近俄罗斯边境，2024 年 11 月人口 312,764。1718 年俄国在此建堡，堡址附近有一处七间房的遗迹，“七间房之城”即塞米巴拉金斯克一名的来历；1917 至 1920 年它以“阿拉什城”之名作过阿拉什自治政府的所在地，2007 年市名改为谢梅伊。俄国作家陀思妥耶夫斯基 1854 至 1859 年在此服流刑，本地的陀思妥耶夫斯基文学纪念馆是俄罗斯境外唯一的一座；哈萨克近代诗人与思想家阿拜·库南巴耶夫也与这座城关系密切，阿拜博物馆在城中，新设的州即以他命名。1949 年苏联在城西约 180 公里设塞米巴拉金斯克核试验场，1949 至 1989 年间在此进行了 456 次核试验，1991 年 8 月 29 日关闭，这一日期后来成为国际禁止核试验日。2001 年跨额尔齐斯河的悬索桥通车。初来的人最容易犯的错，是把这两个名字当作两座城，而它们是同一处。",
@@ -12452,16 +12463,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "城市沿额尔齐斯河两岸分布，河上的谢梅伊斜拉桥是城市地标之一；老城区保留部分19世纪末至20世纪初的历史建筑，与作家陀思妥耶夫斯基曾在此流放居住的历史有关。",
     gettingAround:
       "谢梅伊机场（PLX）距市区约7公里；市内以公交车与出租车为主要交通方式。",
+    // culture sources: ⚠️ 零争议红线，**只改这一句**：删掉「承受深重的核辐射影响」这半句评价性表述（谈的是活着的人群的健康后果），保留「有严肃的纪念与教育设施、参观请保持尊重」这条对读者有用的实用信息。
+    //   **核实方建议把核试验场整块删掉，没有照办** —— 它给的依据是「任务指令本身」，而那是我在 prompt 里写的黑名单。按仓库判据逐句量：howItWorks 那句是日期与次数、无评价词（8 月 29 日成为联合国国际禁核试日是公开事实），seeAndDo 的纪念馆是真实公开运营的场馆——两处都与越南保留挂牌景点的判例同型，**保留**。**英文侧本来就更克制**（写的是 carries the serious historical legacy…，完全没提辐射影响），只有中文那半句带评价——又一处中文比英文过火的中英不同步。2026-09-10 判定。
     culture:
-      "官方语言哈萨克语，俄语广泛使用。谢梅伊历史上因苏联核试验场而承受深重的核辐射影响，当地对这段历史有严肃的纪念与教育设施，参观相关纪念馆请保持尊重。餐厅账单外通常再给5%至10%小费。",
+      "官方语言哈萨克语，俄语广泛使用。当地对苏联时期核试验这段历史有严肃的纪念与教育设施，参观相关纪念馆请保持尊重。餐厅账单外通常再给5%至10%小费。",
     seeAndDo:
       "谢梅伊斜拉桥（额尔齐斯河地标桥梁）；阿巴伊纪念馆（哈萨克民族诗人阿拜相关文献与文物）；陀思妥耶夫斯基文学纪念馆；核试验受害者纪念馆（了解苏联核试验历史）。",
     whenAndTips:
       "谢梅伊属典型大陆性气候，夏季炎热、冬季严寒，5月至9月是较适宜的旅行季节；核试验相关纪念馆内容较为沉重，建议提前做好心理准备。",
   },
   pavlodar: {
+    // identity sources: 人口：2023 年估计 367,254（与本条目 howItWorks 一致），未发现更新一期。
+    //   ⚠️ **待补**：巴甫洛达尔机场（PWQ）**2025-04-01 起因改造关闭**，截至 2026-09 已有航线恢复（FlyArystan 飞阿拉木图）。正文的「距市区约 13 公里」本身没错，但完全没提这段停运与复航——下一轮确认班次恢复情况后补一句带时点的表述。
     identity:
-      "巴甫洛达尔是哈萨克斯坦东部沿额尔齐斯河而建的城市，人口逾35万，是巴甫洛达尔州首府，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化城市。",
+      "巴甫洛达尔是哈萨克斯坦东部沿额尔齐斯河而建的城市，2023年估计人口约36.7万（哈萨克斯坦国家统计局），是巴甫洛达尔州首府，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pavlodar (Kazakhstan; capital of Pavlodar Region in the north-east, about 450 km north-east of Astana on the Irtysh, estimated population 367,254 in 2023; founded in 1720 as the Koryakovsky outpost of Imperial Russia and renamed Pavlodar in 1861, the name meaning the gift of Paul, for the birth of Grand Duke Paul Alexandrovich; the economy centres on aluminium, industrial chemicals and farm machinery, with an oil refinery completed in 1978 and the pharmaceutical company Romat; about 46.5 per cent Kazakh and 41.6 per cent Russian with Ukrainian, German and Tatar communities; an 89 km tram network in service since 1965; a river port on the Irtysh; Pavlodar Airport)
     howItWorks:
       "巴甫洛达尔是哈萨克斯坦巴甫洛达尔州的首府，在阿斯塔纳东北约 450 公里、额尔齐斯河边，2023 年估计人口 367,254；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它 1720 年作为俄国的科里亚科夫哨所设立，1861 年改名巴甫洛达尔，字面意思是“保罗的礼物”，取自当年出生的俄国大公保罗·亚历山德罗维奇。20 世纪它被建成重工业城市：铝厂、化工厂与农机制造是支柱，1978 年建成炼油厂；东面埃基巴斯图兹的露天煤矿与坑口电站为这片工业区供电，是哈萨克斯坦最重要的能源基地之一。额尔齐斯河上的河港把货运往下游送出，这条河最终流入俄罗斯与北冰洋。居民中哈萨克族约 46.5%、俄罗斯族约 41.6%，另有乌克兰、德意志与鞑靼等社群，俄语在日常中使用广泛。1965 年通车的有轨电车网长约 89 公里，至今在运营。初来的人最容易犯的错，是以为哈萨克斯坦到处是草原牧区，而这里是一片工厂与电厂。",
@@ -12477,8 +12492,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "巴甫洛达尔属典型大陆性气候，夏季炎热、冬季严寒漫长，5月至9月是较适宜的旅行季节。",
   },
   kokshetau: {
+    // identity sources: 人口：2024 年估计 176,849（与本条目 howItWorks 一致）。**原 identity 的「约 15 万」低了近 3 万、量级都不对**——不是缺年份，是数字本身错，且与同条目另一段打架（C6i）。
     identity:
-      "科克舍套是哈萨克斯坦北部阿克莫拉州首府，人口约15万，坐落于科克舍套丘陵地带，是前往布拉拜国家公园（“哈萨克斯坦的瑞士”）的主要门户城市。",
+      "科克舍套是哈萨克斯坦北部阿克莫拉州首府，2024年估计人口约17.7万（哈萨克斯坦国家统计局），坐落于科克舍套丘陵地带，是前往布拉拜国家公园（“哈萨克斯坦的瑞士”）的主要门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kokshetau (Kazakhstan; capital of Akmola Region about 300 km north-west of Astana, stretching along the southern shore of Lake Kopa in the Kokshetau Hills at 234 m; estimated population 176,849 in 2024, the 17th-largest city in the country; founded in 1824 as a Russian administrative outpost and given city status in 1895, the administrative centre of Kokshetau Oblast from 1944 until its dissolution in 1997, then capital of Akmola Region from 1999; about 62 per cent Kazakh, up from 36 per cent in 1999, and about 23 per cent Russian; Burabay National Park about 70 km away; the Akmola Regional Museum; named Kazakhstan's City of Culture for 2021)
     howItWorks:
       "科克舍套是哈萨克斯坦阿克莫拉州的首府，在阿斯塔纳西北约 300 公里，沿科帕湖南岸铺开，海拔 234 米，2024 年估计人口 176,849，是全国第 17 大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这里有一个容易混淆的关系：阿克莫拉州的首府不在同名的阿克莫拉——那个名字后来成了首都阿斯塔纳的旧称，州府设在这座城。它 1824 年作为俄国的行政据点建立，1895 年获城市地位，1944 年起为科克舍套州首府，1997 年该州撤销，1999 年它成为阿克莫拉州首府。城市的族群构成变化很快：哈萨克族的比例从 1999 年的约 36% 升到 2024 年的约 62%，俄罗斯族约占 23%。真正让这一带出名的是东南约 70 公里的布拉拜国家公园：松林、花岗岩丘与湖泊连成一片，在一望无际的草原上显得突兀，本地称之为“哈萨克的瑞士”。初来的人最容易犯的错，是把它与阿斯塔纳的旧称阿克莫拉混为一谈。",

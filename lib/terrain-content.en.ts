@@ -8488,6 +8488,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   rhodes: {
+    // 全六段 sources: 阿塔维罗斯峰 1215 m 为岛上最高峰；罗德岛约 1400 km²、多德卡尼斯群岛面积最大者。
+    //   ✅ **排名口径专项复核**：正文只限定在「多德卡尼斯群岛中最大」，**没有做「希腊第几大岛」的绝对排名**——
+    //   与本库 `crete`（希腊第一大岛）并排读自洽（罗德岛按全希腊算排第四，在克里特、埃维亚、莱斯沃斯之后）。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Rhodes is the largest island of the Dodecanese, predominantly limestone terrain, with its highest point, Mount Attavyros, reaching 1,215 m.",
     formation:
@@ -8503,6 +8506,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-trichonida": {
+    // 全六段 sources: 希腊面积最大的天然湖，各来源给 96—98.6 km²，正文「约 96」落在通行区间内。
+    //   ✅ 与 `lake-prespa` 并排读自洽（普雷斯帕大部分在境外、希腊境内部分更小）。
+    //   ⚠️ 未找到带监测年份的官方（希腊环境部／EKBY）数字，级别停在 3 级；下一轮补年份口径。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Trichonida lies in the Aetolia-Acarnania region of western mainland Greece and is Greece's largest natural lake by surface area, covering about 96 km².",
     formation:
@@ -8518,6 +8524,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-prespa": {
+    // seeing / formation sources: 海拔 853 m，巴尔干最高的构造湖；经地下喀斯特通道与俄赫里德湖连通。
+    //   跨境表述保持中性、不描述边界线、不表述主权。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Prespa comprises Great Prespa and Small Prespa, spanning Greece, Albania and North Macedonia at an elevation of about 853 m.",
     formation:
@@ -8528,13 +8536,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Lake Prespa and Lake Trichonida are important Greek lakes, but Prespa sits at higher elevation and spans three national borders, while Trichonida lies entirely within Greece at lower elevation.",
     concept:
       "Lake Prespa is an important high-altitude karst lake ecosystem in the Balkans and a key habitat for the Dalmatian pelican and other rare waterbirds.",
+    // history sources: ⚠️ 零争议红线：删去解释北马其顿国名与《普雷斯帕协议》的括注（该协议正是在这座湖签的）。2000 年三国共设跨境普雷斯帕公园作为事实保留。跨境表述保持中性、不描述边界线。2026-09-10 核。
     history:
-      "Greece, Albania and North Macedonia jointly established the transboundary Prespa Park in 2000 for cooperative lake conservation (\"North Macedonia\" is the country's current official name following the 2019 Prespa Agreement).",
+      "Greece, Albania and North Macedonia jointly established the transboundary Prespa Park in 2000 for cooperative lake conservation.",
   },
 
   "acheloos-river": {
+    // 其余 sources: 上游穿品都斯石灰岩峡谷、河口三角洲与潟湖湿地；与皮尼奥斯河的流向对比（西入伊奥尼亚海 vs 东入爱琴海）核实无误。
+    //   ⚠️ 阿刻罗俄斯调水工程（Acheloos diversion）**正文没有提及**，故无需处理现状与时点；下一轮若要补，只写工程与法律事实、不做评价。2026-09-10 核。
+    // seeing sources: ⚠️ 「希腊本土最长的河流」错：阿利阿克蒙河 297 km、完全在希腊境内，才是最长；阿刻罗俄斯约 220 km、**水量最大**、长度第二。原文把真实的头衔（水量最大）换成了错的（最长）。3 级多方一致。2026-09-10 核。
     seeing:
-      "The Acheloos is mainland Greece's longest river, about 220 km, rising in the southern Pindus range and flowing out into the Ionian Sea.",
+      "The Acheloos carries more water than any other river in Greece and runs about 220 km, second in length among Greek rivers only to the Aliakmon, rising in the southern Pindus range and flowing out into the Ionian Sea.",
     formation:
       "The upper river runs through limestone gorges in the Pindus, its middle and lower reaches passing reservoirs and lowlands, with a delta and lagoon wetlands developing at its mouth — an important river system of western Greece.",
     observation:
@@ -8548,6 +8560,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   meteora: {
+    // 全六段 sources: ✅ **成因专项复核**：岩柱是约 6000 万年前河流／湖泊三角洲沉积的**砂砾岩**经抬升与差异侵蚀形成，
+    //   **不是喀斯特、也不是火山成因** —— 正文写对了，`distinguish` 段与喀斯特的区分也准确。
+    //   修道院鼎盛期约 24 座（正文「20 余座」合理）、现存 6 座在用；1988 年作为混合遗产列入 UNESCO。
+    //   ✅ 零争议红线：只写建筑与遗产，未涉宗教教义评价或现代政教关系。2026-09-10 核，verdict: ok。
     seeing:
       "Meteora is a cluster of steep, isolated sandstone and conglomerate pinnacles on the north-western edge of the Thessalian Plain, atop which Orthodox monks began building monasteries from the 14th century.",
     formation:
@@ -8954,10 +8970,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Belgium ============
   "hautes-fagnes": {
+    // seeing sources: 地名：**Signal de Botrange** —— Botrange 是地名，与「植物园」无关，原中文「植物园峰」是望文生义的误译。694 m、比利时最高点属实。**英文侧一直写的是 Signal de Botrange**，只有中文错。2026-09-10 核。
     seeing:
       "The Hautes Fagnes (High Fens) is a peat-bog plateau in the eastern Ardennes; its highest point, the Signal de Botrange, reaches 694 m — the highest point in all of Belgium.",
+    // formation sources: ⚠️ 成因**漏掉了定义性的一步**：泥炭增厚后根系脱离地下水与径流、转为完全靠降水补给（ombrotrophe），才是高位沼泽区别于一般泥炭地的判据（列日大学高地沼泽科考站，2 级）。
+    //   **这与爱尔兰 `central-lowlands-bog-of-allen` 是同一个漏法、同一个判据，第二次了** —— 同类地貌在不同国家各漏一次，说明写的时候没有一份共用的判据清单。2026-09-10 核。
     formation:
-      "The plateau surface is covered in a thick layer of peat; the cold climate since the last ice age has left it with distinctive periglacial landforms, including polygonal ground and freeze-thaw structures.",
+      "The plateau surface is covered in a thick layer of peat that built up on poorly drained quartzite; as the peat thickened, plant roots lost contact with groundwater and runoff until rainfall alone fed the bog — the defining step that makes it an ombrotrophic raised bog. The cold climate since the last ice age has also left distinctive periglacial landforms, including polygonal ground and freeze-thaw structures.",
     observation:
       "From the air, the Hautes Fagnes shows a broad, gently rolling plateau outline, its surface covered in dark-brown peat bog and sparse scrub vegetation, in sharp contrast with the densely forested Ardennes around it.",
     distinguish:
@@ -8969,6 +8988,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   condroz: {
+    // 全六段 sources: 砂岩山脊（tiges）与石灰岩谷地（chavées）相间——山脊为晚泥盆纪砂岩、谷地为迪南期石灰岩；
+    //   阿登孔德罗兹段平均海拔约 260 m，北邻黑斯拜、东邻阿登。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Condroz is a gently undulating plateau in Wallonia, lying between the Ardennes and the Sambre-Meuse valley, generally 200–300 m in elevation.",
     formation:
@@ -8984,6 +9005,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ardennes-forest": {
+    // history sources: ✅ **判定不改，记在这里免得下一轮反复。** 核实方报「阿登战役（突出部之役）」踩红线，
+    //   但它给的依据是「任务指令本身」——那是我在派工 prompt 里写的黑名单，不是查出来的。
+    //   按仓库自己的判据：CLAUDE.md 对意大利明文允许「一战山地战（简短事实）」，越南那两处也判过保留，
+    //   判据是「是否涉及一个仍在持续的对立状态、有没有评价性表述」。阿登这一句两条都不沾，**保留**。
+    //   （对照上一轮删掉的琉球那句：那是关于战役的**最高级排名**、且与至今仍在进行的讨论缠绕，才删。）2026-09-10 核。
+    // 其余 sources: 平均海拔 350—400 m；基岩为经加里东与海西造山变形的古生代变质岩（3 级）。verdict: ok。
     seeing:
       "The Ardennes is the extensive forested upland spanning south-eastern Belgium and the borders of Luxembourg, France and Germany; within Belgium it averages 350–400 m elevation, its highest point being the Hautes Fagnes peat plateau.",
     formation:
@@ -8999,6 +9026,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pays-de-herve": {
+    // 全六段 sources: 位于韦斯德河与默兹河之间、近比荷德三国交界的低缓丘陵；树篱果园牧场与埃尔沃奶酪属实。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Pays de Herve, lying between the Vesdre and Meuse rivers, is a low, gentle hill country known for its hedgerow-lined orchards and pastures.",
     formation:
@@ -9029,6 +9057,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   campine: {
+    // formation / history sources: 历史上大片荒原／湿地景观（至 1960 年代前）；战后坎皮讷煤田开采带动工业；多处军事基地与空军基地。
+    //   ⚠️ distinguish 的「是默兹—莱茵三角洲的一部分」**记 unknown**：这是常见的第四纪地质学表述，但找不到 1/2 级来源直接印证。
+    //   下一轮核佛兰德／比利时地质调查局的第四纪地层分类。3 级。2026-09-10 核。
     seeing:
       "The Campine (Kempen) is a low, flat sandy upland straddling north-eastern Belgium and southern Netherlands, part of the Meuse-Rhine delta.",
     formation:
@@ -9044,6 +9075,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "flanders-coastal-plain": {
+    // formation sources: 围垦历史、粘质海相沉积、圩田景观与常见地理文献一致。
+    //   ⚠️ 「向内陆延伸约 8 至 16 公里」**记 unknown**：查不到 1/2 级来源核实这个具体区间（VLIZ 的 PDF 体积过大未能读取）。
+    //   下一轮核 Agentschap voor Natuur en Bos 或 VLIZ；核不到就改成不带具体公里数的表述。2026-09-10 核。
     seeing:
       "The Plain of Flanders is an extremely flat coastal plain in north-western Belgium, extending inland for roughly 8–16 km.",
     formation:
@@ -9059,6 +9093,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "fagne-famenne": {
+    // 全六段 sources: 南缘为卡雷斯蒂耶讷（Calestienne）石灰岩条带，北邻孔德罗兹、西邻阿登边缘；主体为较软的泥盆纪页岩经差异侵蚀而成。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Fagne-Famenne is a long, narrow depression squeezed between the Condroz plateau and the Ardennes.",
     formation:
@@ -9074,6 +9109,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meuse-valley-be": {
+    // 其余 sources: 迪南、那慕尔、于伊、列日沿河而建，两岸石灰岩崖壁——与已核的孔德罗兹／阿登石灰岩边缘位置关系一致。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Meuse Valley is the stretch of the Meuse River flowing through Belgium, cutting through the limestone at the edge of the Condroz and Ardennes plateaus, with steep cliffs on both banks.",
     formation:
@@ -9082,8 +9118,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Meuse Valley shows a winding river hemmed in by steep cliffs on both sides — a gorge-like valley landform; historic towns including Dinant, Namur, Huy and Liège are built along the river, their urban outlines closely following the channel.",
     distinguish:
       "Both the Meuse Valley and the Lesse Valley are limestone valleys in Belgium, but the Meuse Valley is much larger, running through multiple plateau regions, while the Lesse Valley is a smaller karst valley cut by a Meuse tributary.",
+    // concept sources: 流域占比：比利时约 40%—41%（份额最大的一国），法国约 26%—28%、荷兰约 19%—23%、德国约 6%—12%。原文「绝大部分」/ the great majority 夸大。3 级。2026-09-10 核。
     concept:
-      "The great majority of the Meuse's drainage basin lies within Belgium; the Meuse Valley is a textbook case study of a river cutting through multiple rock types to form a composite landform.",
+      "Belgium holds the largest single share of the Meuse's drainage basin — roughly 40 per cent; the Meuse Valley is a textbook case study of a river cutting through multiple rock types to form a composite landform.",
     history:
       "Towns along the Meuse Valley such as Dinant and Namur have been important trading and defensive strongholds since medieval times, and the valley still preserves numerous castles and fortress ruins along its banks.",
   },
@@ -9164,6 +9201,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "han-sur-lesse-caves": {
+    // 全六段 sources: 主厅「穹顶大厅」宽约 150 m、拱顶高约 127 m；约 50 万年前莱斯河改道形成；洞内常温约 13 ℃；
+    //   至少自公元前 5 世纪起被人类利用；现代系统探索始于 1771 年——**逐项与来源逐字一致**。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Caves of Han-sur-Lesse formed roughly 500,000 years ago when the Lesse diverted its course into the limestone of Mont Boine; the main chamber, the \"Salle du Dôme,\" is about 150 m across with a vault reaching 127 m high.",
     formation:
@@ -9259,6 +9298,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "belgian-coast-dunes": {
+    // seeing sources: 海岸线约 65 km（比利时官方海岸门户 kustportaal.be，2 级；荷语维基给 67 km，系不同测量口径）。
+    //   ⚠️ concept 的「现存面积已不足历史峰值的三分之二」**存疑**：VLIZ 相关出版物的表述是沙丘因道路与地产开发「被拦腰砍半」，
+    //   比「不足三分之二」更严重；且正文没给监测时点（C6-j）。下一轮找 VLIZ 或佛兰德海岸管理局的官方数据补年份，
+    //   核不到就改成「已大幅破碎化、多处不再连续」这类不带分数的表述。
+    //   ⚠️ history 的「一战末期这一带曾是重要的军事前线」**存疑**：德帕纳实为比利时境内唯一未被占领的区域、国王与政府战时驻地，
+    //   更接近后方据点而非前线本身（伊瑟河前线在其东南）。未违红线，下一轮可精确化。2026-09-10 核。
     seeing:
       "The Belgian coast dunes run along about 65 km of North Sea coastline, part of the wider European North Sea dune system stretching from Dunkirk in France to Denmark.",
     formation:
@@ -9289,6 +9334,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sonian-forest": {
+    // seeing / history sources: 面积约 4421 公顷；2017 年作为跨国系列遗产「喀尔巴阡山脉及欧洲其他地区的古老与原始山毛榉林」扩展项列入 UNESCO。
+    //   ⚠️ concept 的「近 600 种甲虫」**记 unknown**：哺乳动物「约 40 种」有 3 级佐证（原 46 种、7 种已消失），
+    //   但甲虫物种数找不到 1/2 级来源（Leefmilieu Brussel／Natuurpunt）。下一轮核不到就改成不带具体数字的表述。
+    //   ✅ 红线：索尼安森林横跨三个大区，正文未写语言边界或社群政治；「滑铁卢」若出现只作地名。2026-09-10 核。
     seeing:
       "The Sonian Forest is an ancient beech forest of about 4,421 hectares on the south-eastern edge of Brussels, one of the largest and oldest beech forests remaining in Europe.",
     formation:
@@ -9304,6 +9353,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "stavelot-massif": {
+    // formation sources: 岩性为晚寒武纪至奥陶纪石英岩 + 千枚岩，经加里东与海西两期造山变形——这部分已确认。
+    //   ⚠️ 「约 2500 米厚」与「比利时境内出露年代最古老的岩石」**两项都记 unknown**：
+    //   在可及的 1/2/3 级来源（KBIN-IRSNB、比利时地质公报）里都查不到这个厚度数字与这条排他性断言的出处。
+    //   下一轮找比利时地质调查局官方出版物；核不到就把厚度与「最古老」都去掉，只留已确认的岩性与造山史。2026-09-10 核。
     seeing:
       "The Stavelot Massif is an outcrop of early Paleozoic bedrock in the eastern Ardennes — the oldest exposed rock in Belgium.",
     formation:
@@ -9319,6 +9372,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hesbaye: {
+    // 全六段 sources: 黄土（limon）覆盖石灰岩基底；新石器时代（距今约七千年）已开垦；
+    //   「比利时粮仓」（grenier à blé de la Belgique）别称有文献支持。3 级。
+    //   ✅ **专项复核「三条会不会被写成同一套成因」**：孔德罗兹（砂岩背斜 + 石灰岩向斜相间）、法涅-法门（页岩低地）、
+    //   黑斯拜（黄土台地）在本库里**写的是三套不同的成因**，没有混用。2026-09-10 核，verdict: ok。
     seeing:
       "The Hesbaye is an open loess plateau between the Meuse and Scheldt drainage basins, an agricultural region under cultivation since before Roman times.",
     formation:
@@ -9334,6 +9391,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gaume: {
+    // 全六段 sources: 「比利时的普罗旺斯」（la Provence belge）为比利时主流媒体通用说法；气候比阿登更温暖干燥、南邻法国洛林。2 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Gaume is a hilly area at Belgium's southernmost tip, lower in elevation than the Ardennes, bordering the Lorraine region of France.",
     formation:
@@ -9714,12 +9772,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Austria ============
   "hohe-tauern": {
+    // concept sources: 国家公园面积 1856 km²（萨尔茨堡 805 + 克恩顿 440 + 蒂罗尔 611，官网 1 级），阿尔卑斯山区最大保护区。
+    //   📌 正文**没有**提三州分三阶段（1981／1983—84／1991—92）设立的过程，因此不存在「把三步压成一步」的问题。2026-09-10 核。
     seeing:
       "The Hohe Tauern range crosses south-central Austria, a high-mountain belt of gneiss and schist at the heart of the Alps; its highest peak, Grossglockner, reaches 3,798 m — the highest point in all of Austria. Glaciers and lakes are densely packed across the range, which holds the largest protected area in the Alps.",
+    // formation sources: ⚠️ 帕斯特泽冰川：长约 8.3—8.4 km（非 9 km）；**「奥地利最大冰川」这个排名本身正在过期** —— GeoSphere Austria（1 级）2025-03 指出它自 2022 年起年减薄超 2 米、冰舌年减薄 5—10 米，可能不久被加珀奇冰川取代。属 C8 里「过期的是排名、不是数字」的一种。2026-09-10 核。
     formation:
-      "The Hohe Tauern was raised by Alpine orogeny and is built mainly of Paleozoic gneiss and schist; sustained uplift combined with glacial erosion carved sharp horn peaks and U-shaped valleys — the Pasterze Glacier on the eastern slope, about 9 km long, is Austria's largest glacier.",
+      "The Hohe Tauern was raised by Alpine orogeny and is built mainly of Paleozoic gneiss and schist; sustained uplift combined with glacial erosion carved sharp horn peaks and U-shaped valleys — the Pasterze Glacier on the eastern slope, about 8.4 km long, is for now Austria's largest — though GeoSphere Austria's 2025 monitoring shows it retreating fast enough that it may soon cede that place to the Gepatschferner in Tyrol.",
+    // observation sources: 冰川数：国家公园官网 **332 条**（总面积 126 km²，1 级）。同句的 300 余座 3000 m 峰、551 个高山湖泊经同源核实无误。国家公园面积 1856 km²（萨尔茨堡 805 + 克恩顿 440 + 蒂罗尔 611）亦无误。2026-09-10 核。
     observation:
-      "From the air, identify the Hohe Tauern by its rolling, snow-crowned skyline — over 300 peaks above 3,000 m and 342 glaciers scattered through the range, with Grossglockner's sharp conical summit especially prominent, and 551 alpine lakes catching the light in varying shades of blue.",
+      "From the air, identify the Hohe Tauern by its rolling, snow-crowned skyline — over 300 peaks above 3,000 m and 332 glaciers scattered through the range, with Grossglockner's sharp conical summit especially prominent, and 551 alpine lakes catching the light in varying shades of blue.",
     distinguish:
       "Both the Hohe Tauern and the Ötztal Alps are crystalline-rock high-mountain belts, but the Hohe Tauern has more and larger glaciers and holds Austria's highest peak, while the Ötztal Alps are Austria's second-highest range.",
     concept:
@@ -9751,6 +9813,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "zillertal-alps": {
+    // 全六段 sources: 霍赫法伊勒峰 3509—3510 m，位于奥意交界。与 `hohe-tauern`（大格洛克纳 3798 m）、
+    //   厄茨塔尔（魏斯峰 3768 m）并排读自洽——正文「最高峰略低于厄茨塔尔阿尔卑斯山」方向正确。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Zillertal Alps straddle the border between Tyrol and South Tyrol (Italy); the highest peak, Hochfeiler, reaches 3,510 m, and the range is one of Austria's important glacier ski areas.",
     formation:
@@ -9766,6 +9830,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   karwendel: {
+    // 全六段 sources: 比尔克峰 2749 m 为卡尔文德尔最高峰；卡尔文德尔为北石灰岩阿尔卑斯山中面积最大的单一山系
+    //   （长逾 45 km、宽约 30 km），南麓紧邻因斯布鲁克。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Karwendel is the largest single range of the Northern Limestone Alps, lying between the Inn Valley and the Isar Valley; its highest peak, Birkkarspitze, reaches 2,749 m, and its southern flank rises directly above the city of Innsbruck.",
     formation:
@@ -9781,10 +9847,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dachstein: {
+    // seeing / observation / history sources: 上达赫斯坦峰 2995 m，地跨上奥地利、施泰尔马克、萨尔茨堡三州（「三州山」）；
+    //   达赫斯坦石灰岩为上三叠统（约 2.35—2.01 亿年前），正文「约 2 亿年前」落在区间内；
+    //   哈尔施塔特—达赫斯坦／萨尔茨卡默古特文化景观 1997 年列入 UNESCO。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Dachstein straddles the border between Upper Austria and Styria; its highest peak, Hoher Dachstein, reaches 2,995 m, and because the massif also touches Salzburg it is sometimes called the \"three-state mountain.\"",
+    // formation sources: 洞穴数：**这是随勘探不断刷新的累计计数**。2023 年 Austrian Journal of Earth Sciences 的系统调查记录 789 个、总长约 290 km（2 级）；另有「约 320」「逾 1000」等不同界定。正文写「近 800 个 + 哪一次调查」，不锁死单值。原文的 240 已严重滞后。
+    //   ⚠️ 同段「哈尔施塔特冰川是阿尔卑斯最东、最北端的冰川**之一**」**记 unknown**：核实方多次检索报错，未能证实也未能证伪；正文已带「之一」、不是裸断言，本轮不动。2026-09-10 核。
     formation:
-      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with over 240 caves identified — the Hallstatt Glacier is among the easternmost and northernmost glaciers in the Alps.",
+      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with nearly 800 caves recorded in a 2023 survey — the Hallstatt Glacier is among the easternmost and northernmost glaciers in the Alps.",
     observation:
       "From the air, the Dachstein shows classic karst high-mountain form — grey-white limestone dotted with dissolution hollows and cave entrances, the white ice of the summit's Hallstatt Glacier standing out sharply against the grey rock around it.",
     distinguish:
@@ -9796,6 +9867,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rax-schneeberg": {
+    // 全六段 sources: 施内山 2076 m，是阿尔卑斯向东延伸中最后一座超过 2000 米的山峰。
+    //   第一维也纳高山泉水管道由 Eduard Suess 规划、**1873-10-24 由弗朗茨·约瑟夫一世启用、全长 120 公里**，
+    //   水源即取自施内山一带（Kaiserbrunn 等泉眼）——维也纳市政府官网（1 级）逐项确认。2026-09-10 核，verdict: ok。
     seeing:
       "The Rax-Schneeberg Group is Lower Austria's highest mountain area; the Schneeberg reaches 2,076 m and is the easternmost peak in the Alps to exceed 2,000 m, only about an hour's drive from Vienna.",
     formation:
@@ -9811,6 +9885,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "carnic-alps": {
+    // 全六段 sources: 霍厄瓦特峰（Monte Coglians）2780 m，位于奥意交界。
+    //   ✅ **零争议红线复核**：普勒肯山口与一战前线只作简短事实陈述、无评价、不描述边界线与主权 ——
+    //   与 CLAUDE.md 对意大利「一战山地战（简短事实）」的处理一致，通过。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Carnic Alps are part of the Southern Limestone Alps, their main ridge running roughly 100 km along the Austria-Italy border; the highest point, Hohe Warte, reaches 2,780 m.",
     formation:
@@ -9826,6 +9903,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "kitzbuhel-alps": {
+    // seeing sources: 基茨比厄尔霍恩峰 1996 m 为该山系最高峰。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Kitzbühel Alps are a stretch of slate-and-phyllite terrain in the Eastern Alps, lying between the Ziller and Saalach rivers; the highest peak, Kitzbüheler Horn, reaches 1,996 m.",
     formation:
@@ -9841,6 +9919,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "silvretta-alps-at": {
+    // formation sources: 皮兹利纳德峰 3410—3411 m（不同测绘口径略有差异），在瑞士格劳宾登州境内，为希尔弗雷塔山最高峰。
+    //   跨境表述保持中性、不描述边界线、不表述主权。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Silvretta Alps are a stretch of the Central Eastern Alps spanning Tyrol and Vorarlberg in Austria and Graubünden in Switzerland; the terrain on the Austrian side is comparatively gentle.",
     formation:
@@ -9851,11 +9931,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Silvretta Alps and the Carnic Alps are cross-border ranges for Austria, but the Silvretta Alps border Switzerland and are known for high-mountain hydropower development and glacier monitoring, while the Carnic Alps border Italy and are known for Paleozoic strata.",
     concept:
       "The Bielerhöhe pass area of the Silvretta Alps is a representative site for high-mountain hydropower development and long-term glacier monitoring in the Alps.",
+    // history sources: 水库年代：1938 年动工、1943 年首次部分蓄水、1951 年首次完全蓄水。原文「20 世纪初」前移了三四十年。3 级。2026-09-10 核。
     history:
-      "The Silvretta reservoir has been used for hydroelectric power generation since the early 20th century, a representative case in the history of high-mountain hydropower development in the Austrian Alps.",
+      "The Silvretta reservoir, begun in 1938 and first filled completely in 1951, has been generating hydroelectric power ever since, a representative case in the history of high-mountain hydropower development in the Austrian Alps.",
   },
 
   "totes-gebirge": {
+    // 全六段 sources: 大普里尔峰 2515 m；「中欧面积最大的喀斯特高原」与德语维基口径一致。
+    //   ✅ 与 `steinernes-meer`、`tennengebirge` 并排读：三条都是北部石灰岩阿尔卑斯的喀斯特高原、**写的是同一套成因**（三叠纪石灰岩 + 抬升 + 冰蚀 + 溶蚀），没有被写成三套。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Totes Gebirge, part of the Northern Limestone Alps, is Central Europe's largest karst plateau; its highest point, Großer Priel, reaches 2,515 m.",
     formation:
@@ -9871,6 +9954,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "steinernes-meer": {
+    // 全六段 sources: 泽尔布峰 2655 m；地跨萨尔茨堡州与巴伐利亚；主体为约 2.3 亿年前的达赫斯坦石灰岩叠于拉姆绍白云岩之上。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Steinernes Meer, part of the Berchtesgaden Alps, straddles Austria's Salzburg state and Germany's Bavaria; its highest point, Selbhorn, reaches 2,655 m.",
     formation:
@@ -9886,6 +9970,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   tennengebirge: {
+    // seeing / formation / history sources: 冰巨人世界洞穴系统总长逾 42 km、世界最大冰洞；
+    //   1879 年 Anton Posselt 首次系统考察、当时只探到最初约 200 米（Posselt-Kreuz）；洞口在霍赫科格尔峰下。3 级中英互证。
+    //   ⚠️ 「洞口宽约 20 米、高约 18 米」**记 unknown**：德英维基与洞穴官网都只给入口海拔 1640 m，未给宽高，查不到支持或反驳。2026-09-10 核。
     seeing:
       "The Tennengebirge is a karst plateau of the Northern Limestone Alps near Werfen, about 40 km south of Salzburg; inside the massif, Eisriesenwelt is the largest known ice cave in the world.",
     formation:
@@ -9901,6 +9988,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   wienerwald: {
+    // 全六段 sources: 舍普尔峰 893 m；2005 年列为 UNESCO 生物圈保护区。官方常引面积 1056.45 km²，正文「约 1000 平方公里」已带「约」字、量级一致，不改。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Wienerwald (Vienna Woods) is the final stretch of hills where the Alps taper off toward Vienna's outskirts, covering about 1,000 km²; its highest point, Schöpfl, reaches 893 m.",
     formation:
@@ -9916,8 +10004,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   waldviertel: {
+    // seeing sources: 最高峰：**蒂施贝格峰 1063 m**（下奥地利／上奥地利／波希米亚三邦交界的 Freiwald 一带）；内贝尔峰 1017 m 是第二高、只是更有名。3 级多方一致。2026-09-10 核。
     seeing:
-      "The Waldviertel is a low, gently rolling plateau in north-western Lower Austria, an extension of the Bohemian Massif within Austria; its highest point, Nebelstein, reaches 1,017 m.",
+      "The Waldviertel is a low, gently rolling plateau in north-western Lower Austria, an extension of the Bohemian Massif within Austria; its highest point is the Tischberg at 1,063 m, while the better-known Nebelstein, 1,017 m, is only the second-highest.",
     formation:
       "The plateau's bedrock is mainly ancient granite and gneiss, part of the Bohemian Massif formed in Precambrian to Paleozoic times on the European continent; long-term weathering and erosion have shaped today's low, gently rolling surface.",
     observation:
@@ -9931,6 +10020,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vienna-basin": {
+    // 全六段 sources: ✅ **构造类型专项复核**：正文写的正是**走滑拉分盆地（Pull-Apart-Becken）**，没有写成普通断陷或冲积盆地。
+    //   沉降自约 1700 万年前（中新世 Karpatium 末）开始，构造活动延续至今，每年约 3—4 次有感地震，集中在维也纳新城与温泉线断裂带。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Vienna Basin sits at the junction of the Alps, the Carpathians and the Pannonian Plain — a geologically young tectonic subsidence basin that topographically separates the Alps from the Western Carpathians.",
     formation:
@@ -9946,6 +10037,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   wachau: {
+    // 全六段 sources: 梅尔克—克雷姆斯之间约 35—36 km 的多瑙河谷；2000 年作为文化景观列入 UNESCO
+    //   （连同梅尔克／格特魏格修道院与克雷姆斯古城）。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Wachau is a roughly 36 km stretch of valley cut by the Danube between Melk and Krems, its banks lined with terraced vineyards, medieval monasteries and castles.",
     formation:
@@ -9961,8 +10054,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   inntal: {
+    // seeing sources: 山系归属：因斯布鲁克北侧卡尔文德尔北链、**南侧为施图拜／图克斯阿尔卑斯山（帕彻科费尔）**；基茨比厄尔阿尔卑斯山在更东段（沃格尔—基茨比厄尔—库夫施泰因）。原文把它挂错了河段。3 级。2026-09-10 核。
     seeing:
-      "The Inn Valley (Inntal) is a broad, west-to-east glacial valley cut through the Eastern Alps by the Inn River, flanked by the Karwendel to the north and the Kitzbühel Alps to the south; Innsbruck sits in the valley's middle stretch.",
+      "The Inn Valley (Inntal) is a broad, west-to-east glacial valley cut through the Eastern Alps by the Inn River, flanked by the Karwendel to the north; around Innsbruck the southern wall is the Stubai and Tuxer Alps (the Patscherkofel side), while the Kitzbühel Alps line a stretch of the valley farther east. Innsbruck sits in the valley's middle stretch.",
     formation:
       "The valley was carved by repeated glaciation during the ice ages; its slopes preserve moraine terraces from the Würm glaciation, while the lower plain was built up by long-term alluvial deposition from the Inn River, with the valley floor generally between 500 and 1,000 m elevation.",
     observation:
@@ -9976,6 +10070,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   liechtensteinklamm: {
+    // seeing / formation / history sources: 圣约翰-蓬高附近；全长约 4 km（游览段约 1 km）、崖壁最高处约 300 m；
+    //   1875 年动工（本地蓬高登山会先启动、经费不足后由列支敦士登亲王约翰二世捐 600 古尔登续建）、1876 年完工。3 级中英互证。
+    //   ⚠️ 「每年约 10 万游客」**记 unknown**：英文维基与正文一致给约 10 万，**德语维基给 2025 年约 22.7 万人次**，两个 3 级来源互相矛盾，
+    //   且正文没写年份。下一轮向运营方 liechtensteinklamm.at 要逐年统计，按 C8 加时点后再定。2026-09-10 核。
     seeing:
       "Liechtensteinklamm is a limestone gorge near St. Johann im Pongau, about 50 km south of Salzburg, roughly 4 km long with cliff walls up to about 300 m high.",
     formation:
@@ -9991,10 +10089,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "krimml-waterfalls": {
+    // seeing sources: 总落差 380 m，奥地利与欧洲最高、世界第五（官方运营方 wasserfaelle-krimml.at，2 级）。
+    //   三级落差约 145/100/140 m，与正文的 140/100/140 基本一致，不动。2026-09-10 核。
     seeing:
       "The Krimml Waterfalls are a three-tiered cascade on the Krimmler Ache with a total drop of about 380 m — Austria's highest waterfall, the highest in Europe and the fifth-highest in the world.",
+    // formation sources: 下泄河谷：**萨尔察赫河谷（平茨高）**，不是因河谷——萨尔察赫要到远下游才汇入因河。总落差 380 m、奥地利与欧洲最高、世界第五（官方运营方 wasserfaelle-krimml.at，2 级）核实无误。2026-09-10 核。
     formation:
-      "The falls are fed by glacial meltwater from the Hohe Tauern; before reaching the floor of the Inn Valley system, the Krimmler Ache drops over three tiers of roughly 140 m, 100 m and 140 m, with flow varying enormously with the season's snow and ice melt.",
+      "The falls are fed by glacial meltwater from the Hohe Tauern; before reaching the floor of the Salzach valley in the Pinzgau of Salzburg, the Krimmler Ache drops over three tiers of roughly 140 m, 100 m and 140 m, with flow varying enormously with the season's snow and ice melt.",
     observation:
       "From the air, the Krimml Waterfalls appear as a vertical white curtain of water set in green mountain forest, its three-tiered, stepped form clearly visible, with the surrounding spray creating a permanently humid microclimate.",
     distinguish:
@@ -10028,8 +10129,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mur-river": {
+    // concept sources: 上游河段的河漫滩森林为奥地利面积第二大（施泰尔马克 Murauen UNESCO 生物圈公园）；
+    //   多瑙鲑（Huchen）作为受威胁物种在该河记录在案。3 级。2026-09-10 核，verdict: ok。
+    // seeing sources: 源头：**高陶恩山系安科格尔山群**（萨尔茨堡州伦告，近穆尔特尔隘口），不是拉德施塔特陶恩山。全长 453 km（德语维基）/ 464 km（英文维基）两说，正文取 453、冲突记此。
+    //   ⚠️ 「约 298 公里流经施泰尔马克州」**记 unknown**：查不到单独核实该分段的权威来源（英文维基只给奥地利境内合计约 326 km）。2026-09-10 核。
     seeing:
-      "The Mur rises in the Radstädter Tauern and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
+      "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
     formation:
       "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest.",
     observation:
@@ -10051,13 +10156,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Wörthersee forms a long, narrow oval, its shoreline lined with resorts and marinas, the water taking on a warm, light-blue tone in the sun.",
     distinguish:
       "Both Wörthersee and the Attersee are well-known glacially carved lakes in Austria, but Wörthersee lies in Carinthia with comparatively warm summer water well-suited to swimming, while the Attersee lies in the Salzkammergut and is considerably deeper.",
+    // concept sources: ⚠️ 夏季水温高的机制是**湖盆背风 + 水体交换缓慢 + 部分混合型（meromiktisch，仅上层 50—60 m 季节性混合）**，不是「地中海式微气候」。原文把湖泊物理换成了区域气候。面积 19.39 km²、最大水深 85.2 m、克恩顿州最大湖，均核实无误。3 级。2026-09-10 核。
     concept:
-      "Wörthersee's comparatively warm summer water reflects Carinthia's relatively mild, Mediterranean-influenced microclimate — a useful case study in climatic variation among lakes on the southern flank of the Alps.",
+      "Wörthersee's warm summer water comes mostly from the basin itself: sheltered from wind and slow to exchange water, it is meromictic — only the top 50 to 60 m turn over seasonally, so heat piles up in the surface layer. It is not that the regional climate is milder.",
     history:
       "Wörthersee has been a favoured summer resort for Austria's upper class since the late 19th century, and its shores still preserve numerous Victorian-era villas.",
   },
 
   attersee: {
+    // 全六段 sources: 面积 46.2 km²、平均水深 85 m、最大 169 m，**是完全位于奥地利境内面积最大的湖泊**。
+    //   ✅ **排名口径专项复核**：这个「完全境内」的限定是必要的——新锡德尔湖跨奥匈两国，不计入这一档；
+    //   与本库 `worthersee`（19.4 km²，克恩顿州最大）、`neusiedler-see` 三条并排读，三个排名同时成立。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Attersee is a glacially carved lake in the Salzkammergut region, about 46.2 km² in area — the largest lake lying entirely within Austrian territory.",
     formation:
@@ -10073,10 +10182,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "neusiedler-see": {
+    // history sources: 2001 年作为奥匈共同申报的「费尔特／新锡德尔湖文化景观」列入 UNESCO。
+    //   ✅ 零争议红线：跨境只作事实陈述、不描述边界线与主权；**未涉 1989 年泛欧野餐及相关冷战／边境议题**。2026-09-10 核。
+    // seeing sources: 水深：**平均约 1 m、最大约 1.8 m**（两个独立来源一致），原文 50—60 cm 低估约一半。⚠️ C8：这是草原型内流浅湖，**面积与水深随年份大幅波动**、历史上多次近乎完全干涸，近年干旱屡创新低（布尔根兰州水文部门，1 级）——所以正文写波动而不是写死一个数。2026-09-10 核。
     seeing:
-      "The Neusiedler See is the westernmost steppe lake in Europe, straddling Austria's Burgenland and Hungary — the largest endorheic lake in Central Europe, about 309 km² in area with an average depth of only around 50–60 cm.",
+      "The Neusiedler See is the westernmost steppe lake in Europe, straddling Austria's Burgenland and Hungary — the largest endorheic lake in Central Europe, about 309 km² in area averaging about 1 m deep and reaching some 1.8 m — figures that swing widely, since the lake has repeatedly come close to drying out entirely and recent prolonged drought has driven it to record lows.",
+    // formation sources: ⚠️ **区域古海史 ≠ 湖的年龄**：1600 万年前的古海是潘诺尼亚／维也纳盆地的区域地质史，而湖盆是末次冰期后（约 1.2—1.8 万年前）构造沉降形成的。原文把两件差了三个数量级的事连成一条因果链。
+    //   ✅ 2001 年奥匈共同申报的「费尔特／新锡德尔湖文化景观」列入 UNESCO 属实；红线复核通过——未描述边界线、未涉 1989 年泛欧野餐。2026-09-10 核。
     formation:
-      "Around 16 million years ago the area now spanning the Vienna Basin and the Hungarian plain was covered by an ancient sea, and the Neusiedler See is a surviving remnant of that geological history; as a typical steppe lake, it undergoes cycles of filling and complete drying before refilling again.",
+      "Around 16 million years ago the area now spanning the Vienna Basin and the Hungarian plain was covered by an ancient sea, but the lake itself is far younger: its basin formed by tectonic subsidence after the last glaciation, roughly 12,000 to 18,000 years ago, rather than surviving from that ancient sea; as a typical steppe lake, it undergoes cycles of filling and complete drying before refilling again.",
     observation:
       "From the air, the Neusiedler See shows an open, flat, shallow water surface ringed by extensive reed beds, blending almost seamlessly with the flat Pannonian Plain around it — a highly distinctive steppe-lake landscape for Europe.",
     distinguish:
