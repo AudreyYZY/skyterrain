@@ -212,6 +212,97 @@ if (!DRY) {
   }
 }
 
+/**
+ * 改完之后，**拿那个「错的值」在全库再搜一遍** —— 把一条靠自觉执行的判据变成机械动作。
+ *
+ * 为什么必须自动做：2026-09-10 一天之内栽了三次，每次都是「改了查出问题的那一条、
+ * 没回头搜别处」：
+ *   · `oland-alvar` 的「石炭纪」改了，`gotland` 里对同一片荒原的交叉引用原样留着；
+ *   · `bardenas-reales` 的「阿拉贡王室」改了，`ebro-basin` 里还写着阿拉贡；
+ *   · `torne-river` 里捏造的遗产名「梅尔梅奥河谷」改了，而它**一共住在四个地方**
+ *     （还有 tornionjoki-fi 的中英两段 + terrain-registry 的两条 source）。
+ * 三次都是子代理在**后面那一批**里替我抓出来的 —— 也就是说，全靠运气。
+ *
+ * 做法：把 find 与 replace 逐字比对，取出**被删掉的那些片段**（中文 ≥4 字、英文 ≥12 字符），
+ * 拿它们去搜五个内容文件 + 注册表。搜到的都列出来，**由人判断是不是同一回事** ——
+ * 命中不代表有错（「安特卫普港」在别处出现 8 次都是正常的地理指代）。
+ *
+ * 这里只报告、不拦截：真要拦，就会变成每次改个措辞都要解释一遍。
+ */
+/** 扫的是**改完之后**的文本：内容文件用内存里已打好补丁的那份（dry-run 也能扫），注册表另读 */
+const scanTargets: Array<[string, string]> = [
+  [FILE_SETS.terrain.zh, src.terrain.zh],
+  [FILE_SETS.terrain.en, src.terrain.en],
+  [FILE_SETS.travel.zh, src.travel.zh],
+  [FILE_SETS.travel.en, src.travel.en],
+  [FILE_SETS.route.zh, src.route.zh],
+  ["lib/terrain-registry.ts", await readFile("lib/terrain-registry.ts", "utf8").catch(() => "")],
+];
+/**
+ * 被删掉的片段 —— 这次真正改掉的是**哪几个字**。
+ *
+ * 不能用「掐公共前后缀」：`石炭纪` → `密西西比亚纪` 两侧都以「纪」结尾，
+ * 后缀会把「纪」吃掉、只剩「石炭」两字；而补丁经常在句尾**追加**从句，
+ * 公共后缀直接变成 0，整句都被当成「改掉的部分」，拿去搜只会命中它自己。
+ *
+ * 改用 n-gram 覆盖：find 里每个位置，只要它所在的某个 4 字窗口在 replace 里出现过，
+ * 就算「没动」；剩下连成片的位置就是真正改掉的那几个字。
+ * `……的石炭纪石灰岩……` → 「石炭纪」（因为「纪石灰」在 replace 里有，覆盖到了）。
+ * `the Kingdom of Aragon's royal house` → 「Aragon」。
+ *
+ * 门槛：中文 ≥2 字、拉丁 ≥5 字符 —— 「最大」→「第二大」删掉的是一个「最」字，1 字不搜；
+ * 而「石炭纪」→「密西西比亚纪」因为共享结尾的「纪」，只剩「石炭」两字，这两字拿去搜是有效的。
+ * 超过 40 就跳过 —— 那是整句重写，别处不会一字不差地重复。
+ */
+function removedFragments(find: string, replace: string): string[] {
+  const W = 4;
+  const covered = new Array(find.length).fill(false);
+  for (let j = 0; j + W <= find.length; j++) {
+    if (replace.includes(find.slice(j, j + W))) {
+      for (let i = j; i < j + W; i++) covered[i] = true;
+    }
+  }
+  const out: string[] = [];
+  let buf = "";
+  for (let i = 0; i < find.length; i++) {
+    if (covered[i]) { if (buf) { out.push(buf); buf = ""; } }
+    else buf += find[i];
+  }
+  if (buf) out.push(buf);
+  return out
+    .map((t) => t.trim())
+    .filter((t) => {
+      const min = /[\u4e00-\u9fa5]/.test(t) ? 2 : 5;
+      return t.length >= min && t.length <= 40;
+    });
+}
+
+const stale: string[] = [];
+const seenFrag = new Set<string>();
+for (const f of round.findings) {
+  for (const lang of ["zh", "en"] as const) {
+    const p = f.textPatch?.[lang];
+    if (!p) continue;
+    for (const frag of removedFragments(p.find, p.replace)) {
+      if (seenFrag.has(frag)) continue;
+      seenFrag.add(frag);
+      for (const [file, text] of scanTargets) {
+        if (!text) continue;
+        const n = text.split(frag).length - 1;
+        if (n > 0) stale.push(`  「${frag}」仍出现在 ${file}（${n} 处）  ← ${f.key}`);
+      }
+    }
+  }
+}
+if (stale.length) {
+  console.log(
+    `\n⚠️ 回头搜：刚改掉的说法在别处还留着 ${stale.length} 条 —— **逐条看一遍**，\n` +
+    `   同一件事就一起改；只是碰巧同字（比如作为地理指代的港口名）就放过：\n` + stale.join("\n"),
+  );
+} else {
+  console.log("\n✓ 回头搜：刚改掉的说法在全库别处没有残留");
+}
+
 console.log(
   `\n${round.round}：改句子 ${patched} 处，写来源注释 ${noted} 处${DRY ? "（dry-run，什么都没真写）" : ""}`,
 );

@@ -451,6 +451,12 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   分批交给 `content-verifier` 子代理（[`.claude/agents/content-verifier.md`](.claude/agents/content-verifier.md)）
   逐条对权威来源。**拿不准就记 unknown，不要补一个看起来合理的答案** ——
   犯过的错里相当一部分正是"看起来很合理"。
+- **`npm run verify:apply-text -- <findings.json>`** —— 机械地把 findings 里的替换打进正文
+  与来源注释。打完会**自动回头搜**：把「这次改掉的那几个字」拿去搜五个内容文件 + 注册表，
+  列出还留着的地方（只报告、不拦截 —— 命中不等于有错，判断归人）。
+  这一步是从实际教训倒推出来的：2026-09-10 一天之内三次「改了查出问题的那一条、没回头搜别处」，
+  三次都靠下一批的子代理才补上（`石炭纪` / `阿拉贡王室` / 捏造的「梅尔梅奥河谷」，
+  最后那个**一共住在四个地方**）。
 - **`npm run verify:report -- <findings.json>`** —— 把一轮核实结果**机械地**落地，
   不要手工开 issue（手做一定会重复开、忘记关）：当场修掉的自动评论 + 关闭对应 issue；
   查明有误但找不到替代值的自动开 issue（正文埋 `<!-- verify-key: -->` 去重，
