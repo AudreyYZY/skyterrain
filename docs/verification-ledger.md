@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 61c20c1
+lastVerifiedCommit: 183a407
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -40,6 +40,7 @@ lastVerifiedCommit: 61c20c1
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 机场名核实首轮（东亚东南亚 / 南欧东欧）报出、按判据落地的几处（R27b） | 8 | 0 / 7 / 1 | 当场修 7 条；新开 issue 1、关闭 0 |
 | 2026-09-11 | 机场名核实第一批（西欧北欧 / 中国 / 美洲大洋洲首轮）报出的 7 处（R27a） | 7 | 0 / 6 / 1 | 当场修 6 条；新开 issue 1、关闭 0 |
 | 2026-09-11 | 航线解说·西班牙 / 葡萄牙 / 波兰国内（20 条）—— 280 条全部核完一遍（R26e） | 26 | 20 / 6 / 0 | 当场修 26 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 回头搜顺带发现：景洪交通段停在中老铁路通车前（R26d） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |

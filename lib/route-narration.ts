@@ -4569,9 +4569,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 戈尔斯基科塔尔、达尔马提亚型海岸、戴克里先宫与本库一致；未提邻国。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚最繁忙的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；斯普利特机场距市区约19公里。",
+      "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚最繁忙的国内航线之一。萨格勒布机场距市区约17公里；斯普利特机场距市区约19公里。",
     "en-US":
-      "Zagreb to Split is about 50 minutes, same time zone, operated by Croatia Airlines as one of Croatia's busiest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Split Airport is about 19 km from the city centre.",
+      "Zagreb to Split is about 50 minutes, same time zone, operated by Croatia Airlines as one of Croatia's busiest domestic routes. Zagreb Airport is about 17 km from central Zagreb; Split Airport is about 19 km from the city centre.",
     },
   },
 
@@ -4587,9 +4587,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 迪纳拉 1831 m、内雷特瓦三角洲、杜布罗夫尼克 1979 年列入 UNESCO 与本库一致；未提邻国。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚跨度最大的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；杜布罗夫尼克机场距市区约20公里。",
+      "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚跨度最大的国内航线之一。萨格勒布机场距市区约17公里；杜布罗夫尼克机场距市区约20公里。",
     "en-US":
-      "Zagreb to Dubrovnik is about 65 minutes, same time zone, operated by Croatia Airlines as one of Croatia's longest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Dubrovnik Airport is about 20 km from the city centre.",
+      "Zagreb to Dubrovnik is about 65 minutes, same time zone, operated by Croatia Airlines as one of Croatia's longest domestic routes. Zagreb Airport is about 17 km from central Zagreb; Dubrovnik Airport is about 20 km from the city centre.",
     },
   },
 
@@ -4606,9 +4606,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 韦莱比特、兹尔曼尼亚翠绿河水、扎达尔海之风琴与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到扎达尔飞约45分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；扎达尔机场距市区约8公里。",
+      "萨格勒布到扎达尔飞约45分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。萨格勒布机场距市区约17公里；扎达尔机场距市区约8公里。",
     "en-US":
-      "Zagreb to Zadar is about 45 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Zadar Airport is about 8 km from the city centre.",
+      "Zagreb to Zadar is about 45 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Airport is about 17 km from central Zagreb; Zadar Airport is about 8 km from the city centre.",
     },
   },
 
@@ -4624,9 +4624,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 戈尔斯基科塔尔为阿尔卑斯—第纳里克过渡带、乌奇卡为伊斯特拉最高点与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到普拉飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；普拉机场距市区约6公里。",
+      "萨格勒布到普拉飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。萨格勒布机场距市区约17公里；普拉机场距市区约6公里。",
     "en-US":
-      "Zagreb to Pula is about 40 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Pula Airport is about 6 km from the city centre.",
+      "Zagreb to Pula is about 40 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Airport is about 17 km from central Zagreb; Pula Airport is about 6 km from the city centre.",
     },
   },
 
@@ -4642,9 +4642,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 潘诺尼亚平原、德拉瓦河与本库一致；承运方已按数据改为 Trade Air 代码共享。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到奥西耶克飞约40分钟，同一时区，是Trade Air与克罗地亚航空代码共享运营的国内航班之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；奥西耶克机场距市区约20公里。",
+      "萨格勒布到奥西耶克飞约40分钟，同一时区，是Trade Air与克罗地亚航空代码共享运营的国内航班之一。萨格勒布机场距市区约17公里；奥西耶克机场距市区约20公里。",
     "en-US":
-      "Zagreb to Osijek is about 40 minutes, same time zone, operated by Trade Air under a Croatia Airlines codeshare as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Osijek Airport is about 20 km from the city centre.",
+      "Zagreb to Osijek is about 40 minutes, same time zone, operated by Trade Air under a Croatia Airlines codeshare as one of Croatia's domestic routes. Zagreb Airport is about 17 km from central Zagreb; Osijek Airport is about 20 km from the city centre.",
     },
   },
 

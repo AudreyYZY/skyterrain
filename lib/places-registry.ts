@@ -2633,7 +2633,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "palma", nameZh: "帕尔马", nameEn: "Palma de Mallorca", country: "spain", tier: "notable", zone: "es-balearic", admin1Zh: "巴利阿里群岛自治区", admin1En: "Balearic Islands",
     lon: 2.6502, lat: 39.5696,
-    airport: { iata: "PMI", nameZh: "帕尔马机场（松波恩）", nameEn: "Palma de Mallorca Airport", lon: 2.739, lat: 39.551 },
+    airport: { iata: "PMI", nameZh: "帕尔马机场", nameEn: "Palma de Mallorca Airport", lon: 2.739, lat: 39.551 },
     source: "帕尔马市中心 39.5696,2.6502；PMI 机场：公开资料",
   },
   {
@@ -4305,7 +4305,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "turkestan", nameZh: "突厥斯坦", nameEn: "Turkestan", country: "kazakhstan", tier: "notable", zone: "kz-south", admin1Zh: "突厥斯坦州", admin1En: "Turkestan Region",
     lon: 68.2500, lat: 43.3000,
-    airport: { iata: "HSA", nameZh: "哈兹拉特苏丹国际机场", nameEn: "Hazrat Sultan International Airport", lon: 68.4000, lat: 43.1667 },
+    airport: { iata: "HSA", nameZh: "哈兹拉特苏丹国际机场", nameEn: "Hazrat Sultan International Airport", lon: 68.5503, lat: 43.3111 },
     source: "突厥斯坦市中心 43.3000,68.2500；HSA机场2020年启用（距市区约16km），机场名取自艾哈迈德·亚萨维的尊号“哈兹拉特苏丹”：公开资料",
   },
   {
@@ -4397,7 +4397,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "zagreb", nameZh: "萨格勒布", nameEn: "Zagreb", country: "croatia", tier: "capital", zone: "hr-zagreb", admin1Zh: "萨格勒布市", admin1En: "City of Zagreb",
     lon: 15.9819, lat: 45.8150,
-    airport: { iata: "ZAG", nameZh: "萨格勒布弗拉尼奥·图季曼机场", nameEn: "Zagreb Franjo Tuđman Airport", lon: 16.0688, lat: 45.7429 },
+    airport: { iata: "ZAG", nameZh: "萨格勒布机场", nameEn: "Zagreb Airport", lon: 16.0688, lat: 45.7429 },
     source: "萨格勒布市中心 45.8150,15.9819；ZAG机场（距市区约17km），克罗地亚首都与最大城市：公开资料",
   },
   {

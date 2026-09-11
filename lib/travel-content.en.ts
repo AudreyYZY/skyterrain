@@ -12245,7 +12245,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The old town centre preserves substantial Dutch-era Art Deco architecture, with Jalan Asia Afrika, home to the Asian-African Conference Museum, forming the historic core; the city is ringed by volcanoes and tea plantations, with Mount Tangkuban Perahu to the north and Mount Kawah Putih to the south being popular day trips.",
     gettingAround:
-      "Husein Sastranegara Airport (BDO) is about 4 km from the city centre and handles mostly domestic routes; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
+      "Husein Sastranegara Airport (BDO) is about 4 km from the city centre; since October 2023 most jet services have moved to West Java International Airport (KJT), so check the airport's latest notices before planning to fly into BDO; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
     culture:
       "The official language is Indonesian, with Sundanese spoken locally. Bandung hosted the 1955 Bandung Conference, commemorated at the Asian-African Conference Museum; the city's cool climate lends itself to relatively casual dress, and Sundanese cuisine is a local specialty. Tipping isn't expected.",
     seeAndDo:
@@ -12768,7 +12768,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May to September is peak season on the coast, with July and August the hottest and most crowded; May, June, and September offer pleasant weather and lower prices. Inland Zagreb suits any season and has a Christmas market in winter. Travel between the coast and interior can take a while, so plan enough days.",
   },
   zagreb: {
-    // 零改动留痕（2026-09-10）：ZAG（弗拉尼奥·图季曼机场）代码现行有效；history 段止于中世纪格拉德茨与卡普托尔
+    // 零改动留痕（2026-09-10）：ZAG（萨格勒布机场）代码现行有效；注册表只写描述性名称，官方冠名从略（2026-09-11）；history 段止于中世纪格拉德茨与卡普托尔
     //   两座山丘小镇，未涉 1990 年代及以后议题。✅ 零争议红线通过。
     // identity sources: 人口：DZS 年中估计 777,744（2025 年年中，STAN-2026-3-1，2026-09-04 发布，1 级）。萨格勒布因「市 = 县」地位在该序列里单列，所以它**有**年度更新数，不同于其他克罗地亚城市。2026-09-10 核。
     identity:
@@ -12779,7 +12779,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The city has an Upper Town (the historic old town, home to St. Mark's Church and the government buildings) and a Lower Town (a grid of 19th-century streets centered on Ban Jelačić Square and numerous museums), linked by the traditional Dolac Market.",
     gettingAround:
-      "Zagreb Franjo Tuđman Airport is about 17 km from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
+      "Zagreb Airport is about 17 km from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
     culture:
       "The official language is Croatian. Modest dress is expected when visiting St. Mark's Church and other religious sites. Restaurant tips are typically around 10% of the bill. Zagreb has a faster pace of life than the coastal cities, with a strong outdoor café culture.",
     seeAndDo:
