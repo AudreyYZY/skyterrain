@@ -1276,7 +1276,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "jiayuguan", nameZh: "嘉峪关", nameEn: "Jiayuguan", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
     lon: 98.2892, lat: 39.7726,
-    airport: { iata: "JGN", nameZh: "嘉峪关机场", nameEn: "Jiayuguan Airport", lon: 98.3414, lat: 39.8569 },
+    airport: { iata: "JGN", nameZh: "嘉峪关酒泉机场", nameEn: "Jiayuguan Jiuquan Airport", lon: 98.3414, lat: 39.8569 },
     source: "嘉峪关市区 39.7726,98.2892；嘉峪关关城 39.8010,98.2190；JGN 机场：Wikipedia",
   },
 
