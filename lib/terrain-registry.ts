@@ -5986,7 +5986,7 @@ const SICILY: TerrainEntry = {
   category: "island",
   regionId: "europe",
   country: "italy",
-  landmark: { name: "埃特纳火山（Etna，约3350m）", lon: 14.993, lat: 37.751, elevation: 3350, kind: "peak" },
+  landmark: { name: "埃特纳火山（Etna，2024-09 复测约3403m）", lon: 14.993, lat: 37.751, elevation: 3403, kind: "peak" },
   bbox: [12.35, 36.60, 15.70, 38.35],
   axis: [[12.5, 37.9], [15.5, 37.3]],
   viewScale: 1.6,
@@ -6134,12 +6134,12 @@ const MOUNT_ETNA: TerrainEntry = {
   category: "mountain_system",
   regionId: "europe",
   country: "italy",
-  landmark: { name: "埃特纳火山（约3350m，欧洲最高的活火山）", lon: 14.993, lat: 37.751, elevation: 3350, kind: "peak" },
+  landmark: { name: "埃特纳火山（2024-09 复测约3403m，欧洲不计高加索的最高活火山）", lon: 14.993, lat: 37.751, elevation: 3403, kind: "peak" },
   bbox: [14.83, 37.58, 15.22, 37.92],
   axis: [[14.9, 37.65], [15.1, 37.88]],
   viewScale: 1.5,
   label: { lon: 14.99, lat: 37.75, rotation: 0 },
-  source: "埃特纳火山：西西里东岸的一座巨型层火山，约3350m，是欧洲最高、也是世界上活动最频繁的火山之一，几乎常年在喷发或流熔岩；东坡有一个巨大的塌陷凹地“公牛谷”；山坡上一层层熔岩流、火山锥和葡萄园、柑橘园相间；2013年列入世界遗产（INGV / UNESCO）",
+  source: "埃特纳火山：西西里东岸的一座巨型层火山，峰顶随喷发变化、2024-09 INGV 无人机复测约3403m（核实 2026-09-11），是欧洲（不计高加索）最高、也是世界上活动最频繁的火山之一，几乎常年在喷发或流熔岩；东坡有一个巨大的塌陷凹地“公牛谷”；山坡上一层层熔岩流、火山锥和葡萄园、柑橘园相间；2013年列入世界遗产（INGV / UNESCO）",
 };
 
 const CAMPI_FLEGREI: TerrainEntry = {
@@ -9767,7 +9767,7 @@ const TORNE_RIVER: TerrainEntry = {
   axis: [[20.50, 68.40], [24.15, 65.85]],
   viewScale: 1.8,
   label: { lon: 22.00, lat: 67.20, rotation: -60 },
-  source: "托讷河：瑞典最长的未经水电开发的天然河流之一，全长约520公里，下游河段构成瑞典与芬兰的界河，2000年瑞典—芬兰段跨境列入联合国教科文组织世界遗产“梅尔梅奥河谷”名录（UNESCO）",
+  source: "托讷河：瑞典最长的未经水电开发的天然河流之一，全长约520公里，下游河段构成瑞典与芬兰的界河，沿岸测量点作为跨十国的“斯特鲁维测地弧”的一部分于2005年列入联合国教科文组织世界遗产名录（UNESCO，核实 2026-09-10）",
 };
 
 const DALALVEN: TerrainEntry = {
@@ -10149,7 +10149,7 @@ const TORNIONJOKI_FI: TerrainEntry = {
   axis: [[23.65, 68.35], [24.15, 65.85]],
   viewScale: 1.7,
   label: { lon: 23.90, lat: 67.20, rotation: -70 },
-  source: "托尔尼奥河：瑞典—芬兰界河，全长约520公里，河口的托尔尼奥与河对岸瑞典的哈帕兰达形成跨境双子城，两市部分市政设施共享共建，2000年瑞典—芬兰跨境段列入联合国教科文组织世界遗产“梅尔梅奥河谷”名录（UNESCO）",
+  source: "托尔尼奥河：瑞典—芬兰界河，全长约520公里，河口的托尔尼奥与河对岸瑞典的哈帕兰达形成跨境双子城，两市部分市政设施共享共建，沿岸测量点作为跨十国的“斯特鲁维测地弧”的一部分于2005年列入联合国教科文组织世界遗产名录（UNESCO，核实 2026-09-10）",
 };
 
 const OULANKA_CANYON: TerrainEntry = {
@@ -10361,7 +10361,7 @@ const MINETT_RED_LANDS: TerrainEntry = {
   landmark: { name: "埃施阿尔泽特", lon: 5.9806, lat: 49.4958, elevation: 300, kind: "city" },
   bbox: [5.85, 49.45, 6.15, 49.60],
   label: { lon: 6.00, lat: 49.52, rotation: 0 },
-  source: "米内特红土地：卢森堡最南端因侏罗纪鲕状铁矿层出露而得名的丘陵地带，19世纪起成为卢森堡钢铁工业的发源地，2020年该区域与法国、比利时跨境部分共同列入联合国教科文组织米内特生物圈保护区（UNESCO）",
+  source: "米内特红土地：卢森堡最南端因侏罗纪鲕状铁矿层出露而得名的丘陵地带，19世纪起成为卢森堡钢铁工业的发源地，2020年该区域列入联合国教科文组织米内特生物圈保护区，为卢森堡首个也是唯一一个（法国邻近地区正另行申请，比利时未参与；核实 2026-09-11）（UNESCO）",
 };
 
 const OUR_VALLEY: TerrainEntry = {
@@ -10431,7 +10431,7 @@ const UPPER_SURE_LAKE: TerrainEntry = {
   landmark: { name: "埃施叙尔苏尔", lon: 5.9167, lat: 49.9167, elevation: 320, kind: "lake" },
   bbox: [5.75, 49.83, 5.98, 49.97],
   label: { lon: 5.87, lat: 49.90, rotation: 0 },
-  source: "上苏尔湖：1961年拦截苏尔河修建大坝形成的人工水库，面积约3.08平方公里，承担卢森堡约70%家庭的饮用水供应，湖区周边设有上苏尔自然公园，埃施叙尔苏尔古堡俯瞰湖畔（卢森堡水务局 / 上苏尔自然公园）",
+  source: "上苏尔湖：1950年代末拦截苏尔河修建大坝形成的人工水库（大坝1956年动工、1957年建成、1959年首次蓄满），面积约3.8平方公里，供应卢森堡约70%人口的饮用水（核实 2026-09-11），湖区周边设有上苏尔自然公园，埃施叙尔苏尔古堡俯瞰湖畔（卢森堡水务局 / 上苏尔自然公园）",
 };
 
 const SURE_RIVER: TerrainEntry = {
@@ -10844,7 +10844,7 @@ const NGU_HANH_SON: TerrainEntry = {
   landmark: { name: "水山", lon: 108.2606, lat: 16.0044, elevation: 106, kind: "peak" },
   bbox: [108.24, 15.98, 108.28, 16.02],
   label: { lon: 108.26, lat: 16.00, rotation: 0 },
-  source: "五行山：岘港以南沿海一组由五座大理岩丘体组成的低矮山丘，分别以金木水火土五行命名，水山为其中最高者，山体内分布多处天然溶洞与阮朝以来的佛教、印度教石窟造像，是越南中部重要的宗教与地质旅游地（越南文化体育与旅游部）",
+  source: "五行山：岘港以南沿海一组由五座大理岩丘体组成的低矮山丘，分别以金木水火土五行命名，水山为其中最高者，山体内分布多处天然溶洞与不同年代的佛教与印度教石窟造像（核实 2026-09-11：印度教造像可追溯至早于阮朝的占婆时期，具体断代待查），是越南中部重要的宗教与地质旅游地（越南文化体育与旅游部）",
 };
 
 // ============================================================
@@ -10874,10 +10874,10 @@ const DOI_LUANG_CHIANG_DAO: TerrainEntry = {
   category: "mountain_system",
   regionId: "asia",
   country: "thailand",
-  landmark: { name: "清道山主峰", lon: 98.9186, lat: 19.4058, elevation: 2138, kind: "peak" },
+  landmark: { name: "清道山主峰", lon: 98.9186, lat: 19.4058, elevation: 2225, kind: "peak" },
   bbox: [98.85, 19.35, 99.00, 19.45],
   label: { lon: 98.92, lat: 19.40, rotation: 0 },
-  source: "清道山：泰国第三高峰(2138米)，山体为石灰岩喀斯特地貌，泰国境内规模最大的溶洞系统之一清道岩洞就发育于山体之中，2021年清道山生物圈保护区列入联合国教科文组织人与生物圈计划（UNESCO）",
+  source: "清道山：泰国第三高峰（各来源在2175—2275米之间，核实 2026-09-11），山体为石灰岩喀斯特地貌，泰国境内规模最大的溶洞系统之一清道岩洞就发育于山体之中，2021年清道山生物圈保护区列入联合国教科文组织人与生物圈计划（UNESCO）",
 };
 
 const DOI_SUTHEP_PUI: TerrainEntry = {
@@ -10944,7 +10944,7 @@ const KHORAT_PLATEAU: TerrainEntry = {
   bbox: [101.00, 14.00, 105.60, 18.50],
   viewScale: 2.0,
   label: { lon: 103.30, lat: 16.20, rotation: 0 },
-  source: "呵叻高原：泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原边缘的碧差汶山脉与佩差邦山脉将其与中部平原分隔（泰国国土发展局）",
+  source: "呵叻高原：泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原边缘的碧差汶山脉与丹辇拉扎山脉（Dong Phaya Yen）将其与中部平原分隔（核实 2026-09-11：原写的「佩差邦」是 Phetchabun 的另一种转写，与碧差汶是同一条山脉）",
 };
 
 const PHU_KRADUENG: TerrainEntry = {
@@ -11135,7 +11135,7 @@ const MUN_RIVER: TerrainEntry = {
   axis: [[102.05, 14.95], [104.85, 15.23]],
   viewScale: 1.3,
   label: { lon: 103.50, lat: 15.10, rotation: -10 },
-  source: "文河：发源于呵叻高原西南部佩差邦山脉，向东流贯呵叻高原南部，是泰国依善地区最主要的河流，在乌汶叻差他尼附近汇入湄公河，沿线接纳支流希河后水量显著增大（泰国国土发展局）",
+  source: "文河：发源于呵叻高原西南部讪甘烹山脉（Sankamphaeng，核实 2026-09-11；佩差邦/碧差汶山脉在高原西北缘、是另一条），向东流贯呵叻高原南部，是泰国依善地区最主要的河流，在乌汶叻差他尼附近汇入湄公河，沿线接纳支流希河后水量显著增大（泰国国土发展局）",
 };
 
 const KWAI_RIVER_VALLEY: TerrainEntry = {
@@ -11990,7 +11990,7 @@ const GOBI_ALTAI: TerrainEntry = {
   axis: [[96.5, 45.6], [101.0, 44.8]],
   viewScale: 1.4,
   label: { lon: 98.8, lat: 45.2, rotation: -15 },
-  source: "戈壁阿尔泰山：蒙古阿尔泰山向东南延伸至戈壁荒漠区的过渡山系，由多个孤立断块山地组成，最高峰伊赫博格德峰海拔3957米，山顶保留小型冰川，是戈壁荒漠中罕见的高山生态孤岛（Wikipedia WebSearch 2026）",
+  source: "戈壁阿尔泰山：蒙古阿尔泰山向东南延伸至戈壁荒漠区的过渡山系，由多个孤立断块山地组成，最高峰伊赫博格德峰海拔3957米，山顶如今已无冰川、仅有季节性积雪（核实 2026-09-11，The Cryosphere 2023），是戈壁荒漠中罕见的高山生态孤岛（Wikipedia WebSearch 2026）",
 };
 
 const MONGOLIA_GOBI: TerrainEntry = {
@@ -12071,7 +12071,7 @@ const KHOVSGOL_LAKE: TerrainEntry = {
   bbox: [100.0, 50.2, 100.9, 51.5],
   viewScale: 1.2,
   label: { lon: 100.5, lat: 50.1, rotation: 0 },
-  source: "库苏古尔湖：蒙古最大的淡水湖，面积约2620平方公里，最大水深267米，蓄水量约占蒙古全国淡水总量的70%、全球淡水总量的0.4%，经额吉音河（色楞格河支流）与俄罗斯贝加尔湖存在水文关联，湖区设有库苏古尔国家公园（Britannica WebSearch 2026）",
+  source: "库苏古尔湖：蒙古最大的淡水湖，面积各测量年份在2600至2770平方公里之间（核实 2026-09-11），最大水深267米，蓄水量约占蒙古全国淡水总量的70%、全球淡水总量的0.4%，经额吉音河（色楞格河支流）与俄罗斯贝加尔湖存在水文关联，湖区设有库苏古尔国家公园（Britannica WebSearch 2026）",
 };
 
 const TERKHIIN_TSAGAAN_LAKE: TerrainEntry = {
@@ -12124,7 +12124,7 @@ const BAYANZAG: TerrainEntry = {
   landmark: { name: "巴彦扎格红崖", lon: 103.75, lat: 44.13, elevation: 1250, kind: "escarpment" },
   bbox: [103.65, 44.05, 103.85, 44.20],
   label: { lon: 103.75, lat: 44.22, rotation: 0 },
-  source: "巴彦扎格：南戈壁省一处红色砂岩侵蚀崖壁，因岩石在夕照下呈火焰般的橙红色而得名“燃烧的悬崖”；1922年美国自然历史博物馆罗伊·查普曼·安德鲁斯考察队在此首次发现恐龙蛋化石，是戈壁古尔班赛罕国家公园的组成部分（Wikipedia/topasiatour.com WebSearch 2026）",
+  source: "巴彦扎格：南戈壁省一处红色砂岩侵蚀崖壁，因岩石在夕照下呈火焰般的橙红色而得名“燃烧的悬崖”；1923年（考察始于1922年）美国自然历史博物馆罗伊·查普曼·安德鲁斯考察队在此首次发现恐龙蛋化石（核实 2026-09-11，AMNH），是戈壁古尔班赛罕国家公园的组成部分（Wikipedia/topasiatour.com WebSearch 2026）",
 };
 
 const GURVAN_SAIKHAN: TerrainEntry = {
@@ -12210,7 +12210,7 @@ const SELENGE_RIVER: TerrainEntry = {
   axis: [[101.0, 49.0], [106.5, 50.35]],
   viewScale: 1.3,
   label: { lon: 103.5, lat: 49.6, rotation: -25 },
-  source: "色楞格河：蒙古境内水量最大的河流，由伊德尔河与穆伦河（德勒格尔河）在中戈壁—布尔干省境内汇流而成，向东北流经苏赫巴托尔市后进入俄罗斯，最终注入贝加尔湖，是贝加尔湖最主要的入湖水源（Wikipedia/worldatlas.com WebSearch 2026）",
+  source: "色楞格河：蒙古境内水量最大的河流，由伊德尔河与德勒格尔河在库苏古尔省特木尔布拉格附近汇流而成（核实 2026-09-11），向东北流经苏赫巴托尔市后进入俄罗斯，最终注入贝加尔湖，是贝加尔湖最主要的入湖水源（Wikipedia/worldatlas.com WebSearch 2026）",
 };
 
 const TUUL_RIVER: TerrainEntry = {
@@ -12311,7 +12311,7 @@ const MAYON_VOLCANO: TerrainEntry = {
   bbox: [123.58, 13.18, 123.79, 13.35],
   viewFrom: 90,
   label: { lon: 123.685, lat: 13.11, rotation: 0 },
-  source: "马荣火山：吕宋岛阿尔拜省地标性活火山，海拔2462米，锥体呈近乎完美的对称圆锥形，椭圆度指数低至1.04、为全球层状火山中最低（形态最对称），400年间记录喷发逾49次，是菲律宾最活跃的火山；1938年划设为菲律宾首座国家公园（Britannica/amusingplanet.com WebSearch 2026）",
+  source: "马荣火山：吕宋岛阿尔拜省地标性活火山，海拔2462米，锥体呈近乎完美的对称圆锥形，椭圆度指数低至1.04、为全球层状火山中最低（形态最对称），400年间记录喷发逾49次，是菲律宾最活跃的火山；1938年划设为国家公园，是菲律宾最早一批国家公园之一（阿波山1936年更早）（Britannica/amusingplanet.com WebSearch 2026）",
 };
 
 const TAAL_LAKE: TerrainEntry = {
@@ -12339,7 +12339,7 @@ const MOUNT_PINATUBO: TerrainEntry = {
   bbox: [120.27, 15.06, 120.43, 15.20],
   viewScale: 1.1,
   label: { lon: 120.35, lat: 15.22, rotation: 0 },
-  source: "皮纳图博火山：1991年6月15日发生20世纪第二大规模火山喷发，喷发柱高逾40公里、喷出岩浆逾10立方公里，火山爆发指数达VEI 6；剧烈喷发导致山顶塌陷形成宽约2.5公里的破火山口，山体高度较喷发前降低逾300米，山顶如今蓄有一汪蓝绿色火山口湖，是菲律宾知名的徒步目的地（USGS/Global Volcanism Program WebSearch 2026）",
+  source: "皮纳图博火山：1991年6月15日发生20世纪第二大规模火山喷发，喷发柱高逾40公里、总喷出物约8至10立方公里（折合致密岩浆约4至5立方公里），火山爆发指数达VEI 6；剧烈喷发导致山顶塌陷形成宽约2.5公里的破火山口，山体高度较喷发前降低约260米，山顶如今蓄有一汪蓝绿色火山口湖，是菲律宾知名的徒步目的地（USGS/Global Volcanism Program WebSearch 2026）",
 };
 
 const MOUNT_APO: TerrainEntry = {
@@ -12462,7 +12462,7 @@ const BATANES_ISLANDS: TerrainEntry = {
   landmark: { name: "巴丹岛（巴斯科）", lon: 121.9683, lat: 20.4487, elevation: 100, kind: "island" },
   bbox: [121.80, 20.30, 122.10, 20.95],
   label: { lon: 121.95, lat: 20.20, rotation: 0 },
-  source: "巴丹群岛：菲律宾最北端的岛群，主要由巴丹岛、萨布唐岛与伊特巴亚特岛三座有人居住的岛屿组成；巴丹岛与萨布唐岛由火山喷发形成、地表起伏为开阔草丘，伊特巴亚特岛则由板块构造运动抬升而成、以更陡峭的悬崖地貌为特征；伊特巴亚特岛是菲律宾最北端的有人岛屿，当地伊瓦坦族保留独特的石屋建筑传统（Wikipedia WebSearch 2026）",
+  source: "巴丹群岛：菲律宾最北端的岛群，主要由巴丹岛、萨布唐岛与伊特巴亚特岛三座有人居住的岛屿组成；巴丹岛由火山喷发形成、地表起伏为开阔草丘，萨布唐岛与伊特巴亚特岛则主要由珊瑚礁石灰岩经板块构造运动抬升而成、以更陡峭的悬崖地貌为特征；伊特巴亚特岛是菲律宾最北端的有人岛屿，当地伊瓦坦族保留独特的石屋建筑传统（Wikipedia WebSearch 2026）",
 };
 
 const EL_NIDO_BACUIT_ARCHIPELAGO: TerrainEntry = {
@@ -12475,7 +12475,7 @@ const EL_NIDO_BACUIT_ARCHIPELAGO: TerrainEntry = {
   landmark: { name: "巴奎特湾", lon: 119.3833, lat: 11.2000, elevation: 5, kind: "island" },
   bbox: [119.30, 11.12, 119.50, 11.30],
   label: { lon: 119.38, lat: 11.32, rotation: 0 },
-  source: "艾尔尼多—巴奎特群岛：巴拉望岛北端一处由45座石灰岩岛礁组成的群岛，岛礁遍布喀斯特崖壁、落水洞与潟湖，2011年整个区域获认定为UNESCO世界地质公园；“艾尔尼多”（西班牙语意为“巢”）得名于岛礁石灰岩崖壁与洞穴中金丝燕筑巢的现象，是菲律宾知名的跳岛游与潜水目的地（Roughguides/bestdivingphilippines.com WebSearch 2026）",
+  source: "艾尔尼多—巴奎特群岛：巴拉望岛北端一处由45座石灰岩岛礁组成的群岛，岛礁遍布喀斯特崖壁、落水洞与潟湖；“艾尔尼多”（西班牙语意为“巢”）得名于岛礁石灰岩崖壁与洞穴中金丝燕筑巢的现象，是菲律宾知名的跳岛游与潜水目的地（Roughguides/bestdivingphilippines.com WebSearch 2026）",
 };
 
 const TUBBATAHA_REEFS: TerrainEntry = {
@@ -12556,7 +12556,7 @@ const LAKE_LANAO: TerrainEntry = {
   bbox: [124.05, 7.75, 124.45, 8.05],
   viewScale: 1.1,
   label: { lon: 124.25, lat: 7.65, rotation: 0 },
-  source: "拉瑙湖：菲律宾第二大湖，面积约340平方公里，位于棉兰老岛拉瑙德尔苏尔省，是全球现存17处古老湖泊之一，由两条山脉间盆地经构造—火山活动共同抬升阻塞、并伴随一座大型火山塌陷而形成；湖水经阿古斯河向北流出，途经玛丽亚克里斯蒂娜瀑布水电站，为棉兰老岛提供约七成用电；湖中栖息18种菲律宾特有鲤科鱼类（Britannica/dost.gov.ph WebSearch 2026）",
+  source: "拉瑙湖：菲律宾第二大湖，面积约340平方公里，位于棉兰老岛拉瑙德尔苏尔省，是全球为数不多的“古老湖泊”之一，由两条山脉间盆地经构造—火山活动共同抬升阻塞、并伴随一座大型火山塌陷而形成；湖水经阿古斯河向北流出，途经玛丽亚克里斯蒂娜瀑布水电站，长期是棉兰老岛主要电力来源之一（近年随煤电扩张占比明显下降）；湖中栖息18种菲律宾特有鲤科鱼类（Britannica/dost.gov.ph WebSearch 2026）",
 };
 
 const AGUSAN_MARSH: TerrainEntry = {
@@ -12583,7 +12583,7 @@ const HUNDRED_ISLANDS_NATIONAL_PARK: TerrainEntry = {
   landmark: { name: "总督岛", lon: 119.90, lat: 16.20, elevation: 5, kind: "island" },
   bbox: [119.83, 16.14, 119.98, 16.28],
   label: { lon: 119.90, lat: 16.11, rotation: 0 },
-  source: "百岛国家公园：吕宋岛西北部林加延湾内一处岛礁群，退潮时共有124座、涨潮时123座石灰岩岛屿，散布面积约1844公顷；岛群基底为珊瑚礁构造、地表岩体距今约200万年，1940年设立为菲律宾首座国家公园（Wikipedia/nationalparks.org WebSearch 2026）",
+  source: "百岛国家公园：吕宋岛西北部林加延湾内一处岛礁群，退潮时共有124座、涨潮时123座石灰岩岛屿，散布面积约1844公顷；岛群基底为珊瑚礁构造、地表岩体距今约200万年，1940年设立为国家公园，常被称为菲律宾“第一座国家公园”，但阿波山1936年、马荣火山1938年更早（Wikipedia/nationalparks.org WebSearch 2026）",
 };
 
 const VERDE_ISLAND_PASSAGE: TerrainEntry = {
@@ -12596,7 +12596,7 @@ const VERDE_ISLAND_PASSAGE: TerrainEntry = {
   landmark: { name: "维德岛", lon: 121.0667, lat: 13.5333, elevation: 5, kind: "island" },
   bbox: [120.85, 13.35, 121.35, 13.75],
   label: { lon: 121.05, lat: 13.28, rotation: 0 },
-  source: "维德岛海峡：巴丹加斯、民都洛、马林杜克与朗布伦四省之间一条狭窄海峡水道，被学界公认为全球海洋鱼类物种多样性“中心之中心”，已记录珊瑚物种逾400种；海峡内设有36处海洋保护区（巴丹加斯24处、东民都洛12处），2010年获国际海洋保护组织“使命蓝”认定为重要海洋生态热点（pemsea.org/calacademy.org WebSearch 2026）",
+  source: "维德岛海峡：巴丹加斯、民都洛、马林杜克与朗布伦四省之间一条狭窄海峡水道，被学界公认为全球海洋鱼类物种多样性“中心之中心”，已记录珊瑚物种逾300种；海峡内设有36处海洋保护区（巴丹加斯24处、东民都洛12处），2023年获国际海洋保护组织“使命蓝”认定为“希望之点”（Hope Spot）（pemsea.org/calacademy.org WebSearch 2026）",
 };
 
 // ============================================================
@@ -12705,7 +12705,7 @@ const BUKIT_BATOK_NATURE_PARK: TerrainEntry = {
   landmark: { name: "小桂林采石崖", lon: 103.7514, lat: 1.3492, elevation: 60, kind: "escarpment" },
   bbox: [103.745, 1.344, 103.758, 1.354],
   label: { lon: 103.751, lat: 1.358, rotation: 0 },
-  source: "武吉巴督自然公园：占地36公顷，1988年在废弃的甘蒙采石场（曾开采辉长苏长岩）基础上辟建；高耸的花岗岩崖壁矗立于原采石场积水潭旁，因形似中国桂林喀斯特地貌而俗称“小桂林”；“武吉巴督”意为“咳嗽的山丘”，得名于早年采石作业发出的震动声响，2021年起崖壁曾多次发生滑坡（Wikipedia/littledayout.com WebSearch 2026）",
+  source: "武吉巴督自然公园：占地36公顷，1988年在一处废弃采石场（曾开采辉长苏长岩）基础上辟建；高耸的花岗岩崖壁矗立于原采石场积水潭旁。⚠️「小桂林」与「甘蒙采石场」官方上均属邻近的武吉巴督市镇公园（Bukit Batok Town Park，42公顷），不是本条（核实 2026-09-11）；“武吉巴督”意为“咳嗽的山丘”，得名于早年采石作业发出的震动声响，2021年起崖壁曾多次发生滑坡（Wikipedia/littledayout.com WebSearch 2026）",
 };
 
 const CONEY_ISLAND_PARK: TerrainEntry = {
@@ -12818,7 +12818,7 @@ const MOUNT_KINABALU: TerrainEntry = {
   bbox: [116.45, 5.90, 116.70, 6.20],
   viewScale: 1.3,
   label: { lon: 116.55, lat: 5.85, rotation: 0 },
-  source: "京那巴鲁山：马来西亚与马来群岛最高峰，海拔4095米，是花岗岩侵入体，约1500万年前形成，为克罗克山脉的一部分；2000年京那巴鲁公园列入UNESCO世界遗产名录，是东南亚植物多样性核心地区之一，园内植物物种约5000至6000种（Britannica/UNESCO WebSearch 2026）",
+  source: "京那巴鲁山：马来西亚与马来群岛最高峰，海拔4095米，是侵入克罗克山脉沉积岩层的一座独立花岗岩体，锆石铀铅测年约785万至722万年前（核实 2026-09-11：原写的约1500万年前、为克罗克山脉的一部分均不成立）；2000年京那巴鲁公园列入UNESCO世界遗产名录，是东南亚植物多样性核心地区之一，园内植物物种约5000至6000种（Britannica/UNESCO WebSearch 2026）",
 };
 
 const CROCKER_RANGE: TerrainEntry = {
@@ -12900,7 +12900,7 @@ const NIAH_CAVES: TerrainEntry = {
   landmark: { name: "大洞（尼亚国家公园）", lon: 113.77, lat: 3.825, elevation: 394, kind: "gorge" },
   bbox: [113.72, 3.78, 113.82, 3.87],
   label: { lon: 113.77, lat: 3.88, rotation: 0 },
-  source: "尼亚洞穴：砂拉越海岸平原苏比斯山石灰岩地块北缘的洞穴群，石灰岩层形成于该区域曾没于海底的古地质年代；大洞洞口高逾60米，洞内考古发现可追溯至约4万年前的人类活动痕迹，部分头骨碎片测定距今约6.5万年，是东南亚已知最早的人类遗迹之一，2024年列入UNESCO世界遗产名录（Wikipedia/nationalgeographic.com WebSearch 2026）",
+  source: "尼亚洞穴：砂拉越海岸平原苏比斯山石灰岩地块北缘的洞穴群，石灰岩层形成于该区域曾没于海底的古地质年代；大洞洞口高逾60米，洞内「深洞头骨」2016年重测为距今约3.7万至4.5万年，另有石器等人类活动证据可追溯至约6.5万年前（核实 2026-09-11：原写的「头骨碎片约6.5万年」把石器年代安到了头骨上），是东南亚已知最早的人类遗迹之一，2024年列入UNESCO世界遗产名录（Wikipedia/nationalgeographic.com WebSearch 2026）",
 };
 
 const MALIAU_BASIN: TerrainEntry = {
@@ -13177,7 +13177,7 @@ const IJEN_CRATER: TerrainEntry = {
   landmark: { name: "伊真火山口湖", lon: 114.2422, lat: -8.0581, elevation: 2386, kind: "peak" },
   bbox: [114.17, -8.12, 114.30, -8.00],
   label: { lon: 114.24, lat: -7.96, rotation: 0 },
-  source: "伊真火山：东爪哇一座硫磺活动强烈的火山，火山口最高处海拔约2799米，湖面所在的火山口边缘约2386米；火山口内是世界最大的强酸性火山口湖，直径约1公里、深约175米，硫磺气体在裂隙处点燃可达600摄氏度，形成“蓝色火焰”奇观——目前全球仅印尼与冰岛两地可见此现象，当地长期有矿工人工采集硫磺块（VolcanoDiscovery/geologyscience.com WebSearch 2026）",
+  source: "伊真火山：东爪哇一座硫磺活动强烈的火山，火山口最高处海拔约2799米，湖面所在的火山口边缘约2386米；火山口内是世界最大的强酸性火山口湖，直径约1公里、深约175米，硫磺气体在裂隙处点燃可达600摄氏度，形成“蓝色火焰”奇观——全球只在伊真与埃塞俄比亚达洛尔火山等极少数地点可见此现象（核实 2026-09-11：原写的冰岛无记录），当地长期有矿工人工采集硫磺块（VolcanoDiscovery/geologyscience.com WebSearch 2026）",
 };
 
 const DIENG_PLATEAU: TerrainEntry = {
@@ -13425,7 +13425,7 @@ const WAKATOBI: TerrainEntry = {
   bbox: [123.35, -5.85, 124.15, -5.05],
   viewScale: 1.4,
   label: { lon: 123.75, lat: -4.99, rotation: 0 },
-  source: "瓦卡托比：位于苏拉威西岛东南端外海的群岛，名称取自旺吉旺吉、卡莱杜帕、托米亚、比农果四座主岛首字母；2002年设立瓦卡托比国家公园，总面积约140万公顷（其中珊瑚礁约90万公顷），拥有25组珊瑚礁群、岸礁与环礁类型齐全，礁体周长逾600公里，记录鱼类942种、珊瑚750种，自2005年起被列入UNESCO世界遗产预备名录，是印度尼西亚境内规模仅次于大堡礁的大型珊瑚礁体系之一（reefresilience.org/nationalparksassociation.org WebSearch 2026）",
+  source: "瓦卡托比：位于苏拉威西岛东南端外海的群岛，名称取自旺吉旺吉、卡莱杜帕、托米亚、比农果四座主岛首字母；2002年设立瓦卡托比国家公园，总面积约140万公顷（其中珊瑚礁约90万公顷），拥有25组珊瑚礁群、岸礁与环礁类型齐全，礁体周长逾600公里，记录鱼类942种（2003年调查；珊瑚种数各方口径差异大，UNESCO MAB 记396种），自2005年起被列入UNESCO世界遗产预备名录（核实 2026-09-11：原写的「印尼境内仅次于大堡礁」逻辑不通、无学术出处，已删）（reefresilience.org/nationalparksassociation.org WebSearch 2026）",
 };
 
 const BANDA_ISLANDS: TerrainEntry = {
@@ -13565,7 +13565,7 @@ const KARAGIYE_DEPRESSION: TerrainEntry = {
   landmark: { name: "卡拉吉耶洼地最低点（坎德洼地）", lon: 51.75, lat: 43.60, elevation: -132, kind: "peak" },
   bbox: [51.40, 43.40, 52.20, 43.90],
   label: { lon: 51.75, lat: 43.30, rotation: 0 },
-  source: "卡拉吉耶洼地：曼格斯套半岛一处喀斯特凹地，距阿克套约50公里，最低点海拔约-132米，是哈萨克斯坦全国最低点、也是中亚及前苏联地区最低点，全球排名第五（次于死海、阿萨勒湖、吐鲁番盆地与卡塔拉洼地）；地下水长期溶蚀地层形成溶洞与地下空腔，上覆砂层塌陷后形成如今长约40公里、宽约25公里的巨型碗状洼地（Wikipedia/eurasia.travel WebSearch 2026）",
+  source: "卡拉吉耶洼地：曼格斯套半岛一处喀斯特凹地，距阿克套约50公里，最低点海拔约-132米，是哈萨克斯坦全国最低点、也是中亚及前苏联地区最低点，全球排名第五（次于死海、阿萨勒湖、吐鲁番盆地与卡塔拉洼地）；地下水长期溶蚀地层形成溶洞与地下空腔，上覆砂层塌陷后形成如今长约40公里、宽约10公里的巨型碗状洼地（Wikipedia/eurasia.travel WebSearch 2026）",
 };
 
 const BETPAK_DALA_DESERT: TerrainEntry = {
@@ -13632,7 +13632,7 @@ const MEDEU_GORGE: TerrainEntry = {
   landmark: { name: "梅德奥高山溜冰场", lon: 77.05, lat: 43.15, elevation: 1691, kind: "peak" },
   bbox: [76.98, 43.10, 77.12, 43.20],
   label: { lon: 77.05, lat: 43.06, rotation: 0 },
-  source: "梅德奥峡谷：阿拉木图东南约14公里处、外伊犁阿拉套山麓小阿拉木图河谷内的一处山地峡谷，海拔1520至1750米，1972年在此建成的高山溜冰场是全球海拔最高的人工溜冰场之一；峡谷下游建有梅德奥泥石流防护坝，用于拦截山区季节性泥石流、保护阿拉木图市区（Wikipedia WebSearch 2026）",
+  source: "梅德奥峡谷：阿拉木图东南约14公里处、外伊犁阿拉套山麓小阿拉木图河谷内的一处山地峡谷，海拔1520至1750米，此处高山溜冰场1951年建成、1972年改建为人工冰面，是全球海拔最高的人工溜冰场之一；峡谷下游建有梅德奥泥石流防护坝，用于拦截山区季节性泥石流、保护阿拉木图市区（Wikipedia WebSearch 2026）",
 };
 
 const LAKE_BALKHASH: TerrainEntry = {
@@ -13660,7 +13660,7 @@ const KOLSAI_LAKES: TerrainEntry = {
   landmark: { name: "科尔赛下湖", lon: 78.35, lat: 42.95, elevation: 1818, kind: "lake" },
   bbox: [78.25, 42.85, 78.55, 43.05],
   label: { lon: 78.35, lat: 42.80, rotation: 0 },
-  source: "科尔赛湖：北天山一处山谷内自下而上分布的三座梯级湖泊——下湖（海拔1818米）、中湖（2252米）、上湖（2850米），2012年列入UNESCO科尔赛—凯恩迪国家公园生物圈保护区；该区域地震活动频繁，三座湖泊均由历史上的地震滑坡堵塞河谷形成（Wikipedia/thegonegoat.com WebSearch 2026）",
+  source: "科尔赛湖：北天山一处山谷内自下而上分布的三座梯级湖泊——下湖（海拔1818米）、中湖（2252米）、上湖（2850米），2021年列入UNESCO科尔赛—凯恩迪国家公园生物圈保护区；该区域地震活动频繁，三座湖泊均由历史上的地震滑坡堵塞河谷形成（Wikipedia/thegonegoat.com WebSearch 2026）",
 };
 
 const KAINDY_LAKE: TerrainEntry = {
@@ -13828,7 +13828,7 @@ const BURABAY_HILLS: TerrainEntry = {
   bbox: [69.95, 52.95, 70.65, 53.35],
   viewScale: 1.3,
   label: { lon: 70.30, lat: 52.85, rotation: 0 },
-  source: "布拉拜（旧称博罗沃耶）：哈萨克斯坦北部科克舍套丘陵东段一片松林、花岗岩丘陵与湖泊交织的地带，因景致酷似瑞士山地常被称为“哈萨克斯坦的瑞士”，区内湖泊逾30座，花岗岩体历经古生代岩浆侵入、后经风化冰蚀塑造出如今浑圆的岩丘与巨石群，2000年设立布拉拜国家公园（Wikipedia/meganstarr.com WebSearch 2026）",
+  source: "布拉拜（旧称博罗沃耶）：哈萨克斯坦北部科克舍套丘陵东段一片松林、花岗岩丘陵与湖泊交织的地带，因景致酷似瑞士山地常被称为“哈萨克斯坦的瑞士”，区内有14座主要湖泊，花岗岩体历经古生代岩浆侵入、后经风化冰蚀塑造出如今浑圆的岩丘与巨石群，2000年设立布拉拜国家公园（Wikipedia/meganstarr.com WebSearch 2026）",
 };
 
 const TORYSH_VALLEY_OF_BALLS: TerrainEntry = {
@@ -14307,7 +14307,7 @@ const GORSKI_KOTAR: TerrainEntry = {
   bbox: [14.45, 45.28, 14.85, 45.55],
   viewScale: 1.2,
   label: { lon: 14.55, lat: 45.57, rotation: 0 },
-  source: "戈尔斯基科塔尔：克罗地亚山地覆盖率最高、森林最茂密的地区，地处阿尔卑斯山系与第纳里克山系的过渡地带，里斯尼亚克峰海拔1528米；1997年设立的里斯尼亚克国家公园内还保留库帕河源头——一处深潭状泉眼，是克罗地亚重要的水源涵养区（Wikipedia/np-risnjak.hr WebSearch 2026）",
+  source: "戈尔斯基科塔尔：克罗地亚山地覆盖率最高、森林最茂密的地区，地处阿尔卑斯山系与第纳里克山系的过渡地带，里斯尼亚克峰海拔1528米；里斯尼亚克国家公园（1953年设立、1997年扩大至现有范围）内还保留库帕河源头——一处深潭状泉眼，是克罗地亚重要的水源涵养区（Wikipedia/np-risnjak.hr WebSearch 2026）",
 };
 
 const PAPUK: TerrainEntry = {
@@ -14491,7 +14491,7 @@ const SAVA_RIVER_CROATIA: TerrainEntry = {
   axis: [[15.65, 45.75], [16.55, 45.40]],
   viewScale: 1.3,
   label: { lon: 16.10, lat: 45.90, rotation: -15 },
-  source: "萨瓦河：多瑙河最长的支流，全长992公里，发源于斯洛文尼亚阿尔卑斯山区，流经萨格勒布后向东南穿过克罗地亚中部，是克罗地亚水量最大的河流与重要的内河航运通道，河谷沿线是克罗地亚人口最密集的农业与城市带之一，锡萨克以下可通航（Wikipedia WebSearch 2026）",
+  source: "萨瓦河：多瑙河水量最大的支流，全长945公里（计入较长的源头萨瓦多林卡河为990公里），发源于阿尔卑斯山区，流经萨格勒布后向东南穿过克罗地亚中部，是克罗地亚水量最大的河流与重要的内河航运通道，河谷沿线是克罗地亚人口最密集的农业与城市带之一，锡萨克以下可通航（国际萨瓦河流域委员会 / ICPDR，核实 2026-09-11）",
 };
 
 const DRAVA_RIVER_CROATIA: TerrainEntry = {
@@ -14834,7 +14834,7 @@ const LABE_RIVER: TerrainEntry = {
   axis: [[15.53, 50.78], [14.24, 50.87]],
   viewScale: 1.6,
   label: { lon: 14.9, lat: 50.55, rotation: -40 },
-  source: "易北河（拉贝河）：中欧主要大河之一，全长约1165公里，其中约三分之一流经捷克境内；源头在克尔科诺谢山南坡、海拔约1386米的拉贝草甸，向西南、再转北流贯波希米亚盆地，最终在赫热恩斯科附近切穿克鲁什内山进入德国，出境处海拔约115米，是捷克全境地势最低点（Britannica/Wikipedia WebSearch 2026）",
+  source: "易北河（拉贝河）：中欧主要大河之一，全长约1094公里（FGG Elbe 捷德跨国流域委员会口径，核实 2026-09-11），其中约三分之一流经捷克境内；源头在克尔科诺谢山南坡、海拔约1386米的拉贝草甸，向西南、再转北流贯波希米亚盆地，最终在赫热恩斯科附近切穿克鲁什内山进入德国，出境处海拔约115米，是捷克全境地势最低点（Britannica/Wikipedia WebSearch 2026）",
 };
 
 const VLTAVA_RIVER: TerrainEntry = {

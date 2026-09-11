@@ -3828,8 +3828,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   london: {
+    // 其余 sources: 「伦敦金融城（一平方英里）+ 周围 32 个自治市、没有单一市政厅式中心」这一层核实无误。
+    //   五座机场 LHR／LGW／STN／LTN／LCY 代码现行有效、无更名。2026-09-10 核。
+    // identity sources: ⚠️ **原文的「都会区约 1400 万」对不上任何一档 ONS 口径**：大伦敦 2024 年中约 910 万、伦敦建成区 2021 年普查约 1056 万、伦敦金融城约 8 千人。1400 万只见于非 ONS 发布的通勤区／FUA 口径。按仓库规矩「都会区」不禁用、**但要写明发布方与年份** —— 写不出就不写，改用大伦敦口径。
+    //   📌 待办：ONS 的 mid-2025 年中估计已于 **2026-07-29** 发布（较 mid-2024 降约 0.29%），本轮未取到大伦敦精确表格值；下一轮走 Nomis 表拿到精确数后更新。若要恢复都会区那一档，必须找到具名发布方（如 Eurostat FUA）并写明年份。
     identity:
-      "伦敦是英国首都，也是英格兰的首府，都会区人口约 1400 万，是全球金融、文化和交通枢纽之一。城市跨泰晤士河两岸，从罗马时代的“伦蒂尼恩”发展至今，两千年里一直是这一带的中心。它由“伦敦金融城”（一平方英里的古城）和周围 32 个自治市组成，没有单一的市政厅式中心。",
+      "伦敦是英国首都，也是英格兰的首府，大伦敦（33个自治市）2024年年中人口约910万（英国国家统计局），是全球金融、文化和交通枢纽之一。城市跨泰晤士河两岸，从罗马时代的“伦蒂尼恩”发展至今，两千年里一直是这一带的中心。它由“伦敦金融城”（一平方英里的古城）和周围 32 个自治市组成，没有单一的市政厅式中心。",
     // howItWorks sources: Wikipedia: Greater London (2024 pop, 1,572 km²); London boroughs (responsibilities, Inner/Outer); Greater London Authority. See docs/city-depth-redesign-2026-09-06.md §4
     howItWorks:
       "人们口中的伦敦，官方称为大伦敦，由 32 个伦敦自治市和伦敦金融城组成。2000 年设立的大伦敦政府有民选的市长和议会，掌管交通、警务、消防和战略规划，其中交通由伦敦交通局运营；学校、住房、社会服务、垃圾、地方道路、规划审批和市政税，则由各自治市议会负责。伦敦金融城只有约 2.9 平方公里，却拥有独立的市政公司和自己的 Lord Mayor。伦敦是多中心的：金融城与威斯敏斯特是传统的中心，金丝雀码头则是 1980 年代以后新建的金融区。伦敦人说位置，用的是邮编区号，如 SW1、E14，而不是自治市的名字；伦敦交通局划定的 1 至 9 收费区，决定着通勤的成本与居住的选择。初来的人最容易犯的错，是把伦敦金融城当成“伦敦市”，或者以为伦敦市长也管垃圾和学校这些地方事务。",
@@ -3981,8 +3985,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   edinburgh: {
+    // 零改动留痕（2026-09-10）：EDI 机场代码现行有效。
+    //   ✅ **零争议红线判定（判据：涉及仍在持续的对立状态、或带评价性表述 → 删；定位性简短事实 → 留）**：
+    //   全文**未出现**苏格兰独立公投或相关政治议题；老城与新城的世界遗产、城堡、8 月艺术节与军乐节、启蒙运动史
+    //   都是定位性事实、无评价 —— **留，不改**。
+    // identity sources: 人口：City of Edinburgh 议会区 **531,370（2025 年年中，NRS，1 级，2026-07-14 发布）**。原文「约 55 万」偏高且无年份，而 howItWorks 早已写对（C6-h）。
+    //   📌 苏格兰的普查与统计**独立于英格兰与威尔士**：苏格兰普查 2022 年（因疫情比英威晚一年），下一次 2031 年。
     identity:
-      "爱丁堡是苏格兰的首府，人口约 55 万，建在几座火山岩丘和冰川刻蚀的地形上，老城和新城一起被列为世界遗产。城市以城堡、8 月的国际艺术节和军乐节、以及启蒙运动的历史闻名。它不是英国首都，但有自己的议会。",
+      "爱丁堡是苏格兰的首府，2025年年中议会区人口约53.1万（苏格兰国家档案局），建在几座火山岩丘和冰川刻蚀的地形上，老城和新城一起被列为世界遗产。城市以城堡、8 月的国际艺术节和军乐节、以及启蒙运动的历史闻名。它不是英国首都，但有自己的议会。",
     // howItWorks sources: 苏格兰国家档案局（NRS）《Mid-2025 population estimates》官方时间序列表（Table 1），时点 2025-06-30，2026-07-14 发布。子代理下载原表逐行解析，**级别 1**。
     //   https://www.nrscotland.gov.uk/publications/mid-2025-population-estimates/
     //   发布节奏：**周期不固定**（mid-2025 滞后约 13 个月于 2026-07 发布，历史上也有 4 月发布的年份）。下一期按「参考日 + 12–14 个月」估算，并到 NRS publications 页看该年是否已标 (outdated)。
@@ -4057,8 +4067,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   inverness: {
+    // 零改动留痕（2026-09-10）：INV 机场代码现行有效。盖尔语「尼斯河口」的地名释义属实。
+    //   ✅ **零争议红线判定**：卡洛登战场用的是「庄重的历史遗址」这类中性词，**「高地清洗」（Highland Clearances）这个词组根本没有出现在正文里** ——
+    //   按判据（定位性简短事实 → 留），**不改**。
+    // identity sources: 人口：城镇（settlement）**48,248（2022 年普查）**，原文「约 6 万」高了约四分之一。⚠️ **因弗内斯没有独立的 council**，归高地议会（Highland Council，约 2.57 万 km²、2025 年中约 23.7 万人）辖——「市区人口」这个说法容易与整个议会区混淆，已改为写明「城镇」这一档。
+    //   📌 NRS 的聚落／城镇口径**已停止年度滚动更新**，只能用普查年份（上次 2022、下次 2031）——所以这个数不算过期。
+    //   ✅ 「英国最北的城市之一」带「之一」限定，符合规范，不改。
     identity:
-      "因弗内斯是苏格兰高地的首府，位于尼斯河汇入马里湾处、大峡谷（Great Glen）的东北端，市区人口约 6 万，是英国最北的城市之一，也是探索高地、天空岛和北部海岸线的门户。名字在盖尔语里意为“尼斯河口”。",
+      "因弗内斯是苏格兰高地的首府，位于尼斯河汇入马里湾处、大峡谷（Great Glen）的东北端，2022年人口普查城镇人口约4.8万（苏格兰国家档案局），是英国最北的城市之一，也是探索高地、天空岛和北部海岸线的门户。名字在盖尔语里意为“尼斯河口”。",
     // howItWorks sources: 苏格兰国家档案局（NRS）《Mid-2025 population estimates》官方时间序列表（Table 1），时点 2025-06-30，2026-07-14 发布。子代理下载原表逐行解析，**级别 1**。
     //   https://www.nrscotland.gov.uk/publications/mid-2025-population-estimates/
     //   发布节奏：**周期不固定**（mid-2025 滞后约 13 个月于 2026-07 发布，历史上也有 4 月发布的年份）。下一期按「参考日 + 12–14 个月」估算，并到 NRS publications 页看该年是否已标 (outdated)。
@@ -5462,7 +5478,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     identity:
       "意大利是南欧的一个半岛国家，本土呈一只“靴子”形状伸入地中海，加上西西里、撒丁两座大岛，面积约 30 万平方公里，2025年末常住人口约5894万（意大利国家统计局）。地形以山地和丘陵为主：北部是年轻高峻的阿尔卑斯山（与法国、瑞士、奥地利交界），亚平宁山脉像一条脊椎贯穿整个半岛，中部有大片古老丘陵（托斯卡纳等），北部的波河平原是全国最大的连片平地，南部和西西里、坎皮群岛一带则是活跃的火山带。",
     layout:
-      "可以把意大利大致分成：中部（罗马、佛罗伦萨，古典与文艺复兴的核心）、西北部（米兰、都灵，金融和工业中心，靠阿尔卑斯山）、东北部（威尼斯、博洛尼亚，威尼斯潟湖和多洛米蒂山）、南部（那不勒斯、巴里，维苏威火山和普利亚的橄榄园）、西西里（巴勒莫、卡塔尼亚，欧洲最高的活火山埃特纳）、撒丁岛（卡利亚里，地中海最古老陆块之一）。",
+      "可以把意大利大致分成：中部（罗马、佛罗伦萨，古典与文艺复兴的核心）、西北部（米兰、都灵，金融和工业中心，靠阿尔卑斯山）、东北部（威尼斯、博洛尼亚，威尼斯潟湖和多洛米蒂山）、南部（那不勒斯、巴里，维苏威火山和普利亚的橄榄园）、西西里（巴勒莫、卡塔尼亚，欧洲不计高加索的最高活火山埃特纳）、撒丁岛（卡利亚里，地中海最古老陆块之一）。",
     gettingAround:
       "意大利高铁（Frecciarossa 等）网络发达，罗马-米兰、罗马-佛罗伦萨、罗马-那不勒斯等主干线很方便，常比飞机省心。国内航线主要用于跨大区快速连接、以及往返西西里、撒丁两岛。大城市有地铁，威尼斯市内交通靠步行和水上巴士（无汽车）。自驾靠右，历史城区多设“有限交通区”（ZTL），未经许可驶入会罚款。餐厅账单常有面包/服务费（coperto/servizio），小费不强制、留些零钱即可。自来水多数城市可直饮。电压 230V、欧标两圆脚插头。",
     culture:
@@ -5691,7 +5707,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   卡塔尼亚 comune **约 296,984**（2026-01-01）；**Città Metropolitana di Catania 58 个市镇、约 1,067,550**（3 级转引 ISTAT，2026-09-08 核）。
     //   「西西里第二大城市」按 comune 人口成立（巴勒莫 comune 约 62.6 万）。
     identity:
-      "卡塔尼亚在西西里岛东岸，紧挨着欧洲最高的活火山埃特纳，大都会市（città metropolitana）约 107 万人（2026 年，ISTAT）。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
+      "卡塔尼亚在西西里岛东岸，紧挨着欧洲（不计高加索）最高的活火山埃特纳，大都会市（città metropolitana）约 107 万人（2026 年，ISTAT）。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
     // howItWorks sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
     //   独立复核：comune 296,984、大都会市（58 市镇）1,067,550，均为 2026-01-01（ISTAT）。数字准确，缺时点。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
     //   https://www.istat.it/
@@ -6759,8 +6775,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   "rhodes-town": {
+    // 零改动留痕（2026-09-10）：ZTH 不适用；罗德机场 RHO 代码现行有效、无更名。
+    //   ✅ 零争议红线：奥斯曼／威尼斯／拜占庭统治史按「这段历史在城里留下了痕迹」这类定位性事实表述，无评价、
+    //   未牵涉现存的希土／爱琴海／北马其顿争议 —— 留。与本库地形条目 `rhodes` 并排读一致。
+    // identity sources: 人口：罗德市镇单元（即罗德城）**56,440（2021 年普查，ELSTAT）**。⚠️ 口径分层：2011 年起**整个罗德岛是一个市镇**（约 1400 km²、约 12.5 万人），罗德城只是其中的市镇单元。**专项核过「城 vs 岛」有没有混——没有混。** 与本库地形条目 `rhodes` 并排读无矛盾（那一条不含人口数字）。
     identity:
-      "罗德城是罗德岛的首府，人口约5万，中世纪古城由医院骑士团于14至16世纪修筑城防，是欧洲保存最完好的中世纪城防城市之一。",
+      "罗德城是罗德岛的首府，2021年人口普查市镇单元人口约5.6万（希腊统计局），中世纪古城由医院骑士团于14至16世纪修筑城防，是欧洲保存最完好的中世纪城防城市之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rhodes city (seat of the municipality of Rhodes covering the whole island since 2011, ~1,400 km², ~125,000; city ~56,000 2021; capital of the South Aegean region and Dodecanese; Old Town UNESCO 1988, Knights 1309–1523; Mandraki; airport 14 km Paradisi; ferries Piraeus; Lindos ~50 km; Turkey ~18 km)
     howItWorks:
       "罗得市是罗得岛的主城，2011 年起整座岛是一个市镇，约 1,400 平方公里、12.5 万人，由民选的市长治理，市本身约 5.6 万人；它也是南爱琴海大区与十二群岛的首府，大区有民选的大区长，警察与学校归中央。中世纪的城墙围住老城，1309 至 1523 年间圣约翰骑士团在此建起骑士大街与大团长宫，1988 年列入世界遗产，曼德拉基港在城墙北面，据传巨像曾跨在港口上；新城与埃利海滩在老城以北，机场在西南 14 公里的帕拉迪西，林多斯在南面约 50 公里，土耳其海岸在对面约 18 公里，比雷埃夫斯的渡轮要十几个小时。初来的人最容易犯的错，是把老城当作罗得，而市镇是整座 80 公里长的岛，老城只是北端的一角。",
@@ -6845,8 +6865,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   ioannina: {
+    // 零改动留痕（2026-09-10）：IOA 机场代码现行有效。✅ 零争议红线通过。
+    // identity sources: 人口：城区（settlement）**64,896（2021 年普查）**；市镇单元 81,627、整个市镇 113,978——三档差很远，正文写明用的是城区档。该数**早已在本条目 howItWorks 的注释里**，只是没进 identity（C6-h）。
     identity:
-      "约阿尼纳是伊庇鲁斯地区的中心城市，人口约7万，坐落在帕姆沃蒂斯湖畔，是希腊西北部品都斯山区的门户城市。",
+      "约阿尼纳是伊庇鲁斯地区的中心城市，2021年人口普查城区人口约6.5万（希腊统计局），坐落在帕姆沃蒂斯湖畔，是希腊西北部品都斯山区的门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ioannina (municipality ~403 km²; 113,978 2021, city 64,896; Epirus capital; 500 m; Lake Pamvotis with island; castle with mosques; silversmithing; university ~25,000; Ottoman 1430–1913; Zagori/Vikos ~40 km; Egnatia; airport)
     howItWorks:
       "约阿尼纳是伊庇鲁斯大区的首府，市镇约 403 平方公里、2021 年约 11.4 万人，由民选的市长治理，城本身约 6.5 万；大区有民选的大区长，警察与学校归中央。城市在海拔 500 米的帕姆沃提斯湖西岸，城堡在湖边的半岛上，里面是拜占庭与奥斯曼时期的建筑，湖中的小岛有六座修道院，靠渡船往来，1430 至 1913 年间这里是奥斯曼帝国的重要行政中心，银器是它的老手艺；1970 年创办的大学约 2.5 万学生，扎戈里的石头村与维科斯峡谷在北面约 40 公里，埃格纳提亚高速把它与塞萨洛尼基连起来，机场在城北。初来的人最容易犯的错，是把约阿尼纳当作去扎戈里的中转站，而它是希腊西北部的大学城与行政中心。",
@@ -6886,8 +6908,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   volos: {
+    // 零改动留痕（2026-09-10）：✅ 零争议红线通过；本批未出现价格与签证天数（C6e／C6f 不适用）。
+    // identity sources: 人口：市镇单元 **85,803（2021 年普查）**，数字本身对，补上年份与口径。⚠️ 沃洛斯**市镇** 139,670 与**市镇单元** 85,803 是两个差很多的数，不写口径会被读成全市。
     identity:
-      "沃洛斯是色萨利地区的主要港口城市，人口约8.6万，坐落在帕加西提库斯湾畔、皮利翁山脚下，是探索皮利翁半岛的门户城市。",
+      "沃洛斯是色萨利地区的主要港口城市，2021年人口普查市镇单元人口约8.6万（希腊统计局），坐落在帕加西提库斯湾畔、皮利翁山脚下，是探索皮利翁半岛的门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Volos (municipality ~387 km², ~140,000; municipal unit 85,803 2021; Magnesia capital, Thessaly; Pagasetic Gulf, third port of mainland Greece; Argonauts waterfront; tsipouradika; Pelion villages 20–40 km; ferries to Sporades; University of Thessaly; steel; 2023 storm Daniel)
     howItWorks:
       "沃洛斯是色萨利马格尼西亚地区单位的首府，市镇约 387 平方公里、约 14 万人，由民选的市长治理，城区约 8.6 万；大区有民选的大区长，警察与学校归中央。城市在帕加西提科斯湾的顶端、皮利翁山的脚下，是希腊大陆第三大港，阿尔戈英雄大道沿着海滨，齐普罗酒馆是它的日常，色萨利大学在城里，钢铁与水泥是它的工业；皮利翁山的村庄在东面 20 到 40 公里的山坡上，小火车从城郊开上山，渡轮从港口开往斯基亚索斯与斯科佩洛斯，2023 年的风暴“丹尼尔”淹了城区。初来的人最容易犯的错，是把沃洛斯当作去斯波拉泽斯群岛的码头，而它是一座有港口、大学与工业的地区首府，皮利翁的村庄在山上。",
@@ -6982,8 +7006,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4–6月和9–10月最舒服，狂欢节在1–2月；夏季炎热。市区一天。作为去意大利渡轮的港口或去奥林匹亚、凯法利尼亚的中转站。",
   },
   zakynthos: {
+    // 零改动留痕（2026-09-10）：ZTH 机场代码现行有效、无更名。
+    // identity sources: 人口：扎金索斯镇城区 **9,760**、全岛（单一市镇）**40,508**，均 2021 年普查。✅ **专项核过「城 vs 岛」有没有混——两个数都对、没有混**（这正是拉布安巴焦栽过的那种形状）。
+    //   ✅ 「2022 年地震后沙滩关闭」经核属实：2022-09 扎金索斯与凯法利尼亚间海域 5.4 级地震致纳瓦吉奥崖体崩塌，封闭延长至 2026-10-31。1953 年地震重建、1980 年帕纳约蒂斯号搁浅、1999 年国家海洋公园均属实。
     identity:
-      "扎金索斯（意大利语名扎金特）是伊奥尼亚群岛南部的岛屿，岛都扎金索斯镇人口约1万，全岛约4万。1953年的大地震几乎摧毁了全镇，战后按威尼斯风格重建，索洛莫斯广场以希腊国歌作者狄奥尼修斯·索洛莫斯命名，圣狄奥尼修斯教堂是岛的守护圣人教堂。西北海岸的纳瓦吉奥（沉船湾）——1980年搁浅的走私船“帕纳约蒂斯”号躺在白崖下的沙滩上——是希腊最著名的风景之一，2022年地震后因落石风险沙滩本身关闭，只能从崖顶观景台或船上远看；南岸的拉加纳斯湾是1999年设立的国家海洋公园，蠵龟在此产卵，夏季机场夜间禁飞以保护它们。",
+      "扎金索斯（意大利语名扎金特）是伊奥尼亚群岛南部的岛屿，岛都扎金索斯镇城区人口约1万、全岛（扎金索斯市镇）约4万，均为2021年人口普查数（希腊统计局）。1953年的大地震几乎摧毁了全镇，战后按威尼斯风格重建，索洛莫斯广场以希腊国歌作者狄奥尼修斯·索洛莫斯命名，圣狄奥尼修斯教堂是岛的守护圣人教堂。西北海岸的纳瓦吉奥（沉船湾）——1980年搁浅的走私船“帕纳约蒂斯”号躺在白崖下的沙滩上——是希腊最著名的风景之一，2022年地震后因落石风险沙滩本身关闭，只能从崖顶观景台或船上远看；南岸的拉加纳斯湾是1999年设立的国家海洋公园，蠵龟在此产卵，夏季机场夜间禁飞以保护它们。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakynthos town (seat of the island municipality; island ~406 km², ~40,000; municipal unit ~17,000, town ~9,800 2021; Ionian Islands region; rebuilt after 1953 earthquake; Solomos square; Bochali castle; Navagio ~30 km; Laganas turtles/marine park 8 km; airport 4 km; ferry Kyllini 1 h)
     howItWorks:
       "扎金索斯镇是扎金索斯岛的主镇，整座岛约 406 平方公里、4 万人，是一个市镇，由民选的市长治理，镇本身约 1 万人；伊奥尼亚群岛大区有民选的大区长，警察与学校归中央。1953 年的地震把威尼斯时期的镇子几乎夷平，今天的镇是按抗震标准重建的，索洛莫斯广场与海滨大道是它的中心，博哈利的城堡在镇上方的山上；沉船湾在西北约 30 公里的悬崖下，只能从海上看，拉加纳斯在南面 8 公里，是海龟保护区也是派对海滩，蓝洞在北端，机场在镇南 4 公里，渡轮到基利尼约一小时。初来的人最容易犯的错，是把沉船湾当作扎金索斯，而它在岛的另一头，镇上的生活与明信片上的悬崖毫不相干。",
@@ -7820,6 +7847,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   delft: {
+    // 零改动留痕（2026-09-10）：✅ identity 正文**已经是「2026 年 1 月 1 日市镇人口约 X 万（荷兰中央统计局）」的完整写法**——
+    //   年份、口径（gemeente）、机构都在正文里，不是只藏在注释中。这是本轮十城里唯一一开始就做对的一组。
+    //   ✅ 口径：已确认荷兰**没有官方「都会区」口径**（CBS 已停发聚集区／城市地区分类，Randstad 也从来不是年度统计表），正文未出现无出处的都会区数字。
+    //   ⚠️ 本轮尝试直接抓 CBS 表格逐位复核数值，但那是 Excel 下载、抓不到明细行；数值系 2026-09-09 同批核实、留有一手 CBS 出处注释，未发现矛盾证据。
+    //   下一轮若要坐实，用能读 StatLine API 的工具核数字本身即可，**不必再查「要不要写年份口径」——那件事已经做对了**。
     // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
     //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
     //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
@@ -7846,6 +7878,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   leiden: {
+    // 零改动留痕（2026-09-10）：同 delft —— identity 正文已含年份、gemeente 口径与 CBS 机构名；无无出处的「都会区」数字。
+    //   CBS 发布节奏：1 月 1 日口径的**临时数次年 3 月上旬**、**定编数同年 6 月下旬**（2026-01-01 定编数已于 2026-06-23 补齐）。
     // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
     //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
     //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
@@ -7951,6 +7985,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   zwolle: {
+    // 零改动留痕（2026-09-10）：同 delft —— identity 正文已含年份、gemeente 口径与 CBS 机构名；无无出处的「都会区」数字。
+    //   ✅ 零争议红线：未涉殖民史评价或移民／融合议题。
     // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
     //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
     //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
@@ -10004,10 +10040,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–4月最好，斯米兰只在此期间开放；12–2月最挤。住三到五晚，配一次斯米兰。雨季酒店便宜但海况差、部分关闭。",
   },
   "ko-lanta": {
-    // identity sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
-    //   兰塔岛：10,830（2012）是可查到的最后一个全岛口径数；**乡镇级数据显示兰达耶乡镇 2022 年末已降到 6,942**（沙拉丹镇 1983 年已分出、是另一个乡镇），提示全岛口径大概率也在下降。**本轮没有找到能可靠合并两个乡镇的全岛最新数，因此只补年份 + 写明可能已下降，不换一个没核到的数。** 3 级，2026-09-10 核。
+    // identity sources: 桥：**西里兰塔大桥 2016-04-22 通车，连的是兰达诺伊 ↔ 兰达耶两岛之间**；到大陆仍靠汽车渡轮（Klong Mak ↔ Ban Hua Hin），没有通往大陆的桥。原 identity 写「2015 年」「连到大陆」**两处都错**，而同条目 howItWorks 一直是对的。对应 issue #222。（另有通往大陆的桥在规划中，**不写** —— 那是会过期的承诺。）2026-09-10 核。
     identity:
-      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，2012 年人口约1.1万（本轮未找到可信的更新一期，乡镇级 2022 年的数据显示可能已下降）。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
+      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，2012 年人口约1.1万（本轮未找到可信的更新一期，乡镇级 2022 年的数据显示可能已下降）。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2016年通车的西里兰塔大桥把大小兰塔两岛连了起来，再往大陆仍要坐汽车渡轮，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
     // howItWorks sources: 兰达耶岛（主岛）**10,830 人（2012）**；兰达县（含大小兰达岛）30,500 人（2012）
     //   或 26,805（2010 年 NSO 普查）——3 级，2026-09-08 核。
     //   **howItWorks 原写的「约 2 万」三个数都对不上**：注释称它转引自英文维基关于苏梅岛的
@@ -10685,8 +10720,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "国土狭长，南北气候差异明显：北部11月至次年3月凉爽干燥，南部全年温暖、5-10月为雨季；建议按目的地查询当地具体季节安排。",
   },
   hanoi: {
+    // identity sources: 人口：GSO/NSO 2024 年中期人口与住房调查（基准 2024-04-01）**8,685,607**（1 级）。此前正文 850 万、howItWorks 886 万（英文维基推算）、官方 869 万三个数打架，统一取 GSO。2026-09-10 核。
     identity:
-      "河内定都的传说本身就与这座城市的名字有关——1010年李朝开国君主李太祖把都城从地势险要但闭塞的华闾（今宁平）迁到这里时，相传见到一条巨龙从红河腾空而起，因此把新都命名为“升龙”（Thăng Long），此后近八百年间它一直是越南的政治中心。河内是越南首都，人口约850万，坐落于红河右岸，是越南政治、文化中心。",
+      "河内定都的传说本身就与这座城市的名字有关——1010年李朝开国君主李太祖把都城从地势险要但闭塞的华闾（今宁平）迁到这里时，相传见到一条巨龙从红河腾空而起，因此把新都命名为“升龙”（Thăng Long），此后近八百年间它一直是越南的政治中心。河内是越南首都，2024年4月中期人口调查约869万人（越南统计总局），坐落于红河右岸，是越南政治、文化中心。",
     // howItWorks sources: Wikipedia (2026-09): Hanoi (centrally-governed city; 3,360 km² after 2008 Hà Tây merger; ~8.86 million 2025; 51 wards + 75 communes after 2025 reform); Administrative divisions of Vietnam (district level abolished 2025-07-01)
     howItWorks:
       "河内是越南的“中央直辖市”，级别与省相同，由人民委员会与人民议会治理；2025 年 7 月 1 日起越南撤销了县区一级，全国 63 个省级单位合并为 34 个，河内之下直接是 126 个坊与社——51 个坊、75 个社——过去的“郡”只留在人们的口语和地名里。2008 年河西省并入后市域约 3,360 平方公里，2025 年人口约 886 万，红河把它分成两岸，主城在西岸。城市从还剑湖向外生长：三十六行街的老城区在湖北，法国区在湖南，巴亭是政府与使馆所在，西湖畔是富裕的住宅区，纸桥、美亭、河东是 2000 年代以来的新城，红河东岸的龙边正在成为新的一片。地址写“门牌、街、坊”，门牌之下常有 ngõ（巷）、ngách（弄）的层层编号。两条城市铁路线运营中，摩托车仍是绝对的主角。初来的人最容易犯的错，是把老城区当作整个河内，而这座城的大部分是 2000 年后建起的新区。",
@@ -10822,11 +10858,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10-12月与3-4月气候最宜人；建议选择过夜游船体验，在船上欣赏下龙湾日出日落。",
   },
   "nha-trang-city": {
+    // identity sources: 人口：改制前原市区约 50 万（与本条目 howItWorks 一致）；原文 54 万缺年份且与 howItWorks 打架。行政：2025-07-01 庆和省与宁顺省合并，**省名仍为庆和省**、省会在芽庄。2026-09-10 核。
     identity:
-      "芽庄是越南南中部沿海城市，人口约54万，坐落于芽庄湾畔，是越南知名的海滨度假与潜水目的地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nha Trang (former city ~500,000; since 2025-06-16 the core is Nha Trang ward, 47 km², 136,118, under Khánh Hòa province, which absorbed Ninh Thuận, capital Nha Trang; 6 km Trần Phú beach; Po Nagar; Vinpearl Hòn Tre; Cam Ranh airport ~35 km; railway) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+      "芽庄是庆和省省会（2025年庆和省与宁顺省合并后仍称庆和省），改制前原市区人口约50万，坐落于芽庄湾畔，是越南知名的海滨度假与潜水目的地。",
+    // howItWorks sources: ⚠️ **合并方向原本写反了**：是宁顺省并入庆和省、新省仍名庆和省、中心在芽庄（新省 8,555.9 km²、约 188.2 万人）。注册表 admin1Zh 写的是「庆和省」——**注册表对、正文反**。**英文侧本来就写对了，只有中文写反** —— 纯中英不同步，check:zhen 只比数字、看不见方向。由全库越南合并扫描发现，非核实方报出。2026-09-10 核。
     howItWorks:
-      "芽庄是庆和省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属庆和省的坊，市中心的那一片就叫芽庄坊，约 47 平方公里、13.6 万人，整个原市区约 50 万人；庆和省同年并入了宁顺省。城市沿 6 公里的海滩展开，陈富路是海滨的主轴，酒店排在路的一侧，本地人的街区在后面几个街区，婆那加占塔在城北的河口，珍珠岛度假区在海上的竹岛，靠缆车与渡轮往来，火车站在市中心，金兰机场在南面约 35 公里。初来的人最容易犯的错，是把海滨大道当作芽庄，而本地人的市场与生活在离海几条街的后面。",
+      "芽庄是庆和省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属庆和省的坊，市中心的那一片就叫芽庄坊，约 47 平方公里、13.6 万人，整个原市区约 50 万人；宁顺省同年并入庆和省，新省仍称庆和省，行政中心就设在芽庄。城市沿 6 公里的海滩展开，陈富路是海滨的主轴，酒店排在路的一侧，本地人的街区在后面几个街区，婆那加占塔在城北的河口，珍珠岛度假区在海上的竹岛，靠缆车与渡轮往来，火车站在市中心，金兰机场在南面约 35 公里。初来的人最容易犯的错，是把海滨大道当作芽庄，而本地人的市场与生活在离海几条街的后面。",
     layout:
       "城市沿芽庄湾海滩展开，占婆塔遗址位于市区北侧，多座离岛分布于海湾之中，是跳岛游的主要目的地。",
     gettingAround:
@@ -10839,8 +10876,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "1-8月旱季最宜人，9-12月雨季偶有台风；跳岛游建议提前查询海况，雨季部分离岛航线会暂停。",
   },
   "da-lat": {
+    // identity sources: 人口：2022-12-31 为 258,014。⚠️ 官网 lamdong.gov.vn 的人口页本轮 WebFetch 被截断、未取到一手原文与口径（户籍 vs 常住），**故记 2 级**；下一轮重试该页确认。2026-09-10 核。
     identity:
-      "大叻是越南中部高原一座避暑山城，人口约23万，海拔约1500米，法国殖民时期即被开发为避暑胜地，如今是越南重要的花卉与农产品产区。",
+      "大叻是林同省省会（2025年林同省吸收平顺、得农两省后仍称林同省），2022年底人口约25.8万，海拔约1500米，法国殖民时期即被开发为避暑胜地，如今是越南重要的花卉与农产品产区。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Đà Lạt (former provincial city ceased 2025-07-01; capital of Lâm Đồng province, which absorbed Bình Thuận and Đắk Nông; ~1,500 m Langbiang plateau; Yersin 1893, French hill station; Xuân Hương lake; Liên Khương airport ~30 km; no rail) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
     howItWorks:
       "大叻是林同省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属林同省的坊；林同省同年并入了平顺与得农两省，省域从高原一直到海边。城市在海拔约 1,500 米的朗平高原上，1893 年耶尔森发现这片高地后，法国人把它建成避暑地，别墅与松林是它的底色，春香湖在市中心，市场在湖边的坡上，花与蔬菜的农场围着市区，莲姜机场在南面约 30 公里，没有铁路，老火车站只留作纪念。初来的人最容易犯的错，是按越南的气候来想象大叻，而这里一天有四季，晚上要穿外套。",
@@ -10877,8 +10915,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12月至次年4月旱季最宜人；水上市场建议清晨5至7点前往，此时交易最为热闹。",
   },
   "phu-quoc-city": {
+    // identity sources: 人口：阳东坊 2020 年 44,607。**原文「约 2 万」偏低一倍以上。** 2025 年改革后阳东并入富国特区（2024-12-31 特区口径 157,629），坊一级不再单独发布 —— 已写进 claims-stale-exempt。2026-09-10 核。
     identity:
-      "阳东是富国岛最主要的城镇，人口约2万，是富国岛旅游与渔业活动的核心区域。",
+      "阳东是富国岛最主要的城镇，2020年人口约4.5万（2025年行政改革后阳东并入富国特区，坊一级不再单独统计），是富国岛旅游与渔业活动的核心区域。",
     // howItWorks sources: 免签天数**不写死**，只说以官方最新公布为准 —— 这是项目既有口径（CLAUDE.md「中国政策类内容口径」那一条的通用化），现已由 npm run check:claims 的 C6-f 规则强制。哈萨克斯坦概览那条「多国公民可享受最长30天免签入境，具体以哈萨克斯坦外交部最新公布为准」是正确写法的范例，因为带了转向官方口径的免责语。核实日 2026-09-07
     howItWorks:
       "富国岛是越南最大的岛，约 575 平方公里，2021 年设市，2025 年 6 月县级单位撤销后改为“特区”，直属安江省——坚江省同年并入安江，省会在迪石。岛上人口约 18 万，主镇阳东在西岸，机场、夜市与长滩都在附近，安泰在南端，缆车通往海上的香岛，北面是新建的度假城，鱼露与胡椒是老产业，2012 年启用的国际机场，加上对多国游客的免签入境（具体天数与适用国家以越南主管部门最新公布为准），让它成为面向国际的度假岛。初来的人最容易犯的错，是把富国当作一座度假村，而它是一个有 18 万居民、南北 50 公里的岛，特区政府在阳东。",
@@ -10894,8 +10933,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年4月旱季最宜人，海况平稳适合出海活动；5-10月雨季偶有强降雨，出行前建议查询天气。",
   },
   "ninh-binh": {
+    // identity sources: 人口：原宁平市 2023-12-31 为 153,992（2022 年 148,869）。**该统计单元已消失**——2024 年底并入华闾县、2025-07-01 再与河南、南定合并为新宁平省，只能停在改革前最后一版，已写进 claims-stale-exempt。
+    //   ⚠️ 另记：howItWorks 写「省会设在华闾坊」过度简化——2025-07-01 后原华闾市拆为华闾、东华闾、西华闾、南华闾 4 个坊，行政中心在原宁庆坊一带。下一轮软化这个专名。2026-09-10 核。
     identity:
-      "宁平的华闾曾是越南历史上第一个统一王朝的都城——968年丁部领在此建立大瞿越国、定都华闾，看中的正是这里喀斯特峰丛环绕、易守难攻的地形；丁朝与前黎朝先后在此建都四十余年，直到1010年李太祖认为这里地势过于闭塞、不利发展，才把都城迁往河内（升龙）。宁平是越南北部一座以喀斯特稻田景观闻名的城市，人口约13万，是探索长安名胜群与陆龙湾的核心门户，常被称为“陆上下龙湾”。",
+      "宁平的华闾曾是越南历史上第一个统一王朝的都城——968年丁部领在此建立大瞿越国、定都华闾，看中的正是这里喀斯特峰丛环绕、易守难攻的地形；丁朝与前黎朝先后在此建都四十余年，直到1010年李太祖认为这里地势过于闭塞、不利发展，才把都城迁往河内（升龙）。宁平是越南北部一座以喀斯特稻田景观闻名的城市，改制前原市区2023年底人口约15.4万，是探索长安名胜群与陆龙湾的核心门户，常被称为“陆上下龙湾”。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ninh Bình (province merged with Hà Nam and Nam Định 2025, capital at Hoa Lư ward — the former Ninh Bình city; Đáy river; Tràng An complex UNESCO 2014 — Tam Cốc, Tràng An, Bái Đính, Hoa Lư 10th-century capital — 7–15 km west; Hanoi ~95 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
     howItWorks:
       "宁平原是宁平省的省会城市，2025 年宁平省与河南、南定两省合并，省会设在华闾坊——也就是原宁平市与华闾县合并后的市区，县级单位撤销后坊直属于省。市镇在沱河边，是一座平淡的省城，火车站与长途车站在这里，河内在北面约 95 公里；人们来宁平要看的都在城西 7 到 15 公里的喀斯特山里：长安与三谷的游船、拜顶寺、10 世纪的华闾古都，2014 年一起列入世界遗产。初来的人最容易犯的错，是在宁平城里找山水，而山水在城外的田野与河道里，城只是一个下车的地方。",
@@ -11543,8 +11584,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人；作为工业城市，游客较少，适合对蒙古现代工业发展感兴趣的旅行者短暂停留。",
   },
   darkhan: {
+    // identity sources: ⚠️ **省份**：达尔汗属**达尔汗乌勒省**（1994 年从色楞格省分出），原 identity 写「色楞格省」是分省前的旧归属；**本条目 howItWorks 与 places-registry 的 admin1Zh 都是对的，只有 identity 错**。
+    //   人口：2022 年 87,696。「蒙古第三大城市」经交叉验证成立（与本库 erdenet「第二大」并排读自洽）。
+    //   📌 另记：places-registry 写「达尔汗乌**勒**省」、travel-content 的 howItWorks 写「达尔汗乌**拉**省」——同一省名两种音译并存，下一轮统一。
     identity:
-      "达尔汗是蒙古第三大城市，人口约9万，坐落于蒙古北部色楞格省，是蒙古纵贯铁路线上的重要工业与交通枢纽城市。",
+      "达尔汗是蒙古第三大城市，2022年人口约8.8万（蒙古国家统计局），坐落于蒙古北部达尔汗乌勒省，是蒙古纵贯铁路线上的重要工业与交通枢纽城市。",
     // howItWorks sources: Wikipedia (2026-09): Darkhan (city) (Darkhan-Uul capital; 87,696 2022; founded 1961 with Comecon aid; old/new Darkhan; 220 km N of Ulaanbaatar; Trans-Mongolian Railway; 86% in apartments)
     howItWorks:
       "达尔汗是蒙古国第三大城市，也是达尔汗乌拉省的省会——这个省 1994 年设立，是全国面积最小的省之一。2022 年人口约 8.8 万。这座城 1961 年在经互会的援助下作为工业城市从零建起，波兰、匈牙利等国的专家参与了建设，木材、肉类加工与建材是最初的产业，如今煤矿、冶金与建材是支柱。城市分成两片：老达尔汗是最早的工业区与车站一带，新达尔汗是后来规划的居住区，约 86% 的市民住在公寓里，蒙古包区在城市边缘，这在蒙古国的城市里是少见的比例。它在蒙古纵贯铁路与主干公路上，乌兰巴托在南面约 220 公里，俄罗斯边境在北面百余公里，周围是蒙古国重要的农业区。地址写“区、街、楼、门”。初来的人最容易犯的错，是把达尔汗当作过路的车站，而它是一座有自己规划与工业的城市。",
@@ -11577,8 +11621,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人；建议留出充足时间探索鄂尔浑河谷文化景观周边的游牧牧场体验，不宜只做古城遗址的短暂停留。",
   },
   moron: {
+    // identity sources: 人口：取**有明确年份**的 2017 年 39,404。⚠️ 网上流传的 46,918 在英文维基同一条目里与 infobox 的 2017 数并存且**没有年份**——按「拿不准就不要编一个年份」，不采用。1212.mn 证书错误无法访问，已进豁免表。「蒙古第五大城市」经与乔巴山条目互证仍成立、不受数字选择影响。
     identity:
-      "木伦是蒙古北部库苏古尔省首府，人口约4.7万，是探索库苏古尔湖的核心门户城市。",
+      "木伦是蒙古北部库苏古尔省首府，2017年人口约3.94万（蒙古国家统计局），是探索库苏古尔湖的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mörön (Mongolia; administrative centre of Khövsgöl Province, about 46,918 residents, the fifth most populous city in Mongolia; on the Delgermörön river at 1,710 m, the name meaning "river"; grown from a monastery of about 1809–1811 that housed some 1,300 monks before its destruction in 1937; Danzadardscha Khiid rebuilt in 1990; Museum of Khövsgöl Province with over 3,600 artifacts; electricity in 2004, paved road to Ulaanbaatar completed December 2014; Mörön Airport since 1957; record low −47.2 °C)
     howItWorks:
       "木伦是蒙古国库苏古尔省的省会，人口约 4.7 万，是蒙古第五大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中了全省的行政、医疗与中学。城市在德勒格尔木伦河边，海拔约 1,710 米，名字在蒙古语里就是“河”的意思。它从一座寺院长起来：约 1809 至 1811 年间此地建寺，鼎盛时住着约一千三百名僧人，1937 年被毁，1990 年在原址附近重建了丹赞达尔扎寺。省博物馆藏有三千六百多件文物。这座城的现代化来得很晚——2004 年才通电，到乌兰巴托的柏油公路 2014 年 12 月才修通，机场则从 1957 年就在运行，因此长期以来飞机比公路更管用。库苏古尔湖在北面约 100 公里的哈特嘎勒，省内还有驯鹿放牧的查坦人。冬季最低纪录约零下 47 度。初来的人最容易犯的错，是把木伦当作湖边的镇，而湖在一百公里之外。",
@@ -11594,8 +11639,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人，是探索库苏古尔湖的最佳季节；冬季湖面结冰，部分年份可开展冰上活动，但需专业向导安排。",
   },
   dalanzadgad: {
+    // identity sources: 人口：2024 年 32,674，底层引用**南戈壁省统计局 2025 年发布**——是这批九城里来源质量最好的一条（与本条目 howItWorks 一致）。
     identity:
-      "达兰扎德嘎德是蒙古南部南戈壁省首府，人口约3.3万，是探索戈壁古尔班赛罕国家公园的核心门户城市。",
+      "达兰扎德嘎德是蒙古南部南戈壁省首府，2024年人口约3.27万（南戈壁省统计局），是探索戈壁古尔班赛罕国家公园的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dalanzadgad (Mongolia; capital of Ömnögovi (South Gobi) Province, about 32,674 residents in 2024 over 476 km², divided into ten bags; 540 km south of Ulaanbaatar, paved road completed 2014; one of the warmest places in Mongolia in winter, extremes −36.1 °C to 39.9 °C, annual precipitation 134 mm; Yolyn Am gorge in Gurvan Saikhan National Park with streams and grass in the desert; dinosaur fossil sites and major mining in the province; airport runway the second longest in the country)
     howItWorks:
       "达兰扎德嘎德是蒙古国南戈壁省的省会，2024 年人口约 3.3 万，市域约 476 平方公里，下分十个“巴格”；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。它在戈壁的中部，乌兰巴托在北面 540 公里，柏油公路 2014 年才通到这里。这里的气候是戈壁式的：年降水量只有约 134 毫米，极端气温从零下 36 度到近 40 度，但按蒙古的标准，它的冬天算是全国最暖的地方之一。城西约 50 公里的三美山国家公园里有约林安峡谷，谷底有流水与青草，夏天仍能见到残冰，与四周的荒漠形成反差；洪高林沙丘与巴彦扎格的“火焰崖”分别在更远处，后者以恐龙蛋化石的发现闻名。省内的奥尤陶勒盖与塔本陶勒盖是蒙古最重要的两处矿区，采矿与旅游共同支撑本地。机场的跑道长度在全国仅次于乌兰巴托。初来的人最容易犯的错，是以为景点就在城边，而戈壁的距离以数百公里计。",
@@ -11652,8 +11698,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月是徒步塔王博格达山群的最佳季节；每年10月的金雕节是观赏哈萨克族传统猎鹰文化的最佳时机，但气温已转冷，需注意保暖。",
   },
   choibalsan: {
+    // identity sources: 人口：2025 年 38,537（与本条目 howItWorks 一致），是这批里最新的一期；原 identity 的「约 3.9 万」取整偏松，已与 howItWorks 对齐。
+    //   「蒙古第四大城市」经维基原文「after Ulaanbaatar, Darkhan, and Erdenet」直接印证。
+    //   ✅ 红线：howItWorks 提到 1939 年哈拉哈河战役与朱可夫纪念馆——广泛记载的军事史事实、不涉现代邻国关系或评价，**判定保留**。
     identity:
-      "乔巴山是蒙古东部道尔诺德省首府，人口约3.9万，坐落于克鲁伦河畔，是探索蒙古东部达乌尔草原的核心门户城市。",
+      "乔巴山是蒙古东部道尔诺德省首府，2025年人口约3.85万（蒙古国家统计局），坐落于克鲁伦河畔，是探索蒙古东部达乌尔草原的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Choibalsan (Mongolia; capital of Dornod Province in the east, 38,537 residents in 2025, the fourth-largest city in Mongolia after Ulaanbaatar, Darkhan and Erdenet; on the Kherlen river at 747 m; called Bayan Tümen until 1941, renamed for the 20th anniversary of the 1921 revolution after Khorloogiin Choibalsan; mainly Khalkha with Buryat and other groups; Choibalsan Airport with flights to Ulaanbaatar and Chinese cities; a railway to the Trans-Siberian, passenger service ending at Chuluunkhoroot on the border; museum to Georgy Zhukov near the site of the Battle of Khalkhin Gol; extremes −41.1 °C to 41.9 °C)
     howItWorks:
       "乔巴山是蒙古国东部道尔诺德省的省会，2025 年人口约 3.85 万，是继乌兰巴托、达尔汗与额尔登特之后蒙古第四大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。城市在克鲁伦河边，海拔约 747 米，四周是蒙古东部一望无际的草原——这片草原是世界上保存最完整的温带草原之一，蒙原羚成群迁徙的地方就在附近。它原名巴彦图门，1941 年为纪念 1921 年革命二十周年，改用当时领导人霍尔洛·乔巴山的名字。20 世纪它是通往北方铁路的节点，一条支线从这里接上西伯利亚大铁路，但客运只开到边境的楚伦霍洛特。城郊有纪念格奥尔基·朱可夫的博物馆，因为 1939 年的哈拉哈河战役就发生在这个省。机场有飞往乌兰巴托与中国城市的航班。极端气温从零下 41 度到近 42 度。初来的人最容易犯的错，是以为可以坐火车从这里出境，而客运列车只到边境为止。",
@@ -12091,8 +12140,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "旱季（5至9月）总体更适合出行，火山徒步与海岛活动受天气影响较小；雨季（10月至次年4月）局部地区多雨、部分山区道路可能受影响。跨岛出行建议预留充足中转时间，偏远岛屿的航班班次有限、易受天气取消。入境对肉类、部分药品与毒品管制严格，毒品相关罪行处罚极重，务必了解并遵守当地法规。",
   },
   jakarta: {
+    // identity sources: ⚠️ 首都地位：2024 年《DKJ 法》把雅加达法定名称改为「雅加达特区」、首都职能规划迁往努桑塔拉，**但迁都总统令尚未生效**；印尼宪法法院 2026-05 裁定在此之前雅加达仍是法定首都（1 级）。**正文改成带时点、不预断结果的写法。** howItWorks 早已带限定语、identity 没跟上（C6-h）。
+    //   人口：Jabodetabek **是 BPS 有官方统计的口径**（《Jabodetabek 通勤统计》，1 级），这个词可用；缺的是年份，各口径近年在 2800—3200 万之间。2026-09-10 核。
     identity:
-      "雅加达是印度尼西亚首都，都会区人口逾3000万，是全国政治、经济、金融与交通中心，也是东南亚最大的城市之一，坐落于爪哇岛西北岸。",
+      "雅加达目前仍是印度尼西亚的法定首都——2022 与 2024 年的立法已规划把首都职能迁往努桑塔拉，但迁都总统令尚未生效；大雅加达（Jabodetabek）都会区近年估计在2800万至3200万之间，是全国政治、经济、金融与交通中心，也是东南亚最大的城市之一，坐落于爪哇岛西北岸。",
     // howItWorks sources: 雅加达（2024 年《UU No.2/2024》起法律地位改为 DKJ 雅加达特区）2025 年上半年
     //   Dukcapil 户籍登记人口 11,010,514；该口径**每半年发布一次**。
     //   https://m.beritajakarta.id/read/149477/jumlah-penduduk-jakarta-tercatat-1101-juta-jiwa（2 级，2026-09-08 核）。
@@ -12220,8 +12271,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "前往多巴湖或武吉拉旺建议预留至少2至3天行程；旱季（多在5至9月前后）道路条件更佳，雨季山区道路可能因降雨受影响。",
   },
   makassar: {
+    // identity sources: 人口：2025 年约 149 万（与本条目 howItWorks 一致）。原 identity 把年份剥掉了。**未取得 BPS 一手数字，本轮按 3 级记**。「苏拉威西岛最大城市」排名可信（南苏拉威西省会 + 主要港口）。2026-09-10 核。
     identity:
-      "望加锡是苏拉威西岛最大城市，人口约150万，是南苏拉威西省首府与该岛主要海港与商贸中心，也是通往塔纳托拉查高地的门户。",
+      "望加锡是苏拉威西岛最大城市，2025年人口约149万，是南苏拉威西省首府与该岛主要海港与商贸中心，也是通往塔纳托拉查高地的门户。",
     // howItWorks sources: Wikipedia (2026-09): Makassar (South Sulawesi capital; 15 kecamatan; 2025 pop ~1.49 million; Mamminasata ~2.8 million; renamed from Ujung Pandang 1999); Subdivisions of Indonesia
     howItWorks:
       "望加锡是南苏拉威西省的首府，有民选的市长和市议会，市下分 15 个区（kecamatan）；2025 年人口约 149 万，是印度尼西亚东部最大的城市，而包括马罗斯、哥瓦、塔卡拉尔的都会区约 280 万人。1971 至 1999 年它叫乌戎潘当，之后恢复旧名。城市围绕港口生长：鹿特丹堡是荷兰时期的要塞，港口至今停泊着布吉人与望加锡人的皮尼西帆船，罗萨里海滩是填海造出的海滨广场。它是通往巴布亚、马鲁古的空中与海上枢纽，往东的航班多从这里转。布吉—望加锡文化里的航海传统是这座城的底色。地址在街道之下还写 RT/RW 邻里编号。市内出行靠汽车、摩托与公交。初来的人最容易犯的错，是把望加锡当作去托拉查的中转站，而它是整个印尼东部的中心城市。",
@@ -12237,8 +12289,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "前往塔纳托拉查建议预留至少2天行程，山路车程较长；旱季（约5至9月）道路条件更佳。当地传统葬礼仪式如逢机会参观需事先了解当地礼俗、保持尊重。",
   },
   "labuan-bajo": {
+    // identity sources: 人口：镇区 2024 年中约 7,226（与本条目 howItWorks 一致）；科莫多县（kecamatan）同期 62,224。**原文「约 3 万」两个口径都对不上、查无出处**，且与本条目 howItWorks 自相矛盾。2026-09-10 核。
     identity:
-      "拉布安巴焦是弗洛雷斯岛西端的港口小镇，人口约3万，是探索科莫多国家公园与周边岛屿的核心门户，近年因潜水与快艇跳岛游迅速发展为国际旅游城镇。",
+      "拉布安巴焦是弗洛雷斯岛西端的港口小镇，2024年年中镇区人口约7,200，是探索科莫多国家公园与周边岛屿的核心门户，近年因潜水与快艇跳岛游迅速发展为国际旅游城镇。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Labuan Bajo (Indonesia; a fishing town and the seat of West Manggarai Regency in East Nusa Tenggara, on the western tip of Flores, with a mid-2024 population of about 7,226; the main entry point to Komodo National Park, a UNESCO World Heritage Site of 128 islands, the largest being Komodo and Rinca, home to the Komodo dragon; designated in 2018 as one of five "super-priority" tourism destinations to spread visitors beyond Bali, with 13 five-star hotels, 68 other hotels, 4 villas and 26 dormitories by 2019; Komodo Airport 3 km from the centre; waste management a growing pressure, with the park and surrounding area producing an average of about 13 tonnes of rubbish a day)
     howItWorks:
       "拉布安巴焦是印度尼西亚东努沙登加拉省西曼加莱县的县城，在弗洛勒斯岛西端，2024 年中人口约 7,226；印尼实行地方自治，省与县（市）两级的行政首长均由直选产生，县政府管本地事务，国家公园则由中央的林业与环境部门管辖，两套系统并行。这座镇的角色是门户：科莫多国家公园由 128 座岛屿组成，其中科莫多岛与林卡岛最大，科莫多巨蜥只分布在这一带，1991 年列入世界遗产，而进园的船几乎都从这个港口出发。2018 年印尼把它列为五个“超级优先”旅游目的地之一，用意是把游客从巴厘岛分流出去，此后新建了大量住宿——到 2019 年已有 13 家五星级酒店与近百家其他住宿。快速增长也带来压力：公园与周边区域平均每天产生约 13 吨垃圾，其中不少是难以回收的塑料。科莫多机场在镇外 3 公里，巴厘岛有直飞。初来的人最容易犯的错，是以为在镇上就能看到巨蜥，而它们只在几座岛上，需坐船前往。",
@@ -12254,8 +12307,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至10月旱季海况更稳定，是跳岛游与潜水的最佳季节；11月至次年3月雨季偶有强风影响出海行程，建议提前确认船只出行安排。",
   },
   balikpapan: {
+    // identity sources: 人口：2024 年中 757,418（与本条目 howItWorks 一致），原 identity 的「约 70 万」低了近 8 万且无年份。3 级。「通往努桑塔拉的主要空中门户」「新首都在建设中」已妥善带不确定性限定，不改。2026-09-10 核。
     identity:
-      "巴厘巴板是东加里曼丹省的石油工业城市，人口约70万，是印尼在婆罗洲最重要的经济中心之一，也是通往正在建设中的新首都努桑塔拉的主要空中门户。",
+      "巴厘巴板是东加里曼丹省的石油工业城市，2024年年中人口约75.7万，是印尼在婆罗洲最重要的经济中心之一，也是通往正在建设中的新首都努桑塔拉的主要空中门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Balikpapan (Indonesia; a seaport city on the east coast of Borneo in East Kalimantan, 757,418 residents in mid-2024, the second-largest city in the province after Samarinda, which is the provincial capital; the financial centre of Kalimantan; the first oil drilling began here on 10 February 1897, making it the birthplace of the Indonesian oil industry, with the Pertamina refinery still central and international energy companies keeping regional offices; originally a Buginese fishing settlement, developed by the Dutch Bataafsche Petroleum Maatschappij from 1907, devastated in the Second World War and the refinery rebuilt by 1950; the Sungai Wain protected forest and its sun bears, orangutans and proboscis monkeys under pressure; Sultan Aji Muhammad Sulaiman Sepinggan International Airport; a toll road to Samarinda completed in 2021)
     howItWorks:
       "巴厘巴板是印尼东加里曼丹省的港口城市，2024 年中人口 757,418；印尼实行地方自治，省与市（县）两级首长均由直选产生。这里有一处常被弄错的关系：巴厘巴板是全省最大的经济中心，却不是省会——省会在东北的三马林达，两地之间 2021 年通了收费高速。它的存在源于石油：1897 年 2 月 10 日这里打出第一口油井，是印尼石油工业的起点，1907 年起荷兰的石油公司在此建厂，二战中城市与炼油厂被摧毁，1950 年重建，如今国营的佩尔塔米纳炼油厂仍是全城的核心，国际能源公司在此设区域办公室，加里曼丹的金融业务也集中于此。因为围绕工业统一规划，这座城市的街道与市容比同规模的印尼城市整齐。近年它又多了一重身份：印尼正在建设的新首都努山塔拉就在西北邻近的两个县内，进出工地多经此城。宋盖韦恩保护林在市郊，是马来熊与长鼻猴的栖息地。初来的人最容易犯的错，是以为它是省会，而省会在三马林达。",
@@ -12271,8 +12325,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "旱季（约5至9月）道路与航班更稳定；作为新首都建设的门户城市，基础设施仍在快速变化中，出行前建议核实最新交通与住宿信息。",
   },
   manado: {
+    // identity sources: 人口：2025 年中约 46.3 万（与本条目 howItWorks 一致），原 identity 剥掉了年份。3 级。
+    //   ✅ 零争议红线：宗教构成写的是「本地基督徒占多数、与全国穆斯林主体不同」——这是**万鸦老与全国**的客观人口构成对比，不是红线点名要回避的「万鸦老 vs 望加锡」两城对比，也无评价性用词，通过。
     identity:
-      "万鸦老是北苏拉威西省首府，人口约45万，是印尼东部重要港口城市，也是布纳肯国家公园潜水胜地的门户，与全国以穆斯林为主体的宗教构成不同，本地以基督教徒为多数。",
+      "万鸦老是北苏拉威西省首府，2025年年中人口约46万，是印尼东部重要港口城市，也是布纳肯国家公园潜水胜地的门户，与全国以穆斯林为主体的宗教构成不同，本地以基督教徒为多数。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Manado (Indonesia; capital of North Sulawesi Province with about 462,658 residents in mid-2025 over 162.35 km²; the indigenous Minahasa people form the majority; Protestant Christianity is the major religion at about 62.89 per cent of residents in 2023, and the city is nicknamed the city of a thousand churches, hosting Indonesia's largest annual Christmas celebration; Bunaken National Marine Park offshore is the principal attraction; Mount Lokon, Mount Mahawu and Lake Linow nearby; Sam Ratulangi International Airport connects to major Asian cities; the local motto that all are family)
     howItWorks:
       "万鸦老是印尼北苏拉威西省的省会，2025 年中人口约 46.3 万，市域约 162 平方公里；印尼实行地方自治，省与市（县）两级首长均由直选产生，省会集中全省的行政、医疗与高等教育。这座城最鲜明的特征是它的构成：本地米纳哈萨人是主体族群，2023 年约 62.89% 的居民信奉基督新教，是印尼基督徒比例最高的大城市之一，市内教堂密集，本地因此自称“千教堂之城”，每年的圣诞庆典是全国规模最大的。它的地理同样特别：城市在苏拉威西岛北端的火山带上，洛孔火山与马哈武火山就在南面的托莫洪一带，利瑙湖是火山口湖；外海的布纳肯国家海洋公园以陡直的珊瑚墙闻名，是印尼最早设立的海洋公园之一，潜水者多为此而来。萨姆拉图兰吉国际机场有通往东亚多座城市的航班。本地菜以辛辣著称。初来的人最容易犯的错，是按印尼其他地区的习惯预期这里的饮食与节庆，而万鸦老在这两件事上都自成一格。",
@@ -12379,8 +12435,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "希姆肯特夏季炎热干燥，5月与9月气候相对宜人；前往突厥斯坦建议安排一整天行程，往返车程加上陵墓参观需数小时。",
   },
   aktau: {
+    // identity sources: 人口：2023 年 270,886（与本条目 howItWorks 一致）。⚠️ 俄文维基 infobox 另有「306,650（2026）」，但其引用链接返回 404、同页正文却仍停在 2020 年的 183,097——**三个数字互相矛盾，且 stat.gov.kz 深层页对自动抓取返回 500/404**，本轮不采用那个更高的数。下一轮换带会话的浏览器工具直接取一手。
     identity:
-      "阿克套是曼格斯套州首府，人口约27万，是哈萨克斯坦里海沿岸最大城市，气候干燥少雨，是探索曼格斯套荒漠奇观（博兹吉拉、卡拉吉耶、托雷什）的核心门户。",
+      "阿克套是曼格斯套州首府，2023年人口约27万（哈萨克斯坦国家统计局），是哈萨克斯坦里海沿岸最大城市，气候干燥少雨，是探索曼格斯套荒漠奇观（博兹吉拉、卡拉吉耶、托雷什）的核心门户。",
     // howItWorks sources: Wikipedia (2026-09): Aktau (Mangystau capital; ~270,886 2023; founded 1958/1963, Shevchenko 1964–1991; BN-350 1973–1999; port + Baku ferry; Caspian Depression; microdistrict addressing)
     howItWorks:
       "阿克套是曼吉斯套州的首府，在里海东岸的曼吉什拉克半岛上，2023 年人口约 27 万。这座城 1958 年因铀矿勘探而生，1964 至 1991 年间名为舍甫琴科；它建在沙漠里，大部分市区低于海平面，淡水曾靠 BN-350 快中子反应堆的海水淡化供应——那座反应堆 1973 年运行、1999 年关闭，是世界上第一座工业规模的核能海水淡化装置。今天石油是支柱产业，港口与通往巴库的里海渡轮把它连向高加索。城市按苏联的规划建成，没有街名：地址写“小区号—楼号—门号”，本地人以小区号说位置，这在哈萨克斯坦是独一无二的。公交承担出行，没有轨道交通。乌斯秋尔特高原与博兹吉拉的地貌在市外的沙漠里。初来的人最容易犯的错，是在这座城里找街道名，而它从建成之日起就只有编号。",
@@ -12413,8 +12470,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候相对温和，是参观陵墓与户外遗址的适宜季节；亚萨维陵墓建议安排至少半天时间，细看帖木儿时期未完工建筑留下的独特结构痕迹。",
   },
   karaganda: {
+    // identity sources: 人口：2020 年普查 497,777（与本条目 howItWorks 一致）。⚠️ 俄文维基 infobox 另有 2023 年 515,632，但引用页返回 404、**无法在一手来源上坐实**，本轮不采用。下一轮复核。
     identity:
-      "卡拉干达是哈萨克丘陵中部的工业城市，人口逾50万，历史上因煤炭开采而兴起，是哈萨克斯坦中部重要的矿业与工业中心，也是探索卡尔卡拉雷山与别克套阿塔的门户之一。",
+      "卡拉干达是哈萨克丘陵中部的工业城市，2020年人口普查49.8万（哈萨克斯坦国家统计局），历史上因煤炭开采而兴起，是哈萨克斯坦中部重要的矿业与工业中心，也是探索卡尔卡拉雷山与别克套阿塔的门户之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Karaganda (Kazakhstan; capital of Karaganda Region in central Kazakhstan about 230 km south-east of Astana, 497,777 residents in the 2020 census, the fifth-most populous city in the country; coal mining anchors the economy, production beginning in 1930 and the railway arriving in February 1931 bringing supplies and qualified staff, with 8 coal mines today against as many as 26 in the Soviet period; the Karlag camp was in the region and by 1939 the city held about 100,000 people; ethnic Germans, many deported Volga Germans, were a large share of inhabitants in the 1940s and more than 100,000 people have emigrated to Germany since 1991; Karaganda State University; Sary-Arka Airport 20 km south-east; the highest PM2.5 levels measured among Kazakh cities from 2017 to 2022)
     howItWorks:
       "卡拉干达是哈萨克斯坦卡拉干达州的首府，在阿斯塔纳东南约 230 公里，2020 年人口 497,777，是全国第五大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这座城因煤而生：1930 年这里开始大规模采煤，1931 年 2 月铁路通到矿区，物资与技术人员随之进入，城市在草原上迅速成形，苏联时期最多时有 26 座煤矿，如今在产的约 8 座，钢铁重镇特米尔套在北面，两地构成一个连片的工业区。20 世纪的人口来源也与制度有关：卡拉干达劳改营设在本州，1939 年全城约十万人；1940 年代大量被强制迁移的伏尔加德意志人被安置在此，德裔曾占相当比例，1991 年后有十万以上的人移居德国，城市的族群构成因此几经变化。卡拉干达大学在城中，萨雷阿尔卡机场在东南 20 公里。2017 至 2022 年的监测中，这里的细颗粒物浓度在哈萨克斯坦各城市中最高。初来的人最容易犯的错，是以为草原上的城都很古老，而它不到一百年。",
@@ -12430,8 +12488,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候相对温和，是前往卡尔卡拉雷与别克套阿塔徒步的最佳季节；两处景点均路途较远，建议各安排一整天行程。",
   },
   semey: {
+    // identity sources: 人口：2024-11 为 312,764（与本条目 howItWorks 一致）。identity 的重心改为阿拜·库南巴耶夫的故乡与 19 世纪文化重镇（新设阿拜州即以他命名）。
+    //   ⚠️ 机场专名待改（B1-b，低优先级）：现名 **Semei International Airport**（以阿拜命名），正文写的是「谢梅伊机场」；IATA（PLX）与坐标无误，只是名称精度问题。
     identity:
-      "谢梅伊是哈萨克斯坦东部沿额尔齐斯河而建的历史城市，人口逾30万，历史上曾是苏联时期塞米巴拉金斯克核试验场的行政中心，如今是额尔齐斯河沿岸重要的文化与教育城市。",
+      "谢梅伊是哈萨克斯坦东部沿额尔齐斯河而建的历史城市，2024年11月人口约31.3万（哈萨克斯坦国家统计局）；它是哈萨克近代诗人与思想家阿拜·库南巴耶夫的故乡、19世纪的文化重镇，2022年新设的阿拜州即以他命名，如今是额尔齐斯河沿岸重要的文化与教育城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semey (Kazakhstan; formerly Semipalatinsk, capital of Abai Region, created in 2022, on the Irtysh near the Russian border, population 312,764 in November 2024; the settlement began in 1718 as a Russian fort near ruins of seven buildings that gave it the name meaning seven-chambered city; capital of the Alash Autonomy as Alash-Qala between 1917 and 1920; renamed Semey in 2007; Dostoevsky was exiled here from 1854 to 1859 and the Dostoevsky Literary Memorial Museum is the only one outside Russia; the poet and philosopher Abai Qunanbaiuly and the Abai Museum; the Semipalatinsk nuclear test site established 180 km west in 1949, where 456 tests took place between 1949 and 1989, the site closed on 29 August 1991)
     howItWorks:
       "谢梅伊是哈萨克斯坦阿拜州的首府——这个州 2022 年新设，首府定在此城；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。城市在额尔齐斯河边、靠近俄罗斯边境，2024 年 11 月人口 312,764。1718 年俄国在此建堡，堡址附近有一处七间房的遗迹，“七间房之城”即塞米巴拉金斯克一名的来历；1917 至 1920 年它以“阿拉什城”之名作过阿拉什自治政府的所在地，2007 年市名改为谢梅伊。俄国作家陀思妥耶夫斯基 1854 至 1859 年在此服流刑，本地的陀思妥耶夫斯基文学纪念馆是俄罗斯境外唯一的一座；哈萨克近代诗人与思想家阿拜·库南巴耶夫也与这座城关系密切，阿拜博物馆在城中，新设的州即以他命名。1949 年苏联在城西约 180 公里设塞米巴拉金斯克核试验场，1949 至 1989 年间在此进行了 456 次核试验，1991 年 8 月 29 日关闭，这一日期后来成为国际禁止核试验日。2001 年跨额尔齐斯河的悬索桥通车。初来的人最容易犯的错，是把这两个名字当作两座城，而它们是同一处。",
@@ -12439,16 +12499,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "城市沿额尔齐斯河两岸分布，河上的谢梅伊斜拉桥是城市地标之一；老城区保留部分19世纪末至20世纪初的历史建筑，与作家陀思妥耶夫斯基曾在此流放居住的历史有关。",
     gettingAround:
       "谢梅伊机场（PLX）距市区约7公里；市内以公交车与出租车为主要交通方式。",
+    // culture sources: ⚠️ 零争议红线，**只改这一句**：删掉「承受深重的核辐射影响」这半句评价性表述（谈的是活着的人群的健康后果），保留「有严肃的纪念与教育设施、参观请保持尊重」这条对读者有用的实用信息。
+    //   **核实方建议把核试验场整块删掉，没有照办** —— 它给的依据是「任务指令本身」，而那是我在 prompt 里写的黑名单。按仓库判据逐句量：howItWorks 那句是日期与次数、无评价词（8 月 29 日成为联合国国际禁核试日是公开事实），seeAndDo 的纪念馆是真实公开运营的场馆——两处都与越南保留挂牌景点的判例同型，**保留**。**英文侧本来就更克制**（写的是 carries the serious historical legacy…，完全没提辐射影响），只有中文那半句带评价——又一处中文比英文过火的中英不同步。2026-09-10 判定。
     culture:
-      "官方语言哈萨克语，俄语广泛使用。谢梅伊历史上因苏联核试验场而承受深重的核辐射影响，当地对这段历史有严肃的纪念与教育设施，参观相关纪念馆请保持尊重。餐厅账单外通常再给5%至10%小费。",
+      "官方语言哈萨克语，俄语广泛使用。当地对苏联时期核试验这段历史有严肃的纪念与教育设施，参观相关纪念馆请保持尊重。餐厅账单外通常再给5%至10%小费。",
     seeAndDo:
       "谢梅伊斜拉桥（额尔齐斯河地标桥梁）；阿巴伊纪念馆（哈萨克民族诗人阿拜相关文献与文物）；陀思妥耶夫斯基文学纪念馆；核试验受害者纪念馆（了解苏联核试验历史）。",
     whenAndTips:
       "谢梅伊属典型大陆性气候，夏季炎热、冬季严寒，5月至9月是较适宜的旅行季节；核试验相关纪念馆内容较为沉重，建议提前做好心理准备。",
   },
   pavlodar: {
+    // identity sources: 人口：2023 年估计 367,254（与本条目 howItWorks 一致），未发现更新一期。
+    //   ⚠️ **待补**：巴甫洛达尔机场（PWQ）**2025-04-01 起因改造关闭**，截至 2026-09 已有航线恢复（FlyArystan 飞阿拉木图）。正文的「距市区约 13 公里」本身没错，但完全没提这段停运与复航——下一轮确认班次恢复情况后补一句带时点的表述。
     identity:
-      "巴甫洛达尔是哈萨克斯坦东部沿额尔齐斯河而建的城市，人口逾35万，是巴甫洛达尔州首府，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化城市。",
+      "巴甫洛达尔是哈萨克斯坦东部沿额尔齐斯河而建的城市，2023年估计人口约36.7万（哈萨克斯坦国家统计局），是巴甫洛达尔州首府，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pavlodar (Kazakhstan; capital of Pavlodar Region in the north-east, about 450 km north-east of Astana on the Irtysh, estimated population 367,254 in 2023; founded in 1720 as the Koryakovsky outpost of Imperial Russia and renamed Pavlodar in 1861, the name meaning the gift of Paul, for the birth of Grand Duke Paul Alexandrovich; the economy centres on aluminium, industrial chemicals and farm machinery, with an oil refinery completed in 1978 and the pharmaceutical company Romat; about 46.5 per cent Kazakh and 41.6 per cent Russian with Ukrainian, German and Tatar communities; an 89 km tram network in service since 1965; a river port on the Irtysh; Pavlodar Airport)
     howItWorks:
       "巴甫洛达尔是哈萨克斯坦巴甫洛达尔州的首府，在阿斯塔纳东北约 450 公里、额尔齐斯河边，2023 年估计人口 367,254；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它 1720 年作为俄国的科里亚科夫哨所设立，1861 年改名巴甫洛达尔，字面意思是“保罗的礼物”，取自当年出生的俄国大公保罗·亚历山德罗维奇。20 世纪它被建成重工业城市：铝厂、化工厂与农机制造是支柱，1978 年建成炼油厂；东面埃基巴斯图兹的露天煤矿与坑口电站为这片工业区供电，是哈萨克斯坦最重要的能源基地之一。额尔齐斯河上的河港把货运往下游送出，这条河最终流入俄罗斯与北冰洋。居民中哈萨克族约 46.5%、俄罗斯族约 41.6%，另有乌克兰、德意志与鞑靼等社群，俄语在日常中使用广泛。1965 年通车的有轨电车网长约 89 公里，至今在运营。初来的人最容易犯的错，是以为哈萨克斯坦到处是草原牧区，而这里是一片工厂与电厂。",
@@ -12464,8 +12528,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "巴甫洛达尔属典型大陆性气候，夏季炎热、冬季严寒漫长，5月至9月是较适宜的旅行季节。",
   },
   kokshetau: {
+    // identity sources: 人口：2024 年估计 176,849（与本条目 howItWorks 一致）。**原 identity 的「约 15 万」低了近 3 万、量级都不对**——不是缺年份，是数字本身错，且与同条目另一段打架（C6i）。
     identity:
-      "科克舍套是哈萨克斯坦北部阿克莫拉州首府，人口约15万，坐落于科克舍套丘陵地带，是前往布拉拜国家公园（“哈萨克斯坦的瑞士”）的主要门户城市。",
+      "科克舍套是哈萨克斯坦北部阿克莫拉州首府，2024年估计人口约17.7万（哈萨克斯坦国家统计局），坐落于科克舍套丘陵地带，是前往布拉拜国家公园（“哈萨克斯坦的瑞士”）的主要门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kokshetau (Kazakhstan; capital of Akmola Region about 300 km north-west of Astana, stretching along the southern shore of Lake Kopa in the Kokshetau Hills at 234 m; estimated population 176,849 in 2024, the 17th-largest city in the country; founded in 1824 as a Russian administrative outpost and given city status in 1895, the administrative centre of Kokshetau Oblast from 1944 until its dissolution in 1997, then capital of Akmola Region from 1999; about 62 per cent Kazakh, up from 36 per cent in 1999, and about 23 per cent Russian; Burabay National Park about 70 km away; the Akmola Regional Museum; named Kazakhstan's City of Culture for 2021)
     howItWorks:
       "科克舍套是哈萨克斯坦阿克莫拉州的首府，在阿斯塔纳西北约 300 公里，沿科帕湖南岸铺开，海拔 234 米，2024 年估计人口 176,849，是全国第 17 大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这里有一个容易混淆的关系：阿克莫拉州的首府不在同名的阿克莫拉——那个名字后来成了首都阿斯塔纳的旧称，州府设在这座城。它 1824 年作为俄国的行政据点建立，1895 年获城市地位，1944 年起为科克舍套州首府，1997 年该州撤销，1999 年它成为阿克莫拉州首府。城市的族群构成变化很快：哈萨克族的比例从 1999 年的约 36% 升到 2024 年的约 62%，俄罗斯族约占 23%。真正让这一带出名的是东南约 70 公里的布拉拜国家公园：松林、花岗岩丘与湖泊连成一片，在一望无际的草原上显得突兀，本地称之为“哈萨克的瑞士”。初来的人最容易犯的错，是把它与阿斯塔纳的旧称阿克莫拉混为一谈。",

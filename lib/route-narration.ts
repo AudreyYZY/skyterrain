@@ -44,12 +44,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "舷窗下先是一片被水汽晕开的绿——成都平原，都江堰引岷江水灌溉了两千多年的沃土，阡陌规整如棋盘，头顶却常年裹着一层灰白云雾，四川盆地很少能看清太阳。起飞不过十几分钟，这片温软的绿已经被甩在身后：龙门山猝然立起，盆地边缘骤然收紧，地面开始起皱。" +
-      "再往西，皱纹变成刀刻般的沟壑——横断山脉。这是中国唯一一片南北走向的高大山群：一道雪岭、一道深谷、再一道雪岭，金沙江、澜沧江、怒江被高山逼得并肩南流。这片山地是川藏茶马古道的必经段——古时的商队从成都、雅安出发，翻过打箭炉（今康定）附近的垭口，把川茶驮进高原，再换回藏地的马匹。天气好时，右前方会立起一座格外陡峭、格外孤傲的雪峰——贡嘎山，海拔7508.9米，横断山脉最高点，峰顶终年裹着云，云开的瞬间才能看清它完整的轮廓。" +
+      "再往西，皱纹变成刀刻般的沟壑——横断山脉。这是中国规模最大的一片南北走向高大山群：一道雪岭、一道深谷、再一道雪岭，金沙江、澜沧江、怒江被高山逼得并肩南流。这片山地是川藏茶马古道的必经段——古时的商队从成都、雅安出发，翻过打箭炉（今康定）附近的垭口，把川茶驮进高原，再换回藏地的马匹。天气好时，右前方会立起一座格外陡峭、格外孤傲的雪峰——贡嘎山，海拔7508.9米，横断山脉最高点，峰顶终年裹着云，云开的瞬间才能看清它完整的轮廓。" +
       "等飞机稳定巡航，窗外的世界已经换了一个海拔量级。翻过横断山脉最后一道山脊，地面忽然松弛下来——山尖消失了，峡谷不见了，取而代之的是一整片浑厚、平缓、泛着黄褐色的高地，一直铺到目力所及的天边：青藏高原的高原面，平均海拔四千米以上，地球上最高、最大的高原。深蓝色的湖泊像打翻的墨点散落其间，空气稀薄得让阳光显得格外白、格外硬。" +
       "飞机几乎贴着这片高原面一路飞到接近拉萨，才顺着雅鲁藏布江的支流拉萨河收拢翅膀、滑进河谷。两个多小时，从常年见不到太阳的湿润盆地，飞到了日光城拉萨——中间只隔着一列山、一片高原，和四千多米的落差。",
     "en-US":
       "Look down and the first thing you see is a green so soft it seems to blur at the edges — the Chengdu Plain, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years, its fields laid out like a checkerboard under a lid of grey-white haze; the Sichuan Basin rarely sees a clear sun. Within minutes of take-off that soft green is already behind you: the Longmen Mountains rear up abruptly at the basin's rim, and the ground begins to crease." +
-      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the only belt of high, north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
+      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the largest belt of high north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
       " By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
       " The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
   },
@@ -240,11 +240,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "重庆飞拉萨，从长江边的山城，一路爬上青藏高原的东南缘。起飞时脚下是四川盆地——四周被山环抱的红层丘陵盆地，云雾多，重庆的房子顺着山坡和江岸层层叠叠。" +
-      "飞机向西爬升，很快进入横断山脉：这是中国唯一一片南北走向的高大山群，一条雪山、一条深谷，再一条雪山，像搓衣板一样排列，金沙江、澜沧江、怒江在这里被挤在一起并行南流。" +
+      "飞机向西爬升，很快进入横断山脉：这是中国规模最大的一片南北走向高大山群，一条雪山、一条深谷，再一条雪山，像搓衣板一样排列，金沙江、澜沧江、怒江在这里被挤在一起并行南流。" +
       "越过横断山脉，进入藏东南。这一带因为有印度洋的水汽顺着河谷灌进来，是高原东南缘最湿润、最绿的角落，森林一直长到很高的地方。雅鲁藏布江在这里绕着南迦巴瓦峰拐了一个大弯，切出很深的峡谷。飞机再往西，地面转为相对平坦开阔的高原面，沿拉萨河谷下降到拉萨。",
     "en-US":
       "Chongqing to Lhasa climbs from a river city among hills up onto the south-eastern edge of the Tibetan Plateau. On take-off you are over the Sichuan Basin — a red-bed basin of hills ringed by mountains, often cloudy, with Chongqing's buildings stacked up the slopes and river banks." +
-      " Climbing west, the plane soon enters the Hengduan Mountains, the only belt of high ranges in China that runs north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
+      " Climbing west, the plane soon enters the Hengduan Mountains, the largest belt of high ranges in China running north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
       " Beyond the Hengduan is south-eastern Tibet. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The Yarlung Tsangpo makes a great bend around Namcha Barwa here, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
     },
     travel: {
@@ -1651,11 +1651,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "雷克雅未克飞埃伊尔斯塔济，从西南首都区一直飞到东部峡湾，几乎是冰岛最长的一条国内航线。起飞后先越过辛格维利尔的板块裂谷，然后进入中央高地的火山荒漠。" +
-      "航线中段掠过冰岛正中心的霍夫斯冰原——一座圆盾形的冰帽，下面压着火山。再往东南，脚下是欧洲最大的冰川瓦特纳冰原的北缘：一片望不到边的白色高原，几条冰川舌从边缘伸进黑色的山谷，冰下还有活火山（格里姆火山等）。" +
+      "航线中段掠过冰岛正中心的霍夫斯冰原——一座圆盾形的冰帽，下面压着火山。再往东南，脚下是按体积算欧洲最大的冰帽瓦特纳冰原的北缘：一片望不到边的白色高原，几条冰川舌从边缘伸进黑色的山谷，冰下还有活火山（格里姆火山等）。" +
       "越过冰原，地面陷成东部的峡湾和河谷，埃伊尔斯塔济在一条细长的湖边、冰岛少有的大片林地旁。",
     "en-US":
       "Reykjavík to Egilsstaðir flies from the south-western capital area to the eastern fjords, one of the longest domestic routes in Iceland. After take-off you cross the plate rift at Þingvellir, then enter the volcanic desert of the central highland." +
-      " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, the largest glacier in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
+      " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, by volume the largest ice cap in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
       " Over the ice cap the land drops into the eastern fjords and valleys, and Egilsstaðir is by a long, thin lake beside one of Iceland's rare large areas of woodland.",
     },
     travel: {
@@ -1697,11 +1697,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "雷克雅未克飞赫本，几乎全程沿冰岛南岸，是一条“瀑布—火山—冰川”的风景线。起飞后向东，先经过海克拉火山——冰岛历史上喷发最频繁的火山之一，中世纪的欧洲人叫它“地狱之门”，山体是一道长长的火山脊。" +
-      "往东南，脚下越来越白：那是欧洲最大的冰川瓦特纳冰原，占了冰岛约八分之一的面积，几条冰川舌从边缘伸进冰水冲积平原（sandur）。" +
+      "往东南，脚下越来越白：那是按体积算欧洲最大的冰帽瓦特纳冰原，2023年测得覆盖冰岛约7%的国土，几条冰川舌从边缘伸进冰水冲积平原（sandur）。" +
       "接近赫本，冰原边缘出现一个连着海的泻湖，里面漂满淡蓝色的浮冰——杰古沙龙冰河湖，冰是从冰川舌上崩落、顺水流向大海的。赫本就在冰原对面、一处潟湖口的沙嘴上。",
     "en-US":
       "Reykjavík to Höfn runs almost entirely along Iceland's south coast, a 'waterfalls–volcanoes–glaciers' scenic line. After take-off you head east, first past Hekla — one of the most frequently erupting volcanoes in Iceland's history, which medieval Europeans called the 'gateway to Hell', its body a long volcanic ridge." +
-      " South-east the ground grows whiter: Vatnajökull, the largest glacier in Europe, covering about an eighth of Iceland, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
+      " South-east the ground grows whiter: Vatnajökull, by volume the largest ice cap in Europe, covering about 7% of Iceland as measured in 2023, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
       " Approaching Höfn, a lagoon connected to the sea appears at the ice edge, full of pale blue floes — Jökulsárlón, where ice breaks off the glacier tongue and drifts to the sea. Höfn is opposite the ice cap, on a spit at the mouth of a lagoon.",
     },
     travel: {
@@ -1936,12 +1936,12 @@ export const ROUTE_NARRATION: Record<
       "巴黎飞尼斯，从法国北部一路飞到地中海岸，横穿这个国家的几个主要地形单元。起飞后先越过巴黎盆地——一个巨大的沉积盆地，塞纳河及其支流在这里冲出层层叠叠的低丘和田野，法国近一半人口住在这一带。" +
       "往南地面渐渐隆起，进入中央高原：一大片以死火山为主的老高原，多姆山链一带的熔岩穹丘和火口湖清晰可辨，是欧洲少见的、地表还能读出火山轮廓的地区之一。" +
       "越过高原东南缘，罗讷河河谷出现在脚下——这条从阿尔卑斯冰川发源、一路收纳支流南下的大河，是连接法国北部与地中海的历史通道。" +
-      "接近尼斯，地面变成普罗旺斯阿尔卑斯的山地，凡尔登峡谷——欧洲最大的峡谷之一，由绿松石色的河水切出——就在这一带，最后飞机沿海岸线降落，蔚蓝海岸的弧形海湾展开在眼前。",
+      "接近尼斯，地面变成普罗旺斯阿尔卑斯的山地，凡尔登峡谷——常被称作欧洲最深的峡谷之一，由绿松石色的河水切出——就在这一带，最后飞机沿海岸线降落，蔚蓝海岸的弧形海湾展开在眼前。",
     "en-US":
       "Paris to Nice flies from the north of France to the Mediterranean coast, crossing several of the country's major landform provinces. After take-off you cross the Paris Basin — a huge sedimentary basin where the Seine and its tributaries have carved layered low hills and fields, home to nearly half of France's population." +
       " South the land gradually rises into the Massif Central: a large old plateau of mostly extinct volcanoes, with the lava domes and crater lakes of the Chaîne des Puys clearly visible — one of the few places in Europe where volcanic shapes are still readable on the surface." +
       " Over the south-eastern edge of the plateau, the Rhône valley appears below — the great river that rises from Alpine glaciers and gathers tributaries flowing south, historically the corridor linking northern France to the Mediterranean." +
-      " Approaching Nice, the land becomes the mountains of the Provençal Alps, with the Gorges du Verdon — one of the largest canyons in Europe, cut by turquoise water — in this area, and finally the plane follows the coastline down to the curved bay of the Côte d'Azur.",
+      " Approaching Nice, the land becomes the mountains of the Provençal Alps, with the Gorges du Verdon — often called one of Europe's deepest canyons, cut by turquoise water — in this area, and finally the plane follows the coastline down to the curved bay of the Côte d'Azur.",
     },
     travel: {
     "zh-CN":
@@ -2191,11 +2191,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "罗马飞卡塔尼亚，从意大利中部一路飞到西西里岛东岸，是这几条国内航线里跨度较大的一条。起飞后先经过台伯河，随后进入亚平宁山脉：这条像脊椎一样纵贯整个亚平宁半岛的山系，大萨索山（大角峰）是其中最高的一段，海拔近 2912 米。" +
       "越过山脉南段，地面变成波利诺山——意大利南部最大的国家公园所在地，喀斯特地貌和高山牧场交织。" +
-      "飞越墨西拿海峡上空进入西西里岛，卡塔尼亚就在岛屿东岸、埃特纳火山脚下——这是欧洲最高的活火山，晴天从空中能看到山顶的烟柱和黑色的熔岩流痕迹。",
+      "飞越墨西拿海峡上空进入西西里岛，卡塔尼亚就在岛屿东岸、埃特纳火山脚下——这是欧洲（不计高加索）最高的活火山，晴天从空中能看到山顶的烟柱和黑色的熔岩流痕迹。",
     "en-US":
       "Rome to Catania flies from central Italy all the way to the east coast of Sicily, one of the longer domestic routes here. After take-off you cross the Tiber, then the Apennines: the range running down the whole peninsula like a spine, with Gran Sasso (Corno Grande) its highest point at almost 2,912 m." +
       " Over the southern Apennines, the land becomes the Pollino massif — home to southern Italy's largest national park, karst landforms interwoven with high mountain pasture." +
-      " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — Europe's highest active volcano — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
+      " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
     },
     travel: {
     "zh-CN":
@@ -2261,11 +2261,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "那不勒斯飞卡塔尼亚，沿意大利南部海岸和第勒尼安海南下，是一条以火山为主题的短航线。起飞后不久，维苏威火山的完整锥形出现在右侧机窗——公元 79 年它的喷发掩埋了庞贝古城，如今仍是被密切监测的活火山。" +
       "继续南飞，海面上出现利帕里群岛（又称埃奥利群岛）：一串火山成因的小岛，其中斯特龙博利岛上的火山几乎持续小规模喷发，被称为“地中海灯塔”，几百年来一直如此，是全球观测最久的活火山之一。" +
-      "越过一片开阔海面进入西西里岛，卡塔尼亚就在埃特纳火山脚下——欧洲最高的活火山，海拔约 3350 米，山顶终年有烟柱。",
+      "越过一片开阔海面进入西西里岛，卡塔尼亚就在埃特纳火山脚下——欧洲（不计高加索）最高的活火山，2024年9月复测约3403米，山顶终年有烟柱。",
     "en-US":
       "Naples to Catania runs south along the Italian coast and the southern Tyrrhenian Sea, a short flight with a volcanic theme throughout. Soon after take-off the full cone of Mount Vesuvius appears on the right — its eruption in 79 AD buried Pompeii, and it remains a closely monitored active volcano today." +
       " Flying on south, the Aeolian (Lipari) Islands appear over the water: a chain of volcanic islands, including Stromboli, whose volcano has erupted in small bursts almost continuously — called the 'lighthouse of the Mediterranean', a pattern that has held for centuries and one of the longest continuously observed volcanoes in the world." +
-      " Over open water onto Sicily, Catania sits at the foot of Mount Etna — Europe's highest active volcano, about 3,350 m, with a year-round summit plume.",
+      " Over open water onto Sicily, Catania sits at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus, measured at about 3,403 m in September 2024, with a year-round summit plume.",
     },
     travel: {
     "zh-CN":
@@ -2878,10 +2878,10 @@ export const ROUTE_NARRATION: Record<
   "dub-cfn": {
     study: {
     "zh-CN":
-      "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积最大的国家公园的核心景观。" +
+      "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积第二大的国家公园的核心景观。" +
       "飞机随后降落在多尼戈尔湾畔的卡里克芬机场，这条航线是连接爱尔兰西北部与首都的重要生命线，也是俯瞰爱尔兰荒野山地地貌的难得视角。",
     "en-US":
-      "Flying from Dublin to Donegal is a government-subsidised route linking Ireland's capital with a remote part of the north-west; soon after take-off the flight turns north-west, crossing the rural countryside of north-central Ireland. Approaching County Donegal, Glenveagh comes into view below — a deeply cut glacial trough valley whose narrow Lough Veagh is flanked by steep cliffs, with Glenveagh Castle set deep in the valley against a backdrop of wilderness, the centrepiece of Ireland's largest national park." +
+      "Flying from Dublin to Donegal is a government-subsidised route linking Ireland's capital with a remote part of the north-west; soon after take-off the flight turns north-west, crossing the rural countryside of north-central Ireland. Approaching County Donegal, Glenveagh comes into view below — a deeply cut glacial trough valley whose narrow Lough Veagh is flanked by steep cliffs, with Glenveagh Castle set deep in the valley against a backdrop of wilderness, the centrepiece of what is, by area, Ireland's second-largest national park." +
       " The flight then descends into Carrickfinn Airport on Donegal Bay; this route is an important lifeline connecting north-west Ireland with the capital, and offers a rare aerial view of Ireland's wilderness upland terrain.",
     },
     travel: {
@@ -2951,7 +2951,7 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "哥本哈根飞博恩霍尔姆，是一趟跨越波罗的海、抵达丹麦最东端孤悬海岛的航线。起飞后飞机向东南方向飞越开阔的波罗的海海域，脚下先是西兰岛与丹麦本土渐渐远去的海岸线，随后进入一片看不见陆地的开阔海域，约半小时后抵达博恩霍尔姆岛上空。" +
-      "降落前脚下展开阿尔明丁根森林高地——岛屿中部的花岗岩高地，骑士峰海拔162米，是丹麦全境唯一大面积可见花岗岩基岩的地区，前寒武纪花岗岩基岩是波罗的地盾向南延伸出露的一部分，茂密森林与裸露岩体交织，与丹麦本土常见的平坦冰碛地貌截然不同，飞机随后降落在岛屿西岸的龙讷，博恩霍尔姆岛也因阳光充足而被称为“丹麦的阳光岛”。",
+      "降落前脚下展开阿尔明丁根森林高地——岛屿中部的花岗岩高地，骑士峰海拔162米，是丹麦全境少数大面积可见花岗岩基岩的地区之一，前寒武纪花岗岩基岩是波罗的地盾向南延伸出露的一部分，茂密森林与裸露岩体交织，与丹麦本土常见的平坦冰碛地貌截然不同，飞机随后降落在岛屿西岸的龙讷，博恩霍尔姆岛也因阳光充足而被称为“丹麦的阳光岛”。",
     "en-US":
       "Flying from Copenhagen to Bornholm crosses the open Baltic Sea to reach Denmark's easternmost, isolated island. After take-off the flight heads south-east across open Baltic waters, arriving over Bornholm after about half an hour." +
       " Before landing, the Almindingen forest highland comes into view below — a granite highland at the island's centre; its peak, Rytterknægten, reaches 162 m, and the area is one of the only places in Denmark where granite bedrock is exposed over a wide area, dense forest interwoven with bare rock, quite unlike the flat moraine landforms typical of mainland Denmark. The flight then descends into Rønne on the island's western shore.",
@@ -3189,10 +3189,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "曼谷飞苏梅岛，是连接首都与泰国湾度假海岛的热门航线。飞机离开曼谷后向东南飞行，脚下展开湄南河三角洲——湄南河入海口处发育的冲积三角洲低地，泰国首都曼谷即建于三角洲之上，部分区域海拔不足2米，长期面临地面沉降与海平面上升的双重压力，运河网络至今仍是三角洲城区部分区域重要的交通方式。" +
-      "越过三角洲后，飞机继续向东南飞越泰国湾开阔海面，苏梅岛逐渐出现在视野中，飞机最终降落在苏梅岛——泰国湾第二大岛屿，以查汶、拉迈两大海滩度假区与椰子种植传统闻名，岛屿内陆至今仍保留大片传统椰林。",
+      "越过三角洲后，飞机继续向东南飞越泰国湾开阔海面，苏梅岛逐渐出现在视野中，飞机最终降落在苏梅岛——按面积计是泰国第二大岛，以查汶、拉迈两大海滩度假区与椰子种植传统闻名，岛屿内陆至今仍保留大片传统椰林。",
     "en-US":
       "Flying from Bangkok to Koh Samui links the capital with a popular resort island in the Gulf of Thailand. After leaving Bangkok the flight heads south-east, the Chao Phraya Delta unfolding below — the low-lying alluvial delta at the Chao Phraya's mouth, on which Bangkok itself is built, with parts of the city under 2 m in elevation and facing the combined pressures of land subsidence and sea-level rise." +
-      " Past the delta, the flight continues south-east across the open waters of the Gulf of Thailand; Koh Samui gradually comes into view, before the flight lands on Koh Samui, the second-largest island in the Gulf of Thailand, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
+      " Past the delta, the flight continues south-east across the open waters of the Gulf of Thailand; Koh Samui gradually comes into view, before the flight lands on Koh Samui, Thailand's second-largest island by area, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
     },
     travel: {
     "zh-CN":
@@ -3205,7 +3205,7 @@ export const ROUTE_NARRATION: Record<
   "dmk-uth": {
     study: {
     "zh-CN":
-      "曼谷廊曼飞乌隆他尼，是连接首都与东北部依善地区的航线。飞机离开廊曼后向北偏东飞行，逐渐掠过呵叻高原——泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原地势开阔平坦，大片旱作农田与稀疏林地交错分布，与泰国中部平原的水田景观形成鲜明对比，高原边缘的碧差汶山脉与佩差邦山脉将其与中部平原分隔。" +
+      "曼谷廊曼飞乌隆他尼，是连接首都与东北部依善地区的航线。飞机离开廊曼后向北偏东飞行，逐渐掠过呵叻高原——泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原地势开阔平坦，大片旱作农田与稀疏林地交错分布，与泰国中部平原的水田景观形成鲜明对比，高原边缘的碧差汶山脉与丹辇拉扎山脉将其与中部平原分隔。" +
       "飞机继续向东北飞行，最终降落在乌隆他尼——依善地区重要城市，也是探索班清史前遗址的门户城市，府境内的班清遗址出土了公元前2000年左右的彩陶与青铜器。",
     "en-US":
       "Flying from Bangkok Don Mueang to Udon Thani links the capital with Thailand's north-eastern Isan region. After leaving Don Mueang the flight heads north-north-east, passing over the Khorat Plateau midway — a vast sandstone tableland covering roughly a third of Thailand's land area, the geographic core of the traditional Isan region, its broad, flat surface interspersed with extensive rain-fed farmland and sparse woodland, a sharp contrast to the paddy-field landscape of central Thailand's plain." +
@@ -3223,10 +3223,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "曼谷廊曼飞清莱，是连接首都与泰国最北端府份的航线。飞机离开廊曼后向北飞行，中途掠过通萨兰銮草原——泰国中北部一片海拔300至1028米的高原草甸，被称为“泰国的稀树草原”，开阔草地与稀疏松林交错分布。" +
-      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔2138米，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——紧邻缅甸与老挝边境“金三角”地区的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
+      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔在2175至2275米之间，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——紧邻缅甸与老挝边境“金三角”地区的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
     "en-US":
       "Flying from Bangkok Don Mueang to Chiang Rai links the capital with Thailand's northernmost province. After leaving Don Mueang the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation in north-central Thailand known as \"Thailand's savanna,\" its open grassland interspersed with sparse pine forest." +
-      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak at 2,138 m, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     },
     travel: {
     "zh-CN":
@@ -4766,7 +4766,7 @@ export const ROUTE_NARRATION: Record<
   "pek-ubn": {
     study: {
     "zh-CN":
-      "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界第六大沙漠。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
+      "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界上面积最大的荒漠之一。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
     "en-US":
       "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks as the world's sixth-largest desert. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
     },
@@ -4982,9 +4982,9 @@ export const ROUTE_NARRATION: Record<
   "pvg-ath": {
     study: {
     "zh-CN":
-      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是世界第二大流动沙漠塔克拉玛干。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八米，没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
+      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是塔克拉玛干沙漠，常被称为世界第二大流动沙漠。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八米，没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
     "en-US":
-      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level and with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
+      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — often called the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level and with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
     },
     travel: {
     "zh-CN":
@@ -5064,7 +5064,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京飞阿斯塔纳，向西横穿中国北方与中亚，全程都在中纬度大陆腹地飞行。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
       "继续向西，飞机进入准噶尔盆地——天山与阿尔泰山之间一片被沙漠和绿洲环绕的内陆盆地，中国最大的油田之一克拉玛依便坐落于此。跨过中哈边境后，地貌转为萨雷阿尔卡草原：哈萨克丘陵腹地一片起伏平缓的干旱草原，是哈萨克斯坦国土面积最大的地理单元之一，历史上是欧亚草原游牧文化的重要组成部分。" +
-      "飞机最终降落在草原深处的阿斯塔纳——一座2024年更名前后延续着努尔苏丹旧称的年轻都城，坐落在伊希姆河畔的平坦草原上。这趟航班穿越了从戈壁到欧亚大草原的连续地貌带。",
+      "飞机最终降落在草原深处的阿斯塔纳——一座1997年才迁来的年轻都城，坐落在伊希姆河畔的平坦草原上。这趟航班穿越了从戈壁到欧亚大草原的连续地貌带。",
     "en-US":
       "Beijing to Astana flies west across northern China and Central Asia, staying over mid-latitude continental interior the whole way. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, a broad expanse of gravel desert stretching to the horizon." +
       " Farther west the plane crosses the Junggar Basin, an inland basin ringed by desert and oases between the Tianshan and Altai ranges, home to Karamay, one of China's largest oil fields. After crossing the China-Kazakhstan border the landscape becomes the Saryarka Steppe, a gently rolling arid steppe at the heart of the Kazakh Uplands and one of Kazakhstan's largest geographic regions, historically part of the wider Eurasian steppe nomadic world." +
@@ -5413,11 +5413,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "圣地亚哥飞特木科，是一条从中央谷地一路飞入智利南部湖区北缘的航线。起飞后，舷窗下方先是熟悉的方格状农田，随着航程推进，田野间开始出现连绵的低矮森林与散布的湖泊——这是湖区特有的地貌开始显现。" +
-      "临近降落前，飞机会靠近利亚伊马火山——智利中南部海拔最高、喷发最频繁的活火山之一，历史记载喷发超过50次。它由两个叠合的火山锥组成，山顶常年积雪，山麓保存着智利“活化石”南洋杉的原始林。" +
+      "临近降落前，飞机会靠近利亚伊马火山——智利中南部海拔最高、喷发最频繁的活火山之一，历史记载喷发约50次。它由两个叠合的火山锥组成，山顶常年积雪，山麓保存着智利“活化石”南洋杉的原始林。" +
       "飞机最终降落在特木科，这是通往维亚里卡火山、普孔等湖区热门目的地的门户城市，也是智利马普切原住民文化最集中的城市之一。这条航线让乘客在一次飞行里，从中央谷地的农业景观直接过渡到湖区特有的“火山—森林—湖泊”组合地貌。",
     "en-US":
       "Santiago to Temuco flies from the Central Valley into the northern edge of Chile's southern Lake District. After takeoff the familiar grid of farmland lies below; as the flight continues, patches of low forest and scattered lakes begin to appear — the Lake District's distinctive landscape coming into view." +
-      " Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with more than 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
+      " Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with about 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
       " The flight lands at Temuco, the gateway city to Villarrica Volcano, Pucón, and other Lake District highlights, and one of the cities with the largest concentration of Mapuche Indigenous culture in Chile. In a single flight, passengers move from the Central Valley's farmland straight into the Lake District's signature combination of volcano, forest, and lake.",
     },
     travel: {

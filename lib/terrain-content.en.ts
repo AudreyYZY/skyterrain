@@ -3432,8 +3432,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "kanto-plain": {
+    // formation sources: 缓慢下沉的构造盆地 + 河流冲积 + 台地（武藏野台地等）上覆来自富士山与箱根的风成火山灰（关东壤土），
+    //   与日本地学界公认机制一致。2026-09-10 核，verdict: ok。
+    // seeing sources: 人口：正文所指是**东京圈（1 都 3 县）** 口径，2020 年国势调查 36,914,000（占全国 29.3%，総務省統計局，1 级）。原文「约四千万」偏高且无年份口径。关东平原面积约 1.7 万 km²、日本第一大平原（第二石狩约 4000、第三十胜约 3600）核实无误。2026-09-10 核。
     seeing:
-      "The Kanto Plain is the largest plain in Japan, about 17,000 km², in central Honshu on the Pacific side. Japan's largest metropolitan area — Tokyo, Yokohama, Saitama and Chiba running together — is built on it, home to about 40 million people. The plain is enclosed by mountains on three sides (the Kanto Mountains to the west, the Ashio and Echigo ranges to the north) and opens south-east onto Tokyo Bay and the Pacific.",
+      "The Kanto Plain is the largest plain in Japan, about 17,000 km², in central Honshu on the Pacific side. Japan's largest metropolitan area — Tokyo, Yokohama, Saitama and Chiba running together — is built on it, home to about 37 million people (2020 census, the Tokyo-ken of Tokyo, Kanagawa, Saitama and Chiba). The plain is enclosed by mountains on three sides (the Kanto Mountains to the west, the Ashio and Echigo ranges to the north) and opens south-east onto Tokyo Bay and the Pacific.",
     formation:
       "The Kanto Plain is a slowly subsiding structural basin that has long received sediment carried down from the surrounding mountains by the Tone, Ara, Tama and other rivers. It is not a single lowland at one level: near the rivers is low alluvial ground, and between them rise several river-cut terraces (such as the Musashino Terrace), capped by a thick layer of wind-blown volcanic ash from Mount Fuji, Hakone and other volcanoes (the \"Kanto loam\").",
     observation:
@@ -3447,6 +3450,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "nobi-plain": {
+    // 全六段 sources: 1959 年伊势湾台风官方统计死亡 4,697 + 失踪 401 = 5,098 人，正文「超过 5000 人」准确（名古屋市官网，2 级）；
+    //   浓尾平原坐落在养老断层控制的倾动地块上（西沉东升），与内阁府地形地质指南口径一致（1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Nōbi Plain is in central Honshu on the northern shore of Ise Bay, the alluvial plain of the Nagoya area. Three large rivers — the Kiso, the Nagara and the Ibi — cross the plain almost side by side and empty together into Ise Bay. The south-western part of the plain is very low, with a substantial area of ground below sea level (below high tide), and it has always fought with floods.",
     formation:
@@ -3462,6 +3467,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "osaka-plain": {
+    // seeing / concept sources: 平原面积约 1600 km²（北摄山地—生驹／金刚山地—和泉山脉—大阪湾之间），多部词典百科一致；
+    //   1995 年阪神大地震与六甲—淡路岛断层带活动直接相关，六甲山系本身即由该断层带隆升。2026-09-10 核，verdict: ok。
     seeing:
       "The Osaka Plain is in western Honshu, on the eastern and northern shores of Osaka Bay — the core of the Kansai region. The three big cities of Osaka, Kyoto and Kobe and the continuous urban area between them lie on this plain and in the valleys around it. The plain is not large (about 1,600 km²) and is tightly hemmed in by rows of fault-block mountains such as Ikoma and Rokkō, with a very clear boundary between mountain and plain.",
     formation:
@@ -3472,11 +3479,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Osaka Plain and the Kanto Plain are both big-city plains of Japan, but the Kanto Plain is open and has volcanic-ash terraces; the Osaka Plain is cut to pieces by fault-block mountains, assembled from a string of small plains and basins, with a closer relationship between mountain and city. Versus the Nōbi Plain: the Osaka Plain does not have the large below-sea-level area that Nōbi does, so its flood problem is less extreme.",
     concept:
       "The Osaka Plain shows how block movement shapes settlement: the surrounding mountains are lifted along faults, the block between drops and is filled flat by rivers, and the cities grow in these dropped lowlands — with the fault often right at the mountain foot. There is an active fault at the base of Rokkō, and the 1995 Great Hanshin earthquake came from it. A common misconception is to take the mountain foot for the safest \"backed-by-mountain\" spot — in fault-block mountain country, the mountain foot often faces an active fault.",
+    // history sources: ⚠️ 原文把飞鸟、平城京并进了大阪平原。内阁府地形地质指南的大阪平原四至（北摄山地—生驹／金刚山地—和泉山脉—大阪湾）**不含奈良盆地**，飞鸟与平城京都在奈良盆地内；平安京在京都盆地。难波确在平原上。1 级。2026-09-10 核。
     history:
-      "The Osaka Plain was one of the centres of ancient Japanese civilisation — Naniwa, Asuka, Heijō-kyō (Nara) and Heian-kyō (Kyoto) were all in this area. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area.",
+      "The Osaka Plain was one of the centres of ancient Japanese civilisation: Naniwa stood on the plain itself, while Asuka and Heijō-kyō (Nara) lie in the neighbouring Nara Basin to the east — strictly outside the Osaka Plain — and Heian-kyō (Kyoto) sits in the Kyoto Basin to the north. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area.",
   },
 
   "ishikari-plain": {
+    // 全六段 sources: 北海道最大平原；过去是排水不畅的石狩泥炭地，经排水改造成稻田。
+    //   ✅ **专项复核「五大平原有没有被写成同一套成因」**：石狩（泥炭冲积低地）与十胜（火山灰台地）在本库里**写的是两套机制**、distinguish 段也明写了差异，没有混用（内阁府地形地质指南，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Ishikari Plain is the largest plain in Hokkaido, in the south-west of the island, on the lower Ishikari River. Sapporo, the capital of Hokkaido, is built on the southern edge of the plain, which also holds cities such as Asahikawa and large areas of rice paddy. It is enclosed by mountains and hills on three sides and opens north-west through Ishikari Bay to the Sea of Japan.",
     formation:
@@ -3492,6 +3502,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tokachi-plain": {
+    // 全六段 sources: 内阁府地形地质指南给十胜平原界限「北为然别火山、东为白糠丘陵、南为丰顷丘陵与太平洋、西为日高山脉」——
+    //   正文以「大雪山」概称北界山系（然别火山属大雪山火山群）可接受，东西两向精确对应。成因为叠置冲积扇 + 火山灰台地（洪積台地）。1 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Tokachi Plain is in south-eastern Hokkaido, a fan-shaped plain built out from the surrounding mountains by the Tokachi River and its tributaries, enclosed by the Hidaka Mountains to the west, Daisetsuzan to the north and the Shiranuka Hills to the east. With plenty of sunshine and dry summers, it is one of the few areas in Japan given over to large-scale, mechanised dryland farming and dairying — potatoes, sugar beet, beans and wide hayfields. The central city is Obihiro.",
     formation:
@@ -3615,6 +3627,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sanriku-coast": {
+    // 全六段 sources: 海岸约 600 km（青森八户至宫城石卷牡鹿半岛）；北山崎断崖高约 200 m。
+    //   ✅ **零争议红线专项复核**：通读六段中英全文，**未出现伤亡数字、未提及核事故、无任何评价**；
+    //   2011 年海啸只写了波高（「十几米甚至更高的浪高」/ run-up over ten metres）这一地学量，符合「只写地貌机制、不写灾害后果」的要求。
+    //   1896／1933 年历史海啸属广泛记载的自然灾害史。2026-09-10 核，verdict: ok。
     seeing:
       "The Sanriku Coast is about 600 km of the Pacific side of north-eastern Honshu (roughly from southern Aomori to northern Miyagi). It has two halves: the north is raised marine terraces, forming flat-topped tablelands and continuous cliffs up to 200 m high (such as Kitayamazaki); the south is a drowned-valley \"ria coast\" — the sea has flooded a set of parallel valleys, forming a jagged line of long narrow bays reaching inland.",
     formation:
@@ -3630,6 +3646,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "shiretoko-peninsula": {
+    // 全六段 sources: 环境省知床罗臼游客中心官方页（1 级）+ UNESCO 2005-07-17 列入年份交叉核对。
     // ✅ **零争议红线专项复核（本批风险最高的一条，紧邻南千岛）**：逐句核对全六段中英全文，
     //   **未出现**国后岛／择捉岛／色丹岛／齿舞群岛任何一个岛名，**未出现**「北方领土／南千岛／争议／归属」等表述；
     //   涉及海峡对岸陆地处一律不点名（写作「半岛几乎未开发」「知床岬没有道路能到」）。**红线守住。**
@@ -3650,8 +3667,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tottori-sand-dunes": {
+    // formation / concept sources: ✅ **成因专项复核**：沙来自千代川从中国山地搬运的花岗岩风化砂，
+    //   经「河供砂—浪搬运—风堆积」的循环形成，**不是「沙漠化」的产物**（山阴海岸世界地质公园，2 级）。
+    //   正文的「常被当作『日本唯一的沙漠景观』，但从气候上看这里并不干旱」是**把流行说法与事实并列**的正确写法，保留。
+    //   ⚠️ C8：沙丘因上游筑坝、护岸与防风林导致供砂与风减少而一度缩小、被杂草侵占，当地靠人工除草维持流动状态——
+    //   正文用的是定性表述、没给会过期的年份数字，符合处理惯例。2026-09-10 核，verdict: ok。
+    // seeing sources: 尺度：16 km × **2.4 km**（山阴海岸世界地质公园官方，2 级）；**最大高低差约 90 m**，而 47 m 是「马の背」第二砂丘列自身的标高（鸟取县砂丘事务所，1 级；第三砂丘列约 60 m）。原文把一条沙丘列的标高当成了整片的相对高差。2026-09-10 核。
     seeing:
-      "The Tottori Sand Dunes are on the Sea of Japan coast in western Honshu — the largest dune field in Japan, about 16 km east–west and 2 km north–south, with a local relief of about 47 m. In rainy, mountainous, forested Japan, such an open field of moving dunes is unusual, and it is often called \"Japan's only desert landscape\", though the climate here is not actually dry.",
+      "The Tottori Sand Dunes are on the Sea of Japan coast in western Honshu — the largest dune field in Japan, about 16 km east–west and 2.4 km north–south, with a maximum relief of about 90 m — the crest of the \"Umanose\" ridge alone standing some 47 m high. In rainy, mountainous, forested Japan, such an open field of moving dunes is unusual, and it is often called \"Japan's only desert landscape\", though the climate here is not actually dry.",
     formation:
       "The sand of the Tottori Dunes comes from the Sendai River. The Sendai River carries large amounts of granite-weathered sand from the Chūgoku Mountains into the Sea of Japan, waves push the sand back to the shore, and the strong winter monsoon winds off the Sea of Japan blow the dry sand onshore and pile it beyond the coast. Since the ice ages this cycle of \"river supply — wave transport — wind deposition\" has continued, forming today's dunes. There are groundwater-fed hollows between the dunes.",
     observation:
@@ -3665,6 +3688,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   yakushima: {
+    // 全六段 sources: 宫之浦岳 1936 m，为整个九州地方最高峰（正文写「九州以南最高峰」偏保守、不算错）；
+    //   1993 年与白神山地同为日本首批 UNESCO 世界自然遗产；山区年降水量可超 10,000 mm（气象厅，1 级）。
+    //   ✅ **绳文杉树龄专项复核**：测年结果差异极大——1976 年推定 7000 年以上、外圈年轮约 2700 年、学习院大学碳测年最大仅 2170 年、
+    //   1996 年约 2600 年、2018 年岐阜大学约 2800 年。**正文用「常被说成……但争议很大」的并列写法、没有坐实单一数字**，判定不改。2026-09-10 核，verdict: ok。
     seeing:
       "Yakushima is off the southern tip of Kyushu — a nearly circular granite island about 25 km across. Its centre is mountain country above 3,000 feet, the highest peak Miyanoura-dake at 1,936 m, the highest mountain south of Kyushu. It is known for extreme rainfall (there is a saying that it \"rains 35 days a month\"), a complete vertical sequence of vegetation zones from subtropical to subarctic, and Japanese cedars (\"Yakusugi\") that may be thousands of years old; it was inscribed as a World Heritage site in 1993.",
     formation:
@@ -3680,6 +3707,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ryukyu-islands": {
+    // seeing / formation / observation / distinguish / concept sources: 「琉球群岛（日本称南西诸岛）」用的是无争议的主链表述。
+    //   UNESCO 两项：2000 年「琉球王国のグスク及び関連遺産群」（文化）、2021 年「奄美大島、徳之島、沖縄島北部及び西表島」（自然），年份核实无误（1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Ryukyu Islands (called the Nansei Islands in Japan) are a chain of islands stretching about 1,000 km south-west from Kyushu, separating the Pacific from the East China Sea. The climate is subtropical maritime, coral reefs are widely developed around the islands, and many islands' surface is \"Ryukyu limestone\" formed from uplifted coral reef, so there are limestone terraces, caves (\"gama\") and karst landforms. Amami-Ōshima, northern Okinawa Island and other islands were inscribed as a World Heritage site in 2021 for their well-preserved subtropical broadleaf evergreen forest.",
     formation:
@@ -3690,11 +3719,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ryukyu Islands are unlike the islands of the Japanese mainland: the mainland islands are dominated by volcanoes and drowned mountains, while the Ryukyus are dominated by coral reef and uplifted limestone, with a subtropical climate and an ecology closer to Taiwan and southern China. Versus pure coral islands like the Maldives: the Ryukyu islands have a rock base and mountains, and are not simple atolls.",
     concept:
       "The \"uplifted coral reef\" landform of the Ryukyus shows how crustal uplift and sea-level change act together: coral reef can only grow in warm shallow seas, and once lifted out of the sea it stops growing and turns to limestone; if reef accumulates and is uplifted repeatedly through different high-sea-level periods, a staircase of coral-reef terraces forms. A common misconception is to treat all tropical islands as volcanic — many Ryukyu islands have a surface of \"petrified coral\".",
+    // history sources: ⚠️ 零争议红线：删去「冲绳战役是……规模最大的地面战」一句（中英各一处）。**与意大利「一战山地战（简短事实）」的先例区别在于**：这是一个关于战役的**最高级排名**、不是定位性简短事实，且冲绳战役与至今仍在进行的基地与地方认同讨论直接缠绕，属「仍在持续的对立状态」一侧；它对这条地形条目也无地理价值。
+    //   ✅ 其余五段复核通过：未出现尖阁诸岛／钓鱼岛或任何可指向它的表述，未涉施政权移交、1972 年复归；琉球王国只作前现代史、未写「并入日本」的过程与评价。UNESCO 两项（2000 年琉球王国のグスク及び関連遺産群、2021 年奄美大島等自然遗产）年份核实无误（1 级）。
     history:
-      "Many of the Ryukyu Islands were long ruled by the Ryukyu Kingdom, which had close tribute and trade ties with China, Japan and South-East Asia; sites such as Shuri Castle (\"Gusuku Sites and Related Properties of the Kingdom of Ryukyu\") are a World Heritage cultural site. The area has a strong local character in language, music, food and religion. The Battle of Okinawa (1945) was the largest ground battle within Japanese home territory in the Pacific War.",
+      "Many of the Ryukyu Islands were long ruled by the Ryukyu Kingdom, which had close tribute and trade ties with China, Japan and South-East Asia; sites such as Shuri Castle (\"Gusuku Sites and Related Properties of the Kingdom of Ryukyu\") are a World Heritage cultural site. The area has a strong local character in language, music, food and religion.",
   },
 
   "shinano-river": {
+    // 全六段 sources: 全长 367 km（长野境内千曲川约 214 km + 新潟境内信浓川约 153 km），日本第一长河
+    //   （国交省北陆地方整备局信浓川河川事务所，1 级）；大河津分水路 1909 年动工、1922-08-25 通水（同，1 级）。
+    //   ✅ **专项复核「最长 vs 流域最大有没有混」**：distinguish 段正确区分了信浓川（最长 367 km）与利根川（流域最大 16,840 km²）两项不同排名，没有混用。2026-09-10 核，verdict: ok。
     seeing:
       "The Shinano River is the longest river in Japan, about 367 km (called the Chikuma River within Nagano Prefecture, and the Shinano River after it enters Niigata Prefecture). It rises in the Kanto Mountains of central Honshu, passes through the Nagano Basin, cuts through the Echigo Mountains, and finally empties into the Sea of Japan on the Echigo Plain in Niigata. The lower Echigo Plain is one of Japan's important rice-growing areas.",
     formation:
@@ -3710,6 +3744,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tone-river": {
+    // 全六段 sources: 流域面积 16,840 km²，日本第一（国交省关东地方整备局，1 级）；
+    //   利根川东迁为江户时代 17 世纪跨越数十年的改道工程，最终改由铫子入太平洋；1947 年卡斯林台风在栗桥附近决堤，此后大幅提高治水标准（同，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Tone River has the largest drainage basin in Japan (about 16,800 km²) and runs right across the Kanto Plain. Historically it was nicknamed \"Bandō Tarō\" (\"Bandō\" is an old name for Kanto, and \"Tarō\" means eldest son, the biggest). It rises in the mountains of northern Kanto, gathers many tributaries on the Kanto Plain, and finally empties into the Pacific at Chōshi in Chiba Prefecture. It supplies a great deal of the domestic and industrial water for the Tokyo metropolitan area.",
     formation:
@@ -7305,6 +7341,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "picos-de-europa": {
+    // 全六段 sources: 1918-07-22 设立（初名 Montaña de Covadonga），西班牙第一座国家公园；奥德萨同年 8 月为第二座，与 ordesa-canyon 条目并读一致。核实 2026-09-10，未改动
     seeing:
       "The Picos de Europa, in the middle stretch of the Cantabrian Mountains in northern Spain, is a small but unusually steep limestone massif — peaks and deep gorges packed into less than 20 km east–west. The name is thought to date from the age of sail: the first sight of Europe for ships returning from the Atlantic was these snow-streaked peaks, hence \"Peaks of Europe\".",
     formation:
@@ -7320,6 +7357,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sistema-central": {
+    // 全六段 sources: 阿尔曼索尔峰 2592m 为中央山系最高点；1905 年阿方索十三世设格雷多斯王室狩猎保护区以护伊比利亚野山羊。核实 2026-09-10，未改动
     seeing:
       "The Sistema Central is a granite mountain range running north-east to south-west right across the middle of Spain's Meseta plateau, splitting it into a northern and a southern half. It includes the Sierra de Guadarrama, the Sierra de Gredos and other sections; the highest point, Pico Almanzor in the Gredos, is 2,592 m, with snow often lingering on top into early summer.",
     formation:
@@ -7335,6 +7373,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sistema-iberico": {
+    // 全六段 sources: 长逾 500 km（La Bureba 至塔拉戈纳近地中海处）、乌尔比昂峰 2228 m；IGN 官方原文即写它是埃布罗流域与杜罗/塔霍/胡卡尔诸流域之间的分水岭（ign.es，1 级）；杜罗河源出乌尔比昂峰一带。核实 2026-09-10，未改动
     seeing:
       "The Sistema Ibérico is a mountain belt running north-east to south-west for more than 500 km, from the southern edge of the Ebro Basin almost to the Mediterranean coast. Unlike the Sistema Central it is not a single clean ridge but a patchwork of ranges and plateau fragments; its highest point, Pico de Urbión, is only about 2,228 m, yet it matters enormously because it separates nearly all the Iberian Peninsula's major river systems.",
     formation:
@@ -7350,6 +7389,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sierra-morena": {
+    // 全六段 sources: 全长约 400 km、最高点 Pico La Bañuela 1324 m（＜1400 m，安达卢西亚教育部门官方教学资源，2 级）；基底为华力西期古生代变质岩；1212 年拉斯纳瓦斯-德托洛萨战役属广泛记载的中世纪史，不涉现代政治评价。核实 2026-09-10，未改动
     seeing:
       "The Sierra Morena is a low, east–west range separating the southern edge of the Meseta from the Guadalquivir Valley in Andalusia, running about 400 km and reaching under 1,400 m at its highest. Though not tall, it stands like a continuous wall between two very different landscapes and was historically a natural barrier to north–south travel.",
     formation:
@@ -7365,6 +7405,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sierra-nevada-es": {
+    // 全六段 sources: 穆拉森峰 3479m 为伊比利亚半岛最高点（与 teide「全西班牙最高」口径不冲突，已并排核对）；1986 年 UNESCO 生物圈保护区（unesco.org/en/mab/sierra-nevada，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Sierra Nevada, in Andalusia at the southern tip of Spain, holds the highest point on the Iberian Peninsula: Mulhacén at 3,479 m, yet it lies only about 40 km from the Mediterranean coast — snow on its summit is visible from the city of Granada for most of the year.",
     formation:
@@ -7380,6 +7421,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sierra-de-grazalema": {
+    // 全六段 sources: 最高峰 El Torreón 1648 m；AEMET 数据下年均降水约 2000–2500 mm，多篇报道据此称其为西班牙降雨最多的村镇；1977 年为西班牙首个 UNESCO 生物圈保护区；西班牙冷杉（Abies pinsapo）为仅存于西班牙南部与摩洛哥北部数座山地的孑遗树种。核实 2026-09-10，未改动
     seeing:
       "The Sierra de Grazalema, in western Andalusia, is a modest limestone range (its highest point about 1,648 m) that is remarkably wet — average annual rainfall over 2,100 mm, the highest on record anywhere on mainland Spain, a sharp contrast with the dry Andalusian plains around it.",
     formation:
@@ -7395,6 +7437,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "garrotxa-volcanic-zone": {
+    // 全六段 sources: 40 余座渣锥；克罗斯卡特约 1.15 万年前最后喷发、为半岛已知最年轻火山（另有 1.3–1.4 万年区间说，同数量级）；1982 年加泰罗尼亚议会立法设自然公园。核实 2026-09-10，未改动
     seeing:
       "La Garrotxa Volcanic Zone, inland in north-eastern Catalonia, is a rare patch of volcanic landscape on the Iberian Peninsula — more than 40 low cinder cones packed into under 20 km², covered in dense oak forest and looking more like rolling hills than volcanoes.",
     formation:
@@ -7412,8 +7455,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   teide: {
     seeing:
       "Teide, on the island of Tenerife in the Canary Islands, rises to 3,715 m — the highest point in all of Spain and the highest peak on any Atlantic island. It rises from the centre of a huge caldera plain, its conical outline visible from the sea tens of kilometres away.",
+    // formation sources: Las Cañadas 成因在垂直塌陷说与侧向滑坡说之间尚无定论；本库 caldera-de-taburiente/distinguish 同批一并改为中性表述。核实 2026-09-10
     formation:
-      "Teide is a stratovolcano, built up from many eruptions of lava flow and pyroclastic material, sitting inside an older, much larger caldera (Las Cañadas) — itself the hollow left by an earlier, even larger volcano after a flank collapse. Measured from its base on the Atlantic sea floor, Teide's total height is about 7,500 m, the third-tallest volcanic structure on Earth after Mauna Kea and Mauna Loa in Hawaii.",
+      "Teide is a stratovolcano, built up from many eruptions of lava flow and pyroclastic material, sitting inside an older, much larger caldera (Las Cañadas) — whose own origin is still debated: one view holds it is the hollow left by an earlier, larger volcano after a lateral flank collapse, the other that it formed by vertical collapse when an underlying magma chamber emptied, and evidence has been found for both. Measured from its base on the Atlantic sea floor, Teide's total height is about 7,500 m, the third-tallest volcanic structure on Earth after Mauna Kea and Mauna Loa in Hawaii.",
     observation:
       "From the air Teide is an almost perfectly symmetrical cone, its summit sometimes snow-capped, surrounded by the broad, flat pyroclastic plain of Las Cañadas — whose rim, a ring of steep cliffs, clearly traces the outline of the older volcano that once stood here.",
     distinguish:
@@ -7425,6 +7469,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-tramuntana": {
+    // 全六段 sources: 梅杰峰 1445m、萨坎帕纳洞 358m（马略卡最深洞）、2011-06-29 以文化景观类列入 UNESCO（whc.unesco.org/en/list/1371，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Serra de Tramuntana runs about 90 km along the north-west coast of Mallorca in the Balearic Islands, a steep limestone range with the Mediterranean on one side and the island's plain on the other; its highest point, Puig Major, is 1,445 m.",
     formation:
@@ -7440,6 +7485,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meseta-central": {
+    // 全六段 sources: 约占伊比利亚半岛四成面积；平均海拔各来源在 600–760m 之间，正文「600—800米」落在区间内（Britannica，2 级）。核实 2026-09-10，未改动
     seeing:
       "The Meseta Central covers nearly two-fifths of the Iberian Peninsula, one of the largest plateaus in Europe, averaging 600–800 m in elevation. It is not a single flat sheet but a gently undulating, ancient tableland, with Madrid sitting near its centre.",
     formation:
@@ -7465,11 +7511,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ebro Basin and the Aquitaine Basin in France are both Cenozoic sedimentary basins enclosed by orogenic belts, but the Ebro Basin once went through a fully sealed, inland salt-lake stage, while the Aquitaine Basin was always open toward the Atlantic. The Ebro Basin's interior is dry, one of the few low-elevation areas on the Iberian Peninsula where badland desert landforms can develop.",
     concept:
       "The Ebro Basin shows the full process of \"how an inland basin gets drained\": whether a basin has an outlet to the sea depends on a competition between the surrounding mountains rising and a river's headward erosion cutting back — once a river's downcutting catches up with and cuts through the ridge blocking it, the basin's whole drainage pattern changes permanently.",
+    // history sources: 与 bardenas-reales/history 同一事实，882 年纳瓦拉国王 Sancho García 授龙卡尔谷地放牧权；r16b 只改了 bardenas-reales 那一条，本轮补上这处引用。核实 2026-09-10
     history:
-      "The Ebro Basin has long been a transport corridor linking the two sides of the Pyrenees with the Mediterranean coast; Zaragoza has been the basin's core city since Roman times. The dry Bardenas Reales at the basin's edge was historically a pasture and hunting ground reserved for the Kingdom of Aragon's royal house, whence its name \"Reales\" (\"royal\").",
+      "The Ebro Basin has long been a transport corridor linking the two sides of the Pyrenees with the Mediterranean coast; Zaragoza has been the basin's core city since Roman times. The dry Bardenas Reales at the basin's edge was historically a pasture and hunting ground reserved for the Kingdom of Navarre's royal house (the title later passing to the Crown of Castile after Navarre's incorporation), whence its name \"Reales\" (\"royal\").",
   },
 
   "guadalquivir-valley": {
+    // 全六段 sources: 塞维利亚港官方自述为「el único interior de España」（西班牙唯一内陆港），经约 90 km 河道通航（puertodesevilla.com，2 级）；印度群岛贸易署设于塞维利亚为公认史实；上瓜达尔基维尔河谷为西班牙橄榄油核心产区。核实 2026-09-10，未改动
     seeing:
       "The Guadalquivir Valley, in Andalusia, is a wedge-shaped lowland with the Guadalquivir River running from north-east to south-west through it before emptying into the Atlantic. It is the only Iberian river valley navigable by ocean-going ships all the way to an inland port, and Seville sits at the head of the navigable stretch.",
     formation:
@@ -7491,8 +7539,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "This area was still shallow sea about 8 million years ago, after which thick marine marl and shale were deposited. This kind of rock has very fine grains, is almost impermeable, and carries almost no vegetation to hold the surface — every heavy rainstorm sends water racing down tiny surface cracks, cutting them deeper, and over a few decades a dense network of gullies forms. This thoroughly dissected landscape is generically called badland.",
     observation:
       "From the air Tabernas is a yellow-brown, rolling landscape covered in dense, parallel gullies with almost no continuous vegetation; the ridgelines between gullies branch repeatedly like tree limbs — a drainage pattern very typical of badland terrain. It is ringed by the Sierra de los Filabres and the Sierra Alhamilla, whose somewhat greener slopes stand in clear contrast.",
+    // distinguish sources: 塔韦纳斯范围内并存柯本 BWh/BWk 与半干旱气候，不宜整体定性为任一种；核实 2026-09-10
     distinguish:
-      "The Tabernas Desert and Bardenas Reales are both Spanish badlands, but Tabernas is dominated by marl and is more densely and finely gullied, while Bardenas Reales has harder limestone and gypsum layers interbedded in its rock and so retains isolated tablelands and pinnacles. By strict climatological standards, Tabernas's rainfall-to-evaporation ratio actually makes it semi-arid rather than true desert — \"Europe's only desert\" is a popular rather than a technical label.",
+      "The Tabernas Desert and Bardenas Reales are both Spanish badlands, but Tabernas is dominated by marl and is more densely and finely gullied, while Bardenas Reales has harder limestone and gypsum layers interbedded in its rock and so retains isolated tablelands and pinnacles. Climatologists differ on whether Tabernas as a whole meets the strict desert threshold: parts of it receive under 250 mm of rain a year and do qualify as desert climate, while most of the surrounding area is semi-arid — \"Europe's only desert\" is a popular rather than a technical label.",
     concept:
       "Badland terrain shows how the absence of vegetation amplifies erosion: wherever rainfall is scarce and the rock is impermeable and easily broken, and there is no vegetation to hold the surface, erosion runs far ahead of vegetated ground nearby — which is why badland often appears on one small, especially poor rock unit within a semi-arid region, not across the whole dry zone.",
     history:
@@ -7510,11 +7559,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bardenas Reales and the Tabernas Desert are both Spanish badlands, but Bardenas has more hard limestone and gypsum interbedded in its rock and so more readily preserves isolated tablelands and spires; Tabernas is dominated by marl and erodes more uniformly and thoroughly, rarely leaving isolated residual landforms.",
     concept:
       "Isolated tablelands and spires are a direct product of differential erosion: a layer of hard rock acts like a cap, protecting the softer rock below from being washed away, while the unprotected soft rock around it is worn down lower and lower, leaving the protected part standing relatively proud — the same process behind the \"butte\" landforms of the American West.",
+    // history sources: 882 年纳瓦拉国王 Sancho García 授龙卡尔谷地放牧权；Reales = 纳瓦拉王室的（bardenasreales.es / visitnavarra.es，2 级）。核实 2026-09-10
     history:
-      "Bardenas Reales has been a pasture reserved for the Kingdom of Aragon's royal house since the Middle Ages — \"Reales\" means \"royal\" — and remains a shared seasonal grazing ground for local herders today. It was UNESCO Biosphere Reserve-listed in 2000 and has served as a location for numerous films.",
+      "Bardenas Reales has been a pasture reserved for the Kingdom of Navarre's royal house since the Middle Ages, the title passing to the Crown of Castile after Navarre's incorporation — \"Reales\" means \"royal\" — and remains a shared seasonal grazing ground for local herders today. It was UNESCO Biosphere Reserve-listed in 2000 and has served as a location for numerous films.",
   },
 
   timanfaya: {
+    // 全六段 sources: 1730–1736 年喷发历时约 2055 天；逾百个喷口（含短暂活动的小喷口，与 observation 段「几十个渣锥」指永久保留者，不矛盾）；约 200 km² 农田被覆盖、最厚熔岩层近百米；1974 年建园。核实 2026-09-10，未改动
     seeing:
       "Timanfaya, on the island of Lanzarote in the Canary Islands, is a field of pure-black lava with almost no vegetation, known as the \"Montañas del Fuego\" (Mountains of Fire). This landscape is not an ancient relic but the direct result of an eruption less than 300 years ago, lasting six years from 1730 to 1736.",
     formation:
@@ -7533,11 +7584,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Caldera de Taburiente, on the island of La Palma in the Canary Islands, is a huge hollow about 8 km across and more than 2,000 m deep, its walls as steep as a bowl — one of the largest erosion calderas in the world.",
     formation:
-      "About 400,000 years ago this was the site of a huge shield volcano (built up slowly from many lava flows). One flank of that volcano gave way in a massive landslide, carrying away a large volume of the volcano's interior and leaving a huge hollow; over the following hundreds of thousands of years running water kept eroding and deepening that hollow, hollowing it out further into today's scale. It is therefore not a \"caldera\" blown out by a single eruption, but an \"erosion caldera\" shaped jointly by a landslide and long-term water erosion.",
+      "Several hundred thousand years ago this was the site of a huge shield volcano (built up slowly from many lava flows). One flank of that volcano gave way in a massive landslide, carrying away a large volume of the volcano's interior and leaving a huge hollow; over the following hundreds of thousands of years running water kept eroding and deepening that hollow, hollowing it out further into today's scale. It is therefore not a \"caldera\" blown out by a single eruption, but an \"erosion caldera\" shaped jointly by a landslide and long-term water erosion.",
     observation:
       "From the air the Caldera de Taburiente is a huge circular hollow in the north of the island, its walls near-vertical volcanic rock on which layers of lava and pyroclastic material from different periods can be made out; dense Canary pine forest grows on the floor of the hollow, in sharp contrast with the bare rock walls around it.",
+    // distinguish/formation sources: 本条不再点名 Las Cañadas 作反例（其成因学界未定，见 teide 条目同批改动）；塔布连特为侵蚀火山口这一判断符合 Carracedo & Troll 2016 / Groom et al. 2023。核实 2026-09-10
     distinguish:
-      "The Caldera de Taburiente differs from most true calderas (such as Las Cañadas beneath Teide) — those usually form when an underground magma chamber empties during an eruption and the surface collapses; Taburiente is entirely the product of a landslide plus long-term water erosion, with no single collapse event.",
+      "The Caldera de Taburiente differs from a typical eruption-collapse caldera — where an underground magma chamber empties and the surface subsides — in that Taburiente is entirely the product of a landslide plus long-term water erosion, with no single collapse event.",
     concept:
       "The name \"erosion caldera\" is itself a reminder: not every huge caldera-like hollow was blown out directly by an eruption — some form when a volcanic edifice collapses under its own weight and is then hollowed out over time by running water; telling the two apart requires reading the rock structure and erosion evidence, not just the shape.",
     history:
@@ -7545,6 +7597,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rias-baixas": {
+    // 全六段 sources: 维戈/蓬特维德拉/阿罗萨/穆罗斯-诺亚四湾名称准确；ría（未冰川化河谷海侵）与 fjord（冰川 U 形谷海侵）成因区分符合地貌学标准定义；加利西亚贻贝约占西班牙产量八成。注：ría 一词更精确的词源是加利西亚语（源自 río），西班牙语沿用。核实 2026-09-10，未改动
     seeing:
       "The Rías Baixas, on the south-west coast of Galicia in north-west Spain, are made up of four deep, funnel-shaped inlets cutting far inland — the Ría de Vigo, Ría de Pontevedra, Ría de Arousa and Ría de Muros e Noia — giving the coastline an extremely jagged outline; the region is Spain's most important mussel-farming area.",
     formation:
@@ -7560,6 +7613,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "costa-brava": {
+    // 全六段 sources: 海岸主体为二叠纪早期（约 288 Ma）滨海花岗岩体，与比利牛斯山东段地质连续（ICGC 加泰罗尼亚地质制图局，2 级）；克雷乌斯角（42°19′09″N, 3°19′19″E）为伊比利亚半岛最东点。核实 2026-09-10，未改动
     seeing:
       "The Costa Brava, on the north-east coast of Catalonia, gets its name — meaning \"rugged\" or \"wild coast\" — from a shoreline of steep rock cliffs alternating with small coves, running from Catalonia all the way to Cap de Creus near the French border.",
     formation:
@@ -7577,8 +7631,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "cabo-de-gata": {
     seeing:
       "Cabo de Gata, in Almería in south-east Spain, is the only stretch of coast on the Iberian Peninsula made entirely of volcanic rock, known for its steep volcanic cliffs and clear water; the surrounding province of Almería is also one of the driest regions in continental Europe.",
+    // formation/history sources: 火山活动期 14–7.5 Ma 分多个旋回，保存最好的构造为 9–7.5 Ma（Junta de Andalucía 地质公园页，1 级）；2001-01-01 加入欧洲及全球地质公园网络（UNESCO，1 级）。核实 2026-09-10
     formation:
-      "About 13–14 million years ago this area saw frequent submarine volcanic activity, with andesitic and dacitic magma erupting repeatedly to build a large submarine volcanic complex — the part now above water is only about 5% of the whole complex, the remaining 95% still submerged beneath the Alboran Sea. The exposed volcanic rock shows clear columnar jointing from cooling and contraction, and some places still show recognisable lava domes and crater outlines.",
+      "From about 14 to 7.5 million years ago — the structures still visible on the ground today date to roughly 9-7.5 million years ago — this area saw frequent submarine volcanic activity, with andesitic and dacitic magma erupting repeatedly to build a large submarine volcanic complex — the part now above water is only about 5% of the whole complex, the remaining 95% still submerged beneath the Alboran Sea. The exposed volcanic rock shows clear columnar jointing from cooling and contraction, and some places still show recognisable lava domes and crater outlines.",
     observation:
       "From the air Cabo de Gata is a stretch of steep cliff, red-brown or grey-green, about a hundred metres high, cut by dense fractures into a jagged outline, with a few sandy coves between the cliffs; the water is especially clear since no major river nearby carries sediment into it, and the sparse vegetation inland shows a typical semi-desert landscape.",
     distinguish:
@@ -7590,6 +7645,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   donana: {
+    // 全六段 sources: 1969 年建园（初 3.46 万 ha，后扩至约 5.4 万 ha）、1994 年列入 UNESCO；地名源自 1585 年 Doña Ana de Silva y Mendoza 的猎苑。正文只写季节性丰枯的自然过程，未给地下水超采监测数字，不属须带监测时点的量。核实 2026-09-10，未改动
     seeing:
       "Doñana, at the mouth of the Guadalquivir River, is a wetland of about 54,000 hectares made up of seasonal marshes, shifting dunes and Mediterranean pine forest — one of Europe's most important habitats for migratory birds, with hundreds of thousands of waterfowl passing through each year between Europe and Africa.",
     formation:
@@ -7611,8 +7667,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In its upper course the river crosses the flat Meseta plateau with a gentle current and a broad channel; near the Spain–Portugal border it cuts into old, hard granite and gneiss basement, and the channel narrows abruptly, carving the Arribes del Duero canyon — a deeply incised gorge more than 100 km long with near-vertical walls and a height difference of several hundred metres between rim and river. Since the 20th century a series of dams along this stretch has turned most of the canyon into a chain of long, narrow reservoirs.",
     observation:
       "From the air the Duero on the Meseta is a broad, gentle meander through farmland on both banks; once it enters the Arribes del Duero canyon the channel is suddenly squeezed between steep rock walls, the river a narrow blue-green ribbon deep in the gorge — a stark contrast with the open scenery upstream.",
+    // distinguish sources: 埃布罗河源出坎塔布连山脉 Fontibre（约 880 m），与伊比利亚山系的关系是接纳其东侧支流；与本库 ebro-river/formation 段一致（该段原本就写对）。核实 2026-09-10
     distinguish:
-      "The Duero and the Ebro both rise in the general area of the Sistema Ibérico, the two most important rivers on the Iberian Peninsula, but the Duero flows west to the Atlantic (at Porto, Portugal), while the Ebro flows east to the Mediterranean (at Tarragona) — their watersheds are separated by the Sistema Ibérico itself, direct evidence for locating that range's watershed line.",
+      "The Duero rises in the Sistema Ibérico, while the Ebro itself rises in the Cantabrian Mountains but gathers many tributaries — the Jalón among them — draining the Sistema Ibérico's eastern flank. They are the two most important rivers on the Iberian Peninsula: the Duero flows west to the Atlantic (at Porto, Portugal), while the Ebro flows east to the Mediterranean (at Tarragona) — their watersheds are separated by the Sistema Ibérico itself, direct evidence for locating that range's watershed line.",
     concept:
       "The Duero's canyon stretch shows how an abrupt change in rock hardness reshapes a river: while crossing a plateau of soft sediment the channel is broad and gentle, but once it cuts into hard crystalline basement the balance between downcutting and lateral erosion shifts, and the channel narrows and deepens — a direct sign of a change in the geology beneath a river.",
     history:
@@ -7620,14 +7677,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ebro-river": {
+    // seeing sources: 埃布罗流域约 85,534 km²，杜罗流域约 97,290–98,258 km²（含葡萄牙）—— 半岛最大属杜罗，埃布罗是「完全在西班牙境内的流域中最大」。核实 2026-09-10
     seeing:
-      "The Ebro is the longest river entirely within Spain, about 930 km, and drains the largest river system on the Iberian Peninsula — it rises, flows and reaches the sea entirely within Spanish territory, emptying into the Mediterranean in Tarragona province, where it has built a bird's-foot delta.",
+      "The Ebro is the longest river entirely within Spain, about 930 km, and drains the largest river basin lying entirely within Spanish territory (the peninsula's largest basin overall belongs to the transboundary Duero) — it rises, flows and reaches the sea entirely within Spanish territory, emptying into the Mediterranean in Tarragona province, where it has built a bird's-foot delta.",
     formation:
       "The Ebro rises in the Cantabrian Mountains and flows south-east through the Ebro Basin, picking up many tributaries from the Sistema Ibérico such as the Jalón and carrying a heavy sediment load. As it nears the Mediterranean the current slows and sediment steadily settles out, building land seaward and forming a delta of about 320 km² — Catalonia's largest wetland.",
     observation:
       "From the air the Ebro Delta shows a classic bird's-foot pattern, the channel splitting into several distributaries near the coast, the delta surface covered in a grid of rice paddies and a string of shallow lagoons — a vivid green contrast with the dry Mediterranean hill country around it.",
     distinguish:
-      "The Ebro Delta and the delta of the Rhône (the Camargue) in France are both large Mediterranean river deltas, but the Ebro lies entirely within one country with its whole watershed enclosed by mountains, while the Rhône crosses several countries and its headwaters connect to Alpine glacial meltwater. The Ebro and the Duero share a common source area in the Sistema Ibérico yet flow to the Mediterranean and the Atlantic respectively — direct evidence of that range acting as a watershed.",
+      "The Ebro Delta and the delta of the Rhône (the Camargue) in France are both large Mediterranean river deltas, but the Ebro lies entirely within one country with its whole watershed enclosed by mountains, while the Rhône crosses several countries and its headwaters connect to Alpine glacial meltwater. The Ebro gathers many tributaries draining the eastern flank of the Sistema Ibérico, while the Duero rises within that same range; the two flow to the Mediterranean and the Atlantic respectively — direct evidence of that range acting as a watershed.",
     concept:
       "A delta's bird's-foot branching shows the process of \"the current slowing and sediment settling\" where a river meets the sea: once the river enters a calm bay it loses its carrying capacity, and the sediment it holds steadily settles, first building a sandbar at the river mouth and then splitting the channel around that bar — repeating this process builds a multi-channel delta that keeps advancing seaward.",
     history:
@@ -7637,8 +7695,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ordesa-canyon": {
     seeing:
       "The Ordesa Canyon, on the Spanish side of the Pyrenees, is a deep valley cut into the north face of Monte Perdido, its walls near-vertical and its floor thickly forested; at the head of the valley a waterfall called the Cola de Caballo (\"Horsetail\") drops straight down a cliff — the most spectacular stretch of Pyrenean landscape on Spanish soil.",
+    // formation sources: Añisclo 深逾 1000m 属实；「比奥德萨更深」无来源支持，各来源作「至少与奥德萨相当」。核实 2026-09-10
     formation:
-      "Monte Perdido is Europe's highest limestone massif, at 3,355 m. The canyon is the product of repeated Ice Age glacial carving followed by long-term water dissolution — glaciers first cut a broad U-shaped valley floor, and afterward running water continued cutting down along fractures in the limestone, sharpening the walls further. The neighbouring Añisclo Canyon is even deeper than Ordesa, over 1,000 m, and both belong to the same limestone karst massif.",
+      "Monte Perdido is Europe's highest limestone massif, at 3,355 m. The canyon is the product of repeated Ice Age glacial carving followed by long-term water dissolution — glaciers first cut a broad U-shaped valley floor, and afterward running water continued cutting down along fractures in the limestone, sharpening the walls further. The neighbouring Añisclo Canyon is similarly over 1,000 m deep, comparable to Ordesa, and both belong to the same limestone karst massif.",
     observation:
       "From the air the Ordesa valley is a densely forested U-shaped gorge, its floor flat and its walls steep and towering, with a height difference of more than 800 m; the round headwall at the end of the valley is a classic glacial cirque, and the Cola de Caballo waterfall drops from the cliff at that head.",
     distinguish:
@@ -7650,6 +7709,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lago-de-sanabria": {
+    // 全六段 sources: 湖面 369 ha，为西班牙最大天然湖与伊比利亚半岛最大冰川湖，湖畔海拔约 997 m；末次（Würm）冰期冰舌总长逾 20 km、在今 Ribadelago 处厚逾 300 m；1978 年设自然公园。核实 2026-09-10，未改动
     seeing:
       "Lago de Sanabria, in Zamora province in north-west Spain, is Spain's largest natural freshwater lake and the largest glacial lake on the Iberian Peninsula, its surface at about 1,000 m elevation, ringed by pine forest and granite mountains.",
     formation:
@@ -7665,6 +7725,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "laguna-de-gallocanta": {
+    // 全六段 sources: 官方自述为「mayor laguna natural de la península ibérica」，保护区海拔 995–1085 m（jiloca.es，2 级）；湖面丰枯变化极大，正文只写季节性剧变、未给死面积，符合「会过期的量用区间」判据。核实 2026-09-10，未改动
     seeing:
       "Laguna de Gallocanta, in Aragon in north-east Spain, is the largest inland salt lake on the Iberian Peninsula, its surface at about 995 m elevation. It has no outlet to the sea, its water supplied entirely by seasonal rain, and it often dries out over large areas in summer to reveal white salt flats — a classic closed-basin lake.",
     formation:
@@ -7680,6 +7741,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "la-mancha-plain": {
+    // 全六段 sources: 平均海拔 600–700 m；DO La Mancha / 卡斯蒂利亚-拉曼恰为西班牙乃至世界种植面积最大的葡萄酒产区（2025 年约 144,708 ha，行业媒体转述官方数据，2 级）——「面积最大」有具体年份与口径支撑。核实 2026-09-10，未改动
     seeing:
       "The La Mancha Plain, on the southern sub-plateau of the Meseta, is an extremely flat, open limestone tableland averaging about 600–700 m in elevation, its horizon stretching almost endlessly; traditional white windmills still stand in rows along the edges of the tableland, one of Spain's most recognisable rural landscapes.",
     formation:
@@ -7697,8 +7759,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "bavarian-alps": {
     seeing:
       "The Bavarian Alps, at the very south of Germany, are the northernmost stretch of the Northern Limestone Alps within the country; the highest peak, the Zugspitze, is 2,962 m — the highest point in all of Germany. Its summit sits right on the Germany–Austria border, and snow on top is visible from the town of Garmisch-Partenkirchen for most of the year.",
+    // formation sources: 楚格峰 2962 m 为 LDBV 官方高程（阿姆斯特丹基准）；德国现存冰川四片（楚格峰的北施内费尔纳、赫伦塔尔 + 贝希特斯加登的 Blaueis、Watzmanngletscher），南施内费尔纳 2022 年经巴伐利亚科学院测量归类为死冰而除名 —— 这是会变的量，下轮回来复核。核实 2026-09-10
     formation:
-      "The range belongs to the Wetterstein Mountains, built mainly of thick Wetterstein limestone laid down on a Triassic (over 200-million-year-old) shallow-sea platform and later folded and uplifted to near 3,000 m by the Alpine orogeny. The Zugspitze summit still carries one of only two small glaciers remaining in Germany — though both have been shrinking steadily in recent decades.",
+      "The range belongs to the Wetterstein Mountains, built mainly of thick Wetterstein limestone laid down on a Triassic (over 200-million-year-old) shallow-sea platform and later folded and uplifted to near 3,000 m by the Alpine orogeny. The Zugspitze still carries two small glaciers, the Nördlicher Schneeferner and the Höllentalferner — two of the four left in Germany, after the Südlicher Schneeferner lost its glacier status in 2022 when its ice grew too thin. All four keep shrinking.",
     observation:
       "From the air the Bavarian Alps are a grey-white wall of steep limestone peaks rising abruptly above Bavaria's gentler hills and lakes, snow lingering on the summits for much or all of the year in sharp contrast with the green pastures below. The cable-car station and weather observatory buildings on the Zugspitze summit are clearly visible.",
     distinguish:
@@ -7710,6 +7773,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "black-forest": {
+    // 全六段 sources: 费尔德山 1493 m（部分测量给 1494.2 m，同峰不同基准，在测量误差内）；基底片麻岩的变质事件为海西造山期约 300 Ma，与「约10亿年前原岩」的科普口径相容。核实 2026-09-10，未改动
     seeing:
       "The Black Forest, in Germany's south-west corner, is an old massif stretching about 160 km north–south, named for its dense, perpetually shaded woods; its highest point, the Feldberg, is 1,493 m, the tallest mountain in Germany outside the Alps.",
     formation:
@@ -7727,8 +7791,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "harz-mountains": {
     seeing:
       "The Harz, in north-central Germany, is an old massif rising in isolation from the North German Plain; its highest peak, the Brocken, is 1,141 m — the tallest mountain in northern Germany and the only place on the north German plain with a genuinely alpine microclimate.",
+    // formation sources: 布罗肯峰 1141 m；花岗岩侵入 293 Ma（森肯贝格 2020 锆石铀铅测年），比海西造山主体挤压期晚约 40 Myr，与泛大陆早期裂解有关 —— 年份原本就对，改的是因果暗示；最古老岩层（埃克岩系）560+ Ma。核实 2026-09-10
     formation:
-      "The massif was strongly uplifted during the Hercynian orogeny (about 300 million years ago); its oldest rock dates back 560 million years. The Brocken summit itself is a granite body intruded about 290 million years ago, harder than the surrounding rock and left standing as the highest point after long erosion wore down what was around it.",
+      "The massif was strongly uplifted during the Hercynian orogeny (about 300 million years ago); its oldest rock dates back 560 million years. The Brocken summit itself is a granite body intruded about 290 million years ago — some forty million years after the orogenic compression ended, linked to the early break-up of Pangaea rather than being a direct product of that compression — harder than the surrounding rock and left standing as the highest point after long erosion wore down what was around it.",
     observation:
       "From the air the Harz is a dark, forested massif rising abruptly from the flat farmland of the North German Plain, its boundary sharply defined; the Brocken summit is shrouded in cloud almost year-round — nearly 300 foggy days a year on average, among the foggiest spots in Germany.",
     distinguish:
@@ -7740,6 +7805,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   erzgebirge: {
+    // 全六段 sources: 菲希特尔山（Fichtelberg，勿与费希特尔山脉 Fichtelgebirge 混）1215 m 为萨克森州及厄尔士山脉德国一侧最高点，捷克一侧 Klínovec 1243.7 m 更高——正文的「德国一侧」限定成立；矿业文化景观 2019-07 跨德捷列入 UNESCO，官方表述为「近 800 年持续技术革新」（德国 UNESCO 委员会，1 级）。银矿繁荣期官方口径约 1450–1620，正文「1460—1560」落在其中。核实 2026-09-10，未改动
     seeing:
       "The Erzgebirge (Ore Mountains), along the border between Saxony and the Czech Republic, is an old range trending south-west to north-east; the highest point on the German side, the Fichtelberg, is 1,215 m. The name means \"ore mountains\", from nearly 800 years of almost continuous mining in the region.",
     formation:
@@ -7755,6 +7821,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "bavarian-forest": {
+    // 全六段 sources: 大拉黑尔峰 1453 m 为国家公园范围内最高峰（森林区整体最高为境外一侧的大阿尔伯山 1456 m，正文限定在公园/巴伐利亚森林范围内，不冲突）；1970 年设立，为德国第一个国家公园。核实 2026-09-10，未改动
     seeing:
       "The Bavarian Forest, on the border between Germany and the Czech Republic, is an old low range that continues the Bohemian Massif onto German soil; its highest point, the Großer Rachel, is 1,453 m. Germany's first national park was established here in 1970.",
     formation:
@@ -7770,6 +7837,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhon-mountains": {
+    // 全六段 sources: 瓦塞尔库佩峰 950 m 为黑森州最高点；玄武质火山活动约 18–22 Ma 起、约 10 Ma 止，正文「2000万至700万年前」的下限略早于常见口径但同数量级；1991-03-06 跨黑森/巴伐利亚/图林根三州列入 UNESCO 生物圈保护区（保护区官方，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Rhön Mountains sit where Hesse, Bavaria and Thuringia meet; the highest point of the core \"High Rhön\" area, the Wasserkuppe, is 950 m — the remnant of a long-extinct volcano. Thanks to its open views and steady air currents it became the birthplace of German gliding in the early 20th century.",
     formation:
@@ -7785,6 +7853,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   eifel: {
+    // 全六段 sources: 西艾费尔火山场起始约 70 万年前（东艾费尔约 46 万年更晚，正文以整体最早起始概述）；拉赫湖东南岸持续有岩浆源 CO₂ 渗出、深部低频地震群在监测中，研究者明确「近期不预期喷发」—— 正文写「尚未完全停止」而非「即将喷发」，措辞与监测结论一致。核实 2026-09-10，未改动
     seeing:
       "The Eifel, in western Germany near the Belgian border, is an upland dense with Quaternary volcanic remnants — more than 100 low cinder cones, maar craters and domes packed into a few thousand square kilometres, one of continental Europe's most typical maar volcanic fields.",
     formation:
@@ -7800,14 +7869,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vogelsberg: {
+    // seeing sources: HLNUG 地质概述原文「ein Schildvulkan ist der Vogelsberg allerdings nicht」—— 外观呈盾状但非单一盾体，是多喷发中心叠加的火山区（1 级）。主活动期 18.2–16.3 Ma（宽泛 19–15 Ma），正文「约1900万年前起」落在区间内。面积约 2500 km² 远大于艾费尔西场约 600 km²，该比较成立。核实 2026-09-10
     seeing:
-      "The Vogelsberg, in the state of Hesse, is the largest continuous volcanic-rock landform in Central Europe, covering about 2,500 km²; its highest point, the Taufstein, is 773 m, and it is Germany's only shield-volcano landform.",
+      "The Vogelsberg, in the state of Hesse, is the largest continuous volcanic-rock landform in Central Europe, covering about 2,500 km²; its highest point, the Taufstein, is 773 m. Its overall profile is broad and shield-like, but Hesse's state geological survey is explicit that it is not a shield volcano: it is a volcanic field built from hundreds of overlapping eruption centres.",
     formation:
-      "About 19 million years ago countless relatively mild basalt eruptions built up layer upon layer here into a broad shield, working on the same principle as Hawaii's lava-flow shield volcanoes, just on a much smaller scale and long since inactive. Long weathering has left the mountain descending in stepped, ring-shaped terraces from the central \"Oberwald\" plateau outward.",
+      "From about 19 million years ago, hundreds of separate eruption centres repeatedly released relatively mild basalt lava that stacked up into a broad highland — each flow working much as Hawaii's shield-volcano flows do, though the Vogelsberg as a whole is a multi-vent volcanic field rather than a single shield. Its eruptions ended long ago. Long weathering has left the mountain descending in stepped, ring-shaped terraces from the central \"Oberwald\" plateau outward.",
     observation:
       "From the air the Vogelsberg is a broad upland made of concentric ring-shaped terraces, the central \"Oberwald\" plateau at the highest elevation and each outer ring stepping down slightly, gradually merging into the surrounding lowland; the whole area is covered in forest and pasture, with a gentle shape that gives no hint of a typical conical volcano.",
     distinguish:
-      "The Vogelsberg and the Eifel are both basaltic volcanic remnants in Germany, but the Vogelsberg is one continuous shield volcano far larger in area than the Eifel's scattered field of cinder cones and maars; the Vogelsberg's eruptions were also earlier and ended sooner than the Eifel's.",
+      "The Vogelsberg and the Eifel are both basaltic volcanic remnants in Germany, but the Vogelsberg is a continuous, broadly shield-shaped volcanic field built from many overlapping eruption centres, far larger in area than the Eifel's scattered field of cinder cones and maars; the Vogelsberg's eruptions were also earlier and ended sooner than the Eifel's.",
     concept:
       "The Vogelsberg shows how mild eruptions build broad, gentle terrain: when magma has low viscosity and erupts without much violence, lava spreads out layer by layer into a gently sloping shield, as at the Vogelsberg and in Hawaii; more explosive eruptions instead leave entirely different landforms, like the Eifel's maars or the Rhön's volcanic necks.",
     history:
@@ -7815,6 +7885,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "thuringian-forest": {
+    // 全六段 sources: 大贝尔山 982.9 m 为图林根森林及图林根州最高点，未与相邻施内科普夫峰（978 m）混淆；劳沙玻璃业为广泛记载的传统产业，属客观经济地理史。核实 2026-09-10，未改动
     seeing:
       "The Thuringian Forest, in southern Thuringia, is an old range about 70 km long trending north-west to south-east, its ridge rounded and continuous, its highest point the Großer Beerberg at 983 m.",
     formation:
@@ -7830,10 +7901,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "swabian-jura": {
+    // seeing sources: 阿尔布陡崖长约 200 km、高 300–400 m（geopark-alb.de，1/2 级）；洞穴数按巴登-符腾堡州名录截至 2026 年已逾 2800 个（会增长的量，下轮复核）；2015 年列入 UNESCO 世界地质公园（unesco.org/en/iggp，1 级）。核实 2026-09-10
     seeing:
-      "The Swabian Jura, in south-west Germany, is a karst tableland about 220 km long, 500–1,000 m in elevation; its north-western edge is a continuous cliff line nearly 180 km long and up to 300 m high (the Albtrauf), overlooking the Neckar valley, while the south-east side slopes gently down to the Danube valley.",
+      "The Swabian Jura, in south-west Germany, is a karst tableland about 220 km long, 500–1,000 m in elevation; its north-western edge is a continuous cliff line about 200 km long and 300-400 m high (the Albtrauf), overlooking the Neckar valley, while the south-east side slopes gently down to the Danube valley.",
     formation:
-      "The tableland is built of Jurassic limestone laid down in a shallow sea about 145–200 million years ago; the hardest uppermost \"White Jura\" layer has long resisted erosion, forming the Albtrauf as a continuous cuesta scarp. Because the limestone is porous and easily dissolved by groundwater, the tableland's interior has developed more than 2,500 caves and many dry valleys.",
+      "The tableland is built of Jurassic limestone laid down in a shallow sea about 145–200 million years ago; the hardest uppermost \"White Jura\" layer has long resisted erosion, forming the Albtrauf as a continuous cuesta scarp. Because the limestone is porous and easily dissolved by groundwater, the tableland's interior has developed many dry valleys and, as of 2026, more than 2,800 caves on the state cave register.",
     observation:
       "From the air the Swabian Jura is a sharp topographic boundary — the land on the north-west side drops several hundred metres toward the Neckar valley, while the tableland surface itself is relatively flat and open, covered in farmland and pasture; the dry valleys (with flow only occasionally in the wet season) and cave entrances typical of karst terrain mark this tableland out.",
     distinguish:
@@ -7845,6 +7917,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "franconian-jura": {
+    // 全六段 sources: 索伦霍芬-艾希施泰特始祖鸟系列产地 2022-10 由 IUGS 列入首批「百大地质遗产」（iugs-geoheritage.org，1 级）；潟湖高盐缺氧少扰动保存精细化石的成因解释与 IUGS 口径一致；与 swabian-jura 的 distinguish 段并排核对，两条对分界（多瑙河谷）与侧重的表述互相一致、无矛盾。核实 2026-09-10，未改动
     seeing:
       "The Franconian Jura is the same Jurassic limestone tableland continuing north-east from the Swabian Jura, known for the fine-grained limestone quarried around Solnhofen — which preserves a wealth of exquisite fossils, including Archaeopteryx, and is considered one of the key sites for studying the origin of birds.",
     formation:
@@ -7860,6 +7933,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "saxon-switzerland": {
+    // 全六段 sources: 巴斯泰观景台海拔 305.4 m、高出易北河 194 m；砂岩为白垩纪约 100 Ma 浅海沉积；1824 年建首座木桥、1851 年改建石桥。跨境的砂岩区表述保持中性、未描述边界线。核实 2026-09-10，未改动
     seeing:
       "Saxon Switzerland, along the Elbe in eastern Germany, is a landscape of table mountains and deep gorges cut into sandstone, named after 18th-century Swiss painters who felt the scenery reminded them of their Alpine homeland. The Bastei is the most famous group of sandstone towers, rising about 194 m above the Elbe.",
     formation:
@@ -7875,6 +7949,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "teutoburg-forest": {
+    // 全六段 sources: 奥斯宁砂岩约 120 Ma（早白垩世）浅海沉积、约 70 Ma 经构造掀斜成单面山脊；公元 9 年瓦鲁斯战役为可核实的历史事件（判据：已结束、无持续对立的定位性史实 → 留），正文明写「具体交战地点学界仍有讨论」，与卡尔克里泽是否为战场的现存争议相符，未擅自定论；正文未涉赫尔曼纪念碑的民族主义诠释。核实 2026-09-10，未改动
     seeing:
       "The Teutoburg Forest, in north-western Germany, is a band of parallel cuesta ridges; its most famous landmark is the Externsteine, a group of tall rock pillars left standing by the weathering of sandstone.",
     formation:
@@ -7890,6 +7965,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "north-german-plain": {
+    // 全六段 sources: 吕讷堡石楠草原 1921-12-29 设保护区（下萨克森最古老、德国第二古老），正文「最早……之一」的限定成立；distinguish 段引用的梅塞塔「600米以上」与本库 meseta-central 的「平均600—800米」一致，跨条目口径未冲突。核实 2026-09-10，未改动
     seeing:
       "The North German Plain lies between Germany's central uplands and the North Sea and Baltic coasts, a vast lowland repeatedly reshaped by Quaternary glaciation; the Lüneburg Heath is a classic heather-shrub landscape on this glacial sandy ground.",
     formation:
@@ -7905,6 +7981,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "nordlinger-ries": {
+    // 全六段 sources: 撞击约 14.8 Ma（近年高精度测年集中在 14.75–14.92 Ma，正文落在区间内）；1960 年代经 Shoemaker 等以冲击石英确认撞击成因（此前曾被误判为火山口）；1970 年 NASA 阿波罗宇航员在此做月球地质训练。与本库 siljan-ring 并排读，未出现「把撞击瞬间和今日地貌压成一件事」的问题。核实 2026-09-10，未改动
     seeing:
       "The Nördlinger Ries, in western Bavaria, is a circular depression about 24 km across, formed when an asteroid more than a kilometre wide struck Earth about 14.8 million years ago — one of the best-preserved, best-studied impact craters in Europe. The medieval town of Nördlingen's walls sit entirely within the flat basin at the crater's floor.",
     formation:
@@ -7920,6 +7997,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhine-gorge": {
+    // 全六段 sources: UNESCO「上中莱茵河谷」范围即科布伦茨—宾根/吕德斯海姆约 65 km，2002 年列入（whc.unesco.org/en/list/1066，1 级）；罗蕾莱河段收窄至约 130 m（另有 113 m 一说，130 m 为较常引用口径）。核实 2026-09-10，未改动
     seeing:
       "The Rhine Gorge is the roughly 65 km stretch of the Rhine between Koblenz and Bingen, lined with castles and terraced vineyards; the Loreley reach is the narrowest, deepest section of the whole gorge and one of Germany's best-known natural and cultural landmarks.",
     formation:
@@ -7937,8 +8015,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "danube-gorge": {
     seeing:
       "The Danube Gorge, on the southern edge of the Franconian Jura, is a canyon the Danube has cut through a stretch of Jurassic limestone, about 5 km long with cliffs up to 70 m high; Weltenburg Abbey, within the gorge, is said to be one of Bavaria's oldest monasteries.",
+    // formation sources: 峡谷由另一条支流（因戈尔施塔特阿尔布缘河）历经数百万年溯源侵蚀切穿，多瑙河约 8 万年前被施特河袭夺才改道入谷（LfU 官方展板，1 级）—— 原文的「约20万年前」在两个节点之间，查无出处。崖高见 issue（40/70/80 三个数并存）。魏尔滕堡修道院 1978-03-05 获欧洲保护地文凭（2 级）。核实 2026-09-10
     formation:
-      "The rock the gorge cuts through is limestone laid down by a shallow-sea coral reef about 150 million years ago in the Jurassic, harder and denser than the surrounding rock. About 200,000 years ago, a branch of the ancient Danube began cutting down along joints in this limestone, gradually carving today's narrow, steep gorge channel.",
+      "The rock the gorge cuts through is limestone laid down by a shallow-sea coral reef about 150 million years ago in the Jurassic, harder and denser than the surrounding rock. The gorge was not cut by the Danube at all. A separate tributary carved it, working headward along joints in this limestone over several million years, while the Danube itself ran through the Altmühl valley. Only about 80,000 years ago was the Danube captured here by the Schutter and diverted into the gorge that was already there.",
     observation:
       "From the air the Danube Gorge is a deep green slot that appears suddenly in the otherwise gentle tableland surface of the Franconian Jura, its grey-white walls on both sides near-vertical, a stark contrast with the open farmland tableland around it; Weltenburg Abbey at the gorge's entrance sits on an open terrace at a bend in the river.",
     distinguish:
@@ -7950,6 +8029,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "moselle-valley": {
+    // 全六段 sources: 摩泽尔板岩为泥盆纪（约 400 Ma）沉积；摩泽尔为公认的德国最古老葡萄种植区（罗马时期已有专业酿酒记录），本库其余德国条目无与之冲突的「最古老」断言。核实 2026-09-10，未改动
     seeing:
       "The Moselle Valley is a deep valley the Moselle has cut into Devonian slate, its course extremely winding — steep slopes along its banks are covered in vineyards, making it Germany's oldest wine region and one of the world's most concentrated areas of extremely steep vineyard slopes.",
     formation:
@@ -7965,6 +8045,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "elbe-river": {
+    // 全六段 sources: 全长 1094 km 为通行口径，约三分之二（≈729 km）在德国境内，正文「约727公里」属合理取整。核实 2026-09-10，未改动
     seeing:
       "The Elbe rises in the Krkonoše Mountains in the Czech Republic and runs about 1,094 km, of which about 727 km flows through Germany, north-west through Dresden and Magdeburg before becoming a broad, tide-influenced estuary near Hamburg and emptying into the North Sea.",
     formation:
@@ -7980,6 +8061,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   spreewald: {
+    // 全六段 sources: 水道网由 200 多条自然与人工水道构成、总长逾 1500 km，与生物圈保护区官方口径一致。核实 2026-09-10，未改动
     seeing:
       "The Spreewald, south-east of Berlin, is an inland delta of the Spree River, where it splits into more than 200 natural and artificial channels totalling about 1,500 km, winding through alder forest and wet meadow; traditional transport and farming here rely on flat-bottomed wooden boats moving along the channels.",
     formation:
@@ -7995,6 +8077,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   chiemsee: {
+    // 全六段 sources: 湖面约 79.9 km²，巴伐利亚最大、德国第三大湖；原湖面积约 240 km²（约今 3 倍），末次冰期末段约 1 万年前冰舌退却积水成湖；与 muritz 互为 distinguish 比较对象，两条数字双向自洽。核实 2026-09-10，未改动
     seeing:
       "The Chiemsee is Bavaria's largest lake and Germany's third-largest, its surface covering about 80 km²; for its open scenery and the fine Alpine backdrop it is often called the \"Bavarian Sea.\"",
     formation:
@@ -8010,6 +8093,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   muritz: {
+    // 全六段 sources: 米里茨湖 117.8 km²，为完全在德国境内的最大湖泊（博登湖 536 km² 更大但跨三国，正文已写明这一限定）；国家公园由 1990-09-12 东德部长会议末次会议批准的首批 5 个之一、10-01 正式成立。核实 2026-09-10，未改动
     seeing:
       "The Müritz covers about 117 km², the largest lake entirely within German territory (after the cross-border Lake Constance); the surrounding Mecklenburg Lake District carries thousands of lakes left by Quaternary glaciation, and Müritz National Park is one of the largest national parks on mainland Germany.",
     formation:
@@ -8025,6 +8109,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "laacher-see": {
+    // 全六段 sources: 严格分类上是岩浆房排空后塌陷的破火山口湖而非玛珥（俗称玛珥湖），正文已把「严格意义/俗称」两层写清；喷发约 12,900 年前（2023 年树轮研究修订为 12,880，同量级）、VEI 6，与 1991 年皮纳图博同级；2026 年监测显示深部地震群与氦同位素上升，结论是「活跃岩浆系统但近期无喷发风险」，正文「休眠而非死亡」与之吻合。核实 2026-09-10，未改动
     seeing:
       "The Laacher See, in the eastern Eifel volcanic field, formed from the crater of the youngest major eruption in the Eifel's volcanic history (about 12,900 years ago), an eruption on a scale comparable to Mount Pinatubo's in the Philippines in 1991.",
     formation:
@@ -8040,6 +8125,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "wadden-sea": {
+    // 全六段 sources: UNESCO 官方描述即「the largest unbroken system of intertidal sand and mud flats in the world」；2009 年德国（下萨克森+石荷）与荷兰段列入、2014 年丹麦段并入（whc.unesco.org/en/list/1314，1 级）。2011 年另有一次技术性扩边（汉堡瓦登海国家公园并入既有德国部分，面积增约 1.4%），不涉新增国家，正文主线不受影响。核实 2026-09-10，未改动
     seeing:
       "The Wadden Sea is the largest continuous system of intertidal flats in the world, on the south-eastern shore of the North Sea, running along the coasts of the Netherlands, Germany and Denmark; the German stretch is fronted by two chains of barrier islands, the East Frisian and North Frisian islands.",
     formation:
@@ -8055,6 +8141,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rugen-chalk-cliffs": {
+    // 全六段 sources: 王座崖（Königsstuhl）118 m 是这一处地标的实测值，未与全岛最高点 Piekberg 161 m 混淆——正文指代明确，不属「区域值挂到局部对象」；崖岸长度各来源 11–15 km，正文「约12公里」落在区间内；白垩为晚白垩世约 70 Ma 颗石藻钙质骨骼沉积。核实 2026-09-10，未改动
     seeing:
       "Rügen is the largest island in the Baltic Sea, and a stretch of chalk cliff about 12 km long and up to 118 m high on its north-eastern coast is one of Germany's most recognisable coastal landscapes; the Königsstuhl (\"King's Chair\") is its best-known viewpoint.",
     formation:
@@ -8070,8 +8157,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   helgoland: {
+    // seeing sources: 原文「56 米」实为该岛西南侧砂岩在海面以下继续延伸的深度，被误作崖高；海面以上崖壁普遍约 50 m、最高处上城约 61 m —— 可查来源仅 3 级，故正文只写指代明确的 61 m，不对「一圈崖壁平均高度」下断言，见 issue。砂岩为早三叠世（Buntsandstein）；1890 年黑尔戈兰—桑给巴尔条约划归德国（2 级）。核实 2026-09-10
     seeing:
-      "Helgoland is Germany's only offshore island far from the mainland, about 50 km from the nearest coast; the main island is ringed by red sandstone cliffs about 56 m high — extremely rare along Germany's mostly sandy, muddy North Sea coast.",
+      "Helgoland is Germany's only offshore island far from the mainland, about 50 km from the nearest coast; the main island is ringed by red sandstone cliffs rising to about 61 m at their highest, on the Oberland — extremely rare along Germany's mostly sandy, muddy North Sea coast.",
     formation:
       "The island's red cliffs are Early Triassic sandstone, coloured a bright red by iron oxide; this sandstone tableland has stood isolated for a long time on a raised structure on the North Sea floor, while the rock layers that once connected to it elsewhere have been eroded away and submerged over long geological history — only this block, relatively raised by tectonic uplift, has survived to the present as the only rocky island exposed above the surface in the southern North Sea.",
     observation:
@@ -8156,6 +8244,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-athos": {
+    // 全六段 sources: 主峰 2033 m；1988 年作为**混合遗产**列入 UNESCO（whc.unesco.org/en/list/454，1 级）；
+    //   9 世纪起隐修、10 世纪拜占庭皇帝特许状、20 座修道院。
+    //   ✅ **零争议红线专项复核**：正文**根本没有提及**只允许男性进入的规定（άβατον），也未涉自治地位、教义评价或现代政治——
+    //   完全落在红线许可范围内，无需改动。2026-09-10 核，verdict: ok。
     seeing:
       "Mount Athos forms the easternmost of the three prongs of the Halkidiki Peninsula, a narrow mountainous spur; its peak reaches 2,033 m and the massif drops steeply into the Aegean — a distinctive mountain-and-monastery landscape in northern Greece.",
     formation:
@@ -8171,6 +8263,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "white-mountains-crete": {
+    // seeing sources: 主峰帕赫内斯 2453 m；萨马利亚峡谷 1962 年经皇家法令设为国家公园。3 级多方互证。2026-09-10 核，verdict: ok。
     seeing:
       "The White Mountains rise over western Crete; the highest peak, Pachnes, reaches 2,453 m, named for snow that lingers into early summer and gives the range its pale, distant colour.",
     formation:
@@ -8186,8 +8279,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-pilio": {
+    // seeing sources: 最高峰：**Pourianos Stavros 1624 m**（峰顶有军事设施、公众不可登顶）。Pliasidi 是另一座峰、约 1547—1548 m。原文把真数字挂到了错的峰名上——与阿基尔岛那处同型。3 级多方互证。2026-09-10 核。
     seeing:
-      "Mount Pelion is a forested mountain peninsula reaching into the Aegean from eastern Thessaly; its highest point, Pliasidi, reaches 1,624 m, and its slopes are covered in beech and chestnut forest.",
+      "Mount Pelion is a forested mountain peninsula reaching into the Aegean from eastern Thessaly; its highest point, Pourianos Stavros, reaches 1,624 m, and its slopes are covered in beech and chestnut forest.",
     formation:
       "The massif is built mainly of schist and limestone, an eastward extension of the Pindus orogenic belt; comparatively high rainfall has produced dense forest and numerous streams, making Pelion one of Greece's more heavily forested mountains.",
     observation:
@@ -8203,8 +8297,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   methana: {
     seeing:
       "Methana is a volcanic peninsula on the north-eastern Peloponnese, built up from several coalesced lava domes — the westernmost active centre of the South Aegean Volcanic Arc.",
+    // formation sources: 前 230 年喷发形成的熔岩穹丘是**卡梅尼霍拉（Kameni Chora）**，在半岛西北、熔岩入海（EAGME，1 级）。原文的「弗莱韦斯」是雅典近郊海外的一座无人小岛，与甲基火山群无关——纯地名张冠李戴。2026-09-10 核。
     formation:
-      "The peninsula is built of andesite lava domes formed over several eruptive episodes, producing broken, hummocky terrain between the domes; the most recent known eruption, around 230 BCE, formed the Fleves islet lava dome.",
+      "The peninsula is built of andesite lava domes formed over several eruptive episodes, producing broken, hummocky terrain between the domes; the most recent known eruption, around 230 BCE, formed the Kameni Chora lava dome.",
     observation:
       "From the air, Methana shows a classic lava-dome landscape — a cluster of rounded, rough-surfaced highs, in clear contrast with the gentler Peloponnesian coastline around it.",
     distinguish:
@@ -8216,6 +8311,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lasithi-plateau": {
+    // seeing sources: 高原平均海拔约 840 m，各来源在 800—850 m 间浮动，正文「约 850 米」在「约」字容许的误差内，不改。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Lasithi Plateau is an enclosed highland basin in eastern Crete at about 850 m elevation, ringed by mountains; thousands of white canvas-sailed windmills once pumped water for irrigation here.",
     formation:
@@ -8252,6 +8348,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "santorini-caldera": {
+    // 全六段 sources: ✅ **两处专项复核都通过**。① 正文**没有**把米诺斯喷发写成「摧毁了米诺斯文明」——
+    //   那是流传极广但学界并不支持的因果推论（克诺索斯等宫殿在喷发后仍延续了一个多世纪）；② 亚特兰蒂斯已明确写成
+    //   「仅是后世的一种猜测性关联，并非确证的历史事实」。**假说没有被写成定论。**
+    //   放射性碳测年集中在前 1627—1600 年、VEI 7；淹没破火山口约 7.5 × 11 km（正文「约 12 公里」落在长轴范围内）。2026-09-10 核，verdict: ok。
     seeing:
       "The Santorini caldera is a vast collapse crater in the Aegean, formed when a massive Late Bronze Age eruption around 1600 BCE caused the island's centre to collapse; the surviving arc of islands forms today's Thira.",
     formation:
@@ -8267,8 +8367,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   nisyros: {
+    // seeing sources: 斯特凡诺斯火山口：椭圆形，长径约 350 m、短径约 260 m、最深 27 m（尼西罗斯世界地质公园官网，1 级）。原文只写了短轴、会被读成圆形。2026-09-10 核。
     seeing:
-      "Nisyros is a near-circular stratovolcano island in the Dodecanese; its central Stefanos crater is about 260 m across and still hosts active fumaroles and geothermal activity.",
+      "Nisyros is a near-circular stratovolcano island in the Dodecanese; its central Stefanos crater is elliptical, roughly 260 by 350 m and still hosts active fumaroles and geothermal activity.",
     formation:
       "The volcanic island is built up from andesite and dacite erupted over several episodes; the central crater formed through a more recent phreatic eruption — explosive but without a large fresh-magma outflow — and its floor remains bare to this day.",
     observation:
@@ -8282,6 +8383,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gulf-of-corinth": {
+    // 全六段 sources: 已作恰当限定（「较快……之一」「具体速率因测算方法不同而有所差异」），**没有给出会过期的单一精确速率**。
+    //   ✅ 专项复核：**地峡（古已有之的陆路通道）与科林斯运河（1893 年前后人工开凿）两件事区分清楚**，未混为一谈。2026-09-10 核，verdict: ok。
     seeing:
       "The Gulf of Corinth is a long, narrow inlet separating the Peloponnese from mainland Greece — essentially an active rift graben where the two shores continue to pull apart.",
     formation:
@@ -8334,6 +8437,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "zakynthos-navagio": {
+    // 全六段 sources: ⚠️ C8 现状：2022 年地震后海湾因落石被希腊环境部划为不安全、**禁止登滩**，封闭已延长至 2026 年 10 月底；
+    //   游客仍可乘船靠近或在崖顶观景台俯瞰。正文写的是「仅能经海路或崖顶观景点抵达」，**没有断言可以下到沙滩**，与现状不冲突，判定不改。
+    //   📌 但「经海路……抵达」今后若被读作「可乘船登陆」需随现状调整——记在这里。3 级媒体。2026-09-10 核，verdict: ok。
     seeing:
       "Navagio Beach is a small cove on the north-western coast of Zakynthos, enclosed by steep white limestone cliffs and reachable only by boat or from a clifftop viewpoint.",
     formation:
@@ -8349,6 +8455,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mani-peninsula": {
+    // 全六段 sources: ✅ **零争议红线专项复核**：正文只写了塔楼式民居的建筑传统，**没有**提及家族世仇／宗族械斗，也没有族群性格评价，通过。
+    //   泰纳隆角为希腊大陆最南端、欧洲大陆第二南端，正文用「常被视为」这一限定准确。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Mani Peninsula is a rugged mountainous cape at the southern tip of the Peloponnese, a continuation of Taygetus southward, with rough terrain and much exposed limestone.",
     formation:
@@ -8364,6 +8472,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   crete: {
+    // 全六段 sources: 希腊第一大岛；伊达山（普西罗里蒂斯）2456 m 为全岛最高点；希腊弧（非洲板块向爱琴微板块俯冲）持续隆升。
+    //   📌 交叉留痕：**本条的 2456 m 正是证伪 `samothraki`「整个爱琴海诸岛最高点」的依据**——两条同在一批里，并排读才对上。2026-09-10 核，verdict: ok。
     seeing:
       "Crete is Greece's largest island, its terrain rising and falling from west to east across several mountain ranges — the White Mountains, Mount Ida (Psiloritis, 2,456 m, the island's highest point) — with the Messara Plain in the south-central part of the island.",
     formation:
@@ -8379,8 +8489,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   samothraki: {
+    // seeing sources: ⚠️ 原文「整个爱琴海诸岛中的最高点」**被本库 `crete` 条目自己证伪**（伊达山 2456 m），埃维亚岛迪尔菲斯山 1743 m 亦高于它，芬加里峰实排第三。第五次「排他性断言被本库另一条目证伪」，且这次两条同在一批里。2026-09-10 核。
     seeing:
-      "Samothrace is a predominantly granite island in the northern Aegean; its central peak, Mount Fengari, reaches 1,611 m — the highest point of any Aegean island.",
+      "Samothrace is a predominantly granite island in the northern Aegean; its central peak, Mount Fengari, reaches 1,611 m — the third-highest summit of any Aegean island, after Mount Ida on Crete and Mount Dirfys on Evia.",
     formation:
       "The island is built of granite, with steep terrain and numerous waterfalls and streams — among the most dramatically relieved of the Aegean islands despite its modest area, with striking relative relief.",
     observation:
@@ -8394,6 +8505,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   corfu: {
+    // 全六段 sources: 伊奥尼亚群岛最北、面积第二大的主要岛屿；潘托克拉托山 906 m；科孚老城 2007 年列入 UNESCO
+    //   （whc.unesco.org/en/list/978，1 级），威尼斯统治期 1386—1797 年。
+    //   ✅ 零争议红线：威尼斯／英国保护领时期只作建筑史陈述、无评价，未涉现代政治与国际关系。2026-09-10 核，verdict: ok。
     seeing:
       "Corfu is the northernmost major island of the Ionian Islands; its highest point, Mount Pantokrator, reaches 906 m, and its vegetation stays green year-round thanks to rainfall notably higher than the Aegean islands receive.",
     formation:
@@ -8409,6 +8523,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   milos: {
+    // seeing sources: ✅ 零争议红线：《米洛斯的维纳斯》1820 年发现、现藏卢浮宫——**只作发现与收藏的事实陈述，未涉文物归还争议**，通过。2026-09-10 核。
     seeing:
       "Milos is a volcanic island on the South Aegean Volcanic Arc, its varied and colourful volcanic rock layers forming a distinctive landscape, most striking at the Sarakiniko coast.",
     formation:
@@ -8419,11 +8534,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Milos and Nisyros are islands on the South Aegean Volcanic Arc, but Milos is known for its colourful, varied volcanic rock and mineral resources, while Nisyros is defined by its well-preserved crater landform.",
     concept:
       "Milos's colourful landscape reflects successive layers of volcanic material from different eruptive episodes and rock types — a textbook case in the surface lithological diversity of volcanic islands; the island still produces kaolin, perlite and bentonite.",
+    // history sources: 黑曜岩贸易起点：弗兰赫蒂洞穴**中石器时代**地层（约前 9 千纪）已有米洛斯黑曜岩，早于新石器。只有 3 级综述，故正文写「史前 / 最早可追溯至中石器时代」、不写死千纪。2026-09-10 核。
     history:
-      "Milos has traded obsidian since the Neolithic era; the statue known as the Venus de Milo, discovered on the island in 1820, is now held in the Louvre.",
+      "Milos has traded obsidian since prehistoric times, with evidence of it crossing the sea as early as the Mesolithic; the statue known as the Venus de Milo, discovered on the island in 1820, is now held in the Louvre.",
   },
 
   rhodes: {
+    // 全六段 sources: 阿塔维罗斯峰 1215 m 为岛上最高峰；罗德岛约 1400 km²、多德卡尼斯群岛面积最大者。
+    //   ✅ **排名口径专项复核**：正文只限定在「多德卡尼斯群岛中最大」，**没有做「希腊第几大岛」的绝对排名**——
+    //   与本库 `crete`（希腊第一大岛）并排读自洽（罗德岛按全希腊算排第四，在克里特、埃维亚、莱斯沃斯之后）。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Rhodes is the largest island of the Dodecanese, predominantly limestone terrain, with its highest point, Mount Attavyros, reaching 1,215 m.",
     formation:
@@ -8439,6 +8558,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-trichonida": {
+    // 全六段 sources: 希腊面积最大的天然湖，各来源给 96—98.6 km²，正文「约 96」落在通行区间内。
+    //   ✅ 与 `lake-prespa` 并排读自洽（普雷斯帕大部分在境外、希腊境内部分更小）。
+    //   ⚠️ 未找到带监测年份的官方（希腊环境部／EKBY）数字，级别停在 3 级；下一轮补年份口径。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Trichonida lies in the Aetolia-Acarnania region of western mainland Greece and is Greece's largest natural lake by surface area, covering about 96 km².",
     formation:
@@ -8454,6 +8576,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-prespa": {
+    // seeing / formation sources: 海拔 853 m，巴尔干最高的构造湖；经地下喀斯特通道与俄赫里德湖连通。
+    //   跨境表述保持中性、不描述边界线、不表述主权。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Prespa comprises Great Prespa and Small Prespa, spanning Greece, Albania and North Macedonia at an elevation of about 853 m.",
     formation:
@@ -8464,13 +8588,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Lake Prespa and Lake Trichonida are important Greek lakes, but Prespa sits at higher elevation and spans three national borders, while Trichonida lies entirely within Greece at lower elevation.",
     concept:
       "Lake Prespa is an important high-altitude karst lake ecosystem in the Balkans and a key habitat for the Dalmatian pelican and other rare waterbirds.",
+    // history sources: ⚠️ 零争议红线：删去解释北马其顿国名与《普雷斯帕协议》的括注（该协议正是在这座湖签的）。2000 年三国共设跨境普雷斯帕公园作为事实保留。跨境表述保持中性、不描述边界线。2026-09-10 核。
     history:
-      "Greece, Albania and North Macedonia jointly established the transboundary Prespa Park in 2000 for cooperative lake conservation (\"North Macedonia\" is the country's current official name following the 2019 Prespa Agreement).",
+      "Greece, Albania and North Macedonia jointly established the transboundary Prespa Park in 2000 for cooperative lake conservation.",
   },
 
   "acheloos-river": {
+    // 其余 sources: 上游穿品都斯石灰岩峡谷、河口三角洲与潟湖湿地；与皮尼奥斯河的流向对比（西入伊奥尼亚海 vs 东入爱琴海）核实无误。
+    //   ⚠️ 阿刻罗俄斯调水工程（Acheloos diversion）**正文没有提及**，故无需处理现状与时点；下一轮若要补，只写工程与法律事实、不做评价。2026-09-10 核。
+    // seeing sources: ⚠️ 「希腊本土最长的河流」错：阿利阿克蒙河 297 km、完全在希腊境内，才是最长；阿刻罗俄斯约 220 km、**水量最大**、长度第二。原文把真实的头衔（水量最大）换成了错的（最长）。3 级多方一致。2026-09-10 核。
     seeing:
-      "The Acheloos is mainland Greece's longest river, about 220 km, rising in the southern Pindus range and flowing out into the Ionian Sea.",
+      "The Acheloos carries more water than any other river in Greece and runs about 220 km, second in length among Greek rivers only to the Aliakmon, rising in the southern Pindus range and flowing out into the Ionian Sea.",
     formation:
       "The upper river runs through limestone gorges in the Pindus, its middle and lower reaches passing reservoirs and lowlands, with a delta and lagoon wetlands developing at its mouth — an important river system of western Greece.",
     observation:
@@ -8484,6 +8612,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   meteora: {
+    // 全六段 sources: ✅ **成因专项复核**：岩柱是约 6000 万年前河流／湖泊三角洲沉积的**砂砾岩**经抬升与差异侵蚀形成，
+    //   **不是喀斯特、也不是火山成因** —— 正文写对了，`distinguish` 段与喀斯特的区分也准确。
+    //   修道院鼎盛期约 24 座（正文「20 余座」合理）、现存 6 座在用；1988 年作为混合遗产列入 UNESCO。
+    //   ✅ 零争议红线：只写建筑与遗产，未涉宗教教义评价或现代政教关系。2026-09-10 核，verdict: ok。
     seeing:
       "Meteora is a cluster of steep, isolated sandstone and conglomerate pinnacles on the north-western edge of the Thessalian Plain, atop which Orthodox monks began building monasteries from the 14th century.",
     formation:
@@ -8499,6 +8631,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "peneda-geres": {
+    // 全六段 sources: Nevosa 峰 1545 m；1971 年设立，是葡萄牙目前唯一的国家公园（全国仅此一座，非「之一」的弱化）——ICNF，1 级。核实 2026-09-10，未改动
     seeing:
       "Peneda-Gerês sits in Portugal's north-western corner, contiguous with the mountains of Spanish Galicia, its highest point about 1,545 m. From the air it is rolling granite upland dotted with bare boulders, reservoirs and green pasture — home to Portugal's only national park.",
     formation:
@@ -8514,6 +8647,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-da-estrela": {
+    // 全六段 sources: 托雷峰 1993 m 为葡萄牙**大陆**最高点；与 pico-mountain 的「全境最高点 2351 m」两个口径分列清楚、并排核对无混淆（西班牙 teide / sierra-nevada 那类口径打架未在此重现）。Estrela UNESCO 世界地质公园 2020-07-10 批准（2 级）。核实 2026-09-10，未改动
     seeing:
       "Serra da Estrela is mainland Portugal's highest range, its peak, Torre, at 1,993 m — the highest point on the Portuguese mainland. From the air the massif looks like a broad granite plateau, snow-capped in winter, home to Portugal's only ski area.",
     formation:
@@ -8529,6 +8663,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-sintra": {
+    // 全六段 sources: 最高点约 528 m；辛特拉文化景观 1995 年列入 UNESCO，是欧洲首个以「文化景观」类别列入的遗产地（whc.unesco.org/en/list/723，1 级）。核实 2026-09-10，未改动
     seeing:
       "Serra de Sintra is a small granite range west of Lisbon, its highest point about 528 m. From the air the massif is often wrapped in Atlantic sea mist, contrasting with the flat coastal plains and plateaus around it, with brightly coloured palace buildings scattered across its slopes.",
     formation:
@@ -8544,6 +8679,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-monchique": {
+    // 全六段 sources: 福亚峰 902 m 为阿尔加维大区最高点（3 级多方一致）。核实 2026-09-10，未改动
     seeing:
       "Serra de Monchique is a range inland from Portugal's Algarve, its highest point, Fóia, at 902 m — the highest point in the Algarve. From the air the vegetation is noticeably denser and greener than the drier coastal Algarve to the south, forming a clear layered contrast.",
     formation:
@@ -8559,6 +8695,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-montesinho": {
+    // 全六段 sources: 最高点约 1481 m；自然公园 1979-08-30 依第 355/79 号法令设立（Infopédia，2 级）。核实 2026-09-10，未改动
     seeing:
       "Serra de Montesinho lies in Portugal's north-eastern corner near the Spanish border, its highest point about 1,481 m. From the air the massif is an old range of slate and gneiss, heavily forested, dotted with many traditional stone-built villages.",
     formation:
@@ -8574,6 +8711,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "serra-de-aire-candeeiros": {
+    // 全六段 sources: 最高点约 679 m；自然公园 1979-05-04 依第 188/79 号法令设立；米拉德艾雷洞已知延伸约 11 km，为葡萄牙已知最大溶洞系统（运营方官网，2 级）。核实 2026-09-10，未改动
     seeing:
       "Serra de Aire e Candeeiros is a Jurassic limestone upland in west-central Portugal, its highest point about 679 m. From the air the surface shows a classic pale grey karst landscape, sharply contrasting with the green farmland and forest around it.",
     formation:
@@ -8589,6 +8727,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tras-os-montes-plateau": {
+    // 全六段 sources: 米兰德斯语 1999 年经第 7/99 号法律获官方承认为葡萄牙第二语言——正文未写死年份，表述本身准确（2 级）。核实 2026-09-10，未改动
     seeing:
       "The Trás-os-Montes Plateau lies in Portugal's north-eastern corner, mostly 600–900 m in elevation. From the air it is a relatively flat, open old plateau, in sharp contrast with the deep gorge the Douro has cut along its southern edge.",
     formation:
@@ -8612,13 +8751,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Alentejo Plain by its vast, gently undulating expanse and the evenly spaced oaks of the savanna (montado), a striking contrast to the steep terrain of the northern mountains and the Douro Valley.",
     distinguish:
       "Both the Alentejo Plain and the Trás-os-Montes Plateau are open Portuguese uplands, but Alentejo has a more pronounced Mediterranean climate and is dominated by oak savanna, while Trás-os-Montes has a more continental climate dominated by farmland and forest.",
+    // concept sources: 蒙塔多的 GIAHS 是「Serpa Hills Montado」，2025 年获批、范围仅塞尔帕市（fao.org/giahs，1 级）；2016 年葡萄牙入选的是北部特拉斯山的 Barroso 农牧系统，两者是不同案例。核实 2026-09-10
     concept:
-      "Alentejo's cork oak savanna (montado) is the world's main source of cork; the UN Food and Agriculture Organization designated it a Globally Important Agricultural Heritage System in 2016 — a low-intensity agroforestry system balancing production and ecological protection.",
+      "Alentejo's cork oak savanna (montado) is the world's main source of cork; the montado system of the Serpa Hills was designated a Globally Important Agricultural Heritage System by the UN Food and Agriculture Organization in 2025 — a low-intensity agroforestry system balancing production and ecological protection.",
     history:
       "Alentejo has been an important grain-producing region since Roman times ('Alentejo' means 'beyond the Tagus'), and cities such as Évora preserve extensive Roman and later architectural remains.",
   },
 
   "douro-valley": {
+    // 全六段 sources: 1756 年划定法定产区；杜罗河谷葡萄酒产区 2001-12-14 作为文化景观列入 UNESCO（第 1046 号，1 级）。正文用「最早之一」而非「最早」——托卡伊/基安蒂另有更早之说，限定语留了余地。核实 2026-09-10，未改动
     seeing:
       "The Douro Valley is the vineyard region on both banks of the middle Douro in northern Portugal, its hand-built stone terraces about 2,000 years old. From the air, the steep valley sides are covered with tiered terraced vineyards — one of the world's oldest protected, legally defined wine regions.",
     formation:
@@ -8634,6 +8775,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "douro-international": {
+    // 全六段 sources: 无单一可核数字；峡谷成因、金雕/秃鹫栖息地、葡西两国分别设国际杜罗河谷自然公园共同保护，与公开地理文献一致；跨境表述保持中性、未描述边界线。与本库西班牙侧 duero-river 并排读无冲突。核实 2026-09-10，未改动
     seeing:
       "The International Douro is a deep canyon the Douro has cut through old crystalline plateau rock along the Portugal–Spain border. From the air, the canyon walls are steep, with drops of several hundred metres, in sharp contrast to the relatively open terraced valley upstream.",
     formation:
@@ -8649,8 +8791,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tagus-river": {
+    // seeing sources: 全长口径不一 —— CADC-Albufeira（西葡联合管理委员会，1 级）给 1,130 km；葡方另有 1,007 km 一说；原写的 1038 km 不落在任何一处。正文改写成区间，不择一。「半岛最长」各口径一致。核实 2026-09-10
     seeing:
-      "The Tagus (Tejo) is the longest river on the Iberian Peninsula, about 1,038 km, rising in Spain and crossing central Portugal before reaching the Atlantic. From the air, the river is wide and gentle around Santarém, with important irrigated farmland on both banks.",
+      "The Tagus (Tejo) is the longest river on the Iberian Peninsula, rising in Spain and crossing central Portugal before reaching the Atlantic; its total length is given as anywhere from about 1,000 to 1,130 km depending on whether the Portuguese or the Spanish measurement is used. From the air, the river is wide and gentle around Santarém, with important irrigated farmland on both banks.",
     formation:
       "The Tagus follows a tectonic fault line; in its middle and lower reaches it crosses relatively soft sedimentary rock, widening and flattening its valley to form one of central Portugal's most important alluvial plains.",
     observation:
@@ -8664,6 +8807,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "minho-river": {
+    // 全六段 sources: 下游自梅尔加索至入海口约 75 km 为界河（蒙桑市政府官网，2 级）；跨境表述中性。核实 2026-09-10，未改动
     seeing:
       "The Minho rises in Spanish Galicia; its lower 75 km forms the border between Portugal and Spain. From the air, the river winds broadly around Valença, with Portuguese and Spanish towns on opposite banks, and important wetlands near its mouth.",
     formation:
@@ -8679,6 +8823,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mondego-river": {
+    // 全六段 sources: 「唯一完全发源并流经葡萄牙境内的主要河流」多方一致；长度有 227 与 234 km 两种流传数字（不同测量口径，差约 3%），未找到能证伪 227 的权威反证，暂不改——下轮若查到 LNEG/APA 的一手数据再定。核实 2026-09-10
     seeing:
       "The Mondego is the longest river to both rise and flow entirely within Portugal, about 227 km, rising in the Serra da Estrela and flowing through Coimbra before reaching the Atlantic. From the air, the river is wide and gentle around Coimbra, with the university city built along its banks.",
     formation:
@@ -8694,6 +8839,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "guadiana-river": {
+    // 全六段 sources: 圣多明戈斯矿区 1854–1966 年开采铜/硫，为伊比利亚黄铁矿带主要矿区之一（DGEG 葡萄牙能源地质总局 Roteiro das Minas，1 级）；梅尔托拉主教堂由清真寺改建为广泛记载的史实。核实 2026-09-10，未改动
     seeing:
       "The Guadiana rises on Spain's La Mancha plateau; its lower course forms the Portugal–Spain border before reaching the Atlantic at Vila Real de Santo António. From the air, the valley winds around Mértola, its banks lined with low slate hills.",
     formation:
@@ -8717,13 +8863,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Alqueva Reservoir by its huge, irregularly shaped water body reaching into multiple tributary valleys inland, forming a striking colour and landform contrast with the dry oak savanna of the Alentejo Plain.",
     distinguish:
       "The Alqueva Reservoir and the Guadiana River belong to the same water system, but Alqueva is a still, artificial body of water formed by the dam, while the Guadiana (especially around Mértola) is a naturally flowing, meandering river channel.",
+    // concept sources: 2011 年获西班牙星光基金会（Fundación Starlight，受 UNESCO/IAU 支持）「星光旅游目的地」认证，为世界首个、亦为全球首个跨境认证；与 IDA 的「Dark Sky Reserve」是两套不同体系，检索未见阿尔克瓦在 IDA 名录上。大坝 2002 年蓄水、水面约 250 km²、西欧最大人工湖均核实无误。核实 2026-09-10
     concept:
-      "The Alqueva Reservoir is used mainly for irrigation, hydropower and regional water supply, significantly changing the long-standing water scarcity of Alentejo agriculture; thanks to very low local light pollution, it was designated one of Europe's first officially certified Dark Sky Reserves in 2011.",
+      "The Alqueva Reservoir is used mainly for irrigation, hydropower and regional water supply, significantly changing the long-standing water scarcity of Alentejo agriculture; thanks to very low local light pollution, Spain's Starlight Foundation certified it in 2011 as the world's first Starlight Tourism Destination, and the first such destination anywhere to span a border.",
     history:
       "Before the reservoir was filled, archaeologists carried out rescue documentation and relocation of prehistoric rock art and other remains in the area to be flooded — a notable case of heritage protection during a major modern Portuguese engineering project.",
   },
 
   "tagus-estuary": {
+    // 全六段 sources: ⚠️ 两个口径别混：ICNF 法定「特茹河口自然保护区」面积约 141.92 km²（14,192 ha，1 级），而整个河口水体（俗称「草海」Mar da Palha）约 340 km²。正文 seeing 段写的 320 km² 说的是整个河口湾、不是保护区边界，与 340 差约 6%，属测算差异；concept 段的 1976 年设立与 141.92 km² 说的是保护区——两段各自指代不同对象，都成立。核实 2026-09-10，未改动
     seeing:
       "The Tagus Estuary is the broad river mouth the Tagus forms east of Lisbon before reaching the Atlantic, locally called the 'Sea of Straw', covering about 320 sq km. From the air, vast shallow flats and salt marshes spread beside the Lisbon metropolitan area — an unusually large wetland this close to a major city.",
     formation:
@@ -8739,6 +8887,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "algarve-coast": {
+    // 全六段 sources: 第三纪石灰岩海蚀拱/柱地貌、「阿尔加维」源自阿拉伯语 al-Gharb，均为常识性地质与语源事实，无数字断言。核实 2026-09-10，未改动
     seeing:
       "The Algarve Coast is Portugal's southernmost limestone coastline, known for golden cliffs, sea arches, sea stacks and numerous small beaches, with Ponta da Piedade near Lagos its most representative stretch. From the air, winding golden cliffs contrast sharply with the deep blue sea.",
     formation:
@@ -8762,13 +8911,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify Ria Formosa by its lagoon enclosed by thin barrier islands, with channels crisscrossing the inner waters — quite different from the cliff-dominated rocky stretches of the Algarve Coast.",
     distinguish:
       "Both Ria Formosa and the Tagus Estuary are important Portuguese coastal wetlands, but Ria Formosa is a barrier-island lagoon system characterised by tidal channels and sandbars, while the Tagus Estuary is a broad tidal river-mouth bay with flats.",
+    // concept sources: 原写的「地中海最多白头鹮繁殖地」查无实据（且福尔摩沙潟湖在大西洋岸不在地中海）；该地实际的鸟类纪录是德塞尔塔岛的奥杜安鸥繁殖种群，2024 年 SPEA 调查逾 7000 巢、为已知全球最大且仍在扩大（SPEA / PÚBLICO，2 级）—— 这是会变的量，下轮复核。核实 2026-09-10
     concept:
-      "Ria Formosa Natural Park, established in 1987, hosts one of the largest breeding populations of the Eurasian spoonbill in the Mediterranean region, and is also an important Portuguese shellfish-farming area; its dynamic sandbar system requires ongoing geological monitoring.",
+      "Ria Formosa Natural Park, established in 1987, is an important Portuguese shellfish-farming area; on its Ilha Deserta a 2024 survey by the Portuguese Society for the Study of Birds counted over 7,000 nests of Audouin's gull, the largest such colony known anywhere; its dynamic sandbar system requires ongoing geological monitoring.",
     history:
       "Coastal towns such as Faro have long depended on the lagoon for fishing and shellfish farming, with some traditional fishing and salt-making methods continuing in part today.",
   },
 
   "costa-vicentina": {
+    // 全六段 sources: 西南阿连特茹暨维森特角自然公园 1995 年设立（前身为 1988 年的保护景观区）。核实 2026-09-10，未改动
     seeing:
       "Costa Vicentina is a stretch of Atlantic-facing cliff coastline at Portugal's south-western tip, running north from Cabo de São Vicente for over a hundred kilometres. From the air, the cliffs are straight and steep with almost no large-scale development — one of the best-preserved natural coastlines at the south-western end of the Iberian Peninsula.",
     formation:
@@ -8784,6 +8935,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "arrabida-coast": {
+    // 全六段 sources: 崖壁最高点约 500 m；自然公园 1976-07-28 依第 565/76 号法令设立（Infopédia，2 级）。核实 2026-09-10，未改动
     seeing:
       "The Arrábida Coast is a stretch of limestone mountain south of Lisbon on the Setúbal Peninsula, dropping steeply into the Atlantic, its highest point about 500 m. From the air, the mountain nearly meets the sea vertically, with unusually clear pale-blue water offshore a defining feature.",
     formation:
@@ -8799,6 +8951,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   berlengas: {
+    // 全六段 sources: 主岛大贝尔伦加长约 1.5 km；自然保护区 1981-09 依第 264/81 号法令设立；2011 年列入 UNESCO 生物圈保护区（葡萄牙第 5 个）—— 三项均核实无误。⚠️「葡萄牙第一处海洋自然保护区」这句排他断言未能核实（ICNF 页面 JS 渲染抓不到正文，其余来源均未用「第一」这个说法；另 1465 年阿方索五世曾禁猎于此，更早但性质不同），见 issue。核实 2026-09-10
     seeing:
       "The Berlengas are a group of granite islets about 10–17 km off the coast at Peniche, the main island, Berlenga Grande, about 1.5 km long. From the air, a few bare granite islets stand out sharply against the deep blue Atlantic, with a 17th-century lighthouse-fort on the main island.",
     formation:
@@ -8814,6 +8967,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pico-mountain": {
+    // 全六段 sources: 皮库山 2351 m 为葡萄牙**全境**最高点（与 serra-da-estrela 的「大陆最高点 1993 m」口径分列清楚）；皮库岛葡萄园文化景观 2004 年列入 UNESCO。核实 2026-09-10，未改动
     seeing:
       "Mount Pico is a stratovolcano on Pico Island in the Azores, at 2,351 m — the highest point in all of Portugal. From the air, a near-perfect cone rises straight out of the Atlantic, often wreathed in cloud at the summit, with black basalt stone-walled vineyards covering its lower slopes.",
     formation:
@@ -8829,6 +8983,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sete-cidades-caldera": {
+    // 全六段 sources: 破火山口直径各来源 5–6.3 km（平均约 5.3 km，另有 6×5 km 一说），正文「约5公里」落在区间内。核实 2026-09-10，未改动
     seeing:
       "Sete Cidades is a caldera about 5 km across at the western tip of São Miguel Island in the Azores. From the air, two connected lakes on the caldera floor — one large, one small — often appear in contrasting blue and green due to light refraction, ringed by lush green crater walls.",
     formation:
@@ -8844,6 +8999,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "furnas-caldera": {
+    // 全六段 sources: 地热喷气孔/沸泥塘/温泉与 cozido das Furnas 地热焖煮传统均为广泛记载的事实，无数字或年代断言需核。核实 2026-09-10，未改动
     seeing:
       "Furnas is an active volcanic caldera in eastern São Miguel Island in the Azores, with strong geothermal activity inside. From the air, steaming fumaroles and hot springs are scattered across the caldera floor, contrasting with the lush vegetation around it.",
     formation:
@@ -8859,6 +9015,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "madeira-mountains": {
+    // 全六段 sources: 皮库鲁伊武 1862 m 为马德拉岛最高点、葡萄牙第三高峰（官方旅游局 visitmadeira.com，2 级）；马德拉月桂林（Laurisilva）2007 年列入 UNESCO 自然遗产。核实 2026-09-10，未改动
     seeing:
       "The Madeira Mountains are a central ridge on Madeira Island built up by volcanic eruptions, its highest point, Pico Ruivo, at 1,862 m. From the air, a steep ridgeline rises from the island's centre, its slopes covered in extensive dark-green primeval laurel forest.",
     formation:
@@ -8874,6 +9031,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cabo-girao": {
+    // 全六段 sources: 崖顶至海面落差约 580 m；正文写「欧洲最高的海崖之一」而非部分小众来源夸大的「世界第二高」，限定克制。核实 2026-09-10，未改动
     seeing:
       "Cabo Girão is a nearly vertical sea cliff on Madeira Island's south coast, dropping about 580 m from clifftop to sea — one of the highest sea cliffs in Europe. From the air, the sheer wall plunges straight into the deep-blue Atlantic, with a suspended glass viewing platform at the top.",
     formation:
@@ -8890,10 +9048,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Belgium ============
   "hautes-fagnes": {
+    // seeing sources: 地名：**Signal de Botrange** —— Botrange 是地名，与「植物园」无关，原中文「植物园峰」是望文生义的误译。694 m、比利时最高点属实。**英文侧一直写的是 Signal de Botrange**，只有中文错。2026-09-10 核。
     seeing:
       "The Hautes Fagnes (High Fens) is a peat-bog plateau in the eastern Ardennes; its highest point, the Signal de Botrange, reaches 694 m — the highest point in all of Belgium.",
+    // formation sources: ⚠️ 成因**漏掉了定义性的一步**：泥炭增厚后根系脱离地下水与径流、转为完全靠降水补给（ombrotrophe），才是高位沼泽区别于一般泥炭地的判据（列日大学高地沼泽科考站，2 级）。
+    //   **这与爱尔兰 `central-lowlands-bog-of-allen` 是同一个漏法、同一个判据，第二次了** —— 同类地貌在不同国家各漏一次，说明写的时候没有一份共用的判据清单。2026-09-10 核。
     formation:
-      "The plateau surface is covered in a thick layer of peat; the cold climate since the last ice age has left it with distinctive periglacial landforms, including polygonal ground and freeze-thaw structures.",
+      "The plateau surface is covered in a thick layer of peat that built up on poorly drained quartzite; as the peat thickened, plant roots lost contact with groundwater and runoff until rainfall alone fed the bog — the defining step that makes it an ombrotrophic raised bog. The cold climate since the last ice age has also left distinctive periglacial landforms, including polygonal ground and freeze-thaw structures.",
     observation:
       "From the air, the Hautes Fagnes shows a broad, gently rolling plateau outline, its surface covered in dark-brown peat bog and sparse scrub vegetation, in sharp contrast with the densely forested Ardennes around it.",
     distinguish:
@@ -8905,6 +9066,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   condroz: {
+    // 全六段 sources: 砂岩山脊（tiges）与石灰岩谷地（chavées）相间——山脊为晚泥盆纪砂岩、谷地为迪南期石灰岩；
+    //   阿登孔德罗兹段平均海拔约 260 m，北邻黑斯拜、东邻阿登。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Condroz is a gently undulating plateau in Wallonia, lying between the Ardennes and the Sambre-Meuse valley, generally 200–300 m in elevation.",
     formation:
@@ -8920,6 +9083,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ardennes-forest": {
+    // history sources: ✅ **判定不改，记在这里免得下一轮反复。** 核实方报「阿登战役（突出部之役）」踩红线，
+    //   但它给的依据是「任务指令本身」——那是我在派工 prompt 里写的黑名单，不是查出来的。
+    //   按仓库自己的判据：CLAUDE.md 对意大利明文允许「一战山地战（简短事实）」，越南那两处也判过保留，
+    //   判据是「是否涉及一个仍在持续的对立状态、有没有评价性表述」。阿登这一句两条都不沾，**保留**。
+    //   （对照上一轮删掉的琉球那句：那是关于战役的**最高级排名**、且与至今仍在进行的讨论缠绕，才删。）2026-09-10 核。
+    // 其余 sources: 平均海拔 350—400 m；基岩为经加里东与海西造山变形的古生代变质岩（3 级）。verdict: ok。
     seeing:
       "The Ardennes is the extensive forested upland spanning south-eastern Belgium and the borders of Luxembourg, France and Germany; within Belgium it averages 350–400 m elevation, its highest point being the Hautes Fagnes peat plateau.",
     formation:
@@ -8935,6 +9104,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pays-de-herve": {
+    // 全六段 sources: 位于韦斯德河与默兹河之间、近比荷德三国交界的低缓丘陵；树篱果园牧场与埃尔沃奶酪属实。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Pays de Herve, lying between the Vesdre and Meuse rivers, is a low, gentle hill country known for its hedgerow-lined orchards and pastures.",
     formation:
@@ -8950,12 +9120,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hageland: {
+    // seeing/observation sources: 山脊走向 —— 法兰德斯不动产遗产局两篇官方文本互相矛盾（2016 西北—东南 / 2021 西南—东北），均非东西走向；正文改为不写具体走向，待查 DOV Vlaanderen 第四纪地层图。狄斯特砂层为晚中新世海相沉积、含海绿石铁质砂岩抗蚀成脊（同机构，1 级）。核实 2026-09-10
     seeing:
-      "The Hageland, in the eastern part of Flemish Brabant, is made up of a series of east-west ironstone-sandstone ridges — not high, but regularly aligned.",
+      "The Hageland, in the eastern part of Flemish Brabant, is made up of a series of parallel, consistently aligned ironstone-sandstone ridges — not high, but regularly spaced.",
     formation:
       "These ridges are landform remnants left by differential erosion of Miocene Diest Sands; the iron-bearing sandstone layers resist erosion better than the surrounding rock, gradually standing out as ridged high ground.",
     observation:
-      "From the air, the Hageland shows several parallel east-west ridges alternating with valleys — the most recognisable landform feature of this area.",
+      "From the air, the Hageland shows several parallel ridges, running in a consistent direction, alternating with valleys — the most recognisable landform feature of this area.",
     distinguish:
       "Both the Hageland and the Condroz are defined by ridge-and-valley terrain, but the Hageland's ridges are built of smaller-scale Miocene iron-bearing sandstone, while the Condroz's ridges are older sandstone and limestone spread over a wider area.",
     concept:
@@ -8965,6 +9136,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   campine: {
+    // formation / history sources: 历史上大片荒原／湿地景观（至 1960 年代前）；战后坎皮讷煤田开采带动工业；多处军事基地与空军基地。
+    //   ⚠️ distinguish 的「是默兹—莱茵三角洲的一部分」**记 unknown**：这是常见的第四纪地质学表述，但找不到 1/2 级来源直接印证。
+    //   下一轮核佛兰德／比利时地质调查局的第四纪地层分类。3 级。2026-09-10 核。
     seeing:
       "The Campine (Kempen) is a low, flat sandy upland straddling north-eastern Belgium and southern Netherlands, part of the Meuse-Rhine delta.",
     formation:
@@ -8980,6 +9154,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "flanders-coastal-plain": {
+    // formation sources: 围垦历史、粘质海相沉积、圩田景观与常见地理文献一致。
+    //   ⚠️ 「向内陆延伸约 8 至 16 公里」**记 unknown**：查不到 1/2 级来源核实这个具体区间（VLIZ 的 PDF 体积过大未能读取）。
+    //   下一轮核 Agentschap voor Natuur en Bos 或 VLIZ；核不到就改成不带具体公里数的表述。2026-09-10 核。
     seeing:
       "The Plain of Flanders is an extremely flat coastal plain in north-western Belgium, extending inland for roughly 8–16 km.",
     formation:
@@ -8995,6 +9172,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "fagne-famenne": {
+    // 全六段 sources: 南缘为卡雷斯蒂耶讷（Calestienne）石灰岩条带，北邻孔德罗兹、西邻阿登边缘；主体为较软的泥盆纪页岩经差异侵蚀而成。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Fagne-Famenne is a long, narrow depression squeezed between the Condroz plateau and the Ardennes.",
     formation:
@@ -9010,6 +9188,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meuse-valley-be": {
+    // 其余 sources: 迪南、那慕尔、于伊、列日沿河而建，两岸石灰岩崖壁——与已核的孔德罗兹／阿登石灰岩边缘位置关系一致。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Meuse Valley is the stretch of the Meuse River flowing through Belgium, cutting through the limestone at the edge of the Condroz and Ardennes plateaus, with steep cliffs on both banks.",
     formation:
@@ -9018,8 +9197,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Meuse Valley shows a winding river hemmed in by steep cliffs on both sides — a gorge-like valley landform; historic towns including Dinant, Namur, Huy and Liège are built along the river, their urban outlines closely following the channel.",
     distinguish:
       "Both the Meuse Valley and the Lesse Valley are limestone valleys in Belgium, but the Meuse Valley is much larger, running through multiple plateau regions, while the Lesse Valley is a smaller karst valley cut by a Meuse tributary.",
+    // concept sources: 流域占比：比利时约 40%—41%（份额最大的一国），法国约 26%—28%、荷兰约 19%—23%、德国约 6%—12%。原文「绝大部分」/ the great majority 夸大。3 级。2026-09-10 核。
     concept:
-      "The great majority of the Meuse's drainage basin lies within Belgium; the Meuse Valley is a textbook case study of a river cutting through multiple rock types to form a composite landform.",
+      "Belgium holds the largest single share of the Meuse's drainage basin — roughly 40 per cent; the Meuse Valley is a textbook case study of a river cutting through multiple rock types to form a composite landform.",
     history:
       "Towns along the Meuse Valley such as Dinant and Namur have been important trading and defensive strongholds since medieval times, and the valley still preserves numerous castles and fortress ruins along its banks.",
   },
@@ -9035,11 +9215,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Semois Valley and the Ourthe Valley are important Ardennes river valleys, but the Semois Valley is known for its extreme, deeply incised meanders, while the Ourthe Valley's channel is comparatively less winding.",
     concept:
       "The deeply incised meanders of the Semois Valley are a textbook case study in \"entrenched meander\" landforms, formed by the combined effect of lateral and downward river erosion.",
+    // history sources: 塞穆瓦河谷国家公园与桑布尔—默兹之间国家公园同为瓦隆大区 2023-01-01 生效的首批国家公园，无先后；核实 2026-09-10
     history:
-      "Historic towns such as Bouillon line the Semois Valley; in 2023 most of the valley was designated Wallonia's first national park, strengthening protection of this landscape.",
+      "Historic towns such as Bouillon line the Semois Valley; in 2023 most of the valley was designated one of Wallonia's first two national parks, strengthening protection of this landscape.",
   },
 
   "ourthe-valley": {
+    // 全六段 sources: 阿登基岩为早古生代加里东轻变质板岩/千枚岩/石英岩；乌尔特河全长约 165 km、流域约 1884 km²，韦斯德河与昂布利沃河都是它的支流（在 Chênée 汇入），故「主干河谷、规模更大」的比较成立且只针对韦斯德河谷、不是全库排他性断言；拉罗什昂阿登 844 年建首座城堡、11–12 世纪重建（connaitrelawallonie.wallonie.be，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Ourthe Valley is one of the principal river valleys of the Ardennes; the Ourthe cuts through the plateau's ancient metamorphic bedrock, with steep, densely forested slopes.",
     formation:
@@ -9055,6 +9237,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vesdre-valley": {
+    // 全六段 sources: 韦斯德河源出比德边境一带高原沼泽，经厄本、韦尔维耶在 Chênée 汇入乌尔特河（crvesdre.be，2 级）；韦尔维耶呢绒业可溯至 15 世纪，18 世纪飞梭之后成核心产业带，河水酸性适合洗毛脱脂是选址关键 —— 正文「发源地之一」带了限定语，不构成排他性断言。核实 2026-09-10，未改动
     seeing:
       "The Vesdre Valley is a narrow valley cut by the Vesdre River through the ancient metamorphic bedrock at the northern edge of the Ardennes, historically one of the birthplaces of Belgium's woollen textile industry.",
     formation:
@@ -9070,6 +9253,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lesse-valley": {
+    // 全六段 sources: 与本库已核的 han-sur-lesse-caves（莱斯河约 50 万年前改道穿入布万山体、2 km 外重新出露）及 fagne-famenne（卡雷斯蒂耶讷石灰岩条带位置）并排读一致；与 viroin-valley 的对比（后者以地表裸露崖壁为主）也与该条目自身描述互相印证。核实 2026-09-10，未改动
     seeing:
       "Along the stretch where it crosses the Calestienne limestone belt, the Lesse has carved a classic karst valley landform, its channel flanked by limestone cliffs and underground streams.",
     formation:
@@ -9087,19 +9271,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ambleve-gorge": {
     seeing:
       "The Amblève Gorge is a stretch of valley cut by the Amblève River through the eastern Ardennes; the Coo Waterfall within the gorge is one of Belgium's better-known falls.",
+    // formation/concept/history sources: 截弯改道为史实，目的在法语来源中分为「供磨坊」与「防洪保村」两说，本库不再择一断言；核实 2026-09-10
     formation:
-      "The gorge was carved by long-term erosion of the eastern Ardennes bedrock by the Amblève; the Coo Waterfall within it is not natural but was created artificially in the 18th century, when local monks cut through a river bend to feed a watermill, producing a drop of about 15 m.",
+      "The gorge was carved by long-term erosion of the eastern Ardennes bedrock by the Amblève; the Coo Waterfall within it is not natural but was created artificially in the 18th century, when local monks cut through a river bend, producing a drop of about 15 m; accounts differ as to why, some saying it fed an abbey watermill, others that it protected the village inside the bend from flooding.",
     observation:
       "From the air, the Amblève Gorge shows a deeply cut, forest-ringed valley outline; the Coo Waterfall's vertical white curtain of water stands out sharply against the green slopes, marking this stretch of gorge unmistakably.",
     distinguish:
       "Unlike Alpine gorges such as Liechtensteinklamm in Austria, the Amblève Gorge's Coo Waterfall is not purely natural but the product of a historical artificial diversion, and its drop is far smaller than the large falls of the Alps.",
     concept:
-      "The Coo Waterfall is a case study in how humans have historically modified river terrain to harness hydropower, illustrating artificial intervention in a river channel during the era of traditional watermills.",
+      "The Coo Waterfall is a case study in how humans have historically modified river terrain, illustrating pre-industrial artificial cut-through of a natural river meander.",
     history:
-      "The Coo Waterfall takes its name from an 18th-century channel diversion built by local monks to supply a watermill; today it is an important tourist attraction in the Belgian Ardennes, and a pumped-storage power station nearby makes use of the local elevation drop.",
+      "The Coo Waterfall takes its name from an 18th-century channel diversion built by local monks; today it is an important tourist attraction in the Belgian Ardennes, and a pumped-storage power station nearby makes use of the local elevation drop.",
   },
 
   "han-sur-lesse-caves": {
+    // 全六段 sources: 主厅「穹顶大厅」宽约 150 m、拱顶高约 127 m；约 50 万年前莱斯河改道形成；洞内常温约 13 ℃；
+    //   至少自公元前 5 世纪起被人类利用；现代系统探索始于 1771 年——**逐项与来源逐字一致**。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Caves of Han-sur-Lesse formed roughly 500,000 years ago when the Lesse diverted its course into the limestone of Mont Boine; the main chamber, the \"Salle du Dôme,\" is about 150 m across with a vault reaching 127 m high.",
     formation:
@@ -9123,15 +9310,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Viroin Valley shows a gorge-like outline, its exposed grey-white limestone cliffs on both banks contrasting sharply with the forest and grassland on the valley floor.",
     distinguish:
       "Both the Viroin Valley and the Lesse Valley lie on the Calestienne limestone belt, but the Viroin Valley is defined mainly by exposed surface cliffs and gorge scenery, while the Lesse Valley is better known for its underground streams and large cave system.",
+    // concept/history sources: Parc naturel Viroin-Hermeton 设立于 1998；Famenne-Ardenne UNESCO Global Geopark 的 8 个市镇不含 Viroinval（geoparcfamenneardenne.be，1 级，核实 2026-09-10）
     concept:
-      "The Viroin Valley lies within the core zone of the Famenne-Ardenne UNESCO Global Geopark, an important case study in Middle Devonian marine limestone deposition and subsequent karstification.",
+      "The Viroin Valley is an important case study in Middle Devonian marine limestone deposition and subsequent karstification, its limestone cliffs and incised river together forming a classic karst gorge landscape.",
     history:
-      "Owing to its outstanding geological and ecological value, the Viroin Valley area was recognised as a UNESCO Global Geopark in 2018 alongside the wider Famenne-Ardenne region.",
+      "Owing to its outstanding geological and ecological value, the Viroin Valley area was brought under protection in 1998 as part of the Viroin-Hermeton Nature Park.",
   },
 
   "scheldt-river-be": {
+    // seeing sources: 2022 年安特卫普港与泽布吕赫港合并为 Port of Antwerp-Bruges（portofantwerpbruges.com，1 级，核实 2026-09-10）；条目其余段落提到的「安特卫普港」是地理指代，未改
     seeing:
-      "The Scheldt runs about 435 km in total, with roughly 200 km flowing through Belgium; the port of Antwerp, on its lower course, is Europe's second-largest port.",
+      "The Scheldt runs about 435 km in total, with roughly 200 km flowing through Belgium; the Antwerp docks sit on its lower course and merged with Zeebrugge in 2022 to form Port of Antwerp-Bruges, Europe's second-largest port by throughput.",
     formation:
       "The Scheldt has been an important waterway since Roman times; its estuary (the Westerschelde) flows out to sea through the Netherlands, and Belgium and the Netherlands maintain a long-standing agreement on the passage and maintenance of this waterway.",
     observation:
@@ -9145,6 +9334,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sambre-river": {
+    // 全六段 sources: 全长约 193 km（法国境内约 54 km 至 Jeumont 边境；另一来源给瓦隆境内 105 km，各来源在 190–193 km 区间内），源出法国埃纳省勒努维翁昂蒂耶拉什附近，经埃诺省（沙勒罗瓦）与那慕尔省在那慕尔汇入默兹河；沙勒罗瓦 19 世纪煤铁工业化（crsambre.be 2 级 + 3 级交叉印证）。核实 2026-09-10，未改动
     seeing:
       "The Sambre runs about 193 km, a left-bank tributary of the Meuse, joining it at Namur, the capital of Wallonia.",
     formation:
@@ -9180,6 +9370,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ijzer-river": {
+    // 全六段 sources: 源出法国诺尔省 Buysscheure 附近，全长约 78 km，约 30 km 后入比利时西弗兰德沿海平原，在纽波特入北海（Britannica，2 级）；1914-10 伊瑟河战役期间在纽波特开闸放潮水淹没圩田阻德军推进，属已结束、无持续对立的军事—地理史实，按判据保留；伊瑟塔 1930 年落成、1950 年代重建，条目只写它是纪念建筑，未涉其后续象征意义。核实 2026-09-10，未改动
     seeing:
       "The Yser (IJzer) rises in northern France and flows through the coastal plain of Belgium's West Flanders province, entering the North Sea near Nieuwpoort.",
     formation:
@@ -9195,6 +9386,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "belgian-coast-dunes": {
+    // seeing sources: 海岸线约 65 km（比利时官方海岸门户 kustportaal.be，2 级；荷语维基给 67 km，系不同测量口径）。
+    //   ⚠️ concept 的「现存面积已不足历史峰值的三分之二」**存疑**：VLIZ 相关出版物的表述是沙丘因道路与地产开发「被拦腰砍半」，
+    //   比「不足三分之二」更严重；且正文没给监测时点（C6-j）。下一轮找 VLIZ 或佛兰德海岸管理局的官方数据补年份，
+    //   核不到就改成「已大幅破碎化、多处不再连续」这类不带分数的表述。
+    //   ⚠️ history 的「一战末期这一带曾是重要的军事前线」**存疑**：德帕纳实为比利时境内唯一未被占领的区域、国王与政府战时驻地，
+    //   更接近后方据点而非前线本身（伊瑟河前线在其东南）。未违红线，下一轮可精确化。2026-09-10 核。
     seeing:
       "The Belgian coast dunes run along about 65 km of North Sea coastline, part of the wider European North Sea dune system stretching from Dunkirk in France to Denmark.",
     formation:
@@ -9210,8 +9407,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   zwin: {
+    // seeing sources: 2016—2019 跨境扩建新增约 120 ha（Agentschap voor Natuur en Bos，1 级）；比利时一侧现行总面积各来源不一（扩建前约 125–155 ha、扩建后约 235–265 ha），正文不写总数，见 issue
     seeing:
-      "The Zwin, on the Belgium-Netherlands border, is a tidal salt-marsh wetland regularly flooded by the sea at high tide, covering about 180 ha on the Belgian side.",
+      "The Zwin, on the Belgium-Netherlands border, is a tidal salt-marsh wetland regularly flooded by the sea at high tide; a cross-border expansion project in 2016-2019 added roughly 120 ha of tidal area on the Belgian side.",
     formation:
       "The wetland was shaped over time by North Sea tidal currents; its distinctive salinity gradient supports salt-tolerant plant communities including sea lavender, a classic intertidal salt-marsh ecosystem.",
     observation:
@@ -9225,6 +9423,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sonian-forest": {
+    // seeing / history sources: 面积约 4421 公顷；2017 年作为跨国系列遗产「喀尔巴阡山脉及欧洲其他地区的古老与原始山毛榉林」扩展项列入 UNESCO。
+    //   ⚠️ concept 的「近 600 种甲虫」**记 unknown**：哺乳动物「约 40 种」有 3 级佐证（原 46 种、7 种已消失），
+    //   但甲虫物种数找不到 1/2 级来源（Leefmilieu Brussel／Natuurpunt）。下一轮核不到就改成不带具体数字的表述。
+    //   ✅ 红线：索尼安森林横跨三个大区，正文未写语言边界或社群政治；「滑铁卢」若出现只作地名。2026-09-10 核。
     seeing:
       "The Sonian Forest is an ancient beech forest of about 4,421 hectares on the south-eastern edge of Brussels, one of the largest and oldest beech forests remaining in Europe.",
     formation:
@@ -9240,6 +9442,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "stavelot-massif": {
+    // formation sources: 岩性为晚寒武纪至奥陶纪石英岩 + 千枚岩，经加里东与海西两期造山变形——这部分已确认。
+    //   ⚠️ 「约 2500 米厚」与「比利时境内出露年代最古老的岩石」**两项都记 unknown**：
+    //   在可及的 1/2/3 级来源（KBIN-IRSNB、比利时地质公报）里都查不到这个厚度数字与这条排他性断言的出处。
+    //   下一轮找比利时地质调查局官方出版物；核不到就把厚度与「最古老」都去掉，只留已确认的岩性与造山史。2026-09-10 核。
     seeing:
       "The Stavelot Massif is an outcrop of early Paleozoic bedrock in the eastern Ardennes — the oldest exposed rock in Belgium.",
     formation:
@@ -9255,6 +9461,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hesbaye: {
+    // 全六段 sources: 黄土（limon）覆盖石灰岩基底；新石器时代（距今约七千年）已开垦；
+    //   「比利时粮仓」（grenier à blé de la Belgique）别称有文献支持。3 级。
+    //   ✅ **专项复核「三条会不会被写成同一套成因」**：孔德罗兹（砂岩背斜 + 石灰岩向斜相间）、法涅-法门（页岩低地）、
+    //   黑斯拜（黄土台地）在本库里**写的是三套不同的成因**，没有混用。2026-09-10 核，verdict: ok。
     seeing:
       "The Hesbaye is an open loess plateau between the Meuse and Scheldt drainage basins, an agricultural region under cultivation since before Roman times.",
     formation:
@@ -9270,6 +9480,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gaume: {
+    // 全六段 sources: 「比利时的普罗旺斯」（la Provence belge）为比利时主流媒体通用说法；气候比阿登更温暖干燥、南邻法国洛林。2 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Gaume is a hilly area at Belgium's southernmost tip, lower in elevation than the Ardennes, bordering the Lorraine region of France.",
     formation:
@@ -9286,6 +9497,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Netherlands ============
   vaalserberg: {
+    // 全六段 sources: 322.7 m（NAP 基准；另有 322.4 的小幅测量差）为荷兰**欧洲部分**最高点 —— 正文限定准确，未与加勒比荷兰萨巴岛 Mount Scenery 887 m 混淆；「超过四分之一国土低于海平面」与官方环境评估机构 PBL 的 26% 口径相符（1 级）。核实 2026-09-11，未改动
     seeing:
       "Vaalserberg is the highest point in the Netherlands, at 322.7 m, on a forested plateau where the Netherlands, Germany and Belgium meet. From the air it is just a gently raised patch of green hill, only slightly higher than the almost level land around it.",
     formation:
@@ -9301,6 +9513,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   veluwe: {
+    // 全六段 sources: 最高点 Signal Imbosch 约 110 m；萨勒冰期（约 15 万年前）冰川推挤成脊；高费吕沃国家公园 1935 年设立。核实 2026-09-11，未改动
     seeing:
       "The Veluwe is a sandy upland in the central Netherlands built up by glacial push during the last ice age, its highest point about 110 m — the country's largest continuous forest and heathland reserve. From the air, dense dark-green conifer forest is interspersed with open purple heather moor and patches of drifting yellow sand.",
     formation:
@@ -9316,6 +9529,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "utrechtse-heuvelrug": {
+    // 全六段 sources: 长约 30 km、国家公园 2003 年设立均获多来源确认；最高点约 69 m 未找到独立反证，与费吕沃 110 m 的高低关系自洽，暂不改。核实 2026-09-11
     seeing:
       "The Utrechtse Heuvelrug is a narrow moraine ridge in the central Netherlands from the last ice age, about 30 km long, its highest point about 69 m. From the air a long, thin band of forest stands out sharply against the otherwise flat terrain of Utrecht province, open farmland and towns on either side.",
     formation:
@@ -9339,13 +9553,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Drenthe Hondsrug by its narrow sandy upland outline and the villages strung along the ridge line; the hunebedden (megalithic tombs) along it — dolmen-like structures built of large granite boulders — are the most distinctive human-landscape feature for identifying this area.",
     distinguish:
       "The Drenthe Hondsrug, the Veluwe and the Utrechtse Heuvelrug are all moraine hills, but the Hondsrug is older and directly tied to the earliest prehistoric settlement in the Netherlands, while the Veluwe and Utrechtse Heuvelrug are defined mainly by natural ecology and noble estate history.",
+    // concept sources: UNESCO 认定 2015（unesco.org/en/iggp，1 级）；全国在册巨石墓 53 座（德伦特 52 + 格罗宁根 1），其中约 47 座在本脊（dehondsrug.nl，2 级）；建造年代 3400–3000 BC。原文的「约54座 / 3400–3200 / 2023」三处全错。核实 2026-09-11
     concept:
-      "About 54 Neolithic megalithic tombs (3400–3200 BC) line the ridge, built by people of the Funnelbeaker culture using granite boulders carried by the glaciers; in 2023 the whole area was inscribed as a UNESCO Global Geopark, and it is a core site for studying Dutch prehistory.",
+      "About 47 of the Netherlands' 53 registered Neolithic megalithic tombs (3400-3000 BC) line the ridge, built by people of the Funnelbeaker culture using granite boulders carried by the glaciers; in 2015 the whole area was inscribed as a UNESCO Global Geopark, and it is a core site for studying Dutch prehistory.",
     history:
       "This upland has been continuously inhabited since the Neolithic, from prehistoric megalithic tombs through medieval villages to modern farming settlements — a record of thousands of years of continuous human use on a single geographic ridge.",
   },
 
   "flevoland-polder": {
+    // 全六段 sources: 东弗莱福兰 1950 合龙 / 1957 排干，南弗莱福兰 1959 合龙 / 1968 排干 —— 正文「1950–1968」准确覆盖本条 bbox 对应的两块圩田，**未把 1942 年单独排干的东北圩田混进来**；1986 年设为第 12 省。吉尼斯认定 Flevopolder 为世界最大人工岛，正文用「之一」更保守。核实 2026-09-11，未改动
     seeing:
       "The Flevoland Polder is land drained and reclaimed from the former Zuiderzee between 1950 and 1968, most of it below sea level — one of the largest artificial land reclamations in the world. From the air, endless grid-pattern farmland stretches to the horizon, straight drainage canals and windbreak tree lines dividing it neatly.",
     formation:
@@ -9361,6 +9577,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   zuidplaspolder: {
+    // 全六段 sources: 最低点 −6.76 m（2005 年校准值）、1840 年完成排干；正文写的是「荷兰全境最低点」，**未误用为「欧盟最低点」**（那是与丹麦 Lammefjord 并列的另一层级表述，正文未提）。核实 2026-09-11，未改动
     seeing:
       "The Zuidplaspolder is a former lake basin drained in 1840, its lowest point about −6.76 m — the lowest point in the entire Netherlands. From the air the area shows almost no visible height difference from its surroundings; only precise survey data confirms it as the country's low point.",
     formation:
@@ -9384,13 +9601,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Loonse en Drunense Duinen by its large stretches of continuous bare sand and rolling dune relief — such desert-like ground is very rare in the temperate, humid Netherlands, and the sharp contrast with the dense forest around it is the easiest way to spot it.",
     distinguish:
       "Both the Loonse en Drunense Duinen and the Holland Dunes are dune landscapes, but the Loonse en Drunense Duinen is a deep-inland exposure of an old wind-blown sand layer uncovered by human overuse, while the Holland Dunes are young, active coastal dunes continuously replenished by waves and wind.",
+    // concept sources: 国家公园 2002 年设立（2024 年并入梵高国家公园），非 1971（nationaleparken.nl，2 级）；面积约 35 km²、中世纪过度放牧暴露冰期风成沙层的成因叙述核实无误。核实 2026-09-11
     concept:
-      "The national park established here in 1971 protects the dunes rather than fully greening and fixing them, because the drifting dunes are themselves a distinctive semi-natural landscape with real geological-education and ecological-research value; management aims to control excessive spread while preserving the dunes' natural mobility.",
+      "The national park established here in 2002 protects the dunes rather than fully greening and fixing them, because the drifting dunes are themselves a distinctive semi-natural landscape with real geological-education and ecological-research value; management aims to control excessive spread while preserving the dunes' natural mobility.",
     history:
       "From a product of medieval overuse, to an area once treated as 'wasteland' and afforested to fix the sand in the early 20th century, to being recognised today as a distinctive natural heritage worth protecting, the site reflects a changing understanding of the value of such human-caused landscapes.",
   },
 
   "wadden-sea-nl": {
+    // 全六段 sources: 与本库已核的德国侧 wadden-sea **并排读一致** —— 2009 年荷德段列入、2014 年丹麦段并入（whc.unesco.org/en/list/1314，1 级）；本条只陈述 2009 年荷德段列入，不涉后续扩边，属实。正文用「全球最大潮间带生态系统之一」，比 UNESCO 官方的 the largest 更保守。核实 2026-09-11，未改动
     seeing:
       "The Wadden Sea is the world's largest continuous system of intertidal mudflats, running along the south-eastern North Sea coast; the Dutch stretch lies inside the West Frisian Islands. From the air, broad brown mud and sand flats are exposed at low tide and submerged again at high tide, with tidal channels branching like tree limbs across the flats.",
     formation:
@@ -9406,6 +9625,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "zeeland-delta": {
+    // 全六段 sources: 1953 年北海风暴潮荷兰官方死亡数 1836 人，正文「约1800人」为合理近似；东斯海尔德风暴潮屏障长约 9 km、65 座墩柱，「平时开放、风暴时关闭」与 Rijkswaterstaat 官方描述一致（1 级）。核实 2026-09-11，未改动
     seeing:
       "The Zeeland Delta is the complex delta where the Rhine, Meuse and Scheldt rivers together reach the sea, and the Eastern Scheldt storm surge barrier is the largest of its flood defences. From the air, a chain of enormous concrete gates spans the bay, dividing what was once open water into a series of controllable channels.",
     formation:
@@ -9421,6 +9641,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   westerschelde: {
+    // 全六段 sources: ⚠️ 「安特卫普港」这处**不需要**改成 2022 年合并后的「安特卫普—布鲁日港」—— 判据与同批 scheldt-river-be 一致：这句描述的是「通往这座港口城市的唯一航道」这一地理/功能事实，是**地理指代**而非港口正式机构名。漏斗状河口未被闸坝封闭、荷比疏浚费用分摊协议均核实无误。核实 2026-09-11，未改动
     seeing:
       "The Westerschelde is the broad tidal estuary the Scheldt forms in Zeeland province before reaching the North Sea. From the air the water is wide and the tide range clearly visible, with extensive salt marsh and mudflat on both banks, and large cargo ships passing near Vlissingen.",
     formation:
@@ -9436,6 +9657,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "holland-dunes": {
+    // 全六段 sources: 「沙引擎」（Zandmotor）2011 年建成于代尔夫兰海岸，为全球首例此类沙滩补给工程；正文写「近几十年发展出」未给死年份，不触发缺年份判据。核实 2026-09-11，未改动
     seeing:
       "The Holland Dunes are a continuous dune belt along the North Sea coast running from Zeeland to the Wadden Islands — the Netherlands' natural coastal defence line. From the air, an undulating yellow-green dune band runs along the coastline, with the densely populated Randstad conurbation just inland.",
     formation:
@@ -9453,8 +9675,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   biesbosch: {
     seeing:
       "The Biesbosch is a freshwater tidal wetland where the Meuse meets a branch of the Rhine, formed after a 1421 dike breach flooded the original land. From the air, crisscrossing channels cut the area into countless small islands and reed beds — a rare, densely water-networked stretch of the Netherlands.",
+    // formation sources: 公园官方历史页专门辟谣「一夜之间由风暴潮造出比斯博斯」的说法 —— 堤坝溃决前已因泥炭开采削弱，此后数十年逐步演变；「以淡水为主」是 1970 年前后三角洲工程封闭哈灵水道之后才稳定下来的（此前潮差可达 2 m、咸淡水混合）。国家公园 1994 年设立、二战期间约 300 名潜伏者在此活动均核实无误。核实 2026-09-11
     formation:
-      "The 1421 St Elizabeth's Flood broke through the dikes and permanently submerged the original land; over the following centuries river sediment kept accumulating, gradually forming this tide-dominated freshwater wetland of interlocking land and water.",
+      "The 1421 St Elizabeth's Flood broke through dikes already hollowed out and weakened by peat digging, and the land behind them went under; over the following decades river sediment kept accumulating and the basin turned into a tide-dominated wetland of interlocking land and water. Only when the Delta Works closed off the Haringvliet around 1970 was its tidal link to the open sea largely severed, settling it into the predominantly freshwater tidal wetland it is today.",
     observation:
       "From the air, identify the Biesbosch by its dense, web-like network of channels and the extensive reed beds and willow stands between them — a sharp contrast to the neat, planned reclaimed farmland around it, and the most direct sign of its unplanned, naturally evolved water network.",
     distinguish:
@@ -9466,6 +9689,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   maasvlakte: {
+    // 全六段 sources: Maasvlakte 2 于 2013-05-22 启用（鹿特丹港务局，1 级）；「欧洲最大港口」按货物总吨位口径仍成立（2025 Q3 鹿特丹 99.0 Mt vs 安特卫普—布鲁日 56.5 Mt，Eurostat 1 级；后者仅在 2025 Q1 集装箱 TEU 单项上短暂反超）。填海面积是会变的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "The Maasvlakte is artificial land the Port of Rotterdam has been building since the 1970s in the North Sea west of the Meuse estuary, with the second phase, completed in 2013, extending it about 2 km further out to sea. From the air, a perfectly straight man-made coastline, dense container terminals and rows of wind turbines form a highly industrialised landscape.",
     formation:
@@ -9481,6 +9705,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   afsluitdijk: {
+    // 全六段 sources: 长约 32 km、1927 动工 1932 完工、方案由 Cornelis Lely 提出（Rijkswaterstaat 官方，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Afsluitdijk is a roughly 32 km barrier dam completed in 1932, enclosing the once-open Zuiderzee to form today's freshwater IJsselmeer. From the air, a dead-straight grey dike spans the open water, separating two bodies of water with slightly different colours.",
     formation:
@@ -9496,6 +9721,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   ijsselmeer: {
+    // 全六段 sources: 面积约 1100 km²、荷兰最大湖泊；与 markermeer（约 700 km²）、afsluitdijk（1932）、flevoland-polder（1950–1968）四条工程链上的面积与年份**并排核对彼此一致**，未打架。核实 2026-09-11，未改动
     seeing:
       "The IJsselmeer is the largest lake in the Netherlands, about 1,100 sq km, gradually freshened from the former saline Zuiderzee bay after the Afsluitdijk was completed in 1932. From the air, an open, pale freshwater lake sits near the centre of the north-central Netherlands, its shoreline irregular with several stretches now reclaimed as land.",
     formation:
@@ -9511,6 +9737,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   markermeer: {
+    // 全六段 sources: 面积约 700 km²；1976 年 Houtribdijk 建成使其与艾瑟尔湖分离；原围垦计划 Markerwaard 因环保意识增强而搁置；Marker Wadden 生态修复工程真实存在（Natuurmonumenten 官方项目页，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Markermeer is a separate freshwater lake, about 700 sq km, cut off from the southern IJsselmeer by a barrier dam built in 1976. From the air its water looks noticeably murkier and greener than the IJsselmeer, and the dead-straight dam separating the two lakes is clearly visible.",
     formation:
@@ -9526,6 +9753,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   grevelingen: {
+    // 全六段 sources: 1971 年布劳沃斯坝完工封闭成咸水湖；官方/媒体称其为西欧最大咸水湖（约 11,000 ha），正文用「之一」更保守；近年经 Getij Grevelingen 项目开凿限流通道恢复潮汐交换以解决湖底缺氧（Zuidwestelijke Delta，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Grevelingen is a saltwater lake formed when a former river-mouth bay was sealed during the Delta Works — one of the largest saltwater lakes in Western Europe. From the air the water is clear and blue, a sharp contrast to the mostly murky freshwater lakes elsewhere in the Netherlands, with several small islands scattered across it.",
     formation:
@@ -9549,13 +9777,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, identify the Lauwersmeer by the interlocking pattern of open water and extensive reed beds and shallows — this half-lake, half-marsh transitional landscape, together with its position on the edge of the Wadden Sea, is the main way to recognise this area.",
     distinguish:
       "Both the Lauwersmeer and the IJsselmeer are water bodies freshened after a bay was sealed by a barrier dam, but the Lauwersmeer is much smaller and dominated by wetland and marsh ecology, while the IJsselmeer is the Netherlands' largest open freshwater lake, used mainly for shipping and reclamation.",
+    // concept sources: 国家公园 2003-11-12 设立（此前为自然保护区、2000 年列为拉姆萨尔湿地，都不是国家公园）；1969-05-25 拦海坝封闭 Lauwerszee 核实无误。核实 2026-09-11
     concept:
-      "Since Lauwersmeer National Park was established in 1990, managers have experimented with restoring some areas to saline ecology (reintroducing seawater), contrasting with the other fully freshened former Zuiderzee waters — an example of the Netherlands' diversified approach to wetland ecological restoration.",
+      "Since Lauwersmeer National Park was established in 2003, managers have experimented with restoring some areas to saline ecology (reintroducing seawater), contrasting with the other fully freshened former Zuiderzee waters — an example of the Netherlands' diversified approach to wetland ecological restoration.",
     history:
       "Before the barrier dam was built, residents here long depended on the Wadden Sea's fisheries and farming; after enclosure, land and water use gradually shifted toward nature conservation, and the area is now a popular spot for observing migratory birds.",
   },
 
   "weerribben-wieden": {
+    // 全六段 sources: 国家公园 1992-06-24 设立；泥炭开采实际自 16 世纪中叶起延续至二战前后，正文笼统写「18-19世纪」属范围收窄、仍在开采活跃期内，且未作排他性时间断言，不改。核实 2026-09-11，未改动
     seeing:
       "Weerribben-Wieden is a lake-and-marsh wetland in the north-western Netherlands formed by historic large-scale peat digging — one of the largest surviving lowland peat bogs in Western Europe. From the air, criss-crossing narrow channels and reed beds divide the area into neat strips, a regular geometric pattern that betrays its history of manual excavation.",
     formation:
@@ -9571,6 +9801,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhine-delta-nl": {
+    // 全六段 sources: 实际分流是两级 —— 莱茵河先在 Pannerdensche Kop 分出瓦尔河（约 2/3 水量）与潘纳尔登运河，运河再在阿纳姆一带的 IJsselkop 分出艾瑟尔河，余下才是下莱茵河/莱克河。正文把二级分流略去，属面向空中概览的合理简化；艾瑟尔河在本库另有独立条目（ijssel-river，其「阿纳姆附近分出」方向未错），并排读不冲突。核实 2026-09-11，未改动
     seeing:
       "The Rhine Delta in the Netherlands is the stretch where the Rhine splits into the Nederrijn/Lek and the Waal near the Pannerden Canal after entering the country — one of Europe's most important inland shipping corridors. From the air, broad channels carry a constant stream of barges and cargo ships, with the Netherlands' densely populated cities and port facilities lining the banks.",
     formation:
@@ -9586,6 +9817,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meuse-river-nl": {
+    // 全六段 sources: 1993、1995 年莱茵/马斯河严重洪灾（疏散约 25 万人）→ 2006 年批准「还地于河」计划、2007–2018 实施 34 个项目。正文写的是因果（洪灾促成计划），未断言计划在 1990 年代即启动，与时间线不矛盾。核实 2026-09-11，未改动
     seeing:
       "The Meuse in the Netherlands rises in France and flows through Belgium into the southern Dutch province of Limburg, where around Maastricht the valley narrows with low hills on either side. From the air, the river shows a stretch of valley relief rare elsewhere in the Netherlands as it crosses Limburg, then widens and slows as it enters North Brabant province further north.",
     formation:
@@ -9601,6 +9833,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ijssel-river": {
+    // 全六段 sources: 长度各来源 116–125 km，正文「约120公里」落在区间内；代芬特尔、坎彭、聚特芬历史上均为汉萨同盟城市。核实 2026-09-11，未改动
     seeing:
       "The IJssel is a branch the Rhine (Nederrijn) splits off near Arnhem, flowing north about 120 km to the IJsselmeer. From the air a relatively narrow channel winds northward, past the historic towns of Deventer and Kampen, with open pasture lining most of its banks.",
     formation:
@@ -9616,6 +9849,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vecht-river": {
+    // 全六段 sources: 17–18 世纪阿姆斯特丹商人沿河修建避暑庄园属荷兰黄金时代广泛记载的史实，无可核数字/年代类断言。核实 2026-09-11，未改动
     seeing:
       "The Vecht is a slow-flowing small river in the central Netherlands, along which 17th–18th-century Amsterdam merchants built numerous country estates. From the air, the winding river is lined on both banks with historic manor houses and gardens, giving a village landscape of pleasant density amid the open pasture around it.",
     formation:
@@ -9631,6 +9865,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "wadden-islands": {
+    // 全六段 sources: 特塞尔岛为西弗里西亚群岛中面积最大、人口最多者（约 1.36 万人；弗利兰 1194 / 特斯海灵 4870 / 阿默兰 3746 / 斯希蒙尼克 931）。核实 2026-09-11，未改动
     seeing:
       "The West Frisian Islands are a chain of dune-built barrier islands outside the Wadden Sea in the northern Netherlands, running west to east through Texel, Vlieland, Terschelling, Ameland, Schiermonnikoog and others. From the air, a string of narrow sandy islands lies roughly parallel to the mainland coast, with broad beaches on the outer (North Sea) side and mudflats on the inner (Wadden Sea) side.",
     formation:
@@ -9650,12 +9885,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Austria ============
   "hohe-tauern": {
+    // concept sources: 国家公园面积 1856 km²（萨尔茨堡 805 + 克恩顿 440 + 蒂罗尔 611，官网 1 级），阿尔卑斯山区最大保护区。
+    //   📌 正文**没有**提三州分三阶段（1981／1983—84／1991—92）设立的过程，因此不存在「把三步压成一步」的问题。2026-09-10 核。
     seeing:
       "The Hohe Tauern range crosses south-central Austria, a high-mountain belt of gneiss and schist at the heart of the Alps; its highest peak, Grossglockner, reaches 3,798 m — the highest point in all of Austria. Glaciers and lakes are densely packed across the range, which holds the largest protected area in the Alps.",
+    // formation sources: ⚠️ 帕斯特泽冰川：长约 8.3—8.4 km（非 9 km）；**「奥地利最大冰川」这个排名本身正在过期** —— GeoSphere Austria（1 级）2025-03 指出它自 2022 年起年减薄超 2 米、冰舌年减薄 5—10 米，可能不久被加珀奇冰川取代。属 C8 里「过期的是排名、不是数字」的一种。2026-09-10 核。
     formation:
-      "The Hohe Tauern was raised by Alpine orogeny and is built mainly of Paleozoic gneiss and schist; sustained uplift combined with glacial erosion carved sharp horn peaks and U-shaped valleys — the Pasterze Glacier on the eastern slope, about 9 km long, is Austria's largest glacier.",
+      "The Hohe Tauern was raised by Alpine orogeny and is built mainly of Paleozoic gneiss and schist; sustained uplift combined with glacial erosion carved sharp horn peaks and U-shaped valleys — the Pasterze Glacier on the eastern slope, about 8.4 km long, is for now Austria's largest — though GeoSphere Austria's 2025 monitoring shows it retreating fast enough that it may soon cede that place to the Gepatschferner in Tyrol.",
+    // observation sources: 冰川数：国家公园官网 **332 条**（总面积 126 km²，1 级）。同句的 300 余座 3000 m 峰、551 个高山湖泊经同源核实无误。国家公园面积 1856 km²（萨尔茨堡 805 + 克恩顿 440 + 蒂罗尔 611）亦无误。2026-09-10 核。
     observation:
-      "From the air, identify the Hohe Tauern by its rolling, snow-crowned skyline — over 300 peaks above 3,000 m and 342 glaciers scattered through the range, with Grossglockner's sharp conical summit especially prominent, and 551 alpine lakes catching the light in varying shades of blue.",
+      "From the air, identify the Hohe Tauern by its rolling, snow-crowned skyline — over 300 peaks above 3,000 m and 332 glaciers scattered through the range, with Grossglockner's sharp conical summit especially prominent, and 551 alpine lakes catching the light in varying shades of blue.",
     distinguish:
       "Both the Hohe Tauern and the Ötztal Alps are crystalline-rock high-mountain belts, but the Hohe Tauern has more and larger glaciers and holds Austria's highest peak, while the Ötztal Alps are Austria's second-highest range.",
     concept:
@@ -9687,6 +9926,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "zillertal-alps": {
+    // 全六段 sources: 霍赫法伊勒峰 3509—3510 m，位于奥意交界。与 `hohe-tauern`（大格洛克纳 3798 m）、
+    //   厄茨塔尔（魏斯峰 3768 m）并排读自洽——正文「最高峰略低于厄茨塔尔阿尔卑斯山」方向正确。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Zillertal Alps straddle the border between Tyrol and South Tyrol (Italy); the highest peak, Hochfeiler, reaches 3,510 m, and the range is one of Austria's important glacier ski areas.",
     formation:
@@ -9702,6 +9943,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   karwendel: {
+    // 全六段 sources: 比尔克峰 2749 m 为卡尔文德尔最高峰；卡尔文德尔为北石灰岩阿尔卑斯山中面积最大的单一山系
+    //   （长逾 45 km、宽约 30 km），南麓紧邻因斯布鲁克。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Karwendel is the largest single range of the Northern Limestone Alps, lying between the Inn Valley and the Isar Valley; its highest peak, Birkkarspitze, reaches 2,749 m, and its southern flank rises directly above the city of Innsbruck.",
     formation:
@@ -9717,10 +9960,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dachstein: {
+    // seeing / observation / history sources: 上达赫斯坦峰 2995 m，地跨上奥地利、施泰尔马克、萨尔茨堡三州（「三州山」）；
+    //   达赫斯坦石灰岩为上三叠统（约 2.35—2.01 亿年前），正文「约 2 亿年前」落在区间内；
+    //   哈尔施塔特—达赫斯坦／萨尔茨卡默古特文化景观 1997 年列入 UNESCO。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Dachstein straddles the border between Upper Austria and Styria; its highest peak, Hoher Dachstein, reaches 2,995 m, and because the massif also touches Salzburg it is sometimes called the \"three-state mountain.\"",
+    // formation sources: 洞穴数：**这是随勘探不断刷新的累计计数**。2023 年 Austrian Journal of Earth Sciences 的系统调查记录 789 个、总长约 290 km（2 级）；另有「约 320」「逾 1000」等不同界定。正文写「近 800 个 + 哪一次调查」，不锁死单值。原文的 240 已严重滞后。
+    //   ⚠️ 同段「哈尔施塔特冰川是阿尔卑斯最东、最北端的冰川**之一**」**记 unknown**：核实方多次检索报错，未能证实也未能证伪；正文已带「之一」、不是裸断言，本轮不动。2026-09-10 核。
     formation:
-      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with over 240 caves identified — the Hallstatt Glacier is among the easternmost and northernmost glaciers in the Alps.",
+      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with nearly 800 caves recorded in a 2023 survey — the Hallstatt Glacier is among the easternmost and northernmost glaciers in the Alps.",
     observation:
       "From the air, the Dachstein shows classic karst high-mountain form — grey-white limestone dotted with dissolution hollows and cave entrances, the white ice of the summit's Hallstatt Glacier standing out sharply against the grey rock around it.",
     distinguish:
@@ -9732,6 +9980,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rax-schneeberg": {
+    // 全六段 sources: 施内山 2076 m，是阿尔卑斯向东延伸中最后一座超过 2000 米的山峰。
+    //   第一维也纳高山泉水管道由 Eduard Suess 规划、**1873-10-24 由弗朗茨·约瑟夫一世启用、全长 120 公里**，
+    //   水源即取自施内山一带（Kaiserbrunn 等泉眼）——维也纳市政府官网（1 级）逐项确认。2026-09-10 核，verdict: ok。
     seeing:
       "The Rax-Schneeberg Group is Lower Austria's highest mountain area; the Schneeberg reaches 2,076 m and is the easternmost peak in the Alps to exceed 2,000 m, only about an hour's drive from Vienna.",
     formation:
@@ -9747,6 +9998,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "carnic-alps": {
+    // 全六段 sources: 霍厄瓦特峰（Monte Coglians）2780 m，位于奥意交界。
+    //   ✅ **零争议红线复核**：普勒肯山口与一战前线只作简短事实陈述、无评价、不描述边界线与主权 ——
+    //   与 CLAUDE.md 对意大利「一战山地战（简短事实）」的处理一致，通过。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Carnic Alps are part of the Southern Limestone Alps, their main ridge running roughly 100 km along the Austria-Italy border; the highest point, Hohe Warte, reaches 2,780 m.",
     formation:
@@ -9762,6 +10016,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "kitzbuhel-alps": {
+    // seeing sources: 基茨比厄尔霍恩峰 1996 m 为该山系最高峰。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Kitzbühel Alps are a stretch of slate-and-phyllite terrain in the Eastern Alps, lying between the Ziller and Saalach rivers; the highest peak, Kitzbüheler Horn, reaches 1,996 m.",
     formation:
@@ -9777,6 +10032,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "silvretta-alps-at": {
+    // formation sources: 皮兹利纳德峰 3410—3411 m（不同测绘口径略有差异），在瑞士格劳宾登州境内，为希尔弗雷塔山最高峰。
+    //   跨境表述保持中性、不描述边界线、不表述主权。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Silvretta Alps are a stretch of the Central Eastern Alps spanning Tyrol and Vorarlberg in Austria and Graubünden in Switzerland; the terrain on the Austrian side is comparatively gentle.",
     formation:
@@ -9787,11 +10044,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Silvretta Alps and the Carnic Alps are cross-border ranges for Austria, but the Silvretta Alps border Switzerland and are known for high-mountain hydropower development and glacier monitoring, while the Carnic Alps border Italy and are known for Paleozoic strata.",
     concept:
       "The Bielerhöhe pass area of the Silvretta Alps is a representative site for high-mountain hydropower development and long-term glacier monitoring in the Alps.",
+    // history sources: 水库年代：1938 年动工、1943 年首次部分蓄水、1951 年首次完全蓄水。原文「20 世纪初」前移了三四十年。3 级。2026-09-10 核。
     history:
-      "The Silvretta reservoir has been used for hydroelectric power generation since the early 20th century, a representative case in the history of high-mountain hydropower development in the Austrian Alps.",
+      "The Silvretta reservoir, begun in 1938 and first filled completely in 1951, has been generating hydroelectric power ever since, a representative case in the history of high-mountain hydropower development in the Austrian Alps.",
   },
 
   "totes-gebirge": {
+    // 全六段 sources: 大普里尔峰 2515 m；「中欧面积最大的喀斯特高原」与德语维基口径一致。
+    //   ✅ 与 `steinernes-meer`、`tennengebirge` 并排读：三条都是北部石灰岩阿尔卑斯的喀斯特高原、**写的是同一套成因**（三叠纪石灰岩 + 抬升 + 冰蚀 + 溶蚀），没有被写成三套。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Totes Gebirge, part of the Northern Limestone Alps, is Central Europe's largest karst plateau; its highest point, Großer Priel, reaches 2,515 m.",
     formation:
@@ -9807,6 +10067,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "steinernes-meer": {
+    // 全六段 sources: 泽尔布峰 2655 m；地跨萨尔茨堡州与巴伐利亚；主体为约 2.3 亿年前的达赫斯坦石灰岩叠于拉姆绍白云岩之上。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Steinernes Meer, part of the Berchtesgaden Alps, straddles Austria's Salzburg state and Germany's Bavaria; its highest point, Selbhorn, reaches 2,655 m.",
     formation:
@@ -9822,6 +10083,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   tennengebirge: {
+    // seeing / formation / history sources: 冰巨人世界洞穴系统总长逾 42 km、世界最大冰洞；
+    //   1879 年 Anton Posselt 首次系统考察、当时只探到最初约 200 米（Posselt-Kreuz）；洞口在霍赫科格尔峰下。3 级中英互证。
+    //   ⚠️ 「洞口宽约 20 米、高约 18 米」**记 unknown**：德英维基与洞穴官网都只给入口海拔 1640 m，未给宽高，查不到支持或反驳。2026-09-10 核。
     seeing:
       "The Tennengebirge is a karst plateau of the Northern Limestone Alps near Werfen, about 40 km south of Salzburg; inside the massif, Eisriesenwelt is the largest known ice cave in the world.",
     formation:
@@ -9837,6 +10101,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   wienerwald: {
+    // 全六段 sources: 舍普尔峰 893 m；2005 年列为 UNESCO 生物圈保护区。官方常引面积 1056.45 km²，正文「约 1000 平方公里」已带「约」字、量级一致，不改。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Wienerwald (Vienna Woods) is the final stretch of hills where the Alps taper off toward Vienna's outskirts, covering about 1,000 km²; its highest point, Schöpfl, reaches 893 m.",
     formation:
@@ -9852,8 +10117,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   waldviertel: {
+    // seeing sources: 最高峰：**蒂施贝格峰 1063 m**（下奥地利／上奥地利／波希米亚三邦交界的 Freiwald 一带）；内贝尔峰 1017 m 是第二高、只是更有名。3 级多方一致。2026-09-10 核。
     seeing:
-      "The Waldviertel is a low, gently rolling plateau in north-western Lower Austria, an extension of the Bohemian Massif within Austria; its highest point, Nebelstein, reaches 1,017 m.",
+      "The Waldviertel is a low, gently rolling plateau in north-western Lower Austria, an extension of the Bohemian Massif within Austria; its highest point is the Tischberg at 1,063 m, while the better-known Nebelstein, 1,017 m, is only the second-highest.",
     formation:
       "The plateau's bedrock is mainly ancient granite and gneiss, part of the Bohemian Massif formed in Precambrian to Paleozoic times on the European continent; long-term weathering and erosion have shaped today's low, gently rolling surface.",
     observation:
@@ -9867,6 +10133,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vienna-basin": {
+    // 全六段 sources: ✅ **构造类型专项复核**：正文写的正是**走滑拉分盆地（Pull-Apart-Becken）**，没有写成普通断陷或冲积盆地。
+    //   沉降自约 1700 万年前（中新世 Karpatium 末）开始，构造活动延续至今，每年约 3—4 次有感地震，集中在维也纳新城与温泉线断裂带。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Vienna Basin sits at the junction of the Alps, the Carpathians and the Pannonian Plain — a geologically young tectonic subsidence basin that topographically separates the Alps from the Western Carpathians.",
     formation:
@@ -9882,6 +10150,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   wachau: {
+    // 全六段 sources: 梅尔克—克雷姆斯之间约 35—36 km 的多瑙河谷；2000 年作为文化景观列入 UNESCO
+    //   （连同梅尔克／格特魏格修道院与克雷姆斯古城）。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Wachau is a roughly 36 km stretch of valley cut by the Danube between Melk and Krems, its banks lined with terraced vineyards, medieval monasteries and castles.",
     formation:
@@ -9897,8 +10167,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   inntal: {
+    // seeing sources: 山系归属：因斯布鲁克北侧卡尔文德尔北链、**南侧为施图拜／图克斯阿尔卑斯山（帕彻科费尔）**；基茨比厄尔阿尔卑斯山在更东段（沃格尔—基茨比厄尔—库夫施泰因）。原文把它挂错了河段。3 级。2026-09-10 核。
     seeing:
-      "The Inn Valley (Inntal) is a broad, west-to-east glacial valley cut through the Eastern Alps by the Inn River, flanked by the Karwendel to the north and the Kitzbühel Alps to the south; Innsbruck sits in the valley's middle stretch.",
+      "The Inn Valley (Inntal) is a broad, west-to-east glacial valley cut through the Eastern Alps by the Inn River, flanked by the Karwendel to the north; around Innsbruck the southern wall is the Stubai and Tuxer Alps (the Patscherkofel side), while the Kitzbühel Alps line a stretch of the valley farther east. Innsbruck sits in the valley's middle stretch.",
     formation:
       "The valley was carved by repeated glaciation during the ice ages; its slopes preserve moraine terraces from the Würm glaciation, while the lower plain was built up by long-term alluvial deposition from the Inn River, with the valley floor generally between 500 and 1,000 m elevation.",
     observation:
@@ -9912,6 +10183,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   liechtensteinklamm: {
+    // seeing / formation / history sources: 圣约翰-蓬高附近；全长约 4 km（游览段约 1 km）、崖壁最高处约 300 m；
+    //   1875 年动工（本地蓬高登山会先启动、经费不足后由列支敦士登亲王约翰二世捐 600 古尔登续建）、1876 年完工。3 级中英互证。
+    //   ⚠️ 「每年约 10 万游客」**记 unknown**：英文维基与正文一致给约 10 万，**德语维基给 2025 年约 22.7 万人次**，两个 3 级来源互相矛盾，
+    //   且正文没写年份。下一轮向运营方 liechtensteinklamm.at 要逐年统计，按 C8 加时点后再定。2026-09-10 核。
     seeing:
       "Liechtensteinklamm is a limestone gorge near St. Johann im Pongau, about 50 km south of Salzburg, roughly 4 km long with cliff walls up to about 300 m high.",
     formation:
@@ -9927,10 +10202,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "krimml-waterfalls": {
+    // seeing sources: 总落差 380 m，奥地利与欧洲最高、世界第五（官方运营方 wasserfaelle-krimml.at，2 级）。
+    //   三级落差约 145/100/140 m，与正文的 140/100/140 基本一致，不动。2026-09-10 核。
     seeing:
       "The Krimml Waterfalls are a three-tiered cascade on the Krimmler Ache with a total drop of about 380 m — Austria's highest waterfall, the highest in Europe and the fifth-highest in the world.",
+    // formation sources: 下泄河谷：**萨尔察赫河谷（平茨高）**，不是因河谷——萨尔察赫要到远下游才汇入因河。总落差 380 m、奥地利与欧洲最高、世界第五（官方运营方 wasserfaelle-krimml.at，2 级）核实无误。2026-09-10 核。
     formation:
-      "The falls are fed by glacial meltwater from the Hohe Tauern; before reaching the floor of the Inn Valley system, the Krimmler Ache drops over three tiers of roughly 140 m, 100 m and 140 m, with flow varying enormously with the season's snow and ice melt.",
+      "The falls are fed by glacial meltwater from the Hohe Tauern; before reaching the floor of the Salzach valley in the Pinzgau of Salzburg, the Krimmler Ache drops over three tiers of roughly 140 m, 100 m and 140 m, with flow varying enormously with the season's snow and ice melt.",
     observation:
       "From the air, the Krimml Waterfalls appear as a vertical white curtain of water set in green mountain forest, its three-tiered, stepped form clearly visible, with the surrounding spray creating a permanently humid microclimate.",
     distinguish:
@@ -9964,8 +10242,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mur-river": {
+    // concept sources: 上游河段的河漫滩森林为奥地利面积第二大（施泰尔马克 Murauen UNESCO 生物圈公园）；
+    //   多瑙鲑（Huchen）作为受威胁物种在该河记录在案。3 级。2026-09-10 核，verdict: ok。
+    // seeing sources: 源头：**高陶恩山系安科格尔山群**（萨尔茨堡州伦告，近穆尔特尔隘口），不是拉德施塔特陶恩山。全长 453 km（德语维基）/ 464 km（英文维基）两说，正文取 453、冲突记此。
+    //   ⚠️ 「约 298 公里流经施泰尔马克州」**记 unknown**：查不到单独核实该分段的权威来源（英文维基只给奥地利境内合计约 326 km）。2026-09-10 核。
     seeing:
-      "The Mur rises in the Radstädter Tauern and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
+      "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
     formation:
       "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest.",
     observation:
@@ -9987,13 +10269,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Wörthersee forms a long, narrow oval, its shoreline lined with resorts and marinas, the water taking on a warm, light-blue tone in the sun.",
     distinguish:
       "Both Wörthersee and the Attersee are well-known glacially carved lakes in Austria, but Wörthersee lies in Carinthia with comparatively warm summer water well-suited to swimming, while the Attersee lies in the Salzkammergut and is considerably deeper.",
+    // concept sources: ⚠️ 夏季水温高的机制是**湖盆背风 + 水体交换缓慢 + 部分混合型（meromiktisch，仅上层 50—60 m 季节性混合）**，不是「地中海式微气候」。原文把湖泊物理换成了区域气候。面积 19.39 km²、最大水深 85.2 m、克恩顿州最大湖，均核实无误。3 级。2026-09-10 核。
     concept:
-      "Wörthersee's comparatively warm summer water reflects Carinthia's relatively mild, Mediterranean-influenced microclimate — a useful case study in climatic variation among lakes on the southern flank of the Alps.",
+      "Wörthersee's warm summer water comes mostly from the basin itself: sheltered from wind and slow to exchange water, it is meromictic — only the top 50 to 60 m turn over seasonally, so heat piles up in the surface layer. It is not that the regional climate is milder.",
     history:
       "Wörthersee has been a favoured summer resort for Austria's upper class since the late 19th century, and its shores still preserve numerous Victorian-era villas.",
   },
 
   attersee: {
+    // 全六段 sources: 面积 46.2 km²、平均水深 85 m、最大 169 m，**是完全位于奥地利境内面积最大的湖泊**。
+    //   ✅ **排名口径专项复核**：这个「完全境内」的限定是必要的——新锡德尔湖跨奥匈两国，不计入这一档；
+    //   与本库 `worthersee`（19.4 km²，克恩顿州最大）、`neusiedler-see` 三条并排读，三个排名同时成立。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Attersee is a glacially carved lake in the Salzkammergut region, about 46.2 km² in area — the largest lake lying entirely within Austrian territory.",
     formation:
@@ -10009,10 +10295,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "neusiedler-see": {
+    // history sources: 2001 年作为奥匈共同申报的「费尔特／新锡德尔湖文化景观」列入 UNESCO。
+    //   ✅ 零争议红线：跨境只作事实陈述、不描述边界线与主权；**未涉 1989 年泛欧野餐及相关冷战／边境议题**。2026-09-10 核。
+    // seeing sources: 水深：**平均约 1 m、最大约 1.8 m**（两个独立来源一致），原文 50—60 cm 低估约一半。⚠️ C8：这是草原型内流浅湖，**面积与水深随年份大幅波动**、历史上多次近乎完全干涸，近年干旱屡创新低（布尔根兰州水文部门，1 级）——所以正文写波动而不是写死一个数。2026-09-10 核。
     seeing:
-      "The Neusiedler See is the westernmost steppe lake in Europe, straddling Austria's Burgenland and Hungary — the largest endorheic lake in Central Europe, about 309 km² in area with an average depth of only around 50–60 cm.",
+      "The Neusiedler See is the westernmost steppe lake in Europe, straddling Austria's Burgenland and Hungary — the largest endorheic lake in Central Europe, about 309 km² in area averaging about 1 m deep and reaching some 1.8 m — figures that swing widely, since the lake has repeatedly come close to drying out entirely and recent prolonged drought has driven it to record lows.",
+    // formation sources: ⚠️ **区域古海史 ≠ 湖的年龄**：1600 万年前的古海是潘诺尼亚／维也纳盆地的区域地质史，而湖盆是末次冰期后（约 1.2—1.8 万年前）构造沉降形成的。原文把两件差了三个数量级的事连成一条因果链。
+    //   ✅ 2001 年奥匈共同申报的「费尔特／新锡德尔湖文化景观」列入 UNESCO 属实；红线复核通过——未描述边界线、未涉 1989 年泛欧野餐。2026-09-10 核。
     formation:
-      "Around 16 million years ago the area now spanning the Vienna Basin and the Hungarian plain was covered by an ancient sea, and the Neusiedler See is a surviving remnant of that geological history; as a typical steppe lake, it undergoes cycles of filling and complete drying before refilling again.",
+      "Around 16 million years ago the area now spanning the Vienna Basin and the Hungarian plain was covered by an ancient sea, but the lake itself is far younger: its basin formed by tectonic subsidence after the last glaciation, roughly 12,000 to 18,000 years ago, rather than surviving from that ancient sea; as a typical steppe lake, it undergoes cycles of filling and complete drying before refilling again.",
     observation:
       "From the air, the Neusiedler See shows an open, flat, shallow water surface ringed by extensive reed beds, blending almost seamlessly with the flat Pannonian Plain around it — a highly distinctive steppe-lake landscape for Europe.",
     distinguish:
@@ -10024,6 +10315,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "millstatter-see": {
+    // 全六段 sources: 米尔施泰特湖水深/面积与湖畔修道院史实本轮逐段核对无出入（Land Kärnten 官方湖泊数据，1 级），未改动；核实 2026-09-10
     seeing:
       "The Millstätter See is Carinthia's second-largest lake, about 13.3 km² in area with an average depth of about 89 m and a maximum of 142 m — among the deepest lakes in Austria.",
     formation:
@@ -10039,6 +10331,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hallstattersee: {
+    // 全六段 sources: 哈尔施塔特湖冰蚀成因、盐矿开采史与 1997 年 UNESCO 文化景观列入本轮逐段核对无出入（whc.unesco.org/en/list/806，1 级），未改动；核实 2026-09-10
     seeing:
       "The Hallstättersee is a long, narrow glacially carved lake in the Salzkammergut, about 8.55 km² in area with a maximum depth of about 125 m; the village of Hallstatt sits on its eastern shore at the foot of the Dachstein.",
     formation:
@@ -10536,8 +10829,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Central Jutland Highlands are the area of most pronounced relief in mainland Denmark; Møllehøj, at 170.86 m, was confirmed by a new survey in 2005 as the highest point in mainland Denmark.",
     formation:
       "The highlands are built of terminal moraine ridges pushed up during last-glacial advances; repeated glacial advance and retreat left several parallel hill ridges here, a classic moraine landscape.",
+    // observation sources: 默勒霍伊 170.86 m 为 2005 年测量确认的本土最高点；观景塔（1924 年建、12.5 m、可望五湖）在 270 m 外的埃耶尔巴内霍伊上，**不在最高点**。三峰高差：默勒霍伊 170.86 / 伊丁森林高地去除人工墓丘后 170.77 / 埃耶尔巴内霍伊 170.35 —— 正文「相差数十厘米」成立。核实 2026-09-11
     observation:
-      "From the air, the hills show gentle undulation, with forest and pasture interspersed, standing out against the otherwise flat terrain typical of the rest of Denmark; an observation tower at the summit overlooks the surrounding lake district.",
+      "From the air, the hills show gentle undulation, with forest and pasture interspersed, standing out against the otherwise flat terrain typical of the rest of Denmark; an observation tower on the neighbouring hill of Ejer Bavnehøj, 270 m away, overlooks the surrounding lake district.",
     distinguish:
       "Both the Central Jutland Highlands and Mols Bjerge are Danish moraine hill country, but the Central Highlands are slightly higher and hold mainland Denmark's highest point, while Mols Bjerge lies on the eastern peninsula with more tightly clustered hills.",
     concept:
@@ -10546,6 +10840,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The summit of Møllehøj holds a millstone, a remnant of the Ejer windmill that stood from 1838 to 1917; the 2005 remeasurement formally established it as mainland Denmark's highest point.",
   },
   "mols-bjerge": {
+    // 全六段 sources: 阿格里巴内霍伊 137 m 为莫尔斯山地最高点（国家公园官网，2 级）；国家公园 2009-08-29 揭幕，是丹麦第二座（首座为提 Thy，2008-08；随后瓦登海 2010-10）—— 正文「首批之一」成立。核实 2026-09-11，未改动
     seeing:
       "Mols Bjerge lies on the Djursland peninsula in eastern Jutland and is one of Denmark's few areas of pronounced hill terrain; its highest point, Agri Bavnehøj, reaches 137 m.",
     formation:
@@ -10570,10 +10865,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Rebild Bakker and Jutland Heath preserve classic heather vegetation, but Rebild Bakker shows clear moraine-hill relief next to extensive forest, while Jutland Heath is flatter, a remnant of heath on an outwash plain.",
     concept:
       "The combination of heather moor and forest at Rebild Bakker is a classic case for studying how vegetation naturally succeeds on poor moraine soil alongside deliberate human conservation.",
+    // history sources: 1911 年集资购地、1912 年献地契给国王，两步两年（发起人 Max Henius）。核实 2026-09-11
     history:
-      "In 1912, Danish emigrants living in the United States raised funds to buy this land and donate it to the Danish state, creating Denmark's first large protected nature area; a US Independence Day commemoration has been held here annually ever since.",
+      "Danish emigrants living in the United States raised funds to buy this land in 1911 and formally donated it to the Danish state in 1912, creating Denmark's first large protected nature area; a US Independence Day commemoration has been held here annually ever since.",
   },
   "bornholm-almindingen": {
+    // 全六段 sources: 骑士峰 162 m 为全岛最高自然点（Trap Danmark / lex.dk，2 级）；Britannica 确认岛屿北部三分之二为花岗岩，属波罗的地盾南缘出露，与正文「约三分之二」一致；「丹麦境内波罗的地盾唯一出露区」未见反例。⚠️ 本库航线解说 cph-rnn 曾把「……的地区之一」写成「唯一」，已于 2026-09-11 同步补回限定。核实 2026-09-11，未改动
     seeing:
       "The Almindingen forest highland at the centre of Bornholm is the island's highest ground; its peak, Rytterknægten, reaches 162 m and the area is one of the only places in Denmark where granite bedrock is exposed over a wide area.",
     formation:
@@ -10588,6 +10885,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Almindingen forest was historically a royal hunting ground; it is now an important outdoor-recreation area for the island.",
   },
   "mons-klint": {
+    // 全六段 sources: 崖顶最高处约 128 m（Dronningestolen）是崖体本身的高度 —— **未与附近独立山丘 Aborrebjerg（142/143 m）混淆**；白垩为马斯特里赫特期约 70 Ma 颗石藻钙质残骸堆积，末次冰期冰川挤压致褶皱变形。核实 2026-09-11，未改动
     seeing:
       "Møns Klint is Denmark's tallest sea cliff, reaching about 128 m at its highest point, built of Late Cretaceous chalk.",
     formation:
@@ -10602,6 +10900,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The chalk cliffs have been an important natural tourist attraction in Denmark since the 19th century, and a geology centre at the clifftop explains the chalk's formation and its fossil discoveries.",
   },
   "stevns-klint": {
+    // 全六段 sources: 「鱼粘土」层记录 66 Ma 白垩纪—古近纪灭绝事件、富含铱；崖长按 UNESCO 官方口径 15 km（部分二手来源作 17 km，正文取官方口径）；2014-06-23 列入 UNESCO。赫耶鲁普老教堂约 1250 年建、1928-03-16 圣坛坍塌入海 —— 正文「13 世纪建、20 世纪坍塌」两个世纪都对。核实 2026-09-11，未改动
     seeing:
       "Stevns Klint is a chalk cliff on the south-eastern coast of Zealand; a dark clay layer within the cliff face records geological evidence of the Cretaceous-Paleogene extinction event 66 million years ago.",
     formation:
@@ -10616,6 +10915,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Højerup Old Church was built in the 13th century; as the cliff has continued to erode and retreat, part of the church collapsed into the sea in the 20th century, and it remains a well-known landmark of the cliff's ongoing geological change.",
   },
   "skagen-odde": {
+    // 全六段 sources: ⚠️ 正文「约一万年来持续延伸」用的是「末次冰期以来」这一**通俗口径**；较新研究认为沙嘴主体约 7150 年前才开始发育、5500 年内成今状。两种口径在二手资料中并存，正文非错但精度可再收紧，下轮若查到 GEUS 一手结论再改。19 世纪末斯卡恩画派属广泛记载的艺术史。核实 2026-09-11
     seeing:
       "Skagen Odde is a sand spit extending continuously into the sea from the northern tip of Jutland; its point, Grenen, is where the currents of the North Sea and the Kattegat meet.",
     formation:
@@ -10630,6 +10930,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The town of Skagen was historically an important Danish fishing port; in the late 19th century its distinctive Nordic light drew a group of painters who settled and worked there, forming the well-known \"Skagen Painters\" movement.",
   },
   "rubjerg-knude": {
+    // 全六段 sources: 灯塔 1900-12-27 首次点亮（1899 年动工）、1968-08-01 停用、2019-10 整体向内陆迁移 70 m —— 三个年份均核实无误。沙丘仍在移动，是会变的量。核实 2026-09-11，未改动
     seeing:
       "Rubjerg Knude is an active dune on Jutland's North Sea coast; its lighthouse, built in 1900, was relocated intact in 2019 after being progressively buried by the migrating dune.",
     formation:
@@ -10644,6 +10945,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lighthouse was built in 1900 and taken out of service in 1968 as the dune advanced; in 2019, as coastal erosion brought it dangerously close to the cliff edge, the whole structure was moved about 70 m inland to avoid falling into the sea.",
   },
   limfjord: {
+    // 全六段 sources: 1825 年 2 月风暴潮（「二月洪灾」）冲开阿格尔堤，形成利姆海峡西端与北海的永久通道。核实 2026-09-11，未改动
     seeing:
       "The Limfjord is a long, narrow waterway crossing northern Jutland, separating the Vendsyssel-Thy peninsula from the rest of the mainland; a storm surge in 1825 permanently opened its western connection to the North Sea.",
     formation:
@@ -10658,6 +10960,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A powerful storm surge in February 1825 permanently opened the western channel to the North Sea, reshaping the geography of northern Jutland; before that, the waterway had long been semi-enclosed.",
   },
   "isefjord-roskilde-fjord": {
+    // 全六段 sources: 罗斯基勒峡湾本身深入内陆约 40 km（伊瑟峡湾主体约 35 km），正文以「约40公里」笼统描述整个水系，在合理近似内；罗斯基勒大教堂 1995 年列入 UNESCO；哈拉尔蓝牙王（卒 986 年）葬于此，与「自10世纪起」一致。核实 2026-09-11，未改动
     seeing:
       "Isefjord and Roskilde Fjord form a fjord system reaching about 40 km inland into northern Zealand, with Roskilde Fjord as its eastern branch.",
     formation:
@@ -10672,6 +10975,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Roskilde was Denmark's religious and political centre for centuries starting in the 10th century; Roskilde Cathedral is the traditional burial site of Danish monarchs and was inscribed on the UNESCO World Heritage List in 1995.",
   },
   "wadden-sea-dk": {
+    // 全六段 sources: 与本库已核的德国侧 wadden-sea、荷兰侧 wadden-sea-nl **三方并排读一致** —— 2009 年德荷段列入、丹麦段因等待国家公园设立延后到 2014 年并入（丹麦瓦登海国家公园官网，2 级；whc.unesco.org/en/list/1314，1 级）。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Danish section of the Wadden Sea is the northernmost part of the North Sea's intertidal mudflat and barrier-island system, which together with the German and Dutch sections forms the world's largest continuous intertidal ecosystem.",
     formation:
@@ -10686,6 +10990,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area has historically been an important Danish fishing and shipping region; in 2014 the Danish section joined the existing German and Dutch sections on the UNESCO World Heritage Wadden Sea listing, forming a single protected area spanning all three countries.",
   },
   "bornholm-granite-coast": {
+    // 全六段 sources: 哈默伦岬角前寒武纪花岗岩崖壁与 bornholm-almindingen 的波罗的地盾出露事实一致；哈默斯胡斯城堡多个来源直接称「北欧最大的城堡遗址」（不带之一），正文用「之一」更保守，不与更强信源冲突。核实 2026-09-11，未改动
     seeing:
       "The Bornholm Granite Coast lies at the island's northern tip; the Hammeren headland's steep cliffs are built of Precambrian granite, the only large area of exposed granite bedrock anywhere on the Danish coast.",
     formation:
@@ -10700,6 +11005,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Granite on the island has been quarried for building stone since the Middle Ages; the Hammeren area also holds the medieval fortress of Hammershus, one of the largest castle ruins in Northern Europe.",
   },
   "silkeborg-lake-district": {
+    // 全六段 sources: ⚠️「丹麦本土唯一的湖区式地貌集群」是较强的排他断言 —— 官方区域旅游局称 Søhøjlandet 为丹麦最高地区、坐拥 50 余座湖泊，未查到可与之相提并论的第二个集群，现有资料范围内未见反例，暂留但下轮留意。锡尔克堡镇 1844 年 Michael Drewsen 建造纸厂而兴起，「19 世纪」属实。核实 2026-09-11，未改动
     seeing:
       "The Silkeborg Lake District is a chain of glacially carved lakes along the middle course of the Gudenå, Denmark's longest river — the only lake-district-style landform cluster in mainland Denmark.",
     formation:
@@ -10714,6 +11020,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The town of Silkeborg grew up along the Gudenå from the 19th century around its paper industry; the lake district is now an important destination for river cruising and outdoor recreation in Denmark.",
   },
   arresoe: {
+    // 全六段 sources: 面积 40.72 km²，丹麦最大湖泊；平均水深 3.1 m，与正文「约3米」一致；与 furesoe（最深 37.7 m）互为 distinguish 对照，「更大更浅 vs 更小更深」两条并读自洽。history 段的 19 世纪围垦尝试见 issue。核实 2026-09-11
     seeing:
       "Arresø is Denmark's largest lake, covering about 40 km², draining via a river channel into Isefjord.",
     formation:
@@ -10728,8 +11035,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake has historically been an important fishery for northern Zealand; a 19th-century attempt to drain and reclaim the lakebed for farmland was made, and the surrounding area is now an important nature reserve.",
   },
   furesoe: {
+    // seeing sources: 最深 37.7 m（菲于瑟市官网，2 级；丹麦语维基与自然署页面一致），非 37.8。与 arresoe（40.72 km²、均深 3.1 m，丹麦最大湖）互为 distinguish 对照，两条并读自洽。核实 2026-09-11
     seeing:
-      "Furesø is Denmark's deepest lake, with a maximum depth of about 37.8 m, located in the northern suburbs of Copenhagen.",
+      "Furesø is Denmark's deepest lake, with a maximum depth of about 37.7 m, located in the northern suburbs of Copenhagen.",
     formation:
       "The lake basin occupies a deep trough gouged by last-glacial ice, where erosion was more intense than in the surrounding area, producing a deep-basin lake landform rare in Denmark.",
     observation:
@@ -10742,6 +11050,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake area has been a favoured villa retreat for Copenhagen's wealthy since the 19th century and remains an important near-suburban recreational water body for greater Copenhagen today.",
   },
   "gudenaa-river": {
+    // 全六段 sources: 全长约 158 km、丹麦最长水道、注入兰讷斯峡湾（锡尔克堡市官方古德诺河信息站，2 级）；与 west-jutland-outwash-plain 的斯克恩河（丹麦流量最大）分属长度与流量两个口径，两条并读不冲突。核实 2026-09-11，未改动
     seeing:
       "The Gudenå is Denmark's longest river, running about 158 km from its source near the Central Jutland Highlands to meet Randers Fjord near the town of Randers.",
     formation:
@@ -10756,6 +11065,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The river has historically been an important inland shipping route in Denmark; the industrial development of towns such as Silkeborg once relied heavily on river transport, and today it is an important canoeing and cruising river in Denmark.",
   },
   "sydfynske-oehav-aeroe": {
+    // 全六段 sources: 埃勒斯考宾为丹麦保存最完好的 18 世纪小镇，2002 年获欧罗巴诺斯特拉奖；淹没冰碛丘陵成群岛的机制与 lolland-falster-lowland 对比无冲突。核实 2026-09-11，未改动
     seeing:
       "The South Funen Archipelago is a cluster of dozens of small islands south of Funen; Ærøskøbing on the island of Ærø preserves the most complete 18th-century half-timbered town quarter in Denmark.",
     formation:
@@ -10780,10 +11090,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Læsø and Anholt are Danish islands in the Kattegat, but Læsø is larger, known for its historic salt production and seaweed-thatched houses, while Anholt is known for the lichen-heath \"desert\" landscape on its eastern side.",
     concept:
       "The wind erosion and sand mobilisation on Læsø, driven by historic overlogging for the salt-boiling industry, is a classic case for studying how human economic activity can accelerate coastal sandy-landform change.",
+    // history sources: GEUS 2010 年基于约 1700 处中世纪制盐遗址的研究 —— 1585 年后快速衰退、1652 年停止，主因是小冰期变冷使可形成高盐地下水的海岸带降至不足原来 15%，燃料短缺为次因（1 级）。砍伐导致 17 世纪王室禁伐令属实。formation 段只讲「砍伐→风蚀沙化」的地貌机制，不涉产业衰退因果，不改。核实 2026-09-11
     history:
-      "Salt production on the island dates to the Middle Ages, at its peak supplying large quantities of salt to the Danish crown; the industry declined in the 17th century after the forests were exhausted, while the tradition of seaweed-thatched roofing survives to this day.",
+      "Salt production on the island dates to the Middle Ages, at its peak supplying large quantities of salt to the Danish crown; deforestation for fuel led to a 17th-century royal ban on wood-fired salt-boiling, but a 2010 study by the Geological Survey of Denmark and Greenland found the industry's rapid decline after 1585 and its end in 1652 owed more to Little Ice Age cooling, which sharply shortened the stretches of coast able to form hypersaline groundwater; the tradition of seaweed-thatched roofing survives to this day.",
   },
   "jutland-heath": {
+    // 全六段 sources: 兰伯尔荒原 750 ha，为丹麦最大内陆荒原残余；1700 年代至 19 世纪初中/西日德兰荒原覆盖率约 50%，正文「近半」属实；丹麦石楠荒原协会由 Enrico Dalgas 于 1866 年创立、主导排水植树（丹麦国家历史百科，2 级）。核实 2026-09-11，未改动
     seeing:
       "Jutland Heath once covered a large expanse of poor, sandy glacial-outwash land in western Jutland; Randbøl Hede is the largest surviving continuous remnant of this heather moorland in Denmark.",
     formation:
@@ -10798,6 +11110,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Before the 19th century, heather moorland covered nearly half of western Jutland; from the 19th century the Danish Heath Society led a large-scale programme of drainage and tree-planting that converted most of it to farm and forest land, leaving Randbøl Hede as one of the few continuous remnants surviving today.",
   },
   "anholt-oerkenen": {
+    // 全六段 sources: Ørkenen 为北欧最大同类地衣荒原景观；学术研究确认风成沙丘与地衣群落的发育与历史性砍伐直接相关，砍伐高峰在 16—17 世纪，与正文「16 世纪森林砍伐后」方向一致；正文明写它「非真正沙漠」，与学界口径（地衣荒原而非气候学沙漠）一致。核实 2026-09-11，未改动
     seeing:
       "About three-quarters of the eastern side of Anholt is covered in a lichen-heath landscape locally called \"Ørkenen\" (the Desert), the largest lichen heath in Northern Europe.",
     formation:
@@ -10812,6 +11125,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "After the island's forests disappeared due to overlogging in the 16th century, wind-blown dunes gradually expanded and buried part of the farmland and settlements, forcing islanders to adapt their livelihoods; the \"Desert\" landscape has since become Anholt's most recognisable natural feature.",
   },
   "store-vildmose": {
+    // 全六段 sources: 1917 年潜艇战危机促成 1918 年立法，1920—1945 年国家主导垦荒（1920 年代征地建 57 座农场）；二战期间因棉花等进口中断确有亚麻、大麻种植记录。正文「20 世纪初」与实际启动（1917–1920s）基本吻合。核实 2026-09-11，未改动
     seeing:
       "Store Vildmose is a former large raised peat bog basin in northern Jutland, converted to farmland through drainage works in the early 20th century.",
     formation:
@@ -10836,8 +11150,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the West Jutland Outwash Plain and Jutland Heath lie in the poor, sandy area of western Jutland, but the outwash plain is defined by the Skjern Å delta landform, while Jutland Heath is defined by the surviving heather shrub vegetation on poor soil.",
     concept:
       "The West Jutland Outwash Plain is a classic case for studying how meltwater at the margin of a last-glacial ice sheet builds up a broad, flat sandy plain over time, and a key area for understanding the origins of western Denmark's landforms.",
+    // history sources: 渠化 1962–1968（4000 ha 湿地转耕地）；复原工程 1999-06 开工、2002 年秋基本完工（议会决议 1987），2003 年已是收尾监测期 —— 原文的「20世纪初」与「2003年起启动」两个年份都错、顺序也反了。斯克恩河为丹麦流量最大的河流（平均约 30 m³/s）。核实 2026-09-11
     history:
-      "In the early 20th century Denmark carried out a large-scale project to reroute and drain the Skjern Å to expand farmland; by the early 2000s this was judged to have damaged the ecosystem, and from 2003 the Danish government began a restoration project to return the river to something closer to its original course and wetlands.",
+      "Between 1962 and 1968 Denmark carried out a large-scale project to reroute and drain the Skjern Å to expand farmland; this was later judged to have damaged the ecosystem, and the Danish government ran a restoration project from 1999 to its substantial completion in 2002, returning the river to something closer to its original course and wetlands.",
   },
   "lolland-falster-lowland": {
     seeing:
@@ -10850,10 +11165,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Lolland-Falster Lowland and the Funen Rolling Farmland are important Danish farming regions, but Lolland-Falster is extremely flat, with land partly reclaimed behind dikes, while Funen retains more noticeable rolling-hill relief.",
     concept:
       "The parts of the Lolland-Falster Lowland reclaimed behind dikes are a classic case for studying the history of artificial land reclamation and land-use change in Denmark's low-lying coastal areas.",
+    // history sources: 洛兰大堤 1873–1878 年修建、全长 63 km，起因为 1872 年风暴潮（80 人死亡），是丹麦史上最大的海岸防护工程。原文的「17世纪荷兰移民围垦」实为 **1521 年荷兰农民定居阿马厄岛**的史实 —— 真事挪错了岛、也挪错了世纪。核实 2026-09-11
     history:
-      "The region has been an important farming area since the Middle Ages; from the 17th century, reclamation techniques brought by Dutch settlers were applied here, converting drained coastal low ground behind dikes into arable farmland.",
+      "The region has been an important farming area since the Middle Ages; after a storm surge flooded large parts of Lolland in 1872 and killed 80 people, Denmark built the 63 km Lolland Dike between 1873 and 1878, converting drained coastal low ground behind it into arable farmland.",
   },
   "funen-rolling-farmland": {
+    // 全六段 sources: 「丹麦花园」称号据传出自安徒生本人（1805–1875），欧登塞为其出生地（1805），「19 世纪起」属实。核实 2026-09-11，未改动
     seeing:
       "The Funen Rolling Farmland is a landscape of gently rolling fields on young last-glacial moraine, long known as the \"Garden of Denmark.\"",
     formation:
@@ -10868,6 +11185,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Funen has been an important farming region since the Middle Ages; from the 19th century, its fertile soil and abundant produce earned it the nickname \"Garden of Denmark,\" and Odense is the birthplace of the famous Danish fairy-tale author Hans Christian Andersen.",
   },
   grejsdalen: {
+    // 全六段 sources: ⚠️ 河谷南段（格赖斯湖至格赖斯镇）确为冰下融水侵蚀的隧道谷，但**北段（南北走向部分）实为地表融水（Bøgager 冰湖溃决）侵蚀的 V 形谷** —— 正文把整条河谷统一描述为隧道谷，是对两段不同成因的简化，非错但有精度损失，下轮考虑分段表述（Ökolariet 地区自然中心，2 级）。history 段的磨坊见 issue。核实 2026-09-11
     seeing:
       "Grejsdalen is a representative example of a tunnel valley in Jutland, with comparatively steep valley walls and dense forest on its floor.",
     formation:
@@ -10894,10 +11212,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Kebnekaise and Sarek are high-mountain landforms in Swedish Lapland, but Kebnekaise is Sweden's single highest peak with a striking north-south contrast between its twin summits, while Sarek is a continuous massif holding six peaks above 2,000 m.",
     concept:
       "The reversal in elevation between Kebnekaise's north and south peaks is a classic — and continually updating — case for studying how mountain glacier melt under a warming climate can directly change which point holds a country's highest-point title.",
+    // history sources: 首登 1883 Charles Rabot；Tarfala 研究站 1946 由斯德哥尔摩大学设立；南峰高度逐年实测（2025-09-10 为 2088.4m），正文只作趋势表述不写死数字。核实 2026-09-10
     history:
-      "Swedish geologist Axel Hamberg first systematically surveyed the mountain in 1880; it is now an important Swedish mountaineering destination and one of the most important sites for long-term monitoring of Nordic mountain glaciers.",
+      "French geographer Charles Rabot made the mountain's first recorded ascent in 1883; Stockholm University's Tarfala Research Station, established nearby in 1946, remains one of the most important sites for long-term monitoring of Nordic mountain glaciers.",
   },
   "sarek-mountains": {
+    // 全六段 sources: 6 座 2000m 以上山峰、逾 100 条活动冰川、1909 年设立（瑞典 1909 年《国家公园法》一次设立 9 座，为欧洲最早一批，「最早的国家公园之一」限定成立）—— sverigesnationalparker.se（1/2 级）；核实 2026-09-10，未改动
     seeing:
       "Sarek forms the core of Sarek National Park, established in 1909 and one of Sweden's earliest national parks; the park holds six peaks above 2,000 m.",
     formation:
@@ -10914,8 +11234,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "oland-alvar": {
     seeing:
       "Stora Alvaret is a roughly 40-km stretch of bare limestone plateau on the southern half of Öland, covering about a quarter of the island — the largest surviving example of this type of limestone barren in Europe.",
+    // formation sources: 大阿尔瓦基岩为奥陶纪石灰岩（约4.5亿年前）；核实 2026-09-10
     formation:
-      "The plateau's foundation is Carboniferous limestone; last-glacial ice scouring stripped away the soil cover over a wide area, leaving an extremely thin, high-pH soil that supports a distinctive, poor limestone-barren ecosystem.",
+      "The plateau's foundation is Ordovician limestone; last-glacial ice scouring stripped away the soil cover over a wide area, leaving an extremely thin, high-pH soil that supports a distinctive, poor limestone-barren ecosystem.",
     observation:
       "From the air, the plateau surface shows a distinctive texture of grey bare rock interwoven with sparse vegetation, in sharp contrast with the farmland landscape elsewhere on the island.",
     distinguish:
@@ -10926,8 +11247,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area has some five thousand years of human settlement history, with residents long adapting their land use to the natural constraints of the limestone plateau; the Agricultural Landscape of Southern Öland was inscribed on the UNESCO World Heritage List in 2000 as a result.",
   },
   vindelfjallen: {
+    // seeing sources: Länsstyrelsen Västerbotten 现行面积 564,918 ha（2017 扩界后）；1 级，核实 2026-09-10
     seeing:
-      "Vindelfjällen Nature Reserve is Sweden's largest protected area, covering about 555,000 hectares, dominated by a mountain plateau landform transitioning between birch forest and alpine tundra.",
+      "Vindelfjällen Nature Reserve is Sweden's largest protected area, covering about 565,000 hectares after its 2017 expansion, dominated by a mountain plateau landform transitioning between birch forest and alpine tundra.",
     formation:
       "The reserve sits on the eastern slope of the Scandinavian Mountains; last-glacial erosion shaped its undulating mountain plateau terrain, with conifer forest, birch forest and alpine tundra vegetation zones arranged in sequence up the elevation gradient.",
     observation:
@@ -10942,8 +11264,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "siljan-ring": {
     seeing:
       "The Siljan Ring formed around 377 million years ago in the Devonian period when a roughly 5-km-diameter body struck the Earth; the resulting ring structure is about 52 km in diameter, the largest known impact structure in Europe.",
+    // formation sources: 今日环形洼地由末次冰期冰川融水侵蚀构造内较软沉积岩形成，非撞击瞬间产物（Lantmäteriet Geoskolan，1 级，核实 2026-09-10）
     formation:
-      "The impact violently deformed the originally flat Precambrian granite basement; the ring structure preserves sedimentary rock layers from the Lower Cambrian through the Devonian, with Lake Siljan sitting in a low point along the ring's south-western margin.",
+      "The impact violently deformed the originally flat Precambrian granite basement and left sedimentary rock layers from the Lower Cambrian through the Devonian; at the end of the last ice age, glacial meltwater preferentially eroded the softer sedimentary rock inside the structure, carving out the ring-shaped depression seen today, along which Lake Siljan and its neighbours lie — the lake itself along the ring's south-western margin.",
     observation:
       "From the air, the ring structure's outline is faintly traceable in the terrain and drainage pattern; Lake Siljan and several smaller lakes are arranged along the ring's margin — a distinctive impact landform in Sweden.",
     distinguish:
@@ -10954,6 +11277,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The structure drew scientific attention from the 19th century onward because of unusual geological phenomena in the area; its impact origin was confirmed in the 20th century, and today the Siljan Geopark is Sweden's first national geopark.",
   },
   "store-mosse": {
+    // 全六段 sources: 「瑞典拉普兰以南最大隆起泥炭沼泽」与 1982 年建园经 Naturvårdsverket 转述来源确认；与 siljan-ring 的成因对比（泥炭堆积 vs 撞击构造）两条并读无矛盾。核实 2026-09-10，未改动
     seeing:
       "Store Mosse is the largest raised peat bog south of Swedish Lapland; a national park was established here in 1982.",
     formation:
@@ -10968,6 +11292,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area historically remained in a natural state because the peat bog was difficult to farm; a national park was formally established in 1982, making it an important wetland conservation area in southern Sweden.",
   },
   vanern: {
+    // 全六段 sources: 5650 km²、欧盟境内最大湖（欧洲最大的拉多加/奥涅加在俄罗斯、不在欧盟，口径区分正确）、经约塔河注入卡特加特；与 vattern「瑞典第二大」、malaren「第三大」三条并排核对不冲突。核实 2026-09-10，未改动
     seeing:
       "Vänern is the largest lake in the European Union, covering about 5,650 km²; its water drains via the Göta River into the Kattegat.",
     formation:
@@ -10982,6 +11307,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Since the Göta Canal opened to navigation in the 19th century, Vänern has been an important link in the inland waterway connecting Sweden's east and west coasts; historic buildings such as Läckö Castle along its shore bear witness to the lake region's long history of development.",
   },
   vattern: {
+    // 全六段 sources: 面积 1912 km² 为瑞典第二大湖、最大水深 128m、Vättern graben 构造成因，多来源交叉印证一致。核实 2026-09-10，未改动
     seeing:
       "Vättern is Sweden's second-largest lake and one of the clearest large lakes in Europe, with a maximum depth of about 128 m.",
     formation:
@@ -10996,6 +11322,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island of Visingsö in the lake has been an important site for religious and royal activity since the Middle Ages; Vadstena Abbey on the shore was founded by the Swedish saint Bridget and is an important medieval religious heritage site in Sweden.",
   },
   malaren: {
+    // 全六段 sources: 瑞典四大湖序为维纳恩>韦特恩>梅拉伦>耶尔马伦，「第三大」成立；冰后地壳均衡抬升致其约 12–13 世纪与波罗的海分离。核实 2026-09-10，未改动
     seeing:
       "Mälaren is Sweden's third-largest lake, with an extremely intricate, many-branched shoreline; Stockholm sits at its eastern outlet to the sea.",
     formation:
@@ -11010,6 +11337,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The shores of Mälaren have been an important political and trading centre for Sweden since Viking times; Stockholm was founded as a city in the 13th century, and Drottningholm Palace was inscribed on the UNESCO World Heritage List in 1991.",
   },
   tornetrask: {
+    // 全六段 sources: 最大水深 168m（SMHI，1 级）；该湖属受保护的「国家河流」流域、实际未经水电调节，正文未作水位调节声称，无矛盾；阿比斯科科学站 1935 年设立。核实 2026-09-10，未改动
     seeing:
       "Torneträsk is a long, narrow tectonic lake in Swedish Lapland, with a maximum depth of about 168 m; the lakeside village of Abisko is a well-known spot for observing the northern lights.",
     formation:
@@ -11024,8 +11352,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Abisko has been an important Swedish alpine ecology and climate research station since the early 20th century; the Abisko Scientific Research Station, established in 1935, is one of the oldest polar research stations in Northern Europe.",
   },
   taakern: {
+    // seeing sources: 均深约 0.8m、最深约 2.5m（takern.se 2 级 + Länsstyrelsen Östergötland 1 级）；核实 2026-09-10
     seeing:
-      "Tåkern is a shallow lake in southern Sweden, less than 1.5 m deep, with extensive reed marsh, and an important bird habitat in the country.",
+      "Tåkern is a shallow lake in southern Sweden with an average depth of about 0.8 m and a maximum of no more than 2.5 m, with extensive reed marsh, and an important bird habitat in the country.",
     formation:
       "The lake basin occupies a shallow depression carved by last-glacial erosion; the extremely shallow water and nutrient-rich bottom sediment provide favourable conditions for reeds and other aquatic plants.",
     observation:
@@ -11042,14 +11371,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Torne River is one of Sweden's longest rivers without hydroelectric development, running about 520 km; its lower course forms the border between Sweden and Finland.",
     formation:
       "The river rises in the mountains of Swedish Lapland and flows south-east along a structurally weak zone; because it has never been dammed for hydropower, its channel retains natural seasonal flow variation and riverbed form.",
+    // observation/history sources: 汇流点在 Pello 附近（约67°10′N），河口在 Haparanda/Tornio（约65.85°N）；Struve 测地弧 2005 年列入 UNESCO（whc.unesco.org/en/list/1187）。核实 2026-09-10
     observation:
-      "From the air, the channel winds through Arctic Circle forest and tundra; at its mouth it joins with Finland's Könkämäeno river system to form a cross-border river-valley ecosystem.",
+      "From the air, the channel winds through Arctic Circle forest and tundra; well upstream of its mouth it meets the Könkämäeno-Muonio river system flowing down from near the Norwegian border, marking the start of the border reach and forming a cross-border river-valley ecosystem.",
     distinguish:
       "The Torne River and southern Swedish rivers such as the Dalälven and Klarälven are all important Swedish waterways, but the Torne lies within the Arctic Circle and retains a natural, undammed channel, while the Dalälven and Klarälven flow through south-central Sweden and have sections used for hydropower.",
     concept:
       "As one of Sweden's few large rivers without hydroelectric development, the Torne is an important sample for studying the natural hydrology of an Arctic river unaffected by human regulation.",
     history:
-      "The river's lower course has historically been an important channel for cross-border trade and movement between Sweden and Finland; the Sweden-Finland cross-border section was inscribed on the UNESCO World Heritage List in 2000 as part of the Struve Geodetic Arc's Torne/Muonio/Könkämä valley listing.",
+      "The river's lower course has historically been an important channel for cross-border trade and movement between Sweden and Finland; survey points along this border reach were inscribed on the UNESCO World Heritage List in 2005 as part of the ten-country Struve Geodetic Arc.",
   },
   dalalven: {
     seeing:
@@ -11062,12 +11392,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Dalälven and Klarälven are important central Swedish rivers, but the Dalälven's headwaters are closely tied to the Siljan Ring structure with a well-developed river-mouth delta, while the Klarälven is characterised by well-developed free meanders in its upper and middle course.",
     concept:
       "The distinctive pattern of the Dalälven's headwater system developing around an ancient asteroid-impact structure is a classic case for studying how a river system adapts to an ancient geological structural boundary.",
+    // history sources: 1865 年起有组织流放，Dalälvarnas Flottningsförening 1880–1970，1950 年代峰值（dalaflottning.se，2 级）。核实 2026-09-10
     history:
-      "The Dalälven's banks have historically been an important base for Sweden's water-powered sawmill industry; from the 19th into the early 20th century, large quantities of timber were floated down the river to be processed at Älvkarleby near its mouth, shaping the area's industrial history.",
+      "The Dalälven's banks have historically been an important base for Sweden's water-powered sawmill industry; from the mid-19th century until log driving ended in 1970, large quantities of timber were floated down the river to be processed at Älvkarleby near its mouth, shaping the area's industrial history.",
   },
   klaralven: {
+    // seeing sources: 源头在瑞典海尔耶达伦省（罗根湖一带），中游经挪威后折回瑞典（NE.se，2 级）；中上游沿断裂谷发育约 90 km 河曲段。核实 2026-09-10
     seeing:
-      "The Klarälven rises in the mountains of Norway, flows through Värmland in Sweden and enters Vänern; its upper and middle course winds freely, forming numerous classic free meanders.",
+      "The Klarälven rises in Härjedalen in Sweden, loops through a stretch of Norway, flows through Värmland in Sweden and enters Vänern; its upper and middle course winds freely, forming numerous classic free meanders.",
     formation:
       "The river's upper and middle course flows through a broad, low-lying valley unconstrained by bedrock, allowing the channel to migrate freely from side to side; over time this has produced numerous winding, snake-like meanders.",
     observation:
@@ -11090,14 +11422,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Lapporten and the Abisko Canyon are glacially related landforms in Lapland, but Lapporten is a broad, symmetrical U-shaped glacial trough, while the Abisko Canyon is a narrower canyon cut by a river along a structural fault.",
     concept:
       "Lapporten is a frequently cited textbook example of a U-shaped glacial trough worldwide, directly illustrating the fundamental difference in valley cross-section between glacial and river erosion.",
+    // history sources: Lapporten 为瑞典语名；北萨米语 Čuonjávággi =「鹅谷」；核实 2026-09-10
     history:
-      "In Northern Sámi the valley is called \"Lapporten,\" meaning \"the gate of Lapland\"; it has historically been an important landmark on Sámi reindeer migration routes and is now a well-known viewpoint along the Kungsleden trail.",
+      "\"Lapporten\" is the Swedish name, meaning \"the gate of Lapland\"; in Northern Sámi the valley is called Čuonjávággi, \"Goose Valley.\" It has historically been an important landmark on Sámi reindeer migration routes and is now a well-known viewpoint along the Kungsleden trail.",
   },
   "abisko-canyon": {
     seeing:
       "The Abisko Canyon was cut by the Abiskojåkka river through an ancient structural fault, and is the starting point of the northern section of Sweden's famous Kungsleden (\"King's Trail\").",
+    // formation/history sources: 断裂带属加里东造山（约 400 Ma，古生代），非前寒武纪（NRM，1 级）；阿比斯科研究站 1903 年设立、孔斯莱登北段 1926–27 年标记完成（3 级，未找到一手佐证）。核实 2026-09-10
     formation:
-      "The canyon developed along a Precambrian structural fault; the river has long eroded the comparatively weaker fault rock, producing a relatively narrow, steep-sided canyon whose sheltered topography also gives it a distinct local microclimate from the surrounding open terrain.",
+      "The canyon developed along a structural fault formed during the Caledonian orogeny (around 400 million years ago); the river has long eroded the comparatively weaker fault rock, producing a relatively narrow, steep-sided canyon whose sheltered topography also gives it a distinct local microclimate from the surrounding open terrain.",
     observation:
       "From the air, the canyon winds narrowly, its banks rising steeply, forming a sharp landform contrast with the open water of neighbouring Torneträsk and the broad U-shaped profile of Lapporten.",
     distinguish:
@@ -11116,12 +11450,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the coastline is steep and winding, studded with islands and bays; the High Coast Bridge spans a narrow bay along the shore, making it an excellent landmark for observing this uplifting coastal landform.",
     distinguish:
       "The High Coast, the Bohuslän Coast and the Stockholm Archipelago all display Sweden's granite coastal landforms, but the High Coast is uniquely known for its ongoing isostatic rebound, and is the only one of the three inscribed as a World Heritage Site.",
+    // concept sources: 2000 列入、2006 扩展为 High Coast / Kvarken Archipelago 跨国遗产（whc.unesco.org/en/list/898，1 级）；distinguish 段「三者中唯一列入世界遗产」在补入 2006 信息后仍成立。核实 2026-09-10
     concept:
-      "The High Coast's ongoing isostatic rebound is one of the world's most important field laboratories for studying post-glacial crustal rebound after ice-sheet melting, which is why it was inscribed on the UNESCO World Heritage List in 2000.",
+      "The High Coast's ongoing isostatic rebound is one of the world's most important field laboratories for studying post-glacial crustal rebound after ice-sheet melting, which is why it was inscribed on the UNESCO World Heritage List in 2000 and extended in 2006 to take in Finland's geologically complementary Kvarken Archipelago, becoming a transboundary site.",
     history:
       "Local fishing villages have historically had to periodically move their docks and buildings seaward as the coastline continued to rise — a living human record of the ongoing land-uplift process.",
   },
   "bohuslan-coast": {
+    // 全六段 sources: 科斯特海国家公园 2009-09-09 揭幕，为瑞典首座海洋国家公园（SGU，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Bohuslän Coast is a stretch of Sweden's west coast studded with bare granite skerries; the waters around the Koster Islands hold Sweden's first marine national park.",
     formation:
@@ -11136,6 +11472,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The coast has historically been an important Swedish fishing and shipping area; Kosterhavet National Park, established in 2009, is Sweden's first marine national park, protecting important marine biodiversity along the North Sea coast.",
   },
   "blekinge-archipelago": {
+    // 全六段 sources: 卡尔斯克鲁纳 1680 年由卡尔十一世建为海军基地；海军城 1998-12-03 列入 UNESCO（whc.unesco.org/en/list/871，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Blekinge Archipelago is a granite archipelago along Sweden's south-eastern Baltic coast; Karlskrona has been a Swedish royal naval base since the 17th century.",
     formation:
@@ -11150,6 +11487,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karlskrona was founded by King Charles XI of Sweden in 1680 and is one of the most completely planned naval port cities from the era before Sweden's capital moved there; its naval city plan was inscribed on the UNESCO World Heritage List in 1998.",
   },
   "stockholm-archipelago": {
+    // 全六段 sources: 约 3 万座岛屿为斯德哥尔摩省政府《Skärgårdsfakta》历年口径（1 级）；「瑞典最大群岛」与 gotland 的「瑞典最大岛屿」分属不同类别、并排核对不冲突（波罗的海范围内群岛规模次于芬兰的 Archipelago Sea）；瓦克斯霍尔姆要塞 1548 年由古斯塔夫一世下令建造。核实 2026-09-10，未改动
     seeing:
       "The Stockholm Archipelago is a Baltic archipelago made up of about thirty thousand islands and skerries, one of the densest island clusters anywhere in the world.",
     formation:
@@ -11170,14 +11508,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island's bedrock is limestone deposited around 400 million years ago in the Silurian period; long exposure to Baltic Sea wave and surface-water erosion has produced classic limestone coastal landforms around the shore, while the interior retains a comparatively flat limestone plateau.",
     observation:
       "From the air, the island's terrain is low and open; the medieval walls and bell towers of Visby's old town are clearly recognisable, forming a well-layered combination of landform and heritage against the farmland and limestone plateau of the rest of the island.",
+    // distinguish sources: 大阿尔瓦基岩为奥陶纪（485–443 Ma），早于哥得兰的志留纪（443–419 Ma）—— 是更老不是更年轻。与 oland-alvar/formation 同批改（r16b 只改了那一处，本轮补上）。核实 2026-09-10
     distinguish:
-      "Both Gotland and Öland's Stora Alvaret are built of limestone, but Gotland is Sweden's largest standalone island and Silurian in age, while Stora Alvaret is a younger Carboniferous limestone plateau.",
+      "Both Gotland and Öland's Stora Alvaret are built of limestone, but Gotland is Sweden's largest standalone island and Silurian in age, while Stora Alvaret is an older Ordovician limestone plateau.",
     concept:
       "Gotland's Silurian limestone bedrock records the sedimentary history of a shallow-sea reef environment around 400 million years ago, an important geological sample for studying the evolution of Palaeozoic marine sedimentary environments in the Baltic region.",
     history:
       "Visby was an important Hanseatic League trading town from the 12th century; its intact medieval walls run about 3.4 km, and it was inscribed on the UNESCO World Heritage List in 1995.",
   },
   faro: {
+    // 全六段 sources: rauk 海蚀柱由志留纪石灰岩差异侵蚀而成，朗哈马斯为代表性密集分布区；伯格曼长期居于法罗岛并在此取景（ingmarbergman.se，2 级）。核实 2026-09-10，未改动
     seeing:
       "Fårö is a small island north of Gotland, its coast lined with sea stacks (rauk in Swedish) carved from Silurian limestone by long wave erosion; the Langhammars stack cluster is the densest of its kind in Sweden.",
     formation:
@@ -11202,10 +11542,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Söderåsen and Tiveden are uplifted hill landforms in southern Sweden, but Söderåsen is a fault-block ridge with steep escarpments on both sides, while Tiveden is defined by its glacially transported boulder landform.",
     concept:
       "The steep escarpments produced by fault-block uplift at Söderåsen are a classic case for studying how local tectonic faulting can produce pronounced relief within southern Sweden's otherwise comparatively flat geological setting.",
+    // seeing/history sources: 国家公园 2001-05-10 设立（1988/89 仅为规划候选）；岭体为西北—东南走向断块，最高点 212 m（斯科讷最高点）。正文「长约22公里」未找到来源，见 issue。核实 2026-09-10
     history:
-      "The old broadleaf forest on the ridge is one of the best-preserved of its kind in southern Sweden; a national park was established in 1988 to protect this centuries-unlogged native woodland.",
+      "The old broadleaf forest on the ridge is one of the best-preserved of its kind in southern Sweden; a national park was established in 2001 to protect this centuries-unlogged native woodland.",
   },
   tiveden: {
+    // 全六段 sources: 蒂韦登与 Tylöskog、Kolmården 同为斯韦阿兰与约塔兰之间的历史天然屏障；国家公园 1983 年设立、2017 年扩至 2030 ha（3 级交叉印证）。核实 2026-09-10，未改动
     seeing:
       "Tiveden was historically a natural barrier between two of Sweden's traditional northern and southern regions for a long period; the ground is scattered with large granite boulders left behind by last-glacial transport.",
     formation:
@@ -11220,6 +11562,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area's rugged, hard-to-traverse terrain historically made it a natural barrier and refuge between Sweden's two traditional northern and southern regions; a national park was established in 1983 to protect this old, native pine-forest landscape.",
   },
   hallandsasen: {
+    // 全六段 sources: 铁路隧道 1992 年动工，1997 年密封剂环境事故后停工至 2005 年，2015-12-08 通车，历时 23 年（Skanska 官方新闻稿，2 级）。核实 2026-09-10，未改动
     seeing:
       "Hallandsåsen is an east-west trending fault-block ridge on the border of Skåne and Halland.",
     formation:
@@ -11262,28 +11605,31 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The massif is built of ancient Caledonian orogeny rock; long weathering and erosion have produced today's low, rounded \"tunturi\" fell profile, quite different from a sharp Alpine peak.",
     observation:
       "From the air, the massif's outline is gentle and open, its summit almost bare of vegetation, blending into the similarly low tunturi wilderness around it; the border marker is the key landmark for identifying Finland's highest point.",
+    // distinguish sources: 哈尔蒂 1324 m 为芬兰最高**点**（山体芬兰一侧山坡），真正峰顶 Ráisduottarháldi 1365 m 在挪威一侧 —— 两个数各自准确、未混淆，用词是「最高点」不是「最高峰」，跨境表述中性。帕拉斯山列长度按近百公里改（原「约40公里」查无出处）。核实 2026-09-10
     distinguish:
-      "Both Halti and Pallas-Yllästunturi are tunturi fell landforms in Finnish Lapland, but Halti is Finland's absolute highest point, right on the Norwegian border, while Pallas-Yllästunturi is a roughly 40-km chain of fells at a noticeably lower elevation.",
+      "Both Halti and Pallas-Yllästunturi are tunturi fell landforms in Finnish Lapland, but Halti is Finland's absolute highest point, right on the Norwegian border, while Pallas-Yllästunturi is a chain of fells stretching nearly 100 km at a noticeably lower elevation.",
     concept:
       "The determination of Halti's status is a classic case for studying the sometimes complicated relationship between an international border and a natural geographic high point — the massif's true summit lies in Norway, and Finland's highest point is merely the corner of slope the border line happens to cross.",
     history:
       "The course of the border has made this mountain a landmark of shared interest to both Finland and Norway; Finnish hikers commonly regard the trek here as the traditional challenge of \"summiting Finland.\"",
   },
   "pallas-yllastunturi": {
+    // seeing sources: 山列长度近百公里（帕拉斯段是 50 km 的 Pallas-Ounastunturi 山系的南段；国家公园地貌由近百公里的山列主导，3 级两处一致）—— 原写的「约40公里」查无出处，且经 distinguish 传染到 halti-fell。泰瓦斯凯罗峰 807 m（另有 809.1 m 一说，差 <0.3%，不改）。核实 2026-09-10
     seeing:
-      "Pallas-Yllästunturi is a roughly 40-km chain of tunturi fells in western Finnish Lapland; its highest point, Taivaskero, reaches 807 m, and it is one of Finland's oldest national parks.",
+      "Pallas-Yllästunturi is a chain of tunturi fells stretching nearly 100 km across western Finnish Lapland; its highest point, Taivaskero, reaches 807 m, and it is one of Finland's oldest national parks.",
     formation:
       "The chain is built of ancient Precambrian rock; hundreds of millions of years of weathering have worn what may once have been towering peaks down to today's low, rounded hill forms — a classic sample for studying the long-term evolution of an extremely old mountain system.",
     observation:
       "From the air, the continuous chain of tunturi fells shows a wave-like undulation; above the treeline the forest disappears, leaving only tundra vegetation, forming a clear vertical zonation against the dense conifer forest at the fells' base.",
     distinguish:
-      "Both Pallas-Yllästunturi and Levitunturi are tunturi fell landforms in Finnish Lapland, but Pallas-Yllästunturi is a roughly 40-km chain with a long national-park history, while Levitunturi is a single, isolated fell known for its ski resort.",
+      "Both Pallas-Yllästunturi and Levitunturi are tunturi fell landforms in Finnish Lapland, but Pallas-Yllästunturi is a chain of fells stretching nearly 100 km with a long national-park history, while Levitunturi is a single, isolated fell known for its ski resort.",
     concept:
       "The tundra vegetation zone above the treeline at Pallas-Yllästunturi is a classic case for studying how elevation gradient compresses vertical vegetation zonation in polar and subpolar regions.",
     history:
       "The area was first protected in a precursor national park as early as 1938, one of the earliest protected natural areas in Finland, and has long been a traditional hiking and skiing destination.",
   },
   "levi-fell": {
+    // 全六段 sources: 莱维图恩图里 531 m（多来源一致）；distinguish 段未给出与 pallas-yllastunturi 冲突的公里数，未受该条「40公里」错误传染。核实 2026-09-10，未改动
     seeing:
       "Levitunturi is the fell hosting the largest ski resort in Finnish Lapland, at 531 m, a low, rounded massif.",
     formation:
@@ -11298,6 +11644,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The site has been developed as a ski resort since the 1980s and has since grown into one of the best-known winter tourism destinations in the Nordic region.",
   },
   "urho-kekkonen-wilderness": {
+    // 全六段 sources: 2549 km²，为芬兰**第二大**国家公园（仅次于莱门约基），1983 年设立，以前总统乌尔霍·凯科宁命名。核实 2026-09-10，未改动
     seeing:
       "Urho Kekkonen National Park is Finland's second-largest national park, characterised by undulating tunturi wilderness upland interwoven with old conifer forest and river canyons.",
     formation:
@@ -11312,6 +11659,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The park is named after former Finnish president Urho Kekkonen; it is Finland's second-largest national park and an important part of the traditional reindeer-herding region.",
   },
   saimaa: {
+    // 全六段 sources: ⚠️ 两个口径别混 —— 正文「芬兰最大湖、欧洲第四大湖」用的是「大塞马」（Suur-Saimaa）整体水系口径约 4200–4400 km²；SYKE 维护的 Järvi-meriwiki 里单独命名的 varsinainen Saimaa 子湖为 1377 km²，是同一湖泊系统的另一种计量，不是打架。约 14000 座岛屿与 Järviwiki 的 13710 接近。核实 2026-09-10，未改动
     seeing:
       "Saimaa is the largest lake in Finland and the fourth-largest in Europe, its shoreline extremely intricate and dotted with about 14,000 islands.",
     formation:
@@ -11326,6 +11674,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake area has historically been an important channel for timber floating and inland shipping in Finland, and is now an important lake-district tourist destination as well as a key protected area for the Saimaa ringed seal.",
   },
   paijanne: {
+    // 全六段 sources: 派耶内湖 1083 km² 为芬兰第二大湖，最大水深 95.3 m（vesi.fi，2 级）；与 saimaa（最大）、inari-lake（第三大）三条排名并排核对自洽。核实 2026-09-10，未改动
     seeing:
       "Päijänne is Finland's second-largest lake and one of its deepest, with a maximum depth of about 95 m.",
     formation:
@@ -11340,6 +11689,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Since the early 20th century the lake has been connected to Helsinki's water supply system via the Päijänne Water Tunnel, making it an important safeguard for the city's drinking water.",
   },
   "inari-lake": {
+    // 全六段 sources: 约 1040–1084 km²（各来源略异），芬兰第三大湖、北极圈内芬兰最大湖；约 3318 座岛屿，正文「约3300」贴近。核实 2026-09-10，未改动
     seeing:
       "Inari is Finland's third-largest lake and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands.",
     formation:
@@ -11354,6 +11704,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Inari region has been a traditional Sámi homeland since ancient times, and the lake's fishing and hunting culture continues today, making it an important geographic and cultural core of Finnish Sámi heritage.",
   },
   nasijarvi: {
+    // 全六段 sources: 内西湖（95 m）与皮哈耶尔维湖（77 m）水位差 18 m，与正文一致；坦佩雷建于两湖间地峡、历史上开发为水力工业基地属实。核实 2026-09-10，未改动
     seeing:
       "Näsijärvi is a long, narrow lake on the north-western side of the city of Tampere, separated from Lake Pyhäjärvi to the south-east by a difference in level of only about 18 m.",
     formation:
@@ -11378,12 +11729,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Puurijärvi and Sweden's Tåkern are shallow, eutrophic bird-habitat lakes, but Puurijärvi forms a national park together with its adjoining peat bog, illustrating a classic model of integrated lake-and-wetland conservation.",
     concept:
       "The close link between Puurijärvi's shallow, eutrophic lake ecosystem and its adjoining peat bog is a classic case for studying how a combined lake-wetland ecosystem together supports a bird-habitat function.",
+    // history sources: 国家公园 1993 年设立；平均水深约 0.5 m，正文「水深不足1米」准确。核实 2026-09-10
     history:
-      "The area historically remained in a natural state because its shallow water and wetland were difficult to farm; a national park was established in 1994 to protect this important bird habitat.",
+      "The area historically remained in a natural state because its shallow water and wetland were difficult to farm; a national park was established in 1993 to protect this important bird habitat.",
   },
   kallavesi: {
+    // seeing sources: 普宜奥山体 232 m（高出湖面约 150 m），306 m 是山顶观景塔塔顶海拔 —— 原文把塔顶值当成了山体海拔。核实 2026-09-10
     seeing:
-      "Kallavesi is an important part of Finland's central-eastern lake district; the city of Kuopio is built on its shore, and lakeside Puijo hill reaches 306 m.",
+      "Kallavesi is an important part of Finland's central-eastern lake district; the city of Kuopio is built on its shore, and lakeside Puijo hill reaches 232 m, with the top of its observation tower at 306 m.",
     formation:
       "The lake basin was carved by last-glacial erosion, while Puijo hill is a relatively high remnant of ancient bedrock left standing after long weathering — a landmark that stands out sharply against the otherwise gentle terrain of the Finnish lake district.",
     observation:
@@ -11396,6 +11749,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kuopio has been an important trading city in Finland's central-eastern lake district since the 19th century, and the viewing tower on Puijo hill remains an important local tourist landmark today.",
   },
   "vuoksi-river": {
+    // 全六段 sources: 全长约 162 km，源出塞马湖、注入拉多加湖；伊马特拉急流的水电开发史与夏季定期放水重现景观与多方市政/旅游信息一致。跨境表述中性。核实 2026-09-10，未改动
     seeing:
       "The Vuoksi is Saimaa's main outlet river, running about 162 km before ultimately flowing into Lake Ladoga in Russia.",
     formation:
@@ -11410,6 +11764,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Imatra rapids have been a famous Finnish natural tourist attraction since the 19th century; after a hydroelectric station was built in the early 20th century the rapids ran dry year-round, and today the sluice gates are opened on a regular summer schedule to recreate the historic display, now an important local tourist event.",
   },
   kemijoki: {
+    // 全六段 sources: 全长约 550 km，为芬兰最长河流，经罗瓦涅米后于凯米附近注入波的尼亚湾。核实 2026-09-10，未改动
     seeing:
       "The Kemijoki is Finland's longest river, running about 550 km from its source in the wilderness of eastern Lapland, through Rovaniemi, to enter the Gulf of Bothnia near Kemi.",
     formation:
@@ -11434,8 +11789,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Tornionjoki and the Kemijoki are important rivers in northern Finland, but the Tornionjoki is the Sweden-Finland border river, never developed for hydropower, while the Kemijoki lies entirely within Finland and is extensively used for hydropower along its course.",
     concept:
       "The pattern of shared municipal infrastructure between Tornio and Haparanda at the Tornionjoki's mouth is a classic case for studying cross-border urban cooperation and governance along a border river.",
+    // history sources: Struve 测地弧 2005 年列入 UNESCO（whc.unesco.org/en/list/1187，1 级）；中文原写的遗产名「梅尔梅奥河谷」查无实据，已删。与本库 torne-river/history 同一事实，同日一并清理。核实 2026-09-10
     history:
-      "The river's lower course has historically been an important channel for cross-border trade and movement between Sweden and Finland; the Sweden-Finland cross-border section was inscribed on the UNESCO World Heritage List in 2000 as part of the Struve Geodetic Arc's Torne/Muonio/Könkämä valley listing.",
+      "The river's lower course has historically been an important channel for cross-border trade and movement between Sweden and Finland; survey points along this border reach were inscribed on the UNESCO World Heritage List in 2005 as part of the ten-country Struve Geodetic Arc.",
   },
   "oulanka-canyon": {
     seeing:
@@ -11448,24 +11804,27 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Oulanka Canyon and Repovesi are important Finnish canyon landforms, but the Oulanka Canyon lies at the edge of Lapland along a famous long-distance hiking route, while Repovesi lies in southern Finland and is characterised by fragmented lake-and-cliff terrain.",
     concept:
       "The distinctive plant community that the Oulanka Canyon's patches of lime-rich ground support is a classic case for studying how a canyon's microclimate can nurture a local biodiversity hotspot within an otherwise poor conifer-forest zone.",
+    // history sources: 奥兰卡国家公园 1956 年设立；Karhunkierros 步道 1954 年开通，比建园早两年（Metsähallitus luontoon.fi，1 级）。核实 2026-09-10
     history:
-      "Oulanka National Park, where the canyon lies, was established in 1956; the Karhunkierros trail opened in the 1970s and is one of Finland's most celebrated long-distance hiking routes.",
+      "Oulanka National Park, where the canyon lies, was established in 1956; the Karhunkierros trail opened in 1954 and is one of Finland's most celebrated long-distance hiking routes.",
   },
   "repovesi-gorge": {
     seeing:
       "Repovesi National Park is an area of fragmented terrain in southern Finland built of Precambrian bedrock, where lakes, cliffs and deeply cut gorges interweave.",
     formation:
-      "The surface bedrock is ancient Precambrian rock that has undergone multiple episodes of tectonic movement and long erosion, producing today's fragmented mix of lakes, cliffs and gorges; the Olhavanvuori cliff has a vertical drop of about 30 m.",
+      "The surface bedrock is ancient Precambrian rock that has undergone multiple episodes of tectonic movement and long erosion, producing today's fragmented mix of lakes, cliffs and gorges; the Olhavanvuori cliff has a vertical drop of about 40-50 m.",
     observation:
       "From the air, lakes, forest and steep cliffs interweave, the terrain showing pronounced relief, in sharp contrast with the comparatively gentle lake-district landscape typical elsewhere in southern Finland.",
     distinguish:
       "Both Repovesi and the Oulanka Canyon are important Finnish canyon landforms, but Repovesi lies in southern Finland and is characterised by fragmented lake-and-cliff terrain, while the Oulanka Canyon lies at the edge of Lapland and is characterised by a narrow canyon cut by a river.",
     concept:
       "Repovesi's fragmented combination of lakes and cliffs is a classic case for studying how ancient Precambrian bedrock, overlaid by multiple episodes of tectonic movement, produces a complex, fragmented terrain.",
+    // history sources: 建园经过 —— 1970 年代末提议、搁置近三十年、2001 年 UPM-Kymmene 捐地、2003-01-01 设立（芬兰环境部公告，1 级）。原文的「苏联边境军事管制区、长期禁止公众进入」查无出处且与官方史料相反，已整段改写。奥尔哈万武奥里崖高约 40–50 m（3 级多处一致）。核实 2026-09-10
     history:
-      "The area was historically a restricted military zone along the Finland-Soviet border, closed to the public for decades; restrictions were lifted in 2003 and a national park established, now an important outdoor adventure destination in southern Finland.",
+      "A national park here was first proposed in the late 1970s, but the plan sat unrealised for nearly three decades; in 2001 the forestry company UPM-Kymmene donated a third of the planned park's land to the state, and the park was formally established in 2003. It is now an important outdoor adventure destination in southern Finland.",
   },
   "kevo-canyon": {
+    // 全六段 sources: 凯沃自然保护区 1956 年设立（与奥兰卡同批）；峡谷最深处约 80 m、全长逾 40 km（Metsähallitus 出版物，1 级机构）。核实 2026-09-10，未改动
     seeing:
       "The Kevo Canyon was cut by the Kevo River through ancient gneiss bedrock over thousands of years of erosion, reaching a maximum depth of about 80 m — one of the largest canyons in Northern Europe.",
     formation:
@@ -11480,6 +11839,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kevo Strict Nature Reserve was established in 1956, one of Finland's earliest strict nature reserves; access is prohibited outside designated trails, preserving the canyon's original state to the greatest extent possible.",
   },
   "archipelago-sea": {
+    // 全六段 sources: 约四万座岛屿、按数量计世界最密集群岛之一（部分来源给约五万上限，四万在常见引用范围内）；与 aland-islands 的约 6500 座形成的数量对比成立。⚠️ 未能拿到 Metsähallitus 一手 PDF（工具无法解析），仅三级来源交叉印证，确信度低于同批其他条目，下轮复核。核实 2026-09-10，未改动
     seeing:
       "The Archipelago Sea is a body of water off south-western Finland made up of about forty thousand islands and skerries, one of the densest island clusters anywhere in the world by island count.",
     formation:
@@ -11494,8 +11854,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The waters have historically been an important Finnish shipping and fishing area; today they are an important summer holiday and sailing recreation area, with many islands still holding traditional summer cottages.",
   },
   "kvarken-archipelago": {
+    // seeing sources: 抬升速率约 8.5 mm/年（瓦萨市官网，2 级）—— 略高于本库 hoga-kusten 的约 8 mm/年，distinguish 段的「略高」由此成立；这是会变的量，下轮复核。UNESCO 2000 年列入、2006 年扩展纳入芬兰侧，与瑞典侧 hoga-kusten 表述一致、并排读无冲突。核实 2026-09-10
     seeing:
-      "The Kvarken Archipelago is a low-lying island cluster on the Finnish side of the narrowest point of the Gulf of Bothnia; the land here continues to rise at about 1 cm per year.",
+      "The Kvarken Archipelago is a low-lying island cluster on the Finnish side of the narrowest point of the Gulf of Bothnia; the land here continues to rise at about 8.5 mm per year.",
     formation:
       "The heavy last-glacial ice sheet long depressed the crust here; since the ice retreated, the land has continued to rebound isostatically — one of the areas of greatest post-glacial land uplift anywhere on Earth — producing a distinctive landscape in which new islands continue to emerge from the sea.",
     observation:
@@ -11508,6 +11869,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local fishing villages have historically had to periodically extend their dock facilities seaward as the coastline continued to rise — a living human record of the ongoing land-uplift process.",
   },
   "bothnian-bay-coast": {
+    // 全六段 sources: 波的尼亚湾北岸（Perämeri）为波罗的海结冰范围最广、通常冰层最厚的海域（芬兰气象研究所 Ilmatieteen laitos，1 级）。核实 2026-09-10，未改动
     seeing:
       "The Bothnian Bay coast is Finland's northernmost Baltic Sea shoreline, with an ice season lasting several months each winter, and the most extensive and thickest ice cover found anywhere on the Baltic.",
     formation:
@@ -11524,8 +11886,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "aland-islands": {
     seeing:
       "The Åland Islands are an archipelago of about 6,500 islands and skerries at the entrance to the Baltic Sea, Finland's only autonomous region with Swedish as its sole official language.",
+    // formation sources: 最高点 Orrdalsklint（萨尔特维克）129.1 m —— 原写的 116 m 查无出处；岛礁数约 6500–6757，正文取下限；1921 年国际联盟裁决、瑞典语单一官方语言、非军事化地位均为公认史实。核实 2026-09-10
     formation:
-      "The archipelago's bedrock is likewise granite scoured by last-glacial ice, gradually raised above sea level by isostatic rebound; the archipelago's highest point is only 116 m, and the terrain overall is low and open.",
+      "The archipelago's bedrock is likewise granite scoured by last-glacial ice, gradually raised above sea level by isostatic rebound; the archipelago's highest point, Orrdalsklint in Saltvik, is only 129 m, and the terrain overall is low and open.",
     observation:
       "From the air, numerous low islands are scattered at the entrance to the Baltic Sea, with the main town of Mariehamn and other settlements dotted among them — an important transit area for shipping between Finland and Sweden.",
     distinguish:
@@ -11536,6 +11899,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1921 the League of Nations ruled on the question of Åland's status, establishing that it would enjoy a high degree of autonomy under Finnish sovereignty, with Swedish as its sole official language and a demilitarised status — an arrangement that continues to this day and is widely regarded as a historic example of the peaceful resolution of an international dispute.",
   },
   hailuoto: {
+    // 全六段 sources: 见 seeing 段 issue —— 「每年约1公顷」的面积扩大速率查不到出处也查不到反证；能查到的只有垂直抬升约 0.9–1 cm/年，是另一个量，不可换算。核实 2026-09-10
     seeing:
       "Hailuoto is a sandy island in the Gulf of Bothnia that continues to grow through isostatic rebound, its area still expanding by about 1 hectare per year.",
     formation:
@@ -11558,12 +11922,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the ridge rises in a long east-west line, its two flanks clearly distinct from the gentle lake-district terrain around it; the ski jump at Lahti is built directly on the ridge crest, an important landmark for identifying the landform.",
     distinguish:
       "Both Salpausselkä and Punkaharju are important Finnish glacial-deposition landforms, but Salpausselkä is a terminal moraine ridge formed by a long ice-margin standstill, stretching hundreds of kilometres, while Punkaharju is a much smaller esker formed by subglacial river deposition.",
+    // concept sources: 萨尔帕塞尔卡 2022-04-13 获评 UNESCO 世界地质公园，为芬兰第四个（unesco.org/en/iggp，1 级）；2010 年是芬兰首个地质公园罗库阿获批的年份，与本条无关。终碛岭长逾 600 km、成于新仙女木冷期（约 12.9–11.6 ka），与 UNESCO 官方页一致。核实 2026-09-10
     concept:
-      "Salpausselkä is one of the world's most important field samples for studying ice-sheet standstill processes during the Younger Dryas cold period and the mechanisms of terminal moraine formation, which is why a UNESCO Global Geopark was established here in 2010.",
+      "Salpausselkä is one of the world's most important field samples for studying ice-sheet standstill processes during the Younger Dryas cold period and the mechanisms of terminal moraine formation, which is why it was designated a UNESCO Global Geopark in 2022.",
     history:
       "The ridge's abundant groundwater and favourable geological conditions have historically made it an important basis for town siting in southern Finland, with cities such as Lahti built directly along its crest.",
   },
   "punkaharju-esker": {
+    // 全六段 sources: 1843 年沙皇尼古拉一世敕令设立「王领公园」（Kruununpuisto）保护该冰碛垄免于采伐。核实 2026-09-10，未改动
     seeing:
       "Punkaharju is a long, narrow esker formed by subglacial river deposition during the last ice age; at its narrowest point the road runs with the waters of Saimaa almost directly on either side.",
     formation:
@@ -11578,6 +11944,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In the 19th century, Russian Tsar Nicholas I ordered this natural landscape protected from logging, making it one of Finland's longest-protected natural landscapes.",
   },
   "koli-hills": {
+    // 全六段 sources: 乌科科利峰 347 m（高出皮耶利宁湖约 253 m）；石英岩年代约 20 亿年前（卡累利阿构造带 2500–1900 Ma）。核实 2026-09-10，未改动
     seeing:
       "Koli is a range of hills in eastern Finland built of quartzite roughly 2 billion years old; its peak, Ukko-Koli, at 347 m, overlooks Lake Pielinen and is regarded as Finland's most representative \"national landscape.\"",
     formation:
@@ -11592,6 +11959,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the early 20th century, Finnish painters and other artists repeatedly visited Koli and took it as a subject for their work, gradually making it an important symbol of Finnish national landscape and cultural identity; a national park was established in 1991.",
   },
   aavasaksa: {
+    // 全六段 sources: 阿瓦萨克萨丘 242 m；1736–1737 年莫佩尔蒂率法国科学院拉普兰探险队在此及周边测量子午线弧度以验证牛顿的地球扁球说（maupertuis.fi，2 级）。注：阿瓦萨克萨同时也是斯特鲁维测地弧的芬兰六个保护点位之一（19 世纪的另一段测量史），正文未提及不算错、只是未写全。核实 2026-09-10，未改动
     seeing:
       "Aavasaksa is an isolated hill above the Arctic Circle overlooking the Tornionjoki valley, at 242 m.",
     formation:
@@ -11606,6 +11974,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Between 1736 and 1737, a Lapland expedition dispatched by the French Academy of Sciences measured a meridian arc here and at nearby sites, providing key empirical data to test Newton's theory that the Earth was an oblate spheroid — an important event in the history of science.",
   },
   "ostrobothnia-plain": {
+    // 全六段 sources: 无可核实的具体数字断言（仅「地势最平坦、农业最发达区域之一」等定性表述）；地壳均衡抬升持续造陆的机制描述方向准确。核实 2026-09-10，未改动
     seeing:
       "The Ostrobothnia Plain is a low-lying coastal agricultural region on Finland's west coast that continues to expand through isostatic rebound, one of the flattest and most agriculturally developed regions in the country.",
     formation:
@@ -11622,6 +11991,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Luxembourg ============
   "oesling-plateau": {
+    // 全六段 sources: 克奈夫峰 560 m 为卢森堡最高点 —— 1952 年起长期认为邻近的布尔格普拉茨峰（约 558–559 m）更高，**1997 年 GPS 复测纠正**；ACT 2003 年地图标注 Kneiff 560 / Buurgplaatz 559。正文把这段更正史写进去了，是正确处理。核实 2026-09-11，未改动
     seeing:
       "The Oesling covers about a third of northern Luxembourg's territory, an eastward extension of the Ardennes; its highest point, the Kneiff, reaches 560 m, the highest point in the country.",
     formation:
@@ -11646,10 +12016,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Minett and the Oesling are important uplifted landforms in Luxembourg, but Minett is known for its iron-mining history and reddish-brown soil, while the Oesling is known for its ancient plateau landform extending from the Ardennes.",
     concept:
       "Minett's oolitic iron-ore layer is a classic geological sample for studying how a Jurassic shallow-sea sedimentary environment can produce economically valuable iron-ore resources, and it forms the geological foundation of Luxembourg's industrial history.",
+    // history sources: 米内特生物圈保护区 2020-10-28 设立，为**卢森堡单一国家**保护区（11 个市镇、约 200 km²），是该国首个也是唯一一个（unesco.org/en/mab/minett，1 级）。法国 Pays Haut Val d'Alzette 正另行申请、尚未获批；比利时未参与 —— 原文把「未来或可整合」写成了「已经共同列入」。核实 2026-09-11
     history:
-      "From the late 19th through the 20th century, Minett's iron-ore mining made Luxembourg one of Europe's important steel producers; in 2020 the region, together with cross-border areas in France and Belgium, was designated the UNESCO Minett Biosphere Reserve.",
+      "From the late 19th through the 20th century, Minett's iron-ore mining made Luxembourg one of Europe's important steel producers; in 2020 the region was designated the UNESCO Minett Biosphere Reserve, Luxembourg's first and so far only biosphere reserve; a neighbouring part of France is separately seeking its own designation, with cross-border integration a possibility for the future rather than something that already exists.",
   },
   "our-valley": {
+    // 全六段 sources: 维安登城堡 275 年为罗马哨所、约公元 1000 年建首座中世纪石堡、11–13 世纪历次扩建，正文「始建于10世纪」与官方时间线吻合；雨果 1871-06-08 至 08-22 在此避难约三个半月并作《恐怖的年代》。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Our Valley is a deeply cut valley where the Our River cuts through the Oesling plateau, forming the border between Luxembourg and Germany; Vianden Castle stands on a cliff above the valley.",
     formation:
@@ -11664,6 +12036,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Vianden Castle was first built in the 10th century and expanded many times since, one of the largest surviving feudal castles in Luxembourg; the 19th-century French writer Victor Hugo lived in exile here and wrote about the area.",
   },
   "clerve-valley": {
+    // 全六段 sources: 克莱尔沃城堡始建于 12 世纪（最古老的西翼可溯至 Gerhard of Sponheim 伯爵）；1944-12-16 至 18 的克莱尔沃战役是突出部战役开场战斗之一，城堡在此役被毁、战后由政府修复。按判据这是已结束、无持续对立的军事地理史实，保留。核实 2026-09-11，未改动
     seeing:
       "The Clerve Valley is a narrow valley where the Clerve River (a tributary of the Our) cuts through the Oesling plateau; the town of Clervaux is built along both banks of the valley.",
     formation:
@@ -11678,6 +12051,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Clervaux Castle was first built in the 12th century; the area was an important battlefield during the Battle of the Bulge in the Second World War, and the castle and valley still bear traces of this history.",
   },
   "eisch-valley": {
+    // 全六段 sources: 七堡多建于 11–13 世纪（安森堡老堡 1135 年首见文献、霍伦费尔斯堡 11 世纪起源、舍恩费尔斯堡 13 世纪主楼）；谷地自罗马—中世纪起有冲积铁矿与木炭熔炼、1564 年已有小型高炉，正文只称「繁荣」未夸大为工业化；七堡步道 37 km。核实 2026-09-11，未改动
     seeing:
       "The Eisch Valley is informally known as the \"Valley of the Seven Castles\" for the seven medieval castles found along it; most of the valley forms one of the largest nature reserves in Luxembourg.",
     formation:
@@ -11692,6 +12066,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Most of the valley's seven castles were built between the 11th and 13th centuries; the region once thrived on steel production, but nature has since reclaimed the area, and a roughly 37-km footpath now links the castles along the valley.",
   },
   "moselle-valley-lu": {
+    // 全六段 sources: 葡萄种植可溯至罗马时期 —— **与本库德国侧 moselle-valley 条目并排读一致**（同一条河、同一段种植传统史，两侧无冲突）。核实 2026-09-11，未改动
     seeing:
       "The Luxembourg section of the Moselle Valley: the Moselle forms the border between Luxembourg and Germany, and the gentle slopes along its banks make up Luxembourg's only wine-growing region.",
     formation:
@@ -11706,8 +12081,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Winegrowing in the Moselle Valley traces back to Roman times, one of Luxembourg's oldest agricultural traditions; riverside towns such as Remich still rely on the wine industry as a key economic pillar today.",
   },
   "upper-sure-lake": {
+    // seeing sources: 大坝 1956 动工 / 1957 建成 / 1959 首次蓄满；湖面约 3.8 km²（380 ha）；供应约 70% **人口**（非「家庭」）的饮用水 —— 均为 SEBES 与公共工程部官方口径（1 级）。原写的「1961 年」不对应任何一个官方节点；「3.08 km²」疑为小数点错位。核实 2026-09-11
     seeing:
-      "The Upper Sûre Lake is an artificial reservoir formed in 1961 by damming the Sûre, covering about 3.08 km² and supplying about 70% of Luxembourg's households with drinking water.",
+      "The Upper Sûre Lake is an artificial reservoir created by damming the Sûre in the late 1950s — the dam was begun in 1956, built in 1957 and first filled in 1959 — covering about 3.8 km² and supplying drinking water to about 70% of Luxembourg's population.",
     formation:
       "The lake was created artificially by a dam across the Sûre's channel, flooding the original valley; the shoreline follows the original valley's winding contours.",
     observation:
@@ -11717,9 +12093,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "As Luxembourg's single most important drinking-water source, the Upper Sûre Lake is a classic case for studying how a small landlocked country secures its water supply through an artificial reservoir project.",
     history:
-      "The dam was completed in 1961, an important piece of post-war Luxembourg water infrastructure; the surrounding Upper Sûre Nature Park is now an important area for ecotourism and recreation in Luxembourg.",
+      "The dam was begun in 1956 and built in 1957, an important piece of post-war Luxembourg water infrastructure; the surrounding Upper Sûre Nature Park is now an important area for ecotourism and recreation in Luxembourg.",
   },
   "sure-river": {
+    // 全六段 sources: 全长约 206 km、境内约 136 km —— 采**卢森堡本国官方口径**（政府环境门户 environnement.public.lu 1 级 + 官方旅游局 2 级，境内另有 135 km 的四舍五入版本）。⚠️ 英文维基给总长 173 km，与本国官方及法语维基（206 km）冲突，若日后查明换算方式不同需回来复核。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Sûre rises in Belgium and flows through northern and central Luxembourg, running about 206 km in total (about 136 km within Luxembourg) — the longest river in the country.",
     formation:
@@ -11734,6 +12111,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Riverside towns such as Diekirch historically grew up around navigation and trade on the Sûre; today the river's banks are an important area for history, culture and outdoor recreation in Luxembourg.",
   },
   "alzette-river": {
+    // 全六段 sources: 源出法国默尔特—摩泽尔省 Villerupt 附近的 Thil，向北流经卢森堡市；深切砂岩台地成峡谷、塑造老城防御地形，与 luxembourg-plateau 条目并读一致。核实 2026-09-11，未改动
     seeing:
       "The Alzette rises in France and flows north through Luxembourg City, the capital, and the southern Minett industrial region — the main river running through Luxembourg's most densely populated area.",
     formation:
@@ -11748,6 +12126,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Minett industrial region along the river's southern stretch historically thrived on iron-ore mining, the birthplace of Luxembourg's industrialisation; Luxembourg City's old town, along the river's middle stretch, has been a strategic site since the 10th century thanks to the natural defensive advantage of the gorge.",
   },
   "mullerthal-berdorf": {
+    // 全六段 sources: 米勒达尔的「卢森堡小瑞士」别称、砂岩迷宫地貌、贝多夫石柱岩缝均为公认事实；Mullerthal Trail 以该区域为核心路段。核实 2026-09-11，未改动
     seeing:
       "The Mullerthal region is known as Luxembourg's \"Little Switzerland\" for its heavily eroded sandstone landforms; the area around Berdorf is densely packed with honeycomb-like sandstone pillars and narrow rock passages.",
     formation:
@@ -11762,6 +12141,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local place names such as \"Wollefsschlucht\" (Wolf's Gorge) record long-standing local folklore; the Mullerthal region has been an important Luxembourg nature-tourism destination since the 19th century, and is now the core area of the long-distance Mullerthal Trail.",
   },
   schiessentumpel: {
+    // 全六段 sources: 砂岩拱桥由石匠 Jean-Pierre Prommenschenkel 于 1879-03-20 至 07-27 建成（仅四个月），桥上有鳄鱼头、蜗牛等雕刻。核实 2026-09-11，未改动
     seeing:
       "The Schiessentümpel is a small, three-tiered cascading waterfall in the Mullerthal region; a sandstone arch bridge built in front of it in 1879 has become an iconic sight of the area.",
     formation:
@@ -11776,6 +12156,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The sandstone arch bridge in front of the waterfall was built in 1879 and remains in use more than a century later, now an iconic sight and popular photo spot in Luxembourg's \"Little Switzerland.\"",
   },
   "luxembourg-plateau": {
+    // 全六段 sources: 963 年西格弗里德伯爵在博克岩建 Lucilinburhuc 城堡，为卢森堡建城起点（卢森堡政府官网，1 级）；老城与要塞 1994-12-17 列入 UNESCO（whc.unesco.org/en/list/699，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Luxembourg Plateau is a sandstone plateau in south-central Gutland where the capital, Luxembourg City, is built; gorges cut by the Alzette and Pétrusse rivers surround the old town.",
     formation:
@@ -11792,6 +12173,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Vietnam ============
   fansipan: {
+    // 全六段 sources: 3147 m（2019 年复测）为越南与中南半岛最高峰；山体为约 250–260 Ma 二叠—三叠之交的花岗质侵入体；法属时期测绘首测 3143 m。核实 2026-09-11，未改动
     seeing:
       "Fansipan is the highest peak in Vietnam and mainland Southeast Asia at 3,147 m, the high point of the Hoang Lien Son range, cold year-round, its summit preserving a cloud-forest and alpine vegetation ecosystem.",
     formation:
@@ -11806,6 +12188,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The peak sits within Hoang Lien National Park, an important nature reserve in Vietnam; it was surveyed and confirmed as mainland Southeast Asia's highest point during the French colonial period.",
   },
   "phong-nha-ke-bang": {
+    // 全六段 sources: 石灰岩演化约 4 亿年（古生代泥盆—石炭纪），为亚洲现存最古老、最大的喀斯特之一；UNESCO 三期未串位 —— 2003 年首次列入（标准 viii）、2015 年依生物多样性标准扩展（85,754 → 126,236 ha）、2026-06-05 第 38 届 MAB-ICC 认定为世界生物圈保护区（1 级）。洞穴总长见 issue。核实 2026-09-11
     seeing:
       "Phong Nha-Ke Bang is a karst mountain area in central Vietnam along the Laos border, with over 220 km of documented caves and underground waterways, home to Son Doong, the world's largest natural cave.",
     formation:
@@ -11820,6 +12203,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Inscribed on the UNESCO World Heritage List in 2003, with the listing extended in 2015 following new cave discoveries, and recognised as a UNESCO Biosphere Reserve in 2026.",
   },
   "ba-na-hills": {
+    // 全六段 sources: 1487 m；山顶较沿海低约 7–10°C，正文「约10摄氏度」落在区间内；法属时期山顶避暑山庄史实属实。核实 2026-09-11，未改动
     seeing:
       "Ba Na Hills is a 1,487 m peak west of Da Nang, its summit climate roughly 10°C cooler than the coastal city below, and a well-known highland tourist destination in central Vietnam.",
     formation:
@@ -11834,6 +12218,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "French colonial authorities built a hill-station retreat at the summit in the early 20th century; today the summit is reachable by cable car, continuing this area's historic role as a mountain retreat.",
   },
   "bach-ma-mountain": {
+    // 全六段 sources: 1448 m；1932-07 法国工程师 Girard 勘定为避暑山庄选址 → 1934 年道路完工 → 1936 年首批别墅法令 → 1942 年建成约 139 栋，正文「十年间约140座」与之相符；1991 年设为国家公园。核实 2026-09-11，未改动
     seeing:
       "Bach Ma is a 1,448 m peak between Hue and Da Nang; French colonial authorities built a hill-station retreat here in 1932, and weathered French villa ruins remain scattered across the mountainside today.",
     formation:
@@ -11848,6 +12233,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1932 the French engineer Girard selected the summit as a hill-station retreat for the colonial administration of Hue; about 140 buildings were built over the following decade, and the mountain was designated a national park in 1991.",
   },
   "dong-van-karst-plateau": {
+    // 全六段 sources: 2010-10-03 列入 UNESCO 世界地质公园网络，为**越南首个**（东南亚第二个）—— 未与越南其他地质公园（Dak Nong 2020、Lang Son 2024）串位；面积各来源 2265.7–2356 km²，正文「约2345」落在区间内。⚠️ 两次大灭绝的表述里，第一次严格说是晚泥盆世 F-F 事件（约 364 Ma，位于泥盆纪内部）而非泥盆—石炭系界线，多数资料同样用通俗说法，暂不改。族群定居年代见 issue。核实 2026-09-11
     seeing:
       "The Dong Van Karst Plateau is a karst tableland covering the four northernmost districts of Ha Giang Province, Vietnam's northernmost province, spanning about 2,345 km²; in 2010 it became Vietnam's first UNESCO Global Geopark.",
     formation:
@@ -11862,6 +12248,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The plateau is home to 17 ethnic groups including the Hmong, Lo Lo, and Bo Y, some of whom have lived here for 500 to 800 years, their terraced farming traditions closely interwoven with the karst landscape.",
   },
   "central-highlands-tay-nguyen": {
+    // 全六段 sources: 海拔约 500–1500 m；玄武岩红土；大叻 1893 年由耶尔森发现并经法方开发为避暑地。⚠️ 红线自查：正文只写高原地貌、玄武岩土壤与咖啡种植这类地理—农业事实，**未涉族群构成、移民或土地议题**。核实 2026-09-11，未改动
     seeing:
       "The Central Highlands (Tây Nguyên) is a collective name for a series of connected plateaus in south-central Vietnam at roughly 500–1,500 m elevation, the country's main coffee-growing region.",
     formation:
@@ -11886,8 +12273,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cat Ba Island and Ha Long Bay belong to the same limestone karst geological unit, but Cat Ba is a comparatively intact large island preserving multiple terrestrial ecosystems, while Ha Long Bay is known for its scattered tower-shaped islets.",
     concept:
       "Cat Ba Island hosts a range of ecosystems including subtropical evergreen forest, freshwater swamp forest, mangroves, and coral reefs, making it an important sample for studying ecosystem diversity on limestone islands.",
+    // history sources: 全岛约 354 km²，1986 年设国家公园（含约 90 km² 近岸水域）；2023-09-16 经边界修改与下龙湾合并为跨省遗产 —— 原文写「近年」，既会过期又把一个有确切日期的事件写成了趋势。核实 2026-09-11
     history:
-      "Designated a national park in 1986, one of Vietnam's earlier national parks, and has drawn renewed attention in recent years as its surrounding waters were included in an expanded World Heritage nomination alongside Ha Long Bay.",
+      "Designated a national park in 1986, one of Vietnam's earlier national parks; in 2023 a World Heritage boundary modification merged it with Ha Long Bay into the cross-provincial Ha Long Bay - Cat Ba Archipelago site.",
   },
   "con-dao": {
     seeing:
@@ -11900,10 +12288,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Con Dao and Phu Quoc are both important islands in southern Vietnam, but Con Dao is smaller and known for nature conservation and historic sites, while Phu Quoc is larger and known for large-scale tourism development.",
     concept:
       "The waters around Con Dao are an important nesting site for green sea turtles in Vietnam, making it an important sample for studying marine ecological conservation on tropical islands.",
+    // history sources: 16 座岛屿、主岛昆山岛最大、1993 年设为国家公园（覆盖 16 岛中 14 岛、约 2 万 ha，昆岛国家公园官网 1 级）；周边海域约占越南绿海龟产卵量九成，正文用「重要产卵地之一」更保守。⚠️ history 段原写的 20 世纪监狱史按零争议红线移除。核实 2026-09-11
     history:
-      "Con Dao held a prison facility during the 20th-century French colonial period; today the related historic sites coexist with the nature reserve, making it an important historical and ecological tourism destination in Vietnam.",
+      "The whole archipelago was designated Con Dao National Park in 1993, an important nature reserve and a key habitat for marine life including green sea turtles.",
   },
   "phu-quoc": {
+    // 全六段 sources: ⚠️ 口径提示 —— 589 km² 对应的是**富国特区**（含周边 28 座小岛）总面积，仅主岛约 574 km²，两个数都见于官方/旅游资料、差约 2.6%；下轮考虑在正文写明口径。核实 2026-09-11，未改动
     seeing:
       "Phu Quoc is Vietnam's largest island, covering about 589 km², with more than half its area forested within Phu Quoc National Park.",
     formation:
@@ -11918,6 +12308,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "An important island tourism destination in southern Vietnam; rapid infrastructure development in recent years has made it one of Vietnam's more internationally open tourist islands.",
   },
   "ly-son-island": {
+    // 全六段 sources: 五座命名火山口（Thoi Loi / Gieng Soi / Gieng Tien / Chua Hang / Hang Cau）与大蒜种植地位均确认（岛上另有约 10 处火山口遗迹、含 3 处海底，正文取地表五座不冲突）；整体成因约 25–30 Ma，个别火山口另有 9–11 Ma 的定年，正文「多期次」已隐含这一点。核实 2026-09-11，未改动
     seeing:
       "Ly Son is a volcanic island off the coast of Quang Ngai Province in central Vietnam; its five dormant volcanic craters are named after the five classical elements, and the island is an important garlic-growing area.",
     formation:
@@ -11932,6 +12323,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island's long-standing garlic-growing tradition is closely tied to the fertility of its volcanic-ash soil, a classic case of Vietnamese coastal-island agriculture depending on geological conditions.",
   },
   "cu-lao-cham": {
+    // 全六段 sources: 「占婆岛—会安」生物圈保护区 2009-05-26 经 UNESCO MAB 国际协调理事会批准；会安古城本身 1999 年列入文化遗产，两个年份未混淆。核实 2026-09-11，未改动
     seeing:
       "Cu Lao Cham is a group of islands downstream of the Thu Bon River's mouth; in 2009 the \"Cu Lao Cham-Hoi An\" Biosphere Reserve was inscribed on UNESCO's World Network of Biosphere Reserves.",
     formation:
@@ -11956,10 +12348,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ha Long Bay and Cat Ba Island belong to the same limestone karst geological unit, but Ha Long Bay is known for its scattered tower islets on open water, while Cat Ba is a comparatively intact large island.",
     concept:
       "Ha Long Bay's drowned karst landform is a classic case for studying how sea-level change transforms a terrestrial karst-tower landscape into an offshore island group.",
+    // history sources: 海域约 1553 km²、岛屿数各口径 1133（严格遗产区内）–1969（含未命名小岛），正文「约1600座」落在区间内；UNESCO 三期 —— 1994-12-17 依标准 vii（景观美学）首次列入、2000-11-29 依标准 viii（地质地貌）扩展、2023-09-16 边界修改与吉婆群岛合并为跨省遗产（whc.unesco.org/en/list/672，1 级）。**原文把 1994/2000 两期的依据标准对调了，且漏掉 2023 这一期。** 核实 2026-09-11
     history:
-      "Inscribed on the UNESCO World Heritage List twice — in 1994 for its geological and geomorphological value, and in 2000 for its scenic and aesthetic value — Ha Long Bay is one of Vietnam's most iconic natural landscapes.",
+      "Inscribed on the UNESCO World Heritage List twice — in 1994 for its scenic and aesthetic value (criterion vii), and in 2000 for its geological and geomorphological value (criterion viii) — and extended in 2023 by a boundary modification that merged it with the Cat Ba Archipelago as the cross-provincial Ha Long Bay - Cat Ba Archipelago site, Ha Long Bay is one of Vietnam's most iconic natural landscapes.",
   },
   "mui-ne-dunes": {
+    // 全六段 sources: 红沙丘因沉积物富含氧化铁而呈橙红色；美奈自 20 世纪末由渔村发展为风筝冲浪与沙丘旅游地。核实 2026-09-11，未改动
     seeing:
       "The Mui Ne Dunes are a field of red and white sand dunes on the south-central Vietnamese coast, built up from coastal sand long carried by prevailing winds.",
     formation:
@@ -11974,6 +12368,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mui Ne has developed since the late 20th century from a fishing village into a well-known Vietnamese destination for kitesurfing and dune tourism.",
   },
   "nha-trang-bay": {
+    // 全六段 sources: 琴石岬为石英、长石、云母构成的花岗岩，经潮汐与风化侵蚀成层叠巨石。核实 2026-09-11，未改动
     seeing:
       "Nha Trang Bay is an open bay on Vietnam's south-central coast, scattered with islands and coral reefs, and an important diving and bay-tourism destination in the country.",
     formation:
@@ -11988,6 +12383,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Nha Trang has developed since the 20th century into an important Vietnamese seaside resort city; its island and coral-reef resources have made it a popular diving destination.",
   },
   "ba-be-lake": {
+    // 全六段 sources: 由三段相连水域（Pe Leng / Pe Lu / Pe Lam）组成，「巴别」即「三个湖湾」；公认为越南最大天然淡水湖；1992 年设为国家公园（越南第 8 座）。核实 2026-09-11，未改动
     seeing:
       "Ba Be Lake is a natural freshwater lake in northern Vietnam, actually made up of three connected bodies of water, and one of the largest natural lakes in the country.",
     formation:
@@ -12002,6 +12398,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1992, Ba Be is an important area for ecotourism and ethnic-minority communities in northern Vietnam.",
   },
   "lak-lake": {
+    // 全六段 sources: 距邦美蜀市中心各来源 50–56 km，正文「约55公里」落在区间内；玄武岩高原地表径流汇聚成湖。核实 2026-09-11，未改动
     seeing:
       "Lak Lake is a natural freshwater lake in Dak Lak Province on the Central Highlands, about 55 km from the centre of Buon Ma Thuot, with a rich surrounding ecosystem.",
     formation:
@@ -12016,6 +12413,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake's surrounding ecosystem is home to several species listed in Vietnam's Red Data Book of endangered species, making it an important ecological conservation area on the Central Highlands.",
   },
   "red-river": {
+    // 全六段 sources: 全长约 1149 km（各来源 1149–1200 收敛），源出中国云南、经河内注入北部湾。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Red River rises in China's Yunnan province, flows through north-western Vietnam, and joins Vietnam's lowland river system near Hanoi, running about 1,149 km in total and the main river system of northern Vietnam.",
     formation:
@@ -12030,6 +12428,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Red River's banks have long been the core area of population and civilisation in northern Vietnam, and Hanoi has developed around this river system to this day.",
   },
   "mekong-river-vn": {
+    // 全六段 sources: ✅ **本条没给湄公河总长数字**，恰好避开了同批泰国条目那个「各口径 4350–4909 km 差异极大」的坑 —— 进越南后分前江、后江两支、南部多口入海，只写可核的分流事实。核实 2026-09-11，未改动
     seeing:
       "Within Vietnam the Mekong splits into two main branches, the Tien and Hau rivers, with a dense network of channels before finally splitting into multiple mouths along Vietnam's southern coast.",
     formation:
@@ -12044,6 +12443,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Riverside towns such as My Tho have long served as important water-transport trading posts in southern Vietnam, and the Mekong's water system remains central to local livelihoods today.",
   },
   "perfume-river": {
+    // 全六段 sources: 阮朝 1802–1945 年定都顺化；顺化古迹群 1993-12 列入 UNESCO，为越南首个世界遗产（whc.unesco.org/en/list/678，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Perfume River rises in the Truong Son Range, flows through the former Vietnamese capital of Hue, and empties into a coastal lagoon; it takes its name from the faint fragrance the water carries after cinnamon bark and medicinal herbs fall into it from the forests along its course.",
     formation:
@@ -12058,6 +12458,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Nguyen dynasty (1802–1945) made Hue its capital; the imperial citadel and tombs along the Perfume River bear witness to the rise and fall of Vietnam's last feudal dynasty, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
   },
   "trang-an-landscape-complex": {
+    // 全六段 sources: 面积 6226 ha；石灰岩演化逾 2.5 亿年；洞穴考古显示逾 3 万年连续人类活动；2014 年列入，为**越南首个文化与自然混合遗产**。核实 2026-09-11，未改动
     seeing:
       "The Trang An Landscape Complex is a valley in Ninh Binh Province where karst towers interweave with underground waterways, covering about 6,226 ha, its valleys threaded with submerged caves navigable by small boat.",
     formation:
@@ -12072,6 +12473,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Archaeological findings confirm roughly 30,000 years of continuous human adaptation to the changing environment in this area; in 2014 Trang An was inscribed on the UNESCO World Heritage List as Vietnam's first mixed cultural and natural heritage site.",
   },
   "tu-san-canyon": {
+    // 全六段 sources: 深度各来源 700–800 m 与 900–1000 m 两说，正文取较保守的 700–800 m（越通社 VietnamPlus，2 级）；马匹粮山口为经典观景点。⚠️ 红线：正文只写峡谷与观景，未涉边界。核实 2026-09-11，未改动
     seeing:
       "Tu San Canyon, on the Dong Van Karst Plateau, is one of the deepest canyons in Southeast Asia at roughly 700–800 m deep; the Ma Pi Leng Pass is the classic viewpoint for the full canyon.",
     formation:
@@ -12088,18 +12490,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ban-gioc-waterfall": {
     seeing:
       "Ban Gioc Waterfall, on the Quay Son River at the Vietnam-China border, is about 300 m wide with a drop of about 30 m — Asia's largest transboundary waterfall and the largest waterfall in Vietnam.",
+    // 全六段 sources: ⚠️ 零争议红线 —— 原 formation / concept / history 三段都把**边界线**写进了正文（「沿边境线一分为二」「国际边界线自然划定」「沿边境线分布」），本轮一并改为纯地貌表述。瀑布宽约 300 m、落差约 30 m、为亚洲规模最大的跨境瀑布，这些是中性地理事实、保留；「跨境河流」作为中性地理描述也保留（与本库克罗地亚等国的处理一致）。核实 2026-09-11
     formation:
-      "The bedrock of this river stretch is limestone; long water erosion has shaped a stepped cascade in the riverbed, and the waterfall is naturally divided in two along the river's border line.",
+      "The bedrock of this river stretch is limestone; long water erosion has shaped a stepped cascade in the riverbed, and near the top the flow is split by an island in the river into a main fall and a smaller secondary one, each dropping as its own curtain of water.",
     observation:
       "From the air, Ban Gioc's water drops in several tiers, limestone cliffs and karst landforms on both banks setting off the scene, with a clear emerald pool below the falls.",
     distinguish:
       "Ban Gioc Waterfall and Tu San Canyon are both landforms shaped by flowing water, but Ban Gioc is a stepped waterfall on a transboundary river, while Tu San Canyon is a deep-cut gorge on the plateau.",
     concept:
-      "As Asia's largest transboundary waterfall, Ban Gioc is a sample for studying the relationship between transboundary river landforms and the natural delineation of international borders.",
+      "As Asia's largest transboundary waterfall, Ban Gioc is a sample for studying how long-term river erosion shapes a stepped waterfall.",
     history:
-      "The waterfall follows the natural border line formed by the Quay Son River, making it a well-known natural landmark along the Vietnam-China border.",
+      "The waterfall lies on a downstream stretch of the Quay Son River and is a well-known natural landmark in the area.",
   },
   "red-river-delta": {
+    // 全六段 sources: ✅ **口径分得很清**：越南统计口径里「红河三角洲经济社会区」（含 11 省市的行政规划区）约 2.13 万 km²，而地貌意义上的冲积平原本身约 1.5 万 km² —— 正文写的是「三角形冲积平原」，采用地貌口径正确，**没有与行政区划口径混淆**。河内（升龙）1010 年李朝定都。核实 2026-09-11，未改动
     seeing:
       "The Red River Delta is a triangular alluvial plain built up by long-term sediment deposition from the Red River and its tributaries, covering about 15,000 km² and one of Vietnam's two main agricultural core regions.",
     formation:
@@ -12114,6 +12518,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Red River Delta has long been the most densely populated and agriculturally developed region of northern Vietnam, and Hanoi's history as a capital dates back to the 11th century.",
   },
   "mekong-delta": {
+    // 全六段 sources: 越南境内约 3.9–4.05 万 km²；✅ 正文写「世界最大河流三角洲**之一**」而非具体排名（公认排在亚马逊、恒河—布拉马普特拉之后第三），**说不出精确排名就降级为不带排名的表述**，符合本库规范。核实 2026-09-11，未改动
     seeing:
       "The Mekong Delta is the vast alluvial plain the Mekong builds in southern Vietnam before reaching the sea, covering about 39,000 km² and one of the largest river deltas in the world.",
     formation:
@@ -12138,11 +12543,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ngu Hanh Son and Ba Na Hills are both representative landforms around Da Nang, but Ngu Hanh Son is a set of low coastal hills known for its marble caves and religious grottoes, while Ba Na Hills is a high-elevation peak known for its cloud climate and cable-car resort.",
     concept:
       "Ngu Hanh Son's hills rising independently from flat land are a sample for studying how a marble body left standing as isolated residual hills through differential weathering on flat terrain.",
+    // history sources: 原文把佛教与印度教造像统一归为「阮朝以来」—— 印度教造像可追溯至更早的占婆时期，只有佛教造像与摩崖石刻多为阮朝以来。本轮只去掉被证伪的统一归期、不补未查实的断代，精确年代见 issue。核实 2026-09-11
     history:
-      "The hills contain numerous Buddhist and Hindu rock-cut sculptures dating from the Nguyen dynasty onward, making it an important religious and geological tourism site in central Vietnam.",
+      "The hills contain numerous Buddhist and Hindu rock-cut sculptures from a range of periods, making it an important religious and geological tourism site in central Vietnam.",
   },
   // ============ Thailand ============
   "doi-inthanon": {
+    // 全六段 sources: 茵他侬山 2565 m 为泰国最高峰；国家公园 1972-10-02 设立；山名取自关注森林保护的清迈王 Inthawichayanon。核实 2026-09-11，未改动
     seeing:
       "Doi Inthanon is Thailand's highest peak at 2,565 m, a granite batholith and the high point of the Thanon Thongchai Range in northern Thailand.",
     formation:
@@ -12157,8 +12564,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Named for the late Chiang Mai ruler Inthawichayanon, who was concerned about deforestation in the north during his lifetime; designated a national park in 1972.",
   },
   "doi-luang-chiang-dao": {
+    // seeing sources: 「泰国第三高峰」属实（次于因通山 2565 m、帕黑山 2296 m）；海拔各来源分歧达 100 m（2175 / 2225 / 2275），**没有一个支持原写的 2138**，故写区间不择一；清道山生物圈保护区 2021-09-15 列入 UNESCO MAB，为泰国第五个（1 级）。核实 2026-09-11
     seeing:
-      "Doi Luang Chiang Dao is Thailand's third-highest peak at 2,138 m, a limestone karst massif riddled with one of the country's largest cave systems.",
+      "Doi Luang Chiang Dao is Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems.",
     formation:
       "The massif's bedrock is Palaeozoic limestone; long dissolution by groundwater has carved an extensive cave network, leaving a steep, jagged outline that contrasts sharply with the rounded granite peaks nearby.",
     observation:
@@ -12171,6 +12579,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2021 the Doi Luang Chiang Dao Biosphere Reserve was added to UNESCO's Man and the Biosphere Programme, an important conservation area in northern Thailand.",
   },
   "doi-suthep-pui": {
+    // 全六段 sources: 素贴山 1676 m；素贴寺始建于 14 世纪兰纳王国；国家公园 1981-04-14 设立（泰国第 24 座）。核实 2026-09-11，未改动
     seeing:
       "Doi Suthep is a 1,676 m peak west of Chiang Mai; Wat Phra That Doi Suthep, founded on its slope in the 14th century, is one of northern Thailand's most important Buddhist pilgrimage sites.",
     formation:
@@ -12191,14 +12600,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The massif is a granite batholith; long weathering under a wet tropical climate has produced dense vegetation and a well-developed drainage network, with numerous rivers radiating outward from the mountain.",
     observation:
       "From the air, Khao Luang rises high above the narrow southern Thai peninsula, wreathed in cloud year-round; its wet mountain climate sustains dense rainforest and extensive orchards.",
+    // distinguish sources: 考銮山 1780 m 为泰国南部半岛最高点，1974-12-18 设为泰国第 9 座国家公园；与茵他侬山（全境最高 2565 m）直线距离约 1138 km。核实 2026-09-11
     distinguish:
-      "Khao Luang and Doi Inthanon are both among Thailand's highest peaks, but Khao Luang is the high point of the southern peninsula, while Doi Inthanon is the highest point in the country as a whole, several hundred kilometres apart.",
+      "Khao Luang and Doi Inthanon are both among Thailand's highest peaks, but Khao Luang is the high point of the southern peninsula, while Doi Inthanon is the highest point in the country as a whole, over 1,100 km apart in a straight line.",
     concept:
       "As the highest peak on Thailand's narrow southern peninsula, Khao Luang is an important reference for understanding the north-south climate and vegetation contrasts along this elongated landform.",
     history:
       "Designated a national park in 1974; its wet mountain climate has long made it an important fruit-growing region in southern Thailand, with a long history of hillside orchards.",
   },
   "khao-yai": {
+    // 全六段 sources: 1962 年设立，**泰国第一座国家公园**；「丹辇拉扎—考艾森林群」2005 年列入 UNESCO（whc.unesco.org/en/list/590，1 级）。注：此处的丹辇拉扎山脉即 khorat-plateau 条目本轮改正后引用的那条。核实 2026-09-11，未改动
     seeing:
       "Khao Yai is a mountain forest spanning the south-western edge of the Khorat Plateau; designated in 1962, it was Thailand's first national park.",
     formation:
@@ -12213,6 +12624,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated Thailand's first national park in 1962; in 2005 the \"Dong Phayayen–Khao Yai Forest Complex\" was inscribed on the UNESCO World Heritage List.",
   },
   "thung-yai-huai-kha-khaeng": {
+    // 全六段 sources: 面积 622,200 ha、1991 年列入 UNESCO、栖息泰国约 77% 的大型哺乳动物种群 —— 三项均由 UNESCO 官方数据表确认（whc.unesco.org/en/list/591，1 级）。正文只写自然地貌与保护区制度，未涉边境管控或族群，符合红线。核实 2026-09-11，未改动
     seeing:
       "The Thung Yai–Huai Kha Khaeng Wildlife Sanctuaries form a mountain forest along Thailand's border with Myanmar, covering about 622,200 hectares — the largest conservation area remaining in mainland Southeast Asia.",
     formation:
@@ -12237,10 +12649,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Khorat Plateau and Phu Kradueng share the same geological unit, but the Khorat Plateau refers to the vast tableland as a whole, while Phu Kradueng is a single, sharply outlined sandstone mesa on the plateau's eastern side.",
     concept:
       "As one of Thailand's largest landform units, the Khorat Plateau is an important sample for studying the relationship between inland tableland topography and rain-fed agriculture on the Southeast Asian mainland.",
+    // history sources: 高原面积约 155,000 km²、约占泰国国土三成，正文「三分之一」成立；西缘的两条天然分界是碧差汶山脉与丹辇拉扎山脉（Dong Phaya Yen，即本库 khao-yai 条目「丹辇拉扎—考艾森林群」所属那条）——原文把 Phetchabun 的两种转写（碧差汶/佩差邦、Phetchabun/Petchabun）并列成了两条山脉。核实 2026-09-11
     history:
-      "The Phetchabun and Petchabun ranges along the plateau's rim have long formed a natural boundary between central and north-eastern Thailand; the formation of the Isan cultural region is closely tied to this geographic unit.",
+      "The Phetchabun and Dong Phaya Yen ranges along the plateau's rim have long formed a natural boundary between central and north-eastern Thailand; the formation of the Isan cultural region is closely tied to this geographic unit.",
   },
   "phu-kradueng": {
+    // 全六段 sources: 山顶台地约 60 km²、平均海拔约 1200–1250 m；1962-11-23 设立，为泰国第二座国家公园。核实 2026-09-11，未改动
     seeing:
       "Phu Kradueng is a heart-shaped sandstone mesa in Loei Province, north-eastern Thailand, with a summit plateau covering about 60 km² at an average elevation of roughly 1,250 m.",
     formation:
@@ -12255,6 +12669,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated Thailand's second national park in 1962, one of the country's earliest national parks.",
   },
   "similan-islands": {
+    // 全六段 sources: 11 座岛屿（1998 年由 9 座扩至 11 座）、离岸约 70 km、陆地约 26 km²、1982 年设立（DNP 官方，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Similan Islands are a granite archipelago of 11 islands in the Andaman Sea, about 70 km offshore, with a land area of roughly 26 km².",
     formation:
@@ -12269,6 +12684,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1982, the Similan Islands are a well-known diving and snorkelling destination in the Andaman Sea.",
   },
   "surin-islands": {
+    // 全六段 sources: 5 座主要岛屿；1981-07-09 设立（泰国第 29 座国家公园）；莫肯人传统聚居于此。核实 2026-09-11，未改动
     seeing:
       "The Surin Islands are a group of 5 granite islands in the Andaman Sea near the Myanmar border, designated a national marine park in 1981.",
     formation:
@@ -12283,8 +12699,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "One of the traditional settlement areas of Thailand's seafaring Moken people, who have long lived aboard boats and subsisted on marine fishing.",
   },
   "ko-tarutao": {
+    // seeing sources: 达鲁涛 1974-04-19 为泰国**第二座**海洋型国家公园；首座是 1966 年的三百峰山（khao-sam-roi-yot，本库该条目写对了，航线解说 dmk-hkt 也写对了）。原文三段都写成「首座」，与本库自己的条目直接互相证伪。核实 2026-09-11
     seeing:
-      "Ko Tarutao is a limestone-and-sandstone island off Thailand's southernmost coast, the main island of the country's first national marine park, established in 1974.",
+      "Ko Tarutao is a limestone-and-sandstone island off Thailand's southernmost coast, the main island of the country's second national marine park, established in 1974 — the first was Khao Sam Roi Yot, designated in 1966.",
     formation:
       "The island's bedrock combines limestone and sandstone; long dissolution and erosion have shaped several limestone caves and steep cliffs across the island.",
     observation:
@@ -12292,11 +12709,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Ko Tarutao and the Similan Islands are both Thai national marine parks, but Ko Tarutao's bedrock combines limestone and sandstone and preserves extensive primary rainforest, while the Similans are defined by granite boulder landforms.",
     concept:
-      "As the main island of Thailand's first national marine park, Ko Tarutao is a sample for studying landform evolution on islands with mixed limestone-sandstone bedrock.",
+      "As the main island of Thailand's second national marine park, Ko Tarutao is a sample for studying landform evolution on islands with mixed limestone-sandstone bedrock.",
     history:
-      "Designated Thailand's first national marine park in 1974, the starting point of the country's marine protected-area system.",
+      "Designated Thailand's second national marine park in 1974, an early landmark in the country's marine protected-area system, after Khao Sam Roi Yot in 1966.",
   },
   "phi-phi-islands": {
+    // 全六段 sources: 二叠纪石灰岩基岩；玛雅湾 2018-06 起封闭、延长至 2022 年，此后每年 8–9 月季节性封闭 —— 正文「自2018年起阶段性封闭」准确。核实 2026-09-11，未改动
     seeing:
       "The Phi Phi Islands are a group of Permian limestone islands in the Andaman Sea; a narrow sandbar connects Phi Phi Don and Phi Phi Leh.",
     formation:
@@ -12311,6 +12729,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Maya Bay saw a sharp rise in visitors after becoming a famous film location; since 2018 the Thai government has periodically closed the bay to allow ecological recovery, a representative case of balancing tropical island tourism with ecological protection.",
   },
   "ao-phang-nga": {
+    // 全六段 sources: 约 400 km² 淹没型喀斯特海湾；二叠纪拉查布里（Ratburi）石灰岩；1981 年设立国家公园；宾坎岩因 1974 年《金枪人》取景而知名。核实 2026-09-11，未改动
     seeing:
       "Ao Phang Nga is a roughly 400 km² drowned karst bay in the Andaman Sea off southern Thailand; Khao Phing Kan (\"James Bond Island\") is one of its most iconic landmarks.",
     formation:
@@ -12325,6 +12744,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1981, Khao Phing Kan became widely known after featuring in a 1974 James Bond film and has since become the bay's most recognisable landmark.",
   },
   "krabi-karst-coast": {
+    // 全六段 sources: 与攀牙湾同属二叠纪拉查布里群石灰岩；莱利岬角为国际知名攀岩与深水抱石地。核实 2026-09-11，未改动
     seeing:
       "The Krabi Karst Coast is a stretch of Andaman coastline defined by steep limestone tower cliffs, with Railay Peninsula among its most representative sites.",
     formation:
@@ -12349,10 +12769,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Khao Sam Roi Yot and Ao Phang Nga are both limestone karst landforms on the Thai coast, but Khao Sam Roi Yot is a cluster of low peaks on land, while Ao Phang Nga is a drowned karst tower island group.",
     concept:
       "The combination of karst mountains and freshwater marsh at Khao Sam Roi Yot is a sample for studying the symbiotic relationship between karst mountains and coastal wetlands.",
+    // history sources: 最高峰 605 m；**1966 年设为泰国首座海洋型国家公园 —— 这一条是对的**（同批 ko-tarutao 误称自己是首座，已改）；帕耶那空岩洞皇家凉亭因拉玛五世 1890 年到访而建、1896 年建成（19 世纪只此一次王室到访，英文原写复数 kings 已改）。核实 2026-09-11
     history:
-      "Designated Thailand's first marine-type national park in 1966; the royal pavilion inside Phraya Nakhon Cave is well known for having been visited by Thai kings in the 19th century.",
+      "Designated Thailand's first marine-type national park in 1966; the royal pavilion inside Phraya Nakhon Cave is well known for having been built after a visit by King Chulalongkorn (Rama V) in 1890; later monarchs visited too.",
   },
   "thung-salaeng-luang": {
+    // 全六段 sources: 海拔 300–1028 m，位于彭世洛府与碧差汶府交界。核实 2026-09-11，未改动
     seeing:
       "Thung Salaeng Luang is a highland meadow at 300–1,028 m elevation on the border of Phitsanulok and Phetchabun provinces in north-central Thailand, known as \"Thailand's savanna.\"",
     formation:
@@ -12377,10 +12799,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cheow Larn Lake and Bueng Boraphet are both important lakes in Thailand, but Cheow Larn is a dammed reservoir studded with karst towers, while Bueng Boraphet is a natural freshwater marsh turned into open water by a dam.",
     concept:
       "The drowned karst-tower landscape of Cheow Larn Lake is a sample for studying how a water-impoundment project transforms a terrestrial karst landform into an island-studded reservoir landscape.",
+    // history sources: 大坝 1982 年动工、1987 年竣工蓄水，正文把「建成/蓄水」统一写作 1987 属可接受简化（**没有把动工年当成建成年**）；「叻差巴帕」由国王普密蓬 1987-09-30 竣工典礼上赐名、意为「王国之光」，与王后诗丽吉无关。核实 2026-09-11
     history:
-      "Ratchaprapha Dam, completed in 1987, is named for Thailand's late Queen Sirikit and serves both irrigation and hydropower functions.",
+      "Ratchaprapha Dam, completed in 1987, was named by Thailand's late King Bhumibol Adulyadej at its opening ceremony — the name means Light of the Kingdom — and serves both irrigation and hydropower functions.",
   },
   "bueng-boraphet": {
+    // 全六段 sources: 面积约 224 km²，泰国中部最大淡水沼泽/湖；1926–1930 年筑坝、1930 年完工形成今日开阔水面。核实 2026-09-11，未改动
     seeing:
       "Bueng Boraphet is a natural freshwater marsh lake near the confluence of the Nan and Ping rivers in central Thailand, covering about 224 km² and the largest freshwater wetland in central Thailand.",
     formation:
@@ -12395,6 +12819,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "After being dammed in 1930, it gradually developed into an important fishery and wintering site for migratory birds in central Thailand, now managed by the wildlife conservation authorities.",
   },
   "chao-phraya-river": {
+    // 全六段 sources: 宾河与难河在那空沙旺（Pak Nam Pho）汇流后始称干流，全长约 372 km。核实 2026-09-11，未改动
     seeing:
       "The Chao Phraya River begins where the Ping and Nan rivers meet in Nakhon Sawan Province and runs about 372 km, the main river system of the central Thai plain.",
     formation:
@@ -12409,6 +12834,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chao Phraya's banks have been the political and economic heart of Thailand since the Ayutthaya period, and the capital, Bangkok, remains built around this river today.",
   },
   "mekong-river-th": {
+    // 全六段 sources: ⚠️ 泰老界河段长度「约976公里」**没有一个来源支持**，各口径 850/920/955/1520 km 不等，未找到 MRC 或泰国官方的单一权威数字 —— 见 issue，正文暂不动。核实 2026-09-11
     seeing:
       "The Thai stretch of the Mekong forms roughly 976 km of the Thailand–Laos border along Thailand's north-east; the section near Chiang Khan is known for its dense scattering of rapids.",
     formation:
@@ -12423,8 +12849,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Towns along the Mekong such as Chiang Khan have long served as important centres of trade and cultural exchange between north-eastern Thailand and Laos.",
   },
   "mun-river": {
+    // seeing sources: 源出讪甘烹山脉（Sankamphaeng Range，考艾国家公园一带，高原西南）—— 佩差邦/碧差汶山脉在高原西北缘，是另一条；在乌汶叻差他尼 Khong Chiam 汇入湄公河、接纳希河后水量显著增大。核实 2026-09-11
     seeing:
-      "The Mun River rises in the Phetchabun Range in the south-western Khorat Plateau and flows east across the plateau's southern portion, the main river of Thailand's Isan region.",
+      "The Mun River rises in the Sankamphaeng Range in the south-western Khorat Plateau and flows east across the plateau's southern portion, the main river of Thailand's Isan region.",
     formation:
       "The Mun's upper course rises in the hills along the plateau's rim and flows east across the open tableland, gaining significant volume after receiving the Chi River as a tributary, before joining the Mekong near Ubon Ratchathani.",
     observation:
@@ -12437,6 +12864,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Mun River basin has long been the core area of population and agricultural activity in Thailand's Isan region, with cities such as Ubon Ratchathani along its banks continuing to develop around the river to this day.",
   },
   "kwai-river-valley": {
+    // 全六段 sources: 泰缅铁路木桥 1943-02 建成、钢混桥同年 4 月建成，正文「1943年建成」落在范围内。⚠️ 红线自查：正文只写工程与地形事实（谷地走向、桥梁年份），**未涉伤亡数字或战争责任评价**，按判据保留。核实 2026-09-11，未改动
     seeing:
       "The Kwai River Valley is cut by the Khwae Noi River through the southern Thanon Thongchai Range in western Thailand; the Bridge on the River Kwai is the widely known witness to this history.",
     formation:
@@ -12451,6 +12879,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "During World War II, Japanese forces used forced prisoner-of-war and civilian labour to build the Thailand–Burma Railway through this valley; the Bridge on the River Kwai, completed in 1943, is the widely known witness to this history, recorded in Thai national archives and multiple war memorial sites.",
   },
   "erawan-waterfall": {
+    // 全六段 sources: 1975-06-19 设立（泰国第 12 座国家公园）；瀑布顶层因形似三头象神伊拉旺（Erawan/Airavata）得名。核实 2026-09-11，未改动
     seeing:
       "Erawan Waterfall is a seven-tiered cascade formed as a tributary of the Khwae Noi River drops down a series of limestone terraces, with natural emerald-green travertine pools formed between the tiers.",
     formation:
@@ -12465,6 +12894,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1975; \"Erawan\" is named for a rock formation near the waterfall's top resembling Erawan, the three-headed elephant of Hindu mythology.",
   },
   "sam-phan-bok": {
+    // 全六段 sources: 湄公河河床上规模最大的砂岩壶穴群；可见期为旱季（各来源作 12 月至次年 4–5 月，正文取 12–4 月）。核实 2026-09-11，未改动
     seeing:
       "Sam Phan Bok (\"three thousand shallow lakes\" or potholes) is the largest sandstone erosional remnant landform in the Mekong's main riverbed, visible only during the dry season from December to April.",
     formation:
@@ -12479,6 +12909,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local communities have long linked Sam Phan Bok's seasonal emergence to the traditional timing of Mekong fishing activities, reflecting generations of accumulated experience observing the river's hydrological changes.",
   },
   "chao-phraya-delta": {
+    // 全六段 sources: 曼谷 1782 年由拉玛一世建都；平均海拔约 1.5 m、部分城区仅 0.5–1.5 m，正文「不足2米」准确；地面沉降属实。核实 2026-09-11，未改动
     seeing:
       "The Chao Phraya Delta is the low-lying alluvial delta at the Chao Phraya's mouth; Bangkok, Thailand's capital, is built on the delta, with parts of the city under 2 m in elevation.",
     formation:
@@ -12966,6 +13397,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Poland ============
   "tatra-mountains": {
+    // 全六段 sources: 雷西峰西北峰 2499 m 为**波兰境内**最高点（中央峰 2503 m 传统值 / 最新高精度约 2500.9 m 在斯洛伐克一侧）—— 两个对象分列清楚，未挂错；塔特拉国家公园 1954 年设立。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Tatra Mountains are the highest part of the Carpathians, straddling the Poland-Slovakia border; the north-western summit of Rysy, at 2,499 m, is the highest point in Poland.",
     formation:
@@ -12980,6 +13412,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tatra region has been an important Polish mountaineering and skiing destination since the 19th century; Tatra National Park was established in 1954, and the foothill town of Zakopane is known as Poland's \"winter capital.\"",
   },
   "sudetes-karkonosze": {
+    // 全六段 sources: 希尼耶日卡峰 1603.30 m（2014 年后官方值，此前长期用 1602 m）；山顶气象观测 1824 年起不定期、1889 年设二级站、1900 年建首座常设天文台 —— 正文「自19世纪起」准确。**与捷克侧 krkonose 并排核过**：高度一致，波兰 KPN 1959 / 捷克 KRNAP 1963 两个年份各自属实、不冲突。核实 2026-09-11，未改动
     seeing:
       "The Sudetes form an ancient mountain system along Poland's south-western border with the Czech Republic; the Karkonosze is its highest section, with Śnieżka, at 1,603 m, the highest peak in the Sudetes.",
     formation:
@@ -12994,6 +13427,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A weather observation facility has stood atop Śnieżka since the 19th century, one of the oldest mountain weather stations in Central Europe, and the summit building continues to record meteorological data today.",
   },
   "bieszczady-mountains": {
+    // 全六段 sources: 塔尔尼察峰 1346 m —— 正文只声称「**波兰境内**最高峰」而非「别什恰迪山脉最高峰」（整体最高的 Pikui 1405 m 在乌克兰），限定准确、未挂错对象。20 世纪的行政区划调整与人口变动采用不点名的中性事实句式，符合红线判据。核实 2026-09-11，未改动
     seeing:
       "The Bieszczady Mountains are the section of the eastern Carpathians at Poland's south-eastern tip, bordering Slovakia and Ukraine; Tarnica, at 1,346 m, is the highest peak within Poland.",
     formation:
@@ -13016,8 +13450,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Babia Góra shows a complete vertical vegetation sequence from foothill forest to summit tundra, set against the continuous rolling relief of the wider Beskid range around it.",
     distinguish:
       "Both the Beskids and the Tatras are parts of the Carpathians within Poland, but the Beskids are mainly sedimentary rock with comparatively rounded relief, while the Tatras are granite with steeper, more classic glacial landforms.",
+    // concept sources: 巴比亚古拉 1725 m 为贝斯基德山脉最高峰、1954 年设国家公园；UNESCO MAB 生物圈保护区 **1976** 年（官方页 Year of nomination，1 级）—— 旅游站点普遍讹传 1977。核实 2026-09-11
     concept:
-      "Babia Góra's complete vertical vegetation zonation is a classic case for studying how a Central European mid-elevation mountain ecosystem changes along an elevation gradient, which is why it was designated a UNESCO Biosphere Reserve in 1977.",
+      "Babia Góra's complete vertical vegetation zonation is a classic case for studying how a Central European mid-elevation mountain ecosystem changes along an elevation gradient, which is why it was designated a UNESCO Biosphere Reserve in 1976.",
     history:
       "Babia Góra's comparatively remote location has historically preserved its original vegetation; Babia Góra National Park, established in 1954, is one of Poland's earliest national parks.",
   },
@@ -13032,12 +13467,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Pieniny and the Tatras are parts of the Carpathians, but Pieniny is built of limestone and dolomite and is a comparatively isolated massif, while the Tatras are granite and form the highest, most continuous core of the range.",
     concept:
       "Pieniny's distinctive limestone-and-dolomite bedrock, geologically distinct from the surrounding Carpathians, is an important sample for studying how different geological units are assembled within the Carpathian orogenic belt.",
+    // history sources: 三王冠峰 982 m；国家公园 1932 年设立，为波兰最早的国家公园之一、也是欧洲首个跨境自然公园。漂流史见 dunajec-gorge 条目留痕（原写的「18 世纪」两条目各错一次，同批一并改）。核实 2026-09-11
     history:
-      "Pieniny National Park was established in 1932, one of Poland's earliest national parks; the tradition of rafting the Dunajec dates back to the 18th century and remains a classic cross-border Poland-Slovakia tourist experience today.",
+      "Pieniny National Park was established in 1932, one of Poland's earliest national parks; rafts have long worked the Dunajec, and from the early 19th century the descent turned into a tourist trip; it remains a classic cross-border Poland-Slovakia experience today.",
   },
   "swietokrzyskie-mountains": {
+    // seeing sources: 维希查峰 **614 m**（2019 年国家公园 + 理工大学 GPS/水准复测，2 级），612 / 611.8 为旧值；Skała Agaty 不是独立山峰、只是该峰体的东侧峰顶，最高点归属未变。C8「海拔也会过期」。核实 2026-09-11
     seeing:
-      "The Świętokrzyskie Mountains are an ancient folded range in south-central Poland, their bedrock dating to the Palaeozoic — one of the geologically oldest ranges in the country; Łysica, at 612 m, is the highest point.",
+      "The Świętokrzyskie Mountains are an ancient folded range in south-central Poland, their bedrock dating to the Palaeozoic — one of the geologically oldest ranges in the country; Łysica is the highest point, 614 m according to the Świętokrzyski National Park's 2019 re-survey.",
     formation:
       "The bedrock formed around 500 million years ago in the Palaeozoic; hundreds of millions of years of repeated tectonic movement and weathering have worn the range down to today's comparatively low, rounded hill form — an important sample for studying the long evolution of an ancient orogenic belt.",
     observation:
@@ -13050,6 +13487,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Rich in iron ore and limestone, the region has been an important Polish mining and smelting centre since the Middle Ages; the Holy Cross Monastery has been an important Polish pilgrimage site since the 11th century.",
   },
   "krakow-czestochowa-upland": {
+    // 全六段 sources: 「波兰侏罗」俗称与侏罗纪石灰岩台地属实；「鹰巢之路」沿线约 25 座城堡多为 14 世纪卡齐米日大帝时期为防御西里西亚方向边境而建。核实 2026-09-11，未改动
     seeing:
       "The Kraków-Częstochowa Upland, informally known as the \"Polish Jura,\" is a long, narrow plateau built of Jurassic limestone, its length strung with medieval castle ruins along the \"Trail of the Eagles' Nests.\"",
     formation:
@@ -13064,6 +13502,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The \"Trail of the Eagles' Nests\" takes its name from the way the castles along it, perched on steep towers, resemble eagles' nests; these castles were first built in the 14th century under King Casimir the Great to defend Poland's southern border.",
   },
   "gory-stolowe": {
+    // 全六段 sources: 什切利涅茨维尔基峰 919 m；白垩纪砂岩；国家公园 1993 年设立。核实 2026-09-11，未改动
     seeing:
       "The Table Mountains (Góry Stołowe) are a flat-topped sandstone plateau at the eastern end of the Sudetes; Szczeliniec Wielki, at 919 m, is the most representative example of table-mountain landform in Poland.",
     formation:
@@ -13078,6 +13517,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Table Mountains National Park was established in 1993; rock-passage place names such as \"Hell's Gorge\" and \"Devil's Kitchen\" record long-standing local folklore.",
   },
   "masurian-lakes": {
+    // 全六段 sources: 希尼亚尔德维湖 113.8 km² 为波兰最大湖泊，核实无误。⚠️ 湖泊数量「超过2500座」**没有单一权威口径**：旅游/区域来源给约 2600 座（>1 ha），省级空间规划文件给全省 1081 座（>1 ha，2015 版），差异来自统计范围与面积阈值 —— 见 issue，正文暂不动。核实 2026-09-11
     seeing:
       "The Masurian Lake District is a densely lake-studded region of north-eastern Poland carved by last-glacial erosion, with more than 2,500 lakes; Lake Śniardwy is the largest lake in Poland.",
     formation:
@@ -13092,6 +13532,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake district's canal system dates to the 19th century, historically used for timber transport; it is now an important area for water tourism and sailing in Poland.",
   },
   "lake-hancza": {
+    // 全六段 sources: 最大水深 108/108.5 m，波兰最深湖；「中欧最深湖之一」带了限定语，不是排他断言。核实 2026-09-11，未改动
     seeing:
       "Lake Hańcza, in the Suwałki region of north-eastern Poland, has a maximum depth of about 108 m — the deepest lake in Poland and one of the deepest in Central Europe.",
     formation:
@@ -13106,6 +13547,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Thanks to its deep, clear water, the lake has long been an important Polish diving-training and scientific-research site, and is now an important ecotourism area in the Suwałki region.",
   },
   "vistula-river": {
+    // 全六段 sources: 全长 1047 km、源出西里西亚贝斯基德山 Barania Góra 西坡（1106 m）、逾 85% 流域在波兰境内、于格但斯克湾附近成三角洲入海 —— 与 zulawy-wislane、oder-river 两条并排读一致（odrapcu.pl，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Vistula is the longest river in Poland, running about 1,047 km from its source in the Beskids, spanning the length of the country before entering the Baltic Sea near Gdańsk.",
     formation:
@@ -13120,6 +13562,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Since the Middle Ages the Vistula has been an important Polish shipping route and cultural symbol; historic Polish cities such as Warsaw and Kraków are built along it, and the river holds significant symbolic importance in Polish national culture.",
   },
   "oder-river": {
+    // 全六段 sources: 波兰第二长河，源出捷克赫鲁比耶塞尼克山（属苏台德），下游约 179 km 为界河，经什切青潟湖入海；与 vistula-river 的对比表述一致。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Oder is Poland's second-longest river, rising in the Czech Republic; its lower course forms the border between Poland and Germany before entering the Baltic Sea near Szczecin.",
     formation:
@@ -13134,6 +13577,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Oder has historically been an important Central European shipping route; Szczecin has developed as a major port city since the Middle Ages thanks to its position guarding the Oder's mouth.",
   },
   "bug-river": {
+    // 全六段 sources: 源出乌克兰沃利尼亚—波多利亚高地，分别与白俄罗斯约 178 km、与乌克兰约 185 km 构成界河；是欧洲少数未受大坝/护岸大规模改造的大型河流之一。跨境表述中性、不涉主权。核实 2026-09-11，未改动
     seeing:
       "The Bug rises in Ukraine; its lower course forms the border between Poland and Belarus and Ukraine, and it is one of the few large European rivers to retain a natural, largely unregulated channel.",
     formation:
@@ -13148,6 +13592,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Bug's banks have historically been an important natural barrier and trade route along Poland's eastern border region; the riverside wetlands are now an important protected ecological area in Poland.",
   },
   "narew-river": {
+    // 全六段 sources: 纳雷夫国家公园河段为辫状水系、俗称「波兰的亚马逊」；国家公园 1996 年设立。核实 2026-09-11，未改动
     seeing:
       "The stretch of the Narew flowing through Narew National Park shows a rare braided river form, its channel splitting into dozens of parallel branches winding through wetland marsh — locally nicknamed \"Poland's Amazon.\"",
     formation:
@@ -13172,10 +13617,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Dunajec Gorge and the Ojców Valley are important karst gorge landforms in Poland, but the Dunajec Gorge cuts through the high peaks of the Pieniny massif and is known for rafting, while the Ojców Valley lies in a comparatively gentle upland area and is known for its isolated rock towers and caves.",
     concept:
       "The Dunajec Gorge is a classic case for studying how a river can carve a deep gorge over the long term by eroding comparatively soft limestone and dolomite bedrock, and it is also an example of cross-border Poland-Slovakia landform conservation cooperation.",
+    // history sources: 观光漂流始于 19 世纪初（Józef Szalay 推广、1832 年成立筏工行会）；**运输传统的起始世纪未定** —— 多个来源给 16 世纪但全部 3 级，按判据不作替代值，正文不写死，见 issue。原写的「18 世纪」查无支持。同一处错在 pieniny-mountains 条目里也有一份，同批一并改。核实 2026-09-11
     history:
-      "The tradition of rafting the Dunajec dates back to the 18th century, originally used to transport timber and salt; it has since become one of the most iconic tourist experiences in southern Poland.",
+      "Rafts on the Dunajec were originally used to move timber and other goods; from the early 19th century the spa town of Szczawnica promoted the descent as a tourist trip, and a raftsmen's guild was founded locally in 1832. It is now one of the most iconic tourist experiences in southern Poland.",
   },
   "ojcow-valley": {
+    // 全六段 sources: 克拉科夫门为天然岩拱；国家公园 1956 年设立，现园区 21.46 km²（初建 14.40 km²），为波兰面积最小的国家公园。核实 2026-09-11，未改动
     seeing:
       "The Ojców Valley is a karst gorge cut by the Prądnik River through the limestone of the Kraków-Częstochowa Upland; the Kraków Gate is the valley's most representative natural rock arch.",
     formation:
@@ -13190,6 +13637,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Several caves in the valley have yielded Palaeolithic-era human artefacts; Ojców National Park, established in 1956, is Poland's smallest national park and one of its earliest.",
   },
   "slowinski-dunes": {
+    // 全六段 sources: 最高的翁茨卡沙丘 42 m；移动速率因沙丘类型而异 —— 抛物线状约 3 m/年、新月形可达 10 m/年，正文「3 至 10 米」正好覆盖两类；国家公园 1967 年设立。**沙丘位置是持续变化量**，下轮复核。核实 2026-09-11，未改动
     seeing:
       "The Słowiński Moving Dunes are the largest active dune field in Europe along the Baltic coast, reaching heights of up to 42 m and migrating inland by about 3 to 10 m each year under the prevailing wind.",
     formation:
@@ -13204,6 +13652,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historical records of the dunes burying nearby villages and forests date to the 19th century; Słowiński National Park was established in 1967 to protect and study this distinctive active dune landform.",
   },
   "hel-peninsula": {
+    // 全六段 sources: 长约 35 km；最窄处各来源给 100 m 或 175 m，正文「不足200米」留了余量；1939-09-09 至 10-02 海尔要塞区坚守，是九月战役中最后投降的据点之一（定位性军事地理史实，已结束、无持续对立，按判据保留）。核实 2026-09-11，未改动
     seeing:
       "The Hel Peninsula is a sand spit about 35 km long and less than 200 m wide at its narrowest point, separating the Baltic Sea from the Gulf of Gdańsk; the town of Hel at its tip is an important Polish seaside resort.",
     formation:
@@ -13218,6 +13667,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Hel Peninsula has historically been an important Polish fishing base; during the Second World War it was one of the last strongholds of Polish naval resistance, and it is now an important seaside-resort and watersports destination in Poland.",
   },
   "wolin-island": {
+    // 全六段 sources: 冰碛海崖；国家公园 1960 年设立；10 世纪为波罗的海重要贸易枢纽（Jumne / 传说中的 Jomsborg）。⚠️ 崖壁长度存在 15 km 与 11.7 km 两个版本，正文取的 15 km 能找到来源支撑，但未能确定哪个是当前更权威口径，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Wolin Island is a Baltic coastal island in north-western Poland; a roughly 15-km stretch of sea cliff within Wolin National Park is a rare high-cliff coastline on the southern Baltic shore.",
     formation:
@@ -13232,6 +13682,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Wolin National Park was established in 1960 and includes a small European bison reserve; the island also holds the archaeological remains of Wolin, an important Viking-era trading settlement.",
   },
   "great-polish-lowland": {
+    // 全六段 sources: 10 世纪波兹南与格涅兹诺同为皮亚斯特王朝早期政治中心，梅什科一世在此设主要据点并安葬于波兹南大教堂；11 世纪后政治中心移至克拉科夫。正文用「之一」限定，未夸大为唯一或永久首都。核实 2026-09-11，未改动
     seeing:
       "The Great Polish Lowland is the main portion of the Central European Plain lying within Poland, flat and open, and Poland's largest agricultural region.",
     formation:
@@ -13256,10 +13707,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Żuławy Wiślane and the Great Polish Lowland are important plain landforms in Poland, but Żuławy Wiślane is smaller, with parts below sea level and dependent on artificial drainage, while the Great Polish Lowland is naturally flat and considerably more extensive.",
     concept:
       "The below-sea-level terrain of parts of Żuławy Wiślane is a classic case for studying how a river-mouth delta can be transformed by artificial dike-and-drainage technology into liveable, farmable low-lying land — sharing common origins with Dutch polder-reclamation techniques.",
+    // history sources: 门诺派移民 16 世纪起迁入维斯瓦河三角洲（门诺派得名于 Menno Simons 1496–1561，**定义上不可能早于 16 世纪**，故「中世纪起」必错，不依赖来源级别）；16–18 世纪为排水系统开发高峰，17 世纪末门诺派占地约 3.8 万 ha。核实 2026-09-11
     history:
-      "From the Middle Ages, settlers from the Low Countries introduced dike-and-drainage technology to the region, gradually converting the original marsh wetland into fertile farmland — a reclamation tradition that continues today.",
+      "From the 16th century, Mennonite settlers from the Low Countries fleeing religious persecution introduced dike-and-drainage technology to the region, gradually converting the original marsh wetland into fertile farmland — a reclamation tradition that continues today.",
   },
   "bialowieza-forest": {
+    // 全六段 sources: UNESCO 分三期 —— **1979 年首次列入（正是波兰侧的比亚沃维耶扎国家公园部分）**、1992 年扩展纳入白俄罗斯侧、2014 年再扩展。本条对应的就是 1979 这一期，**没有借用后续扩展年份**（whc.unesco.org/en/list/33，1 级）。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "Białowieża Forest is one of the best-preserved primeval forests remaining on the European Plain, straddling the Poland-Belarus border, and an important habitat for the European bison.",
     formation:
@@ -13274,6 +13727,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The forest has been a royal hunting reserve for successive Polish monarchs since the Middle Ages, a protection tradition that spared it from large-scale logging; European bison conservation efforts here have continued for more than a century.",
   },
   roztocze: {
+    // 全六段 sources: 白垩纪与第三纪石灰岩基岩；**2019 年**列为波兰/乌克兰跨境生物圈保护区 —— 乌克兰侧 Roztochya 早在 2011 年已单独列入，本条对应的是 2019 年两侧整合为跨境保护区的年份，**没有借用 2011**（unesco.org/en/mab/roztocze，1 级）。核实 2026-09-11，未改动
     seeing:
       "Roztocze is a long, narrow, ridge-like band of limestone hills in south-eastern Poland, densely forested.",
     formation:
@@ -13288,6 +13742,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The region's uplifted terrain and comparatively poor soil have historically limited agricultural development, allowing the forest to survive well; it is now an important ecotourism and hiking destination in south-eastern Poland.",
   },
   "kashubian-switzerland": {
+    // 全六段 sources: 维耶日察峰 329 m；末次冰期终碛丘陵。部分来源称其为「整个波兰低地地区最高点」，正文写「波兰北部地势最高点」更保守，不构成夸大。核实 2026-09-11，未改动
     seeing:
       "Kashubian Switzerland is a last-glacial terminal moraine hill area in the Pomerania region of northern Poland, densely dotted with lakes and forest; Wieżyca, at 329 m, is the highest point in northern Poland.",
     formation:
@@ -13302,6 +13757,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The region has historically been the traditional homeland of the Kashubians, a West Slavic minority group in Poland, and Kashubian language and cultural traditions are still preserved and continued locally today.",
   },
   "biebrza-marshes": {
+    // 全六段 sources: 别布扎国家公园 1993-09-09 设立，为波兰面积最大的国家公园；奥索维茨要塞由俄军建于 19 世纪 80–90 年代，一战期间周边沼泽地形多次阻滞进攻（定位性军事地理史实，按判据保留）。核实 2026-09-11，未改动
     seeing:
       "The Biebrza Marshes are Poland's largest area of low-lying fen wetland, spread along the Biebrza river valley, and one of the best-preserved lowland river-valley marshes remaining in Europe.",
     formation:
@@ -13317,6 +13773,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Mongolia ============
   "mongol-altai": {
+    // 全六段 sources: 呼依滕峰 4374 m 为**蒙古国境内最高点**、位于塔王博格达山群跨境山体上 —— ⚠️ 红线自查：正文说明峰在跨境山体上、是蒙古最高点，**未描述边界线如何走、未表述主权、未把中国任何地区与中国并列**；与中国侧 altai 条目对同一山体的高度描述无冲突。三国交界点的具体命名见 issue（来源互相矛盾）。巴彦乌列盖省哈萨克族聚居属定位性事实。核实 2026-09-11
     seeing:
       "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — in the Tavan Bogd massif on the Mongolia–China border, and the Mongolia–Russia–China tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north.",
     formation:
@@ -13331,6 +13788,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tavan Bogd area was historically an important route linking nomadic peoples across Mongolia, Russia and China; it now lies administratively within Bayan-Ölgii Province, home to one of Mongolia's Kazakh communities.",
   },
   "khangai-mountains": {
+    // 全六段 sources: 敖特冈腾格尔峰各口径 4008（现代测量）/ 4021（旧地形图）/ 4031 m（维基），正文「约4021米（4008至4031之间）」已写成区间，准确；鄂尔浑河谷作为突厥/回鹘/蒙古政治中心属已结束的前现代史。核实 2026-09-11，未改动
     seeing:
       "The Khangai Mountains are a major range in central Mongolia; its highest peak, Otgontenger in Zavkhan Province, reaches about 4,021 m (different surveys give figures between 4,008 and 4,031 m) and is the only peak in the range to carry a permanent glacier.",
     formation:
@@ -13345,6 +13803,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Orkhon valley on the Khangai's southern flank was successively the political heartland of the Turkic Khaganate, the Uyghur Khaganate and the Mongol Empire; the range itself also holds an important place in traditional Mongolian belief.",
   },
   "khentii-mountains": {
+    // 全六段 sources: 布尔汗哈勒敦山 2340 m（与 UNESCO 文件配套的常引值）；2015-07-04 以「布尔汗哈勒敦圣山及其周边神圣景观」列入 UNESCO（whc.unesco.org/en/list/1440，1 级）。⚠️ 红线自查：成吉思汗出生/安葬传说属广泛记载的传统信仰，**未作现代民族主义诠释**。核实 2026-09-11，未改动
     seeing:
       "The Khentii Mountains are a range in northeastern Mongolia, source of both the Onon and Kherlen rivers; Burkhan Khaldun within it reaches 2,340 m and was inscribed on the UNESCO World Heritage List in 2015 as \"Great Burkhan Khaldun Mountain and its surrounding sacred landscape.\"",
     formation:
@@ -13359,8 +13818,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Burkhan Khaldun is traditionally held to be both the birthplace and burial site of Genghis Khan, and is the most venerated sacred mountain in traditional Mongolian belief; it was formally inscribed on the UNESCO World Heritage List in 2015.",
   },
   "gobi-altai": {
+    // seeing sources: 伊赫博格德峰 3957 m；**如今无冰川**（The Cryosphere 2023 原文 Ikh Bogd Massif is unglaciated today，1 级），山顶仅 9 月末至次年 4 月中有季节性积雪；末次冰期古冰川约 20–17 ka 消退，保留的是古冰川侵蚀地貌。最近的现代冰川在 350–550 km 外（敖特冈腾格尔、苏台山）。核实 2026-09-11
     seeing:
-      "The Gobi Altai is a transitional range where the Mongol Altai extends southeast into the Gobi desert region, made up of several isolated fault-block massifs; its highest peak, Ikh Bogd, reaches 3,957 m and retains a small glacier at its summit.",
+      "The Gobi Altai is a transitional range where the Mongol Altai extends southeast into the Gobi desert region, made up of several isolated fault-block massifs; its highest peak, Ikh Bogd, reaches 3,957 m, though it carries no glacier today — only seasonal snow on its summit plateau from late September to mid-April.",
     formation:
       "The Gobi Altai formed through fault-block uplift since the Tertiary, with each block massif standing largely independent, separated by Gobi desert basins — a classic landform of the Altai orogenic belt's transition into desert.",
     observation:
@@ -13368,11 +13828,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both the Gobi Altai and the Mongol Altai are extensions of the Altai orogenic belt, but the Gobi Altai is made up of isolated fault-block massifs within a desert transition zone, while the Mongol Altai is a continuous belt of high snow peaks.",
     concept:
-      "The isolated montane ecosystems of the Gobi Altai are a classic sample of the desert \"ecological island\" phenomenon; the glacier retained at its summit contrasts sharply with the surrounding desert, making it an important case for studying arid-region montane ecology.",
+      "The isolated montane ecosystems of the Gobi Altai are a classic sample of the desert \"ecological island\" phenomenon; the landforms left by Ice Age glaciers at its summit contrast sharply with the surrounding desert, making it an important case for studying arid-region montane ecology.",
     history:
       "The Gobi Altai region was historically an important waypoint for nomadic peoples crossing the Gobi desert, its mountain water sources long providing supply for passing caravans and herders.",
   },
   "mongolia-gobi": {
+    // 全六段 sources: 整体约 130 万 km²、按维基主流口径为世界第六大沙漠（另有「亚洲最大、世界第五」一说）；**与中国侧 gobi 条目并排读一致** —— 两边都强调戈壁以砾漠为主、并非连绵沙丘。⚠️ 红线自查：distinguish 段写「与中国境内的戈壁同属一条跨境荒漠带」，是陈述同一地貌带的跨境分布，**未用内外蒙古对举、未作主权或民族评价**。核实 2026-09-11，未改动
     seeing:
       "The Gobi spans southern Mongolia and northern China, covering about 1.3 million km² in total — the sixth-largest desert in the world; within Mongolia it is centred on provinces such as South Gobi and East Gobi, with a surface mostly of gravel desert rather than continuous dunes.",
     formation:
@@ -13387,6 +13848,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gobi was historically an important trade corridor linking the Chinese heartland with the steppe and the Mongolian plateau with Central Asia; the Mongol Empire's post-station system maintained multiple supply points along Gobi routes.",
   },
   "great-lakes-depression": {
+    // 全六段 sources: 面积约 268,309.52 km²（IWA 学术期刊，2 级）；1997 年起为 IGBP 监测全球变暖的站点之一；2003-07-05 乌布苏盆地列入 UNESCO（IUCN 世界遗产展望，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Great Lakes Depression is an endorheic arid basin in western Mongolia, ringed on three sides by the Mongol Altai, the Gobi Altai and the Khangai; it covers about 268,000 km² and contains six large lakes including Uvs Lake.",
     formation:
@@ -13401,6 +13863,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Great Lakes Depression and the surrounding Uvs Nuur Basin were historically important pastureland for nomadic peoples of western Mongolia; in 2003 the Uvs Nuur Basin was inscribed on the UNESCO World Heritage List as a transboundary natural site (see the Uvs Lake entry).",
   },
   "uvs-lake": {
+    // 全六段 sources: 面积约 3350 km²、海拔 759 m、平均水深约 6 m；1997-12-15 设 UNESCO 生物圈保护区、2003-07-05 **俄蒙两国真正共同**以「乌布苏盆地」列入世界遗产、2011 年成立俄蒙联合管理委员会（俄罗斯联合国教科文组织全国委员会，2 级）—— 与卢森堡米内特那种「邻国正在申请被写成共同列入」不同，这一处核实为真正的跨国联合申报。与 khovsgol-lake「最大淡水湖」口径不同、并读不冲突。核实 2026-09-11，未改动
     seeing:
       "Uvs Lake is Mongolia's largest lake by area, covering about 3,350 km² at an elevation of 759 m; it is a shallow, highly saline lake within an endorheic basin, with an average depth of about 6 m.",
     formation:
@@ -13415,6 +13878,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1997 Uvs Lake and the adjacent reserve on the Russian side were each designated UNESCO Biosphere Reserves; in 2003 the two countries jointly inscribed the \"Uvs Nuur Basin\" on the UNESCO World Heritage List, and in 2011 established a joint Russian-Mongolian management commission.",
   },
   "khyargas-lake": {
+    // 全六段 sources: 经运河与哈尔乌苏湖相连、为水系链终端咸水湖属实。⚠️ 面积与海拔为两组数据混用，见 issue。核实 2026-09-11
     seeing:
       "Khyargas Lake is a saline lake within Mongolia's Great Lakes Depression, covering about 1,481 km² at an elevation of about 1,029 m — the terminal lake of the depression's saline-and-freshwater lake chain.",
     formation:
@@ -13439,12 +13903,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Khar-Us Lake and Khyargas Lake belong to the same Great Lakes Depression lake chain, but Khar-Us is the uppermost freshwater lake in the system, while Khyargas is the saline terminal lake downstream.",
     concept:
       "As the uppermost freshwater source of the lake chain, Khar-Us Lake's water volume and quality directly affect the ecological condition of downstream Khar, Airag and Khyargas lakes, making it a key node for studying hydrological linkages in stepped lake systems.",
+    // history sources: 面积约 1578 km²、海拔约 1157 m；1999 年列入拉姆萨尔名录；蒙古现共 11 处拉姆萨尔湿地（会增长的计数，下轮复核）—— 原写的「四处之一」过期且从未准确。核实 2026-09-11
     history:
-      "In 1999 Khar-Us Lake was inscribed on the Ramsar List of Wetlands of International Importance, one of four Ramsar sites in Mongolia, and has long provided habitat for migratory birds and fisheries.",
+      "In 1999 Khar-Us Lake was inscribed on the Ramsar List of Wetlands of International Importance, one of 11 Ramsar sites Mongolia has as of 2026, and has long provided habitat for migratory birds and fisheries.",
   },
   "khovsgol-lake": {
+    // seeing sources: 面积各来源 2620（Britannica 单一来源）/ 2760–2770 km²（多方交叉），写区间；最大水深 267 m、蓄水约占全国淡水七成两项一致。与 uvs-lake「蒙古面积最大的湖（咸水）」口径不同、并读不冲突；与航线解说 ubn-mxv「蒙古最大淡水湖」一致。核实 2026-09-11
     seeing:
-      "Lake Khövsgöl is Mongolia's largest freshwater lake, covering about 2,620 km² with a maximum depth of 267 m, and holds roughly 70% of the country's total freshwater.",
+      "Lake Khövsgöl is Mongolia's largest freshwater lake, covering between about 2,600 and 2,770 km² depending on the survey with a maximum depth of 267 m, and holds roughly 70% of the country's total freshwater.",
     formation:
       "Lake Khövsgöl is a tectonic rift lake, its basin having subsided along a crustal fault at the southern foot of the East Sayan range; its water is exceptionally clear, making it an important sample for studying the hydrology and water quality of rift lakes.",
     observation:
@@ -13457,6 +13923,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Khövsgöl National Park surrounds the lake, which has long served as a traditional fishing and grazing area for local Tuvan and Darkhad nomadic communities.",
   },
   "terkhiin-tsagaan-lake": {
+    // 全六段 sources: 长约 16 km、平均水深 20 m、海拔 2060 m（维基）；宽度维基给 4–10 km，正文「6至10公里」落在区间内。与 khorgo-volcano 的熔岩堰塞成因互相印证。核实 2026-09-11，未改动
     seeing:
       "Terkhiin Tsagaan Lake lies at the northern foot of the Khangai, about 16 km long, 6–10 km wide, with an average depth of 20 m at an elevation of 2,060 m — a freshwater lake dammed by volcanic lava.",
     formation:
@@ -13471,6 +13938,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake and the neighbouring Khorgo volcano are jointly protected as Khorgo-Terkhiin Tsagaan Nuur National Park, an important nature reserve and tourist destination in central Mongolia.",
   },
   "khorgo-volcano": {
+    // 全六段 sources: 海拔 2210 m、约 8000 年前停止喷发、火山口直径约 200 m、深 70–80 m（主流口径；另有 500 m 直径的地貌测量值，属方法差异）。核实 2026-09-11，未改动
     seeing:
       "Khorgo is an extinct volcano at 2,210 m elevation that stopped erupting about 8,000 years ago; its crater is about 200 m in diameter and 70–80 m deep, with larch forest covering its northern slope.",
     formation:
@@ -13485,6 +13953,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Khorgo and its neighbouring lake are jointly protected as a national park; local herders have long held traditional knowledge and oral stories about this volcanic landscape.",
   },
   "khongoryn-els": {
+    // 全六段 sources: 又称杜特芒罕，绵延约 100 km、最高沙丘约 300 m（多方一致）。沙丘是会动的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Khongoryn Els (also called Duut Mankhan, popularly known as the \"Singing Dunes\") is a dune belt within Gobi Gurvansaikhan National Park, stretching over 100 km with dunes reaching up to about 300 m in height.",
     formation:
@@ -13509,10 +13978,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Bayanzag and Khongoryn Els lie within Gobi Gurvansaikhan National Park, but Bayanzag is a red erosional cliff formed of Cretaceous sedimentary sandstone, while Khongoryn Els is an aeolian dune field.",
     concept:
       "Bayanzag is the site of the first-ever discovery of fossilized dinosaur eggs in the history of paleontology, making it significant for studying Cretaceous dinosaur reproductive behaviour and the ancient environmental history of the Gobi region.",
+    // history sources: 恐龙蛋化石发现于 1923-07-13（队员 George Olsen 报告），1922 年是中亚考察（1922–1925）的启动年（AMNH 官方，1 级）。核实 2026-09-11
     history:
-      "In 1922 the Central Asiatic Expeditions, led by Roy Chapman Andrews of the American Museum of Natural History, made the first discovery of dinosaur egg fossils here, establishing Bayanzag as a landmark site in international paleontology.",
+      "In 1923 the Central Asiatic Expeditions (under way since 1922), led by Roy Chapman Andrews of the American Museum of Natural History, made the first discovery of dinosaur egg fossils here, establishing Bayanzag as a landmark site in international paleontology.",
   },
   "gurvan-saikhan": {
+    // 全六段 sources: 中赛罕山最高峰 2825 m；戈壁古尔班赛罕国家公园约 2.7 万 km²，为蒙古面积最大的国家公园；与航线解说 ubn-dlz 的描述一致。核实 2026-09-11，未改动
     seeing:
       "The Gurvan Saikhan Mountains (\"Three Beauties\") comprise three parallel ranges — Baruun, Dund and Zuun Saikhany Nuruu; their highest peak, in the Dund (Middle) range, reaches 2,825 m, forming the core of Gobi Gurvansaikhan National Park, Mongolia's largest.",
     formation:
@@ -13527,6 +13998,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gurvan Saikhan region has historically served as traditional summer pastureland for nomadic peoples of southern Mongolia; it is today Mongolia's largest national park and a core destination for Gobi tourism.",
   },
   "yolyn-am": {
+    // 全六段 sources: 半永久冰场、现代因气候变化多在 9 月前融化 —— 正文未夸大为「永不融化」；「鹰谷」得名属实。⚠️ 峡谷长度「约8公里」无单一权威来源，见 issue。核实 2026-09-11
     seeing:
       "Yolyn Am is a narrow, deep gorge within the Gurvan Saikhan Mountains, about 8 km long, that holds a semi-permanent ice field year-round, in some years persisting into early summer before melting.",
     formation:
@@ -13541,6 +14013,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The gorge takes its name from the lammergeier (\"yol\" in Mongolian) that inhabits it, and is also known as the Valley of the Eagles or Ice Valley; it is one of the signature landscapes of Gobi Gurvansaikhan National Park and has long been a habitat shared by local herders and wildlife.",
   },
   "orkhon-valley": {
+    // 全六段 sources: 121,967 ha（UNESCO 官方，正文「约12.2万公顷」一致）；2004 年以「鄂尔浑河谷文化景观」列入；哈拉和林为窝阔台所建、额尔德尼召 16 世纪建立。⚠️ 红线：只写已结束的前现代史。核实 2026-09-11，未改动
     seeing:
       "The Orkhon Valley is a belt of pastureland and archaeological sites covering about 122,000 ha along both banks of the Orkhon River in Övörkhangai Province, including the 13th–14th century Mongol Empire capital of Karakorum.",
     formation:
@@ -13555,6 +14028,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Orkhon Valley was successively the political centre of the Turkic Khaganate, the Uyghur Khaganate and the Mongol Empire; Karakorum was the Mongol Empire capital founded by Ögedei Khan, son of Genghis Khan, while Erdene Zuu, built in the 16th century, was Mongolia's first Tibetan Buddhist monastery. The valley was inscribed on the UNESCO World Heritage List in 2004 as the \"Orkhon Valley Cultural Landscape.\"",
   },
   "orkhon-waterfall": {
+    // 全六段 sources: 落差各口径 16 / 20 / 24 / 27 m，正文已写成「16至27米之间」区间；「蒙古境内水量最大的瀑布」经蒙古国家通讯社 Montsame（2 级）确认，**与「最高的瀑布」（Arsai，落差约 70 m 但水量小）是两个口径，正文没有混淆**。核实 2026-09-11，未改动
     seeing:
       "The Orkhon Waterfall (also called Ulaan Tsutgalan) formed where the Orkhon River crosses a layer of ancient volcanic rock at the southern foot of the Khangai; reported heights range from 16 to 27 m across sources, and it is Mongolia's highest-volume waterfall.",
     formation:
@@ -13569,6 +14043,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around the Orkhon Waterfall has historically been a traditional nomadic route for peoples at the southern foot of the Khangai, and is today an important natural landmark within the Orkhon Valley Cultural Landscape.",
   },
   "dariganga-volcanic-field": {
+    // 全六段 sources: 逾 200 座渣锥、覆盖约 1.4 万 km²、最高点希林博格德火山 1778 m、火山口直径约 2 km、深逾 300 m（Smithsonian GVP，1 级）；阿拉坦敖包 1913 年为地方神山、2004 年定为国家祭祀山，属传统信仰史实。核实 2026-09-11，未改动
     seeing:
       "The Dariganga Volcanic Field is a Quaternary volcanic field in Sükhbaatar Province, southeastern Mongolia, scattered with over 200 scoria cones and extensive lava flows across an area of about 14,000 km²; its highest point, Shiliin Bogd, reaches 1,778 m.",
     formation:
@@ -13583,10 +14058,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The volcanic field's area has historically been the traditional homeland of the Dariganga Mongol subgroup; Altan Ovoo (Golden Ovoo) within it has been venerated as a local sacred mountain since 1913 and was elevated to a state-worshipped mountain in 2004, while Shiliin Bogd has traditionally been a pilgrimage site for Mongolian men.",
   },
   "selenge-river": {
+    // seeing sources: 两条源流为伊德尔河与**德勒格尔河（Delgermörön）**，汇流点在**库苏古尔省特木尔布拉格**（Ider river 条目原文 the confluence with the Delgermörön is in Tömörbulag）—— 原文 seeing 段写成「穆伦河」、formation 段中文写「中戈壁—布尔干省」、英文写「Bulgan Province」，中英两侧给了两个不同且都不对的省份。航线解说 ubn-mxv 本来就写对了「德勒格尔河」。核实 2026-09-11
     seeing:
-      "The Selenge River is Mongolia's highest-volume river, formed by the confluence of the Ider and Muren rivers; it flows northeast through Sükhbaatar city before crossing into Russia and eventually draining into Lake Baikal.",
+      "The Selenge River is Mongolia's highest-volume river, formed by the confluence of the Ider and Delgermörön rivers; it flows northeast through Sükhbaatar city before crossing into Russia and eventually draining into Lake Baikal.",
     formation:
-      "The Selenge's headwater tributaries rise separately in the Khangai Mountains and the mountains of northern Mongolia; after the two join in Bulgan Province, the river follows a tectonic depression trending northeast, its long-term erosion and sediment transport shaping a broad valley landform.",
+      "The Selenge's headwater tributaries rise separately in the Khangai Mountains and the mountains of northern Mongolia; after the two join at Tömörbulag in Khövsgöl Province, the river follows a tectonic depression trending northeast, its long-term erosion and sediment transport shaping a broad valley landform.",
     observation:
       "From the air, the Selenge shows a wide, high-volume channel interweaving with surrounding tributaries into a fan-shaped drainage network, its valley widening and flattening as it approaches the border on its way north-east out of the country.",
     distinguish:
@@ -13597,6 +14073,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Selenge valley has historically been an important trade corridor between Mongolia and Russia; Sükhbaatar city, near the Mongolia-Russia border crossing, has developed into an important rail hub in northern Mongolia.",
   },
   "tuul-river": {
+    // 全六段 sources: 全长 882.8 km、流域约 49,840 km²（维基）；乌兰巴托 2024 年约 175.15 万人、全国约 347.55 万，占比约 50.4%，正文「全国近半人口」成立。核实 2026-09-11，未改动
     seeing:
       "The Tuul River is 882.8 km long with a drainage area of about 49,840 km²; it rises in the Khentii Mountains and flows southwest through the Mongolian capital Ulaanbaatar before joining the Orkhon River.",
     formation:
@@ -13611,6 +14088,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tuul valley has been Mongolia's political and cultural centre since the city of Urga (Ulaanbaatar's earlier name) was founded there in the 17th century, the river long providing water for daily life and irrigation as the nomadic settlement transitioned into a fixed city.",
   },
   "kherlen-river": {
+    // 全六段 sources: 全长 1254 km，经温都尔汗、乔巴山后进入中国境内并汇入呼伦湖水系（呼伦湖主要入湖水源之一）。⚠️ 红线自查：只陈述水系流向与终点，**未描述边界线**。核实 2026-09-11，未改动
     seeing:
       "The Kherlen River is 1,254 km long, one of the longest rivers in Mongolia; it rises in the Khentii Mountains and flows southeast through Öndörkhaan and Choibalsan before crossing into China's Inner Mongolia.",
     formation:
@@ -13625,6 +14103,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kherlen valley was an important area of activity before and during the rise of the Mongol Empire; Öndörkhaan on its banks (formerly the seat of the Setsen Khan) is an important historic town in eastern Mongolia.",
   },
   "onon-river": {
+    // 全六段 sources: 全长 1032 km、流域约 96,200 km²、源出肯特山、向东北流入俄罗斯外贝加尔边疆区（维基）。达达勒成吉思汗出生地传说属传统史实。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Onon River is 1,032 km long with a drainage basin of about 96,200 km²; it rises in the Khentii Mountains and flows northeast into Russia's Zabaykalsky Krai, and the Dadal area on its banks is traditionally held to be the birthplace of Genghis Khan.",
     formation:
@@ -13639,6 +14118,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Dadal area on the Onon's banks is traditionally held to be the birthplace of Genghis Khan, giving the region a special place in Mongolian history and traditional belief; the sacred Khentii peak of Burkhan Khaldun also lies within the Onon's upper basin.",
   },
   "eastern-steppe": {
+    // 全六段 sources: 达乌尔草原生态区逾 100 万 km²；可见世界 13 种鹤中的 6 种（白枕鹤、蓑羽鹤、灰鹤、丹顶鹤繁殖，白鹤、白头鹤过境）；蒙古达乌尔严格保护区 1992 年设立；「达乌里亚景观」2017-07-07 作为蒙俄跨境系列遗产列入 UNESCO（whc.unesco.org/en/list/1448，1 级）。跨境表述未涉中国、未描述边界。核实 2026-09-11，未改动
     seeing:
       "The Eastern Steppe is the Mongolian portion of the Daurian steppe ecosystem, which as a whole covers over 1 million km² spanning eastern Mongolia, Siberian Russia and northeastern China.",
     formation:
@@ -13653,6 +14133,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Mongol Daguur Strictly Protected Area was established in 1992, and in 2017 the transboundary \"Landscapes of Dauria\" (shared with Russia) was inscribed on the UNESCO World Heritage List; historically this steppe has long served as traditional pastureland for nomadic peoples of eastern Mongolia.",
   },
   "khustain-nuruu": {
+    // 全六段 sources: 呼斯泰国家公园 1993 年设立、面积约 50,600 ha（官方网站，1 级；另有个别来源误传 90,000 ha）、距乌兰巴托约 90–100 km；1993 年荷兰普氏野马基金会启动野放，现蒙古三处保护区逾 800 匹野放个体。核实 2026-09-11，未改动
     seeing:
       "Khustain Nuruu is a range of rolling hills in Töv Province, about 100 km from Ulaanbaatar; Khustain Nuruu National Park was established here in 1993, covering about 50,600 ha.",
     formation:
@@ -13667,6 +14148,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1993 the Dutch Przewalski's Horse Foundation and the Mongolian Association for Conservation of Nature and Environment launched a reintroduction project, returning takhi — previously surviving only in captive populations — to Khustain Nuruu; today more than 800 free-ranging individuals live across three protected areas in Mongolia.",
   },
   "tsagaan-suvarga": {
+    // 全六段 sources: 崖壁高各来源 30–60 m（另有 200 m 离群值），正文「逾60米」取区间上限；长约 400 m；古海洋沉积、富含海洋化石。核实 2026-09-11，未改动
     seeing:
       "Tsagaan Suvarga (the \"White Stupa\") is a limestone-and-clay erosional cliff in Ulziit District, Dundgovi Province, over 60 m tall at its highest point and extending about 400 m in length.",
     formation:
@@ -13692,10 +14174,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Mayon and Mount Pinatubo are active Philippine volcanoes, but Mayon is known for maintaining a perfect cone with the lowest ellipticity index of any stratovolcano globally, while Pinatubo's summit collapsed into a caldera during its violent 1991 eruption.",
     concept:
       "Mayon's ellipticity index of 1.04 is recognised in volcanic geomorphology as the highest degree of symmetry among stratovolcanoes worldwide, making it a classic sample for studying how a stratovolcano can maintain stable cone geometry through repeated eruptions.",
+    // history sources: 1938 年设国家公园（Proclamation No. 292），**不是菲律宾首座** —— 阿波山 1936 年更早（Proclamation No. 59）。海拔 2462 m、椭圆度 1.04（Grosse et al. 2012）、1616 年以来喷发逾 49 次（PHIVOLCS 汇编至 2014 年为 51 次）。与航线解说 mnl-lgp 并读一致。核实 2026-09-11
     history:
-      "Mayon Volcano was declared the Philippines' first national park in 1938; historical landmarks at its foot, such as the ruins of Cagsawa, record the impact of past eruptions on local communities.",
+      "Mayon Volcano was declared a national park in 1938, one of the country's earliest (Mount Apo had been designated in 1936); historical landmarks at its foot, such as the ruins of Cagsawa, record the impact of past eruptions on local communities.",
   },
   "taal-lake": {
+    // 全六段 sources: 湖面 267 km²（GVP，2 级；另有无出处的 234.2 km² 流传）；1754 年喷发堵塞潘西皮特河、湖水转为淡水；1911 年喷发死亡 1334–1335 人；「1572 年以来喷发逾 34 次」是下限值（至 2020 年为 34 次，之后又有多次喷发），会变的量，若补精确次数须注监测时点。核实 2026-09-11，未改动
     seeing:
       "Taal Lake is a volcanic caldera lake in southwestern Luzon covering 267 km², with Volcano Island rising at its centre; the island itself holds a main crater lake, producing a rare nested landform of \"an island within a lake, within an island within a lake.\"",
     formation:
@@ -13712,8 +14196,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "mount-pinatubo": {
     seeing:
       "Mount Pinatubo's June 15, 1991 eruption was the second-largest volcanic eruption of the 20th century, its ash column rising more than 40 km; the violent collapse of its summit formed a caldera about 2.5 km wide, now filled with a turquoise crater lake.",
+    // formation sources: 1991-06-15 VEI 6、20 世纪第二大喷发；总喷出物约 8–10 km³、折合致密岩浆约 4–5 km³；山顶 1745 → 1486 m、降约 260 m（GVP，2 级）—— 原写「岩浆逾 10 km³」「降低逾 300 m」。其余段（847 人死亡、云雅台风、2.5 km 破火山口）与 GVP/USGS 一致。核实 2026-09-11
     formation:
-      "The 1991 eruption ejected more than 10 km³ of magma at a VEI 6 intensity; the violence of the event triggered multiple earthquakes and caused the summit to collapse in on itself, lowering the mountain's height by more than 300 m and producing today's caldera landform.",
+      "The 1991 eruption ejected roughly 8–10 km³ of tephra and pyroclastic material in total (about 4–5 km³ of magma in dense-rock equivalent) at a VEI 6 intensity; the violence of the event triggered multiple earthquakes and caused the summit to collapse in on itself, lowering the mountain's height by about 260 m and producing today's caldera landform.",
     observation:
       "From the air, Pinatubo's caldera shows an almost circular collapsed outline, its turquoise crater lake standing in sharp colour contrast against the grey-brown pyroclastic deposits around it — direct geological evidence of the 1991 eruption.",
     distinguish:
@@ -13724,6 +14209,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The 1991 eruption coincided with Typhoon Yunya, and ash-laden rain added extra weight to roofs; a large share of the 847 deaths resulted from roof collapses. The resulting crater lake is today a well-known hiking destination in the Philippines.",
   },
   "mount-apo": {
+    // 全六段 sources: 海拔 2954 m（主流口径；另有 2956 m 流传，未见 NAMRIA 重测）、菲律宾最高峰；1880 年达沃总督 Joaquín Rajal 首登；1936 年设国家公园（Proclamation No. 59）—— 为本库 mayon-volcano / hundred-islands-national-park「首座国家公园」改正提供了时间锚点。核实 2026-09-11，未改动
     seeing:
       "Mount Apo is the highest peak in the Philippines at 2,954 m, a dormant stratovolcano within the Apo-Talomo Mountain Range on Mindanao, its slopes covered in tall tropical hardwood forest.",
     formation:
@@ -13738,6 +14224,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "\"Apo\" means \"grandfather\" or \"revered elder\" in the local Manobo and Kalagan languages; the mountain is regarded as the home of the guardian spirit Apo Sandawa. Its first recorded ascent was in 1880, led by Davao governor Joaquin Rajal.",
   },
   "mount-pulag": {
+    // 全六段 sources: 海拔 2928 m、吕宋岛最高、全国第三（阿波山 2954 > 杜朗杜朗 2938 > 普拉格）—— 与 cordillera-central-luzon、mount-apo 并读一致。核实 2026-09-11，未改动
     seeing:
       "Mount Pulag is Luzon's highest peak and the Philippines' third-highest overall, at 2,928 m, known for its early-morning \"sea of clouds\" and its exceptional view of the Milky Way.",
     formation:
@@ -13752,6 +14239,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mount Pulag holds important traditional cultural significance for local indigenous communities; the mountain is protected within Mount Pulag National Park, which safeguards both local biodiversity and indigenous cultural heritage.",
   },
   "cordillera-central-luzon": {
+    // 全六段 sources: 南北约 320 km、东西约 118 km、菲律宾最高山脉、最高峰普拉格山（3 级，与 mount-pulag 一致）。核实 2026-09-11，未改动
     seeing:
       "The Cordillera Central is a mountain system in north-central Luzon running about 320 km north-south and 118 km east-west, the highest mountain range in the Philippines, encompassing peaks such as Mount Pulag.",
     formation:
@@ -13766,6 +14254,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Cordillera Central has long been the traditional homeland of the Ifugao and other indigenous peoples of the Philippines, whose mountain terrace farming tradition has continued for more than two thousand years.",
   },
   "sierra-madre-philippines": {
+    // 全六段 sources: 南北约 540 km、菲律宾最长山脉（3 级，定性排名与 cordillera-central-luzon「最高」不同属性、不冲突）。核实 2026-09-11，未改动
     seeing:
       "The Sierra Madre is the longest mountain range in the Philippines, running along Luzon's east coast from Cagayan Province in the north to Quezon Province in the south, about 540 km end to end.",
     formation:
@@ -13780,6 +14269,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Extensive tracts of primary forest survive along the Sierra Madre, making it a key biodiversity conservation area in the Philippines, and it has long been the traditional territory of indigenous communities on Luzon's east coast.",
   },
   "mount-kanlaon": {
+    // 全六段 sources: 海拔 2465 m；1819 年以来喷发逾 30 次、菲律宾第三活跃；山顶约 2 km 椭圆破火山口；1934 年设国家公园（PHIVOLCS 火山档案转述，2 级）—— 注意 1934 早于阿波山 1936，但本条未自称「首座」，不构成冲突。近年喷发为持续过程，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Mount Kanlaon is the highest peak on Negros Island and in the Visayas at 2,465 m; it has erupted more than 30 times since 1819, making it the Philippines' third-most-active volcano.",
     formation:
@@ -13794,6 +14284,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mount Kanlaon National Park was established in 1934, encompassing the crater, hot springs and diverse wildlife habitat, and has long served as an important nature reserve in the Visayas.",
   },
   "chocolate-hills": {
+    // 全六段 sources: 「已确认至少 1260 座、可能逾 1776 座」—— 1776 是 1997 年第 1037 号公告的法定计数，1260–1268 为较早的旅游口径，正文并列两者的写法与常见口径一致；分布逾 50 km²、晚上新世至早更新世海相石灰岩。核实 2026-09-11，未改动
     seeing:
       "The Chocolate Hills are a cluster of karst hills on Bohol Island, with at least 1,260 and possibly more than 1,776 confirmed cone-shaped mounds spread across an area of more than 50 km², each 30–120 m tall.",
     formation:
@@ -13808,6 +14299,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chocolate Hills are Bohol's most famous natural landmark and have long been the subject of local legend and folklore; they are today an important geotourism destination in the central Visayas.",
   },
   "banaue-ifugao-rice-terraces": {
+    // 全六段 sources: 1995 年巴塔德、邦岸、马约瑶、洪古丹、纳加达坎五处列入 UNESCO；班奈镇观景台梯田因完整性不足未纳入 —— 与名录一致。⚠️ 红线自查：只写工程与名录机制，未作族群评价。核实 2026-09-11，未改动
     seeing:
       "The Ifugao rice terraces are a mountainside terrace-farming system carved by the Ifugao people more than two thousand years ago within the Cordillera Central, more than 48 terrace clusters climbing the mountain slopes tier upon tier, served by a precisely engineered irrigation network.",
     formation:
@@ -13822,6 +14314,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1995, five terrace clusters — Batad, Bangaan, Mayoyao, Hungduan and Nagacadan — were inscribed on the UNESCO World Heritage List as the \"Rice Terraces of the Philippine Cordilleras\"; the terraces around Banaue town itself were excluded due to lower integrity scores from dense modern construction, but remain an important agricultural cultural landscape locally.",
   },
   "camiguin-island": {
+    // 全六段 sources: 面积约 238 km²、七座火山、希博克—希博克为其中现存活火山；1871 年伏尔甘山喷发致墓园沉没（3 级，多来源一致）。核实 2026-09-11，未改动
     seeing:
       "Camiguin is a pear-shaped volcanic island off the north coast of Mindanao, covering about 238 km², home to seven volcanoes, earning it the nickname \"Island Born of Fire\" since the whole island was built up by undersea volcanic eruptions.",
     formation:
@@ -13838,20 +14331,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "batanes-islands": {
     seeing:
       "The Batanes Islands are the Philippines' northernmost island group, made up chiefly of the three inhabited islands of Batan, Sabtang and Itbayat, known for their open rolling hills and dramatic cliffs.",
+    // formation sources: 巴坦群岛东弧（巴丹岛）为火山岛、西弧（萨布唐、伊特巴亚特）为抬升珊瑚礁石灰岩（ANU Press《The Batanes Islands》第 17 章，学术出版）—— formation 与 concept 两段原把萨布唐归入火山成因，已改。伊特巴亚特为菲律宾最北端有人常住岛屿（更北的 Y'Ami 无人）。⚠️ 红线自查：只写地质与伊瓦坦石屋，未涉海域 / 主权。核实 2026-09-11
     formation:
-      "Batan and Sabtang formed through volcanic eruption, long-term weathering and erosion shaping today's open, rolling grass-hill terrain; Itbayat, by contrast, was uplifted by tectonic plate movement and presents a steeper, cliff-dominated coastal landform distinct from the other two islands.",
+      "Batan formed through volcanic eruption, long-term weathering and erosion shaping today's open, rolling grass-hill terrain; Sabtang and Itbayat, by contrast, are built mainly of coral-reef limestone repeatedly uplifted by tectonic plate movement, presenting a steeper, cliff-dominated coastal landform distinct from Batan.",
     observation:
       "From the air, the Batanes Islands show continuous, rolling green grass hills covering the terrain, dark grey rock outcrops dotted throughout, wild horses roaming freely across the open grassland — a sharp contrast with the tropical rainforest landscapes elsewhere in the Philippines.",
     distinguish:
       "Both the Batanes Islands and Camiguin are volcanically formed Philippine islands, but Batanes is known for its open grass-hill terrain and temperate-leaning climate, while Camiguin is a classic tropical volcanic island densely packed with seven volcanoes.",
     concept:
-      "Within Batanes, Itbayat's tectonic-uplift origin, distinct from the volcanic origin of Batan and Sabtang, makes the group an important sample for studying how differing geological origins shape contrasting landforms within a single island cluster.",
+      "Within Batanes, the tectonic-uplift origin of Sabtang and Itbayat, distinct from Batan's volcanic origin, makes the group an important sample for studying how differing geological origins shape contrasting landforms within a single island cluster.",
     history:
       "Itbayat is the northernmost inhabited island in the Philippines; the local Ivatan people retain a distinctive tradition of stone-house architecture, developed to withstand the region's frequent typhoons.",
   },
   "el-nido-bacuit-archipelago": {
+    // seeing sources: 45 座石灰岩岛礁、「El Nido」西语意为「巢」、金丝燕筑巢 —— 与多来源一致。seeing 段原写「2011 年整个区域获认定为 UNESCO 世界地质公园」：**查无此认定**，菲律宾唯一的 UNESCO 世界地质公园是 2023 年的保和岛（unesco.org，1 级），已删。核实 2026-09-11
     seeing:
-      "El Nido / the Bacuit Archipelago is a group of 45 limestone islets at the northern tip of Palawan, riddled with karst cliffs, sinkholes and lagoons; the entire area was recognised as a UNESCO Global Geopark in 2011.",
+      "El Nido / the Bacuit Archipelago is a group of 45 limestone islets at the northern tip of Palawan, riddled with karst cliffs, sinkholes and lagoons.",
     formation:
       "The limestone islets of the Bacuit Archipelago have been shaped by the combined action of sea erosion and surface dissolution over a long period, carving today's steep, near-vertical karst cliff landform, with dissolution within the islets producing numerous sinkholes and hidden lagoons.",
     observation:
@@ -13864,6 +14359,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "\"El Nido\" comes from the Spanish for \"the nest,\" named for the local tradition of harvesting swiftlet nests from the area's limestone cliffs and caves; it is today a well-known island-hopping and diving destination in the Philippines.",
   },
   "tubbataha-reefs": {
+    // 全六段 sources: 97,030 ha（tubbatahareefs.org，1 级）；「逾 360 种珊瑚、近 700 种鱼类」与 UNESCO 名录原文一致；1988 年设海洋公园、1993 年列入 UNESCO（whc.unesco.org/en/list/653，1 级）。⚠️ 红线自查：只写礁体生态，未涉南海主权 / 海域划界。核实 2026-09-11，未改动
     seeing:
       "The Tubbataha Reefs are a coral atoll natural park at the centre of the Sulu Sea, made up of the Tubbataha and Jessie Beazley Reefs, protecting an area of nearly 100,000 ha and recording more than 360 coral species and almost 700 fish species.",
     formation:
@@ -13878,6 +14374,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Tubbataha was established as a marine park in 1988 and inscribed on the UNESCO World Heritage List in 1993, making it one of the world's natural laboratories for studying coral reef formation.",
   },
   "coron-calamian-islands": {
+    // 全六段 sources: 卡杨甘湖水下能见度逾 24 m、约七成淡水三成海水（3 级，多来源一致）。⚠️ 红线自查：未涉南海议题。核实 2026-09-11，未改动
     seeing:
       "Coron / the Calamian Islands are a group of limestone islands off Palawan's northeast coast; Kayangan Lake within them is regarded as the clearest lake in the Philippines, with underwater visibility exceeding 24 m.",
     formation:
@@ -13892,6 +14389,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kayangan Lake has been guarded for generations by the local Tagbanua people, who regard it as sacred; it is today a well-known diving and island-hopping destination in the Philippines and an important case of indigenous-led nature conservation on Palawan.",
   },
   "puerto-princesa-underground-river": {
+    // 全六段 sources: 全长 8.2 km；「已知最长的直接入海可通航地下河」—— 限定语正确（「最长地下河」本身已被 2007 年墨西哥发现推翻，本条没有这么写）；洞厅宽达 120 m、高 60 m；1999 年列入 UNESCO；New7Wonders 2012-01-28 正式确认，正文作为与 UNESCO 并列的另一件事、未混为官方认定。核实 2026-09-11，未改动
     seeing:
       "The Puerto Princesa Underground River is an 8.2-km underground river within Palawan's Saint Paul Mountain Range, the longest known navigable underground river that flows directly into the sea, inscribed on the UNESCO World Heritage List in 1999.",
     formation:
@@ -13906,6 +14404,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Puerto Princesa Underground River was inscribed on the UNESCO World Heritage List in 1999 and named one of the New7Wonders of Nature in 2012, a landmark achievement in Philippine natural heritage conservation.",
   },
   "pagsanjan-gorge": {
+    // 全六段 sources: 落差约 120 m、三级跌落；1939-03-29 设国家公园（Proclamation No. 392）。核实 2026-09-11，未改动
     seeing:
       "Pagsanjan Gorge is a canyon landform on Luzon carved by the Pagsanjan River in Laguna Province, ending in the three-tiered, 120-m Magdapio Falls, popularly known as Pagsanjan Falls.",
     formation:
@@ -13920,6 +14419,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Pagsanjan Gorge National Park was established in 1939; the tradition of carrying visitors upriver by dugout canoe dates to the Spanish colonial era and continues today, making it one of the Philippines' longest-running river adventure tourism experiences.",
   },
   "cagayan-river": {
+    // 全六段 sources: 全长约 505 km、菲律宾最长且流量最大的河流、源出卡拉巴略山脉、于阿帕里注入巴布延海峡（Britannica，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Cagayan River is the Philippines' longest river and the one with the greatest discharge, running about 505 km from its source in the Caraballo Mountains through the Cagayan Valley of northeastern Luzon before emptying into the Babuyan Channel at Aparri.",
     formation:
@@ -13935,7 +14435,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "lake-lanao": {
     seeing:
-      "Lake Lanao is the Philippines' second-largest lake, covering about 340 km² in Lanao del Sur Province on Mindanao, and one of only 17 ancient lakes surviving on Earth.",
+      "Lake Lanao is the Philippines' second-largest lake, covering about 340 km² in Lanao del Sur Province on Mindanao, and one of the world's few so-called ancient lakes.",
     formation:
       "Lake Lanao formed when a basin between two mountain ranges was dammed by combined tectonic and volcanic activity, accompanied by the collapse of a large volcano — a classic case of tectonic and volcanic processes together shaping a large lake basin.",
     observation:
@@ -13943,11 +14443,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both Lake Lanao and Agusan Marsh are important wetland water bodies on Mindanao, but Lake Lanao is a higher-elevation lake of tectonic-volcanic origin, while Agusan Marsh is a low-elevation marsh wetland formed on a river floodplain.",
     concept:
-      "Lake Lanao is home to 18 endemic Philippine cyprinid fish species, making it an important sample for studying how long-term evolution in an isolated ancient lake produces endemic species radiation — a research value shared by only 15 ancient lakes worldwide.",
+      "Lake Lanao is home to 18 endemic Philippine cyprinid fish species, making it an important sample for studying how long-term evolution in an isolated ancient lake produces endemic species radiation.",
+    // history sources: 面积约 340 km²、菲律宾第二大湖、18 种特有鲤科鱼类。「古老湖泊」全球计数文献 15–20 不等，原 seeing 写 17、concept 写 15 自相矛盾，两处都改为不带计数。阿古斯水电占棉兰老岛用电：原写「约七成」（约 2013–2015 年状态）；NPC 官方「逾 50%」未注时点、DOE 2023–24 经媒体转述约三成，冲突且最新值只有 3 级来源，**只写定性下降、不补数字**，下轮找 DOE 原始数据回来补。⚠️ 红线自查：玛拉瑙人信仰只作人口学事实，未涉自治 / 冲突。核实 2026-09-11
     history:
-      "The Agus River hydroelectric system fed by Lake Lanao supplies about 70% of Mindanao's electricity; the Maranao people who live around the lake are almost entirely Muslim, and numerous mosques are found around its shores.",
+      "The Agus River hydroelectric system fed by Lake Lanao has long been one of Mindanao's main power sources (its share has fallen markedly in recent years as coal-fired capacity expanded); the Maranao people who live around the lake are almost entirely Muslim, and numerous mosques are found around its shores.",
   },
   "agusan-marsh": {
+    // 全六段 sources: 40,940.96 ha；1999-11-12 列入拉姆萨尔（Ramsar RIS 1009，1 级）；2018-11-08 东盟遗产公园（ASEAN Centre for Biodiversity，1 级）。⚠️ 红线自查：未涉棉兰老自治 / 冲突。核实 2026-09-11，未改动
     seeing:
       "Agusan Marsh is an extensive floodplain wetland in the Agusan River basin of northeastern Mindanao, its legislated protected area covering about 40,941 ha, inscribed on the Ramsar List of Wetlands of International Importance in 1999.",
     formation:
@@ -13963,7 +14465,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "hundred-islands-national-park": {
     seeing:
-      "Hundred Islands National Park is an island cluster in Lingayen Gulf off northwestern Luzon, comprising 124 limestone islands at low tide and 123 at high tide, established in 1940 as the Philippines' first national park.",
+      "Hundred Islands National Park is an island cluster in Lingayen Gulf off northwestern Luzon, comprising 124 limestone islands at low tide and 123 at high tide, established as a national park in 1940, one of the Philippines' earliest.",
     formation:
       "The islands of Hundred Islands National Park sit on a coral-reef foundation with rock dating back about two million years; long-term wave erosion combined with coral reef deposition has shaped today's dense cluster of small limestone islands scattered across Lingayen Gulf.",
     observation:
@@ -13972,12 +14474,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Hundred Islands National Park and the Chocolate Hills are Philippine landforms formed by uplifted coral-reef limestone, but Hundred Islands is a cluster of islands scattered across a bay, while the Chocolate Hills are a dense field of conical karst mounds on land.",
     concept:
       "The hundreds of small limestone islands densely clustered within a single bay at Hundred Islands make it a classic sample for studying how an uplifted coral-reef foundation fragments through wave erosion into a dense island cluster.",
+    // history sources: 退潮 124 座 / 涨潮 123 座；1940-01-18 设国家公园（Proclamation No. 667），常被称「第一座」但阿波山 1936、马荣 1938 更早 —— seeing 与 history 两段原写「首座」「最悠久」；开放四岛 Governor's / Marcos / Quezon / Children's（中文原把 Marcos 译成「市长岛」）。核实 2026-09-11
     history:
-      "Hundred Islands National Park was established in 1940, the Philippines' oldest national park; today only four islands — Marcos, Governor's, Quezon and Children's — have been developed and opened to visitors.",
+      "Hundred Islands National Park was established in 1940, often called the Philippines' first national park, though Mount Apo (1936) and Mayon (1938) were designated earlier; today only four islands — Marcos, Governor's, Quezon and Children's — have been developed and opened to visitors.",
   },
   "verde-island-passage": {
     seeing:
-      "The Verde Island Passage is a narrow marine channel between the provinces of Batangas, Mindoro, Marinduque and Romblon, widely recognised in scientific literature as the global \"centre of the centre\" of marine fish biodiversity, with more than 400 recorded coral species.",
+      "The Verde Island Passage is a narrow marine channel between the provinces of Batangas, Mindoro, Marinduque and Romblon, widely recognised in scientific literature as the global \"centre of the centre\" of marine fish biodiversity, with more than 300 recorded coral species.",
     formation:
       "The Verde Island Passage is a narrow marine corridor at the centre of the Philippine archipelago, sitting at the heart of the Coral Triangle; long-term convergence of warm ocean currents combined with sustained coral growth has shaped today's exceptionally biodiverse marine ecological corridor.",
     observation:
@@ -13986,11 +14489,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Verde Island Passage and the Tubbataha Reefs are important Philippine coral reef ecosystems, but the Passage is a biodiversity hotspot within a narrow strait, while Tubbataha is an isolated deep-sea atoll system at the centre of the Sulu Sea.",
     concept:
       "As the \"centre of the centre\" of the Coral Triangle, the Verde Island Passage is an important sample for studying how a narrow strait's terrain concentrates ocean currents and biodiversity into a global biodiversity hotspot.",
+    // history sources: 「中心之中心」出自 Carpenter & Springer 2005；珊瑚物种主流口径 300（Rappler）/ 338（CI），原写「逾 400」已改为「逾 300」；36 处海洋保护区（巴丹加斯 24 + 东民都洛 12）；Mission Blue Hope Spot **2023-07-21** 认定（missionblue.org），原写 2010 已改。⚠️ 红线自查：未涉南海主权 / 海域划界。核实 2026-09-11
     history:
-      "The Verde Island Passage hosts 36 marine protected areas; it was designated a \"Hope Spot\" by the international ocean conservation organisation Mission Blue in 2010, and remains a priority area for marine ecological conservation in the Philippines.",
+      "The Verde Island Passage hosts 36 marine protected areas; it was designated a \"Hope Spot\" by the international ocean conservation organisation Mission Blue in 2023, and remains a priority area for marine ecological conservation in the Philippines.",
   },
   // ============ Singapore ============
   "bukit-timah-nature-reserve": {
+    // 全六段 sources: 163.63 m（正文 164 为合理取整），NParks 称其为新加坡最高**自然**点，正文「本岛最高点」的限定与之一致；1883 年设为 Bukit Timah Forest Reserve；2011-10-18 列为东盟遗产公园（与双溪布洛并列，新加坡共 2 处）。核实 2026-09-11，未改动
     seeing:
       "Bukit Timah Nature Reserve is home to Bukit Timah Hill, at 164 m the highest point on mainland Singapore, a granite hill whose reserve preserves one of Singapore's few remaining tracts of primary rainforest.",
     formation:
@@ -14005,6 +14510,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bukit Timah Nature Reserve was established in 1883, one of Singapore's oldest nature reserves, and was recognised as an ASEAN Heritage Park in 2011.",
   },
   "central-catchment-nature-reserve": {
+    // 全六段 sources: 2880 ha（NParks 官方现行数，1 级；另有第三方给 3043 ha，与官方冲突，采信官方），为新加坡最大自然保护区；园内有原生旱地雨林残片约 154 ha 与梧槽原生淡水沼泽林约 87–96 ha（新加坡现存最后一片），其余逾 2000 ha 为次生林。核实 2026-09-11，未改动
     seeing:
       "The Central Catchment Nature Reserve is Singapore's largest nature reserve, covering 2,880 ha, ringing the MacRitchie, Upper and Lower Peirce, and Upper Seletar reservoirs.",
     formation:
@@ -14019,6 +14525,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The reservoirs ringed by the Central Catchment Nature Reserve were historically an important freshwater supply facility for Singapore; the reserve today serves as an important ecological and recreational green space on mainland Singapore.",
   },
   "sungei-buloh-wetland-reserve": {
+    // 全六段 sources: 现行面积 202 ha（历经 1989 约 87 ha → 2002 正式划为 130 ha → 扩展至 202 ha 多次变化，**正文用的是现值、没把某个历史阶段的数当成现值**）；2003 年成为新加坡**首个**东盟遗产公园，早于武吉知马（2011）。核实 2026-09-11，未改动
     seeing:
       "Sungei Buloh Wetland Reserve is a mangrove wetland in northwestern Singapore, expanded to 202 ha, preserving Singapore's largest surviving mangrove area and recognised in 2003 as Singapore's first ASEAN Heritage Park.",
     formation:
@@ -14033,6 +14540,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sungei Buloh Wetland Reserve became Singapore's first ASEAN Heritage Park in 2003, and has long served as the core base for Singapore's mangrove conservation and environmental education efforts.",
   },
   "chek-jawa-wetlands": {
+    // 全六段 sources: 1992 年批准乌敏岛东岸填海 → 2000 年底生态价值被公众发现 → 经公众意见征询与专家评估，2001-12-20（原定填海前数日）国家发展部宣布无限期推迟（新加坡国家文物局 Roots.gov.sg，1 级）。✅ 正文把年份、顺序与决策机制都写对了，**没有写成戏剧化叙事**。核实 2026-09-11，未改动
     seeing:
       "Chek Jawa Wetlands is an intertidal wetland of about 100 ha at the eastern tip of Pulau Ubin, where six distinct ecosystems — sandy beach, rocky beach, seagrass lagoon, coral rubble, mangroves and coastal forest — converge.",
     formation:
@@ -14047,6 +14555,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Chek Jawa was slated for land reclamation in 1992; after public consultation and expert review in 2001, the reclamation was deferred indefinitely, a representative case in Singapore's conservation history of public participation in decision-making.",
   },
   "pulau-ubin": {
+    // 全六段 sources: 采石始于 19 世纪早中期、1930 年代达峰；最后一座采石场（Ketam Quarry，原 Aik Hwa，1964–1999）1999-05 关闭；花岗岩曾用于 1851 年 Horsburgh 灯塔、1858 年 Fort Canning、1923 年新柔长堤（NParks 乌敏岛官方专题，1 级）。核实 2026-09-11，未改动
     seeing:
       "Pulau Ubin is a granite island off Singapore's northeast coast, extensively quarried for granite from the mid-19th century, its four surviving disused quarries now evolved into vegetated scenic ponds.",
     formation:
@@ -14061,6 +14570,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Granite from Pulau Ubin was used to build several lighthouses and the Causeway; the island's last quarry closed in 1999, and it is today one of the few places in Singapore that retains a traditional rural character.",
   },
   "sisters-islands-marine-park": {
+    // 全六段 sources: 2014 年设立，新加坡首座海洋公园，约 40 ha；范围除大小姐妹岛外还含圣约翰岛与 Pulau Tekukor 西侧礁盘 —— 正文只提圣约翰岛属表述不完整，但**未作排他性穷举断言**，不改。核实 2026-09-11，未改动
     seeing:
       "Sisters' Islands Marine Park, established in 2014, is Singapore's first marine park, covering about 40 ha and encompassing the Sisters' Islands and the waters around the western reef of St John's Island.",
     formation:
@@ -14075,6 +14585,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sisters' Islands Marine Park was established in 2014 as Singapore's first marine park; Small Sister's Island hosts a sea-turtle hatchery, and the park has long carried out turtle conservation and coral reef restoration work.",
   },
   "labrador-nature-reserve": {
+    // 全六段 sources: 2002 年将 10 ha 次生海岸植被与岩岸划设为保护区，是新加坡本岛唯一对公众开放的天然岩岸海崖。核实 2026-09-11，未改动
     seeing:
       "Labrador Nature Reserve is the only publicly accessible rocky sea cliff on mainland Singapore; 10 ha of secondary coastal vegetation and rocky shore were gazetted as a reserve in 2002.",
     formation:
@@ -14089,10 +14600,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Labrador area historically held several coastal defence gun batteries; it was gazetted as a nature reserve in 2002, and is today a representative site where Singapore's natural and historical heritage intersect.",
   },
   "bukit-batok-nature-park": {
+    // seeing sources: ⚠️ 两个相邻公园别混 —— **Bukit Batok Town Park（42 ha，前身 Gammon Quarry，1984 停用）才是官方的「小桂林」**（NParks 页面原文 Also known as Little Guilin）；本条目的 Bukit Batok **Nature** Park（36 ha，1988 辟建）官方页未提 Little Guilin。本条前身采石场名在 3 级来源里作 Poh Kim / Poh Hin，写法不一，按判据不填专名。岩性为辉长苏长岩（Gombak Norite）。核实 2026-09-11
     seeing:
-      "Bukit Batok Nature Park covers 36 ha, developed in 1988 on the site of a disused quarry; a towering granite cliff face stands beside the former quarry's flooded pit, nicknamed \"Little Guilin\" for its resemblance to the karst landscape of Guilin, China.",
+      "Bukit Batok Nature Park covers 36 ha, developed in 1988 on the site of a disused quarry, with a towering granite cliff face beside the former quarry's flooded pit. The nickname Little Guilin, for the resemblance to the karst landscape of Guilin in China, officially belongs to the neighbouring Bukit Batok Town Park — a separate former-quarry park next door.",
     formation:
-      "The quarry at Bukit Batok, formerly known as Gammon Quarry, once extracted gabbro-norite; long-term quarrying left a steep, near-vertical cliff face, and after quarrying ceased, groundwater seeped in to form the flooded pit that, together with the cliff, makes up today's landscape.",
+      "The quarry at Bukit Batok once extracted gabbro-norite (part of the Gombak Norite formation); long-term quarrying left a steep, near-vertical cliff face, and after quarrying ceased, groundwater seeped in to form the flooded pit that, together with the cliff, makes up today's landscape.",
     observation:
       "From the air, Bukit Batok Nature Park is dominated by a near-vertical granite cliff at its centre, reflected in the still water of the pit below, forming a clearly layered landscape against the dense secondary forest around it.",
     distinguish:
@@ -14103,6 +14615,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "\"Bukit Batok\" means \"coughing hill,\" a name derived from the vibration and noise of early quarrying operations; the park also preserves several sites associated with the Second World War.",
   },
   "coney-island-park": {
+    // 全六段 sources: 岛屿原 13 ha，经填海扩至约 100 ha；胡文虎、胡文豹兄弟 1930 年代购岛建「虎豹岛」别墅；公园 2015-10 开放（正文只写 2015 年，未误植月份）。注：岛上公园本身 50 ha 是 100 ha 岛屿的一部分，正文未混淆两者。核实 2026-09-11，未改动
     seeing:
       "Coney Island (formerly Pulau Serangoon) is an island off Singapore's northeast coast, originally just 13 ha and expanded through successive reclamation projects to about 100 ha, its park encompassing casuarina coastal forest, mangroves and open grassland.",
     formation:
@@ -14117,6 +14630,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In the 1930s Coney Island was purchased by the brothers Aw Boon Haw and Aw Boon Par, who renamed it Haw Par Island and built a private beach villa there; Coney Island Park opened in 2015.",
   },
   "kranji-marshes": {
+    // 全六段 sources: 56–57 ha，为新加坡最大天然淡水沼泽；170+ 鸟种 / 54 蝶种 / 33 蜻蜓种；核心保育区（约八成面积）不开放，仅约 8 ha 开放参观（NParks 栖息地修复手册，1 级）。核实 2026-09-11，未改动
     seeing:
       "Kranji Marshes is Singapore's largest natural freshwater marsh, covering more than 56 ha, home to over 170 bird species, 54 butterfly species and 33 dragonfly species.",
     formation:
@@ -14131,6 +14645,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2008 the Nature Society (Singapore) began participating in the conservation and management of Kranji Marshes, clearing some vegetation and building birdwatching facilities; the core conservation area remains closed to the public, with only about 8 ha open for visitors.",
   },
   "southern-islands": {
+    // 全六段 sources: 圣约翰岛 19 世纪起为检疫隔离站，1954 年设鸦片戒治中心、1973 年改综合戒毒中心、1975 年关闭，与正文「1950至70年代」吻合；拉扎鲁斯岛 1899-03-25 正式命名为 Lazarus or Convalescent Island，因脚气病医院得名；龟屿庙宇、放生龟池与农历九月朝圣传统均确认（国家文物局，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Southern Islands are a group of islands south of mainland Singapore; St John's Island, Lazarus Island and Kusu Island are the best known among them, today a well-known near-shore leisure destination.",
     formation:
@@ -14145,6 +14660,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "St John's Island served as a quarantine station from the late 19th century and was converted into a drug rehabilitation centre from the 1950s to the 1970s; Lazarus Island earned the name \"Convalescent Island\" after a beriberi hospital was built there in 1899; Kusu Island holds temples and a turtle sanctuary pond, drawing large numbers of pilgrims each year during the ninth lunar month.",
   },
   "pulau-semakau": {
+    // 全六段 sources: 填埋场 1995–1999 年建设（石堤合并工程在此窗口内）、1999-04-01 启用；一期毁 13 ha 红树林、补种 40 万株红树幼苗；2014-09 至 2015-01 珊瑚迁地工程共移植 761 个珊瑚群体（42 属）至姐妹岛海洋公园，正文「逾700群」吻合（国家文物局 1 级 + DHI 2 级）。核实 2026-09-11，未改动
     seeing:
       "Pulau Semakau is an island about 8 km south of mainland Singapore, home since 1999 to Singapore's sole operating landfill, formed in 1995 by joining Pulau Semakau and Pulau Sakeng with a rock bund.",
     formation:
@@ -14160,6 +14676,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Malaysia ============
   "titiwangsa-mountains": {
+    // 全六段 sources: 长约 480 km；最高峰哥打峰（Gunung Korbu）2183 m 为半岛第二高峰（仅比大汉山 2187 m 低 4 m）；主脉花岗岩为晚三叠—早侏罗世（约 200–230 Ma）侵入，属中生代。核实 2026-09-11，未改动
     seeing:
       "The Titiwangsa Mountains form the backbone of the Malay Peninsula, running northwest to southeast for about 480 km — the longest and most contiguous range on the peninsula; its highest peak, Mount Korbu, reaches 2,183 m, the peninsula's second-highest point.",
     formation:
@@ -14174,6 +14691,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Hill-station resorts along the range such as Cameron Highlands and the Genting plateau were developed during British colonial rule; the mountains remain an important water-catchment and ecological conservation area for Malaysia today.",
   },
   "gunung-tahan": {
+    // 全六段 sources: 2187 m 为马来半岛最高峰，位于彭亨侧、与吉兰丹接壤；大汉山国家公园跨彭亨 / 吉兰丹 / 登嘉楼三州。与 titiwangsa-mountains「半岛第二高峰」并读自洽。核实 2026-09-11，未改动
     seeing:
       "Gunung Tahan (Mount Tahan) is the highest peak on the Malay Peninsula, at 2,187 m, on the border between Pahang and Kelantan, and is the central feature of Taman Negara National Park, which spans a broad tract of lowland tropical rainforest at the meeting point of three states.",
     formation:
@@ -14188,6 +14706,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Taman Negara has long been a traditional area of activity for the Orang Asli, the indigenous peoples of the Malay Peninsula, and is today an important ecotourism and mountaineering destination in Malaysia.",
   },
   "cameron-highlands": {
+    // 全六段 sources: 威廉·金马仑 1885 年受委托勘测彭亨—霹雳边界时发现该高原（约 1800 m 处的平台）；1929 年 J.A. Russell 建 BOH 茶园，为金马仑高原第一座茶园。核实 2026-09-11，未改动
     seeing:
       "Cameron Highlands is a cool plateau at 1,100–1,800 m elevation within the Titiwangsa range, named after William Cameron who surveyed the area in 1885, and is today an important highland tea-growing region of Malaysia.",
     formation:
@@ -14202,10 +14721,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "British colonial authorities developed Cameron Highlands as a hill-station resort in the early 20th century; after the first tea estate, BOH, was established in 1929, the area gradually grew into an important highland tea-growing region of Malaysia.",
   },
   "mount-kinabalu": {
+    // seeing sources: 4095 m 为马来西亚与马来群岛最高峰；2000 年京那巴鲁公园列入 UNESCO。花岗岩体是**侵入**克罗克组沉积岩的独立岩体（不是克罗克山脉的一部分），锆石 U-Pb SHRIMP 测年定为约 7.85–7.22 Ma、为东南亚已知最年轻的花岗岩侵入体（Cottam et al. 2010，J. Geol. Soc. London，1 级；IUGS 地质遗产名录，1 级）—— 原写的「约1500万年前」是较早期的粗略估算。distinguish 段「独立的花岗岩高峰」本来就对，与 seeing 段原文直接矛盾。核实 2026-09-11
     seeing:
-      "Mount Kinabalu is the highest peak in Malaysia and the Malay Archipelago, at 4,095 m, a granite intrusion forming part of the Crocker Range; Kinabalu Park was inscribed on the UNESCO World Heritage List in 2000.",
+      "Mount Kinabalu is the highest peak in Malaysia and the Malay Archipelago, at 4,095 m, a standalone granite pluton that intrudes the older sedimentary rock of the Crocker Range; Kinabalu Park was inscribed on the UNESCO World Heritage List in 2000.",
     formation:
-      "Mount Kinabalu formed about 15 million years ago as magma from deep within the crust intruded and cooled into a granite body; sustained tectonic uplift together with glacial-period erosion has since shaped today's steep granite peak with its bare summit rock.",
+      "Mount Kinabalu's granite crystallised between about 7.85 and 7.22 million years ago, as U-Pb zircon dating shows, when magma from deep within the crust intruded and cooled into what is now Southeast Asia's youngest known granite pluton; sustained tectonic uplift together with glacial-period erosion has since shaped today's steep granite peak with its bare summit rock.",
     observation:
       "From the air, Mount Kinabalu's bare grey-white granite summit rises above a sea of cloud, its slopes showing a sharp vertical vegetation zonation from dense tropical rainforest to montane cloud forest, its outline striking against the Bornean skyline.",
     distinguish:
@@ -14216,20 +14736,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In the traditional belief of the local Kadazan-Dusun people, Mount Kinabalu is regarded as the resting place of ancestral spirits, and its name is said to mean \"the revered place of the dead\" or \"home of the spirits\"; it was formally inscribed on the UNESCO World Heritage List in 2000.",
   },
   "crocker-range": {
+    // seeing sources: 主体为克罗克组（始新世—早中新世深海浊积砂岩与泥岩，MDPI 1 级），京那巴鲁花岗岩为侵入其中的独立年轻岩体 —— 原文把沉积岩山系写成了花岗岩体的组成部分；两保护区相距约 10 km、为两种不同的 UNESCO 认定（本条 2014 年 MAB 生物圈保护区、约 350,584 ha；京那巴鲁公园为世界遗产）。核实 2026-09-11
     seeing:
-      "The Crocker Range is a north-south trending chain in western Sabah about 120 km long, with no single dominant peak, elevations ranging from 6 to 2,076 m, and forms part of the same granite massif system as Mount Kinabalu.",
+      "The Crocker Range is a north-south trending chain in western Sabah about 120 km long, with no single dominant peak, elevations ranging from 6 to 2,076 m, built mainly of deep-marine turbidite sandstone and mudstone of the Crocker Formation, into which the separate, younger granite pluton of Mount Kinabalu has intruded.",
     formation:
       "The Crocker Range formed through tectonic uplift since the Paleogene; long-term weathering and erosion have shaped today's rolling, mid-elevation terrain without a standout summit, in contrast with the isolated, towering peak of Mount Kinabalu nearby.",
     observation:
       "From the air, the Crocker Range appears as a continuous, rolling ridge of deep green, tropical rainforest at lower elevations giving way to montane cloud forest higher up, its terrain relatively gentle with no sharp peaks.",
     distinguish:
-      "The Crocker Range and Mount Kinabalu are geographically adjacent and part of the same biosphere-reserve system, but the Crocker Range is a continuous chain with no dominant peak, while Mount Kinabalu is a single, isolated high summit.",
+      "The Crocker Range and Mount Kinabalu lie about 10 km apart under two different UNESCO designations — a biosphere reserve and a World Heritage site respectively — but the Crocker Range is a continuous chain with no dominant peak, while Mount Kinabalu is a single, isolated high summit.",
     concept:
       "The Crocker Range Biosphere Reserve covers 350,000 ha, one of the largest protected areas on the island of Borneo, making it an important sample for studying the altitudinal vegetation zonation of Sabah's mid-elevation tropical mountains.",
     history:
       "The Crocker Range Biosphere Reserve was inscribed under UNESCO's Man and the Biosphere Programme in 2014, and has long been a traditional area of activity for Dusun and other indigenous communities of inland Sabah.",
   },
   "kelabit-highlands": {
+    // 全六段 sources: 巴里奥一带海拔约 1000–1200 m；穆鲁德山 2423 m；格拉比族约 6800 人、13 个村落（其中 7 个在巴里奥一带），正文「十余个村落」吻合。核实 2026-09-11，未改动
     seeing:
       "The Kelabit Highlands are an inland plateau in the northernmost part of Sarawak's Miri Division, centred on the \"Plain of Bah\" around Bario village, at 1,000–1,200 m elevation and extending about 30 km north-south.",
     formation:
@@ -14244,6 +14766,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kelabit Highlands are the traditional homeland of the Kelabit people of Sarawak, numbering about 6,800, spread across more than a dozen villages around Bario, long maintaining a distinctive tradition of highland rice farming combined with hunting and gathering.",
   },
   "gua-tempurung": {
+    // 全六段 sources: 约 4 亿年的石灰岩、全长约 4.5 km、暗河约 1.6 km、五个洞厅 —— 多方一致。洞穴已测长度是会增长的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Gua Tempurung is a limestone cave in Gopeng, Perak, dating back about 400 million years; it runs about 4.5 km in length with a 1.6-km underground river inside, one of the largest surviving cave systems on the Malay Peninsula.",
     formation:
@@ -14258,6 +14781,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Gua Tempurung takes its name — \"coconut-shell cave\" — from the shape of its surrounding limestone hills; it is today an important geological tourism site in Perak, with boardwalks allowing visitors to explore its different caverns.",
   },
   "batu-caves": {
+    // 全六段 sources: 325 m 志留纪石灰岩孤丘（约 4 亿年）；三叠纪约 2 亿年前抬升褶皱；1891 年 K. Thamboosamy Pillay 建庙、1892 年首届大宝森节，属「19世纪末」。⚠️ 红线自查：只写宗教活动的客观史实，**未作宗教评价或族群比较**。核实 2026-09-11，未改动
     seeing:
       "Batu Caves is a 325-m limestone hill and its cave system in Gombak, Selangor, its bedrock Silurian limestone dating back about 400 million years, one of Malaysia's best-known cave landforms.",
     formation:
@@ -14272,6 +14796,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A Hindu shrine has stood within Batu Caves since the late 19th century, and the site draws large numbers of devotees each year during the Thaipusam festival, making it a well-known place where natural and cultural landscape intersect in Malaysia.",
   },
   "gunung-mulu-np": {
+    // 全六段 sources: 山体约 2376–2377 m；已探明洞穴逾 295 km（**会增长的量**，下轮复核）；2000 年列入 UNESCO；砂拉越洞厅 600×415×80 m 为按面积计世界已知最大洞厅；鹿洞准确说是「世界第二大洞穴通道」（1991 年被越南韩松洞超越前曾为第一），正文简化为「世界第二大洞穴」可接受；尖峰石林高 45–50 m。核实 2026-09-11，未改动
     seeing:
       "Gunung Mulu National Park is the most intensively studied tropical karst area in the world, known for the sandstone pinnacles of 2,377-m Gunung Mulu and an explored cave system of more than 295 km, inscribed on the UNESCO World Heritage List in 2000.",
     formation:
@@ -14294,12 +14819,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Gunong Subis limestone massif containing the Niah Caves rises out of the mixed dipterocarp forest of Sarawak's coastal plain, the mouth of the Great Cave set into the massif like a vast rock breach, its scale dwarfing the terrain around it.",
     distinguish:
       "Both the Niah Caves and Gunung Mulu National Park are limestone karst landforms in Sarawak, but Niah is known for its ancient human archaeological site, while Gunung Mulu is known for its Pinnacles and the world's largest cave chamber.",
+    // concept sources: 深洞头骨 1958 年由 Tom Harrisson 发现，2016 年铀系法等重测为约 37–45 ka（Frontiers，1 级）；「6.5 万年」属于 2018 年公布的 Gua Dagang 石器，2025 年另有一颗约 52–55 ka、可能属古老型人类的牙齿（PLOS ONE，1 级）—— 原文把石器年代安到了「头骨碎片」上。大洞洞口约 61 m；2024-07 第 46 届世界遗产大会列入 UNESCO。核实 2026-09-11
     concept:
-      "Archaeological finds within the Niah Caves document human activity dating back about 40,000 years, with some skull fragments dated to about 65,000 years old, making it a key site for studying early human migration into and adaptation to Southeast Asia's tropical environment.",
+      "The famous Deep Skull from the Niah Caves, first dated to about 40,000 years, was re-dated in 2016 to roughly 37,000-45,000 years old, while separate stone-tool evidence of human activity at the caves goes back about 65,000 years, making it a key site for studying early human migration into and adaptation to Southeast Asia's tropical environment.",
     history:
       "The Niah Caves were first scientifically recorded in 1880; major archaeological excavations took place in the 1950s–60s under Tom Harrisson, curator of the Sarawak Museum, and his wife Barbara, and the site was formally inscribed on the UNESCO World Heritage List in 2024.",
   },
   "maliau-basin": {
+    // 全六段 sources: 直径约 25 km、外缘陡坡高差 300–1600 m；约 15–9 Ma 三角洲沉积、约 5 Ma 整体抬升后中部下陷成碟状盆地，**非火山口**（马来西亚地质学会期刊，1 级）。核实 2026-09-11，未改动
     seeing:
       "Maliau Basin, known as \"Sabah's Lost World,\" is a near-circular, saucer-shaped basin in interior Sabah about 25 km in diameter, its rim formed by steep cliffs 300–1,600 m high.",
     formation:
@@ -14314,6 +14841,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Maliau Basin earned the nickname \"Sabah's Lost World\" for its rugged terrain and long isolation from the outside world; it was not systematically surveyed by science until the late 20th century, and is today an important nature reserve in Sabah.",
   },
   "danum-valley": {
+    // 全六段 sources: 面积 438 km²、森林历史约 1.3 亿年；1968 年起列为一级保护林、1980 年设保护区、1986 年设研究中心。核实 2026-09-11，未改动
     seeing:
       "The Danum Valley Conservation Area is a 438-km² tract of largely undisturbed lowland dipterocarp forest in central Sabah, with a forest history of about 130 million years, making it one of the oldest surviving rainforests in the world.",
     formation:
@@ -14328,6 +14856,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Danum Valley Conservation Area was established in 1980 and has been designated a Class 1 (Protection) Forest Reserve under Sabah's forestry enactment since 1968; the Danum Valley Studies Centre, founded in 1986, is a globally recognised centre for tropical rainforest research and education.",
   },
   "endau-rompin": {
+    // 全六段 sources: 48,905 ha、横跨柔佛与彭亨，为半岛南部最大保护区；岩层约 2.48 亿年；1993 年正式设立（东盟遗产公园资料，2 级）。核实 2026-09-11，未改动
     seeing:
       "Endau-Rompin National Park straddles Johor and Pahang and is the largest surviving protected area in the southern half of the Malay Peninsula, covering 48,900 ha of rugged hills, granite outcrops, river valleys and waterfalls.",
     formation:
@@ -14342,6 +14871,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Endau-Rompin National Park was formally established in 1993 and is an important habitat for endangered flagship species such as the Malayan tiger and Malayan tapir; it has long been the traditional territory of indigenous communities in Johor and Pahang.",
   },
   "langkawi-geopark": {
+    // 全六段 sources: 2007-06-01 获认定，为全球第 52 个、**东南亚首个** UNESCO 世界地质公园 —— 本条自身就是东南亚首例，不存在借用他例年份的问题；地质记录逾 5.5 亿年；由玛琴昌、基林、浮罗浮浮三个地质森林公园组成（unesco.org/en/iggp，1 级）。核实 2026-09-11，未改动
     seeing:
       "Langkawi UNESCO Global Geopark was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years and including Malaysia's most complete Cambrian-to-Permian Paleozoic sedimentary sequence.",
     formation:
@@ -14356,6 +14886,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Langkawi was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, and is today an important destination for geological and ecological tourism in Malaysia.",
   },
   "penang-island": {
+    // 全六段 sources: 升旗山 833 m（2733 ft）；乔治市与马六甲 2008 年联合列入 UNESCO 世界遗产。核实 2026-09-11，未改动
     seeing:
       "Penang Island is a granite island off the northwest coast of the Malay Peninsula, its highest point, Penang Hill, reaching 833 m, with a forested granite hill core surrounded by coastal plains.",
     formation:
@@ -14370,6 +14901,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Penang Hill area has been developed as a hill-station resort since British colonial times; Penang is today an important historical, cultural and tourism city in Malaysia, and George Town's old quarter is inscribed on the UNESCO World Heritage List.",
   },
   "tioman-island": {
+    // 全六段 sources: Gunung Kajang 1038 m，为马来半岛沿海岛屿最高峰；花岗岩为晚白垩世约 80 Ma 侵入、比火山岩晚约 8.8 Ma（马来西亚地质学会期刊，1 级）。核实 2026-09-11，未改动
     seeing:
       "Tioman Island is an igneous island off the coast of Pahang in the South China Sea, its central massif reaching 1,038 m, and a well-known diving and ecotourism destination in Malaysia.",
     formation:
@@ -14384,6 +14916,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Tioman Island has long been a traditional fishing ground for Malay fishermen, and is today a well-known island resort and diving destination on Malaysia's east coast.",
   },
   "perhentian-islands": {
+    // 全六段 sources: 花岗岩小岛、登嘉楼州外海、「停泊补给点」命名由来与通行资料一致；与 redang-island 的对比无冲突。核实 2026-09-11，未改动
     seeing:
       "The Perhentian Islands are a pair of small granite islands (Perhentian Besar and Perhentian Kecil) off the coast of Terengganu in the South China Sea, lined with white sand beaches and coral reefs, a well-known diving and snorkelling destination on the peninsula's east coast.",
     formation:
@@ -14398,6 +14931,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Perhentian Islands take their name from the Malay word for \"stopping place,\" having historically served as a resupply stop for passing trading ships, and are today an important diving and snorkelling destination on Malaysia's east coast.",
   },
   "redang-island": {
+    // 全六段 sources: 花岗岩岛屿、马来西亚海洋公园组成部分；与 perhentian-islands 并读无互相证伪的「最……」表述。核实 2026-09-11，未改动
     seeing:
       "Redang Island is a granite island off the coast of Terengganu in the South China Sea, part of Malaysia's marine park system, with a well-preserved coral reef ecosystem along its coast.",
     formation:
@@ -14412,6 +14946,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Redang Island and its surrounding waters are protected within Malaysia's marine park system, and it is today an important coral reef conservation area and diving destination on the peninsula's east coast.",
   },
   "sipadan-island": {
+    // 全六段 sources: 马来西亚唯一的海洋岛、自约 600 m 深海垂直隆起、记录鱼类逾 400 种。⚠️ 红线自查：正文只写生态与潜水史，**未涉 2002 年国际法院主权裁决**，符合红线。核实 2026-09-11，未改动
     seeing:
       "Sipadan is Malaysia's only oceanic island, lying beyond the continental shelf in the Celebes Sea, its pinnacle rising about 600 m vertically from the seabed, ringed by natural hard coral reef, with more than 400 recorded fish species.",
     formation:
@@ -14426,6 +14961,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sipadan was historically a sea-turtle nesting site and a traditional fishing ground for local fishermen, and became an internationally renowned diving destination in the late 20th century owing to its distinctive underwater landform and ecology.",
   },
   "pahang-river": {
+    // 全六段 sources: 全长 459 km、马来半岛最长河；哲莱河与淡美璐河汇合、流域约 2.9 万 km²、于北根入海。与 rejang-river「马来西亚最长」口径互不证伪。核实 2026-09-11，未改动
     seeing:
       "The Pahang River is the longest river on the Malay Peninsula, running 459 km, formed by the confluence of its two headstreams, the Jelai and the Tembeling, draining a basin of about 29,000 km² before emptying into the South China Sea at Pekan.",
     formation:
@@ -14440,6 +14976,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pahang River has historically been an important waterway for inland tin mining and timber transport on the Malay Peninsula, with towns such as Temerloh and Pekan along its banks long developing around river trade.",
   },
   "kelantan-river": {
+    // 全六段 sources: 248 km，为半岛第四长河（次于彭亨、霹雳、麻坡）；加拉斯河与勒比河汇流、流域约 1.19 万 km²。核实 2026-09-11，未改动
     seeing:
       "The Kelantan River is the fourth-longest river on the Malay Peninsula, running 248 km, formed by the confluence of the Galas and Lebir rivers, draining a basin of about 11,900 km² before flowing north through Kota Bharu to the South China Sea.",
     formation:
@@ -14454,6 +14991,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kelantan valley was historically the political and cultural heartland of the Sultanate of Kelantan; Kota Bharu at its mouth is today the capital of Kelantan state.",
   },
   "perak-river": {
+    // 全六段 sources: 约 400 km，半岛第二长河（仅次于彭亨河）；源出霹雳 / 吉兰丹 / 泰国三方交界的皇家贝伦州立公园，于端洛入马六甲海峡。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Perak River is the second-longest river on the Malay Peninsula, running about 400 km, rising in the Titiwangsa Mountains at the tripoint of Perak, Kelantan and Thailand, and flowing south through Teluk Intan to the Strait of Malacca.",
     formation:
@@ -14468,6 +15006,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Perak River has historically been an important waterway for tin transport on the Malay Peninsula's west coast, with towns such as Ipoh along its banks prospering through tin mining and river trade.",
   },
   "kinabatangan-river": {
+    // 全六段 sources: 约 560 km，马来西亚第二长河；源出克罗克山脉，于山打根东南注入苏禄海；2005 年设野生动物保护区；下游是全球仅两处可见 10 种灵长类共存的地方之一（Britannica，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Kinabatangan River is Malaysia's second-longest river, running about 560 km, rising in the Crocker Range in southwest Sabah and flowing east to empty into the Sulu Sea southeast of Sandakan.",
     formation:
@@ -14482,6 +15021,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2005 the Sabah government gazetted the Kinabatangan Wildlife Sanctuary; it is today one of Borneo's most important wildlife-viewing destinations and has long been a traditional fishing and hunting ground for indigenous communities of inland Sabah.",
   },
   "rejang-river": {
+    // 全六段 sources: 约 563 km，马来西亚最长河流、婆罗洲第七长（Britannica，2 级）；源出伊兰山脉。**与印尼批的卡普阿斯河并排核过**：卡普阿斯（约 1143 km）是「婆罗洲最长」，本条限定为「马来西亚最长」，两条不冲突。核实 2026-09-11，未改动
     seeing:
       "The Rajang River is Malaysia's longest river, running about 563 km, rising in the Iran Mountains of interior Borneo and flowing west into the South China Sea — the seventh-longest river on the island of Borneo.",
     formation:
@@ -14496,6 +15036,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Rajang River has historically been an important waterway for timber and agricultural transport in interior Sarawak, with Sibu, the largest town on its banks, developing into an important commercial centre of Sarawak through river trade.",
   },
   "tasik-chini": {
+    // 全六段 sources: 马来西亚第二大天然淡水湖、12 个相连小湖、约 5085 ha、距关丹约 100 km；2009 年为**马来西亚首个** UNESCO 生物圈保护区（1 级）。生物多样性数字与官方口径量级一致。近年矿业与伐木致生态退化风险有公开报道（SCMP，2 级）。核实 2026-09-11，未改动
     seeing:
       "Tasik Chini (Lake Chini) is Peninsular Malaysia's second-largest natural freshwater lake, made up of 12 interconnected smaller lakes covering about 5,085 ha, about 100 km from Kuantan, recognised by UNESCO in 2009 as Malaysia's first biosphere reserve.",
     formation:
@@ -14510,6 +15051,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Tasik Chini is the ancestral home of the Jakun, an Orang Asli indigenous community of Pahang; local legend holds that an ancient Khmer city lies sunken beneath the lake, guarded by a \"dragon god.\" Recognised by UNESCO in 2009 as Malaysia's first biosphere reserve, the lake's ecosystem has in recent years faced degradation risk from mining and logging activity.",
   },
   "bako-national-park": {
+    // 全六段 sources: 2024-02-13 标志性海蚀柱「眼镜蛇头」因大浪倒塌，经砂拉越林业局证实（1 级）—— 海蚀柱是会消失的地物。formation 段的砂岩地层表述见 issue。核实 2026-09-11
     seeing:
       "Bako National Park is a stretch of coastal sandstone landform in Sarawak, shaped over millions of years of wave erosion into steep cliffs, headlands and white-sand bays, its sea stacks the park's signature feature.",
     formation:
@@ -14525,6 +15067,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Indonesia ============
   "mount-semeru": {
+    // 全六段 sources: 3676 m、爪哇最高峰、喷发节律约每 20–30 分钟（正文「近乎每20分钟」一致）、公园 1982 年设立（GVP，2 级）。火山高度是会变的量，下轮复核 PVMBG。核实 2026-09-11，未改动
     seeing:
       "At 3,676 m, Mount Semeru — locally also called Mahameru — is the highest peak on Java and one of Indonesia's most active volcanoes, venting a cloud of steam and ash roughly every 20 minutes.",
     formation:
@@ -14539,8 +15082,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In Javanese tradition Semeru is regarded as the \"nail of the world,\" believed by legend to have been placed by the gods to stabilise Java; the surrounding Bromo Tengger Semeru National Park was formally established in 1982 and remains the traditional homeland and spiritual centre of the Tengger people.",
   },
   "bromo-tengger-caldera": {
+    // seeing sources: 沙海破火山口约 9×10 km（外层大破火山口约 16 km，正文说的是内层），内有五座火山：Bromo 2329 / Batok 2470 / Kursi 2581 / Watangan 2661 / Widodaren 2650 m；公园 1982 年设立。核实 2026-09-11
     seeing:
-      "The Bromo Tengger caldera is an ancient volcanic depression roughly 10 km across, its floor covered by a fine volcanic \"sand sea\"; within it stand four newer cones including Bromo, whose crater continuously vents white sulphurous smoke.",
+      "The Bromo Tengger caldera is an ancient volcanic depression roughly 10 km across, its floor covered by a fine volcanic \"sand sea\"; within it stand five newer cones including Bromo, whose crater continuously vents white sulphurous smoke.",
     formation:
       "The Tengger caldera formed when a prehistoric giant volcano erupted catastrophically and its summit collapsed; several secondary cones, including Bromo and Batok, subsequently grew inside the caldera floor, producing a layered \"cone-within-caldera\" structure.",
     observation:
@@ -14553,6 +15097,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tengger highlands are the traditional homeland of the Tengger people, who maintain a distinctive blend of Hindu and native Javanese belief; each year during the Kasada festival, offerings are cast into Bromo's crater. The park was established in 1982, covering the sand sea and surrounding volcanic complex.",
   },
   "mount-merapi": {
+    // 全六段 sources: 2911 m、每 5–10 年喷发一次；1006/1786/1822/1872/1930/1976/2006/2010 历次大喷发与公开火山史吻合，2021 年起持续活动；官方记录活火山 127 座，正文「130余座」属可接受约数。核实 2026-09-11，未改动
     seeing:
       "At 2,911 m and located about 32 km north of Yogyakarta, Mount Merapi is the most active of Indonesia's more than 130 active volcanoes, erupting on average every 5 to 10 years.",
     formation:
@@ -14573,14 +15118,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ijen crater lake formed from water pooling within the crater; its extreme acidity comes from a high concentration of sulphuric and hydrochloric acid, while sulphuric gas continuously escaping from cracks at the crater rim ignites at temperatures up to 600 °C, producing a visible blue flame.",
     observation:
       "From the air, Ijen crater appears as a roughly circular depression about 1 km across and 175 m deep; the lake water shows a rare turquoise-green colour, with blue fluorescent-like flames visible at cracks after dark, and a constant plume of white sulphurous smoke by day.",
+    // distinguish sources: 海拔约 2799 m（2023 年 UNESCO 世界地质公园认定采用的现行值，另有 2769 m 旧值）、火山口直径约 1 km、深约 175 m、世界最大强酸性火山口湖；蓝色硫磺火焰另见于埃塞俄比亚达洛尔（NatGeo，2 级）——原写的「冰岛」无记录。核实 2026-09-11
     distinguish:
-      "Ijen differs from the volcanic landforms around Tambora or Tana Toraja: it is distinguished by the rare combination of a highly acidic crater lake and blue sulphuric flames — a visible phenomenon recorded in only two places worldwide, Indonesia and Iceland.",
+      "Ijen differs from the volcanic landforms around Tambora or Tana Toraja: it is distinguished by the rare combination of a highly acidic crater lake and blue sulphuric flames — a visible phenomenon recorded at only a handful of sites worldwide, including Ethiopia's Dallol volcano.",
     concept:
       "Ijen's acidic crater-lake environment and blue sulphuric flames make it an important field sample for studying the geochemistry of volcanic crater gases and the formation mechanisms of sulphur deposits.",
     history:
       "Local miners have long hand-collected solidified blocks of sulphur from within the crater and carried them down the mountain — a physically demanding traditional livelihood; the crater area is now designated for tourism and geological study.",
   },
   "dieng-plateau": {
+    // 全六段 sources: 海拔约 2000 m、20 余个火山口；1979-02-20 西尼拉火山口致命毒气事故属实（各方死亡数 142–182 不等，正文只写「致命」未给数字，不必改）。核实 2026-09-11，未改动
     seeing:
       "The Dieng Plateau, a highland at roughly 2,000 m in Central Java, is a volcanic complex of two or more stratovolcanoes and more than 20 small craters, dotted with geothermal fumaroles and sulphur hot springs.",
     formation:
@@ -14595,6 +15142,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Dieng Plateau preserves a group of Hindu temple ruins dating to the 7th–8th centuries, among the earliest known Hindu structures on Java, each temple named for a figure from the Indian epic the Mahabharata — a rare case of ancient religious architecture coexisting with an active volcanic landscape.",
   },
   "gunung-sewu-karst": {
+    // 全六段 sources: 2015-09 列入 UNESCO 世界地质公园（unesco.org/en/iggp，1 级）；已勘察 119 座溶洞与官方地质公园介绍一致。核实 2026-09-11，未改动
     seeing:
       "The Gunung Sewu (\"Thousand Mountains\") Karst is a limestone karst highland spanning Yogyakarta, Central Java and East Java, extending about 120 km east–west and studded with more than 40,000 limestone hills.",
     formation:
@@ -14609,6 +15157,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gunung Sewu karst region preserves traces of ancient human activity and groundwater use, and today serves as an important resource for local communities developing ecotourism and geological education.",
   },
   krakatoa: {
+    // 全六段 sources: 1883 年死亡荷兰官方估计 36,417 人，正文「逾3.6万」吻合；声波传至罗德里格斯岛约 4800 km；喀拉喀托之子 1927 年底征兆、1930 年浮出水面。⚠️ 阿纳克喀拉喀托 2018 年侧翼崩塌后高度骤降，若正文给高度须带时点。核实 2026-09-11，未改动
     seeing:
       "Krakatoa sits in the Sunda Strait between Java and Sumatra; its 1883 eruption was one of the most violent volcanic explosions ever recorded in modern history, and a still-active island volcano, Anak Krakatau (\"Child of Krakatoa\"), continues to rise from the sea there today.",
     formation:
@@ -14623,6 +15172,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The eruption of August 26–27, 1883 is considered one of the loudest sounds ever recorded in modern history, with the blast heard more than 4,800 km away; the resulting tsunamis killed more than 36,000 people, making it one of the most consequential natural disasters of the 19th century worldwide.",
   },
   "lake-toba": {
+    // 全六段 sources: 约 7.4 万年前 VEI 8 超级喷发、湖面约 100×30 km（GVP，2 级）；「过去2500万年间已知规模最大的爆炸性喷发」与学界「第四纪已知最大」共识同一量级（部分文献作「过去2800万年」），可接受。与航线解说 cgk-kno「世界最大的火山破火山口湖之一」并读不冲突。核实 2026-09-11，未改动
     seeing:
       "Lake Toba, a volcanic caldera lake in North Sumatra, is Indonesia's largest lake, about 100 km long and 30 km wide, with Samosir Island — roughly the size of Singapore — rising from its centre.",
     formation:
@@ -14637,6 +15187,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Toba has long been home to the Batak people, whose highland climate and fertile volcanic soil have sustained agriculture and fishing for generations; it remains one of Sumatra's most important natural and cultural destinations today.",
   },
   "gunung-leuser": {
+    // 全六段 sources: 面积 7927 km²、最高峰 3466 m；2004 年与 Kerinci Seblat、Bukit Barisan Selatan 共同以「苏门答腊热带雨林遗产」列入 UNESCO —— 本条对应的正是这一期，未串位。核实 2026-09-11，未改动
     seeing:
       "Gunung Leuser National Park straddles Aceh and North Sumatra provinces, covering about 7,927 km²; its highest peak, Gunung Leuser, reaches 3,466 m, and the park is one of the most important wild habitats of the Sumatran orangutan.",
     formation:
@@ -14651,6 +15202,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The orangutan sanctuary at Bukit Lawang has conducted rehabilitation and research since the 1970s; the park was jointly inscribed on the UNESCO World Heritage List in 2004 alongside Kerinci Seblat and Bukit Barisan Selatan National Parks, a place where the traditional lands of local communities intersect with international conservation efforts.",
   },
   "mount-kerinci": {
+    // 全六段 sources: 3805 m 为苏门答腊最高峰、全印尼最高火山；克林芝—塞布拉特国家公园 2004 年随「苏门答腊热带雨林遗产」列入 UNESCO。核实 2026-09-11，未改动
     seeing:
       "At 3,805 m, Mount Kerinci is the highest peak on Sumatra and the tallest volcano in all of Indonesia, standing within Kerinci Seblat National Park, renowned as a habitat of the Sumatran tiger.",
     formation:
@@ -14675,10 +15227,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Agung and Rinjani are tall active volcanoes in the Bali–Lombok region, but Agung is Bali's highest point and closely bound up with Balinese Hindu belief, while Rinjani is regarded as a sacred mountain in the traditional beliefs of Lombok's Sasak people.",
     concept:
       "Agung's 2017–2019 eruptive activity makes it an important modern case study for how a stratovolcano dormant for decades can reawaken, and for the impact of volcanic ash on international air travel.",
+    // history sources: 3031 m 为巴厘岛最高点；上次大喷发 1963 年，2017-11-21 再度喷发（寂静期 54 年，同行评审口径）；2017-11 伍拉赖机场因喷发关闭（CNN，2 级）。核实 2026-09-11
     history:
-      "After 53 years of dormancy, Agung began erupting again on November 21, 2017; repeated eruptions forced the evacuation of more than 100,000 people and volcanic ash clouds temporarily closed Ngurah Rai International Airport, with activity continuing until June 2019 — a modern textbook case of Indonesian volcanic monitoring and emergency response.",
+      "After 54 years of dormancy, Agung began erupting again on November 21, 2017; repeated eruptions forced the evacuation of more than 100,000 people and volcanic ash clouds temporarily closed Ngurah Rai International Airport, with activity continuing until June 2019 — a modern textbook case of Indonesian volcanic monitoring and emergency response.",
   },
   "uluwatu-cliffs": {
+    // 全六段 sources: 崖高各来源 70–79 m，正文「逾70米」取保守下限；武吉半岛古珊瑚礁抬升成因、乌鲁瓦图庙为巴厘六大方位庙之一均有据。核实 2026-09-11，未改动
     seeing:
       "The Uluwatu Cliffs are a stretch of limestone coastline at the southern tip of Bali's Bukit Peninsula, rising sheer from the Indian Ocean to heights of more than 70 m in places, with the famous clifftop Uluwatu Temple perched at the top.",
     formation:
@@ -14693,6 +15247,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Uluwatu Temple is one of Bali's six \"directional temples\" and has long been an important site of Balinese Hindu worship; today the cliffline is also one of Bali's most celebrated surfing and sunset-viewing destinations.",
   },
   "nusa-penida": {
+    // 全六段 sources: 克林金崖约 150 m（个别来源作约 120 m，150 更常见）；崖下海滩约 80 m；2016–2017 年经社交媒体走红。核实 2026-09-11，未改动
     seeing:
       "Nusa Penida is an island off the southeast coast of Bali; its best-known landmark, Kelingking Cliff on the southwest shore, rises about 150 m above sea level and is widely recognised for its dinosaur-like silhouette.",
     formation:
@@ -14707,6 +15262,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kelingking Cliff was once a relatively obscure spot; it rose to global fame around 2016–2017 through social media, and is now Nusa Penida's single most-visited site.",
   },
   "mount-rinjani": {
+    // 全六段 sources: 3726 m 为印尼第二高活火山；塞加拉阿纳克湖由 1257 年萨马拉斯喷发形成、湖面 2004 m、约 11.3 km²（PNAS 2013，1 级）。核实 2026-09-11，未改动
     seeing:
       "At 3,726 m, Mount Rinjani is Lombok's highest peak and Indonesia's second-highest volcano; the Segara Anak crater lake within its caldera is its signature feature.",
     formation:
@@ -14721,6 +15277,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Rinjani is regarded as a sacred mountain in the traditional beliefs of Lombok's Sasak people; the surrounding Mount Rinjani National Park is an important hiking and trekking destination and a site for traditional Sasak ceremonial activities.",
   },
   kelimutu: {
+    // 全六段 sources: 1639 m；三色火山口湖颜色随地下热液活动周期性变化，三湖对应的传说与公开资料一致。火口湖颜色是会变的量。核实 2026-09-11，未改动
     seeing:
       "At 1,639 m, Kelimutu is a volcano on Flores whose summit holds three adjacent crater lakes, each a different colour — a rare geological spectacle even by Southeast Asian standards.",
     formation:
@@ -14735,6 +15292,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local Florenese communities believe the three lakes are the resting places of the souls of elders, young men and women, and malevolent spirits respectively, with the changing colours understood to reflect the state of departed souls — a striking example of natural landscape intertwined with local belief.",
   },
   "komodo-national-park": {
+    // 全六段 sources: 三座主岛（科莫多 / 帕达尔 / 林卡）+ 26 座小岛；1991 年列入 UNESCO（whc.unesco.org/en/list/609，1 级）。核实 2026-09-11，未改动
     seeing:
       "Komodo National Park lies in the waters between Flores and Sumbawa, comprising the three larger islands of Komodo, Padar and Rinca along with 26 smaller ones, and is the only natural habitat of the Komodo dragon, the largest living lizard.",
     formation:
@@ -14749,6 +15307,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Komodo Islands have long been the traditional home of local fishing communities living alongside the dragons; recognised for their exceptional geological and biological value, they were inscribed on the UNESCO World Heritage List in 1991 and remain one of Indonesia's most important conservation and ecotourism destinations.",
   },
   "mount-tambora": {
+    // 全六段 sources: 1815 年为有文字记录以来规模最大的火山喷发（史前 Toba 等不计入「记录史」）；VEI 7、喷出约 37–45 km³ DRE；山体由约 4300 m 降至约 2850 m；1816「无夏之年」。直接死亡学界估 11,000–12,000，饥荒等间接死亡另计（5 万–9 万余不等）—— 正文「至少1万人直接死亡」保守、不越界。核实 2026-09-11，未改动
     seeing:
       "Mount Tambora stands on the northern coast of Sumbawa; its 1815 eruption is the largest volcanic eruption ever recorded in human history, and the mountain now stands about 2,850 m tall after the event.",
     formation:
@@ -14763,6 +15322,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The 1815 eruption and the pyroclastic flows, earthquakes and tsunamis that followed killed at least 10,000 people directly; the ash it ejected triggered severe famines across parts of the Northern Hemisphere the following year, making it a major contributor to the global climate and food crisis of the early 19th century.",
   },
   "tanjung-puting": {
+    // 全六段 sources: 公园面积 415,040 ha，正文「约41.6万公顷」差 <0.3%；1935 年设禁猎区、1971 年 Galdikas 建利基营地、1982 年升格国家公园。核实 2026-09-11，未改动
     seeing:
       "Tanjung Puting National Park, on the coast of Central Kalimantan, is renowned for orangutan conservation, covering about 416,000 hectares, with the Sekonyer River serving as the main route into the park's interior.",
     formation:
@@ -14777,6 +15337,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Primatologist Biruté Galdikas established Camp Leakey research station here in 1971, conducting long-term orangutan rehabilitation and behavioural research; the area was designated a game reserve in 1935 and formally elevated to national park status in 1982.",
   },
   "kapuas-river": {
+    // 全六段 sources: 全长约 1143 km，为印尼及婆罗洲最长河流，源出穆勒山脉。**与马来西亚批的拉让江并排核过**：拉让江（约 563 km）是「马来西亚最长」、在婆罗洲排第七，两条口径互不证伪。核实 2026-09-11，未改动
     seeing:
       "At about 1,143 km long, the Kapuas River is Indonesia's longest river and the longest on the island of Borneo, rising in the Müller Mountains of West Kalimantan and flowing west through mountains, swamps and lowland rainforest before emptying into the South China Sea.",
     formation:
@@ -14791,6 +15352,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "For centuries the Kapuas River has served as the principal waterway linking West Kalimantan's coast and interior for trade and travel, playing a significant role in cultural exchange and the rise of regional kingdoms in the region.",
   },
   "tana-toraja": {
+    // 全六段 sources: 县域约 2044 km²、最高点 3083 m；「托拉查」意为「高地上的人」。⚠️ 红线自查：正文只写喀斯特地貌、梯田景观与文化景观的客观事实，**未作宗教评价或族群比较**。核实 2026-09-11，未改动
     seeing:
       "Tana Toraja is a highland region in the interior of South Sulawesi, covering about 2,044 km² with elevation reaching as high as 3,083 m; its central town of Rantepao is ringed by classic limestone karst mountains and rice terraces.",
     formation:
@@ -14805,6 +15367,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The name \"Toraja\" derives from the Buginese language, meaning \"people of the uplands,\" referring to the region's indigenous inhabitants; Tana Toraja's climate is cool and misty year-round, making it an important highland settlement area in the interior of Sulawesi.",
   },
   "bunaken-national-park": {
+    // 全六段 sources: 面积约 890.65 km²、97% 为海域、1991 年设立；约 390 种珊瑚、约 2000 种鱼类（约占印度—西太平洋鱼类七成）。核实 2026-09-11，未改动
     seeing:
       "Bunaken National Park lies off the coast near Manado in North Sulawesi, covering about 890 km², 97% of it marine; it is home to some 390 coral species and around 2,000 fish species, and is among the earliest marine national parks established in Indonesia.",
     formation:
@@ -14827,12 +15390,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the main islands of Wakatobi — Wangi-Wangi, Kaledupa and others — are surrounded by broad, pale-coloured reef flats that give way abruptly to deep blue open water beyond, their reef outlines clearly traceable in satellite imagery.",
     distinguish:
       "Both Wakatobi and Bunaken National Park are important marine protected areas around Sulawesi, but Wakatobi is distinguished by its larger reef area and greater diversity of reef types — fringing, barrier and atoll — while Bunaken is known for its near-shore vertical reef walls.",
+    // concept sources: 鱼类 942 种（Allen & Erdmann 2003 调查，被多方作为标准参考值）；珊瑚种数 UNESCO MAB 官方页记 396 种、营销文案作 750 种，口径不明，正文不写死；原文「在印尼境内仅次于大堡礁」逻辑不通（大堡礁不在印尼）且无学术出处，已删。国家公园 2002 年设立、约 140 万 ha、2005 年列入 UNESCO 预备名录均核实无误。核实 2026-09-11
     concept:
-      "Wakatobi records 942 fish species and 750 coral species, making it an important sample for studying how marine biodiversity forms at the core of the Coral Triangle; in scale it ranks second within Indonesia only to world-class systems such as the Great Barrier Reef.",
+      "Wakatobi records 942 fish species (per a 2003 survey), while published counts of coral species vary widely with survey methodology, making it an important sample for studying how marine biodiversity forms at the core of the Coral Triangle.",
     history:
       "Wakatobi has been on the UNESCO World Heritage tentative list since 2005; the archipelago's name is an acronym of its four main islands — Wangi-wangi, Kaledupa, Tomia and Binongko — and its waters have long served as the traditional fishing grounds of local communities.",
   },
   "banda-islands": {
+    // 全六段 sources: 11 座岛屿、陆地约 8150 ha、班达阿皮火山约 670 m、1820 与 1852 年喷发造成破坏；19 世纪中叶前为全球唯一肉豆蔻产地（Britannica）。⚠️ 红线自查：正文只写「香料贸易中心」这类定位性史实，**未写 17 世纪战争的伤亡或评价**。核实 2026-09-11，未改动
     seeing:
       "The Banda Islands, in Maluku province, are an archipelago of 11 small volcanic islands covering a total land area of about 8,150 hectares; Mount Api, at about 670 m, is the central geological feature of the group.",
     formation:
@@ -14847,6 +15412,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Until the mid-19th century the Banda Islands were the world's sole source of nutmeg and mace, making them a vital hub in the maritime trade networks linking South Asia, the Arab world and East Asia, and a focal point of early European maritime interest in the region.",
   },
   "belitung-island": {
+    // 全六段 sources: 花岗岩「托尔」巨石地貌；2021-04 列入 UNESCO 世界地质公园（unesco.org/en/iggp，1 级）。⚠️ concept 段「勿里洞石占全球同类天然玻璃 18%–19%」查无出处，见 issue。核实 2026-09-11
     seeing:
       "Belitung Island, in Bangka-Belitung province, is fringed by clusters of granite \"tor\" boulders set against white sand beaches and pale blue water — a distinctive representative of Indonesia's granite coastal landscape.",
     formation:
@@ -14869,12 +15435,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Puncak Jaya rises tall and steep, its bare summit rock face forming a classic pyramidal profile; the remaining patch of white ice at the top stands out strikingly against the tropical mountain landscape at the equator.",
     distinguish:
       "Both Puncak Jaya and Gunung Leuser are major Indonesian mountain systems, but Puncak Jaya is the country's and Oceania's highest peak, its summit preserving a rare tropical glacier, while Gunung Leuser is known for the rainforest biodiversity of a mid-elevation range.",
+    // concept sources: 4884 m 为全球岛屿最高峰（吉尼斯 / Britannica）；「七大洲最高峰」梅斯纳版以查亚峰代表大洋洲、巴斯版以科修斯科山代表 —— 原文只写一种、未注明版本。BMKG 监测显示冰川厚度 2024 年底已降至约 4 m（2010 年装设备时 32 m），持续消融，下轮复核。红线：正文只写冰川与自然地貌，未涉地区政治。核实 2026-09-11
     concept:
-      "As the representative peak for Oceania among the world's \"Seven Summits,\" and one of the very few mountains anywhere in the tropics with permanent snow and ice, Puncak Jaya is an important observation site for studying how equatorial alpine glaciers respond to global warming.",
+      "As Oceania's peak in the Messner version of the Seven Summits list (the Bass version uses Australia's Mount Kosciuszko instead), and as one of the very few mountains anywhere in the tropics with permanent snow and ice, Puncak Jaya is an important observation site for studying how equatorial alpine glaciers respond to global warming.",
     history:
       "Puncak Jaya lies within Lorentz National Park, which has been inscribed on the UNESCO World Heritage List; long-term monitoring by Indonesia's Meteorology, Climatology and Geophysics Agency has shown the summit's \"permanent snow\" continuing to melt, a shrinking-glacier trend that continues to draw sustained scientific attention.",
   },
   "raja-ampat": {
+    // 全六段 sources: 逾 1500 座岛屿、四主岛；逾 550 种珊瑚、逾 1800 种礁鱼（CI / TNC 调查）；锦鲤角单次潜水记录 374 种鱼（Gerry Allen 2012，迄今世界纪录）。⚠️ 红线自查：正文只写自然地貌、洋流、珊瑚礁与保护区，**未涉地区政治地位或采矿争议**。核实 2026-09-11，未改动
     seeing:
       "The Raja Ampat archipelago, at the heart of the Coral Triangle, encompasses more than 1,500 islands around its main islands of Misool, Salawati, Batanta and Waigeo, and is one of the most biodiverse marine regions on Earth.",
     formation:
@@ -14890,6 +15458,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Kazakhstan ============
   "zailiysky-alatau": {
+    // 全六段 sources: 全长约 350 km、塔尔加尔峰 4973–4979 m（正文取 4979）、科尔任涅夫斯基冰川约 12 km；伊犁阿拉套国家公园 1996-02-22 设立、面积约 20.0–20.2 万 ha（Astana Times，2 级）。跨境表述中性、未描述边界线。核实 2026-09-11，未改动
     seeing:
       "The Zailiysky Alatau (Trans-Ili Alatau) is a segment of the northern Tian Shan running about 350 km east-west; its highest peak, Talgar Peak, reaches 4,979 m, and Almaty, Kazakhstan's former capital, sits at its northern foot.",
     formation:
@@ -14904,6 +15473,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Almaty, at the range's northern foot, was formerly Kazakhstan's capital; the Ile-Alatau National Park, established in 1996, protects more than 200,000 hectares of the range's northern slope and is an important destination for hiking, skiing and summer retreats.",
   },
   "karkaraly-mountains": {
+    // 全六段 sources: 最高点 Zhirensakal 1403 m；国家公园 1998-12-01 设立、面积 112,120 ha。核实 2026-09-11，未改动
     seeing:
       "The Karkaraly Mountains are a granite range within the Kazakh Uplands, reaching 1,403 m at their highest point; the sudden appearance of forest and lakes deep within the steppe makes this a rare \"steppe oasis.\"",
     formation:
@@ -14918,6 +15488,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karkaraly National Park, established in 1998, covers about 112,000 hectares; the massif was historically a traditional summer retreat and gathering place for Kazakh nomadic clans, and remains an important ecotourism destination in the Saryarka region today.",
   },
   "tarbagatai-mountains": {
+    // 全六段 sources: 与萨吾尔山构成萨吾尔—塔尔巴哈台山地，较外伊犁阿拉套更低缓 —— 定性描述，与相关条目比较方向正确。⚠️ 红线自查：只写山体走向与游牧史实，**未描述中哈边境线、未表述主权**。核实 2026-09-11，未改动
     seeing:
       "The Tarbagatai Mountains run along Kazakhstan's eastern border with China, forming, together with the Saur range to the south, the Saur-Tarbagatai mountain system — a transitional zone between the northern edge of the Junggar Basin and the Kazakh Uplands.",
     formation:
@@ -14932,6 +15503,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tarbagatai range has historically been a traditional seasonal migration and grazing route for nomadic peoples, and remains an important area for local pastoral activity today.",
   },
   "bektau-ata": {
+    // 全六段 sources: 石炭—二叠纪之交碱性花岗岩体侵入、未喷出地表；岩体约 15×11 km、最高点 1213–1214 m。核实 2026-09-11，未改动
     seeing:
       "Bektau-Ata is an alkaline granite massif about 70 km north of Lake Balkhash, roughly 15 km across, with boulders scattered over more than 170 km² and its highest point reaching 1,214 m.",
     formation:
@@ -14946,6 +15518,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Auliye-Tas Cave within the massif holds a freshwater spring regarded as sacred by local people; Bektau-Ata is also a popular destination for rock climbers today.",
   },
   "ustyurt-plateau": {
+    // 全六段 sources: 里海与咸海之间的古海相沉积台地、跨哈乌两国、哈境内主要在曼格斯套州 —— 定性描述，与 bozzhyra、karagiye-depression、torysh-valley-of-balls 并读一致；与航线解说 ala-sco / nqz-sco 并读一致。核实 2026-09-11，未改动
     seeing:
       "The Ustyurt Plateau is a vast clay-desert tableland between the Caspian and Aral Seas, spanning Kazakhstan and Uzbekistan; on the Kazakh side it lies mainly within Mangystau Region.",
     formation:
@@ -14962,8 +15535,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "karagiye-depression": {
     seeing:
       "The Karagiye Depression is a karst basin on the Mangystau Peninsula, reaching about -132 m at its lowest point — the lowest point in Kazakhstan and in all of Central Asia and the former Soviet Union.",
+    // formation sources: 最低点约 −132 m，在全球低地排名中次于死海、阿萨勒湖、吐鲁番、卡塔拉洼地位列第五（geology.com 排名表；英文维基正文另作 −134 m，两数并存，暂从被排名表精确印证的 −132）；洼地长约 40 km、宽约 10 km —— 原写的「宽25公里」疑为把「40 km（25 mi）」的英里换算数误当成宽度。核实 2026-09-11
     formation:
-      "Long-term groundwater dissolution carved caves and underground voids into the rock strata; as the overlying sand layers lost support, they gradually collapsed, forming today's bowl-shaped depression about 40 km long and 25 km wide.",
+      "Long-term groundwater dissolution carved caves and underground voids into the rock strata; as the overlying sand layers lost support, they gradually collapsed, forming today's bowl-shaped depression about 40 km long and 10 km wide.",
     observation:
       "From the air, the Karagiye Depression appears as a broad, bowl-shaped basin ringed by winding, undulating slopes, standing in clear relief against the flat tableland of the surrounding Ustyurt Plateau.",
     distinguish:
@@ -14974,6 +15548,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Fossils are preserved in the cliffs around the depression, and it is home to steppe wildlife including Pallas's cat and the corsac fox; today it is an important geological and ecological research destination in the Mangystau region.",
   },
   "betpak-dala-desert": {
+    // 全六段 sources: 南北约 170 km、东西约 500 km、面积约 7.5 万 km²，为世界最大黏土荒漠之一（Britannica，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Betpak-Dala Desert is a clay desert in central Kazakhstan, about 170 km north-south and 500 km east-west, covering roughly 75,000 km² — one of the largest clay deserts in the world.",
     formation:
@@ -14988,6 +15563,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The desert is almost entirely uninhabited and was historically a region nomadic peoples avoided or skirted around; it remains largely undisturbed desert today.",
   },
   "moiynkum-desert": {
+    // 全六段 sources: 面积约 37,500 km²（多来源一致）。核实 2026-09-11，未改动
     seeing:
       "The Moiynkum Desert is a sand desert in Kazakhstan's Turkistan and Zhambyl regions, covering a total area of about 37,500 km².",
     formation:
@@ -15002,6 +15578,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The desert was historically a required crossing point for Silk Road caravans; parts of it still offer camel-caravan-style desert travel experiences today, carrying on the memory of this ancient trade route.",
   },
   "charyn-canyon": {
+    // 全六段 sources: 全长约 154 km、谷底约 1100 m、崖壁最深约 300 m、约 1200 万年侵蚀形成、保护区 127,050 ha（national-parks.org，2 级）。「亚洲的大峡谷」为通俗称号。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "Charyn Canyon lies about 200 km east of Almaty, near the China-Kazakhstan border, and runs about 154 km in length — often called the \"Grand Canyon of Central Asia\" — with a floor elevation of about 1,100 m and walls plunging up to 300 m.",
     formation:
@@ -15016,6 +15593,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around Charyn Canyon was historically a traditional territory of local nomadic peoples; today it is one of the most popular day-trip natural destinations around Almaty.",
   },
   bozzhyra: {
+    // 全六段 sources: 两座逾 200 m「獠牙」岩塔、白垩系岩层（约 5000 万–8000 万年）、石灰岩厚达约 250 m —— 与 ustyurt-plateau 等条目互证一致，未找到单一权威页逐个复核数字。核实 2026-09-11，未改动
     seeing:
       "Bozzhyra, whose name means \"grey ravine\" in Kazakh, is a vast canyon system on the western edge of the Ustyurt Plateau on the Mangystau Peninsula, its two \"fang\" rock towers, each rising more than 200 m, the area's most iconic landmarks.",
     formation:
@@ -15030,8 +15608,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bozzhyra's remoteness and difficult access meant it saw little human traffic historically; today it is a popular destination for off-road and photography tourism in the Mangystau region.",
   },
   "medeu-gorge": {
+    // seeing sources: 峡谷海拔 1520–1750 m；溜冰场 1949–1951 年建成、1951-02-05 开幕，1972 年改建为人工制冷冰面 —— 原文两段都把 1972 写成了建成年。核实 2026-09-11
     seeing:
-      "Medeu Gorge sits about 14 km southeast of Almaty, in the Malaya Almatinka River valley at the foot of the Zailiysky Alatau, at an elevation of 1,520–1,750 m; the high-altitude skating rink built there in 1972 is among the highest-elevation artificial skating rinks in the world.",
+      "Medeu Gorge sits about 14 km southeast of Almaty, in the Malaya Almatinka River valley at the foot of the Zailiysky Alatau, at an elevation of 1,520–1,750 m; the high-altitude skating rink opened there in 1951, and given artificially refrigerated ice in 1972, is among the highest-elevation artificial skating rinks in the world.",
     formation:
       "The gorge was carved by the long-term erosion of the Malaya Almatinka River into the Zailiysky Alatau's northern slope, a classic mountain river-valley landform; downstream, the Medeu mudflow-protection dam was built to intercept seasonal mudflows that threaten the valley.",
     observation:
@@ -15041,9 +15620,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The construction of the Medeu mudflow-protection dam is an engineering-geography case study of how a mountain city manages seasonal mudflow hazards to protect the urban area downstream.",
     history:
-      "The Medeu high-altitude skating rink, built in 1972, has long hosted major Soviet and international speed-skating events and remains an important recreational sports venue for Almaty residents.",
+      "The Medeu high-altitude skating rink, opened in 1951, has long hosted major Soviet and international speed-skating events and remains an important recreational sports venue for Almaty residents.",
   },
   "lake-balkhash": {
+    // 全六段 sources: 面积约 1.64–1.82 万 km²（已写成区间）、世界第十五大湖、第二大咸水湖；**西淡东咸**（伊犁河 73–80% 注入西部，西 <1 g/L、东 3–6 g/L），乌津阿拉尔海峡宽约 3.5 km —— 维基正文原文 western part is fresh water and its eastern half is saline（部分网络摘要把东西说反，本库与原文一致）。湖面是会变的量。核实 2026-09-11，未改动
     seeing:
       "Lake Balkhash covers about 16,400–18,200 km², making it the world's fifteenth-largest lake and second-largest saline lake, famous for its unusual \"two waters in one lake\" phenomenon.",
     formation:
@@ -15058,8 +15638,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Balkhash has long been an important water source for surrounding fisheries and irrigated agriculture; sustained inflow from the Ili River is essential to maintaining the freshwater ecology and fishery resources of the lake's western half.",
   },
   "kolsai-lakes": {
+    // seeing sources: 三湖海拔 1818 / 2252 / 2850 m，均由历史地震滑坡堵塞河谷形成，与 kaindy-lake 同属一次地震滑坡区域；Kolsai Kolderi 生物圈保护区 **2021** 年列入（unesco.org/en/mab/kolsai-kolderi，1 级）—— 原写的 2012 是同批 korgalzhyn-reserve「哈萨克斯坦首个生物圈保护区」的年份。核实 2026-09-11
     seeing:
-      "The Kolsai Lakes are three lakes arranged in tiers up a single valley in the northern Tian Shan — Lower Lake (1,818 m), Middle Lake (2,252 m) and Upper Lake (2,850 m) — inscribed in 2012 as part of the Kolsai Lakes-Kaindy UNESCO Biosphere Reserve.",
+      "The Kolsai Lakes are three lakes arranged in tiers up a single valley in the northern Tian Shan — Lower Lake (1,818 m), Middle Lake (2,252 m) and Upper Lake (2,850 m) — inscribed in 2021 as part of the Kolsai Lakes-Kaindy UNESCO Biosphere Reserve.",
     formation:
       "This region is seismically active, and all three lakes formed when historical earthquake-triggered landslides dammed the valley, with the water pooling at successively higher elevations within the same valley.",
     observation:
@@ -15072,6 +15653,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around Kolsai Lakes was historically a summer pasture for Kazakh nomadic clans; today it is a core destination for hiking and ecotourism in the northern Tian Shan.",
   },
   "kaindy-lake": {
+    // 全六段 sources: 1911 年（Kebin）地震引发山体滑坡堵塞峡谷、淹没雪岭云杉；湖长约 400 m、海拔约 2000 m、盛夏水温约 6°C、低含氧减缓木材腐烂 —— 多方一致，与 kolsai-lakes 同一地震滑坡区。核实 2026-09-11，未改动
     seeing:
       "Kaindy Lake, within the Kolsai Lakes-Kaindy National Park, is a mountain lake about 400 m long at roughly 2,000 m elevation, famous for its \"underwater forest\" of standing dead tree trunks visible beneath the water.",
     formation:
@@ -15086,6 +15668,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kaindy Lake formed in 1911, a direct record of the region's seismic history; today it is one of the most recognisable natural landscapes and photography destinations in the northern Tian Shan.",
   },
   "big-almaty-lake": {
+    // 全六段 sources: 阿拉木图以南约 15 km、海拔 2510–2511 m、长约 1.6 km、宽 0.75–1 km、深 30–40 m，冰蚀圈谷湖；20 世纪中叶水电站与饮用水源功能为定性史实。核实 2026-09-11，未改动
     seeing:
       "Big Almaty Lake is a glacial lake in the Zailiysky Alatau, about 15 km south of Almaty at 2,511 m elevation, roughly 1.6 km long, 0.75–1 km wide and 30–40 m deep.",
     formation:
@@ -15100,6 +15683,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A hydroelectric station was built here in the 1950s–60s, and since the 1980s the lake has served as one of Almaty's drinking-water sources; today it is a popular alpine hiking destination near the city.",
   },
   "korgalzhyn-reserve": {
+    // 全六段 sources: 1968 年设国家自然保护区；2008-07-07 与纳乌尔祖姆共同以「萨雷阿尔卡——哈萨克斯坦北部的草原与湖泊」列入 UNESCO（whc.unesco.org/en/list/1102，1 级）；2012 年成为**哈萨克斯坦首个**生物圈保护区 —— ⚠️ 这个 2012 被同批 kolsai-lakes 误借了去，已在那一条改正。逾 1500 万只候鸟经此迁徙、逾 30 万对繁殖。核实 2026-09-11，未改动
     seeing:
       "The Korgalzhyn-Tengiz Lake System is a wetland lake complex deep within the northern Kazakh steppe; Lake Tengiz, its largest body of water (its name means \"sea\" in Kazakh), is the world's most northerly nesting site for the greater flamingo.",
     formation:
@@ -15114,6 +15698,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Korgalzhyn State Nature Reserve was established in 1968; in 2008 it was inscribed on the UNESCO World Heritage List jointly with the Naurzum Nature Reserve as \"Saryarka — Steppe and Lakes of Northern Kazakhstan,\" and in 2012 it was recognised as Kazakhstan's first biosphere reserve.",
   },
   "north-aral-sea": {
+    // 全六段 sources: 2005 年建成约 13 km 的科克阿拉尔坝（部分来源作 12 km）；20 年间北咸海面积扩大约 36%、水量几近翻倍、含盐度下降约一半（Times of Central Asia，2 级）；与世界银行推进二期修复（世行新闻稿，1 级机构）。⚠️ 红线判据：咸海萎缩是**已发生的环境灾难的客观陈述**，非评价性、非仍在持续的政治对立，保留。湖面与盐度是会变的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "The North Aral Sea is the northern portion of the Aral Sea within Kazakhstan; from the mid-20th century, massive upstream irrigation withdrawals caused the Aral Sea to shrink drastically, at one point nearly drying up entirely — the site of one of the 20th century's most severe human-caused ecological disasters.",
     formation:
@@ -15128,6 +15713,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kazakhstan's government, together with the World Bank, is advancing a second phase of North Aral Sea restoration aimed at further expanding its water extent and raising its level — a representative project in contemporary Central Asian water management and ecological restoration.",
   },
   "caspian-sea-coast-kazakhstan": {
+    // 全六段 sources: 里海面积约 371,000 km²、沿岸五国（Britannica，2 级）；水位下降为广泛报道的环境观察，正文未作政治归因。核实 2026-09-11，未改动
     seeing:
       "The Caspian Sea covers about 371,000 km², making it the world's largest inland body of water; its shores are held by Russia, Kazakhstan, Turkmenistan, Iran and Azerbaijan, with Kazakhstan's coastline lying mainly within Mangystau Region.",
     formation:
@@ -15142,6 +15728,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Aktau is the largest city on the Mangystau stretch of Caspian coastline; the sea has historically been a major sturgeon and caviar-producing region, and remains an important coastal tourism and fishery resource today.",
   },
   "ili-river": {
+    // 全六段 sources: 全长约 1439 km（含源头特克斯河）、哈境内约 815 km。⚠️ 红线自查：正文写「发源于中国新疆天山」—— **只陈述水文事实，未把新疆与中国并列、未描述边界线**；已与中国侧伊犁河谷相关条目并排读，两侧自洽。核实 2026-09-11，未改动
     seeing:
       "The Ili River rises in the Tian Shan of China's Xinjiang; its headwaters, the Tekes and Kunges rivers, merge within Kazakhstan to form the Ili proper, running about 1,439 km in total, of which about 815 km lies within Kazakhstan, before emptying into Lake Balkhash.",
     formation:
@@ -15156,6 +15743,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ili River basin was historically an important water source along the northern Tian Shan branch of the Silk Road, and remains a vital river system for agricultural irrigation and fisheries in southeastern Kazakhstan today.",
   },
   "irtysh-river-kazakhstan": {
+    // 全六段 sources: 全长约 4248 km、发源于中国境内阿尔泰山南麓（Britannica，2 级）；与鄂毕河共同构成全球第七长河流水系。⚠️ 红线自查：只写发源地水文事实、未描述边界线；与中国侧额尔齐斯河 / 喀纳斯条目（「中国唯一流入北冰洋的水系」）并排读自洽；与航线解说 nqz-plx / nqz-pwq 一致。核实 2026-09-11，未改动
     seeing:
       "The Irtysh River runs about 4,248 km in total, rising from glaciers on the southern slopes of the Altai Mountains in China's Xinjiang, flowing west through China before entering Kazakhstan at Lake Zaysan, then turning northwest across eastern Kazakhstan; cities including Semey and Pavlodar are built along its banks.",
     formation:
@@ -15170,6 +15758,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Major eastern Kazakhstani cities including Semey and Pavlodar are built along the Irtysh, which has long been an important source for local navigation, irrigation and urban water supply.",
   },
   "ural-river": {
+    // 全六段 sources: 全长约 2428 km、欧洲第三长河（次于伏尔加、多瑙）、传统欧亚分界之一；阿特劳为跨两洲城市。核实 2026-09-11，未改动
     seeing:
       "The Ural River rises in the southern Ural Mountains, flows through Russia and Kazakhstan, and empties into the Caspian Sea near Atyrau; it is Europe's third-longest river and one of the traditional geographic boundaries between the continents of Europe and Asia.",
     formation:
@@ -15184,6 +15773,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Atyrau, straddling the Ural River, is often described as \"a city on two continents\"; the river has long been an important waterway for local fisheries and navigation.",
   },
   "saryarka-steppe": {
+    // 全六段 sources: 2008-07-07「萨雷阿尔卡」（纳乌尔祖姆 + 科尔加尔津）列入 UNESCO，为**哈萨克斯坦首个自然类世界遗产**（按该国名录逐一排过：亚萨维陵 1993、泰姆格里岩画 2004、丝路 2014 为文化类，萨雷阿尔卡 2008、西天山 2016、图兰寒冬荒漠 2023 为自然类），判据核对通过；与航线解说 pek-nqz 一致。核实 2026-09-11，未改动
     seeing:
       "Saryarka (the Kazakh Uplands) is a vast expanse of dry steppe and low rolling hills across north-central Kazakhstan, one of the largest surviving areas of temperate steppe on Earth.",
     formation:
@@ -15208,10 +15798,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Singing Dune and the Aktau-Katutau Hills lie within Altyn-Emel National Park, but the Singing Dune is a quartz-sand dune known for its rare resonant sound, while Aktau-Katutau are desert hills built of multicoloured mineral sedimentary rock.",
     concept:
       "Only a handful of dunes worldwide produce this kind of audible resonance, making the Singing Dune an important natural sample for studying the acoustic effect produced when dry quartz sand grains resonate under specific wind conditions.",
+    // history sources: 沙丘长约 1.5–3 km、高 120–150 m、约 1–1.2 万年前风积形成（园区官网 altynemel.kz，2 级）；国家公园 1996 年设立；「图兰寒冬荒漠」2023-09-20 由哈乌土三国联合列入 UNESCO（1 级）—— 原写 2016。⚠️ 面积「约52万公顷」各来源 209,000–520,000 ha 不等（核心区 vs 含缓冲区），下轮考虑写明口径。核实 2026-09-11
     history:
-      "Altyn-Emel National Park, established in 1996, covers about 520,000 hectares — Kazakhstan's largest national park — and was inscribed on the UNESCO World Heritage List in 2016 as part of the \"Cold Winter Deserts of Turan.\"",
+      "Altyn-Emel National Park, established in 1996, covers about 520,000 hectares — Kazakhstan's largest national park — and was inscribed on the UNESCO World Heritage List in 2023 as part of the \"Cold Winter Deserts of Turan.\"",
   },
   "aktau-katutau-hills": {
+    // 全六段 sources: 阿克套多色沉积岩层与卡图套深褐色荒漠丘陵，均属阿尔滕埃梅尔国家公园 —— 定性描述，与 altyn-emel-singing-dune 互证一致（该条的 UNESCO 年份已于本轮改正，本条未涉年份）。核实 2026-09-11，未改动
     seeing:
       "The Aktau-Katutau Hills are desert hills within Altyn-Emel National Park; Aktau (\"White Mountain\") is built of multicoloured mineral sedimentary layers in pink, orange and green, while Katutau is a range of dark brown desert hills.",
     formation:
@@ -15226,8 +15818,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Altyn-Emel National Park, home to the Aktau-Katutau Hills, has historically been an important wildlife habitat, and the hills are today one of the park's key geological tourism sites alongside the Singing Dune.",
   },
   "burabay-hills": {
+    // seeing sources: 园内 14 座主要湖泊（各约 1 km² 以上）另有更多小湖（kazgeo.kz 等，2 级）—— 原写的「逾30座」无来源；国家公园 2000-08-12 设立。核实 2026-09-11
     seeing:
-      "Burabay (formerly Borovoye) is a district of pine forest, granite hills and lakes within the eastern Kokshetau Hills of northern Kazakhstan, often called \"Kazakhstan's Switzerland\" for its scenery resembling the Swiss Alps, with more than 30 lakes across the area.",
+      "Burabay (formerly Borovoye) is a district of pine forest, granite hills and lakes within the eastern Kokshetau Hills of northern Kazakhstan, often called \"Kazakhstan's Switzerland\" for its scenery resembling the Swiss Alps, with 14 major lakes and many smaller ones across the area.",
     formation:
       "Burabay's granite bodies intruded during the Paleozoic era, later shaped by prolonged weathering and glacial action into today's rounded rock hills and boulder fields, together with the surrounding scattered lakes and pine forests forming a distinctive lake-and-hill landscape.",
     observation:
@@ -15240,6 +15833,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Burabay National Park was established in 2000 and has long been an important summer retreat and health-resort destination for people from northern Kazakhstan and beyond.",
   },
   "torysh-valley-of-balls": {
+    // 全六段 sources: 球状砂岩结核直径 1–3 m，位于曼格斯套州舍特佩村附近乌斯秋尔特高原边缘；形成年代多数来源给约 1.2–1.8 亿年（侏罗纪至早白垩世），另有少数给 7000–5000 万年，暂从多数。核实 2026-09-11，未改动
     seeing:
       "Torysh (the Valley of Balls) is a valley on the edge of the Ustyurt Plateau near the village of Shetpe in Mangystau Region, scattered with thousands of spherical sandstone concretions between 1 and 3 metres in diameter.",
     formation:
@@ -15719,6 +16313,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Croatia ============
   dinara: {
+    // 全六段 sources: 主峰锡尼亚尔（迪纳拉峰）1831 m、克罗地亚最高点；第纳里克阿尔卑斯山系得名于此山。⚠️ 红线自查：山体跨境，正文只作纯境内地貌表述、**不提邻国名称**，符合本国判据。核实 2026-09-11，未改动
     seeing:
       "Dinara is Croatia's highest massif; its summit, Sinjal, rises to 1,831 m and is the country's highest point, with the range trending roughly northwest–southeast.",
     formation:
@@ -15733,6 +16328,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The foothill communities have long relied on mountain sheep-herding and small-scale farming; medieval fortress remains survive near Knin at the mountain's base.",
   },
   velebit: {
+    // 全六段 sources: 全长约 145 km、最高峰瓦干斯基峰 1757 m（源间 1757–1758）、1978 年整体设自然公园（np-sjeverni-velebit.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Velebit is Croatia's largest mountain range, stretching about 145 km along the Adriatic coast, with its highest peak, Vaganski Vrh, reaching 1,757 m.",
     formation:
@@ -15747,6 +16343,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a nature park in its entirety in 1978, it contains the Northern Velebit and Paklenica national parks; local villages historically relied on grazing and forestry.",
   },
   biokovo: {
+    // 全六段 sources: 圣尤雷峰 1762 m、克罗地亚第三高峰；1981 年设自然公园（parksdinarides.org，2 级）。核实 2026-09-11，未改动
     seeing:
       "Biokovo is a steep limestone massif on the Dalmatian coast, its highest peak, Sveti Jure, reaching 1,762 m, Croatia's third-highest summit.",
     formation:
@@ -15761,6 +16358,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a nature park in 1981, its summit chapel of Sveti Jure has a long history; the Makarska shoreline below has long been an important Dalmatian fishing and shipping hub.",
   },
   ucka: {
+    // 全六段 sources: 沃亚克峰 1401 m、伊斯特拉半岛最高点；山顶观景塔 1911 年建成（pp-ucka.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Učka is a limestone massif on the eastern Istrian peninsula, its highest peak, Vojak, reaching 1,401 m — the highest point on the entire peninsula.",
     formation:
@@ -15785,10 +16383,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Gorski Kotar and Velebit are both mountainous, but Gorski Kotar's forest cover is far denser and its rainfall much higher, making it Croatia's wettest mountain region.",
     concept:
       "Sitting at the junction of the Alpine and Dinaric mountain systems, Gorski Kotar is an important sample for understanding the geological relationship where two major orogenic belts meet.",
+    // history sources: 里斯尼亚克峰 1528 m；国家公园 1953-09-15 设立、1997 年扩园纳入斯涅日尼克山与库帕河源头（np-risnjak.hr，1 级）—— 原写「1997 年设立」是把扩园年当成了设园年。核实 2026-09-11
     history:
-      "Risnjak National Park was established in 1997; the region has historically relied on forestry and mountain livestock, with population density long lower than along the coast.",
+      "Risnjak National Park was established in 1953 and expanded to its present extent in 1997 to take in Snježnik and the source of the Kupa; the region has historically relied on forestry and mountain livestock, with population density long lower than along the coast.",
   },
   papuk: {
+    // 全六段 sources: 主峰约 953 m；中新世—上新世为古潘诺尼亚海中的孤岛（正文「上新世」为可接受的概括）；2007 年成为克罗地亚首个、欧洲地质公园网络第 30 个成员（pp-papuk.hr，1 级）—— 本库无其他条目争这个「首个」。核实 2026-09-11，未改动
     seeing:
       "Papuk is the highest massif in the Slavonia region, its summit reaching 953 m, standing isolated above the Pannonian Plain as the region's landmark mountain.",
     formation:
@@ -15803,6 +16403,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Papuk Geopark was established in 2007, Croatia's first and Europe's thirtieth member of the European Geoparks Network; it preserves geological features such as Late Cretaceous columnar basalt.",
   },
   medvednica: {
+    // 全六段 sources: 全长约 42 km、什列梅峰 1035 m；韦特尔尼察洞穴出土穆斯特文化石器（尼安德特人）。核实 2026-09-11，未改动
     seeing:
       "Medvednica lies just north of Zagreb, stretching about 42 km, its highest peak, Sljeme, reaching 1,035 m — the mountain Zagreb residents visit most for hiking and recreation.",
     formation:
@@ -15817,6 +16418,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Veternica Cave on the mountain preserves evidence of Paleolithic human activity; the name derives from the Croatian word for bear, after the many brown bears once found here.",
   },
   "pannonian-plain-croatia": {
+    // 全六段 sources: 约 53% 国土海拔低于 200 m（croatia.eu，2 级）；奥西耶克位于德拉瓦河畔。⚠️ 红线自查：纯境内表述、不提邻国。核实 2026-09-11，未改动
     seeing:
       "The Pannonian Plain is Croatia's flattest region, centered in the Slavonia area between the Sava and Drava rivers, with about 53% of the country's territory below 200 m elevation.",
     formation:
@@ -15831,6 +16433,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The plain has hosted farming settlements since the Neolithic; Slavonia has long been an important granary region, and the largest city, Osijek, sits on the Drava.",
   },
   "neretva-delta": {
+    // 全六段 sources: 克罗地亚境内唯一河流三角洲；地中海继尼罗河、波河之后第三大三角洲（Ramsar RIS 585，1 级）。⚠️ 红线自查：未提三角洲上游所在的邻国。核实 2026-09-11，未改动
     seeing:
       "The Neretva Delta is formed by the final roughly 22-km stretch of the Neretva River within Croatian territory, Croatia's only river delta.",
     formation:
@@ -15845,6 +16448,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The delta plain has been cultivated since Roman times; after modern drainage improvements it became an important citrus and vegetable-growing region for Croatia.",
   },
   "lonjsko-polje": {
+    // 全六段 sources: 面积 505.6–506.5 km²（源间微差）；1990 年设自然公园、1993 年列入拉姆萨尔（Ramsar RIS 584，1 级）。⚠️ 红线判据：1990 年代的**保护区制度事实**属定位性事实，保留；未涉战争 / 民族 / 政治。核实 2026-09-11，未改动
     seeing:
       "Lonjsko Polje is a floodplain wetland stretching along the middle Sava River, covering 506.5 km², one of the largest protected wetlands in the Danube basin.",
     formation:
@@ -15859,6 +16463,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Declared a nature park in 1990 and listed under the Ramsar Convention in 1993, the village of Čigoč is known as Europe's 'Stork Village' for its resident white storks, and traditional timber houses remain in use today.",
   },
   "kopacki-rit": {
+    // 全六段 sources: 总面积 231 km²（含 71 km² 特别动物保护区）；1967 年起受保护、1993 年列入拉姆萨尔（pp-kopacki-rit.hr，1 级）。⚠️ 红线自查：未涉巴拉尼亚地区近代归属议题。核实 2026-09-11，未改动
     seeing:
       "Kopački Rit is an inland-delta-style wetland at the confluence of the Drava and Danube rivers in the Baranja region, covering about 231 km², one of Europe's best-preserved large wetlands.",
     formation:
@@ -15873,6 +16478,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Protected since 1967 and Ramsar-listed in 1993, the local population historically relied on fishing and seasonal grazing.",
   },
   "dalmatian-coast": {
+    // 全六段 sources: 沿岸 1244 个岛屿、岛礁与礁石（78 岛 + 524 小岛 + 642 礁石的官方口径，2 级转述）；「达尔马提亚型海岸」为地学命名范例。核实 2026-09-11，未改动
     seeing:
       "The Dalmatian coast is Croatia's most distinctive stretch of Adriatic coastline, with numerous elongated islands and channels arranged in neat bands parallel to the shore.",
     formation:
@@ -15887,6 +16493,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Coastal towns have been important Mediterranean shipping nodes since Roman and Byzantine times; under Venetian rule this coast was long an important trade and shipbuilding center.",
   },
   "istria-coast": {
+    // 全六段 sources: 伊斯特拉海岸线约 430 km（Britannica，2 级）；terra rossa 红土成因为地学常识。核实 2026-09-11，未改动
     seeing:
       "The Istrian coast is the western shore of the Adriatic's largest peninsula, stretching about 430 km, lined with historic port towns including Rovinj, Poreč, and Pula.",
     formation:
@@ -15901,6 +16508,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The port towns of Rovinj, Poreč, and Pula were successively ruled by Rome and Venice, and preserve extensive Roman and Venetian architectural heritage.",
   },
   "kvarner-gulf": {
+    // 全六段 sources: 湾内水深逾 100 m；里耶卡为克罗地亚最大货运港（均为 3 级来源，定性表述，未作为数字唯一依据）。核实 2026-09-11，未改动
     seeing:
       "The Kvarner Gulf is a bay in the northern Adriatic between the Istrian peninsula and the Croatian mainland, ringed by islands including Cres, Krk, Pag, Rab, and Lošinj.",
     formation:
@@ -15915,6 +16523,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Rijeka has been an important port since Austro-Hungarian times, historically one of Central Europe's main outlets to the Mediterranean.",
   },
   "plitvice-lakes": {
+    // 全六段 sources: 16 湖、园区总落差 912 m（1279 → 367 m）、钙华堤坝年增 1–3 cm（公园官网引 Srdoč/Horvatinčić 研究，1 级）；1979 年列入 UNESCO、2000 年扩界，面积 296.85 km²（whc.unesco.org/en/list/98，1 级）；distinguish 段与 krka 并排读无互证伪。核实 2026-09-11，未改动
     seeing:
       "Plitvice Lakes National Park is a system of 16 lakes linked by travertine barriers along a valley with 912 m of relief, Croatia's most famous natural landscape.",
     formation:
@@ -15929,6 +16538,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1979 it became Croatia's first natural site inscribed on the World Heritage List; the park covers 296.85 km² and is Croatia's most-visited national park.",
   },
   "vransko-lake": {
+    // 全六段 sources: 面积 30.2 km²、长 13.6 km、宽 1.4–3.4 km、湖面低于海平面约 4 m；鸟类逾 260 种；1999 年设自然公园（pp-vransko-jezero.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Lake Vrana is Croatia's largest natural freshwater lake, covering 30.2 km², 13.6 km long and 1.4–3.4 km wide, its surface about 4 m below sea level.",
     formation:
@@ -15949,18 +16559,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Skradinski Buk consists of 17 travertine steps with a total drop of 45.7 m and a width of up to 400 m, a natural stepped barrier formed by long-term calcium carbonate deposition.",
     observation:
       "From the air, the Krka shows alternating lakes and waterfalls along its course; at Skradinski Buk, water spills over layered travertine steps forming a broad white curtain, set against the surrounding karst canyon.",
+    // distinguish sources: 7 道钙华堤坝；斯克拉丁瀑布 17 级台阶、落差 45.7 m、宽可达 400 m（npkrka.hr，1 级）；1985-01-24 设国家公园。**2021-01-01 起园区内禁止游客游泳**（croatiaweek.com，2 级）—— distinguish 段原写「允许游客游泳」、zrmanja-canyon 原写克尔卡「以游泳区闻名」，都是 2020 年以前的状态，已改。游泳规定是会变的量。核实 2026-09-11
     distinguish:
-      "Krka and Plitvice Lakes are both travertine-karst landscapes, but Krka is a complete river system open to swimming, while Plitvice is a closed lake chain where swimming is not permitted.",
+      "Krka and Plitvice Lakes are both travertine-karst landscapes, but Krka is a complete river system with a series of travertine barriers along its course, while Plitvice is a closed lake chain; neither is open to visitor swimming today (Krka banned visitor swimming within the park from 2021).",
     concept:
       "Skradinski Buk is one of Europe's largest travertine waterfall systems, an important sample for studying how travertine barriers form on karst rivers.",
     history:
       "Krka National Park was established in 1985; 19th-century watermill buildings survive along the falls, where visitors can see traditional milling and folk exhibits.",
   },
   "sava-river-croatia": {
+    // seeing sources: 全长 945 km、计入萨瓦多林卡源头 990 km（国际萨瓦河流域委员会 savacommission.org，1 级）；多瑙河**水量最大**的支流、年均流量约 1564 m³/s、流域第二大（ICPDR，1 级）—— 原写「最长支流、992 km」，长度排名口径不一、992 无来源。⚠️ 红线（克罗地亚跨境地形不提邻国名）：formation 段原写「发源于斯洛文尼亚阿尔卑斯山区」，已改为「发源于阿尔卑斯山区」。锡萨克以下可通航。核实 2026-09-11
     seeing:
-      "The Sava is the Danube's longest tributary at 992 km, flowing through Zagreb before crossing central Croatia toward the southeast; it is Croatia's largest river by discharge.",
+      "The Sava is the Danube's largest tributary by discharge, 945 km long (990 km including its longer headwater, the Sava Dolinka), flowing through Zagreb before crossing central Croatia toward the southeast; it is Croatia's largest river by discharge.",
     formation:
-      "The Sava rises in the Slovenian Alps and, after entering Croatia, is joined by tributaries such as the Kupa and Lonja, its valley depositing a broad alluvial plain along its course.",
+      "The Sava rises in the Alps and, after entering Croatia, is joined by tributaries such as the Kupa and Lonja, its valley depositing a broad alluvial plain along its course.",
     observation:
       "From the air, the Sava's channel through Zagreb is relatively regular, widening and meandering more as it flows southeast, with farmland and towns lining the valley on both banks.",
     distinguish:
@@ -15971,6 +16583,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically an important inland shipping route in Central Europe, the Sava is navigable below Sisak, and towns along its valley have long been key transport and trade nodes.",
   },
   "drava-river-croatia": {
+    // 全六段 sources: 境内约 323 km、在阿良姆什附近汇入多瑙河；穆拉—德拉瓦—多瑙跨国生物圈保护区 2021 年 UNESCO 认定（IUCN 转述，1 级机构）。⚠️ 红线自查：只写「跨国」、**未点名任何邻国**。核实 2026-09-11，未改动
     seeing:
       "The Drava is a major Danube tributary, flowing about 323 km through Croatian territory and forming part of Croatia's northern border before joining the Danube near Aljmaš.",
     formation:
@@ -15985,6 +16598,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically an important waterway linking the Alpine region to the Pannonian Plain, the riverside city of Osijek has been Slavonia's economic and cultural center since Habsburg times.",
   },
   "cetina-canyon": {
+    // 全六段 sources: 谷壁最高约 300 m；切蒂纳河全长 101–105 km（测量口径差异，正文取约 105）、发源于迪纳拉山西北坡 385 m 处、达尔马提亚最长河流（长于克尔卡 73 km、兹尔曼尼亚 69 km）；古比察瀑布 48 m（visittrilj.com，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Cetina River Canyon is cut by the final roughly 8-km stretch of the Cetina before it enters the Adriatic, its walls rising up to 300 m.",
     formation:
@@ -15999,6 +16613,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The canyon has been protected since 1963; the river-mouth town of Omiš was historically an important Dalmatian coastal port.",
   },
   "zrmanja-canyon": {
+    // 全六段 sources: 兹尔曼尼亚河全长 69 km、流域约 907 km²（3 级，与 cetina-canyon 比较方向一致）。核实 2026-09-11，未改动
     seeing:
       "The Zrmanja River Canyon is cut by the Zrmanja as it winds through the karst terrain of southern Lika and northern Dalmatia, forming a deep canyon and waterfall system through the limestone.",
     formation:
@@ -16006,13 +16621,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, the Zrmanja shows a distinctive emerald-green color from dissolved minerals, contrasting sharply with the white limestone canyon walls as the river winds through the karst gorge.",
     distinguish:
-      "Compared with the Krka, the Zrmanja Canyon is deeper and its river swifter, known for rafting and kayaking, while the Krka is known for its gentle travertine waterfalls and swimming areas.",
+      "Compared with the Krka, the Zrmanja Canyon is deeper and its river swifter, known for rafting and kayaking, while the Krka is known for its gentle travertine waterfalls.",
     concept:
       "The Zrmanja Canyon is a classic sample for studying how long-term erosion by a karst river cuts a deep canyon into a limestone riverbed.",
     history:
       "Historically remote and sparsely visited, the canyon has become an important outdoor-sports destination in Croatia with the rise of kayaking and rafting.",
   },
   paklenica: {
+    // 全六段 sources: 大帕克莱尼察长约 14 km、宽 500–800 m；小帕克莱尼察长约 12 km、最窄约 10 m；崖壁大帕克莱尼察一侧逾 700 m（安尼奇库克 712 m）；1949-10-19 设国家公园（np-paklenica.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Paklenica comprises two adjacent limestone canyons on Velebit's southwestern slope — Velika (Big) and Mala (Small) Paklenica — with walls over 700 m high.",
     formation:
@@ -16027,6 +16643,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Paklenica National Park was established in 1949; the Anića Kuk cliff face has long been a landmark venue for local rock climbing.",
   },
   kornati: {
+    // 全六段 sources: 约 140 座岛屿与礁石、其中 89 座 1980 年划入国家公园；主岛科尔纳特长约 25 km、宽约 2.5 km（3 级来源，与多方一致）。核实 2026-09-11，未改动
     seeing:
       "The Kornati Islands comprise about 140 islands and rocks, one of the most densely packed archipelagos in the Adriatic, with 89 islands included in Kornati National Park in 1980.",
     formation:
@@ -16041,6 +16658,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically home only to seasonal fishermen and shepherds, the islands are now an important marine protected area and sailing destination in Croatia.",
   },
   "hvar-island": {
+    // 全六段 sources: 亚得里亚海最长岛屿（长 68–69 km）、面积约 297–300 km²、圣尼古拉峰约 626 m（源间 626–629）；年日照「逾 2700 小时」为保守下限；斯塔里格拉德平原 2008 年列入 UNESCO（whc.unesco.org/en/list/1240，1 级）。核实 2026-09-11，未改动
     seeing:
       "Hvar is the longest island in the Adriatic at about 69 km, covering roughly 300 km², its ridge formed by an east–west limestone and dolomite spine, with the highest point, Sveti Nikola, reaching 626 m.",
     formation:
@@ -16055,6 +16673,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Stari Grad Plain on the island preserves an ancient field-division pattern laid out by Greek colonists in the 4th century BC, one of Europe's few intact examples of ancient land measurement, and is inscribed on the World Heritage List.",
   },
   mljet: {
+    // 全六段 sources: 1960-11-11 设国家公园、地中海最早的海洋保护区；大湖与小湖为与海相通的咸水湖（np-mljet.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Mljet is a long, narrow island in southern Dalmatia, nicknamed the 'Green Island' for its dense Aleppo pine forest; about 30% of its western end forms Mljet National Park.",
     formation:
@@ -16069,6 +16688,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mljet National Park was established in 1960, the oldest marine protected area in the Mediterranean; a 12th-century Benedictine monastery survives on St. Mary's Islet at the center of the Great Lake.",
   },
   "brac-island": {
+    // 全六段 sources: 面积 396 km²、达尔马提亚最大岛；维多瓦戈拉峰 778 m（源间 778–780）、亚得里亚海诸岛最高点 —— 与 hvar-island「最长岛屿」不同属性，不冲突。核实 2026-09-11，未改动
     seeing:
       "Brač is the largest island in Dalmatia at 396 km², its highest point, Vidova Gora, reaching 778 m — the highest point of any Adriatic island.",
     formation:
@@ -16083,6 +16703,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "White limestone quarried on the island was historically used to build monuments such as Diocletian's Palace; the Zlatni Rat beach is today one of Croatia's iconic tourism landmarks.",
   },
   krkonose: {
+    // 全六段 sources: 斯涅日卡峰 1603 m 为捷克全境最高点；KRNAP 1963-05-17 设立。**与波兰侧 sudetes-karkonosze 并排核过**：高度一致，捷 KRNAP 1963 / 波 KPN 1959 两个年份各自属实、不冲突。跨境表述中性、不描述边界线。核实 2026-09-11，未改动
     seeing:
       "The Krkonoše (Giant Mountains) form the highest part of the Sudetes, straddling the Czech-Polish border; Sněžka, at 1,603 m, is the highest point in the Czech Republic.",
     formation:
@@ -16097,6 +16718,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The summit weather station has operated continuously since the 19th century, one of Central Europe's oldest mountain weather stations; the region developed into a hiking and skiing destination from the late 19th century, and Krkonoše National Park was established in 1963.",
   },
   sumava: {
+    // 全六段 sources: 普莱希峰 1378 m 为捷克一侧最高点（Boubín 1362 m 只因瞭望塔虚高 21 m 才「超过」，正文未混淆两者）；舒马瓦国家公园 1991 年设立、为捷克最大国家公园。**与德国侧 bavarian-forest 并排读**：该条写的「森林区整体最高的大阿尔伯山在境外一侧」与本条「Plechý 为捷克侧最高」不矛盾。核实 2026-09-11，未改动
     seeing:
       "Šumava (the Bohemian Forest) is a range of low mountains running along the German and Austrian borders in southwestern Czechia, and is the source of the Vltava River; Plechý, at 1,378 m, is the highest point on the Czech side.",
     formation:
@@ -16111,6 +16733,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Šumava National Park, established in 1991, is the largest national park in Czechia; the region was historically sparsely populated and undeveloped, and its long stint as a Cold War border-control zone incidentally helped keep its old-growth forest intact.",
   },
   "krusne-hory": {
+    // 全六段 sources: 克利诺韦茨峰 1244 m 为捷克侧最高点。**与德国侧 erzgebirge 并排核过**：德方 Fichtelberg 1214.6 m（本库德国条目作 1215 m），两侧最高点归属一致、互不矛盾。南缓北陡的地垒描述经查与地质文献一致。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Krušné hory (Ore Mountains) run about 130 km along the Czech-German (Saxony) border, named historically for their silver, tin and lead mining; Klínovec, at 1,244 m, is the highest point on the Czech side.",
     formation:
@@ -16135,10 +16758,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Jeseníky and Krkonoše are both part of the Sudetes, but Jeseníky's summit is broader and gentler, known for its alpine tundra and block fields, while Krkonoše shows steeper, more classic glacial landforms.",
     concept:
       "The extensive alpine tundra preserved at the summit of Jeseníky is an important sample for studying how strong wind and cold together can abnormally lower the vegetation treeline on mid-elevation Central European mountains.",
+    // history sources: 普拉迭德峰 1491 m 为摩拉维亚与捷克西里西亚最高点；PLA 1969 年设立；山顶电视塔 1968 年动工、1980 年投入使用、1983 年全部工程（含山顶餐厅）竣工 —— 原文把动工年当成了建成年。核实 2026-09-11
     history:
-      "The television tower atop Praděd, built in the 1960s, remains in continuous use; the Jeseníky Protected Landscape Area was established in 1969, and the region was historically also an important center of Central European linen weaving.",
+      "The television tower atop Praděd, begun in 1968 and in service since 1980, remains in continuous use; the Jeseníky Protected Landscape Area was established in 1969, and the region was historically also an important center of Central European linen weaving.",
   },
   "moravskoslezske-beskydy": {
+    // 全六段 sources: 利萨山 1323 m 为该山系最高峰；年均降水约 1500 mm，为捷克降水最丰沛地区之一；喀尔巴阡砂岩（flysch）成因描述准确。核实 2026-09-11，未改动
     seeing:
       "The Moravian-Silesian Beskids are the easternmost part of Czechia's Carpathian mountains, bordering Slovakia; Lysá hora, at 1,323 m, is the highest peak.",
     formation:
@@ -16153,8 +16778,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The range historically formed part of the Wallachian shepherds' transhumance route along the Carpathians, and traditional mountain pastures and timber-frame buildings survive here to this day.",
   },
   "luzicke-hory": {
+    // seeing sources: 境内最高点为佩恩卡夫奇丘 792 m（捷克两县间的界峰、不在国际边界上）；耶德洛瓦峰 776 m 为山系第三高、最具辨识度的火山锥；山系整体最高的劳舍峰 793 m 压在捷德边境上（concept 段原本就写对了 —— 原错在 seeing 段把「境内最高点」挂给了耶德洛瓦峰）。PLA 1976 年设立。跨境表述中性。核实 2026-09-11
     seeing:
-      "The Lužické hory (Lusatian Mountains) are a range of sandstone hills of the western Sudetes along the Czech-German (Saxony) border; Jedlová, at 776 m, is the highest point entirely within Czech territory.",
+      "The Lužické hory (Lusatian Mountains) are a range of sandstone hills of the western Sudetes along the Czech-German (Saxony) border; Pěnkavčí vrch, at 792 m, is the highest point entirely within Czech territory; Jedlová, at 776 m, is the range's third-highest peak and its most recognisable volcanic cone.",
     formation:
       "The range is built mainly of Cretaceous marine sandstone, interspersed with conical volcanic-rock hills from Cenozoic volcanic activity — two quite different rock types and landforms coexisting within one range, making it a useful sample of a mixed sedimentary-volcanic mountain system.",
     observation:
@@ -16167,6 +16793,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lužické hory Protected Landscape Area was established in 1976; the region's rich forest resources historically supported local forestry and glassmaking industries.",
   },
   "novohradske-hory": {
+    // 全六段 sources: 卡梅内茨峰 1072 m 为捷克一侧最高峰，距奥地利边境约 400–500 m。跨境表述中性、不涉主权。核实 2026-09-11，未改动
     seeing:
       "The Novohradské hory (Gratzen Mountains) are an ancient range along the southern edge of the Bohemian Massif on the Czech-Austrian border; Kamenec, at 1,072 m, is the highest peak on the Czech side, only about 400 m from the Austrian border.",
     formation:
@@ -16181,6 +16808,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The region was historically sparsely populated, with small-scale glassmaking and forestry in the 19th and early 20th centuries; strictly controlled as an \"Iron Curtain\" border zone during the Cold War, it has more recently shifted toward ecotourism.",
   },
   "ceskomoravska-vrchovina": {
+    // 全六段 sources: 亚沃日采峰 837 m 为捷克—摩拉维亚高地及维索基纳州最高点。核实 2026-09-11，未改动
     seeing:
       "The Bohemian-Moravian Highlands are an ancient, low upland formed by exposed basement of the Bohemian Massif, running across south-central Czechia and marking the boundary between the historic regions of Bohemia and Moravia; Javořice, at 837 m, is the highest point.",
     formation:
@@ -16195,6 +16823,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The highlands historically formed a border zone between the Kingdom of Bohemia and Moravia, with numerous medieval castle ruins along the divide; the gentle terrain and poor soils have long kept population density lower than in the surrounding lowlands.",
   },
   brdy: {
+    // 全六段 sources: 托克峰 865 m。⚠️ 两个年份都对、不是矛盾：1926-02-19 政府决议设立炮兵靶场（正文「1926年起辟为」），1927 年靶场建成、区域开始对公众封闭（正文「1927至2016」）；1950 年起正式定为军事禁区，2016-01-01 撤销。冷战期间的活动限制按不点名的中性事实句式表述，符合红线判据。核实 2026-09-11，未改动
     seeing:
       "Brdy is a forested range of hills running roughly 60 km southwest to northeast through central Czechia; Tok, at 865 m, is its highest point.",
     formation:
@@ -16209,6 +16838,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Established as a military training ground in 1926, it was formally designated a restricted military zone from 1950 to 2016 — nearly 90 years of closure; it was redesignated a protected landscape area in 2016 and opened to the public, and some military installations remain today.",
   },
   "ceske-stredohori": {
+    // 全六段 sources: 米莱绍夫卡峰 837 m 为该高地最高峰；约 73.6% 岩石为玄武岩（stredohori.cz，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Central Bohemian Uplands (České středohoří) are the most prominent evidence of Cenozoic volcanic activity in Czechia, with numerous conical basalt and trachyte hills rising along the Ohře valley; Milešovka, at 837 m, is the highest point.",
     formation:
@@ -16223,6 +16853,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The uplands along the Ohře valley have long been an important farming and viticulture region, with fertile soils weathered from volcanic rock; numerous medieval castle ruins are also scattered throughout.",
   },
   "pavlovske-vrchy": {
+    // 全六段 sources: 杰温峰 550 m 为帕拉瓦最高点；1986 年经 UNESCO 纳入生物圈保护区（2003 年扩展并更名为「下摩拉瓦」）—— 本条对应的是 1986 这一期，未借用 2003（unesco.org/en/mab/lower-morava，1 级）。核实 2026-09-11，未改动
     seeing:
       "Pavlovské vrchy (Pálava) is a narrow, isolated ridge of Jurassic chalky limestone in South Moravia; Děvín, at 550 m, is the highest point.",
     formation:
@@ -16237,6 +16868,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "UNESCO incorporated the area into the Lower Morava Biosphere Reserve in 1986; the nearby Lednice-Valtice landscaped estate and the surrounding wine-growing tradition have a long history and make this one of Czechia's most important wine-culture regions.",
   },
   "cesky-raj": {
+    // 全六段 sources: 1955 年设立，为捷克斯洛伐克首个受保护景观区（182 km²）；2015 年成为 UNESCO 世界地质公园；砂岩塔高可达 40 m。核实 2026-09-11，未改动
     seeing:
       "Český ráj (Bohemian Paradise) was one of the first nature reserves established in Czechia (1955), formed from thick Late Cretaceous marine sandstone eroded into clusters of rock towers and \"rock labyrinths\"; Prachov Rocks is the most representative area within the park.",
     formation:
@@ -16251,6 +16883,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The entire area joined the UNESCO Global Geoparks Network in 2015; several rock summits have carried miniature castles since the Middle Ages (such as Trosky Castle), a rare tradition of castle-building atop rock towers in Europe.",
   },
   "adrspach-teplice-rocks": {
+    // 全六段 sources: 1933 年列为国家级自然保护区、1991 年布鲁莫夫斯科划为 PLA；岩塔高可达 40 m。核实 2026-09-11，未改动
     seeing:
       "The Adršpach-Teplice Rocks are a maze of rock towers and canyons carved by weathering and fracturing from a single sandstone massif in the Broumovsko region of northeastern Czechia — one of the largest continuous sandstone \"rock cities\" in Central Europe.",
     formation:
@@ -16265,6 +16898,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Protected as a national nature reserve since 1933, with the wider Broumovsko region designated a protected landscape area in 1991; the rock city's striking scenery has also made it a filming location for several European and American films.",
   },
   "polabi-lowland": {
+    // 全六段 sources: 海拔多在 150–300 m 之间 —— 与捷克语维基对波拉比的定义原句（nadmořské výšce mezi 150 a 300 metry）逐字对应。核实 2026-09-11，未改动
     seeing:
       "Polabí (the Elbe Lowland) extends along the middle Elbe roughly between Pardubice and Mělník, at elevations mostly between 150 and 300 m, and is an important grain and produce-growing region of Czechia.",
     formation:
@@ -16279,6 +16913,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mělník has been an important river-trade hub and wine-growing center since the Middle Ages, and the town still preserves a historic castle and vineyards overlooking the confluence of the two rivers.",
   },
   "dolnomoravsky-uval": {
+    // 全六段 sources: 潘诺尼亚气候型农业景观、葡萄种植、莱德尼采庄园描述与地理资料一致。⚠️ 年降水量「550至650毫米」各口径互相矛盾且**没有一处支持 650 这个上限**（有资料称不足 500 mm、也有站点给 587–597 mm），「是捷克最干旱的地区」这一排名也需一并确认口径 —— 见 issue，正文暂不动。核实 2026-09-11
     seeing:
       "The Lower Morava Valley is a lowland along the lower Morava River spanning Czechia's borders with Austria and Slovakia; its climate leans Pannonian, with annual rainfall of only 550–650 mm, making it the driest region in Czechia.",
     formation:
@@ -16293,8 +16928,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lednice-Valtice landscaped estate, developed over centuries by the House of Liechtenstein, was inscribed as a UNESCO World Heritage Site in 1996 and is one of Europe's largest deliberately landscaped estates; the surrounding wine-growing tradition dates back to the Middle Ages.",
   },
   "labe-river": {
+    // seeing sources: 总长约 1094 km（FGG Elbe 捷德跨国流域委员会，1 级：捷克境内约 364.52 km + 德国境内约 726.95 km）—— 原写的 1165 km 与本库德国侧 elbe-river 已核实的 1094 km 打架，本轮统一。「约三分之一在捷克境内」比例正确。赫热恩斯科出境处约 115 m 为捷克全境最低点。核实 2026-09-11
     seeing:
-      "The Labe (Elbe) runs about 1,165 km in total, roughly a third of it through Czechia; it rises on the southern slope of Krkonoše and finally cuts through the Krušné hory near Hřensko before entering Germany.",
+      "The Labe (Elbe) runs about 1,094 km in total, roughly a third of it through Czechia; it rises on the southern slope of Krkonoše and finally cuts through the Krušné hory near Hřensko before entering Germany.",
     formation:
       "The upper Elbe rises in the alpine peat bogs of Krkonoše, flowing southwest then turning north across the Bohemian Basin; downstream, in the Bohemian Switzerland region, it cuts through a Cretaceous sandstone plateau to form a deep gorge — a classic sample for studying how a river shapes very different landforms as it crosses different rock types.",
     observation:
@@ -16307,6 +16943,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Elbe was historically an important international shipping route in Central Europe, and the stretch below Mělník still carries some inland freight traffic today; several historic towns along its banks grew up around river trade.",
   },
   "vltava-river": {
+    // 全六段 sources: 全长 430.2 km，捷克第一长河、「国家河流」，于梅尔尼克与易北河汇合。核实 2026-09-11，未改动
     seeing:
       "The Vltava is Czechia's longest river at 430 km, and the Elbe's largest tributary by volume; it rises in Šumava and joins the Elbe at Mělník.",
     formation:
@@ -16321,6 +16958,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Prague has developed along both banks of the Vltava since the 10th century, with landmarks such as Charles Bridge built directly over the river; the 20th-century cascade of reservoirs on the Vltava greatly altered the river's natural hydrological rhythm while adding flood control, power generation and tourism functions.",
   },
   "ohre-river": {
+    // 全六段 sources: 总长 304.6 km、境内约 256 km、捷克第四长河 —— 三项逐字匹配。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Ohře (Eger) runs about 305 km in total, about 256 km of it through Czechia, making it the country's fourth-longest river; it rises in Germany, enters Czechia at Cheb, and joins the Elbe near Litoměřice.",
     formation:
@@ -16335,8 +16973,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karlovy Vary has been famous across Europe for its hot springs since the 16th century, historically drawing European royalty and cultural figures for treatment; in 2021 the transnational \"Great Spa Towns of Europe\" listing inscribed Karlovy Vary along with Mariánské Lázně and other Czech spa towns as a UNESCO World Heritage Site.",
   },
   "morava-river": {
+    // seeing sources: 全长 353–354 km（Povodí Moravy 官方，1 级），境内段约 284 km —— 原写的 365 km 无捷克官方口径支撑。源出克拉利茨基山南坡属实。跨境表述中性、不涉主权。核实 2026-09-11
     seeing:
-      "The Morava runs about 365 km, rising on the southern slope of Králický Sněžník and flowing south the length of Moravia; downstream it forms the border between Czechia and Slovakia, and then Slovakia and Austria, before joining the Danube.",
+      "The Morava runs about 354 km, rising on the southern slope of Králický Sněžník and flowing south the length of Moravia; downstream it forms the border between Czechia and Slovakia, and then Slovakia and Austria, before joining the Danube.",
     formation:
       "The upper Morava flows through the valley between Jeseníky and the Bohemian-Moravian Highlands; entering the Lower Morava Valley, the channel becomes gentle and wide, with a long history of active meandering that has produced numerous oxbow lakes and side channels.",
     observation:
@@ -16349,6 +16988,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Litovel developed into a milling and textile center from the Middle Ages thanks to the river's branching channels; the downstream floodplain wetlands were historically important for fishing, hunting and grazing, and parts of the river are now designated nature reserves.",
   },
   "ceske-svycarsko": {
+    // 全六段 sources: 普拉夫齐茨卡石拱跨度 26.5 m、内部净高 16 m，为欧洲最大天然砂岩拱门；国家公园 2000-01-01 设立，是捷克最年轻的国家公园。**与德国侧 saxon-switzerland 并排读**：两条各写各自园区的地标数字，无重叠冲突。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "Bohemian Switzerland (the Elbe Sandstone Mountains) is a landscape of deep gorges and rock towers where the Elbe cuts through a Late Cretaceous marine sandstone plateau; the park's Pravčická brána is the largest natural sandstone arch in Europe.",
     formation:
@@ -16363,6 +17003,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bohemian Switzerland National Park was established in 2000; the region's rugged terrain historically kept development low, and from the 19th century it became a favored landscape for Romantic-era painters and travelers — the name \"Bohemian Switzerland\" itself originated from 19th-century visitors comparing it to the mountain scenery of Switzerland.",
   },
   "podyji-gorge": {
+    // 全六段 sources: 峡谷深可达 220 m；国家公园 1991 年设立，为捷克最小的国家公园；2000 年与奥地利塔亚河谷国家公园构成跨境保护区。表述未涉主权、未描述边界线。核实 2026-09-11，未改动
     seeing:
       "Podyjí (the Thaya/Dyje Gorge) is a canyon-like river valley carved by the Dyje River along the Czech-Austrian border, cutting through the southeastern edge of the Bohemian-Moravian Highlands over about 40 km, with the valley reaching up to 220 m deep.",
     formation:
@@ -16387,10 +17028,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Moravian Karst and Podyjí are important gorge/incised landforms in Moravia, but the Moravian Karst is an underground karst system formed by limestone dissolution, characterized by caves and abysses, while Podyjí is a surface gorge cut by a river, with no cave system.",
     concept:
       "The fact that the Macocha Abyss formed from the collapse of a cave roof, rather than direct surface-water erosion, is a classic teaching case for distinguishing \"karst-collapse abysses\" from \"river-erosion gorges\" — two landforms with different origins.",
+    // history sources: 已探明洞穴逾 1100 处；马措哈深渊至下湖水面 138.5 m、含水下探测总深 187.5 m；洞穴 1909 年首次照明开放、游船 1921-03-30 开通局部、1933-07-01 开通完整航线（捷克洞穴管理局，1 级）—— 原文的「19 世纪末」整体前移了一代；1956 年划设保护景观区属实。核实 2026-09-11
     history:
-      "Boat trips on the underground Punkva River have been open to the public since the late 19th century, one of Europe's oldest karst-cave tourism operations; the entire area was designated a protected landscape region in 1956.",
+      "Boat trips on the underground Punkva River began on a short section in 1921 and were extended in 1933 to today's full route from the base of the Macocha Abyss to the river's outflow, one of Europe's oldest karst-cave tourism operations; the entire area was designated a protected landscape region in 1956.",
   },
   "chebsko-sokolovska-panev": {
+    // 全六段 sources: 卡罗维发利间歇泉出水约 2000 L/分 ≈ 288 万 L/日（正文「约300万升」为同量级）；西波希米亚—福格特兰为持续活跃的地震群发区（Nový Kostel 震源区，1 级学术）；「欧洲大温泉城镇」2021 年列入 UNESCO（1 级）。核实 2026-09-11，未改动
     seeing:
       "The Cheb-Sokolov Basin (the Karlovy Vary spa basin) is a series of Cenozoic sedimentary basins formed along the Ohře tectonic rift in western Czechia; Karlovy Vary grew into a famous European spa town thanks to the mineral springs found here.",
     formation:
@@ -16405,6 +17048,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karlovy Vary has been famous for its hot springs since the era of Charles IV in the 14th century, developing from the 16th century into a spa destination for European royalty and cultural figures; in 2021, the transnational \"Great Spa Towns of Europe\" listing inscribed Karlovy Vary together with Mariánské Lázně, Františkovy Lázně and other Czech spa towns as a UNESCO World Heritage Site.",
   },
   "lipno-reservoir": {
+    // 全六段 sources: ⚠️ 长宽以**运营方 ČEZ 官网**为准（44 km 长、最宽约 14 km，1 级），英文维基 infobox 给的 42/5 km 与之不符，本轮采信运营方；面积 48.7 km²（正文「近50平方公里」准确）；正常蓄水位 725.6 m；1952 年动工、1958 年合龙蓄水、1959-06-15 正式发电，正文「1952至1959年」与施工历程吻合。核实 2026-09-11，未改动
     seeing:
       "The Lipno Reservoir is a hydraulic works built between 1952 and 1959 on the upper Vltava in the Šumava mountains, with a surface area of nearly 50 km² — the largest body of water in Czechia.",
     formation:
@@ -16419,6 +17063,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Some residents of the original valley were resettled when the reservoir was built; from the later 20th century it developed into one of southern Czechia's most important inland vacation and watersports destinations, with the lakeside town of Lipno nad Vltavou as its main gateway.",
   },
   "machovo-jezero": {
+    // 全六段 sources: 面积 2.84 km²（284 ha）；14 世纪（1366 年）查理四世下令建塘；1961 年正式改名「马哈湖」，此前俗称「大鱼塘」（Velký rybník）。核实 2026-09-11，未改动
     seeing:
       "Lake Mácha (Máchovo jezero) is an artificial pond in northern Czechia covering 2.84 km², the largest body of water in the Liberec Region, popularly called a \"lake\" owing to its size.",
     formation:
@@ -16433,6 +17078,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake takes its name from the 19th-century Czech Romantic poet Karel Hynek Mácha, who visited repeatedly and used it as the setting for his celebrated long poem \"Máj\" (May); it was formally named after him in 1961, having previously been known simply as the \"Great Pond.\"",
   },
   "vltava-valley-cesky-krumlov": {
+    // 全六段 sources: 古城 1992-12-04 列入 UNESCO；克鲁姆洛夫城堡始建于 13 世纪。核实 2026-09-11，未改动
     seeing:
       "The Vltava meander at Český Krumlov is a deep meander cut by the river at the northern foot of Šumava, its channel forming a double horseshoe that nearly encircles the historic town center; the entire old town was inscribed as a UNESCO World Heritage Site in 1992.",
     formation:
@@ -16673,6 +17319,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Valle de la Luna was designated a national reserve in 1982 and is the best-known viewpoint near San Pedro de Atacama; because its terrain closely resembles the lunar surface, it has historically also been used as an analogue site for planetary geology research.",
   },
   "lake-llanquihue": {
+    // seeing / history sources: 面积主流口径 870.5 km²（另有 860／877 km²，同一量级），智利第二大湖（次于赫内拉尔卡雷拉湖）；
+    //   湖区德国移民始于 1850 年代（维森特·佩雷斯·罗萨莱斯移民法案），属广泛记载史实。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Llanquihue covers about 860 km², making it Chile's second-largest lake; its shores are famed for reflecting Osorno and Calbuco volcanoes, one of the iconic scenes of Chile's Lake District.",
     formation:
@@ -16687,6 +17335,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Beginning in the mid-19th century, large numbers of German immigrants settled around Lake Llanquihue, bringing a distinctive architectural style and way of life; lakeside towns such as Puerto Varas retain a strong German character today, the heart of the Lake District's 'German settlement belt.'",
   },
   "lake-villarrica": {
+    // 全六段 sources: 面积约 176 km²，学术论文与市政资料一致，无冲突。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Villarrica covers about 176 km²; it is a glacial lake, and the town of Pucón on its shore faces the permanently steaming Villarrica Volcano, one of the Lake District's most representative 'volcano-and-lake' pairings.",
     formation:
@@ -16701,12 +17350,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The combination of lake and volcano has made Pucón the Lake District's most popular outdoor tourism hub, with hot springs, kayaking, and crater climbs drawing visitors year-round — a key pillar of southern Chile's tourism industry.",
   },
   "lake-general-carrera": {
+    // seeing sources: ⚠️ 两处：① 删掉「南美洲第二大湖」——的的喀喀湖 8,372 km²，本湖全湖仅 1,850 km²（智利侧 970），够不上；英文维基只作「智利最大、阿根廷第四大」。属「限定语用错范围」第三例（前两例：苏梅岛、altiplano-chile，后者同为智利）。② 绿松石色是**冰川乳（rock flour）**、不是碳酸钙——**本条目 concept 段写的就是冰川乳**，seeing/formation 却写成碳酸钙，条目内部自相矛盾。2026-09-10 核。
     seeing:
-      "Lake General Carrera is Chile's largest lake and South America's second-largest, its water taking on a rare turquoise color from suspended calcium carbonate carried by glacial meltwater; the lake spans both Chile and Argentina.",
+      "Lake General Carrera is Chile's largest lake, its water taking on a rare turquoise colour from the fine rock flour carried in by glacial meltwater; the lake spans both Chile and Argentina.",
     formation:
-      "The lake basin is a glacial depression left behind as the Patagonian Ice Field retreated; glaciers upstream continuously carry fine calcium-carbonate-rich sediment into the lake, which is the main reason for its distinctive turquoise color.",
+      "The lake basin is a glacial depression left behind as the Patagonian Ice Field retreated; glaciers upstream continuously carry fine rock flour, ground off the bedrock by glacial abrasion, into the lake, which is the main reason for its distinctive turquoise color.",
+    // observation sources: 大理石教堂：岩体约 3 亿年（古生代），但**洞穴是末次冰期结束后数千年间掏蚀出来的**。原文把岩石年龄当成了地貌年龄，差三个数量级。2026-09-10 核。
     observation:
-      "From the air, the lake's vivid turquoise water contrasts sharply with the barren Patagonian highland around it; on the Chilean side, the 'Marble Caves' are a cave system carved into a marble formation by millions of years of lake erosion, accessible by boat directly from the water.",
+      "From the air, the lake's vivid turquoise water contrasts sharply with the barren Patagonian highland around it; on the Chilean side, the 'Marble Caves' are a cave system carved into a marble formation over the few thousand years since the ice age ended, accessible by boat directly from the water.",
     distinguish:
       "Lake General Carrera and lakes Llanquihue and Villarrica to the north are all of glacial origin, but General Carrera is far larger, its water color far more distinctive, and it spans two countries rather than lying entirely within Chile.",
     concept:
@@ -16715,6 +17366,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Marble Caves have long been known to local fishermen and travelers as a hidden gem; in recent years their striking water-level cave scenery has made them one of the most visited natural sites in Chilean Patagonia, typically reached by boat from Puerto Río Tranquilo on the Chilean shore.",
   },
   "rio-loa": {
+    // 全六段 sources: 全长约 440 km，智利最长河流；流域面积 33,570 km² 为智利最大流域。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:
       "The Loa is Chile's longest river, about 440 km long, flowing south and then bending west across the Atacama Desert before emptying into the Pacific — one of the few year-round surface flows in the heart of the desert.",
     formation:
@@ -16729,6 +17381,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Loa's banks have long served as an important corridor for human activity in the Atacama Desert; Calama and the surrounding oasis settlements have long relied on the river for irrigation and drinking water, and since the 20th century the river has also been a key water source for nearby copper mining.",
   },
   "rio-baker": {
+    // seeing / formation / concept sources: 智利流量最大的河流（均值约 870—1500 m³/s，**正文没有写具体流量数字**，无过度精确风险）。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:
       "The Baker is Chile's highest-volume river, originating at Lake General Carrera and flowing west to the Pacific; its water takes on a distinctive turquoise color from glacial meltwater.",
     formation:
@@ -16739,10 +17392,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Baker and the Loa are both among Chile's most representative rivers, but the Baker is Chile's highest-volume river, originating from Patagonian lakes and ice fields in a wet, water-rich region; the Loa is Chile's longest river, originating in and crossing the extremely arid northern desert.",
     concept:
       "The Baker's high flow directly reflects the role of the Patagonian Ice Field as a 'natural water tower' — its continuous meltwater supplies the river with far more water than local rainfall alone could sustain, making it a classic case study of a glacier-fed river.",
+    // history sources: 法定类别：2001 年第 282 号法令列为**Zona Típica（典型区域）**，不是 Monumento Histórico（历史纪念地）——智利《国家纪念物法》下两个不同类别（附近的「死人岛」2003 年才是历史纪念地）。1 级。
+    //   ⚠️ 「2008 年才通电」**记 unknown**：市政厅历史页与英文维基都查不到通电年份，既证不实也证不伪，正文不动。下一轮可查智利能源部（CNE）或市政厅档案。2026-09-10 核。
     history:
-      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; it did not receive electricity until 2008, and because of its distinctive 'village on stilts' way of life, the Chilean government designated it a historic monument in 2001.",
+      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; it did not receive electricity until 2008, and because of its distinctive 'village on stilts' way of life, the Chilean government designated it a Zona Típica — a protected typical zone — in 2001.",
   },
   "elqui-valley": {
+    // 其余 sources: ✅ **天文台选址专项复核**：正文把「海拔适中、空气洁净、晴夜多」三重因素并列写出，
+    //   **没有把海拔当成唯一原因**。皮斯科白兰地产区史属广泛记载。2026-09-10 核，verdict: ok。
     seeing:
       "Elqui Valley is a narrow oasis valley in northern Chile irrigated by the Elqui River, its floor layered with vineyards and pisco brandy distilleries, flanked by arid Andean foothills.",
     formation:
@@ -16753,10 +17410,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Elqui Valley and Cajón del Maipo are both Andean-foothill valley landforms, but Elqui is defined by irrigated agriculture and viticulture in a dry, low-rainfall climate, while Cajón del Maipo is known for hot springs and near-capital Andean scenery, closer to Santiago.",
     concept:
       "Elqui Valley is a sample for studying 'arid-zone oasis agriculture' landforms: river irrigation carves out a band of arable land in otherwise dry mountains, illustrating how water availability determines the pattern of agriculture and settlement in an extreme arid environment.",
+    // history sources: 晴夜：年均 280—300 个晴夜（约占全年 77%—82%），原文「几乎全年无云」是无限定的绝对化表述。✅ 天文台选址的三重因素（海拔适中／空气洁净／晴夜多）正文并列写出，**没有把海拔当成唯一原因**。2026-09-10 核。
     history:
-      "Because of its moderate elevation, clean air, and near-total lack of cloud cover, the upper valley hosts several international observatories including Cerro Tololo Inter-American Observatory, and is a globally recognized stargazing destination; the valley is also one of Chile's principal pisco-producing regions, with distilling traditions dating back to the Spanish colonial era.",
+      "Because of its moderate elevation, clean air and an average of more than 280 clear nights a year, the upper valley hosts several international observatories including Cerro Tololo Inter-American Observatory, and is a globally recognized stargazing destination; the valley is also one of Chile's principal pisco-producing regions, with distilling traditions dating back to the Spanish colonial era.",
   },
   "cajon-del-maipo": {
+    // 全六段 sources: 迈波河下切构造山体、圣何塞火山邻近、供水圣地亚哥、埃尔莫拉多冰川徒步——
+    //   因果链与地质常识一致，未见成因颠倒；无会过期的数字断言。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "Cajón del Maipo is a deep canyon carved by the Maipo River through the western foothills of the Andes, about an hour's drive from Santiago — the Andean landform Santiago residents visit most often.",
     formation:
@@ -16771,6 +17431,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cajón del Maipo has been a traditional weekend destination for Santiago residents since the 19th century, with hot-spring resorts developed early along its length; the El Morado Glacier and its glacial lake within the canyon have become a popular hiking destination in recent years.",
   },
   "chilean-fjords": {
+    // formation / history sources: ✅ **成因专项复核**：正文写的是「更新世冰川深切 U 形谷 + 冰期结束后海侵淹没」这套标准两段式解释，
+    //   **没有**写成「构造断裂」或「河流下切」。族群称谓用**卡维斯卡尔人（Kawésqar）、雅甘人（Yaghan）**——均为现行官方名，未用已废弃的 Alacalufe 旧称；未涉人口锐减史。✅ 红线通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Chilean Fjords are a system of fjords and channels formed as glaciers deeply carved the coastline from the Aysén to Magallanes regions in southern Chile; the shoreline is long, convoluted, and dotted with countless islands, making it one of the most complex fjord coastlines in the world.",
     formation:
@@ -16785,6 +17447,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "These waters have long served as traditional canoe routes for seafaring Indigenous peoples such as the Kawésqar and Yaghan; today they form one of South America's most important cruise routes and important habitat for South American sea lions and Magellanic penguins.",
   },
   "strait-of-magellan": {
+    // seeing sources: 全长常见口径 565 km（西语维基按 305 海里换算），智利海军水道局 DIRECTEMAR 用另一组端点给 611 km——
+    //   **端点定义不同导致的差异**，正文「约 570 公里」落在合理区间内。第一海峡最窄处官方 3.7 km，正文「约 3 公里」属可接受取整（DIRECTEMAR，1 级）。
+    //   ✅ **零争议红线专项复核**：未描述智利—阿根廷边界线，未提 1881 年边界条约或 1978 年比格尔海峡危机；只写麦哲伦 1520 年通过海峡的航海史实。通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Strait of Magellan is a natural passage connecting the Atlantic and Pacific oceans, about 570 km long, running between mainland South America and Tierra del Fuego; it is named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe.",
     formation:
@@ -16799,6 +17464,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1520, Magellan's fleet took 38 days to cross this strait, becoming, by the historical record, among the first Europeans to complete this key leg of a circumnavigation; Punta Arenas, the main city on the strait's northern shore, grew rapidly in the late 19th century on shipping and the wool trade, at one point becoming the southernmost major port city in the Southern Hemisphere.",
   },
   "la-portada-coast": {
+    // seeing sources: 海蚀岩柱高约 43 m（CONAF 官网，1 级）。成因为差异侵蚀 + 海浪掏蚀，未写成风蚀。2026-09-10 核，verdict: ok。
     seeing:
       "La Portada is a sea arch near Antofagasta, about 43 m high, carved from Tertiary sedimentary rock by long-term wave erosion — a representative landmark of the 'desert meets coast' boundary where the Atacama Desert reaches the Pacific.",
     formation:
@@ -16809,10 +17475,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "La Portada shares a similar formation process with sea-stack coastlines such as the Twelve Apostles, but La Portada sits right beside the extremely arid Atacama Desert, illustrating the unusual 'desert meets coast' boundary rather than a typical temperate coastal erosion landform.",
     concept:
       "La Portada is a textbook sample for studying how a sea arch forms: waves repeatedly erode a weak point in the rock to form a sea cave, which enlarges and breaks through to form an arch; if the arch's roof eventually collapses, an isolated sea stack remains.",
+    // history sources: 设立年份：**1990 年**（农业部最高法令第 51 号，CONAF 官网 1 级），原文的 1945 年差了 45 年。海蚀岩柱高约 43 m 核实无误（同源）。2026-09-10 核。
     history:
-      "La Portada was designated a national natural monument by the Chilean government in 1945, the most representative natural landmark around Antofagasta, and an important habitat for local seabirds and sea lions.",
+      "La Portada was designated a national natural monument by the Chilean government in 1990, under Supreme Decree No. 51, the most representative natural landmark around Antofagasta, and an important habitat for local seabirds and sea lions.",
   },
   "chiloe-archipelago": {
+    // seeing sources: 主岛面积约 8,394 km²（另有约 9,000 km² 的宽口径），智利岛屿面积第二（次于智利一侧火地岛）。
+    //   ✅ 零争议红线：木教堂与传统文化只作建筑与遗产事实，**未写殖民时期传教与原住民关系的评价**。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Chiloé Archipelago is Chile's second-largest island and its surrounding island group; the main island, Chiloé, covers about 8,400 km² and has a consistently rainy, humid climate. Its distinctive stilted wooden churches and folklore are cultural hallmarks of the region.",
     formation:
@@ -16823,8 +17492,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Chiloé and the Chilean Fjords further south are both fragmented, complex coastal belts in southern Chile, but Chiloé has a relatively mild climate and extensive settled farming and fishing communities, while the area south of the fjords is far more sparsely populated and dominated by wilderness scenery.",
     concept:
       "Chiloé is a classic sample for studying how the Coastal Range, as it extends south, is gradually submerged by the sea to form an archipelago landform; it is also a human-geography case study of how a distinctive folk wooden-building tradition evolved within an isolated island setting.",
+    // history sources: UNESCO 列入：**2000-12 先列 14 座，2001-06 增补 2 座**，合计 16。原文写成 2000 年整体列入，把分两次的事合并成了一次（2 级，智利文化部下属机构）。2026-09-10 核。
     history:
-      "The archipelago's 16 wooden churches blend European Catholic architectural tradition with local Indigenous building techniques; Spanish colonizers founded the town of Castro in 1567, and in 2000 the 16 churches were collectively inscribed as a UNESCO World Heritage Site.",
+      "The archipelago's 16 wooden churches blend European Catholic architectural tradition with local Indigenous building techniques; Spanish colonizers founded the town of Castro in 1567, and fourteen of the churches were inscribed as a UNESCO World Heritage Site in 2000, with two more added in 2001 to make sixteen.",
   },
   "easter-island": {
     // 史实 sources: 波利尼西亚人约公元 1200—1250 年定居（Hunt & Lipo 的「迟到定居说」为当前学界主流，旧说 400—800 年已被推翻）；
@@ -16846,6 +17516,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Polynesians arrived and settled the island around 1200–1250 CE, gradually developing the distinctive moai-carving culture; Dutch explorer Jacob Roggeveen 'discovered' the island on Easter Sunday in 1722, giving it its name; the island was annexed by Chile in 1888, and the entire island was inscribed as a UNESCO World Heritage Site in 1995.",
   },
   "juan-fernandez-archipelago": {
+    // 全六段 sources: 距智利大陆约 670 km；埃永克峰 915 m；塞尔柯克 1704 年被弃、1709-02 获救（四年零四个月，与「四年多」吻合）；
+    //   1977 年列入 UNESCO 人与生物圈保护区（CONAF，1 级）。
+    //   📌 事前提示的「2010 年海啸／人口需带时点」在本条**不适用**——正文完全没提人口规模或海啸，无需处理。2026-09-10 核，verdict: ok。
     seeing:
       "The Juan Fernández Archipelago is a volcanic island group about 670 km from mainland Chile; its main island is now named Robinson Crusoe Island, and its highest point, El Yunque, reaches 915 m.",
     formation:
@@ -16860,6 +17533,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1704, Scottish sailor Alexander Selkirk was marooned on the island after a dispute with his captain and survived alone for more than four years before being rescued; his experience inspired Daniel Defoe's 1719 novel Robinson Crusoe. The archipelago was designated a UNESCO Biosphere Reserve in 1977.",
   },
   "tierra-del-fuego-chile": {
+    // seeing sources: 智利一侧约占主岛 61.4%（约 29,485 / 48,100 km²），正文「约西部三分之二」属合理取整。
+    //   ✅ **零争议红线专项复核（本批重点）**：未描述智利—阿根廷边界线本身（只给面积占比）、未提 1881 年条约或任何边界争端；
+    //   族称用**雅甘人、塞尔克南人**（现行规范名，非已废弃的「奥纳人」Ona）；**未涉 19 世纪末至 20 世纪初的原住民人口锐减史**，
+    //   只以过去式笼统写「曾是……家园」而不展开原因。波韦尼尔的淘金与养羊史属客观地方史。通过。2026-09-10 核，verdict: ok。
     seeing:
       "Tierra del Fuego is the main island of the archipelago at the southernmost tip of South America, split between Chile and Argentina; the Chilean side accounts for roughly the western two-thirds and is dominated by sub-Antarctic grassland, southern beech forest, and the old-growth forest of Karukinka Natural Park.",
     formation:
@@ -16874,6 +17551,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island was long home to Indigenous peoples such as the Yaghan and Selk'nam, who developed distinctive ways of life adapted to the polar climate; Porvenir was founded in the late 19th century during a gold rush and sheep-ranching boom, and remains the largest settlement on the Chilean side.",
   },
   "patagonian-steppe-chile": {
+    // formation sources: ✅ **专项复核**：巴塔哥尼亚草原的干旱**确系安第斯雨影单一主导机制**——
+    //   与阿塔卡马的「三重叠加」不同，这里不需要强行叠加纬度或洋流因素，正文的单一机制表述本身准确。
+    //   帕利艾克国家公园的火山渣锥与熔岩流描述与该火山场的通行记述一致。2026-09-10 核，verdict: ok。
     seeing:
       "The Chilean Patagonian Steppe is an open, arid grassland in the eastern Magallanes Region; lying in the Andes' rain shadow with sparse precipitation, its vegetation is dominated by low grasses and shrubs, traditionally used for sheep grazing.",
     formation:
@@ -16884,7 +17564,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chilean Patagonian Steppe and the Southern Patagonian Ice Field both belong to the Patagonia region, but the steppe sits in the dry rain-shadow belt east of the Andes, while the ice field occupies the high-precipitation zone within the Andes themselves — their climate conditions are nearly opposite.",
     concept:
       "This steppe is a direct case study of how the 'rain shadow effect' can produce sharply different climate zones within a single region — just tens of kilometers away, the western slope of the Andes receives heavy rainfall and supports dense forest, while the eastern slope is already dry grassland.",
+    // history sources: 位置：米洛敦洞穴在**普埃尔托纳塔莱斯**西北约 24 km，不在帕利艾克国家公园附近（后者在蓬塔阿雷纳斯东北约 196 km），两地相距逾 200 km。1895 年埃伯哈德发现地懒化石属实。1 级。2026-09-10 核。
     history:
-      "The Cueva del Milodón near Pali Aike National Park yielded fossilized fur and bones of the extinct giant ground sloth in 1895, making it an important site for studying the relationship between Patagonia's late-Pleistocene fauna and early human activity; the steppe remains the core area for traditional sheep ranching today.",
+      "The Cueva del Milodón near Puerto Natales yielded fossilized fur and bones of the extinct giant ground sloth in 1895, making it an important site for studying the relationship between Patagonia's late-Pleistocene fauna and early human activity; the steppe remains the core area for traditional sheep ranching today.",
   },
 };
