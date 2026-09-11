@@ -2408,6 +2408,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Barcelona flies from the very centre of the Iberian Peninsula to its north-east coast, and along the way shows how this continental watershed range splits the peninsula's drainage. Soon after take-off the ground grows broken and hilly: the Sistema Ibérico, a discontinuous upland whose highest point, Pico de Urbión, is under 2,300 m yet is the source of the Duero — and the divide between the peninsula's Atlantic and Mediterranean drainage." +
       " Beyond the Sistema Ibérico the land opens out flat: the Ebro Basin, once a fully enclosed inland salt-lake basin in the Cenozoic until a river cut through the mountains to its east and connected it to the Mediterranean — today a lowland of irrigated farmland alternating with dry badland tablelands. Nearing Barcelona the tail of the Pyrenees sinks gradually into the coast, and the plane descends along the Catalan shoreline, the Mediterranean and the city skyline visible before landing.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 乌尔比昂峰约 2228 m、杜罗河源头与大西洋 / 地中海分水岭；埃布罗盆地由封闭湖变外流，与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到巴塞罗那飞约1小时25分钟，同一时区，是西班牙最繁忙的国内航线之一，也可以选择约2小时半的高铁（AVE）。两座城市气质迥异：马德里是内陆的政治与艺术中心，巴塞罗那是地中海边的港口与设计之都。巴塞罗那机场离市区约15公里，有机场大巴和火车。加泰罗尼亚语和西班牙语在巴塞罗那都是官方语言，路牌菜单常双语。圣家堂等高迪建筑门票务必提前网上订。多数国家公民短期旅游按申根区规定，入境不需另外签证。",
@@ -2425,6 +2426,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Seville flies south from the Meseta plateau into Andalusia, a classic route. Soon after take-off the land rises into a low, east–west range: the Sierra Morena, a fault scarp of old metamorphic rock — its north slope grading gently into the Meseta, its south slope dropping hundreds of metres abruptly, historically the natural barrier between Castile and Andalusia, its oak savanna the traditional landscape for free-range Iberian pigs." +
       " Past the Sierra Morena the land opens out flat: the Guadalquivir Valley, the only Iberian river valley navigable by ocean-going ships all the way inland, olive groves laid out in geometric grids across the hills, the Guadalquivir itself flowing broad and gentle toward Seville.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 莫雷纳山断层崖、伊比利亚黑猪牧场；瓜达尔基维尔「唯一可让远洋船直达内陆港的河谷」（塞维利亚港，2 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到塞维利亚飞约1小时5分钟，同一时区，也可以选择约2小时半的高铁。塞维利亚夏季（6–9月）是西班牙大陆最炎热的地区之一，常超40°C，春秋气候最宜人。机场离市区约10公里，有机场大巴，老城本身适合步行。塞维利亚是弗拉明戈的重要发源地，四月春会和圣周是全年最重要的节庆，届时住宿需提前很久订。多数国家公民短期旅游按申根区规定。",
@@ -2442,6 +2444,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Granada crosses the southern half of the Meseta and two ranges before reaching Andalusia. After take-off comes the La Mancha Plain — an extremely flat limestone tableland where traditional white windmills still stand along the edges, made famous by Cervantes's Don Quixote. Then the flight crosses the Sierra Morena, the fault scarp dividing the Meseta from Andalusia." +
       " Once over Andalusia the land rises again, and the snow peaks of the Sierra Nevada appear ahead — Mulhacén at 3,479 m, the highest point on the Iberian Peninsula, yet only about 40 km from the Mediterranean coast; the plane descends along the foot of the range, with Granada sitting in the river valley plain right below the snow peaks.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 拉曼恰平原；穆拉森峰 3479 m 伊比利亚半岛最高点（UNESCO，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到格拉纳达飞约1小时10分钟，同一时区。格拉纳达以阿尔罕布拉宫闻名，门票必须提前数周在官网预订，旺季常常售罄。机场离市区约15公里，有机场大巴，老城坡道多、适合步行但需体力。冬季市区气候温和，但可看到内华达山脉的雪峰；夏季干热、昼夜温差大。多数国家公民短期旅游按申根区规定。",
@@ -2459,6 +2462,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Bilbao flies due north from the very centre of the Meseta plateau into the Cantabrian mountains. After take-off the land below is the Meseta Central, the largest ancient tableland on the Iberian Peninsula, covering nearly two-fifths of the country, wheat fields and pasture stretching to the horizon." +
       " Further north the land rises and grows broken, entering the Picos de Europa — the steepest stretch of the Cantabrian range, Carboniferous limestone uplifted above 2,600 m by mountain building and then carved by glaciers and karst dissolution into sharp peaks and countless caves. Past the mountains the plane descends along a lush green stretch of the northern coast, with Bilbao sitting in the valley at the mouth of the Nervión.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 梅塞塔约占五分之二；欧罗巴峰石炭纪石灰岩与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到毕尔巴鄂飞约1小时5分钟，同一时区。毕尔巴鄂属温带海洋性气候，比西班牙其他地区凉爽多雨，即使夏季也不算炎热，随身带雨具。机场离市区约12公里，有机场大巴。1997年古根海姆博物馆落成后，这座老工业城市转型为当代建筑地标，门票建议提前网上订。巴斯克语和西班牙语在本地都是官方语言，pintxos（巴斯克风味小吃）文化浓厚。多数国家公民短期旅游按申根区规定。",
@@ -2476,6 +2480,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Santiago de Compostela crosses the entire Meseta plateau on its way to Galicia in the north-west corner. After take-off the land below is the Meseta's northern sub-plateau, gently sloping and drained by the Duero. Near the Spain–Portugal border the Duero has cut a deep canyon — the Arribes del Duero, its walls near-vertical, a stark contrast with the gentle plateau upstream; most of this stretch is now dammed into a chain of long, narrow reservoirs." +
       " Beyond the canyon, heading further north-west, the land grows increasingly green and wet; before landing you can see Galicia's typical hills and farmland, with the towers of Santiago's cathedral marking the end of the pilgrimage route.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿里维斯—杜罗峡谷崖壁逾 400 m、梯级水库；梅塞塔北子高原。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到圣地亚哥飞约1小时15分钟，同一时区。圣地亚哥是天主教朝圣地“圣雅各之路”的终点，主教座堂前常能看到刚完成数百公里徒步的朝圣者。加利西亚是西班牙最多雨的地区之一，常年需备雨具，夏季相对凉爽舒适。机场离市区约10公里，有机场大巴，老城很小、完全可步行。7月25日圣雅各节前后是宗教庆典高峰。多数国家公民短期旅游按申根区规定。",
@@ -2491,6 +2496,7 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Barcelona to Palma is a short hop across the sea, linking mainland Spain with the Balearic Islands. Soon after take-off the flight crosses the Mediterranean — blue water with the occasional cargo ship, no land in sight. Approaching Mallorca, a steep grey-white ridge appears on the horizon along the island's north-west coast: the Serra de Tramuntana, Mesozoic limestone uplifted by mountain building and then carved by centuries of rain into an extensive karst system, with almost no flat land between mountain and sea, terraces built tier upon tier up the steep slopes. The plane turns south-east along the foot of the range and descends over the Bay of Palma, its long beaches and the Gothic Palma Cathedral clearly visible.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 特拉蒙塔纳山中生代灰岩、梯田（UNESCO，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "巴塞罗那到帕尔马飞约50分钟，同一时区，是西班牙最繁忙的短途航线之一。马略卡岛地中海气候，夏季炎热干燥、是欧洲度假旺季，价格高、人多；5–6月和9月相对舒适清净；冬季温和，适合徒步和文化旅游。机场离市区约8公里，有公交直达。加泰罗尼亚语（马略卡方言）和西班牙语都是官方语言。多数国家公民短期旅游按申根区规定。",
@@ -2508,11 +2514,12 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Tenerife is Spain's longest domestic route, flying south-west from the centre of the Iberian Peninsula across the Atlantic to the Canary Islands off north-west Africa. After take-off comes the Guadalquivir Valley, Andalusia's largest expanse of farmland, olive groves covering the hills; then the Doñana wetland at the Guadalquivir's mouth, a patchwork of seasonal marsh and shifting dunes, an important European bird habitat." +
       " Past the Spanish coast the flight crosses open Atlantic for a long stretch with no land in sight. Approaching Tenerife, an almost perfectly symmetrical volcanic cone appears in the middle of the sea: Teide, 3,715 m, the highest point in all of Spain — measured from its base on the Atlantic sea floor, the third-tallest volcanic structure on Earth after Hawaii's two giants — and the plane descends around the mountain to land.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 泰德峰 3715 m、从海底算起世界第三高火山体，未涉破火山口成因之争；时区原写「同一时区」，改为晚 1 小时。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马德里到特内里费飞约2小时50分钟，两地同一时区。加那利群岛虽靠近非洲西北沿海，但整体属西班牙领土、通用欧元，气候常年温和，是欧洲人的冬季度假热门地。岛上有南北两座机场，特内里费北机场离圣克鲁斯市区较近。泰德国家公园缆车受天气影响，出发前查运营状态；山区昼夜温差大、紫外线强。多数国家公民短期旅游按申根区规定。",
+      "马德里到特内里费飞约2小时50分钟，特内里费比马德里晚1小时（加那利群岛用西欧时间）。加那利群岛虽靠近非洲西北沿海，但整体属西班牙领土、通用欧元，气候常年温和，是欧洲人的冬季度假热门地。岛上有南北两座机场，特内里费北机场离圣克鲁斯市区较近。泰德国家公园缆车受天气影响，出发前查运营状态；山区昼夜温差大、紫外线强。多数国家公民短期旅游按申根区规定。",
     "en-US":
-      "Madrid to Tenerife is about 2 hours 50 minutes, same time zone at both ends. The Canary Islands sit near north-west Africa but are Spanish territory throughout, using the euro, with a mild year-round climate that makes them a popular winter destination for Europeans. The island has two airports, north and south; Tenerife North is closer to Santa Cruz. The Teide summit cable car is weather-dependent, so check its status before heading up; the mountains have a large day-to-night swing and strong UV. Citizens of most countries follow Schengen-area rules for short visits.",
+      "Madrid to Tenerife is about 2 hours 50 minutes; Tenerife is one hour behind Madrid (the Canary Islands use Western European Time). The Canary Islands sit near north-west Africa but are Spanish territory throughout, using the euro, with a mild year-round climate that makes them a popular winter destination for Europeans. The island has two airports, north and south; Tenerife North is closer to Santa Cruz. The Teide summit cable car is weather-dependent, so check its status before heading up; the mountains have a large day-to-night swing and strong UV. Citizens of most countries follow Schengen-area rules for short visits.",
     },
   },
 
@@ -2525,6 +2532,7 @@ export const ROUTE_NARRATION: Record<
       "Barcelona to Málaga runs far south along the Mediterranean coast, from Catalonia all the way to the Costa del Sol in Andalusia. Most of the flight follows the coastline south, over the Mediterranean coastal plains of Valencia and Murcia." +
       " Nearing eastern Andalusia the coast suddenly turns steep and rugged: Cabo de Gata, the only stretch of coast on the Iberian Peninsula made entirely of volcanic rock, built up by submarine eruptions about 13 million years ago — only about 5% of the whole volcanic body is above water today, the rest still submerged beneath the Alboran Sea, its columnar joints and lava cliffs clearly visible. Past Cabo de Gata the plane continues west and descends along the Costa del Sol into Málaga.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 加塔角约 1300 万年前海底火山、约 5% 露出海面，在本库 14–7.5 Ma 区间内。核实 2026-09-11
     travel: {
     "zh-CN":
       "巴塞罗那到马拉加飞约1小时35分钟，同一时区。马拉加地中海气候，全年温和，冬季平均气温仍在15°C以上，是欧洲少有的冬季晒太阳目的地；盛夏沿海拥挤、价格上涨。机场离市区约8公里，有近郊火车直达市中心。马拉加是毕加索的出生地，毕加索博物馆和故居值得一看。多数国家公民短期旅游按申根区规定。",
@@ -2777,15 +2785,16 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "里斯本飞法鲁，从首都飞到南部阿尔加维海岸，横穿整个葡萄牙本土南部。起飞后不久，脚下出现阿拉比达海岸——塞图巴尔半岛一段石灰岩山地直插大西洋形成的陡峭海岸，山海高差极大。" +
-      "继续南飞，进入阿连特茹平原：一片一望无际、微微起伏的开阔地形，占葡萄牙国土约三分之一，大片间距均匀的橡树点缀其间，这种稀树草原式的农林系统已被联合国粮农组织列为全球重要农业文化遗产。" +
+      "继续南飞，进入阿连特茹平原：一片一望无际、微微起伏的开阔地形，占葡萄牙国土约三分之一，大片间距均匀的橡树点缀其间，其中塞尔帕丘陵一带的蒙塔多农林系统已于2025年被联合国粮农组织列为全球重要农业文化遗产。" +
       "平原南端，一片宽阔的蓝色水面出现——阿尔克瓦水库，西欧最大的人工湖，由拦截瓜迪亚纳河而成。" +
       "越过水库，地面骤然变化，进入阿尔加维海岸：金黄色的石灰岩崖壁被海浪侵蚀出连串的海蚀拱和海蚀柱，法鲁就在这段海岸旁、紧邻福尔摩沙潟湖国家公园。",
     "en-US":
       "Lisbon to Faro flies from the capital to the southern Algarve coast, crossing the whole southern half of mainland Portugal. Soon after take-off, the Arrábida Coast appears below — a stretch of limestone mountain on the Setúbal Peninsula dropping steeply into the Atlantic, with an extreme land-to-sea elevation change." +
-      " Flying on south, you enter the Alentejo Plain: a vast, gently rolling open landscape covering about a third of Portugal, dotted with evenly spaced oaks in a savanna-style agroforestry system that the UN Food and Agriculture Organization has designated a Globally Important Agricultural Heritage System." +
+      " Flying on south, you enter the Alentejo Plain: a vast, gently rolling open landscape covering about a third of Portugal, dotted with evenly spaced oaks in a savanna-style agroforestry system, part of which — the montado of the Serpa hills — the UN Food and Agriculture Organization designated a Globally Important Agricultural Heritage System in 2025." +
       " At the plain's southern end, a broad blue expanse of water appears — the Alqueva Reservoir, the largest artificial lake in Western Europe, formed by damming the Guadiana River." +
       " Past the reservoir the land changes abruptly into the Algarve Coast: golden limestone cliffs carved by the waves into a chain of sea arches and stacks, with Faro right beside this stretch of coast, next to Ria Formosa Natural Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿连特茹约占国土三分之一；GIAHS 原被泛化到整片平原，按本库改为塞尔帕丘陵蒙塔多（2025）。核实 2026-09-11
     travel: {
     "zh-CN":
       "里斯本到法鲁飞约55分钟，同一时区。也可坐火车（约3小时）或长途巴士。法鲁属地中海气候，是葡萄牙日照最多的地区之一，夏季炎热干燥。" +
@@ -2809,6 +2818,7 @@ export const ROUTE_NARRATION: Record<
       " Over the continental shelf the plane crosses open Atlantic water, and after a little over an hour the outline of Madeira Island rises from the sea — a high ridge built up by repeated volcanic eruptions, its highest point, Pico Ruivo, at 1,862 m, its slopes covered in dark-green primeval laurel forest." +
       " Funchal sits in a bay on Madeira's south coast, the city climbing the hillside from the sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿拉比达、维森特角、皮库鲁伊武峰 1862 m 与本库一致；马德拉与本土同时区。核实 2026-09-11
     travel: {
     "zh-CN":
       "里斯本到丰沙尔飞约1小时50分，同一时区。马德拉机场跑道建在悬崖边、进近有一定挑战性，是经验丰富的机组执飞。马德拉气候常年温和，被称为“大西洋的花园”。" +
@@ -2824,7 +2834,7 @@ export const ROUTE_NARRATION: Record<
   "lis-pdl": {
     study: {
     "zh-CN":
-      "里斯本飞蓬塔德尔加达，从欧洲大陆一路飞到大西洋中脊上的亚速尔群岛，全程约1500公里，绝大部分时间在开阔的大西洋海面上飞行，是葡萄牙国内最长的航线之一，也是唯一一条完全跨越大洋的国内航线。" +
+      "里斯本飞蓬塔德尔加达，从欧洲大陆一路飞到大西洋中脊上的亚速尔群岛，全程约1500公里，绝大部分时间在开阔的大西洋海面上飞行，是葡萄牙国内最长的航线之一。" +
       "起飞后很快就看不到陆地，飞机沿北大西洋暖流经过的开阔洋面向西飞行，脚下长时间只有深蓝色的海水，偶尔可见货轮的航迹。" +
       "飞行约两个半小时后，圣米格尔岛的轮廓才出现在海面上，岛屿西端一座直径约5公里的火山破火山口清晰可见——七城破火山口，口底一大一小两个相连的湖泊因光线折射常呈现一蓝一绿的对比色，是亚速尔群岛最容易辨认的地貌之一。" +
       "蓬塔德尔加达就在圣米格尔岛南岸，是探索这座活跃火山岛屿的门户，城市不大，海滨广场的三座黑白拱门是标志性地标。",
@@ -2833,6 +2843,7 @@ export const ROUTE_NARRATION: Record<
       " After about two and a half hours, the outline of São Miguel Island appears over the water, and a volcanic caldera about 5 km across at the island's western end comes into clear view — Sete Cidades, whose two connected lakes on the floor, one large and one small, often show a striking blue-and-green colour contrast from light refraction." +
       " Ponta Delgada is on the south coast of São Miguel, the gateway to exploring this active volcanic island.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 七城破火山口与本库一致；亚速尔比本土晚 1 小时；删去站不住的「唯一一条完全跨越大洋的国内航线」。核实 2026-09-11
     travel: {
     "zh-CN":
       "里斯本到蓬塔德尔加达飞约2小时40分，落地把时钟往回拨1小时（亚速尔比本土晚一个时区）。亚速尔群岛常年温和多雨，天气变化快。" +
@@ -2855,6 +2866,7 @@ export const ROUTE_NARRATION: Record<
       "Porto to Funchal flies from northern Portugal to the Madeira archipelago in the Atlantic, the longest of the routes to Madeira. Soon after take-off, the Douro Valley appears below — the terraced vineyard region on both banks of the middle Douro in northern Portugal, its hand-built stone terraces about 2,000 years old, the source of Port wine." +
       " Past the coast the plane crosses open Atlantic water, and only after a long stretch does Madeira come into view — an island built up by volcanic eruptions into a high ridge, its slopes covered in dark-green primeval laurel forest. Funchal sits in a bay on the island's south coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 杜罗河谷梯田（UNESCO，1 级）与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "波尔图到丰沙尔飞约2小时10分，同一时区。这是较长的一条岛际航线，建议带些机上娱乐或读物。波尔图凉爽多雨，马德拉常年温和，落地后气候会有明显变化。" +
@@ -2877,6 +2889,7 @@ export const ROUTE_NARRATION: Record<
       "Porto to Ponta Delgada flies from northern Portugal all the way to the Azores, one of the longest domestic routes in Portugal. After take-off you pass the terraced vineyards of the Douro Valley, then cross the continental shelf into open Atlantic water." +
       " After a long stretch over the ocean, the outline of São Miguel Island appears, with the Sete Cidades caldera at its western end clearly visible — its two connected lakes showing a blue-green colour contrast from light refraction. Ponta Delgada is on the island's south coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 「全程超过 1700 公里、飞越海洋时间最长」与同批自洽。核实 2026-09-11
     travel: {
     "zh-CN":
       "波尔图到蓬塔德尔加达飞约2小时55分，落地把时钟往回拨1小时。这是较长的一条航线，建议提前查好登机口和转机信息。亚速尔群岛常年温和多雨，天气变化快。" +
@@ -2900,6 +2913,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on south, the land becomes Serra de Aire e Candeeiros: a pale grey Jurassic limestone karst upland, its surface dense with pinnacles and sinkholes, with an extensive cave system underground." +
       " Beyond the upland you enter the Alentejo Plain — an endless expanse of oak savanna covering about a third of Portugal. Near the end the land changes abruptly, and the golden Algarve coast comes into view, with Faro right beside it.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 蒙德古河、艾雷—坎迪埃罗斯侏罗纪灰岩、阿连特茹约三分之一与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "波尔图到法鲁飞约1小时15分，同一时区。这条南北纵贯线是葡萄牙本土最长的国内航段，比坐火车（约6-7小时、需换乘）快得多。波尔图凉爽多雨，法鲁炎热干燥，两地气候差异明显。" +
@@ -3525,6 +3539,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Warsaw to Kraków is Poland's busiest domestic route, linking the capital with the historic former capital. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — one of the geologically oldest ranges in Poland, its bedrock dating to the Palaeozoic around 500 million years ago, worn by hundreds of millions of years of weathering into today's low, rounded hill form, its slopes scattered with eroded quartzite debris." +
       " Past the Świętokrzyskie range, the flight continues south into Lesser Poland, landing in Kraków, the historic former capital and home to Wawel Castle.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 圣十字山约 5 亿年基岩、戈乌博尔基；克拉科夫 1978 年首批 UNESCO 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到克拉科夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约2.5小时的城际火车。克拉科夫机场离市区约11公里。克拉科夫是探索小波兰地区（扎科帕内、维利奇卡盐矿）的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3537,11 +3552,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "华沙飞格但斯克，是一趟连接波兰首都与波罗的海沿岸港口城市的航线。飞机离开华沙后向北飞行，脚下的地貌逐渐从中部平原过渡为维斯瓦河下游流域，维斯瓦河是波兰境内最长的河流，发源于西南部喀尔巴阡山脉北麓，全程贯穿波兰、最终在格但斯克附近注入波罗的海。" +
-      "临近格但斯克降落前，脚下展开维斯瓦三角洲低地——维斯瓦河入海口处的冲积三角洲平原，部分区域海拔低于海平面，历史上经中世纪荷兰移民带来的堤坝排水技术围垦而成，是波兰境内地势最低的区域，河网密布、以纵横的排水渠道著称，飞机随后降落在格但斯克——历史上汉萨同盟重要的贸易城市，也是二战爆发的第一枪打响之地。",
+      "临近格但斯克降落前，脚下展开维斯瓦三角洲低地——维斯瓦河入海口处的冲积三角洲平原，部分区域海拔低于海平面，历史上经16世纪起荷兰移民带来的堤坝排水技术围垦而成，是波兰境内地势最低的区域，河网密布、以纵横的排水渠道著称，飞机随后降落在格但斯克——历史上汉萨同盟重要的贸易城市，也是二战爆发的第一枪打响之地。",
     "en-US":
       "Flying from Warsaw to Gdańsk links Poland's capital with its Baltic coast port city. After leaving Warsaw the flight heads north, the landscape below gradually shifting from the central plain into the lower Vistula river basin." +
-      " Approaching Gdańsk, Żuławy Wiślane comes into view below — the alluvial delta plain at the Vistula's mouth, part of it lying below sea level, historically reclaimed using dike-and-drainage technology introduced by medieval settlers from the Low Countries, the lowest-lying region in Poland — before the flight lands in Gdańsk, a historically important Hanseatic League trading city.",
+      " Approaching Gdańsk, Żuławy Wiślane comes into view below — the alluvial delta plain at the Vistula's mouth, part of it lying below sea level, historically reclaimed using dike-and-drainage technology introduced by Mennonite settlers from the Low Countries from the 16th century onward, the lowest-lying region in Poland — before the flight lands in Gdańsk, a historically important Hanseatic League trading city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 维斯瓦河波兰最长、三角洲为全国最低处；围垦原写「中世纪荷兰移民」，按本库改为 16 世纪起门诺派。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到格但斯克飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每周约40班），也可选择约2.5小时的城际火车。格但斯克机场离市区约12公里。格但斯克是探索波罗的海沿岸海尔半岛与斯沃文斯基沙丘的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3559,6 +3575,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Warsaw to Wrocław crosses west-central Poland, linking the capital with the core city of Silesia. After leaving Warsaw the flight heads west, the open, flat landform of the Great Polish Lowland unfolding below — the main portion of the Central European Plain lying within Poland, built of last-glacial ice-sheet deposits, its extensive, regular farmland stretching to the horizon as Poland's largest agricultural region." +
       " Past the Great Polish Lowland, the flight continues south-west, landing in Wrocław, the core city of Silesia on the Oder, known for its hundred-plus bridges and its street-side dwarf statues.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大波兰低地；弗罗茨瓦夫约 130 座桥；「历史上曾多次易主」为史实、无评价。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到弗罗茨瓦夫飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约4.5小时的城际火车。弗罗茨瓦夫机场离市区约10公里。弗罗茨瓦夫是探索西里西亚地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3576,6 +3593,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Warsaw to Poznań is a short hop linking the capital with one of Poland's oldest cities. Soon after take-off, the open, flat landform of the Great Polish Lowland unfolds below — a plain built of last-glacial ice-sheet deposits, extensive farmland interwoven with scattered forest and lakes, the flattest, most open region within Poland." +
       " The flight continues west, landing in Poznań, an ancient city that was historically one of the political centres of the early Polish state, built on this open lowland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大波兰低地；波兹南「最早的行政与宗教中心之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到波兹南飞约39分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约2.5小时的城际火车。波兹南机场离市区约6公里。波兹南是探索大波兰低地地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3588,11 +3606,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "华沙飞热舒夫，是一趟飞往波兰东南部、探索别什恰迪山脉的门户航线。飞机离开华沙后向南飞行，中途掠过圣十字山——波兰境内地质年代最古老的山脉，基岩可追溯至古生代，历经数亿年风化夷平已成为低矮浑圆的丘状山地，是欧洲少数保留有古生代原始地貌痕迹的山地之一。" +
-      "越过圣十字山后，飞机继续向东南飞行，逐渐进入小波兰东部地区、地势向喀尔巴阡山前地带过渡，最终降落在热舒夫——波兰重要的航空工业中心，因此得名“波兰航空谷”，机场附近设有航空博物馆记录当地航空制造历史。",
+      "越过圣十字山后，飞机继续向东南飞行，逐渐进入小波兰东部地区、地势向喀尔巴阡山前地带过渡，最终降落在热舒夫——波兰重要的航空工业中心，因此得名“波兰航空谷”。",
     "en-US":
       "Flying from Warsaw to Rzeszów is a gateway route to south-eastern Poland and the Bieszczady Mountains. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — the geologically oldest range in Poland, its bedrock dating to the Palaeozoic, worn by hundreds of millions of years of weathering into today's low, rounded hill form." +
       " Past the Świętokrzyskie range, the flight continues south-east into the eastern part of Lesser Poland, landing in Rzeszów, an important Polish aerospace-industry centre nicknamed \"Aviation Valley.\"",
     },
+    // travel sources: 全四段（study/travel × 中英）: 「波兰航空谷」属实；删去查无来源的「机场附近航空博物馆」。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到热舒夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型），也可选择约3小时的城际火车。热舒夫—亚西翁卡机场离市区约10公里。热舒夫是探索别什恰迪山脉波沃尼纳草甸的便捷门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3605,11 +3624,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "华沙飞什切青，是一趟横跨波兰全境、抵达西北部奥得河口港口城市的航线，也是波兰境内飞行距离最长的国内航线之一。飞机离开华沙后向西北飞行，脚下持续展开大波兰低地开阔平坦的地貌，大片农田与零星分布的湖泊、森林一望无际。" +
-      "飞机继续向西北飞行，逐渐接近波兰与德国边境，什切青潟湖与奥得河口的水网在地平线上依稀可见，最终降落在什切青——紧邻德国边境、坐落于奥得河口的重要港口与工业城市，波兰海军主要基地之一，也是波兰通往波罗的海的重要出海口。",
+      "飞机继续向西北飞行，逐渐接近波兰与德国边境，什切青潟湖与奥得河口的水网在地平线上依稀可见，最终降落在什切青——紧邻德国边境、坐落于奥得河口的重要港口与工业城市，也是波兰通往波罗的海的重要出海口。",
     "en-US":
       "Flying from Warsaw to Szczecin spans the length of Poland to reach the port city at the mouth of the Oder in the north-west. After leaving Warsaw the flight heads north-west, the open, flat landform of the Great Polish Lowland continuing below it, extensive farmland stretching to the horizon." +
       " The flight continues north-west, gradually approaching the Poland-Germany border, before landing in Szczecin, an important port and industrial city at the mouth of the Oder, right on the German border.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥得河口港口与工业城市；删去只有 3 级来源且站不住的「海军主要基地之一」。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到什切青飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约6.5小时的城际火车。什切青—戈萊尼乌夫机场离市区约45公里。什切青是探索沃林岛国家公园的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",

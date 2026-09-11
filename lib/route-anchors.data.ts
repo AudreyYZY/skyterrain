@@ -511,7 +511,7 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
   },
   "lis-fao": {
     "zh-CN": { perSentence: [0, 1, 2, 3, 4], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 2, 4], source: "auto" },
   },
   "lis-fnc": {
     "zh-CN": { perSentence: [0, 1, 3, 3], source: "auto" },

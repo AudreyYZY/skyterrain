@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 2e3ccc0
+lastVerifiedCommit: 0462f26
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 2e3ccc0
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 航线解说·西班牙 / 葡萄牙 / 波兰国内（20 条）—— 280 条全部核完一遍（R26e） | 26 | 20 / 6 / 0 | 当场修 26 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 回头搜顺带发现：景洪交通段停在中老铁路通车前（R26d） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·英国 / 爱尔兰 / 法国 / 德国国内（24 条）（R26c） | 27 | 24 / 3 / 0 | 当场修 27 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·挪威 / 瑞典 / 芬兰 / 丹麦 / 冰岛国内（28 条）（R26b） | 32 | 28 / 4 / 0 | 当场修 32 条；新开 issue 0、关闭 0 |
