@@ -11990,7 +11990,7 @@ const GOBI_ALTAI: TerrainEntry = {
   axis: [[96.5, 45.6], [101.0, 44.8]],
   viewScale: 1.4,
   label: { lon: 98.8, lat: 45.2, rotation: -15 },
-  source: "戈壁阿尔泰山：蒙古阿尔泰山向东南延伸至戈壁荒漠区的过渡山系，由多个孤立断块山地组成，最高峰伊赫博格德峰海拔3957米，山顶保留小型冰川，是戈壁荒漠中罕见的高山生态孤岛（Wikipedia WebSearch 2026）",
+  source: "戈壁阿尔泰山：蒙古阿尔泰山向东南延伸至戈壁荒漠区的过渡山系，由多个孤立断块山地组成，最高峰伊赫博格德峰海拔3957米，山顶如今已无冰川、仅有季节性积雪（核实 2026-09-11，The Cryosphere 2023），是戈壁荒漠中罕见的高山生态孤岛（Wikipedia WebSearch 2026）",
 };
 
 const MONGOLIA_GOBI: TerrainEntry = {
@@ -12071,7 +12071,7 @@ const KHOVSGOL_LAKE: TerrainEntry = {
   bbox: [100.0, 50.2, 100.9, 51.5],
   viewScale: 1.2,
   label: { lon: 100.5, lat: 50.1, rotation: 0 },
-  source: "库苏古尔湖：蒙古最大的淡水湖，面积约2620平方公里，最大水深267米，蓄水量约占蒙古全国淡水总量的70%、全球淡水总量的0.4%，经额吉音河（色楞格河支流）与俄罗斯贝加尔湖存在水文关联，湖区设有库苏古尔国家公园（Britannica WebSearch 2026）",
+  source: "库苏古尔湖：蒙古最大的淡水湖，面积各测量年份在2600至2770平方公里之间（核实 2026-09-11），最大水深267米，蓄水量约占蒙古全国淡水总量的70%、全球淡水总量的0.4%，经额吉音河（色楞格河支流）与俄罗斯贝加尔湖存在水文关联，湖区设有库苏古尔国家公园（Britannica WebSearch 2026）",
 };
 
 const TERKHIIN_TSAGAAN_LAKE: TerrainEntry = {
@@ -12124,7 +12124,7 @@ const BAYANZAG: TerrainEntry = {
   landmark: { name: "巴彦扎格红崖", lon: 103.75, lat: 44.13, elevation: 1250, kind: "escarpment" },
   bbox: [103.65, 44.05, 103.85, 44.20],
   label: { lon: 103.75, lat: 44.22, rotation: 0 },
-  source: "巴彦扎格：南戈壁省一处红色砂岩侵蚀崖壁，因岩石在夕照下呈火焰般的橙红色而得名“燃烧的悬崖”；1922年美国自然历史博物馆罗伊·查普曼·安德鲁斯考察队在此首次发现恐龙蛋化石，是戈壁古尔班赛罕国家公园的组成部分（Wikipedia/topasiatour.com WebSearch 2026）",
+  source: "巴彦扎格：南戈壁省一处红色砂岩侵蚀崖壁，因岩石在夕照下呈火焰般的橙红色而得名“燃烧的悬崖”；1923年（考察始于1922年）美国自然历史博物馆罗伊·查普曼·安德鲁斯考察队在此首次发现恐龙蛋化石（核实 2026-09-11，AMNH），是戈壁古尔班赛罕国家公园的组成部分（Wikipedia/topasiatour.com WebSearch 2026）",
 };
 
 const GURVAN_SAIKHAN: TerrainEntry = {
@@ -12210,7 +12210,7 @@ const SELENGE_RIVER: TerrainEntry = {
   axis: [[101.0, 49.0], [106.5, 50.35]],
   viewScale: 1.3,
   label: { lon: 103.5, lat: 49.6, rotation: -25 },
-  source: "色楞格河：蒙古境内水量最大的河流，由伊德尔河与穆伦河（德勒格尔河）在中戈壁—布尔干省境内汇流而成，向东北流经苏赫巴托尔市后进入俄罗斯，最终注入贝加尔湖，是贝加尔湖最主要的入湖水源（Wikipedia/worldatlas.com WebSearch 2026）",
+  source: "色楞格河：蒙古境内水量最大的河流，由伊德尔河与德勒格尔河在库苏古尔省特木尔布拉格附近汇流而成（核实 2026-09-11），向东北流经苏赫巴托尔市后进入俄罗斯，最终注入贝加尔湖，是贝加尔湖最主要的入湖水源（Wikipedia/worldatlas.com WebSearch 2026）",
 };
 
 const TUUL_RIVER: TerrainEntry = {
@@ -12818,7 +12818,7 @@ const MOUNT_KINABALU: TerrainEntry = {
   bbox: [116.45, 5.90, 116.70, 6.20],
   viewScale: 1.3,
   label: { lon: 116.55, lat: 5.85, rotation: 0 },
-  source: "京那巴鲁山：马来西亚与马来群岛最高峰，海拔4095米，是花岗岩侵入体，约1500万年前形成，为克罗克山脉的一部分；2000年京那巴鲁公园列入UNESCO世界遗产名录，是东南亚植物多样性核心地区之一，园内植物物种约5000至6000种（Britannica/UNESCO WebSearch 2026）",
+  source: "京那巴鲁山：马来西亚与马来群岛最高峰，海拔4095米，是侵入克罗克山脉沉积岩层的一座独立花岗岩体，锆石铀铅测年约785万至722万年前（核实 2026-09-11：原写的约1500万年前、为克罗克山脉的一部分均不成立）；2000年京那巴鲁公园列入UNESCO世界遗产名录，是东南亚植物多样性核心地区之一，园内植物物种约5000至6000种（Britannica/UNESCO WebSearch 2026）",
 };
 
 const CROCKER_RANGE: TerrainEntry = {
@@ -12900,7 +12900,7 @@ const NIAH_CAVES: TerrainEntry = {
   landmark: { name: "大洞（尼亚国家公园）", lon: 113.77, lat: 3.825, elevation: 394, kind: "gorge" },
   bbox: [113.72, 3.78, 113.82, 3.87],
   label: { lon: 113.77, lat: 3.88, rotation: 0 },
-  source: "尼亚洞穴：砂拉越海岸平原苏比斯山石灰岩地块北缘的洞穴群，石灰岩层形成于该区域曾没于海底的古地质年代；大洞洞口高逾60米，洞内考古发现可追溯至约4万年前的人类活动痕迹，部分头骨碎片测定距今约6.5万年，是东南亚已知最早的人类遗迹之一，2024年列入UNESCO世界遗产名录（Wikipedia/nationalgeographic.com WebSearch 2026）",
+  source: "尼亚洞穴：砂拉越海岸平原苏比斯山石灰岩地块北缘的洞穴群，石灰岩层形成于该区域曾没于海底的古地质年代；大洞洞口高逾60米，洞内「深洞头骨」2016年重测为距今约3.7万至4.5万年，另有石器等人类活动证据可追溯至约6.5万年前（核实 2026-09-11：原写的「头骨碎片约6.5万年」把石器年代安到了头骨上），是东南亚已知最早的人类遗迹之一，2024年列入UNESCO世界遗产名录（Wikipedia/nationalgeographic.com WebSearch 2026）",
 };
 
 const MALIAU_BASIN: TerrainEntry = {
@@ -13177,7 +13177,7 @@ const IJEN_CRATER: TerrainEntry = {
   landmark: { name: "伊真火山口湖", lon: 114.2422, lat: -8.0581, elevation: 2386, kind: "peak" },
   bbox: [114.17, -8.12, 114.30, -8.00],
   label: { lon: 114.24, lat: -7.96, rotation: 0 },
-  source: "伊真火山：东爪哇一座硫磺活动强烈的火山，火山口最高处海拔约2799米，湖面所在的火山口边缘约2386米；火山口内是世界最大的强酸性火山口湖，直径约1公里、深约175米，硫磺气体在裂隙处点燃可达600摄氏度，形成“蓝色火焰”奇观——目前全球仅印尼与冰岛两地可见此现象，当地长期有矿工人工采集硫磺块（VolcanoDiscovery/geologyscience.com WebSearch 2026）",
+  source: "伊真火山：东爪哇一座硫磺活动强烈的火山，火山口最高处海拔约2799米，湖面所在的火山口边缘约2386米；火山口内是世界最大的强酸性火山口湖，直径约1公里、深约175米，硫磺气体在裂隙处点燃可达600摄氏度，形成“蓝色火焰”奇观——全球只在伊真与埃塞俄比亚达洛尔火山等极少数地点可见此现象（核实 2026-09-11：原写的冰岛无记录），当地长期有矿工人工采集硫磺块（VolcanoDiscovery/geologyscience.com WebSearch 2026）",
 };
 
 const DIENG_PLATEAU: TerrainEntry = {
@@ -13425,7 +13425,7 @@ const WAKATOBI: TerrainEntry = {
   bbox: [123.35, -5.85, 124.15, -5.05],
   viewScale: 1.4,
   label: { lon: 123.75, lat: -4.99, rotation: 0 },
-  source: "瓦卡托比：位于苏拉威西岛东南端外海的群岛，名称取自旺吉旺吉、卡莱杜帕、托米亚、比农果四座主岛首字母；2002年设立瓦卡托比国家公园，总面积约140万公顷（其中珊瑚礁约90万公顷），拥有25组珊瑚礁群、岸礁与环礁类型齐全，礁体周长逾600公里，记录鱼类942种、珊瑚750种，自2005年起被列入UNESCO世界遗产预备名录，是印度尼西亚境内规模仅次于大堡礁的大型珊瑚礁体系之一（reefresilience.org/nationalparksassociation.org WebSearch 2026）",
+  source: "瓦卡托比：位于苏拉威西岛东南端外海的群岛，名称取自旺吉旺吉、卡莱杜帕、托米亚、比农果四座主岛首字母；2002年设立瓦卡托比国家公园，总面积约140万公顷（其中珊瑚礁约90万公顷），拥有25组珊瑚礁群、岸礁与环礁类型齐全，礁体周长逾600公里，记录鱼类942种（2003年调查；珊瑚种数各方口径差异大，UNESCO MAB 记396种），自2005年起被列入UNESCO世界遗产预备名录（核实 2026-09-11：原写的「印尼境内仅次于大堡礁」逻辑不通、无学术出处，已删）（reefresilience.org/nationalparksassociation.org WebSearch 2026）",
 };
 
 const BANDA_ISLANDS: TerrainEntry = {

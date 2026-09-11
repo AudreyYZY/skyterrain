@@ -13773,6 +13773,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Mongolia ============
   "mongol-altai": {
+    // 全六段 sources: 呼依滕峰 4374 m 为**蒙古国境内最高点**、位于塔王博格达山群跨境山体上 —— ⚠️ 红线自查：正文说明峰在跨境山体上、是蒙古最高点，**未描述边界线如何走、未表述主权、未把中国任何地区与中国并列**；与中国侧 altai 条目对同一山体的高度描述无冲突。三国交界点的具体命名见 issue（来源互相矛盾）。巴彦乌列盖省哈萨克族聚居属定位性事实。核实 2026-09-11
     seeing:
       "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — in the Tavan Bogd massif on the Mongolia–China border, and the Mongolia–Russia–China tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north.",
     formation:
@@ -13787,6 +13788,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tavan Bogd area was historically an important route linking nomadic peoples across Mongolia, Russia and China; it now lies administratively within Bayan-Ölgii Province, home to one of Mongolia's Kazakh communities.",
   },
   "khangai-mountains": {
+    // 全六段 sources: 敖特冈腾格尔峰各口径 4008（现代测量）/ 4021（旧地形图）/ 4031 m（维基），正文「约4021米（4008至4031之间）」已写成区间，准确；鄂尔浑河谷作为突厥/回鹘/蒙古政治中心属已结束的前现代史。核实 2026-09-11，未改动
     seeing:
       "The Khangai Mountains are a major range in central Mongolia; its highest peak, Otgontenger in Zavkhan Province, reaches about 4,021 m (different surveys give figures between 4,008 and 4,031 m) and is the only peak in the range to carry a permanent glacier.",
     formation:
@@ -13801,6 +13803,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Orkhon valley on the Khangai's southern flank was successively the political heartland of the Turkic Khaganate, the Uyghur Khaganate and the Mongol Empire; the range itself also holds an important place in traditional Mongolian belief.",
   },
   "khentii-mountains": {
+    // 全六段 sources: 布尔汗哈勒敦山 2340 m（与 UNESCO 文件配套的常引值）；2015-07-04 以「布尔汗哈勒敦圣山及其周边神圣景观」列入 UNESCO（whc.unesco.org/en/list/1440，1 级）。⚠️ 红线自查：成吉思汗出生/安葬传说属广泛记载的传统信仰，**未作现代民族主义诠释**。核实 2026-09-11，未改动
     seeing:
       "The Khentii Mountains are a range in northeastern Mongolia, source of both the Onon and Kherlen rivers; Burkhan Khaldun within it reaches 2,340 m and was inscribed on the UNESCO World Heritage List in 2015 as \"Great Burkhan Khaldun Mountain and its surrounding sacred landscape.\"",
     formation:
@@ -13815,8 +13818,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Burkhan Khaldun is traditionally held to be both the birthplace and burial site of Genghis Khan, and is the most venerated sacred mountain in traditional Mongolian belief; it was formally inscribed on the UNESCO World Heritage List in 2015.",
   },
   "gobi-altai": {
+    // seeing sources: 伊赫博格德峰 3957 m；**如今无冰川**（The Cryosphere 2023 原文 Ikh Bogd Massif is unglaciated today，1 级），山顶仅 9 月末至次年 4 月中有季节性积雪；末次冰期古冰川约 20–17 ka 消退，保留的是古冰川侵蚀地貌。最近的现代冰川在 350–550 km 外（敖特冈腾格尔、苏台山）。核实 2026-09-11
     seeing:
-      "The Gobi Altai is a transitional range where the Mongol Altai extends southeast into the Gobi desert region, made up of several isolated fault-block massifs; its highest peak, Ikh Bogd, reaches 3,957 m and retains a small glacier at its summit.",
+      "The Gobi Altai is a transitional range where the Mongol Altai extends southeast into the Gobi desert region, made up of several isolated fault-block massifs; its highest peak, Ikh Bogd, reaches 3,957 m, though it carries no glacier today — only seasonal snow on its summit plateau from late September to mid-April.",
     formation:
       "The Gobi Altai formed through fault-block uplift since the Tertiary, with each block massif standing largely independent, separated by Gobi desert basins — a classic landform of the Altai orogenic belt's transition into desert.",
     observation:
@@ -13824,11 +13828,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both the Gobi Altai and the Mongol Altai are extensions of the Altai orogenic belt, but the Gobi Altai is made up of isolated fault-block massifs within a desert transition zone, while the Mongol Altai is a continuous belt of high snow peaks.",
     concept:
-      "The isolated montane ecosystems of the Gobi Altai are a classic sample of the desert \"ecological island\" phenomenon; the glacier retained at its summit contrasts sharply with the surrounding desert, making it an important case for studying arid-region montane ecology.",
+      "The isolated montane ecosystems of the Gobi Altai are a classic sample of the desert \"ecological island\" phenomenon; the landforms left by Ice Age glaciers at its summit contrast sharply with the surrounding desert, making it an important case for studying arid-region montane ecology.",
     history:
       "The Gobi Altai region was historically an important waypoint for nomadic peoples crossing the Gobi desert, its mountain water sources long providing supply for passing caravans and herders.",
   },
   "mongolia-gobi": {
+    // 全六段 sources: 整体约 130 万 km²、按维基主流口径为世界第六大沙漠（另有「亚洲最大、世界第五」一说）；**与中国侧 gobi 条目并排读一致** —— 两边都强调戈壁以砾漠为主、并非连绵沙丘。⚠️ 红线自查：distinguish 段写「与中国境内的戈壁同属一条跨境荒漠带」，是陈述同一地貌带的跨境分布，**未用内外蒙古对举、未作主权或民族评价**。核实 2026-09-11，未改动
     seeing:
       "The Gobi spans southern Mongolia and northern China, covering about 1.3 million km² in total — the sixth-largest desert in the world; within Mongolia it is centred on provinces such as South Gobi and East Gobi, with a surface mostly of gravel desert rather than continuous dunes.",
     formation:
@@ -13843,6 +13848,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gobi was historically an important trade corridor linking the Chinese heartland with the steppe and the Mongolian plateau with Central Asia; the Mongol Empire's post-station system maintained multiple supply points along Gobi routes.",
   },
   "great-lakes-depression": {
+    // 全六段 sources: 面积约 268,309.52 km²（IWA 学术期刊，2 级）；1997 年起为 IGBP 监测全球变暖的站点之一；2003-07-05 乌布苏盆地列入 UNESCO（IUCN 世界遗产展望，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Great Lakes Depression is an endorheic arid basin in western Mongolia, ringed on three sides by the Mongol Altai, the Gobi Altai and the Khangai; it covers about 268,000 km² and contains six large lakes including Uvs Lake.",
     formation:
@@ -13857,6 +13863,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Great Lakes Depression and the surrounding Uvs Nuur Basin were historically important pastureland for nomadic peoples of western Mongolia; in 2003 the Uvs Nuur Basin was inscribed on the UNESCO World Heritage List as a transboundary natural site (see the Uvs Lake entry).",
   },
   "uvs-lake": {
+    // 全六段 sources: 面积约 3350 km²、海拔 759 m、平均水深约 6 m；1997-12-15 设 UNESCO 生物圈保护区、2003-07-05 **俄蒙两国真正共同**以「乌布苏盆地」列入世界遗产、2011 年成立俄蒙联合管理委员会（俄罗斯联合国教科文组织全国委员会，2 级）—— 与卢森堡米内特那种「邻国正在申请被写成共同列入」不同，这一处核实为真正的跨国联合申报。与 khovsgol-lake「最大淡水湖」口径不同、并读不冲突。核实 2026-09-11，未改动
     seeing:
       "Uvs Lake is Mongolia's largest lake by area, covering about 3,350 km² at an elevation of 759 m; it is a shallow, highly saline lake within an endorheic basin, with an average depth of about 6 m.",
     formation:
@@ -13871,6 +13878,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1997 Uvs Lake and the adjacent reserve on the Russian side were each designated UNESCO Biosphere Reserves; in 2003 the two countries jointly inscribed the \"Uvs Nuur Basin\" on the UNESCO World Heritage List, and in 2011 established a joint Russian-Mongolian management commission.",
   },
   "khyargas-lake": {
+    // 全六段 sources: 经运河与哈尔乌苏湖相连、为水系链终端咸水湖属实。⚠️ 面积与海拔为两组数据混用，见 issue。核实 2026-09-11
     seeing:
       "Khyargas Lake is a saline lake within Mongolia's Great Lakes Depression, covering about 1,481 km² at an elevation of about 1,029 m — the terminal lake of the depression's saline-and-freshwater lake chain.",
     formation:
@@ -13895,12 +13903,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Khar-Us Lake and Khyargas Lake belong to the same Great Lakes Depression lake chain, but Khar-Us is the uppermost freshwater lake in the system, while Khyargas is the saline terminal lake downstream.",
     concept:
       "As the uppermost freshwater source of the lake chain, Khar-Us Lake's water volume and quality directly affect the ecological condition of downstream Khar, Airag and Khyargas lakes, making it a key node for studying hydrological linkages in stepped lake systems.",
+    // history sources: 面积约 1578 km²、海拔约 1157 m；1999 年列入拉姆萨尔名录；蒙古现共 11 处拉姆萨尔湿地（会增长的计数，下轮复核）—— 原写的「四处之一」过期且从未准确。核实 2026-09-11
     history:
-      "In 1999 Khar-Us Lake was inscribed on the Ramsar List of Wetlands of International Importance, one of four Ramsar sites in Mongolia, and has long provided habitat for migratory birds and fisheries.",
+      "In 1999 Khar-Us Lake was inscribed on the Ramsar List of Wetlands of International Importance, one of 11 Ramsar sites Mongolia has as of 2026, and has long provided habitat for migratory birds and fisheries.",
   },
   "khovsgol-lake": {
+    // seeing sources: 面积各来源 2620（Britannica 单一来源）/ 2760–2770 km²（多方交叉），写区间；最大水深 267 m、蓄水约占全国淡水七成两项一致。与 uvs-lake「蒙古面积最大的湖（咸水）」口径不同、并读不冲突；与航线解说 ubn-mxv「蒙古最大淡水湖」一致。核实 2026-09-11
     seeing:
-      "Lake Khövsgöl is Mongolia's largest freshwater lake, covering about 2,620 km² with a maximum depth of 267 m, and holds roughly 70% of the country's total freshwater.",
+      "Lake Khövsgöl is Mongolia's largest freshwater lake, covering between about 2,600 and 2,770 km² depending on the survey with a maximum depth of 267 m, and holds roughly 70% of the country's total freshwater.",
     formation:
       "Lake Khövsgöl is a tectonic rift lake, its basin having subsided along a crustal fault at the southern foot of the East Sayan range; its water is exceptionally clear, making it an important sample for studying the hydrology and water quality of rift lakes.",
     observation:
@@ -13913,6 +13923,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Khövsgöl National Park surrounds the lake, which has long served as a traditional fishing and grazing area for local Tuvan and Darkhad nomadic communities.",
   },
   "terkhiin-tsagaan-lake": {
+    // 全六段 sources: 长约 16 km、平均水深 20 m、海拔 2060 m（维基）；宽度维基给 4–10 km，正文「6至10公里」落在区间内。与 khorgo-volcano 的熔岩堰塞成因互相印证。核实 2026-09-11，未改动
     seeing:
       "Terkhiin Tsagaan Lake lies at the northern foot of the Khangai, about 16 km long, 6–10 km wide, with an average depth of 20 m at an elevation of 2,060 m — a freshwater lake dammed by volcanic lava.",
     formation:
@@ -13927,6 +13938,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake and the neighbouring Khorgo volcano are jointly protected as Khorgo-Terkhiin Tsagaan Nuur National Park, an important nature reserve and tourist destination in central Mongolia.",
   },
   "khorgo-volcano": {
+    // 全六段 sources: 海拔 2210 m、约 8000 年前停止喷发、火山口直径约 200 m、深 70–80 m（主流口径；另有 500 m 直径的地貌测量值，属方法差异）。核实 2026-09-11，未改动
     seeing:
       "Khorgo is an extinct volcano at 2,210 m elevation that stopped erupting about 8,000 years ago; its crater is about 200 m in diameter and 70–80 m deep, with larch forest covering its northern slope.",
     formation:
@@ -13941,6 +13953,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Khorgo and its neighbouring lake are jointly protected as a national park; local herders have long held traditional knowledge and oral stories about this volcanic landscape.",
   },
   "khongoryn-els": {
+    // 全六段 sources: 又称杜特芒罕，绵延约 100 km、最高沙丘约 300 m（多方一致）。沙丘是会动的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Khongoryn Els (also called Duut Mankhan, popularly known as the \"Singing Dunes\") is a dune belt within Gobi Gurvansaikhan National Park, stretching over 100 km with dunes reaching up to about 300 m in height.",
     formation:
@@ -13965,10 +13978,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Bayanzag and Khongoryn Els lie within Gobi Gurvansaikhan National Park, but Bayanzag is a red erosional cliff formed of Cretaceous sedimentary sandstone, while Khongoryn Els is an aeolian dune field.",
     concept:
       "Bayanzag is the site of the first-ever discovery of fossilized dinosaur eggs in the history of paleontology, making it significant for studying Cretaceous dinosaur reproductive behaviour and the ancient environmental history of the Gobi region.",
+    // history sources: 恐龙蛋化石发现于 1923-07-13（队员 George Olsen 报告），1922 年是中亚考察（1922–1925）的启动年（AMNH 官方，1 级）。核实 2026-09-11
     history:
-      "In 1922 the Central Asiatic Expeditions, led by Roy Chapman Andrews of the American Museum of Natural History, made the first discovery of dinosaur egg fossils here, establishing Bayanzag as a landmark site in international paleontology.",
+      "In 1923 the Central Asiatic Expeditions (under way since 1922), led by Roy Chapman Andrews of the American Museum of Natural History, made the first discovery of dinosaur egg fossils here, establishing Bayanzag as a landmark site in international paleontology.",
   },
   "gurvan-saikhan": {
+    // 全六段 sources: 中赛罕山最高峰 2825 m；戈壁古尔班赛罕国家公园约 2.7 万 km²，为蒙古面积最大的国家公园；与航线解说 ubn-dlz 的描述一致。核实 2026-09-11，未改动
     seeing:
       "The Gurvan Saikhan Mountains (\"Three Beauties\") comprise three parallel ranges — Baruun, Dund and Zuun Saikhany Nuruu; their highest peak, in the Dund (Middle) range, reaches 2,825 m, forming the core of Gobi Gurvansaikhan National Park, Mongolia's largest.",
     formation:
@@ -13983,6 +13998,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gurvan Saikhan region has historically served as traditional summer pastureland for nomadic peoples of southern Mongolia; it is today Mongolia's largest national park and a core destination for Gobi tourism.",
   },
   "yolyn-am": {
+    // 全六段 sources: 半永久冰场、现代因气候变化多在 9 月前融化 —— 正文未夸大为「永不融化」；「鹰谷」得名属实。⚠️ 峡谷长度「约8公里」无单一权威来源，见 issue。核实 2026-09-11
     seeing:
       "Yolyn Am is a narrow, deep gorge within the Gurvan Saikhan Mountains, about 8 km long, that holds a semi-permanent ice field year-round, in some years persisting into early summer before melting.",
     formation:
@@ -13997,6 +14013,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The gorge takes its name from the lammergeier (\"yol\" in Mongolian) that inhabits it, and is also known as the Valley of the Eagles or Ice Valley; it is one of the signature landscapes of Gobi Gurvansaikhan National Park and has long been a habitat shared by local herders and wildlife.",
   },
   "orkhon-valley": {
+    // 全六段 sources: 121,967 ha（UNESCO 官方，正文「约12.2万公顷」一致）；2004 年以「鄂尔浑河谷文化景观」列入；哈拉和林为窝阔台所建、额尔德尼召 16 世纪建立。⚠️ 红线：只写已结束的前现代史。核实 2026-09-11，未改动
     seeing:
       "The Orkhon Valley is a belt of pastureland and archaeological sites covering about 122,000 ha along both banks of the Orkhon River in Övörkhangai Province, including the 13th–14th century Mongol Empire capital of Karakorum.",
     formation:
@@ -14011,6 +14028,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Orkhon Valley was successively the political centre of the Turkic Khaganate, the Uyghur Khaganate and the Mongol Empire; Karakorum was the Mongol Empire capital founded by Ögedei Khan, son of Genghis Khan, while Erdene Zuu, built in the 16th century, was Mongolia's first Tibetan Buddhist monastery. The valley was inscribed on the UNESCO World Heritage List in 2004 as the \"Orkhon Valley Cultural Landscape.\"",
   },
   "orkhon-waterfall": {
+    // 全六段 sources: 落差各口径 16 / 20 / 24 / 27 m，正文已写成「16至27米之间」区间；「蒙古境内水量最大的瀑布」经蒙古国家通讯社 Montsame（2 级）确认，**与「最高的瀑布」（Arsai，落差约 70 m 但水量小）是两个口径，正文没有混淆**。核实 2026-09-11，未改动
     seeing:
       "The Orkhon Waterfall (also called Ulaan Tsutgalan) formed where the Orkhon River crosses a layer of ancient volcanic rock at the southern foot of the Khangai; reported heights range from 16 to 27 m across sources, and it is Mongolia's highest-volume waterfall.",
     formation:
@@ -14025,6 +14043,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around the Orkhon Waterfall has historically been a traditional nomadic route for peoples at the southern foot of the Khangai, and is today an important natural landmark within the Orkhon Valley Cultural Landscape.",
   },
   "dariganga-volcanic-field": {
+    // 全六段 sources: 逾 200 座渣锥、覆盖约 1.4 万 km²、最高点希林博格德火山 1778 m、火山口直径约 2 km、深逾 300 m（Smithsonian GVP，1 级）；阿拉坦敖包 1913 年为地方神山、2004 年定为国家祭祀山，属传统信仰史实。核实 2026-09-11，未改动
     seeing:
       "The Dariganga Volcanic Field is a Quaternary volcanic field in Sükhbaatar Province, southeastern Mongolia, scattered with over 200 scoria cones and extensive lava flows across an area of about 14,000 km²; its highest point, Shiliin Bogd, reaches 1,778 m.",
     formation:
@@ -14039,10 +14058,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The volcanic field's area has historically been the traditional homeland of the Dariganga Mongol subgroup; Altan Ovoo (Golden Ovoo) within it has been venerated as a local sacred mountain since 1913 and was elevated to a state-worshipped mountain in 2004, while Shiliin Bogd has traditionally been a pilgrimage site for Mongolian men.",
   },
   "selenge-river": {
+    // seeing sources: 两条源流为伊德尔河与**德勒格尔河（Delgermörön）**，汇流点在**库苏古尔省特木尔布拉格**（Ider river 条目原文 the confluence with the Delgermörön is in Tömörbulag）—— 原文 seeing 段写成「穆伦河」、formation 段中文写「中戈壁—布尔干省」、英文写「Bulgan Province」，中英两侧给了两个不同且都不对的省份。航线解说 ubn-mxv 本来就写对了「德勒格尔河」。核实 2026-09-11
     seeing:
-      "The Selenge River is Mongolia's highest-volume river, formed by the confluence of the Ider and Muren rivers; it flows northeast through Sükhbaatar city before crossing into Russia and eventually draining into Lake Baikal.",
+      "The Selenge River is Mongolia's highest-volume river, formed by the confluence of the Ider and Delgermörön rivers; it flows northeast through Sükhbaatar city before crossing into Russia and eventually draining into Lake Baikal.",
     formation:
-      "The Selenge's headwater tributaries rise separately in the Khangai Mountains and the mountains of northern Mongolia; after the two join in Bulgan Province, the river follows a tectonic depression trending northeast, its long-term erosion and sediment transport shaping a broad valley landform.",
+      "The Selenge's headwater tributaries rise separately in the Khangai Mountains and the mountains of northern Mongolia; after the two join at Tömörbulag in Khövsgöl Province, the river follows a tectonic depression trending northeast, its long-term erosion and sediment transport shaping a broad valley landform.",
     observation:
       "From the air, the Selenge shows a wide, high-volume channel interweaving with surrounding tributaries into a fan-shaped drainage network, its valley widening and flattening as it approaches the border on its way north-east out of the country.",
     distinguish:
@@ -14053,6 +14073,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Selenge valley has historically been an important trade corridor between Mongolia and Russia; Sükhbaatar city, near the Mongolia-Russia border crossing, has developed into an important rail hub in northern Mongolia.",
   },
   "tuul-river": {
+    // 全六段 sources: 全长 882.8 km、流域约 49,840 km²（维基）；乌兰巴托 2024 年约 175.15 万人、全国约 347.55 万，占比约 50.4%，正文「全国近半人口」成立。核实 2026-09-11，未改动
     seeing:
       "The Tuul River is 882.8 km long with a drainage area of about 49,840 km²; it rises in the Khentii Mountains and flows southwest through the Mongolian capital Ulaanbaatar before joining the Orkhon River.",
     formation:
@@ -14067,6 +14088,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tuul valley has been Mongolia's political and cultural centre since the city of Urga (Ulaanbaatar's earlier name) was founded there in the 17th century, the river long providing water for daily life and irrigation as the nomadic settlement transitioned into a fixed city.",
   },
   "kherlen-river": {
+    // 全六段 sources: 全长 1254 km，经温都尔汗、乔巴山后进入中国境内并汇入呼伦湖水系（呼伦湖主要入湖水源之一）。⚠️ 红线自查：只陈述水系流向与终点，**未描述边界线**。核实 2026-09-11，未改动
     seeing:
       "The Kherlen River is 1,254 km long, one of the longest rivers in Mongolia; it rises in the Khentii Mountains and flows southeast through Öndörkhaan and Choibalsan before crossing into China's Inner Mongolia.",
     formation:
@@ -14081,6 +14103,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kherlen valley was an important area of activity before and during the rise of the Mongol Empire; Öndörkhaan on its banks (formerly the seat of the Setsen Khan) is an important historic town in eastern Mongolia.",
   },
   "onon-river": {
+    // 全六段 sources: 全长 1032 km、流域约 96,200 km²、源出肯特山、向东北流入俄罗斯外贝加尔边疆区（维基）。达达勒成吉思汗出生地传说属传统史实。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Onon River is 1,032 km long with a drainage basin of about 96,200 km²; it rises in the Khentii Mountains and flows northeast into Russia's Zabaykalsky Krai, and the Dadal area on its banks is traditionally held to be the birthplace of Genghis Khan.",
     formation:
@@ -14095,6 +14118,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Dadal area on the Onon's banks is traditionally held to be the birthplace of Genghis Khan, giving the region a special place in Mongolian history and traditional belief; the sacred Khentii peak of Burkhan Khaldun also lies within the Onon's upper basin.",
   },
   "eastern-steppe": {
+    // 全六段 sources: 达乌尔草原生态区逾 100 万 km²；可见世界 13 种鹤中的 6 种（白枕鹤、蓑羽鹤、灰鹤、丹顶鹤繁殖，白鹤、白头鹤过境）；蒙古达乌尔严格保护区 1992 年设立；「达乌里亚景观」2017-07-07 作为蒙俄跨境系列遗产列入 UNESCO（whc.unesco.org/en/list/1448，1 级）。跨境表述未涉中国、未描述边界。核实 2026-09-11，未改动
     seeing:
       "The Eastern Steppe is the Mongolian portion of the Daurian steppe ecosystem, which as a whole covers over 1 million km² spanning eastern Mongolia, Siberian Russia and northeastern China.",
     formation:
@@ -14109,6 +14133,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Mongol Daguur Strictly Protected Area was established in 1992, and in 2017 the transboundary \"Landscapes of Dauria\" (shared with Russia) was inscribed on the UNESCO World Heritage List; historically this steppe has long served as traditional pastureland for nomadic peoples of eastern Mongolia.",
   },
   "khustain-nuruu": {
+    // 全六段 sources: 呼斯泰国家公园 1993 年设立、面积约 50,600 ha（官方网站，1 级；另有个别来源误传 90,000 ha）、距乌兰巴托约 90–100 km；1993 年荷兰普氏野马基金会启动野放，现蒙古三处保护区逾 800 匹野放个体。核实 2026-09-11，未改动
     seeing:
       "Khustain Nuruu is a range of rolling hills in Töv Province, about 100 km from Ulaanbaatar; Khustain Nuruu National Park was established here in 1993, covering about 50,600 ha.",
     formation:
@@ -14123,6 +14148,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1993 the Dutch Przewalski's Horse Foundation and the Mongolian Association for Conservation of Nature and Environment launched a reintroduction project, returning takhi — previously surviving only in captive populations — to Khustain Nuruu; today more than 800 free-ranging individuals live across three protected areas in Mongolia.",
   },
   "tsagaan-suvarga": {
+    // 全六段 sources: 崖壁高各来源 30–60 m（另有 200 m 离群值），正文「逾60米」取区间上限；长约 400 m；古海洋沉积、富含海洋化石。核实 2026-09-11，未改动
     seeing:
       "Tsagaan Suvarga (the \"White Stupa\") is a limestone-and-clay erosional cliff in Ulziit District, Dundgovi Province, over 60 m tall at its highest point and extending about 400 m in length.",
     formation:
@@ -14628,6 +14654,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Malaysia ============
   "titiwangsa-mountains": {
+    // 全六段 sources: 长约 480 km；最高峰哥打峰（Gunung Korbu）2183 m 为半岛第二高峰（仅比大汉山 2187 m 低 4 m）；主脉花岗岩为晚三叠—早侏罗世（约 200–230 Ma）侵入，属中生代。核实 2026-09-11，未改动
     seeing:
       "The Titiwangsa Mountains form the backbone of the Malay Peninsula, running northwest to southeast for about 480 km — the longest and most contiguous range on the peninsula; its highest peak, Mount Korbu, reaches 2,183 m, the peninsula's second-highest point.",
     formation:
@@ -14642,6 +14669,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Hill-station resorts along the range such as Cameron Highlands and the Genting plateau were developed during British colonial rule; the mountains remain an important water-catchment and ecological conservation area for Malaysia today.",
   },
   "gunung-tahan": {
+    // 全六段 sources: 2187 m 为马来半岛最高峰，位于彭亨侧、与吉兰丹接壤；大汉山国家公园跨彭亨 / 吉兰丹 / 登嘉楼三州。与 titiwangsa-mountains「半岛第二高峰」并读自洽。核实 2026-09-11，未改动
     seeing:
       "Gunung Tahan (Mount Tahan) is the highest peak on the Malay Peninsula, at 2,187 m, on the border between Pahang and Kelantan, and is the central feature of Taman Negara National Park, which spans a broad tract of lowland tropical rainforest at the meeting point of three states.",
     formation:
@@ -14656,6 +14684,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Taman Negara has long been a traditional area of activity for the Orang Asli, the indigenous peoples of the Malay Peninsula, and is today an important ecotourism and mountaineering destination in Malaysia.",
   },
   "cameron-highlands": {
+    // 全六段 sources: 威廉·金马仑 1885 年受委托勘测彭亨—霹雳边界时发现该高原（约 1800 m 处的平台）；1929 年 J.A. Russell 建 BOH 茶园，为金马仑高原第一座茶园。核实 2026-09-11，未改动
     seeing:
       "Cameron Highlands is a cool plateau at 1,100–1,800 m elevation within the Titiwangsa range, named after William Cameron who surveyed the area in 1885, and is today an important highland tea-growing region of Malaysia.",
     formation:
@@ -14670,10 +14699,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "British colonial authorities developed Cameron Highlands as a hill-station resort in the early 20th century; after the first tea estate, BOH, was established in 1929, the area gradually grew into an important highland tea-growing region of Malaysia.",
   },
   "mount-kinabalu": {
+    // seeing sources: 4095 m 为马来西亚与马来群岛最高峰；2000 年京那巴鲁公园列入 UNESCO。花岗岩体是**侵入**克罗克组沉积岩的独立岩体（不是克罗克山脉的一部分），锆石 U-Pb SHRIMP 测年定为约 7.85–7.22 Ma、为东南亚已知最年轻的花岗岩侵入体（Cottam et al. 2010，J. Geol. Soc. London，1 级；IUGS 地质遗产名录，1 级）—— 原写的「约1500万年前」是较早期的粗略估算。distinguish 段「独立的花岗岩高峰」本来就对，与 seeing 段原文直接矛盾。核实 2026-09-11
     seeing:
-      "Mount Kinabalu is the highest peak in Malaysia and the Malay Archipelago, at 4,095 m, a granite intrusion forming part of the Crocker Range; Kinabalu Park was inscribed on the UNESCO World Heritage List in 2000.",
+      "Mount Kinabalu is the highest peak in Malaysia and the Malay Archipelago, at 4,095 m, a standalone granite pluton that intrudes the older sedimentary rock of the Crocker Range; Kinabalu Park was inscribed on the UNESCO World Heritage List in 2000.",
     formation:
-      "Mount Kinabalu formed about 15 million years ago as magma from deep within the crust intruded and cooled into a granite body; sustained tectonic uplift together with glacial-period erosion has since shaped today's steep granite peak with its bare summit rock.",
+      "Mount Kinabalu's granite crystallised between about 7.85 and 7.22 million years ago, as U-Pb zircon dating shows, when magma from deep within the crust intruded and cooled into what is now Southeast Asia's youngest known granite pluton; sustained tectonic uplift together with glacial-period erosion has since shaped today's steep granite peak with its bare summit rock.",
     observation:
       "From the air, Mount Kinabalu's bare grey-white granite summit rises above a sea of cloud, its slopes showing a sharp vertical vegetation zonation from dense tropical rainforest to montane cloud forest, its outline striking against the Bornean skyline.",
     distinguish:
@@ -14684,20 +14714,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In the traditional belief of the local Kadazan-Dusun people, Mount Kinabalu is regarded as the resting place of ancestral spirits, and its name is said to mean \"the revered place of the dead\" or \"home of the spirits\"; it was formally inscribed on the UNESCO World Heritage List in 2000.",
   },
   "crocker-range": {
+    // seeing sources: 主体为克罗克组（始新世—早中新世深海浊积砂岩与泥岩，MDPI 1 级），京那巴鲁花岗岩为侵入其中的独立年轻岩体 —— 原文把沉积岩山系写成了花岗岩体的组成部分；两保护区相距约 10 km、为两种不同的 UNESCO 认定（本条 2014 年 MAB 生物圈保护区、约 350,584 ha；京那巴鲁公园为世界遗产）。核实 2026-09-11
     seeing:
-      "The Crocker Range is a north-south trending chain in western Sabah about 120 km long, with no single dominant peak, elevations ranging from 6 to 2,076 m, and forms part of the same granite massif system as Mount Kinabalu.",
+      "The Crocker Range is a north-south trending chain in western Sabah about 120 km long, with no single dominant peak, elevations ranging from 6 to 2,076 m, built mainly of deep-marine turbidite sandstone and mudstone of the Crocker Formation, into which the separate, younger granite pluton of Mount Kinabalu has intruded.",
     formation:
       "The Crocker Range formed through tectonic uplift since the Paleogene; long-term weathering and erosion have shaped today's rolling, mid-elevation terrain without a standout summit, in contrast with the isolated, towering peak of Mount Kinabalu nearby.",
     observation:
       "From the air, the Crocker Range appears as a continuous, rolling ridge of deep green, tropical rainforest at lower elevations giving way to montane cloud forest higher up, its terrain relatively gentle with no sharp peaks.",
     distinguish:
-      "The Crocker Range and Mount Kinabalu are geographically adjacent and part of the same biosphere-reserve system, but the Crocker Range is a continuous chain with no dominant peak, while Mount Kinabalu is a single, isolated high summit.",
+      "The Crocker Range and Mount Kinabalu lie about 10 km apart under two different UNESCO designations — a biosphere reserve and a World Heritage site respectively — but the Crocker Range is a continuous chain with no dominant peak, while Mount Kinabalu is a single, isolated high summit.",
     concept:
       "The Crocker Range Biosphere Reserve covers 350,000 ha, one of the largest protected areas on the island of Borneo, making it an important sample for studying the altitudinal vegetation zonation of Sabah's mid-elevation tropical mountains.",
     history:
       "The Crocker Range Biosphere Reserve was inscribed under UNESCO's Man and the Biosphere Programme in 2014, and has long been a traditional area of activity for Dusun and other indigenous communities of inland Sabah.",
   },
   "kelabit-highlands": {
+    // 全六段 sources: 巴里奥一带海拔约 1000–1200 m；穆鲁德山 2423 m；格拉比族约 6800 人、13 个村落（其中 7 个在巴里奥一带），正文「十余个村落」吻合。核实 2026-09-11，未改动
     seeing:
       "The Kelabit Highlands are an inland plateau in the northernmost part of Sarawak's Miri Division, centred on the \"Plain of Bah\" around Bario village, at 1,000–1,200 m elevation and extending about 30 km north-south.",
     formation:
@@ -14712,6 +14744,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kelabit Highlands are the traditional homeland of the Kelabit people of Sarawak, numbering about 6,800, spread across more than a dozen villages around Bario, long maintaining a distinctive tradition of highland rice farming combined with hunting and gathering.",
   },
   "gua-tempurung": {
+    // 全六段 sources: 约 4 亿年的石灰岩、全长约 4.5 km、暗河约 1.6 km、五个洞厅 —— 多方一致。洞穴已测长度是会增长的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Gua Tempurung is a limestone cave in Gopeng, Perak, dating back about 400 million years; it runs about 4.5 km in length with a 1.6-km underground river inside, one of the largest surviving cave systems on the Malay Peninsula.",
     formation:
@@ -14726,6 +14759,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Gua Tempurung takes its name — \"coconut-shell cave\" — from the shape of its surrounding limestone hills; it is today an important geological tourism site in Perak, with boardwalks allowing visitors to explore its different caverns.",
   },
   "batu-caves": {
+    // 全六段 sources: 325 m 志留纪石灰岩孤丘（约 4 亿年）；三叠纪约 2 亿年前抬升褶皱；1891 年 K. Thamboosamy Pillay 建庙、1892 年首届大宝森节，属「19世纪末」。⚠️ 红线自查：只写宗教活动的客观史实，**未作宗教评价或族群比较**。核实 2026-09-11，未改动
     seeing:
       "Batu Caves is a 325-m limestone hill and its cave system in Gombak, Selangor, its bedrock Silurian limestone dating back about 400 million years, one of Malaysia's best-known cave landforms.",
     formation:
@@ -14740,6 +14774,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A Hindu shrine has stood within Batu Caves since the late 19th century, and the site draws large numbers of devotees each year during the Thaipusam festival, making it a well-known place where natural and cultural landscape intersect in Malaysia.",
   },
   "gunung-mulu-np": {
+    // 全六段 sources: 山体约 2376–2377 m；已探明洞穴逾 295 km（**会增长的量**，下轮复核）；2000 年列入 UNESCO；砂拉越洞厅 600×415×80 m 为按面积计世界已知最大洞厅；鹿洞准确说是「世界第二大洞穴通道」（1991 年被越南韩松洞超越前曾为第一），正文简化为「世界第二大洞穴」可接受；尖峰石林高 45–50 m。核实 2026-09-11，未改动
     seeing:
       "Gunung Mulu National Park is the most intensively studied tropical karst area in the world, known for the sandstone pinnacles of 2,377-m Gunung Mulu and an explored cave system of more than 295 km, inscribed on the UNESCO World Heritage List in 2000.",
     formation:
@@ -14762,12 +14797,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Gunong Subis limestone massif containing the Niah Caves rises out of the mixed dipterocarp forest of Sarawak's coastal plain, the mouth of the Great Cave set into the massif like a vast rock breach, its scale dwarfing the terrain around it.",
     distinguish:
       "Both the Niah Caves and Gunung Mulu National Park are limestone karst landforms in Sarawak, but Niah is known for its ancient human archaeological site, while Gunung Mulu is known for its Pinnacles and the world's largest cave chamber.",
+    // concept sources: 深洞头骨 1958 年由 Tom Harrisson 发现，2016 年铀系法等重测为约 37–45 ka（Frontiers，1 级）；「6.5 万年」属于 2018 年公布的 Gua Dagang 石器，2025 年另有一颗约 52–55 ka、可能属古老型人类的牙齿（PLOS ONE，1 级）—— 原文把石器年代安到了「头骨碎片」上。大洞洞口约 61 m；2024-07 第 46 届世界遗产大会列入 UNESCO。核实 2026-09-11
     concept:
-      "Archaeological finds within the Niah Caves document human activity dating back about 40,000 years, with some skull fragments dated to about 65,000 years old, making it a key site for studying early human migration into and adaptation to Southeast Asia's tropical environment.",
+      "The famous Deep Skull from the Niah Caves, first dated to about 40,000 years, was re-dated in 2016 to roughly 37,000-45,000 years old, while separate stone-tool evidence of human activity at the caves goes back about 65,000 years, making it a key site for studying early human migration into and adaptation to Southeast Asia's tropical environment.",
     history:
       "The Niah Caves were first scientifically recorded in 1880; major archaeological excavations took place in the 1950s–60s under Tom Harrisson, curator of the Sarawak Museum, and his wife Barbara, and the site was formally inscribed on the UNESCO World Heritage List in 2024.",
   },
   "maliau-basin": {
+    // 全六段 sources: 直径约 25 km、外缘陡坡高差 300–1600 m；约 15–9 Ma 三角洲沉积、约 5 Ma 整体抬升后中部下陷成碟状盆地，**非火山口**（马来西亚地质学会期刊，1 级）。核实 2026-09-11，未改动
     seeing:
       "Maliau Basin, known as \"Sabah's Lost World,\" is a near-circular, saucer-shaped basin in interior Sabah about 25 km in diameter, its rim formed by steep cliffs 300–1,600 m high.",
     formation:
@@ -14782,6 +14819,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Maliau Basin earned the nickname \"Sabah's Lost World\" for its rugged terrain and long isolation from the outside world; it was not systematically surveyed by science until the late 20th century, and is today an important nature reserve in Sabah.",
   },
   "danum-valley": {
+    // 全六段 sources: 面积 438 km²、森林历史约 1.3 亿年；1968 年起列为一级保护林、1980 年设保护区、1986 年设研究中心。核实 2026-09-11，未改动
     seeing:
       "The Danum Valley Conservation Area is a 438-km² tract of largely undisturbed lowland dipterocarp forest in central Sabah, with a forest history of about 130 million years, making it one of the oldest surviving rainforests in the world.",
     formation:
@@ -14796,6 +14834,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Danum Valley Conservation Area was established in 1980 and has been designated a Class 1 (Protection) Forest Reserve under Sabah's forestry enactment since 1968; the Danum Valley Studies Centre, founded in 1986, is a globally recognised centre for tropical rainforest research and education.",
   },
   "endau-rompin": {
+    // 全六段 sources: 48,905 ha、横跨柔佛与彭亨，为半岛南部最大保护区；岩层约 2.48 亿年；1993 年正式设立（东盟遗产公园资料，2 级）。核实 2026-09-11，未改动
     seeing:
       "Endau-Rompin National Park straddles Johor and Pahang and is the largest surviving protected area in the southern half of the Malay Peninsula, covering 48,900 ha of rugged hills, granite outcrops, river valleys and waterfalls.",
     formation:
@@ -14810,6 +14849,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Endau-Rompin National Park was formally established in 1993 and is an important habitat for endangered flagship species such as the Malayan tiger and Malayan tapir; it has long been the traditional territory of indigenous communities in Johor and Pahang.",
   },
   "langkawi-geopark": {
+    // 全六段 sources: 2007-06-01 获认定，为全球第 52 个、**东南亚首个** UNESCO 世界地质公园 —— 本条自身就是东南亚首例，不存在借用他例年份的问题；地质记录逾 5.5 亿年；由玛琴昌、基林、浮罗浮浮三个地质森林公园组成（unesco.org/en/iggp，1 级）。核实 2026-09-11，未改动
     seeing:
       "Langkawi UNESCO Global Geopark was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years and including Malaysia's most complete Cambrian-to-Permian Paleozoic sedimentary sequence.",
     formation:
@@ -14824,6 +14864,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Langkawi was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, and is today an important destination for geological and ecological tourism in Malaysia.",
   },
   "penang-island": {
+    // 全六段 sources: 升旗山 833 m（2733 ft）；乔治市与马六甲 2008 年联合列入 UNESCO 世界遗产。核实 2026-09-11，未改动
     seeing:
       "Penang Island is a granite island off the northwest coast of the Malay Peninsula, its highest point, Penang Hill, reaching 833 m, with a forested granite hill core surrounded by coastal plains.",
     formation:
@@ -14838,6 +14879,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Penang Hill area has been developed as a hill-station resort since British colonial times; Penang is today an important historical, cultural and tourism city in Malaysia, and George Town's old quarter is inscribed on the UNESCO World Heritage List.",
   },
   "tioman-island": {
+    // 全六段 sources: Gunung Kajang 1038 m，为马来半岛沿海岛屿最高峰；花岗岩为晚白垩世约 80 Ma 侵入、比火山岩晚约 8.8 Ma（马来西亚地质学会期刊，1 级）。核实 2026-09-11，未改动
     seeing:
       "Tioman Island is an igneous island off the coast of Pahang in the South China Sea, its central massif reaching 1,038 m, and a well-known diving and ecotourism destination in Malaysia.",
     formation:
@@ -14852,6 +14894,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Tioman Island has long been a traditional fishing ground for Malay fishermen, and is today a well-known island resort and diving destination on Malaysia's east coast.",
   },
   "perhentian-islands": {
+    // 全六段 sources: 花岗岩小岛、登嘉楼州外海、「停泊补给点」命名由来与通行资料一致；与 redang-island 的对比无冲突。核实 2026-09-11，未改动
     seeing:
       "The Perhentian Islands are a pair of small granite islands (Perhentian Besar and Perhentian Kecil) off the coast of Terengganu in the South China Sea, lined with white sand beaches and coral reefs, a well-known diving and snorkelling destination on the peninsula's east coast.",
     formation:
@@ -14866,6 +14909,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Perhentian Islands take their name from the Malay word for \"stopping place,\" having historically served as a resupply stop for passing trading ships, and are today an important diving and snorkelling destination on Malaysia's east coast.",
   },
   "redang-island": {
+    // 全六段 sources: 花岗岩岛屿、马来西亚海洋公园组成部分；与 perhentian-islands 并读无互相证伪的「最……」表述。核实 2026-09-11，未改动
     seeing:
       "Redang Island is a granite island off the coast of Terengganu in the South China Sea, part of Malaysia's marine park system, with a well-preserved coral reef ecosystem along its coast.",
     formation:
@@ -14880,6 +14924,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Redang Island and its surrounding waters are protected within Malaysia's marine park system, and it is today an important coral reef conservation area and diving destination on the peninsula's east coast.",
   },
   "sipadan-island": {
+    // 全六段 sources: 马来西亚唯一的海洋岛、自约 600 m 深海垂直隆起、记录鱼类逾 400 种。⚠️ 红线自查：正文只写生态与潜水史，**未涉 2002 年国际法院主权裁决**，符合红线。核实 2026-09-11，未改动
     seeing:
       "Sipadan is Malaysia's only oceanic island, lying beyond the continental shelf in the Celebes Sea, its pinnacle rising about 600 m vertically from the seabed, ringed by natural hard coral reef, with more than 400 recorded fish species.",
     formation:
@@ -14894,6 +14939,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sipadan was historically a sea-turtle nesting site and a traditional fishing ground for local fishermen, and became an internationally renowned diving destination in the late 20th century owing to its distinctive underwater landform and ecology.",
   },
   "pahang-river": {
+    // 全六段 sources: 全长 459 km、马来半岛最长河；哲莱河与淡美璐河汇合、流域约 2.9 万 km²、于北根入海。与 rejang-river「马来西亚最长」口径互不证伪。核实 2026-09-11，未改动
     seeing:
       "The Pahang River is the longest river on the Malay Peninsula, running 459 km, formed by the confluence of its two headstreams, the Jelai and the Tembeling, draining a basin of about 29,000 km² before emptying into the South China Sea at Pekan.",
     formation:
@@ -14908,6 +14954,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pahang River has historically been an important waterway for inland tin mining and timber transport on the Malay Peninsula, with towns such as Temerloh and Pekan along its banks long developing around river trade.",
   },
   "kelantan-river": {
+    // 全六段 sources: 248 km，为半岛第四长河（次于彭亨、霹雳、麻坡）；加拉斯河与勒比河汇流、流域约 1.19 万 km²。核实 2026-09-11，未改动
     seeing:
       "The Kelantan River is the fourth-longest river on the Malay Peninsula, running 248 km, formed by the confluence of the Galas and Lebir rivers, draining a basin of about 11,900 km² before flowing north through Kota Bharu to the South China Sea.",
     formation:
@@ -14922,6 +14969,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kelantan valley was historically the political and cultural heartland of the Sultanate of Kelantan; Kota Bharu at its mouth is today the capital of Kelantan state.",
   },
   "perak-river": {
+    // 全六段 sources: 约 400 km，半岛第二长河（仅次于彭亨河）；源出霹雳 / 吉兰丹 / 泰国三方交界的皇家贝伦州立公园，于端洛入马六甲海峡。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Perak River is the second-longest river on the Malay Peninsula, running about 400 km, rising in the Titiwangsa Mountains at the tripoint of Perak, Kelantan and Thailand, and flowing south through Teluk Intan to the Strait of Malacca.",
     formation:
@@ -14936,6 +14984,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Perak River has historically been an important waterway for tin transport on the Malay Peninsula's west coast, with towns such as Ipoh along its banks prospering through tin mining and river trade.",
   },
   "kinabatangan-river": {
+    // 全六段 sources: 约 560 km，马来西亚第二长河；源出克罗克山脉，于山打根东南注入苏禄海；2005 年设野生动物保护区；下游是全球仅两处可见 10 种灵长类共存的地方之一（Britannica，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Kinabatangan River is Malaysia's second-longest river, running about 560 km, rising in the Crocker Range in southwest Sabah and flowing east to empty into the Sulu Sea southeast of Sandakan.",
     formation:
@@ -14950,6 +14999,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2005 the Sabah government gazetted the Kinabatangan Wildlife Sanctuary; it is today one of Borneo's most important wildlife-viewing destinations and has long been a traditional fishing and hunting ground for indigenous communities of inland Sabah.",
   },
   "rejang-river": {
+    // 全六段 sources: 约 563 km，马来西亚最长河流、婆罗洲第七长（Britannica，2 级）；源出伊兰山脉。**与印尼批的卡普阿斯河并排核过**：卡普阿斯（约 1143 km）是「婆罗洲最长」，本条限定为「马来西亚最长」，两条不冲突。核实 2026-09-11，未改动
     seeing:
       "The Rajang River is Malaysia's longest river, running about 563 km, rising in the Iran Mountains of interior Borneo and flowing west into the South China Sea — the seventh-longest river on the island of Borneo.",
     formation:
@@ -14964,6 +15014,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Rajang River has historically been an important waterway for timber and agricultural transport in interior Sarawak, with Sibu, the largest town on its banks, developing into an important commercial centre of Sarawak through river trade.",
   },
   "tasik-chini": {
+    // 全六段 sources: 马来西亚第二大天然淡水湖、12 个相连小湖、约 5085 ha、距关丹约 100 km；2009 年为**马来西亚首个** UNESCO 生物圈保护区（1 级）。生物多样性数字与官方口径量级一致。近年矿业与伐木致生态退化风险有公开报道（SCMP，2 级）。核实 2026-09-11，未改动
     seeing:
       "Tasik Chini (Lake Chini) is Peninsular Malaysia's second-largest natural freshwater lake, made up of 12 interconnected smaller lakes covering about 5,085 ha, about 100 km from Kuantan, recognised by UNESCO in 2009 as Malaysia's first biosphere reserve.",
     formation:
@@ -14978,6 +15029,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Tasik Chini is the ancestral home of the Jakun, an Orang Asli indigenous community of Pahang; local legend holds that an ancient Khmer city lies sunken beneath the lake, guarded by a \"dragon god.\" Recognised by UNESCO in 2009 as Malaysia's first biosphere reserve, the lake's ecosystem has in recent years faced degradation risk from mining and logging activity.",
   },
   "bako-national-park": {
+    // 全六段 sources: 2024-02-13 标志性海蚀柱「眼镜蛇头」因大浪倒塌，经砂拉越林业局证实（1 级）—— 海蚀柱是会消失的地物。formation 段的砂岩地层表述见 issue。核实 2026-09-11
     seeing:
       "Bako National Park is a stretch of coastal sandstone landform in Sarawak, shaped over millions of years of wave erosion into steep cliffs, headlands and white-sand bays, its sea stacks the park's signature feature.",
     formation:
@@ -14993,6 +15045,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Indonesia ============
   "mount-semeru": {
+    // 全六段 sources: 3676 m、爪哇最高峰、喷发节律约每 20–30 分钟（正文「近乎每20分钟」一致）、公园 1982 年设立（GVP，2 级）。火山高度是会变的量，下轮复核 PVMBG。核实 2026-09-11，未改动
     seeing:
       "At 3,676 m, Mount Semeru — locally also called Mahameru — is the highest peak on Java and one of Indonesia's most active volcanoes, venting a cloud of steam and ash roughly every 20 minutes.",
     formation:
@@ -15007,8 +15060,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In Javanese tradition Semeru is regarded as the \"nail of the world,\" believed by legend to have been placed by the gods to stabilise Java; the surrounding Bromo Tengger Semeru National Park was formally established in 1982 and remains the traditional homeland and spiritual centre of the Tengger people.",
   },
   "bromo-tengger-caldera": {
+    // seeing sources: 沙海破火山口约 9×10 km（外层大破火山口约 16 km，正文说的是内层），内有五座火山：Bromo 2329 / Batok 2470 / Kursi 2581 / Watangan 2661 / Widodaren 2650 m；公园 1982 年设立。核实 2026-09-11
     seeing:
-      "The Bromo Tengger caldera is an ancient volcanic depression roughly 10 km across, its floor covered by a fine volcanic \"sand sea\"; within it stand four newer cones including Bromo, whose crater continuously vents white sulphurous smoke.",
+      "The Bromo Tengger caldera is an ancient volcanic depression roughly 10 km across, its floor covered by a fine volcanic \"sand sea\"; within it stand five newer cones including Bromo, whose crater continuously vents white sulphurous smoke.",
     formation:
       "The Tengger caldera formed when a prehistoric giant volcano erupted catastrophically and its summit collapsed; several secondary cones, including Bromo and Batok, subsequently grew inside the caldera floor, producing a layered \"cone-within-caldera\" structure.",
     observation:
@@ -15021,6 +15075,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tengger highlands are the traditional homeland of the Tengger people, who maintain a distinctive blend of Hindu and native Javanese belief; each year during the Kasada festival, offerings are cast into Bromo's crater. The park was established in 1982, covering the sand sea and surrounding volcanic complex.",
   },
   "mount-merapi": {
+    // 全六段 sources: 2911 m、每 5–10 年喷发一次；1006/1786/1822/1872/1930/1976/2006/2010 历次大喷发与公开火山史吻合，2021 年起持续活动；官方记录活火山 127 座，正文「130余座」属可接受约数。核实 2026-09-11，未改动
     seeing:
       "At 2,911 m and located about 32 km north of Yogyakarta, Mount Merapi is the most active of Indonesia's more than 130 active volcanoes, erupting on average every 5 to 10 years.",
     formation:
@@ -15041,14 +15096,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ijen crater lake formed from water pooling within the crater; its extreme acidity comes from a high concentration of sulphuric and hydrochloric acid, while sulphuric gas continuously escaping from cracks at the crater rim ignites at temperatures up to 600 °C, producing a visible blue flame.",
     observation:
       "From the air, Ijen crater appears as a roughly circular depression about 1 km across and 175 m deep; the lake water shows a rare turquoise-green colour, with blue fluorescent-like flames visible at cracks after dark, and a constant plume of white sulphurous smoke by day.",
+    // distinguish sources: 海拔约 2799 m（2023 年 UNESCO 世界地质公园认定采用的现行值，另有 2769 m 旧值）、火山口直径约 1 km、深约 175 m、世界最大强酸性火山口湖；蓝色硫磺火焰另见于埃塞俄比亚达洛尔（NatGeo，2 级）——原写的「冰岛」无记录。核实 2026-09-11
     distinguish:
-      "Ijen differs from the volcanic landforms around Tambora or Tana Toraja: it is distinguished by the rare combination of a highly acidic crater lake and blue sulphuric flames — a visible phenomenon recorded in only two places worldwide, Indonesia and Iceland.",
+      "Ijen differs from the volcanic landforms around Tambora or Tana Toraja: it is distinguished by the rare combination of a highly acidic crater lake and blue sulphuric flames — a visible phenomenon recorded at only a handful of sites worldwide, including Ethiopia's Dallol volcano.",
     concept:
       "Ijen's acidic crater-lake environment and blue sulphuric flames make it an important field sample for studying the geochemistry of volcanic crater gases and the formation mechanisms of sulphur deposits.",
     history:
       "Local miners have long hand-collected solidified blocks of sulphur from within the crater and carried them down the mountain — a physically demanding traditional livelihood; the crater area is now designated for tourism and geological study.",
   },
   "dieng-plateau": {
+    // 全六段 sources: 海拔约 2000 m、20 余个火山口；1979-02-20 西尼拉火山口致命毒气事故属实（各方死亡数 142–182 不等，正文只写「致命」未给数字，不必改）。核实 2026-09-11，未改动
     seeing:
       "The Dieng Plateau, a highland at roughly 2,000 m in Central Java, is a volcanic complex of two or more stratovolcanoes and more than 20 small craters, dotted with geothermal fumaroles and sulphur hot springs.",
     formation:
@@ -15063,6 +15120,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Dieng Plateau preserves a group of Hindu temple ruins dating to the 7th–8th centuries, among the earliest known Hindu structures on Java, each temple named for a figure from the Indian epic the Mahabharata — a rare case of ancient religious architecture coexisting with an active volcanic landscape.",
   },
   "gunung-sewu-karst": {
+    // 全六段 sources: 2015-09 列入 UNESCO 世界地质公园（unesco.org/en/iggp，1 级）；已勘察 119 座溶洞与官方地质公园介绍一致。核实 2026-09-11，未改动
     seeing:
       "The Gunung Sewu (\"Thousand Mountains\") Karst is a limestone karst highland spanning Yogyakarta, Central Java and East Java, extending about 120 km east–west and studded with more than 40,000 limestone hills.",
     formation:
@@ -15077,6 +15135,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gunung Sewu karst region preserves traces of ancient human activity and groundwater use, and today serves as an important resource for local communities developing ecotourism and geological education.",
   },
   krakatoa: {
+    // 全六段 sources: 1883 年死亡荷兰官方估计 36,417 人，正文「逾3.6万」吻合；声波传至罗德里格斯岛约 4800 km；喀拉喀托之子 1927 年底征兆、1930 年浮出水面。⚠️ 阿纳克喀拉喀托 2018 年侧翼崩塌后高度骤降，若正文给高度须带时点。核实 2026-09-11，未改动
     seeing:
       "Krakatoa sits in the Sunda Strait between Java and Sumatra; its 1883 eruption was one of the most violent volcanic explosions ever recorded in modern history, and a still-active island volcano, Anak Krakatau (\"Child of Krakatoa\"), continues to rise from the sea there today.",
     formation:
@@ -15091,6 +15150,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The eruption of August 26–27, 1883 is considered one of the loudest sounds ever recorded in modern history, with the blast heard more than 4,800 km away; the resulting tsunamis killed more than 36,000 people, making it one of the most consequential natural disasters of the 19th century worldwide.",
   },
   "lake-toba": {
+    // 全六段 sources: 约 7.4 万年前 VEI 8 超级喷发、湖面约 100×30 km（GVP，2 级）；「过去2500万年间已知规模最大的爆炸性喷发」与学界「第四纪已知最大」共识同一量级（部分文献作「过去2800万年」），可接受。与航线解说 cgk-kno「世界最大的火山破火山口湖之一」并读不冲突。核实 2026-09-11，未改动
     seeing:
       "Lake Toba, a volcanic caldera lake in North Sumatra, is Indonesia's largest lake, about 100 km long and 30 km wide, with Samosir Island — roughly the size of Singapore — rising from its centre.",
     formation:
@@ -15105,6 +15165,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Toba has long been home to the Batak people, whose highland climate and fertile volcanic soil have sustained agriculture and fishing for generations; it remains one of Sumatra's most important natural and cultural destinations today.",
   },
   "gunung-leuser": {
+    // 全六段 sources: 面积 7927 km²、最高峰 3466 m；2004 年与 Kerinci Seblat、Bukit Barisan Selatan 共同以「苏门答腊热带雨林遗产」列入 UNESCO —— 本条对应的正是这一期，未串位。核实 2026-09-11，未改动
     seeing:
       "Gunung Leuser National Park straddles Aceh and North Sumatra provinces, covering about 7,927 km²; its highest peak, Gunung Leuser, reaches 3,466 m, and the park is one of the most important wild habitats of the Sumatran orangutan.",
     formation:
@@ -15119,6 +15180,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The orangutan sanctuary at Bukit Lawang has conducted rehabilitation and research since the 1970s; the park was jointly inscribed on the UNESCO World Heritage List in 2004 alongside Kerinci Seblat and Bukit Barisan Selatan National Parks, a place where the traditional lands of local communities intersect with international conservation efforts.",
   },
   "mount-kerinci": {
+    // 全六段 sources: 3805 m 为苏门答腊最高峰、全印尼最高火山；克林芝—塞布拉特国家公园 2004 年随「苏门答腊热带雨林遗产」列入 UNESCO。核实 2026-09-11，未改动
     seeing:
       "At 3,805 m, Mount Kerinci is the highest peak on Sumatra and the tallest volcano in all of Indonesia, standing within Kerinci Seblat National Park, renowned as a habitat of the Sumatran tiger.",
     formation:
@@ -15143,10 +15205,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Agung and Rinjani are tall active volcanoes in the Bali–Lombok region, but Agung is Bali's highest point and closely bound up with Balinese Hindu belief, while Rinjani is regarded as a sacred mountain in the traditional beliefs of Lombok's Sasak people.",
     concept:
       "Agung's 2017–2019 eruptive activity makes it an important modern case study for how a stratovolcano dormant for decades can reawaken, and for the impact of volcanic ash on international air travel.",
+    // history sources: 3031 m 为巴厘岛最高点；上次大喷发 1963 年，2017-11-21 再度喷发（寂静期 54 年，同行评审口径）；2017-11 伍拉赖机场因喷发关闭（CNN，2 级）。核实 2026-09-11
     history:
-      "After 53 years of dormancy, Agung began erupting again on November 21, 2017; repeated eruptions forced the evacuation of more than 100,000 people and volcanic ash clouds temporarily closed Ngurah Rai International Airport, with activity continuing until June 2019 — a modern textbook case of Indonesian volcanic monitoring and emergency response.",
+      "After 54 years of dormancy, Agung began erupting again on November 21, 2017; repeated eruptions forced the evacuation of more than 100,000 people and volcanic ash clouds temporarily closed Ngurah Rai International Airport, with activity continuing until June 2019 — a modern textbook case of Indonesian volcanic monitoring and emergency response.",
   },
   "uluwatu-cliffs": {
+    // 全六段 sources: 崖高各来源 70–79 m，正文「逾70米」取保守下限；武吉半岛古珊瑚礁抬升成因、乌鲁瓦图庙为巴厘六大方位庙之一均有据。核实 2026-09-11，未改动
     seeing:
       "The Uluwatu Cliffs are a stretch of limestone coastline at the southern tip of Bali's Bukit Peninsula, rising sheer from the Indian Ocean to heights of more than 70 m in places, with the famous clifftop Uluwatu Temple perched at the top.",
     formation:
@@ -15161,6 +15225,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Uluwatu Temple is one of Bali's six \"directional temples\" and has long been an important site of Balinese Hindu worship; today the cliffline is also one of Bali's most celebrated surfing and sunset-viewing destinations.",
   },
   "nusa-penida": {
+    // 全六段 sources: 克林金崖约 150 m（个别来源作约 120 m，150 更常见）；崖下海滩约 80 m；2016–2017 年经社交媒体走红。核实 2026-09-11，未改动
     seeing:
       "Nusa Penida is an island off the southeast coast of Bali; its best-known landmark, Kelingking Cliff on the southwest shore, rises about 150 m above sea level and is widely recognised for its dinosaur-like silhouette.",
     formation:
@@ -15175,6 +15240,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kelingking Cliff was once a relatively obscure spot; it rose to global fame around 2016–2017 through social media, and is now Nusa Penida's single most-visited site.",
   },
   "mount-rinjani": {
+    // 全六段 sources: 3726 m 为印尼第二高活火山；塞加拉阿纳克湖由 1257 年萨马拉斯喷发形成、湖面 2004 m、约 11.3 km²（PNAS 2013，1 级）。核实 2026-09-11，未改动
     seeing:
       "At 3,726 m, Mount Rinjani is Lombok's highest peak and Indonesia's second-highest volcano; the Segara Anak crater lake within its caldera is its signature feature.",
     formation:
@@ -15189,6 +15255,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Rinjani is regarded as a sacred mountain in the traditional beliefs of Lombok's Sasak people; the surrounding Mount Rinjani National Park is an important hiking and trekking destination and a site for traditional Sasak ceremonial activities.",
   },
   kelimutu: {
+    // 全六段 sources: 1639 m；三色火山口湖颜色随地下热液活动周期性变化，三湖对应的传说与公开资料一致。火口湖颜色是会变的量。核实 2026-09-11，未改动
     seeing:
       "At 1,639 m, Kelimutu is a volcano on Flores whose summit holds three adjacent crater lakes, each a different colour — a rare geological spectacle even by Southeast Asian standards.",
     formation:
@@ -15203,6 +15270,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local Florenese communities believe the three lakes are the resting places of the souls of elders, young men and women, and malevolent spirits respectively, with the changing colours understood to reflect the state of departed souls — a striking example of natural landscape intertwined with local belief.",
   },
   "komodo-national-park": {
+    // 全六段 sources: 三座主岛（科莫多 / 帕达尔 / 林卡）+ 26 座小岛；1991 年列入 UNESCO（whc.unesco.org/en/list/609，1 级）。核实 2026-09-11，未改动
     seeing:
       "Komodo National Park lies in the waters between Flores and Sumbawa, comprising the three larger islands of Komodo, Padar and Rinca along with 26 smaller ones, and is the only natural habitat of the Komodo dragon, the largest living lizard.",
     formation:
@@ -15217,6 +15285,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Komodo Islands have long been the traditional home of local fishing communities living alongside the dragons; recognised for their exceptional geological and biological value, they were inscribed on the UNESCO World Heritage List in 1991 and remain one of Indonesia's most important conservation and ecotourism destinations.",
   },
   "mount-tambora": {
+    // 全六段 sources: 1815 年为有文字记录以来规模最大的火山喷发（史前 Toba 等不计入「记录史」）；VEI 7、喷出约 37–45 km³ DRE；山体由约 4300 m 降至约 2850 m；1816「无夏之年」。直接死亡学界估 11,000–12,000，饥荒等间接死亡另计（5 万–9 万余不等）—— 正文「至少1万人直接死亡」保守、不越界。核实 2026-09-11，未改动
     seeing:
       "Mount Tambora stands on the northern coast of Sumbawa; its 1815 eruption is the largest volcanic eruption ever recorded in human history, and the mountain now stands about 2,850 m tall after the event.",
     formation:
@@ -15231,6 +15300,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The 1815 eruption and the pyroclastic flows, earthquakes and tsunamis that followed killed at least 10,000 people directly; the ash it ejected triggered severe famines across parts of the Northern Hemisphere the following year, making it a major contributor to the global climate and food crisis of the early 19th century.",
   },
   "tanjung-puting": {
+    // 全六段 sources: 公园面积 415,040 ha，正文「约41.6万公顷」差 <0.3%；1935 年设禁猎区、1971 年 Galdikas 建利基营地、1982 年升格国家公园。核实 2026-09-11，未改动
     seeing:
       "Tanjung Puting National Park, on the coast of Central Kalimantan, is renowned for orangutan conservation, covering about 416,000 hectares, with the Sekonyer River serving as the main route into the park's interior.",
     formation:
@@ -15245,6 +15315,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Primatologist Biruté Galdikas established Camp Leakey research station here in 1971, conducting long-term orangutan rehabilitation and behavioural research; the area was designated a game reserve in 1935 and formally elevated to national park status in 1982.",
   },
   "kapuas-river": {
+    // 全六段 sources: 全长约 1143 km，为印尼及婆罗洲最长河流，源出穆勒山脉。**与马来西亚批的拉让江并排核过**：拉让江（约 563 km）是「马来西亚最长」、在婆罗洲排第七，两条口径互不证伪。核实 2026-09-11，未改动
     seeing:
       "At about 1,143 km long, the Kapuas River is Indonesia's longest river and the longest on the island of Borneo, rising in the Müller Mountains of West Kalimantan and flowing west through mountains, swamps and lowland rainforest before emptying into the South China Sea.",
     formation:
@@ -15259,6 +15330,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "For centuries the Kapuas River has served as the principal waterway linking West Kalimantan's coast and interior for trade and travel, playing a significant role in cultural exchange and the rise of regional kingdoms in the region.",
   },
   "tana-toraja": {
+    // 全六段 sources: 县域约 2044 km²、最高点 3083 m；「托拉查」意为「高地上的人」。⚠️ 红线自查：正文只写喀斯特地貌、梯田景观与文化景观的客观事实，**未作宗教评价或族群比较**。核实 2026-09-11，未改动
     seeing:
       "Tana Toraja is a highland region in the interior of South Sulawesi, covering about 2,044 km² with elevation reaching as high as 3,083 m; its central town of Rantepao is ringed by classic limestone karst mountains and rice terraces.",
     formation:
@@ -15273,6 +15345,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The name \"Toraja\" derives from the Buginese language, meaning \"people of the uplands,\" referring to the region's indigenous inhabitants; Tana Toraja's climate is cool and misty year-round, making it an important highland settlement area in the interior of Sulawesi.",
   },
   "bunaken-national-park": {
+    // 全六段 sources: 面积约 890.65 km²、97% 为海域、1991 年设立；约 390 种珊瑚、约 2000 种鱼类（约占印度—西太平洋鱼类七成）。核实 2026-09-11，未改动
     seeing:
       "Bunaken National Park lies off the coast near Manado in North Sulawesi, covering about 890 km², 97% of it marine; it is home to some 390 coral species and around 2,000 fish species, and is among the earliest marine national parks established in Indonesia.",
     formation:
@@ -15295,12 +15368,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the main islands of Wakatobi — Wangi-Wangi, Kaledupa and others — are surrounded by broad, pale-coloured reef flats that give way abruptly to deep blue open water beyond, their reef outlines clearly traceable in satellite imagery.",
     distinguish:
       "Both Wakatobi and Bunaken National Park are important marine protected areas around Sulawesi, but Wakatobi is distinguished by its larger reef area and greater diversity of reef types — fringing, barrier and atoll — while Bunaken is known for its near-shore vertical reef walls.",
+    // concept sources: 鱼类 942 种（Allen & Erdmann 2003 调查，被多方作为标准参考值）；珊瑚种数 UNESCO MAB 官方页记 396 种、营销文案作 750 种，口径不明，正文不写死；原文「在印尼境内仅次于大堡礁」逻辑不通（大堡礁不在印尼）且无学术出处，已删。国家公园 2002 年设立、约 140 万 ha、2005 年列入 UNESCO 预备名录均核实无误。核实 2026-09-11
     concept:
-      "Wakatobi records 942 fish species and 750 coral species, making it an important sample for studying how marine biodiversity forms at the core of the Coral Triangle; in scale it ranks second within Indonesia only to world-class systems such as the Great Barrier Reef.",
+      "Wakatobi records 942 fish species (per a 2003 survey), while published counts of coral species vary widely with survey methodology, making it an important sample for studying how marine biodiversity forms at the core of the Coral Triangle.",
     history:
       "Wakatobi has been on the UNESCO World Heritage tentative list since 2005; the archipelago's name is an acronym of its four main islands — Wangi-wangi, Kaledupa, Tomia and Binongko — and its waters have long served as the traditional fishing grounds of local communities.",
   },
   "banda-islands": {
+    // 全六段 sources: 11 座岛屿、陆地约 8150 ha、班达阿皮火山约 670 m、1820 与 1852 年喷发造成破坏；19 世纪中叶前为全球唯一肉豆蔻产地（Britannica）。⚠️ 红线自查：正文只写「香料贸易中心」这类定位性史实，**未写 17 世纪战争的伤亡或评价**。核实 2026-09-11，未改动
     seeing:
       "The Banda Islands, in Maluku province, are an archipelago of 11 small volcanic islands covering a total land area of about 8,150 hectares; Mount Api, at about 670 m, is the central geological feature of the group.",
     formation:
@@ -15315,6 +15390,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Until the mid-19th century the Banda Islands were the world's sole source of nutmeg and mace, making them a vital hub in the maritime trade networks linking South Asia, the Arab world and East Asia, and a focal point of early European maritime interest in the region.",
   },
   "belitung-island": {
+    // 全六段 sources: 花岗岩「托尔」巨石地貌；2021-04 列入 UNESCO 世界地质公园（unesco.org/en/iggp，1 级）。⚠️ concept 段「勿里洞石占全球同类天然玻璃 18%–19%」查无出处，见 issue。核实 2026-09-11
     seeing:
       "Belitung Island, in Bangka-Belitung province, is fringed by clusters of granite \"tor\" boulders set against white sand beaches and pale blue water — a distinctive representative of Indonesia's granite coastal landscape.",
     formation:
@@ -15337,12 +15413,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Puncak Jaya rises tall and steep, its bare summit rock face forming a classic pyramidal profile; the remaining patch of white ice at the top stands out strikingly against the tropical mountain landscape at the equator.",
     distinguish:
       "Both Puncak Jaya and Gunung Leuser are major Indonesian mountain systems, but Puncak Jaya is the country's and Oceania's highest peak, its summit preserving a rare tropical glacier, while Gunung Leuser is known for the rainforest biodiversity of a mid-elevation range.",
+    // concept sources: 4884 m 为全球岛屿最高峰（吉尼斯 / Britannica）；「七大洲最高峰」梅斯纳版以查亚峰代表大洋洲、巴斯版以科修斯科山代表 —— 原文只写一种、未注明版本。BMKG 监测显示冰川厚度 2024 年底已降至约 4 m（2010 年装设备时 32 m），持续消融，下轮复核。红线：正文只写冰川与自然地貌，未涉地区政治。核实 2026-09-11
     concept:
-      "As the representative peak for Oceania among the world's \"Seven Summits,\" and one of the very few mountains anywhere in the tropics with permanent snow and ice, Puncak Jaya is an important observation site for studying how equatorial alpine glaciers respond to global warming.",
+      "As Oceania's peak in the Messner version of the Seven Summits list (the Bass version uses Australia's Mount Kosciuszko instead), and as one of the very few mountains anywhere in the tropics with permanent snow and ice, Puncak Jaya is an important observation site for studying how equatorial alpine glaciers respond to global warming.",
     history:
       "Puncak Jaya lies within Lorentz National Park, which has been inscribed on the UNESCO World Heritage List; long-term monitoring by Indonesia's Meteorology, Climatology and Geophysics Agency has shown the summit's \"permanent snow\" continuing to melt, a shrinking-glacier trend that continues to draw sustained scientific attention.",
   },
   "raja-ampat": {
+    // 全六段 sources: 逾 1500 座岛屿、四主岛；逾 550 种珊瑚、逾 1800 种礁鱼（CI / TNC 调查）；锦鲤角单次潜水记录 374 种鱼（Gerry Allen 2012，迄今世界纪录）。⚠️ 红线自查：正文只写自然地貌、洋流、珊瑚礁与保护区，**未涉地区政治地位或采矿争议**。核实 2026-09-11，未改动
     seeing:
       "The Raja Ampat archipelago, at the heart of the Coral Triangle, encompasses more than 1,500 islands around its main islands of Misool, Salawati, Batanta and Waigeo, and is one of the most biodiverse marine regions on Earth.",
     formation:
