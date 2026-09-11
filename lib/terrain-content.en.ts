@@ -14174,10 +14174,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Mayon and Mount Pinatubo are active Philippine volcanoes, but Mayon is known for maintaining a perfect cone with the lowest ellipticity index of any stratovolcano globally, while Pinatubo's summit collapsed into a caldera during its violent 1991 eruption.",
     concept:
       "Mayon's ellipticity index of 1.04 is recognised in volcanic geomorphology as the highest degree of symmetry among stratovolcanoes worldwide, making it a classic sample for studying how a stratovolcano can maintain stable cone geometry through repeated eruptions.",
+    // history sources: 1938 年设国家公园（Proclamation No. 292），**不是菲律宾首座** —— 阿波山 1936 年更早（Proclamation No. 59）。海拔 2462 m、椭圆度 1.04（Grosse et al. 2012）、1616 年以来喷发逾 49 次（PHIVOLCS 汇编至 2014 年为 51 次）。与航线解说 mnl-lgp 并读一致。核实 2026-09-11
     history:
-      "Mayon Volcano was declared the Philippines' first national park in 1938; historical landmarks at its foot, such as the ruins of Cagsawa, record the impact of past eruptions on local communities.",
+      "Mayon Volcano was declared a national park in 1938, one of the country's earliest (Mount Apo had been designated in 1936); historical landmarks at its foot, such as the ruins of Cagsawa, record the impact of past eruptions on local communities.",
   },
   "taal-lake": {
+    // 全六段 sources: 湖面 267 km²（GVP，2 级；另有无出处的 234.2 km² 流传）；1754 年喷发堵塞潘西皮特河、湖水转为淡水；1911 年喷发死亡 1334–1335 人；「1572 年以来喷发逾 34 次」是下限值（至 2020 年为 34 次，之后又有多次喷发），会变的量，若补精确次数须注监测时点。核实 2026-09-11，未改动
     seeing:
       "Taal Lake is a volcanic caldera lake in southwestern Luzon covering 267 km², with Volcano Island rising at its centre; the island itself holds a main crater lake, producing a rare nested landform of \"an island within a lake, within an island within a lake.\"",
     formation:
@@ -14194,8 +14196,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "mount-pinatubo": {
     seeing:
       "Mount Pinatubo's June 15, 1991 eruption was the second-largest volcanic eruption of the 20th century, its ash column rising more than 40 km; the violent collapse of its summit formed a caldera about 2.5 km wide, now filled with a turquoise crater lake.",
+    // formation sources: 1991-06-15 VEI 6、20 世纪第二大喷发；总喷出物约 8–10 km³、折合致密岩浆约 4–5 km³；山顶 1745 → 1486 m、降约 260 m（GVP，2 级）—— 原写「岩浆逾 10 km³」「降低逾 300 m」。其余段（847 人死亡、云雅台风、2.5 km 破火山口）与 GVP/USGS 一致。核实 2026-09-11
     formation:
-      "The 1991 eruption ejected more than 10 km³ of magma at a VEI 6 intensity; the violence of the event triggered multiple earthquakes and caused the summit to collapse in on itself, lowering the mountain's height by more than 300 m and producing today's caldera landform.",
+      "The 1991 eruption ejected roughly 8–10 km³ of tephra and pyroclastic material in total (about 4–5 km³ of magma in dense-rock equivalent) at a VEI 6 intensity; the violence of the event triggered multiple earthquakes and caused the summit to collapse in on itself, lowering the mountain's height by about 260 m and producing today's caldera landform.",
     observation:
       "From the air, Pinatubo's caldera shows an almost circular collapsed outline, its turquoise crater lake standing in sharp colour contrast against the grey-brown pyroclastic deposits around it — direct geological evidence of the 1991 eruption.",
     distinguish:
@@ -14206,6 +14209,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The 1991 eruption coincided with Typhoon Yunya, and ash-laden rain added extra weight to roofs; a large share of the 847 deaths resulted from roof collapses. The resulting crater lake is today a well-known hiking destination in the Philippines.",
   },
   "mount-apo": {
+    // 全六段 sources: 海拔 2954 m（主流口径；另有 2956 m 流传，未见 NAMRIA 重测）、菲律宾最高峰；1880 年达沃总督 Joaquín Rajal 首登；1936 年设国家公园（Proclamation No. 59）—— 为本库 mayon-volcano / hundred-islands-national-park「首座国家公园」改正提供了时间锚点。核实 2026-09-11，未改动
     seeing:
       "Mount Apo is the highest peak in the Philippines at 2,954 m, a dormant stratovolcano within the Apo-Talomo Mountain Range on Mindanao, its slopes covered in tall tropical hardwood forest.",
     formation:
@@ -14220,6 +14224,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "\"Apo\" means \"grandfather\" or \"revered elder\" in the local Manobo and Kalagan languages; the mountain is regarded as the home of the guardian spirit Apo Sandawa. Its first recorded ascent was in 1880, led by Davao governor Joaquin Rajal.",
   },
   "mount-pulag": {
+    // 全六段 sources: 海拔 2928 m、吕宋岛最高、全国第三（阿波山 2954 > 杜朗杜朗 2938 > 普拉格）—— 与 cordillera-central-luzon、mount-apo 并读一致。核实 2026-09-11，未改动
     seeing:
       "Mount Pulag is Luzon's highest peak and the Philippines' third-highest overall, at 2,928 m, known for its early-morning \"sea of clouds\" and its exceptional view of the Milky Way.",
     formation:
@@ -14234,6 +14239,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mount Pulag holds important traditional cultural significance for local indigenous communities; the mountain is protected within Mount Pulag National Park, which safeguards both local biodiversity and indigenous cultural heritage.",
   },
   "cordillera-central-luzon": {
+    // 全六段 sources: 南北约 320 km、东西约 118 km、菲律宾最高山脉、最高峰普拉格山（3 级，与 mount-pulag 一致）。核实 2026-09-11，未改动
     seeing:
       "The Cordillera Central is a mountain system in north-central Luzon running about 320 km north-south and 118 km east-west, the highest mountain range in the Philippines, encompassing peaks such as Mount Pulag.",
     formation:
@@ -14248,6 +14254,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Cordillera Central has long been the traditional homeland of the Ifugao and other indigenous peoples of the Philippines, whose mountain terrace farming tradition has continued for more than two thousand years.",
   },
   "sierra-madre-philippines": {
+    // 全六段 sources: 南北约 540 km、菲律宾最长山脉（3 级，定性排名与 cordillera-central-luzon「最高」不同属性、不冲突）。核实 2026-09-11，未改动
     seeing:
       "The Sierra Madre is the longest mountain range in the Philippines, running along Luzon's east coast from Cagayan Province in the north to Quezon Province in the south, about 540 km end to end.",
     formation:
@@ -14262,6 +14269,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Extensive tracts of primary forest survive along the Sierra Madre, making it a key biodiversity conservation area in the Philippines, and it has long been the traditional territory of indigenous communities on Luzon's east coast.",
   },
   "mount-kanlaon": {
+    // 全六段 sources: 海拔 2465 m；1819 年以来喷发逾 30 次、菲律宾第三活跃；山顶约 2 km 椭圆破火山口；1934 年设国家公园（PHIVOLCS 火山档案转述，2 级）—— 注意 1934 早于阿波山 1936，但本条未自称「首座」，不构成冲突。近年喷发为持续过程，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Mount Kanlaon is the highest peak on Negros Island and in the Visayas at 2,465 m; it has erupted more than 30 times since 1819, making it the Philippines' third-most-active volcano.",
     formation:
@@ -14276,6 +14284,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mount Kanlaon National Park was established in 1934, encompassing the crater, hot springs and diverse wildlife habitat, and has long served as an important nature reserve in the Visayas.",
   },
   "chocolate-hills": {
+    // 全六段 sources: 「已确认至少 1260 座、可能逾 1776 座」—— 1776 是 1997 年第 1037 号公告的法定计数，1260–1268 为较早的旅游口径，正文并列两者的写法与常见口径一致；分布逾 50 km²、晚上新世至早更新世海相石灰岩。核实 2026-09-11，未改动
     seeing:
       "The Chocolate Hills are a cluster of karst hills on Bohol Island, with at least 1,260 and possibly more than 1,776 confirmed cone-shaped mounds spread across an area of more than 50 km², each 30–120 m tall.",
     formation:
@@ -14290,6 +14299,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chocolate Hills are Bohol's most famous natural landmark and have long been the subject of local legend and folklore; they are today an important geotourism destination in the central Visayas.",
   },
   "banaue-ifugao-rice-terraces": {
+    // 全六段 sources: 1995 年巴塔德、邦岸、马约瑶、洪古丹、纳加达坎五处列入 UNESCO；班奈镇观景台梯田因完整性不足未纳入 —— 与名录一致。⚠️ 红线自查：只写工程与名录机制，未作族群评价。核实 2026-09-11，未改动
     seeing:
       "The Ifugao rice terraces are a mountainside terrace-farming system carved by the Ifugao people more than two thousand years ago within the Cordillera Central, more than 48 terrace clusters climbing the mountain slopes tier upon tier, served by a precisely engineered irrigation network.",
     formation:
@@ -14304,6 +14314,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1995, five terrace clusters — Batad, Bangaan, Mayoyao, Hungduan and Nagacadan — were inscribed on the UNESCO World Heritage List as the \"Rice Terraces of the Philippine Cordilleras\"; the terraces around Banaue town itself were excluded due to lower integrity scores from dense modern construction, but remain an important agricultural cultural landscape locally.",
   },
   "camiguin-island": {
+    // 全六段 sources: 面积约 238 km²、七座火山、希博克—希博克为其中现存活火山；1871 年伏尔甘山喷发致墓园沉没（3 级，多来源一致）。核实 2026-09-11，未改动
     seeing:
       "Camiguin is a pear-shaped volcanic island off the north coast of Mindanao, covering about 238 km², home to seven volcanoes, earning it the nickname \"Island Born of Fire\" since the whole island was built up by undersea volcanic eruptions.",
     formation:
@@ -14320,20 +14331,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "batanes-islands": {
     seeing:
       "The Batanes Islands are the Philippines' northernmost island group, made up chiefly of the three inhabited islands of Batan, Sabtang and Itbayat, known for their open rolling hills and dramatic cliffs.",
+    // formation sources: 巴坦群岛东弧（巴丹岛）为火山岛、西弧（萨布唐、伊特巴亚特）为抬升珊瑚礁石灰岩（ANU Press《The Batanes Islands》第 17 章，学术出版）—— formation 与 concept 两段原把萨布唐归入火山成因，已改。伊特巴亚特为菲律宾最北端有人常住岛屿（更北的 Y'Ami 无人）。⚠️ 红线自查：只写地质与伊瓦坦石屋，未涉海域 / 主权。核实 2026-09-11
     formation:
-      "Batan and Sabtang formed through volcanic eruption, long-term weathering and erosion shaping today's open, rolling grass-hill terrain; Itbayat, by contrast, was uplifted by tectonic plate movement and presents a steeper, cliff-dominated coastal landform distinct from the other two islands.",
+      "Batan formed through volcanic eruption, long-term weathering and erosion shaping today's open, rolling grass-hill terrain; Sabtang and Itbayat, by contrast, are built mainly of coral-reef limestone repeatedly uplifted by tectonic plate movement, presenting a steeper, cliff-dominated coastal landform distinct from Batan.",
     observation:
       "From the air, the Batanes Islands show continuous, rolling green grass hills covering the terrain, dark grey rock outcrops dotted throughout, wild horses roaming freely across the open grassland — a sharp contrast with the tropical rainforest landscapes elsewhere in the Philippines.",
     distinguish:
       "Both the Batanes Islands and Camiguin are volcanically formed Philippine islands, but Batanes is known for its open grass-hill terrain and temperate-leaning climate, while Camiguin is a classic tropical volcanic island densely packed with seven volcanoes.",
     concept:
-      "Within Batanes, Itbayat's tectonic-uplift origin, distinct from the volcanic origin of Batan and Sabtang, makes the group an important sample for studying how differing geological origins shape contrasting landforms within a single island cluster.",
+      "Within Batanes, the tectonic-uplift origin of Sabtang and Itbayat, distinct from Batan's volcanic origin, makes the group an important sample for studying how differing geological origins shape contrasting landforms within a single island cluster.",
     history:
       "Itbayat is the northernmost inhabited island in the Philippines; the local Ivatan people retain a distinctive tradition of stone-house architecture, developed to withstand the region's frequent typhoons.",
   },
   "el-nido-bacuit-archipelago": {
+    // seeing sources: 45 座石灰岩岛礁、「El Nido」西语意为「巢」、金丝燕筑巢 —— 与多来源一致。seeing 段原写「2011 年整个区域获认定为 UNESCO 世界地质公园」：**查无此认定**，菲律宾唯一的 UNESCO 世界地质公园是 2023 年的保和岛（unesco.org，1 级），已删。核实 2026-09-11
     seeing:
-      "El Nido / the Bacuit Archipelago is a group of 45 limestone islets at the northern tip of Palawan, riddled with karst cliffs, sinkholes and lagoons; the entire area was recognised as a UNESCO Global Geopark in 2011.",
+      "El Nido / the Bacuit Archipelago is a group of 45 limestone islets at the northern tip of Palawan, riddled with karst cliffs, sinkholes and lagoons.",
     formation:
       "The limestone islets of the Bacuit Archipelago have been shaped by the combined action of sea erosion and surface dissolution over a long period, carving today's steep, near-vertical karst cliff landform, with dissolution within the islets producing numerous sinkholes and hidden lagoons.",
     observation:
@@ -14346,6 +14359,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "\"El Nido\" comes from the Spanish for \"the nest,\" named for the local tradition of harvesting swiftlet nests from the area's limestone cliffs and caves; it is today a well-known island-hopping and diving destination in the Philippines.",
   },
   "tubbataha-reefs": {
+    // 全六段 sources: 97,030 ha（tubbatahareefs.org，1 级）；「逾 360 种珊瑚、近 700 种鱼类」与 UNESCO 名录原文一致；1988 年设海洋公园、1993 年列入 UNESCO（whc.unesco.org/en/list/653，1 级）。⚠️ 红线自查：只写礁体生态，未涉南海主权 / 海域划界。核实 2026-09-11，未改动
     seeing:
       "The Tubbataha Reefs are a coral atoll natural park at the centre of the Sulu Sea, made up of the Tubbataha and Jessie Beazley Reefs, protecting an area of nearly 100,000 ha and recording more than 360 coral species and almost 700 fish species.",
     formation:
@@ -14360,6 +14374,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Tubbataha was established as a marine park in 1988 and inscribed on the UNESCO World Heritage List in 1993, making it one of the world's natural laboratories for studying coral reef formation.",
   },
   "coron-calamian-islands": {
+    // 全六段 sources: 卡杨甘湖水下能见度逾 24 m、约七成淡水三成海水（3 级，多来源一致）。⚠️ 红线自查：未涉南海议题。核实 2026-09-11，未改动
     seeing:
       "Coron / the Calamian Islands are a group of limestone islands off Palawan's northeast coast; Kayangan Lake within them is regarded as the clearest lake in the Philippines, with underwater visibility exceeding 24 m.",
     formation:
@@ -14374,6 +14389,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kayangan Lake has been guarded for generations by the local Tagbanua people, who regard it as sacred; it is today a well-known diving and island-hopping destination in the Philippines and an important case of indigenous-led nature conservation on Palawan.",
   },
   "puerto-princesa-underground-river": {
+    // 全六段 sources: 全长 8.2 km；「已知最长的直接入海可通航地下河」—— 限定语正确（「最长地下河」本身已被 2007 年墨西哥发现推翻，本条没有这么写）；洞厅宽达 120 m、高 60 m；1999 年列入 UNESCO；New7Wonders 2012-01-28 正式确认，正文作为与 UNESCO 并列的另一件事、未混为官方认定。核实 2026-09-11，未改动
     seeing:
       "The Puerto Princesa Underground River is an 8.2-km underground river within Palawan's Saint Paul Mountain Range, the longest known navigable underground river that flows directly into the sea, inscribed on the UNESCO World Heritage List in 1999.",
     formation:
@@ -14388,6 +14404,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Puerto Princesa Underground River was inscribed on the UNESCO World Heritage List in 1999 and named one of the New7Wonders of Nature in 2012, a landmark achievement in Philippine natural heritage conservation.",
   },
   "pagsanjan-gorge": {
+    // 全六段 sources: 落差约 120 m、三级跌落；1939-03-29 设国家公园（Proclamation No. 392）。核实 2026-09-11，未改动
     seeing:
       "Pagsanjan Gorge is a canyon landform on Luzon carved by the Pagsanjan River in Laguna Province, ending in the three-tiered, 120-m Magdapio Falls, popularly known as Pagsanjan Falls.",
     formation:
@@ -14402,6 +14419,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Pagsanjan Gorge National Park was established in 1939; the tradition of carrying visitors upriver by dugout canoe dates to the Spanish colonial era and continues today, making it one of the Philippines' longest-running river adventure tourism experiences.",
   },
   "cagayan-river": {
+    // 全六段 sources: 全长约 505 km、菲律宾最长且流量最大的河流、源出卡拉巴略山脉、于阿帕里注入巴布延海峡（Britannica，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Cagayan River is the Philippines' longest river and the one with the greatest discharge, running about 505 km from its source in the Caraballo Mountains through the Cagayan Valley of northeastern Luzon before emptying into the Babuyan Channel at Aparri.",
     formation:
@@ -14417,7 +14435,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "lake-lanao": {
     seeing:
-      "Lake Lanao is the Philippines' second-largest lake, covering about 340 km² in Lanao del Sur Province on Mindanao, and one of only 17 ancient lakes surviving on Earth.",
+      "Lake Lanao is the Philippines' second-largest lake, covering about 340 km² in Lanao del Sur Province on Mindanao, and one of the world's few so-called ancient lakes.",
     formation:
       "Lake Lanao formed when a basin between two mountain ranges was dammed by combined tectonic and volcanic activity, accompanied by the collapse of a large volcano — a classic case of tectonic and volcanic processes together shaping a large lake basin.",
     observation:
@@ -14425,11 +14443,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both Lake Lanao and Agusan Marsh are important wetland water bodies on Mindanao, but Lake Lanao is a higher-elevation lake of tectonic-volcanic origin, while Agusan Marsh is a low-elevation marsh wetland formed on a river floodplain.",
     concept:
-      "Lake Lanao is home to 18 endemic Philippine cyprinid fish species, making it an important sample for studying how long-term evolution in an isolated ancient lake produces endemic species radiation — a research value shared by only 15 ancient lakes worldwide.",
+      "Lake Lanao is home to 18 endemic Philippine cyprinid fish species, making it an important sample for studying how long-term evolution in an isolated ancient lake produces endemic species radiation.",
+    // history sources: 面积约 340 km²、菲律宾第二大湖、18 种特有鲤科鱼类。「古老湖泊」全球计数文献 15–20 不等，原 seeing 写 17、concept 写 15 自相矛盾，两处都改为不带计数。阿古斯水电占棉兰老岛用电：原写「约七成」（约 2013–2015 年状态）；NPC 官方「逾 50%」未注时点、DOE 2023–24 经媒体转述约三成，冲突且最新值只有 3 级来源，**只写定性下降、不补数字**，下轮找 DOE 原始数据回来补。⚠️ 红线自查：玛拉瑙人信仰只作人口学事实，未涉自治 / 冲突。核实 2026-09-11
     history:
-      "The Agus River hydroelectric system fed by Lake Lanao supplies about 70% of Mindanao's electricity; the Maranao people who live around the lake are almost entirely Muslim, and numerous mosques are found around its shores.",
+      "The Agus River hydroelectric system fed by Lake Lanao has long been one of Mindanao's main power sources (its share has fallen markedly in recent years as coal-fired capacity expanded); the Maranao people who live around the lake are almost entirely Muslim, and numerous mosques are found around its shores.",
   },
   "agusan-marsh": {
+    // 全六段 sources: 40,940.96 ha；1999-11-12 列入拉姆萨尔（Ramsar RIS 1009，1 级）；2018-11-08 东盟遗产公园（ASEAN Centre for Biodiversity，1 级）。⚠️ 红线自查：未涉棉兰老自治 / 冲突。核实 2026-09-11，未改动
     seeing:
       "Agusan Marsh is an extensive floodplain wetland in the Agusan River basin of northeastern Mindanao, its legislated protected area covering about 40,941 ha, inscribed on the Ramsar List of Wetlands of International Importance in 1999.",
     formation:
@@ -14445,7 +14465,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "hundred-islands-national-park": {
     seeing:
-      "Hundred Islands National Park is an island cluster in Lingayen Gulf off northwestern Luzon, comprising 124 limestone islands at low tide and 123 at high tide, established in 1940 as the Philippines' first national park.",
+      "Hundred Islands National Park is an island cluster in Lingayen Gulf off northwestern Luzon, comprising 124 limestone islands at low tide and 123 at high tide, established as a national park in 1940, one of the Philippines' earliest.",
     formation:
       "The islands of Hundred Islands National Park sit on a coral-reef foundation with rock dating back about two million years; long-term wave erosion combined with coral reef deposition has shaped today's dense cluster of small limestone islands scattered across Lingayen Gulf.",
     observation:
@@ -14454,12 +14474,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Hundred Islands National Park and the Chocolate Hills are Philippine landforms formed by uplifted coral-reef limestone, but Hundred Islands is a cluster of islands scattered across a bay, while the Chocolate Hills are a dense field of conical karst mounds on land.",
     concept:
       "The hundreds of small limestone islands densely clustered within a single bay at Hundred Islands make it a classic sample for studying how an uplifted coral-reef foundation fragments through wave erosion into a dense island cluster.",
+    // history sources: 退潮 124 座 / 涨潮 123 座；1940-01-18 设国家公园（Proclamation No. 667），常被称「第一座」但阿波山 1936、马荣 1938 更早 —— seeing 与 history 两段原写「首座」「最悠久」；开放四岛 Governor's / Marcos / Quezon / Children's（中文原把 Marcos 译成「市长岛」）。核实 2026-09-11
     history:
-      "Hundred Islands National Park was established in 1940, the Philippines' oldest national park; today only four islands — Marcos, Governor's, Quezon and Children's — have been developed and opened to visitors.",
+      "Hundred Islands National Park was established in 1940, often called the Philippines' first national park, though Mount Apo (1936) and Mayon (1938) were designated earlier; today only four islands — Marcos, Governor's, Quezon and Children's — have been developed and opened to visitors.",
   },
   "verde-island-passage": {
     seeing:
-      "The Verde Island Passage is a narrow marine channel between the provinces of Batangas, Mindoro, Marinduque and Romblon, widely recognised in scientific literature as the global \"centre of the centre\" of marine fish biodiversity, with more than 400 recorded coral species.",
+      "The Verde Island Passage is a narrow marine channel between the provinces of Batangas, Mindoro, Marinduque and Romblon, widely recognised in scientific literature as the global \"centre of the centre\" of marine fish biodiversity, with more than 300 recorded coral species.",
     formation:
       "The Verde Island Passage is a narrow marine corridor at the centre of the Philippine archipelago, sitting at the heart of the Coral Triangle; long-term convergence of warm ocean currents combined with sustained coral growth has shaped today's exceptionally biodiverse marine ecological corridor.",
     observation:
@@ -14468,8 +14489,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Verde Island Passage and the Tubbataha Reefs are important Philippine coral reef ecosystems, but the Passage is a biodiversity hotspot within a narrow strait, while Tubbataha is an isolated deep-sea atoll system at the centre of the Sulu Sea.",
     concept:
       "As the \"centre of the centre\" of the Coral Triangle, the Verde Island Passage is an important sample for studying how a narrow strait's terrain concentrates ocean currents and biodiversity into a global biodiversity hotspot.",
+    // history sources: 「中心之中心」出自 Carpenter & Springer 2005；珊瑚物种主流口径 300（Rappler）/ 338（CI），原写「逾 400」已改为「逾 300」；36 处海洋保护区（巴丹加斯 24 + 东民都洛 12）；Mission Blue Hope Spot **2023-07-21** 认定（missionblue.org），原写 2010 已改。⚠️ 红线自查：未涉南海主权 / 海域划界。核实 2026-09-11
     history:
-      "The Verde Island Passage hosts 36 marine protected areas; it was designated a \"Hope Spot\" by the international ocean conservation organisation Mission Blue in 2010, and remains a priority area for marine ecological conservation in the Philippines.",
+      "The Verde Island Passage hosts 36 marine protected areas; it was designated a \"Hope Spot\" by the international ocean conservation organisation Mission Blue in 2023, and remains a priority area for marine ecological conservation in the Philippines.",
   },
   // ============ Singapore ============
   "bukit-timah-nature-reserve": {
@@ -16291,6 +16313,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Croatia ============
   dinara: {
+    // 全六段 sources: 主峰锡尼亚尔（迪纳拉峰）1831 m、克罗地亚最高点；第纳里克阿尔卑斯山系得名于此山。⚠️ 红线自查：山体跨境，正文只作纯境内地貌表述、**不提邻国名称**，符合本国判据。核实 2026-09-11，未改动
     seeing:
       "Dinara is Croatia's highest massif; its summit, Sinjal, rises to 1,831 m and is the country's highest point, with the range trending roughly northwest–southeast.",
     formation:
@@ -16305,6 +16328,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The foothill communities have long relied on mountain sheep-herding and small-scale farming; medieval fortress remains survive near Knin at the mountain's base.",
   },
   velebit: {
+    // 全六段 sources: 全长约 145 km、最高峰瓦干斯基峰 1757 m（源间 1757–1758）、1978 年整体设自然公园（np-sjeverni-velebit.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Velebit is Croatia's largest mountain range, stretching about 145 km along the Adriatic coast, with its highest peak, Vaganski Vrh, reaching 1,757 m.",
     formation:
@@ -16319,6 +16343,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a nature park in its entirety in 1978, it contains the Northern Velebit and Paklenica national parks; local villages historically relied on grazing and forestry.",
   },
   biokovo: {
+    // 全六段 sources: 圣尤雷峰 1762 m、克罗地亚第三高峰；1981 年设自然公园（parksdinarides.org，2 级）。核实 2026-09-11，未改动
     seeing:
       "Biokovo is a steep limestone massif on the Dalmatian coast, its highest peak, Sveti Jure, reaching 1,762 m, Croatia's third-highest summit.",
     formation:
@@ -16333,6 +16358,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a nature park in 1981, its summit chapel of Sveti Jure has a long history; the Makarska shoreline below has long been an important Dalmatian fishing and shipping hub.",
   },
   ucka: {
+    // 全六段 sources: 沃亚克峰 1401 m、伊斯特拉半岛最高点；山顶观景塔 1911 年建成（pp-ucka.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Učka is a limestone massif on the eastern Istrian peninsula, its highest peak, Vojak, reaching 1,401 m — the highest point on the entire peninsula.",
     formation:
@@ -16357,10 +16383,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Gorski Kotar and Velebit are both mountainous, but Gorski Kotar's forest cover is far denser and its rainfall much higher, making it Croatia's wettest mountain region.",
     concept:
       "Sitting at the junction of the Alpine and Dinaric mountain systems, Gorski Kotar is an important sample for understanding the geological relationship where two major orogenic belts meet.",
+    // history sources: 里斯尼亚克峰 1528 m；国家公园 1953-09-15 设立、1997 年扩园纳入斯涅日尼克山与库帕河源头（np-risnjak.hr，1 级）—— 原写「1997 年设立」是把扩园年当成了设园年。核实 2026-09-11
     history:
-      "Risnjak National Park was established in 1997; the region has historically relied on forestry and mountain livestock, with population density long lower than along the coast.",
+      "Risnjak National Park was established in 1953 and expanded to its present extent in 1997 to take in Snježnik and the source of the Kupa; the region has historically relied on forestry and mountain livestock, with population density long lower than along the coast.",
   },
   papuk: {
+    // 全六段 sources: 主峰约 953 m；中新世—上新世为古潘诺尼亚海中的孤岛（正文「上新世」为可接受的概括）；2007 年成为克罗地亚首个、欧洲地质公园网络第 30 个成员（pp-papuk.hr，1 级）—— 本库无其他条目争这个「首个」。核实 2026-09-11，未改动
     seeing:
       "Papuk is the highest massif in the Slavonia region, its summit reaching 953 m, standing isolated above the Pannonian Plain as the region's landmark mountain.",
     formation:
@@ -16375,6 +16403,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Papuk Geopark was established in 2007, Croatia's first and Europe's thirtieth member of the European Geoparks Network; it preserves geological features such as Late Cretaceous columnar basalt.",
   },
   medvednica: {
+    // 全六段 sources: 全长约 42 km、什列梅峰 1035 m；韦特尔尼察洞穴出土穆斯特文化石器（尼安德特人）。核实 2026-09-11，未改动
     seeing:
       "Medvednica lies just north of Zagreb, stretching about 42 km, its highest peak, Sljeme, reaching 1,035 m — the mountain Zagreb residents visit most for hiking and recreation.",
     formation:
@@ -16389,6 +16418,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Veternica Cave on the mountain preserves evidence of Paleolithic human activity; the name derives from the Croatian word for bear, after the many brown bears once found here.",
   },
   "pannonian-plain-croatia": {
+    // 全六段 sources: 约 53% 国土海拔低于 200 m（croatia.eu，2 级）；奥西耶克位于德拉瓦河畔。⚠️ 红线自查：纯境内表述、不提邻国。核实 2026-09-11，未改动
     seeing:
       "The Pannonian Plain is Croatia's flattest region, centered in the Slavonia area between the Sava and Drava rivers, with about 53% of the country's territory below 200 m elevation.",
     formation:
@@ -16403,6 +16433,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The plain has hosted farming settlements since the Neolithic; Slavonia has long been an important granary region, and the largest city, Osijek, sits on the Drava.",
   },
   "neretva-delta": {
+    // 全六段 sources: 克罗地亚境内唯一河流三角洲；地中海继尼罗河、波河之后第三大三角洲（Ramsar RIS 585，1 级）。⚠️ 红线自查：未提三角洲上游所在的邻国。核实 2026-09-11，未改动
     seeing:
       "The Neretva Delta is formed by the final roughly 22-km stretch of the Neretva River within Croatian territory, Croatia's only river delta.",
     formation:
@@ -16417,6 +16448,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The delta plain has been cultivated since Roman times; after modern drainage improvements it became an important citrus and vegetable-growing region for Croatia.",
   },
   "lonjsko-polje": {
+    // 全六段 sources: 面积 505.6–506.5 km²（源间微差）；1990 年设自然公园、1993 年列入拉姆萨尔（Ramsar RIS 584，1 级）。⚠️ 红线判据：1990 年代的**保护区制度事实**属定位性事实，保留；未涉战争 / 民族 / 政治。核实 2026-09-11，未改动
     seeing:
       "Lonjsko Polje is a floodplain wetland stretching along the middle Sava River, covering 506.5 km², one of the largest protected wetlands in the Danube basin.",
     formation:
@@ -16431,6 +16463,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Declared a nature park in 1990 and listed under the Ramsar Convention in 1993, the village of Čigoč is known as Europe's 'Stork Village' for its resident white storks, and traditional timber houses remain in use today.",
   },
   "kopacki-rit": {
+    // 全六段 sources: 总面积 231 km²（含 71 km² 特别动物保护区）；1967 年起受保护、1993 年列入拉姆萨尔（pp-kopacki-rit.hr，1 级）。⚠️ 红线自查：未涉巴拉尼亚地区近代归属议题。核实 2026-09-11，未改动
     seeing:
       "Kopački Rit is an inland-delta-style wetland at the confluence of the Drava and Danube rivers in the Baranja region, covering about 231 km², one of Europe's best-preserved large wetlands.",
     formation:
@@ -16445,6 +16478,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Protected since 1967 and Ramsar-listed in 1993, the local population historically relied on fishing and seasonal grazing.",
   },
   "dalmatian-coast": {
+    // 全六段 sources: 沿岸 1244 个岛屿、岛礁与礁石（78 岛 + 524 小岛 + 642 礁石的官方口径，2 级转述）；「达尔马提亚型海岸」为地学命名范例。核实 2026-09-11，未改动
     seeing:
       "The Dalmatian coast is Croatia's most distinctive stretch of Adriatic coastline, with numerous elongated islands and channels arranged in neat bands parallel to the shore.",
     formation:
@@ -16459,6 +16493,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Coastal towns have been important Mediterranean shipping nodes since Roman and Byzantine times; under Venetian rule this coast was long an important trade and shipbuilding center.",
   },
   "istria-coast": {
+    // 全六段 sources: 伊斯特拉海岸线约 430 km（Britannica，2 级）；terra rossa 红土成因为地学常识。核实 2026-09-11，未改动
     seeing:
       "The Istrian coast is the western shore of the Adriatic's largest peninsula, stretching about 430 km, lined with historic port towns including Rovinj, Poreč, and Pula.",
     formation:
@@ -16473,6 +16508,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The port towns of Rovinj, Poreč, and Pula were successively ruled by Rome and Venice, and preserve extensive Roman and Venetian architectural heritage.",
   },
   "kvarner-gulf": {
+    // 全六段 sources: 湾内水深逾 100 m；里耶卡为克罗地亚最大货运港（均为 3 级来源，定性表述，未作为数字唯一依据）。核实 2026-09-11，未改动
     seeing:
       "The Kvarner Gulf is a bay in the northern Adriatic between the Istrian peninsula and the Croatian mainland, ringed by islands including Cres, Krk, Pag, Rab, and Lošinj.",
     formation:
@@ -16487,6 +16523,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Rijeka has been an important port since Austro-Hungarian times, historically one of Central Europe's main outlets to the Mediterranean.",
   },
   "plitvice-lakes": {
+    // 全六段 sources: 16 湖、园区总落差 912 m（1279 → 367 m）、钙华堤坝年增 1–3 cm（公园官网引 Srdoč/Horvatinčić 研究，1 级）；1979 年列入 UNESCO、2000 年扩界，面积 296.85 km²（whc.unesco.org/en/list/98，1 级）；distinguish 段与 krka 并排读无互证伪。核实 2026-09-11，未改动
     seeing:
       "Plitvice Lakes National Park is a system of 16 lakes linked by travertine barriers along a valley with 912 m of relief, Croatia's most famous natural landscape.",
     formation:
@@ -16501,6 +16538,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1979 it became Croatia's first natural site inscribed on the World Heritage List; the park covers 296.85 km² and is Croatia's most-visited national park.",
   },
   "vransko-lake": {
+    // 全六段 sources: 面积 30.2 km²、长 13.6 km、宽 1.4–3.4 km、湖面低于海平面约 4 m；鸟类逾 260 种；1999 年设自然公园（pp-vransko-jezero.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Lake Vrana is Croatia's largest natural freshwater lake, covering 30.2 km², 13.6 km long and 1.4–3.4 km wide, its surface about 4 m below sea level.",
     formation:
@@ -16521,18 +16559,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Skradinski Buk consists of 17 travertine steps with a total drop of 45.7 m and a width of up to 400 m, a natural stepped barrier formed by long-term calcium carbonate deposition.",
     observation:
       "From the air, the Krka shows alternating lakes and waterfalls along its course; at Skradinski Buk, water spills over layered travertine steps forming a broad white curtain, set against the surrounding karst canyon.",
+    // distinguish sources: 7 道钙华堤坝；斯克拉丁瀑布 17 级台阶、落差 45.7 m、宽可达 400 m（npkrka.hr，1 级）；1985-01-24 设国家公园。**2021-01-01 起园区内禁止游客游泳**（croatiaweek.com，2 级）—— distinguish 段原写「允许游客游泳」、zrmanja-canyon 原写克尔卡「以游泳区闻名」，都是 2020 年以前的状态，已改。游泳规定是会变的量。核实 2026-09-11
     distinguish:
-      "Krka and Plitvice Lakes are both travertine-karst landscapes, but Krka is a complete river system open to swimming, while Plitvice is a closed lake chain where swimming is not permitted.",
+      "Krka and Plitvice Lakes are both travertine-karst landscapes, but Krka is a complete river system with a series of travertine barriers along its course, while Plitvice is a closed lake chain; neither is open to visitor swimming today (Krka banned visitor swimming within the park from 2021).",
     concept:
       "Skradinski Buk is one of Europe's largest travertine waterfall systems, an important sample for studying how travertine barriers form on karst rivers.",
     history:
       "Krka National Park was established in 1985; 19th-century watermill buildings survive along the falls, where visitors can see traditional milling and folk exhibits.",
   },
   "sava-river-croatia": {
+    // seeing sources: 全长 945 km、计入萨瓦多林卡源头 990 km（国际萨瓦河流域委员会 savacommission.org，1 级）；多瑙河**水量最大**的支流、年均流量约 1564 m³/s、流域第二大（ICPDR，1 级）—— 原写「最长支流、992 km」，长度排名口径不一、992 无来源。⚠️ 红线（克罗地亚跨境地形不提邻国名）：formation 段原写「发源于斯洛文尼亚阿尔卑斯山区」，已改为「发源于阿尔卑斯山区」。锡萨克以下可通航。核实 2026-09-11
     seeing:
-      "The Sava is the Danube's longest tributary at 992 km, flowing through Zagreb before crossing central Croatia toward the southeast; it is Croatia's largest river by discharge.",
+      "The Sava is the Danube's largest tributary by discharge, 945 km long (990 km including its longer headwater, the Sava Dolinka), flowing through Zagreb before crossing central Croatia toward the southeast; it is Croatia's largest river by discharge.",
     formation:
-      "The Sava rises in the Slovenian Alps and, after entering Croatia, is joined by tributaries such as the Kupa and Lonja, its valley depositing a broad alluvial plain along its course.",
+      "The Sava rises in the Alps and, after entering Croatia, is joined by tributaries such as the Kupa and Lonja, its valley depositing a broad alluvial plain along its course.",
     observation:
       "From the air, the Sava's channel through Zagreb is relatively regular, widening and meandering more as it flows southeast, with farmland and towns lining the valley on both banks.",
     distinguish:
@@ -16543,6 +16583,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically an important inland shipping route in Central Europe, the Sava is navigable below Sisak, and towns along its valley have long been key transport and trade nodes.",
   },
   "drava-river-croatia": {
+    // 全六段 sources: 境内约 323 km、在阿良姆什附近汇入多瑙河；穆拉—德拉瓦—多瑙跨国生物圈保护区 2021 年 UNESCO 认定（IUCN 转述，1 级机构）。⚠️ 红线自查：只写「跨国」、**未点名任何邻国**。核实 2026-09-11，未改动
     seeing:
       "The Drava is a major Danube tributary, flowing about 323 km through Croatian territory and forming part of Croatia's northern border before joining the Danube near Aljmaš.",
     formation:
@@ -16557,6 +16598,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically an important waterway linking the Alpine region to the Pannonian Plain, the riverside city of Osijek has been Slavonia's economic and cultural center since Habsburg times.",
   },
   "cetina-canyon": {
+    // 全六段 sources: 谷壁最高约 300 m；切蒂纳河全长 101–105 km（测量口径差异，正文取约 105）、发源于迪纳拉山西北坡 385 m 处、达尔马提亚最长河流（长于克尔卡 73 km、兹尔曼尼亚 69 km）；古比察瀑布 48 m（visittrilj.com，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Cetina River Canyon is cut by the final roughly 8-km stretch of the Cetina before it enters the Adriatic, its walls rising up to 300 m.",
     formation:
@@ -16571,6 +16613,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The canyon has been protected since 1963; the river-mouth town of Omiš was historically an important Dalmatian coastal port.",
   },
   "zrmanja-canyon": {
+    // 全六段 sources: 兹尔曼尼亚河全长 69 km、流域约 907 km²（3 级，与 cetina-canyon 比较方向一致）。核实 2026-09-11，未改动
     seeing:
       "The Zrmanja River Canyon is cut by the Zrmanja as it winds through the karst terrain of southern Lika and northern Dalmatia, forming a deep canyon and waterfall system through the limestone.",
     formation:
@@ -16578,13 +16621,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, the Zrmanja shows a distinctive emerald-green color from dissolved minerals, contrasting sharply with the white limestone canyon walls as the river winds through the karst gorge.",
     distinguish:
-      "Compared with the Krka, the Zrmanja Canyon is deeper and its river swifter, known for rafting and kayaking, while the Krka is known for its gentle travertine waterfalls and swimming areas.",
+      "Compared with the Krka, the Zrmanja Canyon is deeper and its river swifter, known for rafting and kayaking, while the Krka is known for its gentle travertine waterfalls.",
     concept:
       "The Zrmanja Canyon is a classic sample for studying how long-term erosion by a karst river cuts a deep canyon into a limestone riverbed.",
     history:
       "Historically remote and sparsely visited, the canyon has become an important outdoor-sports destination in Croatia with the rise of kayaking and rafting.",
   },
   paklenica: {
+    // 全六段 sources: 大帕克莱尼察长约 14 km、宽 500–800 m；小帕克莱尼察长约 12 km、最窄约 10 m；崖壁大帕克莱尼察一侧逾 700 m（安尼奇库克 712 m）；1949-10-19 设国家公园（np-paklenica.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Paklenica comprises two adjacent limestone canyons on Velebit's southwestern slope — Velika (Big) and Mala (Small) Paklenica — with walls over 700 m high.",
     formation:
@@ -16599,6 +16643,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Paklenica National Park was established in 1949; the Anića Kuk cliff face has long been a landmark venue for local rock climbing.",
   },
   kornati: {
+    // 全六段 sources: 约 140 座岛屿与礁石、其中 89 座 1980 年划入国家公园；主岛科尔纳特长约 25 km、宽约 2.5 km（3 级来源，与多方一致）。核实 2026-09-11，未改动
     seeing:
       "The Kornati Islands comprise about 140 islands and rocks, one of the most densely packed archipelagos in the Adriatic, with 89 islands included in Kornati National Park in 1980.",
     formation:
@@ -16613,6 +16658,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically home only to seasonal fishermen and shepherds, the islands are now an important marine protected area and sailing destination in Croatia.",
   },
   "hvar-island": {
+    // 全六段 sources: 亚得里亚海最长岛屿（长 68–69 km）、面积约 297–300 km²、圣尼古拉峰约 626 m（源间 626–629）；年日照「逾 2700 小时」为保守下限；斯塔里格拉德平原 2008 年列入 UNESCO（whc.unesco.org/en/list/1240，1 级）。核实 2026-09-11，未改动
     seeing:
       "Hvar is the longest island in the Adriatic at about 69 km, covering roughly 300 km², its ridge formed by an east–west limestone and dolomite spine, with the highest point, Sveti Nikola, reaching 626 m.",
     formation:
@@ -16627,6 +16673,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Stari Grad Plain on the island preserves an ancient field-division pattern laid out by Greek colonists in the 4th century BC, one of Europe's few intact examples of ancient land measurement, and is inscribed on the World Heritage List.",
   },
   mljet: {
+    // 全六段 sources: 1960-11-11 设国家公园、地中海最早的海洋保护区；大湖与小湖为与海相通的咸水湖（np-mljet.hr，1 级）。核实 2026-09-11，未改动
     seeing:
       "Mljet is a long, narrow island in southern Dalmatia, nicknamed the 'Green Island' for its dense Aleppo pine forest; about 30% of its western end forms Mljet National Park.",
     formation:
@@ -16641,6 +16688,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mljet National Park was established in 1960, the oldest marine protected area in the Mediterranean; a 12th-century Benedictine monastery survives on St. Mary's Islet at the center of the Great Lake.",
   },
   "brac-island": {
+    // 全六段 sources: 面积 396 km²、达尔马提亚最大岛；维多瓦戈拉峰 778 m（源间 778–780）、亚得里亚海诸岛最高点 —— 与 hvar-island「最长岛屿」不同属性，不冲突。核实 2026-09-11，未改动
     seeing:
       "Brač is the largest island in Dalmatia at 396 km², its highest point, Vidova Gora, reaching 778 m — the highest point of any Adriatic island.",
     formation:

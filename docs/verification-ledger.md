@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 488ee34
+lastVerifiedCommit: 560f7c5
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,8 @@ lastVerifiedCommit: 488ee34
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 菲律宾 22 条（整国一批核完）（R22c） | 12 | 0 / 12 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
+| 2026-09-11 | 克罗地亚 26 条（整国一批核完）（R22b） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 哈萨克斯坦 26 条（整国一批核完）（R22a） | 6 | 0 / 6 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 蒙古 26 条（整国一批核完）（R21c） | 10 | 0 / 7 / 3 | 当场修 7 条；新开 issue 3、关闭 0 |
 | 2026-09-11 | 马来西亚 26 条（整国一批核完）（R21b） | 6 | 0 / 5 / 1 | 当场修 5 条；新开 issue 1、关闭 0 |

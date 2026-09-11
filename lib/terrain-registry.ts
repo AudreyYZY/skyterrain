@@ -12311,7 +12311,7 @@ const MAYON_VOLCANO: TerrainEntry = {
   bbox: [123.58, 13.18, 123.79, 13.35],
   viewFrom: 90,
   label: { lon: 123.685, lat: 13.11, rotation: 0 },
-  source: "马荣火山：吕宋岛阿尔拜省地标性活火山，海拔2462米，锥体呈近乎完美的对称圆锥形，椭圆度指数低至1.04、为全球层状火山中最低（形态最对称），400年间记录喷发逾49次，是菲律宾最活跃的火山；1938年划设为菲律宾首座国家公园（Britannica/amusingplanet.com WebSearch 2026）",
+  source: "马荣火山：吕宋岛阿尔拜省地标性活火山，海拔2462米，锥体呈近乎完美的对称圆锥形，椭圆度指数低至1.04、为全球层状火山中最低（形态最对称），400年间记录喷发逾49次，是菲律宾最活跃的火山；1938年划设为国家公园，是菲律宾最早一批国家公园之一（阿波山1936年更早）（Britannica/amusingplanet.com WebSearch 2026）",
 };
 
 const TAAL_LAKE: TerrainEntry = {
@@ -12339,7 +12339,7 @@ const MOUNT_PINATUBO: TerrainEntry = {
   bbox: [120.27, 15.06, 120.43, 15.20],
   viewScale: 1.1,
   label: { lon: 120.35, lat: 15.22, rotation: 0 },
-  source: "皮纳图博火山：1991年6月15日发生20世纪第二大规模火山喷发，喷发柱高逾40公里、喷出岩浆逾10立方公里，火山爆发指数达VEI 6；剧烈喷发导致山顶塌陷形成宽约2.5公里的破火山口，山体高度较喷发前降低逾300米，山顶如今蓄有一汪蓝绿色火山口湖，是菲律宾知名的徒步目的地（USGS/Global Volcanism Program WebSearch 2026）",
+  source: "皮纳图博火山：1991年6月15日发生20世纪第二大规模火山喷发，喷发柱高逾40公里、总喷出物约8至10立方公里（折合致密岩浆约4至5立方公里），火山爆发指数达VEI 6；剧烈喷发导致山顶塌陷形成宽约2.5公里的破火山口，山体高度较喷发前降低约260米，山顶如今蓄有一汪蓝绿色火山口湖，是菲律宾知名的徒步目的地（USGS/Global Volcanism Program WebSearch 2026）",
 };
 
 const MOUNT_APO: TerrainEntry = {
@@ -12462,7 +12462,7 @@ const BATANES_ISLANDS: TerrainEntry = {
   landmark: { name: "巴丹岛（巴斯科）", lon: 121.9683, lat: 20.4487, elevation: 100, kind: "island" },
   bbox: [121.80, 20.30, 122.10, 20.95],
   label: { lon: 121.95, lat: 20.20, rotation: 0 },
-  source: "巴丹群岛：菲律宾最北端的岛群，主要由巴丹岛、萨布唐岛与伊特巴亚特岛三座有人居住的岛屿组成；巴丹岛与萨布唐岛由火山喷发形成、地表起伏为开阔草丘，伊特巴亚特岛则由板块构造运动抬升而成、以更陡峭的悬崖地貌为特征；伊特巴亚特岛是菲律宾最北端的有人岛屿，当地伊瓦坦族保留独特的石屋建筑传统（Wikipedia WebSearch 2026）",
+  source: "巴丹群岛：菲律宾最北端的岛群，主要由巴丹岛、萨布唐岛与伊特巴亚特岛三座有人居住的岛屿组成；巴丹岛由火山喷发形成、地表起伏为开阔草丘，萨布唐岛与伊特巴亚特岛则主要由珊瑚礁石灰岩经板块构造运动抬升而成、以更陡峭的悬崖地貌为特征；伊特巴亚特岛是菲律宾最北端的有人岛屿，当地伊瓦坦族保留独特的石屋建筑传统（Wikipedia WebSearch 2026）",
 };
 
 const EL_NIDO_BACUIT_ARCHIPELAGO: TerrainEntry = {
@@ -12475,7 +12475,7 @@ const EL_NIDO_BACUIT_ARCHIPELAGO: TerrainEntry = {
   landmark: { name: "巴奎特湾", lon: 119.3833, lat: 11.2000, elevation: 5, kind: "island" },
   bbox: [119.30, 11.12, 119.50, 11.30],
   label: { lon: 119.38, lat: 11.32, rotation: 0 },
-  source: "艾尔尼多—巴奎特群岛：巴拉望岛北端一处由45座石灰岩岛礁组成的群岛，岛礁遍布喀斯特崖壁、落水洞与潟湖，2011年整个区域获认定为UNESCO世界地质公园；“艾尔尼多”（西班牙语意为“巢”）得名于岛礁石灰岩崖壁与洞穴中金丝燕筑巢的现象，是菲律宾知名的跳岛游与潜水目的地（Roughguides/bestdivingphilippines.com WebSearch 2026）",
+  source: "艾尔尼多—巴奎特群岛：巴拉望岛北端一处由45座石灰岩岛礁组成的群岛，岛礁遍布喀斯特崖壁、落水洞与潟湖；“艾尔尼多”（西班牙语意为“巢”）得名于岛礁石灰岩崖壁与洞穴中金丝燕筑巢的现象，是菲律宾知名的跳岛游与潜水目的地（Roughguides/bestdivingphilippines.com WebSearch 2026）",
 };
 
 const TUBBATAHA_REEFS: TerrainEntry = {
@@ -12556,7 +12556,7 @@ const LAKE_LANAO: TerrainEntry = {
   bbox: [124.05, 7.75, 124.45, 8.05],
   viewScale: 1.1,
   label: { lon: 124.25, lat: 7.65, rotation: 0 },
-  source: "拉瑙湖：菲律宾第二大湖，面积约340平方公里，位于棉兰老岛拉瑙德尔苏尔省，是全球现存17处古老湖泊之一，由两条山脉间盆地经构造—火山活动共同抬升阻塞、并伴随一座大型火山塌陷而形成；湖水经阿古斯河向北流出，途经玛丽亚克里斯蒂娜瀑布水电站，为棉兰老岛提供约七成用电；湖中栖息18种菲律宾特有鲤科鱼类（Britannica/dost.gov.ph WebSearch 2026）",
+  source: "拉瑙湖：菲律宾第二大湖，面积约340平方公里，位于棉兰老岛拉瑙德尔苏尔省，是全球为数不多的“古老湖泊”之一，由两条山脉间盆地经构造—火山活动共同抬升阻塞、并伴随一座大型火山塌陷而形成；湖水经阿古斯河向北流出，途经玛丽亚克里斯蒂娜瀑布水电站，长期是棉兰老岛主要电力来源之一（近年随煤电扩张占比明显下降）；湖中栖息18种菲律宾特有鲤科鱼类（Britannica/dost.gov.ph WebSearch 2026）",
 };
 
 const AGUSAN_MARSH: TerrainEntry = {
@@ -12583,7 +12583,7 @@ const HUNDRED_ISLANDS_NATIONAL_PARK: TerrainEntry = {
   landmark: { name: "总督岛", lon: 119.90, lat: 16.20, elevation: 5, kind: "island" },
   bbox: [119.83, 16.14, 119.98, 16.28],
   label: { lon: 119.90, lat: 16.11, rotation: 0 },
-  source: "百岛国家公园：吕宋岛西北部林加延湾内一处岛礁群，退潮时共有124座、涨潮时123座石灰岩岛屿，散布面积约1844公顷；岛群基底为珊瑚礁构造、地表岩体距今约200万年，1940年设立为菲律宾首座国家公园（Wikipedia/nationalparks.org WebSearch 2026）",
+  source: "百岛国家公园：吕宋岛西北部林加延湾内一处岛礁群，退潮时共有124座、涨潮时123座石灰岩岛屿，散布面积约1844公顷；岛群基底为珊瑚礁构造、地表岩体距今约200万年，1940年设立为国家公园，常被称为菲律宾“第一座国家公园”，但阿波山1936年、马荣火山1938年更早（Wikipedia/nationalparks.org WebSearch 2026）",
 };
 
 const VERDE_ISLAND_PASSAGE: TerrainEntry = {
@@ -12596,7 +12596,7 @@ const VERDE_ISLAND_PASSAGE: TerrainEntry = {
   landmark: { name: "维德岛", lon: 121.0667, lat: 13.5333, elevation: 5, kind: "island" },
   bbox: [120.85, 13.35, 121.35, 13.75],
   label: { lon: 121.05, lat: 13.28, rotation: 0 },
-  source: "维德岛海峡：巴丹加斯、民都洛、马林杜克与朗布伦四省之间一条狭窄海峡水道，被学界公认为全球海洋鱼类物种多样性“中心之中心”，已记录珊瑚物种逾400种；海峡内设有36处海洋保护区（巴丹加斯24处、东民都洛12处），2010年获国际海洋保护组织“使命蓝”认定为重要海洋生态热点（pemsea.org/calacademy.org WebSearch 2026）",
+  source: "维德岛海峡：巴丹加斯、民都洛、马林杜克与朗布伦四省之间一条狭窄海峡水道，被学界公认为全球海洋鱼类物种多样性“中心之中心”，已记录珊瑚物种逾300种；海峡内设有36处海洋保护区（巴丹加斯24处、东民都洛12处），2023年获国际海洋保护组织“使命蓝”认定为“希望之点”（Hope Spot）（pemsea.org/calacademy.org WebSearch 2026）",
 };
 
 // ============================================================
@@ -14307,7 +14307,7 @@ const GORSKI_KOTAR: TerrainEntry = {
   bbox: [14.45, 45.28, 14.85, 45.55],
   viewScale: 1.2,
   label: { lon: 14.55, lat: 45.57, rotation: 0 },
-  source: "戈尔斯基科塔尔：克罗地亚山地覆盖率最高、森林最茂密的地区，地处阿尔卑斯山系与第纳里克山系的过渡地带，里斯尼亚克峰海拔1528米；1997年设立的里斯尼亚克国家公园内还保留库帕河源头——一处深潭状泉眼，是克罗地亚重要的水源涵养区（Wikipedia/np-risnjak.hr WebSearch 2026）",
+  source: "戈尔斯基科塔尔：克罗地亚山地覆盖率最高、森林最茂密的地区，地处阿尔卑斯山系与第纳里克山系的过渡地带，里斯尼亚克峰海拔1528米；里斯尼亚克国家公园（1953年设立、1997年扩大至现有范围）内还保留库帕河源头——一处深潭状泉眼，是克罗地亚重要的水源涵养区（Wikipedia/np-risnjak.hr WebSearch 2026）",
 };
 
 const PAPUK: TerrainEntry = {
@@ -14491,7 +14491,7 @@ const SAVA_RIVER_CROATIA: TerrainEntry = {
   axis: [[15.65, 45.75], [16.55, 45.40]],
   viewScale: 1.3,
   label: { lon: 16.10, lat: 45.90, rotation: -15 },
-  source: "萨瓦河：多瑙河最长的支流，全长992公里，发源于斯洛文尼亚阿尔卑斯山区，流经萨格勒布后向东南穿过克罗地亚中部，是克罗地亚水量最大的河流与重要的内河航运通道，河谷沿线是克罗地亚人口最密集的农业与城市带之一，锡萨克以下可通航（Wikipedia WebSearch 2026）",
+  source: "萨瓦河：多瑙河水量最大的支流，全长945公里（计入较长的源头萨瓦多林卡河为990公里），发源于阿尔卑斯山区，流经萨格勒布后向东南穿过克罗地亚中部，是克罗地亚水量最大的河流与重要的内河航运通道，河谷沿线是克罗地亚人口最密集的农业与城市带之一，锡萨克以下可通航（国际萨瓦河流域委员会 / ICPDR，核实 2026-09-11）",
 };
 
 const DRAVA_RIVER_CROATIA: TerrainEntry = {
