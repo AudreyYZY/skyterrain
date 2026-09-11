@@ -11991,6 +11991,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Luxembourg ============
   "oesling-plateau": {
+    // 全六段 sources: 克奈夫峰 560 m 为卢森堡最高点 —— 1952 年起长期认为邻近的布尔格普拉茨峰（约 558–559 m）更高，**1997 年 GPS 复测纠正**；ACT 2003 年地图标注 Kneiff 560 / Buurgplaatz 559。正文把这段更正史写进去了，是正确处理。核实 2026-09-11，未改动
     seeing:
       "The Oesling covers about a third of northern Luxembourg's territory, an eastward extension of the Ardennes; its highest point, the Kneiff, reaches 560 m, the highest point in the country.",
     formation:
@@ -12015,10 +12016,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Minett and the Oesling are important uplifted landforms in Luxembourg, but Minett is known for its iron-mining history and reddish-brown soil, while the Oesling is known for its ancient plateau landform extending from the Ardennes.",
     concept:
       "Minett's oolitic iron-ore layer is a classic geological sample for studying how a Jurassic shallow-sea sedimentary environment can produce economically valuable iron-ore resources, and it forms the geological foundation of Luxembourg's industrial history.",
+    // history sources: 米内特生物圈保护区 2020-10-28 设立，为**卢森堡单一国家**保护区（11 个市镇、约 200 km²），是该国首个也是唯一一个（unesco.org/en/mab/minett，1 级）。法国 Pays Haut Val d'Alzette 正另行申请、尚未获批；比利时未参与 —— 原文把「未来或可整合」写成了「已经共同列入」。核实 2026-09-11
     history:
-      "From the late 19th through the 20th century, Minett's iron-ore mining made Luxembourg one of Europe's important steel producers; in 2020 the region, together with cross-border areas in France and Belgium, was designated the UNESCO Minett Biosphere Reserve.",
+      "From the late 19th through the 20th century, Minett's iron-ore mining made Luxembourg one of Europe's important steel producers; in 2020 the region was designated the UNESCO Minett Biosphere Reserve, Luxembourg's first and so far only biosphere reserve; a neighbouring part of France is separately seeking its own designation, with cross-border integration a possibility for the future rather than something that already exists.",
   },
   "our-valley": {
+    // 全六段 sources: 维安登城堡 275 年为罗马哨所、约公元 1000 年建首座中世纪石堡、11–13 世纪历次扩建，正文「始建于10世纪」与官方时间线吻合；雨果 1871-06-08 至 08-22 在此避难约三个半月并作《恐怖的年代》。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Our Valley is a deeply cut valley where the Our River cuts through the Oesling plateau, forming the border between Luxembourg and Germany; Vianden Castle stands on a cliff above the valley.",
     formation:
@@ -12033,6 +12036,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Vianden Castle was first built in the 10th century and expanded many times since, one of the largest surviving feudal castles in Luxembourg; the 19th-century French writer Victor Hugo lived in exile here and wrote about the area.",
   },
   "clerve-valley": {
+    // 全六段 sources: 克莱尔沃城堡始建于 12 世纪（最古老的西翼可溯至 Gerhard of Sponheim 伯爵）；1944-12-16 至 18 的克莱尔沃战役是突出部战役开场战斗之一，城堡在此役被毁、战后由政府修复。按判据这是已结束、无持续对立的军事地理史实，保留。核实 2026-09-11，未改动
     seeing:
       "The Clerve Valley is a narrow valley where the Clerve River (a tributary of the Our) cuts through the Oesling plateau; the town of Clervaux is built along both banks of the valley.",
     formation:
@@ -12047,6 +12051,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Clervaux Castle was first built in the 12th century; the area was an important battlefield during the Battle of the Bulge in the Second World War, and the castle and valley still bear traces of this history.",
   },
   "eisch-valley": {
+    // 全六段 sources: 七堡多建于 11–13 世纪（安森堡老堡 1135 年首见文献、霍伦费尔斯堡 11 世纪起源、舍恩费尔斯堡 13 世纪主楼）；谷地自罗马—中世纪起有冲积铁矿与木炭熔炼、1564 年已有小型高炉，正文只称「繁荣」未夸大为工业化；七堡步道 37 km。核实 2026-09-11，未改动
     seeing:
       "The Eisch Valley is informally known as the \"Valley of the Seven Castles\" for the seven medieval castles found along it; most of the valley forms one of the largest nature reserves in Luxembourg.",
     formation:
@@ -12061,6 +12066,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Most of the valley's seven castles were built between the 11th and 13th centuries; the region once thrived on steel production, but nature has since reclaimed the area, and a roughly 37-km footpath now links the castles along the valley.",
   },
   "moselle-valley-lu": {
+    // 全六段 sources: 葡萄种植可溯至罗马时期 —— **与本库德国侧 moselle-valley 条目并排读一致**（同一条河、同一段种植传统史，两侧无冲突）。核实 2026-09-11，未改动
     seeing:
       "The Luxembourg section of the Moselle Valley: the Moselle forms the border between Luxembourg and Germany, and the gentle slopes along its banks make up Luxembourg's only wine-growing region.",
     formation:
@@ -12075,8 +12081,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Winegrowing in the Moselle Valley traces back to Roman times, one of Luxembourg's oldest agricultural traditions; riverside towns such as Remich still rely on the wine industry as a key economic pillar today.",
   },
   "upper-sure-lake": {
+    // seeing sources: 大坝 1956 动工 / 1957 建成 / 1959 首次蓄满；湖面约 3.8 km²（380 ha）；供应约 70% **人口**（非「家庭」）的饮用水 —— 均为 SEBES 与公共工程部官方口径（1 级）。原写的「1961 年」不对应任何一个官方节点；「3.08 km²」疑为小数点错位。核实 2026-09-11
     seeing:
-      "The Upper Sûre Lake is an artificial reservoir formed in 1961 by damming the Sûre, covering about 3.08 km² and supplying about 70% of Luxembourg's households with drinking water.",
+      "The Upper Sûre Lake is an artificial reservoir created by damming the Sûre in the late 1950s — the dam was begun in 1956, built in 1957 and first filled in 1959 — covering about 3.8 km² and supplying drinking water to about 70% of Luxembourg's population.",
     formation:
       "The lake was created artificially by a dam across the Sûre's channel, flooding the original valley; the shoreline follows the original valley's winding contours.",
     observation:
@@ -12086,9 +12093,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "As Luxembourg's single most important drinking-water source, the Upper Sûre Lake is a classic case for studying how a small landlocked country secures its water supply through an artificial reservoir project.",
     history:
-      "The dam was completed in 1961, an important piece of post-war Luxembourg water infrastructure; the surrounding Upper Sûre Nature Park is now an important area for ecotourism and recreation in Luxembourg.",
+      "The dam was begun in 1956 and built in 1957, an important piece of post-war Luxembourg water infrastructure; the surrounding Upper Sûre Nature Park is now an important area for ecotourism and recreation in Luxembourg.",
   },
   "sure-river": {
+    // 全六段 sources: 全长约 206 km、境内约 136 km —— 采**卢森堡本国官方口径**（政府环境门户 environnement.public.lu 1 级 + 官方旅游局 2 级，境内另有 135 km 的四舍五入版本）。⚠️ 英文维基给总长 173 km，与本国官方及法语维基（206 km）冲突，若日后查明换算方式不同需回来复核。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Sûre rises in Belgium and flows through northern and central Luxembourg, running about 206 km in total (about 136 km within Luxembourg) — the longest river in the country.",
     formation:
@@ -12103,6 +12111,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Riverside towns such as Diekirch historically grew up around navigation and trade on the Sûre; today the river's banks are an important area for history, culture and outdoor recreation in Luxembourg.",
   },
   "alzette-river": {
+    // 全六段 sources: 源出法国默尔特—摩泽尔省 Villerupt 附近的 Thil，向北流经卢森堡市；深切砂岩台地成峡谷、塑造老城防御地形，与 luxembourg-plateau 条目并读一致。核实 2026-09-11，未改动
     seeing:
       "The Alzette rises in France and flows north through Luxembourg City, the capital, and the southern Minett industrial region — the main river running through Luxembourg's most densely populated area.",
     formation:
@@ -12117,6 +12126,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Minett industrial region along the river's southern stretch historically thrived on iron-ore mining, the birthplace of Luxembourg's industrialisation; Luxembourg City's old town, along the river's middle stretch, has been a strategic site since the 10th century thanks to the natural defensive advantage of the gorge.",
   },
   "mullerthal-berdorf": {
+    // 全六段 sources: 米勒达尔的「卢森堡小瑞士」别称、砂岩迷宫地貌、贝多夫石柱岩缝均为公认事实；Mullerthal Trail 以该区域为核心路段。核实 2026-09-11，未改动
     seeing:
       "The Mullerthal region is known as Luxembourg's \"Little Switzerland\" for its heavily eroded sandstone landforms; the area around Berdorf is densely packed with honeycomb-like sandstone pillars and narrow rock passages.",
     formation:
@@ -12131,6 +12141,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local place names such as \"Wollefsschlucht\" (Wolf's Gorge) record long-standing local folklore; the Mullerthal region has been an important Luxembourg nature-tourism destination since the 19th century, and is now the core area of the long-distance Mullerthal Trail.",
   },
   schiessentumpel: {
+    // 全六段 sources: 砂岩拱桥由石匠 Jean-Pierre Prommenschenkel 于 1879-03-20 至 07-27 建成（仅四个月），桥上有鳄鱼头、蜗牛等雕刻。核实 2026-09-11，未改动
     seeing:
       "The Schiessentümpel is a small, three-tiered cascading waterfall in the Mullerthal region; a sandstone arch bridge built in front of it in 1879 has become an iconic sight of the area.",
     formation:
@@ -12145,6 +12156,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The sandstone arch bridge in front of the waterfall was built in 1879 and remains in use more than a century later, now an iconic sight and popular photo spot in Luxembourg's \"Little Switzerland.\"",
   },
   "luxembourg-plateau": {
+    // 全六段 sources: 963 年西格弗里德伯爵在博克岩建 Lucilinburhuc 城堡，为卢森堡建城起点（卢森堡政府官网，1 级）；老城与要塞 1994-12-17 列入 UNESCO（whc.unesco.org/en/list/699，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Luxembourg Plateau is a sandstone plateau in south-central Gutland where the capital, Luxembourg City, is built; gorges cut by the Alzette and Pétrusse rivers surround the old town.",
     formation:
@@ -12161,6 +12173,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Vietnam ============
   fansipan: {
+    // 全六段 sources: 3147 m（2019 年复测）为越南与中南半岛最高峰；山体为约 250–260 Ma 二叠—三叠之交的花岗质侵入体；法属时期测绘首测 3143 m。核实 2026-09-11，未改动
     seeing:
       "Fansipan is the highest peak in Vietnam and mainland Southeast Asia at 3,147 m, the high point of the Hoang Lien Son range, cold year-round, its summit preserving a cloud-forest and alpine vegetation ecosystem.",
     formation:
@@ -12175,6 +12188,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The peak sits within Hoang Lien National Park, an important nature reserve in Vietnam; it was surveyed and confirmed as mainland Southeast Asia's highest point during the French colonial period.",
   },
   "phong-nha-ke-bang": {
+    // 全六段 sources: 石灰岩演化约 4 亿年（古生代泥盆—石炭纪），为亚洲现存最古老、最大的喀斯特之一；UNESCO 三期未串位 —— 2003 年首次列入（标准 viii）、2015 年依生物多样性标准扩展（85,754 → 126,236 ha）、2026-06-05 第 38 届 MAB-ICC 认定为世界生物圈保护区（1 级）。洞穴总长见 issue。核实 2026-09-11
     seeing:
       "Phong Nha-Ke Bang is a karst mountain area in central Vietnam along the Laos border, with over 220 km of documented caves and underground waterways, home to Son Doong, the world's largest natural cave.",
     formation:
@@ -12189,6 +12203,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Inscribed on the UNESCO World Heritage List in 2003, with the listing extended in 2015 following new cave discoveries, and recognised as a UNESCO Biosphere Reserve in 2026.",
   },
   "ba-na-hills": {
+    // 全六段 sources: 1487 m；山顶较沿海低约 7–10°C，正文「约10摄氏度」落在区间内；法属时期山顶避暑山庄史实属实。核实 2026-09-11，未改动
     seeing:
       "Ba Na Hills is a 1,487 m peak west of Da Nang, its summit climate roughly 10°C cooler than the coastal city below, and a well-known highland tourist destination in central Vietnam.",
     formation:
@@ -12203,6 +12218,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "French colonial authorities built a hill-station retreat at the summit in the early 20th century; today the summit is reachable by cable car, continuing this area's historic role as a mountain retreat.",
   },
   "bach-ma-mountain": {
+    // 全六段 sources: 1448 m；1932-07 法国工程师 Girard 勘定为避暑山庄选址 → 1934 年道路完工 → 1936 年首批别墅法令 → 1942 年建成约 139 栋，正文「十年间约140座」与之相符；1991 年设为国家公园。核实 2026-09-11，未改动
     seeing:
       "Bach Ma is a 1,448 m peak between Hue and Da Nang; French colonial authorities built a hill-station retreat here in 1932, and weathered French villa ruins remain scattered across the mountainside today.",
     formation:
@@ -12217,6 +12233,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1932 the French engineer Girard selected the summit as a hill-station retreat for the colonial administration of Hue; about 140 buildings were built over the following decade, and the mountain was designated a national park in 1991.",
   },
   "dong-van-karst-plateau": {
+    // 全六段 sources: 2010-10-03 列入 UNESCO 世界地质公园网络，为**越南首个**（东南亚第二个）—— 未与越南其他地质公园（Dak Nong 2020、Lang Son 2024）串位；面积各来源 2265.7–2356 km²，正文「约2345」落在区间内。⚠️ 两次大灭绝的表述里，第一次严格说是晚泥盆世 F-F 事件（约 364 Ma，位于泥盆纪内部）而非泥盆—石炭系界线，多数资料同样用通俗说法，暂不改。族群定居年代见 issue。核实 2026-09-11
     seeing:
       "The Dong Van Karst Plateau is a karst tableland covering the four northernmost districts of Ha Giang Province, Vietnam's northernmost province, spanning about 2,345 km²; in 2010 it became Vietnam's first UNESCO Global Geopark.",
     formation:
@@ -12231,6 +12248,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The plateau is home to 17 ethnic groups including the Hmong, Lo Lo, and Bo Y, some of whom have lived here for 500 to 800 years, their terraced farming traditions closely interwoven with the karst landscape.",
   },
   "central-highlands-tay-nguyen": {
+    // 全六段 sources: 海拔约 500–1500 m；玄武岩红土；大叻 1893 年由耶尔森发现并经法方开发为避暑地。⚠️ 红线自查：正文只写高原地貌、玄武岩土壤与咖啡种植这类地理—农业事实，**未涉族群构成、移民或土地议题**。核实 2026-09-11，未改动
     seeing:
       "The Central Highlands (Tây Nguyên) is a collective name for a series of connected plateaus in south-central Vietnam at roughly 500–1,500 m elevation, the country's main coffee-growing region.",
     formation:
@@ -12255,8 +12273,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cat Ba Island and Ha Long Bay belong to the same limestone karst geological unit, but Cat Ba is a comparatively intact large island preserving multiple terrestrial ecosystems, while Ha Long Bay is known for its scattered tower-shaped islets.",
     concept:
       "Cat Ba Island hosts a range of ecosystems including subtropical evergreen forest, freshwater swamp forest, mangroves, and coral reefs, making it an important sample for studying ecosystem diversity on limestone islands.",
+    // history sources: 全岛约 354 km²，1986 年设国家公园（含约 90 km² 近岸水域）；2023-09-16 经边界修改与下龙湾合并为跨省遗产 —— 原文写「近年」，既会过期又把一个有确切日期的事件写成了趋势。核实 2026-09-11
     history:
-      "Designated a national park in 1986, one of Vietnam's earlier national parks, and has drawn renewed attention in recent years as its surrounding waters were included in an expanded World Heritage nomination alongside Ha Long Bay.",
+      "Designated a national park in 1986, one of Vietnam's earlier national parks; in 2023 a World Heritage boundary modification merged it with Ha Long Bay into the cross-provincial Ha Long Bay - Cat Ba Archipelago site.",
   },
   "con-dao": {
     seeing:
@@ -12269,10 +12288,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Con Dao and Phu Quoc are both important islands in southern Vietnam, but Con Dao is smaller and known for nature conservation and historic sites, while Phu Quoc is larger and known for large-scale tourism development.",
     concept:
       "The waters around Con Dao are an important nesting site for green sea turtles in Vietnam, making it an important sample for studying marine ecological conservation on tropical islands.",
+    // history sources: 16 座岛屿、主岛昆山岛最大、1993 年设为国家公园（覆盖 16 岛中 14 岛、约 2 万 ha，昆岛国家公园官网 1 级）；周边海域约占越南绿海龟产卵量九成，正文用「重要产卵地之一」更保守。⚠️ history 段原写的 20 世纪监狱史按零争议红线移除。核实 2026-09-11
     history:
-      "Con Dao held a prison facility during the 20th-century French colonial period; today the related historic sites coexist with the nature reserve, making it an important historical and ecological tourism destination in Vietnam.",
+      "The whole archipelago was designated Con Dao National Park in 1993, an important nature reserve and a key habitat for marine life including green sea turtles.",
   },
   "phu-quoc": {
+    // 全六段 sources: ⚠️ 口径提示 —— 589 km² 对应的是**富国特区**（含周边 28 座小岛）总面积，仅主岛约 574 km²，两个数都见于官方/旅游资料、差约 2.6%；下轮考虑在正文写明口径。核实 2026-09-11，未改动
     seeing:
       "Phu Quoc is Vietnam's largest island, covering about 589 km², with more than half its area forested within Phu Quoc National Park.",
     formation:
@@ -12287,6 +12308,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "An important island tourism destination in southern Vietnam; rapid infrastructure development in recent years has made it one of Vietnam's more internationally open tourist islands.",
   },
   "ly-son-island": {
+    // 全六段 sources: 五座命名火山口（Thoi Loi / Gieng Soi / Gieng Tien / Chua Hang / Hang Cau）与大蒜种植地位均确认（岛上另有约 10 处火山口遗迹、含 3 处海底，正文取地表五座不冲突）；整体成因约 25–30 Ma，个别火山口另有 9–11 Ma 的定年，正文「多期次」已隐含这一点。核实 2026-09-11，未改动
     seeing:
       "Ly Son is a volcanic island off the coast of Quang Ngai Province in central Vietnam; its five dormant volcanic craters are named after the five classical elements, and the island is an important garlic-growing area.",
     formation:
@@ -12301,6 +12323,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The island's long-standing garlic-growing tradition is closely tied to the fertility of its volcanic-ash soil, a classic case of Vietnamese coastal-island agriculture depending on geological conditions.",
   },
   "cu-lao-cham": {
+    // 全六段 sources: 「占婆岛—会安」生物圈保护区 2009-05-26 经 UNESCO MAB 国际协调理事会批准；会安古城本身 1999 年列入文化遗产，两个年份未混淆。核实 2026-09-11，未改动
     seeing:
       "Cu Lao Cham is a group of islands downstream of the Thu Bon River's mouth; in 2009 the \"Cu Lao Cham-Hoi An\" Biosphere Reserve was inscribed on UNESCO's World Network of Biosphere Reserves.",
     formation:
@@ -12325,10 +12348,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ha Long Bay and Cat Ba Island belong to the same limestone karst geological unit, but Ha Long Bay is known for its scattered tower islets on open water, while Cat Ba is a comparatively intact large island.",
     concept:
       "Ha Long Bay's drowned karst landform is a classic case for studying how sea-level change transforms a terrestrial karst-tower landscape into an offshore island group.",
+    // history sources: 海域约 1553 km²、岛屿数各口径 1133（严格遗产区内）–1969（含未命名小岛），正文「约1600座」落在区间内；UNESCO 三期 —— 1994-12-17 依标准 vii（景观美学）首次列入、2000-11-29 依标准 viii（地质地貌）扩展、2023-09-16 边界修改与吉婆群岛合并为跨省遗产（whc.unesco.org/en/list/672，1 级）。**原文把 1994/2000 两期的依据标准对调了，且漏掉 2023 这一期。** 核实 2026-09-11
     history:
-      "Inscribed on the UNESCO World Heritage List twice — in 1994 for its geological and geomorphological value, and in 2000 for its scenic and aesthetic value — Ha Long Bay is one of Vietnam's most iconic natural landscapes.",
+      "Inscribed on the UNESCO World Heritage List twice — in 1994 for its scenic and aesthetic value (criterion vii), and in 2000 for its geological and geomorphological value (criterion viii) — and extended in 2023 by a boundary modification that merged it with the Cat Ba Archipelago as the cross-provincial Ha Long Bay - Cat Ba Archipelago site, Ha Long Bay is one of Vietnam's most iconic natural landscapes.",
   },
   "mui-ne-dunes": {
+    // 全六段 sources: 红沙丘因沉积物富含氧化铁而呈橙红色；美奈自 20 世纪末由渔村发展为风筝冲浪与沙丘旅游地。核实 2026-09-11，未改动
     seeing:
       "The Mui Ne Dunes are a field of red and white sand dunes on the south-central Vietnamese coast, built up from coastal sand long carried by prevailing winds.",
     formation:
@@ -12343,6 +12368,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mui Ne has developed since the late 20th century from a fishing village into a well-known Vietnamese destination for kitesurfing and dune tourism.",
   },
   "nha-trang-bay": {
+    // 全六段 sources: 琴石岬为石英、长石、云母构成的花岗岩，经潮汐与风化侵蚀成层叠巨石。核实 2026-09-11，未改动
     seeing:
       "Nha Trang Bay is an open bay on Vietnam's south-central coast, scattered with islands and coral reefs, and an important diving and bay-tourism destination in the country.",
     formation:
@@ -12357,6 +12383,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Nha Trang has developed since the 20th century into an important Vietnamese seaside resort city; its island and coral-reef resources have made it a popular diving destination.",
   },
   "ba-be-lake": {
+    // 全六段 sources: 由三段相连水域（Pe Leng / Pe Lu / Pe Lam）组成，「巴别」即「三个湖湾」；公认为越南最大天然淡水湖；1992 年设为国家公园（越南第 8 座）。核实 2026-09-11，未改动
     seeing:
       "Ba Be Lake is a natural freshwater lake in northern Vietnam, actually made up of three connected bodies of water, and one of the largest natural lakes in the country.",
     formation:
@@ -12371,6 +12398,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1992, Ba Be is an important area for ecotourism and ethnic-minority communities in northern Vietnam.",
   },
   "lak-lake": {
+    // 全六段 sources: 距邦美蜀市中心各来源 50–56 km，正文「约55公里」落在区间内；玄武岩高原地表径流汇聚成湖。核实 2026-09-11，未改动
     seeing:
       "Lak Lake is a natural freshwater lake in Dak Lak Province on the Central Highlands, about 55 km from the centre of Buon Ma Thuot, with a rich surrounding ecosystem.",
     formation:
@@ -12385,6 +12413,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake's surrounding ecosystem is home to several species listed in Vietnam's Red Data Book of endangered species, making it an important ecological conservation area on the Central Highlands.",
   },
   "red-river": {
+    // 全六段 sources: 全长约 1149 km（各来源 1149–1200 收敛），源出中国云南、经河内注入北部湾。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Red River rises in China's Yunnan province, flows through north-western Vietnam, and joins Vietnam's lowland river system near Hanoi, running about 1,149 km in total and the main river system of northern Vietnam.",
     formation:
@@ -12399,6 +12428,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Red River's banks have long been the core area of population and civilisation in northern Vietnam, and Hanoi has developed around this river system to this day.",
   },
   "mekong-river-vn": {
+    // 全六段 sources: ✅ **本条没给湄公河总长数字**，恰好避开了同批泰国条目那个「各口径 4350–4909 km 差异极大」的坑 —— 进越南后分前江、后江两支、南部多口入海，只写可核的分流事实。核实 2026-09-11，未改动
     seeing:
       "Within Vietnam the Mekong splits into two main branches, the Tien and Hau rivers, with a dense network of channels before finally splitting into multiple mouths along Vietnam's southern coast.",
     formation:
@@ -12413,6 +12443,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Riverside towns such as My Tho have long served as important water-transport trading posts in southern Vietnam, and the Mekong's water system remains central to local livelihoods today.",
   },
   "perfume-river": {
+    // 全六段 sources: 阮朝 1802–1945 年定都顺化；顺化古迹群 1993-12 列入 UNESCO，为越南首个世界遗产（whc.unesco.org/en/list/678，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Perfume River rises in the Truong Son Range, flows through the former Vietnamese capital of Hue, and empties into a coastal lagoon; it takes its name from the faint fragrance the water carries after cinnamon bark and medicinal herbs fall into it from the forests along its course.",
     formation:
@@ -12427,6 +12458,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Nguyen dynasty (1802–1945) made Hue its capital; the imperial citadel and tombs along the Perfume River bear witness to the rise and fall of Vietnam's last feudal dynasty, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
   },
   "trang-an-landscape-complex": {
+    // 全六段 sources: 面积 6226 ha；石灰岩演化逾 2.5 亿年；洞穴考古显示逾 3 万年连续人类活动；2014 年列入，为**越南首个文化与自然混合遗产**。核实 2026-09-11，未改动
     seeing:
       "The Trang An Landscape Complex is a valley in Ninh Binh Province where karst towers interweave with underground waterways, covering about 6,226 ha, its valleys threaded with submerged caves navigable by small boat.",
     formation:
@@ -12441,6 +12473,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Archaeological findings confirm roughly 30,000 years of continuous human adaptation to the changing environment in this area; in 2014 Trang An was inscribed on the UNESCO World Heritage List as Vietnam's first mixed cultural and natural heritage site.",
   },
   "tu-san-canyon": {
+    // 全六段 sources: 深度各来源 700–800 m 与 900–1000 m 两说，正文取较保守的 700–800 m（越通社 VietnamPlus，2 级）；马匹粮山口为经典观景点。⚠️ 红线：正文只写峡谷与观景，未涉边界。核实 2026-09-11，未改动
     seeing:
       "Tu San Canyon, on the Dong Van Karst Plateau, is one of the deepest canyons in Southeast Asia at roughly 700–800 m deep; the Ma Pi Leng Pass is the classic viewpoint for the full canyon.",
     formation:
@@ -12457,18 +12490,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ban-gioc-waterfall": {
     seeing:
       "Ban Gioc Waterfall, on the Quay Son River at the Vietnam-China border, is about 300 m wide with a drop of about 30 m — Asia's largest transboundary waterfall and the largest waterfall in Vietnam.",
+    // 全六段 sources: ⚠️ 零争议红线 —— 原 formation / concept / history 三段都把**边界线**写进了正文（「沿边境线一分为二」「国际边界线自然划定」「沿边境线分布」），本轮一并改为纯地貌表述。瀑布宽约 300 m、落差约 30 m、为亚洲规模最大的跨境瀑布，这些是中性地理事实、保留；「跨境河流」作为中性地理描述也保留（与本库克罗地亚等国的处理一致）。核实 2026-09-11
     formation:
-      "The bedrock of this river stretch is limestone; long water erosion has shaped a stepped cascade in the riverbed, and the waterfall is naturally divided in two along the river's border line.",
+      "The bedrock of this river stretch is limestone; long water erosion has shaped a stepped cascade in the riverbed, and near the top the flow is split by an island in the river into a main fall and a smaller secondary one, each dropping as its own curtain of water.",
     observation:
       "From the air, Ban Gioc's water drops in several tiers, limestone cliffs and karst landforms on both banks setting off the scene, with a clear emerald pool below the falls.",
     distinguish:
       "Ban Gioc Waterfall and Tu San Canyon are both landforms shaped by flowing water, but Ban Gioc is a stepped waterfall on a transboundary river, while Tu San Canyon is a deep-cut gorge on the plateau.",
     concept:
-      "As Asia's largest transboundary waterfall, Ban Gioc is a sample for studying the relationship between transboundary river landforms and the natural delineation of international borders.",
+      "As Asia's largest transboundary waterfall, Ban Gioc is a sample for studying how long-term river erosion shapes a stepped waterfall.",
     history:
-      "The waterfall follows the natural border line formed by the Quay Son River, making it a well-known natural landmark along the Vietnam-China border.",
+      "The waterfall lies on a downstream stretch of the Quay Son River and is a well-known natural landmark in the area.",
   },
   "red-river-delta": {
+    // 全六段 sources: ✅ **口径分得很清**：越南统计口径里「红河三角洲经济社会区」（含 11 省市的行政规划区）约 2.13 万 km²，而地貌意义上的冲积平原本身约 1.5 万 km² —— 正文写的是「三角形冲积平原」，采用地貌口径正确，**没有与行政区划口径混淆**。河内（升龙）1010 年李朝定都。核实 2026-09-11，未改动
     seeing:
       "The Red River Delta is a triangular alluvial plain built up by long-term sediment deposition from the Red River and its tributaries, covering about 15,000 km² and one of Vietnam's two main agricultural core regions.",
     formation:
@@ -12483,6 +12518,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Red River Delta has long been the most densely populated and agriculturally developed region of northern Vietnam, and Hanoi's history as a capital dates back to the 11th century.",
   },
   "mekong-delta": {
+    // 全六段 sources: 越南境内约 3.9–4.05 万 km²；✅ 正文写「世界最大河流三角洲**之一**」而非具体排名（公认排在亚马逊、恒河—布拉马普特拉之后第三），**说不出精确排名就降级为不带排名的表述**，符合本库规范。核实 2026-09-11，未改动
     seeing:
       "The Mekong Delta is the vast alluvial plain the Mekong builds in southern Vietnam before reaching the sea, covering about 39,000 km² and one of the largest river deltas in the world.",
     formation:
@@ -12507,11 +12543,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ngu Hanh Son and Ba Na Hills are both representative landforms around Da Nang, but Ngu Hanh Son is a set of low coastal hills known for its marble caves and religious grottoes, while Ba Na Hills is a high-elevation peak known for its cloud climate and cable-car resort.",
     concept:
       "Ngu Hanh Son's hills rising independently from flat land are a sample for studying how a marble body left standing as isolated residual hills through differential weathering on flat terrain.",
+    // history sources: 原文把佛教与印度教造像统一归为「阮朝以来」—— 印度教造像可追溯至更早的占婆时期，只有佛教造像与摩崖石刻多为阮朝以来。本轮只去掉被证伪的统一归期、不补未查实的断代，精确年代见 issue。核实 2026-09-11
     history:
-      "The hills contain numerous Buddhist and Hindu rock-cut sculptures dating from the Nguyen dynasty onward, making it an important religious and geological tourism site in central Vietnam.",
+      "The hills contain numerous Buddhist and Hindu rock-cut sculptures from a range of periods, making it an important religious and geological tourism site in central Vietnam.",
   },
   // ============ Thailand ============
   "doi-inthanon": {
+    // 全六段 sources: 茵他侬山 2565 m 为泰国最高峰；国家公园 1972-10-02 设立；山名取自关注森林保护的清迈王 Inthawichayanon。核实 2026-09-11，未改动
     seeing:
       "Doi Inthanon is Thailand's highest peak at 2,565 m, a granite batholith and the high point of the Thanon Thongchai Range in northern Thailand.",
     formation:
@@ -12526,8 +12564,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Named for the late Chiang Mai ruler Inthawichayanon, who was concerned about deforestation in the north during his lifetime; designated a national park in 1972.",
   },
   "doi-luang-chiang-dao": {
+    // seeing sources: 「泰国第三高峰」属实（次于因通山 2565 m、帕黑山 2296 m）；海拔各来源分歧达 100 m（2175 / 2225 / 2275），**没有一个支持原写的 2138**，故写区间不择一；清道山生物圈保护区 2021-09-15 列入 UNESCO MAB，为泰国第五个（1 级）。核实 2026-09-11
     seeing:
-      "Doi Luang Chiang Dao is Thailand's third-highest peak at 2,138 m, a limestone karst massif riddled with one of the country's largest cave systems.",
+      "Doi Luang Chiang Dao is Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems.",
     formation:
       "The massif's bedrock is Palaeozoic limestone; long dissolution by groundwater has carved an extensive cave network, leaving a steep, jagged outline that contrasts sharply with the rounded granite peaks nearby.",
     observation:
@@ -12540,6 +12579,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2021 the Doi Luang Chiang Dao Biosphere Reserve was added to UNESCO's Man and the Biosphere Programme, an important conservation area in northern Thailand.",
   },
   "doi-suthep-pui": {
+    // 全六段 sources: 素贴山 1676 m；素贴寺始建于 14 世纪兰纳王国；国家公园 1981-04-14 设立（泰国第 24 座）。核实 2026-09-11，未改动
     seeing:
       "Doi Suthep is a 1,676 m peak west of Chiang Mai; Wat Phra That Doi Suthep, founded on its slope in the 14th century, is one of northern Thailand's most important Buddhist pilgrimage sites.",
     formation:
@@ -12560,14 +12600,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The massif is a granite batholith; long weathering under a wet tropical climate has produced dense vegetation and a well-developed drainage network, with numerous rivers radiating outward from the mountain.",
     observation:
       "From the air, Khao Luang rises high above the narrow southern Thai peninsula, wreathed in cloud year-round; its wet mountain climate sustains dense rainforest and extensive orchards.",
+    // distinguish sources: 考銮山 1780 m 为泰国南部半岛最高点，1974-12-18 设为泰国第 9 座国家公园；与茵他侬山（全境最高 2565 m）直线距离约 1138 km。核实 2026-09-11
     distinguish:
-      "Khao Luang and Doi Inthanon are both among Thailand's highest peaks, but Khao Luang is the high point of the southern peninsula, while Doi Inthanon is the highest point in the country as a whole, several hundred kilometres apart.",
+      "Khao Luang and Doi Inthanon are both among Thailand's highest peaks, but Khao Luang is the high point of the southern peninsula, while Doi Inthanon is the highest point in the country as a whole, over 1,100 km apart in a straight line.",
     concept:
       "As the highest peak on Thailand's narrow southern peninsula, Khao Luang is an important reference for understanding the north-south climate and vegetation contrasts along this elongated landform.",
     history:
       "Designated a national park in 1974; its wet mountain climate has long made it an important fruit-growing region in southern Thailand, with a long history of hillside orchards.",
   },
   "khao-yai": {
+    // 全六段 sources: 1962 年设立，**泰国第一座国家公园**；「丹辇拉扎—考艾森林群」2005 年列入 UNESCO（whc.unesco.org/en/list/590，1 级）。注：此处的丹辇拉扎山脉即 khorat-plateau 条目本轮改正后引用的那条。核实 2026-09-11，未改动
     seeing:
       "Khao Yai is a mountain forest spanning the south-western edge of the Khorat Plateau; designated in 1962, it was Thailand's first national park.",
     formation:
@@ -12582,6 +12624,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated Thailand's first national park in 1962; in 2005 the \"Dong Phayayen–Khao Yai Forest Complex\" was inscribed on the UNESCO World Heritage List.",
   },
   "thung-yai-huai-kha-khaeng": {
+    // 全六段 sources: 面积 622,200 ha、1991 年列入 UNESCO、栖息泰国约 77% 的大型哺乳动物种群 —— 三项均由 UNESCO 官方数据表确认（whc.unesco.org/en/list/591，1 级）。正文只写自然地貌与保护区制度，未涉边境管控或族群，符合红线。核实 2026-09-11，未改动
     seeing:
       "The Thung Yai–Huai Kha Khaeng Wildlife Sanctuaries form a mountain forest along Thailand's border with Myanmar, covering about 622,200 hectares — the largest conservation area remaining in mainland Southeast Asia.",
     formation:
@@ -12606,10 +12649,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Khorat Plateau and Phu Kradueng share the same geological unit, but the Khorat Plateau refers to the vast tableland as a whole, while Phu Kradueng is a single, sharply outlined sandstone mesa on the plateau's eastern side.",
     concept:
       "As one of Thailand's largest landform units, the Khorat Plateau is an important sample for studying the relationship between inland tableland topography and rain-fed agriculture on the Southeast Asian mainland.",
+    // history sources: 高原面积约 155,000 km²、约占泰国国土三成，正文「三分之一」成立；西缘的两条天然分界是碧差汶山脉与丹辇拉扎山脉（Dong Phaya Yen，即本库 khao-yai 条目「丹辇拉扎—考艾森林群」所属那条）——原文把 Phetchabun 的两种转写（碧差汶/佩差邦、Phetchabun/Petchabun）并列成了两条山脉。核实 2026-09-11
     history:
-      "The Phetchabun and Petchabun ranges along the plateau's rim have long formed a natural boundary between central and north-eastern Thailand; the formation of the Isan cultural region is closely tied to this geographic unit.",
+      "The Phetchabun and Dong Phaya Yen ranges along the plateau's rim have long formed a natural boundary between central and north-eastern Thailand; the formation of the Isan cultural region is closely tied to this geographic unit.",
   },
   "phu-kradueng": {
+    // 全六段 sources: 山顶台地约 60 km²、平均海拔约 1200–1250 m；1962-11-23 设立，为泰国第二座国家公园。核实 2026-09-11，未改动
     seeing:
       "Phu Kradueng is a heart-shaped sandstone mesa in Loei Province, north-eastern Thailand, with a summit plateau covering about 60 km² at an average elevation of roughly 1,250 m.",
     formation:
@@ -12624,6 +12669,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated Thailand's second national park in 1962, one of the country's earliest national parks.",
   },
   "similan-islands": {
+    // 全六段 sources: 11 座岛屿（1998 年由 9 座扩至 11 座）、离岸约 70 km、陆地约 26 km²、1982 年设立（DNP 官方，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Similan Islands are a granite archipelago of 11 islands in the Andaman Sea, about 70 km offshore, with a land area of roughly 26 km².",
     formation:
@@ -12638,6 +12684,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1982, the Similan Islands are a well-known diving and snorkelling destination in the Andaman Sea.",
   },
   "surin-islands": {
+    // 全六段 sources: 5 座主要岛屿；1981-07-09 设立（泰国第 29 座国家公园）；莫肯人传统聚居于此。核实 2026-09-11，未改动
     seeing:
       "The Surin Islands are a group of 5 granite islands in the Andaman Sea near the Myanmar border, designated a national marine park in 1981.",
     formation:
@@ -12652,8 +12699,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "One of the traditional settlement areas of Thailand's seafaring Moken people, who have long lived aboard boats and subsisted on marine fishing.",
   },
   "ko-tarutao": {
+    // seeing sources: 达鲁涛 1974-04-19 为泰国**第二座**海洋型国家公园；首座是 1966 年的三百峰山（khao-sam-roi-yot，本库该条目写对了，航线解说 dmk-hkt 也写对了）。原文三段都写成「首座」，与本库自己的条目直接互相证伪。核实 2026-09-11
     seeing:
-      "Ko Tarutao is a limestone-and-sandstone island off Thailand's southernmost coast, the main island of the country's first national marine park, established in 1974.",
+      "Ko Tarutao is a limestone-and-sandstone island off Thailand's southernmost coast, the main island of the country's second national marine park, established in 1974 — the first was Khao Sam Roi Yot, designated in 1966.",
     formation:
       "The island's bedrock combines limestone and sandstone; long dissolution and erosion have shaped several limestone caves and steep cliffs across the island.",
     observation:
@@ -12661,11 +12709,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Ko Tarutao and the Similan Islands are both Thai national marine parks, but Ko Tarutao's bedrock combines limestone and sandstone and preserves extensive primary rainforest, while the Similans are defined by granite boulder landforms.",
     concept:
-      "As the main island of Thailand's first national marine park, Ko Tarutao is a sample for studying landform evolution on islands with mixed limestone-sandstone bedrock.",
+      "As the main island of Thailand's second national marine park, Ko Tarutao is a sample for studying landform evolution on islands with mixed limestone-sandstone bedrock.",
     history:
-      "Designated Thailand's first national marine park in 1974, the starting point of the country's marine protected-area system.",
+      "Designated Thailand's second national marine park in 1974, an early landmark in the country's marine protected-area system, after Khao Sam Roi Yot in 1966.",
   },
   "phi-phi-islands": {
+    // 全六段 sources: 二叠纪石灰岩基岩；玛雅湾 2018-06 起封闭、延长至 2022 年，此后每年 8–9 月季节性封闭 —— 正文「自2018年起阶段性封闭」准确。核实 2026-09-11，未改动
     seeing:
       "The Phi Phi Islands are a group of Permian limestone islands in the Andaman Sea; a narrow sandbar connects Phi Phi Don and Phi Phi Leh.",
     formation:
@@ -12680,6 +12729,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Maya Bay saw a sharp rise in visitors after becoming a famous film location; since 2018 the Thai government has periodically closed the bay to allow ecological recovery, a representative case of balancing tropical island tourism with ecological protection.",
   },
   "ao-phang-nga": {
+    // 全六段 sources: 约 400 km² 淹没型喀斯特海湾；二叠纪拉查布里（Ratburi）石灰岩；1981 年设立国家公园；宾坎岩因 1974 年《金枪人》取景而知名。核实 2026-09-11，未改动
     seeing:
       "Ao Phang Nga is a roughly 400 km² drowned karst bay in the Andaman Sea off southern Thailand; Khao Phing Kan (\"James Bond Island\") is one of its most iconic landmarks.",
     formation:
@@ -12694,6 +12744,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1981, Khao Phing Kan became widely known after featuring in a 1974 James Bond film and has since become the bay's most recognisable landmark.",
   },
   "krabi-karst-coast": {
+    // 全六段 sources: 与攀牙湾同属二叠纪拉查布里群石灰岩；莱利岬角为国际知名攀岩与深水抱石地。核实 2026-09-11，未改动
     seeing:
       "The Krabi Karst Coast is a stretch of Andaman coastline defined by steep limestone tower cliffs, with Railay Peninsula among its most representative sites.",
     formation:
@@ -12718,10 +12769,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Khao Sam Roi Yot and Ao Phang Nga are both limestone karst landforms on the Thai coast, but Khao Sam Roi Yot is a cluster of low peaks on land, while Ao Phang Nga is a drowned karst tower island group.",
     concept:
       "The combination of karst mountains and freshwater marsh at Khao Sam Roi Yot is a sample for studying the symbiotic relationship between karst mountains and coastal wetlands.",
+    // history sources: 最高峰 605 m；**1966 年设为泰国首座海洋型国家公园 —— 这一条是对的**（同批 ko-tarutao 误称自己是首座，已改）；帕耶那空岩洞皇家凉亭因拉玛五世 1890 年到访而建、1896 年建成（19 世纪只此一次王室到访，英文原写复数 kings 已改）。核实 2026-09-11
     history:
-      "Designated Thailand's first marine-type national park in 1966; the royal pavilion inside Phraya Nakhon Cave is well known for having been visited by Thai kings in the 19th century.",
+      "Designated Thailand's first marine-type national park in 1966; the royal pavilion inside Phraya Nakhon Cave is well known for having been built after a visit by King Chulalongkorn (Rama V) in 1890; later monarchs visited too.",
   },
   "thung-salaeng-luang": {
+    // 全六段 sources: 海拔 300–1028 m，位于彭世洛府与碧差汶府交界。核实 2026-09-11，未改动
     seeing:
       "Thung Salaeng Luang is a highland meadow at 300–1,028 m elevation on the border of Phitsanulok and Phetchabun provinces in north-central Thailand, known as \"Thailand's savanna.\"",
     formation:
@@ -12746,10 +12799,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cheow Larn Lake and Bueng Boraphet are both important lakes in Thailand, but Cheow Larn is a dammed reservoir studded with karst towers, while Bueng Boraphet is a natural freshwater marsh turned into open water by a dam.",
     concept:
       "The drowned karst-tower landscape of Cheow Larn Lake is a sample for studying how a water-impoundment project transforms a terrestrial karst landform into an island-studded reservoir landscape.",
+    // history sources: 大坝 1982 年动工、1987 年竣工蓄水，正文把「建成/蓄水」统一写作 1987 属可接受简化（**没有把动工年当成建成年**）；「叻差巴帕」由国王普密蓬 1987-09-30 竣工典礼上赐名、意为「王国之光」，与王后诗丽吉无关。核实 2026-09-11
     history:
-      "Ratchaprapha Dam, completed in 1987, is named for Thailand's late Queen Sirikit and serves both irrigation and hydropower functions.",
+      "Ratchaprapha Dam, completed in 1987, was named by Thailand's late King Bhumibol Adulyadej at its opening ceremony — the name means Light of the Kingdom — and serves both irrigation and hydropower functions.",
   },
   "bueng-boraphet": {
+    // 全六段 sources: 面积约 224 km²，泰国中部最大淡水沼泽/湖；1926–1930 年筑坝、1930 年完工形成今日开阔水面。核实 2026-09-11，未改动
     seeing:
       "Bueng Boraphet is a natural freshwater marsh lake near the confluence of the Nan and Ping rivers in central Thailand, covering about 224 km² and the largest freshwater wetland in central Thailand.",
     formation:
@@ -12764,6 +12819,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "After being dammed in 1930, it gradually developed into an important fishery and wintering site for migratory birds in central Thailand, now managed by the wildlife conservation authorities.",
   },
   "chao-phraya-river": {
+    // 全六段 sources: 宾河与难河在那空沙旺（Pak Nam Pho）汇流后始称干流，全长约 372 km。核实 2026-09-11，未改动
     seeing:
       "The Chao Phraya River begins where the Ping and Nan rivers meet in Nakhon Sawan Province and runs about 372 km, the main river system of the central Thai plain.",
     formation:
@@ -12778,6 +12834,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Chao Phraya's banks have been the political and economic heart of Thailand since the Ayutthaya period, and the capital, Bangkok, remains built around this river today.",
   },
   "mekong-river-th": {
+    // 全六段 sources: ⚠️ 泰老界河段长度「约976公里」**没有一个来源支持**，各口径 850/920/955/1520 km 不等，未找到 MRC 或泰国官方的单一权威数字 —— 见 issue，正文暂不动。核实 2026-09-11
     seeing:
       "The Thai stretch of the Mekong forms roughly 976 km of the Thailand–Laos border along Thailand's north-east; the section near Chiang Khan is known for its dense scattering of rapids.",
     formation:
@@ -12792,8 +12849,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Towns along the Mekong such as Chiang Khan have long served as important centres of trade and cultural exchange between north-eastern Thailand and Laos.",
   },
   "mun-river": {
+    // seeing sources: 源出讪甘烹山脉（Sankamphaeng Range，考艾国家公园一带，高原西南）—— 佩差邦/碧差汶山脉在高原西北缘，是另一条；在乌汶叻差他尼 Khong Chiam 汇入湄公河、接纳希河后水量显著增大。核实 2026-09-11
     seeing:
-      "The Mun River rises in the Phetchabun Range in the south-western Khorat Plateau and flows east across the plateau's southern portion, the main river of Thailand's Isan region.",
+      "The Mun River rises in the Sankamphaeng Range in the south-western Khorat Plateau and flows east across the plateau's southern portion, the main river of Thailand's Isan region.",
     formation:
       "The Mun's upper course rises in the hills along the plateau's rim and flows east across the open tableland, gaining significant volume after receiving the Chi River as a tributary, before joining the Mekong near Ubon Ratchathani.",
     observation:
@@ -12806,6 +12864,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Mun River basin has long been the core area of population and agricultural activity in Thailand's Isan region, with cities such as Ubon Ratchathani along its banks continuing to develop around the river to this day.",
   },
   "kwai-river-valley": {
+    // 全六段 sources: 泰缅铁路木桥 1943-02 建成、钢混桥同年 4 月建成，正文「1943年建成」落在范围内。⚠️ 红线自查：正文只写工程与地形事实（谷地走向、桥梁年份），**未涉伤亡数字或战争责任评价**，按判据保留。核实 2026-09-11，未改动
     seeing:
       "The Kwai River Valley is cut by the Khwae Noi River through the southern Thanon Thongchai Range in western Thailand; the Bridge on the River Kwai is the widely known witness to this history.",
     formation:
@@ -12820,6 +12879,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "During World War II, Japanese forces used forced prisoner-of-war and civilian labour to build the Thailand–Burma Railway through this valley; the Bridge on the River Kwai, completed in 1943, is the widely known witness to this history, recorded in Thai national archives and multiple war memorial sites.",
   },
   "erawan-waterfall": {
+    // 全六段 sources: 1975-06-19 设立（泰国第 12 座国家公园）；瀑布顶层因形似三头象神伊拉旺（Erawan/Airavata）得名。核实 2026-09-11，未改动
     seeing:
       "Erawan Waterfall is a seven-tiered cascade formed as a tributary of the Khwae Noi River drops down a series of limestone terraces, with natural emerald-green travertine pools formed between the tiers.",
     formation:
@@ -12834,6 +12894,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1975; \"Erawan\" is named for a rock formation near the waterfall's top resembling Erawan, the three-headed elephant of Hindu mythology.",
   },
   "sam-phan-bok": {
+    // 全六段 sources: 湄公河河床上规模最大的砂岩壶穴群；可见期为旱季（各来源作 12 月至次年 4–5 月，正文取 12–4 月）。核实 2026-09-11，未改动
     seeing:
       "Sam Phan Bok (\"three thousand shallow lakes\" or potholes) is the largest sandstone erosional remnant landform in the Mekong's main riverbed, visible only during the dry season from December to April.",
     formation:
@@ -12848,6 +12909,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Local communities have long linked Sam Phan Bok's seasonal emergence to the traditional timing of Mekong fishing activities, reflecting generations of accumulated experience observing the river's hydrological changes.",
   },
   "chao-phraya-delta": {
+    // 全六段 sources: 曼谷 1782 年由拉玛一世建都；平均海拔约 1.5 m、部分城区仅 0.5–1.5 m，正文「不足2米」准确；地面沉降属实。核实 2026-09-11，未改动
     seeing:
       "The Chao Phraya Delta is the low-lying alluvial delta at the Chao Phraya's mouth; Bangkok, Thailand's capital, is built on the delta, with parts of the city under 2 m in elevation.",
     formation:
@@ -14385,6 +14447,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Singapore ============
   "bukit-timah-nature-reserve": {
+    // 全六段 sources: 163.63 m（正文 164 为合理取整），NParks 称其为新加坡最高**自然**点，正文「本岛最高点」的限定与之一致；1883 年设为 Bukit Timah Forest Reserve；2011-10-18 列为东盟遗产公园（与双溪布洛并列，新加坡共 2 处）。核实 2026-09-11，未改动
     seeing:
       "Bukit Timah Nature Reserve is home to Bukit Timah Hill, at 164 m the highest point on mainland Singapore, a granite hill whose reserve preserves one of Singapore's few remaining tracts of primary rainforest.",
     formation:
@@ -14399,6 +14462,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bukit Timah Nature Reserve was established in 1883, one of Singapore's oldest nature reserves, and was recognised as an ASEAN Heritage Park in 2011.",
   },
   "central-catchment-nature-reserve": {
+    // 全六段 sources: 2880 ha（NParks 官方现行数，1 级；另有第三方给 3043 ha，与官方冲突，采信官方），为新加坡最大自然保护区；园内有原生旱地雨林残片约 154 ha 与梧槽原生淡水沼泽林约 87–96 ha（新加坡现存最后一片），其余逾 2000 ha 为次生林。核实 2026-09-11，未改动
     seeing:
       "The Central Catchment Nature Reserve is Singapore's largest nature reserve, covering 2,880 ha, ringing the MacRitchie, Upper and Lower Peirce, and Upper Seletar reservoirs.",
     formation:
@@ -14413,6 +14477,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The reservoirs ringed by the Central Catchment Nature Reserve were historically an important freshwater supply facility for Singapore; the reserve today serves as an important ecological and recreational green space on mainland Singapore.",
   },
   "sungei-buloh-wetland-reserve": {
+    // 全六段 sources: 现行面积 202 ha（历经 1989 约 87 ha → 2002 正式划为 130 ha → 扩展至 202 ha 多次变化，**正文用的是现值、没把某个历史阶段的数当成现值**）；2003 年成为新加坡**首个**东盟遗产公园，早于武吉知马（2011）。核实 2026-09-11，未改动
     seeing:
       "Sungei Buloh Wetland Reserve is a mangrove wetland in northwestern Singapore, expanded to 202 ha, preserving Singapore's largest surviving mangrove area and recognised in 2003 as Singapore's first ASEAN Heritage Park.",
     formation:
@@ -14427,6 +14492,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sungei Buloh Wetland Reserve became Singapore's first ASEAN Heritage Park in 2003, and has long served as the core base for Singapore's mangrove conservation and environmental education efforts.",
   },
   "chek-jawa-wetlands": {
+    // 全六段 sources: 1992 年批准乌敏岛东岸填海 → 2000 年底生态价值被公众发现 → 经公众意见征询与专家评估，2001-12-20（原定填海前数日）国家发展部宣布无限期推迟（新加坡国家文物局 Roots.gov.sg，1 级）。✅ 正文把年份、顺序与决策机制都写对了，**没有写成戏剧化叙事**。核实 2026-09-11，未改动
     seeing:
       "Chek Jawa Wetlands is an intertidal wetland of about 100 ha at the eastern tip of Pulau Ubin, where six distinct ecosystems — sandy beach, rocky beach, seagrass lagoon, coral rubble, mangroves and coastal forest — converge.",
     formation:
@@ -14441,6 +14507,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Chek Jawa was slated for land reclamation in 1992; after public consultation and expert review in 2001, the reclamation was deferred indefinitely, a representative case in Singapore's conservation history of public participation in decision-making.",
   },
   "pulau-ubin": {
+    // 全六段 sources: 采石始于 19 世纪早中期、1930 年代达峰；最后一座采石场（Ketam Quarry，原 Aik Hwa，1964–1999）1999-05 关闭；花岗岩曾用于 1851 年 Horsburgh 灯塔、1858 年 Fort Canning、1923 年新柔长堤（NParks 乌敏岛官方专题，1 级）。核实 2026-09-11，未改动
     seeing:
       "Pulau Ubin is a granite island off Singapore's northeast coast, extensively quarried for granite from the mid-19th century, its four surviving disused quarries now evolved into vegetated scenic ponds.",
     formation:
@@ -14455,6 +14522,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Granite from Pulau Ubin was used to build several lighthouses and the Causeway; the island's last quarry closed in 1999, and it is today one of the few places in Singapore that retains a traditional rural character.",
   },
   "sisters-islands-marine-park": {
+    // 全六段 sources: 2014 年设立，新加坡首座海洋公园，约 40 ha；范围除大小姐妹岛外还含圣约翰岛与 Pulau Tekukor 西侧礁盘 —— 正文只提圣约翰岛属表述不完整，但**未作排他性穷举断言**，不改。核实 2026-09-11，未改动
     seeing:
       "Sisters' Islands Marine Park, established in 2014, is Singapore's first marine park, covering about 40 ha and encompassing the Sisters' Islands and the waters around the western reef of St John's Island.",
     formation:
@@ -14469,6 +14537,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Sisters' Islands Marine Park was established in 2014 as Singapore's first marine park; Small Sister's Island hosts a sea-turtle hatchery, and the park has long carried out turtle conservation and coral reef restoration work.",
   },
   "labrador-nature-reserve": {
+    // 全六段 sources: 2002 年将 10 ha 次生海岸植被与岩岸划设为保护区，是新加坡本岛唯一对公众开放的天然岩岸海崖。核实 2026-09-11，未改动
     seeing:
       "Labrador Nature Reserve is the only publicly accessible rocky sea cliff on mainland Singapore; 10 ha of secondary coastal vegetation and rocky shore were gazetted as a reserve in 2002.",
     formation:
@@ -14483,10 +14552,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Labrador area historically held several coastal defence gun batteries; it was gazetted as a nature reserve in 2002, and is today a representative site where Singapore's natural and historical heritage intersect.",
   },
   "bukit-batok-nature-park": {
+    // seeing sources: ⚠️ 两个相邻公园别混 —— **Bukit Batok Town Park（42 ha，前身 Gammon Quarry，1984 停用）才是官方的「小桂林」**（NParks 页面原文 Also known as Little Guilin）；本条目的 Bukit Batok **Nature** Park（36 ha，1988 辟建）官方页未提 Little Guilin。本条前身采石场名在 3 级来源里作 Poh Kim / Poh Hin，写法不一，按判据不填专名。岩性为辉长苏长岩（Gombak Norite）。核实 2026-09-11
     seeing:
-      "Bukit Batok Nature Park covers 36 ha, developed in 1988 on the site of a disused quarry; a towering granite cliff face stands beside the former quarry's flooded pit, nicknamed \"Little Guilin\" for its resemblance to the karst landscape of Guilin, China.",
+      "Bukit Batok Nature Park covers 36 ha, developed in 1988 on the site of a disused quarry, with a towering granite cliff face beside the former quarry's flooded pit. The nickname Little Guilin, for the resemblance to the karst landscape of Guilin in China, officially belongs to the neighbouring Bukit Batok Town Park — a separate former-quarry park next door.",
     formation:
-      "The quarry at Bukit Batok, formerly known as Gammon Quarry, once extracted gabbro-norite; long-term quarrying left a steep, near-vertical cliff face, and after quarrying ceased, groundwater seeped in to form the flooded pit that, together with the cliff, makes up today's landscape.",
+      "The quarry at Bukit Batok once extracted gabbro-norite (part of the Gombak Norite formation); long-term quarrying left a steep, near-vertical cliff face, and after quarrying ceased, groundwater seeped in to form the flooded pit that, together with the cliff, makes up today's landscape.",
     observation:
       "From the air, Bukit Batok Nature Park is dominated by a near-vertical granite cliff at its centre, reflected in the still water of the pit below, forming a clearly layered landscape against the dense secondary forest around it.",
     distinguish:
@@ -14497,6 +14567,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "\"Bukit Batok\" means \"coughing hill,\" a name derived from the vibration and noise of early quarrying operations; the park also preserves several sites associated with the Second World War.",
   },
   "coney-island-park": {
+    // 全六段 sources: 岛屿原 13 ha，经填海扩至约 100 ha；胡文虎、胡文豹兄弟 1930 年代购岛建「虎豹岛」别墅；公园 2015-10 开放（正文只写 2015 年，未误植月份）。注：岛上公园本身 50 ha 是 100 ha 岛屿的一部分，正文未混淆两者。核实 2026-09-11，未改动
     seeing:
       "Coney Island (formerly Pulau Serangoon) is an island off Singapore's northeast coast, originally just 13 ha and expanded through successive reclamation projects to about 100 ha, its park encompassing casuarina coastal forest, mangroves and open grassland.",
     formation:
@@ -14511,6 +14582,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In the 1930s Coney Island was purchased by the brothers Aw Boon Haw and Aw Boon Par, who renamed it Haw Par Island and built a private beach villa there; Coney Island Park opened in 2015.",
   },
   "kranji-marshes": {
+    // 全六段 sources: 56–57 ha，为新加坡最大天然淡水沼泽；170+ 鸟种 / 54 蝶种 / 33 蜻蜓种；核心保育区（约八成面积）不开放，仅约 8 ha 开放参观（NParks 栖息地修复手册，1 级）。核实 2026-09-11，未改动
     seeing:
       "Kranji Marshes is Singapore's largest natural freshwater marsh, covering more than 56 ha, home to over 170 bird species, 54 butterfly species and 33 dragonfly species.",
     formation:
@@ -14525,6 +14597,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2008 the Nature Society (Singapore) began participating in the conservation and management of Kranji Marshes, clearing some vegetation and building birdwatching facilities; the core conservation area remains closed to the public, with only about 8 ha open for visitors.",
   },
   "southern-islands": {
+    // 全六段 sources: 圣约翰岛 19 世纪起为检疫隔离站，1954 年设鸦片戒治中心、1973 年改综合戒毒中心、1975 年关闭，与正文「1950至70年代」吻合；拉扎鲁斯岛 1899-03-25 正式命名为 Lazarus or Convalescent Island，因脚气病医院得名；龟屿庙宇、放生龟池与农历九月朝圣传统均确认（国家文物局，1 级）。核实 2026-09-11，未改动
     seeing:
       "The Southern Islands are a group of islands south of mainland Singapore; St John's Island, Lazarus Island and Kusu Island are the best known among them, today a well-known near-shore leisure destination.",
     formation:
@@ -14539,6 +14612,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "St John's Island served as a quarantine station from the late 19th century and was converted into a drug rehabilitation centre from the 1950s to the 1970s; Lazarus Island earned the name \"Convalescent Island\" after a beriberi hospital was built there in 1899; Kusu Island holds temples and a turtle sanctuary pond, drawing large numbers of pilgrims each year during the ninth lunar month.",
   },
   "pulau-semakau": {
+    // 全六段 sources: 填埋场 1995–1999 年建设（石堤合并工程在此窗口内）、1999-04-01 启用；一期毁 13 ha 红树林、补种 40 万株红树幼苗；2014-09 至 2015-01 珊瑚迁地工程共移植 761 个珊瑚群体（42 属）至姐妹岛海洋公园，正文「逾700群」吻合（国家文物局 1 级 + DHI 2 级）。核实 2026-09-11，未改动
     seeing:
       "Pulau Semakau is an island about 8 km south of mainland Singapore, home since 1999 to Singapore's sole operating landfill, formed in 1995 by joining Pulau Semakau and Pulau Sakeng with a rock bund.",
     formation:

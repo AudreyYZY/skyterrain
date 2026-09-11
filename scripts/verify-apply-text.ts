@@ -136,7 +136,9 @@ function upsertSourceNote(src: string, id: string, field: string, note: string, 
    * 中英各 28）。前缀重复不影响编译、不影响任何检查、肉眼扫过去也像正常留痕，
    * 所以只能在写入这一刻拦。既然是我自己反复犯的手误，就地剥掉而不是报错。
    */
-  const body = note.replace(/^\s*\/\/\s*[A-Za-z/]+\s+sources:\s*/, "");
+  // 标签可能是英文字段名（`history`）、斜杠并列（`seeing/formation`），也可能是中文（`全六段`）——
+  // 第一版只认 [A-Za-z/]，于是「// 全六段 sources: …」照样叠出了重复前缀。
+  const body = note.replace(/^\s*\/\/\s*[A-Za-z/\u4e00-\u9fa5]+\s+sources:\s*/, "");
   const lines = body.split("\n");
   const comment =
     `    // ${field} sources: ${lines[0]}\n` +

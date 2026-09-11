@@ -3205,7 +3205,7 @@ export const ROUTE_NARRATION: Record<
   "dmk-uth": {
     study: {
     "zh-CN":
-      "曼谷廊曼飞乌隆他尼，是连接首都与东北部依善地区的航线。飞机离开廊曼后向北偏东飞行，逐渐掠过呵叻高原——泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原地势开阔平坦，大片旱作农田与稀疏林地交错分布，与泰国中部平原的水田景观形成鲜明对比，高原边缘的碧差汶山脉与佩差邦山脉将其与中部平原分隔。" +
+      "曼谷廊曼飞乌隆他尼，是连接首都与东北部依善地区的航线。飞机离开廊曼后向北偏东飞行，逐渐掠过呵叻高原——泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原地势开阔平坦，大片旱作农田与稀疏林地交错分布，与泰国中部平原的水田景观形成鲜明对比，高原边缘的碧差汶山脉与丹辇拉扎山脉将其与中部平原分隔。" +
       "飞机继续向东北飞行，最终降落在乌隆他尼——依善地区重要城市，也是探索班清史前遗址的门户城市，府境内的班清遗址出土了公元前2000年左右的彩陶与青铜器。",
     "en-US":
       "Flying from Bangkok Don Mueang to Udon Thani links the capital with Thailand's north-eastern Isan region. After leaving Don Mueang the flight heads north-north-east, passing over the Khorat Plateau midway — a vast sandstone tableland covering roughly a third of Thailand's land area, the geographic core of the traditional Isan region, its broad, flat surface interspersed with extensive rain-fed farmland and sparse woodland, a sharp contrast to the paddy-field landscape of central Thailand's plain." +
@@ -3223,10 +3223,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "曼谷廊曼飞清莱，是连接首都与泰国最北端府份的航线。飞机离开廊曼后向北飞行，中途掠过通萨兰銮草原——泰国中北部一片海拔300至1028米的高原草甸，被称为“泰国的稀树草原”，开阔草地与稀疏松林交错分布。" +
-      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔2138米，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——紧邻缅甸与老挝边境“金三角”地区的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
+      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔在2175至2275米之间，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——紧邻缅甸与老挝边境“金三角”地区的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
     "en-US":
       "Flying from Bangkok Don Mueang to Chiang Rai links the capital with Thailand's northernmost province. After leaving Don Mueang the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation in north-central Thailand known as \"Thailand's savanna,\" its open grassland interspersed with sparse pine forest." +
-      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak at 2,138 m, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     },
     travel: {
     "zh-CN":
