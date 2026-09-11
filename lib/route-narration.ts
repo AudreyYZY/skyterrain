@@ -3200,6 +3200,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok to Chiang Mai is one of Thailand's busiest domestic routes, linking the capital with the ancient cultural capital of the north. After leaving Bangkok the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation on the border of Phitsanulok and Phetchabun provinces, known as \"Thailand's savanna,\" its open golden grassland interspersed with sparse pine forest, a rare non-forested highland landform in Thailand." +
       " Past the grassland, the flight continues north-west, gradually approaching the Chiang Mai basin; just before landing, Doi Suthep unfolds below — a 1,676 m peak west of Chiang Mai, where Wat Phra That Doi Suthep, founded on its slope in the 14th century, is one of northern Thailand's most important Buddhist pilgrimage sites — before the flight lands in Chiang Mai, the largest city in northern Thailand and the ancient capital of the Lanna kingdom.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 通萨兰銮草原、素贴山 1676 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷到清迈飞约80分钟，同一时区，是泰国国际航空运营的国内航班之一，也可选择长途大巴或火车。曼谷素万那普机场距市区约30公里；清迈国际机场距市区约3公里。清迈是探索泰国北部山地与手工艺文化的理想门户。",
@@ -3217,6 +3218,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok to Koh Samui links the capital with a popular resort island in the Gulf of Thailand. After leaving Bangkok the flight heads south-east, the Chao Phraya Delta unfolding below — the low-lying alluvial delta at the Chao Phraya's mouth, on which Bangkok itself is built, with parts of the city under 2 m in elevation and facing the combined pressures of land subsidence and sea-level rise." +
       " Past the delta, the flight continues south-east across the open waters of the Gulf of Thailand; Koh Samui gradually comes into view, before the flight lands on Koh Samui, Thailand's second-largest island by area, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 湄南河三角洲地面沉降与本库一致；苏梅岛「按面积计泰国第二大岛」已是修正后说法。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷到苏梅岛飞约95分钟，同一时区，是曼谷航空运营的国内航班之一（ATR72-600机型），苏梅机场由曼谷航空私有运营。曼谷素万那普机场距市区约30公里；苏梅机场就在岛屿东北角。苏梅岛是探索安通国家海洋公园跳岛游的理想门户。",
@@ -3234,6 +3236,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Udon Thani links the capital with Thailand's north-eastern Isan region. After leaving Don Mueang the flight heads north-north-east, passing over the Khorat Plateau midway — a vast sandstone tableland covering roughly a third of Thailand's land area, the geographic core of the traditional Isan region, its broad, flat surface interspersed with extensive rain-fed farmland and sparse woodland, a sharp contrast to the paddy-field landscape of central Thailand's plain." +
       " The flight continues north-east, before landing in Udon Thani, an important city in the Isan region and the gateway to the Ban Chiang prehistoric site.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 呵叻高原约占国土三分之一；「碧差汶山脉与丹辇拉扎山脉」已是修正后说法；班清遗址约公元前 2000 年。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到乌隆他尼飞约65分钟，同一时区，是泰国亚洲航空运营的国内航班之一，也可选择乘火车经廊开线前往。廊曼机场距曼谷市区约25公里；乌隆他尼国际机场距市区约5公里。乌隆他尼是探索班清世界遗产考古遗址的理想门户。",
@@ -3251,6 +3254,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Chiang Rai links the capital with Thailand's northernmost province. After leaving Don Mueang the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation in north-central Thailand known as \"Thailand's savanna,\" its open grassland interspersed with sparse pine forest." +
       " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 清道山泰国第三高峰 2175–2275 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱是探索金三角景观区与白庙等当代宗教艺术建筑的理想门户。",
@@ -3268,6 +3272,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Phuket links the capital with Thailand's most famous island resort destination. After leaving Don Mueang the flight heads south, the landform along the Gulf of Thailand coast continuing below, passing over Khao Sam Roi Yot midway — a range of some 300 limestone peaks along the Gulf of Thailand coast, the source of its name (\"the mountain with three hundred peaks\"), with the freshwater marsh of Thung Sam Roi Yot at its north-western corner among the largest wetlands in Thailand." +
       " Past Khao Sam Roi Yot, the flight continues south over the southern Thai peninsula, before landing on Phuket, Thailand's largest island in the Andaman Sea and the country's most famous island resort destination.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 三百峰山约 300 座石灰岩峰、1966 年泰国首座海洋型国家公园与本库一致；普吉为泰国最大岛。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到普吉岛飞约85分钟，同一时区，是泰国亚洲航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；普吉国际机场距普吉镇约32公里。普吉岛是探索攀牙湾喀斯特岛群的理想门户。",
@@ -3285,6 +3290,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Krabi links the capital with the karst coastline of the Andaman Sea. After leaving Don Mueang the flight heads south, gradually crossing the southern Thai peninsula; just before landing, Ao Phang Nga unfolds below — a roughly 400 km² drowned karst bay in the Andaman Sea, where Permian Ratburi limestone was drowned as sea level rose after the last glacial period, leaving its emergent tops as today's steep, isolated rock islands, with Khao Phing Kan (\"James Bond Island\") among the bay's most iconic landmarks" +
       " — before the flight lands in Krabi, a province on Thailand's southern Andaman coast known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 攀牙湾约 400 km²、二叠纪石灰岩与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到甲米飞约85分钟，同一时区，是泰国狮航运营的国内航班之一。廊曼机场距曼谷市区约25公里；甲米国际机场距甲米镇约18公里。甲米是探索莱利岬角攀岩与皮皮群岛跳岛游的理想门户。",
@@ -3500,12 +3506,13 @@ export const ROUTE_NARRATION: Record<
   "han-sgn": {
     study: {
     "zh-CN":
-      "河内飞胡志明市，是越南客流量最大的国内航线之一，全程约1000公里，被业内称为越南的“黄金航线”。飞机离开河内后向南飞行，脚下展开红河三角洲——红河及其支流泥沙长期沉积形成的三角形冲积平原，面积约1.5万平方公里，是越南两大农业核心区之一，河内城区即建于三角洲之上。" +
+      "河内飞胡志明市，是越南客流量最大的国内航线之一，全程约1160公里，被业内称为越南的“黄金航线”。飞机离开河内后向南飞行，脚下展开红河三角洲——红河及其支流泥沙长期沉积形成的三角形冲积平原，面积约1.5万平方公里，是越南两大农业核心区之一，河内城区即建于三角洲之上。" +
       "飞机继续向南飞行，逐渐掠过西原高原——越南中南部一系列连绵高原的统称，海拔大致在500至1500米之间，玄武岩风化形成的红土广泛覆盖高原表面，大片咖啡种植园清晰可见，飞机最终降落在胡志明市——越南最大城市与经济中心。",
     "en-US":
-      "Flying from Hanoi to Ho Chi Minh City is one of Vietnam's busiest domestic routes, spanning about 1,000 km and known in the industry as Vietnam's \"golden route.\" After leaving Hanoi the flight heads south, the Red River Delta unfolding below — a triangular alluvial plain built by long-term sediment deposition from the Red River and its tributaries, covering about 15,000 km² and one of Vietnam's two main agricultural core regions, with Hanoi itself built on the delta." +
+      "Flying from Hanoi to Ho Chi Minh City is one of Vietnam's busiest domestic routes, spanning about 1,160 km and known in the industry as Vietnam's \"golden route.\" After leaving Hanoi the flight heads south, the Red River Delta unfolding below — a triangular alluvial plain built by long-term sediment deposition from the Red River and its tributaries, covering about 15,000 km² and one of Vietnam's two main agricultural core regions, with Hanoi itself built on the delta." +
       " The flight continues south, passing over the Central Highlands midway — a collective name for a series of connected plateaus in south-central Vietnam at roughly 500–1,500 m elevation, its basalt-weathered red laterite soil widely visible beneath extensive coffee plantations, before the flight lands in Ho Chi Minh City, Vietnam's largest city and economic centre.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 红河三角洲约 1.5 万 km²、西原 500–1500 m；全程距离原写约 1000 km，按大圆改为约 1160 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到胡志明市飞约120分钟，同一时区，是越南航空运营的国内航班之一，这条航线是全球客流量最高的国内航线之一。内排机场距河内市区约35公里；新山一机场距胡志明市中心约8公里。这条航线连接越南南北两大门户城市。",
@@ -3523,6 +3530,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Hanoi to Da Nang links Vietnam's capital with the largest city in the centre of the country. After leaving Hanoi the flight heads south, passing over the Trang An Landscape Complex midway — a valley in Ninh Binh Province where karst towers interweave with underground waterways, covering about 6,226 ha, its valleys threaded with submerged caves navigable by small boat, inscribed on the UNESCO World Heritage List in 2014 as Vietnam's first mixed cultural and natural heritage site." +
       " The flight continues south, and just before landing Ngu Hanh Son (the Marble Mountains) unfolds below — a cluster of five low marble hills on the coast south of Da Nang, each named after one of the five classical elements — before the flight lands in Da Nang, the largest city in central Vietnam and an ideal gateway for Hoi An and Hue.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 长安名胜群 2014 年越南首个混合遗产与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到岘港飞约83分钟，同一时区，是越捷航空运营的国内航班之一。内排机场距河内市区约35公里；岘港国际机场距市中心约3公里。岘港是探索会安古镇与顺化皇城的理想门户。",
@@ -3540,6 +3548,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ho Chi Minh City to Phu Quoc links southern Vietnam's economic centre with the country's largest resort island. After leaving Ho Chi Minh City the flight heads south-west, the Mekong Delta unfolding below — the vast alluvial plain the Mekong builds in southern Vietnam before reaching the sea, covering about 39,000 km² and one of the largest river deltas in the world, its dense network of channels and man-made canals forming a distinctive water-town landform." +
       " Past the delta, the flight continues south-west across open water; Phu Quoc gradually comes into view, before the flight lands on Phu Quoc, Vietnam's largest island, more than half of it forested within a national park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 湄公河三角洲约 3.9 万 km²「世界最大河流三角洲之一」、富国岛过半为国家公园与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "胡志明市到富国岛飞约65分钟，同一时区，是越捷航空运营的国内航班之一。新山一机场距胡志明市中心约8公里；富国国际机场距阳东镇约15公里。富国岛是越南南部重要的海岛度假目的地。",
@@ -3557,6 +3566,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Hanoi to Can Tho spans the full length of Vietnam, linking the capital with the core city of the Mekong Delta. After leaving Hanoi the flight heads south, the Red River Delta unfolding below — the triangular alluvial plain built by the Red River and its tributaries, on which Hanoi itself is built." +
       " The flight continues south the length of the country, and just before landing the Mekong Delta unfolds below — the vast alluvial plain the Mekong builds in southern Vietnam, its channels branching everywhere and floating markets lining the waterways — before the flight lands in Can Tho, the largest city in the Mekong Delta and the core gateway for exploring its floating markets and river-town culture.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 无可核数字或排名。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到芹苴飞约135分钟，同一时区，是越南航空运营的国内航班之一。内排机场距河内市区约35公里；芹苴国际机场距市区约10公里。芹苴是探索凤凰水上市场的理想门户。",
@@ -3574,6 +3584,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Hanoi to Hue links Vietnam's capital with the ancient imperial capital of the centre. After leaving Hanoi the flight heads south, passing over the Trang An Landscape Complex midway — a valley in Ninh Binh Province where karst towers interweave with underground waterways navigable by small boat, often called \"Ha Long Bay on land.\"" +
       " Past Trang An, the flight continues south, gradually approaching Vietnam's central coast, before landing in Hue, the Nguyen dynasty's capital from 1802 to 1945, with the Complex of Hue Monuments inscribed on the UNESCO World Heritage List in 1993.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 顺化 1802–1945 阮朝都城、1993 年列入 UNESCO。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到顺化飞约70分钟，同一时区，是越南航空运营的国内航班之一，每日往返约3班。内排机场距河内市区约35公里；富牌国际机场距顺化市中心约15公里。顺化是探索阮朝皇城与皇陵的理想门户。",
@@ -3591,6 +3602,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Da Nang to Ho Chi Minh City links central Vietnam with the country's southern economic centre. After leaving Da Nang the flight heads south, passing over the Central Highlands midway — a collective name for a series of connected plateaus in south-central Vietnam at roughly 500–1,500 m elevation, its basalt-weathered red laterite soil widely visible beneath extensive coffee and rubber plantations, with Da Lat's Lam Vien Plateau enjoying a mild climate year-round." +
       " The flight continues south, gradually approaching the plains of southern Vietnam, before landing in Ho Chi Minh City, Vietnam's largest city and economic centre, its commercial and cultural atmosphere a sharp contrast with the coastal cities of the centre.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 竹子航空 2026-08-01 起停止定期航班属实 —— 会过期的现状，下轮复核。核实 2026-09-11
     travel: {
     "zh-CN":
       "岘港到胡志明市飞约90分钟，同一时区，是越捷航空运营的国内航班之一（原竹子航空已于2026年8月停止全部定期航班）。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
@@ -3602,12 +3614,13 @@ export const ROUTE_NARRATION: Record<
   "kul-pen": {
     study: {
     "zh-CN":
-      "吉隆坡飞槟城，是马来半岛西海岸最繁忙的国内航线之一，全程约300公里，是马来西亚航空客流量最高的航线之一。飞机离开吉隆坡后向西北飞行，脚下先掠过巴生河谷的城市化平原，随后进入马来半岛西海岸相对平坦的沿海低地地带，大片棕榈油种植园从空中清晰可辨。" +
+      "吉隆坡飞槟城，是马来半岛西海岸最繁忙的国内航线之一，全程约330公里，是马来西亚航空客流量最高的航线之一。飞机离开吉隆坡后向西北飞行，脚下先掠过巴生河谷的城市化平原，随后进入马来半岛西海岸相对平坦的沿海低地地带，大片棕榈油种植园从空中清晰可辨。" +
       "飞机继续向西北飞行，沿途可见蒂蒂旺沙山脉西侧余脉在内陆隐约可见，海岸线一侧棕榈种植园与红树林交替分布，最终降落在槟城——马来半岛西北岸外一座花岗岩岛屿，2008年老城区乔治市列入UNESCO世界遗产名录。",
     "en-US":
-      "Flying from Kuala Lumpur to Penang is one of the busiest domestic routes on the peninsula's west coast, spanning about 300 km. After leaving Kuala Lumpur the flight heads northwest, first passing over the urbanised plain of the Klang Valley before entering the comparatively flat coastal lowland of the peninsula's west coast." +
+      "Flying from Kuala Lumpur to Penang is one of the busiest domestic routes on the peninsula's west coast, spanning about 330 km. After leaving Kuala Lumpur the flight heads northwest, first passing over the urbanised plain of the Klang Valley before entering the comparatively flat coastal lowland of the peninsula's west coast." +
       " The flight continues northwest, the western foothills of the Titiwangsa Mountains faintly visible inland, palm plantations and mangroves alternating along the coastline, before landing on Penang, a granite island off the peninsula's northwest coast whose old town of George Town was inscribed on the UNESCO World Heritage List in 2008.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 乔治市 2008 年列入 UNESCO；全程距离原写约 300 km，按大圆（325 km）改为约 330 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到槟城飞约55分钟，同一时区，是亚洲航空运营的国内航班之一（每日约9班）。吉隆坡国际机场距市区约45公里；槟城国际机场距乔治市约18公里。这是马来西亚客流量最高的国内航线之一。",
@@ -3625,6 +3638,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Kuala Lumpur to Kota Kinabalu is the core route linking the Malay Peninsula with Borneo, spanning about 1,630 km — Malaysia's highest-volume domestic route. After leaving Kuala Lumpur the flight heads east, soon crossing the peninsula's east coast into the open waters of the South China Sea." +
       " The flight continues over the South China Sea for more than two hours; as it nears the Bornean coast, the bare granite summit of Mount Kinabalu emerges from the sea of cloud — at 4,095 m, the highest peak in Malaysia and the Malay Archipelago — before landing in Kota Kinabalu, capital of Sabah and the core gateway to Kinabalu Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 京那巴鲁 4095 m 与本库一致；全程约 1630 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到亚庇飞约150分钟，同一时区，是亚洲航空运营的国内航班之一，是马来西亚境内客流量最大的单一航线（每日多达14至16班）。吉隆坡国际机场距市区约45公里；亚庇国际机场距市区约7公里。",
@@ -3636,12 +3650,13 @@ export const ROUTE_NARRATION: Record<
   "kul-kch": {
     study: {
     "zh-CN":
-      "吉隆坡飞古晋，是连接马来半岛与砂拉越的主要航线，全程约1110公里，是马来西亚境内客流量位居前列的国内航线之一，全天多个班次往返两地。飞机离开吉隆坡后向东南飞行，越过马来半岛南部后进入南海，飞越加里曼丹岛与马来半岛之间的开阔海域。" +
+      "吉隆坡飞古晋，是连接马来半岛与砂拉越的主要航线，全程约970公里，是马来西亚境内客流量位居前列的国内航线之一，全天多个班次往返两地。飞机离开吉隆坡后向东南飞行，越过马来半岛南部后进入南海，飞越加里曼丹岛与马来半岛之间的开阔海域。" +
       "飞机继续向东南飞行，接近砂拉越海岸时，巴哥国家公园沿岸砂岩地貌与海蚀柱景观隐约可见，最终降落在古晋——砂拉越州首府，坐落于砂拉越河畔，是探索姆鲁山国家公园与尼亚洞穴的重要门户。",
     "en-US":
-      "Flying from Kuala Lumpur to Kuching is the main route linking the Malay Peninsula with Sarawak, spanning about 1,110 km. After leaving Kuala Lumpur the flight heads southeast, crossing the southern peninsula before entering the South China Sea and flying over the open water between Borneo and the peninsula." +
+      "Flying from Kuala Lumpur to Kuching is the main route linking the Malay Peninsula with Sarawak, spanning about 970 km. After leaving Kuala Lumpur the flight heads southeast, crossing the southern peninsula before entering the South China Sea and flying over the open water between Borneo and the peninsula." +
       " The flight continues southeast; as it nears the Sarawak coast, the sandstone coastal landform and sea stacks of Bako National Park become faintly visible, before landing in Kuching, capital of Sarawak on the banks of the Sarawak River and an important gateway to Gunung Mulu National Park and the Niah Caves.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 1110 km，按大圆改为约 970 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到古晋飞约110分钟，同一时区，是亚洲航空运营的国内航班之一（全天多班）。吉隆坡国际机场距市区约45公里；古晋国际机场距市区约11公里。",
@@ -3653,12 +3668,13 @@ export const ROUTE_NARRATION: Record<
   "kul-lgk": {
     study: {
     "zh-CN":
-      "吉隆坡飞浮罗交怡，是马来半岛西海岸北向的热门航线，全程约370公里，是马来西亚知名的度假岛屿航线之一，尤其在节假日期间班次密集。飞机离开吉隆坡后向西北飞行，沿途经过槟城以北海域，逐渐接近马来半岛与泰国交界的安达曼海海域。" +
+      "吉隆坡飞浮罗交怡，是马来半岛西海岸北向的热门航线，全程约450公里，是马来西亚知名的度假岛屿航线之一，尤其在节假日期间班次密集。飞机离开吉隆坡后向西北飞行，沿途经过槟城以北海域，逐渐接近马来半岛与泰国交界的安达曼海海域。" +
       "飞机继续向西北飞行，浮罗交怡群岛错落分布的岛屿与基林河口红树林、喀斯特尖峰地貌逐渐显现，最终降落在浮罗交怡——2007年获认定为东南亚首个UNESCO世界地质公园，地质记录跨越逾5.5亿年。",
     "en-US":
-      "Flying from Kuala Lumpur to Langkawi is a popular route heading north along the peninsula's west coast, spanning about 370 km. After leaving Kuala Lumpur the flight heads northwest, passing waters north of Penang and approaching the Andaman Sea near the Malaysia-Thailand border." +
+      "Flying from Kuala Lumpur to Langkawi is a popular route heading north along the peninsula's west coast, spanning about 450 km. After leaving Kuala Lumpur the flight heads northwest, passing waters north of Penang and approaching the Andaman Sea near the Malaysia-Thailand border." +
       " The flight continues northwest, the scattered islands of the Langkawi archipelago and the mangroves and karst pinnacles of the Kilim estuary gradually coming into view, before landing on Langkawi, recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 浮罗交怡 2007 年东南亚首个 UNESCO 世界地质公园与本库一致；全程距离原写约 370 km，按大圆改为约 450 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到浮罗交怡飞约65分钟，同一时区，是亚洲航空运营的国内航班之一。吉隆坡国际机场距市区约45公里；浮罗交怡国际机场距瓜镇约11公里。浮罗交怡是马来西亚知名的免税购物与度假岛屿。",
@@ -3676,6 +3692,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Kuala Lumpur to Kota Bharu crosses the Malay Peninsula, linking its west and east coasts, spanning about 420 km. After leaving Kuala Lumpur the flight heads northeast, first passing over the Titiwangsa Mountains — the peninsula's backbone range, a continuous green ridge running down its centre." +
       " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, at whose centre Gunung Tahan rises as the highest peak on the peninsula, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 420 km（大圆约 386 km，在容差内）；「马来传统文化保存最完整的城市之一」带限定、为定性说法，核实代理报 unknown，调用方判保留。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到哥打巴鲁飞约60分钟，同一时区，是亚洲航空运营的国内航班之一。吉隆坡国际机场距市区约45公里；苏丹依斯迈布特拉机场距市区约8公里。",
@@ -3688,11 +3705,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "山打根飞亚庇，是沙巴内陆的区域航线，全程约230公里，由婆罗洲航空（前身马仕运航空，2026年初完成品牌重组）运营，是沙巴境内客流量最大的支线航班之一，也是连接沙巴东西海岸的重要空中通道。飞机离开山打根后向西飞行，脚下逐渐展开克罗克山脉连绵起伏的山脊地貌。" +
-      "克罗克山脉呈南北走向、长约120公里，无突出的单一主峰，是京那巴鲁山所在花岗岩体的组成部分；飞机继续向西飞行，越过克罗克山脉后进入沿海平原，最终降落在亚庇——沙巴州首府。",
+      "克罗克山脉呈南北走向、长约120公里，无突出的单一主峰，主体为深海浊积砂岩与泥岩，与不远处京那巴鲁山年轻的花岗岩体分属不同的地质单元；飞机继续向西飞行，越过克罗克山脉后进入沿海平原，最终降落在亚庇——沙巴州首府。",
     "en-US":
       "Flying from Sandakan to Kota Kinabalu is a regional route within Sabah, spanning about 230 km, operated by AirBorneo (formerly MASwings, which completed its rebrand in early 2026). After leaving Sandakan the flight heads west, the rolling ridgeline of the Crocker Range gradually unfolding below." +
-      " The Crocker Range runs north-south for about 120 km with no single dominant peak, forming part of the same granite massif as Mount Kinabalu; the flight continues west, crossing the range before descending over the coastal plain and landing in Kota Kinabalu, capital of Sabah.",
+      " The Crocker Range runs north-south for about 120 km with no single dominant peak, a sedimentary range distinct from the younger granite massif of nearby Mount Kinabalu; the flight continues west, crossing the range before descending over the coastal plain and landing in Kota Kinabalu, capital of Sabah.",
     },
+    // travel sources: 全四段（study/travel × 中英）: AirBorneo 2026-01 接管原马仕运航空属实；克罗克山脉与京那巴鲁地质关系原为旧说法，已按本库 terrain/crocker-range 改。核实 2026-09-11
     travel: {
     "zh-CN":
       "山打根到亚庇飞约55分钟，同一时区，是婆罗洲航空运营的沙巴内陆航班之一（ATR 72-500机型），该航司2026年初由马仕运航空重组而来，由砂拉越州政府接管运营。山打根机场距市区约11公里；亚庇国际机场距市区约7公里。",
@@ -3704,12 +3722,13 @@ export const ROUTE_NARRATION: Record<
   "kch-myy": {
     study: {
     "zh-CN":
-      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约420公里，由婆罗洲航空运营，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
+      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约510公里，由婆罗洲航空运营，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
       "飞机继续向东北飞行，接近美里前掠过尼亚国家公园——苏比斯山石灰岩地块北缘的洞穴群，大洞洞口高逾60米，2024年列入UNESCO世界遗产名录，最终降落在美里——砂拉越东北部港口城市，是探索姆鲁山国家公园的重要中转枢纽。",
     "en-US":
-      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 420 km, operated by AirBorneo. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
+      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 510 km, operated by AirBorneo. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
       " The flight continues northeast, passing near Niah National Park before reaching Miri — a cave complex on the northern edge of the Gunong Subis limestone massif, its Great Cave mouth more than 60 m high, inscribed on the UNESCO World Heritage List in 2024 — before landing in Miri, a port city in northeastern Sarawak and an important transit hub for exploring Gunung Mulu National Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 尼亚国家公园 2024 年列入 UNESCO 与本库一致；全程距离原写约 420 km，按大圆改为约 510 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "古晋到美里飞约75分钟，同一时区，是婆罗洲航空运营的砂拉越内陆航班之一（ATR 72-500机型）。古晋国际机场距市区约11公里；美里机场距市区约8公里。美里是转乘小型飞机前往姆鲁山国家公园的重要枢纽。",
@@ -3811,6 +3830,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Cebu is the Philippines' busiest domestic route, spanning about 570 km, an air corridor linking Luzon with the core city of the Visayas. After leaving Manila the flight heads southeast, crossing the hilly terrain of southern Luzon before entering Visayan waters and flying over the open Sibuyan Sea." +
       " The flight continues southeast, approaching Cebu Island, before landing in Cebu — the oldest city in the Philippines, on the east coast of Cebu Island, an economic and tourism hub for the Visayas, where Magellan's expedition first landed in 1521.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 1521 年麦哲伦船队抵达宿务；马尼拉—宿务为菲律宾最繁忙国内线。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到宿务飞约95分钟，同一时区，是宿务太平洋航空运营的国内航班之一（全天多班），是菲律宾客流量最高的国内航线。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；麦克坦—宿务国际机场距宿务市区约16公里。",
@@ -3828,6 +3848,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Davao is the core route linking Luzon with Mindanao, spanning about 950 km. After leaving Manila the flight heads southeast over the Visayas, passing above Negros Island, the elongated caldera of Mount Kanlaon faintly visible through gaps in the clouds — the highest peak in the Visayas and still the Philippines' third-most-active volcano." +
       " The flight continues southeast across the Mindanao Sea into the airspace of northern Mindanao, before landing in Davao, Mindanao's largest city and the core gateway to Mount Apo, the Philippines' highest peak.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 甘伦火山第三活跃、阿波山最高峰与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
@@ -3845,6 +3866,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Puerto Princesa is the main route linking Luzon with Palawan, spanning about 590 km. After leaving Manila the flight heads southwest, crossing the open waters of the Mindoro Strait, the mountainous outline of Mindoro Island passing below." +
       " The flight continues southwest across the northern Sulu Sea, approaching Palawan, before landing in Puerto Princesa, capital of Palawan Province and the core gateway to the Puerto Princesa Underground River and Palawan's karst landscapes.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 590 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到普林塞萨港飞约90分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；普林塞萨港国际机场距市区约4公里。",
@@ -3862,6 +3884,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Boracay is a popular route linking Metro Manila with one of the Philippines' best-known island resorts, spanning about 315 km. After leaving Manila the flight heads southwest, crossing the mountainous terrain of northern Mindoro before entering the open waters of the Sibuyan Sea." +
       " The flight continues south, approaching the coast of Aklan Province, before landing at Caticlan, the gateway airport opposite Boracay Island, from where visitors take a roughly 10-minute ferry to reach Boracay, one of the Philippines' most popular island resort destinations.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 315 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到长滩岛飞约75分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；卡蒂克兰机场距长滩岛需转乘渡船约10分钟。",
@@ -3873,12 +3896,13 @@ export const ROUTE_NARRATION: Record<
   "mnl-usu": {
     study: {
     "zh-CN":
-      "马尼拉飞科隆，是连接吕宋岛与巴拉望岛北部卡拉棉群岛的航线，全程约315公里，是探索科隆石灰岩岛礁地貌最便捷的空中通道，也是布桑加机场客流量最大的航线。飞机离开马尼拉后向西南飞行，越过民都洛海峡开阔水域，脚下岛屿轮廓逐渐稀疏。" +
+      "马尼拉飞科隆，是连接吕宋岛与巴拉望岛北部卡拉棉群岛的航线，全程约285公里，是探索科隆石灰岩岛礁地貌最便捷的空中通道，也是布桑加机场客流量最大的航线。飞机离开马尼拉后向西南飞行，越过民都洛海峡开阔水域，脚下岛屿轮廓逐渐稀疏。" +
       "飞机继续向西南飞行，逐渐接近卡拉棉群岛，星罗棋布的石灰岩小岛点缀在碧蓝海面之上，最终降落在布桑加岛——科隆—卡拉棉群岛的核心岛屿，岛屿周边分布众多石灰岩崖壁地貌与二战沉船潜水点。",
     "en-US":
-      "Flying from Manila to Coron links Luzon with the Calamian Islands in northern Palawan, spanning about 315 km. After leaving Manila the flight heads southwest, crossing the open waters of the Mindoro Strait." +
+      "Flying from Manila to Coron links Luzon with the Calamian Islands in northern Palawan, spanning about 285 km. After leaving Manila the flight heads southwest, crossing the open waters of the Mindoro Strait." +
       " The flight continues southwest, approaching the Calamian Islands, before landing on Busuanga Island, the core island of the Coron/Calamian group, ringed by numerous limestone cliff landforms and WWII shipwreck dive sites.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 315 km，按大圆改为约 285 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
@@ -3896,6 +3920,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Tagbilaran links Luzon with Bohol Island in the Visayas, spanning about 630 km. After leaving Manila the flight heads southeast, crossing the northern waters of the Visayas; approaching Bohol, the densely packed conical mounds of the Chocolate Hills gradually come into view below." +
       " The flight continues south, landing on Panglao Island, home to Bohol-Panglao International Airport and the core gateway to the Chocolate Hills and Bohol's natural landscapes.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 630 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到塔比拉兰飞约100分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；保和—邦劳国际机场距塔比拉兰市区约18公里。",
@@ -3913,6 +3938,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Legazpi links Metro Manila with the Bicol Peninsula, spanning about 320 km. After leaving Manila the flight heads southeast, crossing the narrow terrain of the Bicol Peninsula in southern Luzon, hills and rice paddies interweaving below." +
       " Approaching Legazpi, the near-perfectly symmetrical cone of Mayon Volcano gradually comes into view — the Philippines' most active volcano, with the lowest ellipticity index of any stratovolcano globally — before the flight lands in Legazpi, capital of Albay Province and the core gateway for viewing Mayon.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 马荣火山椭圆度最低、400 年喷发逾 49 次与本库一致（未沿用已删的「首座国家公园」）。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到黎牙实比飞约60分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；比科尔国际机场距黎牙实比市区约8公里。",
@@ -3930,6 +3956,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Cebu to Davao links the regional centres of the Visayas and Mindanao, spanning about 390 km. After leaving Cebu the flight heads southeast, crossing the open waters of the Visayan Sea, islands scattered below." +
       " The flight continues southeast across the Mindanao Sea into the airspace of northern Mindanao, before landing in Davao, Mindanao's largest city, the outline of Mount Apo visible to the northeast just before landing.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 390 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "宿务到达沃飞约65分钟，同一时区，是宿务太平洋航空运营的国内航班之一。麦克坦—宿务国际机场距宿务市区约16公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
@@ -3947,6 +3974,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Denpasar is Indonesia's busiest domestic route, spanning about 990 km and connecting the capital to Bali. After leaving Jakarta the flight heads southeast, first passing over the coastal plains and rice paddies of western Java before entering the volcanic belt of central Java." +
       " The flight continues southeast, Mount Merapi's iconic conical outline visible below — Indonesia's most active volcano, its summit perpetually wreathed in steam; past Merapi, the flight enters East Javanese airspace, the grey-white sand sea of the Bromo Tengger caldera faintly visible through the clouds, dotted with four secondary cones. The flight then crosses the Bali Strait, landing in Denpasar, home to Bali's only commercial airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 默拉皮「印尼最活跃的火山」、布罗莫—腾格尔次生火山锥与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到登巴萨飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一，是印尼客流量最大的单一航线。苏加诺—哈达国际机场距雅加达市区约20公里；伍拉赖国际机场距登巴萨市区约13公里。",
@@ -3964,6 +3992,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Surabaya is the core route running the length of Java, spanning about 690 km and connecting the island's two largest cities at its western and eastern ends. After leaving Jakarta the flight heads east, over the densely settled towns and rice paddies of Java's north coast, gradually giving way to the volcanic terrain of central Java." +
       " The flight continues east, Mount Merapi's conical outline emerging through the clouds — this active volcano, perpetually steaming at its summit, is the most prominent landmark north of Yogyakarta; past Merapi, the flight continues east along Java's north coast, landing in Surabaya, the largest port city in eastern Java and the gateway to Mount Bromo.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 690 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到泗水飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一，全天多个班次往返。苏加诺—哈达国际机场距雅加达市区约20公里；朱安达国际机场距泗水市区约20公里。",
@@ -3981,6 +4010,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Medan is the core route linking Java with Sumatra, spanning about 1,390 km and heading broadly northwest across the Java Sea. After leaving Jakarta the flight heads northwest, first crossing the open waters of the Java Sea before approaching Sumatra's southeastern coast." +
       " The flight continues northwest; after more than two hours it approaches North Sumatran airspace, the outline of Lake Toba — one of the world's largest volcanic caldera lakes — faintly visible through the clouds, Samosir Island clearly distinguishable at its centre. Past Lake Toba, the flight continues northwest, landing in Medan, Sumatra's largest city and the gateway to Lake Toba and the Bukit Lawang orangutan sanctuary.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 多巴湖「世界最大的火山破火山口湖之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到棉兰飞约145分钟，同一时区，是鹰航印尼运营的国内航线之一（每周7班）。苏加诺—哈达国际机场距雅加达市区约20公里；瓜拉纳姆国际机场距棉兰市区约39公里。",
@@ -3998,6 +4028,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Makassar is the core route linking Java with Sulawesi, spanning about 1,430 km and heading broadly east across the Java Sea and the Flores Sea. After leaving Jakarta the flight heads east, first crossing the open waters of the Java Sea, with most of the route flying over the waters between Indonesia's islands." +
       " The flight continues east; after more than two hours it crosses the Makassar Strait and approaches Sulawesi's southwestern coast, landing in Makassar, Sulawesi's largest city and main port, historically the birthplace of the Bugis people's traditional wooden pinisi schooner seafaring culture, and the gateway to the Tana Toraja highlands.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 1430 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到望加锡飞约150分钟，同一时区，是鹰航印尼运营的国内航线之一。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹哈桑努丁国际机场距望加锡市区约21公里。",
@@ -4009,12 +4040,13 @@ export const ROUTE_NARRATION: Record<
   "cgk-bpn": {
     study: {
     "zh-CN":
-      "雅加达飞巴厘巴板，是连接爪哇岛与加里曼丹岛（婆罗洲印尼部分）的核心航线，全程约1170公里，飞行方向大致向东北跨越爪哇海与望加锡海峡，是印尼三大主岛之间空中联系的重要一环。飞机离开雅加达后向东北飞行，脚下先掠过爪哇海开阔水域，此后大部分航程飞越海域、少见陆地地貌。" +
+      "雅加达飞巴厘巴板，是连接爪哇岛与加里曼丹岛（婆罗洲印尼部分）的核心航线，全程约1260公里，飞行方向大致向东北跨越爪哇海与望加锡海峡，是印尼三大主岛之间空中联系的重要一环。飞机离开雅加达后向东北飞行，脚下先掠过爪哇海开阔水域，此后大部分航程飞越海域、少见陆地地貌。" +
       "飞机继续向东北飞行，逾两小时后跨越望加锡海峡，抵近加里曼丹岛东南海岸，最终降落在巴厘巴板——东加里曼丹省的石油工业城市，也是通往印尼正在建设中的新首都努桑塔拉的主要空中门户，近年因迁都项目建设持续升温，是观察印尼国家发展进程的一处窗口。",
     "en-US":
-      "Flying from Jakarta to Balikpapan is the core route linking Java with Kalimantan (Indonesia's portion of Borneo), spanning about 1,170 km and heading broadly northeast across the Java Sea and the Makassar Strait. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea, with most of the route flown over open water." +
+      "Flying from Jakarta to Balikpapan is the core route linking Java with Kalimantan (Indonesia's portion of Borneo), spanning about 1,260 km and heading broadly northeast across the Java Sea and the Makassar Strait. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea, with most of the route flown over open water." +
       " The flight continues northeast; after more than two hours it crosses the Makassar Strait and approaches Kalimantan's southeastern coast, landing in Balikpapan, East Kalimantan's oil-industry city and the main air gateway to Nusantara, Indonesia's new capital currently under construction.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 1170 km（比大圆 1258 km 还短），改为约 1260 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到巴厘巴板飞约135分钟，同一时区，是鹰航印尼运营的国内航班之一。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹阿吉穆罕默德苏莱曼机场距巴厘巴板市区约11公里。",
@@ -4032,6 +4064,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Pangkalan Bun is an important route into Kalimantan's tropical rainforest and orangutan conservation area, spanning about 670 km. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea before gradually approaching Kalimantan's southern coast." +
       " The flight continues northeast, extensive deep-green peat swamp forest and tropical rainforest visible across Kalimantan's southern lowlands, the winding course of the Sekonyer River faintly traceable through the trees — the core area of Tanjung Puting National Park. The flight then lands in Pangkalan Bun, a riverside town in Central Kalimantan and the main gateway for visiting the park to observe wild orangutans.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 670 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到邦卡兰文飞约85分钟，同一时区，是巴迪克航空运营的国内航班之一。苏加诺—哈达国际机场距雅加达市区约20公里；伊斯坎达尔机场距邦卡兰文市区约3公里。",
@@ -4043,12 +4076,13 @@ export const ROUTE_NARRATION: Record<
   "dps-lbj": {
     study: {
     "zh-CN":
-      "登巴萨飞拉布安巴焦，是巴厘岛通往科莫多国家公园的热门旅游航线，全程约470公里，飞行方向大致向东跨越龙目海峡与松巴哇岛上空。飞机离开登巴萨后向东飞行，脚下先掠过龙目岛，林贾尼火山高耸的锥形轮廓与山体内的塞加拉阿纳克火山口湖清晰可辨。" +
+      "登巴萨飞拉布安巴焦，是巴厘岛通往科莫多国家公园的热门旅游航线，全程约520公里，飞行方向大致向东跨越龙目海峡与松巴哇岛上空。飞机离开登巴萨后向东飞行，脚下先掠过龙目岛，林贾尼火山高耸的锥形轮廓与山体内的塞加拉阿纳克火山口湖清晰可辨。" +
       "越过林贾尼后，飞机继续向东飞行，掠过松巴哇岛与松巴岛之间的海域，逐渐接近弗洛雷斯海西端；科莫多国家公园干旱的稀树草原岛群在云隙间显现，最终降落在拉布安巴焦——弗洛雷斯岛西端的港口小镇，是探索科莫多巨蜥栖息地的核心门户。",
     "en-US":
-      "Flying from Denpasar to Labuan Bajo is a popular tourist route from Bali to Komodo National Park, spanning about 470 km and heading broadly east across the Lombok Strait and over Sumbawa. After leaving Denpasar the flight heads east, passing over Lombok, the towering conical outline of Mount Rinjani and the Segara Anak crater lake within it clearly visible below." +
+      "Flying from Denpasar to Labuan Bajo is a popular tourist route from Bali to Komodo National Park, spanning about 520 km and heading broadly east across the Lombok Strait and over Sumbawa. After leaving Denpasar the flight heads east, passing over Lombok, the towering conical outline of Mount Rinjani and the Segara Anak crater lake within it clearly visible below." +
       " Past Rinjani, the flight continues east over the waters between Sumbawa and Sumba, gradually approaching the western Flores Sea; the dry savanna islands of Komodo National Park come into view through the clouds, before landing in Labuan Bajo, a small port town at the western tip of Flores and the core gateway to the Komodo dragon's habitat.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 470 km（比大圆 520 km 还短），改为约 520 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "登巴萨到拉布安巴焦飞约80分钟，同一时区，是巴迪克航空运营的国内航班之一（每周28班）。伍拉赖国际机场距登巴萨市区约13公里；科莫多机场距拉布安巴焦市区约2公里。",
@@ -4066,6 +4100,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Makassar to Manado is the core route running the length of Sulawesi, spanning about 950 km and connecting the island's major cities at its southwestern and northeastern ends. After leaving Makassar the flight heads northeast, first passing over the mountainous terrain of Sulawesi's southwestern peninsula, the tiered rice terraces and grey-white karst mountains of the Tana Toraja highlands faintly visible through the clouds." +
       " Past Tana Toraja, the flight continues northeast over Sulawesi's central highlands, gradually approaching the Minahasa Peninsula at the island's northeastern tip, before landing in Manado, capital of North Sulawesi province and the core gateway to the coral reef dive sites of Bunaken National Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 塔纳托拉查未涉族群 / 宗教评价。核实 2026-09-11
     travel: {
     "zh-CN":
       "望加锡到万鸦老飞约115分钟，同一时区，是鹰航印尼运营的国内航班之一。苏丹哈桑努丁国际机场距望加锡市区约21公里；萨姆拉图兰吉国际机场距万鸦老市区约13公里。",
@@ -4083,6 +4118,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Yogyakarta is an important intra-Java route linking the capital with a historic cultural city, spanning about 424 km. After leaving Jakarta the flight heads southeast, first passing over the rice paddies and hills of western Java before approaching the volcanic highlands of central Java." +
       " The flight continues southeast, the geothermally active crater cluster and sulphur fumaroles of the Dieng Plateau faintly visible through the clouds, the highland preserving 7th–8th century Hindu temple ruins; past Dieng, the flight lands in Yogyakarta, the centre of Javanese court culture and the gateway to Borobudur, Prambanan and Mount Merapi.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 迪昂高原 7–8 世纪神庙群与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到日惹飞约75分钟，同一时区，是鹰航印尼运营的国内航线之一（每日运营）。苏加诺—哈达国际机场距雅加达市区约20公里；日惹国际机场（YIA）距日惹市区约45公里，有机场铁路直达。",
