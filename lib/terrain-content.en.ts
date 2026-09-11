@@ -13335,6 +13335,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Poland ============
   "tatra-mountains": {
+    // 全六段 sources: 雷西峰西北峰 2499 m 为**波兰境内**最高点（中央峰 2503 m 传统值 / 最新高精度约 2500.9 m 在斯洛伐克一侧）—— 两个对象分列清楚，未挂错；塔特拉国家公园 1954 年设立。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Tatra Mountains are the highest part of the Carpathians, straddling the Poland-Slovakia border; the north-western summit of Rysy, at 2,499 m, is the highest point in Poland.",
     formation:
@@ -13349,6 +13350,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tatra region has been an important Polish mountaineering and skiing destination since the 19th century; Tatra National Park was established in 1954, and the foothill town of Zakopane is known as Poland's \"winter capital.\"",
   },
   "sudetes-karkonosze": {
+    // 全六段 sources: 希尼耶日卡峰 1603.30 m（2014 年后官方值，此前长期用 1602 m）；山顶气象观测 1824 年起不定期、1889 年设二级站、1900 年建首座常设天文台 —— 正文「自19世纪起」准确。**与捷克侧 krkonose 并排核过**：高度一致，波兰 KPN 1959 / 捷克 KRNAP 1963 两个年份各自属实、不冲突。核实 2026-09-11，未改动
     seeing:
       "The Sudetes form an ancient mountain system along Poland's south-western border with the Czech Republic; the Karkonosze is its highest section, with Śnieżka, at 1,603 m, the highest peak in the Sudetes.",
     formation:
@@ -13363,6 +13365,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A weather observation facility has stood atop Śnieżka since the 19th century, one of the oldest mountain weather stations in Central Europe, and the summit building continues to record meteorological data today.",
   },
   "bieszczady-mountains": {
+    // 全六段 sources: 塔尔尼察峰 1346 m —— 正文只声称「**波兰境内**最高峰」而非「别什恰迪山脉最高峰」（整体最高的 Pikui 1405 m 在乌克兰），限定准确、未挂错对象。20 世纪的行政区划调整与人口变动采用不点名的中性事实句式，符合红线判据。核实 2026-09-11，未改动
     seeing:
       "The Bieszczady Mountains are the section of the eastern Carpathians at Poland's south-eastern tip, bordering Slovakia and Ukraine; Tarnica, at 1,346 m, is the highest peak within Poland.",
     formation:
@@ -13385,8 +13388,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Babia Góra shows a complete vertical vegetation sequence from foothill forest to summit tundra, set against the continuous rolling relief of the wider Beskid range around it.",
     distinguish:
       "Both the Beskids and the Tatras are parts of the Carpathians within Poland, but the Beskids are mainly sedimentary rock with comparatively rounded relief, while the Tatras are granite with steeper, more classic glacial landforms.",
+    // concept sources: 巴比亚古拉 1725 m 为贝斯基德山脉最高峰、1954 年设国家公园；UNESCO MAB 生物圈保护区 **1976** 年（官方页 Year of nomination，1 级）—— 旅游站点普遍讹传 1977。核实 2026-09-11
     concept:
-      "Babia Góra's complete vertical vegetation zonation is a classic case for studying how a Central European mid-elevation mountain ecosystem changes along an elevation gradient, which is why it was designated a UNESCO Biosphere Reserve in 1977.",
+      "Babia Góra's complete vertical vegetation zonation is a classic case for studying how a Central European mid-elevation mountain ecosystem changes along an elevation gradient, which is why it was designated a UNESCO Biosphere Reserve in 1976.",
     history:
       "Babia Góra's comparatively remote location has historically preserved its original vegetation; Babia Góra National Park, established in 1954, is one of Poland's earliest national parks.",
   },
@@ -13401,12 +13405,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Pieniny and the Tatras are parts of the Carpathians, but Pieniny is built of limestone and dolomite and is a comparatively isolated massif, while the Tatras are granite and form the highest, most continuous core of the range.",
     concept:
       "Pieniny's distinctive limestone-and-dolomite bedrock, geologically distinct from the surrounding Carpathians, is an important sample for studying how different geological units are assembled within the Carpathian orogenic belt.",
+    // history sources: 三王冠峰 982 m；国家公园 1932 年设立，为波兰最早的国家公园之一、也是欧洲首个跨境自然公园。漂流史见 dunajec-gorge 条目留痕（原写的「18 世纪」两条目各错一次，同批一并改）。核实 2026-09-11
     history:
-      "Pieniny National Park was established in 1932, one of Poland's earliest national parks; the tradition of rafting the Dunajec dates back to the 18th century and remains a classic cross-border Poland-Slovakia tourist experience today.",
+      "Pieniny National Park was established in 1932, one of Poland's earliest national parks; rafts have long worked the Dunajec, and from the early 19th century the descent turned into a tourist trip; it remains a classic cross-border Poland-Slovakia experience today.",
   },
   "swietokrzyskie-mountains": {
+    // seeing sources: 维希查峰 **614 m**（2019 年国家公园 + 理工大学 GPS/水准复测，2 级），612 / 611.8 为旧值；Skała Agaty 不是独立山峰、只是该峰体的东侧峰顶，最高点归属未变。C8「海拔也会过期」。核实 2026-09-11
     seeing:
-      "The Świętokrzyskie Mountains are an ancient folded range in south-central Poland, their bedrock dating to the Palaeozoic — one of the geologically oldest ranges in the country; Łysica, at 612 m, is the highest point.",
+      "The Świętokrzyskie Mountains are an ancient folded range in south-central Poland, their bedrock dating to the Palaeozoic — one of the geologically oldest ranges in the country; Łysica is the highest point, 614 m according to the Świętokrzyski National Park's 2019 re-survey.",
     formation:
       "The bedrock formed around 500 million years ago in the Palaeozoic; hundreds of millions of years of repeated tectonic movement and weathering have worn the range down to today's comparatively low, rounded hill form — an important sample for studying the long evolution of an ancient orogenic belt.",
     observation:
@@ -13419,6 +13425,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Rich in iron ore and limestone, the region has been an important Polish mining and smelting centre since the Middle Ages; the Holy Cross Monastery has been an important Polish pilgrimage site since the 11th century.",
   },
   "krakow-czestochowa-upland": {
+    // 全六段 sources: 「波兰侏罗」俗称与侏罗纪石灰岩台地属实；「鹰巢之路」沿线约 25 座城堡多为 14 世纪卡齐米日大帝时期为防御西里西亚方向边境而建。核实 2026-09-11，未改动
     seeing:
       "The Kraków-Częstochowa Upland, informally known as the \"Polish Jura,\" is a long, narrow plateau built of Jurassic limestone, its length strung with medieval castle ruins along the \"Trail of the Eagles' Nests.\"",
     formation:
@@ -13433,6 +13440,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The \"Trail of the Eagles' Nests\" takes its name from the way the castles along it, perched on steep towers, resemble eagles' nests; these castles were first built in the 14th century under King Casimir the Great to defend Poland's southern border.",
   },
   "gory-stolowe": {
+    // 全六段 sources: 什切利涅茨维尔基峰 919 m；白垩纪砂岩；国家公园 1993 年设立。核实 2026-09-11，未改动
     seeing:
       "The Table Mountains (Góry Stołowe) are a flat-topped sandstone plateau at the eastern end of the Sudetes; Szczeliniec Wielki, at 919 m, is the most representative example of table-mountain landform in Poland.",
     formation:
@@ -13447,6 +13455,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Table Mountains National Park was established in 1993; rock-passage place names such as \"Hell's Gorge\" and \"Devil's Kitchen\" record long-standing local folklore.",
   },
   "masurian-lakes": {
+    // 全六段 sources: 希尼亚尔德维湖 113.8 km² 为波兰最大湖泊，核实无误。⚠️ 湖泊数量「超过2500座」**没有单一权威口径**：旅游/区域来源给约 2600 座（>1 ha），省级空间规划文件给全省 1081 座（>1 ha，2015 版），差异来自统计范围与面积阈值 —— 见 issue，正文暂不动。核实 2026-09-11
     seeing:
       "The Masurian Lake District is a densely lake-studded region of north-eastern Poland carved by last-glacial erosion, with more than 2,500 lakes; Lake Śniardwy is the largest lake in Poland.",
     formation:
@@ -13461,6 +13470,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake district's canal system dates to the 19th century, historically used for timber transport; it is now an important area for water tourism and sailing in Poland.",
   },
   "lake-hancza": {
+    // 全六段 sources: 最大水深 108/108.5 m，波兰最深湖；「中欧最深湖之一」带了限定语，不是排他断言。核实 2026-09-11，未改动
     seeing:
       "Lake Hańcza, in the Suwałki region of north-eastern Poland, has a maximum depth of about 108 m — the deepest lake in Poland and one of the deepest in Central Europe.",
     formation:
@@ -13475,6 +13485,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Thanks to its deep, clear water, the lake has long been an important Polish diving-training and scientific-research site, and is now an important ecotourism area in the Suwałki region.",
   },
   "vistula-river": {
+    // 全六段 sources: 全长 1047 km、源出西里西亚贝斯基德山 Barania Góra 西坡（1106 m）、逾 85% 流域在波兰境内、于格但斯克湾附近成三角洲入海 —— 与 zulawy-wislane、oder-river 两条并排读一致（odrapcu.pl，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Vistula is the longest river in Poland, running about 1,047 km from its source in the Beskids, spanning the length of the country before entering the Baltic Sea near Gdańsk.",
     formation:
@@ -13489,6 +13500,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Since the Middle Ages the Vistula has been an important Polish shipping route and cultural symbol; historic Polish cities such as Warsaw and Kraków are built along it, and the river holds significant symbolic importance in Polish national culture.",
   },
   "oder-river": {
+    // 全六段 sources: 波兰第二长河，源出捷克赫鲁比耶塞尼克山（属苏台德），下游约 179 km 为界河，经什切青潟湖入海；与 vistula-river 的对比表述一致。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Oder is Poland's second-longest river, rising in the Czech Republic; its lower course forms the border between Poland and Germany before entering the Baltic Sea near Szczecin.",
     formation:
@@ -13503,6 +13515,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Oder has historically been an important Central European shipping route; Szczecin has developed as a major port city since the Middle Ages thanks to its position guarding the Oder's mouth.",
   },
   "bug-river": {
+    // 全六段 sources: 源出乌克兰沃利尼亚—波多利亚高地，分别与白俄罗斯约 178 km、与乌克兰约 185 km 构成界河；是欧洲少数未受大坝/护岸大规模改造的大型河流之一。跨境表述中性、不涉主权。核实 2026-09-11，未改动
     seeing:
       "The Bug rises in Ukraine; its lower course forms the border between Poland and Belarus and Ukraine, and it is one of the few large European rivers to retain a natural, largely unregulated channel.",
     formation:
@@ -13517,6 +13530,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Bug's banks have historically been an important natural barrier and trade route along Poland's eastern border region; the riverside wetlands are now an important protected ecological area in Poland.",
   },
   "narew-river": {
+    // 全六段 sources: 纳雷夫国家公园河段为辫状水系、俗称「波兰的亚马逊」；国家公园 1996 年设立。核实 2026-09-11，未改动
     seeing:
       "The stretch of the Narew flowing through Narew National Park shows a rare braided river form, its channel splitting into dozens of parallel branches winding through wetland marsh — locally nicknamed \"Poland's Amazon.\"",
     formation:
@@ -13541,10 +13555,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Dunajec Gorge and the Ojców Valley are important karst gorge landforms in Poland, but the Dunajec Gorge cuts through the high peaks of the Pieniny massif and is known for rafting, while the Ojców Valley lies in a comparatively gentle upland area and is known for its isolated rock towers and caves.",
     concept:
       "The Dunajec Gorge is a classic case for studying how a river can carve a deep gorge over the long term by eroding comparatively soft limestone and dolomite bedrock, and it is also an example of cross-border Poland-Slovakia landform conservation cooperation.",
+    // history sources: 观光漂流始于 19 世纪初（Józef Szalay 推广、1832 年成立筏工行会）；**运输传统的起始世纪未定** —— 多个来源给 16 世纪但全部 3 级，按判据不作替代值，正文不写死，见 issue。原写的「18 世纪」查无支持。同一处错在 pieniny-mountains 条目里也有一份，同批一并改。核实 2026-09-11
     history:
-      "The tradition of rafting the Dunajec dates back to the 18th century, originally used to transport timber and salt; it has since become one of the most iconic tourist experiences in southern Poland.",
+      "Rafts on the Dunajec were originally used to move timber and other goods; from the early 19th century the spa town of Szczawnica promoted the descent as a tourist trip, and a raftsmen's guild was founded locally in 1832. It is now one of the most iconic tourist experiences in southern Poland.",
   },
   "ojcow-valley": {
+    // 全六段 sources: 克拉科夫门为天然岩拱；国家公园 1956 年设立，现园区 21.46 km²（初建 14.40 km²），为波兰面积最小的国家公园。核实 2026-09-11，未改动
     seeing:
       "The Ojców Valley is a karst gorge cut by the Prądnik River through the limestone of the Kraków-Częstochowa Upland; the Kraków Gate is the valley's most representative natural rock arch.",
     formation:
@@ -13559,6 +13575,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Several caves in the valley have yielded Palaeolithic-era human artefacts; Ojców National Park, established in 1956, is Poland's smallest national park and one of its earliest.",
   },
   "slowinski-dunes": {
+    // 全六段 sources: 最高的翁茨卡沙丘 42 m；移动速率因沙丘类型而异 —— 抛物线状约 3 m/年、新月形可达 10 m/年，正文「3 至 10 米」正好覆盖两类；国家公园 1967 年设立。**沙丘位置是持续变化量**，下轮复核。核实 2026-09-11，未改动
     seeing:
       "The Słowiński Moving Dunes are the largest active dune field in Europe along the Baltic coast, reaching heights of up to 42 m and migrating inland by about 3 to 10 m each year under the prevailing wind.",
     formation:
@@ -13573,6 +13590,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historical records of the dunes burying nearby villages and forests date to the 19th century; Słowiński National Park was established in 1967 to protect and study this distinctive active dune landform.",
   },
   "hel-peninsula": {
+    // 全六段 sources: 长约 35 km；最窄处各来源给 100 m 或 175 m，正文「不足200米」留了余量；1939-09-09 至 10-02 海尔要塞区坚守，是九月战役中最后投降的据点之一（定位性军事地理史实，已结束、无持续对立，按判据保留）。核实 2026-09-11，未改动
     seeing:
       "The Hel Peninsula is a sand spit about 35 km long and less than 200 m wide at its narrowest point, separating the Baltic Sea from the Gulf of Gdańsk; the town of Hel at its tip is an important Polish seaside resort.",
     formation:
@@ -13587,6 +13605,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Hel Peninsula has historically been an important Polish fishing base; during the Second World War it was one of the last strongholds of Polish naval resistance, and it is now an important seaside-resort and watersports destination in Poland.",
   },
   "wolin-island": {
+    // 全六段 sources: 冰碛海崖；国家公园 1960 年设立；10 世纪为波罗的海重要贸易枢纽（Jumne / 传说中的 Jomsborg）。⚠️ 崖壁长度存在 15 km 与 11.7 km 两个版本，正文取的 15 km 能找到来源支撑，但未能确定哪个是当前更权威口径，下轮复核。核实 2026-09-11，未改动
     seeing:
       "Wolin Island is a Baltic coastal island in north-western Poland; a roughly 15-km stretch of sea cliff within Wolin National Park is a rare high-cliff coastline on the southern Baltic shore.",
     formation:
@@ -13601,6 +13620,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Wolin National Park was established in 1960 and includes a small European bison reserve; the island also holds the archaeological remains of Wolin, an important Viking-era trading settlement.",
   },
   "great-polish-lowland": {
+    // 全六段 sources: 10 世纪波兹南与格涅兹诺同为皮亚斯特王朝早期政治中心，梅什科一世在此设主要据点并安葬于波兹南大教堂；11 世纪后政治中心移至克拉科夫。正文用「之一」限定，未夸大为唯一或永久首都。核实 2026-09-11，未改动
     seeing:
       "The Great Polish Lowland is the main portion of the Central European Plain lying within Poland, flat and open, and Poland's largest agricultural region.",
     formation:
@@ -13625,10 +13645,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Żuławy Wiślane and the Great Polish Lowland are important plain landforms in Poland, but Żuławy Wiślane is smaller, with parts below sea level and dependent on artificial drainage, while the Great Polish Lowland is naturally flat and considerably more extensive.",
     concept:
       "The below-sea-level terrain of parts of Żuławy Wiślane is a classic case for studying how a river-mouth delta can be transformed by artificial dike-and-drainage technology into liveable, farmable low-lying land — sharing common origins with Dutch polder-reclamation techniques.",
+    // history sources: 门诺派移民 16 世纪起迁入维斯瓦河三角洲（门诺派得名于 Menno Simons 1496–1561，**定义上不可能早于 16 世纪**，故「中世纪起」必错，不依赖来源级别）；16–18 世纪为排水系统开发高峰，17 世纪末门诺派占地约 3.8 万 ha。核实 2026-09-11
     history:
-      "From the Middle Ages, settlers from the Low Countries introduced dike-and-drainage technology to the region, gradually converting the original marsh wetland into fertile farmland — a reclamation tradition that continues today.",
+      "From the 16th century, Mennonite settlers from the Low Countries fleeing religious persecution introduced dike-and-drainage technology to the region, gradually converting the original marsh wetland into fertile farmland — a reclamation tradition that continues today.",
   },
   "bialowieza-forest": {
+    // 全六段 sources: UNESCO 分三期 —— **1979 年首次列入（正是波兰侧的比亚沃维耶扎国家公园部分）**、1992 年扩展纳入白俄罗斯侧、2014 年再扩展。本条对应的就是 1979 这一期，**没有借用后续扩展年份**（whc.unesco.org/en/list/33，1 级）。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "Białowieża Forest is one of the best-preserved primeval forests remaining on the European Plain, straddling the Poland-Belarus border, and an important habitat for the European bison.",
     formation:
@@ -13643,6 +13665,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The forest has been a royal hunting reserve for successive Polish monarchs since the Middle Ages, a protection tradition that spared it from large-scale logging; European bison conservation efforts here have continued for more than a century.",
   },
   roztocze: {
+    // 全六段 sources: 白垩纪与第三纪石灰岩基岩；**2019 年**列为波兰/乌克兰跨境生物圈保护区 —— 乌克兰侧 Roztochya 早在 2011 年已单独列入，本条对应的是 2019 年两侧整合为跨境保护区的年份，**没有借用 2011**（unesco.org/en/mab/roztocze，1 级）。核实 2026-09-11，未改动
     seeing:
       "Roztocze is a long, narrow, ridge-like band of limestone hills in south-eastern Poland, densely forested.",
     formation:
@@ -13657,6 +13680,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The region's uplifted terrain and comparatively poor soil have historically limited agricultural development, allowing the forest to survive well; it is now an important ecotourism and hiking destination in south-eastern Poland.",
   },
   "kashubian-switzerland": {
+    // 全六段 sources: 维耶日察峰 329 m；末次冰期终碛丘陵。部分来源称其为「整个波兰低地地区最高点」，正文写「波兰北部地势最高点」更保守，不构成夸大。核实 2026-09-11，未改动
     seeing:
       "Kashubian Switzerland is a last-glacial terminal moraine hill area in the Pomerania region of northern Poland, densely dotted with lakes and forest; Wieżyca, at 329 m, is the highest point in northern Poland.",
     formation:
@@ -13671,6 +13695,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The region has historically been the traditional homeland of the Kashubians, a West Slavic minority group in Poland, and Kashubian language and cultural traditions are still preserved and continued locally today.",
   },
   "biebrza-marshes": {
+    // 全六段 sources: 别布扎国家公园 1993-09-09 设立，为波兰面积最大的国家公园；奥索维茨要塞由俄军建于 19 世纪 80–90 年代，一战期间周边沼泽地形多次阻滞进攻（定位性军事地理史实，按判据保留）。核实 2026-09-11，未改动
     seeing:
       "The Biebrza Marshes are Poland's largest area of low-lying fen wetland, spread along the Biebrza river valley, and one of the best-preserved lowland river-valley marshes remaining in Europe.",
     formation:
@@ -16452,6 +16477,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "White limestone quarried on the island was historically used to build monuments such as Diocletian's Palace; the Zlatni Rat beach is today one of Croatia's iconic tourism landmarks.",
   },
   krkonose: {
+    // 全六段 sources: 斯涅日卡峰 1603 m 为捷克全境最高点；KRNAP 1963-05-17 设立。**与波兰侧 sudetes-karkonosze 并排核过**：高度一致，捷 KRNAP 1963 / 波 KPN 1959 两个年份各自属实、不冲突。跨境表述中性、不描述边界线。核实 2026-09-11，未改动
     seeing:
       "The Krkonoše (Giant Mountains) form the highest part of the Sudetes, straddling the Czech-Polish border; Sněžka, at 1,603 m, is the highest point in the Czech Republic.",
     formation:
@@ -16466,6 +16492,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The summit weather station has operated continuously since the 19th century, one of Central Europe's oldest mountain weather stations; the region developed into a hiking and skiing destination from the late 19th century, and Krkonoše National Park was established in 1963.",
   },
   sumava: {
+    // 全六段 sources: 普莱希峰 1378 m 为捷克一侧最高点（Boubín 1362 m 只因瞭望塔虚高 21 m 才「超过」，正文未混淆两者）；舒马瓦国家公园 1991 年设立、为捷克最大国家公园。**与德国侧 bavarian-forest 并排读**：该条写的「森林区整体最高的大阿尔伯山在境外一侧」与本条「Plechý 为捷克侧最高」不矛盾。核实 2026-09-11，未改动
     seeing:
       "Šumava (the Bohemian Forest) is a range of low mountains running along the German and Austrian borders in southwestern Czechia, and is the source of the Vltava River; Plechý, at 1,378 m, is the highest point on the Czech side.",
     formation:
@@ -16480,6 +16507,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Šumava National Park, established in 1991, is the largest national park in Czechia; the region was historically sparsely populated and undeveloped, and its long stint as a Cold War border-control zone incidentally helped keep its old-growth forest intact.",
   },
   "krusne-hory": {
+    // 全六段 sources: 克利诺韦茨峰 1244 m 为捷克侧最高点。**与德国侧 erzgebirge 并排核过**：德方 Fichtelberg 1214.6 m（本库德国条目作 1215 m），两侧最高点归属一致、互不矛盾。南缓北陡的地垒描述经查与地质文献一致。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Krušné hory (Ore Mountains) run about 130 km along the Czech-German (Saxony) border, named historically for their silver, tin and lead mining; Klínovec, at 1,244 m, is the highest point on the Czech side.",
     formation:
@@ -16504,10 +16532,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Jeseníky and Krkonoše are both part of the Sudetes, but Jeseníky's summit is broader and gentler, known for its alpine tundra and block fields, while Krkonoše shows steeper, more classic glacial landforms.",
     concept:
       "The extensive alpine tundra preserved at the summit of Jeseníky is an important sample for studying how strong wind and cold together can abnormally lower the vegetation treeline on mid-elevation Central European mountains.",
+    // history sources: 普拉迭德峰 1491 m 为摩拉维亚与捷克西里西亚最高点；PLA 1969 年设立；山顶电视塔 1968 年动工、1980 年投入使用、1983 年全部工程（含山顶餐厅）竣工 —— 原文把动工年当成了建成年。核实 2026-09-11
     history:
-      "The television tower atop Praděd, built in the 1960s, remains in continuous use; the Jeseníky Protected Landscape Area was established in 1969, and the region was historically also an important center of Central European linen weaving.",
+      "The television tower atop Praděd, begun in 1968 and in service since 1980, remains in continuous use; the Jeseníky Protected Landscape Area was established in 1969, and the region was historically also an important center of Central European linen weaving.",
   },
   "moravskoslezske-beskydy": {
+    // 全六段 sources: 利萨山 1323 m 为该山系最高峰；年均降水约 1500 mm，为捷克降水最丰沛地区之一；喀尔巴阡砂岩（flysch）成因描述准确。核实 2026-09-11，未改动
     seeing:
       "The Moravian-Silesian Beskids are the easternmost part of Czechia's Carpathian mountains, bordering Slovakia; Lysá hora, at 1,323 m, is the highest peak.",
     formation:
@@ -16522,8 +16552,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The range historically formed part of the Wallachian shepherds' transhumance route along the Carpathians, and traditional mountain pastures and timber-frame buildings survive here to this day.",
   },
   "luzicke-hory": {
+    // seeing sources: 境内最高点为佩恩卡夫奇丘 792 m（捷克两县间的界峰、不在国际边界上）；耶德洛瓦峰 776 m 为山系第三高、最具辨识度的火山锥；山系整体最高的劳舍峰 793 m 压在捷德边境上（concept 段原本就写对了 —— 原错在 seeing 段把「境内最高点」挂给了耶德洛瓦峰）。PLA 1976 年设立。跨境表述中性。核实 2026-09-11
     seeing:
-      "The Lužické hory (Lusatian Mountains) are a range of sandstone hills of the western Sudetes along the Czech-German (Saxony) border; Jedlová, at 776 m, is the highest point entirely within Czech territory.",
+      "The Lužické hory (Lusatian Mountains) are a range of sandstone hills of the western Sudetes along the Czech-German (Saxony) border; Pěnkavčí vrch, at 792 m, is the highest point entirely within Czech territory; Jedlová, at 776 m, is the range's third-highest peak and its most recognisable volcanic cone.",
     formation:
       "The range is built mainly of Cretaceous marine sandstone, interspersed with conical volcanic-rock hills from Cenozoic volcanic activity — two quite different rock types and landforms coexisting within one range, making it a useful sample of a mixed sedimentary-volcanic mountain system.",
     observation:
@@ -16536,6 +16567,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lužické hory Protected Landscape Area was established in 1976; the region's rich forest resources historically supported local forestry and glassmaking industries.",
   },
   "novohradske-hory": {
+    // 全六段 sources: 卡梅内茨峰 1072 m 为捷克一侧最高峰，距奥地利边境约 400–500 m。跨境表述中性、不涉主权。核实 2026-09-11，未改动
     seeing:
       "The Novohradské hory (Gratzen Mountains) are an ancient range along the southern edge of the Bohemian Massif on the Czech-Austrian border; Kamenec, at 1,072 m, is the highest peak on the Czech side, only about 400 m from the Austrian border.",
     formation:
@@ -16550,6 +16582,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The region was historically sparsely populated, with small-scale glassmaking and forestry in the 19th and early 20th centuries; strictly controlled as an \"Iron Curtain\" border zone during the Cold War, it has more recently shifted toward ecotourism.",
   },
   "ceskomoravska-vrchovina": {
+    // 全六段 sources: 亚沃日采峰 837 m 为捷克—摩拉维亚高地及维索基纳州最高点。核实 2026-09-11，未改动
     seeing:
       "The Bohemian-Moravian Highlands are an ancient, low upland formed by exposed basement of the Bohemian Massif, running across south-central Czechia and marking the boundary between the historic regions of Bohemia and Moravia; Javořice, at 837 m, is the highest point.",
     formation:
@@ -16564,6 +16597,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The highlands historically formed a border zone between the Kingdom of Bohemia and Moravia, with numerous medieval castle ruins along the divide; the gentle terrain and poor soils have long kept population density lower than in the surrounding lowlands.",
   },
   brdy: {
+    // 全六段 sources: 托克峰 865 m。⚠️ 两个年份都对、不是矛盾：1926-02-19 政府决议设立炮兵靶场（正文「1926年起辟为」），1927 年靶场建成、区域开始对公众封闭（正文「1927至2016」）；1950 年起正式定为军事禁区，2016-01-01 撤销。冷战期间的活动限制按不点名的中性事实句式表述，符合红线判据。核实 2026-09-11，未改动
     seeing:
       "Brdy is a forested range of hills running roughly 60 km southwest to northeast through central Czechia; Tok, at 865 m, is its highest point.",
     formation:
@@ -16578,6 +16612,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Established as a military training ground in 1926, it was formally designated a restricted military zone from 1950 to 2016 — nearly 90 years of closure; it was redesignated a protected landscape area in 2016 and opened to the public, and some military installations remain today.",
   },
   "ceske-stredohori": {
+    // 全六段 sources: 米莱绍夫卡峰 837 m 为该高地最高峰；约 73.6% 岩石为玄武岩（stredohori.cz，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Central Bohemian Uplands (České středohoří) are the most prominent evidence of Cenozoic volcanic activity in Czechia, with numerous conical basalt and trachyte hills rising along the Ohře valley; Milešovka, at 837 m, is the highest point.",
     formation:
@@ -16592,6 +16627,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The uplands along the Ohře valley have long been an important farming and viticulture region, with fertile soils weathered from volcanic rock; numerous medieval castle ruins are also scattered throughout.",
   },
   "pavlovske-vrchy": {
+    // 全六段 sources: 杰温峰 550 m 为帕拉瓦最高点；1986 年经 UNESCO 纳入生物圈保护区（2003 年扩展并更名为「下摩拉瓦」）—— 本条对应的是 1986 这一期，未借用 2003（unesco.org/en/mab/lower-morava，1 级）。核实 2026-09-11，未改动
     seeing:
       "Pavlovské vrchy (Pálava) is a narrow, isolated ridge of Jurassic chalky limestone in South Moravia; Děvín, at 550 m, is the highest point.",
     formation:
@@ -16606,6 +16642,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "UNESCO incorporated the area into the Lower Morava Biosphere Reserve in 1986; the nearby Lednice-Valtice landscaped estate and the surrounding wine-growing tradition have a long history and make this one of Czechia's most important wine-culture regions.",
   },
   "cesky-raj": {
+    // 全六段 sources: 1955 年设立，为捷克斯洛伐克首个受保护景观区（182 km²）；2015 年成为 UNESCO 世界地质公园；砂岩塔高可达 40 m。核实 2026-09-11，未改动
     seeing:
       "Český ráj (Bohemian Paradise) was one of the first nature reserves established in Czechia (1955), formed from thick Late Cretaceous marine sandstone eroded into clusters of rock towers and \"rock labyrinths\"; Prachov Rocks is the most representative area within the park.",
     formation:
@@ -16620,6 +16657,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The entire area joined the UNESCO Global Geoparks Network in 2015; several rock summits have carried miniature castles since the Middle Ages (such as Trosky Castle), a rare tradition of castle-building atop rock towers in Europe.",
   },
   "adrspach-teplice-rocks": {
+    // 全六段 sources: 1933 年列为国家级自然保护区、1991 年布鲁莫夫斯科划为 PLA；岩塔高可达 40 m。核实 2026-09-11，未改动
     seeing:
       "The Adršpach-Teplice Rocks are a maze of rock towers and canyons carved by weathering and fracturing from a single sandstone massif in the Broumovsko region of northeastern Czechia — one of the largest continuous sandstone \"rock cities\" in Central Europe.",
     formation:
@@ -16634,6 +16672,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Protected as a national nature reserve since 1933, with the wider Broumovsko region designated a protected landscape area in 1991; the rock city's striking scenery has also made it a filming location for several European and American films.",
   },
   "polabi-lowland": {
+    // 全六段 sources: 海拔多在 150–300 m 之间 —— 与捷克语维基对波拉比的定义原句（nadmořské výšce mezi 150 a 300 metry）逐字对应。核实 2026-09-11，未改动
     seeing:
       "Polabí (the Elbe Lowland) extends along the middle Elbe roughly between Pardubice and Mělník, at elevations mostly between 150 and 300 m, and is an important grain and produce-growing region of Czechia.",
     formation:
@@ -16648,6 +16687,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Mělník has been an important river-trade hub and wine-growing center since the Middle Ages, and the town still preserves a historic castle and vineyards overlooking the confluence of the two rivers.",
   },
   "dolnomoravsky-uval": {
+    // 全六段 sources: 潘诺尼亚气候型农业景观、葡萄种植、莱德尼采庄园描述与地理资料一致。⚠️ 年降水量「550至650毫米」各口径互相矛盾且**没有一处支持 650 这个上限**（有资料称不足 500 mm、也有站点给 587–597 mm），「是捷克最干旱的地区」这一排名也需一并确认口径 —— 见 issue，正文暂不动。核实 2026-09-11
     seeing:
       "The Lower Morava Valley is a lowland along the lower Morava River spanning Czechia's borders with Austria and Slovakia; its climate leans Pannonian, with annual rainfall of only 550–650 mm, making it the driest region in Czechia.",
     formation:
@@ -16662,8 +16702,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lednice-Valtice landscaped estate, developed over centuries by the House of Liechtenstein, was inscribed as a UNESCO World Heritage Site in 1996 and is one of Europe's largest deliberately landscaped estates; the surrounding wine-growing tradition dates back to the Middle Ages.",
   },
   "labe-river": {
+    // seeing sources: 总长约 1094 km（FGG Elbe 捷德跨国流域委员会，1 级：捷克境内约 364.52 km + 德国境内约 726.95 km）—— 原写的 1165 km 与本库德国侧 elbe-river 已核实的 1094 km 打架，本轮统一。「约三分之一在捷克境内」比例正确。赫热恩斯科出境处约 115 m 为捷克全境最低点。核实 2026-09-11
     seeing:
-      "The Labe (Elbe) runs about 1,165 km in total, roughly a third of it through Czechia; it rises on the southern slope of Krkonoše and finally cuts through the Krušné hory near Hřensko before entering Germany.",
+      "The Labe (Elbe) runs about 1,094 km in total, roughly a third of it through Czechia; it rises on the southern slope of Krkonoše and finally cuts through the Krušné hory near Hřensko before entering Germany.",
     formation:
       "The upper Elbe rises in the alpine peat bogs of Krkonoše, flowing southwest then turning north across the Bohemian Basin; downstream, in the Bohemian Switzerland region, it cuts through a Cretaceous sandstone plateau to form a deep gorge — a classic sample for studying how a river shapes very different landforms as it crosses different rock types.",
     observation:
@@ -16676,6 +16717,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Elbe was historically an important international shipping route in Central Europe, and the stretch below Mělník still carries some inland freight traffic today; several historic towns along its banks grew up around river trade.",
   },
   "vltava-river": {
+    // 全六段 sources: 全长 430.2 km，捷克第一长河、「国家河流」，于梅尔尼克与易北河汇合。核实 2026-09-11，未改动
     seeing:
       "The Vltava is Czechia's longest river at 430 km, and the Elbe's largest tributary by volume; it rises in Šumava and joins the Elbe at Mělník.",
     formation:
@@ -16690,6 +16732,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Prague has developed along both banks of the Vltava since the 10th century, with landmarks such as Charles Bridge built directly over the river; the 20th-century cascade of reservoirs on the Vltava greatly altered the river's natural hydrological rhythm while adding flood control, power generation and tourism functions.",
   },
   "ohre-river": {
+    // 全六段 sources: 总长 304.6 km、境内约 256 km、捷克第四长河 —— 三项逐字匹配。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "The Ohře (Eger) runs about 305 km in total, about 256 km of it through Czechia, making it the country's fourth-longest river; it rises in Germany, enters Czechia at Cheb, and joins the Elbe near Litoměřice.",
     formation:
@@ -16704,8 +16747,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karlovy Vary has been famous across Europe for its hot springs since the 16th century, historically drawing European royalty and cultural figures for treatment; in 2021 the transnational \"Great Spa Towns of Europe\" listing inscribed Karlovy Vary along with Mariánské Lázně and other Czech spa towns as a UNESCO World Heritage Site.",
   },
   "morava-river": {
+    // seeing sources: 全长 353–354 km（Povodí Moravy 官方，1 级），境内段约 284 km —— 原写的 365 km 无捷克官方口径支撑。源出克拉利茨基山南坡属实。跨境表述中性、不涉主权。核实 2026-09-11
     seeing:
-      "The Morava runs about 365 km, rising on the southern slope of Králický Sněžník and flowing south the length of Moravia; downstream it forms the border between Czechia and Slovakia, and then Slovakia and Austria, before joining the Danube.",
+      "The Morava runs about 354 km, rising on the southern slope of Králický Sněžník and flowing south the length of Moravia; downstream it forms the border between Czechia and Slovakia, and then Slovakia and Austria, before joining the Danube.",
     formation:
       "The upper Morava flows through the valley between Jeseníky and the Bohemian-Moravian Highlands; entering the Lower Morava Valley, the channel becomes gentle and wide, with a long history of active meandering that has produced numerous oxbow lakes and side channels.",
     observation:
@@ -16718,6 +16762,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Litovel developed into a milling and textile center from the Middle Ages thanks to the river's branching channels; the downstream floodplain wetlands were historically important for fishing, hunting and grazing, and parts of the river are now designated nature reserves.",
   },
   "ceske-svycarsko": {
+    // 全六段 sources: 普拉夫齐茨卡石拱跨度 26.5 m、内部净高 16 m，为欧洲最大天然砂岩拱门；国家公园 2000-01-01 设立，是捷克最年轻的国家公园。**与德国侧 saxon-switzerland 并排读**：两条各写各自园区的地标数字，无重叠冲突。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "Bohemian Switzerland (the Elbe Sandstone Mountains) is a landscape of deep gorges and rock towers where the Elbe cuts through a Late Cretaceous marine sandstone plateau; the park's Pravčická brána is the largest natural sandstone arch in Europe.",
     formation:
@@ -16732,6 +16777,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bohemian Switzerland National Park was established in 2000; the region's rugged terrain historically kept development low, and from the 19th century it became a favored landscape for Romantic-era painters and travelers — the name \"Bohemian Switzerland\" itself originated from 19th-century visitors comparing it to the mountain scenery of Switzerland.",
   },
   "podyji-gorge": {
+    // 全六段 sources: 峡谷深可达 220 m；国家公园 1991 年设立，为捷克最小的国家公园；2000 年与奥地利塔亚河谷国家公园构成跨境保护区。表述未涉主权、未描述边界线。核实 2026-09-11，未改动
     seeing:
       "Podyjí (the Thaya/Dyje Gorge) is a canyon-like river valley carved by the Dyje River along the Czech-Austrian border, cutting through the southeastern edge of the Bohemian-Moravian Highlands over about 40 km, with the valley reaching up to 220 m deep.",
     formation:
@@ -16756,10 +16802,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Moravian Karst and Podyjí are important gorge/incised landforms in Moravia, but the Moravian Karst is an underground karst system formed by limestone dissolution, characterized by caves and abysses, while Podyjí is a surface gorge cut by a river, with no cave system.",
     concept:
       "The fact that the Macocha Abyss formed from the collapse of a cave roof, rather than direct surface-water erosion, is a classic teaching case for distinguishing \"karst-collapse abysses\" from \"river-erosion gorges\" — two landforms with different origins.",
+    // history sources: 已探明洞穴逾 1100 处；马措哈深渊至下湖水面 138.5 m、含水下探测总深 187.5 m；洞穴 1909 年首次照明开放、游船 1921-03-30 开通局部、1933-07-01 开通完整航线（捷克洞穴管理局，1 级）—— 原文的「19 世纪末」整体前移了一代；1956 年划设保护景观区属实。核实 2026-09-11
     history:
-      "Boat trips on the underground Punkva River have been open to the public since the late 19th century, one of Europe's oldest karst-cave tourism operations; the entire area was designated a protected landscape region in 1956.",
+      "Boat trips on the underground Punkva River began on a short section in 1921 and were extended in 1933 to today's full route from the base of the Macocha Abyss to the river's outflow, one of Europe's oldest karst-cave tourism operations; the entire area was designated a protected landscape region in 1956.",
   },
   "chebsko-sokolovska-panev": {
+    // 全六段 sources: 卡罗维发利间歇泉出水约 2000 L/分 ≈ 288 万 L/日（正文「约300万升」为同量级）；西波希米亚—福格特兰为持续活跃的地震群发区（Nový Kostel 震源区，1 级学术）；「欧洲大温泉城镇」2021 年列入 UNESCO（1 级）。核实 2026-09-11，未改动
     seeing:
       "The Cheb-Sokolov Basin (the Karlovy Vary spa basin) is a series of Cenozoic sedimentary basins formed along the Ohře tectonic rift in western Czechia; Karlovy Vary grew into a famous European spa town thanks to the mineral springs found here.",
     formation:
@@ -16774,6 +16822,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karlovy Vary has been famous for its hot springs since the era of Charles IV in the 14th century, developing from the 16th century into a spa destination for European royalty and cultural figures; in 2021, the transnational \"Great Spa Towns of Europe\" listing inscribed Karlovy Vary together with Mariánské Lázně, Františkovy Lázně and other Czech spa towns as a UNESCO World Heritage Site.",
   },
   "lipno-reservoir": {
+    // 全六段 sources: ⚠️ 长宽以**运营方 ČEZ 官网**为准（44 km 长、最宽约 14 km，1 级），英文维基 infobox 给的 42/5 km 与之不符，本轮采信运营方；面积 48.7 km²（正文「近50平方公里」准确）；正常蓄水位 725.6 m；1952 年动工、1958 年合龙蓄水、1959-06-15 正式发电，正文「1952至1959年」与施工历程吻合。核实 2026-09-11，未改动
     seeing:
       "The Lipno Reservoir is a hydraulic works built between 1952 and 1959 on the upper Vltava in the Šumava mountains, with a surface area of nearly 50 km² — the largest body of water in Czechia.",
     formation:
@@ -16788,6 +16837,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Some residents of the original valley were resettled when the reservoir was built; from the later 20th century it developed into one of southern Czechia's most important inland vacation and watersports destinations, with the lakeside town of Lipno nad Vltavou as its main gateway.",
   },
   "machovo-jezero": {
+    // 全六段 sources: 面积 2.84 km²（284 ha）；14 世纪（1366 年）查理四世下令建塘；1961 年正式改名「马哈湖」，此前俗称「大鱼塘」（Velký rybník）。核实 2026-09-11，未改动
     seeing:
       "Lake Mácha (Máchovo jezero) is an artificial pond in northern Czechia covering 2.84 km², the largest body of water in the Liberec Region, popularly called a \"lake\" owing to its size.",
     formation:
@@ -16802,6 +16852,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake takes its name from the 19th-century Czech Romantic poet Karel Hynek Mácha, who visited repeatedly and used it as the setting for his celebrated long poem \"Máj\" (May); it was formally named after him in 1961, having previously been known simply as the \"Great Pond.\"",
   },
   "vltava-valley-cesky-krumlov": {
+    // 全六段 sources: 古城 1992-12-04 列入 UNESCO；克鲁姆洛夫城堡始建于 13 世纪。核实 2026-09-11，未改动
     seeing:
       "The Vltava meander at Český Krumlov is a deep meander cut by the river at the northern foot of Šumava, its channel forming a double horseshoe that nearly encircles the historic town center; the entire old town was inscribed as a UNESCO World Heritage Site in 1992.",
     formation:

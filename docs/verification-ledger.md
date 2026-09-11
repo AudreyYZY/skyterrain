@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 951bc11
+lastVerifiedCommit: bbbe6e6
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,8 @@ lastVerifiedCommit: 951bc11
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 捷克 26 条（整国一批核完）（R19b） | 6 | 0 / 5 / 1 | 当场修 5 条；新开 issue 1、关闭 0 |
+| 2026-09-11 | 波兰 25 条（整国一批核完）（R19a） | 7 | 0 / 5 / 2 | 当场修 5 条；新开 issue 2、关闭 0 |
 | 2026-09-10 | 丹麦 25 条（整国一批核完）（R18b） | 8 | 0 / 6 / 2 | 当场修 6 条；新开 issue 2、关闭 0 |
 | 2026-09-10 | 荷兰 24 条（整国一批核完）（R18a） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-10 | 芬兰 26 条（整国一批核完）（R17d） | 12 | 0 / 11 / 1 | 当场修 11 条；新开 issue 1、关闭 0 |

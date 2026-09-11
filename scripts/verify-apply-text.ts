@@ -286,10 +286,22 @@ for (const f of round.findings) {
     for (const frag of removedFragments(p.find, p.replace)) {
       if (seenFrag.has(frag)) continue;
       seenFrag.add(frag);
-      for (const [file, text] of scanTargets) {
-        if (!text) continue;
-        const n = text.split(frag).length - 1;
-        if (n > 0) stale.push(`  「${frag}」仍出现在 ${file}（${n} 处）  ← ${f.key}`);
+      /**
+       * **出现太多次的片段一律不报** —— 它是常用词，不是某条具体说法。
+       * 实测（2026-09-11，全库六个文件合计）：
+       *   有用的：`梅尔梅奥` 2 · `Aragon` 6 · `阿拉贡` 7
+       *   纯噪音：`Middle Ages,` 15 · `纳瓦拉` 18 · `tradition of` 26 · `石炭` 46 · `transport` 306
+       * 门槛取 10 —— 第一版没有这道过滤，波兰批一次报出「transport 仍出现在 213 处」这种，
+       * **报告太长就等于没人看**，和当初 ⚑ 标了 50 组是同一个毛病。
+       */
+      const hits = scanTargets
+        .filter(([, text]) => text)
+        .map(([file, text]) => [file, text.split(frag).length - 1] as const)
+        .filter(([, n]) => n > 0);
+      const total = hits.reduce((a, [, n]) => a + n, 0);
+      if (total > 10) continue;
+      for (const [file, n] of hits) {
+        stale.push(`  「${frag}」仍出现在 ${file}（${n} 处）  ← ${f.key}`);
       }
     }
   }
