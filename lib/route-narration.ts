@@ -5638,10 +5638,10 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 拉波塔达海蚀拱约 43 m；安托法加斯塔 1879 年前属玻利维亚为史实、无评价。核实 2026-09-11
     travel: {
     "zh-CN":
-      "圣地亚哥到安托法加斯塔约2小时，智利南美航空执飞。塞罗莫雷诺机场距市区约22公里，出租车约20多分钟到市中心。" +
+      "圣地亚哥到安托法加斯塔约2小时，智利南美航空执飞。安德烈斯·萨贝利亚机场（旧称塞罗莫雷诺）距市区约22公里，出租车约20多分钟到市中心。" +
       "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊最著名的自然景点，可包车或参加当地半日游前往。",
     "en-US":
-      "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Cerro Moreno Airport is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
+      "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Andrés Sabella Airport (formerly Cerro Moreno) is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
       " The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the most famous natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
     },
   },

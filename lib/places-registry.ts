@@ -881,8 +881,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "hohhot", nameZh: "呼和浩特", nameEn: "Hohhot", country: "china", tier: "major", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
     lon: 111.7492, lat: 40.8424,
-    airport: { iata: "HET", nameZh: "呼和浩特盛乐国际机场", nameEn: "Hohhot Shengle Int'l", lon: 111.573, lat: 40.480 },
-    source: "呼和浩特市中心 40.8424,111.7492；HET 机场：白塔机场迁建为盛乐国际机场（和林格尔县，2026 转场投用），IATA/ICAO 不变，坐标 40.480,111.573",
+    airport: { iata: "HET", nameZh: "呼和浩特白塔国际机场", nameEn: "Hohhot Baita Int'l", lon: 111.8241, lat: 40.8514 },
+    source: "呼和浩特市中心 40.8424,111.7492；HET 机场：现仍为白塔国际机场（约 40.851,111.824）；盛乐国际机场（和林格尔县，40.480,111.573）计划 2026-11-27 转场、届时白塔关闭，IATA/ICAO 不变 —— 转场后回来改（2026-09-11 核：此前把盛乐写成已投用是写早了）",
   },
   {
     id: "shenyang", nameZh: "沈阳", nameEn: "Shenyang", country: "china", tier: "major", zone: "cn-northeast", admin1Zh: "辽宁省", admin1En: "Liaoning",
@@ -2998,7 +2998,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "liege", nameZh: "列日", nameEn: "Liège", country: "belgium", tier: "notable", zone: "be-liege", admin1Zh: "列日省", admin1En: "Liège Province",
     lon: 5.5731, lat: 50.6326,
-    airport: { iata: "LGG", nameZh: "列日机场", nameEn: "Liège Airport", lon: 5.4432, lat: 50.6374 },
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）（经布鲁塞尔转乘）", nameEn: "Brussels Airport (Zaventem) (via Brussels)", lon: 4.4844, lat: 50.9014 },
     source: "列日市中心 50.6326,5.5731；LGG 机场：公开资料",
   },
   {
@@ -3034,7 +3034,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "spa", nameZh: "斯帕", nameEn: "Spa", country: "belgium", tier: "notable", zone: "be-liege", admin1Zh: "列日省", admin1En: "Liège Province",
     lon: 5.8642, lat: 50.4914,
-    airport: { iata: "LGG", nameZh: "列日机场", nameEn: "Liège Airport", lon: 5.4432, lat: 50.6374 },
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）（经布鲁塞尔转乘）", nameEn: "Brussels Airport (Zaventem) (via Brussels)", lon: 4.4844, lat: 50.9014 },
     source: "斯帕市中心 50.4914,5.8642；本地无商业机场，最近机场为列日机场（距市区约35km）：公开资料",
   },
 
@@ -4500,7 +4500,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "antofagasta", nameZh: "安托法加斯塔", nameEn: "Antofagasta", country: "chile", tier: "major", zone: "cl-norte-grande",
     admin1Zh: "安托法加斯塔大区", admin1En: "Antofagasta Region",
     lon: -70.3975, lat: -23.6509,
-    airport: { iata: "ANF", nameZh: "塞罗莫雷诺机场", nameEn: "Cerro Moreno Airport", lon: -70.4451, lat: -23.4445 },
+    airport: { iata: "ANF", nameZh: "安德烈斯·萨贝利亚机场", nameEn: "Andrés Sabella Gálvez Airport", lon: -70.4451, lat: -23.4445 },
     source: "安托法加斯塔市中心 -23.6509,-70.3975；ANF 机场坐标：公开资料",
   },
   {
