@@ -1696,6 +1696,7 @@ export const ROUTE_NARRATION: Record<
       " North you enter the central highland: a grey-black volcanic desert with almost no vegetation, where a few gentle ice caps lie like white shields — first Langjökull, then Hofsjökull at the very centre of Iceland. Between the ice caps are lava, volcanic gravel and braided rivers of meltwater." +
       " Over the northern edge of the highland the land drops into deep north–south valleys, the longest of which, Eyjafjörður, reaches toward the Arctic. Akureyri is at its head, ringed on three sides by snow mountains.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 辛格维利尔裂谷与冰岛最大天然湖、埃亚峡湾为冰岛最长峡湾。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到阿克雷里飞约 45 分钟，同一时区。国内航班从市区的 RKV 机场起降（不是国际的凯夫拉维克 KEF）。也可以自驾环岛公路约 5 小时。" +
@@ -1719,6 +1720,7 @@ export const ROUTE_NARRATION: Record<
       " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, by volume the largest ice cap in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
       " Over the ice cap the land drops into the eastern fjords and valleys, and Egilsstaðir is by a long, thin lake beside one of Iceland's rare large areas of woodland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 瓦特纳「按体积欧洲最大冰帽」、格里姆火山与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到埃伊尔斯塔济飞约一小时，同一时区，用市区 RKV 机场。自驾环岛到东部要 8–9 小时，所以飞机很受欢迎。" +
@@ -1742,6 +1744,7 @@ export const ROUTE_NARRATION: Record<
       " From the bay's north shore a long, thin peninsula reaches out, ending in Snæfellsjökull — a near-perfect cone of a volcano with an ice cap on top, visible from far away in good weather. This is the mountain Jules Verne used as the entrance in 'Journey to the Centre of the Earth'." +
       " Past the peninsula are the Westfjords: the oldest land in Iceland, cut into pieces by countless deep fjords and steep flat-topped mountains that rise almost vertically from the sea. Ísafjörður hides in a fjord on an L-shaped spit, its airport approach notoriously difficult, with a single road in and out.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯奈山冰川与《地心游记》、西部峡湾约 1600 万年为冰岛最古老出露岩石。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到伊萨菲厄泽飞约 40 分钟，同一时区，用市区 RKV 机场。陆路走西部峡湾的盘山公路要 5–6 小时。" +
@@ -1765,6 +1768,7 @@ export const ROUTE_NARRATION: Record<
       " South-east the ground grows whiter: Vatnajökull, by volume the largest ice cap in Europe, covering about 7% of Iceland as measured in 2023, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
       " Approaching Höfn, a lagoon connected to the sea appears at the ice edge, full of pale blue floes — Jökulsárlón, where ice breaks off the glacier tongue and drifts to the sea. Höfn is opposite the ice cap, on a spit at the mouth of a lagoon.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 海克拉「喷发最频繁的火山之一」；瓦特纳 2023 年约 7%（#264 已修）。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到赫本飞约 50 分钟，同一时区，用市区 RKV 机场。自驾南岸环岛到赫本约 6 小时（沿途瀑布、黑沙滩、冰川很多，很多人分两天开）。" +
@@ -1816,6 +1820,7 @@ export const ROUTE_NARRATION: Record<
       " Over the western edge of the plateau the land drops into a deep fjord, the Hardangerfjord — Norway's second-longest — its shores lined with orchards and waterfalls, and the white edge of the Folgefonna ice cap visible deep in the fjord." +
       " Over one last stretch of mountains, Bergen appears in a small bay ringed by seven mountains, with the fjord mouth to the open sea behind it.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 哈当厄高原约 1100 m、约 6500 km²「欧洲最大高山高原之一」；哈当厄峡湾挪威第二长，与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到卑尔根飞约 55 分钟，同一时区。也可以坐卑尔根铁路（约 6.5 小时，世界知名的风景线，经米达尔可换弗洛姆铁路），很多人飞去坐火车回、或反过来。" +
@@ -1832,13 +1837,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "奥斯陆飞特隆赫姆，沿着挪威中部一条历史悠久的南北通道飞行，古德布兰河谷铁路和 E6 公路都走这条线。起飞后先经过姆约萨湖——挪威最大的湖，然后进入古德布兰河谷：一条沿地质断裂带发育的狭长大河谷，两侧是农庄和森林。" +
-      "河谷东侧能看到龙达讷——一片浑圆的古老山峰群，是挪威最早的国家公园之一。继续北飞，河谷收窄、抬升，最终没入多夫勒山：一片开阔的高山高原，麝牛就生活在这里（19 世纪末从格陵兰引入，是欧洲大陆仅存的野生麝牛种群之一）。" +
+      "河谷东侧能看到龙达讷——一片浑圆的古老山峰群，是挪威最早的国家公园之一。继续北飞，河谷收窄、抬升，最终没入多夫勒山：一片开阔的高山高原，麝牛就生活在这里（1930年代从格陵兰引入，是欧洲大陆仅存的野生麝牛种群之一）。" +
       "翻过多夫勒山，地面下降进入特伦德拉格的低地，特隆赫姆就在尼德河汇入特隆赫姆峡湾处。",
     "en-US":
       "Oslo to Trondheim flies along a historic north–south corridor through central Norway, the same line followed by the Gudbrandsdalen railway and the E6 road. After take-off you pass Mjøsa, Norway's largest lake, then enter Gudbrandsdalen: a long, narrow valley along a geological fault, farms and forest on either side." +
-      " To the east of the valley is Rondane — a cluster of rounded old peaks, one of Norway's first national parks. Flying on north, the valley narrows and rises, finally merging into Dovrefjell: an open high mountain plateau, home to musk oxen (introduced from Greenland in the late 19th century, one of the last wild populations on mainland Europe)." +
+      " To the east of the valley is Rondane — a cluster of rounded old peaks, one of Norway's first national parks. Flying on north, the valley narrows and rises, finally merging into Dovrefjell: an open high mountain plateau, home to musk oxen (introduced from Greenland in the 1930s, one of the last wild populations on mainland Europe)." +
       " Over Dovrefjell the land drops into the Trøndelag lowlands, and Trondheim is where the Nidelva meets the Trondheimsfjord.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 米约萨湖挪威最大、隆达讷 1962 年国家公园；多夫勒山麝牛原写「19 世纪末引入」，按本库改为 1930 年代。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到特隆赫姆飞约 55 分钟，同一时区。也可坐多夫勒线火车（约 7 小时，沿途正是这条航线看到的河谷和高原）。" +
@@ -1862,6 +1868,7 @@ export const ROUTE_NARRATION: Record<
       " Near the end, the Lysefjord appears below — a narrow, straight fjord with near-vertical granite walls, above which hang two famous rocks: the almost-horizontal ledge known as Preikestolen (Pulpit Rock), and Kjeragbolten, a boulder wedged in a crack." +
       " Stavanger sits outside the fjord, on a peninsula surrounded by islands and shallow sea, with the low, flat farmland of Jæren beyond the city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 吕瑟峡湾布道石 / 奇迹石与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到斯塔万格飞约 50 分钟，同一时区。也可坐南部线火车（约 8 小时，绕得较远）。" +
@@ -1885,6 +1892,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway — capping the summits here, its glacier tongues reaching down almost to sea level." +
       " Over the Arctic Circle the Lofoten Islands appear on the sea — a 'wall' of jagged peaks rising sheer from the water, one of Norway's most photographed landscapes. Tromsø is farther north still, on a small island in a fjord.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯瓦蒂森大陆挪威第二大冰原、林根阿尔卑斯、芬马克高原萨米驯鹿放牧（只写土地利用）与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到特罗姆瑟飞约 1 小时 50 分，同一时区。这段距离陆路要跨越大半个挪威，飞机是最实际的选择。" +
@@ -1908,6 +1916,7 @@ export const ROUTE_NARRATION: Record<
       " Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
       " Approaching Bodø, islands appear on the sea, and Bodø itself is built on a peninsula reaching into the water, with the Saltstraumen maelstrom just south of the city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯瓦蒂森同上。核实 2026-09-11
     travel: {
     "zh-CN":
       "特隆赫姆到博德飞约 55 分钟，同一时区。坐诺尔兰线火车要约 10 小时（跨北极圈那一刻列车上通常会广播）。" +
@@ -1931,6 +1940,7 @@ export const ROUTE_NARRATION: Record<
       " Over the mountains the land gradually opens and flattens into the Finnmarksvidda — a rolling inland tundra plateau covered in dwarf birch and lichen, long used by the Sámi for reindeer herding, with herds still making seasonal migrations across it today." +
       " Alta is at the edge of the plateau, at the end of a fjord, where the Alta river reaches the sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 芬马克高原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "特罗姆瑟到阿尔塔飞约 40 分钟，同一时区。这一带公路远、开车要好几小时，飞机是北极挪威城镇间常用的交通方式。" +
@@ -1956,6 +1966,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on north, the Geirangerfjord appears — a narrow fjord known for its sheer cliffs and waterfalls (the 'Seven Sisters' is its most famous stretch), followed by Romsdalen — a straight, deep valley carved by ice, its walls including one of Norway's highest vertical rock faces." +
       " Finally, over the Trollheimen mountains, the land eases and Trondheim appears at the head of its fjord.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 松恩峡湾约 200 km、约斯特达尔冰川欧洲大陆最大、盖朗厄尔七姊妹瀑布与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "卑尔根到特隆赫姆飞约 55 分钟，同一时区。这条线陆路要绕很远（渡轮加公路），飞机是最实际的方式，也是看西海岸峡湾全景最省时间的方法。" +
@@ -1980,6 +1991,7 @@ export const ROUTE_NARRATION: Record<
       " Then comes the Hardangerfjord — Norway's second-longest fjord, known for its dense orchards on both shores (a famous blossom season in spring), with the route inland toward the Hardangervidda visible deep in the fjord." +
       " Bergen sits between this cluster of fjords and the open sea, in a small bay ringed by seven mountains.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 福尔格冰川、哈当厄峡湾与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯塔万格到卑尔根飞约 40 分钟，同一时区。沿海公路也能到，但要经过多段渡轮和世界最长的海底公路隧道，开车耗时更长。" +
@@ -2985,6 +2997,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Aarhus crosses from Zealand over the sea to the eastern side of the Jutland peninsula. Soon after take-off, the Copenhagen metro area and the Øresund lie below, and the flight then crosses the southern Kattegat to reach the Djursland peninsula on Jutland's eastern flank." +
       " Approaching Aarhus, Mols Bjerge comes into view below — one of the few areas of pronounced moraine hill relief in Denmark, its rolling terminal-moraine ridges dotted with grassland and small lakes, its coastline winding out into the Kattegat, standing in sharp contrast to the flat terrain typical elsewhere in the country. The flight then descends into Aarhus Airport, just west of Mols Bjerge.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 莫尔斯山终碛丘陵与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到奥胡斯飞约40分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约3小时的城际火车。奥胡斯机场离市区约35公里。奥胡斯是丹麦第二大城市，是探索莫尔斯山地与锡尔克堡湖区的理想基地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3002,6 +3015,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Aalborg crosses the length of Denmark, from Zealand to the very northern tip of the Jutland peninsula. After crossing the Great Belt onto Jutland the flight continues north; approaching Aalborg, Rebild Bakker comes into view below — a moraine hill area covered in heather moorland, its purple blooms set off against the dark green of Rold Skov, Denmark's largest forest." +
       " Past Rebild Bakker, the Limfjord unfolds below before landing — the long, narrow waterway crossing northern Jutland that separates the Vendsyssel-Thy peninsula from the mainland; Aalborg sits on its southern bank, and the flight descends along the fjord into the airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 雷比尔荒原、利姆峡湾与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到奥尔堡飞约45分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约4.5小时的城际火车。奥尔堡机场离市区约6公里。奥尔堡是北日德兰大区的核心城市，是探索雷比尔丘陵与斯卡恩岬角的理想门户。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3019,6 +3033,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Billund crosses Zealand and the island of Funen to reach south-central Jutland. Soon after leaving Zealand, the Funen Rolling Farmland unfolds below — the agricultural landscape long known as the \"Garden of Denmark,\" regular fields and orchards covering gently rolling young moraine terrain." +
       " After crossing the Little Belt onto Jutland, approaching Billund, Jutland Heath comes into view below — Randbøl Hede is the largest surviving continuous remnant of Danish heather moorland, its purple-red bloom covering poor sandy outwash-plain soil, contrasting sharply with the reclaimed farmland around it, before the flight descends into Billund Airport right next to the heath.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 菲英岛「丹麦花园」、日德兰荒原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到比隆飞约45分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型）。比隆机场是丹麦国内航班的重要节点，就在乐高乐园所在的比隆镇边。以比隆为基地可探索兰伯尔荒原等日德兰半岛中部景观。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3036,6 +3051,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Bornholm crosses the open Baltic Sea to reach Denmark's easternmost, isolated island. After take-off the flight heads south-east across open Baltic waters, arriving over Bornholm after about half an hour." +
       " Before landing, the Almindingen forest highland comes into view below — a granite highland at the island's centre; its peak, Rytterknægten, reaches 162 m, and the area is one of the only places in Denmark where granite bedrock is exposed over a wide area, dense forest interwoven with bare rock, quite unlike the flat moraine landforms typical of mainland Denmark. The flight then descends into Rønne on the island's western shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿尔明丁根「少数大面积可见花岗岩基岩的地区之一」（#264 已修）、骑士峰 162 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，由丹麦航空运输（Bornholmerflyet 品牌）以政府招标的公共服务义务航线形式运营，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3053,6 +3069,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Kiruna spans the length of Sweden, from Svealand to Arctic Lapland. After leaving Stockholm the flight continues north, the landscape below gradually shifting from the farmland and lakes of the south to the vast conifer forest of Norrland, the climate transitioning from temperate continental to subarctic." +
       " Approaching Kiruna, Kebnekaise comes into view far to the west — Sweden's highest mountain, its North Peak fixed at 2,096.8 m while the glacier-capped South Peak's elevation varies year to year, having fallen below the North Peak for several years running as the climate warms — the most recognisable mountain landmark in Swedish Lapland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 凯布讷山北峰 2096.8 m 固定、南峰冰川顶逐年变低，与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到基律纳飞约95分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约17小时的夜间火车。基律纳机场离市区约8公里。基律纳是探索凯布讷山、萨雷克国家公园与阿比斯库极光的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3070,6 +3087,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Gothenburg crosses south-central Sweden, linking the country's two largest cities. Soon after take-off, the landscape below shows the forest and lake terrain typical of central Sweden, and the flight passes over Tiveden midway — an old pine-forest area that historically served as a natural barrier between Sweden's traditional northern and southern regions, its ground scattered with granite boulders left by last-glacial transport." +
       " Past Tiveden, the flight continues south-west, gradually approaching Sweden's west coast before landing in Gothenburg, the country's second city and an important port gateway.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 蒂夫登冰川漂砾与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到哥德堡飞约43分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约3小时的城际火车。哥德堡兰德维特机场离市区约25公里。哥德堡是探索布胡斯兰海岸礁岛地貌的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3087,6 +3105,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Malmö crosses the length of southern Sweden to reach the country's southern tip. After leaving Stockholm the flight heads south, passing over Store Mosse midway — the largest raised peat bog south of Swedish Lapland, its expanse of dark brown wetland contrasting sharply with the forest around it." +
       " Approaching Malmö, the forested landscape gradually gives way to the open, flat Skåne Plain — Sweden's most important grain- and rapeseed-growing region, its regular farmland stretching to the horizon — before the flight descends into Malmö, the gateway city at Sweden's southern tip, facing Copenhagen, Denmark across the Øresund.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯托雷莫瑟「拉普兰以南最大的隆起泥炭沼泽」与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到马尔默飞约55分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约4.5小时的城际火车。马尔默机场离市区约28公里。马尔默是探索斯科讷平原、并经厄勒海峡大桥连接丹麦的便捷门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3099,16 +3118,17 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "斯德哥尔摩飞维斯比，是一趟从瑞典本土飞往波罗的海最大岛屿哥得兰岛的短途航线。起飞后不久，脚下即展开斯德哥尔摩群岛开阔的景象——约三万座岛屿、礁石组成的群岛，是世界上岛屿密度最高的群岛之一，群岛基岩为末次冰期冰川刮蚀的花岗岩，经地壳均衡抬升逐渐出露海面，从内群岛到外群岛岛屿逐渐稀疏、面积渐大，呈现出层次分明的地貌梯度。" +
-      "越过外群岛后，飞机飞越开阔的波罗的海海域，约半小时后抵达哥得兰岛，降落在维斯比——完整保留中世纪城墙的汉萨同盟古城，也是探索岛上大阿尔瓦荒原与法罗岛海蚀柱群的门户。",
+      "越过外群岛后，飞机飞越开阔的波罗的海海域，约半小时后抵达哥得兰岛，降落在维斯比——完整保留中世纪城墙的汉萨同盟古城，也是探索法罗岛海蚀柱群的门户。",
     "en-US":
       "Flying from Stockholm to Visby is a short hop from mainland Sweden to Gotland, the largest island in the Baltic Sea. Soon after take-off, the broad expanse of the Stockholm Archipelago unfolds below — some thirty thousand islands and skerries, one of the densest island clusters in the world, thinning out and growing larger in size from the inner to the outer archipelago." +
       " Past the outer archipelago, the flight crosses open Baltic waters, arriving over Gotland after about half an hour and descending into Visby, the Hanseatic-era walled town whose medieval fortifications survive intact.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯德哥尔摩群岛约三万座岛与本库一致；「大阿尔瓦荒原」原被挂到哥得兰岛（实属厄兰岛），已改。核实 2026-09-11
     travel: {
     "zh-CN":
-      "斯德哥尔摩到维斯比飞约35分钟，同一时区，是北欧航空运营的国内航班之一，也可选择乘渡轮往返。维斯比机场离市区约4公里。维斯比是探索哥得兰岛中世纪古城与大阿尔瓦荒原的理想起点。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到维斯比飞约35分钟，同一时区，是北欧航空运营的国内航班之一，也可选择乘渡轮往返。维斯比机场离市区约4公里。维斯比是探索哥得兰岛中世纪古城与法罗岛海蚀柱群的理想起点。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Visby is about 35 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; a ferry is another option. Visby Airport is about 4 km from the centre. Visby is an ideal starting point for exploring Gotland's medieval old town and Stora Alvaret. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Visby is about 35 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; a ferry is another option. Visby Airport is about 4 km from the centre. Visby is an ideal starting point for exploring Gotland's medieval old town and the sea stacks of Fårö. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3121,6 +3141,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Kalmar is a gateway route to the island of Öland in south-eastern Sweden. After leaving Stockholm the flight heads south, passing over the forested farmland typical of Sweden's south-eastern coast." +
       " Approaching Kalmar, Stora Alvaret on Öland comes into view across the strait to the east — a roughly 40-km stretch of bare limestone plateau, the largest surviving example of this type of limestone barren in Europe — before the flight descends into Kalmar, the historic castle city linked to Öland by a bridge across the strait.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 厄兰岛大阿尔瓦约 40 km、2000 年列入 UNESCO 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到卡尔马飞约45分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约4.5小时的城际火车。卡尔马机场离市区约6公里。卡尔马是探索厄兰岛大阿尔瓦石灰岩荒原最便捷的门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3138,6 +3159,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Åre Östersund heads to the alpine ski resort region of Jämtland in west-central Sweden. After leaving Stockholm the flight heads north-west, passing over the Siljan Ring midway — a ring structure about 52 km in diameter formed when an asteroid struck around 377 million years ago, the largest known impact structure in Europe, with Lake Siljan and several smaller lakes arranged along its margin." +
       " Past the Siljan Ring, the flight continues north-west as the terrain gradually rises into the mountains of Jämtland, before landing at Åre Östersund Airport, the gateway airport for Åre, Northern Europe's largest alpine ski resort.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 希尔扬约 3.77 亿年、直径约 52 km、欧洲已知最大撞击构造与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到奥勒—厄斯特松德飞约60分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约6.5小时的城际火车。机场离奥勒镇区约65公里。奥勒是北欧规模最大的高山滑雪度假地。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3155,6 +3177,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Rovaniemi spans the length of Finland, from the southern lake district to Arctic Lapland. Soon after take-off, the long, straight surface of Lake Päijänne unfolds below — Finland's second-largest lake and one of its deepest, with a maximum depth of about 95 m, a sharp contrast with the intricate, fragmented Saimaa further south." +
       " The flight continues north as the lake district below gradually gives way to the vast conifer forest of north-central Finland; approaching Rovaniemi, the winding channel of the Kemijoki comes into clear view — Finland's longest river, lined with hydroelectric dams — and the flight follows the river down to land at Rovaniemi, straddling the Arctic Circle line.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 派耶内湖芬兰第二大、最深约 95 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到罗瓦涅米飞约85分钟，同一时区，是芬兰航空运营的国内航班之一，也可选择约12小时的夜间火车。罗瓦涅米机场离市区约10公里。罗瓦涅米是圣诞老人村所在地，也是探索拉普兰荒原的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3172,6 +3195,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Oulu heads north along the Gulf of Bothnia coast. After leaving Helsinki the flight heads north, passing over the Ostrobothnia Plain midway — a low-lying coastal agricultural region on Finland's west coast that continues to expand through isostatic rebound, its broad, open surface covered in regular farmland." +
       " Past the plain, the flight continues north along the Gulf of Bothnia coast before landing in Oulu, an important Finnish technology and university city and a gateway for exploring northern Finland and Lapland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 东博滕平原地壳均衡抬升与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到奥卢飞约70分钟，同一时区，是芬兰航空运营的国内航班之一（安波190机型），也可选择约6.5小时的城际火车。奥卢机场离市区约15公里。奥卢是探索波的尼亚湾北岸与拉普兰的便捷门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3189,6 +3213,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Kuusamo is a gateway route to north-eastern Finland, home to the Karhunkierros hiking trail. After leaving Helsinki the flight continues north-east, crossing the vast lake district and conifer forest of central Finland." +
       " Approaching Kuusamo, the Oulanka Canyon comes into view below — a canyon cut by the Oulanka River through ancient bedrock, pine forest and patches of lime-rich ground alternating along its banks, one of the most representative landforms along Finland's famous Karhunkierros long-distance trail — before the flight lands in Kuusamo, right next to the Ruka ski resort.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥兰卡峡谷「熊之路」与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到库萨莫飞约75分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型）。库萨莫机场离市区约5公里。库萨莫是探索奥兰卡国家公园与鲁卡滑雪度假区的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3206,6 +3231,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Ivalo spans the length of Finland to reach deep into Arctic Lapland. After leaving Helsinki the flight continues north, the landscape below passing in turn through the southern lake district, the conifer forest of central Finland, and finally the tunturi wilderness of the north." +
       " Approaching Ivalo, the broad waters of Lake Inari come into view below — Finland's third-largest lake and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands, the geographic core of the traditional Sámi Inari region — before the flight lands at Ivalo, the gateway airport for exploring Sámi culture in the Inari region.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 伊纳里湖约 3300 座岛与本库一致；赫尔辛基—伊瓦洛「接近 1000 公里」（大圆约 927 km）。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到伊瓦洛飞约100分钟，同一时区，是芬兰航空运营的国内航班之一。伊瓦洛机场离伊纳里村约40公里。伊瓦洛是探索伊纳里湖与萨米文化的门户机场，也是观测极光条件最佳的地区之一。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3218,11 +3244,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "赫尔辛基飞库奥皮奥，是一趟飞往芬兰中东部湖区核心城市的航线。飞机离开赫尔辛基后向北飞行，穿越芬兰中部典型的森林与湖泊交织地貌，沿途湖泊星罗棋布，是芬兰“千湖之国”景观最集中的区域之一。" +
-      "临近库奥皮奥降落前，脚下展开卡拉韦西湖开阔的水面，湖畔的普宜奥山海拔306米，是芬兰湖区少有的地势制高点，山体基岩长期风化侵蚀后在平缓的湖区地貌中格外突出，山顶观景塔可俯瞰整片湖区群岛景观，飞机随后降落在库奥皮奥，坐落于湖畔的芬兰中东部湖区核心城市。",
+      "临近库奥皮奥降落前，脚下展开卡拉韦西湖开阔的水面，湖畔的普宜奥山海拔232米、山顶观景塔塔顶达306米，是芬兰湖区少有的地势制高点，山体基岩长期风化侵蚀后在平缓的湖区地貌中格外突出，山顶观景塔可俯瞰整片湖区群岛景观，飞机随后降落在库奥皮奥，坐落于湖畔的芬兰中东部湖区核心城市。",
     "en-US":
       "Flying from Helsinki to Kuopio heads to the core city of Finland's central-eastern lake district. After leaving Helsinki the flight heads north, crossing the forest and lake terrain typical of central Finland." +
-      " Approaching Kuopio, the open waters of Lake Kallavesi come into view below; lakeside Puijo hill, at 306 m, is one of the few high points of relief in the Finnish lake district, its summit viewing tower overlooking the entire lake and archipelago landscape, before the flight lands in Kuopio, the core city of Finland's central-eastern lake district, built on the lake's shore.",
+      " Approaching Kuopio, the open waters of Lake Kallavesi come into view below; lakeside Puijo hill, at 232 m with its summit viewing tower reaching 306 m, is one of the few high points of relief in the Finnish lake district, its summit viewing tower overlooking the entire lake and archipelago landscape, before the flight lands in Kuopio, the core city of Finland's central-eastern lake district, built on the lake's shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 普宜奥山原写海拔 306 m（实为塔顶），按本库改为山体 232 m、塔顶 306 m。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到库奥皮奥飞约55分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型），也可选择约4.5小时的城际火车。库奥皮奥机场离市区约15公里。库奥皮奥是俯瞰芬兰湖区地貌的理想目的地。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3240,6 +3267,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Mariehamn is a short hop from mainland Finland to the Åland Islands at the entrance to the Baltic Sea. Soon after take-off, the broad expanse of the Archipelago Sea unfolds below — a body of water off south-western Finland made up of about forty thousand islands and skerries, one of the densest island clusters anywhere in the world by count." +
       " Past the Archipelago Sea, the flight continues west before landing in Mariehamn, the capital of the Åland Islands and the administrative and cultural centre of Finland's only autonomous region with Swedish as its sole official language.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥兰群岛 1921 年国联裁决自治与非军事化（已了结的国际法史实）；群岛海约四万座岛与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到玛丽港飞约55分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型），也可选择乘渡轮往返。玛丽港机场离市区约3公里。玛丽港是探索奥兰群岛的理想起点。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
