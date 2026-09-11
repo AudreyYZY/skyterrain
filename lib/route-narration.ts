@@ -414,6 +414,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xiy-ctu": {
+    // study sources: 全四段（study/travel × 中英）: 秦岭为暖温带 / 亚热带、麦 / 稻、黄河 / 长江水系分界，与本库 terrain/qinling 一致；都江堰两千多年。核实 2026-09-11
     study: {
     "zh-CN":
       "西安飞成都，虽然只有一个多小时，却是翻越秦岭、从黄河流域进入长江流域的一趟。起飞时脚下是关中平原——渭河冲积成的东西向平原，是黄河中游的老农业区。" +
@@ -437,6 +438,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "urc-htn": {
+    // study sources: 全四段（study/travel × 中英）: 天山、塔克拉玛干、昆仑为定性描述；和田约 1400 m（DEM 约 1300–1450 m，在容差内）。核实 2026-09-11
     study: {
     "zh-CN":
       "乌鲁木齐飞和田，是一趟直接飞越塔克拉玛干沙漠的航班，从天山北麓到昆仑山北麓。起飞后脚下是天山北麓的绿洲带，很快开始爬升，翻越天山——山顶终年积雪、冰川广布。" +
@@ -460,6 +462,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "kmg-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 横断山、金沙江、虎跳峡、雅鲁藏布大拐弯为定性描述；昆明约 1900 m、拉萨约 3600 m（官方 3650 的取整）；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "昆明飞拉萨，是从云贵高原横穿横断山脉，飞到青藏高原东南缘。起飞时脚下是滇中的高原面，昆明在一片高原湖盆里，旁边是滇池。" +
@@ -483,6 +486,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "sha-hrb": {
+    // study sources: 全四段（study/travel × 中英）: 黄海、山东半岛、辽东丘陵、东北平原三片为定性描述；哈尔滨 1 月「零下二十度上下」（均温约 −18 至 −19 °C）。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞哈尔滨，是沿着中国的海岸往东北飞，从长江三角洲飞到东北平原。起飞后脚下很快是黄海，海面上有货船和养殖区。" +
@@ -4444,6 +4448,7 @@ export const ROUTE_NARRATION: Record<
 
 
   "pek-foc": {
+    // study sources: 全四段（study/travel × 中英）: 黄岗山「超过 2100 米、华东最高点之一」与本库 terrain/wuyishan（2160.8 m）一致；福州「中国温泉之都」2010 年国土资源部公告（1 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高点之一。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
@@ -4459,6 +4464,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-tna": {
+    // study sources: 全四段（study/travel × 中英）: 泰山 1532.7 m（2007 国家测绘局 / 建设部联合公布，本库留痕 1 级）；趵突泉 / 大明湖 / 千佛山。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞济南，是从岭南一路飞过江南、跨过长江，抵达华北平原北端“泉城”的一条线。飞机从珠江三角洲起飞，先掠过南岭——珠江与长江水系的分水岭，是一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，黄山一带山地起伏、河网密布，是江南典型的低山丘陵地貌。继续向北跨过长江，地面转为华北平原——黄河、淮河冲积出的大平原，一望无际的农田与密集城镇。飞机在平原东段抵达山东丘陵，泰山拔地而起，海拔1532.7米，是华北平原上少见的高耸孤峰，历代帝王在此封禅祭天。济南就坐落在泰山北麓、黄河南岸，城内密布的名泉是这座“泉城”的招牌。",
@@ -4474,6 +4480,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-csx": {
+    // study sources: 全四段（study/travel × 中英）: 洞庭湖「中国第二大淡水湖」与本库 terrain 一致（面积次于鄱阳湖）；长沙「四大火炉之一」带限定。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞长沙，是从华北平原一路穿过中原、跨过长江，抵达湘江畔的一条线。飞机离开首都机场，先掠过太行山东缘，随后进入华北平原——黄河、海河冲积出的大平原。继续向南，飞过大别山——一列不高但明显的山地，横在中原与长江中游之间，也是淮河与长江的分水岭。越过大别山进入长江中下游平原，河湖交错、圩田密布，飞机随后抵达洞庭湖——中国第二大淡水湖，接纳湘、资、沅、澧四水，也是长江重要的调蓄湖泊。过洞庭湖不久便是长沙，这座城市依湘江而建，西岸是岳麓山，东岸是老城区。",
@@ -4489,6 +4496,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-nng": {
+    // study sources: 全四段（study/travel × 中英）: 两广丘陵、桂林峰林为定性描述；中国—东盟博览会 2004 年起在南宁举办。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞南宁，是一条跨越两广丘陵的短途航线。飞机从珠江三角洲起飞，很快进入两广丘陵地带——这是南岭以南、跨越广东西部和广西东部的低山丘陵区，地势起伏和缓，与北面高峻的南岭形成明显的落差。河谷之间点缀着喀斯特地貌，桂林一带的塔状峰林正是这一带最典型的代表，石灰岩经长期溶蚀形成尖峭的孤峰群。飞机沿丘陵间的谷地一路向西，地面逐渐低平，最终降落在邕江畔的南宁——广西壮族自治区首府，因城区四季常绿而有“绿城”之称，也是中国—东盟博览会的举办地。",
@@ -4504,6 +4512,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-hak": {
+    // study sources: 全四段（study/travel × 中英）: 五指山为海南最高峰；琼州海峡至 2026-09 仍无桥隧（湛海高铁 2025-12 获批、未建成），火车靠轮渡 —— 会变的状态，下轮复核。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞海口，是中国大陆最长的南北纵贯航线之一，从温带一路飞到热带。飞机离开首都机场，先掠过太行山东缘，随后越过大别山——淮河与长江的分水岭。跨过长江中下游平原后，飞机进入南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵，翻过南岭就进入热带、亚热带过渡的华南地区。飞机继续向南跨越琼州海峡，海南岛出现在眼下：岛屿中央隆起，五指山是最高点，四周被平原和台地环绕，呈典型的环形地貌。飞机在海南岛北部的海口降落，这里与广东雷州半岛隔海相望，是岛屿与大陆之间的门户。",
@@ -4519,6 +4528,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ctu-lhw": {
+    // study sources: 全四段（study/travel × 中英）: 兰州「唯一黄河干流贯穿主城区的省会」与中川机场距市区约 70 km，均与本库 travel/lanzhou 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "成都飞兰州，是一条穿越四川盆地北缘、翻上青藏高原东北边缘的短途航线。飞机从成都平原起飞，脚下是四川盆地——四周被山地环绕的红层盆地，都江堰在盆地西缘引岷江水灌溉良田。飞机向北飞越盆地边缘的山地，进入甘南高原——这里地势陡然抬升，是青藏高原东北边缘与黄土高原之间的过渡地带，海拔多在3000米左右，也是黄河上游重要的水源涵养区。飞机继续向北，地势逐渐下降，进入黄河穿城而过的兰州——中国唯一一座黄河干流贯穿主城区的省会城市，河谷两侧是典型的黄土丘陵。",
@@ -4534,6 +4544,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-dlc": {
+    // study sources: 全四段（study/travel × 中英）: 大连计划单列市；沙俄 1898–1905、日本 1905–1945 规划建设为客观史实、无评价；201 路有轨电车。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞大连，是一条跨越渤海、抵达辽东半岛南端的短途航线。飞机离开首都机场，脚下先是华北平原东段——黄河、海河冲积出的大平原，向东北方向延展直抵渤海湾。飞跃渤海时，海面开阔，是华北与东北之间重要的海上通道，历史上“闯关东”的移民多经此渡海。跨过海峡后，飞机进入辽东半岛，半岛南端三面环海，海岸线曲折，大连就坐落在半岛最南端——这里冬无严寒、夏无酷暑，是中国北方少有的温和气候区，也是重要的港口与造船工业基地。",
@@ -4549,6 +4560,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-ngb": {
+    // study sources: 全四段（study/travel × 中英）: 天一阁「中国现存最古老的私家藏书楼」与本库 travel/ningbo 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞宁波，是一条纵贯华南与江南、抵达长江三角洲南翼的航线。飞机从珠江三角洲起飞，很快掠过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，这一带山地起伏、河网密布，黄山正是江南丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松怪石、云海温泉闻名于世。继续向东北飞行，地势逐渐低平，进入长江三角洲南翼——甬江冲积出的滨海平原，宁波就坐落在甬江入海口，历史上是海上丝绸之路的重要港口，也是浙东沿海人口最密集的城市之一。",
@@ -4564,6 +4576,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-dat": {
+    // study sources: 全四段（study/travel × 中英）: 云冈石窟 UNESCO 世界遗产；大同「九边重镇之一」带限定；北魏平城。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞大同，是一条从长江三角洲一路向西北、抵达晋北盆地的长距离航线。飞机离开浦东机场，先掠过大别山——一列不高但明显的山地，横亘在长江中下游平原与中原之间，也是淮河与长江的分水岭。翻过大别山，飞机继续向北跨越华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。飞机在平原西北端抵达太行山——一列北北东走向的褶皱山脉，东坡断崖陡峭，直落华北平原；翻越太行山后地势抬升进入晋北高原，大同盆地被群山环抱，历史上是北魏都城平城，也是明清“九边重镇”之一。",
@@ -4579,6 +4592,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "sha-lya": {
+    // study sources: 全四段（study/travel × 中英）: 龙门石窟造像近 11 万尊、白马寺「官方营建的第一座寺院」与本库 travel/luoyang 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞洛阳，是一条从长江三角洲一路向西、抵达中原腹地的航线。飞机离开虹桥机场，脚下先是长江三角洲——太湖平原与河网交织的滨海平原，上海正处在这片三角洲的核心。向西飞行，逐渐进入大别山东段边缘——一列不高但明显的山地，是淮河与长江的分水岭。越过大别山北缘，飞机进入华北平原南段（豫东平原），黄河在这一带多次改道，冲积出大片农耕平原。飞机在平原西端抵达洛阳——黄河南岸伊洛盆地的历史名城，先后有多个朝代在此建都，是中国四大古都之一。",
@@ -4594,6 +4608,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xiy-yzy": {
+    // study sources: 全四段（study/travel × 中英）: 张掖大佛寺「中国现存最大的室内卧佛」（34.5 m，甘肃文旅口径，2 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "西安飞张掖，是一条穿越黄土高原、抵达河西走廊的航线。飞机从关中平原起飞，脚下是渭河冲积出的“八百里秦川”。向西北飞行，地势逐渐抬升进入黄土高原——数百万年来风力搬运堆积的黄土层覆盖在这片高原上，经流水切割形成“塬—梁—峁”相间的沟壑地貌，延安周边是这类地貌的典型代表。继续向西北，飞机进入河西走廊——夹在祁连山与北山之间的狭长绿洲廊道，是丝绸之路连接中原与西域的关键通道。张掖正是这条走廊上历史悠久的绿洲城市，祁连山雪线就在城南，近年因七彩丹霞地貌闻名。",
@@ -4609,6 +4624,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-txn": {
+    // study sources: 全四段（study/travel × 中英）: 莲花峰 1864 m、UNESCO 双遗产；「黄山市在风景区以南约 40 公里」为直线距离（公路约 60 km），与 travel/huangshan 两处写法分别对应、不矛盾。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞黄山，是一条从华北平原一路南下、抵达皖南山区的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原。继续向南，逐渐接近长江三角洲一带，河网稠密、水田与城镇交错。飞机随后进入江南丘陵——这一带山地起伏、河网密布，黄山正是这片丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松、怪石、云海、温泉“四绝”闻名于世，是联合国教科文组织世界文化与自然双遗产。黄山市就坐落在黄山风景区以南约40公里的屯溪盆地，是这座名山的门户城市。",
@@ -4624,6 +4640,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "kmg-jhg": {
+    // study sources: 全四段（study/travel × 中英）: 西双版纳 13 个世居民族（州政府官网，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "昆明飞景洪，是一条从云贵高原南部边缘一路南下、抵达热带雨林的短途航线。飞机离开长水机场，脚下先是云贵高原——石灰岩广布的喀斯特高原，滇池是这片高原上最大的高原湖泊。向南飞行，地势逐渐下降，飞机跨过哀牢山——一列北西—南东走向的山地，是云贵高原与滇南山地的重要分界，也是红河与澜沧江水系的分水岭之一。翻过哀牢山后，飞机进入澜沧江河谷——湄公河的中国段，河谷两侧植被由亚热带常绿阔叶林逐渐过渡为热带雨林。景洪正位于澜沧江畔的西双版纳州府，地处北回归线以南，是中国为数不多的热带雨林气候区，也是通往东南亚的重要门户。",
@@ -4639,6 +4656,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-zuh": {
+    // study sources: 全四段（study/travel × 中英）: 珠海「最早的经济特区之一」（1980 首批四个）带限定。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞珠海，是一条纵贯中国东部、抵达珠江口的长距离航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原。向南飞行，飞机跨过大别山——长江与淮河水系的分水岭，山势虽不高但轮廓分明。翻过大别山后，飞机进入长江中下游平原，鄱阳湖一带河网密布、湖泊众多。继续向南，飞机跨过南岭——长江与珠江水系的分水岭，是华南与华中在地理上的重要界线。翻过南岭后，飞机下降进入珠江三角洲——由珠江携带泥沙淤积而成的复合三角洲，河汊纵横，是中国经济最活跃的区域之一。珠海就位于三角洲西南岸，与澳门隔水相望，是中国最早的经济特区之一。",
@@ -4655,6 +4673,7 @@ export const ROUTE_NARRATION: Record<
 
 
   "can-wnz": {
+    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m「华东最高的山峰之一」带限定；雁荡山 2005 年 UNESCO 世界地质公园。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰之一，也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
@@ -4670,6 +4689,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-yty": {
+    // study sources: 全四段（study/travel × 中英）: 扬州 2019-10-31 获 UNESCO「世界美食之都」（联合国新闻，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞扬州，是一条从华北平原一路南下、抵达江淮交汇处的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，飞机进入苏北平原——黄河故道与淮河共同塑造的冲积平原，地势低平，河网与湖泊密布，是南水北调东线工程的重要通道。飞机在平原南缘抵达扬州——长江与京杭大运河的交汇处，自古因漕运和盐业而繁荣，是“淮扬菜”的发源地之一，古典园林众多，2019年被联合国教科文组织评为“世界美食之都”。",
@@ -4685,6 +4705,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-wus": {
+    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m、UNESCO 双遗产、乌龙茶与红茶发源地。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
@@ -4706,15 +4727,17 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Beijing to Hulunbuir flies north from the North China Plain to the grassland belt in eastern Inner Mongolia. Leaving the capital, the flight crosses the Yan Mountains and climbs onto the Inner Mongolian Plateau — one of China's four great plateaus, rising to around 1,000 m and dominated by open grassland. Flying on north, the grassland gradually shifts from the Xilingol steppe to the Hulunbuir Grassland, one of the \"four great grasslands of the world,\" wetter and lusher than much of the rest of the Inner Mongolian Plateau and one of China's best-preserved grassland ecosystems. The flight ends at Hailar, on the Yimin River, seat of the Hulunbuir city government and the meeting point between the forests of the Greater Khingan Range and the Hulunbuir Grassland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 莫日格勒河「天下第一曲水」为广泛使用的俗称（人民网，2 级）；英文原写 Mordaga（实为额尔古纳的莫尔道嘎林场）已改为 Morigele；「呼伦湖是中国第五大湖」口径不一（第五 / 第六），已去掉排名 —— 同一处错误住在 travel/hulunbuir 中英与 travel-pois，已一并改。核实 2026-09-11
     travel: {
     "zh-CN":
-      "北京到呼伦贝尔约2小时5分钟，直飞海拉尔。呼伦贝尔草原是“世界四大草原”之一，莫日格勒河蜿蜒穿行其间，素有“天下第一曲水”之称；呼伦湖是中国第五大湖。当地以蒙古族为主，敬酒、献哈达是重要待客礼仪，祭敖包时按顺时针方向绕行。手把肉、奶茶是日常饮食代表。6–8月是草原旅游旺季，气候凉爽、牧草最盛，常有那达慕大会；冬季严寒漫长，1月均温常在-20℃以下。",
+      "北京到呼伦贝尔约2小时5分钟，直飞海拉尔。呼伦贝尔草原是“世界四大草原”之一，莫日格勒河蜿蜒穿行其间，素有“天下第一曲水”之称；呼伦湖则是草原腹地的大型湖泊。当地以蒙古族为主，敬酒、献哈达是重要待客礼仪，祭敖包时按顺时针方向绕行。手把肉、奶茶是日常饮食代表。6–8月是草原旅游旺季，气候凉爽、牧草最盛，常有那达慕大会；冬季严寒漫长，1月均温常在-20℃以下。",
     "en-US":
-      "Beijing to Hulunbuir takes about 2 hours 5 minutes, flying nonstop into Hailar. The Hulunbuir Grassland is one of the \"four great grasslands of the world,\" laced by the winding Mordaga River — often called the world's most meandering river — and bordered by Hulun Lake, China's fifth-largest lake. The area is predominantly Mongol, where offering wine and presenting a khadag scarf are important guest customs, and circling an ovoo shrine is done clockwise. Hand-pulled mutton and milk tea are everyday staples. June–August is peak grassland season, coolest and lushest, often with Naadam festivals; winters are long and severe, with January averages often below −20°C.",
+      "Beijing to Hulunbuir takes about 2 hours 5 minutes, flying nonstop into Hailar. The Hulunbuir Grassland is one of the \"four great grasslands of the world,\" laced by the winding Morigele River — often called the world's most meandering river — and bordered by the broad Hulun Lake. The area is predominantly Mongol, where offering wine and presenting a khadag scarf are important guest customs, and circling an ovoo shrine is done clockwise. Hand-pulled mutton and milk tea are everyday staples. June–August is peak grassland season, coolest and lushest, often with Naadam festivals; winters are long and severe, with January averages often below −20°C.",
     },
   },
 
   "pek-yih": {
+    // study sources: 全四段（study/travel × 中英）: 三峡自西向东瞿塘 / 巫 / 西陵、大坝在西陵峡东口三斗坪、「世界最大的水电枢纽工程之一」带限定、双线五级船闸。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞宜昌，是一条从华北平原一路向南、抵达长江三峡出口的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，飞越豫西南的丘陵地带，逐渐进入鄂西山地边缘。飞机最终抵达长江三峡——瞿塘峡、巫峡、西陵峡自西向东依次排开，长江在此切穿巫山山脉，两岸峭壁夹江、江流湍急；西陵峡东口正是三峡大坝所在地，世界最大的水电枢纽工程之一，也是宜昌这座“三峡门户”城市的地标。",
@@ -4730,6 +4753,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-eny": {
+    // study sources: 全四段（study/travel × 中英）: 黄土塬—梁—峁地貌；延安 1935–1948 为中共中央驻地（只陈述时地、无评价）；宝塔山。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞延安，是一条从华北平原穿越太行山、抵达黄土高原腹地的航线。飞机离开首都机场，向西南飞越太行山——一列北北东走向的褶皱山脉，东坡断崖陡峭，直落华北平原。翻过太行山后，飞机进入黄土高原——数百万年来风力搬运堆积的黄土层覆盖在这片高原上，经流水切割形成“塬—梁—峁”相间的沟壑地貌，延安周边正是这类地貌的典型代表区域。飞机最终抵达延安——延河与南川河交汇处的黄土高原城市，1935年至1948年是中共中央和陕甘宁边区政府所在地。",

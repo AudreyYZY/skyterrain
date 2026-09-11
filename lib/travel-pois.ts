@@ -4009,7 +4009,7 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
 
   // ── 中国 · Tier 2 批3（9 省缺口）──
   hulunbuir: [
-    { nameZh: "莫日格勒河", nameEn: "Mordaga River", lon: 119.900, lat: 49.560, kind: "nature" },
+    { nameZh: "莫日格勒河", nameEn: "Morigele River", lon: 119.900, lat: 49.560, kind: "nature" },
     { nameZh: "呼伦湖", nameEn: "Hulun Lake", lon: 117.500, lat: 48.900, kind: "nature" },
     { nameZh: "金帐汗蒙古部落", nameEn: "Jindaohan Mongol Encampment", lon: 119.870, lat: 49.520, kind: "landmark" },
     { nameZh: "室韦俄罗斯族民族乡", nameEn: "Shiwei Russian Ethnic Township", lon: 120.190, lat: 50.660, kind: "district" },
