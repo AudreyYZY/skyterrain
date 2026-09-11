@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 5f5ad75
+lastVerifiedCommit: cf41e3c
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,8 @@ lastVerifiedCommit: 5f5ad75
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 航线解说·check:routes 支线机型规则首跑报出的 2 条（R25b） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
+| 2026-09-11 | 航线解说·check:routes 新规则（解说点名的承运人逐句比数据 + 支线机型）首跑报出的 10 条（R25a） | 12 | 0 / 12 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·日本 / 韩国 / 蒙古 / 哈萨克斯坦国内（29 条）+ 回头搜带出的两处（R24e） | 44 | 29 / 15 / 0 | 当场修 44 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·澳大利亚 / 新西兰 / 土耳其国内（21 条）（R24d） | 34 | 21 / 13 / 0 | 当场修 34 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·美国 / 加拿大 / 智利国内（23 条）（R24c） | 29 | 23 / 5 / 1 | 当场修 28 条；新开 issue 1、关闭 0 |

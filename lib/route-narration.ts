@@ -3259,9 +3259,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 湄南河三角洲地面沉降与本库一致；苏梅岛「按面积计泰国第二大岛」已是修正后说法。核实 2026-09-11
     travel: {
     "zh-CN":
-      "曼谷到苏梅岛飞约95分钟，同一时区，是曼谷航空运营的国内航班之一（ATR72-600机型），苏梅机场由曼谷航空私有运营。曼谷素万那普机场距市区约30公里；苏梅机场就在岛屿东北角。苏梅岛是探索安通国家海洋公园跳岛游的理想门户。",
+      "曼谷到苏梅岛飞约95分钟，同一时区，是曼谷航空运营的国内航班之一（空客A319机型），苏梅机场由曼谷航空私有运营。曼谷素万那普机场距市区约30公里；苏梅机场就在岛屿东北角。苏梅岛是探索安通国家海洋公园跳岛游的理想门户。",
     "en-US":
-      "Bangkok to Koh Samui takes about 95 minutes, same time zone, operated by Bangkok Airways (ATR 72-600) as one of Thailand's domestic routes; Samui Airport is privately operated by Bangkok Airways. Suvarnabhumi Airport is about 30 km from central Bangkok; Samui Airport sits at the island's north-eastern tip. Koh Samui is an ideal gateway for island-hopping in Ang Thong National Marine Park.",
+      "Bangkok to Koh Samui takes about 95 minutes, same time zone, operated by Bangkok Airways (Airbus A319) as one of Thailand's domestic routes; Samui Airport is privately operated by Bangkok Airways. Suvarnabhumi Airport is about 30 km from central Bangkok; Samui Airport sits at the island's north-eastern tip. Koh Samui is an ideal gateway for island-hopping in Ang Thong National Marine Park.",
     },
   },
 
@@ -3748,36 +3748,36 @@ export const ROUTE_NARRATION: Record<
   "sdk-bki": {
     study: {
     "zh-CN":
-      "山打根飞亚庇，是沙巴内陆的区域航线，全程约230公里，由婆罗洲航空（前身马仕运航空，2026年初完成品牌重组）运营，是沙巴境内客流量最大的支线航班之一，也是连接沙巴东西海岸的重要空中通道。飞机离开山打根后向西飞行，脚下逐渐展开克罗克山脉连绵起伏的山脊地貌。" +
+      "山打根飞亚庇，是沙巴内陆的区域航线，全程约230公里，是沙巴境内客流量最大的支线航班之一，也是连接沙巴东西海岸的重要空中通道。飞机离开山打根后向西飞行，脚下逐渐展开克罗克山脉连绵起伏的山脊地貌。" +
       "克罗克山脉呈南北走向、长约120公里，无突出的单一主峰，主体为深海浊积砂岩与泥岩，与不远处京那巴鲁山年轻的花岗岩体分属不同的地质单元；飞机继续向西飞行，越过克罗克山脉后进入沿海平原，最终降落在亚庇——沙巴州首府。",
     "en-US":
-      "Flying from Sandakan to Kota Kinabalu is a regional route within Sabah, spanning about 230 km, operated by AirBorneo (formerly MASwings, which completed its rebrand in early 2026). After leaving Sandakan the flight heads west, the rolling ridgeline of the Crocker Range gradually unfolding below." +
+      "Flying from Sandakan to Kota Kinabalu is a regional route within Sabah, spanning about 230 km. After leaving Sandakan the flight heads west, the rolling ridgeline of the Crocker Range gradually unfolding below." +
       " The Crocker Range runs north-south for about 120 km with no single dominant peak, a sedimentary range distinct from the younger granite massif of nearby Mount Kinabalu; the flight continues west, crossing the range before descending over the coastal plain and landing in Kota Kinabalu, capital of Sabah.",
     },
     // travel sources: 全四段（study/travel × 中英）: AirBorneo 2026-01 接管原马仕运航空属实；克罗克山脉与京那巴鲁地质关系原为旧说法，已按本库 terrain/crocker-range 改。核实 2026-09-11
     travel: {
     "zh-CN":
-      "山打根到亚庇飞约55分钟，同一时区，是婆罗洲航空运营的沙巴内陆航班之一（ATR 72-500机型），该航司2026年初由马仕运航空重组而来，由砂拉越州政府接管运营。山打根机场距市区约11公里；亚庇国际机场距市区约7公里。",
+      "山打根到亚庇飞约55分钟，同一时区，是沙巴内陆航班之一。山打根机场距市区约11公里；亚庇国际机场距市区约7公里。",
     "en-US":
-      "Sandakan to Kota Kinabalu is about 55 minutes, same time zone, operated by AirBorneo (ATR 72-500) as one of Sabah's regional routes; the airline was formed in early 2026 through the rebranding of MASwings under Sarawak state government ownership. Sandakan Airport is about 11 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
+      "Sandakan to Kota Kinabalu is about 55 minutes, same time zone, one of Sabah's regional routes. Sandakan Airport is about 11 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
     },
   },
 
   "kch-myy": {
     study: {
     "zh-CN":
-      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约510公里，由婆罗洲航空运营，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
+      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约510公里，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
       "飞机继续向东北飞行，接近美里前掠过尼亚国家公园——苏比斯山石灰岩地块北缘的洞穴群，大洞洞口高逾60米，2024年列入UNESCO世界遗产名录，最终降落在美里——砂拉越东北部港口城市，是探索姆鲁山国家公园的重要中转枢纽。",
     "en-US":
-      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 510 km, operated by AirBorneo. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
+      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 510 km. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
       " The flight continues northeast, passing near Niah National Park before reaching Miri — a cave complex on the northern edge of the Gunong Subis limestone massif, its Great Cave mouth more than 60 m high, inscribed on the UNESCO World Heritage List in 2024 — before landing in Miri, a port city in northeastern Sarawak and an important transit hub for exploring Gunung Mulu National Park.",
     },
     // travel sources: 全四段（study/travel × 中英）: 尼亚国家公园 2024 年列入 UNESCO 与本库一致；全程距离原写约 420 km，按大圆改为约 510 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "古晋到美里飞约75分钟，同一时区，是婆罗洲航空运营的砂拉越内陆航班之一（ATR 72-500机型）。古晋国际机场距市区约11公里；美里机场距市区约8公里。美里是转乘小型飞机前往姆鲁山国家公园的重要枢纽。",
+      "古晋到美里飞约75分钟，同一时区，是砂拉越内陆航班之一。古晋国际机场距市区约11公里；美里机场距市区约8公里。美里是转乘小型飞机前往姆鲁山国家公园的重要枢纽。",
     "en-US":
-      "Kuching to Miri is about 75 minutes, same time zone, operated by AirBorneo (ATR 72-500) as one of Sarawak's regional routes. Kuching International Airport is about 11 km from the city centre; Miri Airport is about 8 km from the city centre. Miri is an important hub for connecting flights to Gunung Mulu National Park.",
+      "Kuching to Miri is about 75 minutes, same time zone, one of Sarawak's regional routes. Kuching International Airport is about 11 km from the city centre; Miri Airport is about 8 km from the city centre. Miri is an important hub for connecting flights to Gunung Mulu National Park.",
     },
   },
   "ubn-hvd": {
@@ -3900,9 +3900,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 甘伦火山第三活跃、阿波山最高峰与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
+      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空快线（PAL Express）运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
     "en-US":
-      "Manila to Davao is about 130 minutes, same time zone, operated by Philippine Airlines as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
+      "Manila to Davao is about 130 minutes, same time zone, operated by PAL Express as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
     },
   },
 
@@ -3954,9 +3954,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 315 km，按大圆改为约 285 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
+      "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空快线（PAL Express）运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
     "en-US":
-      "Manila to Coron is about 65 minutes, same time zone, operated by Philippine Airlines as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Busuanga Airport is about 30 km from Coron town, requiring a road transfer.",
+      "Manila to Coron is about 65 minutes, same time zone, operated by PAL Express as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Busuanga Airport is about 30 km from Coron town, requiring a road transfer.",
     },
   },
 
@@ -4188,7 +4188,7 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 全程约 974 km（大圆约 951 km）；萨雷阿尔卡与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
+      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
     "en-US":
       "Astana to Almaty is about 110 minutes, same time zone, operated by Air Astana (about 9 flights daily) as Kazakhstan's single busiest domestic route. Astana International Airport is about 17 km from the city centre; Almaty International Airport is about 18 km from the city centre.",
     },
@@ -4206,7 +4206,7 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 阿克套为曼格斯套州首府、里海沿岸最大城市；全程距离原写约 2500 km，按大圆（2081 km）改为约 2100 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿拉木图到阿克套飞约200分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
+      "阿拉木图到阿克套飞约200分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
     "en-US":
       "Almaty to Aktau is about 200 minutes, same time zone, operated by Air Astana (about 33 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
     },
@@ -4242,7 +4242,7 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 全程约 620 km 与大圆一致；莫因库姆沙漠。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿拉木图到希姆肯特飞约80分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
+      "阿拉木图到希姆肯特飞约80分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
     "en-US":
       "Almaty to Shymkent is about 80 minutes, same time zone, operated by Air Astana (about 10 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
     },
@@ -4260,9 +4260,9 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 谢梅伊为塞米巴拉金斯克核试验场行政中心、陀思妥耶夫斯基流放地为史实；全程距离原写约 690 km，按大圆（622 km）改为约 630 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是哈萨克斯坦航空运营的国内航线之一（巴西航空工业E190机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
+      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是阿斯塔纳航空运营的国内航线之一（空客A320机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
     "en-US":
-      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana (Embraer E190) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
+      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana (Airbus A320) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
     },
   },
 
@@ -4296,7 +4296,7 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 全程约 1717 km 与大圆一致；别特帕克达拉荒漠。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到阿克套飞约165分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
+      "阿斯塔纳到阿克套飞约165分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
     "en-US":
       "Astana to Aktau is about 165 minutes, same time zone, operated by Air Astana (about 11 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
     },
@@ -4546,9 +4546,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "萨格勒布到奥西耶克飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；奥西耶克机场距市区约20公里。",
+      "萨格勒布到奥西耶克飞约40分钟，同一时区，是Trade Air与克罗地亚航空代码共享运营的国内航班之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；奥西耶克机场距市区约20公里。",
     "en-US":
-      "Zagreb to Osijek is about 40 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Osijek Airport is about 20 km from the city centre.",
+      "Zagreb to Osijek is about 40 minutes, same time zone, operated by Trade Air under a Croatia Airlines codeshare as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Osijek Airport is about 20 km from the city centre.",
     },
   },
 
