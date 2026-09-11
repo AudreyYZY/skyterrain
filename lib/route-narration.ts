@@ -73,7 +73,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "广州飞拉萨，跨越的是中国从最湿热到最高寒的完整梯度。飞机从珠江三角洲起飞——这是珠江在入海口冲积、加上人工围垦形成的平原，水网密布、城市连片，是中国最发达的地区之一。" +
       "往西北飞，先遇到南岭。它不像北方的大山那样高大连续，而是一列低矮、破碎的丘陵山地，被一道道宽阔的谷地隔开。南岭是长江水系和珠江水系的分水岭，翻过它，河流就开始流向长江。" +
-      "再往前，地面整体抬高，进入云贵高原。这里最典型的是喀斯特地貌——石灰岩被水溶蚀出无数圆锥形、馒头形的小山头，山间是封闭的小盆地，当地叫“坝子”，村镇和农田都挤在坝子里。地表的河流常常钻进地下又冒出来。" +
+      "再往前，地面整体抬高，进入云贵高原。这里的典型地貌是喀斯特——石灰岩被水溶蚀出无数圆锥形、馒头形的小山头，山间是封闭的小盆地，当地叫“坝子”，村镇和农田都挤在坝子里。地表的河流常常钻进地下又冒出来。" +
       "云贵高原以西，地形再次变得险峻，进入横断山脉南段——南北向排列的雪山和深谷。越过它，就上了青藏高原东南缘。这一带因为有印度洋的水汽顺着河谷灌进来，是高原上最湿润、最绿的角落，森林一直长到很高的地方。飞机最后沿雅鲁藏布江水系下降到拉萨。一趟航班，走完了从亚热带季风区到高寒高原的全部气候带。",
     "en-US":
       "Guangzhou to Lhasa crosses China's full gradient from its most hot and humid to its coldest and highest. The plane leaves the Pearl River Delta — a plain built by the river's silt at its mouth plus centuries of reclamation, water-netted and city-covered, one of the most developed regions in China." +
@@ -2211,11 +2211,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "罗马飞米兰，是意大利最繁忙的国内航线，从中部飞到西北部的金融中心，纵贯整个亚平宁半岛北段。起飞后不久，脚下出现特拉西梅诺湖——意大利中部最大的湖之一，湖面很浅、几乎不结冰，公元前 217 年汉尼拔在湖边伏击过罗马军队（简短史实）。" +
       "继续北飞，地面变成托斯卡纳丘陵：一片被长期农耕塑造的波状缓丘，柏树、葡萄园和赭石色农舍是这一带的典型景观，从空中能看出田块随丘陵起伏排列的纹理。" +
-      "越过亚平宁山脉北段的余脉，地面骤然变得极其平坦——波河平原，意大利最大的连片平地，由波河及其支流冲积而成，是全国最重要的农业和工业区。米兰就在平原西部，主教座堂的尖塔从远处就能辨认。",
+      "越过亚平宁山脉北段的余脉，地面骤然变得极其平坦——波河平原，意大利最大的连片平地，由波河及其支流冲积而成，是全国主要的农业和工业区。米兰就在平原西部，主教座堂的尖塔从远处就能辨认。",
     "en-US":
       "Rome to Milan is Italy's busiest domestic route, from the centre to the north-western financial hub, running the length of the northern Apennine peninsula. Soon after take-off, Lake Trasimeno appears below — one of the largest lakes in central Italy, shallow and rarely freezing, where Hannibal ambushed a Roman army in 217 BC (a brief historical fact)." +
       " Flying on north, the land becomes the Tuscan hills: rolling country long shaped by farming, with cypress trees, vineyards and ochre farmhouses the typical scene, the fields' texture following the curves of the hills visible from the air." +
-      " Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's most important agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
+      " Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's main agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
     },
     // travel sources: 全四段（study/travel × 中英）: 特拉西梅诺湖、前 217 年汉尼拔伏击战、波河平原与本库一致。核实 2026-09-11
     travel: {
@@ -2429,7 +2429,7 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 莫雷纳山断层崖、伊比利亚黑猪牧场；瓜达尔基维尔「唯一可让远洋船直达内陆港的河谷」（塞维利亚港，2 级）。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马德里到塞维利亚飞约1小时5分钟，同一时区，也可以选择约2小时半的高铁。塞维利亚夏季（6–9月）是西班牙大陆最炎热的地区之一，常超40°C，春秋气候最宜人。机场离市区约10公里，有机场大巴，老城本身适合步行。塞维利亚是弗拉明戈的重要发源地，四月春会和圣周是全年最重要的节庆，届时住宿需提前很久订。多数国家公民短期旅游按申根区规定。",
+      "马德里到塞维利亚飞约1小时5分钟，同一时区，也可以选择约2小时半的高铁。塞维利亚夏季（6–9月）是西班牙大陆最炎热的地区之一，常超40°C，春秋气候最宜人。机场离市区约10公里，有机场大巴，老城本身适合步行。塞维利亚是弗拉明戈的重要发源地，四月春会和圣周是全年的重大节庆，届时住宿需提前很久订。多数国家公民短期旅游按申根区规定。",
     "en-US":
       "Madrid to Seville is about 1 hour 5 minutes, same time zone; the AVE high-speed train (about 2.5 hours) is another option. Seville summer (June–September) makes it one of the hottest places on mainland Spain, often over 40 °C; spring and autumn are the most pleasant. The airport is about 10 km from the centre with an airport bus, and the old town itself is walkable. Seville is a major birthplace of flamenco, and the April Fair and Holy Week are the year's biggest festivals — book accommodation well ahead for those. Citizens of most countries follow Schengen-area rules for short visits.",
     },
@@ -2657,10 +2657,10 @@ export const ROUTE_NARRATION: Record<
   "ath-skg": {
     study: {
     "zh-CN":
-      "雅典飞塞萨洛尼基是希腊国内最繁忙的航线，从阿提卡一路向北飞越希腊本土中部，抵达马其顿地区。起飞后不久，脚下展开一片开阔的农田——色萨利平原，希腊面积最大、最重要的农业区，由皮尼奥斯河冲积而成，四周被品都斯山脉、奥特里斯山、皮利翁山与奥林匹斯山环绕。" +
+      "雅典飞塞萨洛尼基是希腊国内最繁忙的航线，从阿提卡一路向北飞越希腊本土中部，抵达马其顿地区。起飞后不久，脚下展开一片开阔的农田——色萨利平原，希腊面积最大的农业区，由皮尼奥斯河冲积而成，四周被品都斯山脉、奥特里斯山、皮利翁山与奥林匹斯山环绕。" +
       "飞机继续向北，一座临海耸立的雪峰渐渐出现在右侧——奥林匹斯山，希腊全境最高点，主峰米蒂卡斯海拔2917米，古希腊神话中被认为是众神的居所。越过奥林匹斯山，飞机沿爱琴海西岸继续北上，降落在塞萨洛尼基的萨洛尼卡湾畔。",
     "en-US":
-      "Athens to Thessaloniki is Greece's busiest domestic route, flying north across the centre of the Greek mainland from Attica into Macedonia. Soon after take-off, open farmland unfolds below — the Thessalian Plain, Greece's largest and most important agricultural region, built by the Pineios River and ringed by the Pindus range, Mount Othrys, Mount Pelion and Mount Olympus." +
+      "Athens to Thessaloniki is Greece's busiest domestic route, flying north across the centre of the Greek mainland from Attica into Macedonia. Soon after take-off, open farmland unfolds below — the Thessalian Plain, Greece's largest agricultural region, built by the Pineios River and ringed by the Pindus range, Mount Othrys, Mount Pelion and Mount Olympus." +
       " Continuing north, a snow-capped peak rising straight from the sea appears to the right — Mount Olympus, the highest point in Greece, its summit Mytikas reaching 2,917 m and widely held in Greek mythology to be the home of the gods. Past Olympus the flight continues north along the Aegean coast, descending into Thessaloniki on the Thermaic Gulf.",
     },
     // travel sources: 全四段（study/travel × 中英）: 奥林匹斯米蒂卡斯峰 2917 m（2023 年 GPS 精测）与本库一致。核实 2026-09-11
@@ -3138,10 +3138,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "斯德哥尔摩飞马尔默，是一趟纵贯瑞典南部、直抵最南端的航线。飞机离开斯德哥尔摩后向南飞行，沿途掠过瑞典中南部典型的森林与农田交织地貌，中途掠过斯托雷莫瑟沼泽——瑞典拉普兰以南面积最大的隆起泥炭沼泽，大片深褐色的湿地与周边森林形成鲜明对比，是瑞典南部重要的候鸟栖息与泥炭湿地保护区。" +
-      "临近马尔默前，脚下的森林景观逐渐让位于开阔平坦的斯科讷平原——瑞典最重要的谷物与油菜种植区，规整的农田一望无际，春季油菜花盛开时更呈现出大片金黄色的独特景观，飞机随后降落在瑞典最南端的门户城市马尔默，隔厄勒海峡与丹麦哥本哈根相望。",
+      "临近马尔默前，脚下的森林景观逐渐让位于开阔平坦的斯科讷平原——瑞典主要的谷物与油菜种植区，规整的农田一望无际，春季油菜花盛开时更呈现出大片金黄色的独特景观，飞机随后降落在瑞典最南端的门户城市马尔默，隔厄勒海峡与丹麦哥本哈根相望。",
     "en-US":
       "Flying from Stockholm to Malmö crosses the length of southern Sweden to reach the country's southern tip. After leaving Stockholm the flight heads south, passing over Store Mosse midway — the largest raised peat bog south of Swedish Lapland, its expanse of dark brown wetland contrasting sharply with the forest around it." +
-      " Approaching Malmö, the forested landscape gradually gives way to the open, flat Skåne Plain — Sweden's most important grain- and rapeseed-growing region, its regular farmland stretching to the horizon — before the flight descends into Malmö, the gateway city at Sweden's southern tip, facing Copenhagen, Denmark across the Øresund.",
+      " Approaching Malmö, the forested landscape gradually gives way to the open, flat Skåne Plain — Sweden's main grain- and rapeseed-growing region, its regular farmland stretching to the horizon — before the flight descends into Malmö, the gateway city at Sweden's southern tip, facing Copenhagen, Denmark across the Øresund.",
     },
     // travel sources: 全四段（study/travel × 中英）: 斯托雷莫瑟「拉普兰以南最大的隆起泥炭沼泽」与本库一致。核实 2026-09-11
     travel: {
@@ -3392,8 +3392,8 @@ export const ROUTE_NARRATION: Record<
       "曼谷廊曼飞普吉岛，是连接首都与泰国最负盛名海岛度假地的热门航线。飞机离开廊曼后向南飞行，脚下持续展开泰国湾沿岸的地貌，逐渐掠过三百峰山——泰国湾沿岸一列由约300座石灰岩山峰组成的山地，“三百峰”由此得名，最高峰海拔605米，山地西北角的通三百峰淡水沼泽是泰国境内面积最大的湿地之一，1966年设为泰国首座海洋型国家公园。" +
       "越过三百峰山后，飞机继续向南飞越泰国南部半岛，最终降落在普吉岛——泰国最大的岛屿，坐落于安达曼海，是泰国最负盛名的海岛度假目的地，西海岸分布着巴东、卡伦、卡塔等主要海滩度假区。",
     "en-US":
-      "Flying from Bangkok Don Mueang to Phuket links the capital with Thailand's most famous island resort destination. After leaving Don Mueang the flight heads south, the landform along the Gulf of Thailand coast continuing below, passing over Khao Sam Roi Yot midway — a range of some 300 limestone peaks along the Gulf of Thailand coast, the source of its name (\"the mountain with three hundred peaks\"), with the freshwater marsh of Thung Sam Roi Yot at its north-western corner among the largest wetlands in Thailand." +
-      " Past Khao Sam Roi Yot, the flight continues south over the southern Thai peninsula, before landing on Phuket, Thailand's largest island in the Andaman Sea and the country's most famous island resort destination.",
+      "Flying from Bangkok Don Mueang to Phuket links the capital with a major Thai island resort destination. After leaving Don Mueang the flight heads south, the landform along the Gulf of Thailand coast continuing below, passing over Khao Sam Roi Yot midway — a range of some 300 limestone peaks along the Gulf of Thailand coast, the source of its name (\"the mountain with three hundred peaks\"), with the freshwater marsh of Thung Sam Roi Yot at its north-western corner among the largest wetlands in Thailand." +
+      " Past Khao Sam Roi Yot, the flight continues south over the southern Thai peninsula, before landing on Phuket, Thailand's largest island in the Andaman Sea and a major island resort destination.",
     },
     // travel sources: 全四段（study/travel × 中英）: 三百峰山约 300 座石灰岩峰、1966 年泰国首座海洋型国家公园与本库一致；普吉为泰国最大岛。核实 2026-09-11
     travel: {
@@ -3479,7 +3479,7 @@ export const ROUTE_NARRATION: Record<
   "gmp-rsu": {
     study: {
     "zh-CN":
-      "首尔金浦飞丽水，是连接首都与南部沿海港口城市的航线。飞机离开金浦后向南飞行，脚下持续展开湖南平原开阔平坦的地貌——朝鲜半岛面积最大的平原，面积约3500平方公里，纵横的灌溉水渠将平原分割成棋盘状的地块，是韩国最重要的稻米产区。" +
+      "首尔金浦飞丽水，是连接首都与南部沿海港口城市的航线。飞机离开金浦后向南飞行，脚下持续展开湖南平原开阔平坦的地貌——朝鲜半岛面积最大的平原，面积约3500平方公里，纵横的灌溉水渠将平原分割成棋盘状的地块，是韩国主要的稻米产区。" +
       "飞机继续向南飞行，逐渐接近朝鲜半岛南部沿海，飞机最终降落在丽水——2012年世界博览会举办地，以跨海缆车夜景与音乐喷泉闻名的港口城市，突山岛与丽水本岛由大桥相连，梧桐岛海岸步道是市区内探索海岸地貌的经典去处。",
     "en-US":
       "Flying from Seoul Gimpo to Yeosu links the capital with a southern coastal port city. After leaving Gimpo the flight heads south, the open, flat landform of the Honam Plain continuing below — the largest plain on the Korean Peninsula, its irrigation channels dividing the land into a checkerboard of fields." +
@@ -4396,10 +4396,10 @@ export const ROUTE_NARRATION: Record<
   "ala-hsa": {
     study: {
     "zh-CN":
-      "阿拉木图飞突厥斯坦，是通往哈萨克斯坦最重要伊斯兰朝圣地的航线，全程约670公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
+      "阿拉木图飞突厥斯坦，是通往哈萨克斯坦南部历史名城的航线，全程约670公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
       "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展；越过沙漠后，飞机继续向西南飞行，最终降落在突厥斯坦——历史上丝绸之路重要商贸与宗教中心，是探索1389年帖木儿下令始建的亚萨维陵墓的核心门户。",
     "en-US":
-      "Flying from Almaty to Turkestan is the route to Kazakhstan's most important Islamic pilgrimage site, spanning about 670 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
+      "Flying from Almaty to Turkestan is the route to a historic city in southern Kazakhstan, spanning about 670 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
       " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below; past the desert, the flight continues southwest and lands in Turkestan, historically an important Silk Road trading and religious centre and the core gateway to the Yasawi Mausoleum.",
     },
     // travel sources: 全四段（study/travel × 中英）: 全程约 670 km（大圆约 700 km）；亚萨维陵墓 1389 年帖木儿下令始建（UNESCO，1 级）。核实 2026-09-11
@@ -4701,9 +4701,9 @@ export const ROUTE_NARRATION: Record<
     // study sources: 全四段（study/travel × 中英）: 两广丘陵、桂林峰林为定性描述；中国—东盟博览会 2004 年起在南宁举办。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞南宁，是一条跨越两广丘陵的短途航线。飞机从珠江三角洲起飞，很快进入两广丘陵地带——这是南岭以南、跨越广东西部和广西东部的低山丘陵区，地势起伏和缓，与北面高峻的南岭形成明显的落差。河谷之间点缀着喀斯特地貌，桂林一带的塔状峰林正是这一带最典型的代表，石灰岩经长期溶蚀形成尖峭的孤峰群。飞机沿丘陵间的谷地一路向西，地面逐渐低平，最终降落在邕江畔的南宁——广西壮族自治区首府，因城区四季常绿而有“绿城”之称，也是中国—东盟博览会的举办地。",
+      "广州飞南宁，是一条跨越两广丘陵的短途航线。飞机从珠江三角洲起飞，很快进入两广丘陵地带——这是南岭以南、跨越广东西部和广西东部的低山丘陵区，地势起伏和缓，与北面高峻的南岭形成明显的落差。河谷之间点缀着喀斯特地貌，桂林一带的塔状峰林正是这一带的典型代表，石灰岩经长期溶蚀形成尖峭的孤峰群。飞机沿丘陵间的谷地一路向西，地面逐渐低平，最终降落在邕江畔的南宁——广西壮族自治区首府，因城区四季常绿而有“绿城”之称，也是中国—东盟博览会的举办地。",
     "en-US":
-      "Guangzhou to Nanning is a short hop across the Liangguang Hills. Leaving the Pearl River Delta, the flight soon enters the Liangguang Hills, a belt of low mountains south of the Nanling spanning western Guangdong and eastern Guangxi, gently undulating and dotted with karst landforms — the tower-karst peaks around Guilin are the most iconic example in this belt. The flight follows the valleys between the hills westward and lands at Nanning, on the Yong River, capital of the Guangxi Zhuang Autonomous Region. Known as the 'Green City' for its year-round greenery, Nanning also hosts the China–ASEAN Expo.",
+      "Guangzhou to Nanning is a short hop across the Liangguang Hills. Leaving the Pearl River Delta, the flight soon enters the Liangguang Hills, a belt of low mountains south of the Nanling spanning western Guangdong and eastern Guangxi, gently undulating and dotted with karst landforms — the tower-karst peaks around Guilin are the classic example in this belt. The flight follows the valleys between the hills westward and lands at Nanning, on the Yong River, capital of the Guangxi Zhuang Autonomous Region. Known as the 'Green City' for its year-round greenery, Nanning also hosts the China–ASEAN Expo.",
     },
     travel: {
     "zh-CN":
@@ -4767,7 +4767,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "广州飞宁波，是一条纵贯华南与江南、抵达长江三角洲南翼的航线。飞机从珠江三角洲起飞，很快掠过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，这一带山地起伏、河网密布，黄山正是江南丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松怪石、云海温泉闻名于世。继续向东北飞行，地势逐渐低平，进入长江三角洲南翼——甬江冲积出的滨海平原，宁波就坐落在甬江入海口，历史上是海上丝绸之路的重要港口，也是浙东沿海人口最密集的城市之一。",
     "en-US":
-      "Guangzhou to Ningbo runs the length of southern and Jiangnan China to the southern edge of the Yangtze Delta. The flight leaves the Pearl River Delta and soon crosses the Nanling, a low, broken east–west belt of hills forming the drainage divide between the Pearl and Yangtze river systems. Beyond the Nanling lie the Jiangnan Hills, a rolling, river-laced landscape whose most iconic high point is Mount Huangshan, famous worldwide for its unusual pines, strange rocks, sea of clouds and hot springs. Flying on north-east, the land flattens into the southern Yangtze Delta, a coastal plain built by the Yong River, and Ningbo sits right where that river meets the sea — historically an important port on the Maritime Silk Road.",
+      "Guangzhou to Ningbo runs the length of southern and Jiangnan China to the southern edge of the Yangtze Delta. The flight leaves the Pearl River Delta and soon crosses the Nanling, a low, broken east–west belt of hills forming the drainage divide between the Pearl and Yangtze river systems. Beyond the Nanling lie the Jiangnan Hills, a rolling, river-laced landscape whose signature high point is Mount Huangshan, famous worldwide for its unusual pines, strange rocks, sea of clouds and hot springs. Flying on north-east, the land flattens into the southern Yangtze Delta, a coastal plain built by the Yong River, and Ningbo sits right where that river meets the sea — historically an important port on the Maritime Silk Road.",
     },
     travel: {
     "zh-CN":
@@ -4787,9 +4787,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "上海到大同约两个半到三个小时。大同因煤炭资源丰富被称为“中国煤都”，云冈石窟、悬空寺是最重要的看点，前者是联合国教科文组织世界遗产，后者凌空建于恒山峭壁之上。当地饮食延续山西“面食+陈醋”传统，刀削面是代表。大同冬季严寒，1月均温常在-10℃以下，5–9月气候最舒适。云冈石窟与悬空寺相距约100公里，建议分两天安排。",
+      "上海到大同约两个半到三个小时。大同因煤炭资源丰富被称为“中国煤都”，云冈石窟、悬空寺是主要看点，前者是联合国教科文组织世界遗产，后者凌空建于恒山峭壁之上。当地饮食延续山西“面食+陈醋”传统，刀削面是代表。大同冬季严寒，1月均温常在-10℃以下，5–9月气候最舒适。云冈石窟与悬空寺相距约100公里，建议分两天安排。",
     "en-US":
-      "Shanghai to Datong takes about two and a half to three hours. Datong, nicknamed 'China's Coal Capital' for its rich coal reserves, is best known for the Yungang Grottoes — a UNESCO World Heritage Site — and the Hanging Temple, suspended on a cliff face of Mount Heng. Local food follows Shanxi's 'noodles plus aged vinegar' tradition, with hand-cut noodles as the signature dish. Winters here are severe, with January averages often below −10°C, so May–September is the most comfortable time to visit. The Yungang Grottoes and the Hanging Temple are about 100 km apart, so plan on two separate days.",
+      "Shanghai to Datong takes about two and a half to three hours. Datong, nicknamed 'China's Coal Capital' for its rich coal reserves, is known for the Yungang Grottoes — a UNESCO World Heritage Site — and the Hanging Temple, suspended on a cliff face of Mount Heng. Local food follows Shanxi's 'noodles plus aged vinegar' tradition, with hand-cut noodles as the signature dish. Winters here are severe, with January averages often below −10°C, so May–September is the most comfortable time to visit. The Yungang Grottoes and the Hanging Temple are about 100 km apart, so plan on two separate days.",
     },
   },
 
@@ -4851,9 +4851,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "昆明到景洪约55分钟，是通往西双版纳的主要空中通道。景洪地处热带，傣族、哈尼族等13个世居民族在此聚居，佛寺众多，是南传上座部佛教地区。野象谷是中国境内少数能近距离观察亚洲野象的自然保护区；曼听公园保留传统傣族村寨风貌。4月中旬的泼水节是当地最重要的节日。旱季（11月至次年4月）气候最舒适，雨季（5–10月）午后常有阵雨。进入佛寺和傣家竹楼有相应礼仪，如脱鞋、不触摸小和尚的头部。",
+      "昆明到景洪约55分钟，是通往西双版纳的主要空中通道。景洪地处热带，傣族、哈尼族等13个世居民族在此聚居，佛寺众多，是南传上座部佛教地区。野象谷是中国境内少数能近距离观察亚洲野象的自然保护区；曼听公园保留传统傣族村寨风貌。4月中旬的泼水节是当地的重大节日。旱季（11月至次年4月）气候最舒适，雨季（5–10月）午后常有阵雨。进入佛寺和傣家竹楼有相应礼仪，如脱鞋、不触摸小和尚的头部。",
     "en-US":
-      "Kunming to Jinghong takes about 55 minutes, the main air link into Xishuangbanna. Jinghong sits in the tropics, home to the Dai, Hani and other of the region's 13 long-established ethnic groups, with many Buddhist temples in this Theravada Buddhist area. Wild Elephant Valley is one of the few reserves in China where wild Asian elephants can be seen up close, and Manting Park preserves the look of a traditional Dai village. The mid-April Water-Splashing Festival is the region's most important celebration. The dry season (November–April) has the most comfortable weather, while the wet season (May–October) often brings afternoon showers. Entering a temple or a Dai bamboo house comes with its own etiquette, such as removing your shoes and never touching a young monk's head.",
+      "Kunming to Jinghong takes about 55 minutes, the main air link into Xishuangbanna. Jinghong sits in the tropics, home to the Dai, Hani and other of the region's 13 long-established ethnic groups, with many Buddhist temples in this Theravada Buddhist area. Wild Elephant Valley is one of the few reserves in China where wild Asian elephants can be seen up close, and Manting Park preserves the look of a traditional Dai village. The mid-April Water-Splashing Festival is a major celebration in the region. The dry season (November–April) has the most comfortable weather, while the wet season (May–October) often brings afternoon showers. Entering a temple or a Dai bamboo house comes with its own etiquette, such as removing your shoes and never touching a young monk's head.",
     },
   },
 
@@ -4869,7 +4869,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京到珠海约3小时15分钟。珠海是中国最早的经济特区之一，毗邻澳门，情侣路是城市名片，沿香炉湾海岸线延伸约30余公里。珠海渔女雕像是标志性地标，长隆海洋王国是热门的家庭出游目的地。经拱北、横琴口岸可步行或乘车前往澳门，很适合安排当日往返。10月至次年3月气候最舒适、台风较少；5–9月是台风季。粤式饮茶文化在这里同样通行，斟茶后轻叩桌面致谢是常见礼节。",
     "en-US":
-      "Beijing to Zhuhai takes about 3 hours 15 minutes. Zhuhai, one of China's earliest Special Economic Zones, borders Macao, and Lovers' Road — running more than 30 km along Xianglu Bay — is the city's signature image. The Zhuhai Fisher Girl statue is its best-known landmark, and Chimelong Ocean Kingdom is a popular family destination. Macao is an easy walk or drive away via the Gongbei or Hengqin checkpoints, well suited to a day trip. October–March has the most comfortable weather and fewer typhoons; May–September is typhoon season. The Cantonese yum cha custom carries over here too — tapping the table lightly when your tea is topped up is a common way to say thanks.",
+      "Beijing to Zhuhai takes about 3 hours 15 minutes. Zhuhai, one of China's earliest Special Economic Zones, borders Macao, and Lovers' Road — running more than 30 km along Xianglu Bay — is the city's signature image. The Zhuhai Fisher Girl statue is its signature landmark, and Chimelong Ocean Kingdom is a popular family destination. Macao is an easy walk or drive away via the Gongbei or Hengqin checkpoints, well suited to a day trip. October–March has the most comfortable weather and fewer typhoons; May–September is typhoon season. The Cantonese yum cha custom carries over here too — tapping the table lightly when your tea is topped up is a common way to say thanks.",
     },
   },
 
@@ -4902,7 +4902,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京到扬州约1小时45分钟。扬州是“淮扬菜”发源地之一，2019年被联合国教科文组织评为“世界美食之都”。瘦西湖是清代盐商园林与自然湖泊结合的代表，个园、何园是另两处古典园林。扬州早茶讲究“早上皮包水”，一顿正式早茶通常需一到两小时，富春茶社是代表老字号。3–5月、9–11月气候最舒适，也是瘦西湖赏花的最佳季节。",
     "en-US":
-      "Beijing to Yangzhou takes about 1 hour 45 minutes. Yangzhou is one of the birthplaces of Huaiyang cuisine and was named a UNESCO 'City of Gastronomy' in 2019. Slender West Lake pairs a Qing-dynasty salt-merchant garden with a natural lake, while Ge Garden and He Garden are two more classical gardens worth seeing. Yangzhou's morning tea tradition — summed up as 'mornings wrapped in soup' — typically takes one to two hours, with Fuchun Teahouse the best-known name. March–May and September–November have the most comfortable weather and are also the best season for flowers at Slender West Lake.",
+      "Beijing to Yangzhou takes about 1 hour 45 minutes. Yangzhou is one of the birthplaces of Huaiyang cuisine and was named a UNESCO 'City of Gastronomy' in 2019. Slender West Lake pairs a Qing-dynasty salt-merchant garden with a natural lake, while Ge Garden and He Garden are two more classical gardens worth seeing. Yangzhou's morning tea tradition — summed up as 'mornings wrapped in soup' — typically takes one to two hours, with Fuchun Teahouse a well-known name. March–May and September–November have the most comfortable weather and are also the best season for flowers at Slender West Lake.",
     },
   },
 
@@ -4912,7 +4912,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
     "en-US":
-      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose most iconic high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
+      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose signature high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
     },
     travel: {
     "zh-CN":
@@ -5196,11 +5196,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-yyz": {
+    // study sources: 距离改为按机场坐标算的大圆距离（10,561 km）；航司里程仍未公开可查。核实 2026-09-12
     study: {
     "zh-CN":
-      "北京飞多伦多，走的是跨越北极圈的大圆航路，全程约一万一千五百公里，是中国直飞北美东部最长的航线之一。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里。再往北是贝加尔湖，地球上最深的湖泊，最深处超过一千六百米，蓄水量约占全球未冻结淡水的五分之一；它坐落在一条仍在缓慢张开的大陆裂谷上，两岸山地陡直入水，冬季湖面完全封冻，冰层厚到可以行车。越过湖区之后是连绵的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头，河流全部向北流。接着抵达西伯利亚北冰洋沿岸——一片被冻土支配的低平苔原，夏季只有表层解冻，水下渗不下去，于是在地表积成无数热融湖，从空中看像撒了一地的碎镜片；海岸线破碎，河口宽阔，浮冰在夏季退向更高纬度。跨过北冰洋后进入加拿大北极群岛，由几十座大岛和上千座小岛组成，岛屿之间是常年结冰或半年结冰的海峡；地表以裸岩、砾石和薄薄一层苔原植被为主，几乎看不到树。再往南是哈德逊湾，一片深入北美大陆的巨大内海，冬季完全封冻；它所在的地壳曾被厚达数公里的冰盖压低，冰盖消融后至今仍在缓慢回弹，海岸线因此持续抬升，湖岸上能看到一道道被抬起的古海滩。飞机最后飞越安大略的森林与湖群，降落在多伦多皮尔逊机场。",
+      "北京飞多伦多，走的是跨越北极圈的大圆航路，两地的大圆距离约一万零六百公里，是中国直飞北美东部最长的航线之一。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里。再往北是贝加尔湖，地球上最深的湖泊，最深处超过一千六百米，蓄水量约占全球未冻结淡水的五分之一；它坐落在一条仍在缓慢张开的大陆裂谷上，两岸山地陡直入水，冬季湖面完全封冻，冰层厚到可以行车。越过湖区之后是连绵的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头，河流全部向北流。接着抵达西伯利亚北冰洋沿岸——一片被冻土支配的低平苔原，夏季只有表层解冻，水下渗不下去，于是在地表积成无数热融湖，从空中看像撒了一地的碎镜片；海岸线破碎，河口宽阔，浮冰在夏季退向更高纬度。跨过北冰洋后进入加拿大北极群岛，由几十座大岛和上千座小岛组成，岛屿之间是常年结冰或半年结冰的海峡；地表以裸岩、砾石和薄薄一层苔原植被为主，几乎看不到树。再往南是哈德逊湾，一片深入北美大陆的巨大内海，冬季完全封冻；它所在的地壳曾被厚达数公里的冰盖压低，冰盖消融后至今仍在缓慢回弹，海岸线因此持续抬升，湖岸上能看到一道道被抬起的古海滩。飞机最后飞越安大略的森林与湖群，降落在多伦多皮尔逊机场。",
     "en-US":
-      "Beijing to Toronto follows a great-circle track over the Arctic, about 11,500 km in all, one of the longest nonstop routes from China to eastern North America. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart. Farther north lies Lake Baikal, the deepest lake on Earth at more than sixteen hundred metres, holding roughly a fifth of the world's unfrozen fresh water; it sits in a continental rift that is still slowly pulling apart, the mountains on both shores drop straight into the water, and in winter the surface freezes solid enough to drive on. Beyond the lake the Siberian taiga runs unbroken to the horizon, larch and spruce all the way, and every river flows north. The route then reaches the Siberian Arctic Coast, low tundra governed by permafrost: only the surface layer thaws in summer, water cannot drain away, and it collects into countless thaw lakes that read from the air like shards of scattered mirror; the coastline is broken, the river mouths are wide, and the pack ice retreats to higher latitudes through the summer. Across the Arctic Ocean comes the Canadian Arctic Archipelago, dozens of large islands and more than a thousand small ones separated by channels that are frozen year-round or for half the year; the ground is bare rock, gravel and a thin skin of tundra vegetation, with scarcely a tree in sight. Farther south is Hudson Bay, a vast inland sea driven deep into the North American continent and frozen over in winter; the crust beneath it was pressed down by an ice sheet kilometres thick, and it is still rebounding today, so the shoreline keeps rising and raised ancient beaches step back from the water in visible ridges. The flight finally crosses the forests and lakes of Ontario and lands at Toronto Pearson Airport.",
+      "Beijing to Toronto follows a great-circle track over the Arctic, some 10,600 km between the two cities as the crow flies, one of the longest nonstop routes from China to eastern North America. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart. Farther north lies Lake Baikal, the deepest lake on Earth at more than sixteen hundred metres, holding roughly a fifth of the world's unfrozen fresh water; it sits in a continental rift that is still slowly pulling apart, the mountains on both shores drop straight into the water, and in winter the surface freezes solid enough to drive on. Beyond the lake the Siberian taiga runs unbroken to the horizon, larch and spruce all the way, and every river flows north. The route then reaches the Siberian Arctic Coast, low tundra governed by permafrost: only the surface layer thaws in summer, water cannot drain away, and it collects into countless thaw lakes that read from the air like shards of scattered mirror; the coastline is broken, the river mouths are wide, and the pack ice retreats to higher latitudes through the summer. Across the Arctic Ocean comes the Canadian Arctic Archipelago, dozens of large islands and more than a thousand small ones separated by channels that are frozen year-round or for half the year; the ground is bare rock, gravel and a thin skin of tundra vegetation, with scarcely a tree in sight. Farther south is Hudson Bay, a vast inland sea driven deep into the North American continent and frozen over in winter; the crust beneath it was pressed down by an ice sheet kilometres thick, and it is still rebounding today, so the shoreline keeps rising and raised ancient beaches step back from the water in visible ridges. The flight finally crosses the forests and lakes of Ontario and lands at Toronto Pearson Airport.",
     },
     // travel sources: 全四段（study/travel × 中英）: 贝加尔湖数据同 pek-jfk（UNESCO，1 级）；「全程约一万一千五百公里」大圆约 10,560 km，航司公布里程未查到，已开 issue 待核。核实 2026-09-11
     travel: {
@@ -5606,7 +5607,7 @@ export const ROUTE_NARRATION: Record<
   "scl-cjc": {
     study: {
     "zh-CN":
-      "圣地亚哥飞卡拉马，是智利境内最经典的一条南北纵向航线，沿途正好穿越智利中部与北部截然不同的两种气候带。飞机从中央谷地北段起飞，脚下先是方格状的农田与葡萄园，两侧被海岸山脉与安第斯山脉夹峙——这正是智利“三段式”地貌骨架最典型的样子。" +
+      "圣地亚哥飞卡拉马，是智利境内一条典型的南北纵向航线，沿途正好穿越智利中部与北部截然不同的两种气候带。飞机从中央谷地北段起飞，脚下先是方格状的农田与葡萄园，两侧被海岸山脉与安第斯山脉夹峙——这正是智利“三段式”地貌骨架的典型样子。" +
       "往北飞行约一个多小时后，绿色逐渐消失，地表转为大片赭红色的荒漠——这就是阿塔卡马沙漠，地球上除极地干燥谷地外最干旱的地区。它的极端干旱由两个因素叠加造成：东侧安第斯山脉挡住了来自亚马逊的湿润气流，形成雨影；西侧沿岸寒冷的洪堡洋流又抑制了海面蒸发。两种效应叠加，使这里部分气象站数十年都没有有效降水记录。" +
       "飞机最终降落在卡拉马——一座因毗邻丘基卡马塔铜矿而发展起来的矿业城市，也是通往圣佩德罗德阿塔卡马、月亮谷、塔蒂奥间歇泉等阿塔卡马腹地景观的主要空中门户。从翠绿农田到赤色荒漠，这条航线浓缩了智利地貌最鲜明的一次转折。",
     "en-US":
@@ -5639,10 +5640,10 @@ export const ROUTE_NARRATION: Record<
     travel: {
     "zh-CN":
       "圣地亚哥到安托法加斯塔约2小时，智利南美航空执飞。安德烈斯·萨贝利亚机场（旧称塞罗莫雷诺）距市区约22公里，出租车约20多分钟到市中心。" +
-      "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊最著名的自然景点，可包车或参加当地半日游前往。",
+      "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊的标志性自然景点，可包车或参加当地半日游前往。",
     "en-US":
       "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Andrés Sabella Airport (formerly Cerro Moreno) is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
-      " The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the most famous natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
+      " The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the signature natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
     },
   },
   "scl-lsc": {
@@ -5732,11 +5733,11 @@ export const ROUTE_NARRATION: Record<
   "scl-puq": {
     study: {
     "zh-CN":
-      "圣地亚哥飞蓬塔阿雷纳斯，是智利国内航线中航程最长、也最壮观的一条，全程约3.5小时，一路飞越智利最荒凉、最少人烟的巴塔哥尼亚地带。飞机离开湖区后，森林与湖泊逐渐被开阔的荒野取代，地貌变得越来越破碎复杂。" +
+      "圣地亚哥飞蓬塔阿雷纳斯，是一条纵贯智利南北的长途国内航线，全程约3.5小时，一路飞越智利最荒凉、最少人烟的巴塔哥尼亚地带。飞机离开湖区后，森林与湖泊逐渐被开阔的荒野取代，地貌变得越来越破碎复杂。" +
       "航程后段，舷窗下方会出现南巴塔哥尼亚冰原——南半球除南极洲外最大的连续冰体，边缘裂开无数冰川舌，其中智利一侧的皮奥十一冰川宽阔壮观。飞机随后掠过智利峡湾——冰川深度侵蚀海岸线后、海水倒灌形成的复杂峡湾与水道群，陡峭的山壁直插海面，是世界上最复杂的峡湾海岸之一。" +
       "临近降落时，飞机沿麦哲伦海峡北岸下降——这条全长约570公里的天然海峡因葡萄牙航海家麦哲伦1520年经此完成人类首次环球航行的关键航段而得名。飞机最终降落在蓬塔阿雷纳斯，世界最靠南的重要城市之一，也是前往百内国家公园、火地岛与南极的主要门户。",
     "en-US":
-      "Santiago to Punta Arenas is the longest and most dramatic domestic route in Chile, taking about 3.5 hours across the country's most remote and sparsely populated stretch of Patagonia. Beyond the Lake District, forest and lake give way to open wilderness, and the landscape below grows increasingly fragmented and complex." +
+      "Santiago to Punta Arenas is a long north–south domestic route in Chile, taking about 3.5 hours across the country's most remote and sparsely populated stretch of Patagonia. Beyond the Lake District, forest and lake give way to open wilderness, and the landscape below grows increasingly fragmented and complex." +
       " Later in the flight, the Southern Patagonian Ice Field comes into view — the largest continuous body of ice in the Southern Hemisphere outside Antarctica, its edges splitting into countless glacial tongues, with Pío XI Glacier broad and dramatic on the Chilean side. The flight then passes over the Chilean Fjords — a maze of fjords and channels formed as glaciers deeply carved the coastline and the sea flooded in, with steep cliffs plunging straight into the water, one of the most complex fjord coastlines in the world." +
       " Approaching landing, the flight descends along the northern shore of the Strait of Magellan — a roughly 570 km natural passage named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe. The flight lands at Punta Arenas, one of the world's most important far-southern cities and the main gateway to Torres del Paine National Park, Tierra del Fuego, and Antarctica.",
     },

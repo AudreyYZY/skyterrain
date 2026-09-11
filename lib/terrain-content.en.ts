@@ -89,7 +89,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   其余 5 个板块经逐句对照未见中英分歧；额尔齐斯河经俄罗斯注入北冰洋、
     //   是新疆唯一的外流水系，属公认地理事实。
     seeing:
-      "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
+      "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, including the well-known Kanas Lake.",
     // formation sources: 友谊峰 4374 m 为中蒙界峰；**中俄蒙三国交界点是它以北约 2.5 km、海拔 4082 m 的奎屯峰
     //   （Nairamdal Peak）** —— 中科院地理科学与资源研究所《中国地貌·阿尔泰山脉》（2 级）与
     //   Wikidata/维基「Nairamdal Peak」词条，2026-09-08 复核。
@@ -98,7 +98,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   阿尔泰山雪线约 2800 m，是中国雪线最低处。`history` 段只写游牧牧场、哈萨克族转场、岩画鹿石、
     //   图瓦人村落，均为客观民俗与历史事实，零争议红线通过。
     formation:
-      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak — Khüiten Peak on the Mongolian side — reaches 4,374 m on the China–Mongolia border, while the China–Russia–Mongolia tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
+      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak — Khüiten Peak on the Mongolian side — reaches 4,374 m on the China–Mongolia border, while the China–Russia–Mongolia tripoint is Kuitun Peak (4,082 m) about 2.5 km to its north. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
     observation:
       "The Altai's forest is denser than the Tianshan's: its slopes carry taiga — Siberian larch, Siberian spruce, Siberian fir and Siberian pine — a conifer forest that in China is found only here and in the northern Greater Khingan. Winding glacial lakes lie in the valley floors, their water tinged green (Kanas is known as a \"colour-changing lake\"). The range runs on a slant (NW–SE), unlike the true east–west Tianshan.",
     distinguish:
@@ -496,7 +496,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 2026-09-08 逐句核实全篇 6 板块（中国面积最大的平原约 35 万 km²、黑土区、闯关东、大庆油田），
     //   未发现事实性错误。**正文没有写具体面积数字**，因此不构成「缺年份/缺口径」的问题，本轮无需改动。
     seeing:
-      "The Northeast Plain is China's largest plain, made up of the Songnen, Liaohe and Sanjiang plains, ringed by the Greater and Lesser Khingan ranges and Changbai Shan. It has vast tracts of fertile black soil and is China's most important commodity-grain base — the \"great northern granary.\"",
+      "The Northeast Plain is China's largest plain, made up of the Songnen, Liaohe and Sanjiang plains, ringed by the Greater and Lesser Khingan ranges and Changbai Shan. It has vast tracts of fertile black soil and is one of China's main commodity-grain bases — the \"great northern granary.\"",
     formation:
       "The Northeast Plain was built by the long-term alluviation of the Songhua, Liao and Amur rivers plus debris from the surrounding mountains. The land is low and flat (mostly below 200 m), with some low rises and marshes in the middle. The black soil formed over thousands of years as meadow plant remains slowly accumulated in the cold — extremely fertile.",
     observation:
@@ -572,7 +572,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 2026-09-08 逐句核实全篇 6 板块（长约 1000 km、西汉设河西四郡、莫高窟），
     //   未发现事实性错误，本轮无需改动。
     seeing:
-      "The Hexi Corridor, in western Gansu, is a long narrow strip of level ground, about 1,000 km long and anywhere from a few to over a hundred kilometres wide, between the Qilian Mountains and the Heli and Longshou ranges to the north. \"Hexi\" means \"west of the (Yellow) River.\" It is a corridor that links the Central Plains with the Western Regions, the single most important section of the ancient Silk Road.",
+      "The Hexi Corridor, in western Gansu, is a long narrow strip of level ground, about 1,000 km long and anywhere from a few to over a hundred kilometres wide, between the Qilian Mountains and the Heli and Longshou ranges to the north. \"Hexi\" means \"west of the (Yellow) River.\" It is a corridor that links the Central Plains with the Western Regions, a key section of the ancient Silk Road.",
     formation:
       "The Hexi Corridor is a string of piedmont sloping plains (alluvial fans) along the northern foot of the Qilian, built of debris carried down by Qilian snowmelt. Three inland rivers (the Shiyang, the Hei and the Shule) cross the corridor and form a chain of oases at the fan edges: Wuwei, Zhangye, Jiuquan, Dunhuang.",
     observation:
@@ -594,9 +594,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The Wu Shan is a roughly north–south fold range. The Yangtze already existed; as the Wu Shan rose, the river cut down at the same rate (the classic case in the \"antecedent river\" debate), sawing the range open into a deep trough — a beaded course of gorges alternating with open valleys.",
     observation:
-      "From the air the Three Gorges are a deep, narrow, twisting canyon cut by the Yangtze through the mountains: in the gorge sections the walls stand sheer, several hundred metres above the river, and the channel narrows; in the open-valley sections it widens out with towns and fields. The Kui Gate at the mouth of Qutang Gorge, two mountains facing off, is the most dramatic; the Three Gorges Dam is inside Xiling Gorge.",
+      "From the air the Three Gorges are a deep, narrow, twisting canyon cut by the Yangtze through the mountains: in the gorge sections the walls stand sheer, several hundred metres above the river, and the channel narrows; in the open-valley sections it widens out with towns and fields. The Kui Gate at the mouth of Qutang Gorge, two mountains facing off, is especially dramatic; the Three Gorges Dam is inside Xiling Gorge.",
     distinguish:
-      "The Three Gorges versus the Yarlung Tsangpo Grand Canyon: the Three Gorges is a canyon cut by the Yangtze through a fold range, its walls several hundred metres above the river, famed for ruggedness; the Yarlung Tsangpo Grand Canyon is a horseshoe-shaped hairpin of the Yarlung Tsangpo around Namcha Barwa, with peak-to-valley relief reaching five to six thousand metres. Versus Tiger Leaping Gorge: Tiger Leaping Gorge is where the Jinsha cuts between the Jade Dragon and Haba snow mountains, about 3,900 m from river to the Jade Dragon summit, deeper and narrower than the Three Gorges.",
+      "The Three Gorges versus the Yarlung Tsangpo Grand Canyon: the Three Gorges is a canyon cut by the Yangtze through a fold range, its walls several hundred metres above the river, famed for ruggedness; the Yarlung Tsangpo Grand Canyon is a horseshoe-shaped hairpin of the Yarlung Tsangpo around Namcha Barwa, with peak-to-valley relief reaching five to six thousand metres. Versus Tiger Leaping Gorge: Tiger Leaping Gorge is where the Jinsha cuts between the Jade Dragon and Haba snow mountains, about 3,790 m from river to the Jade Dragon summit, deeper and narrower than the Three Gorges.",
     concept:
       "The Three Gorges is a textbook of \"river downcutting\": it proves that as long as uplift is slow enough and the river's discharge large enough, a river can \"saw through\" a mountain. The Three Gorges Project uses the drop and the gorge terrain to build the world's largest hydropower station, and it has also changed the water and sediment rhythm downstream and the water regime of the lower lakes.",
     history:
@@ -821,7 +821,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   kimberley: {
     // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
-      "The Kimberley is a remote sandstone plateau in Australia's far north-west, about 420,000 km² — larger than Germany — with a deeply indented coast of tidal gorges and a monsoon climate. Its best-known feature is the Bungle Bungle Range in Purnululu — a maze of orange-and-grey banded beehive domes. The tides here are among the largest in the world, over 10 m.",
+      "The Kimberley is a remote sandstone plateau in Australia's far north-west, about 420,000 km² — larger than Germany — with a deeply indented coast of tidal gorges and a monsoon climate. Its signature feature is the Bungle Bungle Range in Purnululu — a maze of orange-and-grey banded beehive domes. The tides here are among the largest in the world, over 10 m.",
     formation:
       "The plateau is very old, flat-lying sandstone, dissected by rivers into gorges and mesas. The Bungle Bungles' domes are what remains after weathering along a grid of vertical cracks in the sandstone; the grey bands are a thin skin of cyanobacteria protecting the softer, orange, iron-stained layers between more clay-rich grey bands. The huge tides drown the river mouths, making \"horizontal waterfalls\" where water is forced through narrow gaps.",
     observation:
@@ -837,7 +837,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "simpson-desert": {
     // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
-      "The Simpson Desert covers about 176,000 km² of central Australia, spanning three states. It is famous for its dunes: more than 1,100 parallel sand ridges running NNW–SSE, some over 200 km long without a break — among the longest parallel dunes on Earth. \"Big Red,\" near Birdsville, is the best-known.",
+      "The Simpson Desert covers about 176,000 km² of central Australia, spanning three states. It is famous for its dunes: more than 1,100 parallel sand ridges running NNW–SSE, some over 200 km long without a break — among the longest parallel dunes on Earth. \"Big Red,\" near Birdsville, is a well-known example.",
     formation:
       "The sand was carried in by rivers from the surrounding ranges and then reworked by the prevailing south-easterly winds into long, straight ridges that all line up with the wind. The dune crests still shift, but the flanks are held by spinifex and other plants, so the pattern is stable. Clay pans and salt lakes lie in the swales between ridges.",
     observation:
@@ -1056,7 +1056,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   两套口径，差了将近一倍，写的时候必须说明是哪一套。
     //   「跨四个州」是常见简化（实际是四个州 + 首都领地），温特沃斯汇合点、库隆潟湖出海口经复核准确。
     seeing:
-      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km; the Darling proper is about 1,500 km, reaching roughly 2,700 km once its longest headwater tributaries are counted — Australia's longest waterway on that reckoning; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is the country's most important farming region — and its most fought-over water.",
+      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km; the Darling proper is about 1,500 km, reaching roughly 2,700 km once its longest headwater tributaries are counted — Australia's longest waterway on that reckoning; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is one of the country's key farming regions — and its water is fiercely contested.",
     formation:
       "The rivers flow across the Murray Basin, a very large, very flat lowland floored by river sediments. Because the gradient is so gentle, the Murray winds in tight meanders, cutting off billabongs (oxbow lakes), and the Darling can take weeks to move a flood pulse downstream. The system ends in the Coorong lagoon and a set of barrages at the Murray Mouth.",
     observation:
@@ -1305,7 +1305,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "great-australian-bight": {
     seeing:
-      "The Great Australian Bight is a huge, open, curved gulf on the central southern coast of Australia, facing the Southern Ocean. Its best-known stretch of coast is the Bunda Cliffs: a straight limestone cliff line running about 210 km, some 60–120 m high, with the edge of the Nullarbor Plain at the top and deep sea directly below.",
+      "The Great Australian Bight is a huge, open, curved gulf on the central southern coast of Australia, facing the Southern Ocean. A well-known stretch of its coast is the Bunda Cliffs: a straight limestone cliff line running about 210 km, some 60–120 m high, with the edge of the Nullarbor Plain at the top and deep sea directly below.",
     // formation sources: **「澳大利亚与南极分离」不是一个可以钉在某一年的事件**：裂解始于白垩纪晚期（约 85—99 Ma），
     //   深水通道完全打通（洋流意义上的分离）多篇地球物理文献定在约 **30—35 Ma**；
     //   科普材料常用「约 5000 万年前」甚至「约 6500 万年前」，**找不到可作定论的一手（GA / 澳南极局）口径**
@@ -2048,8 +2048,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kubuqi: {
+    // seeing sources: 1.41 万 km²（国家林草局，1 级）。核实 2026-09-12
     seeing:
-      "The Kubuqi Desert lies on the northern rim of the Ordos Plateau in Inner Mongolia, on the south bank of the great \"几\"-bend of the Yellow River, about 18,600 km² — China's seventh-largest desert and the closest desert to Beijing. \"Kubuqi\" means \"bowstring\" in Mongolian — the desert runs along the Yellow River like a string on a bow.",
+      "The Kubuqi Desert lies on the northern rim of the Ordos Plateau in Inner Mongolia, on the south bank of the great \"几\"-bend of the Yellow River, about 14,100 km² — China's seventh-largest desert and the closest desert to Beijing. \"Kubuqi\" means \"bowstring\" in Mongolian — the desert runs along the Yellow River like a string on a bow.",
     formation:
       "The Kubuqi's sand comes partly from Yellow River silt and partly from weathered material off the Ordos Plateau, blown by the prevailing north-west wind and piled on the south bank of the river. Historic overgrazing and cultivation stripped the vegetation and sped up the sand's spread. The dunes are mostly moving to semi-fixed.",
     observation:
@@ -2247,7 +2248,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The key ideas for Dongting Lake are the \"river–lake relationship\" and the double pressure of \"silting and reclamation\": it cuts the Yangtze's flood peak and stores water, but silt from the Yangtze and the four rivers keeps shoaling it, and historically people then diked the new flats into farmland (\"reclaiming the lake for fields\"), so the lake shrank and its storage capacity weakened. After the great flood of 1998, \"returning farmland to lake\" was promoted.",
     history:
-      "\"Dongting holds the finest water under heaven, Yueyang the finest tower\" — the Yueyang Tower, famous from Fan Zhongyan's essay, stands on the lake shore. The Dongting Lake plain is an important \"land of fish and rice.\" The lake's finless porpoises and wintering birds are a focus of recent conservation.",
+      "Dongting has traditionally been called the finest water under heaven, and Yueyang the finest tower — the Yueyang Tower, famous from Fan Zhongyan's essay, stands on the lake shore. The Dongting Lake plain is an important \"land of fish and rice.\" The lake's finless porpoises and wintering birds are a focus of recent conservation.",
   },
 
   "tiger-leaping-gorge": {
@@ -2257,8 +2258,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   未找到自然资源部／中科院／地方地质志一类 1 级来源。「世界最深峡谷之一」同样缺可比口径——**不同资料对「峡谷深度」
     //   的量法本身不统一**（量到最高峰顶 vs 量到谷肩）。正文已有「之一」限定、不是裸最高级，**本轮不改**，
     //   待找到一级来源再收紧或改写。2026-09-10 核，verdict: ok（一项 unknown）。
+    // seeing sources: 谷深 3790 m、全长 17 km（中科院地理所，1 级）。核实 2026-09-12
     seeing:
-      "Tiger Leaping Gorge, in north-western Yunnan, is an extremely deep, extremely narrow gorge the Jinsha River has cut between the Jade Dragon Snow Mountain (about 5,596 m) and the Haba Snow Mountain (about 5,396 m), roughly 16 km long. From the river to the Jade Dragon summit is about 3,900 m — one of the deepest gorges in the world. Legend says a tiger once leaped the river using a boulder in mid-channel, hence the name.",
+      "Tiger Leaping Gorge, in north-western Yunnan, is an extremely deep, extremely narrow gorge the Jinsha River has cut between the Jade Dragon Snow Mountain (about 5,596 m) and the Haba Snow Mountain (about 5,396 m), roughly 17 km long. From the river to the Jade Dragon summit is about 3,790 m — one of the deepest gorges in the world. Legend says a tiger once leaped the river using a boulder in mid-channel, hence the name.",
     formation:
       "The two snow mountains here are rising fast while the Jinsha River, which already existed, cuts down at almost the same rate, sawing a narrow slot between them. The gorge has an upper, middle and lower section; the river is only about 30 m wide at its narrowest, with violent rapids and whirlpools among the boulders.",
     observation:
@@ -2336,7 +2338,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Sierra Nevada is a range in eastern California about 640 km long, running north–south. Its western slope rises gently from the Central Valley; its eastern side drops as a steep fault scarp into the Owens Valley, a fall of up to about 3,000 m. The high point, Mount Whitney, is about 4,421 m — the highest peak in the 48 contiguous United States. Winter moisture off the Pacific falls here as heavy snow, making the range an important natural reservoir for California.",
     formation:
-      "The core of the Sierra Nevada is a large body of granite that cooled deep underground more than 100 million years ago (the Sierra Nevada batholith). A few million years ago, crustal extension tilted the whole block up along a fault on its eastern edge and westward, producing today's fault-block mountain, gentle west and steep east. Quaternary glaciers carved the upper range into spires, cirques and U-shaped valleys; Yosemite Valley is the best-known glacial valley.",
+      "The core of the Sierra Nevada is a large body of granite that cooled deep underground more than 100 million years ago (the Sierra Nevada batholith). A few million years ago, crustal extension tilted the whole block up along a fault on its eastern edge and westward, producing today's fault-block mountain, gentle west and steep east. Quaternary glaciers carved the upper range into spires, cirques and U-shaped valleys; Yosemite Valley is a well-known example.",
     observation:
       "From the air the Sierra Nevada is a straight north–south wall, its eastern fault scarp standing knife-cut above the flat Owens Valley with a very clear boundary; the western side is a long series of steadily descending forested slopes. Broad exposures of pale granite and alpine lakes lie along the crest, with giant sequoia and pine forest lower down. Lake Tahoe is a large deep-blue lake at the northern end of the crest.",
     distinguish:
@@ -2732,7 +2734,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   而是紧接着写明近几十年多数年份在到达河口前就已断流 —— 这是正确处理。
     //   history 段只记《科罗拉多河契约》与美墨条约等制度事实，未涉主权表态。
     seeing:
-      "The Colorado River rises in the Rocky Mountains and flows south-west through seven states for about 2,330 km to the Gulf of California. It cut the Grand Canyon, Glen Canyon and a series of other deep gorges, and is the most important water source in the arid South-West. The Hoover Dam, Glen Canyon Dam and others built in the 20th century divide it into a chain of reservoirs, and its water is so fully allocated that in most years of recent decades the Colorado runs dry before reaching its mouth.",
+      "The Colorado River rises in the Rocky Mountains and flows south-west through seven states for about 2,330 km to the Gulf of California. It cut the Grand Canyon, Glen Canyon and a series of other deep gorges, and is a principal water source for the arid South-West. The Hoover Dam, Glen Canyon Dam and others built in the 20th century divide it into a chain of reservoirs, and its water is so fully allocated that in most years of recent decades the Colorado runs dry before reaching its mouth.",
     formation:
       "The Colorado's landform work is known for down-cutting: as the Colorado Plateau rose over the past few million years, the river cut down to keep its gradient, sawing the flat layers into deep canyons, the Grand Canyon being the deepest stretch. The river originally carried a heavy sediment load (\"Colorado\" is Spanish for \"red\"); since the dams, much of that sediment is trapped in reservoirs, the water downstream runs clear, and the supply to the riverbed and delta has fallen.",
     observation:
@@ -2910,7 +2912,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "long-range-mountains": {
     seeing:
-      "The Long Range Mountains are a north–south highland on the western side of the island of Newfoundland, the north-easternmost stretch of the Appalachian Mountains in mainland North America. They are essentially a raised, then glacier-cut plateau, flat on top and steep-edged. Gros Morne National Park is here — best known for \"the Tablelands\", a bare orange-brown mountain whose surface rock should be tens of kilometres down in the mantle.",
+      "The Long Range Mountains are a north–south highland on the western side of the island of Newfoundland, the north-easternmost stretch of the Appalachian Mountains in mainland North America. They are essentially a raised, then glacier-cut plateau, flat on top and steep-edged. Gros Morne National Park is here — known especially for \"the Tablelands\", a bare orange-brown mountain whose surface rock should be tens of kilometres down in the mantle.",
     // formation sources: 岛湾（Bay of Islands）蛇绿岩形成于约 **485—489 Ma**、仰冲发生在约 **470 Ma**（中奥陶世 Taconic 造山）——
     //   正文的「约 5 亿年前」是科普取整，与实测差 2—6%，方向与数量级正确（3 级学术文献，2026-09-09 核）；
     //   若要更精确可写「约 4.7 亿年前」。
@@ -3457,7 +3459,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The Nōbi Plain sits on a tilting block that is sinking on the west and rising on the east — the west keeps dropping along a fault at the foot of the Yōrō Mountains, so all three rivers are pushed to the western side of the plain and crowded together, and the south-western corner keeps getting lower. The rivers' sediment fills this sinking area into a plain, but not as fast as it subsides, so the lowland is kept only by ever-raised levees.",
     observation:
-      "From the air the Nōbi Plain is a lowland covered in regular fields and towns, its most striking feature the three big rivers running in parallel on the west side, separated only by narrow belts of levee. In the south-west you can see ring levees (\"wajū\") enclosing villages and fields one by one, the ground inside clearly lower than the river. Nagoya's built-up area is on slightly higher ground in the east of the plain.",
+      "From the air the Nōbi Plain is a lowland covered in regular fields and towns, the eye drawn to the three big rivers running in parallel on the west side, separated only by narrow belts of levee. In the south-west you can see ring levees (\"wajū\") enclosing villages and fields one by one, the ground inside clearly lower than the river. Nagoya's built-up area is on slightly higher ground in the east of the plain.",
     distinguish:
       "The Nōbi Plain is like the low country of the Netherlands — a delta below sea level kept habitable by levees and drainage. Versus the Kanto Plain: the Kanto Plain is larger, has volcanic-ash terraces and little subsidence; the Nōbi Plain is small, almost all low alluvium, with the south-western half continuously subsiding and flood pressure more concentrated.",
     concept:
@@ -3563,7 +3565,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "Shikotsu-Tōya is an area in south-western Hokkaido centred on volcanoes and caldera lakes, named for its two large lakes — Lake Shikotsu and Lake Tōya. Active volcanoes are dense here: Mount Usu has erupted four times in the 20th century, and in 1943–1945 a brand-new volcano (Shōwa-shinzan) \"grew\" out of a wheat field; Mount Tarumae and Mount Eniwa are active too. The Tōya Caldera–Usu Volcano area is a UNESCO Global Geopark.",
     formation:
-      "Both Lake Shikotsu and Lake Tōya are caldera lakes: giant eruptions tens of thousands of years ago emptied underground magma chambers and collapsed the ground, and water filled the hollows; the islands in the middle (Nakajima in Lake Tōya, a volcano by Lake Shikotsu) are volcanoes that grew later inside the caldera. Mount Usu is a young active volcano on the southern rim of the Tōya caldera, known for eruptions that \"lift the ground\": the 1910, 1943, 1977 and 2000 eruptions all came with clear ground uplift, and Shōwa-shinzan formed when the 1943 eruption's rising magma raised a small patch of farmland as a block by about 170 m.",
+      "Both Lake Shikotsu and Lake Tōya are caldera lakes: giant eruptions tens of thousands of years ago emptied underground magma chambers and collapsed the ground, and water filled the hollows; the islands in the middle (Nakajima in Lake Tōya, a volcano by Lake Shikotsu) are volcanoes that grew later inside the caldera. Mount Usu is a young active volcano on the southern rim of the Tōya caldera, known for eruptions that \"lift the ground\": the 1910, 1943, 1977 and 2000 eruptions all came with clear ground uplift, and Shōwa-shinzan formed when the eruption that began in 1943 pushed a small patch of farmland up into a new hill, crowned by a lava-dome spine about 170 m tall.",
     observation:
       "From the air Shikotsu-Tōya is a volcanic landscape of interlocking forest and lakes: Lake Tōya is nearly circular with an island in the middle, and Mount Usu's grey-white eruption scars and the red-brown Shōwa-shinzan sit right against its southern shore; Lake Shikotsu has a more irregular outline, enclosed on three sides by Mount Eniwa, Mount Fuppushi and Mount Tarumae, and Mount Tarumae carries a conspicuous lava dome on its summit like an upturned bowl.",
     distinguish:
@@ -3778,7 +3780,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Southern Alps are a textbook case of tectonic uplift and erosion in balance: the mountains are not getting steadily higher — as fast as they rise, they are worn down, holding a roughly steady height over the long term. A common misconception is that Aoraki has a fixed height — a 1991 rock avalanche removed part of the summit, the official figure was lowered, and it was later re-surveyed.",
     history:
-      "For Ngāi Tahu, the main South Island iwi, Aoraki is the most important ancestral mountain and is deeply revered. Settlement legislation in 1998 gave the peak the dual name \"Aoraki / Mount Cook\" and returned Aoraki / Mount Cook to the iwi, who then gifted it back to the nation. The area is also the birthplace of New Zealand mountaineering; Edmund Hillary, who first climbed Everest in 1953, trained here.",
+      "For Ngāi Tahu, the main South Island iwi, Aoraki is a deeply revered ancestral mountain. Settlement legislation in 1998 gave the peak the dual name \"Aoraki / Mount Cook\" and returned Aoraki / Mount Cook to the iwi, who then gifted it back to the nation. The area is also the birthplace of New Zealand mountaineering; Edmund Hillary, who first climbed Everest in 1953, trained here.",
   },
 
   "kaikoura-ranges": {
@@ -3972,7 +3974,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: **Lake Tekapo 仍是 NZGB 唯一现行官方名**：2019 年 NZGB 曾拟把「Takapō」作为非官方收录名加入地名典，麦肯齐区议会 2021 年起本地宣传用双名，**但都不是 NZGB 的正式地名变更程序**（Takapo 在恩加伊塔胡法里只出现在「法定确认」条文，不在 Schedule 96 的地名变更表）。**正文保持单名是更保守也更准确的做法，判定不改。**
     //   ⚠️ **这是一个正在推进中的更名议题，下一轮回来复核 NZGB 是否已正式公告** —— 与塔拉纳基那条（2025 年真的落地了）是同一类，只是还没走完程序。岩粉散射致色为标准解释。2 级，2026-09-09 核。
     seeing:
-      "Lake Tekapo, in the Mackenzie Basin of the South Island interior, is a lake dammed by a glacier and its moraine. It is best known for its colour — an opaque milky blue-turquoise. The Church of the Good Shepherd on its southern shore is one of the most photographed buildings in New Zealand. The area is the Aoraki Mackenzie International Dark Sky Reserve, with very dark, clear night skies.",
+      "Lake Tekapo, in the Mackenzie Basin of the South Island interior, is a lake dammed by a glacier and its moraine. It is widely known for its colour — an opaque milky blue-turquoise. The Church of the Good Shepherd on its southern shore is one of the most photographed buildings in New Zealand. The area is the Aoraki Mackenzie International Dark Sky Reserve, with very dark, clear night skies.",
     formation:
       "The valley Lake Tekapo lies in was once occupied by a large glacier from the Southern Alps. The glacier ground the bedrock into extremely fine \"rock flour\"; after the ice retreated this rock flour was carried into the lake by meltwater, and it stays suspended for a long time without settling, scattering the blue-green light of sunlight back out, so the lake looks milky blue. The glacier also left a moraine ridge across the valley mouth, acting as a natural dam.",
     observation:
@@ -4163,7 +4165,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "punakaiki": {
     seeing:
-      "Punakaiki, on the West Coast of the South Island, is part of Paparoa National Park, and is best known for the \"Pancake Rocks\" — a stretch of sea cliff where the limestone has weathered into stacked thin layers, like piles of pancakes. At high tide with the right swell, several blowholes in the rock send seawater spouting high into the air.",
+      "Punakaiki, on the West Coast of the South Island, is part of Paparoa National Park, and is known for the \"Pancake Rocks\" — a stretch of sea cliff where the limestone has weathered into stacked thin layers, like piles of pancakes. At high tide with the right swell, several blowholes in the rock send seawater spouting high into the air.",
     // formation sources: 千层成因：**stylobedding 不是原始沉积层理**，而是石灰岩埋藏后经压溶作用沿一组大致平行的面重新分异出的次生构造；**为何按这样的间距周期性成带，学界至今仍有讨论**。新西兰地质学会 GeoTrips 专业资源（2 级）+ 3 级交叉，2026-09-09 核。
     //   https://www.geotrips.org.nz/trip.html?id=436
     //   **C7 的又一例，而且是「把成因说反了」这一种**：原文写「交替沉积」，实际是埋藏之后才分异出来的。正文现在保留了「至今没有定论」这句留白 —— 与英国阿勒峡「学界至今仍在讨论细节」是同一种处理。
@@ -4614,7 +4616,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air the Giant's Causeway is a honeycomb rock platform of countless polygonal column tops at the foot of the dark Antrim basalt cliffs, sloping gently into the sea. The cliff above shows several horizontal lava flows, with red palaeosols between them (weathered during the pauses between eruptions).",
     distinguish:
-      "The Giant's Causeway's columnar jointing is completely different in origin from Punakaiki's limestone \"pancakes\": the Causeway is lava cooling and contracting, splitting vertically; the pancake rocks are horizontally bedded sedimentary rock, differentially weathered. There are many similar columnar-basalt sites in the world (Iceland, the island of Staffa in Scotland), and the Giant's Causeway is the most famous because its columns are so regular and so completely exposed.",
+      "The Giant's Causeway's columnar jointing is completely different in origin from Punakaiki's limestone \"pancakes\": the Causeway is lava cooling and contracting, splitting vertically; the pancake rocks are horizontally bedded sedimentary rock, differentially weathered. There are many similar columnar-basalt sites in the world (Iceland, the island of Staffa in Scotland), and the Giant's Causeway is especially well known because its columns are so regular and so completely exposed.",
     concept:
       "The Giant's Causeway is a case study in columnar jointing: a thick lava flow (or any evenly cooling rock body), as it cools and contracts, develops a set of regular tension cracks perpendicular to the cooling surface, dividing the rock into polygonal columns; ideally hexagonal (the lowest-energy shape). To recognise columnar jointing, look at whether the columns are roughly perpendicular to the original cooling surface (a horizontal lava flow gives vertical columns). A common misconception is that the columns were chiselled by people or grew as crystals.",
     history:
@@ -4713,7 +4715,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 大峡谷断层：**走滑断层**（左行，约 100 公里位移），BGS Earthwise 口径（级别 1）—— 正文没有写成一般裂谷，正确。尼斯湖按体积为英国最大淡水体（苏格兰环境署，级别 1），与洛蒙德湖「按面积最大」是两个口径、并存不矛盾。喀里多尼亚运河 1822 年首航、托马斯·特尔福德设计（级别 1）。2026-09-09 核，本轮无需改动。
     //   https://earthwise.bgs.ac.uk/index.php/Faulting_and_seismicity,_Grampian_Highlands
     seeing:
-      "The Great Glen (Scottish Gaelic: Glen Mòr) is a dead-straight valley slicing diagonally across the Scottish Highlands, from Fort William in the south-west to Inverness in the north-east, dividing the Highlands in two. A run of deep, narrow lochs lies end to end along it, of which Loch Ness is the most famous — by volume it is the largest freshwater body in Britain. The Caledonian Canal links these lochs into a navigable waterway.",
+      "The Great Glen (Scottish Gaelic: Glen Mòr) is a dead-straight valley slicing diagonally across the Scottish Highlands, from Fort William in the south-west to Inverness in the north-east, dividing the Highlands in two. A run of deep, narrow lochs lies end to end along it, including the well-known Loch Ness — by volume it is the largest freshwater body in Britain. The Caledonian Canal links these lochs into a navigable waterway.",
     formation:
       "The Great Glen is so straight because it follows a major strike-slip fault — the Great Glen Fault. Around the end of the Caledonian orogeny, the rock on the two sides of the fault slid horizontally past each other by about 100 km (sinistral). The rock in the fault zone was badly shattered and is especially easy to erode, so rivers and later glaciers cut down along this weakness, and the glaciers gouged the valley floor very deep (the deepest part of Loch Ness's bed is well below sea level).",
     observation:
@@ -5076,7 +5078,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   原来写的 590 km² 是四十多年前的值。
     //   卡特拉破火山口直径约 10 km 属实（若按当前冰面 700 m 等高线量则接近 20 km，是另一个口径）。
     seeing:
-      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 520 km² as measured in 2019 and still shrinking. Its most important \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
+      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 520 km² as measured in 2019 and still shrinking. Its key \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
     formation:
       "Mýrdalsjökull sits on a volcano cut through by a caldera. The ice cap formed from the abundant snow on the south-coast highlands compacting and flowing outward; being at low latitude, near the sea and with heavy precipitation, it is one of Iceland's ice caps with the most vigorous accumulation and melt. The Katla volcano below gives the base of the ice cap geothermal heat, and an eruption would rapidly melt ice and trigger a glacial flood. Sólheimajökull has retreated hundreds of metres in recent decades, its snout forming a steadily growing proglacial lake.",
     observation:
@@ -5444,7 +5446,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Gotthard Massif differs from other stretches of the high Alps not in altitude or form but in its role as a \"water-parting hub\" — where a raindrop falls decides which sea it ends up in. Such a \"three-seas divide point\" is rare in Europe.",
     concept:
-      "The Gotthard Massif is a case study in watersheds and routes: the main crest of a mountain range is both the divide between river systems and a barrier to travel; and a low col (pass) on the divide becomes a natural route across the mountains, fought over by armies and used by trade routes through history. To judge a pass's importance, look at whether the valleys on both sides lead to prosperous regions and whether there is a lower alternative route. A common misconception is that the highest mountain is the most important geographic node.",
+      "The Gotthard Massif is a case study in watersheds and routes: the main crest of a mountain range is both the divide between river systems and a barrier to travel; and a low col (pass) on the divide becomes a natural route across the mountains, fought over by armies and used by trade routes through history. To judge a pass's importance, look at whether the valleys on both sides lead to prosperous regions and whether there is a lower alternative route. A common misconception is that the highest mountain must be the key geographic node.",
     history:
       "The Gotthard Pass was opened around the early 13th century when the Schöllenen Gorge was bridged, and thereafter became a key north-south route within the Holy Roman Empire, with a bearing on the early alliances of the Swiss cantons. From the 19th century road and rail tunnels were built here; the Gotthard Base Tunnel, opened in 2016, is 57 km long and one of the longest rail tunnels in the world.",
   },
@@ -5469,7 +5471,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 位移量约 35 公里、Verrucano 二叠纪（2.5–3 亿年）、2008 年列入（官方名 Swiss Tectonic Arena Sardona）：与 IUCN 提交 UNESCO 的官方技术评估文件数字精确吻合（级别 1）。其他学术田野报告对同一断层面给出 35–50 公里不等的估算，35 公里落在常见范围内且与官方评估一致。「格拉鲁斯双重褶皱」是 Escher 1866 年的历史性错误解释、1884 年由 Bertrand 纠正为逆冲构造 —— 这段认识史核实无误。2026-09-09 核，本轮无需改动。
     //   https://whc.unesco.org/en/list/1179/
     seeing:
-      "The Glarus Thrust (the mountains around it are called the \"Tectonic Arena Sardona\", a World Heritage Site), in eastern Switzerland around the canton of Glarus. Its most striking feature: on the mid-slopes of several mountains there is a near-horizontal, sharp line running right across the hillside — above the line, dark red old rock; below it, grey young rock. This line is the thrust fault itself — the surface along which a large slice of crust was pushed — cut open and displayed on the mountainside.",
+      "The Glarus Thrust (the mountains around it are called the \"Tectonic Arena Sardona\", a World Heritage Site), in eastern Switzerland around the canton of Glarus. Its defining feature: on the mid-slopes of several mountains there is a near-horizontal, sharp line running right across the hillside — above the line, dark red old rock; below it, grey young rock. This line is the thrust fault itself — the surface along which a large slice of crust was pushed — cut open and displayed on the mountainside.",
     formation:
       "During Alpine mountain-building, a large sheet of rock about 250–300 million years old (the Permian \"Verrucano\") was pushed about 35 km northward along a near-horizontal thrust fault, over rock only about 35 to 50 million years old (flysch). The fault surface itself was ground into a thin layer of ductilely deformed carbonate rock (the \"Lochseiten line\"). The result is the counter-intuitive \"old rock on top, young rock below\", with a line so straight it can be traced continuously across many mountains.",
     observation:
@@ -5997,7 +5999,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "Trollheimen's rock includes both hard plutonic rock and softer schist. After uplift, Quaternary glaciers carved the two very differently: the hard rock was cut into sharp horns and spires (Innerdalstårnet stands like a stone cathedral spire), while the softer schist was ground into rounded fells. The west is coastal and wet, its mountains sharper and greener; the east is drier, its mountains gentler.",
     observation:
-      "From the air Trollheimen is a mixed-texture mountain area — sharp, small-glaciered rock peaks on one side, rounded, well-vegetated fells on the other, with a few deep valleys between. The best known, Innerdalen, is a broad glacially carved U-shaped valley with a flat floor and pasture, ringed by sharp peaks, with the spire of Innerdalstårnet especially striking.",
+      "From the air Trollheimen is a mixed-texture mountain area — sharp, small-glaciered rock peaks on one side, rounded, well-vegetated fells on the other, with a few deep valleys between. The well-known Innerdalen is a broad glacially carved U-shaped valley with a flat floor and pasture, ringed by sharp peaks, with the spire of Innerdalstårnet especially striking.",
     distinguish:
       "Trollheimen, Jotunheimen and Rondane are all central-Norway mountain areas, but Trollheimen's distinctive feature is \"many mountain forms in one place\" — because it straddles a double transition of both climate and rock type. Jotunheimen is almost all gabbro spires, Rondane almost all quartzite domes, Trollheimen has both. To recognise this \"transition-zone mountain area\", look for large changes in landform type over a short distance.",
     concept:
@@ -6012,7 +6014,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 面积约 458 平方公里（2022 年），NVE 研究人员参与的同行评议论文（级别 1）。**「欧洲大陆最大的冰川」这个限定已隐含排除冰岛与斯瓦尔巴，本轮判定口径合理、不需再加字。** 全新世暖期（约 8000–5300 年前）完全消融、桦树扩张，约 5300 年前重新冰川化；正文没写重新冰川化的具体年份，是合理留白。2026-09-09 核，本轮无需改动。
     //   https://tc.copernicus.org/articles/19/5871/2025/
     seeing:
-      "Jostedalsbreen in western Norway, between the Sognefjord and the Nordfjord, is the largest glacier on mainland Europe, with an ice cap area of about 458 km² (2022). It is a north–south, gently domed plateau ice cap, sending dozens of outlet glaciers down into the surrounding valleys, the best known being Nigardsbreen and Briksdalsbreen; some outlets reach right down into forested low valleys, making a stark \"orchard at the foot of the glacier\" contrast.",
+      "Jostedalsbreen in western Norway, between the Sognefjord and the Nordfjord, is the largest glacier on mainland Europe, with an ice cap area of about 458 km² (2022). It is a north–south, gently domed plateau ice cap, sending dozens of outlet glaciers down into the surrounding valleys, among them the well-known Nigardsbreen and Briksdalsbreen; some outlets reach right down into forested low valleys, making a stark \"orchard at the foot of the glacier\" contrast.",
     formation:
       "Jostedalsbreen is not leftover ice from the last ice age. About 8,000 years ago the Scandinavian ice sheet was long gone and this plateau too was completely ice-free and grew birch. The climate then cooled and snowfall increased, and ice built up again on the plateau to form today's ice cap — a clear \"re-glaciation\" within the Holocene (the last roughly 10,000 years). The ice cap is 400–500 m thick in places and flows slowly outward under its own weight, the outlet glaciers planing valley floors into U-shapes and leaving polished rock and moraine.",
     observation:
@@ -6105,7 +6107,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Hardangerfjord in southwestern Norway is Norway's second-longest fjord, reaching about 179 km inland from the Atlantic to the foot of the Hardangervidda plateau. It is not a knife-slit like the Geirangerfjord but fairly open, branching into several arms (the Sørfjord, the Eidfjord and others). Its inner slopes have a mild, sunny climate and it is a well-known fruit-growing district — in spring the shores are banks of apple and cherry blossom.",
     formation:
-      "The Hardangerfjord is likewise glacial scour seaward along pre-existing valleys and fault lines, overdeepened. It is long and relatively wide because the ice pathway itself was wide. Its innermost end faces the kilometre-high scarp along the western edge of the Hardangervidda — ice spilling off the plateau gathered and cut down here, gnawing this deep bay into the plateau edge. The side valleys on either side likewise hang with waterfalls, the best known being Vøringsfossen.",
+      "The Hardangerfjord is likewise glacial scour seaward along pre-existing valleys and fault lines, overdeepened. It is long and relatively wide because the ice pathway itself was wide. Its innermost end faces the kilometre-high scarp along the western edge of the Hardangervidda — ice spilling off the plateau gathered and cut down here, gnawing this deep bay into the plateau edge. The side valleys on either side likewise hang with waterfalls, among them the well-known Vøringsfossen.",
     observation:
       "From the air the Hardangerfjord is a wide blue channel running inland to the northeast, its shores deep-green steep slopes tiered with orchards and small white farms. It branches a lot, and its head faces the white Hardangerjøkulen ice cap and the plateau scarp. Compared with the Geiranger fjord, the Hardanger shoreline is more \"friendly\", with more gentle habitable slopes.",
     distinguish:
@@ -6173,7 +6175,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 劳根河：源出莱斯耶附近的莱斯耶斯科格湖（海拔 611 米，位于多夫勒山/罗姆斯达尔一带，**不是尤通黑门**）；到姆约萨湖长 202 公里（SNL，2 级半官方；多来源交叉 200–204）。原文的「约特山地」与「约 230 公里」两处都错，2026-09-09 核。
     //   https://snl.no/Gudbrandsdalsl%C3%A5gen
     seeing:
-      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) rises at Lake Lesjaskogsvatnet near Lesja and runs about 200 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has been the most important north–south route in eastern Norway.",
+      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) rises at Lake Lesjaskogsvatnet near Lesja and runs about 200 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has long been a main north–south route in eastern Norway.",
     formation:
       "Gudbrandsdalen broadly follows a north–south structural low; Quaternary glaciers flowed along this low, widening and deepening it into a broad U-shaped valley. After the ice retreated, meltwater piled thick sand and gravel on the valley floor, and the river then shaped meanders and river terraces in this loose material — villages and fields are mostly built on the terraces, above the flood level. At the valley mouth around Lake Mjøsa the river builds a delta.",
     observation:
@@ -6574,13 +6576,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   **这个错在同一条目里出现了两次**（seeing 与 observation 各一次）——又一例「同一条口径问题在一个条目里几乎总是出现两次」。
     //   2018 年以「Chaîne des Puys – Limagne fault tectonic arena」列入 UNESCO、约 80 座火山、约 45 公里长、多姆山 1465 米：核实无误。
     seeing:
-      "The Chaîne des Puys in the Auvergne of the Massif Central, west of Clermont-Ferrand, is a north–south line of young volcanoes about 45 km long — roughly 80 cones, lava domes and explosion-blasted flat craters (maars) standing one after another among forest, lakes and pasture. The highest and best known is the Puy de Dôme (1,465 m), a steep lava dome. The most recent eruption, the twin cones of the Puy de la Vache and the Puy de Lassolas, was about 8,400 years ago. In 2018 the Chaîne des Puys and the Limagne fault to its west were inscribed as a World Heritage Site.",
+      "The Chaîne des Puys in the Auvergne of the Massif Central, west of Clermont-Ferrand, is a north–south line of young volcanoes about 45 km long — roughly 80 cones, lava domes and explosion-blasted flat craters (maars) standing one after another among forest, lakes and pasture. The highest, and widely known, is the Puy de Dôme (1,465 m), a steep lava dome. The most recent eruption, the twin cones of the Puy de la Vache and the Puy de Lassolas, was about 8,400 years ago. In 2018 the Chaîne des Puys and the Limagne fault to its west were inscribed as a World Heritage Site.",
     formation:
       "The Chaîne des Puys is a segment of the \"West European Rift\". After Alpine mountain-building about 35 million years ago, the crust of western Europe was stretched, dropping along a large fault (the Limagne fault) into the Limagne plain; the thinning crust gave deep magma a path to rise. Between about 90,000 and 7,000 years ago, magma broke the surface one point at a time along a north–south fissure, building this line of volcanoes. Because each volcano erupted only once or twice and then went extinct (\"monogenetic volcanoes\"), they keep the fresh shape they had just after eruption, barely eroded.",
     observation:
       "From the air the Chaîne des Puys is a remarkably regular line of conical hills on a forested upland along the western edge of the Limagne plain, often with a bowl-shaped crater on top. The Puy de Dôme is the largest dome among them, with a Roman temple site and a TV mast on top. Some craters hold circular lakes, and old valleys are often dammed by lava flows into lakes (Lac d'Aydat, Lac de la Cassière). Not far west, the \"Montagne de la Serre\" is a long thin flat-topped ridge — actually an ancient lava flow which, being more erosion-resistant than the soft rock around it, has \"turned over\" from valley floor to ridge crest (relief inversion).",
     distinguish:
-      "The Chaîne des Puys, the Cantal and the Monts Dore are all in the Massif Central, but the Chaîne des Puys is the youngest and best-preserved group — the Cantal and Monts Dore are large stratovolcanoes millions of years old, already eroded to residual peaks, while the Chaîne des Puys are small volcanoes within tens of thousands of years, still fresh in shape. They differ from the volcanoes of Italy and Iceland: those are on plate boundaries, the Chaîne des Puys is on a rift belt inside a continent. To judge the age of a group of volcanoes, look at how intact the cones are and whether the craters are still there.",
+      "The Chaîne des Puys, the Cantal and the Monts Dore are all in the Massif Central, but the Chaîne des Puys is the youngest and least-eroded group — the Cantal and Monts Dore are large stratovolcanoes millions of years old, already eroded to residual peaks, while the Chaîne des Puys are small volcanoes within tens of thousands of years, still fresh in shape. They differ from the volcanoes of Italy and Iceland: those are on plate boundaries, the Chaîne des Puys is on a rift belt inside a continent. To judge the age of a group of volcanoes, look at how intact the cones are and whether the craters are still there.",
     concept:
       "The Chaîne des Puys–Limagne fault is a textbook for understanding stages of \"continental rifting\": the crust is stretched → a graben forms along a large fault (the Limagne plain) → the crust thins and the mantle below rises → deep magma erupts along fissures (the Chaîne des Puys) → (if it continues) it finally splits into a new ocean. Here you can see a fault scarp, a graben plain, a volcanic line and relief inversion all within tens of kilometres, which is why it was chosen as a World Heritage Site. To tell whether a volcanic area is rift-related, look for an associated large fault and graben.",
     history:
@@ -6994,7 +6996,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "Pollino in the far southern Apennines, on the border of Basilicata and Calabria, is a high mountain area of limestone and dolomite, its highest peak Serra Dolcedorme at 2,267 m. The Pollino National Park around it, about 1,925 km², is the largest national park in Italy. The emblem of this range is a relict pine called the Bosnian pine (pino loricato) — its bark like scale armour, able to live for hundreds or a thousand years on the poorest, most wind-exposed rock; a Bosnian pine in the park scientifically dated to about 1,230 years old is the oldest known tree in Europe.",
     formation:
-      "Pollino's rock, like elsewhere in the Apennines, is shallow-sea carbonate rock folded and thrust up. The karst on the limestone is typical: the surface is dry, with many sinkholes and solution hollows, and rivers concentrate into a few trunk channels, cutting deep gorges (the Raganello Gorges is the best known). Being far south and also high, this area had small glaciers in the last ice age, leaving cirques and arêtes on the summits.",
+      "Pollino's rock, like elsewhere in the Apennines, is shallow-sea carbonate rock folded and thrust up. The karst on the limestone is typical: the surface is dry, with many sinkholes and solution hollows, and rivers concentrate into a few trunk channels, cutting deep gorges (the Raganello Gorges among them). Being far south and also high, this area had small glaciers in the last ice age, leaving cirques and arêtes on the summits.",
     observation:
       "From the air Pollino is a rounded, grey-white limestone high mountain area north of the \"toe\" of Italy, forest (mainly beech) covering it to near the summits, the highest parts bare white limestone and high meadow. Along the ridge crest and in the rock cracks you can see lone, twisted Bosnian pines growing individually. The deeply cut Raganello Gorges slash across the southern side like a green fissure.",
     distinguish:
@@ -7020,7 +7022,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Gennargentu is another sample for understanding \"rock type sets the style of a mountain area\": given the same uplift and river erosion, granite gives rounded domes plus boulders, limestone gives cliffs plus caves, and schist / slate gives an evenly rounded, densely gullied middling mountain — because schist breaks easily along its foliation and does not dissolve in water. To judge a mountain area's rock type, you can start from its overall \"texture\": rounded and continuous, with no obvious cliffs or caves, is often schist and slate.",
     history:
-      "The Barbagia region around Gennargentu, high and far, has for over two thousand years been the most \"self-contained\" part of Sardinia — the Romans called its inhabitants \"barbaria\" — and the local Sardinian dialect, the polyphonic singing (\"cantu a tenore\", intangible heritage) and the shepherding customs are best preserved here. Historically it lived by sheep and seasonal transhumance, and mountain villages (such as Orgosolo, famous for its murals) still keep the traditions.",
+      "The Barbagia region around Gennargentu, high and far, has for over two thousand years been the most \"self-contained\" part of Sardinia — the Romans called its inhabitants \"barbaria\" — and the local Sardinian dialect, the polyphonic singing (\"cantu a tenore\", intangible heritage) and the shepherding customs are well preserved here. Historically it lived by sheep and seasonal transhumance, and mountain villages (such as Orgosolo, famous for its murals) still keep the traditions.",
   },
 
   "lake-garda": {
@@ -7101,7 +7103,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air Etna is a huge dark shield-stratovolcano in eastern Sicily, rising gently from the sea to above the snowline, its summit several active craters smoking. On the slopes you can clearly see lava flows of the last decades and centuries in varying darkness (the newer the blacker), and strings of parasitic cones. The Valle del Bove on the east flank is a distinct notch. At its foot are cities such as Catania and large citrus and vine groves.",
     distinguish:
-      "Etna and Vesuvius are Italy's two most famous active volcanoes, but one is \"busy and mild\" and one \"lazy and violent\": Etna's magma is runny, it is active on a small scale almost daily, lava-dominated, and its threat is lava slowly overrunning villages; Vesuvius's magma is viscous, it is usually still, and when it moves it is a big explosion, its threat the instant pyroclastic flow. To tell which kind a volcano is, look at its magma composition, its eruption frequency and the distribution of deaths in its history.",
+      "Etna and Vesuvius are two well-known Italian active volcanoes, but one is \"busy and mild\" and one \"lazy and violent\": Etna's magma is runny, it is active on a small scale almost daily, lava-dominated, and its threat is lava slowly overrunning villages; Vesuvius's magma is viscous, it is usually still, and when it moves it is a big explosion, its threat the instant pyroclastic flow. To tell which kind a volcano is, look at its magma composition, its eruption frequency and the distribution of deaths in its history.",
     concept:
       "Etna is a sample for understanding \"volcano form depends on magma viscosity\": runny, mobile magma (basic) spreads out and does not pile high, and with frequent effusion forms a large, gentle shield (Hawaii, Etna); viscous magma (acidic) piles high and erupts violently, forming a steep, symmetrical stratocone (Fuji, early Vesuvius). Etna has features of both shield and stratovolcano. To judge a volcano's magma type, look at its slope and its eruption style.",
     history:
@@ -7180,7 +7182,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   提比略别墅据苏埃托尼乌斯记载为 12 座（正文「十几座」成立）；蓝洞 1826 年由 Kopisch 与 Fries「重新发现」。
     //   均 3 级复核。2026-09-10 核，verdict: ok。
     seeing:
-      "Capri, at the mouth of the Bay of Naples off the western end of the Sorrento Peninsula, is a small limestone island of only about 10 km². It is ringed almost entirely by near-vertical sea cliffs, with three sea stacks called the \"Faraglioni\" standing in the sea. Its most famous feature is the \"Blue Grotto\" — a sea cave you can only enter by small boat with your head down, its opening mostly underwater, so that daylight refracts in through the underwater opening and lights the whole cave a glowing deep blue.",
+      "Capri, at the mouth of the Bay of Naples off the western end of the Sorrento Peninsula, is a small limestone island of only about 10 km². It is ringed almost entirely by near-vertical sea cliffs, with three sea stacks called the \"Faraglioni\" standing in the sea. A famous feature is the \"Blue Grotto\" — a sea cave you can only enter by small boat with your head down, its opening mostly underwater, so that daylight refracts in through the underwater opening and lights the whole cave a glowing deep blue.",
     formation:
       "Capri's limestone is the same as the Sorrento Peninsula's and the Amalfi Coast's — Capri and the peninsula were once one limestone spur, later separated as sea level rose and the lower ground between was eroded. The vertical sea cliffs all around are the result of waves hollowing and collapse retreating along the vertical joints of the limestone; the Faraglioni sea stacks are remnant blocks that broke away when the cliff corner was pierced (one still has a sea arch). The Blue Grotto is a mostly drowned sea cave.",
     observation:
@@ -7237,7 +7239,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Carso Plateau at Italy's far northeast, north of the city of Trieste, is a limestone tableland two or three hundred metres high, extending east into Slovenia. This small plateau carries great weight in the history of geology — \"karst\" (the general term in many languages for limestone-dissolution landforms) comes from a place name here (Italian Carso / Slovenian Kras). The plateau surface has almost no rivers, is covered in funnel-shaped solution hollows and sinkholes, and below is a network of caves and underground rivers.",
     formation:
-      "The Carso's limestone is a Cretaceous shallow-sea deposit, uplifted during Alpine–Dinaric mountain-building. Limestone can be dissolved by rain carrying carbon dioxide, and over millions of years the surface water almost all drains through fractures and sinkholes underground, dissolving huge shafts, chambers and underground-river systems in the rock, while the surface is left with only circular solution hollows (Italian dolina), rock pinnacles and dry valleys. The Timavo River is the most dramatic example — it \"dives\" underground on the Slovenian side, flows underground for tens of kilometres, and emerges as a whole river near the sea on the Italian side.",
+      "The Carso's limestone is a Cretaceous shallow-sea deposit, uplifted during Alpine–Dinaric mountain-building. Limestone can be dissolved by rain carrying carbon dioxide, and over millions of years the surface water almost all drains through fractures and sinkholes underground, dissolving huge shafts, chambers and underground-river systems in the rock, while the surface is left with only circular solution hollows (Italian dolina), rock pinnacles and dry valleys. The Timavo River is a dramatic example — it \"dives\" underground on the Slovenian side, flows underground for tens of kilometres, and emerges as a whole river near the sea on the Italian side.",
     observation:
       "From the air the Carso Plateau is a grey-white, pockmarked low tableland behind Trieste — its surface covered in circular or dish-shaped pits (solution hollows), the floor of each hollow often a small patch of cultivated land (where soil can just be held), the ground between the hollows bare limestone and low scrub. There are no formed rivers on the plateau, only a few dry valleys that carry water only in storms. The plateau drops abruptly toward Trieste and the Adriatic.",
     distinguish:
@@ -7255,7 +7257,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Alta Murgia in Apulia in southeastern Italy is the higher part of the Murge limestone plateau, a few hundred metres in elevation. The surface is an endless expanse of loose rock and short grass — a semi-arid landscape called \"rocky steppe\", almost treeless, very windy. The plateau is cut by several deep, straight dry canyons (Italian gravina), dry most of the time and carrying water only briefly in storms. People have carved dwellings into the canyon walls since the Palaeolithic.",
     formation:
-      "The Alta Murgia's limestone is a Cretaceous shallow-sea carbonate deposit, tectonically quite stable (part of the \"Adriatic foreland\"), only slightly uplifted and tilted, without strong folding. Karst action on the limestone drains almost all surface water underground, so the surface is short of water and soil. A \"gravina\" dry canyon is a feature specific to karst areas: local collapse of the underground drainage, plus concentrated surface runoff in storms, cuts the plateau along a line into a deep, narrow canyon with vertical walls. The Gravina di Matera is the most famous.",
+      "The Alta Murgia's limestone is a Cretaceous shallow-sea carbonate deposit, tectonically quite stable (part of the \"Adriatic foreland\"), only slightly uplifted and tilted, without strong folding. Karst action on the limestone drains almost all surface water underground, so the surface is short of water and soil. A \"gravina\" dry canyon is a feature specific to karst areas: local collapse of the underground drainage, plus concentrated surface runoff in storms, cuts the plateau along a line into a deep, narrow canyon with vertical walls. The Gravina di Matera is a well-known example.",
     observation:
       "From the air the Alta Murgia is a large pale, near-featureless and near-treeless tableland in inland Apulia, its surface a mottled texture of loose rock and short grass, dotted with stone sheepfolds (jazzi) and wind turbines. The plateau is cut by several dark fissures (gravine), the fissures green with trees and holding a string of towns built along the canyon (Gravina, Matera and others). Between the plateau and the lowland to the southeast is a distinct escarpment.",
     distinguish:
@@ -7347,7 +7349,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The massif is built of over a thousand metres of Carboniferous (about 300-million-year-old) limestone laid down on a shallow marine platform, later uplifted above 2,600 m by the compression of the Alpine orogeny. Glacial and karst processes then worked it together: Ice Age glaciers carved sharp horns and glacial troughs, and after the ice retreated rainwater dissolved the limestone into widespread caves, sinkholes and underground streams.",
     observation:
-      "From the air the Picos de Europa is a cluster of grey-white, sharp-edged peaks — almost bare rock packed among deep-green forested and pastured gorges — a stark contrast with the gentler Cantabrian range around it. Naranjo de Bulnes is the most striking feature, an isolated near-vertical limestone tower recognisable from several kilometres away.",
+      "From the air the Picos de Europa is a cluster of grey-white, sharp-edged peaks — almost bare rock packed among deep-green forested and pastured gorges — a stark contrast with the gentler Cantabrian range around it. Naranjo de Bulnes stands out, an isolated near-vertical limestone tower recognisable from several kilometres away.",
     distinguish:
       "The Picos de Europa and the Sierra Nevada are both products of the Alpine orogenic belt, but their rock is entirely different — the Picos are Carboniferous limestone dominated by karst and glacial landforms, while the Sierra Nevada is Cenozoic metamorphic rock and limestone with weaker glacial imprint. Compared with the Pyrenees on the France–Spain border, the Picos cover far less ground but rise even more abruptly and densely.",
     concept:
@@ -7395,7 +7397,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "Its base is Paleozoic metamorphic rock — slate, schist and the like — uplifted along a series of faults during the Alpine orogeny into a fault-block range: the north side, facing the Meseta, is relatively gentle and grades into the plateau surface, while the south side, facing the Guadalquivir basin, is a steep fault scarp dropping hundreds of metres.",
     observation:
-      "From the air the Sierra Morena is a dark band of forest between the pale-yellow Meseta tableland and the deep-green farmland of the Guadalquivir Valley, much of it covered by open oak savanna (dehesa in Spanish) — the traditional landscape for free-range Iberian pigs. The Despeñaperros Pass is the most important crossing through the range, with both the highway and the railway threading its deep gorge.",
+      "From the air the Sierra Morena is a dark band of forest between the pale-yellow Meseta tableland and the deep-green farmland of the Guadalquivir Valley, much of it covered by open oak savanna (dehesa in Spanish) — the traditional landscape for free-range Iberian pigs. The Despeñaperros Pass is the main crossing through the range, with both the highway and the railway threading its deep gorge.",
     distinguish:
       "The Sierra Morena and the Sistema Central are both fault-block ranges at the edge of the Meseta, but the Sierra Morena is older and mostly metamorphic rock, while the Sistema Central is mostly granite; the Sierra Morena forms the plateau's southern edge, while the Sistema Central crosses through its middle. It also differs from the Baetic System further south (home to the Sierra Nevada) — the Baetic System is much younger and still part of an active Alpine belt.",
     concept:
@@ -7441,7 +7443,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "La Garrotxa Volcanic Zone, inland in north-eastern Catalonia, is a rare patch of volcanic landscape on the Iberian Peninsula — more than 40 low cinder cones packed into under 20 km², covered in dense oak forest and looking more like rolling hills than volcanoes.",
     formation:
-      "The cones formed in the Quaternary as basaltic magma rose along fractures in the crust and erupted — not very explosively, mostly ejecting cinders and thin lava flows, so the cones are low but well preserved. The youngest, the Croscat volcano, erupted about 11,500 years ago, the youngest and best-preserved volcanic cone known on the Iberian Peninsula, its crater still clearly visible.",
+      "The cones formed in the Quaternary as basaltic magma rose along fractures in the crust and erupted — not very explosively, mostly ejecting cinders and thin lava flows, so the cones are low but well preserved. The youngest, the Croscat volcano, erupted about 11,500 years ago, the youngest volcanic cone known on the Iberian Peninsula, its crater still clearly visible.",
     observation:
       "From the air La Garrotxa is a landscape of round craters and low cones scattered among farmland and oak forest; the Croscat cone is a textbook symmetrical cone with a bowl-shaped crater clearly visible at its summit, and the surrounding lava flow surface still keeps its original rough, uneven texture.",
     distinguish:
@@ -7550,7 +7552,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "bardenas-reales": {
     seeing:
-      "Bardenas Reales, in Navarre in northern Spain, is a desolate badland tableland at the edge of the Ebro Basin, known for its isolated flat-topped mesas and spire-like pinnacles, the most famous being Castildetierra, a cone-shaped clay spire about 30 m tall.",
+      "Bardenas Reales, in Navarre in northern Spain, is a desolate badland tableland at the edge of the Ebro Basin, known for its isolated flat-topped mesas and spire-like pinnacles, among them Castildetierra, a cone-shaped clay spire about 30 m tall.",
     formation:
       "The region is built from alternating Cenozoic beds of clay, sandstone, gypsum and limestone — the clay is soft and quickly cut by heavy rain, while the harder limestone and gypsum layers between resist erosion, acting as \"protective caps\". As the soft clay around them is gradually washed away, only the parts still covered by the hard layer survive, forming isolated tablelands or spires.",
     observation:
@@ -7583,8 +7585,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "caldera-de-taburiente": {
     seeing:
       "The Caldera de Taburiente, on the island of La Palma in the Canary Islands, is a huge hollow about 8 km across and more than 2,000 m deep, its walls as steep as a bowl — one of the largest erosion calderas in the world.",
+    // formation sources: 坎布雷努埃瓦崩塌 519–529 ka（Groom et al. 2023, JVGR，1 级）。核实 2026-09-12
     formation:
-      "Several hundred thousand years ago this was the site of a huge shield volcano (built up slowly from many lava flows). One flank of that volcano gave way in a massive landslide, carrying away a large volume of the volcano's interior and leaving a huge hollow; over the following hundreds of thousands of years running water kept eroding and deepening that hollow, hollowing it out further into today's scale. It is therefore not a \"caldera\" blown out by a single eruption, but an \"erosion caldera\" shaped jointly by a landslide and long-term water erosion.",
+      "This was once the site of a huge shield volcano (built up slowly from many lava flows). About 520,000 years ago one flank of that volcano gave way in a massive landslide (the Cumbre Nueva collapse), carrying away a large volume of the volcano's interior and leaving a huge hollow; over the following hundreds of thousands of years running water kept eroding and deepening that hollow, hollowing it out further into today's scale. It is therefore not a \"caldera\" blown out by a single eruption, but an \"erosion caldera\" shaped jointly by a landslide and long-term water erosion.",
     observation:
       "From the air the Caldera de Taburiente is a huge circular hollow in the north of the island, its walls near-vertical volcanic rock on which layers of lava and pyroclastic material from different periods can be made out; dense Canary pine forest grows on the floor of the hollow, in sharp contrast with the bare rock walls around it.",
     // distinguish/formation sources: 本条不再点名 Las Cañadas 作反例（其成因学界未定，见 teide 条目同批改动）；塔布连特为侵蚀火山口这一判断符合 Carracedo & Troll 2016 / Groom et al. 2023。核实 2026-09-10
@@ -7599,7 +7602,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "rias-baixas": {
     // 全六段 sources: 维戈/蓬特维德拉/阿罗萨/穆罗斯-诺亚四湾名称准确；ría（未冰川化河谷海侵）与 fjord（冰川 U 形谷海侵）成因区分符合地貌学标准定义；加利西亚贻贝约占西班牙产量八成。注：ría 一词更精确的词源是加利西亚语（源自 río），西班牙语沿用。核实 2026-09-10，未改动
     seeing:
-      "The Rías Baixas, on the south-west coast of Galicia in north-west Spain, are made up of four deep, funnel-shaped inlets cutting far inland — the Ría de Vigo, Ría de Pontevedra, Ría de Arousa and Ría de Muros e Noia — giving the coastline an extremely jagged outline; the region is Spain's most important mussel-farming area.",
+      "The Rías Baixas, on the south-west coast of Galicia in north-west Spain, are made up of four deep, funnel-shaped inlets cutting far inland — the Ría de Vigo, Ría de Pontevedra, Ría de Arousa and Ría de Muros e Noia — giving the coastline an extremely jagged outline; the region is Spain's main mussel-farming area.",
     formation:
       "These inlets were once ordinary land river valleys. Sea level during the last Ice Age was much lower than today, and rivers cut deep valleys into the land; when the ice retreated and sea level rose, seawater flooded back into the lower reaches of these valleys, producing today's funnel-shaped inlets, wide at the mouth and narrowing inland. This kind of coast — formed by the sea drowning an unglaciated river valley — is called a \"ría\" in Spanish.",
     observation:
@@ -7669,7 +7672,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Duero on the Meseta is a broad, gentle meander through farmland on both banks; once it enters the Arribes del Duero canyon the channel is suddenly squeezed between steep rock walls, the river a narrow blue-green ribbon deep in the gorge — a stark contrast with the open scenery upstream.",
     // distinguish sources: 埃布罗河源出坎塔布连山脉 Fontibre（约 880 m），与伊比利亚山系的关系是接纳其东侧支流；与本库 ebro-river/formation 段一致（该段原本就写对）。核实 2026-09-10
     distinguish:
-      "The Duero rises in the Sistema Ibérico, while the Ebro itself rises in the Cantabrian Mountains but gathers many tributaries — the Jalón among them — draining the Sistema Ibérico's eastern flank. They are the two most important rivers on the Iberian Peninsula: the Duero flows west to the Atlantic (at Porto, Portugal), while the Ebro flows east to the Mediterranean (at Tarragona) — their watersheds are separated by the Sistema Ibérico itself, direct evidence for locating that range's watershed line.",
+      "The Duero rises in the Sistema Ibérico, while the Ebro itself rises in the Cantabrian Mountains but gathers many tributaries — the Jalón among them — draining the Sistema Ibérico's eastern flank. Both are major rivers of the Iberian Peninsula: the Duero flows west to the Atlantic (at Porto, Portugal), while the Ebro flows east to the Mediterranean (at Tarragona) — their watersheds are separated by the Sistema Ibérico itself, direct evidence for locating that range's watershed line.",
     concept:
       "The Duero's canyon stretch shows how an abrupt change in rock hardness reshapes a river: while crossing a plateau of soft sediment the channel is broad and gentle, but once it cuts into hard crystalline basement the balance between downcutting and lateral erosion shifts, and the channel narrows and deepens — a direct sign of a change in the geology beneath a river.",
     history:
@@ -7694,7 +7697,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "ordesa-canyon": {
     seeing:
-      "The Ordesa Canyon, on the Spanish side of the Pyrenees, is a deep valley cut into the north face of Monte Perdido, its walls near-vertical and its floor thickly forested; at the head of the valley a waterfall called the Cola de Caballo (\"Horsetail\") drops straight down a cliff — the most spectacular stretch of Pyrenean landscape on Spanish soil.",
+      "The Ordesa Canyon, on the Spanish side of the Pyrenees, is a deep valley cut into the north face of Monte Perdido, its walls near-vertical and its floor thickly forested; at the head of the valley a waterfall called the Cola de Caballo (\"Horsetail\") drops straight down a cliff — a showpiece of Pyrenean landscape on Spanish soil.",
     // formation sources: Añisclo 深逾 1000m 属实；「比奥德萨更深」无来源支持，各来源作「至少与奥德萨相当」。核实 2026-09-10
     formation:
       "Monte Perdido is Europe's highest limestone massif, at 3,355 m. The canyon is the product of repeated Ice Age glacial carving followed by long-term water dissolution — glaciers first cut a broad U-shaped valley floor, and afterward running water continued cutting down along fractures in the limestone, sharpening the walls further. The neighbouring Añisclo Canyon is similarly over 1,000 m deep, comparable to Ordesa, and both belong to the same limestone karst massif.",
@@ -7747,7 +7750,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "This tableland is built of Mesozoic limestone, long weathered and eroded flat, with almost no noticeable hills. Beneath it lies a rich aquifer, and historically it was this groundwater that allowed irrigated farming — vineyards in particular — to develop here despite a dry continental climate.",
     observation:
-      "From the air La Mancha is an endless, pale yellow-brown tableland, orderly vineyards and wheat fields filling the horizon with almost no rivers or noticeable relief visible; on the occasional low rise at the tableland's edge, rows of white windmill silhouettes can be seen — the plain's most iconic man-made landmark.",
+      "From the air La Mancha is an endless, pale yellow-brown tableland, orderly vineyards and wheat fields filling the horizon with almost no rivers or noticeable relief visible; on the occasional low rise at the tableland's edge, rows of white windmill silhouettes can be seen — a signature man-made landmark of the plain.",
     distinguish:
       "La Mancha and the Meseta Central belong to the same broad plateau system — La Mancha is the core of the Meseta's southern sub-plateau, even flatter and less varied than the Meseta as a whole; it and the Guadalquivir Valley are both lowlands around Andalusia, but La Mancha sits higher and is drier, with a continental climate rather than the Guadalquivir Valley's near-coastal one.",
     concept:
@@ -7817,7 +7820,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Erzgebirge is a textbook case of how mineral resources can shape an entire region's cultural landscape: from the 12th to the 20th century, mining silver, tin and cobalt left not just the mine shafts themselves but supporting water-management systems, purpose-built mining towns, and craft traditions (such as carved wooden toys) that survive today — mining history and natural geology are tightly interwoven here.",
     history:
-      "Between 1460 and 1560 the Erzgebirge was for a time Europe's most important silver-mining region. In 2019 the Erzgebirge/Krušnohoří Mining Region was jointly inscribed as a UNESCO World Heritage Site by Germany and the Czech Republic, honouring nearly 800 years of continuous advancement in mining technology.",
+      "Between 1460 and 1560 the Erzgebirge was for a time one of Europe's leading silver-mining regions. In 2019 the Erzgebirge/Krušnohoří Mining Region was jointly inscribed as a UNESCO World Heritage Site by Germany and the Czech Republic, honouring nearly 800 years of continuous advancement in mining technology.",
   },
 
   "bavarian-forest": {
@@ -7935,7 +7938,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "saxon-switzerland": {
     // 全六段 sources: 巴斯泰观景台海拔 305.4 m、高出易北河 194 m；砂岩为白垩纪约 100 Ma 浅海沉积；1824 年建首座木桥、1851 年改建石桥。跨境的砂岩区表述保持中性、未描述边界线。核实 2026-09-10，未改动
     seeing:
-      "Saxon Switzerland, along the Elbe in eastern Germany, is a landscape of table mountains and deep gorges cut into sandstone, named after 18th-century Swiss painters who felt the scenery reminded them of their Alpine homeland. The Bastei is the most famous group of sandstone towers, rising about 194 m above the Elbe.",
+      "Saxon Switzerland, along the Elbe in eastern Germany, is a landscape of table mountains and deep gorges cut into sandstone, named after 18th-century Swiss painters who felt the scenery reminded them of their Alpine homeland. The Bastei is a famous group of sandstone towers, rising about 194 m above the Elbe.",
     formation:
       "This area was a shallow sea floor about 100 million years ago, where several hundred metres of sandstone accumulated before being uplifted above water. The Elbe and its tributaries have long cut down along a crisscrossing network of joints in the rock, dividing what was once a continuous sandstone tableland into isolated table mountains, deep gorges and rock towers — this deeply dissected sandstone landform is rare in Central Europe.",
     observation:
@@ -7951,11 +7954,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "teutoburg-forest": {
     // 全六段 sources: 奥斯宁砂岩约 120 Ma（早白垩世）浅海沉积、约 70 Ma 经构造掀斜成单面山脊；公元 9 年瓦鲁斯战役为可核实的历史事件（判据：已结束、无持续对立的定位性史实 → 留），正文明写「具体交战地点学界仍有讨论」，与卡尔克里泽是否为战场的现存争议相符，未擅自定论；正文未涉赫尔曼纪念碑的民族主义诠释。核实 2026-09-10，未改动
     seeing:
-      "The Teutoburg Forest, in north-western Germany, is a band of parallel cuesta ridges; its most famous landmark is the Externsteine, a group of tall rock pillars left standing by the weathering of sandstone.",
+      "The Teutoburg Forest, in north-western Germany, is a band of parallel cuesta ridges; a famous landmark is the Externsteine, a group of tall rock pillars left standing by the weathering of sandstone.",
     formation:
       "This area was Cretaceous shallow-sea floor about 120 million years ago, where a silica-cemented, erosion-resistant sandstone accumulated. Mountain building tilted this rock layer, and the hardest part of the tilted bed stood proud of the surface as a series of cuesta ridges; particularly hard bodies within it weathered out into isolated pillars like the Externsteine.",
     observation:
-      "From the air the Teutoburg Forest is a clearly visible band of forested ridges across the north German plain, made up of several roughly parallel ranges in sharp contrast with the flat farmland around them; the Externsteine's rock pillars rise abruptly from the forest, the most striking landmark in this range.",
+      "From the air the Teutoburg Forest is a clearly visible band of forested ridges across the north German plain, made up of several roughly parallel ranges in sharp contrast with the flat farmland around them; the Externsteine's rock pillars rise abruptly from the forest, a striking landmark in this range.",
     distinguish:
       "The Teutoburg Forest and Saxon Switzerland are both sandstone landforms in Germany, but the Teutoburg Forest is a cuesta ridge formed by mountain-building tilting, while Saxon Switzerland is a horizontal sandstone tableland cut apart by joints — the two differ entirely in origin and appearance.",
     concept:
@@ -8196,7 +8199,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Pindus range runs the length of western mainland Greece, from the Albanian border south-east to the Gulf of Corinth over something between 160 and 200 km depending on where sources put the range's limits, earning the name \"the spine of Greece\". From the air it is a continuous, undulating limestone ridge, wet and forested to the west, drier to the east.",
     formation:
-      "The range is built of Mesozoic to Cenozoic marine limestone raised by mountain-building and intensely folded; karst is widespread, with deep gorges, caves and underground rivers — the Vikos Gorge is the range's best-known example.",
+      "The range is built of Mesozoic to Cenozoic marine limestone raised by mountain-building and intensely folded; karst is widespread, with deep gorges, caves and underground rivers — the Vikos Gorge is a well-known example.",
     observation:
       "From the air, identify the Pindus by its unbroken, roughly north-west to south-east ridge line, unlike the isolated bulks of Olympus or Taygetus; the western slope carries noticeably denser vegetation, a direct expression of Epirus's wetter climate.",
     distinguish:
@@ -8328,7 +8331,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "thessaly-plain": {
     seeing:
-      "The Thessalian Plain is mainland Greece's largest and most important agricultural plain, built up by the Pineios River and its tributaries — known as \"the breadbasket of Greece\".",
+      "The Thessalian Plain is mainland Greece's largest agricultural plain, built up by the Pineios River and its tributaries — known as \"the breadbasket of Greece\".",
     formation:
       "The plain has accumulated from Quaternary alluvium carried by the Pineios and its tributaries, flat and open with deep, fertile soil; it is ringed by the Pindus range, Mount Othrys, Mount Pelion, Mount Ossa and Mount Olympus.",
     observation:
@@ -8342,7 +8345,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   「希腊本土面积最大的农业平原」这一条核实属实（约 5000 km² 级）。
     //   history 板块经零争议红线复核合规（只写地质史与广泛记载的古典时期史实）。
     concept:
-      "The Thessalian Plain is Greece's most important grain-producing region, with a large share of its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
+      "The Thessalian Plain is one of Greece's main grain-producing regions, with a large share of its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
     history:
       "The Thessalian Plain has been an important agricultural region since ancient Greek times, and the area was historically noted for raising fine horses.",
   },
@@ -8525,7 +8528,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   milos: {
     // seeing sources: ✅ 零争议红线：《米洛斯的维纳斯》1820 年发现、现藏卢浮宫——**只作发现与收藏的事实陈述，未涉文物归还争议**，通过。2026-09-10 核。
     seeing:
-      "Milos is a volcanic island on the South Aegean Volcanic Arc, its varied and colourful volcanic rock layers forming a distinctive landscape, most striking at the Sarakiniko coast.",
+      "Milos is a volcanic island on the South Aegean Volcanic Arc, its varied and colourful volcanic rock layers forming a distinctive landscape, especially striking at the Sarakiniko coast.",
     formation:
       "The island is built of tuff, pumice, lava and other rock types from several eruptive episodes; at Sarakiniko, white pumice and tuff have been carved by wave and wind erosion into a moon-like landscape.",
     observation:
@@ -8952,6 +8955,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   berlengas: {
     // 全六段 sources: 主岛大贝尔伦加长约 1.5 km；自然保护区 1981-09 依第 264/81 号法令设立；2011 年列入 UNESCO 生物圈保护区（葡萄牙第 5 个）—— 三项均核实无误。⚠️「葡萄牙第一处海洋自然保护区」这句排他断言未能核实（ICNF 页面 JS 渲染抓不到正文，其余来源均未用「第一」这个说法；另 1465 年阿方索五世曾禁猎于此，更早但性质不同），见 issue。核实 2026-09-10
+    // seeing sources: 1981 设自然保护区（DL 264/81）、1998 扩大到海域（DR 30/98，1 级）；无「第一处海洋保护区」依据。核实 2026-09-12
     seeing:
       "The Berlengas are a group of granite islets about 10–17 km off the coast at Peniche, the main island, Berlenga Grande, about 1.5 km long. From the air, a few bare granite islets stand out sharply against the deep blue Atlantic, with a 17th-century lighthouse-fort on the main island.",
     formation:
@@ -8961,7 +8965,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Berlengas differ from other Portuguese mainland coastal features — they are islands entirely isolated beyond the continental shelf, while the Arrábida Coast and Costa Vicentina are coastal mountains directly connected to the mainland.",
     concept:
-      "Designated Portugal's first marine nature reserve in 1981, the Berlengas are an important seabird breeding site (including northern gannets); UNESCO listed them as a Biosphere Reserve in 2011, and the surrounding waters are a popular diving destination.",
+      "Designated a nature reserve in 1981 and extended to the surrounding waters in 1998, the Berlengas are an important seabird breeding site (including northern gannets); UNESCO listed them as a Biosphere Reserve in 2011, and the surrounding waters are a popular diving destination.",
     history:
       "The Fort of São João Baptista on the main island was built in the 17th century to defend against pirates and foreign attack, and is now converted into a small guesthouse — one of the few man-made structures on the islands.",
   },
@@ -8995,7 +8999,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The volcanic system of São Miguel is continuously monitored by Portugal's volcanic and geological hazard monitoring agency; Sete Cidades is an important site for studying crater-lake ecology and water-quality change in the Azores.",
     history:
-      "Local folklore attributes the lakes' contrasting blue and green colours to the tears of two separated lovers — a widely told legend and Sete Cidades' most famous local story.",
+      "Local folklore attributes the lakes' contrasting blue and green colours to the tears of two separated lovers — a widely told legend and a signature local story of Sete Cidades.",
   },
 
   "furnas-caldera": {
@@ -9037,7 +9041,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The cliff is built of alternating lava and pyroclastic layers from repeated volcanic eruptions, later cut by long-term wave erosion into a near-vertical cliff on the island's south coast.",
     observation:
-      "From the air, identify Cabo Girão by its single, near-vertical cliff with an extreme drop, and the prominent suspended glass viewing platform at the top — the most iconic landform point on Madeira's south coast.",
+      "From the air, identify Cabo Girão by its single, near-vertical cliff with an extreme drop, and the prominent suspended glass viewing platform at the top — a signature landform on Madeira's south coast.",
     distinguish:
       "Both Cabo Girão and the Madeira Mountains are on Madeira Island, but Cabo Girão is a single steep cliff on the south coast dropping vertically to the sea, while the Madeira Mountains are the island's central connected ridgeline radiating outward.",
     concept:
@@ -9157,8 +9161,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // formation sources: 围垦历史、粘质海相沉积、圩田景观与常见地理文献一致。
     //   ⚠️ 「向内陆延伸约 8 至 16 公里」**记 unknown**：查不到 1/2 级来源核实这个具体区间（VLIZ 的 PDF 体积过大未能读取）。
     //   下一轮核 Agentschap voor Natuur en Bos 或 VLIZ；核不到就改成不带具体公里数的表述。2026-09-10 核。
+    // seeing sources: 宽 10–20 km（Kustportaal，2 级）。核实 2026-09-12
     seeing:
-      "The Plain of Flanders is an extremely flat coastal plain in north-western Belgium, extending inland for roughly 8–16 km.",
+      "The Plain of Flanders is an extremely flat coastal plain in north-western Belgium, extending inland for roughly 10–20 km.",
     formation:
       "The plain's soil is mostly clay-based marine sediment, historically reclaimed from the sea through diking and drainage — producing the polder landscape seen today, much of it at or below sea level.",
     observation:
@@ -9356,11 +9361,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   四成远不到 majority；concept 段那句「集中在单一国家境内的特殊案例」的论点本身也就不成立了。
     //   列日作为默兹河沿岸中世纪以来的工商业中心属公认史实。
     seeing:
-      "The Meuse is Belgium's most important navigable river; of the four countries the basin touches, Belgium holds the largest share of it (roughly 40 per cent), and Liège is Belgium's largest river port on the Meuse.",
+      "The Meuse is one of Belgium's main navigable rivers; of the four countries the basin touches, Belgium holds the largest share of it (roughly 40 per cent), and Liège is Belgium's largest river port on the Meuse.",
     formation:
       "Below Liège the Meuse turns north, eventually joining the Rhine delta in the Netherlands before reaching the sea; along the way its course crosses several landform units, including the Ardennes and Condroz plateaus.",
     observation:
-      "From the air, the Meuse widens noticeably around Liège, its banks heavily urbanised, with industrial facilities and residential areas densely packed along the river — the most important shipping and industrial corridor in eastern Belgium.",
+      "From the air, the Meuse widens noticeably around Liège, its banks heavily urbanised, with industrial facilities and residential areas densely packed along the river — a main shipping and industrial corridor in eastern Belgium.",
     distinguish:
       "The Meuse River (Belgian stretch, as the river overall) and the Meuse Valley (the specific gorge-like landform stretch) share the same source, but the former emphasises the river's overall hydrology and shipping function, while the latter focuses on the gorge-like landform between Dinant and Namur.",
     concept:
@@ -9400,16 +9405,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Belgian coast dunes show a pale sand ridge running along the coastline, set off against the farmland of the inland Plain of Flanders and the densely urbanised seaside resorts along the coast.",
     distinguish:
       "Both the Belgian coast dunes and the Zwin are coastal landforms in Belgium, but the dunes are a sandy barrier landform built by wind deposition, while the Zwin is a tidally influenced salt marsh.",
+    // concept sources: 约一半沙丘在 150 年间被城市化（VLIZ，1–2 级）。核实 2026-09-12
     concept:
-      "Due to coastal urbanisation, the surviving area of the Belgian coast dunes is now less than two-thirds of its historical peak — a textbook case study in how human activity has compressed Europe's coastal dune ecosystems.",
+      "Coastal urbanisation has sharply reduced the Belgian coast dunes — the Flanders Marine Institute reports that roughly half of the dune area has been urbanised over the past 150 years — a textbook case study in how human activity has compressed Europe's coastal dune ecosystems.",
     history:
       "The area around De Panne preserves one of the wider dune belts along the Belgian coast; in the final stages of the First World War this area was an important military front, and today it is an important seaside resort area.",
   },
 
   zwin: {
-    // seeing sources: 2016—2019 跨境扩建新增约 120 ha（Agentschap voor Natuur en Bos，1 级）；比利时一侧现行总面积各来源不一（扩建前约 125–155 ha、扩建后约 235–265 ha），正文不写总数，见 issue
+    // seeing sources: 2016–2019 扩大 120 ha（ANB，1 级），未分比荷两侧。核实 2026-09-12
     seeing:
-      "The Zwin, on the Belgium-Netherlands border, is a tidal salt-marsh wetland regularly flooded by the sea at high tide; a cross-border expansion project in 2016-2019 added roughly 120 ha of tidal area on the Belgian side.",
+      "The Zwin, on the Belgium-Netherlands border, is a tidal salt-marsh wetland regularly flooded by the sea at high tide; an expansion project in 2016–2019 added roughly 120 ha of tidal area.",
     formation:
       "The wetland was shaped over time by North Sea tidal currents; its distinctive salinity gradient supports salt-tolerant plant communities including sea lavender, a classic intertidal salt-marsh ecosystem.",
     observation:
@@ -9435,8 +9441,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Sonian Forest shows an extensive, dense, deep-green forest canopy, its tall, straight beech crowns a clear marker distinguishing it from the surrounding farmland and urbanised areas.",
     distinguish:
       "Both the Sonian Forest and the Ardennes Forest Uplands are important forested areas in Belgium, but the Sonian Forest is a single, concentrated ancient beech forest right next to the capital, Brussels, while the Ardennes Forest Uplands are the extensive mixed forest of south-eastern Belgium.",
+    // concept sources: 「近600种甲虫」查无出处，删去。核实 2026-09-12
     concept:
-      "The Sonian Forest is home to nearly 600 beetle species and about 40 mammal species, including rare species typical of primeval forest — an important case study in the biodiversity of temperate old-growth beech forest.",
+      "The Sonian Forest is home to many beetle species and about 40 mammal species, including rare species typical of primeval forest — an important case study in the biodiversity of temperate old-growth beech forest.",
     history:
       "In 2017 the Sonian Forest was inscribed as part of the transnational World Heritage site \"Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe.\"",
   },
@@ -9446,10 +9453,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   ⚠️ 「约 2500 米厚」与「比利时境内出露年代最古老的岩石」**两项都记 unknown**：
     //   在可及的 1/2/3 级来源（KBIN-IRSNB、比利时地质公报）里都查不到这个厚度数字与这条排他性断言的出处。
     //   下一轮找比利时地质调查局官方出版物；核不到就把厚度与「最古老」都去掉，只留已确认的岩性与造山史。2026-09-10 核。
+    // seeing sources: 去掉「比利时最古老」排他断言；下古生界总厚约 3000 m（2700–3500 m）（Herbosch et al. 2020, ESR，1 级）。核实 2026-09-12
     seeing:
-      "The Stavelot Massif is an outcrop of early Paleozoic bedrock in the eastern Ardennes — the oldest exposed rock in Belgium.",
+      "The Stavelot Massif is an outcrop of early Paleozoic bedrock in the eastern Ardennes, one of the Cambrian-to-Ordovician basement inliers of the Ardennes.",
     formation:
-      "The massif is built of about 2,500 m of alternating Cambrian-to-Ordovician quartzite and phyllite, deformed successively by the Caledonian and Variscan orogenies into its present complex folded structure.",
+      "The massif is built of about 3,000 m (estimates range from 2,700 to 3,500 m) of alternating Cambrian-to-Ordovician quartzite and phyllite, deformed successively by the Caledonian and Variscan orogenies into its present complex folded structure.",
     observation:
       "From the air, the Stavelot Massif shows rolling, forested terrain similar to the surrounding Ardennes, but the exposed ancient quartzite and phyllite produce comparatively harder, more prominent local relief in places.",
     distinguish:
@@ -9631,7 +9639,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "This area was once a natural delta where several branches of the Rhine, Meuse and Scheldt split before reaching the sea, with tangled channels and many islands; after a severe storm surge in 1953 caused heavy loss of life, the Netherlands launched the 'Delta Works' to systematically build flood barriers.",
     observation:
-      "From the air, identify the Zeeland Delta by the chain of small islands linked by numerous bridges, dams and storm barriers; the Eastern Scheldt barrier — a roughly 9 km straight line of dozens of huge gates spanning the mouth of the open bay — is the most striking man-made landmark in the whole area.",
+      "From the air, identify the Zeeland Delta by the chain of small islands linked by numerous bridges, dams and storm barriers; the Eastern Scheldt barrier — a roughly 9 km straight line of dozens of huge gates spanning the mouth of the open bay — is a conspicuous man-made landmark across the whole area.",
     distinguish:
       "The Zeeland Delta and the Westerschelde are both in Zeeland province, but the Zeeland Delta refers to the complex delta formed jointly by the Rhine, Meuse and Scheldt and its flood-defence system, while the Westerschelde specifically refers to the Scheldt's own separate river mouth, which keeps a natural tidal channel and is not sealed by a barrier.",
     concept:
@@ -9733,7 +9741,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The IJsselmeer's transformation — from saline bay to freshwater lake — is a classic case study of how engineering can completely transform a water body's ecosystem over decades, and the ongoing reclamation around its shores shows the long-running interaction between the Dutch and the land they've claimed.",
     history:
-      "After the lake formed, the Dutch carried out several rounds of reclamation along its south-western and eastern edges, and most of Flevoland province's land comes from this — the most important source of Dutch land-area expansion in the 20th century.",
+      "After the lake formed, the Dutch carried out several rounds of reclamation along its south-western and eastern edges, and most of Flevoland province's land comes from this — a main source of Dutch land-area expansion in the 20th century.",
   },
 
   markermeer: {
@@ -9965,10 +9973,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   哈尔施塔特—达赫斯坦／萨尔茨卡默古特文化景观 1997 年列入 UNESCO。3 级。2026-09-10 核，verdict: ok。
     seeing:
       "The Dachstein straddles the border between Upper Austria and Styria; its highest peak, Hoher Dachstein, reaches 2,995 m, and because the massif also touches Salzburg it is sometimes called the \"three-state mountain.\"",
-    // formation sources: 洞穴数：**这是随勘探不断刷新的累计计数**。2023 年 Austrian Journal of Earth Sciences 的系统调查记录 789 个、总长约 290 km（2 级）；另有「约 320」「逾 1000」等不同界定。正文写「近 800 个 + 哪一次调查」，不锁死单值。原文的 240 已严重滞后。
-    //   ⚠️ 同段「哈尔施塔特冰川是阿尔卑斯最东、最北端的冰川**之一**」**记 unknown**：核实方多次检索报错，未能证实也未能证伪；正文已带「之一」、不是裸断言，本轮不动。2026-09-10 核。
+    // formation sources: 达赫斯坦冰川群为阿尔卑斯最东端冰川（ANISA 2023，2 级）；「最北」无来源。核实 2026-09-12
     formation:
-      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with nearly 800 caves recorded in a 2023 survey — the Hallstatt Glacier is among the easternmost and northernmost glaciers in the Alps.",
+      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with nearly 800 caves recorded in a 2023 survey — the Dachstein glaciers, the Hallstatt Glacier among them, are the easternmost in the Alps.",
     observation:
       "From the air, the Dachstein shows classic karst high-mountain form — grey-white limestone dotted with dissolution hollows and cave entrances, the white ice of the summit's Hallstatt Glacier standing out sharply against the grey rock around it.",
     distinguish:
@@ -10090,8 +10097,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tennengebirge is a karst plateau of the Northern Limestone Alps near Werfen, about 40 km south of Salzburg; inside the massif, Eisriesenwelt is the largest known ice cave in the world.",
     formation:
       "The massif is built of thick limestone; karst dissolution has carved a cave system stretching more than 42 km. Winter snow seeps in through the entrance, and summer airflow shapes it into ice, producing the cave's distinctive ice formations.",
+    // observation sources: 洞口尺寸疑为洞内通道尺寸，删去。核实 2026-09-12
     observation:
-      "From the air, the Tennengebirge shows the classic outline of a karst plateau; the cave entrance beneath the Hochkogel peak in the middle of the massif marks the location of Eisriesenwelt, its mouth about 20 m wide and 18 m high.",
+      "From the air, the Tennengebirge shows the classic outline of a karst plateau; the cave entrance beneath the Hochkogel peak in the middle of the massif marks the location of Eisriesenwelt.",
     distinguish:
       "Both the Tennengebirge and the Dachstein host major karst cave systems, but the Tennengebirge's Eisriesenwelt is famous for its massive ice formations, while the Dachstein's cave system is known for a network of caves including the Mammoth Cave.",
     concept:
@@ -10197,8 +10205,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Liechtensteinklamm and the Krimml Waterfalls are well-known gorge/waterfall landforms in Austria, but Liechtensteinklamm's main feature is the narrow, deep gorge itself, while the Krimml Waterfalls are centred on a three-tiered waterfall with a 380 m drop.",
     concept:
       "Liechtensteinklamm illustrates the classic process by which a river cuts a deep, narrow gorge into limestone over long periods — a representative example of limestone gorge landforms in the Alps.",
+    // history sources: 2016 年半年逾 20 万人次（圣约翰-蓬高市政府，1 级）；会变的量。核实 2026-09-12
     history:
-      "In 1875 Johann II of Liechtenstein funded the wooden walkways built through the gorge, which take their name from him; today about 100,000 visitors walk the gorge each year.",
+      "In 1875 Johann II of Liechtenstein funded the wooden walkways built through the gorge, which take their name from him; in 2016 alone, more than 200,000 visitors walked it in six months.",
   },
 
   "krimml-waterfalls": {
@@ -10238,16 +10247,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Danube's alternating gorge-like and plain-like stretches within Austria are a useful case study in how a major river's channel form adjusts to tectonic structure as it crosses orogenic belts and subsidence basins.",
     history:
-      "The Danube has long been Austria's most important waterway, linking major cities including Linz and Vienna and serving as the historical core artery of trade and cultural exchange.",
+      "The Danube has long been Austria's main waterway, linking major cities including Linz and Vienna and serving as the historical core artery of trade and cultural exchange.",
   },
 
   "mur-river": {
     // concept sources: 上游河段的河漫滩森林为奥地利面积第二大（施泰尔马克 Murauen UNESCO 生物圈公园）；
     //   多瑙鲑（Huchen）作为受威胁物种在该河记录在案。3 级。2026-09-10 核，verdict: ok。
-    // seeing sources: 源头：**高陶恩山系安科格尔山群**（萨尔茨堡州伦告，近穆尔特尔隘口），不是拉德施塔特陶恩山。全长 453 km（德语维基）/ 464 km（英文维基）两说，正文取 453、冲突记此。
-    //   ⚠️ 「约 298 公里流经施泰尔马克州」**记 unknown**：查不到单独核实该分段的权威来源（英文维基只给奥地利境内合计约 326 km）。2026-09-10 核。
+    // seeing sources: 州内河长无 1–2 级来源，删去具体数。核实 2026-09-12
     seeing:
-      "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
+      "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, much of it through Styria; the city of Graz sits on its banks.",
     formation:
       "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest by area.",
     observation:
@@ -10556,14 +10564,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   既查不到确证也查不到证伪，正文不动、记 unknown。2026-09-10 核，verdict: ok（一项 unknown）。
     seeing:
       "The Gap of Dunloe is a narrow mountain pass carved by glacial erosion between MacGillycuddy's Reeks and Purple Mountain, its floor strung with five small glacial lakes.",
+    // formation sources: 冰川突破口成因（Rae 2004, JQS，2 级）；无构造薄弱带之说。核实 2026-09-12
     formation:
-      "The pass was cut by last-glacial ice moving along a structurally weaker zone between the two mountains; after the ice retreated, meltwater pooled in floor depressions to form a chain of small lakes.",
+      "The pass was cut by last-glacial ice breaching the mountain barrier as it flowed north; after the ice retreated, meltwater pooled in floor depressions to form a chain of small lakes.",
     observation:
       "From the air, steep mountain flanks hem in the narrow pass, with a winding road linking the five small lakes in sequence — a classic hiking and jaunting-car route through MacGillycuddy's Reeks.",
     distinguish:
       "Both the Gap of Dunloe and Glendalough are classic Irish glacial valleys, but the Gap of Dunloe is narrower and steeper, functioning as a mountain corridor, while Glendalough is more open, valued equally for its lakes and historic site.",
     concept:
-      "The Gap of Dunloe is a classic case for studying how glacial ice erodes along a structurally weak zone to form a mountain pass; its chain of small lakes illustrates a typical sequence of glacial-valley landforms.",
+      "The Gap of Dunloe is a classic case for studying how glacial ice breaches a mountain barrier to cut a pass; its chain of small lakes illustrates a typical sequence of glacial-valley landforms.",
     history:
       "The pass was historically an important route linking the north and south of the Kerry mountains; it has served as a scenic route since the 19th century, and the traditional jaunting-car tours continue today.",
   },
@@ -10656,12 +10665,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Shannon has historically been an important inland-navigation and irrigation resource; the Shannon hydroelectric scheme, completed in 1929, was one of Ireland's earliest major infrastructure projects.",
   },
   "river-liffey": {
-    // seeing sources: ⚠️ **长度口径三家打架、记在这里**：多数水系介绍给约 125 km（78 mi），英文维基给 132 km，
-    //   Britannica 给约 80 km（差异极大，疑为只算某一段）。正文取「约 125 公里」并带「约」字，本轮判定不改；
-    //   **把冲突写下来，免得下一轮碰到 132 或 80 的人以为我们漏了更新、再改一次**。下一轮查 EPA／OPW 官方水系名录统一。
-    //   马蹄形绕威克洛山地的成因、都柏林湾入海、河北／河南分区均准确。2026-09-10 核，verdict: ok（口径待统一）。
+    // seeing sources: 125 km 无出处；OSi 1958 给 132 km（经引注定位），写约 130 km。核实 2026-09-12
     seeing:
-      "The River Liffey rises in the Wicklow Mountains and runs about 125 km, tracing a horseshoe course around the Wicklow uplands before flowing east into Dublin Bay — the geographic axis of Dublin's urban development.",
+      "The River Liffey rises in the Wicklow Mountains and runs about 130 km, tracing a horseshoe course around the Wicklow uplands before flowing east into Dublin Bay — the geographic axis of Dublin's urban development.",
     formation:
       "The upper river rises on the granite uplands of the Wicklow Mountains; its middle course bends in an arc to skirt the mountain mass, and the lower course flattens out across the Dublin plain before entering Dublin Bay.",
     observation:
@@ -10819,8 +10825,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The key difference between Killary Harbour and Ireland's other coastal landforms (such as the open bays along the Ring of Kerry) lies in its fjord origin — formed by the flooding of a deeply glacially incised valley, rather than ordinary wave-eroded bay formation.",
     concept:
       "Killary Harbour is Ireland's only true fjord landform, a classic — and rare — case for studying how a deeply incised glacial valley combined with sea-level rise produces a fjord.",
+    // history sources: 「19世纪深水港计划」查无出处，删去。核实 2026-09-12
     history:
-      "The fjord has historically been an important area for local mussel and salmon farming; a 19th-century plan to develop it as a deep-water port was never realised, and it is now an important area for ecotourism in western Ireland.",
+      "The fjord has historically been an important area for local mussel and salmon farming; it is now an important area for ecotourism in western Ireland.",
   },
 
   // ============ Denmark ============
@@ -11031,8 +11038,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Arresø and Furesø are important lakes on Zealand, but Arresø is larger and shallower, while Furesø is smaller and is Denmark's deepest lake.",
     concept:
       "The shallow, broad basin form of Arresø is a classic case for studying how areas of weaker last-glacial erosion produce shallow lake basins, in contrast to deep-basin lakes elsewhere.",
+    // history sources: 「19世纪围垦尝试」查无 1–2 级来源，删去。核实 2026-09-12
     history:
-      "The lake has historically been an important fishery for northern Zealand; a 19th-century attempt to drain and reclaim the lakebed for farmland was made, and the surrounding area is now an important nature reserve.",
+      "The lake has historically been an important fishery for northern Zealand; the surrounding area is now an important nature reserve.",
   },
   furesoe: {
     // seeing sources: 最深 37.7 m（菲于瑟市官网，2 级；丹麦语维基与自然署页面一致），非 37.8。与 arresoe（40.72 km²、均深 3.1 m，丹麦最大湖）互为 distinguish 对照，两条并读自洽。核实 2026-09-11
@@ -11196,8 +11204,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Grejsdalen and the valley landforms along the Gudenå illustrate river-valley landforms in Jutland, but Grejsdalen is a classic, tightly confined subglacial tunnel valley with steep walls, while the Gudenå valley is broader and gentler, linking several lakes along its course.",
     concept:
       "Grejsdalen is a classic case for studying how subglacial meltwater erosion produces the distinctive tunnel-valley landform, fundamentally different from a broad valley carved directly by surface glacial ice.",
+    // history sources: 15 座水力磨坊（韦勒市政府，1 级）。核实 2026-09-12
     history:
-      "The valley historically hosted several water-powered mills thanks to its abundant water resources; the forest trails preserved in the valley today are an important hiking area in Denmark.",
+      "Thanks to its strong current, the Grejs Å has driven 15 water-powered mills over the years, busiest in the late 19th and early 20th centuries; the forest trails preserved in the valley today are an important hiking area in Denmark.",
   },
 
   // ============ Sweden ============
@@ -11578,7 +11587,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "skane-plain": {
     seeing:
-      "The Skåne Plain is a low-lying agricultural region at Sweden's southern tip, built of last-glacial moraine and loess-like sediment, and Sweden's most important grain- and rapeseed-growing area.",
+      "The Skåne Plain is a low-lying agricultural region at Sweden's southern tip, built of last-glacial moraine and loess-like sediment, and Sweden's main grain- and rapeseed-growing area.",
     formation:
       "The plain's surface is made up of last-glacial moraine deposits together with wind-blown, loess-like sediment; the soil is deep and fertile and the terrain flat and open, making it one of Sweden's best agricultural regions.",
     observation:
@@ -11776,7 +11785,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The alteration of the Kemijoki's natural hydrological rhythm by its many hydroelectric dams is a classic case for studying how large-scale hydropower development reshapes a river's ecology and hydrology.",
     history:
-      "The river's banks were historically an important timber-floating channel in Finland; large-scale hydropower development from the mid-20th century made the Kemijoki Finland's most important river for hydroelectricity, providing the country with substantial clean energy.",
+      "The river's banks were historically an important timber-floating channel in Finland; large-scale hydropower development from the mid-20th century made the Kemijoki Finland's main river for hydroelectricity, providing the country with substantial clean energy.",
   },
   "tornionjoki-fi": {
     seeing:
@@ -11900,8 +11909,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   hailuoto: {
     // 全六段 sources: 见 seeing 段 issue —— 「每年约1公顷」的面积扩大速率查不到出处也查不到反证；能查到的只有垂直抬升约 0.9–1 cm/年，是另一个量，不可换算。核实 2026-09-10
+    // seeing sources: 地壳抬升约 9 mm/年（海卢奥托市，1 级）；「每年1公顷」无出处。核实 2026-09-12
     seeing:
-      "Hailuoto is a sandy island in the Gulf of Bothnia that continues to grow through isostatic rebound, its area still expanding by about 1 hectare per year.",
+      "Hailuoto is a sandy island in the Gulf of Bothnia that continues to grow through isostatic rebound, the land still rising by about 9 mm a year.",
     formation:
       "The island's foundation is shallow-sea sediment that gradually emerged after the last ice age; long exposure to Gulf of Bothnia wave and wind action has produced extensive dune and beach landforms, with isostatic rebound continually adding new land to the island.",
     observation:
@@ -12091,7 +12101,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Upper Sûre Lake is Luxembourg's only large artificial lake, in contrast with the natural downstream stretch of the Sûre, illustrating a classic case of how a hydraulic engineering project can transform an original valley landform.",
     concept:
-      "As Luxembourg's single most important drinking-water source, the Upper Sûre Lake is a classic case for studying how a small landlocked country secures its water supply through an artificial reservoir project.",
+      "As Luxembourg's main drinking-water source, the Upper Sûre Lake is a classic case for studying how a small landlocked country secures its water supply through an artificial reservoir project.",
     history:
       "The dam was begun in 1956 and built in 1957, an important piece of post-war Luxembourg water infrastructure; the surrounding Upper Sûre Nature Park is now an important area for ecotourism and recreation in Luxembourg.",
   },
@@ -12189,8 +12199,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "phong-nha-ke-bang": {
     // 全六段 sources: 石灰岩演化约 4 亿年（古生代泥盆—石炭纪），为亚洲现存最古老、最大的喀斯特之一；UNESCO 三期未串位 —— 2003 年首次列入（标准 viii）、2015 年依生物多样性标准扩展（85,754 → 126,236 ha）、2026-06-05 第 38 届 MAB-ICC 认定为世界生物圈保护区（1 级）。洞穴总长见 issue。核实 2026-09-11
+    // seeing sources: 洞穴总长 243 km（2023 年联合测绘，人民报，2 级）；会增长的量，下轮复核。核实 2026-09-12
     seeing:
-      "Phong Nha-Ke Bang is a karst mountain area in central Vietnam along the Laos border, with over 220 km of documented caves and underground waterways, home to Son Doong, the world's largest natural cave.",
+      "Phong Nha-Ke Bang is a karst mountain area in central Vietnam along the Laos border, with about 243 km of caves and underground waterways surveyed as of 2023 (new caves are still being found), home to Son Doong, the world's largest natural cave.",
     formation:
       "The limestone strata date back roughly 400 million years to the Palaeozoic, making this one of the largest and oldest karst landscapes remaining in Asia; long groundwater dissolution has shaped a vast cave network.",
     observation:
@@ -12530,7 +12541,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "As one of the largest river deltas in the world, the Mekong Delta is a classic sample for studying how long-term deposition at a great river's delta shapes a dense agricultural and waterway network.",
     history:
-      "The Mekong Delta is Vietnam's most important rice and aquaculture production region, and traditional water-town ways of life such as floating markets continue there to this day.",
+      "The Mekong Delta is Vietnam's main rice and aquaculture production region, and traditional water-town ways of life such as floating markets continue there to this day.",
   },
   "ngu-hanh-son": {
     seeing:
@@ -12543,9 +12554,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ngu Hanh Son and Ba Na Hills are both representative landforms around Da Nang, but Ngu Hanh Son is a set of low coastal hills known for its marble caves and religious grottoes, while Ba Na Hills is a high-elevation peak known for its cloud climate and cable-car resort.",
     concept:
       "Ngu Hanh Son's hills rising independently from flat land are a sample for studying how a marble body left standing as isolated residual hills through differential weathering on flat terrain.",
-    // history sources: 原文把佛教与印度教造像统一归为「阮朝以来」—— 印度教造像可追溯至更早的占婆时期，只有佛教造像与摩崖石刻多为阮朝以来。本轮只去掉被证伪的统一归期、不补未查实的断代，精确年代见 issue。核实 2026-09-11
+    // history sources: 占婆造像约 10 世纪中叶、佛寺兴建记载见于 18 世纪（五行山管委会官网，1 级）。核实 2026-09-12
     history:
-      "The hills contain numerous Buddhist and Hindu rock-cut sculptures from a range of periods, making it an important religious and geological tourism site in central Vietnam.",
+      "The Cham-style Hindu carvings in the hills date to around the 10th century, while the Buddhist temples are much later, with recorded construction in the 18th century, making it an important religious and geological tourism site in central Vietnam.",
   },
   // ============ Thailand ============
   "doi-inthanon": {
@@ -12835,8 +12846,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "mekong-river-th": {
     // 全六段 sources: ⚠️ 泰老界河段长度「约976公里」**没有一个来源支持**，各口径 850/920/955/1520 km 不等，未找到 MRC 或泰国官方的单一权威数字 —— 见 issue，正文暂不动。核实 2026-09-11
+    // seeing sources: 界河段长度各来源在 966–976 km 之间，改为量级表述。核实 2026-09-12
     seeing:
-      "The Thai stretch of the Mekong forms roughly 976 km of the Thailand–Laos border along Thailand's north-east; the section near Chiang Khan is known for its dense scattering of rapids.",
+      "The Thai stretch of the Mekong forms nearly 1,000 km of the Thailand–Laos border along Thailand's north-east; the section near Chiang Khan is known for its dense scattering of rapids.",
     formation:
       "The Mekong rises on the Qinghai-Tibet Plateau in China and flows through Myanmar and Laos before entering Thailand; long erosion along Thailand's north-eastern border has shaped a broad valley and a riverbed landform that shifts markedly with the seasons.",
     observation:
@@ -13233,7 +13245,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   익산 향토문화전자대전（2 级）等多方一致引用，但**均未标注测算年份与机构口径**，未找到 1 级来源。
     //   平原边界相对稳定、不属易过期量，故正文不改；下一轮若找到国土地理情报院口径再补年份。2026-09-10 核，verdict: ok（口径待补）。
     seeing:
-      "The Honam Plain is the largest plain on the Korean Peninsula, covering about 3,500 km², and Korea's most important rice-producing region.",
+      "The Honam Plain is the largest plain on the Korean Peninsula, covering about 3,500 km², and one of Korea's main rice-producing regions.",
     formation:
       "The plain was built up by long-term sediment deposition from the lower Geum River and the Mangyeong River among others; its flat, open terrain and fertile soil provide ideal conditions for large-scale rice cultivation.",
     observation:
@@ -13260,8 +13272,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Nakdong River Estuary and Suncheon Bay Wetland are both important estuarine wetlands in Korea, but the Nakdong estuary is defined by sandbars formed from a braided river channel, while Suncheon Bay is known for its combination of extensive reed beds and intertidal flats.",
     concept:
       "The braided delta at the Nakdong River's mouth is a classic case for studying sediment deposition and channel-splitting processes where a river meets the sea.",
+    // history sources: 洛东江河口堰 2019 起试验开闸、2022-02 起大潮期常态化开闸（韩国环境部，1–2 级）；运行方式会变，下轮复核。核实 2026-09-12
     history:
-      "Eulsukdo and the surrounding wetlands have long served as an important stopover for migratory birds; urbanisation and estuary engineering works since the late 20th century have kept conservation of this wetland under ongoing attention.",
+      "Eulsukdo and the surrounding wetlands have long served as an important stopover for migratory birds; urbanisation and estuary engineering works since the late 20th century have kept conservation of this wetland under ongoing attention; the estuary barrage has been opened on a trial basis to admit seawater since 2019, and from February 2022 it has been opened regularly during spring tides to help restore the estuary's brackish-water ecology.",
   },
   "han-river": {
     seeing:
@@ -13518,8 +13531,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "masurian-lakes": {
     // 全六段 sources: 希尼亚尔德维湖 113.8 km² 为波兰最大湖泊，核实无误。⚠️ 湖泊数量「超过2500座」**没有单一权威口径**：旅游/区域来源给约 2600 座（>1 ha），省级空间规划文件给全省 1081 座（>1 ha，2015 版），差异来自统计范围与面积阈值 —— 见 issue，正文暂不动。核实 2026-09-11
+    // seeing sources: 湖泊数取决于面积阈值（RDOŚ 3000+ / 省规划 >1 ha 1081），改为数以千计。核实 2026-09-12
     seeing:
-      "The Masurian Lake District is a densely lake-studded region of north-eastern Poland carved by last-glacial erosion, with more than 2,500 lakes; Lake Śniardwy is the largest lake in Poland.",
+      "The Masurian Lake District is a densely lake-studded region of north-eastern Poland carved by last-glacial erosion, with lakes numbering in the thousands; Lake Śniardwy is the largest lake in Poland.",
     formation:
       "The district's foundation is a multitude of depressions carved by last-glacial erosion, now filled with water; historically, extensive canals were cut to link the lakes, forming a distinctive densely channelled waterway network.",
     observation:
@@ -13617,9 +13631,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Dunajec Gorge and the Ojców Valley are important karst gorge landforms in Poland, but the Dunajec Gorge cuts through the high peaks of the Pieniny massif and is known for rafting, while the Ojców Valley lies in a comparatively gentle upland area and is known for its isolated rock towers and caves.",
     concept:
       "The Dunajec Gorge is a classic case for studying how a river can carve a deep gorge over the long term by eroding comparatively soft limestone and dolomite bedrock, and it is also an example of cross-border Poland-Slovakia landform conservation cooperation.",
-    // history sources: 观光漂流始于 19 世纪初（Józef Szalay 推广、1832 年成立筏工行会）；**运输传统的起始世纪未定** —— 多个来源给 16 世纪但全部 3 级，按判据不作替代值，正文不写死，见 issue。原写的「18 世纪」查无支持。同一处错在 pieniny-mountains 条目里也有一份，同批一并改。核实 2026-09-11
+    // history sources: 筏运起源 16 世纪（NID 国家非遗名录公告，1–2 级）。核实 2026-09-12
     history:
-      "Rafts on the Dunajec were originally used to move timber and other goods; from the early 19th century the spa town of Szczawnica promoted the descent as a tourist trip, and a raftsmen's guild was founded locally in 1832. It is now one of the most iconic tourist experiences in southern Poland.",
+      "Rafting on the Dunajec goes back to the 16th century, originally to move timber and other goods; from the early 19th century the spa town of Szczawnica promoted the descent as a tourist trip, and a raftsmen's guild was founded locally in 1832. It is now one of the most iconic tourist experiences in southern Poland.",
   },
   "ojcow-valley": {
     // 全六段 sources: 克拉科夫门为天然岩拱；国家公园 1956 年设立，现园区 21.46 km²（初建 14.40 km²），为波兰面积最小的国家公园。核实 2026-09-11，未改动
@@ -13774,8 +13788,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Mongolia ============
   "mongol-altai": {
     // 全六段 sources: 呼依滕峰 4374 m 为**蒙古国境内最高点**、位于塔王博格达山群跨境山体上 —— ⚠️ 红线自查：正文说明峰在跨境山体上、是蒙古最高点，**未描述边界线如何走、未表述主权、未把中国任何地区与中国并列**；与中国侧 altai 条目对同一山体的高度描述无冲突。三国交界点的具体命名见 issue（来源互相矛盾）。巴彦乌列盖省哈萨克族聚居属定位性事实。核实 2026-09-11
+    // seeing sources: 三国交界点：1994 年三国协定文本称 Tavan Bogd-Ula (Kuytunshan)，标高 4082.0 m（PA-X，2 级）；只用有条约支撑的「奎屯峰 / Kuitun Peak」，不再用「纳拉姆达尔峰」。核实 2026-09-12
     seeing:
-      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — in the Tavan Bogd massif on the Mongolia–China border, and the Mongolia–Russia–China tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north.",
+      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — in the Tavan Bogd massif on the Mongolia–China border, and the Mongolia–Russia–China tripoint is Kuitun Peak (4,082 m) about 2.5 km to its north.",
     formation:
       "The Mongol Altai is part of the Altai orogenic belt, uplifted and folded by crustal compression in the late Paleozoic, then repeatedly carved by glaciation through the Quaternary, producing today's landscape of dense high peaks, glaciers and glacial horns.",
     observation:
@@ -13880,8 +13895,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "khyargas-lake": {
     // 全六段 sources: 经运河与哈尔乌苏湖相连、为水系链终端咸水湖属实。⚠️ 面积与海拔为两组数据混用，见 issue。核实 2026-09-11
+    // seeing sources: 面积 / 海拔只有两组互相矛盾的 3 级数据，删去。核实 2026-09-12
     seeing:
-      "Khyargas Lake is a saline lake within Mongolia's Great Lakes Depression, covering about 1,481 km² at an elevation of about 1,029 m — the terminal lake of the depression's saline-and-freshwater lake chain.",
+      "Khyargas Lake is a saline lake within Mongolia's Great Lakes Depression — the terminal lake of the depression's saline-and-freshwater lake chain.",
     formation:
       "Khyargas Lake is likewise a remnant of the fragmented Pleistocene mega-lake, connected to the upstream Khar-Us–Khar–Airag lake system by a roughly 5-km combined natural-and-artificial channel; receiving that inflow and then concentrating through evaporation has left it saline.",
     observation:
@@ -14000,8 +14016,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "yolyn-am": {
     // 全六段 sources: 半永久冰场、现代因气候变化多在 9 月前融化 —— 正文未夸大为「永不融化」；「鹰谷」得名属实。⚠️ 峡谷长度「约8公里」无单一权威来源，见 issue。核实 2026-09-11
+    // seeing sources: 峡谷长度没有 1–2 级来源，只删不补。核实 2026-09-12
     seeing:
-      "Yolyn Am is a narrow, deep gorge within the Gurvan Saikhan Mountains, about 8 km long, that holds a semi-permanent ice field year-round, in some years persisting into early summer before melting.",
+      "Yolyn Am is a narrow, deep gorge within the Gurvan Saikhan Mountains that holds a semi-permanent ice field year-round, in some years persisting into early summer before melting.",
     formation:
       "Yolyn Am formed as surface water carved deeply along structural fractures in the Gurvan Saikhan massif over a long period; the towering cliffs on either side shade the gorge floor from sunlight year-round, preventing the snow and ice there from fully melting — a rare ice-gorge landscape within the Gobi desert.",
     observation:
@@ -14297,7 +14314,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Several scientific hypotheses exist for the Chocolate Hills' formation (including differential dissolution of an uplifted coral platform), making them an important subject for studying how dense clusters of tropical karst hills form.",
     history:
-      "The Chocolate Hills are Bohol's most famous natural landmark and have long been the subject of local legend and folklore; they are today an important geotourism destination in the central Visayas.",
+      "The Chocolate Hills are a famous natural landmark of Bohol and have long been the subject of local legend and folklore; they are today an important geotourism destination in the central Visayas.",
   },
   "banaue-ifugao-rice-terraces": {
     // 全六段 sources: 1995 年巴塔德、邦岸、马约瑶、洪古丹、纳加达坎五处列入 UNESCO；班奈镇观景台梯田因完整性不足未纳入 —— 与名录一致。⚠️ 红线自查：只写工程与名录机制，未作族群评价。核实 2026-09-11，未改动
@@ -15055,8 +15072,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // 全六段 sources: 2024-02-13 标志性海蚀柱「眼镜蛇头」因大浪倒塌，经砂拉越林业局证实（1 级）—— 海蚀柱是会消失的地物。formation 段的砂岩地层表述见 issue。核实 2026-09-11
     seeing:
       "Bako National Park is a stretch of coastal sandstone landform in Sarawak, shaped over millions of years of wave erosion into steep cliffs, headlands and white-sand bays, its sea stacks the park's signature feature.",
+    // formation sources: 巴哥砂岩另立单元：Journal of Asian Earth Sciences 沉积相论文（2 级）。核实 2026-09-12
     formation:
-      "The sandstone at Bako belongs to the same ancient sandstone geological unit as the Muara Tebas peninsula; long-term wave erosion has undercut the base of the headlands, isolating hard rock pillars offshore while softer surrounding rock has been carried away by currents.",
+      "Geologists treat the sandstone exposed at Bako as a separate unit, the Bako Sandstone, distinct from the Plateau Sandstone of the Kuching area; long-term wave erosion has undercut the base of the headlands, isolating hard rock pillars offshore while softer surrounding rock has been carried away by currents.",
     observation:
       "From the air, Bako's coastline alternates between steep cliffs and winding headlands, several isolated sea stacks standing in the nearshore waters of the South China Sea, their surfaces marked with striking orange-red banding from iron-oxide deposition.",
     distinguish:
@@ -15106,7 +15124,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, Merapi shows a steep conical profile, its lower slopes densely vegetated while the upper slopes and summit remain bare grey-brown volcanic rock; during active eruptive periods the summit lava dome and ash-covered gullies on the flanks are visible.",
     distinguish:
-      "Both Merapi and Semeru are highly active Javanese volcanoes, but Merapi is best known for the deadly pyroclastic flows triggered by lava-dome collapse and its proximity to the Yogyakarta metropolitan area, while Semeru, farther from major cities, is characterised by periodic small eruptions.",
+      "Both Merapi and Semeru are highly active Javanese volcanoes, but Merapi is known for the deadly pyroclastic flows triggered by lava-dome collapse and its proximity to the Yogyakarta metropolitan area, while Semeru, farther from major cities, is characterised by periodic small eruptions.",
     concept:
       "Nearly half of Merapi's eruptions have been accompanied by pyroclastic flows, making it an important sample for studying the relationship between viscous lava-dome instability and hazardous pyroclastic-flow generation; it is also one of the most intensively monitored active volcanoes in the world.",
     history:
@@ -15196,7 +15214,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, Gunung Leuser is a continuous, rolling expanse of mountainous terrain almost entirely covered by primary tropical rainforest, its canopy richly layered and river valleys deeply incised; the orangutan sanctuary around Bukit Lawang lies along one such valley, contrasting with the regular geometric patches of surrounding plantations.",
     distinguish:
-      "Both Gunung Leuser and Kerinci Seblat National Park form part of the Tropical Rainforest Heritage of Sumatra, but Gunung Leuser is best known for the orangutan sanctuary at Bukit Lawang, while Kerinci Seblat is defined by Mount Kerinci, Indonesia's tallest volcano.",
+      "Both Gunung Leuser and Kerinci Seblat National Park form part of the Tropical Rainforest Heritage of Sumatra, but Gunung Leuser is known for the orangutan sanctuary at Bukit Lawang, while Kerinci Seblat is defined by Mount Kerinci, Indonesia's tallest volcano.",
     concept:
       "Home to flagship endangered species including the Sumatran tiger, elephant, rhinoceros and orangutan, Gunung Leuser is an important sample for studying tropical rainforest biodiversity conservation and habitat connectivity.",
     history:
@@ -15219,7 +15237,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "mount-agung": {
     seeing:
-      "At 3,031 m, Mount Agung is Bali's highest point and is considered a sacred mountain in Balinese Hindu belief; Pura Besakih, Bali's largest and most important temple, sits on its slopes.",
+      "At 3,031 m, Mount Agung is Bali's highest point and is considered a sacred mountain in Balinese Hindu belief; Pura Besakih, Bali's largest temple, sits on its slopes.",
     formation:
       "Agung is an active stratovolcano built up from repeated eruptions of lava and pyroclastic material, its cone taking on an almost perfectly symmetrical conical shape, a signature feature of the Sunda volcanic arc as it crosses Bali.",
     observation:
@@ -15250,7 +15268,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "nusa-penida": {
     // 全六段 sources: 克林金崖约 150 m（个别来源作约 120 m，150 更常见）；崖下海滩约 80 m；2016–2017 年经社交媒体走红。核实 2026-09-11，未改动
     seeing:
-      "Nusa Penida is an island off the southeast coast of Bali; its best-known landmark, Kelingking Cliff on the southwest shore, rises about 150 m above sea level and is widely recognised for its dinosaur-like silhouette.",
+      "Nusa Penida is an island off the southeast coast of Bali; a well-known landmark, Kelingking Cliff on the southwest shore, rises about 150 m above sea level and is widely recognised for its dinosaur-like silhouette.",
     formation:
       "Kelingking Cliff is composed of limestone from an ancient coral reef uplifted above sea level over millions of years; sustained wave erosion has gradually undercut the base of the cliff, shaping its current steep profile and the narrow beach below.",
     observation:
@@ -15422,8 +15440,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, clusters of pale granite boulders are scattered across Belitung's white-sand beaches, their contrast with the pale blue water and white sand forming the coastline's most distinctive visual signature.",
     distinguish:
       "Both Belitung Island and the Uluwatu Cliffs are well-known Indonesian coastal landforms, but Belitung is defined by weathered granite boulders paired with sandy beaches, while Uluwatu is a limestone cliff coastline.",
+    // concept sources: 「18%–19%」查无出处，删去。核实 2026-09-12
     concept:
-      "\"Billitonite,\" a natural glass found on Belitung and formed by a meteorite impact, accounts for 18–19% of the world's known distribution of this type of tektite, making the island an important sample for studying geological evidence of extraterrestrial impact events.",
+      "\"Billitonite,\" a natural glass found on Belitung and formed by a meteorite impact, makes the island an important sample for studying geological evidence of extraterrestrial impact events.",
     history:
       "Belitung Island was inscribed into the UNESCO Global Geopark Network in 2021; its distinctive granite landforms combined with the tektite discoveries have made it a representative destination combining geological study with coastal tourism.",
   },
@@ -15596,7 +15615,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   bozzhyra: {
     // 全六段 sources: 两座逾 200 m「獠牙」岩塔、白垩系岩层（约 5000 万–8000 万年）、石灰岩厚达约 250 m —— 与 ustyurt-plateau 等条目互证一致，未找到单一权威页逐个复核数字。核实 2026-09-11，未改动
     seeing:
-      "Bozzhyra, whose name means \"grey ravine\" in Kazakh, is a vast canyon system on the western edge of the Ustyurt Plateau on the Mangystau Peninsula, its two \"fang\" rock towers, each rising more than 200 m, the area's most iconic landmarks.",
+      "Bozzhyra, whose name means \"grey ravine\" in Kazakh, is a vast canyon system on the western edge of the Ustyurt Plateau on the Mangystau Peninsula, its two \"fang\" rock towers, each rising more than 200 m, the area's signature landmarks.",
     formation:
       "The canyon is built of ancient seabed sedimentary chalk deposited 50–80 million years ago, its limestone layers up to 250 m thick and containing fossils of ancient marine life; long-term wind and water erosion has sculpted today's rock towers, mesas and layered cliffs.",
     observation:
@@ -15750,7 +15769,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The Irtysh and the Ob River together form the world's seventh-longest river system, with the Irtysh eventually joining the Ob in Russia; within Kazakhstan the river passes through Lake Zaysan and other lakes, gathering numerous tributaries along the way.",
     observation:
-      "From the air, the Irtysh shows a broad, winding channel crossing the steppe and hills of eastern Kazakhstan, with riverside cities and farmland strung along its course — the most important surface water system in eastern Kazakhstan.",
+      "From the air, the Irtysh shows a broad, winding channel crossing the steppe and hills of eastern Kazakhstan, with riverside cities and farmland strung along its course — the main surface water system in eastern Kazakhstan.",
     distinguish:
       "The Irtysh, the Ili and the Ural are all major rivers in Kazakhstan, but the Irtysh carries the greatest water volume and runs the longest course within the country, ultimately joining Russia's Ob River system, while the Ili empties into Lake Balkhash and the Ural into the Caspian Sea.",
     concept:
@@ -16007,13 +16026,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Tuz has long been an important source of salt in Anatolia; today it yields salt on the order of a million tonnes a year, supplying about 70 percent of Turkey's salt needs.",
   },
   "konya-basin": {
-    // seeing sources: 盆地面积约 5 万 km² —— **两个官方来源互相印证**：土耳其农业与林业部 49,805.34 km²、
-    //   国家水利总局（DSİ）49,786 km²，均 1 级。
-    //   ⚠️ 「海拔 850 至 3450 米」**未能核实**：查不到官方一手数据说明 3450 m 上限对应哪座山峰，记 unknown、正文不动。
-    //   下一轮若仍核不到，改成「数百米至三千余米不等」这类不会出错的表述。
-    //   formation / history: 地下水超采 + 干旱导致天坑（obruk）激增，多篇论文与新闻交叉印证。2026-09-10 核，verdict: ok（一项 unknown）。
+    // seeing sources: 盆地底部 850–1000 m（HTED 2013，2 级）；海拔上限无可靠来源，删去。核实 2026-09-12
     seeing:
-      "The Konya Basin is a large interior-drainage basin on the Central Anatolian Plateau, covering about 50,000 km² at elevations of 850 to 3,450 m, bounded by the Pontic Mountains to the north and the Taurus Mountains to the south, and forming an important agricultural heartland for Turkey.",
+      "The Konya Basin is a large interior-drainage basin on the Central Anatolian Plateau, covering about 50,000 km², its floor at about 850–1,000 m, bounded by the Pontic Mountains to the north and the Taurus Mountains to the south, and forming an important agricultural heartland for Turkey.",
     formation:
       "The basin is a structural depression within the high-elevation orogenic plateau, having long accumulated sediment eroded from the surrounding mountains to form an extensive flat alluvial-lacustrine plain; it retains landform traces left by the retreat of an ancient large lake.",
     observation:
@@ -16055,8 +16070,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, Cappadocia's surface is covered with densely packed conical rock pillars and honeycombed cave dwellings, interwoven with pale tan, pink and white rock layers; the rock-cut settlements and underground-city entrances around Göreme are clearly visible, forming a highly distinctive eroded landscape.",
     distinguish:
       "Both Cappadocia's fairy chimneys and Pamukkale's travertine terraces relate to the region's geothermal-volcanic activity, but Cappadocia is a negative, erosional landform of conical pillars carved from volcanic ash rock, while Pamukkale is a positive terrace formation built up by hot-spring calcium-carbonate deposition.",
+    // concept sources: 分阶段侵蚀速率（Sarıkaya et al. 2015, Geomorphology，2 级）。核实 2026-09-12
     concept:
-      "With an erosion rate of about 2 to 3 cm per 1,000 years, the fairy chimneys are a textbook field sample for studying how differential weathering of soft and hard rock layers — rapid erosion of soft tuff protected in places by resistant caprock — sculpts conical pillars.",
+      "Cosmogenic-nuclide dating shows erosion rates that vary widely by stage — under 1 cm per 1,000 years on the intact plateau, a little over 3 cm on chimney caps, and close to 30 cm once a cap is lost — and the fairy chimneys are a textbook field sample for studying how differential weathering of soft and hard rock layers — rapid erosion of soft tuff protected in places by resistant caprock — sculpts conical pillars.",
     history:
       "Cappadocia was historically a refuge where Byzantine-era Christians carved underground cities and rock-cut churches; the Göreme area preserves numerous rock-cut monasteries and frescoes, and today a sunrise hot-air balloon flight over this pillar landscape is the region's signature visitor experience.",
   },
@@ -16084,8 +16100,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   两说量级接近、只是范围表述不同，**连「量级错了」都证不到**，故不改。下一轮若拿到 DKMP／MTA 一手实测再收紧。2026-09-10 核，verdict: ok。
     seeing:
       "Saklıkent Gorge, near Fethiye in southwestern Turkey, is about 300 m deep and 18 km long, one of Turkey's deepest gorges; 'Saklıkent' means 'hidden city' in Turkish.",
+    // formation sources: 最窄处宽度无 1–2 级来源、3 级两说，删去。核实 2026-09-12
     formation:
-      "The gorge formed as continued uplift of the Taurus Mountains drove crustal movement while a river steadily eroded the comparatively soft limestone; at its narrowest it is only about 4 to 5 m wide, with near-vertical cliff walls.",
+      "The gorge formed as continued uplift of the Taurus Mountains drove crustal movement while a river steadily eroded the comparatively soft limestone; its cliff walls are near-vertical.",
     observation:
       "From the air, Saklıkent Gorge appears as a narrow fissure deeply embedded in the Taurus mountain terrain, its swift snowmelt-fed torrent at the base contrasting sharply in light and relief with the steep, pale grey cliff walls on either side.",
     distinguish:
@@ -16526,7 +16543,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "plitvice-lakes": {
     // 全六段 sources: 16 湖、园区总落差 912 m（1279 → 367 m）、钙华堤坝年增 1–3 cm（公园官网引 Srdoč/Horvatinčić 研究，1 级）；1979 年列入 UNESCO、2000 年扩界，面积 296.85 km²（whc.unesco.org/en/list/98，1 级）；distinguish 段与 krka 并排读无互证伪。核实 2026-09-11，未改动
     seeing:
-      "Plitvice Lakes National Park is a system of 16 lakes linked by travertine barriers along a valley with 912 m of relief, Croatia's most famous natural landscape.",
+      "Plitvice Lakes National Park is a system of 16 lakes linked by travertine barriers along a valley with 912 m of relief, one of Croatia's best-known natural landscapes.",
     formation:
       "The lakes are connected by travertine (tufa) barriers and waterfalls, built up as calcium carbonate in the water is deposited through the action of algae and moss at about 1–3 cm per year, forming natural dams over thousands of years.",
     observation:
@@ -16555,7 +16572,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   krka: {
     seeing:
-      "The Krka River is a limestone karst river in northern Dalmatia with seven travertine barriers along its course; the lowermost, Skradinski Buk, is the longest and most spectacular.",
+      "The Krka River is a limestone karst river in northern Dalmatia with seven travertine barriers along its course; the lowermost, Skradinski Buk, is the longest.",
     formation:
       "Skradinski Buk consists of 17 travertine steps with a total drop of 45.7 m and a width of up to 400 m, a natural stepped barrier formed by long-term calcium carbonate deposition.",
     observation:
@@ -16915,8 +16932,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "dolnomoravsky-uval": {
     // 全六段 sources: 潘诺尼亚气候型农业景观、葡萄种植、莱德尼采庄园描述与地理资料一致。⚠️ 年降水量「550至650毫米」各口径互相矛盾且**没有一处支持 650 这个上限**（有资料称不足 500 mm、也有站点给 587–597 mm），「是捷克最干旱的地区」这一排名也需一并确认口径 —— 见 issue，正文暂不动。核实 2026-09-11
+    // seeing sources: 降水区间无出处、「最干旱」另有所指，改为「之一」。核实 2026-09-12
     seeing:
-      "The Lower Morava Valley is a lowland along the lower Morava River spanning Czechia's borders with Austria and Slovakia; its climate leans Pannonian, with annual rainfall of only 550–650 mm, making it the driest region in Czechia.",
+      "The Lower Morava Valley is a lowland along the lower Morava River spanning Czechia's borders with Austria and Slovakia; its climate leans Pannonian, with low rainfall, making it one of the driest regions in Czechia.",
     formation:
       "The lowland is built of alluvium deposited by the Morava River and its tributaries, together with calcium-rich loess-like parent material, forming Czechia's warmest and driest farming region.",
     observation:
@@ -17095,12 +17113,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "andes-chile": {
-    // seeing sources: 奥霍斯德萨拉多 6893 m 为智利军事地理研究所（IGM）1956 年测量的官方值，沿用至今；
-    //   「世界最高的活火山」采史密森尼 GVP 口径（其「活动性」依据约公元 750±250 年一次不完全确定的喷发记录与 1993 年未证实的喷气，
-    //   属学界公认但带不确定性的表述，正文未过度断言）；南美第二高峰（仅次于阿空加瓜）为公认排名。
-    //   ⚠️ 「智利段约 4300 公里」记 unknown：查不到官方对该长度的单独测绘公报，这个数接近智利国土南北跨度（约 4270 km），属常见估算。3 级。2026-09-10 核，verdict: ok。
+    // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
     seeing:
-      "The Andes are the world's longest mountain range, running the length of South America's west coast; the Chilean stretch extends roughly 4,300 km along the Chile–Argentina border, spanning almost the country's entire north–south length. Its anchor, Ojos del Salado, at 6,893 m, is the world's highest active volcano and South America's second-highest peak after Aconcagua.",
+      "The Andes are the world's longest mountain range, running the length of South America's west coast; the Chilean stretch runs along the Chile–Argentina border, spanning almost the country's entire north–south length. Its anchor, Ojos del Salado, at 6,893 m, is the world's highest active volcano and South America's second-highest peak after Aconcagua.",
     formation:
       "The Andes formed as the Nazca Plate subducts eastward beneath the South American Plate, a textbook case of subduction-zone mountain building; the Chilean stretch is dotted with dozens of active volcanoes, and volcanic and seismic activity remains among the most frequent along the entire Pacific Ring of Fire.",
     observation:
@@ -17171,7 +17186,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "Llaima is built from two overlapping cones and has a varied eruptive style, producing both basaltic lava flows and more explosive eruptions — one of the most volcanically active points along the southern Andes.",
     observation:
-      "From the air, Llaima's permanently snow-capped summit contrasts sharply with dark, fresh lava flows on its slopes and the surrounding old-growth araucaria forest, making it the most striking landmark in Conguillío National Park.",
+      "From the air, Llaima's permanently snow-capped summit contrasts sharply with dark, fresh lava flows on its slopes and the surrounding old-growth araucaria forest, making it the dominant landmark of Conguillío National Park.",
     distinguish:
       "Unlike the symmetrical, unbroken cones of Osorno and Villarrica, Llaima's repeated eruptions have produced a double-peaked, slightly irregular cone — a visual clue to a volcano's complex eruptive history.",
     concept:
@@ -17202,8 +17217,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   ⚠️ **琼加拉湖海拔记 unknown**：不同来源给 4517 / 4540 / 4570 m 三个值，CONAF 官方页只笼统写「4000 米以上」、未给精确值。
     //   正文暂留 4517 并在此记明冲突；下一轮若仍核不到官方基准，改写成「海拔 4500 米以上」这类不精确到个位的表述。
     //   ✅ 零争议红线：未提及智利—玻利维亚—秘鲁边界或出海口争议；艾马拉人只写放牧等传统土地利用的客观事实，无评价性表述。通过。2026-09-10 核。
+    // seeing sources: 湖面海拔三说并存、均 3 级，删去。核实 2026-09-12
     seeing:
-      "The Chilean Altiplano is a high plateau on the western flank of the Andes averaging over 4,000 m in elevation — the Chilean stretch of South America's broader Andean Altiplano. Its anchor, Lake Chungará, sits at 4,517 m, among the highest lakes in the world.",
+      "The Chilean Altiplano is a high plateau on the western flank of the Andes averaging over 4,000 m in elevation — the Chilean stretch of South America's broader Andean Altiplano. Its anchor, Lake Chungará, is among the highest lakes in the world.",
     formation:
       "The plateau consists of structural basins uplifted by Andean orogeny; sustained volcanic activity and closed drainage systems together shaped today's landscape, with symmetrical volcanic cones and saline lakes scattered across the highland.",
     observation:
@@ -17250,8 +17266,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Salar de Atacama and the Atacama Desert are not parallel entries but a part-to-whole relationship — the salar is a specific closed basin of salt accumulation deep within the desert, while the desert is the broader arid climate zone covering the entire region.",
     concept:
       "The salt flat is a classic case study of how salt accumulates through evaporative concentration in a closed drainage basin; its brine is rich in lithium, making the salar one of the most concentrated lithium resource areas on Earth, and a hotspot for cross-disciplinary study between geology and resource economics.",
+    // history sources: 卤水抽采致沉降 1–2 cm/年（智利大学 2024，1 级）；会变的量，下轮复核。核实 2026-09-12
     history:
-      "Indigenous peoples such as the Atacameño have long lived in oasis settlements around the salt flat, drawing on its resources and highland pastures; lithium mining that began in the late 20th century has drawn this ancient salt flat into the global supply chain for new-energy industries.",
+      "Indigenous peoples such as the Atacameño have long lived in oasis settlements around the salt flat, drawing on its resources and highland pastures; lithium mining that began in the late 20th century has drawn this ancient salt flat into the global supply chain for new-energy industries; satellite radar monitoring published by the University of Chile in 2024 shows that continued brine pumping is making parts of the salt flat subside by about 1–2 cm a year.",
   },
   "el-tatio-geysers": {
     // seeing sources: 海拔约 4320 m、活跃间歇泉约 80 处（约占全球总数 8%）。
@@ -17267,14 +17284,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Geyser formation requires three conditions simultaneously: sustained geothermal energy, an ample groundwater supply, and a special underground plumbing structure capable of building pressure. El Tatio meets all three, producing the Southern Hemisphere's largest geyser field.",
     history:
-      "El Tatio is the classic early-morning excursion from San Pedro de Atacama; visitors typically depart before dawn to arrive as temperatures reach their lowest and the steam effect is at its most dramatic.",
+      "El Tatio is the classic early-morning excursion from San Pedro de Atacama; visitors typically depart before dawn to arrive as temperatures reach their lowest and the steam is at its thickest.",
   },
   "central-valley-chile": {
     // history sources: 圣地亚哥 1541-02-12 由瓦尔迪维亚建城，属广泛记载史实。
     //   ⚠️ 「南北延伸约 1000 公里」记 unknown：不同资料从阿空加瓜河到普埃尔托蒙特一带，给 700—1000 km 不等，
     //   取决于谷地起讫点如何界定，查不到官方统一测绘值。「约 1000 公里」属偏上限的估算，未见明确反证，本轮不改。2026-09-10 核。
+    // seeing sources: 中央谷地两种界定（Memoria Chilena，1 级）；400 km 按查卡布科坡—比奥比奥河纬差估算。核实 2026-09-12
     seeing:
-      "Chile's Central Valley is a long, narrow depositional plain squeezed between the Coastal Range and the Andes, stretching roughly 1,000 km north–south; it is Chile's most densely populated and agriculturally developed belt, home to Santiago, Curicó, and other major cities.",
+      "Chile's Central Valley is a long, narrow depositional plain squeezed between the Coastal Range and the Andes, stretching roughly 400 to 1,000 km north–south depending on the definition (traditionally the stretch from the Chacabuco slope to the Biobío River; broader physiographic usage carries it south to around Puerto Montt); it is Chile's most densely populated and agriculturally developed belt, home to Santiago, Curicó, and other major cities.",
     formation:
       "The valley formed as sediment carried by Andean glaciers and rivers filled an ancient structural depression; its flat surface and deep soils provide ideal conditions for large-scale agriculture.",
     observation:
@@ -17393,10 +17411,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Baker and the Loa are both among Chile's most representative rivers, but the Baker is Chile's highest-volume river, originating from Patagonian lakes and ice fields in a wet, water-rich region; the Loa is Chile's longest river, originating in and crossing the extremely arid northern desert.",
     concept:
       "The Baker's high flow directly reflects the role of the Patagonian Ice Field as a 'natural water tower' — its continuous meltwater supplies the river with far more water than local rainfall alone could sustain, making it a classic case study of a glacier-fed river.",
-    // history sources: 法定类别：2001 年第 282 号法令列为**Zona Típica（典型区域）**，不是 Monumento Histórico（历史纪念地）——智利《国家纪念物法》下两个不同类别（附近的「死人岛」2003 年才是历史纪念地）。1 级。
-    //   ⚠️ 「2008 年才通电」**记 unknown**：市政厅历史页与英文维基都查不到通电年份，既证不实也证不伪，正文不动。下一轮可查智利能源部（CNE）或市政厅档案。2026-09-10 核。
+    // history sources: 「2008年才通电」无出处，删去。核实 2026-09-12
     history:
-      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; it did not receive electricity until 2008, and because of its distinctive 'village on stilts' way of life, the Chilean government designated it a Zona Típica — a protected typical zone — in 2001.",
+      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; because of its distinctive 'village on stilts' way of life, the Chilean government designated it a Zona Típica — a protected typical zone — in 2001.",
   },
   "elqui-valley": {
     // 其余 sources: ✅ **天文台选址专项复核**：正文把「海拔适中、空气洁净、晴夜多」三重因素并列写出，

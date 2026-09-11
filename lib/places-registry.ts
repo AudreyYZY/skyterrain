@@ -2298,8 +2298,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "lugano", nameZh: "卢加诺", nameEn: "Lugano", country: "switzerland", tier: "notable", zone: "ch-ticino", admin1Zh: "提契诺州", admin1En: "Ticino",
     lon: 8.9511, lat: 46.0037,
-    airport: { iata: "LUG", nameZh: "卢加诺-阿尼奥机场", nameEn: "Lugano Airport", lon: 8.9106, lat: 46.0043 },
-    source: "卢加诺市中心 46.0037,8.9511；LUG 机场：公开资料",
+    airport: { iata: "ZRH", nameZh: "苏黎世机场（经苏黎世转乘）", nameEn: "Zurich Airport (via Zurich)", lon: 8.5492, lat: 47.4647 },
+    source: "卢加诺市中心 46.0037,8.9511；LUG 卢加诺-阿尼奥机场目前无定期客运、只服务公务机与包机（luganoairport.ch，1 级，核实 2026-09-12），按列日的约定改为经苏黎世转乘：公开资料",
   },
 
   // ── 挪威 ──
