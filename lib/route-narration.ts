@@ -16,18 +16,19 @@ export const ROUTE_NARRATION: Record<
   { study: Record<Language, string>; travel: Record<Language, string> }
 > = {
   "pek-urc": {
+    // study sources: 全四段（study/travel × 中英）: 太行山东坡断崖、黄土高原、河西走廊绿洲串（武威 / 张掖 / 酒泉）、天山分南北疆 —— 与本库 terrain 各条一致；乌鲁木齐海拔约 800 m 与 travel/urumqi 一致；收尾「离海最远的内陆山城」原为绝对最高级，已按 travel/urumqi 改为「之一」。非进藏线，签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "从北京往西飞乌鲁木齐，是看中国地形变化最完整的一条线。飞机离开首都机场，脚下先是华北平原——由黄河、海河冲积出来的大平原，一望无际的方格农田和密集的城镇，地面几乎看不出起伏。" +
       "很快，西边出现一道近乎笔直的山墙，那是太行山。它的东坡是断崖，直接立在平原边上；翻过山脊，地面明显抬高，进入黄土高原。往下看，黄土被流水切得千沟万壑，一道道树枝状的深沟里，是含沙量很高的黄色河流。" +
       "再往西北，地势转为平缓开阔的内蒙古高原和阿拉善的戈壁——大片灰褐色的砾石滩，人烟稀少。接着，一条狭长的通道从两山之间穿过，这就是河西走廊：南边是终年积雪的祁连山，山脚下一串绿洲城市——武威、张掖、酒泉——像绿色的珠子串在一起，绿洲之外就是荒漠。祁连山的冰雪融水，是这些绿洲的命脉，也是古丝绸之路走这条路线的原因。" +
-      "越过祁连山和阿尔金山之间的地带，就进入新疆。最后映入眼帘的是天山——一条连续的东西向雪山，把新疆分成南北两半。飞机沿着天山北麓下降，那里同样是一排冲积扇绿洲，乌鲁木齐就建在其中一片上。短短几个小时，我们从湿润的东部平原，飞到了距离海洋最远的内陆山城。",
+      "越过祁连山和阿尔金山之间的地带，就进入新疆。最后映入眼帘的是天山——一条连续的东西向雪山，把新疆分成南北两半。飞机沿着天山北麓下降，那里同样是一排冲积扇绿洲，乌鲁木齐就建在其中一片上。短短几个小时，我们从湿润的东部平原，飞到了世界上离海最远的大城市之一。",
     "en-US":
       "Flying west from Beijing to Ürümqi is the most complete cross-section of China's terrain there is. Leaving the capital, you are first over the North China Plain — a vast lowland built by the silt of the Yellow and Hai rivers, an endless grid of fields and dense towns, with almost no relief on the ground." +
       " Soon a near-straight wall of mountains rises to the west: the Taihang. Its eastern face is a line of cliffs standing right at the edge of the plain. Cross the crest and the land steps up onto the Loess Plateau, where you can see the loess shredded by water into a maze of branching gullies, with silt-laden yellow rivers threading through them." +
       " Farther north-west the land opens out into the smoother Inner Mongolian Plateau and the gravel gobi of Alxa — grey-brown, thinly peopled. Then a long narrow corridor threads between two ranges: the Hexi Corridor. To its south is the snow-capped Qilian range; at its foot runs a string of oasis cities — Wuwei, Zhangye, Jiuquan — green beads on a thread, with desert on either side. Meltwater from the Qilian is the lifeline of those oases, and the reason the Silk Road ran this way." +
-      " Past the gap between the Qilian and Altun ranges you enter Xinjiang. The last thing to fill the window is the Tianshan — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, and Ürümqi is built on one of them. In a few hours you have flown from the humid eastern plains to the inland city that sits farther from the sea than anywhere else on Earth.",
-  },
+      " Past the gap between the Qilian and Altun ranges you enter Xinjiang. The last thing to fill the window is the Tianshan — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, and Ürümqi is built on one of them. In a few hours you have flown from the humid eastern plains to one of the cities farthest from any sea on Earth.",
+    },
     travel: {
     "zh-CN":
       "北京到乌鲁木齐约四个多小时，是从中国的政治中心飞到最深处的内陆。乌鲁木齐是新疆的首府，海拔约800米，气候干燥，昼夜和四季温差都很大，夏天热、冬天很冷。这里是多民族聚居的城市，饮食以面食、牛羊肉、抓饭、烤包子和各种瓜果为主；新疆各地通用北京时间，但生活节奏顺应日照，办事和用餐都比内地晚约两小时。" +
@@ -41,6 +42,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ctu-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 贡嘎山 7508.9 m（2023-10 最新公布高程）与本库一致；拉萨约 3650 m（拉萨市政府，1 级）；都江堰两千多年；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "舷窗下先是一片被水汽晕开的绿——成都平原，都江堰引岷江水灌溉了两千多年的沃土，阡陌规整如棋盘，头顶却常年裹着一层灰白云雾，四川盆地很少能看清太阳。起飞不过十几分钟，这片温软的绿已经被甩在身后：龙门山猝然立起，盆地边缘骤然收紧，地面开始起皱。" +
@@ -52,7 +54,7 @@ export const ROUTE_NARRATION: Record<
       " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the largest belt of high north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
       " By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
       " The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
-  },
+    },
     travel: {
     "zh-CN":
       "成都到拉萨约两个多小时，落地就是海拔约3650米的拉萨——这是这趟行程最需要认真对待的一点。多数人到高原后会有不同程度的高原反应（头痛、气短、睡不好），到达头一两天要放慢节奏、少剧烈活动、多喝水、避免饮酒，必要时提前向医生咨询备药；有严重心肺疾病的人应先做医学评估。" +
@@ -66,6 +68,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 南岭为长江 / 珠江分水岭、云贵高原坝子为定性描述，与本库一致；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞拉萨，跨越的是中国从最湿热到最高寒的完整梯度。飞机从珠江三角洲起飞——这是珠江在入海口冲积、加上人工围垦形成的平原，水网密布、城市连片，是中国最发达的地区之一。" +
@@ -77,7 +80,7 @@ export const ROUTE_NARRATION: Record<
       " Flying north-west it first meets the Nanling. Unlike the big ranges of the north, this is a low, broken belt of hills separated by wide valleys. The Nanling is the drainage divide between the Yangtze and the Pearl river systems; cross it and rivers begin to flow toward the Yangtze." +
       " Beyond it the land rises as a whole onto the Yunnan–Guizhou Plateau. Its signature is karst — limestone dissolved by water into countless cone- and dome-shaped hills, with enclosed pockets of flat land between them, called bazi, where the towns and fields crowd in. Surface rivers here often dive underground and re-emerge." +
       " West of the plateau the terrain turns rugged again in the southern Hengduan Mountains — north–south snow ranges and deep gorges. Past them you are on the south-eastern edge of the Tibetan Plateau. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The plane descends along the Yarlung Tsangpo system into Lhasa. One flight has passed through every climate zone from the subtropical monsoon to the cold high plateau.",
-  },
+    },
     travel: {
     "zh-CN":
       "广州到拉萨要飞约四个半小时，是从接近海平面的珠三角一路爬到海拔约3650米的拉萨，落差比大多数航线都大，高原反应更要重视：头一两天务必放慢节奏、多休息、多喝水、不饮酒，有心肺基础病的人先咨询医生。" +
@@ -91,6 +94,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "urc-khg": {
+    // study sources: 全四段（study/travel × 中英）: 天山「离海最远的大山系之一」已带限定；塔克拉玛干「中国最大的沙漠」与本库一致；喀什丝路南、中两道交汇与 travel/kashgar 一致；喀什海拔约 1300 m（官方 1289.5 m）在容差内。核实 2026-09-11
     study: {
     "zh-CN":
       "乌鲁木齐飞喀什，是沿着塔里木盆地的边缘，从北疆飞到南疆最西端。起飞后，脚下是天山北麓的绿洲带——乌鲁木齐、昌吉、石河子，一片片靠天山雪水灌溉的农田和城镇，绿洲之外是古尔班通古特沙漠。" +
@@ -102,7 +106,7 @@ export const ROUTE_NARRATION: Record<
       " The plane flies south-west, crossing the western Tianshan. This is one of the mountain systems farthest from any ocean on Earth, its summits under permanent snow and widespread glaciers. Cross the crest and a huge yellow oval opens up ahead — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs, with China's largest desert, the Taklamakan, in its centre. On a clear day you can see regular rows of crescent dunes, like frozen waves." +
       " The route follows the basin's north-western rim the whole way. Every city and field in the basin must sit at the edge of a piedmont alluvial fan, where water comes down from the mountains; off that lifeline it is barren. The Tarim River skirts the desert along the northern edge." +
       " Approaching Kashgar, very high snow peaks appear on the western skyline — the \"knot\" where the Pamirs meet the Kunlun and the Tianshan. Kashgar is built on a large oasis at the foot of these mountains, and has been the meeting point of the southern and middle Silk Roads since ancient times.",
-  },
+    },
     travel: {
     "zh-CN":
       "乌鲁木齐到喀什约一个半小时，是从北疆飞到南疆最西端。喀什海拔约1300米，是新疆历史最悠久的城市之一，老城的土坯民居、巴扎和清真寺保存较完整，维吾尔文化气息浓。逛老城、赶巴扎、尝烤包子和馕、看手工艺作坊是这里的主要体验。" +
@@ -116,6 +120,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "sha-kmg": {
+    // study sources: 全四段（study/travel × 中英）: 鄱阳湖丰枯反差、雪峰山过渡带、云贵高原坝子与本库一致；昆明约 1900 m 与 travel/kunming 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "从上海往西南飞昆明，是从长江入海口的大平原，一路飞到西南的高原。飞机从虹桥起飞，脚下是长江三角洲——长江长期淤积、加上人工围垦形成的低平原，河网纵横、城镇连片，是中国人口和产业最密集的地区之一。" +
@@ -141,6 +146,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ctu-sha": {
+    // study sources: 全四段（study/travel × 中英）: 四川盆地、三峡（瞿塘 / 巫 / 西陵）、洞庭湖 / 鄱阳湖、长江三角洲为定性描述，无可核数字或排名。核实 2026-09-11
     study: {
     "zh-CN":
       "成都飞上海，几乎是沿着长江自西向东飞完它的中下游。起飞时脚下是四川盆地——四周被山环抱的红层盆地，底部是密集的方格农田和城镇，常年云雾多、日照少。" +
@@ -166,6 +172,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-pek": {
+    // study sources: 全四段（study/travel × 中英）: 珠三角、南岭、大别山（淮河 / 长江分水岭）、华北平原为定性描述，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞北京，是一条把中国东部从南到北串起来的线。飞机从珠江三角洲起飞——珠江在入海口淤积、加上人工围垦形成的平原，水网密布、城市连片。" +
@@ -191,6 +198,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xiy-urc": {
+    // study sources: 全四段（study/travel × 中英）: 关中平原、六盘山、河西走廊、祁连山融水、天山与本库一致；乌鲁木齐约 800 m。核实 2026-09-11
     study: {
     "zh-CN":
       "西安飞乌鲁木齐，走的是河西走廊这条古老通道，从关中一直到天山脚下。起飞时脚下是关中平原——渭河冲积出来的一条东西向平原，两侧是黄土台塬，农田和城镇密集，是黄河中游的老农业区。" +
@@ -214,6 +222,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xnn-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 青海湖「中国面积最大的咸水湖」与本库 terrain 一致；西宁约 2200–2275 m 在容差内；拉萨「约三千六百米」为官方 3650 m 的取整，保留；进藏许可 + 有资质旅行社结伴已写，签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "西宁飞拉萨，是从青藏高原的东北角，一路飞到高原腹地。起飞时西宁在湟水谷地里，海拔已经两千多米。往西不远是青海湖——中国面积最大的咸水湖，四周是草原和沙丘，湖面是很深的蓝色。" +
@@ -237,6 +246,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ckg-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 横断山脉、三江并流、雅鲁藏布大拐弯 / 南迦巴瓦为定性描述，与本库 terrain 一致；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "重庆飞拉萨，从长江边的山城，一路爬上青藏高原的东南缘。起飞时脚下是四川盆地——四周被山环抱的红层丘陵盆地，云雾多，重庆的房子顺着山坡和江岸层层叠叠。" +
@@ -260,6 +270,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-inc": {
+    // study sources: 全四段（study/travel × 中英）: 银川约 1100 m（银川市统计局，1 级）；贺兰山挡腾格里沙漠风沙与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞银川，是从华北平原翻过太行山，进入黄土高原和西北的干旱区。飞机从首都机场起飞，脚下先是华北平原北缘——由多条河流冲积成的大平原，方格农田和城镇密集，地面几乎没有起伏。" +
@@ -283,6 +294,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-hrb": {
+    // study sources: 全四段（study/travel × 中英）: 燕山、东北平原（松嫩 / 辽河 / 三江）、松花江为定性描述，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞哈尔滨，是从华北平原一路往东北，飞到东北平原。起飞时脚下是华北平原的北缘，很快出现一列不高的山地，那是燕山和内蒙古高原的东南边缘——地面开始起伏，森林和草原增多，这里是农区和牧区之间的过渡带。" +
@@ -306,6 +318,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "hrb-can": {
+    // study sources: 全四段（study/travel × 中英）: 东北平原 → 华北平原 → 长江中下游平原 → 南岭 → 珠三角的地势梯度为定性描述。核实 2026-09-11
     study: {
     "zh-CN":
       "哈尔滨飞广州，是把中国东部从最北飞到最南，走完从寒温带到南亚热带的一整条梯度。起飞时脚下是东北平原——由松花江、辽河、嫩江冲积成的大平原，方格旱地和水田一望无际，村镇沿铁路排列。" +
@@ -329,6 +342,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-sha": {
+    // study sources: 全四段（study/travel × 中英）: 山东丘陵、苏北平原、长江三角洲、太湖为定性描述，无可核数字或排名。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞上海，是沿着中国东部沿海地带，从华北平原飞到长江三角洲。起飞时脚下是华北平原——黄河、淮河、海河冲积出来的大平原，方格农田和城镇密集，地面几乎看不出起伏。" +
@@ -352,15 +366,16 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-hak": {
+    // study sources: 全四段（study/travel × 中英）: 雷州半岛「中国大陆最南端的半岛」与本库 terrain 条目一致；琼州海峡宽约 19–30 km，「几十公里」量级相符；五指山等主峰与本库一致。原「海南岛是中国纬度最低的省级陆地」排名口径含糊（按行政区，南海诸岛纬度更低），已改为不带排名。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞海口，是一趟很短的跨海航班，从大陆最南端飞到海南岛。起飞后脚下是珠江三角洲，很快到粤西沿海，海岸线上是大片红树林、盐田和养殖塘。" +
       "接着地面收窄成一条伸向西南的半岛，那是雷州半岛——中国大陆最南的一块，地表是玄武岩台地，散布着一些低平的死火山口和火山湖。" +
-      "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛是中国纬度最低的省级陆地，属热带气候。",
+      "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛纬度低，属热带气候。",
     "en-US":
       "Guangzhou to Haikou is a short over-water flight from the southern edge of the mainland to Hainan Island. After take-off you are over the Pearl River Delta, then quickly the coast of western Guangdong, its shoreline lined with mangroves, salt pans and aquaculture ponds." +
       " The land then narrows into a peninsula reaching south-west: the Leizhou Peninsula, the southernmost part of the Chinese mainland, a basalt plateau dotted with low extinct craters and crater lakes." +
-      " At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan is the lowest-latitude provincial-level land in China, with a tropical climate.",
+      " At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan lies at low latitude, with a tropical climate.",
     },
     travel: {
     "zh-CN":
@@ -375,6 +390,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-kwl": {
+    // study sources: 全四段（study/travel × 中英）: 洞庭湖丰枯反差、南岭、桂林峰林喀斯特成因与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞桂林，是从华北平原一路往南，飞到南方的喀斯特山水。起飞时脚下是华北平原，方格农田和城镇密集，看不出起伏。" +
