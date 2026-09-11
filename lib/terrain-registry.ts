@@ -5986,7 +5986,7 @@ const SICILY: TerrainEntry = {
   category: "island",
   regionId: "europe",
   country: "italy",
-  landmark: { name: "埃特纳火山（Etna，约3350m）", lon: 14.993, lat: 37.751, elevation: 3350, kind: "peak" },
+  landmark: { name: "埃特纳火山（Etna，2024-09 复测约3403m）", lon: 14.993, lat: 37.751, elevation: 3403, kind: "peak" },
   bbox: [12.35, 36.60, 15.70, 38.35],
   axis: [[12.5, 37.9], [15.5, 37.3]],
   viewScale: 1.6,
@@ -6134,12 +6134,12 @@ const MOUNT_ETNA: TerrainEntry = {
   category: "mountain_system",
   regionId: "europe",
   country: "italy",
-  landmark: { name: "埃特纳火山（约3350m，欧洲最高的活火山）", lon: 14.993, lat: 37.751, elevation: 3350, kind: "peak" },
+  landmark: { name: "埃特纳火山（2024-09 复测约3403m，欧洲不计高加索的最高活火山）", lon: 14.993, lat: 37.751, elevation: 3403, kind: "peak" },
   bbox: [14.83, 37.58, 15.22, 37.92],
   axis: [[14.9, 37.65], [15.1, 37.88]],
   viewScale: 1.5,
   label: { lon: 14.99, lat: 37.75, rotation: 0 },
-  source: "埃特纳火山：西西里东岸的一座巨型层火山，约3350m，是欧洲最高、也是世界上活动最频繁的火山之一，几乎常年在喷发或流熔岩；东坡有一个巨大的塌陷凹地“公牛谷”；山坡上一层层熔岩流、火山锥和葡萄园、柑橘园相间；2013年列入世界遗产（INGV / UNESCO）",
+  source: "埃特纳火山：西西里东岸的一座巨型层火山，峰顶随喷发变化、2024-09 INGV 无人机复测约3403m（核实 2026-09-11），是欧洲（不计高加索）最高、也是世界上活动最频繁的火山之一，几乎常年在喷发或流熔岩；东坡有一个巨大的塌陷凹地“公牛谷”；山坡上一层层熔岩流、火山锥和葡萄园、柑橘园相间；2013年列入世界遗产（INGV / UNESCO）",
 };
 
 const CAMPI_FLEGREI: TerrainEntry = {

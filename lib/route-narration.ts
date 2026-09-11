@@ -2191,11 +2191,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "罗马飞卡塔尼亚，从意大利中部一路飞到西西里岛东岸，是这几条国内航线里跨度较大的一条。起飞后先经过台伯河，随后进入亚平宁山脉：这条像脊椎一样纵贯整个亚平宁半岛的山系，大萨索山（大角峰）是其中最高的一段，海拔近 2912 米。" +
       "越过山脉南段，地面变成波利诺山——意大利南部最大的国家公园所在地，喀斯特地貌和高山牧场交织。" +
-      "飞越墨西拿海峡上空进入西西里岛，卡塔尼亚就在岛屿东岸、埃特纳火山脚下——这是欧洲最高的活火山，晴天从空中能看到山顶的烟柱和黑色的熔岩流痕迹。",
+      "飞越墨西拿海峡上空进入西西里岛，卡塔尼亚就在岛屿东岸、埃特纳火山脚下——这是欧洲（不计高加索）最高的活火山，晴天从空中能看到山顶的烟柱和黑色的熔岩流痕迹。",
     "en-US":
       "Rome to Catania flies from central Italy all the way to the east coast of Sicily, one of the longer domestic routes here. After take-off you cross the Tiber, then the Apennines: the range running down the whole peninsula like a spine, with Gran Sasso (Corno Grande) its highest point at almost 2,912 m." +
       " Over the southern Apennines, the land becomes the Pollino massif — home to southern Italy's largest national park, karst landforms interwoven with high mountain pasture." +
-      " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — Europe's highest active volcano — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
+      " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
     },
     travel: {
     "zh-CN":
@@ -2261,11 +2261,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "那不勒斯飞卡塔尼亚，沿意大利南部海岸和第勒尼安海南下，是一条以火山为主题的短航线。起飞后不久，维苏威火山的完整锥形出现在右侧机窗——公元 79 年它的喷发掩埋了庞贝古城，如今仍是被密切监测的活火山。" +
       "继续南飞，海面上出现利帕里群岛（又称埃奥利群岛）：一串火山成因的小岛，其中斯特龙博利岛上的火山几乎持续小规模喷发，被称为“地中海灯塔”，几百年来一直如此，是全球观测最久的活火山之一。" +
-      "越过一片开阔海面进入西西里岛，卡塔尼亚就在埃特纳火山脚下——欧洲最高的活火山，海拔约 3350 米，山顶终年有烟柱。",
+      "越过一片开阔海面进入西西里岛，卡塔尼亚就在埃特纳火山脚下——欧洲（不计高加索）最高的活火山，2024年9月复测约3403米，山顶终年有烟柱。",
     "en-US":
       "Naples to Catania runs south along the Italian coast and the southern Tyrrhenian Sea, a short flight with a volcanic theme throughout. Soon after take-off the full cone of Mount Vesuvius appears on the right — its eruption in 79 AD buried Pompeii, and it remains a closely monitored active volcano today." +
       " Flying on south, the Aeolian (Lipari) Islands appear over the water: a chain of volcanic islands, including Stromboli, whose volcano has erupted in small bursts almost continuously — called the 'lighthouse of the Mediterranean', a pattern that has held for centuries and one of the longest continuously observed volcanoes in the world." +
-      " Over open water onto Sicily, Catania sits at the foot of Mount Etna — Europe's highest active volcano, about 3,350 m, with a year-round summit plume.",
+      " Over open water onto Sicily, Catania sits at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus, measured at about 3,403 m in September 2024, with a year-round summit plume.",
     },
     travel: {
     "zh-CN":
