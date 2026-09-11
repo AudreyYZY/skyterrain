@@ -111,6 +111,17 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 实际本条是 2022；葡萄牙 `alentejo-plain` 用了 Barroso（2016）的年份，实际本条是 2025 年的塞尔帕案例。
 **别拿该国首例的年份当本条的年份。**
 
+**同一个专名的多种转写，可能被并列成多个对象。** 泰国 `khorat-plateau` 写「碧差汶山脉与佩差邦山脉」——
+两个都是 Phetchabun 的中译，英文侧直接写成「Phetchabun and Petchabun ranges」。遇到「A 与 B 共同……」
+这类需要两个对象才成立的句式，先确认 A、B 不是同一个名字的两种拼法。
+
+**「与某国共同列入」要查的是「这一次认定本身涵盖了谁」，不是「有没有这个合作」。**
+卢森堡 `minett-red-lands` 写 2020 年与法国、比利时共同列入 UNESCO 生物圈保护区——实际是单一国家保护区，
+法国正另行申请、比利时根本没参与。这是「提前完成时」：方向对，只是还没发生。
+
+**两个相邻、名字只差一个词的地物，属性最容易互换。** 新加坡的「小桂林」官方上属于 Bukit Batok **Town** Park，
+本库写给了隔壁的 **Nature** Park。遇到这种近名邻居，去官方页面分别核两边各自的属性。
+
 **`distinguish` 段是跨条目错误的高发段。** 它天生是拿别的条目作比，
 核它的时候要把**被比较的那个条目**并排打开。`duero-river` 与 `ebro-river` 的 `distinguish`
 都写「两河同源自伊比利亚山系」，而 `ebro-river` 自己的 `formation` 段就写着「发源于坎塔布连山脉」。
