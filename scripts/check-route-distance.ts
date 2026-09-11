@@ -58,7 +58,7 @@ let routes = 0, zhN = 0, enN = 0, pairN = 0, flagged = 0;
 for (const f of readdirSync("data/routes").filter((x) => x.endsWith(".json"))) {
   const r = JSON.parse(readFileSync(`data/routes/${f}`, "utf8"));
   const aps: Wp[] = (r.waypoints ?? []).filter((w: Wp) => w.airport && w.lat != null && w.lon != null);
-  const n = (ROUTE_NARRATION as any)[r.id];
+  const n = ROUTE_NARRATION[r.id as string];
   if (!n || aps.length < 2) continue;
   routes++;
   const d = gc(aps[0], aps[aps.length - 1]);
