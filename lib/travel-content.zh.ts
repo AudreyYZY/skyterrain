@@ -11661,12 +11661,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   **这已是九年前的数**，1212.mn 证书错误无法直连，确认不了有没有更新一期。
     //   原 identity 的「3.1 万」对不上任何已知年份的官方数。
     identity:
-      "科布多是蒙古西部科布多省首府，人口约2.98万（2017年），坐落于科布多河畔，是探索蒙古阿尔泰山与西部多民族聚居区的重要门户。",
+      "科布多是蒙古西部科布多省首府，人口约2.98万（2017年），坐落在阿尔泰山脉东麓，是探索蒙古阿尔泰山与西部多民族聚居区的重要门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Khovd (Mongolia; capital of Khovd Province in the west, about 29,800 residents in 2017; at the foot of the Altai mountains, bisected by the Buyant river; founded in 1685 by Galdan Boshugtu Khan of the Dzungar Khanate, later moved to the present site on the Buyant; Mongolian forces took the city on 7 August 1912 and destroyed the garrisons; ethnically diverse — Khalkha, Zakhchin, Torghut, Uriankhai, Kazakh and others; Khar-Us Lake protected area about 25 km east; Museum of Khovd Province; cold desert climate with records near −45 °C)
     howItWorks:
       "科布多是蒙古国西部科布多省的省会，2017 年人口约 2.98 万；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与高等教育，科布多大学在这里。城市在阿尔泰山脉的东麓，布延特河把它分成两半。1685 年准噶尔的噶尔丹博硕克图汗在这一带筑城，后来城址迁到布延特河边的今址；清代它是西部边疆的驻防重镇，1912 年 8 月 7 日蒙古军队攻下此城并摧毁了驻军营地，老城墙的遗迹仍在城外。这里是蒙古族群最杂的城市之一，哈拉哈、扎哈沁、土尔扈特、乌梁海与哈萨克等十多个族群共居，语言与习俗各不相同。东面约 25 公里是哈日乌斯湖国家公园，是候鸟的重要栖息地。气候属寒漠，冬季最低纪录接近零下 45 度。初来的人最容易犯的错，是以为蒙古西部只有牧民，而这座城是一整个省的行政与大学中心。",
     layout:
-      "城市沿科布多河两岸展开，是蒙古西部历史上多民族（蒙古族、哈萨克族、图瓦人等）聚居与贸易往来的传统中心。",
+      "城市沿穿城而过的河流两岸展开，是蒙古西部历史上多民族（蒙古族、哈萨克族、图瓦人等）聚居与贸易往来的传统中心。",
     gettingAround:
       "本地设有科布多机场（HVD），有乌兰巴托往返定期航班；前往蒙古阿尔泰山塔王博格达等景点需公路自驾或包车，车程约数小时至一整天不等。",
     culture:
