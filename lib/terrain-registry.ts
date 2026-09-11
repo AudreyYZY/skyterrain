@@ -799,7 +799,7 @@ const YANGTZE: TerrainEntry = {
   bbox: [111.0, 28.0, 122.0, 32.5],
   label: { lon: 115.0, lat: 29.5, rotation: 0 },
   pois: [
-    { name: "洞庭湖", lon: 112.95, lat: 29.31, note: "第二大淡水湖，湖汊密布" },
+    { name: "洞庭湖", lon: 112.95, lat: 29.31, note: "中国面积第二大的淡水湖，湖汊密布" },
     { name: "长江入海口（崇明岛）", lon: 121.9, lat: 31.5, note: "冲积岛群与分流河道" },
   ],
   source: "鄱阳湖 ≈29.1N 116.28E: 百科（中国最大淡水湖）",
@@ -1389,7 +1389,7 @@ const DONGTING: TerrainEntry = {
   bbox: [111.8, 28.6, 113.3, 29.9],
   label: { lon: 112.95, lat: 29.31, rotation: 0 },
   pois: [{ name: "岳阳楼", lon: 113.09, lat: 29.37, note: "“先天下之忧而忧”" }],
-  source: "洞庭湖；第二大淡水湖，长江与湘资沅澧四水吞吐（无 NE 多边形，用 bbox）",
+  source: "洞庭湖；中国面积第二大的淡水湖，长江与湘资沅澧四水吞吐（无 NE 多边形，用 bbox）",
 };
 
 // ============================================================
@@ -14192,7 +14192,7 @@ const CUKUROVA_PLAIN: TerrainEntry = {
   bbox: [34.9, 36.5, 36.2, 37.35],
   viewScale: 1.4,
   label: { lon: 35.5, lat: 37.45, rotation: 0 },
-  source: "丘库罗瓦平原：土耳其地中海东岸最大的冲积平原，由塞伊汉河、杰伊汉河与贝尔丹河携带的泥沙历经长期堆积形成，是地中海地区第二大三角洲平原体系，平原被东侧米西斯山与北、西两侧托罗斯山脉环绕；因土壤肥沃、灌溉水源充足，是土耳其最重要的农业区之一，主要城市阿达纳即坐落于平原核心（researchgate.net/tandfonline.com WebSearch 2026）",
+  source: "丘库罗瓦平原：土耳其地中海东岸最大的冲积平原，由塞伊汉河、杰伊汉河与贝尔丹河携带的泥沙历经长期堆积形成，是地中海沿岸规模较大的三角洲平原体系之一，平原被东侧米西斯山与北、西两侧托罗斯山脉环绕；因土壤肥沃、灌溉水源充足，是土耳其最重要的农业区之一，主要城市阿达纳即坐落于平原核心（researchgate.net/tandfonline.com WebSearch 2026）",
 };
 
 const LAKE_BEYSEHIR: TerrainEntry = {
@@ -14362,7 +14362,7 @@ const NERETVA_DELTA: TerrainEntry = {
   landmark: { name: "内雷特瓦河口三角洲", lon: 17.567, lat: 43.000, elevation: 0, kind: "delta" },
   bbox: [17.45, 42.95, 17.72, 43.10],
   label: { lon: 17.55, lat: 43.13, rotation: 0 },
-  source: "内雷特瓦河三角洲：内雷特瓦河进入克罗地亚境内最后约22公里河段冲积形成的三角洲，是克罗地亚境内唯一的河流三角洲，也是地中海地区仅次于尼罗河、波河三角洲的第三大三角洲；三角洲内芦苇荡、湖泊、湿草甸、潟湖与沙洲交织，是东亚得里亚海岸最有价值的湿地，列入拉姆萨尔国际重要湿地名录（Ramsar/Wikipedia WebSearch 2026）",
+  source: "内雷特瓦河三角洲：内雷特瓦河进入克罗地亚境内最后约22公里河段冲积形成的三角洲，是克罗地亚境内唯一的河流三角洲，也是地中海沿岸规模较大的三角洲之一；三角洲内芦苇荡、湖泊、湿草甸、潟湖与沙洲交织，是东亚得里亚海岸最有价值的湿地，列入拉姆萨尔国际重要湿地名录（Ramsar/Wikipedia WebSearch 2026）",
 };
 
 const LONJSKO_POLJE: TerrainEntry = {

@@ -82,7 +82,8 @@ const SUBJECTIVE_SUP_EN =
  *
  * 句子里有年份或限定语（「之一」「按…计」）则放过。
  */
-const RANK_ZH = /(第[二三四五六七八九十两]大|排名第|位居第|第[二三四五六七八九十两]多)/;
+// 「第二大道」「第三大街」是街名不是名次（白马市「主街和第二大道平行于河」被误报，2026-09-12）
+const RANK_ZH = /(第[二三四五六七八九十两]大(?![道街])|排名第|位居第|第[二三四五六七八九十两]多)/;
 const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|most populous|busiest)\b/i;
 /**
  * 限定语：出现任何一个就放过。
@@ -93,8 +94,10 @@ const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|most populous
  * 但 **「人口第 N 多」不算**：人口本身还分市建制 / 都会区 / 登记 vs 常住好几档，
  * 横滨那条错的正是这一层（「日本人口第二多的市」把 23 区和市建制混了）。
  */
-const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中|面积第|长度第|海拔第)/;
-const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then|largest by area)\b/i;
+// 「常被称为」与「号称 / 之称」是同一种限定（把排名标成流行说法而非断言），第一版漏了
+const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|常被称|常称|其中|面积第|长度第|海拔第)/;
+// 口径不止面积与人口：机场按旅客量、产区按葡萄园面积、藏品按件数（2026-09-12 补）
+const QUALIFIER_EN = /\b(one of|among|by (area|population|land|passengers?|vineyard area|number)|often called|at the time|then|largest by area)\b/i;
 
 /**
  * C6-e：**钱**。票价、门票、通票、打车费 —— 这些比人口过期得还快，

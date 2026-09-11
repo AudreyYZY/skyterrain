@@ -346,7 +346,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   与大兴安岭条目里「400 mm 线的地理标志物」的说法相互印证、不矛盾。
     //   全篇 6 板块无误，本轮无需改动。
     seeing:
-      "The Inner Mongolian Plateau, China's second-largest plateau, spans central and eastern Inner Mongolia at about 1,000–1,200 m. Its signature is flatness — relief is minimal, and grassland runs east to west, grading from meadow steppe through typical steppe to desert steppe and finally into desert.",
+      "The Inner Mongolian Plateau, China's second-largest plateau by area, spans central and eastern Inner Mongolia at about 1,000–1,200 m. Its signature is flatness — relief is minimal, and grassland runs east to west, grading from meadow steppe through typical steppe to desert steppe and finally into desert.",
     formation:
       "The Inner Mongolian Plateau is an old, stable block with no strong tectonic disturbance for a long time; its surface has been planed very smooth and is covered by loess and wind-blown sand. Its edges (the Yin Shan, the Greater Khingan side) have scarps that separate it from the surrounding lowlands.",
     observation:
@@ -421,7 +421,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "junggar-basin": {
     seeing:
-      "The Junggar Basin, in northern Xinjiang, lies between the Tianshan and the Altai — China's second-largest inland basin. It has a gap in the north-west (the Alataw Pass) through which a little Atlantic moisture can blow in, so it is wetter than the Tarim to the south and its desert is smaller.",
+      "The Junggar Basin, in northern Xinjiang, lies between the Tianshan and the Altai — China's second-largest inland basin by area. It has a gap in the north-west (the Alataw Pass) through which a little Atlantic moisture can blow in, so it is wetter than the Tarim to the south and its desert is smaller.",
     formation:
       "The Junggar Basin has been a subsidence zone since the Palaeozoic, continually filled with debris from the surrounding ranges, and holds rich oil (the Karamay field) and coal. The basin floor is about 500 m; the lowest point, Lake Ebi, is only about 190 m.",
     observation:
@@ -667,7 +667,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   hainan: {
     // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
-      "Hainan Island is China's second-largest island (after Taiwan), in the northern South China Sea, facing the Leizhou Peninsula of Guangdong across the Qiongzhou Strait. It is China's only fully tropical island province, shaped like an oval \"bun\": high in the middle, low around the edges.",
+      "Hainan Island is China's second-largest island by area (after Taiwan), in the northern South China Sea, facing the Leizhou Peninsula of Guangdong across the Qiongzhou Strait. It is China's only fully tropical island province, shaped like an oval \"bun\": high in the middle, low around the edges.",
     formation:
       "Hainan was once connected to the mainland; the Qiongzhou Strait later dropped along faults and the sea flooded in, making it an island. The centre is mountains of granite and metamorphic rock (Wuzhi Shan, 1,867 m; Yinggeling), grading outward through hills, terraces and plains to the coast. The north around Haikou has extensive basalt volcanic plateaus and craters (the Shishan volcanic cluster, Ma'anling volcano).",
     observation:
@@ -1290,7 +1290,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "great-sandy-desert": {
     // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
-      "The Great Sandy Desert is in north-eastern Western Australia, straddling the Pilbara and southern Kimberley and extending east into the Northern Territory — the second-largest desert in Australia. It is mostly not tall dunes but endless low sand plains, crossed by long, near-parallel sand ridges trending roughly east–west.",
+      "The Great Sandy Desert is in north-eastern Western Australia, straddling the Pilbara and southern Kimberley and extending east into the Northern Territory — the second-largest desert in Australia by area. It is mostly not tall dunes but endless low sand plains, crossed by long, near-parallel sand ridges trending roughly east–west.",
     formation:
       "The ridges are longitudinal dunes — their long axis parallel to the prevailing wind, which moves sand along the ridge and shapes it long and straight, some running unbroken for over 40 km and mostly 10–25 m high. Between the ridges are flat interdune corridors, often with claypans and seasonal salt lakes (such as the Percival Lakes). The red colour of the sand comes from a thin coating of iron oxide on the grains.",
     observation:
@@ -2008,7 +2008,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "badain-jaran": {
     seeing:
-      "The Badain Jaran Desert lies in the western Alxa Plateau of Inner Mongolia, about 49,000 km² — China's third-largest desert. It is best known for its tall sand mountains — many two or three hundred metres of relative height, the highest, Bilutu, about 460 m, among the tallest sand mountains in the world — with more than a hundred interdune lakes scattered between them.",
+      "The Badain Jaran Desert lies in the western Alxa Plateau of Inner Mongolia, about 49,000 km² — China's third-largest desert by area. It is best known for its tall sand mountains — many two or three hundred metres of relative height, the highest, Bilutu, about 460 m, among the tallest sand mountains in the world — with more than a hundred interdune lakes scattered between them.",
     formation:
       "The sand comes from weathered material off the surrounding mountains and dry riverbeds, piled up by wind over a long time. Why the sand mountains here are so tall is still discussed by researchers; it may involve the shape of the underlying bedrock, a fairly steady wind regime, and groundwater cementing the sand grains. In the interdune hollows groundwater emerges as lakes, mostly saline, a few fed by fresh springs.",
     observation:
@@ -3073,7 +3073,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   **零争议红线复核通过**：history 段只写因纽特人的传统土地、多塞特/图勒文化、
     //   17 世纪航海者命名、1999 年努纳武特建制这些客观事实，未评价现代政策。
     seeing:
-      "Baffin Island is in the Canadian Arctic Archipelago in the north-east — Canada's largest island and the fifth largest in the world. Its eastern edge is a high mountain belt of hard Shield rock, with large ice caps, deep fjords and several granite cliff faces over a kilometre high (Mount Thor, well known to climbers, is here); the western half of the island is low, flat sedimentary platform. The capital, Iqaluit, is in the south-east.",
+      "Baffin Island is in the Canadian Arctic Archipelago in the north-east — Canada's largest island and the fifth largest in the world by area. Its eastern edge is a high mountain belt of hard Shield rock, with large ice caps, deep fjords and several granite cliff faces over a kilometre high (Mount Thor, well known to climbers, is here); the western half of the island is low, flat sedimentary platform. The capital, Iqaluit, is in the south-east.",
     formation:
       "The mountain belt of Baffin Island is the eastern edge of the Canadian Shield, raised and then repeatedly scoured by glaciers. Quaternary ice sheets cut hard down the old river valleys, shaping the mountains into horns and arêtes and hollowing the valleys into U-shapes cut below sea level to make fjords. The mountains still hold remnant ice such as the Barnes Ice Cap. The western lowland is unraised platform, covered by near-horizontal Palaeozoic rock.",
     observation:
@@ -3481,7 +3481,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Osaka Plain shows how block movement shapes settlement: the surrounding mountains are lifted along faults, the block between drops and is filled flat by rivers, and the cities grow in these dropped lowlands — with the fault often right at the mountain foot. There is an active fault at the base of Rokkō, and the 1995 Great Hanshin earthquake came from it. A common misconception is to take the mountain foot for the safest \"backed-by-mountain\" spot — in fault-block mountain country, the mountain foot often faces an active fault.",
     // history sources: ⚠️ 原文把飞鸟、平城京并进了大阪平原。内阁府地形地质指南的大阪平原四至（北摄山地—生驹／金刚山地—和泉山脉—大阪湾）**不含奈良盆地**，飞鸟与平城京都在奈良盆地内；平安京在京都盆地。难波确在平原上。1 级。2026-09-10 核。
     history:
-      "The Osaka Plain was one of the centres of ancient Japanese civilisation: Naniwa stood on the plain itself, while Asuka and Heijō-kyō (Nara) lie in the neighbouring Nara Basin to the east — strictly outside the Osaka Plain — and Heian-kyō (Kyoto) sits in the Kyoto Basin to the north. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area.",
+      "The Osaka Plain was one of the centres of ancient Japanese civilisation: Naniwa stood on the plain itself, while Asuka and Heijō-kyō (Nara) lie in the neighbouring Nara Basin to the east — strictly outside the Osaka Plain — and Heian-kyō (Kyoto) sits in the Kyoto Basin to the north. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area by population.",
   },
 
   "ishikari-plain": {
@@ -3988,7 +3988,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "lake-wanaka": {
     // seeing sources: 第四大湖；瓦纳卡湖面 300 米 vs 哈威亚湖面 348 米，**水位差约 48 米**，正文的「几十米」成立（3 级）。**英文侧长音符 Wānaka 与注册表 nameEn 一致 —— 本轮专门核过。** 「Clutha River / Mata-Au」这个并名沿用上一批已核实的法定写法。2026-09-10 核，本轮无需改动。
     seeing:
-      "Lake Wānaka, in Central Otago in the South Island, is a glacier-carved ribbon lake — the fourth-largest lake in New Zealand — with the resort town of Wānaka on its shore, second only to Queenstown as a holiday base. Its water drains south via the Clutha River / Mata-Au. It is separated from Lake Hāwea to the east by a very narrow isthmus (locally \"the Neck\"), yet the two lake surfaces differ by tens of metres in height.",
+      "Lake Wānaka, in Central Otago in the South Island, is a glacier-carved ribbon lake — the fourth-largest lake in New Zealand by area — with the resort town of Wānaka on its shore, second only to Queenstown as a holiday base. Its water drains south via the Clutha River / Mata-Au. It is separated from Lake Hāwea to the east by a very narrow isthmus (locally \"the Neck\"), yet the two lake surfaces differ by tens of metres in height.",
     formation:
       "Lake Wānaka and Lake Hāwea are two parallel troughs gouged by separate glaciers under the same icefield, each filling with water after the ice retreated. The narrow isthmus between them is a ridge of moraine and bedrock that was never cut through between the two glaciers. Gravel brought in by the Matukituki and other rivers at the north end is building deltas into the lake.",
     observation:
@@ -4221,7 +4221,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "stewart-island": {
     // seeing sources: 新西兰第三大岛；拉基乌拉国家公园约 1400 平方公里、占全岛约 85%；2023 年人口约 450。**「Stewart Island/Rakiura」是法定并名**（恩加伊塔胡法 Schedule 96），正文与注册表一致。**零争议红线复核：羊鸟习俗采集权只写「这项传统至今保留」这一客观事实，通过。** 2026-09-10 核，本轮无需改动。
     seeing:
-      "Stewart Island (Māori: Rakiura, \"glowing skies\", for the aurora australis often seen here) lies off the southern end of the South Island across Foveaux Strait, and is the third-largest island in New Zealand. About 85% of it is Rakiura National Park, and its population of only a few hundred is concentrated in the small town of Oban at Halfmoon Bay. It is cool and wet, densely forested, and one of the easiest places to see kiwi in the wild.",
+      "Stewart Island (Māori: Rakiura, \"glowing skies\", for the aurora australis often seen here) lies off the southern end of the South Island across Foveaux Strait, and is the third-largest island in New Zealand by area. About 85% of it is Rakiura National Park, and its population of only a few hundred is concentrated in the small town of Oban at Halfmoon Bay. It is cool and wet, densely forested, and one of the easiest places to see kiwi in the wild.",
     formation:
       "Stewart Island is made mostly of granite and old metamorphosed sedimentary rock, part of the southward continuation of the New Zealand continental block, and was once joined to the South Island — during low sea level in the ice ages you could walk across, and it was only cut off by Foveaux Strait when sea level rose. The island's relief is low and gentle, and the coast has many granite headlands and drowned valley inlets (such as Paterson Inlet).",
     observation:
@@ -4893,7 +4893,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "Katla's magma is basaltic. When it erupts under hundreds of metres of ice, the hot magma meeting ice and meltwater causes violent \"phreatomagmatic\" explosions, blasting the magma into fine black ash, and at the same time melting hundreds of millions of tonnes of ice within hours. The meltwater, together with ice blocks and sediment, bursts out from under the ice cap at flows of tens of thousands to over a hundred thousand cubic metres a second — a glacial flood, called a jökulhlaup in Iceland. Historically these floods have dumped so much sediment on the south coast that the coastline has advanced several kilometres.",
     observation:
-      "From the air Katla is simply Mýrdalsjökull — Iceland's fourth-largest ice cap — with a slightly depressed area of ice in the centre, the caldera beneath almost invisible from the surface. Several outlet glaciers reach out from the southern edge of the ice cap, and in front of them is a large black flood-outwash plain (Mýrdalssandur), a maze of channels with no vegetation at all.",
+      "From the air Katla is simply Mýrdalsjökull — Iceland's fourth-largest ice cap by area — with a slightly depressed area of ice in the centre, the caldera beneath almost invisible from the surface. Several outlet glaciers reach out from the southern edge of the ice cap, and in front of them is a large black flood-outwash plain (Mýrdalssandur), a maze of channels with no vegetation at all.",
     distinguish:
       "Katla and Grímsvötn are both subglacial volcanoes and both produce glacial floods, but Katla is on Iceland's south coast near populated areas, and its floods drive straight down toward the Ring Road; Grímsvötn is deep in the interior within Vatnajökull, and its floods discharge mainly across the uninhabited sandur plains. Compared with Hekla, Katla's main hazard is not ash but flood.",
     concept:
@@ -6140,7 +6140,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   ⚠️ **「记录鱼类超过 90 种」没找到可核实的独立来源，本轮标 unknown、正文不动** —— 按「拿不准就记 unknown、不要改成另一个没核实的数」处理。下一轮查挪威海洋研究所（Havforskningsinstituttet）或 NINA 的一手鱼类普查数据。2026-09-09 核。
     //   https://snl.no/Trondheimsfjorden
     seeing:
-      "The Trondheimsfjord in central Norway is Norway's third-longest fjord, about 130 km long and up to about 617 m deep. It is very unlike the narrow deep fjords of the west — wide and open, with large areas of shallow water and tidal flats, and its main body ice-free all year. Norway's third-largest city, Trondheim (medieval Nidaros), sits on its middle reach. The fjord is exceptionally rich in life: over 90 recorded fish species, cold-water coral reefs in the deep water, and several of Norway's top salmon rivers entering along its shores.",
+      "The Trondheimsfjord in central Norway is Norway's third-longest fjord, about 130 km long and up to about 617 m deep. It is very unlike the narrow deep fjords of the west — wide and open, with large areas of shallow water and tidal flats, and its main body ice-free all year. Norway's third-largest city by population, Trondheim (medieval Nidaros), sits on its middle reach. The fjord is exceptionally rich in life: over 90 recorded fish species, cold-water coral reefs in the deep water, and several of Norway's top salmon rivers entering along its shores.",
     formation:
       "The Trondheimsfjord developed in an area of relatively soft, low rock (the Devonian strata of Trøndelag and older schists), and the ice here was more dispersed, not held in a narrow valley, so the glacier dug it into a wide fjord with a shallow sill rather than a western-style slit. After the ice retreated, the sea stood relatively higher against the land, leaving large marine clay terraces around the fjord (later fertile farmland); the land is still slowly rebounding and rising.",
     observation:
@@ -6223,7 +6223,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   femund: {
     seeing:
-      "Lake Femunden in eastern Norway, on the highland near the Swedish border, sits at 662 m, covers about 204 km², and is Norway's third-largest lake and its largest that is essentially unregulated for water level — most large Norwegian lakes have dams for hydropower, but Femunden's level is still close to natural. Its east shore is Femundsmarka National Park, a wilderness of erratic boulders, dwarf pine and mire.",
+      "Lake Femunden in eastern Norway, on the highland near the Swedish border, sits at 662 m, covers about 204 km², and is Norway's third-largest lake by area and its largest that is essentially unregulated for water level — most large Norwegian lakes have dams for hydropower, but Femunden's level is still close to natural. Its east shore is Femundsmarka National Park, a wilderness of erratic boulders, dwarf pine and mire.",
     formation:
       "Lake Femunden sits on a glacially abraded old bedrock upland, its basin a string of hollows scoured by ice along weak zones in the bedrock and joined up. After the ice retreated the hollows filled with water, and the surrounding moraine and meltwater deposits, regulating inflow and outflow, gave today's shallow, clear, ragged-shored, island-strewn lake. Its water drains eastward, via the Trysil river system into the Klarälven in Sweden and finally to the sea — one of the few places where Norway's drainage runs east across the divide.",
     observation:
@@ -6412,7 +6412,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "aquitaine-basin": {
     seeing:
-      "The Aquitaine Basin occupies the southwestern quadrant of France and is the second-largest sedimentary basin after the Paris Basin. It meets the Pyrenees on the south, connects to the Paris Basin through the Poitou threshold on the north, and faces the Bay of Biscay on the west. At the surface it is the broad valley plains of the Garonne and the Dordogne, the huge pine-forested sand country by the Atlantic (the Landes), and stretches of famous vineyards. Underground is several kilometres of Mesozoic–Cenozoic sediment.",
+      "The Aquitaine Basin occupies the southwestern quadrant of France and is France's second-largest sedimentary basin by area, after the Paris Basin. It meets the Pyrenees on the south, connects to the Paris Basin through the Poitou threshold on the north, and faces the Bay of Biscay on the west. At the surface it is the broad valley plains of the Garonne and the Dordogne, the huge pine-forested sand country by the Atlantic (the Landes), and stretches of famous vineyards. Underground is several kilometres of Mesozoic–Cenozoic sediment.",
     formation:
       "The Aquitaine Basin began subsiding in the Mesozoic (about 200 million years ago) as the Atlantic and the Bay of Biscay opened, receiving marine sediment; during Pyrenean mountain-building in the Cenozoic, the basin's southern edge was compressed, folded and lifted (forming the \"Little Pyrenees\"), while the north kept receiving river and shallow-sea sediment. In the Quaternary the Garonne and others spread large amounts of gravel over the basin, and Atlantic wind blew the coastal sand into a huge belt of dunes and sand barriers, blocking the lowland behind them into marsh — the origin of the Landes.",
     observation:
@@ -6939,7 +6939,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   撒丁-科西嘉微陆块 30–15 Ma 逆时针旋转、南撒丁曾属伊比利亚边缘，古地磁研究（Tectonics 2023，3 级摘要）与正文一致。
     //   2026-09-10 核，verdict: ok。
     seeing:
-      "Sardinia is the second-largest island in the Mediterranean, west of mainland Italy and south of Corsica. It is an old, quiet land — no active volcano, and very weak earthquakes. The body of the island is hills and mountains of moderate height of granite and older rock (the Gennargentu is highest, 1,834 m), with only in the east a spectacular limestone upland (the Supramonte) cut by deep gorges and caves. The coast has many granite reef headlands and turquoise bays.",
+      "Sardinia is the second-largest island in the Mediterranean by area, west of mainland Italy and south of Corsica. It is an old, quiet land — no active volcano, and very weak earthquakes. The body of the island is hills and mountains of moderate height of granite and older rock (the Gennargentu is highest, 1,834 m), with only in the east a spectacular limestone upland (the Supramonte) cut by deep gorges and caves. The coast has many granite reef headlands and turquoise bays.",
     formation:
       "Sardinia's rock framework comes from the Variscan orogeny about 300 million years ago — granite plutons and Palaeozoic strata baked and squeezed by them. After the orogeny the land stayed emergent for a long time and was planed flat. It and Corsica were once joined, one \"Sardinia–Corsica\" microcontinent attached near Spain; about 30 to 15 million years ago, as the western Mediterranean opened, this microcontinent swung counterclockwise about a pivot like a door, tens of degrees, to its present position. The east of the island later received a set of Mesozoic limestone (the Supramonte), and the west has some Miocene volcanic rock, but tectonic activity stopped long ago.",
     observation:
@@ -8079,7 +8079,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   chiemsee: {
     // 全六段 sources: 湖面约 79.9 km²，巴伐利亚最大、德国第三大湖；原湖面积约 240 km²（约今 3 倍），末次冰期末段约 1 万年前冰舌退却积水成湖；与 muritz 互为 distinguish 比较对象，两条数字双向自洽。核实 2026-09-10，未改动
     seeing:
-      "The Chiemsee is Bavaria's largest lake and Germany's third-largest, its surface covering about 80 km²; for its open scenery and the fine Alpine backdrop it is often called the \"Bavarian Sea.\"",
+      "The Chiemsee is Bavaria's largest lake and Germany's third-largest by area, its surface covering about 80 km²; for its open scenery and the fine Alpine backdrop it is often called the \"Bavarian Sea.\"",
     formation:
       "About 10,000 years ago, at the end of the last ice age, a large glacial tongue extended north from the Alps, scouring out a broad trough valley along its path; after the glacier retreated, the valley filled with water. The Chiemsee was once about three times its current size, and sediment carried in by surrounding rivers has since gradually filled the lake basin, shrinking it to today's extent.",
     observation:
@@ -10249,7 +10249,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
     formation:
-      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest.",
+      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest by area.",
     observation:
       "From the air, the upper Mur winds through mountain gorges, its middle and lower channel widening, with floodplain forest running in a band along the river; Graz's old town, laid out along both banks, is the clearest marker for identifying this river.",
     distinguish:
@@ -10257,7 +10257,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The floodplain forest along the upper Mur is one of Europe's most species-rich habitats and the natural spawning ground for the endangered Danube salmon — an important case study in the conservation value of river ecosystems.",
     history:
-      "Graz, the capital of Styria, grew historically thanks to the water transport and irrigation the Mur provided, and remains Austria's second-largest city today.",
+      "Graz, the capital of Styria, grew historically thanks to the water transport and irrigation the Mur provided, and remains Austria's second-largest city by population today.",
   },
 
   worthersee: {
@@ -11324,7 +11324,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   malaren: {
     // 全六段 sources: 瑞典四大湖序为维纳恩>韦特恩>梅拉伦>耶尔马伦，「第三大」成立；冰后地壳均衡抬升致其约 12–13 世纪与波罗的海分离。核实 2026-09-10，未改动
     seeing:
-      "Mälaren is Sweden's third-largest lake, with an extremely intricate, many-branched shoreline; Stockholm sits at its eastern outlet to the sea.",
+      "Mälaren is Sweden's third-largest lake by area, with an extremely intricate, many-branched shoreline; Stockholm sits at its eastern outlet to the sea.",
     formation:
       "The lake basin was carved by last-glacial erosion; post-glacial isostatic rebound gradually narrowed and shallowed the channel connecting the lake area to the Baltic Sea, eventually forming today's comparatively independent lake system.",
     observation:
@@ -11646,7 +11646,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "urho-kekkonen-wilderness": {
     // 全六段 sources: 2549 km²，为芬兰**第二大**国家公园（仅次于莱门约基），1983 年设立，以前总统乌尔霍·凯科宁命名。核实 2026-09-10，未改动
     seeing:
-      "Urho Kekkonen National Park is Finland's second-largest national park, characterised by undulating tunturi wilderness upland interwoven with old conifer forest and river canyons.",
+      "Urho Kekkonen National Park is Finland's second-largest national park by area, characterised by undulating tunturi wilderness upland interwoven with old conifer forest and river canyons.",
     formation:
       "The park's surface is a tunturi plateau of ancient Precambrian rock, long shaped by weathering and erosion; rivers have long cut canyons along the plateau's margins, producing an overall landscape of low, undulating wilderness upland.",
     observation:
@@ -11656,12 +11656,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The combination of wilderness upland and river canyons at Urho Kekkonen National Park is a classic case for studying the long erosional evolution of an ancient Precambrian plateau within the Arctic Circle.",
     history:
-      "The park is named after former Finnish president Urho Kekkonen; it is Finland's second-largest national park and an important part of the traditional reindeer-herding region.",
+      "The park is named after former Finnish president Urho Kekkonen; it is Finland's second-largest national park by area and an important part of the traditional reindeer-herding region.",
   },
   saimaa: {
     // 全六段 sources: ⚠️ 两个口径别混 —— 正文「芬兰最大湖、欧洲第四大湖」用的是「大塞马」（Suur-Saimaa）整体水系口径约 4200–4400 km²；SYKE 维护的 Järvi-meriwiki 里单独命名的 varsinainen Saimaa 子湖为 1377 km²，是同一湖泊系统的另一种计量，不是打架。约 14000 座岛屿与 Järviwiki 的 13710 接近。核实 2026-09-10，未改动
     seeing:
-      "Saimaa is the largest lake in Finland and the fourth-largest in Europe, its shoreline extremely intricate and dotted with about 14,000 islands.",
+      "Saimaa is the largest lake in Finland and the fourth-largest in Europe by area, its shoreline extremely intricate and dotted with about 14,000 islands.",
     formation:
       "The lake basin occupies a complex depression carved by last-glacial erosion; the numerous islands are the emergent tops of glacially eroded high ground, producing today's extraordinarily fragmented shoreline and island pattern.",
     observation:
@@ -11691,7 +11691,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "inari-lake": {
     // 全六段 sources: 约 1040–1084 km²（各来源略异），芬兰第三大湖、北极圈内芬兰最大湖；约 3318 座岛屿，正文「约3300」贴近。核实 2026-09-10，未改动
     seeing:
-      "Inari is Finland's third-largest lake and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands.",
+      "Inari is Finland's third-largest lake by area and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands.",
     formation:
       "The lake basin occupies a depression carved by last-glacial erosion in an ancient bedrock zone within the Arctic Circle; the numerous islands are the emergent tops of glacially eroded high ground.",
     observation:
@@ -14807,7 +14807,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both Gunung Mulu National Park and the Niah Caves are limestone karst landforms in Sarawak, but Gunung Mulu is known for its Pinnacles and the world's largest known cave chamber (the Sarawak Chamber), while Niah is known for its ancient human archaeological site.",
     concept:
-      "The Sarawak Chamber measures 600 m by 415 m and 80 m high, the largest known natural cave chamber in the world, and Deer Cave is the world's second-largest cave, making Gunung Mulu an important sample for studying the relationship between the scale of tropical karst cave systems and their biodiversity.",
+      "The Sarawak Chamber measures 600 m by 415 m and 80 m high, the largest known natural cave chamber in the world, and Deer Cave has one of the world's largest cave passages, making Gunung Mulu an important sample for studying the relationship between the scale of tropical karst cave systems and their biodiversity.",
     history:
       "Gunung Mulu National Park was inscribed on the UNESCO World Heritage List in 2000; its caves are home to millions of swiftlets and bats, and the park has long been part of the traditional territory of the local Penan people.",
   },
@@ -15626,7 +15626,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "lake-balkhash": {
     // 全六段 sources: 面积约 1.64–1.82 万 km²（已写成区间）、世界第十五大湖、第二大咸水湖；**西淡东咸**（伊犁河 73–80% 注入西部，西 <1 g/L、东 3–6 g/L），乌津阿拉尔海峡宽约 3.5 km —— 维基正文原文 western part is fresh water and its eastern half is saline（部分网络摘要把东西说反，本库与原文一致）。湖面是会变的量。核实 2026-09-11，未改动
     seeing:
-      "Lake Balkhash covers about 16,400–18,200 km², making it the world's fifteenth-largest lake and second-largest saline lake, famous for its unusual \"two waters in one lake\" phenomenon.",
+      "Lake Balkhash covers about 16,400–18,200 km², making it, by area, the world's fifteenth-largest lake and second-largest saline lake, famous for its unusual \"two waters in one lake\" phenomenon.",
     formation:
       "The lake's western half, fed by heavy freshwater inflow from the Ili River, has salinity below 1 g/L, while the eastern half, receiving little river input and subject to strong evaporation, reaches 3–6 g/L; the narrow, 3.5-km-wide Uzynaral Strait at the lake's centre prevents the two halves from fully mixing, producing this rare zoned water body.",
     observation:
@@ -16248,7 +16248,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // 全六段 sources: 塞伊汉 + 杰伊汉 + 贝尔丹（塔尔苏斯）三河冲积的三角洲复合体，为地中海地区继尼罗河三角洲之后
     //   第二大的农业平原体系；东为米西斯山、北与西为托罗斯山，阿达纳为核心，古称西里西亚。3 级。2026-09-10 核，verdict: ok。
     seeing:
-      "The Çukurova Plain is the largest alluvial plain on Turkey's eastern Mediterranean coast, built up over a long period by sediment carried by the Seyhan, Ceyhan and Berdan rivers, forming the Mediterranean region's second-largest delta-plain system.",
+      "The Çukurova Plain is the largest alluvial plain on Turkey's eastern Mediterranean coast, built up over a long period by sediment carried by the Seyhan, Ceyhan and Berdan rivers, forming one of the larger delta-plain systems on the Mediterranean coast.",
     formation:
       "The plain was built up by three rivers carrying sediment eroded from the upstream mountains and depositing it near their mouths; it is enclosed by the Misis Mountains to the east and the Taurus Mountains to the north and west, forming a relatively closed alluvial-plain unit.",
     observation:
@@ -16444,7 +16444,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Unlike Croatia's inland wetlands of Lonjsko Polje and Kopački Rit further north, the Neretva Delta is a coastal river-mouth delta directly connected to the Adriatic.",
     concept:
-      "The Neretva Delta is the third-largest delta in the Mediterranean after the Nile and Po, an important sample for studying Mediterranean coastal estuarine wetland ecology.",
+      "The Neretva Delta is one of the larger deltas on the Mediterranean coast, an important sample for studying Mediterranean coastal estuarine wetland ecology.",
     history:
       "The delta plain has been cultivated since Roman times; after modern drainage improvements it became an important citrus and vegetable-growing region for Croatia.",
   },
@@ -17484,7 +17484,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: 主岛面积约 8,394 km²（另有约 9,000 km² 的宽口径），智利岛屿面积第二（次于智利一侧火地岛）。
     //   ✅ 零争议红线：木教堂与传统文化只作建筑与遗产事实，**未写殖民时期传教与原住民关系的评价**。3 级。2026-09-10 核，verdict: ok。
     seeing:
-      "The Chiloé Archipelago is Chile's second-largest island and its surrounding island group; the main island, Chiloé, covers about 8,400 km² and has a consistently rainy, humid climate. Its distinctive stilted wooden churches and folklore are cultural hallmarks of the region.",
+      "The Chiloé Archipelago is made up of the main island, Chiloé — about 8,400 km² and Chile's second-largest island by area — and its surrounding island group, and has a consistently rainy, humid climate. Its distinctive stilted wooden churches and folklore are cultural hallmarks of the region.",
     formation:
       "The archipelago is the remaining high ground of the southern Coastal Range, partially submerged by the sea — part of the transitional landscape where the Andes and the Coastal Range gradually converge and dissolve into the ocean in southern Chile.",
     observation:

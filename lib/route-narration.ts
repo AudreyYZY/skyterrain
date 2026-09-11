@@ -820,12 +820,12 @@ export const ROUTE_NARRATION: Record<
       "上海飞大阪，是从长江三角洲越过东海，到日本关西的城市带。起飞时脚下是长江三角洲的低平原，河网密布、城镇连片。" +
       "离开海岸就是东海，一片开阔的浅海。航程大部分在水上，晴天能看到往来的船只。" +
       "接近日本时，海上出现一片布满岛屿的平静水域，那是濑户内海——本州、四国、九州之间的内海，两岸是狭窄的沿海平原和港口城市，几座跨海大桥把三块陆地连起来。" +
-      "濑户内海的东端就是大阪湾，湾岸的低地是大阪平原，大阪、京都、神户连成一片。关西机场建在大阪湾南部的一座人工岛上，飞机从海上进近降落。一趟航班，从中国东部的三角洲，飞到了日本的第二大城市群。",
+      "濑户内海的东端就是大阪湾，湾岸的低地是大阪平原，大阪、京都、神户连成一片。关西机场建在大阪湾南部的一座人工岛上，飞机从海上进近降落。一趟航班，从中国东部的三角洲，飞到了按人口计日本第二大的城市群。",
     "en-US":
       "Shanghai to Osaka flies from the Yangtze Delta across the East China Sea to the Kansai city belt of Japan. On take-off you are over the low plain of the Yangtze Delta, water-netted and city-covered." +
       " Past the coast is the East China Sea, an open shallow sea, with most of the flight over water and passing ships visible on a clear day." +
       " Approaching Japan, a calm island-filled stretch of water appears: the Seto Inland Sea — the sea between Honshu, Shikoku and Kyushu, with narrow coastal plains and port cities on either shore and long bridges linking the three landmasses." +
-      " At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan.",
+      " At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan by population.",
     },
     travel: {
     "zh-CN":
@@ -1892,11 +1892,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "奥斯陆飞特罗姆瑟，几乎飞完了挪威的全部长度，从首都一直飞到北极圈以北。起飞后先经过多夫勒山的高山高原——挪威地势的一道大分水岭。" +
-      "继续向北，进入诺尔兰的海岸山地：一列列尖锐的花岗岩峰几乎直接从海里拔起，斯瓦蒂森冰帽——大陆挪威第二大的冰原——就压在这一带的山顶上，几条冰川舌一直伸到接近海平面的地方。" +
+      "继续向北，进入诺尔兰的海岸山地：一列列尖锐的花岗岩峰几乎直接从海里拔起，斯瓦蒂森冰帽——按面积计大陆挪威第二大的冰原——就压在这一带的山顶上，几条冰川舌一直伸到接近海平面的地方。" +
       "越过北极圈，海面上出现罗弗敦群岛——一道由尖峭山峰组成的“墙”，从海里陡然升起，是挪威最上镜的风景之一。特罗姆瑟就在再往北的一座峡湾中的小岛上。",
     "en-US":
       "Oslo to Tromsø flies nearly the full length of Norway, from the capital to well north of the Arctic Circle. After take-off you cross the high plateau of Dovrefjell — a major watershed of the country." +
-      " Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway — capping the summits here, its glacier tongues reaching down almost to sea level." +
+      " Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway by area — capping the summits here, its glacier tongues reaching down almost to sea level." +
       " Over the Arctic Circle the Lofoten Islands appear on the sea — a 'wall' of jagged peaks rising sheer from the water, one of Norway's most photographed landscapes. Tromsø is farther north still, on a small island in a fjord.",
     },
     // travel sources: 全四段（study/travel × 中英）: 斯瓦蒂森大陆挪威第二大冰原、林根阿尔卑斯、芬马克高原萨米驯鹿放牧（只写土地利用）与本库一致。核实 2026-09-11
@@ -1916,11 +1916,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "特隆赫姆飞博德，沿诺尔兰海岸继续北飞，跨过北极圈，是诺尔兰铁路走的同一条路线（只是飞机快得多）。起飞后沿海岸线飞行，右侧是斯堪的纳维亚山脉的余脉，左侧是挪威海。" +
-      "航线中段经过斯瓦蒂森冰帽——大陆挪威第二大的冰原，从空中能看到几条冰川舌从主体冰帽向峡湾方向流下，末端已经很接近海平面。这一带正好在北极圈附近，是夏天午夜阳光和冬天极光都能看到的过渡地带。" +
+      "航线中段经过斯瓦蒂森冰帽——按面积计大陆挪威第二大的冰原，从空中能看到几条冰川舌从主体冰帽向峡湾方向流下，末端已经很接近海平面。这一带正好在北极圈附近，是夏天午夜阳光和冬天极光都能看到的过渡地带。" +
       "接近博德，海面出现群岛，博德本身建在一个伸进海里的半岛上，城南就是萨尔特海峡的大漩涡。",
     "en-US":
       "Trondheim to Bodø continues north along the Nordland coast, crossing the Arctic Circle, on the same route as the Nordland railway (just much faster by air). After take-off you follow the coastline, the tail of the Scandinavian Mountains to the right, the Norwegian Sea to the left." +
-      " Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
+      " Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway by area — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
       " Approaching Bodø, islands appear on the sea, and Bodø itself is built on a peninsula reaching into the water, with the Saltstraumen maelstrom just south of the city.",
     },
     // travel sources: 全四段（study/travel × 中英）: 斯瓦蒂森同上。核实 2026-09-11
@@ -2950,10 +2950,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "维也纳飞格拉茨，是一趟深入奥地利东南部施泰尔马克州的短途航线。起飞后不久，脚下出现维也纳盆地开阔平坦的地势，随后飞机进入维也纳森林——阿尔卑斯山脉向东延伸的最后一段石灰岩丘陵地带，森林覆盖率极高。" +
-      "飞机继续向西南，一片相对平缓的喀斯特高原出现在下方——拉克斯—施内山，海拔2076米的施内山是阿尔卑斯山脉向东延伸中最后一座超过2000米的山峰，也是维也纳市民熟悉的“后山”。越过这片山地后，飞机降落在穆尔河畔的格拉茨——奥地利第二大城市。",
+      "飞机继续向西南，一片相对平缓的喀斯特高原出现在下方——拉克斯—施内山，海拔2076米的施内山是阿尔卑斯山脉向东延伸中最后一座超过2000米的山峰，也是维也纳市民熟悉的“后山”。越过这片山地后，飞机降落在穆尔河畔的格拉茨——按人口计奥地利第二大城市。",
     "en-US":
       "Flying from Vienna to Graz is a short hop deep into Styria in south-eastern Austria. Soon after take-off, the broad, flat Vienna Basin appears below, and the flight then enters the Wienerwald, the easternmost, densely forested stretch of limestone hills where the Alps taper off." +
-      " Continuing south-west, a comparatively gentle karst highland comes into view — the Rax-Schneeberg Group, whose Schneeberg, at 2,076 m, is the easternmost peak in the Alps to exceed 2,000 m and a familiar \"local mountain\" for Vienna's residents. Past this highland, the flight descends into Graz on the Mur River, Austria's second-largest city.",
+      " Continuing south-west, a comparatively gentle karst highland comes into view — the Rax-Schneeberg Group, whose Schneeberg, at 2,076 m, is the easternmost peak in the Alps to exceed 2,000 m and a familiar \"local mountain\" for Vienna's residents. Past this highland, the flight descends into Graz on the Mur River, Austria's second-largest city by population.",
     },
     // travel sources: 全四段（study/travel × 中英）: 施内山 2076 m、格拉茨为奥地利第二大城市与本库一致；UNESCO 年份原写 2000，按 1 级来源改为 1999。核实 2026-09-11
     travel: {
@@ -3038,7 +3038,7 @@ export const ROUTE_NARRATION: Record<
     // travel sources: 全四段（study/travel × 中英）: 莫尔斯山终碛丘陵与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "哥本哈根到奥胡斯飞约40分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约3小时的城际火车。奥胡斯机场离市区约35公里。奥胡斯是丹麦第二大城市，是探索莫尔斯山地与锡尔克堡湖区的理想基地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "哥本哈根到奥胡斯飞约40分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约3小时的城际火车。奥胡斯机场离市区约35公里。奥胡斯是按人口计丹麦第二大城市，是探索莫尔斯山地与锡尔克堡湖区的理想基地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
       "Copenhagen to Aarhus is about 40 minutes, same time zone, operated by SAS (ATR 72) as one of Denmark's domestic routes; an intercity train (about 3 hours) is another option. Aarhus Airport is about 35 km from the centre. Aarhus is Denmark's second city and an ideal base for exploring Mols Bjerge and the Silkeborg Lake District. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
@@ -3120,7 +3120,7 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "斯德哥尔摩飞哥德堡，是一趟横跨瑞典中南部、连接两大城市的航线。起飞后不久，脚下展开瑞典中部典型的森林与湖泊交织地貌，飞机中途掠过蒂韦登——历史上曾长期是瑞典南北两大传统区域之间天然屏障的古老松林地带，地表散布着末次冰期冰川搬运遗留的大量花岗岩巨砾，古老松林与沼泽小湖交织，是研究冰川漂砾地貌的典型野外样本。" +
-      "越过蒂韦登后，飞机继续向西南飞行，逐渐进入瑞典西海岸地区，脚下的森林景观渐渐让位于沿海平原与近岸礁岛，最终降落在哥德堡——瑞典第二大城市与重要的港口门户，也是探索布胡斯兰海岸花岗岩礁岛地貌的出发地。",
+      "越过蒂韦登后，飞机继续向西南飞行，逐渐进入瑞典西海岸地区，脚下的森林景观渐渐让位于沿海平原与近岸礁岛，最终降落在哥德堡——按人口计瑞典第二大城市与重要的港口门户，也是探索布胡斯兰海岸花岗岩礁岛地貌的出发地。",
     "en-US":
       "Flying from Stockholm to Gothenburg crosses south-central Sweden, linking the country's two largest cities. Soon after take-off, the landscape below shows the forest and lake terrain typical of central Sweden, and the flight passes over Tiveden midway — an old pine-forest area that historically served as a natural barrier between Sweden's traditional northern and southern regions, its ground scattered with granite boulders left by last-glacial transport." +
       " Past Tiveden, the flight continues south-west, gradually approaching Sweden's west coast before landing in Gothenburg, the country's second city and an important port gateway.",
@@ -3264,10 +3264,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "赫尔辛基飞伊瓦洛，是一趟纵贯芬兰全境、抵达北极圈深处拉普兰腹地的航线，全程距离接近1000公里，是芬兰国内最长的定期航班之一。飞机离开赫尔辛基后持续向北飞行，脚下的地貌依次经过南部湖区、中部针叶林带，逐渐过渡为北部图恩图里荒原，气候也由温带大陆性转为亚北极气候。" +
-      "临近伊瓦洛降落前，脚下展开伊纳里湖开阔的水面——芬兰第三大湖，也是北极圈内芬兰面积最大的湖泊，湖中散布约3300座岛屿，是萨米人传统聚居区伊纳里地区的地理核心，飞机随后降落在伊瓦洛，是探索伊纳里地区萨米文化的门户机场。",
+      "临近伊瓦洛降落前，脚下展开伊纳里湖开阔的水面——按面积计芬兰第三大湖，也是北极圈内芬兰面积最大的湖泊，湖中散布约3300座岛屿，是萨米人传统聚居区伊纳里地区的地理核心，飞机随后降落在伊瓦洛，是探索伊纳里地区萨米文化的门户机场。",
     "en-US":
       "Flying from Helsinki to Ivalo spans the length of Finland to reach deep into Arctic Lapland. After leaving Helsinki the flight continues north, the landscape below passing in turn through the southern lake district, the conifer forest of central Finland, and finally the tunturi wilderness of the north." +
-      " Approaching Ivalo, the broad waters of Lake Inari come into view below — Finland's third-largest lake and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands, the geographic core of the traditional Sámi Inari region — before the flight lands at Ivalo, the gateway airport for exploring Sámi culture in the Inari region.",
+      " Approaching Ivalo, the broad waters of Lake Inari come into view below — Finland's third-largest lake by area and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands, the geographic core of the traditional Sámi Inari region — before the flight lands at Ivalo, the gateway airport for exploring Sámi culture in the Inari region.",
     },
     // travel sources: 全四段（study/travel × 中英）: 伊纳里湖约 3300 座岛与本库一致；赫尔辛基—伊瓦洛「接近 1000 公里」（大圆约 927 km）。核实 2026-09-11
     travel: {
@@ -3444,10 +3444,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "首尔金浦飞釜山，是连接韩国两大城市的传统航线，也是首尔通往东南沿海最便捷的空中通道。飞机离开金浦后向东南飞行，中途掠过俗离山——韩国中部一座相对孤立的花岗岩与片麻岩山体，1970年设为韩国第六座国家公园，山麓法住寺记录了这一区域悠久的佛教文化传统。" +
-      "越过俗离山后，飞机继续向东南飞行，临近降落前脚下展开洛东江河口三角洲——洛东江注入沿海处发育的辫状三角洲，乙淑岛沙洲是候鸟迁徙的重要中途停歇地，飞机随后降落在釜山——韩国第二大城市与最大港口，也是釜山国际电影节每年秋季的举办地。",
+      "越过俗离山后，飞机继续向东南飞行，临近降落前脚下展开洛东江河口三角洲——洛东江注入沿海处发育的辫状三角洲，乙淑岛沙洲是候鸟迁徙的重要中途停歇地，飞机随后降落在釜山——按人口计韩国第二大城市与最大港口，也是釜山国际电影节每年秋季的举办地。",
     "en-US":
       "Flying from Seoul Gimpo to Busan links Korea's two largest cities. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, its Beopjusa Temple recording this area's long Buddhist tradition." +
-      " Past Songnisan, the flight continues south-east, and just before landing the Nakdong River Estuary unfolds below — a braided delta formed where the Nakdong River meets the coast, with the Eulsukdo sandbar an important stopover for migratory birds — before the flight lands in Busan, South Korea's second-largest city and largest port.",
+      " Past Songnisan, the flight continues south-east, and just before landing the Nakdong River Estuary unfolds below — a braided delta formed where the Nakdong River meets the coast, with the Eulsukdo sandbar an important stopover for migratory birds — before the flight lands in Busan, South Korea's second-largest city by population and largest port.",
     },
     // travel sources: 全四段（study/travel × 中英）: 俗离山 1970 年韩国第六座国家公园；釜山第二大城市、最大港口。核实 2026-09-11
     travel: {
@@ -4310,7 +4310,7 @@ export const ROUTE_NARRATION: Record<
       "飞机继续向南飞行，越过莫因库姆沙漠与图尔克斯坦州的绿洲农业带，最终降落在希姆肯特——哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今是通往突厥斯坦古城的南方门户，也是哈萨克斯坦南部人口最密集的地区之一。",
     "en-US":
       "Flying from Astana to Shymkent is the core north-south trunk route in Kazakhstan, spanning about 974 km and linking the northern steppe capital with a southern Silk Road hub city. After leaving Astana the flight heads south, first crossing the Saryarka steppe and Kazakh Uplands before gradually transitioning into more arid desert terrain." +
-      " The flight continues south, crossing the Moiynkum Desert and the oasis-agriculture belt of Turkistan Region, before landing in Shymkent, Kazakhstan's third-largest city, historically an important Silk Road trading centre and today the southern gateway to the ancient city of Turkestan.",
+      " The flight continues south, crossing the Moiynkum Desert and the oasis-agriculture belt of Turkistan Region, before landing in Shymkent, Kazakhstan's third-largest city by population, historically an important Silk Road trading centre and today the southern gateway to the ancient city of Turkestan.",
     },
     // travel sources: 全四段（study/travel × 中英）: 全程约 974 km 与大圆一致；希姆肯特哈萨克斯坦第三大城市。核实 2026-09-11
     travel: {
@@ -4325,10 +4325,10 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "阿拉木图飞希姆肯特，是连接哈萨克斯坦东南部与南部两大城市的航线，全程约620公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
-      "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展，与周边绿洲河谷的绿色植被带形成清晰的边界；越过沙漠后，飞机降落在希姆肯特——哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今仍是南部重要的工业与人口中心。",
+      "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展，与周边绿洲河谷的绿色植被带形成清晰的边界；越过沙漠后，飞机降落在希姆肯特——按人口计哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今仍是南部重要的工业与人口中心。",
     "en-US":
       "Flying from Almaty to Shymkent links Kazakhstan's southeastern and southern hub cities, spanning about 620 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
-      " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below, its boundary with the green vegetation belts of surrounding oasis valleys clearly defined; past the desert, the flight lands in Shymkent, Kazakhstan's third-largest city and historically an important Silk Road trading centre.",
+      " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below, its boundary with the green vegetation belts of surrounding oasis valleys clearly defined; past the desert, the flight lands in Shymkent, Kazakhstan's third-largest city by population and historically an important Silk Road trading centre.",
     },
     // travel sources: 全四段（study/travel × 中英）: 全程约 620 km 与大圆一致；莫因库姆沙漠。核实 2026-09-11
     travel: {
@@ -4685,9 +4685,9 @@ export const ROUTE_NARRATION: Record<
     // study sources: 全四段（study/travel × 中英）: 洞庭湖「中国第二大淡水湖」与本库 terrain 一致（面积次于鄱阳湖）；长沙「四大火炉之一」带限定。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞长沙，是从华北平原一路穿过中原、跨过长江，抵达湘江畔的一条线。飞机离开首都机场，先掠过太行山东缘，随后进入华北平原——黄河、海河冲积出的大平原。继续向南，飞过大别山——一列不高但明显的山地，横在中原与长江中游之间，也是淮河与长江的分水岭。越过大别山进入长江中下游平原，河湖交错、圩田密布，飞机随后抵达洞庭湖——中国第二大淡水湖，接纳湘、资、沅、澧四水，也是长江重要的调蓄湖泊。过洞庭湖不久便是长沙，这座城市依湘江而建，西岸是岳麓山，东岸是老城区。",
+      "北京飞长沙，是从华北平原一路穿过中原、跨过长江，抵达湘江畔的一条线。飞机离开首都机场，先掠过太行山东缘，随后进入华北平原——黄河、海河冲积出的大平原。继续向南，飞过大别山——一列不高但明显的山地，横在中原与长江中游之间，也是淮河与长江的分水岭。越过大别山进入长江中下游平原，河湖交错、圩田密布，飞机随后抵达洞庭湖——中国面积第二大的淡水湖，接纳湘、资、沅、澧四水，也是长江重要的调蓄湖泊。过洞庭湖不久便是长沙，这座城市依湘江而建，西岸是岳麓山，东岸是老城区。",
     "en-US":
-      "Beijing to Changsha flies from the North China Plain, across the Central Plain and the Yangtze, to the city on the banks of the Xiang River. Leaving the capital, the flight first skirts the eastern edge of the Taihang Mountains before crossing the North China Plain, built by the silt of the Yellow and Hai rivers. Farther south it crosses the Dabie Mountains, a modest but distinct range set between the Central Plain and the middle Yangtze, and the divide between the Huai and Yangtze river systems. Beyond the Dabie the flight crosses the Middle–Lower Yangtze Plain, a low-lying patchwork of rivers, lakes and diked fields, before reaching Dongting Lake — China's second-largest freshwater lake, fed by the Xiang, Zi, Yuan and Li rivers and an important flood-storage basin for the Yangtze. Changsha follows shortly after Dongting Lake, a city built along the Xiang River with Yuelu Mountain on the west bank and the old town on the east.",
+      "Beijing to Changsha flies from the North China Plain, across the Central Plain and the Yangtze, to the city on the banks of the Xiang River. Leaving the capital, the flight first skirts the eastern edge of the Taihang Mountains before crossing the North China Plain, built by the silt of the Yellow and Hai rivers. Farther south it crosses the Dabie Mountains, a modest but distinct range set between the Central Plain and the middle Yangtze, and the divide between the Huai and Yangtze river systems. Beyond the Dabie the flight crosses the Middle–Lower Yangtze Plain, a low-lying patchwork of rivers, lakes and diked fields, before reaching Dongting Lake — China's second-largest freshwater lake by area, fed by the Xiang, Zi, Yuan and Li rivers and an important flood-storage basin for the Yangtze. Changsha follows shortly after Dongting Lake, a city built along the Xiang River with Yuelu Mountain on the west bank and the old town on the east.",
     },
     travel: {
     "zh-CN":
@@ -5670,11 +5670,11 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "圣地亚哥飞康塞普西翁，向南穿越智利中央谷地最富庶的一段。舷窗下方的智利中央谷地是整齐的方格状农田与成片的葡萄园，两侧分别是低矮的海岸山脉与终年积雪的安第斯山脉，这是理解智利“海岸山脉—中央谷地—安第斯山脉”三段式地貌骨架的经典剖面。" +
-      "越往南飞，田野逐渐被更为潮湿的绿色植被取代，降水也明显增多——这是地中海式气候向温带海洋性气候过渡的信号。飞机降落在比奥比奥河河口附近的康塞普西翁，这里是智利第二大都会区，也是重要的工业与港口城市。2010年智利大地震及随后引发的海啸曾对这一带造成严重影响，此后完成了大规模重建。" +
+      "越往南飞，田野逐渐被更为潮湿的绿色植被取代，降水也明显增多——这是地中海式气候向温带海洋性气候过渡的信号。飞机降落在比奥比奥河河口附近的康塞普西翁，这里是智利最大的都会区之一，也是重要的工业与港口城市。2010年智利大地震及随后引发的海啸曾对这一带造成严重影响，此后完成了大规模重建。" +
       "这条航线展示了中央谷地由北向南逐渐“变绿变湿”的渐变过程，也把乘客带到智利多雨地带的门户。",
     "en-US":
       "Santiago to Concepción heads south across the richest stretch of Chile's Central Valley. Below, the Chilean Central Valley is a neat grid of farmland and vineyards, flanked by the low Coastal Range on one side and the permanently snow-capped Andes on the other — a classic cross-section of Chile's three-part landscape structure." +
-      " Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, Chile's second-largest metro area and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
+      " Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, one of Chile's largest metro areas and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
       " This route traces the Central Valley's gradual shift from dry to green and wet moving south, delivering passengers to the doorstep of Chile's rainier belt.",
     },
     // travel sources: 全四段（study/travel × 中英）: 大康塞普西翁为智利第二大都会区；2010 年大地震为已了结的自然灾害史。核实 2026-09-11
