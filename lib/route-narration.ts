@@ -1523,6 +1523,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-edi": {
+    // study sources: 全四段（study/travel × 中英）: 奇尔特恩白垩丘陵、奔宁「英格兰的脊梁」、峰区为英格兰第一座国家公园、爱丁堡城堡立于火山岩颈，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞爱丁堡，是一趟很短的航班，几乎把英格兰从南到北纵切了一遍。起飞后先掠过泰晤士河谷北缘的奇尔特恩丘陵——一道白垩岩的缓坡，是伦敦盆地的边。" +
@@ -1548,6 +1549,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-gla": {
+    // study sources: 全四段（study/travel × 中英）: 湖区冰川刨蚀、斯科费尔峰英格兰最高（978 m）与本库一致；格拉斯哥「曾经的造船中心」为过去时。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞格拉斯哥，走的航路比飞爱丁堡略偏西。起飞后先是泰晤士河谷北缘的奇尔特恩白垩丘陵，然后是英格兰中部的城市带和峰区的荒原高地。" +
@@ -1571,6 +1573,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-inv": {
+    // study sources: 全四段（study/travel × 中英）: 凯恩戈姆为不列颠面积最大高山高原、五座超 1200 m 峰；大峡谷断层谷串起尼斯湖，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞因弗内斯，从英格兰东南一直飞到苏格兰高地的北端。起飞后先是奇尔特恩白垩丘陵和英格兰中部平原，接着是奔宁山脉——纵贯英格兰北部的低山脊。" +
@@ -1594,6 +1597,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-bfs": {
+    // study sources: 全四段（study/travel × 中英）: 塞文河不列颠最长；Eryri / 斯诺登 1085 m 与本库一致；莫恩山花岗岩圆顶；北爱尔兰用中性地理名。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞贝尔法斯特，从英格兰东南横穿到爱尔兰岛东北。起飞后先是奇尔特恩白垩丘陵，然后地面是英格兰中西部的平原，塞文河——不列颠最长的河——在这里蜿蜒，河口有巨大的潮差。" +
@@ -1617,6 +1621,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "brs-edi": {
+    // study sources: 全四段（study/travel × 中英）: 塞文河口涌潮；奔宁分水岭。核实 2026-09-11
     study: {
     "zh-CN":
       "布里斯托尔飞爱丁堡，从英格兰西南飞到苏格兰。起飞时脚下是塞文河的宽阔河口——不列颠最长的河在这里入海，落潮时露出大片泥滩，河口偶尔能看到一道涌潮（Severn Bore）。" +
@@ -1640,6 +1645,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "edi-bfs": {
+    // study sources: 全四段（study/travel × 中英）: 北海峡最窄约 20 km；斯利夫多纳德 850 m 为北爱尔兰最高峰。核实 2026-09-11
     study: {
     "zh-CN":
       "爱丁堡飞贝尔法斯特，是一趟很短的跨海航班，把苏格兰和北爱尔兰连起来。起飞后不久就到南部高地——苏格兰与英格兰之间那片平缓的绿色牧羊丘陵，这里也是苏格兰西南向爱尔兰海倾斜的一侧。" +
@@ -1663,6 +1669,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-abz": {
+    // study sources: 全四段（study/travel × 中英）: 沼泽地排干后部分低于海平面、切维厄特火山岩丘陵、阿伯丁「花岗岩之城」与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞阿伯丁，沿着英格兰和苏格兰的东海岸一路北上。起飞后先是奇尔特恩白垩丘陵，然后进入英格兰东部——一片极其平坦的低地，其中沼泽地（The Fens）曾是浅海和沼泽，被人工排干成海拔接近零、甚至低于海平面的农田，河渠笔直。" +
@@ -2005,6 +2012,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-nce": {
+    // study sources: 全四段（study/travel × 中英）: 凡尔登「常被称作欧洲最深的峡谷之一」（#264 前已修）；多姆山链与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞尼斯，从法国北部一路飞到地中海岸，横穿这个国家的几个主要地形单元。起飞后先越过巴黎盆地——一个巨大的沉积盆地，塞纳河及其支流在这里冲出层层叠叠的低丘和田野，法国近一半人口住在这一带。" +
@@ -2030,6 +2038,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-mrs": {
+    // study sources: 全四段（study/travel × 中英）: 罗讷河谷、卡马格三角洲与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞马赛，是法国最经典的南北纵贯航线之一，走的路线和高铁东南线大致平行。起飞后先越过巴黎盆地的农田和低丘，然后进入中央高原——法国最大的死火山群所在地，多姆山链的熔岩穹丘从空中很好辨认。" +
@@ -2053,6 +2062,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-tls": {
+    // study sources: 全四段（study/travel × 中英）: 塔恩峡谷、图卢兹「玫瑰之城」与空客总部与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞图卢兹，从法国北部飞到西南部的“玫瑰之城”，也是空客总部所在地。起飞后先越过巴黎盆地——塞纳河冲出的层叠丘陵和田野。" +
@@ -2076,6 +2086,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-bod": {
+    // study sources: 全四段（study/travel × 中英）: 波尔多「月亮港」、皮拉沙丘「欧洲最高沙丘」（未写会过期的高度）与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞波尔多，是法国两大沉积盆地之间的一条短航线。起飞后先越过巴黎盆地——一片被塞纳河及支流冲积、层层叠叠的低丘农田，法国近一半人口住在这个盆地里。" +
@@ -2100,6 +2111,7 @@ export const ROUTE_NARRATION: Record<
 
 
   "cdg-nte": {
+    // study sources: 全四段（study/travel × 中英）: 卢瓦尔河法国最长（约 1006 km）、卢瓦尔河谷列入 UNESCO 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞南特，沿着塞纳河流域和卢瓦尔河流域之间的分水岭往西南飞。起飞后先越过巴黎盆地西缘——农田和低丘缓缓向大西洋倾斜，田块比盆地中心更疏朗。" +
@@ -2123,6 +2135,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lys-mrs": {
+    // study sources: 全四段（study/travel × 中英）: 韦科尔二战抵抗据点（简短史实）、阿尔克桥跨度约 59 m 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "里昂飞马赛，沿罗讷河谷南下，是一条很短却地貌丰富的线。起飞后不久，右侧（西侧）能看到韦科尔高原——一块被陡崖围住的石灰岩台地，二战期间是抵抗运动的据点之一（简短史实）。" +
@@ -2146,6 +2159,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "mrs-aja": {
+    // study sources: 全四段（study/travel × 中英）: 卡朗格、科西嘉二十多座峰超 2000 m、阿雅克肖为拿破仑出生地；未涉科西嘉现代政治。核实 2026-09-11
     study: {
     "zh-CN":
       "马赛飞阿雅克肖，从法国本土飞到地中海上的科西嘉岛。起飞后不久就能看到卡朗格——马赛和卡西斯之间一段石灰岩峡湾海岸，陡峭的白色崖壁直插进湛蓝的海水，是法国最上镜的海岸线之一。" +
@@ -2169,6 +2183,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "nce-aja": {
+    // study sources: 全四段（study/travel × 中英）: 钦托山 2706 m 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "尼斯飞阿雅克肖，是蔚蓝海岸和科西嘉岛之间最短的航线，几乎全程在地中海上空飞行。起飞后很快离开法国本土海岸，飞越一片开阔的蓝色海面——这段海域是利古里亚海的一部分，法国、意大利和科西嘉之间的三角海域。" +
@@ -2519,6 +2534,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ber-muc": {
+    // study sources: 全四段（study/travel × 中英）: 图林根森林约 70 km、海西造山与本库一致；慕尼黑机场原写「有高铁直达」，改为 S-Bahn 直达、高铁需总站换乘。核实 2026-09-11
     study: {
     "zh-CN":
       "柏林飞慕尼黑，是从北德平原一路南下、飞进巴伐利亚腹地的航线。起飞后不久，脚下还是柏林周边平坦的湖泊与农田；越往南，地面渐渐隆起，进入图林根盆地南缘一条连绵的深绿色山脊——图林根森林，一条走向西北—东南、由海西造山运动形成的古老山地，长约70公里，山脊浑圆、轮廓清晰，与北边平缓的盆地农田形成鲜明对比。越过图林根森林，飞机继续南下，进入巴伐利亚的丘陵和农田，慕尼黑就坐落在伊萨尔河畔、巴伐利亚阿尔卑斯山北麓。",
@@ -2527,7 +2543,7 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "柏林到慕尼黑飞约1小时5分钟，同一时区，是德国最繁忙的国内航线之一，也可以选择约4小时的城际快车（ICE）。两座城市气质迥异：柏林是充满当代艺术气息的首都，慕尼黑则保留着传统巴伐利亚风情。慕尼黑机场离市区约30公里，有高铁直达。十月啤酒节期间（9月中旬至10月初）往返两地的航班和住宿都很紧张，建议提前订。多数国家公民短期旅游按申根区规定。",
+      "柏林到慕尼黑飞约1小时5分钟，同一时区，是德国最繁忙的国内航线之一，也可以选择约4小时的城际快车（ICE）。两座城市气质迥异：柏林是充满当代艺术气息的首都，慕尼黑则保留着传统巴伐利亚风情。慕尼黑机场离市区约30公里，有城铁（S-Bahn）直达市区，换乘长途高铁需到慕尼黑火车总站。十月啤酒节期间（9月中旬至10月初）往返两地的航班和住宿都很紧张，建议提前订。多数国家公民短期旅游按申根区规定。",
     "en-US":
       "Berlin to Munich is about 1 hour 5 minutes, same time zone, one of Germany's busiest domestic routes — the ICE high-speed train (about 4 hours) is another option. The two cities feel very different: Berlin is the capital with a strong contemporary-art scene, Munich keeps a traditional Bavarian character. Munich Airport is about 30 km from the centre with a rail line running directly there. During Oktoberfest (mid-September to early October) flights and accommodation between the two cities get tight — book ahead. Citizens of most countries follow Schengen-area rules for short visits.",
     },
@@ -2535,6 +2551,7 @@ export const ROUTE_NARRATION: Record<
 
 
   "ber-cgn": {
+    // study sources: 全四段（study/travel × 中英）: 布罗肯峰年均起雾近 300 天、女巫传说以「民间传说」限定、条顿堡战役地点「据信」与本库一致；科隆 / 波恩机场有 ICE 与 S-Bahn。核实 2026-09-11
     study: {
     "zh-CN":
       "柏林飞科隆，是一趟横穿德国中部、飞越两片古老山地的航线。起飞后不久，地面隆起成一片孤立耸立在平原上的深色森林山地——哈茨山，主峰布罗肯峰终年云雾缭绕，是德国北部平原上唯一能看到高山气候的地方，古老的花岗岩山顶在民间传说中长期被认为是女巫聚会之地。越过哈茨山，飞机继续西行，进入条顿堡森林——一条由多列平行山脊组成的单面山地带，公元9年古罗马与日耳曼部落的著名战役据信就发生在这一带。翻过条顿堡森林后，飞机沿莱茵河下降，抵达以哥特式大教堂闻名的科隆。",
@@ -2550,6 +2567,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "muc-ham": {
+    // study sources: 全四段（study/travel × 中英）: 北德平原第四纪冰川地貌与本库一致；汉堡机场原写「地铁直达」，改为 S-Bahn。核实 2026-09-11
     study: {
     "zh-CN":
       "慕尼黑飞汉堡，是一趟纵贯德国南北的航线，从巴伐利亚阿尔卑斯山脚下一路飞到北海之滨。起飞后先经过图林根森林的连绵山脊——一条由海西造山运动留下的古老山地，随后是孤立耸立在平原上的哈茨山，布罗肯峰终年云雾缭绕，年均起雾天数近300天。越过哈茨山，地面逐渐变得平坦开阔，进入北德平原——第四纪冰川反复塑造留下的低地，终碛垄和冰蚀小湖星罗棋布。飞机全程几乎看遍了德国从南到北的地形变化，最终降落在易北河畔的汉堡。",
@@ -2558,13 +2576,14 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "慕尼黑到汉堡飞约1小时15分钟，同一时区，是德国南北向最长的国内航线之一，也可以选择约6小时的城际快车。两地气候和文化都有明显差异：慕尼黑属大陆性气候、巴伐利亚传统浓厚，汉堡属温带海洋性气候、港口贸易气息浓厚。汉堡机场离市区约10公里，有地铁直达市中心。多数国家公民短期旅游按申根区规定。",
+      "慕尼黑到汉堡飞约1小时15分钟，同一时区，是德国南北向最长的国内航线之一，也可以选择约6小时的城际快车。两地气候和文化都有明显差异：慕尼黑属大陆性气候、巴伐利亚传统浓厚，汉堡属温带海洋性气候、港口贸易气息浓厚。汉堡机场离市区约10公里，有城铁（S-Bahn）直达市中心。多数国家公民短期旅游按申根区规定。",
     "en-US":
-      "Munich to Hamburg is about 1 hour 15 minutes, same time zone, one of Germany's longest north–south domestic routes — the ICE high-speed train (about 6 hours) is another option. The climate and culture differ noticeably between the two: Munich has a continental climate and strong Bavarian traditions, while Hamburg has a temperate maritime climate and a strong port-trade character. Hamburg Airport is about 10 km from the centre with a metro line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
+      "Munich to Hamburg is about 1 hour 15 minutes, same time zone, one of Germany's longest north–south domestic routes — the ICE high-speed train (about 6 hours) is another option. The climate and culture differ noticeably between the two: Munich has a continental climate and strong Bavarian traditions, while Hamburg has a temperate maritime climate and a strong port-trade character. Hamburg Airport is about 10 km from the centre with an S-Bahn line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
     },
   },
 
   "fra-muc": {
+    // study sources: 全四段（study/travel × 中英）: 施瓦本汝拉阿尔布陡崖近 180 km、索伦霍芬始祖鸟化石与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "法兰克福飞慕尼黑，是一趟横穿德国西南部两片侏罗纪石灰岩台地的航线。起飞后不久，地面出现一片明显的地形分界——施瓦本汝拉山，西北边缘一道连续近180公里的陡崖（阿尔布陡崖）俯瞰内卡河谷，台地内部喀斯特溶洞密布。越过施瓦本汝拉山，飞机进入弗兰肯汝拉山——同一套侏罗纪石灰岩台地向东北的延续，索伦霍芬一带出产的精细石灰岩因保存了包括始祖鸟在内的大量化石而闻名。翻过弗兰肯汝拉山后，飞机继续南下，抵达巴伐利亚阿尔卑斯山北麓的慕尼黑。",
@@ -2580,6 +2599,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "fra-drs": {
+    // study sources: 全四段（study/travel × 中英）: 瓦塞尔库佩 950 m、德国滑翔运动发源地与本库一致；德累斯顿机场 S-Bahn 直达。核实 2026-09-11
     study: {
     "zh-CN":
       "法兰克福飞德累斯顿，是一趟穿越德国中部几片古老山地的航线。起飞后先经过罗恩山——一座早已停止活动的死火山遗迹，玄武质喷发留下的高地边缘散布着许多孤立火山颈，核心区域“高罗恩”最高点瓦塞尔库佩峰海拔950米，因视野开阔、气流稳定，是德国滑翔机运动的发源地。越过罗恩山，飞机进入图林根森林——一条走向西北—东南、山脊浑圆的古老山地，是海西造山运动留下的痕迹。翻过图林根森林后，飞机继续东行，降落在易北河畔、以巴洛克老城闻名的德累斯顿。",
@@ -2595,6 +2615,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "muc-drs": {
+    // study sources: 全四段（study/travel × 中英）: 厄尔士山近 800 年采矿、2019 年跨德捷列入 UNESCO 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "慕尼黑飞德累斯顿，是一趟穿越厄尔士山脉的短途航线。起飞后不久，脚下出现一片浑圆低矮的森林山地——厄尔士山脉，德国萨克森州与捷克交界一带的古老山脉，因近800年几乎不间断的银、锡、钴矿开采史而得名“矿石山”，山间至今保留着传统采矿聚落和精心规划的水利系统，2019年这片矿业文化景观跨德国、捷克两国列入世界遗产。越过厄尔士山脉，飞机继续北飞，降落在易北河畔的德累斯顿——厄尔士山脉正是这座巴洛克名城通往南方的天然屏障。",
@@ -2610,6 +2631,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "fra-ham": {
+    // study sources: 全四段（study/travel × 中英）: 福格尔斯山与本库一致；汉堡机场原写「地铁直达」，改为 S-Bahn。核实 2026-09-11
     study: {
     "zh-CN":
       "法兰克福飞汉堡，是一趟从德国中部飞向北海之滨的航线。起飞后不久，脚下出现一片宽缓起伏的高地——福格尔斯山，中欧面积最大的连片火山岩地貌，覆盖约2500平方公里，约1900万年前由无数次温和的玄武岩喷发层层堆叠而成，是德国唯一的盾状火山地貌，山体从中心高原向外呈阶梯状台地下降。越过福格尔斯山，地面逐渐变得平坦，进入北德平原——第四纪冰川反复塑造留下的低地，终碛垄和冰蚀小湖星罗棋布。飞机沿着这片平原一路向北，降落在易北河畔的汉堡。",
@@ -2618,9 +2640,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "法兰克福到汉堡飞约1小时5分钟，同一时区，也可以选择约3小时40分钟的城际快车。法兰克福机场是德国最大的国际枢纽，很多国际旅客会经这里转机。汉堡属温带海洋性气候，全年温和多雨，随身备雨具。机场离市区约10公里，有地铁直达市中心。多数国家公民短期旅游按申根区规定。",
+      "法兰克福到汉堡飞约1小时5分钟，同一时区，也可以选择约3小时40分钟的城际快车。法兰克福机场是德国最大的国际枢纽，很多国际旅客会经这里转机。汉堡属温带海洋性气候，全年温和多雨，随身备雨具。机场离市区约10公里，有城铁（S-Bahn）直达市中心。多数国家公民短期旅游按申根区规定。",
     "en-US":
-      "Frankfurt to Hamburg is about 1 hour 5 minutes, same time zone; the ICE high-speed train (about 3 hours 40 minutes) is another option. Frankfurt Airport is Germany's largest international hub, and many international travellers connect through here. Hamburg has a temperate maritime climate, mild and rainy year-round — carry rain gear. The airport is about 10 km from the centre with a metro line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
+      "Frankfurt to Hamburg is about 1 hour 5 minutes, same time zone; the ICE high-speed train (about 3 hours 40 minutes) is another option. Frankfurt Airport is Germany's largest international hub, and many international travellers connect through here. Hamburg has a temperate maritime climate, mild and rainy year-round — carry rain gear. The airport is about 10 km from the centre with an S-Bahn line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
     },
   },
 
@@ -2947,6 +2969,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "dub-kir": {
+    // study sources: 全四段（study/travel × 中英）: 卡朗图希尔 1038.6 m 全岛最高点、艾伦沼泽与本库一致；凯里机场距基拉尼约 15 km。核实 2026-09-11
     study: {
     "zh-CN":
       "都柏林飞凯里，是一趟自东向西横贯爱尔兰全境的航线，从东岸的都柏林平原一路飞越中部低地，抵达西南部凯里郡的高山地带。起飞后不久，脚下展开爱尔兰中部低地开阔平坦的地势——大片农牧用地间点缀着深褐色的隆起泥炭沼泽，艾伦沼泽是其中最具代表性的一片。" +
@@ -2968,6 +2991,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "dub-cfn": {
+    // study sources: 全四段（study/travel × 中英）: 格伦维「爱尔兰面积第二大国家公园」（#264 前已修）与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积第二大的国家公园的核心景观。" +

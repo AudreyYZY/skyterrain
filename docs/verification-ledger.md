@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 29eb0b1
+lastVerifiedCommit: 30a77ae
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 29eb0b1
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 航线解说·英国 / 爱尔兰 / 法国 / 德国国内（24 条）（R26c） | 27 | 24 / 3 / 0 | 当场修 27 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·挪威 / 瑞典 / 芬兰 / 丹麦 / 冰岛国内（28 条）（R26b） | 32 | 28 / 4 / 0 | 当场修 32 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·意大利 / 希腊 / 克罗地亚 / 瑞士 / 奥地利国内（24 条）（R26a） | 25 | 24 / 1 / 0 | 当场修 25 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·check:routes 支线机型规则首跑报出的 2 条（R25b） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
