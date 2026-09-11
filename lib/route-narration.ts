@@ -4365,12 +4365,13 @@ export const ROUTE_NARRATION: Record<
 
 
   "zag-spu": {
+    // study sources: 全程距离：按两端机场坐标算大圆约 246 km，原写约 370 km（长出 51%，像公路里程）已改为约 250 km —— check:distance 报出。其余断言留待欧洲国内航线批核实。核实 2026-09-11
     study: {
     "zh-CN":
-      "萨格勒布飞斯普利特，全程约370公里，飞行时间约50分钟，是克罗地亚最繁忙的国内航线之一，连接首都与达尔马提亚地区最大城市。飞机离开萨格勒布后向西南飞行，先掠过潘诺尼亚平原西缘的丘陵地带，逐渐进入戈尔斯基科塔尔——克罗地亚森林覆盖最茂密的山地，连绵的林海取代了平原的农田景观。" +
+      "萨格勒布飞斯普利特，全程约250公里，飞行时间约50分钟，是克罗地亚最繁忙的国内航线之一，连接首都与达尔马提亚地区最大城市。飞机离开萨格勒布后向西南飞行，先掠过潘诺尼亚平原西缘的丘陵地带，逐渐进入戈尔斯基科塔尔——克罗地亚森林覆盖最茂密的山地，连绵的林海取代了平原的农田景观。" +
       "飞机继续向南穿越第纳里克山系的喀斯特高地，逐渐接近亚得里亚海岸，脚下海岸线呈现出与海岸走向平行排列的狭长岛屿——这正是“达尔马提亚型海岸”的标志性景观，最终降落在斯普利特，一座建于古罗马皇帝退位宫殿之上的海滨古城。",
     "en-US":
-      "Flying from Zagreb to Split spans about 370 km and about 50 minutes, one of Croatia's busiest domestic routes, linking the capital with Dalmatia's largest city. After leaving Zagreb the flight heads southwest, first crossing hills on the western edge of the Pannonian Plain before entering Gorski Kotar, Croatia's most densely forested mountain region, its unbroken forest cover replacing the plain's farmland below." +
+      "Flying from Zagreb to Split spans about 250 km and about 50 minutes, one of Croatia's busiest domestic routes, linking the capital with Dalmatia's largest city. After leaving Zagreb the flight heads southwest, first crossing hills on the western edge of the Pannonian Plain before entering Gorski Kotar, Croatia's most densely forested mountain region, its unbroken forest cover replacing the plain's farmland below." +
       " The flight continues south across the karst highlands of the Dinaric range, approaching the Adriatic coast, where the shoreline below shows elongated islands running parallel to the coast — the signature pattern of a 'Dalmatian-type coast' — before landing in Split, a seaside city built atop a Roman emperor's retirement palace.",
     },
     travel: {
@@ -4399,12 +4400,13 @@ export const ROUTE_NARRATION: Record<
   },
 
   "zag-zad": {
+    // study sources: 全程距离：大圆约 190 km，原写约 250 km（长出 31%）已改为约 200 km —— check:distance 报出。其余断言留待欧洲国内航线批核实。核实 2026-09-11
     study: {
     "zh-CN":
-      "萨格勒布飞扎达尔，全程约250公里，飞行时间约45分钟，连接首都与北达尔马提亚门户城市。飞机离开萨格勒布后向西南飞行，先掠过戈尔斯基科塔尔的茂密森林，随后进入韦莱比特山——克罗地亚面积最大的山脉，山体如一道灰白色屏障紧贴海岸线延伸。" +
+      "萨格勒布飞扎达尔，全程约200公里，飞行时间约45分钟，连接首都与北达尔马提亚门户城市。飞机离开萨格勒布后向西南飞行，先掠过戈尔斯基科塔尔的茂密森林，随后进入韦莱比特山——克罗地亚面积最大的山脉，山体如一道灰白色屏障紧贴海岸线延伸。" +
       "飞机继续向南飞行，兹尔曼尼亚河因矿物质呈现的翠绿色河道在喀斯特峡谷中蜿蜒可辨，与两岸白色岩壁形成鲜明对比，最终降落在扎达尔——一座保留丰富古罗马遗迹、以海之风琴闻名的沿海古城。",
     "en-US":
-      "Flying from Zagreb to Zadar spans about 250 km and about 45 minutes, linking the capital with the gateway city of northern Dalmatia. After leaving Zagreb the flight heads southwest, first crossing the dense forests of Gorski Kotar before entering Velebit, Croatia's largest mountain range, its massif forming a grey-white wall hugging the coastline." +
+      "Flying from Zagreb to Zadar spans about 200 km and about 45 minutes, linking the capital with the gateway city of northern Dalmatia. After leaving Zagreb the flight heads southwest, first crossing the dense forests of Gorski Kotar before entering Velebit, Croatia's largest mountain range, its massif forming a grey-white wall hugging the coastline." +
       " The flight continues south, the emerald-green channel of the Zrmanja River winding through its karst canyon clearly visible against the white limestone walls on either side, before landing in Zadar, a coastal town rich in Roman remains and famous for its Sea Organ.",
     },
     travel: {

@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: c5571c6
+lastVerifiedCommit: c87152f
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: c5571c6
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-11 | 航线距离·check:distance 报出、不在第二波范围内的两条（克罗地亚）（R24a） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 回头搜带出的地形条目：蒙古戈壁排名（R23e） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·国际 B（18 条：中国—欧洲）（R23d） | 20 | 10 / 10 / 0 | 当场修 20 条；新开 issue 0、关闭 0 |
 | 2026-09-11 | 航线解说·国际 A（17 条：东亚 / 东南亚 / 中亚 / 大洋洲 / 北美 / 土耳其）（R23c） | 18 | 13 / 4 / 1 | 当场修 17 条；新开 issue 1、关闭 0 |
