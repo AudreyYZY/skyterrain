@@ -446,6 +446,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   字段名写错成不存在的 `food`、航线的语言键是 `zh-CN`/`en-US` 而不是 `zh`/`en`），
   前两次都报了「全部通过」，第三次会被总数盖住（另外两套还有 5,921 对）。
   **任何检查都要能说出自己实际检查了多少个对象，而且要分到每一类上、不能只报总数。**
+- **`npm run check:distance`** —— 把航线解说里的「全程约 X 公里 / about X km」拿去和`data/routes/*.json` 两端机场坐标算出的**大圆距离**比（不联网）。声称值比大圆还短 5% 以上一定错（飞机不可能比大圆飞得更短）；比大圆长出 15%（短于 1000 km 的航线放宽到 30%）也报；同段中英两个数相差 6% 以上也报。**中文侧的汉字数字（「一万一千五百公里」）它自己解析** —— `check:zhen` 只比阿拉伯数字，航线解说的中文又大量用汉字数字，这一整类原本在所有脚本视野外。2026-09-11 第一次跑，73 处里 14 条对不上，其中 11 条比大圆还短 —— 这类数**算得出来、不必查**，不该花一个联网子代理的工夫。有对不上时 exit 1。
 - **`/verify-content`** —— 每批新增内容之后跑的联网核实流程
   （[`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md)），
   分批交给 `content-verifier` 子代理（[`.claude/agents/content-verifier.md`](.claude/agents/content-verifier.md)）
