@@ -1791,6 +1791,7 @@ export const ROUTE_NARRATION: Record<
       " After take-off you pass the lake-and-mountain junction around Lake Lucerne, then the typical plateau landscape: patchwork pasture and wheat fields, scattered towns, a few medium lakes (Biel, Neuchâtel), with the wall of the Alps to the south." +
       " Near the end a huge crescent lake appears — Lake Geneva (Lac Léman), the largest lake on the northern edge of the Alps, with the Rhône flowing in at the east end and out at Geneva in the west. The city is almost surrounded by French territory, and Mont Blanc is visible in the distance across the lake.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 日内瓦湖「阿尔卑斯北缘最大的湖」（区域内博登湖、纳沙泰尔湖均更小）；瑞士高原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "苏黎世到日内瓦飞约 45 分钟，同一时区。瑞士国内基本靠火车（约 2 小时 45 分、直达、市中心到市中心），SWISS 飞这条线主要是为转机旅客。" +
@@ -2189,6 +2190,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on north, the land becomes the Tuscan hills: rolling country long shaped by farming, with cypress trees, vineyards and ochre farmhouses the typical scene, the fields' texture following the curves of the hills visible from the air." +
       " Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's most important agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 特拉西梅诺湖、前 217 年汉尼拔伏击战、波河平原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到米兰飞约一小时十分，同一时区。高铁约三小时，很多商务旅客会选飞机、观光旅客更常选火车（沿途风景更好）。米兰比罗马更凉更潮湿，冬季易有雾霾。" +
@@ -2212,6 +2214,7 @@ export const ROUTE_NARRATION: Record<
       " Approaching the north, the land becomes the Po Valley — Italy's largest continuous plain, its square fields and criss-crossing irrigation channels clearly visible from the air, rivers winding across the flat ground." +
       " At the eastern end of the plain, silt carried down by the Po and other rivers has built the Venetian Lagoon on the Adriatic shore — a shallow-water area separated from the open sea by sandbars and breakwaters. Venice's hundred-plus small islands are scattered through the lagoon, and before landing you can clearly see the canal-laced city outline and the reverse-S curve of the Grand Canal.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 波河平原、威尼斯潟湖成因与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到威尼斯飞约一小时五分，同一时区。高铁约三个半小时。威尼斯机场在潟湖北岸大陆一侧，有机场巴士或水上巴士进城（约一小时），城内没有汽车、全靠步行和水上巴士。" +
@@ -2235,6 +2238,7 @@ export const ROUTE_NARRATION: Record<
       " Approaching Naples, the coastal area shows the Campi Flegrei — an active caldera geothermal area, with sulphurous vents and hot springs visible on the surface; the overall rise and fall of the ground (bradyseism) here is a natural phenomenon under continuous monitoring." +
       " Naples is on the bay east of the Campi Flegrei, and as the plane descends, the full cone of Mount Vesuvius across the bay is clearly visible.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 坎皮弗莱格瑞 bradyseism 为持续监测现象（INGV 口径），未写死警戒级别。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到那不勒斯飞约四十五分钟，同一时区。高铁约一小时到一个半小时，很多人也会选火车（市中心到市中心，往往更省心）。那不勒斯属地中海气候，比罗马略暖。" +
@@ -2258,6 +2262,7 @@ export const ROUTE_NARRATION: Record<
       " Over the southern Apennines, the land becomes the Pollino massif — home to southern Italy's largest national park, karst landforms interwoven with high mountain pasture." +
       " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大角峰 2912 m；埃特纳「不计高加索」、2024-09 约 3403 m（#264 前已修）；波利诺「南部最大」为本库「全国最大」的保守表述。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到卡塔尼亚飞约一小时零五分，同一时区。西西里没有高铁直连，跨海需要飞机或渡轮（火车可通过轮渡摆渡过海峡，但耗时很长）。卡塔尼亚比罗马更热、更干。" +
@@ -2281,6 +2286,7 @@ export const ROUTE_NARRATION: Record<
       " Sardinia has no young high mountains; the island's core is an old granite and schist basement, long eroded into low hills and plateaus, geologically quite different from the young Apennines of mainland Italy." +
       " Cagliari is on a bay on the island's south coast, and before landing you can see the hill of the Castello district and, below the city, the pink outline of the Molentargius saltwater lagoon (tinted pale pink by algae and salinity, a habitat for flamingos).",
     },
+    // travel sources: 全四段（study/travel × 中英）: 撒丁岛海西期花岗岩微陆块与本库一致；莫伦塔尔久斯潟湖因盐藻呈粉色、火烈鸟栖息地。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到卡利亚里飞约五十五分钟，同一时区。撒丁岛没有高铁连接本土，往返只能靠飞机或渡轮（渡轮约八小时，多为夜渡）。卡利亚里夏季炎热干燥，少雨。" +
@@ -2305,6 +2311,7 @@ export const ROUTE_NARRATION: Record<
       " Past the southern edge of the plain, the land rises into the Apennines: the range running the length of the peninsula, dividing Italy into east and west, with deep valleys and terraced farmland between the ridges." +
       " Approaching Naples, the coastal area shows the volcanic-geothermal Campi Flegrei, and the Bay of Naples and the cone of Vesuvius are clearly visible before landing.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 与本库意大利各条一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "米兰到那不勒斯飞约一小时二十分，同一时区。高铁约四个半小时，很多人会选飞机。米兰比那不勒斯更凉更潮湿，那不勒斯属典型地中海气候。" +
@@ -2328,6 +2335,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on south, the Aeolian (Lipari) Islands appear over the water: a chain of volcanic islands, including Stromboli, whose volcano has erupted in small bursts almost continuously — called the 'lighthouse of the Mediterranean', a pattern that has held for centuries and one of the longest continuously observed volcanoes in the world." +
       " Over open water onto Sicily, Catania sits at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus, measured at about 3,403 m in September 2024, with a year-round summit plume.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 维苏威 79 年、斯特龙博利「地中海灯塔」、埃特纳约 3403 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "那不勒斯到卡塔尼亚飞约四十五分钟，同一时区。也可坐渡轮（耗时更长）。两地都属地中海气候，卡塔尼亚更靠南、更热更干。" +
@@ -2351,6 +2359,7 @@ export const ROUTE_NARRATION: Record<
       " Over the eastern slope of the mountains, the land gradually becomes the Gargano Promontory: a limestone upland jutting from an otherwise flat coastline, covered in forest rare for southern Italy, historically nicknamed 'the spur of Italy' for its distinct shape." +
       " Approaching Bari, the Alta Murgia appears below — a karst limestone plateau, dry and stony on the surface with extensive caves and prehistoric sites underground. Bari sits on the Adriatic coast, on a small peninsula reaching into the sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 加尔加诺「意大利的马刺」、阿尔塔穆尔杰（本库译「上穆尔杰」，同一地物）喀斯特台地。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到巴里飞约五十五分钟，同一时区。高铁约四小时，多数人会选飞机。巴里比罗马更干燥，夏季炎热。" +
@@ -2612,6 +2621,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Thessaloniki is Greece's busiest domestic route, flying north across the centre of the Greek mainland from Attica into Macedonia. Soon after take-off, open farmland unfolds below — the Thessalian Plain, Greece's largest and most important agricultural region, built by the Pineios River and ringed by the Pindus range, Mount Othrys, Mount Pelion and Mount Olympus." +
       " Continuing north, a snow-capped peak rising straight from the sea appears to the right — Mount Olympus, the highest point in Greece, its summit Mytikas reaching 2,917 m and widely held in Greek mythology to be the home of the gods. Past Olympus the flight continues north along the Aegean coast, descending into Thessaloniki on the Thermaic Gulf.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥林匹斯米蒂卡斯峰 2917 m（2023 年 GPS 精测）与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到塞萨洛尼基飞约50分钟，两地同一时区，也可选择约4小时的城际列车。这是爱琴海航空最繁忙的国内航线之一，旺季班次密集，建议提前订票。塞萨洛尼基机场离市区约16公里，有公交连接市中心。塞萨洛尼基是希腊北部的门户，适合作为探索迈泰奥拉、哈尔基季基半岛及色萨利地区的中转站。希腊属申根区，多数国家公民短期旅游按申根区规定执行，货币为欧元，电压230V欧标两圆脚插头。",
@@ -2629,6 +2639,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Heraklion crosses the southern Aegean to reach Crete, Greece's largest island. After take-off the flight heads south over the Cyclades, first passing Milos — a volcanic island known for its colourful rock layers and Neolithic obsidian trade, its Sarakiniko coast carved by wave and wind into a moon-like landscape of white pumice." +
       " Next comes the Santorini caldera, formed when a massive Late Bronze Age eruption around 1600 BCE collapsed the island's centre; towns such as Fira and Oia sit on cliffs about 300 m above the caldera. The flight continues south across the Cretan Sea to land at Heraklion on Crete's north coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 米洛斯火山成因与黑曜岩贸易、圣托里尼约公元前 1600 年喷发与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到伊拉克利翁飞约50分钟，两地同一时区，夏季旺季每天有多班航班，也可选择约9-10小时的夜间渡轮。伊拉克利翁机场离市区约5公里，有公交与出租车连接。克里特岛面积较大，从伊拉克利翁前往哈尼亚、拉西提高原等地建议租车或参加当地一日游。希腊属申根区，多数国家公民短期旅游按申根区规定执行，货币为欧元。",
@@ -2646,6 +2657,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Chania crosses the Cretan Sea to reach western Crete. Soon after take-off the flight leaves the Attica coast and heads out over the open Cretan Sea, the stretch of the southern Aegean between the Cyclades and Crete. For most of the crossing there is little but blue water below, with occasional small islands scattered in the distance." +
       " As Crete's north coast approaches, the Bay of Chania comes into view and the plane descends along the coastline; just west of the airport lies the Venetian-era old harbour of Chania, gateway to the White Mountains of western Crete.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 萨马利亚峡谷「欧洲最长的峡谷之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到哈尼亚飞约45分钟，两地同一时区，夏季旺季航班密集。哈尼亚机场离老城约14公里，有公交与出租车连接。哈尼亚是探索克里特岛西部与白山地区的门户，也是徒步萨马利亚峡谷的理想落脚点，峡谷通常5月至10月开放，具体以国家公园当年公告为准。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2663,6 +2675,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Rhodes Town crosses the southern Aegean along the South Aegean Volcanic Arc. After take-off the flight heads south-east over the Cyclades, first passing Milos, a colourful volcanic island known for its obsidian trade and the pumice landscape of the Sarakiniko coast." +
       " Continuing east, a near-circular islet appears below — Nisyros, a dormant stratovolcano whose central Stefanos crater still hosts active fumaroles and geothermal activity. The flight carries on south-east over the Dodecanese to land at Rhodes, home to one of Europe's best-preserved medieval walled towns.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 尼西罗斯斯特凡诺斯火山口喷气孔（地质公园官网，1 级）；罗德城中世纪城防「之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到罗德城飞约55分钟，两地同一时区，夏季旺季每天有多班航班。罗德城机场离古城约14公里，有公交与出租车连接。罗德岛是希腊阳光最充足的地区之一，中世纪古城内街巷狭窄，不通行车辆，建议以步行方式游览，穿舒适的鞋。希腊属申根区，多数国家公民短期旅游按申根区规定执行，货币为欧元。",
@@ -2680,6 +2693,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Corfu Town crosses mainland Greece from the Aegean side to the Ionian Sea. Soon after take-off a long, narrow inlet appears below — the Gulf of Corinth, essentially an active rift graben whose two shores continue to pull apart, spanned at its narrowest point by the cable-stayed bridge at Rio-Antirrio." +
       " Continuing north-west, an undulating limestone ridge appears below — the Pindus range, running the length of western mainland Greece and known as the country's spine, a key climatic and hydrological divide. Past the Pindus the flight crosses onto the Ionian Sea, landing on Corfu, an island kept lushly green by abundant rainfall.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 科林斯湾活动地堑、里翁—安蒂里翁大桥、品都斯与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到科孚城飞约65分钟，两地同一时区。科孚城机场离老城约3公里，有公交与出租车连接。科孚岛降水明显多于爱琴海诸岛，植被终年葱郁，气候相对湿润，游览老城建议带一把折叠伞。科孚城也是前往意大利、阿尔巴尼亚渡轮航线的港口城市。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2697,6 +2711,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Ioannina flies from Attica into Epirus in north-western Greece. Soon after take-off the Gulf of Corinth appears below, a long, narrow inlet formed by crustal extension. Continuing north-west, a cluster of steep, isolated sandstone pinnacles appears at the edge of the Thessalian Plain — Meteora, shaped roughly 60 million years ago from ancient river-delta sediment by regional uplift and differential erosion, its summits crowned with Orthodox monasteries built from the 14th century onward." +
       " Past Meteora the flight enters the Pindus mountains, landing at Ioannina on the shore of Lake Pamvotis, gateway to north-western Greece's mountain country.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 迈泰奥拉约 6000 万年前三角洲沉积、14 世纪起修道院与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到约阿尼纳飞约50分钟，两地同一时区，也可选择约6小时的长途巴士。约阿尼纳机场离市区约5公里，有出租车连接市中心。约阿尼纳是探索维科斯峡谷等品都斯山区的理想基地，山区冬季寒冷多雪，部分道路可能因积雪受影响，出行前建议查询路况与天气预报。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2714,6 +2729,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Santorini is one of Greece's most popular island routes. After take-off the flight heads south-east across the Aegean over the Cyclades, passing Milos, a volcanic island whose colourful rock layers and moon-like Sarakiniko coast are its clearest markers." +
       " Continuing south-east, a crescent-shaped island gradually comes into view — Santorini, its centre collapsed by a massive Late Bronze Age eruption around 1600 BCE into the caldera seen today, with towns such as Fira and Oia perched on cliffs about 300 m above it; the plane lands at the airport on the island's eastern side.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 圣托里尼同 ath-her。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到圣托里尼飞约45分钟，两地同一时区，夏季旺季每天有多班航班，也可选择约7-8小时的渡轮。圣托里尼机场离费拉约7公里，岛内交通主要靠公交、出租车或租车。旺季住宿价格较高，建议提前预订；冬季部分旅游设施季节性歇业，渡轮班次也相应减少。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2873,6 +2889,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Vienna to Innsbruck crosses the whole of Austria from east to west, from the Vienna Basin over the Alps to the mountain city of Innsbruck in Tyrol. Soon after take-off, the broad, flat expanse of the Vienna Basin unfolds below — a young tectonic subsidence basin between the Alps and the Carpathians." +
       " The flight continues west into the Wienerwald, the easternmost limestone hill range where the Alps taper off, densely forested throughout. Beyond the Wienerwald the plane crosses a wide swath of central Austrian mountains and passes over the Dachstein, where the year-round snow of the Hallstatt Glacier is clearly visible against the pale grey karst massif below. Continuing west, the flight skirts the steep limestone cliffs of the Karwendel before descending along the Inn Valley into Innsbruck, ringed on all sides by the Alps.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 维也纳盆地、维也纳森林、达赫斯坦、卡尔文德尔与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "维也纳到因斯布鲁克飞约55分钟，两地同一时区，也可选择约4-5小时的城际列车（奥地利铁路 ÖBB 网络便捷，很多本地人更倾向于坐火车）。因斯布鲁克机场离市区约4公里。因斯布鲁克是蒂罗尔州首府，也是探索厄茨塔尔阿尔卑斯山、齐勒河谷滑雪区的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2890,11 +2907,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Vienna to Graz is a short hop deep into Styria in south-eastern Austria. Soon after take-off, the broad, flat Vienna Basin appears below, and the flight then enters the Wienerwald, the easternmost, densely forested stretch of limestone hills where the Alps taper off." +
       " Continuing south-west, a comparatively gentle karst highland comes into view — the Rax-Schneeberg Group, whose Schneeberg, at 2,076 m, is the easternmost peak in the Alps to exceed 2,000 m and a familiar \"local mountain\" for Vienna's residents. Past this highland, the flight descends into Graz on the Mur River, Austria's second-largest city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 施内山 2076 m、格拉茨为奥地利第二大城市与本库一致；UNESCO 年份原写 2000，按 1 级来源改为 1999。核实 2026-09-11
     travel: {
     "zh-CN":
-      "维也纳到格拉茨飞约40分钟，两地同一时区，也可选择约2.5小时的城际列车。格拉茨机场离市区约10公里。格拉茨是施泰尔马克州首府，老城2000年列入联合国教科文组织世界遗产名录，也是探索穆尔河上游河漫滩森林的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "维也纳到格拉茨飞约40分钟，两地同一时区，也可选择约2.5小时的城际列车。格拉茨机场离市区约10公里。格拉茨是施泰尔马克州首府，老城1999年列入联合国教科文组织世界遗产名录，也是探索穆尔河上游河漫滩森林的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Vienna to Graz is about 40 minutes, same time zone; an intercity train (about 2.5 hours) is another option. Graz Airport is about 10 km from the centre. Graz is the capital of Styria, its old town a UNESCO World Heritage site since 2000, and an ideal base for exploring the floodplain forests of the upper Mur. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Vienna to Graz is about 40 minutes, same time zone; an intercity train (about 2.5 hours) is another option. Graz Airport is about 10 km from the centre. Graz is the capital of Styria, its old town a UNESCO World Heritage site since 1999, and an ideal base for exploring the floodplain forests of the upper Mur. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -2907,6 +2925,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Vienna to Klagenfurt heads from the Vienna Basin toward the lake district of Carinthia in southern Austria. Soon after take-off, the broad, flat Vienna Basin unfolds below, and the flight then crosses the Rax-Schneeberg Group, the karst highland at the easternmost tip of the Alps, whose Schneeberg (2,076 m) is the area's highest point." +
       " Continuing south-west, an extensive karst plateau comes into view — the Totes Gebirge, Central Europe's largest karst plateau, its cliffs steep and its summit comparatively flat, scattered with numerous circular dissolution hollows. Past the Totes Gebirge, the flight descends into Klagenfurt at the eastern end of Wörthersee, an important lake-resort city in southern Austria.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 陶滕山「中欧面积最大的喀斯特高原」与本库一致；克拉根福在沃尔特湖东端。核实 2026-09-11
     travel: {
     "zh-CN":
       "维也纳到克拉根福飞约50分钟，两地同一时区，也可选择约4小时的城际列车。克拉根福机场离市区约3公里。克拉根福是克恩顿州首府，坐落在沃尔特湖东端，是探索克恩顿州湖区（沃尔特湖、米尔施塔特湖）的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -4475,6 +4494,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Split spans about 250 km and about 50 minutes, one of Croatia's busiest domestic routes, linking the capital with Dalmatia's largest city. After leaving Zagreb the flight heads southwest, first crossing hills on the western edge of the Pannonian Plain before entering Gorski Kotar, Croatia's most densely forested mountain region, its unbroken forest cover replacing the plain's farmland below." +
       " The flight continues south across the karst highlands of the Dinaric range, approaching the Adriatic coast, where the shoreline below shows elongated islands running parallel to the coast — the signature pattern of a 'Dalmatian-type coast' — before landing in Split, a seaside city built atop a Roman emperor's retirement palace.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 戈尔斯基科塔尔、达尔马提亚型海岸、戴克里先宫与本库一致；未提邻国。核实 2026-09-11
     travel: {
     "zh-CN":
       "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚最繁忙的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；斯普利特机场距市区约19公里。",
@@ -4492,6 +4512,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Dubrovnik spans about 420 km and about 65 minutes, one of Croatia's longest north–south domestic routes, linking the capital with the historic walled city of southern Dalmatia. After leaving Zagreb the flight heads south, first crossing the Pannonian Plain and the mountains of Gorski Kotar before entering Dinara, Croatia's highest massif, the grey-white limestone ridge of Sinjal peak clearly visible below." +
       " The flight continues southeast, approaching the Neretva Delta, its green wetlands and orderly irrigated farmland spreading out below in sharp contrast with the dry karst mountains on either side, before tracking south along the Dalmatian coast to land in Dubrovnik, the old capital of the medieval Republic of Ragusa, its Old Town inscribed on the World Heritage List in 1979.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 迪纳拉 1831 m、内雷特瓦三角洲、杜布罗夫尼克 1979 年列入 UNESCO 与本库一致；未提邻国。核实 2026-09-11
     travel: {
     "zh-CN":
       "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚跨度最大的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；杜布罗夫尼克机场距市区约20公里。",
@@ -4510,6 +4531,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Zadar spans about 200 km and about 45 minutes, linking the capital with the gateway city of northern Dalmatia. After leaving Zagreb the flight heads southwest, first crossing the dense forests of Gorski Kotar before entering Velebit, Croatia's largest mountain range, its massif forming a grey-white wall hugging the coastline." +
       " The flight continues south, the emerald-green channel of the Zrmanja River winding through its karst canyon clearly visible against the white limestone walls on either side, before landing in Zadar, a coastal town rich in Roman remains and famous for its Sea Organ.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 韦莱比特、兹尔曼尼亚翠绿河水、扎达尔海之风琴与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "萨格勒布到扎达尔飞约45分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；扎达尔机场距市区约8公里。",
@@ -4527,6 +4549,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Pula spans about 210 km and about 40 minutes, linking the capital with the largest city on the Istrian peninsula. After leaving Zagreb the flight heads southwest, first crossing Gorski Kotar, the transition zone between the Alpine and Dinaric mountain systems, its forest cover nearly continuous." +
       " The flight continues west, approaching Učka, the highest point on the Istrian peninsula, its massif arcing between the peninsula and the Kvarner Gulf; past the range, Istria's red-soil coast and the deep-blue Adriatic come into view, before landing in Pula, gateway to the Istrian peninsula and home to a well-preserved Roman amphitheater.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 戈尔斯基科塔尔为阿尔卑斯—第纳里克过渡带、乌奇卡为伊斯特拉最高点与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "萨格勒布到普拉飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；普拉机场距市区约6公里。",
@@ -4544,6 +4567,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Osijek spans about 220 km and about 40 minutes, linking the capital with the largest city in Slavonia, a domestic route flown entirely over the inland Pannonian Plain. After leaving Zagreb the flight heads east, the terrain below flattening out into a patchwork of wheat, corn, and sunflower fields, quite different from Croatia's mountainous south." +
       " The flight continues east, the winding channel of the Drava River and its braided side-channels coming into view, before landing in Osijek, Slavonia's economic and cultural center on the Drava and gateway to the Kopački Rit wetland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 潘诺尼亚平原、德拉瓦河与本库一致；承运方已按数据改为 Trade Air 代码共享。核实 2026-09-11
     travel: {
     "zh-CN":
       "萨格勒布到奥西耶克飞约40分钟，同一时区，是Trade Air与克罗地亚航空代码共享运营的国内航班之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；奥西耶克机场距市区约20公里。",
