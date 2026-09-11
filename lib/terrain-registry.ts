@@ -13565,7 +13565,7 @@ const KARAGIYE_DEPRESSION: TerrainEntry = {
   landmark: { name: "卡拉吉耶洼地最低点（坎德洼地）", lon: 51.75, lat: 43.60, elevation: -132, kind: "peak" },
   bbox: [51.40, 43.40, 52.20, 43.90],
   label: { lon: 51.75, lat: 43.30, rotation: 0 },
-  source: "卡拉吉耶洼地：曼格斯套半岛一处喀斯特凹地，距阿克套约50公里，最低点海拔约-132米，是哈萨克斯坦全国最低点、也是中亚及前苏联地区最低点，全球排名第五（次于死海、阿萨勒湖、吐鲁番盆地与卡塔拉洼地）；地下水长期溶蚀地层形成溶洞与地下空腔，上覆砂层塌陷后形成如今长约40公里、宽约25公里的巨型碗状洼地（Wikipedia/eurasia.travel WebSearch 2026）",
+  source: "卡拉吉耶洼地：曼格斯套半岛一处喀斯特凹地，距阿克套约50公里，最低点海拔约-132米，是哈萨克斯坦全国最低点、也是中亚及前苏联地区最低点，全球排名第五（次于死海、阿萨勒湖、吐鲁番盆地与卡塔拉洼地）；地下水长期溶蚀地层形成溶洞与地下空腔，上覆砂层塌陷后形成如今长约40公里、宽约10公里的巨型碗状洼地（Wikipedia/eurasia.travel WebSearch 2026）",
 };
 
 const BETPAK_DALA_DESERT: TerrainEntry = {
@@ -13632,7 +13632,7 @@ const MEDEU_GORGE: TerrainEntry = {
   landmark: { name: "梅德奥高山溜冰场", lon: 77.05, lat: 43.15, elevation: 1691, kind: "peak" },
   bbox: [76.98, 43.10, 77.12, 43.20],
   label: { lon: 77.05, lat: 43.06, rotation: 0 },
-  source: "梅德奥峡谷：阿拉木图东南约14公里处、外伊犁阿拉套山麓小阿拉木图河谷内的一处山地峡谷，海拔1520至1750米，1972年在此建成的高山溜冰场是全球海拔最高的人工溜冰场之一；峡谷下游建有梅德奥泥石流防护坝，用于拦截山区季节性泥石流、保护阿拉木图市区（Wikipedia WebSearch 2026）",
+  source: "梅德奥峡谷：阿拉木图东南约14公里处、外伊犁阿拉套山麓小阿拉木图河谷内的一处山地峡谷，海拔1520至1750米，此处高山溜冰场1951年建成、1972年改建为人工冰面，是全球海拔最高的人工溜冰场之一；峡谷下游建有梅德奥泥石流防护坝，用于拦截山区季节性泥石流、保护阿拉木图市区（Wikipedia WebSearch 2026）",
 };
 
 const LAKE_BALKHASH: TerrainEntry = {
@@ -13660,7 +13660,7 @@ const KOLSAI_LAKES: TerrainEntry = {
   landmark: { name: "科尔赛下湖", lon: 78.35, lat: 42.95, elevation: 1818, kind: "lake" },
   bbox: [78.25, 42.85, 78.55, 43.05],
   label: { lon: 78.35, lat: 42.80, rotation: 0 },
-  source: "科尔赛湖：北天山一处山谷内自下而上分布的三座梯级湖泊——下湖（海拔1818米）、中湖（2252米）、上湖（2850米），2012年列入UNESCO科尔赛—凯恩迪国家公园生物圈保护区；该区域地震活动频繁，三座湖泊均由历史上的地震滑坡堵塞河谷形成（Wikipedia/thegonegoat.com WebSearch 2026）",
+  source: "科尔赛湖：北天山一处山谷内自下而上分布的三座梯级湖泊——下湖（海拔1818米）、中湖（2252米）、上湖（2850米），2021年列入UNESCO科尔赛—凯恩迪国家公园生物圈保护区；该区域地震活动频繁，三座湖泊均由历史上的地震滑坡堵塞河谷形成（Wikipedia/thegonegoat.com WebSearch 2026）",
 };
 
 const KAINDY_LAKE: TerrainEntry = {
@@ -13828,7 +13828,7 @@ const BURABAY_HILLS: TerrainEntry = {
   bbox: [69.95, 52.95, 70.65, 53.35],
   viewScale: 1.3,
   label: { lon: 70.30, lat: 52.85, rotation: 0 },
-  source: "布拉拜（旧称博罗沃耶）：哈萨克斯坦北部科克舍套丘陵东段一片松林、花岗岩丘陵与湖泊交织的地带，因景致酷似瑞士山地常被称为“哈萨克斯坦的瑞士”，区内湖泊逾30座，花岗岩体历经古生代岩浆侵入、后经风化冰蚀塑造出如今浑圆的岩丘与巨石群，2000年设立布拉拜国家公园（Wikipedia/meganstarr.com WebSearch 2026）",
+  source: "布拉拜（旧称博罗沃耶）：哈萨克斯坦北部科克舍套丘陵东段一片松林、花岗岩丘陵与湖泊交织的地带，因景致酷似瑞士山地常被称为“哈萨克斯坦的瑞士”，区内有14座主要湖泊，花岗岩体历经古生代岩浆侵入、后经风化冰蚀塑造出如今浑圆的岩丘与巨石群，2000年设立布拉拜国家公园（Wikipedia/meganstarr.com WebSearch 2026）",
 };
 
 const TORYSH_VALLEY_OF_BALLS: TerrainEntry = {

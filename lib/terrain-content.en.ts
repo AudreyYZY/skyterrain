@@ -15436,6 +15436,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Kazakhstan ============
   "zailiysky-alatau": {
+    // 全六段 sources: 全长约 350 km、塔尔加尔峰 4973–4979 m（正文取 4979）、科尔任涅夫斯基冰川约 12 km；伊犁阿拉套国家公园 1996-02-22 设立、面积约 20.0–20.2 万 ha（Astana Times，2 级）。跨境表述中性、未描述边界线。核实 2026-09-11，未改动
     seeing:
       "The Zailiysky Alatau (Trans-Ili Alatau) is a segment of the northern Tian Shan running about 350 km east-west; its highest peak, Talgar Peak, reaches 4,979 m, and Almaty, Kazakhstan's former capital, sits at its northern foot.",
     formation:
@@ -15450,6 +15451,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Almaty, at the range's northern foot, was formerly Kazakhstan's capital; the Ile-Alatau National Park, established in 1996, protects more than 200,000 hectares of the range's northern slope and is an important destination for hiking, skiing and summer retreats.",
   },
   "karkaraly-mountains": {
+    // 全六段 sources: 最高点 Zhirensakal 1403 m；国家公园 1998-12-01 设立、面积 112,120 ha。核实 2026-09-11，未改动
     seeing:
       "The Karkaraly Mountains are a granite range within the Kazakh Uplands, reaching 1,403 m at their highest point; the sudden appearance of forest and lakes deep within the steppe makes this a rare \"steppe oasis.\"",
     formation:
@@ -15464,6 +15466,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Karkaraly National Park, established in 1998, covers about 112,000 hectares; the massif was historically a traditional summer retreat and gathering place for Kazakh nomadic clans, and remains an important ecotourism destination in the Saryarka region today.",
   },
   "tarbagatai-mountains": {
+    // 全六段 sources: 与萨吾尔山构成萨吾尔—塔尔巴哈台山地，较外伊犁阿拉套更低缓 —— 定性描述，与相关条目比较方向正确。⚠️ 红线自查：只写山体走向与游牧史实，**未描述中哈边境线、未表述主权**。核实 2026-09-11，未改动
     seeing:
       "The Tarbagatai Mountains run along Kazakhstan's eastern border with China, forming, together with the Saur range to the south, the Saur-Tarbagatai mountain system — a transitional zone between the northern edge of the Junggar Basin and the Kazakh Uplands.",
     formation:
@@ -15478,6 +15481,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Tarbagatai range has historically been a traditional seasonal migration and grazing route for nomadic peoples, and remains an important area for local pastoral activity today.",
   },
   "bektau-ata": {
+    // 全六段 sources: 石炭—二叠纪之交碱性花岗岩体侵入、未喷出地表；岩体约 15×11 km、最高点 1213–1214 m。核实 2026-09-11，未改动
     seeing:
       "Bektau-Ata is an alkaline granite massif about 70 km north of Lake Balkhash, roughly 15 km across, with boulders scattered over more than 170 km² and its highest point reaching 1,214 m.",
     formation:
@@ -15492,6 +15496,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Auliye-Tas Cave within the massif holds a freshwater spring regarded as sacred by local people; Bektau-Ata is also a popular destination for rock climbers today.",
   },
   "ustyurt-plateau": {
+    // 全六段 sources: 里海与咸海之间的古海相沉积台地、跨哈乌两国、哈境内主要在曼格斯套州 —— 定性描述，与 bozzhyra、karagiye-depression、torysh-valley-of-balls 并读一致；与航线解说 ala-sco / nqz-sco 并读一致。核实 2026-09-11，未改动
     seeing:
       "The Ustyurt Plateau is a vast clay-desert tableland between the Caspian and Aral Seas, spanning Kazakhstan and Uzbekistan; on the Kazakh side it lies mainly within Mangystau Region.",
     formation:
@@ -15508,8 +15513,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "karagiye-depression": {
     seeing:
       "The Karagiye Depression is a karst basin on the Mangystau Peninsula, reaching about -132 m at its lowest point — the lowest point in Kazakhstan and in all of Central Asia and the former Soviet Union.",
+    // formation sources: 最低点约 −132 m，在全球低地排名中次于死海、阿萨勒湖、吐鲁番、卡塔拉洼地位列第五（geology.com 排名表；英文维基正文另作 −134 m，两数并存，暂从被排名表精确印证的 −132）；洼地长约 40 km、宽约 10 km —— 原写的「宽25公里」疑为把「40 km（25 mi）」的英里换算数误当成宽度。核实 2026-09-11
     formation:
-      "Long-term groundwater dissolution carved caves and underground voids into the rock strata; as the overlying sand layers lost support, they gradually collapsed, forming today's bowl-shaped depression about 40 km long and 25 km wide.",
+      "Long-term groundwater dissolution carved caves and underground voids into the rock strata; as the overlying sand layers lost support, they gradually collapsed, forming today's bowl-shaped depression about 40 km long and 10 km wide.",
     observation:
       "From the air, the Karagiye Depression appears as a broad, bowl-shaped basin ringed by winding, undulating slopes, standing in clear relief against the flat tableland of the surrounding Ustyurt Plateau.",
     distinguish:
@@ -15520,6 +15526,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Fossils are preserved in the cliffs around the depression, and it is home to steppe wildlife including Pallas's cat and the corsac fox; today it is an important geological and ecological research destination in the Mangystau region.",
   },
   "betpak-dala-desert": {
+    // 全六段 sources: 南北约 170 km、东西约 500 km、面积约 7.5 万 km²，为世界最大黏土荒漠之一（Britannica，2 级）。核实 2026-09-11，未改动
     seeing:
       "The Betpak-Dala Desert is a clay desert in central Kazakhstan, about 170 km north-south and 500 km east-west, covering roughly 75,000 km² — one of the largest clay deserts in the world.",
     formation:
@@ -15534,6 +15541,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The desert is almost entirely uninhabited and was historically a region nomadic peoples avoided or skirted around; it remains largely undisturbed desert today.",
   },
   "moiynkum-desert": {
+    // 全六段 sources: 面积约 37,500 km²（多来源一致）。核实 2026-09-11，未改动
     seeing:
       "The Moiynkum Desert is a sand desert in Kazakhstan's Turkistan and Zhambyl regions, covering a total area of about 37,500 km².",
     formation:
@@ -15548,6 +15556,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The desert was historically a required crossing point for Silk Road caravans; parts of it still offer camel-caravan-style desert travel experiences today, carrying on the memory of this ancient trade route.",
   },
   "charyn-canyon": {
+    // 全六段 sources: 全长约 154 km、谷底约 1100 m、崖壁最深约 300 m、约 1200 万年侵蚀形成、保护区 127,050 ha（national-parks.org，2 级）。「亚洲的大峡谷」为通俗称号。跨境表述中性。核实 2026-09-11，未改动
     seeing:
       "Charyn Canyon lies about 200 km east of Almaty, near the China-Kazakhstan border, and runs about 154 km in length — often called the \"Grand Canyon of Central Asia\" — with a floor elevation of about 1,100 m and walls plunging up to 300 m.",
     formation:
@@ -15562,6 +15571,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around Charyn Canyon was historically a traditional territory of local nomadic peoples; today it is one of the most popular day-trip natural destinations around Almaty.",
   },
   bozzhyra: {
+    // 全六段 sources: 两座逾 200 m「獠牙」岩塔、白垩系岩层（约 5000 万–8000 万年）、石灰岩厚达约 250 m —— 与 ustyurt-plateau 等条目互证一致，未找到单一权威页逐个复核数字。核实 2026-09-11，未改动
     seeing:
       "Bozzhyra, whose name means \"grey ravine\" in Kazakh, is a vast canyon system on the western edge of the Ustyurt Plateau on the Mangystau Peninsula, its two \"fang\" rock towers, each rising more than 200 m, the area's most iconic landmarks.",
     formation:
@@ -15576,8 +15586,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Bozzhyra's remoteness and difficult access meant it saw little human traffic historically; today it is a popular destination for off-road and photography tourism in the Mangystau region.",
   },
   "medeu-gorge": {
+    // seeing sources: 峡谷海拔 1520–1750 m；溜冰场 1949–1951 年建成、1951-02-05 开幕，1972 年改建为人工制冷冰面 —— 原文两段都把 1972 写成了建成年。核实 2026-09-11
     seeing:
-      "Medeu Gorge sits about 14 km southeast of Almaty, in the Malaya Almatinka River valley at the foot of the Zailiysky Alatau, at an elevation of 1,520–1,750 m; the high-altitude skating rink built there in 1972 is among the highest-elevation artificial skating rinks in the world.",
+      "Medeu Gorge sits about 14 km southeast of Almaty, in the Malaya Almatinka River valley at the foot of the Zailiysky Alatau, at an elevation of 1,520–1,750 m; the high-altitude skating rink opened there in 1951, and given artificially refrigerated ice in 1972, is among the highest-elevation artificial skating rinks in the world.",
     formation:
       "The gorge was carved by the long-term erosion of the Malaya Almatinka River into the Zailiysky Alatau's northern slope, a classic mountain river-valley landform; downstream, the Medeu mudflow-protection dam was built to intercept seasonal mudflows that threaten the valley.",
     observation:
@@ -15587,9 +15598,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The construction of the Medeu mudflow-protection dam is an engineering-geography case study of how a mountain city manages seasonal mudflow hazards to protect the urban area downstream.",
     history:
-      "The Medeu high-altitude skating rink, built in 1972, has long hosted major Soviet and international speed-skating events and remains an important recreational sports venue for Almaty residents.",
+      "The Medeu high-altitude skating rink, opened in 1951, has long hosted major Soviet and international speed-skating events and remains an important recreational sports venue for Almaty residents.",
   },
   "lake-balkhash": {
+    // 全六段 sources: 面积约 1.64–1.82 万 km²（已写成区间）、世界第十五大湖、第二大咸水湖；**西淡东咸**（伊犁河 73–80% 注入西部，西 <1 g/L、东 3–6 g/L），乌津阿拉尔海峡宽约 3.5 km —— 维基正文原文 western part is fresh water and its eastern half is saline（部分网络摘要把东西说反，本库与原文一致）。湖面是会变的量。核实 2026-09-11，未改动
     seeing:
       "Lake Balkhash covers about 16,400–18,200 km², making it the world's fifteenth-largest lake and second-largest saline lake, famous for its unusual \"two waters in one lake\" phenomenon.",
     formation:
@@ -15604,8 +15616,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Balkhash has long been an important water source for surrounding fisheries and irrigated agriculture; sustained inflow from the Ili River is essential to maintaining the freshwater ecology and fishery resources of the lake's western half.",
   },
   "kolsai-lakes": {
+    // seeing sources: 三湖海拔 1818 / 2252 / 2850 m，均由历史地震滑坡堵塞河谷形成，与 kaindy-lake 同属一次地震滑坡区域；Kolsai Kolderi 生物圈保护区 **2021** 年列入（unesco.org/en/mab/kolsai-kolderi，1 级）—— 原写的 2012 是同批 korgalzhyn-reserve「哈萨克斯坦首个生物圈保护区」的年份。核实 2026-09-11
     seeing:
-      "The Kolsai Lakes are three lakes arranged in tiers up a single valley in the northern Tian Shan — Lower Lake (1,818 m), Middle Lake (2,252 m) and Upper Lake (2,850 m) — inscribed in 2012 as part of the Kolsai Lakes-Kaindy UNESCO Biosphere Reserve.",
+      "The Kolsai Lakes are three lakes arranged in tiers up a single valley in the northern Tian Shan — Lower Lake (1,818 m), Middle Lake (2,252 m) and Upper Lake (2,850 m) — inscribed in 2021 as part of the Kolsai Lakes-Kaindy UNESCO Biosphere Reserve.",
     formation:
       "This region is seismically active, and all three lakes formed when historical earthquake-triggered landslides dammed the valley, with the water pooling at successively higher elevations within the same valley.",
     observation:
@@ -15618,6 +15631,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around Kolsai Lakes was historically a summer pasture for Kazakh nomadic clans; today it is a core destination for hiking and ecotourism in the northern Tian Shan.",
   },
   "kaindy-lake": {
+    // 全六段 sources: 1911 年（Kebin）地震引发山体滑坡堵塞峡谷、淹没雪岭云杉；湖长约 400 m、海拔约 2000 m、盛夏水温约 6°C、低含氧减缓木材腐烂 —— 多方一致，与 kolsai-lakes 同一地震滑坡区。核实 2026-09-11，未改动
     seeing:
       "Kaindy Lake, within the Kolsai Lakes-Kaindy National Park, is a mountain lake about 400 m long at roughly 2,000 m elevation, famous for its \"underwater forest\" of standing dead tree trunks visible beneath the water.",
     formation:
@@ -15632,6 +15646,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kaindy Lake formed in 1911, a direct record of the region's seismic history; today it is one of the most recognisable natural landscapes and photography destinations in the northern Tian Shan.",
   },
   "big-almaty-lake": {
+    // 全六段 sources: 阿拉木图以南约 15 km、海拔 2510–2511 m、长约 1.6 km、宽 0.75–1 km、深 30–40 m，冰蚀圈谷湖；20 世纪中叶水电站与饮用水源功能为定性史实。核实 2026-09-11，未改动
     seeing:
       "Big Almaty Lake is a glacial lake in the Zailiysky Alatau, about 15 km south of Almaty at 2,511 m elevation, roughly 1.6 km long, 0.75–1 km wide and 30–40 m deep.",
     formation:
@@ -15646,6 +15661,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "A hydroelectric station was built here in the 1950s–60s, and since the 1980s the lake has served as one of Almaty's drinking-water sources; today it is a popular alpine hiking destination near the city.",
   },
   "korgalzhyn-reserve": {
+    // 全六段 sources: 1968 年设国家自然保护区；2008-07-07 与纳乌尔祖姆共同以「萨雷阿尔卡——哈萨克斯坦北部的草原与湖泊」列入 UNESCO（whc.unesco.org/en/list/1102，1 级）；2012 年成为**哈萨克斯坦首个**生物圈保护区 —— ⚠️ 这个 2012 被同批 kolsai-lakes 误借了去，已在那一条改正。逾 1500 万只候鸟经此迁徙、逾 30 万对繁殖。核实 2026-09-11，未改动
     seeing:
       "The Korgalzhyn-Tengiz Lake System is a wetland lake complex deep within the northern Kazakh steppe; Lake Tengiz, its largest body of water (its name means \"sea\" in Kazakh), is the world's most northerly nesting site for the greater flamingo.",
     formation:
@@ -15660,6 +15676,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Korgalzhyn State Nature Reserve was established in 1968; in 2008 it was inscribed on the UNESCO World Heritage List jointly with the Naurzum Nature Reserve as \"Saryarka — Steppe and Lakes of Northern Kazakhstan,\" and in 2012 it was recognised as Kazakhstan's first biosphere reserve.",
   },
   "north-aral-sea": {
+    // 全六段 sources: 2005 年建成约 13 km 的科克阿拉尔坝（部分来源作 12 km）；20 年间北咸海面积扩大约 36%、水量几近翻倍、含盐度下降约一半（Times of Central Asia，2 级）；与世界银行推进二期修复（世行新闻稿，1 级机构）。⚠️ 红线判据：咸海萎缩是**已发生的环境灾难的客观陈述**，非评价性、非仍在持续的政治对立，保留。湖面与盐度是会变的量，下轮复核。核实 2026-09-11，未改动
     seeing:
       "The North Aral Sea is the northern portion of the Aral Sea within Kazakhstan; from the mid-20th century, massive upstream irrigation withdrawals caused the Aral Sea to shrink drastically, at one point nearly drying up entirely — the site of one of the 20th century's most severe human-caused ecological disasters.",
     formation:
@@ -15674,6 +15691,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Kazakhstan's government, together with the World Bank, is advancing a second phase of North Aral Sea restoration aimed at further expanding its water extent and raising its level — a representative project in contemporary Central Asian water management and ecological restoration.",
   },
   "caspian-sea-coast-kazakhstan": {
+    // 全六段 sources: 里海面积约 371,000 km²、沿岸五国（Britannica，2 级）；水位下降为广泛报道的环境观察，正文未作政治归因。核实 2026-09-11，未改动
     seeing:
       "The Caspian Sea covers about 371,000 km², making it the world's largest inland body of water; its shores are held by Russia, Kazakhstan, Turkmenistan, Iran and Azerbaijan, with Kazakhstan's coastline lying mainly within Mangystau Region.",
     formation:
@@ -15688,6 +15706,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Aktau is the largest city on the Mangystau stretch of Caspian coastline; the sea has historically been a major sturgeon and caviar-producing region, and remains an important coastal tourism and fishery resource today.",
   },
   "ili-river": {
+    // 全六段 sources: 全长约 1439 km（含源头特克斯河）、哈境内约 815 km。⚠️ 红线自查：正文写「发源于中国新疆天山」—— **只陈述水文事实，未把新疆与中国并列、未描述边界线**；已与中国侧伊犁河谷相关条目并排读，两侧自洽。核实 2026-09-11，未改动
     seeing:
       "The Ili River rises in the Tian Shan of China's Xinjiang; its headwaters, the Tekes and Kunges rivers, merge within Kazakhstan to form the Ili proper, running about 1,439 km in total, of which about 815 km lies within Kazakhstan, before emptying into Lake Balkhash.",
     formation:
@@ -15702,6 +15721,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ili River basin was historically an important water source along the northern Tian Shan branch of the Silk Road, and remains a vital river system for agricultural irrigation and fisheries in southeastern Kazakhstan today.",
   },
   "irtysh-river-kazakhstan": {
+    // 全六段 sources: 全长约 4248 km、发源于中国境内阿尔泰山南麓（Britannica，2 级）；与鄂毕河共同构成全球第七长河流水系。⚠️ 红线自查：只写发源地水文事实、未描述边界线；与中国侧额尔齐斯河 / 喀纳斯条目（「中国唯一流入北冰洋的水系」）并排读自洽；与航线解说 nqz-plx / nqz-pwq 一致。核实 2026-09-11，未改动
     seeing:
       "The Irtysh River runs about 4,248 km in total, rising from glaciers on the southern slopes of the Altai Mountains in China's Xinjiang, flowing west through China before entering Kazakhstan at Lake Zaysan, then turning northwest across eastern Kazakhstan; cities including Semey and Pavlodar are built along its banks.",
     formation:
@@ -15716,6 +15736,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Major eastern Kazakhstani cities including Semey and Pavlodar are built along the Irtysh, which has long been an important source for local navigation, irrigation and urban water supply.",
   },
   "ural-river": {
+    // 全六段 sources: 全长约 2428 km、欧洲第三长河（次于伏尔加、多瑙）、传统欧亚分界之一；阿特劳为跨两洲城市。核实 2026-09-11，未改动
     seeing:
       "The Ural River rises in the southern Ural Mountains, flows through Russia and Kazakhstan, and empties into the Caspian Sea near Atyrau; it is Europe's third-longest river and one of the traditional geographic boundaries between the continents of Europe and Asia.",
     formation:
@@ -15730,6 +15751,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Atyrau, straddling the Ural River, is often described as \"a city on two continents\"; the river has long been an important waterway for local fisheries and navigation.",
   },
   "saryarka-steppe": {
+    // 全六段 sources: 2008-07-07「萨雷阿尔卡」（纳乌尔祖姆 + 科尔加尔津）列入 UNESCO，为**哈萨克斯坦首个自然类世界遗产**（按该国名录逐一排过：亚萨维陵 1993、泰姆格里岩画 2004、丝路 2014 为文化类，萨雷阿尔卡 2008、西天山 2016、图兰寒冬荒漠 2023 为自然类），判据核对通过；与航线解说 pek-nqz 一致。核实 2026-09-11，未改动
     seeing:
       "Saryarka (the Kazakh Uplands) is a vast expanse of dry steppe and low rolling hills across north-central Kazakhstan, one of the largest surviving areas of temperate steppe on Earth.",
     formation:
@@ -15754,10 +15776,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both the Singing Dune and the Aktau-Katutau Hills lie within Altyn-Emel National Park, but the Singing Dune is a quartz-sand dune known for its rare resonant sound, while Aktau-Katutau are desert hills built of multicoloured mineral sedimentary rock.",
     concept:
       "Only a handful of dunes worldwide produce this kind of audible resonance, making the Singing Dune an important natural sample for studying the acoustic effect produced when dry quartz sand grains resonate under specific wind conditions.",
+    // history sources: 沙丘长约 1.5–3 km、高 120–150 m、约 1–1.2 万年前风积形成（园区官网 altynemel.kz，2 级）；国家公园 1996 年设立；「图兰寒冬荒漠」2023-09-20 由哈乌土三国联合列入 UNESCO（1 级）—— 原写 2016。⚠️ 面积「约52万公顷」各来源 209,000–520,000 ha 不等（核心区 vs 含缓冲区），下轮考虑写明口径。核实 2026-09-11
     history:
-      "Altyn-Emel National Park, established in 1996, covers about 520,000 hectares — Kazakhstan's largest national park — and was inscribed on the UNESCO World Heritage List in 2016 as part of the \"Cold Winter Deserts of Turan.\"",
+      "Altyn-Emel National Park, established in 1996, covers about 520,000 hectares — Kazakhstan's largest national park — and was inscribed on the UNESCO World Heritage List in 2023 as part of the \"Cold Winter Deserts of Turan.\"",
   },
   "aktau-katutau-hills": {
+    // 全六段 sources: 阿克套多色沉积岩层与卡图套深褐色荒漠丘陵，均属阿尔滕埃梅尔国家公园 —— 定性描述，与 altyn-emel-singing-dune 互证一致（该条的 UNESCO 年份已于本轮改正，本条未涉年份）。核实 2026-09-11，未改动
     seeing:
       "The Aktau-Katutau Hills are desert hills within Altyn-Emel National Park; Aktau (\"White Mountain\") is built of multicoloured mineral sedimentary layers in pink, orange and green, while Katutau is a range of dark brown desert hills.",
     formation:
@@ -15772,8 +15796,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Altyn-Emel National Park, home to the Aktau-Katutau Hills, has historically been an important wildlife habitat, and the hills are today one of the park's key geological tourism sites alongside the Singing Dune.",
   },
   "burabay-hills": {
+    // seeing sources: 园内 14 座主要湖泊（各约 1 km² 以上）另有更多小湖（kazgeo.kz 等，2 级）—— 原写的「逾30座」无来源；国家公园 2000-08-12 设立。核实 2026-09-11
     seeing:
-      "Burabay (formerly Borovoye) is a district of pine forest, granite hills and lakes within the eastern Kokshetau Hills of northern Kazakhstan, often called \"Kazakhstan's Switzerland\" for its scenery resembling the Swiss Alps, with more than 30 lakes across the area.",
+      "Burabay (formerly Borovoye) is a district of pine forest, granite hills and lakes within the eastern Kokshetau Hills of northern Kazakhstan, often called \"Kazakhstan's Switzerland\" for its scenery resembling the Swiss Alps, with 14 major lakes and many smaller ones across the area.",
     formation:
       "Burabay's granite bodies intruded during the Paleozoic era, later shaped by prolonged weathering and glacial action into today's rounded rock hills and boulder fields, together with the surrounding scattered lakes and pine forests forming a distinctive lake-and-hill landscape.",
     observation:
@@ -15786,6 +15811,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Burabay National Park was established in 2000 and has long been an important summer retreat and health-resort destination for people from northern Kazakhstan and beyond.",
   },
   "torysh-valley-of-balls": {
+    // 全六段 sources: 球状砂岩结核直径 1–3 m，位于曼格斯套州舍特佩村附近乌斯秋尔特高原边缘；形成年代多数来源给约 1.2–1.8 亿年（侏罗纪至早白垩世），另有少数给 7000–5000 万年，暂从多数。核实 2026-09-11，未改动
     seeing:
       "Torysh (the Valley of Balls) is a valley on the edge of the Ustyurt Plateau near the village of Shetpe in Mangystau Region, scattered with thousands of spherical sandstone concretions between 1 and 3 metres in diameter.",
     formation:
