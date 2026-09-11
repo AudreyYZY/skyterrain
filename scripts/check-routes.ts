@@ -17,6 +17,7 @@ import { estimateSpeechDurationSec } from "../lib/speech.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
 import type { RouteWaypoint } from "../types/route.ts";
+import { CITY_REGISTRY } from "../lib/places-registry.ts";
 
 const ROUTES = ALL_ROUTES;
 const IDS = new Set(TERRAIN_REGISTRY.map((e) => e.id));
@@ -394,6 +395,32 @@ console.log(`\n解说点名承运人的句子（「是 X 运营 / operated by X�
 if (operatorSentences === 0) {
   fail("(脚本)", "一句都没抽到 —— 句式正则或解说导出改了，这一段等于没跑");
 }
+
+// ── 航线首尾机场航点 × 城市注册表：同一个 IATA 的坐标必须一致（失败）──────────────
+//
+// 机场名与坐标被手写在两处：城市注册表的 `airport` 字段，和每条航线首尾的机场航点。
+// 迁建时（呼和浩特白塔 → 盛乐，IATA 不变、坐标变了）只改一处，镜头就从旧址起飞，而两处单看都「有坐标」。
+// 2026-09-11 建这条时 519 个可比对航点全部在 3 km 内 —— 它现在不报错，守的是**下一次**迁建。
+// 航点 id 不是 IATA（希腊 / 奥地利用城市 slug）或是城市的第二机场（大兴 / 虹桥 / 金浦 / 伊丹，注册表每城只记一个）的不比。
+const REG_AIRPORT = new Map<string, { lat: number; lon: number; nameZh: string }>();
+for (const c of CITY_REGISTRY) {
+  if (c.airport && !REG_AIRPORT.has(c.airport.iata)) REG_AIRPORT.set(c.airport.iata, c.airport);
+}
+let airportCompared = 0;
+for (const r of ALL_ROUTES) {
+  for (const w of r.waypoints) {
+    if (w.kind !== "city" || !w.airport || !/^[a-z]{3}$/.test(w.id)) continue;
+    const a = REG_AIRPORT.get(w.id.toUpperCase());
+    if (!a) continue;
+    airportCompared++;
+    const km = haversineKm([w.lon, w.lat], [a.lon, a.lat]);
+    if (km > 3) {
+      fail(r.id, `机场航点 ${w.id.toUpperCase()} 与城市注册表同一机场相差 ${km.toFixed(1)} km（航点「${w.name}」、注册表「${a.nameZh}」）—— 迁建或改坐标只改了一处？`);
+    }
+  }
+}
+console.log(`\n机场航点 × 城市注册表：比对了 ${airportCompared} 个（同一 IATA 坐标须在 3 km 内）`);
+if (airportCompared === 0) fail("(脚本)", "机场航点一个都没比到 —— 航点 id 或注册表导出改了，这一段等于没跑");
 
 if (suspiciousNo.length > 0) {
   console.log("\n形状像占位号的航班号（未核实，核实时优先看这几条）");
