@@ -13834,8 +13834,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "mongolia-gobi": {
     // 全六段 sources: 整体约 130 万 km²、按维基主流口径为世界第六大沙漠（另有「亚洲最大、世界第五」一说）；**与中国侧 gobi 条目并排读一致** —— 两边都强调戈壁以砾漠为主、并非连绵沙丘。⚠️ 红线自查：distinguish 段写「与中国境内的戈壁同属一条跨境荒漠带」，是陈述同一地貌带的跨境分布，**未用内外蒙古对举、未作主权或民族评价**。核实 2026-09-11，未改动
+    // seeing sources: 「世界第六大沙漠」只有维基（3 级）一说、另有「第五」，说不出口径，降级为「面积最大的荒漠之一」；中文用「荒漠」与本库 gobi 条目一致。航线解说 pek-ubn 英文侧同一处已在 R23c 改。核实 2026-09-11
     seeing:
-      "The Gobi spans southern Mongolia and northern China, covering about 1.3 million km² in total — the sixth-largest desert in the world; within Mongolia it is centred on provinces such as South Gobi and East Gobi, with a surface mostly of gravel desert rather than continuous dunes.",
+      "The Gobi spans southern Mongolia and northern China, covering about 1.3 million km² in total — one of the largest deserts in the world; within Mongolia it is centred on provinces such as South Gobi and East Gobi, with a surface mostly of gravel desert rather than continuous dunes.",
     formation:
       "Lying deep inland, far from oceanic moisture sources, and shielded by surrounding ranges from moist air, the Gobi region sits under long-term extreme aridity, where continuous wind erosion and physical weathering have produced a landscape dominated by gravel-covered ground.",
     observation:

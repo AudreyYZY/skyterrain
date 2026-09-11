@@ -738,7 +738,7 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "en-US": { perSentence: [0, 1, 1, 2, 2, 2, 3, 4], source: "auto" },
   },
   "pek-prg": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 4, 5, 5], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 2, 3, 4, 4, 4], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 3, 4, 5, 5], source: "auto" },
   },
   "pek-sha": {

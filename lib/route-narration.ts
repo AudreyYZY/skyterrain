@@ -756,6 +756,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-hnd": {
+    // study sources: 全四段（study/travel × 中英）: 关东平原「日本最大的平原」与本库 terrain/kanto-plain 一致（国交省口径，1 级）；富士山孤立层状火山。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞东京，是从中国东部的大平原，越过东海，飞到日本本州的大平原。起飞时脚下是长江三角洲——长江最后一段淤积、加上人工围垦形成的低平原，河网最密、城镇连成一片。" +
@@ -779,6 +780,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-hnd": {
+    // study sources: 全四段（study/travel × 中英）: 关东平原「日本面积最大的平原」与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞东京，是从华北平原飞过黄海，到日本关东平原。起飞时脚下是华北平原的北缘——由黄河、海河等河流冲积成的大平原，方格农田和城镇密集，地面几乎没有起伏。" +
@@ -802,6 +804,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-kix": {
+    // study sources: 全四段（study/travel × 中英）: 大阪—京都—神户「日本第二大城市群」与本库 travel/osaka、terrain/osaka-plain 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞大阪，是从长江三角洲越过东海，到日本关西的城市带。起飞时脚下是长江三角洲的低平原，河网密布、城镇连片。" +
@@ -4774,6 +4777,7 @@ export const ROUTE_NARRATION: Record<
   // ============================================================
 
   "pek-icn": {
+    // study sources: 全四段（study/travel × 中英）: 黄海平均水深约 44 m（中科院地理所，1 级）；渤海为近乎被陆地环绕的内海。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞首尔，是从华北平原东端越过渤海与黄海，抵达朝鲜半岛西海岸的一段短程航线。起飞后不久，脚下的陆地让位给渤海——中国唯一近乎被陆地完全环绕的内海，海面上常能看到往来的货轮与近海养殖区的浮标带。渤海东端与黄海相连，黄海是一片平均水深仅约44米的浅海，因含沙量高、海水常年浑黄而得名。越过黄海，飞机开始下降，进入朝鲜半岛西海岸——这一带潮差大、滩涂宽阔，是东亚规模较大的淤泥质海岸带之一。仁川国际机场建在西海岸外的永宗岛上，四周仍能看到成片滩涂与围海造陆留下的痕迹。不到两小时，一趟航班把华北的大平原与朝鲜半岛西海岸的浅海滩涂连在了一起。",
@@ -4789,6 +4793,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-bkk": {
+    // study sources: 全四段（study/travel × 中英）: 呵叻高原约占泰国国土三分之一（Britannica，2 级）；曼谷部分区域海拔不足 2 m。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞曼谷，从华南越过中南半岛北部山地，抵达湄南河三角洲。起飞后向西南飞越南岭以南的丘陵地带，随后进入中南半岛北部——山岭连绵、河谷深切，是东南亚地形最破碎的区域之一。跨过这片山地后，地势逐渐平缓，飞机进入呵叻高原：泰国东北部一片占国土面积近三分之一的广袤砂岩台地，传统上称为“依善”地区，高原边缘的山脉把它与泰国中部平原分隔开来。越过呵叻高原西缘，飞机开始下降，进入湄南河三角洲——湄南河入海口长期淤积形成的低平原，泰国首都曼谷即建于三角洲之上，部分区域海拔不足两米。三个多小时的航程，把中国南方的丘陵地带与东南亚大河三角洲连在了一起。",
@@ -4804,11 +4809,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-ubn": {
+    // study sources: 全四段（study/travel × 中英）: 关东以外：图拉河源于肯特山、乌兰巴托约 1300 m 为常识；中文「戈壁」未与「沙漠」混用（#264 已修）；英文原写「world's sixth-largest desert」无来源，已降级为「among the largest」。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界上面积最大的荒漠之一。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
     "en-US":
-      "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks as the world's sixth-largest desert. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
+      "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks among the world's largest deserts. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
     },
     travel: {
     "zh-CN":
@@ -4819,6 +4825,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-han": {
+    // study sources: 全四段（study/travel × 中英）: 南岭为长江 / 珠江分水岭，与本库 terrain/nanling 一致；红河三角洲。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞河内，从长江以南的丘陵地带一路向西南，跨过南岭抵达红河三角洲。起飞后，飞机进入江南丘陵——长江以南、南岭以北的低山丘陵地带，黄山、庐山等断块山地零散分布其间。继续向西南，飞机翻越南岭——一条大致东西走向的山脉，是长江水系与珠江水系的分水岭，也是中国地理上华中与华南的传统分界。越过南岭后，地势逐渐降低，进入中南半岛北部山地，河流深切、地形起伏明显。最后，飞机下降进入红河三角洲——红河及其支流长期携带泥沙淤积而成的三角形平原，越南首都河内就坐落在三角洲西北部边缘。三个多小时的航程，把长江以南的丘陵与东南亚大河三角洲连接了起来。",
@@ -4834,6 +4841,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-kul": {
+    // study sources: 全四段（study/travel × 中英）: 蒂蒂旺沙山脉约 480 km，与本库 terrain 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞吉隆坡，是一条纵贯东亚与东南亚大陆的长航线，从华北平原一路飞越云贵高原、中南半岛，抵达马来半岛。起飞后，飞机先越过华北平原与黄土高原，随后进入云贵高原——中国西南一片以喀斯特地貌为主的高原，石林、溶洞广布。继续向南，飞机跨过中南半岛，沿途山地与河谷交替出现，航程大部分时间在陆地上空。接近赤道时，飞机进入马来半岛，蒂蒂旺沙山脉出现在下方——这是马来半岛的脊梁山系，呈西北—东南走向绵延约480公里，把半岛分成东西两侧不同的气候区。飞机沿山脉南段下降，吉隆坡就坐落在山脉西侧山麓地带。近六个小时的航程，跨越了近40个纬度，从温带平原飞到了赤道附近的热带城市。",
@@ -4849,6 +4857,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-sin": {
+    // study sources: 全四段（study/travel × 中英）: 新加坡国土不到 800 km²（SingStat 约 735 km²，1 级）；蒂蒂旺沙同上。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞新加坡，是这份航线库里最长的一条国际航线，从华北平原一路飞越云贵高原、中南半岛与马来半岛，抵达赤道附近的岛国新加坡。航线前半段与北京—吉隆坡航班基本重合：越过华北平原、黄土高原，进入以喀斯特地貌著称的云贵高原，再跨过中南半岛，最后抵达马来半岛。飞机沿马来半岛的脊梁山脉——蒂蒂旺沙山脉南段下降，山脉呈西北—东南走向，把半岛分成东西两侧。越过半岛最南端，飞机跨过一道狭窄的海峡，进入新加坡——一座国土面积不到800平方公里的赤道岛国。岛屿中央保留着一片茂密的热带雨林，中央集水区自然保护区里的麦里芝蓄水池等水库，既是重要水源，也是岛上少见的原始丛林景观。超过六个小时的航程，从温带大陆一路飞到了赤道岛国。",
@@ -4868,6 +4877,7 @@ export const ROUTE_NARRATION: Record<
   // ============================================================
 
   "pek-lhr": {
+    // study sources: 全四段（study/travel × 中英）: 乌拉尔南北两千多公里、亚欧分界与本库一致；多格兰（北海古陆桥）为科学共识；签证表述未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞伦敦，向西北横跨亚欧大陆，全程约八千四百公里，终点在不列颠岛东南的泰晤士河下游。起飞后进入蒙古高原南缘的戈壁，砾石滩铺到天际线，年降水多在两百毫米以下，地表几乎没有连续植被；河流大多是季节性的，雨后短暂过水随即干涸，风蚀留下坚硬的砾幂，冬季强风把地表的尘土卷上高空，能见度骤降，聚落之间常隔上百公里。越往西北，草原的比例越高，牧群重新出现在河谷两侧。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地。这条南北绵延两千多公里的古老山系海拔不高，却是地理学上划分亚洲与欧洲的界线；长期剥蚀把山脊磨得浑圆，东西两坡的森林构成明显不同，山间盆地里分布着一串以冶金为主的工业城市。再往西是东欧平原，古老地台之上起伏极小，田块与河流的图案从空中看格外规整。飞机继续向西横穿中欧，越过北海南缘——海面下是冰期留下的浅滩沉积，海底至今还能找到当时的河道和陆生动物遗骸。最后跨过英吉利海峡北口，进入泰晤士河下游的低地，降落在伦敦西面的希思罗机场。",
@@ -4887,6 +4897,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-cdg": {
+    // study sources: 全四段（study/travel × 中英）: 「中国直飞西欧最繁忙的航线之一」带限定；乌拉尔约三亿年前碰撞造山；签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞巴黎，向西北横跨亚欧大陆，全程约八千四百公里，终点在西欧的塞纳河盆地，是中国直飞西欧最繁忙的航线之一。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、河流稀少的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带；昼夜温差可达三十度以上，聚落沿着为数不多的泉水和井分布。越往西北，荒漠逐渐让位给稀树草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条古老山系南北绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓；两侧坡地的森林构成明显不同，山中的铁与铜矿支撑起沿线一串工业城市。再往西是东欧平原：由古老地台构成的开阔低地，起伏很小，河流舒缓，冬季常见大范围积雪。飞机在这里转向西南，掠过中欧的丘陵与河谷，地块与城镇的密度肉眼可见地上升，田野被公路和运河切成整齐的格子。最后进入巴黎盆地——一圈圈同心的沉积岩层构成的浅碟形凹地，塞纳河从中蜿蜒穿过，飞机降落在城市东北的戴高乐机场。",
@@ -4906,6 +4917,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-ber": {
+    // study sources: 全四段（study/travel × 中英）: 勃兰登堡机场为柏林现行机场（泰格尔 2020 年关闭）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞柏林，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的北德平原。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里；冬季强风把地表的尘土卷上高空，再往西北，荒漠逐渐转为草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，鄂毕河等大河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系是亚欧两洲的传统分界，山脊多在一千米上下，长期剥蚀把它磨得浑圆，山间盆地里分布着一串以冶金与机械制造为主的工业城市。再往西是东欧平原，起伏极小的开阔农田，冬季常见大范围积雪。最后掠过中欧的河谷与湖泊，降落在柏林东南的勃兰登堡机场。",
@@ -4925,6 +4937,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pkx-ams": {
+    // study sources: 全四段（study/travel × 中英）: 史基浦跑道低于海平面、圩田与堤坝；签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "北京大兴飞阿姆斯特丹，向西北横跨亚欧大陆，全程约八千二百公里，终点在莱茵河三角洲边缘。起飞后进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，干旱少雨、植被稀疏，年降水多在两百毫米以下；风把细沙吹走后留下坚硬的砾幂，河流大多是季节性的，昼夜温差常超过三十度，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多。接着是西西伯利亚平原，地势极为平坦，鄂毕河等大河在这里蜿蜒北流，沼泽面积之大使这一带成为重要的碳汇。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，长期剥蚀把山脊磨得浑圆；山中的矿藏支撑起沿线一串工业城市，两侧坡地的森林构成明显不同。再往西是东欧平原，开阔低地上田块规整，冬季常见大范围低云与积雪。飞机在这里转向西南，掠过中欧的河谷与丘陵，越过北海南缘，海面下是冰期留下的浅滩沉积。最后进入荷兰——这个国家有相当一部分国土低于海平面，靠堤坝与排水系统维持，从空中看是被水道切成方格的圩田。飞机降落在阿姆斯特丹西南的史基浦机场，跑道本身就低于海平面。",
@@ -4944,28 +4957,30 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-bru": {
+    // study sources: 全四段（study/travel × 中英）: 航线本身：海南航空 2006 年起执飞北京—布鲁塞尔，国航这一趟 2026-03 开航 —— study 原写「2026 年 3 月开航」、travel 原写「这条航线 2026 年 3 月才开通」，已改为只说这一趟航班。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞布鲁塞尔，2026年3月开航，向西北横跨亚欧大陆，全程约八千三百公里，终点在西欧低地国家的腹地。起飞后进入蒙古高原南缘的戈壁：砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流多为季节性，雨后短暂过水随即干涸；风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，昼夜温差常超过三十度。再往西北，戈壁的砾石逐渐让位给草原，河流开始变多。接着是西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一，春汛时河水漫出河道，大片林地泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系是亚欧两洲的传统分界，海拔多在一千米上下，地质年代久远，铁、铜与宝石矿藏丰富，沿线因此形成了成片的工业城市；两侧坡地的植被与土壤类型截然不同。再往西是东欧平原，由古老地台构成的低地起伏极小，是欧洲面积最大的平原，田块与河流的图案从空中看格外规整。飞机在这里转向西南，进入中欧的丘陵与低地，河网密集，运河与公路把地块切成整齐的格子。最后飞机掠过默兹河与斯海尔德河之间的低地，降落在布鲁塞尔以东北的扎芬特姆机场。",
+      "北京飞布鲁塞尔，向西北横跨亚欧大陆，全程约八千三百公里，终点在西欧低地国家的腹地。起飞后进入蒙古高原南缘的戈壁：砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流多为季节性，雨后短暂过水随即干涸；风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，昼夜温差常超过三十度。再往西北，戈壁的砾石逐渐让位给草原，河流开始变多。接着是西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一，春汛时河水漫出河道，大片林地泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系是亚欧两洲的传统分界，海拔多在一千米上下，地质年代久远，铁、铜与宝石矿藏丰富，沿线因此形成了成片的工业城市；两侧坡地的植被与土壤类型截然不同。再往西是东欧平原，由古老地台构成的低地起伏极小，是欧洲面积最大的平原，田块与河流的图案从空中看格外规整。飞机在这里转向西南，进入中欧的丘陵与低地，河网密集，运河与公路把地块切成整齐的格子。最后飞机掠过默兹河与斯海尔德河之间的低地，降落在布鲁塞尔以东北的扎芬特姆机场。",
     "en-US":
-      "Beijing to Brussels, opened in March 2026, runs north-west across the Eurasian landmass, about 8,300 km in all, to the heart of the Low Countries. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau: gravel desert stretching to the horizon under less than 200 millimetres of rain in most years, its rivers mostly seasonal, running briefly after rain and then drying out; wind erosion has left a hard pavement, strong winter winds lift dust off the surface, and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to steppe and rivers become more frequent. Next comes the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth, where the spring flood spills the channels and leaves wide stands of woodland standing in water for weeks. Past the Ural Mountains the flight enters an open lowland. This old range is the conventional divide between Asia and Europe, mostly around a thousand metres high, geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length; the vegetation and soils on its two flanks are quite different. Farther west lies the East European Plain, a lowland on an ancient platform with very little relief and the largest plain in Europe, its fields and rivers reading from the air as a strikingly regular pattern. The flight turns south-west across it into the hills and lowlands of central Europe, densely veined with rivers, canals and roads that cut the ground into neat blocks. It finally crosses the low country between the Meuse and the Scheldt and lands at Zaventem Airport north-east of Brussels.",
+      "Beijing to Brussels runs north-west across the Eurasian landmass, about 8,300 km in all, to the heart of the Low Countries. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau: gravel desert stretching to the horizon under less than 200 millimetres of rain in most years, its rivers mostly seasonal, running briefly after rain and then drying out; wind erosion has left a hard pavement, strong winter winds lift dust off the surface, and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to steppe and rivers become more frequent. Next comes the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth, where the spring flood spills the channels and leaves wide stands of woodland standing in water for weeks. Past the Ural Mountains the flight enters an open lowland. This old range is the conventional divide between Asia and Europe, mostly around a thousand metres high, geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length; the vegetation and soils on its two flanks are quite different. Farther west lies the East European Plain, a lowland on an ancient platform with very little relief and the largest plain in Europe, its fields and rivers reading from the air as a strikingly regular pattern. The flight turns south-west across it into the hills and lowlands of central Europe, densely veined with rivers, canals and roads that cut the ground into neat blocks. It finally crosses the low country between the Meuse and the Scheldt and lands at Zaventem Airport north-east of Brussels.",
     },
     travel: {
     "zh-CN":
       "北京到布鲁塞尔约10小时35分钟，时差7-8小时（比利时夏令时期间7小时）。比利时气候温和多雨，四季都建议带一件防水外套。" +
       "布鲁塞尔机场距市中心约13公里，机场快线火车约20分钟到布鲁塞尔中央/南站，班次密集。市内地铁、有轨电车、公交同属一套票务系统。大广场、圣于贝尔拱廊、比利时漫画博物馆都在步行可达的市中心范围内，华夫饼、巧克力、啤酒是当地代表美食。" +
-      "比利时属申根区，签证按国籍不同、以比利时驻当地使领馆最新公布为准，行前确认并预留办理时间。这条航线2026年3月才开通，出行前建议再次核实航班班期是否有变动。",
+      "比利时属申根区，签证按国籍不同、以比利时驻当地使领馆最新公布为准，行前确认并预留办理时间。这趟航班2026年3月才开通，出行前建议再次核实航班班期是否有变动。",
     "en-US":
       "Beijing to Brussels takes about 10 hours 35 minutes, with a 7–8 hour time difference (7 hours during Belgian summer time). Belgium is mild and rainy, so a waterproof jacket is worth packing in any season." +
       " Brussels Airport is about 13 km from the centre; the airport express train takes about 20 minutes to Brussels Central/South station, with frequent departures. The metro, trams and buses run on one shared ticketing system. The Grand Place, the Galeries Saint-Hubert and the Belgian Comic Strip Center are all within walking distance in the city centre, and waffles, chocolate and beer are the local specialties." +
-      " Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
+      " Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This particular service only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-jfk": {
+    // study sources: 全四段（study/travel × 中英）: 贝加尔湖最深 1642 m、约占全球未冻淡水 20%（UNESCO 754，1 级）；哈德逊湾平均水深一百多米；「比沿纬线直飞短两千多公里」按坐标计算实为约 3400 km，已改为「三千多公里」（英文侧无数字）。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞纽约不走太平洋，而是贴着北极飞一条大圆航线：两地经度几乎相差半个地球，走高纬度的弧线比沿纬线直飞短了两千多公里。起飞后向西北爬升，越过燕山。进入蒙古高原南缘的戈壁，砾石滩一直铺到天际线，风把细沙吹走后留下一层黑亮的砾幂；年降水多在两百毫米以下，河流大多是季节性的，聚落之间常隔上百公里。再往北是贝加尔湖，世界上最深的淡水湖，最深处超过一千六百米，蓄水量约占地表未冻淡水的两成。湖体嵌在一条至今仍在扩张的裂谷里，两岸山地陡直入水，湖底沉积厚达数千米，记录着两千多万年的气候变化；冬季湖面完全封冻，冰层厚到可以行车。湖区四周是连片的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头。航线继续深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道织成的湿地，面积超过三万平方公里，是北冰洋沿岸最大的三角洲之一。夏季解冻时水网密布，成千上万个热融湖散在苔原上，是候鸟重要的繁殖地；入冬后整片冻实，与周围的冻原连成一色，河道只剩下雪面上一道道浅痕。之后航向转东，掠过白令海。冰期海面下降时这里曾是连接亚洲与北美的陆桥，人类很可能就是从这条通道进入美洲的；如今海底大陆架依然很浅，冷暖水团在此交汇，营养盐上涌，渔业资源丰厚，海面上常年多雾。进入阿拉斯加后，晴天时舷窗一侧能看到阿拉斯加山脉，北美最高峰迪纳利就在这条弧形山链上，山体由板块碰撞抬升而成，至今仍在长高。飞机继续东南，越过育空地区——针叶林与冻原交界的地带，河流深切在冻土之中，地面几乎见不到道路与居民点。这一带冬季漫长、夏季短暂，是北美人烟最稀的区域之一；地下的多年冻土使建筑必须架空，否则热量传下去会让地面融沉。十九世纪末的淘金热曾把数万人引到这里，沿着克朗代克河一带建起成片的营地，热潮退去后又几乎全部散去，如今只剩下少数保留下来的木屋和采金的痕迹。再往前是哈德逊湾，一片深入北美大陆的浅海，平均水深只有一百多米，冬季完全封冻。冰期被冰盖压下去的地壳至今仍在缓慢回弹，湾岸线因此逐年后退，岸上能看到一道道被抬起的古海滩排成阶梯。接着飞临五大湖，冰川挖掘出的这组湖泊是地球上面积最大的淡水湖群，蓄水量约占全球地表淡水的两成，湖岸边是北美主要的工业带。最后越过新英格兰的丘陵——古老山系被侵蚀之后剩下的低缓地形。飞机沿哈德逊河下降，降落在纽约肯尼迪机场。",
+      "北京飞纽约不走太平洋，而是贴着北极飞一条大圆航线：两地经度几乎相差半个地球，走高纬度的弧线比沿纬线直飞短了三千多公里。起飞后向西北爬升，越过燕山。进入蒙古高原南缘的戈壁，砾石滩一直铺到天际线，风把细沙吹走后留下一层黑亮的砾幂；年降水多在两百毫米以下，河流大多是季节性的，聚落之间常隔上百公里。再往北是贝加尔湖，世界上最深的淡水湖，最深处超过一千六百米，蓄水量约占地表未冻淡水的两成。湖体嵌在一条至今仍在扩张的裂谷里，两岸山地陡直入水，湖底沉积厚达数千米，记录着两千多万年的气候变化；冬季湖面完全封冻，冰层厚到可以行车。湖区四周是连片的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头。航线继续深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道织成的湿地，面积超过三万平方公里，是北冰洋沿岸最大的三角洲之一。夏季解冻时水网密布，成千上万个热融湖散在苔原上，是候鸟重要的繁殖地；入冬后整片冻实，与周围的冻原连成一色，河道只剩下雪面上一道道浅痕。之后航向转东，掠过白令海。冰期海面下降时这里曾是连接亚洲与北美的陆桥，人类很可能就是从这条通道进入美洲的；如今海底大陆架依然很浅，冷暖水团在此交汇，营养盐上涌，渔业资源丰厚，海面上常年多雾。进入阿拉斯加后，晴天时舷窗一侧能看到阿拉斯加山脉，北美最高峰迪纳利就在这条弧形山链上，山体由板块碰撞抬升而成，至今仍在长高。飞机继续东南，越过育空地区——针叶林与冻原交界的地带，河流深切在冻土之中，地面几乎见不到道路与居民点。这一带冬季漫长、夏季短暂，是北美人烟最稀的区域之一；地下的多年冻土使建筑必须架空，否则热量传下去会让地面融沉。十九世纪末的淘金热曾把数万人引到这里，沿着克朗代克河一带建起成片的营地，热潮退去后又几乎全部散去，如今只剩下少数保留下来的木屋和采金的痕迹。再往前是哈德逊湾，一片深入北美大陆的浅海，平均水深只有一百多米，冬季完全封冻。冰期被冰盖压下去的地壳至今仍在缓慢回弹，湾岸线因此逐年后退，岸上能看到一道道被抬起的古海滩排成阶梯。接着飞临五大湖，冰川挖掘出的这组湖泊是地球上面积最大的淡水湖群，蓄水量约占全球地表淡水的两成，湖岸边是北美主要的工业带。最后越过新英格兰的丘陵——古老山系被侵蚀之后剩下的低缓地形。飞机沿哈德逊河下降，降落在纽约肯尼迪机场。",
     "en-US":
       "Beijing to New York does not cross the Pacific. It flies a great-circle track that hugs the Arctic, because the two cities sit at nearly opposite longitudes. After take-off the aircraft climbs north-west over the Yan Mountains and reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel flats run to the horizon and wind has stripped the fine sand away to leave a dark polished pavement. Farther north lies Lake Baikal, the deepest freshwater lake in the world at more than 1,600 metres, holding roughly a fifth of the planet's unfrozen surface fresh water. The lake sits in a rift that is still pulling apart, dense Siberian taiga runs down to both shores, and in winter the surface freezes solid enough to drive across. The route continues deep into the Siberian interior and crosses the Lena River Delta, an Arctic wetland woven from permafrost and braided channels. When the ground thaws each summer the delta fills with water and becomes a major breeding ground for migratory birds; by winter it freezes hard and merges into the surrounding tundra. The heading then swings east over the Bering Sea. Lower sea levels during the ice ages exposed a land bridge here between Asia and North America, and the continental shelf is still shallow, supporting one of the richest fisheries anywhere. Entering Alaska, a clear day brings the Alaska Range into view on one side of the cabin, the curved chain that carries Denali, the highest peak in North America. The aircraft continues south-east across the Yukon, where boreal forest gives way to tundra, rivers cut deep into frozen ground, and almost no roads or settlements appear below. Winters are long and summers brief, and this is among the most thinly populated country in North America; the gold rush of the late nineteenth century drew tens of thousands here and then emptied out again almost completely. Ahead lies Hudson Bay, a very shallow sea on ground so low that the crust, pressed down by ice-age glaciers, is still rebounding and pushing the shoreline back year by year. The flight then reaches the Great Lakes, glacially excavated and the largest group of freshwater lakes on Earth by surface area. Finally it crosses the hills of New England and descends along the Hudson River into New York's JFK Airport.",
     },
@@ -4988,6 +5003,7 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Beijing to Toronto follows a great-circle track over the Arctic, about 11,500 km in all, one of the longest nonstop routes from China to eastern North America. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart. Farther north lies Lake Baikal, the deepest lake on Earth at more than sixteen hundred metres, holding roughly a fifth of the world's unfrozen fresh water; it sits in a continental rift that is still slowly pulling apart, the mountains on both shores drop straight into the water, and in winter the surface freezes solid enough to drive on. Beyond the lake the Siberian taiga runs unbroken to the horizon, larch and spruce all the way, and every river flows north. The route then reaches the Siberian Arctic Coast, low tundra governed by permafrost: only the surface layer thaws in summer, water cannot drain away, and it collects into countless thaw lakes that read from the air like shards of scattered mirror; the coastline is broken, the river mouths are wide, and the pack ice retreats to higher latitudes through the summer. Across the Arctic Ocean comes the Canadian Arctic Archipelago, dozens of large islands and more than a thousand small ones separated by channels that are frozen year-round or for half the year; the ground is bare rock, gravel and a thin skin of tundra vegetation, with scarcely a tree in sight. Farther south is Hudson Bay, a vast inland sea driven deep into the North American continent and frozen over in winter; the crust beneath it was pressed down by an ice sheet kilometres thick, and it is still rebounding today, so the shoreline keeps rising and raised ancient beaches step back from the water in visible ridges. The flight finally crosses the forests and lakes of Ontario and lands at Toronto Pearson Airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 贝加尔湖数据同 pek-jfk（UNESCO，1 级）；「全程约一万一千五百公里」大圆约 10,560 km，航司公布里程未查到，已开 issue 待核。核实 2026-09-11
     travel: {
     "zh-CN":
       "北京到多伦多约12小时40分钟，由中国国际航空波音777客机执飞。两地时差12-13小时（加拿大东部夏令时期间12小时，标准时期间13小时）。多伦多夏季温暖湿润，冬季寒冷多雪，春秋最适合出行。" +
@@ -5001,9 +5017,10 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-mad": {
+    // study sources: 全四段（study/travel × 中英）: 梅塞塔约占半岛五分之二、平均海拔 600–800 m 与本库 terrain/meseta-central 一致（中文原写「六七百米」已统一）；奥德萨峡谷与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
-      "上海飞马德里，从长江三角洲一路向西北，横跨整个亚欧大陆，全程约一万公里，终点在伊比利亚半岛腹地。起飞后先越过华北平原与内蒙古高原，地面从稠密的城镇与水网逐渐过渡到开阔的干旱草原，河流变少，村落之间的距离越拉越大。进入蒙古高原南缘的戈壁，砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；风蚀留下坚硬的砾幂，昼夜温差常超过三十度。再往西北，砾石逐渐让位给稀树草原，牧群和零星的定居点重新出现。接着是西西伯利亚平原，地势极为平坦，河流蜿蜒，沼泽与湖泊星罗棋布。翻过乌拉尔山脉——这条南北走向的古老褶皱山系海拔不高，却被公认为划分亚洲与欧洲的界线，山中的铁、铜与宝石矿藏支撑起沿线一串工业城市。此后飞机一路向西南，横穿东欧平原与中欧的丘陵：这一带是欧洲最重要的农业带之一，田块规整，河流大多向北或向南汇入海洋，冬季常见大范围的低云与积雪。越往西南，地块被河谷和运河切得越细，城镇密度越高。临近伊比利亚半岛前，比利牛斯山脉先在南面拉出一道明显的雪线，山体由花岗岩与石灰岩组成，冰川作用刻出一连串圆谷和陡壁。掠过山脉西班牙一侧的奥德萨峡谷，一道谷壁近乎垂直的石灰岩深谷，属于世界遗产范围。随后进入梅塞塔中央高原，这片古老台地约占半岛面积的五分之二，平均海拔六七百米；马德里就坐落在高原腹地，飞机降落在城市以东的巴拉哈斯机场。",
+      "上海飞马德里，从长江三角洲一路向西北，横跨整个亚欧大陆，全程约一万公里，终点在伊比利亚半岛腹地。起飞后先越过华北平原与内蒙古高原，地面从稠密的城镇与水网逐渐过渡到开阔的干旱草原，河流变少，村落之间的距离越拉越大。进入蒙古高原南缘的戈壁，砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；风蚀留下坚硬的砾幂，昼夜温差常超过三十度。再往西北，砾石逐渐让位给稀树草原，牧群和零星的定居点重新出现。接着是西西伯利亚平原，地势极为平坦，河流蜿蜒，沼泽与湖泊星罗棋布。翻过乌拉尔山脉——这条南北走向的古老褶皱山系海拔不高，却被公认为划分亚洲与欧洲的界线，山中的铁、铜与宝石矿藏支撑起沿线一串工业城市。此后飞机一路向西南，横穿东欧平原与中欧的丘陵：这一带是欧洲最重要的农业带之一，田块规整，河流大多向北或向南汇入海洋，冬季常见大范围的低云与积雪。越往西南，地块被河谷和运河切得越细，城镇密度越高。临近伊比利亚半岛前，比利牛斯山脉先在南面拉出一道明显的雪线，山体由花岗岩与石灰岩组成，冰川作用刻出一连串圆谷和陡壁。掠过山脉西班牙一侧的奥德萨峡谷，一道谷壁近乎垂直的石灰岩深谷，属于世界遗产范围。随后进入梅塞塔中央高原，这片古老台地约占半岛面积的五分之二，平均海拔六百到八百米；马德里就坐落在高原腹地，飞机降落在城市以东的巴拉哈斯机场。",
     "en-US":
       "Shanghai to Madrid runs north-west out of the Yangtze Delta across the entire Eurasian landmass, about 10,000 km in all, ending in the interior of the Iberian Peninsula. After take-off it passes over the North China Plain and the Inner Mongolian Plateau, the ground shifting from dense towns and waterways to open dry grassland, with fewer rivers and steadily longer gaps between villages. The flight reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel desert stretches to the horizon under less than 200 millimetres of rain in most years and the few rivers are largely seasonal; wind erosion has left a hard pavement and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to open steppe and herds and scattered settlements reappear. Next comes the West Siberian Plain, remarkably flat, laced with winding rivers and scattered with marshes and lakes. The route then crosses the Ural Mountains, an old north-south folded range of modest height that is nonetheless the accepted divide between Asia and Europe, its iron, copper and gemstone deposits supporting a string of industrial cities along its length. Beyond it the aircraft runs south-west across the East European Plain and the hills of central Europe, one of the continent's principal farming belts, its fields laid out in regular blocks, its rivers draining north or south to the sea, and its winters often under broad sheets of low cloud and snow. The farther south-west it goes, the more finely valleys and canals divide the ground and the denser the towns become. Before the Iberian Peninsula the Pyrenees draw a clear snowline across the south, a range of granite and limestone that glaciers have carved into a succession of cirques and cliffs. The flight passes Ordesa Canyon on the Spanish flank of that range, a limestone gorge with near-vertical walls inside a World Heritage area. It then crosses the Meseta Central, the ancient plateau covering about two-fifths of the peninsula at an average elevation of 600 to 800 metres; Madrid sits in the heart of it, and the flight lands at Barajas Airport east of the city.",
     },
@@ -5020,11 +5037,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-ath": {
+    // study sources: 全四段（study/travel × 中英）: 塔克拉玛干「常被称为世界第二大流动沙漠」与本库 terrain/taklamakan 一致；中安纳托利亚高原 600–1200 m 与本库一致；里海水面原写「约 28 m」，按 2025 年哈萨克斯坦官方数据改为「28–29 m、近年仍在下降」—— 会变的量，下轮复核。核实 2026-09-11
     study: {
     "zh-CN":
-      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是塔克拉玛干沙漠，常被称为世界第二大流动沙漠。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八米，没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
+      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是塔克拉玛干沙漠，常被称为世界第二大流动沙漠。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八至二十九米（近年仍在下降），没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
     "en-US":
-      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — often called the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level and with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
+      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — often called the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28–29 metres below sea level and still falling in recent years, with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
     },
     travel: {
     "zh-CN":
@@ -5039,9 +5057,10 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pkx-lis": {
+    // study sources: 全四段（study/travel × 中英）: 梅塞塔平均海拔 600–800 m（中文原写「六七百米」已统一）；季节性航班已带「出行前核实当季是否执飞」。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京大兴飞里斯本，同样向西北横跨亚欧大陆，但终点更靠西——里斯本在伊比利亚半岛最西端，直面大西洋。起飞后掠过蒙古高原南缘的戈壁，大片砾石滩延伸到天际线，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂；河流多为季节性，昼夜温差极大，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多，地面重新出现连片的绿色。接着进入西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条山脉海拔不高，南北却绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀；东坡与西坡的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往前是东欧平原——由古老地台构成的一片开阔低地，起伏极小，河流舒缓，是欧洲面积最大的平原。飞机在这里一路向西南，穿过中欧的河谷与法国南部的丘陵，地块和村镇的密度肉眼可见地增加，田野被公路和运河切成整齐的格子。临近伊比利亚半岛，飞机掠过梅塞塔中央高原的东北角，这片台地由古生代的花岗岩与沉积岩构成，平均海拔六七百米。再往西地势逐级下降，抵达葡萄牙的大西洋海岸，海岸线曲折、多河口三角湾。飞机最后降落在特茹河口北岸的里斯本机场。",
+      "北京大兴飞里斯本，同样向西北横跨亚欧大陆，但终点更靠西——里斯本在伊比利亚半岛最西端，直面大西洋。起飞后掠过蒙古高原南缘的戈壁，大片砾石滩延伸到天际线，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂；河流多为季节性，昼夜温差极大，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多，地面重新出现连片的绿色。接着进入西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条山脉海拔不高，南北却绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀；东坡与西坡的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往前是东欧平原——由古老地台构成的一片开阔低地，起伏极小，河流舒缓，是欧洲面积最大的平原。飞机在这里一路向西南，穿过中欧的河谷与法国南部的丘陵，地块和村镇的密度肉眼可见地增加，田野被公路和运河切成整齐的格子。临近伊比利亚半岛，飞机掠过梅塞塔中央高原的东北角，这片台地由古生代的花岗岩与沉积岩构成，平均海拔六百到八百米。再往西地势逐级下降，抵达葡萄牙的大西洋海岸，海岸线曲折、多河口三角湾。飞机最后降落在特茹河口北岸的里斯本机场。",
     "en-US":
       "Beijing Daxing to Lisbon also heads north-west across the Eurasian landmass, but ends further west still, since Lisbon lies at the western tip of the Iberian Peninsula facing the Atlantic. After take-off the flight crosses the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon under less than 200 millimetres of rain in most years, the fine sand long since carried off by wind to leave a hard pavement; the rivers are mostly seasonal, the daily temperature swing is extreme, and settlements follow the few springs. The farther north-west the route goes, the more the desert gives way to steppe, rivers become frequent, and continuous green returns to the ground. It then enters the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding across wide areas when the snow melts in spring. Past the Ural Mountains, the conventional divide between Asia and Europe, the land drops back to the flat almost at once. The range is not high, but it runs more than two thousand kilometres north to south; it rose in a continental collision some three hundred million years ago and has been eroded ever since, the forests on its eastern and western slopes differ markedly, and its ore deposits support a string of industrial cities along its length. Ahead lies the East European Plain, an open lowland built on an ancient platform with very little relief and slow rivers, the largest plain in Europe. The aircraft runs south-west across it and on through the valleys of central Europe and the hills of southern France, where the density of fields and towns visibly increases and roads and canals cut the ground into neat blocks. Approaching Iberia the flight crosses the north-eastern corner of the Meseta Central, a plateau of Palaeozoic granite and sedimentary rock at an average elevation of 600 to 800 metres. The land then steps down westward to the Atlantic coast of Portugal, a deeply indented shoreline cut by river-mouth estuaries. The flight lands at Lisbon Airport on the north bank of the Tagus estuary.",
     },
@@ -5058,11 +5077,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-cgk": {
+    // study sources: 全四段（study/travel × 中英）: 全程约 5300 km（大圆约 5238 km）；纳土纳「印尼最北端岛群」有误（最北点为伦多岛），已删修饰语、不补新定位。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞雅加达，从东亚大陆一路向南，全程约五千三百公里，终点是赤道附近的爪哇岛。起飞后先飞越华北平原——黄河与海河冲积出来的低平耕地，河渠纵横；再往南是长江中下游平原，湖泊密布、水网交织，夏季的云层常常连成一片。过了长江之后地形抬起，进入江南丘陵与南岭一带，红色砂岩和花岗岩风化出圆缓的山头，梯田顺着坡面层层排布。再往南，珠江三角洲的城市群沿着河口铺开，海岸线在这里向内凹成一个大湾。越过海岸线后进入南海，西太平洋最大的边缘海之一，北部是宽阔的大陆架，中部急剧下陷成四千多米深的海盆，海底散布着大量珊瑚礁和暗沙；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的航运船只。继续向南掠过纳土纳群岛，印度尼西亚最北端的岛群，坐落在通往马六甲海峡的航道要冲上，岛上以低矮丘陵和椰林为主，周围浅海遍布礁盘。往南则过渡为爪哇海，被苏门答腊、爪哇与加里曼丹环抱的浅海，水深大多不足百米，属于巽他陆架，末次冰期海面较低时这里曾是连片的陆地。飞机降落在爪哇岛西北岸的雅加达。",
+      "北京飞雅加达，从东亚大陆一路向南，全程约五千三百公里，终点是赤道附近的爪哇岛。起飞后先飞越华北平原——黄河与海河冲积出来的低平耕地，河渠纵横；再往南是长江中下游平原，湖泊密布、水网交织，夏季的云层常常连成一片。过了长江之后地形抬起，进入江南丘陵与南岭一带，红色砂岩和花岗岩风化出圆缓的山头，梯田顺着坡面层层排布。再往南，珠江三角洲的城市群沿着河口铺开，海岸线在这里向内凹成一个大湾。越过海岸线后进入南海，西太平洋最大的边缘海之一，北部是宽阔的大陆架，中部急剧下陷成四千多米深的海盆，海底散布着大量珊瑚礁和暗沙；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的航运船只。继续向南掠过纳土纳群岛，群岛坐落在通往马六甲海峡的航道要冲上，岛上以低矮丘陵和椰林为主，周围浅海遍布礁盘。往南则过渡为爪哇海，被苏门答腊、爪哇与加里曼丹环抱的浅海，水深大多不足百米，属于巽他陆架，末次冰期海面较低时这里曾是连片的陆地。飞机降落在爪哇岛西北岸的雅加达。",
     "en-US":
-      "Beijing to Jakarta runs almost due south from mainland East Asia, about 5,300 km in all, ending on the island of Java near the equator. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers and threaded with canals; farther south lie the plains of the middle and lower Yangtze, dense with lakes and waterways and often under an unbroken sheet of summer cloud. Past the Yangtze the ground rises into the hills of Jiangnan and the Nanling ranges, where red sandstone and granite weather into rounded summits and terraces step up the slopes. Farther south again the cities of the Pearl River delta spread out around the estuary, where the coastline curves inward into a broad bay. Beyond the coast the route enters the South China Sea, one of the largest marginal seas of the western Pacific: a wide continental shelf in the north drops abruptly to a basin more than four thousand metres deep in the middle, its floor scattered with coral reefs and shoals; the water stays warm all year, typhoons cross it frequently, and shipping traffic is visible on it almost continuously. Continuing south the flight passes the Natuna Islands, Indonesia's northernmost group, sitting astride the shipping lane toward the Strait of Malacca, low hills and coconut palm above, reef platforms in the shallows around. Southward the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo, mostly less than a hundred metres deep and part of the Sunda Shelf, which was continuous dry land when sea level was lower during the last ice age. The flight lands at Jakarta on the north-west coast of Java.",
+      "Beijing to Jakarta runs almost due south from mainland East Asia, about 5,300 km in all, ending on the island of Java near the equator. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers and threaded with canals; farther south lie the plains of the middle and lower Yangtze, dense with lakes and waterways and often under an unbroken sheet of summer cloud. Past the Yangtze the ground rises into the hills of Jiangnan and the Nanling ranges, where red sandstone and granite weather into rounded summits and terraces step up the slopes. Farther south again the cities of the Pearl River delta spread out around the estuary, where the coastline curves inward into a broad bay. Beyond the coast the route enters the South China Sea, one of the largest marginal seas of the western Pacific: a wide continental shelf in the north drops abruptly to a basin more than four thousand metres deep in the middle, its floor scattered with coral reefs and shoals; the water stays warm all year, typhoons cross it frequently, and shipping traffic is visible on it almost continuously. Continuing south the flight passes the Natuna Islands, sitting astride the shipping lane toward the Strait of Malacca, low hills and coconut palm above, reef platforms in the shallows around. Southward the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo, mostly less than a hundred metres deep and part of the Sunda Shelf, which was continuous dry land when sea level was lower during the last ice age. The flight lands at Jakarta on the north-west coast of Java.",
     },
     travel: {
     "zh-CN":
@@ -5077,6 +5097,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-mnl": {
+    // study sources: 全四段（study/travel × 中英）: 皮纳图博 1991 年喷发为 20 世纪第二大（仅次于 1912 年诺瓦鲁普塔，USGS 转述），与本库 terrain/mount-pinatubo 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞马尼拉，向东南横跨南海，直抵吕宋岛。起飞后不久即进入南海——飞机全程大部分时间都在这片海域上空，海面上零星可见渔船与岛礁。" +
@@ -5100,6 +5121,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-nqz": {
+    // study sources: 全四段（study/travel × 中英）: 阿斯塔纳 1997 年迁都（改名年份 #264 已修）；克拉玛依「最大的油田之一」带限定；萨雷阿尔卡「最大地理单元之一」带限定。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞阿斯塔纳，向西横穿中国北方与中亚，全程都在中纬度大陆腹地飞行。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
@@ -5123,6 +5145,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-ist": {
+    // study sources: 全四段（study/travel × 中英）: 阿拉拉特山约 5100 m（本库 5137 m）为土耳其最高峰，未涉边界；全程约 7400 km（大圆约 7080 km，偏差 4–5%）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞伊斯坦布尔，向西横穿亚欧大陆腹地，全程约七千四百公里，是中国直飞欧洲最长的航线之一，终点是一座地跨亚欧两洲的城市。起飞后越过燕山与阴山，进入蒙古高原南缘的戈壁——一条以砾石和裸岩为主的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，地表因此呈现出深浅不一的褐色斑块；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，聚落沿着为数不多的泉水和水井分布，彼此往往相隔上百公里。再往西进入中亚腹地的萨雷阿尔卡草原，哈萨克丘陵之上一片起伏平缓的干草原，是横贯欧亚的大草原带的一段；这里降水稀少而蒸发强烈，地表水多汇入没有出海口的内流湖，湖岸常留下白色的盐壳，草场在春季短暂返青后迅速转黄，长期以来是游牧放牧的核心地带，如今也是重要的矿产开采区。越过里海与外高加索的山地后，飞机掠过阿拉拉特山——土耳其最高峰，海拔约五千一百米的层状火山，山顶终年积雪，从空中很远就能认出来。再往西转为中安纳托利亚高原，山系环抱的内陆高原，盐湖与火山地貌交错。飞机降落在博斯普鲁斯海峡西侧的伊斯坦布尔机场。",
@@ -5142,11 +5165,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-syd": {
+    // study sources: 全四段（study/travel × 中英）: 全程约 8200 km（南航公布 8217 km；原写约 9000 km）；阿波山约 2954 m 为菲律宾最高峰；玻璃屋山火山颈约 2500–2700 万年（昆士兰公园局，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞悉尼，向东南跨过整个西太平洋，全程约九千公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
+      "广州飞悉尼，向东南跨过整个西太平洋，全程约八千二百公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
     "en-US":
-      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 9,000 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
+      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 8,200 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
     },
     travel: {
     "zh-CN":
@@ -5161,6 +5185,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-akl": {
+    // study sources: 全四段（study/travel × 中英）: 全程约 9400 km（大圆约 9365 km）；马里亚纳海沟逾一万米。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞奥克兰，向东南穿越西太平洋，全程约九千四百公里，从北半球一直飞到南半球。起飞后先掠过东海，这是一片平均水深不足两百米的陆架海，海底铺着长江搬运来的泥沙，冬季常有寒潮南下带来的大风。接着进入菲律宾海——西太平洋最大的边缘海，被琉球、菲律宾与马里亚纳诸岛围出一片深水盆地，东缘的马里亚纳海沟是地球表面已知最深处，超过一万米；洋面上常年高温高湿，是台风重要的生成海域。越过赤道后是俾斯麦海，夹在新几内亚岛与新不列颠岛之间的一片小而深的海，海底有活跃的扩张中心与热液喷口，周边岛弧火山活动频繁，海岸多被浓密的热带雨林覆盖。再往南是珊瑚海，海底是一系列深海盆地，西侧的大陆架上发育着世界上规模最大的堡礁系统，礁体由造礁石珊瑚在浅暖水中长期堆积而成。接下来横穿塔斯曼海，这片海域西风强劲、涌浪终年不息。最后飞机进入新西兰北岛上空，降落在奥克兰机场。",
@@ -5180,6 +5205,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-zrh": {
+    // study sources: 全四段（study/travel × 中英）: 瑞士高原夹在汝拉与阿尔卑斯之间，与本库瑞士条目一致；瑞士属申根不属欧盟。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞苏黎世，向西北横跨亚欧大陆，全程约九千四百公里，终点在阿尔卑斯山北麓。起飞后先越过长江口，江水带来的泥沙把这一带的海面染成浑黄。接着进入华北平原——黄河与海河长期泛滥淤积出来的低平耕地，地势自西向东缓缓降低，坡度小到肉眼难以察觉；黄河历史上多次改道，留下一条条废弃的古河床和高出地面的堤岸，如今这里是中国耕地与人口最密集的地区之一。再往西北进入蒙古高原南缘的戈壁——以砾石和裸岩为主的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度。越往西北，砾漠逐渐让位给草原，地表重新出现连续的草皮和季节性的牧场。接着是中亚腹地的萨雷阿尔卡草原，哈萨克丘陵之上起伏平缓的干草原，属于横贯欧亚的大草原带；这里降水稀少、蒸发强烈，地表水多汇入没有出海口的内流湖，湖岸留下白色盐壳，春季短暂返青后草场迅速转黄。再往西地势继续下降，进入里海北岸的低地——世界上面积最大的洼地之一，部分地面低于海平面；伏尔加河从这里注入里海，河口散开成大片芦苇湿地和沙洲，是候鸟迁徙路线上的重要中继站。越过伏尔加河后是东欧平原，古老地台之上起伏极小的开阔低地，河流舒缓，田块与林带的图案从空中看格外规整，冬季常见大范围积雪。最后飞机跨过中欧的丘陵，进入瑞士高原：夹在汝拉山与阿尔卑斯山之间的一条带状低地，冰川退去后留下湖泊与冰碛丘陵，瑞士的大部分城市都集中在这里。飞机降落在苏黎世机场。",
@@ -5199,6 +5225,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-vie": {
+    // study sources: 全四段（study/travel × 中英）: 萨雷阿尔卡 2008 年列入 UNESCO，与本库 terrain/korgalzhyn-reserve 一致；维也纳盆地。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞维也纳，从长江口向西北横穿亚欧大陆，终点在阿尔卑斯山东端的一片低地。起飞后先掠过华北平原，黄河与海河冲积出来的低平耕地，地势极为平坦，耕地与城镇连成一片，是中国人口最密集的区域之一。再往西北进入蒙古高原南缘的戈壁，地表以砾石为主，河流稀少且多为季节性；昼夜温差极大，夏季地表能升到五六十度，冬季又降到零下三四十度，几乎没有连续植被。风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓；春季融雪在洼地里积成成千上万个季节性湖泊，是候鸟迁徙路线上的重要中继站，这一带的湖群已列入世界遗产。夏季蒸发强烈，不少湖泊缩小甚至干涸，湖岸留下白色的盐壳，草场随之从绿转黄，牧群向北迁到还有水的洼地。这一带地下埋藏着丰富的铜、铅锌与煤，采矿点散布在草原之间，是哈萨克斯坦最主要的工业地带之一。再往西草原逐渐让位给耕地，河流开始稳定，田块与防风林带成排出现，聚落密度肉眼可见地上升。飞越东欧平原之后，地势依旧平缓，直到喀尔巴阡山在南面拉出一道弧线。飞机最后进入维也纳盆地，这片低地夹在阿尔卑斯山与喀尔巴阡山之间，多瑙河从中穿过，降落在城市东南的维也纳国际机场。",
@@ -5218,25 +5245,27 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-dub": {
+    // study sources: 全四段（study/travel × 中英）: 东航上海—都柏林 2026-07-20 首航、约 13 小时 20 分（东航新闻稿，1 级）—— study 原写「中爱首条直飞」、travel 原写「中爱之间唯一的直飞航线」，北京—都柏林（海航，2018 年开通、2023 年复航）更早且仍在飞，已改 / 删；爱尔兰不属申根。核实 2026-09-11
     study: {
     "zh-CN":
-      "上海飞都柏林，向西北横跨整个亚欧大陆，是中国与爱尔兰之间的首条直飞航线。起飞后先经过华北平原——黄河与海河冲积出来的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国最主要的农业区之一。接着进入蒙古高原南缘的戈壁，地表以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂；河流稀少且多为季节性，聚落沿着为数不多的泉水分布，彼此相隔很远。再往西北，草原逐渐取代荒漠，河流重新出现。继续深入内陆，进入西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖和沼泽，从空中看像撒了一地的碎镜片。再往西平原让位给东欧的农田与城镇，田块、林带和公路把地表切成整齐的格子。越过欧洲大陆后航线转向西，跨过北海这片浅海，海底是冰期留下的沉积。跨过爱尔兰海后进入以泥炭沼泽和牧场为主的中部低地，飞机降落在都柏林机场。",
+      "上海飞都柏林，向西北横跨整个亚欧大陆，是上海首条直飞爱尔兰的航线。起飞后先经过华北平原——黄河与海河冲积出来的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国最主要的农业区之一。接着进入蒙古高原南缘的戈壁，地表以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂；河流稀少且多为季节性，聚落沿着为数不多的泉水分布，彼此相隔很远。再往西北，草原逐渐取代荒漠，河流重新出现。继续深入内陆，进入西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖和沼泽，从空中看像撒了一地的碎镜片。再往西平原让位给东欧的农田与城镇，田块、林带和公路把地表切成整齐的格子。越过欧洲大陆后航线转向西，跨过北海这片浅海，海底是冰期留下的沉积。跨过爱尔兰海后进入以泥炭沼泽和牧场为主的中部低地，飞机降落在都柏林机场。",
     "en-US":
-      "Shanghai to Dublin runs north-west across the whole of Eurasia and is the first nonstop route between mainland China and Ireland. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible, threaded with canals and one of the country's principal farming regions. It then enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel and bare rock where most years bring less than 200 millimetres of rain and wind erosion has left a hard pavement; rivers are few and largely seasonal, and settlements follow the scarce springs, far apart from one another. Farther north-west steppe replaces desert and rivers reappear. Continuing inland the route reaches the West Siberian Plain, one of the largest plains on Earth, some fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave stands of conifer forest standing in water for weeks. Beneath it lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs that read from the air like shards of scattered mirror. Farther west the plain gives way to the farmland and towns of eastern Europe, where fields, shelterbelts and roads cut the ground into neat blocks. Past continental Europe the track turns west across the North Sea, shallow water whose bed was laid down during the ice ages. Beyond the Irish Sea it enters the central lowlands of peat bog and pasture, and the flight lands at Dublin Airport.",
+      "Shanghai to Dublin runs north-west across the whole of Eurasia and is the first nonstop route between Shanghai and Ireland. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible, threaded with canals and one of the country's principal farming regions. It then enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel and bare rock where most years bring less than 200 millimetres of rain and wind erosion has left a hard pavement; rivers are few and largely seasonal, and settlements follow the scarce springs, far apart from one another. Farther north-west steppe replaces desert and rivers reappear. Continuing inland the route reaches the West Siberian Plain, one of the largest plains on Earth, some fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave stands of conifer forest standing in water for weeks. Beneath it lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs that read from the air like shards of scattered mirror. Farther west the plain gives way to the farmland and towns of eastern Europe, where fields, shelterbelts and roads cut the ground into neat blocks. Past continental Europe the track turns west across the North Sea, shallow water whose bed was laid down during the ice ages. Beyond the Irish Sea it enters the central lowlands of peat bog and pasture, and the flight lands at Dublin Airport.",
     },
     travel: {
     "zh-CN":
-      "上海到都柏林约13小时20分钟，是目前中国与爱尔兰之间唯一的直飞航线，时差7-8小时（爱尔兰夏令时期间7小时）。爱尔兰全年温和多雨，四季都建议带一件防水外套。" +
+      "上海到都柏林约13小时20分钟，时差7-8小时（爱尔兰夏令时期间7小时）。爱尔兰全年温和多雨，四季都建议带一件防水外套。" +
       "都柏林机场距市中心约10公里，机场巴士（Airlink/Aircoach）约30-45分钟到市区，也有出租车。圣三一学院、健力士啤酒博物馆、圣帕特里克大教堂都在市中心步行可达范围内，酒吧文化和现场音乐是当地特色。" +
       "爱尔兰不属于申根区，签证按国籍不同、以爱尔兰移民局最新公布为准，行前确认并预留办理时间。这条航线2026年7月才开通，出行前建议再次核实航班班期是否有变动。",
     "en-US":
-      "Shanghai to Dublin takes about 13 hours 20 minutes, currently the only nonstop route between mainland China and Ireland, with a 7–8 hour time difference (7 hours during Irish summer time). Ireland is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
+      "Shanghai to Dublin takes about 13 hours 20 minutes, with a 7–8 hour time difference (7 hours during Irish summer time). Ireland is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
       " Dublin Airport is about 10 km from the city centre; the Airlink or Aircoach buses take about 30–45 minutes into town, and taxis are also available. Trinity College, the Guinness Storehouse and St. Patrick's Cathedral are all within walking distance of the centre, and pub culture and live music are local specialties." +
       " Ireland is not in the Schengen area; visa rules vary by nationality — check the latest from Irish immigration for your nationality and allow time to arrange one. This route only launched in July 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-osl": {
+    // study sources: 全四段（study/travel × 中英）: 格洛马河「挪威最长的河流」（约 620 km）与本库 terrain/glomma-river 一致；西西伯利亚平原东西约 1500 km。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞奥斯陆，向西北横跨亚欧大陆北部，全程约七千五百公里，终点在斯堪的纳维亚半岛南端。起飞后向西北爬升，进入蒙古高原南缘的戈壁，砾石滩铺到天际线；这片荒漠年降水多在两百毫米以下，风把细沙吹走后留下一层坚硬的砾幂，地表看上去像被打磨过，被搬走的沙在下风处堆成沙丘带。河流大多是季节性的，昼夜温差常超过三十度，聚落之间往往相隔上百公里。再往北是西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小。鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久；地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖与沼泽，沼泽面积之大，使这一带成为地球上重要的碳汇之一。再往西，针叶林逐渐掺进阔叶树，田块与村镇重新出现。越过乌拉尔以西之后，飞机接近波罗的海沿岸，海岸线低平、多沙洲与潟湖，冬季部分海湾结冰。最后跨过格洛马河——挪威最长的河流，从山地南流注入海峡，两岸是连片的针叶林与湖泊，飞机降落在奥斯陆以北的加勒穆恩机场。",
@@ -5256,6 +5285,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-arn": {
+    // study sources: 全四段（study/travel × 中英）: 东航浦东—斯德哥尔摩 2026-06-22 复航、停飞六年、约 11 小时 10 分（官方转述，2 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞斯德哥尔摩，2026年6月复航，是停飞六年后重开的直飞航线，全程约八千公里。起飞后先经过华北平原——黄河与海河冲积出的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国人口最密集的区域之一。接着进入蒙古高原南缘的戈壁，地表以砾石为主，植被稀疏，聚落之间相隔很远；这里年降水稀少，风把细沙吹走后留下坚硬的砾幂，昼夜温差极大，冬季常有强风扬起沙尘，能见度骤降。越往西北，砾漠逐渐让位给草原，河流开始变多，地面重新出现连片的绿色。再往西北是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖与沼泽。再往西平原让位给东欧的农田与城镇，地面重新变得规整。越过波罗的海沿岸后，飞机进入斯德哥尔摩群岛上空——冰后回弹把海底基岩抬出水面，形成两万多座岛屿与礁石。飞机降落在城市以北的阿兰达机场。",
@@ -5275,6 +5305,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-cph": {
+    // study sources: 全四段（study/travel × 中英）: 凯斯楚普机场在阿迈厄岛；丹麦服务费含在账单。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞哥本哈根，向西北横跨亚欧大陆，全程约七千五百公里，终点在波罗的海入口的厄勒海峡边。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地——这条南北绵延两千多公里的古老山系海拔不高，却被公认为划分亚洲与欧洲的界线；它形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓，两侧的植被与土壤类型截然不同。再往西是东欧平原，开阔低地上田块规整，河流舒缓。最后跨过波罗的海西口，降落在哥本哈根近旁阿迈厄岛上的卡斯特鲁普机场。",
@@ -5294,11 +5325,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pkx-hel": {
+    // study sources: 全四段（study/travel × 中英）: 南航大兴—赫尔辛基 2026-03-29 首航（2 级）；塞马湖「芬兰最大湖泊」与本库 terrain/saimaa 一致；原写「中国到北欧最北的直飞航路」说不出口径，已删。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京大兴飞赫尔辛基，向西北横跨亚欧大陆，全程约六千五百公里，是中国到北欧最北的一条直飞航路。起飞后越过燕山，进入蒙古高原南缘的戈壁——这片干旱带以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂，被吹走的细沙在边缘堆成沙丘；河流多为季节性，昼夜温差常超过三十度，冬季强风把地表尘土卷上高空，能见度骤降。越往西北，砾漠逐渐让位给草原，牧群和零星的定居点重新出现在河谷两侧。接着深入西西伯利亚平原，世界上最大的平原之一，地势极其平坦，森林、沼泽与湖泊交错成片。继续向西北，飞越乌拉尔山脉北段——地理学上常以这条山系划分亚洲与欧洲，越往北山势越平缓，山地被苔原和针叶林覆盖；这里的冻土夏季只融化表层很薄的一段，水下渗不下去，于是在地表积成大片浅水和沼泽。越过山脉后进入芬兰东南部的湖区，塞马湖是芬兰最大的湖泊，由冰川刻蚀出的复杂水系和数千座岛屿组成。飞机最后穿过芬兰湾北岸，降落在赫尔辛基万塔机场。",
+      "北京大兴飞赫尔辛基，向西北横跨亚欧大陆，全程约六千五百公里。起飞后越过燕山，进入蒙古高原南缘的戈壁——这片干旱带以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂，被吹走的细沙在边缘堆成沙丘；河流多为季节性，昼夜温差常超过三十度，冬季强风把地表尘土卷上高空，能见度骤降。越往西北，砾漠逐渐让位给草原，牧群和零星的定居点重新出现在河谷两侧。接着深入西西伯利亚平原，世界上最大的平原之一，地势极其平坦，森林、沼泽与湖泊交错成片。继续向西北，飞越乌拉尔山脉北段——地理学上常以这条山系划分亚洲与欧洲，越往北山势越平缓，山地被苔原和针叶林覆盖；这里的冻土夏季只融化表层很薄的一段，水下渗不下去，于是在地表积成大片浅水和沼泽。越过山脉后进入芬兰东南部的湖区，塞马湖是芬兰最大的湖泊，由冰川刻蚀出的复杂水系和数千座岛屿组成。飞机最后穿过芬兰湾北岸，降落在赫尔辛基万塔机场。",
     "en-US":
-      "Beijing Daxing to Helsinki runs north-west across the Eurasian landmass, about 6,500 km in all, one of the northernmost nonstop corridors between China and the Nordics. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt mostly of gravel and bare rock where most years bring less than 200 millimetres of rain, wind erosion has left a hard pavement and the fine sand it carried off has piled into dunes along the margins; the rivers are mostly seasonal, the daily temperature can swing more than thirty degrees, and strong winter winds lift dust high enough to cut visibility sharply. The farther north-west the route goes, the more the gravel desert gives way to steppe, with herds and scattered settlements reappearing along the valleys. The flight then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat, with forest, marsh and lake interlocking across it. Continuing north-west it crosses the northern Ural Mountains — the range geographers commonly use to divide Asia from Europe — where the relief grows gentler with latitude and tundra and conifer forest cover the slopes; the permafrost thaws only a thin layer each summer, so water cannot drain away and collects on the surface as wide shallow pools and bog. Beyond the range the route enters the lake district of south-east Finland, where Lake Saimaa, the country's largest lake, is a maze of glacially carved waterways and thousands of islands. The flight finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport.",
+      "Beijing Daxing to Helsinki runs north-west across the Eurasian landmass, about 6,500 km in all. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt mostly of gravel and bare rock where most years bring less than 200 millimetres of rain, wind erosion has left a hard pavement and the fine sand it carried off has piled into dunes along the margins; the rivers are mostly seasonal, the daily temperature can swing more than thirty degrees, and strong winter winds lift dust high enough to cut visibility sharply. The farther north-west the route goes, the more the gravel desert gives way to steppe, with herds and scattered settlements reappearing along the valleys. The flight then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat, with forest, marsh and lake interlocking across it. Continuing north-west it crosses the northern Ural Mountains — the range geographers commonly use to divide Asia from Europe — where the relief grows gentler with latitude and tundra and conifer forest cover the slopes; the permafrost thaws only a thin layer each summer, so water cannot drain away and collects on the surface as wide shallow pools and bog. Beyond the range the route enters the lake district of south-east Finland, where Lake Saimaa, the country's largest lake, is a maze of glacially carved waterways and thousands of islands. The flight finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport.",
     },
     travel: {
     "zh-CN":
@@ -5313,6 +5345,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-waw": {
+    // study sources: 全四段（study/travel × 中英）: 肖邦机场；华沙老城战后按原貌重建、1980 年列入 UNESCO。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞华沙，向西北横跨亚欧大陆，全程约七千一百公里，终点在中欧的维斯瓦河畔。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河流蜿蜒北流，沼泽面积之大在全球都少有。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，海拔不高但地质年代久远，铁、铜、宝石等矿产丰富，沿线因此形成了成片的工业城市。再往西进入东欧平原，冰期留下的低缓丘陵与沙质平原交替出现，河流在其间宽缓地绕行。飞机降落在华沙市区西南的肖邦机场。",
@@ -5332,11 +5365,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-prg": {
+    // study sources: 全四段（study/travel × 中英）: 瓦茨拉夫·哈维尔机场（2012 年更名）；捷克无国内商业航线与 CLAUDE.md 既有结论一致；「波希米亚高地 / 盆地」同篇自相矛盾，已统一为盆地。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞布拉格，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的波希米亚盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界，飞机进入一片开阔低地——这条山系南北绵延两千多公里，海拔并不高，却是重要的构造与气候界线，两侧坡地的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往西是东欧平原，古老地台之上起伏很小，田块与河流的图案从空中看格外规整。接近终点时进入波希米亚高地，四周被低山环抱、中间下凹，是一处典型的构造盆地。飞机降落在布拉格西郊的瓦茨拉夫·哈维尔机场。",
+      "北京飞布拉格，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的波希米亚盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界，飞机进入一片开阔低地——这条山系南北绵延两千多公里，海拔并不高，却是重要的构造与气候界线，两侧坡地的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往西是东欧平原，古老地台之上起伏很小，田块与河流的图案从空中看格外规整。接近终点时进入波希米亚盆地，四周被低山环抱、中间下凹，是一处典型的构造盆地。飞机降落在布拉格西郊的瓦茨拉夫·哈维尔机场。",
     "en-US":
-      "Beijing to Prague runs north-west across the Eurasian landmass, about 7,600 km in all, ending in the Bohemian basin of central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, but it marks a real structural and climatic boundary, the forests on its two flanks differ markedly, and its ore deposits support a string of industrial cities along its length. Farther west lies the East European Plain, an ancient platform with very little relief where fields and rivers read from the air as a strikingly regular pattern. Near the end the route crosses the Bohemian Uplands, a ring of low mountains around a sunken middle — a textbook structural basin. The flight lands at Václav Havel Airport on the western edge of Prague.",
+      "Beijing to Prague runs north-west across the Eurasian landmass, about 7,600 km in all, ending in the Bohemian basin of central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, but it marks a real structural and climatic boundary, the forests on its two flanks differ markedly, and its ore deposits support a string of industrial cities along its length. Farther west lies the East European Plain, an ancient platform with very little relief where fields and rivers read from the air as a strikingly regular pattern. Near the end the route crosses the Bohemian Basin, a ring of low mountains around a sunken middle — a textbook structural basin. The flight lands at Václav Havel Airport on the western edge of Prague.",
     },
     travel: {
     "zh-CN":
@@ -5351,11 +5385,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-fco": {
+    // study sources: 全四段（study/travel × 中英）: 亚平宁「纵贯意大利半岛的脊梁」与本库一致；里海水面原写「约 28 m」已改为「28–29 m、近年仍在下降」。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞罗马，向西横跨亚欧大陆，全程约八千五百公里，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；地表几乎没有连续植被，风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，能见度骤降。越往西，砾漠逐渐让位给草原。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓；春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站，夏季蒸发强烈，湖岸留下白色的盐壳。接着飞临里海，地球上面积最大的内陆水体，水面低于海平面约二十八米，北部浅、南部深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化，近岸能看到一道道被遗弃的旧岸线。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，落水洞与地下河密布，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的褶皱山系，是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
+      "北京飞罗马，向西横跨亚欧大陆，全程约八千五百公里，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；地表几乎没有连续植被，风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，能见度骤降。越往西，砾漠逐渐让位给草原。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓；春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站，夏季蒸发强烈，湖岸留下白色的盐壳。接着飞临里海，地球上面积最大的内陆水体，水面低于海平面约二十八至二十九米（近年仍在下降），北部浅、南部深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化，近岸能看到一道道被遗弃的旧岸线。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，落水洞与地下河密布，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的褶皱山系，是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
     "en-US":
-      "Beijing to Rome runs west across the Eurasian landmass, about 8,500 km in all, to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under less than 200 millimetres of rain in most years, with few rivers and those mostly seasonal; almost no continuous vegetation forms, wind erosion has left a hard pavement, and strong winter winds lift dust off the surface sharply enough to cut visibility. The farther west it goes, the more the gravel desert gives way to steppe. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds; evaporation is strong in summer and leaves white salt crusts along their shores. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation, and abandoned former shorelines are visible in steps near the water. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, dense with sinkholes and underground rivers, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
+      "Beijing to Rome runs west across the Eurasian landmass, about 8,500 km in all, to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under less than 200 millimetres of rain in most years, with few rivers and those mostly seasonal; almost no continuous vegetation forms, wind erosion has left a hard pavement, and strong winter winds lift dust off the surface sharply enough to cut visibility. The farther west it goes, the more the gravel desert gives way to steppe. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds; evaporation is strong in summer and leaves white salt crusts along their shores. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28–29 metres below sea level and still falling in recent years, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation, and abandoned former shorelines are visible in steps near the water. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, dense with sinkholes and underground rivers, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
     },
     travel: {
     "zh-CN":

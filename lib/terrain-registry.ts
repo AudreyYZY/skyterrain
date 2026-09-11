@@ -12004,7 +12004,7 @@ const MONGOLIA_GOBI: TerrainEntry = {
   bbox: [95.0, 41.6, 112.0, 46.3],
   viewScale: 2.0,
   label: { lon: 106.0, lat: 44.0, rotation: 0 },
-  source: "戈壁：横跨蒙古南部与中国北部的荒漠地带，整体面积约130万平方公里，是世界第六大沙漠，主体为砾漠而非沙漠；蒙古境内以南戈壁、东戈壁等省份为主，气候夏热冬寒、年降水仅约194毫米（中国段另见 gobi 词条，锚点取额济纳；Wikipedia/geographical.co.uk WebSearch 2026）",
+  source: "戈壁：横跨蒙古南部与中国北部的荒漠地带，整体面积约130万平方公里，是世界上面积最大的荒漠之一，主体为砾漠而非沙漠；蒙古境内以南戈壁、东戈壁等省份为主，气候夏热冬寒、年降水仅约194毫米（中国段另见 gobi 词条，锚点取额济纳；Wikipedia/geographical.co.uk WebSearch 2026）",
 };
 
 const GREAT_LAKES_DEPRESSION: TerrainEntry = {
