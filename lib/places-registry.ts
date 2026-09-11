@@ -1484,7 +1484,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "jinhua", nameZh: "金华", nameEn: "Jinhua", country: "china", tier: "major", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
     lon: 119.6475, lat: 29.0790,
-    airport: { iata: "YIW", nameZh: "金华义乌机场", nameEn: "Jinhua Yiwu Airport", lon: 120.0322, lat: 29.3447 },
+    airport: { iata: "YIW", nameZh: "义乌机场", nameEn: "Yiwu Airport", lon: 120.0322, lat: 29.3447 },
     source: "金华市区 29.0790,119.6475（zh.wikipedia）；YIW 机场：en.wikipedia（义乌市区西北 5.5 公里，距金华市区约 51 公里）",
   },
   {
