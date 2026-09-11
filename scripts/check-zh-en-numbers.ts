@@ -54,6 +54,20 @@ function nums(s: string): Map<string, Set<number>> {
     if (m[2] === "万平方公里") add("km2", v * 10000);
     else add(m[2] === "平方公里" ? "km2" : m[2] === "公里" ? "km" : "m", v);
   }
+  /**
+   * **汉字数字**（2026-09-11 补）。航线解说的中文大量写「三千六百米」「九千公里」，
+   * 第一版只认阿拉伯数字，这一整类都在视野外 —— 梅塞塔中文「平均海拔六七百米」、
+   * 英文与本库地形条目都是 600–800 m，中英各挑了一个值，正是这个脚本立项要抓的形状，
+   * 却是联网核实的子代理替它抓到的。
+   * 「六七百」这种相邻两个数字是**区间**，两端都记下；「数百米」「上千米」没有具体数，解析为 0 后跳过。
+   */
+  // 前面是「数 / 几 / 上 / 成 / 好」的不是具体数（「数十公里」「上百米」），跳过 ——
+  // 第一版漏了这条，「数十公里」被读成 10 km、和英文的 60–100 km 撞出一条假报。
+  for (const m of s.matchAll(/(?<![数几上成好零〇一二两三四五六七八九十百千万])([零〇一二两三四五六七八九十百千万]+)(?:多|余)?\s*(平方公里|万平方公里|公里|米)/g)) {
+    const u = m[2] === "公里" ? "km" : m[2] === "米" ? "m" : "km2";
+    const mul = m[2] === "万平方公里" ? 10000 : 1;
+    for (const v of zhNumRange(m[1])) add(u, v * mul);
+  }
   // km² 必须先于 km 匹配，否则「7,600 km²」会被读成 7600 km
   for (const m of s.matchAll(/([\d.,]+)\s*(km²|km|m)(?![²a-zA-Z])/g)) {
     const v = Number(m[1].replace(/,/g, ""));
@@ -62,6 +76,29 @@ function nums(s: string): Map<string, Set<number>> {
   return out;
 }
 const near = (a: number, b: number) => Math.abs(a - b) <= Math.max(1, a * TOLERANCE);
+
+const ZH_DIGIT: Record<string, number> = { 零: 0, 〇: 0, 一: 1, 二: 2, 两: 2, 三: 3, 四: 4, 五: 5, 六: 6, 七: 7, 八: 8, 九: 9 };
+/** 「一万一千五百」→ 11500；「九千」→ 9000；解析不出具体数（「百」「千」单独出现）返回 0 */
+function zhNum(t: string): number {
+  let total = 0, section = 0, cur = 0;
+  for (const ch of t) {
+    if (ch in ZH_DIGIT) cur = ZH_DIGIT[ch];
+    else if (ch === "十") { section += (cur || 1) * 10; cur = 0; }
+    else if (ch === "百") { section += cur * 100; cur = 0; }
+    else if (ch === "千") { section += cur * 1000; cur = 0; }
+    else if (ch === "万") { total += (section + cur) * 10000; section = 0; cur = 0; }
+  }
+  return total + section + cur;
+}
+/** 「六七百」→ [600, 700]；「一千二三百」→ [1200, 1300]；其余 → [单值]；解析为 0 的丢掉 */
+function zhNumRange(t: string): number[] {
+  const r = /^(.*?)([一二三四五六七八九])([二三四五六七八九])([十百千万].*)$/.exec(t);
+  if (r && ZH_DIGIT[r[3]] === ZH_DIGIT[r[2]] + 1) {
+    return [zhNum(r[1] + r[2] + r[4]), zhNum(r[1] + r[3] + r[4])].filter((v) => v > 0);
+  }
+  const v = zhNum(t);
+  return v > 0 ? [v] : [];
+}
 
 let pairs = 0, fields = 0;
 /** 按内容系统分别计数 —— 见文件末尾的断言：任何一套比到 0 对都当失败 */
