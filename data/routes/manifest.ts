@@ -23,6 +23,7 @@ import pekHrb from "./pek-hrb.json" with { type: "json" };
 // 中国 · 批 3（南北纵贯 / 华南 / 海南）
 import hrbCan from "./hrb-can.json" with { type: "json" };
 import pekSha from "./pek-sha.json" with { type: "json" };
+import canBud from "./can-bud.json" with { type: "json" };
 import canHak from "./can-hak.json" with { type: "json" };
 import pekKwl from "./pek-kwl.json" with { type: "json" };
 // 中国 · 批 4（秦岭 / 塔里木 / 云藏 / 辽东）
@@ -350,6 +351,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekHrb,
   hrbCan,
   pekSha,
+  canBud,
   canHak,
   pekKwl,
   xiyCtu,

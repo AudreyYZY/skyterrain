@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: a8bd122
+lastVerifiedCommit: 20b4f63
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: a8bd122
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | 匈牙利 8 城当批核实（18 项，14 属实）（R45） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 匈牙利地形第 3 批当批核实（16 项，12 属实）（R44） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | check:bearings 首跑：正文距离短于直线 4 处（R43） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 随机抽样审计第 2–4 批查出的 8 处错 + 2 处 unknown 收紧（R42） | 11 | 0 / 11 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |

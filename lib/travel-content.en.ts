@@ -15593,8 +15593,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–June and September are the most comfortable; summers on the plain are hot with little shade and winters windy. The tram ties the Great Forest to the centre, and half a day covers the axis.",
   },
   szeged: {
+    // identity sources: 「阳光之城」是传统称号；实测日照佩奇略高于塞格德，故不作排名断言。2026-09-13 核。
     identity:
-      "Szeged lies in southern Hungary where the Tisza and the Maros meet, with about 160,000 people in 2025 (Hungarian Central Statistical Office), and is among the sunniest places in the country — locals call it the city of sunshine. Its present shape came out of a flood: in 1879 the Tisza broke its banks and destroyed most of the town, and what stands now was rebuilt to a single plan.",
+      "Szeged lies in southern Hungary where the Tisza and the Maros meet, with about 160,000 people in 2025 (Hungarian Central Statistical Office), and has long been known as the city of sunshine. Its present shape came out of a flood: in 1879 the Tisza broke its banks and destroyed most of the town, and what stands now was rebuilt to a single plan.",
     howItWorks:
       "Szeged is the seat of Csongrád-Csanád county and a city of county rank, run by an elected mayor and assembly. After the flood of 1879 the rebuilding did not follow the old lanes but adopted a radial and ring plan — from the air the street pattern today is a set of concentric ring roads with avenues running out from the centre, which is unusual among Hungarian towns. The University of Szeged is one of the city's largest institutions. Addresses read street and number, and locals orient by the cathedral square and the ring roads. Newcomers most often go wrong by assuming so regular a street plan is what the old town always looked like, when it is in fact the product of a disaster.",
     layout:
@@ -15641,10 +15642,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April–June and September–October are the most comfortable. The old town is compact and takes half a day to a day; allow half a day each for the Szigetköz or the abbey.",
   },
   eger: {
+    // identity sources: KSH 2025-01-01：48,686。新写内容的当批核实查出。2026-09-13 核。
     identity:
-      "Eger lies in northern Hungary at the southern foot of the Bükk, with about 53,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town and a red-wine region — the vineyards on the slopes and the cellars in the town are two ends of the same thing.",
+      "Eger lies in northern Hungary at the southern foot of the Bükk, with about 49,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town and a red-wine region — the vineyards on the slopes and the cellars in the town are two ends of the same thing.",
+    // howItWorks sources: 1994 年起州首府自动获州权市地位。2026-09-13 核。
     howItWorks:
-      "Eger is the seat of Heves county, run by an elected mayor and assembly. The town sits in a small river valley at the southern foot of the Bükk, hills to the north and the plain opening to the south — a position that gave it both the south-facing slopes vines need and, historically, a place on a north–south corridor, which is why the castle still stands on high ground to the east. The Ottoman period left a minaret here, among the northernmost surviving examples of its kind. Addresses read street and number, and locals orient by the main square, the castle and the cellar valley. Newcomers most often go wrong by staying in the town and never walking out to the cellar valley, which is the other half of local life.",
+      "Eger is the seat of Heves county and, as a county seat, automatically a city of county rank, run by an elected mayor and assembly. The town sits in a small river valley at the southern foot of the Bükk, hills to the north and the plain opening to the south — a position that gave it both the south-facing slopes vines need and, historically, a place on a north–south corridor, which is why the castle still stands on high ground to the east. The Ottoman period left a minaret here, among the northernmost surviving examples of its kind. Addresses read street and number, and locals orient by the main square, the castle and the cellar valley. Newcomers most often go wrong by staying in the town and never walking out to the cellar valley, which is the other half of local life.",
     layout:
       "The centre is Dobó Square, with baroque churches and civic buildings around it; the castle stands on high ground a few minutes east. The cathedral and the library beside it are to the west. About a kilometre to the south-west lies the Valley of the Beautiful Women, a street of cellars cut into the rock face, one doorway after another.",
     gettingAround:
@@ -15657,8 +15660,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–June and September–October are the most comfortable, and autumn is the harvest, when the cellars are busiest. Half a day for the castle and old town; give the cellar valley an afternoon or an evening.",
   },
   sopron: {
+    // identity sources: KSH 2025-01-01：60,820。2026-09-13 核。
     identity:
-      "Sopron lies at Hungary's western edge, with Austria on three sides of it, and had about 63,000 people in 2025 (Hungarian Central Statistical Office). Its medieval core is among the most complete in the country, its street pattern largely unchanged for centuries; vineyards and low hills surround it.",
+      "Sopron lies at Hungary's western edge, with Austria on three sides of it, and had about 61,000 people in 2025 (Hungarian Central Statistical Office). Its medieval core is among the most complete in the country, its street pattern largely unchanged for centuries; vineyards and low hills surround it.",
     howItWorks:
       "Sopron is a city of county rank, run by an elected mayor and assembly. Its position is unusual: hard against the border, with everyday movement across it — commuting and shopping both — entirely routine, and German in common local use. The old town is an almost complete medieval ring, with Roman wall foundations beneath it and the Fire Tower standing on the line of the old gate. Addresses read street and number, and locals orient by the main square, the tower and whether something is inside or outside the ring. Newcomers most often go wrong by taking it for a border town, when it is a place with two thousand years of continuous settlement.",
     layout:
@@ -15673,8 +15677,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "April–June and September–October are the most comfortable, with the harvest in autumn. Half a day covers the old town; allow half a day each for the wineries and for Lake Fertő.",
   },
   szentendre: {
+    // identity sources: KSH 2025-01-01：28,483。2026-09-13 核。
     identity:
-      "Szentendre stands on the west bank of the Danube about 20 km north of Budapest, with about 26,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town on a slope above the river, and from the twentieth century a place where painters settled; galleries and craft shops are what it is known for today.",
+      "Szentendre stands on the west bank of the Danube about 20 km north of Budapest, with about 28,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town on a slope above the river, and from the twentieth century a place where painters settled; galleries and craft shops are what it is known for today.",
     howItWorks:
       "Szentendre belongs to Pest county and is run by an elected mayor and council. Administratively it is a town in its own right, but in daily life it is closely tied to Budapest — the HÉV suburban railway runs straight there, and many people live here and work in the capital. Its present appearance dates from the seventeenth and eighteenth centuries, when Serb communities who settled here built several Orthodox churches whose towers are still part of the skyline. Addresses read street and number, and locals orient by the main square, the riverfront and the church up the slope. Newcomers most often go wrong by walking only the shopping street along the river, when the narrow lanes up the slope are what the old town is really about.",
     layout:

@@ -1,0 +1,75 @@
+{
+  "id": "can-bud",
+  "name": "广州 — 布达佩斯",
+  "nameEn": "Guangzhou — Budapest",
+  "description": "南岭 · 秦岭 · 蒙古戈壁 · 萨雷阿尔卡草原 · 匈牙利大平原",
+  "descriptionEn": "Nanling · Qinling · Mongolian Gobi · Saryarka Steppe · Great Hungarian Plain",
+  "depCountry": "china",
+  "arrCountry": "hungary",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ649",
+    "aircraft": "Boeing 787-9",
+    "depIata": "CAN",
+    "arrIata": "BUD",
+    "durationMin": 710
+  },
+  "source": {
+    "ref": "https://jtj.gz.gov.cn/xwdt/gzdt/content/post_9699005.html",
+    "checkedOn": "2026-09-13",
+    "note": "广州市交通运输局官网关于南航开通广州—布达佩斯直飞的通报（**2 级：政府转述**）+ 携程国际机票时刻表（3 级）双源指向同一航班号 CZ649 / CZ650、机型波音 787-9。**这是中国—布达佩斯 7 条直飞里唯一能追到政府一手来源的一条**，故本国只收这一条。⚠️ 班期各源在「周二/四/六/日」与其他说法之间有出入，正文只写「每周多班」、不锁死星期。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "loess"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saryarka-steppe"
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lat": 50.0,
+      "lon": 30.0
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "alfold"
+    },
+    {
+      "kind": "city",
+      "id": "bud",
+      "name": "布达佩斯",
+      "nameEn": "Budapest",
+      "lat": 47.4369,
+      "lon": 19.2611,
+      "airport": true
+    }
+  ]
+}
