@@ -4819,9 +4819,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "西安到张掖约两个小时。张掖是河西走廊上的历史绿洲城市，张掖丹霞地质公园以红黄相间的层状地貌闻名，被称为“中国七彩丹霞”；大佛寺内有中国现存最大的室内卧佛。当地回族聚居区不少，清真餐馆遍布。张掖属温带大陆性干旱气候，昼夜温差大，即使夏季夜间也需备外套。6–9月是丹霞色彩最鲜明的季节，也是最佳观赏期。",
+      "西安到张掖约两个小时。张掖是河西走廊上的历史绿洲城市，张掖丹霞地质公园以红黄相间的层状地貌闻名，被称为“中国七彩丹霞”；大佛寺内有亚洲最大的室内木胎泥塑卧佛。当地回族聚居区不少，清真餐馆遍布。张掖属温带大陆性干旱气候，昼夜温差大，即使夏季夜间也需备外套。6–9月是丹霞色彩最鲜明的季节，也是最佳观赏期。",
     "en-US":
-      "Xi'an to Zhangye takes about two hours. Zhangye is a historic oasis city on the Hexi Corridor; the Zhangye Danxia Geopark is famous for its banded red-and-yellow landforms, often called China's 'Rainbow Mountains', while the Giant Buddha Temple holds the largest indoor reclining Buddha surviving in China. The city has a significant Hui Muslim community and halal restaurants are common. With a dry, temperate continental climate, day–night temperature swings are large, so pack a layer even for summer nights. June–September is when the Danxia colours are most vivid and the best time to visit.",
+      "Xi'an to Zhangye takes about two hours. Zhangye is a historic oasis city on the Hexi Corridor; the Zhangye Danxia Geopark is famous for its banded red-and-yellow landforms, often called China's 'Rainbow Mountains', while the Giant Buddha Temple holds Asia's largest indoor clay-on-wood reclining Buddha. The city has a significant Hui Muslim community and halal restaurants are common. With a dry, temperate continental climate, day–night temperature swings are large, so pack a layer even for summer nights. June–September is when the Danxia colours are most vivid and the best time to visit.",
     },
   },
 
