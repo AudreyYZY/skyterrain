@@ -4009,7 +4009,7 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
 
   // ── 中国 · Tier 2 批3（9 省缺口）──
   hulunbuir: [
-    { nameZh: "莫日格勒河", nameEn: "Mordaga River", lon: 119.900, lat: 49.560, kind: "nature" },
+    { nameZh: "莫日格勒河", nameEn: "Morigele River", lon: 119.900, lat: 49.560, kind: "nature" },
     { nameZh: "呼伦湖", nameEn: "Hulun Lake", lon: 117.500, lat: 48.900, kind: "nature" },
     { nameZh: "金帐汗蒙古部落", nameEn: "Jindaohan Mongol Encampment", lon: 119.870, lat: 49.520, kind: "landmark" },
     { nameZh: "室韦俄罗斯族民族乡", nameEn: "Shiwei Russian Ethnic Township", lon: 120.190, lat: 50.660, kind: "district" },
@@ -4737,7 +4737,7 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   ],
   "puerto-varas": [
     { nameZh: "圣弗朗西斯科哈维尔教堂", nameEn: "Sacred Heart Church (Iglesia de los Sagrados Corazones)", lon: -72.9840, lat: -41.3190, kind: "landmark" },
-    { nameZh: "亚科多湖滨大道", nameEn: "Lake Llanquihue Waterfront", lon: -72.9800, lat: -41.3150, kind: "nature" },
+    { nameZh: "延基韦湖滨大道", nameEn: "Lake Llanquihue Waterfront", lon: -72.9800, lat: -41.3150, kind: "nature" },
     { nameZh: "托多斯洛斯桑托斯湖", nameEn: "Lake Todos los Santos", lon: -72.1650, lat: -41.1500, kind: "nature" },
   ],
   "puerto-montt": [

@@ -16,18 +16,19 @@ export const ROUTE_NARRATION: Record<
   { study: Record<Language, string>; travel: Record<Language, string> }
 > = {
   "pek-urc": {
+    // study sources: 全四段（study/travel × 中英）: 太行山东坡断崖、黄土高原、河西走廊绿洲串（武威 / 张掖 / 酒泉）、天山分南北疆 —— 与本库 terrain 各条一致；乌鲁木齐海拔约 800 m 与 travel/urumqi 一致；收尾「离海最远的内陆山城」原为绝对最高级，已按 travel/urumqi 改为「之一」。非进藏线，签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "从北京往西飞乌鲁木齐，是看中国地形变化最完整的一条线。飞机离开首都机场，脚下先是华北平原——由黄河、海河冲积出来的大平原，一望无际的方格农田和密集的城镇，地面几乎看不出起伏。" +
       "很快，西边出现一道近乎笔直的山墙，那是太行山。它的东坡是断崖，直接立在平原边上；翻过山脊，地面明显抬高，进入黄土高原。往下看，黄土被流水切得千沟万壑，一道道树枝状的深沟里，是含沙量很高的黄色河流。" +
       "再往西北，地势转为平缓开阔的内蒙古高原和阿拉善的戈壁——大片灰褐色的砾石滩，人烟稀少。接着，一条狭长的通道从两山之间穿过，这就是河西走廊：南边是终年积雪的祁连山，山脚下一串绿洲城市——武威、张掖、酒泉——像绿色的珠子串在一起，绿洲之外就是荒漠。祁连山的冰雪融水，是这些绿洲的命脉，也是古丝绸之路走这条路线的原因。" +
-      "越过祁连山和阿尔金山之间的地带，就进入新疆。最后映入眼帘的是天山——一条连续的东西向雪山，把新疆分成南北两半。飞机沿着天山北麓下降，那里同样是一排冲积扇绿洲，乌鲁木齐就建在其中一片上。短短几个小时，我们从湿润的东部平原，飞到了距离海洋最远的内陆山城。",
+      "越过祁连山和阿尔金山之间的地带，就进入新疆。最后映入眼帘的是天山——一条连续的东西向雪山，把新疆分成南北两半。飞机沿着天山北麓下降，那里同样是一排冲积扇绿洲，乌鲁木齐就建在其中一片上。短短几个小时，我们从湿润的东部平原，飞到了世界上离海最远的大城市之一。",
     "en-US":
       "Flying west from Beijing to Ürümqi is the most complete cross-section of China's terrain there is. Leaving the capital, you are first over the North China Plain — a vast lowland built by the silt of the Yellow and Hai rivers, an endless grid of fields and dense towns, with almost no relief on the ground." +
       " Soon a near-straight wall of mountains rises to the west: the Taihang. Its eastern face is a line of cliffs standing right at the edge of the plain. Cross the crest and the land steps up onto the Loess Plateau, where you can see the loess shredded by water into a maze of branching gullies, with silt-laden yellow rivers threading through them." +
       " Farther north-west the land opens out into the smoother Inner Mongolian Plateau and the gravel gobi of Alxa — grey-brown, thinly peopled. Then a long narrow corridor threads between two ranges: the Hexi Corridor. To its south is the snow-capped Qilian range; at its foot runs a string of oasis cities — Wuwei, Zhangye, Jiuquan — green beads on a thread, with desert on either side. Meltwater from the Qilian is the lifeline of those oases, and the reason the Silk Road ran this way." +
-      " Past the gap between the Qilian and Altun ranges you enter Xinjiang. The last thing to fill the window is the Tianshan — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, and Ürümqi is built on one of them. In a few hours you have flown from the humid eastern plains to the inland city that sits farther from the sea than anywhere else on Earth.",
-  },
+      " Past the gap between the Qilian and Altun ranges you enter Xinjiang. The last thing to fill the window is the Tianshan — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, and Ürümqi is built on one of them. In a few hours you have flown from the humid eastern plains to one of the cities farthest from any sea on Earth.",
+    },
     travel: {
     "zh-CN":
       "北京到乌鲁木齐约四个多小时，是从中国的政治中心飞到最深处的内陆。乌鲁木齐是新疆的首府，海拔约800米，气候干燥，昼夜和四季温差都很大，夏天热、冬天很冷。这里是多民族聚居的城市，饮食以面食、牛羊肉、抓饭、烤包子和各种瓜果为主；新疆各地通用北京时间，但生活节奏顺应日照，办事和用餐都比内地晚约两小时。" +
@@ -41,6 +42,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ctu-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 贡嘎山 7508.9 m（2023-10 最新公布高程）与本库一致；拉萨约 3650 m（拉萨市政府，1 级）；都江堰两千多年；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "舷窗下先是一片被水汽晕开的绿——成都平原，都江堰引岷江水灌溉了两千多年的沃土，阡陌规整如棋盘，头顶却常年裹着一层灰白云雾，四川盆地很少能看清太阳。起飞不过十几分钟，这片温软的绿已经被甩在身后：龙门山猝然立起，盆地边缘骤然收紧，地面开始起皱。" +
@@ -52,7 +54,7 @@ export const ROUTE_NARRATION: Record<
       " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the largest belt of high north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
       " By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
       " The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
-  },
+    },
     travel: {
     "zh-CN":
       "成都到拉萨约两个多小时，落地就是海拔约3650米的拉萨——这是这趟行程最需要认真对待的一点。多数人到高原后会有不同程度的高原反应（头痛、气短、睡不好），到达头一两天要放慢节奏、少剧烈活动、多喝水、避免饮酒，必要时提前向医生咨询备药；有严重心肺疾病的人应先做医学评估。" +
@@ -66,18 +68,19 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 南岭为长江 / 珠江分水岭、云贵高原坝子为定性描述，与本库一致；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞拉萨，跨越的是中国从最湿热到最高寒的完整梯度。飞机从珠江三角洲起飞——这是珠江在入海口冲积、加上人工围垦形成的平原，水网密布、城市连片，是中国最发达的地区之一。" +
       "往西北飞，先遇到南岭。它不像北方的大山那样高大连续，而是一列低矮、破碎的丘陵山地，被一道道宽阔的谷地隔开。南岭是长江水系和珠江水系的分水岭，翻过它，河流就开始流向长江。" +
-      "再往前，地面整体抬高，进入云贵高原。这里最典型的是喀斯特地貌——石灰岩被水溶蚀出无数圆锥形、馒头形的小山头，山间是封闭的小盆地，当地叫“坝子”，村镇和农田都挤在坝子里。地表的河流常常钻进地下又冒出来。" +
+      "再往前，地面整体抬高，进入云贵高原。这里的典型地貌是喀斯特——石灰岩被水溶蚀出无数圆锥形、馒头形的小山头，山间是封闭的小盆地，当地叫“坝子”，村镇和农田都挤在坝子里。地表的河流常常钻进地下又冒出来。" +
       "云贵高原以西，地形再次变得险峻，进入横断山脉南段——南北向排列的雪山和深谷。越过它，就上了青藏高原东南缘。这一带因为有印度洋的水汽顺着河谷灌进来，是高原上最湿润、最绿的角落，森林一直长到很高的地方。飞机最后沿雅鲁藏布江水系下降到拉萨。一趟航班，走完了从亚热带季风区到高寒高原的全部气候带。",
     "en-US":
       "Guangzhou to Lhasa crosses China's full gradient from its most hot and humid to its coldest and highest. The plane leaves the Pearl River Delta — a plain built by the river's silt at its mouth plus centuries of reclamation, water-netted and city-covered, one of the most developed regions in China." +
       " Flying north-west it first meets the Nanling. Unlike the big ranges of the north, this is a low, broken belt of hills separated by wide valleys. The Nanling is the drainage divide between the Yangtze and the Pearl river systems; cross it and rivers begin to flow toward the Yangtze." +
       " Beyond it the land rises as a whole onto the Yunnan–Guizhou Plateau. Its signature is karst — limestone dissolved by water into countless cone- and dome-shaped hills, with enclosed pockets of flat land between them, called bazi, where the towns and fields crowd in. Surface rivers here often dive underground and re-emerge." +
       " West of the plateau the terrain turns rugged again in the southern Hengduan Mountains — north–south snow ranges and deep gorges. Past them you are on the south-eastern edge of the Tibetan Plateau. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The plane descends along the Yarlung Tsangpo system into Lhasa. One flight has passed through every climate zone from the subtropical monsoon to the cold high plateau.",
-  },
+    },
     travel: {
     "zh-CN":
       "广州到拉萨要飞约四个半小时，是从接近海平面的珠三角一路爬到海拔约3650米的拉萨，落差比大多数航线都大，高原反应更要重视：头一两天务必放慢节奏、多休息、多喝水、不饮酒，有心肺基础病的人先咨询医生。" +
@@ -91,6 +94,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "urc-khg": {
+    // study sources: 全四段（study/travel × 中英）: 天山「离海最远的大山系之一」已带限定；塔克拉玛干「中国最大的沙漠」与本库一致；喀什丝路南、中两道交汇与 travel/kashgar 一致；喀什海拔约 1300 m（官方 1289.5 m）在容差内。核实 2026-09-11
     study: {
     "zh-CN":
       "乌鲁木齐飞喀什，是沿着塔里木盆地的边缘，从北疆飞到南疆最西端。起飞后，脚下是天山北麓的绿洲带——乌鲁木齐、昌吉、石河子，一片片靠天山雪水灌溉的农田和城镇，绿洲之外是古尔班通古特沙漠。" +
@@ -102,7 +106,7 @@ export const ROUTE_NARRATION: Record<
       " The plane flies south-west, crossing the western Tianshan. This is one of the mountain systems farthest from any ocean on Earth, its summits under permanent snow and widespread glaciers. Cross the crest and a huge yellow oval opens up ahead — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs, with China's largest desert, the Taklamakan, in its centre. On a clear day you can see regular rows of crescent dunes, like frozen waves." +
       " The route follows the basin's north-western rim the whole way. Every city and field in the basin must sit at the edge of a piedmont alluvial fan, where water comes down from the mountains; off that lifeline it is barren. The Tarim River skirts the desert along the northern edge." +
       " Approaching Kashgar, very high snow peaks appear on the western skyline — the \"knot\" where the Pamirs meet the Kunlun and the Tianshan. Kashgar is built on a large oasis at the foot of these mountains, and has been the meeting point of the southern and middle Silk Roads since ancient times.",
-  },
+    },
     travel: {
     "zh-CN":
       "乌鲁木齐到喀什约一个半小时，是从北疆飞到南疆最西端。喀什海拔约1300米，是新疆历史最悠久的城市之一，老城的土坯民居、巴扎和清真寺保存较完整，维吾尔文化气息浓。逛老城、赶巴扎、尝烤包子和馕、看手工艺作坊是这里的主要体验。" +
@@ -116,6 +120,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "sha-kmg": {
+    // study sources: 全四段（study/travel × 中英）: 鄱阳湖丰枯反差、雪峰山过渡带、云贵高原坝子与本库一致；昆明约 1900 m 与 travel/kunming 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "从上海往西南飞昆明，是从长江入海口的大平原，一路飞到西南的高原。飞机从虹桥起飞，脚下是长江三角洲——长江长期淤积、加上人工围垦形成的低平原，河网纵横、城镇连片，是中国人口和产业最密集的地区之一。" +
@@ -141,6 +146,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ctu-sha": {
+    // study sources: 全四段（study/travel × 中英）: 四川盆地、三峡（瞿塘 / 巫 / 西陵）、洞庭湖 / 鄱阳湖、长江三角洲为定性描述，无可核数字或排名。核实 2026-09-11
     study: {
     "zh-CN":
       "成都飞上海，几乎是沿着长江自西向东飞完它的中下游。起飞时脚下是四川盆地——四周被山环抱的红层盆地，底部是密集的方格农田和城镇，常年云雾多、日照少。" +
@@ -166,6 +172,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-pek": {
+    // study sources: 全四段（study/travel × 中英）: 珠三角、南岭、大别山（淮河 / 长江分水岭）、华北平原为定性描述，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞北京，是一条把中国东部从南到北串起来的线。飞机从珠江三角洲起飞——珠江在入海口淤积、加上人工围垦形成的平原，水网密布、城市连片。" +
@@ -191,6 +198,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xiy-urc": {
+    // study sources: 全四段（study/travel × 中英）: 关中平原、六盘山、河西走廊、祁连山融水、天山与本库一致；乌鲁木齐约 800 m。核实 2026-09-11
     study: {
     "zh-CN":
       "西安飞乌鲁木齐，走的是河西走廊这条古老通道，从关中一直到天山脚下。起飞时脚下是关中平原——渭河冲积出来的一条东西向平原，两侧是黄土台塬，农田和城镇密集，是黄河中游的老农业区。" +
@@ -214,6 +222,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xnn-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 青海湖「中国面积最大的咸水湖」与本库 terrain 一致；西宁约 2200–2275 m 在容差内；拉萨「约三千六百米」为官方 3650 m 的取整，保留；进藏许可 + 有资质旅行社结伴已写，签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "西宁飞拉萨，是从青藏高原的东北角，一路飞到高原腹地。起飞时西宁在湟水谷地里，海拔已经两千多米。往西不远是青海湖——中国面积最大的咸水湖，四周是草原和沙丘，湖面是很深的蓝色。" +
@@ -237,6 +246,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ckg-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 横断山脉、三江并流、雅鲁藏布大拐弯 / 南迦巴瓦为定性描述，与本库 terrain 一致；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "重庆飞拉萨，从长江边的山城，一路爬上青藏高原的东南缘。起飞时脚下是四川盆地——四周被山环抱的红层丘陵盆地，云雾多，重庆的房子顺着山坡和江岸层层叠叠。" +
@@ -260,6 +270,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-inc": {
+    // study sources: 全四段（study/travel × 中英）: 银川约 1100 m（银川市统计局，1 级）；贺兰山挡腾格里沙漠风沙与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞银川，是从华北平原翻过太行山，进入黄土高原和西北的干旱区。飞机从首都机场起飞，脚下先是华北平原北缘——由多条河流冲积成的大平原，方格农田和城镇密集，地面几乎没有起伏。" +
@@ -283,6 +294,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-hrb": {
+    // study sources: 全四段（study/travel × 中英）: 燕山、东北平原（松嫩 / 辽河 / 三江）、松花江为定性描述，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞哈尔滨，是从华北平原一路往东北，飞到东北平原。起飞时脚下是华北平原的北缘，很快出现一列不高的山地，那是燕山和内蒙古高原的东南边缘——地面开始起伏，森林和草原增多，这里是农区和牧区之间的过渡带。" +
@@ -306,6 +318,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "hrb-can": {
+    // study sources: 全四段（study/travel × 中英）: 东北平原 → 华北平原 → 长江中下游平原 → 南岭 → 珠三角的地势梯度为定性描述。核实 2026-09-11
     study: {
     "zh-CN":
       "哈尔滨飞广州，是把中国东部从最北飞到最南，走完从寒温带到南亚热带的一整条梯度。起飞时脚下是东北平原——由松花江、辽河、嫩江冲积成的大平原，方格旱地和水田一望无际，村镇沿铁路排列。" +
@@ -329,6 +342,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-sha": {
+    // study sources: 全四段（study/travel × 中英）: 山东丘陵、苏北平原、长江三角洲、太湖为定性描述，无可核数字或排名。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞上海，是沿着中国东部沿海地带，从华北平原飞到长江三角洲。起飞时脚下是华北平原——黄河、淮河、海河冲积出来的大平原，方格农田和城镇密集，地面几乎看不出起伏。" +
@@ -352,15 +366,16 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-hak": {
+    // study sources: 全四段（study/travel × 中英）: 雷州半岛「中国大陆最南端的半岛」与本库 terrain 条目一致；琼州海峡宽约 19–30 km，「几十公里」量级相符；五指山等主峰与本库一致。原「海南岛是中国纬度最低的省级陆地」排名口径含糊（按行政区，南海诸岛纬度更低），已改为不带排名。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞海口，是一趟很短的跨海航班，从大陆最南端飞到海南岛。起飞后脚下是珠江三角洲，很快到粤西沿海，海岸线上是大片红树林、盐田和养殖塘。" +
       "接着地面收窄成一条伸向西南的半岛，那是雷州半岛——中国大陆最南的一块，地表是玄武岩台地，散布着一些低平的死火山口和火山湖。" +
-      "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛是中国纬度最低的省级陆地，属热带气候。",
+      "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛纬度低，属热带气候。",
     "en-US":
       "Guangzhou to Haikou is a short over-water flight from the southern edge of the mainland to Hainan Island. After take-off you are over the Pearl River Delta, then quickly the coast of western Guangdong, its shoreline lined with mangroves, salt pans and aquaculture ponds." +
       " The land then narrows into a peninsula reaching south-west: the Leizhou Peninsula, the southernmost part of the Chinese mainland, a basalt plateau dotted with low extinct craters and crater lakes." +
-      " At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan is the lowest-latitude provincial-level land in China, with a tropical climate.",
+      " At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan lies at low latitude, with a tropical climate.",
     },
     travel: {
     "zh-CN":
@@ -375,6 +390,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-kwl": {
+    // study sources: 全四段（study/travel × 中英）: 洞庭湖丰枯反差、南岭、桂林峰林喀斯特成因与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞桂林，是从华北平原一路往南，飞到南方的喀斯特山水。起飞时脚下是华北平原，方格农田和城镇密集，看不出起伏。" +
@@ -398,6 +414,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xiy-ctu": {
+    // study sources: 全四段（study/travel × 中英）: 秦岭为暖温带 / 亚热带、麦 / 稻、黄河 / 长江水系分界，与本库 terrain/qinling 一致；都江堰两千多年。核实 2026-09-11
     study: {
     "zh-CN":
       "西安飞成都，虽然只有一个多小时，却是翻越秦岭、从黄河流域进入长江流域的一趟。起飞时脚下是关中平原——渭河冲积成的东西向平原，是黄河中游的老农业区。" +
@@ -421,6 +438,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "urc-htn": {
+    // study sources: 全四段（study/travel × 中英）: 天山、塔克拉玛干、昆仑为定性描述；和田约 1400 m（DEM 约 1300–1450 m，在容差内）。核实 2026-09-11
     study: {
     "zh-CN":
       "乌鲁木齐飞和田，是一趟直接飞越塔克拉玛干沙漠的航班，从天山北麓到昆仑山北麓。起飞后脚下是天山北麓的绿洲带，很快开始爬升，翻越天山——山顶终年积雪、冰川广布。" +
@@ -444,6 +462,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "kmg-lxa": {
+    // study sources: 全四段（study/travel × 中英）: 横断山、金沙江、虎跳峡、雅鲁藏布大拐弯为定性描述；昆明约 1900 m、拉萨约 3600 m（官方 3650 的取整）；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
     study: {
     "zh-CN":
       "昆明飞拉萨，是从云贵高原横穿横断山脉，飞到青藏高原东南缘。起飞时脚下是滇中的高原面，昆明在一片高原湖盆里，旁边是滇池。" +
@@ -467,6 +486,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "sha-hrb": {
+    // study sources: 全四段（study/travel × 中英）: 黄海、山东半岛、辽东丘陵、东北平原三片为定性描述；哈尔滨 1 月「零下二十度上下」（均温约 −18 至 −19 °C）。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞哈尔滨，是沿着中国的海岸往东北飞，从长江三角洲飞到东北平原。起飞后脚下很快是黄海，海面上有货船和养殖区。" +
@@ -494,14 +514,15 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "东京飞大阪，虽然只有一个多小时，却是把日本本州人口最密集的“太平洋走廊”从东飞到西。起飞时脚下是关东平原——日本面积最大的平原，由利根川等河流冲积而成，几乎被东京都市圈完全覆盖，看不到什么农田。" +
       "很快，右前方出现一座轮廓极其对称的圆锥形雪山，那就是富士山。它是一座层状火山，孤零零立在平原和丘陵之间，晴天从飞机上能看得很清楚。" +
-      "越过富士山所在的丘陵地带，进入名古屋所在的浓尾平原，这是木曾川等河流冲积出来的一片三角洲平原。再往西，一片明亮的水面出现在山间，那是琵琶湖——日本最大的湖，京都、大阪的用水很大程度靠它。" +
+      "越过富士山所在的丘陵地带，进入名古屋所在的浓尾平原，这是木曾川等河流冲积出来的一片冲积平原，下游近海处发育成三角洲。再往西，一片明亮的水面出现在山间，那是琵琶湖——日本最大的湖，京都、大阪的用水很大程度靠它。" +
       "琵琶湖以南、群山之间的低地就是大阪平原，大阪、京都、神户连成一片。飞机在平原北缘的伊丹机场降落。一趟短途航班，飞过了日本的政治中心、象征性的名山和历史古都。",
     "en-US":
       "Tokyo to Osaka takes only a little over an hour, but it flies the length of Honshu's most densely populated \"Pacific corridor\", east to west. On take-off you are over the Kanto Plain — the largest plain in Japan, built by the Tone and other rivers and almost entirely covered by the Tokyo metropolitan area, with little farmland visible." +
       " Soon an almost perfectly symmetrical snow-capped cone appears ahead to the right: Mount Fuji, a stratovolcano standing alone between plain and hills, clearly seen from the plane on a fine day." +
-      " Beyond the hills around Fuji you cross the Nobi Plain around Nagoya, a delta plain built by the Kiso and other rivers. Farther west a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan, which supplies much of the water for Kyoto and Osaka." +
+      " Beyond the hills around Fuji you cross the Nobi Plain around Nagoya, an alluvial plain built by the Kiso and other rivers, with a delta near its mouth. Farther west a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan, which supplies much of the water for Kyoto and Osaka." +
       " South of the lake, the lowland among the mountains is the Osaka Plain, where Osaka, Kyoto and Kobe run together. The plane lands at Itami on the northern edge of the plain. In one short flight you have passed the political centre of Japan, its symbolic mountain and its historic capital.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 富士山、琵琶湖日本最大湖、大阪平原与本库一致；浓尾平原原写「三角洲平原」，按本库改为冲积平原（下游近海处为三角洲）。核实 2026-09-11
     travel: {
     "zh-CN":
       "东京到大阪飞行约一小时，但机场到市区都要再花时间，很多人其实坐新干线（约两个半小时、市中心到市中心）。两地都属太平洋侧的温带气候：夏季闷热、6–7月有梅雨，秋季有台风，冬季温和少雪。" +
@@ -519,14 +540,15 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "东京飞札幌，是从本州最大的平原飞到北海道最大的平原，一路沿着太平洋岸往北。起飞时脚下是关东平原和东京都市圈，随后进入本州东北部的太平洋一侧。" +
       "航线大致贴着三陆海岸走。三陆海岸的南段是典型的里亚式海岸——被淹没的山谷形成一连串深入内陆的锯齿状海湾，港口就藏在湾底；北段则是高耸的海蚀崖。这一带面向开阔的太平洋。" +
-      "越过津轻海峡进入北海道。首先看到的是支笏洞爷一带的火山区——支笏湖和洞爷湖都是火山口积水形成的深湖，旁边有有珠山、樽前山等活火山，地面能看到浅色的火山碎屑和火口。" +
+      "越过津轻海峡进入北海道。首先看到的是支笏洞爷一带的火山区——支笏湖和洞爷湖都是破火山口积水形成的深湖，旁边有有珠山、樽前山等活火山，地面能看到浅色的火山碎屑和火口。" +
       "再往北是石狩平原，由石狩川冲积而成，是北海道人口和农业的重心，田块比本州大得多、更规整。札幌就建在平原南缘、面向石狩湾的位置。",
     "en-US":
       "Tokyo to Sapporo flies from the largest plain on Honshu to the largest on Hokkaido, north along the Pacific coast. On take-off you are over the Kanto Plain and the Tokyo metropolitan area, then over the Pacific side of north-eastern Honshu." +
       " The route roughly follows the Sanriku Coast. Its southern part is a classic ria coast — drowned river valleys forming a line of jagged bays reaching inland, with the ports tucked at the head of each bay; the northern part is high sea cliffs. This stretch faces the open Pacific." +
-      " Across the Tsugaru Strait you reach Hokkaido. First comes the Shikotsu–Toya volcanic area — Lakes Shikotsu and Toya both fill volcanic craters as deep lakes, with active volcanoes such as Usu and Tarumae beside them, and pale volcanic debris and craters visible on the ground." +
+      " Across the Tsugaru Strait you reach Hokkaido. First comes the Shikotsu–Toya volcanic area — Lakes Shikotsu and Toya both fill volcanic calderas as deep lakes, with active volcanoes such as Usu and Tarumae beside them, and pale volcanic debris and craters visible on the ground." +
       " Farther north is the Ishikari Plain, built by the Ishikari River, the centre of Hokkaido's population and farming, with fields much larger and more regular than on Honshu. Sapporo is built on its southern edge, facing Ishikari Bay.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 三陆海岸南段里亚式、北段海蚀崖；石狩平原北海道最大；支笏 / 洞爷原写「火山口」，按本库改为破火山口。核实 2026-09-11
     travel: {
     "zh-CN":
       "东京到札幌约一个半小时。北海道纬度高、气候明显不同于本州：夏季（7–8月）凉爽干燥、是避暑胜地，冬季漫长严寒、降雪极多，札幌一二月常在零下、路面结冰。" +
@@ -552,6 +574,7 @@ export const ROUTE_NARRATION: Record<
       " Beyond the peninsula the view opens onto the Seto Inland Sea, an island-filled sea between Honshu, Shikoku and Kyushu, its water calm and its islands close-packed, with narrow coastal plains and port cities on either shore and several long bridges linking the three landmasses." +
       " At the western end of the Inland Sea is the Kanmon Strait; across it is Kyushu. Fukuoka, on Kyushu's northern coast facing the Genkai Sea, is the largest city on the island and one of the Japanese cities closest to mainland Asia.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 纪伊山地、濑户内海、关门海峡与本库一致；东京—福冈「最繁忙之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "东京到福冈约两小时，是日本国内最繁忙的航线之一。福冈属较温暖的太平洋—对马暖流气候：夏季闷热、6–7月梅雨明显，冬季温和、偶有降雪，比东京暖一些。" +
@@ -577,6 +600,7 @@ export const ROUTE_NARRATION: Record<
       " Farther south you reach the main Nansei chain — a string of low coral islands ringed by pale-blue reef flats and white sand, quite unlike the volcanic islands of Kyushu. These islands have a subtropical climate." +
       " Naha, in the south of Okinawa's main island, is the central city of this island region. The whole flight has gone from a temperate active volcano to a subtropical coral sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 樱岛 1914 年与大隅半岛陆连、屋久岛花岗岩隆起与本库一致；首里城正殿截至 2026-09 仍在重建（会过期的现状）。核实 2026-09-11
     travel: {
     "zh-CN":
       "鹿儿岛到那霸约一个半小时。冲绳属亚热带海洋性气候，全年温暖：冬季也在15°C以上，夏季炎热潮湿，5–6月梅雨、7–10月是台风季，台风来时航班和轮渡常停。" +
@@ -594,7 +618,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "东京飞鹿儿岛，是从本州东端斜穿西日本，飞到九州南端的火山地带。起飞后是关东平原和东京都市圈，随后富士山的圆锥出现在窗外。" +
       "越过富士和本州中部山地，进入纪伊山地——纪伊半岛上多雨、森林茂密的山区。过了濑户内海西部，进入九州。" +
-      "九州中部立着阿苏山：它是一座巨大的破火山口，直径约二十公里，是世界上数一数二大的破火山口之一；火口原里有农田和铁路，中央新起的几座火山锥仍在活动，其中中岳常年冒烟。" +
+      "九州中部立着阿苏山：它是一座巨大的破火山口，直径约二十公里，是世界上规模最大的破火山口之一；火口原里有农田和铁路，中央新起的几座火山锥仍在活动，其中中岳常年冒烟。" +
       "再往南是鹿儿岛所在的锦江湾，湾里就是不断喷发的樱岛。鹿儿岛市和樱岛隔着几公里宽的海面相望，市区常常落一层薄薄的火山灰。这条航线把日本两处最有代表性的活火山连在一起看。",
     "en-US":
       "Tokyo to Kagoshima cuts diagonally across western Japan from the eastern end of Honshu to the volcanic country at the southern tip of Kyushu. After take-off comes the Kanto Plain and the Tokyo metropolitan area, then the cone of Mount Fuji in the window." +
@@ -602,6 +626,7 @@ export const ROUTE_NARRATION: Record<
       " In central Kyushu stands Mount Aso: a huge caldera about 20 km across, one of the largest in the world, with farmland and a railway on its crater floor and several younger cones in the centre still active, of which Nakadake smokes more or less constantly." +
       " Farther south is Kagoshima Bay, with the continually erupting Sakurajima in it. The city and the volcano face each other across a few kilometres of water, and a thin layer of ash often falls on the city. This flight links two of the most representative active volcanoes in Japan.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿苏破火山口约 20 km（官方 25×18 km 的取整）；中文原写「数一数二大」，按官方口径降级为「规模最大之一」。核实 2026-09-11
     travel: {
     "zh-CN":
       "东京到鹿儿岛约两小时。鹿儿岛在九州南部，气候温暖湿润：夏季炎热、6–7月梅雨量大，冬季温和，台风季（7–10月）影响明显。因为樱岛，市区偶尔会有降灰，风向不利时要留意。" +
@@ -627,6 +652,7 @@ export const ROUTE_NARRATION: Record<
       " Beyond the Alps a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan. The lowland west and south of it is the Kansai city belt." +
       " Farther west you reach the Seto Inland Sea — the calm, island-filled sea between Honshu, Shikoku and Kyushu. The route follows it west and finally crosses the Kanmon Strait to Fukuoka on Kyushu's northern coast. One flight has passed the plains of Hokkaido, the high mountains of Honshu and the inland sea of western Japan.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 与本库日本各条一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "札幌到福冈飞行约两个多小时，是日本国内跨度最大的航线之一，等于从冰雪地带飞到温暖的九州。两地气候差别极大：出发地冬季严寒多雪，目的地冬季温和。" +
@@ -652,6 +678,7 @@ export const ROUTE_NARRATION: Record<
       " Beyond Daisetsuzan the land in eastern Hokkaido becomes gentle hills and terraces, forest and pasture interlocking, thinly peopled. Memanbetsu Airport, near Abashiri, is one of the gateways to the Shiretoko Peninsula." +
       " The Shiretoko Peninsula reaches from eastern Hokkaido into the Sea of Okhotsk — an almost roadless volcanic ridge with steep sea cliffs on both sides, drift ice against its shore in winter, and World Heritage status.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 知床火山脊 / 流冰 / 世界遗产与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "札幌到女满别约五十分钟。道东（网走、知床一带）气候比札幌更冷更干，冬季严寒，一二月鄂霍次克海会有流冰靠岸，是这一带冬季的特色；夏季凉爽宜人。" +
@@ -677,6 +704,7 @@ export const ROUTE_NARRATION: Record<
       " The route follows the spine of Honshu north-east into the Tohoku region. On the border of Aomori and Akita, a near-circular deep-blue lake sits among the mountains: Lake Towada, a lake filling a caldera, whose water drains out through the Oirase stream." +
       " Across the Tsugaru Strait into Hokkaido, and finally the Ishikari Plain and Sapporo facing Ishikari Bay. One flight has passed a Kansai lake, the high mountains of Honshu and a Tohoku crater lake.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 十和田湖破火山口、日本阿尔卑斯与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "大阪到札幌约两小时。这条线把关西和北海道直接连起来，不用绕东京。两地气候差别大：大阪夏季闷热、冬季温和；北海道夏季凉爽、冬季严寒多雪。" +
@@ -698,6 +726,7 @@ export const ROUTE_NARRATION: Record<
       " The route follows the Inland Sea south-west, crosses southern Kyushu and reaches the open sea. A near-circular island that is almost all mountain appears: Yakushima." +
       " Yakushima is a single uplifted block of granite, a little over 20 km across, whose central peak Miyanoura-dake approaches 2,000 m and is the highest in Kyushu. Mountains this high wring the moisture out of the air above the Kuroshio Current, making Yakushima one of the wettest places in Japan — locally they say it \"rains 35 days a month\". The heavy rain sustains thousand-year-old Yakusugi cedars, with forest running from the coast right up to the high peaks; it is a World Heritage Site.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿苏与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "大阪到屋久岛航班少、多为小型螺旋桨机，也可经鹿儿岛转船或转机。屋久岛全年多雨、湿度高，山上和海边天气差别很大：海边亚热带温暖，山上可能很冷甚至下雪，务必带全套防水装备。" +
@@ -723,6 +752,7 @@ export const ROUTE_NARRATION: Record<
       " Descending to the Sea of Japan side, a distinct patch of yellow appears at the coast: the Tottori Sand Dunes — monsoon winds and currents pile river-borne sand onto the shore, forming a belt of coastal sand more than ten kilometres long with dunes tens of metres high, the largest coastal dune field in Japan. Green fields and pine woods lie right beyond the dunes, a strong contrast." +
       " The city of Tottori is next to the dunes. In a little over an hour you have flown from the Pacific-coast plain to the Sea of Japan dunes.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 鸟取沙丘东西十几公里、高差几十米与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "东京到鸟取约一个半小时。鸟取在日本海一侧，冬季阴冷、降雪比太平洋侧多，夏季闷热，春秋较舒适。" +
@@ -736,6 +766,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-hnd": {
+    // study sources: 全四段（study/travel × 中英）: 关东平原「日本最大的平原」与本库 terrain/kanto-plain 一致（国交省口径，1 级）；富士山孤立层状火山。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞东京，是从中国东部的大平原，越过东海，飞到日本本州的大平原。起飞时脚下是长江三角洲——长江最后一段淤积、加上人工围垦形成的低平原，河网最密、城镇连成一片。" +
@@ -759,6 +790,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-hnd": {
+    // study sources: 全四段（study/travel × 中英）: 关东平原「日本面积最大的平原」与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞东京，是从华北平原飞过黄海，到日本关东平原。起飞时脚下是华北平原的北缘——由黄河、海河等河流冲积成的大平原，方格农田和城镇密集，地面几乎没有起伏。" +
@@ -782,17 +814,18 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-kix": {
+    // study sources: 全四段（study/travel × 中英）: 大阪—京都—神户「日本第二大城市群」与本库 travel/osaka、terrain/osaka-plain 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞大阪，是从长江三角洲越过东海，到日本关西的城市带。起飞时脚下是长江三角洲的低平原，河网密布、城镇连片。" +
       "离开海岸就是东海，一片开阔的浅海。航程大部分在水上，晴天能看到往来的船只。" +
       "接近日本时，海上出现一片布满岛屿的平静水域，那是濑户内海——本州、四国、九州之间的内海，两岸是狭窄的沿海平原和港口城市，几座跨海大桥把三块陆地连起来。" +
-      "濑户内海的东端就是大阪湾，湾岸的低地是大阪平原，大阪、京都、神户连成一片。关西机场建在大阪湾南部的一座人工岛上，飞机从海上进近降落。一趟航班，从中国东部的三角洲，飞到了日本的第二大城市群。",
+      "濑户内海的东端就是大阪湾，湾岸的低地是大阪平原，大阪、京都、神户连成一片。关西机场建在大阪湾南部的一座人工岛上，飞机从海上进近降落。一趟航班，从中国东部的三角洲，飞到了按人口计日本第二大的城市群。",
     "en-US":
       "Shanghai to Osaka flies from the Yangtze Delta across the East China Sea to the Kansai city belt of Japan. On take-off you are over the low plain of the Yangtze Delta, water-netted and city-covered." +
       " Past the coast is the East China Sea, an open shallow sea, with most of the flight over water and passing ships visible on a clear day." +
       " Approaching Japan, a calm island-filled stretch of water appears: the Seto Inland Sea — the sea between Honshu, Shikoku and Kyushu, with narrow coastal plains and port cities on either shore and long bridges linking the three landmasses." +
-      " At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan.",
+      " At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan by population.",
     },
     travel: {
     "zh-CN":
@@ -819,6 +852,7 @@ export const ROUTE_NARRATION: Record<
       " Farther west the green fades into the Great Victoria Desert: red-brown sand ridges and low scrub, with almost no roads or settlements. Then the ground becomes remarkably flat — the Nullarbor Plain, a single slab of limestone that grows almost no trees, its southern edge a straight line of cliffs dropping into the Southern Ocean, where the trans-continental railway and highway run dead straight for hundreds of kilometres." +
       " Past the Nullarbor, farmland and the wheatbelt return, and the plane lands at Perth on the Indian Ocean — one of the most isolated large cities in the world, thousands of kilometres from the next.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 悉尼—珀斯约 3290 km「世界最长国内航线之一」带限定；珀斯「最孤立的大城市之一」带限定；纳拉伯平原。核实 2026-09-11
     travel: {
     "zh-CN":
       "悉尼到珀斯飞约五小时，加上2–3小时时差（珀斯比悉尼晚），实际是大半天。澳大利亚是南半球国家，季节与北半球相反——12月至2月是夏天。" +
@@ -835,13 +869,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "悉尼飞凯恩斯，是沿着澳大利亚东海岸往北，从温带飞到热带。起飞后一直有一道山脉在飞机左侧相伴，那是大分水岭——澳大利亚最长的山系，从东南一直延伸到约克角半岛，把湿润的沿海和干旱的内陆分开，也是众多河流的分水岭。" +
-      "沿途海岸线外有一座巨大的沙岛，那是弗雷泽岛（K'gari）——世界上最大的沙岛，整座岛由沙构成，上面却长着雨林、有淡水湖，是原住民布奇拉·布奇拉人的传统土地。" +
+      "沿途海岸线外有一座巨大的沙岛，那是弗雷泽岛（K'gari）——世界上最大的沙岛，整座岛由沙构成，上面却长着雨林、有淡水湖，是原住民布查拉人的传统土地。" +
       "越往北，海水越蓝，珊瑚礁越密。快到凯恩斯时，右侧海面上出现深浅斑驳的一大片浅蓝，那是大堡礁——世界上最大的珊瑚礁系统，由几千个独立的礁体和岛屿组成，沿昆士兰海岸延伸两千多公里，从飞机上能清楚看到礁盘、潟湖和深水航道的分界。凯恩斯就是进入大堡礁的主要门户。",
     "en-US":
       "Sydney to Cairns runs north up the east coast of Australia, from the temperate zone into the tropics. Soon after take-off a range of mountains keeps pace on the left: the Great Dividing Range, the longest mountain system in Australia, running from the south-east all the way to Cape York, separating the humid coast from the dry interior and forming the divide for many rivers." +
       " Off the coast along the way is a huge sand island: K'gari (Fraser Island), the largest sand island in the world — the whole island is made of sand, yet it carries rainforest and freshwater lakes, and it is the traditional Country of the Butchulla people." +
       " The farther north, the bluer the sea and the denser the reefs. Near Cairns, a mottled expanse of pale blue appears on the sea to the right: the Great Barrier Reef, the largest coral reef system in the world, made up of thousands of separate reefs and islands, running more than 2,000 km along the Queensland coast; from the plane you can clearly see the line between reef flats, lagoons and the deep-water channels. Cairns is the main gateway to the reef.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大分水岭、K'gari 世界最大沙岛、大堡礁约 2300 km 与本库一致；「布奇拉·布奇拉人」已统一为「布查拉人」。核实 2026-09-11
     travel: {
     "zh-CN":
       "悉尼到凯恩斯飞约三小时。凯恩斯在热带，全年炎热潮湿、分旱季雨季：5–10月旱季天气最稳定、也是旺季；11–4月湿季闷热多雨，还有热带气旋和刺水母（海黄蜂），海滩游泳要看季节和防护网。" +
@@ -865,6 +900,7 @@ export const ROUTE_NARRATION: Record<
       " Heading north-east after take-off, a snow-streaked upland soon appears: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland. Snow lies here in winter, in one of the few skiing areas in Australia; the meltwater feeds the Murray and other big rivers that flow inland from here." +
       " Following the line of the Great Dividing Range north, the mountains are not high but continuous, separating the narrow coastal plain in the east from the interior in the west. Approaching Sydney, a sandstone plateau cut by deep valleys shows ahead to the right: the Blue Mountains, the eucalypt forest hazed blue in the sun. The plane crosses them and descends along the coast to Sydney, a city built around a huge natural deep-water harbour.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 墨尔本—悉尼为澳大利亚最繁忙航线（OAG 2025 全球第 6）；科修斯科山为澳大利亚大陆最高点（「大陆」限定已到位）。核实 2026-09-11
     travel: {
     "zh-CN":
       "墨尔本到悉尼飞约一个半小时，两地在同一时区。两座城市气质不同：墨尔本文艺、以咖啡和小巷闻名，天气“一天有四季”、变化快；悉尼外向、以港湾和海滩为中心。" +
@@ -888,6 +924,7 @@ export const ROUTE_NARRATION: Record<
       " Past the Grampians the land becomes open wheat fields and grazing country, then the green fades into the Nullarbor Plain: a single slab of limestone that grows almost no trees, remarkably flat, its southern edge a straight line of cliffs facing the Southern Ocean. The route flies over this stretch just inland of the coast." +
       " North of the Nullarbor is the Great Victoria Desert, red-brown sand ridges and low scrub to the horizon, almost unpeopled. Over the desert's western edge, the wheatbelt and farmland return, and the plane lands at Perth on the Indian Ocean. For most of the flight, the ground below is the driest, least-peopled belt of Australia.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 格兰坪山为大分水岭西端一支（维多利亚州规划部，2 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "墨尔本到珀斯飞约四小时，加上2–3小时时差（珀斯晚），实际是大半天。珀斯气候是地中海式：夏季干热、冬季温和多雨；墨尔本天气多变。" +
@@ -911,6 +948,7 @@ export const ROUTE_NARRATION: Record<
       " Turning west, the isolated line of sandstone ridges appears inland: the Grampians (Gariwerd), with their steep walls and rock art." +
       " Farther west is the lower Murray River: Australia's largest river has already run a long way by here, looping across the plain in big bends and finally passing through a chain of lagoons (the Coorong) into the Southern Ocean, its mouth a spread of sandbars and wetland. The plane crosses the Murray mouth area and descends along the coast to Adelaide — a planned city ringed on three sides by hills and vineyards and facing a gulf.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 十二门徒岩未写死数量、只写海蚀机制，与本库 terrain/twelve-apostles 一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "墨尔本到阿德莱德飞约一个多小时，阿德莱德比墨尔本晚半小时。阿德莱德生活节奏舒缓，被叫作“20分钟城市”。周边是澳大利亚重要的葡萄酒产区（巴罗萨谷、麦克拉伦谷、阿德莱德山）。" +
@@ -927,14 +965,15 @@ export const ROUTE_NARRATION: Record<
   "bne-drw": {
     study: {
     "zh-CN":
-      "布里斯班飞达尔文，是从东海岸的亚热带城市，斜穿昆士兰的内陆，飞到大陆最北端的“顶端地区”。起飞后往西北，很快离开沿海的山地和农田，进入大自流盆地上方——这是世界上最大的地下水盆地之一，地表是大片平坦的干旱牧场，靠钻井取深层地下水维持牧业，地面上能看到一个个圆形的蓄水池和放射状的畜道。" +
+      "布里斯班飞达尔文，是从东海岸的亚热带城市，斜穿昆士兰的内陆，飞到大陆最北端的“顶端地区”。起飞后往西北，很快离开沿海的山地和农田，进入大自流盆地上方——这是澳大利亚最大的地下水盆地，地表是大片平坦的干旱牧场，靠钻井取深层地下水维持牧业，地面上能看到一个个圆形的蓄水池和放射状的畜道。" +
       "越往北越接近热带，草原上散布着白蚁丘和成片的桉树疏林。飞机掠过卡奔塔利亚湾一带，海岸线是大片红树林和潮滩。" +
       "接近达尔文时，右下方是卡卡杜——一大片季节性泛滥的湿地和石头高地。旱季是一条条干河道和水潭，湿季整片被水淹没；石壁上有数万年的原住民岩画。卡卡杜由传统所有者与国家公园共同管理。达尔文就在它西边的海岸上。",
     "en-US":
-      "Brisbane to Darwin flies from a subtropical east-coast city diagonally across the Queensland interior to the \"Top End\" at the northern tip of the continent. Heading north-west after take-off, the route soon leaves the coastal hills and farmland and passes over the Great Artesian Basin — one of the largest groundwater basins in the world, its surface flat, dry grazing country kept in use for stock by bores tapping deep groundwater, with round tanks and radiating stock tracks visible on the ground." +
+      "Brisbane to Darwin flies from a subtropical east-coast city diagonally across the Queensland interior to the \"Top End\" at the northern tip of the continent. Heading north-west after take-off, the route soon leaves the coastal hills and farmland and passes over the Great Artesian Basin — the largest groundwater basin in Australia, its surface flat, dry grazing country kept in use for stock by bores tapping deep groundwater, with round tanks and radiating stock tracks visible on the ground." +
       " The farther north, the more tropical: termite mounds and open eucalypt woodland dot the plains. The route clips the Gulf of Carpentaria area, its coast broad mangrove and tidal flats." +
       " Approaching Darwin, below to the right is Kakadu — a large area of seasonally flooded wetland and stone country. In the dry season it is strings of dry channels and pools; in the wet the whole area floods. There is Aboriginal rock art on the escarpments going back tens of thousands of years. Kakadu is jointly managed by its traditional owners and the national park. Darwin is on the coast just to its west.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 卡卡杜与本库一致；大自流盆地原写「世界最大之一」，按 Geoscience Australia 口径改为「澳大利亚最大」。核实 2026-09-11
     travel: {
     "zh-CN":
       "布里斯班到达尔文飞约四小时，达尔文比布里斯班晚半小时。达尔文在热带，全年炎热，分旱季（约5–10月，天气稳定、是旺季）和湿季（约11–4月，闷热、雷暴、可能有热带气旋）。" +
@@ -958,6 +997,7 @@ export const ROUTE_NARRATION: Record<
       " The north coast of Tasmania soon comes into view. The island is hilly and densely forested, and its central-west is almost roadless wilderness and highland lakes, listed as a World Heritage Area; it is at a higher latitude, cool and wet, with snow on the mountains in winter. Temperate rainforest and ancient tree species survive in many places." +
       " The plane runs south down the eastern side of the island, crosses the central mountains, and lands at Hobart on the mouth of the Derwent. Hobart sits below Mount Wellington (kunanyi) and is the second-oldest capital city in Australia.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 霍巴特澳大利亚第二古老首府（1804）；巴斯陆桥；kunanyi / 威灵顿山双名。核实 2026-09-11
     travel: {
     "zh-CN":
       "墨尔本到霍巴特飞约一个多小时，同一时区。塔斯马尼亚纬度高、气候凉：夏季（12–2月）温和宜人，是旺季；冬季冷、山上有雪，昼夜和天气变化快，四季都要带保暖和防水衣物。" +
@@ -981,13 +1021,14 @@ export const ROUTE_NARRATION: Record<
       " Heading south-west after take-off, a sandstone plateau cut by deep valleys appears ahead to the right: the Blue Mountains, their eucalypt forest hazed blue in the sun, part of the Great Dividing Range rising into a plateau behind Sydney. Past the Blue Mountains the route keeps following the Great Dividing Range south-west, the mountains not high but continuous." +
       " Approaching Victoria the land rises again into a snow-streaked upland: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland, with snow in winter and one of the few skiing areas in Australia. Past the Alps the land opens into grazing country and farmland, and the plane descends along the eastern shore of Corio Bay to land at Avalon — Geelong sits across the bay, and the start of the Great Ocean Road is a short drive south-west.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿瓦隆机场距吉朗约 20 km；SkyBus 到墨尔本原写约 45 分钟，按运营方口径改为约 1–1.5 小时。核实 2026-09-11
     travel: {
     "zh-CN":
-      "悉尼到阿瓦隆飞约一个半小时，两地同一时区。阿瓦隆机场在吉朗东北约20公里，靠机场大巴或网约车进城，没有直达火车；如果落地后想直接去墨尔本，机场大巴也能到，车程约45分钟。" +
+      "悉尼到阿瓦隆飞约一个半小时，两地同一时区。阿瓦隆机场在吉朗东北约20公里，靠机场大巴或网约车进城，没有直达火车；如果落地后想直接去墨尔本，机场大巴也能到，车程约1小时到1个半小时（视路况）。" +
       "吉朗本身值得留半天到一天：滨海步道、系船柱、国家羊毛博物馆；很多人把它当大洋路自驾的起点，从这里往西南到托尔坎正式上路，去十二门徒岩单程还要数小时。往东是贝拉林半岛的昆斯克利夫古镇和酒庄。" +
       "南半球季节相反，12–2月是夏天，可能有热浪；入境对食品和动植物制品检查严格，如实申报。",
     "en-US":
-      "Sydney to Avalon is about an hour and a half, and the two cities are in the same time zone. Avalon Airport is about 20 km north-east of Geelong; getting into town needs the airport bus or a rideshare, as there is no direct train — the airport bus can also take you straight into Melbourne, about 45 minutes away." +
+      "Sydney to Avalon is about an hour and a half, and the two cities are in the same time zone. Avalon Airport is about 20 km north-east of Geelong; getting into town needs the airport bus or a rideshare, as there is no direct train — the airport bus can also take you straight into Melbourne, about 60–90 minutes away depending on traffic." +
       " Geelong itself is worth half a day to a full day: the waterfront promenade, the Baywalk Bollards, the National Wool Museum. Many travellers use it as the starting point for the Great Ocean Road — Torquay, south-west of the city, is where the drive officially begins, with the Twelve Apostles still several hours further on. East is the Bellarine Peninsula, with the historic town of Queenscliff and its wineries." +
       " In the southern hemisphere the seasons are reversed — December to February is summer and can bring heatwaves. Border checks on food and plant and animal material are strict — declare honestly.",
     },
@@ -1004,6 +1045,7 @@ export const ROUTE_NARRATION: Record<
       " Southward the land rises into an upland, and a great sheet of deep-blue water appears: Lake Taupō, which is in fact a huge caldera filled with water, the largest lake in New Zealand. On its southern shore stand several snow-streaked conical peaks, the highest being Mount Ruapehu — the highest point of the North Island, an active stratovolcano with a crater lake at the top and a ski field in winter." +
       " Beyond the volcanic plateau you enter the mountains of the southern North Island. The Tararua Range is a steep, wet, wind-scoured line of hills separating the Wellington area from the western plains. The plane crosses the Tararua and descends along an almost enclosed harbour to Wellington — the capital, squeezed onto the steep western shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 怀卡托河最长、陶波湖最大、鲁阿佩胡为北岛最高点；库克海峡渡轮三个多小时。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥克兰到惠灵顿飞约一小时，同一时区。两地都属温带海洋性气候：奥克兰更暖更湿，惠灵顿以风大出名，天气变化都很快，随身带防风防水外套。南半球季节相反，12–2月是夏天。" +
@@ -1022,13 +1064,14 @@ export const ROUTE_NARRATION: Record<
       "奥克兰飞基督城，是从北岛飞到南岛，越过分开两岛的库克海峡。起飞后先是怀卡托的牧场和陶波湖的火山高原。" +
       "接近北岛南端，海面出现一片被淹没的山谷形成的锯齿状海湾和半岛，那是马尔堡峡湾，也是库克海峡北岸。越过海峡就到南岛。" +
       "南岛一上岸就是山。凯库拉山脉几乎直接从海里拔起，山脚下是狭窄的海岸公路和铁路，海里常有鲸和海豚。" +
-      "过了凯库拉，地面豁然开阔平坦，这就是坎特伯雷平原——南岛最大的平原，由南阿尔卑斯山上冲下来的砾石堆积而成，一条条辫状河从山口散开流向大海。基督城就建在平原东缘、班克斯半岛（一座古老的死火山）脚下。",
+      "过了凯库拉，地面豁然开阔平坦，这就是坎特伯雷平原——南岛最大的平原，由南阿尔卑斯山上冲下来的砾石堆积而成，一条条辫状河从山口散开流向大海。基督城就建在平原东缘、班克斯半岛（两座古老死火山叠合而成）脚下。",
     "en-US":
       "Auckland to Christchurch flies from the North Island to the South Island, across Cook Strait, which separates them. After take-off come the Waikato farm country and the volcanic plateau around Lake Taupō." +
       "Near the southern end of the North Island, a jagged pattern of drowned-valley bays and peninsulas appears on the sea: the Marlborough Sounds, the northern shore of Cook Strait. Across the strait you are on the South Island." +
       " The South Island rises straight into mountains at the coast. The Kaikōura Ranges lift almost directly out of the sea, with a narrow coastal road and railway at their foot, and whales and dolphins often in the water." +
-      " Past Kaikōura the land opens out flat: the Canterbury Plains, the largest plain on the South Island, built of gravel washed down from the Southern Alps, with braided rivers spreading from the mountain gaps toward the sea. Christchurch is built on the plains' eastern edge at the foot of Banks Peninsula, an old extinct volcano.",
+      " Past Kaikōura the land opens out flat: the Canterbury Plains, the largest plain on the South Island, built of gravel washed down from the Southern Alps, with braided rivers spreading from the mountain gaps toward the sea. Christchurch is built on the plains' eastern edge at the foot of Banks Peninsula, built from two old extinct volcanoes.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 坎特伯雷平原、凯库拉山脉；班克斯半岛原写一座火山，按本库改为两座叠合。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥克兰到基督城飞约一个半小时，同一时区。基督城比北岛凉、四季分明，夏季（12–2月）干爽，冬季有霜、偶尔焚风又干又热。" +
@@ -1054,6 +1097,7 @@ export const ROUTE_NARRATION: Record<
       " South of the Sounds, the Kaikōura Ranges rise almost straight from the sea, snow on the tops and a road and railway hugging the coast at their foot." +
       " Past Kaikōura the land becomes the open, flat Canterbury Plains, with braided rivers spreading from the gaps in the Southern Alps. Christchurch is on the plains' eastern edge. Short as it is, the flight takes in the whole sequence — strait, sounds, coastal mountains, great plain.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 时长约五十分钟与本库航线数据一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "惠灵顿到基督城飞约五十分钟。也可以坐跨海峡渡轮到皮克顿再换火车/自驾，全程大半天但风景很好。两地都属温带海洋性气候，基督城更凉、四季分明。" +
@@ -1079,6 +1123,7 @@ export const ROUTE_NARRATION: Record<
       " Farther west is the main crest of the Southern Alps — a line of high mountains under permanent snow and widespread glaciers, with the highest peak, Aoraki/Mount Cook, close by. The western side, facing the moist air off the Tasman Sea, has extreme rainfall and rainforest; the eastern side is dry." +
       " Over the divide the ground drops away and a dark Z-shaped lake appears: Lake Wakatipu, with Queenstown on a bay and the steep Remarkables on the far shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 麦肯齐盆地冰川乳蓝湖、奥拉基 / 麦肯齐暗夜星空保护区（2012）。核实 2026-09-11
     travel: {
     "zh-CN":
       "基督城到皇后镇飞约一小时。皇后镇在山的背风侧，属温带半干旱气候：夏季温暖干爽（徒步、水上活动旺季），冬季寒冷有雪（滑雪季，6–8月），昼夜温差大，两个旺季住宿都贵、要早订。" +
@@ -1102,6 +1147,7 @@ export const ROUTE_NARRATION: Record<
       " Rotorua comes up quickly. It sits in an old caldera, and from the air you can see the steaming geothermal areas — geysers, boiling mud pools, brightly coloured hot springs — with Lake Rotorua filling much of the crater. There are a dozen or so volcanic lakes around, and Mount Tarawera." +
       " This area is part of the Taupō Volcanic Zone of the North Island — magma below the crust heats the groundwater to make these geothermal features — and it is also traditional home of the Te Arawa Māori people, with many villages built beside the hot springs.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 罗托鲁瓦湖为破火山口积水、属陶波火山带；Te Arawa。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥克兰到罗托鲁瓦飞约40分钟，多数人从奥克兰自驾（约3小时）。罗托鲁瓦全年可来，12–3月最舒服；地热区附近湿度大、硫磺味重，银饰会变黑，可摘下。" +
@@ -1127,6 +1173,7 @@ export const ROUTE_NARRATION: Record<
       " At the edge of the plains the Rocky Mountains rise abruptly — lines of snowy north–south ranges enclosing high basins, with the Continental Divide along the crest. West of them is the Colorado Plateau, a block of thick, near-horizontal rock layers lifted up and cut into deep canyons by the Colorado River and its tributaries; the Grand Canyon is the deepest stretch." +
       " Finally you cross the bare hills and dry lake basins of the Mojave Desert, clear the coastal San Gabriel and other ranges, and the Los Angeles basin and the Pacific come into view.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿巴拉契亚古老褶皱山系、大平原—落基山—科罗拉多高原—大峡谷—莫哈韦序列；跨三个时区；时长与本库航线数据 335 分钟一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "纽约到洛杉矶飞约五个半小时，向西跨三个时区（落地时钟往回拨 3 小时）。两座城市气候差别很大：纽约四季分明、夏闷冬雪；洛杉矶终年温暖干燥、少雨，昼夜和海陆温差明显。" +
@@ -1152,6 +1199,7 @@ export const ROUTE_NARRATION: Record<
       " Beyond the northern Rockies you enter the Great Basin — an arid upland broken by mountains into many closed basins, where rivers never reach the sea but drain into inland salt lakes and flats; the Great Salt Lake is the largest." +
       " Finally, over the northern Sierra Nevada, the Central Valley of California opens below: a large, flat agricultural basin held between mountain ranges, where the Sacramento and San Joaquin rivers meet and flow out through San Francisco Bay. San Francisco is on the tip of the peninsula at the bay's mouth.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 五大湖冰盖刨蚀成因、大盆地内流水系、大盐湖、中央谷地两河入旧金山湾。核实 2026-09-11
     travel: {
     "zh-CN":
       "纽约到旧金山飞约六小时，西行跨三个时区。旧金山夏季常有海雾、体感偏凉，一年四季都要备一件外套；纽约夏热冬冷。" +
@@ -1169,12 +1217,13 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "芝加哥飞旧金山，从五大湖畔的大平原飞到太平洋岸。起飞时脚下是密歇根湖和芝加哥所在的平坦湖积平原，随后是一望无际的中西部农田——玉米和大豆的方格田，是大平原东段最湿润、最肥沃的一段。" +
       "越过落基山后进入大盆地干旱高原。大盐湖是一片没有出口的浅咸水湖，四周是白色的盐滩和平坦的盐碱地，从空中看像一面灰蓝色的镜子。" +
-      "翻过内华达山脉，加州中央谷地在山脚展开：南北长约六百公里、东西被海岸山脉和内华达山夹住，是全美灌溉农业最集中的地方。谷地北端的河流汇成三角洲，经旧金山湾入海。",
+      "翻过内华达山脉，加州中央谷地在山脚展开：南北长约650公里、东西被海岸山脉和内华达山夹住，是全美灌溉农业最集中的地方。谷地北端的河流汇成三角洲，经旧金山湾入海。",
     "en-US":
       "Chicago to San Francisco flies from the plains by the Great Lakes to the Pacific coast. On take-off you are over Lake Michigan and the flat lake-plain that Chicago sits on, then the endless farmland of the Midwest — a grid of corn and soybean fields, the wettest and most fertile part of the eastern Great Plains." +
       " Beyond the Rockies you enter the arid uplands of the Great Basin. The Great Salt Lake is a shallow salt lake with no outlet, ringed by white salt flats and level alkali ground, and from the air it looks like a grey-blue mirror." +
-      " Over the Sierra Nevada, the Central Valley of California opens at the foot of the range: about 600 km long, held between the Coast Ranges and the Sierra, and the most concentrated irrigated farmland in the country. At its northern end the rivers join in a delta and flow out through San Francisco Bay.",
+      " Over the Sierra Nevada, the Central Valley of California opens at the foot of the range: about 650 km long, held between the Coast Ranges and the Sierra, and the most concentrated irrigated farmland in the country. At its northern end the rivers join in a delta and flow out through San Francisco Bay.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大盐湖、内华达山脉、两个时区；中央谷地长度原写约 600 km，按本库 terrain/central-valley-ca（USGS 约 644 km）改为约 650 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "芝加哥到旧金山飞约四个半小时，西行跨两个时区。芝加哥冬季严寒多雪、夏季温暖；旧金山终年温和，夏季多雾偏凉。" +
@@ -1198,6 +1247,7 @@ export const ROUTE_NARRATION: Record<
       " Beyond the ridges the ground becomes a lifted, dissected plateau of red rock: the Colorado Plateau. The Colorado River and its tributaries have cut deep canyons into the thick horizontal rock layers, and the water runs muddy and reddish most of the year." +
       " A little to the south of the track is the Grand Canyon — the deepest stretch the Colorado River has cut, its layered walls recording a long span of geological time. Finally, over bare hills and dry lake basins, you reach the Mojave Desert basin that Las Vegas sits in.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 丹佛约一英里海拔；科罗拉多高原水平岩层、大峡谷；时长 105 分钟一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "丹佛到拉斯维加斯飞约一小时四十分钟，落地把时钟往回拨一小时（丹佛山地时区、拉斯维加斯太平洋时区）。丹佛干爽、日照强、冬季多雪；拉斯维加斯在沙漠里，夏季酷热、极干燥。" +
@@ -1221,6 +1271,7 @@ export const ROUTE_NARRATION: Record<
       " Next is the Sierra Nevada: a huge tilted block of granite, gently sloping on the west and steep on the east, snow-capped all year, with many deep U-shaped valleys carved by glaciers in the ice ages." +
       " Over the crest the land drops suddenly into desert and Death Valley appears — the lowest, hottest and driest place in North America, its floor of salt flats below sea level between steep bare mountains. Finally, over the dry lake basins of the Mojave Desert, Las Vegas lies in its ring of mountains.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 内华达山脉花岗岩断块、死亡谷北美最低最热最干（NPS，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "旧金山到拉斯维加斯飞约一个半小时，同一时区。旧金山凉而多雾，拉斯维加斯在沙漠里、夏季酷热，落地温差可能很大。" +
@@ -1244,6 +1295,7 @@ export const ROUTE_NARRATION: Record<
       " North of the peninsula the coast is a continuous line of low sand bars, lagoons and estuary wetlands: the Atlantic coastal plain, running from Florida to New York, formed of sea-floor sediments lifted and exposed, very gently sloping, with sandy beaches and barrier islands." +
       " Past Chesapeake Bay — a drowned ancient river mouth — the coastal plain narrows and pinches out near New York; the mouth of the Hudson River and its natural harbour are exactly where the city grew.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 佛罗里达石灰岩台地、大沼泽地、切萨皮克湾为淹没古河口。核实 2026-09-11
     travel: {
     "zh-CN":
       "迈阿密到纽约飞约三小时，同一时区。两地气候差别大：迈阿密全年温暖、夏季闷热多雨（6–11 月飓风季）；纽约四季分明、冬季寒冷有雪。" +
@@ -1267,6 +1319,7 @@ export const ROUTE_NARRATION: Record<
       " West across Texas the ground rises and dries out. Into New Mexico is the Chihuahuan Desert — the largest desert in North America, marked by shrubland and gypsum dunes, with White Sands among them." +
       " Farther west is the Sonoran Desert, a little warmer and wetter, home to the tall saguaro cactus and the 'greenest' desert in North America. Finally you cross the drier, dry-lake-basin country of the Mojave Desert, clear the coastal ranges, and reach the Los Angeles basin. Almost the whole flight is over the basin-and-range country of the American Southwest.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奇瓦瓦沙漠北美最大、白沙在其范围内、索诺兰双季降水。核实 2026-09-11
     travel: {
     "zh-CN":
       "新奥尔良到洛杉矶飞约四小时，西行跨两个时区。新奥尔良低湿、夏季闷热多雨；洛杉矶干燥温暖、少雨。" +
@@ -1290,6 +1343,7 @@ export const ROUTE_NARRATION: Record<
       " Around Manitoba the Shield sinks under the plains, and Lake Winnipeg is one of the large lakes left from glacial Lake Agassiz. West the land grows flatter and drier — the Interior Plains, Canada's granary and oil country, its square fields running to the foot of the Rockies." +
       " At the edge of the plains the Canadian Rockies rise abruptly: lines of near-parallel north–south ranges, thick sedimentary layers stacked like shingles by thrust faults, with icefields, turquoise glacial lakes and U-shaped valleys between them. Over a last coastal range is the Fraser River delta and the Pacific, where Vancouver sits.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 加拿大地盾约占国土一半、温尼伯湖为阿加西冰川湖残留、落基山逆冲叠瓦构造。核实 2026-09-11
     travel: {
     "zh-CN":
       "多伦多到温哥华飞约五小时，向西跨三个时区（落地把时钟往回拨 3 小时）。两地气候差别大：多伦多四季分明、冬冷夏闷；温哥华冬季温和多雨、夏季干爽，很少下雪。" +
@@ -1313,6 +1367,7 @@ export const ROUTE_NARRATION: Record<
       " On the prairie side the Shield sinks under the plains, and Lake Winnipeg is a large lake left by the melting ice. West are the Interior Plains: semi-arid wheat fields and ranchland tilting gently up to the west, with rivers cutting shallow valleys into the soft layers." +
       " At the edge of the plains the Canadian Rockies rise straight up — sedimentary rock pushed by thrust faults into lines of shingled ranges, with icefields and glacial lakes between. Finally, over the Coast Mountains, Vancouver, the Fraser delta and the sea come into view.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 同 yyz-yvr 地貌链；时长 330 分钟一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "蒙特利尔到温哥华飞约五个半小时，西行跨三个时区。蒙特利尔冬季严寒多雪、夏季炎热多节庆；温哥华终年温和、冬季多雨。" +
@@ -1334,6 +1389,7 @@ export const ROUTE_NARRATION: Record<
       "Toronto to Montreal is the busiest air route in Canada, short, and flown mostly over the lowlands of the St Lawrence. After take-off you skim the north shore of Lake Ontario; the low ridge along the city's northern edge is the Niagara Escarpment — a hard cap of dolomite over softer rock, eroded into a line of cliff that curves from New York State through Ontario to Lake Huron, and Niagara Falls is where the river drops over it." +
       " Then the ground is the flat St Lawrence Lowlands: a fertile sedimentary plain between Lake Ontario and the St Lawrence River, the most densely settled belt of Ontario and Quebec, with neatly ordered fields, towns and highways. Montreal sits on a large island in the St Lawrence, and Mount Royal in the middle of the island is easy to pick out from the air.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 尼亚加拉断崖白云岩盖层；VIA 约五小时（官网，1 级）；7 月 1 日魁北克搬家日。核实 2026-09-11
     travel: {
     "zh-CN":
       "多伦多到蒙特利尔飞约一小时十五分钟，同一时区。两地都属温带大陆性气候、四季分明，蒙特利尔冬天更冷更长。也可以坐 VIA Rail 火车，约五小时、市中心到市中心。" +
@@ -1357,13 +1413,14 @@ export const ROUTE_NARRATION: Record<
       " Across the St Lawrence the land begins to roll, into the northern tail of the Appalachian system — long-eroded low mountains and hills, heavily forested." +
       " Near the end the Bay of Fundy appears on the sea — a funnel-shaped bay reaching inland, whose shape and length resonate with the Atlantic tide, giving it the largest tidal range in the world; at low tide it exposes broad red mud flats and rocks scoured into mushroom shapes. Halifax is east of the bay, on the shore of a long, deep harbour.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 芬迪湾世界最大潮差；航程时长原写约一小时四十分，按本库航线数据（140 分钟）改为约两小时二十分。核实 2026-09-11
     travel: {
     "zh-CN":
-      "多伦多到哈利法克斯飞约一小时四十分钟，落地把时钟往前拨一小时（哈利法克斯是大西洋时区）。哈利法克斯比内陆温和：夏季凉爽多雾，9–10 月可能有飓风残余带来的大风大雨。" +
+      "多伦多到哈利法克斯飞约两小时二十分钟，落地把时钟往前拨一小时（哈利法克斯是大西洋时区）。哈利法克斯比内陆温和：夏季凉爽多雾，9–10 月可能有飓风残余带来的大风大雨。" +
       "靠窗后段能看到圣劳伦斯河、阿巴拉契亚低山和芬迪湾。YHZ 机场离市区约 35 公里、有机场大巴，安排好接驳时间。" +
       "哈利法克斯适合作为大西洋省份自驾的起点，往南看佩吉湾灯塔和花岗岩海岸。多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
-      "Toronto to Halifax is about an hour and forty minutes; set your clock forward an hour on arrival (Halifax is on Atlantic time). Halifax is milder than inland: cool, foggy summers, with strong wind and rain possible from hurricane remnants in September–October." +
+      "Toronto to Halifax is about two hours and twenty minutes; set your clock forward an hour on arrival (Halifax is on Atlantic time). Halifax is milder than inland: cool, foggy summers, with strong wind and rain possible from hurricane remnants in September–October." +
       " From a window in the later part of the flight you can see the St Lawrence, the low Appalachians and the Bay of Fundy. YHZ airport is about 35 km from the city with an airport bus — plan the transfer time." +
       " Halifax makes a good start for a drive around Atlantic Canada, south to Peggys Cove for the lighthouse and granite shore. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
@@ -1380,6 +1437,7 @@ export const ROUTE_NARRATION: Record<
       " Across the Cabot Strait, the Long Range Mountains rise on the west coast of Newfoundland — the northernmost stretch of the Appalachian system, a plateau of old rock uplifted and then carved by ice into fjords and cliffs (Gros Morne National Park is here, where rock from the Earth's mantle is exposed at the surface)." +
       " The island's interior is open rocky barrens with countless small lakes. St. John's hugs a nearly landlocked harbour, with only a narrow, cliff-walled channel out to the Atlantic.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 爱德华王子岛红土、长岭山脉与格罗莫讷地幔岩（UNESCO）；纽芬兰半小时时区；时长 95 分钟一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哈利法克斯到圣约翰斯飞约一小时四十分钟，落地把时钟再往前拨一个半小时（纽芬兰是特殊的半小时时区）。圣约翰斯多雾多风、天气变化极快，是加拿大最湿、最多雾的城市之一，随身带防风防水外套。" +
@@ -1403,6 +1461,7 @@ export const ROUTE_NARRATION: Record<
       " Mid-flight you reach the main crest of the Canadian Rockies: these mountains are not volcanoes or blocks of granite, but thick layers of limestone and sandstone pushed east and stacked like shingles by thrust faults, so the slopes often show clear horizontal rock lines. Icefields, turquoise glacial lakes and U-shaped valleys are scattered between them, and Banff and Lake Louise are here." +
       " Over the easternmost ridge (the pass at the head of the Bow valley) the land drops away suddenly into open prairie, and Calgary sits at the foot of the Rockies where two rivers meet.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 卡尔加里约 1000 m、焚风。核实 2026-09-11
     travel: {
     "zh-CN":
       "温哥华到卡尔加里飞约一小时二十分钟，落地把时钟往前拨一小时（卡尔加里是山地时区）。温哥华温和多雨、卡尔加里干爽日照强、海拔约一千米、冬季有焚风。" +
@@ -1426,6 +1485,7 @@ export const ROUTE_NARRATION: Record<
       " Then the ground is the endless Interior Plains: gently rolling wheat, canola and ranchland, with square fields and circular irrigation pivots neatly laid out from above; this was the floor of a prehistoric shallow sea, and the rock layers are nearly horizontal." +
       " Approaching Winnipeg the land becomes extremely flat — the bed of glacial Lake Agassiz, flatter than its surroundings. Lake Winnipeg, north of the city, is a remnant of that lake. Winnipeg sits where the Red and Assiniboine rivers meet.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 艾伯塔荒地恐龙化石「最丰富之一」带限定；温尼伯为阿加西湖底。核实 2026-09-11
     travel: {
     "zh-CN":
       "卡尔加里到温尼伯飞约两个多小时，落地把时钟往前拨一小时（温尼伯是中部时区）。两地都属大陆性草原气候、一年温差极大：夏季温暖、冬季酷寒（1 月体感常低于 -30°C）。" +
@@ -1449,6 +1509,7 @@ export const ROUTE_NARRATION: Record<
       " East the land flattens further, into the lake plain of Manitoba, where Lake Winnipeg is a remnant of glacial Lake Agassiz." +
       " Past Winnipeg the green farmland stops abruptly and gives way to the Canadian Shield: an old platform of crystalline rock planed by ice, a mosaic of lakes, bogs and bare rock, roadless in the forest, running from northern Ontario into Quebec. North of Lake Ontario the Shield sinks under the lowlands, and Toronto is on the plain along the lake's north shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 时长约三个半小时（实测 3 小时 40 分左右，在容差内）。核实 2026-09-11
     travel: {
     "zh-CN":
       "埃德蒙顿到多伦多飞约三个半小时，向东跨两个时区（落地把时钟往前拨 2 小时）。埃德蒙顿冬季漫长严寒、夏季白昼极长；多伦多四季分明、夏季闷热。" +
@@ -1462,6 +1523,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-edi": {
+    // study sources: 全四段（study/travel × 中英）: 奇尔特恩白垩丘陵、奔宁「英格兰的脊梁」、峰区为英格兰第一座国家公园、爱丁堡城堡立于火山岩颈，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞爱丁堡，是一趟很短的航班，几乎把英格兰从南到北纵切了一遍。起飞后先掠过泰晤士河谷北缘的奇尔特恩丘陵——一道白垩岩的缓坡，是伦敦盆地的边。" +
@@ -1487,6 +1549,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-gla": {
+    // study sources: 全四段（study/travel × 中英）: 湖区冰川刨蚀、斯科费尔峰英格兰最高（978 m）与本库一致；格拉斯哥「曾经的造船中心」为过去时。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞格拉斯哥，走的航路比飞爱丁堡略偏西。起飞后先是泰晤士河谷北缘的奇尔特恩白垩丘陵，然后是英格兰中部的城市带和峰区的荒原高地。" +
@@ -1510,6 +1573,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-inv": {
+    // study sources: 全四段（study/travel × 中英）: 凯恩戈姆为不列颠面积最大高山高原、五座超 1200 m 峰；大峡谷断层谷串起尼斯湖，与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞因弗内斯，从英格兰东南一直飞到苏格兰高地的北端。起飞后先是奇尔特恩白垩丘陵和英格兰中部平原，接着是奔宁山脉——纵贯英格兰北部的低山脊。" +
@@ -1533,6 +1597,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-bfs": {
+    // study sources: 全四段（study/travel × 中英）: 塞文河不列颠最长；Eryri / 斯诺登 1085 m 与本库一致；莫恩山花岗岩圆顶；北爱尔兰用中性地理名。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞贝尔法斯特，从英格兰东南横穿到爱尔兰岛东北。起飞后先是奇尔特恩白垩丘陵，然后地面是英格兰中西部的平原，塞文河——不列颠最长的河——在这里蜿蜒，河口有巨大的潮差。" +
@@ -1556,6 +1621,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "brs-edi": {
+    // study sources: 全四段（study/travel × 中英）: 塞文河口涌潮；奔宁分水岭。核实 2026-09-11
     study: {
     "zh-CN":
       "布里斯托尔飞爱丁堡，从英格兰西南飞到苏格兰。起飞时脚下是塞文河的宽阔河口——不列颠最长的河在这里入海，落潮时露出大片泥滩，河口偶尔能看到一道涌潮（Severn Bore）。" +
@@ -1579,6 +1645,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "edi-bfs": {
+    // study sources: 全四段（study/travel × 中英）: 北海峡最窄约 20 km；斯利夫多纳德 850 m 为北爱尔兰最高峰。核实 2026-09-11
     study: {
     "zh-CN":
       "爱丁堡飞贝尔法斯特，是一趟很短的跨海航班，把苏格兰和北爱尔兰连起来。起飞后不久就到南部高地——苏格兰与英格兰之间那片平缓的绿色牧羊丘陵，这里也是苏格兰西南向爱尔兰海倾斜的一侧。" +
@@ -1602,6 +1669,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lhr-abz": {
+    // study sources: 全四段（study/travel × 中英）: 沼泽地排干后部分低于海平面、切维厄特火山岩丘陵、阿伯丁「花岗岩之城」与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "伦敦飞阿伯丁，沿着英格兰和苏格兰的东海岸一路北上。起飞后先是奇尔特恩白垩丘陵，然后进入英格兰东部——一片极其平坦的低地，其中沼泽地（The Fens）曾是浅海和沼泽，被人工排干成海拔接近零、甚至低于海平面的农田，河渠笔直。" +
@@ -1635,6 +1703,7 @@ export const ROUTE_NARRATION: Record<
       " North you enter the central highland: a grey-black volcanic desert with almost no vegetation, where a few gentle ice caps lie like white shields — first Langjökull, then Hofsjökull at the very centre of Iceland. Between the ice caps are lava, volcanic gravel and braided rivers of meltwater." +
       " Over the northern edge of the highland the land drops into deep north–south valleys, the longest of which, Eyjafjörður, reaches toward the Arctic. Akureyri is at its head, ringed on three sides by snow mountains.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 辛格维利尔裂谷与冰岛最大天然湖、埃亚峡湾为冰岛最长峡湾。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到阿克雷里飞约 45 分钟，同一时区。国内航班从市区的 RKV 机场起降（不是国际的凯夫拉维克 KEF）。也可以自驾环岛公路约 5 小时。" +
@@ -1658,6 +1727,7 @@ export const ROUTE_NARRATION: Record<
       " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, by volume the largest ice cap in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
       " Over the ice cap the land drops into the eastern fjords and valleys, and Egilsstaðir is by a long, thin lake beside one of Iceland's rare large areas of woodland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 瓦特纳「按体积欧洲最大冰帽」、格里姆火山与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到埃伊尔斯塔济飞约一小时，同一时区，用市区 RKV 机场。自驾环岛到东部要 8–9 小时，所以飞机很受欢迎。" +
@@ -1681,6 +1751,7 @@ export const ROUTE_NARRATION: Record<
       " From the bay's north shore a long, thin peninsula reaches out, ending in Snæfellsjökull — a near-perfect cone of a volcano with an ice cap on top, visible from far away in good weather. This is the mountain Jules Verne used as the entrance in 'Journey to the Centre of the Earth'." +
       " Past the peninsula are the Westfjords: the oldest land in Iceland, cut into pieces by countless deep fjords and steep flat-topped mountains that rise almost vertically from the sea. Ísafjörður hides in a fjord on an L-shaped spit, its airport approach notoriously difficult, with a single road in and out.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯奈山冰川与《地心游记》、西部峡湾约 1600 万年为冰岛最古老出露岩石。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到伊萨菲厄泽飞约 40 分钟，同一时区，用市区 RKV 机场。陆路走西部峡湾的盘山公路要 5–6 小时。" +
@@ -1704,6 +1775,7 @@ export const ROUTE_NARRATION: Record<
       " South-east the ground grows whiter: Vatnajökull, by volume the largest ice cap in Europe, covering about 7% of Iceland as measured in 2023, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
       " Approaching Höfn, a lagoon connected to the sea appears at the ice edge, full of pale blue floes — Jökulsárlón, where ice breaks off the glacier tongue and drifts to the sea. Höfn is opposite the ice cap, on a spit at the mouth of a lagoon.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 海克拉「喷发最频繁的火山之一」；瓦特纳 2023 年约 7%（#264 已修）。核实 2026-09-11
     travel: {
     "zh-CN":
       "雷克雅未克到赫本飞约 50 分钟，同一时区，用市区 RKV 机场。自驾南岸环岛到赫本约 6 小时（沿途瀑布、黑沙滩、冰川很多，很多人分两天开）。" +
@@ -1730,6 +1802,7 @@ export const ROUTE_NARRATION: Record<
       " After take-off you pass the lake-and-mountain junction around Lake Lucerne, then the typical plateau landscape: patchwork pasture and wheat fields, scattered towns, a few medium lakes (Biel, Neuchâtel), with the wall of the Alps to the south." +
       " Near the end a huge crescent lake appears — Lake Geneva (Lac Léman), the largest lake on the northern edge of the Alps, with the Rhône flowing in at the east end and out at Geneva in the west. The city is almost surrounded by French territory, and Mont Blanc is visible in the distance across the lake.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 日内瓦湖「阿尔卑斯北缘最大的湖」（区域内博登湖、纳沙泰尔湖均更小）；瑞士高原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "苏黎世到日内瓦飞约 45 分钟，同一时区。瑞士国内基本靠火车（约 2 小时 45 分、直达、市中心到市中心），SWISS 飞这条线主要是为转机旅客。" +
@@ -1754,6 +1827,7 @@ export const ROUTE_NARRATION: Record<
       " Over the western edge of the plateau the land drops into a deep fjord, the Hardangerfjord — Norway's second-longest — its shores lined with orchards and waterfalls, and the white edge of the Folgefonna ice cap visible deep in the fjord." +
       " Over one last stretch of mountains, Bergen appears in a small bay ringed by seven mountains, with the fjord mouth to the open sea behind it.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 哈当厄高原约 1100 m、约 6500 km²「欧洲最大高山高原之一」；哈当厄峡湾挪威第二长，与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到卑尔根飞约 55 分钟，同一时区。也可以坐卑尔根铁路（约 6.5 小时，世界知名的风景线，经米达尔可换弗洛姆铁路），很多人飞去坐火车回、或反过来。" +
@@ -1770,13 +1844,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "奥斯陆飞特隆赫姆，沿着挪威中部一条历史悠久的南北通道飞行，古德布兰河谷铁路和 E6 公路都走这条线。起飞后先经过姆约萨湖——挪威最大的湖，然后进入古德布兰河谷：一条沿地质断裂带发育的狭长大河谷，两侧是农庄和森林。" +
-      "河谷东侧能看到龙达讷——一片浑圆的古老山峰群，是挪威最早的国家公园之一。继续北飞，河谷收窄、抬升，最终没入多夫勒山：一片开阔的高山高原，麝牛就生活在这里（19 世纪末从格陵兰引入，是欧洲大陆仅存的野生麝牛种群之一）。" +
+      "河谷东侧能看到龙达讷——一片浑圆的古老山峰群，是挪威最早的国家公园之一。继续北飞，河谷收窄、抬升，最终没入多夫勒山：一片开阔的高山高原，麝牛就生活在这里（1930年代从格陵兰引入，是欧洲大陆仅存的野生麝牛种群之一）。" +
       "翻过多夫勒山，地面下降进入特伦德拉格的低地，特隆赫姆就在尼德河汇入特隆赫姆峡湾处。",
     "en-US":
       "Oslo to Trondheim flies along a historic north–south corridor through central Norway, the same line followed by the Gudbrandsdalen railway and the E6 road. After take-off you pass Mjøsa, Norway's largest lake, then enter Gudbrandsdalen: a long, narrow valley along a geological fault, farms and forest on either side." +
-      " To the east of the valley is Rondane — a cluster of rounded old peaks, one of Norway's first national parks. Flying on north, the valley narrows and rises, finally merging into Dovrefjell: an open high mountain plateau, home to musk oxen (introduced from Greenland in the late 19th century, one of the last wild populations on mainland Europe)." +
+      " To the east of the valley is Rondane — a cluster of rounded old peaks, one of Norway's first national parks. Flying on north, the valley narrows and rises, finally merging into Dovrefjell: an open high mountain plateau, home to musk oxen (introduced from Greenland in the 1930s, one of the last wild populations on mainland Europe)." +
       " Over Dovrefjell the land drops into the Trøndelag lowlands, and Trondheim is where the Nidelva meets the Trondheimsfjord.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 米约萨湖挪威最大、隆达讷 1962 年国家公园；多夫勒山麝牛原写「19 世纪末引入」，按本库改为 1930 年代。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到特隆赫姆飞约 55 分钟，同一时区。也可坐多夫勒线火车（约 7 小时，沿途正是这条航线看到的河谷和高原）。" +
@@ -1800,6 +1875,7 @@ export const ROUTE_NARRATION: Record<
       " Near the end, the Lysefjord appears below — a narrow, straight fjord with near-vertical granite walls, above which hang two famous rocks: the almost-horizontal ledge known as Preikestolen (Pulpit Rock), and Kjeragbolten, a boulder wedged in a crack." +
       " Stavanger sits outside the fjord, on a peninsula surrounded by islands and shallow sea, with the low, flat farmland of Jæren beyond the city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 吕瑟峡湾布道石 / 奇迹石与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到斯塔万格飞约 50 分钟，同一时区。也可坐南部线火车（约 8 小时，绕得较远）。" +
@@ -1816,13 +1892,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "奥斯陆飞特罗姆瑟，几乎飞完了挪威的全部长度，从首都一直飞到北极圈以北。起飞后先经过多夫勒山的高山高原——挪威地势的一道大分水岭。" +
-      "继续向北，进入诺尔兰的海岸山地：一列列尖锐的花岗岩峰几乎直接从海里拔起，斯瓦蒂森冰帽——大陆挪威第二大的冰原——就压在这一带的山顶上，几条冰川舌一直伸到接近海平面的地方。" +
+      "继续向北，进入诺尔兰的海岸山地：一列列尖锐的花岗岩峰几乎直接从海里拔起，斯瓦蒂森冰帽——按面积计大陆挪威第二大的冰原——就压在这一带的山顶上，几条冰川舌一直伸到接近海平面的地方。" +
       "越过北极圈，海面上出现罗弗敦群岛——一道由尖峭山峰组成的“墙”，从海里陡然升起，是挪威最上镜的风景之一。特罗姆瑟就在再往北的一座峡湾中的小岛上。",
     "en-US":
       "Oslo to Tromsø flies nearly the full length of Norway, from the capital to well north of the Arctic Circle. After take-off you cross the high plateau of Dovrefjell — a major watershed of the country." +
-      " Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway — capping the summits here, its glacier tongues reaching down almost to sea level." +
+      " Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway by area — capping the summits here, its glacier tongues reaching down almost to sea level." +
       " Over the Arctic Circle the Lofoten Islands appear on the sea — a 'wall' of jagged peaks rising sheer from the water, one of Norway's most photographed landscapes. Tromsø is farther north still, on a small island in a fjord.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯瓦蒂森大陆挪威第二大冰原、林根阿尔卑斯、芬马克高原萨米驯鹿放牧（只写土地利用）与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "奥斯陆到特罗姆瑟飞约 1 小时 50 分，同一时区。这段距离陆路要跨越大半个挪威，飞机是最实际的选择。" +
@@ -1839,13 +1916,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "特隆赫姆飞博德，沿诺尔兰海岸继续北飞，跨过北极圈，是诺尔兰铁路走的同一条路线（只是飞机快得多）。起飞后沿海岸线飞行，右侧是斯堪的纳维亚山脉的余脉，左侧是挪威海。" +
-      "航线中段经过斯瓦蒂森冰帽——大陆挪威第二大的冰原，从空中能看到几条冰川舌从主体冰帽向峡湾方向流下，末端已经很接近海平面。这一带正好在北极圈附近，是夏天午夜阳光和冬天极光都能看到的过渡地带。" +
+      "航线中段经过斯瓦蒂森冰帽——按面积计大陆挪威第二大的冰原，从空中能看到几条冰川舌从主体冰帽向峡湾方向流下，末端已经很接近海平面。这一带正好在北极圈附近，是夏天午夜阳光和冬天极光都能看到的过渡地带。" +
       "接近博德，海面出现群岛，博德本身建在一个伸进海里的半岛上，城南就是萨尔特海峡的大漩涡。",
     "en-US":
       "Trondheim to Bodø continues north along the Nordland coast, crossing the Arctic Circle, on the same route as the Nordland railway (just much faster by air). After take-off you follow the coastline, the tail of the Scandinavian Mountains to the right, the Norwegian Sea to the left." +
-      " Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
+      " Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway by area — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
       " Approaching Bodø, islands appear on the sea, and Bodø itself is built on a peninsula reaching into the water, with the Saltstraumen maelstrom just south of the city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯瓦蒂森同上。核实 2026-09-11
     travel: {
     "zh-CN":
       "特隆赫姆到博德飞约 55 分钟，同一时区。坐诺尔兰线火车要约 10 小时（跨北极圈那一刻列车上通常会广播）。" +
@@ -1869,6 +1947,7 @@ export const ROUTE_NARRATION: Record<
       " Over the mountains the land gradually opens and flattens into the Finnmarksvidda — a rolling inland tundra plateau covered in dwarf birch and lichen, long used by the Sámi for reindeer herding, with herds still making seasonal migrations across it today." +
       " Alta is at the edge of the plateau, at the end of a fjord, where the Alta river reaches the sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 芬马克高原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "特罗姆瑟到阿尔塔飞约 40 分钟，同一时区。这一带公路远、开车要好几小时，飞机是北极挪威城镇间常用的交通方式。" +
@@ -1894,6 +1973,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on north, the Geirangerfjord appears — a narrow fjord known for its sheer cliffs and waterfalls (the 'Seven Sisters' is its most famous stretch), followed by Romsdalen — a straight, deep valley carved by ice, its walls including one of Norway's highest vertical rock faces." +
       " Finally, over the Trollheimen mountains, the land eases and Trondheim appears at the head of its fjord.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 松恩峡湾约 200 km、约斯特达尔冰川欧洲大陆最大、盖朗厄尔七姊妹瀑布与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "卑尔根到特隆赫姆飞约 55 分钟，同一时区。这条线陆路要绕很远（渡轮加公路），飞机是最实际的方式，也是看西海岸峡湾全景最省时间的方法。" +
@@ -1918,6 +1998,7 @@ export const ROUTE_NARRATION: Record<
       " Then comes the Hardangerfjord — Norway's second-longest fjord, known for its dense orchards on both shores (a famous blossom season in spring), with the route inland toward the Hardangervidda visible deep in the fjord." +
       " Bergen sits between this cluster of fjords and the open sea, in a small bay ringed by seven mountains.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 福尔格冰川、哈当厄峡湾与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯塔万格到卑尔根飞约 40 分钟，同一时区。沿海公路也能到，但要经过多段渡轮和世界最长的海底公路隧道，开车耗时更长。" +
@@ -1931,6 +2012,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-nce": {
+    // study sources: 全四段（study/travel × 中英）: 凡尔登「常被称作欧洲最深的峡谷之一」（#264 前已修）；多姆山链与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞尼斯，从法国北部一路飞到地中海岸，横穿这个国家的几个主要地形单元。起飞后先越过巴黎盆地——一个巨大的沉积盆地，塞纳河及其支流在这里冲出层层叠叠的低丘和田野，法国近一半人口住在这一带。" +
@@ -1956,6 +2038,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-mrs": {
+    // study sources: 全四段（study/travel × 中英）: 罗讷河谷、卡马格三角洲与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞马赛，是法国最经典的南北纵贯航线之一，走的路线和高铁东南线大致平行。起飞后先越过巴黎盆地的农田和低丘，然后进入中央高原——法国最大的死火山群所在地，多姆山链的熔岩穹丘从空中很好辨认。" +
@@ -1979,6 +2062,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-tls": {
+    // study sources: 全四段（study/travel × 中英）: 塔恩峡谷、图卢兹「玫瑰之城」与空客总部与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞图卢兹，从法国北部飞到西南部的“玫瑰之城”，也是空客总部所在地。起飞后先越过巴黎盆地——塞纳河冲出的层叠丘陵和田野。" +
@@ -2002,6 +2086,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "cdg-bod": {
+    // study sources: 全四段（study/travel × 中英）: 波尔多「月亮港」、皮拉沙丘「欧洲最高沙丘」（未写会过期的高度）与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞波尔多，是法国两大沉积盆地之间的一条短航线。起飞后先越过巴黎盆地——一片被塞纳河及支流冲积、层层叠叠的低丘农田，法国近一半人口住在这个盆地里。" +
@@ -2026,6 +2111,7 @@ export const ROUTE_NARRATION: Record<
 
 
   "cdg-nte": {
+    // study sources: 全四段（study/travel × 中英）: 卢瓦尔河法国最长（约 1006 km）、卢瓦尔河谷列入 UNESCO 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "巴黎飞南特，沿着塞纳河流域和卢瓦尔河流域之间的分水岭往西南飞。起飞后先越过巴黎盆地西缘——农田和低丘缓缓向大西洋倾斜，田块比盆地中心更疏朗。" +
@@ -2049,6 +2135,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "lys-mrs": {
+    // study sources: 全四段（study/travel × 中英）: 韦科尔二战抵抗据点（简短史实）、阿尔克桥跨度约 59 m 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "里昂飞马赛，沿罗讷河谷南下，是一条很短却地貌丰富的线。起飞后不久，右侧（西侧）能看到韦科尔高原——一块被陡崖围住的石灰岩台地，二战期间是抵抗运动的据点之一（简短史实）。" +
@@ -2072,6 +2159,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "mrs-aja": {
+    // study sources: 全四段（study/travel × 中英）: 卡朗格、科西嘉二十多座峰超 2000 m、阿雅克肖为拿破仑出生地；未涉科西嘉现代政治。核实 2026-09-11
     study: {
     "zh-CN":
       "马赛飞阿雅克肖，从法国本土飞到地中海上的科西嘉岛。起飞后不久就能看到卡朗格——马赛和卡西斯之间一段石灰岩峡湾海岸，陡峭的白色崖壁直插进湛蓝的海水，是法国最上镜的海岸线之一。" +
@@ -2095,6 +2183,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "nce-aja": {
+    // study sources: 全四段（study/travel × 中英）: 钦托山 2706 m 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "尼斯飞阿雅克肖，是蔚蓝海岸和科西嘉岛之间最短的航线，几乎全程在地中海上空飞行。起飞后很快离开法国本土海岸，飞越一片开阔的蓝色海面——这段海域是利古里亚海的一部分，法国、意大利和科西嘉之间的三角海域。" +
@@ -2122,12 +2211,13 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "罗马飞米兰，是意大利最繁忙的国内航线，从中部飞到西北部的金融中心，纵贯整个亚平宁半岛北段。起飞后不久，脚下出现特拉西梅诺湖——意大利中部最大的湖之一，湖面很浅、几乎不结冰，公元前 217 年汉尼拔在湖边伏击过罗马军队（简短史实）。" +
       "继续北飞，地面变成托斯卡纳丘陵：一片被长期农耕塑造的波状缓丘，柏树、葡萄园和赭石色农舍是这一带的典型景观，从空中能看出田块随丘陵起伏排列的纹理。" +
-      "越过亚平宁山脉北段的余脉，地面骤然变得极其平坦——波河平原，意大利最大的连片平地，由波河及其支流冲积而成，是全国最重要的农业和工业区。米兰就在平原西部，主教座堂的尖塔从远处就能辨认。",
+      "越过亚平宁山脉北段的余脉，地面骤然变得极其平坦——波河平原，意大利最大的连片平地，由波河及其支流冲积而成，是全国主要的农业和工业区。米兰就在平原西部，主教座堂的尖塔从远处就能辨认。",
     "en-US":
       "Rome to Milan is Italy's busiest domestic route, from the centre to the north-western financial hub, running the length of the northern Apennine peninsula. Soon after take-off, Lake Trasimeno appears below — one of the largest lakes in central Italy, shallow and rarely freezing, where Hannibal ambushed a Roman army in 217 BC (a brief historical fact)." +
       " Flying on north, the land becomes the Tuscan hills: rolling country long shaped by farming, with cypress trees, vineyards and ochre farmhouses the typical scene, the fields' texture following the curves of the hills visible from the air." +
-      " Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's most important agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
+      " Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's main agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 特拉西梅诺湖、前 217 年汉尼拔伏击战、波河平原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到米兰飞约一小时十分，同一时区。高铁约三小时，很多商务旅客会选飞机、观光旅客更常选火车（沿途风景更好）。米兰比罗马更凉更潮湿，冬季易有雾霾。" +
@@ -2151,6 +2241,7 @@ export const ROUTE_NARRATION: Record<
       " Approaching the north, the land becomes the Po Valley — Italy's largest continuous plain, its square fields and criss-crossing irrigation channels clearly visible from the air, rivers winding across the flat ground." +
       " At the eastern end of the plain, silt carried down by the Po and other rivers has built the Venetian Lagoon on the Adriatic shore — a shallow-water area separated from the open sea by sandbars and breakwaters. Venice's hundred-plus small islands are scattered through the lagoon, and before landing you can clearly see the canal-laced city outline and the reverse-S curve of the Grand Canal.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 波河平原、威尼斯潟湖成因与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到威尼斯飞约一小时五分，同一时区。高铁约三个半小时。威尼斯机场在潟湖北岸大陆一侧，有机场巴士或水上巴士进城（约一小时），城内没有汽车、全靠步行和水上巴士。" +
@@ -2174,6 +2265,7 @@ export const ROUTE_NARRATION: Record<
       " Approaching Naples, the coastal area shows the Campi Flegrei — an active caldera geothermal area, with sulphurous vents and hot springs visible on the surface; the overall rise and fall of the ground (bradyseism) here is a natural phenomenon under continuous monitoring." +
       " Naples is on the bay east of the Campi Flegrei, and as the plane descends, the full cone of Mount Vesuvius across the bay is clearly visible.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 坎皮弗莱格瑞 bradyseism 为持续监测现象（INGV 口径），未写死警戒级别。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到那不勒斯飞约四十五分钟，同一时区。高铁约一小时到一个半小时，很多人也会选火车（市中心到市中心，往往更省心）。那不勒斯属地中海气候，比罗马略暖。" +
@@ -2197,6 +2289,7 @@ export const ROUTE_NARRATION: Record<
       " Over the southern Apennines, the land becomes the Pollino massif — home to southern Italy's largest national park, karst landforms interwoven with high mountain pasture." +
       " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大角峰 2912 m；埃特纳「不计高加索」、2024-09 约 3403 m（#264 前已修）；波利诺「南部最大」为本库「全国最大」的保守表述。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到卡塔尼亚飞约一小时零五分，同一时区。西西里没有高铁直连，跨海需要飞机或渡轮（火车可通过轮渡摆渡过海峡，但耗时很长）。卡塔尼亚比罗马更热、更干。" +
@@ -2220,6 +2313,7 @@ export const ROUTE_NARRATION: Record<
       " Sardinia has no young high mountains; the island's core is an old granite and schist basement, long eroded into low hills and plateaus, geologically quite different from the young Apennines of mainland Italy." +
       " Cagliari is on a bay on the island's south coast, and before landing you can see the hill of the Castello district and, below the city, the pink outline of the Molentargius saltwater lagoon (tinted pale pink by algae and salinity, a habitat for flamingos).",
     },
+    // travel sources: 全四段（study/travel × 中英）: 撒丁岛海西期花岗岩微陆块与本库一致；莫伦塔尔久斯潟湖因盐藻呈粉色、火烈鸟栖息地。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到卡利亚里飞约五十五分钟，同一时区。撒丁岛没有高铁连接本土，往返只能靠飞机或渡轮（渡轮约八小时，多为夜渡）。卡利亚里夏季炎热干燥，少雨。" +
@@ -2244,6 +2338,7 @@ export const ROUTE_NARRATION: Record<
       " Past the southern edge of the plain, the land rises into the Apennines: the range running the length of the peninsula, dividing Italy into east and west, with deep valleys and terraced farmland between the ridges." +
       " Approaching Naples, the coastal area shows the volcanic-geothermal Campi Flegrei, and the Bay of Naples and the cone of Vesuvius are clearly visible before landing.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 与本库意大利各条一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "米兰到那不勒斯飞约一小时二十分，同一时区。高铁约四个半小时，很多人会选飞机。米兰比那不勒斯更凉更潮湿，那不勒斯属典型地中海气候。" +
@@ -2267,6 +2362,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on south, the Aeolian (Lipari) Islands appear over the water: a chain of volcanic islands, including Stromboli, whose volcano has erupted in small bursts almost continuously — called the 'lighthouse of the Mediterranean', a pattern that has held for centuries and one of the longest continuously observed volcanoes in the world." +
       " Over open water onto Sicily, Catania sits at the foot of Mount Etna — the highest active volcano in Europe outside the Caucasus, measured at about 3,403 m in September 2024, with a year-round summit plume.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 维苏威 79 年、斯特龙博利「地中海灯塔」、埃特纳约 3403 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "那不勒斯到卡塔尼亚飞约四十五分钟，同一时区。也可坐渡轮（耗时更长）。两地都属地中海气候，卡塔尼亚更靠南、更热更干。" +
@@ -2290,6 +2386,7 @@ export const ROUTE_NARRATION: Record<
       " Over the eastern slope of the mountains, the land gradually becomes the Gargano Promontory: a limestone upland jutting from an otherwise flat coastline, covered in forest rare for southern Italy, historically nicknamed 'the spur of Italy' for its distinct shape." +
       " Approaching Bari, the Alta Murgia appears below — a karst limestone plateau, dry and stony on the surface with extensive caves and prehistoric sites underground. Bari sits on the Adriatic coast, on a small peninsula reaching into the sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 加尔加诺「意大利的马刺」、阿尔塔穆尔杰（本库译「上穆尔杰」，同一地物）喀斯特台地。核实 2026-09-11
     travel: {
     "zh-CN":
       "罗马到巴里飞约五十五分钟，同一时区。高铁约四小时，多数人会选飞机。巴里比罗马更干燥，夏季炎热。" +
@@ -2311,6 +2408,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Barcelona flies from the very centre of the Iberian Peninsula to its north-east coast, and along the way shows how this continental watershed range splits the peninsula's drainage. Soon after take-off the ground grows broken and hilly: the Sistema Ibérico, a discontinuous upland whose highest point, Pico de Urbión, is under 2,300 m yet is the source of the Duero — and the divide between the peninsula's Atlantic and Mediterranean drainage." +
       " Beyond the Sistema Ibérico the land opens out flat: the Ebro Basin, once a fully enclosed inland salt-lake basin in the Cenozoic until a river cut through the mountains to its east and connected it to the Mediterranean — today a lowland of irrigated farmland alternating with dry badland tablelands. Nearing Barcelona the tail of the Pyrenees sinks gradually into the coast, and the plane descends along the Catalan shoreline, the Mediterranean and the city skyline visible before landing.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 乌尔比昂峰约 2228 m、杜罗河源头与大西洋 / 地中海分水岭；埃布罗盆地由封闭湖变外流，与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到巴塞罗那飞约1小时25分钟，同一时区，是西班牙最繁忙的国内航线之一，也可以选择约2小时半的高铁（AVE）。两座城市气质迥异：马德里是内陆的政治与艺术中心，巴塞罗那是地中海边的港口与设计之都。巴塞罗那机场离市区约15公里，有机场大巴和火车。加泰罗尼亚语和西班牙语在巴塞罗那都是官方语言，路牌菜单常双语。圣家堂等高迪建筑门票务必提前网上订。多数国家公民短期旅游按申根区规定，入境不需另外签证。",
@@ -2328,9 +2426,10 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Seville flies south from the Meseta plateau into Andalusia, a classic route. Soon after take-off the land rises into a low, east–west range: the Sierra Morena, a fault scarp of old metamorphic rock — its north slope grading gently into the Meseta, its south slope dropping hundreds of metres abruptly, historically the natural barrier between Castile and Andalusia, its oak savanna the traditional landscape for free-range Iberian pigs." +
       " Past the Sierra Morena the land opens out flat: the Guadalquivir Valley, the only Iberian river valley navigable by ocean-going ships all the way inland, olive groves laid out in geometric grids across the hills, the Guadalquivir itself flowing broad and gentle toward Seville.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 莫雷纳山断层崖、伊比利亚黑猪牧场；瓜达尔基维尔「唯一可让远洋船直达内陆港的河谷」（塞维利亚港，2 级）。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马德里到塞维利亚飞约1小时5分钟，同一时区，也可以选择约2小时半的高铁。塞维利亚夏季（6–9月）是西班牙大陆最炎热的地区之一，常超40°C，春秋气候最宜人。机场离市区约10公里，有机场大巴，老城本身适合步行。塞维利亚是弗拉明戈的重要发源地，四月春会和圣周是全年最重要的节庆，届时住宿需提前很久订。多数国家公民短期旅游按申根区规定。",
+      "马德里到塞维利亚飞约1小时5分钟，同一时区，也可以选择约2小时半的高铁。塞维利亚夏季（6–9月）是西班牙大陆最炎热的地区之一，常超40°C，春秋气候最宜人。机场离市区约10公里，有机场大巴，老城本身适合步行。塞维利亚是弗拉明戈的重要发源地，四月春会和圣周是全年的重大节庆，届时住宿需提前很久订。多数国家公民短期旅游按申根区规定。",
     "en-US":
       "Madrid to Seville is about 1 hour 5 minutes, same time zone; the AVE high-speed train (about 2.5 hours) is another option. Seville summer (June–September) makes it one of the hottest places on mainland Spain, often over 40 °C; spring and autumn are the most pleasant. The airport is about 10 km from the centre with an airport bus, and the old town itself is walkable. Seville is a major birthplace of flamenco, and the April Fair and Holy Week are the year's biggest festivals — book accommodation well ahead for those. Citizens of most countries follow Schengen-area rules for short visits.",
     },
@@ -2345,6 +2444,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Granada crosses the southern half of the Meseta and two ranges before reaching Andalusia. After take-off comes the La Mancha Plain — an extremely flat limestone tableland where traditional white windmills still stand along the edges, made famous by Cervantes's Don Quixote. Then the flight crosses the Sierra Morena, the fault scarp dividing the Meseta from Andalusia." +
       " Once over Andalusia the land rises again, and the snow peaks of the Sierra Nevada appear ahead — Mulhacén at 3,479 m, the highest point on the Iberian Peninsula, yet only about 40 km from the Mediterranean coast; the plane descends along the foot of the range, with Granada sitting in the river valley plain right below the snow peaks.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 拉曼恰平原；穆拉森峰 3479 m 伊比利亚半岛最高点（UNESCO，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到格拉纳达飞约1小时10分钟，同一时区。格拉纳达以阿尔罕布拉宫闻名，门票必须提前数周在官网预订，旺季常常售罄。机场离市区约15公里，有机场大巴，老城坡道多、适合步行但需体力。冬季市区气候温和，但可看到内华达山脉的雪峰；夏季干热、昼夜温差大。多数国家公民短期旅游按申根区规定。",
@@ -2362,6 +2462,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Bilbao flies due north from the very centre of the Meseta plateau into the Cantabrian mountains. After take-off the land below is the Meseta Central, the largest ancient tableland on the Iberian Peninsula, covering nearly two-fifths of the country, wheat fields and pasture stretching to the horizon." +
       " Further north the land rises and grows broken, entering the Picos de Europa — the steepest stretch of the Cantabrian range, Carboniferous limestone uplifted above 2,600 m by mountain building and then carved by glaciers and karst dissolution into sharp peaks and countless caves. Past the mountains the plane descends along a lush green stretch of the northern coast, with Bilbao sitting in the valley at the mouth of the Nervión.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 梅塞塔约占五分之二；欧罗巴峰石炭纪石灰岩与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到毕尔巴鄂飞约1小时5分钟，同一时区。毕尔巴鄂属温带海洋性气候，比西班牙其他地区凉爽多雨，即使夏季也不算炎热，随身带雨具。机场离市区约12公里，有机场大巴。1997年古根海姆博物馆落成后，这座老工业城市转型为当代建筑地标，门票建议提前网上订。巴斯克语和西班牙语在本地都是官方语言，pintxos（巴斯克风味小吃）文化浓厚。多数国家公民短期旅游按申根区规定。",
@@ -2379,6 +2480,7 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Santiago de Compostela crosses the entire Meseta plateau on its way to Galicia in the north-west corner. After take-off the land below is the Meseta's northern sub-plateau, gently sloping and drained by the Duero. Near the Spain–Portugal border the Duero has cut a deep canyon — the Arribes del Duero, its walls near-vertical, a stark contrast with the gentle plateau upstream; most of this stretch is now dammed into a chain of long, narrow reservoirs." +
       " Beyond the canyon, heading further north-west, the land grows increasingly green and wet; before landing you can see Galicia's typical hills and farmland, with the towers of Santiago's cathedral marking the end of the pilgrimage route.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿里维斯—杜罗峡谷崖壁逾 400 m、梯级水库；梅塞塔北子高原。核实 2026-09-11
     travel: {
     "zh-CN":
       "马德里到圣地亚哥飞约1小时15分钟，同一时区。圣地亚哥是天主教朝圣地“圣雅各之路”的终点，主教座堂前常能看到刚完成数百公里徒步的朝圣者。加利西亚是西班牙最多雨的地区之一，常年需备雨具，夏季相对凉爽舒适。机场离市区约10公里，有机场大巴，老城很小、完全可步行。7月25日圣雅各节前后是宗教庆典高峰。多数国家公民短期旅游按申根区规定。",
@@ -2394,6 +2496,7 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Barcelona to Palma is a short hop across the sea, linking mainland Spain with the Balearic Islands. Soon after take-off the flight crosses the Mediterranean — blue water with the occasional cargo ship, no land in sight. Approaching Mallorca, a steep grey-white ridge appears on the horizon along the island's north-west coast: the Serra de Tramuntana, Mesozoic limestone uplifted by mountain building and then carved by centuries of rain into an extensive karst system, with almost no flat land between mountain and sea, terraces built tier upon tier up the steep slopes. The plane turns south-east along the foot of the range and descends over the Bay of Palma, its long beaches and the Gothic Palma Cathedral clearly visible.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 特拉蒙塔纳山中生代灰岩、梯田（UNESCO，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "巴塞罗那到帕尔马飞约50分钟，同一时区，是西班牙最繁忙的短途航线之一。马略卡岛地中海气候，夏季炎热干燥、是欧洲度假旺季，价格高、人多；5–6月和9月相对舒适清净；冬季温和，适合徒步和文化旅游。机场离市区约8公里，有公交直达。加泰罗尼亚语（马略卡方言）和西班牙语都是官方语言。多数国家公民短期旅游按申根区规定。",
@@ -2411,11 +2514,12 @@ export const ROUTE_NARRATION: Record<
       "Madrid to Tenerife is Spain's longest domestic route, flying south-west from the centre of the Iberian Peninsula across the Atlantic to the Canary Islands off north-west Africa. After take-off comes the Guadalquivir Valley, Andalusia's largest expanse of farmland, olive groves covering the hills; then the Doñana wetland at the Guadalquivir's mouth, a patchwork of seasonal marsh and shifting dunes, an important European bird habitat." +
       " Past the Spanish coast the flight crosses open Atlantic for a long stretch with no land in sight. Approaching Tenerife, an almost perfectly symmetrical volcanic cone appears in the middle of the sea: Teide, 3,715 m, the highest point in all of Spain — measured from its base on the Atlantic sea floor, the third-tallest volcanic structure on Earth after Hawaii's two giants — and the plane descends around the mountain to land.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 泰德峰 3715 m、从海底算起世界第三高火山体，未涉破火山口成因之争；时区原写「同一时区」，改为晚 1 小时。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马德里到特内里费飞约2小时50分钟，两地同一时区。加那利群岛虽靠近非洲西北沿海，但整体属西班牙领土、通用欧元，气候常年温和，是欧洲人的冬季度假热门地。岛上有南北两座机场，特内里费北机场离圣克鲁斯市区较近。泰德国家公园缆车受天气影响，出发前查运营状态；山区昼夜温差大、紫外线强。多数国家公民短期旅游按申根区规定。",
+      "马德里到特内里费飞约2小时50分钟，特内里费比马德里晚1小时（加那利群岛用西欧时间）。加那利群岛虽靠近非洲西北沿海，但整体属西班牙领土、通用欧元，气候常年温和，是欧洲人的冬季度假热门地。岛上有南北两座机场，特内里费北机场离圣克鲁斯市区较近。泰德国家公园缆车受天气影响，出发前查运营状态；山区昼夜温差大、紫外线强。多数国家公民短期旅游按申根区规定。",
     "en-US":
-      "Madrid to Tenerife is about 2 hours 50 minutes, same time zone at both ends. The Canary Islands sit near north-west Africa but are Spanish territory throughout, using the euro, with a mild year-round climate that makes them a popular winter destination for Europeans. The island has two airports, north and south; Tenerife North is closer to Santa Cruz. The Teide summit cable car is weather-dependent, so check its status before heading up; the mountains have a large day-to-night swing and strong UV. Citizens of most countries follow Schengen-area rules for short visits.",
+      "Madrid to Tenerife is about 2 hours 50 minutes; Tenerife is one hour behind Madrid (the Canary Islands use Western European Time). The Canary Islands sit near north-west Africa but are Spanish territory throughout, using the euro, with a mild year-round climate that makes them a popular winter destination for Europeans. The island has two airports, north and south; Tenerife North is closer to Santa Cruz. The Teide summit cable car is weather-dependent, so check its status before heading up; the mountains have a large day-to-night swing and strong UV. Citizens of most countries follow Schengen-area rules for short visits.",
     },
   },
 
@@ -2428,6 +2532,7 @@ export const ROUTE_NARRATION: Record<
       "Barcelona to Málaga runs far south along the Mediterranean coast, from Catalonia all the way to the Costa del Sol in Andalusia. Most of the flight follows the coastline south, over the Mediterranean coastal plains of Valencia and Murcia." +
       " Nearing eastern Andalusia the coast suddenly turns steep and rugged: Cabo de Gata, the only stretch of coast on the Iberian Peninsula made entirely of volcanic rock, built up by submarine eruptions about 13 million years ago — only about 5% of the whole volcanic body is above water today, the rest still submerged beneath the Alboran Sea, its columnar joints and lava cliffs clearly visible. Past Cabo de Gata the plane continues west and descends along the Costa del Sol into Málaga.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 加塔角约 1300 万年前海底火山、约 5% 露出海面，在本库 14–7.5 Ma 区间内。核实 2026-09-11
     travel: {
     "zh-CN":
       "巴塞罗那到马拉加飞约1小时35分钟，同一时区。马拉加地中海气候，全年温和，冬季平均气温仍在15°C以上，是欧洲少有的冬季晒太阳目的地；盛夏沿海拥挤、价格上涨。机场离市区约8公里，有近郊火车直达市中心。马拉加是毕加索的出生地，毕加索博物馆和故居值得一看。多数国家公民短期旅游按申根区规定。",
@@ -2437,6 +2542,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ber-muc": {
+    // study sources: 全四段（study/travel × 中英）: 图林根森林约 70 km、海西造山与本库一致；慕尼黑机场原写「有高铁直达」，改为 S-Bahn 直达、高铁需总站换乘。核实 2026-09-11
     study: {
     "zh-CN":
       "柏林飞慕尼黑，是从北德平原一路南下、飞进巴伐利亚腹地的航线。起飞后不久，脚下还是柏林周边平坦的湖泊与农田；越往南，地面渐渐隆起，进入图林根盆地南缘一条连绵的深绿色山脊——图林根森林，一条走向西北—东南、由海西造山运动形成的古老山地，长约70公里，山脊浑圆、轮廓清晰，与北边平缓的盆地农田形成鲜明对比。越过图林根森林，飞机继续南下，进入巴伐利亚的丘陵和农田，慕尼黑就坐落在伊萨尔河畔、巴伐利亚阿尔卑斯山北麓。",
@@ -2445,7 +2551,7 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "柏林到慕尼黑飞约1小时5分钟，同一时区，是德国最繁忙的国内航线之一，也可以选择约4小时的城际快车（ICE）。两座城市气质迥异：柏林是充满当代艺术气息的首都，慕尼黑则保留着传统巴伐利亚风情。慕尼黑机场离市区约30公里，有高铁直达。十月啤酒节期间（9月中旬至10月初）往返两地的航班和住宿都很紧张，建议提前订。多数国家公民短期旅游按申根区规定。",
+      "柏林到慕尼黑飞约1小时5分钟，同一时区，是德国最繁忙的国内航线之一，也可以选择约4小时的城际快车（ICE）。两座城市气质迥异：柏林是充满当代艺术气息的首都，慕尼黑则保留着传统巴伐利亚风情。慕尼黑机场离市区约30公里，有城铁（S-Bahn）直达市区，换乘长途高铁需到慕尼黑火车总站。十月啤酒节期间（9月中旬至10月初）往返两地的航班和住宿都很紧张，建议提前订。多数国家公民短期旅游按申根区规定。",
     "en-US":
       "Berlin to Munich is about 1 hour 5 minutes, same time zone, one of Germany's busiest domestic routes — the ICE high-speed train (about 4 hours) is another option. The two cities feel very different: Berlin is the capital with a strong contemporary-art scene, Munich keeps a traditional Bavarian character. Munich Airport is about 30 km from the centre with a rail line running directly there. During Oktoberfest (mid-September to early October) flights and accommodation between the two cities get tight — book ahead. Citizens of most countries follow Schengen-area rules for short visits.",
     },
@@ -2453,6 +2559,7 @@ export const ROUTE_NARRATION: Record<
 
 
   "ber-cgn": {
+    // study sources: 全四段（study/travel × 中英）: 布罗肯峰年均起雾近 300 天、女巫传说以「民间传说」限定、条顿堡战役地点「据信」与本库一致；科隆 / 波恩机场有 ICE 与 S-Bahn。核实 2026-09-11
     study: {
     "zh-CN":
       "柏林飞科隆，是一趟横穿德国中部、飞越两片古老山地的航线。起飞后不久，地面隆起成一片孤立耸立在平原上的深色森林山地——哈茨山，主峰布罗肯峰终年云雾缭绕，是德国北部平原上唯一能看到高山气候的地方，古老的花岗岩山顶在民间传说中长期被认为是女巫聚会之地。越过哈茨山，飞机继续西行，进入条顿堡森林——一条由多列平行山脊组成的单面山地带，公元9年古罗马与日耳曼部落的著名战役据信就发生在这一带。翻过条顿堡森林后，飞机沿莱茵河下降，抵达以哥特式大教堂闻名的科隆。",
@@ -2468,6 +2575,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "muc-ham": {
+    // study sources: 全四段（study/travel × 中英）: 北德平原第四纪冰川地貌与本库一致；汉堡机场原写「地铁直达」，改为 S-Bahn。核实 2026-09-11
     study: {
     "zh-CN":
       "慕尼黑飞汉堡，是一趟纵贯德国南北的航线，从巴伐利亚阿尔卑斯山脚下一路飞到北海之滨。起飞后先经过图林根森林的连绵山脊——一条由海西造山运动留下的古老山地，随后是孤立耸立在平原上的哈茨山，布罗肯峰终年云雾缭绕，年均起雾天数近300天。越过哈茨山，地面逐渐变得平坦开阔，进入北德平原——第四纪冰川反复塑造留下的低地，终碛垄和冰蚀小湖星罗棋布。飞机全程几乎看遍了德国从南到北的地形变化，最终降落在易北河畔的汉堡。",
@@ -2476,13 +2584,14 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "慕尼黑到汉堡飞约1小时15分钟，同一时区，是德国南北向最长的国内航线之一，也可以选择约6小时的城际快车。两地气候和文化都有明显差异：慕尼黑属大陆性气候、巴伐利亚传统浓厚，汉堡属温带海洋性气候、港口贸易气息浓厚。汉堡机场离市区约10公里，有地铁直达市中心。多数国家公民短期旅游按申根区规定。",
+      "慕尼黑到汉堡飞约1小时15分钟，同一时区，是德国南北向最长的国内航线之一，也可以选择约6小时的城际快车。两地气候和文化都有明显差异：慕尼黑属大陆性气候、巴伐利亚传统浓厚，汉堡属温带海洋性气候、港口贸易气息浓厚。汉堡机场离市区约10公里，有城铁（S-Bahn）直达市中心。多数国家公民短期旅游按申根区规定。",
     "en-US":
-      "Munich to Hamburg is about 1 hour 15 minutes, same time zone, one of Germany's longest north–south domestic routes — the ICE high-speed train (about 6 hours) is another option. The climate and culture differ noticeably between the two: Munich has a continental climate and strong Bavarian traditions, while Hamburg has a temperate maritime climate and a strong port-trade character. Hamburg Airport is about 10 km from the centre with a metro line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
+      "Munich to Hamburg is about 1 hour 15 minutes, same time zone, one of Germany's longest north–south domestic routes — the ICE high-speed train (about 6 hours) is another option. The climate and culture differ noticeably between the two: Munich has a continental climate and strong Bavarian traditions, while Hamburg has a temperate maritime climate and a strong port-trade character. Hamburg Airport is about 10 km from the centre with an S-Bahn line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
     },
   },
 
   "fra-muc": {
+    // study sources: 全四段（study/travel × 中英）: 施瓦本汝拉阿尔布陡崖近 180 km、索伦霍芬始祖鸟化石与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "法兰克福飞慕尼黑，是一趟横穿德国西南部两片侏罗纪石灰岩台地的航线。起飞后不久，地面出现一片明显的地形分界——施瓦本汝拉山，西北边缘一道连续近180公里的陡崖（阿尔布陡崖）俯瞰内卡河谷，台地内部喀斯特溶洞密布。越过施瓦本汝拉山，飞机进入弗兰肯汝拉山——同一套侏罗纪石灰岩台地向东北的延续，索伦霍芬一带出产的精细石灰岩因保存了包括始祖鸟在内的大量化石而闻名。翻过弗兰肯汝拉山后，飞机继续南下，抵达巴伐利亚阿尔卑斯山北麓的慕尼黑。",
@@ -2498,6 +2607,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "fra-drs": {
+    // study sources: 全四段（study/travel × 中英）: 瓦塞尔库佩 950 m、德国滑翔运动发源地与本库一致；德累斯顿机场 S-Bahn 直达。核实 2026-09-11
     study: {
     "zh-CN":
       "法兰克福飞德累斯顿，是一趟穿越德国中部几片古老山地的航线。起飞后先经过罗恩山——一座早已停止活动的死火山遗迹，玄武质喷发留下的高地边缘散布着许多孤立火山颈，核心区域“高罗恩”最高点瓦塞尔库佩峰海拔950米，因视野开阔、气流稳定，是德国滑翔机运动的发源地。越过罗恩山，飞机进入图林根森林——一条走向西北—东南、山脊浑圆的古老山地，是海西造山运动留下的痕迹。翻过图林根森林后，飞机继续东行，降落在易北河畔、以巴洛克老城闻名的德累斯顿。",
@@ -2513,6 +2623,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "muc-drs": {
+    // study sources: 全四段（study/travel × 中英）: 厄尔士山近 800 年采矿、2019 年跨德捷列入 UNESCO 与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "慕尼黑飞德累斯顿，是一趟穿越厄尔士山脉的短途航线。起飞后不久，脚下出现一片浑圆低矮的森林山地——厄尔士山脉，德国萨克森州与捷克交界一带的古老山脉，因近800年几乎不间断的银、锡、钴矿开采史而得名“矿石山”，山间至今保留着传统采矿聚落和精心规划的水利系统，2019年这片矿业文化景观跨德国、捷克两国列入世界遗产。越过厄尔士山脉，飞机继续北飞，降落在易北河畔的德累斯顿——厄尔士山脉正是这座巴洛克名城通往南方的天然屏障。",
@@ -2528,6 +2639,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "fra-ham": {
+    // study sources: 全四段（study/travel × 中英）: 福格尔斯山与本库一致；汉堡机场原写「地铁直达」，改为 S-Bahn。核实 2026-09-11
     study: {
     "zh-CN":
       "法兰克福飞汉堡，是一趟从德国中部飞向北海之滨的航线。起飞后不久，脚下出现一片宽缓起伏的高地——福格尔斯山，中欧面积最大的连片火山岩地貌，覆盖约2500平方公里，约1900万年前由无数次温和的玄武岩喷发层层堆叠而成，是德国唯一的盾状火山地貌，山体从中心高原向外呈阶梯状台地下降。越过福格尔斯山，地面逐渐变得平坦，进入北德平原——第四纪冰川反复塑造留下的低地，终碛垄和冰蚀小湖星罗棋布。飞机沿着这片平原一路向北，降落在易北河畔的汉堡。",
@@ -2536,21 +2648,22 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "法兰克福到汉堡飞约1小时5分钟，同一时区，也可以选择约3小时40分钟的城际快车。法兰克福机场是德国最大的国际枢纽，很多国际旅客会经这里转机。汉堡属温带海洋性气候，全年温和多雨，随身备雨具。机场离市区约10公里，有地铁直达市中心。多数国家公民短期旅游按申根区规定。",
+      "法兰克福到汉堡飞约1小时5分钟，同一时区，也可以选择约3小时40分钟的城际快车。法兰克福机场是德国最大的国际枢纽，很多国际旅客会经这里转机。汉堡属温带海洋性气候，全年温和多雨，随身备雨具。机场离市区约10公里，有城铁（S-Bahn）直达市中心。多数国家公民短期旅游按申根区规定。",
     "en-US":
-      "Frankfurt to Hamburg is about 1 hour 5 minutes, same time zone; the ICE high-speed train (about 3 hours 40 minutes) is another option. Frankfurt Airport is Germany's largest international hub, and many international travellers connect through here. Hamburg has a temperate maritime climate, mild and rainy year-round — carry rain gear. The airport is about 10 km from the centre with a metro line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
+      "Frankfurt to Hamburg is about 1 hour 5 minutes, same time zone; the ICE high-speed train (about 3 hours 40 minutes) is another option. Frankfurt Airport is Germany's largest international hub, and many international travellers connect through here. Hamburg has a temperate maritime climate, mild and rainy year-round — carry rain gear. The airport is about 10 km from the centre with an S-Bahn line running directly there. Citizens of most countries follow Schengen-area rules for short visits.",
     },
   },
 
   "ath-skg": {
     study: {
     "zh-CN":
-      "雅典飞塞萨洛尼基是希腊国内最繁忙的航线，从阿提卡一路向北飞越希腊本土中部，抵达马其顿地区。起飞后不久，脚下展开一片开阔的农田——色萨利平原，希腊面积最大、最重要的农业区，由皮尼奥斯河冲积而成，四周被品都斯山脉、奥特里斯山、皮利翁山与奥林匹斯山环绕。" +
+      "雅典飞塞萨洛尼基是希腊国内最繁忙的航线，从阿提卡一路向北飞越希腊本土中部，抵达马其顿地区。起飞后不久，脚下展开一片开阔的农田——色萨利平原，希腊面积最大的农业区，由皮尼奥斯河冲积而成，四周被品都斯山脉、奥特里斯山、皮利翁山与奥林匹斯山环绕。" +
       "飞机继续向北，一座临海耸立的雪峰渐渐出现在右侧——奥林匹斯山，希腊全境最高点，主峰米蒂卡斯海拔2917米，古希腊神话中被认为是众神的居所。越过奥林匹斯山，飞机沿爱琴海西岸继续北上，降落在塞萨洛尼基的萨洛尼卡湾畔。",
     "en-US":
-      "Athens to Thessaloniki is Greece's busiest domestic route, flying north across the centre of the Greek mainland from Attica into Macedonia. Soon after take-off, open farmland unfolds below — the Thessalian Plain, Greece's largest and most important agricultural region, built by the Pineios River and ringed by the Pindus range, Mount Othrys, Mount Pelion and Mount Olympus." +
+      "Athens to Thessaloniki is Greece's busiest domestic route, flying north across the centre of the Greek mainland from Attica into Macedonia. Soon after take-off, open farmland unfolds below — the Thessalian Plain, Greece's largest agricultural region, built by the Pineios River and ringed by the Pindus range, Mount Othrys, Mount Pelion and Mount Olympus." +
       " Continuing north, a snow-capped peak rising straight from the sea appears to the right — Mount Olympus, the highest point in Greece, its summit Mytikas reaching 2,917 m and widely held in Greek mythology to be the home of the gods. Past Olympus the flight continues north along the Aegean coast, descending into Thessaloniki on the Thermaic Gulf.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥林匹斯米蒂卡斯峰 2917 m（2023 年 GPS 精测）与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到塞萨洛尼基飞约50分钟，两地同一时区，也可选择约4小时的城际列车。这是爱琴海航空最繁忙的国内航线之一，旺季班次密集，建议提前订票。塞萨洛尼基机场离市区约16公里，有公交连接市中心。塞萨洛尼基是希腊北部的门户，适合作为探索迈泰奥拉、哈尔基季基半岛及色萨利地区的中转站。希腊属申根区，多数国家公民短期旅游按申根区规定执行，货币为欧元，电压230V欧标两圆脚插头。",
@@ -2568,6 +2681,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Heraklion crosses the southern Aegean to reach Crete, Greece's largest island. After take-off the flight heads south over the Cyclades, first passing Milos — a volcanic island known for its colourful rock layers and Neolithic obsidian trade, its Sarakiniko coast carved by wave and wind into a moon-like landscape of white pumice." +
       " Next comes the Santorini caldera, formed when a massive Late Bronze Age eruption around 1600 BCE collapsed the island's centre; towns such as Fira and Oia sit on cliffs about 300 m above the caldera. The flight continues south across the Cretan Sea to land at Heraklion on Crete's north coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 米洛斯火山成因与黑曜岩贸易、圣托里尼约公元前 1600 年喷发与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到伊拉克利翁飞约50分钟，两地同一时区，夏季旺季每天有多班航班，也可选择约9-10小时的夜间渡轮。伊拉克利翁机场离市区约5公里，有公交与出租车连接。克里特岛面积较大，从伊拉克利翁前往哈尼亚、拉西提高原等地建议租车或参加当地一日游。希腊属申根区，多数国家公民短期旅游按申根区规定执行，货币为欧元。",
@@ -2585,6 +2699,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Chania crosses the Cretan Sea to reach western Crete. Soon after take-off the flight leaves the Attica coast and heads out over the open Cretan Sea, the stretch of the southern Aegean between the Cyclades and Crete. For most of the crossing there is little but blue water below, with occasional small islands scattered in the distance." +
       " As Crete's north coast approaches, the Bay of Chania comes into view and the plane descends along the coastline; just west of the airport lies the Venetian-era old harbour of Chania, gateway to the White Mountains of western Crete.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 萨马利亚峡谷「欧洲最长的峡谷之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到哈尼亚飞约45分钟，两地同一时区，夏季旺季航班密集。哈尼亚机场离老城约14公里，有公交与出租车连接。哈尼亚是探索克里特岛西部与白山地区的门户，也是徒步萨马利亚峡谷的理想落脚点，峡谷通常5月至10月开放，具体以国家公园当年公告为准。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2602,6 +2717,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Rhodes Town crosses the southern Aegean along the South Aegean Volcanic Arc. After take-off the flight heads south-east over the Cyclades, first passing Milos, a colourful volcanic island known for its obsidian trade and the pumice landscape of the Sarakiniko coast." +
       " Continuing east, a near-circular islet appears below — Nisyros, a dormant stratovolcano whose central Stefanos crater still hosts active fumaroles and geothermal activity. The flight carries on south-east over the Dodecanese to land at Rhodes, home to one of Europe's best-preserved medieval walled towns.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 尼西罗斯斯特凡诺斯火山口喷气孔（地质公园官网，1 级）；罗德城中世纪城防「之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到罗德城飞约55分钟，两地同一时区，夏季旺季每天有多班航班。罗德城机场离古城约14公里，有公交与出租车连接。罗德岛是希腊阳光最充足的地区之一，中世纪古城内街巷狭窄，不通行车辆，建议以步行方式游览，穿舒适的鞋。希腊属申根区，多数国家公民短期旅游按申根区规定执行，货币为欧元。",
@@ -2619,6 +2735,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Corfu Town crosses mainland Greece from the Aegean side to the Ionian Sea. Soon after take-off a long, narrow inlet appears below — the Gulf of Corinth, essentially an active rift graben whose two shores continue to pull apart, spanned at its narrowest point by the cable-stayed bridge at Rio-Antirrio." +
       " Continuing north-west, an undulating limestone ridge appears below — the Pindus range, running the length of western mainland Greece and known as the country's spine, a key climatic and hydrological divide. Past the Pindus the flight crosses onto the Ionian Sea, landing on Corfu, an island kept lushly green by abundant rainfall.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 科林斯湾活动地堑、里翁—安蒂里翁大桥、品都斯与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到科孚城飞约65分钟，两地同一时区。科孚城机场离老城约3公里，有公交与出租车连接。科孚岛降水明显多于爱琴海诸岛，植被终年葱郁，气候相对湿润，游览老城建议带一把折叠伞。科孚城也是前往意大利、阿尔巴尼亚渡轮航线的港口城市。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2636,6 +2753,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Ioannina flies from Attica into Epirus in north-western Greece. Soon after take-off the Gulf of Corinth appears below, a long, narrow inlet formed by crustal extension. Continuing north-west, a cluster of steep, isolated sandstone pinnacles appears at the edge of the Thessalian Plain — Meteora, shaped roughly 60 million years ago from ancient river-delta sediment by regional uplift and differential erosion, its summits crowned with Orthodox monasteries built from the 14th century onward." +
       " Past Meteora the flight enters the Pindus mountains, landing at Ioannina on the shore of Lake Pamvotis, gateway to north-western Greece's mountain country.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 迈泰奥拉约 6000 万年前三角洲沉积、14 世纪起修道院与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到约阿尼纳飞约50分钟，两地同一时区，也可选择约6小时的长途巴士。约阿尼纳机场离市区约5公里，有出租车连接市中心。约阿尼纳是探索维科斯峡谷等品都斯山区的理想基地，山区冬季寒冷多雪，部分道路可能因积雪受影响，出行前建议查询路况与天气预报。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2653,6 +2771,7 @@ export const ROUTE_NARRATION: Record<
       "Athens to Santorini is one of Greece's most popular island routes. After take-off the flight heads south-east across the Aegean over the Cyclades, passing Milos, a volcanic island whose colourful rock layers and moon-like Sarakiniko coast are its clearest markers." +
       " Continuing south-east, a crescent-shaped island gradually comes into view — Santorini, its centre collapsed by a massive Late Bronze Age eruption around 1600 BCE into the caldera seen today, with towns such as Fira and Oia perched on cliffs about 300 m above it; the plane lands at the airport on the island's eastern side.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 圣托里尼同 ath-her。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅典到圣托里尼飞约45分钟，两地同一时区，夏季旺季每天有多班航班，也可选择约7-8小时的渡轮。圣托里尼机场离费拉约7公里，岛内交通主要靠公交、出租车或租车。旺季住宿价格较高，建议提前预订；冬季部分旅游设施季节性歇业，渡轮班次也相应减少。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2666,15 +2785,16 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "里斯本飞法鲁，从首都飞到南部阿尔加维海岸，横穿整个葡萄牙本土南部。起飞后不久，脚下出现阿拉比达海岸——塞图巴尔半岛一段石灰岩山地直插大西洋形成的陡峭海岸，山海高差极大。" +
-      "继续南飞，进入阿连特茹平原：一片一望无际、微微起伏的开阔地形，占葡萄牙国土约三分之一，大片间距均匀的橡树点缀其间，这种稀树草原式的农林系统已被联合国粮农组织列为全球重要农业文化遗产。" +
+      "继续南飞，进入阿连特茹平原：一片一望无际、微微起伏的开阔地形，占葡萄牙国土约三分之一，大片间距均匀的橡树点缀其间，其中塞尔帕丘陵一带的蒙塔多农林系统已于2025年被联合国粮农组织列为全球重要农业文化遗产。" +
       "平原南端，一片宽阔的蓝色水面出现——阿尔克瓦水库，西欧最大的人工湖，由拦截瓜迪亚纳河而成。" +
       "越过水库，地面骤然变化，进入阿尔加维海岸：金黄色的石灰岩崖壁被海浪侵蚀出连串的海蚀拱和海蚀柱，法鲁就在这段海岸旁、紧邻福尔摩沙潟湖国家公园。",
     "en-US":
       "Lisbon to Faro flies from the capital to the southern Algarve coast, crossing the whole southern half of mainland Portugal. Soon after take-off, the Arrábida Coast appears below — a stretch of limestone mountain on the Setúbal Peninsula dropping steeply into the Atlantic, with an extreme land-to-sea elevation change." +
-      " Flying on south, you enter the Alentejo Plain: a vast, gently rolling open landscape covering about a third of Portugal, dotted with evenly spaced oaks in a savanna-style agroforestry system that the UN Food and Agriculture Organization has designated a Globally Important Agricultural Heritage System." +
+      " Flying on south, you enter the Alentejo Plain: a vast, gently rolling open landscape covering about a third of Portugal, dotted with evenly spaced oaks in a savanna-style agroforestry system, part of which — the montado of the Serpa hills — the UN Food and Agriculture Organization designated a Globally Important Agricultural Heritage System in 2025." +
       " At the plain's southern end, a broad blue expanse of water appears — the Alqueva Reservoir, the largest artificial lake in Western Europe, formed by damming the Guadiana River." +
       " Past the reservoir the land changes abruptly into the Algarve Coast: golden limestone cliffs carved by the waves into a chain of sea arches and stacks, with Faro right beside this stretch of coast, next to Ria Formosa Natural Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿连特茹约占国土三分之一；GIAHS 原被泛化到整片平原，按本库改为塞尔帕丘陵蒙塔多（2025）。核实 2026-09-11
     travel: {
     "zh-CN":
       "里斯本到法鲁飞约55分钟，同一时区。也可坐火车（约3小时）或长途巴士。法鲁属地中海气候，是葡萄牙日照最多的地区之一，夏季炎热干燥。" +
@@ -2698,6 +2818,7 @@ export const ROUTE_NARRATION: Record<
       " Over the continental shelf the plane crosses open Atlantic water, and after a little over an hour the outline of Madeira Island rises from the sea — a high ridge built up by repeated volcanic eruptions, its highest point, Pico Ruivo, at 1,862 m, its slopes covered in dark-green primeval laurel forest." +
       " Funchal sits in a bay on Madeira's south coast, the city climbing the hillside from the sea.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿拉比达、维森特角、皮库鲁伊武峰 1862 m 与本库一致；马德拉与本土同时区。核实 2026-09-11
     travel: {
     "zh-CN":
       "里斯本到丰沙尔飞约1小时50分，同一时区。马德拉机场跑道建在悬崖边、进近有一定挑战性，是经验丰富的机组执飞。马德拉气候常年温和，被称为“大西洋的花园”。" +
@@ -2713,7 +2834,7 @@ export const ROUTE_NARRATION: Record<
   "lis-pdl": {
     study: {
     "zh-CN":
-      "里斯本飞蓬塔德尔加达，从欧洲大陆一路飞到大西洋中脊上的亚速尔群岛，全程约1500公里，绝大部分时间在开阔的大西洋海面上飞行，是葡萄牙国内最长的航线之一，也是唯一一条完全跨越大洋的国内航线。" +
+      "里斯本飞蓬塔德尔加达，从欧洲大陆一路飞到大西洋中脊上的亚速尔群岛，全程约1500公里，绝大部分时间在开阔的大西洋海面上飞行，是葡萄牙国内最长的航线之一。" +
       "起飞后很快就看不到陆地，飞机沿北大西洋暖流经过的开阔洋面向西飞行，脚下长时间只有深蓝色的海水，偶尔可见货轮的航迹。" +
       "飞行约两个半小时后，圣米格尔岛的轮廓才出现在海面上，岛屿西端一座直径约5公里的火山破火山口清晰可见——七城破火山口，口底一大一小两个相连的湖泊因光线折射常呈现一蓝一绿的对比色，是亚速尔群岛最容易辨认的地貌之一。" +
       "蓬塔德尔加达就在圣米格尔岛南岸，是探索这座活跃火山岛屿的门户，城市不大，海滨广场的三座黑白拱门是标志性地标。",
@@ -2722,6 +2843,7 @@ export const ROUTE_NARRATION: Record<
       " After about two and a half hours, the outline of São Miguel Island appears over the water, and a volcanic caldera about 5 km across at the island's western end comes into clear view — Sete Cidades, whose two connected lakes on the floor, one large and one small, often show a striking blue-and-green colour contrast from light refraction." +
       " Ponta Delgada is on the south coast of São Miguel, the gateway to exploring this active volcanic island.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 七城破火山口与本库一致；亚速尔比本土晚 1 小时；删去站不住的「唯一一条完全跨越大洋的国内航线」。核实 2026-09-11
     travel: {
     "zh-CN":
       "里斯本到蓬塔德尔加达飞约2小时40分，落地把时钟往回拨1小时（亚速尔比本土晚一个时区）。亚速尔群岛常年温和多雨，天气变化快。" +
@@ -2744,6 +2866,7 @@ export const ROUTE_NARRATION: Record<
       "Porto to Funchal flies from northern Portugal to the Madeira archipelago in the Atlantic, the longest of the routes to Madeira. Soon after take-off, the Douro Valley appears below — the terraced vineyard region on both banks of the middle Douro in northern Portugal, its hand-built stone terraces about 2,000 years old, the source of Port wine." +
       " Past the coast the plane crosses open Atlantic water, and only after a long stretch does Madeira come into view — an island built up by volcanic eruptions into a high ridge, its slopes covered in dark-green primeval laurel forest. Funchal sits in a bay on the island's south coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 杜罗河谷梯田（UNESCO，1 级）与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "波尔图到丰沙尔飞约2小时10分，同一时区。这是较长的一条岛际航线，建议带些机上娱乐或读物。波尔图凉爽多雨，马德拉常年温和，落地后气候会有明显变化。" +
@@ -2766,6 +2889,7 @@ export const ROUTE_NARRATION: Record<
       "Porto to Ponta Delgada flies from northern Portugal all the way to the Azores, one of the longest domestic routes in Portugal. After take-off you pass the terraced vineyards of the Douro Valley, then cross the continental shelf into open Atlantic water." +
       " After a long stretch over the ocean, the outline of São Miguel Island appears, with the Sete Cidades caldera at its western end clearly visible — its two connected lakes showing a blue-green colour contrast from light refraction. Ponta Delgada is on the island's south coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 「全程超过 1700 公里、飞越海洋时间最长」与同批自洽。核实 2026-09-11
     travel: {
     "zh-CN":
       "波尔图到蓬塔德尔加达飞约2小时55分，落地把时钟往回拨1小时。这是较长的一条航线，建议提前查好登机口和转机信息。亚速尔群岛常年温和多雨，天气变化快。" +
@@ -2789,6 +2913,7 @@ export const ROUTE_NARRATION: Record<
       " Flying on south, the land becomes Serra de Aire e Candeeiros: a pale grey Jurassic limestone karst upland, its surface dense with pinnacles and sinkholes, with an extensive cave system underground." +
       " Beyond the upland you enter the Alentejo Plain — an endless expanse of oak savanna covering about a third of Portugal. Near the end the land changes abruptly, and the golden Algarve coast comes into view, with Faro right beside it.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 蒙德古河、艾雷—坎迪埃罗斯侏罗纪灰岩、阿连特茹约三分之一与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "波尔图到法鲁飞约1小时15分，同一时区。这条南北纵贯线是葡萄牙本土最长的国内航段，比坐火车（约6-7小时、需换乘）快得多。波尔图凉爽多雨，法鲁炎热干燥，两地气候差异明显。" +
@@ -2812,6 +2937,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Vienna to Innsbruck crosses the whole of Austria from east to west, from the Vienna Basin over the Alps to the mountain city of Innsbruck in Tyrol. Soon after take-off, the broad, flat expanse of the Vienna Basin unfolds below — a young tectonic subsidence basin between the Alps and the Carpathians." +
       " The flight continues west into the Wienerwald, the easternmost limestone hill range where the Alps taper off, densely forested throughout. Beyond the Wienerwald the plane crosses a wide swath of central Austrian mountains and passes over the Dachstein, where the year-round snow of the Hallstatt Glacier is clearly visible against the pale grey karst massif below. Continuing west, the flight skirts the steep limestone cliffs of the Karwendel before descending along the Inn Valley into Innsbruck, ringed on all sides by the Alps.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 维也纳盆地、维也纳森林、达赫斯坦、卡尔文德尔与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "维也纳到因斯布鲁克飞约55分钟，两地同一时区，也可选择约4-5小时的城际列车（奥地利铁路 ÖBB 网络便捷，很多本地人更倾向于坐火车）。因斯布鲁克机场离市区约4公里。因斯布鲁克是蒂罗尔州首府，也是探索厄茨塔尔阿尔卑斯山、齐勒河谷滑雪区的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2824,16 +2950,17 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "维也纳飞格拉茨，是一趟深入奥地利东南部施泰尔马克州的短途航线。起飞后不久，脚下出现维也纳盆地开阔平坦的地势，随后飞机进入维也纳森林——阿尔卑斯山脉向东延伸的最后一段石灰岩丘陵地带，森林覆盖率极高。" +
-      "飞机继续向西南，一片相对平缓的喀斯特高原出现在下方——拉克斯—施内山，海拔2076米的施内山是阿尔卑斯山脉向东延伸中最后一座超过2000米的山峰，也是维也纳市民熟悉的“后山”。越过这片山地后，飞机降落在穆尔河畔的格拉茨——奥地利第二大城市。",
+      "飞机继续向西南，一片相对平缓的喀斯特高原出现在下方——拉克斯—施内山，海拔2076米的施内山是阿尔卑斯山脉向东延伸中最后一座超过2000米的山峰，也是维也纳市民熟悉的“后山”。越过这片山地后，飞机降落在穆尔河畔的格拉茨——按人口计奥地利第二大城市。",
     "en-US":
       "Flying from Vienna to Graz is a short hop deep into Styria in south-eastern Austria. Soon after take-off, the broad, flat Vienna Basin appears below, and the flight then enters the Wienerwald, the easternmost, densely forested stretch of limestone hills where the Alps taper off." +
-      " Continuing south-west, a comparatively gentle karst highland comes into view — the Rax-Schneeberg Group, whose Schneeberg, at 2,076 m, is the easternmost peak in the Alps to exceed 2,000 m and a familiar \"local mountain\" for Vienna's residents. Past this highland, the flight descends into Graz on the Mur River, Austria's second-largest city.",
+      " Continuing south-west, a comparatively gentle karst highland comes into view — the Rax-Schneeberg Group, whose Schneeberg, at 2,076 m, is the easternmost peak in the Alps to exceed 2,000 m and a familiar \"local mountain\" for Vienna's residents. Past this highland, the flight descends into Graz on the Mur River, Austria's second-largest city by population.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 施内山 2076 m、格拉茨为奥地利第二大城市与本库一致；UNESCO 年份原写 2000，按 1 级来源改为 1999。核实 2026-09-11
     travel: {
     "zh-CN":
-      "维也纳到格拉茨飞约40分钟，两地同一时区，也可选择约2.5小时的城际列车。格拉茨机场离市区约10公里。格拉茨是施泰尔马克州首府，老城2000年列入联合国教科文组织世界遗产名录，也是探索穆尔河上游河漫滩森林的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "维也纳到格拉茨飞约40分钟，两地同一时区，也可选择约2.5小时的城际列车。格拉茨机场离市区约10公里。格拉茨是施泰尔马克州首府，老城1999年列入联合国教科文组织世界遗产名录，也是探索穆尔河上游河漫滩森林的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Vienna to Graz is about 40 minutes, same time zone; an intercity train (about 2.5 hours) is another option. Graz Airport is about 10 km from the centre. Graz is the capital of Styria, its old town a UNESCO World Heritage site since 2000, and an ideal base for exploring the floodplain forests of the upper Mur. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Vienna to Graz is about 40 minutes, same time zone; an intercity train (about 2.5 hours) is another option. Graz Airport is about 10 km from the centre. Graz is the capital of Styria, its old town a UNESCO World Heritage site since 1999, and an ideal base for exploring the floodplain forests of the upper Mur. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -2846,6 +2973,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Vienna to Klagenfurt heads from the Vienna Basin toward the lake district of Carinthia in southern Austria. Soon after take-off, the broad, flat Vienna Basin unfolds below, and the flight then crosses the Rax-Schneeberg Group, the karst highland at the easternmost tip of the Alps, whose Schneeberg (2,076 m) is the area's highest point." +
       " Continuing south-west, an extensive karst plateau comes into view — the Totes Gebirge, Central Europe's largest karst plateau, its cliffs steep and its summit comparatively flat, scattered with numerous circular dissolution hollows. Past the Totes Gebirge, the flight descends into Klagenfurt at the eastern end of Wörthersee, an important lake-resort city in southern Austria.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 陶滕山「中欧面积最大的喀斯特高原」与本库一致；克拉根福在沃尔特湖东端。核实 2026-09-11
     travel: {
     "zh-CN":
       "维也纳到克拉根福飞约50分钟，两地同一时区，也可选择约4小时的城际列车。克拉根福机场离市区约3公里。克拉根福是克恩顿州首府，坐落在沃尔特湖东端，是探索克恩顿州湖区（沃尔特湖、米尔施塔特湖）的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2855,6 +2983,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "dub-kir": {
+    // study sources: 全四段（study/travel × 中英）: 卡朗图希尔 1038.6 m 全岛最高点、艾伦沼泽与本库一致；凯里机场距基拉尼约 15 km。核实 2026-09-11
     study: {
     "zh-CN":
       "都柏林飞凯里，是一趟自东向西横贯爱尔兰全境的航线，从东岸的都柏林平原一路飞越中部低地，抵达西南部凯里郡的高山地带。起飞后不久，脚下展开爱尔兰中部低地开阔平坦的地势——大片农牧用地间点缀着深褐色的隆起泥炭沼泽，艾伦沼泽是其中最具代表性的一片。" +
@@ -2876,6 +3005,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "dub-cfn": {
+    // study sources: 全四段（study/travel × 中英）: 格伦维「爱尔兰面积第二大国家公园」（#264 前已修）与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
       "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积第二大的国家公园的核心景观。" +
@@ -2905,9 +3035,10 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Aarhus crosses from Zealand over the sea to the eastern side of the Jutland peninsula. Soon after take-off, the Copenhagen metro area and the Øresund lie below, and the flight then crosses the southern Kattegat to reach the Djursland peninsula on Jutland's eastern flank." +
       " Approaching Aarhus, Mols Bjerge comes into view below — one of the few areas of pronounced moraine hill relief in Denmark, its rolling terminal-moraine ridges dotted with grassland and small lakes, its coastline winding out into the Kattegat, standing in sharp contrast to the flat terrain typical elsewhere in the country. The flight then descends into Aarhus Airport, just west of Mols Bjerge.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 莫尔斯山终碛丘陵与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "哥本哈根到奥胡斯飞约40分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约3小时的城际火车。奥胡斯机场离市区约35公里。奥胡斯是丹麦第二大城市，是探索莫尔斯山地与锡尔克堡湖区的理想基地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "哥本哈根到奥胡斯飞约40分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约3小时的城际火车。奥胡斯机场离市区约35公里。奥胡斯是按人口计丹麦第二大城市，是探索莫尔斯山地与锡尔克堡湖区的理想基地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
       "Copenhagen to Aarhus is about 40 minutes, same time zone, operated by SAS (ATR 72) as one of Denmark's domestic routes; an intercity train (about 3 hours) is another option. Aarhus Airport is about 35 km from the centre. Aarhus is Denmark's second city and an ideal base for exploring Mols Bjerge and the Silkeborg Lake District. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
@@ -2922,6 +3053,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Aalborg crosses the length of Denmark, from Zealand to the very northern tip of the Jutland peninsula. After crossing the Great Belt onto Jutland the flight continues north; approaching Aalborg, Rebild Bakker comes into view below — a moraine hill area covered in heather moorland, its purple blooms set off against the dark green of Rold Skov, Denmark's largest forest." +
       " Past Rebild Bakker, the Limfjord unfolds below before landing — the long, narrow waterway crossing northern Jutland that separates the Vendsyssel-Thy peninsula from the mainland; Aalborg sits on its southern bank, and the flight descends along the fjord into the airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 雷比尔荒原、利姆峡湾与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到奥尔堡飞约45分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型），也可选择约4.5小时的城际火车。奥尔堡机场离市区约6公里。奥尔堡是北日德兰大区的核心城市，是探索雷比尔丘陵与斯卡恩岬角的理想门户。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2939,6 +3071,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Billund crosses Zealand and the island of Funen to reach south-central Jutland. Soon after leaving Zealand, the Funen Rolling Farmland unfolds below — the agricultural landscape long known as the \"Garden of Denmark,\" regular fields and orchards covering gently rolling young moraine terrain." +
       " After crossing the Little Belt onto Jutland, approaching Billund, Jutland Heath comes into view below — Randbøl Hede is the largest surviving continuous remnant of Danish heather moorland, its purple-red bloom covering poor sandy outwash-plain soil, contrasting sharply with the reclaimed farmland around it, before the flight descends into Billund Airport right next to the heath.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 菲英岛「丹麦花园」、日德兰荒原与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到比隆飞约45分钟，同一时区，是北欧航空运营的国内航班之一（ATR 72机型）。比隆机场是丹麦国内航班的重要节点，就在乐高乐园所在的比隆镇边。以比隆为基地可探索兰伯尔荒原等日德兰半岛中部景观。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2956,6 +3089,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Copenhagen to Bornholm crosses the open Baltic Sea to reach Denmark's easternmost, isolated island. After take-off the flight heads south-east across open Baltic waters, arriving over Bornholm after about half an hour." +
       " Before landing, the Almindingen forest highland comes into view below — a granite highland at the island's centre; its peak, Rytterknægten, reaches 162 m, and the area is one of the only places in Denmark where granite bedrock is exposed over a wide area, dense forest interwoven with bare rock, quite unlike the flat moraine landforms typical of mainland Denmark. The flight then descends into Rønne on the island's western shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿尔明丁根「少数大面积可见花岗岩基岩的地区之一」（#264 已修）、骑士峰 162 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，由丹麦航空运输（Bornholmerflyet 品牌）以政府招标的公共服务义务航线形式运营，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2973,6 +3107,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Kiruna spans the length of Sweden, from Svealand to Arctic Lapland. After leaving Stockholm the flight continues north, the landscape below gradually shifting from the farmland and lakes of the south to the vast conifer forest of Norrland, the climate transitioning from temperate continental to subarctic." +
       " Approaching Kiruna, Kebnekaise comes into view far to the west — Sweden's highest mountain, its North Peak fixed at 2,096.8 m while the glacier-capped South Peak's elevation varies year to year, having fallen below the North Peak for several years running as the climate warms — the most recognisable mountain landmark in Swedish Lapland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 凯布讷山北峰 2096.8 m 固定、南峰冰川顶逐年变低，与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到基律纳飞约95分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约17小时的夜间火车。基律纳机场离市区约8公里。基律纳是探索凯布讷山、萨雷克国家公园与阿比斯库极光的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -2985,11 +3120,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "斯德哥尔摩飞哥德堡，是一趟横跨瑞典中南部、连接两大城市的航线。起飞后不久，脚下展开瑞典中部典型的森林与湖泊交织地貌，飞机中途掠过蒂韦登——历史上曾长期是瑞典南北两大传统区域之间天然屏障的古老松林地带，地表散布着末次冰期冰川搬运遗留的大量花岗岩巨砾，古老松林与沼泽小湖交织，是研究冰川漂砾地貌的典型野外样本。" +
-      "越过蒂韦登后，飞机继续向西南飞行，逐渐进入瑞典西海岸地区，脚下的森林景观渐渐让位于沿海平原与近岸礁岛，最终降落在哥德堡——瑞典第二大城市与重要的港口门户，也是探索布胡斯兰海岸花岗岩礁岛地貌的出发地。",
+      "越过蒂韦登后，飞机继续向西南飞行，逐渐进入瑞典西海岸地区，脚下的森林景观渐渐让位于沿海平原与近岸礁岛，最终降落在哥德堡——按人口计瑞典第二大城市与重要的港口门户，也是探索布胡斯兰海岸花岗岩礁岛地貌的出发地。",
     "en-US":
       "Flying from Stockholm to Gothenburg crosses south-central Sweden, linking the country's two largest cities. Soon after take-off, the landscape below shows the forest and lake terrain typical of central Sweden, and the flight passes over Tiveden midway — an old pine-forest area that historically served as a natural barrier between Sweden's traditional northern and southern regions, its ground scattered with granite boulders left by last-glacial transport." +
       " Past Tiveden, the flight continues south-west, gradually approaching Sweden's west coast before landing in Gothenburg, the country's second city and an important port gateway.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 蒂夫登冰川漂砾与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到哥德堡飞约43分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约3小时的城际火车。哥德堡兰德维特机场离市区约25公里。哥德堡是探索布胡斯兰海岸礁岛地貌的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3002,11 +3138,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "斯德哥尔摩飞马尔默，是一趟纵贯瑞典南部、直抵最南端的航线。飞机离开斯德哥尔摩后向南飞行，沿途掠过瑞典中南部典型的森林与农田交织地貌，中途掠过斯托雷莫瑟沼泽——瑞典拉普兰以南面积最大的隆起泥炭沼泽，大片深褐色的湿地与周边森林形成鲜明对比，是瑞典南部重要的候鸟栖息与泥炭湿地保护区。" +
-      "临近马尔默前，脚下的森林景观逐渐让位于开阔平坦的斯科讷平原——瑞典最重要的谷物与油菜种植区，规整的农田一望无际，春季油菜花盛开时更呈现出大片金黄色的独特景观，飞机随后降落在瑞典最南端的门户城市马尔默，隔厄勒海峡与丹麦哥本哈根相望。",
+      "临近马尔默前，脚下的森林景观逐渐让位于开阔平坦的斯科讷平原——瑞典主要的谷物与油菜种植区，规整的农田一望无际，春季油菜花盛开时更呈现出大片金黄色的独特景观，飞机随后降落在瑞典最南端的门户城市马尔默，隔厄勒海峡与丹麦哥本哈根相望。",
     "en-US":
       "Flying from Stockholm to Malmö crosses the length of southern Sweden to reach the country's southern tip. After leaving Stockholm the flight heads south, passing over Store Mosse midway — the largest raised peat bog south of Swedish Lapland, its expanse of dark brown wetland contrasting sharply with the forest around it." +
-      " Approaching Malmö, the forested landscape gradually gives way to the open, flat Skåne Plain — Sweden's most important grain- and rapeseed-growing region, its regular farmland stretching to the horizon — before the flight descends into Malmö, the gateway city at Sweden's southern tip, facing Copenhagen, Denmark across the Øresund.",
+      " Approaching Malmö, the forested landscape gradually gives way to the open, flat Skåne Plain — Sweden's main grain- and rapeseed-growing region, its regular farmland stretching to the horizon — before the flight descends into Malmö, the gateway city at Sweden's southern tip, facing Copenhagen, Denmark across the Øresund.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯托雷莫瑟「拉普兰以南最大的隆起泥炭沼泽」与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到马尔默飞约55分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约4.5小时的城际火车。马尔默机场离市区约28公里。马尔默是探索斯科讷平原、并经厄勒海峡大桥连接丹麦的便捷门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3019,16 +3156,17 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "斯德哥尔摩飞维斯比，是一趟从瑞典本土飞往波罗的海最大岛屿哥得兰岛的短途航线。起飞后不久，脚下即展开斯德哥尔摩群岛开阔的景象——约三万座岛屿、礁石组成的群岛，是世界上岛屿密度最高的群岛之一，群岛基岩为末次冰期冰川刮蚀的花岗岩，经地壳均衡抬升逐渐出露海面，从内群岛到外群岛岛屿逐渐稀疏、面积渐大，呈现出层次分明的地貌梯度。" +
-      "越过外群岛后，飞机飞越开阔的波罗的海海域，约半小时后抵达哥得兰岛，降落在维斯比——完整保留中世纪城墙的汉萨同盟古城，也是探索岛上大阿尔瓦荒原与法罗岛海蚀柱群的门户。",
+      "越过外群岛后，飞机飞越开阔的波罗的海海域，约半小时后抵达哥得兰岛，降落在维斯比——完整保留中世纪城墙的汉萨同盟古城，也是探索法罗岛海蚀柱群的门户。",
     "en-US":
       "Flying from Stockholm to Visby is a short hop from mainland Sweden to Gotland, the largest island in the Baltic Sea. Soon after take-off, the broad expanse of the Stockholm Archipelago unfolds below — some thirty thousand islands and skerries, one of the densest island clusters in the world, thinning out and growing larger in size from the inner to the outer archipelago." +
       " Past the outer archipelago, the flight crosses open Baltic waters, arriving over Gotland after about half an hour and descending into Visby, the Hanseatic-era walled town whose medieval fortifications survive intact.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 斯德哥尔摩群岛约三万座岛与本库一致；「大阿尔瓦荒原」原被挂到哥得兰岛（实属厄兰岛），已改。核实 2026-09-11
     travel: {
     "zh-CN":
-      "斯德哥尔摩到维斯比飞约35分钟，同一时区，是北欧航空运营的国内航班之一，也可选择乘渡轮往返。维斯比机场离市区约4公里。维斯比是探索哥得兰岛中世纪古城与大阿尔瓦荒原的理想起点。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到维斯比飞约35分钟，同一时区，是北欧航空运营的国内航班之一，也可选择乘渡轮往返。维斯比机场离市区约4公里。维斯比是探索哥得兰岛中世纪古城与法罗岛海蚀柱群的理想起点。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Visby is about 35 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; a ferry is another option. Visby Airport is about 4 km from the centre. Visby is an ideal starting point for exploring Gotland's medieval old town and Stora Alvaret. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Visby is about 35 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; a ferry is another option. Visby Airport is about 4 km from the centre. Visby is an ideal starting point for exploring Gotland's medieval old town and the sea stacks of Fårö. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3041,6 +3179,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Kalmar is a gateway route to the island of Öland in south-eastern Sweden. After leaving Stockholm the flight heads south, passing over the forested farmland typical of Sweden's south-eastern coast." +
       " Approaching Kalmar, Stora Alvaret on Öland comes into view across the strait to the east — a roughly 40-km stretch of bare limestone plateau, the largest surviving example of this type of limestone barren in Europe — before the flight descends into Kalmar, the historic castle city linked to Öland by a bridge across the strait.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 厄兰岛大阿尔瓦约 40 km、2000 年列入 UNESCO 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到卡尔马飞约45分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约4.5小时的城际火车。卡尔马机场离市区约6公里。卡尔马是探索厄兰岛大阿尔瓦石灰岩荒原最便捷的门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3058,6 +3197,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Stockholm to Åre Östersund heads to the alpine ski resort region of Jämtland in west-central Sweden. After leaving Stockholm the flight heads north-west, passing over the Siljan Ring midway — a ring structure about 52 km in diameter formed when an asteroid struck around 377 million years ago, the largest known impact structure in Europe, with Lake Siljan and several smaller lakes arranged along its margin." +
       " Past the Siljan Ring, the flight continues north-west as the terrain gradually rises into the mountains of Jämtland, before landing at Åre Östersund Airport, the gateway airport for Åre, Northern Europe's largest alpine ski resort.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 希尔扬约 3.77 亿年、直径约 52 km、欧洲已知最大撞击构造与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "斯德哥尔摩到奥勒—厄斯特松德飞约60分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约6.5小时的城际火车。机场离奥勒镇区约65公里。奥勒是北欧规模最大的高山滑雪度假地。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3075,6 +3215,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Rovaniemi spans the length of Finland, from the southern lake district to Arctic Lapland. Soon after take-off, the long, straight surface of Lake Päijänne unfolds below — Finland's second-largest lake and one of its deepest, with a maximum depth of about 95 m, a sharp contrast with the intricate, fragmented Saimaa further south." +
       " The flight continues north as the lake district below gradually gives way to the vast conifer forest of north-central Finland; approaching Rovaniemi, the winding channel of the Kemijoki comes into clear view — Finland's longest river, lined with hydroelectric dams — and the flight follows the river down to land at Rovaniemi, straddling the Arctic Circle line.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 派耶内湖芬兰第二大、最深约 95 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到罗瓦涅米飞约85分钟，同一时区，是芬兰航空运营的国内航班之一，也可选择约12小时的夜间火车。罗瓦涅米机场离市区约10公里。罗瓦涅米是圣诞老人村所在地，也是探索拉普兰荒原的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3092,6 +3233,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Oulu heads north along the Gulf of Bothnia coast. After leaving Helsinki the flight heads north, passing over the Ostrobothnia Plain midway — a low-lying coastal agricultural region on Finland's west coast that continues to expand through isostatic rebound, its broad, open surface covered in regular farmland." +
       " Past the plain, the flight continues north along the Gulf of Bothnia coast before landing in Oulu, an important Finnish technology and university city and a gateway for exploring northern Finland and Lapland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 东博滕平原地壳均衡抬升与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到奥卢飞约70分钟，同一时区，是芬兰航空运营的国内航班之一（安波190机型），也可选择约6.5小时的城际火车。奥卢机场离市区约15公里。奥卢是探索波的尼亚湾北岸与拉普兰的便捷门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3109,6 +3251,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Kuusamo is a gateway route to north-eastern Finland, home to the Karhunkierros hiking trail. After leaving Helsinki the flight continues north-east, crossing the vast lake district and conifer forest of central Finland." +
       " Approaching Kuusamo, the Oulanka Canyon comes into view below — a canyon cut by the Oulanka River through ancient bedrock, pine forest and patches of lime-rich ground alternating along its banks, one of the most representative landforms along Finland's famous Karhunkierros long-distance trail — before the flight lands in Kuusamo, right next to the Ruka ski resort.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥兰卡峡谷「熊之路」与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到库萨莫飞约75分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型）。库萨莫机场离市区约5公里。库萨莫是探索奥兰卡国家公园与鲁卡滑雪度假区的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3121,11 +3264,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "赫尔辛基飞伊瓦洛，是一趟纵贯芬兰全境、抵达北极圈深处拉普兰腹地的航线，全程距离接近1000公里，是芬兰国内最长的定期航班之一。飞机离开赫尔辛基后持续向北飞行，脚下的地貌依次经过南部湖区、中部针叶林带，逐渐过渡为北部图恩图里荒原，气候也由温带大陆性转为亚北极气候。" +
-      "临近伊瓦洛降落前，脚下展开伊纳里湖开阔的水面——芬兰第三大湖，也是北极圈内芬兰面积最大的湖泊，湖中散布约3300座岛屿，是萨米人传统聚居区伊纳里地区的地理核心，飞机随后降落在伊瓦洛，是探索伊纳里地区萨米文化的门户机场。",
+      "临近伊瓦洛降落前，脚下展开伊纳里湖开阔的水面——按面积计芬兰第三大湖，也是北极圈内芬兰面积最大的湖泊，湖中散布约3300座岛屿，是萨米人传统聚居区伊纳里地区的地理核心，飞机随后降落在伊瓦洛，是探索伊纳里地区萨米文化的门户机场。",
     "en-US":
       "Flying from Helsinki to Ivalo spans the length of Finland to reach deep into Arctic Lapland. After leaving Helsinki the flight continues north, the landscape below passing in turn through the southern lake district, the conifer forest of central Finland, and finally the tunturi wilderness of the north." +
-      " Approaching Ivalo, the broad waters of Lake Inari come into view below — Finland's third-largest lake and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands, the geographic core of the traditional Sámi Inari region — before the flight lands at Ivalo, the gateway airport for exploring Sámi culture in the Inari region.",
+      " Approaching Ivalo, the broad waters of Lake Inari come into view below — Finland's third-largest lake by area and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands, the geographic core of the traditional Sámi Inari region — before the flight lands at Ivalo, the gateway airport for exploring Sámi culture in the Inari region.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 伊纳里湖约 3300 座岛与本库一致；赫尔辛基—伊瓦洛「接近 1000 公里」（大圆约 927 km）。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到伊瓦洛飞约100分钟，同一时区，是芬兰航空运营的国内航班之一。伊瓦洛机场离伊纳里村约40公里。伊瓦洛是探索伊纳里湖与萨米文化的门户机场，也是观测极光条件最佳的地区之一。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3138,11 +3282,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "赫尔辛基飞库奥皮奥，是一趟飞往芬兰中东部湖区核心城市的航线。飞机离开赫尔辛基后向北飞行，穿越芬兰中部典型的森林与湖泊交织地貌，沿途湖泊星罗棋布，是芬兰“千湖之国”景观最集中的区域之一。" +
-      "临近库奥皮奥降落前，脚下展开卡拉韦西湖开阔的水面，湖畔的普宜奥山海拔306米，是芬兰湖区少有的地势制高点，山体基岩长期风化侵蚀后在平缓的湖区地貌中格外突出，山顶观景塔可俯瞰整片湖区群岛景观，飞机随后降落在库奥皮奥，坐落于湖畔的芬兰中东部湖区核心城市。",
+      "临近库奥皮奥降落前，脚下展开卡拉韦西湖开阔的水面，湖畔的普宜奥山海拔232米、山顶观景塔塔顶达306米，是芬兰湖区少有的地势制高点，山体基岩长期风化侵蚀后在平缓的湖区地貌中格外突出，山顶观景塔可俯瞰整片湖区群岛景观，飞机随后降落在库奥皮奥，坐落于湖畔的芬兰中东部湖区核心城市。",
     "en-US":
       "Flying from Helsinki to Kuopio heads to the core city of Finland's central-eastern lake district. After leaving Helsinki the flight heads north, crossing the forest and lake terrain typical of central Finland." +
-      " Approaching Kuopio, the open waters of Lake Kallavesi come into view below; lakeside Puijo hill, at 306 m, is one of the few high points of relief in the Finnish lake district, its summit viewing tower overlooking the entire lake and archipelago landscape, before the flight lands in Kuopio, the core city of Finland's central-eastern lake district, built on the lake's shore.",
+      " Approaching Kuopio, the open waters of Lake Kallavesi come into view below; lakeside Puijo hill, at 232 m with its summit viewing tower reaching 306 m, is one of the few high points of relief in the Finnish lake district, its summit viewing tower overlooking the entire lake and archipelago landscape, before the flight lands in Kuopio, the core city of Finland's central-eastern lake district, built on the lake's shore.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 普宜奥山原写海拔 306 m（实为塔顶），按本库改为山体 232 m、塔顶 306 m。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到库奥皮奥飞约55分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型），也可选择约4.5小时的城际火车。库奥皮奥机场离市区约15公里。库奥皮奥是俯瞰芬兰湖区地貌的理想目的地。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3160,6 +3305,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Helsinki to Mariehamn is a short hop from mainland Finland to the Åland Islands at the entrance to the Baltic Sea. Soon after take-off, the broad expanse of the Archipelago Sea unfolds below — a body of water off south-western Finland made up of about forty thousand islands and skerries, one of the densest island clusters anywhere in the world by count." +
       " Past the Archipelago Sea, the flight continues west before landing in Mariehamn, the capital of the Åland Islands and the administrative and cultural centre of Finland's only autonomous region with Swedish as its sole official language.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥兰群岛 1921 年国联裁决自治与非军事化（已了结的国际法史实）；群岛海约四万座岛与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "赫尔辛基到玛丽港飞约55分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型），也可选择乘渡轮往返。玛丽港机场离市区约3公里。玛丽港是探索奥兰群岛的理想起点。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3177,6 +3323,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok to Chiang Mai is one of Thailand's busiest domestic routes, linking the capital with the ancient cultural capital of the north. After leaving Bangkok the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation on the border of Phitsanulok and Phetchabun provinces, known as \"Thailand's savanna,\" its open golden grassland interspersed with sparse pine forest, a rare non-forested highland landform in Thailand." +
       " Past the grassland, the flight continues north-west, gradually approaching the Chiang Mai basin; just before landing, Doi Suthep unfolds below — a 1,676 m peak west of Chiang Mai, where Wat Phra That Doi Suthep, founded on its slope in the 14th century, is one of northern Thailand's most important Buddhist pilgrimage sites — before the flight lands in Chiang Mai, the largest city in northern Thailand and the ancient capital of the Lanna kingdom.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 通萨兰銮草原、素贴山 1676 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷到清迈飞约80分钟，同一时区，是泰国国际航空运营的国内航班之一，也可选择长途大巴或火车。曼谷素万那普机场距市区约30公里；清迈国际机场距市区约3公里。清迈是探索泰国北部山地与手工艺文化的理想门户。",
@@ -3194,11 +3341,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok to Koh Samui links the capital with a popular resort island in the Gulf of Thailand. After leaving Bangkok the flight heads south-east, the Chao Phraya Delta unfolding below — the low-lying alluvial delta at the Chao Phraya's mouth, on which Bangkok itself is built, with parts of the city under 2 m in elevation and facing the combined pressures of land subsidence and sea-level rise." +
       " Past the delta, the flight continues south-east across the open waters of the Gulf of Thailand; Koh Samui gradually comes into view, before the flight lands on Koh Samui, Thailand's second-largest island by area, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 湄南河三角洲地面沉降与本库一致；苏梅岛「按面积计泰国第二大岛」已是修正后说法。核实 2026-09-11
     travel: {
     "zh-CN":
-      "曼谷到苏梅岛飞约95分钟，同一时区，是曼谷航空运营的国内航班之一（ATR72-600机型），苏梅机场由曼谷航空私有运营。曼谷素万那普机场距市区约30公里；苏梅机场就在岛屿东北角。苏梅岛是探索安通国家海洋公园跳岛游的理想门户。",
+      "曼谷到苏梅岛飞约95分钟，同一时区，是曼谷航空运营的国内航班之一（空客A319机型），苏梅机场由曼谷航空私有运营。曼谷素万那普机场距市区约30公里；苏梅机场就在岛屿东北角。苏梅岛是探索安通国家海洋公园跳岛游的理想门户。",
     "en-US":
-      "Bangkok to Koh Samui takes about 95 minutes, same time zone, operated by Bangkok Airways (ATR 72-600) as one of Thailand's domestic routes; Samui Airport is privately operated by Bangkok Airways. Suvarnabhumi Airport is about 30 km from central Bangkok; Samui Airport sits at the island's north-eastern tip. Koh Samui is an ideal gateway for island-hopping in Ang Thong National Marine Park.",
+      "Bangkok to Koh Samui takes about 95 minutes, same time zone, operated by Bangkok Airways (Airbus A319) as one of Thailand's domestic routes; Samui Airport is privately operated by Bangkok Airways. Suvarnabhumi Airport is about 30 km from central Bangkok; Samui Airport sits at the island's north-eastern tip. Koh Samui is an ideal gateway for island-hopping in Ang Thong National Marine Park.",
     },
   },
 
@@ -3211,6 +3359,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Udon Thani links the capital with Thailand's north-eastern Isan region. After leaving Don Mueang the flight heads north-north-east, passing over the Khorat Plateau midway — a vast sandstone tableland covering roughly a third of Thailand's land area, the geographic core of the traditional Isan region, its broad, flat surface interspersed with extensive rain-fed farmland and sparse woodland, a sharp contrast to the paddy-field landscape of central Thailand's plain." +
       " The flight continues north-east, before landing in Udon Thani, an important city in the Isan region and the gateway to the Ban Chiang prehistoric site.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 呵叻高原约占国土三分之一；「碧差汶山脉与丹辇拉扎山脉」已是修正后说法；班清遗址约公元前 2000 年。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到乌隆他尼飞约65分钟，同一时区，是泰国亚洲航空运营的国内航班之一，也可选择乘火车经廊开线前往。廊曼机场距曼谷市区约25公里；乌隆他尼国际机场距市区约5公里。乌隆他尼是探索班清世界遗产考古遗址的理想门户。",
@@ -3228,6 +3377,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Chiang Rai links the capital with Thailand's northernmost province. After leaving Don Mueang the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation in north-central Thailand known as \"Thailand's savanna,\" its open grassland interspersed with sparse pine forest." +
       " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 清道山泰国第三高峰 2175–2275 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱是探索金三角景观区与白庙等当代宗教艺术建筑的理想门户。",
@@ -3242,9 +3392,10 @@ export const ROUTE_NARRATION: Record<
       "曼谷廊曼飞普吉岛，是连接首都与泰国最负盛名海岛度假地的热门航线。飞机离开廊曼后向南飞行，脚下持续展开泰国湾沿岸的地貌，逐渐掠过三百峰山——泰国湾沿岸一列由约300座石灰岩山峰组成的山地，“三百峰”由此得名，最高峰海拔605米，山地西北角的通三百峰淡水沼泽是泰国境内面积最大的湿地之一，1966年设为泰国首座海洋型国家公园。" +
       "越过三百峰山后，飞机继续向南飞越泰国南部半岛，最终降落在普吉岛——泰国最大的岛屿，坐落于安达曼海，是泰国最负盛名的海岛度假目的地，西海岸分布着巴东、卡伦、卡塔等主要海滩度假区。",
     "en-US":
-      "Flying from Bangkok Don Mueang to Phuket links the capital with Thailand's most famous island resort destination. After leaving Don Mueang the flight heads south, the landform along the Gulf of Thailand coast continuing below, passing over Khao Sam Roi Yot midway — a range of some 300 limestone peaks along the Gulf of Thailand coast, the source of its name (\"the mountain with three hundred peaks\"), with the freshwater marsh of Thung Sam Roi Yot at its north-western corner among the largest wetlands in Thailand." +
-      " Past Khao Sam Roi Yot, the flight continues south over the southern Thai peninsula, before landing on Phuket, Thailand's largest island in the Andaman Sea and the country's most famous island resort destination.",
+      "Flying from Bangkok Don Mueang to Phuket links the capital with a major Thai island resort destination. After leaving Don Mueang the flight heads south, the landform along the Gulf of Thailand coast continuing below, passing over Khao Sam Roi Yot midway — a range of some 300 limestone peaks along the Gulf of Thailand coast, the source of its name (\"the mountain with three hundred peaks\"), with the freshwater marsh of Thung Sam Roi Yot at its north-western corner among the largest wetlands in Thailand." +
+      " Past Khao Sam Roi Yot, the flight continues south over the southern Thai peninsula, before landing on Phuket, Thailand's largest island in the Andaman Sea and a major island resort destination.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 三百峰山约 300 座石灰岩峰、1966 年泰国首座海洋型国家公园与本库一致；普吉为泰国最大岛。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到普吉岛飞约85分钟，同一时区，是泰国亚洲航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；普吉国际机场距普吉镇约32公里。普吉岛是探索攀牙湾喀斯特岛群的理想门户。",
@@ -3262,6 +3413,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Bangkok Don Mueang to Krabi links the capital with the karst coastline of the Andaman Sea. After leaving Don Mueang the flight heads south, gradually crossing the southern Thai peninsula; just before landing, Ao Phang Nga unfolds below — a roughly 400 km² drowned karst bay in the Andaman Sea, where Permian Ratburi limestone was drowned as sea level rose after the last glacial period, leaving its emergent tops as today's steep, isolated rock islands, with Khao Phing Kan (\"James Bond Island\") among the bay's most iconic landmarks" +
       " — before the flight lands in Krabi, a province on Thailand's southern Andaman coast known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 攀牙湾约 400 km²、二叠纪石灰岩与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "曼谷廊曼到甲米飞约85分钟，同一时区，是泰国狮航运营的国内航班之一。廊曼机场距曼谷市区约25公里；甲米国际机场距甲米镇约18公里。甲米是探索莱利岬角攀岩与皮皮群岛跳岛游的理想门户。",
@@ -3279,6 +3431,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Seoul Gimpo to Jeju is one of the busiest domestic routes in the world, with more than 70 round trips daily. After leaving Gimpo the flight heads south, passing over the Honam Plain — the largest plain on the Korean Peninsula, where the ancient Byeokgolje irrigation works record this region's long rice-farming tradition." +
       " Past the mainland, the flight continues south across the open waters of the Korea Strait; Jeju Island gradually comes into view, with the shield-volcano profile of Hallasan clearly visible at its centre, before the flight lands in Jeju, South Korea's largest island and home to its highest peak.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 金浦—济州 2024、2025 连续两年全球客运量最大国内航线（2 级）；湖南平原约 3500 km²、汉拿山盾状火山与数百座寄生火山锥。核实 2026-09-11
     travel: {
     "zh-CN":
       "首尔金浦到济州飞约75分钟，同一时区，是大韩航空运营的国内航班之一，这条航线因客流密集常被称为全球最繁忙的国内航线。金浦机场位于首尔市区西部；济州国际机场就在济州市区西侧。韩国境内多国公民短期旅游的电子旅行许可豁免安排以官方最新公布为准。",
@@ -3291,11 +3444,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "首尔金浦飞釜山，是连接韩国两大城市的传统航线，也是首尔通往东南沿海最便捷的空中通道。飞机离开金浦后向东南飞行，中途掠过俗离山——韩国中部一座相对孤立的花岗岩与片麻岩山体，1970年设为韩国第六座国家公园，山麓法住寺记录了这一区域悠久的佛教文化传统。" +
-      "越过俗离山后，飞机继续向东南飞行，临近降落前脚下展开洛东江河口三角洲——洛东江注入沿海处发育的辫状三角洲，乙淑岛沙洲是候鸟迁徙的重要中途停歇地，飞机随后降落在釜山——韩国第二大城市与最大港口，也是釜山国际电影节每年秋季的举办地。",
+      "越过俗离山后，飞机继续向东南飞行，临近降落前脚下展开洛东江河口三角洲——洛东江注入沿海处发育的辫状三角洲，乙淑岛沙洲是候鸟迁徙的重要中途停歇地，飞机随后降落在釜山——按人口计韩国第二大城市与最大港口，也是釜山国际电影节每年秋季的举办地。",
     "en-US":
       "Flying from Seoul Gimpo to Busan links Korea's two largest cities. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, its Beopjusa Temple recording this area's long Buddhist tradition." +
-      " Past Songnisan, the flight continues south-east, and just before landing the Nakdong River Estuary unfolds below — a braided delta formed where the Nakdong River meets the coast, with the Eulsukdo sandbar an important stopover for migratory birds — before the flight lands in Busan, South Korea's second-largest city and largest port.",
+      " Past Songnisan, the flight continues south-east, and just before landing the Nakdong River Estuary unfolds below — a braided delta formed where the Nakdong River meets the coast, with the Eulsukdo sandbar an important stopover for migratory birds — before the flight lands in Busan, South Korea's second-largest city by population and largest port.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 俗离山 1970 年韩国第六座国家公园；釜山第二大城市、最大港口。核实 2026-09-11
     travel: {
     "zh-CN":
       "首尔金浦到釜山飞约55分钟，同一时区，是大韩航空运营的国内航班之一，也可选择约2.5小时的KTX高铁。金浦机场位于首尔市区西部；金海国际机场距釜山市区约20公里。釜山是探索海云台与甘川文化村的理想门户。",
@@ -3313,6 +3467,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Seoul Gimpo to Ulsan links the capital with a major heavy-industry city in the south-east. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, designated Korea's sixth national park in 1970." +
       " Past Songnisan, the flight continues south-east, gradually approaching Korea's south-eastern coast, before landing in Ulsan — a major centre for shipbuilding, automobiles, and petrochemicals, home to the rare open green space of the Taehwa River's bamboo grove.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 蔚山工业、太和江十里竹林、长生浦鲸鱼文化；每日班次未逐一核。核实 2026-09-11
     travel: {
     "zh-CN":
       "首尔金浦到蔚山飞约60分钟，同一时区，是大韩航空运营的国内航班之一，每日往返约2班，也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；蔚山机场距市区约15公里。蔚山是探索岭南阿尔卑斯山地与长生浦鲸鱼文化村的门户。",
@@ -3324,12 +3479,13 @@ export const ROUTE_NARRATION: Record<
   "gmp-rsu": {
     study: {
     "zh-CN":
-      "首尔金浦飞丽水，是连接首都与南部沿海港口城市的航线。飞机离开金浦后向南飞行，脚下持续展开湖南平原开阔平坦的地貌——朝鲜半岛面积最大的平原，面积约3500平方公里，纵横的灌溉水渠将平原分割成棋盘状的地块，是韩国最重要的稻米产区。" +
+      "首尔金浦飞丽水，是连接首都与南部沿海港口城市的航线。飞机离开金浦后向南飞行，脚下持续展开湖南平原开阔平坦的地貌——朝鲜半岛面积最大的平原，面积约3500平方公里，纵横的灌溉水渠将平原分割成棋盘状的地块，是韩国主要的稻米产区。" +
       "飞机继续向南飞行，逐渐接近朝鲜半岛南部沿海，飞机最终降落在丽水——2012年世界博览会举办地，以跨海缆车夜景与音乐喷泉闻名的港口城市，突山岛与丽水本岛由大桥相连，梧桐岛海岸步道是市区内探索海岸地貌的经典去处。",
     "en-US":
       "Flying from Seoul Gimpo to Yeosu links the capital with a southern coastal port city. After leaving Gimpo the flight heads south, the open, flat landform of the Honam Plain continuing below — the largest plain on the Korean Peninsula, its irrigation channels dividing the land into a checkerboard of fields." +
       " The flight continues south, gradually approaching Korea's southern coast, before landing in Yeosu — host of the 2012 World Expo and a port city known for its cross-sea cable car night views.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 丽水 2012 年世博会；真航空 2020 年起执飞。核实 2026-09-11
     travel: {
     "zh-CN":
       "首尔金浦到丽水飞约60分钟，同一时区，是真航空运营的国内航班之一，也可选择约3小时的KTX高铁。金浦机场位于首尔市区西部；丽水机场距市区约20公里。丽水是探索梧桐岛与突山大桥的理想门户。",
@@ -3347,6 +3503,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Seoul Gimpo to Pohang Gyeongju links the capital with a south-eastern coastal steel city and the ancient Silla capital nearby. After leaving Gimpo the flight heads south-east, passing over the Nakdong River midway — the longest river in South Korea, with the Hahoe meander near Andong, cut by the river into granite bedrock, the most distinctive stretch along its course." +
       " Past the Nakdong River, the flight continues south-east, gradually approaching Korea's south-eastern coast, before landing at Pohang Gyeongju Airport, shared by the steel city of Pohang and the ancient Silla capital of Gyeongju.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 洛东江约 510 km、韩国境内最长；浦项庆州机场 2022-07-14 更名（韩国政府，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "首尔金浦到浦项庆州飞约55分钟，同一时区，是真航空运营的国内航班之一，也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；浦项庆州机场距浦项市区约10公里、距庆州市区约35公里。这座机场是探索新罗古都庆州历史遗址群的理想门户。",
@@ -3364,6 +3521,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Busan to Jeju links a south-eastern port city with Korea's southern island. After leaving Busan the flight heads south-west, the archipelago of Hallyeohaesang Marine National Park unfolding below — a stretch of Korea's southern coastal waters scattered with hundreds of islands, a classic ria-type archipelago formed as sea level rose after the last glacial period and drowned the coastal hills, designated Korea's first marine national park in 1968." +
       " Past the archipelago, the flight continues south-west across open water; Jeju Island gradually comes into view, before the flight lands in Jeju, South Korea's largest island.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 闲丽海上国立公园 1968 年、韩国首座海上国家公园；溺谷型多岛海。核实 2026-09-11
     travel: {
     "zh-CN":
       "釜山到济州飞约60分钟，同一时区，是济州航空运营的国内航班之一，大韩航空也运营同一航线。金海国际机场距釜山市区约20公里；济州国际机场就在济州市区西侧。",
@@ -3381,6 +3539,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Warsaw to Kraków is Poland's busiest domestic route, linking the capital with the historic former capital. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — one of the geologically oldest ranges in Poland, its bedrock dating to the Palaeozoic around 500 million years ago, worn by hundreds of millions of years of weathering into today's low, rounded hill form, its slopes scattered with eroded quartzite debris." +
       " Past the Świętokrzyskie range, the flight continues south into Lesser Poland, landing in Kraków, the historic former capital and home to Wawel Castle.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 圣十字山约 5 亿年基岩、戈乌博尔基；克拉科夫 1978 年首批 UNESCO 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到克拉科夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约2.5小时的城际火车。克拉科夫机场离市区约11公里。克拉科夫是探索小波兰地区（扎科帕内、维利奇卡盐矿）的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3393,11 +3552,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "华沙飞格但斯克，是一趟连接波兰首都与波罗的海沿岸港口城市的航线。飞机离开华沙后向北飞行，脚下的地貌逐渐从中部平原过渡为维斯瓦河下游流域，维斯瓦河是波兰境内最长的河流，发源于西南部喀尔巴阡山脉北麓，全程贯穿波兰、最终在格但斯克附近注入波罗的海。" +
-      "临近格但斯克降落前，脚下展开维斯瓦三角洲低地——维斯瓦河入海口处的冲积三角洲平原，部分区域海拔低于海平面，历史上经中世纪荷兰移民带来的堤坝排水技术围垦而成，是波兰境内地势最低的区域，河网密布、以纵横的排水渠道著称，飞机随后降落在格但斯克——历史上汉萨同盟重要的贸易城市，也是二战爆发的第一枪打响之地。",
+      "临近格但斯克降落前，脚下展开维斯瓦三角洲低地——维斯瓦河入海口处的冲积三角洲平原，部分区域海拔低于海平面，历史上经16世纪起荷兰移民带来的堤坝排水技术围垦而成，是波兰境内地势最低的区域，河网密布、以纵横的排水渠道著称，飞机随后降落在格但斯克——历史上汉萨同盟重要的贸易城市，也是二战爆发的第一枪打响之地。",
     "en-US":
       "Flying from Warsaw to Gdańsk links Poland's capital with its Baltic coast port city. After leaving Warsaw the flight heads north, the landscape below gradually shifting from the central plain into the lower Vistula river basin." +
-      " Approaching Gdańsk, Żuławy Wiślane comes into view below — the alluvial delta plain at the Vistula's mouth, part of it lying below sea level, historically reclaimed using dike-and-drainage technology introduced by medieval settlers from the Low Countries, the lowest-lying region in Poland — before the flight lands in Gdańsk, a historically important Hanseatic League trading city.",
+      " Approaching Gdańsk, Żuławy Wiślane comes into view below — the alluvial delta plain at the Vistula's mouth, part of it lying below sea level, historically reclaimed using dike-and-drainage technology introduced by Mennonite settlers from the Low Countries from the 16th century onward, the lowest-lying region in Poland — before the flight lands in Gdańsk, a historically important Hanseatic League trading city.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 维斯瓦河波兰最长、三角洲为全国最低处；围垦原写「中世纪荷兰移民」，按本库改为 16 世纪起门诺派。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到格但斯克飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每周约40班），也可选择约2.5小时的城际火车。格但斯克机场离市区约12公里。格但斯克是探索波罗的海沿岸海尔半岛与斯沃文斯基沙丘的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3415,6 +3575,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Warsaw to Wrocław crosses west-central Poland, linking the capital with the core city of Silesia. After leaving Warsaw the flight heads west, the open, flat landform of the Great Polish Lowland unfolding below — the main portion of the Central European Plain lying within Poland, built of last-glacial ice-sheet deposits, its extensive, regular farmland stretching to the horizon as Poland's largest agricultural region." +
       " Past the Great Polish Lowland, the flight continues south-west, landing in Wrocław, the core city of Silesia on the Oder, known for its hundred-plus bridges and its street-side dwarf statues.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大波兰低地；弗罗茨瓦夫约 130 座桥；「历史上曾多次易主」为史实、无评价。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到弗罗茨瓦夫飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约4.5小时的城际火车。弗罗茨瓦夫机场离市区约10公里。弗罗茨瓦夫是探索西里西亚地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3432,6 +3593,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Warsaw to Poznań is a short hop linking the capital with one of Poland's oldest cities. Soon after take-off, the open, flat landform of the Great Polish Lowland unfolds below — a plain built of last-glacial ice-sheet deposits, extensive farmland interwoven with scattered forest and lakes, the flattest, most open region within Poland." +
       " The flight continues west, landing in Poznań, an ancient city that was historically one of the political centres of the early Polish state, built on this open lowland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大波兰低地；波兹南「最早的行政与宗教中心之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到波兹南飞约39分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约2.5小时的城际火车。波兹南机场离市区约6公里。波兹南是探索大波兰低地地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3444,11 +3606,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "华沙飞热舒夫，是一趟飞往波兰东南部、探索别什恰迪山脉的门户航线。飞机离开华沙后向南飞行，中途掠过圣十字山——波兰境内地质年代最古老的山脉，基岩可追溯至古生代，历经数亿年风化夷平已成为低矮浑圆的丘状山地，是欧洲少数保留有古生代原始地貌痕迹的山地之一。" +
-      "越过圣十字山后，飞机继续向东南飞行，逐渐进入小波兰东部地区、地势向喀尔巴阡山前地带过渡，最终降落在热舒夫——波兰重要的航空工业中心，因此得名“波兰航空谷”，机场附近设有航空博物馆记录当地航空制造历史。",
+      "越过圣十字山后，飞机继续向东南飞行，逐渐进入小波兰东部地区、地势向喀尔巴阡山前地带过渡，最终降落在热舒夫——波兰重要的航空工业中心，因此得名“波兰航空谷”。",
     "en-US":
       "Flying from Warsaw to Rzeszów is a gateway route to south-eastern Poland and the Bieszczady Mountains. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — the geologically oldest range in Poland, its bedrock dating to the Palaeozoic, worn by hundreds of millions of years of weathering into today's low, rounded hill form." +
       " Past the Świętokrzyskie range, the flight continues south-east into the eastern part of Lesser Poland, landing in Rzeszów, an important Polish aerospace-industry centre nicknamed \"Aviation Valley.\"",
     },
+    // travel sources: 全四段（study/travel × 中英）: 「波兰航空谷」属实；删去查无来源的「机场附近航空博物馆」。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到热舒夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型），也可选择约3小时的城际火车。热舒夫—亚西翁卡机场离市区约10公里。热舒夫是探索别什恰迪山脉波沃尼纳草甸的便捷门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3461,11 +3624,12 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "华沙飞什切青，是一趟横跨波兰全境、抵达西北部奥得河口港口城市的航线，也是波兰境内飞行距离最长的国内航线之一。飞机离开华沙后向西北飞行，脚下持续展开大波兰低地开阔平坦的地貌，大片农田与零星分布的湖泊、森林一望无际。" +
-      "飞机继续向西北飞行，逐渐接近波兰与德国边境，什切青潟湖与奥得河口的水网在地平线上依稀可见，最终降落在什切青——紧邻德国边境、坐落于奥得河口的重要港口与工业城市，波兰海军主要基地之一，也是波兰通往波罗的海的重要出海口。",
+      "飞机继续向西北飞行，逐渐接近波兰与德国边境，什切青潟湖与奥得河口的水网在地平线上依稀可见，最终降落在什切青——紧邻德国边境、坐落于奥得河口的重要港口与工业城市，也是波兰通往波罗的海的重要出海口。",
     "en-US":
       "Flying from Warsaw to Szczecin spans the length of Poland to reach the port city at the mouth of the Oder in the north-west. After leaving Warsaw the flight heads north-west, the open, flat landform of the Great Polish Lowland continuing below it, extensive farmland stretching to the horizon." +
       " The flight continues north-west, gradually approaching the Poland-Germany border, before landing in Szczecin, an important port and industrial city at the mouth of the Oder, right on the German border.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥得河口港口与工业城市；删去只有 3 级来源且站不住的「海军主要基地之一」。核实 2026-09-11
     travel: {
     "zh-CN":
       "华沙到什切青飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约6.5小时的城际火车。什切青—戈萊尼乌夫机场离市区约45公里。什切青是探索沃林岛国家公园的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
@@ -3477,12 +3641,13 @@ export const ROUTE_NARRATION: Record<
   "han-sgn": {
     study: {
     "zh-CN":
-      "河内飞胡志明市，是越南客流量最大的国内航线之一，全程约1000公里，被业内称为越南的“黄金航线”。飞机离开河内后向南飞行，脚下展开红河三角洲——红河及其支流泥沙长期沉积形成的三角形冲积平原，面积约1.5万平方公里，是越南两大农业核心区之一，河内城区即建于三角洲之上。" +
+      "河内飞胡志明市，是越南客流量最大的国内航线之一，全程约1160公里，被业内称为越南的“黄金航线”。飞机离开河内后向南飞行，脚下展开红河三角洲——红河及其支流泥沙长期沉积形成的三角形冲积平原，面积约1.5万平方公里，是越南两大农业核心区之一，河内城区即建于三角洲之上。" +
       "飞机继续向南飞行，逐渐掠过西原高原——越南中南部一系列连绵高原的统称，海拔大致在500至1500米之间，玄武岩风化形成的红土广泛覆盖高原表面，大片咖啡种植园清晰可见，飞机最终降落在胡志明市——越南最大城市与经济中心。",
     "en-US":
-      "Flying from Hanoi to Ho Chi Minh City is one of Vietnam's busiest domestic routes, spanning about 1,000 km and known in the industry as Vietnam's \"golden route.\" After leaving Hanoi the flight heads south, the Red River Delta unfolding below — a triangular alluvial plain built by long-term sediment deposition from the Red River and its tributaries, covering about 15,000 km² and one of Vietnam's two main agricultural core regions, with Hanoi itself built on the delta." +
+      "Flying from Hanoi to Ho Chi Minh City is one of Vietnam's busiest domestic routes, spanning about 1,160 km and known in the industry as Vietnam's \"golden route.\" After leaving Hanoi the flight heads south, the Red River Delta unfolding below — a triangular alluvial plain built by long-term sediment deposition from the Red River and its tributaries, covering about 15,000 km² and one of Vietnam's two main agricultural core regions, with Hanoi itself built on the delta." +
       " The flight continues south, passing over the Central Highlands midway — a collective name for a series of connected plateaus in south-central Vietnam at roughly 500–1,500 m elevation, its basalt-weathered red laterite soil widely visible beneath extensive coffee plantations, before the flight lands in Ho Chi Minh City, Vietnam's largest city and economic centre.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 红河三角洲约 1.5 万 km²、西原 500–1500 m；全程距离原写约 1000 km，按大圆改为约 1160 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到胡志明市飞约120分钟，同一时区，是越南航空运营的国内航班之一，这条航线是全球客流量最高的国内航线之一。内排机场距河内市区约35公里；新山一机场距胡志明市中心约8公里。这条航线连接越南南北两大门户城市。",
@@ -3500,6 +3665,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Hanoi to Da Nang links Vietnam's capital with the largest city in the centre of the country. After leaving Hanoi the flight heads south, passing over the Trang An Landscape Complex midway — a valley in Ninh Binh Province where karst towers interweave with underground waterways, covering about 6,226 ha, its valleys threaded with submerged caves navigable by small boat, inscribed on the UNESCO World Heritage List in 2014 as Vietnam's first mixed cultural and natural heritage site." +
       " The flight continues south, and just before landing Ngu Hanh Son (the Marble Mountains) unfolds below — a cluster of five low marble hills on the coast south of Da Nang, each named after one of the five classical elements — before the flight lands in Da Nang, the largest city in central Vietnam and an ideal gateway for Hoi An and Hue.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 长安名胜群 2014 年越南首个混合遗产与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到岘港飞约83分钟，同一时区，是越捷航空运营的国内航班之一。内排机场距河内市区约35公里；岘港国际机场距市中心约3公里。岘港是探索会安古镇与顺化皇城的理想门户。",
@@ -3517,6 +3683,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ho Chi Minh City to Phu Quoc links southern Vietnam's economic centre with the country's largest resort island. After leaving Ho Chi Minh City the flight heads south-west, the Mekong Delta unfolding below — the vast alluvial plain the Mekong builds in southern Vietnam before reaching the sea, covering about 39,000 km² and one of the largest river deltas in the world, its dense network of channels and man-made canals forming a distinctive water-town landform." +
       " Past the delta, the flight continues south-west across open water; Phu Quoc gradually comes into view, before the flight lands on Phu Quoc, Vietnam's largest island, more than half of it forested within a national park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 湄公河三角洲约 3.9 万 km²「世界最大河流三角洲之一」、富国岛过半为国家公园与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "胡志明市到富国岛飞约65分钟，同一时区，是越捷航空运营的国内航班之一。新山一机场距胡志明市中心约8公里；富国国际机场距阳东镇约15公里。富国岛是越南南部重要的海岛度假目的地。",
@@ -3534,6 +3701,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Hanoi to Can Tho spans the full length of Vietnam, linking the capital with the core city of the Mekong Delta. After leaving Hanoi the flight heads south, the Red River Delta unfolding below — the triangular alluvial plain built by the Red River and its tributaries, on which Hanoi itself is built." +
       " The flight continues south the length of the country, and just before landing the Mekong Delta unfolds below — the vast alluvial plain the Mekong builds in southern Vietnam, its channels branching everywhere and floating markets lining the waterways — before the flight lands in Can Tho, the largest city in the Mekong Delta and the core gateway for exploring its floating markets and river-town culture.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 无可核数字或排名。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到芹苴飞约135分钟，同一时区，是越南航空运营的国内航班之一。内排机场距河内市区约35公里；芹苴国际机场距市区约10公里。芹苴是探索凤凰水上市场的理想门户。",
@@ -3551,6 +3719,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Hanoi to Hue links Vietnam's capital with the ancient imperial capital of the centre. After leaving Hanoi the flight heads south, passing over the Trang An Landscape Complex midway — a valley in Ninh Binh Province where karst towers interweave with underground waterways navigable by small boat, often called \"Ha Long Bay on land.\"" +
       " Past Trang An, the flight continues south, gradually approaching Vietnam's central coast, before landing in Hue, the Nguyen dynasty's capital from 1802 to 1945, with the Complex of Hue Monuments inscribed on the UNESCO World Heritage List in 1993.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 顺化 1802–1945 阮朝都城、1993 年列入 UNESCO。核实 2026-09-11
     travel: {
     "zh-CN":
       "河内到顺化飞约70分钟，同一时区，是越南航空运营的国内航班之一，每日往返约3班。内排机场距河内市区约35公里；富牌国际机场距顺化市中心约15公里。顺化是探索阮朝皇城与皇陵的理想门户。",
@@ -3568,6 +3737,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Da Nang to Ho Chi Minh City links central Vietnam with the country's southern economic centre. After leaving Da Nang the flight heads south, passing over the Central Highlands midway — a collective name for a series of connected plateaus in south-central Vietnam at roughly 500–1,500 m elevation, its basalt-weathered red laterite soil widely visible beneath extensive coffee and rubber plantations, with Da Lat's Lam Vien Plateau enjoying a mild climate year-round." +
       " The flight continues south, gradually approaching the plains of southern Vietnam, before landing in Ho Chi Minh City, Vietnam's largest city and economic centre, its commercial and cultural atmosphere a sharp contrast with the coastal cities of the centre.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 竹子航空 2026-08-01 起停止定期航班属实 —— 会过期的现状，下轮复核。核实 2026-09-11
     travel: {
     "zh-CN":
       "岘港到胡志明市飞约90分钟，同一时区，是越捷航空运营的国内航班之一（原竹子航空已于2026年8月停止全部定期航班）。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
@@ -3579,12 +3749,13 @@ export const ROUTE_NARRATION: Record<
   "kul-pen": {
     study: {
     "zh-CN":
-      "吉隆坡飞槟城，是马来半岛西海岸最繁忙的国内航线之一，全程约300公里，是马来西亚航空客流量最高的航线之一。飞机离开吉隆坡后向西北飞行，脚下先掠过巴生河谷的城市化平原，随后进入马来半岛西海岸相对平坦的沿海低地地带，大片棕榈油种植园从空中清晰可辨。" +
+      "吉隆坡飞槟城，是马来半岛西海岸最繁忙的国内航线之一，全程约330公里，是马来西亚航空客流量最高的航线之一。飞机离开吉隆坡后向西北飞行，脚下先掠过巴生河谷的城市化平原，随后进入马来半岛西海岸相对平坦的沿海低地地带，大片棕榈油种植园从空中清晰可辨。" +
       "飞机继续向西北飞行，沿途可见蒂蒂旺沙山脉西侧余脉在内陆隐约可见，海岸线一侧棕榈种植园与红树林交替分布，最终降落在槟城——马来半岛西北岸外一座花岗岩岛屿，2008年老城区乔治市列入UNESCO世界遗产名录。",
     "en-US":
-      "Flying from Kuala Lumpur to Penang is one of the busiest domestic routes on the peninsula's west coast, spanning about 300 km. After leaving Kuala Lumpur the flight heads northwest, first passing over the urbanised plain of the Klang Valley before entering the comparatively flat coastal lowland of the peninsula's west coast." +
+      "Flying from Kuala Lumpur to Penang is one of the busiest domestic routes on the peninsula's west coast, spanning about 330 km. After leaving Kuala Lumpur the flight heads northwest, first passing over the urbanised plain of the Klang Valley before entering the comparatively flat coastal lowland of the peninsula's west coast." +
       " The flight continues northwest, the western foothills of the Titiwangsa Mountains faintly visible inland, palm plantations and mangroves alternating along the coastline, before landing on Penang, a granite island off the peninsula's northwest coast whose old town of George Town was inscribed on the UNESCO World Heritage List in 2008.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 乔治市 2008 年列入 UNESCO；全程距离原写约 300 km，按大圆（325 km）改为约 330 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到槟城飞约55分钟，同一时区，是亚洲航空运营的国内航班之一（每日约9班）。吉隆坡国际机场距市区约45公里；槟城国际机场距乔治市约18公里。这是马来西亚客流量最高的国内航线之一。",
@@ -3602,6 +3773,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Kuala Lumpur to Kota Kinabalu is the core route linking the Malay Peninsula with Borneo, spanning about 1,630 km — Malaysia's highest-volume domestic route. After leaving Kuala Lumpur the flight heads east, soon crossing the peninsula's east coast into the open waters of the South China Sea." +
       " The flight continues over the South China Sea for more than two hours; as it nears the Bornean coast, the bare granite summit of Mount Kinabalu emerges from the sea of cloud — at 4,095 m, the highest peak in Malaysia and the Malay Archipelago — before landing in Kota Kinabalu, capital of Sabah and the core gateway to Kinabalu Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 京那巴鲁 4095 m 与本库一致；全程约 1630 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到亚庇飞约150分钟，同一时区，是亚洲航空运营的国内航班之一，是马来西亚境内客流量最大的单一航线（每日多达14至16班）。吉隆坡国际机场距市区约45公里；亚庇国际机场距市区约7公里。",
@@ -3613,12 +3785,13 @@ export const ROUTE_NARRATION: Record<
   "kul-kch": {
     study: {
     "zh-CN":
-      "吉隆坡飞古晋，是连接马来半岛与砂拉越的主要航线，全程约1110公里，是马来西亚境内客流量位居前列的国内航线之一，全天多个班次往返两地。飞机离开吉隆坡后向东南飞行，越过马来半岛南部后进入南海，飞越加里曼丹岛与马来半岛之间的开阔海域。" +
+      "吉隆坡飞古晋，是连接马来半岛与砂拉越的主要航线，全程约970公里，是马来西亚境内客流量位居前列的国内航线之一，全天多个班次往返两地。飞机离开吉隆坡后向东南飞行，越过马来半岛南部后进入南海，飞越加里曼丹岛与马来半岛之间的开阔海域。" +
       "飞机继续向东南飞行，接近砂拉越海岸时，巴哥国家公园沿岸砂岩地貌与海蚀柱景观隐约可见，最终降落在古晋——砂拉越州首府，坐落于砂拉越河畔，是探索姆鲁山国家公园与尼亚洞穴的重要门户。",
     "en-US":
-      "Flying from Kuala Lumpur to Kuching is the main route linking the Malay Peninsula with Sarawak, spanning about 1,110 km. After leaving Kuala Lumpur the flight heads southeast, crossing the southern peninsula before entering the South China Sea and flying over the open water between Borneo and the peninsula." +
+      "Flying from Kuala Lumpur to Kuching is the main route linking the Malay Peninsula with Sarawak, spanning about 970 km. After leaving Kuala Lumpur the flight heads southeast, crossing the southern peninsula before entering the South China Sea and flying over the open water between Borneo and the peninsula." +
       " The flight continues southeast; as it nears the Sarawak coast, the sandstone coastal landform and sea stacks of Bako National Park become faintly visible, before landing in Kuching, capital of Sarawak on the banks of the Sarawak River and an important gateway to Gunung Mulu National Park and the Niah Caves.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 1110 km，按大圆改为约 970 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到古晋飞约110分钟，同一时区，是亚洲航空运营的国内航班之一（全天多班）。吉隆坡国际机场距市区约45公里；古晋国际机场距市区约11公里。",
@@ -3630,12 +3803,13 @@ export const ROUTE_NARRATION: Record<
   "kul-lgk": {
     study: {
     "zh-CN":
-      "吉隆坡飞浮罗交怡，是马来半岛西海岸北向的热门航线，全程约370公里，是马来西亚知名的度假岛屿航线之一，尤其在节假日期间班次密集。飞机离开吉隆坡后向西北飞行，沿途经过槟城以北海域，逐渐接近马来半岛与泰国交界的安达曼海海域。" +
+      "吉隆坡飞浮罗交怡，是马来半岛西海岸北向的热门航线，全程约450公里，是马来西亚知名的度假岛屿航线之一，尤其在节假日期间班次密集。飞机离开吉隆坡后向西北飞行，沿途经过槟城以北海域，逐渐接近马来半岛与泰国交界的安达曼海海域。" +
       "飞机继续向西北飞行，浮罗交怡群岛错落分布的岛屿与基林河口红树林、喀斯特尖峰地貌逐渐显现，最终降落在浮罗交怡——2007年获认定为东南亚首个UNESCO世界地质公园，地质记录跨越逾5.5亿年。",
     "en-US":
-      "Flying from Kuala Lumpur to Langkawi is a popular route heading north along the peninsula's west coast, spanning about 370 km. After leaving Kuala Lumpur the flight heads northwest, passing waters north of Penang and approaching the Andaman Sea near the Malaysia-Thailand border." +
+      "Flying from Kuala Lumpur to Langkawi is a popular route heading north along the peninsula's west coast, spanning about 450 km. After leaving Kuala Lumpur the flight heads northwest, passing waters north of Penang and approaching the Andaman Sea near the Malaysia-Thailand border." +
       " The flight continues northwest, the scattered islands of the Langkawi archipelago and the mangroves and karst pinnacles of the Kilim estuary gradually coming into view, before landing on Langkawi, recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 浮罗交怡 2007 年东南亚首个 UNESCO 世界地质公园与本库一致；全程距离原写约 370 km，按大圆改为约 450 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到浮罗交怡飞约65分钟，同一时区，是亚洲航空运营的国内航班之一。吉隆坡国际机场距市区约45公里；浮罗交怡国际机场距瓜镇约11公里。浮罗交怡是马来西亚知名的免税购物与度假岛屿。",
@@ -3653,6 +3827,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Kuala Lumpur to Kota Bharu crosses the Malay Peninsula, linking its west and east coasts, spanning about 420 km. After leaving Kuala Lumpur the flight heads northeast, first passing over the Titiwangsa Mountains — the peninsula's backbone range, a continuous green ridge running down its centre." +
       " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, at whose centre Gunung Tahan rises as the highest peak on the peninsula, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 420 km（大圆约 386 km，在容差内）；「马来传统文化保存最完整的城市之一」带限定、为定性说法，核实代理报 unknown，调用方判保留。核实 2026-09-11
     travel: {
     "zh-CN":
       "吉隆坡到哥打巴鲁飞约60分钟，同一时区，是亚洲航空运营的国内航班之一。吉隆坡国际机场距市区约45公里；苏丹依斯迈布特拉机场距市区约8公里。",
@@ -3664,50 +3839,53 @@ export const ROUTE_NARRATION: Record<
   "sdk-bki": {
     study: {
     "zh-CN":
-      "山打根飞亚庇，是沙巴内陆的区域航线，全程约230公里，由婆罗洲航空（前身马仕运航空，2026年初完成品牌重组）运营，是沙巴境内客流量最大的支线航班之一，也是连接沙巴东西海岸的重要空中通道。飞机离开山打根后向西飞行，脚下逐渐展开克罗克山脉连绵起伏的山脊地貌。" +
-      "克罗克山脉呈南北走向、长约120公里，无突出的单一主峰，是京那巴鲁山所在花岗岩体的组成部分；飞机继续向西飞行，越过克罗克山脉后进入沿海平原，最终降落在亚庇——沙巴州首府。",
+      "山打根飞亚庇，是沙巴内陆的区域航线，全程约230公里，是沙巴境内客流量最大的支线航班之一，也是连接沙巴东西海岸的重要空中通道。飞机离开山打根后向西飞行，脚下逐渐展开克罗克山脉连绵起伏的山脊地貌。" +
+      "克罗克山脉呈南北走向、长约120公里，无突出的单一主峰，主体为深海浊积砂岩与泥岩，与不远处京那巴鲁山年轻的花岗岩体分属不同的地质单元；飞机继续向西飞行，越过克罗克山脉后进入沿海平原，最终降落在亚庇——沙巴州首府。",
     "en-US":
-      "Flying from Sandakan to Kota Kinabalu is a regional route within Sabah, spanning about 230 km, operated by AirBorneo (formerly MASwings, which completed its rebrand in early 2026). After leaving Sandakan the flight heads west, the rolling ridgeline of the Crocker Range gradually unfolding below." +
-      " The Crocker Range runs north-south for about 120 km with no single dominant peak, forming part of the same granite massif as Mount Kinabalu; the flight continues west, crossing the range before descending over the coastal plain and landing in Kota Kinabalu, capital of Sabah.",
+      "Flying from Sandakan to Kota Kinabalu is a regional route within Sabah, spanning about 230 km. After leaving Sandakan the flight heads west, the rolling ridgeline of the Crocker Range gradually unfolding below." +
+      " The Crocker Range runs north-south for about 120 km with no single dominant peak, a sedimentary range distinct from the younger granite massif of nearby Mount Kinabalu; the flight continues west, crossing the range before descending over the coastal plain and landing in Kota Kinabalu, capital of Sabah.",
     },
+    // travel sources: 全四段（study/travel × 中英）: AirBorneo 2026-01 接管原马仕运航空属实；克罗克山脉与京那巴鲁地质关系原为旧说法，已按本库 terrain/crocker-range 改。核实 2026-09-11
     travel: {
     "zh-CN":
-      "山打根到亚庇飞约55分钟，同一时区，是婆罗洲航空运营的沙巴内陆航班之一（ATR 72-500机型），该航司2026年初由马仕运航空重组而来，由砂拉越州政府接管运营。山打根机场距市区约11公里；亚庇国际机场距市区约7公里。",
+      "山打根到亚庇飞约55分钟，同一时区，是沙巴内陆航班之一。山打根机场距市区约11公里；亚庇国际机场距市区约7公里。",
     "en-US":
-      "Sandakan to Kota Kinabalu is about 55 minutes, same time zone, operated by AirBorneo (ATR 72-500) as one of Sabah's regional routes; the airline was formed in early 2026 through the rebranding of MASwings under Sarawak state government ownership. Sandakan Airport is about 11 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
+      "Sandakan to Kota Kinabalu is about 55 minutes, same time zone, one of Sabah's regional routes. Sandakan Airport is about 11 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
     },
   },
 
   "kch-myy": {
     study: {
     "zh-CN":
-      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约420公里，由婆罗洲航空运营，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
+      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约510公里，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
       "飞机继续向东北飞行，接近美里前掠过尼亚国家公园——苏比斯山石灰岩地块北缘的洞穴群，大洞洞口高逾60米，2024年列入UNESCO世界遗产名录，最终降落在美里——砂拉越东北部港口城市，是探索姆鲁山国家公园的重要中转枢纽。",
     "en-US":
-      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 420 km, operated by AirBorneo. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
+      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 510 km. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
       " The flight continues northeast, passing near Niah National Park before reaching Miri — a cave complex on the northern edge of the Gunong Subis limestone massif, its Great Cave mouth more than 60 m high, inscribed on the UNESCO World Heritage List in 2024 — before landing in Miri, a port city in northeastern Sarawak and an important transit hub for exploring Gunung Mulu National Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 尼亚国家公园 2024 年列入 UNESCO 与本库一致；全程距离原写约 420 km，按大圆改为约 510 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "古晋到美里飞约75分钟，同一时区，是婆罗洲航空运营的砂拉越内陆航班之一（ATR 72-500机型）。古晋国际机场距市区约11公里；美里机场距市区约8公里。美里是转乘小型飞机前往姆鲁山国家公园的重要枢纽。",
+      "古晋到美里飞约75分钟，同一时区，是砂拉越内陆航班之一。古晋国际机场距市区约11公里；美里机场距市区约8公里。美里是转乘小型飞机前往姆鲁山国家公园的重要枢纽。",
     "en-US":
-      "Kuching to Miri is about 75 minutes, same time zone, operated by AirBorneo (ATR 72-500) as one of Sarawak's regional routes. Kuching International Airport is about 11 km from the city centre; Miri Airport is about 8 km from the city centre. Miri is an important hub for connecting flights to Gunung Mulu National Park.",
+      "Kuching to Miri is about 75 minutes, same time zone, one of Sarawak's regional routes. Kuching International Airport is about 11 km from the city centre; Miri Airport is about 8 km from the city centre. Miri is an important hub for connecting flights to Gunung Mulu National Park.",
     },
   },
   "ubn-hvd": {
     study: {
     "zh-CN":
       "乌兰巴托飞科布多，是一条横贯蒙古中西部的航线，全程约1100公里。飞机离开乌兰巴托后向西飞行，脚下逐渐展开杭爱山连绵起伏的山地地貌——蒙古中部主要山系，森林与高山草甸交错分布，鄂尔浑河、色楞格河等蒙古主要河流均发源于此。" +
-      "越过杭爱山后，飞机继续向西飞行，逐渐进入大湖盆地——由蒙古阿尔泰山、戈壁阿尔泰山与杭爱山三面环绕的内流干旱盆地，脚下可见多个咸淡水湖泊星罗棋布，最终降落在科布多——蒙古西部多民族聚居区域的历史中心城市，坐落于科布多河畔、紧邻哈尔乌苏湖。",
+      "越过杭爱山后，飞机继续向西飞行，逐渐进入大湖盆地——由蒙古阿尔泰山、戈壁阿尔泰山与杭爱山三面环绕的内流干旱盆地，脚下可见多个咸淡水湖泊星罗棋布，最终降落在科布多——蒙古西部多民族聚居区域的历史中心城市，坐落在阿尔泰山脉东麓，东面不远就是哈尔乌苏湖。",
     "en-US":
       "Flying from Ulaanbaatar to Khovd crosses central-western Mongolia, spanning about 1,100 km. After leaving Ulaanbaatar the flight heads west, the rolling terrain of the Khangai Mountains unfolding below — the main range of central Mongolia, forest and alpine meadow interwoven, source of the Orkhon, Selenge and other major Mongolian rivers." +
-      " Past the Khangai, the flight continues west into the Great Lakes Depression — an endorheic arid basin ringed on three sides by the Mongol Altai, the Gobi Altai and the Khangai, multiple saline and freshwater lakes scattered below, before landing in Khovd, the historic centre of western Mongolia's multi-ethnic communities, on the Khovd River near Khar-Us Lake.",
+      " Past the Khangai, the flight continues west into the Great Lakes Depression — an endorheic arid basin ringed on three sides by the Mongol Altai, the Gobi Altai and the Khangai, multiple saline and freshwater lakes scattered below, before landing in Khovd, the historic centre of western Mongolia's multi-ethnic communities, at the eastern foot of the Altai, with Khar-Us Lake a short way to the east.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 蒙古阿尔泰、呼依滕峰 4374 m 与本库一致；「科布多河畔」因本库城市条目前后矛盾、只有 3 级来源，改为不点河名；航司原写航蒙航空（无国内航班），按航线数据改为 MIAT、约 70 分钟。核实 2026-09-11
     travel: {
     "zh-CN":
-      "乌兰巴托到科布多飞约120分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；科布多机场距市区很近。科布多是探索蒙古西部多民族聚居区与蒙古阿尔泰山的重要门户。",
+      "乌兰巴托到科布多飞约70分钟，同一时区，是蒙古国际航空（MIAT）运营的国内航班之一。成吉思汗国际机场距市区约52公里；科布多机场距市区很近。科布多是探索蒙古西部多民族聚居区与蒙古阿尔泰山的重要门户。",
     "en-US":
-      "Ulaanbaatar to Khovd is about 120 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Khovd Airport is close to the city centre. Khovd is an important gateway for western Mongolia's multi-ethnic communities and the Mongol Altai.",
+      "Ulaanbaatar to Khovd is about 70 minutes, same time zone, operated by MIAT Mongolian Airlines as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Khovd Airport is close to the city centre. Khovd is an important gateway for western Mongolia's multi-ethnic communities and the Mongol Altai.",
     },
   },
 
@@ -3720,11 +3898,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ulaanbaatar to Ölgii is one of Mongolia's longest scheduled domestic routes, spanning about 1,250 km to the country's westernmost point. After leaving Ulaanbaatar the flight heads west, passing successively over the forested, meadow-covered terrain of the Khangai and the scattered saline and freshwater lakes of the Great Lakes Depression." +
       " The flight continues west into the airspace of the Mongol Altai — a belt of high snow peaks running about 900 km along Mongolia's western border — the modern glaciers of the Tavan Bogd massif visible below, before landing in Ölgii, the main home of Mongolia's Kazakh community and the core gateway to Khüiten Peak, the country's highest point.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿尔泰山、哈萨克族驯鹰文化；航司原写航蒙航空，按航线数据改为 MIAT、约 80 分钟，删去未核实的「4 至 10 月运营」。核实 2026-09-11
     travel: {
     "zh-CN":
-      "乌兰巴托到乌力吉飞约140分钟，同一时区，是航蒙航空运营的国内航班之一，每年4至10月运营。成吉思汗国际机场距市区约52公里；乌力吉国际机场距市区很近。乌力吉是探索塔王博格达山群与哈萨克族传统文化的重要门户。",
+      "乌兰巴托到乌力吉飞约80分钟，同一时区，是蒙古国际航空（MIAT）运营的国内航班之一。成吉思汗国际机场距市区约52公里；乌力吉国际机场距市区很近。乌力吉是探索塔王博格达山群与哈萨克族传统文化的重要门户。",
     "en-US":
-      "Ulaanbaatar to Ölgii is about 140 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes, running April through October. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Ölgii International Airport is close to the city centre. Ölgii is an important gateway to the Tavan Bogd massif and traditional Kazakh culture.",
+      "Ulaanbaatar to Ölgii is about 80 minutes, same time zone, operated by MIAT Mongolian Airlines as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Ölgii International Airport is close to the city centre. Ölgii is an important gateway to the Tavan Bogd massif and traditional Kazakh culture.",
     },
   },
 
@@ -3737,11 +3916,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ulaanbaatar to Mörön links the Mongolian capital with the gateway city to Lake Khövsgöl, spanning about 540 km. After leaving Ulaanbaatar the flight heads northwest, the terrain of the northern Khangai foothills narrowing below, forest cover gradually increasing, with a clear transition line visible from steppe to coniferous forest — a classic stretch of Mongolia's northern forest-steppe ecotone, its rivers radiating outward in all directions." +
       " The flight continues northwest, the mountainous terrain giving way to a broader river-valley basin, before landing in Mörön, capital of Khövsgöl Province, on the flat valley floor of the Delgermörön River ringed by forested mountains — the core gateway to Lake Khövsgöl, Mongolia's largest freshwater lake, and the traditional territory of local Tuvan and Darkhad nomadic communities.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 杭爱山、库苏古尔湖门户；航司原写航蒙航空，按航线数据改为 MIAT。核实 2026-09-11
     travel: {
     "zh-CN":
-      "乌兰巴托到木伦飞约70分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；木伦机场距市区很近。木伦是探索库苏古尔湖的理想门户，从市区到湖南岸的哈特嘎尔村约需1至1.5小时车程。",
+      "乌兰巴托到木伦飞约70分钟，同一时区，是蒙古国际航空（MIAT）运营的国内航班之一。成吉思汗国际机场距市区约52公里；木伦机场距市区很近。木伦是探索库苏古尔湖的理想门户，从市区到湖南岸的哈特嘎尔村约需1至1.5小时车程。",
     "en-US":
-      "Ulaanbaatar to Mörön is about 70 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Mörön Airport is close to the city centre. Mörön is an ideal gateway for exploring Lake Khövsgöl; the drive from town to Khatgal village on the south shore takes about 1 to 1.5 hours.",
+      "Ulaanbaatar to Mörön is about 70 minutes, same time zone, operated by MIAT Mongolian Airlines as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Mörön Airport is close to the city centre. Mörön is an ideal gateway for exploring Lake Khövsgöl; the drive from town to Khatgal village on the south shore takes about 1 to 1.5 hours.",
     },
   },
 
@@ -3754,11 +3934,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ulaanbaatar to Dalanzadgad is the core route into Mongolia's South Gobi, spanning about 490 km. After leaving Ulaanbaatar the flight heads south, the steppe landscape below gradually giving way to grey-brown Gobi desert, its surface a continuous expanse of gravel rather than dunes — a sharp north-south contrast with the forest-steppe of central Mongolia, with scattered seasonal oases and isolated massifs occasionally visible." +
       " The flight continues south, approaching the Gurvan Saikhan Mountains — a range of three parallel ridges whose highest peak reaches 2,825 m, a montane ecological island within the Gobi desert — before landing in Dalanzadgad, capital of South Gobi Province and the core gateway to Gobi Gurvansaikhan National Park (Khongoryn Els, Yolyn Am, Bayanzag).",
     },
+    // travel sources: 全四段（study/travel × 中英）: 古尔班赛罕山 2825 m、戈壁以砾漠为主与本库一致；航司原写航蒙航空，按航线数据改为 MIAT。核实 2026-09-11
     travel: {
     "zh-CN":
-      "乌兰巴托到达兰扎德嘎德飞约60分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；达兰扎德嘎德机场距市区很近。达兰扎德嘎德是探索洪戈林额勒斯沙丘、约林音峡谷与巴彦扎格的理想门户。",
+      "乌兰巴托到达兰扎德嘎德飞约60分钟，同一时区，是蒙古国际航空（MIAT）运营的国内航班之一。成吉思汗国际机场距市区约52公里；达兰扎德嘎德机场距市区很近。达兰扎德嘎德是探索洪戈林额勒斯沙丘、约林音峡谷与巴彦扎格的理想门户。",
     "en-US":
-      "Ulaanbaatar to Dalanzadgad is about 60 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Dalanzadgad Airport is close to the city centre. Dalanzadgad is an ideal gateway for exploring Khongoryn Els, Yolyn Am and Bayanzag.",
+      "Ulaanbaatar to Dalanzadgad is about 60 minutes, same time zone, operated by MIAT Mongolian Airlines as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Dalanzadgad Airport is close to the city centre. Dalanzadgad is an ideal gateway for exploring Khongoryn Els, Yolyn Am and Bayanzag.",
     },
   },
 
@@ -3771,11 +3952,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ulaanbaatar to Choibalsan links the Mongolian capital with the core city of the eastern steppe, spanning about 580 km. After leaving Ulaanbaatar the flight heads east, first passing over the winding course of the Kherlen River — rising in the Khentii Mountains, it has long supplied water to nomadic settlements along its banks, its green riverside band standing out against the open grassland." +
       " The flight continues east into the Eastern Steppe — the Mongolian portion of the Daurian steppe ecosystem — boundless open grassland stretching to the horizon, before landing in Choibalsan, capital of Dornod Province, on the Kherlen River and the core gateway to Mongolia's eastern steppe.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 克鲁伦河源于肯特山、东部草原为达乌尔草原蒙古境内部分与本库一致；航司原写航蒙航空，航线数据 status 为 wrong，改为不具名。核实 2026-09-11
     travel: {
     "zh-CN":
-      "乌兰巴托到乔巴山飞约75分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；乔巴山机场距市区很近。乔巴山是探索蒙古达乌尔严格保护区与东部草原游牧生活的理想门户。",
+      "乌兰巴托到乔巴山飞约75分钟，同一时区，是蒙古国内定期航班之一。成吉思汗国际机场距市区约52公里；乔巴山机场距市区很近。乔巴山是探索蒙古达乌尔严格保护区与东部草原游牧生活的理想门户。",
     "en-US":
-      "Ulaanbaatar to Choibalsan is about 75 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Choibalsan Airport is close to the city centre. Choibalsan is an ideal gateway for exploring the Mongol Daguur Strictly Protected Area and nomadic life on the eastern steppe.",
+      "Ulaanbaatar to Choibalsan is about 75 minutes, same time zone, one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Choibalsan Airport is close to the city centre. Choibalsan is an ideal gateway for exploring the Mongol Daguur Strictly Protected Area and nomadic life on the eastern steppe.",
     },
   },
 
@@ -3788,6 +3970,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Cebu is the Philippines' busiest domestic route, spanning about 570 km, an air corridor linking Luzon with the core city of the Visayas. After leaving Manila the flight heads southeast, crossing the hilly terrain of southern Luzon before entering Visayan waters and flying over the open Sibuyan Sea." +
       " The flight continues southeast, approaching Cebu Island, before landing in Cebu — the oldest city in the Philippines, on the east coast of Cebu Island, an economic and tourism hub for the Visayas, where Magellan's expedition first landed in 1521.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 1521 年麦哲伦船队抵达宿务；马尼拉—宿务为菲律宾最繁忙国内线。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到宿务飞约95分钟，同一时区，是宿务太平洋航空运营的国内航班之一（全天多班），是菲律宾客流量最高的国内航线。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；麦克坦—宿务国际机场距宿务市区约16公里。",
@@ -3805,11 +3988,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Davao is the core route linking Luzon with Mindanao, spanning about 950 km. After leaving Manila the flight heads southeast over the Visayas, passing above Negros Island, the elongated caldera of Mount Kanlaon faintly visible through gaps in the clouds — the highest peak in the Visayas and still the Philippines' third-most-active volcano." +
       " The flight continues southeast across the Mindanao Sea into the airspace of northern Mindanao, before landing in Davao, Mindanao's largest city and the core gateway to Mount Apo, the Philippines' highest peak.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 甘伦火山第三活跃、阿波山最高峰与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
+      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空快线（PAL Express）运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
     "en-US":
-      "Manila to Davao is about 130 minutes, same time zone, operated by Philippine Airlines as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
+      "Manila to Davao is about 130 minutes, same time zone, operated by PAL Express as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
     },
   },
 
@@ -3822,6 +4006,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Puerto Princesa is the main route linking Luzon with Palawan, spanning about 590 km. After leaving Manila the flight heads southwest, crossing the open waters of the Mindoro Strait, the mountainous outline of Mindoro Island passing below." +
       " The flight continues southwest across the northern Sulu Sea, approaching Palawan, before landing in Puerto Princesa, capital of Palawan Province and the core gateway to the Puerto Princesa Underground River and Palawan's karst landscapes.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 590 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到普林塞萨港飞约90分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；普林塞萨港国际机场距市区约4公里。",
@@ -3839,6 +4024,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Boracay is a popular route linking Metro Manila with one of the Philippines' best-known island resorts, spanning about 315 km. After leaving Manila the flight heads southwest, crossing the mountainous terrain of northern Mindoro before entering the open waters of the Sibuyan Sea." +
       " The flight continues south, approaching the coast of Aklan Province, before landing at Caticlan, the gateway airport opposite Boracay Island, from where visitors take a roughly 10-minute ferry to reach Boracay, one of the Philippines' most popular island resort destinations.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 315 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到长滩岛飞约75分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；卡蒂克兰机场距长滩岛需转乘渡船约10分钟。",
@@ -3850,17 +4036,18 @@ export const ROUTE_NARRATION: Record<
   "mnl-usu": {
     study: {
     "zh-CN":
-      "马尼拉飞科隆，是连接吕宋岛与巴拉望岛北部卡拉棉群岛的航线，全程约315公里，是探索科隆石灰岩岛礁地貌最便捷的空中通道，也是布桑加机场客流量最大的航线。飞机离开马尼拉后向西南飞行，越过民都洛海峡开阔水域，脚下岛屿轮廓逐渐稀疏。" +
+      "马尼拉飞科隆，是连接吕宋岛与巴拉望岛北部卡拉棉群岛的航线，全程约285公里，是探索科隆石灰岩岛礁地貌最便捷的空中通道，也是布桑加机场客流量最大的航线。飞机离开马尼拉后向西南飞行，越过民都洛海峡开阔水域，脚下岛屿轮廓逐渐稀疏。" +
       "飞机继续向西南飞行，逐渐接近卡拉棉群岛，星罗棋布的石灰岩小岛点缀在碧蓝海面之上，最终降落在布桑加岛——科隆—卡拉棉群岛的核心岛屿，岛屿周边分布众多石灰岩崖壁地貌与二战沉船潜水点。",
     "en-US":
-      "Flying from Manila to Coron links Luzon with the Calamian Islands in northern Palawan, spanning about 315 km. After leaving Manila the flight heads southwest, crossing the open waters of the Mindoro Strait." +
+      "Flying from Manila to Coron links Luzon with the Calamian Islands in northern Palawan, spanning about 285 km. After leaving Manila the flight heads southwest, crossing the open waters of the Mindoro Strait." +
       " The flight continues southwest, approaching the Calamian Islands, before landing on Busuanga Island, the core island of the Coron/Calamian group, ringed by numerous limestone cliff landforms and WWII shipwreck dive sites.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 315 km，按大圆改为约 285 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
+      "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空快线（PAL Express）运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
     "en-US":
-      "Manila to Coron is about 65 minutes, same time zone, operated by Philippine Airlines as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Busuanga Airport is about 30 km from Coron town, requiring a road transfer.",
+      "Manila to Coron is about 65 minutes, same time zone, operated by PAL Express as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Busuanga Airport is about 30 km from Coron town, requiring a road transfer.",
     },
   },
 
@@ -3873,6 +4060,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Tagbilaran links Luzon with Bohol Island in the Visayas, spanning about 630 km. After leaving Manila the flight heads southeast, crossing the northern waters of the Visayas; approaching Bohol, the densely packed conical mounds of the Chocolate Hills gradually come into view below." +
       " The flight continues south, landing on Panglao Island, home to Bohol-Panglao International Airport and the core gateway to the Chocolate Hills and Bohol's natural landscapes.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 630 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到塔比拉兰飞约100分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；保和—邦劳国际机场距塔比拉兰市区约18公里。",
@@ -3890,6 +4078,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Manila to Legazpi links Metro Manila with the Bicol Peninsula, spanning about 320 km. After leaving Manila the flight heads southeast, crossing the narrow terrain of the Bicol Peninsula in southern Luzon, hills and rice paddies interweaving below." +
       " Approaching Legazpi, the near-perfectly symmetrical cone of Mayon Volcano gradually comes into view — the Philippines' most active volcano, with the lowest ellipticity index of any stratovolcano globally — before the flight lands in Legazpi, capital of Albay Province and the core gateway for viewing Mayon.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 马荣火山椭圆度最低、400 年喷发逾 49 次与本库一致（未沿用已删的「首座国家公园」）。核实 2026-09-11
     travel: {
     "zh-CN":
       "马尼拉到黎牙实比飞约60分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；比科尔国际机场距黎牙实比市区约8公里。",
@@ -3907,6 +4096,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Cebu to Davao links the regional centres of the Visayas and Mindanao, spanning about 390 km. After leaving Cebu the flight heads southeast, crossing the open waters of the Visayan Sea, islands scattered below." +
       " The flight continues southeast across the Mindanao Sea into the airspace of northern Mindanao, before landing in Davao, Mindanao's largest city, the outline of Mount Apo visible to the northeast just before landing.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 390 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "宿务到达沃飞约65分钟，同一时区，是宿务太平洋航空运营的国内航班之一。麦克坦—宿务国际机场距宿务市区约16公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
@@ -3924,6 +4114,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Denpasar is Indonesia's busiest domestic route, spanning about 990 km and connecting the capital to Bali. After leaving Jakarta the flight heads southeast, first passing over the coastal plains and rice paddies of western Java before entering the volcanic belt of central Java." +
       " The flight continues southeast, Mount Merapi's iconic conical outline visible below — Indonesia's most active volcano, its summit perpetually wreathed in steam; past Merapi, the flight enters East Javanese airspace, the grey-white sand sea of the Bromo Tengger caldera faintly visible through the clouds, dotted with four secondary cones. The flight then crosses the Bali Strait, landing in Denpasar, home to Bali's only commercial airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 默拉皮「印尼最活跃的火山」、布罗莫—腾格尔次生火山锥与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到登巴萨飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一，是印尼客流量最大的单一航线。苏加诺—哈达国际机场距雅加达市区约20公里；伍拉赖国际机场距登巴萨市区约13公里。",
@@ -3941,6 +4132,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Surabaya is the core route running the length of Java, spanning about 690 km and connecting the island's two largest cities at its western and eastern ends. After leaving Jakarta the flight heads east, over the densely settled towns and rice paddies of Java's north coast, gradually giving way to the volcanic terrain of central Java." +
       " The flight continues east, Mount Merapi's conical outline emerging through the clouds — this active volcano, perpetually steaming at its summit, is the most prominent landmark north of Yogyakarta; past Merapi, the flight continues east along Java's north coast, landing in Surabaya, the largest port city in eastern Java and the gateway to Mount Bromo.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 690 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到泗水飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一，全天多个班次往返。苏加诺—哈达国际机场距雅加达市区约20公里；朱安达国际机场距泗水市区约20公里。",
@@ -3958,6 +4150,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Medan is the core route linking Java with Sumatra, spanning about 1,390 km and heading broadly northwest across the Java Sea. After leaving Jakarta the flight heads northwest, first crossing the open waters of the Java Sea before approaching Sumatra's southeastern coast." +
       " The flight continues northwest; after more than two hours it approaches North Sumatran airspace, the outline of Lake Toba — one of the world's largest volcanic caldera lakes — faintly visible through the clouds, Samosir Island clearly distinguishable at its centre. Past Lake Toba, the flight continues northwest, landing in Medan, Sumatra's largest city and the gateway to Lake Toba and the Bukit Lawang orangutan sanctuary.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 多巴湖「世界最大的火山破火山口湖之一」带限定。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到棉兰飞约145分钟，同一时区，是鹰航印尼运营的国内航线之一（每周7班）。苏加诺—哈达国际机场距雅加达市区约20公里；瓜拉纳姆国际机场距棉兰市区约39公里。",
@@ -3975,6 +4168,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Makassar is the core route linking Java with Sulawesi, spanning about 1,430 km and heading broadly east across the Java Sea and the Flores Sea. After leaving Jakarta the flight heads east, first crossing the open waters of the Java Sea, with most of the route flying over the waters between Indonesia's islands." +
       " The flight continues east; after more than two hours it crosses the Makassar Strait and approaches Sulawesi's southwestern coast, landing in Makassar, Sulawesi's largest city and main port, historically the birthplace of the Bugis people's traditional wooden pinisi schooner seafaring culture, and the gateway to the Tana Toraja highlands.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 1430 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到望加锡飞约150分钟，同一时区，是鹰航印尼运营的国内航线之一。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹哈桑努丁国际机场距望加锡市区约21公里。",
@@ -3986,12 +4180,13 @@ export const ROUTE_NARRATION: Record<
   "cgk-bpn": {
     study: {
     "zh-CN":
-      "雅加达飞巴厘巴板，是连接爪哇岛与加里曼丹岛（婆罗洲印尼部分）的核心航线，全程约1170公里，飞行方向大致向东北跨越爪哇海与望加锡海峡，是印尼三大主岛之间空中联系的重要一环。飞机离开雅加达后向东北飞行，脚下先掠过爪哇海开阔水域，此后大部分航程飞越海域、少见陆地地貌。" +
+      "雅加达飞巴厘巴板，是连接爪哇岛与加里曼丹岛（婆罗洲印尼部分）的核心航线，全程约1260公里，飞行方向大致向东北跨越爪哇海与望加锡海峡，是印尼三大主岛之间空中联系的重要一环。飞机离开雅加达后向东北飞行，脚下先掠过爪哇海开阔水域，此后大部分航程飞越海域、少见陆地地貌。" +
       "飞机继续向东北飞行，逾两小时后跨越望加锡海峡，抵近加里曼丹岛东南海岸，最终降落在巴厘巴板——东加里曼丹省的石油工业城市，也是通往印尼正在建设中的新首都努桑塔拉的主要空中门户，近年因迁都项目建设持续升温，是观察印尼国家发展进程的一处窗口。",
     "en-US":
-      "Flying from Jakarta to Balikpapan is the core route linking Java with Kalimantan (Indonesia's portion of Borneo), spanning about 1,170 km and heading broadly northeast across the Java Sea and the Makassar Strait. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea, with most of the route flown over open water." +
+      "Flying from Jakarta to Balikpapan is the core route linking Java with Kalimantan (Indonesia's portion of Borneo), spanning about 1,260 km and heading broadly northeast across the Java Sea and the Makassar Strait. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea, with most of the route flown over open water." +
       " The flight continues northeast; after more than two hours it crosses the Makassar Strait and approaches Kalimantan's southeastern coast, landing in Balikpapan, East Kalimantan's oil-industry city and the main air gateway to Nusantara, Indonesia's new capital currently under construction.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 1170 km（比大圆 1258 km 还短），改为约 1260 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到巴厘巴板飞约135分钟，同一时区，是鹰航印尼运营的国内航班之一。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹阿吉穆罕默德苏莱曼机场距巴厘巴板市区约11公里。",
@@ -4009,6 +4204,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Pangkalan Bun is an important route into Kalimantan's tropical rainforest and orangutan conservation area, spanning about 670 km. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea before gradually approaching Kalimantan's southern coast." +
       " The flight continues northeast, extensive deep-green peat swamp forest and tropical rainforest visible across Kalimantan's southern lowlands, the winding course of the Sekonyer River faintly traceable through the trees — the core area of Tanjung Puting National Park. The flight then lands in Pangkalan Bun, a riverside town in Central Kalimantan and the main gateway for visiting the park to observe wild orangutans.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 670 km 与大圆一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到邦卡兰文飞约85分钟，同一时区，是巴迪克航空运营的国内航班之一。苏加诺—哈达国际机场距雅加达市区约20公里；伊斯坎达尔机场距邦卡兰文市区约3公里。",
@@ -4020,12 +4216,13 @@ export const ROUTE_NARRATION: Record<
   "dps-lbj": {
     study: {
     "zh-CN":
-      "登巴萨飞拉布安巴焦，是巴厘岛通往科莫多国家公园的热门旅游航线，全程约470公里，飞行方向大致向东跨越龙目海峡与松巴哇岛上空。飞机离开登巴萨后向东飞行，脚下先掠过龙目岛，林贾尼火山高耸的锥形轮廓与山体内的塞加拉阿纳克火山口湖清晰可辨。" +
+      "登巴萨飞拉布安巴焦，是巴厘岛通往科莫多国家公园的热门旅游航线，全程约520公里，飞行方向大致向东跨越龙目海峡与松巴哇岛上空。飞机离开登巴萨后向东飞行，脚下先掠过龙目岛，林贾尼火山高耸的锥形轮廓与山体内的塞加拉阿纳克火山口湖清晰可辨。" +
       "越过林贾尼后，飞机继续向东飞行，掠过松巴哇岛与松巴岛之间的海域，逐渐接近弗洛雷斯海西端；科莫多国家公园干旱的稀树草原岛群在云隙间显现，最终降落在拉布安巴焦——弗洛雷斯岛西端的港口小镇，是探索科莫多巨蜥栖息地的核心门户。",
     "en-US":
-      "Flying from Denpasar to Labuan Bajo is a popular tourist route from Bali to Komodo National Park, spanning about 470 km and heading broadly east across the Lombok Strait and over Sumbawa. After leaving Denpasar the flight heads east, passing over Lombok, the towering conical outline of Mount Rinjani and the Segara Anak crater lake within it clearly visible below." +
+      "Flying from Denpasar to Labuan Bajo is a popular tourist route from Bali to Komodo National Park, spanning about 520 km and heading broadly east across the Lombok Strait and over Sumbawa. After leaving Denpasar the flight heads east, passing over Lombok, the towering conical outline of Mount Rinjani and the Segara Anak crater lake within it clearly visible below." +
       " Past Rinjani, the flight continues east over the waters between Sumbawa and Sumba, gradually approaching the western Flores Sea; the dry savanna islands of Komodo National Park come into view through the clouds, before landing in Labuan Bajo, a small port town at the western tip of Flores and the core gateway to the Komodo dragon's habitat.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程距离原写约 470 km（比大圆 520 km 还短），改为约 520 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "登巴萨到拉布安巴焦飞约80分钟，同一时区，是巴迪克航空运营的国内航班之一（每周28班）。伍拉赖国际机场距登巴萨市区约13公里；科莫多机场距拉布安巴焦市区约2公里。",
@@ -4043,6 +4240,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Makassar to Manado is the core route running the length of Sulawesi, spanning about 950 km and connecting the island's major cities at its southwestern and northeastern ends. After leaving Makassar the flight heads northeast, first passing over the mountainous terrain of Sulawesi's southwestern peninsula, the tiered rice terraces and grey-white karst mountains of the Tana Toraja highlands faintly visible through the clouds." +
       " Past Tana Toraja, the flight continues northeast over Sulawesi's central highlands, gradually approaching the Minahasa Peninsula at the island's northeastern tip, before landing in Manado, capital of North Sulawesi province and the core gateway to the coral reef dive sites of Bunaken National Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 塔纳托拉查未涉族群 / 宗教评价。核实 2026-09-11
     travel: {
     "zh-CN":
       "望加锡到万鸦老飞约115分钟，同一时区，是鹰航印尼运营的国内航班之一。苏丹哈桑努丁国际机场距望加锡市区约21公里；萨姆拉图兰吉国际机场距万鸦老市区约13公里。",
@@ -4060,6 +4258,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Jakarta to Yogyakarta is an important intra-Java route linking the capital with a historic cultural city, spanning about 424 km. After leaving Jakarta the flight heads southeast, first passing over the rice paddies and hills of western Java before approaching the volcanic highlands of central Java." +
       " The flight continues southeast, the geothermally active crater cluster and sulphur fumaroles of the Dieng Plateau faintly visible through the clouds, the highland preserving 7th–8th century Hindu temple ruins; past Dieng, the flight lands in Yogyakarta, the centre of Javanese court culture and the gateway to Borobudur, Prambanan and Mount Merapi.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 迪昂高原 7–8 世纪神庙群与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "雅加达到日惹飞约75分钟，同一时区，是鹰航印尼运营的国内航线之一（每日运营）。苏加诺—哈达国际机场距雅加达市区约20公里；日惹国际机场（YIA）距日惹市区约45公里，有机场铁路直达。",
@@ -4077,9 +4276,10 @@ export const ROUTE_NARRATION: Record<
       "Flying from Astana to Almaty is Kazakhstan's busiest domestic route, spanning about 974 km and connecting the current and former capitals. After leaving Astana the flight heads southeast, first passing over the dense futuristic architecture of the left-bank new city before entering the open terrain along the northern edge of the Kazakh Uplands." +
       " The flight continues southeast, the boundless dry steppe of the Saryarka unfolding below, occasionally dotted with isolated granite massif oases; past the steppe, the flight approaches the northern Tian Shan foothills, the snow-capped outline of the Zailiysky Alatau emerging through the clouds, before landing in Almaty, Kazakhstan's former capital at the foot of these peaks.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 974 km（大圆约 951 km）；萨雷阿尔卡与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
+      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
     "en-US":
       "Astana to Almaty is about 110 minutes, same time zone, operated by Air Astana (about 9 flights daily) as Kazakhstan's single busiest domestic route. Astana International Airport is about 17 km from the city centre; Almaty International Airport is about 18 km from the city centre.",
     },
@@ -4088,15 +4288,16 @@ export const ROUTE_NARRATION: Record<
   "ala-sco": {
     study: {
     "zh-CN":
-      "阿拉木图飞阿克套，是横贯哈萨克斯坦东西两端的长途航线，全程约2500公里、飞行时间逾3小时，连接北天山山麓与里海之滨两大门户城市。飞机离开阿拉木图后向西飞行，脚下先掠过哈萨克斯坦南部广袤的荒漠与草原过渡地带。" +
+      "阿拉木图飞阿克套，是横贯哈萨克斯坦东西两端的长途航线，全程约2100公里、飞行时间逾3小时，连接北天山山麓与里海之滨两大门户城市。飞机离开阿拉木图后向西飞行，脚下先掠过哈萨克斯坦南部广袤的荒漠与草原过渡地带。" +
       "飞机继续向西飞行逾3小时，途经哈萨克丘陵、别特帕克达拉沙漠等中部荒漠地带上空，最终跨越乌斯秋尔特高原东缘，降落在阿克套——曼格斯套州首府、哈萨克斯坦里海沿岸最大城市，是探索博兹吉拉峡谷等荒漠奇观的门户。",
     "en-US":
-      "Flying from Almaty to Aktau is a long-haul route spanning Kazakhstan from east to west, covering about 2,500 km and more than 3 hours of flying time, linking the northern Tian Shan foothills with the gateway city on the Caspian shore. After leaving Almaty the flight heads west, first crossing the vast desert-steppe transition zone of southern Kazakhstan." +
+      "Flying from Almaty to Aktau is a long-haul route spanning Kazakhstan from east to west, covering about 2,100 km and more than 3 hours of flying time, linking the northern Tian Shan foothills with the gateway city on the Caspian shore. After leaving Almaty the flight heads west, first crossing the vast desert-steppe transition zone of southern Kazakhstan." +
       " The flight continues west for more than three hours, passing over the Kazakh Uplands and the desert expanse of Betpak-Dala, before crossing the eastern edge of the Ustyurt Plateau and landing in Aktau, capital of Mangystau Region and Kazakhstan's largest city on the Caspian coast, the gateway to desert wonders including Bozzhyra Canyon.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿克套为曼格斯套州首府、里海沿岸最大城市；全程距离原写约 2500 km，按大圆（2081 km）改为约 2100 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿拉木图到阿克套飞约200分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
+      "阿拉木图到阿克套飞约200分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
     "en-US":
       "Almaty to Aktau is about 200 minutes, same time zone, operated by Air Astana (about 33 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
     },
@@ -4109,8 +4310,9 @@ export const ROUTE_NARRATION: Record<
       "飞机继续向南飞行，越过莫因库姆沙漠与图尔克斯坦州的绿洲农业带，最终降落在希姆肯特——哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今是通往突厥斯坦古城的南方门户，也是哈萨克斯坦南部人口最密集的地区之一。",
     "en-US":
       "Flying from Astana to Shymkent is the core north-south trunk route in Kazakhstan, spanning about 974 km and linking the northern steppe capital with a southern Silk Road hub city. After leaving Astana the flight heads south, first crossing the Saryarka steppe and Kazakh Uplands before gradually transitioning into more arid desert terrain." +
-      " The flight continues south, crossing the Moiynkum Desert and the oasis-agriculture belt of Turkistan Region, before landing in Shymkent, Kazakhstan's third-largest city, historically an important Silk Road trading centre and today the southern gateway to the ancient city of Turkestan.",
+      " The flight continues south, crossing the Moiynkum Desert and the oasis-agriculture belt of Turkistan Region, before landing in Shymkent, Kazakhstan's third-largest city by population, historically an important Silk Road trading centre and today the southern gateway to the ancient city of Turkestan.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 974 km 与大圆一致；希姆肯特哈萨克斯坦第三大城市。核实 2026-09-11
     travel: {
     "zh-CN":
       "阿斯塔纳到希姆肯特飞约100分钟，同一时区，是哈萨克斯坦航空/飞阿雷斯坦/天狼星航空共同运营的国内航班之一（每周约54班）。阿斯塔纳国际机场距市区约17公里；希姆肯特国际机场距市区约12公里。",
@@ -4123,14 +4325,15 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "阿拉木图飞希姆肯特，是连接哈萨克斯坦东南部与南部两大城市的航线，全程约620公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
-      "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展，与周边绿洲河谷的绿色植被带形成清晰的边界；越过沙漠后，飞机降落在希姆肯特——哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今仍是南部重要的工业与人口中心。",
+      "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展，与周边绿洲河谷的绿色植被带形成清晰的边界；越过沙漠后，飞机降落在希姆肯特——按人口计哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今仍是南部重要的工业与人口中心。",
     "en-US":
       "Flying from Almaty to Shymkent links Kazakhstan's southeastern and southern hub cities, spanning about 620 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
-      " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below, its boundary with the green vegetation belts of surrounding oasis valleys clearly defined; past the desert, the flight lands in Shymkent, Kazakhstan's third-largest city and historically an important Silk Road trading centre.",
+      " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below, its boundary with the green vegetation belts of surrounding oasis valleys clearly defined; past the desert, the flight lands in Shymkent, Kazakhstan's third-largest city by population and historically an important Silk Road trading centre.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 620 km 与大圆一致；莫因库姆沙漠。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿拉木图到希姆肯特飞约80分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
+      "阿拉木图到希姆肯特飞约80分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
     "en-US":
       "Almaty to Shymkent is about 80 minutes, same time zone, operated by Air Astana (about 10 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
     },
@@ -4139,17 +4342,18 @@ export const ROUTE_NARRATION: Record<
   "nqz-plx": {
     study: {
     "zh-CN":
-      "阿斯塔纳飞谢梅伊，是哈萨克斯坦北部通往东部额尔齐斯河沿岸的航线，全程约690公里，飞行方向大致向东贯穿哈萨克丘陵北部边缘。飞机离开阿斯塔纳后向东飞行，脚下先掠过哈萨克丘陵北缘开阔的草原地带，逐渐接近哈萨克斯坦东部边境山地。" +
+      "阿斯塔纳飞谢梅伊，是哈萨克斯坦北部通往东部额尔齐斯河沿岸的航线，全程约630公里，飞行方向大致向东贯穿哈萨克丘陵北部边缘。飞机离开阿斯塔纳后向东飞行，脚下先掠过哈萨克丘陵北缘开阔的草原地带，逐渐接近哈萨克斯坦东部边境山地。" +
       "飞机继续向东飞行，最终降落在谢梅伊——沿额尔齐斯河而建的历史城市，历史上曾是苏联塞米巴拉金斯克核试验场的行政中心，也是作家陀思妥耶夫斯基流放期间曾居住的城市，如今是额尔齐斯河沿岸重要的文化城市。",
     "en-US":
-      "Flying from Astana to Semey is a route from northern Kazakhstan to the Irtysh River valley in the east, spanning about 690 km. After leaving Astana the flight heads east, first crossing the open steppe along the northern edge of the Kazakh Uplands before approaching the mountainous terrain near Kazakhstan's eastern border." +
+      "Flying from Astana to Semey is a route from northern Kazakhstan to the Irtysh River valley in the east, spanning about 630 km. After leaving Astana the flight heads east, first crossing the open steppe along the northern edge of the Kazakh Uplands before approaching the mountainous terrain near Kazakhstan's eastern border." +
       " The flight continues east, landing in Semey, a historic city on the Irtysh River that was once the administrative centre of the Soviet-era Semipalatinsk Nuclear Test Site and is today an important cultural city along the river.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 谢梅伊为塞米巴拉金斯克核试验场行政中心、陀思妥耶夫斯基流放地为史实；全程距离原写约 690 km，按大圆（622 km）改为约 630 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是哈萨克斯坦航空运营的国内航线之一（巴西航空工业E190机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
+      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是阿斯塔纳航空运营的国内航线之一（空客A320机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
     "en-US":
-      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana (Embraer E190) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
+      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana (Airbus A320) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
     },
   },
 
@@ -4162,11 +4366,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Astana to Pavlodar is a short regional route in northern Kazakhstan, spanning about 410 km and one of the shortest domestic flights out of Astana. After leaving Astana the flight heads northeast, over open steppe transitioning from the northern edge of the Kazakh Uplands toward the West Siberian Plain." +
       " The flight continues northeast and soon lands in Pavlodar, an industrial city on the Irtysh River historically built up around heavy industries such as aluminium and petrochemicals, and today an important industrial and cultural centre along the river.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 410 km 与大圆一致；航司原写哈萨克航空，按航线数据改为 Vietjet Qazaqstan（原哈萨克航空）。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到巴甫洛达尔飞约75分钟，同一时区，是哈萨克航空运营的国内航线之一（德哈维兰Dash 8机型）。阿斯塔纳国际机场距市区约17公里；巴甫洛达尔机场距市区约13公里。",
+      "阿斯塔纳到巴甫洛达尔飞约75分钟，同一时区，是Vietjet Qazaqstan（原哈萨克航空）运营的国内航线之一（德哈维兰Dash 8机型）。阿斯塔纳国际机场距市区约17公里；巴甫洛达尔机场距市区约13公里。",
     "en-US":
-      "Astana to Pavlodar is about 75 minutes, same time zone, operated by Qazaq Air (De Havilland Dash 8) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Pavlodar Airport is about 13 km from the city centre.",
+      "Astana to Pavlodar is about 75 minutes, same time zone, operated by Vietjet Qazaqstan (formerly Qazaq Air; De Havilland Dash 8) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Pavlodar Airport is about 13 km from the city centre.",
     },
   },
 
@@ -4179,9 +4384,10 @@ export const ROUTE_NARRATION: Record<
       "Flying from Astana to Aktau is a long-haul route linking the capital with the Caspian shore, spanning about 1,717 km and more than two and a half hours of flying time. After leaving Astana the flight heads southwest, first crossing the open steppe of the Kazakh Uplands before entering the more arid desert region of central Kazakhstan." +
       " The flight continues southwest for more than two hours, the vast, nearly flat surface of the Betpak-Dala clay desert unfolding below with almost no trace of human activity; past the desert, the flight crosses the eastern edge of the Ustyurt Plateau, landing in Aktau, capital of Mangystau Region and Kazakhstan's largest city on the Caspian coast.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 1717 km 与大圆一致；别特帕克达拉荒漠。核实 2026-09-11
     travel: {
     "zh-CN":
-      "阿斯塔纳到阿克套飞约165分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
+      "阿斯塔纳到阿克套飞约165分钟，同一时区，是阿斯塔纳航空运营的国内航班之一（每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
     "en-US":
       "Astana to Aktau is about 165 minutes, same time zone, operated by Air Astana (about 11 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
     },
@@ -4190,12 +4396,13 @@ export const ROUTE_NARRATION: Record<
   "ala-hsa": {
     study: {
     "zh-CN":
-      "阿拉木图飞突厥斯坦，是通往哈萨克斯坦最重要伊斯兰朝圣地的航线，全程约670公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
+      "阿拉木图飞突厥斯坦，是通往哈萨克斯坦南部历史名城的航线，全程约670公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
       "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展；越过沙漠后，飞机继续向西南飞行，最终降落在突厥斯坦——历史上丝绸之路重要商贸与宗教中心，是探索1389年帖木儿下令始建的亚萨维陵墓的核心门户。",
     "en-US":
-      "Flying from Almaty to Turkestan is the route to Kazakhstan's most important Islamic pilgrimage site, spanning about 670 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
+      "Flying from Almaty to Turkestan is the route to a historic city in southern Kazakhstan, spanning about 670 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
       " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below; past the desert, the flight continues southwest and lands in Turkestan, historically an important Silk Road trading and religious centre and the core gateway to the Yasawi Mausoleum.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 670 km（大圆约 700 km）；亚萨维陵墓 1389 年帖木儿下令始建（UNESCO，1 级）。核实 2026-09-11
     travel: {
     "zh-CN":
       "阿拉木图到突厥斯坦飞约95分钟，同一时区，是飞阿雷斯坦航空运营的国内航线之一（每周约3班）。阿拉木图国际机场距市区约18公里；哈兹拉特苏丹国际机场距突厥斯坦市区约16公里。",
@@ -4207,12 +4414,13 @@ export const ROUTE_NARRATION: Record<
   "ist-esb": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞安卡拉，是土耳其两大城市之间的核心干线航线，全程约350公里，飞行时间约55分钟，连接土耳其最大城市与首都。飞机离开伊斯坦布尔后，脚下先掠过博斯普鲁斯海峡两岸密集的城市建筑，海峡将亚洲与欧洲两大洲分隔开、又被城市连成一体。" +
+      "伊斯坦布尔飞安卡拉，是土耳其两大城市之间的核心干线航线，全程约380公里，飞行时间约55分钟，连接土耳其最大城市与首都。飞机离开伊斯坦布尔后，脚下先掠过博斯普鲁斯海峡两岸密集的城市建筑，海峡将亚洲与欧洲两大洲分隔开、又被城市连成一体。" +
       "飞机继续向东南飞行，逐渐越过马尔马拉地区丘陵，进入开阔的中安纳托利亚高原，脚下农田与草原交织的高原地表向东延展，最终降落在安卡拉——土耳其共和国首都，1923年由凯末尔选定为新都、坐落于高原腹地。",
     "en-US":
-      "Flying from Istanbul to Ankara is the core trunk route between Turkey's two largest cities, spanning about 350 km and about 55 minutes, linking Turkey's largest city with its capital. After leaving Istanbul, the flight first passes over the dense urban fabric on both banks of the Bosphorus, the strait that both separates and, through the city built across it, connects Asia and Europe." +
+      "Flying from Istanbul to Ankara is the core trunk route between Turkey's two largest cities, spanning about 380 km and about 55 minutes, linking Turkey's largest city with its capital. After leaving Istanbul, the flight first passes over the dense urban fabric on both banks of the Bosphorus, the strait that both separates and, through the city built across it, connects Asia and Europe." +
       " The flight continues southeast, gradually crossing the hills of the Marmara region into the open Central Anatolian Plateau, its patchwork of farmland and steppe stretching eastward below, before landing in Ankara — capital of the Republic of Turkey, chosen by Atatürk in 1923 and set in the heart of the plateau.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 1923 年安卡拉定都；博斯普鲁斯与本库一致；全程距离原写约 350 km（比大圆 380 km 还短），改为约 380 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "伊斯坦布尔到安卡拉飞约55分钟，同一时区，是土耳其航空运营的国内航班之一，是土耳其两大城市间客流量最大的航线之一。伊斯坦布尔机场距欧洲区市中心约35公里；埃森博阿机场距安卡拉市区约28公里。",
@@ -4224,12 +4432,13 @@ export const ROUTE_NARRATION: Record<
   "ist-adb": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞伊兹密尔，全程约340公里，飞行时间约70分钟，连接马尔马拉地区与爱琴海地区两大门户城市，是土耳其西部客流量较大的一条国内航线。飞机离开伊斯坦布尔后向西南飞行，先掠过马尔马拉海沿岸低地，逐渐进入西安纳托利亚丘陵与河谷交织的地带。" +
-      "飞机继续向西南飞行，土耳其爱琴海岸深切破碎的海湾与半岛在脚下逐渐显现，博德鲁姆等度假半岛的轮廓依稀可辨，最终降落在伊兹密尔——爱琴海沿岸重要港口，因相对世俗开放的城市氛围被称为“爱琴海明珠”。",
+      "伊斯坦布尔飞伊兹密尔，全程约360公里，飞行时间约70分钟，连接马尔马拉地区与爱琴海地区两大门户城市，是土耳其西部客流量较大的一条国内航线。飞机离开伊斯坦布尔后向西南飞行，先掠过马尔马拉海沿岸低地，逐渐进入西安纳托利亚丘陵与河谷交织的地带。" +
+      "飞机继续向西南飞行，土耳其爱琴海岸深切破碎的海湾与半岛在脚下逐渐显现，博德鲁姆等度假半岛的轮廓依稀可辨，最终降落在伊兹密尔——爱琴海沿岸重要港口，素有“爱琴海明珠”之称。",
     "en-US":
-      "Flying from Istanbul to Izmir spans about 340 km and about 70 minutes, linking the Marmara and Aegean regions' gateway cities. After leaving Istanbul the flight heads southwest, first crossing the lowlands along the Sea of Marmara before entering a belt of western Anatolian hills and river valleys." +
-      " The flight continues southwest, the deeply indented bays and peninsulas of Turkey's Aegean coast gradually coming into view, with resort peninsulas such as Bodrum faintly discernible, before landing in Izmir, an important Aegean port known as the 'Pearl of the Aegean' for its relatively secular, open urban character.",
+      "Flying from Istanbul to Izmir spans about 360 km and about 70 minutes, linking the Marmara and Aegean regions' gateway cities. After leaving Istanbul the flight heads southwest, first crossing the lowlands along the Sea of Marmara before entering a belt of western Anatolian hills and river valleys." +
+      " The flight continues southwest, the deeply indented bays and peninsulas of Turkey's Aegean coast gradually coming into view, with resort peninsulas such as Bodrum faintly discernible, before landing in Izmir, an important Aegean port known as the 'Pearl of the Aegean'.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 「爱琴海明珠」原被编成「因世俗开放得名」，成因与城市宗教氛围的比较一并删去；全程距离原写约 340 km，改为约 360 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "伊斯坦布尔到伊兹密尔飞约70分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；阿德南·门德雷斯机场距伊兹密尔市区约18公里。",
@@ -4241,12 +4450,13 @@ export const ROUTE_NARRATION: Record<
   "ist-ayt": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞安塔利亚，全程约480公里，飞行时间约85分钟，连接马尔马拉地区与土耳其地中海沿岸旅游核心枢纽。飞机离开伊斯坦布尔后向东南飞行，先掠过马尔马拉低地，逐渐进入中安纳托利亚高原边缘开阔的农田与草原地带。" +
+      "伊斯坦布尔飞安塔利亚，全程约520公里，飞行时间约85分钟，连接马尔马拉地区与土耳其地中海沿岸旅游核心枢纽。飞机离开伊斯坦布尔后向东南飞行，先掠过马尔马拉低地，逐渐进入中安纳托利亚高原边缘开阔的农田与草原地带。" +
       "飞机继续向南飞行，托罗斯山脉一道弧形山墙横亘在高原与地中海之间，脚下地势陡然抬升又骤然下降，越过山脉后，蔚蓝色的地中海海岸线与安塔利亚老城卡莱伊奇渐次显现，飞机最终降落在安塔利亚——土耳其里维埃拉的门户城市。",
     "en-US":
-      "Flying from Istanbul to Antalya spans about 480 km and about 85 minutes, linking the Marmara region with the hub of Turkey's Mediterranean coast. After leaving Istanbul the flight heads southeast, first crossing the Marmara lowlands before entering the open farmland and steppe along the edge of the Central Anatolian Plateau." +
+      "Flying from Istanbul to Antalya spans about 520 km and about 85 minutes, linking the Marmara region with the hub of Turkey's Mediterranean coast. After leaving Istanbul the flight heads southeast, first crossing the Marmara lowlands before entering the open farmland and steppe along the edge of the Central Anatolian Plateau." +
       " The flight continues south, the Taurus Mountains forming an arcing wall between plateau and sea, the terrain below rising sharply then dropping away; past the range, the deep blue Mediterranean coastline and Antalya's old town of Kaleiçi come into view, and the flight lands in Antalya, gateway to the Turkish Riviera.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 托罗斯山脉与本库一致；全程距离原写约 480 km，改为约 520 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "伊斯坦布尔到安塔利亚飞约85分钟，同一时区，是土耳其航空运营的国内航班之一，是土耳其客流量最大的国内航线之一。伊斯坦布尔机场距欧洲区市中心约35公里；安塔利亚机场距市区约13公里。",
@@ -4258,12 +4468,13 @@ export const ROUTE_NARRATION: Record<
   "ist-nav": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞卡帕多奇亚，全程约630公里，飞行时间约80分钟，飞往土耳其最具辨识度的火山灰地貌区。飞机离开伊斯坦布尔后向东南飞行，先掠过马尔马拉低地，随后进入中安纳托利亚高原开阔的农牧地带，克孜勒河蜿蜒的红褐色河道在脚下若隐若现。" +
+      "伊斯坦布尔飞卡帕多奇亚，全程约570公里，飞行时间约80分钟，飞往土耳其最具辨识度的火山灰地貌区。飞机离开伊斯坦布尔后向东南飞行，先掠过马尔马拉低地，随后进入中安纳托利亚高原开阔的农牧地带，克孜勒河蜿蜒的红褐色河道在脚下若隐若现。" +
       "飞机继续向东南飞行，逐渐接近埃尔吉耶斯与哈桑两座古火山之间的卡帕多奇亚地区，密布的精灵烟囱锥状岩柱与蜂窝状洞穴逐渐显现，最终降落在内夫谢希尔——通往格雷梅国家公园的门户机场。",
     "en-US":
-      "Flying from Istanbul to Cappadocia spans about 630 km and about 80 minutes, heading to Turkey's most distinctive volcanic-ash landscape. After leaving Istanbul the flight heads southeast, first crossing the Marmara lowlands before entering the open farm-and-pasture land of the Central Anatolian Plateau, the reddish-brown winding channel of the Kızılırmak River faintly visible below." +
+      "Flying from Istanbul to Cappadocia spans about 570 km and about 80 minutes, heading to Turkey's most distinctive volcanic-ash landscape. After leaving Istanbul the flight heads southeast, first crossing the Marmara lowlands before entering the open farm-and-pasture land of the Central Anatolian Plateau, the reddish-brown winding channel of the Kızılırmak River faintly visible below." +
       " The flight continues southeast, approaching the Cappadocia region between the extinct volcanoes of Erciyes and Hasan, its dense field of conical fairy chimneys and honeycombed caves gradually coming into view, before landing at Nevşehir, gateway to Göreme National Park.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 克孜勒河、埃尔吉耶斯与哈桑火山、精灵烟囱与本库一致；全程距离原写约 630 km，改为约 570 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
@@ -4275,29 +4486,31 @@ export const ROUTE_NARRATION: Record<
   "ist-tzx": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞特拉布宗，全程约870公里，飞行时间约105分钟，连接马尔马拉地区与黑海东岸重要港口城市，是土耳其东西向距离较长的国内航线之一。飞机离开伊斯坦布尔后向东飞行，先掠过马尔马拉与安纳托利亚北部丘陵地带，逐渐接近本都山脉。" +
+      "伊斯坦布尔飞特拉布宗，全程约920公里，飞行时间约105分钟，连接马尔马拉地区与黑海东岸重要港口城市，是土耳其东西向距离较长的国内航线之一。飞机离开伊斯坦布尔后向东飞行，先掠过马尔马拉与安纳托利亚北部丘陵地带，逐渐接近本都山脉。" +
       "飞机继续向东飞行逾一个半小时，本都山脉紧贴海岸陡然抬升的轮廓在脚下延展，山地迎风坡覆盖茂密森林，深绿色山体与黑海深蓝色水面形成鲜明对比，最终降落在特拉布宗——历史上丝绸之路支线港口与拜占庭特拉比松帝国都城。",
     "en-US":
-      "Flying from Istanbul to Trabzon spans about 870 km and about 105 minutes, linking the Marmara region with a major port city on the eastern Black Sea coast. After leaving Istanbul the flight heads east, first crossing the hills of Marmara and northern Anatolia before approaching the Pontic Mountains." +
+      "Flying from Istanbul to Trabzon spans about 920 km and about 105 minutes, linking the Marmara region with a major port city on the eastern Black Sea coast. After leaving Istanbul the flight heads east, first crossing the hills of Marmara and northern Anatolia before approaching the Pontic Mountains." +
       " The flight continues east for over an hour and a half, the outline of the Pontic range rising abruptly right at the coast stretching out below, its windward slopes covered in dense forest, dark green against the deep blue of the Black Sea, before landing in Trabzon, historically a port on a Silk Road branch and capital of the Byzantine-era Empire of Trebizond.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 本都山脉、特拉比松帝国 1204–1461 与本库一致；承运航司原写飞马航空，按本库航线数据改为土耳其航空；全程距离原写约 870 km，改为约 920 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "伊斯坦布尔到特拉布宗飞约105分钟，同一时区，是飞马航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；特拉布宗机场距市区约6公里。",
+      "伊斯坦布尔到特拉布宗飞约105分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；特拉布宗机场距市区约6公里。",
     "en-US":
-      "Istanbul to Trabzon is about 105 minutes, same time zone, operated by Pegasus Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Trabzon Airport is about 6 km from the city centre.",
+      "Istanbul to Trabzon is about 105 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Trabzon Airport is about 6 km from the city centre.",
     },
   },
 
   "ist-dnz": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞代尼兹利，全程约460公里，飞行时间约80分钟，飞往土耳其西南部以棉花堡钙化梯田闻名的门户城市，沿途穿越马尔马拉低地与爱琴海地区起伏的丘陵与河谷地带。飞机离开伊斯坦布尔后向西南飞行，先掠过马尔马拉沿岸城镇，逐渐进入内陆丘陵地带。" +
+      "伊斯坦布尔飞代尼兹利，全程约400公里，飞行时间约80分钟，飞往土耳其西南部以棉花堡钙化梯田闻名的门户城市，沿途穿越马尔马拉低地与爱琴海地区起伏的丘陵与河谷地带。飞机离开伊斯坦布尔后向西南飞行，先掠过马尔马拉沿岸城镇，逐渐进入内陆丘陵地带。" +
       "飞机继续向东南飞行，逐渐接近代尼兹利地堑，棉花堡沿山坡分布的洁白阶梯状钙化台地在脚下清晰可辨，与周边灰绿色丘陵形成强烈的色彩反差，最终降落在代尼兹利恰尔达克机场——通往棉花堡与希拉波利斯古城的门户。",
     "en-US":
-      "Flying from Istanbul to Denizli spans about 460 km and about 80 minutes, heading to the gateway city in southwestern Turkey famed for the Pamukkale travertine terraces. After leaving Istanbul the flight heads southwest, first crossing the Marmara lowlands before entering the undulating hills and river valleys of the Aegean region." +
+      "Flying from Istanbul to Denizli spans about 400 km and about 80 minutes, heading to the gateway city in southwestern Turkey famed for the Pamukkale travertine terraces. After leaving Istanbul the flight heads southwest, first crossing the Marmara lowlands before entering the undulating hills and river valleys of the Aegean region." +
       " The flight continues southeast, approaching the Denizli graben, the brilliant white, stepped travertine terraces of Pamukkale clearly visible cascading down the hillside below, in sharp color contrast with the grey-green hills around it, before landing at Denizli Çardak Airport, gateway to Pamukkale and the ancient city of Hierapolis.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 棉花堡 1988 年列入 UNESCO、成因表述正确；全程距离原写约 460 km，改为约 400 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
@@ -4309,12 +4522,13 @@ export const ROUTE_NARRATION: Record<
   "ist-bjv": {
     study: {
     "zh-CN":
-      "伊斯坦布尔飞博德鲁姆，全程约400公里，飞行时间约75分钟，连接马尔马拉地区与爱琴海南岸度假半岛，是夏季旅游旺季客流量极高的国内航线之一。飞机离开伊斯坦布尔后向西南飞行，先掠过马尔马拉海沿岸低地，逐渐进入西安纳托利亚丘陵与爱琴海深切破碎的海岸地带。" +
+      "伊斯坦布尔飞博德鲁姆，全程约460公里，飞行时间约75分钟，连接马尔马拉地区与爱琴海南岸度假半岛，是夏季旅游旺季客流量极高的国内航线之一。飞机离开伊斯坦布尔后向西南飞行，先掠过马尔马拉海沿岸低地，逐渐进入西安纳托利亚丘陵与爱琴海深切破碎的海岸地带。" +
       "飞机继续向西南飞行，博德鲁姆半岛曲折的海岸线与散布的白色度假小镇逐渐显现，圣彼得城堡矗立港湾中央的岬角上清晰可辨，港湾东西两侧游艇与古式帆船密布，最终降落在米拉斯—博德鲁姆机场。",
     "en-US":
-      "Flying from Istanbul to Bodrum spans about 400 km and about 75 minutes, linking the Marmara region with a resort peninsula on the southern Aegean coast. After leaving Istanbul the flight heads southwest, first crossing the lowlands along the Sea of Marmara before entering the fragmented, deeply indented Aegean coastline of western Anatolia." +
+      "Flying from Istanbul to Bodrum spans about 460 km and about 75 minutes, linking the Marmara region with a resort peninsula on the southern Aegean coast. After leaving Istanbul the flight heads southwest, first crossing the lowlands along the Sea of Marmara before entering the fragmented, deeply indented Aegean coastline of western Anatolia." +
       " The flight continues southwest, the winding shoreline of the Bodrum Peninsula and its scattered whitewashed resort towns gradually coming into view, with Bodrum Castle clearly visible standing on the headland at the center of the harbor, before landing at Milas–Bodrum Airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 圣彼得城堡；全程距离原写约 400 km，改为约 460 km。核实 2026-09-11
     travel: {
     "zh-CN":
       "伊斯坦布尔到博德鲁姆飞约75分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；米拉斯—博德鲁姆机场距博德鲁姆市区约36公里。",
@@ -4332,6 +4546,7 @@ export const ROUTE_NARRATION: Record<
       "Flying from Ankara to Antalya spans about 420 km and about 75 minutes, linking Turkey's capital with the hub of its Mediterranean coast. After leaving Ankara the flight heads south, first crossing the open farmland and steppe of the Central Anatolian Plateau." +
       " The flight continues south, the Taurus Mountains forming an arcing wall between plateau and sea, their steep southern slopes dropping straight to the water; past the range, the deep blue Mediterranean coastline unfolds below, and the flight lands in Antalya, gateway to the Turkish Riviera.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 全程约 420 km（大圆约 407 km）；AJet 为 2024 年更名后的现行名称。核实 2026-09-11
     travel: {
     "zh-CN":
       "安卡拉到安塔利亚飞约75分钟，同一时区，是AJet运营的国内航班之一。埃森博阿机场距安卡拉市区约28公里；安塔利亚机场距市区约13公里。",
@@ -4342,19 +4557,21 @@ export const ROUTE_NARRATION: Record<
 
 
   "zag-spu": {
+    // study sources: 全程距离：按两端机场坐标算大圆约 246 km，原写约 370 km（长出 51%，像公路里程）已改为约 250 km —— check:distance 报出。其余断言留待欧洲国内航线批核实。核实 2026-09-11
     study: {
     "zh-CN":
-      "萨格勒布飞斯普利特，全程约370公里，飞行时间约50分钟，是克罗地亚最繁忙的国内航线之一，连接首都与达尔马提亚地区最大城市。飞机离开萨格勒布后向西南飞行，先掠过潘诺尼亚平原西缘的丘陵地带，逐渐进入戈尔斯基科塔尔——克罗地亚森林覆盖最茂密的山地，连绵的林海取代了平原的农田景观。" +
+      "萨格勒布飞斯普利特，全程约250公里，飞行时间约50分钟，是克罗地亚最繁忙的国内航线之一，连接首都与达尔马提亚地区最大城市。飞机离开萨格勒布后向西南飞行，先掠过潘诺尼亚平原西缘的丘陵地带，逐渐进入戈尔斯基科塔尔——克罗地亚森林覆盖最茂密的山地，连绵的林海取代了平原的农田景观。" +
       "飞机继续向南穿越第纳里克山系的喀斯特高地，逐渐接近亚得里亚海岸，脚下海岸线呈现出与海岸走向平行排列的狭长岛屿——这正是“达尔马提亚型海岸”的标志性景观，最终降落在斯普利特，一座建于古罗马皇帝退位宫殿之上的海滨古城。",
     "en-US":
-      "Flying from Zagreb to Split spans about 370 km and about 50 minutes, one of Croatia's busiest domestic routes, linking the capital with Dalmatia's largest city. After leaving Zagreb the flight heads southwest, first crossing hills on the western edge of the Pannonian Plain before entering Gorski Kotar, Croatia's most densely forested mountain region, its unbroken forest cover replacing the plain's farmland below." +
+      "Flying from Zagreb to Split spans about 250 km and about 50 minutes, one of Croatia's busiest domestic routes, linking the capital with Dalmatia's largest city. After leaving Zagreb the flight heads southwest, first crossing hills on the western edge of the Pannonian Plain before entering Gorski Kotar, Croatia's most densely forested mountain region, its unbroken forest cover replacing the plain's farmland below." +
       " The flight continues south across the karst highlands of the Dinaric range, approaching the Adriatic coast, where the shoreline below shows elongated islands running parallel to the coast — the signature pattern of a 'Dalmatian-type coast' — before landing in Split, a seaside city built atop a Roman emperor's retirement palace.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 戈尔斯基科塔尔、达尔马提亚型海岸、戴克里先宫与本库一致；未提邻国。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚最繁忙的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；斯普利特机场距市区约19公里。",
+      "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚最繁忙的国内航线之一。萨格勒布机场距市区约17公里；斯普利特机场距市区约19公里。",
     "en-US":
-      "Zagreb to Split is about 50 minutes, same time zone, operated by Croatia Airlines as one of Croatia's busiest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Split Airport is about 19 km from the city centre.",
+      "Zagreb to Split is about 50 minutes, same time zone, operated by Croatia Airlines as one of Croatia's busiest domestic routes. Zagreb Airport is about 17 km from central Zagreb; Split Airport is about 19 km from the city centre.",
     },
   },
 
@@ -4367,28 +4584,31 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Dubrovnik spans about 420 km and about 65 minutes, one of Croatia's longest north–south domestic routes, linking the capital with the historic walled city of southern Dalmatia. After leaving Zagreb the flight heads south, first crossing the Pannonian Plain and the mountains of Gorski Kotar before entering Dinara, Croatia's highest massif, the grey-white limestone ridge of Sinjal peak clearly visible below." +
       " The flight continues southeast, approaching the Neretva Delta, its green wetlands and orderly irrigated farmland spreading out below in sharp contrast with the dry karst mountains on either side, before tracking south along the Dalmatian coast to land in Dubrovnik, the old capital of the medieval Republic of Ragusa, its Old Town inscribed on the World Heritage List in 1979.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 迪纳拉 1831 m、内雷特瓦三角洲、杜布罗夫尼克 1979 年列入 UNESCO 与本库一致；未提邻国。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚跨度最大的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；杜布罗夫尼克机场距市区约20公里。",
+      "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚跨度最大的国内航线之一。萨格勒布机场距市区约17公里；杜布罗夫尼克机场距市区约20公里。",
     "en-US":
-      "Zagreb to Dubrovnik is about 65 minutes, same time zone, operated by Croatia Airlines as one of Croatia's longest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Dubrovnik Airport is about 20 km from the city centre.",
+      "Zagreb to Dubrovnik is about 65 minutes, same time zone, operated by Croatia Airlines as one of Croatia's longest domestic routes. Zagreb Airport is about 17 km from central Zagreb; Dubrovnik Airport is about 20 km from the city centre.",
     },
   },
 
   "zag-zad": {
+    // study sources: 全程距离：大圆约 190 km，原写约 250 km（长出 31%）已改为约 200 km —— check:distance 报出。其余断言留待欧洲国内航线批核实。核实 2026-09-11
     study: {
     "zh-CN":
-      "萨格勒布飞扎达尔，全程约250公里，飞行时间约45分钟，连接首都与北达尔马提亚门户城市。飞机离开萨格勒布后向西南飞行，先掠过戈尔斯基科塔尔的茂密森林，随后进入韦莱比特山——克罗地亚面积最大的山脉，山体如一道灰白色屏障紧贴海岸线延伸。" +
+      "萨格勒布飞扎达尔，全程约200公里，飞行时间约45分钟，连接首都与北达尔马提亚门户城市。飞机离开萨格勒布后向西南飞行，先掠过戈尔斯基科塔尔的茂密森林，随后进入韦莱比特山——克罗地亚面积最大的山脉，山体如一道灰白色屏障紧贴海岸线延伸。" +
       "飞机继续向南飞行，兹尔曼尼亚河因矿物质呈现的翠绿色河道在喀斯特峡谷中蜿蜒可辨，与两岸白色岩壁形成鲜明对比，最终降落在扎达尔——一座保留丰富古罗马遗迹、以海之风琴闻名的沿海古城。",
     "en-US":
-      "Flying from Zagreb to Zadar spans about 250 km and about 45 minutes, linking the capital with the gateway city of northern Dalmatia. After leaving Zagreb the flight heads southwest, first crossing the dense forests of Gorski Kotar before entering Velebit, Croatia's largest mountain range, its massif forming a grey-white wall hugging the coastline." +
+      "Flying from Zagreb to Zadar spans about 200 km and about 45 minutes, linking the capital with the gateway city of northern Dalmatia. After leaving Zagreb the flight heads southwest, first crossing the dense forests of Gorski Kotar before entering Velebit, Croatia's largest mountain range, its massif forming a grey-white wall hugging the coastline." +
       " The flight continues south, the emerald-green channel of the Zrmanja River winding through its karst canyon clearly visible against the white limestone walls on either side, before landing in Zadar, a coastal town rich in Roman remains and famous for its Sea Organ.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 韦莱比特、兹尔曼尼亚翠绿河水、扎达尔海之风琴与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到扎达尔飞约45分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；扎达尔机场距市区约8公里。",
+      "萨格勒布到扎达尔飞约45分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。萨格勒布机场距市区约17公里；扎达尔机场距市区约8公里。",
     "en-US":
-      "Zagreb to Zadar is about 45 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Zadar Airport is about 8 km from the city centre.",
+      "Zagreb to Zadar is about 45 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Airport is about 17 km from central Zagreb; Zadar Airport is about 8 km from the city centre.",
     },
   },
 
@@ -4401,11 +4621,12 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Pula spans about 210 km and about 40 minutes, linking the capital with the largest city on the Istrian peninsula. After leaving Zagreb the flight heads southwest, first crossing Gorski Kotar, the transition zone between the Alpine and Dinaric mountain systems, its forest cover nearly continuous." +
       " The flight continues west, approaching Učka, the highest point on the Istrian peninsula, its massif arcing between the peninsula and the Kvarner Gulf; past the range, Istria's red-soil coast and the deep-blue Adriatic come into view, before landing in Pula, gateway to the Istrian peninsula and home to a well-preserved Roman amphitheater.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 戈尔斯基科塔尔为阿尔卑斯—第纳里克过渡带、乌奇卡为伊斯特拉最高点与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到普拉飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；普拉机场距市区约6公里。",
+      "萨格勒布到普拉飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。萨格勒布机场距市区约17公里；普拉机场距市区约6公里。",
     "en-US":
-      "Zagreb to Pula is about 40 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Pula Airport is about 6 km from the city centre.",
+      "Zagreb to Pula is about 40 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Airport is about 17 km from central Zagreb; Pula Airport is about 6 km from the city centre.",
     },
   },
 
@@ -4418,16 +4639,18 @@ export const ROUTE_NARRATION: Record<
       "Flying from Zagreb to Osijek spans about 220 km and about 40 minutes, linking the capital with the largest city in Slavonia, a domestic route flown entirely over the inland Pannonian Plain. After leaving Zagreb the flight heads east, the terrain below flattening out into a patchwork of wheat, corn, and sunflower fields, quite different from Croatia's mountainous south." +
       " The flight continues east, the winding channel of the Drava River and its braided side-channels coming into view, before landing in Osijek, Slavonia's economic and cultural center on the Drava and gateway to the Kopački Rit wetland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 潘诺尼亚平原、德拉瓦河与本库一致；承运方已按数据改为 Trade Air 代码共享。核实 2026-09-11
     travel: {
     "zh-CN":
-      "萨格勒布到奥西耶克飞约40分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型）。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；奥西耶克机场距市区约20公里。",
+      "萨格勒布到奥西耶克飞约40分钟，同一时区，是Trade Air与克罗地亚航空代码共享运营的国内航班之一。萨格勒布机场距市区约17公里；奥西耶克机场距市区约20公里。",
     "en-US":
-      "Zagreb to Osijek is about 40 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Osijek Airport is about 20 km from the city centre.",
+      "Zagreb to Osijek is about 40 minutes, same time zone, operated by Trade Air under a Croatia Airlines codeshare as one of Croatia's domestic routes. Zagreb Airport is about 17 km from central Zagreb; Osijek Airport is about 20 km from the city centre.",
     },
   },
 
 
   "pek-foc": {
+    // study sources: 全四段（study/travel × 中英）: 黄岗山「超过 2100 米、华东最高点之一」与本库 terrain/wuyishan（2160.8 m）一致；福州「中国温泉之都」2010 年国土资源部公告（1 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高点之一。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
@@ -4443,6 +4666,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-tna": {
+    // study sources: 全四段（study/travel × 中英）: 泰山 1532.7 m（2007 国家测绘局 / 建设部联合公布，本库留痕 1 级）；趵突泉 / 大明湖 / 千佛山。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞济南，是从岭南一路飞过江南、跨过长江，抵达华北平原北端“泉城”的一条线。飞机从珠江三角洲起飞，先掠过南岭——珠江与长江水系的分水岭，是一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，黄山一带山地起伏、河网密布，是江南典型的低山丘陵地貌。继续向北跨过长江，地面转为华北平原——黄河、淮河冲积出的大平原，一望无际的农田与密集城镇。飞机在平原东段抵达山东丘陵，泰山拔地而起，海拔1532.7米，是华北平原上少见的高耸孤峰，历代帝王在此封禅祭天。济南就坐落在泰山北麓、黄河南岸，城内密布的名泉是这座“泉城”的招牌。",
@@ -4458,11 +4682,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-csx": {
+    // study sources: 全四段（study/travel × 中英）: 洞庭湖「中国第二大淡水湖」与本库 terrain 一致（面积次于鄱阳湖）；长沙「四大火炉之一」带限定。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞长沙，是从华北平原一路穿过中原、跨过长江，抵达湘江畔的一条线。飞机离开首都机场，先掠过太行山东缘，随后进入华北平原——黄河、海河冲积出的大平原。继续向南，飞过大别山——一列不高但明显的山地，横在中原与长江中游之间，也是淮河与长江的分水岭。越过大别山进入长江中下游平原，河湖交错、圩田密布，飞机随后抵达洞庭湖——中国第二大淡水湖，接纳湘、资、沅、澧四水，也是长江重要的调蓄湖泊。过洞庭湖不久便是长沙，这座城市依湘江而建，西岸是岳麓山，东岸是老城区。",
+      "北京飞长沙，是从华北平原一路穿过中原、跨过长江，抵达湘江畔的一条线。飞机离开首都机场，先掠过太行山东缘，随后进入华北平原——黄河、海河冲积出的大平原。继续向南，飞过大别山——一列不高但明显的山地，横在中原与长江中游之间，也是淮河与长江的分水岭。越过大别山进入长江中下游平原，河湖交错、圩田密布，飞机随后抵达洞庭湖——中国面积第二大的淡水湖，接纳湘、资、沅、澧四水，也是长江重要的调蓄湖泊。过洞庭湖不久便是长沙，这座城市依湘江而建，西岸是岳麓山，东岸是老城区。",
     "en-US":
-      "Beijing to Changsha flies from the North China Plain, across the Central Plain and the Yangtze, to the city on the banks of the Xiang River. Leaving the capital, the flight first skirts the eastern edge of the Taihang Mountains before crossing the North China Plain, built by the silt of the Yellow and Hai rivers. Farther south it crosses the Dabie Mountains, a modest but distinct range set between the Central Plain and the middle Yangtze, and the divide between the Huai and Yangtze river systems. Beyond the Dabie the flight crosses the Middle–Lower Yangtze Plain, a low-lying patchwork of rivers, lakes and diked fields, before reaching Dongting Lake — China's second-largest freshwater lake, fed by the Xiang, Zi, Yuan and Li rivers and an important flood-storage basin for the Yangtze. Changsha follows shortly after Dongting Lake, a city built along the Xiang River with Yuelu Mountain on the west bank and the old town on the east.",
+      "Beijing to Changsha flies from the North China Plain, across the Central Plain and the Yangtze, to the city on the banks of the Xiang River. Leaving the capital, the flight first skirts the eastern edge of the Taihang Mountains before crossing the North China Plain, built by the silt of the Yellow and Hai rivers. Farther south it crosses the Dabie Mountains, a modest but distinct range set between the Central Plain and the middle Yangtze, and the divide between the Huai and Yangtze river systems. Beyond the Dabie the flight crosses the Middle–Lower Yangtze Plain, a low-lying patchwork of rivers, lakes and diked fields, before reaching Dongting Lake — China's second-largest freshwater lake by area, fed by the Xiang, Zi, Yuan and Li rivers and an important flood-storage basin for the Yangtze. Changsha follows shortly after Dongting Lake, a city built along the Xiang River with Yuelu Mountain on the west bank and the old town on the east.",
     },
     travel: {
     "zh-CN":
@@ -4473,11 +4698,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-nng": {
+    // study sources: 全四段（study/travel × 中英）: 两广丘陵、桂林峰林为定性描述；中国—东盟博览会 2004 年起在南宁举办。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞南宁，是一条跨越两广丘陵的短途航线。飞机从珠江三角洲起飞，很快进入两广丘陵地带——这是南岭以南、跨越广东西部和广西东部的低山丘陵区，地势起伏和缓，与北面高峻的南岭形成明显的落差。河谷之间点缀着喀斯特地貌，桂林一带的塔状峰林正是这一带最典型的代表，石灰岩经长期溶蚀形成尖峭的孤峰群。飞机沿丘陵间的谷地一路向西，地面逐渐低平，最终降落在邕江畔的南宁——广西壮族自治区首府，因城区四季常绿而有“绿城”之称，也是中国—东盟博览会的举办地。",
+      "广州飞南宁，是一条跨越两广丘陵的短途航线。飞机从珠江三角洲起飞，很快进入两广丘陵地带——这是南岭以南、跨越广东西部和广西东部的低山丘陵区，地势起伏和缓，与北面高峻的南岭形成明显的落差。河谷之间点缀着喀斯特地貌，桂林一带的塔状峰林正是这一带的典型代表，石灰岩经长期溶蚀形成尖峭的孤峰群。飞机沿丘陵间的谷地一路向西，地面逐渐低平，最终降落在邕江畔的南宁——广西壮族自治区首府，因城区四季常绿而有“绿城”之称，也是中国—东盟博览会的举办地。",
     "en-US":
-      "Guangzhou to Nanning is a short hop across the Liangguang Hills. Leaving the Pearl River Delta, the flight soon enters the Liangguang Hills, a belt of low mountains south of the Nanling spanning western Guangdong and eastern Guangxi, gently undulating and dotted with karst landforms — the tower-karst peaks around Guilin are the most iconic example in this belt. The flight follows the valleys between the hills westward and lands at Nanning, on the Yong River, capital of the Guangxi Zhuang Autonomous Region. Known as the 'Green City' for its year-round greenery, Nanning also hosts the China–ASEAN Expo.",
+      "Guangzhou to Nanning is a short hop across the Liangguang Hills. Leaving the Pearl River Delta, the flight soon enters the Liangguang Hills, a belt of low mountains south of the Nanling spanning western Guangdong and eastern Guangxi, gently undulating and dotted with karst landforms — the tower-karst peaks around Guilin are the classic example in this belt. The flight follows the valleys between the hills westward and lands at Nanning, on the Yong River, capital of the Guangxi Zhuang Autonomous Region. Known as the 'Green City' for its year-round greenery, Nanning also hosts the China–ASEAN Expo.",
     },
     travel: {
     "zh-CN":
@@ -4488,6 +4714,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-hak": {
+    // study sources: 全四段（study/travel × 中英）: 五指山为海南最高峰；琼州海峡至 2026-09 仍无桥隧（湛海高铁 2025-12 获批、未建成），火车靠轮渡 —— 会变的状态，下轮复核。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞海口，是中国大陆最长的南北纵贯航线之一，从温带一路飞到热带。飞机离开首都机场，先掠过太行山东缘，随后越过大别山——淮河与长江的分水岭。跨过长江中下游平原后，飞机进入南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵，翻过南岭就进入热带、亚热带过渡的华南地区。飞机继续向南跨越琼州海峡，海南岛出现在眼下：岛屿中央隆起，五指山是最高点，四周被平原和台地环绕，呈典型的环形地貌。飞机在海南岛北部的海口降落，这里与广东雷州半岛隔海相望，是岛屿与大陆之间的门户。",
@@ -4503,6 +4730,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "ctu-lhw": {
+    // study sources: 全四段（study/travel × 中英）: 兰州「唯一黄河干流贯穿主城区的省会」与中川机场距市区约 70 km，均与本库 travel/lanzhou 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "成都飞兰州，是一条穿越四川盆地北缘、翻上青藏高原东北边缘的短途航线。飞机从成都平原起飞，脚下是四川盆地——四周被山地环绕的红层盆地，都江堰在盆地西缘引岷江水灌溉良田。飞机向北飞越盆地边缘的山地，进入甘南高原——这里地势陡然抬升，是青藏高原东北边缘与黄土高原之间的过渡地带，海拔多在3000米左右，也是黄河上游重要的水源涵养区。飞机继续向北，地势逐渐下降，进入黄河穿城而过的兰州——中国唯一一座黄河干流贯穿主城区的省会城市，河谷两侧是典型的黄土丘陵。",
@@ -4518,6 +4746,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-dlc": {
+    // study sources: 全四段（study/travel × 中英）: 大连计划单列市；沙俄 1898–1905、日本 1905–1945 规划建设为客观史实、无评价；201 路有轨电车。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞大连，是一条跨越渤海、抵达辽东半岛南端的短途航线。飞机离开首都机场，脚下先是华北平原东段——黄河、海河冲积出的大平原，向东北方向延展直抵渤海湾。飞跃渤海时，海面开阔，是华北与东北之间重要的海上通道，历史上“闯关东”的移民多经此渡海。跨过海峡后，飞机进入辽东半岛，半岛南端三面环海，海岸线曲折，大连就坐落在半岛最南端——这里冬无严寒、夏无酷暑，是中国北方少有的温和气候区，也是重要的港口与造船工业基地。",
@@ -4533,11 +4762,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-ngb": {
+    // study sources: 全四段（study/travel × 中英）: 天一阁「中国现存最古老的私家藏书楼」与本库 travel/ningbo 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞宁波，是一条纵贯华南与江南、抵达长江三角洲南翼的航线。飞机从珠江三角洲起飞，很快掠过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，这一带山地起伏、河网密布，黄山正是江南丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松怪石、云海温泉闻名于世。继续向东北飞行，地势逐渐低平，进入长江三角洲南翼——甬江冲积出的滨海平原，宁波就坐落在甬江入海口，历史上是海上丝绸之路的重要港口，也是浙东沿海人口最密集的城市之一。",
     "en-US":
-      "Guangzhou to Ningbo runs the length of southern and Jiangnan China to the southern edge of the Yangtze Delta. The flight leaves the Pearl River Delta and soon crosses the Nanling, a low, broken east–west belt of hills forming the drainage divide between the Pearl and Yangtze river systems. Beyond the Nanling lie the Jiangnan Hills, a rolling, river-laced landscape whose most iconic high point is Mount Huangshan, famous worldwide for its unusual pines, strange rocks, sea of clouds and hot springs. Flying on north-east, the land flattens into the southern Yangtze Delta, a coastal plain built by the Yong River, and Ningbo sits right where that river meets the sea — historically an important port on the Maritime Silk Road.",
+      "Guangzhou to Ningbo runs the length of southern and Jiangnan China to the southern edge of the Yangtze Delta. The flight leaves the Pearl River Delta and soon crosses the Nanling, a low, broken east–west belt of hills forming the drainage divide between the Pearl and Yangtze river systems. Beyond the Nanling lie the Jiangnan Hills, a rolling, river-laced landscape whose signature high point is Mount Huangshan, famous worldwide for its unusual pines, strange rocks, sea of clouds and hot springs. Flying on north-east, the land flattens into the southern Yangtze Delta, a coastal plain built by the Yong River, and Ningbo sits right where that river meets the sea — historically an important port on the Maritime Silk Road.",
     },
     travel: {
     "zh-CN":
@@ -4548,6 +4778,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-dat": {
+    // study sources: 全四段（study/travel × 中英）: 云冈石窟 UNESCO 世界遗产；大同「九边重镇之一」带限定；北魏平城。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞大同，是一条从长江三角洲一路向西北、抵达晋北盆地的长距离航线。飞机离开浦东机场，先掠过大别山——一列不高但明显的山地，横亘在长江中下游平原与中原之间，也是淮河与长江的分水岭。翻过大别山，飞机继续向北跨越华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。飞机在平原西北端抵达太行山——一列北北东走向的褶皱山脉，东坡断崖陡峭，直落华北平原；翻越太行山后地势抬升进入晋北高原，大同盆地被群山环抱，历史上是北魏都城平城，也是明清“九边重镇”之一。",
@@ -4556,13 +4787,14 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "上海到大同约两个半到三个小时。大同因煤炭资源丰富被称为“中国煤都”，云冈石窟、悬空寺是最重要的看点，前者是联合国教科文组织世界遗产，后者凌空建于恒山峭壁之上。当地饮食延续山西“面食+陈醋”传统，刀削面是代表。大同冬季严寒，1月均温常在-10℃以下，5–9月气候最舒适。云冈石窟与悬空寺相距约100公里，建议分两天安排。",
+      "上海到大同约两个半到三个小时。大同因煤炭资源丰富被称为“中国煤都”，云冈石窟、悬空寺是主要看点，前者是联合国教科文组织世界遗产，后者凌空建于恒山峭壁之上。当地饮食延续山西“面食+陈醋”传统，刀削面是代表。大同冬季严寒，1月均温常在-10℃以下，5–9月气候最舒适。云冈石窟与悬空寺相距约100公里，建议分两天安排。",
     "en-US":
-      "Shanghai to Datong takes about two and a half to three hours. Datong, nicknamed 'China's Coal Capital' for its rich coal reserves, is best known for the Yungang Grottoes — a UNESCO World Heritage Site — and the Hanging Temple, suspended on a cliff face of Mount Heng. Local food follows Shanxi's 'noodles plus aged vinegar' tradition, with hand-cut noodles as the signature dish. Winters here are severe, with January averages often below −10°C, so May–September is the most comfortable time to visit. The Yungang Grottoes and the Hanging Temple are about 100 km apart, so plan on two separate days.",
+      "Shanghai to Datong takes about two and a half to three hours. Datong, nicknamed 'China's Coal Capital' for its rich coal reserves, is known for the Yungang Grottoes — a UNESCO World Heritage Site — and the Hanging Temple, suspended on a cliff face of Mount Heng. Local food follows Shanxi's 'noodles plus aged vinegar' tradition, with hand-cut noodles as the signature dish. Winters here are severe, with January averages often below −10°C, so May–September is the most comfortable time to visit. The Yungang Grottoes and the Hanging Temple are about 100 km apart, so plan on two separate days.",
     },
   },
 
   "sha-lya": {
+    // study sources: 全四段（study/travel × 中英）: 龙门石窟造像近 11 万尊、白马寺「官方营建的第一座寺院」与本库 travel/luoyang 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞洛阳，是一条从长江三角洲一路向西、抵达中原腹地的航线。飞机离开虹桥机场，脚下先是长江三角洲——太湖平原与河网交织的滨海平原，上海正处在这片三角洲的核心。向西飞行，逐渐进入大别山东段边缘——一列不高但明显的山地，是淮河与长江的分水岭。越过大别山北缘，飞机进入华北平原南段（豫东平原），黄河在这一带多次改道，冲积出大片农耕平原。飞机在平原西端抵达洛阳——黄河南岸伊洛盆地的历史名城，先后有多个朝代在此建都，是中国四大古都之一。",
@@ -4578,6 +4810,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "xiy-yzy": {
+    // study sources: 全四段（study/travel × 中英）: 张掖大佛寺「中国现存最大的室内卧佛」（34.5 m，甘肃文旅口径，2 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "西安飞张掖，是一条穿越黄土高原、抵达河西走廊的航线。飞机从关中平原起飞，脚下是渭河冲积出的“八百里秦川”。向西北飞行，地势逐渐抬升进入黄土高原——数百万年来风力搬运堆积的黄土层覆盖在这片高原上，经流水切割形成“塬—梁—峁”相间的沟壑地貌，延安周边是这类地貌的典型代表。继续向西北，飞机进入河西走廊——夹在祁连山与北山之间的狭长绿洲廊道，是丝绸之路连接中原与西域的关键通道。张掖正是这条走廊上历史悠久的绿洲城市，祁连山雪线就在城南，近年因七彩丹霞地貌闻名。",
@@ -4593,6 +4826,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-txn": {
+    // study sources: 全四段（study/travel × 中英）: 莲花峰 1864 m、UNESCO 双遗产；「黄山市在风景区以南约 40 公里」为直线距离（公路约 60 km），与 travel/huangshan 两处写法分别对应、不矛盾。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞黄山，是一条从华北平原一路南下、抵达皖南山区的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原。继续向南，逐渐接近长江三角洲一带，河网稠密、水田与城镇交错。飞机随后进入江南丘陵——这一带山地起伏、河网密布，黄山正是这片丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松、怪石、云海、温泉“四绝”闻名于世，是联合国教科文组织世界文化与自然双遗产。黄山市就坐落在黄山风景区以南约40公里的屯溪盆地，是这座名山的门户城市。",
@@ -4608,6 +4842,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "kmg-jhg": {
+    // study sources: 全四段（study/travel × 中英）: 西双版纳 13 个世居民族（州政府官网，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "昆明飞景洪，是一条从云贵高原南部边缘一路南下、抵达热带雨林的短途航线。飞机离开长水机场，脚下先是云贵高原——石灰岩广布的喀斯特高原，滇池是这片高原上最大的高原湖泊。向南飞行，地势逐渐下降，飞机跨过哀牢山——一列北西—南东走向的山地，是云贵高原与滇南山地的重要分界，也是红河与澜沧江水系的分水岭之一。翻过哀牢山后，飞机进入澜沧江河谷——湄公河的中国段，河谷两侧植被由亚热带常绿阔叶林逐渐过渡为热带雨林。景洪正位于澜沧江畔的西双版纳州府，地处北回归线以南，是中国为数不多的热带雨林气候区，也是通往东南亚的重要门户。",
@@ -4616,13 +4851,14 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "昆明到景洪约55分钟，是通往西双版纳的主要空中通道。景洪地处热带，傣族、哈尼族等13个世居民族在此聚居，佛寺众多，是南传上座部佛教地区。野象谷是中国境内少数能近距离观察亚洲野象的自然保护区；曼听公园保留传统傣族村寨风貌。4月中旬的泼水节是当地最重要的节日。旱季（11月至次年4月）气候最舒适，雨季（5–10月）午后常有阵雨。进入佛寺和傣家竹楼有相应礼仪，如脱鞋、不触摸小和尚的头部。",
+      "昆明到景洪约55分钟，是通往西双版纳的主要空中通道。景洪地处热带，傣族、哈尼族等13个世居民族在此聚居，佛寺众多，是南传上座部佛教地区。野象谷是中国境内少数能近距离观察亚洲野象的自然保护区；曼听公园保留传统傣族村寨风貌。4月中旬的泼水节是当地的重大节日。旱季（11月至次年4月）气候最舒适，雨季（5–10月）午后常有阵雨。进入佛寺和傣家竹楼有相应礼仪，如脱鞋、不触摸小和尚的头部。",
     "en-US":
-      "Kunming to Jinghong takes about 55 minutes, the main air link into Xishuangbanna. Jinghong sits in the tropics, home to the Dai, Hani and other of the region's 13 long-established ethnic groups, with many Buddhist temples in this Theravada Buddhist area. Wild Elephant Valley is one of the few reserves in China where wild Asian elephants can be seen up close, and Manting Park preserves the look of a traditional Dai village. The mid-April Water-Splashing Festival is the region's most important celebration. The dry season (November–April) has the most comfortable weather, while the wet season (May–October) often brings afternoon showers. Entering a temple or a Dai bamboo house comes with its own etiquette, such as removing your shoes and never touching a young monk's head.",
+      "Kunming to Jinghong takes about 55 minutes, the main air link into Xishuangbanna. Jinghong sits in the tropics, home to the Dai, Hani and other of the region's 13 long-established ethnic groups, with many Buddhist temples in this Theravada Buddhist area. Wild Elephant Valley is one of the few reserves in China where wild Asian elephants can be seen up close, and Manting Park preserves the look of a traditional Dai village. The mid-April Water-Splashing Festival is a major celebration in the region. The dry season (November–April) has the most comfortable weather, while the wet season (May–October) often brings afternoon showers. Entering a temple or a Dai bamboo house comes with its own etiquette, such as removing your shoes and never touching a young monk's head.",
     },
   },
 
   "pek-zuh": {
+    // study sources: 全四段（study/travel × 中英）: 珠海「最早的经济特区之一」（1980 首批四个）带限定。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞珠海，是一条纵贯中国东部、抵达珠江口的长距离航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原。向南飞行，飞机跨过大别山——长江与淮河水系的分水岭，山势虽不高但轮廓分明。翻过大别山后，飞机进入长江中下游平原，鄱阳湖一带河网密布、湖泊众多。继续向南，飞机跨过南岭——长江与珠江水系的分水岭，是华南与华中在地理上的重要界线。翻过南岭后，飞机下降进入珠江三角洲——由珠江携带泥沙淤积而成的复合三角洲，河汊纵横，是中国经济最活跃的区域之一。珠海就位于三角洲西南岸，与澳门隔水相望，是中国最早的经济特区之一。",
@@ -4633,12 +4869,13 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京到珠海约3小时15分钟。珠海是中国最早的经济特区之一，毗邻澳门，情侣路是城市名片，沿香炉湾海岸线延伸约30余公里。珠海渔女雕像是标志性地标，长隆海洋王国是热门的家庭出游目的地。经拱北、横琴口岸可步行或乘车前往澳门，很适合安排当日往返。10月至次年3月气候最舒适、台风较少；5–9月是台风季。粤式饮茶文化在这里同样通行，斟茶后轻叩桌面致谢是常见礼节。",
     "en-US":
-      "Beijing to Zhuhai takes about 3 hours 15 minutes. Zhuhai, one of China's earliest Special Economic Zones, borders Macao, and Lovers' Road — running more than 30 km along Xianglu Bay — is the city's signature image. The Zhuhai Fisher Girl statue is its best-known landmark, and Chimelong Ocean Kingdom is a popular family destination. Macao is an easy walk or drive away via the Gongbei or Hengqin checkpoints, well suited to a day trip. October–March has the most comfortable weather and fewer typhoons; May–September is typhoon season. The Cantonese yum cha custom carries over here too — tapping the table lightly when your tea is topped up is a common way to say thanks.",
+      "Beijing to Zhuhai takes about 3 hours 15 minutes. Zhuhai, one of China's earliest Special Economic Zones, borders Macao, and Lovers' Road — running more than 30 km along Xianglu Bay — is the city's signature image. The Zhuhai Fisher Girl statue is its signature landmark, and Chimelong Ocean Kingdom is a popular family destination. Macao is an easy walk or drive away via the Gongbei or Hengqin checkpoints, well suited to a day trip. October–March has the most comfortable weather and fewer typhoons; May–September is typhoon season. The Cantonese yum cha custom carries over here too — tapping the table lightly when your tea is topped up is a common way to say thanks.",
     },
   },
 
 
   "can-wnz": {
+    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m「华东最高的山峰之一」带限定；雁荡山 2005 年 UNESCO 世界地质公园。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰之一，也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
@@ -4654,6 +4891,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-yty": {
+    // study sources: 全四段（study/travel × 中英）: 扬州 2019-10-31 获 UNESCO「世界美食之都」（联合国新闻，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞扬州，是一条从华北平原一路南下、抵达江淮交汇处的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，飞机进入苏北平原——黄河故道与淮河共同塑造的冲积平原，地势低平，河网与湖泊密布，是南水北调东线工程的重要通道。飞机在平原南缘抵达扬州——长江与京杭大运河的交汇处，自古因漕运和盐业而繁荣，是“淮扬菜”的发源地之一，古典园林众多，2019年被联合国教科文组织评为“世界美食之都”。",
@@ -4664,16 +4902,17 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "北京到扬州约1小时45分钟。扬州是“淮扬菜”发源地之一，2019年被联合国教科文组织评为“世界美食之都”。瘦西湖是清代盐商园林与自然湖泊结合的代表，个园、何园是另两处古典园林。扬州早茶讲究“早上皮包水”，一顿正式早茶通常需一到两小时，富春茶社是代表老字号。3–5月、9–11月气候最舒适，也是瘦西湖赏花的最佳季节。",
     "en-US":
-      "Beijing to Yangzhou takes about 1 hour 45 minutes. Yangzhou is one of the birthplaces of Huaiyang cuisine and was named a UNESCO 'City of Gastronomy' in 2019. Slender West Lake pairs a Qing-dynasty salt-merchant garden with a natural lake, while Ge Garden and He Garden are two more classical gardens worth seeing. Yangzhou's morning tea tradition — summed up as 'mornings wrapped in soup' — typically takes one to two hours, with Fuchun Teahouse the best-known name. March–May and September–November have the most comfortable weather and are also the best season for flowers at Slender West Lake.",
+      "Beijing to Yangzhou takes about 1 hour 45 minutes. Yangzhou is one of the birthplaces of Huaiyang cuisine and was named a UNESCO 'City of Gastronomy' in 2019. Slender West Lake pairs a Qing-dynasty salt-merchant garden with a natural lake, while Ge Garden and He Garden are two more classical gardens worth seeing. Yangzhou's morning tea tradition — summed up as 'mornings wrapped in soup' — typically takes one to two hours, with Fuchun Teahouse a well-known name. March–May and September–November have the most comfortable weather and are also the best season for flowers at Slender West Lake.",
     },
   },
 
   "pek-wus": {
+    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m、UNESCO 双遗产、乌龙茶与红茶发源地。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
     "en-US":
-      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose most iconic high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
+      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose signature high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
     },
     travel: {
     "zh-CN":
@@ -4690,15 +4929,17 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Beijing to Hulunbuir flies north from the North China Plain to the grassland belt in eastern Inner Mongolia. Leaving the capital, the flight crosses the Yan Mountains and climbs onto the Inner Mongolian Plateau — one of China's four great plateaus, rising to around 1,000 m and dominated by open grassland. Flying on north, the grassland gradually shifts from the Xilingol steppe to the Hulunbuir Grassland, one of the \"four great grasslands of the world,\" wetter and lusher than much of the rest of the Inner Mongolian Plateau and one of China's best-preserved grassland ecosystems. The flight ends at Hailar, on the Yimin River, seat of the Hulunbuir city government and the meeting point between the forests of the Greater Khingan Range and the Hulunbuir Grassland.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 莫日格勒河「天下第一曲水」为广泛使用的俗称（人民网，2 级）；英文原写 Mordaga（实为额尔古纳的莫尔道嘎林场）已改为 Morigele；「呼伦湖是中国第五大湖」口径不一（第五 / 第六），已去掉排名 —— 同一处错误住在 travel/hulunbuir 中英与 travel-pois，已一并改。核实 2026-09-11
     travel: {
     "zh-CN":
-      "北京到呼伦贝尔约2小时5分钟，直飞海拉尔。呼伦贝尔草原是“世界四大草原”之一，莫日格勒河蜿蜒穿行其间，素有“天下第一曲水”之称；呼伦湖是中国第五大湖。当地以蒙古族为主，敬酒、献哈达是重要待客礼仪，祭敖包时按顺时针方向绕行。手把肉、奶茶是日常饮食代表。6–8月是草原旅游旺季，气候凉爽、牧草最盛，常有那达慕大会；冬季严寒漫长，1月均温常在-20℃以下。",
+      "北京到呼伦贝尔约2小时5分钟，直飞海拉尔。呼伦贝尔草原是“世界四大草原”之一，莫日格勒河蜿蜒穿行其间，素有“天下第一曲水”之称；呼伦湖则是草原腹地的大型湖泊。当地以蒙古族为主，敬酒、献哈达是重要待客礼仪，祭敖包时按顺时针方向绕行。手把肉、奶茶是日常饮食代表。6–8月是草原旅游旺季，气候凉爽、牧草最盛，常有那达慕大会；冬季严寒漫长，1月均温常在-20℃以下。",
     "en-US":
-      "Beijing to Hulunbuir takes about 2 hours 5 minutes, flying nonstop into Hailar. The Hulunbuir Grassland is one of the \"four great grasslands of the world,\" laced by the winding Mordaga River — often called the world's most meandering river — and bordered by Hulun Lake, China's fifth-largest lake. The area is predominantly Mongol, where offering wine and presenting a khadag scarf are important guest customs, and circling an ovoo shrine is done clockwise. Hand-pulled mutton and milk tea are everyday staples. June–August is peak grassland season, coolest and lushest, often with Naadam festivals; winters are long and severe, with January averages often below −20°C.",
+      "Beijing to Hulunbuir takes about 2 hours 5 minutes, flying nonstop into Hailar. The Hulunbuir Grassland is one of the \"four great grasslands of the world,\" laced by the winding Morigele River — often called the world's most meandering river — and bordered by the broad Hulun Lake. The area is predominantly Mongol, where offering wine and presenting a khadag scarf are important guest customs, and circling an ovoo shrine is done clockwise. Hand-pulled mutton and milk tea are everyday staples. June–August is peak grassland season, coolest and lushest, often with Naadam festivals; winters are long and severe, with January averages often below −20°C.",
     },
   },
 
   "pek-yih": {
+    // study sources: 全四段（study/travel × 中英）: 三峡自西向东瞿塘 / 巫 / 西陵、大坝在西陵峡东口三斗坪、「世界最大的水电枢纽工程之一」带限定、双线五级船闸。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞宜昌，是一条从华北平原一路向南、抵达长江三峡出口的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，飞越豫西南的丘陵地带，逐渐进入鄂西山地边缘。飞机最终抵达长江三峡——瞿塘峡、巫峡、西陵峡自西向东依次排开，长江在此切穿巫山山脉，两岸峭壁夹江、江流湍急；西陵峡东口正是三峡大坝所在地，世界最大的水电枢纽工程之一，也是宜昌这座“三峡门户”城市的地标。",
@@ -4714,6 +4955,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-eny": {
+    // study sources: 全四段（study/travel × 中英）: 黄土塬—梁—峁地貌；延安 1935–1948 为中共中央驻地（只陈述时地、无评价）；宝塔山。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞延安，是一条从华北平原穿越太行山、抵达黄土高原腹地的航线。飞机离开首都机场，向西南飞越太行山——一列北北东走向的褶皱山脉，东坡断崖陡峭，直落华北平原。翻过太行山后，飞机进入黄土高原——数百万年来风力搬运堆积的黄土层覆盖在这片高原上，经流水切割形成“塬—梁—峁”相间的沟壑地貌，延安周边正是这类地貌的典型代表区域。飞机最终抵达延安——延河与南川河交汇处的黄土高原城市，1935年至1948年是中共中央和陕甘宁边区政府所在地。",
@@ -4734,6 +4976,7 @@ export const ROUTE_NARRATION: Record<
   // ============================================================
 
   "pek-icn": {
+    // study sources: 全四段（study/travel × 中英）: 黄海平均水深约 44 m（中科院地理所，1 级）；渤海为近乎被陆地环绕的内海。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞首尔，是从华北平原东端越过渤海与黄海，抵达朝鲜半岛西海岸的一段短程航线。起飞后不久，脚下的陆地让位给渤海——中国唯一近乎被陆地完全环绕的内海，海面上常能看到往来的货轮与近海养殖区的浮标带。渤海东端与黄海相连，黄海是一片平均水深仅约44米的浅海，因含沙量高、海水常年浑黄而得名。越过黄海，飞机开始下降，进入朝鲜半岛西海岸——这一带潮差大、滩涂宽阔，是东亚规模较大的淤泥质海岸带之一。仁川国际机场建在西海岸外的永宗岛上，四周仍能看到成片滩涂与围海造陆留下的痕迹。不到两小时，一趟航班把华北的大平原与朝鲜半岛西海岸的浅海滩涂连在了一起。",
@@ -4749,6 +4992,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-bkk": {
+    // study sources: 全四段（study/travel × 中英）: 呵叻高原约占泰国国土三分之一（Britannica，2 级）；曼谷部分区域海拔不足 2 m。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞曼谷，从华南越过中南半岛北部山地，抵达湄南河三角洲。起飞后向西南飞越南岭以南的丘陵地带，随后进入中南半岛北部——山岭连绵、河谷深切，是东南亚地形最破碎的区域之一。跨过这片山地后，地势逐渐平缓，飞机进入呵叻高原：泰国东北部一片占国土面积近三分之一的广袤砂岩台地，传统上称为“依善”地区，高原边缘的山脉把它与泰国中部平原分隔开来。越过呵叻高原西缘，飞机开始下降，进入湄南河三角洲——湄南河入海口长期淤积形成的低平原，泰国首都曼谷即建于三角洲之上，部分区域海拔不足两米。三个多小时的航程，把中国南方的丘陵地带与东南亚大河三角洲连在了一起。",
@@ -4764,11 +5008,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-ubn": {
+    // study sources: 全四段（study/travel × 中英）: 关东以外：图拉河源于肯特山、乌兰巴托约 1300 m 为常识；中文「戈壁」未与「沙漠」混用（#264 已修）；英文原写「world's sixth-largest desert」无来源，已降级为「among the largest」。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界上面积最大的荒漠之一。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
     "en-US":
-      "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks as the world's sixth-largest desert. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
+      "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks among the world's largest deserts. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
     },
     travel: {
     "zh-CN":
@@ -4779,6 +5024,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-han": {
+    // study sources: 全四段（study/travel × 中英）: 南岭为长江 / 珠江分水岭，与本库 terrain/nanling 一致；红河三角洲。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞河内，从长江以南的丘陵地带一路向西南，跨过南岭抵达红河三角洲。起飞后，飞机进入江南丘陵——长江以南、南岭以北的低山丘陵地带，黄山、庐山等断块山地零散分布其间。继续向西南，飞机翻越南岭——一条大致东西走向的山脉，是长江水系与珠江水系的分水岭，也是中国地理上华中与华南的传统分界。越过南岭后，地势逐渐降低，进入中南半岛北部山地，河流深切、地形起伏明显。最后，飞机下降进入红河三角洲——红河及其支流长期携带泥沙淤积而成的三角形平原，越南首都河内就坐落在三角洲西北部边缘。三个多小时的航程，把长江以南的丘陵与东南亚大河三角洲连接了起来。",
@@ -4794,6 +5040,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-kul": {
+    // study sources: 全四段（study/travel × 中英）: 蒂蒂旺沙山脉约 480 km，与本库 terrain 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞吉隆坡，是一条纵贯东亚与东南亚大陆的长航线，从华北平原一路飞越云贵高原、中南半岛，抵达马来半岛。起飞后，飞机先越过华北平原与黄土高原，随后进入云贵高原——中国西南一片以喀斯特地貌为主的高原，石林、溶洞广布。继续向南，飞机跨过中南半岛，沿途山地与河谷交替出现，航程大部分时间在陆地上空。接近赤道时，飞机进入马来半岛，蒂蒂旺沙山脉出现在下方——这是马来半岛的脊梁山系，呈西北—东南走向绵延约480公里，把半岛分成东西两侧不同的气候区。飞机沿山脉南段下降，吉隆坡就坐落在山脉西侧山麓地带。近六个小时的航程，跨越了近40个纬度，从温带平原飞到了赤道附近的热带城市。",
@@ -4809,6 +5056,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-sin": {
+    // study sources: 全四段（study/travel × 中英）: 新加坡国土不到 800 km²（SingStat 约 735 km²，1 级）；蒂蒂旺沙同上。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞新加坡，是这份航线库里最长的一条国际航线，从华北平原一路飞越云贵高原、中南半岛与马来半岛，抵达赤道附近的岛国新加坡。航线前半段与北京—吉隆坡航班基本重合：越过华北平原、黄土高原，进入以喀斯特地貌著称的云贵高原，再跨过中南半岛，最后抵达马来半岛。飞机沿马来半岛的脊梁山脉——蒂蒂旺沙山脉南段下降，山脉呈西北—东南走向，把半岛分成东西两侧。越过半岛最南端，飞机跨过一道狭窄的海峡，进入新加坡——一座国土面积不到800平方公里的赤道岛国。岛屿中央保留着一片茂密的热带雨林，中央集水区自然保护区里的麦里芝蓄水池等水库，既是重要水源，也是岛上少见的原始丛林景观。超过六个小时的航程，从温带大陆一路飞到了赤道岛国。",
@@ -4828,6 +5076,7 @@ export const ROUTE_NARRATION: Record<
   // ============================================================
 
   "pek-lhr": {
+    // study sources: 全四段（study/travel × 中英）: 乌拉尔南北两千多公里、亚欧分界与本库一致；多格兰（北海古陆桥）为科学共识；签证表述未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞伦敦，向西北横跨亚欧大陆，全程约八千四百公里，终点在不列颠岛东南的泰晤士河下游。起飞后进入蒙古高原南缘的戈壁，砾石滩铺到天际线，年降水多在两百毫米以下，地表几乎没有连续植被；河流大多是季节性的，雨后短暂过水随即干涸，风蚀留下坚硬的砾幂，冬季强风把地表的尘土卷上高空，能见度骤降，聚落之间常隔上百公里。越往西北，草原的比例越高，牧群重新出现在河谷两侧。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地。这条南北绵延两千多公里的古老山系海拔不高，却是地理学上划分亚洲与欧洲的界线；长期剥蚀把山脊磨得浑圆，东西两坡的森林构成明显不同，山间盆地里分布着一串以冶金为主的工业城市。再往西是东欧平原，古老地台之上起伏极小，田块与河流的图案从空中看格外规整。飞机继续向西横穿中欧，越过北海南缘——海面下是冰期留下的浅滩沉积，海底至今还能找到当时的河道和陆生动物遗骸。最后跨过英吉利海峡北口，进入泰晤士河下游的低地，降落在伦敦西面的希思罗机场。",
@@ -4847,6 +5096,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-cdg": {
+    // study sources: 全四段（study/travel × 中英）: 「中国直飞西欧最繁忙的航线之一」带限定；乌拉尔约三亿年前碰撞造山；签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞巴黎，向西北横跨亚欧大陆，全程约八千四百公里，终点在西欧的塞纳河盆地，是中国直飞西欧最繁忙的航线之一。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、河流稀少的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带；昼夜温差可达三十度以上，聚落沿着为数不多的泉水和井分布。越往西北，荒漠逐渐让位给稀树草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条古老山系南北绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓；两侧坡地的森林构成明显不同，山中的铁与铜矿支撑起沿线一串工业城市。再往西是东欧平原：由古老地台构成的开阔低地，起伏很小，河流舒缓，冬季常见大范围积雪。飞机在这里转向西南，掠过中欧的丘陵与河谷，地块与城镇的密度肉眼可见地上升，田野被公路和运河切成整齐的格子。最后进入巴黎盆地——一圈圈同心的沉积岩层构成的浅碟形凹地，塞纳河从中蜿蜒穿过，飞机降落在城市东北的戴高乐机场。",
@@ -4866,6 +5116,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-ber": {
+    // study sources: 全四段（study/travel × 中英）: 勃兰登堡机场为柏林现行机场（泰格尔 2020 年关闭）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞柏林，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的北德平原。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里；冬季强风把地表的尘土卷上高空，再往西北，荒漠逐渐转为草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，鄂毕河等大河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系是亚欧两洲的传统分界，山脊多在一千米上下，长期剥蚀把它磨得浑圆，山间盆地里分布着一串以冶金与机械制造为主的工业城市。再往西是东欧平原，起伏极小的开阔农田，冬季常见大范围积雪。最后掠过中欧的河谷与湖泊，降落在柏林东南的勃兰登堡机场。",
@@ -4885,6 +5136,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pkx-ams": {
+    // study sources: 全四段（study/travel × 中英）: 史基浦跑道低于海平面、圩田与堤坝；签证未写死。核实 2026-09-11
     study: {
     "zh-CN":
       "北京大兴飞阿姆斯特丹，向西北横跨亚欧大陆，全程约八千二百公里，终点在莱茵河三角洲边缘。起飞后进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，干旱少雨、植被稀疏，年降水多在两百毫米以下；风把细沙吹走后留下坚硬的砾幂，河流大多是季节性的，昼夜温差常超过三十度，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多。接着是西西伯利亚平原，地势极为平坦，鄂毕河等大河在这里蜿蜒北流，沼泽面积之大使这一带成为重要的碳汇。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，长期剥蚀把山脊磨得浑圆；山中的矿藏支撑起沿线一串工业城市，两侧坡地的森林构成明显不同。再往西是东欧平原，开阔低地上田块规整，冬季常见大范围低云与积雪。飞机在这里转向西南，掠过中欧的河谷与丘陵，越过北海南缘，海面下是冰期留下的浅滩沉积。最后进入荷兰——这个国家有相当一部分国土低于海平面，靠堤坝与排水系统维持，从空中看是被水道切成方格的圩田。飞机降落在阿姆斯特丹西南的史基浦机场，跑道本身就低于海平面。",
@@ -4904,28 +5156,30 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-bru": {
+    // study sources: 全四段（study/travel × 中英）: 航线本身：海南航空 2006 年起执飞北京—布鲁塞尔，国航这一趟 2026-03 开航 —— study 原写「2026 年 3 月开航」、travel 原写「这条航线 2026 年 3 月才开通」，已改为只说这一趟航班。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞布鲁塞尔，2026年3月开航，向西北横跨亚欧大陆，全程约八千三百公里，终点在西欧低地国家的腹地。起飞后进入蒙古高原南缘的戈壁：砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流多为季节性，雨后短暂过水随即干涸；风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，昼夜温差常超过三十度。再往西北，戈壁的砾石逐渐让位给草原，河流开始变多。接着是西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一，春汛时河水漫出河道，大片林地泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系是亚欧两洲的传统分界，海拔多在一千米上下，地质年代久远，铁、铜与宝石矿藏丰富，沿线因此形成了成片的工业城市；两侧坡地的植被与土壤类型截然不同。再往西是东欧平原，由古老地台构成的低地起伏极小，是欧洲面积最大的平原，田块与河流的图案从空中看格外规整。飞机在这里转向西南，进入中欧的丘陵与低地，河网密集，运河与公路把地块切成整齐的格子。最后飞机掠过默兹河与斯海尔德河之间的低地，降落在布鲁塞尔以东北的扎芬特姆机场。",
+      "北京飞布鲁塞尔，向西北横跨亚欧大陆，全程约八千三百公里，终点在西欧低地国家的腹地。起飞后进入蒙古高原南缘的戈壁：砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流多为季节性，雨后短暂过水随即干涸；风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，昼夜温差常超过三十度。再往西北，戈壁的砾石逐渐让位给草原，河流开始变多。接着是西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一，春汛时河水漫出河道，大片林地泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系是亚欧两洲的传统分界，海拔多在一千米上下，地质年代久远，铁、铜与宝石矿藏丰富，沿线因此形成了成片的工业城市；两侧坡地的植被与土壤类型截然不同。再往西是东欧平原，由古老地台构成的低地起伏极小，是欧洲面积最大的平原，田块与河流的图案从空中看格外规整。飞机在这里转向西南，进入中欧的丘陵与低地，河网密集，运河与公路把地块切成整齐的格子。最后飞机掠过默兹河与斯海尔德河之间的低地，降落在布鲁塞尔以东北的扎芬特姆机场。",
     "en-US":
-      "Beijing to Brussels, opened in March 2026, runs north-west across the Eurasian landmass, about 8,300 km in all, to the heart of the Low Countries. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau: gravel desert stretching to the horizon under less than 200 millimetres of rain in most years, its rivers mostly seasonal, running briefly after rain and then drying out; wind erosion has left a hard pavement, strong winter winds lift dust off the surface, and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to steppe and rivers become more frequent. Next comes the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth, where the spring flood spills the channels and leaves wide stands of woodland standing in water for weeks. Past the Ural Mountains the flight enters an open lowland. This old range is the conventional divide between Asia and Europe, mostly around a thousand metres high, geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length; the vegetation and soils on its two flanks are quite different. Farther west lies the East European Plain, a lowland on an ancient platform with very little relief and the largest plain in Europe, its fields and rivers reading from the air as a strikingly regular pattern. The flight turns south-west across it into the hills and lowlands of central Europe, densely veined with rivers, canals and roads that cut the ground into neat blocks. It finally crosses the low country between the Meuse and the Scheldt and lands at Zaventem Airport north-east of Brussels.",
+      "Beijing to Brussels runs north-west across the Eurasian landmass, about 8,300 km in all, to the heart of the Low Countries. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau: gravel desert stretching to the horizon under less than 200 millimetres of rain in most years, its rivers mostly seasonal, running briefly after rain and then drying out; wind erosion has left a hard pavement, strong winter winds lift dust off the surface, and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to steppe and rivers become more frequent. Next comes the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth, where the spring flood spills the channels and leaves wide stands of woodland standing in water for weeks. Past the Ural Mountains the flight enters an open lowland. This old range is the conventional divide between Asia and Europe, mostly around a thousand metres high, geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length; the vegetation and soils on its two flanks are quite different. Farther west lies the East European Plain, a lowland on an ancient platform with very little relief and the largest plain in Europe, its fields and rivers reading from the air as a strikingly regular pattern. The flight turns south-west across it into the hills and lowlands of central Europe, densely veined with rivers, canals and roads that cut the ground into neat blocks. It finally crosses the low country between the Meuse and the Scheldt and lands at Zaventem Airport north-east of Brussels.",
     },
     travel: {
     "zh-CN":
       "北京到布鲁塞尔约10小时35分钟，时差7-8小时（比利时夏令时期间7小时）。比利时气候温和多雨，四季都建议带一件防水外套。" +
       "布鲁塞尔机场距市中心约13公里，机场快线火车约20分钟到布鲁塞尔中央/南站，班次密集。市内地铁、有轨电车、公交同属一套票务系统。大广场、圣于贝尔拱廊、比利时漫画博物馆都在步行可达的市中心范围内，华夫饼、巧克力、啤酒是当地代表美食。" +
-      "比利时属申根区，签证按国籍不同、以比利时驻当地使领馆最新公布为准，行前确认并预留办理时间。这条航线2026年3月才开通，出行前建议再次核实航班班期是否有变动。",
+      "比利时属申根区，签证按国籍不同、以比利时驻当地使领馆最新公布为准，行前确认并预留办理时间。这趟航班2026年3月才开通，出行前建议再次核实航班班期是否有变动。",
     "en-US":
       "Beijing to Brussels takes about 10 hours 35 minutes, with a 7–8 hour time difference (7 hours during Belgian summer time). Belgium is mild and rainy, so a waterproof jacket is worth packing in any season." +
       " Brussels Airport is about 13 km from the centre; the airport express train takes about 20 minutes to Brussels Central/South station, with frequent departures. The metro, trams and buses run on one shared ticketing system. The Grand Place, the Galeries Saint-Hubert and the Belgian Comic Strip Center are all within walking distance in the city centre, and waffles, chocolate and beer are the local specialties." +
-      " Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
+      " Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This particular service only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-jfk": {
+    // study sources: 全四段（study/travel × 中英）: 贝加尔湖最深 1642 m、约占全球未冻淡水 20%（UNESCO 754，1 级）；哈德逊湾平均水深一百多米；「比沿纬线直飞短两千多公里」按坐标计算实为约 3400 km，已改为「三千多公里」（英文侧无数字）。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞纽约不走太平洋，而是贴着北极飞一条大圆航线：两地经度几乎相差半个地球，走高纬度的弧线比沿纬线直飞短了两千多公里。起飞后向西北爬升，越过燕山。进入蒙古高原南缘的戈壁，砾石滩一直铺到天际线，风把细沙吹走后留下一层黑亮的砾幂；年降水多在两百毫米以下，河流大多是季节性的，聚落之间常隔上百公里。再往北是贝加尔湖，世界上最深的淡水湖，最深处超过一千六百米，蓄水量约占地表未冻淡水的两成。湖体嵌在一条至今仍在扩张的裂谷里，两岸山地陡直入水，湖底沉积厚达数千米，记录着两千多万年的气候变化；冬季湖面完全封冻，冰层厚到可以行车。湖区四周是连片的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头。航线继续深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道织成的湿地，面积超过三万平方公里，是北冰洋沿岸最大的三角洲之一。夏季解冻时水网密布，成千上万个热融湖散在苔原上，是候鸟重要的繁殖地；入冬后整片冻实，与周围的冻原连成一色，河道只剩下雪面上一道道浅痕。之后航向转东，掠过白令海。冰期海面下降时这里曾是连接亚洲与北美的陆桥，人类很可能就是从这条通道进入美洲的；如今海底大陆架依然很浅，冷暖水团在此交汇，营养盐上涌，渔业资源丰厚，海面上常年多雾。进入阿拉斯加后，晴天时舷窗一侧能看到阿拉斯加山脉，北美最高峰迪纳利就在这条弧形山链上，山体由板块碰撞抬升而成，至今仍在长高。飞机继续东南，越过育空地区——针叶林与冻原交界的地带，河流深切在冻土之中，地面几乎见不到道路与居民点。这一带冬季漫长、夏季短暂，是北美人烟最稀的区域之一；地下的多年冻土使建筑必须架空，否则热量传下去会让地面融沉。十九世纪末的淘金热曾把数万人引到这里，沿着克朗代克河一带建起成片的营地，热潮退去后又几乎全部散去，如今只剩下少数保留下来的木屋和采金的痕迹。再往前是哈德逊湾，一片深入北美大陆的浅海，平均水深只有一百多米，冬季完全封冻。冰期被冰盖压下去的地壳至今仍在缓慢回弹，湾岸线因此逐年后退，岸上能看到一道道被抬起的古海滩排成阶梯。接着飞临五大湖，冰川挖掘出的这组湖泊是地球上面积最大的淡水湖群，蓄水量约占全球地表淡水的两成，湖岸边是北美主要的工业带。最后越过新英格兰的丘陵——古老山系被侵蚀之后剩下的低缓地形。飞机沿哈德逊河下降，降落在纽约肯尼迪机场。",
+      "北京飞纽约不走太平洋，而是贴着北极飞一条大圆航线：两地经度几乎相差半个地球，走高纬度的弧线比沿纬线直飞短了三千多公里。起飞后向西北爬升，越过燕山。进入蒙古高原南缘的戈壁，砾石滩一直铺到天际线，风把细沙吹走后留下一层黑亮的砾幂；年降水多在两百毫米以下，河流大多是季节性的，聚落之间常隔上百公里。再往北是贝加尔湖，世界上最深的淡水湖，最深处超过一千六百米，蓄水量约占地表未冻淡水的两成。湖体嵌在一条至今仍在扩张的裂谷里，两岸山地陡直入水，湖底沉积厚达数千米，记录着两千多万年的气候变化；冬季湖面完全封冻，冰层厚到可以行车。湖区四周是连片的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头。航线继续深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道织成的湿地，面积超过三万平方公里，是北冰洋沿岸最大的三角洲之一。夏季解冻时水网密布，成千上万个热融湖散在苔原上，是候鸟重要的繁殖地；入冬后整片冻实，与周围的冻原连成一色，河道只剩下雪面上一道道浅痕。之后航向转东，掠过白令海。冰期海面下降时这里曾是连接亚洲与北美的陆桥，人类很可能就是从这条通道进入美洲的；如今海底大陆架依然很浅，冷暖水团在此交汇，营养盐上涌，渔业资源丰厚，海面上常年多雾。进入阿拉斯加后，晴天时舷窗一侧能看到阿拉斯加山脉，北美最高峰迪纳利就在这条弧形山链上，山体由板块碰撞抬升而成，至今仍在长高。飞机继续东南，越过育空地区——针叶林与冻原交界的地带，河流深切在冻土之中，地面几乎见不到道路与居民点。这一带冬季漫长、夏季短暂，是北美人烟最稀的区域之一；地下的多年冻土使建筑必须架空，否则热量传下去会让地面融沉。十九世纪末的淘金热曾把数万人引到这里，沿着克朗代克河一带建起成片的营地，热潮退去后又几乎全部散去，如今只剩下少数保留下来的木屋和采金的痕迹。再往前是哈德逊湾，一片深入北美大陆的浅海，平均水深只有一百多米，冬季完全封冻。冰期被冰盖压下去的地壳至今仍在缓慢回弹，湾岸线因此逐年后退，岸上能看到一道道被抬起的古海滩排成阶梯。接着飞临五大湖，冰川挖掘出的这组湖泊是地球上面积最大的淡水湖群，蓄水量约占全球地表淡水的两成，湖岸边是北美主要的工业带。最后越过新英格兰的丘陵——古老山系被侵蚀之后剩下的低缓地形。飞机沿哈德逊河下降，降落在纽约肯尼迪机场。",
     "en-US":
       "Beijing to New York does not cross the Pacific. It flies a great-circle track that hugs the Arctic, because the two cities sit at nearly opposite longitudes. After take-off the aircraft climbs north-west over the Yan Mountains and reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel flats run to the horizon and wind has stripped the fine sand away to leave a dark polished pavement. Farther north lies Lake Baikal, the deepest freshwater lake in the world at more than 1,600 metres, holding roughly a fifth of the planet's unfrozen surface fresh water. The lake sits in a rift that is still pulling apart, dense Siberian taiga runs down to both shores, and in winter the surface freezes solid enough to drive across. The route continues deep into the Siberian interior and crosses the Lena River Delta, an Arctic wetland woven from permafrost and braided channels. When the ground thaws each summer the delta fills with water and becomes a major breeding ground for migratory birds; by winter it freezes hard and merges into the surrounding tundra. The heading then swings east over the Bering Sea. Lower sea levels during the ice ages exposed a land bridge here between Asia and North America, and the continental shelf is still shallow, supporting one of the richest fisheries anywhere. Entering Alaska, a clear day brings the Alaska Range into view on one side of the cabin, the curved chain that carries Denali, the highest peak in North America. The aircraft continues south-east across the Yukon, where boreal forest gives way to tundra, rivers cut deep into frozen ground, and almost no roads or settlements appear below. Winters are long and summers brief, and this is among the most thinly populated country in North America; the gold rush of the late nineteenth century drew tens of thousands here and then emptied out again almost completely. Ahead lies Hudson Bay, a very shallow sea on ground so low that the crust, pressed down by ice-age glaciers, is still rebounding and pushing the shoreline back year by year. The flight then reaches the Great Lakes, glacially excavated and the largest group of freshwater lakes on Earth by surface area. Finally it crosses the hills of New England and descends along the Hudson River into New York's JFK Airport.",
     },
@@ -4942,12 +5196,14 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-yyz": {
+    // study sources: 距离改为按机场坐标算的大圆距离（10,561 km）；航司里程仍未公开可查。核实 2026-09-12
     study: {
     "zh-CN":
-      "北京飞多伦多，走的是跨越北极圈的大圆航路，全程约一万一千五百公里，是中国直飞北美东部最长的航线之一。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里。再往北是贝加尔湖，地球上最深的湖泊，最深处超过一千六百米，蓄水量约占全球未冻结淡水的五分之一；它坐落在一条仍在缓慢张开的大陆裂谷上，两岸山地陡直入水，冬季湖面完全封冻，冰层厚到可以行车。越过湖区之后是连绵的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头，河流全部向北流。接着抵达西伯利亚北冰洋沿岸——一片被冻土支配的低平苔原，夏季只有表层解冻，水下渗不下去，于是在地表积成无数热融湖，从空中看像撒了一地的碎镜片；海岸线破碎，河口宽阔，浮冰在夏季退向更高纬度。跨过北冰洋后进入加拿大北极群岛，由几十座大岛和上千座小岛组成，岛屿之间是常年结冰或半年结冰的海峡；地表以裸岩、砾石和薄薄一层苔原植被为主，几乎看不到树。再往南是哈德逊湾，一片深入北美大陆的巨大内海，冬季完全封冻；它所在的地壳曾被厚达数公里的冰盖压低，冰盖消融后至今仍在缓慢回弹，海岸线因此持续抬升，湖岸上能看到一道道被抬起的古海滩。飞机最后飞越安大略的森林与湖群，降落在多伦多皮尔逊机场。",
+      "北京飞多伦多，走的是跨越北极圈的大圆航路，两地的大圆距离约一万零六百公里，是中国直飞北美东部最长的航线之一。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里。再往北是贝加尔湖，地球上最深的湖泊，最深处超过一千六百米，蓄水量约占全球未冻结淡水的五分之一；它坐落在一条仍在缓慢张开的大陆裂谷上，两岸山地陡直入水，冬季湖面完全封冻，冰层厚到可以行车。越过湖区之后是连绵的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头，河流全部向北流。接着抵达西伯利亚北冰洋沿岸——一片被冻土支配的低平苔原，夏季只有表层解冻，水下渗不下去，于是在地表积成无数热融湖，从空中看像撒了一地的碎镜片；海岸线破碎，河口宽阔，浮冰在夏季退向更高纬度。跨过北冰洋后进入加拿大北极群岛，由几十座大岛和上千座小岛组成，岛屿之间是常年结冰或半年结冰的海峡；地表以裸岩、砾石和薄薄一层苔原植被为主，几乎看不到树。再往南是哈德逊湾，一片深入北美大陆的巨大内海，冬季完全封冻；它所在的地壳曾被厚达数公里的冰盖压低，冰盖消融后至今仍在缓慢回弹，海岸线因此持续抬升，湖岸上能看到一道道被抬起的古海滩。飞机最后飞越安大略的森林与湖群，降落在多伦多皮尔逊机场。",
     "en-US":
-      "Beijing to Toronto follows a great-circle track over the Arctic, about 11,500 km in all, one of the longest nonstop routes from China to eastern North America. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart. Farther north lies Lake Baikal, the deepest lake on Earth at more than sixteen hundred metres, holding roughly a fifth of the world's unfrozen fresh water; it sits in a continental rift that is still slowly pulling apart, the mountains on both shores drop straight into the water, and in winter the surface freezes solid enough to drive on. Beyond the lake the Siberian taiga runs unbroken to the horizon, larch and spruce all the way, and every river flows north. The route then reaches the Siberian Arctic Coast, low tundra governed by permafrost: only the surface layer thaws in summer, water cannot drain away, and it collects into countless thaw lakes that read from the air like shards of scattered mirror; the coastline is broken, the river mouths are wide, and the pack ice retreats to higher latitudes through the summer. Across the Arctic Ocean comes the Canadian Arctic Archipelago, dozens of large islands and more than a thousand small ones separated by channels that are frozen year-round or for half the year; the ground is bare rock, gravel and a thin skin of tundra vegetation, with scarcely a tree in sight. Farther south is Hudson Bay, a vast inland sea driven deep into the North American continent and frozen over in winter; the crust beneath it was pressed down by an ice sheet kilometres thick, and it is still rebounding today, so the shoreline keeps rising and raised ancient beaches step back from the water in visible ridges. The flight finally crosses the forests and lakes of Ontario and lands at Toronto Pearson Airport.",
+      "Beijing to Toronto follows a great-circle track over the Arctic, some 10,600 km between the two cities as the crow flies, one of the longest nonstop routes from China to eastern North America. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart. Farther north lies Lake Baikal, the deepest lake on Earth at more than sixteen hundred metres, holding roughly a fifth of the world's unfrozen fresh water; it sits in a continental rift that is still slowly pulling apart, the mountains on both shores drop straight into the water, and in winter the surface freezes solid enough to drive on. Beyond the lake the Siberian taiga runs unbroken to the horizon, larch and spruce all the way, and every river flows north. The route then reaches the Siberian Arctic Coast, low tundra governed by permafrost: only the surface layer thaws in summer, water cannot drain away, and it collects into countless thaw lakes that read from the air like shards of scattered mirror; the coastline is broken, the river mouths are wide, and the pack ice retreats to higher latitudes through the summer. Across the Arctic Ocean comes the Canadian Arctic Archipelago, dozens of large islands and more than a thousand small ones separated by channels that are frozen year-round or for half the year; the ground is bare rock, gravel and a thin skin of tundra vegetation, with scarcely a tree in sight. Farther south is Hudson Bay, a vast inland sea driven deep into the North American continent and frozen over in winter; the crust beneath it was pressed down by an ice sheet kilometres thick, and it is still rebounding today, so the shoreline keeps rising and raised ancient beaches step back from the water in visible ridges. The flight finally crosses the forests and lakes of Ontario and lands at Toronto Pearson Airport.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 贝加尔湖数据同 pek-jfk（UNESCO，1 级）；「全程约一万一千五百公里」大圆约 10,560 km，航司公布里程未查到，已开 issue 待核。核实 2026-09-11
     travel: {
     "zh-CN":
       "北京到多伦多约12小时40分钟，由中国国际航空波音777客机执飞。两地时差12-13小时（加拿大东部夏令时期间12小时，标准时期间13小时）。多伦多夏季温暖湿润，冬季寒冷多雪，春秋最适合出行。" +
@@ -4961,9 +5217,10 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-mad": {
+    // study sources: 全四段（study/travel × 中英）: 梅塞塔约占半岛五分之二、平均海拔 600–800 m 与本库 terrain/meseta-central 一致（中文原写「六七百米」已统一）；奥德萨峡谷与本库一致。核实 2026-09-11
     study: {
     "zh-CN":
-      "上海飞马德里，从长江三角洲一路向西北，横跨整个亚欧大陆，全程约一万公里，终点在伊比利亚半岛腹地。起飞后先越过华北平原与内蒙古高原，地面从稠密的城镇与水网逐渐过渡到开阔的干旱草原，河流变少，村落之间的距离越拉越大。进入蒙古高原南缘的戈壁，砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；风蚀留下坚硬的砾幂，昼夜温差常超过三十度。再往西北，砾石逐渐让位给稀树草原，牧群和零星的定居点重新出现。接着是西西伯利亚平原，地势极为平坦，河流蜿蜒，沼泽与湖泊星罗棋布。翻过乌拉尔山脉——这条南北走向的古老褶皱山系海拔不高，却被公认为划分亚洲与欧洲的界线，山中的铁、铜与宝石矿藏支撑起沿线一串工业城市。此后飞机一路向西南，横穿东欧平原与中欧的丘陵：这一带是欧洲最重要的农业带之一，田块规整，河流大多向北或向南汇入海洋，冬季常见大范围的低云与积雪。越往西南，地块被河谷和运河切得越细，城镇密度越高。临近伊比利亚半岛前，比利牛斯山脉先在南面拉出一道明显的雪线，山体由花岗岩与石灰岩组成，冰川作用刻出一连串圆谷和陡壁。掠过山脉西班牙一侧的奥德萨峡谷，一道谷壁近乎垂直的石灰岩深谷，属于世界遗产范围。随后进入梅塞塔中央高原，这片古老台地约占半岛面积的五分之二，平均海拔六七百米；马德里就坐落在高原腹地，飞机降落在城市以东的巴拉哈斯机场。",
+      "上海飞马德里，从长江三角洲一路向西北，横跨整个亚欧大陆，全程约一万公里，终点在伊比利亚半岛腹地。起飞后先越过华北平原与内蒙古高原，地面从稠密的城镇与水网逐渐过渡到开阔的干旱草原，河流变少，村落之间的距离越拉越大。进入蒙古高原南缘的戈壁，砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；风蚀留下坚硬的砾幂，昼夜温差常超过三十度。再往西北，砾石逐渐让位给稀树草原，牧群和零星的定居点重新出现。接着是西西伯利亚平原，地势极为平坦，河流蜿蜒，沼泽与湖泊星罗棋布。翻过乌拉尔山脉——这条南北走向的古老褶皱山系海拔不高，却被公认为划分亚洲与欧洲的界线，山中的铁、铜与宝石矿藏支撑起沿线一串工业城市。此后飞机一路向西南，横穿东欧平原与中欧的丘陵：这一带是欧洲最重要的农业带之一，田块规整，河流大多向北或向南汇入海洋，冬季常见大范围的低云与积雪。越往西南，地块被河谷和运河切得越细，城镇密度越高。临近伊比利亚半岛前，比利牛斯山脉先在南面拉出一道明显的雪线，山体由花岗岩与石灰岩组成，冰川作用刻出一连串圆谷和陡壁。掠过山脉西班牙一侧的奥德萨峡谷，一道谷壁近乎垂直的石灰岩深谷，属于世界遗产范围。随后进入梅塞塔中央高原，这片古老台地约占半岛面积的五分之二，平均海拔六百到八百米；马德里就坐落在高原腹地，飞机降落在城市以东的巴拉哈斯机场。",
     "en-US":
       "Shanghai to Madrid runs north-west out of the Yangtze Delta across the entire Eurasian landmass, about 10,000 km in all, ending in the interior of the Iberian Peninsula. After take-off it passes over the North China Plain and the Inner Mongolian Plateau, the ground shifting from dense towns and waterways to open dry grassland, with fewer rivers and steadily longer gaps between villages. The flight reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel desert stretches to the horizon under less than 200 millimetres of rain in most years and the few rivers are largely seasonal; wind erosion has left a hard pavement and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to open steppe and herds and scattered settlements reappear. Next comes the West Siberian Plain, remarkably flat, laced with winding rivers and scattered with marshes and lakes. The route then crosses the Ural Mountains, an old north-south folded range of modest height that is nonetheless the accepted divide between Asia and Europe, its iron, copper and gemstone deposits supporting a string of industrial cities along its length. Beyond it the aircraft runs south-west across the East European Plain and the hills of central Europe, one of the continent's principal farming belts, its fields laid out in regular blocks, its rivers draining north or south to the sea, and its winters often under broad sheets of low cloud and snow. The farther south-west it goes, the more finely valleys and canals divide the ground and the denser the towns become. Before the Iberian Peninsula the Pyrenees draw a clear snowline across the south, a range of granite and limestone that glaciers have carved into a succession of cirques and cliffs. The flight passes Ordesa Canyon on the Spanish flank of that range, a limestone gorge with near-vertical walls inside a World Heritage area. It then crosses the Meseta Central, the ancient plateau covering about two-fifths of the peninsula at an average elevation of 600 to 800 metres; Madrid sits in the heart of it, and the flight lands at Barajas Airport east of the city.",
     },
@@ -4980,11 +5237,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-ath": {
+    // study sources: 全四段（study/travel × 中英）: 塔克拉玛干「常被称为世界第二大流动沙漠」与本库 terrain/taklamakan 一致；中安纳托利亚高原 600–1200 m 与本库一致；里海水面原写「约 28 m」，按 2025 年哈萨克斯坦官方数据改为「28–29 m、近年仍在下降」—— 会变的量，下轮复核。核实 2026-09-11
     study: {
     "zh-CN":
-      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是塔克拉玛干沙漠，常被称为世界第二大流动沙漠。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八米，没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
+      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是塔克拉玛干沙漠，常被称为世界第二大流动沙漠。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八至二十九米（近年仍在下降），没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
     "en-US":
-      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — often called the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level and with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
+      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — often called the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28–29 metres below sea level and still falling in recent years, with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
     },
     travel: {
     "zh-CN":
@@ -4999,9 +5257,10 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pkx-lis": {
+    // study sources: 全四段（study/travel × 中英）: 梅塞塔平均海拔 600–800 m（中文原写「六七百米」已统一）；季节性航班已带「出行前核实当季是否执飞」。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京大兴飞里斯本，同样向西北横跨亚欧大陆，但终点更靠西——里斯本在伊比利亚半岛最西端，直面大西洋。起飞后掠过蒙古高原南缘的戈壁，大片砾石滩延伸到天际线，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂；河流多为季节性，昼夜温差极大，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多，地面重新出现连片的绿色。接着进入西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条山脉海拔不高，南北却绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀；东坡与西坡的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往前是东欧平原——由古老地台构成的一片开阔低地，起伏极小，河流舒缓，是欧洲面积最大的平原。飞机在这里一路向西南，穿过中欧的河谷与法国南部的丘陵，地块和村镇的密度肉眼可见地增加，田野被公路和运河切成整齐的格子。临近伊比利亚半岛，飞机掠过梅塞塔中央高原的东北角，这片台地由古生代的花岗岩与沉积岩构成，平均海拔六七百米。再往西地势逐级下降，抵达葡萄牙的大西洋海岸，海岸线曲折、多河口三角湾。飞机最后降落在特茹河口北岸的里斯本机场。",
+      "北京大兴飞里斯本，同样向西北横跨亚欧大陆，但终点更靠西——里斯本在伊比利亚半岛最西端，直面大西洋。起飞后掠过蒙古高原南缘的戈壁，大片砾石滩延伸到天际线，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂；河流多为季节性，昼夜温差极大，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多，地面重新出现连片的绿色。接着进入西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条山脉海拔不高，南北却绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀；东坡与西坡的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往前是东欧平原——由古老地台构成的一片开阔低地，起伏极小，河流舒缓，是欧洲面积最大的平原。飞机在这里一路向西南，穿过中欧的河谷与法国南部的丘陵，地块和村镇的密度肉眼可见地增加，田野被公路和运河切成整齐的格子。临近伊比利亚半岛，飞机掠过梅塞塔中央高原的东北角，这片台地由古生代的花岗岩与沉积岩构成，平均海拔六百到八百米。再往西地势逐级下降，抵达葡萄牙的大西洋海岸，海岸线曲折、多河口三角湾。飞机最后降落在特茹河口北岸的里斯本机场。",
     "en-US":
       "Beijing Daxing to Lisbon also heads north-west across the Eurasian landmass, but ends further west still, since Lisbon lies at the western tip of the Iberian Peninsula facing the Atlantic. After take-off the flight crosses the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon under less than 200 millimetres of rain in most years, the fine sand long since carried off by wind to leave a hard pavement; the rivers are mostly seasonal, the daily temperature swing is extreme, and settlements follow the few springs. The farther north-west the route goes, the more the desert gives way to steppe, rivers become frequent, and continuous green returns to the ground. It then enters the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding across wide areas when the snow melts in spring. Past the Ural Mountains, the conventional divide between Asia and Europe, the land drops back to the flat almost at once. The range is not high, but it runs more than two thousand kilometres north to south; it rose in a continental collision some three hundred million years ago and has been eroded ever since, the forests on its eastern and western slopes differ markedly, and its ore deposits support a string of industrial cities along its length. Ahead lies the East European Plain, an open lowland built on an ancient platform with very little relief and slow rivers, the largest plain in Europe. The aircraft runs south-west across it and on through the valleys of central Europe and the hills of southern France, where the density of fields and towns visibly increases and roads and canals cut the ground into neat blocks. Approaching Iberia the flight crosses the north-eastern corner of the Meseta Central, a plateau of Palaeozoic granite and sedimentary rock at an average elevation of 600 to 800 metres. The land then steps down westward to the Atlantic coast of Portugal, a deeply indented shoreline cut by river-mouth estuaries. The flight lands at Lisbon Airport on the north bank of the Tagus estuary.",
     },
@@ -5018,11 +5277,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-cgk": {
+    // study sources: 全四段（study/travel × 中英）: 全程约 5300 km（大圆约 5238 km）；纳土纳「印尼最北端岛群」有误（最北点为伦多岛），已删修饰语、不补新定位。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞雅加达，从东亚大陆一路向南，全程约五千三百公里，终点是赤道附近的爪哇岛。起飞后先飞越华北平原——黄河与海河冲积出来的低平耕地，河渠纵横；再往南是长江中下游平原，湖泊密布、水网交织，夏季的云层常常连成一片。过了长江之后地形抬起，进入江南丘陵与南岭一带，红色砂岩和花岗岩风化出圆缓的山头，梯田顺着坡面层层排布。再往南，珠江三角洲的城市群沿着河口铺开，海岸线在这里向内凹成一个大湾。越过海岸线后进入南海，西太平洋最大的边缘海之一，北部是宽阔的大陆架，中部急剧下陷成四千多米深的海盆，海底散布着大量珊瑚礁和暗沙；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的航运船只。继续向南掠过纳土纳群岛，印度尼西亚最北端的岛群，坐落在通往马六甲海峡的航道要冲上，岛上以低矮丘陵和椰林为主，周围浅海遍布礁盘。往南则过渡为爪哇海，被苏门答腊、爪哇与加里曼丹环抱的浅海，水深大多不足百米，属于巽他陆架，末次冰期海面较低时这里曾是连片的陆地。飞机降落在爪哇岛西北岸的雅加达。",
+      "北京飞雅加达，从东亚大陆一路向南，全程约五千三百公里，终点是赤道附近的爪哇岛。起飞后先飞越华北平原——黄河与海河冲积出来的低平耕地，河渠纵横；再往南是长江中下游平原，湖泊密布、水网交织，夏季的云层常常连成一片。过了长江之后地形抬起，进入江南丘陵与南岭一带，红色砂岩和花岗岩风化出圆缓的山头，梯田顺着坡面层层排布。再往南，珠江三角洲的城市群沿着河口铺开，海岸线在这里向内凹成一个大湾。越过海岸线后进入南海，西太平洋最大的边缘海之一，北部是宽阔的大陆架，中部急剧下陷成四千多米深的海盆，海底散布着大量珊瑚礁和暗沙；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的航运船只。继续向南掠过纳土纳群岛，群岛坐落在通往马六甲海峡的航道要冲上，岛上以低矮丘陵和椰林为主，周围浅海遍布礁盘。往南则过渡为爪哇海，被苏门答腊、爪哇与加里曼丹环抱的浅海，水深大多不足百米，属于巽他陆架，末次冰期海面较低时这里曾是连片的陆地。飞机降落在爪哇岛西北岸的雅加达。",
     "en-US":
-      "Beijing to Jakarta runs almost due south from mainland East Asia, about 5,300 km in all, ending on the island of Java near the equator. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers and threaded with canals; farther south lie the plains of the middle and lower Yangtze, dense with lakes and waterways and often under an unbroken sheet of summer cloud. Past the Yangtze the ground rises into the hills of Jiangnan and the Nanling ranges, where red sandstone and granite weather into rounded summits and terraces step up the slopes. Farther south again the cities of the Pearl River delta spread out around the estuary, where the coastline curves inward into a broad bay. Beyond the coast the route enters the South China Sea, one of the largest marginal seas of the western Pacific: a wide continental shelf in the north drops abruptly to a basin more than four thousand metres deep in the middle, its floor scattered with coral reefs and shoals; the water stays warm all year, typhoons cross it frequently, and shipping traffic is visible on it almost continuously. Continuing south the flight passes the Natuna Islands, Indonesia's northernmost group, sitting astride the shipping lane toward the Strait of Malacca, low hills and coconut palm above, reef platforms in the shallows around. Southward the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo, mostly less than a hundred metres deep and part of the Sunda Shelf, which was continuous dry land when sea level was lower during the last ice age. The flight lands at Jakarta on the north-west coast of Java.",
+      "Beijing to Jakarta runs almost due south from mainland East Asia, about 5,300 km in all, ending on the island of Java near the equator. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers and threaded with canals; farther south lie the plains of the middle and lower Yangtze, dense with lakes and waterways and often under an unbroken sheet of summer cloud. Past the Yangtze the ground rises into the hills of Jiangnan and the Nanling ranges, where red sandstone and granite weather into rounded summits and terraces step up the slopes. Farther south again the cities of the Pearl River delta spread out around the estuary, where the coastline curves inward into a broad bay. Beyond the coast the route enters the South China Sea, one of the largest marginal seas of the western Pacific: a wide continental shelf in the north drops abruptly to a basin more than four thousand metres deep in the middle, its floor scattered with coral reefs and shoals; the water stays warm all year, typhoons cross it frequently, and shipping traffic is visible on it almost continuously. Continuing south the flight passes the Natuna Islands, sitting astride the shipping lane toward the Strait of Malacca, low hills and coconut palm above, reef platforms in the shallows around. Southward the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo, mostly less than a hundred metres deep and part of the Sunda Shelf, which was continuous dry land when sea level was lower during the last ice age. The flight lands at Jakarta on the north-west coast of Java.",
     },
     travel: {
     "zh-CN":
@@ -5037,6 +5297,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-mnl": {
+    // study sources: 全四段（study/travel × 中英）: 皮纳图博 1991 年喷发为 20 世纪第二大（仅次于 1912 年诺瓦鲁普塔，USGS 转述），与本库 terrain/mount-pinatubo 一致。核实 2026-09-11
     study: {
     "zh-CN":
       "广州飞马尼拉，向东南横跨南海，直抵吕宋岛。起飞后不久即进入南海——飞机全程大部分时间都在这片海域上空，海面上零星可见渔船与岛礁。" +
@@ -5060,6 +5321,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-nqz": {
+    // study sources: 全四段（study/travel × 中英）: 阿斯塔纳 1997 年迁都（改名年份 #264 已修）；克拉玛依「最大的油田之一」带限定；萨雷阿尔卡「最大地理单元之一」带限定。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞阿斯塔纳，向西横穿中国北方与中亚，全程都在中纬度大陆腹地飞行。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
@@ -5083,6 +5345,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-ist": {
+    // study sources: 全四段（study/travel × 中英）: 阿拉拉特山约 5100 m（本库 5137 m）为土耳其最高峰，未涉边界；全程约 7400 km（大圆约 7080 km，偏差 4–5%）。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞伊斯坦布尔，向西横穿亚欧大陆腹地，全程约七千四百公里，是中国直飞欧洲最长的航线之一，终点是一座地跨亚欧两洲的城市。起飞后越过燕山与阴山，进入蒙古高原南缘的戈壁——一条以砾石和裸岩为主的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，地表因此呈现出深浅不一的褐色斑块；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，聚落沿着为数不多的泉水和水井分布，彼此往往相隔上百公里。再往西进入中亚腹地的萨雷阿尔卡草原，哈萨克丘陵之上一片起伏平缓的干草原，是横贯欧亚的大草原带的一段；这里降水稀少而蒸发强烈，地表水多汇入没有出海口的内流湖，湖岸常留下白色的盐壳，草场在春季短暂返青后迅速转黄，长期以来是游牧放牧的核心地带，如今也是重要的矿产开采区。越过里海与外高加索的山地后，飞机掠过阿拉拉特山——土耳其最高峰，海拔约五千一百米的层状火山，山顶终年积雪，从空中很远就能认出来。再往西转为中安纳托利亚高原，山系环抱的内陆高原，盐湖与火山地貌交错。飞机降落在博斯普鲁斯海峡西侧的伊斯坦布尔机场。",
@@ -5102,11 +5365,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-syd": {
+    // study sources: 全四段（study/travel × 中英）: 全程约 8200 km（南航公布 8217 km；原写约 9000 km）；阿波山约 2954 m 为菲律宾最高峰；玻璃屋山火山颈约 2500–2700 万年（昆士兰公园局，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞悉尼，向东南跨过整个西太平洋，全程约九千公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
+      "广州飞悉尼，向东南跨过整个西太平洋，全程约八千二百公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
     "en-US":
-      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 9,000 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
+      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 8,200 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
     },
     travel: {
     "zh-CN":
@@ -5121,6 +5385,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-akl": {
+    // study sources: 全四段（study/travel × 中英）: 全程约 9400 km（大圆约 9365 km）；马里亚纳海沟逾一万米。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞奥克兰，向东南穿越西太平洋，全程约九千四百公里，从北半球一直飞到南半球。起飞后先掠过东海，这是一片平均水深不足两百米的陆架海，海底铺着长江搬运来的泥沙，冬季常有寒潮南下带来的大风。接着进入菲律宾海——西太平洋最大的边缘海，被琉球、菲律宾与马里亚纳诸岛围出一片深水盆地，东缘的马里亚纳海沟是地球表面已知最深处，超过一万米；洋面上常年高温高湿，是台风重要的生成海域。越过赤道后是俾斯麦海，夹在新几内亚岛与新不列颠岛之间的一片小而深的海，海底有活跃的扩张中心与热液喷口，周边岛弧火山活动频繁，海岸多被浓密的热带雨林覆盖。再往南是珊瑚海，海底是一系列深海盆地，西侧的大陆架上发育着世界上规模最大的堡礁系统，礁体由造礁石珊瑚在浅暖水中长期堆积而成。接下来横穿塔斯曼海，这片海域西风强劲、涌浪终年不息。最后飞机进入新西兰北岛上空，降落在奥克兰机场。",
@@ -5140,6 +5405,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-zrh": {
+    // study sources: 全四段（study/travel × 中英）: 瑞士高原夹在汝拉与阿尔卑斯之间，与本库瑞士条目一致；瑞士属申根不属欧盟。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞苏黎世，向西北横跨亚欧大陆，全程约九千四百公里，终点在阿尔卑斯山北麓。起飞后先越过长江口，江水带来的泥沙把这一带的海面染成浑黄。接着进入华北平原——黄河与海河长期泛滥淤积出来的低平耕地，地势自西向东缓缓降低，坡度小到肉眼难以察觉；黄河历史上多次改道，留下一条条废弃的古河床和高出地面的堤岸，如今这里是中国耕地与人口最密集的地区之一。再往西北进入蒙古高原南缘的戈壁——以砾石和裸岩为主的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度。越往西北，砾漠逐渐让位给草原，地表重新出现连续的草皮和季节性的牧场。接着是中亚腹地的萨雷阿尔卡草原，哈萨克丘陵之上起伏平缓的干草原，属于横贯欧亚的大草原带；这里降水稀少、蒸发强烈，地表水多汇入没有出海口的内流湖，湖岸留下白色盐壳，春季短暂返青后草场迅速转黄。再往西地势继续下降，进入里海北岸的低地——世界上面积最大的洼地之一，部分地面低于海平面；伏尔加河从这里注入里海，河口散开成大片芦苇湿地和沙洲，是候鸟迁徙路线上的重要中继站。越过伏尔加河后是东欧平原，古老地台之上起伏极小的开阔低地，河流舒缓，田块与林带的图案从空中看格外规整，冬季常见大范围积雪。最后飞机跨过中欧的丘陵，进入瑞士高原：夹在汝拉山与阿尔卑斯山之间的一条带状低地，冰川退去后留下湖泊与冰碛丘陵，瑞士的大部分城市都集中在这里。飞机降落在苏黎世机场。",
@@ -5159,6 +5425,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-vie": {
+    // study sources: 全四段（study/travel × 中英）: 萨雷阿尔卡 2008 年列入 UNESCO，与本库 terrain/korgalzhyn-reserve 一致；维也纳盆地。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞维也纳，从长江口向西北横穿亚欧大陆，终点在阿尔卑斯山东端的一片低地。起飞后先掠过华北平原，黄河与海河冲积出来的低平耕地，地势极为平坦，耕地与城镇连成一片，是中国人口最密集的区域之一。再往西北进入蒙古高原南缘的戈壁，地表以砾石为主，河流稀少且多为季节性；昼夜温差极大，夏季地表能升到五六十度，冬季又降到零下三四十度，几乎没有连续植被。风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓；春季融雪在洼地里积成成千上万个季节性湖泊，是候鸟迁徙路线上的重要中继站，这一带的湖群已列入世界遗产。夏季蒸发强烈，不少湖泊缩小甚至干涸，湖岸留下白色的盐壳，草场随之从绿转黄，牧群向北迁到还有水的洼地。这一带地下埋藏着丰富的铜、铅锌与煤，采矿点散布在草原之间，是哈萨克斯坦最主要的工业地带之一。再往西草原逐渐让位给耕地，河流开始稳定，田块与防风林带成排出现，聚落密度肉眼可见地上升。飞越东欧平原之后，地势依旧平缓，直到喀尔巴阡山在南面拉出一道弧线。飞机最后进入维也纳盆地，这片低地夹在阿尔卑斯山与喀尔巴阡山之间，多瑙河从中穿过，降落在城市东南的维也纳国际机场。",
@@ -5178,25 +5445,27 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-dub": {
+    // study sources: 全四段（study/travel × 中英）: 东航上海—都柏林 2026-07-20 首航、约 13 小时 20 分（东航新闻稿，1 级）—— study 原写「中爱首条直飞」、travel 原写「中爱之间唯一的直飞航线」，北京—都柏林（海航，2018 年开通、2023 年复航）更早且仍在飞，已改 / 删；爱尔兰不属申根。核实 2026-09-11
     study: {
     "zh-CN":
-      "上海飞都柏林，向西北横跨整个亚欧大陆，是中国与爱尔兰之间的首条直飞航线。起飞后先经过华北平原——黄河与海河冲积出来的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国最主要的农业区之一。接着进入蒙古高原南缘的戈壁，地表以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂；河流稀少且多为季节性，聚落沿着为数不多的泉水分布，彼此相隔很远。再往西北，草原逐渐取代荒漠，河流重新出现。继续深入内陆，进入西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖和沼泽，从空中看像撒了一地的碎镜片。再往西平原让位给东欧的农田与城镇，田块、林带和公路把地表切成整齐的格子。越过欧洲大陆后航线转向西，跨过北海这片浅海，海底是冰期留下的沉积。跨过爱尔兰海后进入以泥炭沼泽和牧场为主的中部低地，飞机降落在都柏林机场。",
+      "上海飞都柏林，向西北横跨整个亚欧大陆，是上海首条直飞爱尔兰的航线。起飞后先经过华北平原——黄河与海河冲积出来的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国最主要的农业区之一。接着进入蒙古高原南缘的戈壁，地表以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂；河流稀少且多为季节性，聚落沿着为数不多的泉水分布，彼此相隔很远。再往西北，草原逐渐取代荒漠，河流重新出现。继续深入内陆，进入西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖和沼泽，从空中看像撒了一地的碎镜片。再往西平原让位给东欧的农田与城镇，田块、林带和公路把地表切成整齐的格子。越过欧洲大陆后航线转向西，跨过北海这片浅海，海底是冰期留下的沉积。跨过爱尔兰海后进入以泥炭沼泽和牧场为主的中部低地，飞机降落在都柏林机场。",
     "en-US":
-      "Shanghai to Dublin runs north-west across the whole of Eurasia and is the first nonstop route between mainland China and Ireland. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible, threaded with canals and one of the country's principal farming regions. It then enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel and bare rock where most years bring less than 200 millimetres of rain and wind erosion has left a hard pavement; rivers are few and largely seasonal, and settlements follow the scarce springs, far apart from one another. Farther north-west steppe replaces desert and rivers reappear. Continuing inland the route reaches the West Siberian Plain, one of the largest plains on Earth, some fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave stands of conifer forest standing in water for weeks. Beneath it lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs that read from the air like shards of scattered mirror. Farther west the plain gives way to the farmland and towns of eastern Europe, where fields, shelterbelts and roads cut the ground into neat blocks. Past continental Europe the track turns west across the North Sea, shallow water whose bed was laid down during the ice ages. Beyond the Irish Sea it enters the central lowlands of peat bog and pasture, and the flight lands at Dublin Airport.",
+      "Shanghai to Dublin runs north-west across the whole of Eurasia and is the first nonstop route between Shanghai and Ireland. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible, threaded with canals and one of the country's principal farming regions. It then enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel and bare rock where most years bring less than 200 millimetres of rain and wind erosion has left a hard pavement; rivers are few and largely seasonal, and settlements follow the scarce springs, far apart from one another. Farther north-west steppe replaces desert and rivers reappear. Continuing inland the route reaches the West Siberian Plain, one of the largest plains on Earth, some fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave stands of conifer forest standing in water for weeks. Beneath it lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs that read from the air like shards of scattered mirror. Farther west the plain gives way to the farmland and towns of eastern Europe, where fields, shelterbelts and roads cut the ground into neat blocks. Past continental Europe the track turns west across the North Sea, shallow water whose bed was laid down during the ice ages. Beyond the Irish Sea it enters the central lowlands of peat bog and pasture, and the flight lands at Dublin Airport.",
     },
     travel: {
     "zh-CN":
-      "上海到都柏林约13小时20分钟，是目前中国与爱尔兰之间唯一的直飞航线，时差7-8小时（爱尔兰夏令时期间7小时）。爱尔兰全年温和多雨，四季都建议带一件防水外套。" +
+      "上海到都柏林约13小时20分钟，时差7-8小时（爱尔兰夏令时期间7小时）。爱尔兰全年温和多雨，四季都建议带一件防水外套。" +
       "都柏林机场距市中心约10公里，机场巴士（Airlink/Aircoach）约30-45分钟到市区，也有出租车。圣三一学院、健力士啤酒博物馆、圣帕特里克大教堂都在市中心步行可达范围内，酒吧文化和现场音乐是当地特色。" +
       "爱尔兰不属于申根区，签证按国籍不同、以爱尔兰移民局最新公布为准，行前确认并预留办理时间。这条航线2026年7月才开通，出行前建议再次核实航班班期是否有变动。",
     "en-US":
-      "Shanghai to Dublin takes about 13 hours 20 minutes, currently the only nonstop route between mainland China and Ireland, with a 7–8 hour time difference (7 hours during Irish summer time). Ireland is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
+      "Shanghai to Dublin takes about 13 hours 20 minutes, with a 7–8 hour time difference (7 hours during Irish summer time). Ireland is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
       " Dublin Airport is about 10 km from the city centre; the Airlink or Aircoach buses take about 30–45 minutes into town, and taxis are also available. Trinity College, the Guinness Storehouse and St. Patrick's Cathedral are all within walking distance of the centre, and pub culture and live music are local specialties." +
       " Ireland is not in the Schengen area; visa rules vary by nationality — check the latest from Irish immigration for your nationality and allow time to arrange one. This route only launched in July 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-osl": {
+    // study sources: 全四段（study/travel × 中英）: 格洛马河「挪威最长的河流」（约 620 km）与本库 terrain/glomma-river 一致；西西伯利亚平原东西约 1500 km。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞奥斯陆，向西北横跨亚欧大陆北部，全程约七千五百公里，终点在斯堪的纳维亚半岛南端。起飞后向西北爬升，进入蒙古高原南缘的戈壁，砾石滩铺到天际线；这片荒漠年降水多在两百毫米以下，风把细沙吹走后留下一层坚硬的砾幂，地表看上去像被打磨过，被搬走的沙在下风处堆成沙丘带。河流大多是季节性的，昼夜温差常超过三十度，聚落之间往往相隔上百公里。再往北是西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小。鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久；地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖与沼泽，沼泽面积之大，使这一带成为地球上重要的碳汇之一。再往西，针叶林逐渐掺进阔叶树，田块与村镇重新出现。越过乌拉尔以西之后，飞机接近波罗的海沿岸，海岸线低平、多沙洲与潟湖，冬季部分海湾结冰。最后跨过格洛马河——挪威最长的河流，从山地南流注入海峡，两岸是连片的针叶林与湖泊，飞机降落在奥斯陆以北的加勒穆恩机场。",
@@ -5216,6 +5485,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pvg-arn": {
+    // study sources: 全四段（study/travel × 中英）: 东航浦东—斯德哥尔摩 2026-06-22 复航、停飞六年、约 11 小时 10 分（官方转述，2 级）。核实 2026-09-11
     study: {
     "zh-CN":
       "上海飞斯德哥尔摩，2026年6月复航，是停飞六年后重开的直飞航线，全程约八千公里。起飞后先经过华北平原——黄河与海河冲积出的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国人口最密集的区域之一。接着进入蒙古高原南缘的戈壁，地表以砾石为主，植被稀疏，聚落之间相隔很远；这里年降水稀少，风把细沙吹走后留下坚硬的砾幂，昼夜温差极大，冬季常有强风扬起沙尘，能见度骤降。越往西北，砾漠逐渐让位给草原，河流开始变多，地面重新出现连片的绿色。再往西北是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖与沼泽。再往西平原让位给东欧的农田与城镇，地面重新变得规整。越过波罗的海沿岸后，飞机进入斯德哥尔摩群岛上空——冰后回弹把海底基岩抬出水面，形成两万多座岛屿与礁石。飞机降落在城市以北的阿兰达机场。",
@@ -5235,6 +5505,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-cph": {
+    // study sources: 全四段（study/travel × 中英）: 凯斯楚普机场在阿迈厄岛；丹麦服务费含在账单。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞哥本哈根，向西北横跨亚欧大陆，全程约七千五百公里，终点在波罗的海入口的厄勒海峡边。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地——这条南北绵延两千多公里的古老山系海拔不高，却被公认为划分亚洲与欧洲的界线；它形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓，两侧的植被与土壤类型截然不同。再往西是东欧平原，开阔低地上田块规整，河流舒缓。最后跨过波罗的海西口，降落在哥本哈根近旁阿迈厄岛上的卡斯特鲁普机场。",
@@ -5254,11 +5525,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pkx-hel": {
+    // study sources: 全四段（study/travel × 中英）: 南航大兴—赫尔辛基 2026-03-29 首航（2 级）；塞马湖「芬兰最大湖泊」与本库 terrain/saimaa 一致；原写「中国到北欧最北的直飞航路」说不出口径，已删。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京大兴飞赫尔辛基，向西北横跨亚欧大陆，全程约六千五百公里，是中国到北欧最北的一条直飞航路。起飞后越过燕山，进入蒙古高原南缘的戈壁——这片干旱带以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂，被吹走的细沙在边缘堆成沙丘；河流多为季节性，昼夜温差常超过三十度，冬季强风把地表尘土卷上高空，能见度骤降。越往西北，砾漠逐渐让位给草原，牧群和零星的定居点重新出现在河谷两侧。接着深入西西伯利亚平原，世界上最大的平原之一，地势极其平坦，森林、沼泽与湖泊交错成片。继续向西北，飞越乌拉尔山脉北段——地理学上常以这条山系划分亚洲与欧洲，越往北山势越平缓，山地被苔原和针叶林覆盖；这里的冻土夏季只融化表层很薄的一段，水下渗不下去，于是在地表积成大片浅水和沼泽。越过山脉后进入芬兰东南部的湖区，塞马湖是芬兰最大的湖泊，由冰川刻蚀出的复杂水系和数千座岛屿组成。飞机最后穿过芬兰湾北岸，降落在赫尔辛基万塔机场。",
+      "北京大兴飞赫尔辛基，向西北横跨亚欧大陆，全程约六千五百公里。起飞后越过燕山，进入蒙古高原南缘的戈壁——这片干旱带以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂，被吹走的细沙在边缘堆成沙丘；河流多为季节性，昼夜温差常超过三十度，冬季强风把地表尘土卷上高空，能见度骤降。越往西北，砾漠逐渐让位给草原，牧群和零星的定居点重新出现在河谷两侧。接着深入西西伯利亚平原，世界上最大的平原之一，地势极其平坦，森林、沼泽与湖泊交错成片。继续向西北，飞越乌拉尔山脉北段——地理学上常以这条山系划分亚洲与欧洲，越往北山势越平缓，山地被苔原和针叶林覆盖；这里的冻土夏季只融化表层很薄的一段，水下渗不下去，于是在地表积成大片浅水和沼泽。越过山脉后进入芬兰东南部的湖区，塞马湖是芬兰最大的湖泊，由冰川刻蚀出的复杂水系和数千座岛屿组成。飞机最后穿过芬兰湾北岸，降落在赫尔辛基万塔机场。",
     "en-US":
-      "Beijing Daxing to Helsinki runs north-west across the Eurasian landmass, about 6,500 km in all, one of the northernmost nonstop corridors between China and the Nordics. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt mostly of gravel and bare rock where most years bring less than 200 millimetres of rain, wind erosion has left a hard pavement and the fine sand it carried off has piled into dunes along the margins; the rivers are mostly seasonal, the daily temperature can swing more than thirty degrees, and strong winter winds lift dust high enough to cut visibility sharply. The farther north-west the route goes, the more the gravel desert gives way to steppe, with herds and scattered settlements reappearing along the valleys. The flight then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat, with forest, marsh and lake interlocking across it. Continuing north-west it crosses the northern Ural Mountains — the range geographers commonly use to divide Asia from Europe — where the relief grows gentler with latitude and tundra and conifer forest cover the slopes; the permafrost thaws only a thin layer each summer, so water cannot drain away and collects on the surface as wide shallow pools and bog. Beyond the range the route enters the lake district of south-east Finland, where Lake Saimaa, the country's largest lake, is a maze of glacially carved waterways and thousands of islands. The flight finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport.",
+      "Beijing Daxing to Helsinki runs north-west across the Eurasian landmass, about 6,500 km in all. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt mostly of gravel and bare rock where most years bring less than 200 millimetres of rain, wind erosion has left a hard pavement and the fine sand it carried off has piled into dunes along the margins; the rivers are mostly seasonal, the daily temperature can swing more than thirty degrees, and strong winter winds lift dust high enough to cut visibility sharply. The farther north-west the route goes, the more the gravel desert gives way to steppe, with herds and scattered settlements reappearing along the valleys. The flight then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat, with forest, marsh and lake interlocking across it. Continuing north-west it crosses the northern Ural Mountains — the range geographers commonly use to divide Asia from Europe — where the relief grows gentler with latitude and tundra and conifer forest cover the slopes; the permafrost thaws only a thin layer each summer, so water cannot drain away and collects on the surface as wide shallow pools and bog. Beyond the range the route enters the lake district of south-east Finland, where Lake Saimaa, the country's largest lake, is a maze of glacially carved waterways and thousands of islands. The flight finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport.",
     },
     travel: {
     "zh-CN":
@@ -5273,6 +5545,7 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-waw": {
+    // study sources: 全四段（study/travel × 中英）: 肖邦机场；华沙老城战后按原貌重建、1980 年列入 UNESCO。核实 2026-09-11
     study: {
     "zh-CN":
       "北京飞华沙，向西北横跨亚欧大陆，全程约七千一百公里，终点在中欧的维斯瓦河畔。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河流蜿蜒北流，沼泽面积之大在全球都少有。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，海拔不高但地质年代久远，铁、铜、宝石等矿产丰富，沿线因此形成了成片的工业城市。再往西进入东欧平原，冰期留下的低缓丘陵与沙质平原交替出现，河流在其间宽缓地绕行。飞机降落在华沙市区西南的肖邦机场。",
@@ -5292,11 +5565,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-prg": {
+    // study sources: 全四段（study/travel × 中英）: 瓦茨拉夫·哈维尔机场（2012 年更名）；捷克无国内商业航线与 CLAUDE.md 既有结论一致；「波希米亚高地 / 盆地」同篇自相矛盾，已统一为盆地。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞布拉格，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的波希米亚盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界，飞机进入一片开阔低地——这条山系南北绵延两千多公里，海拔并不高，却是重要的构造与气候界线，两侧坡地的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往西是东欧平原，古老地台之上起伏很小，田块与河流的图案从空中看格外规整。接近终点时进入波希米亚高地，四周被低山环抱、中间下凹，是一处典型的构造盆地。飞机降落在布拉格西郊的瓦茨拉夫·哈维尔机场。",
+      "北京飞布拉格，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的波希米亚盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界，飞机进入一片开阔低地——这条山系南北绵延两千多公里，海拔并不高，却是重要的构造与气候界线，两侧坡地的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往西是东欧平原，古老地台之上起伏很小，田块与河流的图案从空中看格外规整。接近终点时进入波希米亚盆地，四周被低山环抱、中间下凹，是一处典型的构造盆地。飞机降落在布拉格西郊的瓦茨拉夫·哈维尔机场。",
     "en-US":
-      "Beijing to Prague runs north-west across the Eurasian landmass, about 7,600 km in all, ending in the Bohemian basin of central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, but it marks a real structural and climatic boundary, the forests on its two flanks differ markedly, and its ore deposits support a string of industrial cities along its length. Farther west lies the East European Plain, an ancient platform with very little relief where fields and rivers read from the air as a strikingly regular pattern. Near the end the route crosses the Bohemian Uplands, a ring of low mountains around a sunken middle — a textbook structural basin. The flight lands at Václav Havel Airport on the western edge of Prague.",
+      "Beijing to Prague runs north-west across the Eurasian landmass, about 7,600 km in all, ending in the Bohemian basin of central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, but it marks a real structural and climatic boundary, the forests on its two flanks differ markedly, and its ore deposits support a string of industrial cities along its length. Farther west lies the East European Plain, an ancient platform with very little relief where fields and rivers read from the air as a strikingly regular pattern. Near the end the route crosses the Bohemian Basin, a ring of low mountains around a sunken middle — a textbook structural basin. The flight lands at Václav Havel Airport on the western edge of Prague.",
     },
     travel: {
     "zh-CN":
@@ -5311,11 +5585,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "pek-fco": {
+    // study sources: 全四段（study/travel × 中英）: 亚平宁「纵贯意大利半岛的脊梁」与本库一致；里海水面原写「约 28 m」已改为「28–29 m、近年仍在下降」。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞罗马，向西横跨亚欧大陆，全程约八千五百公里，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；地表几乎没有连续植被，风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，能见度骤降。越往西，砾漠逐渐让位给草原。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓；春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站，夏季蒸发强烈，湖岸留下白色的盐壳。接着飞临里海，地球上面积最大的内陆水体，水面低于海平面约二十八米，北部浅、南部深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化，近岸能看到一道道被遗弃的旧岸线。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，落水洞与地下河密布，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的褶皱山系，是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
+      "北京飞罗马，向西横跨亚欧大陆，全程约八千五百公里，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；地表几乎没有连续植被，风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，能见度骤降。越往西，砾漠逐渐让位给草原。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓；春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站，夏季蒸发强烈，湖岸留下白色的盐壳。接着飞临里海，地球上面积最大的内陆水体，水面低于海平面约二十八至二十九米（近年仍在下降），北部浅、南部深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化，近岸能看到一道道被遗弃的旧岸线。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，落水洞与地下河密布，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的褶皱山系，是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
     "en-US":
-      "Beijing to Rome runs west across the Eurasian landmass, about 8,500 km in all, to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under less than 200 millimetres of rain in most years, with few rivers and those mostly seasonal; almost no continuous vegetation forms, wind erosion has left a hard pavement, and strong winter winds lift dust off the surface sharply enough to cut visibility. The farther west it goes, the more the gravel desert gives way to steppe. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds; evaporation is strong in summer and leaves white salt crusts along their shores. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation, and abandoned former shorelines are visible in steps near the water. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, dense with sinkholes and underground rivers, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
+      "Beijing to Rome runs west across the Eurasian landmass, about 8,500 km in all, to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under less than 200 millimetres of rain in most years, with few rivers and those mostly seasonal; almost no continuous vegetation forms, wind erosion has left a hard pavement, and strong winter winds lift dust off the surface sharply enough to cut visibility. The farther west it goes, the more the gravel desert gives way to steppe. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds; evaporation is strong in summer and leaves white salt crusts along their shores. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28–29 metres below sea level and still falling in recent years, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation, and abandoned former shorelines are visible in steps near the water. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, dense with sinkholes and underground rivers, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
     },
     travel: {
     "zh-CN":
@@ -5332,7 +5607,7 @@ export const ROUTE_NARRATION: Record<
   "scl-cjc": {
     study: {
     "zh-CN":
-      "圣地亚哥飞卡拉马，是智利境内最经典的一条南北纵向航线，沿途正好穿越智利中部与北部截然不同的两种气候带。飞机从中央谷地北段起飞，脚下先是方格状的农田与葡萄园，两侧被海岸山脉与安第斯山脉夹峙——这正是智利“三段式”地貌骨架最典型的样子。" +
+      "圣地亚哥飞卡拉马，是智利境内一条典型的南北纵向航线，沿途正好穿越智利中部与北部截然不同的两种气候带。飞机从中央谷地北段起飞，脚下先是方格状的农田与葡萄园，两侧被海岸山脉与安第斯山脉夹峙——这正是智利“三段式”地貌骨架的典型样子。" +
       "往北飞行约一个多小时后，绿色逐渐消失，地表转为大片赭红色的荒漠——这就是阿塔卡马沙漠，地球上除极地干燥谷地外最干旱的地区。它的极端干旱由两个因素叠加造成：东侧安第斯山脉挡住了来自亚马逊的湿润气流，形成雨影；西侧沿岸寒冷的洪堡洋流又抑制了海面蒸发。两种效应叠加，使这里部分气象站数十年都没有有效降水记录。" +
       "飞机最终降落在卡拉马——一座因毗邻丘基卡马塔铜矿而发展起来的矿业城市，也是通往圣佩德罗德阿塔卡马、月亮谷、塔蒂奥间歇泉等阿塔卡马腹地景观的主要空中门户。从翠绿农田到赤色荒漠，这条航线浓缩了智利地貌最鲜明的一次转折。",
     "en-US":
@@ -5340,6 +5615,7 @@ export const ROUTE_NARRATION: Record<
       " About an hour north, the green gives way to vast expanses of reddish-brown desert — the Atacama, one of the driest places on Earth outside polar desert valleys. Its extreme aridity comes from two compounding effects: the Andes to the east block moist air from the Amazon, producing a rain shadow, while the cold Humboldt Current offshore suppresses evaporation from the sea. Together they leave some weather stations here with no measurable rainfall for decades." +
       " The flight lands in Calama, a mining city that grew up beside the Chuquicamata copper mine and now serves as the main air gateway to San Pedro de Atacama, Valle de la Luna, and the El Tatio geysers. From green farmland to red desert, this route condenses one of Chile's sharpest landscape transitions into a single flight.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 阿塔卡马极端干旱成因（雨影 + 洪堡寒流）；丘基卡马塔铜矿。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到卡拉马约2小时10分钟，智利南美航空执飞。卡拉马埃尔洛阿机场是前往圣佩德罗德阿塔卡马的主要中转站，机场有出租车与酒店接驳车，转陆路约1.5小时可达。" +
@@ -5360,13 +5636,14 @@ export const ROUTE_NARRATION: Record<
       " Antofagasta is northern Chile's largest port city, with copper exports as the backbone of its economy; the city was historically part of Bolivia. Just before touchdown, passengers can often spot La Portada from the window — a sea arch about 43 m high, carved from Tertiary sedimentary rock by long-term wave erosion, a representative landmark of the boundary where the Atacama Desert meets the ocean directly." +
       " This route shows a different ending for the Atacama's western edge: rather than reaching an inland mining city like Calama, it heads straight for the Pacific, letting desert and ocean meet directly along a single coastline.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 拉波塔达海蚀拱约 43 m；安托法加斯塔 1879 年前属玻利维亚为史实、无评价。核实 2026-09-11
     travel: {
     "zh-CN":
-      "圣地亚哥到安托法加斯塔约2小时，智利南美航空执飞。塞罗莫雷诺机场距市区约22公里，出租车约20多分钟到市中心。" +
-      "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊最著名的自然景点，可包车或参加当地半日游前往。",
+      "圣地亚哥到安托法加斯塔约2小时，智利南美航空执飞。安德烈斯·萨贝利亚机场（旧称塞罗莫雷诺）距市区约22公里，出租车约20多分钟到市中心。" +
+      "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊的标志性自然景点，可包车或参加当地半日游前往。",
     "en-US":
-      "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Cerro Moreno Airport is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
-      " The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the most famous natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
+      "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Andrés Sabella Airport (formerly Cerro Moreno) is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
+      " The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the signature natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
     },
   },
   "scl-lsc": {
@@ -5380,6 +5657,7 @@ export const ROUTE_NARRATION: Record<
       " Because of its moderate elevation, clean air, and near-total lack of cloud cover, Elqui Valley is a globally recognized stargazing destination, with several international observatories including Cerro Tololo Inter-American Observatory built upstream. The flight then descends along the coast to land at La Serena, Chile's second-oldest city, which preserves an unusually large collection of Spanish colonial architecture." +
       " This route is a snapshot of Chile's transition from an arid north to a Mediterranean-climate center — heading north from here, rainfall grows scarcer and scarcer until the heart of the Atacama Desert.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 拉塞雷纳 1544 年建城、智利第二古老城市；埃尔基谷、托洛洛山天文台。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到拉塞雷纳约1小时10分钟，智利南美航空执飞。拉弗洛里达机场距市区约5公里，出租车很快可到市中心。" +
@@ -5393,13 +5671,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "圣地亚哥飞康塞普西翁，向南穿越智利中央谷地最富庶的一段。舷窗下方的智利中央谷地是整齐的方格状农田与成片的葡萄园，两侧分别是低矮的海岸山脉与终年积雪的安第斯山脉，这是理解智利“海岸山脉—中央谷地—安第斯山脉”三段式地貌骨架的经典剖面。" +
-      "越往南飞，田野逐渐被更为潮湿的绿色植被取代，降水也明显增多——这是地中海式气候向温带海洋性气候过渡的信号。飞机降落在比奥比奥河河口附近的康塞普西翁，这里是智利第二大都会区，也是重要的工业与港口城市。2010年智利大地震及随后引发的海啸曾对这一带造成严重影响，此后完成了大规模重建。" +
+      "越往南飞，田野逐渐被更为潮湿的绿色植被取代，降水也明显增多——这是地中海式气候向温带海洋性气候过渡的信号。飞机降落在比奥比奥河河口附近的康塞普西翁，这里是智利最大的都会区之一，也是重要的工业与港口城市。2010年智利大地震及随后引发的海啸曾对这一带造成严重影响，此后完成了大规模重建。" +
       "这条航线展示了中央谷地由北向南逐渐“变绿变湿”的渐变过程，也把乘客带到智利多雨地带的门户。",
     "en-US":
       "Santiago to Concepción heads south across the richest stretch of Chile's Central Valley. Below, the Chilean Central Valley is a neat grid of farmland and vineyards, flanked by the low Coastal Range on one side and the permanently snow-capped Andes on the other — a classic cross-section of Chile's three-part landscape structure." +
-      " Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, Chile's second-largest metro area and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
+      " Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, one of Chile's largest metro areas and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
       " This route traces the Central Valley's gradual shift from dry to green and wet moving south, delivering passengers to the doorstep of Chile's rainier belt.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 大康塞普西翁为智利第二大都会区；2010 年大地震为已了结的自然灾害史。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到康塞普西翁约55分钟，智利南美航空执飞。卡列尔苏尔机场距市区约15公里，有公交与出租车往返市区。" +
@@ -5420,6 +5699,7 @@ export const ROUTE_NARRATION: Record<
       " Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with about 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
       " The flight lands at Temuco, the gateway city to Villarrica Volcano, Pucón, and other Lake District highlights, and one of the cities with the largest concentration of Mapuche Indigenous culture in Chile. In a single flight, passengers move from the Central Valley's farmland straight into the Lake District's signature combination of volcano, forest, and lake.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 利亚伊马喷发约 50 次与本库 terrain/llaima-volcano 一致（#264 前已修）；特木科马普切文化只写事实。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到特木科约1小时25分钟，智利南美航空执飞。拉阿劳卡尼亚机场距市区约6公里，有出租车与公交往返市区。" +
@@ -5433,13 +5713,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "圣地亚哥飞普埃托蒙特，是智利南部最经典的湖区航线之一，也是通往巴塔哥尼亚的传统门户。飞机离开中央谷地后一路向南，田野逐渐被湖泊与森林取代，湿润程度明显增加。" +
-      "临近降落时，舷窗下方会出现奥索尔诺火山——一座形态极为对称的成层火山，因外形酷似日本富士山常被称作“智利富士山”，矗立在亚科多湖与耶尔科湖之间。19世纪起，这一带吸引了大批德国移民定居，普恩塔斯港等湖畔小镇至今保留着浓厚的德式建筑风格。" +
+      "临近降落时，舷窗下方会出现奥索尔诺火山——一座形态极为对称的成层火山，因外形酷似日本富士山常被称作“智利富士山”，矗立在延基韦湖与托多斯洛斯桑托斯湖之间。19世纪起，这一带吸引了大批德国移民定居，普埃托瓦拉斯等湖畔小镇至今保留着浓厚的德式建筑风格。" +
       "飞机最终降落在普埃托蒙特——智利南部通往巴塔哥尼亚与奇洛埃群岛的主要海空交通枢纽，也是重要的三文鱼养殖产业中心。这条航线浓缩了智利从“干燥中部”到“多雨南部”的完整过渡。",
     "en-US":
       "Santiago to Puerto Montt is one of southern Chile's classic Lake District routes and the traditional gateway to Patagonia. After leaving the Central Valley, the flight heads steadily south as farmland gives way to lakes and forest, with humidity rising noticeably along the way." +
       " Just before landing, Osorno Volcano comes into view — an exceptionally symmetrical stratovolcano often called 'Chile's Mount Fuji' for its resemblance to Japan's iconic peak, standing between Lake Llanquihue and Lake Todos los Santos. Beginning in the 19th century, this area drew large numbers of German immigrants, and lakeside towns such as Puerto Varas still retain a strong German architectural character today." +
       " The flight lands at Puerto Montt, the main sea-and-air gateway from southern Chile to Patagonia and the Chiloé Archipelago, and an important center of the salmon-farming industry. This route condenses Chile's full transition from a dry center to a rainy south into a single flight.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 奥索尔诺火山对称锥形；「普恩塔斯港」为误译，已统一为「普埃托瓦拉斯」；湖名「延基韦湖 / 托多斯洛斯桑托斯湖」译名待查，已开 issue。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到普埃托蒙特约1小时45分钟，智利南美航空执飞。埃尔特帕尔机场距市区约16公里，有出租车与酒店接驳车往返市区。" +
@@ -5452,14 +5733,15 @@ export const ROUTE_NARRATION: Record<
   "scl-puq": {
     study: {
     "zh-CN":
-      "圣地亚哥飞蓬塔阿雷纳斯，是智利国内航线中航程最长、也最壮观的一条，全程约3.5小时，一路飞越智利最荒凉、最少人烟的巴塔哥尼亚地带。飞机离开湖区后，森林与湖泊逐渐被开阔的荒野取代，地貌变得越来越破碎复杂。" +
+      "圣地亚哥飞蓬塔阿雷纳斯，是一条纵贯智利南北的长途国内航线，全程约3.5小时，一路飞越智利最荒凉、最少人烟的巴塔哥尼亚地带。飞机离开湖区后，森林与湖泊逐渐被开阔的荒野取代，地貌变得越来越破碎复杂。" +
       "航程后段，舷窗下方会出现南巴塔哥尼亚冰原——南半球除南极洲外最大的连续冰体，边缘裂开无数冰川舌，其中智利一侧的皮奥十一冰川宽阔壮观。飞机随后掠过智利峡湾——冰川深度侵蚀海岸线后、海水倒灌形成的复杂峡湾与水道群，陡峭的山壁直插海面，是世界上最复杂的峡湾海岸之一。" +
       "临近降落时，飞机沿麦哲伦海峡北岸下降——这条全长约570公里的天然海峡因葡萄牙航海家麦哲伦1520年经此完成人类首次环球航行的关键航段而得名。飞机最终降落在蓬塔阿雷纳斯，世界最靠南的重要城市之一，也是前往百内国家公园、火地岛与南极的主要门户。",
     "en-US":
-      "Santiago to Punta Arenas is the longest and most dramatic domestic route in Chile, taking about 3.5 hours across the country's most remote and sparsely populated stretch of Patagonia. Beyond the Lake District, forest and lake give way to open wilderness, and the landscape below grows increasingly fragmented and complex." +
+      "Santiago to Punta Arenas is a long north–south domestic route in Chile, taking about 3.5 hours across the country's most remote and sparsely populated stretch of Patagonia. Beyond the Lake District, forest and lake give way to open wilderness, and the landscape below grows increasingly fragmented and complex." +
       " Later in the flight, the Southern Patagonian Ice Field comes into view — the largest continuous body of ice in the Southern Hemisphere outside Antarctica, its edges splitting into countless glacial tongues, with Pío XI Glacier broad and dramatic on the Chilean side. The flight then passes over the Chilean Fjords — a maze of fjords and channels formed as glaciers deeply carved the coastline and the sea flooded in, with steep cliffs plunging straight into the water, one of the most complex fjord coastlines in the world." +
       " Approaching landing, the flight descends along the northern shore of the Strait of Magellan — a roughly 570 km natural passage named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe. The flight lands at Punta Arenas, one of the world's most important far-southern cities and the main gateway to Torres del Paine National Park, Tierra del Fuego, and Antarctica.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 麦哲伦海峡约 570 km；1520 年「关键航段」措辞谨慎（环球由埃尔卡诺 1522 年完成）；南巴塔哥尼亚冰原。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到蓬塔阿雷纳斯约3小时35分钟，智利南美航空执飞，是智利国内最长的航线之一。卡洛斯·伊瓦涅斯·德尔坎波总统机场距市区约20公里，有出租车与巴士往返市区。" +
@@ -5480,6 +5762,7 @@ export const ROUTE_NARRATION: Record<
       " Easter Island lies about 3,700 km from mainland Chile, a triangular volcanic island formed from three merged shield volcanoes. This extreme geographic isolation gave rise to a unique Polynesian culture — Polynesians arrived and settled the island around 1200–1250 CE, gradually developing the distinctive tradition of carving nearly 900 moai statues. Just before landing, Rano Raraku crater comes into view from the window, the quarry where most of the moai were carved, still scattered with hundreds of unfinished statues today." +
       " The flight lands at Hanga Roa, the island's only town and the sole base for exploring the world's most isolated inhabited island. The route itself is the best proof of that isolation: even from the nearest mainland airport, reaching the island means crossing most of the Pacific.",
     },
+    // travel sources: 全四段（study/travel × 中英）: 复活节岛距大陆约 3700 km（大圆约 3752 km）、摩艾近 900 尊、定居约 1200–1250 年，均与本库 terrain/easter-island 一致。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到复活节岛约5小时35分钟，智利南美航空执飞，是全球最孤立的航线之一。马塔维里机场就在汉加罗阿镇边缘，是全岛唯一的机场。" +

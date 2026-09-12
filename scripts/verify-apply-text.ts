@@ -308,6 +308,35 @@ for (const f of round.findings) {
     }
   }
 }
+/**
+ * **注册表按条目查，不受上面的噪音上限约束**（2026-09-11 补）。
+ *
+ * 噪音上限（全库 >10 次就跳过）让同一种漏一天里出现了两次：哈萨克斯坦批改掉的「2012 / 1972 / 逾 30 座」、
+ * 以及 9-10 改掉的 oland-alvar「石炭纪」—— 四个值**都还留在注册表那一条的 `source` 里**，
+ * 回头搜却报「全库没有残留」，因为年份和地质年代恰好都是全库几十次的常见词。
+ * 地形条目与它在注册表里的 `source` 是一一对应的，所以这里按 id 只查**同一个条目**：
+ * 范围窄到不会有噪音，也就不需要上限。
+ */
+const registryText = scanTargets.find(([file]) => file === "lib/terrain-registry.ts")?.[1] ?? "";
+function registryEntry(id: string): string {
+  const i = registryText.indexOf(`id: "${id}",`);
+  if (i < 0) return "";
+  // 注册表的条目是 `const X: TerrainEntry = {` … `};`（顶格收尾）—— 第一版按内容文件的 `\n  },` 切，
+  // 切到的是下一个条目的中段，等于没查
+  const end = registryText.indexOf("\n};", i);
+  return registryText.slice(i, end < 0 ? undefined : end);
+}
+for (const f of round.findings) {
+  if (setOf(f.kind) !== "terrain" || f.resolution !== "fixed") continue;
+  const entry = registryEntry(f.id);
+  if (!entry) continue;
+  const p = f.textPatch?.zh; // 注册表的 source 是中文
+  if (!p) continue;
+  for (const frag of removedFragments(p.find, p.replace)) {
+    if (entry.includes(frag)) stale.push(`  「${frag}」仍在注册表 ${f.id} 的 source 里（按条目查，不受噪音上限约束）  ← ${f.key}`);
+  }
+}
+
 if (stale.length) {
   console.log(
     `\n⚠️ 回头搜：刚改掉的说法在别处还留着 ${stale.length} 条 —— **逐条看一遍**，\n` +

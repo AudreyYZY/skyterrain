@@ -38,7 +38,7 @@ const SENT = new RegExp(`[^。；！？\\n]*?(?:${SUP_WORDS.join("|")})[^。；�
 const HEDGE = /(之一|常被称|常称|据称|一般认为)/;
 
 const zhOf = (id: string) => {
-  const n = (ROUTE_NARRATION as any)[id];
+  const n = ROUTE_NARRATION[id];
   return [n?.study?.["zh-CN"] ?? "", n?.travel?.["zh-CN"] ?? ""].join("\n");
 };
 
@@ -61,8 +61,8 @@ for (const t of TERRAIN_REGISTRY) {
 /** 地形条目的正文（六段拼一起），注释不算 —— 读者听到的是正文 */
 const terrainBody = new Map<string, string>();
 for (const [id] of terrainNames) {
-  const c: any = TERRAIN_CONTENT_ZH[id];
-  terrainBody.set(id, ["seeing", "formation", "observation", "distinguish", "concept", "history"]
+  const c = TERRAIN_CONTENT_ZH[id];
+  terrainBody.set(id, (["seeing", "formation", "observation", "distinguish", "concept", "history"] as const)
     .map((f) => c?.[f] ?? "").join("\n"));
 }
 

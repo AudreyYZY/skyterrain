@@ -218,6 +218,11 @@ npm run verify:report -- <findings.json>             # 真做
 **顺序是先 `verify:apply` 再 `verify:report`** —— 这样 issue 里说的「已修正」
 是真的已经改完了。
 
+**findings.json 用 `scripts/verify/mkfindings.py` 生成**：它在生成时就断言 find 在**该条目块内**
+正好出现一次、不跨 `" +` 片段拼接、替换里没有裸双引号 —— 这三条正是下面那段说的「apply 整批回滚」的
+三个常见原因，在生成时挡住比在 apply 时猜是哪一条便宜得多。纯写法改动（降级最高级之类）不该开 issue，
+用同一个文件里的 `apply_direct()` 直接批量改。
+
 **apply 报错就停下，不要接着跑 report**（踩过）：`verify:apply-text` 遇到 find 命中
 0 次或多次会整个退出、一个字都不写；这时候如果习惯性地把 report 也跑了，台账里就会
 多出一行「已修正 N 条」而数据其实没动。改完 find 字符串、apply 真的成功之后再跑 report。

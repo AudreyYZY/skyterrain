@@ -17,6 +17,7 @@ import { estimateSpeechDurationSec } from "../lib/speech.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
 import type { RouteWaypoint } from "../types/route.ts";
+import { CITY_REGISTRY } from "../lib/places-registry.ts";
 
 const ROUTES = ALL_ROUTES;
 const IDS = new Set(TERRAIN_REGISTRY.map((e) => e.id));
@@ -130,7 +131,9 @@ for (const r of ROUTES) {
       for (const lang of ["zh-CN", "en-US"] as const) {
         const text = getRouteNarration(r.id, lang, mode);
         if (!text) continue;
-        const bad = [...new Set(text.match(/(空客\s?A3\d\d|波音\s?7\d\d|Airbus\s?A3\d\d|Boeing\s?7\d\d|C919|[A-Z]{2}\d{3,4}航班|flight\s[A-Z]{2}\d{3,4})/g) ?? [])];
+        // 支线机型（ATR / Dash 8 / Embraer / CRJ）第一版漏了：婆罗洲两条航线的数据已查明有误，
+        // 解说却写着「ATR 72-500机型」，这条规则一直没看见（2026-09-11 补）。
+        const bad = [...new Set(text.match(/(空客\s?A3\d\d|波音\s?7\d\d|Airbus\s?A3\d\d|Boeing\s?7\d\d|C919|ATR\s?\d\d|Dash\s?8|Q400|Embraer|E1[79]0|巴西航空工业|庞巴迪|CRJ-?\d{3}|[A-Z]{2}\d{3,4}航班|flight\s[A-Z]{2}\d{3,4})/g) ?? [])];
         if (bad.length > 0) {
           fail(r.id, `未核实/已查明有误的航线，其 ${mode}/${lang} 解说点名了「${bad.join("、")}」——不应写出机型/航班号`);
         }
@@ -140,10 +143,31 @@ for (const r of ROUTES) {
 
   if (isFlightVerified(r) && r.flight?.aircraft) {
     const acn = r.flight.aircraft.replace(/[^0-9A-Za-z]/g, "").toLowerCase();
+    /**
+     * 支线机型（2026-09-11 补）：萨格勒布—奥西耶克解说写「Dash 8 Q400」，数据是 Saab 340B —— 这条规则
+     * 一直只认空客 / 波音 / C919，看不见。同一机型写法很多，先各自归一到一个族名再比：
+     * Q400 / Dash 8 / DHC-8 → dash8；巴西航空工业 / Embraer / E190 → 各自保留；ATR 72 → atr72。
+     */
+    const REGIONAL = /(ATR\s?\d\d|Dash\s?8|Q400|DHC-?8|E1[79]0|Embraer|巴西航空工业|Saab\s?\d{3}|萨博\s?\d{3}|CRJ-?\d{3})/gi;
+    const family = (s: string): string => {
+      const k = s.replace(/[^0-9A-Za-z一-龥]/g, "").toLowerCase();
+      if (/^(q400|dash8|dhc8)/.test(k)) return "dash8";
+      if (k === "巴西航空工业") return "embraer";
+      if (k.startsWith("萨博")) return "saab" + k.slice(2);
+      return k;
+    };
+    const acFamilies = new Set<string>([acn]);
+    if (/dash8|q400|dhc8/.test(acn)) acFamilies.add("dash8");
     for (const mode of ["study", "travel"] as const) {
       for (const lang of ["zh-CN", "en-US"] as const) {
         const text = getRouteNarration(r.id, lang, mode);
         if (!text) continue;
+        for (const h of new Set(text.match(REGIONAL) ?? [])) {
+          const f = family(h);
+          if (![...acFamilies].some((a) => a.includes(f))) {
+            fail(r.id, `${mode}/${lang} 解说提到机型「${h}」，与数据 flight.aircraft「${r.flight.aircraft}」不符`);
+          }
+        }
         const hits = [...new Set(text.match(/(波音\s?7\d\d|Boeing\s?7\d\d|空客\s?A3\d\d|Airbus\s?A3\d\d|C919)/g) ?? [])];
         for (const h of hits) {
           const key = h.replace(/[^0-9A-Za-z]/g, "").replace(/^(boeing|airbus)/i, "").toLowerCase();
@@ -320,6 +344,83 @@ if (carrierMismatch.length > 0) {
   for (const m of carrierMismatch) console.log(`  ${m}`);
   console.log("  确认无害就加进 scripts/check-routes.ts 的 BENIGN 表并写明理由。");
 }
+
+// ── 「是 X 运营的 / operated by X」：解说自己点名的承运人，逐句比数据（失败）──────────
+//
+// 上面那段报告**结构上看不见**最常见的一种错（2026-09-11 航线解说联网核实时一次撞到 7 处）：
+// 蒙古 5 条写「是航蒙航空运营的国内航班之一」（航蒙航空根本没有国内航班）、ist-tzx 写飞马航空、
+// nqz-pwq 写已改名的哈萨克航空 —— 而这些航线的数据在 2026-09-07 早就核实改正了。
+// 它的探针名单取自**当前数据里出现过的航司名**；解说里写的那几家从来不在数据里，
+// 于是「数据改对了、解说没跟上」这个它最该报的时刻，它恰好是瞎的。
+// 另外它只打印不失败，而人跑检查时常只看最后一行 —— 报了也没人看见。
+//
+// 这里反过来：不猜哪些名字是航司，**只看句式**。「是 X 运营 / 执飞的」「由 X 运营 / 执飞」
+// 「operated by X」里的 X 一定是在说承运人，拿它和这条航线自己的 flight.airline 比。
+// 未核实（或查明有误）的航线，解说本来就不该点名承运人 —— 与上面「不得点名机型」同一道理。
+const OPERATOR_ZH = /(?:是|由)([^，。；、“”「」]{2,18}?)(?:运营|执飞)/g;
+// 英文遇到「(」或句号就停：括号里通常是机型（「SAS (ATR 72)」），句号后是下一句（第一版抓成了「AirBorneo. After」）
+const OPERATOR_EN = /operated by ((?:the )?[A-Z][\w&'’-]*(?:\s+(?:[A-Z]|of\b|and\b)[\w&'’-]*)*)/g;
+/**
+ * 句式对了、说的却不是承运人：「由国产 C919 执飞」（机型）、「由经验丰富的机组执飞」（机组）、
+ * 「是否仍在执飞」（「是否」的「是」）、「由州政府接管运营」（所有权）。第一版首跑 27 处里 11 处是这种。
+ */
+const NOT_A_CARRIER = /C919|飞机|机组|机型|政府|^否/;
+const norm = (s: string) => s.replace(/[\s()（）·.'’-]/g, "").replace(/^the/i, "").toLowerCase();
+let operatorSentences = 0;
+for (const r of ALL_ROUTES) {
+  for (const mode of ["study", "travel"] as const) {
+    for (const lang of ["zh-CN", "en-US"] as const) {
+      const text = getRouteNarration(r.id, lang, mode);
+      if (!text) continue;
+      const re = lang === "zh-CN" ? OPERATOR_ZH : OPERATOR_EN;
+      for (const m of text.matchAll(re)) {
+        const said = m[1].trim();
+        if (NOT_A_CARRIER.test(said)) continue;
+        operatorSentences++;
+        if (BENIGN.has(`${r.id}/${mode}/${lang}/${said}`)) continue;
+        if (!isFlightVerified(r)) {
+          fail(r.id, `未核实/已查明有误的航线，${mode}/${lang} 解说点名了承运人「${said}」——不应写出`);
+          continue;
+        }
+        const mine = lang === "zh-CN" ? r.flight?.airline : r.flight?.airlineEn;
+        const a = norm(said), b = norm(mine ?? "");
+        if (!b || !(a.includes(b) || b.includes(a))) {
+          fail(r.id, `${mode}/${lang} 解说说承运人是「${said}」，数据 flight.airline 是「${mine ?? "(无)"}」`);
+        }
+      }
+    }
+  }
+}
+console.log(`\n解说点名承运人的句子（「是 X 运营 / operated by X」）：共 ${operatorSentences} 句，逐句比对 flight.airline`);
+if (operatorSentences === 0) {
+  fail("(脚本)", "一句都没抽到 —— 句式正则或解说导出改了，这一段等于没跑");
+}
+
+// ── 航线首尾机场航点 × 城市注册表：同一个 IATA 的坐标必须一致（失败）──────────────
+//
+// 机场名与坐标被手写在两处：城市注册表的 `airport` 字段，和每条航线首尾的机场航点。
+// 迁建时（呼和浩特白塔 → 盛乐，IATA 不变、坐标变了）只改一处，镜头就从旧址起飞，而两处单看都「有坐标」。
+// 2026-09-11 建这条时 519 个可比对航点全部在 3 km 内 —— 它现在不报错，守的是**下一次**迁建。
+// 航点 id 不是 IATA（希腊 / 奥地利用城市 slug）或是城市的第二机场（大兴 / 虹桥 / 金浦 / 伊丹，注册表每城只记一个）的不比。
+const REG_AIRPORT = new Map<string, { lat: number; lon: number; nameZh: string }>();
+for (const c of CITY_REGISTRY) {
+  if (c.airport && !REG_AIRPORT.has(c.airport.iata)) REG_AIRPORT.set(c.airport.iata, c.airport);
+}
+let airportCompared = 0;
+for (const r of ALL_ROUTES) {
+  for (const w of r.waypoints) {
+    if (w.kind !== "city" || !w.airport || !/^[a-z]{3}$/.test(w.id)) continue;
+    const a = REG_AIRPORT.get(w.id.toUpperCase());
+    if (!a) continue;
+    airportCompared++;
+    const km = haversineKm([w.lon, w.lat], [a.lon, a.lat]);
+    if (km > 3) {
+      fail(r.id, `机场航点 ${w.id.toUpperCase()} 与城市注册表同一机场相差 ${km.toFixed(1)} km（航点「${w.name}」、注册表「${a.nameZh}」）—— 迁建或改坐标只改了一处？`);
+    }
+  }
+}
+console.log(`\n机场航点 × 城市注册表：比对了 ${airportCompared} 个（同一 IATA 坐标须在 3 km 内）`);
+if (airportCompared === 0) fail("(脚本)", "机场航点一个都没比到 —— 航点 id 或注册表导出改了，这一段等于没跑");
 
 if (suspiciousNo.length > 0) {
   console.log("\n形状像占位号的航班号（未核实，核实时优先看这几条）");

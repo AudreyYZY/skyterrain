@@ -82,7 +82,8 @@ const SUBJECTIVE_SUP_EN =
  *
  * 句子里有年份或限定语（「之一」「按…计」）则放过。
  */
-const RANK_ZH = /(第[二三四五六七八九十两]大|排名第|位居第|第[二三四五六七八九十两]多)/;
+// 「第二大道」「第三大街」是街名不是名次（白马市「主街和第二大道平行于河」被误报，2026-09-12）
+const RANK_ZH = /(第[二三四五六七八九十两]大(?![道街])|排名第|位居第|第[二三四五六七八九十两]多)/;
 const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|most populous|busiest)\b/i;
 /**
  * 限定语：出现任何一个就放过。
@@ -93,8 +94,11 @@ const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|most populous
  * 但 **「人口第 N 多」不算**：人口本身还分市建制 / 都会区 / 登记 vs 常住好几档，
  * 横滨那条错的正是这一层（「日本人口第二多的市」把 23 区和市建制混了）。
  */
-const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中|面积第|长度第|海拔第)/;
-const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then|largest by area)\b/i;
+// 「常被称为」与「号称 / 之称」是同一种限定（把排名标成流行说法而非断言），第一版漏了
+const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|常被称|常称|其中|面积第|长度第|海拔第)/;
+// 口径不止面积与人口：机场按旅客量、产区按葡萄园面积、藏品按件数（2026-09-12 补）
+// 「long / traditionally called」与中文的「号称 / 之称」同一种限定：引的是一句流传的说法（「桂林山水甲天下」），不是作者的断言
+const QUALIFIER_EN = /\b(one of|among|by (area|population|land|passengers?|vineyard area|number)|(?:often|long|widely|traditionally) (?:been )?called|nicknamed|at the time|then|largest by area)\b/i;
 
 /**
  * C6-e：**钱**。票价、门票、通票、打车费 —— 这些比人口过期得还快，
@@ -145,8 +149,12 @@ const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|off
  * 实现上是**逐个匹配**判断，不是整句放过：一句话里如果既有时间比较、
  * 又有一个跨地点的最高级（「5月最适合来看最壮观的瀑布」），后者照样要报。
  */
-const TIME_EXPR_ZH = /(\d+\s*[–\-~至]\s*\d+\s*月|\d+\s*月|春季|夏季|秋季|冬季|春秋|旺季|淡季|雨季|旱季)/;
-const TEMPORAL_SUP_ZH = /^最(舒适|适合|好的时候)/;
+// 汉字月份（「约五到十月」）与「夏秋 / 春夏 / 秋冬」同样是时间比较的信号（航线解说多用汉字数字，2026-09-12 补）
+const TIME_EXPR_ZH = /(\d+\s*[–\-~至]\s*\d+\s*月|\d+\s*月|[一二三四五六七八九十]{1,2}月|春季|夏季|秋季|冬季|春秋|夏秋|春夏|秋冬|旺季|淡季|雨季|旱季)/;
+// 注意要拿**匹配位置之后的原句**来比，不能只比 m[0]：m[0] 只到「最好的」为止，
+// 于是第一版里「好的时候」这一支永远匹配不上（「瓜果最好的时候」「最好的季节是 5 月」照报），
+// 是一段死代码（2026-09-12 清 C1a 时发现）。
+const TEMPORAL_SUP_ZH = /^最(舒适|适合|好的(时候|季节|时节))/;
 
 /** C1a：主观最高级（句子里有年份或限定语则放过 —— 那是正确写法的范例） */
 export function isSubjectiveSuperlative(s: string, zh: boolean): boolean {
@@ -155,7 +163,7 @@ export function isSubjectiveSuperlative(s: string, zh: boolean): boolean {
   const re = new RegExp((zh ? SUBJECTIVE_SUP_ZH : SUBJECTIVE_SUP_EN).source, zh ? "g" : "gi");
   const hasTime = zh && TIME_EXPR_ZH.test(s);
   for (const m of s.matchAll(re)) {
-    if (hasTime && TEMPORAL_SUP_ZH.test(m[0])) continue;
+    if (hasTime && TEMPORAL_SUP_ZH.test(s.slice(m.index))) continue;
     return true;
   }
   return false;
