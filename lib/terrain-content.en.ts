@@ -17119,6 +17119,107 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The castle was founded in the 13th century and passed through several noble families including the Vítkovci and the Rosenbergs; the historic town center was inscribed as a UNESCO World Heritage Site in 1992, and it remains one of the best-preserved small medieval towns in Central Europe.",
   },
+  // ============================================================
+  // Europe / Hungary
+  // ============================================================
+  matra: {
+    seeing:
+      "The Mátra lies in the belt of middle mountains across northern Hungary, a range left behind by Miocene volcanism. Its summit, Kékes, reaches 1,014 m — the highest point in the whole country, and the only place in this largely lowland state that passes 1,000 m.",
+    formation:
+      "The range was built by Miocene volcanic activity and consists mainly of andesite, rhyolite and volcanic breccia. Once the eruptions ceased, erosion stripped away the upper part of the cones, so what stands today is the inside and the root of a volcanic edifice rather than its original conical shape.",
+    observation:
+      "From the air the Mátra is an isolated forested rise along the northern edge of the Great Plain, dropping quickly southward to the flatland, with the belt of vineyards at its foot clearly set off from the ploughed fields beyond. The television tower on Kékes is the easiest landmark to pick out.",
+    distinguish:
+      "The Mátra and the Bükk to the east both belong to the northern Hungarian middle mountains, but they are made of entirely different rock: the Mátra is volcanic, with rounded forms and streams radiating outward from the centre, while the Bükk is mostly limestone, its summit an uplifted plateau pitted with sinkholes and caves.",
+    concept:
+      "The Mátra shows that a country's highest point need not lie in a mountain range. More than seventy per cent of Hungary is plain below 200 m, and its high point comes not from a folded range but from what erosion left of a volcano on the rim of the basin.",
+    history:
+      "The country around Gyöngyös at the southern foot has been wine country since the Middle Ages, the soils weathered from volcanic rock being the natural basis for it; from the twentieth century these hills, within easy reach of Budapest, became a regular destination for walking and winter sports.",
+  },
+  bukk: {
+    seeing:
+      "The Bükk lies in north-eastern Hungary, a range built mainly of Triassic limestone, with Istállós-kő at 959 m its highest point. Its top is not a peak but a gently rolling upland surface — the Bükk plateau.",
+    formation:
+      "The limestone was laid down in a Triassic sea, later uplifted, and then dissolved over long periods into shafts, sinkholes, dry valleys and caves. There is almost no surface drainage on the range: rainfall sinks into the fissures and re-emerges only at karst springs around the foot.",
+    observation:
+      "From the air the top of the Bükk is a flat, forested upland with hardly a watercourse to be seen, its edges cut by deep valleys. The vineyards around Eger on the southern foot stand out sharply against the forest of the range itself.",
+    distinguish:
+      "The Bükk and the Mátra to the west both belong to the northern Hungarian middle mountains, but the Bükk is limestone, with a continuous plateau top and no surface water, while the Mátra is volcanic, rounded, with radiating drainage. Side by side they make a ready-made lesson in how rock type shapes a range.",
+    concept:
+      "The Bükk is a plain illustration of why a limestone range shows no rivers: sparse surface drainage does not mean little rain, it means the water has gone underground. To tell whether a range is karst, look for sinkholes, dry valleys and big springs at the foot — more useful than looking at altitude.",
+    history:
+      "Caves in the range have yielded Palaeolithic remains and are among Hungary's important prehistoric sites; Szeleta Cave even gave its name to an archaeological culture. The Bükk National Park was established here in 1977.",
+  },
+  borzsony: {
+    seeing:
+      "The Börzsöny rises on the northern bank of the Danube Bend, an eroded Miocene volcanic massif whose highest point, Csóványos, reaches 938 m.",
+    formation:
+      "The range consists of andesite and volcanic breccia. It originally belonged to the same volcanic system as the Visegrád Hills on the southern bank, and the Danube later cut the two apart. After the eruptions stopped, the upper part of the cone was stripped away, so today's shape is what remains of the inside of the edifice.",
+    observation:
+      "From the air the Börzsöny is a nearly circular forested swell with a ring of higher ground discernible at its centre — the position of the former crater; its southern edge drops abruptly into the Danube Bend.",
+    distinguish:
+      "The Börzsöny faces the Pilis across the Danube, yet the rock is the opposite: volcanic on one side, Triassic dolomite and limestone on the other. Put together, the two make a ready-made section for understanding that the two banks of one river can be entirely different geological units.",
+    concept:
+      "An eroded volcano is easier to recognise from the air than on the ground: the form is rounded rather than sharp, the streams radiate outward from the centre, and a ring of higher ground often survives at the middle. Taken together those three tell you more about a mountain's origin than its height does.",
+    history:
+      "Traces of medieval mining and charcoal burning survive in the range; today the area lies within the Duna–Ipoly National Park and is one of the walking areas within easy reach of Budapest.",
+  },
+  pilis: {
+    seeing:
+      "The Pilis stands on the southern bank of the Danube Bend, the north-eastern end of the Transdanubian range, built mainly of Triassic dolomite and limestone, with Pilis-tető at 756 m its highest point.",
+    formation:
+      "The carbonate rock was deposited in the Triassic and later shaped into today's massif by uplift and block faulting. Dolomite resists dissolution less well than limestone, and weathers into steep walls and wide aprons of scree.",
+    observation:
+      "From the air the pale grey walls of the Pilis show through the forest in broad patches, in contrast to the dark volcanic bulk of the Börzsöny to the north; the Danube runs between them and turns sharply from east to south here.",
+    distinguish:
+      "The Pilis and the Börzsöny face each other across the river at similar heights but with completely different origins: the Pilis is marine carbonate rock uplifted, the Börzsöny a volcano built up and then planed down. Colour is the quickest tell — pale on one side, dark on the other.",
+    concept:
+      "The sharp bend of the Danube here is generally attributed to structure and to the distribution of the volcanic blocks; several explanations coexist and none is settled. The bend itself makes one point clearly, though: the course of a great river is not set by relief alone — rock type and structure underneath are working on it too.",
+    history:
+      "These hills were royal hunting forest from the Middle Ages, and the fourteenth-century palace of Visegrád stands beside the Danube at their northern foot. The range lies within the Duna–Ipoly National Park today.",
+  },
+  bakony: {
+    seeing:
+      "The Bakony lies across the country north-west of Lake Balaton, the largest section of the Transdanubian range, built mainly of Mesozoic limestone and dolomite, with Kőris-hegy at 709 m its highest point.",
+    formation:
+      "The range consists of Mesozoic carbonate rock raised by block faulting. Its south-eastern edge carries something entirely different laid over the top: Pliocene basalt volcanism left a set of isolated flat-topped hills and volcanic necks along the northern shore of Lake Balaton, of which the Tihany peninsula is the most concentrated.",
+    observation:
+      "From the air the Bakony is a gently rolling upland almost entirely under forest; what catches the eye is the string of isolated flat-topped hills along its south-eastern edge on the northern shore of Balaton — they stand abruptly out of the flat ground by the lake, square in outline and darker than their surroundings.",
+    distinguish:
+      "The Bakony and the Bükk to the north-east are both carbonate ranges, but the Bakony has no continuous plateau surface at the top and is a good deal lower, and its edge carries a phase of basalt volcanism that the Bükk does not have at all.",
+    concept:
+      "The flat-topped hills on the northern shore of Balaton are residual hills protected by a lava cap: basalt resists erosion better than the soft sediment beneath it, so once the surroundings were stripped away, the parts wearing a basalt hat were left standing. Flat top plus steep sides is the clearest sign of this kind of hill.",
+    history:
+      "Forestry and quarrying were the mainstays of the range historically; the Balaton Uplands National Park was established in 1997, bringing the basalt volcanic forms along the south-eastern edge of the Bakony and the wetlands of the northern Balaton shore under one protection.",
+  },
+  mecsek: {
+    seeing:
+      "The Mecsek rises in south-western Hungary from the edge of the Great Plain, an isolated massif whose highest point, Zengő, reaches 682 m. No other range stands near it; it is a single swell on the plain.",
+    formation:
+      "The range is built mainly of Mesozoic limestone and Permian to Triassic sandstone, an isolated fault block raised by tectonic movement; its northern side also carries Jurassic coal measures, worked as one of Hungary's coalfields since the nineteenth century.",
+    observation:
+      "From the air the Mecsek is an isolated forested rise on the plain, its southern slope looking straight down on the built-up area of Pécs. The difference between its northern and southern flanks shows even from above: the south is drier and more open, the north more densely wooded.",
+    distinguish:
+      "The Mecsek and the Bakony are both largely carbonate, but the Mecsek is entirely ringed by plain with no range adjoining it, and its climate is markedly warmer — it carries the northernmost Mediterranean-type flora in Hungary.",
+    concept:
+      "The contrast between the two flanks of an isolated range is a plain illustration of how relief makes local climate: on the same hill the sunlit southern slope takes more heat and loses more water, and its vegetation can differ completely from the shaded north — across a distance of only a few kilometres.",
+    history:
+      "Pécs at the southern foot has been settled since Roman times, and the early Christian necropolis in the city was inscribed on the UNESCO World Heritage list in 2000; coal mining in the range was one of the mainstays of the local economy through the twentieth century.",
+  },
+  zemplen: {
+    seeing:
+      "The Zemplén Mountains lie in the north-eastern corner of Hungary, a range left by Miocene volcanism and built of rhyolite, andesite and tuff. Its highest point, Nagy-Milic, reaches 894 m and stands where Hungary and Slovakia meet.",
+    formation:
+      "Miocene eruptions piled up thick tuff and lava here, which long erosion then carved into today's rolling range. Tuff is soft and easily cut, and the southern foot is accordingly honeycombed with cellars dug into the hillsides.",
+    observation:
+      "From the air the Zemplén is a continuous forested range whose southern edge drops abruptly to the plain of the Tisza and the Bodrog. The vineyards around Tokaj at its foot run up the south-facing slopes, set off clearly against the forest above.",
+    distinguish:
+      "The Zemplén and the Mátra are both Miocene volcanic ranges, but the Zemplén's products are mainly acidic — rhyolite and tuff — and its relief is lower and gentler, while the Mátra is mainly andesite and rises to the highest point in Hungary.",
+    concept:
+      "Volcanic tuff is a good example of how rock type decides land use: it holds water, it breathes, and it is easy to cut — which both produced soils suited to the vine and made it possible to drive cellars hundreds of metres into a hillside.",
+    history:
+      "The Tokaj Wine Region Historic Cultural Landscape at the southern foot was inscribed on the UNESCO World Heritage list in 2002; the local tradition of making botrytised sweet wine goes back several centuries.",
+  },
 
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
