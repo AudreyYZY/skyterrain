@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 58baedb
+lastVerifiedCommit: b9dd0b2
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,8 @@ lastVerifiedCommit: 58baedb
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel · 在建 / 计划 / 停航 / 公报未发布 7 条（2026-09-12 会过期的状态：check:pending 首跑的 ⚑ 逐条核实（R30e）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
+| 2026-09-12 | travel · 同条目 identity/注释已有 1 级留痕、另一段缺年份（2026-09-12 C6 里靠条目自身留痕就能补的 7 条（R30d）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 注释里已有 1 级留痕、正文缺年份与口径（2026-09-12 C6 里不用联网就能补的两条（R30c）） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 19 个条目的人口年份与口径（C6d 存量）（2026-09-12 城市人口刷新：北欧+英国 9 条 · 中欧 10 条（R30b）） | 22 | 0 / 22 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | terrain+travel · 10 个非结构性 issue 里的 8 条（2026-09-12 开着的内容 issue 复核（R30a）） | 11 | 1 / 8 / 2 | 当场修 8 条；新开 issue 1、关闭 7 |

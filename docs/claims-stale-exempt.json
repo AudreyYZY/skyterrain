@@ -243,6 +243,12 @@
       "recheckAfter": "2027-07"
     },
     {
+      "key": "travel/moron/howItWorks",
+      "reason": "蒙古省会人口取不到更新一期：蒙古国家统计局 1212.mn 证书失效（与 issue #197 同因），2017 年的 39,404 是能核到的最新一期，且已与同条目 identity 段统一。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-03"
+    },
+    {
       "key": "travel/moron/identity",
       "reason": "木伦最新可信数字只到 2017 年（39,404）；网上流传的 46,918 在同一来源里与 infobox 的 2017 数并存、且没有年份，按「拿不准就不要编一个年份」不采用。蒙古国家统计局 1212.mn 的证书错误使一手表长期无法访问。",
       "confirmedOn": "2026-09-10",
@@ -277,6 +283,12 @@
       "reason": "同上；市镇 2024 年 50,126、全省约 11 万，是能核到的最新一期",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/paris/howItWorks",
+      "reason": "INSEE 的 populations de référence 按法律滞后三年：2026-01-01 生效版参照 2023 年 —— 2023 这个年份不是过期、是定义（与 lille / lyon 等 8 个法国条目同理）。下一版参照 2025 年，预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
     },
     {
       "key": "travel/paris/identity",
