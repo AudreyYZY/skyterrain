@@ -50,7 +50,7 @@ import kmgJhg from "./kmg-jhg.json" with { type: "json" };
 import pekZuh from "./pek-zuh.json" with { type: "json" };
 import canWnz from "./can-wnz.json" with { type: "json" };
 import pekYty from "./pek-yty.json" with { type: "json" };
-import pekWus from "./pek-wus.json" with { type: "json" };
+import pkxWus from "./pkx-wus.json" with { type: "json" };
 // 日本国内
 import hndItm from "./hnd-itm.json" with { type: "json" };
 import hndCts from "./hnd-cts.json" with { type: "json" };
@@ -374,7 +374,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekZuh,
   canWnz,
   pekYty,
-  pekWus,
+  pkxWus,
   hndItm,
   hndCts,
   hndFuk,

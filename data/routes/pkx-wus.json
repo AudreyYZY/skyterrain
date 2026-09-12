@@ -1,5 +1,5 @@
 {
-  "id": "pek-wus",
+  "id": "pkx-wus",
   "name": "北京 — 武夷山",
   "nameEn": "Beijing — Wuyishan",
   "description": "华北平原 · 江南丘陵 · 武夷山丹霞",
@@ -9,27 +9,26 @@
   "flight": {
     "airline": "厦门航空",
     "airlineEn": "Xiamen Airlines",
-    "flightNo": "MF8122",
+    "flightNo": "MF8507",
     "aircraft": "Boeing 737-800",
-    "depIata": "PEK",
+    "depIata": "PKX",
     "arrIata": "WUS",
-    "durationMin": 160
+    "durationMin": 145
   },
   "source": {
-    "ref": "https://www.flightera.net/en/flight/Xiamen+Airlines-Wuyishan-Beijing/MF8508",
+    "ref": "https://www.flightaware.com/live/flight/CXA8507",
     "checkedOn": "2026-09-12",
-    "status": "wrong",
-    "note": "**复核（2026-09-12）查明这条航线的机场对本身就不对**：北京**首都 PEK** 与武夷山之间**没有任何不经停直飞**；真正存在的是北京**大兴 PKX**—武夷山，厦航 MF8507/MF8508。按硬性判据 PEK≠PKX，本条继续不显示航班信息。**下一步不是找航班号，是决定要不要把这条航线的起点改成 PKX。**"
+    "note": "**起点机场整条改了**：原记为北京**首都 PEK**—武夷山，而 2026-09-12 复核查明 PEK 与武夷山之间**没有任何不经停直飞**；真正存在的是北京**大兴 PKX**—武夷山，厦航 MF8507（PKX→WUS，17:10–19:35）/ MF8508（反向）。按硬性判据 PEK≠PKX，本条航线的 id、航点、解说里的机场名与航班信息一并改到大兴。**来源级别 3**（航班追踪站与按城市对索引的航段页交叉，机场三字码一致）。"
   },
   "cruiseHeight": 10200,
   "waypoints": [
     {
       "kind": "city",
-      "id": "pek",
-      "name": "北京首都",
-      "nameEn": "Beijing Capital",
-      "lat": 40.08,
-      "lon": 116.585,
+      "id": "pkx",
+      "name": "北京大兴",
+      "nameEn": "Beijing Daxing",
+      "lat": 39.5098,
+      "lon": 116.4104,
       "airport": true
     },
     {

@@ -765,10 +765,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
   },
-  "pek-wus": {
-    "zh-CN": { perSentence: [0, 1, 2, 3], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3], source: "auto" },
-  },
   "pek-yih": {
     "zh-CN": { perSentence: [0, 1, 1, 2], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 2, 2], source: "auto" },
@@ -796,6 +792,10 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
   "pkx-lis": {
     "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6], source: "auto" },
     "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6], source: "auto" },
+  },
+  "pkx-wus": {
+    "zh-CN": { perSentence: [0, 1, 2, 3], source: "auto" },
+    "en-US": { perSentence: [0, 1, 2, 3], source: "auto" },
   },
   "pus-cju": {
     "zh-CN": { perSentence: [0, 1, 1], source: "auto" },

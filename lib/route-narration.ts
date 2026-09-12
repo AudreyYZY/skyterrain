@@ -4906,13 +4906,13 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "pek-wus": {
+  "pkx-wus": {
     // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m、UNESCO 双遗产、乌龙茶与红茶发源地。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
+      "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开大兴机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
     "en-US":
-      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose signature high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
+      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving Daxing, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose signature high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
     },
     travel: {
     "zh-CN":
