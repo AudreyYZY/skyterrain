@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: ce681ab
+lastVerifiedCommit: 58baedb
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: ce681ab
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel · 注释里已有 1 级留痕、正文缺年份与口径（2026-09-12 C6 里不用联网就能补的两条（R30c）） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 19 个条目的人口年份与口径（C6d 存量）（2026-09-12 城市人口刷新：北欧+英国 9 条 · 中欧 10 条（R30b）） | 22 | 0 / 22 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | terrain+travel · 10 个非结构性 issue 里的 8 条（2026-09-12 开着的内容 issue 复核（R30a）） | 11 | 1 / 8 / 2 | 当场修 8 条；新开 issue 1、关闭 7 |
 | 2026-09-11 | 开放 issue 复核第二批（北欧中欧 / 比荷卢与智利 / 城市人口 / 地形数字）（R29b） | 46 | 0 / 39 / 7 | 当场修 39 条；新开 issue 0、关闭 35 |

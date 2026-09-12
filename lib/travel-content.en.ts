@@ -5169,8 +5169,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   grenoble: {
+    // identity sources: 人口：Grenoble-Alpes Métropole（49 个市镇）2023 年参照人口 450,608 —— INSEE，1 级（2026-09-08 核，与 howItWorks 段同源）。⚠️ 不要与「城市吸引区」（aire d'attraction des villes，204 个市镇、727,380）混用，那是另一套口径。INSEE 的参照人口按法律滞后三年，2026-01-01 生效版参照 2023 年 —— 不是过期。下一版参照 2025 年，2026 年底公布。
     identity:
-      "Grenoble is in south-eastern France in the Isère valley, ringed by three mountain ranges (the Vercors, the Chartreuse and the Belledonne), with a metro area of about 450,000 — the research and high-tech centre of the French Alps (sometimes called 'France's Silicon Valley') and host of the 1968 Winter Olympics. The city itself is flat, and looking up to see snow mountains all around is its most distinctive impression.",
+      "Grenoble is in south-eastern France in the Isère valley, ringed by three mountain ranges (the Vercors, the Chartreuse and the Belledonne), with a metropolitan area of 49 communes and about 450,000 people at the 2023 reference date (INSEE) — the research and high-tech centre of the French Alps (sometimes called 'France's Silicon Valley') and host of the 1968 Winter Olympics. The city itself is flat, and looking up to see snow mountains all around is its most distinctive impression.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
     //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
@@ -8804,8 +8805,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season; as the core city of Funen, it's a convenient base for exploring the island's rolling farmland and the archipelago to the south.",
   },
   esbjerg: {
+    // identity sources: 人口：**城区（byområde）口径** 71,371 —— 丹麦统计局《Byopgørelsen 1. januar 2026》，1 级（2026-09-08 核，与 howItWorks 段同源）。⚠️ 与 kommune（市镇，约 11.5 万）是两档，正文已写明是城区。该表年度、1 月 1 日基准、往年 5 月发布，但 2026 年那期声明「暂无后续发布计划」（见 data-refresh-calendar）。
     identity:
-      "Esbjerg is Denmark's largest port city on the west coast, with a population of about 72,000, which grew up from harbour construction in the late 19th century and is now an important base for the Danish North Sea oil industry and a gateway for Wadden Sea ecotourism.",
+      "Esbjerg is Denmark's largest port city on the west coast, with an urban-area population of about 72,000 as of 1 January 2026 (Statistics Denmark), which grew up from harbour construction in the late 19th century and is now an important base for the Danish North Sea oil industry and a gateway for Wadden Sea ecotourism.",
     // howItWorks sources: 埃斯比约城区 71,371 人，DST 城区人口表第 5（《Byopgørelsen 1. januar 2026》，1 级，2026-09-08 核）。
     //   数字、年份、口径、排名四项全对，本轮无需改动 —— 这是正确写法的范例。
     howItWorks:
