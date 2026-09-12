@@ -17,9 +17,9 @@
   },
   "source": {
     "ref": "https://www.flightera.net/en/flight/Xiamen+Airlines-Wuyishan-Beijing/MF8508",
-    "checkedOn": "2026-09-07",
+    "checkedOn": "2026-09-12",
     "status": "wrong",
-    "note": "**未能核实**：公开源查不到 MF8122 北京→武夷山的班次；厦航确有 MF8508 武夷山→北京（反向），但去程航班号未确认"
+    "note": "**复核（2026-09-12）查明这条航线的机场对本身就不对**：北京**首都 PEK** 与武夷山之间**没有任何不经停直飞**；真正存在的是北京**大兴 PKX**—武夷山，厦航 MF8507/MF8508。按硬性判据 PEK≠PKX，本条继续不显示航班信息。**下一步不是找航班号，是决定要不要把这条航线的起点改成 PKX。**"
   },
   "cruiseHeight": 10200,
   "waypoints": [

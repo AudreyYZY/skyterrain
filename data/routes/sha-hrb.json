@@ -9,8 +9,8 @@
   "flight": {
     "airline": "中国东方航空",
     "airlineEn": "China Eastern Airlines",
-    "flightNo": "MU5620",
-    "aircraft": "Airbus A321",
+    "flightNo": "MU5617",
+    "aircraft": "Airbus A320",
     "depIata": "SHA",
     "arrIata": "HRB",
     "durationMin": 175
@@ -52,9 +52,8 @@
     }
   ],
   "source": {
-    "ref": "https://www.trip.com/flights/status-mu5620",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：MU5620 实际是**哈尔滨(HRB)→上海浦东(PVG)**，方向与到达机场都对不上。未找到可靠的虹桥 SHA→HRB 替代航班号（若允许改用浦东，已核实 MU5619 PVG→HRB 不经停）。来源级别 3（航班追踪站）"
+    "ref": "https://www.flightaware.com/live/flight/CES5617",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 MU5620 实际是哈尔滨→上海浦东（方向与机场都不对）。MU5617 为上海**虹桥**→哈尔滨太平的不经停航班（FlightAware 航班档案确认方向与机场对）。**来源级别 3**，**机型只核到 A320 系列这一级**，子型号未确认。"
   }
 }

@@ -9,17 +9,16 @@
   "flight": {
     "airline": "西藏航空",
     "airlineEn": "Tibet Airlines",
-    "flightNo": "TV9882",
+    "flightNo": "3U8633",
     "aircraft": "Airbus A319",
     "depIata": "CKG",
     "arrIata": "LXA",
     "durationMin": 165
   },
   "source": {
-    "ref": "https://www.airportia.com/flights/tv9882/chengdu/lhasa/",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：TV9882 实际飞的是**成都**双流→拉萨（A330，约 2h04m，亦有上海经成都的一站式），不是重庆→拉萨。未找到可靠的重庆→拉萨替代航班号"
+    "ref": "https://www.flightaware.com/live/flight/CSC8633/history/20260125/0025Z/ZUCK/ZULS",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 TV9882 实际飞成都双流→拉萨。3U8633 为重庆江北→拉萨贡嘎的不经停航班（FlightAware 2026-01-25 历史记录，ICAO 机场对 ZUCK-ZULS 精确）。**来源级别 3**；**机型是按进藏航线通行机型推断的、未直接核到**。"
   },
   "cruiseHeight": 11500,
   "waypoints": [

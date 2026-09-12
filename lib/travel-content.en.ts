@@ -1678,23 +1678,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "osaka-city": {
-    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
-    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
-    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
-    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
-    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
-    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
-    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
-    //   **近畿大都市圏**（総務省 1.5% 通勤圈定义，中心市为大阪、京都、神户、堺）
-    //   **2015 年国势调查 19,302,746 人**（2 级转引総務省口径，2026-09-08 核；未查到已公布的 2020 年该口径更新数）。
-    //   **「京阪神大都市圏」是 2010 年之前的旧称** —— 2010 年堺市升格政令市后正式改名「近畿大都市圏」，
-    //   正文里沿用旧名的地方已一并改。
-    //   「日本第二大都市圈」排名成立（次于東京圏、大于中京大都市圏）。
+    // identity sources: 同 travel/sendai/greater-sendai-2015：2015 口径落后两个周期，官方无现成圈域人口表，e-Stat『大都市圏・都市圏 対象市区町村データ』需自行加总。下一轮从那张表补。2026-09-12 核。
     identity:
-      "Osaka is the central city of the Kansai region and the core of Japan's second-largest metropolitan area — the Kinki Major Metropolitan Area (Statistics Bureau definition, centred on Osaka, Kyoto, Kobe and Sakai) held about 19.3 million at the 2015 census. Historically a centre of commerce and wholesale trade, the city has a direct, down-to-earth character and is famous for its food — a contrast with the restraint of Kyoto.",
-    // howItWorks sources: Wikipedia (2026-09): Osaka (designated city, 24 wards; 2015/2020 referendums rejected; Kita/Minami; 2020 census 2.75 million; Keihanshin 19.3 million 2015); Cities designated by government ordinance
+      "Osaka is the central city of the Kansai region and the core of Japan's second-largest metropolitan area by population, the Kinki Major Metropolitan Area (Statistics Bureau definition, centred on Osaka, Kyoto, Kobe and Sakai). Historically a centre of commerce and wholesale trade, the city has a direct, down-to-earth character and is famous for its food — a contrast with the restraint of Kyoto.",
+    // howItWorks sources: 与 identity 段同一处更正。2026-09-12 核。
     howItWorks:
-      "Osaka has two layers of government: Osaka Prefecture under a governor, and within it the City of Osaka, a designated city under a mayor and council, divided into 24 wards. Unlike Tokyo's special wards, these are administrative divisions of the city with no assemblies of their own; referendums in 2015 and 2020 on reorganising the city into special wards directly under the prefecture were both rejected, and the 24-ward structure remains. The centre has two poles: Kita, around Umeda and Osaka Station, the business and department-store district, and Minami, around Namba, Shinsaibashi and Dōtonbori, the district of restaurants and entertainment, with the Loop Line circling both. The 2020 census counted about 2.75 million people in the city and about 19.3 million in the Kinki Major Metropolitan Area, including Kyoto and Kobe, at the 2015 census. Addresses run prefecture, city, ward, district, chōme, block, number. Newcomers most often go wrong by confusing Osaka Prefecture with Osaka City, or by assuming Osaka has a single downtown.",
+      "Osaka has two layers of government: Osaka Prefecture under a governor, and within it the City of Osaka, a designated city under a mayor and council, divided into 24 wards. Unlike Tokyo's special wards, these are administrative divisions of the city with no assemblies of their own; referendums in 2015 and 2020 on reorganising the city into special wards directly under the prefecture were both rejected, and the 24-ward structure remains. The centre has two poles: Kita, around Umeda and Osaka Station, the business and department-store district, and Minami, around Namba, Shinsaibashi and Dōtonbori, the district of restaurants and entertainment, with the Loop Line circling both. The 2020 census counted about 2.75 million people in the city. Addresses run prefecture, city, ward, district, chōme, block, number. Newcomers most often go wrong by confusing Osaka Prefecture with Osaka City, or by assuming Osaka has a single downtown.",
     layout:
       "Osaka straddles the Yodo River on the Osaka Plain. The city has roughly two centres — \"Kita\" (around Umeda and Osaka Station, offices and department stores) and \"Minami\" (Namba, Shinsaibashi and Dotonbori, shopping, food and entertainment) — with Osaka Castle between them to the east. West are the waterfront districts and Osaka Bay, where Universal Studios is.",
     gettingAround:
@@ -2144,11 +2133,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   sendai: {
-    // identity sources: 日本 **令和 7 年（2025 年）国勢調査人口速報集計**，普查时点 2025-10-01，由各都道府县公布市区町村数。子代理逐条核对官方 PDF / xls 原表，**级别 1**。
-    //   发布节奏：国勢調査每五年一次（年份末位 0/5，时点 10-01）；**人口速報集計**在普查后次年 5 月末左右，**人口等基本集計**在次年 9 月末左右。住民基本台帳人口则由各市按月发布，总务省全国汇总每年 7 月。
-    //   「都会区」不是官方称谓；对应的官方概念是宫城县指定的「広域仙台都市圏」（14 市町村），2015 年国勢調査基准约 153 万人 —— 量级吻合但**是十年前的数**，正文已如实标明年份与口径。
+    // identity sources: 2015 年国势调查口径已落后两个周期（2020、2025 均已发布）。总务省《大都市圏・都市圏 全国図》与《人口等基本集計 結果の要約》两份 PDF 都只有圈域名与构成、无人口表；圈域人口需从 e-Stat 『令和２年国勢調査 大都市圏・都市圏 対象市区町村データ』(stat_infid=000032261915) 自行加总。**下一轮若要补这个数，直接去那张表，不必再重走检索。**构成（14 市町村）经宫城县官网核实属实。2026-09-12 核。
     identity:
-      "Sendai is the largest city of the Tohoku region and the capital of Miyagi Prefecture, with about 1.5 million in the Greater Sendai urban area (a 14-municipality area designated by Miyagi Prefecture, 2015 census basis). Ringed by mountains on three sides and facing the Pacific, its tree-lined centre earns it the name \"City of Trees\"; it is also the hub for Matsushima, Yamadera, the Naruko hot springs and the rest of Tohoku.",
+      "Sendai is the largest city of the Tohoku region and the capital of Miyagi Prefecture, at the centre of the Greater Sendai urban area, the 14 municipalities designated as such by Miyagi Prefecture. Ringed by mountains on three sides and facing the Pacific, its tree-lined centre earns it the name \"City of Trees\"; it is also the hub for Matsushima, Yamadera, the Naruko hot springs and the rest of Tohoku.",
     // howItWorks sources: 「日本一の七夕」为主办方自称，非第三方量化认证，故加「之一」。2026-09-12 核。
     howItWorks:
       "Sendai is the seat of Miyagi Prefecture and the largest city of Tōhoku, a designated city since 1989 with five wards, about 786 km² and about 1.1 million people at the 2025 census, essentially flat over five years; the wards are branches of the city, the city runs local services, and police and schools belong to the prefecture. Date Masamune built his castle on Aobayama in 1600 and the city grew from the castle town, the zelkova avenues of Jōzenji-dōri and Aoba-dōri earning it the name 'City of Trees', the Tanabata festival in August among the largest in Japan, two subway lines crossing the centre, the Shinkansen about an hour and a half to Tokyo, the airport in Natori to the south with a rail link since 2007; Matsushima lies about 25 km north-east, and the tsunami of 2011 flooded the coast of Wakabayashi ward to the east. Newcomers most often go wrong by taking Sendai for an industrial city, when it is a city of universities and commerce, a million people running from the mountains to the sea.",
@@ -2334,21 +2321,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     // identity sources: 神户 2025 国势调查 1,497,630；川崎 1,561,132 已反超。口径改为「政令指定都市中第七」。2026-09-12 核。
     identity:
       "Kobe is the capital of Hyōgo Prefecture, on the narrow strip between Mount Rokkō and the northern shore of Osaka Bay, with about 1.50 million people at the 2025 census, seventh among Japan's twenty designated cities. Opened to foreign trade in 1868, it was among the first Japanese ports to meet the West, and the Ijinkan (nineteenth-century Western residences) of Kitano, the office buildings of the former foreign settlement and the Nankinmachi Chinatown survive from that era. The Great Hanshin earthquake of 17 January 1995 (magnitude 6.9) killed about 6,434 people and wrecked the port, which remains one of Japan's main container ports. Kobe beef, Arima Onsen and the night view from Rokkō are its bywords; the Akashi Kaikyō Bridge, the world's second-longest suspension span, lies west of the city.",
-    // howItWorks sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
-    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
-    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
-    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
-    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
-    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
-    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
-    //   **神户没有一个干净的官方「都会区」数字**：学术口径「都市雇用圏」（金本良嗣・徳岡一幸 10% 通勤圈，
-    //   非官方）2010 年为 2,431,076；総務省「相対都市圏」约 250 万、「絶対都市圏」约 273 万 ——
-    //   **三个不同定义三个数字，没有一个叫「都会区」的官方统计**（2/3 级，2026-09-08 核）。
-    //   神户已被「近畿大都市圏」（约 1,930 万，2015 年）整体涵盖。
-    //   **按项目规矩：查不到官方口径就不给这个数字，只描述通勤关系** —— 不为了给个数字而套用非官方
-    //   学术口径冒充官方统计。
+    // howItWorks sources: 同一个 2015 年数字在本库住了三处（osaka-city 两段 + kobe 一段），本轮一并删。2026-09-12 核。
     howItWorks:
-      "Kobe is the seat of Hyōgo Prefecture and, since 1956, a designated city of nine wards, with about 1.50 million residents at the 2025 census. Wedged between Mount Rokkō and Osaka Bay, it is long from east to west and narrow from north to south: Sannomiya is the commuter hub and centre, with Motomachi and the former foreign settlement to its west, Port Island and Rokkō Island reach out into the bay, and the rebuilding after the 1995 earthquake shaped today's port district. Kobe lies about 35 km, or 30 minutes by train, from Osaka, and Hanshin commuting folds it into the Kinki Major Metropolitan Area (Statistics Bureau definition), about 19.3 million at the 2015 census. Addresses run prefecture, city, ward, district, chōme, block, number, and locals take their bearings from 'the hill side' and 'the sea side'. Newcomers most often go wrong by taking Kobe for Osaka's port, when it is a city with a centre of its own stretching tens of kilometres along the coast.",
+      "Kobe is the seat of Hyōgo Prefecture and, since 1956, a designated city of nine wards, with about 1.50 million residents at the 2025 census. Wedged between Mount Rokkō and Osaka Bay, it is long from east to west and narrow from north to south: Sannomiya is the commuter hub and centre, with Motomachi and the former foreign settlement to its west, Port Island and Rokkō Island reach out into the bay, and the rebuilding after the 1995 earthquake shaped today's port district. Kobe lies about 35 km, or 30 minutes by train, from Osaka, and Hanshin commuting folds it into the Kinki Major Metropolitan Area (Statistics Bureau definition). Addresses run prefecture, city, ward, district, chōme, block, number, and locals take their bearings from 'the hill side' and 'the sea side'. Newcomers most often go wrong by taking Kobe for Osaka's port, when it is a city with a centre of its own stretching tens of kilometres along the coast.",
     layout:
       "The city runs east–west between the foot of Rokkō and the shore: Sannomiya is the transport and commercial hub, the Kitano Ijinkan stand on the slope north of it, the former settlement, Motomachi and Nankinmachi lie south-west, and Meriken Park and the Port Tower are on the waterfront. Port Island and Rokkō Island are artificial islands in the bay, with Kobe Airport at the southern tip of Port Island. Mount Rokkō rises north of the city, reached by cable car, with Arima Onsen on its northern foot. The Suma and Maiko shores and the Akashi Kaikyō Bridge lie west, and Nada is the sake-brewing district.",
     // gettingAround sources: 2025-04-18 起为国际包机（韩/中/台 4 家航司、每周 40 往返）；定期国际航线目标约 2030 年。下一轮回来看是否已转为定期。2026-09-12 核。

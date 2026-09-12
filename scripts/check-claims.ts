@@ -53,10 +53,9 @@ const SHOW = Number(process.argv.find((a) => a.startsWith("--show="))?.slice(7) 
  * 「上海都会区人口约 2500 万」是这一类的原型：没有年份，也没说是市域常住人口
  * 还是都市圈口径。
  */
-const PERISHABLE_ZH =
-  /(常住人口|户籍人口|城区人口|都会区人口|市区人口|人口|居民)[^。；！？]{0,20}?\d[\d.,]*\s*(万|亿|人|户)/;
-const PERISHABLE_EN =
-  /\b(population|inhabitants|residents)\b[^.;!?]{0,40}?[\d.,]+\s*(million|billion|thousand|people|residents|inhabitants)/i;
+// 注：C6/C6d 的「会过期的量」判据在 scripts/claim-rules.ts（isPerishable / isStale），
+// 与 list:claims 共用同一份。**这里曾经有一份从未被引用的同名副本**——2026-09-12 有人
+// （就是本次）照着注释去改它，改完计数一动不动，才发现是死代码。已删。
 
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;

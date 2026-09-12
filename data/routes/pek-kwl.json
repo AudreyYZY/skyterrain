@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA1223",
-    "aircraft": "Boeing 737-800",
+    "flightNo": "CA1937",
+    "aircraft": "Airbus A321neo",
     "depIata": "PEK",
     "arrIata": "KWL",
     "durationMin": 195
   },
   "source": {
-    "ref": "https://www.airportia.com/flights/ca1223/beijing/xianyang",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CA1223 实际飞的是北京→**西安**咸阳（A321），不是桂林。未找到可靠的北京→桂林替代航班号"
+    "ref": "https://www.flightaware.com/live/flight/CCA1937",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CA1223 实际飞北京→西安。CA1937 为北京首都→桂林两江的不经停航班（FlightAware 2026-08-11 历史记录，机尾号 B-301E）。**来源级别 3**。"
   },
   "cruiseHeight": 11000,
   "waypoints": [

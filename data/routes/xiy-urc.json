@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国东方航空",
     "airlineEn": "China Eastern Airlines",
-    "flightNo": "MU2103",
-    "aircraft": "Airbus A330-200",
+    "flightNo": "CZ6627",
+    "aircraft": "Boeing 737-800",
     "depIata": "XIY",
     "arrIata": "URC",
     "durationMin": 210
   },
   "source": {
-    "ref": "https://www.planemapper.com/flights/MU2103",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：MU2103 实际飞的是西安→**北京**（A321，约 1h50m），不是乌鲁木齐。未找到可靠替代航班号"
+    "ref": "https://www.flightconnections.com/flights-from-xiy-to-urc",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 MU2103 实际飞西安→北京。CZ6627 为西安咸阳→乌鲁木齐天山的不经停航班（08:10–11:40）。**来源级别 3**（按城市对索引的航段页）。"
   },
   "cruiseHeight": 11000,
   "waypoints": [
