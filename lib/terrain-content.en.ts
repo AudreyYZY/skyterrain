@@ -9977,6 +9977,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing / observation / history sources: 上达赫斯坦峰 2995 m，地跨上奥地利、施泰尔马克、萨尔茨堡三州（「三州山」）；
     //   达赫斯坦石灰岩为上三叠统（约 2.35—2.01 亿年前），正文「约 2 亿年前」落在区间内；
     //   哈尔施塔特—达赫斯坦／萨尔茨卡默古特文化景观 1997 年列入 UNESCO。3 级。2026-09-10 核，verdict: ok。
+    // seeing sources: 「三州山」指整个山块，不指主峰；三州交界点在 Torstein（2,947 m）。英文侧原本写的就是 massif、没错，**中文侧单侧错**。**随机抽样审计（seed=1）抽中**。2026-09-12 核。
     seeing:
       "The Dachstein straddles the border between Upper Austria and Styria; its highest peak, Hoher Dachstein, reaches 2,995 m, and because the massif also touches Salzburg it is sometimes called the \"three-state mountain.\"",
     // formation sources: 达赫斯坦冰川群为阿尔卑斯最东端冰川（ANISA 2023，2 级）；「最北」无来源。核实 2026-09-12
