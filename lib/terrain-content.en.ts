@@ -12250,8 +12250,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   "dong-van-karst-plateau": {
     // 全六段 sources: 2010-10-03 列入 UNESCO 世界地质公园网络，为**越南首个**（东南亚第二个）—— 未与越南其他地质公园（Dak Nong 2020、Lang Son 2024）串位；面积各来源 2265.7–2356 km²，正文「约2345」落在区间内。⚠️ 两次大灭绝的表述里，第一次严格说是晚泥盆世 F-F 事件（约 364 Ma，位于泥盆纪内部）而非泥盆—石炭系界线，多数资料同样用通俗说法，暂不改。族群定居年代见 issue。核实 2026-09-11
+    // seeing sources: 行政建制：**河江省 2025 年并入宣光省**，县级一级自 2025-07-01 起撤销，所以原文「河江省四县境内」两个成分都已失效；地质公园的范围、面积与 2010 年的认定不受影响，只改建制表述。2026-09-12 核。⚠️ 注册表 `dong-van-karst-plateau` 的 `source` 留痕里也写着「河江省四县」，已同步加注。
     seeing:
-      "The Dong Van Karst Plateau is a karst tableland covering the four northernmost districts of Ha Giang Province, Vietnam's northernmost province, spanning about 2,345 km²; in 2010 it became Vietnam's first UNESCO Global Geopark.",
+      "The Dong Van Karst Plateau lies at Vietnam's northernmost edge and spans about 2,345 km², in what were the four northernmost districts of Ha Giang province, which was merged into Tuyen Quang in 2025 when the district tier was abolished; in 2010 it became Vietnam's first UNESCO Global Geopark.",
     formation:
       "The limestone strata date back roughly 550 million years to the Cambrian, recording geological evidence of two mass-extinction events at the Devonian-Carboniferous and Permian-Triassic boundaries; long uplift and dissolution have shaped the plateau's dense peaks and deep gorges.",
     observation:
@@ -12291,7 +12292,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cat Ba Island hosts a range of ecosystems including subtropical evergreen forest, freshwater swamp forest, mangroves, and coral reefs, making it an important sample for studying ecosystem diversity on limestone islands.",
     // history sources: 全岛约 354 km²，1986 年设国家公园（含约 90 km² 近岸水域）；2023-09-16 经边界修改与下龙湾合并为跨省遗产 —— 原文写「近年」，既会过期又把一个有确切日期的事件写成了趋势。核实 2026-09-11
     history:
-      "Designated a national park in 1986, one of Vietnam's earlier national parks; in 2023 a World Heritage boundary modification merged it with Ha Long Bay into the cross-provincial Ha Long Bay - Cat Ba Archipelago site.",
+      "Designated a national park in 1986, one of Vietnam's earlier national parks; in 2023 a World Heritage boundary modification merged it with Ha Long Bay into the Ha Long Bay - Cat Ba Archipelago site, which spans Quang Ninh province and the municipality of Hai Phong.",
   },
   "con-dao": {
     seeing:
@@ -12366,7 +12367,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ha Long Bay's drowned karst landform is a classic case for studying how sea-level change transforms a terrestrial karst-tower landscape into an offshore island group.",
     // history sources: 海域约 1553 km²、岛屿数各口径 1133（严格遗产区内）–1969（含未命名小岛），正文「约1600座」落在区间内；UNESCO 三期 —— 1994-12-17 依标准 vii（景观美学）首次列入、2000-11-29 依标准 viii（地质地貌）扩展、2023-09-16 边界修改与吉婆群岛合并为跨省遗产（whc.unesco.org/en/list/672，1 级）。**原文把 1994/2000 两期的依据标准对调了，且漏掉 2023 这一期。** 核实 2026-09-11
     history:
-      "Inscribed on the UNESCO World Heritage List twice — in 1994 for its scenic and aesthetic value (criterion vii), and in 2000 for its geological and geomorphological value (criterion viii) — and extended in 2023 by a boundary modification that merged it with the Cat Ba Archipelago as the cross-provincial Ha Long Bay - Cat Ba Archipelago site, Ha Long Bay is one of Vietnam's most iconic natural landscapes.",
+      "Inscribed on the UNESCO World Heritage List twice — in 1994 for its scenic and aesthetic value (criterion vii), and in 2000 for its geological and geomorphological value (criterion viii) — and extended in 2023 by a boundary modification that merged it with the Cat Ba Archipelago as the Ha Long Bay - Cat Ba Archipelago site spanning Quang Ninh province and the municipality of Hai Phong, Ha Long Bay is one of Vietnam's most iconic natural landscapes.",
   },
   "mui-ne-dunes": {
     // 全六段 sources: 红沙丘因沉积物富含氧化铁而呈橙红色；美奈自 20 世纪末由渔村发展为风筝冲浪与沙丘旅游地。核实 2026-09-11，未改动
