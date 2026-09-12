@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: caf9bfa
+lastVerifiedCommit: db901cb
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,8 @@ lastVerifiedCommit: caf9bfa
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel · 同条目两段对同一件事两种说法（2026-09-12 回头搜带出的一处：乌得勒支车站排名（R33c）） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
+| 2026-09-12 | travel · 泰国的高铁进度、机场航线、铁路枢纽表述（2026-09-12 泰国城市攻略：交通与机场状态 9 组（R33b）） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 机场距离与方位的条目内矛盾（2026-09-12 城市攻略：用注册表坐标解开三处「同条目机场距离打架」（R33a）） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | registry+routes · 519 个机场（2026-09-12 机场坐标 × OurAirports 离线比对（R32b）） | 4 | 1 / 3 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 此前卡在「公报是图片/PDF 取不到文字」的 4 个条目（2026-09-12 OCR 解开图片公报：克拉玛依 / 遵义 / 汉中 / 泸州（R32a）） | 8 | 0 / 8 / 0 | 当场修 8 条；新开 issue 0、关闭 4 |
