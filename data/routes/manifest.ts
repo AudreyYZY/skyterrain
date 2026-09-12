@@ -9,7 +9,6 @@ import type { FlightRoute } from "../../types/route.ts";
 
 import pekUrc from "./pek-urc.json" with { type: "json" };
 import ctuLxa from "./ctu-lxa.json" with { type: "json" };
-import canLxa from "./can-lxa.json" with { type: "json" };
 import urcKhg from "./urc-khg.json" with { type: "json" };
 // 中国 · 批 1（长江 / 华东 / 西北）
 import shaKmg from "./sha-kmg.json" with { type: "json" };
@@ -340,7 +339,6 @@ import sclIpc from "./scl-ipc.json" with { type: "json" };
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
   ctuLxa,
-  canLxa,
   urcKhg,
   shaKmg,
   ctuSha,

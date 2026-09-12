@@ -7,9 +7,9 @@
   "depCountry": "usa",
   "arrCountry": "usa",
   "flight": {
-    "airline": "美国航空",
-    "airlineEn": "American Airlines",
-    "flightNo": "AA1477",
+    "airline": "西南航空",
+    "airlineEn": "Southwest Airlines",
+    "flightNo": "WN840",
     "aircraft": "Boeing 737-800",
     "depIata": "MSY",
     "arrIata": "LAX",
@@ -49,9 +49,8 @@
     }
   ],
   "source": {
-    "ref": "https://www.flightaware.com/live/flight/AAL1477/history/20251027/1216Z/KSRQ/KCLT",
+    "ref": "https://info.flightmapper.net/route/Southwest_Airlines_WN_MSY_LAX",
     "checkedOn": "2026-09-12",
-    "status": "wrong",
-    "note": "**复核（2026-09-12）仍未采信**：查到西南航空 WN840 疑为新奥尔良→洛杉矶，但只有单一聚合站、没有逐日历史记录佐证。已确认的只有「AA1477 一定不是这条线」（它飞萨拉索塔→夏洛特）。按规矩不写入。"
+    "note": "**已改正，承运人也换了**：原记美国航空 AA1477，实际飞的是萨拉索塔→夏洛特，从未服务 MSY→LAX。西南航空在这条不经停航线上有多个班次，**WN840 由两个互不相同的来源分别确认为 MSY→LAX**（航段汇总页给出机型与时刻；航班追踪站有 2026-03-15 的实飞记录）。周日班用 737-800、工作日班用 737 MAX 8，全程约 4 小时 20–30 分。**来源级别 3**。达美/捷蓝/精神在这条线上也有航班，只有西南这一条拿到了双源同号。"
   }
 }

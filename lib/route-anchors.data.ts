@@ -137,10 +137,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 3, 4, 4, 4], source: "auto" },
     "en-US": { perSentence: [0, 1, 3, 4, 4, 4, 4], source: "auto" },
   },
-  "can-lxa": {
-    "zh-CN": { perSentence: [0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2], source: "auto" },
-    "en-US": { perSentence: [0, 0, 0, 0, 0, 2, 2, 2, 3, 3, 3, 3, 3], source: "auto" },
-  },
   "can-mnl": {
     "zh-CN": { perSentence: [0, 1, 2, 2, 2], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 2, 2], source: "auto" },

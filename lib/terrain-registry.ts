@@ -14975,6 +14975,126 @@ const VLTAVA_VALLEY_CESKY_KRUMLOV: TerrainEntry = {
 };
 
 // ============================================================
+// 欧洲 / 匈牙利
+// 东欧次区域第三个国家（波兰、捷克之后）。匈牙利是喀尔巴阡盆地的中心，
+// 全境七成以上是海拔 200 米以下的平原，山地只沿北缘与西南零星分布 ——
+// 这份地形集的主线因此不是"高度"，而是"一个内陆沉降盆地怎么被河流填平、
+// 又被火山与石灰岩在边缘打断"。
+// 跨境地形（克塞格山、泽姆普伦山北端、费尔特湖）一律按"匈牙利与奥地利/
+// 斯洛伐克交界"中性表述，不涉主权、不描述边界线；`history` 段只写地质史与
+// 广泛记载的前现代史及 UNESCO 认定，二十世纪的政治/领土议题一律不碰。
+// 火山锥与火山山地→`mountain_system`、石灰岩山地→`mountain_system`、
+// 喀斯特台地→`plateau`、沉积大平原→`plain`、草原（puszta）→`grassland`、
+// 湖→`lake`、河→`river`、峡谷式河段→`gorge`、玄武岩残丘→`inselberg`。
+// ============================================================
+
+const MATRA: TerrainEntry = {
+  id: "matra",
+  nameZh: "马特劳山",
+  nameEn: "Mátra",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "凯凯什峰", lon: 20.0136, lat: 47.8778, elevation: 1014, kind: "peak" },
+  bbox: [19.70, 47.76, 20.30, 48.00],
+  axis: [[19.75, 47.86], [20.25, 47.86]],
+  viewScale: 1.2,
+  label: { lon: 20.01, lat: 48.02, rotation: 0 },
+  source: "马特劳山：匈牙利北部中山地带的火山山地，主峰凯凯什峰（Kékes）海拔 1014 米，是匈牙利全境最高点；山体由中新世安山岩与流纹岩质火山碎屑岩组成（匈牙利国家公园管理局与匈牙利地质与地球物理研究所口径，WebSearch 2026-09）",
+};
+
+const BUKK: TerrainEntry = {
+  id: "bukk",
+  nameZh: "比克山",
+  nameEn: "Bükk Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "伊什塔洛什科峰", lon: 20.4472, lat: 48.0836, elevation: 959, kind: "peak" },
+  bbox: [20.20, 47.90, 20.80, 48.20],
+  axis: [[20.25, 48.02], [20.75, 48.02]],
+  viewScale: 1.2,
+  label: { lon: 20.45, lat: 48.22, rotation: 0 },
+  source: "比克山：匈牙利北部以三叠纪石灰岩为主的山地，主峰伊什塔洛什科峰（Istállós-kő）海拔 959 米；山顶是一片抬升的石灰岩高原面（Bükk-fennsík），发育竖井、落水洞与洞穴，1977 年设为比克国家公园（匈牙利国家公园管理局口径，WebSearch 2026-09）",
+};
+
+const BORZSONY: TerrainEntry = {
+  id: "borzsony",
+  nameZh: "伯尔容山",
+  nameEn: "Börzsöny",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "乔万约什峰", lon: 18.9167, lat: 47.9333, elevation: 938, kind: "peak" },
+  bbox: [18.70, 47.80, 19.15, 48.05],
+  axis: [[18.78, 47.92], [19.10, 47.92]],
+  viewScale: 1.15,
+  label: { lon: 18.92, lat: 48.07, rotation: 0 },
+  source: "伯尔容山：多瑙河湾北岸的中新世安山岩火山山地，主峰乔万约什峰（Csóványos）海拔 938 米；山体是一座被侵蚀削平的层状火山，与河对岸的维谢格拉德山同属一个火山系统（多瑙河—伊波伊河谷国家公园口径，WebSearch 2026-09）",
+};
+
+const PILIS: TerrainEntry = {
+  id: "pilis",
+  nameZh: "皮利什山",
+  nameEn: "Pilis",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "皮利什峰", lon: 18.8992, lat: 47.6906, elevation: 756, kind: "peak" },
+  bbox: [18.75, 47.60, 19.05, 47.78],
+  axis: [[18.78, 47.68], [19.02, 47.70]],
+  viewScale: 1.1,
+  label: { lon: 18.90, lat: 47.80, rotation: 0 },
+  source: "皮利什山：多瑙河湾南岸的三叠纪白云岩与石灰岩山地，主峰皮利什峰（Pilis-tető）海拔 756 米；与北侧的维谢格拉德火山山地隔谷相望，两者岩性完全不同，是匈牙利中山地带「石灰岩与火山并列」的典型断面（多瑙河—伊波伊河谷国家公园口径，WebSearch 2026-09）",
+};
+
+const BAKONY: TerrainEntry = {
+  id: "bakony",
+  nameZh: "巴科尼山",
+  nameEn: "Bakony",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "克里什山", lon: 17.7217, lat: 47.2533, elevation: 709, kind: "peak" },
+  bbox: [17.20, 46.95, 18.35, 47.45],
+  axis: [[17.30, 47.05], [18.25, 47.35]],
+  viewScale: 1.3,
+  label: { lon: 17.72, lat: 47.47, rotation: 0 },
+  source: "巴科尼山：横斜在巴拉顿湖西北的中生代石灰岩与白云岩山地，主峰克里什山（Kőris-hegy）海拔 709 米，是外多瑙山系（Dunántúli-középhegység）中面积最大的一段；东南缘的巴拉顿高地上散布着上新世玄武岩残丘（匈牙利国家公园管理局与巴拉顿高地国家公园口径，WebSearch 2026-09）",
+};
+
+const MECSEK: TerrainEntry = {
+  id: "mecsek",
+  nameZh: "迈切克山",
+  nameEn: "Mecsek",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "曾格峰", lon: 18.4342, lat: 46.0864, elevation: 682, kind: "peak" },
+  bbox: [18.05, 46.00, 18.65, 46.25],
+  axis: [[18.10, 46.10], [18.60, 46.12]],
+  viewScale: 1.15,
+  label: { lon: 18.43, lat: 46.27, rotation: 0 },
+  source: "迈切克山：匈牙利西南部从大平原边缘拔起的孤立山地，主峰曾格峰（Zengő）海拔 682 米；山体以中生代石灰岩与二叠纪—三叠纪砂岩为主，因位置偏南、被平原环绕而气候明显偏暖，是匈牙利地中海型植物分布最北的一片山地（杜纳—德拉瓦国家公园口径，WebSearch 2026-09）",
+};
+
+const ZEMPLEN: TerrainEntry = {
+  id: "zemplen",
+  nameZh: "泽姆普伦山",
+  nameEn: "Zemplén Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "纳吉米利奇峰", lon: 21.4383, lat: 48.5567, elevation: 894, kind: "peak" },
+  bbox: [21.10, 48.20, 21.75, 48.60],
+  axis: [[21.20, 48.28], [21.60, 48.55]],
+  viewScale: 1.25,
+  label: { lon: 21.44, lat: 48.62, rotation: 0 },
+  source: "泽姆普伦山：匈牙利东北角的中新世火山山地，主体由流纹岩、安山岩与凝灰岩组成；最高点纳吉米利奇峰（Nagy-Milic）海拔 894 米，位于匈牙利与斯洛伐克交界一带。山南麓的托卡伊一带火山凝灰岩风化成的土壤与地下酒窖，是该产区葡萄种植的自然基础（匈牙利国家公园管理局与 UNESCO 口径，WebSearch 2026-09）",
+};
+
+
+// ============================================================
 // 南美洲 / 智利
 // ============================================================
 
