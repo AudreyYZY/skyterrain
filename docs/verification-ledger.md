@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 9fe6c09
+lastVerifiedCommit: 6e80df8
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: 9fe6c09
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | 中国 11 个城市的「城区/市区人口」口径与数字（七普分区数据逐一加总）（R37c） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 中国批次：排他性断言 14 条 + 会过期的状态 12 条联网核实（R37b） | 12 | 0 / 12 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 中国批次离线前置：民政部行政区划代码全库比对（R37a） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 日本 22 座城市条目的联网核实：建制/名次/时点/机场状态/会变的量（R36b） | 13 | 0 / 11 / 2 | 当场修 11 条；新开 issue 2、关闭 0 |
