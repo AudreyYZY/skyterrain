@@ -10408,9 +10408,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "Poland can be divided roughly into: Mazovia (Warsaw and its surroundings, the political centre), Lesser Poland/Małopolska (Kraków and Zakopane, the gateway to the Carpathians), Greater Poland and Silesia (Poznań and Wrocław, the western plains and industrial belt), Pomerania (Gdańsk, Szczecin and Toruń, along the Baltic coast), and Warmia-Masuria and Podlasie (Olsztyn and Białystok, the north-eastern lake district and forests).",
     gettingAround:
-      "Warsaw Chopin Airport is the main international gateway; domestic flights are hubbed through Warsaw across about 30 routes nationwide, and the rail network covers the main cities. Driving is on the right. The climate is temperate continental; the southern mountains have cold, snowy winters, while the northern coast is comparatively mild. Restaurant bills typically already include service, with an additional 5–10% tip customary. The voltage is 230V with EU-style two-round-pin plugs.",
+      "Warsaw Chopin Airport is the main international gateway; domestic flights are hubbed through Warsaw across about 30 routes nationwide, and the rail network covers the main cities. Driving is on the right. The climate is temperate continental; the southern mountains have cold, snowy winters, while the northern coast is comparatively mild. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more. The voltage is 230V with EU-style two-round-pin plugs.",
     culture:
-      "The official language is Polish, with higher English proficiency among younger people and in tourist areas. Poles place strong value on Catholic tradition and family, and the pace of society is comparatively measured and reserved. Restaurant bills typically already include service, with an additional 5–10% tip customary or rounding up.",
+      "The official language is Polish, with higher English proficiency among younger people and in tourist areas. Poles place strong value on Catholic tradition and family, and the pace of society is comparatively measured and reserved. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "Natural landforms: the Tatra Mountains and Zakopane, rafting the Dunajec River Gorge, the Masurian Lake District, the Słowiński Moving Dunes, Białowieża primeval forest (a World Heritage Site). Heritage and culture: Kraków's old town and Wawel Castle (a World Heritage Site), Warsaw's old town (a World Heritage Site), the Wieliczka Salt Mine (a World Heritage Site), the Auschwitz-Birkenau Memorial and Museum.",
     whenAndTips:
@@ -10432,7 +10432,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Chopin Airport is about 10 km from the centre, with train and metro links; the city has an extensive metro and tram network. The climate is temperate continental, cold in winter and mild in summer.",
     culture:
-      "The official language is Polish, with higher English proficiency among younger people. Warsaw was rebuilt to its pre-war appearance after being almost entirely levelled during the Second World War — the reconstruction itself is a symbol of Polish national resilience. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish, with higher English proficiency among younger people. Warsaw was rebuilt to its pre-war appearance after being almost entirely levelled during the Second World War — the reconstruction itself is a symbol of Polish national resilience. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Old Town Market Square and Royal Castle (rebuilt to its original appearance after the war, a World Heritage Site); Łazienki Park (the Chopin Monument); the Warsaw Rising Museum; a walk along the Vistula riverside.",
     whenAndTips:
@@ -10450,7 +10450,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Kraków Airport is about 11 km from the centre, with a train link; the old town is walkable, and the city has an extensive tram network. The climate is temperate continental.",
     culture:
-      "The official language is Polish, with higher English proficiency given the city's importance for tourism and its universities. Kraków escaped major destruction in the Second World War and so retains an intact medieval city layout, making it one of the culturally and historically richest cities in Poland. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish, with higher English proficiency given the city's importance for tourism and its universities. Kraków escaped major destruction in the Second World War and so retains an intact medieval city layout, making it one of the culturally and historically richest cities in Poland. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "Wawel Castle and Cathedral (the coronation and burial site of Polish monarchs); the Main Market Square and St Mary's Basilica; the historic Kazimierz district. Day trips to the Wieliczka Salt Mine (a World Heritage Site) and the Auschwitz-Birkenau Memorial nearby.",
     whenAndTips:
@@ -10470,7 +10470,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Kraków Airport (about 100 km); from Kraków the train or bus takes about 2 hours. The town itself is walkable; reaching the mountains requires a car or shuttle bus. The climate is temperate mountain, cold and snowy in winter, cool in summer.",
     culture:
-      "The official language is Polish. The Gorals of Zakopane and the surrounding area preserve a distinctive highland folk costume, timber architecture and folk-music tradition known as Goral culture. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. The Gorals of Zakopane and the surrounding area preserve a distinctive highland folk costume, timber architecture and folk-music tradition known as Goral culture. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Kasprowy Wierch cable car (overlooking the Tatra peaks); Krupówki pedestrian street; the Goral timber-architecture quarter; hiking in Tatra National Park (Rysy, Morskie Oko lake).",
     whenAndTips:
@@ -10491,7 +10491,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Rzeszów-Jasionka Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 3 hours. The old town is walkable. The climate is temperate continental.",
     culture:
-      "The official language is Polish. Rzeszów is an important regional centre in south-eastern Poland, and its growing aerospace industry has drawn many young technical professionals. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Rzeszów is an important regional centre in south-eastern Poland, and its growing aerospace industry has drawn many young technical professionals. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "Rzeszów Market Square and the underground tourist route (16th-century cellar remains); the Podkarpackie Aviation Museum near the airport. Hiking the Bieszczady Mountains nearby.",
     whenAndTips:
@@ -10511,7 +10511,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Wrocław Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 4.5 hours. The old town is walkable, with numerous bridges over the river. The climate is temperate continental.",
     culture:
-      "The official language is Polish. Wrocław has historically been governed by several different states, and this blended history has given the city a distinctive architectural character. Hundreds of small bronze dwarf statues scattered through the streets have become an iconic city symbol. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Wrocław has historically been governed by several different states, and this blended history has given the city a distinctive architectural character. Hundreds of small bronze dwarf statues scattered through the streets have become an iconic city symbol. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Market Square and Old Town Hall; Ostrów Tumski (Cathedral Island); the Centennial Hall (a World Heritage Site, an early-20th-century reinforced-concrete landmark); dwarf-statue hunting through the streets; a boat trip on the Oder.",
     whenAndTips:
@@ -10532,7 +10532,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Poznań-Ławica Airport is about 6 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
     culture:
-      "The official language is Polish. Poznań is an important Polish trade-fair and commercial city, and locals are known for their practical, efficient work ethic. A mechanical goat display at the Old Market town hall performs daily at noon. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Poznań is an important Polish trade-fair and commercial city, and locals are known for their practical, efficient work ethic. A mechanical goat display at the Old Market town hall performs daily at noon. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Old Market Square and Renaissance town hall (the noontime mechanical goat display); Cathedral Island (the remains of Poland's earliest church); the ruins of Poznań's fortress defences.",
     whenAndTips:
@@ -10553,7 +10553,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Gdańsk Lech Wałęsa Airport is about 12 km from the centre, with bus and train links; from Warsaw the train takes about 2.5 hours. The old town is walkable; reaching the Hel Peninsula requires a car or train. The climate is temperate maritime, comparatively mild along the coast.",
     culture:
-      "The official language is Polish. Gdańsk was the birthplace of the 1980 Solidarity trade-union movement, an event widely regarded as one of the important beginnings of the political transformations across Eastern Europe. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Gdańsk was the birthplace of the 1980 Solidarity trade-union movement, an event widely regarded as one of the important beginnings of the political transformations across Eastern Europe. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Long Street and Long Market historic district; St Mary's Church (one of the largest brick churches in Europe); the European Solidarity Centre museum; the historic harbour cranes. Day trips to the Hel Peninsula or the Słowiński Moving Dunes nearby.",
     whenAndTips:
@@ -10572,7 +10572,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Szczecin-Goleniów Airport is about 45 km from the centre, reached by bus; from Warsaw the train takes about 6.5 hours, or about 1.5 hours from Berlin. The old town is walkable. The climate is temperate maritime.",
     culture:
-      "The official language is Polish; given its proximity to the German border, German is also usable in some commercial settings. Szczecin was historically under German administration for a long period, and its architecture blends German and Polish cultural influences. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish; given its proximity to the German border, German is also usable in some commercial settings. Szczecin was historically under German administration for a long period, and its architecture blends German and Polish cultural influences. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "Ducal Castle of Pomerania; the Hakenterrasse (Chrobry Embankment, overlooking the Oder port); the old town hall. Day trips to Wolin National Park nearby to see the sea cliffs and bison reserve.",
     whenAndTips:
@@ -10594,7 +10594,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Bydgoszcz Airport (about 50 km); from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
     culture:
-      "The official language is Polish. Toruń is famous for its gingerbread-making tradition, and the local Gingerbread Museum showcases this centuries-old craft. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Toruń is famous for its gingerbread-making tradition, and the local Gingerbread Museum showcases this centuries-old craft. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Copernicus House museum; the old town hall and market square; the ruins of Toruń Castle; a hands-on gingerbread-making experience at the Gingerbread Museum.",
     whenAndTips:
@@ -10614,7 +10614,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Olsztyn-Mazury Airport is about 58 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable; exploring the lake district requires a car or a tour. The climate is temperate continental.",
     culture:
-      "The official language is Polish. Olsztyn and the surrounding region have historically blended multiple cultural traditions, with Prussian, Polish and Lithuanian influences interwoven. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Olsztyn and the surrounding region have historically blended multiple cultural traditions, with Prussian, Polish and Lithuanian influences interwoven. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "Olsztyn Castle (once administered by Copernicus); the old town market square. Boat trips exploring the Masurian Lake District nearby, or sailing on Lake Śniardwy.",
     whenAndTips:
@@ -10635,7 +10635,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The local airport has limited passenger service; the nearest airport with stable scheduled flights is Warsaw Chopin (about 180 km); from Warsaw the train takes about 2 hours. The old town is walkable; reaching Białowieża Forest requires a car or bus. The climate is temperate continental.",
     culture:
-      "The official language is Polish. Białystok was the birthplace of L. L. Zamenhof, the creator of the international language Esperanto, and a memorial exhibition to him is on display in the city. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+      "The official language is Polish. Białystok was the birthplace of L. L. Zamenhof, the creator of the international language Esperanto, and a memorial exhibition to him is on display in the city. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
       "The Branicki Palace and its Baroque gardens; the Zamenhof memorial centre. Day trips to Białowieża National Park (a World Heritage Site, home to the European bison) or birdwatching at Biebrza National Park nearby.",
     whenAndTips:
@@ -14773,7 +14773,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The city lies on the plain south of Lake Tai, with the Feiying Pagoda and Yishang Street in the old town and the South Taihu new area and lakeshore resort strip on the water. Nanxun old town is about 30 km east (the Jiaye Hall library, Xiaolian Garden, the Hundred Rooms); Moganshan is in the hills of Deqing county to the south (about 40 km, with Republican-era villas and bamboo); Anji is about 60 km south-west (the Great Bamboo Sea, Yucun village, Tianhuangping); Changxing to the west has the Guzhu Mountain Zisun tea gardens. Huzhou high-speed station is on the south side of the city.",
     gettingAround:
-      "Huzhou has no airport; use Hangzhou Xiaoshan International (about 90 km) or Shanghai Hongqiao. The Nanjing–Hangzhou high-speed line puts Huzhou about 25 minutes from Hangzhou and an hour from Nanjing, and the Shanghai–Suzhou–Huzhou line brings Shanghai within about an hour. Buses and taxis are convenient in town; Nanxun, Moganshan and Anji are reached by bus or hired car — Moganshan's hillside guesthouses usually mean driving or a taxi. The climate is northern subtropical humid monsoon with an annual mean of about 16°C, muggy summers and a damp plum-rain season.",
+      "Huzhou has no trunk airport — Deqing Moganshan, inside Deqing county, is a general-aviation field with only a few short-haul services — so travel out of the province goes through Hangzhou Xiaoshan International (about 90 km) or Shanghai Hongqiao. The Nanjing–Hangzhou high-speed line puts Huzhou about 25 minutes from Hangzhou and an hour from Nanjing, and the Shanghai–Suzhou–Huzhou line brings Shanghai within about an hour. Buses and taxis are convenient in town; Nanxun, Moganshan and Anji are reached by bus or hired car — Moganshan's hillside guesthouses usually mean driving or a taxi. The climate is northern subtropical humid monsoon with an annual mean of about 16°C, muggy summers and a damp plum-rain season.",
     culture:
       "Huzhou Wu is spoken; Mandarin is universal. Nanxun's buildings are mostly protected and lived in — follow the signs before entering courtyards; Moganshan's guesthouse area is quiet, so keep noise down at night. Food includes the 'three whites' of Lake Tai (whitebait, white fish, white shrimp), Huzhou tofu-skin dumplings and Zhulaoda rice dumplings, with Anji white tea and Changxing Zisun tea the famous teas. Brush workshops in Shanlian can be visited. No tipping.",
     seeAndDo:

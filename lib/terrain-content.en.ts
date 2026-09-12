@@ -10946,7 +10946,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "rubjerg-knude": {
     // 全六段 sources: 灯塔 1900-12-27 首次点亮（1899 年动工）、1968-08-01 停用、2019-10 整体向内陆迁移 70 m —— 三个年份均核实无误。沙丘仍在移动，是会变的量。核实 2026-09-11，未改动
     seeing:
-      "Rubjerg Knude is an active dune on Jutland's North Sea coast; its lighthouse, built in 1900, was relocated intact in 2019 after being progressively buried by the migrating dune.",
+      "Rubjerg Knude is an active dune on Jutland's North Sea coast; its lighthouse, built in 1900, was buried by the advancing dune until it went dark in 1968, then moved bodily inland in 2019 once sea erosion had cut the cliff back to its foundations.",
     formation:
       "The dune was built up by strong North Sea westerly winds carrying beach sand over a long period; since the late 19th century the dune has continued to migrate inland, making this one of the most actively eroding wind-blown dune landforms in Denmark.",
     observation:
@@ -10954,7 +10954,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both Rubjerg Knude and Skagen Odde are sandy landforms in northern Jutland, but Rubjerg Knude is a wind-eroded dune migrating inland with pronounced relief, while Skagen Odde is a flat sand spit extending along the coast.",
     concept:
-      "The dune's continued burial of the lighthouse, eventually forcing its relocation, is a classic case for studying the long-term dynamic migration of wind-blown dunes and their impact on human structures.",
+      "The advancing dune buried the lighthouse and put it out of service in 1968, while the 2019 move was forced by a separate process — North Sea erosion cutting the cliff back to the building's foundations — which makes the site a classic case for telling wind-driven dune migration and coastal erosion apart.",
     history:
       "The lighthouse was built in 1900 and taken out of service in 1968 as the dune advanced; in 2019, as coastal erosion brought it dangerously close to the cliff edge, the whole structure was moved about 70 m inland to avoid falling into the sea.",
   },
@@ -12265,7 +12265,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Dong Van Karst Plateau preserves geological evidence of two mass-extinction events, making it an important sample for studying the relationship between the history of life on Earth and long-term karst landscape evolution.",
     history:
-      "The plateau is home to 17 ethnic groups including the Hmong, Lo Lo, and Bo Y, some of whom have lived here for 500 to 800 years, their terraced farming traditions closely interwoven with the karst landscape.",
+      "The plateau is home to 17 ethnic groups including the Hmong, Lo Lo and Bo Y, their terraced farming traditions closely interwoven with the karst landscape.",
   },
   "central-highlands-tay-nguyen": {
     // 全六段 sources: 海拔约 500–1500 m；玄武岩红土；大叻 1893 年由耶尔森发现并经法方开发为避暑地。⚠️ 红线自查：正文只写高原地貌、玄武岩土壤与咖啡种植这类地理—农业事实，**未涉族群构成、移民或土地议题**。核实 2026-09-11，未改动
@@ -13075,12 +13075,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
     //   **这一条踩线了，已按红线删掉战史归因**：原文写「被**朝鲜战争期间的联合国军**称为 Punchbowl」，现在只保留「俗称 Punchbowl」这个事实本身。2026-09-10 核。
     //   尺寸：南北长约 10 公里、东西宽约 7 公里（韩国民族文化大百科事典，级别 2）—— 原文的「直径约 5 公里」约为实际的一半。
+    //   2026-09-13 抽样审计 seed=5 命中：KIGAM 等资料给的是 7.5×5.5 / 8.5×7 / 11.95×6.6 公里，没有统一口径，正文已改成并列写法。
     //   https://encykorea.aks.ac.kr/Article/E0062645
     //   **成因本轮专门核过：正文写对了** —— 韩国地质资源研究院（KIGAM）明确写明是前寒武纪片麻岩被侏罗纪花岗岩侵入、花岗岩抗风化更弱而被优先侵蚀掏空形成的**差异侵蚀盆地**，**不是陨石坑也不是火山口**（级别 1）。
     //   https://mgeo.kigam.re.kr/geoinfo/mt_geomorph/report/ch_16_0.html
     //   盆地比周边山地低约 400–800 米，正文的「500 至 800 米」在取值范围内、判定不改。
     seeing:
-      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon, roughly 10 km north-south and 7 km east-west; its bowl-like shape has given it the nickname \"Punchbowl\".",
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon, roughly 10 km north-south and 7 km east-west — different Korean sources measure it differently, giving anywhere from 8 to 12 km on the long axis — and its bowl-like shape has given it the nickname \"Punchbowl\".",
     formation:
       "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
     observation:
@@ -15112,7 +15113,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "bromo-tengger-caldera": {
     // seeing sources: 沙海破火山口约 9×10 km（外层大破火山口约 16 km，正文说的是内层），内有五座火山：Bromo 2329 / Batok 2470 / Kursi 2581 / Watangan 2661 / Widodaren 2650 m；公园 1982 年设立。核实 2026-09-11
     seeing:
-      "The Bromo Tengger caldera is an ancient volcanic depression roughly 10 km across, its floor covered by a fine volcanic \"sand sea\"; within it stand five newer cones including Bromo, whose crater continuously vents white sulphurous smoke.",
+      "The Tengger caldera is an ancient volcanic collapse depression about 16 km across at its outer rim; the younger \"sand sea\" caldera nested inside it measures roughly 9 by 10 km and is floored with fine volcanic sand; five newer cones including Bromo stand within the sand sea, and Bromo's crater continuously vents white sulphurous smoke.",
     formation:
       "The Tengger caldera formed when a prehistoric giant volcano erupted catastrophically and its summit collapsed; several secondary cones, including Bromo and Batok, subsequently grew inside the caldera floor, producing a layered \"cone-within-caldera\" structure.",
     observation:
