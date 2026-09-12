@@ -22,6 +22,7 @@
  */
 import { readFileSync, existsSync } from "node:fs";
 import { CITY_REGISTRY } from "@/lib/places-registry";
+import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
 
 const CSV = process.argv.find((a) => a.startsWith("--csv="))?.slice(6)
   ?? ".cache/ourairports/airports.csv";
@@ -110,3 +111,65 @@ console.log(
   `两边都要查。IATA 查不到的未必是错 —— EuroAirport 的 EAP 是官方的联合代码，OurAirports 只收 BSL/MLH。\n` +
   `**这是清单不是门禁，永远 exit 0。**`,
 );
+
+// ---------------------------------------------------------------------------
+// 第二段：正文里的「机场距市区约 X 公里」× 注册表坐标（不需要数据集）
+// ---------------------------------------------------------------------------
+const FIELDS = ["identity", "howItWorks", "layout", "gettingAround", "whenAndTips"] as const;
+/** 「机场……约 X 公里」与「约 X 公里……机场」两种语序；km 与公里都认 */
+const DIST = /机场[^。；，、]{0,18}?约?\s*([\d.]+)\s*(?:公里|km)|约?\s*([\d.]+)\s*(?:公里|km)[^。；，、]{0,8}?机场/g;
+
+type Claim = { field: string; v: number; ctx: string };
+const tooShort: string[] = [], conflict: string[] = [];
+let entriesWithDistance = 0;
+
+for (const c of CITY_REGISTRY) {
+  const guide = TRAVEL_CONTENT_ZH[c.id];
+  if (!c.airport || !guide) continue;
+  const real = km(c.lat, c.lon, c.airport.lat, c.airport.lon);
+  const claims: Claim[] = [];
+  for (const f of FIELDS) {
+    const raw = (guide as unknown as Record<string, string | undefined>)[f];
+    if (!raw) continue;
+    const t = raw.replace(/\s+/g, "");
+    for (const m of t.matchAll(DIST)) {
+      const v = Number(m[1] ?? m[2]);
+      if (v >= 0.5 && v <= 400) claims.push({ field: f, v, ctx: t.slice(Math.max(0, m.index - 20), m.index + 28) });
+    }
+  }
+  if (!claims.length) continue;
+  entriesWithDistance++;
+  const vals = [...new Set(claims.map((x) => Math.round(x.v)))];
+  if (vals.length > 1) {
+    const lo = Math.min(...vals), hi = Math.max(...vals);
+    // 同条目两个值差 >20% **且绝对差 ≥3 km** 才报：一条目里提到两座不同机场是常事，所以这里只是清单、要人看；
+    // 绝对差这一条是为了压掉「2 km vs 3 km」这种四舍五入噪音（拉布安巴焦的机场就在镇边上）
+    if ((hi - lo) / hi > 0.2 && hi - lo >= 3) {
+      conflict.push(
+        `⚑ ${c.id}「${c.nameZh}」同条目里的机场距离 ${vals.join(" / ")} 公里（注册表坐标算出 ${real.toFixed(1)} 公里）\n` +
+        claims.map((x) => `     [${x.field}] ${x.ctx}`).join("\n"),
+      );
+    }
+  } else if (claims[0].v < real * 0.95 && real - claims[0].v > 2) {
+    tooShort.push(
+      `⚑ ${c.id}「${c.nameZh}」正文 ${claims[0].v} 公里 < 直线 ${real.toFixed(1)} 公里（${c.airport.iata} ${c.airport.nameZh}）\n` +
+      `     [${claims[0].field}] ${claims[0].ctx}`,
+    );
+  }
+}
+
+console.log(
+  `\n正文机场距离 × 注册表坐标：${entriesWithDistance} 个条目的正文给了距离，` +
+  `比直线还短 ${tooShort.length} 个，同条目自相矛盾 ${conflict.length} 个`,
+);
+if (!entriesWithDistance) {
+  console.error("✗ 一个都没扫到 —— 字段名或正则坏了");
+  process.exit(1);
+}
+for (const l of [...tooShort, ...conflict]) console.log("\n" + l);
+if (tooShort.length || conflict.length) {
+  console.log(
+    "\n「比直线还短」一定错（公路里程不可能短于直线）；「同条目两个值」要人看 —— " +
+    "一个条目里提到两座不同机场是常事。**比直线长不报** —— 正文写的多是公路里程。",
+  );
+}
