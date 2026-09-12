@@ -28,7 +28,8 @@
     "list:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/list-claims.ts",
     "check:zhen": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-zh-en-numbers.ts",
     "check:rvt": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-vs-terrain.ts",
-    "check:distance": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-distance.ts"
+    "check:distance": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-distance.ts",
+    "check:pending": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-pending.ts"
   },
   "dependencies": {
     "cesium": "^1.141.0",
