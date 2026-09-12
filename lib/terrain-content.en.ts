@@ -17817,6 +17817,111 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The pine woods here were long used for forestry and resin collection; part of the dune country escaped cultivation because it served for a long period as a military training area, which incidentally preserved bare-sand habitat, later managed for restoration under an EU LIFE project. The Šranecké piesky protected area covers about 10 km².",
   },
+  "podunajska-nizina": {
+    // 全六段 sources: 同中文侧。由 Podunajská rovina（极平）与 Podunajská pahorkatina（起伏）两部分组成；潘诺尼亚盆地北缘；斯洛伐克主要农业区。未取到面积与产量数字，不写。2026-09-13 首写。
+    seeing:
+      "The Danubian Lowland occupies south-western Slovakia, the northern edge of the Pannonian Basin reaching into the country. It falls into two halves: the southern half along the Danube is exceptionally flat and is called the Danubian Plain, while the northern half against the mountains is a rolling hill country. It is Slovakia's principal agricultural region.",
+    formation:
+      "The lowland is a zone of tectonic subsidence: the Carpathian massifs around it were raised during the orogeny while this block sank relatively, and it was then filled layer by layer with gravel, sand and fines brought down by the Danube and its tributaries. The nearer the Danube, the younger and finer the deposits and the flatter the ground.",
+    observation:
+      "From the air the Danubian Lowland is an unbroken expanse of ground divided into a grid of fields, with no obvious relief and only the lines of channels and irrigation ditches to break it. Its northern margin meets the forest belts of the Little Carpathians and Tribeč along a hard edge; its southern margin is the web of water woven by the Danube and its distributaries.",
+    distinguish:
+      "The Danubian and East Slovak Lowlands are both lowlands on the northern rim of the Pannonian Basin; the difference is position and drainage. This one is dominated by the Danube system, flatter and larger; the East Slovak Lowland is dominated by the Bodrog and its neighbours and hemmed in more closely by mountains. It continues into the Little Hungarian Plain, geomorphologically one lowland divided by a frontier.",
+    concept:
+      "'Plain' and 'hill country' belong to two different levels of landform classification, though they are often treated as one. The Danubian Lowland contains both, which shows that within a single subsiding basin the ground nearest the trunk channel is levelled by the youngest deposits while the margins away from it keep the relief of an earlier surface. The test is the age and thickness of the sediment, not just the gradient at the surface.",
+    history:
+      "Farming here is long recorded and the region is Slovakia's main producer of grain and vegetables; the river ports and ferry crossings along the Danube have long been key points of regional transport.",
+  },
+  "vychodoslovenska-nizina": {
+    // 全六段 sources: 同中文侧。潘诺尼亚盆地北缘；Bodrog/Latorica/Uh/Hornád 下游冲积物；斯洛伐克最低点约 94 m 在其东南角博德罗格河畔（各源多写 94 m，无大地测量一手公告，写「约」）。零争议：不写任何邻国国名。2026-09-13 首写。
+    seeing:
+      "The East Slovak Lowland lies in the south-east of the country, a low plain half-enclosed by mountains and likewise part of the northern rim of the Pannonian Basin. Slovakia's lowest point is in its south-eastern corner on the bank of the Bodrog, at about 94 m above sea level.",
+    formation:
+      "The lowland is also the product of tectonic subsidence, filled by alluvium from the lower courses of the Bodrog, Latorica, Uh and Hornád. Because the mountains enclose it fairly tightly and its outlet is narrow, large areas here historically stood under water as marshland, and only long programmes of drainage turned them into the farmland of today.",
+    observation:
+      "From the air the East Slovak Lowland is flat farmland with sinuous channels and strings of oxbows, and a regular grid of drainage ditches superimposed on the natural drainage — the coexistence of these two systems is the easiest way to recognise it. The forested outlines of volcanic uplands such as Vihorlat stand to the north and east.",
+    distinguish:
+      "The East Slovak and Danubian Lowlands are both on the northern rim of the Pannonian Basin; the difference is enclosure. This one is hemmed in on three sides with poor drainage and was historically dominated by marsh; the Danubian Lowland is far more open and Danube-dominated. Compared with an intermontane basin such as Liptov, it is on a much larger scale and is not pinched between high ranges.",
+    concept:
+      "A lowland is not automatically good farmland. Low-lying ground with poor drainage tends, before artificial drainage, to be marsh and seasonal floodland; the neat fields visible today are a product of the drainage system. A map of the drainage shows this: natural channels wander irregularly, artificial ditches run straight and in grids.",
+    history:
+      "Drainage and embankment works here were carried out progressively from the nineteenth century, converting large tracts of marsh to farmland; viticulture along the hill margins in the south-eastern corner is long recorded.",
+  },
+  "vah-river": {
+    // 全六段 sources: 同中文侧。约 403 km，斯洛伐克最长；两源 Biely Váh（高塔特拉 Kriváň 一带）/ Čierny Váh（低塔特拉 Kráľova hoľa 一带）；科马尔诺入多瑙河；沿河称 Považie；干流梯级水库群（级数与装机无一手来源，不写数字）。2026-09-13 首写。
+    seeing:
+      "The Váh is Slovakia's longest river, running about 403 km. It has two headstreams: the Biely Váh rises near Kriváň in the High Tatras and the Čierny Váh near Kráľova hoľa in the Low Tatras; once joined, the river runs south-west and finally enters the Danube at Komárno. The country along it has a name of its own, Považie.",
+    formation:
+      "Its course is set by structure: upstream it threads a string of intermontane basins such as Liptov, in its middle course it follows the longitudinal valleys between ranges, and once it reaches the Danubian Lowland the gradient collapses and deposition takes over. So the same river is erosional upstream and depositional downstream, and the whole transition can be read along four hundred kilometres.",
+    observation:
+      "From the air the upper Váh is a pale braided channel in intermontane basins, the middle course is cut into a succession of still reservoir surfaces, and the lower course meanders across the plain with wide floodplain tracts. The reservoir reaches have irregular water outlines and conspicuous dam lines, and are immediately distinguishable from the natural stretches.",
+    distinguish:
+      "The difference between the Váh and the Danube in Slovakia is not only size: the Danube is depositional and anabranching for virtually its whole Slovak course, while the Váh is erosional upstream and depositional downstream and shows both states. Compared with the Hornád, the Váh runs south-west into the Danube while the Hornád flows south out of the country.",
+    concept:
+      "The upper and lower reaches of a river are really two different geomorphic regimes: upstream the gradient is steep, the flow has capacity to spare for transport and incision, and the valley is excavated; downstream the gradient is low, transport capacity falls short, sediment accumulates, and the channel spends its energy by swinging sideways. To tell which regime a reach is in, look at whether the channel is set into a valley or spread across its own deposits.",
+    history:
+      "The Váh valley has been the main transport corridor of north-western Slovakia since the Middle Ages, and the towns and castles along it mostly stand where the valley narrows; a cascade of reservoirs was built on the main stem during the twentieth century for power generation and flood control.",
+  },
+  "danube-slovakia": {
+    // 全六段 sources: 同中文侧。经 Devínska brána 进入斯洛伐克，坡度骤减、河道分汊；德文门为阿尔卑斯山系与喀尔巴阡山系之间的构造缺口。境内河长与流量无一手来源，不写数字。零争议：不描述边界线。2026-09-13 首写。
+    seeing:
+      "The Danube enters Slovakia upstream of Bratislava through the Devín Gate, where the valley narrows into a natural gateway between massifs on either side. Beyond that gate the river's gradient falls away sharply and its channel begins to divide, spreading across the Danubian Lowland as a tract of anabranches and river islands.",
+    formation:
+      "Structurally the Devín Gate is the gap between the Alpine and the Carpathian systems, and the Danube passes through the mountain belt along exactly that gap. Losing gradient once clear of the mountains, the river loses transport capacity, and the gravel and sand it carries begin to accumulate on the bed, so the channel divides and shifts repeatedly and has built gravel deposits tens of metres thick.",
+    observation:
+      "From the air the Devín Gate is an unmistakable notch in the mountains, with the water surface markedly different in width inside and outside it. Below the gate the channel splits into a main stem and several anabranches with floodplain forest and sand bars between them; farther downstream, embankments and navigation works have regularised the channel, so artificial straight lines and natural bends run side by side.",
+    distinguish:
+      "This entry and the library's other Danube entries cover different reaches of one river: the Austrian reach alternates between mountains and basins, the reach around Visegrád in Hungary is a gorge where the river cuts across mountains, and the Hungarian reach is the lower course out on the great plain. What characterises the Slovak reach is the transitional state of a river just out of the mountains and in the act of dividing.",
+    concept:
+      "The point where a river leaves the mountains is a critical geomorphic threshold: gradient drops within a short distance, transport capacity falls with it, and the coarsest material drops out first. So the coarsest gravel lies near the mountain front, with grain size fining steadily downstream — a gradient that can be read simply by picking up stones along the river.",
+    history:
+      "The Devín Gate has been a route node since prehistory, and the crag inside it carries long-recorded castle remains; the Danube has long been the principal waterway here, and its river ports and crossings are key points of regional transport.",
+  },
+  "zitny-ostrov": {
+    // 全六段 sources: 同中文侧。约 1900 km²、长约 84 km、宽 15–30 km，布拉迪斯拉发至科马尔诺；夹在多瑙河、小多瑙河与瓦赫河之间；欧洲面积最大的河流岛；岛下砾石层为中欧重要地下水储集体。2026-09-13 首写。
+    seeing:
+      "Žitný ostrov is the tract of land enclosed between the Danube, its distributary the Little Danube, and the Váh: about 1,900 km² in area, some 84 km long and 15 to 30 km wide, reaching from Bratislava to Komárno. By area it is the largest river island in Europe.",
+    formation:
+      "Its existence follows directly from the Danube's division below the mountains: main stem and distributary each swung and shifted, and the whole ground caught between them became an island. Beneath it lie thick river gravels and sands, porous and highly permeable, which makes it an important groundwater reservoir for central Europe — the water here is not at the surface but under it.",
+    observation:
+      "From the air Žitný ostrov looks nothing like an island, simply flat farmland enclosed by watercourses, because it is too large to read as one: only by following the two channels along its edges can it be confirmed as ground surrounded by water. The fields are regular, villages follow the roads, and there is virtually no relief.",
+    distinguish:
+      "Žitný ostrov and Szigetköz across the Danube are river-island tracts on the two sides of the same reach and share an origin; they differ in scale and internal condition — Žitný ostrov is much larger and its surface largely reworked for agriculture, while Szigetköz keeps a more complete network of anabranches and floodplain forest. The difference from a delta is that an island of this kind is pinched between two channels rather than built out where a river meets the sea.",
+    concept:
+      "The term 'river island' can mislead: Žitný ostrov is not a bar in midstream but an entire plain caught between a main stem and a distributary. To decide whether a piece of ground is an interfluve island of this kind, look at its boundaries — distributaries of the same river on every side, rather than sea or lake.",
+    history:
+      "Farming on the island is long recorded, and the 'rye' in its name records exactly its standing as a grain district; the groundwater beneath it is an important regional source of drinking water, which is why agricultural chemicals and industrial siting on the island have long been regulated.",
+  },
+  "strbske-pleso": {
+    // 全六段 sources: 同中文侧。湖面 1346 m、约 19.8 ha、最深约 20 m；高塔特拉斯洛伐克一侧面积第二大的冰蚀湖；湖畔聚落为度假与冬季运动中心。成因按「冰碛堰塞」表述（tarn 一词在来源里泛指山地湖）。2026-09-13 首写。
+    seeing:
+      "Štrbské pleso lies on the southern slope of the High Tatras at 1,346 m, covering about 19.8 hectares and reaching some 20 m deep — the second largest glacial lake by area on the Slovak side of the High Tatras. The settlement of the same name on its shore is one of the main resort and winter-sports centres of the Tatra region.",
+    formation:
+      "The basin is not a cirque but a hollow dammed by glacial moraine. An ice-age glacier came down from the range, halted at this altitude and left an arcuate ridge of deposits; after the ice withdrew, the depression behind that ridge filled with water — which is why one side of the lake is a gentle moraine bank and the other a mountainside.",
+    observation:
+      "From the air it is a nearly circular dark water surface on the southern slope of the Tatras, its northern shore hard against forest and mountain, its southern shore given over to the settlement and the railway. The lake sits right at the upper edge of the forest belt, with the rock walls of the main High Tatras crest visible above it.",
+    distinguish:
+      "Štrbské pleso differs from the true cirque lakes higher in the Tatras: those lie on the floors of circular cirques enclosed on three sides by cliffs and are generally higher and deeper; this one was dammed by moraine, so it is lower, rounder and shallower. Compared with Morské oko in the Vihorlat, that lake was dammed by a landslide, not by ice.",
+    concept:
+      "Mountain lakes have several origins, and shape and position hint at which: a lake on the floor of a circular hollow with cliffs on three sides is a cirque lake; one at a valley mouth with an arcuate ridge on one side is moraine-dammed; one below a slope whose outline follows a former valley is landslide-dammed. Working out the origin needs no diving — the surrounding landforms are enough.",
+    history:
+      "The lakeside settlement developed from the late nineteenth century as a climate-cure and winter-sports resort, and a narrow-gauge electric railway ties it to the towns below the range; it was among the first resorts in the Tatras to be reached by rail.",
+  },
+  "morske-oko": {
+    // 全六段 sources: 同中文侧。湖面 618 m、约 13.8 ha（原约 7 ha，水位抬高约 5 m）、最长约 750 m、最宽约 312 m、最深约 25 m；斯洛伐克面积最大的非喀斯特天然湖、按面积全国第三大天然湖；1984 年保护区、现国家自然保护区。2026-09-13 首写。
+    seeing:
+      "Morské oko lies deep in the forest of the Vihorlat Mountains at 618 m, covering about 13.8 hectares, some 750 m at its longest and 312 m at its widest, and reaching about 25 m deep. It is the largest natural lake in Slovakia of non-karst origin and, by area, the third largest natural lake in the country.",
+    formation:
+      "The basin was dammed by a landslide: volcanic rock on the Vihorlat slopes crept downhill, and one larger collapse blocked a valley, holding back the water that became the lake. Its area was originally about 7 hectares and reached today's roughly 13.8 hectares after the water level was raised by about 5 m.",
+    observation:
+      "From the air it is a darker patch of water in continuous forest, its outline following the former valley, with steep slope at one end and the collapse mass blocking the valley mouth at the other. There is almost no building around it, which is the direct clue from altitude that this is a natural lake and not a reservoir — reservoirs generally show a straight dam line and access roads.",
+    distinguish:
+      "Morské oko has a wholly different origin from the glacial lakes of the Tatras: those were excavated by ice or dammed by moraine and lie in the alpine belt, while this one was dammed by a landslide and lies within the forest belt. The difference from an artificial reservoir is the shape of the shoreline — a landslide-dammed lake follows the curves of the former valley, a reservoir has one straight stretch where the dam is.",
+    concept:
+      "The lifespan of a landslide-dammed lake depends on the dam: collapse debris is usually loose, and once downstream flow cuts through it the lake drains. Those that persist generally have a dam thick enough, and an outlet controlled by stable rock, that its very survival testifies to how firm the blocking mass is.",
+    history:
+      "The lake has been a well-known local natural feature since the nineteenth century; it was declared a protected area in 1984 and is now a national nature reserve, and the primeval beech forest around it falls within the area of the transnational serial World Heritage property.",
+  },
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
     seeing:

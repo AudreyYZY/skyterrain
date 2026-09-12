@@ -15704,6 +15704,110 @@ const ZAHORSKA_NIZINA: TerrainEntry = {
   label: { lon: 17.10, lat: 48.94, rotation: 0 },
   source: "扎霍里低地（Záhorská nížina）：小喀尔巴阡山以西、摩拉瓦河以东的一片低地，是斯洛伐克境内唯一发育大面积内陆风成沙丘的地区；沙源是末次冰期多瑙河与摩拉瓦河的河流沉积被风吹扬堆积，沙丘高出周围地面约 10–15 米，什拉内茨沙地（Šranecké piesky）是中欧较大的内陆沙丘群之一，保护区面积约 10 平方公里（斯洛伐克地质调查所与欧盟 LIFE「Záhorie Sands」项目口径，WebSearch 2026-09）",
 };
+const PODUNAJSKA_NIZINA: TerrainEntry = {
+  id: "podunajska-nizina",
+  nameZh: "多瑙低地",
+  nameEn: "Danubian Lowland",
+  category: "plain",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "多瑙低地平原面", lon: 17.9000, lat: 48.0500, elevation: 125, kind: "delta" },
+  bbox: [17.05, 47.72, 18.95, 48.55],
+  axis: [[17.15, 48.10], [18.85, 48.10]],
+  viewScale: 1.7,
+  label: { lon: 17.95, lat: 48.58, rotation: 0 },
+  source: "多瑙低地（Podunajská nížina）：斯洛伐克西南部的低地，是中欧潘诺尼亚盆地北缘伸入斯洛伐克的一片，由地势极平的多瑙平原（Podunajská rovina）与其北面起伏的多瑙丘陵地（Podunajská pahorkatina）两部分组成；地表由多瑙河及其支流的河流沉积填充，是斯洛伐克最主要的农业区（斯洛伐克旅游局与斯洛伐克地质调查所口径，WebSearch 2026-09）",
+};
+
+const VYCHODOSLOVENSKA_NIZINA: TerrainEntry = {
+  id: "vychodoslovenska-nizina",
+  nameZh: "东斯洛伐克低地",
+  nameEn: "East Slovak Lowland",
+  category: "plain",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "东斯洛伐克低地平原面", lon: 21.9194, lat: 48.6000, elevation: 105, kind: "delta" },
+  bbox: [21.25, 48.25, 22.35, 48.95],
+  axis: [[21.35, 48.60], [22.30, 48.55]],
+  viewScale: 1.4,
+  label: { lon: 21.85, lat: 48.98, rotation: 0 },
+  source: "东斯洛伐克低地（Východoslovenská nížina）：斯洛伐克东南部的一片低地，同属潘诺尼亚盆地北缘，由博德罗格河、拉托里察河、翁河与霍尔纳德河下游的冲积物填充；斯洛伐克全境最低点（约 94 米）就在这片低地东南角的博德罗格河畔（斯洛伐克旅游局与斯洛伐克地质调查所口径，WebSearch 2026-09）。⚠️ 最低点的具体海拔各源多写 94 米，正文按「约 94 米」并写明是全境最低点，未拿到大地测量机构的一手公告",
+};
+
+const VAH_RIVER: TerrainEntry = {
+  id: "vah-river",
+  nameZh: "瓦赫河",
+  nameEn: "Váh",
+  category: "river",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "特伦钦河段", lon: 18.0444, lat: 48.8945, elevation: 205, kind: "meander" },
+  bbox: [17.85, 47.72, 20.20, 49.22],
+  axis: [[19.90, 49.10], [18.12, 47.76]],
+  viewScale: 1.8,
+  label: { lon: 18.05, lat: 48.95, rotation: 0 },
+  source: "瓦赫河（Váh）：斯洛伐克最长的河流，长约 403 公里；有两条源流 —— 白瓦赫（Biely Váh）出自高塔特拉的克里万峰一带，黑瓦赫（Čierny Váh）出自低塔特拉的克拉洛瓦霍拉一带，两支汇合后向西南流，在科马尔诺注入多瑙河；沿河的地带称波瓦日耶（Považie），干流上建有梯级水库群（斯洛伐克旅游局与斯洛伐克水务机构口径，WebSearch 2026-09）",
+};
+
+const DANUBE_SLOVAKIA: TerrainEntry = {
+  id: "danube-slovakia",
+  nameZh: "多瑙河斯洛伐克段",
+  nameEn: "Danube in Slovakia",
+  category: "river",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "德文门", lon: 16.9772, lat: 48.1739, elevation: 140, kind: "gorge" },
+  bbox: [16.84, 47.70, 18.95, 48.30],
+  axis: [[16.90, 48.16], [18.90, 47.75]],
+  viewScale: 1.7,
+  label: { lon: 17.60, lat: 48.32, rotation: 0 },
+  source: "多瑙河斯洛伐克段：多瑙河在布拉迪斯拉发上游穿过德文门（Devínska brána）这道天然门户进入斯洛伐克，随即坡度骤减、河道分汊，在多瑙低地上摊开成汊流与河间岛地带；德文门在构造上是阿尔卑斯山系与喀尔巴阡山系之间的缺口（斯洛伐克旅游局与斯洛伐克地质调查所口径，WebSearch 2026-09）。⚠️ 本库另有 `danube-gorge`（匈牙利维谢格拉德一带）、`danube-river-at`（奥地利段）、`danube-hungary` 三条同一条河的不同河段条目，写作时各自只讲本段",
+};
+
+const ZITNY_OSTROV: TerrainEntry = {
+  id: "zitny-ostrov",
+  nameZh: "黑麦岛",
+  nameEn: "Žitný ostrov",
+  category: "island",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "顿瑙斯卡斯特雷达一带", lon: 17.6194, lat: 47.9928, elevation: 115, kind: "island" },
+  bbox: [17.08, 47.72, 18.35, 48.22],
+  axis: [[17.12, 48.15], [18.30, 47.76]],
+  viewScale: 1.45,
+  label: { lon: 17.70, lat: 48.24, rotation: 0 },
+  source: "黑麦岛（Žitný ostrov）：多瑙河与其分流小多瑙河（Malý Dunaj）、瓦赫河之间围出的一片河间岛地，面积约 1900 平方公里、长约 84 公里、宽 15–30 公里，自布拉迪斯拉发延伸到科马尔诺，是欧洲面积最大的河流岛；岛下的砾石层是中欧重要的地下水储集体（斯洛伐克旅游局与斯洛伐克水务机构口径，WebSearch 2026-09）。⚠️ 本库另有匈牙利侧的 `szigetkoz` 条目，两者是多瑙河同一段两侧的河间岛地，跨境按中性表述",
+};
+
+const STRBSKE_PLESO: TerrainEntry = {
+  id: "strbske-pleso",
+  nameZh: "什特尔布斯凯湖",
+  nameEn: "Štrbské pleso",
+  category: "lake",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "什特尔布斯凯湖", lon: 20.0611, lat: 49.1206, elevation: 1346, kind: "lake" },
+  bbox: [20.02, 49.10, 20.10, 49.14],
+  axis: [[20.04, 49.12], [20.08, 49.12]],
+  viewScale: 1.0,
+  label: { lon: 20.06, lat: 49.15, rotation: 0 },
+  source: "什特尔布斯凯湖（Štrbské pleso）：高塔特拉南坡的一处冰蚀湖，湖面海拔 1346 米、面积约 19.8 公顷、最深约 20 米，是高塔特拉斯洛伐克一侧面积第二大的冰蚀湖；湖畔的同名聚落是塔特拉地区主要的度假与冬季运动中心之一（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const MORSKE_OKO: TerrainEntry = {
+  id: "morske-oko",
+  nameZh: "莫尔斯凯奥科湖",
+  nameEn: "Morské oko",
+  category: "lake",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "莫尔斯凯奥科湖", lon: 22.2306, lat: 48.8386, elevation: 618, kind: "lake" },
+  bbox: [22.19, 48.82, 22.27, 48.86],
+  axis: [[22.21, 48.84], [22.25, 48.84]],
+  viewScale: 1.0,
+  label: { lon: 22.23, lat: 48.87, rotation: 0 },
+  source: "莫尔斯凯奥科湖（Morské oko）：维霍尔拉特山中一处山崩堰塞湖，湖面海拔 618 米、面积约 13.8 公顷（原约 7 公顷，水位抬高约 5 米后达今值）、最长约 750 米、最宽约 312 米、最深约 25 米；它是斯洛伐克面积最大的非喀斯特成因天然湖、按面积为全国第三大天然湖；1984 年设为保护区，现为国家自然保护区（斯洛伐克旅游局与科希策地区旅游局口径，WebSearch 2026-09）",
+};
 
 
 // ============================================================
@@ -16500,6 +16604,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   SLOVENSKY_KRAS, SLOVENSKY_RAJ, MURANSKA_PLANINA,
   PRIELOM_HORNADU, ZADIELSKA_TIESNAVA, JANOSIKOVE_DIERY, PRIELOM_DUNAJCA,
   SULOVSKE_SKALY, LIPTOVSKA_KOTLINA, ZAHORSKA_NIZINA,
+  PODUNAJSKA_NIZINA, VYCHODOSLOVENSKA_NIZINA,
+  VAH_RIVER, DANUBE_SLOVAKIA, ZITNY_OSTROV,
+  STRBSKE_PLESO, MORSKE_OKO,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,
