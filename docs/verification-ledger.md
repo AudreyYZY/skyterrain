@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 4b1abeb
+lastVerifiedCommit: 708f366
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: 4b1abeb
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | 日本 22 座城市条目的联网核实：建制/名次/时点/机场状态/会变的量（R36b） | 13 | 0 / 11 / 2 | 当场修 11 条；新开 issue 2、关闭 0 |
 | 2026-09-12 | 日本批次的离线前置扫描（地形 26 + 城市 22）＋ 合肥「全市 775 万」溯源到英文维基 metro 估算（R36a） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 韩国的排他性断言、认定年份与条目内矛盾（2026-09-12 韩国城市攻略 11 组（R35a）） | 11 | 4 / 7 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 距离短于直线（2026-09-12 机场距离存量清理 7 处（R34f）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |

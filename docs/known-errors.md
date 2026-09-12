@@ -3725,3 +3725,21 @@ LO39xx，形状一模一样）时，prompt 里明确写了这个怀疑，让子�
 这些正是 `/verify-content` 流程存在的理由。见
 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)
 与核实台账 [`verification-ledger.md`](verification-ledger.md)。
+
+### 「口径词离数字太远，防线就看不见它」（2026-09-12，C6i）
+
+东京条目 identity 写「东京圈——东京都与神奈川、埼玉、千叶三县合计——2025 年国势调查速报人口约
+3699 万」，howItWorks 写「23 个特别区……2025 年国势调查速报人口约 995.3 万」。两个数都对、口径也
+都写了，`C6i` 却把它们当成两个互相打架的「全市人口」报了出来 —— 因为 `nearSub` 只看**数字所在的
+那个小句**，而「东京圈」「23 个特别区」都被破折号或逗号隔在了另一个小句里。
+
+两件事一起做才对：
+- **规则**：`CROSS_SUB_ZH` 补上「都市圈 / 都市圏 / 大都市圏 / 东京圈 / 特别区 / 区部」，
+  `CROSS_SUB_EN` 补上 `special wards`。**两向回测**：把 `83c405e^`（C6i 还有 24 处的那版语料）
+  拿回来跑，新旧规则输出**逐字节相同** —— 补词没有压掉任何一条历史命中。
+  刻意**没有**加 `wards` 与 `Greater`：「a designated city of ten wards, with about 1.96 million
+  residents」这种句子里 `wards` 和全市人口在同一个小句，加了会把日韩每一个政令指定都市的
+  全市数都豁免掉 —— 补词的代价要按「它会豁免掉什么」算，不是按「它能消掉几个告警」算。
+- **正文**：把口径搬到数字旁边（「2025 年国势调查速报的**区部**人口约 995.3 万」／
+  `9.95 million residents **in the special wards** at the 2025 census`）。这本来就是
+  写作规则 ①-a 要求的写法 —— 让脚本看得见，和让读者看得见，是同一件事。
