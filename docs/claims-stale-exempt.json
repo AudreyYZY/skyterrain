@@ -415,6 +415,36 @@
       "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-04"
+    },
+    {
+      "key": "travel/jilin-city/howItWorks",
+      "reason": "吉林市 2025 年公报（2026-05-19）**只公布户籍人口 384.2 万**，吉林省统计局截至 2026-09 也未发布 2025 年末分市州常住人口表 —— 2025 年是全国 1% 人口抽样调查年，多市因此只发户籍数。2024 年末的 349.48 万（省统计局，1 级）是最新可用的常住人口。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/leshan/howItWorks",
+      "reason": "乐山市 2025 年公报（2026-04-07 发布）通篇只有「年末全市户籍人口 341.2 万人」，没有常住人口 —— 与吉林市同因（1% 抽样调查年）。2024 年末 315.1 万是最新可用。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-04"
+    },
+    {
+      "key": "travel/jinghong/identity",
+      "reason": "景洪市 2025 年末常住人口截至 2026-09 查不到可打开的一手或二手原文（聚合站有「69.47 万」的说法，追不到来源，未采信）。2024 年末 66.57 万是最新可核实的数。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/yanji/identity",
+      "reason": "延吉市 2025 年度统计公报截至 2026-09 尚未发布（往年落款 5 月）。2024 年末 67.08 万是最新可用。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/yanji/howItWorks",
+      "reason": "同 travel/yanji/identity：延吉市 2025 年度公报尚未发布。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-06"
     }
   ]
 }
