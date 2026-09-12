@@ -15496,6 +15496,110 @@ const SLOVENSKE_RUDOHORIE: TerrainEntry = {
   label: { lon: 20.20, lat: 49.00, rotation: 0 },
   source: "斯洛伐克矿山（Slovenské rudohorie）：斯洛伐克南部一片东西向铺开的老山地，不是一条山脊而是一组山群与喀斯特高原的集合（斯托利采山、沃洛夫采山、雷武茨卡高地、韦波尔山、切尔纳霍拉，以及斯洛伐克喀斯特与斯皮什—盖梅尔喀斯特），最高点斯托利察峰（Stolica）海拔 1476 米；名字来自其长期的金属矿开采史（斯洛伐克地质调查所与斯洛伐克旅游局口径，WebSearch 2026-09）",
 };
+const STIAVNICKE_VRCHY: TerrainEntry = {
+  id: "stiavnicke-vrchy",
+  nameZh: "什佳夫尼察山",
+  nameEn: "Štiavnica Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "西特诺峰", lon: 18.8783, lat: 48.3958, elevation: 1009, kind: "peak" },
+  bbox: [18.50, 48.22, 19.12, 48.62],
+  axis: [[18.58, 48.30], [19.05, 48.55]],
+  viewScale: 1.3,
+  label: { lon: 18.88, lat: 48.64, rotation: 0 },
+  source: "什佳夫尼察山（Štiavnické vrchy）：斯洛伐克面积最大的火山山地，是一座中新世层状火山被侵蚀后剩下的残体，构造上由一个约 18×22 公里的大破火山口、大范围的侵入岩体与一块回升的地垒组成；最高点西特诺峰（Sitno）海拔 1009 米（斯洛伐克旅游局与班斯卡什佳夫尼察地质公园口径，WebSearch 2026-09）",
+};
+
+const POLANA: TerrainEntry = {
+  id: "polana",
+  nameZh: "波利亚纳山",
+  nameEn: "Poľana",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "波利亚纳峰", lon: 19.4894, lat: 48.6392, elevation: 1458, kind: "peak" },
+  bbox: [19.28, 48.53, 19.74, 48.77],
+  axis: [[19.32, 48.64], [19.70, 48.64]],
+  viewScale: 1.15,
+  label: { lon: 19.49, lat: 48.79, rotation: 0 },
+  source: "波利亚纳山（Poľana）：一座死火山，最高点海拔 1458 米；山体形成于约 1300 万至 1500 万年前，长期火山活动与其后的侵蚀在山体中央留下一个直径约 6 公里的破火山口，常被称为欧洲规模最大的死火山之一；1981 年设为保护景观区，1990 年列入 UNESCO 生物圈保护区（斯洛伐克旅游局与斯洛伐克自然保护局口径，WebSearch 2026-09）",
+};
+
+const VIHORLAT: TerrainEntry = {
+  id: "vihorlat",
+  nameZh: "维霍尔拉特山",
+  nameEn: "Vihorlat Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "维霍尔拉特峰", lon: 22.1583, lat: 48.9236, elevation: 1076, kind: "peak" },
+  bbox: [21.85, 48.78, 22.48, 49.02],
+  axis: [[21.90, 48.88], [22.44, 48.90]],
+  viewScale: 1.25,
+  label: { lon: 22.16, lat: 49.04, rotation: 0 },
+  source: "维霍尔拉特山（Vihorlatské vrchy）：斯洛伐克东部一片火山山地，最高点维霍尔拉特峰海拔 1076 米；山体森林覆盖率在斯洛伐克各山地中属最高的一档，其中的原始山毛榉林作为「喀尔巴阡山脉与欧洲其他地区的原始与古老山毛榉林」跨国系列世界遗产的组成部分列入名录；山体内的莫尔斯凯奥科湖是山崩堰塞成因（斯洛伐克旅游局与 UNESCO 口径，WebSearch 2026-09）",
+};
+
+const POLONINY: TerrainEntry = {
+  id: "poloniny",
+  nameZh: "波洛尼尼山地",
+  nameEn: "Poloniny",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "克雷梅涅茨一带", lon: 22.5486, lat: 49.0872, elevation: 1208, kind: "peak" },
+  bbox: [22.15, 48.92, 22.62, 49.14],
+  axis: [[22.20, 48.98], [22.58, 49.10]],
+  viewScale: 1.2,
+  label: { lon: 22.40, lat: 49.16, rotation: 0 },
+  source: "波洛尼尼山地（Poloniny，布科夫斯凯山 Bukovské vrchy）：斯洛伐克国土最东北端的一片砂岩—页岩山地，1997-10-01 设为国家公园，是斯洛伐克最东的国家公园；园区最高点海拔约 1208 米，位于国土东北端的国界交汇处，紧邻海拔 1221 米的克雷梅涅茨（Kremenec）峰顶；园内的斯图日察（Stužica）原始林是跨国系列世界遗产「喀尔巴阡山脉与欧洲其他地区的原始与古老山毛榉林」的组成部分（斯洛伐克旅游局与 UNESCO 口径，WebSearch 2026-09）。⚠️ 零争议：该园三面临国界，正文与本条一律只写「国土东北端」「国界交汇处」，**不写任何邻国国名**",
+};
+
+const SLOVENSKY_KRAS: TerrainEntry = {
+  id: "slovensky-kras",
+  nameZh: "斯洛伐克喀斯特",
+  nameEn: "Slovak Karst",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "锡利察高原", lon: 20.5167, lat: 48.5583, elevation: 700, kind: "escarpment" },
+  bbox: [20.25, 48.42, 20.98, 48.74],
+  axis: [[20.30, 48.58], [20.94, 48.56]],
+  viewScale: 1.35,
+  label: { lon: 20.55, lat: 48.76, rotation: 0 },
+  source: "斯洛伐克喀斯特（Slovenský kras）：斯洛伐克南部一片由中生代石灰岩组成的台地状喀斯特区，面积约 440 平方公里，是中欧面积最大的喀斯特区，地下形态密度很高（各家统计在 1000–1100 个洞穴与竖井之间）；其洞穴群与相邻的阿格泰莱克喀斯特一并列入 UNESCO 世界遗产；2002-03-01 设为国家公园（斯洛伐克旅游局、斯洛伐克喀斯特国家公园与 UNESCO 口径，WebSearch 2026-09）。⚠️ 本库另有匈牙利侧的 `aggtelek-karst` 条目，两侧是同一片喀斯特被国界分开的两半，跨境一律按中性表述",
+};
+
+const SLOVENSKY_RAJ: TerrainEntry = {
+  id: "slovensky-raj",
+  nameZh: "斯洛伐克天堂",
+  nameEn: "Slovak Paradise",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "多布希纳冰洞一带", lon: 20.3025, lat: 48.8836, elevation: 969, kind: "gorge" },
+  bbox: [20.15, 48.83, 20.58, 49.00],
+  axis: [[20.18, 48.90], [20.54, 48.90]],
+  viewScale: 1.2,
+  label: { lon: 20.35, lat: 49.02, rotation: 0 },
+  source: "斯洛伐克天堂（Slovenský raj）：斯洛伐克东部一片被深谷切碎的喀斯特高原，国家公园面积约 197.6 平方公里，1988-01-18 设立；地表是台地状的高原面，边缘被一系列隘谷、跌水与瀑布切开，其中霍尔纳德河峡谷长约 11.7 公里，是园内最长的一条；园内的多布希纳冰洞 2000 年作为斯洛伐克与阿格泰莱克喀斯特洞穴世界遗产的扩展项列入（斯洛伐克天堂国家公园与 UNESCO 口径，WebSearch 2026-09）",
+};
+
+const MURANSKA_PLANINA: TerrainEntry = {
+  id: "muranska-planina",
+  nameZh: "穆兰高原",
+  nameEn: "Muránska planina",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "克拉克峰", lon: 20.0028, lat: 48.7625, elevation: 1409, kind: "peak" },
+  bbox: [19.83, 48.66, 20.32, 48.90],
+  axis: [[19.88, 48.76], [20.28, 48.78]],
+  viewScale: 1.2,
+  label: { lon: 20.05, lat: 48.92, rotation: 0 },
+  source: "穆兰高原（Muránska planina）：斯洛伐克中部一片台地状喀斯特高原，属斯皮什—盖梅尔喀斯特，位于布雷兹诺、切尔韦纳斯卡拉、穆兰与蒂索韦茨之间；最高点克拉克峰（Kľak）海拔 1409 米；1997 年 10 月设为国家公园、1998-05-27 开园（斯洛伐克旅游局与穆兰高原国家公园口径，WebSearch 2026-09）",
+};
 
 
 // ============================================================
@@ -16288,6 +16392,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 斯洛伐克 =====
   HIGH_TATRAS, WESTERN_TATRAS, LOW_TATRAS, MALA_FATRA, VELKA_FATRA,
   MALE_KARPATY, SLOVENSKE_RUDOHORIE,
+  STIAVNICKE_VRCHY, POLANA, VIHORLAT, POLONINY,
+  SLOVENSKY_KRAS, SLOVENSKY_RAJ, MURANSKA_PLANINA,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,

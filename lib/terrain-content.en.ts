@@ -17607,6 +17607,111 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Metal mining here is long recorded and the mining towns along the belt form part of central European mining history; since mining declined, forest and karst landforms have become the region's principal natural assets.",
   },
+  "stiavnicke-vrchy": {
+    // 全六段 sources: 同中文侧。Sitno 1009 m；18×22 km caldera + intrusive complex + resurgent horst；Banská Štiavnica 为 UNESCO 世界遗产。2026-09-13 首写。
+    seeing:
+      "The Štiavnica Mountains, in central Slovakia, are the country's largest volcanic upland. What stands there today is not a cone but the eroded remnant of a Miocene stratovolcano: the summit, Sitno, reaches 1,009 m and is simply the hardest surviving piece of that remnant.",
+    formation:
+      "Structurally the volcano has three parts: a large caldera roughly 18 by 22 km across, an extensive intrusive complex, and a resurgent horst pushed back up inside the caldera. Once eruptions ceased, the loose pyroclastic material went first, leaving the more resistant lava flows and intrusions, so today's high points generally correspond to the volcano's internal conduits and stocks rather than to its original summit.",
+    observation:
+      "From the air the range is a roughly circular forested upland with several arcuate scarps around its margin — the surviving trace of the caldera rim. Scattered through it are a string of artificial lakes, reservoirs built in the mining era to drive water-powered machinery, which read from height as a set of small water surfaces linked by channels.",
+    distinguish:
+      "The Štiavnica Mountains and Poľana are both volcanic uplands of central Slovakia; the difference is preservation. Poľana's caldera is only about 6 km across but its rim is intact and reads instantly as a ring; the Štiavnica caldera is far larger and far more broken, and the ring has to be reassembled from arcuate scarps around the edge.",
+    concept:
+      "This is a good place to grasp that a volcano's landform outlives its activity by much less than one might think. Once eruptions stop, the cone is the first thing to go; what survives longest is the plumbing — the conduits and intrusions underground — because that rock cooled slowly, crystallised coarsely and resists erosion better. The harder the high point, the deeper it originally lay.",
+    history:
+      "Banská Štiavnica, within the range, grew from the Middle Ages on precious-metal mining, and the reservoirs and channels built to supply water power were major engineering works of their time; the historic town and the technical monuments around it are inscribed on the UNESCO World Heritage List.",
+  },
+  polana: {
+    // 全六段 sources: 同中文侧。最高点 1458 m；约 13–15 Ma；中央破火山口直径约 6 km；「欧洲最大死火山之一」保留 one of；1981 PLA、1990 UNESCO 生物圈保护区。2026-09-13 首写。
+    seeing:
+      "Poľana is an extinct volcano whose highest point reaches 1,458 m. What repays attention is not the height but the shape: a caldera about 6 km across occupies the centre of the massif, its ring of rim ridges still complete, so an approach from any direction has to cross that ring first. It is commonly listed among the largest extinct volcanoes in Europe.",
+    formation:
+      "The massif was built by volcanic activity roughly 13 to 15 million years ago. Prolonged eruption raised a stratovolcanic cone whose centre collapsed late in its history to form the caldera; later erosion lowered the rim ridges and let a river cut a notch through the ring, which is how water now drains out of the caldera floor.",
+    observation:
+      "From the air Poľana is a nearly complete forested ring enclosing a floor a few hundred metres below the rim, with one conspicuous breach on one side — the drainage valley. That circular outline stands out sharply among the gently rolling uplands of central Slovakia and is one of the most immediately recognisable landforms in the country from altitude.",
+    distinguish:
+      "Poľana and the Štiavnica Mountains are both remnants of Miocene volcanoes, but Poľana keeps a complete caldera ring while the Štiavnica caldera is much larger and survives only as scattered arcuate scarps. Set against a folded, uplifted crest like the Low Tatras, Poľana's circular plan says at once that its origin was collapse rather than compression.",
+    concept:
+      "A caldera is not a crater. A crater is the opening at the top of a vent, typically a few hundred metres across; a caldera is a depression formed when the roof above an emptied magma chamber collapses as a whole, and can be kilometres or tens of kilometres wide. Scale and rim form tell them apart — a collapse margin is a ring of cliffs, an eruptive rim is a slope of accumulated ejecta.",
+    history:
+      "Grassland inside the ring and at the foot of the massif was long used for grazing, and the local timber buildings and shepherding traditions are widely recorded. The area became a protected landscape area in 1981 and was listed as a UNESCO Biosphere Reserve in 1990.",
+  },
+  vihorlat: {
+    // 全六段 sources: 同中文侧。最高点 1076 m；原始山毛榉林为跨国系列世界遗产组成部分；Morské oko 为山崩堰塞湖。2026-09-13 首写。
+    seeing:
+      "The Vihorlat Mountains in eastern Slovakia are a volcanic upland whose highest point, Vihorlat, reaches 1,076 m. They rise abruptly out of the East Slovak Lowland with plains on every side, so although the summit is only just above a thousand metres, the relief looks substantial from below.",
+    formation:
+      "The massif is built of lava and pyroclastic material erupted in the late Miocene, later eroded down from its original cones to leave a number of rounded high points. Blocks have crept downslope over long periods, and one larger landslide dammed a valley, ponding the water that became Morské oko.",
+    observation:
+      "From the air Vihorlat is a dark green island of forest on the plain, its boundary with the surrounding farmland almost a hard edge. There is virtually no settlement inside the massif, only small villages in a few valleys; Morské oko appears as a small, darker patch of water in the forest.",
+    distinguish:
+      "Vihorlat and Poľana are both remnants of extinct volcanoes, but Poľana is defined by its complete caldera ring and Vihorlat has none. Compared with Poloniny to the north-east, that range is folded sandstone and shale — a wholly different lithology, and its form is a set of parallel long ridges.",
+    concept:
+      "This is a good place to understand a landslide-dammed lake: its basin was not excavated but created when an existing valley was blocked by a slide mass. Such lakes are usually shallow, take the shape of the former valley, and have limited lifespans — once the dam is cut through by downstream erosion, the water drains away.",
+    history:
+      "The primeval beech stands here are inscribed as part of the transnational serial World Heritage property 'Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe', and forestry and grazing traditions in the foothill villages are long recorded.",
+  },
+  poloniny: {
+    // 全六段 sources: 同中文侧。1997-10-01 设园；园区最高点约 1208 m，在国土东北端国界交汇处，紧邻 1221 m 的 Kremenec 峰顶；Stužica 原始林为世界遗产组成部分。⚠️ 全篇不写任何邻国国名。2026-09-13 首写。
+    seeing:
+      "Poloniny lies at the far north-eastern end of Slovak territory, a folded upland of sandstone and shale. The park's highest ground reaches about 1,208 m at the meeting point of frontiers on that north-eastern tip, immediately below the 1,221 m summit of Kremenec. The name comes from the local term for the open meadows found on these summits.",
+    formation:
+      "The massif is built of thick alternating sandstone and shale, a sequence folded and thrust during the orogeny into a set of roughly parallel long ridges. Sandstone is hard and shale soft, so differential erosion has shaped the ridges into parallel rises with valleys following the softer beds — which is why the ridges and valleys read on a map as almost evenly spaced stripes.",
+    observation:
+      "From the air Poloniny is a near-continuous forest with its ridges aligned north-west to south-east and occasional patches of open meadow along the crests. Settlement is very sparse, and this is one of the least light-polluted areas in central Europe, which is most obvious from the window of a night flight.",
+    distinguish:
+      "Poloniny and Vihorlat are both in eastern Slovakia but differ entirely in origin: Vihorlat is a rounded, isolated volcanic remnant, Poloniny a folded sandstone-and-shale upland of parallel ridges. Against the Low Tatras, it has no crystalline core and no genuinely alpine meadow belt above the treeline — the meadows on its crests owe much to long-standing grazing and to soil conditions.",
+    concept:
+      "Here one can see clearly how differential erosion sets the trend and spacing of ridges: where a sequence alternates hard and soft beds and has been folded into a series of anticlines and synclines, ridges grow on the hard beds and valleys settle on the soft ones, so the grain of the terrain records the strike of the strata rather than the direction of flow.",
+    history:
+      "The open summit meadows were long used as summer pasture, and the timber church architecture of the foothill villages is widely recorded. The area was declared a national park in October 1997 and is Slovakia's easternmost; the Stužica primeval forest within it forms part of the transnational serial World Heritage property 'Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe'.",
+  },
+  "slovensky-kras": {
+    // 全六段 sources: 同中文侧。约 440 km²，中欧面积最大喀斯特区；洞穴与竖井 1000–1100（写区间）；与阿格泰莱克喀斯特洞穴一并列入 UNESCO；2002-03-01 设园。2026-09-13 首写。
+    seeing:
+      "The Slovak Karst, in southern Slovakia, is a tabular karst region built of Mesozoic limestone covering about 440 km² — the largest karst area in central Europe. Its surface is not a set of ridges but a group of plateaus with flat tops and abrupt edges, separated from one another by deep valleys.",
+    formation:
+      "The limestone was laid down in Mesozoic seas, uplifted, and has been dissolving ever since. Surface water sinks quickly along joints, so the plateau tops carry few rivers and instead show sinkholes, dry valleys and limestone pavement, while underground a very dense system of caves and shafts has developed — counts range from about a thousand to eleven hundred depending on the source.",
+    observation:
+      "From the air the Slovak Karst is a few flat-topped plateaus divided by deep valleys, the tops a mixture of grassland and open woodland with a rim of pale rock walls. Conspicuous among them are the narrow valleys cut into the plateau edges; Zádielska tiesňava, seen from height, is no more than a thin slot at the margin of a plateau.",
+    distinguish:
+      "The Slovak Karst and Slovak Paradise are both karst plateaus; the difference is dissection. Slovak Paradise is cut to pieces by ravines and waterfalls and has much greater relief; the Slovak Karst keeps broader, more intact plateau surfaces. Across the frontier, the Aggtelek Karst is the other half of the same karst region, continuous with it in landform terms.",
+    concept:
+      "Plateau karst — planina in Slovak — and the more familiar tower karst are the same solution process under different conditions. Where limestone beds lie near horizontal, uplift is moderate and rainfall not extreme, solution works mainly downward, the surface stays a flat tableland and everything spectacular happens underground. Where the climate is hot and wet and uplift stronger, the surface itself is dissolved into towers and hollows.",
+    history:
+      "Caves here were surveyed from the nineteenth century onward and some were opened to visitors; the cave system is inscribed on the UNESCO World Heritage List together with the caves of the Aggtelek Karst across the frontier. The area was declared a national park in March 2002.",
+  },
+  "slovensky-raj": {
+    // 全六段 sources: 同中文侧。国家公园约 197.6 km²，1988-01-18 设立；Prielom Hornádu 约 11.7 km 为园内最长；Dobšinská ľadová jaskyňa 2000 年作为世界遗产扩展项列入；「欧洲较大冰洞之一」只写 one of。2026-09-13 首写。
+    seeing:
+      "Slovak Paradise, in eastern Slovakia, is a karst plateau cut to pieces by deep valleys; the national park covers about 197.6 km². Its defining quality is that three kinds of terrain occur in the same upland: flat plateau surfaces, ravines and waterfalls cut into them, and caves beneath.",
+    formation:
+      "Once the limestone and dolomite tableland was uplifted, streams incised along its joints. Because limestone both dissolves and stands in vertical walls, what the streams cut was not a broad valley but a succession of narrow gates and waterfalls; some reaches are only metres wide, and the trails through them depend on ladders and walkways bolted to the rock.",
+    observation:
+      "From the air Slovak Paradise is a forested upland cut by a dense net of valleys, the lines thin and deep, visible from height only as dark seams in the forest. Along the northern margin, the Hornád gorge is the longest in the park at about 11.7 km, its channel swinging repeatedly across the valley floor.",
+    distinguish:
+      "Slovak Paradise and the Slovak Karst are both karst areas within the Slovak Ore Mountains; the difference is dissection — denser valley networks, greater drops and more waterfalls here, more intact plateau surfaces there. The ravines of Malá Fatra form the same way, but the valley network here is an order of magnitude larger.",
+    concept:
+      "An ice cave is not simply a cave that happens to hold ice: it needs a descending entrance so that cold winter air sinks in and stays, while summer air, being less dense, cannot get in — a structure known as a cold-air trap. Dobšinská ľadová jaskyňa is one of the larger ice caves in Europe, and its ice body accumulated in exactly this way.",
+    history:
+      "Caves in the park were surveyed from the nineteenth century, and Dobšinská ľadová jaskyňa has long been open to visitors; in 2000 it was added as an extension to the World Heritage property covering the caves of the Slovak and Aggtelek Karst. The national park was declared in January 1988.",
+  },
+  "muranska-planina": {
+    // 全六段 sources: 同中文侧。属 Spišsko-gemerský kras；最高点 Kľak 1409 m；1997 年 10 月设园、1998-05-27 开园。园区面积各源不一（有把公顷写成平方公里的错值），不写面积。2026-09-13 首写。
+    seeing:
+      "Muránska planina, in central Slovakia, is a tabular karst plateau belonging to the Spiš–Gemer Karst, set between Brezno, Červená Skala, Muráň and Tisovec. Its highest point, Kľak, reaches 1,409 m, well above the karst tablelands to its south.",
+    formation:
+      "The plateau is built of Mesozoic limestone and dolomite, uplifted and long subject to solution, which has produced sinkholes, dry valleys and caves; rivers have cut its margins into cliffs, and isolated rock towers stand on several of the clifftops. Because the plateau surface lies higher than the karst tablelands to the south, its solution features are overprinted by the effects of frequent freeze–thaw in a colder climate.",
+    observation:
+      "From the air Muránska planina is a forested tableland of gentle summit relief ringed by cliffs. The easiest thing to pick out is an isolated limestone tower at the plateau edge, with the ruins of Muráň Castle standing on top of it. There is almost no river to be seen on the plateau surface.",
+    distinguish:
+      "Muránska planina and the Slovak Karst are both tabular karst, differing in altitude and climatic belt: Muránska planina stands several hundred metres higher, its surface close to the upper limit of forest, with freeze–thaw superimposed on solution; the Slovak Karst is lower, warmer and more open. Compared with Slovak Paradise, the valley network here is far sparser.",
+    concept:
+      "The same rock yields different landforms at different altitudes: high-lying limestone is not only dissolved by water but also subjected to repeated freezing and thawing, which breaks the rock apart along joints, so solution features are often buried under rockfall debris and hard to read. Deciding whether a landscape is karst therefore cannot rest on surface forms alone — hydrology is the better clue, and the absence of surface rivers is the one to look for.",
+    history:
+      "Muráň Castle on its rock tower at the plateau edge has long been the local landmark, and forestry and grazing on the plateau are long recorded. The area was declared a national park in October 1997 and formally opened in May the following year.",
+  },
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
     seeing:
