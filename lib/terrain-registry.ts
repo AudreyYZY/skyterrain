@@ -15382,6 +15382,123 @@ const SZIGETKOZ: TerrainEntry = {
 
 
 // ============================================================
+// 欧洲 / 斯洛伐克（东欧次区域第三国，波兰、捷克之后）
+// 零争议红线：全境山地几乎都沿国界分布，跨境峰顶一律按「斯洛伐克与波兰/奥地利交界」这类
+// 中性表述，不涉主权、不描述边界线；东北角（波洛尼尼—布科夫斯凯山）周边邻国情况敏感，
+// 比照克罗地亚的更严做法 —— **一个邻国名都不提**，只写「斯洛伐克国土东北端」。
+// `history` 段只写地质史、广泛记载的前现代史与 UNESCO 认定，二十世纪的政治/领土/民族议题一律不碰。
+// 结晶岩核心高山 / 火山山地 / 石灰岩中山→`mountain_system`、喀斯特高原→`plateau`、
+// 深切喀斯特峡谷→`gorge`、砾岩岩城→`hills`、冲积低地→`plain`、山间构造盆地→`basin`、
+// 干流河段→`river`、冰蚀湖与山崩堰塞湖→`lake`、河间岛地→`island`。
+// ============================================================
+
+const HIGH_TATRAS: TerrainEntry = {
+  id: "high-tatras",
+  nameZh: "高塔特拉山",
+  nameEn: "High Tatras",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "格尔拉赫峰", lon: 20.1347, lat: 49.1642, elevation: 2655, kind: "peak" },
+  bbox: [19.95, 49.10, 20.35, 49.28],
+  axis: [[19.98, 49.16], [20.32, 49.20]],
+  viewScale: 1.15,
+  label: { lon: 20.14, lat: 49.30, rotation: 0 },
+  source: "高塔特拉山（Vysoké Tatry）：塔特拉山中海拔最高、冰川地貌最典型的一段，主峰格尔拉赫峰（Gerlachovský štít）海拔约 2655 米（部分资料作 2654.4 米），是斯洛伐克全境与整条喀尔巴阡山脉的最高点，完全在斯洛伐克境内；山体是花岗岩质的结晶岩核心，冰斗、悬谷与冰蚀湖（pleso）成群（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）。⚠️ 本库另有波兰侧的 `tatra-mountains` 条目（锚点为波兰最高点雷西峰西北峰 2499 米），两条讲的是同一条山脉的两个不同对象，写作时不要互相覆盖",
+};
+
+const WESTERN_TATRAS: TerrainEntry = {
+  id: "western-tatras",
+  nameZh: "西塔特拉山",
+  nameEn: "Western Tatras",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "比斯特拉峰", lon: 19.7419, lat: 49.1889, elevation: 2248, kind: "peak" },
+  bbox: [19.55, 49.10, 19.98, 49.30],
+  axis: [[19.58, 49.18], [19.95, 49.22]],
+  viewScale: 1.15,
+  label: { lon: 19.74, lat: 49.32, rotation: 0 },
+  source: "西塔特拉山（Západné Tatry）：塔特拉山西段，最高点比斯特拉峰（Bystrá）海拔 2248 米；与高塔特拉的差别在于岩性不是单一花岗岩 —— 结晶岩核心之上还盖着石灰岩、白云岩的推覆岩片，因此山形更圆缓、并发育少量喀斯特，山脊沿斯洛伐克与波兰交界一带延伸（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const LOW_TATRAS: TerrainEntry = {
+  id: "low-tatras",
+  nameZh: "低塔特拉山",
+  nameEn: "Low Tatras",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "敦比耶尔峰", lon: 19.6461, lat: 48.9394, elevation: 2043, kind: "peak" },
+  bbox: [19.15, 48.83, 20.30, 49.05],
+  axis: [[19.20, 48.92], [20.25, 48.92]],
+  viewScale: 1.35,
+  label: { lon: 19.70, lat: 49.07, rotation: 0 },
+  source: "低塔特拉山（Nízke Tatry）：瓦赫河与赫龙河河谷之间一条东西向的长山脊，最高点敦比耶尔峰（Ďumbier）海拔 2043 米；范围是斯洛伐克面积最大的国家公园，山脊线长而连续、两端分别以敦比耶尔与克拉洛瓦霍拉为高点，北坡发育著名的洞穴群（斯洛伐克旅游局与低塔特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const MALA_FATRA: TerrainEntry = {
+  id: "mala-fatra",
+  nameZh: "小法特拉山",
+  nameEn: "Malá Fatra",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "大克里万峰", lon: 19.0208, lat: 49.1758, elevation: 1709, kind: "peak" },
+  bbox: [18.80, 49.03, 19.28, 49.30],
+  axis: [[18.85, 49.10], [19.22, 49.25]],
+  viewScale: 1.2,
+  label: { lon: 19.02, lat: 49.32, rotation: 0 },
+  source: "小法特拉山（Malá Fatra）：斯洛伐克西北部一条石灰岩与白云岩为主的中山，最高点大克里万峰（Veľký Kriváň）海拔 1709 米；主脊两侧被支谷切得很碎，亚诺希克峡谷群就发育在其中一条支谷里（斯洛伐克旅游局与小法特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const VELKA_FATRA: TerrainEntry = {
+  id: "velka-fatra",
+  nameZh: "大法特拉山",
+  nameEn: "Veľká Fatra",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "奥斯特雷多克峰", lon: 19.0306, lat: 48.9481, elevation: 1592, kind: "peak" },
+  bbox: [18.82, 48.78, 19.30, 49.16],
+  axis: [[18.95, 48.82], [19.15, 49.12]],
+  viewScale: 1.25,
+  label: { lon: 19.03, lat: 49.18, rotation: 0 },
+  source: "大法特拉山（Veľká Fatra）：小法特拉以东、图里耶茨盆地另一侧的山地，最高点奥斯特雷多克峰（Ostredok）海拔 1592 米；名字里的「大」指面积，不指高度 —— 它比小法特拉宽得多，但最高点比小法特拉低（斯洛伐克旅游局与大法特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const MALE_KARPATY: TerrainEntry = {
+  id: "male-karpaty",
+  nameZh: "小喀尔巴阡山",
+  nameEn: "Little Carpathians",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "扎鲁比峰", lon: 17.4056, lat: 48.5033, elevation: 768, kind: "peak" },
+  bbox: [16.95, 48.12, 17.80, 48.72],
+  axis: [[17.05, 48.16], [17.72, 48.68]],
+  viewScale: 1.3,
+  label: { lon: 17.40, lat: 48.74, rotation: 0 },
+  source: "小喀尔巴阡山（Malé Karpaty）：喀尔巴阡山脉的西南端，从多瑙河边一路向东北延伸约 100 公里，高程从河边约 132 米升到最高点扎鲁比峰（Záruby）768 米；它是整条喀尔巴阡弧在西南方向的收尾，布拉迪斯拉发就坐落在它的南端（斯洛伐克旅游局与小喀尔巴阡保护景观区口径，WebSearch 2026-09）",
+};
+
+const SLOVENSKE_RUDOHORIE: TerrainEntry = {
+  id: "slovenske-rudohorie",
+  nameZh: "斯洛伐克矿山",
+  nameEn: "Slovak Ore Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "斯托利察峰", lon: 20.1875, lat: 48.7258, elevation: 1476, kind: "peak" },
+  bbox: [19.25, 48.45, 21.30, 48.98],
+  axis: [[19.30, 48.70], [21.25, 48.72]],
+  viewScale: 1.6,
+  label: { lon: 20.20, lat: 49.00, rotation: 0 },
+  source: "斯洛伐克矿山（Slovenské rudohorie）：斯洛伐克南部一片东西向铺开的老山地，不是一条山脊而是一组山群与喀斯特高原的集合（斯托利采山、沃洛夫采山、雷武茨卡高地、韦波尔山、切尔纳霍拉，以及斯洛伐克喀斯特与斯皮什—盖梅尔喀斯特），最高点斯托利察峰（Stolica）海拔 1476 米；名字来自其长期的金属矿开采史（斯洛伐克地质调查所与斯洛伐克旅游局口径，WebSearch 2026-09）",
+};
+
+
+// ============================================================
 // 南美洲 / 智利
 // ============================================================
 
@@ -16168,6 +16285,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   AGGTELEK_KARST, BALATON_WITNESS_HILLS, TIHANY_PENINSULA,
   LAKE_FERTO, LAKE_HEVIZ, LAKE_VELENCE,
   DANUBE_HUNGARY, SZIGETKOZ,
+  // ===== 欧洲 / 斯洛伐克 =====
+  HIGH_TATRAS, WESTERN_TATRAS, LOW_TATRAS, MALA_FATRA, VELKA_FATRA,
+  MALE_KARPATY, SLOVENSKE_RUDOHORIE,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,

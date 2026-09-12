@@ -17499,6 +17499,114 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Fishing, forestry and river transport were the livelihood here; twentieth-century water engineering altered how discharge is shared among the side channels, and measures to manage flow for the floodplain ecosystem have been in place since.",
   },
 
+  // ============================================================
+  // Europe / Slovakia
+  // ============================================================
+  "high-tatras": {
+    // 全六段 sources: 同中文侧。Gerlachovský štít 2655 m（部分资料 2654.4 m），斯洛伐克与喀尔巴阡最高点，完全在斯洛伐克境内。跨境只写 "along the Slovak–Polish frontier"，不涉主权。2026-09-13 首写。
+    seeing:
+      "The High Tatras are the highest and most completely glaciated section of the Tatra range, crowned by Gerlachovský štít at about 2,655 m — the highest point in Slovakia and in the whole Carpathian chain. The range is small, barely thirty-odd kilometres from end to end, yet it packs more than twenty rock summits above 2,500 m into that distance, and it is the only stretch of the Carpathians with a genuinely alpine character.",
+    formation:
+      "The core is granitic crystalline rock, ancient basement lifted by thrust tectonics. The shaping was done by ice: cirques bit into both flanks of the ridge one after another until the once-continuous crest was pared down to knife-edges and horns, while the valley floors kept a staircase of rock basins that filled with water to become a chain of glacial lakes — pleso in Slovak.",
+    observation:
+      "From the air the High Tatras read as a pale grey rock crest rising abruptly out of low ground on both sides, in sharp contrast with the forested hills around them. The giveaway is the row of round hollows along each flank of the ridge — cirques, many with a small dark lake on the floor. Resort settlements string along the valley mouths on the southern side, while the valleys on the northern side are longer and wider.",
+    distinguish:
+      "The High and Western Tatras adjoin one another in the same range; the difference is lithology. The High Tatras are almost entirely granite, with sheer walls and sharp edges; the Western Tatras carry thrust sheets of limestone and dolomite over their crystalline core, so their outlines are rounder and locally karstic. The contrast with the Low Tatras is even plainer: those are one long continuous meadow ridge with no cluster of rock peaks.",
+    concept:
+      "The High Tatras are often called the smallest alpine range in the world, meaning that a complete alpine vertical sequence is compressed into a very small footprint: spruce forest at the foot, dwarf pine and alpine meadow above the treeline, and bare rock and scree at the top. Whether an upland counts as alpine terrain depends not on absolute elevation but on whether it rises past the treeline and carries landforms left by glaciers.",
+    history:
+      "Mountain grazing and mining in this area are long recorded, and from the late nineteenth century, once the railway reached it, the range developed into one of central Europe's better-known climbing and health-resort districts, a tradition of mineral springs and climate cures that continues today. Tatra National Park, declared in 1949, was Slovakia's first.",
+  },
+  "western-tatras": {
+    // 全六段 sources: 同中文侧。Bystrá 2248 m 为最高点；结晶岩核心上覆石灰岩/白云岩推覆岩片。2026-09-13 首写。
+    seeing:
+      "The Western Tatras are the western section of the Tatra range, topped by Bystrá at 2,248 m. Compared with the High Tatras to the east, the crest is longer and rounder, the valleys wider, and forest reaches higher up the slopes, so the whole section looks markedly less severe.",
+    formation:
+      "They share the same crystalline core as the High Tatras, but here a cover of thrust limestone and dolomite is still preserved on top of it. The two rock types fail differently: the crystalline rock holds a rounded main crest, while the limestone belts develop dry valleys, caves and abrupt steps. Ice-age glaciers cut cirques into both flanks here too, only on a smaller scale.",
+    observation:
+      "From the air the Western Tatras are a broad meadow-covered crest sending out a row of roughly parallel long valleys to the south, streams and forest on their floors. The crest reads green-brown rather than the pale grey of the High Tatras, which is the quickest way to tell the two sections apart.",
+    distinguish:
+      "The Western and High Tatras are two stretches of one range: judge by colour and outline — sharp pale grey walls mean the High Tatras, broad green-brown ridges the Western. Against Malá Fatra the difference is height and glacial imprint: Malá Fatra tops out below 1,800 m and has no properly formed cirques.",
+    concept:
+      "The Western Tatras show how a difference in rock type inside one range is written directly into its shape. Given the same uplift and the same glaciers, granite yields sharp horns while limestone and dolomite yield rounded crests and solution features — the difference lies in the material, not the process.",
+    history:
+      "The alpine meadows here were long used as summer pasture, and the timber building traditions of the mountain villages are widely recorded; valleys on both the northern and southern sides developed into hiking and skiing destinations from the nineteenth century onward. This section also lies within Tatra National Park, declared in 1949.",
+  },
+  "low-tatras": {
+    // 全六段 sources: 同中文侧。Ďumbier 2043 m；位于瓦赫河与赫龙河河谷之间；按面积为斯洛伐克最大国家公园（1978 年设立）。洞穴数量与长度无一手来源，不写数字。2026-09-13 首写。
+    seeing:
+      "The Low Tatras run between the valleys of the Váh and the Hron as a single long east–west crest, highest at Ďumbier, 2,043 m. The 'low' in the name is relative to the Tatras proper; the range itself already rises past the treeline, and its crest carries open alpine meadow.",
+    formation:
+      "The range is built of a crystalline core with a sedimentary cover above it, lifted during the Carpathian orogeny. Ice-age glaciers left cirques only in the highest sections, so the rest of the crest keeps a rounded profile; on the limestone of the northern slope, groundwater has dissolved out sets of cave systems instead.",
+    observation:
+      "From the air the Low Tatras are an almost unbroken green ridge standing well above the river valleys on either side. Bare rock is scarce along the crest, replaced by continuous meadow and a trail that follows the ridgeline; each end carries a higher swell — Ďumbier at the western end, Kráľova hoľa at the eastern.",
+    distinguish:
+      "The difference from the High Tatras is shape rather than height alone: clusters of sharp rock peaks there, one continuous meadow ridge here. Against the Slovak Ore Mountains, those are not a single crest but a set of scattered massifs and karst plateaus, and much lower.",
+    concept:
+      "The Low Tatras are a good place to watch the treeline. Its height depends not only on latitude but on exposure, wind and snow cover: within the same upland, forest climbs higher on sheltered valley slopes, while a windward crest can drop to meadow and dwarf scrub within a few tens of metres of altitude.",
+    history:
+      "Mountain grazing and forestry here are long recorded, and the caves on the northern slope were surveyed and progressively opened to visitors from the nineteenth century. Low Tatras National Park was declared in 1978 and is Slovakia's largest national park by area.",
+  },
+  "mala-fatra": {
+    // 全六段 sources: 同中文侧。Veľký Kriváň 1709 m；以石灰岩/白云岩为主；Jánošíkove diery 在其支谷内；1967 年保护景观区、1988 年国家公园。2026-09-13 首写。
+    seeing:
+      "Malá Fatra, in north-western Slovakia, is a middle-mountain range built largely of limestone and dolomite, highest at Veľký Kriváň, 1,709 m. Its main crest is short, but the flanks are cut by a dense set of side valleys, which makes the range look more rugged than its height suggests.",
+    formation:
+      "The sedimentary layers were folded, thrust and uplifted during the Carpathian orogeny, after which running water incised along bedding planes and fractures. Limestone both dissolves readily and stands up in sheer walls, which produces the combination typical here: narrow ravines, vertical faces, and waterfalls and potholes on the valley floors.",
+    observation:
+      "From the air Malá Fatra is an irregularly outlined forested massif, pale rock walls interleaved with dark forest. The most striking features are the few narrow valleys cutting north from the main crest; from height they appear as no more than thin slots in the forest — the Jánošíkove diery ravines lie in one of them.",
+    distinguish:
+      "Malá Fatra and Veľká Fatra face each other across the Turiec basin, and the names are easy to reverse: Malá Fatra has the higher summit (1,709 m against 1,592 m), Veľká Fatra the larger area. Against the Western Tatras, the absence of cirques and glacial lakes is decisive — the slots here are the work of water and solution, not ice.",
+    concept:
+      "Malá Fatra shows that a ravine is not the same thing as a canyon. A ravine of this kind is dissolved and incised little by little along joints and bedding in limestone, and can be only metres wide with walls almost touching; a canyon is usually a river cutting through rock at a much larger scale, with a continuous channel on its floor.",
+    history:
+      "Grazing and timber floating in the valleys are long recorded, and the villages at the valley mouths retain their timber building traditions. Malá Fatra became a protected landscape area in 1967 and a national park in 1988.",
+  },
+  "velka-fatra": {
+    // 全六段 sources: 同中文侧。Ostredok 1592 m；面积大于小法特拉、最高点更低；1973 年保护景观区、2002 年国家公园。2026-09-13 首写。
+    seeing:
+      "Veľká Fatra lies east of Malá Fatra on the far side of the Turiec basin, highest at Ostredok, 1,592 m. The 'great' in its name refers to area rather than height — it is far broader than Malá Fatra, yet its summit is lower.",
+    formation:
+      "It belongs to the same structure as Malá Fatra: a crystalline core overlain by thrust sheets of limestone and dolomite, folded and uplifted, then dissected by running water. Because the massif is broader, its drainage had room to develop a dendritic pattern, with a set of parallel long valleys on each side of the main crest and limestone reaches in several of them narrowed into walled gates.",
+    observation:
+      "From the air Veľká Fatra is one continuous rolling forested upland; its crest is not a thin line as in Malá Fatra but a set of rounded ridges close together. The Turiec basin to the west is a conspicuous patch of flat low ground, and the boundary between basin and mountain runs almost straight.",
+    distinguish:
+      "Veľká Fatra against Malá Fatra is broad-and-low against narrow-and-high; against the Low Tatras the difference is lithology and continuity, since the Low Tatras form one continuous crest above the treeline while most of Veľká Fatra's crest is still within the forest belt.",
+    concept:
+      "The two Fatra ranges are a clear case of names that do not track elevation: the adjective in a place name usually records whatever property people noticed first — area, population or historical standing — rather than height. A descriptive place name is not a measurement.",
+    history:
+      "The alpine meadows were long used as summer pasture and the valley villages and their timber houses are widely recorded; the Turiec basin on the western side has been a regional farming and transport corridor since the Middle Ages. Veľká Fatra was a protected landscape area from 1973 and became a national park in 2002.",
+  },
+  "male-karpaty": {
+    // 全六段 sources: 同中文侧。Záruby 768 m；长约 100 km；高程自多瑙河边约 132 m 起；布拉迪斯拉发在南端；1976 年保护景观区。2026-09-13 首写。
+    seeing:
+      "The Little Carpathians are the south-western end of the whole Carpathian chain, running about 100 km north-east from the bank of the Danube. Their range of elevation is wide but their absolute height is modest: about 132 m at the river, 768 m at the summit of Záruby. Bratislava sits at their southern tip.",
+    formation:
+      "The core is ancient crystalline rock with a sedimentary cover preserved along the margins, raised during the Carpathian orogeny as a long narrow block mountain. At the southern end the Danube has cut a notch through it, and the valley narrows there into a natural gateway between steeply rising slopes.",
+    observation:
+      "From the air the Little Carpathians are a slender forested band separating the Záhorie lowland to the west from the Danubian lowland to the east. Vineyards cover the lower slopes on both sides of the crest, distinct in colour from both the forest above and the farmland below, so the three-fold banding is easy to read. At the southern end the Danube can be seen passing through the gap in the range.",
+    distinguish:
+      "What sets the Little Carpathians apart from Slovakia's other ranges is that they are a terminus: the Carpathian arc falls here to a few hundred metres and ends at the Danube. Compared with Malá Fatra to the north, both are largely limestone, but the Little Carpathians are far lower and have no section above the treeline.",
+    concept:
+      "Where a mountain chain ends is usually settled by structure rather than by height. The Little Carpathians are only a few hundred metres high yet still belong structurally to the Carpathian arc; the gap of the Danube valley separates them from the Alpine system, and that gap is the structural boundary zone between the two.",
+    history:
+      "Viticulture along the foot of the range is long recorded and the winemaking traditions of the villages continue today; a number of medieval castle sites are spread along the crest. The Little Carpathians Protected Landscape Area was declared in 1976.",
+  },
+  "slovenske-rudohorie": {
+    // 全六段 sources: 同中文侧。Stolica 1476 m 为最高点；该区含 Stolické vrchy / Volovské vrchy / Revúcka vrchovina / Veporské vrchy / Čierna hora + Slovenský kras 与 Spišsko-gemerský kras。矿种与年代无一手来源，只写 "long-recorded metal mining"。2026-09-13 首写。
+    seeing:
+      "The Slovak Ore Mountains spread east–west across southern Slovakia as an old upland. They are not a single ridge but an assemblage of massifs and karst plateaus, highest at Stolica, 1,476 m. The name comes from the area's long-recorded metal mining.",
+    formation:
+      "The basement is Palaeozoic crystalline and metamorphic rock, locally overlain by Mesozoic limestone that has been dissolved into a series of tabular karst plateaus. The whole upland has been eroded for a long time, so its summits are generally pared down to gently undulating surfaces, with rivers cutting deep valleys into them.",
+    observation:
+      "From the air the Slovak Ore Mountains are a large forested upland of modest relief, quite unlike the single clean crest of the Low Tatras to the north. The easiest features to pick out are several plateaus with flat tops and abrupt edges, and the deep valleys cut into those edges.",
+    distinguish:
+      "The Slovak Ore Mountains against the Low Tatras is an area against a line: an assemblage of massifs and plateaus versus one long crest. The relationship to entries such as the Slovak Karst and Muránska planina is one of containment — those are the parts of this upland where karst is developed most typically.",
+    concept:
+      "This upland illustrates the idea of an erosion surface: worn down over a long period, an upland's summits tend toward a surface of low relief; later uplift raises that surface as a whole, and rivers then incise into it afresh. The flat summits visible today therefore record an earlier stage of the landscape rather than its present erosional state.",
+    history:
+      "Metal mining here is long recorded and the mining towns along the belt form part of central European mining history; since mining declined, forest and karst landforms have become the region's principal natural assets.",
+  },
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
     seeing:
