@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: ab0fb94
+lastVerifiedCommit: 77520bb
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: ab0fb94
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel · 距离短于直线（2026-09-12 机场距离存量清理 7 处（R34f）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 排他性断言与在建工程（2026-09-12 马来西亚 7 组 + 菲律宾 5 组（R34e）） | 12 | 10 / 2 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 条目内两段距离不一致（2026-09-12 同条目机场距离统一 3 处（R34d）） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 机场距离短于直线（不可能成立）（2026-09-12 check:airports 第二段：8 处「比直线还短」的机场距离（R34c）） | 8 | 0 / 8 / 0 | 当场修 8 条；新开 issue 0、关闭 0 |
