@@ -3925,7 +3925,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "quy-nhon", nameZh: "归仁", nameEn: "Quy Nhon", country: "vietnam", tier: "notable", zone: "vn-central", admin1Zh: "嘉莱省", admin1En: "Gia Lai",
     lon: 109.2333, lat: 13.7667,
     airport: { iata: "UIH", nameZh: "符吉机场", nameEn: "Phu Cat Airport", lon: 109.0422, lat: 13.9550 },
-    source: "Quy Nhon 13.7667,109.2333（en.wikipedia）；UIH 机场：en.wikipedia（市区西北约 30 公里，仅国内航线）；人口约 578,600（2024，改制前口径）；2025-07 起原平定省并入嘉莱省",
+    source: "Quy Nhon 13.7667,109.2333（en.wikipedia）；UIH 机场：en.wikipedia（市区西北约 30 公里，仅国内航线）；人口约 481,110（2022，改制前的原归仁市口径，平定省政府官网；此前写的 578,600／2024 查无可靠出处，2026-09-12 核）；2025-07 起原平定省并入嘉莱省",
   },
   {
     id: "phan-thiet", nameZh: "潘切（美奈）", nameEn: "Phan Thiet (Mui Ne)", country: "vietnam", tier: "notable", zone: "vn-south", admin1Zh: "林同省", admin1En: "Lam Dong",
