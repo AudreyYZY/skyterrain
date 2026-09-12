@@ -3,10 +3,22 @@
   "howTo": "键是 <kind>/<id>/<field>。加一条之前必须有对应的 // <field> sources: 注释写清为什么；不写理由的豁免等于把问题藏起来。",
   "entries": [
     {
+      "key": "travel/ajaccio/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
+    },
+    {
       "key": "travel/amsterdam/howItWorks",
       "reason": "MRA（大都市区阿姆斯特丹）自报 262 万人是 2024 年数，MRA 是跨市镇治理联合体、不按年固定发布；阿姆斯特丹 gemeente 本身的 2026-01-01 数已写在同段前半句。",
       "confirmedOn": "2026-09-09",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/avignon/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
     },
     {
       "key": "travel/baishan/howItWorks",
@@ -31,6 +43,18 @@
       "reason": "2025 年公报已于 2026-07-02 发布（比往年 3—4 月异常延后），但市政府统计栏目证书过期抓不到正文；issue #205 跟踪",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/bordeaux/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
+    },
+    {
+      "key": "travel/colmar/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
     },
     {
       "key": "travel/dalanzadgad/howItWorks",
@@ -177,6 +201,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/lille/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
+    },
+    {
       "key": "travel/linyi/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -195,6 +225,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/lyon/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
+    },
+    {
       "key": "travel/mianyang/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -207,10 +243,28 @@
       "recheckAfter": "2027-07"
     },
     {
+      "key": "travel/moron/identity",
+      "reason": "木伦最新可信数字只到 2017 年（39,404）；网上流传的 46,918 在同一来源里与 infobox 的 2017 数并存、且没有年份，按「拿不准就不要编一个年份」不采用。蒙古国家统计局 1212.mn 的证书错误使一手表长期无法访问。",
+      "confirmedOn": "2026-09-10",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/nantes/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
+    },
+    {
       "key": "travel/nantong/identity",
       "reason": "2025 年公报把整个「人口」章节删了（第十二章标题从「人口、人民生活和社会保障」改成「人民生活和社会保障」）；2024 年末的 775.0 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/ninh-binh/identity",
+      "reason": "「原宁平市」这个统计单元已经消失：2024 年底与华闾县合并、2025-07-01 再与河南、南定合并为新宁平省。153,992（2023-12-31）是改革前最后一版。下次复核应改口径为新宁平省或华闾片区。",
+      "confirmedOn": "2026-09-10",
+      "recheckAfter": "2027-06"
     },
     {
       "key": "travel/olgii/howItWorks",
@@ -271,6 +325,12 @@
       "reason": "市政府官网「解读 2024 年公报」页被反爬拦截（503），四种访问方式都拿不到正文，无法确认是否含常住人口；issue #202 跟踪",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/reims/howItWorks",
+      "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-01"
     },
     {
       "key": "travel/sukhothai/howItWorks",
@@ -355,18 +415,6 @@
       "reason": "2025 年公报已发布（2026-05-13）但整份是 24 张纯 JPG 扫描件，文字层提不出数字；2024 年末的 649.45 万是最新可核数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/ninh-binh/identity",
-      "reason": "「原宁平市」这个统计单元已经消失：2024 年底与华闾县合并、2025-07-01 再与河南、南定合并为新宁平省。153,992（2023-12-31）是改革前最后一版。下次复核应改口径为新宁平省或华闾片区。",
-      "confirmedOn": "2026-09-10",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/moron/identity",
-      "reason": "木伦最新可信数字只到 2017 年（39,404）；网上流传的 46,918 在同一来源里与 infobox 的 2017 数并存、且没有年份，按「拿不准就不要编一个年份」不采用。蒙古国家统计局 1212.mn 的证书错误使一手表长期无法访问。",
-      "confirmedOn": "2026-09-10",
-      "recheckAfter": "2027-03"
     }
   ]
 }

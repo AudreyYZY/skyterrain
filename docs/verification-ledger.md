@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 9cb9750
+lastVerifiedCommit: ce681ab
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,8 @@ lastVerifiedCommit: 9cb9750
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel · 19 个条目的人口年份与口径（C6d 存量）（2026-09-12 城市人口刷新：北欧+英国 9 条 · 中欧 10 条（R30b）） | 22 | 0 / 22 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |
+| 2026-09-12 | terrain+travel · 10 个非结构性 issue 里的 8 条（2026-09-12 开着的内容 issue 复核（R30a）） | 11 | 1 / 8 / 2 | 当场修 8 条；新开 issue 1、关闭 7 |
 | 2026-09-11 | 开放 issue 复核第二批（北欧中欧 / 比荷卢与智利 / 城市人口 / 地形数字）（R29b） | 46 | 0 / 39 / 7 | 当场修 39 条；新开 issue 0、关闭 35 |
 | 2026-09-11 | 开放 issue 复核第一批（机场专名 / 东南亚地形 / 人口最新一期）（R29a） | 29 | 0 / 12 / 17 | 当场修 12 条；新开 issue 0、关闭 11 |
 | 2026-09-11 | C1b 清理回头搜带出：两个条目争「智利第二大都会区」、西昌中英对齐（R28b） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
