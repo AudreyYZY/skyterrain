@@ -205,9 +205,9 @@ const HAS_URBAN_FIGURE_EN =
  * 两段年份不同且其中一段是普查数时放过 —— 普查数与年度估计本来就会差一截。
  */
 const CROSS_SUB_ZH =
-  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口|城市本身|市镇|县|岛上|全岛|府|州|旧城|市中心)/;
+  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|都市圈|都市圏|大都市圈|大都市圏|东京圈|特别区|区部|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口|城市本身|市镇|县|岛上|全岛|府|州|旧城|市中心)/;
 const CROSS_SUB_EN =
-  /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates|register|registered)\b/i;
+  /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|special wards|New Area|estates|register|registered)\b/i;
 /**
  * **这里曾经有和 C6 一模一样的洞**（2026-09-09 修）：判据要求句子里出现「人口 / 居民」，
  * 于是「温尼伯……**都会区约 85 万人**」这种句子 C6i 根本看不见 —— 那一段压根没进比较。
