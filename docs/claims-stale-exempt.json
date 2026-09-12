@@ -99,12 +99,6 @@
       "recheckAfter": "2027-02"
     },
     {
-      "key": "travel/hanzhong/identity",
-      "reason": "2025 年公报已发布（2026-05-28）但官网正文是纯图片，取不到文字；issue #206 跟踪",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
       "key": "travel/harnosand/identity",
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
       "confirmedOn": "2026-09-08",
@@ -421,18 +415,6 @@
       "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-04"
-    },
-    {
-      "key": "travel/zunyi/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/zunyi/identity",
-      "reason": "2025 年公报已发布（2026-05-13）但整份是 24 张纯 JPG 扫描件，文字层提不出数字；2024 年末的 649.45 万是最新可核数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
     }
   ]
 }

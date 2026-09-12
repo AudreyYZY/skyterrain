@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: bd07dc1
+lastVerifiedCommit: 8554e62
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: bd07dc1
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel · 此前卡在「公报是图片/PDF 取不到文字」的 4 个条目（2026-09-12 OCR 解开图片公报：克拉玛依 / 遵义 / 汉中 / 泸州（R32a）） | 8 | 0 / 8 / 0 | 当场修 8 条；新开 issue 0、关闭 4 |
 | 2026-09-12 | travel · 越南（2026-09-12 越南轮的两个待办（R31e）） | 2 | 0 / 0 / 2 | 当场修 0 条；新开 issue 2、关闭 0 |
 | 2026-09-12 | travel · 河内人口两段打架、隆城机场「在建」已过时（2026-09-12 越南补两条：河内人口口径 + 隆城机场状态（R31d）） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 越南原省辖市的建制、坊名、省会与人口（2026-09-12 越南 2025 行政改革核实：11 个原省辖市（R31c）） | 11 | 7 / 4 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |
