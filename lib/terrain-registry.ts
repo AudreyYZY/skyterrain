@@ -15404,7 +15404,7 @@ const HIGH_TATRAS: TerrainEntry = {
   axis: [[19.98, 49.16], [20.32, 49.20]],
   viewScale: 1.15,
   label: { lon: 20.14, lat: 49.30, rotation: 0 },
-  source: "高塔特拉山（Vysoké Tatry）：塔特拉山中海拔最高、冰川地貌最典型的一段，主峰格尔拉赫峰（Gerlachovský štít）海拔约 2655 米（部分资料作 2654.4 米），是斯洛伐克全境与整条喀尔巴阡山脉的最高点，完全在斯洛伐克境内；山体是花岗岩质的结晶岩核心，冰斗、悬谷与冰蚀湖（pleso）成群（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）。⚠️ 本库另有波兰侧的 `tatra-mountains` 条目（锚点为波兰最高点雷西峰西北峰 2499 米），两条讲的是同一条山脉的两个不同对象，写作时不要互相覆盖",
+  source: "高塔特拉山（Vysoké Tatry）：塔特拉山中海拔最高、冰川地貌最典型的一段，主峰格尔拉赫峰（Gerlachovský štít）海拔约 2655 米（部分资料作 2654.4 米），是斯洛伐克全境与整条喀尔巴阡山脉的最高点，完全在斯洛伐克境内；主脊东西长约 26 公里、宽约 17 公里；山体是花岗岩质的结晶岩核心，冰斗、悬谷与冰蚀湖（pleso）成群（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）。⚠️ 本库另有波兰侧的 `tatra-mountains` 条目（锚点为波兰最高点雷西峰西北峰 2499 米），两条讲的是同一条山脉的两个不同对象，写作时不要互相覆盖",
 };
 
 const WESTERN_TATRAS: TerrainEntry = {
@@ -15599,6 +15599,110 @@ const MURANSKA_PLANINA: TerrainEntry = {
   viewScale: 1.2,
   label: { lon: 20.05, lat: 48.92, rotation: 0 },
   source: "穆兰高原（Muránska planina）：斯洛伐克中部一片台地状喀斯特高原，属斯皮什—盖梅尔喀斯特，位于布雷兹诺、切尔韦纳斯卡拉、穆兰与蒂索韦茨之间；最高点克拉克峰（Kľak）海拔 1409 米；1997 年 10 月设为国家公园、1998-05-27 开园（斯洛伐克旅游局与穆兰高原国家公园口径，WebSearch 2026-09）",
+};
+const PRIELOM_HORNADU: TerrainEntry = {
+  id: "prielom-hornadu",
+  nameZh: "霍尔纳德河峡谷",
+  nameEn: "Prielom Hornádu",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "霍尔纳德河谷底", lon: 20.4000, lat: 48.9600, elevation: 520, kind: "gorge" },
+  bbox: [20.28, 48.92, 20.54, 49.00],
+  axis: [[20.30, 48.95], [20.52, 48.97]],
+  viewScale: 1.1,
+  label: { lon: 20.40, lat: 49.02, rotation: 0 },
+  source: "霍尔纳德河峡谷（Prielom Hornádu）：霍尔纳德河横切斯洛伐克天堂喀斯特高原北缘形成的先成河谷，长约 11.7 公里，是斯洛伐克天堂国家公园内最长的一条峡谷；谷壁陡立，游步道靠架在岩壁上的栈道、梯子与铁链通过（斯洛伐克天堂国家公园口径，WebSearch 2026-09）",
+};
+
+const ZADIELSKA_TIESNAVA: TerrainEntry = {
+  id: "zadielska-tiesnava",
+  nameZh: "扎迪耶尔峡谷",
+  nameEn: "Zádielska tiesňava",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "扎迪耶尔谷口", lon: 20.8428, lat: 48.6208, elevation: 330, kind: "gorge" },
+  bbox: [20.79, 48.59, 20.90, 48.66],
+  axis: [[20.84, 48.60], [20.85, 48.65]],
+  viewScale: 1.0,
+  label: { lon: 20.84, lat: 48.68, rotation: 0 },
+  source: "扎迪耶尔峡谷（Zádielska tiesňava）：斯洛伐克喀斯特台地边缘一条深切的石灰岩隘谷，谷长约 2200 米、深约 300 米（局部可达 400 米）、谷底最窄处仅约 10 米；它是长约 3.8 公里的扎迪耶尔谷（Zádielska dolina）中最险的一段，为国家自然保护区（斯洛伐克旅游局与斯洛伐克喀斯特国家公园口径，WebSearch 2026-09）",
+};
+
+const JANOSIKOVE_DIERY: TerrainEntry = {
+  id: "janosikove-diery",
+  nameZh: "亚诺希克峡谷群",
+  nameEn: "Jánošíkove diery",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "亚诺希克峡谷谷口", lon: 19.0500, lat: 49.2167, elevation: 640, kind: "gorge" },
+  bbox: [18.99, 49.19, 19.11, 49.26],
+  axis: [[19.02, 49.21], [19.08, 49.24]],
+  viewScale: 1.0,
+  label: { lon: 19.05, lat: 49.27, rotation: 0 },
+  source: "亚诺希克峡谷群（Jánošíkove diery）：小法特拉山北侧一组石灰岩隘谷，由下谷（Dolné diery）、上谷（Horné diery）、新谷（Nové diery）与窄槽（Tesná rizňa）几段组成，全程沿途约二十处跌水，靠架在岩壁上的梯子与栈道通行（斯洛伐克旅游局与小法特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const PRIELOM_DUNAJCA: TerrainEntry = {
+  id: "prielom-dunajca",
+  nameZh: "杜纳耶茨河峡谷",
+  nameEn: "Dunajec Gorge",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "杜纳耶茨河曲流段", lon: 20.4083, lat: 49.4083, elevation: 450, kind: "gorge" },
+  bbox: [20.28, 49.37, 20.52, 49.45],
+  axis: [[20.30, 49.40], [20.50, 49.41]],
+  viewScale: 1.05,
+  label: { lon: 20.40, lat: 49.47, rotation: 0 },
+  source: "杜纳耶茨河峡谷（Prielom Dunajca）：杜纳耶茨河横切皮耶尼尼山的石灰岩山体形成的深切曲流峡谷，沿斯洛伐克与波兰交界一带展开；最险的一段长约 8 公里，河道在谷中反复绕出大曲流，两侧是近乎垂直的石灰岩壁（斯洛伐克旅游局口径，WebSearch 2026-09）。⚠️ 本库另有波兰侧的 `pieniny-mountains` 条目讲的是山体，本条讲的是河谷；跨境只写交界、不涉主权、不描述边界线",
+};
+
+const SULOVSKE_SKALY: TerrainEntry = {
+  id: "sulovske-skaly",
+  nameZh: "苏洛夫岩城",
+  nameEn: "Súľov Rocks",
+  category: "hills",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "苏洛夫岩群", lon: 18.5981, lat: 49.1683, elevation: 660, kind: "escarpment" },
+  bbox: [18.52, 49.12, 18.68, 49.22],
+  axis: [[18.54, 49.15], [18.66, 49.19]],
+  viewScale: 1.05,
+  label: { lon: 18.60, lat: 49.24, rotation: 0 },
+  source: "苏洛夫岩城（Súľovské skaly）：斯洛伐克西北部苏洛夫山中一片由古近纪砾岩（「苏洛夫砾岩」）风化而成的岩塔、岩针、岩窗与岩门群；1973 年设为国家自然保护区，面积约 5.4 平方公里，砾岩层在局部厚达数百米（斯洛伐克旅游局与日利纳旅游信息中心口径，WebSearch 2026-09）",
+};
+
+const LIPTOVSKA_KOTLINA: TerrainEntry = {
+  id: "liptovska-kotlina",
+  nameZh: "利普托夫盆地",
+  nameEn: "Liptov Basin",
+  category: "basin",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "利普托夫斯卡马拉水库", lon: 19.5100, lat: 49.0900, elevation: 564, kind: "lake" },
+  bbox: [19.18, 48.98, 19.92, 49.22],
+  axis: [[19.22, 49.08], [19.88, 49.08]],
+  viewScale: 1.25,
+  label: { lon: 19.51, lat: 49.24, rotation: 0 },
+  source: "利普托夫盆地（Liptovská kotlina）：瓦赫河上游的一块山间构造盆地，北侧是西塔特拉与乔奇山，南侧是低塔特拉，盆地底部由河流沉积物填充；盆中的利普托夫斯卡马拉水库总库容约 3.605 亿立方米，是斯洛伐克库容最大的水库，属瓦赫河梯级工程（斯洛伐克旅游局与利普托夫旅游局口径，WebSearch 2026-09）",
+};
+
+const ZAHORSKA_NIZINA: TerrainEntry = {
+  id: "zahorska-nizina",
+  nameZh: "扎霍里低地",
+  nameEn: "Záhorie Lowland",
+  category: "plain",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "什拉内茨沙地", lon: 17.0500, lat: 48.4800, elevation: 165, kind: "dune" },
+  bbox: [16.84, 48.20, 17.50, 48.92],
+  axis: [[17.05, 48.25], [17.20, 48.88]],
+  viewScale: 1.3,
+  label: { lon: 17.10, lat: 48.94, rotation: 0 },
+  source: "扎霍里低地（Záhorská nížina）：小喀尔巴阡山以西、摩拉瓦河以东的一片低地，是斯洛伐克境内唯一发育大面积内陆风成沙丘的地区；沙源是末次冰期多瑙河与摩拉瓦河的河流沉积被风吹扬堆积，沙丘高出周围地面约 10–15 米，什拉内茨沙地（Šranecké piesky）是中欧较大的内陆沙丘群之一，保护区面积约 10 平方公里（斯洛伐克地质调查所与欧盟 LIFE「Záhorie Sands」项目口径，WebSearch 2026-09）",
 };
 
 
@@ -16394,6 +16498,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MALE_KARPATY, SLOVENSKE_RUDOHORIE,
   STIAVNICKE_VRCHY, POLANA, VIHORLAT, POLONINY,
   SLOVENSKY_KRAS, SLOVENSKY_RAJ, MURANSKA_PLANINA,
+  PRIELOM_HORNADU, ZADIELSKA_TIESNAVA, JANOSIKOVE_DIERY, PRIELOM_DUNAJCA,
+  SULOVSKE_SKALY, LIPTOVSKA_KOTLINA, ZAHORSKA_NIZINA,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,

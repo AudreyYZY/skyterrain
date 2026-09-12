@@ -17505,7 +17505,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "high-tatras": {
     // 全六段 sources: 同中文侧。Gerlachovský štít 2655 m（部分资料 2654.4 m），斯洛伐克与喀尔巴阡最高点，完全在斯洛伐克境内。跨境只写 "along the Slovak–Polish frontier"，不涉主权。2026-09-13 首写。
     seeing:
-      "The High Tatras are the highest and most completely glaciated section of the Tatra range, crowned by Gerlachovský štít at about 2,655 m — the highest point in Slovakia and in the whole Carpathian chain. The range is small, barely thirty-odd kilometres from end to end, yet it packs more than twenty rock summits above 2,500 m into that distance, and it is the only stretch of the Carpathians with a genuinely alpine character.",
+      "The High Tatras are the highest and most completely glaciated section of the Tatra range, crowned by Gerlachovský štít at about 2,655 m — the highest point in Slovakia and in the whole Carpathian chain. The range is small — its main crest runs about 26 km east to west and some 17 km across — yet it packs more than twenty rock summits above 2,500 m into that distance, and it is the only stretch of the Carpathians with a genuinely alpine character.",
     formation:
       "The core is granitic crystalline rock, ancient basement lifted by thrust tectonics. The shaping was done by ice: cirques bit into both flanks of the ridge one after another until the once-continuous crest was pared down to knife-edges and horns, while the valley floors kept a staircase of rock basins that filled with water to become a chain of glacial lakes — pleso in Slovak.",
     observation:
@@ -17711,6 +17711,111 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The same rock yields different landforms at different altitudes: high-lying limestone is not only dissolved by water but also subjected to repeated freezing and thawing, which breaks the rock apart along joints, so solution features are often buried under rockfall debris and hard to read. Deciding whether a landscape is karst therefore cannot rest on surface forms alone — hydrology is the better clue, and the absence of surface rivers is the one to look for.",
     history:
       "Muráň Castle on its rock tower at the plateau edge has long been the local landmark, and forestry and grazing on the plateau are long recorded. The area was declared a national park in October 1997 and formally opened in May the following year.",
+  },
+  "prielom-hornadu": {
+    // 全六段 sources: 同中文侧。约 11.7 km，为斯洛伐克天堂国家公园内最长峡谷；栈道/梯子/铁链。「先成河」按 "generally read as" 表述。2026-09-13 首写。
+    seeing:
+      "The Hornád gorge was cut where the Hornád river slices across the northern margin of the Slovak Paradise karst plateau; at about 11.7 km it is the longest gorge in the national park. What makes it notable is that the river did not go around the plateau but straight through the middle of it.",
+    formation:
+      "A river that refuses to detour around an upland is generally read as antecedent: its course was fixed before the ground rose, and as uplift began the river held to that course and kept incising, sawing through the rock as it came up. The resistance of limestone lets the walls stand, so the gorge stays narrow and deep instead of widening as it deepens.",
+    observation:
+      "From the air the gorge is a dark thin seam along the northern edge of the plateau, the channel swinging repeatedly across its floor, with pale rock walls on the outside of each bend and gravel bars on the inside. The plateau surfaces on either side are flat and continuous, and the drop to the floor makes the seam look as though it had been cut with a blade.",
+    distinguish:
+      "The Hornád gorge differs from the ravines on the same plateau: those were dissolved and incised by small streams along joints, usually carry no permanent flow, and are only metres wide; here there is a real river with a stable channel and bars on the floor, and the scale is an order of magnitude larger. Against Zádielska tiesňava, that one is narrower and steeper but far shorter.",
+    concept:
+      "To judge whether a river is antecedent, look at its relation to the terrain: a channel that cuts across a rising ridge when easier routes exist on either side usually means the river came before the ridge. Conversely, a channel that follows structural lines or belts of soft rock is simply conforming to the terrain it found.",
+    history:
+      "The walkway system along the floor was built up through the twentieth century and remains in use, one of the park's principal visitor routes; the villages at either end of the gorge long depended chiefly on forestry.",
+  },
+  "zadielska-tiesnava": {
+    // 全六段 sources: 同中文侧。谷长约 2200 m、深约 300 m（局部 400 m）、最窄约 10 m；属长约 3.8 km 的 Zádielska dolina；国家自然保护区。2026-09-13 首写。
+    seeing:
+      "Zádielska tiesňava is a deeply incised limestone ravine at the edge of a Slovak Karst plateau: about 2,200 m long, some 300 m deep and locally as much as 400 m, and at its narrowest only about 10 m wide on the floor. It is the tightest stretch of the roughly 3.8 km Zádielska dolina and one of the most representative ravines in Slovakia.",
+    formation:
+      "After the tableland was uplifted, a small stream kept dissolving and incising along joints in the limestone. Because limestone both dissolves and holds vertical walls, incision ran far faster than the walls could retreat, so the ravine stayed narrow and deep; the rock towers left standing inside it are the joint work of solution and collapse.",
+    observation:
+      "From the air Zádielska tiesňava is no more than a fine dark line cutting north into the plateau from its southern edge; beyond the mouth lie open lowland and farmland, clearly different in both elevation and colour. The towers inside are almost invisible from directly overhead and need an oblique angle to pick out.",
+    distinguish:
+      "Zádielska tiesňava and the Hornád gorge are both deep cuts into karst plateaus; the difference is discharge and scale. Here a small stream carries very little water year-round and can run dry, and the ravine is only a little over two kilometres long; the Hornád gorge has a real river and runs close to twelve.",
+    concept:
+      "The width of a ravine is set by the ratio of two rates: how fast it cuts down and how fast its walls retreat. Limestone dissolves quickly along joints yet the rock mass as a whole is strong, so incision far outpaces retreat and the cut stays narrow; in a rock that breaks down readily, such as shale, the same amount of incision would yield a wide, gentle valley.",
+    history:
+      "Settlement and grazing around the mouth of the valley are long recorded, and the ravine has been a well-known local natural feature since the nineteenth century; it is now a national nature reserve.",
+  },
+  "janosikove-diery": {
+    // 全六段 sources: 同中文侧。Dolné diery / Horné diery / Nové diery / Tesná rizňa 四段，约二十处跌水，梯子与栈道。名字来源只写 "named after a figure in local legend"。2026-09-13 首写。
+    seeing:
+      "Jánošíkove diery, on the northern side of Malá Fatra, are a set of limestone ravines made up of the Lower, Upper and New diery and an extremely tight section called Tesná rizňa. There are about twenty waterfalls along the route, and most reaches can only be passed on ladders and walkways bolted to the rock. The name comes from a figure in local legend.",
+    formation:
+      "After Malá Fatra's limestone and dolomite beds were folded and uplifted, streams incised along joints and bedding planes. The ravines do not run straight but turn with the direction of the jointing, so the system as a whole is dendritic — the clearest difference between solutional ravines and an ordinary erosional valley.",
+    observation:
+      "From the air the group appears as several barely visible dark seams in the forest, converging northward on a single valley mouth. What can actually be identified from height is the open meadow at the mouth and the pale rock walls that rise abruptly on either side.",
+    distinguish:
+      "Jánošíkove diery and Zádielska tiesňava are both limestone ravines; the difference is complexity of form — Zádielska is a single cut, this is a set of interconnected branches. Against the Hornád gorge, there is no permanent river here, and flow varies sharply with rainfall.",
+    concept:
+      "The fact that ravines occur in groups tells you that solution followed a network of joints: the rock is cut by two or three intersecting sets of fractures, water sinks and dissolves along them, and the ravines inherit their directions, producing the regular zigzags and branchings visible in plan.",
+    history:
+      "Terchová at the valley mouth developed from the twentieth century as a base for hiking and climbing, and the ladders and walkways in the ravines were built and are maintained by local mountaineering organisations.",
+  },
+  "prielom-dunajca": {
+    // 全六段 sources: 同中文侧。最险一段约 8 km；深切曲流；沿斯洛伐克与波兰交界。⚠️ 跨境只写交界、不涉主权。木筏漂流按客观事实简述。2026-09-13 首写。
+    seeing:
+      "The Dunajec Gorge was cut where the Dunajec slices through the limestone of the Pieniny, running along the Slovak–Polish frontier; its tightest stretch runs about 8 km. Its signature is the string of large bends the channel swings through inside the gorge, with near-vertical rock walls on either side.",
+    formation:
+      "The river had already developed a meandering course on gentle ground before the land rose; as uplift began it carried those bends downward with it, cutting them into the rock as what are called incised meanders. The strength of the limestone allows the outside of each bend to keep a sheer wall rather than collapsing to a slope.",
+    observation:
+      "From the air the gorge is a conspicuously sinuous deep seam through the mountains, and the shape of the bends reads best from altitude — a view hard to get from the ground. The outside of each bend is bare pale rock, the inside a gravel bar built by the river.",
+    distinguish:
+      "The Dunajec and Hornád gorges formed in much the same way, both rivers cutting across rising rock, but here the meanders are preserved far more completely, bend after bend. Against a solutional ravine like Zádielska, this was cut by a river with ample discharge and has a stable channel on its floor throughout.",
+    concept:
+      "Incised meanders are direct evidence of uplift: meanders form only where gradients are very low, so finding them carved into hard rock with walls hundreds of metres high means the ground was raised as a whole after the bends had formed, while the river simply kept to its original course and went on cutting down.",
+    history:
+      "The valley long served as a route between the mountain villages on either side, and raft trips down the river are long recorded and still run as a tourist activity. The limestone massifs flanking the gorge are protected by the national parks on their respective sides.",
+  },
+  "sulovske-skaly": {
+    // 全六段 sources: 同中文侧。古近纪（始新世）Súľov conglomerate；1973 年国家自然保护区、约 5.4 km²；砾岩层局部厚达数百米；Gotická brána 高约 13 m。2026-09-13 首写。
+    seeing:
+      "The Súľov Rocks, in the Súľov Mountains of north-western Slovakia, are a group of towers, needles, windows and gates weathered out of conglomerate. This is not limestone karst but a Palaeogene conglomerate — older limestone fragments cemented together — and the forms it weathers into are quite unlike ordinary karst.",
+    formation:
+      "The conglomerate formed in a Palaeogene coastal setting: fragments of older limestone were transported, deposited and cemented into thick beds, locally several hundred metres thick. Cement and clasts resist erosion differently, so weathering works along the boundaries between them and along joints in the beds, breaking the rock into columns and needles with gates and windows hollowed out between them.",
+    observation:
+      "From the air the Súľov Rocks are a pale patch of stone in the forest, the towers standing in groups with dry slots between them. The easiest features to identify are the natural arches among them; Gotická brána is about 13 m high and reads from the side as a regular arched opening in the wall.",
+    distinguish:
+      "The difference from the Slovak Karst is lithology: conglomerate here, weathering into columns, needles, gates and windows with no organised cave system below; pure limestone there, with a flat surface and everything of interest underground. Compared with the sandstone rock towns of Czechia, the parent rock here is conglomerate rather than sandstone, and individual pebbles are plainly visible on the surfaces of the columns.",
+    concept:
+      "Conglomerate landforms show that form depends on a rock's internal structure and not only on its chemistry. The clasts in the Súľov conglomerate are limestone and chemically entirely soluble, but because the mass consists of pebbles of many sizes set in cement, water seeps away along grain boundaries rather than concentrating into conduits — so it develops no cave system and is instead taken apart into towers and columns.",
+    history:
+      "The ruins of the medieval Súľov castle stand on one of the towers; the area was declared a national nature reserve in 1973, covers about 5.4 km², and is one of the main hiking and climbing destinations in north-western Slovakia.",
+  },
+  "liptovska-kotlina": {
+    // 全六段 sources: 同中文侧。瓦赫河上游山间构造盆地；Liptovská Mara 总库容约 3.605 亿 m³，斯洛伐克库容最大水库，属瓦赫河梯级。⚠️ 蓄水淹没村落只作工程事实简述。2026-09-13 首写。
+    seeing:
+      "The Liptov Basin lies on the upper Váh, with the Western Tatras and the Chočské vrchy to the north and the Low Tatras to the south. Its floor is flat and open and the ranges on both sides rise abruptly from it, which makes it one of the easiest basins in the country to recognise for what it is from the air.",
+    formation:
+      "The basin is tectonic in origin: the surrounding blocks were raised during the orogeny while this block subsided relatively, leaving a hollow enclosed by mountains that was then filled with gravel and sand brought down by the Váh and its tributaries. The sedimentary fill on the floor is consequently thick, and groundwater resources are concentrated here.",
+    observation:
+      "From the air the basin is a pale expanse of flat ground ringed by ridges, with a long narrow water surface across the middle — the Liptovská Mara reservoir. Liptovský Mikuláš lies at its eastern end and Ružomberok to the west, with continuous farmland and pasture between the two towns.",
+    distinguish:
+      "The Liptov Basin meets the Low Tatras to the south and the Western Tatras to the north along clear breaks of slope. Like the Turiec basin it is an intermontane basin along the Váh; the difference is scale and position — the Liptov Basin is further upstream and the ranges flanking it are higher.",
+    concept:
+      "An intermontane basin is not excavated by erosion but is a zone of relative subsidence produced by tectonics. Its floor is usually a thick body of river sediment, which is why such basins, rather than the ridges, tend to hold a mountain region's farmland, settlements and roads — population distribution in the mountains is often decided by the basins.",
+    history:
+      "The basin has been a regional farming and transport corridor since the Middle Ages. The Liptovská Mara reservoir was completed in the 1970s as part of the Váh cascade; filling it flooded a number of villages on the basin floor. Its total volume of about 360.5 million cubic metres makes it Slovakia's largest reservoir by volume.",
+  },
+  "zahorska-nizina": {
+    // 全六段 sources: 同中文侧。小喀尔巴阡以西、摩拉瓦河以东；斯洛伐克唯一大面积内陆风成沙丘区；沙源为末次冰期河流沉积；沙丘高出周围 10–15 m；Šranecké piesky 保护区约 10 km²；欧盟 LIFE 项目。2026-09-13 首写。
+    seeing:
+      "The Záhorie Lowland lies west of the Little Carpathians and east of the Morava, a low plain barely one or two hundred metres above sea level. What makes it unusual in Slovakia is its inland dunes — sand ridges standing some 10 to 15 m above the surrounding ground in continuous fields, among the larger inland dune complexes in central Europe.",
+    formation:
+      "The sand did not come from a desert but from rivers: during the last glacial period the bed sediments of the Danube and the Morava lay exposed under sparse vegetation, and strong winds lifted the finer sand and piled it downwind into dunes. Vegetation returned after the glacial period and fixed most of the dunes, leaving bare sand exposed in only a few places.",
+    observation:
+      "From the air the Záhorie Lowland is flat country of pine plantation and farmland, the dunes showing as low pale belts within the forest, aligned in much the same direction — a record of the prevailing wind at the time. The Morava floodplain with its oxbows lies to the west, the forest belt of the Little Carpathians to the east.",
+    distinguish:
+      "These dunes resemble true desert dunes in outline but differ in origin and present state: the sand here was reworked by wind from glacial-age river deposits and is now essentially fixed by vegetation and no longer moving, whereas desert dunes lie where rainfall is too low for vegetation to hold the surface and the sand keeps migrating.",
+    concept:
+      "Inland dunes are a clue to past climate. Extensive wind-blown dune fields require three conditions at once: an ample supply of loose sand, winds strong enough to move it, and vegetation too sparse to hold the surface. That the area is now well vegetated and its dunes immobile means these dunes record a climatic phase quite unlike the present one.",
+    history:
+      "The pine woods here were long used for forestry and resin collection; part of the dune country escaped cultivation because it served for a long period as a military training area, which incidentally preserved bare-sand habitat, later managed for restoration under an EU LIFE project. The Šranecké piesky protected area covers about 10 km².",
   },
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
