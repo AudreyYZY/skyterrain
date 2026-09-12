@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: b9dd0b2
+lastVerifiedCommit: 0cf6a66
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -20,12 +20,12 @@ lastVerifiedCommit: b9dd0b2
 
 `npm run check:claims` 的存量（棘轮基线 `docs/claims-baseline.json`，2026-09-08）：
 
-| 规则 | 首次扫描 | 现在 |
-|---|---|---|
-| C6 人口数字缺年份 | 524 | **259** |
-| C6d 数字不是最新一期 | 585 | **125**（另 40 条目在豁免表，见 `docs/claims-stale-exempt.json`） |
-| C1a 主观最高级 | 457 | **293** ⚠️ |
-| C1b 排名断言缺口径 | 320 | **221** ⚠️ |
+| 规则 | 首次扫描 | 2026-09-08 | **现在（2026-09-12，R30e 之后）** |
+|---|---|---|---|
+| C6 人口数字缺年份 | 524 | 259 | **29** |
+| C6d 数字不是最新一期 | 585 | 125 | **87**（另 71 条目在豁免表，见 `docs/claims-stale-exempt.json`） |
+| C1a 主观最高级 | 457 | 293 ⚠️ | **0**（基线固化为 0） |
+| C1b 排名断言缺口径 | 320 | 221 ⚠️ | **0**（基线固化为 0） |
 
 ⚠️ **C1a 与 C1b 在 2026-09-08 各收窄过一次判据，这两行的下降有一部分是噪声出列、不是内容变好**：
 - C1b 288 → 221：「第 N 高 / 第 N 长 / 第 N 深」这类**被比较的量已经写在词里**，
