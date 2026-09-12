@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 0cf6a66
+lastVerifiedCommit: 011428d
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: 0cf6a66
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | terrain · 越南建制表述（2026-09-12 越南 2025 行政改革：地形侧跟进（R31a）） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 在建 / 计划 / 停航 / 公报未发布 7 条（2026-09-12 会过期的状态：check:pending 首跑的 ⚑ 逐条核实（R30e）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 同条目 identity/注释已有 1 级留痕、另一段缺年份（2026-09-12 C6 里靠条目自身留痕就能补的 7 条（R30d）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 注释里已有 1 级留痕、正文缺年份与口径（2026-09-12 C6 里不用联网就能补的两条（R30c）） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
