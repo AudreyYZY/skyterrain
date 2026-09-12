@@ -17139,9 +17139,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The country around Gyöngyös at the southern foot has been wine country since the Middle Ages, the soils weathered from volcanic rock being the natural basis for it; from the twentieth century these hills, within easy reach of Budapest, became a regular destination for walking and winter sports.",
   },
   bukk: {
-    // seeing sources: 2014-01-08 GPS 精测（精度 0.05 m）：Szilvási-kő 960.715 m > Istállós-kő 959 m。旧说沿用了八十多年、至今仍见于大量资料，故正文**两说并列**并注明测量年份。2026-09-12 核。
+    // seeing sources: Istállós-kő 精确为 958.1 m；2014 年测量结果尚无官方正式更新公告，正文留余地。2026-09-13 核。
     seeing:
-      "The Bükk lies in north-eastern Hungary, a range built mainly of Triassic limestone, its highest point being the southern summit of Kettős-bérc (now called Szilvási-kő) at about 961 m — established by a GPS survey in 2014, which demoted Istállós-kő at 959 m, long taken for the summit, to third place. Its top is not a peak but a gently rolling upland surface — the Bükk plateau.",
+      "The Bükk lies in north-eastern Hungary, a range built mainly of Triassic limestone, its highest point being the southern summit of Kettős-bérc (now called Szilvási-kő) at about 961 m — established by a GPS survey in 2014, which put Istállós-kő at 958 m, long taken for the summit, into third place (most geographical sources have adopted the new reading, though no formal update from the national park authority has been found). Its top is not a peak but a gently rolling upland surface — the Bükk plateau.",
     formation:
       "The limestone was laid down in a Triassic sea, later uplifted, and then dissolved over long periods into shafts, sinkholes, dry valleys and caves. There is almost no surface drainage on the range: rainfall sinks into the fissures and re-emerges only at karst springs around the foot.",
     observation:
@@ -17338,8 +17338,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The castle above and the royal palace beside the Danube below were among the seats of the Hungarian court in the fourteenth century; the area lies within the Duna–Ipoly National Park today.",
   },
   vertes: {
+    // seeing sources: 以三叠纪白云岩为主。匈牙利地形第 3 批当批核实查出。2026-09-13 核。
     seeing:
-      "The Vértes lies between the Bakony and the Gerecse, a limestone and dolomite range in the middle of the Transdanubian system, with Nagy-Csákány at 487 m its highest point — middling by Hungarian standards, low on a European scale.",
+      "The Vértes lies between the Bakony and the Gerecse, a range in the middle of the Transdanubian system built mainly of Triassic dolomite with some limestone, with Nagy-Csákány at 487 m its highest point — middling by Hungarian standards, low on a European scale.",
     formation:
       "The range is Mesozoic carbonate rock raised in blocks. Its western side drops abruptly along a fault to the Mór trench beyond; the asymmetry of a block range — steep on one side, gentle on the other — is unusually clear here.",
     observation:
@@ -17362,8 +17363,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Gerecse and the Vértes to the west are both carbonate blocks of the Transdanubian system at similar heights; the difference is that the Gerecse fronts the Danube and is known for red limestone quarrying, while the Vértes is marked by the straight fault scarp on its western side.",
     concept:
       "The colour of limestone comes from its impurities: iron-bearing beds are red, organic-rich ones grey to black, the purest nearly white. Beds within a single range can differ widely in colour, and that is what quarrying selects on.",
+    // history sources: 罗马时期开采为推测，确证最早为阿尔帕德王朝。2026-09-13 核。
     history:
-      "Quarrying of the red limestone here goes back to Roman times and the stone was widely used for architectural decoration from the Middle Ages onward; the range today is mostly woodland and protected landscape.",
+      "Quarrying of the red limestone here is documented from the Árpád period (roughly the eleventh to thirteenth centuries); whether it was already worked in Roman times is not settled. From the Middle Ages the stone was widely used for architectural decoration; the range today is mostly woodland and protected landscape.",
   },
   "koszeg-mountains": {
     seeing:
@@ -17408,8 +17410,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Basalt from these hills has been quarried since Roman times, while soils weathered from volcanic rock support the vineyards of the northern Balaton shore; the Balaton Uplands National Park, established in 1997, brought them under protection.",
   },
   "tihany-peninsula": {
+    // seeing sources: 20 m 与 25 m 两说并存，写区间。2026-09-13 核。
     seeing:
-      "The Tihany peninsula reaches from the northern shore into Lake Balaton, almost pinching the lake in two. It is volcanic ground throughout: the Inner Lake on the peninsula sits in a crater, its surface more than twenty metres above Balaton.",
+      "The Tihany peninsula reaches from the northern shore into Lake Balaton, almost pinching the lake in two. It is volcanic ground throughout: the Inner Lake on the peninsula sits in a crater, its surface some 20 to 25 m above Balaton, sources differing.",
     formation:
       "The peninsula is built of Pliocene tuff and basalt. After the volcanism ended, hot water rising along fissures precipitated minerals at the surface and built cone-shaped geyser mounds — they stand scattered over the grassy slopes and are a landform peculiar to this place.",
     observation:
@@ -17438,8 +17441,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "lake-heviz": {
     seeing:
       "Lake Hévíz, near the western end of Balaton, is a natural thermal lake: its water comes from a karst spring welling up warm through the lake bed, so the whole body stays warm and can be bathed in all year — among the largest natural thermal lakes anywhere that can be swum in.",
+    // formation sources: 换水周期各源矛盾（3 天 / 每周两次），无权威单一数字，故不写死。2026-09-13 核。
     formation:
-      "A karst spring opens in the lake bed where cold and hot groundwater mix at depth and rise together. The discharge is large enough that the whole lake turns over on a timescale of days — which is why so small a body keeps its temperature and its water quality through the year.",
+      "A karst spring opens in the lake bed where cold and hot groundwater mix at depth and rise together. The discharge is large enough to renew the whole lake rapidly, which is why so small a body keeps its temperature and its water quality through the year; published figures for the turnover time disagree, so none is given here.",
     observation:
       "From the air Hévíz is only a small round sheet of water in woodland, but in winter, when everything around it is grey, it is often the one patch that does not freeze and may be visibly steaming. Most of its surface is covered with water lilies.",
     distinguish:
@@ -17464,8 +17468,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The lake grew into a resort area for Budapest from the early twentieth century; the reed marsh at its western end is an important waterbird habitat and is protected.",
   },
   "danube-hungary": {
+    // seeing sources: 匈牙利国家水务总局：境内 417 km，含 142 km 界河段；裁弯取直前曾达 496 km。2026-09-13 核（1 级）。
     seeing:
-      "The Danube enters Hungary from the north-west, crosses the Little Plain, turns south at the Danube Bend and runs the length of the Great Plain before leaving. It divides the country in two and is, by navigable length and by discharge, its principal waterway.",
+      "The Danube enters Hungary from the north-west, crosses the Little Plain, turns south at the Danube Bend and runs the length of the Great Plain before leaving. About 417 km of it lies in Hungary, 142 km of that a border reach (national water authority), and it divides the country in two and is, by navigable length and by discharge, its principal waterway.",
     formation:
       "Within Hungary the Danube has left the mountains for a subsiding basin and its gradient is slight. Its capacity to carry sediment drops and deposition takes over: the channel widens and divides, bars and islands form and are rewritten — with the Danube Bend the one exception, where it cuts into upland instead.",
     observation:
@@ -17478,8 +17483,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Danube was the northern frontier and a shipping lane of the Roman empire, leaving a chain of military posts along its banks; the navigation and embankment works begun in the nineteenth century shaped the channel as it stands today.",
   },
   szigetkoz: {
+    // seeing sources: 东北多瑙水务局：375 km²、长 52 km、宽 6–8 km。2026-09-13 核（1 级）。
     seeing:
-      "The Szigetköz lies in Hungary's north-western corner, the tract of islands enclosed where the Danube divides on entering the Little Plain: the main stream on one side, a network of side channels in the middle, and long narrow islands between them. It is among the larger inland river-island tracts of Central Europe.",
+      "The Szigetköz lies in Hungary's north-western corner, the tract of islands enclosed where the Danube divides on entering the Little Plain: the main stream on one side, a network of side channels in the middle, and long narrow islands between them. It covers about 375 km², some 52 km long and 6 to 8 km wide, the largest inland river-island tract in Hungary.",
     formation:
       "Leaving the mountain gap for the plain, the Danube loses gradient and speed, drops the gravel and sand it can no longer carry, and its channel is pushed into dividing by its own deposits. The ground between the side channels is flooded and exposed again and again, producing the present surface of channels, oxbows and floodplain forest.",
     observation:
