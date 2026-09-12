@@ -62,3 +62,6 @@ terrain-dataset/
 # python 缓存（scripts/verify/mkfindings.py 被 import 时生成）
 __pycache__/
 *.pyc
+
+# OurAirports 公有领域数据集（check:airports 用，12+ MB，滚动更新，不进仓库）
+.cache/

@@ -905,7 +905,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "hefei", nameZh: "合肥", nameEn: "Hefei", country: "china", tier: "major", zone: "cn-east", admin1Zh: "安徽省", admin1En: "Anhui",
     lon: 117.2272, lat: 31.8206,
-    airport: { iata: "HFE", nameZh: "合肥新桥国际机场", nameEn: "Hefei Xinqiao Int'l", lon: 116.977, lat: 31.780 },
+    airport: { iata: "HFE", nameZh: "合肥新桥国际机场", nameEn: "Hefei Xinqiao Int'l", lon: 116.9769, lat: 31.9878 },
     source: "合肥市中心 31.8206,117.2272；HFE 机场：公开资料",
   },
   {
@@ -1247,7 +1247,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "zunyi", nameZh: "遵义", nameEn: "Zunyi", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
     lon: 106.9270, lat: 27.7250,
-    airport: { iata: "ZYI", nameZh: "遵义新舟机场", nameEn: "Zunyi Xinzhou Airport", lon: 107.0007, lat: 27.5895 },
+    airport: { iata: "ZYI", nameZh: "遵义新舟机场", nameEn: "Zunyi Xinzhou Airport", lon: 107.2472, lat: 27.8107 },
     source: "遵义市区（红花岗区）27.7250,106.9270；ZYI 机场：Wikipedia（新舟镇，距市区约 35 公里，2012-08-28 通航）",
   },
   {
@@ -1270,8 +1270,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "beihai", nameZh: "北海", nameEn: "Beihai", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
     lon: 109.1191, lat: 21.4733,
-    airport: { iata: "BHZ", nameZh: "北海福成机场", nameEn: "Beihai Fucheng Airport", lon: 109.2939, lat: 21.5394 },
-    source: "北海市区（海城区）21.4733,109.1191；BHZ 机场：Wikipedia（福成镇）",
+    airport: { iata: "BHY", nameZh: "北海福成机场", nameEn: "Beihai Fucheng Airport", lon: 109.2939, lat: 21.5394 },
+    source: "北海市区（海城区）21.4733,109.1191；BHY 机场（IATA 原写作 BHZ，2026-09-12 据 OurAirports 公有领域数据集改正）：Wikipedia（福成镇）",
   },
   {
     id: "jiayuguan", nameZh: "嘉峪关", nameEn: "Jiayuguan", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
@@ -1312,8 +1312,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "anyang", nameZh: "安阳", nameEn: "Anyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
     lon: 114.3920, lat: 36.0997,
-    airport: { iata: "AYN", nameZh: "安阳红旗渠机场", nameEn: "Anyang Hongqiqu Airport", lon: 114.5320, lat: 35.9950 },
-    source: "安阳市区 36.0997,114.3920；殷墟 36.1270,114.3140；AYN 机场：Wikipedia / 民航局（汤阴县，2023-11-29 通航，距市区约 27 公里）",
+    airport: { iata: "HQQ", nameZh: "安阳红旗渠机场", nameEn: "Anyang Hongqiqu Airport", lon: 114.4619, lat: 35.8708 },
+    source: "安阳市区 36.0997,114.3920；殷墟 36.1270,114.3140；HQQ 机场（红旗渠机场 2023-11 通航，IATA HQQ / ICAO ZHQQ，在汤阴县；原写作 AYN —— 那是老的安阳殷都机场的代码，坐标也差 15 km，2026-09-12 据 OurAirports 与公开资料改正）：Wikipedia / 民航局（汤阴县，2023-11-29 通航，距市区约 27 公里）",
   },
   {
     id: "huashan", nameZh: "华山（华阴）", nameEn: "Mount Hua (Huayin)", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "陕西省", admin1En: "Shaanxi",
@@ -1378,7 +1378,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "hanzhong", nameZh: "汉中", nameEn: "Hanzhong", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "陕西省", admin1En: "Shaanxi",
     lon: 107.0230, lat: 33.0670,
-    airport: { iata: "HZG", nameZh: "汉中城固机场", nameEn: "Hanzhong Chenggu Airport", lon: 107.2080, lat: 33.0640 },
+    airport: { iata: "HZG", nameZh: "汉中城固机场", nameEn: "Hanzhong Chenggu Airport", lon: 107.2038, lat: 33.1335 },
     source: "汉中市区（汉台区）33.0670,107.0230；HZG 机场：Wikipedia（城固县柳林镇，距市区约 18 公里，军民合用）",
   },
   {
@@ -1402,7 +1402,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "korla", nameZh: "库尔勒", nameEn: "Korla", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 86.1750, lat: 41.7250,
-    airport: { iata: "KRL", nameZh: "库尔勒梨城机场", nameEn: "Korla Licheng Airport", lon: 86.1290, lat: 41.6980 },
+    airport: { iata: "KRL", nameZh: "库尔勒梨城机场", nameEn: "Korla Licheng Airport", lon: 86.1408, lat: 41.615 },
     source: "库尔勒市区（巴音郭楞州府驻地）41.7250,86.1750；KRL 机场：百度百科/Wikipedia（距市中心约 17 公里，4D 军民合用）",
   },
 
@@ -1610,7 +1610,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "baishan", nameZh: "白山", nameEn: "Baishan", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "吉林省", admin1En: "Jilin",
     lon: 126.4231, lat: 41.9331,
-    airport: { iata: "NBS", nameZh: "长白山机场", nameEn: "Changbaishan Airport", lon: 127.5489, lat: 42.0881 },
+    airport: { iata: "NBS", nameZh: "长白山机场", nameEn: "Changbaishan Airport", lon: 127.6022, lat: 42.0669 },
     source: "白山市区（浑江区）41.9331,126.4231（zh.wikipedia 白山市_(吉林省)）；NBS 长白山机场在辖内抚松县松江河镇（zh.wikipedia，距西坡约 18 公里、距市区约 150 公里），是辖区内唯一民用机场；人口 90.62 万（2022）",
   },
   {
@@ -1943,7 +1943,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "santa-fe", nameZh: "圣塔菲", nameEn: "Santa Fe", country: "usa", tier: "notable", zone: "us-southwest", admin1Zh: "新墨西哥州", admin1En: "New Mexico",
     lon: -105.9644, lat: 35.6672,
-    airport: { iata: "SAF", nameZh: "圣塔菲地区机场", nameEn: "Santa Fe Regional Airport", lon: -106.0383, lat: 35.6211 },
+    airport: { iata: "SAF", nameZh: "圣塔菲地区机场", nameEn: "Santa Fe Regional Airport", lon: -106.089, lat: 35.6171 },
     source: "Santa Fe 35.6672,-105.9644（en.wikipedia，海拔 2,133 米）；SAF 机场：en.wikipedia（市区南约 18 公里，支线航班；阿布奎基 ABQ 约 105 公里）；人口 87,505（2020 普查）",
   },
   {
@@ -3951,7 +3951,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "erdenet", nameZh: "额尔登特", nameEn: "Erdenet", country: "mongolia", tier: "major", zone: "mn-north", admin1Zh: "鄂尔浑省", admin1En: "Orkhon Province",
     lon: 104.0833, lat: 49.0333,
-    airport: { iata: "ERT", nameZh: "额尔登特机场", nameEn: "Erdenet Airport", lon: 104.0664, lat: 49.0392 },
+    airport: { iata: "ERT", nameZh: "额尔登特机场", nameEn: "Erdenet Airport", lon: 104.1506, lat: 48.9831 },
     source: "额尔登特市中心 49.0333,104.0833；本地设有额尔登特机场（ERT），航班班次以实际时刻表为准，主要客运也可经乌兰巴托方向的公路与蒙古国铁支线往返：公开资料",
   },
   {
@@ -3969,13 +3969,13 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "moron", nameZh: "木伦", nameEn: "Mörön", country: "mongolia", tier: "notable", zone: "mn-north", admin1Zh: "库苏古尔省", admin1En: "Khövsgöl Province",
     lon: 100.1625, lat: 49.6342,
-    airport: { iata: "MXV", nameZh: "木伦机场", nameEn: "Mörön Airport", lon: 100.1492, lat: 49.6633 },
+    airport: { iata: "MXV", nameZh: "木伦机场", nameEn: "Mörön Airport", lon: 100.1, lat: 49.6637 },
     source: "木伦市中心 49.6342,100.1625；MXV机场：公开资料/MIAT蒙古国际航空国内航线",
   },
   {
     id: "dalanzadgad", nameZh: "达兰扎德嘎德", nameEn: "Dalanzadgad", country: "mongolia", tier: "notable", zone: "mn-gobi", admin1Zh: "南戈壁省", admin1En: "Ömnögovi Province",
     lon: 104.4250, lat: 43.5708,
-    airport: { iata: "DLZ", nameZh: "达兰扎德嘎德机场", nameEn: "Dalanzadgad Airport", lon: 104.4283, lat: 43.5919 },
+    airport: { iata: "DLZ", nameZh: "达兰扎德嘎德机场", nameEn: "Dalanzadgad Airport", lon: 104.3677, lat: 43.6086 },
     source: "达兰扎德嘎德市中心 43.5708,104.4250；DLZ机场：公开资料/MIAT蒙古国际航空国内航线",
   },
   {
@@ -3993,7 +3993,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "choibalsan", nameZh: "乔巴山", nameEn: "Choibalsan", country: "mongolia", tier: "notable", zone: "mn-east", admin1Zh: "道尔诺德省", admin1En: "Dornod Province",
     lon: 114.5352, lat: 48.0733,
-    airport: { iata: "COQ", nameZh: "乔巴山机场", nameEn: "Choibalsan Airport", lon: 114.5539, lat: 48.0967 },
+    airport: { iata: "COQ", nameZh: "乔巴山机场", nameEn: "Choibalsan Airport", lon: 114.6472, lat: 48.1354 },
     source: "乔巴山市中心 48.0733,114.5352；COQ机场：公开资料/MIAT蒙古国际航空国内航线",
   },
   {
@@ -4173,7 +4173,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "legazpi", nameZh: "黎牙实比", nameEn: "Legazpi", country: "philippines", tier: "notable", zone: "ph-luzon", admin1Zh: "阿尔拜省", admin1En: "Albay",
     lon: 123.7438, lat: 13.1391,
-    airport: { iata: "DRP", nameZh: "比科尔国际机场", nameEn: "Bicol International Airport", lon: 123.7325, lat: 13.1575 },
+    airport: { iata: "DRP", nameZh: "比科尔国际机场", nameEn: "Bicol International Airport", lon: 123.6768, lat: 13.1119 },
     source: "黎牙实比市中心 13.1391,123.7438；DRP机场（位于达拉牙，距市区约8km，取代原黎牙实比机场）：公开资料",
   },
   {
@@ -4185,7 +4185,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "boracay", nameZh: "长滩岛（马来镇）", nameEn: "Boracay (Malay)", country: "philippines", tier: "notable", zone: "ph-visayas", admin1Zh: "阿克兰省", admin1En: "Aklan",
     lon: 121.9248, lat: 11.9674,
-    airport: { iata: "MPH", nameZh: "戈多弗雷多·拉莫斯机场", nameEn: "Godofredo P. Ramos Airport", lon: 122.0053, lat: 11.9247 },
+    airport: { iata: "MPH", nameZh: "戈多弗雷多·拉莫斯机场", nameEn: "Godofredo P. Ramos Airport", lon: 121.954, lat: 11.9245 },
     source: "长滩岛 11.9674,121.9248；MPH机场（俗称卡蒂克兰机场，位于长滩岛对岸马来镇，需转乘渡船约10分钟上岛）：公开资料",
   },
   {
@@ -4372,7 +4372,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "pamukkale", nameZh: "棉花堡（代尼兹利）", nameEn: "Pamukkale (Denizli)", country: "turkey", tier: "notable", zone: "tr-aegean", admin1Zh: "代尼兹利省", admin1En: "Denizli Province",
     lon: 29.1189, lat: 37.9203,
-    airport: { iata: "DNZ", nameZh: "代尼兹利恰尔达克机场", nameEn: "Denizli Çardak Airport", lon: 29.5614, lat: 37.7856 },
+    airport: { iata: "DNZ", nameZh: "代尼兹利恰尔达克机场", nameEn: "Denizli Çardak Airport", lon: 29.7013, lat: 37.7856 },
     source: "棉花堡台地 37.9203,29.1189；DNZ机场（距棉花堡约65km，距代尼兹利市区约55km）：公开资料",
   },
   {
@@ -4534,7 +4534,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "temuco", nameZh: "特木科", nameEn: "Temuco", country: "chile", tier: "major", zone: "cl-sur",
     admin1Zh: "阿劳卡尼亚大区", admin1En: "Araucanía Region",
     lon: -72.5904, lat: -38.7359,
-    airport: { iata: "ZCO", nameZh: "拉阿劳卡尼亚机场", nameEn: "La Araucanía Airport", lon: -72.6372, lat: -38.7669 },
+    airport: { iata: "ZCO", nameZh: "拉阿劳卡尼亚机场", nameEn: "La Araucanía Airport", lon: -72.6515, lat: -38.9259 },
     source: "特木科市中心 -38.7359,-72.5904；ZCO 机场坐标：公开资料",
   },
   {
