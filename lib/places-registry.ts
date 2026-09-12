@@ -1385,7 +1385,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "xiangyang", nameZh: "襄阳", nameEn: "Xiangyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
     lon: 112.1220, lat: 32.0090,
     airport: { iata: "XFN", nameZh: "襄阳刘集机场", nameEn: "Xiangyang Liuji Airport", lon: 112.2910, lat: 32.1510 },
-    source: "襄阳古城 32.0090,112.1220；XFN 机场：Wikipedia（刘集，距市区约 15 公里）",
+    source: "襄阳古城 32.0090,112.1220；XFN 机场：Wikipedia（刘集，距市区直线约 22 公里（按本条目坐标算））",
   },
   {
     id: "ordos", nameZh: "鄂尔多斯", nameEn: "Ordos", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
@@ -1496,7 +1496,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "jingzhou", nameZh: "荆州", nameEn: "Jingzhou", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
     lon: 112.2400, lat: 30.3350,
     airport: { iata: "SHS", nameZh: "荆州沙市机场", nameEn: "Jingzhou Shashi Airport", lon: 112.4483, lat: 30.2958 },
-    source: "荆州古城 30.3350,112.2400（zh.wikipedia）；SHS 机场：zh.wikipedia（2021-01-30 通航，距市中心约 18 公里）",
+    source: "荆州古城 30.3350,112.2400（zh.wikipedia）；SHS 机场：zh.wikipedia（2021-01-30 通航，距市中心直线约 21 公里（按本条目坐标算））",
   },
   {
     id: "liuzhou", nameZh: "柳州", nameEn: "Liuzhou", country: "china", tier: "major", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
@@ -1508,7 +1508,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "yibin", nameZh: "宜宾", nameEn: "Yibin", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
     lon: 104.6420, lat: 28.7520,
     airport: { iata: "YBP", nameZh: "宜宾五粮液机场", nameEn: "Yibin Wuliangye Airport", lon: 104.5317, lat: 28.8556 },
-    source: "宜宾三江口 28.7520,104.6420（zh.wikipedia）；YBP 机场：zh.wikipedia（2019-12-05 启用，距市区约 11 公里）",
+    source: "宜宾三江口 28.7520,104.6420（zh.wikipedia）；YBP 机场：zh.wikipedia（2019-12-05 启用，距市区直线约 16 公里（按本条目坐标算））",
   },
   {
     id: "mudanjiang", nameZh: "牡丹江", nameEn: "Mudanjiang", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
@@ -3017,7 +3017,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "mons", nameZh: "蒙斯", nameEn: "Mons", country: "belgium", tier: "notable", zone: "be-hainaut", admin1Zh: "埃诺省", admin1En: "Hainaut",
     lon: 3.9520, lat: 50.4542,
     airport: { iata: "CRL", nameZh: "布鲁塞尔南沙勒罗瓦机场", nameEn: "Brussels South Charleroi Airport", lon: 4.4538, lat: 50.4592 },
-    source: "蒙斯市中心 50.4542,3.9520；本地无商业机场，最近机场为布鲁塞尔南沙勒罗瓦机场（距市区约20km）：公开资料",
+    source: "蒙斯市中心 50.4542,3.9520；本地无商业机场，最近机场为布鲁塞尔南沙勒罗瓦机场（距市区直线约 36 km，按本条目坐标算）：公开资料",
   },
   {
     id: "dinant", nameZh: "迪南", nameEn: "Dinant", country: "belgium", tier: "notable", zone: "be-namur", admin1Zh: "那慕尔省", admin1En: "Namur Province",
@@ -3035,7 +3035,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "spa", nameZh: "斯帕", nameEn: "Spa", country: "belgium", tier: "notable", zone: "be-liege", admin1Zh: "列日省", admin1En: "Liège Province",
     lon: 5.8642, lat: 50.4914,
     airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）（经布鲁塞尔转乘）", nameEn: "Brussels Airport (Zaventem) (via Brussels)", lon: 4.4844, lat: 50.9014 },
-    source: "斯帕市中心 50.4914,5.8642；本地无商业机场，最近机场为列日机场（距市区约35km）：公开资料",
+    source: "斯帕市中心 50.4914,5.8642；本地无商业机场；列日机场直线约 34 km 但已无定期客运航班，故 airport 字段填布鲁塞尔机场（直线约 107 km，按本条目坐标算）：公开资料",
   },
 
   // ── 荷兰 ──
@@ -3308,19 +3308,19 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "odense", nameZh: "欧登塞", nameEn: "Odense", country: "denmark", tier: "major", zone: "dk-syddanmark", admin1Zh: "南丹麦大区", admin1En: "Region of Southern Denmark",
     lon: 10.4024, lat: 55.4038,
     airport: { iata: "BLL", nameZh: "比隆机场", nameEn: "Billund Airport", lon: 9.1517, lat: 55.7403 },
-    source: "欧登塞市中心 55.4038,10.4024；本地欧登塞机场无定期客运航班，最近有定期航班的机场为比隆机场（距市区约75km）：公开资料",
+    source: "欧登塞市中心 55.4038,10.4024；本地欧登塞机场无定期客运航班，最近有定期航班的机场为比隆机场（距市区直线约 87 km，按本条目坐标算）：公开资料",
   },
   {
     id: "esbjerg", nameZh: "埃斯比约", nameEn: "Esbjerg", country: "denmark", tier: "notable", zone: "dk-syddanmark", admin1Zh: "南丹麦大区", admin1En: "Region of Southern Denmark",
     lon: 8.4594, lat: 55.4765,
     airport: { iata: "BLL", nameZh: "比隆机场", nameEn: "Billund Airport", lon: 9.1517, lat: 55.7403 },
-    source: "埃斯比约市中心 55.4765,8.4594；本地埃斯比约机场以海上石油平台直升机业务为主，定期客运航班很少，最近有定期客运航班的机场为比隆机场（距市区约45km）：公开资料",
+    source: "埃斯比约市中心 55.4765,8.4594；本地埃斯比约机场以海上石油平台直升机业务为主，定期客运航班很少，最近有定期客运航班的机场为比隆机场（距市区直线约 53 km，按本条目坐标算）：公开资料",
   },
   {
     id: "ribe", nameZh: "里伯", nameEn: "Ribe", country: "denmark", tier: "notable", zone: "dk-syddanmark", admin1Zh: "南丹麦大区", admin1En: "Region of Southern Denmark",
     lon: 8.7667, lat: 55.3300,
     airport: { iata: "BLL", nameZh: "比隆机场", nameEn: "Billund Airport", lon: 9.1517, lat: 55.7403 },
-    source: "里伯市中心 55.3300,8.7667；本地无商业机场，最近机场为比隆机场（距市区约45km）：公开资料",
+    source: "里伯市中心 55.3300,8.7667；本地无商业机场，最近机场为比隆机场（距市区直线约 52 km，按本条目坐标算）：公开资料",
   },
   {
     id: "billund", nameZh: "比隆", nameEn: "Billund", country: "denmark", tier: "notable", zone: "dk-syddanmark", admin1Zh: "南丹麦大区", admin1En: "Region of Southern Denmark",
@@ -3338,7 +3338,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "silkeborg", nameZh: "锡尔克堡", nameEn: "Silkeborg", country: "denmark", tier: "notable", zone: "dk-midtjylland", admin1Zh: "中日德兰大区", admin1En: "Central Denmark Region",
     lon: 9.5451, lat: 56.1697,
     airport: { iata: "AAR", nameZh: "奥胡斯机场", nameEn: "Aarhus Airport", lon: 10.6190, lat: 56.3000 },
-    source: "锡尔克堡市中心 56.1697,9.5451；本地无商业机场，最近机场为奥胡斯机场（距市区约55km）：公开资料",
+    source: "锡尔克堡市中心 56.1697,9.5451；本地无商业机场，最近机场为奥胡斯机场（距市区直线约 68 km，按本条目坐标算）：公开资料",
   },
   {
     id: "aalborg", nameZh: "奥尔堡", nameEn: "Aalborg", country: "denmark", tier: "major", zone: "dk-nordjylland", admin1Zh: "北日德兰大区", admin1En: "North Denmark Region",
@@ -3423,7 +3423,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "are", nameZh: "奥勒", nameEn: "Åre", country: "sweden", tier: "notable", zone: "se-norrland", admin1Zh: "耶姆特兰省", admin1En: "Jämtland County",
     lon: 13.0817, lat: 63.3986,
     airport: { iata: "OSD", nameZh: "奥勒—厄斯特松德机场", nameEn: "Åre Östersund Airport", lon: 14.5008, lat: 63.1936 },
-    source: "奥勒市中心 63.3986,13.0817；OSD 机场（距市区约65km）：公开资料",
+    source: "奥勒市中心 63.3986,13.0817；OSD 机场（距市区直线约 75 km，按本条目坐标算）：公开资料",
   },
   // ===== 芬兰 =====
   {
@@ -3729,7 +3729,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全北特别自治道", admin1En: "Jeonbuk State",
     lon: 127.1480, lat: 35.8242,
     airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8089, lat: 35.1264 },
-    source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区约50km）：公开资料",
+    source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区直线约 83 km，按本条目坐标算）：公开资料",
   },
 
   // ── 韩国 批2（2026-09-05）──
@@ -3905,7 +3905,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "ninh-binh", nameZh: "宁平", nameEn: "Ninh Binh", country: "vietnam", tier: "notable", zone: "vn-north", admin1Zh: "宁平省", admin1En: "Ninh Binh",
     lon: 105.9744, lat: 20.2506,
     airport: { iata: "HAN", nameZh: "内排国际机场", nameEn: "Noi Bai International", lon: 105.8073, lat: 21.2212 },
-    source: "宁平市中心 20.2506,105.9744；本地无商业机场，最近机场为河内内排国际机场（距市区约90km）：公开资料",
+    source: "宁平市中心 20.2506,105.9744；本地无商业机场，最近机场为河内内排国际机场（距市区直线约 109 km，按本条目坐标算）：公开资料",
   },
 
   // ── 越南 批2（2026-09-05）──
@@ -4144,7 +4144,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "manila", nameZh: "马尼拉", nameEn: "Manila", country: "philippines", tier: "capital", zone: "ph-luzon", admin1Zh: "马尼拉大都会", admin1En: "Metro Manila",
     lon: 120.9842, lat: 14.5995,
     airport: { iata: "MNL", nameZh: "尼诺伊·阿基诺国际机场", nameEn: "Ninoy Aquino International Airport", lon: 121.0198, lat: 14.5086 },
-    source: "马尼拉市中心 14.5995,120.9842；MNL机场（距市区约7km）：公开资料",
+    source: "马尼拉市中心 14.5995,120.9842；MNL机场（距市区直线约 11 km，按本条目坐标算）：公开资料",
   },
   {
     id: "cebu-city", nameZh: "宿务市", nameEn: "Cebu City", country: "philippines", tier: "major", zone: "ph-visayas", admin1Zh: "宿务省", admin1En: "Cebu",
@@ -4216,7 +4216,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "jakarta", nameZh: "雅加达", nameEn: "Jakarta", country: "indonesia", tier: "capital", zone: "id-java", admin1Zh: "雅加达首都特区", admin1En: "DKI Jakarta",
     lon: 106.8456, lat: -6.2088,
     airport: { iata: "CGK", nameZh: "苏加诺—哈达国际机场", nameEn: "Soekarno-Hatta International Airport", lon: 106.6559, lat: -6.1256 },
-    source: "雅加达市中心 -6.2088,106.8456；CGK机场（距市区约20km）：公开资料",
+    source: "雅加达市中心 -6.2088,106.8456；CGK机场（距市区直线约 23 km，按本条目坐标算）：公开资料",
   },
   {
     id: "yogyakarta", nameZh: "日惹", nameEn: "Yogyakarta", country: "indonesia", tier: "major", zone: "id-java", admin1Zh: "日惹特区", admin1En: "DI Yogyakarta",
@@ -4276,7 +4276,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "pangkalan-bun", nameZh: "邦卡兰文", nameEn: "Pangkalan Bun", country: "indonesia", tier: "notable", zone: "id-kalimantan", admin1Zh: "中加里曼丹省", admin1En: "Central Kalimantan",
     lon: 111.6165, lat: -2.6822,
     airport: { iata: "PKN", nameZh: "伊斯坎达尔机场", nameEn: "Iskandar Airport", lon: 111.6725, lat: -2.7048 },
-    source: "邦卡兰文市中心 -2.6822,111.6165；PKN机场（距市区约3km），是前往丹绒普丁国家公园的主要门户：公开资料",
+    source: "邦卡兰文市中心 -2.6822,111.6165；PKN机场（距市区直线约 7 km，按本条目坐标算），是前往丹绒普丁国家公园的主要门户：公开资料",
   },
   {
     id: "astana", nameZh: "阿斯塔纳", nameEn: "Astana", country: "kazakhstan", tier: "capital", zone: "kz-north", admin1Zh: "阿斯塔纳市", admin1En: "Astana",
@@ -4288,7 +4288,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "almaty", nameZh: "阿拉木图", nameEn: "Almaty", country: "kazakhstan", tier: "major", zone: "kz-southeast", admin1Zh: "阿拉木图市", admin1En: "Almaty",
     lon: 76.8512, lat: 43.2220,
     airport: { iata: "ALA", nameZh: "阿拉木图国际机场", nameEn: "Almaty International Airport", lon: 77.0405, lat: 43.3521 },
-    source: "阿拉木图市中心 43.2220,76.8512；ALA机场（距市区约18km）：公开资料",
+    source: "阿拉木图市中心 43.2220,76.8512；ALA机场（距市区直线约 21 km，按本条目坐标算）：公开资料",
   },
   {
     id: "shymkent", nameZh: "希姆肯特", nameEn: "Shymkent", country: "kazakhstan", tier: "major", zone: "kz-south", admin1Zh: "希姆肯特市", admin1En: "Shymkent",
@@ -4306,13 +4306,13 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "turkestan", nameZh: "突厥斯坦", nameEn: "Turkestan", country: "kazakhstan", tier: "notable", zone: "kz-south", admin1Zh: "突厥斯坦州", admin1En: "Turkestan Region",
     lon: 68.2500, lat: 43.3000,
     airport: { iata: "HSA", nameZh: "哈兹拉特苏丹国际机场", nameEn: "Hazrat Sultan International Airport", lon: 68.5503, lat: 43.3111 },
-    source: "突厥斯坦市中心 43.3000,68.2500；HSA机场2020年启用（距市区约16km），机场名取自艾哈迈德·亚萨维的尊号“哈兹拉特苏丹”：公开资料",
+    source: "突厥斯坦市中心 43.3000,68.2500；HSA机场2020年启用（距市区直线约 24 km，按本条目坐标算），机场名取自艾哈迈德·亚萨维的尊号“哈兹拉特苏丹”：公开资料",
   },
   {
     id: "karaganda", nameZh: "卡拉干达", nameEn: "Karaganda", country: "kazakhstan", tier: "notable", zone: "kz-central", admin1Zh: "卡拉干达州", admin1En: "Karaganda Region",
     lon: 73.1094, lat: 49.8047,
     airport: { iata: "KGF", nameZh: "萨雷阿尔卡机场", nameEn: "Sary-Arka Airport", lon: 73.3419, lat: 49.6642 },
-    source: "卡拉干达市中心 49.8047,73.1094；KGF机场（距市区约20km），是探索卡尔卡拉雷山与别克套阿塔的门户之一：公开资料",
+    source: "卡拉干达市中心 49.8047,73.1094；KGF机场（距市区直线约 23 km，按本条目坐标算），是探索卡尔卡拉雷山与别克套阿塔的门户之一：公开资料",
   },
   {
     id: "semey", nameZh: "谢梅伊", nameEn: "Semey", country: "kazakhstan", tier: "notable", zone: "kz-east", admin1Zh: "阿拜州", admin1En: "Abai Region",

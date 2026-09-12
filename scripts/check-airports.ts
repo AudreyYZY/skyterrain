@@ -173,3 +173,54 @@ if (tooShort.length || conflict.length) {
     "一个条目里提到两座不同机场是常事。**比直线长不报** —— 正文写的多是公路里程。",
   );
 }
+
+// ---------------------------------------------------------------------------
+// 第三段：注册表自己的 `source` 字符串里写的机场距离 / 机场名 × 同一条目的坐标与 airport 字段
+//
+// 由来（2026-09-12）：第二段只看正文。但 309 个条目的 `source` 字符串里也写着「距市区约 X km」，
+// 而且多数标的是「公开资料」——**正文改对了、source 还留着旧数**，或者两边一起抄了同一个错数。
+// 已查实的两种形状：
+//   · `mons`：source 写「最近机场为布鲁塞尔南沙勒罗瓦机场（距市区约20km）」，
+//     而自身坐标到 CRL 的直线是 35.5 km —— 公路里程不可能短于直线，这个 20 km 是错的。
+//   · `spa`：source 写「最近机场为**列日机场**」，`airport` 字段填的却是 **BRU 布鲁塞尔机场**
+//     —— 上一轮把停掉定期航班的列日换成了布鲁塞尔，**只改了数据、没改 source 的文字**。
+// 判据按「主语必须由构造钉死」来设：距离必须写成「距市区 / 市中心 / 城区 / 镇 …… 约 X km」
+// 才比 —— 「距某某渡口 17 公里」「义乌市区西北 5.5 公里」这类锚点不是本城，比了没意义。
+// **清单不是门禁，exit 0。**
+// ---------------------------------------------------------------------------
+const SRC_DIST = /距(?:市区|市中心|城区|市镇|镇上|本镇)[^，；（）]{0,8}?约?\s*([\d.]+)\s*(?:公里|km)/;
+const SRC_AIRPORT = /(?:最近(?:有定期(?:客运)?航班的)?机场为|最近机场是)([^（(，；:：]{2,18}?机场)/;
+const srcShort: string[] = [], srcName: string[] = [];
+let srcScanned = 0;
+
+for (const c of CITY_REGISTRY) {
+  if (!c.airport || !c.source) continue;
+  srcScanned++;
+  const real = km(c.lat, c.lon, c.airport.lat, c.airport.lon);
+  const d = c.source.match(SRC_DIST);
+  if (d) {
+    const v = Number(d[1]);
+    if (v < real * 0.95 && real - v > 2) {
+      srcShort.push(
+        `⚑ ${c.id}「${c.nameZh}」source 写 ${v} 公里 < 直线 ${real.toFixed(1)} 公里` +
+        `（${c.airport.iata} ${c.airport.nameZh}）\n     ${c.source.slice(0, 110)}`,
+      );
+    }
+  }
+  const a = c.source.match(SRC_AIRPORT);
+  if (a && !c.airport.nameZh.includes(a[1].replace(/机场$/, "")) && !a[1].includes(c.airport.nameZh.replace(/机场.*$/, ""))) {
+    srcName.push(
+      `⚑ ${c.id}「${c.nameZh}」source 说「${a[1]}」，airport 字段却是「${c.airport.nameZh}」（${c.airport.iata}）`,
+    );
+  }
+}
+
+console.log(
+  `\n注册表 source × 自身坐标：有机场字段且有 source 的 ${srcScanned} 个条目，` +
+  `source 里的距离比直线还短 ${srcShort.length} 个，source 说的机场与 airport 字段对不上 ${srcName.length} 个`,
+);
+if (!srcScanned) {
+  console.error("✗ 一个都没扫到 —— 字段名坏了");
+  process.exit(1);
+}
+for (const l of [...srcShort, ...srcName]) console.log("\n" + l);
