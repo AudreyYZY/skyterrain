@@ -129,6 +129,10 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 2, 3, 3], source: "auto" },
     "en-US": { perSentence: [0, 0, 2, 3, 3], source: "auto" },
   },
+  "bts-ksc": {
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3], source: "auto" },
+  },
   "can-bkk": {
     "zh-CN": { perSentence: [0, 0, 1, 1, 1], source: "auto" },
     "en-US": { perSentence: [0, 0, 1, 1, 1, 1], source: "auto" },

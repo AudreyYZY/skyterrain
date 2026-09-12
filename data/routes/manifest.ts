@@ -24,6 +24,7 @@ import pekHrb from "./pek-hrb.json" with { type: "json" };
 import hrbCan from "./hrb-can.json" with { type: "json" };
 import pekSha from "./pek-sha.json" with { type: "json" };
 import canBud from "./can-bud.json" with { type: "json" };
+import btsKsc from "./bts-ksc.json" with { type: "json" };
 import canHak from "./can-hak.json" with { type: "json" };
 import pekKwl from "./pek-kwl.json" with { type: "json" };
 // 中国 · 批 4（秦岭 / 塔里木 / 云藏 / 辽东）
@@ -352,6 +353,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   hrbCan,
   pekSha,
   canBud,
+  btsKsc,
   canHak,
   pekKwl,
   xiyCtu,

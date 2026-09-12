@@ -17805,9 +17805,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "zahorska-nizina": {
     // 全六段 sources: 同中文侧。小喀尔巴阡以西、摩拉瓦河以东；斯洛伐克唯一大面积内陆风成沙丘区；沙源为末次冰期河流沉积；沙丘高出周围 10–15 m；Šranecké piesky 保护区约 10 km²；欧盟 LIFE 项目。2026-09-13 首写。
     seeing:
-      "The Záhorie Lowland lies west of the Little Carpathians and east of the Morava, a low plain barely one or two hundred metres above sea level. What makes it unusual in Slovakia is its inland dunes — sand ridges standing some 10 to 15 m above the surrounding ground in continuous fields, among the larger inland dune complexes in central Europe.",
+      "The Záhorie Lowland lies west of the Little Carpathians and east of the Morava, a low plain barely one or two hundred metres above sea level. What makes it unusual in Slovakia is its inland dunes — continuous fields of sand ridges standing locally as much as 20 m above the surrounding ground, among the larger inland dune complexes in central Europe.",
     formation:
-      "The sand did not come from a desert but from rivers: during the last glacial period the bed sediments of the Danube and the Morava lay exposed under sparse vegetation, and strong winds lifted the finer sand and piled it downwind into dunes. Vegetation returned after the glacial period and fixed most of the dunes, leaving bare sand exposed in only a few places.",
+      "The sand did not come from a desert but from rivers: during the last glacial period the bed sediments of the Morava and its tributary the Dyje lay exposed under sparse vegetation, and strong winds lifted the finer sand and piled it downwind into dunes. Vegetation returned after the glacial period and fixed most of the dunes, leaving bare sand exposed in only a few places.",
     observation:
       "From the air the Záhorie Lowland is flat country of pine plantation and farmland, the dunes showing as low pale belts within the forest, aligned in much the same direction — a record of the prevailing wind at the time. The Morava floodplain with its oxbows lies to the west, the forest belt of the Little Carpathians to the east.",
     distinguish:
@@ -17837,7 +17837,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The East Slovak Lowland lies in the south-east of the country, a low plain half-enclosed by mountains and likewise part of the northern rim of the Pannonian Basin. Slovakia's lowest point is in its south-eastern corner on the bank of the Bodrog, at about 94 m above sea level.",
     formation:
-      "The lowland is also the product of tectonic subsidence, filled by alluvium from the lower courses of the Bodrog, Latorica, Uh and Hornád. Because the mountains enclose it fairly tightly and its outlet is narrow, large areas here historically stood under water as marshland, and only long programmes of drainage turned them into the farmland of today.",
+      "The lowland is also the product of tectonic subsidence, filled by alluvium from the Bodrog, the Latorica, the Uh, the Laborec and the Ondava. Because the mountains enclose it fairly tightly and its outlet is narrow, large areas here historically stood under water as marshland, and only long programmes of drainage turned them into the farmland of today.",
     observation:
       "From the air the East Slovak Lowland is flat farmland with sinuous channels and strings of oxbows, and a regular grid of drainage ditches superimposed on the natural drainage — the coexistence of these two systems is the easiest way to recognise it. The forested outlines of volcanic uplands such as Vihorlat stand to the north and east.",
     distinguish:
@@ -17880,7 +17880,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "zitny-ostrov": {
     // 全六段 sources: 同中文侧。约 1900 km²、长约 84 km、宽 15–30 km，布拉迪斯拉发至科马尔诺；夹在多瑙河、小多瑙河与瓦赫河之间；欧洲面积最大的河流岛；岛下砾石层为中欧重要地下水储集体。2026-09-13 首写。
     seeing:
-      "Žitný ostrov is the tract of land enclosed between the Danube, its distributary the Little Danube, and the Váh: about 1,900 km² in area, some 84 km long and 15 to 30 km wide, reaching from Bratislava to Komárno. By area it is the largest river island in Europe.",
+      "Žitný ostrov is the tract of land enclosed between the Danube, its distributary the Little Danube, and the Váh: some 84 km long and 15 to 30 km wide, reaching from Bratislava to Komárno; sources differ on its area, the two figures commonly given being about 1,600 and about 1,900 km². By area it is the largest river island in Europe.",
     formation:
       "Its existence follows directly from the Danube's division below the mountains: main stem and distributary each swung and shifted, and the whole ground caught between them became an island. Beneath it lie thick river gravels and sands, porous and highly permeable, which makes it an important groundwater reservoir for central Europe — the water here is not at the surface but under it.",
     observation:
@@ -17895,7 +17895,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "strbske-pleso": {
     // 全六段 sources: 同中文侧。湖面 1346 m、约 19.8 ha、最深约 20 m；高塔特拉斯洛伐克一侧面积第二大的冰蚀湖；湖畔聚落为度假与冬季运动中心。成因按「冰碛堰塞」表述（tarn 一词在来源里泛指山地湖）。2026-09-13 首写。
     seeing:
-      "Štrbské pleso lies on the southern slope of the High Tatras at 1,346 m, covering about 19.8 hectares and reaching some 20 m deep — the second largest glacial lake by area on the Slovak side of the High Tatras. The settlement of the same name on its shore is one of the main resort and winter-sports centres of the Tatra region.",
+      "Štrbské pleso lies on the southern slope of the High Tatras at 1,346 m, covering about 19.8 hectares and reaching some 26 m deep — the second largest glacial lake by area on the Slovak side of the High Tatras. The settlement of the same name on its shore is one of the main resort and winter-sports centres of the Tatra region.",
     formation:
       "The basin is not a cirque but a hollow dammed by glacial moraine. An ice-age glacier came down from the range, halted at this altitude and left an arcuate ridge of deposits; after the ice withdrew, the depression behind that ridge filled with water — which is why one side of the lake is a gentle moraine bank and the other a mountainside.",
     observation:
@@ -17912,7 +17912,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "Morské oko lies deep in the forest of the Vihorlat Mountains at 618 m, covering about 13.8 hectares, some 750 m at its longest and 312 m at its widest, and reaching about 25 m deep. It is the largest natural lake in Slovakia of non-karst origin and, by area, the third largest natural lake in the country.",
     formation:
-      "The basin was dammed by a landslide: volcanic rock on the Vihorlat slopes crept downhill, and one larger collapse blocked a valley, holding back the water that became the lake. Its area was originally about 7 hectares and reached today's roughly 13.8 hectares after the water level was raised by about 5 m.",
+      "The basin was dammed by a landslide: volcanic rock on the Vihorlat slopes crept downhill, and one larger collapse blocked a valley, holding back the water that became the lake. A dam built at the outlet in the 1880s raised the water level by about 5 m, enlarging the lake to today's roughly 13.8 hectares.",
     observation:
       "From the air it is a darker patch of water in continuous forest, its outline following the former valley, with steep slope at one end and the collapse mass blocking the valley mouth at the other. There is almost no building around it, which is the direct clue from altitude that this is a natural lake and not a reservoir — reservoirs generally show a straight dam line and access roads.",
     distinguish:
