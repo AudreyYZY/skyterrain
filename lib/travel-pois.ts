@@ -4737,7 +4737,7 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   ],
   "puerto-varas": [
     { nameZh: "圣弗朗西斯科哈维尔教堂", nameEn: "Sacred Heart Church (Iglesia de los Sagrados Corazones)", lon: -72.9840, lat: -41.3190, kind: "landmark" },
-    { nameZh: "亚科多湖滨大道", nameEn: "Lake Llanquihue Waterfront", lon: -72.9800, lat: -41.3150, kind: "nature" },
+    { nameZh: "延基韦湖滨大道", nameEn: "Lake Llanquihue Waterfront", lon: -72.9800, lat: -41.3150, kind: "nature" },
     { nameZh: "托多斯洛斯桑托斯湖", nameEn: "Lake Todos los Santos", lon: -72.1650, lat: -41.1500, kind: "nature" },
   ],
   "puerto-montt": [

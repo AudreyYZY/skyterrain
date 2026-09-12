@@ -1743,8 +1743,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // formation / concept sources: 主峰呼和巴什格 2364 m，山脊普遍 2000—2400 m，正文「约 2300—2400 米」区间合理。
     //   「大兴安岭—阴山—贺兰山—巴颜喀拉山—冈底斯山」一线为季风区／非季风区分界、且与 400 毫米年降水量线大致重合，
     //   是中国地理教材通行表述，正文未过度拔高（3 级教学资料，与教材口径一致）。2026-09-10 核，verdict: ok。
+    // seeing sources: 长度：**两说并存、都只有 3 级来源** —— 1000 km（百度百科等）与 1200 多 km（中文维基正文，该句无脚注）。两轮核实都没找到自然资源部 / 内蒙古自治区自然资源厅 / 《中国自然地理》一类 1—2 级来源给出定论，因此正文不再押注单一数值，改为并列两说并写明尚无权威口径（与 `qilian` 团结峰高程同一处理方式）。2026-09-12 核。
     seeing:
-      "The Yin Mountains run east–west across the central Inner Mongolian Plateau for about 1,000 km, made up of the Lang Shan, Wula Shan, Daqing Shan and other sections. The south slope is steep and drops onto the Hetao Plain and the Loess Plateau; the north slope is gentle and merges into the Inner Mongolian Plateau. The summit area is about 2,300–2,400 m.",
+      "The Yin Mountains run east–west across the central Inner Mongolian Plateau; published figures for their length range from about 1,000 km to over 1,200 km and no authoritative measurement settles it. The range is made up of the Lang Shan, Wula Shan, Daqing Shan and other sections. The south slope is steep and drops onto the Hetao Plain and the Loess Plateau; the north slope is gentle and merges into the Inner Mongolian Plateau. The summit area is about 2,300–2,400 m.",
     formation:
       "The Yin Shan is a fault-block range, sharply uplifted along a fault on its southern edge, giving the steep south face, with a gentler north slope; the rock is mostly old metamorphic rock and granite. It roughly blocks moist air on its southern side, so the landscape north and south of it is markedly different.",
     observation:
@@ -2832,8 +2833,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   **冰原面积是会退缩的量** —— 正文没写面积，是正确处理；日后要写必须带监测时点。
     seeing:
       "The Canadian Rockies are the stretch of the Rocky Mountain system along the British Columbia–Alberta border. They are closer to the west coast and more heavily glaciated than the U.S. Rockies. They are known for clearly bedded sedimentary rock, jagged peaks, large icefields and a string of glacial lakes; Banff, Jasper, Yoho and Kootenay national parks form a connected block that is a World Heritage site. The highest peak, Mount Robson, is 3,954 m.",
+    // formation sources: 逆冲年代：Parks Canada 沃特顿湖地质页（1 级，2026-09-12 核）——逆冲席覆盖在约 7000 万年的白垩纪岩层之上，压缩始于约 80—85 Ma；USGS 收录的断层测年（2 级同行评议）给 Rundle 逆冲 72 Ma、McConnell 逆冲 52 Ma；Britannica 给 Laramide 80—55 Ma。⚠️ 这个区间是三处来源的交集，**没有任何单一官方表述直接写「80—55 Ma」**；原区间「1 亿—6000 万年」起点落在更靠西的 Columbian/Sevier 阶段、不属本条对象，终点也早于文献给出的 52—45 Ma 收尾。Jasper 公园官网只泛说「数百万年」，取不到区间。
     formation:
-      "The rock of the Canadian Rockies is mostly limestone, dolomite and shale deposited in shallow seas over hundreds of millions of years. About 100 to 60 million years ago, compression from the west stacked these layers up along a series of near-parallel thrust faults — like pushing a stack of books — forming ranges of consistent trend. Glaciers then carved the upper mountains into horns, arêtes, cirques and U-shaped valleys; the Columbia Icefield is a large surviving alpine icefield whose meltwater flows to the Pacific, the Atlantic and the Arctic oceans.",
+      "The rock of the Canadian Rockies is mostly limestone, dolomite and shale deposited in shallow seas over hundreds of millions of years. About 80 to 55 million years ago, in the Late Cretaceous to early Paleogene, compression from the west stacked these layers up along a series of near-parallel thrust faults — like pushing a stack of books — forming ranges of consistent trend. Glaciers then carved the upper mountains into horns, arêtes, cirques and U-shaped valleys; the Columbia Icefield is a large surviving alpine icefield whose meltwater flows to the Pacific, the Atlantic and the Arctic oceans.",
     observation:
       "From the air the Canadian Rockies are a set of parallel ranges of consistent trend, with layer upon layer of horizontal or tilted sedimentary rock clearly visible on the mountainsides; many peaks are \"cuesta\" forms, a steep cliff on one side and a gentler dip slope on the other. The valleys are wide and flat (glacial U-shapes), with turquoise glacial lakes on their floors (rock flour in the water scatters the light) such as Lake Louise and Moraine Lake. The Columbia Icefield is a white plateau-like ice surface on the main crest.",
     distinguish:
@@ -8564,8 +8566,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // 全六段 sources: 希腊面积最大的天然湖，各来源给 96—98.6 km²，正文「约 96」落在通行区间内。
     //   ✅ 与 `lake-prespa` 并排读自洽（普雷斯帕大部分在境外、希腊境内部分更小）。
     //   ⚠️ 未找到带监测年份的官方（希腊环境部／EKBY）数字，级别停在 3 级；下一轮补年份口径。2026-09-10 核，verdict: ok。
+    // seeing sources: 面积：各来源 95.8—98.6 km²（希腊语维基 95.8 / lakesnetwork 96.5 与 98.6 / EKBY 片段 97），**没有一处带监测年份**；希腊农村发展与食品部页面疑似给 96.5 km² 但 403 取不到原文（1 级未能核实）；Natura 2000 GR2310009 只给两湖合计湿地 14,279.8 ha（1995），是保护区边界不是湖面面积。正文因此改成 96—99 的区间并写明没有官方监测数字。2026-09-12 核。排名：沃尔维湖约 70 km²、韦戈里蒂达湖约 45—54 km²，级差悬殊，「面积最大的天然湖泊」成立（3 级来源一致）。
     seeing:
-      "Lake Trichonida lies in the Aetolia-Acarnania region of western mainland Greece and is Greece's largest natural lake by surface area, covering about 96 km².",
+      "Lake Trichonida lies in the Aetolia-Acarnania region of western mainland Greece and is Greece's largest natural lake by surface area; published figures range from about 96 to 99 km², with no official measurement carrying a survey year.",
     formation:
       "The lake basin is tectonic in origin, formed by subsidence along a regional fault zone, with comparatively great depth; it is fed mainly by runoff and groundwater from the surrounding hills.",
     observation:
@@ -9143,8 +9146,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // formation / history sources: 历史上大片荒原／湿地景观（至 1960 年代前）；战后坎皮讷煤田开采带动工业；多处军事基地与空军基地。
     //   ⚠️ distinguish 的「是默兹—莱茵三角洲的一部分」**记 unknown**：这是常见的第四纪地质学表述，但找不到 1/2 级来源直接印证。
     //   下一轮核佛兰德／比利时地质调查局的第四纪地层分类。3 级。2026-09-10 核。
+    // seeing sources: 成因归属：佛兰德地质数据库 DOV（1 级）与 Springer《The Campine Plateau》专章（2 级同行评议）都写「默兹河与莱茵河的第四纪辫状河／河流阶地沉积」（Lommel 砂 / Winterslag 砂 / Zutendaal 砾石），不是「三角洲」——delta 在地质学里特指河流入海或入湖处的沉积体。原文「是默兹—莱茵三角洲的一部分」查无官方出处，已改。2026-09-12 核。⚠️ 上一轮注释把这句记在 distinguish 段，实际一直在 seeing 段（中英都是）——字段记错会让下一轮误判「正文已无此表述」。
     seeing:
-      "The Campine (Kempen) is a low, flat sandy upland straddling north-eastern Belgium and southern Netherlands, part of the Meuse-Rhine delta.",
+      "The Campine (Kempen) is a low, flat sandy upland straddling north-eastern Belgium and southern Netherlands, built from Quaternary braided-river deposits of the Meuse and Rhine.",
     formation:
       "The upland surface is covered in Quaternary wind-blown and river-deposited sandy soil; historically poor drainage produced extensive heathland, dunes and wetlands.",
     observation:
@@ -11541,8 +11545,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Thanks to its raw natural scenery, Fårö was the long-time home of Swedish film director Ingmar Bergman and the setting for several of his films; the island now holds an exhibition space named in his honour.",
   },
   soderasen: {
+    // seeing sources: 长度：**查无 1/2 级来源**。Länsstyrelsen Skåne 官方页（1 级，2026-09-12 核）详述地质与峡谷但不给岭脊长度；Naturvårdsverket riksintresse 文档取不到。网上流传的 22/30/40/90 公里都是徒步路线里程（Skåneleden），不是岭脊本身。原文的「长约22公里」已删除 —— 两轮核实都找不到出处，删比保留一个无出处的数好。若将来 SGU 或国家公园官网给出长度再补。
     seeing:
-      "Söderåsen is a fault-block ridge in north-central Skåne, about 22 km long, with steep escarpments on both sides.",
+      "Söderåsen is a fault-block ridge in north-central Skåne with steep escarpments on both sides.",
     formation:
       "The ridge is a fault block uplifted by tectonic movement, with steep cliff faces along the fault planes on both sides — a sharp contrast with the flat farming plain typical of the rest of Skåne.",
     observation:
@@ -17338,6 +17343,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Valle de la Luna was designated a national reserve in 1982 and is the best-known viewpoint near San Pedro de Atacama; because its terrain closely resembles the lunar surface, it has historically also been used as an analogue site for planetary geology research.",
   },
   "lake-llanquihue": {
+    // seeing sources: ⚠️ Chinese-name fix (2026-09-12), zh side only: the Chinese text used two unsourced names for
+    //   Lago Llanquihue and Lago Todos los Santos; one of them ("耶尔科湖") is in fact a different real Chilean lake
+    //   (Lago Yelcho). Renamed library-wide; see the zh file's note. The English text was already correct.
     // seeing / history sources: 面积主流口径 870.5 km²（另有 860／877 km²，同一量级），智利第二大湖（次于赫内拉尔卡雷拉湖）；
     //   湖区德国移民始于 1850 年代（维森特·佩雷斯·罗萨莱斯移民法案），属广泛记载史实。3 级多方一致。2026-09-10 核，verdict: ok。
     seeing:

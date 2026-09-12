@@ -5713,14 +5713,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "圣地亚哥飞普埃托蒙特，是智利南部最经典的湖区航线之一，也是通往巴塔哥尼亚的传统门户。飞机离开中央谷地后一路向南，田野逐渐被湖泊与森林取代，湿润程度明显增加。" +
-      "临近降落时，舷窗下方会出现奥索尔诺火山——一座形态极为对称的成层火山，因外形酷似日本富士山常被称作“智利富士山”，矗立在亚科多湖与耶尔科湖之间。19世纪起，这一带吸引了大批德国移民定居，普埃托瓦拉斯等湖畔小镇至今保留着浓厚的德式建筑风格。" +
+      "临近降落时，舷窗下方会出现奥索尔诺火山——一座形态极为对称的成层火山，因外形酷似日本富士山常被称作“智利富士山”，矗立在延基韦湖与托多斯洛斯桑托斯湖之间。19世纪起，这一带吸引了大批德国移民定居，普埃托瓦拉斯等湖畔小镇至今保留着浓厚的德式建筑风格。" +
       "飞机最终降落在普埃托蒙特——智利南部通往巴塔哥尼亚与奇洛埃群岛的主要海空交通枢纽，也是重要的三文鱼养殖产业中心。这条航线浓缩了智利从“干燥中部”到“多雨南部”的完整过渡。",
     "en-US":
       "Santiago to Puerto Montt is one of southern Chile's classic Lake District routes and the traditional gateway to Patagonia. After leaving the Central Valley, the flight heads steadily south as farmland gives way to lakes and forest, with humidity rising noticeably along the way." +
       " Just before landing, Osorno Volcano comes into view — an exceptionally symmetrical stratovolcano often called 'Chile's Mount Fuji' for its resemblance to Japan's iconic peak, standing between Lake Llanquihue and Lake Todos los Santos. Beginning in the 19th century, this area drew large numbers of German immigrants, and lakeside towns such as Puerto Varas still retain a strong German architectural character today." +
       " The flight lands at Puerto Montt, the main sea-and-air gateway from southern Chile to Patagonia and the Chiloé Archipelago, and an important center of the salmon-farming industry. This route condenses Chile's full transition from a dry center to a rainy south into a single flight.",
     },
-    // travel sources: 全四段（study/travel × 中英）: 奥索尔诺火山对称锥形；「普恩塔斯港」为误译，已统一为「普埃托瓦拉斯」；湖名「亚科多湖 / 耶尔科湖」译名待查，已开 issue。核实 2026-09-11
+    // travel sources: 全四段（study/travel × 中英）: 奥索尔诺火山对称锥形；「普恩塔斯港」为误译，已统一为「普埃托瓦拉斯」；湖名「延基韦湖 / 托多斯洛斯桑托斯湖」译名待查，已开 issue。核实 2026-09-11
     travel: {
     "zh-CN":
       "圣地亚哥到普埃托蒙特约1小时45分钟，智利南美航空执飞。埃尔特帕尔机场距市区约16公里，有出租车与酒店接驳车往返市区。" +

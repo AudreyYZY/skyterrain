@@ -9921,7 +9921,7 @@ const SODERASEN: TerrainEntry = {
   landmark: { name: "科帕哈滕观景台", lon: 13.2500, lat: 56.0333, elevation: 195, kind: "escarpment" },
   bbox: [13.10, 55.98, 13.45, 56.10],
   label: { lon: 13.25, lat: 56.03, rotation: 0 },
-  source: "苏德罗森岭：斯科讷省中北部一条断块隆起的岭脊，长约22公里，两侧断崖陡立，岭上生长着瑞典南部保存最完好的古老阔叶林之一，1988年设立国家公园（瑞典国家公园管理局）",
+  source: "苏德罗森岭：斯科讷省中北部一条断块隆起的岭脊（长度查无 1/2 级来源，2026-09-12 两轮核实后从正文删去），两侧断崖陡立，岭上生长着瑞典南部保存最完好的古老阔叶林之一，1988年设立国家公园（瑞典国家公园管理局）",
 };
 
 const TIVEDEN: TerrainEntry = {
@@ -15030,7 +15030,7 @@ const OSORNO_VOLCANO: TerrainEntry = {
   landmark: { name: "奥索尔诺火山", lon: -72.493, lat: -41.100, elevation: 2652, kind: "peak" },
   bbox: [-72.65, -41.22, -72.30, -40.95],
   label: { lon: -72.49, lat: -41.10, rotation: 0 },
-  source: "奥索尔诺火山：形态对称的成层火山，海拔2652米，因外形酷似富士山常被称作“智利富士山”，矗立在亚科多湖与耶尔科湖之间，是湖区最上镜的地标；近两百年记录在案的喷发超过10次，最近一次为1869年（SERNAGEOMIN/公开地理资料 WebSearch 2026）",
+  source: "奥索尔诺火山：形态对称的成层火山，海拔2652米，因外形酷似富士山常被称作“智利富士山”，矗立在延基韦湖与托多斯洛斯桑托斯湖之间，是湖区最上镜的地标；近两百年记录在案的喷发超过10次，最近一次为1869年（SERNAGEOMIN/公开地理资料 WebSearch 2026）",
 };
 
 const LLAIMA_VOLCANO: TerrainEntry = {
@@ -15156,15 +15156,15 @@ const VALLE_DE_LA_LUNA: TerrainEntry = {
 
 const LAKE_LLANQUIHUE: TerrainEntry = {
   id: "lake-llanquihue",
-  nameZh: "亚科多湖",
+  nameZh: "延基韦湖",
   nameEn: "Lake Llanquihue",
   category: "lake",
   regionId: "south-america",
   country: "chile",
-  landmark: { name: "亚科多湖", lon: -72.87, lat: -41.15, elevation: 51, kind: "lake" },
+  landmark: { name: "延基韦湖", lon: -72.87, lat: -41.15, elevation: 51, kind: "lake" },
   bbox: [-73.10, -41.35, -72.60, -40.95],
   label: { lon: -72.87, lat: -41.15, rotation: 0 },
-  source: "亚科多湖：面积约860平方公里，是智利第二大湖，由更新世冰川作用形成的冰蚀湖盆蓄水而成；湖岸风光以奥索尔诺火山、卡尔布科火山的倒影著称，普埃托瓦拉斯、弗鲁蒂利亚等湖畔小镇保留大量19世纪德国移民建筑风格（公开地理资料 WebSearch 2026）",
+  source: "延基韦湖：面积约860平方公里，是智利第二大湖，由更新世冰川作用形成的冰蚀湖盆蓄水而成；湖岸风光以奥索尔诺火山、卡尔布科火山的倒影著称，普埃托瓦拉斯、弗鲁蒂利亚等湖畔小镇保留大量19世纪德国移民建筑风格（公开地理资料 WebSearch 2026）",
 };
 
 const LAKE_VILLARRICA: TerrainEntry = {
