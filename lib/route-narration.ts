@@ -1706,11 +1706,11 @@ export const ROUTE_NARRATION: Record<
     travel: {
     "zh-CN":
       "雷克雅未克到埃伊尔斯塔济飞约一小时，同一时区，用市区 RKV 机场。自驾环岛到东部要 8–9 小时，所以飞机很受欢迎。" +
-      "东部是冰岛人口最稀、最“边远”的一角。以埃伊尔斯塔济为基地可翻山去彩虹街的塞济斯菲厄泽、去东部峡湾自驾，北上两小时到黛提瀑布和米湖。" +
+      "东部是冰岛人口最稀疏的地区之一，也是最有“边远”感的一角（按大区人口计，全国最少的是西部的西峡湾）。以埃伊尔斯塔济为基地可翻山去彩虹街的塞济斯菲厄泽、去东部峡湾自驾，北上两小时到黛提瀑布和米湖。" +
       "东部景点车程长、加油站少，随时留意油量。93 号公路冬季多雪多雾。",
     "en-US":
       "Reykjavík to Egilsstaðir is about an hour, in the same time zone, using the city's RKV airport. Driving the Ring Road to the east takes 8–9 hours, so flying is popular." +
-      " The east is the most sparsely populated and 'remote'-feeling corner of Iceland. From Egilsstaðir you can go over the mountains to Seyðisfjörður with its rainbow street, drive the eastern fjords, or head two hours north to Dettifoss and Mývatn." +
+      " The east is among the most sparsely populated and most remote-feeling corners of Iceland (by region, the fewest people live in the Westfjords to the west). From Egilsstaðir you can go over the mountains to Seyðisfjörður with its rainbow street, drive the eastern fjords, or head two hours north to Dettifoss and Mývatn." +
       " Distances between eastern sights are long and petrol stations few — watch the fuel gauge. Route 93 has snow and fog in winter.",
     },
   },

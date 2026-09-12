@@ -8784,7 +8784,7 @@ const MUR_RIVER: TerrainEntry = {
   axis: [[13.65, 47.35], [15.55, 46.95]],
   viewScale: 1.5,
   label: { lon: 14.6, lat: 47.15, rotation: -15 },
-  source: "穆尔河：发源于拉德施塔特陶恩山，全长约453公里，其中很长一段流经施泰尔马克州，最终经斯洛文尼亚、克罗地亚汇入德拉瓦河；上游河段保留有奥地利面积第二大的河漫滩森林，是多瑙鲑等珍稀鱼类的天然产卵地，被认为是奥地利生态价值最高的河流之一；格拉茨市即坐落在穆尔河畔（欧洲环境署 / 大英百科）",
+  source: "穆尔河：发源于拉德施塔特陶恩山，全长约453公里，其中很长一段流经施泰尔马克州，最终经斯洛文尼亚、克罗地亚汇入德拉瓦河；下游与斯洛文尼亚交界的河段（Unteres Murtal，2019 年 UNESCO 生物圈公园）保留有奥地利面积第二大的河漫滩森林，是多瑙鲑等珍稀鱼类的天然产卵地，被认为是奥地利生态价值最高的河流之一；格拉茨市即坐落在穆尔河畔（欧洲环境署 / 大英百科）",
 };
 
 const WORTHERSEE: TerrainEntry = {
@@ -15198,6 +15198,187 @@ const TISZA_RIVER: TerrainEntry = {
   source: "蒂萨河：多瑙河最长的支流，自东北向西南斜贯匈牙利大平原；19 世纪起的大规模裁弯取直与筑堤工程把它原来的自由曲流河道大幅缩短，河道两侧至今保留着成串的牛轭湖（匈牙利水管理部门与公开地理资料口径，WebSearch 2026-09）",
 };
 
+const VISEGRAD_HILLS: TerrainEntry = {
+  id: "visegrad-hills",
+  nameZh: "维谢格拉德山",
+  nameEn: "Visegrád Hills",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "多博戈山", lon: 18.8967, lat: 47.7186, elevation: 700, kind: "peak" },
+  bbox: [18.78, 47.65, 19.10, 47.82],
+  axis: [[18.82, 47.72], [19.05, 47.75]],
+  viewScale: 1.1,
+  label: { lon: 18.90, lat: 47.84, rotation: 0 },
+  source: "维谢格拉德山：多瑙河湾南岸的中新世安山岩火山山地，与北岸的伯尔容山同属一个火山系统、被多瑙河切开；最高点多博戈山海拔约 700 米。它与西邻的皮利什山常被混称，但两者岩性与所属山系都不同（多瑙河—伊波伊河谷国家公园与匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const VERTES: TerrainEntry = {
+  id: "vertes",
+  nameZh: "维尔特什山",
+  nameEn: "Vértes",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "大恰卡尼山", lon: 18.3617, lat: 47.3739, elevation: 487, kind: "peak" },
+  bbox: [18.15, 47.25, 18.60, 47.50],
+  axis: [[18.20, 47.32], [18.55, 47.45]],
+  viewScale: 1.1,
+  label: { lon: 18.36, lat: 47.52, rotation: 0 },
+  source: "维尔特什山：外多瑙山系中段的中生代石灰岩与白云岩断块山地，最高点大恰卡尼山（Nagy-Csákány）海拔 487 米；西侧以陡崖俯瞰莫尔沟（Móri-árok）断陷谷（匈牙利国家公园管理局与匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const GERECSE: TerrainEntry = {
+  id: "gerecse",
+  nameZh: "盖雷切山",
+  nameEn: "Gerecse",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "大盖雷切山", lon: 18.4808, lat: 47.6875, elevation: 634, kind: "peak" },
+  bbox: [18.25, 47.58, 18.75, 47.80],
+  axis: [[18.30, 47.65], [18.70, 47.72]],
+  viewScale: 1.1,
+  label: { lon: 18.48, lat: 47.82, rotation: 0 },
+  source: "盖雷切山：外多瑙山系东段的中生代石灰岩山地，最高点大盖雷切山（Nagy-Gerecse）海拔 634 米；北缘直抵多瑙河，历史上以红色石灰岩（「盖雷切红」）采石著称（匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const KOSZEG_MOUNTAINS: TerrainEntry = {
+  id: "koszeg-mountains",
+  nameZh: "克塞格山",
+  nameEn: "Kőszeg Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "伊罗特科峰", lon: 16.4306, lat: 47.3500, elevation: 882, kind: "peak" },
+  bbox: [16.30, 47.28, 16.65, 47.45],
+  axis: [[16.33, 47.33], [16.60, 47.40]],
+  viewScale: 1.05,
+  label: { lon: 16.43, lat: 47.47, rotation: 0 },
+  source: "克塞格山：匈牙利西部边缘的变质岩（片岩、千枚岩）低山，是阿尔卑斯东缘余脉伸入喀尔巴阡盆地的一段；最高点伊罗特科峰（Írott-kő）海拔 882 米，在匈牙利与奥地利交界一带，也是匈牙利外多瑙地区的最高点（匈牙利国家公园管理局与匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const AGGTELEK_KARST: TerrainEntry = {
+  id: "aggtelek-karst",
+  nameZh: "阿格泰莱克喀斯特",
+  nameEn: "Aggtelek Karst",
+  category: "plateau",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "巴拉德拉洞入口", lon: 20.5133, lat: 48.4697, elevation: 340, kind: "gorge" },
+  bbox: [20.30, 48.38, 20.80, 48.58],
+  axis: [[20.35, 48.45], [20.72, 48.52]],
+  viewScale: 1.1,
+  label: { lon: 20.52, lat: 48.60, rotation: 0 },
+  source: "阿格泰莱克喀斯特：匈牙利东北部的三叠纪石灰岩喀斯特台地，地表发育落水洞与干谷、地下发育大型洞穴系统，其中巴拉德拉洞是最著名的一处；1995 年与相邻的斯洛伐克喀斯特一并以「阿格泰莱克喀斯特与斯洛伐克喀斯特洞穴群」列入 UNESCO 世界自然遗产（whc.unesco.org 与阿格泰莱克国家公园官网，WebSearch 2026-09）",
+};
+
+const BALATON_WITNESS_HILLS: TerrainEntry = {
+  id: "balaton-witness-hills",
+  nameZh: "巴拉顿高地玄武岩证人山",
+  nameEn: "Basalt Witness Hills of the Balaton Uplands",
+  category: "inselberg",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "巴达乔尼山", lon: 17.5017, lat: 46.7969, elevation: 437, kind: "peak" },
+  bbox: [17.25, 46.72, 17.75, 46.92],
+  axis: [[17.30, 46.78], [17.70, 46.86]],
+  viewScale: 1.05,
+  label: { lon: 17.50, lat: 46.94, rotation: 0 },
+  source: "巴拉顿高地玄武岩证人山：巴拉顿湖北岸一批孤立的平顶山与火山颈，成因是上新世玄武岩火山活动留下的熔岩盖与火山通道，周围较软的沉积岩被剥蚀后它们留存下来；巴达乔尼山（437 米）、圣乔治山、绍姆洛山是其中最醒目的几座（巴拉顿高地国家公园口径，WebSearch 2026-09）",
+};
+
+const TIHANY_PENINSULA: TerrainEntry = {
+  id: "tihany-peninsula",
+  nameZh: "蒂豪尼半岛",
+  nameEn: "Tihany Peninsula",
+  category: "inselberg",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "蒂豪尼内湖", lon: 17.8900, lat: 46.9147, elevation: 130, kind: "lake" },
+  bbox: [17.84, 46.87, 17.95, 46.96],
+  axis: [[17.86, 46.89], [17.93, 46.95]],
+  viewScale: 1.0,
+  label: { lon: 17.89, lat: 46.98, rotation: 0 },
+  source: "蒂豪尼半岛：从巴拉顿湖北岸伸入湖中的火山半岛，由上新世凝灰岩与玄武岩构成，几乎把湖面掐成两段；半岛上的内湖是火山口积水而成，另有温泉活动留下的泉华丘（gejzírkúp）。1952 年设为匈牙利第一处景观保护区（巴拉顿高地国家公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_FERTO: TerrainEntry = {
+  id: "lake-ferto",
+  nameZh: "费尔特湖",
+  nameEn: "Lake Fertő",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "费尔特湖芦苇带", lon: 16.7500, lat: 47.6800, elevation: 115, kind: "lake" },
+  bbox: [16.62, 47.62, 16.98, 47.88],
+  axis: [[16.68, 47.66], [16.92, 47.84]],
+  viewScale: 1.1,
+  label: { lon: 16.75, lat: 47.90, rotation: 0 },
+  source: "费尔特湖：欧亚草原带最西端的一处内陆碱性浅水湖，位于匈牙利与奥地利交界，湖面大部分在奥地利一侧；水深极浅、湖岸被大片芦苇带包围，水位随蒸发与降水大幅摆动，历史上曾多次几近干涸。2001 年以「费尔特／新锡德尔湖文化景观」列入 UNESCO 世界遗产（whc.unesco.org 与费尔特—汉沙格国家公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_HEVIZ: TerrainEntry = {
+  id: "lake-heviz",
+  nameZh: "赫维兹温泉湖",
+  nameEn: "Lake Hévíz",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "赫维兹湖", lon: 17.1900, lat: 46.7881, elevation: 117, kind: "lake" },
+  bbox: [17.17, 46.78, 17.21, 46.80],
+  axis: [[17.18, 46.785], [17.20, 46.793]],
+  viewScale: 1.0,
+  label: { lon: 17.19, lat: 46.805, rotation: 0 },
+  source: "赫维兹温泉湖：巴拉顿湖西端附近的一处天然温泉湖，由湖底的岩溶泉持续涌出温水补给，水体整体温热、全年可浴，是世界上面积最大的可供沐浴的天然温泉湖之一；湖水更新很快，是理解岩溶泉出露与地下热水循环的现成案例（巴拉顿高地国家公园与匈牙利水文资料口径，WebSearch 2026-09）",
+};
+
+const LAKE_VELENCE: TerrainEntry = {
+  id: "lake-velence",
+  nameZh: "沃伦采湖",
+  nameEn: "Lake Velence",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "沃伦采湖", lon: 18.6300, lat: 47.2100, elevation: 104, kind: "lake" },
+  bbox: [18.52, 47.16, 18.72, 47.26],
+  axis: [[18.55, 47.18], [18.70, 47.24]],
+  viewScale: 1.05,
+  label: { lon: 18.63, lat: 47.28, rotation: 0 },
+  source: "沃伦采湖：布达佩斯西南的一处浅水湖，水深大多不足两米，西端有大片芦苇沼泽、是重要的水鸟栖息地；湖水含碱，夏季升温极快（多瑙河—伊波伊河谷国家公园与匈牙利水文资料口径，WebSearch 2026-09）",
+};
+
+const DANUBE_HUNGARY: TerrainEntry = {
+  id: "danube-hungary",
+  nameZh: "多瑙河匈牙利段",
+  nameEn: "Danube in Hungary",
+  category: "river",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "布达佩斯河段", lon: 19.0450, lat: 47.4979, elevation: 96, kind: "city" },
+  bbox: [16.90, 45.75, 19.20, 48.00],
+  axis: [[17.10, 47.85], [18.95, 45.90]],
+  viewScale: 1.6,
+  label: { lon: 18.60, lat: 46.60, rotation: 0 },
+  source: "多瑙河匈牙利段：多瑙河自西北进入匈牙利，先横穿小平原，在多瑙河湾折向南，纵贯大平原后出境；匈牙利境内河段是全河中下游的一段，河道在平原上宽阔、多沙洲（匈牙利水管理部门与公开地理资料口径，WebSearch 2026-09）",
+};
+
+const SZIGETKOZ: TerrainEntry = {
+  id: "szigetkoz",
+  nameZh: "岛间地",
+  nameEn: "Szigetköz",
+  category: "river",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "岛间地汊流区", lon: 17.3000, lat: 47.8500, elevation: 115, kind: "delta" },
+  bbox: [17.05, 47.72, 17.90, 48.00],
+  axis: [[17.10, 47.95], [17.85, 47.76]],
+  viewScale: 1.2,
+  label: { lon: 17.30, lat: 48.02, rotation: 0 },
+  source: "岛间地（Szigetköz）：多瑙河进入小平原后坡度骤减、河道分汊，在主流与汊流之间围出的一片河间岛地带，地表是成网的汊流、牛轭湖与河漫滩森林；是中欧规模较大的内陆河流岛区之一（费尔特—汉沙格国家公园与匈牙利水管理部门口径，WebSearch 2026-09）",
+};
+
+
 
 
 // ============================================================
@@ -15983,6 +16164,10 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MATRA, BUKK, BORZSONY, PILIS, BAKONY, MECSEK, ZEMPLEN,
   ALFOLD, KISALFOLD, HORTOBAGY, KISKUNSAG,
   DANUBE_BEND, LAKE_BALATON, TISZA_RIVER,
+  VISEGRAD_HILLS, VERTES, GERECSE, KOSZEG_MOUNTAINS,
+  AGGTELEK_KARST, BALATON_WITNESS_HILLS, TIHANY_PENINSULA,
+  LAKE_FERTO, LAKE_HEVIZ, LAKE_VELENCE,
+  DANUBE_HUNGARY, SZIGETKOZ,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,

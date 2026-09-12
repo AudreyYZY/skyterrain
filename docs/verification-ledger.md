@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: c958042
+lastVerifiedCommit: 75779ab
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: c958042
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | 随机抽样审计第 2–4 批查出的 8 处错 + 2 处 unknown 收紧（R42） | 11 | 0 / 11 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 随机抽样质量审计第一批（seed=1，n=30）查出的 2 处（R41） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 匈牙利地形第 1 批的联网核实（18 项，16 项属实）（R40） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 三条卡了几轮的核实换手段：胡志明市面积（决议原文）、蒙古与达尔汗人口（R39） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |

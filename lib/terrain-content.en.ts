@@ -10260,11 +10260,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "mur-river": {
     // concept sources: 上游河段的河漫滩森林为奥地利面积第二大（施泰尔马克 Murauen UNESCO 生物圈公园）；
     //   多瑙鲑（Huchen）作为受威胁物种在该河记录在案。3 级。2026-09-10 核，verdict: ok。
-    // seeing sources: 州内河长无 1–2 级来源，删去具体数。核实 2026-09-12
+    // seeing sources: Unteres Murtal（2019 年 UNESCO 生物圈公园）在下游边境段。随机抽样审计（seed=3）抽中。2026-09-13 核。
     seeing:
       "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, much of it through Styria; the city of Graz sits on its banks.",
     formation:
-      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest by area.",
+      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the lower river, along the Slovenian border, preserves Austria's second-largest floodplain forest by area.",
     observation:
       "From the air, the upper Mur winds through mountain gorges, its middle and lower channel widening, with floodplain forest running in a band along the river; Graz's old town, laid out along both banks, is the clearest marker for identifying this river.",
     distinguish:
@@ -15280,8 +15280,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Nusa Penida is an island off the southeast coast of Bali; a well-known landmark, Kelingking Cliff on the southwest shore, rises about 150 m above sea level and is widely recognised for its dinosaur-like silhouette.",
     formation:
       "Kelingking Cliff is composed of limestone from an ancient coral reef uplifted above sea level over millions of years; sustained wave erosion has gradually undercut the base of the cliff, shaping its current steep profile and the narrow beach below.",
+    // observation sources: 80 m 仅见于四级来源且各源互相矛盾（80/200/300 m），已去掉具体数。随机抽样审计（seed=3）判为 unknown。2026-09-13 核。
     observation:
-      "From the air, Kelingking Cliff shows a layered limestone rock face, its top vegetated and its base fronted by a narrow beach roughly 80 m long; similar uplifted coral-reef cliff landforms occur at several points along Nusa Penida's coastline.",
+      "From the air, Kelingking Cliff shows a layered limestone rock face, its top vegetated and its base fronted by a short, narrow beach; similar uplifted coral-reef cliff landforms occur at several points along Nusa Penida's coastline.",
     distinguish:
       "Both Nusa Penida and the Uluwatu Cliffs are made of uplifted coral-reef limestone, but Nusa Penida is a separate island east of Bali, while Uluwatu forms part of the Bukit Peninsula attached to mainland Bali.",
     concept:
@@ -17321,6 +17322,174 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Meanders and oxbows are the direct consequence of a river having no room to cut down on a plain. Straightening a channel shortens it, steepens its gradient and speeds the flow; that helps with flood discharge but also changes the river's established pattern of deposition and its ecology — the Tisza offers nearly two centuries of worked example.",
     history:
       "The river regulation begun in the nineteenth century was among the largest civil engineering undertakings in modern Hungary, greatly shortening the freely meandering course and turning flooded wetland into arable; strings of oxbow lakes and remnant gallery forest survive along both sides to this day.",
+  },
+  "visegrad-hills": {
+    seeing:
+      "The Visegrád Hills rise on the southern bank of the Danube Bend, a Miocene andesite massif whose highest point, Dobogó-kő, reaches about 700 m. They are often conflated with the Pilis to the west, though the two belong to different ranges and are made of different rock.",
+    formation:
+      "The massif originally belonged to the same volcanic system as the Börzsöny on the northern bank, and the Danube cut between them. Once the eruptions stopped the cone was stripped away, so today's form is what remains of the inside of the edifice; the northern edge drops straight into the Danube Bend, the steepest bank along that reach.",
+    observation:
+      "From the air the Visegrád Hills and the Börzsöny across the river share the same colour and texture — both dark volcanic bulk — while the Pilis to the west shows broad patches of pale grey rock. **Colour separates the three better than position does.**",
+    distinguish:
+      "The Visegrád Hills and the Börzsöny are one volcanic system cut in two by a river and so resemble each other most closely; the Pilis is merely adjacent, differing in rock and in the range it belongs to. Treating the Visegrád Hills as part of the Pilis is a common but inaccurate usage.",
+    concept:
+      "A river cutting a volcanic system in two leaves rock of the same kind on both banks — the most direct evidence that the two were once one. By contrast, two adjoining ranges built of different rock usually have different origins.",
+    history:
+      "The castle above and the royal palace beside the Danube below were among the seats of the Hungarian court in the fourteenth century; the area lies within the Duna–Ipoly National Park today.",
+  },
+  vertes: {
+    seeing:
+      "The Vértes lies between the Bakony and the Gerecse, a limestone and dolomite range in the middle of the Transdanubian system, with Nagy-Csákány at 487 m its highest point — middling by Hungarian standards, low on a European scale.",
+    formation:
+      "The range is Mesozoic carbonate rock raised in blocks. Its western side drops abruptly along a fault to the Mór trench beyond; the asymmetry of a block range — steep on one side, gentle on the other — is unusually clear here.",
+    observation:
+      "From the air the Vértes is a low forested upland with a scarp along its western edge so straight it hardly looks natural — that is the fault, with the Bakony facing it across the trench.",
+    distinguish:
+      "The Vértes, the neighbouring Bakony and the Gerecse are all carbonate blocks of the Transdanubian system, but the Bakony is the largest and carries basalt volcanism along its edge, the Gerecse is known for its red limestone, and the mark of the Vértes is that straight fault scarp on its western side.",
+    concept:
+      "A straight valley between two ranges is usually not the work of a river but of a subsided fault zone. The shape tells them apart: a river valley bends with the ground and varies in width, a rift valley runs straight with matching scarps on both sides.",
+    history:
+      "Forestry and quarrying were the mainstays here and medieval quarry workings survive; most of the range lies within the Vértes landscape protection area.",
+  },
+  gerecse: {
+    seeing:
+      "The Gerecse is the eastern section of the Transdanubian range, reaching the Danube along its northern edge, with Nagy-Gerecse at 634 m its highest point. It is known for a red limestone long used as a decorative building stone.",
+    formation:
+      "The range is Mesozoic limestone raised in blocks; among its beds an iron-stained red limestone was the one most sought in quarrying. The northern slope falls away towards the Danube, which has cut a distinct shoulder along its foot.",
+    observation:
+      "From the air the Gerecse is a gently rolling forested upland on the southern bank of the Danube, with quarries scattered through it — pale or reddish rectangles that stand out sharply against continuous forest.",
+    distinguish:
+      "The Gerecse and the Vértes to the west are both carbonate blocks of the Transdanubian system at similar heights; the difference is that the Gerecse fronts the Danube and is known for red limestone quarrying, while the Vértes is marked by the straight fault scarp on its western side.",
+    concept:
+      "The colour of limestone comes from its impurities: iron-bearing beds are red, organic-rich ones grey to black, the purest nearly white. Beds within a single range can differ widely in colour, and that is what quarrying selects on.",
+    history:
+      "Quarrying of the red limestone here goes back to Roman times and the stone was widely used for architectural decoration from the Middle Ages onward; the range today is mostly woodland and protected landscape.",
+  },
+  "koszeg-mountains": {
+    seeing:
+      "The Kőszeg Mountains stand on Hungary's western edge, the point where the eastern outliers of the Alps reach into the Carpathian Basin. The highest point, Írott-kő, reaches 882 m where Hungary and Austria meet, and is also the highest point of Hungarian Transdanubia.",
+    formation:
+      "Unlike Hungary's other ranges, the Kőszeg is built of metamorphic rock — schist and phyllite — rock buried deep and reworked during the building of the Alps. Its rock type sets it apart cleanly from the limestone and volcanic ranges to the east.",
+    observation:
+      "From the air the Kőszeg is a low forested range, rounded in form with no bare crags; it drops abruptly to the plain on its eastern side, marking where the uplands of western Hungary end.",
+    distinguish:
+      "The Kőszeg has a different origin from every other range in the Hungarian middle mountains: the Mátra and Börzsöny are volcanic, the Bakony and Bükk carbonate, the Kőszeg metamorphic — it belongs to the eastern end of the Alpine system, not to the ranges within the basin.",
+    concept:
+      "The bright cleavage surfaces typical of schist and phyllite come from mica realigned under directed pressure. If a rock splits readily along planes and the broken face has a silky sheen, it has generally been through fairly deep metamorphism.",
+    history:
+      "The town of Kőszeg at the foot is a well-preserved medieval settlement; the range today is a protected landscape and forms part of a cross-border conservation area with the adjoining region.",
+  },
+  "aggtelek-karst": {
+    seeing:
+      "The Aggtelek Karst lies in the north-eastern corner of Hungary, a Triassic limestone karst plateau. What shows on the surface is gently rolling woodland and sinkholes; the substance of it is underground — a large cave system, of which the Baradla cave is the most visited.",
+    formation:
+      "Once the limestone was uplifted, rain carrying carbon dioxide worked down the fissures and dissolved passage after passage underground. Surface drainage is accordingly sparse, rivers often vanishing into sinkholes on the way and re-emerging at springs some distance off. Stalactites and stalagmites in the caves are that same calcium carbonate precipitated again.",
+    observation:
+      "From the air the plateau shows scarcely any organised surface drainage; instead there are round and oval hollows — sinkholes — scattered through the woodland, and deep valleys cut into the edges where the underground drainage finally comes out.",
+    distinguish:
+      "The Aggtelek Karst and the Bükk are both limestone ranges in Hungary, but the Bükk is chiefly an uplifted plateau surface with karst forms at the surface; the value of Aggtelek lies mainly underground — the extent and preservation of its cave system is why it stands as an entry of its own.",
+    concept:
+      "Karst is the landscape of rock being dissolved by water: the test is not altitude or slope but whether sinkholes, dry valleys, underground streams and large springs occur together. Where they do, there is usually a cave system below.",
+    history:
+      "The Baradla cave has been systematically explored since the eighteenth century and open to visitors since the nineteenth; in 1995 this karst and the adjoining Slovak Karst were together inscribed on the UNESCO World Heritage list for their caves.",
+  },
+  "balaton-witness-hills": {
+    seeing:
+      "A set of isolated flat-topped hills stands along the northern shore of Lake Balaton, rising abruptly out of flat ground by the water, square in outline. Badacsony (437 m), Szent György-hegy and Somló are the most conspicuous; locally they are called witness hills.",
+    formation:
+      "Pliocene basalt volcanism left sheets of lava and the conduits that fed them. Basalt resists erosion better than the soft sediment beneath it, so when the surrounding ground was stripped away the blocks still wearing a basalt cap were left — they 'witness' where the old land surface stood, hence the name.",
+    observation:
+      "From the air they are unmistakable: **flat top, steep sides, square outline**, and darker than their surroundings; columnar jointing from cooling lava often shows in ranks along the slopes, with vineyards spreading over the gentler ground at the foot.",
+    distinguish:
+      "A witness hill is the inverse of a true volcanic cone: a cone is pointed with gentle slopes, a witness hill flat-topped with steep ones. One was built up, the other is what remained once the surroundings were removed — **whether the top is pointed or flat tells them apart faster than the rock does**.",
+    concept:
+      "The witness hill is one of the most direct ideas in geomorphology: if hard rock caps one patch of ground and not its surroundings, erosion lowers everything else and leaves that patch standing. The height of its top is roughly the height of the whole land surface before erosion began — a geological ruler you can read off the landscape.",
+    history:
+      "Basalt from these hills has been quarried since Roman times, while soils weathered from volcanic rock support the vineyards of the northern Balaton shore; the Balaton Uplands National Park, established in 1997, brought them under protection.",
+  },
+  "tihany-peninsula": {
+    seeing:
+      "The Tihany peninsula reaches from the northern shore into Lake Balaton, almost pinching the lake in two. It is volcanic ground throughout: the Inner Lake on the peninsula sits in a crater, its surface more than twenty metres above Balaton.",
+    formation:
+      "The peninsula is built of Pliocene tuff and basalt. After the volcanism ended, hot water rising along fissures precipitated minerals at the surface and built cone-shaped geyser mounds — they stand scattered over the grassy slopes and are a landform peculiar to this place.",
+    observation:
+      "From the air Tihany is a dark rise at the middle of Balaton that narrows the broad lake to a strait; the two round lakes on top — the Inner and Outer — are the easiest markers, the circular outline of the Inner clearly that of a crater.",
+    distinguish:
+      "Tihany and the flat-topped witness hills along the northern shore belong to the same phase of basalt volcanism but differ in form: the witness hills are lava caps left by erosion, while Tihany preserves more of the volcanic structure — crater, tuff beds and geyser mounds are all still there.",
+    concept:
+      "A geyser mound is hot water bringing dissolved minerals up and unloading them at the surface: as soon as the water reaches the air it cools and depressurises, calcium carbonate and the like come out of solution, and over time a cone builds up. Their presence shows that sustained hot-water activity once went on here.",
+    history:
+      "The Benedictine abbey on the peninsula was founded in the eleventh century, and the Hungarian place names embedded in its Latin foundation charter are among the earliest written records of the Hungarian language; in 1952 this became Hungary's first protected landscape area.",
+  },
+  "lake-ferto": {
+    seeing:
+      "Lake Fertő lies in Hungary's north-western corner where Hungary and Austria meet, most of its surface on the Austrian side. It is the westernmost of the inland alkaline shallow lakes of the Eurasian steppe belt — shallow enough that an adult can stand over most of it.",
+    formation:
+      "The basin is a shallow tectonic depression with no stable outlet; water leaves only by evaporation, so dissolved salts accumulate and the water turns alkaline. The level swings widely with rainfall and evaporation, and the lake has several times come close to drying out and filled again.",
+    observation:
+      "From the air what stands out is not the water but **the extraordinarily broad belt of reeds around it** — dark reed enclosing pale open water, often several kilometres of it between the shore and the open lake. Alkali grassland and small salt pans surround the whole.",
+    distinguish:
+      "Fertő and Balaton are both shallow lakes, but Balaton is fresh, has a stable outlet and a regulated level, while Fertő has no outlet and both its level and its salinity vary widely with the season — which is also why alkali grassland can develop around it.",
+    concept:
+      "A shallow lake with no outlet is a particularly unstable body of water: area, depth and salinity all swing with evaporation and rainfall. A single area figure for such a lake means little; what year and what season the measurement comes from is the useful part.",
+    history:
+      "Grazing and viticulture have gone on around the lake for centuries; in 2001 the lake and its surrounding cultural landscape were inscribed on the UNESCO World Heritage list, and the Hungarian side lies within the Fertő–Hanság National Park.",
+  },
+  "lake-heviz": {
+    seeing:
+      "Lake Hévíz, near the western end of Balaton, is a natural thermal lake: its water comes from a karst spring welling up warm through the lake bed, so the whole body stays warm and can be bathed in all year — among the largest natural thermal lakes anywhere that can be swum in.",
+    formation:
+      "A karst spring opens in the lake bed where cold and hot groundwater mix at depth and rise together. The discharge is large enough that the whole lake turns over on a timescale of days — which is why so small a body keeps its temperature and its water quality through the year.",
+    observation:
+      "From the air Hévíz is only a small round sheet of water in woodland, but in winter, when everything around it is grey, it is often the one patch that does not freeze and may be visibly steaming. Most of its surface is covered with water lilies.",
+    distinguish:
+      "What sets Hévíz apart from an ordinary lake is where its water comes from: most lakes are fed by runoff and rainfall, Hévíz almost entirely by the thermal spring below. It therefore neither rises and falls much with the seasons nor heats and cools the way a shallow lake does.",
+    concept:
+      "The telling figure for a thermal lake is not its area but **how fast its water is replaced**: discharge divided by volume. The shorter that time, the steadier the temperature and the water quality. Such lakes are extremely sensitive to the groundwater table — heavy abstraction nearby shows up immediately in the spring's discharge.",
+    history:
+      "The springs here were used in Roman times and grew into a spa from the eighteenth century; the lake is now strictly protected and groundwater abstraction around it is restricted.",
+  },
+  "lake-velence": {
+    seeing:
+      "Lake Velence, south-west of Budapest, is a very shallow lake — under two metres over most of it. Its western end is a broad reed marsh; open water and beaches are at the eastern end.",
+    formation:
+      "The basin is a tectonic hollow fed mainly by rainfall and small streams with little outflow, so the water is alkaline. Being so shallow means it heats very quickly in summer, and can run several degrees warmer than a deep lake at the same latitude.",
+    observation:
+      "From the air Velence is clearly divided in two: the western half almost entirely dark reed with a few channels through it, the eastern half open pale water with resorts along the shore.",
+    distinguish:
+      "Velence and Balaton are both shallow lakes, but Velence is far smaller, shallower and alkaline, with a much greater share of reed; Balaton has a stable outlet and a regulated level while Velence depends largely on the weather.",
+    concept:
+      "A lake under about two metres deep warms through in summer without forming layers, so nutrients and algae move freely through the whole body — such lakes are particularly prone to eutrophication, which is why their water level and reed belts often have to be managed.",
+    history:
+      "The lake grew into a resort area for Budapest from the early twentieth century; the reed marsh at its western end is an important waterbird habitat and is protected.",
+  },
+  "danube-hungary": {
+    seeing:
+      "The Danube enters Hungary from the north-west, crosses the Little Plain, turns south at the Danube Bend and runs the length of the Great Plain before leaving. It divides the country in two and is, by navigable length and by discharge, its principal waterway.",
+    formation:
+      "Within Hungary the Danube has left the mountains for a subsiding basin and its gradient is slight. Its capacity to carry sediment drops and deposition takes over: the channel widens and divides, bars and islands form and are rewritten — with the Danube Bend the one exception, where it cuts into upland instead.",
+    observation:
+      "From the air the Danube shows three quite different faces in Hungary: spread into several strands enclosing islands on the Little Plain; squeezed into a deep valley by the massifs at the Bend, drawing an almost right-angled turn; and on the Great Plain a broad, little-bent main channel between levees.",
+    distinguish:
+      "The Danube and the Tisza cross the same plain, but the Danube carries far more water in a much wider channel, its pattern dominated by division and broad main channels; the Tisza carries less and bends far more, known for extreme meanders and strings of oxbows.",
+    concept:
+      "One river can take entirely different channel patterns along its course: cutting a valley in the mountains, braiding at the mountain front, and on the plain either broad and straight or intensely sinuous. **What decides the pattern is the combination of gradient, discharge and sediment** — not the name of the river.",
+    history:
+      "The Danube was the northern frontier and a shipping lane of the Roman empire, leaving a chain of military posts along its banks; the navigation and embankment works begun in the nineteenth century shaped the channel as it stands today.",
+  },
+  szigetkoz: {
+    seeing:
+      "The Szigetköz lies in Hungary's north-western corner, the tract of islands enclosed where the Danube divides on entering the Little Plain: the main stream on one side, a network of side channels in the middle, and long narrow islands between them. It is among the larger inland river-island tracts of Central Europe.",
+    formation:
+      "Leaving the mountain gap for the plain, the Danube loses gradient and speed, drops the gravel and sand it can no longer carry, and its channel is pushed into dividing by its own deposits. The ground between the side channels is flooded and exposed again and again, producing the present surface of channels, oxbows and floodplain forest.",
+    observation:
+      "From the air the Szigetköz is a legible web of water: bright side channels threading through dark floodplain forest with crescent oxbows among them, the whole web sharply bounded against the orderly farmland on either side.",
+    distinguish:
+      "The Szigetköz and the meander belt of the Tisza on the Great Plain are both products of rivers on a plain, but their forms are opposite: the Szigetköz is **one river split into many strands** (anabranching), the Tisza **one strand swinging back and forth** (meandering). The first belongs where gradient drops abruptly and sediment is plentiful, the second deep on a plain of very low gradient.",
+    concept:
+      "Anabranching and meandering are the two basic channel patterns of lowland rivers. Two things tell them apart: whether several channels exist at once or there is always one sinuous channel, and whether the sediment is mainly coarse gravel and sand or fine silt and clay.",
+    history:
+      "Fishing, forestry and river transport were the livelihood here; twentieth-century water engineering altered how discharge is shared among the side channels, and measures to manage flow for the floodplain ecosystem have been in place since.",
   },
 
   "andes-chile": {
