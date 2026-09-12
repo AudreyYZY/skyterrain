@@ -17137,8 +17137,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The country around Gyöngyös at the southern foot has been wine country since the Middle Ages, the soils weathered from volcanic rock being the natural basis for it; from the twentieth century these hills, within easy reach of Budapest, became a regular destination for walking and winter sports.",
   },
   bukk: {
+    // seeing sources: 2014-01-08 GPS 精测（精度 0.05 m）：Szilvási-kő 960.715 m > Istállós-kő 959 m。旧说沿用了八十多年、至今仍见于大量资料，故正文**两说并列**并注明测量年份。2026-09-12 核。
     seeing:
-      "The Bükk lies in north-eastern Hungary, a range built mainly of Triassic limestone, with Istállós-kő at 959 m its highest point. Its top is not a peak but a gently rolling upland surface — the Bükk plateau.",
+      "The Bükk lies in north-eastern Hungary, a range built mainly of Triassic limestone, its highest point being the southern summit of Kettős-bérc (now called Szilvási-kő) at about 961 m — established by a GPS survey in 2014, which demoted Istállós-kő at 959 m, long taken for the summit, to third place. Its top is not a peak but a gently rolling upland surface — the Bükk plateau.",
     formation:
       "The limestone was laid down in a Triassic sea, later uplifted, and then dissolved over long periods into shafts, sinkholes, dry valleys and caves. There is almost no surface drainage on the range: rainfall sinks into the fissures and re-emerges only at karst springs around the foot.",
     observation:
@@ -17175,8 +17176,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pilis and the Börzsöny face each other across the river at similar heights but with completely different origins: the Pilis is marine carbonate rock uplifted, the Börzsöny a volcano built up and then planed down. Colour is the quickest tell — pale on one side, dark on the other.",
     concept:
       "The sharp bend of the Danube here is generally attributed to structure and to the distribution of the volcanic blocks; several explanations coexist and none is settled. The bend itself makes one point clearly, though: the course of a great river is not set by relief alone — rock type and structure underneath are working on it too.",
+    // history sources: 维谢格拉德山属北匈牙利中山，皮利什山属外多瑙中山，两者相邻但不同系；民间混称不准确。2026-09-12 核。
     history:
-      "These hills were royal hunting forest from the Middle Ages, and the fourteenth-century palace of Visegrád stands beside the Danube at their northern foot. The range lies within the Duna–Ipoly National Park today.",
+      "These hills were royal hunting forest from the Middle Ages, and the fourteenth-century palace of Visegrád stands beside the Danube on the Visegrád Hills immediately to the north — an adjoining range that belongs to a different system and is often conflated with the Pilis. The range lies within the Duna–Ipoly National Park today.",
   },
   bakony: {
     seeing:
@@ -17199,8 +17201,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The range is built mainly of Mesozoic limestone and Permian to Triassic sandstone, an isolated fault block raised by tectonic movement; its northern side also carries Jurassic coal measures, worked as one of Hungary's coalfields since the nineteenth century.",
     observation:
       "From the air the Mecsek is an isolated forested rise on the plain, its southern slope looking straight down on the built-up area of Pécs. The difference between its northern and southern flanks shows even from above: the south is drier and more open, the north more densely wooded.",
+    // distinguish sources: 准确用词为「亚地中海型 / 次地中海型」；匈牙利不在真正的地中海气候区内。2026-09-12 核。
     distinguish:
-      "The Mecsek and the Bakony are both largely carbonate, but the Mecsek is entirely ringed by plain with no range adjoining it, and its climate is markedly warmer — it carries the northernmost Mediterranean-type flora in Hungary.",
+      "The Mecsek and the Bakony are both largely carbonate, but the Mecsek is entirely ringed by plain with no range adjoining it, and its climate is markedly warmer — it carries the northernmost sub-Mediterranean flora in Hungary.",
     concept:
       "The contrast between the two flanks of an isolated range is a plain illustration of how relief makes local climate: on the same hill the sunlit southern slope takes more heat and loses more water, and its vegetation can differ completely from the shaded north — across a distance of only a few kilometres.",
     history:
@@ -17219,6 +17222,104 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Volcanic tuff is a good example of how rock type decides land use: it holds water, it breathes, and it is easy to cut — which both produced soils suited to the vine and made it possible to drive cellars hundreds of metres into a hillside.",
     history:
       "The Tokaj Wine Region Historic Cultural Landscape at the southern foot was inscribed on the UNESCO World Heritage list in 2002; the local tradition of making botrytised sweet wine goes back several centuries.",
+  },
+  alfold: {
+    seeing:
+      "The Great Hungarian Plain is the sedimentary lowland of the south-eastern Carpathian Basin and covers more than half of Hungary. The ground lies broadly between 80 and 150 m, and you can cross it end to end with less than a few tens of metres of relief.",
+    formation:
+      "This was a steadily subsiding basin. Through the Quaternary the Danube, the Tisza and their tributaries carried in the debris stripped from the surrounding uplands and filled the space that subsidence kept opening — the flat ground seen today is the result of subsidence and infilling roughly cancelling out over a long time.",
+    observation:
+      "From the air the plain is one continuous sheet of farmland with no break in the skyline, the rivers drawing out pronounced meanders and strings of oxbow lakes; the belt between the Danube and the Tisza shows pale patches of sand country, while the east is wide open grassland.",
+    distinguish:
+      "Hungary has two plains: the Great Plain in the south-east, much the larger, and the Little Plain in the north-west, hemmed in by uplands and only a fraction of the size. Both were filled by rivers within the same basin; what differs is where the subsidence was centred.",
+    concept:
+      "The Great Plain is a plain illustration of why a basin ends up flat. It is not flat because nothing ever happened to it, but because **subsidence and infilling were racing each other** — while the ground sank, the rivers filled it in, and when the two rates match the surface stays close to level.",
+    history:
+      "The great river regulation and embankment works of the nineteenth century changed the hydrology of this plain: wetlands that had flooded every year largely became arable, channels were straightened, and strings of oxbow lakes were left behind beyond the new levees.",
+  },
+  kisalfold: {
+    seeing:
+      "The Little Hungarian Plain lies in the north-western corner of the country, the part of the Carpathian Basin filled in at that end. Hemmed in by uplands on three sides, it is far smaller than the Great Plain to the south-east, and Győr is its central town.",
+    formation:
+      "The plain was filled by the alluvium of the Danube, the Rába and other rivers. Where the Danube enters it the gradient falls away sharply, the current slows, sediment comes down in quantity, and the channel splits into many branches that enclose islands between the main stream and its arms — the tract known as the 'island country'.",
+    observation:
+      "From the air the clearest thing about the Little Plain is the stretch where the Danube spreads into several interwoven channels and the long narrow islands they enclose; the rest is orderly farmland, sharply bounded by the forest of the surrounding hills.",
+    distinguish:
+      "The Little Plain and the Great Plain were both filled by rivers within the same basin, but the Little Plain is confined by uplands and limited in extent, with the anabranching island landscape much better developed; the Great Plain is defined instead by its broad meander belts and oxbow lakes.",
+    concept:
+      "When a river leaves a mountain gap for a plain the gradient collapses, the load it can no longer carry is dropped on the spot, and the channel divides. That is the basic mechanism behind braided and anabranching channels: a large river suddenly splitting into many strands usually means it has just left the hills.",
+    history:
+      "The plain has been a thoroughfare of the middle Danube since antiquity; the wetlands and grasslands at its north-western end lie within the Fertő–Hanság National Park today.",
+  },
+  hortobagy: {
+    seeing:
+      "Hortobágy lies in the eastern part of the Great Hungarian Plain, an open grassland with scarcely a tree — the puszta. It is among the largest continuous natural grasslands in Central Europe, flat enough that the horizon itself is the view.",
+    formation:
+      "The grassland sits on the former floodplain of the Tisza. The soils are notably alkaline and the water table is shallow, both of which hold back trees; the river works of the nineteenth century cut off the regular flooding and fixed the area still further as open grassland.",
+    observation:
+      "From the air Hortobágy is a continuous sweep of grass with no hedgerows and no clustered villages, only scattered pastoral buildings and dead-straight roads; in spring and autumn shallow seasonal pools spread across it, and the area is a concentrated stopover on migration routes.",
+    distinguish:
+      "Hortobágy and Kiskunság to the west are both open landscapes of the Great Plain, but they came about differently: Hortobágy is alkaline grassland on a river floodplain and is flat, while Kiskunság is wind-blown sand country between the Danube and the Tisza, with dunes and hollows.",
+    concept:
+      "The absence of trees does not have to mean drought. Rainfall at Hortobágy is not particularly low; what limits trees is soil alkalinity and a shallow water table. To understand why a grassland is a grassland, look at soil and hydrology — rainfall alone will not tell you.",
+    history:
+      "The area carries a grazing tradition several centuries old, and local breeds such as the grey cattle and the racka sheep, together with the herding culture, are part of the landscape; it became Hungary's first national park in 1973 and was inscribed on the UNESCO World Heritage list as a cultural landscape in 1999.",
+  },
+  kiskunsag: {
+    seeing:
+      "Kiskunság lies between the Danube and the Tisza, a tract of sand country on the Great Plain. The ground is not level: low dunes run in ranks with hollows between them, and in the hollows lie seasonal alkaline lakes and alkali grassland.",
+    formation:
+      "The sand came from Pleistocene Danube alluvium, later reworked by the wind into dunes whose alignment broadly follows the prevailing wind. The hollows were scoured down close to the water table; water standing in them evaporates and concentrates, producing shallow alkaline lakes and alkali soils.",
+    observation:
+      "From the air Kiskunság is a belt of alternating pale sand and darker hollows, the dunes showing as banded texture all running the same way; in summer many of the alkaline lakes dry out and leave white patches of salt crust.",
+    distinguish:
+      "Kiskunság and Hortobágy are both open landscapes of the Great Plain, but Kiskunság's surface was shaped by wind and rises into dunes, while Hortobágy is flat alkaline grassland on a river floodplain. The banded dunes aligned in one direction tell the two apart at a glance.",
+    concept:
+      "Inland alkaline lakes are water bodies with no outlet: water leaves only by evaporation and the dissolved salts stay behind and accumulate. Both the area and the salinity of such lakes swing widely with the seasons, so a range describes them more honestly than a single figure.",
+    history:
+      "Grazing and scattered cultivation were the mainstays here, the sand limiting large-scale farming; the Kiskunság National Park was established in 1975, bringing the dunes, the alkaline lakes and the alkali grassland under one protection.",
+  },
+  "danube-bend": {
+    seeing:
+      "The Danube Bend is the reach where the Danube, having run west to east across northern Hungary, meets the uplands between the Börzsöny and the Visegrád–Pilis massif and turns abruptly south, holding that course through the rest of the country.",
+    formation:
+      "The valley is cut deeply into the uplands on either side: volcanic rock of the Börzsöny on the north bank, volcanic rock of the Visegrád Hills and carbonate rock of the Pilis on the south. The sharp turn is generally attributed to structure and to the distribution of the volcanic blocks; several explanations coexist and none is settled.",
+    observation:
+      "From the air the Danube is squeezed here into a visibly narrowed, deep valley between the two massifs and then draws an almost right-angled bend; the castle hill of Visegrád stands on the inside of the bend and is the easiest landmark along this reach.",
+    distinguish:
+      "The Danube Bend and the Wachau valley upstream in Austria are both reaches where the Danube cuts into upland, but the Wachau is a long valley following the river, whereas the defining feature of the Bend is **the abrupt change of direction** — the river swaps its heading within a few kilometres.",
+    concept:
+      "The course of a great river is not set by relief alone. Here the Danube gives up an open passage eastward and cuts through upland instead, which shows structure and rock type working on it underneath — cases like this are normally discussed between an antecedent river and structural control.",
+    history:
+      "Both banks of the bend were a route and a defensive position from Roman times; the palace of Visegrád on the southern bank was one of the seats of the Hungarian court in the fourteenth century. The area lies within the Duna–Ipoly National Park today.",
+  },
+  "lake-balaton": {
+    seeing:
+      "Lake Balaton in western Hungary is the largest lake in Central Europe, about 594 km² of water and some 77 km long from north-east to south-west. What sets it apart is how **shallow** it is: about 3 m on average, so one can wade a long way out from the shore.",
+    formation:
+      "The basin is of tectonic origin: a block of crust subsided into a hollow which then filled with water. The northern shore runs hard against the Bakony and the Balaton Uplands, where flat-topped remnants of Pliocene basalt volcanism are scattered; the Tihany peninsula reaches out from that shore and pinches the lake into two visibly distinct halves.",
+    observation:
+      "From the air Balaton is a long pale band of water with the Tihany peninsula reaching out at the middle almost far enough to cut it in two; the northern shore hugs the hills with a steep, indented shoreline, while the southern is a gentle sandy shelf — the difference is obvious from above.",
+    distinguish:
+      "Balaton resembles the glacial lakes of the Alps in shape but not at all in origin: a glacial lake was gouged out by ice and tends to be deep and narrow, while Balaton is water standing in a subsided basin, large in area and extremely shallow — which is also why it warms so quickly in summer.",
+    concept:
+      "Large area and large volume are two different things. Balaton covers nearly six hundred square kilometres but averages only about three metres, so it holds far less water than a deep lake of the same extent. Shallow lakes warm and cool fast and their level responds quickly to rainfall and regulation, so a figure for such a lake means little without a date attached.",
+    history:
+      "Vines have been grown around the lake since Roman times; after the railway reached the shore in the nineteenth century the southern side grew into a continuous resort belt. The Balaton Uplands National Park, established in 1997, protects the basalt volcanic forms and wetlands of the northern shore.",
+  },
+  "tisza-river": {
+    seeing:
+      "The Tisza is the longest tributary of the Danube. It enters Hungary from the north-east, runs diagonally across the whole of the Great Plain and leaves in the south. Within Hungary it flows almost entirely on the plain with very little fall, and is known for the extreme sinuosity of its course.",
+    formation:
+      "On ground this close to level the river cannot cut down, only swing sideways, and it develops continuous meanders. Each meander tightens until its neck is cut through, and the abandoned loop fills with water as an oxbow — which is where the strings of curved water bodies on the Great Plain come from.",
+    observation:
+      "From the air the modern channel of the Tisza runs relatively straight after the engineering of the nineteenth century, while curved bodies of water and curved belts of trees no longer connected to it lie scattered on both sides — abandoned old channels. The two generations of river form overlaid on each other are the easiest pattern to recognise along this reach.",
+    distinguish:
+      "The Tisza and the Danube both cross this plain, but the Danube carries far more water and has a much wider channel, while the Tisza's distinction is how typically its meanders are developed — to tell which river an aerial view shows, the combination of width and sinuosity is a better guide than the compass direction.",
+    concept:
+      "Meanders and oxbows are the direct consequence of a river having no room to cut down on a plain. Straightening a channel shortens it, steepens its gradient and speeds the flow; that helps with flood discharge but also changes the river's established pattern of deposition and its ecology — the Tisza offers nearly two centuries of worked example.",
+    history:
+      "The river regulation begun in the nineteenth century was among the largest civil engineering undertakings in modern Hungary, greatly shortening the freely meandering course and turning flooded wetland into arable; strings of oxbow lakes and remnant gallery forest survive along both sides to this day.",
   },
 
   "andes-chile": {

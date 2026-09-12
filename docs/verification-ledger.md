@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 7670b35
+lastVerifiedCommit: 3ec0b68
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: 7670b35
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | 匈牙利地形第 1 批的联网核实（18 项，16 项属实）（R40） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 三条卡了几轮的核实换手段：胡志明市面积（决议原文）、蒙古与达尔汗人口（R39） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | C6d 的普查豁免过宽：仙台/大阪/神户三处 2015 年国势调查口径（R38a） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | 中国批次：15 条认定年份 + 汕头/绍兴两处人口口径（R37d） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |

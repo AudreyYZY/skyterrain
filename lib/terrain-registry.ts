@@ -15010,12 +15010,12 @@ const BUKK: TerrainEntry = {
   category: "mountain_system",
   regionId: "europe",
   country: "hungary",
-  landmark: { name: "伊什塔洛什科峰", lon: 20.4472, lat: 48.0836, elevation: 959, kind: "peak" },
+  landmark: { name: "比克高原", lon: 20.4472, lat: 48.0836, elevation: 959, kind: "peak" },
   bbox: [20.20, 47.90, 20.80, 48.20],
   axis: [[20.25, 48.02], [20.75, 48.02]],
   viewScale: 1.2,
   label: { lon: 20.45, lat: 48.22, rotation: 0 },
-  source: "比克山：匈牙利北部以三叠纪石灰岩为主的山地，主峰伊什塔洛什科峰（Istállós-kő）海拔 959 米；山顶是一片抬升的石灰岩高原面（Bükk-fennsík），发育竖井、落水洞与洞穴，1977 年设为比克国家公园（匈牙利国家公园管理局口径，WebSearch 2026-09）",
+  source: "比克山：匈牙利北部以三叠纪石灰岩为主的山地，最高点为双峰山南峰（现称 Szilvási-kő）约 960.7 米（2014-01 GPS 精测，精度 0.05 m），此前长期被当作主峰的伊什塔洛什科峰（Istállós-kő）959 米现为第三高——**两说并存，正文并列写明**；山顶是一片抬升的石灰岩高原面（Bükk-fennsík），发育竖井、落水洞与洞穴，1977 年设为比克国家公园（匈牙利国家公园管理局口径，WebSearch 2026-09）",
 };
 
 const BORZSONY: TerrainEntry = {
@@ -15092,6 +15092,112 @@ const ZEMPLEN: TerrainEntry = {
   label: { lon: 21.44, lat: 48.62, rotation: 0 },
   source: "泽姆普伦山：匈牙利东北角的中新世火山山地，主体由流纹岩、安山岩与凝灰岩组成；最高点纳吉米利奇峰（Nagy-Milic）海拔 894 米，位于匈牙利与斯洛伐克交界一带。山南麓的托卡伊一带火山凝灰岩风化成的土壤与地下酒窖，是该产区葡萄种植的自然基础（匈牙利国家公园管理局与 UNESCO 口径，WebSearch 2026-09）",
 };
+
+const ALFOLD: TerrainEntry = {
+  id: "alfold",
+  nameZh: "匈牙利大平原",
+  nameEn: "Great Hungarian Plain (Alföld)",
+  category: "plain",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "德布勒森", lon: 21.6273, lat: 47.5316, elevation: 121, kind: "city" },
+  bbox: [19.00, 45.75, 22.90, 48.10],
+  axis: [[19.20, 46.10], [22.60, 47.90]],
+  viewScale: 2.0,
+  label: { lon: 20.90, lat: 46.90, rotation: 0 },
+  source: "匈牙利大平原（Alföld）：喀尔巴阡盆地东南部的沉积平原，占匈牙利国土的一半以上，地面高度大体在海拔 80–150 米之间；由多瑙河、蒂萨河及其支流在第四纪持续充填而成（匈牙利中央统计局与匈牙利地质资料口径，WebSearch 2026-09）",
+};
+
+const KISALFOLD: TerrainEntry = {
+  id: "kisalfold",
+  nameZh: "匈牙利小平原",
+  nameEn: "Little Hungarian Plain (Kisalföld)",
+  category: "plain",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "杰尔", lon: 17.6350, lat: 47.6875, elevation: 108, kind: "city" },
+  bbox: [16.60, 47.30, 18.20, 48.00],
+  axis: [[16.80, 47.55], [18.05, 47.75]],
+  viewScale: 1.4,
+  label: { lon: 17.40, lat: 48.02, rotation: 0 },
+  source: "匈牙利小平原（Kisalföld）：喀尔巴阡盆地西北端的沉积平原，比大平原小得多，由多瑙河与拉巴河等河流的冲积物充填；多瑙河在此分汊形成的河间岛地带（Szigetköz）是其标志性地貌（匈牙利地质资料与费尔特—汉沙格国家公园口径，WebSearch 2026-09）",
+};
+
+const HORTOBAGY: TerrainEntry = {
+  id: "hortobagy",
+  nameZh: "霍尔托巴吉草原",
+  nameEn: "Hortobágy Puszta",
+  category: "grassland",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "九孔桥", lon: 21.1497, lat: 47.5844, elevation: 90, kind: "grassland" },
+  bbox: [20.75, 47.35, 21.65, 47.80],
+  axis: [[20.85, 47.55], [21.55, 47.62]],
+  viewScale: 1.4,
+  label: { lon: 21.15, lat: 47.82, rotation: 0 },
+  source: "霍尔托巴吉：匈牙利大平原东部的一片开阔草原（puszta），中欧面积最大的连片天然草地之一；1973 年设为匈牙利第一座国家公园，1999 年以文化景观类别列入 UNESCO 世界遗产（whc.unesco.org 与霍尔托巴吉国家公园官网，WebSearch 2026-09）",
+};
+
+const KISKUNSAG: TerrainEntry = {
+  id: "kiskunsag",
+  nameZh: "基什孔沙地",
+  nameEn: "Kiskunság Sand Country",
+  category: "grassland",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "布格茨沙丘", lon: 19.6089, lat: 46.6875, elevation: 111, kind: "dune" },
+  bbox: [19.00, 46.30, 20.30, 47.15],
+  axis: [[19.15, 46.45], [20.15, 47.05]],
+  viewScale: 1.4,
+  label: { lon: 19.60, lat: 47.17, rotation: 0 },
+  source: "基什孔：多瑙河与蒂萨河之间的沙地区，地表为风成沙丘与丘间洼地，洼地里分布着季节性的碱水湖与碱土草原；1975 年设立基什孔国家公园（基什孔国家公园官网，WebSearch 2026-09）",
+};
+
+const DANUBE_BEND: TerrainEntry = {
+  id: "danube-bend",
+  nameZh: "多瑙河湾",
+  nameEn: "Danube Bend",
+  category: "gorge",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "维谢格拉德城堡山", lon: 18.9761, lat: 47.7936, elevation: 328, kind: "gorge" },
+  bbox: [18.70, 47.70, 19.15, 47.90],
+  axis: [[18.75, 47.82], [19.10, 47.78]],
+  viewScale: 1.1,
+  label: { lon: 18.95, lat: 47.92, rotation: 0 },
+  source: "多瑙河湾：多瑙河在匈牙利北部自西向东流到伯尔容山与维谢格拉德—皮利什山地之间、急转向南的一段，两岸为火山岩与碳酸盐岩山地，河谷深切（多瑙河—伊波伊河谷国家公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_BALATON: TerrainEntry = {
+  id: "lake-balaton",
+  nameZh: "巴拉顿湖",
+  nameEn: "Lake Balaton",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "蒂豪尼半岛", lon: 17.8919, lat: 46.9128, elevation: 130, kind: "island" },
+  bbox: [17.22, 46.66, 18.20, 47.10],
+  axis: [[17.28, 46.72], [18.14, 47.05]],
+  viewScale: 1.35,
+  label: { lon: 17.70, lat: 47.12, rotation: 0 },
+  source: "巴拉顿湖：中欧面积最大的湖泊，水面约 594 平方公里，东北—西南向长约 77 公里，平均水深仅约 3 米；湖盆为断陷成因，北岸紧邻巴科尼山与巴拉顿高地的玄武岩残丘（巴拉顿高地国家公园与匈牙利水文资料口径，WebSearch 2026-09）",
+};
+
+const TISZA_RIVER: TerrainEntry = {
+  id: "tisza-river",
+  nameZh: "蒂萨河",
+  nameEn: "Tisza River",
+  category: "river",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "塞格德", lon: 20.1414, lat: 46.2530, elevation: 79, kind: "city" },
+  bbox: [19.90, 45.95, 22.35, 48.40],
+  axis: [[22.20, 48.30], [20.10, 46.05]],
+  viewScale: 1.8,
+  label: { lon: 20.60, lat: 47.30, rotation: 0 },
+  source: "蒂萨河：多瑙河最长的支流，自东北向西南斜贯匈牙利大平原；19 世纪起的大规模裁弯取直与筑堤工程把它原来的自由曲流河道大幅缩短，河道两侧至今保留着成串的牛轭湖（匈牙利水管理部门与公开地理资料口径，WebSearch 2026-09）",
+};
+
 
 
 // ============================================================
@@ -15875,6 +15981,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   LIPNO_RESERVOIR, MACHOVO_JEZERO, VLTAVA_VALLEY_CESKY_KRUMLOV,
   // ===== 欧洲 / 匈牙利 =====
   MATRA, BUKK, BORZSONY, PILIS, BAKONY, MECSEK, ZEMPLEN,
+  ALFOLD, KISALFOLD, HORTOBAGY, KISKUNSAG,
+  DANUBE_BEND, LAKE_BALATON, TISZA_RIVER,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,
