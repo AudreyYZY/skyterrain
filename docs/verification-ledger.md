@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 97c227c
+lastVerifiedCommit: a0e3e71
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -41,6 +41,7 @@ lastVerifiedCommit: 97c227c
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-12 | travel+registry · 机场距离与机场归属（2026-09-12 马来西亚/菲律宾的离线前置扫描（R34a）） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 印尼的机场启用、口径混用、公园岛屿数（2026-09-12 印尼城市攻略：交通、机场与制度 11 组（R33e）） | 10 | 0 / 10 / 0 | 当场修 10 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 泰国的建制沿革、UNESCO 年份、国家公园占比（2026-09-12 泰国城市攻略：建制、世界遗产与规模 10 组（R33d）） | 3 | 0 / 3 / 0 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-12 | travel · 同条目两段对同一件事两种说法（2026-09-12 回头搜带出的一处：乌得勒支车站排名（R33c）） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |

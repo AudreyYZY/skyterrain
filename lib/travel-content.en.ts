@@ -11340,7 +11340,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The Kuah jetty area is the island's main commercial and ferry hub, ringed by duty-free shopping districts, while the island's interior holds the geopark's karst and rainforest scenery.",
     gettingAround:
-      "Langkawi International Airport is about 11 km from Kuah, with domestic and some international flights; getting around the island mainly relies on car rental, motorbike or a hired driver to visit the various geoforest parks.",
+      "Langkawi International Airport lies on the west of the island, about 13 km from Kuah as the crow flies, with domestic and some international flights; getting around the island mainly relies on car rental, motorbike or a hired driver to visit the various geoforest parks.",
     culture:
       "The official language is Malay. Langkawi is a well-known duty-free shopping and resort island in Malaysia, with local legends about the origin of the island's name; fishing and tourism are the main pillars of the local economy. Restaurant bills often already include service.",
     seeAndDo:
@@ -11740,7 +11740,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "Intramuros (the old walled city) preserves Spanish colonial-era walls and churches; Makati and Bonifacio Global City are modern commercial and financial districts, and the Manila Bay waterfront is known for its sunset views.",
     gettingAround:
-      "Ninoy Aquino International Airport is about 7 km from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
+      "Ninoy Aquino International Airport is about 11 km from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
     culture:
       "The official languages are Filipino and English, with high English proficiency. Manila carries layered historical influences from Spanish colonial rule, American administration and local culture, and Catholic faith has broad influence on daily life. Restaurant bills often already include service, with an additional 10% tip customary.",
     seeAndDo:

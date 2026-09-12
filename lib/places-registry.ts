@@ -4209,8 +4209,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "vigan", nameZh: "维甘", nameEn: "Vigan", country: "philippines", tier: "notable", zone: "ph-luzon", admin1Zh: "南伊罗戈省", admin1En: "Ilocos Sur",
     lon: 120.3869, lat: 17.5747,
-    airport: { iata: "MNL", nameZh: "尼诺伊·阿基诺国际机场", nameEn: "Ninoy Aquino International Airport", lon: 121.0198, lat: 14.5086 },
-    source: "维甘市中心 17.5747,120.3869；本地维甘机场客运航班暂不稳定，多数游客经马尼拉方向公路往返（约400km，车程约7至8小时）：公开资料",
+    airport: { iata: "LAO", nameZh: "拉瓦格国际机场", nameEn: "Laoag International Airport", lon: 120.5310, lat: 18.1751 },
+    source: "维甘市中心 17.5747,120.3869；本地维甘机场客运航班暂不稳定，多数游客经马尼拉方向公路往返（约400km，车程约7至8小时）：公开资料；机场字段 2026-09-12 由 MNL（马尼拉，348 km）改为 LAO 拉瓦格国际机场（直线 69 km、有定期航班，OurAirports/RPLI）——本条目正文本来就写着「机场在北面 80 公里的拉瓦格」，注册表与正文原本矛盾",
   },
   {
     id: "jakarta", nameZh: "雅加达", nameEn: "Jakarta", country: "indonesia", tier: "capital", zone: "id-java", admin1Zh: "雅加达首都特区", admin1En: "DKI Jakarta",
