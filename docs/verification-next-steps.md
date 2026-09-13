@@ -1,18 +1,18 @@
 # 核实工作：下一轮从这里接着做
 
-> 更新于 **2026-09-13**（抽样 seed=1..7 与斯洛伐克两批当批核实之后）。这份文档只回答一个问题：**新开一个会话，第一件事做什么。**
+> 更新于 **2026-09-13**（抽样 seed=1..8、斯洛伐克与斯洛文尼亚当批核实之后）。这份文档只回答一个问题：**新开一个会话，第一件事做什么。**
 > 错误分类与历史记录在 [`known-errors.md`](known-errors.md)，逐轮流水账在 [`verification-ledger.md`](verification-ledger.md)，
 > 流程在 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)。
 
 ## 0. 一句话现状（2026-09-13）
 
-**正确率已经量出来了：随机抽样 n=210，可判定 188 句，错误率 9.0%（95% Wilson [5.7%, 14.0%]），
-全库外推约 960 处错误。方法与逐批结果在 [`quality-sampling.md`](quality-sampling.md)。**
+**正确率已经量出来了：随机抽样 n=240，可判定 217 句，错误率 8.8%（95% Wilson [5.7%, 13.3%]），
+全库外推约 870 处错误。方法与逐批结果在 [`quality-sampling.md`](quality-sampling.md)。**
 覆盖率按字段算是 **19%**（2230 / 11760），按条目算 86% —— 只有前者是诚实的口径。
 
 新会话的第一件事，按这个顺序挑一件：
 
-1. **抽一批新样本**：`npm run sample:claims -- --n=30 --seed=8`，交给 `content-verifier`
+1. **抽一批新样本**：`npm run sample:claims -- --n=30 --seed=9`，交给 `content-verifier`
    用四结论中立判据核，把错的当场改掉、把结果并进 `quality-sampling.md` 的汇总表。
    （区间已经收到 ±4 个百分点；再收窄一半要 n≈800，不值得为此停下修内容。）
 2. **回扫存量**：按 `known-errors.md` 的已知错型全库扫一遍某一类，而不是从头重核一遍。
