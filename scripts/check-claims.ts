@@ -61,6 +61,15 @@ const SHOW = Number(process.argv.find((a) => a.startsWith("--show="))?.slice(7) 
 const RUN_ON = /[a-z)][.!?][A-Z]/;
 
 /**
+ * C6l：**机场的具体航点列表**（2026-09-13 立）。「有北京、上海、成都等航线」「has flights to Beijing, Shanghai and Chengdu」
+ * 这类句子随航季增删，交通状态回扫抽 14 条、5 条已有航点停飞或其实是经停（36%，日喀则无重庆、林芝无拉萨直飞、
+ * 临沂与腾冲的北京航线已停、长白山的广州是经停大连）。全库一次清掉 45 条之后基线固化为 0 ——
+ * 要写就写「有定期航班」，具体航点让读者查机场公布。
+ */
+const DEST_LIST_ZH = /(?:(?:有|开通了?|通达|可飞)(?:飞往)?[^，。；（）]{0,60}?、[^，。；（）]{0,80}?等(?:国内外|国内|国际|地)?(?:航线|航点|城市的?航班|航班)|(?:有|只有)(?:飞往|往返|航班到|飞)?[^，。；（）]{1,14}、[^，。；（）]{1,14}、[^，。；（）]{1,30}(?:航线|航班))/;
+const DEST_LIST_EN = /\b(?:(?:flights|routes|air services)\s+(?:only\s+)?(?:to|from)\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}|has\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}\s+(?:flights|routes)\b)/;
+
+/**
  * C6k：**这个国家的官方统计里根本没有这个口径**。
  *
  * `C6-c` 一直是靠人核出来的：「口径先于数字 —— 先确认这个口径在该国官方统计里存不存在」。
@@ -339,7 +348,8 @@ type Rule =
   | "C6i-同条目两段人口打架"
   | "D1b-说了没单列市区人口又给出市区人口"
   | "C6k-用了这个国家没有的口径"
-  | "D4-粘连句";
+  | "D4-粘连句"
+  | "C6l-机场航点列表";
 
 interface Hit {
   rule: Rule;
@@ -383,6 +393,10 @@ for (const seg of segments) {
       rule: "D1b-说了没单列市区人口又给出市区人口",
       sentence: seg.text.match(/.{0,40}(?:未单列|does not (?:report|give|publish) a separate).{0,90}/i)?.[0] ?? "",
     });
+  }
+
+  if ((zh ? DEST_LIST_ZH : DEST_LIST_EN).test(seg.text)) {
+    hits.push({ ...seg, rule: "C6l-机场航点列表", sentence: seg.text.match(zh ? DEST_LIST_ZH : DEST_LIST_EN)?.[0] ?? "" });
   }
 
   if (RUN_ON.test(seg.text)) {
@@ -504,6 +518,7 @@ const RULES: Rule[] = [
   "D1b-说了没单列市区人口又给出市区人口",
   "C6k-用了这个国家没有的口径",
   "D4-粘连句",
+  "C6l-机场航点列表",
 ];
 
 // ── C6d 豁免：已核实「这就是最新一期」的条目 ────────────────────────────

@@ -1331,7 +1331,7 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/bath": { f: 7, v: 2, d: "2026-07-29", l: 1 },
   "travel/oxford": { f: 7, v: 2, d: "2026-07-29", l: 1 },
   "travel/cambridge": { f: 7, v: 2, d: "2026-07-29", l: 1 },
-  "travel/brighton": { f: 7, v: 2, d: "2026-07-29", l: 1 },
+  "travel/brighton": { f: 7, v: 2, d: "2026-09-13", l: 1 },
   "travel/newcastle-upon-tyne": { f: 7, v: 2, d: "2026-07-29", l: 1 },
   "travel/stirling": { f: 7, v: 2, d: "2026-07-14", l: 1 },
   "travel/portree": { f: 7, v: 0 },
