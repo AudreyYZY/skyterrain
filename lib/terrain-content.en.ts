@@ -18761,7 +18761,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Postglacial rebound is a delayed response to the disappearance of an ice sheet: the ice pressed the crust down, and after it melted the crust takes tens of thousands of years to recover. On a low coast, a few millimetres of uplift a year are enough to turn bays into lakes and islets into peninsulas, which is why the West Estonian coast keeps changing.",
     history:
-      "Matsalu Bay within the lowland has Estonia's largest reed bed, about 30 km².",
+      "Matsalu Bay within the lowland has Estonia's largest reed bed, about 20 km² according to the protected-area administration.",
   },
   "matsalu-bay": {
     // 全六段 sources: 同中文侧（EELIS, kaitsealad.ee tier 1; Eesti entsüklopeedia tier 2, 2026-09-13）。Ramsar year not given (three versions). 核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok）。
@@ -18770,7 +18770,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "Matsalu Bay is a shallow bay shaped by postglacial land uplift together with river deposition. The Kasari River, about 115 km long, brings sediment that builds a delta at the head of the bay, where reeds quickly colonise the shallows; as the land keeps rising, the water at the head grows shallower year by year, the shoreline advances seaward and islets in the bay gradually join the land.",
     observation:
-      "From the air, Matsalu Bay is water mottled pale brown and silver-grey: the head of the bay is a vast reed bed of about 3,000 ha through which the river channels branch and wind, low coastal meadows line both shores, and many low islets lie scattered beyond the mouth of the bay. In spring and autumn flocks of migrating birds often cover the water and meadows.",
+      "From the air, Matsalu Bay is water mottled pale brown and silver-grey: the head of the bay holds Estonia's largest reed bed, about 2,000 ha, through which the river channels branch and wind, low coastal meadows line both shores, and many low islets lie scattered beyond the mouth of the bay. In spring and autumn flocks of migrating birds often cover the water and meadows.",
     distinguish:
       "Matsalu Bay and the Lahemaa coast in the north are both low coasts, but Lahemaa has boulders, peninsulas and shingle beaches, while Matsalu is a muddy shallow bay and river delta dominated by reeds and wet meadow. Unlike an inland bog such as Soomaa, Matsalu's wetlands are influenced by both sea water and river water.",
     concept:

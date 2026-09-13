@@ -937,6 +937,14 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 1, 2, 4, 5, 5, 5], source: "auto" },
     "en-US": { perSentence: [0, 1, 1, 2, 4, 5, 5], source: "auto" },
   },
+  "tll-kdl": {
+    "zh-CN": { perSentence: [0, 1, 1, 1, 1, 1], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 1, 1, 1], source: "auto" },
+  },
+  "tll-ure": {
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3], source: "auto" },
+  },
   "tos-alf": {
     "zh-CN": { perSentence: [0, 1, 2, 2], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 2], source: "auto" },

@@ -1,0 +1,40 @@
+{
+  "id": "tll-kdl",
+  "name": "塔林 — 凯尔德拉",
+  "nameEn": "Tallinn — Kärdla",
+  "description": "西爱沙尼亚低地 · 希乌马岛",
+  "descriptionEn": "West Estonian Lowland · Hiiumaa",
+  "depCountry": "estonia",
+  "arrCountry": "estonia",
+  "cruiseHeight": 6000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "tll",
+      "name": "塔林",
+      "nameEn": "Tallinn",
+      "lat": 59.4132,
+      "lon": 24.8326,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "west-estonian-lowland"
+    },
+    {
+      "kind": "city",
+      "id": "kdl",
+      "name": "凯尔德拉",
+      "nameEn": "Kärdla",
+      "lat": 58.9908,
+      "lon": 22.8307,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airport.ee/en/kardla-airport/",
+    "checkedOn": "2026-09-13",
+    "note": "**机场对与承运人已核实、航班号与机型未核实**：塔林—凯尔德拉由 NyxAir 按国家公共服务合同执飞（ERR 2024-02-07：合同至 2027 年秋；2 级），塔林机场集团官网凯尔德拉机场页写明每天 1–2 班、航程约 30 分钟（airport.ee，1 级）。航班号、机型未取到两个互相独立的可核实来源，按本库规矩**不填 flight 字段**、解说不点名航班号与机型。下一轮从 flynyx.com 时刻表入手。来源级别 1/2",
+    "status": "flight-unknown"
+  }
+}
