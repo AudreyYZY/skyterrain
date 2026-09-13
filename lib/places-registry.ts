@@ -2125,7 +2125,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "niagara-falls", nameZh: "尼亚加拉瀑布城", nameEn: "Niagara Falls", country: "canada", tier: "notable", zone: "ca-central", admin1Zh: "安大略省", admin1En: "Ontario",
     lon: -79.1067, lat: 43.0600,
-    source: "Niagara Falls, Ontario 43.0600,-79.1067（en.wikipedia）；无机场，最近为多伦多皮尔逊 YYZ（约 130 公里），条目不写机场字段，GO 列车可达；人口 94,415（2021 普查）",
+    source: "Niagara Falls, Ontario 43.0600,-79.1067（en.wikipedia）；加拿大一侧无定期航班机场（河对岸美国纽约州有 Niagara Falls International IAG），最近为多伦多皮尔逊 YYZ（约 130 公里），条目不写机场字段，GO 列车可达；人口 94,415（2021 普查）",
   },
   {
     id: "fredericton", nameZh: "弗雷德里克顿", nameEn: "Fredericton", country: "canada", tier: "notable", zone: "ca-atlantic", admin1Zh: "新不伦瑞克省", admin1En: "New Brunswick",
@@ -2507,7 +2507,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "annecy", nameZh: "安纳西", nameEn: "Annecy", country: "france", tier: "notable", zone: "fr-rhone-alpes", admin1Zh: "奥弗涅-罗讷-阿尔卑斯大区", admin1En: "Auvergne-Rhône-Alpes",
     lon: 6.1330, lat: 45.9160,
-    source: "Annecy 45.9160,6.1330（en.wikipedia）；无机场，最近为日内瓦（约 45 公里，瑞士）与里昂（约 125 公里），条目不写机场字段；人口 132,117（2023）",
+    source: "Annecy 45.9160,6.1330（en.wikipedia）；本地安纳西—上萨瓦—勃朗峰机场（NCY，VINCI 运营）以商务与通用航空为主、无稳定定期客运航班（2026-09-14 核），不写机场字段；最近大机场为日内瓦（约 45 公里，瑞士）与里昂（约 125 公里），条目不写机场字段；人口 132,117（2023）",
   },
   {
     id: "avignon", nameZh: "阿维尼翁", nameEn: "Avignon", country: "france", tier: "notable", zone: "fr-provence", admin1Zh: "普罗旺斯-阿尔卑斯-蓝色海岸大区", admin1En: "Provence-Alpes-Côte d'Azur",
@@ -2725,7 +2725,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "cordoba", nameZh: "科尔多瓦", nameEn: "Córdoba", country: "spain", tier: "notable", zone: "es-andalusia", admin1Zh: "安达卢西亚自治区", admin1En: "Andalusia",
     lon: -4.7800, lat: 37.8900,
-    source: "Córdoba 37.8900,-4.7800（en.wikipedia）；无商业机场，最近为塞维利亚（约 140 公里）、马拉加（约 160 公里），条目不写机场字段，AVE 到马德里约 1 小时 45 分；人口 324,902（2024）",
+    source: "Córdoba 37.8900,-4.7800（en.wikipedia）；科尔多瓦机场 ODB 只有少量定期航线（Aena 目的地页 2026-09-14：Vueling 飞巴塞罗那、Binter 飞大加那利岛），条目不写机场字段；多数旅客经塞维利亚（约 140 公里）、马拉加（约 160 公里），条目不写机场字段，AVE 到马德里约 1 小时 45 分；人口 324,902（2024）",
   },
   {
     id: "salamanca", nameZh: "萨拉曼卡", nameEn: "Salamanca", country: "spain", tier: "notable", zone: "es-central", admin1Zh: "卡斯蒂利亚-莱昂自治区", admin1En: "Castile and León",

@@ -1250,7 +1250,7 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/kyoto": { f: 7, v: 2, d: "2026-09-08" },
   "travel/osaka-city": { f: 7, v: 2, d: "2026-09-12" },
   "travel/sapporo": { f: 7, v: 2, d: "2026-09-12", l: 1 },
-  "travel/fukuoka": { f: 7, v: 2, d: "2026-06-01", l: 1 },
+  "travel/fukuoka": { f: 7, v: 2, d: "2026-09-14", l: 1 },
   "travel/naha": { f: 7, v: 2, d: "2026-09-08" },
   "travel/tianjin": { f: 7, v: 2, d: "2026-03-23", l: 1 },
   "travel/shijiazhuang": { f: 7, v: 2, d: "2026-09-12", l: 1 },

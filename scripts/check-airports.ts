@@ -251,3 +251,46 @@ if (!srcScanned) {
   process.exit(1);
 }
 for (const l of [...srcShort, ...srcName]) console.log("\n" + l);
+
+// ---------------------------------------------------------------------------
+// 第四段：正文说「没有定期航班的机场 / 没有民用机场」× OurAirports 附近「有定期航班」的机场
+// ---------------------------------------------------------------------------
+/**
+ * 2026-09-14 立。C6n 把「没有机场」统一成「没有定期航班的机场」之后，剩下能错的只有一种：
+ * **附近其实有定期航班**。回扫时就是这么查出科尔多瓦（ODB，Aena 列出两条定期航线）的。
+ * OurAirports 的 `scheduled_service` 会滞后（安纳西 NCY 仍标 yes，实际以商务航空为主），
+ * 所以这里只列清单、要人回一手确认。半径 20 km：再远就是「最近的机场在邻城」，正文通常已经点名。
+ */
+const NEAR_KM = 20;
+const schedAll = rows.slice(1)
+  .filter((r) => r[cSched] === "yes" && /_airport$/.test(r[cType]))
+  .map((r) => ({ name: r[cName], iata: r[cIata], lat: Number(r[cLat]), lon: Number(r[cLon]) }));
+const SAYS_NONE = /没有(?:定期航班的|民用|商业)机场/;
+const nearSched: string[] = [];
+let saysNone = 0;
+for (const c of CITY_REGISTRY) {
+  const guide = TRAVEL_CONTENT_ZH[c.id];
+  if (!guide) continue;
+  const hit = Object.values(guide).find((t) => typeof t === "string" && SAYS_NONE.test(t)) as string | undefined;
+  if (!hit) continue;
+  saysNone++;
+  const near = schedAll
+    .map((a) => ({ ...a, d: km(c.lat, c.lon, a.lat, a.lon) }))
+    .filter((a) => a.d <= NEAR_KM)
+    .sort((x, y) => x.d - y.d);
+  if (!near.length) continue;
+  const i = hit.search(SAYS_NONE);
+  nearSched.push(
+    `⚑ ${c.id}「${c.nameZh}」正文：…${hit.slice(Math.max(0, i - 12), i + 24)}…\n` +
+    `     OurAirports 标「有定期航班」：` + near.slice(0, 3).map((a) => `${a.name}(${a.iata || "-"}, ${a.d.toFixed(1)} km)`).join("；"),
+  );
+}
+console.log(
+  `\n正文「没有定期航班的 / 民用 / 商业机场」× OurAirports：说了没有的 ${saysNone} 个条目，` +
+  `${NEAR_KM} km 内有标「有定期航班」机场的 ${nearSched.length} 个（清单，要人判断：可能在邻城 / 跨境 / 数据集滞后）`,
+);
+if (!saysNone) {
+  console.error("✗ 一个都没扫到 —— 正则或字段坏了");
+  process.exit(1);
+}
+for (const l of nearSched) console.log("\n" + l);

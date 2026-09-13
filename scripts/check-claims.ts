@@ -76,6 +76,19 @@ const AIRPORT_OPEN_ZH = /(?:机场|航站楼)[^。；，]{0,30}?((?:19|20)\d{2})
 const AIRPORT_OPEN_EN = /\bairport\b(?: \([A-Z]{3}\))?[^.;,]{0,40}?\b(?:opened|entered service|began (?:operating|operations))(?: in)?(?: [A-Z][a-z]+)? ((?:19|20)\d{2})|\bopened in ((?:19|20)\d{2})[^.;,]{0,40}?\bairport\b|\bairport\b[^.;,]{0,40}?, opened (?:in )?((?:19|20)\d{2})/gi;
 const OLD_NEW = /(新|旧|原|老|former|old|new)/i;
 
+/**
+ * C6n：**不加限定的「没有机场」**（2026-09-14 立）。爱沙尼亚当批核实查出拉克韦雷、奥泰佩「没有机场」其实都有
+ * 不飞定期航班的小机场；拿 OurAirports 回扫全库 114 处，剑桥（CBG）、布莱顿（ESH）、科尔马、鲁昂、锡耶纳、
+ * 卢塞恩旁的埃门都有机场，**科尔多瓦（ODB）与安纳西（NCY）连「没有商业机场」都不成立**（前者 Aena 列出两条定期航线）。
+ * 读者要的信息是「能不能飞到这里」，所以口径统一成「没有定期航班的机场 / no airport with scheduled flights」；
+ * 中国条目沿用「没有民用机场」（军用机场在中国是另一套体系，这个口径在中国成立）。
+ * 「of its own」（本城没有、邻城有）与「没有机场火车 / no airport train」不算。
+ */
+const NO_AIRPORT_ZH = /没有机场(?!火车|铁路|快线|大巴|巴士|轻轨|地铁|专线|快轨)/;
+const NO_AIRPORT_ZH_CIVIL = /没有民用机场/;
+const NO_AIRPORT_EN = /no (?:civil(?:ian)? )?airports?(?! (?:with scheduled|of its own|train|rail|bus|express|link|shuttle))/i;
+const NO_AIRPORT_EN_CIVIL = /no civil(?:ian)? airport/i;
+
 const DEST_LIST_ZH = /(?:(?:有|开通了?|通达|可飞)(?:飞往)?[^，。；（）]{0,60}?、[^，。；（）]{0,80}?等(?:国内外|国内|国际|地)?(?:航线|航点|城市的?航班|航班)|(?:有|只有)(?:飞往|往返|航班到|飞)?[^，。；（）]{1,14}、[^，。；（）]{1,14}、[^，。；（）]{1,30}(?:航线|航班))/;
 const DEST_LIST_EN = /\b(?:(?:flights|routes|air services)\s+(?:only\s+)?(?:to|from)\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}|has\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}\s+(?:flights|routes)\b)/;
 
@@ -360,7 +373,8 @@ type Rule =
   | "C6k-用了这个国家没有的口径"
   | "D4-粘连句"
   | "C6l-机场航点列表"
-  | "C6m-同条目机场启用年份打架";
+  | "C6m-同条目机场启用年份打架"
+  | "C6n-不加限定的没有机场";
 
 interface Hit {
   rule: Rule;
@@ -416,6 +430,15 @@ for (const seg of segments) {
       if (!airportYearsByEntry.has(key)) airportYearsByEntry.set(key, { seg, rows: [] });
       airportYearsByEntry.get(key)!.rows.push({ section: seg.section, year, text: m[0] });
     }
+  }
+
+  {
+    const isChina = COUNTRY_OF.get(`${seg.kind}/${seg.id}`) === "china";
+    const re = zh ? NO_AIRPORT_ZH : NO_AIRPORT_EN;
+    const civil = zh ? NO_AIRPORT_ZH_CIVIL : NO_AIRPORT_EN_CIVIL;
+    // 中国条目的「no civil airport」是规定口径；其余国家的「民用 / civil」同样可能有不飞定期航班的通用机场
+    const m = (isChina && !zh && NO_AIRPORT_EN_CIVIL.test(seg.text) ? null : seg.text.match(re)) ?? (isChina ? null : seg.text.match(civil));
+    if (m) hits.push({ ...seg, rule: "C6n-不加限定的没有机场", sentence: seg.text.slice(Math.max(0, (m.index ?? 0) - 20), (m.index ?? 0) + 30) });
   }
 
   if ((zh ? DEST_LIST_ZH : DEST_LIST_EN).test(seg.text)) {
@@ -555,6 +578,7 @@ const RULES: Rule[] = [
   "D4-粘连句",
   "C6l-机场航点列表",
   "C6m-同条目机场启用年份打架",
+  "C6n-不加限定的没有机场",
 ];
 
 // ── C6d 豁免：已核实「这就是最新一期」的条目 ────────────────────────────
