@@ -9,7 +9,6 @@ import type { FlightRoute } from "../../types/route.ts";
 
 import pekUrc from "./pek-urc.json" with { type: "json" };
 import ctuLxa from "./ctu-lxa.json" with { type: "json" };
-import canLxa from "./can-lxa.json" with { type: "json" };
 import urcKhg from "./urc-khg.json" with { type: "json" };
 // 中国 · 批 1（长江 / 华东 / 西北）
 import shaKmg from "./sha-kmg.json" with { type: "json" };
@@ -24,6 +23,8 @@ import pekHrb from "./pek-hrb.json" with { type: "json" };
 // 中国 · 批 3（南北纵贯 / 华南 / 海南）
 import hrbCan from "./hrb-can.json" with { type: "json" };
 import pekSha from "./pek-sha.json" with { type: "json" };
+import canBud from "./can-bud.json" with { type: "json" };
+import btsKsc from "./bts-ksc.json" with { type: "json" };
 import canHak from "./can-hak.json" with { type: "json" };
 import pekKwl from "./pek-kwl.json" with { type: "json" };
 // 中国 · 批 4（秦岭 / 塔里木 / 云藏 / 辽东）
@@ -50,7 +51,7 @@ import kmgJhg from "./kmg-jhg.json" with { type: "json" };
 import pekZuh from "./pek-zuh.json" with { type: "json" };
 import canWnz from "./can-wnz.json" with { type: "json" };
 import pekYty from "./pek-yty.json" with { type: "json" };
-import pekWus from "./pek-wus.json" with { type: "json" };
+import pkxWus from "./pkx-wus.json" with { type: "json" };
 // 日本国内
 import hndItm from "./hnd-itm.json" with { type: "json" };
 import hndCts from "./hnd-cts.json" with { type: "json" };
@@ -340,7 +341,6 @@ import sclIpc from "./scl-ipc.json" with { type: "json" };
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
   ctuLxa,
-  canLxa,
   urcKhg,
   shaKmg,
   ctuSha,
@@ -352,6 +352,8 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekHrb,
   hrbCan,
   pekSha,
+  canBud,
+  btsKsc,
   canHak,
   pekKwl,
   xiyCtu,
@@ -374,7 +376,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekZuh,
   canWnz,
   pekYty,
-  pekWus,
+  pkxWus,
   hndItm,
   hndCts,
   hndFuk,

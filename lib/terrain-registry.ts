@@ -8562,7 +8562,7 @@ const DACHSTEIN: TerrainEntry = {
   landmark: { name: "上达赫斯坦峰", lon: 13.6058, lat: 47.4753, elevation: 2995, kind: "peak" },
   bbox: [13.45, 47.4, 13.75, 47.55],
   label: { lon: 13.6, lat: 47.48, rotation: 0 },
-  source: "达赫斯坦山：地跨上奥地利州与施泰尔马克州交界（部分延伸至萨尔茨堡州）的石灰岩山地，主峰上达赫斯坦峰海拔2995米，是这两个州的最高点，因地跨三州边界又被称为“三州山”；山体喀斯特地貌发育，已探明240余个洞穴，长毛象洞、巨人冰洞等对外开放；哈尔施塔特冰川是阿尔卑斯山脉最东端的冰川之一（大英百科 / 维基）",
+  source: "达赫斯坦山：地跨上奥地利州与施泰尔马克州交界（部分延伸至萨尔茨堡州）的石灰岩山地，主峰上达赫斯坦峰海拔2995米，是这两个州的最高点，整个山块横跨上奥地利、施泰尔马克与萨尔茨堡三州、因而被称为「三州山」（三州交界点在托尔施泰因峰 2,947 m，不在主峰）；山体喀斯特地貌发育，已探明240余个洞穴，长毛象洞、巨人冰洞等对外开放；哈尔施塔特冰川是阿尔卑斯山脉最东端的冰川之一（大英百科 / 维基）",
 };
 
 const RAX_SCHNEEBERG: TerrainEntry = {
@@ -8784,7 +8784,7 @@ const MUR_RIVER: TerrainEntry = {
   axis: [[13.65, 47.35], [15.55, 46.95]],
   viewScale: 1.5,
   label: { lon: 14.6, lat: 47.15, rotation: -15 },
-  source: "穆尔河：发源于拉德施塔特陶恩山，全长约453公里，其中很长一段流经施泰尔马克州，最终经斯洛文尼亚、克罗地亚汇入德拉瓦河；上游河段保留有奥地利面积第二大的河漫滩森林，是多瑙鲑等珍稀鱼类的天然产卵地，被认为是奥地利生态价值最高的河流之一；格拉茨市即坐落在穆尔河畔（欧洲环境署 / 大英百科）",
+  source: "穆尔河：发源于拉德施塔特陶恩山，全长约453公里，其中很长一段流经施泰尔马克州，最终经斯洛文尼亚、克罗地亚汇入德拉瓦河；下游与斯洛文尼亚交界的河段（Unteres Murtal，2019 年 UNESCO 生物圈公园）保留有奥地利面积第二大的河漫滩森林，是多瑙鲑等珍稀鱼类的天然产卵地，被认为是奥地利生态价值最高的河流之一；格拉茨市即坐落在穆尔河畔（欧洲环境署 / 大英百科）",
 };
 
 const WORTHERSEE: TerrainEntry = {
@@ -14975,6 +14975,1461 @@ const VLTAVA_VALLEY_CESKY_KRUMLOV: TerrainEntry = {
 };
 
 // ============================================================
+// 欧洲 / 匈牙利
+// 东欧次区域第三个国家（波兰、捷克之后）。匈牙利是喀尔巴阡盆地的中心，
+// 全境七成以上是海拔 200 米以下的平原，山地只沿北缘与西南零星分布 ——
+// 这份地形集的主线因此不是"高度"，而是"一个内陆沉降盆地怎么被河流填平、
+// 又被火山与石灰岩在边缘打断"。
+// 跨境地形（克塞格山、泽姆普伦山北端、费尔特湖）一律按"匈牙利与奥地利/
+// 斯洛伐克交界"中性表述，不涉主权、不描述边界线；`history` 段只写地质史与
+// 广泛记载的前现代史及 UNESCO 认定，二十世纪的政治/领土议题一律不碰。
+// 火山锥与火山山地→`mountain_system`、石灰岩山地→`mountain_system`、
+// 喀斯特台地→`plateau`、沉积大平原→`plain`、草原（puszta）→`grassland`、
+// 湖→`lake`、河→`river`、峡谷式河段→`gorge`、玄武岩残丘→`inselberg`。
+// ============================================================
+
+const MATRA: TerrainEntry = {
+  id: "matra",
+  nameZh: "马特劳山",
+  nameEn: "Mátra",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "凯凯什峰", lon: 20.0136, lat: 47.8778, elevation: 1014, kind: "peak" },
+  bbox: [19.70, 47.76, 20.30, 48.00],
+  axis: [[19.75, 47.86], [20.25, 47.86]],
+  viewScale: 1.2,
+  label: { lon: 20.01, lat: 48.02, rotation: 0 },
+  source: "马特劳山：匈牙利北部中山地带的火山山地，主峰凯凯什峰（Kékes）海拔 1014 米，是匈牙利全境最高点；山体由中新世安山岩与流纹岩质火山碎屑岩组成（匈牙利国家公园管理局与匈牙利地质与地球物理研究所口径，WebSearch 2026-09）",
+};
+
+const BUKK: TerrainEntry = {
+  id: "bukk",
+  nameZh: "比克山",
+  nameEn: "Bükk Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "比克高原", lon: 20.4472, lat: 48.0836, elevation: 959, kind: "peak" },
+  bbox: [20.20, 47.90, 20.80, 48.20],
+  axis: [[20.25, 48.02], [20.75, 48.02]],
+  viewScale: 1.2,
+  label: { lon: 20.45, lat: 48.22, rotation: 0 },
+  source: "比克山：匈牙利北部以三叠纪石灰岩为主的山地，最高点为双峰山南峰（现称 Szilvási-kő）约 960.7 米（2014-01 GPS 精测，精度 0.05 m），此前长期被当作主峰的伊什塔洛什科峰（Istállós-kő）959 米现为第三高——**两说并存，正文并列写明**；山顶是一片抬升的石灰岩高原面（Bükk-fennsík），发育竖井、落水洞与洞穴，1977 年设为比克国家公园（匈牙利国家公园管理局口径，WebSearch 2026-09）",
+};
+
+const BORZSONY: TerrainEntry = {
+  id: "borzsony",
+  nameZh: "伯尔容山",
+  nameEn: "Börzsöny",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "乔万约什峰", lon: 18.9167, lat: 47.9333, elevation: 938, kind: "peak" },
+  bbox: [18.70, 47.80, 19.15, 48.05],
+  axis: [[18.78, 47.92], [19.10, 47.92]],
+  viewScale: 1.15,
+  label: { lon: 18.92, lat: 48.07, rotation: 0 },
+  source: "伯尔容山：多瑙河湾北岸的中新世安山岩火山山地，主峰乔万约什峰（Csóványos）海拔 938 米；山体是一座被侵蚀削平的层状火山，与河对岸的维谢格拉德山同属一个火山系统（多瑙河—伊波伊河谷国家公园口径，WebSearch 2026-09）",
+};
+
+const PILIS: TerrainEntry = {
+  id: "pilis",
+  nameZh: "皮利什山",
+  nameEn: "Pilis",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "皮利什峰", lon: 18.8992, lat: 47.6906, elevation: 756, kind: "peak" },
+  bbox: [18.75, 47.60, 19.05, 47.78],
+  axis: [[18.78, 47.68], [19.02, 47.70]],
+  viewScale: 1.1,
+  label: { lon: 18.90, lat: 47.80, rotation: 0 },
+  source: "皮利什山：多瑙河湾南岸的三叠纪白云岩与石灰岩山地，主峰皮利什峰（Pilis-tető）海拔 756 米；与北侧的维谢格拉德火山山地隔谷相望，两者岩性完全不同，是匈牙利中山地带「石灰岩与火山并列」的典型断面（多瑙河—伊波伊河谷国家公园口径，WebSearch 2026-09）",
+};
+
+const BAKONY: TerrainEntry = {
+  id: "bakony",
+  nameZh: "巴科尼山",
+  nameEn: "Bakony",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "克里什山", lon: 17.7217, lat: 47.2533, elevation: 709, kind: "peak" },
+  bbox: [17.20, 46.95, 18.35, 47.45],
+  axis: [[17.30, 47.05], [18.25, 47.35]],
+  viewScale: 1.3,
+  label: { lon: 17.72, lat: 47.47, rotation: 0 },
+  source: "巴科尼山：横斜在巴拉顿湖西北的中生代石灰岩与白云岩山地，主峰克里什山（Kőris-hegy）海拔 709 米，是外多瑙山系（Dunántúli-középhegység）中面积最大的一段；东南缘的巴拉顿高地上散布着上新世玄武岩残丘（匈牙利国家公园管理局与巴拉顿高地国家公园口径，WebSearch 2026-09）",
+};
+
+const MECSEK: TerrainEntry = {
+  id: "mecsek",
+  nameZh: "迈切克山",
+  nameEn: "Mecsek",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "曾格峰", lon: 18.4342, lat: 46.0864, elevation: 682, kind: "peak" },
+  bbox: [18.05, 46.00, 18.65, 46.25],
+  axis: [[18.10, 46.10], [18.60, 46.12]],
+  viewScale: 1.15,
+  label: { lon: 18.43, lat: 46.27, rotation: 0 },
+  source: "迈切克山：匈牙利西南部从大平原边缘拔起的孤立山地，主峰曾格峰（Zengő）海拔 682 米；山体以中生代石灰岩与二叠纪—三叠纪砂岩为主，因位置偏南、被平原环绕而气候明显偏暖，是匈牙利地中海型植物分布最北的一片山地（杜纳—德拉瓦国家公园口径，WebSearch 2026-09）",
+};
+
+const ZEMPLEN: TerrainEntry = {
+  id: "zemplen",
+  nameZh: "泽姆普伦山",
+  nameEn: "Zemplén Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "纳吉米利奇峰", lon: 21.4383, lat: 48.5567, elevation: 894, kind: "peak" },
+  bbox: [21.10, 48.20, 21.75, 48.60],
+  axis: [[21.20, 48.28], [21.60, 48.55]],
+  viewScale: 1.25,
+  label: { lon: 21.44, lat: 48.62, rotation: 0 },
+  source: "泽姆普伦山：匈牙利东北角的中新世火山山地，主体由流纹岩、安山岩与凝灰岩组成；最高点纳吉米利奇峰（Nagy-Milic）海拔 894 米，位于匈牙利与斯洛伐克交界一带。山南麓的托卡伊一带火山凝灰岩风化成的土壤与地下酒窖，是该产区葡萄种植的自然基础（匈牙利国家公园管理局与 UNESCO 口径，WebSearch 2026-09）",
+};
+
+const ALFOLD: TerrainEntry = {
+  id: "alfold",
+  nameZh: "匈牙利大平原",
+  nameEn: "Great Hungarian Plain (Alföld)",
+  category: "plain",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "德布勒森", lon: 21.6273, lat: 47.5316, elevation: 121, kind: "city" },
+  bbox: [19.00, 45.75, 22.90, 48.10],
+  axis: [[19.20, 46.10], [22.60, 47.90]],
+  viewScale: 2.0,
+  label: { lon: 20.90, lat: 46.90, rotation: 0 },
+  source: "匈牙利大平原（Alföld）：喀尔巴阡盆地东南部的沉积平原，占匈牙利国土的一半以上，地面高度大体在海拔 80–150 米之间；由多瑙河、蒂萨河及其支流在第四纪持续充填而成（匈牙利中央统计局与匈牙利地质资料口径，WebSearch 2026-09）",
+};
+
+const KISALFOLD: TerrainEntry = {
+  id: "kisalfold",
+  nameZh: "匈牙利小平原",
+  nameEn: "Little Hungarian Plain (Kisalföld)",
+  category: "plain",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "杰尔", lon: 17.6350, lat: 47.6875, elevation: 108, kind: "city" },
+  bbox: [16.60, 47.30, 18.20, 48.00],
+  axis: [[16.80, 47.55], [18.05, 47.75]],
+  viewScale: 1.4,
+  label: { lon: 17.40, lat: 48.02, rotation: 0 },
+  source: "匈牙利小平原（Kisalföld）：喀尔巴阡盆地西北端的沉积平原，比大平原小得多，由多瑙河与拉巴河等河流的冲积物充填；多瑙河在此分汊形成的河间岛地带（Szigetköz）是其标志性地貌（匈牙利地质资料与费尔特—汉沙格国家公园口径，WebSearch 2026-09）",
+};
+
+const HORTOBAGY: TerrainEntry = {
+  id: "hortobagy",
+  nameZh: "霍尔托巴吉草原",
+  nameEn: "Hortobágy Puszta",
+  category: "grassland",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "九孔桥", lon: 21.1497, lat: 47.5844, elevation: 90, kind: "grassland" },
+  bbox: [20.75, 47.35, 21.65, 47.80],
+  axis: [[20.85, 47.55], [21.55, 47.62]],
+  viewScale: 1.4,
+  label: { lon: 21.15, lat: 47.82, rotation: 0 },
+  source: "霍尔托巴吉：匈牙利大平原东部的一片开阔草原（puszta），中欧面积最大的连片天然草地之一；1973 年设为匈牙利第一座国家公园，1999 年以文化景观类别列入 UNESCO 世界遗产（whc.unesco.org 与霍尔托巴吉国家公园官网，WebSearch 2026-09）",
+};
+
+const KISKUNSAG: TerrainEntry = {
+  id: "kiskunsag",
+  nameZh: "基什孔沙地",
+  nameEn: "Kiskunság Sand Country",
+  category: "grassland",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "布格茨沙丘", lon: 19.6089, lat: 46.6875, elevation: 111, kind: "dune" },
+  bbox: [19.00, 46.30, 20.30, 47.15],
+  axis: [[19.15, 46.45], [20.15, 47.05]],
+  viewScale: 1.4,
+  label: { lon: 19.60, lat: 47.17, rotation: 0 },
+  source: "基什孔：多瑙河与蒂萨河之间的沙地区，地表为风成沙丘与丘间洼地，洼地里分布着季节性的碱水湖与碱土草原；1975 年设立基什孔国家公园（基什孔国家公园官网，WebSearch 2026-09）",
+};
+
+const DANUBE_BEND: TerrainEntry = {
+  id: "danube-bend",
+  nameZh: "多瑙河湾",
+  nameEn: "Danube Bend",
+  category: "gorge",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "维谢格拉德城堡山", lon: 18.9761, lat: 47.7936, elevation: 328, kind: "gorge" },
+  bbox: [18.70, 47.70, 19.15, 47.90],
+  axis: [[18.75, 47.82], [19.10, 47.78]],
+  viewScale: 1.1,
+  label: { lon: 18.95, lat: 47.92, rotation: 0 },
+  source: "多瑙河湾：多瑙河在匈牙利北部自西向东流到伯尔容山与维谢格拉德—皮利什山地之间、急转向南的一段，两岸为火山岩与碳酸盐岩山地，河谷深切（多瑙河—伊波伊河谷国家公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_BALATON: TerrainEntry = {
+  id: "lake-balaton",
+  nameZh: "巴拉顿湖",
+  nameEn: "Lake Balaton",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "蒂豪尼半岛", lon: 17.8919, lat: 46.9128, elevation: 130, kind: "island" },
+  bbox: [17.22, 46.66, 18.20, 47.10],
+  axis: [[17.28, 46.72], [18.14, 47.05]],
+  viewScale: 1.35,
+  label: { lon: 17.70, lat: 47.12, rotation: 0 },
+  source: "巴拉顿湖：中欧面积最大的湖泊，水面约 594 平方公里，东北—西南向长约 77 公里，平均水深仅约 3 米；湖盆为断陷成因，北岸紧邻巴科尼山与巴拉顿高地的玄武岩残丘（巴拉顿高地国家公园与匈牙利水文资料口径，WebSearch 2026-09）",
+};
+
+const TISZA_RIVER: TerrainEntry = {
+  id: "tisza-river",
+  nameZh: "蒂萨河",
+  nameEn: "Tisza River",
+  category: "river",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "塞格德", lon: 20.1414, lat: 46.2530, elevation: 79, kind: "city" },
+  bbox: [19.90, 45.95, 22.35, 48.40],
+  axis: [[22.20, 48.30], [20.10, 46.05]],
+  viewScale: 1.8,
+  label: { lon: 20.60, lat: 47.30, rotation: 0 },
+  source: "蒂萨河：多瑙河最长的支流，自东北向西南斜贯匈牙利大平原；19 世纪起的大规模裁弯取直与筑堤工程把它原来的自由曲流河道大幅缩短，河道两侧至今保留着成串的牛轭湖（匈牙利水管理部门与公开地理资料口径，WebSearch 2026-09）",
+};
+
+const VISEGRAD_HILLS: TerrainEntry = {
+  id: "visegrad-hills",
+  nameZh: "维谢格拉德山",
+  nameEn: "Visegrád Hills",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "多博戈山", lon: 18.8967, lat: 47.7186, elevation: 700, kind: "peak" },
+  bbox: [18.78, 47.65, 19.10, 47.82],
+  axis: [[18.82, 47.72], [19.05, 47.75]],
+  viewScale: 1.1,
+  label: { lon: 18.90, lat: 47.84, rotation: 0 },
+  source: "维谢格拉德山：多瑙河湾南岸的中新世安山岩火山山地，与北岸的伯尔容山同属一个火山系统、被多瑙河切开；最高点多博戈山海拔约 700 米。它与西邻的皮利什山常被混称，但两者岩性与所属山系都不同（多瑙河—伊波伊河谷国家公园与匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const VERTES: TerrainEntry = {
+  id: "vertes",
+  nameZh: "维尔特什山",
+  nameEn: "Vértes",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "大恰卡尼山", lon: 18.3617, lat: 47.3739, elevation: 487, kind: "peak" },
+  bbox: [18.15, 47.25, 18.60, 47.50],
+  axis: [[18.20, 47.32], [18.55, 47.45]],
+  viewScale: 1.1,
+  label: { lon: 18.36, lat: 47.52, rotation: 0 },
+  source: "维尔特什山：外多瑙山系中段的中生代石灰岩与白云岩断块山地，最高点大恰卡尼山（Nagy-Csákány）海拔 487 米；岩性以三叠纪白云岩为主、夹石灰岩；西侧以陡崖俯瞰莫尔沟（Móri-árok）断陷谷（匈牙利国家公园管理局与匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const GERECSE: TerrainEntry = {
+  id: "gerecse",
+  nameZh: "盖雷切山",
+  nameEn: "Gerecse",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "大盖雷切山", lon: 18.4808, lat: 47.6875, elevation: 634, kind: "peak" },
+  bbox: [18.25, 47.58, 18.75, 47.80],
+  axis: [[18.30, 47.65], [18.70, 47.72]],
+  viewScale: 1.1,
+  label: { lon: 18.48, lat: 47.82, rotation: 0 },
+  source: "盖雷切山：外多瑙山系东段的中生代石灰岩山地，最高点大盖雷切山（Nagy-Gerecse）海拔 634 米；北缘直抵多瑙河，历史上以红色石灰岩（「盖雷切红」）采石著称（匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const KOSZEG_MOUNTAINS: TerrainEntry = {
+  id: "koszeg-mountains",
+  nameZh: "克塞格山",
+  nameEn: "Kőszeg Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "伊罗特科峰", lon: 16.4306, lat: 47.3500, elevation: 882, kind: "peak" },
+  bbox: [16.30, 47.28, 16.65, 47.45],
+  axis: [[16.33, 47.33], [16.60, 47.40]],
+  viewScale: 1.05,
+  label: { lon: 16.43, lat: 47.47, rotation: 0 },
+  source: "克塞格山：匈牙利西部边缘的变质岩（片岩、千枚岩）低山，是阿尔卑斯东缘余脉伸入喀尔巴阡盆地的一段；最高点伊罗特科峰（Írott-kő）海拔 882 米，在匈牙利与奥地利交界一带，也是匈牙利外多瑙地区的最高点（匈牙利国家公园管理局与匈牙利地理资料口径，WebSearch 2026-09）",
+};
+
+const AGGTELEK_KARST: TerrainEntry = {
+  id: "aggtelek-karst",
+  nameZh: "阿格泰莱克喀斯特",
+  nameEn: "Aggtelek Karst",
+  category: "plateau",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "巴拉德拉洞入口", lon: 20.5133, lat: 48.4697, elevation: 340, kind: "gorge" },
+  bbox: [20.30, 48.38, 20.80, 48.58],
+  axis: [[20.35, 48.45], [20.72, 48.52]],
+  viewScale: 1.1,
+  label: { lon: 20.52, lat: 48.60, rotation: 0 },
+  source: "阿格泰莱克喀斯特：匈牙利东北部的三叠纪石灰岩喀斯特台地，地表发育落水洞与干谷、地下发育大型洞穴系统，其中巴拉德拉洞是最著名的一处；1995 年与相邻的斯洛伐克喀斯特一并以「阿格泰莱克喀斯特与斯洛伐克喀斯特洞穴群」列入 UNESCO 世界自然遗产（whc.unesco.org 与阿格泰莱克国家公园官网，WebSearch 2026-09）",
+};
+
+const BALATON_WITNESS_HILLS: TerrainEntry = {
+  id: "balaton-witness-hills",
+  nameZh: "巴拉顿高地玄武岩证人山",
+  nameEn: "Basalt Witness Hills of the Balaton Uplands",
+  category: "inselberg",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "巴达乔尼山", lon: 17.5017, lat: 46.7969, elevation: 437, kind: "peak" },
+  bbox: [17.25, 46.72, 17.75, 46.92],
+  axis: [[17.30, 46.78], [17.70, 46.86]],
+  viewScale: 1.05,
+  label: { lon: 17.50, lat: 46.94, rotation: 0 },
+  source: "巴拉顿高地玄武岩证人山：巴拉顿湖北岸一批孤立的平顶山与火山颈，成因是上新世玄武岩火山活动留下的熔岩盖与火山通道，周围较软的沉积岩被剥蚀后它们留存下来；巴达乔尼山（437 米）、圣乔治山、绍姆洛山是其中最醒目的几座（巴拉顿高地国家公园口径，WebSearch 2026-09）",
+};
+
+const TIHANY_PENINSULA: TerrainEntry = {
+  id: "tihany-peninsula",
+  nameZh: "蒂豪尼半岛",
+  nameEn: "Tihany Peninsula",
+  category: "inselberg",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "蒂豪尼内湖", lon: 17.8900, lat: 46.9147, elevation: 130, kind: "lake" },
+  bbox: [17.84, 46.87, 17.95, 46.96],
+  axis: [[17.86, 46.89], [17.93, 46.95]],
+  viewScale: 1.0,
+  label: { lon: 17.89, lat: 46.98, rotation: 0 },
+  source: "蒂豪尼半岛：从巴拉顿湖北岸伸入湖中的火山半岛，由上新世凝灰岩与玄武岩构成，几乎把湖面掐成两段；半岛上的内湖是火山口积水而成，另有温泉活动留下的泉华丘（gejzírkúp）。1952 年设为匈牙利第一处景观保护区（巴拉顿高地国家公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_FERTO: TerrainEntry = {
+  id: "lake-ferto",
+  nameZh: "费尔特湖",
+  nameEn: "Lake Fertő",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "费尔特湖芦苇带", lon: 16.7500, lat: 47.6800, elevation: 115, kind: "lake" },
+  bbox: [16.62, 47.62, 16.98, 47.88],
+  axis: [[16.68, 47.66], [16.92, 47.84]],
+  viewScale: 1.1,
+  label: { lon: 16.75, lat: 47.90, rotation: 0 },
+  source: "费尔特湖：欧亚草原带最西端的一处内陆碱性浅水湖，位于匈牙利与奥地利交界，湖面大部分在奥地利一侧；水深极浅、湖岸被大片芦苇带包围，水位随蒸发与降水大幅摆动，历史上曾多次几近干涸。2001 年以「费尔特／新锡德尔湖文化景观」列入 UNESCO 世界遗产（whc.unesco.org 与费尔特—汉沙格国家公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_HEVIZ: TerrainEntry = {
+  id: "lake-heviz",
+  nameZh: "赫维兹温泉湖",
+  nameEn: "Lake Hévíz",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "赫维兹湖", lon: 17.1900, lat: 46.7881, elevation: 117, kind: "lake" },
+  bbox: [17.17, 46.78, 17.21, 46.80],
+  axis: [[17.18, 46.785], [17.20, 46.793]],
+  viewScale: 1.0,
+  label: { lon: 17.19, lat: 46.805, rotation: 0 },
+  source: "赫维兹温泉湖：巴拉顿湖西端附近的一处天然温泉湖，由湖底的岩溶泉持续涌出温水补给，水体整体温热、全年可浴，是世界上面积最大的可供沐浴的天然温泉湖之一；湖水更新很快，是理解岩溶泉出露与地下热水循环的现成案例（巴拉顿高地国家公园与匈牙利水文资料口径，WebSearch 2026-09）",
+};
+
+const LAKE_VELENCE: TerrainEntry = {
+  id: "lake-velence",
+  nameZh: "沃伦采湖",
+  nameEn: "Lake Velence",
+  category: "lake",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "沃伦采湖", lon: 18.6300, lat: 47.2100, elevation: 104, kind: "lake" },
+  bbox: [18.52, 47.16, 18.72, 47.26],
+  axis: [[18.55, 47.18], [18.70, 47.24]],
+  viewScale: 1.05,
+  label: { lon: 18.63, lat: 47.28, rotation: 0 },
+  source: "沃伦采湖：布达佩斯西南的一处浅水湖，水深大多不足两米，西端有大片芦苇沼泽、是重要的水鸟栖息地；湖水含碱，夏季升温极快（多瑙河—伊波伊河谷国家公园与匈牙利水文资料口径，WebSearch 2026-09）",
+};
+
+const DANUBE_HUNGARY: TerrainEntry = {
+  id: "danube-hungary",
+  nameZh: "多瑙河匈牙利段",
+  nameEn: "Danube in Hungary",
+  category: "river",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "布达佩斯河段", lon: 19.0450, lat: 47.4979, elevation: 96, kind: "city" },
+  bbox: [16.90, 45.75, 19.20, 48.00],
+  axis: [[17.10, 47.85], [18.95, 45.90]],
+  viewScale: 1.6,
+  label: { lon: 18.60, lat: 46.60, rotation: 0 },
+  source: "多瑙河匈牙利段：多瑙河自西北进入匈牙利，先横穿小平原，在多瑙河湾折向南，纵贯大平原后出境；匈牙利境内河段是全河中下游的一段，河道在平原上宽阔、多沙洲（匈牙利水管理部门与公开地理资料口径，WebSearch 2026-09）",
+};
+
+const SZIGETKOZ: TerrainEntry = {
+  id: "szigetkoz",
+  nameZh: "岛间地",
+  nameEn: "Szigetköz",
+  category: "river",
+  regionId: "europe",
+  country: "hungary",
+  landmark: { name: "岛间地汊流区", lon: 17.3000, lat: 47.8500, elevation: 115, kind: "delta" },
+  bbox: [17.05, 47.72, 17.90, 48.00],
+  axis: [[17.10, 47.95], [17.85, 47.76]],
+  viewScale: 1.2,
+  label: { lon: 17.30, lat: 48.02, rotation: 0 },
+  source: "岛间地（Szigetköz）：多瑙河进入小平原后坡度骤减、河道分汊，在主流与汊流之间围出的一片河间岛地带，地表是成网的汊流、牛轭湖与河漫滩森林；面积约 375 平方公里、长约 52 公里、宽 6–8 公里，是匈牙利境内最大的内陆河流岛区（东北多瑙水务局，1 级）（费尔特—汉沙格国家公园与匈牙利水管理部门口径，WebSearch 2026-09）",
+};
+
+
+
+
+// ============================================================
+// 欧洲 / 斯洛伐克（东欧次区域第三国，波兰、捷克之后）
+// 零争议红线：全境山地几乎都沿国界分布，跨境峰顶一律按「斯洛伐克与波兰/奥地利交界」这类
+// 中性表述，不涉主权、不描述边界线；东北角（波洛尼尼—布科夫斯凯山）周边邻国情况敏感，
+// 比照克罗地亚的更严做法 —— **一个邻国名都不提**，只写「斯洛伐克国土东北端」。
+// `history` 段只写地质史、广泛记载的前现代史与 UNESCO 认定，二十世纪的政治/领土/民族议题一律不碰。
+// 结晶岩核心高山 / 火山山地 / 石灰岩中山→`mountain_system`、喀斯特高原→`plateau`、
+// 深切喀斯特峡谷→`gorge`、砾岩岩城→`hills`、冲积低地→`plain`、山间构造盆地→`basin`、
+// 干流河段→`river`、冰蚀湖与山崩堰塞湖→`lake`、河间岛地→`island`。
+// ============================================================
+
+const HIGH_TATRAS: TerrainEntry = {
+  id: "high-tatras",
+  nameZh: "高塔特拉山",
+  nameEn: "High Tatras",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "格尔拉赫峰", lon: 20.1347, lat: 49.1642, elevation: 2655, kind: "peak" },
+  bbox: [19.95, 49.10, 20.35, 49.28],
+  axis: [[19.98, 49.16], [20.32, 49.20]],
+  viewScale: 1.15,
+  label: { lon: 20.14, lat: 49.30, rotation: 0 },
+  source: "高塔特拉山（Vysoké Tatry）：塔特拉山中海拔最高、冰川地貌最典型的一段，主峰格尔拉赫峰（Gerlachovský štít）海拔约 2655 米（部分资料作 2654.4 米），是斯洛伐克全境与整条喀尔巴阡山脉的最高点，完全在斯洛伐克境内；主脊东西长约 26 公里、宽约 17 公里；山体是花岗岩质的结晶岩核心，冰斗、悬谷与冰蚀湖（pleso）成群（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）。⚠️ 本库另有波兰侧的 `tatra-mountains` 条目（锚点为波兰最高点雷西峰西北峰 2499 米），两条讲的是同一条山脉的两个不同对象，写作时不要互相覆盖",
+};
+
+const WESTERN_TATRAS: TerrainEntry = {
+  id: "western-tatras",
+  nameZh: "西塔特拉山",
+  nameEn: "Western Tatras",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "比斯特拉峰", lon: 19.7419, lat: 49.1889, elevation: 2248, kind: "peak" },
+  bbox: [19.55, 49.10, 19.98, 49.30],
+  axis: [[19.58, 49.18], [19.95, 49.22]],
+  viewScale: 1.15,
+  label: { lon: 19.74, lat: 49.32, rotation: 0 },
+  source: "西塔特拉山（Západné Tatry）：塔特拉山西段，最高点比斯特拉峰（Bystrá）海拔 2248 米；与高塔特拉的差别在于岩性不是单一花岗岩 —— 结晶岩核心之上还盖着石灰岩、白云岩的推覆岩片，因此山形更圆缓、并发育少量喀斯特，山脊沿斯洛伐克与波兰交界一带延伸（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const LOW_TATRAS: TerrainEntry = {
+  id: "low-tatras",
+  nameZh: "低塔特拉山",
+  nameEn: "Low Tatras",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "敦比耶尔峰", lon: 19.6461, lat: 48.9394, elevation: 2043, kind: "peak" },
+  bbox: [19.15, 48.83, 20.30, 49.05],
+  axis: [[19.20, 48.92], [20.25, 48.92]],
+  viewScale: 1.35,
+  label: { lon: 19.70, lat: 49.07, rotation: 0 },
+  source: "低塔特拉山（Nízke Tatry）：瓦赫河与赫龙河河谷之间一条东西向的长山脊，最高点敦比耶尔峰（Ďumbier）海拔 2043 米；范围是斯洛伐克面积最大的国家公园，山脊线长而连续、两端分别以敦比耶尔与克拉洛瓦霍拉为高点，北坡发育著名的洞穴群（斯洛伐克旅游局与低塔特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const MALA_FATRA: TerrainEntry = {
+  id: "mala-fatra",
+  nameZh: "小法特拉山",
+  nameEn: "Malá Fatra",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "大克里万峰", lon: 19.0208, lat: 49.1758, elevation: 1709, kind: "peak" },
+  bbox: [18.80, 49.03, 19.28, 49.30],
+  axis: [[18.85, 49.10], [19.22, 49.25]],
+  viewScale: 1.2,
+  label: { lon: 19.02, lat: 49.32, rotation: 0 },
+  source: "小法特拉山（Malá Fatra）：斯洛伐克西北部一条石灰岩与白云岩为主的中山，最高点大克里万峰（Veľký Kriváň）海拔 1709 米；主脊两侧被支谷切得很碎，亚诺希克峡谷群就发育在其中一条支谷里（斯洛伐克旅游局与小法特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const VELKA_FATRA: TerrainEntry = {
+  id: "velka-fatra",
+  nameZh: "大法特拉山",
+  nameEn: "Veľká Fatra",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "奥斯特雷多克峰", lon: 19.0306, lat: 48.9481, elevation: 1592, kind: "peak" },
+  bbox: [18.82, 48.78, 19.30, 49.16],
+  axis: [[18.95, 48.82], [19.15, 49.12]],
+  viewScale: 1.25,
+  label: { lon: 19.03, lat: 49.18, rotation: 0 },
+  source: "大法特拉山（Veľká Fatra）：小法特拉以东、图里耶茨盆地另一侧的山地，最高点奥斯特雷多克峰（Ostredok）海拔 1592 米；名字里的「大」指面积，不指高度 —— 它比小法特拉宽得多，但最高点比小法特拉低（斯洛伐克旅游局与大法特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const MALE_KARPATY: TerrainEntry = {
+  id: "male-karpaty",
+  nameZh: "小喀尔巴阡山",
+  nameEn: "Little Carpathians",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "扎鲁比峰", lon: 17.4056, lat: 48.5033, elevation: 768, kind: "peak" },
+  bbox: [16.95, 48.12, 17.80, 48.72],
+  axis: [[17.05, 48.16], [17.72, 48.68]],
+  viewScale: 1.3,
+  label: { lon: 17.40, lat: 48.74, rotation: 0 },
+  source: "小喀尔巴阡山（Malé Karpaty）：喀尔巴阡山脉的西南端，从多瑙河边一路向东北延伸约 100 公里，高程从河边约 132 米升到最高点扎鲁比峰（Záruby）768 米；它是整条喀尔巴阡弧在西南方向的收尾，布拉迪斯拉发就坐落在它的南端（斯洛伐克旅游局与小喀尔巴阡保护景观区口径，WebSearch 2026-09）",
+};
+
+const SLOVENSKE_RUDOHORIE: TerrainEntry = {
+  id: "slovenske-rudohorie",
+  nameZh: "斯洛伐克矿山",
+  nameEn: "Slovak Ore Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "斯托利察峰", lon: 20.1875, lat: 48.7258, elevation: 1476, kind: "peak" },
+  bbox: [19.25, 48.45, 21.30, 48.98],
+  axis: [[19.30, 48.70], [21.25, 48.72]],
+  viewScale: 1.6,
+  label: { lon: 20.20, lat: 49.00, rotation: 0 },
+  source: "斯洛伐克矿山（Slovenské rudohorie）：斯洛伐克南部一片东西向铺开的老山地，不是一条山脊而是一组山群与喀斯特高原的集合（斯托利采山、沃洛夫采山、雷武茨卡高地、韦波尔山、切尔纳霍拉，以及斯洛伐克喀斯特与斯皮什—盖梅尔喀斯特），最高点斯托利察峰（Stolica）海拔 1476 米；名字来自其长期的金属矿开采史（斯洛伐克地质调查所与斯洛伐克旅游局口径，WebSearch 2026-09）",
+};
+const STIAVNICKE_VRCHY: TerrainEntry = {
+  id: "stiavnicke-vrchy",
+  nameZh: "什佳夫尼察山",
+  nameEn: "Štiavnica Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "西特诺峰", lon: 18.8783, lat: 48.3958, elevation: 1009, kind: "peak" },
+  bbox: [18.50, 48.22, 19.12, 48.62],
+  axis: [[18.58, 48.30], [19.05, 48.55]],
+  viewScale: 1.3,
+  label: { lon: 18.88, lat: 48.64, rotation: 0 },
+  source: "什佳夫尼察山（Štiavnické vrchy）：斯洛伐克面积最大的火山山地，是一座中新世层状火山被侵蚀后剩下的残体，构造上由一个约 18×22 公里的大破火山口、大范围的侵入岩体与一块回升的地垒组成；最高点西特诺峰（Sitno）海拔 1009 米（斯洛伐克旅游局与班斯卡什佳夫尼察地质公园口径，WebSearch 2026-09）",
+};
+
+const POLANA: TerrainEntry = {
+  id: "polana",
+  nameZh: "波利亚纳山",
+  nameEn: "Poľana",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "波利亚纳峰", lon: 19.4894, lat: 48.6392, elevation: 1458, kind: "peak" },
+  bbox: [19.28, 48.53, 19.74, 48.77],
+  axis: [[19.32, 48.64], [19.70, 48.64]],
+  viewScale: 1.15,
+  label: { lon: 19.49, lat: 48.79, rotation: 0 },
+  source: "波利亚纳山（Poľana）：一座死火山，最高点海拔 1458 米；山体形成于约 1300 万至 1500 万年前，长期火山活动与其后的侵蚀在山体中央留下一个直径约 6 公里的破火山口，常被称为欧洲规模最大的死火山之一；1981 年设为保护景观区，1990 年列入 UNESCO 生物圈保护区（斯洛伐克旅游局与斯洛伐克自然保护局口径，WebSearch 2026-09）",
+};
+
+const VIHORLAT: TerrainEntry = {
+  id: "vihorlat",
+  nameZh: "维霍尔拉特山",
+  nameEn: "Vihorlat Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "维霍尔拉特峰", lon: 22.1583, lat: 48.9236, elevation: 1076, kind: "peak" },
+  bbox: [21.85, 48.78, 22.48, 49.02],
+  axis: [[21.90, 48.88], [22.44, 48.90]],
+  viewScale: 1.25,
+  label: { lon: 22.16, lat: 49.04, rotation: 0 },
+  source: "维霍尔拉特山（Vihorlatské vrchy）：斯洛伐克东部一片火山山地，最高点维霍尔拉特峰海拔 1076 米；山体森林覆盖率在斯洛伐克各山地中属最高的一档，其中的原始山毛榉林作为「喀尔巴阡山脉与欧洲其他地区的原始与古老山毛榉林」跨国系列世界遗产的组成部分列入名录；山体内的莫尔斯凯奥科湖是山崩堰塞成因（斯洛伐克旅游局与 UNESCO 口径，WebSearch 2026-09）",
+};
+
+const POLONINY: TerrainEntry = {
+  id: "poloniny",
+  nameZh: "波洛尼尼山地",
+  nameEn: "Poloniny",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "克雷梅涅茨一带", lon: 22.5486, lat: 49.0872, elevation: 1208, kind: "peak" },
+  bbox: [22.15, 48.92, 22.62, 49.14],
+  axis: [[22.20, 48.98], [22.58, 49.10]],
+  viewScale: 1.2,
+  label: { lon: 22.40, lat: 49.16, rotation: 0 },
+  source: "波洛尼尼山地（Poloniny，布科夫斯凯山 Bukovské vrchy）：斯洛伐克国土最东北端的一片砂岩—页岩山地，1997-10-01 设为国家公园，是斯洛伐克最东的国家公园；园区最高点海拔约 1208 米，位于国土东北端的国界交汇处，紧邻海拔 1221 米的克雷梅涅茨（Kremenec）峰顶；园内的斯图日察（Stužica）原始林是跨国系列世界遗产「喀尔巴阡山脉与欧洲其他地区的原始与古老山毛榉林」的组成部分（斯洛伐克旅游局与 UNESCO 口径，WebSearch 2026-09）。⚠️ 零争议：该园三面临国界，正文与本条一律只写「国土东北端」「国界交汇处」，**不写任何邻国国名**",
+};
+
+const SLOVENSKY_KRAS: TerrainEntry = {
+  id: "slovensky-kras",
+  nameZh: "斯洛伐克喀斯特",
+  nameEn: "Slovak Karst",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "锡利察高原", lon: 20.5167, lat: 48.5583, elevation: 700, kind: "escarpment" },
+  bbox: [20.25, 48.42, 20.98, 48.74],
+  axis: [[20.30, 48.58], [20.94, 48.56]],
+  viewScale: 1.35,
+  label: { lon: 20.55, lat: 48.76, rotation: 0 },
+  source: "斯洛伐克喀斯特（Slovenský kras）：斯洛伐克南部一片由中生代石灰岩组成的台地状喀斯特区，面积约 440 平方公里，是中欧面积最大的喀斯特区，地下形态密度很高（各家统计在 1000–1100 个洞穴与竖井之间）；其洞穴群与相邻的阿格泰莱克喀斯特一并列入 UNESCO 世界遗产；2002-03-01 设为国家公园（斯洛伐克旅游局、斯洛伐克喀斯特国家公园与 UNESCO 口径，WebSearch 2026-09）。⚠️ 本库另有匈牙利侧的 `aggtelek-karst` 条目，两侧是同一片喀斯特被国界分开的两半，跨境一律按中性表述",
+};
+
+const SLOVENSKY_RAJ: TerrainEntry = {
+  id: "slovensky-raj",
+  nameZh: "斯洛伐克天堂",
+  nameEn: "Slovak Paradise",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "多布希纳冰洞一带", lon: 20.3025, lat: 48.8836, elevation: 969, kind: "gorge" },
+  bbox: [20.15, 48.83, 20.58, 49.00],
+  axis: [[20.18, 48.90], [20.54, 48.90]],
+  viewScale: 1.2,
+  label: { lon: 20.35, lat: 49.02, rotation: 0 },
+  source: "斯洛伐克天堂（Slovenský raj）：斯洛伐克东部一片被深谷切碎的喀斯特高原，国家公园面积约 197.6 平方公里，1988-01-18 设立；地表是台地状的高原面，边缘被一系列隘谷、跌水与瀑布切开，其中霍尔纳德河峡谷长约 11.7 公里，是园内最长的一条；园内的多布希纳冰洞 2000 年作为斯洛伐克与阿格泰莱克喀斯特洞穴世界遗产的扩展项列入（斯洛伐克天堂国家公园与 UNESCO 口径，WebSearch 2026-09）",
+};
+
+const MURANSKA_PLANINA: TerrainEntry = {
+  id: "muranska-planina",
+  nameZh: "穆兰高原",
+  nameEn: "Muránska planina",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "克拉克峰", lon: 20.0028, lat: 48.7625, elevation: 1409, kind: "peak" },
+  bbox: [19.83, 48.66, 20.32, 48.90],
+  axis: [[19.88, 48.76], [20.28, 48.78]],
+  viewScale: 1.2,
+  label: { lon: 20.05, lat: 48.92, rotation: 0 },
+  source: "穆兰高原（Muránska planina）：斯洛伐克中部一片台地状喀斯特高原，属斯皮什—盖梅尔喀斯特，位于布雷兹诺、切尔韦纳斯卡拉、穆兰与蒂索韦茨之间；最高点克拉克峰（Kľak）海拔 1409 米；1997 年 10 月设为国家公园、1998-05-27 开园（斯洛伐克旅游局与穆兰高原国家公园口径，WebSearch 2026-09）",
+};
+const PRIELOM_HORNADU: TerrainEntry = {
+  id: "prielom-hornadu",
+  nameZh: "霍尔纳德河峡谷",
+  nameEn: "Prielom Hornádu",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "霍尔纳德河谷底", lon: 20.4000, lat: 48.9600, elevation: 520, kind: "gorge" },
+  bbox: [20.28, 48.92, 20.54, 49.00],
+  axis: [[20.30, 48.95], [20.52, 48.97]],
+  viewScale: 1.1,
+  label: { lon: 20.40, lat: 49.02, rotation: 0 },
+  source: "霍尔纳德河峡谷（Prielom Hornádu）：霍尔纳德河横切斯洛伐克天堂喀斯特高原北缘形成的先成河谷，长约 11.7 公里，是斯洛伐克天堂国家公园内最长的一条峡谷；谷壁陡立，游步道靠架在岩壁上的栈道、梯子与铁链通过（斯洛伐克天堂国家公园口径，WebSearch 2026-09）",
+};
+
+const ZADIELSKA_TIESNAVA: TerrainEntry = {
+  id: "zadielska-tiesnava",
+  nameZh: "扎迪耶尔峡谷",
+  nameEn: "Zádielska tiesňava",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "扎迪耶尔谷口", lon: 20.8428, lat: 48.6208, elevation: 330, kind: "gorge" },
+  bbox: [20.79, 48.59, 20.90, 48.66],
+  axis: [[20.84, 48.60], [20.85, 48.65]],
+  viewScale: 1.0,
+  label: { lon: 20.84, lat: 48.68, rotation: 0 },
+  source: "扎迪耶尔峡谷（Zádielska tiesňava）：斯洛伐克喀斯特台地边缘一条深切的石灰岩隘谷，谷长约 2200 米、深约 300 米（局部可达 400 米）、谷底最窄处仅约 10 米；它是长约 3.8 公里的扎迪耶尔谷（Zádielska dolina）中最险的一段，为国家自然保护区（斯洛伐克旅游局与斯洛伐克喀斯特国家公园口径，WebSearch 2026-09）",
+};
+
+const JANOSIKOVE_DIERY: TerrainEntry = {
+  id: "janosikove-diery",
+  nameZh: "亚诺希克峡谷群",
+  nameEn: "Jánošíkove diery",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "亚诺希克峡谷谷口", lon: 19.0500, lat: 49.2167, elevation: 640, kind: "gorge" },
+  bbox: [18.99, 49.19, 19.11, 49.26],
+  axis: [[19.02, 49.21], [19.08, 49.24]],
+  viewScale: 1.0,
+  label: { lon: 19.05, lat: 49.27, rotation: 0 },
+  source: "亚诺希克峡谷群（Jánošíkove diery）：小法特拉山北侧一组石灰岩隘谷，由下谷（Dolné diery）、上谷（Horné diery）、新谷（Nové diery）与窄槽（Tesná rizňa）几段组成，全程沿途约二十处跌水，靠架在岩壁上的梯子与栈道通行（斯洛伐克旅游局与小法特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const PRIELOM_DUNAJCA: TerrainEntry = {
+  id: "prielom-dunajca",
+  nameZh: "杜纳耶茨河峡谷",
+  nameEn: "Dunajec Gorge",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "杜纳耶茨河曲流段", lon: 20.4083, lat: 49.4083, elevation: 450, kind: "gorge" },
+  bbox: [20.28, 49.37, 20.52, 49.45],
+  axis: [[20.30, 49.40], [20.50, 49.41]],
+  viewScale: 1.05,
+  label: { lon: 20.40, lat: 49.47, rotation: 0 },
+  source: "杜纳耶茨河峡谷（Prielom Dunajca）：杜纳耶茨河横切皮耶尼尼山的石灰岩山体形成的深切曲流峡谷，沿斯洛伐克与波兰交界一带展开；最险的一段长约 8 公里，河道在谷中反复绕出大曲流，两侧是近乎垂直的石灰岩壁（斯洛伐克旅游局口径，WebSearch 2026-09）。⚠️ 本库另有波兰侧的 `pieniny-mountains` 条目讲的是山体，本条讲的是河谷；跨境只写交界、不涉主权、不描述边界线",
+};
+
+const SULOVSKE_SKALY: TerrainEntry = {
+  id: "sulovske-skaly",
+  nameZh: "苏洛夫岩城",
+  nameEn: "Súľov Rocks",
+  category: "hills",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "苏洛夫岩群", lon: 18.5981, lat: 49.1683, elevation: 660, kind: "escarpment" },
+  bbox: [18.52, 49.12, 18.68, 49.22],
+  axis: [[18.54, 49.15], [18.66, 49.19]],
+  viewScale: 1.05,
+  label: { lon: 18.60, lat: 49.24, rotation: 0 },
+  source: "苏洛夫岩城（Súľovské skaly）：斯洛伐克西北部苏洛夫山中一片由古近纪砾岩（「苏洛夫砾岩」）风化而成的岩塔、岩针、岩窗与岩门群；1973 年设为国家自然保护区，面积约 5.4 平方公里，砾岩层在局部厚达数百米（斯洛伐克旅游局与日利纳旅游信息中心口径，WebSearch 2026-09）",
+};
+
+const LIPTOVSKA_KOTLINA: TerrainEntry = {
+  id: "liptovska-kotlina",
+  nameZh: "利普托夫盆地",
+  nameEn: "Liptov Basin",
+  category: "basin",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "利普托夫斯卡马拉水库", lon: 19.5100, lat: 49.0900, elevation: 564, kind: "lake" },
+  bbox: [19.18, 48.98, 19.92, 49.22],
+  axis: [[19.22, 49.08], [19.88, 49.08]],
+  viewScale: 1.25,
+  label: { lon: 19.51, lat: 49.24, rotation: 0 },
+  source: "利普托夫盆地（Liptovská kotlina）：瓦赫河上游的一块山间构造盆地，北侧是西塔特拉与乔奇山，南侧是低塔特拉，盆地底部由河流沉积物填充；盆中的利普托夫斯卡马拉水库总库容约 3.605 亿立方米，是斯洛伐克库容最大的水库，属瓦赫河梯级工程（斯洛伐克旅游局与利普托夫旅游局口径，WebSearch 2026-09）",
+};
+
+const ZAHORSKA_NIZINA: TerrainEntry = {
+  id: "zahorska-nizina",
+  nameZh: "扎霍里低地",
+  nameEn: "Záhorie Lowland",
+  category: "plain",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "什拉内茨沙地", lon: 17.0500, lat: 48.4800, elevation: 165, kind: "dune" },
+  bbox: [16.84, 48.20, 17.50, 48.92],
+  axis: [[17.05, 48.25], [17.20, 48.88]],
+  viewScale: 1.3,
+  label: { lon: 17.10, lat: 48.94, rotation: 0 },
+  source: "扎霍里低地（Záhorská nížina）：小喀尔巴阡山以西、摩拉瓦河以东的一片低地，是斯洛伐克境内唯一发育大面积内陆风成沙丘的地区；沙源是末次冰期摩拉瓦河（及其支流迪耶河）的河流沉积被风吹扬堆积 —— **不是多瑙河**（2026-09-13 当批核实改正：ŠGÚDŠ 与 ŠOP SR 两处口径都只写摩拉瓦河与迪耶河），沙丘局部高出周围地面可达 20 米，什拉内茨沙地（Šranecké piesky）是中欧较大的内陆沙丘群之一，保护区面积约 9.88 平方公里（987.59 公顷，ŠOP SR）；该沙丘区长期作为军事训练区因而免于开垦、保住裸沙生境，后由欧盟 LIFE06 NAT/SK/000115「Záhorie Sands」项目开展恢复管理（欧盟 LIFE 项目数据库，1 级）（斯洛伐克地质调查所与欧盟 LIFE「Záhorie Sands」项目口径，WebSearch 2026-09）",
+};
+const PODUNAJSKA_NIZINA: TerrainEntry = {
+  id: "podunajska-nizina",
+  nameZh: "多瑙低地",
+  nameEn: "Danubian Lowland",
+  category: "plain",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "多瑙低地平原面", lon: 17.9000, lat: 48.0500, elevation: 125, kind: "delta" },
+  bbox: [17.05, 47.72, 18.95, 48.55],
+  axis: [[17.15, 48.10], [18.85, 48.10]],
+  viewScale: 1.7,
+  label: { lon: 17.95, lat: 48.58, rotation: 0 },
+  source: "多瑙低地（Podunajská nížina）：斯洛伐克西南部的低地，是中欧潘诺尼亚盆地北缘伸入斯洛伐克的一片，由地势极平的多瑙平原（Podunajská rovina）与其北面起伏的多瑙丘陵地（Podunajská pahorkatina）两部分组成；地表由多瑙河及其支流的河流沉积填充，是斯洛伐克最主要的农业区（斯洛伐克旅游局与斯洛伐克地质调查所口径，WebSearch 2026-09）",
+};
+
+const VYCHODOSLOVENSKA_NIZINA: TerrainEntry = {
+  id: "vychodoslovenska-nizina",
+  nameZh: "东斯洛伐克低地",
+  nameEn: "East Slovak Lowland",
+  category: "plain",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "东斯洛伐克低地平原面", lon: 21.9194, lat: 48.6000, elevation: 105, kind: "delta" },
+  bbox: [21.25, 48.25, 22.35, 48.95],
+  axis: [[21.35, 48.60], [22.30, 48.55]],
+  viewScale: 1.4,
+  label: { lon: 21.85, lat: 48.98, rotation: 0 },
+  source: "东斯洛伐克低地（Východoslovenská nížina）：斯洛伐克东南部的一片低地，同属潘诺尼亚盆地北缘，由博德罗格河、拉托里察河、翁河（Uh）、拉博雷茨河（Laborec）与翁道瓦河（Ondava）的冲积物填充（2026-09-13 当批核实改正：原写「霍尔纳德河下游」有误 —— 霍尔纳德河下游汇入斯拉纳河，属另一水系）；斯洛伐克全境最低点（约 94 米）就在这片低地东南角的博德罗格河畔（斯洛伐克旅游局与斯洛伐克地质调查所口径，WebSearch 2026-09）。⚠️ 最低点的具体海拔各源多写 94 米，正文按「约 94 米」并写明是全境最低点，未拿到大地测量机构的一手公告",
+};
+
+const VAH_RIVER: TerrainEntry = {
+  id: "vah-river",
+  nameZh: "瓦赫河",
+  nameEn: "Váh",
+  category: "river",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "特伦钦河段", lon: 18.0444, lat: 48.8945, elevation: 205, kind: "meander" },
+  bbox: [17.85, 47.72, 20.20, 49.22],
+  axis: [[19.90, 49.10], [18.12, 47.76]],
+  viewScale: 1.8,
+  label: { lon: 18.05, lat: 48.95, rotation: 0 },
+  source: "瓦赫河（Váh）：斯洛伐克最长的河流，长约 403 公里；有两条源流 —— 白瓦赫（Biely Váh）出自高塔特拉的克里万峰一带，黑瓦赫（Čierny Váh）出自低塔特拉的克拉洛瓦霍拉一带，两支汇合后向西南流，在科马尔诺注入多瑙河；沿河的地带称波瓦日耶（Považie），干流上建有梯级水库群（斯洛伐克旅游局与斯洛伐克水务机构口径，WebSearch 2026-09）",
+};
+
+const DANUBE_SLOVAKIA: TerrainEntry = {
+  id: "danube-slovakia",
+  nameZh: "多瑙河斯洛伐克段",
+  nameEn: "Danube in Slovakia",
+  category: "river",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "德文门", lon: 16.9772, lat: 48.1739, elevation: 140, kind: "gorge" },
+  bbox: [16.84, 47.70, 18.95, 48.30],
+  axis: [[16.90, 48.16], [18.90, 47.75]],
+  viewScale: 1.7,
+  label: { lon: 17.60, lat: 48.32, rotation: 0 },
+  source: "多瑙河斯洛伐克段：多瑙河在布拉迪斯拉发上游穿过德文门（Devínska brána）这道天然门户进入斯洛伐克，随即坡度骤减、河道分汊，在多瑙低地上摊开成汊流与河间岛地带；德文门在构造上是阿尔卑斯山系与喀尔巴阡山系之间的缺口（斯洛伐克旅游局与斯洛伐克地质调查所口径，WebSearch 2026-09）。⚠️ 本库另有 `danube-gorge`（匈牙利维谢格拉德一带）、`danube-river-at`（奥地利段）、`danube-hungary` 三条同一条河的不同河段条目，写作时各自只讲本段",
+};
+
+const ZITNY_OSTROV: TerrainEntry = {
+  id: "zitny-ostrov",
+  nameZh: "黑麦岛",
+  nameEn: "Žitný ostrov",
+  category: "island",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "顿瑙斯卡斯特雷达一带", lon: 17.6194, lat: 47.9928, elevation: 115, kind: "island" },
+  bbox: [17.08, 47.72, 18.35, 48.22],
+  axis: [[17.12, 48.15], [18.30, 47.76]],
+  viewScale: 1.45,
+  label: { lon: 17.70, lat: 48.24, rotation: 0 },
+  source: "黑麦岛（Žitný ostrov）：多瑙河与其分流小多瑙河（Malý Dunaj）、瓦赫河之间围出的一片河间岛地，长约 84 公里、宽 15–30 公里，自布拉迪斯拉发延伸到科马尔诺，是欧洲面积最大的河流岛；面积**两说并存**（英文维基等作约 1900 平方公里，斯洛伐克语维基作约 1615 平方公里），2026-09-13 当批核实未能定一说，正文按并列写法；岛下的砾石层是中欧重要的地下水储集体（斯洛伐克旅游局与斯洛伐克水务机构口径，WebSearch 2026-09）。⚠️ 本库另有匈牙利侧的 `szigetkoz` 条目，两者是多瑙河同一段两侧的河间岛地，跨境按中性表述",
+};
+
+const STRBSKE_PLESO: TerrainEntry = {
+  id: "strbske-pleso",
+  nameZh: "什特尔布斯凯湖",
+  nameEn: "Štrbské pleso",
+  category: "lake",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "什特尔布斯凯湖", lon: 20.0611, lat: 49.1206, elevation: 1346, kind: "lake" },
+  bbox: [20.02, 49.10, 20.10, 49.14],
+  axis: [[20.04, 49.12], [20.08, 49.12]],
+  viewScale: 1.0,
+  label: { lon: 20.06, lat: 49.15, rotation: 0 },
+  source: "什特尔布斯凯湖（Štrbské pleso）：高塔特拉南坡的一处冰蚀湖，湖面海拔 1346 米、面积约 19.8 公顷、最深约 26 米（2026-09-13 当批核实改正：旅游资料常引 20 米，斯洛伐克语百科的信息框与正文两处都写 26 米），是高塔特拉斯洛伐克一侧面积第二大的冰蚀湖；湖畔的同名聚落是塔特拉地区主要的度假与冬季运动中心之一（斯洛伐克旅游局与塔特拉国家公园口径，WebSearch 2026-09）",
+};
+
+const MORSKE_OKO: TerrainEntry = {
+  id: "morske-oko",
+  nameZh: "莫尔斯凯奥科湖",
+  nameEn: "Morské oko",
+  category: "lake",
+  regionId: "europe",
+  country: "slovakia",
+  landmark: { name: "莫尔斯凯奥科湖", lon: 22.2306, lat: 48.8386, elevation: 618, kind: "lake" },
+  bbox: [22.19, 48.82, 22.27, 48.86],
+  axis: [[22.21, 48.84], [22.25, 48.84]],
+  viewScale: 1.0,
+  label: { lon: 22.23, lat: 48.87, rotation: 0 },
+  source: "莫尔斯凯奥科湖（Morské oko）：维霍尔拉特山中一处山崩堰塞湖，湖面海拔 618 米、面积约 13.8 公顷（19 世纪 80 年代在出水口筑坝把水位抬高约 5 米后达今值；「原约 7 公顷」这个数字 2026-09-13 当批核实未找到来源，已从正文删去）、最长约 750 米、最宽约 312 米、最深约 25 米；它是斯洛伐克面积最大的非喀斯特成因天然湖、按面积为全国第三大天然湖；1984 年设为保护区，现为国家自然保护区（斯洛伐克旅游局与科希策地区旅游局口径，WebSearch 2026-09）",
+};
+
+// ============================================================
+// 欧洲 / 斯洛文尼亚（南欧次区域第六国，克罗地亚、葡萄牙、西班牙、希腊、意大利之后）
+// 零争议红线：与意大利、奥地利交界的山地按「斯洛文尼亚与意大利/奥地利交界一带」中性表述，
+// 不涉主权、不描述边界线；**国土南缘与东南缘的邻国一律不写国名**（比照克罗地亚、斯洛伐克东北角的
+// 更严做法），海岸条目**不写海岸线长度、不涉任何海域划界**。`history` 段只写地质史、广泛记载的
+// 史前与中世纪至近代史、一战索查河战线的简短事实、保护区设立年份与 UNESCO 认定；
+// 一战之后的政治 / 领土 / 民族议题一律不碰。
+// 石灰岩高山 / 结晶岩中山 / 喀斯特山地→`mountain_system`、喀斯特高原与高山牧场台地→`plateau`、
+// 复理石丘陵与第三纪低丘→`hills`、构造沼泽洼地→`basin`、冲积平原→`plain`、干流与喀斯特伏流河→`river`、
+// 冰蚀谷与塌陷谷→`valley`、隘谷与地下河峡谷→`gorge`、冰川湖与间歇湖→`lake`、复理石崖海岸→`coast`。
+// 本国条目的正文数字一律只用本轮检索到的来源，追不到的不写。
+// ============================================================
+
+const JULIAN_ALPS_SLOVENIA: TerrainEntry = {
+  id: "julian-alps-slovenia",
+  nameZh: "尤利安阿尔卑斯山（斯洛文尼亚）",
+  nameEn: "Julian Alps (Slovenia)",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "特里格拉夫峰", lon: 13.8367, lat: 46.3781, elevation: 2864, kind: "peak" },
+  bbox: [13.40, 46.12, 14.20, 46.52],
+  axis: [[13.45, 46.45], [14.12, 46.24]],
+  viewScale: 1.6,
+  label: { lon: 13.84, lat: 46.55, rotation: 0 },
+  source: "尤利安阿尔卑斯山（Julijske Alpe）：南部石灰岩阿尔卑斯的一部分，主体在斯洛文尼亚西北部，西段延伸到斯洛文尼亚与意大利交界一带；最高点特里格拉夫峰海拔 2864 米，是斯洛文尼亚最高峰，北壁高约 1000 米、宽约 3000 米；1924 年特里格拉夫湖谷设高山保护公园，1961 年湖谷被定为特里格拉夫国家公园，1981 年《特里格拉夫国家公园法》把公园扩大到现规模，是斯洛文尼亚唯一的国家公园（2026-09-13 当批核实改正，原写「1981 年设立」）；2003 年斯洛文尼亚侧列入 UNESCO 生物圈保护区，2024 年扩为与意大利共建的跨境生物圈保护区；特里格拉夫冰川由 ZRC SAZU 安东·梅利克地理研究所自 1946 年起监测，近年只剩零星冰体（特里格拉夫国家公园、UNESCO MAB、斯洛文尼亚政府与 ZRC SAZU 口径，WebSearch 2026-09）",
+};
+
+const KAMNIK_SAVINJA_ALPS: TerrainEntry = {
+  id: "kamnik-savinja-alps",
+  nameZh: "卡姆尼克—萨维尼亚阿尔卑斯山",
+  nameEn: "Kamnik–Savinja Alps",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "格林托维茨峰", lon: 14.5358, lat: 46.3581, elevation: 2558, kind: "peak" },
+  bbox: [14.38, 46.28, 14.85, 46.45],
+  axis: [[14.40, 46.36], [14.82, 46.38]],
+  viewScale: 1.3,
+  label: { lon: 14.60, lat: 46.48, rotation: 0 },
+  source: "卡姆尼克—萨维尼亚阿尔卑斯山（Kamniško-Savinjske Alpe）：南部石灰岩阿尔卑斯最东端的一组山群，位于斯洛文尼亚北部；最高点格林托维茨峰（Grintovec）海拔 2558 米，高出南侧的卡姆尼什卡比斯特里察谷底约 1900 米；谷地为冰川塑造（burger.si 斯洛文尼亚自然地貌图集与 Explore Slovenia 口径，WebSearch 2026-09）",
+};
+
+const KARAWANKS: TerrainEntry = {
+  id: "karawanks",
+  nameZh: "卡拉万克山",
+  nameEn: "Karawanks",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "斯托尔峰", lon: 14.1736, lat: 46.4342, elevation: 2236, kind: "peak" },
+  bbox: [13.70, 46.36, 14.95, 46.60],
+  axis: [[13.75, 46.53], [14.90, 46.44]],
+  viewScale: 1.6,
+  label: { lon: 14.30, lat: 46.62, rotation: 0 },
+  source: "卡拉万克山（Karavanke）：沿斯洛文尼亚与奥地利交界一带东西向延伸的石灰岩山脉，全长约 120 公里；最高点斯托尔峰（Stol）海拔 2236 米，位于交界一带；构造上被佩里亚德里亚断裂带（Periadriatic lineament）纵贯，分成岩性与沉积盆地来源不同的南、北两部分，断裂带沿线出露变质岩与岩浆岩（UNESCO 世界地质公园「卡拉万克」、克拉尼斯卡戈拉与拉多夫利察旅游局口径，WebSearch 2026-09）。跨境只写交界、不涉主权",
+};
+
+const POHORJE: TerrainEntry = {
+  id: "pohorje",
+  nameZh: "波霍列山",
+  nameEn: "Pohorje",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "黑峰", lon: 15.2289, lat: 46.4742, elevation: 1543, kind: "peak" },
+  bbox: [15.05, 46.36, 15.72, 46.60],
+  axis: [[15.10, 46.50], [15.68, 46.47]],
+  viewScale: 1.4,
+  label: { lon: 15.35, lat: 46.62, rotation: 0 },
+  source: "波霍列山（Pohorje）：斯洛文尼亚东北部一片森林覆盖的中山，是中央阿尔卑斯带最东南的一部分；最高点黑峰（Črni vrh）海拔 1543 米；与斯洛文尼亚西北部以石灰岩为主的高山不同，山体外围是古生代变质岩、中央是花岗闪长岩等岩浆岩（ZRC SAZU《Acta geographica Slovenica》与 SummitPost 口径，WebSearch 2026-09）",
+};
+
+const SNEZNIK: TerrainEntry = {
+  id: "sneznik",
+  nameZh: "斯涅日尼克山",
+  nameEn: "Snežnik",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "大斯涅日尼克峰", lon: 14.4456, lat: 45.5881, elevation: 1796, kind: "peak" },
+  bbox: [14.30, 45.50, 14.60, 45.68],
+  axis: [[14.34, 45.64], [14.56, 45.54]],
+  viewScale: 1.1,
+  label: { lon: 14.45, lat: 45.70, rotation: 0 },
+  source: "斯涅日尼克山（Snežnik）：斯洛文尼亚南部一片高耸的喀斯特石灰岩高原山地，属迪纳拉山系北段，主体在斯洛文尼亚境内；最高点大斯涅日尼克峰（Veliki Snežnik）海拔 1796 米，是斯洛文尼亚阿尔卑斯山以外的最高峰；山体以白垩纪石灰岩为主，顶部有侏罗纪石灰岩与少量白云岩，发育冰川—喀斯特复合地貌；峰顶一带 1964 年设为植物保护区（洛什卡多利纳旅游局与《Journal of Maps》冰川喀斯特地貌论文口径，WebSearch 2026-09）。⚠️ 零争议：南缘延伸出国界，正文不写邻国国名",
+};
+
+const KRAS_PLATEAU: TerrainEntry = {
+  id: "kras-plateau",
+  nameZh: "喀斯特高原（斯洛文尼亚侧）",
+  nameEn: "Kras Plateau (Slovenia)",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "塞扎纳一带台地面", lon: 13.8733, lat: 45.7092, elevation: 360, kind: "escarpment" },
+  bbox: [13.60, 45.62, 14.10, 45.90],
+  axis: [[13.62, 45.86], [14.06, 45.64]],
+  viewScale: 1.4,
+  label: { lon: 13.88, lat: 45.92, rotation: 0 },
+  source: "喀斯特高原（Kras）：斯洛文尼亚西南部一片碳酸盐岩台地，西北段延伸到斯洛文尼亚与意大利交界一带；北侧以维帕瓦谷的复理石为界、东南侧以雷卡河谷为界；地学名词 karst（喀斯特）即来自这片高原的地名；最常见的地表形态是溶蚀洼地（doline），另有盲谷、干谷与雷卡河伏流上方的大型塌陷洼地；表层多见富含铁氧化物的红土（terra rossa）（UNESCO 世界遗产预备名录「经典喀斯特」、MDPI Encyclopedia 与斯洛文尼亚旅游局口径，WebSearch 2026-09）。⚠️ 本库另有意大利侧的 `carso-karst` 条目，两侧是同一片高原，跨境只写交界",
+};
+
+const POKLJUKA: TerrainEntry = {
+  id: "pokljuka",
+  nameZh: "波克柳卡高原",
+  nameEn: "Pokljuka",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "鲁德诺波列", lon: 13.9300, lat: 46.3500, elevation: 1340, kind: "grassland" },
+  bbox: [13.84, 46.28, 14.05, 46.40],
+  axis: [[13.86, 46.37], [14.03, 46.31]],
+  viewScale: 1.1,
+  label: { lon: 13.95, lat: 46.42, rotation: 0 },
+  source: "波克柳卡高原（Pokljuka）：特里格拉夫国家公园东缘的一片高位喀斯特高原，海拔大致在 1200–1500 米之间；基岩为三叠纪石灰岩与白云岩，受冰期的波克柳卡冰川强烈改造，地表散布竖井、落水洞与小洼地；以云杉林为主，是国家公园内面积最大的连片森林区，林间保留着冰期遗留的泥炭沼泽（特里格拉夫国家公园、布莱德与博希尼旅游局口径，WebSearch 2026-09）",
+};
+
+const VELIKA_PLANINA: TerrainEntry = {
+  id: "velika-planina",
+  nameZh: "韦利卡普拉尼纳高原",
+  nameEn: "Velika Planina",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "格拉迪什切", lon: 14.6406, lat: 46.2944, elevation: 1666, kind: "grassland" },
+  bbox: [14.58, 46.26, 14.72, 46.33],
+  axis: [[14.60, 46.30], [14.70, 46.29]],
+  viewScale: 1.0,
+  label: { lon: 14.64, lat: 46.35, rotation: 0 },
+  source: "韦利卡普拉尼纳高原（Velika planina，意为「大高山牧场」）：卡姆尼克—萨维尼亚阿尔卑斯山南缘的一片高山牧场台地，最高点格拉迪什切（Gradišče）海拔 1666 米；台地上保留着传统形制的牧人木屋聚落，每年春末至夏季牧人赶牛上山放牧（卢布尔雅那旅游局与斯洛文尼亚旅游局口径，WebSearch 2026-09）。木屋数量各源不一，正文不写数字",
+};
+
+const TRNOVSKI_GOZD: TerrainEntry = {
+  id: "trnovski-gozd",
+  nameZh: "特尔诺沃森林高原",
+  nameEn: "Trnovo Forest Plateau",
+  category: "plateau",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "小戈拉克峰", lon: 13.8700, lat: 45.9750, elevation: 1495, kind: "peak" },
+  bbox: [13.62, 45.90, 14.05, 46.07],
+  axis: [[13.66, 46.03], [14.02, 45.93]],
+  viewScale: 1.2,
+  label: { lon: 13.84, lat: 46.09, rotation: 0 },
+  source: "特尔诺沃森林高原（Trnovski gozd）：迪纳拉山系最西北端的一片喀斯特高原，最高点小戈拉克峰（Mali Golak）海拔 1495 米；地表没有河流，被封闭洼地、岩丘、洞穴、竖井与溶沟等喀斯特形态切碎；高原东部的帕拉达纳大冰洞（Velika ledena jama v Paradani）是植被逆温现象的经典地点，高原上设有帕拉达纳与戈拉基两处自然保护区（维帕瓦谷官方旅游门户口径，WebSearch 2026-09）",
+};
+
+const GORISKA_BRDA: TerrainEntry = {
+  id: "goriska-brda",
+  nameZh: "戈里察布尔达丘陵",
+  nameEn: "Goriška Brda",
+  category: "hills",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "什马尔特诺", lon: 13.5394, lat: 46.0006, elevation: 270, kind: "city" },
+  bbox: [13.47, 45.95, 13.66, 46.10],
+  axis: [[13.52, 46.08], [13.60, 45.96]],
+  viewScale: 1.0,
+  label: { lon: 13.56, lat: 46.12, rotation: 0 },
+  source: "戈里察布尔达丘陵（Goriška Brda）：斯洛文尼亚最西部的一片丘陵，东北有萨博廷山、北有科拉达山，东临索查河谷；丘陵由复理石构成 —— 砂岩、泥灰岩与碳酸盐浊积岩交替成层，本地称 opoka；山脊大致南北走向，葡萄园多开成梯田（斯洛文尼亚旅游局、新戈里察大学与 Explore Slovenia 口径，WebSearch 2026-09）。西缘在斯洛文尼亚与意大利交界一带，正文只写交界",
+};
+
+const SLOVENSKE_GORICE: TerrainEntry = {
+  id: "slovenske-gorice",
+  nameZh: "斯洛文尼亚丘陵",
+  nameEn: "Slovene Hills",
+  category: "hills",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "莱纳特", lon: 15.8311, lat: 46.5761, elevation: 230, kind: "city" },
+  bbox: [15.60, 46.40, 16.25, 46.72],
+  axis: [[15.65, 46.62], [16.20, 46.46]],
+  viewScale: 1.3,
+  label: { lon: 15.92, lat: 46.74, rotation: 0 },
+  source: "斯洛文尼亚丘陵（Slovenske gorice）：斯洛文尼亚东北部、德拉瓦河与穆拉河之间的一片第三纪低丘，由第三纪沉积物构成，属斯洛文尼亚「第三纪低丘陵区」这一地貌类型，地表侵蚀风险较高（《Acta Geographica Slovenica》第三纪低丘土地利用论文与斯洛文尼亚旅游局口径，WebSearch 2026-09）",
+};
+
+const LJUBLJANSKO_BARJE: TerrainEntry = {
+  id: "ljubljansko-barje",
+  nameZh: "卢布尔雅那沼泽",
+  nameEn: "Ljubljana Marsh",
+  category: "basin",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "伊格一带沼泽草甸", lon: 14.5281, lat: 45.9597, elevation: 290, kind: "grassland" },
+  bbox: [14.30, 45.88, 14.62, 46.03],
+  axis: [[14.32, 45.97], [14.60, 45.96]],
+  viewScale: 1.1,
+  label: { lon: 14.46, lat: 46.05, rotation: 0 },
+  source: "卢布尔雅那沼泽（Ljubljansko barje）：卢布尔雅那以南一片构造沉降洼地，位于阿尔卑斯与迪纳拉两大构造区的交接处，面积约 160 平方公里；全新世时曾是一片浅湖，湖边的史前木桩屋遗址自 1875 年以来已发现四十多处，2011 年作为「阿尔卑斯地区史前木桩屋」跨国系列遗产的一部分列入 UNESCO 世界遗产；2008 年其中约 135 平方公里设为景观公园（Krajinski park，当批核实改正：原误作「自然公园」）（斯洛文尼亚政府 slovenia.si、Culture.si 与卢布尔雅那旅游局口径，WebSearch 2026-09）",
+};
+
+const POMURSKA_RAVNINA: TerrainEntry = {
+  id: "pomurska-ravnina",
+  nameZh: "穆拉平原",
+  nameEn: "Mura Plain",
+  category: "plain",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "穆尔斯卡索博塔", lon: 16.1664, lat: 46.6625, elevation: 190, kind: "city" },
+  bbox: [15.95, 46.45, 16.45, 46.80],
+  axis: [[15.98, 46.68], [16.42, 46.48]],
+  viewScale: 1.3,
+  label: { lon: 16.20, lat: 46.82, rotation: 0 },
+  source: "穆拉平原（Pomurska ravnina）：斯洛文尼亚东北部穆拉河两岸的冲积平原，是潘诺尼亚盆地西缘伸入斯洛文尼亚的一片；穆拉河在斯洛文尼亚境内约 96 公里，在这一段由阿尔卑斯型河流转为流速放缓的平原河流；平原底下是潘诺尼亚海退去后留下的沉积层，蕴藏低温地热水（穆尔斯卡索博塔与波穆列旅游局、ScienceDirect 穆拉—扎拉盆地地热含水层论文口径，WebSearch 2026-09）。⚠️ 零争议：该平原周边临三国国界，正文不写邻国国名、不写边界",
+};
+
+const DRAVSKO_POLJE: TerrainEntry = {
+  id: "dravsko-polje",
+  nameZh: "德拉瓦平原",
+  nameEn: "Drava Plain",
+  category: "plain",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "德拉瓦平原中部", lon: 15.7500, lat: 46.4200, elevation: 240, kind: "delta" },
+  bbox: [15.55, 46.30, 15.95, 46.56],
+  axis: [[15.62, 46.54], [15.90, 46.36]],
+  viewScale: 1.1,
+  label: { lon: 15.75, lat: 46.58, rotation: 0 },
+  source: "德拉瓦平原（Dravsko polje）：德拉瓦河右岸、马里博尔—普图伊—斯洛文斯卡比斯特里察之间一片大致呈三角形的冲积平原，其下的第四纪砂砾含水层面积约 293 平方公里，是这一带饮用水的来源（当批核实：「砂砾层厚 4–22 米」对应相邻普图伊平原，已删）（MDPI《Hydrology》2023 年德拉瓦—普图伊平原地下水模型论文口径，WebSearch 2026-09）",
+};
+
+const SOCA_RIVER: TerrainEntry = {
+  id: "soca-river",
+  nameZh: "索查河",
+  nameEn: "Soča",
+  category: "river",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "博韦茨河段", lon: 13.5500, lat: 46.3300, elevation: 430, kind: "meander" },
+  bbox: [13.45, 45.90, 13.80, 46.43],
+  axis: [[13.72, 46.41], [13.62, 45.95]],
+  viewScale: 1.5,
+  label: { lon: 13.62, lat: 46.45, rotation: 0 },
+  source: "索查河（Soča）：发源于特伦塔谷尤利安阿尔卑斯山脚下的一处喀斯特泉，在斯洛文尼亚境内流经约 96 公里后流出国境；河水呈翡翠绿色；1915 年 5 月至 1917 年 10 月，奥匈与意大利军队沿索查河一带约 93 公里的战线先后进行了十二次战役（索查河谷旅游局与斯洛文尼亚一战百年纪念网站口径，WebSearch 2026-09）。全长各源在 136–139 公里之间，正文不写全长",
+};
+
+const SAVA_RIVER_SLOVENIA: TerrainEntry = {
+  id: "sava-river-slovenia",
+  nameZh: "萨瓦河斯洛文尼亚段",
+  nameEn: "Sava in Slovenia",
+  category: "river",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "利蒂亚河段", lon: 14.8222, lat: 46.0578, elevation: 240, kind: "meander" },
+  bbox: [13.70, 45.85, 15.70, 46.52],
+  axis: [[13.75, 46.48], [15.65, 45.87]],
+  viewScale: 1.8,
+  label: { lon: 14.80, lat: 46.12, rotation: 0 },
+  source: "萨瓦河（Sava）：斯洛文尼亚最长的河流，全长 947 公里，其中 221 公里在斯洛文尼亚境内；有两条源流 —— 萨瓦多林卡河与萨瓦博希尼卡河，在拉多夫利察下游汇合；在斯洛文尼亚境内的主要支流有卢布尔雅尼察河、萨维尼亚河、米尔纳河与克尔卡河（斯洛文尼亚政府 slovenia.si 与国际萨瓦河流域委员会口径，WebSearch 2026-09）。⚠️ 本库另有下游国家的 `sava-river-croatia` 条目；本条正文不写流出国境后的国名",
+};
+
+const LJUBLJANICA: TerrainEntry = {
+  id: "ljubljanica",
+  nameZh: "卢布尔雅尼察河",
+  nameEn: "Ljubljanica",
+  category: "river",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "弗尔赫尼卡泉群", lon: 14.2886, lat: 45.9608, elevation: 293, kind: "meander" },
+  bbox: [14.25, 45.93, 14.62, 46.10],
+  axis: [[14.28, 45.96], [14.58, 46.08]],
+  viewScale: 1.0,
+  label: { lon: 14.45, lat: 46.12, rotation: 0 },
+  source: "卢布尔雅尼察河（Ljubljanica）：斯洛文尼亚内陆喀斯特区的伏流河系的出口，在弗尔赫尼卡附近的莫奇尔尼克、雷托维耶与比斯特拉三组泉群最后一次涌出地表，流经卢布尔雅那后汇入萨瓦河；上游在喀斯特原野之间多次潜入地下又重新涌出，每次出露都有不同的名字，民间因此称它为「七个名字的河」（弗尔赫尼卡官方旅游门户口径，WebSearch 2026-09）。各段名称的列法各源略有出入，正文不逐一列名",
+};
+
+const LOGARSKA_DOLINA: TerrainEntry = {
+  id: "logarska-dolina",
+  nameZh: "洛加尔谷",
+  nameEn: "Logar Valley",
+  category: "valley",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "林卡瀑布", lon: 14.5864, lat: 46.3747, elevation: 1100, kind: "gorge" },
+  bbox: [14.56, 46.36, 14.68, 46.43],
+  axis: [[14.59, 46.37], [14.66, 46.42]],
+  viewScale: 1.0,
+  label: { lon: 14.62, lat: 46.45, rotation: 0 },
+  source: "洛加尔谷（Logarska dolina）：卡姆尼克—萨维尼亚阿尔卑斯山北侧的一条冰蚀谷，长约 7 公里；谷头的林卡瀑布高约 90 米；1987 年设为景观公园（洛加尔谷景观公园官方网站与斯洛文尼亚旅游局口径，WebSearch 2026-09）",
+};
+
+const VINTGAR_GORGE: TerrainEntry = {
+  id: "vintgar-gorge",
+  nameZh: "温特加尔峡谷",
+  nameEn: "Vintgar Gorge",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "温特加尔峡谷", lon: 14.0850, lat: 46.3933, elevation: 560, kind: "gorge" },
+  bbox: [14.06, 46.38, 14.11, 46.41],
+  axis: [[14.07, 46.39], [14.10, 46.40]],
+  viewScale: 1.0,
+  label: { lon: 14.09, lat: 46.42, rotation: 0 },
+  source: "温特加尔峡谷（Blejski Vintgar）：拉多夫纳河在霍姆山与博尔什特山之间切出的石灰岩峡谷，长约 1600 米、深可达 250 米；1891 年水位异常低时被当地村长雅各布·茹梅尔与摄影师贝内迪克特·莱尔盖特波雷尔探明，1893 年 8 月 28 日沿谷壁栈道正式开放；谷尾有什姆瀑布（温特加尔峡谷官方网站口径，WebSearch 2026-09）",
+};
+
+const TOLMIN_GORGES: TerrainEntry = {
+  id: "tolmin-gorges",
+  nameZh: "托尔明峡谷",
+  nameEn: "Tolmin Gorges",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "托尔明卡河与扎德拉什奇察河汇口", lon: 13.7392, lat: 46.2003, elevation: 180, kind: "gorge" },
+  bbox: [13.71, 46.18, 13.77, 46.23],
+  axis: [[13.72, 46.19], [13.76, 46.22]],
+  viewScale: 1.0,
+  label: { lon: 13.74, lat: 46.24, rotation: 0 },
+  source: "托尔明峡谷（Tolminska korita）：托尔明卡河与扎德拉什奇察河两条隘谷的合称，两河在峡谷内汇合；汇口一带海拔约 180 米，是特里格拉夫国家公园的最低点，也是国家公园最南、最低的入口；步道经「魔鬼桥」（索查河谷旅游局与特里格拉夫国家公园口径，WebSearch 2026-09）",
+};
+
+const SKOCJAN_CAVES: TerrainEntry = {
+  id: "skocjan-caves",
+  nameZh: "什科茨扬溶洞",
+  nameEn: "Škocjan Caves",
+  category: "gorge",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "大塌陷洼地", lon: 13.9900, lat: 45.6636, elevation: 420, kind: "gorge" },
+  bbox: [13.95, 45.64, 14.03, 45.69],
+  axis: [[13.96, 45.67], [14.02, 45.66]],
+  viewScale: 1.0,
+  label: { lon: 13.99, lat: 45.70, rotation: 0 },
+  source: "什科茨扬溶洞（Škocjanske jame）：雷卡河在喀斯特高原石灰岩中切出的地下河峡谷与洞穴系统，UNESCO 称其包含世界上已知规模最大的地下河峡谷之一，1986 年列入世界遗产名录；雷卡河在大塌陷洼地（Velika dolina）底部潜入地下，约 34 公里后在亚得里亚海岸附近的蒂马沃泉重新涌出（UNESCO 世界遗产中心与 IUGS 地质遗产名录口径，WebSearch 2026-09）",
+};
+
+const RAKOV_SKOCJAN: TerrainEntry = {
+  id: "rakov-skocjan",
+  nameZh: "拉科夫什科茨扬谷",
+  nameEn: "Rakov Škocjan",
+  category: "valley",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "拉科夫什科茨扬谷底", lon: 14.3014, lat: 45.7928, elevation: 510, kind: "gorge" },
+  bbox: [14.26, 45.77, 14.35, 45.82],
+  axis: [[14.27, 45.79], [14.34, 45.80]],
+  viewScale: 1.0,
+  label: { lon: 14.30, lat: 45.83, rotation: 0 },
+  source: "拉科夫什科茨扬谷（Rakov Škocjan）：亚沃尔尼基山北坡一条由溶洞顶板沉降、塌落形成的喀斯特谷，谷两端各留有一座天生桥（小天生桥与大天生桥），是被毁溶洞的残余；拉克溪从谷东端的泽尔斯克洞涌出、在谷西端潜入特卡尔察洞；1949 年设为斯洛文尼亚第一个区域公园；与采尔克尼察湖一起列入拉姆萨尔国际重要湿地（诺特拉尼斯卡区域公园口径，WebSearch 2026-09）",
+};
+
+const LAKE_BLED: TerrainEntry = {
+  id: "lake-bled",
+  nameZh: "布莱德湖",
+  nameEn: "Lake Bled",
+  category: "lake",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "布莱德湖", lon: 14.0939, lat: 46.3636, elevation: 475, kind: "lake" },
+  bbox: [14.07, 46.35, 14.12, 46.38],
+  axis: [[14.08, 46.36], [14.11, 46.37]],
+  viewScale: 1.0,
+  label: { lon: 14.09, lat: 46.39, rotation: 0 },
+  source: "布莱德湖（Blejsko jezero）：尤利安阿尔卑斯山东麓的冰川—构造复合成因湖，末次冰期的冰川加深了原有的构造洼地，冰退后积水成湖；湖长约 2120 米、宽约 1380 米，面积约 144 公顷，最深约 30.6 米；湖中小岛上有圣母升天教堂（布莱德官方旅游网站 bled.si 口径，WebSearch 2026-09；2026-09-13 当批核实改正：最深原写 29.5 米为 Wikipedia 口径，另删去「博希尼冰川」这一无可靠来源的冰川归属）",
+};
+
+const LAKE_BOHINJ: TerrainEntry = {
+  id: "lake-bohinj",
+  nameZh: "博希尼湖",
+  nameEn: "Lake Bohinj",
+  category: "lake",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "博希尼湖", lon: 13.8586, lat: 46.2847, elevation: 526, kind: "lake" },
+  bbox: [13.82, 46.27, 13.90, 46.30],
+  axis: [[13.83, 46.29], [13.89, 46.28]],
+  viewScale: 1.0,
+  label: { lon: 13.86, lat: 46.31, rotation: 0 },
+  source: "博希尼湖（Bohinjsko jezero）：斯洛文尼亚面积最大的天然常年湖，面积约 3.18 平方公里、最深约 45 米；湖盆由博希尼冰川掘深，湖水约 1 亿立方米；主要入湖水源是萨维察溪，它汇集特里格拉夫湖谷的水，并在上游形成高约 78 米的萨维察瀑布；出湖水流为萨瓦博希尼卡河（特里格拉夫国家公园与博希尼官方旅游门户口径，WebSearch 2026-09）",
+};
+
+const LAKE_CERKNICA: TerrainEntry = {
+  id: "lake-cerknica",
+  nameZh: "采尔克尼察湖",
+  nameEn: "Lake Cerknica",
+  category: "lake",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "采尔克尼察湖", lon: 14.3950, lat: 45.7450, elevation: 550, kind: "lake" },
+  bbox: [14.30, 45.70, 14.48, 45.80],
+  axis: [[14.32, 45.78], [14.46, 45.71]],
+  viewScale: 1.0,
+  label: { lon: 14.39, lat: 45.82, rotation: 0 },
+  source: "采尔克尼察湖（Cerkniško jezero）：采尔克尼察喀斯特原野（polje）底部的间歇湖，通常秋雨后与春季融雪时蓄满、五六月间干涸；水主要来自原野边缘的喀斯特泉，高水位时湖底的「涌泄两用洞」（estavela）会向上涌水、低水位时又把水排走；卡尼奥拉博物学家瓦尔瓦索尔最早研究其水文并因此获选英国皇家学会会员；2006-01-19 列入拉姆萨尔国际重要湿地（诺特拉尼斯卡区域公园与 DEIMS-SDR 长期生态研究站点口径，WebSearch 2026-09）。水面面积随季节变化很大，正文只写变化机制、不写具体面积",
+};
+
+const TRIGLAV_LAKES_VALLEY: TerrainEntry = {
+  id: "triglav-lakes-valley",
+  nameZh: "特里格拉夫湖谷",
+  nameEn: "Triglav Lakes Valley",
+  category: "valley",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "特里格拉夫湖区小屋一带", lon: 13.7572, lat: 46.3408, elevation: 1685, kind: "lake" },
+  bbox: [13.72, 46.30, 13.80, 46.37],
+  axis: [[13.76, 46.31], [13.74, 46.36]],
+  viewScale: 1.0,
+  label: { lon: 13.76, lat: 46.39, rotation: 0 },
+  source: "特里格拉夫湖谷（Dolina Triglavskih jezer）：特里格拉夫峰西南、蒂查里察山与泽尔纳里察山陡壁之下的一条石灰岩悬谷，俗称「七湖谷」，但谷中实际不止七个湖；湖面海拔从最低的黑湖约 1294 米到最高的波德斯滕耶湖约 1993 米；谷水经萨维察溪流入博希尼湖（博希尼官方旅游门户与特里格拉夫国家公园口径，WebSearch 2026-09）",
+};
+
+const STRUNJAN_COAST: TerrainEntry = {
+  id: "strunjan-coast",
+  nameZh: "斯特伦扬海岸",
+  nameEn: "Strunjan Coast",
+  category: "coast",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "斯特伦扬海崖", lon: 13.6150, lat: 45.5361, elevation: 80, kind: "escarpment" },
+  bbox: [13.58, 45.51, 13.66, 45.55],
+  axis: [[13.59, 45.53], [13.65, 45.53]],
+  viewScale: 1.0,
+  label: { lon: 13.62, lat: 45.56, rotation: 0 },
+  source: "斯特伦扬海岸（Strunjan）：斯洛文尼亚海岸中段一段由复理石构成的海崖，斯特伦扬海崖高约 80 米，崖下是卵石质的月亮湾；海崖一带沿岸长约 4 公里的地段属斯特伦扬景观公园（斯洛文尼亚自然公园联合会、波尔托罗日与皮兰旅游局口径，WebSearch 2026-09）。⚠️ 零争议：正文不写海岸线总长、不涉任何海域划界",
+};
+
+// ============================================================
+// 欧洲 / 马耳他（南欧次区域第七国；国土小，地形按卢森堡 / 新加坡的 12 条口径）
+// 零争议红线：**不写任何海域、大陆架与邻国划界**（菲尔夫拉岛条目尤其注意，不提相关国际司法案）；
+// `history` 段只写地质史、史前遗址、骑士团与英国时期的广泛记载史实、保护区设立年份与 UNESCO 认定；
+// 独立以后的政治、移民、建设开发争议一律不碰。
+// 骨架：群岛由渐新世—中新世五套海相沉积岩叠成（下珊瑚灰岩 / 抱球虫灰岩 / 蓝黏土 / 绿砂层 / 上珊瑚灰岩），
+// 断层作用使群岛整体向东北倾斜 —— 西南抬起成崖、东北下沉成溺谷海湾，这一条贯穿全部 12 条。
+// 海崖 / 溺谷港湾 / 塌陷海湾 / 沙滩沙丘 / 崩积坡海岸→`coast`、断层崖与地垒岭谷 / 台地丘陵→`hills`、
+// 无人小岛与小岛→`island`、深切溺谷→`gorge`。
+// 本国条目的正文数字一律只用本轮检索到的来源，追不到的不写。
+// 主要来源：马耳他大学地理系 Ritienne Gauci《Rocks》（2025，UM OAR，下称 Gauci 2025，2 级）；
+// IRMCo 戈佐岛电子教材 Unit 2《Geological Setting》（下称 IRMCo，2 级）。
+// ============================================================
+
+const DINGLI_CLIFFS: TerrainEntry = {
+  id: "dingli-cliffs",
+  nameZh: "丁利悬崖",
+  nameEn: "Dingli Cliffs",
+  category: "coast",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "塔德梅耶雷克（马耳他最高点）", lon: 14.3969, lat: 35.8458, elevation: 253, kind: "escarpment" },
+  bbox: [14.37, 35.83, 14.43, 35.87],
+  axis: [[14.375, 35.865], [14.425, 35.835]],
+  viewFrom: 225,
+  label: { lon: 14.40, lat: 35.875, rotation: 0 },
+  source: "丁利悬崖（Rdumijiet ta' Ħad-Dingli）：马耳他岛西南岸的海崖，崖顶附近的塔德梅耶雷克（Ta' Dmejrek）海拔 253 米，为马耳他最高点；崖面下部出露下珊瑚灰岩，顶部为上珊瑚灰岩台地、中间夹蓝黏土坡；北西—南东走向的马格拉克断层（Magħlaq Fault）影响了丁利一带的崖岸，形成落差超过 200 米的断崖；群岛整体向东北倾斜，西南岸因此以高崖为主（Gauci 2025；Frontiers in Conservation Science 2025 马耳他崖岸植物论文；巴斯地质学会 2001 马耳他考察文，WebSearch 2026-09-13）",
+};
+
+const GREAT_FAULT_MALTA: TerrainEntry = {
+  id: "great-fault-malta",
+  nameZh: "马耳他大断层（维多利亚防线崖）",
+  nameEn: "Great Fault (Victoria Lines Escarpment)",
+  category: "hills",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "莫斯塔堡一带的断层崖", lon: 14.4250, lat: 35.9130, elevation: 120, kind: "escarpment" },
+  bbox: [14.33, 35.89, 14.50, 35.95],
+  axis: [[14.34, 35.912], [14.49, 35.935]],
+  viewFrom: 340,
+  label: { lon: 14.42, lat: 35.955, rotation: 0 },
+  source: "马耳他大断层（Great Fault，又称维多利亚防线断层）：横贯马耳他岛中北部的东北东—西南西走向断层，以北是地垒与地堑相间的岭谷，以北地表以蓝黏土与上珊瑚灰岩为主、以南以抱球虫灰岩为主；英国海军军官斯普拉特（T.A.B. Spratt）在 1843 年的地形图上标出并命名；维多利亚防线沿断层崖顶修筑，全长约 12 公里，东起马德利纳、经莫斯塔、西至宾杰马，1875 年起先建三座堡垒，19 世纪 90 年代以连续步兵墙相连，因 1897 年维多利亚女王登基六十周年得名，1998 年列入 UNESCO 世界遗产预备名录（Gauci 2025；IRMCo；worldheritagesite.org 与 Military History Matters，WebSearch 2026-09-13）。锚点海拔 120 米为取景用概略值",
+};
+
+const NORTHERN_MALTA_RIDGES: TerrainEntry = {
+  id: "northern-malta-ridges",
+  nameZh: "马耳他北部岭谷",
+  nameEn: "Northern Malta Ridges and Valleys",
+  category: "hills",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "梅利哈岭", lon: 14.3650, lat: 35.9550, elevation: 100, kind: "escarpment" },
+  bbox: [14.32, 35.92, 14.42, 36.00],
+  axis: [[14.33, 35.955], [14.41, 35.975]],
+  label: { lon: 14.37, lat: 36.005, rotation: 0 },
+  source: "马耳他北部岭谷：大断层以北由一组东北东—西南西走向的平行断层切出的地垒—地堑地形，自南向北依次为瓦尔迪亚岭、拜达岭、梅利哈岭、马尔法岭，岭间为宾杰马谷、帕瓦莱斯谷、米杰卜谷、梅利哈谷等谷地，谷地入海处形成海湾；梅利哈湾的加迪拉（Għadira）为盐沼湿地（Gauci 2025）；马尔法岭上的圣阿加莎塔（红塔）为骑士团时期所建，帕瓦莱斯湾沿岸有二战时期英军碉堡，帕瓦莱斯谷有西马尔自然保护区（公开资料，WebSearch 2026-09-13，2026-09-13 当批核实 ok）。锚点海拔 100 米为取景用概略值",
+};
+
+const GRAND_HARBOUR: TerrainEntry = {
+  id: "grand-harbour",
+  nameZh: "大港（瓦莱塔）",
+  nameEn: "Grand Harbour (Valletta)",
+  category: "coast",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "瓦莱塔", lon: 14.5125, lat: 35.8983, elevation: 50, kind: "city" },
+  bbox: [14.49, 35.87, 14.54, 35.91],
+  axis: [[14.535, 35.900], [14.500, 35.880]],
+  label: { lon: 14.52, lat: 35.915, rotation: 0 },
+  source: "大港（Il-Port il-Kbir）：马耳他岛东北岸的溺谷港湾，与北侧的马萨姆谢特港之间隔着瓦莱塔所在的希伯拉斯半岛；约 2 万年前的晚更新世海平面比今天低约 120 米，河流切入今天的大陆架，海平面回升后谷地被淹成港湾（Gauci 2025）；1565 年大围攻、瓦莱塔古城 1980 年列入世界遗产（UNESCO），WebSearch 2026-09-13",
+};
+
+const BLUE_GROTTO_MALTA: TerrainEntry = {
+  id: "blue-grotto-malta",
+  nameZh: "蓝洞（马耳他）",
+  nameEn: "Blue Grotto (Malta)",
+  category: "coast",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "蓝洞海蚀拱", lon: 14.4500, lat: 35.8167, elevation: 0, kind: "escarpment" },
+  bbox: [14.43, 35.80, 14.47, 35.83],
+  axis: [[14.435, 35.822], [14.465, 35.812]],
+  viewFrom: 190,
+  label: { lon: 14.45, lat: 35.835, rotation: 0 },
+  source: "蓝洞（Taħt il-Ħnejja）：马耳他岛南岸泽里格谷（Wied iż-Żurrieq）小渔港附近崖脚的一组海蚀洞与海蚀拱，行政上属奎伦迪地方议会辖区；该段为下珊瑚灰岩直立崖岸，蓝洞所在海湾被归为溶洞塌陷后被海淹没的构造，崖脚海蚀洞沿陡倾节理与断裂发育；相邻的巴布谷（Wied Babu）为溺谷（Gauci 2025；维基「Blue Grotto (Malta)」3 级，WebSearch 2026-09-13）；附近的哈扎伊姆与姆纳德拉神庙属「马耳他巨石神庙」世界遗产（UNESCO）",
+};
+
+const FILFLA: TerrainEntry = {
+  id: "filfla",
+  nameZh: "菲尔夫拉岛",
+  nameEn: "Filfla",
+  category: "island",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "菲尔夫拉岛", lon: 14.4103, lat: 35.7875, elevation: 60, kind: "island" },
+  bbox: [14.39, 35.775, 14.43, 35.80],
+  viewFrom: 20,
+  label: { lon: 14.41, lat: 35.772, rotation: 0 },
+  source: "菲尔夫拉岛（Filfla）：马耳他岛南岸外约 4.5 公里的无人小岛，顶部平坦、四周陡崖；1980 年划为鸟类保护区，1988 年《菲尔夫拉自然保护区法》（Filfla Nature Reserve Act, XV of 1988）设为自然保护区，登岛只能出于教育或科研目的并须事先许可；风暴海燕繁殖地，国际鸟盟重要鸟区（ECOLEX 法规库 2 级、维基 3 级，WebSearch 2026-09-13）。⚠️ 零争议：不写任何海域 / 大陆架划界相关内容。锚点海拔 60 米为崖高概略值",
+};
+
+const COMINO: TerrainEntry = {
+  id: "comino",
+  nameZh: "科米诺岛",
+  nameEn: "Comino",
+  category: "island",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "科米诺岛", lon: 14.3367, lat: 36.0114, elevation: 30, kind: "island" },
+  bbox: [14.31, 35.995, 14.36, 36.025],
+  label: { lon: 14.335, lat: 36.030, rotation: 0 },
+  source: "科米诺岛（Kemmuna）：马耳他岛与戈佐岛之间海峡中的岛屿，面积约 3.5 平方公里，马耳他三座有人居住的岛屿之一；主要由上珊瑚灰岩构成，岛上洞穴由石灰岩沿裂隙溶蚀与海浪侵蚀共同形成（Gauci 2025）；西侧与科米诺托岛之间的浅水海峡即「蓝湖」；圣玛丽塔 1618 年建成；属「自然2000」保护区网络（Friends of the Earth Malta 等 3 级，WebSearch 2026-09-13，2026-09-13 当批核实 ok）。锚点海拔 30 米为取景用概略值",
+};
+
+const GOZO_UPLANDS: TerrainEntry = {
+  id: "gozo-uplands",
+  nameZh: "戈佐岛台地丘陵",
+  nameEn: "Gozo Mesas and Uplands",
+  category: "hills",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "塔德比耶吉山", lon: 14.2050, lat: 36.0630, elevation: 190, kind: "peak" },
+  bbox: [14.18, 36.01, 14.34, 36.08],
+  axis: [[14.19, 36.05], [14.33, 36.04]],
+  viewScale: 1.1,
+  label: { lon: 14.26, lat: 36.09, rotation: 0 },
+  source: "戈佐岛台地丘陵：戈佐岛为马耳他群岛第二大岛，地形以顶平边陡的台地丘陵为主，上珊瑚灰岩为顶、下伏蓝黏土；岛东部为纳杜尔与沙拉两片较大的被切割台地，往西依次变为泽布季、拉巴特一带的残余小丘与吉奥丹这样近锥形的丘陵；最高点塔德比耶吉（Ta' Dbieġi）海拔约 190 米（IRMCo；维基写 195 米，两说并存，正文只写「不到 200 米」）；蓝黏土不透水，托住上方灰岩中的地下水（IRMCo；Wikipedia「Geology of Malta」3 级，WebSearch 2026-09-13）",
+};
+
+const DWEJRA: TerrainEntry = {
+  id: "dwejra",
+  nameZh: "德维耶拉海岸（戈佐岛）",
+  nameEn: "Dwejra (Gozo)",
+  category: "coast",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "内海", lon: 14.1911, lat: 36.0538, elevation: 0, kind: "lake" },
+  bbox: [14.175, 36.040, 14.205, 36.062],
+  viewFrom: 250,
+  label: { lon: 14.19, lat: 36.068, rotation: 0 },
+  source: "德维耶拉（Dwejra）：戈佐岛西端海岸，内海（Il-Qawra）为经崖下天然隧洞通海的浅水潟湖，德维耶拉湾与内海被归为溶洞塌陷后被海水淹没的构造（Gauci 2025；IRMCo，并记斯普拉特最早认识到戈佐岛这类近圆形洼地）；湾内真菌岩为一块大型石灰岩岩块；「蓝窗」海蚀拱 2017 年 3 月 8 日在风暴中坍塌（MaltaToday / TVM 等，WebSearch 2026-09-13）；真菌岩 18 世纪中叶被骑士团大团长下令禁止擅入（维基 3 级，2026-09-13 当批核实 ok）",
+};
+
+const WIED_IL_GHASRI: TerrainEntry = {
+  id: "wied-il-ghasri",
+  nameZh: "加斯里谷（戈佐岛）",
+  nameEn: "Wied il-Għasri (Gozo)",
+  category: "gorge",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "加斯里谷谷口", lon: 14.2285, lat: 36.0788, elevation: 0, kind: "gorge" },
+  bbox: [14.215, 36.065, 14.240, 36.085],
+  viewFrom: 20,
+  label: { lon: 14.228, lat: 36.090, rotation: 0 },
+  source: "加斯里谷（Wied il-Għasri）：戈佐岛北岸深切进崖岸的狭长海谷，谷底尽头有小海滩，谷地向内陆延伸到加斯里村；Gauci 2025 把它与米加尔伊克西尼、施伦迪列为戈佐岛的溺谷，并指出从米加尔伊克西尼顺时针经塔琴奇、皮努角到加斯里谷的海岸以下珊瑚灰岩直立崖为主（维基「Għasri Valley」3 级，WebSearch 2026-09-13）",
+};
+
+const RAMLA_BAY: TerrainEntry = {
+  id: "ramla-bay",
+  nameZh: "拉姆拉湾（戈佐岛）",
+  nameEn: "Ramla Bay (Gozo)",
+  category: "coast",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "拉姆拉湾红沙滩", lon: 14.2830, lat: 36.0620, elevation: 0, kind: "dune" },
+  bbox: [14.270, 36.052, 14.297, 36.072],
+  viewFrom: 20,
+  label: { lon: 14.283, lat: 36.076, rotation: 0 },
+  source: "拉姆拉湾（Ir-Ramla l-Ħamra，意为「红沙」）：戈佐岛东北岸的沙质海湾；从马尔萨尔福恩湾东侧岬角到达赫莱特科罗特的海岸以崩积坡（rdum）为主，拉姆拉湾是其间唯一打断崩积坡的沙滩，此处蓝黏土与上抱球虫灰岩在海平面附近相接；沉积型海滩只占马耳他海岸线约 2.4%（Gauci 2025）；沙丘为「自然2000」特别保护区（ERA 标准数据表 MT0000005，1 级），沙色来自周边岩土中的铁质（visitgozo.com，WebSearch 2026-09-13）",
+};
+
+const MAJJISTRAL_COAST: TerrainEntry = {
+  id: "majjistral-coast",
+  nameZh: "马伊斯特拉尔海岸",
+  nameEn: "Majjistral Coast",
+  category: "coast",
+  regionId: "europe",
+  country: "malta",
+  landmark: { name: "卡拉巴岬", lon: 14.3400, lat: 35.9300, elevation: 40, kind: "escarpment" },
+  bbox: [14.325, 35.915, 14.360, 35.960],
+  axis: [[14.342, 35.918], [14.345, 35.958]],
+  viewFrom: 270,
+  label: { lon: 14.338, lat: 35.965, rotation: 0 },
+  source: "马伊斯特拉尔海岸：马耳他岛西北岸，上珊瑚灰岩台地之下为蓝黏土与抱球虫灰岩，形成崩积巨石坡（rdum）与黏土劣地，卡拉巴岬（il-Karraba）为典型（Gauci 2025）；2007 年 9 月以第 251 号法律公告设立马伊斯特拉尔自然与历史公园，范围自金湾至普拉耶特与沙拉哈姆拉一带，含约 3 公里受保护的海岸悬崖、属「自然2000」特别保护区，官网称为马耳他首个国家公园（majjistral.org，WebSearch 2026-09-13）。锚点海拔 40 米为取景用概略值",
+};
+
+const PLANICA: TerrainEntry = {
+  id: "planica",
+  nameZh: "普拉尼察谷",
+  nameEn: "Planica",
+  category: "valley",
+  regionId: "europe",
+  country: "slovenia",
+  landmark: { name: "普拉尼察谷口", lon: 13.7236, lat: 46.4764, elevation: 940, kind: "gorge" },
+  bbox: [13.68, 46.40, 13.76, 46.50],
+  axis: [[13.72, 46.49], [13.70, 46.41]],
+  viewScale: 1.0,
+  label: { lon: 13.72, lat: 46.52, rotation: 0 },
+  source: "普拉尼察谷（Planica）：尤利安阿尔卑斯山北部一条狭长的冰蚀谷，在拉泰切附近从主谷分出向南伸入山中；西侧是蓬采山脊，东侧是莫伊斯特罗夫卡与奇佩尔尼克山脊；谷的上段称塔马尔，谷头耸立着亚洛韦茨峰；谷口一带是普拉尼察北欧运动中心与跳台滑雪场地（特里格拉夫国家公园与克拉尼斯卡戈拉旅游局口径，WebSearch 2026-09）",
+};
+
+
+// ============================================================
 // 南美洲 / 智利
 // ============================================================
 
@@ -15753,6 +17208,38 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   CESKE_SVYCARSKO, PODYJI_GORGE,
   MORAVSKY_KRAS, CHEBSKO_SOKOLOVSKA_PANEV,
   LIPNO_RESERVOIR, MACHOVO_JEZERO, VLTAVA_VALLEY_CESKY_KRUMLOV,
+  // ===== 欧洲 / 匈牙利 =====
+  MATRA, BUKK, BORZSONY, PILIS, BAKONY, MECSEK, ZEMPLEN,
+  ALFOLD, KISALFOLD, HORTOBAGY, KISKUNSAG,
+  DANUBE_BEND, LAKE_BALATON, TISZA_RIVER,
+  VISEGRAD_HILLS, VERTES, GERECSE, KOSZEG_MOUNTAINS,
+  AGGTELEK_KARST, BALATON_WITNESS_HILLS, TIHANY_PENINSULA,
+  LAKE_FERTO, LAKE_HEVIZ, LAKE_VELENCE,
+  DANUBE_HUNGARY, SZIGETKOZ,
+  // ===== 欧洲 / 斯洛伐克 =====
+  HIGH_TATRAS, WESTERN_TATRAS, LOW_TATRAS, MALA_FATRA, VELKA_FATRA,
+  MALE_KARPATY, SLOVENSKE_RUDOHORIE,
+  STIAVNICKE_VRCHY, POLANA, VIHORLAT, POLONINY,
+  SLOVENSKY_KRAS, SLOVENSKY_RAJ, MURANSKA_PLANINA,
+  PRIELOM_HORNADU, ZADIELSKA_TIESNAVA, JANOSIKOVE_DIERY, PRIELOM_DUNAJCA,
+  SULOVSKE_SKALY, LIPTOVSKA_KOTLINA, ZAHORSKA_NIZINA,
+  PODUNAJSKA_NIZINA, VYCHODOSLOVENSKA_NIZINA,
+  VAH_RIVER, DANUBE_SLOVAKIA, ZITNY_OSTROV,
+  STRBSKE_PLESO, MORSKE_OKO,
+  // ===== 欧洲 / 斯洛文尼亚 =====
+  JULIAN_ALPS_SLOVENIA, KAMNIK_SAVINJA_ALPS, KARAWANKS, POHORJE, SNEZNIK,
+  KRAS_PLATEAU, POKLJUKA, VELIKA_PLANINA, TRNOVSKI_GOZD,
+  GORISKA_BRDA, SLOVENSKE_GORICE, LJUBLJANSKO_BARJE,
+  POMURSKA_RAVNINA, DRAVSKO_POLJE,
+  SOCA_RIVER, SAVA_RIVER_SLOVENIA, LJUBLJANICA,
+  LOGARSKA_DOLINA, RAKOV_SKOCJAN, TRIGLAV_LAKES_VALLEY, PLANICA,
+  VINTGAR_GORGE, TOLMIN_GORGES, SKOCJAN_CAVES,
+  LAKE_BLED, LAKE_BOHINJ, LAKE_CERKNICA,
+  STRUNJAN_COAST,
+  // ===== 欧洲 / 马耳他 =====
+  DINGLI_CLIFFS, GREAT_FAULT_MALTA, NORTHERN_MALTA_RIDGES, GRAND_HARBOUR,
+  BLUE_GROTTO_MALTA, FILFLA, COMINO, GOZO_UPLANDS,
+  DWEJRA, WIED_IL_GHASRI, RAMLA_BAY, MAJJISTRAL_COAST,
   // ===== 南美洲 / 智利 =====
   ANDES_CHILE, CORDILLERA_DE_LA_COSTA, VILLARRICA_VOLCANO, OSORNO_VOLCANO,
   LLAIMA_VOLCANO, PAINE_MASSIF,

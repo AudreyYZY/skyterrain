@@ -42,8 +42,8 @@ export function getRouteById(id: string): FlightRoute | undefined {
 export function isFlightVerified(route: FlightRoute): boolean {
   const s = route.source;
   if (!s?.ref || !s?.checkedOn) return false;
-  // 查过但查明有误 —— 与没查过一样，不对外显示
-  return s.status !== "wrong";
+  // 查过但查明有误 / 查过但拿不到航班号 —— 两种都与没查过一样，不对外显示
+  return s.status !== "wrong" && s.status !== "flight-unknown";
 }
 
 /** 已核实才返回航班信息，否则 undefined —— 界面与搜索都只认这个 */

@@ -118,6 +118,19 @@ console.log(
 const FIELDS = ["identity", "howItWorks", "layout", "gettingAround", "whenAndTips"] as const;
 /** 「机场……约 X 公里」与「约 X 公里……机场」两种语序；km 与公里都认 */
 const DIST = /机场[^。；，、]{0,18}?约?\s*([\d.]+)\s*(?:公里|km)|约?\s*([\d.]+)\s*(?:公里|km)[^。；，、]{0,8}?机场/g;
+/** 这个数不是机场距离：桥长、铁路里程、跑道长度…… */
+const NOT_A_DISTANCE = /大桥|跨海桥|铁路|高铁|动车|跑道|海底隧道/;
+/** 距离的锚点是另一座城 / 另一个镇的市区 */
+const OTHER_CITY_ANCHOR = /([\u4e00-\u9fa5]{2,6})(?:市区|市中心|城区|县城|镇)(?:西|东|南|北|西北|西南|东北|东南)?约?\d/;
+/**
+ * 已核过的假阳性：正文点名的是**本城自己那座没有定期客运航班的机场**，
+ * 而注册表的 `airport` 字段按「最近有定期航班的机场」填了另一座 —— 两个数说的不是同一座机场。
+ * 加进来之前必须先人工确认一遍，**不要为了让计数下降而往里塞**。
+ */
+const KNOWN_OK = new Set([
+  // 列日：正文「列日机场在市区西南约 6 公里，如今只做货运」；注册表 airport = BRU 布鲁塞尔（82 km）
+  "liege",
+]);
 
 type Claim = { field: string; v: number; ctx: string };
 const tooShort: string[] = [], conflict: string[] = [];
@@ -125,7 +138,7 @@ let entriesWithDistance = 0;
 
 for (const c of CITY_REGISTRY) {
   const guide = TRAVEL_CONTENT_ZH[c.id];
-  if (!c.airport || !guide) continue;
+  if (!c.airport || !guide || KNOWN_OK.has(c.id)) continue;
   const real = km(c.lat, c.lon, c.airport.lat, c.airport.lon);
   const claims: Claim[] = [];
   for (const f of FIELDS) {
@@ -134,7 +147,21 @@ for (const c of CITY_REGISTRY) {
     const t = raw.replace(/\s+/g, "");
     for (const m of t.matchAll(DIST)) {
       const v = Number(m[1] ?? m[2]);
-      if (v >= 0.5 && v <= 400) claims.push({ field: f, v, ctx: t.slice(Math.max(0, m.index - 20), m.index + 28) });
+      if (!(v >= 0.5 && v <= 400)) continue;
+      const ctx = t.slice(Math.max(0, m.index - 24), m.index + 30);
+      // 三类必须排除的假阳性（2026-09-13 立，全部是实际撞上的）：
+      // ① 距离的锚点不是本城 —— 「义乌机场在**义乌市区**西北约 5 公里」（本条目是金华）
+      // ② 这个数根本不是机场距离 —— 「仁川大桥（约 21 公里）从松岛跨海到**机场**所在的永宗岛」
+      // ③ 说的不是注册表里那座机场 —— 「**列日机场**在市区西南约 6 公里，如今只做货运」
+      //    而注册表的 airport 字段填的是布鲁塞尔（列日机场没有定期客运航班）
+      if (NOT_A_DISTANCE.test(ctx)) continue;
+      // 锚点判断要盯住**这个数本身**前面那个锚，不能只看整段窗口里有没有出现本城名
+      // （金华条目的同一句里既有「义乌市区西北约 5 公里」也有「距金华市区约 50 公里」）
+      const anchored = new RegExp(
+        `([\\u4e00-\\u9fa5]{2,6})(?:市区|市中心|城区|县城|镇)(?:西|东|南|北|西北|西南|东北|东南)?约?${m[1] ?? m[2]}`,
+      ).exec(t);
+      if (anchored && anchored[1] !== c.nameZh && !c.nameZh.includes(anchored[1])) continue;
+      claims.push({ field: f, v, ctx });
     }
   }
   if (!claims.length) continue;

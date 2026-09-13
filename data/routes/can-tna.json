@@ -9,7 +9,7 @@
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ3607",
+    "flightNo": "CZ3711",
     "aircraft": "Airbus A320",
     "depIata": "CAN",
     "arrIata": "TNA",
@@ -53,9 +53,8 @@
     }
   ],
   "source": {
-    "ref": "https://www.trip.com/flights/status-cz3607",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CZ3607 实际是**大连(DLC)→广州(CAN)**，与广州—济南无关。CAN→TNA 航段本身确有直飞（每周约 68 班），但未查到可核实的具体航班号与机型。来源级别 3（航班追踪站）"
+    "ref": "https://www.flightaware.com/live/flight/CSN3711/history/20250506/0445Z/ZGGG/ZSJN",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CZ3607 实际是大连→广州。CZ3711 为广州白云→济南遥墙的不经停航班（FlightAware 2025-05-06 历史记录，ICAO 机场对 ZGGG-ZSJN 精确）。**来源级别 3**；机型取自反向航班 CZ3712 的记录（A320），**CZ3711 本身的机型未直接核到**。"
   }
 }

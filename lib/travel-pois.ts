@@ -4680,6 +4680,50 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "札达土林", nameEn: "Zanda Earth Forest", lon: 79.8000, lat: 31.4800, kind: "nature" },
     { nameZh: "班公湖", nameEn: "Pangong Lake (Bangong Co)", lon: 79.5000, lat: 33.6000, kind: "nature" },
   ],
+  // ── 中国批 11（2026-09-13）：维基坐标；缺维基坐标的取 OpenStreetMap Nominatim ──
+  quzhou: [
+    { nameZh: "孔氏南宗家庙", nameEn: "Southern Ancestral Temple of the Kong Family", lon: 118.8725, lat: 28.9633, kind: "landmark" },
+    { nameZh: "江郎山", nameEn: "Mount Jianglang", lon: 118.5653, lat: 28.5297, kind: "nature" },
+    { nameZh: "廿八都古镇", nameEn: "Nianbadu Old Town", lon: 118.4788, lat: 28.2953, kind: "district" },
+    { nameZh: "根宫佛国文化旅游景区", nameEn: "Genggong Buddhist Kingdom", lon: 118.3897, lat: 29.1349, kind: "landmark" },
+  ],
+  lianyungang: [
+    { nameZh: "花果山景区", nameEn: "Mount Huaguo Scenic Area", lon: 119.2883, lat: 34.6541, kind: "nature" },
+    { nameZh: "连岛", nameEn: "Lian Island", lon: 119.4639, lat: 34.7575, kind: "nature" },
+    { nameZh: "孔望山", nameEn: "Kongwang Shan", lon: 119.1697, lat: 34.5678, kind: "landmark" },
+  ],
+  rizhao: [
+    { nameZh: "万平口海滨", nameEn: "Wanpingkou Beach", lon: 119.5684, lat: 35.4139, kind: "nature" },
+    { nameZh: "浮来山", nameEn: "Mount Fulai", lon: 118.7880, lat: 35.6302, kind: "nature" },
+  ],
+  xinyang: [
+    { nameZh: "鸡公山", nameEn: "Jigong Shan", lon: 114.0833, lat: 31.7994, kind: "nature" },
+  ],
+  chenzhou: [
+    { nameZh: "东江湖", nameEn: "Dongjiang Lake", lon: 113.3422, lat: 25.8004, kind: "nature" },
+    { nameZh: "苏仙岭", nameEn: "Suxian Ling", lon: 113.0483, lat: 25.8123, kind: "nature" },
+    { nameZh: "高椅岭", nameEn: "Gaoyiling", lon: 113.1568, lat: 25.9615, kind: "nature" },
+  ],
+  wuzhou: [
+    { nameZh: "骑楼城", nameEn: "Qilou Arcade District", lon: 111.3122, lat: 23.4744, kind: "district" },
+    { nameZh: "龙母庙", nameEn: "Dragon Mother Temple", lon: 111.3116, lat: 23.4849, kind: "landmark" },
+    { nameZh: "梧州中山纪念堂", nameEn: "Wuzhou Sun Yat-sen Memorial Hall", lon: 111.3139, lat: 23.4796, kind: "landmark" },
+  ],
+  panzhihua: [
+    { nameZh: "二滩水电站", nameEn: "Ertan Hydropower Station", lon: 101.7855, lat: 26.8231, kind: "landmark" },
+  ],
+  anshan: [
+    { nameZh: "千山风景区", nameEn: "Qianshan Scenic Area", lon: 123.1215, lat: 41.0084, kind: "nature" },
+    { nameZh: "玉佛苑", nameEn: "Jade Buddha Garden", lon: 123.0043, lat: 41.1048, kind: "landmark" },
+    { nameZh: "汤岗子温泉", nameEn: "Tanggangzi Hot Springs", lon: 122.9020, lat: 41.0073, kind: "landmark" },
+  ],
+  tongliao: [
+    { nameZh: "奈曼王府", nameEn: "Naiman Princely Mansion", lon: 120.6447, lat: 42.8459, kind: "landmark" },
+  ],
+  jiamusi: [
+    { nameZh: "街津口赫哲族乡", nameEn: "Jiejinkou Hezhe Ethnic Township", lon: 132.8413, lat: 47.9333, kind: "district" },
+  ],
+
 
   // ── 智利 ──
   santiago: [
@@ -4761,6 +4805,218 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "通加里基祭坛", nameEn: "Ahu Tongariki", lon: -109.2767, lat: -27.1258, kind: "landmark" },
     { nameZh: "阿纳克纳海滩", nameEn: "Anakena Beach", lon: -109.3250, lat: -27.0730, kind: "nature" },
     { nameZh: "奥龙戈仪式村", nameEn: "Orongo Ceremonial Village", lon: -109.4430, lat: -27.1830, kind: "landmark" },
+  ],
+  // ===== 欧洲 / 斯洛伐克 =====
+  bratislava: [
+    { nameZh: "布拉迪斯拉发城堡", nameEn: "Bratislava Castle", lon: 17.1000, lat: 48.1420, kind: "landmark" },
+    { nameZh: "圣马丁主教座堂", nameEn: "St Martin's Cathedral", lon: 17.1053, lat: 48.1416, kind: "landmark" },
+    { nameZh: "主广场与旧市政厅", nameEn: "Main Square and Old Town Hall", lon: 17.1085, lat: 48.1440, kind: "landmark" },
+    { nameZh: "米哈尔门", nameEn: "Michael's Gate", lon: 17.1063, lat: 48.1454, kind: "landmark" },
+    { nameZh: "SNP 大桥观景塔", nameEn: "UFO Observation Deck, SNP Bridge", lon: 17.1042, lat: 48.1381, kind: "landmark" },
+    { nameZh: "德文城堡", nameEn: "Devín Castle", lon: 16.9792, lat: 48.1736, kind: "landmark" },
+    { nameZh: "彼得扎尔卡", nameEn: "Petržalka", lon: 17.1078, lat: 48.1189, kind: "landmark" },
+  ],
+  kosice: [
+    { nameZh: "圣伊丽莎白主教座堂", nameEn: "St Elisabeth Cathedral", lon: 21.2586, lat: 48.7203, kind: "landmark" },
+    { nameZh: "主街广场", nameEn: "Hlavná Street Square", lon: 21.2589, lat: 48.7228, kind: "landmark" },
+    { nameZh: "乌尔班塔（钟楼）", nameEn: "Urban Tower", lon: 21.2591, lat: 48.7211, kind: "landmark" },
+    { nameZh: "东斯洛伐克博物馆", nameEn: "East Slovak Museum", lon: 21.2574, lat: 48.7263, kind: "landmark" },
+    { nameZh: "霍尔纳德河畔", nameEn: "Hornád riverside", lon: 21.2700, lat: 48.7150, kind: "nature" },
+  ],
+  zilina: [
+    { nameZh: "玛丽亚广场", nameEn: "Mariánske Square", lon: 18.7397, lat: 49.2239, kind: "landmark" },
+    { nameZh: "布达廷城堡", nameEn: "Budatín Castle", lon: 18.7333, lat: 49.2325, kind: "landmark" },
+    { nameZh: "瓦赫河与基苏察河汇口", nameEn: "Váh–Kysuca confluence", lon: 18.7300, lat: 49.2330, kind: "nature" },
+    { nameZh: "日利纳火车站", nameEn: "Žilina railway station", lon: 18.7411, lat: 49.2261, kind: "landmark" },
+  ],
+  "banska-bystrica": [
+    { nameZh: "SNP 广场", nameEn: "SNP Square", lon: 19.1461, lat: 48.7355, kind: "landmark" },
+    { nameZh: "倾斜钟楼", nameEn: "Leaning Clock Tower", lon: 19.1464, lat: 48.7357, kind: "landmark" },
+    { nameZh: "城堡区教堂群", nameEn: "Castle precinct churches", lon: 19.1444, lat: 48.7364, kind: "landmark" },
+    { nameZh: "赫龙河畔", nameEn: "Hron riverside", lon: 19.1500, lat: 48.7320, kind: "nature" },
+  ],
+  poprad: [
+    { nameZh: "斯皮什斯卡索博塔历史广场", nameEn: "Spišská Sobota historic square", lon: 20.3092, lat: 49.0692, kind: "landmark" },
+    { nameZh: "波普拉德市中心广场", nameEn: "Poprad central square", lon: 20.2981, lat: 49.0594, kind: "landmark" },
+    { nameZh: "斯塔里斯莫科韦茨", nameEn: "Starý Smokovec", lon: 20.2222, lat: 49.1389, kind: "landmark" },
+    { nameZh: "什特尔布斯凯湖", nameEn: "Štrbské pleso", lon: 20.0611, lat: 49.1206, kind: "nature" },
+  ],
+  "banska-stiavnica": [
+    { nameZh: "三一广场", nameEn: "Trojičné Square", lon: 18.8944, lat: 48.4583, kind: "landmark" },
+    { nameZh: "新城堡", nameEn: "New Castle", lon: 18.8917, lat: 48.4569, kind: "landmark" },
+    { nameZh: "老城堡", nameEn: "Old Castle", lon: 18.8967, lat: 48.4600, kind: "landmark" },
+    { nameZh: "卡尔瓦里建筑群", nameEn: "Banská Štiavnica Calvary", lon: 18.9139, lat: 48.4592, kind: "landmark" },
+  ],
+  bardejov: [
+    { nameZh: "集市广场", nameEn: "Bardejov Market Square", lon: 21.2756, lat: 49.2939, kind: "landmark" },
+    { nameZh: "圣埃吉迪乌斯教堂", nameEn: "Basilica of St Egidius", lon: 21.2747, lat: 49.2950, kind: "landmark" },
+    { nameZh: "老城墙与塔楼", nameEn: "Town walls and towers", lon: 21.2778, lat: 49.2933, kind: "landmark" },
+    { nameZh: "巴尔代约夫温泉区", nameEn: "Bardejovské Kúpele spa", lon: 21.2833, lat: 49.3306, kind: "landmark" },
+  ],
+  levoca: [
+    { nameZh: "圣雅各教堂", nameEn: "Church of St James", lon: 20.5886, lat: 49.0247, kind: "landmark" },
+    { nameZh: "莱沃恰大广场", nameEn: "Levoča Main Square", lon: 20.5889, lat: 49.0242, kind: "landmark" },
+    { nameZh: "老市政厅", nameEn: "Levoča Town Hall", lon: 20.5883, lat: 49.0244, kind: "landmark" },
+    { nameZh: "玛丽亚山朝圣教堂", nameEn: "Marian Hill pilgrimage church", lon: 20.5919, lat: 49.0342, kind: "landmark" },
+    { nameZh: "斯皮什城堡", nameEn: "Spiš Castle", lon: 20.7683, lat: 48.9994, kind: "landmark" },
+  ],
+  // ===== 欧洲 / 斯洛文尼亚 =====
+  ljubljana: [
+    { nameZh: "卢布尔雅那城堡", nameEn: "Ljubljana Castle", lon: 14.5086, lat: 46.0490, kind: "landmark" },
+    { nameZh: "三桥", nameEn: "Triple Bridge", lon: 14.5063, lat: 46.0511, kind: "landmark" },
+    { nameZh: "普列舍仁广场", nameEn: "Prešeren Square", lon: 14.5061, lat: 46.0514, kind: "landmark" },
+    { nameZh: "中央市场", nameEn: "Central Market", lon: 14.5092, lat: 46.0514, kind: "landmark" },
+    { nameZh: "龙桥", nameEn: "Dragon Bridge", lon: 14.5103, lat: 46.0522, kind: "landmark" },
+    { nameZh: "蒂沃利公园", nameEn: "Tivoli Park", lon: 14.4950, lat: 46.0550, kind: "landmark" },
+  ],
+  maribor: [
+    { nameZh: "老藤之家", nameEn: "Old Vine House", lon: 15.6431, lat: 46.5571, kind: "landmark" },
+    { nameZh: "伦特滨河区", nameEn: "Lent riverfront", lon: 15.6420, lat: 46.5569, kind: "landmark" },
+    { nameZh: "主广场与市政厅", nameEn: "Main Square and Town Hall", lon: 15.6456, lat: 46.5575, kind: "landmark" },
+    { nameZh: "波霍列缆车下站", nameEn: "Pohorje cable car lower station", lon: 15.6025, lat: 46.5328, kind: "landmark" },
+  ],
+  celje: [
+    { nameZh: "采列古堡", nameEn: "Old Castle of Celje", lon: 15.2733, lat: 46.2197, kind: "landmark" },
+    { nameZh: "采列地方博物馆", nameEn: "Celje Regional Museum", lon: 15.2625, lat: 46.2297, kind: "landmark" },
+    { nameZh: "采列老城", nameEn: "Celje old town", lon: 15.2600, lat: 46.2305, kind: "landmark" },
+  ],
+  kranj: [
+    { nameZh: "克拉尼老城主街", nameEn: "Kranj old town main street", lon: 14.3556, lat: 46.2389, kind: "landmark" },
+    { nameZh: "科克拉河峡谷", nameEn: "Kokra Canyon", lon: 14.3592, lat: 46.2408, kind: "landmark" },
+    { nameZh: "普列舍仁林园", nameEn: "Prešeren Grove", lon: 14.3551, lat: 46.2433, kind: "landmark" },
+  ],
+  koper: [
+    { nameZh: "执政官宫", nameEn: "Praetorian Palace", lon: 13.7297, lat: 45.5480, kind: "landmark" },
+    { nameZh: "主教座堂与钟楼", nameEn: "Cathedral and bell tower", lon: 13.7302, lat: 45.5482, kind: "landmark" },
+  ],
+  piran: [
+    { nameZh: "塔尔蒂尼广场", nameEn: "Tartini Square", lon: 13.5683, lat: 45.5283, kind: "landmark" },
+    { nameZh: "塔尔蒂尼故居", nameEn: "Tartini House", lon: 13.5686, lat: 45.5286, kind: "landmark" },
+    { nameZh: "圣乔治教堂与钟楼", nameEn: "St George's Church and bell tower", lon: 13.5669, lat: 45.5297, kind: "landmark" },
+    { nameZh: "皮兰城墙", nameEn: "Piran town walls", lon: 13.5706, lat: 45.5275, kind: "landmark" },
+    { nameZh: "波尔托罗日", nameEn: "Portorož", lon: 13.5910, lat: 45.5140, kind: "landmark" },
+  ],
+  bled: [
+    { nameZh: "布莱德城堡", nameEn: "Bled Castle", lon: 14.1003, lat: 46.3697, kind: "landmark" },
+    { nameZh: "布莱德岛与圣母升天教堂", nameEn: "Bled Island and Church of the Assumption", lon: 14.0906, lat: 46.3620, kind: "landmark" },
+    { nameZh: "温特加尔峡谷", nameEn: "Vintgar Gorge", lon: 14.0850, lat: 46.3933, kind: "landmark" },
+    { nameZh: "萨维察瀑布", nameEn: "Savica Waterfall", lon: 13.7967, lat: 46.2911, kind: "landmark" },
+  ],
+  ptuj: [
+    { nameZh: "普图伊城堡", nameEn: "Ptuj Castle", lon: 15.8681, lat: 46.4222, kind: "landmark" },
+    { nameZh: "普图伊主广场", nameEn: "Ptuj Town Square", lon: 15.8697, lat: 46.4197, kind: "landmark" },
+    { nameZh: "多明我会修道院", nameEn: "Dominican Monastery", lon: 15.8722, lat: 46.4214, kind: "landmark" },
+  ],
+  // ===== 欧洲 / 马耳他 =====（维基坐标；未取到维基坐标的按地图概略定位）
+  valletta: [
+    { nameZh: "圣约翰副主教座堂", nameEn: "St John's Co-Cathedral", lon: 14.5128, lat: 35.8978, kind: "landmark" },
+    { nameZh: "上巴拉卡花园", nameEn: "Upper Barrakka Gardens", lon: 14.5122, lat: 35.8947, kind: "landmark" },
+    { nameZh: "大团长宫", nameEn: "Grandmaster's Palace", lon: 14.5142, lat: 35.8986, kind: "landmark" },
+    { nameZh: "圣埃尔莫堡", nameEn: "Fort St Elmo", lon: 14.5188, lat: 35.9020, kind: "landmark" },
+  ],
+  sliema: [
+    { nameZh: "蒂涅角", nameEn: "Tigné Point", lon: 14.5123, lat: 35.9069, kind: "landmark" },
+    { nameZh: "斯利马渡轮码头", nameEn: "Sliema Ferries", lon: 14.5055, lat: 35.9040, kind: "landmark" },
+    { nameZh: "塔路海滨步道", nameEn: "Tower Road promenade", lon: 14.5090, lat: 35.9140, kind: "landmark" },
+  ],
+  "st-julians": [
+    { nameZh: "斯皮诺拉湾", nameEn: "Spinola Bay", lon: 14.4905, lat: 35.9190, kind: "landmark" },
+    { nameZh: "帕切维尔", nameEn: "Paceville", lon: 14.4914, lat: 35.9237, kind: "landmark" },
+    { nameZh: "巴卢塔湾", nameEn: "Balluta Bay", lon: 14.4940, lat: 35.9150, kind: "landmark" },
+  ],
+  mdina: [
+    { nameZh: "圣保罗主教座堂（姆迪纳）", nameEn: "St Paul's Cathedral, Mdina", lon: 14.4039, lat: 35.8864, kind: "landmark" },
+    { nameZh: "姆迪纳主城门", nameEn: "Mdina Gate", lon: 14.4025, lat: 35.8845, kind: "landmark" },
+    { nameZh: "罗马宅邸遗址", nameEn: "Domvs Romana", lon: 14.4001, lat: 35.8853, kind: "landmark" },
+    { nameZh: "圣保罗地下墓穴", nameEn: "St Paul's Catacombs", lon: 14.3976, lat: 35.8807, kind: "landmark" },
+  ],
+  birgu: [
+    { nameZh: "圣安杰洛堡", nameEn: "Fort St Angelo", lon: 14.5183, lat: 35.8919, kind: "landmark" },
+    { nameZh: "宗教裁判所宫", nameEn: "Inquisitor's Palace", lon: 14.5225, lat: 35.8872, kind: "landmark" },
+    { nameZh: "马耳他海事博物馆", nameEn: "Malta Maritime Museum", lon: 14.5208, lat: 35.8875, kind: "landmark" },
+    { nameZh: "森格莱阿", nameEn: "Senglea", lon: 14.5169, lat: 35.8878, kind: "landmark" },
+  ],
+  "victoria-gozo": [
+    { nameZh: "维多利亚古城堡", nameEn: "Cittadella, Victoria", lon: 14.2394, lat: 36.0464, kind: "landmark" },
+    { nameZh: "吉甘提亚神庙", nameEn: "Ġgantija Temples", lon: 14.2692, lat: 36.0472, kind: "landmark" },
+    { nameZh: "塔皮努圣母堂", nameEn: "Ta' Pinu Basilica", lon: 14.2148, lat: 36.0618, kind: "landmark" },
+    { nameZh: "施伦迪湾", nameEn: "Xlendi Bay", lon: 14.2189, lat: 36.0297, kind: "landmark" },
+    { nameZh: "德维耶拉内海", nameEn: "Inland Sea, Dwejra", lon: 14.1911, lat: 36.0538, kind: "landmark" },
+  ],
+  marsaxlokk: [
+    { nameZh: "马尔萨什洛克海滨与渔船", nameEn: "Marsaxlokk waterfront", lon: 14.5447, lat: 35.8417, kind: "landmark" },
+    { nameZh: "圣彼得池", nameEn: "St Peter's Pool", lon: 14.5620, lat: 35.8340, kind: "landmark" },
+  ],
+  mellieha: [
+    { nameZh: "梅利哈圣母堂", nameEn: "Sanctuary of Our Lady of Mellieħa", lon: 14.3613, lat: 35.9604, kind: "landmark" },
+    { nameZh: "梅利哈湾", nameEn: "Mellieħa Bay", lon: 14.3503, lat: 35.9699, kind: "landmark" },
+    { nameZh: "大力水手村", nameEn: "Popeye Village", lon: 14.3413, lat: 35.9608, kind: "landmark" },
+    { nameZh: "红塔（圣阿加莎塔）", nameEn: "Red Tower (St Agatha's Tower)", lon: 14.3390, lat: 35.9770, kind: "landmark" },
+  ],
+  "st-pauls-bay": [
+    { nameZh: "布吉巴", nameEn: "Buġibba", lon: 14.4117, lat: 35.9492, kind: "landmark" },
+    { nameZh: "夸拉", nameEn: "Qawra", lon: 14.4200, lat: 35.9542, kind: "landmark" },
+    { nameZh: "圣保罗群岛", nameEn: "St Paul's Islands", lon: 14.4000, lat: 35.9700, kind: "landmark" },
+    { nameZh: "西马尔湿地保护区", nameEn: "Is-Simar Nature Reserve", lon: 14.3822, lat: 35.9456, kind: "landmark" },
+  ],
+  // ===== 欧洲 / 匈牙利 =====
+  budapest: [
+    { nameZh: "布达城堡（旧王宫）", nameEn: "Buda Castle", lon: 19.0399, lat: 47.4962, kind: "landmark" },
+    { nameZh: "马加什教堂", nameEn: "Matthias Church", lon: 19.0345, lat: 47.5020, kind: "landmark" },
+    { nameZh: "渔人堡", nameEn: "Fisherman's Bastion", lon: 19.0347, lat: 47.5025, kind: "landmark" },
+    { nameZh: "国会大厦", nameEn: "Hungarian Parliament Building", lon: 19.0456, lat: 47.5072, kind: "landmark" },
+    { nameZh: "链子桥", nameEn: "Széchenyi Chain Bridge", lon: 19.0435, lat: 47.4987, kind: "landmark" },
+    { nameZh: "英雄广场", nameEn: "Heroes' Square", lon: 19.0777, lat: 47.5149, kind: "landmark" },
+    { nameZh: "塞切尼温泉浴场", nameEn: "Széchenyi Thermal Bath", lon: 19.0832, lat: 47.5187, kind: "landmark" },
+    { nameZh: "盖勒特山", nameEn: "Gellért Hill", lon: 19.0463, lat: 47.4869, kind: "nature" },
+    { nameZh: "中央市场", nameEn: "Great Market Hall", lon: 19.0587, lat: 47.4874, kind: "landmark" },
+    { nameZh: "玛格丽特岛", nameEn: "Margaret Island", lon: 19.0500, lat: 47.5275, kind: "nature" },
+  ],
+  debrecen: [
+    { nameZh: "归正宗大教堂", nameEn: "Reformed Great Church", lon: 21.6255, lat: 47.5317, kind: "landmark" },
+    { nameZh: "科苏特广场", nameEn: "Kossuth Square", lon: 21.6259, lat: 47.5308, kind: "landmark" },
+    { nameZh: "大森林公园", nameEn: "Nagyerdő Park", lon: 21.6247, lat: 47.5553, kind: "nature" },
+    { nameZh: "德布勒森大学主楼", nameEn: "University of Debrecen", lon: 21.6242, lat: 47.5533, kind: "landmark" },
+    { nameZh: "德里博物馆", nameEn: "Déri Museum", lon: 21.6236, lat: 47.5333, kind: "landmark" },
+  ],
+  szeged: [
+    { nameZh: "还愿教堂", nameEn: "Votive Church of Szeged", lon: 20.1499, lat: 46.2531, kind: "landmark" },
+    { nameZh: "大教堂广场", nameEn: "Dóm Square", lon: 20.1491, lat: 46.2527, kind: "landmark" },
+    { nameZh: "塞格德市政厅", nameEn: "Szeged Town Hall", lon: 20.1477, lat: 46.2536, kind: "landmark" },
+    { nameZh: "蒂萨河畔", nameEn: "Tisza Riverside", lon: 20.1533, lat: 46.2545, kind: "nature" },
+    { nameZh: "新塞格德温泉浴场", nameEn: "Újszeged Thermal Bath", lon: 20.1613, lat: 46.2514, kind: "landmark" },
+  ],
+  pecs: [
+    { nameZh: "塞切尼广场", nameEn: "Széchenyi Square", lon: 18.2281, lat: 46.0763, kind: "landmark" },
+    { nameZh: "帕夏加齐·卡西姆清真寺（现为教堂）", nameEn: "Mosque of Pasha Qasim", lon: 18.2278, lat: 46.0765, kind: "landmark" },
+    { nameZh: "佩奇主教座堂", nameEn: "Pécs Cathedral", lon: 18.2225, lat: 46.0787, kind: "landmark" },
+    { nameZh: "早期基督教墓葬群", nameEn: "Early Christian Necropolis", lon: 18.2240, lat: 46.0781, kind: "landmark" },
+    { nameZh: "佐尔奈文化区", nameEn: "Zsolnay Cultural Quarter", lon: 18.2417, lat: 46.0714, kind: "landmark" },
+  ],
+  gyor: [
+    { nameZh: "主教山与主教座堂", nameEn: "Chapter Hill and Cathedral", lon: 17.6353, lat: 47.6932, kind: "landmark" },
+    { nameZh: "杰尔市政厅", nameEn: "Győr Town Hall", lon: 17.6345, lat: 47.6869, kind: "landmark" },
+    { nameZh: "两河汇口", nameEn: "Confluence of the Rába and Mosoni-Duna", lon: 17.6318, lat: 47.6923, kind: "nature" },
+    { nameZh: "巴洛克老城", nameEn: "Baroque Old Town", lon: 17.6357, lat: 47.6906, kind: "landmark" },
+  ],
+  eger: [
+    { nameZh: "多博广场", nameEn: "Dobó Square", lon: 20.3756, lat: 47.9023, kind: "landmark" },
+    { nameZh: "埃格尔城堡", nameEn: "Eger Castle", lon: 20.3799, lat: 47.9042, kind: "landmark" },
+    { nameZh: "埃格尔宣礼塔", nameEn: "Eger Minaret", lon: 20.3736, lat: 47.9036, kind: "landmark" },
+    { nameZh: "埃格尔主教座堂", nameEn: "Eger Basilica", lon: 20.3736, lat: 47.8995, kind: "landmark" },
+    { nameZh: "美妇人谷", nameEn: "Valley of the Beautiful Women", lon: 20.3653, lat: 47.8896, kind: "landmark" },
+  ],
+  sopron: [
+    { nameZh: "火塔", nameEn: "Fire Tower", lon: 16.5897, lat: 47.6856, kind: "landmark" },
+    { nameZh: "肖普朗主广场", nameEn: "Fő tér", lon: 16.5891, lat: 47.6859, kind: "landmark" },
+    { nameZh: "山羊教堂", nameEn: "Goat Church", lon: 16.5888, lat: 47.6857, kind: "landmark" },
+    { nameZh: "埃斯泰尔哈齐宫（费尔特德）", nameEn: "Esterházy Palace, Fertőd", lon: 16.8720, lat: 47.6197, kind: "landmark" },
+  ],
+  szentendre: [
+    { nameZh: "圣安德烈主广场", nameEn: "Szentendre Main Square", lon: 19.0762, lat: 47.6697, kind: "landmark" },
+    { nameZh: "贝尔格莱德教堂", nameEn: "Belgrade Cathedral", lon: 19.0742, lat: 47.6712, kind: "landmark" },
+    { nameZh: "教堂山", nameEn: "Church Hill", lon: 19.0753, lat: 47.6706, kind: "landmark" },
+    { nameZh: "露天民俗博物馆", nameEn: "Hungarian Open Air Museum (Skanzen)", lon: 19.0447, lat: 47.6917, kind: "landmark" },
   ],
 };
 

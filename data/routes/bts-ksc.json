@@ -1,0 +1,48 @@
+{
+  "id": "bts-ksc",
+  "name": "布拉迪斯拉发 — 科希策",
+  "nameEn": "Bratislava — Košice",
+  "description": "小喀尔巴阡山 · 低塔特拉 · 斯洛伐克矿山",
+  "descriptionEn": "Little Carpathians · Low Tatras · Slovak Ore Mountains",
+  "depCountry": "slovakia",
+  "arrCountry": "slovakia",
+  "cruiseHeight": 7000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "bts",
+      "name": "布拉迪斯拉发",
+      "nameEn": "Bratislava",
+      "lat": 48.1702,
+      "lon": 17.2127,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "male-karpaty"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "low-tatras"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "slovenske-rudohorie"
+    },
+    {
+      "kind": "city",
+      "id": "ksc",
+      "name": "科希策",
+      "nameEn": "Košice",
+      "lat": 48.6631,
+      "lon": 21.2411,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://en.wikipedia.org/wiki/Ko%C5%A1ice_International_Airport",
+    "checkedOn": "2026-09-13",
+    "note": "**机场对与承运人已核实、航班号与机型未核实**：斯洛伐克此前长期没有国内定期客运航线（原布拉迪斯拉发—科希策线在 2019 年 1 月随捷克航空停飞而取消），2025 年 11 月起由 Wizz Air 复航。本条只写到「这条航线存在、由 Wizz Air 执飞」这一层，**没有填 flight 字段** —— 航班号、机型与班期都没拿到可核实的来源，按本库规矩宁可不显示，也不填一个看起来合理的号。下一轮从 Wizz Air 官网时刻表或科希策机场官方时刻表入手。来源级别 3",
+    "status": "flight-unknown"
+  }
+}

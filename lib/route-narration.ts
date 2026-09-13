@@ -67,31 +67,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "can-lxa": {
-    // study sources: 全四段（study/travel × 中英）: 南岭为长江 / 珠江分水岭、云贵高原坝子为定性描述，与本库一致；进藏许可 + 有资质旅行社结伴已写。核实 2026-09-11
-    study: {
-    "zh-CN":
-      "广州飞拉萨，跨越的是中国从最湿热到最高寒的完整梯度。飞机从珠江三角洲起飞——这是珠江在入海口冲积、加上人工围垦形成的平原，水网密布、城市连片，是中国最发达的地区之一。" +
-      "往西北飞，先遇到南岭。它不像北方的大山那样高大连续，而是一列低矮、破碎的丘陵山地，被一道道宽阔的谷地隔开。南岭是长江水系和珠江水系的分水岭，翻过它，河流就开始流向长江。" +
-      "再往前，地面整体抬高，进入云贵高原。这里的典型地貌是喀斯特——石灰岩被水溶蚀出无数圆锥形、馒头形的小山头，山间是封闭的小盆地，当地叫“坝子”，村镇和农田都挤在坝子里。地表的河流常常钻进地下又冒出来。" +
-      "云贵高原以西，地形再次变得险峻，进入横断山脉南段——南北向排列的雪山和深谷。越过它，就上了青藏高原东南缘。这一带因为有印度洋的水汽顺着河谷灌进来，是高原上最湿润、最绿的角落，森林一直长到很高的地方。飞机最后沿雅鲁藏布江水系下降到拉萨。一趟航班，走完了从亚热带季风区到高寒高原的全部气候带。",
-    "en-US":
-      "Guangzhou to Lhasa crosses China's full gradient from its most hot and humid to its coldest and highest. The plane leaves the Pearl River Delta — a plain built by the river's silt at its mouth plus centuries of reclamation, water-netted and city-covered, one of the most developed regions in China." +
-      " Flying north-west it first meets the Nanling. Unlike the big ranges of the north, this is a low, broken belt of hills separated by wide valleys. The Nanling is the drainage divide between the Yangtze and the Pearl river systems; cross it and rivers begin to flow toward the Yangtze." +
-      " Beyond it the land rises as a whole onto the Yunnan–Guizhou Plateau. Its signature is karst — limestone dissolved by water into countless cone- and dome-shaped hills, with enclosed pockets of flat land between them, called bazi, where the towns and fields crowd in. Surface rivers here often dive underground and re-emerge." +
-      " West of the plateau the terrain turns rugged again in the southern Hengduan Mountains — north–south snow ranges and deep gorges. Past them you are on the south-eastern edge of the Tibetan Plateau. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The plane descends along the Yarlung Tsangpo system into Lhasa. One flight has passed through every climate zone from the subtropical monsoon to the cold high plateau.",
-    },
-    travel: {
-    "zh-CN":
-      "广州到拉萨要飞约四个半小时，是从接近海平面的珠三角一路爬到海拔约3650米的拉萨，落差比大多数航线都大，高原反应更要重视：头一两天务必放慢节奏、多休息、多喝水、不饮酒，有心肺基础病的人先咨询医生。" +
-      "和成都航线一样，外国游客进藏除中国签证外还需办西藏旅行许可，并通常须随有资质的旅行社结伴、按报备行程出行，出发前通过旅行社安排好。广州是华南的航空枢纽，不少来自东南亚的旅客在这里中转进藏。" +
-      "拉萨城市不大，核心是布达拉宫、大昭寺和八廓街；气候干燥、日照强、昼夜温差大，全年都要防晒并备保暖衣物。合适的季节大致是4—5月和9—10月；雨季（约6—8月）部分道路易受泥石流影响，但高原东南缘的林芝一带这时最绿。",
-    "en-US":
-      "Guangzhou to Lhasa is about four and a half hours, climbing from the near-sea-level Pearl River Delta all the way to Lhasa at about 3,650 m — a bigger jump than on most routes, so treat altitude sickness with extra care: for the first day or two, slow right down, rest, drink plenty of water and avoid alcohol, and get medical advice first if you have a heart or lung condition." +
-      " As on the Chengdu route, foreign visitors need a Tibet Travel Permit on top of their Chinese visa and normally must travel with a licensed operator in a group on a declared itinerary — arrange it through an agency before you leave. Guangzhou is southern China's aviation hub, and many travellers from Southeast Asia connect here for Tibet." +
-      " Lhasa is a small city; its core is the Potala Palace, the Jokhang and the Barkhor. It is dry, with strong sun and a wide day-night temperature range, so bring sun protection and warm layers year-round. The better seasons are roughly April–May and September–October; the rainy season (about June–August) can bring landslides onto roads, though the Nyingchi area on the south-eastern edge of the plateau is at its greenest then.",
-    },
-  },
 
   "urc-khg": {
     // study sources: 全四段（study/travel × 中英）: 天山「离海最远的大山系之一」已带限定；塔克拉玛干「中国最大的沙漠」与本库一致；喀什丝路南、中两道交汇与 travel/kashgar 一致；喀什海拔约 1300 m（官方 1289.5 m）在容差内。核实 2026-09-11
@@ -365,11 +340,39 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  "can-bud": {
+    study: {
+      "zh-CN":
+        "广州飞布达佩斯，是一条从亚热带季风区一路向西北、横穿整个欧亚大陆腹地的航线。飞机离开珠江三角洲，很快越过南岭——这条东西向的低山把珠江水系和长江水系分开，也是亚热带内部一条重要的气候界线。" +
+        "继续向北，地面逐渐抬升，出现的是秦岭：一条连续的东西向山脊，北坡几乎直插关中平原，是中国暖温带与亚热带的分界；再往北，黄土高原铺开，沟壑纵横的黄色地面是几十万年风成粉尘堆积、又被流水切开的结果。" +
+        "过了黄土高原，绿色迅速退去，飞机进入蒙古戈壁——戈壁不是沙漠：它的地表以砾石和基岩为主，沙丘反而少见，这是风把细颗粒吹走、留下粗粒的结果。" +
+        "此后是漫长的中亚段。萨雷阿尔卡草原在下方展开：这是哈萨克丘陵上一片起伏极缓的草原与半荒漠，夏季枯黄、春季短暂返青，地表几乎看不到树，只有零星的盐湖反着光。再往西，地面继续变低变平，进入东欧平原——欧洲面积最大的平原，从乌拉尔山一直铺到中欧，河流宽阔、水系呈树枝状散开，农田和森林交替成片。" +
+        "航线最后进入喀尔巴阡盆地。飞机越过环绕盆地的山地之后，下方是匈牙利大平原：这是一片沉降盆地被多瑙河与蒂萨河长期填平的结果，地面高度大多在海拔80到150米之间，起伏极小，河道在其中画出明显的曲流与成串的牛轭湖。" +
+        "终点布达佩斯就在这片平原的西北缘，多瑙河从城中穿过，西岸是丘陵、东岸是平地——从空中看，这条河把城市分成的两半，地形完全不同。",
+      "en-US":
+        "Guangzhou to Budapest runs north-west from the subtropical monsoon belt right across the interior of Eurasia. Leaving the Pearl River delta, the flight soon crosses the Nanling — the east-west range that separates the Pearl River system from the Yangtze and marks an important climatic line within the subtropics. " +
+        "Further north the ground rises into the Qinling: a continuous east-west ridge whose northern slope drops almost straight to the Guanzhong plain, the divide between China's warm-temperate and subtropical zones. Beyond it the Loess Plateau opens out, its yellow, deeply gullied surface the product of hundreds of thousands of years of wind-blown dust, later cut apart by running water. " +
+        "Past the loess the green goes quickly and the flight enters the Mongolian Gobi. A gobi is not a sand desert: its surface is gravel and bedrock, with dunes comparatively rare — what the wind has done is carry the fine material away and leave the coarse behind. " +
+        "Then comes the long Central Asian leg. The Saryarka steppe spreads below, a very gently rolling belt of grassland and semi-desert on the Kazakh uplands, parched in summer and briefly green in spring, with hardly a tree and only scattered salt lakes catching the light. Further west the ground flattens further into the East European Plain — the largest plain in Europe, running from the Urals to Central Europe, its rivers broad, its drainage spreading in branching patterns, farmland alternating with forest. " +
+        "At the end the route enters the Carpathian Basin. Once the flight crosses the ranges that ring it, the Great Hungarian Plain lies below: a subsiding basin filled over long ages by the Danube and the Tisza, the ground mostly between 80 and 150 m with almost no relief, the rivers drawing pronounced meanders and strings of oxbow lakes across it. " +
+        "Budapest, the destination, sits on the north-western edge of that plain with the Danube running through it — hills on the west bank, flat ground on the east. From the air the two halves the river makes are entirely different kinds of country.",
+    },
+    travel: {
+      "zh-CN":
+        "广州到布达佩斯约十一到十二小时。匈牙利是欧盟与申根区成员，但货币是福林（HUF）不是欧元，落地后要换钱；签证按国籍不同、以匈牙利驻当地使领馆最新公布为准，行前确认并预留办理时间。" +
+        "布达佩斯机场在城东南约16公里，有机场巴士与直达大巴进城。城市被多瑙河分成两半：西岸的布达是丘陵，城堡山在那里；东岸的佩斯是平地，国会大厦、安德拉什大街与大部分住宿都在这一侧，走路要留意坡度的差别。" +
+        "温泉浴场是本地日常生活的一部分，不只是旅游项目，进去前先看清各家关于淋浴与泳帽的规定。餐厅小费习惯上给一成左右，留意账单里是否已含服务费。5–6月与9–10月气候最舒适；夏季炎热但夜晚的河岸正好，12月最冷、圣诞市集期间市中心很热闹。",
+      "en-US":
+        "Guangzhou to Budapest takes about eleven to twelve hours. Hungary is in the EU and in the Schengen area, but its currency is the forint (HUF) rather than the euro, so you will need to change money on arrival; visa requirements vary by nationality and are as most recently published by the Hungarian embassy or consulate in your country — confirm before travelling and allow time. " +
+        "Budapest's airport is about 16 km south-east of the city, with an airport bus and a direct coach into the centre. The Danube divides the city in two: Buda on the west bank is hills, with Castle Hill among them; Pest on the east is flat, and the Parliament, Andrássy Avenue and most accommodation are on that side — worth keeping the difference in gradient in mind when walking. " +
+        "Thermal baths are part of ordinary local life rather than a tourist item; check each one's rules about showering first and about caps before going in. Tipping in restaurants is usually about ten per cent — check whether service is already on the bill. May–June and September–October are the most comfortable; summers are hot but the embankments come into their own in the evening, and December is coldest, with the Christmas markets making the centre lively.",
+    },
+  },
   "can-hak": {
     // study sources: 全四段（study/travel × 中英）: 雷州半岛「中国大陆最南端的半岛」与本库 terrain 条目一致；琼州海峡宽约 19–30 km，「几十公里」量级相符；五指山等主峰与本库一致。原「海南岛是中国纬度最低的省级陆地」排名口径含糊（按行政区，南海诸岛纬度更低），已改为不带排名。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞海口，是一趟很短的跨海航班，从大陆最南端飞到海南岛。起飞后脚下是珠江三角洲，很快到粤西沿海，海岸线上是大片红树林、盐田和养殖塘。" +
+      "广州飞海口，是一趟很短的跨海航班，从大陆南缘飞到海南岛。起飞后脚下是珠江三角洲，很快到粤西沿海，海岸线上是大片红树林、盐田和养殖塘。" +
       "接着地面收窄成一条伸向西南的半岛，那是雷州半岛——中国大陆最南的一块，地表是玄武岩台地，散布着一些低平的死火山口和火山湖。" +
       "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛纬度低，属热带气候。",
     "en-US":
@@ -1731,11 +1734,11 @@ export const ROUTE_NARRATION: Record<
     travel: {
     "zh-CN":
       "雷克雅未克到埃伊尔斯塔济飞约一小时，同一时区，用市区 RKV 机场。自驾环岛到东部要 8–9 小时，所以飞机很受欢迎。" +
-      "东部是冰岛人口最稀、最“边远”的一角。以埃伊尔斯塔济为基地可翻山去彩虹街的塞济斯菲厄泽、去东部峡湾自驾，北上两小时到黛提瀑布和米湖。" +
+      "东部是冰岛人口最稀疏的地区之一，也是最有“边远”感的一角（按大区人口计，全国最少的是西部的西峡湾）。以埃伊尔斯塔济为基地可翻山去彩虹街的塞济斯菲厄泽、去东部峡湾自驾，北上两小时到黛提瀑布和米湖。" +
       "东部景点车程长、加油站少，随时留意油量。93 号公路冬季多雪多雾。",
     "en-US":
       "Reykjavík to Egilsstaðir is about an hour, in the same time zone, using the city's RKV airport. Driving the Ring Road to the east takes 8–9 hours, so flying is popular." +
-      " The east is the most sparsely populated and 'remote'-feeling corner of Iceland. From Egilsstaðir you can go over the mountains to Seyðisfjörður with its rainbow street, drive the eastern fjords, or head two hours north to Dettifoss and Mývatn." +
+      " The east is among the most sparsely populated and most remote-feeling corners of Iceland (by region, the fewest people live in the Westfjords to the west). From Egilsstaðir you can go over the mountains to Seyðisfjörður with its rainbow street, drive the eastern fjords, or head two hours north to Dettifoss and Mývatn." +
       " Distances between eastern sights are long and petrol stations few — watch the fuel gauge. Route 93 has snow and fog in winter.",
     },
   },
@@ -4612,6 +4615,39 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  "bts-ksc": {
+    // 全四段 sources: 大圆约 302 km（沿航点折线约 335 km），正文写「全程约三百公里」；
+    // 小喀尔巴阡最高点扎鲁比峰 768 m、低塔特拉最高点敦比耶尔峰 2043 m、斯洛伐克矿山最高点斯托利察峰 1476 m
+    // 均与本库地形条目一致。⚠️ 承运人 Wizz Air 已核实、航班号与机型未核实（route.source.status = "flight-unknown"），
+    // 所以两套解说都**不点名航班号与机型**，travel 段只说「有直飞」。2026-09-13 首写。
+    study: {
+    "zh-CN":
+      "布拉迪斯拉发飞科希策，全程约三百公里，是一条自西向东横穿整个斯洛伐克的航线，也是看清这个国家地形骨架最直接的一趟。" +
+      "起飞后脚下先是小喀尔巴阡山——喀尔巴阡山脉的西南收尾，一条细长的森林山带，高程从多瑙河边的一百多米升到最高点扎鲁比峰七百六十八米，坡上的葡萄园与坡下的耕地界线分明。" +
+      "越过这道山带后是多瑙低地北缘的丘陵与河谷，瓦赫河的河谷自西南向东北切开山地，是贯通西北的天然走廊。" +
+      "航程中段进入低塔特拉——瓦赫河与赫龙河之间一条东西向的长脊，最高点敦比耶尔峰海拔两千零四十三米，脊线越过林线之后是连片的高山草甸，北坡的石灰岩里藏着成组的洞穴系统。" +
+      "再往东，地形从一条脊变成一片：斯洛伐克矿山不是山脊而是山群与喀斯特高原的集合，最高点斯托利察峰一千四百七十六米；其中几块顶面平坦、边缘陡立的台地是喀斯特高原，台面上几乎看不到河流，水都在地下。" +
+      "最后飞机沿霍尔纳德河谷下降，降落在科希策——斯洛伐克东部的中心城市，河谷两侧是低山，南郊是与市区面积相当的钢铁厂区。",
+    "en-US":
+      "Bratislava to Košice runs about three hundred kilometres west to east across the whole of Slovakia, and it is the most direct way to read the country's structural skeleton." +
+      " Below the climb-out are the Little Carpathians, the south-western termination of the Carpathian chain: a slender forested band rising from a little over a hundred metres at the Danube to 768 m at Záruby, with vineyards on the lower slopes clearly bounded against the farmland below." +
+      " Beyond that band come the hills and valleys of the northern Danubian Lowland, with the Váh valley cutting north-east through the uplands as the natural corridor through the north-west." +
+      " The middle of the flight crosses the Low Tatras, one long east–west crest between the Váh and the Hron, highest at Ďumbier, 2,043 m; above the treeline the crest carries continuous alpine meadow, while sets of cave systems lie hidden in the limestone of its northern slope." +
+      " Farther east the terrain changes from a line to an area: the Slovak Ore Mountains are not a crest but an assemblage of massifs and karst plateaus, highest at Stolica, 1,476 m, and several of their flat-topped, abruptly edged tablelands are karst plateaus whose surfaces show almost no rivers because the water is all underground." +
+      " The flight finally descends along the Hornád valley into Košice, the principal city of eastern Slovakia, with low hills on both sides of the valley and, on the southern outskirts, a steelworks comparable in area to the city itself.",
+    },
+    travel: {
+    "zh-CN":
+      "布拉迪斯拉发到科希策飞约一小时，同一时区。这条国内航线中断多年后于2025年11月复航，班期以航司公布为准；斯洛伐克境内其余城市之间以铁路与长途大巴为主。" +
+      "布拉迪斯拉发什特凡尼克机场距市区约9公里，有机场大巴与公交进城；科希策国际机场距市中心约6公里。" +
+      "两地同用欧元、同属申根区，境内出行不过边检。科希策是探索斯洛伐克东部的枢纽：往南是斯洛伐克喀斯特的洞穴群，往西是斯洛伐克天堂与塔特拉山，往北是山区的木教堂。",
+    "en-US":
+      "Bratislava to Košice takes about an hour, with no time difference. This domestic route resumed in November 2025 after years without service, and frequencies are whatever the airline publishes; travel between Slovakia's other cities runs mainly on rail and long-distance coaches." +
+      " Bratislava's M. R. Štefánik Airport is about 9 km from the centre, with an airport coach and city buses into town; Košice International Airport is about 6 km from the city centre." +
+      " Both ends use the euro and lie inside the Schengen area, so there are no border checks on the way. Košice is the hub for exploring eastern Slovakia: the caves of the Slovak Karst to the south, Slovak Paradise and the Tatras to the west, and the wooden churches of the mountains to the north.",
+    },
+  },
+
   "zag-puy": {
     study: {
     "zh-CN":
@@ -4650,12 +4686,12 @@ export const ROUTE_NARRATION: Record<
 
 
   "pek-foc": {
-    // study sources: 全四段（study/travel × 中英）: 黄岗山「超过 2100 米、华东最高点之一」与本库 terrain/wuyishan（2160.8 m）一致；福州「中国温泉之都」2010 年国土资源部公告（1 级）。核实 2026-09-11
+    // study sources: 全四段（study/travel × 中英）: 黄岗山「超过 2100 米、华东地区海拔最高的山峰」—— 国家林业和草原局「武夷山国家公园：碧水丹山 生物之窗」原文「海拔2160.8米，是国家公园最高处，也是我国大陆东南第一峰，素有“华东屋脊”之称」、武夷山国家公园管理局「黄岗山」页「整个华东六省一市地区的最高山峰」（均 1 级，2026-09-13 核）；原写「之一」过于保守，三处统一；福州「中国温泉之都」2010 年国土资源部公告（1 级）。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高点之一。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
+      "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高的山峰。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
     "en-US":
-      "Beijing to Fuzhou flies from the North China Plain all the way to the southern foot of the Wuyi Mountains on the south-east coast. Leaving the capital, you are first over the North China Plain — a vast flat lowland built by the silt of the Yellow and Hai rivers, fields and towns merging into one another. Heading south the flight approaches the Yangtze Delta area, a dense web of rivers, paddies and towns and one of China's most developed regions. Farther south-east the ground begins to rise into the Wuyi Mountains, a folded range running north-east to south-west, heavily forested and forming the border between Jiangxi and Fujian; its highest peak, Huanggang Shan, tops 2,100 m, among the highest points in eastern China. Beyond the Wuyi range the plane descends along the Min River into the Fuzhou basin, where the river has built a small alluvial plain around the city, with the airport sited farther out toward the coast at Changle.",
+      "Beijing to Fuzhou flies from the North China Plain all the way to the southern foot of the Wuyi Mountains on the south-east coast. Leaving the capital, you are first over the North China Plain — a vast flat lowland built by the silt of the Yellow and Hai rivers, fields and towns merging into one another. Heading south the flight approaches the Yangtze Delta area, a dense web of rivers, paddies and towns and one of China's most developed regions. Farther south-east the ground begins to rise into the Wuyi Mountains, a folded range running north-east to south-west, heavily forested and forming the border between Jiangxi and Fujian; its highest peak, Huanggang Shan, tops 2,100 m, the highest point in eastern China. Beyond the Wuyi range the plane descends along the Min River into the Fuzhou basin, where the river has built a small alluvial plain around the city, with the airport sited farther out toward the coast at Changle.",
     },
     travel: {
     "zh-CN":
@@ -4819,9 +4855,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "西安到张掖约两个小时。张掖是河西走廊上的历史绿洲城市，张掖丹霞地质公园以红黄相间的层状地貌闻名，被称为“中国七彩丹霞”；大佛寺内有中国现存最大的室内卧佛。当地回族聚居区不少，清真餐馆遍布。张掖属温带大陆性干旱气候，昼夜温差大，即使夏季夜间也需备外套。6–9月是丹霞色彩最鲜明的季节，也是最佳观赏期。",
+      "西安到张掖约两个小时。张掖是河西走廊上的历史绿洲城市，张掖丹霞地质公园以红黄相间的层状地貌闻名，被称为“中国七彩丹霞”；大佛寺内有亚洲最大的室内木胎泥塑卧佛。当地回族聚居区不少，清真餐馆遍布。张掖属温带大陆性干旱气候，昼夜温差大，即使夏季夜间也需备外套。6–9月是丹霞色彩最鲜明的季节，也是最佳观赏期。",
     "en-US":
-      "Xi'an to Zhangye takes about two hours. Zhangye is a historic oasis city on the Hexi Corridor; the Zhangye Danxia Geopark is famous for its banded red-and-yellow landforms, often called China's 'Rainbow Mountains', while the Giant Buddha Temple holds the largest indoor reclining Buddha surviving in China. The city has a significant Hui Muslim community and halal restaurants are common. With a dry, temperate continental climate, day–night temperature swings are large, so pack a layer even for summer nights. June–September is when the Danxia colours are most vivid and the best time to visit.",
+      "Xi'an to Zhangye takes about two hours. Zhangye is a historic oasis city on the Hexi Corridor; the Zhangye Danxia Geopark is famous for its banded red-and-yellow landforms, often called China's 'Rainbow Mountains', while the Giant Buddha Temple holds Asia's largest indoor clay-on-wood reclining Buddha. The city has a significant Hui Muslim community and halal restaurants are common. With a dry, temperate continental climate, day–night temperature swings are large, so pack a layer even for summer nights. June–September is when the Danxia colours are most vivid and the best time to visit.",
     },
   },
 
@@ -4875,12 +4911,12 @@ export const ROUTE_NARRATION: Record<
 
 
   "can-wnz": {
-    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m「华东最高的山峰之一」带限定；雁荡山 2005 年 UNESCO 世界地质公园。核实 2026-09-11
+    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m「华东地区海拔最高的山峰」—— 国家林草局 forestry.gov.cn/c/www/kpgjgy/126263.jhtml「我国大陆东南第一峰，素有“华东屋脊”之称」、wysgjgy.fujian.gov.cn「整个华东六省一市地区的最高山峰」（1 级，2026-09-13 核，原写「之一」，与 terrain/wuyi 统一）；雁荡山 2005 年 UNESCO 世界地质公园。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰之一，也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
+      "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰；武夷山也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
     "en-US":
-      "Guangzhou to Wenzhou runs the length of southern China and the south-east coast to the mouth of the Ou River. The flight leaves the Pearl River Delta and soon crosses the Nanling, the watershed between the Pearl and Yangtze river systems, a low, broken east–west belt of hills. Beyond the Nanling the flight crosses hill country on the Fujian–Jiangxi border before reaching the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m — among the highest points in eastern China and a UNESCO Mixed World Heritage Site. Past the Wuyi range the flight enters the coastal hills of southern Zhejiang, and the land drops toward the mouth of the Ou River, where Wenzhou sits — historically an important birthplace of maritime trade and, more recently, of China's private-sector economy.",
+      "Guangzhou to Wenzhou runs the length of southern China and the south-east coast to the mouth of the Ou River. The flight leaves the Pearl River Delta and soon crosses the Nanling, the watershed between the Pearl and Yangtze river systems, a low, broken east–west belt of hills. Beyond the Nanling the flight crosses hill country on the Fujian–Jiangxi border before reaching the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m — the highest point in eastern China; the Wuyi Mountains are also a UNESCO Mixed World Heritage Site. Past the Wuyi range the flight enters the coastal hills of southern Zhejiang, and the land drops toward the mouth of the Ou River, where Wenzhou sits — historically an important birthplace of maritime trade and, more recently, of China's private-sector economy.",
     },
     travel: {
     "zh-CN":
@@ -4906,13 +4942,13 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "pek-wus": {
+  "pkx-wus": {
     // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m、UNESCO 双遗产、乌龙茶与红茶发源地。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
+      "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开大兴机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
     "en-US":
-      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose signature high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
+      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving Daxing, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose signature high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
     },
     travel: {
     "zh-CN":
@@ -5207,11 +5243,11 @@ export const ROUTE_NARRATION: Record<
     travel: {
     "zh-CN":
       "北京到多伦多约12小时40分钟，由中国国际航空波音777客机执飞。两地时差12-13小时（加拿大东部夏令时期间12小时，标准时期间13小时）。多伦多夏季温暖湿润，冬季寒冷多雪，春秋最适合出行。" +
-      "皮尔逊机场距市中心约25公里，可搭乘UP Express快线约25分钟直达联合车站，也可乘公交或出租车。市内公共交通（TTC地铁、有轨电车、巴士）票制通用，感应式银行卡可直接刷卡乘车。CN塔、安大略湖畔、旧市政厅等地标多可步行或搭轻轨到达。" +
+      "皮尔逊机场距市中心约25公里，可搭乘UP Express快线约半小时直达联合车站，也可乘公交或出租车。市内公共交通（TTC地铁、有轨电车、巴士）票制通用，感应式银行卡可直接刷卡乘车。CN塔、安大略湖畔、旧市政厅等地标多可步行或搭轻轨到达。" +
       "中国公民赴加拿大须提前办妥访客签证（中国护照通常不适用电子旅行授权eTA，需申请正式签证），建议出行前至少1个月申请，具体以加拿大移民、难民及公民部（IRCC）最新公布为准；入境时随身行李与现金如实申报。",
     "en-US":
       "Beijing to Toronto takes about 12 hours 40 minutes on an Air China Boeing 777. The time difference is 12–13 hours (12 hours during Canadian Eastern Daylight Time, 13 hours during Standard Time). Toronto has warm, humid summers and cold, snowy winters, with spring and autumn the best times to visit." +
-      " Pearson Airport is about 25 km from downtown; the UP Express train takes about 25 minutes direct to Union Station, and buses or taxis are also available. Toronto's public transit (TTC subway, streetcars and buses) runs on one shared fare system, and a contactless bank card works directly on board. The CN Tower, the Lake Ontario waterfront and Old City Hall are mostly reachable on foot or by streetcar." +
+      " Pearson Airport is about 25 km from downtown; the UP Express train takes about half an hour direct to Union Station, and buses or taxis are also available. Toronto's public transit (TTC subway, streetcars and buses) runs on one shared fare system, and a contactless bank card works directly on board. The CN Tower, the Lake Ontario waterfront and Old City Hall are mostly reachable on foot or by streetcar." +
       " Chinese citizens need a visitor visa for Canada well in advance — Chinese passports generally don't qualify for the eTA and require a full temporary resident visa — apply at least a month ahead, and check the latest requirements from Immigration, Refugees and Citizenship Canada (IRCC). Declare belongings and cash honestly on arrival.",
     },
   },
@@ -5365,12 +5401,12 @@ export const ROUTE_NARRATION: Record<
   },
 
   "can-syd": {
-    // study sources: 全四段（study/travel × 中英）: 全程约 8200 km（南航公布 8217 km；原写约 9000 km）；阿波山约 2954 m 为菲律宾最高峰；玻璃屋山火山颈约 2500–2700 万年（昆士兰公园局，1 级）。核实 2026-09-11
+    // study sources: 全四段（study/travel × 中英）: 全程约 7500 km（两端机场大圆 7529 km；曾写 9000 km、后一度改 8200 km——8200 是绕经棉兰老/新几内亚的实飞航迹里程，而正文「全程约」读者会拿距离计算器复核，故统一到大圆值。抽样审计 seed=5 命中，2026-09-13）；阿波山约 2954 m 为菲律宾最高峰；玻璃屋山火山颈约 2500–2700 万年（昆士兰公园局，1 级）。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞悉尼，向东南跨过整个西太平洋，全程约八千二百公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
+      "广州飞悉尼，向东南跨过整个西太平洋，全程约七千五百公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
     "en-US":
-      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 8,200 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
+      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 7,500 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
     },
     travel: {
     "zh-CN":

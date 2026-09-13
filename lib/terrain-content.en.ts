@@ -2377,8 +2377,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   ① 过期、② 读作立场表态。现在两个名字并列、都说明在使用。
     //   山脉长约 650 km；迪纳利断层走滑 + 太平洋板块推挤（Yakutat 地体碰撞）驱动抬升；
     //   迪纳利国家公园 1917 年设立、约 2.4 万 km² —— 均核实无误。
+    // seeing sources: 2026-09-13 核（抽样 seed=8）：长度两说 —— Britannica 约 400 mi（650 km）、Wikipedia 约 600 mi（970 km），差异来自西南端点划法，并列两说
     seeing:
-      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (measured by the U.S. Geological Survey in 2015). The peak goes by two current names — Denali, from a local Native language, meaning \"the high one\", and Mount McKinley — and both are in use. Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
+      "The Alaska Range is an arc-shaped range in south-central Alaska, about 650 to 970 km long depending on where its south-western end is drawn, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (measured by the U.S. Geological Survey in 2015). The peak goes by two current names — Denali, from a local Native language, meaning \"the high one\", and Mount McKinley — and both are in use. Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
     formation:
       "The Alaska Range runs along a large strike-slip fault (the Denali Fault) and is the result of the Pacific-side plate pushing north, compressing and displacing crust upward; it is still slowly rising and is seismically active. The rock is mostly sedimentary and granitic, and the upper range is covered by huge valley glaciers — the Kahiltna and others flow tens of kilometres down from around Denali.",
     observation:
@@ -9977,6 +9978,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing / observation / history sources: 上达赫斯坦峰 2995 m，地跨上奥地利、施泰尔马克、萨尔茨堡三州（「三州山」）；
     //   达赫斯坦石灰岩为上三叠统（约 2.35—2.01 亿年前），正文「约 2 亿年前」落在区间内；
     //   哈尔施塔特—达赫斯坦／萨尔茨卡默古特文化景观 1997 年列入 UNESCO。3 级。2026-09-10 核，verdict: ok。
+    // seeing sources: 「三州山」指整个山块，不指主峰；三州交界点在 Torstein（2,947 m）。英文侧原本写的就是 massif、没错，**中文侧单侧错**。**随机抽样审计（seed=1）抽中**。2026-09-12 核。
     seeing:
       "The Dachstein straddles the border between Upper Austria and Styria; its highest peak, Hoher Dachstein, reaches 2,995 m, and because the massif also touches Salzburg it is sometimes called the \"three-state mountain.\"",
     // formation sources: 达赫斯坦冰川群为阿尔卑斯最东端冰川（ANISA 2023，2 级）；「最北」无来源。核实 2026-09-12
@@ -10259,11 +10261,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "mur-river": {
     // concept sources: 上游河段的河漫滩森林为奥地利面积第二大（施泰尔马克 Murauen UNESCO 生物圈公园）；
     //   多瑙鲑（Huchen）作为受威胁物种在该河记录在案。3 级。2026-09-10 核，verdict: ok。
-    // seeing sources: 州内河长无 1–2 级来源，删去具体数。核实 2026-09-12
+    // seeing sources: Unteres Murtal（2019 年 UNESCO 生物圈公园）在下游边境段。随机抽样审计（seed=3）抽中。2026-09-13 核。
     seeing:
       "The Mur rises in the Ankogel Group of the High Tauern, in the Lungau of Salzburg and runs about 453 km in total, much of it through Styria; the city of Graz sits on its banks.",
     formation:
-      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest by area.",
+      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the lower river, along the Slovenian border, preserves Austria's second-largest floodplain forest by area.",
     observation:
       "From the air, the upper Mur winds through mountain gorges, its middle and lower channel widening, with floodplain forest running in a band along the river; Graz's old town, laid out along both banks, is the clearest marker for identifying this river.",
     distinguish:
@@ -10945,7 +10947,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "rubjerg-knude": {
     // 全六段 sources: 灯塔 1900-12-27 首次点亮（1899 年动工）、1968-08-01 停用、2019-10 整体向内陆迁移 70 m —— 三个年份均核实无误。沙丘仍在移动，是会变的量。核实 2026-09-11，未改动
     seeing:
-      "Rubjerg Knude is an active dune on Jutland's North Sea coast; its lighthouse, built in 1900, was relocated intact in 2019 after being progressively buried by the migrating dune.",
+      "Rubjerg Knude is an active dune on Jutland's North Sea coast; its lighthouse, built in 1900, was buried by the advancing dune until it went dark in 1968, then moved bodily inland in 2019 once sea erosion had cut the cliff back to its foundations.",
     formation:
       "The dune was built up by strong North Sea westerly winds carrying beach sand over a long period; since the late 19th century the dune has continued to migrate inland, making this one of the most actively eroding wind-blown dune landforms in Denmark.",
     observation:
@@ -10953,7 +10955,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "Both Rubjerg Knude and Skagen Odde are sandy landforms in northern Jutland, but Rubjerg Knude is a wind-eroded dune migrating inland with pronounced relief, while Skagen Odde is a flat sand spit extending along the coast.",
     concept:
-      "The dune's continued burial of the lighthouse, eventually forcing its relocation, is a classic case for studying the long-term dynamic migration of wind-blown dunes and their impact on human structures.",
+      "The advancing dune buried the lighthouse and put it out of service in 1968, while the 2019 move was forced by a separate process — North Sea erosion cutting the cliff back to the building's foundations — which makes the site a classic case for telling wind-driven dune migration and coastal erosion apart.",
     history:
       "The lighthouse was built in 1900 and taken out of service in 1968 as the dune advanced; in 2019, as coastal erosion brought it dangerously close to the cliff edge, the whole structure was moved about 70 m inland to avoid falling into the sea.",
   },
@@ -12264,7 +12266,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Dong Van Karst Plateau preserves geological evidence of two mass-extinction events, making it an important sample for studying the relationship between the history of life on Earth and long-term karst landscape evolution.",
     history:
-      "The plateau is home to 17 ethnic groups including the Hmong, Lo Lo, and Bo Y, some of whom have lived here for 500 to 800 years, their terraced farming traditions closely interwoven with the karst landscape.",
+      "The plateau is home to 17 ethnic groups including the Hmong, Lo Lo and Bo Y, their terraced farming traditions closely interwoven with the karst landscape.",
   },
   "central-highlands-tay-nguyen": {
     // 全六段 sources: 海拔约 500–1500 m；玄武岩红土；大叻 1893 年由耶尔森发现并经法方开发为避暑地。⚠️ 红线自查：正文只写高原地貌、玄武岩土壤与咖啡种植这类地理—农业事实，**未涉族群构成、移民或土地议题**。核实 2026-09-11，未改动
@@ -13074,12 +13076,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     // seeing sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
     //   **这一条踩线了，已按红线删掉战史归因**：原文写「被**朝鲜战争期间的联合国军**称为 Punchbowl」，现在只保留「俗称 Punchbowl」这个事实本身。2026-09-10 核。
     //   尺寸：南北长约 10 公里、东西宽约 7 公里（韩国民族文化大百科事典，级别 2）—— 原文的「直径约 5 公里」约为实际的一半。
+    //   2026-09-13 抽样审计 seed=5 命中：KIGAM 等资料给的是 7.5×5.5 / 8.5×7 / 11.95×6.6 公里，没有统一口径，正文已改成并列写法。
     //   https://encykorea.aks.ac.kr/Article/E0062645
     //   **成因本轮专门核过：正文写对了** —— 韩国地质资源研究院（KIGAM）明确写明是前寒武纪片麻岩被侏罗纪花岗岩侵入、花岗岩抗风化更弱而被优先侵蚀掏空形成的**差异侵蚀盆地**，**不是陨石坑也不是火山口**（级别 1）。
     //   https://mgeo.kigam.re.kr/geoinfo/mt_geomorph/report/ch_16_0.html
     //   盆地比周边山地低约 400–800 米，正文的「500 至 800 米」在取值范围内、判定不改。
     seeing:
-      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon, roughly 10 km north-south and 7 km east-west; its bowl-like shape has given it the nickname \"Punchbowl\".",
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon, roughly 10 km north-south and 7 km east-west — different Korean sources measure it differently, giving anywhere from 8 to 12 km on the long axis — and its bowl-like shape has given it the nickname \"Punchbowl\".",
     formation:
       "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
     observation:
@@ -15111,7 +15114,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "bromo-tengger-caldera": {
     // seeing sources: 沙海破火山口约 9×10 km（外层大破火山口约 16 km，正文说的是内层），内有五座火山：Bromo 2329 / Batok 2470 / Kursi 2581 / Watangan 2661 / Widodaren 2650 m；公园 1982 年设立。核实 2026-09-11
     seeing:
-      "The Bromo Tengger caldera is an ancient volcanic depression roughly 10 km across, its floor covered by a fine volcanic \"sand sea\"; within it stand five newer cones including Bromo, whose crater continuously vents white sulphurous smoke.",
+      "The Tengger caldera is an ancient volcanic collapse depression about 16 km across at its outer rim; the younger \"sand sea\" caldera nested inside it measures roughly 9 by 10 km and is floored with fine volcanic sand; five newer cones including Bromo stand within the sand sea, and Bromo's crater continuously vents white sulphurous smoke.",
     formation:
       "The Tengger caldera formed when a prehistoric giant volcano erupted catastrophically and its summit collapsed; several secondary cones, including Bromo and Batok, subsequently grew inside the caldera floor, producing a layered \"cone-within-caldera\" structure.",
     observation:
@@ -15279,8 +15282,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Nusa Penida is an island off the southeast coast of Bali; a well-known landmark, Kelingking Cliff on the southwest shore, rises about 150 m above sea level and is widely recognised for its dinosaur-like silhouette.",
     formation:
       "Kelingking Cliff is composed of limestone from an ancient coral reef uplifted above sea level over millions of years; sustained wave erosion has gradually undercut the base of the cliff, shaping its current steep profile and the narrow beach below.",
+    // observation sources: 80 m 仅见于四级来源且各源互相矛盾（80/200/300 m），已去掉具体数。随机抽样审计（seed=3）判为 unknown。2026-09-13 核。
     observation:
-      "From the air, Kelingking Cliff shows a layered limestone rock face, its top vegetated and its base fronted by a narrow beach roughly 80 m long; similar uplifted coral-reef cliff landforms occur at several points along Nusa Penida's coastline.",
+      "From the air, Kelingking Cliff shows a layered limestone rock face, its top vegetated and its base fronted by a short, narrow beach; similar uplifted coral-reef cliff landforms occur at several points along Nusa Penida's coastline.",
     distinguish:
       "Both Nusa Penida and the Uluwatu Cliffs are made of uplifted coral-reef limestone, but Nusa Penida is a separate island east of Bali, while Uluwatu forms part of the Bukit Peninsula attached to mainland Bali.",
     concept:
@@ -17119,7 +17123,1406 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The castle was founded in the 13th century and passed through several noble families including the Vítkovci and the Rosenbergs; the historic town center was inscribed as a UNESCO World Heritage Site in 1992, and it remains one of the best-preserved small medieval towns in Central Europe.",
   },
+  // ============================================================
+  // Europe / Hungary
+  // ============================================================
+  matra: {
+    seeing:
+      "The Mátra lies in the belt of middle mountains across northern Hungary, a range left behind by Miocene volcanism. Its summit, Kékes, reaches 1,014 m — the highest point in the whole country, and the only place in this largely lowland state that passes 1,000 m.",
+    formation:
+      "The range was built by Miocene volcanic activity and consists mainly of andesite, rhyolite and volcanic breccia. Once the eruptions ceased, erosion stripped away the upper part of the cones, so what stands today is the inside and the root of a volcanic edifice rather than its original conical shape.",
+    observation:
+      "From the air the Mátra is an isolated forested rise along the northern edge of the Great Plain, dropping quickly southward to the flatland, with the belt of vineyards at its foot clearly set off from the ploughed fields beyond. The television tower on Kékes is the easiest landmark to pick out.",
+    distinguish:
+      "The Mátra and the Bükk to the east both belong to the northern Hungarian middle mountains, but they are made of entirely different rock: the Mátra is volcanic, with rounded forms and streams radiating outward from the centre, while the Bükk is mostly limestone, its summit an uplifted plateau pitted with sinkholes and caves.",
+    concept:
+      "The Mátra shows that a country's highest point need not lie in a mountain range. More than seventy per cent of Hungary is plain below 200 m, and its high point comes not from a folded range but from what erosion left of a volcano on the rim of the basin.",
+    history:
+      "The country around Gyöngyös at the southern foot has been wine country since the Middle Ages, the soils weathered from volcanic rock being the natural basis for it; from the twentieth century these hills, within easy reach of Budapest, became a regular destination for walking and winter sports.",
+  },
+  bukk: {
+    // seeing sources: Istállós-kő 精确为 958.1 m；2014 年测量结果尚无官方正式更新公告，正文留余地。2026-09-13 核。
+    seeing:
+      "The Bükk lies in north-eastern Hungary, a range built mainly of Triassic limestone, its highest point being the southern summit of Kettős-bérc (now called Szilvási-kő) at about 961 m — established by a GPS survey in 2014, which put Istállós-kő at 958 m, long taken for the summit, into third place (most geographical sources have adopted the new reading, though no formal update from the national park authority has been found). Its top is not a peak but a gently rolling upland surface — the Bükk plateau.",
+    formation:
+      "The limestone was laid down in a Triassic sea, later uplifted, and then dissolved over long periods into shafts, sinkholes, dry valleys and caves. There is almost no surface drainage on the range: rainfall sinks into the fissures and re-emerges only at karst springs around the foot.",
+    observation:
+      "From the air the top of the Bükk is a flat, forested upland with hardly a watercourse to be seen, its edges cut by deep valleys. The vineyards around Eger on the southern foot stand out sharply against the forest of the range itself.",
+    distinguish:
+      "The Bükk and the Mátra to the west both belong to the northern Hungarian middle mountains, but the Bükk is limestone, with a continuous plateau top and no surface water, while the Mátra is volcanic, rounded, with radiating drainage. Side by side they make a ready-made lesson in how rock type shapes a range.",
+    concept:
+      "The Bükk is a plain illustration of why a limestone range shows no rivers: sparse surface drainage does not mean little rain, it means the water has gone underground. To tell whether a range is karst, look for sinkholes, dry valleys and big springs at the foot — more useful than looking at altitude.",
+    history:
+      "Caves in the range have yielded Palaeolithic remains and are among Hungary's important prehistoric sites; Szeleta Cave even gave its name to an archaeological culture. The Bükk National Park was established here in 1977.",
+  },
+  borzsony: {
+    seeing:
+      "The Börzsöny rises on the northern bank of the Danube Bend, an eroded Miocene volcanic massif whose highest point, Csóványos, reaches 938 m.",
+    formation:
+      "The range consists of andesite and volcanic breccia. It originally belonged to the same volcanic system as the Visegrád Hills on the southern bank, and the Danube later cut the two apart. After the eruptions stopped, the upper part of the cone was stripped away, so today's shape is what remains of the inside of the edifice.",
+    observation:
+      "From the air the Börzsöny is a nearly circular forested swell with a ring of higher ground discernible at its centre — the position of the former crater; its southern edge drops abruptly into the Danube Bend.",
+    distinguish:
+      "The Börzsöny faces the Pilis across the Danube, yet the rock is the opposite: volcanic on one side, Triassic dolomite and limestone on the other. Put together, the two make a ready-made section for understanding that the two banks of one river can be entirely different geological units.",
+    concept:
+      "An eroded volcano is easier to recognise from the air than on the ground: the form is rounded rather than sharp, the streams radiate outward from the centre, and a ring of higher ground often survives at the middle. Taken together those three tell you more about a mountain's origin than its height does.",
+    history:
+      "Traces of medieval mining and charcoal burning survive in the range; today the area lies within the Duna–Ipoly National Park and is one of the walking areas within easy reach of Budapest.",
+  },
+  pilis: {
+    seeing:
+      "The Pilis stands on the southern bank of the Danube Bend, the north-eastern end of the Transdanubian range, built mainly of Triassic dolomite and limestone, with Pilis-tető at 756 m its highest point.",
+    formation:
+      "The carbonate rock was deposited in the Triassic and later shaped into today's massif by uplift and block faulting. Dolomite resists dissolution less well than limestone, and weathers into steep walls and wide aprons of scree.",
+    observation:
+      "From the air the pale grey walls of the Pilis show through the forest in broad patches, in contrast to the dark volcanic bulk of the Börzsöny to the north; the Danube runs between them and turns sharply from east to south here.",
+    distinguish:
+      "The Pilis and the Börzsöny face each other across the river at similar heights but with completely different origins: the Pilis is marine carbonate rock uplifted, the Börzsöny a volcano built up and then planed down. Colour is the quickest tell — pale on one side, dark on the other.",
+    concept:
+      "The sharp bend of the Danube here is generally attributed to structure and to the distribution of the volcanic blocks; several explanations coexist and none is settled. The bend itself makes one point clearly, though: the course of a great river is not set by relief alone — rock type and structure underneath are working on it too.",
+    // history sources: 维谢格拉德山属北匈牙利中山，皮利什山属外多瑙中山，两者相邻但不同系；民间混称不准确。2026-09-12 核。
+    history:
+      "These hills were royal hunting forest from the Middle Ages, and the fourteenth-century palace of Visegrád stands beside the Danube on the Visegrád Hills immediately to the north — an adjoining range that belongs to a different system and is often conflated with the Pilis. The range lies within the Duna–Ipoly National Park today.",
+  },
+  bakony: {
+    seeing:
+      "The Bakony lies across the country north-west of Lake Balaton, the largest section of the Transdanubian range, built mainly of Mesozoic limestone and dolomite, with Kőris-hegy at 709 m its highest point.",
+    formation:
+      "The range consists of Mesozoic carbonate rock raised by block faulting. Its south-eastern edge carries something entirely different laid over the top: Pliocene basalt volcanism left a set of isolated flat-topped hills and volcanic necks along the northern shore of Lake Balaton, of which the Tihany peninsula is the most concentrated.",
+    observation:
+      "From the air the Bakony is a gently rolling upland almost entirely under forest; what catches the eye is the string of isolated flat-topped hills along its south-eastern edge on the northern shore of Balaton — they stand abruptly out of the flat ground by the lake, square in outline and darker than their surroundings.",
+    distinguish:
+      "The Bakony and the Bükk to the north-east are both carbonate ranges, but the Bakony has no continuous plateau surface at the top and is a good deal lower, and its edge carries a phase of basalt volcanism that the Bükk does not have at all.",
+    concept:
+      "The flat-topped hills on the northern shore of Balaton are residual hills protected by a lava cap: basalt resists erosion better than the soft sediment beneath it, so once the surroundings were stripped away, the parts wearing a basalt hat were left standing. Flat top plus steep sides is the clearest sign of this kind of hill.",
+    history:
+      "Forestry and quarrying were the mainstays of the range historically; the Balaton Uplands National Park was established in 1997, bringing the basalt volcanic forms along the south-eastern edge of the Bakony and the wetlands of the northern Balaton shore under one protection.",
+  },
+  mecsek: {
+    seeing:
+      "The Mecsek rises in south-western Hungary from the edge of the Great Plain, an isolated massif whose highest point, Zengő, reaches 682 m. No other range stands near it; it is a single swell on the plain.",
+    formation:
+      "The range is built mainly of Mesozoic limestone and Permian to Triassic sandstone, an isolated fault block raised by tectonic movement; its northern side also carries Jurassic coal measures, worked as one of Hungary's coalfields since the nineteenth century.",
+    observation:
+      "From the air the Mecsek is an isolated forested rise on the plain, its southern slope looking straight down on the built-up area of Pécs. The difference between its northern and southern flanks shows even from above: the south is drier and more open, the north more densely wooded.",
+    // distinguish sources: 准确用词为「亚地中海型 / 次地中海型」；匈牙利不在真正的地中海气候区内。2026-09-12 核。
+    distinguish:
+      "The Mecsek and the Bakony are both largely carbonate, but the Mecsek is entirely ringed by plain with no range adjoining it, and its climate is markedly warmer — it carries the northernmost sub-Mediterranean flora in Hungary.",
+    concept:
+      "The contrast between the two flanks of an isolated range is a plain illustration of how relief makes local climate: on the same hill the sunlit southern slope takes more heat and loses more water, and its vegetation can differ completely from the shaded north — across a distance of only a few kilometres.",
+    history:
+      "Pécs at the southern foot has been settled since Roman times, and the early Christian necropolis in the city was inscribed on the UNESCO World Heritage list in 2000; coal mining in the range was one of the mainstays of the local economy through the twentieth century.",
+  },
+  zemplen: {
+    seeing:
+      "The Zemplén Mountains lie in the north-eastern corner of Hungary, a range left by Miocene volcanism and built of rhyolite, andesite and tuff. Its highest point, Nagy-Milic, reaches 894 m and stands where Hungary and Slovakia meet.",
+    formation:
+      "Miocene eruptions piled up thick tuff and lava here, which long erosion then carved into today's rolling range. Tuff is soft and easily cut, and the southern foot is accordingly honeycombed with cellars dug into the hillsides.",
+    observation:
+      "From the air the Zemplén is a continuous forested range whose southern edge drops abruptly to the plain of the Tisza and the Bodrog. The vineyards around Tokaj at its foot run up the south-facing slopes, set off clearly against the forest above.",
+    distinguish:
+      "The Zemplén and the Mátra are both Miocene volcanic ranges, but the Zemplén's products are mainly acidic — rhyolite and tuff — and its relief is lower and gentler, while the Mátra is mainly andesite and rises to the highest point in Hungary.",
+    concept:
+      "Volcanic tuff is a good example of how rock type decides land use: it holds water, it breathes, and it is easy to cut — which both produced soils suited to the vine and made it possible to drive cellars hundreds of metres into a hillside.",
+    history:
+      "The Tokaj Wine Region Historic Cultural Landscape at the southern foot was inscribed on the UNESCO World Heritage list in 2002; the local tradition of making botrytised sweet wine goes back several centuries.",
+  },
+  alfold: {
+    seeing:
+      "The Great Hungarian Plain is the sedimentary lowland of the south-eastern Carpathian Basin and covers more than half of Hungary. The ground lies broadly between 80 and 150 m, and you can cross it end to end with less than a few tens of metres of relief.",
+    formation:
+      "This was a steadily subsiding basin. Through the Quaternary the Danube, the Tisza and their tributaries carried in the debris stripped from the surrounding uplands and filled the space that subsidence kept opening — the flat ground seen today is the result of subsidence and infilling roughly cancelling out over a long time.",
+    observation:
+      "From the air the plain is one continuous sheet of farmland with no break in the skyline, the rivers drawing out pronounced meanders and strings of oxbow lakes; the belt between the Danube and the Tisza shows pale patches of sand country, while the east is wide open grassland.",
+    distinguish:
+      "Hungary has two plains: the Great Plain in the south-east, much the larger, and the Little Plain in the north-west, hemmed in by uplands and only a fraction of the size. Both were filled by rivers within the same basin; what differs is where the subsidence was centred.",
+    concept:
+      "The Great Plain is a plain illustration of why a basin ends up flat. It is not flat because nothing ever happened to it, but because **subsidence and infilling were racing each other** — while the ground sank, the rivers filled it in, and when the two rates match the surface stays close to level.",
+    history:
+      "The great river regulation and embankment works of the nineteenth century changed the hydrology of this plain: wetlands that had flooded every year largely became arable, channels were straightened, and strings of oxbow lakes were left behind beyond the new levees.",
+  },
+  kisalfold: {
+    seeing:
+      "The Little Hungarian Plain lies in the north-western corner of the country, the part of the Carpathian Basin filled in at that end. Hemmed in by uplands on three sides, it is far smaller than the Great Plain to the south-east, and Győr is its central town.",
+    formation:
+      "The plain was filled by the alluvium of the Danube, the Rába and other rivers. Where the Danube enters it the gradient falls away sharply, the current slows, sediment comes down in quantity, and the channel splits into many branches that enclose islands between the main stream and its arms — the tract known as the 'island country'.",
+    observation:
+      "From the air the clearest thing about the Little Plain is the stretch where the Danube spreads into several interwoven channels and the long narrow islands they enclose; the rest is orderly farmland, sharply bounded by the forest of the surrounding hills.",
+    distinguish:
+      "The Little Plain and the Great Plain were both filled by rivers within the same basin, but the Little Plain is confined by uplands and limited in extent, with the anabranching island landscape much better developed; the Great Plain is defined instead by its broad meander belts and oxbow lakes.",
+    concept:
+      "When a river leaves a mountain gap for a plain the gradient collapses, the load it can no longer carry is dropped on the spot, and the channel divides. That is the basic mechanism behind braided and anabranching channels: a large river suddenly splitting into many strands usually means it has just left the hills.",
+    history:
+      "The plain has been a thoroughfare of the middle Danube since antiquity; the wetlands and grasslands at its north-western end lie within the Fertő–Hanság National Park today.",
+  },
+  hortobagy: {
+    seeing:
+      "Hortobágy lies in the eastern part of the Great Hungarian Plain, an open grassland with scarcely a tree — the puszta. It is among the largest continuous natural grasslands in Central Europe, flat enough that the horizon itself is the view.",
+    formation:
+      "The grassland sits on the former floodplain of the Tisza. The soils are notably alkaline and the water table is shallow, both of which hold back trees; the river works of the nineteenth century cut off the regular flooding and fixed the area still further as open grassland.",
+    observation:
+      "From the air Hortobágy is a continuous sweep of grass with no hedgerows and no clustered villages, only scattered pastoral buildings and dead-straight roads; in spring and autumn shallow seasonal pools spread across it, and the area is a concentrated stopover on migration routes.",
+    distinguish:
+      "Hortobágy and Kiskunság to the west are both open landscapes of the Great Plain, but they came about differently: Hortobágy is alkaline grassland on a river floodplain and is flat, while Kiskunság is wind-blown sand country between the Danube and the Tisza, with dunes and hollows.",
+    concept:
+      "The absence of trees does not have to mean drought. Rainfall at Hortobágy is not particularly low; what limits trees is soil alkalinity and a shallow water table. To understand why a grassland is a grassland, look at soil and hydrology — rainfall alone will not tell you.",
+    history:
+      "The area carries a grazing tradition several centuries old, and local breeds such as the grey cattle and the racka sheep, together with the herding culture, are part of the landscape; it became Hungary's first national park in 1973 and was inscribed on the UNESCO World Heritage list as a cultural landscape in 1999.",
+  },
+  kiskunsag: {
+    seeing:
+      "Kiskunság lies between the Danube and the Tisza, a tract of sand country on the Great Plain. The ground is not level: low dunes run in ranks with hollows between them, and in the hollows lie seasonal alkaline lakes and alkali grassland.",
+    formation:
+      "The sand came from Pleistocene Danube alluvium, later reworked by the wind into dunes whose alignment broadly follows the prevailing wind. The hollows were scoured down close to the water table; water standing in them evaporates and concentrates, producing shallow alkaline lakes and alkali soils.",
+    observation:
+      "From the air Kiskunság is a belt of alternating pale sand and darker hollows, the dunes showing as banded texture all running the same way; in summer many of the alkaline lakes dry out and leave white patches of salt crust.",
+    distinguish:
+      "Kiskunság and Hortobágy are both open landscapes of the Great Plain, but Kiskunság's surface was shaped by wind and rises into dunes, while Hortobágy is flat alkaline grassland on a river floodplain. The banded dunes aligned in one direction tell the two apart at a glance.",
+    concept:
+      "Inland alkaline lakes are water bodies with no outlet: water leaves only by evaporation and the dissolved salts stay behind and accumulate. Both the area and the salinity of such lakes swing widely with the seasons, so a range describes them more honestly than a single figure.",
+    history:
+      "Grazing and scattered cultivation were the mainstays here, the sand limiting large-scale farming; the Kiskunság National Park was established in 1975, bringing the dunes, the alkaline lakes and the alkali grassland under one protection.",
+  },
+  "danube-bend": {
+    seeing:
+      "The Danube Bend is the reach where the Danube, having run west to east across northern Hungary, meets the uplands between the Börzsöny and the Visegrád–Pilis massif and turns abruptly south, holding that course through the rest of the country.",
+    formation:
+      "The valley is cut deeply into the uplands on either side: volcanic rock of the Börzsöny on the north bank, volcanic rock of the Visegrád Hills and carbonate rock of the Pilis on the south. The sharp turn is generally attributed to structure and to the distribution of the volcanic blocks; several explanations coexist and none is settled.",
+    observation:
+      "From the air the Danube is squeezed here into a visibly narrowed, deep valley between the two massifs and then draws an almost right-angled bend; the castle hill of Visegrád stands on the inside of the bend and is the easiest landmark along this reach.",
+    distinguish:
+      "The Danube Bend and the Wachau valley upstream in Austria are both reaches where the Danube cuts into upland, but the Wachau is a long valley following the river, whereas the defining feature of the Bend is **the abrupt change of direction** — the river swaps its heading within a few kilometres.",
+    concept:
+      "The course of a great river is not set by relief alone. Here the Danube gives up an open passage eastward and cuts through upland instead, which shows structure and rock type working on it underneath — cases like this are normally discussed between an antecedent river and structural control.",
+    history:
+      "Both banks of the bend were a route and a defensive position from Roman times; the palace of Visegrád on the southern bank was one of the seats of the Hungarian court in the fourteenth century. The area lies within the Duna–Ipoly National Park today.",
+  },
+  "lake-balaton": {
+    seeing:
+      "Lake Balaton in western Hungary is the largest lake in Central Europe, about 594 km² of water and some 77 km long from north-east to south-west. What sets it apart is how **shallow** it is: about 3 m on average, so one can wade a long way out from the shore.",
+    formation:
+      "The basin is of tectonic origin: a block of crust subsided into a hollow which then filled with water. The northern shore runs hard against the Bakony and the Balaton Uplands, where flat-topped remnants of Pliocene basalt volcanism are scattered; the Tihany peninsula reaches out from that shore and pinches the lake into two visibly distinct halves.",
+    observation:
+      "From the air Balaton is a long pale band of water with the Tihany peninsula reaching out at the middle almost far enough to cut it in two; the northern shore hugs the hills with a steep, indented shoreline, while the southern is a gentle sandy shelf — the difference is obvious from above.",
+    distinguish:
+      "Balaton resembles the glacial lakes of the Alps in shape but not at all in origin: a glacial lake was gouged out by ice and tends to be deep and narrow, while Balaton is water standing in a subsided basin, large in area and extremely shallow — which is also why it warms so quickly in summer.",
+    concept:
+      "Large area and large volume are two different things. Balaton covers nearly six hundred square kilometres but averages only about three metres, so it holds far less water than a deep lake of the same extent. Shallow lakes warm and cool fast and their level responds quickly to rainfall and regulation, so a figure for such a lake means little without a date attached.",
+    history:
+      "Vines have been grown around the lake since Roman times; after the railway reached the shore in the nineteenth century the southern side grew into a continuous resort belt. The Balaton Uplands National Park, established in 1997, protects the basalt volcanic forms and wetlands of the northern shore.",
+  },
+  "tisza-river": {
+    seeing:
+      "The Tisza is the longest tributary of the Danube. It enters Hungary from the north-east, runs diagonally across the whole of the Great Plain and leaves in the south. Within Hungary it flows almost entirely on the plain with very little fall, and is known for the extreme sinuosity of its course.",
+    formation:
+      "On ground this close to level the river cannot cut down, only swing sideways, and it develops continuous meanders. Each meander tightens until its neck is cut through, and the abandoned loop fills with water as an oxbow — which is where the strings of curved water bodies on the Great Plain come from.",
+    observation:
+      "From the air the modern channel of the Tisza runs relatively straight after the engineering of the nineteenth century, while curved bodies of water and curved belts of trees no longer connected to it lie scattered on both sides — abandoned old channels. The two generations of river form overlaid on each other are the easiest pattern to recognise along this reach.",
+    distinguish:
+      "The Tisza and the Danube both cross this plain, but the Danube carries far more water and has a much wider channel, while the Tisza's distinction is how typically its meanders are developed — to tell which river an aerial view shows, the combination of width and sinuosity is a better guide than the compass direction.",
+    concept:
+      "Meanders and oxbows are the direct consequence of a river having no room to cut down on a plain. Straightening a channel shortens it, steepens its gradient and speeds the flow; that helps with flood discharge but also changes the river's established pattern of deposition and its ecology — the Tisza offers nearly two centuries of worked example.",
+    history:
+      "The river regulation begun in the nineteenth century was among the largest civil engineering undertakings in modern Hungary, greatly shortening the freely meandering course and turning flooded wetland into arable; strings of oxbow lakes and remnant gallery forest survive along both sides to this day.",
+  },
+  "visegrad-hills": {
+    seeing:
+      "The Visegrád Hills rise on the southern bank of the Danube Bend, a Miocene andesite massif whose highest point, Dobogó-kő, reaches about 700 m. They are often conflated with the Pilis to the west, though the two belong to different ranges and are made of different rock.",
+    formation:
+      "The massif originally belonged to the same volcanic system as the Börzsöny on the northern bank, and the Danube cut between them. Once the eruptions stopped the cone was stripped away, so today's form is what remains of the inside of the edifice; the northern edge drops straight into the Danube Bend, the steepest bank along that reach.",
+    observation:
+      "From the air the Visegrád Hills and the Börzsöny across the river share the same colour and texture — both dark volcanic bulk — while the Pilis to the west shows broad patches of pale grey rock. **Colour separates the three better than position does.**",
+    distinguish:
+      "The Visegrád Hills and the Börzsöny are one volcanic system cut in two by a river and so resemble each other most closely; the Pilis is merely adjacent, differing in rock and in the range it belongs to. Treating the Visegrád Hills as part of the Pilis is a common but inaccurate usage.",
+    concept:
+      "A river cutting a volcanic system in two leaves rock of the same kind on both banks — the most direct evidence that the two were once one. By contrast, two adjoining ranges built of different rock usually have different origins.",
+    history:
+      "The castle above and the royal palace beside the Danube below were among the seats of the Hungarian court in the fourteenth century; the area lies within the Duna–Ipoly National Park today.",
+  },
+  vertes: {
+    // seeing sources: 以三叠纪白云岩为主。匈牙利地形第 3 批当批核实查出。2026-09-13 核。
+    seeing:
+      "The Vértes lies between the Bakony and the Gerecse, a range in the middle of the Transdanubian system built mainly of Triassic dolomite with some limestone, with Nagy-Csákány at 487 m its highest point — middling by Hungarian standards, low on a European scale.",
+    formation:
+      "The range is Mesozoic carbonate rock raised in blocks. Its western side drops abruptly along a fault to the Mór trench beyond; the asymmetry of a block range — steep on one side, gentle on the other — is unusually clear here.",
+    observation:
+      "From the air the Vértes is a low forested upland with a scarp along its western edge so straight it hardly looks natural — that is the fault, with the Bakony facing it across the trench.",
+    distinguish:
+      "The Vértes, the neighbouring Bakony and the Gerecse are all carbonate blocks of the Transdanubian system, but the Bakony is the largest and carries basalt volcanism along its edge, the Gerecse is known for its red limestone, and the mark of the Vértes is that straight fault scarp on its western side.",
+    concept:
+      "A straight valley between two ranges is usually not the work of a river but of a subsided fault zone. The shape tells them apart: a river valley bends with the ground and varies in width, a rift valley runs straight with matching scarps on both sides.",
+    history:
+      "Forestry and quarrying were the mainstays here and medieval quarry workings survive; most of the range lies within the Vértes landscape protection area.",
+  },
+  gerecse: {
+    seeing:
+      "The Gerecse is the eastern section of the Transdanubian range, reaching the Danube along its northern edge, with Nagy-Gerecse at 634 m its highest point. It is known for a red limestone long used as a decorative building stone.",
+    formation:
+      "The range is Mesozoic limestone raised in blocks; among its beds an iron-stained red limestone was the one most sought in quarrying. The northern slope falls away towards the Danube, which has cut a distinct shoulder along its foot.",
+    observation:
+      "From the air the Gerecse is a gently rolling forested upland on the southern bank of the Danube, with quarries scattered through it — pale or reddish rectangles that stand out sharply against continuous forest.",
+    distinguish:
+      "The Gerecse and the Vértes to the west are both carbonate blocks of the Transdanubian system at similar heights; the difference is that the Gerecse fronts the Danube and is known for red limestone quarrying, while the Vértes is marked by the straight fault scarp on its western side.",
+    concept:
+      "The colour of limestone comes from its impurities: iron-bearing beds are red, organic-rich ones grey to black, the purest nearly white. Beds within a single range can differ widely in colour, and that is what quarrying selects on.",
+    // history sources: 罗马时期开采为推测，确证最早为阿尔帕德王朝。2026-09-13 核。
+    history:
+      "Quarrying of the red limestone here is documented from the Árpád period (roughly the eleventh to thirteenth centuries); whether it was already worked in Roman times is not settled. From the Middle Ages the stone was widely used for architectural decoration; the range today is mostly woodland and protected landscape.",
+  },
+  "koszeg-mountains": {
+    seeing:
+      "The Kőszeg Mountains stand on Hungary's western edge, the point where the eastern outliers of the Alps reach into the Carpathian Basin. The highest point, Írott-kő, reaches 882 m where Hungary and Austria meet, and is also the highest point of Hungarian Transdanubia.",
+    formation:
+      "Unlike Hungary's other ranges, the Kőszeg is built of metamorphic rock — schist and phyllite — rock buried deep and reworked during the building of the Alps. Its rock type sets it apart cleanly from the limestone and volcanic ranges to the east.",
+    observation:
+      "From the air the Kőszeg is a low forested range, rounded in form with no bare crags; it drops abruptly to the plain on its eastern side, marking where the uplands of western Hungary end.",
+    distinguish:
+      "The Kőszeg has a different origin from every other range in the Hungarian middle mountains: the Mátra and Börzsöny are volcanic, the Bakony and Bükk carbonate, the Kőszeg metamorphic — it belongs to the eastern end of the Alpine system, not to the ranges within the basin.",
+    concept:
+      "The bright cleavage surfaces typical of schist and phyllite come from mica realigned under directed pressure. If a rock splits readily along planes and the broken face has a silky sheen, it has generally been through fairly deep metamorphism.",
+    history:
+      "The town of Kőszeg at the foot is a well-preserved medieval settlement; the range today is a protected landscape and forms part of a cross-border conservation area with the adjoining region.",
+  },
+  "aggtelek-karst": {
+    seeing:
+      "The Aggtelek Karst lies in the north-eastern corner of Hungary, a Triassic limestone karst plateau. What shows on the surface is gently rolling woodland and sinkholes; the substance of it is underground — a large cave system, of which the Baradla cave is the most visited.",
+    formation:
+      "Once the limestone was uplifted, rain carrying carbon dioxide worked down the fissures and dissolved passage after passage underground. Surface drainage is accordingly sparse, rivers often vanishing into sinkholes on the way and re-emerging at springs some distance off. Stalactites and stalagmites in the caves are that same calcium carbonate precipitated again.",
+    observation:
+      "From the air the plateau shows scarcely any organised surface drainage; instead there are round and oval hollows — sinkholes — scattered through the woodland, and deep valleys cut into the edges where the underground drainage finally comes out.",
+    distinguish:
+      "The Aggtelek Karst and the Bükk are both limestone ranges in Hungary, but the Bükk is chiefly an uplifted plateau surface with karst forms at the surface; the value of Aggtelek lies mainly underground — the extent and preservation of its cave system is why it stands as an entry of its own.",
+    concept:
+      "Karst is the landscape of rock being dissolved by water: the test is not altitude or slope but whether sinkholes, dry valleys, underground streams and large springs occur together. Where they do, there is usually a cave system below.",
+    history:
+      "The Baradla cave has been systematically explored since the eighteenth century and open to visitors since the nineteenth; in 1995 this karst and the adjoining Slovak Karst were together inscribed on the UNESCO World Heritage list for their caves.",
+  },
+  "balaton-witness-hills": {
+    seeing:
+      "A set of isolated flat-topped hills stands along the northern shore of Lake Balaton, rising abruptly out of flat ground by the water, square in outline. Badacsony (437 m), Szent György-hegy and Somló are the most conspicuous; locally they are called witness hills.",
+    formation:
+      "Pliocene basalt volcanism left sheets of lava and the conduits that fed them. Basalt resists erosion better than the soft sediment beneath it, so when the surrounding ground was stripped away the blocks still wearing a basalt cap were left — they 'witness' where the old land surface stood, hence the name.",
+    observation:
+      "From the air they are unmistakable: **flat top, steep sides, square outline**, and darker than their surroundings; columnar jointing from cooling lava often shows in ranks along the slopes, with vineyards spreading over the gentler ground at the foot.",
+    distinguish:
+      "A witness hill is the inverse of a true volcanic cone: a cone is pointed with gentle slopes, a witness hill flat-topped with steep ones. One was built up, the other is what remained once the surroundings were removed — **whether the top is pointed or flat tells them apart faster than the rock does**.",
+    concept:
+      "The witness hill is one of the most direct ideas in geomorphology: if hard rock caps one patch of ground and not its surroundings, erosion lowers everything else and leaves that patch standing. The height of its top is roughly the height of the whole land surface before erosion began — a geological ruler you can read off the landscape.",
+    history:
+      "Basalt from these hills has been quarried since Roman times, while soils weathered from volcanic rock support the vineyards of the northern Balaton shore; the Balaton Uplands National Park, established in 1997, brought them under protection.",
+  },
+  "tihany-peninsula": {
+    // seeing sources: 20 m 与 25 m 两说并存，写区间。2026-09-13 核。
+    seeing:
+      "The Tihany peninsula reaches from the northern shore into Lake Balaton, almost pinching the lake in two. It is volcanic ground throughout: the Inner Lake on the peninsula sits in a crater, its surface some 20 to 25 m above Balaton, sources differing.",
+    formation:
+      "The peninsula is built of Pliocene tuff and basalt. After the volcanism ended, hot water rising along fissures precipitated minerals at the surface and built cone-shaped geyser mounds — they stand scattered over the grassy slopes and are a landform peculiar to this place.",
+    observation:
+      "From the air Tihany is a dark rise at the middle of Balaton that narrows the broad lake to a strait; the two round lakes on top — the Inner and Outer — are the easiest markers, the circular outline of the Inner clearly that of a crater.",
+    distinguish:
+      "Tihany and the flat-topped witness hills along the northern shore belong to the same phase of basalt volcanism but differ in form: the witness hills are lava caps left by erosion, while Tihany preserves more of the volcanic structure — crater, tuff beds and geyser mounds are all still there.",
+    concept:
+      "A geyser mound is hot water bringing dissolved minerals up and unloading them at the surface: as soon as the water reaches the air it cools and depressurises, calcium carbonate and the like come out of solution, and over time a cone builds up. Their presence shows that sustained hot-water activity once went on here.",
+    history:
+      "The Benedictine abbey on the peninsula was founded in the eleventh century, and the Hungarian place names embedded in its Latin foundation charter are among the earliest written records of the Hungarian language; in 1952 this became Hungary's first protected landscape area.",
+  },
+  "lake-ferto": {
+    seeing:
+      "Lake Fertő lies in Hungary's north-western corner where Hungary and Austria meet, most of its surface on the Austrian side. It is the westernmost of the inland alkaline shallow lakes of the Eurasian steppe belt — shallow enough that an adult can stand over most of it.",
+    formation:
+      "The basin is a shallow tectonic depression with no stable outlet; water leaves only by evaporation, so dissolved salts accumulate and the water turns alkaline. The level swings widely with rainfall and evaporation, and the lake has several times come close to drying out and filled again.",
+    observation:
+      "From the air what stands out is not the water but **the extraordinarily broad belt of reeds around it** — dark reed enclosing pale open water, often several kilometres of it between the shore and the open lake. Alkali grassland and small salt pans surround the whole.",
+    distinguish:
+      "Fertő and Balaton are both shallow lakes, but Balaton is fresh, has a stable outlet and a regulated level, while Fertő has no outlet and both its level and its salinity vary widely with the season — which is also why alkali grassland can develop around it.",
+    concept:
+      "A shallow lake with no outlet is a particularly unstable body of water: area, depth and salinity all swing with evaporation and rainfall. A single area figure for such a lake means little; what year and what season the measurement comes from is the useful part.",
+    history:
+      "Grazing and viticulture have gone on around the lake for centuries; in 2001 the lake and its surrounding cultural landscape were inscribed on the UNESCO World Heritage list, and the Hungarian side lies within the Fertő–Hanság National Park.",
+  },
+  "lake-heviz": {
+    seeing:
+      "Lake Hévíz, near the western end of Balaton, is a natural thermal lake: its water comes from a karst spring welling up warm through the lake bed, so the whole body stays warm and can be bathed in all year — among the largest natural thermal lakes anywhere that can be swum in.",
+    // formation sources: 换水周期各源矛盾（3 天 / 每周两次），无权威单一数字，故不写死。2026-09-13 核。
+    formation:
+      "A karst spring opens in the lake bed where cold and hot groundwater mix at depth and rise together. The discharge is large enough to renew the whole lake rapidly, which is why so small a body keeps its temperature and its water quality through the year; published figures for the turnover time disagree, so none is given here.",
+    observation:
+      "From the air Hévíz is only a small round sheet of water in woodland, but in winter, when everything around it is grey, it is often the one patch that does not freeze and may be visibly steaming. Most of its surface is covered with water lilies.",
+    distinguish:
+      "What sets Hévíz apart from an ordinary lake is where its water comes from: most lakes are fed by runoff and rainfall, Hévíz almost entirely by the thermal spring below. It therefore neither rises and falls much with the seasons nor heats and cools the way a shallow lake does.",
+    concept:
+      "The telling figure for a thermal lake is not its area but **how fast its water is replaced**: discharge divided by volume. The shorter that time, the steadier the temperature and the water quality. Such lakes are extremely sensitive to the groundwater table — heavy abstraction nearby shows up immediately in the spring's discharge.",
+    history:
+      "The springs here were used in Roman times and grew into a spa from the eighteenth century; the lake is now strictly protected and groundwater abstraction around it is restricted.",
+  },
+  "lake-velence": {
+    seeing:
+      "Lake Velence, south-west of Budapest, is a very shallow lake — under two metres over most of it. Its western end is a broad reed marsh; open water and beaches are at the eastern end.",
+    formation:
+      "The basin is a tectonic hollow fed mainly by rainfall and small streams with little outflow, so the water is alkaline. Being so shallow means it heats very quickly in summer, and can run several degrees warmer than a deep lake at the same latitude.",
+    observation:
+      "From the air Velence is clearly divided in two: the western half almost entirely dark reed with a few channels through it, the eastern half open pale water with resorts along the shore.",
+    distinguish:
+      "Velence and Balaton are both shallow lakes, but Velence is far smaller, shallower and alkaline, with a much greater share of reed; Balaton has a stable outlet and a regulated level while Velence depends largely on the weather.",
+    concept:
+      "A lake under about two metres deep warms through in summer without forming layers, so nutrients and algae move freely through the whole body — such lakes are particularly prone to eutrophication, which is why their water level and reed belts often have to be managed.",
+    history:
+      "The lake grew into a resort area for Budapest from the early twentieth century; the reed marsh at its western end is an important waterbird habitat and is protected.",
+  },
+  "danube-hungary": {
+    // seeing sources: 匈牙利国家水务总局：境内 417 km，含 142 km 界河段；裁弯取直前曾达 496 km。2026-09-13 核（1 级）。
+    seeing:
+      "The Danube enters Hungary from the north-west, crosses the Little Plain, turns south at the Danube Bend and runs the length of the Great Plain before leaving. About 417 km of it lies in Hungary, 142 km of that a border reach (national water authority), and it divides the country in two and is, by navigable length and by discharge, its principal waterway.",
+    formation:
+      "Within Hungary the Danube has left the mountains for a subsiding basin and its gradient is slight. Its capacity to carry sediment drops and deposition takes over: the channel widens and divides, bars and islands form and are rewritten — with the Danube Bend the one exception, where it cuts into upland instead.",
+    observation:
+      "From the air the Danube shows three quite different faces in Hungary: spread into several strands enclosing islands on the Little Plain; squeezed into a deep valley by the massifs at the Bend, drawing an almost right-angled turn; and on the Great Plain a broad, little-bent main channel between levees.",
+    distinguish:
+      "The Danube and the Tisza cross the same plain, but the Danube carries far more water in a much wider channel, its pattern dominated by division and broad main channels; the Tisza carries less and bends far more, known for extreme meanders and strings of oxbows.",
+    concept:
+      "One river can take entirely different channel patterns along its course: cutting a valley in the mountains, braiding at the mountain front, and on the plain either broad and straight or intensely sinuous. **What decides the pattern is the combination of gradient, discharge and sediment** — not the name of the river.",
+    history:
+      "The Danube was the northern frontier and a shipping lane of the Roman empire, leaving a chain of military posts along its banks; the navigation and embankment works begun in the nineteenth century shaped the channel as it stands today.",
+  },
+  szigetkoz: {
+    // seeing sources: 东北多瑙水务局：375 km²、长 52 km、宽 6–8 km。2026-09-13 核（1 级）。
+    seeing:
+      "The Szigetköz lies in Hungary's north-western corner, the tract of islands enclosed where the Danube divides on entering the Little Plain: the main stream on one side, a network of side channels in the middle, and long narrow islands between them. It covers about 375 km², some 52 km long and 6 to 8 km wide, the largest inland river-island tract in Hungary.",
+    formation:
+      "Leaving the mountain gap for the plain, the Danube loses gradient and speed, drops the gravel and sand it can no longer carry, and its channel is pushed into dividing by its own deposits. The ground between the side channels is flooded and exposed again and again, producing the present surface of channels, oxbows and floodplain forest.",
+    observation:
+      "From the air the Szigetköz is a legible web of water: bright side channels threading through dark floodplain forest with crescent oxbows among them, the whole web sharply bounded against the orderly farmland on either side.",
+    distinguish:
+      "The Szigetköz and the meander belt of the Tisza on the Great Plain are both products of rivers on a plain, but their forms are opposite: the Szigetköz is **one river split into many strands** (anabranching), the Tisza **one strand swinging back and forth** (meandering). The first belongs where gradient drops abruptly and sediment is plentiful, the second deep on a plain of very low gradient.",
+    concept:
+      "Anabranching and meandering are the two basic channel patterns of lowland rivers. Two things tell them apart: whether several channels exist at once or there is always one sinuous channel, and whether the sediment is mainly coarse gravel and sand or fine silt and clay.",
+    history:
+      "Fishing, forestry and river transport were the livelihood here; twentieth-century water engineering altered how discharge is shared among the side channels, and measures to manage flow for the floodplain ecosystem have been in place since.",
+  },
 
+  // ============================================================
+  // Europe / Slovakia
+  // ============================================================
+  "high-tatras": {
+    // 全六段 sources: 同中文侧。Gerlachovský štít 2655 m（部分资料 2654.4 m），斯洛伐克与喀尔巴阡最高点，完全在斯洛伐克境内。跨境只写 "along the Slovak–Polish frontier"，不涉主权。2026-09-13 首写。
+    seeing:
+      "The High Tatras are the highest and most completely glaciated section of the Tatra range, crowned by Gerlachovský štít at about 2,655 m — the highest point in Slovakia and in the whole Carpathian chain. The range is small — its main crest runs about 26 km east to west and some 17 km across — yet it packs more than twenty rock summits above 2,500 m into that distance, and it is the only stretch of the Carpathians with a genuinely alpine character.",
+    formation:
+      "The core is granitic crystalline rock, ancient basement lifted by thrust tectonics. The shaping was done by ice: cirques bit into both flanks of the ridge one after another until the once-continuous crest was pared down to knife-edges and horns, while the valley floors kept a staircase of rock basins that filled with water to become a chain of glacial lakes — pleso in Slovak.",
+    observation:
+      "From the air the High Tatras read as a pale grey rock crest rising abruptly out of low ground on both sides, in sharp contrast with the forested hills around them. The giveaway is the row of round hollows along each flank of the ridge — cirques, many with a small dark lake on the floor. Resort settlements string along the valley mouths on the southern side, while the valleys on the northern side are longer and wider.",
+    distinguish:
+      "The High and Western Tatras adjoin one another in the same range; the difference is lithology. The High Tatras are almost entirely granite, with sheer walls and sharp edges; the Western Tatras carry thrust sheets of limestone and dolomite over their crystalline core, so their outlines are rounder and locally karstic. The contrast with the Low Tatras is even plainer: those are one long continuous meadow ridge with no cluster of rock peaks.",
+    concept:
+      "The High Tatras are often called the smallest alpine range in the world, meaning that a complete alpine vertical sequence is compressed into a very small footprint: spruce forest at the foot, dwarf pine and alpine meadow above the treeline, and bare rock and scree at the top. Whether an upland counts as alpine terrain depends not on absolute elevation but on whether it rises past the treeline and carries landforms left by glaciers.",
+    history:
+      "Mountain grazing and mining in this area are long recorded, and from the late nineteenth century, once the railway reached it, the range developed into one of central Europe's better-known climbing and health-resort districts, a tradition of mineral springs and climate cures that continues today. Tatra National Park, declared in 1949, was Slovakia's first.",
+  },
+  "western-tatras": {
+    // 全六段 sources: 同中文侧。Bystrá 2248 m 为最高点；结晶岩核心上覆石灰岩/白云岩推覆岩片。2026-09-13 首写。
+    seeing:
+      "The Western Tatras are the western section of the Tatra range, topped by Bystrá at 2,248 m. Compared with the High Tatras to the east, the crest is longer and rounder, the valleys wider, and forest reaches higher up the slopes, so the whole section looks markedly less severe.",
+    formation:
+      "They share the same crystalline core as the High Tatras, but here a cover of thrust limestone and dolomite is still preserved on top of it. The two rock types fail differently: the crystalline rock holds a rounded main crest, while the limestone belts develop dry valleys, caves and abrupt steps. Ice-age glaciers cut cirques into both flanks here too, only on a smaller scale.",
+    observation:
+      "From the air the Western Tatras are a broad meadow-covered crest sending out a row of roughly parallel long valleys to the south, streams and forest on their floors. The crest reads green-brown rather than the pale grey of the High Tatras, which is the quickest way to tell the two sections apart.",
+    distinguish:
+      "The Western and High Tatras are two stretches of one range: judge by colour and outline — sharp pale grey walls mean the High Tatras, broad green-brown ridges the Western. Against Malá Fatra the difference is height and glacial imprint: Malá Fatra tops out below 1,800 m and has no properly formed cirques.",
+    concept:
+      "The Western Tatras show how a difference in rock type inside one range is written directly into its shape. Given the same uplift and the same glaciers, granite yields sharp horns while limestone and dolomite yield rounded crests and solution features — the difference lies in the material, not the process.",
+    history:
+      "The alpine meadows here were long used as summer pasture, and the timber building traditions of the mountain villages are widely recorded; valleys on both the northern and southern sides developed into hiking and skiing destinations from the nineteenth century onward. This section also lies within Tatra National Park, declared in 1949.",
+  },
+  "low-tatras": {
+    // 全六段 sources: 同中文侧。Ďumbier 2043 m；位于瓦赫河与赫龙河河谷之间；按面积为斯洛伐克最大国家公园（1978 年设立）。洞穴数量与长度无一手来源，不写数字。2026-09-13 首写。
+    seeing:
+      "The Low Tatras run between the valleys of the Váh and the Hron as a single long east–west crest, highest at Ďumbier, 2,043 m. The 'low' in the name is relative to the Tatras proper; the range itself already rises past the treeline, and its crest carries open alpine meadow.",
+    formation:
+      "The range is built of a crystalline core with a sedimentary cover above it, lifted during the Carpathian orogeny. Ice-age glaciers left cirques only in the highest sections, so the rest of the crest keeps a rounded profile; on the limestone of the northern slope, groundwater has dissolved out sets of cave systems instead.",
+    observation:
+      "From the air the Low Tatras are an almost unbroken green ridge standing well above the river valleys on either side. Bare rock is scarce along the crest, replaced by continuous meadow and a trail that follows the ridgeline; each end carries a higher swell — Ďumbier at the western end, Kráľova hoľa at the eastern.",
+    distinguish:
+      "The difference from the High Tatras is shape rather than height alone: clusters of sharp rock peaks there, one continuous meadow ridge here. Against the Slovak Ore Mountains, those are not a single crest but a set of scattered massifs and karst plateaus, and much lower.",
+    concept:
+      "The Low Tatras are a good place to watch the treeline. Its height depends not only on latitude but on exposure, wind and snow cover: within the same upland, forest climbs higher on sheltered valley slopes, while a windward crest can drop to meadow and dwarf scrub within a few tens of metres of altitude.",
+    history:
+      "Mountain grazing and forestry here are long recorded, and the caves on the northern slope were surveyed and progressively opened to visitors from the nineteenth century. Low Tatras National Park was declared in 1978 and is Slovakia's largest national park by area.",
+  },
+  "mala-fatra": {
+    // 全六段 sources: 同中文侧。Veľký Kriváň 1709 m；以石灰岩/白云岩为主；Jánošíkove diery 在其支谷内；1967 年保护景观区、1988 年国家公园。2026-09-13 首写。
+    seeing:
+      "Malá Fatra, in north-western Slovakia, is a middle-mountain range built largely of limestone and dolomite, highest at Veľký Kriváň, 1,709 m. Its main crest is short, but the flanks are cut by a dense set of side valleys, which makes the range look more rugged than its height suggests.",
+    formation:
+      "The sedimentary layers were folded, thrust and uplifted during the Carpathian orogeny, after which running water incised along bedding planes and fractures. Limestone both dissolves readily and stands up in sheer walls, which produces the combination typical here: narrow ravines, vertical faces, and waterfalls and potholes on the valley floors.",
+    observation:
+      "From the air Malá Fatra is an irregularly outlined forested massif, pale rock walls interleaved with dark forest. The most striking features are the few narrow valleys cutting north from the main crest; from height they appear as no more than thin slots in the forest — the Jánošíkove diery ravines lie in one of them.",
+    distinguish:
+      "Malá Fatra and Veľká Fatra face each other across the Turiec basin, and the names are easy to reverse: Malá Fatra has the higher summit (1,709 m against 1,592 m), Veľká Fatra the larger area. Against the Western Tatras, the absence of cirques and glacial lakes is decisive — the slots here are the work of water and solution, not ice.",
+    concept:
+      "Malá Fatra shows that a ravine is not the same thing as a canyon. A ravine of this kind is dissolved and incised little by little along joints and bedding in limestone, and can be only metres wide with walls almost touching; a canyon is usually a river cutting through rock at a much larger scale, with a continuous channel on its floor.",
+    history:
+      "Grazing and timber floating in the valleys are long recorded, and the villages at the valley mouths retain their timber building traditions. Malá Fatra became a protected landscape area in 1967 and a national park in 1988.",
+  },
+  "velka-fatra": {
+    // 全六段 sources: 同中文侧。Ostredok 1592 m；面积大于小法特拉、最高点更低；1973 年保护景观区、2002 年国家公园。2026-09-13 首写。
+    seeing:
+      "Veľká Fatra lies east of Malá Fatra on the far side of the Turiec basin, highest at Ostredok, 1,592 m. The 'great' in its name refers to area rather than height — it is far broader than Malá Fatra, yet its summit is lower.",
+    formation:
+      "It belongs to the same structure as Malá Fatra: a crystalline core overlain by thrust sheets of limestone and dolomite, folded and uplifted, then dissected by running water. Because the massif is broader, its drainage had room to develop a dendritic pattern, with a set of parallel long valleys on each side of the main crest and limestone reaches in several of them narrowed into walled gates.",
+    observation:
+      "From the air Veľká Fatra is one continuous rolling forested upland; its crest is not a thin line as in Malá Fatra but a set of rounded ridges close together. The Turiec basin to the west is a conspicuous patch of flat low ground, and the boundary between basin and mountain runs almost straight.",
+    distinguish:
+      "Veľká Fatra against Malá Fatra is broad-and-low against narrow-and-high; against the Low Tatras the difference is lithology and continuity, since the Low Tatras form one continuous crest above the treeline while most of Veľká Fatra's crest is still within the forest belt.",
+    concept:
+      "The two Fatra ranges are a clear case of names that do not track elevation: the adjective in a place name usually records whatever property people noticed first — area, population or historical standing — rather than height. A descriptive place name is not a measurement.",
+    history:
+      "The alpine meadows were long used as summer pasture and the valley villages and their timber houses are widely recorded; the Turiec basin on the western side has been a regional farming and transport corridor since the Middle Ages. Veľká Fatra was a protected landscape area from 1973 and became a national park in 2002.",
+  },
+  "male-karpaty": {
+    // 全六段 sources: 同中文侧。Záruby 768 m；长约 100 km；高程自多瑙河边约 132 m 起；布拉迪斯拉发在南端；1976 年保护景观区。2026-09-13 首写。
+    seeing:
+      "The Little Carpathians are the south-western end of the whole Carpathian chain, running about 100 km north-east from the bank of the Danube. Their range of elevation is wide but their absolute height is modest: about 132 m at the river, 768 m at the summit of Záruby. Bratislava sits at their southern tip.",
+    formation:
+      "The core is ancient crystalline rock with a sedimentary cover preserved along the margins, raised during the Carpathian orogeny as a long narrow block mountain. At the southern end the Danube has cut a notch through it, and the valley narrows there into a natural gateway between steeply rising slopes.",
+    observation:
+      "From the air the Little Carpathians are a slender forested band separating the Záhorie lowland to the west from the Danubian lowland to the east. Vineyards cover the lower slopes on both sides of the crest, distinct in colour from both the forest above and the farmland below, so the three-fold banding is easy to read. At the southern end the Danube can be seen passing through the gap in the range.",
+    distinguish:
+      "What sets the Little Carpathians apart from Slovakia's other ranges is that they are a terminus: the Carpathian arc falls here to a few hundred metres and ends at the Danube. Compared with Malá Fatra to the north, both are largely limestone, but the Little Carpathians are far lower and have no section above the treeline.",
+    concept:
+      "Where a mountain chain ends is usually settled by structure rather than by height. The Little Carpathians are only a few hundred metres high yet still belong structurally to the Carpathian arc; the gap of the Danube valley separates them from the Alpine system, and that gap is the structural boundary zone between the two.",
+    history:
+      "Viticulture along the foot of the range is long recorded and the winemaking traditions of the villages continue today; a number of medieval castle sites are spread along the crest. The Little Carpathians Protected Landscape Area was declared in 1976.",
+  },
+  "slovenske-rudohorie": {
+    // 全六段 sources: 同中文侧。Stolica 1476 m 为最高点；该区含 Stolické vrchy / Volovské vrchy / Revúcka vrchovina / Veporské vrchy / Čierna hora + Slovenský kras 与 Spišsko-gemerský kras。矿种与年代无一手来源，只写 "long-recorded metal mining"。2026-09-13 首写。
+    seeing:
+      "The Slovak Ore Mountains spread east–west across southern Slovakia as an old upland. They are not a single ridge but an assemblage of massifs and karst plateaus, highest at Stolica, 1,476 m. The name comes from the area's long-recorded metal mining.",
+    formation:
+      "The basement is Palaeozoic crystalline and metamorphic rock, locally overlain by Mesozoic limestone that has been dissolved into a series of tabular karst plateaus. The whole upland has been eroded for a long time, so its summits are generally pared down to gently undulating surfaces, with rivers cutting deep valleys into them.",
+    observation:
+      "From the air the Slovak Ore Mountains are a large forested upland of modest relief, quite unlike the single clean crest of the Low Tatras to the north. The easiest features to pick out are several plateaus with flat tops and abrupt edges, and the deep valleys cut into those edges.",
+    distinguish:
+      "The Slovak Ore Mountains against the Low Tatras is an area against a line: an assemblage of massifs and plateaus versus one long crest. The relationship to entries such as the Slovak Karst and Muránska planina is one of containment — those are the parts of this upland where karst is developed most typically.",
+    concept:
+      "This upland illustrates the idea of an erosion surface: worn down over a long period, an upland's summits tend toward a surface of low relief; later uplift raises that surface as a whole, and rivers then incise into it afresh. The flat summits visible today therefore record an earlier stage of the landscape rather than its present erosional state.",
+    history:
+      "Metal mining here is long recorded and the mining towns along the belt form part of central European mining history; since mining declined, forest and karst landforms have become the region's principal natural assets.",
+  },
+  "stiavnicke-vrchy": {
+    // 全六段 sources: 同中文侧。Sitno 1009 m；18×22 km caldera + intrusive complex + resurgent horst；Banská Štiavnica 为 UNESCO 世界遗产。2026-09-13 首写。
+    seeing:
+      "The Štiavnica Mountains, in central Slovakia, are the country's largest volcanic upland. What stands there today is not a cone but the eroded remnant of a Miocene stratovolcano: the summit, Sitno, reaches 1,009 m and is simply the hardest surviving piece of that remnant.",
+    formation:
+      "Structurally the volcano has three parts: a large caldera roughly 18 by 22 km across, an extensive intrusive complex, and a resurgent horst pushed back up inside the caldera. Once eruptions ceased, the loose pyroclastic material went first, leaving the more resistant lava flows and intrusions, so today's high points generally correspond to the volcano's internal conduits and stocks rather than to its original summit.",
+    observation:
+      "From the air the range is a roughly circular forested upland with several arcuate scarps around its margin — the surviving trace of the caldera rim. Scattered through it are a string of artificial lakes, reservoirs built in the mining era to drive water-powered machinery, which read from height as a set of small water surfaces linked by channels.",
+    distinguish:
+      "The Štiavnica Mountains and Poľana are both volcanic uplands of central Slovakia; the difference is preservation. Poľana's caldera is only about 6 km across but its rim is intact and reads instantly as a ring; the Štiavnica caldera is far larger and far more broken, and the ring has to be reassembled from arcuate scarps around the edge.",
+    concept:
+      "This is a good place to grasp that a volcano's landform outlives its activity by much less than one might think. Once eruptions stop, the cone is the first thing to go; what survives longest is the plumbing — the conduits and intrusions underground — because that rock cooled slowly, crystallised coarsely and resists erosion better. The harder the high point, the deeper it originally lay.",
+    history:
+      "Banská Štiavnica, within the range, grew from the Middle Ages on precious-metal mining, and the reservoirs and channels built to supply water power were major engineering works of their time; the historic town and the technical monuments around it are inscribed on the UNESCO World Heritage List.",
+  },
+  polana: {
+    // 全六段 sources: 同中文侧。最高点 1458 m；约 13–15 Ma；中央破火山口直径约 6 km；「欧洲最大死火山之一」保留 one of；1981 PLA、1990 UNESCO 生物圈保护区。2026-09-13 首写。
+    seeing:
+      "Poľana is an extinct volcano whose highest point reaches 1,458 m. What repays attention is not the height but the shape: a caldera about 6 km across occupies the centre of the massif, its ring of rim ridges still complete, so an approach from any direction has to cross that ring first. It is commonly listed among the largest extinct volcanoes in Europe.",
+    formation:
+      "The massif was built by volcanic activity roughly 13 to 15 million years ago. Prolonged eruption raised a stratovolcanic cone whose centre collapsed late in its history to form the caldera; later erosion lowered the rim ridges and let a river cut a notch through the ring, which is how water now drains out of the caldera floor.",
+    observation:
+      "From the air Poľana is a nearly complete forested ring enclosing a floor a few hundred metres below the rim, with one conspicuous breach on one side — the drainage valley. That circular outline stands out sharply among the gently rolling uplands of central Slovakia and is one of the most immediately recognisable landforms in the country from altitude.",
+    distinguish:
+      "Poľana and the Štiavnica Mountains are both remnants of Miocene volcanoes, but Poľana keeps a complete caldera ring while the Štiavnica caldera is much larger and survives only as scattered arcuate scarps. Set against a folded, uplifted crest like the Low Tatras, Poľana's circular plan says at once that its origin was collapse rather than compression.",
+    concept:
+      "A caldera is not a crater. A crater is the opening at the top of a vent, typically a few hundred metres across; a caldera is a depression formed when the roof above an emptied magma chamber collapses as a whole, and can be kilometres or tens of kilometres wide. Scale and rim form tell them apart — a collapse margin is a ring of cliffs, an eruptive rim is a slope of accumulated ejecta.",
+    history:
+      "Grassland inside the ring and at the foot of the massif was long used for grazing, and the local timber buildings and shepherding traditions are widely recorded. The area became a protected landscape area in 1981 and was listed as a UNESCO Biosphere Reserve in 1990.",
+  },
+  vihorlat: {
+    // 全六段 sources: 同中文侧。最高点 1076 m；原始山毛榉林为跨国系列世界遗产组成部分；Morské oko 为山崩堰塞湖。2026-09-13 首写。
+    seeing:
+      "The Vihorlat Mountains in eastern Slovakia are a volcanic upland whose highest point, Vihorlat, reaches 1,076 m. They rise abruptly out of the East Slovak Lowland with plains on every side, so although the summit is only just above a thousand metres, the relief looks substantial from below.",
+    formation:
+      "The massif is built of lava and pyroclastic material erupted in the late Miocene, later eroded down from its original cones to leave a number of rounded high points. Blocks have crept downslope over long periods, and one larger landslide dammed a valley, ponding the water that became Morské oko.",
+    observation:
+      "From the air Vihorlat is a dark green island of forest on the plain, its boundary with the surrounding farmland almost a hard edge. There is virtually no settlement inside the massif, only small villages in a few valleys; Morské oko appears as a small, darker patch of water in the forest.",
+    distinguish:
+      "Vihorlat and Poľana are both remnants of extinct volcanoes, but Poľana is defined by its complete caldera ring and Vihorlat has none. Compared with Poloniny to the north-east, that range is folded sandstone and shale — a wholly different lithology, and its form is a set of parallel long ridges.",
+    concept:
+      "This is a good place to understand a landslide-dammed lake: its basin was not excavated but created when an existing valley was blocked by a slide mass. Such lakes are usually shallow, take the shape of the former valley, and have limited lifespans — once the dam is cut through by downstream erosion, the water drains away.",
+    history:
+      "The primeval beech stands here are inscribed as part of the transnational serial World Heritage property 'Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe', and forestry and grazing traditions in the foothill villages are long recorded.",
+  },
+  poloniny: {
+    // 全六段 sources: 同中文侧。1997-10-01 设园；园区最高点约 1208 m，在国土东北端国界交汇处，紧邻 1221 m 的 Kremenec 峰顶；Stužica 原始林为世界遗产组成部分。⚠️ 全篇不写任何邻国国名。2026-09-13 首写。
+    seeing:
+      "Poloniny lies at the far north-eastern end of Slovak territory, a folded upland of sandstone and shale. The park's highest ground reaches about 1,208 m at the meeting point of frontiers on that north-eastern tip, immediately below the 1,221 m summit of Kremenec. The name comes from the local term for the open meadows found on these summits.",
+    formation:
+      "The massif is built of thick alternating sandstone and shale, a sequence folded and thrust during the orogeny into a set of roughly parallel long ridges. Sandstone is hard and shale soft, so differential erosion has shaped the ridges into parallel rises with valleys following the softer beds — which is why the ridges and valleys read on a map as almost evenly spaced stripes.",
+    observation:
+      "From the air Poloniny is a near-continuous forest with its ridges aligned north-west to south-east and occasional patches of open meadow along the crests. Settlement is very sparse, and this is one of the least light-polluted areas in central Europe, which is most obvious from the window of a night flight.",
+    distinguish:
+      "Poloniny and Vihorlat are both in eastern Slovakia but differ entirely in origin: Vihorlat is a rounded, isolated volcanic remnant, Poloniny a folded sandstone-and-shale upland of parallel ridges. Against the Low Tatras, it has no crystalline core and no genuinely alpine meadow belt above the treeline — the meadows on its crests owe much to long-standing grazing and to soil conditions.",
+    concept:
+      "Here one can see clearly how differential erosion sets the trend and spacing of ridges: where a sequence alternates hard and soft beds and has been folded into a series of anticlines and synclines, ridges grow on the hard beds and valleys settle on the soft ones, so the grain of the terrain records the strike of the strata rather than the direction of flow.",
+    history:
+      "The open summit meadows were long used as summer pasture, and the timber church architecture of the foothill villages is widely recorded. The area was declared a national park in October 1997 and is Slovakia's easternmost; the Stužica primeval forest within it forms part of the transnational serial World Heritage property 'Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe'.",
+  },
+  "slovensky-kras": {
+    // 全六段 sources: 同中文侧。约 440 km²，中欧面积最大喀斯特区；洞穴与竖井 1000–1100（写区间）；与阿格泰莱克喀斯特洞穴一并列入 UNESCO；2002-03-01 设园。2026-09-13 首写。
+    seeing:
+      "The Slovak Karst, in southern Slovakia, is a tabular karst region built of Mesozoic limestone covering about 440 km² — the largest karst area in central Europe. Its surface is not a set of ridges but a group of plateaus with flat tops and abrupt edges, separated from one another by deep valleys.",
+    formation:
+      "The limestone was laid down in Mesozoic seas, uplifted, and has been dissolving ever since. Surface water sinks quickly along joints, so the plateau tops carry few rivers and instead show sinkholes, dry valleys and limestone pavement, while underground a very dense system of caves and shafts has developed — counts range from about a thousand to eleven hundred depending on the source.",
+    observation:
+      "From the air the Slovak Karst is a few flat-topped plateaus divided by deep valleys, the tops a mixture of grassland and open woodland with a rim of pale rock walls. Conspicuous among them are the narrow valleys cut into the plateau edges; Zádielska tiesňava, seen from height, is no more than a thin slot at the margin of a plateau.",
+    distinguish:
+      "The Slovak Karst and Slovak Paradise are both karst plateaus; the difference is dissection. Slovak Paradise is cut to pieces by ravines and waterfalls and has much greater relief; the Slovak Karst keeps broader, more intact plateau surfaces. Across the frontier, the Aggtelek Karst is the other half of the same karst region, continuous with it in landform terms.",
+    concept:
+      "Plateau karst — planina in Slovak — and the more familiar tower karst are the same solution process under different conditions. Where limestone beds lie near horizontal, uplift is moderate and rainfall not extreme, solution works mainly downward, the surface stays a flat tableland and everything spectacular happens underground. Where the climate is hot and wet and uplift stronger, the surface itself is dissolved into towers and hollows.",
+    history:
+      "Caves here were surveyed from the nineteenth century onward and some were opened to visitors; the cave system is inscribed on the UNESCO World Heritage List together with the caves of the Aggtelek Karst across the frontier. The area was declared a national park in March 2002.",
+  },
+  "slovensky-raj": {
+    // 全六段 sources: 同中文侧。国家公园约 197.6 km²，1988-01-18 设立；Prielom Hornádu 约 11.7 km 为园内最长；Dobšinská ľadová jaskyňa 2000 年作为世界遗产扩展项列入；「欧洲较大冰洞之一」只写 one of。2026-09-13 首写。
+    seeing:
+      "Slovak Paradise, in eastern Slovakia, is a karst plateau cut to pieces by deep valleys; the national park covers about 197.6 km². Its defining quality is that three kinds of terrain occur in the same upland: flat plateau surfaces, ravines and waterfalls cut into them, and caves beneath.",
+    formation:
+      "Once the limestone and dolomite tableland was uplifted, streams incised along its joints. Because limestone both dissolves and stands in vertical walls, what the streams cut was not a broad valley but a succession of narrow gates and waterfalls; some reaches are only metres wide, and the trails through them depend on ladders and walkways bolted to the rock.",
+    observation:
+      "From the air Slovak Paradise is a forested upland cut by a dense net of valleys, the lines thin and deep, visible from height only as dark seams in the forest. Along the northern margin, the Hornád gorge is the longest in the park at about 11.7 km, its channel swinging repeatedly across the valley floor.",
+    distinguish:
+      "Slovak Paradise and the Slovak Karst are both karst areas within the Slovak Ore Mountains; the difference is dissection — denser valley networks, greater drops and more waterfalls here, more intact plateau surfaces there. The ravines of Malá Fatra form the same way, but the valley network here is an order of magnitude larger.",
+    concept:
+      "An ice cave is not simply a cave that happens to hold ice: it needs a descending entrance so that cold winter air sinks in and stays, while summer air, being less dense, cannot get in — a structure known as a cold-air trap. Dobšinská ľadová jaskyňa is one of the larger ice caves in Europe, and its ice body accumulated in exactly this way.",
+    history:
+      "Caves in the park were surveyed from the nineteenth century, and Dobšinská ľadová jaskyňa has long been open to visitors; in 2000 it was added as an extension to the World Heritage property covering the caves of the Slovak and Aggtelek Karst. The national park was declared in January 1988.",
+  },
+  "muranska-planina": {
+    // 全六段 sources: 同中文侧。属 Spišsko-gemerský kras；最高点 Kľak 1409 m；1997 年 10 月设园、1998-05-27 开园。园区面积各源不一（有把公顷写成平方公里的错值），不写面积。2026-09-13 首写。
+    seeing:
+      "Muránska planina, in central Slovakia, is a tabular karst plateau belonging to the Spiš–Gemer Karst, set between Brezno, Červená Skala, Muráň and Tisovec. Its highest point, Kľak, reaches 1,409 m, well above the karst tablelands to its south.",
+    formation:
+      "The plateau is built of Mesozoic limestone and dolomite, uplifted and long subject to solution, which has produced sinkholes, dry valleys and caves; rivers have cut its margins into cliffs, and isolated rock towers stand on several of the clifftops. Because the plateau surface lies higher than the karst tablelands to the south, its solution features are overprinted by the effects of frequent freeze–thaw in a colder climate.",
+    observation:
+      "From the air Muránska planina is a forested tableland of gentle summit relief ringed by cliffs. The easiest thing to pick out is an isolated limestone tower at the plateau edge, with the ruins of Muráň Castle standing on top of it. There is almost no river to be seen on the plateau surface.",
+    distinguish:
+      "Muránska planina and the Slovak Karst are both tabular karst, differing in altitude and climatic belt: Muránska planina stands several hundred metres higher, its surface close to the upper limit of forest, with freeze–thaw superimposed on solution; the Slovak Karst is lower, warmer and more open. Compared with Slovak Paradise, the valley network here is far sparser.",
+    concept:
+      "The same rock yields different landforms at different altitudes: high-lying limestone is not only dissolved by water but also subjected to repeated freezing and thawing, which breaks the rock apart along joints, so solution features are often buried under rockfall debris and hard to read. Deciding whether a landscape is karst therefore cannot rest on surface forms alone — hydrology is the better clue, and the absence of surface rivers is the one to look for.",
+    history:
+      "Muráň Castle on its rock tower at the plateau edge has long been the local landmark, and forestry and grazing on the plateau are long recorded. The area was declared a national park in October 1997 and formally opened in May the following year.",
+  },
+  "prielom-hornadu": {
+    // 全六段 sources: 同中文侧。约 11.7 km，为斯洛伐克天堂国家公园内最长峡谷；栈道/梯子/铁链。「先成河」按 "generally read as" 表述。2026-09-13 首写。
+    seeing:
+      "The Hornád gorge was cut where the Hornád river slices across the northern margin of the Slovak Paradise karst plateau; at about 11.7 km it is the longest gorge in the national park. What makes it notable is that the river did not go around the plateau but straight through the middle of it.",
+    formation:
+      "A river that refuses to detour around an upland is generally read as antecedent: its course was fixed before the ground rose, and as uplift began the river held to that course and kept incising, sawing through the rock as it came up. The resistance of limestone lets the walls stand, so the gorge stays narrow and deep instead of widening as it deepens.",
+    observation:
+      "From the air the gorge is a dark thin seam along the northern edge of the plateau, the channel swinging repeatedly across its floor, with pale rock walls on the outside of each bend and gravel bars on the inside. The plateau surfaces on either side are flat and continuous, and the drop to the floor makes the seam look as though it had been cut with a blade.",
+    distinguish:
+      "The Hornád gorge differs from the ravines on the same plateau: those were dissolved and incised by small streams along joints, usually carry no permanent flow, and are only metres wide; here there is a real river with a stable channel and bars on the floor, and the scale is an order of magnitude larger. Against Zádielska tiesňava, that one is narrower and steeper but far shorter.",
+    concept:
+      "To judge whether a river is antecedent, look at its relation to the terrain: a channel that cuts across a rising ridge when easier routes exist on either side usually means the river came before the ridge. Conversely, a channel that follows structural lines or belts of soft rock is simply conforming to the terrain it found.",
+    history:
+      "The walkway system along the floor was built up through the twentieth century and remains in use, one of the park's principal visitor routes; the villages at either end of the gorge long depended chiefly on forestry.",
+  },
+  "zadielska-tiesnava": {
+    // 全六段 sources: 同中文侧。谷长约 2200 m、深约 300 m（局部 400 m）、最窄约 10 m；属长约 3.8 km 的 Zádielska dolina；国家自然保护区。2026-09-13 首写。
+    seeing:
+      "Zádielska tiesňava is a deeply incised limestone ravine at the edge of a Slovak Karst plateau: about 2,200 m long, some 300 m deep and locally as much as 400 m, and at its narrowest only about 10 m wide on the floor. It is the tightest stretch of the roughly 3.8 km Zádielska dolina and one of the most representative ravines in Slovakia.",
+    formation:
+      "After the tableland was uplifted, a small stream kept dissolving and incising along joints in the limestone. Because limestone both dissolves and holds vertical walls, incision ran far faster than the walls could retreat, so the ravine stayed narrow and deep; the rock towers left standing inside it are the joint work of solution and collapse.",
+    observation:
+      "From the air Zádielska tiesňava is no more than a fine dark line cutting north into the plateau from its southern edge; beyond the mouth lie open lowland and farmland, clearly different in both elevation and colour. The towers inside are almost invisible from directly overhead and need an oblique angle to pick out.",
+    distinguish:
+      "Zádielska tiesňava and the Hornád gorge are both deep cuts into karst plateaus; the difference is discharge and scale. Here a small stream carries very little water year-round and can run dry, and the ravine is only a little over two kilometres long; the Hornád gorge has a real river and runs close to twelve.",
+    concept:
+      "The width of a ravine is set by the ratio of two rates: how fast it cuts down and how fast its walls retreat. Limestone dissolves quickly along joints yet the rock mass as a whole is strong, so incision far outpaces retreat and the cut stays narrow; in a rock that breaks down readily, such as shale, the same amount of incision would yield a wide, gentle valley.",
+    history:
+      "Settlement and grazing around the mouth of the valley are long recorded, and the ravine has been a well-known local natural feature since the nineteenth century; it is now a national nature reserve.",
+  },
+  "janosikove-diery": {
+    // 全六段 sources: 同中文侧。Dolné diery / Horné diery / Nové diery / Tesná rizňa 四段，约二十处跌水，梯子与栈道。名字来源只写 "named after a figure in local legend"。2026-09-13 首写。
+    seeing:
+      "Jánošíkove diery, on the northern side of Malá Fatra, are a set of limestone ravines made up of the Lower, Upper and New diery and an extremely tight section called Tesná rizňa. There are about twenty waterfalls along the route, and most reaches can only be passed on ladders and walkways bolted to the rock. The name comes from a figure in local legend.",
+    formation:
+      "After Malá Fatra's limestone and dolomite beds were folded and uplifted, streams incised along joints and bedding planes. The ravines do not run straight but turn with the direction of the jointing, so the system as a whole is dendritic — the clearest difference between solutional ravines and an ordinary erosional valley.",
+    observation:
+      "From the air the group appears as several barely visible dark seams in the forest, converging northward on a single valley mouth. What can actually be identified from height is the open meadow at the mouth and the pale rock walls that rise abruptly on either side.",
+    distinguish:
+      "Jánošíkove diery and Zádielska tiesňava are both limestone ravines; the difference is complexity of form — Zádielska is a single cut, this is a set of interconnected branches. Against the Hornád gorge, there is no permanent river here, and flow varies sharply with rainfall.",
+    concept:
+      "The fact that ravines occur in groups tells you that solution followed a network of joints: the rock is cut by two or three intersecting sets of fractures, water sinks and dissolves along them, and the ravines inherit their directions, producing the regular zigzags and branchings visible in plan.",
+    history:
+      "Terchová at the valley mouth developed from the twentieth century as a base for hiking and climbing, and the ladders and walkways in the ravines were built and are maintained by local mountaineering organisations.",
+  },
+  "prielom-dunajca": {
+    // 全六段 sources: 同中文侧。最险一段约 8 km；深切曲流；沿斯洛伐克与波兰交界。⚠️ 跨境只写交界、不涉主权。木筏漂流按客观事实简述。2026-09-13 首写。
+    seeing:
+      "The Dunajec Gorge was cut where the Dunajec slices through the limestone of the Pieniny, running along the Slovak–Polish frontier; its tightest stretch runs about 8 km. Its signature is the string of large bends the channel swings through inside the gorge, with near-vertical rock walls on either side.",
+    formation:
+      "The river had already developed a meandering course on gentle ground before the land rose; as uplift began it carried those bends downward with it, cutting them into the rock as what are called incised meanders. The strength of the limestone allows the outside of each bend to keep a sheer wall rather than collapsing to a slope.",
+    observation:
+      "From the air the gorge is a conspicuously sinuous deep seam through the mountains, and the shape of the bends reads best from altitude — a view hard to get from the ground. The outside of each bend is bare pale rock, the inside a gravel bar built by the river.",
+    distinguish:
+      "The Dunajec and Hornád gorges formed in much the same way, both rivers cutting across rising rock, but here the meanders are preserved far more completely, bend after bend. Against a solutional ravine like Zádielska, this was cut by a river with ample discharge and has a stable channel on its floor throughout.",
+    concept:
+      "Incised meanders are direct evidence of uplift: meanders form only where gradients are very low, so finding them carved into hard rock with walls hundreds of metres high means the ground was raised as a whole after the bends had formed, while the river simply kept to its original course and went on cutting down.",
+    history:
+      "The valley long served as a route between the mountain villages on either side, and raft trips down the river are long recorded and still run as a tourist activity. The limestone massifs flanking the gorge are protected by the national parks on their respective sides.",
+  },
+  "sulovske-skaly": {
+    // 全六段 sources: 同中文侧。古近纪（始新世）Súľov conglomerate；1973 年国家自然保护区、约 5.4 km²；砾岩层局部厚达数百米；Gotická brána 高约 13 m。2026-09-13 首写。
+    seeing:
+      "The Súľov Rocks, in the Súľov Mountains of north-western Slovakia, are a group of towers, needles, windows and gates weathered out of conglomerate. This is not limestone karst but a Palaeogene conglomerate — older limestone fragments cemented together — and the forms it weathers into are quite unlike ordinary karst.",
+    formation:
+      "The conglomerate formed in a Palaeogene coastal setting: fragments of older limestone were transported, deposited and cemented into thick beds, locally several hundred metres thick. Cement and clasts resist erosion differently, so weathering works along the boundaries between them and along joints in the beds, breaking the rock into columns and needles with gates and windows hollowed out between them.",
+    observation:
+      "From the air the Súľov Rocks are a pale patch of stone in the forest, the towers standing in groups with dry slots between them. The easiest features to identify are the natural arches among them; Gotická brána is about 13 m high and reads from the side as a regular arched opening in the wall.",
+    distinguish:
+      "The difference from the Slovak Karst is lithology: conglomerate here, weathering into columns, needles, gates and windows with no organised cave system below; pure limestone there, with a flat surface and everything of interest underground. Compared with the sandstone rock towns of Czechia, the parent rock here is conglomerate rather than sandstone, and individual pebbles are plainly visible on the surfaces of the columns.",
+    concept:
+      "Conglomerate landforms show that form depends on a rock's internal structure and not only on its chemistry. The clasts in the Súľov conglomerate are limestone and chemically entirely soluble, but because the mass consists of pebbles of many sizes set in cement, water seeps away along grain boundaries rather than concentrating into conduits — so it develops no cave system and is instead taken apart into towers and columns.",
+    history:
+      "The ruins of the medieval Súľov castle stand on one of the towers; the area was declared a national nature reserve in 1973, covers about 5.4 km², and is one of the main hiking and climbing destinations in north-western Slovakia.",
+  },
+  "liptovska-kotlina": {
+    // 全六段 sources: 同中文侧。瓦赫河上游山间构造盆地；Liptovská Mara 总库容约 3.605 亿 m³，斯洛伐克库容最大水库，属瓦赫河梯级。⚠️ 蓄水淹没村落只作工程事实简述。2026-09-13 首写。
+    seeing:
+      "The Liptov Basin lies on the upper Váh, with the Western Tatras and the Chočské vrchy to the north and the Low Tatras to the south. Its floor is flat and open and the ranges on both sides rise abruptly from it, which makes it one of the easiest basins in the country to recognise for what it is from the air.",
+    formation:
+      "The basin is tectonic in origin: the surrounding blocks were raised during the orogeny while this block subsided relatively, leaving a hollow enclosed by mountains that was then filled with gravel and sand brought down by the Váh and its tributaries. The sedimentary fill on the floor is consequently thick, and groundwater resources are concentrated here.",
+    observation:
+      "From the air the basin is a pale expanse of flat ground ringed by ridges, with a long narrow water surface across the middle — the Liptovská Mara reservoir. Liptovský Mikuláš lies at its eastern end and Ružomberok to the west, with continuous farmland and pasture between the two towns.",
+    distinguish:
+      "The Liptov Basin meets the Low Tatras to the south and the Western Tatras to the north along clear breaks of slope. Like the Turiec basin it is an intermontane basin along the Váh; the difference is scale and position — the Liptov Basin is further upstream and the ranges flanking it are higher.",
+    concept:
+      "An intermontane basin is not excavated by erosion but is a zone of relative subsidence produced by tectonics. Its floor is usually a thick body of river sediment, which is why such basins, rather than the ridges, tend to hold a mountain region's farmland, settlements and roads — population distribution in the mountains is often decided by the basins.",
+    history:
+      "The basin has been a regional farming and transport corridor since the Middle Ages. The Liptovská Mara reservoir was completed in the 1970s as part of the Váh cascade; filling it flooded a number of villages on the basin floor. Its total volume of about 360.5 million cubic metres makes it Slovakia's largest reservoir by volume.",
+  },
+  "zahorska-nizina": {
+    // 全六段 sources: 同中文侧。小喀尔巴阡以西、摩拉瓦河以东；斯洛伐克唯一大面积内陆风成沙丘区；沙源为末次冰期河流沉积；沙丘高出周围 10–15 m；Šranecké piesky 保护区约 10 km²；欧盟 LIFE 项目。2026-09-13 首写。
+    seeing:
+      "The Záhorie Lowland lies west of the Little Carpathians and east of the Morava, a low plain barely one or two hundred metres above sea level. What makes it unusual in Slovakia is its inland dunes — continuous fields of sand ridges standing locally as much as 20 m above the surrounding ground, among the larger inland dune complexes in central Europe.",
+    formation:
+      "The sand did not come from a desert but from rivers: during the last glacial period the bed sediments of the Morava and its tributary the Dyje lay exposed under sparse vegetation, and strong winds lifted the finer sand and piled it downwind into dunes. Vegetation returned after the glacial period and fixed most of the dunes, leaving bare sand exposed in only a few places.",
+    observation:
+      "From the air the Záhorie Lowland is flat country of pine plantation and farmland, the dunes showing as low pale belts within the forest, aligned in much the same direction — a record of the prevailing wind at the time. The Morava floodplain with its oxbows lies to the west, the forest belt of the Little Carpathians to the east.",
+    distinguish:
+      "These dunes resemble true desert dunes in outline but differ in origin and present state: the sand here was reworked by wind from glacial-age river deposits and is now essentially fixed by vegetation and no longer moving, whereas desert dunes lie where rainfall is too low for vegetation to hold the surface and the sand keeps migrating.",
+    concept:
+      "Inland dunes are a clue to past climate. Extensive wind-blown dune fields require three conditions at once: an ample supply of loose sand, winds strong enough to move it, and vegetation too sparse to hold the surface. That the area is now well vegetated and its dunes immobile means these dunes record a climatic phase quite unlike the present one.",
+    history:
+      "The pine woods here were long used for forestry and resin collection; part of the dune country escaped cultivation because it served for a long period as a military training area, which incidentally preserved bare-sand habitat, later managed for restoration under an EU LIFE project. The Šranecké piesky protected area covers about 10 km².",
+  },
+  "podunajska-nizina": {
+    // 全六段 sources: 同中文侧。由 Podunajská rovina（极平）与 Podunajská pahorkatina（起伏）两部分组成；潘诺尼亚盆地北缘；斯洛伐克主要农业区。未取到面积与产量数字，不写。2026-09-13 首写。
+    seeing:
+      "The Danubian Lowland occupies south-western Slovakia, the northern edge of the Pannonian Basin reaching into the country. It falls into two halves: the southern half along the Danube is exceptionally flat and is called the Danubian Plain, while the northern half against the mountains is a rolling hill country. It is Slovakia's principal agricultural region.",
+    formation:
+      "The lowland is a zone of tectonic subsidence: the Carpathian massifs around it were raised during the orogeny while this block sank relatively, and it was then filled layer by layer with gravel, sand and fines brought down by the Danube and its tributaries. The nearer the Danube, the younger and finer the deposits and the flatter the ground.",
+    observation:
+      "From the air the Danubian Lowland is an unbroken expanse of ground divided into a grid of fields, with no obvious relief and only the lines of channels and irrigation ditches to break it. Its northern margin meets the forest belts of the Little Carpathians and Tribeč along a hard edge; its southern margin is the web of water woven by the Danube and its distributaries.",
+    distinguish:
+      "The Danubian and East Slovak Lowlands are both lowlands on the northern rim of the Pannonian Basin; the difference is position and drainage. This one is dominated by the Danube system, flatter and larger; the East Slovak Lowland is dominated by the Bodrog and its neighbours and hemmed in more closely by mountains. It continues into the Little Hungarian Plain, geomorphologically one lowland divided by a frontier.",
+    concept:
+      "'Plain' and 'hill country' belong to two different levels of landform classification, though they are often treated as one. The Danubian Lowland contains both, which shows that within a single subsiding basin the ground nearest the trunk channel is levelled by the youngest deposits while the margins away from it keep the relief of an earlier surface. The test is the age and thickness of the sediment, not just the gradient at the surface.",
+    history:
+      "Farming here is long recorded and the region is Slovakia's main producer of grain and vegetables; the river ports and ferry crossings along the Danube have long been key points of regional transport.",
+  },
+  "vychodoslovenska-nizina": {
+    // 全六段 sources: 同中文侧。潘诺尼亚盆地北缘；Bodrog/Latorica/Uh/Hornád 下游冲积物；斯洛伐克最低点约 94 m 在其东南角博德罗格河畔（各源多写 94 m，无大地测量一手公告，写「约」）。零争议：不写任何邻国国名。2026-09-13 首写。
+    seeing:
+      "The East Slovak Lowland lies in the south-east of the country, a low plain half-enclosed by mountains and likewise part of the northern rim of the Pannonian Basin. Slovakia's lowest point is in its south-eastern corner on the bank of the Bodrog, at about 94 m above sea level.",
+    formation:
+      "The lowland is also the product of tectonic subsidence, filled by alluvium from the Bodrog, the Latorica, the Uh, the Laborec and the Ondava. Because the mountains enclose it fairly tightly and its outlet is narrow, large areas here historically stood under water as marshland, and only long programmes of drainage turned them into the farmland of today.",
+    observation:
+      "From the air the East Slovak Lowland is flat farmland with sinuous channels and strings of oxbows, and a regular grid of drainage ditches superimposed on the natural drainage — the coexistence of these two systems is the easiest way to recognise it. The forested outlines of volcanic uplands such as Vihorlat stand to the north and east.",
+    distinguish:
+      "The East Slovak and Danubian Lowlands are both on the northern rim of the Pannonian Basin; the difference is enclosure. This one is hemmed in on three sides with poor drainage and was historically dominated by marsh; the Danubian Lowland is far more open and Danube-dominated. Compared with an intermontane basin such as Liptov, it is on a much larger scale and is not pinched between high ranges.",
+    concept:
+      "A lowland is not automatically good farmland. Low-lying ground with poor drainage tends, before artificial drainage, to be marsh and seasonal floodland; the neat fields visible today are a product of the drainage system. A map of the drainage shows this: natural channels wander irregularly, artificial ditches run straight and in grids.",
+    history:
+      "Drainage and embankment works here were carried out progressively from the nineteenth century, converting large tracts of marsh to farmland; viticulture along the hill margins in the south-eastern corner is long recorded.",
+  },
+  "vah-river": {
+    // 全六段 sources: 同中文侧。约 403 km，斯洛伐克最长；两源 Biely Váh（高塔特拉 Kriváň 一带）/ Čierny Váh（低塔特拉 Kráľova hoľa 一带）；科马尔诺入多瑙河；沿河称 Považie；干流梯级水库群（级数与装机无一手来源，不写数字）。2026-09-13 首写。
+    seeing:
+      "The Váh is Slovakia's longest river, running about 403 km. It has two headstreams: the Biely Váh rises near Kriváň in the High Tatras and the Čierny Váh near Kráľova hoľa in the Low Tatras; once joined, the river runs south-west and finally enters the Danube at Komárno. The country along it has a name of its own, Považie.",
+    formation:
+      "Its course is set by structure: upstream it threads a string of intermontane basins such as Liptov, in its middle course it follows the longitudinal valleys between ranges, and once it reaches the Danubian Lowland the gradient collapses and deposition takes over. So the same river is erosional upstream and depositional downstream, and the whole transition can be read along four hundred kilometres.",
+    observation:
+      "From the air the upper Váh is a pale braided channel in intermontane basins, the middle course is cut into a succession of still reservoir surfaces, and the lower course meanders across the plain with wide floodplain tracts. The reservoir reaches have irregular water outlines and conspicuous dam lines, and are immediately distinguishable from the natural stretches.",
+    distinguish:
+      "The difference between the Váh and the Danube in Slovakia is not only size: the Danube is depositional and anabranching for virtually its whole Slovak course, while the Váh is erosional upstream and depositional downstream and shows both states. Compared with the Hornád, the Váh runs south-west into the Danube while the Hornád flows south out of the country.",
+    concept:
+      "The upper and lower reaches of a river are really two different geomorphic regimes: upstream the gradient is steep, the flow has capacity to spare for transport and incision, and the valley is excavated; downstream the gradient is low, transport capacity falls short, sediment accumulates, and the channel spends its energy by swinging sideways. To tell which regime a reach is in, look at whether the channel is set into a valley or spread across its own deposits.",
+    history:
+      "The Váh valley has been the main transport corridor of north-western Slovakia since the Middle Ages, and the towns and castles along it mostly stand where the valley narrows; a cascade of reservoirs was built on the main stem during the twentieth century for power generation and flood control.",
+  },
+  "danube-slovakia": {
+    // 全六段 sources: 同中文侧。经 Devínska brána 进入斯洛伐克，坡度骤减、河道分汊；德文门为阿尔卑斯山系与喀尔巴阡山系之间的构造缺口。境内河长与流量无一手来源，不写数字。零争议：不描述边界线。2026-09-13 首写。
+    seeing:
+      "The Danube enters Slovakia upstream of Bratislava through the Devín Gate, where the valley narrows into a natural gateway between massifs on either side. Beyond that gate the river's gradient falls away sharply and its channel begins to divide, spreading across the Danubian Lowland as a tract of anabranches and river islands.",
+    formation:
+      "Structurally the Devín Gate is the gap between the Alpine and the Carpathian systems, and the Danube passes through the mountain belt along exactly that gap. Losing gradient once clear of the mountains, the river loses transport capacity, and the gravel and sand it carries begin to accumulate on the bed, so the channel divides and shifts repeatedly and has built gravel deposits tens of metres thick.",
+    observation:
+      "From the air the Devín Gate is an unmistakable notch in the mountains, with the water surface markedly different in width inside and outside it. Below the gate the channel splits into a main stem and several anabranches with floodplain forest and sand bars between them; farther downstream, embankments and navigation works have regularised the channel, so artificial straight lines and natural bends run side by side.",
+    distinguish:
+      "This entry and the library's other Danube entries cover different reaches of one river: the Austrian reach alternates between mountains and basins, the reach around Visegrád in Hungary is a gorge where the river cuts across mountains, and the Hungarian reach is the lower course out on the great plain. What characterises the Slovak reach is the transitional state of a river just out of the mountains and in the act of dividing.",
+    concept:
+      "The point where a river leaves the mountains is a critical geomorphic threshold: gradient drops within a short distance, transport capacity falls with it, and the coarsest material drops out first. So the coarsest gravel lies near the mountain front, with grain size fining steadily downstream — a gradient that can be read simply by picking up stones along the river.",
+    history:
+      "The Devín Gate has been a route node since prehistory, and the crag inside it carries long-recorded castle remains; the Danube has long been the principal waterway here, and its river ports and crossings are key points of regional transport.",
+  },
+  "zitny-ostrov": {
+    // 全六段 sources: 同中文侧。约 1900 km²、长约 84 km、宽 15–30 km，布拉迪斯拉发至科马尔诺；夹在多瑙河、小多瑙河与瓦赫河之间；欧洲面积最大的河流岛；岛下砾石层为中欧重要地下水储集体。2026-09-13 首写。
+    seeing:
+      "Žitný ostrov is the tract of land enclosed between the Danube, its distributary the Little Danube, and the Váh: some 84 km long and 15 to 30 km wide, reaching from Bratislava to Komárno; sources differ on its area, the two figures commonly given being about 1,600 and about 1,900 km². By area it is the largest river island in Europe.",
+    formation:
+      "Its existence follows directly from the Danube's division below the mountains: main stem and distributary each swung and shifted, and the whole ground caught between them became an island. Beneath it lie thick river gravels and sands, porous and highly permeable, which makes it an important groundwater reservoir for central Europe — the water here is not at the surface but under it.",
+    observation:
+      "From the air Žitný ostrov looks nothing like an island, simply flat farmland enclosed by watercourses, because it is too large to read as one: only by following the two channels along its edges can it be confirmed as ground surrounded by water. The fields are regular, villages follow the roads, and there is virtually no relief.",
+    distinguish:
+      "Žitný ostrov and Szigetköz across the Danube are river-island tracts on the two sides of the same reach and share an origin; they differ in scale and internal condition — Žitný ostrov is much larger and its surface largely reworked for agriculture, while Szigetköz keeps a more complete network of anabranches and floodplain forest. The difference from a delta is that an island of this kind is pinched between two channels rather than built out where a river meets the sea.",
+    concept:
+      "The term 'river island' can mislead: Žitný ostrov is not a bar in midstream but an entire plain caught between a main stem and a distributary. To decide whether a piece of ground is an interfluve island of this kind, look at its boundaries — distributaries of the same river on every side, rather than sea or lake.",
+    history:
+      "Farming on the island is long recorded, and the 'rye' in its name records exactly its standing as a grain district; the groundwater beneath it is an important regional source of drinking water, which is why agricultural chemicals and industrial siting on the island have long been regulated.",
+  },
+  "strbske-pleso": {
+    // 全六段 sources: 同中文侧。湖面 1346 m、约 19.8 ha、最深约 20 m；高塔特拉斯洛伐克一侧面积第二大的冰蚀湖；湖畔聚落为度假与冬季运动中心。成因按「冰碛堰塞」表述（tarn 一词在来源里泛指山地湖）。2026-09-13 首写。
+    seeing:
+      "Štrbské pleso lies on the southern slope of the High Tatras at 1,346 m, covering about 19.8 hectares and reaching some 26 m deep — the second largest glacial lake by area on the Slovak side of the High Tatras. The settlement of the same name on its shore is one of the main resort and winter-sports centres of the Tatra region.",
+    formation:
+      "The basin is not a cirque but a hollow dammed by glacial moraine. An ice-age glacier came down from the range, halted at this altitude and left an arcuate ridge of deposits; after the ice withdrew, the depression behind that ridge filled with water — which is why one side of the lake is a gentle moraine bank and the other a mountainside.",
+    observation:
+      "From the air it is a nearly circular dark water surface on the southern slope of the Tatras, its northern shore hard against forest and mountain, its southern shore given over to the settlement and the railway. The lake sits right at the upper edge of the forest belt, with the rock walls of the main High Tatras crest visible above it.",
+    distinguish:
+      "Štrbské pleso differs from the true cirque lakes higher in the Tatras: those lie on the floors of circular cirques enclosed on three sides by cliffs and are generally higher and deeper; this one was dammed by moraine, so it is lower, rounder and shallower. Compared with Morské oko in the Vihorlat, that lake was dammed by a landslide, not by ice.",
+    concept:
+      "Mountain lakes have several origins, and shape and position hint at which: a lake on the floor of a circular hollow with cliffs on three sides is a cirque lake; one at a valley mouth with an arcuate ridge on one side is moraine-dammed; one below a slope whose outline follows a former valley is landslide-dammed. Working out the origin needs no diving — the surrounding landforms are enough.",
+    history:
+      "The lakeside settlement developed from the late nineteenth century as a climate-cure and winter-sports resort, and a narrow-gauge electric railway ties it to the towns below the range; it was among the first resorts in the Tatras to be reached by rail.",
+  },
+  "morske-oko": {
+    // 全六段 sources: 同中文侧。湖面 618 m、约 13.8 ha（原约 7 ha，水位抬高约 5 m）、最长约 750 m、最宽约 312 m、最深约 25 m；斯洛伐克面积最大的非喀斯特天然湖、按面积全国第三大天然湖；1984 年保护区、现国家自然保护区。2026-09-13 首写。
+    seeing:
+      "Morské oko lies deep in the forest of the Vihorlat Mountains at 618 m, covering about 13.8 hectares, some 750 m at its longest and 312 m at its widest, and reaching about 25 m deep. It is the largest natural lake in Slovakia of non-karst origin and, by area, the third largest natural lake in the country.",
+    formation:
+      "The basin was dammed by a landslide: volcanic rock on the Vihorlat slopes crept downhill, and one larger collapse blocked a valley, holding back the water that became the lake. A dam built at the outlet in the 1880s raised the water level by about 5 m, enlarging the lake to today's roughly 13.8 hectares.",
+    observation:
+      "From the air it is a darker patch of water in continuous forest, its outline following the former valley, with steep slope at one end and the collapse mass blocking the valley mouth at the other. There is almost no building around it, which is the direct clue from altitude that this is a natural lake and not a reservoir — reservoirs generally show a straight dam line and access roads.",
+    distinguish:
+      "Morské oko has a wholly different origin from the glacial lakes of the Tatras: those were excavated by ice or dammed by moraine and lie in the alpine belt, while this one was dammed by a landslide and lies within the forest belt. The difference from an artificial reservoir is the shape of the shoreline — a landslide-dammed lake follows the curves of the former valley, a reservoir has one straight stretch where the dam is.",
+    concept:
+      "The lifespan of a landslide-dammed lake depends on the dam: collapse debris is usually loose, and once downstream flow cuts through it the lake drains. Those that persist generally have a dam thick enough, and an outlet controlled by stable rock, that its very survival testifies to how firm the blocking mass is.",
+    history:
+      "The lake has been a well-known local natural feature since the nineteenth century; it was declared a protected area in 1984 and is now a national nature reserve, and the primeval beech forest around it falls within the area of the transnational serial World Heritage property.",
+  },
+  "julian-alps-slovenia": {
+    // 全六段 sources: 同中文侧。Triglav 2864 m；north face ~1000 m high / ~3000 m wide；Alpine conservation park in the Triglav Lakes Valley 1924, declared Triglav National Park 1961, enlarged to present size by the 1981 Act, Slovenia's only national park（2026-09-13 当批核实改正，tnp.si）；biosphere reserve 2003, cross-border with Italy 2024；glacier monitored by ZRC SAZU since 1946。跨境只写 "along the Slovenian–Italian frontier"。2026-09-13 首写。
+    seeing:
+      "The Julian Alps are a group of limestone peaks at the south-eastern end of the Alpine chain. Most of the range lies in north-western Slovenia, with its western section reaching the area along the Slovenian–Italian frontier. Its summit, Triglav, rises to 2,864 m and is Slovenia's highest peak; its north face is a limestone wall about 1,000 m high and some 3,000 m wide that rises almost straight from the valley floor.",
+    formation:
+      "The range is built of Mesozoic shallow-marine carbonates — limestone and dolomite — thrust and lifted to their present height during Alpine mountain building. Ice-age glaciers flowed outwards from the high ground and carved broad U-shaped valleys, cirques at their heads and chains of lake basins; Lake Bled, Lake Bohinj and the Triglav Lakes Valley all belong to that glacial landscape. Because limestone dissolves, the high rock surfaces are also riddled with solution grooves, shafts and sinkholes, and surface water quickly disappears underground.",
+    observation:
+      "From the air the Julian Alps are a cluster of pale grey peaks, with forest reaching only halfway up the slopes and bare limestone and scree above. The easiest landmark is Triglav's triangular summit and the huge wall on its northern side; the two dark bodies of water at the eastern foot of the range are Lake Bled and Lake Bohinj, while to the west the Soča has cut a deep green valley.",
+    distinguish:
+      "Compared with the Kamnik–Savinja Alps to the east, the Julian Alps cover a larger area, reach a higher summit and hold more glacial lakes and deeply cut valleys. The difference from the Karawanks to the north is one of trend and structure: the Karawanks are a long, narrow range following a major fault zone, whereas the Julian Alps are one broad limestone massif.",
+    concept:
+      "The Julian Alps are a textbook case of high-alpine karst, where the same rock mass is worked on by both ice and dissolution. Glaciers shape the large valleys and basins, while dissolution routes surface water underground — which is why high lakes here often have no obvious surface outlet while large springs emerge at the foot of the mountains. The Triglav Glacier has been monitored continuously since 1946 and in recent years has shrunk to scattered remnants of ice, a small-scale record of glacier retreat.",
+    history:
+      "An Alpine conservation park was established in the Triglav Lakes Valley as early as 1924; in 1961 the valley was declared Triglav National Park, and the Triglav National Park Act of 1981 enlarged the park to its present size. It is Slovenia's only national park. In 2003 the Slovenian Julian Alps were designated a UNESCO biosphere reserve, which in 2024 was extended into a cross-border biosphere reserve shared with Italy. Climbing Triglav is a deeply rooted mountaineering tradition in Slovenia.",
+  },
+  "kamnik-savinja-alps": {
+    // 全六段 sources: 同中文侧。Grintovec 2558 m, ~1900 m above the Kamniška Bistrica valley；easternmost limestone group of the Southern Alps；glacially carved valleys。2026-09-13 首写。
+    seeing:
+      "The Kamnik–Savinja Alps in northern Slovenia are the easternmost limestone group of the Southern Alps. Their highest point, Grintovec, reaches 2,558 m, about 1,900 m above the floor of the Kamniška Bistrica valley to the south. The group is not large, but the relief on either side of the main crest is steep, and its jagged outline can be seen from much of Upper Carniola.",
+    formation:
+      "The mountains are uplifted Mesozoic limestone and dolomite, part of the same structural belt as the Julian Alps. Ice-age glaciers flowed down both flanks of the main crest and cut several long, deep glacial valleys such as the Logar Valley, leaving steep headwalls and hanging waterfalls at their heads. High up, the limestone is dissolved into shafts and caves, while Velika Planina on the southern side is a raised karst tableland.",
+    observation:
+      "From the air the group reads as an east–west ridge of pale grey rock, with deep valleys running off to the north and south. Grintovec's pyramid is the easiest point to pick out along the crest. On the northern side the floor of the Logar Valley is flat and clearly U-shaped; on the southern side the pale green pastures of the Velika Planina tableland are visible.",
+    distinguish:
+      "The Kamnik–Savinja Alps are similar in rock type to the Julian Alps; the difference is scale. They cover a much smaller area and their summit is about 300 m lower, yet their glacial valleys are more tightly packed. Pohorje to the east looks entirely different — a rounded, forest-covered upland of metamorphic and igneous rock rather than limestone.",
+    concept:
+      "This group shows that relative relief often matters more than absolute height in how rugged a mountain looks. Grintovec is unremarkable by Alpine standards, but it rises nearly 2,000 m from its valley floor and glaciers have cut both flanks steeply; that vertical difference is what mountaineers and geomorphologists pay attention to.",
+    history:
+      "High-mountain grazing here is long recorded, and pastures on the southern side and in the northern valleys are still used seasonally. The Logar Valley was declared a landscape park in 1987, and the network of trails and mountain huts is an important part of Slovenia's climbing tradition.",
+  },
+  karawanks: {
+    // 全六段 sources: 同中文侧。~120 km long E–W；Stol 2236 m along the Slovenian–Austrian frontier；Periadriatic lineament divides the range into northern and southern parts, with metamorphic and igneous rocks along it；UNESCO Global Geopark。2026-09-13 首写。
+    seeing:
+      "The Karawanks run east–west along the Slovenian–Austrian frontier for about 120 km, a long and narrow mountain range. Their highest point, Stol, at 2,236 m, also lies along the frontier. Seen from the Slovenian side they form a continuous barrier across the northern edge of the Upper Carniolan plain.",
+    formation:
+      "A prominent geological feature of the Karawanks is a major fault zone that runs the length of the range — the Periadriatic lineament. It is one of the principal structural lines within the Alps, along which the blocks on either side have moved horizontally relative to each other, so the range is split into northern and southern parts that differ in rock type and in the basins their sediments came from; metamorphic and igneous rocks are exposed along the fault zone itself. The limestone parts form steep rocky crests, while the rest is comparatively rounded.",
+    observation:
+      "From the air the Karawanks are a slender mountain belt running dead straight, with open valleys or basins on both sides that meet the ridge along a clear edge. The crest alternates between pale grey limestone peaks and meadow-covered rounded ridges, a visible expression of the different rocks in the northern and southern parts.",
+    distinguish:
+      "The Karawanks, like the Julian Alps and the Kamnik–Savinja Alps to the south, belong to the Southern Limestone Alps, but their form is different: the other two are broad massifs, whereas the Karawanks are a long, narrow range whose trend is controlled by a fault zone.",
+    concept:
+      "The Karawanks are a good example of a fault zone controlling the trend of a mountain range. Where rocks formed in different tectonic units are pushed together along a major fault, the fault zone itself becomes the backbone of the range, and along such structural lines rocks of completely different origin can be seen side by side within a very narrow strip.",
+    history:
+      "Several passes across the range serve as routes between its northern and southern sides, and mountain grazing and mining are long recorded. The Karawanks area is today a UNESCO Global Geopark managed across the frontier.",
+  },
+  pohorje: {
+    // 全六段 sources: 同中文侧。Črni vrh 1543 m；south-easternmost part of the Central Alps；Palaeozoic metamorphic rocks at the margins, granodiorite and other igneous rocks in the centre。2026-09-13 首写。
+    seeing:
+      "Pohorje, west of Maribor in north-eastern Slovenia, is a forest-covered upland whose highest point, Črni vrh, reaches 1,543 m. Its outline is broad and rounded with no sharp peaks, and from the Drava Plain it looks like a long dark green screen.",
+    formation:
+      "Unlike the limestone mountains of north-western Slovenia, Pohorje belongs to the Central Alps and is their south-easternmost part. Its margins are Palaeozoic metamorphic rocks and its centre is granodiorite and other igneous rocks intruded into them. Crystalline rocks like these do not dissolve; they weather into thick soils, so the massif is rounded, densely forested and drained by a far better developed network of surface streams than karst mountains.",
+    observation:
+      "From the air Pohorje is one continuous block of dark green forest, with gently sloping high ground on top dotted with forest clearings, peat bogs and small lakes. Streams radiate down from the massif in all directions, their valley mouths opening onto towns on the plain — a radial drainage pattern never seen in karst mountains.",
+    distinguish:
+      "Pohorje and the Kamnik–Savinja Alps lie not far apart, but they look nothing alike: the first is a forested crystalline dome, the second bare limestone crags. When telling Slovenia's uplands apart, rock colour and the presence of surface streams are often a better guide than elevation.",
+    concept:
+      "Pohorje shows how rock type dictates drainage. In limestone country rain seeps underground along fractures and few streams flow on the surface; in metamorphic and igneous country the rock is nearly impermeable, water has to run off across the surface, and a dense radial pattern of stream valleys develops.",
+    history:
+      "Pohorje has long been devoted mainly to forestry, with forestry settlements and farmsteads scattered across its slopes. Since the twentieth century it has also become a skiing and hiking area close to Maribor.",
+  },
+  sneznik: {
+    // 全六段 sources: 同中文侧。Veliki Snežnik 1796 m, highest non-Alpine peak in Slovenia；northern Dinarides karst plateau-mountain；mainly Cretaceous limestone with Jurassic limestone and some dolomite at the top；glaciokarst；summit botanical reserve 1964。零争议：不写邻国国名。2026-09-13 首写。
+    seeing:
+      "Snežnik, in southern Slovenia, is a high karst limestone upland whose summit, Veliki Snežnik, reaches 1,796 m — the highest peak in Slovenia outside the Alps. The name means 'snowy mountain', and in winter and spring its white top is visible from much of Inner Carniola.",
+    formation:
+      "The massif belongs to the northern Dinaric Alps and is built mainly of Cretaceous limestone, with Jurassic limestone and a little dolomite at the top. During the ice age the top of the upland carried glaciers, and glacial action layered on top of karst dissolution to produce a glaciokarst landscape of glacial hollows and moraines mixed with dense solution dolines. The massif has almost no surface rivers: precipitation soaks underground and re-emerges as springs at its foot.",
+    observation:
+      "From the air Snežnik is one broad block of high ground under continuous forest, with only the highest summit area showing meadow and scree. Beneath the canopy the ground is pocked with dolines of every size. No distinct river valleys cut into the massif from any side — the plainest outward sign of a karst mountain.",
+    distinguish:
+      "Snežnik and the Julian Alps are both high limestone mountains; the difference lies in structural setting and form. The Julian Alps belong to the Alps, with sharp peaks and deeply cut glacial valleys; Snežnik belongs to the Dinarides, a broad-topped plateau-mountain with forest reaching high up its slopes.",
+    concept:
+      "Snežnik is a study site for glaciokarst. Whether a karst upland carried glaciers during the ice age is judged by whether glacial landforms such as moraines and glacial hollows appear alongside karst landforms such as dolines; the overlap shows that ice once moved across soluble rock.",
+    history:
+      "The area has long been used mainly for forestry, and forest management here is long recorded. Because of its rich flora, the summit area was declared a botanical reserve in 1964, and the trail to the top is a traditional climbing route in Inner Carniola.",
+  },
+  "kras-plateau": {
+    // 全六段 sources: 同中文侧。Carbonate tableland extending north-west to the Slovenian–Italian frontier；bounded by Vipava Valley flysch (N) and the Reka valley (SE)；the term karst derives from the place name；dolines, blind and dry valleys, large collapse dolines above the Reka's underground course；terra rossa。No area / dimension numbers。2026-09-13 首写。
+    seeing:
+      "The Kras Plateau in south-western Slovenia is a carbonate tableland whose north-western section extends to the area along the Slovenian–Italian frontier. The geographical term karst comes from this plateau's name, Kras: it was one of the first places where solution landforms were studied systematically, and the whole family of such landscapes was named after it.",
+    formation:
+      "The plateau is limestone, bounded by the flysch of the Vipava Valley to the north and the Reka valley to the south-east. Rainwater carrying carbon dioxide seeps into fractures and slowly dissolves the rock, producing dolines of all sizes at the surface and caves and underground rivers below. The Reka, flowing in from impermeable flysch country, sinks underground here, and where the roof above its underground course has collapsed, great collapse dolines such as those at Škocjan have formed.",
+    observation:
+      "From the air the Kras is a tableland without rivers, its surface covered with small round hollows. Red soil collects on their floors and is often worked as small fields or vineyards, surrounded by scrub and low woodland. Along the northern and south-eastern edges the valleys are noticeably greener with clearly defined streams — that is the impermeable flysch.",
+    distinguish:
+      "The Kras Plateau and the Ljubljana Marsh both lie on the margins of Slovenia's karst, but one is a tableland with almost no surface water and the other a subsiding basin where the water table is high enough to keep the ground waterlogged. The difference from the Trnovo Forest Plateau is height and vegetation: the latter is higher and covered in extensive forest, whereas the Kras is lower and dominated by scrub and farmland.",
+    concept:
+      "The doline is the basic unit of karst terrain: surface water gathers at a point along fractures and dissolves out a bowl-shaped hollow. It shows that what matters in karst is not how hard the rock is but whether water can dissolve it; on soluble rock water does not flow over the surface, so the land becomes a field of closed hollows rather than a connected network of valleys.",
+    history:
+      "Stone houses, dry-stone walls and vineyards on red soil are long recorded on the plateau, and the local red wine is protected under the name of the region. The Škocjan Caves were inscribed on the UNESCO World Heritage List in 1986, and the Classical Karst as a whole is on the World Heritage Tentative List.",
+  },
+  pokljuka: {
+    // 全六段 sources: 同中文侧。High karst plateau on the eastern edge of Triglav National Park, roughly 1,200–1,500 m；Triassic limestone and dolomite；reshaped by the Pokljuka glacier；largest forested area in the park；glacial-relict peat bogs。No area number。2026-09-13 首写。
+    seeing:
+      "Pokljuka, on the eastern edge of Triglav National Park, is a high karst plateau lying roughly between 1,200 and 1,500 m. It is almost entirely covered in spruce forest — the largest forested area in the national park — and sits between the lake districts of Bled and Bohinj.",
+    formation:
+      "The plateau's bedrock is Triassic limestone and dolomite. During the ice age a glacier covered and scoured its surface; once the ice retreated, dissolution took over, scattering shafts, sinkholes and small hollows across the surface so that nearly all rainfall drains underground. Where glaciers left impermeable deposits, water ponded into bogs that gradually developed into today's peat bogs.",
+    observation:
+      "From the air Pokljuka is a gently undulating sea of dark green forest whose edges drop steeply towards Bled and Bohinj. Pale open patches among the trees are mountain pastures and forest meadows; smaller, darker patches are peat bogs. Nowhere across the plateau is there a continuous river.",
+    distinguish:
+      "Pokljuka and Velika Planina are both raised karst tablelands; the difference is surface cover — Pokljuka is almost all forest, Velika Planina open alpine pasture. Compared with the Trnovo Forest Plateau, Pokljuka belongs to the Alps and was glaciated, and its peat bogs are evidence of that glacial legacy.",
+    concept:
+      "The plateau's peat bogs are an example of an ice-age relict ecosystem: in hollows where water collected after the glaciers retreated, cold wet conditions slowed decomposition and plant remains built up layer by layer as peat. They can exist on a karst plateau only because glacial deposits sealed the fractures that would otherwise have drained the water away.",
+    history:
+      "Pastures and forestry on the plateau are long recorded, and traditional seasonal grazing still continues on some of the pastures. In winter it is a destination for cross-country skiing.",
+  },
+  "velika-planina": {
+    // 全六段 sources: 同中文侧。"Big pasture"；alpine pasture tableland on the southern edge of the Kamnik–Savinja Alps；Gradišče 1666 m；traditional herdsmen's huts, cattle driven up from late spring to summer。No hut count / area。2026-09-13 首写。
+    seeing:
+      "Velika Planina, on the southern edge of the Kamnik–Savinja Alps, takes its name from the words for 'big mountain pasture'. It is a raised tableland whose highest point, Gradišče, stands at 1,666 m, its surface covered with continuous meadow and clusters of herdsmen's huts.",
+    formation:
+      "The tableland is limestone, a part of the Kamnik–Savinja Alps lifted into a gently sloping upland. Its surface has been dissolved into many shallow hollows and rainwater drains quickly underground, so there are no streams on top. The slopes at its edges are very steep, forming a clear break with the valleys below.",
+    observation:
+      "From the air Velika Planina is a pale green upland ringed by dark forest and falling away steeply at its edges. Clusters of small dark dots across the surface are the huts of individual herders' settlements, mostly arranged around the rims of the hollows and roofed with dark wooden shingles.",
+    distinguish:
+      "Velika Planina and Pokljuka are both karst tablelands, but they are used differently: Velika Planina is open pasture, Pokljuka continuous forest. Compared with the main crest of the Kamnik–Savinja Alps to the north, it has no rock peaks or cirques — it is a grassland upland kept open by long-standing grazing.",
+    concept:
+      "Mountain pasture is a landscape maintained by people: below the treeline, meadows left without regular grazing and mowing are slowly reclaimed by scrub and forest. The open grassland of Velika Planina is itself the product of seasonal herding carried on over a very long time.",
+    history:
+      "Seasonal herding on the tableland is a long-standing tradition: each year from late spring into summer, herders drive their cattle up and live in the huts, returning to the valleys in autumn. The huts keep their traditional form, and this kind of herding settlement is one of the defining features of Slovenia's mountain culture.",
+  },
+  "trnovski-gozd": {
+    // 全六段 sources: 同中文侧。North-westernmost karst plateau of the Dinarides；Mali Golak 1495 m；no surface streams；Paradana Big Ice Cave a classic site of vegetation inversion；two nature reserves (Paradana, Golaki)。No cave dimensions。2026-09-13 首写。
+    seeing:
+      "The Trnovo Forest Plateau, in western Slovenia north of the Vipava Valley, is the north-westernmost karst plateau of the Dinaric Alps. Its highest point, Mali Golak, reaches 1,495 m; the plateau is almost entirely forested, and its southern edge looks down on the Vipava Valley over a steep escarpment.",
+    formation:
+      "The plateau is limestone raised as a block by tectonic movement. Rainwater seeps underground along fractures, so there is not a single surface river on the plateau, and the ground is broken up by closed hollows, rock knolls, caves, shafts and small solution forms such as grooves and pans. Some deep hollows and cave entrances act as traps for cold air, which sinks to the bottom in winter and lingers even into summer.",
+    observation:
+      "From the air the Trnovo Forest Plateau is a sea of dark green forest with a sheer southern escarpment, in striking contrast with the open, intensively farmed Vipava Valley below. Beneath the canopy the relief rises and falls constantly; forest roads and clearings cross it here and there, but no streams are visible.",
+    distinguish:
+      "The Trnovo Forest Plateau is separated from the Julian Alps to the north by only a few river valleys, yet it belongs to a different mountain system: it is part of the Dinarides, broad-topped and forested, without Alpine peaks or cirques. Compared with the Kras Plateau it is much higher and far more densely wooded.",
+    concept:
+      "The Paradana Big Ice Cave is a classic site of vegetation inversion. In mountains temperatures normally fall with height and vegetation passes from broadleaf to conifer forest as you climb; in a deep karst hollow, however, cold air sinks and pools, so the bottom is colder than the rim, and cold-tolerant plants grow below warmth-loving ones — an inverted sequence.",
+    history:
+      "The plateau has long been a forestry area, with forest management long recorded; in the past ice from the ice cave was cut and sold. Two nature reserves, Paradana and Golaki, have been established on the plateau.",
+  },
+  "goriska-brda": {
+    // 全六段 sources: 同中文侧。Westernmost hills in Slovenia, Sabotin to the NE and Korada to the N, Soča valley to the E；flysch ('opoka') of alternating sandstone, marl and carbonate turbidites；ridges roughly N–S；terraced vineyards。No area / elevation numbers。跨境只写 "along the Slovenian–Italian frontier"。2026-09-13 首写。
+    seeing:
+      "Goriška Brda is the westernmost range of hills in Slovenia, with Mount Sabotin to the north-east, Mount Korada to the north, the Soča valley to the east and its western edge along the Slovenian–Italian frontier. The hills are closely folded with hardly any flat ground: villages sit on the ridges and the slopes are stacked with vineyards.",
+    formation:
+      "The hills are made of flysch — sandstone, marl and carbonate turbidites stacked in alternating layers, which locals call opoka. Flysch is sediment delivered repeatedly by turbidity currents into a deep marine basin; its beds are thin and soft and offer little resistance to erosion, so running water has carved it into narrow ridges and deep ravines trending roughly north–south. Weathered marl produces mineral-rich soils well suited to vines.",
+    observation:
+      "From the air Brda is a hill country cut into pieces by dense ravines, its ridgelines lined up roughly north–south. Small villages and church towers are strung along the crests, the slopes are cut into terraces, and rows of vines point in different directions on different aspects, so the whole landscape looks like a creased carpet.",
+    distinguish:
+      "Brda lies only a valley away from the Kras Plateau, yet the two could hardly be more different: the Kras is a permeable limestone tableland with no surface streams and a surface covered in round hollows; Brda is impermeable flysch hill country, full of ravines and with well-developed surface drainage. The boundary between them is the contact between the two rock types.",
+    concept:
+      "Flysch is a sedimentary assemblage typical of the front of a mountain belt: while the mountains rise, the deep basin beside them keeps receiving debris from turbidity currents, building up rhythmic interbeds of sandstone and mudstone. Because it is soft, thin-bedded and impermeable, flysch country is always densely dissected with broken slopes, in sharp contrast with neighbouring limestone.",
+    history:
+      "Vine growing and winemaking in the hills have a long tradition, and the small ridge-top villages keep their traditional stone houses. Terraced vineyards are the most recognisable human feature of this landscape.",
+  },
+  "slovenske-gorice": {
+    // 全六段 sources: 同中文侧。Tertiary low hills between the Drava and the Mura；classified among Slovenia's 'Tertiary low hills' with high erosion risk。No height numbers。2026-09-13 首写。
+    seeing:
+      "The Slovene Hills (Slovenske gorice) lie in north-eastern Slovenia between the Drava and the Mura, a rolling expanse of low hills. There are no conspicuous peaks; the hilltops are rounded and the slopes gentle, and vineyards, orchards, small woods and scattered farmsteads are woven together across them.",
+    formation:
+      "The hills are built of soft Tertiary sediments. Once these deposits were raised above the surface, running water cut them into a series of low ridges and broad valleys. Because the sediments are soft, the hilltops are rounded and the slopes are prone to erosion and small landslides.",
+    observation:
+      "From the air the Slovene Hills are an undulating belt of interleaved green and light brown, with roads and farmhouses running along the ridges, vineyards mostly on south-facing slopes, and woods and grassland on north-facing slopes and valley floors. Compared with Pohorje to the west, they are much lower and far more fragmented into small plots.",
+    distinguish:
+      "The Slovene Hills and Goriška Brda are both known for vineyards, but their rocks differ: Brda is flysch laid down by deep-sea turbidity currents, thin-bedded with hard and soft layers and cut by narrow ravines; the Slovene Hills are younger, softer Tertiary sediments with rounder hilltops and broader valleys.",
+    concept:
+      "Slovenian geographers class this kind of terrain separately as 'Tertiary low hills': the rock is soft and the slopes are not steep, yet the ease with which it erodes makes it very sensitive to how the land is used. On sloping fields without soil conservation, rainy-season runoff can strip the topsoil quickly — exactly the issue that land-use studies of these hills focus on.",
+    history:
+      "Vine growing and farming in the hills have a long tradition, and the farmhouses and vineyard cottages scattered along the ridges form the typical settlement landscape of the area.",
+  },
+  "ljubljansko-barje": {
+    // 全六段 sources: 同中文侧。Tectonic depression south of Ljubljana at the junction of the Alpine and Dinaric zones, ~160 km²；shallow Holocene lake；40+ pile-dwelling sites found since 1875, inscribed 2011 as part of 'Prehistoric Pile Dwellings around the Alps'；most of the marsh declared a landscape park in 2008（当批核实改正）。2026-09-13 首写。
+    seeing:
+      "The Ljubljana Marsh, just south of the capital, is a flat wetland of about 160 km² where wet meadows, drainage ditches, scattered hedgerows and fields are woven together. It looks like nothing more than a plain on the edge of the city, yet beneath it lie the remains of people who lived on a lakeshore thousands of years ago.",
+    formation:
+      "The depression lies at the junction of the Alpine and Dinaric structural zones, where the crust continues to subside slowly. The sinking basin has been steadily filled with river and lake sediments; in the Holocene it held a shallow lake, which gradually silted up and turned to marsh, laying down thick beds of peat and mud. Groundwater from the surrounding karst uplands emerges around its edges and keeps the water table high.",
+    observation:
+      "From the air the Ljubljana Marsh is a flat floor enclosed by hills and mountains, divided by straight drainage ditches into long strips of land coloured the dark green of wet meadow and the brown of ploughed fields. A few isolated knolls stand out of the plain like islands, and the Ljubljanica meanders across it towards the city.",
+    distinguish:
+      "The Ljubljana Marsh and the Mura Plain are both very flat but formed differently: the Mura Plain is a big river's alluvial plain built from the sand and gravel it carried; the Ljubljana Marsh is a subsiding tectonic basin that once held a lake, with peat and lake deposits beneath it.",
+    concept:
+      "The Ljubljana Marsh shows why wetlands are an archaeologist's safe deposit box. Peat and lake mud stay waterlogged and starved of oxygen for long periods, so microbes can barely break down organic material, and wooden piles, wooden tools and even dugout canoes survive — which is why the prehistoric pile-dwelling sites here could be found so systematically.",
+    history:
+      "From the Neolithic onwards people lived on the lakeshore in houses raised on wooden piles. More than forty pile-dwelling sites have been found here since 1875, and in 2011 they were inscribed on the UNESCO World Heritage List as part of the transnational serial property 'Prehistoric Pile Dwellings around the Alps'. Drainage works in modern times turned large areas of marsh into meadow and farmland, and in 2008 most of the marsh was declared the Ljubljana Marsh Landscape Park.",
+  },
+  "pomurska-ravnina": {
+    // 全六段 sources: 同中文侧。Alluvial plain on both banks of the Mura, the part of the Pannonian Basin reaching into Slovenia；the Mura runs ~96 km in Slovenia and there changes from an Alpine to a lowland river；sediments left by the Pannonian Sea hold low-temperature geothermal water。零争议：不写邻国国名、不写边界。2026-09-13 首写。
+    seeing:
+      "The Mura Plain in north-eastern Slovenia is an almost perfectly flat alluvial plain on both banks of the Mura, the part of the Pannonian Basin that reaches into Slovenia. Its fields are laid out in neat blocks, villages string out along the roads, and the horizon is wide open in every direction — a world away from the mountains of western Slovenia.",
+    formation:
+      "The Pannonian Basin was once covered by an inland sea, the Pannonian Sea, which left thick sediments behind when it withdrew. The Mura then brought in large quantities of sand and gravel from the Alps and spread them out here as an alluvial plain. The river runs about 96 km in Slovenia, and it is on this stretch that it changes from a fast Alpine river into a slower lowland one, free to shift its channel and leave oxbow lakes and floodplain forest behind.",
+    observation:
+      "From the air the Mura Plain is a chequerboard of fields whose colours change with crops and seasons. Along the Mura runs a dark green belt of riverine forest of varying width, hiding winding old channels and waterlogged hollows. To the north the plain rises gradually into low hills.",
+    distinguish:
+      "The Mura Plain and the Drava Plain are both river plains in north-eastern Slovenia; they differ in position and in what lies beneath them. The Drava Plain lies just south of Maribor over a thick sand-and-gravel aquifer; the Mura Plain lies further east within the Pannonian Basin, where deep marine sediments hold geothermal water.",
+    concept:
+      "The Mura Plain's hot springs show that sedimentary basins can have geothermal resources too. Geothermal heat does not have to come from volcanoes: in a thick sedimentary basin, temperature rises with depth, and porous sand layers can store hot water that a well can bring to the surface as a low-temperature geothermal resource. The spa industry here is built on exactly that structure.",
+    history:
+      "Farming on the plain has a long tradition; the Mura once carried floating water mills and ferries, and riverside villages kept traditional timber and brick houses. In recent decades spas using geothermal water have become an important industry in the area.",
+  },
+  "dravsko-polje": {
+    // 全六段 sources: 同中文侧。Roughly triangular alluvial plain on the right bank of the Drava between Maribor, Ptuj and Slovenska Bistrica；Quaternary sand-and-gravel aquifer ~293 km²（gravel thickness removed after batch check）；drinking-water source。2026-09-13 首写。
+    seeing:
+      "The Drava Plain in north-eastern Slovenia is a roughly triangular plain on the right bank of the Drava, its corners at Maribor, Ptuj and Slovenska Bistrica. The ground is extremely flat, with fields, villages and industrial areas laid out neatly across it.",
+    formation:
+      "After leaving the Alps, the Drava spread large quantities of gravel here, building a Quaternary gravel plain. Rain and river water seep into the gravel and form an underground aquifer covering about 293 km². Because gravel is so permeable, there are few surface streams and the water moves underground.",
+    observation:
+      "From the air the Drava Plain is a clearly outlined triangle of flat land, with the dark green bulk of Pohorje to the west and the Drava and its riverside woods to the north-east. Fields are large and regular, roads run straight, and on the river side the artificial water surfaces of canals and hydropower plants can be seen.",
+    distinguish:
+      "The Drava Plain and the Ljubljana Marsh are both flat, but their hydrology is opposite: the Ljubljana Marsh has a high water table and ground that stays wet; the Drava Plain is thick gravel through which water drains rapidly, so its surface is dry while below lies a large exploitable reservoir of fresh water.",
+    concept:
+      "The Drava Plain is a textbook alluvial aquifer. Gravel laid down by a river stores water in the pores between its grains like a sponge; such aquifers recharge quickly and yield large volumes, making them the drinking-water source for many lowland towns — but they are also highly vulnerable to surface pollution, since activity on the ground directly affects groundwater quality.",
+    history:
+      "Ptuj, on the Drava, is one of Slovenia's historic towns, and farming on the plain is long recorded. A cascade of hydropower plants has since been built on the Drava, and the plain's groundwater supplies the surrounding towns.",
+  },
+  "soca-river": {
+    // 全六段 sources: 同中文侧。Rises at a karst spring in the Trenta valley；~96 km in Slovenia；emerald colour；twelve battles along a ~93 km front, May 1915 – Oct 1917。No total length。2026-09-13 首写。
+    seeing:
+      "The Soča rises at a karst spring in the Trenta valley in the Julian Alps and flows south through western Slovenia, running about 96 km within the country before crossing the border. What stands out is its colour: over a bed of white limestone its water is a clear emerald green.",
+    formation:
+      "The upper Soča is an Alpine river — steep and fast, cutting narrow deep valleys and gorges into limestone, with waterfalls and deep pools along the way. Its water is clear and green because the limestone country it drains supplies little suspended sediment, so light penetrates deeper into the water and, absorbed and scattered there, gives it a blue-green hue.",
+    observation:
+      "From the air the Soča is a thin emerald thread set in the bottom of a deep valley, with steep limestone slopes on either side. Around Bovec the valley widens and the river braids across pale gravel bars; near Tolmin it is joined by tributaries, and downstream the valley gradually opens out.",
+    distinguish:
+      "The Soča and the Sava both rise in the Julian Alps but flow in different directions: the Soča flows south towards the Adriatic, the Sava east into the Black Sea drainage. The watershed between them lies within the Julian Alps, making north-western Slovenia a divide between two sea basins.",
+    concept:
+      "A river's colour is a signal of its water. Muddy yellow means plenty of coarse sediment, milky white or grey-green is typical of glacial meltwater carrying rock flour, and clear emerald green usually appears on stretches in carbonate country where sediment is scarce and the water is moderately deep. The Soča's colour is typical of such rivers.",
+    history:
+      "Between May 1915 and October 1917 Austro-Hungarian and Italian forces fought twelve battles along a front of about 93 km in the Soča area, and trenches, fortifications and memorials remain in the valley. Today the river is well known across Europe for rafting, kayaking and fly-fishing.",
+  },
+  "sava-river-slovenia": {
+    // 全六段 sources: 同中文侧。Slovenia's longest river, 947 km total, 221 km in Slovenia；headwaters Sava Dolinka and Sava Bohinjka join below Radovljica；main tributaries in Slovenia Ljubljanica, Savinja, Mirna, Krka。不写流出国境后的国名。2026-09-13 首写。
+    seeing:
+      "The Sava is Slovenia's longest river, 947 km in total, of which 221 km lie within Slovenia. It rises in the Julian Alps and crosses central Slovenia from north-west to south-east, passing through the Ljubljana Basin and a gorge through the central hills before flowing out of the country to the south-east and eventually joining the Danube.",
+    formation:
+      "The Sava has two headwaters: the Sava Dolinka flows down the valley along the northern side of the Julian Alps, and the Sava Bohinjka flows out of Lake Bohinj; the two join below Radovljica. In the Ljubljana Basin the river spreads gravel across the basin floor; further east it cuts through the hills of central Slovenia in a winding stretch between steep valley sides, and only once it leaves the hills does its valley widen again.",
+    observation:
+      "From the air the upper Sava is a pale green river winding along mountain valleys; on the northern edge of Ljubljana it becomes a broad gravel channel. In the central hills it loops through a chain of bends between dark green slopes, with room along its banks for only a railway and a road.",
+    distinguish:
+      "The Sava and the Soča both rise in the Julian Alps; the Sava flows east into the Black Sea drainage, the Soča south towards the Adriatic. Compared with the Ljubljanica, the Sava is a classic surface trunk river, whereas the upper Ljubljanica repeatedly sinks underground in karst country.",
+    concept:
+      "The Sava shows that a big river often has more than one source. The Sava Dolinka and the Sava Bohinjka each gather the water of their own valley — one from an open valley, one from a glacial lake — and only after they meet is the river called the Sava. Deciding which is the 'main' source means comparing length, discharge and catchment area, and different measures can give different answers.",
+    history:
+      "The Sava valley has long been a corridor between the Alpine lands and the Pannonian plain, and the river once carried rafts and cargo boats. The railway built in the nineteenth century follows the Sava's gorge and remains one of Slovenia's main east–west transport routes.",
+  },
+  ljubljanica: {
+    // 全六段 sources: 同中文侧。Outlet of a sinking-river system, resurfacing for the last time at the Močilnik, Retovje and Bistra springs near Vrhnika；flows through Ljubljana into the Sava；'river of seven names'。No list of names / length。2026-09-13 首写。
+    seeing:
+      "The Ljubljanica is the river that flows through Ljubljana, but its story is far longer than that short stretch. Its water comes from the karst country to the south, where it sinks underground and re-emerges several times, taking a different name each time it surfaces — hence its popular name, the 'river of seven names'.",
+    formation:
+      "The karst of Inner Carniola holds a chain of closed karst fields. Water surfaces in one field, flows across it, disappears into caves at its edge, passes underground through the limestone and re-emerges in the next. The final resurgence is at three groups of springs near Vrhnika — Močilnik, Retovje and Bistra — and only from there is it called the Ljubljanica, crossing the Ljubljana Marsh and the capital before joining the Sava.",
+    observation:
+      "From the air the Ljubljanica appears abruptly at the foot of the hills near Vrhnika, with no upstream valley, then meanders slowly across the Ljubljana Marsh on a very gentle gradient between wet meadows and drainage ditches. In Ljubljana it becomes a narrow river through the old town, its banks lined with stone and crossed by many bridges.",
+    distinguish:
+      "The Ljubljanica and the Sava meet east of Ljubljana, but they could hardly be more different: the Sava is a surface river flowing straight down from the high mountains, its discharge swinging sharply with snowmelt and rain; the Ljubljanica is a karst river emerging from underground springs, with a very gentle gradient and slow flow.",
+    concept:
+      "Sinking and resurging is normal for rivers in karst. A surface river meeting soluble rock turns underground along fractures and caves, flows for a stretch below ground and re-emerges at a spring. The same water carries different names in different places because people once saw only the stretches that came to the surface and did not know they were one river.",
+    history:
+      "The river has been the axis of Ljubljana's growth: the old town spreads along both banks, and the bridges and embankments along it are the city's signature landscape. Large numbers of artefacts from prehistory through the Middle Ages have been recovered from the riverbed.",
+  },
+  "logarska-dolina": {
+    // 全六段 sources: 同中文侧。Glacial valley on the northern side of the Kamnik–Savinja Alps, ~7 km long；Rinka waterfall ~90 m；landscape park 1987。2026-09-13 首写。
+    seeing:
+      "The Logar Valley, on the northern side of the Kamnik–Savinja Alps, is a glacial valley about 7 km long. Its floor is flat and open, carpeted with meadow and spruce forest, while steep limestone walls rise on either side and the Rinka waterfall, about 90 m high, drops straight down the rock at the valley head.",
+    formation:
+      "During the ice age glaciers flowed north from the main crest of the Kamnik–Savinja Alps, widening the floor and steepening the walls of an existing river valley and leaving a classic U-shaped trough when they melted. The valley head, where the ice originated, is enclosed by a cirque-like amphitheatre of rock; side valleys were not cut down as deeply, so they hang above the main valley and their streams leap from the lips as waterfalls.",
+    observation:
+      "From the air the Logar Valley is a deep trough with a flat floor and steep sides, light green meadows and dark green forest spread along its bottom and pale grey rock walls and scree slopes on either side. The valley head is closed by a ring of towering walls, with the white thread of the Rinka waterfall hanging among them.",
+    distinguish:
+      "The Logar Valley and Planica are both glacial valleys closed by rock walls at their heads; the difference is which mountains they belong to — the Logar Valley to the Kamnik–Savinja Alps, Planica to the northern Julian Alps. Compared with Vintgar Gorge, a glacial valley has a broad flat floor, whereas a gorge is a narrow slot cut by a river with room for little but the stream itself.",
+    concept:
+      "U-shaped and V-shaped valleys are the most direct clue to whether ice or running water did the carving. A river cuts down along a single line on the valley floor, producing a V-shaped valley; a glacier fills the whole valley and abrades floor and walls together, producing a U-shaped cross-section with a broad flat floor, steep sides and tributary valleys often left hanging in mid-air.",
+    history:
+      "Mountain farms in the valley have been handed down over generations, and traditional farming, herding and forestry continue today. The Logar Valley was declared a landscape park in 1987 and is an important hiking destination in northern Slovenia.",
+  },
+  "rakov-skocjan": {
+    // 全六段 sources: 同中文侧。Karst valley on the northern slopes of the Javorniki hills formed by subsidence and collapse of a cave roof；Small and Big Natural Bridges at either end are remnants of the destroyed cave；the Rak emerges from the Zelške Caves (E) and sinks into Tkalca Cave (W)；first Slovenian regional park 1949；Ramsar site with Lake Cerknica。No bridge heights。2026-09-13 首写。
+    seeing:
+      "Rakov Škocjan, north-west of Lake Cerknica, is a short karst valley on the northern slopes of the Javorniki hills. Its floor is flat, the Rak stream meanders through meadows, and at each end of the valley a natural stone arch spans it — the Small Natural Bridge and the Big Natural Bridge.",
+    formation:
+      "The valley was once an underground cave. As the Rak flowed through it and kept dissolving its walls, the roof grew thinner until long sections collapsed and the cave became an open valley; only a few stretches of roof failed to fall, and they survive at either end as today's natural bridges. The Rak still behaves like an underground river: it emerges from the Zelške Caves at the eastern end, crosses the valley floor and disappears into Tkalca Cave at the western end.",
+    observation:
+      "From the air Rakov Škocjan is a slender strip of green in the forest, pinched at both ends by wooded rock walls, with the natural bridges hidden almost entirely beneath the canopy. The stream appears suddenly at one end of the valley floor and vanishes just as suddenly at the other, with no continuous valley upstream or downstream.",
+    distinguish:
+      "Rakov Škocjan and the Škocjan Caves have similar names and both result from cave-roof collapse, but they are at different stages: most of the underground passage at Škocjan is still intact, with only some sections collapsed into open hollows; at Rakov Škocjan the roof has fallen almost entirely, leaving only the two natural bridges as evidence.",
+    concept:
+      "A natural bridge is a relic of a cave's evolution. Once a cave has formed, its roof thins through dissolution and rockfall until it collapses; if one stretch of roof rock is especially sound, it may survive on its own after everything around it has fallen, spanning the valley. Where you see a natural bridge, you can infer that the valley was once an underground passage.",
+    history:
+      "In 1949 the valley became Slovenia's first regional park, and its trails have long been a local walking route. Together with Lake Cerknica it is listed as a Ramsar wetland of international importance, and it now forms part of Notranjska Regional Park.",
+  },
+  "triglav-lakes-valley": {
+    // 全六段 sources: 同中文侧。Limestone hanging valley SW of Triglav below the walls of Tičarica and Zelnarica；'Seven Lakes Valley' though it holds more than seven lakes；from Black Lake ~1,294 m to Podstenje Lake ~1,993 m；drains via the Savica into Lake Bohinj。No exact lake count / length。2026-09-13 首写。
+    seeing:
+      "The Triglav Lakes Valley, south-west of Triglav, is a limestone valley hanging high in the mountains between the sheer walls of Tičarica and Zelnarica. It is popularly called the Seven Lakes Valley, although it actually holds more than seven lakes, which rise from the lowest, Black Lake, at about 1,294 m to the highest, Podstenje Lake, at about 1,993 m.",
+    formation:
+      "During the ice age a glacier flowed south along the valley and scooped a series of hollows at different levels into its limestone floor, which filled with water when the ice melted. Because limestone is permeable, the lakes are largely connected to groundwater and many have no obvious surface outlet; the valley's water ultimately feeds the Savica stream, which drops over the Savica waterfall into Lake Bohinj. The valley mouth hangs above the Bohinj basin — a classic glacial hanging valley.",
+    observation:
+      "From the air the Triglav Lakes Valley is a narrow trough between pale grey rock walls, its lakes strung along the floor like beads of different sizes, stepping down from north to south. The highest lakes are surrounded almost entirely by bare rock and scree, dwarf pine and meadow begin to appear around the lower ones, and the lowest, Black Lake, lies dark in a ring of forest.",
+    distinguish:
+      "The Triglav Lakes Valley and Lake Bohinj belong to the same glacial system, one high and one low: the valley holds a chain of small alpine lakes in cirques and glacial hollows, while Lake Bohinj fills a large basin scooped out of the main valley by a big glacier. The valley's water is one of Lake Bohinj's main sources.",
+    concept:
+      "The Triglav Lakes Valley is a good place to see a glacial hanging valley and a stepped chain of lakes. As a glacier moves down a valley, differences in rock and jointing let it dig deeper in some places and shallower in others, forming steps in the valley floor; after the ice melts, water collects in the low part of each step, producing a chain of lakes descending one after another.",
+    history:
+      "A protected area was established here as early as 1924, the starting point of what later became Triglav National Park. The huts and trails in the valley form one of the traditional hiking routes of the Julian Alps.",
+  },
+  planica: {
+    // 全六段 sources: 同中文侧。Long narrow glacial valley in the northern Julian Alps branching south near Rateče；Ponce ridge (W), Mojstrovka and Cipernik ridges (E)；upper part called Tamar, headed by Jalovec；Planica Nordic Centre and ski jumps at the valley mouth。No record figures。2026-09-13 首写。
+    seeing:
+      "Planica, in the northern Julian Alps, is a long narrow glacial valley that branches off the main valley near Rateče and runs south into the mountains. The Ponce ridge flanks it to the west and the Mojstrovka and Cipernik ridges to the east; its upper part is called Tamar, and at its head rises the sharply sculpted peak of Jalovec.",
+    formation:
+      "During the ice age a glacier flowed down from the high mountains around Jalovec and advanced north along this valley, widening its floor and steepening its sides into a U-shaped glacial trough. After the ice retreated, the limestone walls kept shedding rock, piling great scree cones at the foot of the slopes, while the valley floor was filled level with moraine and alluvium.",
+    observation:
+      "From the air Planica is a narrow green trough running north–south between parallel pale grey ridges, closed at its head by Jalovec and the walls around it. Near the valley mouth the long white ramps and buildings of the ski-jumping hills are visible; further in there is only forest, meadow and scree.",
+    distinguish:
+      "Planica and the Logar Valley are both glacial valleys closed by rock walls at their heads; Planica is narrower, and the ridges on either side are more evenly parallel. Compared with the Triglav Lakes Valley, Planica is a long side valley of a main valley, with a continuous floor and no chain of lakes.",
+    concept:
+      "The scree cones at the foot of the valley walls show that landforms keep changing after glaciers leave. While ice buttressed the walls they were stable; once the ice was gone they lost that support and, helped by freeze–thaw, kept collapsing, piling debris into cones at their base — a process known as post-glacial slope adjustment.",
+    history:
+      "Mountain pastures and huts in the valley are long recorded, and Tamar is the starting point for climbers heading to Jalovec. During the twentieth century the valley mouth developed into a ski-jumping venue, now the Planica Nordic Centre.",
+  },
+  "vintgar-gorge": {
+    // 全六段 sources: 同中文侧。Limestone gorge cut by the Radovna between the Hom and Boršt hills, ~1,600 m long and up to 250 m deep；walls of micritic, thick-bedded and grainy limestone, shaped by glacial activity during the ice age；explored in 1891 at low water by Jakob Žumer and Benedikt Lergetporer, opened 28 Aug 1893；Šum waterfall at the end。No waterfall height。2026-09-13 首写。
+    seeing:
+      "Vintgar Gorge, a few kilometres north of Bled, is a limestone gorge cut by the Radovna between the Hom and Boršt hills, about 1,600 m long and up to 250 m deep. The river on its floor is crystal clear, a wooden boardwalk fixed to the rock walls runs the length of the gorge, and it ends at the Šum waterfall.",
+    formation:
+      "The Radovna passes between the Hom and Boršt hills, an area affected by glacial activity during the ice age. The walls are alternating micritic limestone, thick-bedded limestone and grainy limestone, and the river has cut down along bedding planes and fractures, carving a gorge both narrow and deep and leaving rapids, deep pools and potholes in its bed.",
+    observation:
+      "From the air Vintgar Gorge is just a thin slit between two small forested hills, almost hidden by the canopy, with the river visible only at the two ends. Along the slit the pale lines of the boardwalk and bridges can just be made out.",
+    distinguish:
+      "Vintgar Gorge and the Tolmin Gorges are both limestone slot gorges on the edge of the Julian Alps; they differ in scale and drainage — Vintgar is a single gorge cut by one river, whereas at Tolmin the gorges of two rivers meet within the gorge. Compared with the Logar Valley, a gorge is a narrow slot cut by running water, while a glacial valley has a broad floor and steep walls.",
+    concept:
+      "The shape of a gorge depends on whether downcutting or the retreat of its walls is faster. In strong limestone a river cuts down far faster than the walls on either side can collapse and retreat, so the valley grows ever deeper while staying narrow; in soft rock the valley sides keep slumping and the valley becomes wider and gentler.",
+    history:
+      "In 1891, during an unusually low water level, the local mayor Jakob Žumer and the photographer Benedikt Lergetporer explored the whole gorge, and a boardwalk built along its walls was formally opened on 28 August 1893. It has been a walking destination near Bled ever since.",
+  },
+  "tolmin-gorges": {
+    // 全六段 sources: 同中文侧。Collective name for the gorges of the Tolminka and Zadlaščica, which meet within the gorge；the confluence at ~180 m is the lowest point of Triglav National Park and its southernmost, lowest entry point；Devil's Bridge。2026-09-13 首写。
+    seeing:
+      "The Tolmin Gorges, north of the town of Tolmin, is the collective name for the slot gorges of the Tolminka and the Zadlaščica, which meet inside the gorge. The confluence lies at about 180 m, the lowest point of Triglav National Park and also its southernmost and lowest entry point.",
+    formation:
+      "The two rivers flow down the southern slopes of the Julian Alps and cut down along fractures and bedding planes in the limestone, carving slots that are both narrow and deep. Where the water swirls at bends and steps it drills potholes and deep pools into the bedrock; at the confluence of the two gorges the walls almost touch, and light filters in only through the crack overhead.",
+    observation:
+      "From the air the Tolmin Gorges are hidden in forest: all that can be seen are two winding dark slits meeting at one point, then flowing south to join the Soča valley soon after. The Devil's Bridge across the slot of the Tolminka is the most obvious marker of where the gorges are.",
+    distinguish:
+      "The Tolmin Gorges and Vintgar Gorge are both limestone slot gorges; what sets Tolmin apart is that two gorges meet inside it, and at a very low elevation. Compared with the Škocjan Caves, the Tolmin Gorges are open-air surface slots, whereas Škocjan is a canyon cut underground by the Reka.",
+    concept:
+      "The elevation of the Tolmin Gorges shows that a national park is not just high mountains. Triglav National Park extends from gorges at about 180 m to the summit of Triglav at 2,864 m, a range of more than 2,600 m that covers the full vertical sequence from valley forest to bare high-alpine rock.",
+    history:
+      "The trail through the gorges and across the Devil's Bridge has long been a sightseeing route near Tolmin. During the First World War Tolmin and the Soča valley lay close to the Soča front, and related remains and memorials survive around the town.",
+  },
+  "skocjan-caves": {
+    // 全六段 sources: 同中文侧。Underground river canyon and cave system cut by the Reka；UNESCO: one of the largest known underground river canyons in the world；inscribed 1986；the Reka sinks at the bottom of Velika dolina and re-emerges ~34 km away at the Timavo springs near the Adriatic coast。No canyon depth / length。2026-09-13 首写。
+    seeing:
+      "The Škocjan Caves, on the south-eastern edge of the Kras Plateau, are an underground river canyon and cave system cut into limestone by the Reka. UNESCO describes them as containing one of the largest known underground river canyons in the world, and they were inscribed on the World Heritage List in 1986.",
+    formation:
+      "The Reka rises in impermeable flysch country, gathers plenty of water at the surface and, on reaching the limestone boundary, begins to dissolve and scour its way down, cutting a huge canyon-like passage underground. In places the roof above the passage has collapsed, forming open pits such as Velika dolina; the Reka sinks at the bottom of Velika dolina and, after about 34 km underground, re-emerges at the Timavo springs near the Adriatic coast.",
+    observation:
+      "From the air the caves themselves are hidden; what shows at the surface are several enormous collapse dolines ringed by cliffs, with trails and small villages along their rims. The Reka arrives from an open valley to the south-east and vanishes abruptly into the bottom of a doline at the edge of the limestone — the most direct surface evidence of the whole system.",
+    distinguish:
+      "The Škocjan Caves and Rakov Škocjan both result from cave-roof collapse, but at Škocjan most of the underground passage is still intact, with only some sections fallen into open hollows, while at Rakov Škocjan the roof has fallen almost entirely. Compared with the Tolmin Gorges, Škocjan is an underground canyon, Tolmin an open-air surface slot.",
+    concept:
+      "The Škocjan Caves show what an allogenic river does to karst. A river that has gathered abundant surface water on impermeable rock carries that volume and its dissolving power into limestone country, working far faster than dissolution by seeping rainwater alone — an important condition for carving large underground passages.",
+    history:
+      "Traces of prehistoric human activity have been found in the collapse dolines around the caves, and from the nineteenth century onwards people explored the underground river course and opened visitor routes. The Škocjan Caves were inscribed on the UNESCO World Heritage List in 1986.",
+  },
+  "lake-bled": {
+    // 全六段 sources: 同中文侧。Mixed glacial–tectonic lake；a glacier deepened a tectonic hollow；2,120 m long, 1,380 m wide, 144 ha, max depth 30.6 m (bled.si official)；Church of the Assumption on the island。2026-09-13 当批核实改正：depth 29.5→30.6 m, area 1.45 km²→144 ha, glacier no longer named as a branch of the Bohinj glacier。2026-09-13 首写。
+    seeing:
+      "Lake Bled, at the eastern foot of the Julian Alps, is about 2,120 m long and 1,380 m wide, with an area of about 144 hectares and a maximum depth of about 30.6 m, according to Bled's official tourism site. A small island in the middle carries the Church of the Assumption, Bled Castle stands on a cliff above the northern shore, and a path and the town ring the lake.",
+    formation:
+      "The basin began as a tectonic hollow. During the last glaciation a glacier flowing down from the Julian Alps passed through it, deepening and widening the hollow, and when the ice melted the basin filled with water.",
+    observation:
+      "From the air Lake Bled is a roughly oval sheet of green water surrounded by forest and low hills. The white bell tower of the church on the island stands out clearly, the castle sits on the cliff to the north, the town of Bled occupies the eastern shore and forest covers the western shore.",
+    distinguish:
+      "Lake Bled and Lake Bohinj were both shaped by glaciers but differ in setting and size: Lake Bohinj lies deep in a mountain valley, has more than twice Lake Bled's area and has almost no town around it; Lake Bled sits in open country at the foot of the mountains, a small lake with dense settlement on its shores.",
+    concept:
+      "Lake Bled is a lake of mixed glacial and tectonic origin: the outline of its basin was set first by tectonic movement, and a glacier then deepened it. Many lakes at the foot of mountains formed this way — neither ice alone nor tectonics alone would easily have produced such a basin; it took the two together.",
+    history:
+      "The castle and the island church are long recorded, and from the nineteenth century Bled developed into a resort known for lakeside and climate cures. Traditional wooden pletna boats still ferry visitors to and from the island.",
+  },
+  "lake-bohinj": {
+    // 全六段 sources: 同中文侧。Slovenia's largest natural permanent lake, ~3.18 km², max depth ~45 m, ~100 million m³；basin deepened by the Bohinj glacier；main inflow the Savica, collecting water from the Triglav Lakes Valley, with the ~78 m Savica waterfall upstream；outflow the Sava Bohinjka。No length。2026-09-13 首写。
+    seeing:
+      "Lake Bohinj, deep in a valley of the Julian Alps, is Slovenia's largest natural permanent lake, with an area of about 3.18 km², a maximum depth of about 45 m and roughly 100 million m³ of water. It lies within Triglav National Park, enclosed by mountains on three sides, and most of its shoreline remains in a natural state.",
+    formation:
+      "The lake basin was deepened by the Bohinj glacier: during the ice age the glacier flowed east along the Bohinj valley and scooped a deep trough into its floor, which filled with water when the ice retreated. Its main inflow is the Savica, which collects water from the Triglav Lakes Valley and forms the Savica waterfall, about 78 m high, upstream; the lake drains from its eastern end as the Sava Bohinjka, one of the headwaters of the Sava.",
+    observation:
+      "From the air Lake Bohinj is a long east–west strip of water, its western end pressed against steep mountain walls and its eastern end opening onto a broad valley and villages. The water shifts in colour with depth, pale green near the shore and deep blue in the middle, and forest surrounds almost all of it, with only a few buildings on the eastern shore.",
+    distinguish:
+      "Lake Bohinj and Lake Bled are both glacial lakes, but Bohinj is larger, deeper and more natural, set deep in a mountain valley; Bled is small and shallow, set in open country at the foot of the mountains with towns crowded around it. Compared with Lake Cerknica, Bohinj is a permanent lake, whereas Cerknica dries out every year.",
+    concept:
+      "The qualifier 'largest natural permanent lake' matters: in its high-water season Lake Cerknica can cover a much larger area than Lake Bohinj, but it dries out every year and is classed as an intermittent lake. When comparing lake sizes, permanent and intermittent lakes, and natural lakes and reservoirs, have to be counted separately.",
+    history:
+      "Mountain herding and cheesemaking in the Bohinj valley have a long tradition, and the Church of St John the Baptist on the eastern shore is the lake's landmark building. The lake is now one of the main visitor areas of Triglav National Park.",
+  },
+  "lake-cerknica": {
+    // 全六段 sources: 同中文侧。Intermittent lake on the floor of the Cerknica polje；fills after autumn rains and spring snowmelt, dries out in May or June；fed mainly by karst springs at the edge, estavelles act as springs at high water and sinks at low water；Valvasor first studied its hydrology and was elected a Fellow of the Royal Society；Ramsar site 19 Jan 2006。No area numbers。2026-09-13 首写。
+    seeing:
+      "Lake Cerknica, in Slovenia's inland karst, is a lake that disappears. It lies on the floor of the Cerknica karst field, usually fills after the autumn rains and during the spring snowmelt, and dries out again in May or June, when its bed turns back into meadow.",
+    formation:
+      "A polje is a large, flat-floored closed depression in karst country, floored with impermeable sediment and surrounded by soluble limestone. The Cerknica polje is fed mainly by karst springs around its edge and drains underground through swallow holes in its floor. When inflow exceeds what the swallow holes can take, the depression floods; when inflow drops, the water drains away through them. The lake floor also has estavelles — openings that act as springs at high water and as sinks at low water.",
+    observation:
+      "From the air, in the wet season Lake Cerknica is an irregular sheet of shallow water whose edges interlock with wet meadows; in the dry season the same ground becomes a flat green meadow with only a few winding streams and scattered pools. The surrounding slopes are forested and meet the flat polje floor along a clear line.",
+    distinguish:
+      "Lake Cerknica could hardly be more different from Lake Bohinj: Bohinj is a permanent lake scooped out by a glacier, with a stable water level; Cerknica is an intermittent lake in a karst polje whose area swings dramatically with the seasons. Compared with the Ljubljana Marsh, the Cerknica polje can drain rapidly through underground channels and so dries out periodically, whereas the Ljubljana Marsh keeps a high water table year-round.",
+    concept:
+      "Lake Cerknica is the classic example of polje hydrology. Whether the lake appears or disappears depends on the balance between underground inflow and outflow, so it has no fixed area; stating its size means saying at what water level and in what season.",
+    history:
+      "In the seventeenth century the Carniolan naturalist Valvasor was the first to describe the lake's hydrology systematically, and was elected a Fellow of the Royal Society as a result. Fishing, hunting and seasonal mowing on the lake have a long tradition, and on 19 January 2006 Lake Cerknica and its surroundings were designated a Ramsar wetland of international importance.",
+  },
+  "strunjan-coast": {
+    // 全六段 sources: 同中文侧。Flysch sea cliff in the middle of the Slovenian coast, Strunjan cliff ~80 m, pebbly Moon Bay below；~4 km of coast around the cliff in Strunjan Landscape Park。No 'highest' claim, no coastline length, no maritime boundaries。2026-09-13 首写。
+    seeing:
+      "The Strunjan coast, in the middle section of Slovenia's shoreline, is a stretch of flysch sea cliffs. The Strunjan cliff is about 80 m high, with a small pebbly cove — Moon Bay — at its foot, and about 4 km of shoreline around the cliff belongs to Strunjan Landscape Park, a stretch of this coast kept in a natural state.",
+    formation:
+      "The cliff is flysch, with sandstone and marl in alternating layers. Waves pound its foot and hollow out the softer marl, so the beds above lose their support and fall away in blocks; the cliff retreats inland bit by bit while its face stays steep. Fallen blocks are rounded by the waves and pile up below as a pebble beach.",
+    observation:
+      "From the air the Strunjan coast is an arc of steep cliff with scrub and vineyards along its top, parallel bands of rock strata exposed on its face and a narrow pale pebble beach at its foot. Moon Bay is crescent-shaped, and near the shore the sea shows patches of different shades over rock ledges and pebbles.",
+    distinguish:
+      "The Strunjan coast and Goriška Brda are both flysch landscapes, one on the sea and one inland: the same interbedded hard and soft rock is cut into dense ravines by streams inland and planed into steep cliffs by waves on the coast. Compared with the Kras Plateau, flysch country is impermeable, with surface streams and different vegetation and land use.",
+    concept:
+      "The form of a sea cliff depends on its rock. Hard, uniform rock makes tall, stable cliffs; interbedded rock such as flysch, where soft layers below are hollowed out and the beds above collapse in blocks, retreats quickly with frequent falls, so fresh sections of strata are always visible on the cliff face.",
+    history:
+      "Salt-making and olive growing around Strunjan have a long tradition, and the saltpans still produce salt by traditional methods. The cliff and its surrounding waters are protected as a landscape park, one of the nature conservation areas on Slovenia's coast.",
+  },
+  "dingli-cliffs": {
+    // 全六段 sources: 同中文侧。Ta' Dmejrek 253 m, Malta's highest point; five-formation succession; NE tilt with cliffs on the SW; Magħlaq Fault affecting the Dingli cliffs with >200 m relief（Gauci 2025, UM OAR, tier 2）；UCL plateau / Blue Clay slopes / GL and LCL at Dingli（Frontiers in Conservation Science 2025）；Phoenician, Punic and Roman rock-cut tombs within Dingli（Wikipedia, tier 3, 当批核实 ok）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "The Dingli Cliffs, on the south-western coast of the island of Malta, are a limestone wall rising abruptly from the sea. Near the top, Ta' Dmejrek reaches 253 m and is the highest point in the country — yet there is no summit here: the clifftop is a gentle plateau, with fields and rubble walls running right to the edge. Looking south from the edge, the lone flat-topped islet out at sea is Filfla.",
+    formation:
+      "The Maltese Islands are built of five Oligocene to Miocene marine formations: from the bottom up, the Lower Coralline Limestone, Globigerina Limestone, Blue Clay, Greensand and Upper Coralline Limestone. Later faulting tilted the whole archipelago towards the north-east, raising the south-west and lowering the north-east towards the sea. Dingli lies on the raised side, and the Magħlaq Fault along the south-west coast adds relief of more than 200 m, so the clifftop is an Upper Coralline Limestone plateau while the lower cliff face exposes hard Lower Coralline Limestone, with Blue Clay slopes in between.",
+    observation:
+      "From the air, the Dingli Cliffs are a pale yellow-grey edge along the south-western rim of Malta: small walled fields on the landward side, deep blue sea directly on the other. The face is not vertical everywhere — in places a gentler slope of clay and fallen blocks appears partway down. Following the cliff line south-east, the flat-topped islet offshore is Filfla.",
+    distinguish:
+      "The Dingli Cliffs and the Majjistral coast in the north-west both lie on the raised western side of the islands; the difference is which rock layer the waves reach. At Dingli the cliff foot is hard Lower Coralline Limestone, which holds a high, steep wall; along the Majjistral coast soft Blue Clay reaches the shore, the capping blocks keep collapsing, and the result is slope after slope of boulders. Compared with the Grand Harbour on the north-east coast, the two sit at opposite ends of the tilted archipelago — one end lifted into cliffs, the other sunk into harbours.",
+    concept:
+      "The Dingli Cliffs are a good way to understand a tilted fault block: a slab of rock cut by faults and tipped to one side, with the raised edge forming cliffs and high ground and the lowered edge flooded by the sea into indented harbours. Malta's highest point sits on its south-western cliffs while the capital and main ports are on the east coast — a direct result of that asymmetry.",
+    history:
+      "Phoenician, Punic and Roman rock-cut tombs have been found within the limits of Dingli, showing that the clifftop plateau was used early. A small chapel dedicated to St Mary Magdalene stands near the edge and is an easy landmark along the cliff line. Today a path follows the clifftop, with views over the south-western sea and Filfla.",
+  },
+  "great-fault-malta": {
+    // 全六段 sources: 同中文侧。ENE–WSW Great Fault with horst-and-graben ridges to the north（Gauci 2025）；Blue Clay and UCL north of the fault, Globigerina Limestone to the south（ERA search summary; Wikipedia）；Spratt mapped and named "The Great Fault of Malta" on his 1843 map（IRMCo Gozo e-module Unit 2, tier 2）；Victoria Lines ~12 km, Madliena–Mosta–Binġemma, forts from 1875, continuous infantry wall in the 1890s, named for the 1897 Diamond Jubilee, UNESCO Tentative List 1998（worldheritagesite.org, Military History Matters, tier 3, 当批核实 ok）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "The Great Fault crosses north-central Malta on a roughly east-north-east to west-south-west line, forming an escarpment that divides the island in two. South of it lies a gently rolling plateau covered in towns; north of it the land breaks into alternating ridges and valleys. The Victoria Lines, built along the crest by the British army in the late nineteenth century, run for about 12 km from Madliena in the east, past Mosta, to Binġemma in the west.",
+    formation:
+      "The rocks on either side of the fault have been displaced vertically, with the northern side down. That is why the surface north of the fault still carries the younger Blue Clay and Upper Coralline Limestone, while the older Globigerina Limestone dominates to the south. North of the Great Fault, a set of parallel faults with the same trend slices the land into alternating horsts and grabens — raised blocks become ridges, sunken blocks become valleys, and where the valleys meet the sea they become bays.",
+    observation:
+      "From the air, the Great Fault is an escarpment running east–west across the middle of the island, with stone walls and forts visible here and there along the crest. South of it the towns are packed together; north of it the ground is noticeably emptier, a mix of fields, scrub and valleys, with several parallel elongated ridges further north.",
+    distinguish:
+      "The Great Fault and the Dingli Cliffs on the south-west coast both owe their relief to faulting, but they sit differently: at Dingli the fault shapes a coastline facing the open sea, whereas the Great Fault is an inland escarpment whose influence on people shows mainly in where towns grew, how roads run and how the island was defended. Among the faults of northern Malta it is the southernmost and the one that marks the sharpest change in landscape.",
+    concept:
+      "These faults are a direct example of structure controlling landscape: on the same small island, the land south of the fault is a continuous plateau and the land north of it is a horst-and-graben terrain of ridges and valleys, and the pattern of towns, roads and fields follows suit. In the nineteenth century the British naval officer T.A.B. Spratt marked and named 'the Great Fault of Malta' on his topographical map of 1843, and he is regarded as a pioneer of Maltese geology for that work.",
+    history:
+      "From 1875 the British army built Fort Mosta, Fort Binġemma and Fort Madalena along the crest of the fault, and in the 1890s linked them with a continuous infantry wall, intended to stop a force that had landed in the north from advancing on the harbours. The line was named the Victoria Lines in 1897 to mark Queen Victoria's Diamond Jubilee, and in 1998 it was placed on the UNESCO World Heritage Tentative List.",
+  },
+  "northern-malta-ridges": {
+    // 全六段 sources: 同中文侧。Wardija, Bajda, Mellieħa and Marfa ridges with Binġemma, Pwales, Miżieb and Mellieħa valleys; alternating ridges and troughs expose Blue Clay to the waves and produce fine sandy bays such as Għadira; Għadira as a saline marsh in a drowned valley（Gauci 2025, tier 2）。Ċirkewwa ferry terminal at the western end of Marfa Ridge; St Agatha's (Red) Tower on Marfa Ridge built under the Knights; WWII British pillboxes along Pwales Bay; Is-Simar Nature Reserve（Wikipedia, tier 3, 当批核实 ok）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "North of the Great Fault, Malta is a landscape of ridges and valleys. From south to north come the Wardija, Bajda, Mellieħa and Marfa ridges, four east-north-east to west-south-west trending ridges, with straight, flat-floored valleys such as the Pwales and Mellieħa valleys between them. Where the valleys run north-east to the sea they open into bays such as St Paul's Bay and Mellieħa Bay.",
+    formation:
+      "The ridges and valleys are horsts and grabens cut by a set of parallel faults: blocks raised between faults form the ridges, capped by hard Upper Coralline Limestone, while sunken blocks form low valleys. As sea level rose, the seaward ends of the valleys were drowned into bays. The alternation of ridges and troughs also exposes Blue Clay to the waves at the valley mouths, and the fine material washed out of it has built sandy bays such as Għadira Bay.",
+    observation:
+      "From the air, northern Malta looks combed: several parallel elongated uplands with straight valleys between them, the valley floors laid out in neat fields and small wetlands, and pale sandy bays at the valley mouths. The northernmost, Marfa Ridge, reaches almost to the channel, and at its western end is Ċirkewwa, the ferry terminal for Gozo.",
+    distinguish:
+      "The northern ridges and the centre and south of the island face each other across the Great Fault: to the south lies a broad, gently rolling surface of Globigerina Limestone covered in towns; to the north the ridges keep their Upper Coralline Limestone caps, ridges alternate with valleys and settlement is far sparser. Compared with the mesas of Gozo, the uplands here are elongated ridges cut in rows by faults, not individual plateaus isolated by erosion.",
+    concept:
+      "Horsts and grabens usually occur in sets and are the typical structure of crust under extension: blocks move up or down along a series of parallel faults, producing a staircase of highs and lows. In northern Malta the scale is tiny — you can cross several ridges and valleys within a few kilometres — which makes it a convenient place to see this structure in the field.",
+    history:
+      "Low, open valleys are also natural landing places. Under the Knights, St Agatha's Tower, known as the Red Tower, was built on Marfa Ridge; during the Second World War the British army built pillboxes along Pwales Bay. The Għadira salt marsh behind Mellieħa Bay and the Is-Simar wetland in the Pwales valley are both nature reserves today.",
+  },
+  "grand-harbour": {
+    // 全六段 sources: 同中文侧。Grand and Marsamxett Harbours as rias; ~20,000 years ago sea level ~120 m lower, river system extending onto the shelf, drowned as sea level rose; NE tilt concentrating ports and coastal towns on the east coast（Gauci 2025, tier 2）；Great Siege 1565, Fort St Elmo and Fort St Angelo, City of Valletta inscribed 1980（UNESCO, tier 1）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "The Grand Harbour is a long inlet cutting deep into the north-east coast of Malta, separated from Marsamxett Harbour to the north by the Sceberras peninsula on which the capital, Valletta, stands. Smaller creeks branch off inside it, and the three old towns of Birgu, Senglea and Cospicua — together the Three Cities — sit on the headlands between them.",
+    formation:
+      "The Grand Harbour is a river valley drowned by the sea — a ria. About 20,000 years ago, in the Late Pleistocene, sea level was some 120 m lower than today, and rivers flowing down the north-east-tilted land cut their valleys out across what is now the continental shelf. When the ice age ended and sea level rose, the valleys were flooded: their floors became harbours, and the spurs between them became peninsulas and headlands.",
+    observation:
+      "From the air, the Grand Harbour looks like an open hand: the main channel runs south-west from the entrance, with several creeks branching off either side and layer upon layer of walls and forts on the headlands. On the other side of the Valletta peninsula is Marsamxett Harbour, the two inlets clasping the peninsula from south and north; their indented shoreline contrasts sharply with the straight cliffs of the island's south-west coast.",
+    distinguish:
+      "The Grand Harbour belongs to the same family of rias as Marsaxlokk Bay and Marsaskala Bay on the south-east coast, but its narrow entrance, many branching creeks and shelter behind headlands are the landform conditions that made it the main port. Unlike the round bays of Dwejra at the western end of Gozo, the Grand Harbour is a whole river valley that has been drowned, not a hollow left by the collapse of an underground cave.",
+    concept:
+      "A ria coast is a landform record of rising sea level. Most of Malta's bays open on the east coast precisely because the islands tilt to the north-east: the raised side is cliffed, while on the lowered side the river valleys were flooded by the sea. That is why almost all of the islands' ports and coastal towns are on the east coast.",
+    history:
+      "The Grand Harbour has long been Malta's political and military centre. When Ottoman forces besieged Malta in 1565, the Knights Hospitaller held Fort St Elmo and Fort St Angelo on either side of the harbour; after the siege the Knights built a new city, Valletta, on the Sceberras peninsula. The City of Valletta was inscribed on the UNESCO World Heritage List in 1980.",
+  },
+  "blue-grotto-malta": {
+    // 全六段 sources: 同中文侧。Blue Grotto sea caverns near the Wied iż-Żurrieq fishing harbour, within Qrendi limits（Wikipedia, tier 3）；vertical LCL cliffs; the Blue Grotto cove classed as a solution subsidence structure now submerged; sea caves along steeply dipping fractures; Wied Babu as a ria（Gauci 2025, tier 2）；Ħaġar Qim and Mnajdra part of the Megalithic Temples of Malta（UNESCO, tier 1）；Azure Window collapse 8 March 2017（MaltaToday）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "The Blue Grotto is a group of sea caves and arches on the south coast of Malta, beneath the cliffs near the small fishing harbour of Wied iż-Żurrieq. When sunlight enters the caves, the sea throws blue light onto their walls and ceilings, which gives them their name. Filfla can be seen out at sea in front of the caves.",
+    formation:
+      "This stretch of coast is a vertical cliff of hard Lower Coralline Limestone. Limestone dissolves in water: underground cavities enlarged, their roofs collapsed and the sea flooded in, forming the small cove in which the Blue Grotto lies. Steeply dipping joints and fractures in the cliff are lines of weakness, and waves working along them have hollowed them out into caves and arches.",
+    observation:
+      "From the air, the Blue Grotto area is a straight, pale cliff line with several semicircular notches and arches at its foot, and the water near the cave mouths is an unusually bright blue-green. A road and viewpoint run along the clifftop, and beside them the narrow Wied iż-Żurrieq forms a tiny boat inlet at the shore.",
+    distinguish:
+      "The Blue Grotto and Dwejra on Gozo both have coves formed by cave collapse and wave-cut features; the difference is scale. Dwejra has a whole cliff-enclosed inland sea and a round bay, while the Blue Grotto is a cluster of caves and arches at the foot of a cliff. The neighbouring Wied Babu is a ria reaching the sea, showing that on the same stretch of coast a drowned valley forming a creek and waves hollowing caves out of the cliff foot go on side by side.",
+    concept:
+      "Sea caves, arches and stacks are stages in the retreat of a cliffed coast: waves first hollow out a cave along a fracture, caves from both sides of a headland join into an arch, and when the roof of the arch falls a stack is left standing alone. The process can be seen within a human lifetime — Gozo's famous Azure Window arch collapsed into the sea in 2017.",
+    history:
+      "Administratively the coast around the Blue Grotto belongs to Qrendi. On the slopes nearby are the Neolithic temples of Ħaġar Qim and Mnajdra, which form part of the Megalithic Temples of Malta World Heritage property. Today small boats run from Wied iż-Żurrieq to the caves, sailing only when the sea allows.",
+  },
+  filfla: {
+    // 全六段 sources: 同中文侧。Uninhabited flat-topped islet ~4.5 km off Malta's south coast; bird sanctuary 1980; Filfla Nature Reserve Act (XV of 1988); access only for educational or scientific purposes with prior permission; storm petrel colony, BirdLife IBA（ECOLEX, tier 2; Wikipedia, tier 3, 当批核实 ok）。⚠️ 零争议：no maritime / continental-shelf content. 2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "Filfla is an uninhabited islet about 4.5 km off the south coast of Malta, at the southern end of the Maltese archipelago. It is a flat-topped block of limestone ringed by cliffs, visible from the Dingli Cliffs and from the temple sites along Malta's south coast.",
+    formation:
+      "Filfla is made of horizontal limestone beds, and its sea cliffs keep crumbling under waves and storms. The islet is tiny and exposed on every side, so collapse along its edges is an ongoing process; earthquakes and storms in the past have each taken pieces of it away.",
+    observation:
+      "From the air, Filfla is a lone pale flat-topped block in the southern sea, surrounded by sheer walls, its top almost treeless, with an even smaller rock off its south-west side. Between it and Malta lies open dark water with no shallows linking the two.",
+    distinguish:
+      "Filfla and St Paul's Islands off Malta's north coast are both uninhabited islets, but St Paul's Islands lie close to the shore, whereas Filfla stands alone far out to the south and the whole island is protected by law with landing restricted. Compared with Comino, Filfla is far smaller and has neither fresh water nor soil, so it cannot support settlement.",
+    concept:
+      "Seabirds favour islets like this for breeding: no land predators, almost no people and cliff crevices for nests. Filfla is an important breeding site for the Mediterranean storm petrel and is recognised by BirdLife International as an Important Bird Area — the geography of an isolated rock directly determines its ecological value.",
+    history:
+      "Filfla was declared a bird sanctuary in 1980, and the Filfla Nature Reserve Act of 1988 made the entire island a nature reserve. Under its rules, landing is allowed only for educational or scientific purposes and with prior permission, so ordinary visitors can only view it from Malta's south coast.",
+  },
+  comino: {
+    // 全六段 sources: 同中文侧。Area ~3.5 km², one of the three inhabited islands, Blue Lagoon between Comino and Cominotto, St Mary's Tower completed 1618, Natura 2000（Friends of the Earth Malta, Wikipedia, tier 3, 当批核实 ok）；caves formed by karstification along joints in UCL plus marine erosion（Gauci 2025, tier 2）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "Comino lies in the channel between Malta and Gozo. With an area of about 3.5 km², it is one of the three inhabited islands of the Maltese archipelago. Between its western side and the even smaller Cominotto is a shallow channel whose white sandy floor turns the water a clear pale blue-green — the Blue Lagoon familiar to visitors.",
+    formation:
+      "Comino is made mainly of hard Upper Coralline Limestone, with bare rock and low scrub at the surface and only thin soil. Its sea caves and grottoes are the product of two processes combined: the limestone was first dissolved along joints and fractures, creating lines of weakness, and waves then hollowed caves and passages out along them.",
+    observation:
+      "From the air, Comino is a low, pale brown rocky island with an indented coast dotted with coves and cave mouths. The almost transparent pale blue water off its western side stands out, sharply bounded by the deep blue sea around it; a square stone tower stands on the high ground.",
+    distinguish:
+      "Comino is separated from Gozo only by a narrow channel, but the landforms differ: Gozo has mesas and valleys underlain by Blue Clay that can be farmed, while Comino is almost entirely bare Upper Coralline Limestone with little fresh water or soil, and very few permanent residents. Compared with an uninhabited islet like Filfla, Comino is much larger and has footpaths, a tower and a handful of buildings.",
+    concept:
+      "The colour of the sea depends largely on depth and on the seabed: over shallow white sand the sunlight is reflected back and the water looks bright blue-green, and as the water deepens and the bottom darkens the colour quickly turns deep blue. The Blue Lagoon is a very direct example of the effect.",
+    history:
+      "Under the Knights, Comino was an outpost against raids from the sea, and St Mary's Tower, completed in 1618, watched over the channel between Malta and Gozo. Today the island's natural areas are part of the EU's Natura 2000 network, and the Blue Lagoon draws large numbers of visitors in summer.",
+  },
+  "gozo-uplands": {
+    // 全六段 sources: 同中文侧。Gozo the second-largest island; rounded or flat-topped hills; the large dissected UCL plateaux of Nadur and Xagħra giving way westwards to the remnant hills of Żebbuġ and Rabat and conical hills like Ġordan; highest point Ta' Dbieġi ~190 m（IRMCo Unit 2, tier 2; Wikipedia gives 195 m — text says only "under 200 m"）；Blue Clay impermeable, holding groundwater and feeding springs（IRMCo; Wikipedia, tier 3）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "Gozo is the second-largest island of the Maltese archipelago by area, and its characteristic landforms are flat-topped, steep-edged hills: hard Upper Coralline Limestone on top, gentler slopes of softer Blue Clay beneath, and broad valleys between them. The highest point, Ta' Dbieġi, is under 200 m; in the east of the island the plateaus of Nadur and Xagħra are fairly large, and further west they give way to smaller, isolated hills.",
+    formation:
+      "Gozo's mesas are the product of differential erosion. Upper Coralline Limestone is hard and permeable, Blue Clay soft and impermeable: rain soaks through the limestone cap, collects on the clay, seeps out as springs along the plateau edge, and all the while softens and carries away the clay beneath, so that the unsupported limestone breaks off in blocks. The plateau edge retreats bit by bit, large plateaus are cut into small hills, and small hills are finally reduced to near-conical remnants.",
+    observation:
+      "From the air, Gozo's hills look like tabletops: flat tops covered in walled fields and villages, a ring of steep edges, darker slopes below them and more regular fields in the valleys. The citadel on an isolated hill in the middle of the island is the old fortress of Victoria, Gozo's capital.",
+    distinguish:
+      "Gozo and Malta share the same rock formations but look different: much of central and southern Malta exposes Globigerina Limestone and rolls gently, while Gozo exposes more Blue Clay and has a terrain of alternating plateaus, slopes and valleys. Compared with the long ridges of northern Malta, cut in rows by faults, Gozo's hills are more like individual plateaus isolated by erosion.",
+    concept:
+      "Mesas and buttes are stages of the same process: a hard cap in horizontal strata protects the softer layers beneath, so erosion can only nibble in from the edges. A hill with a broad top is a mesa; once it has been cut down until its top is narrower than it is high, it is a butte. Within the dozen or so kilometres of Gozo you can see every stage of that sequence.",
+    history:
+      "Groundwater held up by the Blue Clay emerges as springs along the plateau edges and has long supplied water for farming on the island. Gozo's capital, Victoria, is called Rabat in Maltese; its old citadel stands on a hill in the centre of the island and was historically the islanders' refuge from raids from the sea.",
+  },
+  dwejra: {
+    // 全六段 sources: 同中文侧。Inland Sea linked to the open sea by a natural tunnel; Dwejra and the Inland Sea classed as solution subsidence structures（Gauci 2025; IRMCo, which also credits Spratt with first recognising Gozo's subcircular depressions, tier 2）；Fungus Rock a large limestone block at the bay entrance; Azure Window collapsed in a storm on 8 March 2017 after a century of pieces breaking off（MaltaToday 2017; Wikipedia, tier 3）；'Maltese fungus' a parasitic plant prized by the Knights, rock placed out of bounds in the mid-18th century（Wikipedia, tier 3, 当批核实 ok）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "Dwejra, at the western end of Gozo, is a stretch of coast made up of round bays, an inland sea and isolated rocks. The Inland Sea is a shallow cliff-ringed lagoon linked to the open sea by a natural tunnel beneath the cliff; at the mouth of neighbouring Dwejra Bay stands a huge block of limestone, Fungus Rock. The famous Azure Window arch was here too, until it collapsed into the sea in a storm on 8 March 2017.",
+    formation:
+      "Dwejra Bay and the Inland Sea are classed as solution subsidence structures: underground cavities in the limestone grew until their roofs collapsed, leaving near-circular hollows that the sea then flooded from the side. Waves continued to work along fractures in the cliffs, cutting tunnels and arches. In the nineteenth century the British naval officer T.A.B. Spratt was the first to recognise Gozo's near-circular hollows as a distinctive landform.",
+    observation:
+      "From the air, the Dwejra area shows two almost circular bodies of water: Dwejra Bay, open to the sea, and the Inland Sea, enclosed by cliffs and connected to the sea only by a narrow slit. Fungus Rock stands like a square block at the bay mouth; where the Azure Window once stood there is now only the cliff and the fallen blocks underwater.",
+    distinguish:
+      "Dwejra and the Blue Grotto on Malta's south coast both have coves formed by cave collapse and wave-cut features; the difference is scale, with Dwejra's cliff-enclosed inland sea and round bay against the Blue Grotto's cluster of caves and arches at a cliff foot. Compared with a ria harbour like the Grand Harbour, Dwejra's bays are not drowned river valleys but hollows left by collapsed underground voids and taken over by the sea.",
+    concept:
+      "The collapse of a sea arch is a normal step in the evolution of a coast — it just happens suddenly. Large pieces had been breaking away from the Azure Window over the century before it fell, and in the end it collapsed entirely in a single storm. Coastal landforms look permanent but are always changing, and people can witness one of those steps within a lifetime.",
+    history:
+      "A parasitic plant known as 'Maltese fungus' grows on top of Fungus Rock; the Knights prized it as a medicine and in the mid-eighteenth century ordered that no one land on the rock without permission. Since the Azure Window fell, the collapsed blocks on the seabed where it stood have become a dive site.",
+  },
+  "wied-il-ghasri": {
+    // 全六段 sources: 同中文侧。Sea canyon on Gozo's north coast with a small beach at its head, continuing inland towards Għasri（Wikipedia, tier 3）；Wied il-Għasri, Mġarr ix-Xini and Xlendi as Gozo rias, ice-age sea level ~120 m lower; the coast from Mġarr ix-Xini clockwise past Ta' Ċenċ and Pinu Point to Wied il-Għasri mostly sheer LCL cliffs（Gauci 2025, tier 2）；fjord vs ria cross-sections standard geomorphology; the Maltese Islands never glaciated（general knowledge）；Grain Cave well dug in the 18th century（Wikipedia, tier 3, 当批核实 ok）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "Wied il-Għasri, on the north coast of Gozo, is a long, narrow sea valley cut deep into the limestone cliffs. The section opening to the sea is narrow and deep with sheer walls on both sides and a small beach hidden at its head; inland the valley continues, growing shallower, all the way to the village of Għasri.",
+    formation:
+      "Wied il-Għasri was once a river valley draining to the north coast. In the ice ages, with sea level about 120 m lower than today, the river cut a deep valley into the limestone; when the sea rose again, the seaward end was drowned into a narrow ria. The rock exposed on this stretch of coast is hard Lower Coralline Limestone, which does not readily collapse, so the valley walls stay almost vertical.",
+    observation:
+      "From the air, Wied il-Għasri is a thin slit in the north-coast cliff line, with dark sea reaching inland along it and a speck of pale beach at the end. Flat uplands lie on either side, and inland the valley shallows until it becomes an ordinary dry valley.",
+    distinguish:
+      "Wied il-Għasri, Mġarr ix-Xini on Gozo's south coast and Xlendi on its west coast are all rias; the main difference is width. Xlendi's valley mouth is broad and has grown into a bay supporting a small resort village, whereas Wied il-Għasri is as narrow as a crack, with room only for small boats and swimmers.",
+    concept:
+      "A ria is a river valley drowned by the sea. It looks like a glacial fjord — both are long, narrow inlets reaching deep into the land — but the origin differs: a fjord is scoured by ice and has a U-shaped cross-section, while a ria is cut by a river, has a V-shaped cross-section and grows shallower inland. The Maltese Islands were never covered by glaciers, so their long, narrow inlets are all rias.",
+    history:
+      "In the eighteenth century a well reaching down to seawater was cut into a sea cave near the valley mouth, and the cave became known as the Grain Cave. Today Wied il-Għasri is a swimming and diving spot on Gozo's north coast; the gorge is narrow and deep, and in rough weather the swell inside is strong enough to make entering the water unwise.",
+  },
+  "ramla-bay": {
+    // 全六段 sources: 同中文侧。From Marsalforn Bay's eastern headland to Daħlet Qorrot the coast is scree slopes, Ramla Bay the only beach interrupting them, where Blue Clay and Upper Globigerina Limestone meet near sea level; depositional beaches 2.4% of Malta's coastline（Gauci 2025, tier 2）；dunes a Natura 2000 SAC with a complete dune vegetation succession（ERA standard data form MT0000005, tier 1）；reddish colour from iron in the surrounding rock and soil（visitgozo.com）；Calypso's Cave legend（Wikipedia, tier 3, written as legend）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "Ramla Bay, on the north-east coast of Gozo, has a beach with a reddish-orange tint — its Maltese name means 'the red sand'. Behind the beach is a dune area that forms part of an EU Natura 2000 Special Area of Conservation, and the slopes on either side of the bay show Gozo's typical plateaus and scree slopes.",
+    formation:
+      "From the eastern headland of Marsalforn Bay to Daħlet Qorrot, this stretch of Gozo's coast is almost entirely scree slope, and Ramla Bay is its only sandy beach: here Blue Clay and Upper Globigerina Limestone meet near sea level, a valley reaches the shore, and material carried down the valley together with sand brought by the waves has built up at the head of the bay, with the wind then blowing sand inland into dunes. The reddish colour comes from iron in the surrounding rock and soil.",
+    observation:
+      "From the air, Ramla Bay is a broad bay mouth between two hillsides, with an arc of orange-red sand at its head that stands out sharply against the pale grey rocky shores around it. Low vegetation covers the dunes behind the beach, and further inland a valley of fields leads away from the coast.",
+    distinguish:
+      "Ramla Bay and Mellieħa Bay in northern Malta are both sandy bays at the ends of valleys; the difference lies in the dunes. At Mellieħa Bay a road and facilities run right behind the beach, while at Ramla Bay a stretch of dune vegetation survives behind the sand, with the full sequence from pioneer plants at the shoreline to fixed dunes further inland still visible.",
+    concept:
+      "Sand dunes are rare in the Maltese Islands because the coast is mostly rock and cliff, leaving few places where sand can accumulate at all — according to a University of Malta geographer's figures, depositional beaches make up only about 2.4% of Malta's coastline. Dune vegetation forms bands from the shoreline inland, and once trampled or built over it is very hard to restore.",
+    history:
+      "A cave on the hillside beside the bay has traditionally been called Calypso's Cave, and local lore links it with the nymph Calypso of Homer's Odyssey; this is a legend. Today the dune area is a Natura 2000 Special Area of Conservation.",
+  },
+  "majjistral-coast": {
+    // 全六段 sources: 同中文侧。On Malta's north-west coast Upper Coralline Limestone plateaus overlie Blue Clay and Globigerina Limestone, producing boulder scree slopes (rdum) and clay badlands, il-Karraba a classic example; rdum formed as water seeping through fissures destabilises the clay and the capping limestone collapses（Gauci 2025; Frontiers in Conservation Science 2025, tier 2）；park declared by Legal Notice 251 of 2007 in September 2007, from Golden Bay to Il-Prajjet and Xagħra l-Ħamra, including ~3 km of protected coastal cliffs within a Natura 2000 SAC, described by the park as Malta's first national park（majjistral.org, tier 1）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
+    seeing:
+      "The Majjistral coast runs north from around Golden Bay on the north-west coast of Malta. It is quite unlike the vertical cliffs of the south-west: on top is a hard Upper Coralline Limestone plateau, below its edge are blue-grey clay slopes, and blocks of every size that have fallen from above lie scattered across them down to the sea. In 2007 the area became the Majjistral Nature and History Park.",
+    formation:
+      "In Maltese this kind of landform is called rdum. The Upper Coralline Limestone is permeable, so rain seeps through its fissures down to the Blue Clay; the clay softens as it takes up water, loses strength and begins to slide, and the limestone above, left unsupported, breaks away along its joints and piles up on the clay as boulder slopes. The waves keep eroding the clay at the foot of the slope, so the whole coast retreats step by step, and rain often cuts dense gullies into the clay slopes, forming badlands.",
+    observation:
+      "From the air, the Majjistral coast has two clear tiers: an upper tier of pale plateau with a clean edge, and a lower tier of darker slopes full of gullies and boulders. The beaches of Golden Bay and Għajn Tuffieħa Bay are set between headlands, and il-Karraba headland stretches into the sea like a long, thin tongue.",
+    distinguish:
+      "The Majjistral coast and the Dingli Cliffs both lie on the raised western side of the islands; the difference is which layer reaches the shore. At Dingli the cliff foot is hard Lower Coralline Limestone and the cliff is high and steep; along the Majjistral coast soft Blue Clay and Globigerina Limestone reach the sea, the cliff cannot stay upright, and the coast becomes a staircase of plateau, clay slope and boulder slope.",
+    concept:
+      "The same set of rock layers, placed at different heights, shapes completely different coasts, and the deciding factor is which layer the waves reach: hard limestone makes a vertical cliff, soft clay makes landslides and boulder slopes. Because the Maltese Islands tilt to the north-east, different layers reach sea level along different stretches of coast, which is why the islands have such a variety of coastal types.",
+    history:
+      "In September 2007 the Maltese government declared the Majjistral Nature and History Park by legal notice, covering the coast from Golden Bay to Il-Prajjet; the park describes itself as Malta's first national park. About 3 km of its coastal cliffs form part of the EU's Natura 2000 network, and traditional rubble walls and fields survive on the plateau.",
+  },
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
     seeing:

@@ -55,7 +55,7 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 549,
+    terrainCount: 643,
     available: true,
   },
   {
@@ -189,7 +189,11 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   luxembourg: "western-europe",
   poland: "eastern-europe",
   czechia: "eastern-europe",
+  slovakia: "eastern-europe",
+  hungary: "eastern-europe",
   croatia: "southern-europe",
+  slovenia: "southern-europe",
+  malta: "southern-europe",
   chile: "south-america",
 };
 
@@ -247,15 +251,19 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "netherlands", name: "荷兰", nameEn: "Netherlands", code: "NL" },
   { slug: "luxembourg", name: "卢森堡", nameEn: "Luxembourg", code: "LU" },
   { slug: "switzerland", name: "瑞士", nameEn: "Switzerland", code: "CH" },
-  // 南欧（拼音：克罗地亚 Kèluódìyà → 葡萄牙 Pútáoyá → 西班牙 Xībānyá → 希腊 Xīlà → 意大利 Yìdàlì）
+  // 南欧（拼音：克罗地亚 Kèluódìyà → 马耳他 Mǎ'ěrtā → 葡萄牙 Pútáoyá → 斯洛文尼亚 Sīluòwénníyà → 西班牙 Xībānyá → 希腊 Xīlà → 意大利 Yìdàlì）
   { slug: "croatia", name: "克罗地亚", nameEn: "Croatia", code: "HR" },
+  { slug: "malta", name: "马耳他", nameEn: "Malta", code: "MT" },
   { slug: "portugal", name: "葡萄牙", nameEn: "Portugal", code: "PT" },
+  { slug: "slovenia", name: "斯洛文尼亚", nameEn: "Slovenia", code: "SI" },
   { slug: "spain", name: "西班牙", nameEn: "Spain", code: "ES" },
   { slug: "greece", name: "希腊", nameEn: "Greece", code: "GR" },
   { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
-  // 东欧（拼音：波兰 Bōlán → 捷克 Jiékè）
+  // 东欧（拼音：波兰 Bōlán → 捷克 Jiékè → 斯洛伐克 Sīluòfákè → 匈牙利 Xiōngyálì）
   { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
   { slug: "czechia", name: "捷克", nameEn: "Czechia", code: "CZ" },
+  { slug: "slovakia", name: "斯洛伐克", nameEn: "Slovakia", code: "SK" },
+  { slug: "hungary", name: "匈牙利", nameEn: "Hungary", code: "HU" },
   // 北美（拼音：加拿大 Jiānádà → 美国 Měiguó）
   { slug: "canada", name: "加拿大", nameEn: "Canada", code: "CA" },
   { slug: "usa", name: "美国", nameEn: "United States", code: "US" },
