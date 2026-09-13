@@ -8710,7 +8710,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the harbour, with Kronborg Castle guarding the narrowest point of the Øresund — historically a strategic point for controlling Baltic shipping — and frequent ferries running across to Sweden.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Copenhagen Airport (about 60 km, about 50 minutes by train). The old town is walkable, and frequent ferries run to and from Helsingborg, Sweden. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Copenhagen Airport (about 60 km). Since December 2022 Kystbanen coast-line trains no longer run through to the airport, so the rail journey involves a change. The old town is walkable, and frequent ferries run to and from Helsingborg, Sweden. The climate is temperate maritime.",
     culture:
       "The official language is Danish, with high English proficiency. Helsingør is known worldwide for its literary connection to Kronborg Castle and Hamlet, and a Hamlet theatre festival is held at the castle each summer. Restaurant bills typically already include service.",
     seeAndDo:
@@ -11391,7 +11391,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     seeAndDo:
       "The Zahir Mosque; the royal square (the Balai Besar, the royal museum, the clock tower); the Alor Setar Tower view; Mahathir's birthplace; the Paddy Museum and the fields; the Pekan Rabu market; the Kedah State Museum; the forest and falls of Gunung Jerai; the fishing village and mangroves of Kuala Kedah; the Bujang Valley archaeological sites (about 60 km south).",
     whenAndTips:
-      "December–April is drier, and the paddy is most golden in December before harvest. A day for the city. A transit point for Langkawi (about 1.5 hours by ferry) or for the road north into Thailand.",
+      "December–April is drier; the paddy is most golden just before harvest, and the exact month shifts with each year's planting schedule. A day for the city. A transit point for Langkawi (about 1.5 hours by ferry) or for the road north into Thailand.",
   },
   semporna: {
     // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
