@@ -4959,6 +4959,53 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "圣保罗群岛", nameEn: "St Paul's Islands", lon: 14.4000, lat: 35.9700, kind: "landmark" },
     { nameZh: "西马尔湿地保护区", nameEn: "Is-Simar Nature Reserve", lon: 14.3822, lat: 35.9456, kind: "landmark" },
   ],
+  // ===== 欧洲 / 爱沙尼亚 =====（维基 / 爱沙尼亚语维基坐标；维基无坐标的取 OpenStreetMap Nominatim）
+  tallinn: [
+    { nameZh: "市政厅广场", nameEn: "Town Hall Square", lon: 24.7455, lat: 59.4371, kind: "landmark" },
+    { nameZh: "图姆皮亚城堡", nameEn: "Toompea Castle", lon: 24.7372, lat: 59.4356, kind: "landmark" },
+    { nameZh: "卡德里奥格宫", nameEn: "Kadriorg Palace", lon: 24.7908, lat: 59.4385, kind: "landmark" },
+    { nameZh: "水上飞机港博物馆", nameEn: "Seaplane Harbour", lon: 24.7383, lat: 59.4504, kind: "landmark" },
+    { nameZh: "皮里塔", nameEn: "Pirita", lon: 24.8328, lat: 59.4669, kind: "landmark" },
+  ],
+  tartu: [
+    { nameZh: "塔尔图市政厅", nameEn: "Tartu Town Hall", lon: 26.7217, lat: 58.3800, kind: "landmark" },
+    { nameZh: "塔尔图大学主楼", nameEn: "University of Tartu Main Building", lon: 26.7200, lat: 58.3811, kind: "landmark" },
+    { nameZh: "塔尔图老天文台", nameEn: "Tartu Old Observatory", lon: 26.7201, lat: 58.3788, kind: "landmark" },
+    { nameZh: "爱沙尼亚国家博物馆", nameEn: "Estonian National Museum", lon: 26.7456, lat: 58.3956, kind: "landmark" },
+    { nameZh: "圣约翰教堂", nameEn: "St John's Church", lon: 26.7202, lat: 58.3827, kind: "landmark" },
+  ],
+  parnu: [
+    { nameZh: "派尔努海滩", nameEn: "Pärnu Beach", lon: 24.4953, lat: 58.3742, kind: "landmark" },
+    { nameZh: "红塔", nameEn: "Red Tower", lon: 24.5028, lat: 58.3850, kind: "landmark" },
+    { nameZh: "塔林门", nameEn: "Tallinn Gate", lon: 24.4948, lat: 58.3836, kind: "landmark" },
+    { nameZh: "泥疗浴场", nameEn: "Pärnu Mud Baths", lon: 24.4960, lat: 58.3758, kind: "landmark" },
+    { nameZh: "派尔努河口防波堤", nameEn: "Pärnu Pier", lon: 24.4724, lat: 58.3718, kind: "landmark" },
+  ],
+  kuressaare: [
+    { nameZh: "库雷萨雷主教城堡", nameEn: "Kuressaare Episcopal Castle", lon: 22.4793, lat: 58.2469, kind: "landmark" },
+    { nameZh: "卡利陨石坑", nameEn: "Kaali Crater", lon: 22.6694, lat: 58.3728, kind: "landmark" },
+    { nameZh: "潘加陡崖", nameEn: "Panga Cliff", lon: 22.2880, lat: 58.5702, kind: "landmark" },
+    { nameZh: "安加拉风车群", nameEn: "Angla Windmills", lon: 22.7003, lat: 58.5267, kind: "landmark" },
+  ],
+  haapsalu: [
+    { nameZh: "哈普萨卢主教城堡", nameEn: "Haapsalu Episcopal Castle", lon: 23.5386, lat: 58.9472, kind: "landmark" },
+    { nameZh: "休闲会馆", nameEn: "Haapsalu Kuursaal", lon: 23.5376, lat: 58.9504, kind: "landmark" },
+    { nameZh: "旧火车站（铁路博物馆）", nameEn: "Old Railway Station (Railway Museum)", lon: 23.5322, lat: 58.9381, kind: "landmark" },
+  ],
+  viljandi: [
+    { nameZh: "骑士团城堡遗址", nameEn: "Viljandi Order Castle ruins", lon: 25.5950, lat: 58.3592, kind: "landmark" },
+    { nameZh: "传统音乐中心", nameEn: "Estonian Traditional Music Centre", lon: 25.5961, lat: 58.3611, kind: "landmark" },
+    { nameZh: "维尔扬迪湖", nameEn: "Lake Viljandi", lon: 25.5931, lat: 58.3500, kind: "landmark" },
+  ],
+  rakvere: [
+    { nameZh: "拉克韦雷城堡", nameEn: "Rakvere Castle", lon: 26.3522, lat: 59.3478, kind: "landmark" },
+    { nameZh: "原牛雕像", nameEn: "Aurochs statue", lon: 26.3506, lat: 59.3492, kind: "landmark" },
+  ],
+  otepaa: [
+    { nameZh: "泰赫万迪体育中心", nameEn: "Tehvandi Sports Centre", lon: 26.5092, lat: 58.0508, kind: "landmark" },
+    { nameZh: "普哈湖", nameEn: "Lake Pühajärv", lon: 26.4500, lat: 58.0333, kind: "landmark" },
+    { nameZh: "奥泰佩城堡山", nameEn: "Otepää Castle Hill", lon: 26.5041, lat: 58.0575, kind: "landmark" },
+  ],
   // ===== 欧洲 / 匈牙利 =====
   budapest: [
     { nameZh: "布达城堡（旧王宫）", nameEn: "Buda Castle", lon: 19.0399, lat: 47.4962, kind: "landmark" },
