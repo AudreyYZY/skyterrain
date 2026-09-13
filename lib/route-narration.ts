@@ -4686,12 +4686,12 @@ export const ROUTE_NARRATION: Record<
 
 
   "pek-foc": {
-    // study sources: 全四段（study/travel × 中英）: 黄岗山「超过 2100 米、华东最高点之一」与本库 terrain/wuyishan（2160.8 m）一致；福州「中国温泉之都」2010 年国土资源部公告（1 级）。核实 2026-09-11
+    // study sources: 全四段（study/travel × 中英）: 黄岗山「超过 2100 米、华东地区海拔最高的山峰」—— 国家林业和草原局「武夷山国家公园：碧水丹山 生物之窗」原文「海拔2160.8米，是国家公园最高处，也是我国大陆东南第一峰，素有“华东屋脊”之称」、武夷山国家公园管理局「黄岗山」页「整个华东六省一市地区的最高山峰」（均 1 级，2026-09-13 核）；原写「之一」过于保守，三处统一；福州「中国温泉之都」2010 年国土资源部公告（1 级）。核实 2026-09-11
     study: {
     "zh-CN":
-      "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高点之一。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
+      "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高的山峰。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
     "en-US":
-      "Beijing to Fuzhou flies from the North China Plain all the way to the southern foot of the Wuyi Mountains on the south-east coast. Leaving the capital, you are first over the North China Plain — a vast flat lowland built by the silt of the Yellow and Hai rivers, fields and towns merging into one another. Heading south the flight approaches the Yangtze Delta area, a dense web of rivers, paddies and towns and one of China's most developed regions. Farther south-east the ground begins to rise into the Wuyi Mountains, a folded range running north-east to south-west, heavily forested and forming the border between Jiangxi and Fujian; its highest peak, Huanggang Shan, tops 2,100 m, among the highest points in eastern China. Beyond the Wuyi range the plane descends along the Min River into the Fuzhou basin, where the river has built a small alluvial plain around the city, with the airport sited farther out toward the coast at Changle.",
+      "Beijing to Fuzhou flies from the North China Plain all the way to the southern foot of the Wuyi Mountains on the south-east coast. Leaving the capital, you are first over the North China Plain — a vast flat lowland built by the silt of the Yellow and Hai rivers, fields and towns merging into one another. Heading south the flight approaches the Yangtze Delta area, a dense web of rivers, paddies and towns and one of China's most developed regions. Farther south-east the ground begins to rise into the Wuyi Mountains, a folded range running north-east to south-west, heavily forested and forming the border between Jiangxi and Fujian; its highest peak, Huanggang Shan, tops 2,100 m, the highest point in eastern China. Beyond the Wuyi range the plane descends along the Min River into the Fuzhou basin, where the river has built a small alluvial plain around the city, with the airport sited farther out toward the coast at Changle.",
     },
     travel: {
     "zh-CN":
@@ -4911,12 +4911,12 @@ export const ROUTE_NARRATION: Record<
 
 
   "can-wnz": {
-    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m「华东最高的山峰之一」带限定；雁荡山 2005 年 UNESCO 世界地质公园。核实 2026-09-11
+    // study sources: 全四段（study/travel × 中英）: 黄岗山 2160.8 m「华东地区海拔最高的山峰」—— 国家林草局 forestry.gov.cn/c/www/kpgjgy/126263.jhtml「我国大陆东南第一峰，素有“华东屋脊”之称」、wysgjgy.fujian.gov.cn「整个华东六省一市地区的最高山峰」（1 级，2026-09-13 核，原写「之一」，与 terrain/wuyi 统一）；雁荡山 2005 年 UNESCO 世界地质公园。核实 2026-09-11
     study: {
     "zh-CN":
-      "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰之一，也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
+      "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰；武夷山也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
     "en-US":
-      "Guangzhou to Wenzhou runs the length of southern China and the south-east coast to the mouth of the Ou River. The flight leaves the Pearl River Delta and soon crosses the Nanling, the watershed between the Pearl and Yangtze river systems, a low, broken east–west belt of hills. Beyond the Nanling the flight crosses hill country on the Fujian–Jiangxi border before reaching the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m — among the highest points in eastern China and a UNESCO Mixed World Heritage Site. Past the Wuyi range the flight enters the coastal hills of southern Zhejiang, and the land drops toward the mouth of the Ou River, where Wenzhou sits — historically an important birthplace of maritime trade and, more recently, of China's private-sector economy.",
+      "Guangzhou to Wenzhou runs the length of southern China and the south-east coast to the mouth of the Ou River. The flight leaves the Pearl River Delta and soon crosses the Nanling, the watershed between the Pearl and Yangtze river systems, a low, broken east–west belt of hills. Beyond the Nanling the flight crosses hill country on the Fujian–Jiangxi border before reaching the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m — the highest point in eastern China; the Wuyi Mountains are also a UNESCO Mixed World Heritage Site. Past the Wuyi range the flight enters the coastal hills of southern Zhejiang, and the land drops toward the mouth of the Ou River, where Wenzhou sits — historically an important birthplace of maritime trade and, more recently, of China's private-sector economy.",
     },
     travel: {
     "zh-CN":

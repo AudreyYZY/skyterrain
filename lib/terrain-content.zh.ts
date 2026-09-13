@@ -1836,6 +1836,7 @@ export const TERRAIN_CONTENT_ZH: Record<string, TerrainLesson> = {
   wuyi: {
     // seeing sources: 主峰黄岗山 **2160.8 m**，称「华东最高峰」「东南 10 省区最高峰」——
     //   **这是有明确地理范围限定的排名断言，不是空泛的主观最高级**，成立（2 级，2026-09-08 核）。
+    //   2026-09-13 补 1 级：国家林业和草原局「武夷山国家公园：碧水丹山 生物之窗」（forestry.gov.cn/c/www/kpgjgy/126263.jhtml）「我国大陆东南第一峰，素有“华东屋脊”之称」；武夷山国家公园管理局「黄岗山」页（wysgjgy.fujian.gov.cn）「整个华东六省一市地区的最高山峰」。航线 pek-foc / can-wnz 原写「华东最高之一」，已与本条统一。
     //   武夷山 **1999 年**列入世界文化与自然双重遗产（第 23 届世界遗产委员会会议，符合自然标准 vii、x
     //   与文化标准 iii、vi）—— https://whc.unesco.org/en/list/911/（1 级）。
     //   `history` 段只写朱子理学与茶文化，零争议红线通过。
