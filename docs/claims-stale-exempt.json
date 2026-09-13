@@ -15,6 +15,12 @@
       "recheckAfter": "2027-03"
     },
     {
+      "key": "travel/anshan/identity",
+      "reason": "鞍山 2025 年统计公报只有户籍人口（320.1 万）、没有常住人口章节；最新可取的常住人口是辽宁省统计局 2025-05-27 发布的 2024 年末分市县数（319.2 万，1 级）。条目 sources 注释已写明。",
+      "confirmedOn": "2026-09-13",
+      "recheckAfter": "2027-06"
+    },
+    {
       "key": "travel/avignon/howItWorks",
       "reason": "INSEE 的 populations de référence（原 populations légales）按法律滞后三年：2026-01-01 生效版参照 2023 年（法令 n° 2025-1362，2025-12-26 签署）—— 2023 这个年份不是过期，是定义。条目上方 sources 注释已写明这套口径与三档（commune / unité urbaine / aire d'attraction）的区别。下一版参照 2025 年（2024 是 INSEE 压缩滞后期时的「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。",
       "confirmedOn": "2026-09-12",
@@ -93,6 +99,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/jiamusi/identity",
+      "reason": "佳木斯 2025 年统计公报只有户籍人口（215.9 万）；最新可取的常住人口是《黑龙江统计年鉴 2025》表 2-6 的 2024 年末数（206.6 万，1 级），2025 年数要等年鉴 2026。条目 sources 注释已写明。",
+      "confirmedOn": "2026-09-13",
+      "recheckAfter": "2027-01"
+    },
+    {
       "key": "travel/jiaozuo/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -102,6 +114,18 @@
       "key": "travel/jiaozuo/identity",
       "reason": "2025 年公报截至 2026-09-08 未查到（该市常规 5 月发布）；2024 年末的 349.6 万是最新可查数",
       "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/jilin-city/howItWorks",
+      "reason": "吉林市 2025 年公报（2026-05-19）**只公布户籍人口 384.2 万**，吉林省统计局截至 2026-09 也未发布 2025 年末分市州常住人口表 —— 2025 年是全国 1% 人口抽样调查年，多市因此只发户籍数。2024 年末的 349.48 万（省统计局，1 级）是最新可用的常住人口。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/jinghong/identity",
+      "reason": "景洪市 2025 年末常住人口截至 2026-09 查不到可打开的一手或二手原文（聚合站有「69.47 万」的说法，追不到来源，未采信）。2024 年末 66.57 万是最新可核实的数。",
+      "confirmedOn": "2026-09-12",
       "recheckAfter": "2027-06"
     },
     {
@@ -169,6 +193,12 @@
       "reason": "南邦市自治市 53,614 人（2017）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/leshan/howItWorks",
+      "reason": "乐山市 2025 年公报（2026-04-07 发布）通篇只有「年末全市户籍人口 341.2 万人」，没有常住人口 —— 与吉林市同因（1% 抽样调查年）。2024 年末 315.1 万是最新可用。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-04"
     },
     {
       "key": "travel/lille/howItWorks",
@@ -333,6 +363,18 @@
       "recheckAfter": "2027-07"
     },
     {
+      "key": "travel/yanji/howItWorks",
+      "reason": "同 travel/yanji/identity：延吉市 2025 年度公报尚未发布。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/yanji/identity",
+      "reason": "延吉市 2025 年度统计公报截至 2026-09 尚未发布（往年落款 5 月）。2024 年末 67.08 万是最新可用。",
+      "confirmedOn": "2026-09-12",
+      "recheckAfter": "2027-06"
+    },
+    {
       "key": "travel/yibin/identity",
       "reason": "2025 年公报起不再公布常住人口，只给户籍总人口 543.5 万；2024 年末的 461.1 万是最新可查数",
       "confirmedOn": "2026-09-08",
@@ -349,36 +391,6 @@
       "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-04"
-    },
-    {
-      "key": "travel/jilin-city/howItWorks",
-      "reason": "吉林市 2025 年公报（2026-05-19）**只公布户籍人口 384.2 万**，吉林省统计局截至 2026-09 也未发布 2025 年末分市州常住人口表 —— 2025 年是全国 1% 人口抽样调查年，多市因此只发户籍数。2024 年末的 349.48 万（省统计局，1 级）是最新可用的常住人口。",
-      "confirmedOn": "2026-09-12",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/leshan/howItWorks",
-      "reason": "乐山市 2025 年公报（2026-04-07 发布）通篇只有「年末全市户籍人口 341.2 万人」，没有常住人口 —— 与吉林市同因（1% 抽样调查年）。2024 年末 315.1 万是最新可用。",
-      "confirmedOn": "2026-09-12",
-      "recheckAfter": "2027-04"
-    },
-    {
-      "key": "travel/jinghong/identity",
-      "reason": "景洪市 2025 年末常住人口截至 2026-09 查不到可打开的一手或二手原文（聚合站有「69.47 万」的说法，追不到来源，未采信）。2024 年末 66.57 万是最新可核实的数。",
-      "confirmedOn": "2026-09-12",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/yanji/identity",
-      "reason": "延吉市 2025 年度统计公报截至 2026-09 尚未发布（往年落款 5 月）。2024 年末 67.08 万是最新可用。",
-      "confirmedOn": "2026-09-12",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/yanji/howItWorks",
-      "reason": "同 travel/yanji/identity：延吉市 2025 年度公报尚未发布。",
-      "confirmedOn": "2026-09-12",
-      "recheckAfter": "2027-06"
     }
   ]
 }

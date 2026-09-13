@@ -4680,6 +4680,50 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "札达土林", nameEn: "Zanda Earth Forest", lon: 79.8000, lat: 31.4800, kind: "nature" },
     { nameZh: "班公湖", nameEn: "Pangong Lake (Bangong Co)", lon: 79.5000, lat: 33.6000, kind: "nature" },
   ],
+  // ── 中国批 11（2026-09-13）：维基坐标；缺维基坐标的取 OpenStreetMap Nominatim ──
+  quzhou: [
+    { nameZh: "孔氏南宗家庙", nameEn: "Southern Ancestral Temple of the Kong Family", lon: 118.8725, lat: 28.9633, kind: "landmark" },
+    { nameZh: "江郎山", nameEn: "Mount Jianglang", lon: 118.5653, lat: 28.5297, kind: "nature" },
+    { nameZh: "廿八都古镇", nameEn: "Nianbadu Old Town", lon: 118.4788, lat: 28.2953, kind: "district" },
+    { nameZh: "根宫佛国文化旅游景区", nameEn: "Genggong Buddhist Kingdom", lon: 118.3897, lat: 29.1349, kind: "landmark" },
+  ],
+  lianyungang: [
+    { nameZh: "花果山景区", nameEn: "Mount Huaguo Scenic Area", lon: 119.2883, lat: 34.6541, kind: "nature" },
+    { nameZh: "连岛", nameEn: "Lian Island", lon: 119.4639, lat: 34.7575, kind: "nature" },
+    { nameZh: "孔望山", nameEn: "Kongwang Shan", lon: 119.1697, lat: 34.5678, kind: "landmark" },
+  ],
+  rizhao: [
+    { nameZh: "万平口海滨", nameEn: "Wanpingkou Beach", lon: 119.5684, lat: 35.4139, kind: "nature" },
+    { nameZh: "浮来山", nameEn: "Mount Fulai", lon: 118.7880, lat: 35.6302, kind: "nature" },
+  ],
+  xinyang: [
+    { nameZh: "鸡公山", nameEn: "Jigong Shan", lon: 114.0833, lat: 31.7994, kind: "nature" },
+  ],
+  chenzhou: [
+    { nameZh: "东江湖", nameEn: "Dongjiang Lake", lon: 113.3422, lat: 25.8004, kind: "nature" },
+    { nameZh: "苏仙岭", nameEn: "Suxian Ling", lon: 113.0483, lat: 25.8123, kind: "nature" },
+    { nameZh: "高椅岭", nameEn: "Gaoyiling", lon: 113.1568, lat: 25.9615, kind: "nature" },
+  ],
+  wuzhou: [
+    { nameZh: "骑楼城", nameEn: "Qilou Arcade District", lon: 111.3122, lat: 23.4744, kind: "district" },
+    { nameZh: "龙母庙", nameEn: "Dragon Mother Temple", lon: 111.3116, lat: 23.4849, kind: "landmark" },
+    { nameZh: "梧州中山纪念堂", nameEn: "Wuzhou Sun Yat-sen Memorial Hall", lon: 111.3139, lat: 23.4796, kind: "landmark" },
+  ],
+  panzhihua: [
+    { nameZh: "二滩水电站", nameEn: "Ertan Hydropower Station", lon: 101.7855, lat: 26.8231, kind: "landmark" },
+  ],
+  anshan: [
+    { nameZh: "千山风景区", nameEn: "Qianshan Scenic Area", lon: 123.1215, lat: 41.0084, kind: "nature" },
+    { nameZh: "玉佛苑", nameEn: "Jade Buddha Garden", lon: 123.0043, lat: 41.1048, kind: "landmark" },
+    { nameZh: "汤岗子温泉", nameEn: "Tanggangzi Hot Springs", lon: 122.9020, lat: 41.0073, kind: "landmark" },
+  ],
+  tongliao: [
+    { nameZh: "奈曼王府", nameEn: "Naiman Princely Mansion", lon: 120.6447, lat: 42.8459, kind: "landmark" },
+  ],
+  jiamusi: [
+    { nameZh: "街津口赫哲族乡", nameEn: "Jiejinkou Hezhe Ethnic Township", lon: 132.8413, lat: 47.9333, kind: "district" },
+  ],
+
 
   // ── 智利 ──
   santiago: [
@@ -4862,7 +4906,8 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "普图伊城堡", nameEn: "Ptuj Castle", lon: 15.8681, lat: 46.4222, kind: "landmark" },
     { nameZh: "普图伊主广场", nameEn: "Ptuj Town Square", lon: 15.8697, lat: 46.4197, kind: "landmark" },
     { nameZh: "多明我会修道院", nameEn: "Dominican Monastery", lon: 15.8722, lat: 46.4214, kind: "landmark" },
-  ],  // ===== 欧洲 / 马耳他 =====（维基坐标；未取到维基坐标的按地图概略定位）
+  ],
+  // ===== 欧洲 / 马耳他 =====（维基坐标；未取到维基坐标的按地图概略定位）
   valletta: [
     { nameZh: "圣约翰副主教座堂", nameEn: "St John's Co-Cathedral", lon: 14.5128, lat: 35.8978, kind: "landmark" },
     { nameZh: "上巴拉卡花园", nameEn: "Upper Barrakka Gardens", lon: 14.5122, lat: 35.8947, kind: "landmark" },
@@ -4914,7 +4959,6 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "圣保罗群岛", nameEn: "St Paul's Islands", lon: 14.4000, lat: 35.9700, kind: "landmark" },
     { nameZh: "西马尔湿地保护区", nameEn: "Is-Simar Nature Reserve", lon: 14.3822, lat: 35.9456, kind: "landmark" },
   ],
-
   // ===== 欧洲 / 匈牙利 =====
   budapest: [
     { nameZh: "布达城堡（旧王宫）", nameEn: "Buda Castle", lon: 19.0399, lat: 47.4962, kind: "landmark" },

@@ -18342,7 +18342,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The form of a sea cliff depends on its rock. Hard, uniform rock makes tall, stable cliffs; interbedded rock such as flysch, where soft layers below are hollowed out and the beds above collapse in blocks, retreats quickly with frequent falls, so fresh sections of strata are always visible on the cliff face.",
     history:
       "Salt-making and olive growing around Strunjan have a long tradition, and the saltpans still produce salt by traditional methods. The cliff and its surrounding waters are protected as a landscape park, one of the nature conservation areas on Slovenia's coast.",
-  },  "dingli-cliffs": {
+  },
+  "dingli-cliffs": {
     // 全六段 sources: 同中文侧。Ta' Dmejrek 253 m, Malta's highest point; five-formation succession; NE tilt with cliffs on the SW; Magħlaq Fault affecting the Dingli cliffs with >200 m relief（Gauci 2025, UM OAR, tier 2）；UCL plateau / Blue Clay slopes / GL and LCL at Dingli（Frontiers in Conservation Science 2025）；Phoenician, Punic and Roman rock-cut tombs within Dingli（Wikipedia, tier 3, 当批核实 ok）。2026-09-13 首写；核实 2026-09-13 当批（content-verifier 独立检索，本条断言全部 ok，部分仅 3 级来源）。
     seeing:
       "The Dingli Cliffs, on the south-western coast of the island of Malta, are a limestone wall rising abruptly from the sea. Near the top, Ta' Dmejrek reaches 253 m and is the highest point in the country — yet there is no summit here: the clifftop is a gentle plateau, with fields and rubble walls running right to the edge. Looking south from the edge, the lone flat-topped islet out at sea is Filfla.",
@@ -18522,7 +18523,6 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "In September 2007 the Maltese government declared the Majjistral Nature and History Park by legal notice, covering the coast from Golden Bay to Il-Prajjet; the park describes itself as Malta's first national park. About 3 km of its coastal cliffs form part of the EU's Natura 2000 network, and traditional rubble walls and fields survive on the plateau.",
   },
-
   "andes-chile": {
     // seeing sources: 「约4300公里」无出处（疑为国土跨度），删去。核实 2026-09-12
     seeing:

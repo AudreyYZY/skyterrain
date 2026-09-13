@@ -1623,6 +1623,68 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "NGQ", nameZh: "阿里昆莎机场", nameEn: "Ngari Gunsa Airport", lon: 80.0443, lat: 32.1142 },
     source: "阿里地区行署所在地狮泉河镇 32.5042,80.0972（zh.wikipedia，海拔约 4300 米）；NGQ 昆莎机场：zh.wikipedia（海拔 4274 米，距狮泉河约 45 公里）；人口 12.3 万（2020 普查）",
   },
+  // ── 中国批 11（2026-09-13）：衢州 / 连云港 / 日照 / 信阳 / 郴州 / 梧州 / 攀枝花 / 鞍山 / 通辽 / 佳木斯 ──
+  // 机场坐标一律取 OurAirports（公有领域，与 check:airports 同源），距离按本条目坐标算直线；市中心坐标取 zh.wikipedia。
+  {
+    id: "quzhou", nameZh: "衢州", nameEn: "Quzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 118.8600, lat: 28.9700,
+    airport: { iata: "JUZ", nameZh: "衢州机场", nameEn: "Quzhou Airport", lon: 118.8988, lat: 28.9661 },
+    source: "衢州市区 28.97,118.86（zh.wikipedia）；JUZ 机场 OurAirports 28.9661,118.8988，军民合用，距市中心直线约 4 km；江郎山在江山市、直线约 57 km",
+  },
+  {
+    id: "lianyungang", nameZh: "连云港", nameEn: "Lianyungang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 119.2220, lat: 34.5970,
+    airport: { iata: "LYG", nameZh: "连云港花果山国际机场", nameEn: "Lianyungang Huaguoshan Int'l", lon: 119.1790, lat: 34.4141 },
+    source: "连云港市区（海州）34.597,119.222（zh.wikipedia）；LYG 机场 OurAirports 34.4141,119.1790，在灌云县，2021-12-02 启用（澎湃新闻），距市中心直线约 21 km",
+  },
+  {
+    id: "rizhao", nameZh: "日照", nameEn: "Rizhao", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 119.5267, lat: 35.4154,
+    airport: { iata: "RIZ", nameZh: "日照山字河机场", nameEn: "Rizhao Shanzihe Airport", lon: 119.3244, lat: 35.4050 },
+    source: "日照市区 35.4154,119.5267（zh.wikipedia）；RIZ 机场 OurAirports 35.4050,119.3244，机场官网称距主城区直线约 19 km，2015-12-22 首航",
+  },
+  {
+    id: "xinyang", nameZh: "信阳", nameEn: "Xinyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 114.0903, lat: 32.1472,
+    airport: { iata: "XAI", nameZh: "信阳明港机场", nameEn: "Xinyang Minggang Airport", lon: 114.0791, lat: 32.5408 },
+    source: "信阳市区 32.1472,114.0903（zh.wikipedia）；XAI 机场 OurAirports 32.5408,114.0791，在平桥区明港镇，2018-10-28 通航（央广网），距市中心直线约 44 km",
+  },
+  {
+    id: "chenzhou", nameZh: "郴州", nameEn: "Chenzhou", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 113.0161, lat: 25.7700,
+    airport: { iata: "HCZ", nameZh: "郴州北湖机场", nameEn: "Chenzhou Beihu Airport", lon: 112.8454, lat: 25.7534 },
+    source: "郴州市区 25.77,113.0161（zh.wikipedia）；HCZ 机场 OurAirports 25.7534,112.8454，2021-09-16 通航，湖南机场集团官网称距市中心约 18 km（直线约 17 km）",
+  },
+  {
+    id: "wuzhou", nameZh: "梧州", nameEn: "Wuzhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
+    lon: 111.2788, lat: 23.4771,
+    airport: { iata: "WUZ", nameZh: "梧州西江机场", nameEn: "Wuzhou Xijiang Airport", lon: 111.0933, lat: 23.4032 },
+    source: "梧州市区 23.4771,111.2788（zh.wikipedia）；WUZ 机场 OurAirports 23.4032,111.0933，在藤县，2019-01 启用（维基 3 级），距市中心直线约 21 km",
+  },
+  {
+    id: "panzhihua", nameZh: "攀枝花", nameEn: "Panzhihua", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 101.7183, lat: 26.5817,
+    airport: { iata: "PZI", nameZh: "攀枝花保安营机场", nameEn: "Panzhihua Bao'anying Airport", lon: 101.7985, lat: 26.5400 },
+    source: "攀枝花市区 26.5817,101.7183（zh.wikipedia）；PZI 机场 OurAirports 26.54,101.7985，建在山顶（维基 3 级），距市中心直线约 9 km",
+  },
+  {
+    id: "anshan", nameZh: "鞍山", nameEn: "Anshan", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "辽宁省", admin1En: "Liaoning",
+    lon: 122.9933, lat: 41.1083,
+    airport: { iata: "AOG", nameZh: "鞍山腾鳌机场", nameEn: "Anshan Teng'ao Airport", lon: 122.8540, lat: 41.1053 },
+    source: "鞍山市区 41.1083,122.9933（zh.wikipedia）；AOG 机场 OurAirports 41.1053,122.8540，距市中心直线约 12 km；千山风景区在市区东南直线约 15 km",
+  },
+  {
+    id: "tongliao", nameZh: "通辽", nameEn: "Tongliao", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
+    lon: 122.2436, lat: 43.6527,
+    airport: { iata: "TGO", nameZh: "通辽机场", nameEn: "Tongliao Airport", lon: 122.2000, lat: 43.5567 },
+    source: "通辽市区（科尔沁区）43.6527,122.2436（zh.wikipedia）；TGO 机场 OurAirports 43.5567,122.2000，距市中心直线约 11 km；奈曼王府直线约 158 km",
+  },
+  {
+    id: "jiamusi", nameZh: "佳木斯", nameEn: "Jiamusi", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
+    lon: 130.3180, lat: 46.8000,
+    airport: { iata: "JMU", nameZh: "佳木斯松江国际机场", nameEn: "Jiamusi Songjiang Int'l", lon: 130.4643, lat: 46.8428 },
+    source: "佳木斯市区 46.80,130.318（zh.wikipedia）；JMU 机场 OurAirports 46.8428,130.4643，原佳木斯东郊国际机场、2026-01 更名（民航函〔2025〕1013 号），距市中心直线约 12 km",
+  },
 
   // ── 日本 ──────────────────────────────────────────────
   {
