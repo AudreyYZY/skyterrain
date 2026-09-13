@@ -2377,8 +2377,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   ① 过期、② 读作立场表态。现在两个名字并列、都说明在使用。
     //   山脉长约 650 km；迪纳利断层走滑 + 太平洋板块推挤（Yakutat 地体碰撞）驱动抬升；
     //   迪纳利国家公园 1917 年设立、约 2.4 万 km² —— 均核实无误。
+    // seeing sources: 2026-09-13 核（抽样 seed=8）：长度两说 —— Britannica 约 400 mi（650 km）、Wikipedia 约 600 mi（970 km），差异来自西南端点划法，并列两说
     seeing:
-      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (measured by the U.S. Geological Survey in 2015). The peak goes by two current names — Denali, from a local Native language, meaning \"the high one\", and Mount McKinley — and both are in use. Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
+      "The Alaska Range is an arc-shaped range in south-central Alaska, about 650 to 970 km long depending on where its south-western end is drawn, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (measured by the U.S. Geological Survey in 2015). The peak goes by two current names — Denali, from a local Native language, meaning \"the high one\", and Mount McKinley — and both are in use. Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
     formation:
       "The Alaska Range runs along a large strike-slip fault (the Denali Fault) and is the result of the Pacific-side plate pushing north, compressing and displacing crust upward; it is still slowly rising and is seismically active. The rock is mostly sedimentary and granitic, and the upper range is covered by huge valley glaciers — the Kahiltna and others flow tens of kilometres down from around Denali.",
     observation:
