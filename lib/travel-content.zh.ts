@@ -15467,7 +15467,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–9月最舒适；教堂内部按导览场次开放，旺季建议提前确认时段。7月的朝圣期间城里人很多、住宿紧张。老城与玛丽亚山之间是缓坡，步行约半小时。",
   },
   "slovenia-overview": {
-    // 全七段 sources: 全国人口 2026-01-01 为 2,135,107（SURS「Population, 1 January 2026」，2026-04-24 发布）；
+    // 全七段 sources: 全国人口 2026-01-01 为 2,135,107（SURS「Population, 1 January 2026」，2026-04-24 发布）； 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 全国 212 个市镇（občina），其中 12 个为城市市镇（mestna občina）（gov.si「Municipalities in numbers」）；
     // 官方语言斯洛文尼亚语，意大利与匈牙利民族共同体居住的市镇中意大利语/匈牙利语同为官方语言（宪法第 11 条，gov.si）；
     // 2007-01-01 起使用欧元（Banka Slovenije）；2007 年加入申根区；高速公路使用电子通行证 e-vinjeta（DARS / 斯洛文尼亚旅游局）；
@@ -15490,7 +15490,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月与9月全境最舒适；7–8月海岸与湖区人最多，山区步道进入旺季；12–3月阿尔卑斯山区是滑雪季，高山步道需按天气与雪况判断。进高山区前查看特里格拉夫国家公园与山地协会的步道与天气信息，部分高海拔路线冬春季不适合普通徒步。",
   },
   ljubljana: {
-    // 全七段 sources: 首都；2026-01-01 市镇人口 302,826（SURS SiStat 05E1022S，2026H1）；市内分 17 个区（četrtna skupnost），各有区议会（卢布尔雅那市政府）；
+    // 全七段 sources: 首都；2026-01-01 市镇人口 302,826（SURS SiStat 05E1022S，2026H1）；市内分 17 个区（četrtna skupnost），各有区议会（卢布尔雅那市政府）； 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // LJU 机场在城北布尔尼克、公路约 26 km（卢布尔雅那旅游局）；城市公交由 LPP 运营，Urbana 卡可用于公交、城堡缆车等（LPP 官网）；
     // 「约热·普列赤涅克在卢布尔雅那的作品——以人为本的城市设计」2021 年列入 UNESCO 世界遗产，含三桥与中央市场等（卢布尔雅那旅游局）。2026-09-13 首写，⚠️ 当批核实。
     identity:
@@ -15509,7 +15509,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月与9–10月最舒适；7–8月河岸夜晚热闹；12月老城有圣诞集市。冬季盆地里常起雾。城堡山的步道有坡，穿好走的鞋。",
   },
   maribor: {
-    // 全七段 sources: 2026-01-01 市镇人口 114,872，按市镇人口为全国第二（SURS SiStat 05E1022S，2026H1）；位于德拉瓦河畔；
+    // 全七段 sources: 2026-01-01 市镇人口 114,872，按市镇人口为全国第二（SURS SiStat 05E1022S，2026H1）；位于德拉瓦河畔； 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 老城滨河区 Lent 有「老藤」（Stara trta），2004 年获吉尼斯世界纪录认证（老藤官方网站 najstarejsatrta.si，1 级，当批核实 ok）；
     // 波霍列缆车下站距老城约 5 km（马里博尔旅游局）；MBX 机场无稳定定期客运航班 —— 当批核实只拿到 3 级来源（Flightradar24 / Wikipedia 均显示以通用航空与零星包机为主），
     // 未拿到 2026 年的 1–2 级确认，⚠️ 下一轮用 mbx-airport.si 复核。2026-09-13 首写。
@@ -15529,7 +15529,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月与9–10月最舒适；夏季河岸有户外活动与节庆；冬季是波霍列山的滑雪季。秋季葡萄采收期前后，周边酒庄最热闹。",
   },
   celje: {
-    // 全七段 sources: 2026-01-01 市镇人口 49,802（SURS SiStat 05E1022S，2026H1）；位于萨维尼亚河畔、卢布尔雅那东北约 56 km（Britannica）；
+    // 全七段 sources: 2026-01-01 市镇人口 49,802（SURS SiStat 05E1022S，2026H1）；位于萨维尼亚河畔、卢布尔雅那东北约 56 km（Britannica）； 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 古罗马时期称 Claudia Celeia，由克劳狄乌斯皇帝在 1 世纪设为自治市（Britannica）；采列古堡建于 12 世纪、在城东南的山丘上；
     // 1333–1456 年为采列伯爵家族的封建中心（Britannica）。2026-09-13 首写；当批核实：古罗马、伯爵家族、古堡、博物馆地下展厅、铁路干线、啤酒花、城堡活动均 ok；
     // 「老城在北岸」「河在城堡山脚拐进峡谷」「火车站在老城北缘」三点查无达标来源，已改为不写岸别与方位的表述。
@@ -15549,7 +15549,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–10月最舒适；夏季城堡与老城有户外活动。上城堡的步道有坡，旺季中午较晒，早晚去更舒服。",
   },
   kranj: {
-    // 全七段 sources: 2026-01-01 市镇人口 57,491（SURS SiStat 05E1022S，2026H1）；老城立在萨瓦河与科克拉河之间约 30 m 高的岩台上、
+    // 全七段 sources: 2026-01-01 市镇人口 57,491（SURS SiStat 05E1022S，2026H1）；老城立在萨瓦河与科克拉河之间约 30 m 高的岩台上、 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 老城受文化遗产保护（克拉尼市政府与克拉尼旅游局）；科克拉河峡谷在老城脚下；普列舍仁林园为诗人普列舍仁墓地（克拉尼市政府「Kranj's Top 10」）；
     // LJU 机场在克拉尼以东约 9.5 km、属采尔克列（Cerklje na Gorenjskem）市镇。2026-09-13 首写；当批核实改正：原写机场在「城东北」，实为城东。
     identity:
@@ -15568,7 +15568,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–10月最舒适；峡谷步道雨后湿滑。离机场近，适合作为抵达或离开当天的落脚点。",
   },
   koper: {
-    // 全七段 sources: 2026-01-01 市镇人口 54,795（SURS SiStat 05E1022S，2026H1）；市镇为双语地区，Koper / Capodistria 两个名称同为官方（Culture.si）；
+    // 全七段 sources: 2026-01-01 市镇人口 54,795（SURS SiStat 05E1022S，2026H1）；市镇为双语地区，Koper / Capodistria 两个名称同为官方（Culture.si）； 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 科佩尔港是斯洛文尼亚唯一的国际货运港（gov.si 2021-02-23 新闻）；执政官宫建于 13 世纪、15 世纪中叶形成今貌，属晚期哥特—文艺复兴与威尼斯哥特式，
     // 位于老城中心广场南侧（科佩尔旅游局）。零争议：中心广场不写名称，不涉任何海域问题。2026-09-13 首写，⚠️ 当批核实。
     identity:
@@ -15587,7 +15587,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月与9–10月最舒适；7–8月海边炎热、人多。老城在高地上，夏季中午石板路很晒，早晚走更舒服。",
   },
   piran: {
-    // 全七段 sources: 2026-01-01 市镇人口 18,206（SURS SiStat 05E1022S，2026H1）；按 SURS 2026-01-01 聚落数据，皮兰聚落人口密度每平方公里超过 5300 人，
+    // 全七段 sources: 2026-01-01 市镇人口 18,206（SURS SiStat 05E1022S，2026H1）；按 SURS 2026-01-01 聚落数据，皮兰聚落人口密度每平方公里超过 5300 人， 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 为全国人口密度最高的城镇聚落（SURS「Population by settlements, 1 January 2026」，2026-06-11 发布）；塔尔蒂尼广场以作曲家与小提琴家塔尔蒂尼（1692–1770）命名；
     // 20 世纪上半叶皮兰—波尔托罗日间有有轨电车、以广场为终点（当批核实 ok）；2026-09-13 当批核实改正：原写「广场的椭圆形形成于有轨电车时期」，另有来源称椭圆轮廓源自 1894 年填平的旧内港、今日铺装为 1992 年改造，两说均为 3 级，删去成因；城墙为 16 世纪所建，「中世纪城墙」改「老城墙」；老城除居民外禁行机动车，
     // 城外 Fornače（Amfora）停车楼约 838 个车位、有小巴往返塔尔蒂尼广场（波尔托罗日与皮兰旅游局）。双语市镇。零争议：不写海湾与海域。2026-09-13 首写，⚠️ 当批核实。
@@ -15607,7 +15607,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月与9–10月最舒适；7–8月人多、停车楼常满，尽量早到或坐大巴来。老城坡道与台阶多，穿好走的鞋。",
   },
   bled: {
-    // 全七段 sources: 2026-01-01 市镇人口 8,103（SURS SiStat 05E1022S，2026H1）；布莱德城堡立于湖面上方约 130 m 的陡崖上，
+    // 全七段 sources: 2026-01-01 市镇人口 8,103（SURS SiStat 05E1022S，2026H1）；布莱德城堡立于湖面上方约 130 m 的陡崖上， 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 文献中最早见于 1011-05-22 皇帝亨利二世赠给布里克森主教的赠地文书（布莱德城堡官方网站 / 布莱德旅游局）；
     // 距 LJU 机场约 35 km、距卢布尔雅那约 55 km（布莱德旅游局口径）；布莱德奶油方糕为本地甜点。2026-09-13 首写，⚠️ 当批核实。
     identity:
@@ -15626,7 +15626,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月与9–10月最舒适；7–8月与周末人多、停车位紧张，尽量早到或坐大巴来。冬季湖区安静，偶尔湖面结冰，但冰面不宜行走。",
   },
   ptuj: {
-    // 全七段 sources: 2026-01-01 市镇人口 23,898（SURS SiStat 05E1022S，2026H1）；位于德拉瓦河畔、哈洛泽丘陵与斯洛文尼亚丘陵之间；
+    // 全七段 sources: 2026-01-01 市镇人口 23,898（SURS SiStat 05E1022S，2026H1）；位于德拉瓦河畔、哈洛泽丘陵与斯洛文尼亚丘陵之间； 【2026-09-13 核：当批核实硬事实，content-verifier 逐组核，结果见 docs/quality-sampling.md 斯洛文尼亚一节】
     // 古罗马时期称 Poetovio（斯洛文尼亚旅游局 slovenia.info）；「库伦特挨家挨户巡游」2017 年 12 月列入 UNESCO 人类非物质文化遗产代表作名录（斯洛文尼亚旅游局）；
     // 普图伊城堡立于老城上方的山丘上。「最古老城镇」说法各源不一，正文不写。2026-09-13 首写，⚠️ 当批核实。
     identity:
