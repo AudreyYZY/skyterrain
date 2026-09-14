@@ -44,6 +44,7 @@ import { TRAVEL_ZH as malta } from "@/lib/content/malta/travel.zh";
 import { TRAVEL_ZH as estonia } from "@/lib/content/estonia/travel.zh";
 import { TRAVEL_ZH as chile } from "@/lib/content/chile/travel.zh";
 import { TRAVEL_ZH as latvia } from "@/lib/content/latvia/travel.zh";
+import { TRAVEL_ZH as romania } from "@/lib/content/romania/travel.zh";
 
 export const ALL_TRAVEL_ZH: Record<string, TravelGuide> = {
   ...china,
@@ -90,4 +91,5 @@ export const ALL_TRAVEL_ZH: Record<string, TravelGuide> = {
   ...estonia,
   ...chile,
   ...latvia,
+  ...romania,
 };

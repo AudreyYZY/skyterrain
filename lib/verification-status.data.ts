@@ -2019,4 +2019,13 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/sigulda": { f: 7, v: 1, d: "2026-09-15" },
   "travel/cesis": { f: 7, v: 1, d: "2026-09-15" },
   "travel/kuldiga": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/romania-overview": { f: 7, v: 1, d: "2026-09-16" },
+  "travel/bucharest": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/cluj-napoca": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/timisoara": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/brasov": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/sibiu": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/constanta": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/oradea": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/sighisoara": { f: 7, v: 1, d: "2026-09-15" },
 };
