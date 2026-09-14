@@ -40,7 +40,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Amsterdam's old town is built around four concentric canals, centred on Dam Square (site of the Royal Palace). Inside the canal belt is the dense historic centre, including the well-known Red Light District and the Jordaan quarter; outside it are the more modern residential and commercial South and East districts. The whole city is low-lying, much of it at or below sea level.",
     gettingAround:
-      "Schiphol Airport (AMS) is about 15 km from the city, with a train straight to Central Station (about 15 minutes). The city has trams, buses, a metro and ferries; the bicycle is one of the main ways to get around, and renting one is easy. The old canal-side streets are narrow, and pedestrians should watch closely for bikes and trams. The climate is temperate maritime, mild year-round with rain and wind.",
+      "Schiphol Airport (AMS) is about 11 km in a straight line from the city, with a train straight to Central Station (about 15 minutes). The city has trams, buses, a metro and ferries; the bicycle is one of the main ways to get around, and renting one is easy. The old canal-side streets are narrow, and pedestrians should watch closely for bikes and trams. The climate is temperate maritime, mild year-round with rain and wind.",
     culture:
       "Dutch is the main language, with extremely high English proficiency. Amsterdam's pace is moderate, and the city is highly accepting of diverse cultures and lifestyles. Cycling is a daily habit for locals — visitors renting a bike should follow traffic rules and give way to trams and pedestrians. Watch for the separate bike lanes (usually red paving or their own markings) — stepping into one while walking is a common visitor mistake and can draw a bell ring or worse from cyclists. Restaurant tipping is not required.",
     seeAndDo:
@@ -126,7 +126,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Rebuilt after the war, Rotterdam's centre has an open, modern urban layout, with landmark contemporary buildings such as the Cube Houses, the Erasmus Bridge and the Markthal scattered through it. The Meuse runs through the city, and the riverside districts (such as Rotterdam South) have developed rapidly in recent years. The port area (the Europoort) extends west along the river toward the North Sea.",
     gettingAround:
-      "Rotterdam The Hague Airport (RTM) is about 8 km from the city, with a bus connection; you can also take the train from Schiphol (about 40 minutes). The city has a metro, trams and buses, and the centre is easy to walk or cycle. The climate is temperate maritime, windier around the port.",
+      "Rotterdam The Hague Airport (RTM) is about 8 km by road from the city, with a bus connection; you can also take the train from Schiphol (about 40 minutes). The city has a metro, trams and buses, and the centre is easy to walk or cycle. The climate is temperate maritime, windier around the port.",
     culture:
       "Dutch is the main language, with widespread English. Because of the port economy, Rotterdam is ethnically diverse, with a practical, young character and strong openness to new architecture and contemporary art, a contrast to Amsterdam's more historic feel. Restaurant tipping is not required.",
     seeAndDo:

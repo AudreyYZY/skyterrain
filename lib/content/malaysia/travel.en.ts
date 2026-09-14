@@ -158,7 +158,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along the coastline; Tanjung Aru Beach is known for its sunset views, and Gaya Street is home to the city's well-known weekend market.",
     gettingAround:
-      "Kota Kinabalu International Airport is about 7 km from the city centre, Sabah's main air hub; taxis and Grab within the city reach nearby sights easily, while reaching Mount Kinabalu requires driving or hiring a car, about 2 hours.",
+      "Kota Kinabalu International Airport is about 7 km by road from the city centre, Sabah's main air hub; taxis and Grab within the city reach nearby sights easily, while reaching Mount Kinabalu requires driving or hiring a car, about 2 hours.",
     culture:
       "The official language is Malay; the local Kadazan-Dusun and other indigenous communities retain distinctive traditional culture and festivals. Restaurant bills often already include service, and seafood is a local specialty.",
     seeAndDo:
@@ -180,7 +180,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Kuching Waterfront runs along the Sarawak River; the Astana on the opposite bank is a historic landmark, and the old town preserves Chinese shophouses and colonial-era buildings.",
     gettingAround:
-      "Kuching International Airport is about 11 km from the city centre; reaching Gunung Mulu National Park requires a connecting domestic flight via Miri or directly to Mulu Airport, while the Niah Caves require driving toward Miri.",
+      "Kuching International Airport is about 11 km by road from the city centre; reaching Gunung Mulu National Park requires a connecting domestic flight via Miri or directly to Mulu Airport, while the Niah Caves require driving toward Miri.",
     culture:
       "The official language is Malay; Sarawak is one of Malaysia's most ethnically diverse states, and the culture of indigenous groups such as the Dayak and Iban is well preserved locally. Restaurant bills often already include service, and Sarawak laksa is a local specialty.",
     seeAndDo:

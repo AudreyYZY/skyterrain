@@ -264,7 +264,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city follows a typical Thai provincial-capital layout, with Nong Prajak Park at the city centre serving as the main recreational space for local residents.",
     gettingAround:
-      "Udon Thani International Airport is about 5 km from the city centre; it can also be reached by train via the Nong Khai rail line, and is one of the common road gateways to Vientiane, Laos.",
+      "Udon Thani International Airport is about 5 km by road from the city centre; it can also be reached by train via the Nong Khai rail line, and is one of the common road gateways to Vientiane, Laos.",
     culture:
       "The Ban Chiang site in Udon Thani Province has yielded painted pottery and bronze artefacts dating to around 2000 BC, an important archaeological site for studying Southeast Asian prehistory.",
     seeAndDo:

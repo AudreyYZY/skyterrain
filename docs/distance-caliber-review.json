@@ -1,5 +1,5 @@
 {
-  "note": "C6o 机械改写没有动的机场距离（2026-09-15）。先核注册表城市坐标与机场坐标，再决定写「直线约」还是「公路约 / 车程约」。straightKm 按 lib/content/<country>/cities.ts 坐标算。",
+  "note": "C6o 机械改写没有动的机场距离（2026-09-15 更新）。已改：47 处按坐标改「直线约」、18 处与 OSRM 公路距离吻合改「公路约」、12 处城市坐标与 Nominatim 相差 ≤1.5 km 的改「直线约」（按坐标算）。剩下的先核注册表城市坐标（cityCoordVsNominatimKm 大的优先，岘港 / 牡丹江 / 大庆 / 芽庄可能是坐标问题），再决定写法。straightKm 按 lib/content/<country>/cities.ts 坐标算。",
   "rows": [
     {
       "city": "seattle",
@@ -10,19 +10,11 @@
       "field": "gettingAround"
     },
     {
-      "city": "nashville",
-      "iata": "BNA",
-      "claimKm": "14",
-      "straightKm": 9.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
       "city": "salt-lake-city",
       "iata": "SLC",
       "claimKm": "6",
       "straightKm": 7.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -30,32 +22,10 @@
       "iata": "RZE",
       "claimKm": "10",
       "straightKm": 7.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "szczecin",
-      "iata": "SZZ",
-      "claimKm": "45",
-      "straightKm": 28.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "olsztyn",
-      "iata": "SZY",
-      "claimKm": "58",
-      "straightKm": 44.7,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "gothenburg",
-      "iata": "GOT",
-      "claimKm": "25",
-      "straightKm": 18.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 13.1,
+      "cityCoordVsNominatimKm": 3.3
     },
     {
       "city": "visby",
@@ -70,7 +40,7 @@
       "iata": "RNB",
       "claimKm": "30",
       "straightKm": 23.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -78,16 +48,10 @@
       "iata": "KRN",
       "claimKm": "8",
       "straightKm": 6.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "lulea",
-      "iata": "LLA",
-      "claimKm": "8",
-      "straightKm": 4.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 10.5,
+      "cityCoordVsNominatimKm": 3.5
     },
     {
       "city": "grenoble",
@@ -98,59 +62,11 @@
       "field": "gettingAround"
     },
     {
-      "city": "antalya",
-      "iata": "AYT",
-      "claimKm": "13",
-      "straightKm": 7.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "konya",
-      "iata": "KYA",
-      "claimKm": "18",
-      "straightKm": 13.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
       "city": "bursa",
       "iata": "YEI",
       "claimKm": "45",
       "straightKm": "43",
       "reason": "英文同字段里找不到同一个数字",
-      "field": "gettingAround"
-    },
-    {
-      "city": "amsterdam",
-      "iata": "AMS",
-      "claimKm": "15",
-      "straightKm": 11.2,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "rotterdam",
-      "iata": "RTM",
-      "claimKm": "8",
-      "straightKm": 4.6,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "kota-kinabalu",
-      "iata": "BKI",
-      "claimKm": "7",
-      "straightKm": 5.4,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "kuching",
-      "iata": "KCH",
-      "claimKm": "11",
-      "straightKm": 7.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
       "field": "gettingAround"
     },
     {
@@ -166,39 +82,17 @@
       "iata": "AOR",
       "claimKm": "15",
       "straightKm": 9.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 11.7,
+      "cityCoordVsNominatimKm": 0.6
     },
     {
       "city": "sibu",
       "iata": "SBW",
       "claimKm": "23",
       "straightKm": 17.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "surabaya",
-      "iata": "SUB",
-      "claimKm": "20",
-      "straightKm": 14.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "zagreb",
-      "iata": "ZAG",
-      "claimKm": "17",
-      "straightKm": 10.5,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "split",
-      "iata": "SPU",
-      "claimKm": "19",
-      "straightKm": 12.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -206,23 +100,17 @@
       "iata": "RJK",
       "claimKm": "30",
       "straightKm": 15.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "osijek",
-      "iata": "OSI",
-      "claimKm": "20",
-      "straightKm": 13.6,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 25.4,
+      "cityCoordVsNominatimKm": 0.0
     },
     {
       "city": "dubbo",
       "iata": "DBO",
       "claimKm": "4",
       "straightKm": 5.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -230,8 +118,10 @@
       "iata": "HVB",
       "claimKm": "9",
       "straightKm": 6.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 12.3,
+      "cityCoordVsNominatimKm": 3.2
     },
     {
       "city": "tauranga",
@@ -242,51 +132,11 @@
       "field": "gettingAround"
     },
     {
-      "city": "faro",
-      "iata": "FAO",
-      "claimKm": "6",
-      "straightKm": 3.2,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "dublin",
-      "iata": "DUB",
-      "claimKm": "10",
-      "straightKm": 8.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
       "city": "donegal-town",
       "iata": "CFN",
       "claimKm": "65",
       "straightKm": 45.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "ulsan",
-      "iata": "USN",
-      "claimKm": "15",
-      "straightKm": 7.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "yeosu",
-      "iata": "RSU",
-      "claimKm": "20",
-      "straightKm": 10.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "pohang",
-      "iata": "KPO",
-      "claimKm": "10",
-      "straightKm": 7.7,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -294,7 +144,7 @@
       "iata": "LYA",
       "claimKm": "8",
       "straightKm": 14.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -318,7 +168,7 @@
       "iata": "KRL",
       "claimKm": "17",
       "straightKm": 12.6,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -390,8 +240,10 @@
       "iata": "MDG",
       "claimKm": "9",
       "straightKm": 6.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 6.7,
+      "cityCoordVsNominatimKm": 31.5
     },
     {
       "city": "tongren",
@@ -430,8 +282,10 @@
       "iata": "MIG",
       "claimKm": "10",
       "straightKm": 7.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 8.1,
+      "cityCoordVsNominatimKm": 3.6
     },
     {
       "city": "luzhou",
@@ -454,112 +308,50 @@
       "iata": "DQA",
       "claimKm": "25",
       "straightKm": 17.6,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 20.0,
+      "cityCoordVsNominatimKm": 51.0
     },
     {
       "city": "newcastle-upon-tyne",
       "iata": "NCL",
       "claimKm": "12",
       "straightKm": 8.7,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "cebu-city",
-      "iata": "CEB",
-      "claimKm": "16",
-      "straightKm": 10.3,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "davao-city",
-      "iata": "DVO",
-      "claimKm": "11",
-      "straightKm": 6.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 16.6,
+      "cityCoordVsNominatimKm": 0.0
     },
     {
       "city": "puerto-princesa",
       "iata": "PPS",
       "claimKm": "4",
       "straightKm": 2.2,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "udon-thani",
-      "iata": "UTH",
-      "claimKm": "5",
-      "straightKm": 3.1,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "tampere",
-      "iata": "TMP",
-      "claimKm": "17",
-      "straightKm": 12.5,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "savonlinna",
-      "iata": "SVL",
-      "claimKm": "15",
-      "straightKm": 9.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "oulu",
-      "iata": "OUL",
-      "claimKm": "15",
-      "straightKm": 10.5,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "kuusamo",
-      "iata": "KAO",
-      "claimKm": "5",
-      "straightKm": 3.5,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 3.0,
+      "cityCoordVsNominatimKm": 0.6
     },
     {
       "city": "da-nang",
       "iata": "DAD",
       "claimKm": "3",
       "straightKm": 1.2,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 1.7,
+      "cityCoordVsNominatimKm": 2.8
     },
     {
       "city": "nha-trang-city",
       "iata": "CXR",
       "claimKm": "35",
       "straightKm": 26.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "da-lat",
-      "iata": "DLI",
-      "claimKm": "30",
-      "straightKm": 22.7,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
-    },
-    {
-      "city": "can-tho",
-      "iata": "VCA",
-      "claimKm": "10",
-      "straightKm": 5.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 41.6,
+      "cityCoordVsNominatimKm": 10.4
     },
     {
       "city": "haiphong",
@@ -574,7 +366,7 @@
       "iata": "HSA",
       "claimKm": "16",
       "straightKm": 24.3,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -582,7 +374,7 @@
       "iata": "JMK",
       "claimKm": "4",
       "straightKm": 3.0,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
       "field": "gettingAround"
     },
     {
@@ -591,14 +383,6 @@
       "claimKm": "7.5",
       "straightKm": "8.0",
       "reason": "英文同字段里找不到同一个数字",
-      "field": "gettingAround"
-    },
-    {
-      "city": "karlovy-vary",
-      "iata": "KLV",
-      "claimKm": "6",
-      "straightKm": 4.3,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
       "field": "gettingAround"
     },
     {
@@ -614,8 +398,10 @@
       "iata": "CCP",
       "claimKm": "15",
       "straightKm": 5.5,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 8.0,
+      "cityCoordVsNominatimKm": 0.9
     },
     {
       "city": "temuco",
@@ -638,8 +424,10 @@
       "iata": "YQR",
       "claimKm": "7",
       "straightKm": 4.9,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 5.3,
+      "cityCoordVsNominatimKm": 1.0
     },
     {
       "city": "charlottetown",
@@ -662,16 +450,20 @@
       "iata": "YZF",
       "claimKm": "5",
       "straightKm": 3.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 6.1,
+      "cityCoordVsNominatimKm": 0.4
     },
     {
       "city": "whitehorse",
       "iata": "YXY",
       "claimKm": "3",
       "straightKm": 1.8,
-      "reason": "原数字与按坐标算的直线距离相差超过 25%",
-      "field": "gettingAround"
+      "reason": "原数字与按坐标算的直线距离相差超过 25%，且与 OSRM 公路距离也对不上 15% 以内",
+      "field": "gettingAround",
+      "osrmRoadKm": 6.5,
+      "cityCoordVsNominatimKm": 0.3
     }
   ]
 }

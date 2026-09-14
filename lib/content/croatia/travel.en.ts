@@ -30,7 +30,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city has an Upper Town (the historic old town, home to St. Mark's Church and the government buildings) and a Lower Town (a grid of 19th-century streets centered on Ban Jelačić Square and numerous museums), linked by the traditional Dolac Market.",
     gettingAround:
-      "Zagreb Airport is about 17 km from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
+      "Zagreb Airport is about 17 km by road from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
     culture:
       "The official language is Croatian. Modest dress is expected when visiting St. Mark's Church and other religious sites. Restaurant tips are typically around 10% of the bill. Zagreb has a faster pace of life than the coastal cities, with a strong outdoor café culture.",
     seeAndDo:
@@ -51,7 +51,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The old town sits entirely within the site of Diocletian's Palace; the palace cellars, the Cathedral of St. Domnius (originally Diocletian's mausoleum), and the street layout still follow the Roman-era plan. The Riva waterfront promenade links the old town with the harbor for everyday leisure.",
     // gettingAround sources: 随机抽样审计（seed=2）抽中。2026-09-13 核。
     gettingAround:
-      "Split Airport is about 19 km from the city center. The old town is walkable, and ferries and catamarans to the Dalmatian islands (Hvar, Brač, Kornati) depart from Split's harbor.",
+      "Split Airport is about 12 km in a straight line from the city center. The old town is walkable, and ferries and catamarans to the Dalmatian islands (Hvar, Brač, Kornati) depart from Split's harbor.",
     culture:
       "The official language is Croatian. Modest dress is expected when visiting the Cathedral of St. Domnius and other religious sites. Restaurant tips are typically around 10% of the bill. The old town gets crowded in summer, so keep an eye on valuables.",
     seeAndDo:
@@ -146,7 +146,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old Tvrđa fortress district preserves an 18th-century Habsburg-era Baroque quarter within a star-shaped fortification outline. The city center stretches along the Drava's north bank, with a riverside promenade for everyday leisure.",
     gettingAround:
-      "Osijek Airport is about 20 km from the city center, with a good city tram network. Osijek is the main gateway to Kopački Rit wetland park, a drive of just over ten kilometers away.",
+      "Osijek Airport is about 14 km in a straight line from the city center, with a good city tram network. Osijek is the main gateway to Kopački Rit wetland park, a drive of just over ten kilometers away.",
     culture:
       "The official language is Croatian. Modest dress is expected at religious sites. Restaurant tips are typically around 10% of the bill. Osijek sees far fewer visitors than the coast, making it a representative city for experiencing inland Slavonian life and cuisine (known for grilled sausages and paprika-seasoned dishes).",
     seeAndDo:

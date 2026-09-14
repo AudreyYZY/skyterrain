@@ -96,7 +96,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The old town preserves historic Dutch colonial and Arab/Chinese quarter streetscapes, and the city sits on the Madura Strait as a key eastern Java port hub; the Bromo Tengger Semeru National Park lies about three hours south of the city.",
     // gettingAround sources: 行政归属：机场在西多阿佐县 Sedati 区，不在泗水市内（3 级）。距离：注册表坐标算出直线 14.1 公里、正南，公路约 20 公里合理，故保留 20。
     gettingAround:
-      "Juanda International Airport (SUB) lies in Sidoarjo Regency south of Surabaya, outside the city's own boundary, about 20 km from the centre; Surabaya is the eastern rail hub of Java, with trains to Yogyakarta, Jakarta and other cities; taxis and ride-hailing apps are the main way to get around town.",
+      "Juanda International Airport (SUB) lies in Sidoarjo Regency south of Surabaya, outside the city's own boundary, about 20 km by road from the centre; Surabaya is the eastern rail hub of Java, with trains to Yogyakarta, Jakarta and other cities; taxis and ride-hailing apps are the main way to get around town.",
     culture:
       "The official language is Indonesian, with a direct-spoken local dialect of Javanese common in Surabaya. The city is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; dress relatively modestly in public. Tipping isn't expected.",
     seeAndDo:

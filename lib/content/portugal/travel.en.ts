@@ -225,7 +225,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Faro's old town is ringed by walls, centred on the cathedral square, with cobbled lanes preserving their Moorish and medieval layout. Outside the walls is a more modern commercial district and seafront promenade; the Ria Formosa lagoon lies just south of the city, reached by boat.",
     gettingAround:
-      "Faro Airport (FAO) is west of the city, about 6 km from the old town, with a connecting bus. The city is mainly walked; reaching Algarve coastal resort towns (Lagos, Albufeira and others) needs a car, train or coach. The climate is Mediterranean, hot and dry in summer — one of Portugal's sunniest regions.",
+      "Faro Airport (FAO) is west of the city, about 3.2 km in a straight line from the old town, with a connecting bus. The city is mainly walked; reaching Algarve coastal resort towns (Lagos, Albufeira and others) needs a car, train or coach. The climate is Mediterranean, hot and dry in summer — one of Portugal's sunniest regions.",
     culture:
       "Portuguese is the main language; because tourism is so developed, English (also often German and Dutch) is widespread. Faro itself is relatively quiet, with most visitors using it as a gateway to nearby beach towns. Restaurant tipping is not required.",
     seeAndDo:

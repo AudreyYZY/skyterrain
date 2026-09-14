@@ -55,7 +55,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town preserves Spanish colonial-era churches and forts; Mactan Island (linked by a causeway bridge) is home to the international airport and beach resorts, and the downtown IT business park is a modern industry cluster.",
     gettingAround:
-      "Mactan-Cebu International Airport is on Mactan Island, about 16 km from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
+      "Mactan-Cebu International Airport is on Mactan Island, about 16 km by road from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
     culture:
       "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. In 1521, Magellan's expedition baptised the rulers of Cebu here and gave them the Santo Niño image as a baptismal gift; that same image has been venerated ever since and is the oldest Christian relic in the Philippines (the country's actual first Mass was held a few days earlier on Limasawa Island in Southern Leyte, with Cebu as the site of the baptism that followed). Restaurant bills often already include service.",
     seeAndDo:
@@ -78,7 +78,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along Davao Gulf, with commercial and residential areas spread across a broad administrative territory; the silhouette of Mount Apo is clearly visible to the northeast of the city.",
     gettingAround:
-      "Francisco Bangoy International Airport is about 11 km from the city centre; taxis, jeepneys and Grab are the main ways to get around, with a drive or hired car of about 1.5–2 hours needed to reach Mount Apo.",
+      "Francisco Bangoy International Airport is about 6.9 km in a straight line from the city centre; taxis, jeepneys and Grab are the main ways to get around, with a drive or hired car of about 1.5–2 hours needed to reach Mount Apo.",
     culture:
       "The official languages are Filipino and English, with local indigenous communities and migrant populations together shaping Davao's diverse culture. Davao is known for orderly city governance and abundant tropical fruit, especially durian. Restaurant bills often already include service.",
     seeAndDo:

@@ -94,7 +94,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is built on the narrow isthmus between the two lakes, with the Tammerkoski rapids running through it; 19th-century red-brick factory buildings survive along its banks, some now converted into museums and cultural spaces.",
     gettingAround:
-      "Tampere-Pirkkala Airport is about 17 km from the centre, reached by bus; from Helsinki the train takes about 1.5 hours. The city has a light-rail and bus network, and walking is also an option. The climate is temperate continental.",
+      "Tampere-Pirkkala Airport is about 17 km by road from the centre, reached by bus; from Helsinki the train takes about 1.5 hours. The city has a light-rail and bus network, and walking is also an option. The climate is temperate continental.",
     culture:
       "The official language is Finnish, with high English proficiency. Tampere is nicknamed \"the Manchester of Finland\" for its 19th-century industrial history, and is now an important Finnish technology and university city. Restaurant bills typically already include service.",
     seeAndDo:
@@ -136,7 +136,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built on several small islands and peninsulas within the Saimaa lake system, with Olavinlinna Castle standing at a key waterway junction — a historic fortress that once controlled shipping through the lake district.",
     gettingAround:
-      "Savonlinna Airport is about 15 km from the centre, reached by bus; from Helsinki the train takes about 3.5 hours. The town centre is walkable; reaching Punkaharju requires a car or bus. The climate is temperate continental.",
+      "Savonlinna Airport is about 9.0 km in a straight line from the centre, reached by bus; from Helsinki the train takes about 3.5 hours. The town centre is walkable; reaching Punkaharju requires a car or bus. The climate is temperate continental.",
     culture:
       "The official language is Finnish, with high English proficiency. The Savonlinna Opera Festival, held each July inside Olavinlinna Castle, is one of Finland's most celebrated cultural events. Restaurant bills typically already include service.",
     seeAndDo:
@@ -177,7 +177,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is built along the mouth of the Oulu River, with the market square right by the harbour, the hub of local daily life and tourist activity, while the university campus sits on the outskirts.",
     gettingAround:
-      "Oulu Airport is about 15 km from the centre, reached by bus; from Helsinki the train takes about 6.5 hours, or about 1.5 hours by air. The city has an extensive network of cycle lanes. The climate is subarctic, with severe winters and a frozen bay.",
+      "Oulu Airport is about 15 km by road from the centre, reached by bus; from Helsinki the train takes about 6.5 hours, or about 1.5 hours by air. The city has an extensive network of cycle lanes. The climate is subarctic, with severe winters and a frozen bay.",
     culture:
       "The official language is Finnish, with high English proficiency. Oulu is an important Finnish information-technology centre, sometimes called \"the Silicon Valley of the North.\" Restaurant bills typically already include service.",
     seeAndDo:
@@ -217,7 +217,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town itself is small; the Ruka ski resort lies about 25 km to the north, and Oulanka National Park lies further north still, near the Finland-Russia border.",
     gettingAround:
-      "Kuusamo Airport is about 5 km from the centre, reached by bus; from Helsinki flights take about 1.5 hours. Reaching Oulanka National Park and Ruka requires a car or a tour. The climate is subarctic, with cold, snowy winters.",
+      "Kuusamo Airport is about 3.5 km in a straight line from the centre, reached by bus; from Helsinki flights take about 1.5 hours. Reaching Oulanka National Park and Ruka requires a car or a tour. The climate is subarctic, with cold, snowy winters.",
     culture:
       "The official language is Finnish, with high English proficiency. Kuusamo and its surroundings are known for the Karhunkierros hiking-trail culture and the Ruka ski industry, making it an important outdoor tourism destination in Finland. Restaurant bills typically already include service.",
     seeAndDo:

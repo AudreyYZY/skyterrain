@@ -76,7 +76,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is built around a historic canal-lined quarter, with a Dutch-inspired canal system dating from the city's 17th-century founding; the Frihamnen waterfront has been redeveloped in recent years into a cultural and leisure district.",
     gettingAround:
-      "Göteborg Landvetter Airport is about 25 km from the centre, reached by bus; from Stockholm the train takes about 3 hours. The city has an extensive tram network, and walking or cycling are also good options. The climate is temperate maritime, with a rainy coast.",
+      "Göteborg Landvetter Airport is about 25 km by road from the centre, reached by bus; from Stockholm the train takes about 3 hours. The city has an extensive tram network, and walking or cycling are also good options. The climate is temperate maritime, with a rainy coast.",
     culture:
       "The official language is Swedish, with high English proficiency. Gothenburgers are known for their humour and directness and are often considered Sweden's most down-to-earth big-city residents. \"Fika\" coffee culture is equally strong here. Restaurant bills typically already include service.",
     seeAndDo:
@@ -197,7 +197,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historic church town of Gammelstad, at the city's core, is a well-preserved cluster of wooden church cottages inscribed as a World Heritage Site in 1996; the modern city centre extends along the Gulf of Bothnia coast, where the frozen winter bay creates a distinctive ice-crossing landscape.",
     gettingAround:
-      "Luleå Airport is about 8 km from the centre, reached by bus; from Stockholm the train takes about 14 hours, or about 1.5 hours by air. The city centre is walkable. The climate is subarctic, with severe winters and a frozen bay.",
+      "Luleå Airport is about 4.8 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 14 hours, or about 1.5 hours by air. The city centre is walkable. The climate is subarctic, with severe winters and a frozen bay.",
     culture:
       "The official language is Swedish, with high English proficiency. Luleå is an important steel-industry and technology centre in northern Sweden, and a transport hub for reaching the northern archipelago and Lapland. Restaurant bills typically already include service.",
     seeAndDo:

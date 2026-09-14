@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built along the Taehwa River, with the Taehwa River National Garden running along its banks, while industrial zones, residential areas, and natural parks occupy separate districts.",
     gettingAround:
-      "Ulsan Airport is about 15 km from the city centre; the KTX reaches Seoul in about 2 hours. The city bus network covers the main areas.",
+      "Ulsan Airport is about 7.1 km in a straight line from the city centre; the KTX reaches Seoul in about 2 hours. The city bus network covers the main areas.",
     culture:
       "Ulsan has a historic association with whaling and whale-watching; Jangsaengpo Whale Culture Village and Whale Museum document this tradition, and the waters off Ulsan remain a site for whale-watching activities today.",
     seeAndDo:
@@ -138,7 +138,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the coast of the Yeosu Peninsula, with the city centre adjoining the former Expo grounds; Dolsan Island and the main part of Yeosu are linked by a bridge.",
     gettingAround:
-      "Yeosu Airport is about 20 km from the city centre; the KTX Yeosu EXPO station reaches Seoul in about 3 hours. Getting around the city and Dolsan Island's coastal sights is best done by car or bus.",
+      "Yeosu Airport is about 10 km in a straight line from the city centre; the KTX Yeosu EXPO station reaches Seoul in about 3 hours. Getting around the city and Dolsan Island's coastal sights is best done by car or bus.",
     culture:
       "Yeosu became known for its marine ecology exhibits following the 2012 Expo's theme, \"The Living Ocean and Coast\"; its cross-sea cable car and musical fountain at night are among the city's signature evening experiences.",
     seeAndDo:
@@ -159,7 +159,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city stretches along Yeongil Bay, with steel-industry zones and residential areas separate from the seaside Yeongildae Park; Homigot Park sits at the easternmost point of the coast, the classic sunrise spot.",
     gettingAround:
-      "Pohang Gyeongju Airport is about 10 km from the city centre; the KTX reaches Seoul in about 2 hours. Getting around the city and coastal sights is best done by car or bus.",
+      "Pohang Gyeongju Airport is about 10 km by road from the city centre; the KTX reaches Seoul in about 2 hours. Getting around the city and coastal sights is best done by car or bus.",
     culture:
       "Pohang grew rapidly from a fishing village into an industrial city in the late 20th century following the establishment of POSCO, making it a representative city of Korea's postwar industrialisation.",
     seeAndDo:

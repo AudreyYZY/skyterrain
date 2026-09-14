@@ -32,7 +32,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Liffey runs through the city centre, dividing it into the Southside — historically home to Trinity College and Grafton Street's shopping district — and the Northside, centred on O'Connell Street and the docklands; the suburbs extend out along Dublin Bay.",
     gettingAround:
-      "Dublin Airport is about 10 km from the centre, reached by bus or taxi; there is no direct metro link yet. Getting around the city relies mainly on walking, the Luas tram and buses, with the historic Southside walkable on foot. The climate is temperate maritime, mild and rainy year-round with changeable weather.",
+      "Dublin Airport is about 10 km by road from the centre, reached by bus or taxi; there is no direct metro link yet. Getting around the city relies mainly on walking, the Luas tram and buses, with the historic Southside walkable on foot. The climate is temperate maritime, mild and rainy year-round with changeable weather.",
     culture:
       "The official languages are Irish and English, with English used in daily life. Dublin has a strong pub culture, with the Temple Bar district a hub of nightlife, and the city hosts the main St Patrick's Day parade. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:

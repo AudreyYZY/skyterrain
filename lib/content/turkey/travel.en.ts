@@ -85,7 +85,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town of Kaleiçi is marked by Hadrian's Gate as its landmark entrance and preserves Ottoman-era lanes and a harbor; well-known beaches such as Konyaaltı and Lara lie around the city, with the Düden Waterfalls to the northeast.",
     gettingAround:
-      "Antalya Airport (AYT) is about 13 km from the city center and one of Turkey's main international air gateways on the Mediterranean coast; the city has a light-rail and bus network, and reaching surrounding ruins such as the Aspendos Theatre usually requires a private car or a local tour.",
+      "Antalya Airport (AYT) is about 7.8 km in a straight line from the city center and one of Turkey's main international air gateways on the Mediterranean coast; the city has a light-rail and bus network, and reaching surrounding ruins such as the Aspendos Theatre usually requires a private car or a local tour.",
     culture:
       "The official language is Turkish. As one of Turkey's most important international tourism cities, Antalya has relatively relaxed dress norms and swimwear is generally acceptable on the beaches; mosques still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill, and resorts may already include a service charge.",
     seeAndDo:
@@ -179,7 +179,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Mevlana Museum, housing Rumi's tomb, is the old city's central landmark, surrounded by Seljuk-era buildings such as the Alaeddin Mosque and the İnce Minaret Museum, forming the core of Konya's historic quarter.",
     gettingAround:
-      "Konya Airport (KYA) is about 18 km from the city center; the city has a light-rail and bus network, and reaching surrounding archaeological sites such as Çatalhöyük usually requires a private car or local tour.",
+      "Konya Airport (KYA) is about 18 km by road from the city center; the city has a light-rail and bus network, and reaching surrounding archaeological sites such as Çatalhöyük usually requires a private car or local tour.",
     culture:
       "The official language is Turkish. Konya is one of Turkey's more religiously conservative cities, so relatively modest dress is advisable; shoes must be removed at the Mevlana Museum and mosques, and women should carry a headscarf. Restaurant tips are typically around 10% of the bill.",
     seeAndDo:

@@ -95,7 +95,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town stretches narrowly along both banks of the Teplá River, its valley lined with Art Nouveau and Neo-Renaissance spa colonnades and sanatorium buildings; the Mill Colonnade and Hot Spring Colonnade are the town's central landmarks.",
     gettingAround:
-      "Karlovy Vary Airport is about 6 km from the town center; the colonnades along the valley are all walkable, with a funicular connecting hillside hotels and viewpoints on some of the steeper slopes.",
+      "Karlovy Vary Airport is about 4.3 km in a straight line from the town center; the colonnades along the valley are all walkable, with a funicular connecting hillside hotels and viewpoints on some of the steeper slopes.",
     culture:
       "The official language is Czech, and English is widely spoken given the town's international reputation for spa tourism and its film festival. Locals traditionally drink the spring water from a special porcelain spa cup with a built-in drinking spout, available as a souvenir at local shops; the Karlovy Vary International Film Festival is held every summer, one of the oldest film festivals in Central and Eastern Europe; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
     seeAndDo:

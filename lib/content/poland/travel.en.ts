@@ -173,7 +173,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along a tributary of the Oder, with Ducal Castle of Pomerania standing on high ground; the port district extends along the Oder, and the city holds one of the largest urban green-space systems in Poland.",
     gettingAround:
-      "Szczecin-Goleniów Airport is about 45 km from the centre, reached by bus; from Warsaw the train takes about 6.5 hours, or about 1.5 hours from Berlin. The old town is walkable. The climate is temperate maritime.",
+      "Szczecin-Goleniów Airport is about 45 km by road from the centre, reached by bus; from Warsaw the train takes about 6.5 hours, or about 1.5 hours from Berlin. The old town is walkable. The climate is temperate maritime.",
     culture:
       "The official language is Polish; given its proximity to the German border, German is also usable in some commercial settings. Szczecin was historically under German administration for a long period, and its architecture blends German and Polish cultural influences. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -219,7 +219,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built on high ground beside the Łyna River, with a Gothic brick castle at its centre — one of the castles Copernicus himself once administered.",
     gettingAround:
-      "Olsztyn-Mazury Airport is about 58 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable; exploring the lake district requires a car or a tour. The climate is temperate continental.",
+      "Olsztyn-Mazury Airport is about 58 km by road from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable; exploring the lake district requires a car or a tour. The climate is temperate continental.",
     culture:
       "The official language is Polish. Olsztyn and the surrounding region have historically blended multiple cultural traditions, with Prussian, Polish and Lithuanian influences interwoven. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:

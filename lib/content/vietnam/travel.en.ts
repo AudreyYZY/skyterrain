@@ -182,7 +182,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built into the hillside, with Xuan Huong Lake as its central landmark, and French-era villas and churches scattered across the undulating terrain.",
     gettingAround:
-      "Lien Khuong Airport is about 30 km from the city centre; the terrain within the city is quite hilly, and taxis or motorbike rentals are common ways to get around.",
+      "Lien Khuong Airport is about 30 km by road from the city centre; the terrain within the city is quite hilly, and taxis or motorbike rentals are common ways to get around.",
     culture:
       "Known as \"little Paris\" for its cool climate and French-era architecture, Da Lat is an important growing region for flowers, coffee, and strawberries in Vietnam.",
     seeAndDo:
@@ -203,7 +203,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built along the Hau River (a Mekong branch), with Ninh Kieu Bridge spanning the water; a dense network of channels surrounds the city, with floating markets on the waterways outside town.",
     gettingAround:
-      "Can Tho International Airport is about 10 km from the city centre; exploring the floating markets requires an early-morning boat trip, with taxis and Grab available in the city.",
+      "Can Tho International Airport is about 10 km by road from the city centre; exploring the floating markets requires an early-morning boat trip, with taxis and Grab available in the city.",
     culture:
       "Can Tho preserves a classic Mekong Delta river-town way of life, with floating-market trading activity concentrated in the early morning.",
     seeAndDo:
