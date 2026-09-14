@@ -9,8 +9,8 @@
   "flight": {
     "airline": "北欧航空",
     "airlineEn": "SAS",
-    "flightNo": "SK4110",
-    "aircraft": "Boeing 737-700",
+    "flightNo": "SK4552",
+    "aircraft": "Embraer 195",
     "depIata": "TRD",
     "arrIata": "BOO",
     "durationMin": 55
@@ -42,8 +42,7 @@
   ],
   "source": {
     "ref": "https://www.flightconnections.com/flights-from-trd-to-boo",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：查不到 SK4110 服务特隆赫姆—博德。SK41xx 系列（4106/4108/4112）实际是奥斯陆—博德。**机型可确定是错的**（SAS 已全面退役 737），但正确航班号未能核实。该航段本身确实存在（SAS 与 Widerøe 共营，约 34 班/周）。航段存在但号码查不到，也不确定实际执飞方是 SAS 自营还是 Widerøe 代管。需查 SAS/Widerøe 官方时刻表"
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 SK4110 实为奥斯陆—博德，且 SAS 已全面退役 737（**原机型一定是错的**）。SK4552 为特隆赫姆→博德的不经停航班（每日 08:55）。**来源级别 3**（按城市对索引的航段页）。"
   }
 }

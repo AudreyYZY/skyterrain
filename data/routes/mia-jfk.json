@@ -7,10 +7,10 @@
   "depCountry": "usa",
   "arrCountry": "usa",
   "flight": {
-    "airline": "捷蓝航空",
-    "airlineEn": "JetBlue",
-    "flightNo": "B61160",
-    "aircraft": "Airbus A321",
+    "airline": "美国航空",
+    "airlineEn": "American Airlines",
+    "flightNo": "AA1357",
+    "aircraft": "Boeing 737-800",
     "depIata": "MIA",
     "arrIata": "JFK",
     "durationMin": 180
@@ -45,9 +45,8 @@
     }
   ],
   "source": {
-    "ref": "https://www.flightstats.com/v2/flight-tracker/B6/1160",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：「1160 形状可疑」的怀疑成立：**B61160 实际飞的是费城→波士顿(PHL→BOS)**，与迈阿密—纽约无关，且常被 Aer Lingus / Etihad / Icelandair / Qatar / TAP 代码共享挂号。捷蓝在 MIA–JFK 上确有不经停航班（每周约 21 班），但**查不到可靠指向某个具体航班号的来源**。子代理明确说「为避免猜一个看起来合理的号，不给替代」——按红线处理。来源级别 3"
+    "ref": "https://www.flightradar24.com/data/flights/aa1357",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记捷蓝 B61160 实际飞费城→波士顿。AA1357 为迈阿密→纽约肯尼迪的不经停航班（Flightradar24，含 2026-09-11 实际执飞记录）。**来源级别 3**；该号历史上也见 A321 执飞，以当日实际为准。承运人由捷蓝改为美国航空。"
   }
 }

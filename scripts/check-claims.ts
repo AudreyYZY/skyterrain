@@ -53,13 +53,44 @@ const SHOW = Number(process.argv.find((a) => a.startsWith("--show="))?.slice(7) 
  * 「上海都会区人口约 2500 万」是这一类的原型：没有年份，也没说是市域常住人口
  * 还是都市圈口径。
  */
-const PERISHABLE_ZH =
-  /(常住人口|户籍人口|城区人口|都会区人口|市区人口|人口|居民)[^。；！？]{0,20}?\d[\d.,]*\s*(万|亿|人|户)/;
-const PERISHABLE_EN =
-  /\b(population|inhabitants|residents)\b[^.;!?]{0,40}?[\d.,]+\s*(million|billion|thousand|people|residents|inhabitants)/i;
+// 注：C6/C6d 的「会过期的量」判据在 scripts/claim-rules.ts（isPerishable / isStale），
+// 与 list:claims 共用同一份。**这里曾经有一份从未被引用的同名副本**——2026-09-12 有人
+// （就是本次）照着注释去改它，改完计数一动不动，才发现是死代码。已删。
 
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
+
+/**
+ * C6l：**机场的具体航点列表**（2026-09-13 立）。「有北京、上海、成都等航线」「has flights to Beijing, Shanghai and Chengdu」
+ * 这类句子随航季增删，交通状态回扫抽 14 条、5 条已有航点停飞或其实是经停（36%，日喀则无重庆、林芝无拉萨直飞、
+ * 临沂与腾冲的北京航线已停、长白山的广州是经停大连）。全库一次清掉 45 条之后基线固化为 0 ——
+ * 要写就写「有定期航班」，具体航点让读者查机场公布。
+ */
+/**
+ * C6m：**同一条目里机场的启用年份不一致**（2026-09-13 立）。突厥斯坦条目 howItWorks 写新机场「2021 年启用」、
+ * gettingAround 写「2020 年启用」（官网 2020-12-01）—— C6i 只比人口，年份打架没有任何脚本看得见。
+ * 只比「机场 … X 年启用 / 通航 / 投入使用」这一种说法；一个条目里写到新旧两座机场、年份本来就不同的，
+ * 两句都点了「新 / 旧 / 原」字样时跳过。
+ */
+const AIRPORT_OPEN_ZH = /(?:机场|航站楼)[^。；，]{0,30}?((?:19|20)\d{2}) ?年[^。；，]{0,6}?(?:启用|通航|投入使用|建成通航|正式运营)|((?:19|20)\d{2}) ?年(?:启用|通航|投入使用)(?:了|的)[^。；，]{0,20}?机场/g;
+const AIRPORT_OPEN_EN = /\bairport\b(?: \([A-Z]{3}\))?[^.;,]{0,40}?\b(?:opened|entered service|began (?:operating|operations))(?: in)?(?: [A-Z][a-z]+)? ((?:19|20)\d{2})|\bopened in ((?:19|20)\d{2})[^.;,]{0,40}?\bairport\b|\bairport\b[^.;,]{0,40}?, opened (?:in )?((?:19|20)\d{2})/gi;
+const OLD_NEW = /(新|旧|原|老|former|old|new)/i;
+
+/**
+ * C6n：**不加限定的「没有机场」**（2026-09-14 立）。爱沙尼亚当批核实查出拉克韦雷、奥泰佩「没有机场」其实都有
+ * 不飞定期航班的小机场；拿 OurAirports 回扫全库 114 处，剑桥（CBG）、布莱顿（ESH）、科尔马、鲁昂、锡耶纳、
+ * 卢塞恩旁的埃门都有机场，**科尔多瓦（ODB）与安纳西（NCY）连「没有商业机场」都不成立**（前者 Aena 列出两条定期航线）。
+ * 读者要的信息是「能不能飞到这里」，所以口径统一成「没有定期航班的机场 / no airport with scheduled flights」；
+ * 中国条目沿用「没有民用机场」（军用机场在中国是另一套体系，这个口径在中国成立）。
+ * 「of its own」（本城没有、邻城有）与「没有机场火车 / no airport train」不算。
+ */
+const NO_AIRPORT_ZH = /没有机场(?!火车|铁路|快线|大巴|巴士|轻轨|地铁|专线|快轨)/;
+const NO_AIRPORT_ZH_CIVIL = /没有民用机场/;
+const NO_AIRPORT_EN = /no (?:civil(?:ian)? )?airports?(?! (?:with scheduled|of its own|train|rail|bus|express|link|shuttle))/i;
+const NO_AIRPORT_EN_CIVIL = /no civil(?:ian)? airport/i;
+
+const DEST_LIST_ZH = /(?:(?:有|开通了?|通达|可飞)(?:飞往)?[^，。；（）]{0,60}?、[^，。；（）]{0,80}?等(?:国内外|国内|国际|地)?(?:航线|航点|城市的?航班|航班)|(?:有|只有)(?:飞往|往返|航班到|飞)?[^，。；（）]{1,14}、[^，。；（）]{1,14}、[^，。；（）]{1,30}(?:航线|航班))/;
+const DEST_LIST_EN = /\b(?:(?:flights|routes|air services)\s+(?:only\s+)?(?:to|from)\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}|has\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}\s+(?:flights|routes)\b)/;
 
 /**
  * C6k：**这个国家的官方统计里根本没有这个口径**。
@@ -84,6 +115,10 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
   // known-errors C6-c / C6-c-5：中国公报只有「全市常住人口」与「城镇常住人口」两档
   china: [
     { re: /(市区|中心城区|主城区)常住人口/, why: "中国地级市年度公报只有「全市常住人口」与「城镇常住人口」两档" },
+    // 2026-09-12 补：汕头条目写「中心城区约 168 万」——汕头公报里「中心城区」只用于 GDP 分区，
+    // 没有人口这一档，168 万其实接近潮阳区一个区的数。原规则要求紧跟「常住人口」四个字，漏掉了这种写法。
+    // 「主城九区」（重庆的官方专名）不在此列：这里只匹配「中心城区/主城区」后面直接跟数字的形状。
+    { re: /(中心城区|主城区)[^。；]{0,10}?[\d.,]+\s*万/, why: "中国的市级公报没有「中心城区/主城区人口」这一档（重庆的「主城九区」是例外，属官方专名）" },
     { re: /都会区人口|都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "「都会区」在中国不是官方统计口径" },
   ],
   // known-errors C6-c-5：挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档，没有「市区」
@@ -336,7 +371,10 @@ type Rule =
   | "C6i-同条目两段人口打架"
   | "D1b-说了没单列市区人口又给出市区人口"
   | "C6k-用了这个国家没有的口径"
-  | "D4-粘连句";
+  | "D4-粘连句"
+  | "C6l-机场航点列表"
+  | "C6m-同条目机场启用年份打架"
+  | "C6n-不加限定的没有机场";
 
 interface Hit {
   rule: Rule;
@@ -363,6 +401,7 @@ const exemptBy = new Map(exemptFile.entries.map((e) => [e.key, e]));
 const hits: Hit[] = [];
 const exempted: { key: string; e: Exempt }[] = [];
 /** C6i 用：按「条目 + 语言」攒 identity / howItWorks 两段的全市人口 */
+const airportYearsByEntry = new Map<string, { seg: (typeof segments)[number]; rows: { section: string; year: number; text: string }[] }>();
 const crossByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
 /** C6i-b 用：同样按条目+语言，但只攒**点名了「都会区」这一档**的数字 */
 const metroByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
@@ -380,6 +419,30 @@ for (const seg of segments) {
       rule: "D1b-说了没单列市区人口又给出市区人口",
       sentence: seg.text.match(/.{0,40}(?:未单列|does not (?:report|give|publish) a separate).{0,90}/i)?.[0] ?? "",
     });
+  }
+
+  // C6m 用：按「条目 + 语言」攒每段里的机场启用年份
+  {
+    const re = zh ? AIRPORT_OPEN_ZH : AIRPORT_OPEN_EN;
+    for (const m of seg.text.matchAll(re)) {
+      const year = Number(m[1] ?? m[2] ?? m[3]);
+      const key = `${seg.kind}/${seg.id}/${seg.lang}`;
+      if (!airportYearsByEntry.has(key)) airportYearsByEntry.set(key, { seg, rows: [] });
+      airportYearsByEntry.get(key)!.rows.push({ section: seg.section, year, text: m[0] });
+    }
+  }
+
+  {
+    const isChina = COUNTRY_OF.get(`${seg.kind}/${seg.id}`) === "china";
+    const re = zh ? NO_AIRPORT_ZH : NO_AIRPORT_EN;
+    const civil = zh ? NO_AIRPORT_ZH_CIVIL : NO_AIRPORT_EN_CIVIL;
+    // 中国条目的「no civil airport」是规定口径；其余国家的「民用 / civil」同样可能有不飞定期航班的通用机场
+    const m = (isChina && !zh && NO_AIRPORT_EN_CIVIL.test(seg.text) ? null : seg.text.match(re)) ?? (isChina ? null : seg.text.match(civil));
+    if (m) hits.push({ ...seg, rule: "C6n-不加限定的没有机场", sentence: seg.text.slice(Math.max(0, (m.index ?? 0) - 20), (m.index ?? 0) + 30) });
+  }
+
+  if ((zh ? DEST_LIST_ZH : DEST_LIST_EN).test(seg.text)) {
+    hits.push({ ...seg, rule: "C6l-机场航点列表", sentence: seg.text.match(zh ? DEST_LIST_ZH : DEST_LIST_EN)?.[0] ?? "" });
   }
 
   if (RUN_ON.test(seg.text)) {
@@ -485,6 +548,18 @@ for (const [, { seg, rows }] of metroByEntry) {
   });
 }
 
+// C6m：同条目机场启用年份不一致
+for (const [, { seg, rows }] of airportYearsByEntry) {
+  const years = [...new Set(rows.map((r) => r.year))];
+  if (years.length < 2) continue;
+  if (rows.filter((r) => OLD_NEW.test(r.text)).length >= 2) continue;
+  hits.push({
+    ...seg,
+    rule: "C6m-同条目机场启用年份打架",
+    sentence: rows.map((r) => `${r.section}「${r.text.slice(0, 30)}」`).join(" vs "),
+  });
+}
+
 // ── 报告 ───────────────────────────────────────────────────────────────
 
 const counts: Record<string, number> = {};
@@ -501,6 +576,9 @@ const RULES: Rule[] = [
   "D1b-说了没单列市区人口又给出市区人口",
   "C6k-用了这个国家没有的口径",
   "D4-粘连句",
+  "C6l-机场航点列表",
+  "C6m-同条目机场启用年份打架",
+  "C6n-不加限定的没有机场",
 ];
 
 // ── C6d 豁免：已核实「这就是最新一期」的条目 ────────────────────────────

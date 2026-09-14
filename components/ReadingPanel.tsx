@@ -2,6 +2,7 @@
 
 import SourceAttribution from "@/components/SourceAttribution";
 import StructuredLesson, { type GenericSection } from "@/components/StructuredLesson";
+import VerificationNote from "@/components/VerificationNote";
 import { t, type Language } from "@/lib/i18n";
 import { splitSentences } from "@/lib/sentences";
 import type { TerrainKnowledge, TerrainLesson } from "@/types/terrain";
@@ -26,6 +27,8 @@ interface ReadingPanelProps {
   flyoverName?: string | null;
   activeSentenceIndex?: number | null;
   activeSection?: string | null;
+  /** 当前条目的核实状态 key，形如 `terrain/<id>` / `travel/<id>`；null 则不显示那一行 */
+  verificationKey?: string | null;
   onPlay: () => void;
   onStop: () => void;
   onClose: () => void;
@@ -49,6 +52,7 @@ export default function ReadingPanel({
   flyoverName,
   activeSentenceIndex,
   activeSection,
+  verificationKey,
   onPlay,
   onStop,
   onClose,
@@ -238,6 +242,7 @@ export default function ReadingPanel({
                 <SourceAttribution knowledge={knowledge} />
               </div>
             )}
+            <VerificationNote entryKey={verificationKey ?? null} language={language} />
           </div>
 
           <button

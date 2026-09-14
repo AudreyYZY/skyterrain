@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ3701",
-    "aircraft": "Airbus A321",
+    "flightNo": "CZ6772",
+    "aircraft": "Airbus A320",
     "depIata": "CAN",
     "arrIata": "HAK",
     "durationMin": 80
   },
   "source": {
-    "ref": "https://www.flightaware.com/live/flight/CSN3701",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CZ3701 实际飞的是广州→**太原**武宿（A320），不是海口。未找到可靠的广州→海口替代航班号"
+    "ref": "https://www.flightaware.com/live/flight/CSN6772/history/20250506/2340Z/ZGGG/ZJHK",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CZ3701 实际飞广州→太原。CZ6772 为广州白云→海口美兰的不经停航班（FlightAware 历史记录，ICAO 机场对 ZGGG-ZJHK 精确）。**来源级别 3**，源记录为 2025-05，2026 航季建议复核。"
   },
   "cruiseHeight": 9500,
   "waypoints": [

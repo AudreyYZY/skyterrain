@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国东方航空",
     "airlineEn": "China Eastern Airlines",
-    "flightNo": "MU5937",
+    "flightNo": "TV9878",
     "aircraft": "Airbus A319",
     "depIata": "KMG",
     "arrIata": "LXA",
     "durationMin": 165
   },
   "source": {
-    "ref": "https://en.flightera.net/zh/flight/China+Eastern+Airlines-Kunming-Ninglang/MU5937",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：MU5937 实际飞的是昆明→**宁蒗**（737-700），不是拉萨。昆明—拉萨确有直飞，但未确认航班号"
+    "ref": "https://www.flightaware.com/live/flight/TBA9878/history/20250209/0815Z/ZPPP/ZULS",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 MU5937 实际飞昆明→宁蒗。TV9878 为昆明长水→拉萨贡嘎的不经停航班（FlightAware 历史记录，ICAO 机场对 ZPPP-ZULS 精确；机尾号 B-320G 为 A319-115）。**来源级别 3**。"
   },
   "cruiseHeight": 11500,
   "waypoints": [

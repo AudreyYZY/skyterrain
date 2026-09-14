@@ -58,7 +58,12 @@ for (const r of ROUTES) {
   if (first?.kind !== "city" || !first?.airport) fail(r.id, "首航点不是机场");
   if (last?.kind !== "city" || !last?.airport) fail(r.id, "末航点不是机场");
 
-  if (!r.flight?.flightNo || !r.flight?.aircraft || !r.flight?.airline) {
+  const flightUnknown = r.source?.status === "flight-unknown";
+  if (flightUnknown && r.flight) {
+    // 既然声明拿不到航班号，就不该同时填着航班信息 —— 那说明状态标错了
+    fail(r.id, 'source.status="flight-unknown" 却填了 flight 字段');
+  }
+  if (!flightUnknown && (!r.flight?.flightNo || !r.flight?.aircraft || !r.flight?.airline)) {
     fail(r.id, "flight 字段不完整");
   }
   if (!r.nameEn || !r.descriptionEn) fail(r.id, "缺少英文名/描述");

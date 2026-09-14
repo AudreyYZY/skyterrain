@@ -72,6 +72,34 @@ for (const [id, n] of Object.entries(ROUTE_NARRATION)) {
   harvest("route", id, "travel", "en", n?.travel?.["en-US"]);
 }
 
+/**
+ * 第二份清单：**交通线路编号与航线目的地列表**（2026-09-13 立）。
+ *
+ * 由来：同一天里两次撞到「写时对、后来变了」的交通状态，句子里却没有「在建 / 停航」这类词，上面的正则看不见 ——
+ * 马耳他机场直达瓦莱塔的 **X4 路 2025-04 已撤销**（改为 TD4，当批核实才发现，旅游博客大多还写 X4）；
+ * 赫尔辛格去哥本哈根机场的**直通火车 2022-12 已取消**（抽样独立复核才发现）。
+ * 线路编号、「直达 / 直通」、「有 A、B、C 等航线」都是运营方一纸公告就会变的东西。
+ * 这里只列出来，供每一轮按国家复核；不判对错。`--transit` 打印全文，默认只报数。
+ */
+const TRANSIT_ZH = /([A-Z]{0,3}\d{1,4}[A-Z]?\s*路(?:公交|巴士|大巴|快线|电车|循环)?|(?:地铁|轻轨)\s*[A-Z]?\d+\s*号?线|机场(?:大巴|快线)|直通(?:机场|首尔|市区)|有[^。；]{2,40}等(?:国内外)?航线)/;
+const TRANSIT_EN = /(\b(?:bus|route|tram|line|express|shuttle)\s+(?:no\.?\s*)?[A-Z]{0,3}\d{1,4}[A-Z]?\b|\bruns? (?:direct|through) to\b|\bflights to [^.;]{3,80}\bamong others\b)/i;
+const transit: Hit[] = [];
+function harvestTransit(system: string, id: string, field: string, lang: "zh" | "en", body?: string): void {
+  if (!body) return;
+  const re = lang === "zh" ? TRANSIT_ZH : TRANSIT_EN;
+  const split = lang === "zh" ? /[。；！？\n]/ : /(?<=[.;!?])\s+/;
+  for (const raw of body.split(split)) {
+    const t = raw.trim();
+    if (t.length >= 8 && re.test(t)) transit.push({ system, id, field, lang, text: t });
+  }
+}
+for (const [id, g] of Object.entries(TRAVEL_CONTENT_ZH)) for (const f of VF) harvestTransit("travel", id, f, "zh", g[f]);
+for (const [id, g] of Object.entries(TRAVEL_CONTENT_EN)) for (const f of VF) harvestTransit("travel", id, f, "en", g[f]);
+for (const [id, n] of Object.entries(ROUTE_NARRATION)) {
+  harvestTransit("route", id, "travel", "zh", n?.travel?.["zh-CN"]);
+  harvestTransit("route", id, "travel", "en", n?.travel?.["en-US"]);
+}
+
 const expired = hits.filter((h) => h.due !== undefined && h.due <= NOW);
 const pending = hits.filter((h) => !expired.includes(h));
 
@@ -97,6 +125,16 @@ const show = (list: Hit[]) => {
 };
 show(expired);
 show(pending);
+
+const byEntry = new Set(transit.map((h) => `${h.system}/${h.id}`));
+console.log(
+  `\n交通线路编号 / 直达直通 / 航线目的地列表：${transit.length} 句，分布在 ${byEntry.size} 个条目` +
+  `（城市 ${transit.filter((h) => h.system === "travel").length} 句 · 航线旅游解说 ${transit.filter((h) => h.system === "route").length} 句）` +
+  (process.argv.includes("--transit") ? "" : " —— 加 --transit 看全文"),
+);
+if (process.argv.includes("--transit")) {
+  for (const h of transit) console.log(`\n  ${h.system}/${h.id}/${h.field} [${h.lang}]\n    ${h.text}`);
+}
 
 console.log(
   `\n⚑ = 句子里承诺的年份已经到了，正文要么该改成「已完成」要么该改成「已延期」。\n` +

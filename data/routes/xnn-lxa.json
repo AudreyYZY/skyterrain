@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA4213",
+    "flightNo": "TV9874",
     "aircraft": "Airbus A319",
     "depIata": "XNN",
     "arrIata": "LXA",
     "durationMin": 145
   },
   "source": {
-    "ref": "https://www.tibettourism.com/xining-to-lhasa-flight.html",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**未能核实**：公开源查不到 CA4213 西宁→拉萨的班次记录。西宁—拉萨确有多家航司直飞，但本次未能确认该航班号，暂不显示航班信息"
+    "ref": "https://www.flightaware.com/live/flight/TBA9874/history/20241118/0910Z/ZLXN/ZULS",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CA4213 查无记录。TV9874 为西宁曹家堡→拉萨贡嘎的不经停航段（FlightAware 2024-11-18 历史记录，ICAO 机场对 ZLXN-ZULS 精确）。**来源级别 3**；⚠️ 该号在其他日期也见于「郑州/天津→西宁」接续航段，**本记录只保证 XNN→LXA 这一腿本身不经停**；另有 CZ4721 为备选但未能同等力度交叉验证。"
   },
   "cruiseHeight": 11500,
   "waypoints": [

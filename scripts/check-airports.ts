@@ -118,6 +118,19 @@ console.log(
 const FIELDS = ["identity", "howItWorks", "layout", "gettingAround", "whenAndTips"] as const;
 /** 「机场……约 X 公里」与「约 X 公里……机场」两种语序；km 与公里都认 */
 const DIST = /机场[^。；，、]{0,18}?约?\s*([\d.]+)\s*(?:公里|km)|约?\s*([\d.]+)\s*(?:公里|km)[^。；，、]{0,8}?机场/g;
+/** 这个数不是机场距离：桥长、铁路里程、跑道长度…… */
+const NOT_A_DISTANCE = /大桥|跨海桥|铁路|高铁|动车|跑道|海底隧道/;
+/** 距离的锚点是另一座城 / 另一个镇的市区 */
+const OTHER_CITY_ANCHOR = /([\u4e00-\u9fa5]{2,6})(?:市区|市中心|城区|县城|镇)(?:西|东|南|北|西北|西南|东北|东南)?约?\d/;
+/**
+ * 已核过的假阳性：正文点名的是**本城自己那座没有定期客运航班的机场**，
+ * 而注册表的 `airport` 字段按「最近有定期航班的机场」填了另一座 —— 两个数说的不是同一座机场。
+ * 加进来之前必须先人工确认一遍，**不要为了让计数下降而往里塞**。
+ */
+const KNOWN_OK = new Set([
+  // 列日：正文「列日机场在市区西南约 6 公里，如今只做货运」；注册表 airport = BRU 布鲁塞尔（82 km）
+  "liege",
+]);
 
 type Claim = { field: string; v: number; ctx: string };
 const tooShort: string[] = [], conflict: string[] = [];
@@ -125,7 +138,7 @@ let entriesWithDistance = 0;
 
 for (const c of CITY_REGISTRY) {
   const guide = TRAVEL_CONTENT_ZH[c.id];
-  if (!c.airport || !guide) continue;
+  if (!c.airport || !guide || KNOWN_OK.has(c.id)) continue;
   const real = km(c.lat, c.lon, c.airport.lat, c.airport.lon);
   const claims: Claim[] = [];
   for (const f of FIELDS) {
@@ -134,7 +147,21 @@ for (const c of CITY_REGISTRY) {
     const t = raw.replace(/\s+/g, "");
     for (const m of t.matchAll(DIST)) {
       const v = Number(m[1] ?? m[2]);
-      if (v >= 0.5 && v <= 400) claims.push({ field: f, v, ctx: t.slice(Math.max(0, m.index - 20), m.index + 28) });
+      if (!(v >= 0.5 && v <= 400)) continue;
+      const ctx = t.slice(Math.max(0, m.index - 24), m.index + 30);
+      // 三类必须排除的假阳性（2026-09-13 立，全部是实际撞上的）：
+      // ① 距离的锚点不是本城 —— 「义乌机场在**义乌市区**西北约 5 公里」（本条目是金华）
+      // ② 这个数根本不是机场距离 —— 「仁川大桥（约 21 公里）从松岛跨海到**机场**所在的永宗岛」
+      // ③ 说的不是注册表里那座机场 —— 「**列日机场**在市区西南约 6 公里，如今只做货运」
+      //    而注册表的 airport 字段填的是布鲁塞尔（列日机场没有定期客运航班）
+      if (NOT_A_DISTANCE.test(ctx)) continue;
+      // 锚点判断要盯住**这个数本身**前面那个锚，不能只看整段窗口里有没有出现本城名
+      // （金华条目的同一句里既有「义乌市区西北约 5 公里」也有「距金华市区约 50 公里」）
+      const anchored = new RegExp(
+        `([\\u4e00-\\u9fa5]{2,6})(?:市区|市中心|城区|县城|镇)(?:西|东|南|北|西北|西南|东北|东南)?约?${m[1] ?? m[2]}`,
+      ).exec(t);
+      if (anchored && anchored[1] !== c.nameZh && !c.nameZh.includes(anchored[1])) continue;
+      claims.push({ field: f, v, ctx });
     }
   }
   if (!claims.length) continue;
@@ -224,3 +251,46 @@ if (!srcScanned) {
   process.exit(1);
 }
 for (const l of [...srcShort, ...srcName]) console.log("\n" + l);
+
+// ---------------------------------------------------------------------------
+// 第四段：正文说「没有定期航班的机场 / 没有民用机场」× OurAirports 附近「有定期航班」的机场
+// ---------------------------------------------------------------------------
+/**
+ * 2026-09-14 立。C6n 把「没有机场」统一成「没有定期航班的机场」之后，剩下能错的只有一种：
+ * **附近其实有定期航班**。回扫时就是这么查出科尔多瓦（ODB，Aena 列出两条定期航线）的。
+ * OurAirports 的 `scheduled_service` 会滞后（安纳西 NCY 仍标 yes，实际以商务航空为主），
+ * 所以这里只列清单、要人回一手确认。半径 20 km：再远就是「最近的机场在邻城」，正文通常已经点名。
+ */
+const NEAR_KM = 20;
+const schedAll = rows.slice(1)
+  .filter((r) => r[cSched] === "yes" && /_airport$/.test(r[cType]))
+  .map((r) => ({ name: r[cName], iata: r[cIata], lat: Number(r[cLat]), lon: Number(r[cLon]) }));
+const SAYS_NONE = /没有(?:定期航班的|民用|商业)机场/;
+const nearSched: string[] = [];
+let saysNone = 0;
+for (const c of CITY_REGISTRY) {
+  const guide = TRAVEL_CONTENT_ZH[c.id];
+  if (!guide) continue;
+  const hit = Object.values(guide).find((t) => typeof t === "string" && SAYS_NONE.test(t)) as string | undefined;
+  if (!hit) continue;
+  saysNone++;
+  const near = schedAll
+    .map((a) => ({ ...a, d: km(c.lat, c.lon, a.lat, a.lon) }))
+    .filter((a) => a.d <= NEAR_KM)
+    .sort((x, y) => x.d - y.d);
+  if (!near.length) continue;
+  const i = hit.search(SAYS_NONE);
+  nearSched.push(
+    `⚑ ${c.id}「${c.nameZh}」正文：…${hit.slice(Math.max(0, i - 12), i + 24)}…\n` +
+    `     OurAirports 标「有定期航班」：` + near.slice(0, 3).map((a) => `${a.name}(${a.iata || "-"}, ${a.d.toFixed(1)} km)`).join("；"),
+  );
+}
+console.log(
+  `\n正文「没有定期航班的 / 民用 / 商业机场」× OurAirports：说了没有的 ${saysNone} 个条目，` +
+  `${NEAR_KM} km 内有标「有定期航班」机场的 ${nearSched.length} 个（清单，要人判断：可能在邻城 / 跨境 / 数据集滞后）`,
+);
+if (!saysNone) {
+  console.error("✗ 一个都没扫到 —— 正则或字段坏了");
+  process.exit(1);
+}
+for (const l of nearSched) console.log("\n" + l);

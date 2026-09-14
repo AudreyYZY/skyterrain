@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ6829",
+    "flightNo": "CZ6813",
     "aircraft": "Boeing 737-800",
     "depIata": "URC",
     "arrIata": "HTN",
     "durationMin": 100
   },
   "source": {
-    "ref": "https://www.trip.com/flights/status-cz6829/",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CZ6829 实际飞的是**喀什→上海浦东**（737 MAX 8），不是乌鲁木齐→和田。未找到可靠替代航班号"
+    "ref": "https://www.flightconnections.com/flights-from-urc-to-htn",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CZ6829 实际飞喀什→上海浦东。CZ6813 为乌鲁木齐天山→和田的不经停航班（08:50–11:05）。**来源级别 3**（按城市对索引的航段页，非航司官网；南航官网对自动请求返回 403）。"
   },
   "cruiseHeight": 10500,
   "waypoints": [

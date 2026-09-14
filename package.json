@@ -30,7 +30,11 @@
     "check:rvt": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-vs-terrain.ts",
     "check:distance": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-distance.ts",
     "check:pending": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-pending.ts",
-    "check:airports": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-airports.ts"
+    "check:airports": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-airports.ts",
+    "check:issues": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-issues.ts",
+    "sample:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/sample-claims.ts",
+    "gen:verify-status": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-verification-status.ts",
+    "check:bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-bearings.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

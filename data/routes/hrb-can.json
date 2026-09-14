@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ3608",
-    "aircraft": "Airbus A330-300",
+    "flightNo": "CZ3616",
+    "aircraft": "Airbus A320",
     "depIata": "HRB",
     "arrIata": "CAN",
     "durationMin": 240
   },
   "source": {
-    "ref": "https://www.flightaware.com/live/flight/CSN3608",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CZ3608 实际飞的是广州→**大连**，不是哈尔滨→广州。未找到可靠替代航班号"
+    "ref": "https://www.trip.com/flights/status-cz3616/",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CZ3608 实际飞广州→大连。CZ3616 为哈尔滨太平→广州白云的不经停航班。**来源级别 3**（票务站航班状态页 + RadarBox 交叉，机场对一致）；机型各源在 A320-212 与 A320neo 之间有出入。"
   },
   "cruiseHeight": 11500,
   "waypoints": [

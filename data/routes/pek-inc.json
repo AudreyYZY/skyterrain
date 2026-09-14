@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA1303",
+    "flightNo": "CA1227",
     "aircraft": "Boeing 737-800",
     "depIata": "PEK",
     "arrIata": "INC",
     "durationMin": 130
   },
   "source": {
-    "ref": "https://planefinder.net/data/flight/CA1303",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CA1303 实际飞的是北京→**深圳**宝安（约 3h25m），不是银川。未找到可靠替代航班号"
+    "ref": "https://www.flightaware.com/live/flight/CCA1227/history/20251124/0605Z/ZBAA/ZLIC",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CA1303 实际飞北京→深圳。CA1227 为北京首都→银川河东的不经停航班（FlightAware 2025-11-24 历史记录，ICAO 机场对 ZBAA-ZLIC 精确）。**来源级别 3**，且最新可查记录停在 2025 年冬航季、**机型只核到「737 系列」这一级、子型号未确认**——下一轮回来复核。"
   },
   "cruiseHeight": 10500,
   "waypoints": [

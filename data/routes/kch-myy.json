@@ -7,10 +7,10 @@
   "depCountry": "malaysia",
   "arrCountry": "malaysia",
   "flight": {
-    "airline": "AirBorneo（原婆罗洲航空 MASwings）",
-    "airlineEn": "AirBorneo (formerly MASwings)",
-    "flightNo": "MY3021",
-    "aircraft": "ATR 72-500",
+    "airline": "亚洲航空",
+    "airlineEn": "AirAsia",
+    "flightNo": "AK6192",
+    "aircraft": "Airbus A320",
     "depIata": "KCH",
     "arrIata": "MYY",
     "durationMin": 75
@@ -41,9 +41,8 @@
     }
   ],
   "source": {
-    "ref": "https://www.amazingborneo.com/travel/airborneo-launches-in-2026-what-it-means-for-travellers-flying-around-borneo",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**已改正**：**承运人已被收购改名**（同 sdk-bki）：2026-01 起为 AirBorneo。机型 ATR 72-500 仍是当前值。来源级别 3；**查明有误**：**查不到 MY3021 服务古晋—美里的任何记录**（FlightAware / Airportia / Flightera 均无）。这对城市目前每周约 55 班，主要是亚航 AK6181–AK6193 系列在飞。AirBorneo 官方资料确认其确实用 ATR 72-500 跑古晋（枢纽）与美里（二级基地）之间的高频航线，所以**很可能仍有** AirBorneo 的不经停服务，但具体号码核实不到。航段本身存在，不属于「整条移除」那一类。来源级别 2（区域媒体报道官方信息）+ 3"
+    "ref": "https://www.flightconnections.com/flights-from-kch-to-myy",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正，且承运人整条换掉**：上一轮把这条线记在 MASwings / AirBorneo 名下，**这个前提本身不成立**——交叉核对美里与亚庇两个机场条目及按城市对索引的航段页，AirBorneo（原 MASwings）的网络里**不含古晋—美里**（它从美里飞的是巴卡拉兰、巴里奥、林梦等支线点，用 ATR72 / Twin Otter）；古晋—美里这条主干线由**亚洲航空 A320** 执飞（约 35 班/周），AK6192 是其中一班。**来源级别 3**（AirBorneo 官网对自动请求 403）。"
   }
 }

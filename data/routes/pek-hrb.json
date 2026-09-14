@@ -9,17 +9,16 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA1601",
+    "flightNo": "CA1623",
     "aircraft": "Airbus A321",
     "depIata": "PEK",
     "arrIata": "HRB",
     "durationMin": 135
   },
   "source": {
-    "ref": "https://www.flightera.net/en/flight/Air+China-Beijing-Shenyang/CA1601",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CA1601 实际飞的是北京→**沈阳**桃仙（A321，约 1h35m），不是哈尔滨。未找到可靠的北京→哈尔滨替代航班号，暂不显示航班信息"
+    "ref": "https://www.flightstats.com/v2/flight-tracker/CA/1623",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CA1601 实际飞北京→沈阳。CA1623 为北京首都→哈尔滨太平的不经停航班（FlightStats 2026-09-12 当日轨迹，机场对 PEK-HRB 精确）。**来源级别 3**（航班追踪站，非航司官网时刻表）；机型多方记录一致为 A321 系列，是否 neo 各源略有出入。"
   },
   "cruiseHeight": 10500,
   "waypoints": [

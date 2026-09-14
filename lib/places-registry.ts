@@ -409,6 +409,11 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "croatia", nameZh: "克罗地亚", nameEn: "Croatia" },
   { country: "czechia", nameZh: "捷克", nameEn: "Czechia" },
   { country: "chile", nameZh: "智利", nameEn: "Chile" },
+  { country: "hungary", nameZh: "匈牙利", nameEn: "Hungary" },
+  { country: "slovakia", nameZh: "斯洛伐克", nameEn: "Slovakia" },
+  { country: "slovenia", nameZh: "斯洛文尼亚", nameEn: "Slovenia" },
+  { country: "malta", nameZh: "马耳他", nameEn: "Malta" },
+  { country: "estonia", nameZh: "爱沙尼亚", nameEn: "Estonia" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1619,6 +1624,68 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "NGQ", nameZh: "阿里昆莎机场", nameEn: "Ngari Gunsa Airport", lon: 80.0443, lat: 32.1142 },
     source: "阿里地区行署所在地狮泉河镇 32.5042,80.0972（zh.wikipedia，海拔约 4300 米）；NGQ 昆莎机场：zh.wikipedia（海拔 4274 米，距狮泉河约 45 公里）；人口 12.3 万（2020 普查）",
   },
+  // ── 中国批 11（2026-09-13）：衢州 / 连云港 / 日照 / 信阳 / 郴州 / 梧州 / 攀枝花 / 鞍山 / 通辽 / 佳木斯 ──
+  // 机场坐标一律取 OurAirports（公有领域，与 check:airports 同源），距离按本条目坐标算直线；市中心坐标取 zh.wikipedia。
+  {
+    id: "quzhou", nameZh: "衢州", nameEn: "Quzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 118.8600, lat: 28.9700,
+    airport: { iata: "JUZ", nameZh: "衢州机场", nameEn: "Quzhou Airport", lon: 118.8988, lat: 28.9661 },
+    source: "衢州市区 28.97,118.86（zh.wikipedia）；JUZ 机场 OurAirports 28.9661,118.8988，军民合用，距市中心直线约 4 km；江郎山在江山市、直线约 57 km",
+  },
+  {
+    id: "lianyungang", nameZh: "连云港", nameEn: "Lianyungang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 119.2220, lat: 34.5970,
+    airport: { iata: "LYG", nameZh: "连云港花果山国际机场", nameEn: "Lianyungang Huaguoshan Int'l", lon: 119.1790, lat: 34.4141 },
+    source: "连云港市区（海州）34.597,119.222（zh.wikipedia）；LYG 机场 OurAirports 34.4141,119.1790，在灌云县，2021-12-02 启用（澎湃新闻），距市中心直线约 21 km",
+  },
+  {
+    id: "rizhao", nameZh: "日照", nameEn: "Rizhao", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 119.5267, lat: 35.4154,
+    airport: { iata: "RIZ", nameZh: "日照山字河机场", nameEn: "Rizhao Shanzihe Airport", lon: 119.3244, lat: 35.4050 },
+    source: "日照市区 35.4154,119.5267（zh.wikipedia）；RIZ 机场 OurAirports 35.4050,119.3244，机场官网称距主城区直线约 19 km，2015-12-22 首航",
+  },
+  {
+    id: "xinyang", nameZh: "信阳", nameEn: "Xinyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 114.0903, lat: 32.1472,
+    airport: { iata: "XAI", nameZh: "信阳明港机场", nameEn: "Xinyang Minggang Airport", lon: 114.0791, lat: 32.5408 },
+    source: "信阳市区 32.1472,114.0903（zh.wikipedia）；XAI 机场 OurAirports 32.5408,114.0791，在平桥区明港镇，2018-10-28 通航（央广网），距市中心直线约 44 km",
+  },
+  {
+    id: "chenzhou", nameZh: "郴州", nameEn: "Chenzhou", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 113.0161, lat: 25.7700,
+    airport: { iata: "HCZ", nameZh: "郴州北湖机场", nameEn: "Chenzhou Beihu Airport", lon: 112.8454, lat: 25.7534 },
+    source: "郴州市区 25.77,113.0161（zh.wikipedia）；HCZ 机场 OurAirports 25.7534,112.8454，2021-09-16 通航，湖南机场集团官网称距市中心约 18 km（直线约 17 km）",
+  },
+  {
+    id: "wuzhou", nameZh: "梧州", nameEn: "Wuzhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
+    lon: 111.2788, lat: 23.4771,
+    airport: { iata: "WUZ", nameZh: "梧州西江机场", nameEn: "Wuzhou Xijiang Airport", lon: 111.0933, lat: 23.4032 },
+    source: "梧州市区 23.4771,111.2788（zh.wikipedia）；WUZ 机场 OurAirports 23.4032,111.0933，在藤县，2019-01 启用（维基 3 级），距市中心直线约 21 km",
+  },
+  {
+    id: "panzhihua", nameZh: "攀枝花", nameEn: "Panzhihua", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 101.7183, lat: 26.5817,
+    airport: { iata: "PZI", nameZh: "攀枝花保安营机场", nameEn: "Panzhihua Bao'anying Airport", lon: 101.7985, lat: 26.5400 },
+    source: "攀枝花市区 26.5817,101.7183（zh.wikipedia）；PZI 机场 OurAirports 26.54,101.7985，建在山顶（维基 3 级），距市中心直线约 9 km",
+  },
+  {
+    id: "anshan", nameZh: "鞍山", nameEn: "Anshan", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "辽宁省", admin1En: "Liaoning",
+    lon: 122.9933, lat: 41.1083,
+    airport: { iata: "AOG", nameZh: "鞍山腾鳌机场", nameEn: "Anshan Teng'ao Airport", lon: 122.8540, lat: 41.1053 },
+    source: "鞍山市区 41.1083,122.9933（zh.wikipedia）；AOG 机场 OurAirports 41.1053,122.8540，距市中心直线约 12 km；千山风景区在市区东南直线约 15 km",
+  },
+  {
+    id: "tongliao", nameZh: "通辽", nameEn: "Tongliao", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
+    lon: 122.2436, lat: 43.6527,
+    airport: { iata: "TGO", nameZh: "通辽机场", nameEn: "Tongliao Airport", lon: 122.2000, lat: 43.5567 },
+    source: "通辽市区（科尔沁区）43.6527,122.2436（zh.wikipedia）；TGO 机场 OurAirports 43.5567,122.2000，距市中心直线约 11 km；奈曼王府直线约 158 km",
+  },
+  {
+    id: "jiamusi", nameZh: "佳木斯", nameEn: "Jiamusi", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
+    lon: 130.3180, lat: 46.8000,
+    airport: { iata: "JMU", nameZh: "佳木斯松江国际机场", nameEn: "Jiamusi Songjiang Int'l", lon: 130.4643, lat: 46.8428 },
+    source: "佳木斯市区 46.80,130.318（zh.wikipedia）；JMU 机场 OurAirports 46.8428,130.4643，原佳木斯东郊国际机场、2026-01 更名（民航函〔2025〕1013 号），距市中心直线约 12 km",
+  },
 
   // ── 日本 ──────────────────────────────────────────────
   {
@@ -2058,7 +2125,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "niagara-falls", nameZh: "尼亚加拉瀑布城", nameEn: "Niagara Falls", country: "canada", tier: "notable", zone: "ca-central", admin1Zh: "安大略省", admin1En: "Ontario",
     lon: -79.1067, lat: 43.0600,
-    source: "Niagara Falls, Ontario 43.0600,-79.1067（en.wikipedia）；无机场，最近为多伦多皮尔逊 YYZ（约 130 公里），条目不写机场字段，GO 列车可达；人口 94,415（2021 普查）",
+    source: "Niagara Falls, Ontario 43.0600,-79.1067（en.wikipedia）；加拿大一侧无定期航班机场（河对岸美国纽约州有 Niagara Falls International IAG），最近为多伦多皮尔逊 YYZ（约 130 公里），条目不写机场字段，GO 列车可达；人口 94,415（2021 普查）",
   },
   {
     id: "fredericton", nameZh: "弗雷德里克顿", nameEn: "Fredericton", country: "canada", tier: "notable", zone: "ca-atlantic", admin1Zh: "新不伦瑞克省", admin1En: "New Brunswick",
@@ -2440,7 +2507,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "annecy", nameZh: "安纳西", nameEn: "Annecy", country: "france", tier: "notable", zone: "fr-rhone-alpes", admin1Zh: "奥弗涅-罗讷-阿尔卑斯大区", admin1En: "Auvergne-Rhône-Alpes",
     lon: 6.1330, lat: 45.9160,
-    source: "Annecy 45.9160,6.1330（en.wikipedia）；无机场，最近为日内瓦（约 45 公里，瑞士）与里昂（约 125 公里），条目不写机场字段；人口 132,117（2023）",
+    source: "Annecy 45.9160,6.1330（en.wikipedia）；本地安纳西—上萨瓦—勃朗峰机场（NCY，VINCI 运营）以商务与通用航空为主、无稳定定期客运航班（2026-09-14 核），不写机场字段；最近大机场为日内瓦（约 45 公里，瑞士）与里昂（约 125 公里），条目不写机场字段；人口 132,117（2023）",
   },
   {
     id: "avignon", nameZh: "阿维尼翁", nameEn: "Avignon", country: "france", tier: "notable", zone: "fr-provence", admin1Zh: "普罗旺斯-阿尔卑斯-蓝色海岸大区", admin1En: "Provence-Alpes-Côte d'Azur",
@@ -2658,7 +2725,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "cordoba", nameZh: "科尔多瓦", nameEn: "Córdoba", country: "spain", tier: "notable", zone: "es-andalusia", admin1Zh: "安达卢西亚自治区", admin1En: "Andalusia",
     lon: -4.7800, lat: 37.8900,
-    source: "Córdoba 37.8900,-4.7800（en.wikipedia）；无商业机场，最近为塞维利亚（约 140 公里）、马拉加（约 160 公里），条目不写机场字段，AVE 到马德里约 1 小时 45 分；人口 324,902（2024）",
+    source: "Córdoba 37.8900,-4.7800（en.wikipedia）；科尔多瓦机场 ODB 只有少量定期航线（Aena 目的地页 2026-09-14：Vueling 飞巴塞罗那、Binter 飞大加那利岛），条目不写机场字段；多数旅客经塞维利亚（约 140 公里）、马拉加（约 160 公里），条目不写机场字段，AVE 到马德里约 1 小时 45 分；人口 324,902（2024）",
   },
   {
     id: "salamanca", nameZh: "萨拉曼卡", nameEn: "Salamanca", country: "spain", tier: "notable", zone: "es-central", admin1Zh: "卡斯蒂利亚-莱昂自治区", admin1En: "Castile and León",
@@ -4482,6 +4549,287 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "BRQ", nameZh: "布尔诺-图拉尼机场", nameEn: "Brno-Tuřany Airport", lon: 16.6944, lat: 49.1514 },
     source: "奥洛穆茨市中心 49.5939,17.2508；本地机场客运航班有限，最近有稳定定期航班的机场为布尔诺机场（距市区约75km）：公开资料",
   },
+  // ===== 欧洲 / 匈牙利 =====
+  // 东欧次区域第三国（波兰、捷克之后）。安全与零争议前置判断：无活跃冲突、不在 §2.1 排除名单内；
+  // 条目只写地理、制度与广泛记载的前现代史，**二十世纪的政治 / 领土议题一律不碰**。
+  {
+    id: "budapest", nameZh: "布达佩斯", nameEn: "Budapest", country: "hungary", tier: "capital", zone: "hu-budapest", admin1Zh: "布达佩斯", admin1En: "Budapest",
+    lon: 19.0402, lat: 47.4979,
+    airport: { iata: "BUD", nameZh: "布达佩斯李斯特·费伦茨国际机场", nameEn: "Budapest Ferenc Liszt International Airport", lon: 19.2611, lat: 47.4369 },
+    source: "布达佩斯市中心 47.4979,19.0402；BUD 机场 47.4369,19.2611（机场官网与 OurAirports 一致）：公开资料",
+  },
+  {
+    id: "debrecen", nameZh: "德布勒森", nameEn: "Debrecen", country: "hungary", tier: "major", zone: "hu-great-plain", admin1Zh: "豪伊杜-比豪尔州", admin1En: "Hajdú-Bihar",
+    lon: 21.6273, lat: 47.5316,
+    airport: { iata: "DEB", nameZh: "德布勒森国际机场", nameEn: "Debrecen International Airport", lon: 21.6153, lat: 47.4889 },
+    source: "德布勒森市中心 47.5316,21.6273；DEB 机场 47.4889,21.6153：公开资料",
+  },
+  {
+    id: "szeged", nameZh: "塞格德", nameEn: "Szeged", country: "hungary", tier: "major", zone: "hu-great-plain", admin1Zh: "琼格拉德-乔纳德州", admin1En: "Csongrád-Csanád",
+    lon: 20.1414, lat: 46.2530,
+    source: "塞格德市中心 46.2530,20.1414；本地无定期客运机场，最近的国际机场为布达佩斯 BUD（直线约 155 公里，按本条目坐标算）：公开资料",
+  },
+  {
+    id: "pecs", nameZh: "佩奇", nameEn: "Pécs", country: "hungary", tier: "major", zone: "hu-transdanubia", admin1Zh: "巴兰尼亚州", admin1En: "Baranya",
+    lon: 18.2323, lat: 46.0727,
+    source: "佩奇市中心 46.0727,18.2323；本地的佩奇-波哥尼机场无定期客运航班，最近有定期航班的机场为布达佩斯 BUD（直线约 170 公里，按本条目坐标算）：公开资料",
+  },
+  {
+    id: "gyor", nameZh: "杰尔", nameEn: "Győr", country: "hungary", tier: "major", zone: "hu-transdanubia", admin1Zh: "杰尔-莫雄-肖普朗州", admin1En: "Győr-Moson-Sopron",
+    lon: 17.6350, lat: 47.6875,
+    source: "杰尔市中心 47.6875,17.6350；本地的杰尔-佩尔机场无定期客运航班，最近有定期航班的机场为布达佩斯 BUD（直线约 106 公里，按本条目坐标算）：公开资料",
+  },
+  {
+    id: "eger", nameZh: "埃格尔", nameEn: "Eger", country: "hungary", tier: "notable", zone: "hu-north", admin1Zh: "赫维什州", admin1En: "Heves",
+    lon: 20.3772, lat: 47.9026,
+    source: "埃格尔市中心 47.9026,20.3772；本地无机场，最近有定期航班的机场为布达佩斯 BUD（直线约 106 公里，按本条目坐标算）：公开资料",
+  },
+  {
+    id: "sopron", nameZh: "肖普朗", nameEn: "Sopron", country: "hungary", tier: "notable", zone: "hu-transdanubia", admin1Zh: "杰尔-莫雄-肖普朗州", admin1En: "Győr-Moson-Sopron",
+    lon: 16.5845, lat: 47.6817,
+    source: "肖普朗市中心 47.6817,16.5845；本地无定期客运机场，最近有定期航班的机场为布达佩斯 BUD（直线约 185 公里，按本条目坐标算）：公开资料",
+  },
+  {
+    id: "szentendre", nameZh: "圣安德烈", nameEn: "Szentendre", country: "hungary", tier: "notable", zone: "hu-budapest", admin1Zh: "佩斯州", admin1En: "Pest",
+    lon: 19.0770, lat: 47.6690,
+    source: "圣安德烈市中心 47.6690,19.0770；本地无机场，从布达佩斯乘 HÉV 郊区铁路约 40 分钟可达：公开资料",
+  },
+  // ===== 欧洲 / 斯洛伐克 =====
+  // 东欧次区域第四国（波兰、捷克、匈牙利之后）。安全与零争议前置判断：无活跃冲突、
+  // 不在 §2.1 排除名单内；条目只写地理、制度与广泛记载的前现代史，
+  // **二十世纪的政治 / 领土 / 民族议题一律不碰**。
+  {
+    id: "bratislava", nameZh: "布拉迪斯拉发", nameEn: "Bratislava", country: "slovakia", tier: "capital", zone: "sk-bratislava",
+    admin1Zh: "布拉迪斯拉发州", admin1En: "Bratislava Region",
+    lon: 17.1077, lat: 48.1486,
+    airport: { iata: "BTS", nameZh: "布拉迪斯拉发什特凡尼克机场", nameEn: "Bratislava M. R. Štefánik Airport", lon: 17.2127, lat: 48.1702 },
+    source: "布拉迪斯拉发市中心 48.1486,17.1077；BTS 机场 48.1702,17.2127：公开资料",
+  },
+  {
+    id: "kosice", nameZh: "科希策", nameEn: "Košice", country: "slovakia", tier: "major", zone: "sk-east",
+    admin1Zh: "科希策州", admin1En: "Košice Region",
+    lon: 21.2611, lat: 48.7164,
+    airport: { iata: "KSC", nameZh: "科希策国际机场", nameEn: "Košice International Airport", lon: 21.2411, lat: 48.6631 },
+    source: "科希策市中心 48.7164,21.2611；KSC 机场 48.6631,21.2411：公开资料",
+  },
+  {
+    id: "zilina", nameZh: "日利纳", nameEn: "Žilina", country: "slovakia", tier: "major", zone: "sk-north",
+    admin1Zh: "日利纳州", admin1En: "Žilina Region",
+    lon: 18.7408, lat: 49.2231,
+    source: "日利纳市中心 49.2231,18.7408；本地的多尔尼赫里乔夫机场（ILZ，距市区约 12 km）无稳定定期客运航班，跨国出行多用布拉迪斯拉发或邻国枢纽：公开资料",
+  },
+  {
+    id: "banska-bystrica", nameZh: "班斯卡比斯特里察", nameEn: "Banská Bystrica", country: "slovakia", tier: "major", zone: "sk-central",
+    admin1Zh: "班斯卡比斯特里察州", admin1En: "Banská Bystrica Region",
+    lon: 19.1462, lat: 48.7395,
+    source: "班斯卡比斯特里察市中心 48.7395,19.1462；附近斯利亚奇机场（SLD，距市区约 12 km）以包机与不定期航班为主，无稳定定期客运航线：公开资料",
+  },
+  {
+    id: "poprad", nameZh: "波普拉德", nameEn: "Poprad", country: "slovakia", tier: "notable", zone: "sk-tatras",
+    admin1Zh: "普雷绍夫州", admin1En: "Prešov Region",
+    lon: 20.2977, lat: 49.0614,
+    airport: { iata: "TAT", nameZh: "波普拉德—塔特拉机场", nameEn: "Poprad–Tatry Airport", lon: 20.2411, lat: 49.0736 },
+    source: "波普拉德市中心 49.0614,20.2977；TAT 机场 49.0736,20.2411，是欧洲海拔最高的国际机场之一（约 718 m）；定期航班很少，多为季节性包机：公开资料",
+  },
+  {
+    id: "banska-stiavnica", nameZh: "班斯卡什佳夫尼察", nameEn: "Banská Štiavnica", country: "slovakia", tier: "notable", zone: "sk-central",
+    admin1Zh: "班斯卡比斯特里察州", admin1En: "Banská Bystrica Region",
+    lon: 18.8944, lat: 48.4486,
+    source: "班斯卡什佳夫尼察市中心 48.4486,18.8944；本地无民用机场，最近有定期航班的机场为布拉迪斯拉发（约 170 km）：公开资料",
+  },
+  {
+    id: "bardejov", nameZh: "巴尔代约夫", nameEn: "Bardejov", country: "slovakia", tier: "notable", zone: "sk-east",
+    admin1Zh: "普雷绍夫州", admin1En: "Prešov Region",
+    lon: 21.2758, lat: 49.2944,
+    source: "巴尔代约夫市中心 49.2944,21.2758；本地无民用机场，最近有定期航班的机场为科希策（约 75 km）：公开资料",
+  },
+  {
+    id: "levoca", nameZh: "莱沃恰", nameEn: "Levoča", country: "slovakia", tier: "notable", zone: "sk-tatras",
+    admin1Zh: "普雷绍夫州", admin1En: "Prešov Region",
+    lon: 20.5889, lat: 49.0222,
+    source: "莱沃恰市中心 49.0222,20.5889；本地无民用机场，最近机场为波普拉德—塔特拉（约 28 km），有稳定定期航班的机场为科希策（约 95 km）：公开资料",
+  },
+  // ===== 欧洲 / 斯洛文尼亚 =====
+  // 南欧次区域第六国。安全与零争议前置判断：无活跃冲突、不在 §2.1 排除名单内；
+  // 条目只写地理、制度与广泛记载的前现代史；**国土南缘与东南缘的邻国不写国名**，
+  // 海岸城市**不写海湾划界与海域问题**；一战之后的政治 / 领土 / 民族议题一律不碰。
+  // 人口一律用 SURS 2026-01-01 的市镇（občina）人口（SiStat 05E1022S，2026H1）。
+  {
+    id: "ljubljana", nameZh: "卢布尔雅那", nameEn: "Ljubljana", country: "slovenia", tier: "capital", zone: "si-central",
+    admin1Zh: "中斯洛文尼亚统计区", admin1En: "Central Slovenia Statistical Region",
+    lon: 14.5051, lat: 46.0511,
+    airport: { iata: "LJU", nameZh: "卢布尔雅那约热·普奇尼克机场", nameEn: "Ljubljana Jože Pučnik Airport", lon: 14.4576, lat: 46.2237 },
+    source: "卢布尔雅那市中心 46.0511,14.5051；LJU 机场 46.2237,14.4576（在城北布尔尼克，按本条目坐标算直线约 20 km、公路约 26 km）：公开资料与卢布尔雅那旅游局",
+  },
+  {
+    id: "maribor", nameZh: "马里博尔", nameEn: "Maribor", country: "slovenia", tier: "major", zone: "si-east",
+    admin1Zh: "德拉瓦统计区", admin1En: "Drava Statistical Region",
+    lon: 15.6459, lat: 46.5547,
+    source: "马里博尔市中心 46.5547,15.6459；本地的爱德华·鲁希扬机场（MBX）无稳定定期客运航班，不填 airport 字段；有定期航班的最近机场为奥地利格拉茨（直线约 51 km）与卢布尔雅那 LJU（直线约 98 km），按本条目坐标算：公开资料",
+  },
+  {
+    id: "celje", nameZh: "采列", nameEn: "Celje", country: "slovenia", tier: "major", zone: "si-east",
+    admin1Zh: "萨维尼亚统计区", admin1En: "Savinja Statistical Region",
+    lon: 15.2604, lat: 46.2309,
+    source: "采列市中心 46.2309,15.2604；本地无民用机场，最近有定期航班的机场为卢布尔雅那 LJU（直线约 62 km，按本条目坐标算）：公开资料",
+  },
+  {
+    id: "kranj", nameZh: "克拉尼", nameEn: "Kranj", country: "slovenia", tier: "notable", zone: "si-alps",
+    admin1Zh: "上卡尼奥拉统计区", admin1En: "Upper Carniola Statistical Region",
+    lon: 14.3556, lat: 46.2389,
+    source: "克拉尼老城 46.2389,14.3556；本市无自有机场，卢布尔雅那 LJU 机场在城东（直线约 8 km，按本条目坐标算；公开资料多写约 9.5 km），属采尔克列市镇、不在克拉尼市域内：公开资料",
+  },
+  {
+    id: "koper", nameZh: "科佩尔", nameEn: "Koper", country: "slovenia", tier: "notable", zone: "si-coast",
+    admin1Zh: "沿海—喀斯特统计区", admin1En: "Coastal–Karst Statistical Region",
+    lon: 13.7302, lat: 45.5481,
+    source: "科佩尔老城 45.5481,13.7302；本地无民用机场，最近有定期航班的机场为意大利的里雅斯特（直线约 37 km）与卢布尔雅那 LJU（直线约 94 km），按本条目坐标算：公开资料",
+  },
+  {
+    id: "piran", nameZh: "皮兰", nameEn: "Piran", country: "slovenia", tier: "notable", zone: "si-coast",
+    admin1Zh: "沿海—喀斯特统计区", admin1En: "Coastal–Karst Statistical Region",
+    lon: 13.5683, lat: 45.5283,
+    source: "皮兰塔尔蒂尼广场 45.5283,13.5683；市镇内的波尔托罗日机场以通用航空为主、无稳定定期客运航班，不填 airport 字段；最近有定期航班的机场为意大利的里雅斯特（直线约 34 km）与卢布尔雅那 LJU（直线约 104 km），按本条目坐标算：公开资料",
+  },
+  {
+    id: "bled", nameZh: "布莱德", nameEn: "Bled", country: "slovenia", tier: "notable", zone: "si-alps",
+    admin1Zh: "上卡尼奥拉统计区", admin1En: "Upper Carniola Statistical Region",
+    lon: 14.1146, lat: 46.3683,
+    source: "布莱德镇中心 46.3683,14.1146；本地无机场，卢布尔雅那 LJU 机场直线约 31 km（按本条目坐标算），布莱德旅游局口径为距机场约 35 km、距卢布尔雅那约 55 km：公开资料",
+  },
+  {
+    id: "ptuj", nameZh: "普图伊", nameEn: "Ptuj", country: "slovenia", tier: "notable", zone: "si-east",
+    admin1Zh: "德拉瓦统计区", admin1En: "Drava Statistical Region",
+    lon: 15.8700, lat: 46.4200,
+    source: "普图伊老城 46.4200,15.8700；本地无民用机场，最近有定期航班的机场为奥地利格拉茨（直线约 71 km）与卢布尔雅那 LJU（直线约 111 km），按本条目坐标算：公开资料",
+  },
+  // ===== 欧洲 / 马耳他 =====
+  // 南欧次区域第七国。安全与零争议前置判断：无活跃冲突、不在 §2.1 排除名单内；
+  // 条目只写地理、制度与广泛记载的史实；**不写移民、建设开发、海域划界等议题**。
+  // 马耳他没有「市」这一级：全国分 68 个地方议会辖区（locality），下面的「城市」都是 locality。
+  // 人口一律用 NSO《World Population Day: 11 July 2026》（NR 120/2026，2026-07-09 发布）表 11
+  // 的 2025-12-31 分地方人口（在浏览器里直接解析官方 xlsx 取数，1 级）。
+  // 大区归属按政府文化机构 vca.gov.mt 发布的六大区地图（2021 年起的六个大区议会，1 级）。
+  // 全国唯一的民用机场为卢卡的马耳他国际机场（MLA）；戈佐岛无定期航班，不填 airport。
+  {
+    id: "valletta", nameZh: "瓦莱塔", nameEn: "Valletta", country: "malta", tier: "capital", zone: "mt-harbour",
+    admin1Zh: "港口大区", admin1En: "Port Region",
+    lon: 14.5125, lat: 35.8983,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "瓦莱塔城门一带 35.8983,14.5125；MLA 机场在卢卡 35.8575,14.4775（按本条目坐标算直线约 5.5 km，公开资料多写公路约 8 km；机场—瓦莱塔的直达公交 2025-04-20 起由 X4 改为 TD4 路，Malta Public Transport 公告）：维基坐标与 maltauncovered 等公开资料",
+  },
+  {
+    id: "sliema", nameZh: "斯利马", nameEn: "Sliema", country: "malta", tier: "major", zone: "mt-harbour",
+    admin1Zh: "东部大区", admin1En: "Eastern Region",
+    lon: 14.5042, lat: 35.9122,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "斯利马 35.9122,14.5042；MLA 机场直线约 6.5 km（按本条目坐标算）：维基坐标与公开资料",
+  },
+  {
+    id: "st-julians", nameZh: "圣朱利安斯", nameEn: "St Julian's", country: "malta", tier: "notable", zone: "mt-harbour",
+    admin1Zh: "东部大区", admin1En: "Eastern Region",
+    lon: 14.4900, lat: 35.9186,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "圣朱利安斯 35.9186,14.4900；MLA 机场直线约 6.9 km（按本条目坐标算）：维基坐标与公开资料",
+  },
+  {
+    id: "mdina", nameZh: "姆迪纳与拉巴特", nameEn: "Mdina & Rabat", country: "malta", tier: "notable", zone: "mt-west",
+    admin1Zh: "西部大区", admin1En: "Western Region",
+    lon: 14.4031, lat: 35.8858,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "姆迪纳 35.8858,14.4031（拉巴特紧邻其南侧 35.8817,14.3989）；MLA 机场直线约 7.4 km（按本条目坐标算）：维基坐标与公开资料",
+  },
+  {
+    id: "birgu", nameZh: "比尔古（三城）", nameEn: "Birgu (Three Cities)", country: "malta", tier: "notable", zone: "mt-harbour",
+    admin1Zh: "港口大区", admin1En: "Port Region",
+    lon: 14.5225, lat: 35.8881,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "比尔古 35.8881,14.5225；MLA 机场直线约 5.3 km（按本条目坐标算）：维基坐标与公开资料",
+  },
+  {
+    id: "victoria-gozo", nameZh: "维多利亚（戈佐岛）", nameEn: "Victoria (Gozo)", country: "malta", tier: "major", zone: "mt-gozo",
+    admin1Zh: "戈佐大区", admin1En: "Gozo Region",
+    lon: 14.2431, lat: 36.0436,
+    source: "维多利亚 36.0436,14.2431；戈佐岛无定期航班，不填 airport 字段；经奇克瓦—米加尔渡轮（约 25 分钟）或瓦莱塔—米加尔快船往返马耳他岛，最近机场为马耳他岛的 MLA：维基坐标与 Gozo Channel、visitgozo.com",
+  },
+  {
+    id: "marsaxlokk", nameZh: "马尔萨什洛克", nameEn: "Marsaxlokk", country: "malta", tier: "notable", zone: "mt-south",
+    admin1Zh: "南部大区", admin1En: "Southern Region",
+    lon: 14.5447, lat: 35.8417,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "马尔萨什洛克 35.8417,14.5447；MLA 机场直线约 6.3 km（按本条目坐标算）：维基坐标与公开资料",
+  },
+  {
+    id: "mellieha", nameZh: "梅利哈", nameEn: "Mellieħa", country: "malta", tier: "notable", zone: "mt-north",
+    admin1Zh: "北部大区", admin1En: "Northern Region",
+    lon: 14.3664, lat: 35.9564,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "梅利哈 35.9564,14.3664；MLA 机场直线约 15 km（按本条目坐标算）；去戈佐岛的奇克瓦渡轮码头在梅利哈辖区西北端：维基坐标与公开资料",
+  },
+  {
+    id: "st-pauls-bay", nameZh: "圣保罗湾", nameEn: "St Paul's Bay", country: "malta", tier: "notable", zone: "mt-north",
+    admin1Zh: "北部大区", admin1En: "Northern Region",
+    lon: 14.4017, lat: 35.9483,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "圣保罗湾 35.9483,14.4017（布吉巴、夸拉同属本地方议会）；MLA 机场直线约 12 km（按本条目坐标算）：维基坐标、圣保罗湾地方议会官网",
+  },
+  // ── 爱沙尼亚 ──
+  // 北欧次区域第八国。安全与零争议前置判断：无活跃冲突、不在 §2.1 排除名单内；
+  // 条目只写地理、制度与广泛记载的史实；**不写族群构成、语言政策、苏联时期政治叙事与边境议题**（纳尔瓦等边境城市本批不收）。
+  // 人口一律取爱沙尼亚统计局表 RV0240「1 月 1 日按居住地人口」2026 年数（PxWeb API 直接取数，2026-05-22 更新，1 级）；
+  // 2017 年市镇改革后很多城镇并入乡（vald），城镇与所属地方政府的人口分开写明。
+  // 机场坐标取 OurAirports；派尔努 EPU 机场在托里乡、只有冬季飞鲁赫努岛的小航班，不填 airport。
+  {
+    id: "tallinn", nameZh: "塔林", nameEn: "Tallinn", country: "estonia", tier: "capital", zone: "ee-north",
+    admin1Zh: "哈尤县", admin1En: "Harju County",
+    lon: 24.7453, lat: 59.4372,
+    airport: { iata: "TLL", nameZh: "塔林伦纳特·梅里机场", nameEn: "Lennart Meri Tallinn Airport", lon: 24.8326, lat: 59.4132 },
+    source: "塔林市政厅广场一带 59.4372,24.7453（维基）；TLL 机场 OurAirports 59.4132,24.8326，距市中心直线约 5.6 km（按本条目坐标算）",
+  },
+  {
+    id: "tartu", nameZh: "塔尔图", nameEn: "Tartu", country: "estonia", tier: "major", zone: "ee-south",
+    admin1Zh: "塔尔图县", admin1En: "Tartu County",
+    lon: 26.7225, lat: 58.3800,
+    airport: { iata: "TAY", nameZh: "塔尔图机场", nameEn: "Tartu Airport", lon: 26.6865, lat: 58.3074 },
+    source: "塔尔图市中心 58.3800,26.7225（维基）；TAY 机场 OurAirports 58.3074,26.6865，距市中心直线约 8.3 km；芬兰航空飞赫尔辛基的市政合同 2024-03-31 至 2027-12-31（tartu.ee「Air traffic」，1 级）",
+  },
+  {
+    id: "parnu", nameZh: "派尔努", nameEn: "Pärnu", country: "estonia", tier: "major", zone: "ee-west",
+    admin1Zh: "派尔努县", admin1En: "Pärnu County",
+    lon: 24.4989, lat: 58.3844,
+    source: "派尔努市中心 58.3844,24.4989（维基）；派尔努机场代码 EPU、在托里乡，只有冬季飞鲁赫努岛的小型航班（airport.ee，1 级），不填 airport 字段；有定期航班的最近机场为塔林 TLL，直线约 116 km（按坐标算）",
+  },
+  {
+    id: "kuressaare", nameZh: "库雷萨雷（萨列马岛）", nameEn: "Kuressaare (Saaremaa)", country: "estonia", tier: "notable", zone: "ee-islands",
+    admin1Zh: "萨列马县", admin1En: "Saare County",
+    lon: 22.4861, lat: 58.2533,
+    airport: { iata: "URE", nameZh: "库雷萨雷机场", nameEn: "Kuressaare Airport", lon: 22.5095, lat: 58.2299 },
+    source: "库雷萨雷市中心 58.2533,22.4861（维基）；URE 机场 OurAirports 58.2299,22.5095，距市中心直线约 2.9 km；全年有飞塔林的国内定期航班（airport.ee，1 级）",
+  },
+  {
+    id: "haapsalu", nameZh: "哈普萨卢", nameEn: "Haapsalu", country: "estonia", tier: "notable", zone: "ee-west",
+    admin1Zh: "西部县（莱埃内县）", admin1En: "Lääne County",
+    lon: 23.5369, lat: 58.9469,
+    source: "哈普萨卢市中心 58.9469,23.5369（维基）；本地无定期航班机场，不填 airport 字段；最近机场为塔林 TLL，直线约 90 km（按坐标算）",
+  },
+  {
+    id: "viljandi", nameZh: "维尔扬迪", nameEn: "Viljandi", country: "estonia", tier: "notable", zone: "ee-south",
+    admin1Zh: "维尔扬迪县", admin1En: "Viljandi County",
+    lon: 25.5956, lat: 58.3633,
+    source: "维尔扬迪市中心 58.3633,25.5956（维基）；本地无定期航班机场，不填 airport 字段；塔尔图 TAY 直线约 64 km（仅飞赫尔辛基），塔林 TLL 直线约 125 km（按坐标算）",
+  },
+  {
+    id: "rakvere", nameZh: "拉克韦雷", nameEn: "Rakvere", country: "estonia", tier: "notable", zone: "ee-north",
+    admin1Zh: "西维鲁县", admin1En: "Lääne-Viru County",
+    lon: 26.3611, lat: 59.3506,
+    source: "拉克韦雷市中心 59.3506,26.3611（维基）；本地无定期航班机场（Rakvere 草地机场 EERE 无商业航班），不填 airport 字段；最近机场为塔林 TLL，直线约 87 km（按坐标算）",
+  },
+  {
+    id: "otepaa", nameZh: "奥泰佩", nameEn: "Otepää", country: "estonia", tier: "notable", zone: "ee-south",
+    admin1Zh: "瓦尔加县", admin1En: "Valga County",
+    lon: 26.4983, lat: 58.0572,
+    source: "奥泰佩镇中心 58.0572,26.4983（维基）；本地无定期航班机场（附近 Tõutsi 有私人小型机场，无商业航班），不填 airport 字段；塔尔图 TAY 直线约 30 km（仅飞赫尔辛基），其余航线经塔林 TLL（按坐标算）",
+  },
   // ── 智利 ──
   {
     id: "santiago", nameZh: "圣地亚哥", nameEn: "Santiago", country: "chile", tier: "capital", zone: "cl-centro",
@@ -4620,6 +4968,11 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   poland: "europe",
   croatia: "europe",
   czechia: "europe",
+  hungary: "europe",
+  slovakia: "europe",
+  slovenia: "europe",
+  malta: "europe",
+  estonia: "europe",
   chile: "south-america",
 };
 

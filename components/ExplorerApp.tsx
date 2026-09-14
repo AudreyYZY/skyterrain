@@ -217,7 +217,7 @@ export default function ExplorerApp() {
   /** 最近一次发起的城市选择请求 id —— resolveTravelGuide 异步返回时用来丢弃过期结果 */
   const latestTravelRequestRef = useRef<string | null>(null);
   const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
-  const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
+  const [travelPlace, setTravelPlace] = useState<{ id: string; name: string } | null>(null);
   /** 讲解 / 攻略播报：正在合成首段（“准备中”按钮态） */
   const [narrationPreparing, setNarrationPreparing] = useState(false);
   const narrationRef = useRef<ReturnType<typeof createSectionNarration> | null>(null);
@@ -1232,7 +1232,7 @@ export default function ExplorerApp() {
       narrationRef.current?.cancel();
       stopHighlight();
       setTravelId(id);
-      setTravelPlace({ name: travelNameOf(id) });
+      setTravelPlace({ id, name: travelNameOf(id) });
       setTravelSections(sections);
       setActiveTerrain(null);
       setLesson(null);
@@ -1251,7 +1251,7 @@ export default function ExplorerApp() {
     let cancelled = false;
     void resolveTravelGuide(travelId, language).then((guide) => {
       if (!guide || cancelled) return;
-      setTravelPlace({ name: travelNameOf(travelId) });
+      setTravelPlace({ id: travelId, name: travelNameOf(travelId) });
       setTravelSections(travelGuideToSections(guide, language));
     });
     return () => {
@@ -1395,6 +1395,15 @@ export default function ExplorerApp() {
         flyoverName={flyoverName}
         activeSentenceIndex={activeSentenceIndex}
         activeSection={activeSection}
+        verificationKey={
+          mode === "travel"
+            ? travelPlace
+              ? `travel/${travelPlace.id}`
+              : null
+            : activeTerrain
+              ? `terrain/${activeTerrain.id}`
+              : null
+        }
         onPlay={() => {
           if (mode === "travel") {
             if (travelSections) speakTravelGuide(travelSections);

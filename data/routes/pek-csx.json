@@ -9,8 +9,8 @@
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ3245",
-    "aircraft": "Airbus A321",
+    "flightNo": "CA1373",
+    "aircraft": "Boeing 737-800",
     "depIata": "PEK",
     "arrIata": "CSX",
     "durationMin": 160
@@ -53,9 +53,8 @@
     }
   ],
   "source": {
-    "ref": "https://www.trip.com/flights/status-cz3245",
-    "checkedOn": "2026-09-07",
-    "status": "wrong",
-    "note": "**查明有误**：CZ3245 实际是**广州(CAN)→呼和浩特(HET)**，与北京—长沙无关。PEK→CSX 航段确有直飞（每周约 53 班），但未查到可核实的具体航班号。来源级别 3（航班追踪站）"
+    "ref": "https://www.flightaware.com/live/flight/CCA1373",
+    "checkedOn": "2026-09-12",
+    "note": "**已改正**：原记 CZ3245 实际是广州→呼和浩特。CA1373 为北京首都→长沙黄花的不经停航班（FlightAware 航班档案，配对航班 CA1374 在 2026 年 1–2 月多个日期有记录）。**来源级别 3**；**该航班机型在 737-800 / 737 MAX 8 / A321 之间轮换**，此处记最常见的一种，以实际时刻表为准。"
   }
 }
