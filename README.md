@@ -239,6 +239,7 @@ npm run dev
 | 变量 | 必填 | 说明 |
 |---|---|---|
 | `NEXT_PUBLIC_CESIUM_ION_TOKEN` | 强烈建议 | Cesium Ion Token（[免费注册](https://ion.cesium.com/tokens)）。不填时地球为平坦椭球，无山脊起伏。 |
+| `TTS_REMOTE_CACHE_URL` | 部署时建议 | 预热好的语音缓存所在的公开 URL 前缀（如 R2 公开桶 `https://…/tts`）。本机 `.tts-cache/` 不进仓库、线上读不到；设了它，未命中本机缓存时按 `<url>/<key>.json` 取，取不到才现场合成。同步方式：`npm run warm:tts` 之后把 `.tts-cache/` 整个上传到该前缀（如 `rclone copy .tts-cache r2:bucket/tts`）。 |
 
 ### 常用命令
 

@@ -517,6 +517,9 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   预热 `npm run warm:tts`（可中断可续跑，支持 `--kinds/--langs/--ids/--limit`），
   覆盖率 `npm run check:tts`。全站 23,802 段播报、约 4.9 GB、167 小时音频。
   **`.tts-cache/` 是本机 gitignore 目录，不进仓库**；换机器/换服务器重跑预热即可。
+  **线上部署（Vercel）读不到本机缓存**：2026-09-14 起 `lib/tts-cache.ts` 支持远端只读缓存 ——
+  把 `.tts-cache/` 上传到能按 URL 公开读的存储，设 `TTS_REMOTE_CACHE_URL`，本机未命中时去那里取（3 秒超时，取不到才现场合成）。
+  全量缓存约 10 GB（实测平均每段约 0.4 MB），存储选型（R2 / S3 / Blob）要用户决定并提供账号。
 - 播报文本清单由 `lib/tts-manifest.ts` 生成，一律调用客户端同一套函数
   （`resolveLesson`+`lessonSections` / `resolveTravelGuide`+`travelGuideToSections` /
   `getRouteNarration`），保证与线上请求逐字节一致 —— 不一致则预热白做。

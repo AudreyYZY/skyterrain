@@ -80,12 +80,39 @@ export function cachePathFor(key: string): string {
   return join(CACHE_DIR, `${key}.json`);
 }
 
+/**
+ * 远端只读缓存（可选）—— 线上部署（Vercel 等）读不到本机的 `.tts-cache/`：它在 gitignore 里、
+ * 部署产物也是只读的，于是线上每一段播报都要现场调 Edge TTS（慢，且这是个非官方接口）。
+ * 把预热好的 `.tts-cache/` 同步到任意能按 URL 公开读的存储（Cloudflare R2 公开桶、S3 + CDN 等），
+ * 再设 `TTS_REMOTE_CACHE_URL=https://<bucket-public-url>/tts`，本机没命中时就按 `<url>/<key>.json` 去取。
+ * 键算法不变，所以 `npm run warm:tts` 预热出来的文件原样上传即可命中。
+ */
+export const REMOTE_CACHE_URL = (process.env.TTS_REMOTE_CACHE_URL ?? "").replace(/\/+$/, "");
+const REMOTE_TIMEOUT_MS = 3000;
+
+async function readRemoteCache(key: string): Promise<CachedResult | null> {
+  if (!REMOTE_CACHE_URL) return null;
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), REMOTE_TIMEOUT_MS);
+  try {
+    const res = await fetch(`${REMOTE_CACHE_URL}/${key}.json`, { signal: ac.signal });
+    if (!res.ok) return null;
+    const data = (await res.json()) as CachedResult;
+    return typeof data?.audio === "string" ? data : null;
+  } catch {
+    return null; // 远端不可用 —— 当作未命中，走现场合成
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export async function readCache(key: string): Promise<CachedResult | null> {
   try {
     const raw = await readFile(cachePathFor(key), "utf-8");
     return JSON.parse(raw) as CachedResult;
   } catch {
-    return null; // 不存在或读取失败——当作未命中，走正常合成路径
+    // 本机没有 —— 再看远端只读缓存（没配置就直接未命中，走正常合成路径）
+    return readRemoteCache(key);
   }
 }
 
