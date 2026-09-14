@@ -204,7 +204,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is dense with early Ottoman buildings such as the Grand Mosque and the Green Mosque, with the area around Koza Han serving as the traditional silk-trading market; Uludağ rises just south of the city, its summit home to a ski resort.",
     gettingAround:
-      "Bursa Yenişehir Airport (YEI) is about 45 km from the city center, and many visitors instead take a sea ferry from Istanbul followed by a short drive; the city has a light-rail network, and a cable car runs directly to the top of Uludağ.",
+      "Bursa Yenişehir Airport (YEI) is about 43 km in a straight line from the city center, and many visitors instead take a sea ferry from Istanbul followed by a short drive; the city has a light-rail network, and a cable car runs directly to the top of Uludağ.",
     culture:
       "The official language is Turkish. Visiting the Grand Mosque, the Green Mosque and other religious sites requires shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:

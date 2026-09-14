@@ -206,7 +206,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is anchored by the Central Market, surrounded by traditional handicraft workshops and batik textile studios, with fishing villages preserved along the Kelantan riverbank.",
     gettingAround:
-      "Sultan Ismail Petra Airport is about 8 km from the city centre, with direct domestic flights from Kuala Lumpur; the city is also reachable by road toward Taman Negara.",
+      "Sultan Ismail Petra Airport is about 8 km in a straight line from the city centre, with direct domestic flights from Kuala Lumpur; the city is also reachable by road toward Taman Negara.",
     culture:
       "The official language is Malay. Kota Bharu is one of the areas where traditional Malay culture is best preserved, with kite-flying, top-spinning and other traditional folk crafts, along with batik textile-making, widely passed down locally. Kelantan is more socially conservative than much of the rest of Peninsular Malaysia — dress more conservatively in public (avoid shorts and short skirts), and alcohol sales and venues are more restricted than elsewhere in the country. Restaurant bills often already include service.",
     seeAndDo:
@@ -392,7 +392,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The centre lies by the Kedah river, with the Zahir Mosque, the Balai Besar, the royal museum and the big clock tower around the royal square and the Alor Setar Tower beside them, and the Pekan Rabu market in the centre; Mahathir's birthplace is on Seberang Perak road south of the centre. The Paddy Museum stands in the fields about 5 km north, and Gunung Jerai rises about 15 km east. The station is on the south side of the centre, the airport about 15 km north and the Kuala Kedah jetty about 15 km west.",
     gettingAround:
-      "Sultan Abdul Halim Airport (AOR), about 15 km from the city, has scheduled domestic flights. ETS electric trains take about 5–6 hours from Kuala Lumpur and about 1 hour from Butterworth; buses take about 6 hours from Kuala Lumpur and 2 from Penang. In town use taxis or a hire car, with the centre walkable; the Paddy Museum and Kuala Kedah are taxi rides. The climate is tropical monsoon, wet from May to October.",
+      "Sultan Abdul Halim Airport (AOR), about 9 km in a straight line from the city, has scheduled domestic flights. ETS electric trains take about 5–6 hours from Kuala Lumpur and about 1 hour from Butterworth; buses take about 6 hours from Kuala Lumpur and 2 from Penang. In town use taxis or a hire car, with the centre walkable; the Paddy Museum and Kuala Kedah are taxi rides. The climate is tropical monsoon, wet from May to October.",
     culture:
       "Malay is universal and English works in tourism; Kedah is a strongly Malay state. Visit the mosque outside prayer times, covered up, with headscarves for women. The paddy is harvested in December–January and planted in March–April, the prettiest times. The Pekan Rabu market sells Malay traditional foods and crafts. Kedah's food includes laksa Kedah and Malay cakes. Friday is Kedah's rest day (the weekend falls on Friday and Saturday). Tipping is not expected.",
     seeAndDo:
@@ -440,7 +440,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town lies on the north bank of the Rajang, with the express-boat wharf, the Tua Pek Kong temple and pagoda and the Central Market on the riverfront, the town square and the swan statue on the main street by the river, and the old shophouses behind the wharf. Sibu Airport is about 23 km south-east. The Iban longhouses of Bawang Assan lie about 40 km downriver, and Kapit about 140 km upriver (about 3 hours by express boat).",
     gettingAround:
-      "Sibu Airport (SBW), about 23 km from town, has scheduled domestic and international flights. Buses from Kuching take about 7 hours, and the Rajang express boats are the traditional way into the interior. In town use taxis, with the centre on foot; visit longhouses with a local agency. The climate is tropical rainforest, hot and wet all year.",
+      "Sibu Airport (SBW), about 17 km in a straight line from town, has scheduled domestic and international flights. Buses from Kuching take about 7 hours, and the Rajang express boats are the traditional way into the interior. In town use taxis, with the centre on foot; visit longhouses with a local agency. The climate is tropical rainforest, hot and wet all year.",
     culture:
       "Foochow, Malay and Iban are spoken, with English and Mandarin common. The Tua Pek Kong pagoda can be climbed for the river view; longhouse visits are hosted by the residents — bring a small gift, remove shoes indoors and respect the elders. Kampua noodles, kompia and ding bian hu are the local Foochow snacks, with food stalls upstairs in the Central Market. The Borneo Cultural Festival (July) brings the dances of every community. Tipping is not expected.",
     seeAndDo:

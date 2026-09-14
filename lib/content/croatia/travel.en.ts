@@ -88,7 +88,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city stretches along the Kvarner Gulf coastline, with the port area tightly linked to the city center. Trsat Castle stands on a hill north of the mouth of the Rječina River, overlooking the whole city and harbor.",
     gettingAround:
-      "Rijeka Airport is on the island of Krk, about 30 km from the city center, reached by road via the Krk Bridge. The city has a good bus network and serves as a gateway to the Kvarner Gulf coast and islands.",
+      "Rijeka Airport is on the island of Krk, about 16 km in a straight line from the city center, reached by road via the Krk Bridge. The city has a good bus network and serves as a gateway to the Kvarner Gulf coast and islands.",
     culture:
       "The official language is Croatian. Rijeka is an industrial port city with fewer tourists, giving it a more local feel than the coastal resort towns. Restaurant tips are typically around 10% of the bill.",
     seeAndDo:

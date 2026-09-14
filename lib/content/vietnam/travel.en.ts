@@ -75,7 +75,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the Han River and My Khe Beach, with the Dragon Bridge spanning the Han River as a city landmark, and resort hotels lining My Khe Beach.",
     gettingAround:
-      "Da Nang International Airport is about 3 km from the city centre, an important aviation hub for central Vietnam; taxis and Grab reach nearby attractions easily.",
+      "Da Nang International Airport is about 3 km in a straight line from the city centre, an important aviation hub for central Vietnam; taxis and Grab reach nearby attractions easily.",
     culture:
       "Da Nang is one of Vietnam's fastest-growing coastal cities, combining a traditional fishing culture with a modern tourism-resort industry.",
     seeAndDo:
@@ -164,7 +164,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along Nha Trang Bay's beach, with the Po Nagar Cham towers on its north side; several offshore islands in the bay are the main destinations for island-hopping.",
     gettingAround:
-      "Cam Ranh International Airport is about 35 km from the city centre; taxis and Grab easily reach the beach and other attractions.",
+      "Cam Ranh International Airport is about 27 km in a straight line from the city centre; taxis and Grab easily reach the beach and other attractions.",
     culture:
       "Nha Trang preserves the Po Nagar Cham towers from the era of the Champa kingdom, an important site for studying ancient Cham culture in Vietnam.",
     seeAndDo:
@@ -263,7 +263,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The centre lies on the south bank of the Cam river, with the opera-house square, the cathedral, the market and the French quarter together and the port along the Cam. The Do Son peninsula lies about 20 km south-east with beaches and a casino. Cat Ba Island lies east in the sea, reached by road and bridge to the Cat Hai ferry and then a short crossing, or by fast boat in about 1 hour; Lan Ha Bay lies east of Cat Ba, joined to Ha Long Bay. Cat Bi Airport is about 6 km south-east of the centre.",
     gettingAround:
-      "Cat Bi International Airport (HPH), about 6 km from the centre, has scheduled domestic and international flights. Trains from Hanoi take about 2.5 hours and buses on the Hanoi–Haiphong expressway about 2. In town use taxis and motorbike taxis, with the old centre walkable; Cat Ba is about 2.5 hours by bus and ferry, or by fast boat from the city pier. The climate is tropical monsoon with hot wet summers and typhoons and cool winters.",
+      "Cat Bi International Airport (HPH), about 7 km in a straight line from the centre, has scheduled domestic and international flights. Trains from Hanoi take about 2.5 hours and buses on the Hanoi–Haiphong expressway about 2. In town use taxis and motorbike taxis, with the old centre walkable; Cat Ba is about 2.5 hours by bus and ferry, or by fast boat from the city pier. The climate is tropical monsoon with hot wet summers and typhoons and cool winters.",
     culture:
       "Vietnamese is universal. Haiphong people are known for their directness, and street food runs deep: crab noodle soup (bánh đa cua), crab spring rolls and rice porridge. The square before the opera house is the civic gathering place. Cat Ba and Lan Ha Bay cruises are less crowded than Ha Long — choose licensed operators; Cat Ba National Park shelters the critically endangered golden-headed langur, so keep quiet. The flame trees bloom in May. Tipping is not expected.",
     seeAndDo:

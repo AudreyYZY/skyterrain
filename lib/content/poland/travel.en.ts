@@ -92,7 +92,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old-town centre preserves a Renaissance-style market square, while the outskirts have developed in recent years into an important Polish aerospace-industry cluster, earning the nickname \"Aviation Valley.\"",
     gettingAround:
-      "Rzeszów-Jasionka Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 3 hours. The old town is walkable. The climate is temperate continental.",
+      "Rzeszów-Jasionka Airport is about 8 km in a straight line from the centre, reached by bus; from Warsaw the train takes about 3 hours. The old town is walkable. The climate is temperate continental.",
     culture:
       "The official language is Polish. Rzeszów is an important regional centre in south-eastern Poland, and its growing aerospace industry has drawn many young technical professionals. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:

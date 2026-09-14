@@ -50,7 +50,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. In the Černá Pole district on the city's north side stands Villa Tugendhat, a modernist landmark designed by Mies van der Rohe.",
     gettingAround:
-      "Brno-Tuřany Airport is about 7.5 km from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
+      "Brno-Tuřany Airport is about 8 km in a straight line from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
     culture:
       "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
     seeAndDo:

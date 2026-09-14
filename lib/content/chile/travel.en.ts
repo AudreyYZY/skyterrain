@@ -114,7 +114,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city's core unfolds around Plaza de Armas and its cathedral, preserving a large collection of Spanish colonial and neoclassical buildings; the coast is lined with long stretches of beach and a seafront promenade, with Elqui Valley about an hour's drive to the southeast.",
     gettingAround:
-      "La Florida Airport, about 5 km from downtown, has flights to and from Santiago. Buses and taxis cover the city; reaching Elqui Valley or nearby observatories usually requires a local tour or a rental car. The climate is semi-arid, with mild, dry summers and mild, cloudy winters; UV levels are high year-round.",
+      "La Florida Airport, about 5 km in a straight line from downtown, has flights to and from Santiago. Buses and taxis cover the city; reaching Elqui Valley or nearby observatories usually requires a local tour or a rental car. The climate is semi-arid, with mild, dry summers and mild, cloudy winters; UV levels are high year-round.",
     culture:
       "La Serena preserves an unusually large collection of colonial architecture that locals take great pride in, and the city enforces fairly strict rules around historic-building preservation. As a university town, the atmosphere is relatively young and lively, with the seafront district lively on summer nights.",
     seeAndDo:
@@ -131,7 +131,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centers on Plaza de Armas, with the University of Concepción campus and surrounding area forming a lively student district; the Biobío River flows past the city's south side, and the nearby port of Talcahuano is an important harbor — the area suffered severe damage in the 2010 earthquake and tsunami and has since undergone extensive rebuilding.",
     gettingAround:
-      "Carriel Sur Airport, about 15 km from downtown, has flights to and from Santiago and other cities. The city's bus network is fairly extensive and connects well to nearby port towns like Talcahuano. The climate is temperate maritime with distinct seasons; winters (June–August) are wet, cold, and damp, and this is one of Chile's rainier regions.",
+      "Carriel Sur Airport, about 6 km in a straight line from downtown, has flights to and from Santiago and other cities. The city's bus network is fairly extensive and connects well to nearby port towns like Talcahuano. The climate is temperate maritime with distinct seasons; winters (June–August) are wet, cold, and damp, and this is one of Chile's rainier regions.",
     culture:
       "Concepción is an important university city with an active student culture, and it has historically been a center of several Chilean student movements — public discussion of social issues here tends to be fairly open. Because the region sits in an active earthquake zone, locals maintain a strong awareness of earthquake and tsunami warnings, and it's basic sense to note hotel evacuation instructions on arrival.",
     seeAndDo:
@@ -150,7 +150,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The city center is anchored by Plaza Pedro de Valdivia, with Ñielol Hill Park preserving a patch of native southern forest right in the city and offering views over the whole area; the well-known Feria Pinto market is an important venue for Mapuche traditional crafts and produce trading.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 21.8 公里；原文短于直线、不可能成立，已改。⚠️ 6 公里接近已停用的旧马克韦机场到市区的距离，原文很可能沿用了旧机场的数字。
     gettingAround:
-      "La Araucanía Airport, about 25 km from downtown, has flights to and from Santiago. Buses and taxis cover the city itself; reaching lake-district towns like Pucón or Villarrica usually requires a long-distance bus or private transfer, about an hour's drive. The climate is temperate and humid, with rainy winters, mild summers, and fairly large day-to-night temperature swings.",
+      "La Araucanía Airport, about 22 km in a straight line from downtown, has flights to and from Santiago. Buses and taxis cover the city itself; reaching lake-district towns like Pucón or Villarrica usually requires a long-distance bus or private transfer, about an hour's drive. The climate is temperate and humid, with rainy winters, mild summers, and fairly large day-to-night temperature swings.",
     culture:
       "Temuco has one of the largest concentrations of Mapuche Indigenous people in Chile, and the Feria Pinto market is an important place to experience Mapuche crafts, textiles, and traditional herbal medicine; when visiting Indigenous settlements or attending religious ceremonies (such as the 'Ngillatun' ritual), follow the local community's guidance and never photograph a ceremony without permission.",
     seeAndDo:
@@ -204,7 +204,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city stretches along the bay, with the main commercial district around Plaza de Armas; the Angelmó fishermen's wharf is the city's most distinctive district, packed with seafood markets and craft stalls, and the port area sees a steady stream of ferries and boats bound for the southern fjords and Patagonia.",
     gettingAround:
-      "El Tepual Airport, about 16 km from downtown, is an important aviation hub for southern Chile, with multiple daily flights to Santiago and other southern cities; ferries from here also reach the Chiloé Archipelago or head south into Patagonia. The climate is temperate maritime with heavy year-round rainfall and modest seasonal temperature swings, so rain gear is essential.",
+      "El Tepual Airport, about 13 km in a straight line from downtown, is an important aviation hub for southern Chile, with multiple daily flights to Santiago and other southern cities; ferries from here also reach the Chiloé Archipelago or head south into Patagonia. The climate is temperate maritime with heavy year-round rainfall and modest seasonal temperature swings, so rain gear is essential.",
     culture:
       "Puerto Montt is an important hub for the salmon industry and shipping, and city life is closely tied to these industries; the seafood market at the Angelmó wharf is the best place to experience local food culture, and light bargaining over seafood or crafts is common but should stay polite.",
     seeAndDo:

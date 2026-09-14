@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is ringed by about 3.4 km of medieval walls, its cobblestone streets, rose-covered walls and church ruins densely packed within — one of the best-preserved medieval trading towns in the Baltic region.",
     gettingAround:
-      "Visby Airport is about 4 km from the centre; ferries also run from Stockholm or ports in Södermanland. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, moderated by the surrounding sea.",
+      "Visby Airport is about 4 km in a straight line from the centre; ferries also run from Stockholm or ports in Södermanland. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, moderated by the surrounding sea.",
     culture:
       "The official language is Swedish, with high English proficiency. Visby hosts Almedalen Week each July, a major political gathering and medieval-themed festival, and is an important venue for Swedish cultural and political events. Restaurant bills typically already include service.",
     seeAndDo:
@@ -135,7 +135,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built on the island of Trossö and several surrounding islets, its 17th-century Baroque town plan well preserved, with naval dockyards and fortress buildings lining the coast.",
     gettingAround:
-      "Ronneby Airport is about 30 km from the centre, reached by bus; from Stockholm the train takes about 5 hours. The old town is walkable; exploring the Blekinge Archipelago nearby requires a car or boat. The climate is temperate maritime.",
+      "Ronneby Airport is about 23 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 5 hours. The old town is walkable; exploring the Blekinge Archipelago nearby requires a car or boat. The climate is temperate maritime.",
     culture:
       "The official language is Swedish, with high English proficiency. Karlskrona's civic identity is closely tied to the history of the Swedish Royal Navy, and it remains an important naval base today. Restaurant bills typically already include service.",
     seeAndDo:
@@ -177,7 +177,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Mining-induced ground subsidence has forced the city into an ongoing full relocation programme since 2014, with some historic buildings — such as Kiruna Church — moved intact to a new site, a rare example anywhere in the world of an entire town being relocated.",
     gettingAround:
-      "Kiruna Airport is about 8 km from the centre, reached by bus; from Stockholm the night train takes about 17 hours. The town centre is walkable; reaching Kebnekaise and Abisko requires a car or train. The climate is subarctic, with long, severe winters (temperatures can fall below -30°C) and midnight sun in summer.",
+      "Kiruna Airport is about 6 km in a straight line from the centre, reached by bus; from Stockholm the night train takes about 17 hours. The town centre is walkable; reaching Kebnekaise and Abisko requires a car or train. The climate is subarctic, with long, severe winters (temperatures can fall below -30°C) and midnight sun in summer.",
     culture:
       "The official language is Swedish, and Kiruna is also an important centre of Swedish Sámi Indigenous culture, home to the Sámi Parliament's museum. Restaurant bills typically already include service.",
     seeAndDo:

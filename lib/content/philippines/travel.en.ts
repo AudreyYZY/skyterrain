@@ -127,7 +127,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along Honda Bay, serving as the administrative and supply centre of Palawan Island, with limestone karst landforms and tropical rainforest scenery in the surrounding area.",
     gettingAround:
-      "Puerto Princesa International Airport is about 4 km from the city centre; tricycles and taxis are the main ways to get around within the city, with a drive or hired car of about 1.5–2 hours needed to reach the Underground River National Park.",
+      "Puerto Princesa International Airport is about 2.2 km in a straight line from the city centre; tricycles and taxis are the main ways to get around within the city, with a drive or hired car of about 1.5–2 hours needed to reach the Underground River National Park.",
     culture:
       "The official languages are Filipino and English, and the traditional culture of the local Palawan indigenous people is preserved in the area. Puerto Princesa is known for ecotourism and nature conservation, earning it the nickname the Philippines' \"eco-capital.\" Restaurant bills often already include service.",
     seeAndDo:

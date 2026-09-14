@@ -101,7 +101,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Yasawi Mausoleum is the old town's central landmark, surrounded by an archaeological heritage park and newly built religious and cultural facilities; the city has undergone large-scale modernisation in recent years, visibly reflected in the new Hazrat Sultan International Airport and tidy civic squares.",
     gettingAround:
-      "Hazrat Sultan International Airport (HSA), opened in 2020, is about 16 km from the city centre; taxis are the main way to get around town, and the city is easily reached from either Shymkent or its own airport.",
+      "Hazrat Sultan International Airport (HSA), opened in 2020, is about 24 km in a straight line from the city centre; taxis are the main way to get around town, and the city is easily reached from either Shymkent or its own airport.",
     culture:
       "The official language is Kazakh. The Yasawi Mausoleum is one of Kazakhstan's most important Islamic sacred sites — dress modestly and remove shoes before entering the mausoleum complex, and women should carry a headscarf; as a pilgrimage site, keep noise down and be respectful of worshippers in prayer. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
     seeAndDo:

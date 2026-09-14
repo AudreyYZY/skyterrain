@@ -211,7 +211,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town is centred on a triangular market square known as the Diamond, with Donegal Castle standing beside the river mouth — a historic trading post on Donegal Bay.",
     gettingAround:
-      "Donegal Airport (Carrickfinn) is about 65 km from town and has a government-subsidised route to Dublin. The town itself is walkable; reaching Slieve League and Glenveagh National Park requires a car. The climate is temperate maritime and among the windier parts of Ireland.",
+      "Donegal Airport (Carrickfinn) is about 46 km in a straight line from town and has a government-subsidised route to Dublin. The town itself is walkable; reaching Slieve League and Glenveagh National Park requires a car. The climate is temperate maritime and among the windier parts of Ireland.",
     culture:
       "The official languages are Irish and English; County Donegal is an important Gaeltacht region. The area is known for the traditional craft of hand-woven Donegal tweed. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
