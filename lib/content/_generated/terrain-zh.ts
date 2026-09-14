@@ -43,6 +43,7 @@ import { TERRAIN_ZH as slovenia } from "@/lib/content/slovenia/terrain.zh";
 import { TERRAIN_ZH as malta } from "@/lib/content/malta/terrain.zh";
 import { TERRAIN_ZH as estonia } from "@/lib/content/estonia/terrain.zh";
 import { TERRAIN_ZH as chile } from "@/lib/content/chile/terrain.zh";
+import { TERRAIN_ZH as latvia } from "@/lib/content/latvia/terrain.zh";
 
 export const ALL_TERRAIN_ZH: Record<string, TerrainLesson> = {
   ...china,
@@ -88,4 +89,5 @@ export const ALL_TERRAIN_ZH: Record<string, TerrainLesson> = {
   ...malta,
   ...estonia,
   ...chile,
+  ...latvia,
 };

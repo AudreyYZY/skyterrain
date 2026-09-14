@@ -55,7 +55,7 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 669,
+    terrainCount: 696,
     available: true,
   },
   {
@@ -174,6 +174,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   norway: "northern-europe",
   ireland: "northern-europe",
   estonia: "northern-europe",
+  latvia: "northern-europe",
   denmark: "northern-europe",
   sweden: "northern-europe",
   finland: "northern-europe",
@@ -236,12 +237,13 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "singapore", name: "新加坡", nameEn: "Singapore", code: "SG" },
   { slug: "indonesia", name: "印度尼西亚", nameEn: "Indonesia", code: "ID" },
   { slug: "vietnam", name: "越南", nameEn: "Vietnam", code: "VN" },
-  // 北欧（拼音：爱尔兰 Ài'ěrlán → 爱沙尼亚 Àishāníyà → 冰岛 Bīngdǎo → 丹麦 Dānmài → 芬兰 Fēnlán → 挪威 Nuówēi → 瑞典 Ruìdiǎn → 英国 Yīngguó）
+  // 北欧（拼音：爱尔兰 Ài'ěrlán → 爱沙尼亚 Àishāníyà → 冰岛 Bīngdǎo → 丹麦 Dānmài → 芬兰 Fēnlán → 拉脱维亚 Lātuōwéiyà → 挪威 Nuówēi → 瑞典 Ruìdiǎn → 英国 Yīngguó）
   { slug: "ireland", name: "爱尔兰", nameEn: "Ireland", code: "IE" },
   { slug: "estonia", name: "爱沙尼亚", nameEn: "Estonia", code: "EE" },
   { slug: "iceland", name: "冰岛", nameEn: "Iceland", code: "IS" },
   { slug: "denmark", name: "丹麦", nameEn: "Denmark", code: "DK" },
   { slug: "finland", name: "芬兰", nameEn: "Finland", code: "FI" },
+  { slug: "latvia", name: "拉脱维亚", nameEn: "Latvia", code: "LV" },
   { slug: "norway", name: "挪威", nameEn: "Norway", code: "NO" },
   { slug: "sweden", name: "瑞典", nameEn: "Sweden", code: "SE" },
   { slug: "uk", name: "英国", nameEn: "United Kingdom", code: "UK" },

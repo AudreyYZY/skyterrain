@@ -47,6 +47,7 @@ export const TERRAIN_ZH_LOADERS: Record<string, () => Promise<Record<string, Ter
   "malta": () => import("@/lib/content/malta/terrain.zh").then((m) => m.TERRAIN_ZH),
   "estonia": () => import("@/lib/content/estonia/terrain.zh").then((m) => m.TERRAIN_ZH),
   "chile": () => import("@/lib/content/chile/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "latvia": () => import("@/lib/content/latvia/terrain.zh").then((m) => m.TERRAIN_ZH),
 };
 
 export const TERRAIN_EN_LOADERS: Record<string, () => Promise<Record<string, TerrainLesson>>> = {
@@ -93,6 +94,7 @@ export const TERRAIN_EN_LOADERS: Record<string, () => Promise<Record<string, Ter
   "malta": () => import("@/lib/content/malta/terrain.en").then((m) => m.TERRAIN_EN),
   "estonia": () => import("@/lib/content/estonia/terrain.en").then((m) => m.TERRAIN_EN),
   "chile": () => import("@/lib/content/chile/terrain.en").then((m) => m.TERRAIN_EN),
+  "latvia": () => import("@/lib/content/latvia/terrain.en").then((m) => m.TERRAIN_EN),
 };
 
 export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
@@ -139,6 +141,7 @@ export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, Trav
   "malta": () => import("@/lib/content/malta/travel.zh").then((m) => m.TRAVEL_ZH),
   "estonia": () => import("@/lib/content/estonia/travel.zh").then((m) => m.TRAVEL_ZH),
   "chile": () => import("@/lib/content/chile/travel.zh").then((m) => m.TRAVEL_ZH),
+  "latvia": () => import("@/lib/content/latvia/travel.zh").then((m) => m.TRAVEL_ZH),
 };
 
 export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
@@ -185,4 +188,5 @@ export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, Trav
   "malta": () => import("@/lib/content/malta/travel.en").then((m) => m.TRAVEL_EN),
   "estonia": () => import("@/lib/content/estonia/travel.en").then((m) => m.TRAVEL_EN),
   "chile": () => import("@/lib/content/chile/travel.en").then((m) => m.TRAVEL_EN),
+  "latvia": () => import("@/lib/content/latvia/travel.en").then((m) => m.TRAVEL_EN),
 };
