@@ -1,0 +1,75 @@
+{
+  "id": "pek-otp",
+  "name": "北京 — 布加勒斯特",
+  "nameEn": "Beijing — Bucharest",
+  "description": "蒙古戈壁 · 巴尔喀什湖 · 北咸海 · 里海 · 黑海 · 罗马尼亚平原",
+  "descriptionEn": "Mongolian Gobi · Lake Balkhash · North Aral Sea · Caspian Sea · Black Sea · Romanian Plain",
+  "depCountry": "china",
+  "arrCountry": "romania",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA913",
+    "aircraft": "Airbus A330-200",
+    "depIata": "PEK",
+    "arrIata": "OTP",
+    "durationMin": 650
+  },
+  "source": {
+    "ref": "https://english.beijing.gov.cn/latest/news/202609/t20260906_4852259.html",
+    "checkedOn": "2026-09-15",
+    "note": "北京市政府英文网 2026-09-06 转新华社：国航 2026-09-04 开通北京—布加勒斯特—萨格勒布航线、每周三班（1 级）；当批核实（content-verifier 独立检索）：AeroRoutes、EX-YU Aviation、china.org.cn（转新华社）、TTG China 等互不相同的来源一致给出 CA913 周一三五 PEK 00:30 起飞、06:20 到布加勒斯特（不经停），停场约 3 小时后同号 09:20 续飞萨格勒布（所以克罗地亚一侧仍记「经停」、不收）；机型 A330-200 有四处独立来源；按两地时刻算时长 650 分钟。航点走哈萨克斯坦—里海—黑海一线为示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-balkhash"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-aral-sea"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "caspian-sea-coast-kazakhstan"
+    },
+    {
+      "kind": "feature",
+      "name": "黑海",
+      "nameEn": "Black Sea",
+      "lat": 43.2,
+      "lon": 32.5
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dobrogea-plateau"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "romanian-plain"
+    },
+    {
+      "kind": "city",
+      "id": "otp",
+      "name": "布加勒斯特",
+      "nameEn": "Bucharest",
+      "lat": 44.5718,
+      "lon": 26.1033,
+      "airport": true
+    }
+  ]
+}
