@@ -597,7 +597,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     //   1998 年中国科考队首次徒步穿越；下游称布拉马普特拉河、汇入孟加拉湾（纯地理事实）。
     //   2026-09-08 核。**零争议红线复核通过**：`history` 段无边界线描述、无主权表述。
     seeing:
-      "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the 1994 measurements of Chinese scientists it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — the deepest and longest canyon in the world.",
+      "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the survey published by China's National Bureau of Surveying and Mapping in 1999, it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — among the deepest canyons in the world.",
     formation:
       "The Yarlung Tsangpo flows west to east across the Tibetan Plateau; here it meets Namcha Barwa, a mountain rising fast, and is forced into a nearly 180° bend, then turns south, cutting through the Himalaya and off the plateau toward South Asia. The mountain rises fast and the river cuts hard, producing the extreme peak-to-valley relief.",
     observation:
@@ -1562,7 +1562,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air Tiger Leaping Gorge is a straight deep slit between the Jade Dragon and Haba snow mountains, the muddy-yellow Jinsha a thread on the floor. The walls are near-vertical, and a full sequence of vegetation belts is stacked from the subtropical valley floor to the snow and ice on top. Just outside the southern mouth, the Jinsha makes the famous \"First Bend of the Yangtze\" at Shigu.",
     distinguish:
-      "Tiger Leaping Gorge and the Three Gorges of the Yangtze: both are canyons where the Yangtze system cuts through mountains, but Tiger Leaping Gorge is on the upper river (the Jinsha reach), held between two snow mountains, and far deeper and narrower; the Three Gorges are on the middle river, cutting a lower fold range, and known for ruggedness and the dam. Tiger Leaping Gorge and the Yarlung Tsangpo Grand Canyon: the latter is longer, with greater peak-to-valley relief — the deepest and longest canyon in the world.",
+      "Tiger Leaping Gorge and the Three Gorges of the Yangtze: both are canyons where the Yangtze system cuts through mountains, but Tiger Leaping Gorge is on the upper river (the Jinsha reach), held between two snow mountains, and far deeper and narrower; the Three Gorges are on the middle river, cutting a lower fold range, and known for ruggedness and the dam. Tiger Leaping Gorge and the Yarlung Tsangpo Grand Canyon: the latter is longer, with greater peak-to-valley relief — among the deepest canyons in the world.",
     concept:
       "Tiger Leaping Gorge is an extreme sample of \"river downcutting keeping pace with uplift\": as long as uplift is not too fast and the river's discharge and gradient are enough, the water keeps sawing down at its original level — the higher the mountains grow, the deeper the gorge cuts. This narrow deep slot between Jade Dragon and Haba was \"sawn\" this way over a few million years.",
     history:
