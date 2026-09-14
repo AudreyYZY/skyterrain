@@ -252,6 +252,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
 
   stralsund: {
+    // gettingAround sources（2026-09-15 核实，抽样 seed=13）: 施特拉尔松—罗斯托克-拉格机场按注册表坐标直线约 68 km；公路约 80–85 km（rome2rio，3 级）。原「约 70 公里」与直线口径一致、缺口径，补「直线」
     identity:
       "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town; its old town was World Heritage-listed as a whole in 2002 together with the old town of Wismar, and it is the main gateway to Rügen's chalk cliffs.",
     // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
@@ -261,7 +262,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town sits on a peninsula surrounded by water on three sides, with brick Gothic churches such as St. Nicholas's defining the skyline; the Ozeaneum, in the port district, is a well-known German marine-life museum; across the Strelasund strait lies the island of Rügen.",
     gettingAround:
-      "The nearest commercial airport is Rostock-Laage (about 70 km); the city has a train station, and the old town is walkable. Temperate maritime climate — cool, pleasant summers and windy winters, changeable year-round, so carry a jacket.",
+      "The nearest commercial airport is Rostock-Laage (about 68 km in a straight line); the city has a train station, and the old town is walkable. Temperate maritime climate — cool, pleasant summers and windy winters, changeable year-round, so carry a jacket.",
     culture:
       "Stralsund is a classic northern German Hanseatic town, and brick Gothic architecture is the local hallmark style. Local fishing and Baltic seafood are culinary specialties. Tipping is customary — round up or give 5–10%.",
     seeAndDo:

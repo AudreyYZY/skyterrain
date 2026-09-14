@@ -1359,6 +1359,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
 
   mohe: {
+    // whenAndTips sources（2026-09-15 核实，fix，抽样 seed=13）: 漠河气象站 1 月平均气温约 −28℃（中英文维基气候表引国家气象站数据，3 级；−30℃以下是 1 月平均最低气温约 −34.9℃，原句把两者混了）
     // identity sources: identity 段的「约 6 万」四舍五入偏高：七普实际 54,036 人（howItWorks 段对）。
     //   漠河市统计局《2025年漠河市国民经济和社会发展统计公报》（2026-06-22）**只公布户籍人口 59,323 人，没有常住人口**；上级大兴安岭地区 2025 年公报同样只给户籍人口，并说明 2025 年做了全国 1% 抽样调查但结果尚未按区县发布。https://www.mohe.gov.cn/mohe/c101108/202606/c13_339881.shtml （**级别 1**）。发布月份：次年 6 月左右。
     identity:
@@ -1372,7 +1373,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Xilinji Town is the seat of city government and the main residential area; Beiji (Arctic) Village, on the Heilongjiang River about 77 km north of downtown, is the heart of Mohe tourism; forestry-era towns such as Beiji Township and Tuqiang are scattered through the surrounding Greater Khingan forest.",
     // gettingAround sources: 查不到呼伦贝尔（海拉尔）直飞的依据，改写为查得到的通航点；机场纬度最高的说法核过属实。2026-09-12 核。
     gettingAround:
-      "Mohe Gulian Airport (OHE), about 9 km south-west of downtown, is mainland China's highest-latitude civil airport, with nonstop flights to Harbin; its current Beijing service actually routes through a scheduled stop in Harbin rather than flying nonstop. Mohe station, on a Binzhou railway branch line, has trains to and from Harbin. It's about a 1.5–2 hour drive from downtown to Beiji Village; winter roads can be icy, so a hired car or tour is advisable. Winters are extreme, with January averages often below −30°C — among the coldest permanently inhabited parts of mainland China.",
+      "Mohe Gulian Airport (OHE), about 9 km south-west of downtown, is mainland China's highest-latitude civil airport, with nonstop flights to Harbin; its current Beijing service actually routes through a scheduled stop in Harbin rather than flying nonstop. Mohe station, on a Binzhou railway branch line, has trains to and from Harbin. It's about a 1.5–2 hour drive from downtown to Beiji Village; winter roads can be icy, so a hired car or tour is advisable. Winters are extreme, with January mean temperatures around −28°C — among the coldest permanently inhabited parts of mainland China.",
     culture:
       "A frontier culture shaped by early migrants who headed north to Manchuria, forestry workers, and northern minority groups such as the Oroqen. Coping with severe winter cold is a central fact of daily life here, and cold-weather gear and heating are taken seriously. With Russia just across the river, visiting border areas means following border-control rules — don't approach or photograph border installations without authorisation.",
     seeAndDo:
