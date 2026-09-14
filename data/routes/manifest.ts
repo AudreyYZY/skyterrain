@@ -25,6 +25,7 @@ import hrbCan from "./hrb-can.json" with { type: "json" };
 import pekSha from "./pek-sha.json" with { type: "json" };
 import canBud from "./can-bud.json" with { type: "json" };
 import pekOtp from "./pek-otp.json" with { type: "json" };
+import canTas from "./can-tas.json" with { type: "json" };
 import btsKsc from "./bts-ksc.json" with { type: "json" };
 import tllUre from "./tll-ure.json" with { type: "json" };
 import tllKdl from "./tll-kdl.json" with { type: "json" };
@@ -357,6 +358,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekSha,
   canBud,
   pekOtp,
+  canTas,
   btsKsc,
   tllUre,
   tllKdl,

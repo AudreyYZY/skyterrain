@@ -41,6 +41,7 @@ import { ROUTES as slovakia } from "@/lib/content/slovakia/routes";
 import { ROUTES as estonia } from "@/lib/content/estonia/routes";
 import { ROUTES as chile } from "@/lib/content/chile/routes";
 import { ROUTES as romania } from "@/lib/content/romania/routes";
+import { ROUTES as uzbekistan } from "@/lib/content/uzbekistan/routes";
 
 export const ALL_ROUTE_NARRATION: Record<string, RouteNarrationEntry> = {
   ...china,
@@ -84,4 +85,5 @@ export const ALL_ROUTE_NARRATION: Record<string, RouteNarrationEntry> = {
   ...estonia,
   ...chile,
   ...romania,
+  ...uzbekistan,
 };
