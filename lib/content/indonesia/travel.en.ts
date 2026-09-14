@@ -232,7 +232,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The town sits along a tributary of the Arut River; visiting Tanjung Puting National Park means boarding a traditional klotok riverboat from the local dock for a journey up the Sekonyer River into the park — the area's signature way to explore.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 6.7 公里；原文短于直线、不可能成立，已改。
     gettingAround:
-      "Iskandar Airport (PKN) is about 7 km from the town centre; the town itself is small enough to cover on foot or by motorbike taxi, and visiting the national park requires booking a boat and guide through a local tour operator.",
+      "Iskandar Airport (PKN) is about 6.7 km in a straight line from the town centre; the town itself is small enough to cover on foot or by motorbike taxi, and visiting the national park requires booking a boat and guide through a local tour operator.",
     culture:
       "The official language is Indonesian. Pangkalan Bun is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; as a national-park gateway town, the pace of life here is relaxed, and most visitors come primarily to observe wildlife. Tipping isn't expected.",
     seeAndDo:

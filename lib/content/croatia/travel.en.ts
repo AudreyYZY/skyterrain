@@ -68,7 +68,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Old Town sits entirely within a ring of medieval walls nearly 2 km long. The main street, Stradun, runs east–west through the town, with stepped side lanes climbing toward the walls on either side. The Old Port on the town's east side was historically the Republic of Ragusa's trading gateway.",
     gettingAround:
-      "Dubrovnik Airport is about 20 km from the city center. Motor vehicles are banned inside the Old Town, so walking is the only way to get around; a full lap of the city walls takes about two hours.",
+      "Dubrovnik Airport is about 17 km in a straight line from the city center. Motor vehicles are banned inside the Old Town, so walking is the only way to get around; a full lap of the city walls takes about two hours.",
     culture:
       "The official language is Croatian. Sun on the city walls is intense at midday, so bring sun protection and water. Restaurant tips in the Old Town are typically 10–15% of the bill. In peak season, it's best to walk the walls before the morning rush of cruise-ship groups.",
     seeAndDo:
@@ -107,7 +107,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town sits on a narrow peninsula, with the Roman Forum ruins and the Church of St. Donatus at its core. At the tip of the waterfront promenade stand the contemporary landmarks the Sea Organ and Sun Salutation.",
     gettingAround:
-      "Zadar Airport is about 8 km from the city center. The old town is walkable, and boats and buses to Kornati National Park and Lake Vrana depart from Zadar.",
+      "Zadar Airport is about 9.3 km in a straight line from the city center. The old town is walkable, and boats and buses to Kornati National Park and Lake Vrana depart from Zadar.",
     culture:
       "The official language is Croatian. Modest dress is expected when visiting the Church of St. Donatus and other religious sites. The Sea Organ draws crowds at sunset, so arrive early to find a spot. Restaurant tips are typically around 10% of the bill.",
     seeAndDo:
@@ -126,7 +126,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town centers on the Roman Arena, with the Forum and a Roman triumphal arch scattered through its compact old-town streets. The harbor lies southeast of the old town, historically Istria's traditional naval and shipbuilding center.",
     gettingAround:
-      "Pula Airport is about 6 km from the city center. The old town is walkable; reaching Rovinj, Poreč, and other towns on Istria's west coast requires a car or local bus.",
+      "Pula Airport is about 6.5 km in a straight line from the city center. The old town is walkable; reaching Rovinj, Poreč, and other towns on Istria's west coast requires a car or local bus.",
     culture:
       "The official language is Croatian (Italian is also widely used in Istria and shares official status regionally). Restaurant tips are typically around 10% of the bill. Pula Arena often hosts open-air film festivals and concerts in summer, so check for events that may affect a visit before buying tickets.",
     seeAndDo:

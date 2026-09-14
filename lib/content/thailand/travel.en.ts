@@ -35,7 +35,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is organised along the Chao Phraya River, with the old town (home to the Grand Palace and Wat Phra Kaew) on the east bank, modern commercial districts such as Siam and Silom in the city centre and east, and a canal network still serving as an important mode of transport in some areas.",
     gettingAround:
-      "Suvarnabhumi Airport is the main international gateway, about 30 km from the city centre; domestic low-cost carriers mostly use Don Mueang Airport. The BTS Skytrain and MRT subway cover the main commercial districts, and Chao Phraya River ferries are also a convenient way to get around.",
+      "Suvarnabhumi Airport is the main international gateway, about 28 km in a straight line from the city centre; domestic low-cost carriers mostly use Don Mueang Airport. The BTS Skytrain and MRT subway cover the main commercial districts, and Chao Phraya River ferries are also a convenient way to get around.",
     culture:
       "Thai is the official language, and English is fairly widely spoken in tourist areas. Bangkok has a strong night-market culture, and street food is an important part of local food culture. Tipping is not mandatory at restaurants, but leaving small change is common etiquette.",
     seeAndDo:
@@ -58,7 +58,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is a square bounded by walls and a moat on all four sides, densely dotted with temples, while the Nimman Road area is a hub of modern cafés and design shops.",
     gettingAround:
-      "Chiang Mai International Airport is about 3 km from the city centre, the aviation hub of northern Thailand; the old town is easily explored on foot or by songthaew (converted pickup-truck taxi).",
+      "Chiang Mai International Airport is about 3.4 km in a straight line from the city centre, the aviation hub of northern Thailand; the old town is easily explored on foot or by songthaew (converted pickup-truck taxi).",
     culture:
       "The local Lanna dialect exists alongside standard Thai; Chiang Mai is known for its Sunday walking-street night market and craft markets. Tipping at restaurants is not mandatory.",
     seeAndDo:
@@ -147,7 +147,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the Golden Triangle viewpoint at the confluence of the Mekong and Ruak rivers lies in the province's north.",
     gettingAround:
-      "Chiang Rai International Airport is about 8 km from the city centre; a car or hired driver is recommended for the Golden Triangle viewpoint and the Mae Sai border crossing.",
+      "Chiang Rai International Airport is about 6.4 km in a straight line from the city centre; a car or hired driver is recommended for the Golden Triangle viewpoint and the Mae Sai border crossing.",
     culture:
       "Chiang Rai Province is home to several of northern Thailand's hill-tribe communities, and traditional handicrafts and produce from these communities are common at local markets.",
     seeAndDo:

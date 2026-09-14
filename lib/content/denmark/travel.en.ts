@@ -37,7 +37,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is compact; the canal-lined Christianshavn and Nyhavn districts are the iconic waterfront areas, with Tivoli Gardens and City Hall Square forming the traditional centre, and the suburbs connected to Sweden via the Øresund Bridge.",
     gettingAround:
-      "Copenhagen Airport is about 8 km from the centre, with a direct metro link. The city has an extensive network of cycle lanes; the metro, buses and walking are also good options. The climate is temperate maritime, mild year-round and windy in winter.",
+      "Copenhagen Airport is about 8.2 km in a straight line from the centre, with a direct metro link. The city has an extensive network of cycle lanes; the metro, buses and walking are also good options. The climate is temperate maritime, mild year-round and windy in winter.",
     culture:
       "The official language is Danish, and English proficiency is extremely high. Copenhagen is the birthplace of \"New Nordic Cuisine\" and has one of the highest shares of cycling commuters in the world. The \"hygge\" way of life is especially visible here. Restaurant bills typically already include service.",
     seeAndDo:

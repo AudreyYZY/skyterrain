@@ -274,7 +274,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Cagliari's old town is built on a hill overlooking the bay, known as the 'Castello' district, keeping the walls and towers built during the period of Pisan rule (13th century). Below the city is the Molentargius saltwater lagoon, home to flamingos, and from the high old town you can see the bay, the salt lake and the city all at once.",
     gettingAround:
-      "Cagliari Airport (CAG) is about 7 km from the city, with bus and train links. High-speed rail does not reach Sardinia — travel to and from mainland Italy is mainly by air or ferry (about 8 hours to Civitavecchia near Rome). The city has buses and light rail; the Castello district needs climbing. The climate is Mediterranean, hot, dry and low-rainfall in summer, mild in winter.",
+      "Cagliari Airport (CAG) is about 6.6 km in a straight line from the city, with bus and train links. High-speed rail does not reach Sardinia — travel to and from mainland Italy is mainly by air or ferry (about 8 hours to Civitavecchia near Rome). The city has buses and light rail; the Castello district needs climbing. The climate is Mediterranean, hot, dry and low-rainfall in summer, mild in winter.",
     culture:
       "Italian is the main language; Sardinian (a Romance language quite different from Italian) is still used day to day on the island, with some bilingual signs. Sardinians are proud of the island's distinct history and culture (the Nuragic civilisation, traditional mask festivals), and the food is its own tradition (thin pane carasau bread, porceddu roast suckling pig). Restaurant bills often include a bread/service charge.",
     seeAndDo:

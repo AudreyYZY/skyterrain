@@ -93,6 +93,20 @@ const DEST_LIST_ZH = /(?:(?:有|开通了?|通达|可飞)(?:飞往)?[^，。；�
 const DEST_LIST_EN = /\b(?:(?:flights|routes|air services)\s+(?:only\s+)?(?:to|from)\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}|has\s+[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}(?:(?:,\s*|\s+and\s+)(?:to\s+)?[A-ZÀ-Þ][\w'’-]*(?:\s+[A-ZÀ-Þ][\w'’-]*){0,3}){2,}\s+(?:flights|routes)\b)/;
 
 /**
+ * C6o：**距离没有口径**（2026-09-15 立）。「机场距市区约 20 公里」可以是直线、可以是公路里程，两者常差三到五成；
+ * 此前全库有 300 多处这种句子，known-errors「距离口径」一节里已经记过把公路里程写成直线、把直线当车程的真错。
+ * **只扫旅游攻略**（读者拿它当出行依据；地形讲解里「距东京约 100 公里」是地理方位、默认直线；航线距离另有 check:distance）。
+ * 判据：句子里有「距 / 离 … N 公里」或「N 公里外」（英文「N km from / away / north of …」），
+ * 而同一句里没有任何口径词（直线、车程、公路、步行、铁路、航程……）。存量大，所以是棘轮：新写的句子必须带口径。
+ * 修法：有两端坐标的（机场、注册表里的城市与地标）按坐标算出直线距离，写「直线约 N 公里」；
+ * 来源给的是公路里程的，写「公路约 N 公里 / 车程约 N 公里」。
+ */
+const DIST_ZH = /(?:距|离)[^，。；！？、（）]{0,16}?约?\s?\d[\d.,]*\s?(?:公里|千米)|\d[\d.,]*\s?(?:公里|千米)(?:外|以外)/;
+const DIST_CALIBER_ZH = /直线|车程|公路|路程|里程|步行|驾车|开车|自驾|骑行|徒步|铁路|航程|航线|飞行|河道|大圆|半径|范围|沿[^，。；]{0,8}(?:路|公路|铁路|河|海岸|步道)/;
+const DIST_EN = /\b\d[\d,.]*\s?(?:km|kilometres|kilometers)\s+(?:from|away|outside|beyond|(?:north|south|east|west|north-east|north-west|south-east|south-west|northeast|northwest|southeast|southwest|upstream|downstream|inland|offshore)(?: of| from)?\s+(?:the\s+|central\s+|downtown\s+)?[A-ZÀ-Þ])/;
+const DIST_CALIBER_EN = /straight[- ]line|as the crow flies|great-circle|by road|road distance|drive|driving|by car|walk|on foot|by rail|by train|\brail\b|\broute\b|flight|by air|radius|along the|by boat|by ferry|cycl/i;
+
+/**
  * C6k：**这个国家的官方统计里根本没有这个口径**。
  *
  * `C6-c` 一直是靠人核出来的：「口径先于数字 —— 先确认这个口径在该国官方统计里存不存在」。
@@ -374,7 +388,8 @@ type Rule =
   | "D4-粘连句"
   | "C6l-机场航点列表"
   | "C6m-同条目机场启用年份打架"
-  | "C6n-不加限定的没有机场";
+  | "C6n-不加限定的没有机场"
+  | "C6o-距离没有口径";
 
 interface Hit {
   rule: Rule;
@@ -502,6 +517,9 @@ for (const seg of segments) {
     if (isUnqualifiedRank(s, zh)) {
       hits.push({ ...seg, rule: "C1b-排名断言缺口径", sentence: s });
     }
+    if (seg.kind === "travel" && (zh ? DIST_ZH : DIST_EN).test(s) && !(zh ? DIST_CALIBER_ZH : DIST_CALIBER_EN).test(s)) {
+      hits.push({ ...seg, rule: "C6o-距离没有口径", sentence: s });
+    }
     // C6k：按条目所属国家查「这个国家没有的口径」；句子自己在说「没有这一档」时放过
     const country = COUNTRY_OF.get(`${seg.kind}/${seg.id}`);
     const fakes = country ? FAKE_CALIBER[country] : undefined;
@@ -579,6 +597,7 @@ const RULES: Rule[] = [
   "C6l-机场航点列表",
   "C6m-同条目机场启用年份打架",
   "C6n-不加限定的没有机场",
+  "C6o-距离没有口径",
 ];
 
 // ── C6d 豁免：已核实「这就是最新一期」的条目 ────────────────────────────

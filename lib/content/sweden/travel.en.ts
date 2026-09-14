@@ -156,7 +156,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the coast around Kalmar Castle, with a well-preserved 17th-century Baroque new-town district; a bridge connects Kalmar to Öland across the strait.",
     gettingAround:
-      "Kalmar Airport is about 6 km from the centre, reached by bus; from Stockholm the train takes about 4.5 hours. The old town is walkable; Öland is reachable by car across the bridge. The climate is temperate maritime.",
+      "Kalmar Airport is about 4.9 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 4.5 hours. The old town is walkable; Öland is reachable by car across the bridge. The climate is temperate maritime.",
     culture:
       "The official language is Swedish, with high English proficiency. Kalmar Castle was the site where the Kalmar Union — the 1397 union of the crowns of Denmark, Sweden and Norway — was concluded, an important landmark in Nordic history. Restaurant bills typically already include service.",
     seeAndDo:

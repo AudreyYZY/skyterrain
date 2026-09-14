@@ -3112,7 +3112,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The urban area follows both banks of the Chen River, with Suxian Ling on its north-east side, Wanhua Cave to the south-west in Beihu district, and Gaoyiling, a stretch of red Danxia landforms, to the north; Dongjiang Lake is in Zixing to the east, and Mangshan is in Yizhang county to the south, near Guangdong.",
     gettingAround:
-      "Chenzhou Beihu Airport (HCZ) is in Huatang town, Beihu district, about 18 km from the centre, and opened in September 2021. Rail centres on Chenzhou West station on the Beijing–Guangzhou high-speed line, convenient for Changsha and Guangzhou, and conventional trains use Chenzhou station in the city. Buses and taxis cover the city; for Dongjiang Lake travel to Zixing and change, while Mangshan is far enough that driving or a hired car is easier. The climate is humid subtropical monsoon, hot and wet in summer.",
+      "Chenzhou Beihu Airport (HCZ) is in Huatang town, Beihu district, about 17 km in a straight line from the centre, and opened in September 2021. Rail centres on Chenzhou West station on the Beijing–Guangzhou high-speed line, convenient for Changsha and Guangzhou, and conventional trains use Chenzhou station in the city. Buses and taxis cover the city; for Dongjiang Lake travel to Zixing and change, while Mangshan is far enough that driving or a hired car is easier. The climate is humid subtropical monsoon, hot and wet in summer.",
     culture:
       "Mandarin is widely used. Qifengdu fish noodles are Chenzhou's well-known breakfast, and Linwu duck is another local speciality. Suxian Ling and the city parks are where residents spend their free time. Tipping is not customary.",
     seeAndDo:

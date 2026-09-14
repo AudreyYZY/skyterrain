@@ -74,7 +74,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is built on an island formed where the Lee splits into two channels, its street layout shaped by the old canal system; the suburbs extend out along the river mouth, with Cobh harbour historically an important transatlantic shipping port nearby.",
     gettingAround:
-      "Cork Airport is about 8 km from the centre, reached by bus. Getting around the city centre relies mainly on walking, as the old town is compact. The climate is temperate maritime, mild and rainy year-round.",
+      "Cork Airport is about 6.4 km in a straight line from the centre, reached by bus. Getting around the city centre relies mainly on walking, as the old town is compact. The climate is temperate maritime, mild and rainy year-round.",
     culture:
       "The official languages are Irish and English, with English used day to day. Cork is known for its local food culture, and the English Market is central to daily food life in the city. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -95,7 +95,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The compact town centre sits right beside Killarney National Park and its lakes to the south-west, with MacGillycuddy's Reeks rising as a backdrop on the park's western side, forming a classic mountain-and-lake setting.",
     gettingAround:
-      "Kerry Airport is about 15 km from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
+      "Kerry Airport is about 14 km in a straight line from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
     culture:
       "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -156,7 +156,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Shannon, with King John's Castle guarding a key crossing point; the city is divided into historic quarters including Irishtown, Englishtown and Newtown Pery.",
     gettingAround:
-      "Shannon Airport is about 25 km from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
+      "Shannon Airport is about 21 km in a straight line from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
     culture:
       "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is generally taken to be the namesake of the five-line comic verse form, the \"limerick,\" though the exact origin of the name remains unsettled. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -194,7 +194,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town was built to an 18th-century plan (generally attributed to the English architect James Wyatt, around 1780), with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
     gettingAround:
-      "Ireland West Airport Knock is about 50 km from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
+      "Ireland West Airport Knock is about 47 km in a straight line from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
     culture:
       "The official languages are Irish and English, with English used day to day. Westport is known for its neatly planned town centre and lively music-pub culture, and is an important hub for outdoor tourism in western Ireland. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:

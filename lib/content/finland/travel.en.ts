@@ -52,7 +52,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along both banks of the Aura River, with Turku Castle guarding the river mouth and Turku Cathedral standing further upstream; historic ship museums dot both banks.",
     gettingAround:
-      "Turku Airport is about 8 km from the centre, reached by bus; from Helsinki the train takes about 2 hours. The city centre is walkable; reaching the archipelago requires a car or ferry. The climate is temperate maritime, comparatively mild along the coast.",
+      "Turku Airport is about 6.9 km in a straight line from the centre, reached by bus; from Helsinki the train takes about 2 hours. The city centre is walkable; reaching the archipelago requires a car or ferry. The climate is temperate maritime, comparatively mild along the coast.",
     culture:
       "The official languages are Finnish and Swedish, and the Turku region has a comparatively high share of Swedish speakers. Turku was Finland's capital during the period of Swedish rule and served as European Capital of Culture in 2011. Restaurant bills typically already include service.",
     seeAndDo:
@@ -115,7 +115,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built along the northern shore of Päijänne; several buildings by the renowned Finnish architect Alvar Aalto are scattered through the city, and the university campus blends with the lakeside scenery.",
     gettingAround:
-      "Jyväskylä Airport is about 20 km from the centre, reached by bus; from Helsinki the train takes about 3 hours. The city is easy to explore on foot or by bicycle. The climate is temperate continental.",
+      "Jyväskylä Airport is about 18 km in a straight line from the centre, reached by bus; from Helsinki the train takes about 3 hours. The city is easy to explore on foot or by bicycle. The climate is temperate continental.",
     culture:
       "The official language is Finnish, with high English proficiency and a lively university-town atmosphere. Jyväskylä is an important showcase for Finnish modern architecture and design, with many of Alvar Aalto's early works concentrated here. Restaurant bills typically already include service.",
     seeAndDo:
@@ -156,7 +156,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The compact city centre is built along the western shore of Kallavesi, with Puijo hill on the city's north side serving as an important landmark high point.",
     gettingAround:
-      "Kuopio Airport is about 15 km from the centre, reached by bus; from Helsinki the train takes about 4.5 hours. The city is easy to explore on foot and by bus. The climate is temperate continental.",
+      "Kuopio Airport is about 14 km in a straight line from the centre, reached by bus; from Helsinki the train takes about 4.5 hours. The city is easy to explore on foot and by bus. The climate is temperate continental.",
     culture:
       "The official language is Finnish, with high English proficiency. Kuopio is known for its authentic Finnish smoked-fish pie (kalakukko) and sauna culture, and the market square is the centre of local daily life. Restaurant bills typically already include service.",
     seeAndDo:
@@ -197,7 +197,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town sits where the Kemijoki meets one of its tributaries; rebuilt after the Second World War to a plan by architect Alvar Aalto (the city is laid out in the shape of a reindeer's head), with the Arctic Circle line running through Santa Claus Village on the outskirts.",
     gettingAround:
-      "Rovaniemi Airport is about 10 km from the centre, reached by bus; from Helsinki flights take about 1.5 hours, or about 12 hours by overnight train. The town is easy to explore on foot and by bus; reaching the wilderness requires a car or a tour. The climate is subarctic, with long, severe winters, polar night and the northern lights, and midnight sun in summer.",
+      "Rovaniemi Airport is about 8.1 km in a straight line from the centre, reached by bus; from Helsinki flights take about 1.5 hours, or about 12 hours by overnight train. The town is easy to explore on foot and by bus; reaching the wilderness requires a car or a tour. The climate is subarctic, with long, severe winters, polar night and the northern lights, and midnight sun in summer.",
     culture:
       "The official language is Finnish, with high English proficiency. Rovaniemi is a globally known Christmas-themed destination thanks to its \"official\" Santa Claus Village, and also an important window onto Lapland's Sámi culture. Restaurant bills typically already include service.",
     seeAndDo:

@@ -29,7 +29,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Intramuros (the old walled city) preserves Spanish colonial-era walls and churches; Makati and Bonifacio Global City are modern commercial and financial districts, and the Manila Bay waterfront is known for its sunset views.",
     gettingAround:
-      "Ninoy Aquino International Airport is about 11 km from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
+      "Ninoy Aquino International Airport is about 11 km in a straight line from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
     culture:
       "The official languages are Filipino and English, with high English proficiency. Manila carries layered historical influences from Spanish colonial rule, American administration and local culture, and Catholic faith has broad influence on daily life. Restaurant bills often already include service, with an additional 10% tip customary.",
     seeAndDo:
@@ -146,7 +146,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along Albay Gulf, with historic landmarks such as the Cagsawa ruins on its outskirts; several viewpoints around the city offer different angles on Mayon's complete cone.",
     gettingAround:
-      "Bicol International Airport is about 8 km from the city centre; taxis, tricycles and jeepneys are the main ways to get around, with a drive or hired car needed to reach sites around Mayon Volcano.",
+      "Bicol International Airport is about 7.9 km in a straight line from the city centre; taxis, tricycles and jeepneys are the main ways to get around, with a drive or hired car needed to reach sites around Mayon Volcano.",
     culture:
       "The official languages are Filipino and English, with the local Bicol language widely used in daily life. Legazpi and the surrounding Bicol region are known for spicy, coconut-milk-based cuisine, an important culinary region in the Philippines. Restaurant bills often already include service.",
     seeAndDo:

@@ -48,7 +48,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old city around Ankara Castle forms the historic core, while the newer districts extending south house government institutions, universities and the embassy district; Anıtkabir (Atatürk's Mausoleum) sits on a hill on the city's west side.",
     gettingAround:
-      "Esenboğa Airport (ESB) is about 28 km from the city center; the city has a well-developed metro and bus network, providing convenient access to sites such as the Museum of Anatolian Civilizations.",
+      "Esenboğa Airport (ESB) is about 25 km in a straight line from the city center; the city has a well-developed metro and bus network, providing convenient access to sites such as the Museum of Anatolian Civilizations.",
     culture:
       "The official language is Turkish. As the administrative center, Ankara tends toward more formal dress and etiquette; religious sites still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
     seeAndDo:
@@ -66,7 +66,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city curves along Izmir Bay, with the Kordon waterfront promenade as its everyday recreational heart; the old town around Kadifekale Castle in the Konak district preserves historic streets, and the Agora of Smyrna lies in the city center.",
     gettingAround:
-      "Adnan Menderes Airport (ADB) is about 18 km from the city center; the city has metro and light-rail networks, and reaching the ancient city of Ephesus usually means taking a train or bus to the nearby town of Selçuk, about an hour away.",
+      "Adnan Menderes Airport (ADB) is about 15 km in a straight line from the city center; the city has metro and light-rail networks, and reaching the ancient city of Ephesus usually means taking a train or bus to the nearby town of Selçuk, about an hour away.",
     // culture sources: ⚠️ 零争议红线（D-redline）：identity 与 culture 两段原本都写了「相对世俗开放 / 世俗化程度较高」——对土耳其国内城市在世俗／宗教轴上做比较评价，2026-09-10 一并删除，换成不带评价的城市事实。
     culture:
       "The official language is Turkish. Izmir has a relaxed coastal resort-and-trade atmosphere and casual everyday dress; mosques still require the basic etiquette of shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
@@ -121,7 +121,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town curves around Bodrum Bay, with Bodrum Castle (Castle of St. Peter) standing on a headland at the center of the harbor, dividing it into east and west bays; the surrounding peninsula holds resort towns such as Turgutreis and Yalıkavak.",
     gettingAround:
-      "Milas–Bodrum Airport (BJV) is about 36 km from the town center; taxis, rental cars and ferries are the main ways to get around, and reaching other resort towns on the peninsula usually requires driving or a local bus.",
+      "Milas–Bodrum Airport (BJV) is about 32 km in a straight line from the town center; taxis, rental cars and ferries are the main ways to get around, and reaching other resort towns on the peninsula usually requires driving or a local bus.",
     culture:
       "The official language is Turkish. Bodrum is one of Turkey's more internationally minded resort towns with relatively relaxed dress norms; mosques still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
     seeAndDo:
@@ -158,7 +158,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city stretches along the Black Sea coast, with its old quarter preserving Byzantine-era landmarks such as the Hagia Sophia of Trabzon; the mountains inland hold sites including the Sümela Monastery and Lake Uzungöl.",
     gettingAround:
-      "Trabzon Airport (TZX) is about 6 km from the city center; taxis and buses are the main way to get around the city, while reaching Sümela Monastery or Uzungöl usually requires a private car or local tour, each about 1 to 2 hours away.",
+      "Trabzon Airport (TZX) is about 6.2 km in a straight line from the city center; taxis and buses are the main way to get around the city, while reaching Sümela Monastery or Uzungöl usually requires a private car or local tour, each about 1 to 2 hours away.",
     culture:
       "The official language is Turkish, and the local Black Sea dialect and customs are distinctive. The Black Sea coast around Trabzon is generally humid and rainy, so pack rain gear; mosques still require shoes off and headscarves for women. Restaurant tips are typically around 10% of the bill.",
     seeAndDo:

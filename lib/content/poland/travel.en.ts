@@ -51,7 +51,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is centred on the Main Market Square, with Wawel Castle standing on high ground beside the Vistula overlooking the whole city; the Kazimierz district preserves a historic Jewish quarter.",
     gettingAround:
-      "Kraków Airport is about 11 km from the centre, with a train link; the old town is walkable, and the city has an extensive tram network. The climate is temperate continental.",
+      "Kraków Airport is about 12 km in a straight line from the centre, with a train link; the old town is walkable, and the city has an extensive tram network. The climate is temperate continental.",
     culture:
       "The official language is Polish, with higher English proficiency given the city's importance for tourism and its universities. Kraków escaped major destruction in the Second World War and so retains an intact medieval city layout, making it one of the culturally and historically richest cities in Poland. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -112,7 +112,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built on several islands formed by the Oder and its tributaries, with the Market Square at its core and Ostrów Tumski (Cathedral Island) preserving a cluster of medieval religious buildings.",
     gettingAround:
-      "Wrocław Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 4.5 hours. The old town is walkable, with numerous bridges over the river. The climate is temperate continental.",
+      "Wrocław Airport is about 11 km in a straight line from the centre, reached by bus; from Warsaw the train takes about 4.5 hours. The old town is walkable, with numerous bridges over the river. The climate is temperate continental.",
     culture:
       "The official language is Polish. Wrocław has historically been governed by several different states, and this blended history has given the city a distinctive architectural character. Hundreds of small bronze dwarf statues scattered through the streets have become an iconic city symbol. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -133,7 +133,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is centred on the Old Market Square, with the Renaissance-style town hall standing at its heart, and Cathedral Island preserving the remains of Poland's earliest church.",
     gettingAround:
-      "Poznań-Ławica Airport is about 6 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
+      "Poznań-Ławica Airport is about 6.9 km in a straight line from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
     culture:
       "The official language is Polish. Poznań is an important Polish trade-fair and commercial city, and locals are known for their practical, efficient work ethic. A mechanical goat display at the Old Market town hall performs daily at noon. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -154,7 +154,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Motława River, with Long Street and Long Market forming its historic axis; historic city gates such as the Green Gate and Golden Gate survive intact, and the port district preserves historic harbour cranes.",
     gettingAround:
-      "Gdańsk Lech Wałęsa Airport is about 12 km from the centre, with bus and train links; from Warsaw the train takes about 2.5 hours. The old town is walkable; reaching the Hel Peninsula requires a car or train. The climate is temperate maritime, comparatively mild along the coast.",
+      "Gdańsk Lech Wałęsa Airport is about 12 km in a straight line from the centre, with bus and train links; from Warsaw the train takes about 2.5 hours. The old town is walkable; reaching the Hel Peninsula requires a car or train. The climate is temperate maritime, comparatively mild along the coast.",
     culture:
       "The official language is Polish. Gdańsk was the birthplace of the 1980 Solidarity trade-union movement, an event widely regarded as one of the important beginnings of the political transformations across Eastern Europe. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:

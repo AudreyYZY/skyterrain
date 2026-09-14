@@ -266,7 +266,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Maastricht's old town straddles the Meuse, linked by St Servatius Bridge, one of the oldest bridges in the Netherlands. The old town preserves extensive medieval walls and churches, and the Vrijthof is the central square. Sitting near where the Netherlands, Belgium and Germany meet, the city's character blends Dutch, Belgian and German architecture and food.",
     gettingAround:
-      "Maastricht Aachen Airport (MST) is about 9 km from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 50 minutes). The old town is walkable, and cycling is also an option. The climate is temperate maritime, slightly milder than the north of the Netherlands, and this is the region with the most pronounced relief in the country.",
+      "Maastricht Aachen Airport (MST) is about 8.7 km in a straight line from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 50 minutes). The old town is walkable, and cycling is also an option. The climate is temperate maritime, slightly milder than the north of the Netherlands, and this is the region with the most pronounced relief in the country.",
     culture:
       "Dutch is the main language; being close to the Belgian and German borders, French and German are occasionally heard, with widespread English. Maastricht people are proud of a lifestyle closer to Burgundian ease (good food and wine, outdoor café culture), a contrast to the more practical style of the northern Netherlands. Restaurant tipping is not required.",
     seeAndDo:
@@ -292,7 +292,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Groningen's old town is ringed by a circular canal, with the landmark Martini Tower (a church bell tower) the highest point in the city. The Grote Markt is the centre, surrounded by university buildings, shops and cafés; the city overall is compact and easy to explore on foot or by bike.",
     gettingAround:
-      "Groningen Airport Eelde (GRQ) is about 10 km from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 35 minutes). The old town is walkable, and the bicycle is the main way locals get around (Groningen is considered one of the Netherlands' most cycling-oriented cities). The climate is temperate maritime, windy given its proximity to the North Sea and Wadden Sea.",
+      "Groningen Airport Eelde (GRQ) is about 11 km in a straight line from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 35 minutes). The old town is walkable, and the bicycle is the main way locals get around (Groningen is considered one of the Netherlands' most cycling-oriented cities). The climate is temperate maritime, windy given its proximity to the North Sea and Wadden Sea.",
     culture:
       "Dutch is the main language; the university-town character brings a high share of young people and lively nightlife, with very high English proficiency. Groningen people are proud of the local cycling culture and the city's student identity. Restaurant tipping is not required.",
     seeAndDo:

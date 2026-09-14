@@ -29,7 +29,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is divided by the Ishim River (a tributary of the Irtysh) into a right bank, which preserves the Soviet-era old town, and a left bank, where large landmark structures including the Bayterek Tower, the Khan Shatyr entertainment centre and the Nur-Astana Mosque have been built since the late 1990s — the core of Astana's \"new city.\"",
     gettingAround:
-      "Astana International Airport (NQZ) is about 17 km from the city centre; taxis, ride-hailing apps and buses are the main way to get around town, and the left-bank new city's wide boulevards mean walking distances there tend to be long.",
+      "Astana International Airport (NQZ) is about 18 km in a straight line from the city centre; taxis, ride-hailing apps and buses are the main way to get around town, and the left-bank new city's wide boulevards mean walking distances there tend to be long.",
     culture:
       "The official language is Kazakh, with Russian widely spoken. Kazakh hospitality is taken seriously, and accepting food offered by a host is basic courtesy. Shoes come off before entering the Nur-Astana Mosque or other religious sites, and women should carry a headscarf. Tipping is customary in Kazakhstan — typically an extra 5–10% on top of the restaurant bill.",
     seeAndDo:
@@ -48,7 +48,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city follows a grid layout that rises from north to south; the southern districts, closer to the mountains, sit at higher elevation and enjoy cooler air, with Panfilov Park and Republic Square forming the city centre's core; the snow-capped peaks of the Zailiysky Alatau are visible looking south from the city, and both Medeu Gorge and Big Almaty Lake lie within commuting distance.",
     gettingAround:
-      "Almaty International Airport (ALA) is about 21 km from the city centre; the city has a single metro line and a bus network, while reaching mountain sites like Medeu or Big Almaty Lake usually requires a hired car or a local tour; Charyn Canyon and the Kolsai-Kaindy lakes require a one- or two-day trip out of Almaty.",
+      "Almaty International Airport (ALA) is about 21 km in a straight line from the city centre; the city has a single metro line and a bus network, while reaching mountain sites like Medeu or Big Almaty Lake usually requires a hired car or a local tour; Charyn Canyon and the Kolsai-Kaindy lakes require a one- or two-day trip out of Almaty.",
     culture:
       "The official language is Kazakh, with Russian widely used in Almaty — in some contexts even more common. Almaty is one of Kazakhstan's most cosmopolitan and secular cities, and everyday dress is fairly relaxed; religious sites still call for basic etiquette such as removing shoes and women carrying a headscarf. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
     seeAndDo:
@@ -65,7 +65,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town preserves some Soviet-era buildings and traditional bazaars, while the newer Independence Park and Al-Farabi Square form the city centre's leisure core; the ancient city of Turkestan lies about 160 km to the north.",
     gettingAround:
-      "Shymkent International Airport (CIT) is about 12 km from the city centre; buses and taxis are the main way to get around town, and reaching Turkestan usually means about 2 hours by highway.",
+      "Shymkent International Airport (CIT) is about 12 km in a straight line from the city centre; buses and taxis are the main way to get around town, and reaching Turkestan usually means about 2 hours by highway.",
     culture:
       "The official language is Kazakh, and the city carries a comparatively strong traditional Kazakh cultural atmosphere, one of the places in southern Kazakhstan where older customs are best preserved. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
     seeAndDo:
@@ -83,7 +83,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city follows a Soviet-era grid plan, its districts identified by numbered microdistricts (mkr) rather than traditional street names, with several beaches and a seaside promenade along the Caspian shore; landmarks deep in the Mangystau desert such as Bozzhyra and Karagiye require several hours' drive from Aktau to reach.",
     gettingAround:
-      "Aktau International Airport (SCO) is about 25 km from the city centre; taxis are the main way to get around town, while reaching desert sites like Bozzhyra and Karagiye involves rough terrain and usually requires a rented 4x4 with a local guide familiar with the route.",
+      "Aktau International Airport (SCO) is about 24 km in a straight line from the city centre; taxis are the main way to get around town, while reaching desert sites like Bozzhyra and Karagiye involves rough terrain and usually requires a rented 4x4 with a local guide familiar with the route.",
     culture:
       "The official language is Kazakh, with Russian widely used. Aktau is an oil-industry city on the Caspian coast, and the pace of local life leans business-oriented; shoes come off before entering religious sites, and women should carry a headscarf. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
     seeAndDo:
@@ -120,7 +120,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city developed around Soviet-era coal-mining industry, and its centre preserves a large number of Soviet-era buildings; Karkaraly National Park lies about 220 km to the east, and the granite massif of Bektau-Ata about 300 km to the south, some 70 km north of Lake Balkhash.",
     gettingAround:
-      "Sary-Arka Airport (KGF) is about 23 km from the city centre; buses and taxis are the main way to get around town, and reaching Karkaraly or Bektau-Ata usually requires a hired car, each several hours' drive on mountain roads.",
+      "Sary-Arka Airport (KGF) is about 23 km in a straight line from the city centre; buses and taxis are the main way to get around town, and reaching Karkaraly or Bektau-Ata usually requires a hired car, each several hours' drive on mountain roads.",
     culture:
       "The official language is Kazakh, with Russian widely used in Karaganda, one of the cities in Kazakhstan with a comparatively high ethnic Russian population. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
     seeAndDo:
@@ -139,7 +139,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city straddles both banks of the Irtysh River, with the Semey cable-stayed bridge one of its landmarks; the old town preserves some late-19th- and early-20th-century historic buildings, connected to the period when the writer Fyodor Dostoevsky lived here in exile.",
     gettingAround:
-      "Semey Airport (PLX) is about 7 km from the city centre; buses and taxis are the main way to get around town.",
+      "Semey Airport (PLX) is about 6.6 km in a straight line from the city centre; buses and taxis are the main way to get around town.",
     // culture sources: ⚠️ 零争议红线，**只改这一句**：删掉「承受深重的核辐射影响」这半句评价性表述（谈的是活着的人群的健康后果），保留「有严肃的纪念与教育设施、参观请保持尊重」这条对读者有用的实用信息。
     //   **核实方建议把核试验场整块删掉，没有照办** —— 它给的依据是「任务指令本身」，而那是我在 prompt 里写的黑名单。按仓库判据逐句量：howItWorks 那句是日期与次数、无评价词（8 月 29 日成为联合国国际禁核试日是公开事实），seeAndDo 的纪念馆是真实公开运营的场馆——两处都与越南保留挂牌景点的判例同型，**保留**。**英文侧本来就更克制**（写的是 carries the serious historical legacy…，完全没提辐射影响），只有中文那半句带评价——又一处中文比英文过火的中英不同步。2026-09-10 判定。
     culture:
@@ -160,7 +160,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city sits along the right bank of the Irtysh River, with a riverside promenade and central square forming the main public leisure space; the old town preserves buildings from the Soviet era and earlier.",
     gettingAround:
-      "Pavlodar Airport (PWQ) is about 13 km from the city centre; buses and taxis are the main way to get around town.",
+      "Pavlodar Airport (PWQ) is about 13 km in a straight line from the city centre; buses and taxis are the main way to get around town.",
     culture:
       "The official language is Kazakh, with Russian widely used — one of the regions in Kazakhstan with a comparatively high ethnic Russian population. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
     seeAndDo:
@@ -178,7 +178,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city itself is modest in scale, serving mainly administrative and transport functions; Burabay National Park lies about 70 km to the north and is the region's principal natural tourism destination.",
     gettingAround:
-      "Kokshetau Airport (KOV) is about 18 km from the city centre; taxis are the main way to get around town, and reaching Burabay usually requires a hired car, about an hour's drive.",
+      "Kokshetau Airport (KOV) is about 15 km in a straight line from the city centre; taxis are the main way to get around town, and reaching Burabay usually requires a hired car, about an hour's drive.",
     culture:
       "The official language is Kazakh, with Russian widely used. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
     seeAndDo:

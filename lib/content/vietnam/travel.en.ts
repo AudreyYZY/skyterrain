@@ -110,7 +110,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Perfume River runs through the city; the Imperial City and Forbidden Purple City ruins on the north bank preserve the Nguyen court's layout, the south bank is the modern city centre, and several royal tombs lie along the Perfume River on the city's outskirts.",
     gettingAround:
-      "Phu Bai International Airport is about 15 km from the city centre; a dragon boat cruise on the Perfume River or a hired car is recommended for linking the Imperial City and the royal tombs, with taxis and Grab available in the city.",
+      "Phu Bai International Airport is about 14 km in a straight line from the city centre; a dragon boat cruise on the Perfume River or a hired car is recommended for linking the Imperial City and the royal tombs, with taxis and Grab available in the city.",
     culture:
       "As the Nguyen dynasty's ancient capital, Hue has a rich tradition of royal-court cuisine and vegetarian food culture, and the local dialect and food customs differ noticeably from other parts of Vietnam.",
     seeAndDo:
@@ -146,7 +146,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the shore of Ha Long Bay, with numerous boat piers along the coast serving as departure points for bay cruises.",
     gettingAround:
-      "Van Don International Airport is about 50 km from the city centre; a long-distance bus from Hanoi takes about 2.5 to 3 hours, and hiring a car via the expressway is another option.",
+      "Van Don International Airport is about 41 km in a straight line from the city centre; a long-distance bus from Hanoi takes about 2.5 to 3 hours, and hiring a car via the expressway is another option.",
     culture:
       "Ha Long has grown rapidly around the Ha Long Bay tourism industry, with fishing and tourism as its two economic pillars.",
     seeAndDo:

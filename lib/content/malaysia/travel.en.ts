@@ -84,7 +84,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along the Johor Strait; the Johor–Singapore Causeway is an important land crossing to Singapore, and the downtown commercial area is closely tied to commuter traffic from Singapore.",
     gettingAround:
-      "Senai International Airport is about 21 km from the city centre; the Causeway and the Second Link bridge connect to Singapore, with cross-border buses and private cars frequent, and the checkpoints often congested during commuter rush hours.",
+      "Senai International Airport is about 18 km in a straight line from the city centre; the Causeway and the Second Link bridge connect to Singapore, with cross-border buses and private cars frequent, and the checkpoints often congested during commuter rush hours.",
     culture:
       "The official language is Malay; given its proximity to Singapore, English and Mandarin are widely used in business settings. Johor Bahru is the seat of the Johor royal family, and buildings such as the Istana Besar reflect its royal cultural heritage. Restaurant bills often already include service.",
     seeAndDo:
@@ -228,7 +228,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre lies on both banks of the Pahang River mouth; Teluk Cempedak Beach is a well-known local leisure beach, and river-mouth fishing villages preserve a traditional way of life.",
     gettingAround:
-      "Sultan Ahmad Shah Airport is about 15 km from the city centre; Kuantan is reachable from Kuala Lumpur by domestic flight or long-distance bus (about 4 hours), and Tasik Chini is about a 1.5-hour drive away.",
+      "Sultan Ahmad Shah Airport is about 14 km in a straight line from the city centre; Kuantan is reachable from Kuala Lumpur by domestic flight or long-distance bus (about 4 hours), and Tasik Chini is about a 1.5-hour drive away.",
     culture:
       "The official language is Malay. Kuantan is the administrative and commercial centre of Pahang state, its river-mouth fishing villages and coconut-lined beaches reflecting the traditional way of life on the peninsula's east coast. Restaurant bills often already include service.",
     seeAndDo:
@@ -254,7 +254,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along the bay; Sandakan Central Market is a well-known seafood and produce trading site locally, and several historic sites and nature reserves lie on the city's outskirts.",
     gettingAround:
-      "Sandakan Airport is about 11 km from the city centre; reaching the wildlife reserves on the lower Kinabatangan River requires driving about 2 hours, with part of the trip by boat.",
+      "Sandakan Airport is about 9.4 km in a straight line from the city centre; reaching the wildlife reserves on the lower Kinabatangan River requires driving about 2 hours, with part of the trip by boat.",
     culture:
       "The official language is Malay. Sandakan was the capital of British North Borneo in the early 20th century, suffered severe destruction during the Second World War, and is today an important ecotourism and fishing city on Sabah's east coast. Restaurant bills often already include service.",
     seeAndDo:
@@ -276,7 +276,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along the coastline; Canada Hill is the site of Malaysia's first oil well, now a memorial park, and several oil-industry heritage sites lie around the city.",
     gettingAround:
-      "Miri Airport is about 8 km from the city centre; reaching Gunung Mulu National Park requires a connecting light-aircraft flight (about 30 minutes), while the Niah Caves are about a 1.5-hour drive.",
+      "Miri Airport is about 8.6 km in a straight line from the city centre; reaching Gunung Mulu National Park requires a connecting light-aircraft flight (about 30 minutes), while the Niah Caves are about a 1.5-hour drive.",
     culture:
       "The official language is Malay. Miri grew from the development of the oil industry — Malaysia's first oil well was drilled here in 1910 — and is today an important commercial and tourism hub in northern Sarawak. Restaurant bills often already include service.",
     seeAndDo:
