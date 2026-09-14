@@ -48,6 +48,7 @@ import { TERRAINS as romania } from "@/lib/content/romania/registry";
 import { TERRAINS as bulgaria } from "@/lib/content/bulgaria/registry";
 import { TERRAINS as uzbekistan } from "@/lib/content/uzbekistan/registry";
 import { TERRAINS as lithuania } from "@/lib/content/lithuania/registry";
+import { TERRAINS as uae } from "@/lib/content/uae/registry";
 
 export const ALL_TERRAINS: TerrainEntry[] = [
   ...china,
@@ -98,4 +99,5 @@ export const ALL_TERRAINS: TerrainEntry[] = [
   ...bulgaria,
   ...uzbekistan,
   ...lithuania,
+  ...uae,
 ];
