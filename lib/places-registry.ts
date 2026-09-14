@@ -420,6 +420,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "romania", nameZh: "罗马尼亚", nameEn: "Romania" },
   { country: "bulgaria", nameZh: "保加利亚", nameEn: "Bulgaria" },
   { country: "uzbekistan", nameZh: "乌兹别克斯坦", nameEn: "Uzbekistan" },
+  { country: "lithuania", nameZh: "立陶宛", nameEn: "Lithuania" },
 ];
 
 /** 城市按国家存放在 lib/content/<country>/cities.ts，这里是合并结果（顺序与 CONTENT_COUNTRIES 一致）。 */
@@ -475,6 +476,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   romania: "europe",
   bulgaria: "europe",
   uzbekistan: "asia",
+  lithuania: "europe",
   chile: "south-america",
 };
 
