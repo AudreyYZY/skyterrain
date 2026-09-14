@@ -46,6 +46,7 @@ import { POIS as chile } from "@/lib/content/chile/pois";
 import { POIS as latvia } from "@/lib/content/latvia/pois";
 import { POIS as romania } from "@/lib/content/romania/pois";
 import { POIS as bulgaria } from "@/lib/content/bulgaria/pois";
+import { POIS as uzbekistan } from "@/lib/content/uzbekistan/pois";
 
 export const ALL_POIS: Record<string, CityPoi[]> = {
   ...china,
@@ -94,4 +95,5 @@ export const ALL_POIS: Record<string, CityPoi[]> = {
   ...latvia,
   ...romania,
   ...bulgaria,
+  ...uzbekistan,
 };
