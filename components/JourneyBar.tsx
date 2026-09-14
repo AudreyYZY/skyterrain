@@ -89,6 +89,7 @@ export default function JourneyBar({
       <button
         key={route.id}
         type="button"
+        data-testid={`route-card-${route.id}`}
         onClick={() => pickRoute(route)}
         className={[
           "flex w-full flex-col rounded-lg border p-2.5 text-left transition-colors",
@@ -161,6 +162,7 @@ export default function JourneyBar({
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
+            data-testid="journey-toggle"
             className="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg px-2 py-1.5 text-left transition-colors hover:bg-white/[0.04]"
           >
             <span className="shrink-0 text-[color:var(--accent)]">✈</span>
@@ -192,6 +194,7 @@ export default function JourneyBar({
             <button
               type="button"
               onClick={() => (flyingThis ? onStop() : onStart(selected))}
+              data-testid="journey-start"
               disabled={preparing && !flyingThis}
               className={[
                 "shrink-0 rounded-full border px-3.5 py-1.5 text-[11px] font-medium transition-colors disabled:opacity-40",
@@ -217,6 +220,7 @@ export default function JourneyBar({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={t("journey.search", language)}
+              data-testid="journey-search"
               className="mb-2.5 w-full rounded-lg border border-[color:var(--hairline)] bg-white/[0.03] px-3 py-1.5 text-[12px] text-[color:var(--ink)] placeholder:text-[color:var(--ink-faint)] focus:border-[color:var(--accent-line)] focus:outline-none"
             />
 

@@ -149,6 +149,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const onReadyRef = useRef(onReady);
     onReadyRef.current = onReady;
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
+    /** 地球初始化完成之前被调用的动作用它等 viewer（轮询，最多 timeoutMs） */
+    const waitForViewer = async (timeoutMs: number): Promise<import("cesium").Viewer | null> => {
+      const t0 = Date.now();
+      while (Date.now() - t0 < timeoutMs) {
+        const v = viewerRef.current;
+        if (v && !v.isDestroyed()) return v;
+        await sleep(100);
+      }
+      return null;
+    };
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
@@ -435,10 +445,17 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
       flyRoute(route: FlightRoute, callbacks: RouteFlyCallbacks) {
         flightCancelledRef.current = false;
-        const viewer = viewerRef.current;
-        if (!viewer) return;
 
         void import("cesium").then(async (Cesium) => {
+          // 地球还没初始化完就点了「开始飞行」（慢网络 / 慢设备首屏要十几秒）：原来这里直接 return，
+          // 界面停在「航线加载中…」再也不动（2026-09-14 浏览器自动化测试复现）。现在等地球就绪，
+          // 等不到（60 秒）就按取消处理，把界面状态还原。
+          const viewer = viewerRef.current ?? (await waitForViewer(60_000));
+          if (!viewer || flightCancelledRef.current) {
+            setRoutePreparing(false);
+            callbacks.onCancelled?.();
+            return;
+          }
           const waypoints = resolveRouteWaypoints(route);
           if (waypoints.length < 2) return;
 

@@ -232,6 +232,7 @@ export default function ContinentIntro({
 
         <button
           type="button"
+          data-testid="intro-enter"
           onClick={enter}
           className={[
             "mt-8 inline-flex items-center gap-2 rounded-full px-6 py-2.5",
