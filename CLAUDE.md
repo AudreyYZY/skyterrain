@@ -102,7 +102,7 @@ lib/
   subregion-geo.ts       — 每个次区域的地形数量与地理重心（由 terrain-registry 派生，供顶栏二级下拉飞行）
   terrain-tier.ts        — terrainTier(id) → T1/T2/T3（由标签重要性派生）+ categoryOrder（目录排序用）
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
-  terrain-content.{zh,en}.ts — 权威 6 板块讲解内容（中/英）；terrain-content.ts = 索引
+  terrain-content.{zh,en}.ts — 6 板块讲解的合并导出（正文在 lib/content/<country>/terrain.{zh,en}.ts）；terrain-content.ts = 界面按国家懒加载
   terrain-lesson.ts      — resolveLesson(id, lang)：一处决定用哪份讲解（内容→stories→兜底）
   terrain-label-registry.ts — 标签（由 terrain-registry 生成，含 nameEn）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
@@ -112,7 +112,9 @@ lib/
                            getRouteNarration(id, lang, mode)；CesiumMap.flyRoute 播放
   app-mode.ts            — AppMode 类型 + getStoredMode/setStoredMode（localStorage fge-app-mode）
   places-registry.ts     — 【旅游模式单一真实源】城市 CityEntry（经纬度/tier/机场）+ 国家概览
-  travel-content.{zh,en}.ts — 【旅游模式】城市 / 国家概览的 6 段 TravelGuide 中英内容
+  travel-content.{zh,en}.ts — 【旅游模式】攻略合并导出（正文在 lib/content/<country>/travel.{zh,en}.ts）
+  content/<country>/     — **内容按国家分目录**（2026-09-14）：registry / terrain.zh / terrain.en / cities / travel.zh / travel.en / pois / routes，
+                           合并索引由 npm run gen:content 生成到 content/_generated/，check:content 守着（见下方「内容目录」）
   travel-lesson.ts       — TravelGuide 类型 + resolveTravelGuide(id, lang) + travelGuideToSections
   travel-rail.ts         — 旅游模式左侧目录（当前大洲下按国家分组）
   travel-speak.ts        — 旅游攻略分段合成 + 预取播报编排（首段先出声）
@@ -135,9 +137,10 @@ features/
 纪录片编辑式界面。
 
 **多国扩展进行中**：新增一个国家的地形（学习模式）=
-① `lib/terrain-registry.ts` 加条目（`regionId` 填大洲、`country` 填国家 slug）
+⓪ `lib/content/countries.ts` 末尾加国家 slug、建 `lib/content/<country>/`，写完跑 `npm run gen:content`
+① `lib/content/<country>/registry.ts` 加条目（`regionId` 填大洲、`country` 填国家 slug）
 ②该大洲若此前 `available:false` → 改 true；`terrainCount` 由 `check-regions.ts` 核对
-③`lib/terrain-content.{zh,en}.ts` 写双语 6 板块 ④`lib/terrain-label-registry.ts`
+③`lib/content/<country>/terrain.{zh,en}.ts` 写双语 6 板块 ④`lib/terrain-label-registry.ts`
 `IMPORTANCE_BY_ID` 只对特别重要的补（默认已是 regional）
 ⑤`check-terrain-camera.ts` + `check-regions.ts` 通过。
 
@@ -146,7 +149,7 @@ features/
 `seeing 概述` → `formation 地貌特征` → `observation 从空中怎么看` →
 `distinguish 与相似地形的区分` → `concept 地理知识（为何算这类地形/常见误区）` →
 `history 历史与人文`。
-内容写在 `lib/terrain-content.{zh,en}.ts`（`getTerrainContent(id, lang)`，按注册表 id 索引），
+内容写在 `lib/content/<country>/terrain.{zh,en}.ts`（`getTerrainContent(id, lang)` 按注册表 id 找到国家再懒加载该国一份），
 依据中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
 等公认地理事实总结，非文学化旁白、非凭空生成。
 **已逐句核源（Block D，2026-08）**：中国 39 + 澳大利亚 22 = 61 篇双语。
@@ -172,7 +175,7 @@ features/
 - **旅游播报（`lib/travel-speak.ts`）**：分段合成 + 预取管线（播第 i 段时合成第 i+1 段），
   首段先出声，不等整篇。`useSentenceHighlight` 逐句高亮（`startHighlightWithTiming` 带 `baseIndex`，
   无 word boundary 时 `startHighlightChunkEstimated` 估时）。按钮有"准备语音…"态（`ReadingPanel.isPreparing`）。
-- **旅游 POI 标注**：`lib/travel-pois.ts`（每城市攻略提到的地标概略坐标）+ `TravelPoiMarkers`：
+- **旅游 POI 标注**：`lib/content/<country>/pois.ts`（每城市攻略提到的地标概略坐标，`lib/travel-pois.ts` 合并导出）+ `TravelPoiMarkers`：
   选中城市时在地图上标机场（✈）+ 地标。只是静态标注，不做与播报同步的高亮（文本↔坐标匹配不可靠）。
   **之后每个国家的旅游模式都要保持这套行为一致。**
 - **航线**：一条航线两套解说，跟随当前 `mode`（`getRouteNarration(id, lang, mode)`）；
@@ -186,7 +189,7 @@ features/
   航权航线、经停布加勒斯特的同机号航线），如实标注缺口未收录，不编造经停航班冒充直飞。
   完成标准与分批记录见 `docs/expansion-playbook.md` §6.3。
 - **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
-  加城市 + `COUNTRY_TO_CONTINENT` 补映射 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide +
+  加城市（`lib/content/<country>/cities.ts`）+ `COUNTRY_TO_CONTINENT` 补映射 + `lib/content/<country>/travel.{zh,en}.ts` 写 7 段 TravelGuide +
   `COUNTRY_OVERVIEWS` 加概览 + `travel-pois.ts` 补该城市攻略提到的地标坐标。
   自检 `node --experimental-strip-types scripts/check-places.ts`（城市坐标/IATA/来源/双语内容齐全）。
 - **进度**：
@@ -425,6 +428,33 @@ features/
   官方地名机构 / UNESCO / 官方统计或旅游机构）；地名用中性通用名、有并用名以事实并列、
   不表述主权；`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → 删或换中性表述。
 - 广度优先：先把注册表 + 双语 6 板块写全；真实边界多边形、相机逐个精校之后再补。
+
+## 内容目录（按国家，2026-09-14 拆分）
+
+拆分前七个内容文件合计十万行（地形讲解中英各 1.9 万、城市攻略各 1.65 万、地形注册表 1.8 万……），
+每加一个国家往中段插几百行，插错位置就把后面条目吞进上一条。现在：
+
+- `lib/content/countries.ts` 的 `CONTENT_COUNTRIES` 决定各国在 `TERRAIN_REGISTRY` / `CITY_REGISTRY` 里的先后；
+- `lib/content/<country>/` 最多 8 个文件：`registry.ts`（`TERRAINS`）、`terrain.zh.ts` / `terrain.en.ts`（`TERRAIN_ZH/EN`）、
+  `cities.ts`（`CITIES`）、`travel.zh.ts` / `travel.en.ts`（`TRAVEL_ZH/EN`）、`pois.ts`（`POIS`）、`routes.ts`（`ROUTES`，
+  **国内线放本国、国际线放非中国一侧的国家**）；
+- `npm run gen:content` 生成 `lib/content/_generated/`（同步合并 + 按国家懒加载表），**不要手改**；
+  `npm run check:content`（已在 `npm run check` 里）拦住：生成文件没重跑、条目放错国家、id 跨国重复；
+- 原来的 `lib/terrain-content.{zh,en}.ts`、`lib/travel-content.{zh,en}.ts`、`lib/route-narration.ts`、
+  `lib/travel-pois.ts`、`TERRAIN_REGISTRY`、`CITY_REGISTRY` 仍是合并导出，脚本与 import 不变；
+  界面打开一篇讲解 / 攻略**只下载该国一份**；
+- 按文本改内容的工具（`verify:apply-text`、`scripts/verify/mkfindings.py`、`gen:verify-status`、`sample:claims`）
+  都按条目 id 找所在国家文件；新脚本要按文本读内容时用 `scripts/lib/content-files.ts`。
+- ⚠️ `sample:claims` 的样本池顺序随拆分改变：seed=1..11 的结果以 `docs/quality-sampling.md` 的记录为准，拆分后从 seed=12 起。
+
+## 浏览器测试（2026-09-14）
+
+- `npm run test:e2e`（Playwright，`e2e/smoke.spec.ts`）：学习讲解按国家懒加载、中英切换正文跟着换、旅游攻略、
+  航线镜头等解说开口。语音一律 mock，不依赖 Edge TTS。
+- 本机默认用已安装的 Google Chrome；先 `npm run build`，或设 `E2E_BASE_URL=http://localhost:3000` 连正在跑的 dev server
+  （**测试期间不要改 components/ 下的文件**，热更新会让地球重载、测试超时）。CI 里 `e2e` job 自动跑。
+- 关键 UI 带 `data-testid`（`intro-enter` / `region-*` / `rail-toggle` / `rail-search` / `rail-result` / `reading-title` /
+  `reading-article` / `mode-*` / `language-toggle` / `journey-*` / `route-card-*` / `flyover-name` …），改组件时保留。
 
 ## Camera 推导链路
 
