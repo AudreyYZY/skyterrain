@@ -3,22 +3,24 @@ import type { TravelGuide } from "@/lib/travel-lesson";
 export const TRAVEL_EN: Record<string, TravelGuide> = {
   // ============ Turkey ============
   "turkey-overview": {
+    // 回扫 sources（2026-09-15 核实，非人口六段回扫，content-verifier）: layout / culture：七大地理区域、本指南涉及五个；小费比例只查到 3 级且与原写 10–15% 不符，改为不给比例（规则 ⑪，同改 11 个条目）
     // identity sources: TÜİK《Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları, 2025》：2025-12-31 地址登记人口 86,092,168 人。https://veriportali.tuik.gov.tr/tr/press/53899
     //   核实日 2026-09-07，来源级别 1
     identity:
       "Turkey straddles Europe and Asia, covering about 780,000 km² with a registered population of about 86.09 million at the end of 2025 (Turkish Statistical Institute); its capital is Ankara, its largest city Istanbul, its official language Turkish, and its currency the Turkish lira (TRY).",
     layout:
-      "The country is broadly divided into five regions: Marmara (Istanbul/Bursa, straddling the Bosphorus at the Europe-Asia crossing), the Aegean (Izmir/Bodrum/Pamukkale, deeply indented bays and Greco-Roman ruins), the Mediterranean (Antalya, the 'Turkish Riviera'), Central Anatolia (Ankara/Konya/Cappadocia, plateau and volcanic-ash terrain), and the Black Sea (Trabzon, rainy mountainous coast).",
+      "Turkey officially has seven geographical regions, and this guide covers five of them: Marmara (Istanbul/Bursa, straddling the Bosphorus at the Europe-Asia crossing), the Aegean (Izmir/Bodrum/Pamukkale, deeply indented bays and Greco-Roman ruins), the Mediterranean (Antalya, the 'Turkish Riviera'), Central Anatolia (Ankara/Konya/Cappadocia, plateau and volcanic-ash terrain), and the Black Sea (Trabzon, rainy mountainous coast).",
     gettingAround:
       "Domestic flights are the main way to travel between regions, with Turkish Airlines, Pegasus and AJet covering all major cities; Istanbul has an extensive metro, tram and ferry network, and long-distance buses are well developed nationwide. Climate varies sharply north to south: the Mediterranean and Aegean coasts have hot, dry summers and mild winters, the Central Anatolian Plateau has cold winters, hot summers and large day-night swings, and the Black Sea coast is rainy year-round. Citizens of many countries can enter visa-free or with a visa on arrival for a set period — check the latest rules from Turkey's Ministry of Foreign Affairs before travel.",
     culture:
-      "Turkey is a secular republic with a Turkic-speaking Muslim majority; the constitution mandates separation of religion and state, most residents follow Sunni Islam, and society is generally moderate and open — alcohol is legal and widely available. Eating or drinking in public during daylight hours in Ramadan is not against the law, but it is polite to be somewhat discreet out of respect for those fasting. Mosques require shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees; restaurant tips are typically 10–15% of the bill, left in cash or added to the check.",
+      "Turkey is a secular republic with a Turkic-speaking Muslim majority; the constitution mandates separation of religion and state, most residents follow Sunni Islam, and society is generally moderate and open — alcohol is legal and widely available. Eating or drinking in public during daylight hours in Ramadan is not against the law, but it is polite to be somewhat discreet out of respect for those fasting. Mosques require shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees; restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "Hagia Sophia and the Blue Mosque in Istanbul; hot-air ballooning over Cappadocia's fairy chimneys; the travertine terraces of Pamukkale; Antalya's Mediterranean coast and ancient ruins; the ancient city of Ephesus; and Konya's Mevlana Museum and whirling dervish ceremony.",
     whenAndTips:
       "April to June and September to October offer the most pleasant weather and are peak travel seasons; July and August bring high heat and crowds along the coasts, while the Central Anatolian Plateau can see large day-night temperature swings, so pack warm layers. Plan flights or long-distance buses ahead for cross-regional travel.",
   },
   istanbul: {
+    // 回扫 sources（2026-09-15 核实，非人口六段回扫，content-verifier）: whenAndTips：蓝色清真寺祈祷前后关闭约 1 小时、周五上午至约 14:30（访客须知 2 级）
     // howItWorks sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2 级）；下一期约 2027-02
     // identity sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2026-02-09 发布，经媒体转述，2 级）；下一期约 2027-02
     identity:
@@ -31,11 +33,11 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Istanbul Airport (IST) is about 35 km from the European-side city center; the city has an extensive metro, tram and ferry network, and crossing the strait by ferry or the Marmaray metro line is a convenient way to experience the city's geography.",
     culture:
-      "The official language is Turkish. At religious sites such as Hagia Sophia or the Blue Mosque, women should carry a headscarf and wear clothing covering the shoulders and knees, and both men and women must remove their shoes; visitors may look around outside prayer times but should stay quiet. Restaurant tips are typically 10–15% of the bill.",
+      "The official language is Turkish. At religious sites such as Hagia Sophia or the Blue Mosque, women should carry a headscarf and wear clothing covering the shoulders and knees, and both men and women must remove their shoes; visitors may look around outside prayer times but should stay quiet. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "Hagia Sophia (a dual witness to Byzantine and Ottoman architectural history); the Blue Mosque; Topkapı Palace (former residence of the Ottoman sultans); the Grand Bazaar (one of the world's oldest and largest covered markets); and Galata Tower for views over the Golden Horn and the Bosphorus.",
     whenAndTips:
-      "April to May and September to October offer the most pleasant weather with relatively fewer crowds; the Blue Mosque closes to visitors during its five daily prayer times (about 30 minutes each), so check the day's prayer schedule when planning your visit.",
+      "April to May and September to October offer the most pleasant weather with relatively fewer crowds; the Blue Mosque closes to visitors for roughly an hour around each of its five daily prayers and on Friday mornings until about 14:30, so check the day's prayer schedule when planning your visit.",
   },
   ankara: {
     // howItWorks sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2 级）；下一期约 2027-02
@@ -50,7 +52,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Esenboğa Airport (ESB) is about 25 km in a straight line from the city center; the city has a well-developed metro and bus network, providing convenient access to sites such as the Museum of Anatolian Civilizations.",
     culture:
-      "The official language is Turkish. As the administrative center, Ankara tends toward more formal dress and etiquette; religious sites still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
+      "The official language is Turkish. As the administrative center, Ankara tends toward more formal dress and etiquette; religious sites still require shoes off and headscarves for women. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "Anıtkabir (the solemn memorial complex housing the mausoleum of Atatürk, founder of the Republic of Turkey); Ankara Castle (an old hilltop fortress overlooking the city); and the Museum of Anatolian Civilizations (housing artifacts from the Hittites and other early Anatolian civilizations).",
     whenAndTips:
@@ -69,7 +71,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Adnan Menderes Airport (ADB) is about 15 km in a straight line from the city center; the city has metro and light-rail networks, and reaching the ancient city of Ephesus usually means taking a train or bus to the nearby town of Selçuk, about an hour away.",
     // culture sources: ⚠️ 零争议红线（D-redline）：identity 与 culture 两段原本都写了「相对世俗开放 / 世俗化程度较高」——对土耳其国内城市在世俗／宗教轴上做比较评价，2026-09-10 一并删除，换成不带评价的城市事实。
     culture:
-      "The official language is Turkish. Izmir has a relaxed coastal resort-and-trade atmosphere and casual everyday dress; mosques still require the basic etiquette of shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
+      "The official language is Turkish. Izmir has a relaxed coastal resort-and-trade atmosphere and casual everyday dress; mosques still require the basic etiquette of shoes off and headscarves for women. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "The Kordon waterfront promenade (a favorite spot for sunset views and dining); Kadifekale Castle; the Agora of Smyrna; and a day trip from Izmir to the ancient city of Ephesus, a major Greco-Roman city-state site.",
     whenAndTips:
@@ -87,7 +89,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Antalya Airport (AYT) is about 7.8 km in a straight line from the city center and one of Turkey's main international air gateways on the Mediterranean coast; the city has a light-rail and bus network, and reaching surrounding ruins such as the Aspendos Theatre usually requires a private car or a local tour.",
     culture:
-      "The official language is Turkish. As one of Turkey's most important international tourism cities, Antalya has relatively relaxed dress norms and swimwear is generally acceptable on the beaches; mosques still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill, and resorts may already include a service charge.",
+      "The official language is Turkish. As one of Turkey's most important international tourism cities, Antalya has relatively relaxed dress norms and swimwear is generally acceptable on the beaches; mosques still require shoes off and headscarves for women. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "The Kaleiçi old town and Hadrian's Gate; Konyaaltı Beach; the Düden Waterfalls; the Aspendos Theatre (one of the best-preserved Roman theatres); and day trips from Antalya to nearby ancient sites such as Perge.",
     whenAndTips:
@@ -105,7 +107,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Nevşehir Kapadokya Airport (NAV) is about 40 km from Göreme, and Kayseri Airport (ASR) about 69 km away — either can serve as a gateway; the towns within the region are close together, and most visitors get around by private car, local shuttle bus, or transfers arranged by balloon companies.",
     culture:
-      "The official language is Turkish. The region's tourism industry is well developed and most operators are accustomed to international visitors; stay quiet and avoid touching frescoes at rock-cut churches and other religious-historical sites. Before booking a balloon flight, check the operator's credentials and safety record; restaurant tips are typically around 10% of the bill.",
+      "The official language is Turkish. The region's tourism industry is well developed and most operators are accustomed to international visitors; stay quiet and avoid touching frescoes at rock-cut churches and other religious-historical sites. Before booking a balloon flight, check the operator's credentials and safety record; restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "A sunrise hot-air balloon flight over the fairy-chimney landscape; the Göreme Open Air Museum (Byzantine rock-cut churches and frescoes); Uçhisar Castle for panoramic views; the fairy chimneys of Paşabağı; and the underground city of Derinkuyu.",
     whenAndTips:
@@ -123,24 +125,25 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Milas–Bodrum Airport (BJV) is about 32 km in a straight line from the town center; taxis, rental cars and ferries are the main ways to get around, and reaching other resort towns on the peninsula usually requires driving or a local bus.",
     culture:
-      "The official language is Turkish. Bodrum is one of Turkey's more internationally minded resort towns with relatively relaxed dress norms; mosques still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
+      "The official language is Turkish. Bodrum is one of Turkey's more internationally minded resort towns with relatively relaxed dress norms; mosques still require shoes off and headscarves for women. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "Bodrum Castle (Castle of St. Peter, former home of the underwater archaeology museum); the Ancient Theatre of Halicarnassus; the Bodrum Windmills (a favorite sunset spot); and a traditional wooden gulet cruise around the surrounding bays.",
     whenAndTips:
       "May to October is Bodrum's peak season; July and August are hot but bring the liveliest beach atmosphere. Book gulet day trips in advance and try to head out before the midday heat.",
   },
   pamukkale: {
+    // 回扫 sources（2026-09-15 核实，非人口六段回扫，content-verifier）: howItWorks：台地旅馆与公路拆除年代查不到一手来源，删去「20 世纪 90 年代」
     identity:
       "Pamukkale ('Cotton Castle') is a geothermal landscape in southwestern Turkey renowned for its brilliant white travertine terraces, located in Denizli Province; together with the hilltop ancient city of Hierapolis it forms a UNESCO World Heritage site.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pamukkale (Turkey; in Denizli Province, the name meaning cotton castle; travertine terraces deposited by mineral water from hot springs, with 17 springs ranging from about 35 °C to 100 °C; the ancient Greek city of Hierapolis built above the terraces as a thermal spa, with theatre and necropolis, important in the Phrygian, Roman and Byzantine periods and an early Christian centre; Hierapolis-Pamukkale inscribed by UNESCO in 1988 for both cultural and natural value; over two million visitors a year, with UNESCO and local authorities regulating water flow and closing sections in turn to let the formations regenerate)
     howItWorks:
-      "Pamukkale lies in Denizli Province in Turkey and its name means cotton castle; Denizli is run as a metropolitan municipality whose boundary matches the province, with local affairs handled at metropolitan and district level. The white terraces are made by water: seventeen springs rise on this slope at temperatures from about 35°C to near boiling, carrying dissolved calcium carbonate that precipitates as carbon dioxide escapes at the surface, building travertine terraces layer by layer — so this snow is stone, and still growing. Above the terraces stands the ancient Greek city of Hierapolis, built from the second century BC as a thermal spa, its theatre and vast necropolis still standing, and an important early Christian site. Hierapolis-Pamukkale was inscribed as World Heritage in 1988 for both cultural and natural value. To protect the travertine, the hotels and the road built on the terraces were removed in the 1990s, visitors now walk barefoot along one marked path, and the authorities close sections in rotation and regulate the flow of water so the deposits can recover. Newcomers most often go wrong by expecting to bathe anywhere, when only one marked line may be walked.",
+      "Pamukkale lies in Denizli Province in Turkey and its name means cotton castle; Denizli is run as a metropolitan municipality whose boundary matches the province, with local affairs handled at metropolitan and district level. The white terraces are made by water: seventeen springs rise on this slope at temperatures from about 35°C to near boiling, carrying dissolved calcium carbonate that precipitates as carbon dioxide escapes at the surface, building travertine terraces layer by layer — so this snow is stone, and still growing. Above the terraces stands the ancient Greek city of Hierapolis, built from the second century BC as a thermal spa, its theatre and vast necropolis still standing, and an important early Christian site. Hierapolis-Pamukkale was inscribed as World Heritage in 1988 for both cultural and natural value. To protect the travertine, the hotels and the road built on the terraces were later removed, visitors now walk barefoot along one marked path, and the authorities close sections in rotation and regulate the flow of water so the deposits can recover. Newcomers most often go wrong by expecting to bathe anywhere, when only one marked line may be walked.",
     layout:
       "The Pamukkale terraces sit about 20 km north of the city of Denizli, with the ruins of Hierapolis atop the terrace and the town of Pamukkale at the foot of the hill providing accommodation and dining for visitors.",
     gettingAround:
       "Denizli Çardak Airport (DNZ) is about 65 km from Pamukkale; taxis and local buses are the main way to get around, and a minibus from central Denizli to Pamukkale takes about 30 to 40 minutes.",
     culture:
-      "The official language is Turkish. Visitors must walk barefoot in the travertine pools to protect the geological formations, and some areas get crowded, so arriving early helps avoid tour groups. Restaurant tips are typically around 10% of the bill.",
+      "The official language is Turkish. Visitors must walk barefoot in the travertine pools to protect the geological formations, and some areas get crowded, so arriving early helps avoid tour groups. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "The Pamukkale travertine terraces (walking barefoot through the stepped thermal pools); the ruins of ancient Hierapolis (Roman baths, a theatre and necropolis); and Cleopatra's Antique Pool (said to be where Cleopatra once bathed, open for a paid swim).",
     whenAndTips:
@@ -160,7 +163,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Trabzon Airport (TZX) is about 6.2 km in a straight line from the city center; taxis and buses are the main way to get around the city, while reaching Sümela Monastery or Uzungöl usually requires a private car or local tour, each about 1 to 2 hours away.",
     culture:
-      "The official language is Turkish, and the local Black Sea dialect and customs are distinctive. The Black Sea coast around Trabzon is generally humid and rainy, so pack rain gear; mosques still require shoes off and headscarves for women. Restaurant tips are typically around 10% of the bill.",
+      "The official language is Turkish, and the local Black Sea dialect and customs are distinctive. The Black Sea coast around Trabzon is generally humid and rainy, so pack rain gear; mosques still require shoes off and headscarves for women. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "Sümela Monastery (a Byzantine-era Greek Orthodox monastery built into a cliff face); the Hagia Sophia of Trabzon (with surviving Byzantine frescoes); the Atatürk Kiosk; and Lake Uzungöl (a mountain lake in the Black Sea highlands, ringed with trout restaurants).",
     whenAndTips:
@@ -181,19 +184,20 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Konya Airport (KYA) is about 18 km by road from the city center; the city has a light-rail and bus network, and reaching surrounding archaeological sites such as Çatalhöyük usually requires a private car or local tour.",
     culture:
-      "The official language is Turkish. Konya is one of Turkey's more religiously conservative cities, so relatively modest dress is advisable; shoes must be removed at the Mevlana Museum and mosques, and women should carry a headscarf. Restaurant tips are typically around 10% of the bill.",
+      "The official language is Turkish. Konya is one of Turkey's more religiously conservative cities, so relatively modest dress is advisable; shoes must be removed at the Mevlana Museum and mosques, and women should carry a headscarf. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "The Mevlana Museum (Rumi's tomb and a collection of Mevlevi Order artifacts); a whirling dervish (Sema) ceremony, held regularly or during Rumi's annual December commemoration week; the Alaeddin Mosque; and the İnce Minaret Museum, a showcase of Seljuk architecture.",
     whenAndTips:
       "A formal whirling dervish ceremony can be seen during Rumi's death-anniversary commemoration week (Şeb-i Arus) in mid-December, though it draws crowds and tickets should be booked ahead; April to June and September to October offer the most pleasant travel weather.",
   },
   bursa: {
+    // 回扫 sources（2026-09-15 核实，非人口六段回扫，content-verifier）: identity / whenAndTips：迁都埃迪尔内年份多说，写 1360 年代；渡轮到达港为古泽尔亚勒（近穆丹亚）或班德尔马，耶尼卡帕是伊斯坦布尔一侧出发码头
     // 零改动留痕（2026-09-10）：howItWorks 段全篇没有写人口数字，与其余五城的体例不一致，但**不是错误**，本轮不补——
     //   补数字要连口径一起写，等下一轮连同布尔萨城区口径（三个中心区）一起查清再补。
     //   1326 年攻取、1360 年代迁都埃迪尔内、2014 年「布尔萨与朱马勒克兹克：奥斯曼帝国的诞生」列入 UNESCO：均核实无误。
     // identity sources: 人口：原文 216 万**量级就不对**——TÜİK 2025 布尔萨省 3,263,011。216 万接近三个中心区的城区规模，属把城区数当全市数用（C6-c）。「第四大」按省人口排名成立（伊斯坦布尔、安卡拉、伊兹密尔之后）。2 级转引 TÜİK。2026-09-10 核。
     identity:
-      "Bursa is Turkey's fourth-largest city, with a provincial population of over 3.26 million in 2025 (TÜİK; the province matches the metropolitan boundary), and was the first capital of the Ottoman Empire (1326–1365); known as 'Green Bursa' for its many mosques and its proximity to the Uludağ ski resort.",
+      "Bursa is Turkey's fourth-largest city, with a provincial population of over 3.26 million in 2025 (TÜİK; the province matches the metropolitan boundary), and was the first capital of the Ottoman Empire (1326 to the 1360s); known as 'Green Bursa' for its many mosques and its proximity to the Uludağ ski resort.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bursa (Turkey; city and capital of Bursa Province, the fourth most populous city in Turkey and second in the Marmara Region after Istanbul; captured from the Byzantines in 1326 and the capital of the early Ottoman state until the 1360s, when the capital moved to Edirne; Bursa and Cumalıkızık: the Birth of the Ottoman Empire, UNESCO World Heritage 2014; the Grand Mosque with twenty domes in four rows of five, the Green Mosque and Green Tomb, the Koza Han silk market; Mount Uludağ above the city with skiing and thermal springs used since Roman times; the largest production centre of the Turkish automotive industry with Fiat, Renault and Bosch, plus textiles and food; called Yeşil Bursa, green Bursa)
     howItWorks:
       "Bursa is the capital of Bursa Province, the fourth most populous city in Turkey by population of its metropolitan municipality, and the second in the Marmara Region after Istanbul; Bursa is run as a metropolitan municipality whose boundary matches the province, with local affairs handled at metropolitan and district level. Ottoman forces took the city from the Byzantines in 1326, and until the 1360s it was the first major capital of the Ottoman state before the capital moved to Edirne; in 2014 Bursa and Cumalıkızık: the Birth of the Ottoman Empire was inscribed as World Heritage, covering the Grand Mosque, the Green Mosque and Green Tomb and the old village of Cumalıkızık on the slope. The Grand Mosque is roofed by twenty domes in four rows of five, and the Koza Han was the centre of the silk trade — Bursa was long the silk-weaving town at the western end of the Silk Road. The city presses against the northern slope of Mount Uludağ, which carries a ski area and a cable car, and its hot springs have been used since Roman times, so bathhouses and parks are many and the city calls itself green Bursa. Today it is the largest production centre of the Turkish automotive industry, with Fiat, Renault and Bosch plants. Newcomers most often go wrong by treating it as a day trip from Istanbul, when it is a large city of industry and heritage in its own right.",
@@ -202,10 +206,10 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Bursa Yenişehir Airport (YEI) is about 45 km from the city center, and many visitors instead take a sea ferry from Istanbul followed by a short drive; the city has a light-rail network, and a cable car runs directly to the top of Uludağ.",
     culture:
-      "The official language is Turkish. Visiting the Grand Mosque, the Green Mosque and other religious sites requires shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees. Restaurant tips are typically 10–15% of the bill.",
+      "The official language is Turkish. Visiting the Grand Mosque, the Green Mosque and other religious sites requires shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
       "The Grand Mosque (Ulu Cami, with 20 domes and a central fountain); the Green Mosque (an early Ottoman showcase decorated in blue-green tiles); Koza Han (a traditional silk market, and a good spot to try Bursa's İskender kebab); and the Uludağ cable car and ski resort.",
     whenAndTips:
-      "December to March is peak ski season on Uludağ; April to June and September to October bring pleasant weather well suited to exploring the old town's mosques. A high-speed ferry from Istanbul to Yenikapı or Bandırma followed by a short drive is usually faster than the full overland route.",
+      "December to March is peak ski season on Uludağ; April to June and September to October bring pleasant weather well suited to exploring the old town's mosques. A high-speed ferry from Istanbul's Yenikapı terminal to Güzelyalı (near Mudanya) or Bandırma, followed by a short drive, is usually faster than the full overland route.",
   },
 };
