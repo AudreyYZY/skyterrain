@@ -1,0 +1,126 @@
+import type { CityPoi } from "@/lib/places-registry";
+
+export const POIS: Record<string, CityPoi[]> = {
+  // ── 法国 ──
+  paris: [
+    { nameZh: "卢浮宫", nameEn: "Louvre", lon: 2.3376, lat: 48.8606, kind: "landmark" },
+    { nameZh: "埃菲尔铁塔", nameEn: "Eiffel Tower", lon: 2.2945, lat: 48.8584, kind: "landmark" },
+    { nameZh: "巴黎圣母院", nameEn: "Notre-Dame de Paris", lon: 2.3499, lat: 48.8530, kind: "landmark" },
+    { nameZh: "凯旋门", nameEn: "Arc de Triomphe", lon: 2.2950, lat: 48.8738, kind: "landmark" },
+    { nameZh: "蒙马特与圣心大教堂", nameEn: "Montmartre & Sacré-Cœur", lon: 2.3431, lat: 48.8867, kind: "landmark" },
+    { nameZh: "凡尔赛宫", nameEn: "Palace of Versailles", lon: 2.1204, lat: 48.8049, kind: "landmark" },
+    { nameZh: "奥赛博物馆", nameEn: "Musée d'Orsay", lon: 2.3266, lat: 48.8600, kind: "landmark" },
+  ],
+  lille: [
+    { nameZh: "大广场", nameEn: "Grand Place", lon: 3.0635, lat: 50.6367, kind: "district" },
+    { nameZh: "里尔美术馆", nameEn: "Palais des Beaux-Arts", lon: 3.0620, lat: 50.6280, kind: "landmark" },
+    { nameZh: "老城佛兰德式街区", nameEn: "Vieux-Lille", lon: 3.0610, lat: 50.6395, kind: "district" },
+    { nameZh: "旧证券交易所", nameEn: "Vieille Bourse", lon: 3.0625, lat: 50.6365, kind: "landmark" },
+  ],
+  strasbourg: [
+    { nameZh: "斯特拉斯堡主教座堂", nameEn: "Strasbourg Cathedral", lon: 7.7508, lat: 48.5819, kind: "landmark" },
+    { nameZh: "小法兰西区", nameEn: "La Petite France", lon: 7.7434, lat: 48.5800, kind: "district" },
+    { nameZh: "欧洲议会", nameEn: "European Parliament", lon: 7.7690, lat: 48.5975, kind: "landmark" },
+    { nameZh: "阿尔萨斯博物馆", nameEn: "Alsatian Museum", lon: 7.7500, lat: 48.5790, kind: "landmark" },
+    { nameZh: "科尔马（阿尔萨斯葡萄酒之路）", nameEn: "Colmar", lon: 7.3585, lat: 48.0794, kind: "district" },
+  ],
+  lyon: [
+    { nameZh: "富维耶圣母圣殿", nameEn: "Basilica of Notre-Dame de Fourvière", lon: 4.8226, lat: 45.7623, kind: "landmark" },
+    { nameZh: "老城与通道", nameEn: "Vieux Lyon & traboules", lon: 4.8272, lat: 45.7620, kind: "district" },
+    { nameZh: "罗马剧场遗址", nameEn: "Roman theatre", lon: 4.8195, lat: 45.7605, kind: "landmark" },
+    { nameZh: "半岛区中央广场", nameEn: "Presqu'île (Place Bellecour)", lon: 4.8320, lat: 45.7580, kind: "district" },
+    { nameZh: "美术博物馆", nameEn: "Musée des Beaux-Arts", lon: 4.8360, lat: 45.7670, kind: "landmark" },
+  ],
+  grenoble: [
+    { nameZh: "巴士底要塞缆车", nameEn: "Bastille cable car", lon: 5.7295, lat: 45.1965, kind: "nature" },
+    { nameZh: "多菲内博物馆", nameEn: "Musée Dauphinois", lon: 5.7280, lat: 45.1955, kind: "landmark" },
+    { nameZh: "格勒诺布尔美术馆", nameEn: "Musée de Grenoble", lon: 5.7290, lat: 45.1920, kind: "landmark" },
+    { nameZh: "韦科尔高原", nameEn: "Vercors plateau", lon: 5.5500, lat: 45.0500, kind: "nature" },
+    { nameZh: "埃克兰国家公园", nameEn: "Écrins National Park", lon: 6.3647, lat: 44.9217, kind: "nature" },
+  ],
+  marseille: [
+    { nameZh: "加尔德圣母圣殿", nameEn: "Notre-Dame de la Garde", lon: 5.3714, lat: 43.2842, kind: "landmark" },
+    { nameZh: "老港", nameEn: "Vieux-Port", lon: 5.3667, lat: 43.2951, kind: "district" },
+    { nameZh: "伊夫堡", nameEn: "Château d'If", lon: 5.3255, lat: 43.2799, kind: "landmark" },
+    { nameZh: "卡朗格国家公园", nameEn: "Calanques National Park", lon: 5.4400, lat: 43.2100, kind: "nature" },
+    { nameZh: "欧洲与地中海文明博物馆", nameEn: "MuCEM", lon: 5.3540, lat: 43.2960, kind: "landmark" },
+  ],
+  nice: [
+    { nameZh: "英国人散步大道", nameEn: "Promenade des Anglais", lon: 7.2570, lat: 43.6950, kind: "landmark" },
+    { nameZh: "老城与萨莱亚集市", nameEn: "Vieux Nice & Cours Saleya", lon: 7.2769, lat: 43.6959, kind: "district" },
+    { nameZh: "城堡山", nameEn: "Castle Hill", lon: 7.2820, lat: 43.6960, kind: "nature" },
+    { nameZh: "马蒂斯博物馆", nameEn: "Matisse Museum", lon: 7.2795, lat: 43.7205, kind: "landmark" },
+    { nameZh: "埃兹村", nameEn: "Èze", lon: 7.3620, lat: 43.7280, kind: "district" },
+    { nameZh: "摩纳哥", nameEn: "Monaco", lon: 7.4246, lat: 43.7384, kind: "district" },
+  ],
+  toulouse: [
+    { nameZh: "市政厅广场（Capitole）", nameEn: "Place du Capitole", lon: 1.4442, lat: 43.6045, kind: "district" },
+    { nameZh: "圣塞尔南教堂", nameEn: "Basilica of Saint-Sernin", lon: 1.4413, lat: 43.6089, kind: "landmark" },
+    { nameZh: "航空航天城", nameEn: "Cité de l'Espace", lon: 1.4995, lat: 43.5900, kind: "landmark" },
+    { nameZh: "米迪运河", nameEn: "Canal du Midi", lon: 1.4600, lat: 43.6100, kind: "nature" },
+  ],
+  bordeaux: [
+    { nameZh: "水镜广场", nameEn: "Miroir d'Eau", lon: -0.5710, lat: 44.8412, kind: "landmark" },
+    { nameZh: "圣安德烈大教堂", nameEn: "Bordeaux Cathedral", lon: -0.5760, lat: 44.8378, kind: "landmark" },
+    { nameZh: "波尔多葡萄酒城", nameEn: "La Cité du Vin", lon: -0.5540, lat: 44.8600, kind: "landmark" },
+    { nameZh: "圣埃美隆", nameEn: "Saint-Émilion", lon: -0.1560, lat: 44.8930, kind: "district" },
+    { nameZh: "皮拉大沙丘", nameEn: "Dune du Pilat", lon: -1.2130, lat: 44.5880, kind: "nature" },
+  ],
+  nantes: [
+    { nameZh: "布列塔尼公爵城堡", nameEn: "Château des Ducs de Bretagne", lon: -1.5490, lat: 47.2135, kind: "landmark" },
+    { nameZh: "机械岛（巨型机械大象）", nameEn: "Les Machines de l'île", lon: -1.5570, lat: 47.2035, kind: "landmark" },
+    { nameZh: "圣彼得-圣保罗大教堂", nameEn: "Cathedral of St Peter and St Paul", lon: -1.5510, lat: 47.2168, kind: "landmark" },
+    { nameZh: "圣纳泽尔（卢瓦尔河口）", nameEn: "Saint-Nazaire", lon: -2.2080, lat: 47.2735, kind: "nature" },
+  ],
+  ajaccio: [
+    { nameZh: "拿破仑故居博物馆", nameEn: "Napoleon's childhood home", lon: 8.7365, lat: 41.9200, kind: "landmark" },
+    { nameZh: "阿雅克肖大教堂", nameEn: "Ajaccio Cathedral", lon: 8.7380, lat: 41.9195, kind: "landmark" },
+    { nameZh: "帕拉塔角（热那亚塔）", nameEn: "Pointe de la Parata", lon: 8.6650, lat: 41.9080, kind: "nature" },
+    { nameZh: "桑基那里群岛", nameEn: "Sanguinaires Islands", lon: 8.5900, lat: 41.9200, kind: "nature" },
+    { nameZh: "皮亚纳红色花岗岩海岸", nameEn: "Calanques de Piana", lon: 8.6330, lat: 42.2440, kind: "nature" },
+  ],
+
+  // ── 法国 批2（2026-09-05）──
+  annecy: [
+    { nameZh: "老城与蒂乌河运河", nameEn: "Old Town & Thiou Canals", lon: 6.1270, lat: 45.8990, kind: "district" },
+    { nameZh: "岛宫", nameEn: "Palais de l'Isle", lon: 6.1260, lat: 45.8985, kind: "landmark" },
+    { nameZh: "安纳西城堡", nameEn: "Château d'Annecy", lon: 6.1250, lat: 45.8975, kind: "landmark" },
+    { nameZh: "湖滨欧洲花园与爱之桥", nameEn: "Jardins de l'Europe & Pont des Amours", lon: 6.1330, lat: 45.9000, kind: "nature" },
+    { nameZh: "塞姆诺兹山", nameEn: "Le Semnoz", lon: 6.1000, lat: 45.8000, kind: "nature" },
+  ],
+  avignon: [
+    { nameZh: "教皇宫", nameEn: "Palais des Papes", lon: 4.8075, lat: 43.9510, kind: "landmark" },
+    { nameZh: "圣贝内泽桥（阿维尼翁桥）", nameEn: "Pont Saint-Bénézet", lon: 4.8050, lat: 43.9540, kind: "landmark" },
+    { nameZh: "岩石公园", nameEn: "Rocher des Doms", lon: 4.8080, lat: 43.9530, kind: "nature" },
+    { nameZh: "钟楼广场", nameEn: "Place de l'Horloge", lon: 4.8060, lat: 43.9495, kind: "district" },
+    { nameZh: "阿维尼翁 TGV 站", nameEn: "Avignon TGV Station", lon: 4.7860, lat: 43.9210, kind: "transport" },
+  ],
+  montpellier: [
+    { nameZh: "喜剧广场", nameEn: "Place de la Comédie", lon: 3.8800, lat: 43.6085, kind: "district" },
+    { nameZh: "埃居松老城", nameEn: "L'Écusson (Old Town)", lon: 3.8760, lat: 43.6110, kind: "district" },
+    { nameZh: "佩鲁广场与圣克莱芒水渠", nameEn: "Promenade du Peyrou & Aqueduct", lon: 3.8700, lat: 43.6115, kind: "landmark" },
+    { nameZh: "安提戈涅区", nameEn: "Antigone District", lon: 3.8900, lat: 43.6070, kind: "district" },
+    { nameZh: "帕拉瓦莱弗洛海滩", nameEn: "Palavas-les-Flots Beach", lon: 3.9300, lat: 43.5280, kind: "nature" },
+  ],
+  reims: [
+    { nameZh: "兰斯主教座堂", nameEn: "Reims Cathedral", lon: 4.0340, lat: 49.2538, kind: "landmark" },
+    { nameZh: "托宫", nameEn: "Palais du Tau", lon: 4.0345, lat: 49.2530, kind: "landmark" },
+    { nameZh: "圣雷米修道院", nameEn: "Basilica of Saint-Remi", lon: 4.0420, lat: 49.2430, kind: "landmark" },
+    { nameZh: "香槟酒窖（泰廷哲·波默里一带）", nameEn: "Champagne Cellars (Taittinger, Pommery)", lon: 4.0440, lat: 49.2400, kind: "landmark" },
+    { nameZh: "兰斯站", nameEn: "Reims Station", lon: 4.0240, lat: 49.2590, kind: "transport" },
+  ],
+  colmar: [
+    { nameZh: "小威尼斯", nameEn: "Petite Venise", lon: 7.3580, lat: 48.0740, kind: "district" },
+    { nameZh: "恩特林登博物馆", nameEn: "Unterlinden Museum", lon: 7.3560, lat: 48.0795, kind: "landmark" },
+    { nameZh: "巴托尔迪博物馆", nameEn: "Musée Bartholdi", lon: 7.3590, lat: 48.0775, kind: "landmark" },
+    { nameZh: "人头屋与老城", nameEn: "Maison des Têtes & Old Town", lon: 7.3580, lat: 48.0780, kind: "district" },
+    { nameZh: "科尔马站", nameEn: "Colmar Station", lon: 7.3470, lat: 48.0730, kind: "transport" },
+  ],
+  rouen: [
+    { nameZh: "鲁昂主教座堂", nameEn: "Rouen Cathedral", lon: 1.0950, lat: 49.4400, kind: "landmark" },
+    { nameZh: "老集市广场（圣女贞德）", nameEn: "Place du Vieux-Marché (Joan of Arc)", lon: 1.0870, lat: 49.4430, kind: "landmark" },
+    { nameZh: "大钟楼", nameEn: "Gros-Horloge", lon: 1.0900, lat: 49.4420, kind: "landmark" },
+    { nameZh: "圣女贞德历史馆", nameEn: "Historial Jeanne d'Arc", lon: 1.0930, lat: 49.4405, kind: "landmark" },
+    { nameZh: "鲁昂右岸站", nameEn: "Rouen-Rive-Droite Station", lon: 1.0940, lat: 49.4490, kind: "transport" },
+  ],
+};

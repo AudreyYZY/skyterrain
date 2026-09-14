@@ -21,6 +21,7 @@
  * ⚠️ **不要用它来「挑」样本**。抽到难核的、抽到自己没把握的，照样要核、照样要记进去 ——
  * 一旦开始换样本，这个数字就和覆盖率一样没有意义了。
  */
+import { contentFiles } from "./lib/content-files.ts";
 import { readFileSync } from "node:fs";
 
 const arg = (k: string, d: string) =>
@@ -33,10 +34,15 @@ const KIND = arg("kind", "all");
 const CHECKABLE =
   /(\d{3,4}\s*年|[\d][\d.,]*\s*(?:米|公里|平方公里|万|亿|人|%|％)|最[一-龥]|唯一|第[一二三四五六七八九十]|列入|设立|始建|建于)/;
 
+/**
+ * ⚠️ 2026-09-14 内容按国家拆分之后，样本池的**遍历顺序**变了（按 CONTENT_COUNTRIES 逐国读），
+ * 所以 seed=1..11 在拆分后重跑抽到的句子与当时记录的不同 —— 当时的结果以 docs/quality-sampling.md 的记录为准，
+ * 拆分后的种子从 12 开始，同一个种子照样永远抽出同一批。
+ */
 const SOURCES: [string, string][] = [
-  ["terrain", "lib/terrain-content.zh.ts"],
-  ["travel", "lib/travel-content.zh.ts"],
-  ["route", "lib/route-narration.ts"],
+  ...contentFiles("terrain.zh").map((p): [string, string] => ["terrain", p]),
+  ...contentFiles("travel.zh").map((p): [string, string] => ["travel", p]),
+  ...contentFiles("routes").map((p): [string, string] => ["route", p]),
 ];
 
 type Claim = { kind: string; entry: string; sentence: string };

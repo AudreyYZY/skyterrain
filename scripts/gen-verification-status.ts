@@ -19,10 +19,11 @@
  * 用法：npm run gen:verify-status（改了内容文件的 sources 注释之后重跑）
  */
 import { readFileSync, writeFileSync } from "node:fs";
+import { contentFiles } from "./lib/content-files.ts";
 
 const SOURCES: [string, string][] = [
-  ["terrain", "lib/terrain-content.zh.ts"],
-  ["travel", "lib/travel-content.zh.ts"],
+  ...contentFiles("terrain.zh").map((p): [string, string] => ["terrain", p]),
+  ...contentFiles("travel.zh").map((p): [string, string] => ["travel", p]),
 ];
 
 const DATE = /(?:核实\s*|checked\s*)?(20\d\d-\d\d-\d\d)\s*(?:核|核实|verified)?|核实\s*(20\d\d-\d\d)/g;

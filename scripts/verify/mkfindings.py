@@ -32,15 +32,28 @@ import json
 import re
 import sys
 
-SRC = {
-    ("terrain", "zh"): "lib/terrain-content.zh.ts",
-    ("terrain", "en"): "lib/terrain-content.en.ts",
-    ("travel", "zh"): "lib/travel-content.zh.ts",
-    ("travel", "en"): "lib/travel-content.en.ts",
-    ("route", "zh"): "lib/route-narration.ts",
-    ("route", "en"): "lib/route-narration.ts",
-    ("registry", "zh"): "lib/terrain-registry.ts",
+# 2026-09-14 起正文按国家拆到 lib/content/<country>/ —— 先按条目 id 找到它住在哪个国家的文件里
+_FILE = {
+    ("terrain", "zh"): "terrain.zh", ("terrain", "en"): "terrain.en",
+    ("travel", "zh"): "travel.zh", ("travel", "en"): "travel.en",
+    ("route", "zh"): "routes", ("route", "en"): "routes",
+    ("registry", "zh"): "registry",
 }
+
+
+def path_of(kind: str, lang: str, eid: str) -> str:
+    """条目 id → 所在文件。找不到或跨国重复都直接断言失败（全有或全无）。"""
+    import glob
+    files = sorted(glob.glob(f"lib/content/*/{_FILE[(kind, lang)]}.ts"))
+    if kind == "registry":
+        pat = re.compile(r'^  id: "%s",$' % re.escape(eid), re.M)
+    else:
+        pat = re.compile(r'^  (?:"%s"|%s): [{\[]\s*$' % (re.escape(eid), re.escape(eid)), re.M)
+    hits = [f for f in files if pat.search(_text(f))]
+    assert len(hits) == 1, f"条目 {kind}/{eid} [{lang}] 在 lib/content/*/{_FILE[(kind, lang)]}.ts 里找到 {len(hits)} 处（应为 1）"
+    return hits[0]
+
+
 _cache: dict[str, str] = {}
 _findings: list[dict] = []
 
@@ -53,7 +66,7 @@ def _text(path: str) -> str:
 
 def block(kind: str, lang: str, eid: str) -> str:
     """条目块：从 `  "<id>": {` 到同缩进的 `}` 为止。注册表的条目形状不同，单独处理。"""
-    s = _text(SRC[(kind, lang)])
+    s = _text(path_of(kind, lang, eid))
     if kind == "registry":
         i = s.index(f'id: "{eid}",')
         j = s.index("\n};", i)
@@ -127,7 +140,11 @@ def apply_direct(edits, dry=False) -> int:
     texts = {}
     errs, done = [], 0
     for kind, lang, eid, find, rep in edits:
-        path = SRC[(kind, lang)]
+        try:
+            path = path_of(kind, lang, eid)
+        except AssertionError as ex:
+            errs.append(str(ex))
+            continue
         texts.setdefault(path, _text(path))
         s = texts[path]
         if kind == "registry":

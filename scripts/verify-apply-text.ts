@@ -29,23 +29,24 @@
  */
 
 import { readFile, writeFile } from "node:fs/promises";
+import { contentFiles, type ContentFile } from "./lib/content-files.ts";
 
 /**
- * 两套内容文件，按 finding 的 `kind` 选：
+ * 三套内容文件，按 finding 的 `kind` 选：
  *   kind: "terrain" → 地形讲解（6 板块：seeing / formation / observation / distinguish / concept / history）
+ *   kind: "route"   → 航线解说（中英写在同一个文件里：`{ study: { "zh-CN": …, "en-US": … } }`）
  *   其余（travel / city …） → 旅游模式的城市与国家概览
- * 两个文件的条目形状一样（`  <id>: {` … `  },`），所以补丁逻辑共用。
+ * 2026-09-14 起正文按国家拆到 lib/content/<country>/，所以要先按条目 id 找到它住在哪个国家的文件里
+ * （见 fileOf）。条目形状不变（`  <id>: {` … `  },`），补丁逻辑共用。
  */
 const FILE_SETS = {
-  travel: { zh: "lib/travel-content.zh.ts", en: "lib/travel-content.en.ts" },
-  terrain: { zh: "lib/terrain-content.zh.ts", en: "lib/terrain-content.en.ts" },
-  // 航线解说的中英文写在**同一个文件**里（`{ study: { "zh-CN": …, "en-US": … } }`），
-  // 所以 zh 与 en 指向同一路径 —— 补丁按 textPatch.zh / textPatch.en 分别命中各自那半边。
-  route: { zh: "lib/route-narration.ts", en: "lib/route-narration.ts" },
-} as const;
+  travel: { zh: "travel.zh", en: "travel.en" },
+  terrain: { zh: "terrain.zh", en: "terrain.en" },
+  route: { zh: "routes", en: "routes" },
+} as const satisfies Record<string, { zh: ContentFile; en: ContentFile }>;
 /** 航线解说改完必须重跑锚点，否则句数与锚点表对不上、check:anchors 会失败 */
 const ROUTE_REMINDER =
-  "\n⚠️ 这一轮改了 lib/route-narration.ts 的解说文字 —— **必须跑 `npm run gen:anchors`**，\n" +
+  "\n⚠️ 这一轮改了 lib/content/<country>/routes.ts 的解说文字 —— **必须跑 `npm run gen:anchors`**，\n" +
   "   否则句数与 lib/route-anchors.data.ts 对不上，`npm run check:anchors` 会报错。\n" +
   "   （`source: \"auto\"` 的锚点会被重跑覆盖，`\"manual\"` 的保留。）";
 type FileSet = keyof typeof FILE_SETS;
@@ -157,21 +158,22 @@ function upsertSourceNote(src: string, id: string, field: string, note: string, 
   return src.slice(0, start) + block + src.slice(end);
 }
 
-const src: Record<FileSet, { zh: string; en: string }> = {
-  travel: {
-    zh: await readFile(FILE_SETS.travel.zh, "utf8"),
-    en: await readFile(FILE_SETS.travel.en, "utf8"),
-  },
-  terrain: {
-    zh: await readFile(FILE_SETS.terrain.zh, "utf8"),
-    en: await readFile(FILE_SETS.terrain.en, "utf8"),
-  },
-  route: {
-    zh: await readFile(FILE_SETS.route.zh, "utf8"),
-    en: await readFile(FILE_SETS.route.en, "utf8"),
-  },
-};
-const touched = new Set<FileSet>();
+/** 所有内容文件的当前文本（补丁在内存里打，最后一次性写回） */
+const texts = new Map<string, string>();
+for (const set of Object.values(FILE_SETS)) {
+  for (const kind of [set.zh, set.en]) {
+    for (const p of contentFiles(kind)) if (!texts.has(p)) texts.set(p, await readFile(p, "utf8"));
+  }
+}
+/** 条目 id 住在哪个国家文件里 —— 找不到或找到两个都直接失败（全有或全无，和补丁本身的规矩一致） */
+function fileOf(kind: ContentFile, id: string, key: string): string {
+  const head = new RegExp(`^  (?:${escapeRe(id)}|"${escapeRe(id)}"): \\{\\s*$`, "m");
+  const hits = contentFiles(kind).filter((p) => head.test(texts.get(p)!));
+  if (hits.length !== 1) throw new Error(`${key}: 条目「${id}」在 ${kind} 文件里找到 ${hits.length} 处（应为 1）`);
+  return hits[0]!;
+}
+const touched = new Set<string>();
+const touchedSets = new Set<FileSet>();
 let patched = 0;
 let noted = 0;
 
@@ -181,37 +183,33 @@ for (const f of round.findings) {
     throw new Error(`${f.key}: 给了 textPatch/sourceNote 但 resolution 是「${f.resolution}」`);
   }
   const fs = setOf(f.kind);
-  touched.add(fs);
-  // 航线：zh 与 en 是同一个文件，两半补丁必须落在同一份字符串上
-  const sameFile = FILE_SETS[fs].en === FILE_SETS[fs].zh;
+  touchedSets.add(fs);
+  const zhPath = fileOf(FILE_SETS[fs].zh, f.id, f.key);
+  const enPath = fileOf(FILE_SETS[fs].en, f.id, f.key);
+  touched.add(zhPath).add(enPath);
+  // 航线：zh 与 en 是同一个文件，两半补丁落在同一份字符串上（texts 按路径存，天然共享）
+  const sameFile = zhPath === enPath;
   if (f.textPatch?.zh) {
     assertNoRawQuote(f.textPatch.zh.replace, f.key, "zh");
-    src[fs].zh = patchEntry(src[fs].zh, f.id, f.textPatch.zh, f.key);
-    if (sameFile) src[fs].en = src[fs].zh;
+    texts.set(zhPath, patchEntry(texts.get(zhPath)!, f.id, f.textPatch.zh, f.key));
     patched++;
   }
   if (f.textPatch?.en) {
     assertNoRawQuote(f.textPatch.en.replace, f.key, "en");
-    src[fs].en = patchEntry(src[fs].en, f.id, f.textPatch.en, f.key);
-    if (sameFile) src[fs].zh = src[fs].en;
+    texts.set(enPath, patchEntry(texts.get(enPath)!, f.id, f.textPatch.en, f.key));
     patched++;
   }
   if (f.sourceNote) {
     // 来源注释两边都写：谁单看一个文件都能看到这句话是从哪儿来的
-    src[fs].zh = upsertSourceNote(src[fs].zh, f.id, f.field, f.sourceNote, f.key);
-    if (sameFile) src[fs].en = src[fs].zh;
-    else src[fs].en = upsertSourceNote(src[fs].en, f.id, f.field, f.sourceNote, f.key);
+    texts.set(zhPath, upsertSourceNote(texts.get(zhPath)!, f.id, f.field, f.sourceNote, f.key));
+    if (!sameFile) texts.set(enPath, upsertSourceNote(texts.get(enPath)!, f.id, f.field, f.sourceNote, f.key));
     noted += sameFile ? 1 : 2;
   }
   console.log(`  fixed ${fs === "terrain" ? "[地形] " : ""}${f.id.padEnd(22)} ${f.field}`);
 }
 
 if (!DRY) {
-  for (const fs of touched) {
-    await writeFile(FILE_SETS[fs].zh, src[fs].zh);
-    // 航线解说的 zh/en 是同一个文件，写两次会把第二次的内容覆盖掉第一次的补丁
-    if (FILE_SETS[fs].en !== FILE_SETS[fs].zh) await writeFile(FILE_SETS[fs].en, src[fs].en);
-  }
+  for (const p of touched) await writeFile(p, texts.get(p)!);
 }
 
 /**
@@ -232,13 +230,10 @@ if (!DRY) {
  * 这里只报告、不拦截：真要拦，就会变成每次改个措辞都要解释一遍。
  */
 /** 扫的是**改完之后**的文本：内容文件用内存里已打好补丁的那份（dry-run 也能扫），注册表另读 */
+const registryFiles = contentFiles("registry");
 const scanTargets: Array<[string, string]> = [
-  [FILE_SETS.terrain.zh, src.terrain.zh],
-  [FILE_SETS.terrain.en, src.terrain.en],
-  [FILE_SETS.travel.zh, src.travel.zh],
-  [FILE_SETS.travel.en, src.travel.en],
-  [FILE_SETS.route.zh, src.route.zh],
-  ["lib/terrain-registry.ts", await readFile("lib/terrain-registry.ts", "utf8").catch(() => "")],
+  ...[...texts.entries()],
+  ...(await Promise.all(registryFiles.map(async (p): Promise<[string, string]> => [p, await readFile(p, "utf8").catch(() => "")]))),
 ];
 /**
  * 被删掉的片段 —— 这次真正改掉的是**哪几个字**。
@@ -317,7 +312,7 @@ for (const f of round.findings) {
  * 地形条目与它在注册表里的 `source` 是一一对应的，所以这里按 id 只查**同一个条目**：
  * 范围窄到不会有噪音，也就不需要上限。
  */
-const registryText = scanTargets.find(([file]) => file === "lib/terrain-registry.ts")?.[1] ?? "";
+const registryText = scanTargets.filter(([file]) => registryFiles.includes(file)).map(([, t]) => t).join("\n");
 function registryEntry(id: string): string {
   const i = registryText.indexOf(`id: "${id}",`);
   if (i < 0) return "";
@@ -354,4 +349,4 @@ console.log(
     ? "去掉 --dry-run 真写，然后跑 npm run check:claims 看棘轮，再跑 npm run verify:report"
     : "接着跑 npm run check:claims 看棘轮降了多少，再跑 npm run verify:report 落地 issue 与台账",
 );
-if (touched.has("route")) console.log(ROUTE_REMINDER);
+if (touchedSets.has("route")) console.log(ROUTE_REMINDER);

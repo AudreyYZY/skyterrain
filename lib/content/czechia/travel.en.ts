@@ -1,0 +1,165 @@
+import type { TravelGuide } from "@/lib/travel-lesson";
+
+export const TRAVEL_EN: Record<string, TravelGuide> = {
+  "czechia-overview": {
+    // identity sources: ČSÚ《Pohyb obyvatelstva - rok 2025》：2025-12-31 为 10,915,839 人。https://csu.gov.cz/rychle-informace/pohyb-obyvatelstva-rok-2025
+    //   核实日 2026-09-07，来源级别 1
+    identity:
+      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of about 10.92 million at the end of 2025 (Czech Statistical Office). Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
+    layout:
+      "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
+    gettingAround:
+      "Václav Havel Airport Prague is the main international gateway; the domestic rail and long-distance bus network is extensive, with journeys between major cities typically taking 2 to 4 hours, since domestic commercial flights are essentially nonexistent. Driving is on the right, and a toll vignette (dálniční známka) is required for motorways. The climate is temperate continental with distinct seasons. The currency is the Czech koruna (CZK), as the country has not adopted the euro; as a Schengen member, most nationalities follow standard Schengen short-stay rules; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    culture:
+      "The official language is Czech, and English is widely spoken among younger people and in tourist areas. Czechs typically use formal address (surname plus Mr./Mrs.) on first meeting, switching to first names only once acquainted; modest dress is expected in churches and other religious sites; Czechia is one of the world's heaviest beer-consuming countries per capita, and pub and beer-hall culture runs deep.",
+    seeAndDo:
+      "Natural landforms: Krkonoše and Sněžka (the country's highest point), the sandstone rock cities of Český ráj and Adršpach, the Macocha Abyss in the Moravian Karst, and the Pravčická brána arch in Bohemian Switzerland. Historic and cultural sites: Prague's Old Town and Castle District (UNESCO), the historic town of Český Krumlov (UNESCO), St. Barbara's Church and the Sedlec Ossuary at Kutná Hora (UNESCO), the spa architecture of Karlovy Vary (UNESCO), and Pilsen's beer culture.",
+    whenAndTips:
+      "May to September is the most pleasant season and also peak time for exploring outdoor landscapes and historic towns; Prague and other cities take on a festive atmosphere during the December Christmas markets, though crowds increase; domestic travel relies mainly on rail and bus, and Prague's nearby historic towns (Český Krumlov, Kutná Hora, Karlovy Vary) all make feasible day trips.",
+  },
+  prague: {
+    // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
+    //   布拉格 1,405,551（2026-03-31，ČSÚ 季度人口平衡，2026-06-12 发布；2 级媒体转述官方数）。原来 identity 写 130 万、howItWorks 写「2024 年约 140 万」，**同一条目两段打架且都不是最新一期**。
+    //   **同段的「都会区约 230 万」这个数字准确，但发布方不是 ČSÚ 而是欧盟统计局 Eurostat 的功能城市区（FUA）口径**（2024 年 2,264,690）—— 按本库规则，这种「口径确实存在、只是发布方不是本国统计局」的情况**写明发布方与年份即可，不删这个词**（与瑞士巴塞尔三国区、瑞典 Göteborgsregionen 同一处理）。2026-09-09 核。
+    identity:
+      "Prague is Czechia's capital and largest city, with a population of about 1.41 million as of the first quarter of 2026, straddling the banks of the Vltava River. It was once the seat of Holy Roman Emperor Charles IV, and its historic Old Town core was inscribed as a UNESCO World Heritage Site in 1992.",
+    // howItWorks sources: 人口：捷克统计局布拉格办公室 2026 上半年公报（1 级，2026-09-11 发布）—— 2026-06-30 初步余额 1,409,528，2026 上半年比 2025 年末 +2,444，故 2025-12-31 = 1,407,084（初步）。上一期正式年度基准 2025-01-01 = 1,397,880（2025-05-16 发布）。「约 230 万」是 **Eurostat FUA** 口径，捷克统计局没有「都会区」这一档，正文已写明发布方。年度国家版约次年 5 月中，布拉格地区季度公报滞后约 2.5 个月。
+    howItWorks:
+      "Prague is both the capital of the Czech Republic and one of its fourteen regions, governed by an elected mayor and a 65-member assembly. Its divisions come in three layers: 22 administrative districts (Praha 1 to 22) perform functions delegated by the state, 57 self-governing municipal parts each have an elected council and mayor, and addresses and everyday speech use the ten old district numbers, Praha 1 to 10 — 'Prague 6' and 'Prague 2' are how locals place things. The city covers about 496 km² with about 1.407 million people at the end of 2025 (Czech Statistical Office, preliminary), and together with the surrounding Central Bohemian Region about 2.3 million under Eurostat's functional urban area definition. The Vltava runs through the middle: the Old Town, Lesser Town, Castle district and New Town are the historic centre inscribed as World Heritage in 1992, Vinohrady, Žižkov, Karlín and Smíchov the quarters of the nineteenth century onward, and the panel-block estates (panelák) such as Jižní Město on the edge, where most residents live. Three metro lines, trams and buses run on the single PID fare system. Addresses give street, number, postcode and 'Praha X'. Newcomers most often go wrong by taking the historic centre for the city, when most of its 1.4 million people live in the panel-block districts on either bank.",
+    layout:
+      "The Old Town and New Town lie on the right bank of the Vltava, linked by Charles Bridge to the Lesser Town and Castle District on the far bank; Prague Castle stands atop a hill on the left bank overlooking the city, forming one of the largest ancient castle complexes in the world.",
+    gettingAround:
+      "Václav Havel Airport is about 17 km from the city center, connected by bus and metro; the city has an extensive metro, tram and bus network, and the Old Town core is entirely walkable. The climate is temperate continental, with cold winters and mild summers.",
+    culture:
+      "The official language is Czech, and English is widely spoken in tourist areas. Modest dress is expected when entering St. Vitus Cathedral and other religious sites; keep an eye on your belongings around busy spots like Charles Bridge and Old Town Square; restaurant bills typically don't include service, and a 5-10% tip or rounding up the total is customary.",
+    seeAndDo:
+      "The Prague Castle complex (including St. Vitus Cathedral, the core of the UNESCO listing); Charles Bridge (begun in 1357 and completed in 1402, lined with 30 Baroque saint statues mostly installed between 1683 and 1714); Old Town Square and the Astronomical Clock (installed in 1410, the oldest such clock still in operation); the Lesser Town and views from Petřín Hill.",
+    whenAndTips:
+      "April to June and September to October are pleasant with relatively fewer visitors; July and August are peak season with higher temperatures; December's Christmas markets have a festive atmosphere. The Old Town core is entirely walkable, and early morning is the best time to photograph Charles Bridge before crowds arrive.",
+  },
+  brno: {
+    // 零改动留痕（2026-09-10）：注释已更新到 ČSÚ 2026-01-01 最新一期。正文取整「约 40 万」在新旧两期下都成立。
+    // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
+    //   ČSÚ **2026-01-01** 数据为 404,296（2026-09-10 复核时更新到最新一期；上一期 2025-01-01 为 402,739，正文取整「约 40 万」两期都成立）—— identity 的 38 万已过期偏低。「捷克第二大城市」按 ČSÚ 市镇口径成立（布拉格 > 布尔诺 404,296 > 俄斯特拉发 > 皮尔森 187,863）。 级别 1（ČSÚ 官方页）或 3 级转引 ČSÚ，2026-09-09 核。
+    //   https://csu.gov.cz/
+    identity:
+      "Brno is Czechia's second-largest city by population and the center of Moravia, with a population of about 400,000. It was historically the capital of the Margraviate of Moravia, and today is an important research and university city.",
+    // howItWorks sources: 大学数与学生数各源口径不一（6–13 所 / 6.5 万–9 万），不写死。随机抽样审计（seed=3）判为 unknown。2026-09-13 核。
+    howItWorks:
+      "Brno is the second city of the Czech Republic and the seat of the South Moravian Region, a 'statutory city' divided into 29 self-governing districts, each with an elected council and mayor; it covers about 230 km² with about 404,000 people in 2026. It is the country's judicial capital: the Constitutional Court, the Supreme Court and the Supreme Administrative Court sit here, while government and parliament sit in Prague. The centre lies between the two hills of Špilberk Castle and Petrov Cathedral, with Freedom Square as the point of reference; Villa Tugendhat was inscribed as World Heritage in 2001, and functionalist architecture is the city's legacy of the 1920s. Its universities and their tens of thousands of students make it a university city, Masaryk University and the Brno University of Technology the largest; the exhibition centre and the motorcycle grand prix circuit are its other two marks. Trams are the backbone of the city's transport, and there is no metro. Moravian identity and wine are daily life, and Vienna lies about 110 km south, closer than Prague. Addresses give street, number and five-digit postcode beginning with 6. Newcomers most often go wrong by taking Brno for a foil to Prague, when it is the centre of Moravia, with courts, universities and a dialect of its own.",
+    layout:
+      "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. In the Černá Pole district on the city's north side stands Villa Tugendhat, a modernist landmark designed by Mies van der Rohe.",
+    gettingAround:
+      "Brno-Tuřany Airport is about 7.5 km from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
+    culture:
+      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a functionalist modern house designed by Mies van der Rohe and completed in 1930, UNESCO World Heritage since 2001); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
+    whenAndTips:
+      "May to September is pleasant; as a university city, some student-oriented facilities close in summer and the atmosphere is livelier during term time; Brno makes a good base for day trips to the Moravian Karst and the Lednice-Valtice estate.",
+  },
+  plzen: {
+    // 零改动留痕（2026-09-10）：注释已更新到 ČSÚ 2026-01-01（**直接取自 ČSÚ 官方 PDF，1 级**）。
+    //   「捷克第四大城市」按 ČSÚ 市镇口径用最新一期复核，排序未变。
+    // identity sources: 人口：捷克统计局皮尔森州办公室《Počet obyvatel v obcích k 1. 1. 2026》PDF，Plzeň = 187,863（上一期 2025-01-01 = 187,928）。口径是市镇（obec）常住人口。各州办公室的地区版每年约 5 月发布。
+    identity:
+      "Plzeň (Pilsen) is a major city in western Czechia and the seat of the Plzeň Region, with a population of about 188,000 as of early 2026 (Czech Statistical Office). In 1842, the world's first golden bottom-fermented lager — Pilsner — was brewed here, making it the birthplace of lager beer worldwide.",
+    // howItWorks sources: Wikipedia (2026-09): Plzeň (statutory city; 10 boroughs; 137.67 km²; ~188,000; Plzeň Region capital; four rivers → Berounka; St Bartholomew tower 102.6 m; Pilsner 1842; Škoda Works 1869; ECoC 2015; Prague ~78 km)
+    howItWorks:
+      "Plzeň is the fourth city of the Czech Republic and the seat of the Plzeň Region, a 'statutory city' divided into ten self-governing boroughs; it covers about 138 km² with about 188,000 people. Four rivers — the Mže, Úhlava, Úslava and Radbuza — meet in the city to form the Berounka. Founded as a royal town in the late thirteenth century, it has Republic Square as its centre, where the tower of St Bartholomew's Cathedral at 102.6 m is the tallest church tower in the country and medieval passages run beneath the square. On 5 October 1842 the Bavarian brewer Josef Groll brewed the first Pilsner here, and the brewery still stands east of the centre; the Škoda Works founded in 1869 made it an industrial city. The University of West Bohemia is in town, and in 2015 it was European Capital of Culture. Trams and trolleybuses carry the traffic. Prague lies about 78 km east, and the Bavarian border about 60 km west. Addresses give street, number and five-digit postcode beginning with 3. Newcomers most often go wrong by taking Plzeň for a brewery, when it is the administrative, industrial and university centre of western Bohemia.",
+    layout:
+      "The old town centers on Republic Square, one of the largest town squares in Europe, with the Cathedral of St. Bartholomew — the tallest church spire in Czechia — standing at its center; the Pilsner Urquell Brewery sits on the eastern edge of the old town.",
+    gettingAround:
+      "There is no commercial airport locally; most travelers connect via Prague Airport and continue by train or bus (about 1 to 1.5 hours); the old town is entirely walkable.",
+    culture:
+      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Bartholomew and other religious sites; as the birthplace of lager culture, pubs and beer halls are a central part of local social life — by local custom you let the server top up your glass rather than pouring your own; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "A tour of the Pilsner Urquell Brewery and its underground brewing history exhibit; Republic Square and the Cathedral of St. Bartholomew (102 m spire, the tallest church spire in Czechia); the historic Pilsen Underground (a roughly 20-km network of tunnels dug from the 14th century onward); and the Great Synagogue, one of the largest synagogues in Europe.",
+    whenAndTips:
+      "May to September is pleasant; booking the brewery tour in advance is recommended; a day trip from Prague is convenient, taking about 1 to 1.5 hours each way.",
+  },
+  "karlovy-vary": {
+    // 零改动留痕（2026-09-10）：48,788（2026-01-01，ČSÚ）与注释一致，**本批已用上最新一期的三城之一**。
+    //   ⚠️ 复核时 mistopisy.cz 一度显示 41,257，经核为该站数据异常／非同一统计对象，**不采纳**——记在这里免得下一轮被它带偏。
+    //   「相传查理四世打猎发现温泉」已用传说式措辞；可考史实是 1370-08-14 授予皇家城市特权（市官方旅游页，2 级）。
+    // identity sources: **捷克的官方人口口径**（2026-09-09 核）：**市镇年度人口（Počet obyvatel v obcích，基准日每年 1 月 1 日，捷克统计局 ČSÚ）** —— 本库统一采用这一档，**发布滞后约 4.5 个月**（2026-01-01 基准数于 2026 年 5 月中下旬按地区页面陆续发布）；另有主要城市/地区的**季度人口平衡**（Pohyb obyvatelstva，滞后约 10–11 周）。**ČSÚ 没有「都会区」这一档** —— 布拉格那个约 230 万是**欧盟统计局 Eurostat 的功能城市区（FUA）**口径。「法定市（statutární město）」是行政地位、**不是统计口径**。自治层级只有州（kraj，14 个）与市镇（obec）两级，okres（区）自 2003 年起不再是自治单位 —— 正文写的「捷克的地方行政分州与市镇两级」准确。
+    //   人口 48,788（2026-01-01，ČSÚ DataStat，2026-05-18 发布，3 级转引但直接标注一手来源与发布日）。
+    //   「最著名的温泉城市」是主观最高级、无可核口径，已软化为「著名的温泉城市之一」（该城 2021 年是 UNESCO「欧洲大温泉城」成员之一）。
+    //   **「查理四世打猎时发现温泉」是传说**（多份英文历史/旅游资料均以 legend 呈现），可考的史实是 **1370-08-14 授予皇家城市特权**；地质与考古证据显示当地泉水的使用可能更早。正文原来把传说直接写成了既定史实，已改成传说式表述。2 级（市旅游官方页）+ 3 级，2026-09-09 核。
+    //   https://www.karlovyvary.cz/en/history
+    identity:
+      "Karlovy Vary is one of Czechia's best-known spa towns, with a population of about 49,000. Legend has it that Holy Roman Emperor Charles IV discovered the hot springs here while hunting in the 14th century; the town was granted royal privileges in 1370 and named after him, and historically was a favored retreat for European royalty and cultural figures.",
+    // howItWorks sources: Wikipedia (2026-09): Karlovy Vary (statutory city; region capital; 59.08 km²; ~49,000; Teplá/Ohře; spa quarter vs town; Vřídlo 73 °C; UNESCO 2021 Great Spa Towns; film festival; Becherovka 1807; Moser; Prague ~130 km)
+    howItWorks:
+      "Karlovy Vary is the seat of the Karlovy Vary Region, a 'statutory city' of about 59 km² with about 49,000 people. The city falls into two parts: the spa quarter in the gorge of the Teplá, where colonnades, springs and the Grandhotel Pupp line the river, the Vřídlo spring erupting at 73°C the hottest of them, inscribed as World Heritage in 2021 among the 'Great Spa Towns of Europe'; and, beyond the gorge on the Ohře, the commercial and residential town where residents actually live, with the railway and bus stations. Spa medicine is the city's industry — doctors prescribe, patients drink the waters by the course, and it is not a matter of bathing — and the international film festival each July is its other identity. Becherovka, made since 1807, and Moser glass are the local brands. The Diana funicular climbs from the spa quarter. Buses carry the traffic, and Prague lies about 130 km east. Addresses give street, number and five-digit postcode beginning with 360. Newcomers most often go wrong by taking the spa quarter for the whole city, when residents live in the other town beyond the gorge.",
+    layout:
+      "The town stretches narrowly along both banks of the Teplá River, its valley lined with Art Nouveau and Neo-Renaissance spa colonnades and sanatorium buildings; the Mill Colonnade and Hot Spring Colonnade are the town's central landmarks.",
+    gettingAround:
+      "Karlovy Vary Airport is about 6 km from the town center; the colonnades along the valley are all walkable, with a funicular connecting hillside hotels and viewpoints on some of the steeper slopes.",
+    culture:
+      "The official language is Czech, and English is widely spoken given the town's international reputation for spa tourism and its film festival. Locals traditionally drink the spring water from a special porcelain spa cup with a built-in drinking spout, available as a souvenir at local shops; the Karlovy Vary International Film Festival is held every summer, one of the oldest film festivals in Central and Eastern Europe; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "The Mill Colonnade (built 1871-1881, 132 m long with 12 allegorical statues); the Hot Spring Colonnade (home to the Vřídlo geyser, which shoots up to 12 m, Karlovy Vary's highest-yield spring); the Grandhotel Pupp (a landmark hotel with over three centuries of history); and nearby Czech spa towns such as Mariánské Lázně.",
+    whenAndTips:
+      "May to September is pleasant, with the film festival in July drawing the largest crowds; check with a local pharmacy or doctor for guidance on drinking the mineral water; it's about a 2-hour drive from Prague, with train and bus options also available.",
+  },
+  "cesky-krumlov": {
+    // 零改动留痕（2026-09-10）：正文「约 1.3 万」不改（12,658 按千位取整仍是 1.3 万），只更正了注释里的误引数。
+    //   「捷克境内规模第二大的城堡建筑群（仅次于布拉格城堡）」经捷克官方旅游局页（2 级）核实成立。
+    // identity sources: 人口：捷克统计局南波希米亚州《Počet obyvatel v obcích k 1. 1. 2026》，Český Krumlov = 12,658（上一期 12,797，-1.1%）。
+    identity:
+      "Český Krumlov is a medieval town in South Bohemia with a population of about 12,700 as of early 2026 (Czech Statistical Office), named for the deep meander of the Vltava that nearly encircles its historic core (\"Krumlov\" comes from the German \"Krumme Aue,\" meaning \"crooked meadow\"). Its historic center was inscribed as a UNESCO World Heritage Site in 1992.",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Český Krumlov (Czechia; town in the South Bohemian Region about 20 km south-west of České Budějovice, about 13,000 inhabitants over 22.16 km²; the historic centre inscribed by UNESCO in 1992 for well-preserved Gothic, Renaissance and Baroque architecture within its medieval street layout; Český Krumlov Castle, one of the largest castle complexes in Central Europe at 7 hectares, its moat filled not with water but with bears, referring to the Orsini family; the castle Baroque theatre built in 1680–1682 and renovated in 1765–1766, among the oldest surviving 18th-century theatres in the world with its original stage machinery; the Five-Petalled Rose Festival at the summer solstice and an international music festival in July and August; among the most visited places in the country)
+    howItWorks:
+      "Český Krumlov is a town of the South Bohemian Region in Czechia with about 13,000 inhabitants over some 22 km², about 20 km south-west of České Budějovice; Czech local government has two levels, region and municipality, the town run by an elected mayor and council while the region handles regional matters. Its shape was given by the Vltava: the river loops here into a nearly closed S, the old town enclosed within the bend and the castle on the rock ridge outside it, the two facing each other across the water — so the town could not spread for centuries, and its medieval street layout and its Gothic, Renaissance and Baroque houses survived, the centre inscribed as World Heritage in 1992. The castle covers about 7 hectares as one of the largest complexes in Central Europe, and its moat holds not water but bears, from a claimed connection to the Italian Orsini family. Its Baroque theatre, built in the 1680s and remodelled between 1765 and 1766, still has its original stage machinery, one of only a handful left in the world. The Five-Petalled Rose Festival near the summer solstice and the music festival in July and August are the busiest times of its year. Newcomers most often go wrong by judging the crowds from the resident population, when this is among the most visited places in the country.",
+    layout:
+      "The old town is built within a double horseshoe bend of the Vltava; Krumlov Castle stands on the rocky bluff inside the meander and is one of the largest castle complexes in Czechia. The old town core is entirely walkable.",
+    gettingAround:
+      "There is no local airport; most travelers connect via Prague Airport or České Budějovice and continue by bus, with the journey from Prague taking about 2.5 to 3 hours; the old town core is walkable, though its cobblestone streets are steep, so comfortable footwear is recommended.",
+    culture:
+      "The official language is Czech, and English is widely spoken as this is a popular tourist town. Some areas inside the castle can only be visited on a timed guided tour; modest dress is expected when entering St. Vitus Church and other religious sites; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "Krumlov Castle (founded in the 13th century, with its Bear Moat and three-tiered Cloak Bridge); the castle tower viewpoint overlooking the town's meander; the old town square and town hall; and rafting or canoeing on the Vltava, a popular summer activity offering a close-up view of the meander landform.",
+    whenAndTips:
+      "May to September is pleasant and also the best season for river rafting; the old town gets crowded in summer, so visit key sights early morning or evening; an overnight stay from Prague is recommended to fully experience the old town at night.",
+  },
+  "kutna-hora": {
+    // 零改动留痕（2026-09-10）：21,787（2026-01-01，ČSÚ）与注释完全一致，**本批已用上最新一期的三城之一**。
+    // identity sources: 人口：捷克统计局中波希米亚州 2026-01-01 表，Kutná Hora = 21,787（上一期 21,642，+0.67%）。
+    identity:
+      "Kutná Hora is a historic silver-mining town in Central Bohemia with a population of about 21,800 as of early 2026 (Czech Statistical Office). In the 14th and 15th centuries, silver mining made it the second-wealthiest town in the Kingdom of Bohemia after Prague; its historic center was inscribed as a UNESCO World Heritage Site in 1995.",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kutná Hora (Czechia; town in the Central Bohemian Region about 50 km east of Prague with about 22,000 inhabitants; silver mining from the 13th century after ore was found near Sedlec made it wealthy, and by 1300 it was the seat of the central mint of the Czech lands where the Prague groschen were struck, making it the second most important town of the Kingdom of Bohemia after Prague; the mint closed in 1727 and the town ceased to be a mining town; the historic centre with the Church of St Barbara and the Cathedral of Our Lady at Sedlec inscribed by UNESCO in 1995, both outstanding Gothic work; the Sedlec Ossuary decorated with the bones of more than 40,000 skeletons; manufacturing today including tobacco and electronics)
+    howItWorks:
+      "Kutná Hora is a town of the Central Bohemian Region in Czechia with about 22,000 inhabitants, some 50 km east of Prague; Czech local government has two levels, region and municipality, the town run by an elected mayor and council while the region handles regional matters. Everything here was built on silver: after ore was found near Sedlec in the thirteenth century, mining and smelting raised the town quickly, and by about 1300 the central mint of the Czech lands was established here, striking the Prague groschen and making this the second town of the Kingdom of Bohemia after Prague — the Church of St Barbara, dedicated to the patron saint of miners, was paid for by the mine owners and townspeople and is of a scale and workmanship far beyond what a small town would have. When the veins gave out the town declined, the mint closed in 1727 and its life as a mining town ended, which is precisely why the medieval town survived, inscribed as World Heritage in 1995 together with the Cathedral of Our Lady at Sedlec. The Sedlec Ossuary, its interior decorated with the bones of more than forty thousand people, is the place most often named here. Tobacco and electronics manufacturing are the industries today. Newcomers most often go wrong by expecting everything in the old town, when the ossuary is at Sedlec, more than two kilometres away.",
+    layout:
+      "The old town's central landmark is St. Barbara's Church, which stands on a hill at the edge of town overlooking the valley below; the underground of the All Saints Church in the nearby Sedlec district holds the famous \"Bone Church.\"",
+    gettingAround:
+      "There is no local airport; most travelers connect via Prague Airport and continue by train or bus, with the journey from Prague taking about 1 to 1.5 hours; the old town core is walkable, and St. Barbara's Church and the Sedlec Ossuary are about a 20-minute walk apart, or reachable by local bus.",
+    culture:
+      "The official language is Czech. Modest, quiet behavior is expected when visiting St. Barbara's Church and the Bone Church; inside the ossuary, touching the bone decorations is forbidden and photography is restricted in some areas out of respect for the dead — watch for posted signage; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "St. Barbara's Church (a Gothic masterpiece dedicated to the patron saint of miners); the Sedlec Ossuary (a cemetery chapel decorated with the remains of roughly 40,000 people); the Czech Museum of Silver (on the site of a medieval mint); and the stone fountain and old town square.",
+    whenAndTips:
+      "Worth visiting year-round, with May to September the most pleasant; book tickets in advance for the ossuary to avoid peak crowds; it makes a feasible day trip from Prague, or can be planned separately from a Karlovy Vary or Český Krumlov itinerary.",
+  },
+  olomouc: {
+    // 零改动留痕（2026-09-10）：105,297（2026-01-01，ČSÚ）与注释一致——注释里的「2025 年末 105,297」与「2026-01-01」
+    //   是同一时点的两种写法，**不是两个不同数字**，不构成矛盾。「捷克第六大城市」用最新一期复核排序未变（利贝雷茨约 10.8 万仍在其上）。
+    // identity sources: 人口：捷克统计局奥洛穆茨州「重点城市」专题表 2025-12-31 = 105,297。⚠️ 该表不是州级标准市镇人口表，且比上一期全国表 103,063 高 2.2%（同批其他捷克城市变动都在 ±1% 内），怀疑统计口径由 trvalé bydliště 转向 obvyklé bydliště，下一轮换标准表复核。排名：「历史城区规模仅次于布拉格」**查无官方口径**（捷克统计局 / UNESCO / NPÚ 都没有按面积或建筑数量的排名），已按 C1b 标准删掉，改写为「整体列为城市文物保护区」这一可核验的事实。
+    identity:
+      "Olomouc is a historic city in Moravia with a population of about 105,000 at the end of 2025 (Czech Statistical Office). In the Middle Ages it was a bishopric seat and regional centre, and its historic core is protected in its entirety as an urban conservation area; its Holy Trinity Column was inscribed as a UNESCO World Heritage Site in 2000.",
+    // howItWorks sources: Wikipedia (2026-09): Olomouc (statutory city; 26 municipal parts; 103.33 km²; ~105,000; Olomouc Region capital; historic Moravian capital to 1640s; archbishopric; Holy Trinity Column UNESCO 2000; Palacký University 1573 >25,000 students; trams; Brno ~61 km)
+    howItWorks:
+      "Olomouc is the seat of the Olomouc Region, a 'statutory city' divided into 26 local parts; it covers about 103 km² with about 105,000 people, the sixth city of the Czech Republic. It is the historic capital of Moravia, which ceded its standing to Brno after Swedish occupation in the 1640s during the Thirty Years' War, and it remains the seat of the Catholic archbishop. The Upper Square is the centre, with the Holy Trinity Column inscribed as World Heritage in 2000 and the astronomical clock in socialist-realist style both on it, the Lower Square beside, and St Wenceslas Cathedral at the eastern end of the old town. Palacký University, founded in 1573, is the oldest in Moravia and the second-oldest in the country, and its 25,000 students, a quarter of the city, set its rhythm on the young side. The eighteenth-century fortress works once held the city inside its walls, and their removal left a belt of parks around the old town. Trams are the backbone of the city's transport, and the Morava flows past its edge. Brno lies about 60 km south-west. Olomouc cheese, tvarůžky, is the local taste. Addresses give street, number and five-digit postcode beginning with 77. Newcomers most often go wrong by taking Olomouc for an appendage of Brno, when it is the religious centre and university town of Moravia.",
+    layout:
+      "The old town centers on Upper Square and Lower Square, with the Holy Trinity Column standing at the heart of Upper Square; Olomouc's cathedral and archbishop's palace lie at the other end of the old town, which also preserves six Baroque fountains as key features of its townscape.",
+    gettingAround:
+      "There are no scheduled commercial flights locally; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
+    culture:
+      "The official language is Czech. Modest dress is expected when entering St. Wenceslas Cathedral and other religious sites; as a university city, Olomouc has a lively student population and strong café and pub culture in the old town; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "The Holy Trinity Column (built 1716-1754, one of the largest free-standing Baroque sculptures in Central Europe, UNESCO World Heritage); the old town's six Baroque fountains; the Olomouc Astronomical Clock (repainted in a Socialist Realist style quite different from Prague's clock); and Olomouc's cathedral and archbishop's palace.",
+    whenAndTips:
+      "May to September is pleasant; as the gateway to Moravia, Olomouc pairs well with a Brno-area itinerary; it draws fewer visitors than Prague, making it a good choice for a quieter stroll through its Baroque architecture.",
+  },
+};
