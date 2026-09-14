@@ -129,6 +129,18 @@
       "recheckAfter": "2027-03"
     },
     {
+      "key": "travel/dubrovnik/howItWorks",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
+    },
+    {
+      "key": "travel/dubrovnik/identity",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
+    },
+    {
       "key": "travel/fenghuang/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -193,6 +205,12 @@
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/kanchanaburi/howItWorks",
+      "reason": "泰国内政部 DOPA 的 2025 年末分府 / 分镇登记人口按惯例 2026 年初发布，但 stat.bora.dopa.go.th 本轮 DNS 解析失败、检索额度用尽，未能核到；现有 2024 年末数是已核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-11"
     },
     {
       "key": "travel/kanchanaburi/identity",
@@ -381,6 +399,18 @@
       "recheckAfter": "2027-03"
     },
     {
+      "key": "travel/phu-quoc-city/howItWorks",
+      "reason": "富国特区 2024-12-31 口径 157,629 是已核实的最新数；越南 2025 年行政改革后特区级 2025 年数未见官方发布。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/phuket/howItWorks",
+      "reason": "泰国内政部 DOPA 的 2025 年末分府 / 分镇登记人口按惯例 2026 年初发布，但 stat.bora.dopa.go.th 本轮 DNS 解析失败、检索额度用尽，未能核到；现有 2024 年末数是已核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-11"
+    },
+    {
       "key": "travel/phuket/identity",
       "reason": "普吉府 429,583 人（2024-12-31）是泰国国家统计局普吉府统计报告能取到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
@@ -417,10 +447,22 @@
       "recheckAfter": "2027-01"
     },
     {
+      "key": "travel/rijeka/howItWorks",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
+    },
+    {
       "key": "travel/semey/identity",
       "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
       "confirmedOn": "2026-09-15",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/split/howItWorks",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
     },
     {
       "key": "travel/sukhothai/howItWorks",

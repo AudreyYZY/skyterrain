@@ -182,16 +182,18 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；什切青地处波兰与德国交界，是跨国一日游的便捷起点，也是探索沃林岛的理想门户。",
   },
   torun: {
+    // howItWorks sources（2026-09-15 核实，update）: 同上 · GUS Tabl.20 · Toruń=192,784, 2026-01-01口径 · 1级 · 2026-09-15 核；下一期约 2027-04
+    // identity sources（2026-09-15 核实，update）: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/7/23/1/powierzchnia_i_ludnosc_w_przekroju_terytorialnym_2026_2.xlsx · GUS《Powierzchnia i ludność w przekroju terytorialnym w 2026 r.》(发布2026-04-29), Tabl.20 miasta · 直接下载xlsx解析: Toruń=192,784 · 1级 · 2026-09-15 核；下一期约 2027-04
     // identity sources: 托伦 GUS 常住人口：2021-12-31 = 197,112 → 2022 = 195,690 → **2023-12-31 = 194,771**
     //   （波兰语维基逐年列出 GUS 序列，3 级，2026-09-08 核）https://pl.wikipedia.org/wiki/Ludność_Torunia 。
     //   原注释里的 196,935 是英文维基旧版引的 2021 年 12 月数字。
     //   **两套口径不能互换**：市政府自己的「已登记居民」2024 年末 170,327、2025 年中 167,450，
     //   与 GUS 的常住人口长期差两万多。2024/2025 的 GUS 数未查到，下一轮补。
     identity:
-      "托伦是波兰中北部维斯瓦河畔的历史古城，人口约19.5万（2023年，波兰中央统计局，持续下降），是天文学家哥白尼的出生地，完整保留的中世纪老城1997年列入世界遗产名录。",
+      "托伦是波兰中北部维斯瓦河畔的历史古城，人口约19.3万（2026年1月，波兰GUS，持续下降），是天文学家哥白尼的出生地，完整保留的中世纪老城1997年列入世界遗产名录。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Toruń (Poland; city in Kuyavian-Pomeranian Voivodeship, one of two regional capitals alongside Bydgoszcz, about 196,935 residents, on the Vistula; founded by the Teutonic Knights in 1233, joined the Hanseatic League in 1264 and remained a significant trading centre, a royal city from 1506 with voting rights in Polish royal elections; the city avoided damage in both world wars and retained its Gothic to Baroque architecture, the Medieval Town of Toruń inscribed by UNESCO in 1997 for its intact layout and brick Gothic buildings; Nicolaus Copernicus born here in 1473, his birthplace now a museum; gingerbread made here for nearly a millennium; the Camerimage film festival)
     howItWorks:
-      "托伦是波兰库亚维滨海省的城市，2023 年人口约 19.5 万，在维斯瓦河边；这个省有一个少见的安排——省会一分为二，省议会与省长（marszałek）在托伦，中央派驻的省督（wojewoda）在比得哥什，两座城市各占一半，这在波兰十六个省里是唯一的。城市 1233 年由条顿骑士团建立，1264 年加入汉萨同盟，长期是维斯瓦河上的贸易重镇，1506 年起成为王室直辖城市，可参与国王选举。它最不寻常的地方是完好：两次世界大战都没有波及市中心，从哥特式到巴洛克的建筑连片保存，1997 年“托伦中世纪城区”以其完整的城市格局与砖砌哥特建筑列入世界遗产。1473 年哥白尼生在这里，故居现为博物馆；姜饼在此制作了近千年，是本地的老行业。哥白尼大学在城中。初来的人最容易犯的错，是以为省会只有一个，而这个省的行政机构分设在两座城市。",
+      "托伦是波兰库亚维滨海省的城市，2026 年 1 月人口约 19.3 万，在维斯瓦河边；这个省有一个少见的安排——省会一分为二，省议会与省长（marszałek）在托伦，中央派驻的省督（wojewoda）在比得哥什，两座城市各占一半，这在波兰十六个省里是唯一的。城市 1233 年由条顿骑士团建立，1264 年加入汉萨同盟，长期是维斯瓦河上的贸易重镇，1506 年起成为王室直辖城市，可参与国王选举。它最不寻常的地方是完好：两次世界大战都没有波及市中心，从哥特式到巴洛克的建筑连片保存，1997 年“托伦中世纪城区”以其完整的城市格局与砖砌哥特建筑列入世界遗产。1473 年哥白尼生在这里，故居现为博物馆；姜饼在此制作了近千年，是本地的老行业。哥白尼大学在城中。初来的人最容易犯的错，是以为省会只有一个，而这个省的行政机构分设在两座城市。",
     layout:
       "老城沿维斯瓦河北岸而建，哥特式砖砌建筑密布，哥白尼故居博物馆与老城市政厅是老城核心地标。",
     gettingAround:
@@ -204,14 +206,16 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；托伦老城保存完好、规模紧凑，适合安排半日到一日的深度漫步游览。",
   },
   olsztyn: {
+    // howItWorks sources（2026-09-15 核实，update）: 同上 · GUS Tabl.20 · Olsztyn=165,393 · 1级 · 2026-09-15 核；下一期约 2027-04
+    // identity sources（2026-09-15 核实，update）: 同上 · GUS Tabl.20 · Olsztyn(省会市本身，非琴斯托霍瓦县同名村)=165,393, 2026-01-01口径 · 1级 · 2026-09-15 核；下一期约 2027-04
     // identity sources: 奥尔什丁 GUS：2024-12-31 = 166,392，2025-06-30 = 165,855（又降 537 人）；2021 年为 169,793。
     //   https://tko.pl/316169,2025,10,22,co-sie-dzieje-z-olsztynem-gus-podal-zadziwiajace-dane-o-liczbie-mieszkancow
     //   （3 级，转引 GUS，2026-09-08 核）。奥尔什丁在下降。
     identity:
-      "奥尔什丁是波兰东北部瓦尔米亚—马祖里地区的核心城市，人口约16.6万（2024年末，波兰中央统计局，逐年略有下降），是探索马祖里湖区的传统门户。",
+      "奥尔什丁是波兰东北部瓦尔米亚—马祖里地区的核心城市，人口约16.5万（2026年1月，波兰GUS，逐年略有下降），是探索马祖里湖区的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Olsztyn (Poland; capital of Warmian-Masurian Voivodeship, about 169,793 residents in 2021, on the Łyna; a watchtower from 1334 and municipal rights in 1353 granted by the cathedral chapter of the Bishopric of Warmia; Nicolaus Copernicus lived in the town castle as administrator from 1516 to 1521 and directed its defence; 15 lakes within the administrative boundary covering about 725 ha and forest over 21 per cent of the city area, part of the Land of a Thousand Lakes; the Gothic co-cathedral of St James; the University of Warmia and Mazury founded 1999; the Michelin plant the largest employer)
     howItWorks:
-      "奥尔什丁是波兰瓦尔米亚-马祖里省的省会，2024 年末人口约 16.6 万，在瓦纳河边；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。它 1334 年从一座瞭望塔起步，1353 年由瓦尔米亚主教区的座堂议事会授予城市权——这一带中世纪长期由主教区治理，而不是世俗诸侯，城堡与教堂因此是城市的核心。哥白尼 1516 至 1521 年作为瓦尔米亚的管理者住在这座城堡里，并在 1520 至 1521 年主持了城市的防务。它最鲜明的特征是水与林：市界之内有十五个湖，水面约 725 公顷，森林占市域两成以上，因此它被视为马祖里湖区的门户，全省的标志性资源就是这一片湖群。圣雅各布哥特式共同主教座堂在老城，1999 年成立的瓦尔米亚与马祖里大学是本地最大的学校，米其林轮胎厂是最大的雇主。初来的人最容易犯的错，是把湖区想成城外的远方，而这座城本身就有十几个湖。",
+      "奥尔什丁是波兰瓦尔米亚-马祖里省的省会，2026 年 1 月人口约 16.5 万，在瓦纳河边；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。它 1334 年从一座瞭望塔起步，1353 年由瓦尔米亚主教区的座堂议事会授予城市权——这一带中世纪长期由主教区治理，而不是世俗诸侯，城堡与教堂因此是城市的核心。哥白尼 1516 至 1521 年作为瓦尔米亚的管理者住在这座城堡里，并在 1520 至 1521 年主持了城市的防务。它最鲜明的特征是水与林：市界之内有十五个湖，水面约 725 公顷，森林占市域两成以上，因此它被视为马祖里湖区的门户，全省的标志性资源就是这一片湖群。圣雅各布哥特式共同主教座堂在老城，1999 年成立的瓦尔米亚与马祖里大学是本地最大的学校，米其林轮胎厂是最大的雇主。初来的人最容易犯的错，是把湖区想成城外的远方，而这座城本身就有十几个湖。",
     layout:
       "老城建于奥卡瓦河畔的高地上，哥特式砖砌城堡矗立城市核心，历史上是天文学家哥白尼曾任职管理的城堡之一。",
     gettingAround:
