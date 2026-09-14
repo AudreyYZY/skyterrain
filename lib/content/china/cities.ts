@@ -716,9 +716,9 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "xuzhou", nameZh: "徐州", nameEn: "Xuzhou", country: "china", tier: "major", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
-    lon: 117.2830, lat: 34.2050,
+    lon: 117.1810, lat: 34.2660,
     airport: { iata: "XUZ", nameZh: "徐州观音国际机场", nameEn: "Xuzhou Guanyin Int'l", lon: 117.5553, lat: 34.0592 },
-    source: "徐州市区 34.2050,117.2830（zh.wikipedia）；XUZ 机场：zh.wikipedia（睢宁县，距市区约 30 公里）",
+    source: "徐州市区 34.2660,117.1810（彭城广场，OSM Nominatim；2026-09-15 改：原坐标 34.2050,117.2830 是东面新城区的市政府一带，与正文「老城在鼓楼、云龙两区」「徐州东站在城东」的参照点不符）；XUZ 机场：zh.wikipedia（睢宁县，距彭城广场直线约 41 公里）",
   },
   {
     id: "danzhou", nameZh: "儋州", nameEn: "Danzhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",

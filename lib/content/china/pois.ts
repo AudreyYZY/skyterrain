@@ -689,7 +689,7 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "二王庙", nameEn: "Erwang Temple", lon: 103.6040, lat: 31.0110, kind: "landmark" },
     { nameZh: "安澜索桥", nameEn: "Anlan Suspension Bridge", lon: 103.6060, lat: 31.0080, kind: "landmark" },
     { nameZh: "青城山", nameEn: "Mount Qingcheng", lon: 103.5700, lat: 30.9000, kind: "nature" },
-    { nameZh: "都江堰熊猫谷", nameEn: "Dujiangyan Panda Valley", lon: 103.5700, lat: 31.0300, kind: "nature" },
+    { nameZh: "都江堰熊猫谷", nameEn: "Dujiangyan Panda Valley", lon: 103.5808, lat: 30.9660, kind: "nature" },
   ],
   fenghuang: [
     { nameZh: "沱江吊脚楼", nameEn: "Tuojiang Stilt Houses", lon: 109.6000, lat: 27.9490, kind: "landmark" },
