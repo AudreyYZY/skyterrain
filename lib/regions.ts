@@ -55,7 +55,7 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 725,
+    terrainCount: 752,
     available: true,
   },
   {
@@ -192,6 +192,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   poland: "eastern-europe",
   czechia: "eastern-europe",
   romania: "eastern-europe",
+  bulgaria: "eastern-europe",
   slovakia: "eastern-europe",
   hungary: "eastern-europe",
   croatia: "southern-europe",
@@ -264,7 +265,8 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "spain", name: "西班牙", nameEn: "Spain", code: "ES" },
   { slug: "greece", name: "希腊", nameEn: "Greece", code: "GR" },
   { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
-  // 东欧（拼音：波兰 Bōlán → 捷克 Jiékè → 罗马尼亚 Luómǎníyà → 斯洛伐克 Sīluòfákè → 匈牙利 Xiōngyálì）
+  // 东欧（拼音：保加利亚 Bǎojiālìyà → 波兰 Bōlán → 捷克 Jiékè → 罗马尼亚 Luómǎníyà → 斯洛伐克 Sīluòfákè → 匈牙利 Xiōngyálì）
+  { slug: "bulgaria", name: "保加利亚", nameEn: "Bulgaria", code: "BG" },
   { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
   { slug: "czechia", name: "捷克", nameEn: "Czechia", code: "CZ" },
   { slug: "romania", name: "罗马尼亚", nameEn: "Romania", code: "RO" },
