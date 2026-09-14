@@ -19,11 +19,13 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "4月至6月、9月至10月气候最为宜人，是出行旺季；7、8月沿海地区高温且游客众多，中安纳托利亚高原昼夜温差可能很大，建议携带保暖衣物；跨区域出行建议提前规划航班或长途大巴。",
   },
   istanbul: {
+    // howItWorks sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2 级）；下一期约 2027-02
+    // identity sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2026-02-09 发布，经媒体转述，2 级）；下一期约 2027-02
     identity:
-      "伊斯坦布尔是土耳其最大城市与经济文化中心，人口逾1500万，横跨博斯普鲁斯海峡两岸、地跨亚欧两大洲，历史上先后是拜占庭帝国与奥斯曼帝国的都城，1923年后不再是首都但仍是土耳其最具国际影响力的城市。",
+      "伊斯坦布尔是土耳其最大城市与经济文化中心，2025年末地址登记人口约1575万（土耳其统计局），横跨博斯普鲁斯海峡两岸、地跨亚欧两大洲，历史上先后是拜占庭帝国与奥斯曼帝国的都城，1923年后不再是首都但仍是土耳其最具国际影响力的城市。",
     // howItWorks sources: Wikipedia (2026-09): Istanbul (metropolitan municipality coextensive with province; elected mayor + appointed governor; 39 districts with elected mayors; 5,461 km²; ~15.7 million 2024; European side ~65%; Fatih UNESCO 1985; mahalle/muhtar; airport 2018); Metropolitan municipalities in Turkey (Law 6360)
     howItWorks:
-      "伊斯坦布尔在行政上是一座与省同域的大都会市：民选的大都会市长管交通、供水与全市规划，中央任命的省长管警察、教育等国家事务，市下分 39 个区，各区有自己的民选区长和区议会；区之下是 mahalle，即社区，各有民选的社区长（muhtar），是登记住址与办事的基本单位。市域约 5,461 平方公里，2024 年人口约 1,570 万。博斯普鲁斯海峡把城市分成欧亚两岸，约三分之二的人口在欧洲一侧：法提赫区的历史半岛是 1985 年列入世界遗产的老城，贝伊奥卢与塔克西姆是 19 世纪以来的新城，莱文特—马斯拉克是商务区；亚洲一侧的卡德柯伊与于斯屈达尔各有自己的中心。三座跨海大桥、马尔马拉海底铁路、地铁与渡轮用一张 Istanbulkart 贯通。新机场 2018 年在北面启用。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把历史半岛当作整座城，而它只是一个 1,500 万人城市里的一个区。",
+      "伊斯坦布尔在行政上是一座与省同域的大都会市：民选的大都会市长管交通、供水与全市规划，中央任命的省长管警察、教育等国家事务，市下分 39 个区，各区有自己的民选区长和区议会；区之下是 mahalle，即社区，各有民选的社区长（muhtar），是登记住址与办事的基本单位。市域约 5,461 平方公里，2025 年末人口约 1,575 万（土耳其统计局）。博斯普鲁斯海峡把城市分成欧亚两岸，约三分之二的人口在欧洲一侧：法提赫区的历史半岛是 1985 年列入世界遗产的老城，贝伊奥卢与塔克西姆是 19 世纪以来的新城，莱文特—马斯拉克是商务区；亚洲一侧的卡德柯伊与于斯屈达尔各有自己的中心。三座跨海大桥、马尔马拉海底铁路、地铁与渡轮用一张 Istanbulkart 贯通。新机场 2018 年在北面启用。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把历史半岛当作整座城，而它只是一个 1,500 万人城市里的一个区。",
     layout:
       "城市以博斯普鲁斯海峡为界分为欧洲区与亚洲区，欧洲区又以金角湾分为老城（苏丹艾哈迈德区，历史古迹集中）与新城（贝伊奥卢区，塔克西姆广场与现代商业中心）；亚洲区（卡德柯伊）以生活气息浓厚著称。",
     gettingAround:
@@ -36,11 +38,13 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "4月至5月、9月至10月气候最宜人、游客相对较少；蓝色清真寺祈祷时段（每日五次，各约30分钟）不对游客开放，建议提前查询当日祈祷时间安排行程。",
   },
   ankara: {
+    // howItWorks sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2 级）；下一期约 2027-02
+    // identity sources（2026-09-15 核实，update）: TÜİK ADNKS 2025（2 级）；下一期约 2027-02
     identity:
-      "安卡拉是土耳其共和国首都，人口逾590万，是土耳其第二大城市，1923年由凯末尔选定为新首都，是土耳其的政治与行政中心。",
+      "安卡拉是土耳其共和国首都，2025年末地址登记人口约591万（土耳其统计局），是土耳其第二大城市，1923年由凯末尔选定为新首都，是土耳其的政治与行政中心。",
     // howItWorks sources: Wikipedia (2026-09): Ankara (capital 1923; metropolitan municipality = province; 25 districts; 25,632 km²; ~5.8 million 2024; Ulus/Kızılay/Çankaya; Jansen plan 1932 for 500,000); Metropolitan municipalities in Turkey
     howItWorks:
-      "安卡拉自 1923 年起是土耳其的首都，在行政上是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，市下分 25 个区，各区有自己的民选区长和区议会，区之下是有民选社区长的 mahalle。省域约 25,632 平方公里，2024 年人口约 580 万，是土耳其第二大城市。城市沿阿塔图尔克大道向南生长：北端的乌卢斯是城堡下的老城，克孜拉伊是共和国时期的中心，钱卡亚是总统府与使馆区，再往西南的松居特厄聚与恰伊约卢是新的商务与住宅区，国父陵在中间的山上。1932 年的扬森规划为 50 万人设计了这座首都，1950 年代起的移民早已把它撑大十倍。地铁与轻轨连起市区，高铁通往伊斯坦布尔与科尼亚，埃森博阿机场在北面。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把安卡拉当作一座只有政府的城市，而它是一座 580 万人的大学与工业城市。",
+      "安卡拉自 1923 年起是土耳其的首都，在行政上是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，市下分 25 个区，各区有自己的民选区长和区议会，区之下是有民选社区长的 mahalle。省域约 25,632 平方公里，2025 年末人口约 591 万，是土耳其第二大城市。城市沿阿塔图尔克大道向南生长：北端的乌卢斯是城堡下的老城，克孜拉伊是共和国时期的中心，钱卡亚是总统府与使馆区，再往西南的松居特厄聚与恰伊约卢是新的商务与住宅区，国父陵在中间的山上。1932 年的扬森规划为 50 万人设计了这座首都，1950 年代起的移民早已把它撑大十倍。地铁与轻轨连起市区，高铁通往伊斯坦布尔与科尼亚，埃森博阿机场在北面。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把安卡拉当作一座只有政府的城市，而它是一座 580 万人的大学与工业城市。",
     layout:
       "城市以安卡拉城堡所在的老城区为历史核心，向南延伸的新城区集中了政府机构、大学与使馆区；安尼特卡比尔（阿塔图尔克陵）坐落于城市西侧一处高地。",
     gettingAround:
@@ -90,8 +94,9 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "4月至6月、9月至10月气候温和宜人，7、8月气温可超35摄氏度但仍是海滩旅游旺季；冬季（12月至次年3月）气候温和，适合探访古迹淡季出行。",
   },
   cappadocia: {
+    // identity sources（2026-09-15 核实，update）: TÜİK ADNKS 2025 内夫谢希尔分乡镇数（地方媒体转述，2 级）；下一期约 2027-02
     identity:
-      "卡帕多奇亚是中安纳托利亚一片以精灵烟囱火山灰地貌与热气球飞行闻名的地区，核心镇格雷梅人口约2000人，是土耳其最具辨识度的旅游目的地之一。",
+      "卡帕多奇亚是中安纳托利亚一片以精灵烟囱火山灰地貌与热气球飞行闻名的地区，核心镇格雷梅2025年登记人口约2,236人（土耳其统计局），是土耳其最具辨识度的旅游目的地之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cappadocia and Göreme (Turkey; a historical region of Central Anatolia spanning Nevşehir, Kayseri, Aksaray, Kırşehir, Sivas and Niğde provinces, the name from Old Persian Katpatuka; the landscape formed by erosion of thick volcanic deposits from eruptions of Erciyes, Hasan Dağ and Göllüdağ, producing the fairy chimneys; ruled in turn by Persian, Greek, Roman, Byzantine and Ottoman powers, an early Christian centre with the Cappadocian Fathers of the 4th century; the Göreme Open Air Museum with more than 30 rock-cut churches and chapels with Byzantine frescoes, Göreme National Park and the Rock Sites of Cappadocia inscribed by UNESCO in 1985; the underground cities of Derinkuyu and Kaymaklı; cave hotels and hot-air ballooning)
     howItWorks:
       "卡帕多奇亚是土耳其中安纳托利亚的一片历史地区，跨内夫谢希尔、开塞利、阿克萨赖等数省，游客常住的格雷梅是内夫谢希尔省的一个镇；土耳其 2012 年第 6360 号法之后，人口较多的省实行“大市”制，市界与省界重合，本地事务由市与区两级办理。这片地貌来自火山：埃尔吉耶斯山、哈桑山与格柳山的多次喷发把厚层火山灰盖在这一带，其后的流水与风把松软的凝灰岩切成柱与谷，硬质岩帽留在柱顶，形成当地所称的“仙人烟囱”。凝灰岩好挖不易塌，因此人们直接在岩体里凿出住房、教堂与整座地下城——代林库尤与卡伊马克勒的地下城可深入数层，用于避难；格雷梅露天博物馆里有三十多座岩凿教堂，壁画属拜占庭时期。1985 年“格雷梅国家公园与卡帕多奇亚岩石遗址”列入世界遗产。热气球在日出前起飞，由民航主管部门按天气与流量管控。初来的人最容易犯的错，是把卡帕多奇亚当作一个城，而它是一片跨省的地区。",
