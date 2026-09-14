@@ -203,10 +203,10 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
     //   原 identity 的「1.7 万」对不上任何已知年份。九年前的数，1212.mn 无法直连确认更新一期。
     identity:
       "车车尔勒格是蒙古中部阿尔汗盖省首府，2025年常住人口约2.14万（蒙古国家统计局），坐落于杭爱山东麓，是探索科尔戈—特日和音查干湖国家公园的核心门户城市。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tsetserleg (Mongolia; capital of Arkhangai Province, 21,620 residents in 2017 over 536 km² at 1,691 m; 600 km south-west of Ulaanbaatar on the north-eastern slopes of the Khangai mountains; founded around 1631, the Zayiin Gegeen Monastery established in the early 1680s, its main temple now the provincial museum; a dry-winter subarctic climate milder than the surrounding region, January nights about −15 °C to −25 °C; airport with connections to Ulaanbaatar; theatre, hospital and agricultural college; food processing the main industry)
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tsetserleg (Mongolia; capital of Arkhangai Province, 21,620 residents in 2017 over 536 km² at 1,691 m; 600 km south-west of Ulaanbaatar on the north-eastern slopes of the Khangai mountains; founded around 1631, the Zayiin Gegeen Monastery established in the early 1680s, its main temple now the provincial museum; a dry-winter subarctic climate milder than the surrounding region, January nights about −15 °C to −25 °C; airport with connections to Ulaanbaatar; theatre, hospital and agricultural college; food processing the main industry) ⚑ 2026-09-15：「约 600 km」与本条公路里程约 480 km 矛盾，按注册表坐标算直线约 410 km，正文已改。
     // howItWorks sources（2026-09-13 回扫改）：原「约建于 1631 年，1680 年代初建起扎音格根寺」把寺院始建（多说 1631）与主殿建成年代混为一谈，建城年又有 1616 / 1631 两说，均为 3 级且互相矛盾，删去年份，只写城镇围绕寺院发展。核实 2026-09-13
     howItWorks:
-      "车车尔勒格是蒙古国阿尔汗盖省的省会，2025 年常住人口约 2.14 万，市域约 536 平方公里，海拔约 1,691 米；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的医院、剧院与中等教育。城市在杭爱山脉的东北坡上，背靠布尔干山，乌兰巴托在东面约 600 公里。城镇围绕扎音格根寺发展起来，20 世纪寺庙停用，主殿如今是阿尔汗盖省博物馆，山坡上的白色佛像与寺墙是全城的背景。地形给了它一个特别之处：虽在高原上，它的冬天比周边缓和，一月夜间约在零下 15 至 25 度，在蒙古已算温和。食品加工是本地的主要工业，另有农牧学院。城外的岑赫尔温泉与更西的白湖是省内的去处，都需数小时车程。初来的人最容易犯的错，是把它与同省另一个叫车车尔勒格的苏木混淆，那是省北部的另一个行政单位。",
+      "车车尔勒格是蒙古国阿尔汗盖省的省会，2025 年常住人口约 2.14 万，市域约 536 平方公里，海拔约 1,691 米；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的医院、剧院与中等教育。城市在杭爱山脉的东北坡上，背靠布尔干山，乌兰巴托在东面直线约 410 公里。城镇围绕扎音格根寺发展起来，20 世纪寺庙停用，主殿如今是阿尔汗盖省博物馆，山坡上的白色佛像与寺墙是全城的背景。地形给了它一个特别之处：虽在高原上，它的冬天比周边缓和，一月夜间约在零下 15 至 25 度，在蒙古已算温和。食品加工是本地的主要工业，另有农牧学院。城外的岑赫尔温泉与更西的白湖是省内的去处，都需数小时车程。初来的人最容易犯的错，是把它与同省另一个叫车车尔勒格的苏木混淆，那是省北部的另一个行政单位。",
     layout:
       "城市依托山谷地形而建，藏传佛教寺院建筑与苏联时期规划的城镇格局并存。",
     gettingAround:

@@ -139,7 +139,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   szentendre: {
     // identity sources: KSH 2025-01-01：28,483。2026-09-13 核。
     identity:
-      "Szentendre stands on the west bank of the Danube about 20 km north of Budapest, with about 28,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town on a slope above the river, and from the twentieth century a place where painters settled; galleries and craft shops are what it is known for today.",
+      "Szentendre stands on the west bank of the Danube about 20 km in a straight line north of Budapest, with about 28,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town on a slope above the river, and from the twentieth century a place where painters settled; galleries and craft shops are what it is known for today.",
     howItWorks:
       "Szentendre belongs to Pest county and is run by an elected mayor and council. Administratively it is a town in its own right, but in daily life it is closely tied to Budapest — the HÉV suburban railway runs straight there, and many people live here and work in the capital. Its present appearance dates from the seventeenth and eighteenth centuries, when Serb communities who settled here built several Orthodox churches whose towers are still part of the skyline. Addresses read street and number, and locals orient by the main square, the riverfront and the church up the slope. Newcomers most often go wrong by walking only the shopping street along the river, when the narrow lanes up the slope are what the old town is really about.",
     layout:

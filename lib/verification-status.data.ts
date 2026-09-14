@@ -1936,7 +1936,7 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/khovd": { f: 7, v: 2, d: "2026-09-13" },
   "travel/olgii": { f: 7, v: 2, d: "2026-09-13" },
   "travel/choibalsan": { f: 7, v: 2, d: "2026-09-13" },
-  "travel/tsetserleg": { f: 7, v: 2, d: "2026-09-13" },
+  "travel/tsetserleg": { f: 7, v: 2, d: "2026-09-15" },
   "travel/malaysia-overview": { f: 6, v: 1, d: "2026-09-07", l: 1 },
   "travel/kuala-lumpur": { f: 7, v: 2, d: "2026-09-08", l: 1 },
   "travel/george-town": { f: 7, v: 2, d: "2026-09-08", l: 1 },

@@ -268,7 +268,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
 
   nara: {
     identity:
-      "Nara is the capital of Nara Prefecture, about 40 km south of Kyoto, and was the capital of Japan (as Heijo-kyo) in the 8th century — earlier than Kyoto. The city is small; several huge old temples and shrines and a large park where wild deer roam are all close together, making Nara the place to feel the Nara period and early Buddhist art.",
+      "Nara is the capital of Nara Prefecture, about 40 km by road south of Kyoto, and was the capital of Japan (as Heijo-kyo) in the 8th century — earlier than Kyoto. The city is small; several huge old temples and shrines and a large park where wild deer roam are all close together, making Nara the place to feel the Nara period and early Buddhist art.",
     // howItWorks sources: 奈良の鹿愛護会每年 7 月调查：2026-07 = 1,687 头，2025-07 = 1,465 头。会变的量，下一轮（2027 年 7 月之后）回来刷新。2026-09-12 核。
     howItWorks:
       "Nara city is the seat of Nara Prefecture, a core city of about 277 km² with about 338,000 people at the 2025 census; the city runs local services, and police and schools belong to the prefecture. From 710 to 784 this was the Japanese capital of Heijō-kyō, whose palace site lies in the fields to the west, while Tōdai-ji, Kōfuku-ji and Kasuga Shrine stand in Nara Park to the east with about 1,700 deer wandering through it (July 2026 count), the group inscribed as World Heritage in 1998; Kintetsu Nara station lies at the park's edge, JR Nara 1 km west, Kyoto about 45 minutes and Osaka about 40, and most visitors come and go in a day. Newcomers most often go wrong by confusing Nara city with Nara Prefecture, or by expecting Hōryū-ji in the city, when it lies 12 km south-west in the town of Ikaruga.",
