@@ -145,13 +145,14 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，7月歌剧节期间住宿紧张、建议提前预订；蓬卡哈尔尤距市区约30公里，是萨翁林纳周边经典的一日游目的地。",
   },
   kuopio: {
+    // howItWorks sources（2026-09-15 核实，add-year）: Statistics Finland PxWeb 11re，kunta 297 = 126,572（2025-12-31），1 级；下一期约 2027-04
     // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
     //   库奥皮奥 126,626（2025 年末，市政府官方新闻稿，2 级）vs 仓库的 126,572（统计局初步数，3 级转引）—— **差 54 人是市自身登记与统计局初步数的口径微差，判定不改**。2026-09-10 复核，维持 2026-09-08 的结论。
     identity:
       "库奥皮奥是芬兰中东部湖区的核心城市，人口约12.7万（2025年末），坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuopio (Finland; regional capital of North Savo, about 126,572 residents, the eighth-most populous municipality, the region about 148,000; nearly surrounded by Lake Kallavesi, Finland's tenth-largest lake at 472.76 km²; Puijo tower and ski jumps with annual World Cup ski jumping; kalakukko, the Savonian fish pastry; the market square and market hall; until 2018 the seat of the primate of the Finnish Orthodox Church; University of Eastern Finland; Kuopio Airport in Siilinjärvi, the fifth busiest in Finland)
     howItWorks:
-      "库奥皮奥是芬兰北萨沃区的首府，人口约 12.7 万，按人口计是全国第八大市镇，周边地区约 14.8 万；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市几乎被卡拉韦西湖围住——这是按面积计芬兰第十大湖，面积约 473 平方公里，因此从任何一条主街往下走几百米都是水。普伊约山的塔与跳台立在城北的高地上，每年办跳台滑雪世界杯的分站；集市广场与市场大厅是本地生活的中心，那里卖的“鱼库库”是把鱼裹进黑麦面团烤成的萨沃老食品，这座城因此得了“鱼库库应许之地”的绰号。芬兰东方大学的校区在这里，医药与公共卫生研究是它的强项；直到 2018 年芬兰东正教会的首牧驻此，教会博物馆仍在城中。机场在邻镇锡林耶尔维。初来的人最容易犯的错，是以为芬兰的东正教会只是少数人的事，而它是这个国家的两个国教会之一。",
+      "库奥皮奥是芬兰北萨沃区的首府，2025 年末人口约 12.7 万（芬兰统计局），按人口计是全国第八大市镇，周边地区约 14.8 万；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市几乎被卡拉韦西湖围住——这是按面积计芬兰第十大湖，面积约 473 平方公里，因此从任何一条主街往下走几百米都是水。普伊约山的塔与跳台立在城北的高地上，每年办跳台滑雪世界杯的分站；集市广场与市场大厅是本地生活的中心，那里卖的“鱼库库”是把鱼裹进黑麦面团烤成的萨沃老食品，这座城因此得了“鱼库库应许之地”的绰号。芬兰东方大学的校区在这里，医药与公共卫生研究是它的强项；直到 2018 年芬兰东正教会的首牧驻此，教会博物馆仍在城中。机场在邻镇锡林耶尔维。初来的人最容易犯的错，是以为芬兰的东正教会只是少数人的事，而它是这个国家的两个国教会之一。",
     layout:
       "市中心紧凑，沿卡拉韦西湖西岸展开，普宜奥山位于市区北侧，是城市重要的地标制高点。",
     gettingAround:
@@ -185,13 +186,14 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "6-8月适合探索沿海风光，2-3月冬季海冰稳固期可体验独特的破冰船与海冰徒步活动，奥卢也是前往罗瓦涅米的中转门户。",
   },
   rovaniemi: {
+    // howItWorks sources（2026-09-15 核实，add-year）: Statistics Finland PxWeb 11re，kunta 698 = 66,191（2025-12-31），1 级；下一期约 2027-04
     // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
     //   罗瓦涅米 66,191（2025-12-31，芬兰统计局，3 级转引），与仓库完全一致、是最新一期。2026-09-10 复核，维持既有结论，本轮无需改动。
     identity:
       "罗瓦涅米是芬兰拉普兰省的首府，人口约6.6万（2025年末），坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rovaniemi (Finland; regional capital of Lapland, about 66,191 residents, the 17th largest city, one of the largest municipalities in Europe by area; about 6 km south of the Arctic Circle at the confluence of the Kemijoki and Ounasjoki; about 90 per cent of buildings destroyed by German forces in 1944, rebuilt to Alvar Aalto's plan in the shape of a reindeer's head with the roads as antlers; Santa Claus Village at the Arctic Circle, the slogan trademarked in 2009; midnight sun 7 June–6 July, December under six minutes of sunshine a day; auroras up to 200 nights a year; University of Lapland)
     howItWorks:
-      "罗瓦涅米是芬兰拉普兰区的首府，人口约 6.6 万，是芬兰第 17 大城市，市镇面积在欧洲各地方行政体中名列前茅；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市在凯米河与奥纳斯河的交汇处，北极圈以南约 6 公里。1944 年拉普兰战争中约九成的建筑被摧毁，战后按阿尔瓦·阿尔托的规划重建——他把城市的路网画成一只驯鹿的头，主干道是鹿角，这一形状在地图上仍能看出来，因此这里几乎没有老城。北极圈线上的圣诞老人村在城北 8 公里，1985 年起对外接待，城市 2009 年把“圣诞老人的家乡”注册为商标，冬季旅游是本地最大的产业之一。6 月 7 日到 7 月 6 日太阳不落，12 月每天的日照不足六分钟，极光一年可见近两百次；拉普兰大学在城里。初来的人最容易犯的错，是来找一座北极老城，而这座城是 1945 年之后按图纸重建的。",
+      "罗瓦涅米是芬兰拉普兰区的首府，2025 年末人口约 6.6 万（芬兰统计局），是芬兰第 17 大城市，市镇面积在欧洲各地方行政体中名列前茅；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市在凯米河与奥纳斯河的交汇处，北极圈以南约 6 公里。1944 年拉普兰战争中约九成的建筑被摧毁，战后按阿尔瓦·阿尔托的规划重建——他把城市的路网画成一只驯鹿的头，主干道是鹿角，这一形状在地图上仍能看出来，因此这里几乎没有老城。北极圈线上的圣诞老人村在城北 8 公里，1985 年起对外接待，城市 2009 年把“圣诞老人的家乡”注册为商标，冬季旅游是本地最大的产业之一。6 月 7 日到 7 月 6 日太阳不落，12 月每天的日照不足六分钟，极光一年可见近两百次；拉普兰大学在城里。初来的人最容易犯的错，是来找一座北极老城，而这座城是 1945 年之后按图纸重建的。",
     layout:
       "市区位于凯米约基河与其支流交汇处，二战后按建筑师阿尔瓦·阿尔托的规划重建（城市呈驯鹿头形布局），北极圈线穿过市郊的圣诞老人村。",
     gettingAround:
@@ -204,13 +206,14 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "12月至次年3月是观测极光与圣诞主题旅游旺季，也是全年游客最多的时段；6-7月可见极昼、适合户外活动，冬季务必备好极地保暖装备。",
   },
   kuusamo: {
+    // howItWorks sources（2026-09-15 核实，add-year）: Statistics Finland PxWeb 11re，kunta 305 = 14,800（2025-12-31），1 级；下一期约 2027-04
     // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
     //   库萨莫 14,792（2025-12-31，芬兰统计局初步数，3 级转引），与同条目 howItWorks 已引的 1.48 万一致。2026-09-10 核。
     identity:
       "库萨莫是芬兰东北部的小城，2025 年末人口约1.48万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuusamo (Finland; town and municipality in North Ostrobothnia near the eastern border; population 14,800 over 5,809 km², the eleventh largest municipality by area; about 60 km south of the Arctic Circle; Ruka ski resort on the 492 m Rukatunturi; about a million tourists a year, tourism 149 million euros in 2024, 18 per cent of output; Oulanka National Park and the 80 km Karhunkierros trail; snow cover about 200 days a year, late October to mid-May; 166 lakes, forests 90 per cent of the land; Kuusamo Airport 6 km from town, 129,373 passengers in 2024)
     howItWorks:
-      "库萨莫是芬兰北博滕区的市镇，人口约 1.48 万，市域约 5,809 平方公里，是全国面积第 11 大的市镇，在北极圈以南约 60 公里；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。人少地大是这里的常态：森林占了九成的土地，境内有 166 个湖，河流分别流向白海与波的尼亚湾。经济几乎押在旅游上——2024 年旅游收入 1.49 亿欧元，占本地产出的约 18%，每年约一百万人次到访，主要去的是城北 25 公里、鲁卡山上的鲁卡滑雪场；奥兰卡国家公园与全长 80 公里的“熊之径”徒步道在东面靠边境处。这里一年约有两百天积雪，从十月底到五月中；空气质量按国际监测常年居前列。机场在镇外 6 公里，2024 年运送约 12.9 万人次，赫尔辛基有直飞。初来的人最容易犯的错，是把鲁卡当作库萨莫的市中心，而它是山上的度假区，镇子在山下另一个地方。",
+      "库萨莫是芬兰北博滕区的市镇，2025 年末人口约 1.48 万（芬兰统计局），市域约 5,809 平方公里，是全国面积第 11 大的市镇，在北极圈以南约 60 公里；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。人少地大是这里的常态：森林占了九成的土地，境内有 166 个湖，河流分别流向白海与波的尼亚湾。经济几乎押在旅游上——2024 年旅游收入 1.49 亿欧元，占本地产出的约 18%，每年约一百万人次到访，主要去的是城北 25 公里、鲁卡山上的鲁卡滑雪场；奥兰卡国家公园与全长 80 公里的“熊之径”徒步道在东面靠边境处。这里一年约有两百天积雪，从十月底到五月中；空气质量按国际监测常年居前列。机场在镇外 6 公里，2024 年运送约 12.9 万人次，赫尔辛基有直飞。初来的人最容易犯的错，是把鲁卡当作库萨莫的市中心，而它是山上的度假区，镇子在山下另一个地方。",
     layout:
       "小城本身规模不大，鲁卡滑雪度假区位于城北约25公里处，奥兰卡国家公园则在更北的芬兰—俄罗斯边境附近。",
     gettingAround:

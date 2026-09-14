@@ -226,8 +226,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season and the best time to see the meeting of the two seas; the round-trip walk to the tip of Grenen takes about 1–1.5 hours, with the best views at low tide.",
   },
   roenne: {
+    // identity sources（2026-09-15 核实，add-year）: DST StatBank BY1，byområde Rønne = 13,589（2026-01-01），1 级；下一期约 2027-05
     identity:
-      "Rønne is the main town on the island of Bornholm, with a population of about 13,000, the island's largest port and administrative centre, and a gateway for exploring the island's granite landforms and historic castle.",
+      "Rønne is the main town on the island of Bornholm, with an urban population of about 13,600 as of 1 January 2026 (Statistics Denmark), the island's largest port and administrative centre, and a gateway for exploring the island's granite landforms and historic castle.",
     // howItWorks sources: 伦讷城区 13,589 人、博恩霍尔姆市镇（全岛单一市镇）38,677 人
     //   （DST BY1 / Byopgørelsen 2026-01-01，1 级；FOLK1A 2026 年三季度核对 38,651，2026-09-08 核）。
     //   两档口径标注清楚、数字准确，本轮无需改动 —— 小岛条目最容易犯的「把全岛的数写成镇的」这里没有发生。

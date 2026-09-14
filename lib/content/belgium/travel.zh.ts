@@ -152,14 +152,16 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
   },
 
   leuven: {
+    // howItWorks sources（2026-09-15 核实，add-year）: IBZ/RRN population-bevolking-20260101.pdf，Leuven = 105,233，1 级；下一期约 2027-01
+    // identity sources（2026-09-15 核实，add-year）: IBZ/RRN population-bevolking-20260101.pdf，Leuven = 105,233，1 级；下一期约 2027-01
     // identity sources: 鲁汶市镇 105,233 人（比利时国家登记处 IBZ，2026-01-01，1 级，2026-09-08 核）。
     //   「比利时第八大城市」按布鲁塞尔（大区）> 安特卫普 > 根特 > 沙勒罗瓦 > 列日 > 布鲁日 >
     //   那慕尔 > 鲁汶 这一排法成立。本轮核实无需改动。
     identity:
-      "鲁汶是佛兰芒布拉班特省首府，人口约10万，鲁汶大学始建于1425年，是低地国家历史最悠久的大学，城市因此充满青年活力。",
+      "鲁汶是佛兰芒布拉班特省首府，2026年1月1日人口约10.5万（比利时国家登记处IBZ），鲁汶大学始建于1425年，是低地国家历史最悠久的大学，城市因此充满青年活力。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leuven (capital of Flemish Brabant; over 100,000, eighth-largest in Belgium; ~25 km east of Brussels; a university city since 1425, the oldest in the Low Countries; KU Leuven the largest Dutch-speaking university in the world, over 50,000 students; Brabantine Gothic town hall 1439–63; St Peter's; AB InBev headquarters and Stella Artois; imec; ECoC 2030)
     howItWorks:
-      "鲁汶是佛兰德布拉班特省的省会，由民选的市长和市议会治理，人口超过 10 万，在布鲁塞尔以东约 25 公里；佛兰德大区管教育，荷兰语是这里的语言。1425 年起它就是大学城，是低地国家最古老的一座——今天的鲁汶大学是世界上最大的荷兰语大学，五万多名学生住在一座十万人的城里，学期与假期决定了这座城的节奏。1439 至 1463 年建成的布拉班特哥特式市政厅是它的地标，圣彼得教堂在对面，老市集广场沿街全是酒吧；百威英博的总部在城里，时代啤酒从这里出产，纳米电子研究所 imec 让它同时是欧洲的芯片研究重镇。2030 年它将是欧洲文化之都。初来的人最容易犯的错，是把鲁汶当作布鲁塞尔的郊区，而它是一座自成一体的大学城，暑假里街上会空掉一半。",
+      "鲁汶是佛兰德布拉班特省的省会，由民选的市长和市议会治理，2026 年人口约 10.5 万，在布鲁塞尔以东约 25 公里；佛兰德大区管教育，荷兰语是这里的语言。1425 年起它就是大学城，是低地国家最古老的一座——今天的鲁汶大学是世界上最大的荷兰语大学，五万多名学生住在一座十万人的城里，学期与假期决定了这座城的节奏。1439 至 1463 年建成的布拉班特哥特式市政厅是它的地标，圣彼得教堂在对面，老市集广场沿街全是酒吧；百威英博的总部在城里，时代啤酒从这里出产，纳米电子研究所 imec 让它同时是欧洲的芯片研究重镇。2030 年它将是欧洲文化之都。初来的人最容易犯的错，是把鲁汶当作布鲁塞尔的郊区，而它是一座自成一体的大学城，暑假里街上会空掉一半。",
     layout:
       "市政厅哥特式建筑是老城的标志；大贝居安会院是老城内保存完好的历史街区；鲁汶大学各学院建筑分布在老城各处，与城市融为一体。",
     gettingAround:
@@ -193,8 +195,9 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
   },
 
   dinant: {
+    // identity sources（2026-09-15 核实，update）: IBZ/RRN population-bevolking-20260101.pdf，Dinant = 13,405，1 级；下一期约 2027-01
     identity:
-      "迪南是那慕尔省一座默兹河畔的小城，人口约1.3万，以河岸崖壁上的城堡与萨克斯管发明者阿道夫·萨克斯的出生地而闻名。",
+      "迪南是那慕尔省一座默兹河畔的小城，2026年1月1日人口约1.34万（比利时国家登记处IBZ），以河岸崖壁上的城堡与萨克斯管发明者阿道夫·萨克斯的出生地而闻名。",
     // howItWorks sources: 迪南市镇 13,405 人（比利时国家登记处 IBZ，2026-01-01，1 级，2026-09-08 核）。
     //   原文引的是 2018 年的 13,544，**落后八期** —— 数字几乎没变，但年份不刷新就无从判断它是不是还成立。
     howItWorks:

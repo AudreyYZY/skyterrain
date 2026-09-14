@@ -149,14 +149,15 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
   },
 
   husavik: {
+    // identity sources（2026-09-15 核实，update）: Hagstofa MAN030101，byggðakjarni Húsavík = 2,403（2026-01-01），1 级；下一期约 2027-03
     // identity sources: 「欧洲观鲸之都」经查证是当地旅游业的自我宣传口号（多家站点均写「bills itself as」），无官方或独立评选出处，已降级为「当地常自称」。3 级，2026-09-09 核。
     //   https://visitorsguide.is/husavik-the-whale-watching-capital-of-europe/
     //   人口 2,300–2,500 的区间表述本轮未找到更精确的单一官方数，保留区间。
     identity:
-      "胡萨维克是冰岛北部一座渔港小镇，人口约 2300 人，以观鲸闻名、当地常自称“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
+      "胡萨维克是冰岛北部一座渔港小镇，2026年1月1日城镇聚落人口2,403人（冰岛统计局），以观鲸闻名、当地常自称“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Húsavík (Iceland; town in Norðurþing municipality on the north coast with about 2,300–2,500 residents, on Skjálfandi bay; a centre of whale watching in Iceland because whales of several species enter the bay; the wooden church Húsavíkurkirkja of 1907 the chief landmark; the Húsavík Whale Museum, the Exploration Museum and a Eurovision museum opened in 2021; recorded as the first place in Iceland settled by a Norseman, the Swedish Viking Garðar Svavarsson wintering here around 870; the 2020 film Eurovision Song Contest: The Story of Fire Saga set here, its title song Oscar-nominated; Akureyri within an hour via the Vaðlaheiðargöng tunnel of 2019; flights ended in 2024)
     howItWorks:
-      "胡萨维克是冰岛北岸的城镇，属北辛市镇，人口约 2,300 至 2,500；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子面朝斯乔尔万迪湾，几种鲸每年夏天进湾觅食，因此这里成了冰岛观鲸的中心——出海的船从港口发出，鲸鱼博物馆就在码头边，本地经济由此从渔业转向了旅游。1907 年建成的木造教堂立在坡上，是全镇的标志。按记载，这里是冰岛最早被北欧人过冬居住的地方：约公元 870 年瑞典人加尔达尔·斯瓦瓦尔松在此越冬。2020 年一部以欧洲歌唱大赛为题材的电影把故事放在这座镇上，主题曲获奥斯卡提名，之后镇里开了一间相关的小博物馆。2019 年瓦兹拉海济隧道通车后，到阿克雷里只要一小时；本地机场的定期航班 2024 年停飞。初来的人最容易犯的错，是把观鲸当作全年项目，而它按季节与天气开船。",
+      "胡萨维克是冰岛北岸的城镇，属北辛市镇，2026 年 1 月 1 日城镇聚落人口 2,403（冰岛统计局）；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子面朝斯乔尔万迪湾，几种鲸每年夏天进湾觅食，因此这里成了冰岛观鲸的中心——出海的船从港口发出，鲸鱼博物馆就在码头边，本地经济由此从渔业转向了旅游。1907 年建成的木造教堂立在坡上，是全镇的标志。按记载，这里是冰岛最早被北欧人过冬居住的地方：约公元 870 年瑞典人加尔达尔·斯瓦瓦尔松在此越冬。2020 年一部以欧洲歌唱大赛为题材的电影把故事放在这座镇上，主题曲获奥斯卡提名，之后镇里开了一间相关的小博物馆。2019 年瓦兹拉海济隧道通车后，到阿克雷里只要一小时；本地机场的定期航班 2024 年停飞。初来的人最容易犯的错，是把观鲸当作全年项目，而它按季节与天气开船。",
     layout:
       "胡萨维克在斯基亚尔万迪湾东岸，背靠低山，港口是全镇的中心，观鲸船就从这里出发。天气好时隔着海湾能看到远处的雪山。镇子很小，几条街就走完。",
     gettingAround:

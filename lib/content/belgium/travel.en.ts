@@ -152,14 +152,16 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
 
   leuven: {
+    // howItWorks sources（2026-09-15 核实，add-year）: IBZ/RRN population-bevolking-20260101.pdf，Leuven = 105,233，1 级；下一期约 2027-01
+    // identity sources（2026-09-15 核实，add-year）: IBZ/RRN population-bevolking-20260101.pdf，Leuven = 105,233，1 级；下一期约 2027-01
     // identity sources: 鲁汶市镇 105,233 人（比利时国家登记处 IBZ，2026-01-01，1 级，2026-09-08 核）。
     //   「比利时第八大城市」按布鲁塞尔（大区）> 安特卫普 > 根特 > 沙勒罗瓦 > 列日 > 布鲁日 >
     //   那慕尔 > 鲁汶 这一排法成立。本轮核实无需改动。
     identity:
-      "Leuven is the capital of Flemish Brabant, with a population of about 100,000. Founded in 1425, KU Leuven is the oldest university in the Low Countries, giving the city its youthful energy.",
+      "Leuven is the capital of Flemish Brabant, with a population of about 105,000 as of 1 January 2026 (Belgian National Register, IBZ). Founded in 1425, KU Leuven is the oldest university in the Low Countries, giving the city its youthful energy.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leuven (capital of Flemish Brabant; over 100,000, eighth-largest in Belgium; ~25 km east of Brussels; a university city since 1425, the oldest in the Low Countries; KU Leuven the largest Dutch-speaking university in the world, over 50,000 students; Brabantine Gothic town hall 1439–63; St Peter's; AB InBev headquarters and Stella Artois; imec; ECoC 2030)
     howItWorks:
-      "Leuven is the capital of Flemish Brabant, governed by an elected mayor and council, with more than 100,000 people, Belgium's eighth city, about 25 km east of Brussels; the Flemish Region runs education and Dutch is the language here. It has been a university city since 1425, the oldest in the Low Countries — today's KU Leuven is the largest Dutch-speaking university in the world, and its more than fifty thousand students in a city of a hundred thousand set the city's rhythm by term and vacation. The Brabantine Gothic town hall built between 1439 and 1463 is its landmark, St Peter's stands opposite and the Oude Markt is a square of bars end to end; AB InBev has its headquarters here, Stella Artois is brewed here, and the nanoelectronics institute imec makes it a European centre of chip research as well. In 2030 it will be European Capital of Culture. Newcomers most often go wrong by taking Leuven for a suburb of Brussels, when it is a university city of its own, half emptied in the summer vacation.",
+      "Leuven is the capital of Flemish Brabant, governed by an elected mayor and council, with about 105,000 people as of 1 January 2026 (IBZ), Belgium's eighth city, about 25 km east of Brussels; the Flemish Region runs education and Dutch is the language here. It has been a university city since 1425, the oldest in the Low Countries — today's KU Leuven is the largest Dutch-speaking university in the world, and its more than fifty thousand students in a city of a hundred thousand set the city's rhythm by term and vacation. The Brabantine Gothic town hall built between 1439 and 1463 is its landmark, St Peter's stands opposite and the Oude Markt is a square of bars end to end; AB InBev has its headquarters here, Stella Artois is brewed here, and the nanoelectronics institute imec makes it a European centre of chip research as well. In 2030 it will be European Capital of Culture. Newcomers most often go wrong by taking Leuven for a suburb of Brussels, when it is a university city of its own, half emptied in the summer vacation.",
     layout:
       "The Gothic town hall is the old town's landmark; the Groot Begijnhof is a well-preserved historic quarter within the old town; the buildings of KU Leuven's various faculties are scattered throughout the old town, woven into the fabric of the city.",
     gettingAround:
@@ -193,8 +195,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
 
   dinant: {
+    // identity sources（2026-09-15 核实，update）: IBZ/RRN population-bevolking-20260101.pdf，Dinant = 13,405，1 级；下一期约 2027-01
     identity:
-      "Dinant is a small town in Namur Province on the Meuse, with a population of about 13,000, known for its clifftop citadel and as the birthplace of Adolphe Sax, inventor of the saxophone.",
+      "Dinant is a small town in Namur Province on the Meuse, with a population of about 13,400 as of 1 January 2026 (Belgian National Register, IBZ), known for its clifftop citadel and as the birthplace of Adolphe Sax, inventor of the saxophone.",
     // howItWorks sources: 迪南市镇 13,405 人（比利时国家登记处 IBZ，2026-01-01，1 级，2026-09-08 核）。
     //   原文引的是 2018 年的 13,544，**落后八期** —— 数字几乎没变，但年份不刷新就无从判断它是不是还成立。
     howItWorks:
