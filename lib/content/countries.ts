@@ -61,5 +61,4 @@ export const CONTENT_COUNTRIES = [
   "bulgaria",
   "uzbekistan",
   "lithuania",
-  "uae",
 ] as const;

@@ -47,7 +47,7 @@ export const REGIONS: Region[] = [
     name: "亚洲",
     nameEn: "Asia",
     center: { lon: 90.0, lat: 40.0, height: 14000000 },
-    terrainCount: 386,
+    terrainCount: 374,
     available: true,
   },
   {
@@ -166,7 +166,6 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   mongolia: "eastern-asia",
   malaysia: "south-eastern-asia",
   turkey: "western-asia",
-  uae: "western-asia",
   usa: "northern-america",
   canada: "northern-america",
   australia: "australia-and-new-zealand",
@@ -233,8 +232,7 @@ export const COUNTRIES: CountryMeta[] = [
   // 中亚（拼音：哈萨克斯坦 Hāsàkèsītǎn → 乌兹别克斯坦 Wūzībiékèsītǎn）
   { slug: "kazakhstan", name: "哈萨克斯坦", nameEn: "Kazakhstan", code: "KZ" },
   { slug: "uzbekistan", name: "乌兹别克斯坦", nameEn: "Uzbekistan", code: "UZ" },
-  // 西亚（拼音：阿联酋 Āliánqiú → 土耳其 Tǔ'ěrqí）
-  { slug: "uae", name: "阿联酋", nameEn: "United Arab Emirates", code: "AE" },
+  // 西亚
   { slug: "turkey", name: "土耳其", nameEn: "Turkey", code: "TR" },
   // 南亚（暂空）
   // 东南亚（拼音：菲律宾 Fēilǜbīn → 马来西亚 Mǎláixīyà → 泰国 Tàiguó → 新加坡 Xīnjiāpō → 印度尼西亚 Yìndùníxīyà → 越南 Yuènán）
