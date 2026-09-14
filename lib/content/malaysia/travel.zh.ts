@@ -93,8 +93,9 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "全年高温多湿；作为新加坡的邻近城市，物价相对亲民，是许多游客搭配新加坡行程的延伸目的地。",
   },
   "malacca-city": {
+    // identity sources（2026-09-15 核实，update）: DOSM Current Population Estimates by Administrative District 2025（2025-10-02，1 级）；原「老城核心区约 5 万」查无官方口径；下一期约 2026-10
     identity:
-      "马六甲能成为15世纪东南亚的主要港口之一，本质上是一次地理上的精准选址——1402年，流亡的巨港王子拜里米苏拉选中这处扼守马六甲海峡最窄段的港湾建都，往来于印度洋与南中国海之间的商船必须经过这条水道，马六甲苏丹国由此迅速崛起为连接中国、印度、阿拉伯的转口贸易枢纽。马六甲市是马六甲州首府，人口约5万（老城核心区），坐落于马六甲海峡东岸，2008年老城区与乔治市共同列入UNESCO世界遗产名录。",
+      "马六甲能成为15世纪东南亚的主要港口之一，本质上是一次地理上的精准选址——1402年，流亡的巨港王子拜里米苏拉选中这处扼守马六甲海峡最窄段的港湾建都，往来于印度洋与南中国海之间的商船必须经过这条水道，马六甲苏丹国由此迅速崛起为连接中国、印度、阿拉伯的转口贸易枢纽。马六甲市是马六甲州首府，马六甲中央县人口约63.3万（2025年，马来西亚统计局；县境与市政厅辖区大部分重合，范围大于老城核心区），坐落于马六甲海峡东岸，2008年老城区与乔治市共同列入UNESCO世界遗产名录。",
     // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
     //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
     //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
@@ -284,11 +285,12 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
       "全年高温多湿；前往姆鲁山国家公园航班班次有限，建议提前预订机票与洞穴向导。",
   },
   "langkawi-city": {
+    // howItWorks sources（2026-09-15 核实，add-year）: 马来西亚 2020 年普查岛级数；下一期约 2030
     identity:
-      "瓜镇是浮罗交怡群岛的主要市镇，人口约2.7万，坐落于浮罗交怡岛东南岸，是探索浮罗交怡地质公园的门户市镇。",
+      "瓜镇是浮罗交怡群岛的主要市镇，坐落于浮罗交怡岛东南岸，是探索浮罗交怡地质公园的门户市镇。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Langkawi (archipelago of 99 islands, Kedah; district/municipal council appointed; ~94,000 2020, ~65,000 on the main island; duty-free since 1987; Kuah town (jetty, district office) vs Pantai Cenang; airport at Padang Matsirat; cable car/Sky Bridge; UNESCO Global Geopark 2007; ferries Kuala Perlis/Kuala Kedah/Penang)
     howItWorks:
-      "浮罗交怡是吉打州西北海上的 99 座岛组成的群岛，主岛南北约 25 公里，由浮罗交怡市议会管辖，议员由州政府任命；2020 年全岛约 9.4 万人，其中约 6.5 万在主岛，九成是马来人。1987 年起全岛免税，这是它的经济基础；瓜镇在东南角，是县政府、渡轮码头与本地人购物的地方，珍南海滩在西南角，是游客的旅馆带，两者相距约 20 公里；机场在中部的巴东马硕，东方村的缆车通往马西琅山顶的天空之桥，2007 年整片群岛成为联合国教科文组织的世界地质公园，渡轮从瓜拉玻璃市、瓜拉吉打与槟城开来。初来的人最容易犯的错，是把瓜镇当作度假区，而海滩在岛的另一头，没有车寸步难行。",
+      "浮罗交怡是吉打州西北海上的 99 座岛组成的群岛，主岛南北约 25 公里，由浮罗交怡市议会管辖，议员由州政府任命；2020 年人口普查全岛约 9.4 万人，其中约 6.5 万在主岛，九成是马来人。1987 年起全岛免税，这是它的经济基础；瓜镇在东南角，是县政府、渡轮码头与本地人购物的地方，珍南海滩在西南角，是游客的旅馆带，两者相距约 20 公里；机场在中部的巴东马硕，东方村的缆车通往马西琅山顶的天空之桥，2007 年整片群岛成为联合国教科文组织的世界地质公园，渡轮从瓜拉玻璃市、瓜拉吉打与槟城开来。初来的人最容易犯的错，是把瓜镇当作度假区，而海滩在岛的另一头，没有车寸步难行。",
     layout:
       "瓜镇码头区是岛上主要的商业与渡轮枢纽，周边分布免税购物区，岛屿内陆则是地质公园的喀斯特与雨林景观。",
     gettingAround:

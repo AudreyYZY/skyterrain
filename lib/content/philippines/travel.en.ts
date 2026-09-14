@@ -19,11 +19,13 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Lying in the tropics, the Philippines is hot and humid year-round; December to May is the dry season (March–May especially hot), while June to November is the wet season and also the active typhoon season — check typhoon warnings before coastal and island itineraries in that window.",
   },
   manila: {
+    // howItWorks sources（2026-09-15 核实，update）: PSA 2024 POPCEN：City of Manila 1,902,590、Quezon City 约 308 万（2020 年为 1,846,513 / 2,960,048，旧文正是 2020 年数；经转引核实，2 级）；下一期约 2030
+    // identity sources（2026-09-15 核实，update）: PSA 2024 POPCEN NCR 14,001,751，总统第 973 号公告 2025-07-11 宣布为官方数（经 Manila Standard / PNA 转引，2 级）；下一期约 2030
     identity:
-      "Manila is the capital of the Philippines, with a metropolitan population of more than 14 million, on the east shore of Manila Bay on Luzon, and the country's political, economic and cultural centre.",
+      "Manila is the capital of the Philippines, with a National Capital Region population of about 14 million at the 2024 census (Philippine Statistics Authority), on the east shore of Manila Bay on Luzon, and the country's political, economic and cultural centre.",
     // howItWorks sources: Wikipedia (2026-09): Metro Manila (NCR 16 cities + Pateros, each elected mayor/council; MMDA; ~636 km²; ~14 million 2024; Greater Manila >26 million; City of Manila ~1.85 million; Quezon City ~2.96 million; Makati/BGC/Ortigas; EDSA; LRT/MRT); Local government in the Philippines
     howItWorks:
-      "The Manila people speak of is the National Capital Region, assembled from sixteen cities and one municipality and officially called Metro Manila: each city has its own elected mayor and council, and below the cities lie the barangays, neighbourhoods with elected captains; there is no metropolitan government, only the Metropolitan Manila Development Authority coordinating traffic, flood control and waste. The region covers about 636 km² with about 14 million people in 2024, and the wider built-up area exceeds 26 million. The nominal capital, the City of Manila, is only one of them, with about 1.85 million people, the site of the Spanish walled city and the old port; Quezon City is the most populous at about 2.96 million; and the business districts are Makati, Bonifacio Global City in Taguig and Ortigas between Pasig and Mandaluyong, each in a different city. EDSA is the spine of the region, LRT and MRT lines follow a few main roads, and jeepneys carry much of the load. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking the City of Manila for the whole, when it is one city among more than a dozen.",
+      "The Manila people speak of is the National Capital Region, assembled from sixteen cities and one municipality and officially called Metro Manila: each city has its own elected mayor and council, and below the cities lie the barangays, neighbourhoods with elected captains; there is no metropolitan government, only the Metropolitan Manila Development Authority coordinating traffic, flood control and waste. The region covers about 636 km² with about 14 million people in 2024, and the wider built-up area exceeds 26 million. The nominal capital, the City of Manila, is only one of them, with about 1.9 million people at the 2024 census, the site of the Spanish walled city and the old port; Quezon City is the most populous at about 3.08 million at the 2024 census; and the business districts are Makati, Bonifacio Global City in Taguig and Ortigas between Pasig and Mandaluyong, each in a different city. EDSA is the spine of the region, LRT and MRT lines follow a few main roads, and jeepneys carry much of the load. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking the City of Manila for the whole, when it is one city among more than a dozen.",
     layout:
       "Intramuros (the old walled city) preserves Spanish colonial-era walls and churches; Makati and Bonifacio Global City are modern commercial and financial districts, and the Manila Bay waterfront is known for its sunset views.",
     gettingAround:
@@ -134,6 +136,8 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time to visit the Underground River National Park; boat-tour permits for the Underground River must be arranged in the city in advance — book at least a day ahead.",
   },
   legazpi: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 210,616（2 级）；下一期约 2030
+    // identity sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 210,616（2 级）；下一期约 2030
     identity:
       "Legazpi is the capital of Albay Province, with a population of more than 210,000, on the shore of Albay Gulf at the southern foot of Mayon Volcano, and the core gateway for viewing Mayon's symmetrical cone.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Legazpi (Philippines; component city and capital of Albay province and the regional centre of Bicol, 153.70 km² with 210,616 residents in the 2024 census, about 560 km south-east of Manila on Albay Gulf; south of Mayon Volcano, an active stratovolcano of near-symmetrical cone; originally the coastal settlement of Sawangan, a Spanish mission town from 1587, renamed in 1856 after Miguel López de Legazpi; served by Bicol International Airport in neighbouring Daraga; topped the National Competitiveness Council index for component cities in 2018)
@@ -151,6 +155,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time for viewing Mayon and outdoor activities; June to November is typhoon season, and Albay Gulf's coastal areas are relatively exposed — check warnings before travelling.",
   },
   tagaytay: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 87,811；下一期约 2030
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
     //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
     //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
@@ -200,6 +205,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to April is the dry season, the best time for beach activities; June to October brings the southwest monsoon, with rougher waves on the east coast — kitesurfers in fact prefer this season at Bulabog Beach.",
   },
   "el-nido-town": {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 51,367；下一期约 2030
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
     //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
     //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
@@ -222,6 +228,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to May is the dry season, the best time for island-hopping; from June to October, monsoon conditions may cancel some routes — confirm with local tour operators before travelling.",
   },
   "coron-town": {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 69,439；下一期约 2030
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
     //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
     //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
@@ -244,6 +251,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to May is the dry season, the best time for island-hopping and wreck diving; sites such as Kayangan Lake are managed by the Tagbanua community, and an environmental fee applies on entry.",
   },
   tagbilaran: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 106,120；下一期约 2030
     // identity sources: 人口：菲律宾统计局 2024 年人口普查 106,120。口径是**普查人口**，菲律宾市级人口只随普查更新，停在 2024 年不算过期。
     identity:
       "Tagbilaran is the capital of Bohol Province, with a census population of about 106,000 in 2024 (Philippine Statistics Authority), on the southwest coast of Bohol Island, and the core gateway for exploring the Chocolate Hills and Bohol's natural landscapes.",
@@ -262,6 +270,8 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time to explore the Chocolate Hills and the island's other sights; morning light at the Chocolate Hills viewpoint is softer, making it a good time for an early visit.",
   },
   vigan: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 约 5.4 万；下一期约 2030
+    // identity sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 约 5.4 万；下一期约 2030
     identity:
       "Vigan is the capital of Ilocos Sur Province, with a population of more than 54,000, on Luzon's northwest coast, and the best-preserved Spanish colonial-era old town in the Philippines, inscribed on the UNESCO World Heritage List in 1999.",
     // howItWorks sources: 「1999 年列入世界遗产」与「2015 年入选新七大奇迹城市」**均核实属实**（UNESCO 官方案例页 + New7Wonders 官网，1 级）。2026-09-12 核。
