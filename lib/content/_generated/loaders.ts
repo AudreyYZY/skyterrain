@@ -147,6 +147,7 @@ export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, Trav
   "chile": () => import("@/lib/content/chile/travel.zh").then((m) => m.TRAVEL_ZH),
   "latvia": () => import("@/lib/content/latvia/travel.zh").then((m) => m.TRAVEL_ZH),
   "romania": () => import("@/lib/content/romania/travel.zh").then((m) => m.TRAVEL_ZH),
+  "bulgaria": () => import("@/lib/content/bulgaria/travel.zh").then((m) => m.TRAVEL_ZH),
 };
 
 export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
@@ -195,4 +196,5 @@ export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, Trav
   "chile": () => import("@/lib/content/chile/travel.en").then((m) => m.TRAVEL_EN),
   "latvia": () => import("@/lib/content/latvia/travel.en").then((m) => m.TRAVEL_EN),
   "romania": () => import("@/lib/content/romania/travel.en").then((m) => m.TRAVEL_EN),
+  "bulgaria": () => import("@/lib/content/bulgaria/travel.en").then((m) => m.TRAVEL_EN),
 };
