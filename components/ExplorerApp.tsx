@@ -15,6 +15,7 @@ import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { lessonSections } from "@/lib/lesson";
 import { resolveLesson } from "@/lib/terrain-lesson";
+import { audioToPlanSec } from "@/lib/cesium/narration-clock";
 import { getRouteNarration } from "@/lib/route-narration";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
@@ -955,6 +956,11 @@ export default function ExplorerApp() {
 
         const narrText =
           getRouteNarration(route.id, language, mode) ?? routeEndLesson(language).seeing;
+        const estNarrationSec = estimateSpeechDurationSec(narrText, SPEECH_RATE, language);
+        const anchoring = buildAnchoringForNarration(route.id, language, mode, narrText);
+        // 解说真实播放状态 —— 镜头时钟逐帧读它（lib/cesium/narration-clock.ts）
+        const narr = { started: false, done: false, audio: null as HTMLAudioElement | null, startWall: 0 };
+        const planNarrationSec = anchoring?.narrationSec ?? estNarrationSec;
 
         mapRef.current?.flyRoute(route, {
           onPreparingRoute: () => setRoutePreparing(true),
@@ -969,6 +975,11 @@ export default function ExplorerApp() {
                 narrText,
                 SPEECH_RATE,
                 () => {
+                  if (!narr.started) {
+                    narr.started = true;
+                    narr.audio = getCurrentAudio();
+                    narr.startWall = performance.now();
+                  }
                   if (!session.active) return;
                   const audio = getCurrentAudio();
                   const wb = getCurrentWordBoundaries();
@@ -981,15 +992,26 @@ export default function ExplorerApp() {
                 language,
               );
             } finally {
+              narr.done = true;
               setIsSpeaking(false);
               if (session.active) stopHighlight();
             }
           },
+          narrationSignal: () => {
+            if (!narr.started || narr.done) return { started: narr.started, done: narr.done, planSec: 0 };
+            const a = narr.audio;
+            const audioSec = a ? a.currentTime : (performance.now() - narr.startWall) / 1000;
+            return {
+              started: true,
+              done: false,
+              planSec: audioToPlanSec(audioSec, a && Number.isFinite(a.duration) ? a.duration : null, planNarrationSec),
+            };
+          },
           // 飞行时长由航线距离与这个估算共同决定（见 lib/cesium/route-flight.ts）；
           // 镜头节拍是帧率驱动的，不再跟随音频进度
-          estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE, language),
+          estNarrationSec,
           // 学习模式有锚点表时按解说排镜头：讲到哪个航点，镜头就在哪里
-          anchoring: buildAnchoringForNarration(route.id, language, mode, narrText),
+          anchoring,
           // 镜头经过某航点 — 更新「当前在哪」（解说里提到地名时由高亮同步更精确，见上方 effect）
           onFlyoverWaypoint: (wp, index) => {
             const en = language === "en-US";
@@ -1027,6 +1049,7 @@ export default function ExplorerApp() {
             }
           },
           onCancelled: () => {
+            narr.done = true;
             narrationCancelledRef.current = true;
             narrationQueue.cancel();
             stopSpeaking();
