@@ -65,3 +65,7 @@ __pycache__/
 
 # OurAirports 公有领域数据集（check:airports 用，12+ MB，滚动更新，不进仓库）
 .cache/
+
+# Playwright
+/test-results/
+/playwright-report/

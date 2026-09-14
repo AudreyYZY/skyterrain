@@ -36,7 +36,8 @@
     "gen:verify-status": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-verification-status.ts",
     "check:bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-bearings.ts",
     "gen:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts",
-    "check:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts --check"
+    "check:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts --check",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -47,6 +48,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
