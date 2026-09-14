@@ -96,7 +96,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town centre preserves a medieval street layout, with Malmö Castle and the old town square at its historic core; the Western Harbour district has been redeveloped in recent years as a sustainability showcase, home to the landmark Turning Torso tower.",
     gettingAround:
-      "Malmö Airport is about 28 km from the centre; a train across the Øresund Bridge also reaches Copenhagen Airport directly (about 25 minutes). The city has an extensive network of cycle lanes, and buses and walking are also good options. The climate is temperate maritime, one of the mildest in Sweden.",
+      "Malmö Airport is about 28 km in a straight line from the centre; a train across the Øresund Bridge also reaches Copenhagen Airport directly (about 25 minutes). The city has an extensive network of cycle lanes, and buses and walking are also good options. The climate is temperate maritime, one of the mildest in Sweden.",
     culture:
       "The official language is Swedish, with high English proficiency and a culturally diverse population due to a high share of immigrants. Malmö and Copenhagen together form the Øresund metropolitan region, with frequent daily commuting between the two. Restaurant bills typically already include service.",
     seeAndDo:
@@ -242,7 +242,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The town is built along the northern shore of Lake Åre, with cable cars running directly up to the ski area on the mountain; in summer the town transforms into a destination for hiking, cycling and fishing.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 74.5 公里，原文短于直线、不可能成立，已改为略高于直线的值（实际公路里程可能更长）。
     gettingAround:
-      "Åre Östersund Airport is about 80 km from town, reached by bus; from Stockholm the train takes about 6.5 hours. The town itself is walkable; the ski area is reached by cable car or shuttle. The climate is subarctic mountain, cold and snowy in winter, cool in summer.",
+      "Åre Östersund Airport is about 80 km in a straight line from town, reached by bus; from Stockholm the train takes about 6.5 hours. The town itself is walkable; the ski area is reached by cable car or shuttle. The climate is subarctic mountain, cold and snowy in winter, cool in summer.",
     culture:
       "The official language is Swedish, with high English proficiency. Åre is a favourite retreat of Swedish royalty and celebrities, and home to the largest ski resort in Northern Europe. Restaurant bills typically already include service.",
     seeAndDo:

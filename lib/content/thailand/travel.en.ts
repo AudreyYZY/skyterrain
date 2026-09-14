@@ -100,7 +100,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Krabi Town sits at the mouth of the Krabi River and serves as the transport hub for Railay, Ao Nang Beach, and the Phi Phi Islands, with numerous island-hopping boat piers around the town.",
     gettingAround:
-      "Krabi International Airport is about 18 km from Krabi Town; Railay Peninsula, enclosed on three sides by cliffs, is reachable only by longtail boat.",
+      "Krabi International Airport is about 9 km in a straight line from Krabi Town; Railay Peninsula, enclosed on three sides by cliffs, is reachable only by longtail boat.",
     culture:
       "Krabi is one of the southern Thai provinces with a comparatively large Muslim population, and local cuisine blends Thai and Malay influences.",
     seeAndDo:
@@ -121,7 +121,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along Pattaya Bay, with Pattaya Beach, Jomtien Beach, and Wong Amat Beach lying from north to south; Pattaya Walking Street is the centre of its nightlife.",
     gettingAround:
-      "U-Tapao International Airport is about 30 km from the city centre; it is also reachable by road from Bangkok's two airports in about 2 to 2.5 hours. Songthaews are the main form of public transport within the city.",
+      "U-Tapao International Airport is about 30 km in a straight line from the city centre; it is also reachable by road from Bangkok's two airports in about 2 to 2.5 hours. Songthaews are the main form of public transport within the city.",
     culture:
       "Pattaya is one of Thailand's most concentrated nightlife destinations, while also having developed a diverse tourism scene including family holidays and water sports.",
     seeAndDo:
@@ -195,7 +195,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historical park sits on an island-like area encircled by the Chao Phraya, Lopburi, and Pa Sak rivers, densely dotted with temple ruins and adjoining the surrounding modern town.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Bangkok's Don Mueang International Airport (about 60 km away); a train or long-distance bus from Bangkok takes about 1.5 to 2 hours, and a rented bicycle is recommended within the historical park.",
+      "There is no commercial airport locally; the nearest is Bangkok's Don Mueang International Airport (about 60 km away by road); a train or long-distance bus from Bangkok takes about 1.5 to 2 hours, and a rented bicycle is recommended within the historical park.",
     culture:
       "The Ayutthaya kingdom was a major international trading centre in 17th-century Southeast Asia, with frequent commercial exchange with Europe, China, and Japan; the temple ruins in today's historical park record this era of prosperity.",
     seeAndDo:
@@ -219,7 +219,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historical park is divided into central, northern, western, and southern zones, with the Wat Mahathat ruins at the core of the central zone, ringed by remnants of a moat and city wall.",
     gettingAround:
-      "Sukhothai Airport, privately operated by Bangkok Airways, is about 27 km from the historical park; a long-distance bus from Bangkok takes about 6 to 7 hours, and a rented bicycle is recommended within the historical park.",
+      "Sukhothai Airport, privately operated by Bangkok Airways, is about 27 km in a straight line from the historical park; a long-distance bus from Bangkok takes about 6 to 7 hours, and a rented bicycle is recommended within the historical park.",
     culture:
       "The Sukhothai kingdom is regarded as an important birthplace of the Thai script and Buddhist art; the Thai alphabet is traditionally said to have been created by King Ramkhamhaeng of Sukhothai in the 13th century.",
     seeAndDo:

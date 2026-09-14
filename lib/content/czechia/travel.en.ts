@@ -29,7 +29,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Old Town and New Town lie on the right bank of the Vltava, linked by Charles Bridge to the Lesser Town and Castle District on the far bank; Prague Castle stands atop a hill on the left bank overlooking the city, forming one of the largest ancient castle complexes in the world.",
     gettingAround:
-      "Václav Havel Airport is about 17 km from the city center, connected by bus and metro; the city has an extensive metro, tram and bus network, and the Old Town core is entirely walkable. The climate is temperate continental, with cold winters and mild summers.",
+      "Václav Havel Airport is about 17 km by road from the city center, connected by bus and metro; the city has an extensive metro, tram and bus network, and the Old Town core is entirely walkable. The climate is temperate continental, with cold winters and mild summers.",
     culture:
       "The official language is Czech, and English is widely spoken in tourist areas. Modest dress is expected when entering St. Vitus Cathedral and other religious sites; keep an eye on your belongings around busy spots like Charles Bridge and Old Town Square; restaurant bills typically don't include service, and a 5-10% tip or rounding up the total is customary.",
     seeAndDo:

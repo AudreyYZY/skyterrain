@@ -31,7 +31,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is divided by the Bosphorus into a European side and an Asian side; the European side is further split by the Golden Horn into the old city (Sultanahmet, dense with historic monuments) and the new city (Beyoğlu, home to Taksim Square and modern commerce), while the Asian side (Kadıköy) is known for its lively local atmosphere.",
     gettingAround:
-      "Istanbul Airport (IST) is about 35 km from the European-side city center; the city has an extensive metro, tram and ferry network, and crossing the strait by ferry or the Marmaray metro line is a convenient way to experience the city's geography.",
+      "Istanbul Airport (IST) is about 35 km in a straight line from the European-side city center; the city has an extensive metro, tram and ferry network, and crossing the strait by ferry or the Marmaray metro line is a convenient way to experience the city's geography.",
     culture:
       "The official language is Turkish. At religious sites such as Hagia Sophia or the Blue Mosque, women should carry a headscarf and wear clothing covering the shoulders and knees, and both men and women must remove their shoes; visitors may look around outside prayer times but should stay quiet. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:
@@ -141,7 +141,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Pamukkale terraces sit about 20 km north of the city of Denizli, with the ruins of Hierapolis atop the terrace and the town of Pamukkale at the foot of the hill providing accommodation and dining for visitors.",
     gettingAround:
-      "Denizli Çardak Airport (DNZ) is about 65 km from Pamukkale; taxis and local buses are the main way to get around, and a minibus from central Denizli to Pamukkale takes about 30 to 40 minutes.",
+      "Denizli Çardak Airport (DNZ) is about 65 km by road from Pamukkale; taxis and local buses are the main way to get around, and a minibus from central Denizli to Pamukkale takes about 30 to 40 minutes.",
     culture:
       "The official language is Turkish. Visitors must walk barefoot in the travertine pools to protect the geological formations, and some areas get crowded, so arriving early helps avoid tour groups. Restaurant tipping is not compulsory: leave a little if the service was good, and check first whether the bill already includes a service charge.",
     seeAndDo:

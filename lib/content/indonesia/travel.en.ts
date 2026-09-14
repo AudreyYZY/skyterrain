@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The old town centre preserves substantial Dutch-era Art Deco architecture, with Jalan Asia Afrika, home to the Asian-African Conference Museum, forming the historic core; the city is ringed by volcanoes and tea plantations, with Mount Tangkuban Perahu to the north and Mount Kawah Putih to the south being popular day trips.",
     // gettingAround sources: BDO：印尼交通部宣布自 2026-09-17 起恢复喷气机商业航班（跑道翻修与救援等级升级完成），国际航线目标 2026 年 10 月（2 级，2026-09-12 核）。KJT 截至 2026-06 只有 Scoot 每周两班新加坡航线。⚠️ 本条写的是「已宣布自某日恢复」，**恢复本身尚未发生**，下一轮回来确认是否如期。
     gettingAround:
-      "Husein Sastranegara Airport (BDO) is about 4 km from the city centre; since October 2023 most jet services have moved to West Java International Airport (KJT), and Indonesia's transport ministry has announced that BDO resumes commercial jet flights from 17 September 2026, so check the airport's latest notices for the routes actually operating; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
+      "Husein Sastranegara Airport (BDO) is about 5 km in a straight line from the city centre; since October 2023 most jet services have moved to West Java International Airport (KJT), and Indonesia's transport ministry has announced that BDO resumes commercial jet flights from 17 September 2026, so check the airport's latest notices for the routes actually operating; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
     culture:
       "The official language is Indonesian, with Sundanese spoken locally. Bandung hosted the 1955 Bandung Conference, commemorated at the Asian-African Conference Museum; the city's cool climate lends itself to relatively casual dress, and Sundanese cuisine is a local specialty. Tipping isn't expected.",
     seeAndDo:
@@ -155,7 +155,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along the Makassar Strait; the old town around Fort Rotterdam preserves Dutch and Portuguese-era colonial buildings, and Losari Beach promenade is a popular spot for evening sunsets; Tana Toraja lies about 8–9 hours north by road.",
     gettingAround:
-      "Sultan Hasanuddin International Airport (UPG) is about 21 km from the city centre and is Sulawesi's main aviation hub; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town, and reaching Tana Toraja usually means a long-distance bus or hired car.",
+      "Sultan Hasanuddin International Airport (UPG) is about 21 km by road from the city centre and is Sulawesi's main aviation hub; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town, and reaching Tana Toraja usually means a long-distance bus or hired car.",
     culture:
       "The official language is Indonesian, with Makassarese and Buginese spoken locally. Makassar is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; the local Bugis people have a long historical tradition of traditional wooden shipbuilding (the pinisi schooner). Tipping isn't expected.",
     seeAndDo:
@@ -173,7 +173,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town sits along a harbour, its main street lined with hotels, dive shops and restaurants; visiting Komodo National Park requires a boat from the harbour, whether as a single-day trip or a multi-day island-hopping cruise.",
     gettingAround:
-      "Komodo Airport (LBJ) is about 2 km from the town centre and is western Flores' main air gateway; most of the town is walkable, and visiting Komodo National Park requires booking a boat through the harbour.",
+      "Komodo Airport (LBJ) is less than 2 km in a straight line from the town centre and is western Flores' main air gateway; most of the town is walkable, and visiting Komodo National Park requires booking a boat through the harbour.",
     culture:
       "The official language is Indonesian. Flores has historically been shaped by Portuguese and Dutch Catholic missionary activity and is one of the few Catholic-majority regions in Indonesia, differing from the country's overall Muslim-majority makeup, which also means a broader range of dining options here. Bring sunscreen and motion-sickness medication for liveaboard island-hopping trips.",
     seeAndDo:
@@ -193,7 +193,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along the Makassar Strait, its centre dominated by modern commercial districts and petroleum industry facilities; the core zone of the new capital Nusantara lies north of Balikpapan across the regencies of Penajam Paser Utara and Kutai Kartanegara, with a planned toll road of about 47 km to link the two directly and about 90 km, or two hours, by existing roads, the site of Indonesia's major ongoing capital-relocation project.",
     gettingAround:
-      "Sultan Aji Muhammad Sulaiman Airport (BPN) is about 11 km from the city centre; taxis and ride-hailing apps are the main way to get around town, and reaching the Nusantara site or the Borneo interior generally requires a hired car.",
+      "Sultan Aji Muhammad Sulaiman Airport (BPN) is about 11 km by road from the city centre; taxis and ride-hailing apps are the main way to get around town, and reaching the Nusantara site or the Borneo interior generally requires a hired car.",
     culture:
       "The official language is Indonesian. Balikpapan is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; as an oil-industry city, the pace of local life leans relatively business-oriented. Tipping isn't expected.",
     seeAndDo:
@@ -212,7 +212,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along a bay, with the Boulevard waterfront a popular spot for sunset dining; Bunaken National Park lies in the waters north of Manado and is the area's premier diving and snorkelling destination.",
     gettingAround:
-      "Sam Ratulangi International Airport (MDC) is about 13 km from the city centre; reaching Bunaken National Park requires a boat from the harbour, typically booked through a dive centre or tour operator along with a snorkelling or diving itinerary.",
+      "Sam Ratulangi International Airport (MDC) is about 13 km in a straight line from the city centre; reaching Bunaken National Park requires a boat from the harbour, typically booked through a dive centre or tour operator along with a snorkelling or diving itinerary.",
     culture:
       "The official language is Indonesian, with the local Minahasan language also spoken. Manado and the surrounding North Sulawesi region were significantly shaped by Dutch colonial and Christian missionary history and are one of the few Christian-majority areas in Indonesia; pork dishes are commonly found on local menus, unlike in most of the country's predominantly halal dining scene. Tipping isn't expected.",
     seeAndDo:

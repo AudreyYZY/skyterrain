@@ -33,7 +33,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town sits on high ground on the Vistula's west bank, its rebuilt medieval street layout and colourful terraced houses well preserved; the newer districts extend outward from the old town, while the Praga district on the east bank retains more original pre-war buildings.",
     gettingAround:
-      "Chopin Airport is about 10 km from the centre, with train and metro links; the city has an extensive metro and tram network. The climate is temperate continental, cold in winter and mild in summer.",
+      "Chopin Airport is about 8 km in a straight line from the centre, with train and metro links; the city has an extensive metro and tram network. The climate is temperate continental, cold in winter and mild in summer.",
     culture:
       "The official language is Polish, with higher English proficiency among younger people. Warsaw was rebuilt to its pre-war appearance after being almost entirely levelled during the Second World War — the reconstruction itself is a symbol of Polish national resilience. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:

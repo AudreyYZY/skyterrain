@@ -92,7 +92,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The ancient town is built along the Thu Bon River, with the Japanese Covered Bridge as its landmark structure, and yellow-walled traditional merchant houses and Chinese assembly halls lining its old streets.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Da Nang International Airport (about 30 km away); motorised vehicles are barred from the ancient town's core, so walking or cycling is the main way to get around.",
+      "There is no commercial airport locally; the nearest is Da Nang International Airport (about 30 km away by road); motorised vehicles are barred from the ancient town's core, so walking or cycling is the main way to get around.",
     culture:
       "Hoi An's ancient town blends Vietnamese, Chinese, Japanese, and European architecture and trading culture; on the 14th night of each lunar month the town turns off its electric lights and holds a \"Lantern Festival\" lit entirely by lanterns.",
     seeAndDo:
@@ -128,7 +128,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built into the hillside, with surrounding valleys home to Hmong, Dao, and Tay ethnic-minority villages and stepped terraced fields.",
     gettingAround:
-      "Neither Sapa nor Lao Cai Province has an airport; the nearest is Hanoi's Noi Bai International Airport (about 320 km away). A sleeper train from Hanoi to Lao Cai followed by a bus, or a direct long-distance bus, takes about 5 to 6 hours.",
+      "Neither Sapa nor Lao Cai Province has an airport; the nearest is Hanoi's Noi Bai International Airport (about 300 km away by road). A sleeper train from Hanoi to Lao Cai followed by a bus, or a direct long-distance bus, takes about 5 to 6 hours.",
     culture:
       "The valleys around Sapa are home to Hmong, Dao, Tay, and other ethnic-minority communities, and traditional handwoven textiles and market culture are well preserved.",
     seeAndDo:
@@ -223,7 +223,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town extends along the mouth of the Duong Dong River, with the Duong Dong night market as its liveliest commercial street, and beach resort hotels lining the coast nearby.",
     gettingAround:
-      "Phu Quoc International Airport is about 15 km from town; taxis, motorbike rentals, and the island's cross-sea cable car are the main ways to get around.",
+      "Phu Quoc International Airport is about 6 km in a straight line from town; taxis, motorbike rentals, and the island's cross-sea cable car are the main ways to get around.",
     culture:
       "Phu Quoc has a long tradition of fishing and fish-sauce production, and the Duong Dong night market showcases the island's seafood food culture.",
     seeAndDo:
@@ -243,7 +243,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The city is ringed by limestone karst peak clusters, with rice paddies and waterways interwoven across the valley floors between the peaks.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 109.3 公里，原文短于直线、不可能成立，已改为略高于直线的值（实际公路里程可能更长）。
     gettingAround:
-      "There is no commercial airport locally; the nearest is Hanoi's Noi Bai International Airport (about 110 km away); a train or long-distance bus from Hanoi takes about 2 to 2.5 hours.",
+      "There is no commercial airport locally; the nearest is Hanoi's Noi Bai International Airport (about 110 km in a straight line away); a train or long-distance bus from Hanoi takes about 2 to 2.5 hours.",
     culture:
       "The Ninh Binh area served as the capital of Vietnam's Dinh and Early Le dynasties from the 10th century onward, and the ancient capital ruins at Hoa Lu record this history.",
     seeAndDo:

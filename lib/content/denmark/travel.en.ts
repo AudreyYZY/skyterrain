@@ -157,7 +157,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Aarhus River, with the Latin Quarter preserving a medieval street layout; the circular rainbow walkway atop the ARoS Aarhus Art Museum is a new city landmark, and the suburbs extend out along Aarhus Bay.",
     gettingAround:
-      "Aarhus Airport is about 35 km from the centre, reached by bus; from Copenhagen the train takes about 3 hours. Getting around the city relies mainly on walking, cycling and light rail. The climate is temperate maritime.",
+      "Aarhus Airport is about 40 km by road from the centre, reached by bus; from Copenhagen the train takes about 3 hours. Getting around the city relies mainly on walking, cycling and light rail. The climate is temperate maritime.",
     culture:
       "The official language is Danish, with high English proficiency, especially in the lively university-town atmosphere of the centre. Aarhus is an important Danish centre for contemporary art and design. Restaurant bills typically already include service.",
     seeAndDo:
@@ -200,7 +200,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Limfjord, with medieval streets interwoven with industrial heritage; the waterfront has been redeveloped in recent years into a cultural and leisure district, and it's a good starting point for trips to Rebild Bakker and Skagen.",
     gettingAround:
-      "Aalborg Airport is about 6 km from the centre, reached by bus; from Copenhagen the train takes about 4.5 hours. Getting around the city relies mainly on walking, cycling and buses. The climate is temperate maritime.",
+      "Aalborg Airport is about 6 km in a straight line from the centre, reached by bus; from Copenhagen the train takes about 4.5 hours. Getting around the city relies mainly on walking, cycling and buses. The climate is temperate maritime.",
     culture:
       "The official language is Danish, with high English proficiency. Aalborg was historically known for industry and shipping, and its waterfront district has since transformed into a hub for cultural and creative industries. Restaurant bills typically already include service.",
     seeAndDo:
@@ -237,7 +237,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the harbour, with well-preserved cobblestone streets and traditional smoke-yellow houses — one of Denmark's best-preserved historic towns, and the hub from which the rest of the island's sights radiate outward.",
     gettingAround:
-      "Bornholm Airport is about 5 km from town, reached by bus; ferries also run from Copenhagen or southern Sweden. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, with the surrounding sea moderating the temperature swing between winter and summer compared with mainland Denmark.",
+      "Bornholm Airport is about 5 km in a straight line from town, reached by bus; ferries also run from Copenhagen or southern Sweden. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, with the surrounding sea moderating the temperature swing between winter and summer compared with mainland Denmark.",
     culture:
       "The official language is Danish, with high English proficiency. Thanks to its abundant sunshine and lively arts-and-crafts scene, Bornholm is known as \"Denmark's sunshine island,\" with ceramics and glasswork a local speciality. Restaurant bills typically already include service.",
     seeAndDo:

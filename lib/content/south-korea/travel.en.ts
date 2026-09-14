@@ -98,7 +98,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historic core sits on the flat land at the city centre, with the Daereungwon tomb cluster, Cheomseongdae observatory, and Bulguksa Temple and Seokguram Grotto spread across the city and its outskirts.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Pohang Gyeongju Airport (about 35 km away); the KTX Singyeongju station reaches Seoul in about 2 hours. The compact historic core is easily covered on foot or by rented bicycle.",
+      "There is no commercial airport locally; the nearest is Pohang Gyeongju Airport (about 35 km away by road); the KTX Singyeongju station reaches Seoul in about 2 hours. The compact historic core is easily covered on foot or by rented bicycle.",
     culture:
       "As Silla's ancient capital, Gyeongju preserves a dense concentration of royal tombs and Buddhist heritage spanning a thousand years; the \"Gyeongju Historic Areas\" were inscribed on the UNESCO World Heritage List in 2000.",
     seeAndDo:
@@ -179,7 +179,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the east coast, with Gyeongpo Lagoon and Gyeongpo Beach adjoining each other on its north side, and the Anmok coffee street lined with sea-view cafés along the shoreline.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 40 km away, with limited domestic scheduled service); the KTX Gangneung Line reaches Seoul's Cheongnyangni Station in about 2 hours. Getting around the city and Gyeongpo Lagoon is best done by car or bus.",
+      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 40 km in a straight line away, with limited domestic scheduled service); the KTX Gangneung Line reaches Seoul's Cheongnyangni Station in about 2 hours. Getting around the city and Gyeongpo Lagoon is best done by car or bus.",
     culture:
       "The annual Gangneung Danoje Festival, held at Dano, blends shamanic ritual, mask drama, and market events; it was inscribed on the UNESCO Intangible Cultural Heritage list in 2005.",
     seeAndDo:
@@ -203,7 +203,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city sits right on the east coast, with Cheongcho Lake lagoon and Sokcho Port within the city, while the entrance to Seoraksan National Park lies inland, about 10 km to the west.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 20 km away, with limited domestic scheduled service); an express bus from Seoul takes about 2 to 2.5 hours. Getting around the city and to the Seoraksan entrance is best done by bus or hired car.",
+      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 20 km in a straight line away, with limited domestic scheduled service); an express bus from Seoul takes about 2 to 2.5 hours. Getting around the city and to the Seoraksan entrance is best done by bus or hired car.",
     // culture sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
     //   **这一处在 `culture` 段** —— 红线的适用范围不只是 `history` 段，任何段落里可能读作立场表态的句子都算。2026-09-10。
     culture:
@@ -227,7 +227,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is surrounded by bodies of water including Soyang Lake and Uiam Lake, with the Myeongdong shopping district, Nami Island, and the Soyang Dam lying in different directions from the city centre.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Wonju Airport (about 65 km away); Seoul's subway Gyeongchun Line runs directly to Chuncheon Station in about 1 to 1.5 hours, making it one of the most accessible cities near Seoul.",
+      "There is no commercial airport locally; the nearest is Wonju Airport (about 70 km away by road); Seoul's subway Gyeongchun Line runs directly to Chuncheon Station in about 1 to 1.5 hours, making it one of the most accessible cities near Seoul.",
     culture:
       "Chuncheon is known internationally as the filming location of the Korean drama \"Winter Sonata\" on Nami Island, and is also the birthplace of dakgalbi; the city's Dakgalbi Street is a signature local food experience.",
     seeAndDo:
@@ -271,7 +271,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The Jeonju Hanok Village occupies one corner of the city centre, in striking contrast with the modern commercial districts around it; Jeondong Catholic Church and Gyeonggijeon Shrine sit at the village's edge.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 83.4 公里；原文短于直线、不可能成立，已改。⚠️ 群山机场（KUV）离全州更近（约 50 公里），原文很可能把两座机场弄混；本轮只改被点名那座的距离。
     gettingAround:
-      "There is no commercial airport locally; the nearest is Gwangju Airport (about 90 km away); the KTX Jeonju station reaches Seoul in about 2 hours, and long-distance buses also run directly into the city. The Hanok Village area is walkable.",
+      "There is no commercial airport locally; the nearest is Gwangju Airport (about 90 km in a straight line away); the KTX Jeonju station reaches Seoul in about 2 hours, and long-distance buses also run directly into the city. The Hanok Village area is walkable.",
     culture:
       "Jeonju is recognised by UNESCO as a \"City of Gastronomy\"; Jeonju bibimbap originated here, and the Hanok Village is dense with traditional teahouses and craft workshops.",
     seeAndDo:

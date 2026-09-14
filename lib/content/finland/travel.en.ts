@@ -72,7 +72,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The small town is split into the West Harbour, mainly modern yacht marinas, and the East Harbour, which preserves the character of a traditional fishing port; the town centre is built mainly in Swedish architectural style.",
     gettingAround:
-      "Mariehamn Airport is about 3 km from the centre; ferries also run to and from Stockholm, Sweden or Turku, Finland (the ferry crossing itself is a popular \"Baltic cruise\" experience). The town is walkable. The climate is temperate maritime.",
+      "Mariehamn Airport is about 3 km in a straight line from the centre; ferries also run to and from Stockholm, Sweden or Turku, Finland (the ferry crossing itself is a popular \"Baltic cruise\" experience). The town is walkable. The climate is temperate maritime.",
     culture:
       "The official language is Swedish (Åland is the only region in Finland with Swedish as the sole official language); locals identify primarily as Ålanders, blending Finnish and Swedish cultural traits. Restaurant bills typically already include service.",
     seeAndDo:
@@ -237,7 +237,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The village is small, built along the southern shore of Lake Inari; the Sámi Parliament and the Siida Sámi museum are located here, making it the administrative and cultural showcase centre for Sámi culture in Finland.",
     gettingAround:
-      "Ivalo Airport is about 40 km from the village, reached by bus; from Helsinki flights take about 1.5 hours to Ivalo, connecting onward by bus. The village is walkable; exploring the lake requires a car or a tour. The climate is subarctic, with long, severe winters and some of the best conditions in Finland for viewing the northern lights.",
+      "Ivalo Airport is about 40 km in a straight line from the village, reached by bus; from Helsinki flights take about 1.5 hours to Ivalo, connecting onward by bus. The village is walkable; exploring the lake requires a car or a tour. The climate is subarctic, with long, severe winters and some of the best conditions in Finland for viewing the northern lights.",
     culture:
       "The official language is Finnish, and the local Sámi languages (including Northern Sámi, Inari Sámi and Skolt Sámi) also hold official status in this region. Traditional Sámi reindeer-herding culture continues today. Restaurant bills typically already include service.",
     seeAndDo:
