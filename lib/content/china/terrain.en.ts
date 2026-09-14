@@ -748,6 +748,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
   },
 
   bosten: {
+    // formation sources（2026-09-15 抽样 seed=12 核实）：孔雀河流向盆地东端的罗布泊，原写 southern 有误，改 eastern。
     // seeing sources: 海拔 1048 m；大湖面积约 988 km²，含小湖区共 1646 km² —— 新疆维吾尔自治区文化和旅游厅
     //   https://wlt.xinjiang.gov.cn/wlt/c112782/202208/008cef60035646c3ae9d0397e613f8fa.shtml（1 级，2026-09-08 核）。
     //   「中国最大的内陆淡水湖」成立：这个口径专指不入海的内流区淡水湖，呼伦湖微咸且经额尔古纳河
@@ -757,7 +758,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     seeing:
       "Bosten Lake lies in the Yanqi Basin at the southern foot of the Tianshan, at about 1,050 m, and is often called China's largest inland freshwater lake. The Kaidu River enters from the north-west and the Konqi River leaves to the south-west — it is an unusual inland lake with both an inflow and an outflow. Its west shore has extensive reed wetlands. It was anciently called the \"Western Sea.\"",
     formation:
-      "Bosten Lake fills a fault-depression basin. Tianshan snowmelt reaches it via the Kaidu River, and the surplus leaves via the Konqi River toward the southern Tarim Basin (finally lost in the desert, never reaching the sea). Because there is an outlet, salt does not build up as it does in a purely closed lake, so the body of the lake is fresh, with only the eastern part slightly brackish.",
+      "Bosten Lake fills a fault-depression basin. Tianshan snowmelt reaches it via the Kaidu River, and the surplus leaves via the Konqi River toward the eastern Tarim Basin (finally lost in the desert, never reaching the sea). Because there is an outlet, salt does not build up as it does in a purely closed lake, so the body of the lake is fresh, with only the eastern part slightly brackish.",
     observation:
       "From the air Bosten is an irregular sheet of turquoise at the southern foot of the Tianshan, mountains to the north and oasis farmland to the south. The west shore is a spread of pale reed marsh and small lakes (the \"small-lake district\"); the main body is open and deep blue. The Kaidu River has built a delta where it enters.",
     distinguish:
