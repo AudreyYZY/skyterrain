@@ -98,12 +98,6 @@ export const CITIES: CityEntry[] = [
     source: "Alor Setar 6.1183,100.3694（en.wikipedia）；AOR 机场：en.wikipedia（市区北约 15 公里，梳邦/吉隆坡/新山航线）；人口 417,800（2020 普查）",
   },
   {
-    id: "semporna", nameZh: "仙本那", nameEn: "Semporna", country: "malaysia", tier: "notable", zone: "my-sabah", admin1Zh: "沙巴州", admin1En: "Sabah",
-    lon: 118.6167, lat: 4.4833,
-    airport: { iata: "TWU", nameZh: "斗湖机场（经斗湖转乘）", nameEn: "Tawau Airport (via Tawau)", lon: 118.1219, lat: 4.3133 },
-    source: "Semporna 4.4833,118.6167（en.wikipedia）；无机场，最近为斗湖 TWU（公路约 1.5 小时），本条目记录 TWU 并注明；人口 35,301（2010 普查）",
-  },
-  {
     id: "sibu", nameZh: "诗巫", nameEn: "Sibu", country: "malaysia", tier: "notable", zone: "my-sarawak", admin1Zh: "砂拉越州", admin1En: "Sarawak",
     lon: 111.8308, lat: 2.2878,
     airport: { iata: "SBW", nameZh: "诗巫机场", nameEn: "Sibu Airport", lon: 111.9825, lat: 2.2642 },

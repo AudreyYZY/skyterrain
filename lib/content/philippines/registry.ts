@@ -46,18 +46,6 @@ const MOUNT_PINATUBO: TerrainEntry = {
   source: "皮纳图博火山：1991年6月15日发生20世纪第二大规模火山喷发，喷发柱高逾40公里、总喷出物约8至10立方公里（折合致密岩浆约4至5立方公里），火山爆发指数达VEI 6；剧烈喷发导致山顶塌陷形成宽约2.5公里的破火山口，山体高度较喷发前降低约260米，山顶如今蓄有一汪蓝绿色火山口湖，是菲律宾知名的徒步目的地（USGS/Global Volcanism Program WebSearch 2026）",
 };
 
-const MOUNT_APO: TerrainEntry = {
-  id: "mount-apo",
-  nameZh: "阿波山",
-  nameEn: "Mount Apo",
-  category: "mountain_system",
-  regionId: "asia",
-  country: "philippines",
-  landmark: { name: "阿波山主峰", lon: 125.2725, lat: 6.9875, elevation: 2954, kind: "peak" },
-  bbox: [125.18, 6.90, 125.37, 7.08],
-  label: { lon: 125.27, lat: 6.80, rotation: 0 },
-  source: "阿波山：菲律宾全国最高峰，海拔2954米，是棉兰老岛阿波—塔洛莫山脉的一座休眠层状火山，山体覆盖高大热带硬木林；1936年设立阿波山国家公园，面积约8.09万公顷，是菲律宾鹰等珍稀物种的栖息地（PeakVisor/Britannica WebSearch 2026）",
-};
 
 const MOUNT_PULAG: TerrainEntry = {
   id: "mount-pulag",
@@ -249,33 +237,7 @@ const CAGAYAN_RIVER: TerrainEntry = {
   source: "卡加延河：菲律宾最长、流量最大的河流，全长约505公里，发源于卡拉巴略山脉，流域面积约2.78万平方公里，纵贯吕宋岛东北部卡加延河谷，流经新怡诗夏、基里诺、伊莎贝拉与卡加延四省，最终于阿帕里注入巴布延海峡（Wikipedia/Britannica WebSearch 2026）",
 };
 
-const LAKE_LANAO: TerrainEntry = {
-  id: "lake-lanao",
-  nameZh: "拉瑙湖",
-  nameEn: "Lake Lanao",
-  category: "lake",
-  regionId: "asia",
-  country: "philippines",
-  landmark: { name: "拉瑙湖", lon: 124.25, lat: 7.8667, elevation: 702, kind: "lake" },
-  bbox: [124.05, 7.75, 124.45, 8.05],
-  viewScale: 1.1,
-  label: { lon: 124.25, lat: 7.65, rotation: 0 },
-  source: "拉瑙湖：菲律宾第二大湖，面积约340平方公里，位于棉兰老岛拉瑙德尔苏尔省，是全球为数不多的“古老湖泊”之一，由两条山脉间盆地经构造—火山活动共同抬升阻塞、并伴随一座大型火山塌陷而形成；湖水经阿古斯河向北流出，途经玛丽亚克里斯蒂娜瀑布水电站，长期是棉兰老岛主要电力来源之一（近年随煤电扩张占比明显下降）；湖中栖息18种菲律宾特有鲤科鱼类（Britannica/dost.gov.ph WebSearch 2026）",
-};
 
-const AGUSAN_MARSH: TerrainEntry = {
-  id: "agusan-marsh",
-  nameZh: "阿古桑沼泽",
-  nameEn: "Agusan Marsh",
-  category: "basin",
-  regionId: "asia",
-  country: "philippines",
-  landmark: { name: "阿古桑沼泽野生动物保护区", lon: 125.85, lat: 8.4667, elevation: 15, kind: "delta" },
-  bbox: [125.65, 8.20, 126.05, 8.75],
-  viewScale: 1.2,
-  label: { lon: 125.65, lat: 8.10, rotation: 0 },
-  source: "阿古桑沼泽：棉兰老岛东北部阿古桑河流域中一片广袤的泛滥平原湿地，法定保护面积约4.09万公顷，1999年列入拉姆萨尔国际重要湿地名录；沼泽汇集阿古桑河流域多条支流后向北排入布图安湾，保存有菲律宾现存规模最大的沼泽林与泥炭沼泽森林，2018年获认定为东盟遗产公园（Ramsar/Wikipedia WebSearch 2026）",
-};
 
 const HUNDRED_ISLANDS_NATIONAL_PARK: TerrainEntry = {
   id: "hundred-islands-national-park",
@@ -305,12 +267,10 @@ const VERDE_ISLAND_PASSAGE: TerrainEntry = {
 
 export const TERRAINS: TerrainEntry[] = [
   // ===== 亚洲 / 菲律宾 =====
-  MAYON_VOLCANO, TAAL_LAKE, MOUNT_PINATUBO, MOUNT_APO,
-  MOUNT_PULAG, CORDILLERA_CENTRAL_LUZON,
+  MAYON_VOLCANO, TAAL_LAKE, MOUNT_PINATUBO, MOUNT_PULAG, CORDILLERA_CENTRAL_LUZON,
   SIERRA_MADRE_PHILIPPINES, MOUNT_KANLAON, CHOCOLATE_HILLS,
   BANAUE_IFUGAO_RICE_TERRACES, CAMIGUIN_ISLAND, BATANES_ISLANDS,
   EL_NIDO_BACUIT_ARCHIPELAGO, TUBBATAHA_REEFS, CORON_CALAMIAN_ISLANDS,
   PUERTO_PRINCESA_UNDERGROUND_RIVER, PAGSANJAN_GORGE,
-  CAGAYAN_RIVER, LAKE_LANAO, AGUSAN_MARSH,
-  HUNDRED_ISLANDS_NATIONAL_PARK, VERDE_ISLAND_PASSAGE,
+  CAGAYAN_RIVER, HUNDRED_ISLANDS_NATIONAL_PARK, VERDE_ISLAND_PASSAGE,
 ];

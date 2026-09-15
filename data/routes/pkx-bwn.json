@@ -1,0 +1,32 @@
+{
+  "id": "pkx-bwn",
+  "name": "北京 — 斯里巴加湾",
+  "nameEn": "Beijing — Bandar Seri Begawan",
+  "description": "华北平原 · 大别山 · 鄱阳湖 · 南海 · 文莱河口",
+  "descriptionEn": "North China Plain · Dabie Mountains · Poyang Lake · South China Sea · Brunei River Estuary",
+  "depCountry": "china",
+  "arrCountry": "brunei",
+  "flight": {
+    "airline": "文莱皇家航空",
+    "airlineEn": "Royal Brunei Airlines",
+    "flightNo": "BI624",
+    "aircraft": "Airbus A320neo",
+    "depIata": "PKX",
+    "arrIata": "BWN",
+    "durationMin": 330
+  },
+  "source": {
+    "ref": "https://www.flyroyalbrunei.com/brunei/en/book-manage/flight-timetable/",
+    "checkedOn": "2026-09-15",
+    "note": "文莱皇家航空「Operating Flights」时刻表 PDF（2026-07-07 版 S42/26，适用 2026-03-29 至 10-24，1 级，航司）：BI624 北京大兴 00:30 → 06:00 斯里巴加湾（周二、周五）、BI623 斯里巴加湾 02:00 → 07:25 北京（周一、周四），单一航段无经停；中国民航网 2025-05-07（《中国民航报》记者稿，2 级）：斯里巴加湾至北京大兴直飞航线恢复运营，空客 A320neo 执飞，去程 BI623 每周一、四、返程 BI624 每周二、五 —— 航班号、班期、机场对两源一致。机场是大兴 PKX，不是首都 PEK。冬春航季（10-25 起）是否续飞截至 2026-09-15 未见；时长按航司时刻表算（两地同为 UTC+8）。航点经华北平原—长江中游—南海为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "pkx", "name": "北京大兴", "nameEn": "Beijing Daxing", "lat": 39.5013, "lon": 116.414, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "poyang" },
+    { "kind": "terrain", "terrainId": "brunei-river-estuary" },
+    { "kind": "city", "id": "bwn", "name": "斯里巴加湾", "nameEn": "Bandar Seri Begawan", "lat": 4.9442, "lon": 114.928, "airport": true }
+  ]
+}

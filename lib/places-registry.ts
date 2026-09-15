@@ -233,6 +233,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "fi-lounais-suomi": { zh: "西南芬兰", en: "Southwest Finland", order: 241 },
   "fi-jarvi-suomi": { zh: "湖区芬兰", en: "Finnish Lakeland", order: 242 },
   "fi-pohjois-suomi": { zh: "北芬兰（含拉普兰）", en: "Northern Finland (incl. Lapland)", order: 243 },
+  "fi-lansi-suomi": { zh: "西芬兰沿岸（博滕）", en: "Western Finland coast (Ostrobothnia)", order: 244 },
   // 卢森堡（埃斯灵—古特兰）
   "lu-oesling": { zh: "埃斯灵", en: "Oesling", order: 250 },
   "lu-gutland": { zh: "古特兰", en: "Gutland", order: 251 },
@@ -256,6 +257,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "pl-wielkopolska-slask": { zh: "大波兰与西里西亚", en: "Greater Poland & Silesia", order: 262 },
   "pl-pomorze": { zh: "波美拉尼亚", en: "Pomerania", order: 263 },
   "pl-mazury-podlasie": { zh: "瓦尔米亚—马祖里与波德拉谢", en: "Warmia-Masuria & Podlasie", order: 264 },
+  "pl-lodz-lublin": { zh: "罗兹与卢布林", en: "Łódź & Lublin", order: 265 },
   // 越南（北部→中部→中部高原→南部）
   "vn-north": { zh: "北部", en: "Northern Vietnam", order: 310 },
   "vn-central": { zh: "中部", en: "Central Vietnam", order: 311 },
@@ -312,6 +314,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "cz-south-bohemia": { zh: "南波希米亚", en: "South Bohemia", order: 402 },
   "cz-central-bohemia": { zh: "中波希米亚", en: "Central Bohemia", order: 403 },
   "cz-moravia": { zh: "摩拉维亚", en: "Moravia", order: 404 },
+  "cz-east-bohemia": { zh: "东波希米亚", en: "East Bohemia", order: 405 },
   // 智利（南美首个国家，北→中→南→巴塔哥尼亚→复活节岛）
   "cl-norte-grande": { zh: "北大区（阿塔卡马）", en: "Norte Grande (Atacama)", order: 410 },
   "cl-norte-chico": { zh: "小北区（科金博）", en: "Norte Chico (Coquimbo)", order: 411 },
@@ -416,6 +419,14 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "slovenia", nameZh: "斯洛文尼亚", nameEn: "Slovenia" },
   { country: "malta", nameZh: "马耳他", nameEn: "Malta" },
   { country: "estonia", nameZh: "爱沙尼亚", nameEn: "Estonia" },
+  { country: "latvia", nameZh: "拉脱维亚", nameEn: "Latvia" },
+  { country: "romania", nameZh: "罗马尼亚", nameEn: "Romania" },
+  { country: "bulgaria", nameZh: "保加利亚", nameEn: "Bulgaria" },
+  { country: "uzbekistan", nameZh: "乌兹别克斯坦", nameEn: "Uzbekistan" },
+  { country: "lithuania", nameZh: "立陶宛", nameEn: "Lithuania" },
+  { country: "kyrgyzstan", nameZh: "吉尔吉斯斯坦", nameEn: "Kyrgyzstan" },
+  { country: "sri-lanka", nameZh: "斯里兰卡", nameEn: "Sri Lanka" },
+  { country: "brunei", nameZh: "文莱", nameEn: "Brunei" },
 ];
 
 /** 城市按国家存放在 lib/content/<country>/cities.ts，这里是合并结果（顺序与 CONTENT_COUNTRIES 一致）。 */
@@ -467,6 +478,14 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   slovenia: "europe",
   malta: "europe",
   estonia: "europe",
+  latvia: "europe",
+  romania: "europe",
+  bulgaria: "europe",
+  uzbekistan: "asia",
+  kyrgyzstan: "asia",
+  "sri-lanka": "asia",
+  brunei: "asia",
+  lithuania: "europe",
   chile: "south-america",
 };
 

@@ -44,4 +44,8 @@ export const POIS: Record<string, CityPoi[]> = {
   kokshetau: [
     { nameZh: "科克舍套地区历史博物馆", nameEn: "Kokshetau Regional History Museum", lon: 69.3833, lat: 53.2833, kind: "landmark" },
   ],
+  oskemen: [
+    { nameZh: "东哈萨克斯坦州历史地方志博物馆", nameEn: "East Kazakhstan Regional Museum of History and Local Lore", lon: 82.6215, lat: 49.9467, kind: "landmark" },
+    { nameZh: "额尔齐斯河与乌尔巴河汇流口滨河路", nameEn: "Irtysh–Ulba confluence embankment", lon: 82.6194, lat: 49.9426, kind: "landmark" },
+  ],
 };

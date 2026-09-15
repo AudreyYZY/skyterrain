@@ -27,6 +27,12 @@
       "recheckAfter": "2027-01"
     },
     {
+      "key": "travel/baguio/howItWorks",
+      "reason": "误判：句中「设计人口 2.5 至 3 万」是 1909 年伯纳姆规划的设计容量，属固定史实，不是会过期的统计数。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2030-01"
+    },
+    {
       "key": "travel/baishan/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -37,6 +43,18 @@
       "reason": "该市公报发布月份在次年 6—8 月之间波动，2025 年公报截至 2026-09-08 未见发布；2024 年末的 88.88 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-09"
+    },
+    {
+      "key": "travel/bandung/howItWorks",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/bandung/identity",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
     },
     {
       "key": "travel/beihai/howItWorks",
@@ -63,6 +81,18 @@
       "recheckAfter": "2027-01"
     },
     {
+      "key": "travel/dali/howItWorks",
+      "reason": "大理市人民政府《大理市2024年国民经济和社会发展统计公报》（2025-06）常住人口 79.01 万是市本级最新一期；2025 年公报截至 2026-09-15 未查到发布（大理州 332.1 万是州口径，不可替换）。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/dali/identity",
+      "reason": "大理市人民政府《大理市2024年国民经济和社会发展统计公报》（2025-06）常住人口 79.01 万是市本级最新一期；2025 年公报截至 2026-09-15 未查到发布（大理州 332.1 万是州口径，不可替换）。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-12"
+    },
+    {
       "key": "travel/daqing/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -73,6 +103,30 @@
       "reason": "该市公报发布月份是次年 7 月，2025 年公报截至 2026-09-08 未见发布；2024 年末的 266.3 万是最新可查数",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-08"
+    },
+    {
+      "key": "travel/denpasar/howItWorks",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/denpasar/identity",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/dubrovnik/howItWorks",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
+    },
+    {
+      "key": "travel/dubrovnik/identity",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
     },
     {
       "key": "travel/fenghuang/howItWorks",
@@ -93,6 +147,12 @@
       "recheckAfter": "2027-02"
     },
     {
+      "key": "travel/hanoi/identity",
+      "reason": "越南统计总局 2024 年 4 月中期人口与住房调查（869 万）是能取到的最新分省数；河内市统计局 2025 年报已发布但 thongkehanoi.gov.vn 证书与域名不匹配（2026-09-12 与 09-15 两次）；统计总局 2025 年全国数未见分省拆分。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
       "key": "travel/harnosand/identity",
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
       "confirmedOn": "2026-09-08",
@@ -103,6 +163,12 @@
       "reason": "佳木斯 2025 年统计公报只有户籍人口（215.9 万）；最新可取的常住人口是《黑龙江统计年鉴 2025》表 2-6 的 2024 年末数（206.6 万，1 级），2025 年数要等年鉴 2026。条目 sources 注释已写明。",
       "confirmedOn": "2026-09-13",
       "recheckAfter": "2027-01"
+    },
+    {
+      "key": "travel/jianshui/identity",
+      "reason": "建水县统计局 2025 年公报截至 2026-09-15 未查到，县统计局 2026-04-27 发布的《2025 年经济运行情况》不含人口；现有 2024 年末常住人口（2025-05-30 发布）是能取到的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/jiaozuo/howItWorks",
@@ -133,6 +199,12 @@
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/kanchanaburi/howItWorks",
+      "reason": "泰国内政部 DOPA 的 2025 年末分府 / 分镇登记人口按惯例 2026 年初发布，但 stat.bora.dopa.go.th 本轮 DNS 解析失败、检索额度用尽，未能核到；现有 2024 年末数是已核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-11"
     },
     {
       "key": "travel/kanchanaburi/identity",
@@ -231,6 +303,18 @@
       "recheckAfter": "2027-01"
     },
     {
+      "key": "travel/medan/howItWorks",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/medan/identity",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
       "key": "travel/mianyang/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -261,6 +345,18 @@
       "recheckAfter": "2027-06"
     },
     {
+      "key": "travel/pangkalan-bun/howItWorks",
+      "reason": "同 identity：乡级年鉴 2026 版约 2026-09 发布、站点 403。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-11"
+    },
+    {
+      "key": "travel/pangkalan-bun/identity",
+      "reason": "BPS 西哥打瓦林金县乡级年鉴《Kecamatan Arut Selatan Dalam Angka 2026》约 2026-09 发布，kobarkab.bps.go.id 403；现有 2024 年年中数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-11"
+    },
+    {
       "key": "travel/paris/howItWorks",
       "reason": "INSEE 的 populations de référence 按法律滞后三年：2026-01-01 生效版参照 2023 年 —— 2023 这个年份不是过期、是定义（与 lille / lyon 等 8 个法国条目同理）。下一版参照 2025 年，预计 2026 年底公布、2027-01-01 生效。",
       "confirmedOn": "2026-09-12",
@@ -283,6 +379,18 @@
       "reason": "芭提雅的登记人口最后一个可信数是 2019 年（พ.ศ. 2562）的内政部数据；en.wikipedia 信息框把它标成「2025 年 1 月」，脚注引的却是 2019 年报告——本库第三次撞到这个错标年份的坑。本轮未找到任何 2019 年之后的可信更新。",
       "confirmedOn": "2026-09-10",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/phu-quoc-city/howItWorks",
+      "reason": "富国特区 2024-12-31 口径 157,629 是已核实的最新数；越南 2025 年行政改革后特区级 2025 年数未见官方发布。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/phuket/howItWorks",
+      "reason": "泰国内政部 DOPA 的 2025 年末分府 / 分镇登记人口按惯例 2026 年初发布，但 stat.bora.dopa.go.th 本轮 DNS 解析失败、检索额度用尽，未能核到；现有 2024 年末数是已核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-11"
     },
     {
       "key": "travel/phuket/identity",
@@ -321,6 +429,18 @@
       "recheckAfter": "2027-01"
     },
     {
+      "key": "travel/rijeka/howItWorks",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
+    },
+    {
+      "key": "travel/split/howItWorks",
+      "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2031-06"
+    },
+    {
       "key": "travel/sukhothai/howItWorks",
       "reason": "同上，素可泰他尼（2023）。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
@@ -331,6 +451,18 @@
       "reason": "素可泰他尼 15,000 余人（2023）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/surabaya/howItWorks",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/surabaya/identity",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
     },
     {
       "key": "travel/uppsala/howItWorks",
@@ -381,16 +513,28 @@
       "recheckAfter": "2027-04"
     },
     {
+      "key": "travel/yogyakarta/howItWorks",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/yogyakarta/identity",
+      "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。 日惹另有市民政局户籍口径（2025 下半年约 41.6 万），与 BPS 推算口径不同，未混用。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/yuanyang/identity",
+      "reason": "元阳县统计局《2025年国民经济和社会发展统计公报》截至 2026-09-15 未在县政府网与公报库查到（2024 年公报 2025-05-16 发布）；现有 2024 年末户籍人口是能取到的最新一期。下一轮先查县政府网统计信息栏。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-12"
+    },
+    {
       "key": "travel/zhenjiang/identity",
       "reason": "统计局公报列表页只抓到 2017—2019 年旧条目（疑为分页/JS 加载），2025 年末数字未能定位，需人工翻页",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/zhoushan/identity",
-      "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-04"
     }
   ]
 }

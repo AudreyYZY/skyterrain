@@ -199,7 +199,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Maasvlakte is artificial land the Port of Rotterdam has been building since the 1970s in the North Sea west of the Meuse estuary, with the second phase, completed in 2013, extending it about 2 km further out to sea. From the air, a perfectly straight man-made coastline, dense container terminals and rows of wind turbines form a highly industrialised landscape.",
     formation:
-      "This land is entirely man-made: engineers dredge sand from the North Sea floor, process it, and deposit it to build new land — a continuation of the long Dutch tradition of land reclamation applied to port industry, and one of the largest artificial port-land expansion projects in the world.",
+      "This land is entirely man-made: engineers dredge sand from the North Sea floor, process it, and deposit it to build new land — a continuation of the long Dutch tradition of land reclamation applied to port industry, and one of the largest artificial port-land expansion projects in Europe.",
     observation:
       "From the air, identify the Maasvlakte by its dead-straight geometric man-made coastline, dense rows of container yards, and arrays of large wind turbines — this highly planned, entirely artificial port-industrial landscape stands in sharp contrast to the Netherlands' more natural or semi-natural landforms.",
     distinguish:

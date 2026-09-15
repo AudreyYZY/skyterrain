@@ -236,7 +236,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, Tioman's central massif is densely forested and steep, its coastline indented with numerous bays, white sand beaches and coral reefs lining the shallow coastal waters, marking a sharp boundary between island and the open South China Sea.",
     distinguish:
-      "Both Tioman Island and Sipadan Island are well-known diving destinations in Malaysia, but Tioman is a continental-shelf igneous island with a complete terrestrial ecosystem, while Sipadan is an isolated oceanic island built up by coral growth on a submerged volcanic cone.",
+      "Tioman and Redang are both well-known islands off Malaysia's east coast, but Tioman rises to a central peak of 1,038 m and is built mainly of volcanic rock and granite, while Redang is a lower granite island whose attraction is the coral reef of its marine park.",
     concept:
       "The sequence in which Tioman's volcanic rock and granite body intruded makes it an important sample for studying the timing of late Mesozoic magmatic activity on the Malay Peninsula's east coast.",
     history:
@@ -271,21 +271,6 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
       "The well-preserved coral reef ecosystem around Redang Island is a classic sample for studying the long-term effectiveness of coral reef conservation on the continental shelf off the Malay Peninsula's east coast.",
     history:
       "Redang Island and its surrounding waters are protected within Malaysia's marine park system, and it is today an important coral reef conservation area and diving destination on the peninsula's east coast.",
-  },
-  "sipadan-island": {
-    // 全六段 sources: 马来西亚唯一的海洋岛、自约 600 m 深海垂直隆起、记录鱼类逾 400 种。⚠️ 红线自查：正文只写生态与潜水史，**未涉 2002 年国际法院主权裁决**，符合红线。核实 2026-09-11，未改动
-    seeing:
-      "Sipadan is Malaysia's only oceanic island, lying beyond the continental shelf in the Celebes Sea, its pinnacle rising about 600 m vertically from the seabed, ringed by natural hard coral reef, with more than 400 recorded fish species.",
-    formation:
-      "Sipadan is a submarine pinnacle built up over millions of years by coral growth on top of an extinct volcanic cone; the combination of deep-water currents and a shallow, sunlit reef top has created exceptionally rich marine conditions around the island.",
-    observation:
-      "From the air and at the surface, Sipadan is tiny, almost the entire island covered in coral sand and tropical vegetation, the surrounding water shifting rapidly from pale blue to deep blue — a clear sign of the submarine pinnacle rising abruptly from deep water.",
-    distinguish:
-      "Both Sipadan and Tioman Island are well-known diving destinations in Malaysia, but Sipadan is an isolated oceanic island built up by coral on an extinct volcanic cone, surrounded immediately by deep sea, while Tioman is a continental-shelf igneous island.",
-    concept:
-      "Sitting at the heart of the Coral Triangle, Sipadan is a classic sample for studying how an oceanic-island coral reef ecosystem sustains high biodiversity under the combined conditions of deep-water currents and shallow-water sunlight.",
-    history:
-      "Sipadan was historically a sea-turtle nesting site and a traditional fishing ground for local fishermen, and became an internationally renowned diving destination in the late 20th century owing to its distinctive underwater landform and ecology.",
   },
   "pahang-river": {
     // 全六段 sources: 全长 459 km、马来半岛最长河；哲莱河与淡美璐河汇合、流域约 2.9 万 km²、于北根入海。与 rejang-river「马来西亚最长」口径互不证伪。核实 2026-09-11，未改动

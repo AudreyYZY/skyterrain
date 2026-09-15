@@ -60,4 +60,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "教堂山", nameEn: "Church Hill", lon: 19.0753, lat: 47.6706, kind: "landmark" },
     { nameZh: "露天民俗博物馆", nameEn: "Hungarian Open Air Museum (Skanzen)", lon: 19.0447, lat: 47.6917, kind: "landmark" },
   ],
+  veszprem: [
+    { nameZh: "火警瞭望塔", nameEn: "Fire Tower (Tűztorony)", lon: 17.9056, lat: 47.0948, kind: "landmark" },
+    { nameZh: "城堡区与圣米迦勒主教座堂", nameEn: "Castle Hill and St Michael's Cathedral", lon: 17.903, lat: 47.0971, kind: "landmark" },
+    { nameZh: "吉塞拉礼拜堂", nameEn: "Gizella Chapel", lon: 17.9035, lat: 47.097, kind: "landmark" },
+    { nameZh: "圣伊什特万高架桥", nameEn: "St Stephen Viaduct", lon: 17.8959, lat: 47.0978, kind: "landmark" },
+    { nameZh: "维斯普雷姆动物园", nameEn: "Veszprém Zoo", lon: 17.8938, lat: 47.0925, kind: "landmark" },
+    { nameZh: "蒂豪尼本笃会修道院", nameEn: "Tihany Benedictine Abbey", lon: 17.8897, lat: 46.9138, kind: "landmark" },
+  ],
+  kecskemet: [
+    { nameZh: "市政厅", nameEn: "Kecskemét Town Hall", lon: 19.6915, lat: 46.9066, kind: "landmark" },
+    { nameZh: "花宫", nameEn: "Cifrapalota (Ornamental Palace)", lon: 19.6951, lat: 46.9085, kind: "landmark" },
+    { nameZh: "柯达伊学院与方济各会教堂", nameEn: "Kodály Institute and Franciscan Church", lon: 19.6934, lat: 46.9066, kind: "landmark" },
+    { nameZh: "匈牙利摄影博物馆", nameEn: "Hungarian Museum of Photography", lon: 19.6945, lat: 46.9053, kind: "landmark" },
+    { nameZh: "匈牙利素人艺术家博物馆", nameEn: "Museum of Hungarian Naïve Artists", lon: 19.687, lat: 46.9061, kind: "landmark" },
+    { nameZh: "自然之家（基什孔沙格国家公园访客中心）", nameEn: "House of Nature (Kiskunság National Park visitor centre)", lon: 19.703, lat: 46.92, kind: "landmark" },
+  ],
 };

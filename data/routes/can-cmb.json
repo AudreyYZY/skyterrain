@@ -1,0 +1,33 @@
+{
+  "id": "can-cmb",
+  "name": "广州 — 科伦坡",
+  "nameEn": "Guangzhou — Colombo",
+  "description": "雷州半岛 · 红河三角洲 · 茵他侬山 · 锡吉里耶岩 · 尼甘布潟湖",
+  "descriptionEn": "Leizhou Peninsula · Red River Delta · Doi Inthanon · Sigiriya Rock · Negombo Lagoon",
+  "depCountry": "china",
+  "arrCountry": "sri-lanka",
+  "flight": {
+    "airline": "斯里兰卡航空",
+    "airlineEn": "SriLankan Airlines",
+    "flightNo": "UL881",
+    "aircraft": "Airbus A320 / A330",
+    "depIata": "CAN",
+    "arrIata": "CMB",
+    "durationMin": 325
+  },
+  "source": {
+    "ref": "https://www.baiyunairport.com/",
+    "checkedOn": "2026-09-16",
+    "note": "广州白云国际机场官网出发航班（1 级，2026-09-16）：UL881 CAN → CMB，不经停（isStop=0），机型 A320，计划 02:00 起飞、07:25 到达（北京时间），即 325 分钟；AASL 班达拉奈克机场每周航班时刻表（1 级，2026-09-16）：UL881 04:55 到达、来自 Guangzhou Baiyun（与 07:25 北京时间一致）；FlightAware（3 级）计划 325 分钟、9 月实飞 A320。**此前记录的 UL880 / UL884 是科伦坡→广州方向的回程号**，广州出发是 UL881 / UL885。斯里兰卡航空在这条线上逐班换机，AASL 周表另见 A330 执飞日期 —— 机型字段写「A320 / A330」：白云机场官网与追踪站见 UL881 为 A320，AASL 周表与追踪站另见 A330-200 执飞日（当批核实指出单写 A320 会在换机日失真，已改）。班期不写。航点经北部湾—中南半岛北部—孟加拉湾—斯里兰卡北中部为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "leizhou" },
+    { "kind": "terrain", "terrainId": "red-river-delta" },
+    { "kind": "terrain", "terrainId": "doi-inthanon" },
+    { "kind": "terrain", "terrainId": "sigiriya-rock" },
+    { "kind": "terrain", "terrainId": "negombo-lagoon" },
+    { "kind": "city", "id": "cmb", "name": "科伦坡班达拉奈克", "nameEn": "Colombo Bandaranaike", "lat": 7.1808, "lon": 79.8841, "airport": true }
+  ]
+}

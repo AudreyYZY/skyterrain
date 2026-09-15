@@ -71,4 +71,11 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
     source: "圣保罗湾 35.9483,14.4017（布吉巴、夸拉同属本地方议会）；MLA 机场直线约 12 km（按本条目坐标算）：维基坐标、圣保罗湾地方议会官网",
   },
+  {
+    id: "qrendi", nameZh: "奎伦迪", nameEn: "Qrendi", country: "malta", tier: "notable", zone: "mt-south",
+    admin1Zh: "西部大区", admin1En: "Western Region",
+    lon: 14.4589, lat: 35.8342,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "奎伦迪 35.8342,14.4589（Wikidata）；属西部大区（regjunpunent.gov.mt，1 级）；MLA 直线约 3.1 km（按本条目坐标算）；中文译名沿用仓库地形条目「奎伦迪」（已有城市补充批，2026-09-16）",
+  },
 ];

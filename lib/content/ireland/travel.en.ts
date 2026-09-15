@@ -32,7 +32,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Liffey runs through the city centre, dividing it into the Southside — historically home to Trinity College and Grafton Street's shopping district — and the Northside, centred on O'Connell Street and the docklands; the suburbs extend out along Dublin Bay.",
     gettingAround:
-      "Dublin Airport is about 10 km from the centre, reached by bus or taxi; there is no direct metro link yet. Getting around the city relies mainly on walking, the Luas tram and buses, with the historic Southside walkable on foot. The climate is temperate maritime, mild and rainy year-round with changeable weather.",
+      "Dublin Airport is about 10 km by road from the centre, reached by bus or taxi; there is no direct metro link yet. Getting around the city relies mainly on walking, the Luas tram and buses, with the historic Southside walkable on foot. The climate is temperate maritime, mild and rainy year-round with changeable weather.",
     culture:
       "The official languages are Irish and English, with English used in daily life. Dublin has a strong pub culture, with the Temple Bar district a hub of nightlife, and the city hosts the main St Patrick's Day parade. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -74,7 +74,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is built on an island formed where the Lee splits into two channels, its street layout shaped by the old canal system; the suburbs extend out along the river mouth, with Cobh harbour historically an important transatlantic shipping port nearby.",
     gettingAround:
-      "Cork Airport is about 8 km from the centre, reached by bus. Getting around the city centre relies mainly on walking, as the old town is compact. The climate is temperate maritime, mild and rainy year-round.",
+      "Cork Airport is about 6.4 km in a straight line from the centre, reached by bus. Getting around the city centre relies mainly on walking, as the old town is compact. The climate is temperate maritime, mild and rainy year-round.",
     culture:
       "The official languages are Irish and English, with English used day to day. Cork is known for its local food culture, and the English Market is central to daily food life in the city. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -95,7 +95,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The compact town centre sits right beside Killarney National Park and its lakes to the south-west, with MacGillycuddy's Reeks rising as a backdrop on the park's western side, forming a classic mountain-and-lake setting.",
     gettingAround:
-      "Kerry Airport is about 15 km from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
+      "Kerry Airport is about 14 km in a straight line from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
     culture:
       "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -156,7 +156,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Shannon, with King John's Castle guarding a key crossing point; the city is divided into historic quarters including Irishtown, Englishtown and Newtown Pery.",
     gettingAround:
-      "Shannon Airport is about 25 km from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
+      "Shannon Airport is about 21 km in a straight line from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
     culture:
       "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is generally taken to be the namesake of the five-line comic verse form, the \"limerick,\" though the exact origin of the name remains unsettled. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -194,7 +194,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town was built to an 18th-century plan (generally attributed to the English architect James Wyatt, around 1780), with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
     gettingAround:
-      "Ireland West Airport Knock is about 50 km from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
+      "Ireland West Airport Knock is about 47 km in a straight line from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
     culture:
       "The official languages are Irish and English, with English used day to day. Westport is known for its neatly planned town centre and lively music-pub culture, and is an important hub for outdoor tourism in western Ireland. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -211,12 +211,46 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town is centred on a triangular market square known as the Diamond, with Donegal Castle standing beside the river mouth — a historic trading post on Donegal Bay.",
     gettingAround:
-      "Donegal Airport (Carrickfinn) is about 65 km from town and has a government-subsidised route to Dublin. The town itself is walkable; reaching Slieve League and Glenveagh National Park requires a car. The climate is temperate maritime and among the windier parts of Ireland.",
+      "Donegal Airport (Carrickfinn) is about 46 km in a straight line from town and has a government-subsidised route to Dublin. The town itself is walkable; reaching Slieve League and Glenveagh National Park requires a car. The climate is temperate maritime and among the windier parts of Ireland.",
     culture:
       "The official languages are Irish and English; County Donegal is an important Gaeltacht region. The area is known for the traditional craft of hand-woven Donegal tweed. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
       "Donegal Castle; the Diamond market square. Slieve League nearby (one of Europe's highest sea cliffs) and Glenveagh National Park; the scenery along Donegal Bay.",
     whenAndTips:
       "May–September is the most pleasant season; as a comparatively remote part of north-west Ireland, driving is the most convenient way to explore Slieve League and Glenveagh National Park — mountain weather is changeable, so bring wind- and rain-proof gear.",
+  },
+  ennis: {
+    // 全七段 sources: 同中文侧（CSO 2022 census F1015 and F1004A, tier 1; clarecoco.ie and gov.ie, tier 1; OPW heritageireland.ie, tier 1; NTA GTFS sample 2026-09-22, tier 1; Payment of Wages (Tips and Gratuities) Act 2022, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Ennis is the county town of County Clare in the west of Ireland, on the River Fergus, with an urban population of about 27,900 in the 2022 census (Central Statistics Office). It is the gateway to the Cliffs of Moher and the Burren: both are in County Clare and together make up the Burren and Cliffs of Moher UNESCO Global Geopark, and the ruined medieval Franciscan friary in town keeps its 15th- and 16th-century limestone carvings.",
+    howItWorks:
+      "Ennis has no town government of its own: after the 2014 local government reform abolished town councils, local affairs are handled by Clare County Council, which has 28 elected councillors and its headquarters in Ennis, with day-to-day administration led by a chief executive. The councillors of the Ennis municipal district choose a 'Mayor of Ennis' each year, a yearly title rather than an executive post. The centre of town is around O'Connell Square with narrow streets wrapped round it, the friary ruins by the river to the north and the railway station a short way south-east; local addresses use Eircodes, with the routing key V95 around Ennis. Daily life is shaped by rail and road: about 40 minutes by train south to Limerick and just over an hour north to Galway. Newcomers often assume the Cliffs of Moher are just outside town, when the cliffs visitor centre is about 33 km away in a straight line and about an hour by bus; they also take Shannon Airport for Limerick's airport, when it is in County Clare and closer to Ennis than to central Limerick.",
+    layout:
+      "The town centre runs along the River Fergus, with O'Connell Square in the middle surrounded by winding narrow streets; the Ennis Friary ruins are by the river north of the square, the Clare Museum is in the centre, and the railway station is to the south-east. North lies the Burren, north-west are the Cliffs of Moher on the Atlantic coast, and south are Shannon Airport and Limerick.",
+    gettingAround:
+      "Shannon Airport (SNN) is about 16 km from Ennis in a straight line, about 30 to 50 minutes on the 330 bus or about half an hour on the 51 coach. Trains run south to Limerick in about 40 minutes and north to Galway in about 1 hour 15 to 1 hour 30 minutes; for Dublin you change around Limerick. The 350 bus reaches the Cliffs of Moher in about an hour and continues to Doolin and Galway, with timetables varying by season; the Burren is easier by car.",
+    culture:
+      "English is spoken everywhere, and Irish is also an official language. Ennis Friary opens seasonally, with dates as announced by the site managers. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
+    seeAndDo:
+      "The medieval carvings of Ennis Friary; the Clare Museum; O'Connell Square and the old streets in the centre; the 350 bus to the Cliffs of Moher; the limestone landscape of the Burren and Burren National Park; and Bunratty Castle near Shannon Airport.",
+    whenAndTips:
+      "May–September has long days and most sights open; it rains all year and the Cliffs of Moher area is windy, so bring a waterproof, windproof jacket. Bus timetables to the Cliffs of Moher and the Burren change with the seasons, so check the operator's schedule before setting off.",
+  },
+  sligo: {
+    // 全七段 sources: 同中文侧（CSO 2022 census F1015 and F1004A, tier 1; sligococo.ie, tier 1; Sligo Airport website, tier 1; NTA GTFS sample 2026-09-22, tier 1; OPW heritageireland.ie, tier 1; Fáilte Ireland on Yeats's grave, tier 1 search summary; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条 ok；诺克机场—斯莱戈巴士时长两源不一，改为「约 1 小时」）。
+    identity:
+      "Sligo is the county town of County Sligo in the north-west of Ireland, on the Garavogue River between Lough Gill to the east and the bay to the west, with an urban population of about 20,600 in the 2022 census (Central Statistics Office). Outside town, the Neolithic tombs of Carrowmore date back nearly 6,000 years and are part of the Sligo passage tomb landscape on Ireland's World Heritage tentative list; the poet W. B. Yeats spent much of his childhood here, and his grave is at Drumcliffe north of town.",
+    howItWorks:
+      "Sligo has no separate town government either: local affairs are handled by Sligo County Council, with 18 councillors and its headquarters by the river in town; the councillors of the Borough District of Sligo choose a 'Mayor of Sligo' each year, a yearly title, while administration is run by the council's chief executive. The centre straddles the river, the Dominican friary ruins have stood in the east of town since it was founded in the mid-13th century, and the railway station is on the west side of the centre; local Eircodes use the routing key F91. Daily life is shaped by the railway, the lake and the sea: just over three hours by train to Dublin, and about half an hour by bus to the seaside at Strandhill. Newcomers often assume that an airport near town means they can fly in — Sligo Airport is about 8 km away in a straight line but has no scheduled flights, handling only charters and search-and-rescue helicopters, and the nearest scheduled flights are at Knock, about 46 km away; they also often take Yeats for a Sligo native, when he was born in Dublin and his grave is at Drumcliffe, about 6 km north in a straight line, not in town.",
+    layout:
+      "The town centre lies on both banks of the Garavogue River, with Sligo Abbey in the east of town and the county council offices and the Yeats Memorial Building by the river; the railway station is on the west side of the centre. About 4 km south-west in a straight line are the Carrowmore tombs, with Knocknarea and the seaside village of Strandhill further west; Lough Gill is to the east, and Drumcliffe and Benbulbin are to the north.",
+    gettingAround:
+      "The nearest airport with scheduled flights is Ireland West Airport Knock (NOC), about 46 km away in a straight line, with the 64 bus to Sligo taking about an hour. Direct trains from Dublin Connolly take about 3 hours 5 to 3 hours 20 minutes, and the 23 coach runs from Dublin Airport. The S2 bus goes to Strandhill and northbound buses to Drumcliffe; Carrowmore and Knocknarea are easiest by car or taxi.",
+    culture:
+      "English is spoken everywhere, and Irish is also an official language. Yeats and his poetry are an important part of local culture, and the town has a Yeats Memorial Building. Sligo Abbey and the Carrowmore tombs are managed by the state heritage service and open seasonally. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
+    seeAndDo:
+      "The cloister and carvings of Sligo Abbey; the Carrowmore Neolithic tombs and their new visitor centre; the climb up Knocknarea to the cairn on its summit; Yeats's grave at Drumcliffe beneath Benbulbin; Strandhill beach; and Lough Gill.",
+    whenAndTips:
+      "May–September has long days and the heritage sites open; it is wet and windy all year, so bring a waterproof, windproof jacket for hill walks. Opening periods for the heritage sites and bus timetables are as announced by the site managers and operators.",
   },
 };

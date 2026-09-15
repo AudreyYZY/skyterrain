@@ -154,4 +154,38 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "December to March is ski season, and accommodation is tight on race weekends; June to August is good for lakeside holidays and hiking; spring and autumn are quiet. Hill roads ice over in winter, so drivers need winter tyres.",
   },
+  kardla: {
+    // 全七段 sources: 同中文侧（Statistics Estonia RV0240 2026-01-01, tier 1; vald.hiiumaa.ee, tier 1; Local Government Organisation Act; airport.ee and praamid.ee, tier 1; Estonian Geological Survey crater story map, tier 1; Transport Administration lighthouse pages, tier 1; UNESCO MAB, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Kärdla is the town on Hiiumaa, Estonia's second-largest island, and the seat of Hiiu County; on 1 January 2026 the town itself had about 2,900 people and Hiiumaa Parish, which covers the whole island, about 8,300 (Statistics Estonia). The town grew up around a 19th-century cloth mill, and beneath it lies a meteorite crater about 4 km across, formed some 455 million years ago but buried under sedimentary rock, so no crater shape is visible on the ground.",
+    howItWorks:
+      "Kärdla has no town government of its own: since 2017 the whole island has been a single parish, Hiiumaa, governed by an elected parish council that appoints the parish mayor, with Kärdla as the seat of the parish and the county. The parish is divided into five sub-parishes, Kärdla among them, each with a council representing its residents. The centre is around the central square, with the parish offices, shops and church within a few hundred metres, and the small harbour and seafront to the north. Locals say 'going to town' and mean Kärdla, where most of the island's schools, health care and offices are. Daily life is shaped by the island: reaching the mainland means flying to Tallinn or driving to the east coast for the ferry. Newcomers often expect to see the crater, when it is buried underground and what you can see is the model in town and the museum's explanation; they also underestimate the island, whose Kõpu lighthouse in the far west is more than 30 km from town in a straight line.",
+    layout:
+      "The town lies on Hiiumaa's north coast, with the central square and parish offices in the middle, the church north of the square and the harbour and seafront further north on the shore. Heltermaa on the island's east coast is the ferry port, and the airport is about 5 km east of town. About 14 km north-west along the coast is Tahkuna lighthouse, and Kõpu lighthouse stands on the Kõpu peninsula in the west of the island.",
+    gettingAround:
+      "Kärdla Airport (KDL), about 5 km from the centre in a straight line, has scheduled domestic flights to Tallinn operated by NyxAir under a state contract. By sea, take the ferry from Rohuküla on the mainland to Heltermaa on the island's east coast, about 1 hour 15 minutes, then drive to Kärdla. There is no railway on the island and buses are infrequent, so driving or cycling is easier.",
+    culture:
+      "Estonian is spoken, with English usable in tourism in summer. The Long House of the Hiiumaa Museum was the cloth mill's management building and tells the story of the town and the mill. The whole West Estonian Archipelago was designated a UNESCO biosphere reserve in 1990, and the island's coastal meadows, juniper woods and stone walls are part of its traditional rural landscape.",
+    seeAndDo:
+      "The central square and the Hiiumaa Museum's Long House; the harbour and seafront; learning about the buried Kärdla crater; the cast-iron Tahkuna lighthouse at the northern tip; Kõpu lighthouse in the west; and cycling the coast and juniper woods.",
+    whenAndTips:
+      "June–August is the most comfortable, with the longest days; winter is windy and both flights and ferries can change with the weather, so check the operators' notices. Ferry car spaces are tight on summer weekends, so book ahead.",
+  },
+  voru: {
+    // 全七段 sources: 同中文侧（Statistics Estonia RV0240 2026-01-01, tier 1; Estonian Encyclopaedia, tier 2; Vana-Võrumaa museum, tier 1; tartu.ee on TAY, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Võru is the seat of Võru County in south-eastern Estonia, built on the north shore of Lake Tamula, with about 11,800 people in the town on 1 January 2026 (Statistics Estonia). It is a county town laid out to a plan at the end of the 18th century, its old town a neat grid of streets; the writer Friedrich Reinhold Kreutzwald practised medicine here for more than forty years and compiled the Estonian epic Kalevipoeg.",
+    howItWorks:
+      "Two local governments with the same name sit in one town: the town of Võru is governed by an elected town council that appoints the mayor and covers only the town, while Võru Parish around it is a separate local government of about 10,000 people whose offices are also in town, as are the county's institutions. The town was made a county seat in 1784 and planned on paper the following year, and the old town is still a regular grid, with the central square and St Catherine's Church in the middle and Lake Tamula to the south-west, its shore lined with a park, bathing area and paths. Locals divide the town into the centre, the industrial Võrusoo to the north and the largely wooded Kubija to the south. Daily life runs on the roads: there are no passenger trains, so trips to Tartu or Tallinn are by bus or car, and south of town lie the hills and lakes of the Haanja Upland. Newcomers often assume a southern county seat must have trains, when Võru has had no regular passenger trains since 2001; they also tend to count the town and the parish as one population.",
+    layout:
+      "The old town sits on the north shore of Lake Tamula, its grid of streets around the central square, with St Catherine's Church beside the square and the Kreutzwald Memorial Museum a few hundred metres south of it; along the lake are Kreutzwald Park and a lakeside path, with a footbridge out to Rose Island. Võrusoo's industrial area lies to the north, the woods of Kubija to the south, and the hills of the Haanja Upland beyond.",
+    gettingAround:
+      "There is no airport with scheduled flights here; the nearest, Tartu (TAY), about 54 km away in a straight line, flies only to Helsinki, and other flights go through Tallinn. As of September 2026 Võru has no passenger trains, so travel to Tartu or Tallinn by bus or car. The town is walkable, while the Haanja Upland and the surrounding lakes need a car.",
+    culture:
+      "Estonian is spoken, with English usable among younger people. The Kreutzwald Memorial Museum is his former home in Võru and shows the life of the doctor-writer and the making of the epic. In summer the bathing area and lakeside path on Lake Tamula are where locals spend warm days.",
+    seeAndDo:
+      "The Kreutzwald Memorial Museum; the central square and St Catherine's Church of 1793; the Lake Tamula shore path and Rose Island; the Võru County Museum; and a drive south into the hills, lakes and observation towers of the Haanja Upland.",
+    whenAndTips:
+      "June–September is the most comfortable, with swimming in the lake; winters are cold and the days short. There is no train, so check bus times before you travel.",
+  },
 };

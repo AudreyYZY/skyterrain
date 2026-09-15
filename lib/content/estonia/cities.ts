@@ -58,4 +58,17 @@ export const CITIES: CityEntry[] = [
     lon: 26.4983, lat: 58.0572,
     source: "奥泰佩镇中心 58.0572,26.4983（维基）；本地无定期航班机场（附近 Tõutsi 有私人小型机场，无商业航班），不填 airport 字段；塔尔图 TAY 直线约 30 km（仅飞赫尔辛基），其余航线经塔林 TLL（按坐标算）",
   },
+  {
+    id: "kardla", nameZh: "凯尔德拉（希乌马岛）", nameEn: "Kärdla (Hiiumaa)", country: "estonia", tier: "notable", zone: "ee-islands",
+    admin1Zh: "希乌马县", admin1En: "Hiiu County",
+    lon: 22.7497, lat: 58.9978,
+    airport: { iata: "KDL", nameZh: "凯尔德拉机场", nameEn: "Kärdla Airport", lon: 22.8307, lat: 58.9908 },
+    source: "凯尔德拉中心广场一带 58.9978,22.7497；KDL 机场 OurAirports 58.9908,22.8307，距中心直线约 4.7 km，有飞塔林的国内定期航班（airport.ee，1 级；仓库 tll-kdl 航线已核）；离陆地国界约 154 km（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "voru", nameZh: "沃鲁", nameEn: "Võru", country: "estonia", tier: "notable", zone: "ee-south",
+    admin1Zh: "沃鲁县", admin1En: "Võru County",
+    lon: 26.9958, lat: 57.8480,
+    source: "沃鲁中心广场 57.8480,26.9958（OSM）；本地没有定期航班的机场，不填 airport；塔尔图 TAY 直线约 54 km（只飞赫尔辛基），其余航线经塔林 TLL（按 OurAirports 算）；离国界约 24 km（按 OSM 边界算，已有城市补充批，2026-09-16）",
+  },
 ];

@@ -171,4 +171,21 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–October is the holiday season, busy and lively at night in summer; in winter many resort facilities cut back their hours. Swimming is mostly from rock shelving, so watch for slippery rocks and swell.",
   },
+  qrendi: {
+    // 全七段 sources: 同中文侧（NSO NR 120/2026 table 11, tier 1; Western Regional Council website, tier 1; Qrendi Local Council, tier 1; Heritage Malta, tier 1; Malta Public Transport route 74, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条 ok；2025 年末人口 NSO 官网对脚本 403，研究阶段在浏览器取表、与既有条目同表自检一致）。
+    identity:
+      "Qrendi is a village in the south-west of the island of Malta, with about 3,400 people at the end of 2025 (National Statistics Office). The village sits on inland high ground, but its territory runs down to the sea: the Ħaġar Qim and Mnajdra temples, more than five thousand years old, stand on the clifftop outside the village and were inscribed on the World Heritage list in 1992 as part of the Megalithic Temples of Malta, and the fishing inlet of Wied iż-Żurrieq and the Blue Grotto on the coast also come under Qrendi.",
+    howItWorks:
+      "Qrendi is a local council locality, with an elected local council looking after streets and local matters, and belongs to the Western Region, whose regional council is made up of the mayors of its local councils. The two temples themselves are managed by the national heritage agency Heritage Malta, not the local council. There is a mismatch in names here: the fishing inlet of Wied iż-Żurrieq and the Blue Grotto sound as if they belong to the neighbouring town of Żurrieq, and the bus stops carry Żurrieq's name, but the 1993 Local Councils Act placed them within Qrendi's locality. More confusingly, the National Statistics Office counts Qrendi in the 'South Eastern' statistical district while its regional council is the Western Region — statistical and administrative groupings are two different systems. The centre of the village is around the parish church, and the sights are on the clifftops and shore a kilometre or two away. Locals find their way by the village centre, the temples and Wied iż-Żurrieq. Daily life happens within a small radius: the airport is about 3 km away in a straight line, and route 74 buses link the village, the temples and the Blue Grotto. The commonest mistake newcomers make is assuming the Blue Grotto belongs to Żurrieq.",
+    layout:
+      "The village is on high ground in the south-west of Malta, with the parish church at its centre and a large collapse sinkhole, il-Maqluba, just outside. About 2 km south-west on the clifftop by the sea is Ħaġar Qim, with Mnajdra about 500 m downhill; south towards the sea is the fishing inlet of Wied iż-Żurrieq, with the Blue Grotto's sea arch on the nearby cliffs.",
+    gettingAround:
+      "Malta International Airport (MLA) is about 3 km away in a straight line. Route 74 buses from Valletta serve Qrendi village, the temples and the Blue Grotto area, and the temples are a few minutes' walk from the nearest stop. To see the Blue Grotto's sea arch, take a small boat from Wied iż-Żurrieq; whether boats run depends on the sea.",
+    culture:
+      "Maltese and English are spoken. The doorway of Mnajdra's South Temple aligns with sunrise at the spring and autumn equinoxes. The temple sites are covered by protective shelters; do not climb on the stones. Tipping is not compulsory, so check whether the bill already lists a service charge.",
+    seeAndDo:
+      "Ħaġar Qim temple and visitor centre; Mnajdra temple downhill; a boat trip from Wied iż-Żurrieq to the Blue Grotto; clifftop walks above the sea; and the il-Maqluba sinkhole at the edge of the village.",
+    whenAndTips:
+      "Spring and autumn are the most comfortable; in summer the clifftops have no shade and the midday sun is fierce, so go early or late in the day. Blue Grotto boats depend on the wind and waves and stop when it is rough. Temple opening hours and tickets are as announced by Heritage Malta.",
+  },
 };

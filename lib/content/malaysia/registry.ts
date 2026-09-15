@@ -249,18 +249,6 @@ const REDANG_ISLAND: TerrainEntry = {
   source: "热浪岛：登嘉楼州外南海一座花岗岩岛屿，是马来西亚海洋公园的组成部分，沿岸珊瑚礁生态系统保存完好，是马来半岛东岸重要的珊瑚礁保护区与潜水目的地（公开资料 WebSearch 2026）",
 };
 
-const SIPADAN_ISLAND: TerrainEntry = {
-  id: "sipadan-island",
-  nameZh: "诗巴丹岛",
-  nameEn: "Sipadan Island",
-  category: "island",
-  regionId: "asia",
-  country: "malaysia",
-  landmark: { name: "诗巴丹岛", lon: 118.629, lat: 4.115, elevation: 5, kind: "island" },
-  bbox: [118.60, 4.09, 118.66, 4.14],
-  label: { lon: 118.629, lat: 4.06, rotation: 0 },
-  source: "诗巴丹岛：马来西亚唯一的海洋岛，坐落于西里伯斯海大陆架之外，是一座死火山锥历经数百万年珊瑚持续生长堆积而成的海底尖峰，峰体从海床垂直隆起约600米，四周环绕天然硬珊瑚礁，地处珊瑚三角区核心地带，已记录鱼类逾400种、珊瑚种类数以百计（zubludiving.com WebSearch 2026）",
-};
 
 const PAHANG_RIVER: TerrainEntry = {
   id: "pahang-river",
@@ -370,7 +358,6 @@ export const TERRAINS: TerrainEntry[] = [
   GUA_TEMPURUNG, BATU_CAVES, GUNUNG_MULU_NP, NIAH_CAVES,
   MALIAU_BASIN, DANUM_VALLEY, ENDAU_ROMPIN,
   LANGKAWI_GEOPARK, PENANG_ISLAND, TIOMAN_ISLAND,
-  PERHENTIAN_ISLANDS, REDANG_ISLAND, SIPADAN_ISLAND,
-  PAHANG_RIVER, KELANTAN_RIVER, PERAK_RIVER, KINABATANGAN_RIVER,
+  PERHENTIAN_ISLANDS, REDANG_ISLAND, PAHANG_RIVER, KELANTAN_RIVER, PERAK_RIVER, KINABATANGAN_RIVER,
   REJANG_RIVER, TASIK_CHINI, BAKO_NATIONAL_PARK,
 ];

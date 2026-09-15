@@ -46,10 +46,10 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   https://www.scb.se/pressmeddelande/fler-bor-i-stora-tatorter-men-regionala-skillnader/
     //   原文引的是 2019 年的 177,074，**落后一期**；tätort 每 2–3 年一期，下一期（2025 年数据）预计 2026-11-26。
     identity:
-      "Uppsala is Sweden's oldest university town, with an urban-area (tätort) population of about 175,000 (2023), about 70 km north of Stockholm; Uppsala University, founded in 1477, is the oldest university in the Nordic region.",
+      "Uppsala is Sweden's oldest university town, with an urban-area (tätort) population of about 175,000 (2023), about 70 km by road north of Stockholm; Uppsala University, founded in 1477, is the oldest university in the Nordic region.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Uppsala (Sweden; fourth-largest urban area, 177,074 in 2019; 71 km north of Stockholm; seat of the Archbishop of Sweden since 1164, cathedral inaugurated 1435, the largest in Scandinavia at about 119 m; Uppsala University 1477, the oldest centre of higher education in Scandinavia, Celsius and Linnaeus; Fyris river divides old west from modern east; Central Station ~45,000 passengers a day; Gamla Uppsala mounds 5 km north; Arlanda ~30 km)
     howItWorks:
-      "Uppsala is Sweden's fourth-largest urban area with about 175,000 people in 2023, 71 km north of Stockholm, governed by an elected council; Swedish municipalities run schools, elder care and planning, the regions hospitals and public transport, and the state police and universities. The city has two identities: since 1164 it has been the seat of the Archbishop of Sweden, and the cathedral inaugurated in 1435, about 119 m tall, is the largest in Scandinavia and remains the centre of the Church of Sweden; Uppsala University, founded in 1477, is the oldest centre of higher education in the Nordic countries, where Celsius of the temperature scale and Linnaeus of taxonomy both taught, and the student nations and the celebrations of 30 April set the city's rhythm. The Fyris divides the city: the cathedral and castle stand in the old town on the west bank, the station and the modern quarters on the east; the royal mounds of Gamla Uppsala lie 5 km north as a pre-Christian ritual centre. The central station handles about 45,000 passengers a day and Arlanda airport lies about 30 km south. Newcomers most often go wrong by taking Uppsala for a dormitory of Stockholm, when it is the seat of the Swedish church and its oldest university.",
+      "Uppsala is Sweden's fourth-largest urban area with about 175,000 people in 2023, 71 km by road north of Stockholm, governed by an elected council; Swedish municipalities run schools, elder care and planning, the regions hospitals and public transport, and the state police and universities. The city has two identities: since 1164 it has been the seat of the Archbishop of Sweden, and the cathedral inaugurated in 1435, about 119 m tall, is the largest in Scandinavia and remains the centre of the Church of Sweden; Uppsala University, founded in 1477, is the oldest centre of higher education in the Nordic countries, where Celsius of the temperature scale and Linnaeus of taxonomy both taught, and the student nations and the celebrations of 30 April set the city's rhythm. The Fyris divides the city: the cathedral and castle stand in the old town on the west bank, the station and the modern quarters on the east; the royal mounds of Gamla Uppsala lie 5 km north as a pre-Christian ritual centre. The central station handles about 45,000 passengers a day and Arlanda airport lies about 30 km south. Newcomers most often go wrong by taking Uppsala for a dormitory of Stockholm, when it is the seat of the Swedish church and its oldest university.",
     layout:
       "The old town is centred on Uppsala Cathedral (the tallest church building in Scandinavia), with the main university building and botanical garden nearby, and the Fyris River running through the centre.",
     gettingAround:
@@ -76,7 +76,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre is built around a historic canal-lined quarter, with a Dutch-inspired canal system dating from the city's 17th-century founding; the Frihamnen waterfront has been redeveloped in recent years into a cultural and leisure district.",
     gettingAround:
-      "Göteborg Landvetter Airport is about 25 km from the centre, reached by bus; from Stockholm the train takes about 3 hours. The city has an extensive tram network, and walking or cycling are also good options. The climate is temperate maritime, with a rainy coast.",
+      "Göteborg Landvetter Airport is about 25 km by road from the centre, reached by bus; from Stockholm the train takes about 3 hours. The city has an extensive tram network, and walking or cycling are also good options. The climate is temperate maritime, with a rainy coast.",
     culture:
       "The official language is Swedish, with high English proficiency. Gothenburgers are known for their humour and directness and are often considered Sweden's most down-to-earth big-city residents. \"Fika\" coffee culture is equally strong here. Restaurant bills typically already include service.",
     seeAndDo:
@@ -96,7 +96,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town centre preserves a medieval street layout, with Malmö Castle and the old town square at its historic core; the Western Harbour district has been redeveloped in recent years as a sustainability showcase, home to the landmark Turning Torso tower.",
     gettingAround:
-      "Malmö Airport is about 28 km from the centre; a train across the Øresund Bridge also reaches Copenhagen Airport directly (about 25 minutes). The city has an extensive network of cycle lanes, and buses and walking are also good options. The climate is temperate maritime, one of the mildest in Sweden.",
+      "Malmö Airport is about 28 km in a straight line from the centre; a train across the Øresund Bridge also reaches Copenhagen Airport directly (about 25 minutes). The city has an extensive network of cycle lanes, and buses and walking are also good options. The climate is temperate maritime, one of the mildest in Sweden.",
     culture:
       "The official language is Swedish, with high English proficiency and a culturally diverse population due to a high share of immigrants. Malmö and Copenhagen together form the Øresund metropolitan region, with frequent daily commuting between the two. Restaurant bills typically already include service.",
     seeAndDo:
@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is ringed by about 3.4 km of medieval walls, its cobblestone streets, rose-covered walls and church ruins densely packed within — one of the best-preserved medieval trading towns in the Baltic region.",
     gettingAround:
-      "Visby Airport is about 4 km from the centre; ferries also run from Stockholm or ports in Södermanland. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, moderated by the surrounding sea.",
+      "Visby Airport is about 4 km in a straight line from the centre; ferries also run from Stockholm or ports in Södermanland. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, moderated by the surrounding sea.",
     culture:
       "The official language is Swedish, with high English proficiency. Visby hosts Almedalen Week each July, a major political gathering and medieval-themed festival, and is an important venue for Swedish cultural and political events. Restaurant bills typically already include service.",
     seeAndDo:
@@ -135,7 +135,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built on the island of Trossö and several surrounding islets, its 17th-century Baroque town plan well preserved, with naval dockyards and fortress buildings lining the coast.",
     gettingAround:
-      "Ronneby Airport is about 30 km from the centre, reached by bus; from Stockholm the train takes about 5 hours. The old town is walkable; exploring the Blekinge Archipelago nearby requires a car or boat. The climate is temperate maritime.",
+      "Ronneby Airport is about 23 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 5 hours. The old town is walkable; exploring the Blekinge Archipelago nearby requires a car or boat. The climate is temperate maritime.",
     culture:
       "The official language is Swedish, with high English proficiency. Karlskrona's civic identity is closely tied to the history of the Swedish Royal Navy, and it remains an important naval base today. Restaurant bills typically already include service.",
     seeAndDo:
@@ -156,7 +156,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the coast around Kalmar Castle, with a well-preserved 17th-century Baroque new-town district; a bridge connects Kalmar to Öland across the strait.",
     gettingAround:
-      "Kalmar Airport is about 6 km from the centre, reached by bus; from Stockholm the train takes about 4.5 hours. The old town is walkable; Öland is reachable by car across the bridge. The climate is temperate maritime.",
+      "Kalmar Airport is about 4.9 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 4.5 hours. The old town is walkable; Öland is reachable by car across the bridge. The climate is temperate maritime.",
     culture:
       "The official language is Swedish, with high English proficiency. Kalmar Castle was the site where the Kalmar Union — the 1397 union of the crowns of Denmark, Sweden and Norway — was concluded, an important landmark in Nordic history. Restaurant bills typically already include service.",
     seeAndDo:
@@ -177,7 +177,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Mining-induced ground subsidence has forced the city into an ongoing full relocation programme since 2014, with some historic buildings — such as Kiruna Church — moved intact to a new site, a rare example anywhere in the world of an entire town being relocated.",
     gettingAround:
-      "Kiruna Airport is about 8 km from the centre, reached by bus; from Stockholm the night train takes about 17 hours. The town centre is walkable; reaching Kebnekaise and Abisko requires a car or train. The climate is subarctic, with long, severe winters (temperatures can fall below -30°C) and midnight sun in summer.",
+      "Kiruna Airport is about 6 km in a straight line from the centre, reached by bus; from Stockholm the night train takes about 17 hours. The town centre is walkable; reaching Kebnekaise and Abisko requires a car or train. The climate is subarctic, with long, severe winters (temperatures can fall below -30°C) and midnight sun in summer.",
     culture:
       "The official language is Swedish, and Kiruna is also an important centre of Swedish Sámi Indigenous culture, home to the Sámi Parliament's museum. Restaurant bills typically already include service.",
     seeAndDo:
@@ -197,7 +197,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historic church town of Gammelstad, at the city's core, is a well-preserved cluster of wooden church cottages inscribed as a World Heritage Site in 1996; the modern city centre extends along the Gulf of Bothnia coast, where the frozen winter bay creates a distinctive ice-crossing landscape.",
     gettingAround:
-      "Luleå Airport is about 8 km from the centre, reached by bus; from Stockholm the train takes about 14 hours, or about 1.5 hours by air. The city centre is walkable. The climate is subarctic, with severe winters and a frozen bay.",
+      "Luleå Airport is about 4.8 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 14 hours, or about 1.5 hours by air. The city centre is walkable. The climate is subarctic, with severe winters and a frozen bay.",
     culture:
       "The official language is Swedish, with high English proficiency. Luleå is an important steel-industry and technology centre in northern Sweden, and a transport hub for reaching the northern archipelago and Lapland. Restaurant bills typically already include service.",
     seeAndDo:
@@ -242,7 +242,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The town is built along the northern shore of Lake Åre, with cable cars running directly up to the ski area on the mountain; in summer the town transforms into a destination for hiking, cycling and fishing.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 74.5 公里，原文短于直线、不可能成立，已改为略高于直线的值（实际公路里程可能更长）。
     gettingAround:
-      "Åre Östersund Airport is about 80 km from town, reached by bus; from Stockholm the train takes about 6.5 hours. The town itself is walkable; the ski area is reached by cable car or shuttle. The climate is subarctic mountain, cold and snowy in winter, cool in summer.",
+      "Åre Östersund Airport is about 80 km in a straight line from town, reached by bus; from Stockholm the train takes about 6.5 hours. The town itself is walkable; the ski area is reached by cable car or shuttle. The climate is subarctic mountain, cold and snowy in winter, cool in summer.",
     culture:
       "The official language is Swedish, with high English proficiency. Åre is a favourite retreat of Swedish royalty and celebrities, and home to the largest ski resort in Northern Europe. Restaurant bills typically already include service.",
     seeAndDo:

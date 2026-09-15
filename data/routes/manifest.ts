@@ -24,6 +24,20 @@ import pekHrb from "./pek-hrb.json" with { type: "json" };
 import hrbCan from "./hrb-can.json" with { type: "json" };
 import pekSha from "./pek-sha.json" with { type: "json" };
 import canBud from "./can-bud.json" with { type: "json" };
+import pekOtp from "./pek-otp.json" with { type: "json" };
+import canTas from "./can-tas.json" with { type: "json" };
+import pekBsz from "./pek-bsz.json" with { type: "json" };
+import canBsz from "./can-bsz.json" with { type: "json" };
+import tfuCmb from "./tfu-cmb.json" with { type: "json" };
+import ckgCmb from "./ckg-cmb.json" with { type: "json" };
+import pvgCmb from "./pvg-cmb.json" with { type: "json" };
+import canCmb from "./can-cmb.json" with { type: "json" };
+import pekTas from "./pek-tas.json" with { type: "json" };
+import kmgCmb from "./kmg-cmb.json" with { type: "json" };
+import nngBwn from "./nng-bwn.json" with { type: "json" };
+import hghBwn from "./hgh-bwn.json" with { type: "json" };
+import urcBsz from "./urc-bsz.json" with { type: "json" };
+import pkxBwn from "./pkx-bwn.json" with { type: "json" };
 import btsKsc from "./bts-ksc.json" with { type: "json" };
 import tllUre from "./tll-ure.json" with { type: "json" };
 import tllKdl from "./tll-kdl.json" with { type: "json" };
@@ -253,13 +267,11 @@ import sdkBki from "./sdk-bki.json" with { type: "json" };
 import kchMyy from "./kch-myy.json" with { type: "json" };
 // 菲律宾
 import mnlCeb from "./mnl-ceb.json" with { type: "json" };
-import mnlDvo from "./mnl-dvo.json" with { type: "json" };
 import mnlPps from "./mnl-pps.json" with { type: "json" };
 import mnlMph from "./mnl-mph.json" with { type: "json" };
 import mnlUsu from "./mnl-usu.json" with { type: "json" };
 import mnlTag from "./mnl-tag.json" with { type: "json" };
 import mnlDrp from "./mnl-drp.json" with { type: "json" };
-import cebDvo from "./ceb-dvo.json" with { type: "json" };
 // 印度尼西亚
 import cgkDps from "./cgk-dps.json" with { type: "json" };
 import cgkSub from "./cgk-sub.json" with { type: "json" };
@@ -355,6 +367,20 @@ export const ALL_ROUTES: FlightRoute[] = [
   hrbCan,
   pekSha,
   canBud,
+  pekOtp,
+  canTas,
+  pekBsz,
+  canBsz,
+  tfuCmb,
+  ckgCmb,
+  pvgCmb,
+  canCmb,
+  pekTas,
+  kmgCmb,
+  nngBwn,
+  hghBwn,
+  urcBsz,
+  pkxBwn,
   btsKsc,
   tllUre,
   tllKdl,
@@ -550,13 +576,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   sdkBki,
   kchMyy,
   mnlCeb,
-  mnlDvo,
   mnlPps,
   mnlMph,
   mnlUsu,
   mnlTag,
   mnlDrp,
-  cebDvo,
   cgkDps,
   cgkSub,
   cgkKno,

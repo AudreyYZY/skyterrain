@@ -1,0 +1,34 @@
+{
+  "id": "can-bsz",
+  "name": "广州 — 比什凯克",
+  "nameEn": "Guangzhou — Bishkek",
+  "description": "两广丘陵 · 四川盆地 · 昆仑山 · 塔里木河 · 伊塞克湖",
+  "descriptionEn": "Guangdong–Guangxi Hills · Sichuan Basin · Kunlun · Tarim River · Issyk-Kul",
+  "depCountry": "china",
+  "arrCountry": "kyrgyzstan",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ8147",
+    "aircraft": "Boeing 737-8",
+    "depIata": "CAN",
+    "arrIata": "BSZ",
+    "durationMin": 385
+  },
+  "source": {
+    "ref": "https://www.csairgroup.cn/en/mediacenter/news_releases/2026061518041486775/3816ce513b474bdaa7e1c80c128961ad/index.html",
+    "checkedOn": "2026-09-15",
+    "note": "南航集团官网英文稿（2026-06-15）：3 月 29 日首航，CZ8147 / CZ8148 每周三、周日，波音 737-8，去程北京时间 17:20 起飞、当地 21:45 抵达、6 小时 25 分，回程 6 小时 15 分（1 级，航司集团）；中新网 2026-03-30「南航新开广州至比什凯克航线」与广州市政府门户（2 级）；南航时刻表 PDF（2026-06-04）CZ8147 周三、日，有效期至 2026-10-21（1 级，同一航司）。冬春航季是否续飞截至 2026-09-15 未见。航点经四川盆地—昆仑山—塔里木—伊塞克湖为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "liangguang-hills" },
+    { "kind": "terrain", "terrainId": "sichuan" },
+    { "kind": "terrain", "terrainId": "kunlun" },
+    { "kind": "terrain", "terrainId": "tarim-river" },
+    { "kind": "terrain", "terrainId": "issyk-kul" },
+    { "kind": "terrain", "terrainId": "chuy-valley" },
+    { "kind": "city", "id": "bsz", "name": "比什凯克玛纳斯", "nameEn": "Bishkek Manas", "lat": 43.0613, "lon": 74.4776, "airport": true }
+  ]
+}

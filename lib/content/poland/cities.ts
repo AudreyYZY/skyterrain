@@ -68,4 +68,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "WAW", nameZh: "华沙肖邦机场", nameEn: "Warsaw Chopin Airport", lon: 20.9671, lat: 52.1657 },
     source: "比亚韦斯托克市中心 53.1325,23.1688；本地机场客运航班有限，最近有稳定定期航班的机场为华沙肖邦机场（距市区约180km）：公开资料",
   },
+  {
+    id: "lodz", nameZh: "罗兹", nameEn: "Łódź", country: "poland", tier: "notable", zone: "pl-lodz-lublin", admin1Zh: "罗兹省", admin1En: "Łódź Voivodeship",
+    lon: 19.4546, lat: 51.7768,
+    airport: { iata: "LCJ", nameZh: "罗兹瓦迪斯瓦夫·莱蒙特机场", nameEn: "Łódź Władysław Reymont Airport", lon: 19.3981, lat: 51.7219 },
+    source: "罗兹自由广场 Plac Wolności 51.77678,19.45460（OSM）；LCJ OurAirports 51.7219,19.3981，直线约 7 km，有定期航班（机场官网被人机验证挡住，2–3 级）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "lublin", nameZh: "卢布林", nameEn: "Lublin", country: "poland", tier: "notable", zone: "pl-lodz-lublin", admin1Zh: "卢布林省", admin1En: "Lublin Voivodeship",
+    lon: 22.5684, lat: 51.2479,
+    airport: { iata: "LUZ", nameZh: "卢布林机场", nameEn: "Lublin Airport", lon: 22.7135, lat: 51.2402 },
+    source: "卢布林老城广场 Rynek 51.24790,22.56840（OSM）；LUZ OurAirports 51.2402,22.7135，直线约 10 km，有定期航班（2 级）；离乌克兰国界约 74 km、白俄罗斯约 77 km（Natural Earth 10m 算，过 20 km 门槛）（已有城市补充批，2026-09-16）",
+  },
 ];

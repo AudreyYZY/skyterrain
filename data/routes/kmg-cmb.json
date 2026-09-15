@@ -1,0 +1,48 @@
+{
+  "id": "kmg-cmb",
+  "name": "昆明 — 科伦坡",
+  "nameEn": "Kunming — Colombo",
+  "description": "云贵高原 · 北中部干旱带平原 · 尼甘布潟湖",
+  "descriptionEn": "Yunnan–Guizhou Plateau · Dry Zone Plain · Negombo Lagoon",
+  "depCountry": "china",
+  "arrCountry": "sri-lanka",
+  "source": {
+    "ref": "https://www.airport.lk/",
+    "checkedOn": "2026-09-16",
+    "status": "flight-unknown",
+    "note": "**机场对与承运人已核实、机型未核实**：科伦坡班达拉奈克机场运营方 AASL 每周航班时刻表（1 级，2026-09-16）：东航 MU713 周一、二、四、六 21:10 到达、来自 Kunming，回程 MU714 飞回昆明、不续飞第三地（2024 年的 MU9659/9660 昆明—科伦坡—马累是另一个号）；FlightAware（3 级）9 月各班 KMG→CMB 直达、计划 290–300 分钟。航班号的第二来源只有追踪站，机型 AASL 写 B737、追踪站写东航机队里没有的 737-500 —— 按本库规矩**不填 flight 字段**、解说不点名承运人、航班号与机型。昆明机场官网航班查询接口失效，下一轮从东航官网时刻表或长水机场入手。航点经云贵高原—孟加拉湾—斯里兰卡北中部为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "kmg",
+      "name": "昆明长水",
+      "nameEn": "Kunming Changshui",
+      "lat": 25.1103,
+      "lon": 102.9367,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yunnan-guizhou"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sri-lanka-dry-zone-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "negombo-lagoon"
+    },
+    {
+      "kind": "city",
+      "id": "cmb",
+      "name": "科伦坡班达拉奈克",
+      "nameEn": "Colombo Bandaranaike",
+      "lat": 7.1808,
+      "lon": 79.8841,
+      "airport": true
+    }
+  ]
+}

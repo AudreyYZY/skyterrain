@@ -45,9 +45,9 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "labuan-bajo", nameZh: "拉布安巴焦", nameEn: "Labuan Bajo", country: "indonesia", tier: "notable", zone: "id-nusa-tenggara", admin1Zh: "东努沙登加拉省", admin1En: "East Nusa Tenggara",
-    lon: 119.8886, lat: -8.4874,
+    lon: 119.8936, lat: -8.4960,
     airport: { iata: "LBJ", nameZh: "科莫多机场", nameEn: "Komodo Airport", lon: 119.8892, lat: -8.4864 },
-    source: "拉布安巴焦市中心 -8.4874,119.8886；LBJ机场（距市区约2km）：公开资料",
+    source: "拉布安巴焦市中心 -8.4960,119.8936（OSM Nominatim「city」节点，2026-09-15 改：原坐标落在机场上）；LBJ机场（距市中心直线约1.2km）：公开资料",
   },
   {
     id: "balikpapan", nameZh: "巴厘巴板", nameEn: "Balikpapan", country: "indonesia", tier: "notable", zone: "id-kalimantan", admin1Zh: "东加里曼丹省", admin1En: "East Kalimantan",

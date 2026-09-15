@@ -49,4 +49,14 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "IFJ", nameZh: "伊萨菲厄泽机场", nameEn: "Ísafjörður Airport", lon: -23.1353, lat: 66.0581 },
     source: "伊萨菲厄泽 66.0748,-23.1355；IFJ 机场：公开资料",
   },
+  {
+    id: "selfoss", nameZh: "塞尔福斯", nameEn: "Selfoss", country: "iceland", tier: "notable", zone: "is-south", admin1Zh: "南部海岸", admin1En: "South Coast",
+    lon: -21.0002, lat: 63.9322,
+    source: "塞尔福斯 63.9322,-21.0002（Wikidata）；阿尔博格市镇（1998 年四合一）行政中心；本地小机场 BISF 无定期航班，雷克雅未克国内机场 RKV 直线约 51 km、凯夫拉维克 KEF 约 79 km（按 OurAirports 算），不填机场字段；与北部约克尔萨峡谷的同名瀑布不是一处（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "heimaey", nameZh: "海梅岛", nameEn: "Heimaey (Vestmannaeyjar)", country: "iceland", tier: "notable", zone: "is-south", admin1Zh: "南部海岸", admin1En: "South Coast",
+    lon: -20.2700, lat: 63.4380,
+    source: "海梅岛镇中心 63.4380,-20.2700（取兰达教堂与地方博物馆之间，OSM；Wikidata 两个点一在海里、一在岛中心，不用）；韦斯特曼纳群岛镇（市镇代码 8000）；城市 id 不用 vestmannaeyjar（地形条目已占）；韦斯特曼纳群岛机场 VEY 距镇中心约 1.6 km，只有冬季（12–2 月）政府补贴航班（镇官网 2025-11-17 / Norlandair，1 级），不算常规定期航班，不填机场字段；渡轮兰德埃亚港直线约 13 km（已有城市补充批，2026-09-15）",
+  },
 ];

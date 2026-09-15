@@ -43,6 +43,14 @@ import { CITIES as slovenia } from "@/lib/content/slovenia/cities";
 import { CITIES as malta } from "@/lib/content/malta/cities";
 import { CITIES as estonia } from "@/lib/content/estonia/cities";
 import { CITIES as chile } from "@/lib/content/chile/cities";
+import { CITIES as latvia } from "@/lib/content/latvia/cities";
+import { CITIES as romania } from "@/lib/content/romania/cities";
+import { CITIES as bulgaria } from "@/lib/content/bulgaria/cities";
+import { CITIES as uzbekistan } from "@/lib/content/uzbekistan/cities";
+import { CITIES as lithuania } from "@/lib/content/lithuania/cities";
+import { CITIES as kyrgyzstan } from "@/lib/content/kyrgyzstan/cities";
+import { CITIES as sri_lanka } from "@/lib/content/sri-lanka/cities";
+import { CITIES as brunei } from "@/lib/content/brunei/cities";
 
 export const ALL_CITIES: CityEntry[] = [
   ...china,
@@ -88,4 +96,12 @@ export const ALL_CITIES: CityEntry[] = [
   ...malta,
   ...estonia,
   ...chile,
+  ...latvia,
+  ...romania,
+  ...bulgaria,
+  ...uzbekistan,
+  ...lithuania,
+  ...kyrgyzstan,
+  ...sri_lanka,
+  ...brunei,
 ];

@@ -1,0 +1,33 @@
+{
+  "id": "can-tas",
+  "name": "广州 — 塔什干",
+  "nameEn": "Guangzhou — Tashkent",
+  "description": "云贵高原 · 横断山脉 · 昆仑山 · 塔克拉玛干 · 费尔干纳盆地",
+  "descriptionEn": "Yunnan–Guizhou Plateau · Hengduan Mountains · Kunlun · Taklamakan · Fergana Valley",
+  "depCountry": "china",
+  "arrCountry": "uzbekistan",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3053",
+    "aircraft": "Airbus A330-300",
+    "depIata": "CAN",
+    "arrIata": "TAS",
+    "durationMin": 435
+  },
+  "source": {
+    "ref": "http://www.sasac.gov.cn/n2588025/n2588124/c33873996/content.html",
+    "checkedOn": "2026-09-15",
+    "note": "国资委官网转南航 2025-07-02：CZ3053 6 月 30 日从广州起飞，南航广州—塔什干直飞航线开通，A330-300，航班号 CZ3053/54（1 级）；塔什干机场官网航班屏 2026-09-15/16 仍见 CZ3053 / CZ3054（1 级）；追踪站见 2026-09-12 实飞记录、不经停（3 级）；去程计划时长 7 h 15 min 由南航 2026 航季稿转载（2 级）与 Trip.com 追踪（3 级）一致给出。时刻与班期已调整过，正文不写时刻、班期。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "terrain", "terrainId": "hengduan" },
+    { "kind": "terrain", "terrainId": "kunlun" },
+    { "kind": "terrain", "terrainId": "taklamakan" },
+    { "kind": "terrain", "terrainId": "fergana-valley" },
+    { "kind": "city", "id": "tas", "name": "塔什干", "nameEn": "Tashkent", "lat": 41.2579, "lon": 69.2812, "airport": true }
+  ]
+}

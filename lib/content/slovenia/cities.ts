@@ -55,4 +55,16 @@ export const CITIES: CityEntry[] = [
     lon: 15.8700, lat: 46.4200,
     source: "普图伊老城 46.4200,15.8700；本地无民用机场，最近有定期航班的机场为奥地利格拉茨（直线约 71 km）与卢布尔雅那 LJU（直线约 111 km），按本条目坐标算：公开资料",
   },
+  {
+    id: "idrija", nameZh: "伊德里亚", nameEn: "Idrija", country: "slovenia", tier: "notable", zone: "si-west",
+    admin1Zh: "戈里察统计区", admin1En: "Goriška Statistical Region",
+    lon: 14.0219, lat: 46.0008,
+    source: "伊德里亚老城主广场 46.0008,14.0219（OSM）；普通市镇（gov.si 市镇名录，1 级）；本地没有定期航班的机场，不填 airport；卢布尔雅那 LJU 直线约 42 km（按 OurAirports 算）；离国界约 30 km（按 OSM 边界算，已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "postojna", nameZh: "波斯托伊纳", nameEn: "Postojna", country: "slovenia", tier: "notable", zone: "si-west",
+    admin1Zh: "滨海—内卡尼奥拉统计区", admin1En: "Littoral–Inner Carniola Statistical Region",
+    lon: 14.2131, lat: 45.7751,
+    source: "波斯托伊纳镇中心 45.7751,14.2131（OSM）；普通市镇（gov.si，1 级）；本地没有定期航班的机场，不填 airport；卢布尔雅那 LJU 直线约 53 km（按 OurAirports 算）；溶洞入口在镇中心西北约 1.1 km、普雷德亚马城堡直线约 8 km（按 OSM 坐标算）；离国界约 28 km（已有城市补充批，2026-09-15）",
+  },
 ];

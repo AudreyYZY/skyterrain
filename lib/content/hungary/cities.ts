@@ -46,4 +46,16 @@ export const CITIES: CityEntry[] = [
     lon: 19.0770, lat: 47.6690,
     source: "圣安德烈市中心 47.6690,19.0770；本地无机场，从布达佩斯乘 HÉV 郊区铁路约 40 分钟可达：公开资料",
   },
+  {
+    id: "veszprem", nameZh: "维斯普雷姆", nameEn: "Veszprém", country: "hungary", tier: "notable", zone: "hu-transdanubia",
+    admin1Zh: "维斯普雷姆州", admin1En: "Veszprém",
+    lon: 17.9064, lat: 47.0944,
+    source: "维斯普雷姆老城广场 47.0944,17.9064（OSM）；州府、州权市（KSH 地名录 2025，1 级）；本地没有定期航班的机场，不填 airport；布达佩斯 BUD 直线约 109 km（按 OurAirports 算）；Hévíz-Balaton（SOB）只有零星季节航班，不算；离国界约 72 km（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "kecskemet", nameZh: "凯奇凯梅特", nameEn: "Kecskemét", country: "hungary", tier: "major", zone: "hu-great-plain",
+    admin1Zh: "巴奇-基什孔州", admin1En: "Bács-Kiskun",
+    lon: 19.6917, lat: 46.9073,
+    source: "凯奇凯梅特科苏特广场 46.9073,19.6917（OSM）；州府、州权市（KSH 地名录 2025，1 级）；本地没有定期航班的机场，不填 airport；布达佩斯 BUD 直线约 67 km（按 OurAirports 算）；离国界约 79 km（已有城市补充批，2026-09-15）",
+  },
 ];

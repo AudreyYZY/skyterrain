@@ -1,0 +1,81 @@
+import type { CityPoi } from "@/lib/places-registry";
+
+export const POIS: Record<string, CityPoi[]> = {
+  // ===== 欧洲 / 保加利亚 =====（Wikidata P625 坐标；Wikidata 无坐标或有误的取 OpenStreetMap Nominatim）
+  sofia: [
+    { nameZh: "亚历山大·涅夫斯基主教座堂", nameEn: "Alexander Nevsky Cathedral", lon: 23.3330, lat: 42.6958, kind: "landmark" },
+    { nameZh: "圣乔治圆顶教堂", nameEn: "Rotunda of St George", lon: 23.3229, lat: 42.6969, kind: "landmark" },
+    { nameZh: "塞尔迪卡遗址（拉尔戈）", nameEn: "Serdica ruins (the Largo)", lon: 23.3231, lat: 42.6978, kind: "landmark" },
+    { nameZh: "中央矿泉浴场（地区历史博物馆）", nameEn: "Central Mineral Baths (Regional History Museum)", lon: 23.3237, lat: 42.6994, kind: "landmark" },
+    { nameZh: "伊万·瓦佐夫国家剧院", nameEn: "Ivan Vazov National Theatre", lon: 23.3266, lat: 42.6942, kind: "landmark" },
+    { nameZh: "维托沙大道", nameEn: "Vitosha Boulevard", lon: 23.3197, lat: 42.6913, kind: "landmark" },
+    { nameZh: "博雅纳教堂", nameEn: "Boyana Church", lon: 23.2662, lat: 42.6447, kind: "landmark" },
+    { nameZh: "维托沙山切尔尼峰", nameEn: "Cherni Vrah, Vitosha", lon: 23.2793, lat: 42.5631, kind: "landmark" },
+    { nameZh: "里拉修道院（索非亚以南）", nameEn: "Rila Monastery (south of Sofia)", lon: 23.3403, lat: 42.1333, kind: "landmark" },
+  ],
+  plovdiv: [
+    { nameZh: "普罗夫迪夫罗马剧场", nameEn: "Roman Theatre of Plovdiv", lon: 24.7510, lat: 42.1468, kind: "landmark" },
+    { nameZh: "罗马竞技场", nameEn: "Roman Stadium", lon: 24.7480, lat: 42.1476, kind: "landmark" },
+    { nameZh: "普罗夫迪夫老城", nameEn: "Plovdiv Old Town", lon: 24.7527, lat: 42.1498, kind: "landmark" },
+    { nameZh: "内贝特丘", nameEn: "Nebet Tepe", lon: 24.7522, lat: 42.1512, kind: "landmark" },
+    { nameZh: "卡帕纳街区", nameEn: "Kapana district", lon: 24.7489, lat: 42.1493, kind: "landmark" },
+    { nameZh: "朱马亚清真寺", nameEn: "Dzhumaya Mosque", lon: 24.7483, lat: 42.1479, kind: "landmark" },
+  ],
+  varna: [
+    { nameZh: "瓦尔纳考古博物馆", nameEn: "Varna Archaeological Museum", lon: 27.9150, lat: 43.2075, kind: "landmark" },
+    { nameZh: "罗马浴场", nameEn: "Roman Baths", lon: 27.9182, lat: 43.2003, kind: "landmark" },
+    { nameZh: "圣母安息主教座堂", nameEn: "Dormition Cathedral", lon: 27.9100, lat: 43.2053, kind: "landmark" },
+    { nameZh: "海滨公园", nameEn: "Sea Garden", lon: 27.9394, lat: 43.2114, kind: "landmark" },
+    { nameZh: "独立广场", nameEn: "Independence Square", lon: 27.9119, lat: 43.2040, kind: "landmark" },
+    { nameZh: "金沙滩度假区", nameEn: "Golden Sands resort", lon: 28.0417, lat: 43.2850, kind: "landmark" },
+    { nameZh: "石林（波比蒂·卡马尼）", nameEn: "Stone Forest (Pobiti Kamani)", lon: 27.7067, lat: 43.2264, kind: "landmark" },
+  ],
+  burgas: [
+    { nameZh: "海滨公园", nameEn: "Sea Garden", lon: 27.4817, lat: 42.4986, kind: "landmark" },
+    { nameZh: "海滨赌场文化中心", nameEn: "Sea Casino Cultural Centre", lon: 27.4826, lat: 42.4948, kind: "landmark" },
+    { nameZh: "阿塔纳索夫斯科湖", nameEn: "Atanasovsko Lake", lon: 27.4808, lat: 42.5319, kind: "landmark" },
+    { nameZh: "布尔加斯湖（瓦亚湖）", nameEn: "Lake Burgas (Vaya)", lon: 27.3986, lat: 42.4954, kind: "landmark" },
+    { nameZh: "圣阿纳斯塔西娅岛", nameEn: "St Anastasia Island", lon: 27.5531, lat: 42.4678, kind: "landmark" },
+  ],
+  "veliko-tarnovo": [
+    { nameZh: "察雷韦茨要塞", nameEn: "Tsarevets Fortress", lon: 25.6525, lat: 43.0836, kind: "landmark" },
+    { nameZh: "特拉佩齐察丘", nameEn: "Trapezitsa Hill", lon: 25.6361, lat: 43.0833, kind: "landmark" },
+    { nameZh: "萨莫沃德斯卡商街", nameEn: "Samovodska Charshiya", lon: 25.6400, lat: 43.0840, kind: "landmark" },
+    { nameZh: "圣山丘", nameEn: "Sveta Gora Hill", lon: 25.6456, lat: 43.0753, kind: "landmark" },
+    { nameZh: "阿尔巴纳西村", nameEn: "Arbanasi", lon: 25.6660, lat: 43.0985, kind: "landmark" },
+  ],
+  ruse: [
+    { nameZh: "自由广场", nameEn: "Freedom Square", lon: 25.9525, lat: 43.8488, kind: "landmark" },
+    { nameZh: "收益大楼", nameEn: "Profitable Building (Dohodno Zdanie)", lon: 25.9528, lat: 43.8481, kind: "landmark" },
+    { nameZh: "鲁塞歌剧院", nameEn: "Ruse Opera", lon: 25.9567, lat: 43.8481, kind: "landmark" },
+    { nameZh: "伊万诺沃岩洞教堂", nameEn: "Rock-Hewn Churches of Ivanovo", lon: 25.9881, lat: 43.6956, kind: "landmark" },
+    { nameZh: "鲁塞洛姆自然公园", nameEn: "Rusenski Lom Nature Park", lon: 26.0286, lat: 43.6958, kind: "landmark" },
+  ],
+  nesebar: [
+    { nameZh: "内塞伯尔老城", nameEn: "Old Town of Nesebar", lon: 27.7360, lat: 42.6591, kind: "landmark" },
+    { nameZh: "旧主教座堂（圣索非亚教堂遗址）", nameEn: "Old Metropolitan Church (St Sophia)", lon: 27.7360, lat: 42.6591, kind: "landmark" },
+    { nameZh: "圣斯特凡教堂", nameEn: "Church of St Stephen", lon: 27.7331, lat: 42.6578, kind: "landmark" },
+    { nameZh: "基督君王教堂", nameEn: "Church of Christ Pantocrator", lon: 27.7333, lat: 42.6588, kind: "landmark" },
+    { nameZh: "内塞伯尔考古博物馆", nameEn: "Nesebar Archaeological Museum", lon: 27.7307, lat: 42.6584, kind: "landmark" },
+    { nameZh: "阳光海滩度假区", nameEn: "Sunny Beach resort", lon: 27.7083, lat: 42.6931, kind: "landmark" },
+  ],
+  bansko: [
+    { nameZh: "班斯科老城区", nameEn: "Bansko old town", lon: 23.4868, lat: 41.8349, kind: "landmark" },
+    { nameZh: "圣三一教堂", nameEn: "Holy Trinity Church", lon: 23.4871, lat: 41.8354, kind: "landmark" },
+    { nameZh: "缆车下站", nameEn: "Gondola lift base station", lon: 23.4775, lat: 41.8271, kind: "landmark" },
+    { nameZh: "维赫伦峰", nameEn: "Vihren Peak", lon: 23.3994, lat: 41.7664, kind: "landmark" },
+  ],
+  kazanlak: [
+    { nameZh: "卡赞勒克色雷斯古墓（复制墓）", nameEn: "Thracian Tomb of Kazanlak (replica)", lon: 25.3992, lat: 42.6256, kind: "landmark" },
+    { nameZh: "玫瑰博物馆", nameEn: "Museum of the Rose", lon: 25.3883, lat: 42.6232, kind: "landmark" },
+    { nameZh: "伊斯克拉历史博物馆", nameEn: "Iskra History Museum", lon: 25.3950, lat: 42.6213, kind: "landmark" },
+    { nameZh: "库拉塔民族志建筑群", nameEn: "Kulata Ethnographic Complex", lon: 25.3980, lat: 42.6242, kind: "landmark" },
+    { nameZh: "科普林卡水库", nameEn: "Koprinka Reservoir", lon: 25.3056, lat: 42.6181, kind: "landmark" },
+  ],
+  tryavna: [
+    { nameZh: "钟楼", nameEn: "Clock tower", lon: 25.4895, lat: 42.8662, kind: "landmark" },
+    { nameZh: "老学堂", nameEn: "Old School", lon: 25.4898, lat: 42.8664, kind: "landmark" },
+    { nameZh: "博任齐村", nameEn: "Bozhentsi", lon: 25.4232, lat: 42.874, kind: "landmark" },
+    { nameZh: "埃塔尔露天博物馆", nameEn: "Etar Open-Air Museum", lon: 25.3484, lat: 42.8057, kind: "landmark" },
+  ],
+};

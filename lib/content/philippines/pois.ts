@@ -14,12 +14,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "麦克坦岛海滩度假区", nameEn: "Mactan Island Beach Resorts", lon: 123.9700, lat: 10.2600, kind: "nature" },
     { nameZh: "宿务IT商业园区", nameEn: "Cebu IT Park", lon: 123.9057, lat: 10.3306, kind: "district" },
   ],
-  "davao-city": [
-    { nameZh: "阿波山国家公园入口", nameEn: "Mount Apo National Park Entrance", lon: 125.30, lat: 7.00, kind: "nature" },
-    { nameZh: "达沃鳄鱼公园", nameEn: "Davao Crocodile Park", lon: 125.5772, lat: 7.1275, kind: "landmark" },
-    { nameZh: "人民公园", nameEn: "People's Park", lon: 125.6100, lat: 7.0736, kind: "landmark" },
-    { nameZh: "埃甸自然公园", nameEn: "Eden Nature Park", lon: 125.4494, lat: 7.1656, kind: "nature" },
-  ],
   baguio: [
     { nameZh: "碧瑶大教堂", nameEn: "Baguio Cathedral", lon: 120.5943, lat: 16.4128, kind: "landmark" },
     { nameZh: "彩虹公园", nameEn: "Burnham Park", lon: 120.5931, lat: 16.4113, kind: "landmark" },

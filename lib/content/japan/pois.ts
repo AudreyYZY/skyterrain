@@ -183,7 +183,7 @@ export const POIS: Record<string, CityPoi[]> = {
   ],
   kagoshima: [
     { nameZh: "仙岩园", nameEn: "Sengan-en", lon: 130.5780, lat: 31.6170, kind: "nature" },
-    { nameZh: "樱岛（渡轮码头）", nameEn: "Sakurajima (Ferry Terminal)", lon: 130.6580, lat: 31.5930, kind: "nature" },
+    { nameZh: "樱岛渡轮码头（鹿儿岛港一侧）", nameEn: "Sakurajima Ferry Terminal (Kagoshima Port side)", lon: 130.5650, lat: 31.5958, kind: "landmark" },
     { nameZh: "城山展望台", nameEn: "Shiroyama Observatory", lon: 130.5500, lat: 31.5960, kind: "nature" },
     { nameZh: "天文馆", nameEn: "Tenmonkan", lon: 130.5560, lat: 31.5900, kind: "district" },
     { nameZh: "鹿儿岛中央站", nameEn: "Kagoshima-Chūō Station", lon: 130.5420, lat: 31.5840, kind: "transport" },

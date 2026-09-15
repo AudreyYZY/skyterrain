@@ -1,0 +1,33 @@
+{
+  "id": "pek-bsz",
+  "name": "北京 — 比什凯克",
+  "nameEn": "Beijing — Bishkek",
+  "description": "阴山 · 蒙古戈壁 · 天山 · 伊犁河谷 · 楚河谷地",
+  "descriptionEn": "Yin Mountains · Mongolian Gobi · Tian Shan · Ili Valley · Chüy Valley",
+  "depCountry": "china",
+  "arrCountry": "kyrgyzstan",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA893",
+    "aircraft": "Airbus A321",
+    "depIata": "PEK",
+    "arrIata": "BSZ",
+    "durationMin": 340
+  },
+  "source": {
+    "ref": "https://www.news.cn/world/20260718/b7882b5440df4661861310d6b197c0b4/c.html",
+    "checkedOn": "2026-09-15",
+    "note": "新华社 2026-07-18：7 月 17 日从北京首都国际机场起飞的 CA893 航班抵达比什凯克，国航北京至比什凯克直飞航线开通，每周三班（周一、五、日），CA893 飞行时长 5 小时 40 分、CA894 4 小时 50 分（2 级）；玛纳斯国际机场官网航班屏 2026-09-14 见 CA893 到达、CA894 起飞（1 级）；机型 A321 见新浪财经 2026-05-16 与腾讯新闻转国航开航公告（2 级，两家转同一公告）。玛纳斯机场 IATA 代码 2025-08-09 起由 FRU 改 BSZ（airport.kg，1 级）。航点经内蒙古—蒙古戈壁—天山—伊犁河谷为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.08, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "yinshan" },
+    { "kind": "terrain", "terrainId": "mongolia-gobi" },
+    { "kind": "terrain", "terrainId": "tianshan" },
+    { "kind": "terrain", "terrainId": "ili-valley" },
+    { "kind": "terrain", "terrainId": "chuy-valley" },
+    { "kind": "city", "id": "bsz", "name": "比什凯克玛纳斯", "nameEn": "Bishkek Manas", "lat": 43.0613, "lon": 74.4776, "airport": true }
+  ]
+}

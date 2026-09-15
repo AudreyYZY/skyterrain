@@ -8,7 +8,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     identity:
       "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of 112.7 million in the 2024 census (Philippine Statistics Authority); its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
     layout:
-      "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao (Davao and others — the southern islands); Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
+      "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao in the south; Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
     gettingAround:
       "Domestic flights are hubbed at Ninoy Aquino International Airport in Manila, reaching major cities and islands nationwide; inter-island travel can also be done by ferry, with some outlying islands requiring multiple legs of transport. Taxis, jeepneys (converted mini-buses) and Grab ride-hailing are common ways to get around within cities. Visa-free arrangements for short-term visitors vary by nationality — check the Philippines' official current announcements.",
     culture:
@@ -19,15 +19,17 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Lying in the tropics, the Philippines is hot and humid year-round; December to May is the dry season (March–May especially hot), while June to November is the wet season and also the active typhoon season — check typhoon warnings before coastal and island itineraries in that window.",
   },
   manila: {
+    // howItWorks sources（2026-09-15 核实，update）: PSA 2024 POPCEN：City of Manila 1,902,590、Quezon City 约 308 万（2020 年为 1,846,513 / 2,960,048，旧文正是 2020 年数；经转引核实，2 级）；下一期约 2030
+    // identity sources（2026-09-15 核实，update）: PSA 2024 POPCEN NCR 14,001,751，总统第 973 号公告 2025-07-11 宣布为官方数（经 Manila Standard / PNA 转引，2 级）；下一期约 2030
     identity:
-      "Manila is the capital of the Philippines, with a metropolitan population of more than 14 million, on the east shore of Manila Bay on Luzon, and the country's political, economic and cultural centre.",
+      "Manila is the capital of the Philippines, with a National Capital Region population of about 14 million at the 2024 census (Philippine Statistics Authority), on the east shore of Manila Bay on Luzon, and the country's political, economic and cultural centre.",
     // howItWorks sources: Wikipedia (2026-09): Metro Manila (NCR 16 cities + Pateros, each elected mayor/council; MMDA; ~636 km²; ~14 million 2024; Greater Manila >26 million; City of Manila ~1.85 million; Quezon City ~2.96 million; Makati/BGC/Ortigas; EDSA; LRT/MRT); Local government in the Philippines
     howItWorks:
-      "The Manila people speak of is the National Capital Region, assembled from sixteen cities and one municipality and officially called Metro Manila: each city has its own elected mayor and council, and below the cities lie the barangays, neighbourhoods with elected captains; there is no metropolitan government, only the Metropolitan Manila Development Authority coordinating traffic, flood control and waste. The region covers about 636 km² with about 14 million people in 2024, and the wider built-up area exceeds 26 million. The nominal capital, the City of Manila, is only one of them, with about 1.85 million people, the site of the Spanish walled city and the old port; Quezon City is the most populous at about 2.96 million; and the business districts are Makati, Bonifacio Global City in Taguig and Ortigas between Pasig and Mandaluyong, each in a different city. EDSA is the spine of the region, LRT and MRT lines follow a few main roads, and jeepneys carry much of the load. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking the City of Manila for the whole, when it is one city among more than a dozen.",
+      "The Manila people speak of is the National Capital Region, assembled from sixteen cities and one municipality and officially called Metro Manila: each city has its own elected mayor and council, and below the cities lie the barangays, neighbourhoods with elected captains; there is no metropolitan government, only the Metropolitan Manila Development Authority coordinating traffic, flood control and waste. The region covers about 636 km² with about 14 million people at the 2024 census, and the wider built-up area exceeds 26 million. The nominal capital, the City of Manila, is only one of them, with about 1.9 million people at the 2024 census, the site of the Spanish walled city and the old port; Quezon City is the most populous at about 3.08 million at the 2024 census; and the business districts are Makati, Bonifacio Global City in Taguig and Ortigas between Pasig and Mandaluyong, each in a different city. EDSA is the spine of the region, LRT and MRT lines follow a few main roads, and jeepneys carry much of the load. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking the City of Manila for the whole, when it is one city among more than a dozen.",
     layout:
       "Intramuros (the old walled city) preserves Spanish colonial-era walls and churches; Makati and Bonifacio Global City are modern commercial and financial districts, and the Manila Bay waterfront is known for its sunset views.",
     gettingAround:
-      "Ninoy Aquino International Airport is about 11 km from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
+      "Ninoy Aquino International Airport is about 11 km in a straight line from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
     culture:
       "The official languages are Filipino and English, with high English proficiency. Manila carries layered historical influences from Spanish colonial rule, American administration and local culture, and Catholic faith has broad influence on daily life. Restaurant bills often already include service, with an additional 10% tip customary.",
     seeAndDo:
@@ -53,36 +55,13 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town preserves Spanish colonial-era churches and forts; Mactan Island (linked by a causeway bridge) is home to the international airport and beach resorts, and the downtown IT business park is a modern industry cluster.",
     gettingAround:
-      "Mactan-Cebu International Airport is on Mactan Island, about 16 km from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
+      "Mactan-Cebu International Airport is on Mactan Island, about 16 km by road from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
     culture:
       "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. In 1521, Magellan's expedition baptised the rulers of Cebu here and gave them the Santo Niño image as a baptismal gift; that same image has been venerated ever since and is the oldest Christian relic in the Philippines (the country's actual first Mass was held a few days earlier on Limasawa Island in Southern Leyte, with Cebu as the site of the baptism that followed). Restaurant bills often already include service.",
     seeAndDo:
       "Magellan's Cross and the Basilica del Santo Niño; Fort San Pedro; beach resorts on Mactan Island; local specialties such as Cebu lechon (roast pig); island-hopping to nearby islands (on the outskirts).",
     whenAndTips:
       "December to May is the dry season, a good time to explore Cebu and its surrounding islands; June to November is the wet and typhoon season — check the weather before travelling.",
-  },
-  "davao-city": {
-    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
-    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
-    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
-    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
-    //   达沃市 2024 年普查 **1,848,947** 人（2020 年 1,776,949）。**原文的「逾190万」比任何一期普查都高** —— 2024 年实际数比它还低，方向就是错的。
-    //   同条目「按行政区划面积计菲律宾陆地面积最大」复核后**仍成立**（2,443.61 km²，第二名普林塞萨港 2,381.02 km²）。
-    identity:
-      "Davao City is the largest city on Mindanao and, by land area, the largest city in the Philippines, with a population of about 1.85 million at the 2024 census; it is Mindanao's political and economic centre and the core gateway to Mount Apo.",
-    // howItWorks sources: 「按面积计菲律宾最大的城市（2,443.61 km²）」与「2024 年普查 1,848,947、大马尼拉之外人口最多」**均核实属实**；面积第二是普林塞萨港 2,381.02 km²，与该条目的「第二大」互相自洽。2026-09-12 核。
-    howItWorks:
-      "Davao City is a 'highly urbanized city' and the centre of the Davao Region, covering about 2,444 km², the largest city in the Philippines by area, though most of it is mountain and farmland and the urban area is a small corner; it is divided into three congressional districts, eleven administrative districts and 182 barangays, each barangay with an elected captain and council. It had about 1.85 million people at the 2024 census, the most populous city outside Metro Manila. The centre is the Poblacion district, with San Pedro Cathedral and the Roxas night market, while Lanang, Matina and Ecoland are the newer commercial and residential districts. Mount Apo, the highest peak in the Philippines, stands in the city's south-west, and Samal Island lies across the Davao Gulf to the east. Cebuano is the everyday language. The city is known for strict local ordinances — a smoking ban, a firecracker ban, speed limits — and durian is its emblem. There is no rail, and jeepneys, tricycles and cars carry the traffic. Addresses give number, street, barangay and city. Newcomers most often go wrong by picturing Davao as one big city, when most of its territory is mountain.",
-    layout:
-      "The city centre runs along Davao Gulf, with commercial and residential areas spread across a broad administrative territory; the silhouette of Mount Apo is clearly visible to the northeast of the city.",
-    gettingAround:
-      "Francisco Bangoy International Airport is about 11 km from the city centre; taxis, jeepneys and Grab are the main ways to get around, with a drive or hired car of about 1.5–2 hours needed to reach Mount Apo.",
-    culture:
-      "The official languages are Filipino and English, with local indigenous communities and migrant populations together shaping Davao's diverse culture. Davao is known for orderly city governance and abundant tropical fruit, especially durian. Restaurant bills often already include service.",
-    seeAndDo:
-      "Hiking in Mount Apo National Park; the Davao Crocodile Park; People's Park; sampling durian and other tropical fruit; Eden Nature Park (on the outskirts).",
-    whenAndTips:
-      "Mindanao lies south of the main typhoon belt and has a relatively stable climate year-round; December to May sees less rainfall, a better season for climbing Mount Apo — book a permit and guide in advance.",
   },
   baguio: {
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
@@ -125,7 +104,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along Honda Bay, serving as the administrative and supply centre of Palawan Island, with limestone karst landforms and tropical rainforest scenery in the surrounding area.",
     gettingAround:
-      "Puerto Princesa International Airport is about 4 km from the city centre; tricycles and taxis are the main ways to get around within the city, with a drive or hired car of about 1.5–2 hours needed to reach the Underground River National Park.",
+      "Puerto Princesa International Airport is about 2.2 km in a straight line from the city centre; tricycles and taxis are the main ways to get around within the city, with a drive or hired car of about 1.5–2 hours needed to reach the Underground River National Park.",
     culture:
       "The official languages are Filipino and English, and the traditional culture of the local Palawan indigenous people is preserved in the area. Puerto Princesa is known for ecotourism and nature conservation, earning it the nickname the Philippines' \"eco-capital.\" Restaurant bills often already include service.",
     seeAndDo:
@@ -134,6 +113,8 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time to visit the Underground River National Park; boat-tour permits for the Underground River must be arranged in the city in advance — book at least a day ahead.",
   },
   legazpi: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 210,616（2 级）；下一期约 2030
+    // identity sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 210,616（2 级）；下一期约 2030
     identity:
       "Legazpi is the capital of Albay Province, with a population of more than 210,000, on the shore of Albay Gulf at the southern foot of Mayon Volcano, and the core gateway for viewing Mayon's symmetrical cone.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Legazpi (Philippines; component city and capital of Albay province and the regional centre of Bicol, 153.70 km² with 210,616 residents in the 2024 census, about 560 km south-east of Manila on Albay Gulf; south of Mayon Volcano, an active stratovolcano of near-symmetrical cone; originally the coastal settlement of Sawangan, a Spanish mission town from 1587, renamed in 1856 after Miguel López de Legazpi; served by Bicol International Airport in neighbouring Daraga; topped the National Competitiveness Council index for component cities in 2018)
@@ -142,7 +123,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city centre runs along Albay Gulf, with historic landmarks such as the Cagsawa ruins on its outskirts; several viewpoints around the city offer different angles on Mayon's complete cone.",
     gettingAround:
-      "Bicol International Airport is about 8 km from the city centre; taxis, tricycles and jeepneys are the main ways to get around, with a drive or hired car needed to reach sites around Mayon Volcano.",
+      "Bicol International Airport is about 7.9 km in a straight line from the city centre; taxis, tricycles and jeepneys are the main ways to get around, with a drive or hired car needed to reach sites around Mayon Volcano.",
     culture:
       "The official languages are Filipino and English, with the local Bicol language widely used in daily life. Legazpi and the surrounding Bicol region are known for spicy, coconut-milk-based cuisine, an important culinary region in the Philippines. Restaurant bills often already include service.",
     seeAndDo:
@@ -151,6 +132,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time for viewing Mayon and outdoor activities; June to November is typhoon season, and Albay Gulf's coastal areas are relatively exposed — check warnings before travelling.",
   },
   tagaytay: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 87,811；下一期约 2030
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
     //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
     //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
@@ -160,7 +142,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Tagaytay is a highland town in Cavite Province, with a population of about 87,800 at the 2024 census, at about 640 m elevation, a well-known viewpoint town for the nested volcanic landscape of Taal Lake.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tagaytay (Philippines; component city in Cavite province about 59 km from Manila via Aguinaldo Highway, at roughly 634 m on the Tagaytay Ridge; 87,811 residents in the 2024 census; the ridge looks across the caldera to Taal Volcano and Taal Lake, which lie in Batangas province, not in Tagaytay; average temperature about 22 °C, rarely above 31 °C; chartered as a city in 1938; called the second summer capital of the Philippines after Baguio; bulalo and tilapia from Taal Lake; Sky Ranch, People's Park in the Sky; agriculture in pineapples, coffee and cut flowers)
     howItWorks:
-      "Tagaytay is a component city of Cavite province in the Philippines, under provincial jurisdiction and governed by an elected mayor and council, with about 87,800 people in the 2024 census, some 59 km south of Manila. It sits on a ridge at about 634 m where temperatures hold around 22°C and rarely pass 31°C, which is why it is called the country's second summer capital after Baguio, and why Manila drives up at weekends and the highway jams. On the far side of the ridge is a great caldera holding Taal Lake, and within the lake stands Taal Volcano — its signature view, though both lake and volcano lie in Batangas province to the south and not within this city, which provides the place to look from. In January 2020 Taal erupted, ash fell on Manila and the lakeside villages were evacuated. The local table is known for bulalo, a beef shank soup, and tilapia from Taal Lake, while the farms grow pineapples, coffee and cut flowers. Newcomers most often go wrong by assuming the volcano lies within Tagaytay, when the city is only the balcony opposite it.",
+      "Tagaytay is a component city of Cavite province in the Philippines, under provincial jurisdiction and governed by an elected mayor and council, with about 87,800 people in the 2024 census, some 59 km by road south of Manila. It sits on a ridge at about 634 m where temperatures hold around 22°C and rarely pass 31°C, which is why it is called the country's second summer capital after Baguio, and why Manila drives up at weekends and the highway jams. On the far side of the ridge is a great caldera holding Taal Lake, and within the lake stands Taal Volcano — its signature view, though both lake and volcano lie in Batangas province to the south and not within this city, which provides the place to look from. In January 2020 Taal erupted, ash fell on Manila and the lakeside villages were evacuated. The local table is known for bulalo, a beef shank soup, and tilapia from Taal Lake, while the farms grow pineapples, coffee and cut flowers. Newcomers most often go wrong by assuming the volcano lies within Tagaytay, when the city is only the balcony opposite it.",
     layout:
       "The town runs along a ridge on the north shore of Taal Lake, with numerous viewpoints and restaurants facing the lake, and is a popular weekend getaway for residents of Metro Manila.",
     gettingAround:
@@ -200,6 +182,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to April is the dry season, the best time for beach activities; June to October brings the southwest monsoon, with rougher waves on the east coast — kitesurfers in fact prefer this season at Bulabog Beach.",
   },
   "el-nido-town": {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 51,367；下一期约 2030
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
     //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
     //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
@@ -222,6 +205,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to May is the dry season, the best time for island-hopping; from June to October, monsoon conditions may cancel some routes — confirm with local tour operators before travelling.",
   },
   "coron-town": {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 69,439；下一期约 2030
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
     //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
     //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
@@ -244,6 +228,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to May is the dry season, the best time for island-hopping and wreck diving; sites such as Kayangan Lake are managed by the Tagbanua community, and an environmental fee applies on entry.",
   },
   tagbilaran: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 106,120；下一期约 2030
     // identity sources: 人口：菲律宾统计局 2024 年人口普查 106,120。口径是**普查人口**，菲律宾市级人口只随普查更新，停在 2024 年不算过期。
     identity:
       "Tagbilaran is the capital of Bohol Province, with a census population of about 106,000 in 2024 (Philippine Statistics Authority), on the southwest coast of Bohol Island, and the core gateway for exploring the Chocolate Hills and Bohol's natural landscapes.",
@@ -262,11 +247,13 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time to explore the Chocolate Hills and the island's other sights; morning light at the Chocolate Hills viewpoint is softer, making it a good time for an early visit.",
   },
   vigan: {
+    // howItWorks sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 约 5.4 万；下一期约 2030
+    // identity sources（2026-09-15 核实，add-year）: PSA 2024 POPCEN 约 5.4 万；下一期约 2030
     identity:
       "Vigan is the capital of Ilocos Sur Province, with a population of more than 54,000, on Luzon's northwest coast, and the best-preserved Spanish colonial-era old town in the Philippines, inscribed on the UNESCO World Heritage List in 1999.",
     // howItWorks sources: 「1999 年列入世界遗产」与「2015 年入选新七大奇迹城市」**均核实属实**（UNESCO 官方案例页 + New7Wonders 官网，1 级）。2026-09-12 核。
     howItWorks:
-      "Vigan is the capital of Ilocos Sur in the Philippines, a component city under provincial jurisdiction governed by an elected mayor and council, with about 54,500 people in the 2024 census, on the west coast of Luzon some 404 km north of Manila. In 1999 the Historic Town of Vigan was inscribed as World Heritage as the best-preserved example of a Spanish colonial town in Asia, and in 2015 it was named one of the New7Wonders Cities. What preserved it is its structure: the old town centres on Plaza Salcedo and Plaza Burgos, ringed by the Mestizo District where the merchant families of mixed Chinese and Spanish descent lived, their houses the bahay na bato — stone below, timber above, windows glazed with capiz shell, joining Fujianese, Spanish and tropical practice in one form. Calle Crisologo with its sett paving and unbroken row of old houses is the heart of that quarter, and horse-drawn kalesas still carry passengers along it. The Pagburnayan kilns and the hand looms still work, and the Vigan longganisa is the local food. The airport is at Laoag, 80 km north. Newcomers most often go wrong by taking the old town for a reconstructed set, when most of these houses are original and still lived in.",
+      "Vigan is the capital of Ilocos Sur in the Philippines, a component city under provincial jurisdiction governed by an elected mayor and council, with about 54,500 people in the 2024 census, on the west coast of Luzon some 404 km by road north of Manila. In 1999 the Historic Town of Vigan was inscribed as World Heritage as the best-preserved example of a Spanish colonial town in Asia, and in 2015 it was named one of the New7Wonders Cities. What preserved it is its structure: the old town centres on Plaza Salcedo and Plaza Burgos, ringed by the Mestizo District where the merchant families of mixed Chinese and Spanish descent lived, their houses the bahay na bato — stone below, timber above, windows glazed with capiz shell, joining Fujianese, Spanish and tropical practice in one form. Calle Crisologo with its sett paving and unbroken row of old houses is the heart of that quarter, and horse-drawn kalesas still carry passengers along it. The Pagburnayan kilns and the hand looms still work, and the Vigan longganisa is the local food. The airport is at Laoag, 80 km north. Newcomers most often go wrong by taking the old town for a reconstructed set, when most of these houses are original and still lived in.",
     layout:
       "The historic core follows a grid layout, its streets lined with Spanish colonial-era stone buildings and arcaded shophouses; Calle Crisologo is the old town's most representative historic street.",
     gettingAround:

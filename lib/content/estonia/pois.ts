@@ -48,4 +48,16 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "普哈湖", nameEn: "Lake Pühajärv", lon: 26.4500, lat: 58.0333, kind: "landmark" },
     { nameZh: "奥泰佩城堡山", nameEn: "Otepää Castle Hill", lon: 26.5041, lat: 58.0575, kind: "landmark" },
   ],
+  kardla: [
+    { nameZh: "凯尔德拉港", nameEn: "Kärdla harbour", lon: 22.7529, lat: 59.0091, kind: "landmark" },
+    { nameZh: "凯尔德拉教堂", nameEn: "Kärdla church", lon: 22.7524, lat: 59.0028, kind: "landmark" },
+    { nameZh: "塔赫库纳灯塔", nameEn: "Tahkuna lighthouse", lon: 22.5862, lat: 59.0914, kind: "landmark" },
+    { nameZh: "科普灯塔", nameEn: "Kõpu lighthouse", lon: 22.1997, lat: 58.916, kind: "landmark" },
+  ],
+  voru: [
+    { nameZh: "中心广场与凯瑟琳教堂", nameEn: "Central square and St Catherine's Church", lon: 26.9951, lat: 57.8485, kind: "landmark" },
+    { nameZh: "克洛伊茨瓦尔德纪念馆", nameEn: "Kreutzwald Memorial Museum", lon: 26.9983, lat: 57.8443, kind: "landmark" },
+    { nameZh: "塔穆拉湖", nameEn: "Lake Tamula", lon: 26.9837, lat: 57.8396, kind: "landmark" },
+    { nameZh: "沃鲁县博物馆", nameEn: "Võru County Museum", lon: 26.9921, lat: 57.846, kind: "landmark" },
+  ],
 };

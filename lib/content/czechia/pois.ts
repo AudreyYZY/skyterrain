@@ -41,4 +41,26 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "奥洛穆茨天文钟", nameEn: "Olomouc Astronomical Clock", lon: 17.2508, lat: 49.5939, kind: "landmark" },
     { nameZh: "奥洛穆茨主教座堂", nameEn: "Olomouc Cathedral (St. Wenceslas)", lon: 17.2554, lat: 49.5965, kind: "landmark" },
   ],
+  "ceske-budejovice": [
+    { nameZh: "普热米斯尔·奥托卡二世广场与参孙喷泉", nameEn: "Přemysl Otakar II Square and Samson Fountain", lon: 14.4743, lat: 48.9746, kind: "landmark" },
+    { nameZh: "黑塔", nameEn: "Black Tower", lon: 14.4757, lat: 48.9755, kind: "landmark" },
+    { nameZh: "圣尼古拉主教座堂", nameEn: "St Nicholas Cathedral", lon: 14.4761, lat: 48.9753, kind: "landmark" },
+    { nameZh: "多明我会修道院与圣母献堂教堂", nameEn: "Dominican Monastery and Church of the Presentation", lon: 14.4716, lat: 48.9754, kind: "landmark" },
+    { nameZh: "南波希米亚博物馆", nameEn: "South Bohemian Museum", lon: 14.4766, lat: 48.9725, kind: "landmark" },
+    { nameZh: "布杰约维采啤酒厂", nameEn: "Budějovický Budvar brewery", lon: 14.4769, lat: 48.9934, kind: "landmark" },
+  ],
+  telc: [
+    { nameZh: "扎哈里亚什·赫拉德茨广场", nameEn: "Zachariáš of Hradec Square", lon: 15.4528, lat: 49.1842, kind: "landmark" },
+    { nameZh: "泰尔奇国立城堡", nameEn: "Telč State Castle", lon: 15.4513, lat: 49.1854, kind: "landmark" },
+    { nameZh: "圣雅各教堂", nameEn: "Church of St James", lon: 15.4507, lat: 49.185, kind: "landmark" },
+    { nameZh: "圣灵塔", nameEn: "Tower of the Holy Spirit", lon: 15.4547, lat: 49.1831, kind: "landmark" },
+    { nameZh: "乌利采塘", nameEn: "Ulický Pond", lon: 15.451, lat: 49.1839, kind: "landmark" },
+  ],
+  litomysl: [
+    { nameZh: "利托米什尔国立城堡", nameEn: "Litomyšl State Castle", lon: 16.3127, lat: 49.8734, kind: "landmark" },
+    { nameZh: "城堡啤酒厂（斯美塔那出生寓所）", nameEn: "Castle brewery (Smetana's birthplace)", lon: 16.3138, lat: 49.873, kind: "landmark" },
+    { nameZh: "斯美塔那广场", nameEn: "Smetana Square", lon: 16.3106, lat: 49.8714, kind: "landmark" },
+    { nameZh: "皮亚里斯特会圣十字架寻获教堂", nameEn: "Piarist Church of the Finding of the Holy Cross", lon: 16.3125, lat: 49.872, kind: "landmark" },
+    { nameZh: "地区博物馆", nameEn: "Regional Museum", lon: 16.3119, lat: 49.8723, kind: "landmark" },
+  ],
 };

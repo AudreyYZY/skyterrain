@@ -1,0 +1,35 @@
+{
+  "id": "pek-tas",
+  "name": "北京 — 塔什干",
+  "nameEn": "Beijing — Tashkent",
+  "description": "阴山 · 戈壁 · 天山 · 伊犁河谷 · 伊塞克湖 · 吉尔吉斯山脉 · 恰特卡尔山脉",
+  "descriptionEn": "Yin Mountains · Gobi · Tian Shan · Ili Valley · Issyk-Kul · Kyrgyz Range · Chatkal Range",
+  "depCountry": "china",
+  "arrCountry": "uzbekistan",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA777",
+    "aircraft": "Boeing 737",
+    "depIata": "PEK",
+    "arrIata": "TAS",
+    "durationMin": 415
+  },
+  "source": {
+    "ref": "https://www.bcia.com.cn/",
+    "checkedOn": "2026-09-16",
+    "note": "北京首都国际机场官网航班实况（1 级，2026-09-15）：CA777 PEK（T3）→ TAS，航路只有两点、不经停，计划 15:45 起飞、22:40 到达（北京时间），即 415 分钟；塔什干机场官网航班屏（1 级，2026-09-17）：CA777 19:40 到达、来自北京（= 22:40 北京时间）；中国航空集团 2025-07-21 开航稿（1 级）：CA777/8、波音 737 机型；FlightAware（3 级）2026-09 每班 737 MAX 8、计划 415 分钟。机型写到波音 737 系列（航司稿与追踪站一致），细分型号只有追踪站一源，不写。开航稿「全程逾 6.5 小时」是首航实飞，计划时长以机场官网为准。此前「出发机场 PEK 只有 3 级」由首都机场官网解决。班期不写。航点沿阴山—戈壁—天山—伊犁河谷—伊塞克湖—吉尔吉斯山脉—恰特卡尔山为按大圆的示意，不代表实际航路；沿线国界与邻国不写。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.0801, "lon": 116.5846, "airport": true },
+    { "kind": "terrain", "terrainId": "yinshan" },
+    { "kind": "terrain", "terrainId": "gobi" },
+    { "kind": "terrain", "terrainId": "tianshan" },
+    { "kind": "terrain", "terrainId": "ili-valley" },
+    { "kind": "terrain", "terrainId": "issyk-kul" },
+    { "kind": "terrain", "terrainId": "kyrgyz-ala-too" },
+    { "kind": "terrain", "terrainId": "chatkal-range" },
+    { "kind": "city", "id": "tas", "name": "塔什干", "nameEn": "Tashkent", "lat": 41.2579, "lon": 69.2812, "airport": true }
+  ]
+}

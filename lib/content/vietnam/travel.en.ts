@@ -75,7 +75,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the Han River and My Khe Beach, with the Dragon Bridge spanning the Han River as a city landmark, and resort hotels lining My Khe Beach.",
     gettingAround:
-      "Da Nang International Airport is about 3 km from the city centre, an important aviation hub for central Vietnam; taxis and Grab reach nearby attractions easily.",
+      "Da Nang International Airport is about 3 km in a straight line from the city centre, an important aviation hub for central Vietnam; taxis and Grab reach nearby attractions easily.",
     culture:
       "Da Nang is one of Vietnam's fastest-growing coastal cities, combining a traditional fishing culture with a modern tourism-resort industry.",
     seeAndDo:
@@ -85,14 +85,14 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
   "hoi-an": {
     identity:
-      "Hoi An is a well-preserved ancient trading-port town in central Vietnam, with a population of about 90,000; an important Southeast Asian international trading port from the 16th to 19th centuries, its ancient town was inscribed on the UNESCO World Heritage List in 1999.",
+      "Hoi An is a well-preserved ancient trading-port town in central Vietnam, an important Southeast Asian international trading port from the 16th to 19th centuries, its ancient town was inscribed on the UNESCO World Heritage List in 1999.",
     // howItWorks sources: 原会安市 2025-07-01 重组为 3 坊 1 社：**会安坊**（明安坊 + 锦浦坊 + 山峰坊 + 锦南坊 + 锦金社）、会安东坊、会安西坊、新协社；广南省并入岘港市（保留「岘港」名）。正文「分成几个直属岘港的坊、古城那一片叫会安坊」成立。（依第 1659/NQ-UBTVQH15 号决议，3 级转引，2026-09-12 核，无需改动。）
     howItWorks:
-      "Since 1 July 2025 Hội An has no longer been a city: Quảng Nam province was merged into Da Nang, the district tier was abolished, and Hội An became several wards directly under Da Nang, the one holding the old town called Hội An ward. The Ancient Town lies on the north bank of the Thu Bồn, World Heritage since 1999 with a ticket to enter the old streets, An Bàng and Cửa Đại beaches 4 km east, the Cham Islands offshore and Da Nang airport about 30 km north. Lanterns by night and tailors' shops are its trade. Newcomers most often go wrong by taking Hội An for an independent city, when it is now a few wards of Da Nang, whose government sits 30 km away.",
+      "Since 1 July 2025 Hội An has no longer been a city: Quảng Nam province was merged into Da Nang, the district tier was abolished, and Hội An became several wards directly under Da Nang, the one holding the old town called Hội An ward. The Ancient Town lies on the north bank of the Thu Bồn, World Heritage since 1999 with a ticket to enter the old streets, An Bàng and Cửa Đại beaches 4 km east, the Cham Islands offshore and Da Nang airport about 30 km north. Lanterns by night and tailors' shops are its trade. Newcomers most often go wrong by taking Hội An for an independent city, when it is now a few wards of Da Nang, whose government sits 30 km away by road.",
     layout:
       "The ancient town is built along the Thu Bon River, with the Japanese Covered Bridge as its landmark structure, and yellow-walled traditional merchant houses and Chinese assembly halls lining its old streets.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Da Nang International Airport (about 30 km away); motorised vehicles are barred from the ancient town's core, so walking or cycling is the main way to get around.",
+      "There is no commercial airport locally; the nearest is Da Nang International Airport (about 30 km away by road); motorised vehicles are barred from the ancient town's core, so walking or cycling is the main way to get around.",
     culture:
       "Hoi An's ancient town blends Vietnamese, Chinese, Japanese, and European architecture and trading culture; on the 14th night of each lunar month the town turns off its electric lights and holds a \"Lantern Festival\" lit entirely by lanterns.",
     seeAndDo:
@@ -101,15 +101,16 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "February–August, the dry season, is most pleasant; the Lantern Festival on the 14th night of each lunar month is the best time to experience the ancient town at night, though it draws crowds, so plan ahead.",
   },
   hue: {
+    // identity sources（2026-09-15 核实，update）: 顺化中央直辖市官方人口 1,236,393（与同条目 howItWorks 一致，2 级）；原「约 45 万」是升格前旧顺化市口径；下一期约 2027
     identity:
-      "Hue owes its selection as a capital largely to what the Perfume River offered — after unifying Vietnam in 1802, Emperor Gia Long, founder of the Nguyen dynasty, chose this site for its backdrop of hills and the river winding through it, and built a citadel explicitly modeled on Beijing's Forbidden City; for the 143 years that followed (1802–1945), Vietnam's last royal dynasty ruled from here and was buried in the tomb complexes along the Perfume River. Hue is a historic former capital in central Vietnam, with a population of about 450,000, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
+      "Hue owes its selection as a capital largely to what the Perfume River offered — after unifying Vietnam in 1802, Emperor Gia Long, founder of the Nguyen dynasty, chose this site for its backdrop of hills and the river winding through it, and built a citadel explicitly modeled on Beijing's Forbidden City; for the 143 years that followed (1802–1945), Vietnam's last royal dynasty ruled from here and was buried in the tomb complexes along the Perfume River. Hue is a historic former capital in central Vietnam, raised from Thừa Thiên Huế province to a centrally governed city in January 2025, with about 1.24 million people, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
     // howItWorks sources: 建制：2025-01-01 由承天顺化省整体升格为中央直辖市；2025-07-01 县级撤销后重编为 40 个乡级单位（21 坊 + 19 社）。官方面积 4,947.11 km²、人口 1,236,393（2 级，2026-09-12 核），与正文「约 4,950 平方公里」「一百多万」一致。
     howItWorks:
       "Huế has been a centrally-governed city of Vietnam since 1 January 2025, raised from the former Thừa Thiên Huế province, covering about 4,950 km² with more than a million people, and since the district tier was abolished that July it has been re-organised into 21 wards and 19 communes directly under the city. The Perfume River divides the town: the north bank holds the Citadel and Forbidden Purple City of the Nguyễn dynasty of 1802–1945, World Heritage since 1993, the south bank the French-era quarter and today's commercial centre, the royal tombs scattered in the hills to the south, Thuận An beach to the east, Phu Bai airport about 15 km south and the Hải Vân Pass separating it from Da Nang. Newcomers most often go wrong by taking Huế for the Citadel quarter, when it is a centrally-governed city running from the mountains to the sea, far larger than Da Nang's urban area.",
     layout:
       "The Perfume River runs through the city; the Imperial City and Forbidden Purple City ruins on the north bank preserve the Nguyen court's layout, the south bank is the modern city centre, and several royal tombs lie along the Perfume River on the city's outskirts.",
     gettingAround:
-      "Phu Bai International Airport is about 15 km from the city centre; a dragon boat cruise on the Perfume River or a hired car is recommended for linking the Imperial City and the royal tombs, with taxis and Grab available in the city.",
+      "Phu Bai International Airport is about 14 km in a straight line from the city centre; a dragon boat cruise on the Perfume River or a hired car is recommended for linking the Imperial City and the royal tombs, with taxis and Grab available in the city.",
     culture:
       "As the Nguyen dynasty's ancient capital, Hue has a rich tradition of royal-court cuisine and vegetarian food culture, and the local dialect and food customs differ noticeably from other parts of Vietnam.",
     seeAndDo:
@@ -118,15 +119,16 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "February–August, the dry season, is most pleasant, with heavier rain September–January; plan at least a day dedicated to the Imperial City and the royal tombs, with a dragon boat cruise a classic way to link the sites.",
   },
   sapa: {
+    // howItWorks sources（2026-09-15 核实，update）: 老街省官方媒体：沙坝坊 54.63 km²、22,882 人（2 级）；下一期约 2027
     identity:
       "Sapa is a mountain town in Lao Cai Province, north-western Vietnam, at about 1,500 m elevation, the gateway to Fansipan and its terraced rice-field scenery, home to several ethnic-minority communities.",
     // howItWorks sources: 原沙坝镇 2025-07-01 重组为 6 个坊，镇中心即**沙坝坊**（54.63 km²、22,882 人）；老街省与安沛省合并后保留「老街」省名。⚠️ **反直觉的一点**：合并后的**行政中心迁到了安沛市**，不在老街市 —— 正文没写省会位置，所以不算错，但以后要补写时别想当然。（2 级，老街省官方媒体，2026-09-12 核，无需改动。）
     howItWorks:
-      "Sa Pa was a district-level town of Lào Cai province and, since the district tier was abolished in July 2025, is a ward directly under Lào Cai province, which merged with Yên Bái the same year. The town sits on the Hoàng Liên Sơn range at about 1,600 m with about 70,000 people in 2022, about half Hmong and a quarter Dao and the Kinh a minority; the centre is a slope around the stone church, the terraces lie in the Mường Hoa valley to the south with the villages of Cát Cát and Tả Van scattered through it, the Fansipan cable car has run from the edge of town to the 3,143 m summit since 2016, Lào Cai city and its railway station lie 35 km east and Hanoi 250 km away. Fog and cold are the ordinary condition. Newcomers most often go wrong by taking Sa Pa for a mountain village, when it is a tourist town whose visitors outnumber residents many times over, and the villages lie outside it.",
+      "Sa Pa was a district-level town of Lào Cai province and, since the district tier was abolished in July 2025, is a ward directly under Lào Cai province, which merged with Yên Bái the same year. The town sits on the Hoàng Liên Sơn range at about 1,600 m with about 70,000 people in 2022 across the former town (before the 2025 reform; the reorganised Sa Pa ward has about 22,900); the centre is a slope around the stone church, the terraces lie in the Mường Hoa valley to the south with the villages of Cát Cát and Tả Van scattered through it, the Fansipan cable car has run from the edge of town to the 3,143 m summit since 2016, Lào Cai city and its railway station lie 35 km east and Hanoi 250 km away. Fog and cold are the ordinary condition. Newcomers most often go wrong by taking Sa Pa for a mountain village, when it is a tourist town whose visitors outnumber residents many times over, and the villages lie outside it.",
     layout:
       "The town is built into the hillside, with surrounding valleys home to Hmong, Dao, and Tay ethnic-minority villages and stepped terraced fields.",
     gettingAround:
-      "Neither Sapa nor Lao Cai Province has an airport; the nearest is Hanoi's Noi Bai International Airport (about 320 km away). A sleeper train from Hanoi to Lao Cai followed by a bus, or a direct long-distance bus, takes about 5 to 6 hours.",
+      "Neither Sapa nor Lao Cai Province has an airport; the nearest is Hanoi's Noi Bai International Airport (about 300 km away by road). A sleeper train from Hanoi to Lao Cai followed by a bus, or a direct long-distance bus, takes about 5 to 6 hours.",
     culture:
       "The valleys around Sapa are home to Hmong, Dao, Tay, and other ethnic-minority communities, and traditional handwoven textiles and market culture are well preserved.",
     seeAndDo:
@@ -144,7 +146,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the shore of Ha Long Bay, with numerous boat piers along the coast serving as departure points for bay cruises.",
     gettingAround:
-      "Van Don International Airport is about 50 km from the city centre; a long-distance bus from Hanoi takes about 2.5 to 3 hours, and hiring a car via the expressway is another option.",
+      "Van Don International Airport is about 41 km in a straight line from the city centre; a long-distance bus from Hanoi takes about 2.5 to 3 hours, and hiring a car via the expressway is another option.",
     culture:
       "Ha Long has grown rapidly around the Ha Long Bay tourism industry, with fishing and tourism as its two economic pillars.",
     seeAndDo:
@@ -162,7 +164,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along Nha Trang Bay's beach, with the Po Nagar Cham towers on its north side; several offshore islands in the bay are the main destinations for island-hopping.",
     gettingAround:
-      "Cam Ranh International Airport is about 35 km from the city centre; taxis and Grab easily reach the beach and other attractions.",
+      "Cam Ranh International Airport is about 27 km in a straight line from the city centre; taxis and Grab easily reach the beach and other attractions.",
     culture:
       "Nha Trang preserves the Po Nagar Cham towers from the era of the Champa kingdom, an important site for studying ancient Cham culture in Vietnam.",
     seeAndDo:
@@ -180,7 +182,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built into the hillside, with Xuan Huong Lake as its central landmark, and French-era villas and churches scattered across the undulating terrain.",
     gettingAround:
-      "Lien Khuong Airport is about 30 km from the city centre; the terrain within the city is quite hilly, and taxis or motorbike rentals are common ways to get around.",
+      "Lien Khuong Airport is about 30 km by road from the city centre; the terrain within the city is quite hilly, and taxis or motorbike rentals are common ways to get around.",
     culture:
       "Known as \"little Paris\" for its cool climate and French-era architecture, Da Lat is an important growing region for flowers, coffee, and strawberries in Vietnam.",
     seeAndDo:
@@ -201,7 +203,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built along the Hau River (a Mekong branch), with Ninh Kieu Bridge spanning the water; a dense network of channels surrounds the city, with floating markets on the waterways outside town.",
     gettingAround:
-      "Can Tho International Airport is about 10 km from the city centre; exploring the floating markets requires an early-morning boat trip, with taxis and Grab available in the city.",
+      "Can Tho International Airport is about 10 km by road from the city centre; exploring the floating markets requires an early-morning boat trip, with taxis and Grab available in the city.",
     culture:
       "Can Tho preserves a classic Mekong Delta river-town way of life, with floating-market trading activity concentrated in the early morning.",
     seeAndDo:
@@ -210,16 +212,18 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "December to April, the dry season, is most pleasant; visit the floating market between 5 and 7 am, when trading is at its liveliest.",
   },
   "phu-quoc-city": {
+    // howItWorks sources（2026-09-15 核实，update）: 同上；下一期约 2027
+    // howItWorks sources（2026-09-15 核实，update）: 富国特区 2024-12-31 口径 157,629（与同条目 identity 一致）；原「18 万」查无出处；下一期约 2027
     // identity sources: 人口：阳东坊 2020 年 44,607。**原文「约 2 万」偏低一倍以上。** 2025 年改革后阳东并入富国特区（2024-12-31 特区口径 157,629），坊一级不再单独发布 —— 已写进 claims-stale-exempt。2026-09-10 核。
     identity:
       "Duong Dong is Phu Quoc Island's main town, with a population of about 45,000 in 2020 — the 2025 reform folded it into the Phu Quoc special zone, so the ward is no longer counted separately — and the core hub for the island's tourism and fishing activities.",
     // howItWorks sources: 生效日：越南 2025 年的省级合并（国会第 202/2025/QH15 号决议，2025-06-12 通过）与县级撤销／乡级重组（各省常委会 168x 号决议，多数 2025-06-16 通过）**统一自 2025-07-01 生效** —— 写「2025 年 6 月」是把「决议通过日」当成了「生效日」。富国特区 = 原富国市整体（阳东坊 + 安泰坊 + 6 社），约 589 km²，2025-07-01 生效；坚江省并入安江省、行政中心在迪石（2 级，2026-09-12 核）。
     howItWorks:
-      "Phú Quốc is Vietnam's largest island, about 575 km², made a city in 2021 and, since the district tier was abolished in July 2025, a 'special zone' directly under An Giang province, into which Kiên Giang was merged the same year with its capital at Rạch Giá. The island holds about 180,000 people, the main town of Dương Đông on the west coast with the airport, the night market and Long Beach nearby, An Thới at the southern tip with a cable car to Hòn Thơm island, the new resort city to the north, fish sauce and pepper the old industries, and the international airport of 2012 and visa-free entry for many nationalities — check the Vietnamese authorities for the current length and eligibility — making it an island open to the world. Newcomers most often go wrong by taking Phú Quốc for a resort, when it is an island 50 km long with 180,000 residents and a zone government at Dương Đông.",
+      "Phú Quốc is Vietnam's largest island, about 575 km², made a city in 2021 and, since the district tier was abolished in July 2025, a 'special zone' directly under An Giang province, into which Kiên Giang was merged the same year with its capital at Rạch Giá. The island (Phú Quốc special zone) held about 158,000 people at the end of 2024, the main town of Dương Đông on the west coast with the airport, the night market and Long Beach nearby, An Thới at the southern tip with a cable car to Hòn Thơm island, the new resort city to the north, fish sauce and pepper the old industries, and the international airport of 2012 and visa-free entry for many nationalities — check the Vietnamese authorities for the current length and eligibility — making it an island open to the world. Newcomers most often go wrong by taking Phú Quốc for a resort, when it is an island 50 km long with about 158,000 residents and a zone government at Dương Đông.",
     layout:
       "The town extends along the mouth of the Duong Dong River, with the Duong Dong night market as its liveliest commercial street, and beach resort hotels lining the coast nearby.",
     gettingAround:
-      "Phu Quoc International Airport is about 15 km from town; taxis, motorbike rentals, and the island's cross-sea cable car are the main ways to get around.",
+      "Phu Quoc International Airport is about 6 km in a straight line from town; taxis, motorbike rentals, and the island's cross-sea cable car are the main ways to get around.",
     culture:
       "Phu Quoc has a long tradition of fishing and fish-sauce production, and the Duong Dong night market showcases the island's seafood food culture.",
     seeAndDo:
@@ -239,7 +243,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The city is ringed by limestone karst peak clusters, with rice paddies and waterways interwoven across the valley floors between the peaks.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 109.3 公里，原文短于直线、不可能成立，已改为略高于直线的值（实际公路里程可能更长）。
     gettingAround:
-      "There is no commercial airport locally; the nearest is Hanoi's Noi Bai International Airport (about 110 km away); a train or long-distance bus from Hanoi takes about 2 to 2.5 hours.",
+      "There is no commercial airport locally; the nearest is Hanoi's Noi Bai International Airport (about 110 km in a straight line away); a train or long-distance bus from Hanoi takes about 2 to 2.5 hours.",
     culture:
       "The Ninh Binh area served as the capital of Vietnam's Dinh and Early Le dynasties from the 10th century onward, and the ancient capital ruins at Hoa Lu record this history.",
     seeAndDo:
@@ -259,7 +263,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The centre lies on the south bank of the Cam river, with the opera-house square, the cathedral, the market and the French quarter together and the port along the Cam. The Do Son peninsula lies about 20 km south-east with beaches and a casino. Cat Ba Island lies east in the sea, reached by road and bridge to the Cat Hai ferry and then a short crossing, or by fast boat in about 1 hour; Lan Ha Bay lies east of Cat Ba, joined to Ha Long Bay. Cat Bi Airport is about 6 km south-east of the centre.",
     gettingAround:
-      "Cat Bi International Airport (HPH), about 6 km from the centre, has scheduled domestic and international flights. Trains from Hanoi take about 2.5 hours and buses on the Hanoi–Haiphong expressway about 2. In town use taxis and motorbike taxis, with the old centre walkable; Cat Ba is about 2.5 hours by bus and ferry, or by fast boat from the city pier. The climate is tropical monsoon with hot wet summers and typhoons and cool winters.",
+      "Cat Bi International Airport (HPH), about 7 km in a straight line from the centre, has scheduled domestic and international flights. Trains from Hanoi take about 2.5 hours and buses on the Hanoi–Haiphong expressway about 2. In town use taxis and motorbike taxis, with the old centre walkable; Cat Ba is about 2.5 hours by bus and ferry, or by fast boat from the city pier. The climate is tropical monsoon with hot wet summers and typhoons and cool winters.",
     culture:
       "Vietnamese is universal. Haiphong people are known for their directness, and street food runs deep: crab noodle soup (bánh đa cua), crab spring rolls and rice porridge. The square before the opera house is the civic gathering place. Cat Ba and Lan Ha Bay cruises are less crowded than Ha Long — choose licensed operators; Cat Ba National Park shelters the critically endangered golden-headed langur, so keep quiet. The flame trees bloom in May. Tipping is not expected.",
     seeAndDo:
@@ -272,7 +276,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Dong Hoi lies on the central Vietnamese coast and is the gateway city to Phong Nha–Ke Bang National Park; since July 2025 the former Quang Binh province has been merged into Quang Tri. Phong Nha–Ke Bang is one of the world's most important karst cave regions, inscribed as a World Heritage site in 2003, extended in 2015 and in 2025 joined with Laos's Hin Nam No National Park as a transboundary site; it holds Son Doong, the world's largest cave (found by a local man in 1991 and announced by a British expedition in 2009; over 5 km long and about 200 m high), the 31 km Paradise Cave and Phong Nha Cave with its underground river. Dong Hoi itself has Nhat Le beach, the Quang Binh Gate and remnants of its citadel, and not far north lies the former 1954–1975 demarcation line (the DMZ) and the Vinh Moc tunnels.",
     // howItWorks sources: 广平省与广治省合并后**新省仍名「广治」**，政治行政中心设在原广平、即洞海；**洞海坊**由德宁东／同海／同富／富海／海城五坊加宝宁／德宁两社合并，基本覆盖原洞海市全域（2025-07-01 生效）。正文成立。（2—3 级，2026-09-12 核，无需改动。）
     howItWorks:
-      "Đồng Hới was the capital city of Quảng Bình province, which merged with Quảng Trị in 2025 into a new Quảng Trị province with its capital at Đồng Hới, the urban area split into wards directly under the province once the district tier was abolished, the central one called Đồng Hới ward. The city lies at the mouth of the Nhật Lệ river, the beach on the east bank and the town on the west, the Quảng Bình gate a remnant of the old wall, the airport north of town and the railway station to the west; Phong Nha-Kẻ Bàng National Park lies about 45 km north-west in the hills, World Heritage since 2003, with Paradise Cave and Sơn Đoòng within it. Newcomers most often go wrong by taking Đồng Hới for the doorstep of Phong Nha, when the caves lie an hour's drive into the hills and Đồng Hới is a provincial seat by the sea.",
+      "Đồng Hới was the capital city of Quảng Bình province, which merged with Quảng Trị in 2025 into a new Quảng Trị province with its capital at Đồng Hới, the urban area split into wards directly under the province once the district tier was abolished, the central one called Đồng Hới ward. The city lies at the mouth of the Nhật Lệ river, the beach on the east bank and the town on the west, the Quảng Bình gate a remnant of the old wall, the airport north of town and the railway station to the west; Phong Nha-Kẻ Bàng National Park lies about 42 km in a straight line north-west in the hills, World Heritage since 2003, with Paradise Cave and Sơn Đoòng within it. Newcomers most often go wrong by taking Đồng Hới for the doorstep of Phong Nha, when the caves lie an hour's drive into the hills and Đồng Hới is a provincial seat by the sea.",
     layout:
       "The city sits at the mouth of the Nhat Le river, with Nhat Le beach on the sandbar of the east bank (the Bao Ninh peninsula), the Quang Binh Gate and old walls in the centre, the station on the west side and the airport about 6 km north. Phong Nha village, about 45 km north-west, is the base for the caves — Phong Nha Cave, Paradise Cave and the Dark Cave all start from there; Son Doong lies deep in the park and is reached only on limited-number multi-day expeditions. The Vinh Moc tunnels and the Ben Hai river (the former dividing line) lie about 60–70 km south.",
     gettingAround:
@@ -292,7 +296,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     howItWorks:
       "Quy Nhơn was the capital city of Bình Định province, with about 481,000 people in 2022; in 2025 Bình Định merged with Gia Lai into a new Gia Lai province with its capital at Quy Nhơn, and the urban area was split into wards directly under the province once the district tier was abolished. The city runs along a crescent bay, the seafront boulevard and the centre in the middle of the curve, the Twin Cham Towers in town, Kỳ Co and Eo Gió on the headland of the Phương Mai peninsula about 20 km north, Phù Cát airport about 30 km to the north-west and the railway station at Diêu Trì to the west; the homeland of the Tây Sơn uprising lies in the hills to the west. Newcomers most often go wrong by taking Quy Nhơn for a small beach town, when it is now the capital of a merged province running from the coast to the central highlands.",
     layout:
-      "The city follows the crescent bay, with the beach on its edge and the seafront boulevard as the hotel and restaurant strip; the Twin Towers stand in the north-west of the city and the station (its branch line now closed) in the centre. Quy Hoa and Han Mac Tu's grave lie in a valley south of the city; Ky Co beach and Eo Gio are about 20 km north-east on the Phuong Mai peninsula; the Banh It (Silver) towers about 20 km north; and the Quang Trung Museum about 45 km west at Tay Son. The airport is about 30 km north-west.",
+      "The city follows the crescent bay, with the beach on its edge and the seafront boulevard as the hotel and restaurant strip; the Twin Towers stand in the north-west of the city and the station (its branch line now closed) in the centre. Quy Hoa and Han Mac Tu's grave lie in a valley south of the city; Ky Co beach and Eo Gio are about 20 km north-east on the Phuong Mai peninsula; the Banh It (Silver) towers about 20 km north; and the Quang Trung Museum about 40 km in a straight line west at Tay Son. The airport is about 30 km north-west.",
     gettingAround:
       "Phu Cat Airport (UIH), about 30 km from the city, has only a few domestic routes, with an airport bus. Reunification Express trains stop at Dieu Tri (about 10 km north-west of the city) — about 6 hours from Da Nang and 4 from Nha Trang; buses run on Highway 1. In town use taxis and motorbike taxis, with the beach on foot; Ky Co and Eo Gio are about 40 minutes by hired car or motorbike taxi. The climate is tropical monsoon, wet from September to December and dry from January to August.",
     culture:
@@ -321,10 +325,10 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
   "vung-tau": {
     identity:
-      "Vung Tau lies at the tip of a peninsula about 95 km south-east of Ho Chi Minh City, the most convenient seaside city of the south; since July 2025 the former Ba Ria–Vung Tau province has been merged into Ho Chi Minh City. Under French rule it was Cap Saint-Jacques, and the lighthouse of 1910 and the governor's villa, the White Palace, survive; the Christ statue on the small mountain, begun in 1974 and completed in 1993, stands about 32 m tall and is one of Vietnam's best-known landmarks. Front Beach and Back Beach are the two main beaches, the offshore oil and gas fields make Vung Tau the base of Vietnam's petroleum industry, and the ferry to Con Dao leaves from here.",
+      "Vung Tau lies at the tip of a peninsula about 95 km by road south-east of Ho Chi Minh City, the most convenient seaside city of the south; since July 2025 the former Ba Ria–Vung Tau province has been merged into Ho Chi Minh City. Under French rule it was Cap Saint-Jacques, and the lighthouse of 1910 and the governor's villa, the White Palace, survive; the Christ statue on the small mountain, begun in 1974 and completed in 1993, stands about 32 m tall and is one of Vietnam's best-known landmarks. Front Beach and Back Beach are the two main beaches, the offshore oil and gas fields make Vung Tau the base of Vietnam's petroleum industry, and the ferry to Con Dao leaves from here.",
     // howItWorks sources: **头顿坊 16.86 km²、117,413 人**（第 1—5 坊 + 胜二坊 + 胜三坊合并，第 1685/NQ-UBTVQH15 号决议，2025-07-01 生效），与正文「约 17 平方公里、12 万人」吻合；巴地—头顿省与平阳省**同时**并入胡志明市（保留「胡志明市」名），政治行政中心留在原胡志明市。（2 级，2026-09-12 核，无需改动。）
     howItWorks:
-      "Vũng Tàu was a provincial city of Bà Rịa–Vũng Tàu, about 350,000 people; in 2025 that province was merged into Ho Chi Minh City, and once the district tier was abolished the urban area was split into wards directly under Ho Chi Minh City, the one at the tip of the peninsula called Vũng Tàu ward, about 17 km² with about 117,000 people. The city lies on a peninsula running into the sea, Front Beach facing the harbour to the west and Back Beach the open sea to the east, the two hills of Núi Lớn and Núi Nhỏ framing the town, the Christ statue and the lighthouse on Núi Nhỏ its reference points, and the Vietsovpetro base making it Vietnam's offshore oil centre; Saigon lies about 95 km north-west, about an hour and a half since the expressway of 2023, and ferries sail to Côn Đảo. Saigon pours in at weekends. Newcomers most often go wrong by taking Vũng Tàu for an independent seaside city, when it is now a ward of Ho Chi Minh City, whose government sits 95 km away.",
+      "Vũng Tàu was a provincial city of Bà Rịa–Vũng Tàu, about 350,000 people; in 2025 that province was merged into Ho Chi Minh City, and once the district tier was abolished the urban area was split into wards directly under Ho Chi Minh City, the one at the tip of the peninsula called Vũng Tàu ward, about 17 km² with about 117,000 people. The city lies on a peninsula running into the sea, Front Beach facing the harbour to the west and Back Beach the open sea to the east, the two hills of Núi Lớn and Núi Nhỏ framing the town, the Christ statue and the lighthouse on Núi Nhỏ its reference points, and the Vietsovpetro base making it Vietnam's offshore oil centre; Saigon lies about 95 km north-west, about an hour and a half since the expressway of 2023, and ferries sail to Côn Đảo. Saigon pours in at weekends. Newcomers most often go wrong by taking Vũng Tàu for an independent seaside city, when it is now a ward of Ho Chi Minh City, whose government sits 95 km away by road.",
     layout:
       "Vung Tau occupies a long narrow peninsula with two hills — Big Mountain (Nui Lon) and Small Mountain (Nui Nho) — the lighthouse on Small Mountain's summit, the Christ statue on its southern slope and the White Palace at the foot of Big Mountain by the sea; Front Beach (Bai Truoc) faces the bay on the west side with the old town and the pier, and Back Beach (Bai Sau) on the east side is the long beach and hotel zone. Nghinh Phong cape at the southern tip is the southernmost point. The passenger pier and the Con Dao ferry are on the Front Beach side.",
     gettingAround:

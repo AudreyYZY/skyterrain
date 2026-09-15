@@ -33,7 +33,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town sits on high ground on the Vistula's west bank, its rebuilt medieval street layout and colourful terraced houses well preserved; the newer districts extend outward from the old town, while the Praga district on the east bank retains more original pre-war buildings.",
     gettingAround:
-      "Chopin Airport is about 10 km from the centre, with train and metro links; the city has an extensive metro and tram network. The climate is temperate continental, cold in winter and mild in summer.",
+      "Chopin Airport is about 8 km in a straight line from the centre, with train and metro links; the city has an extensive metro and tram network. The climate is temperate continental, cold in winter and mild in summer.",
     culture:
       "The official language is Polish, with higher English proficiency among younger people. Warsaw was rebuilt to its pre-war appearance after being almost entirely levelled during the Second World War — the reconstruction itself is a symbol of Polish national resilience. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -51,7 +51,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is centred on the Main Market Square, with Wawel Castle standing on high ground beside the Vistula overlooking the whole city; the Kazimierz district preserves a historic Jewish quarter.",
     gettingAround:
-      "Kraków Airport is about 11 km from the centre, with a train link; the old town is walkable, and the city has an extensive tram network. The climate is temperate continental.",
+      "Kraków Airport is about 12 km in a straight line from the centre, with a train link; the old town is walkable, and the city has an extensive tram network. The climate is temperate continental.",
     culture:
       "The official language is Polish, with higher English proficiency given the city's importance for tourism and its universities. Kraków escaped major destruction in the Second World War and so retains an intact medieval city layout, making it one of the culturally and historically richest cities in Poland. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -92,7 +92,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old-town centre preserves a Renaissance-style market square, while the outskirts have developed in recent years into an important Polish aerospace-industry cluster, earning the nickname \"Aviation Valley.\"",
     gettingAround:
-      "Rzeszów-Jasionka Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 3 hours. The old town is walkable. The climate is temperate continental.",
+      "Rzeszów-Jasionka Airport is about 8 km in a straight line from the centre, reached by bus; from Warsaw the train takes about 3 hours. The old town is walkable. The climate is temperate continental.",
     culture:
       "The official language is Polish. Rzeszów is an important regional centre in south-eastern Poland, and its growing aerospace industry has drawn many young technical professionals. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -112,7 +112,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built on several islands formed by the Oder and its tributaries, with the Market Square at its core and Ostrów Tumski (Cathedral Island) preserving a cluster of medieval religious buildings.",
     gettingAround:
-      "Wrocław Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 4.5 hours. The old town is walkable, with numerous bridges over the river. The climate is temperate continental.",
+      "Wrocław Airport is about 11 km in a straight line from the centre, reached by bus; from Warsaw the train takes about 4.5 hours. The old town is walkable, with numerous bridges over the river. The climate is temperate continental.",
     culture:
       "The official language is Polish. Wrocław has historically been governed by several different states, and this blended history has given the city a distinctive architectural character. Hundreds of small bronze dwarf statues scattered through the streets have become an iconic city symbol. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -133,7 +133,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is centred on the Old Market Square, with the Renaissance-style town hall standing at its heart, and Cathedral Island preserving the remains of Poland's earliest church.",
     gettingAround:
-      "Poznań-Ławica Airport is about 6 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
+      "Poznań-Ławica Airport is about 6.9 km in a straight line from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
     culture:
       "The official language is Polish. Poznań is an important Polish trade-fair and commercial city, and locals are known for their practical, efficient work ethic. A mechanical goat display at the Old Market town hall performs daily at noon. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -154,7 +154,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Motława River, with Long Street and Long Market forming its historic axis; historic city gates such as the Green Gate and Golden Gate survive intact, and the port district preserves historic harbour cranes.",
     gettingAround:
-      "Gdańsk Lech Wałęsa Airport is about 12 km from the centre, with bus and train links; from Warsaw the train takes about 2.5 hours. The old town is walkable; reaching the Hel Peninsula requires a car or train. The climate is temperate maritime, comparatively mild along the coast.",
+      "Gdańsk Lech Wałęsa Airport is about 12 km in a straight line from the centre, with bus and train links; from Warsaw the train takes about 2.5 hours. The old town is walkable; reaching the Hel Peninsula requires a car or train. The climate is temperate maritime, comparatively mild along the coast.",
     culture:
       "The official language is Polish. Gdańsk was the birthplace of the 1980 Solidarity trade-union movement, an event widely regarded as one of the important beginnings of the political transformations across Eastern Europe. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -173,7 +173,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along a tributary of the Oder, with Ducal Castle of Pomerania standing on high ground; the port district extends along the Oder, and the city holds one of the largest urban green-space systems in Poland.",
     gettingAround:
-      "Szczecin-Goleniów Airport is about 45 km from the centre, reached by bus; from Warsaw the train takes about 6.5 hours, or about 1.5 hours from Berlin. The old town is walkable. The climate is temperate maritime.",
+      "Szczecin-Goleniów Airport is about 45 km by road from the centre, reached by bus; from Warsaw the train takes about 6.5 hours, or about 1.5 hours from Berlin. The old town is walkable. The climate is temperate maritime.",
     culture:
       "The official language is Polish; given its proximity to the German border, German is also usable in some commercial settings. Szczecin was historically under German administration for a long period, and its architecture blends German and Polish cultural influences. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -182,16 +182,18 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season; sitting right on the Poland-Germany border, Szczecin is a convenient starting point for a cross-border day trip and an ideal gateway to Wolin Island.",
   },
   torun: {
+    // howItWorks sources（2026-09-15 核实，update）: 同上 · GUS Tabl.20 · Toruń=192,784, 2026-01-01口径 · 1级 · 2026-09-15 核；下一期约 2027-04
+    // identity sources（2026-09-15 核实，update）: https://stat.gov.pl/download/gfx/portalinformacyjny/pl/defaultaktualnosci/5468/7/23/1/powierzchnia_i_ludnosc_w_przekroju_terytorialnym_2026_2.xlsx · GUS《Powierzchnia i ludność w przekroju terytorialnym w 2026 r.》(发布2026-04-29), Tabl.20 miasta · 直接下载xlsx解析: Toruń=192,784 · 1级 · 2026-09-15 核；下一期约 2027-04
     // identity sources: 托伦 GUS 常住人口：2021-12-31 = 197,112 → 2022 = 195,690 → **2023-12-31 = 194,771**
     //   （波兰语维基逐年列出 GUS 序列，3 级，2026-09-08 核）https://pl.wikipedia.org/wiki/Ludność_Torunia 。
     //   原注释里的 196,935 是英文维基旧版引的 2021 年 12 月数字。
     //   **两套口径不能互换**：市政府自己的「已登记居民」2024 年末 170,327、2025 年中 167,450，
     //   与 GUS 的常住人口长期差两万多。2024/2025 的 GUS 数未查到，下一轮补。
     identity:
-      "Toruń is a historic town on the Vistula in north-central Poland, with a population of about 195,000 (2023, GUS, still declining), the birthplace of astronomer Nicolaus Copernicus; its intact medieval old town was inscribed on the World Heritage List in 1997.",
+      "Toruń is a historic town on the Vistula in north-central Poland, with a population of about 193,000 (January 2026, GUS, still declining), the birthplace of astronomer Nicolaus Copernicus; its intact medieval old town was inscribed on the World Heritage List in 1997.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Toruń (Poland; city in Kuyavian-Pomeranian Voivodeship, one of two regional capitals alongside Bydgoszcz, about 196,935 residents, on the Vistula; founded by the Teutonic Knights in 1233, joined the Hanseatic League in 1264 and remained a significant trading centre, a royal city from 1506 with voting rights in Polish royal elections; the city avoided damage in both world wars and retained its Gothic to Baroque architecture, the Medieval Town of Toruń inscribed by UNESCO in 1997 for its intact layout and brick Gothic buildings; Nicolaus Copernicus born here in 1473, his birthplace now a museum; gingerbread made here for nearly a millennium; the Camerimage film festival)
     howItWorks:
-      "Toruń is a city of Kuyavian-Pomeranian Voivodeship with about 195,000 residents in 2023, on the Vistula; this region has an arrangement found nowhere else in Poland — its capital is split in two, the regional assembly and the elected marshal sitting in Toruń and the centrally appointed voivode in Bydgoszcz, so the two cities hold half each, unique among the sixteen voivodeships. The Teutonic Knights founded the town in 1233, it joined the Hanseatic League in 1264 and long remained a major trading town on the Vistula, and from 1506 it was a royal city with a voice in the election of kings. Its most unusual quality is that it is whole: neither world war touched the centre, its buildings stand in an unbroken run from Gothic to Baroque, and in 1997 the Medieval Town of Toruń was inscribed as World Heritage for its intact layout and brick Gothic. Nicolaus Copernicus was born here in 1473 and his birthplace is a museum; gingerbread has been made in the town for close to a thousand years as its old trade. The university carries Copernicus's name. Newcomers most often go wrong by assuming a region has one capital, when this one divides its offices between two cities.",
+      "Toruń is a city of Kuyavian-Pomeranian Voivodeship with about 193,000 residents as of January 2026, on the Vistula; this region has an arrangement found nowhere else in Poland — its capital is split in two, the regional assembly and the elected marshal sitting in Toruń and the centrally appointed voivode in Bydgoszcz, so the two cities hold half each, unique among the sixteen voivodeships. The Teutonic Knights founded the town in 1233, it joined the Hanseatic League in 1264 and long remained a major trading town on the Vistula, and from 1506 it was a royal city with a voice in the election of kings. Its most unusual quality is that it is whole: neither world war touched the centre, its buildings stand in an unbroken run from Gothic to Baroque, and in 1997 the Medieval Town of Toruń was inscribed as World Heritage for its intact layout and brick Gothic. Nicolaus Copernicus was born here in 1473 and his birthplace is a museum; gingerbread has been made in the town for close to a thousand years as its old trade. The university carries Copernicus's name. Newcomers most often go wrong by assuming a region has one capital, when this one divides its offices between two cities.",
     layout:
       "The old town is built along the Vistula's northern bank, densely packed with Gothic brick buildings, with the Copernicus House museum and the old town hall as its core landmarks.",
     gettingAround:
@@ -204,18 +206,20 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "May–September is the most pleasant season; Toruń's old town is well preserved and compact, suited to a half- to full-day deep-dive stroll.",
   },
   olsztyn: {
+    // howItWorks sources（2026-09-15 核实，update）: 同上 · GUS Tabl.20 · Olsztyn=165,393 · 1级 · 2026-09-15 核；下一期约 2027-04
+    // identity sources（2026-09-15 核实，update）: 同上 · GUS Tabl.20 · Olsztyn(省会市本身，非琴斯托霍瓦县同名村)=165,393, 2026-01-01口径 · 1级 · 2026-09-15 核；下一期约 2027-04
     // identity sources: 奥尔什丁 GUS：2024-12-31 = 166,392，2025-06-30 = 165,855（又降 537 人）；2021 年为 169,793。
     //   https://tko.pl/316169,2025,10,22,co-sie-dzieje-z-olsztynem-gus-podal-zadziwiajace-dane-o-liczbie-mieszkancow
     //   （3 级，转引 GUS，2026-09-08 核）。奥尔什丁在下降。
     identity:
-      "Olsztyn is the core city of the Warmia-Masuria region in north-eastern Poland, with a population of about 166,000 (end of 2024, GUS, declining slightly year by year), the traditional gateway to the Masurian Lake District.",
+      "Olsztyn is the core city of the Warmia-Masuria region in north-eastern Poland, with a population of about 165,000 (January 2026, GUS, declining slightly year by year), the traditional gateway to the Masurian Lake District.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Olsztyn (Poland; capital of Warmian-Masurian Voivodeship, about 169,793 residents in 2021, on the Łyna; a watchtower from 1334 and municipal rights in 1353 granted by the cathedral chapter of the Bishopric of Warmia; Nicolaus Copernicus lived in the town castle as administrator from 1516 to 1521 and directed its defence; 15 lakes within the administrative boundary covering about 725 ha and forest over 21 per cent of the city area, part of the Land of a Thousand Lakes; the Gothic co-cathedral of St James; the University of Warmia and Mazury founded 1999; the Michelin plant the largest employer)
     howItWorks:
-      "Olsztyn is the capital of Warmian-Masurian Voivodeship with about 166,400 residents at the end of 2024, on the Łyna; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. It began as a watchtower in 1334 and received municipal rights in 1353 from the cathedral chapter of the Bishopric of Warmia — this country was long governed in the Middle Ages by the bishopric rather than by secular lords, which is why castle and church stand at the town's core. Copernicus lived in that castle as administrator of Warmia from 1516 to 1521 and directed the town's defence in 1520 and 1521. Its plainest feature is water and woodland: fifteen lakes lie inside the city boundary covering about 725 hectares and forest takes more than a fifth of the municipal area, so the city is taken as the gateway to the Masurian lakes, the region's signature asset. The Gothic co-cathedral of St James stands in the old town, the University of Warmia and Mazury founded in 1999 is the largest school, and the Michelin tyre plant is the largest employer. Newcomers most often go wrong by picturing the lake district as somewhere out of town, when the city itself holds a dozen and more.",
+      "Olsztyn is the capital of Warmian-Masurian Voivodeship with about 165,400 residents as of January 2026, on the Łyna; Polish local government has three tiers, voivodeship, county and commune, and the capital holds both the regional government and the regional assembly. It began as a watchtower in 1334 and received municipal rights in 1353 from the cathedral chapter of the Bishopric of Warmia — this country was long governed in the Middle Ages by the bishopric rather than by secular lords, which is why castle and church stand at the town's core. Copernicus lived in that castle as administrator of Warmia from 1516 to 1521 and directed the town's defence in 1520 and 1521. Its plainest feature is water and woodland: fifteen lakes lie inside the city boundary covering about 725 hectares and forest takes more than a fifth of the municipal area, so the city is taken as the gateway to the Masurian lakes, the region's signature asset. The Gothic co-cathedral of St James stands in the old town, the University of Warmia and Mazury founded in 1999 is the largest school, and the Michelin tyre plant is the largest employer. Newcomers most often go wrong by picturing the lake district as somewhere out of town, when the city itself holds a dozen and more.",
     layout:
       "The old town is built on high ground beside the Łyna River, with a Gothic brick castle at its centre — one of the castles Copernicus himself once administered.",
     gettingAround:
-      "Olsztyn-Mazury Airport is about 58 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable; exploring the lake district requires a car or a tour. The climate is temperate continental.",
+      "Olsztyn-Mazury Airport is about 58 km by road from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable; exploring the lake district requires a car or a tour. The climate is temperate continental.",
     culture:
       "The official language is Polish. Olsztyn and the surrounding region have historically blended multiple cultural traditions, with Prussian, Polish and Lithuanian influences interwoven. Restaurant bills usually do not include a service charge; a tip of about 10%, or rounding up, is customary — if a service charge is itemised on the bill there is no need to add more.",
     seeAndDo:
@@ -243,5 +247,41 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The Branicki Palace and its Baroque gardens; the Zamenhof memorial centre. Day trips to Białowieża National Park (a World Heritage Site, home to the European bison) or birdwatching at Biebrza National Park nearby.",
     whenAndTips:
       "May–September is the most pleasant season and also the best time for birdwatching and exploring the primeval forest; Białowieża Forest is about a 1.5-hour drive from the city — plan at least a full day specifically to visit.",
+  },
+
+  lodz: {
+    // 全七段 sources: 同中文侧（GUS area and population yearbook 2026, Table 20, tier 1; Sejm ISAP on direct mayoral elections, tier 1; UML Łódź on the 1821 settlement and 36 osiedla, tier 1; WUOZ Łódź on the 2015 Historic Monument decree, tier 1; Cities of Film / culture.pl, tier 2; manufaktura.com and lodz.travel, tier 1; timetable aggregator, tier 3; UOKiK, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Łódź is the capital of Łódź Voivodeship in central Poland, with a population of about 640,000 at the end of 2025 (GUS), fourth among Polish cities by population in the same statistical table. It is a textile-industry city built to a plan in the 19th century: \"Łódź – multicultural landscape of an industrial city\" was declared a Monument of History in 2015, and in 2017 Łódź joined the UNESCO Creative Cities Network as a City of Film.",
+    howItWorks:
+      "Łódź's mayor is directly elected by residents, serving five-year terms alongside the city council; Łódź is a city with county rights and the capital of Łódź Voivodeship. The city's five traditional districts stopped being administrative units in 1993, though their names are still in everyday use, and since 2000 the city has been divided into 36 neighbourhood units, each with its own council, as auxiliary bodies. The city's backbone is a single north–south street: in 1821 Łódź was designated an industrial settlement and a new town was laid out along Piotrkowska Street, its octagonal New Market becoming today's Plac Wolności; industrialists then built their factories, workers' housing and their own palaces side by side, and the complexes of Poznański, Scheibler and others remain the city's landmarks. After the textile industry declined in the late 20th century, the mills were turned into shopping centres, museums and cultural venues — Poznański's cotton mill became Manufaktura in 2006, and the city's first power station became EC1. The mistake newcomers most often make is to look for a medieval old town square, which Łódź does not have; its main street is an avenue about 4.2 km long, and its landmarks are factories.",
+    layout:
+      "Plac Wolności is at the northern end of Piotrkowska Street, which runs south from here; Poznański Palace is a short way north-west of the square, and Manufaktura lies less than 1 km west of it. Łódź Fabryczna station and EC1 are south-east of the square, about 1.3–1.4 km away in a straight line, and Księży Młyn is further south-east, about 3 km from the square in a straight line.",
+    gettingAround:
+      "Łódź Władysław Reymont Airport is about 7 km from the centre in a straight line and has scheduled flights; more international flights are available via Warsaw. Trains from Warsaw to Łódź Fabryczna take between about an hour and an hour and a half. Trams and buses are the main way around the city, and Piotrkowska Street is best on foot. The climate is temperate continental, with cold winters.",
+    culture:
+      "The official language is Polish. Łódź has close ties to film, and the pavement of Piotrkowska Street has a Walk of Fame for film. Restaurant bills usually do not include a service charge, and it is customary to round up or tip around 10%; if a restaurant does add a service charge, it must tell you before you order.",
+    seeAndDo:
+      "Piotrkowska Street and the OFF Piotrkowska courtyard; Manufaktura, including its factory museum and the ms² modern art gallery; Poznański Palace (Museum of the City of Łódź); the Księży Młyn industrial housing complex; and the science and technology centre and planetarium at EC1.",
+    whenAndTips:
+      "May–September is the time for outdoor tables on Piotrkowska Street; winters are cold. The industrial heritage is spread across the city, and Księży Młyn is about 3 km from Plac Wolności in a straight line, so allow time for getting between sites.",
+  },
+
+  lublin: {
+    // 全七段 sources: 同中文侧（GUS area and population yearbook 2026, Table 20, tier 1; Sejm ISAP, tier 1; lublin.eu / BIP on the council and 27 districts, tier 1; National Heritage Board zabytek.pl, tier 1; PKP Intercity 2025/2026 timetable release, tier 1; UOKiK, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，正文全部 ok；注释里主教座堂年份改为两说）。
+    identity:
+      "Lublin is the capital of Lublin Voivodeship in eastern Poland, with a population of about 327,000 at the end of 2025 (GUS). It received its town charter in 1317, and in 1569 Poland and Lithuania signed the Union of Lublin at its castle; Lublin's historic architectural and urban complex was declared a Monument of History in 2007.",
+    howItWorks:
+      "Lublin's mayor is directly elected by residents, serving five-year terms alongside the 31-member city council; the city's 27 districts are auxiliary units, each set up over the years on residents' initiative and each with its own district council, not separate governments. The old town and the castle stand on two neighbouring hills: in the middle of the old town's market square is the former Crown Tribunal, which from 1578 housed the highest court of appeal for the nobility of the kingdom; the castle is on the hill north-east of the old town, its present look the result of a neo-Gothic rebuilding in 1823–1826, and inside, the Holy Trinity Chapel preserves Byzantine–Ruthenian-style frescoes completed in 1418. From the 16th century the city spread beyond its walls along Krakowskie Przedmieście, west of the Kraków Gate, which is still the main shopping street. The mistake newcomers most often make is to treat the old town as the whole city centre, when the main street is outside the Kraków Gate and the railway station is nearly 2 km south of the old town; many also assume each of the 27 districts has its own government.",
+    layout:
+      "The market square and the former Crown Tribunal are the centre of the old town; the Kraków Gate is west of the square, with Krakowskie Przedmieście beyond it; the cathedral is a short way south of the square; and the castle is on a separate hill less than 400 m north-east of the square. Lublin Główny station is about 1.8 km south of the old town in a straight line, and the open-air village museum is on the west side of the city, about 4.5 km from the old town in a straight line.",
+    gettingAround:
+      "Lublin Airport is about 10 km from the old town in a straight line and has scheduled flights. Between Warsaw and Lublin the PKP Intercity 2025/2026 timetable has 16 pairs of trains a day, taking about two hours (as of 2026). The old town and castle are walkable, and buses serve the station and the open-air museum. The climate is temperate continental, with cold winters.",
+    culture:
+      "The official language is Polish. Lublin has several universities. Restaurant bills usually do not include a service charge, and it is customary to round up or tip around 10%; if a restaurant does add a service charge, it must tell you before you order.",
+    seeAndDo:
+      "The market square and the Kraków Gate; Lublin Castle and the frescoes of the Holy Trinity Chapel (part of the National Museum in Lublin); the cathedral; the underground cellar route beneath the old town; and the Museum of the Lublin Village.",
+    whenAndTips:
+      "May–September is pleasant, and winters are cold. The old town and castle sit on two hills with slopes and steps between them, so wear comfortable shoes.",
   },
 };
