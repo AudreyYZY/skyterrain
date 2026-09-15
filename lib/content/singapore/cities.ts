@@ -1,0 +1,34 @@
+import type { CityEntry } from "@/lib/places-registry";
+
+export const CITIES: CityEntry[] = [
+  {
+    id: "singapore-city", nameZh: "新加坡市区", nameEn: "Singapore", country: "singapore", tier: "capital", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.8607, lat: 1.2836,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "新加坡市中心（滨海湾）1.2836,103.8607；樟宜机场（距市区约20km）：公开资料",
+  },
+  {
+    id: "sentosa", nameZh: "圣淘沙", nameEn: "Sentosa", country: "singapore", tier: "notable", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.8303, lat: 1.2494,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "圣淘沙岛中心 1.2494,103.8303；本地无独立机场，经樟宜机场（距岛约30km）往返：公开资料",
+  },
+  {
+    id: "chinatown-singapore", nameZh: "牛车水", nameEn: "Chinatown", country: "singapore", tier: "notable", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.8442, lat: 1.2812,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "牛车水核心区 1.2812,103.8442；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
+  },
+  {
+    id: "kampong-glam", nameZh: "甘榜格南", nameEn: "Kampong Glam", country: "singapore", tier: "notable", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.8594, lat: 1.3021,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "甘榜格南核心区 1.3021,103.8594；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
+  },
+  {
+    id: "little-india-singapore", nameZh: "小印度", nameEn: "Little India", country: "singapore", tier: "notable", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.8496, lat: 1.3067,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "小印度核心区 1.3067,103.8496；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
+  },
+];

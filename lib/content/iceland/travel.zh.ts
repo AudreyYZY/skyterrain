@@ -1,0 +1,190 @@
+import type { TravelGuide } from "@/lib/travel-lesson";
+
+export const TRAVEL_ZH: Record<string, TravelGuide> = {
+  "iceland-overview": {
+    // identity sources: Hagstofa Íslands《Mannfjöldinn 1. janúar 2025》：389,444 人。https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldinn-1-januar-2025/
+    //   核实日 2026-09-07，来源级别 1
+    identity:
+      "冰岛是北大西洋中的一个岛国，面积约 10 万平方公里，2025年1月1日人口约38.9万（冰岛统计局），是欧洲人口密度最低的国家，六成多住在首都地区。它正好骑在大西洋中脊上——北美板块和欧亚板块在这里分开——又坐落在一个地幔热点上，所以火山和地热极其活跃：全岛约三十座活火山系统，间歇泉、温泉、熔岩原随处可见。同时约一成面积被冰川覆盖，形成“冰与火”并存的景观。",
+    layout:
+      "冰岛中央是一片人无法定居的高地荒漠和冰川，居民和公路都集中在沿海一圈。1 号环岛公路（Ring Road）长约 1330 公里，串起绝大多数城镇和景点。西南是首都地区和地热带；南岸有瀑布、黑沙滩和冰川舌；东南是欧洲最大的冰川瓦特纳冰原和冰河湖；东部和北部是峡湾和农牧区；西北的“西部峡湾”最偏远。",
+    gettingAround:
+      "国际航班几乎都到凯夫拉维克机场（KEF，在雷克雅未克西南约 50 公里）。岛内城镇之间主要靠自驾（环岛公路铺装好，内陆“F 公路”是碎石、需四驱且夏季才开）；也有少量国内航班连接雷克雅未克与北部、东部和西部峡湾。公共巴士有限。冬季路面结冰、大风，务必查路况和天气预报。自来水可直饮、水质极好。电压 230V、欧标两圆脚插头。",
+    culture:
+      "官方语言是冰岛语，几乎人人英语流利。社会平等意识强、治安好、对自然保护很认真。冰岛人沿用“父名制”：姓氏是父名加 -son / -dóttir，所以电话簿按名字排。泡温泉是国民习惯，进泳池前必须先不穿泳衣彻底淋浴（有明确规定）。不给小费也完全没问题。物价很高。",
+    seeAndDo:
+      "黄金圈（辛格维利尔国家公园的裂谷、盖歇尔间歇泉、黄金瀑布）；南岸的塞里雅兰瀑布、斯科加瀑布、黑沙滩、冰河湖和钻石沙滩；斯奈山半岛；北部的米湖地热区、黛提瀑布、胡萨维克观鲸；蓝湖等地热温泉。冬季看极光（9–3 月），夏季有午夜阳光。近年雷克雅内斯半岛有多次火山喷发，可远观但须听官方指引。",
+    whenAndTips:
+      "6–8 月白昼最长、内陆道路开放、最适合环岛；9–3 月是极光季但白天短、天气差、部分路封闭。天气一天多变，衣物分层、带防风防水外套。自驾注意大风开关车门、碎石路、单车道桥、羊上路。火山和地热区严格走步道、听 IMO（冰岛气象局）和当地公告。多数国家公民入境冰岛（申根区）短期旅游免签或按申根规定办理。",
+  },
+
+  reykjavik: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   雷克雅未克市镇 139,804（2026-01-01，占全国 394,324 的 35.5%），Hagstofa Íslands 官方稿，级别 1。
+    //   https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldi-1-januar-2026/
+    //   ⚠️ **首都区的合计总人口本轮没能核到一个自洽的官方数**：不同发布给出 244,536（2025-01-01）/ 约 247,000（推算）/ 251,900（正文旧值）/ 264,056（2026 Q1 估计）四个互相矛盾的数字，正文因此只写占比、不改总数，另开 issue，下一轮直接从 Hagstofa PxWeb 表 MAN02005 把 7 个市镇加总。
+    identity:
+      "雷克雅未克是冰岛首都，也是世界上最靠北的主权国家首都，2026 年初市镇人口约 14 万，连同首都区其余市镇约占全国六成三。名字在古诺尔斯语里意为“冒烟的湾”——最早的定居者看到地热蒸汽而得名。城市小而低矮，靠地热供暖，几乎没有工业烟囱。",
+    // howItWorks sources: 首都区 251,912 / 全国 394,324（2026-01-01，Hagstofa MAN02005，1 级）。核实 2026-09-12
+    howItWorks:
+      "雷克雅未克是冰岛的首都，也是一个市镇，由 23 名议员的市议会治理，市长由市议会任命而非民选；2026 年人口约 14 万，占全国的三分之一强，而包括科帕沃于尔、哈夫纳夫约杜尔、加尔扎拜尔等 7 个市镇的首都区 2026 年初约 25.2 万人（冰岛统计局），占全国的 64%，这些邻市各有自己的市议会。市下分 10 个片区。老城在半岛的顶端：劳加维古尔街是主商业街，议会大厦在奥斯特沃德勒广场，哈尔格林姆教堂在山顶，旧港在北面；劳加达勒是体育与温泉泳池的所在。地址写“街道、门牌、邮编”，邮编 101 至 113 是身份的标签——“101 雷克雅未克”指的是市中心那种生活。冰岛没有铁路，公交只有 Strætó 的巴士，汽车是日常；全城以地热集中供暖。凯夫拉维克国际机场在西南约 50 公里。初来的人最容易犯的错，是把雷克雅未克市当作整个首都区，而首都区一半以上的人住在邻近的市镇里。",
+    layout:
+      "雷克雅未克建在一个半岛上，三面临海，背后能看到埃斯亚山和远处的雪峰。老城和港口在半岛北端，主街劳加维格是购物和餐饮街；地标性的哈尔格林姆教堂立在城中一处高地上，塔顶能俯瞰彩色屋顶。城市向东南方摊开成郊区。",
+    gettingAround:
+      "国际航班到凯夫拉维克机场（KEF），有 Flybus / Airport Direct 等大巴约 45 分钟到市区（没有火车）。市内有公交（Strætó），但市中心紧凑、步行即可。很多人到雷克雅未克后租车环岛。属温带海洋性气候，受洋流调节：冬季不算极冷（常在 0°C 上下）但多风多雨雪、白天很短；夏季凉爽、白昼极长。",
+    culture:
+      "冰岛语为主，英语普及。城市文化在音乐（多位国际知名音乐人来自这里）、文学（人均出版量很高）和设计上很活跃。泡公共温水泳池是社交方式，进池前必须裸身淋浴。餐厅不强制小费。物价高，外食和酒尤其贵。",
+    seeAndDo:
+      "哈尔格林姆教堂登塔；港边的“太阳航行者”雕塑和哈帕音乐厅；国家博物馆、冰岛 871±2 定居展览；劳加维格逛街；托宁湖和市政厅；老港出海观鲸或看海鹦；市区的地热海滩和泳池。以此为起点走黄金圈、南岸，或看雷克雅内斯半岛的火山活动。",
+    whenAndTips:
+      "6–8 月白昼长、天气最好但游客最多、住宿贵；9–3 月可能在城市边缘就看到极光。全年多变多风，带防水外套。城市很小，多数景点步行可达，不必急着租车——环岛再租。市中心停车收费且位少。",
+  },
+
+  keflavik: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   雷克雅内斯拜尔市镇 24,557（2026-07-01，国家登记处 Þjóðskrá 数据，经地方媒体转述，2 级）；凯夫拉维克 + 纳尔兹维克城镇聚落 22,377（2025，Hagstofa，级别 1）。
+    //   https://www.vf.is/frettir/ibuathroun-a-sudurnesjum-haegir-a-vexti-og-faekkun-i-reykjanesbae
+    //   https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldi-eftir-byggdakjornum-og-thettbylisstodum-2025/
+    //   **这条是「市镇 vs 城镇聚落」混用的典型**：同一个地名在冰岛有两个官方数，差 2000 多人，不写明是哪一档就没法核。
+    identity:
+      "凯夫拉维克是雷克雅内斯半岛上的一座港口小镇，与邻镇合并后正式名为“雷克雅内斯拜尔”，作为市镇，2026 年年中人口约 2.5 万，其中凯夫拉维克与纳尔兹维克两镇的城镇人口 2025 年合计约 2.2 万。冰岛的国际机场就在旁边，多数游客抵离冰岛都经过这里。半岛本身几乎全是熔岩原和地热区，2021 年以来附近多次火山喷发。",
+    // howItWorks sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   同 identity 注释。原文停在 2018 年的 15,930，落后四期以上。
+    //   https://www.vf.is/frettir/ibuathroun-a-sudurnesjum-haegir-a-vexti-og-faekkun-i-reykjanesbae
+    //   https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldi-eftir-byggdakjornum-og-thettbylisstodum-2025/
+    howItWorks:
+      "凯夫拉维克是冰岛西南雷恰角半岛上的城镇，1990 年代中期它与纳尔兹维克、哈布尼尔合并成雷恰内斯拜市镇，凯夫拉维克与纳尔兹维克两镇的城镇人口 2025 年合计约 2.2 万，整个市镇 2026 年年中约 2.5 万；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名意为“浮木湾”，16 世纪起这里因渔业与鱼加工成镇，四周是玄武岩碎石与苔藓的荒野。二战期间美军在镇旁修建机场，冷战时期凯夫拉维克海军航空站是监视北方海域的重要基地，2006 年美军撤离，营区改作民用与住宅。凯夫拉维克国际机场就在镇边，是冰岛的国际门户，几乎所有进出冰岛的航班都在这里起降，雷克雅未克在东北约 50 公里。1960、70 年代这里出了许多乐手，本地因此有“披头士镇”的绰号。初来的人最容易犯的错，是把机场当作雷克雅未克的一部分，而它在另一个市镇，进城还要坐将近一小时的车。",
+    layout:
+      "凯夫拉维克在半岛西侧海边，机场在镇西南。整个雷克雅内斯半岛是一片年轻的黑色熔岩台地，几乎没有树，地表冒着地热蒸汽；著名的蓝湖（Blue Lagoon）在半岛中部，是地热发电站排出的富矿物温水形成的。半岛南岸有海崖、灯塔和大陆桥（横跨美洲-欧亚板块裂缝的小桥）。",
+    gettingAround:
+      "从机场到雷克雅未克有大巴约 45 分钟。很多人在这里租车开始环岛。镇内步行即可。属温带海洋性气候，半岛地形开阔、风特别大。近年火山活动集中在半岛东部（格林达维克一带），道路可能临时封闭。",
+    culture:
+      "冰岛语为主，英语普及。这里过去有一处美军基地（2006 年撤离），留下一些相关痕迹和一座航空博物馆。镇子安静、以渔业和机场相关产业为主。餐厅不强制小费。",
+    seeAndDo:
+      "蓝湖地热温泉（需提前网上订票）；雷克雅内斯地质公园：格纳胡佛冒泡的泥塘和喷气孔、格丽尔湖、大陆桥、瓦拉赫努克海崖和灯塔；克莱瓦湖；如有安全开放的喷发观景点，按官方指引远观。机场附近的“巨魔”雕塑和维京世界博物馆。",
+    whenAndTips:
+      "作为抵离冰岛的第一站/最后一站很方便，蓝湖常被安排在落地或离境当天。半岛风极大，开关车门小心。火山活动期间以 IMO（冰岛气象局）和民防部门的公告为准，切勿进入封闭区或自行接近熔岩。",
+  },
+
+  vik: {
+    identity:
+      "维克（全名 Vík í Mýrdal）是冰岛最南端的小镇，人口只有几百人，却因为正好在环岛公路上、周围景点密集而成为南岸重要的旅游据点。小镇夹在黑色的海崖、绿色的苔藓山和北面米尔达斯冰盖之间，冰盖下压着卡特拉火山。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vík í Mýrdal (Iceland; village in Mýrdalshreppur municipality with about 750 inhabitants as of 2021, the southernmost village in Iceland, on the Ring Road about 180 km south-east of Reykjavík; the largest settlement for some 70 km around and the service centre for the coast between Skógar and Mýrdalssandur; the black sand beach named among the ten most beautiful beaches on earth by Islands Magazine in 1991, with the Reynisdrangar sea stacks offshore; the wettest coastal town in Iceland with about 2,250 mm of rain a year; the Katla volcano, which last erupted in 1918, with an evacuation plan giving residents little time to reach the hilltop church)
+    howItWorks:
+      "维克是冰岛南岸的村子，属米尔达尔市镇，2021 年人口约 750，是冰岛最南端的聚落；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。它的作用是服务：从斯科加尔到米尔达尔沙原约 70 公里的海岸线上，只有这里有加油站、超市与旅馆，因此环岛公路上的人几乎都在此停一次。黑沙滩与海面上的雷尼斯德朗格岩柱是它最出名的景观，1991 年一家美国杂志把这片沙滩列入全球最美十大海滩；但这里的浪有突然涌上岸的“暗涌”，海边立有警示，每年都有人被卷走。它是冰岛沿海降水最多的地方，年降水约 2,250 毫米。村子北面的卡特拉火山压在米尔达尔冰盖之下，1918 年最后一次喷发，一旦喷发冰盖融水会在很短时间内冲下来，山坡上的教堂是全村的疏散集合点。初来的人最容易犯的错，是在黑沙滩背对海拍照，而那正是被浪卷走的方式。",
+    layout:
+      "维克沿一条主路展开，山坡上的白色小教堂是地标和洪水时的避难点。镇子东西两侧都是黑沙滩：西边是著名的雷尼斯黑沙滩，有柱状玄武岩崖和海蚀柱；镇子正南的海滩一直延伸向东。北面翻过山口是米尔达斯冰盖和索尔黑马冰川舌。",
+    gettingAround:
+      "维克没有定期航班的机场，也没有火车，环岛公路穿镇而过，自驾或坐旅游巴士到达。镇内步行即可，去周边景点需要车。属温带海洋性气候，是冰岛降水最多的地方之一，多雾多风。冬季路面结冰、大风，南岸公路偶尔因风封闭。",
+    culture:
+      "冰岛语为主，旅游业发达，餐饮住宿以服务过路游客为主。小镇资源有限，旺季住宿和餐位紧张。餐厅不强制小费。",
+    seeAndDo:
+      "雷尼斯黑沙滩和柱状玄武岩（浪极其危险，务必远离水线、不要背对海）；迪尔霍拉埃的海蚀拱和灯塔；山上的小教堂看全景；往西的斯科加瀑布、塞里雅兰瀑布、索尔黑马冰川（跟向导徒步）；往东的费亚德拉尔峡谷、往冰河湖方向。",
+    whenAndTips:
+      "全年可来，6–9 月天气相对好、白天长。雷尼斯沙滩的“疯狗浪”每年都有游客被卷走，看到警示牌一定当真、离水线远、盯着海。冬季自驾查 road.is 和 vedur.is（路况、天气、极光预报）。镇小、旺季务必提前订住宿。",
+  },
+
+  hofn: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   赫本镇（byggðakjarni）1,802（2025）；霍尔纳峡湾市镇（sveitarfélag）2,589（2025）—— **两档不要混用**。2026-09-09 核。
+    //   瓦特纳冰原：按**体积**是欧洲最大的冰帽（与瓦特纳冰原国家公园管理局自身表述一致），按**面积**次于俄罗斯新地岛北岛冰帽。原文「欧洲最大的冰川」不带口径。
+    //   https://en.wikipedia.org/wiki/Vatnaj%C3%B6kull
+    //   **跨系统的不一致**：同一个事实在地形条目 vatnajokull 里带了「按体积算」的限定，在这个城市条目里没带 —— 两套内容各写各的，修一处要顺手搜另一套。
+    identity:
+      "赫本（全名 Höfn í Hornafirði，“赫本”在冰岛语里就是“港口”）是冰岛东南部的渔港小镇，2025 年镇上人口约 1,800，坐落在一处潟湖口的沙嘴上，背后是瓦特纳冰原——按体积算是欧洲最大的冰帽，及其一条条从山间伸下来的冰川舌。这里以龙虾（langoustine）出名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Höfn (Iceland; town in Hornafjörður municipality in the south-east with 1,802 residents in 2025, on a peninsula surrounded by sea on three sides; the name means harbour; founded in 1897 by the merchant Ottó Tuliníus, who moved a trading post from Papós, with growth after the Hornafjarðarbrú bridge of 1961; fishing, particularly langoustine and saltfish, and tourism around Vatnajökull, Europe's largest ice cap by volume, and the nearby glaciers; the annual lobster festival in early July; on the Ring Road about 455 km from Reykjavík, the Almannaskarðsgöng tunnel of 2005 improving winter access; a regional airport with flights to Reykjavík)
+    howItWorks:
+      "赫本是冰岛东南部霍尔纳峡湾市镇的城镇，2025 年人口约 1,800；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名就是“港”的意思，镇子建在一处三面环海的小半岛上。它 1897 年由商人奥托·图利尼乌斯创立，把原在帕波斯的贸易点迁到这里，1961 年霍尔纳峡湾大桥通车后才真正长起来。渔业是老本行，尤以海螯虾与咸鳕鱼闻名，每年七月初办海螯虾节。它的另一半生计来自身后的冰：瓦特纳冰原是欧洲体积最大的冰盖，就压在镇北的山上，杰古沙龙冰河湖在西面约 80 公里，冰川旅游把这座小镇变成了东南岸的落脚点。环岛公路从这里经过，雷克雅未克在西面约 455 公里；2005 年通车的阿尔曼纳斯卡兹隧道改善了冬季通行，另有支线机场飞雷克雅未克。初来的人最容易犯的错，是以为冰河湖在镇边，而那是一小时以上的车程。",
+    layout:
+      "赫本在一条低平的沙嘴末端，三面环水，天气好时从镇上就能望见瓦特纳冰原白色的边缘和几座冰帽下的高峰（包括冰岛最高点华纳达尔斯赫努克）。环岛公路从镇北经过；镇和冰川之间是一片冰水冲积平原和潟湖。",
+    gettingAround:
+      "赫本有一座小机场（HFN），有少量航班往返雷克雅未克；多数人自驾走环岛公路到达（雷克雅未克约 6 小时、维克约 2.5 小时）。镇内步行即可，看冰川需要车或跟团。属温带海洋性气候，多风，冰原会造出自己的局部天气。",
+    culture:
+      "冰岛语为主，小镇以渔业和旅游业为生。每年夏末有“龙虾节”。餐厅不强制小费。这里是冰岛日照较多的角落之一，但天气仍多变。",
+    seeAndDo:
+      "以赫本为基地去杰古沙龙冰河湖和“钻石沙滩”（浮冰冲上黑沙滩）、菲亚德尔冰河湖；瓦特纳冰川国家公园的冰川徒步和蓝冰洞（冬季，跟持证向导）；斯卡夫塔山的徒步和玄武岩瀑布；镇上的港口和潟湖散步、尝龙虾。",
+    whenAndTips:
+      "5–9 月最适合环岛与冰川徒步；蓝冰洞是 11–3 月的项目。冰川活动（冰洞、冰川行走）务必跟持证向导，不要自行上冰。冰河湖的浮冰和潮汐有危险，别站到冰上或太靠近水边。冬季东南段公路遇大风会封。",
+  },
+
+  egilsstadir: {
+    // identity sources: 人口：**城镇聚落（byggðakjarni）口径**，不是市镇（Múlaþing）—— 这两档在冰岛差别很大，本库已因混用出过错。冰岛统计局 PxWeb MAN030101 代码 902：2025-01-01 = 2,711（正式发布 2025-10-07）；2026-01-01 数据库初步值 2,719，年度新闻稿未发。原文 2,632 与官方任一年都对不上。按城镇聚落发布的新闻稿通常在同年 10 月初，下一期预计 2026 年 10 月。
+    identity:
+      "埃伊尔斯塔济是冰岛东部最大的城镇，城镇聚落人口2,711人（2025年1月1日，冰岛统计局），是东部峡湾地区的交通、服务和行政中心。它坐落在按面积计冰岛第三大湖——拉加尔湖（Lagarfljót）畔，湖细长，据当地民间传说里住着一条“湖怪”。周围是冰岛少见的大片林地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Egilsstaðir (Iceland; town in east Iceland on the banks of the Lagarfljót, 2,632 residents in 2024, the largest settlement in the eastern region; formally established only in 1947, though the farmer Jón Bergsson had begun developing the site earlier in the 20th century; growth during the 2004–2008 hydropower and aluminium boom; a crossroads where the main regional routes meet, the area's transport, service and administrative centre, with airport, gymnasium and health clinic; Hallormsstaðaskógur, the biggest forest in Iceland, plus Hengifoss and Skriðuklaustur nearby; subarctic climate with mild summers, a record 29.8 °C in August 2025)
+    howItWorks:
+      "埃伊尔斯塔济是冰岛东部最大的城镇，2024 年人口 2,632，在拉加尔湖流出的河边；冰岛只有国家与市镇两级，本镇属于 2020 年合并成立的穆拉辛市镇，市镇管学校、规划与地方服务，医疗与警察归国家。这是一座很年轻的城镇：1947 年才正式建镇，在此之前只有一处农场，20 世纪初农场主约恩·贝格松开始在此建设，2004 至 2008 年间东部的水电与铝厂工程带来了一轮扩张。它的位置解释了它的存在——东部几条主要公路在这里交汇，因此机场、医院门诊、中学与政府机构都设在此地，周边峡湾的居民办事都要进城。冰岛最大的森林哈德洛尔姆斯塔泽尔就在湖的南岸，亨吉瀑布与斯克里祖克劳斯图尔庄园在附近。翻过山口是塞济斯菲厄泽，开往丹麦与法罗群岛的渡轮从那里出发。初来的人最容易犯的错，是来找一座老镇，而这座城镇比多数居民的年纪还小。",
+    layout:
+      "埃伊尔斯塔济在东部内陆的一处河谷平地上，拉加尔湖从镇边向西南延伸。环岛公路经过这里，往东翻山约 25 分钟到峡湾港口城镇塞济斯菲厄泽（Seyðisfjörður，以彩虹街和渡轮码头出名）。镇子本身不大、以实用为主。",
+    gettingAround:
+      "埃伊尔斯塔济机场（EGS）有航班往返雷克雅未克（约 1 小时），也有少量到阿克雷里的支线。多数人自驾走环岛公路。去周边峡湾和瀑布需要车。属较偏大陆性的气候：比沿海干、夏季更暖、冬季更冷。",
+    culture:
+      "冰岛语为主。东部是冰岛人口最稀、感觉最“边远”的地区之一，节奏慢。塞济斯菲厄泽有活跃的艺术社区和一年一度的音乐节。餐厅不强制小费。",
+    seeAndDo:
+      "亨吉瀑布（Hengifoss，冰岛落差较大的瀑布之一，岩壁有红色条纹）；拉加尔湖环湖、哈尔姆斯塔济林地；翻山去塞济斯菲厄泽看彩虹街和峡湾；往北去黛提瀑布和米湖（车程约 2 小时）；东部峡湾自驾看渔村和海鸟。",
+    whenAndTips:
+      "6–9 月最适合，山口无雪、林地最绿。去塞济斯菲厄泽的 93 号公路冬季常有雪、雾，出发查路况。东部景点之间车程长、加油站少，随时留意油量。",
+  },
+
+  akureyri: {
+    // identity sources: **冰岛的官方人口口径**（冰岛统计局 Hagstofa Íslands，2026-09-09 核）：sveitarfélag（市镇）/ byggðakjarni · þéttbýlisstaður（城镇聚落）/ höfuðborgarsvæðið（首都区，7 个市镇的官方统计分组）。基准日为每年 1 月 1 日，1 月上旬由国家登记处（Þjóðskrá）先发市镇级快报、Hagstofa 随后发正式稿，另按季度更新。
+    //   阿克雷里市镇 20,284（2026-01-01，Hagstofa，级别 1 交叉确认）。
+    //   埃亚峡湾：通行表述是「冰岛最长的峡湾**之一**」（约 60 公里），**查不到支持绝对「最长」的权威来源**，已降级。2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Eyjafj%C3%B6r%C3%B0ur
+    identity:
+      "阿克雷里是冰岛北部最大的城市，2026 年初人口约 2 万，被称为“北方之都”，坐落在冰岛最长的峡湾之一——埃亚峡湾（Eyjafjörður）深处，三面环山。虽然离北极圈只有约 100 公里，但因为在长峡湾尽头、受海洋调节，气候比想象中温和，还能种出成片的树。",
+    // howItWorks sources: Wikipedia (2026-09): Akureyri (municipality Akureyrarbær; 11-member council appoints mayor; 20,284 2026; largest outside Capital Region; university 1987; hospital; airport; Hrísey and Grímsey in municipality; Ring Road ~390 km)
+    howItWorks:
+      "阿克雷里是冰岛首都区之外最大的城镇，2026 年人口约 2 万，被称为“北冰岛的首都”：市镇由 11 名议员的镇议会治理，镇长由议会任命。它有全国两家主要医院之一、1987 年创办的阿克雷里大学、有雷克雅未克航班的机场与夏季停靠邮轮的不冻港，是整个北部的服务中心。城镇沿埃亚峡湾的西岸展开：哈夫纳街是市中心的主街，阿克雷里教堂的台阶是坐标原点，植物园是世界上最靠北的之一，赫利扎山滑雪场在城西的山上。赫里塞岛与北极圈上的格里姆塞岛也属于这个市镇。环岛公路到雷克雅未克约 390 公里，冬天常因风雪封闭，飞机 45 分钟。地址写“街道、门牌、邮编”，邮编 600 开头。红灯是心形的，是这座城的小标志。初来的人最容易犯的错，是把阿克雷里当作一座小镇，而它是北冰岛的行政、医疗与教育中心。",
+    layout:
+      "阿克雷里沿峡湾西岸的山坡而建，市中心和港口在低处，住宅区往山上延伸。峡湾对岸和尽头是雪山。城市有冰岛最北的植物园。往南沿峡湾和山谷是农牧区，往东翻山通向米湖地区。",
+    gettingAround:
+      "阿克雷里机场（AEY）在城南，有多班航班往返雷克雅未克（约 45 分钟），也有少量国际航班和到冰岛其它城镇的支线。多数人自驾走环岛公路（雷克雅未克约 5 小时）。市内步行 + 公交。属温带海洋性气候，比南部干、冬季雪多、是冰岛的滑雪中心之一。",
+    culture:
+      "冰岛语为主，英语普及。阿克雷里人对“北方之都”的身份很有认同，城市有剧院、大学和活跃的音乐现场。红色的心形红绿灯是本地的小标志。餐厅不强制小费。",
+    seeAndDo:
+      "山坡上的阿克雷里教堂、植物园、老城木屋；峡湾出海观鲸（座头鲸、小须鲸）；往东一小时到米湖地热区、上帝瀑布（Goðafoss）、黛提瀑布；冬季在 Hlíðarfjall 滑雪；夏季往南到 Ásbyrgi 马蹄峡谷和钻石环线。",
+    whenAndTips:
+      "6–9 月最适合，白昼极长。冬季雪大但城市生活照常，是滑雪和看极光的好地方，山口开车要冬胎、查路况。观鲸阿克雷里和胡萨维克都可以，胡萨维克成功率更高。",
+  },
+
+  husavik: {
+    // identity sources: 「欧洲观鲸之都」经查证是当地旅游业的自我宣传口号（多家站点均写「bills itself as」），无官方或独立评选出处，已降级为「当地常自称」。3 级，2026-09-09 核。
+    //   https://visitorsguide.is/husavik-the-whale-watching-capital-of-europe/
+    //   人口 2,300–2,500 的区间表述本轮未找到更精确的单一官方数，保留区间。
+    identity:
+      "胡萨维克是冰岛北部一座渔港小镇，人口约 2300 人，以观鲸闻名、当地常自称“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Húsavík (Iceland; town in Norðurþing municipality on the north coast with about 2,300–2,500 residents, on Skjálfandi bay; a centre of whale watching in Iceland because whales of several species enter the bay; the wooden church Húsavíkurkirkja of 1907 the chief landmark; the Húsavík Whale Museum, the Exploration Museum and a Eurovision museum opened in 2021; recorded as the first place in Iceland settled by a Norseman, the Swedish Viking Garðar Svavarsson wintering here around 870; the 2020 film Eurovision Song Contest: The Story of Fire Saga set here, its title song Oscar-nominated; Akureyri within an hour via the Vaðlaheiðargöng tunnel of 2019; flights ended in 2024)
+    howItWorks:
+      "胡萨维克是冰岛北岸的城镇，属北辛市镇，人口约 2,300 至 2,500；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子面朝斯乔尔万迪湾，几种鲸每年夏天进湾觅食，因此这里成了冰岛观鲸的中心——出海的船从港口发出，鲸鱼博物馆就在码头边，本地经济由此从渔业转向了旅游。1907 年建成的木造教堂立在坡上，是全镇的标志。按记载，这里是冰岛最早被北欧人过冬居住的地方：约公元 870 年瑞典人加尔达尔·斯瓦瓦尔松在此越冬。2020 年一部以欧洲歌唱大赛为题材的电影把故事放在这座镇上，主题曲获奥斯卡提名，之后镇里开了一间相关的小博物馆。2019 年瓦兹拉海济隧道通车后，到阿克雷里只要一小时；本地机场的定期航班 2024 年停飞。初来的人最容易犯的错，是把观鲸当作全年项目，而它按季节与天气开船。",
+    layout:
+      "胡萨维克在斯基亚尔万迪湾东岸，背靠低山，港口是全镇的中心，观鲸船就从这里出发。天气好时隔着海湾能看到远处的雪山。镇子很小，几条街就走完。",
+    gettingAround:
+      "胡萨维克有一座小机场（HZK），航班很少；多数人从阿克雷里开车约 1 小时到达，或走钻石环线自驾。镇内步行即可。属温带海洋性气候，比南部干、冬季冷，靠近北极圈但仍受海洋调节。",
+    culture:
+      "冰岛语为主，旅游旺季以观鲸和相关服务为主。镇上的地热海景泉池（GeoSea）很受欢迎。餐厅不强制小费。因为一部以胡萨维克为背景的电影，近年知名度上升。",
+    seeAndDo:
+      "出海观鲸（多家公司，有传统橡木船和快艇）；鲸鱼博物馆；木教堂；GeoSea 海崖温泉；往南到上帝瀑布、米湖、黛提瀑布、Ásbyrgi 峡谷（钻石环线一天可跑）。",
+    whenAndTips:
+      "观鲸旺季是 6–8 月，4 月和 9 月也可以但海况差些；带防风防水外套、船上冷。晕船的提前吃药。冬季航班和部分道路受限，多数人夏季来。",
+  },
+
+  isafjordur: {
+    // identity sources: 人口：城镇聚落（byggðakjarni）口径，冰岛统计局 MAN030101 代码 410 —— 2025-01-01 = 2,705（正式发布 2025-10-07）。⚠️ 原文的「2023 年 1 月约 2,744」**查不到出处**：官方同表 2023-01-01 是 2,653，用 þéttbýlisstaður 表交叉也是 2,653，所以不是口径差异而是数值本身有误。下一期预计 2026 年 10 月。
+    identity:
+      "伊萨菲厄泽是冰岛“西部峡湾”地区最大的城镇，城镇聚落人口2,705人（2025年1月1日，冰岛统计局）。西部峡湾是冰岛最古老、最偏远的一角，一片被无数深峡湾和陡峭平顶山切碎的半岛，公路少、隧道多、冬季常被大雪封住。伊萨菲厄泽是这里的中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ísafjörður (Iceland; the largest town in the Westfjords, in Ísafjarðarbær municipality, with about 2,744 residents in January 2023, on a sandy spit in Skutulsfjörður off Ísafjarðardjúp; settled in the 9th century according to the Landnámabók, a trading centre from the 1500s, granted municipal status in 1786; timber buildings surviving from the 1700s including Krambúð 1757, Faktorshús 1765, Tjöruhúsið 1781 and Turnhúsið 1784; the coolest area in Iceland at sea level with a tundra climate, high winds and few sunny days; fishing historically dominant, now also the University Centre of the Westfjords and a gateway to the Hornstrandir nature reserve; the Aldrei fór ég suður music festival)
+    howItWorks:
+      "伊萨菲厄泽是冰岛西部峡湾地区最大的城镇，2023 年 1 月人口约 2,744，属伊萨菲厄泽市镇；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子建在斯库图尔峡湾里一条伸进水面的沙嘴上，三面是几百米高的陡壁，只有一条窄路通往外面——这种地形决定了西部峡湾的一切：冬天雪崩与封路是常事，镇上因此修了防雪崩的导流堤，山下也打了隧道。按《定居之书》，9 世纪已有人在此定居；16 世纪起它是贸易点，1786 年获得城镇地位，港边还留着 18 世纪的几栋木屋，最早的建于 1757 年。这里是冰岛海平面上最冷的一片，属苔原气候，风大、晴天少。渔业曾是全部生计，如今西部峡湾大学中心也设在这里，霍恩斯特兰迪尔自然保护区从这里出发。初来的人最容易犯的错，是按公路里程安排行程，而冬天这条路随时可能关闭。",
+    layout:
+      "伊萨菲厄泽建在一条峡湾里伸出的一个 L 形沙嘴上，三面是几乎垂直升起的平顶山，只有一条路进出。老城有一片 18–19 世纪的木屋。周围峡湾里散布着更小的渔村和被废弃的村落。",
+    gettingAround:
+      "伊萨菲厄泽机场（IFJ）在峡湾里，进近以“难”著称、天气不好就取消，有航班往返雷克雅未克（约 40 分钟）。陆路走西部峡湾的盘山公路和隧道、路程很长（雷克雅未克约 5–6 小时）。属温带海洋性气候，雪最多、大风、山高谷深、天气极端多变。",
+    culture:
+      "冰岛语为主。西部峡湾人以坚韧和好客著称，社区小而紧密。伊萨菲厄泽有音乐学校和一年一度的滑雪/音乐节（复活节前后）。餐厅不强制小费。",
+    seeAndDo:
+      "老城木屋和西部峡湾遗产博物馆；坐船或开车去附近峡湾的小渔村；霍恩斯特兰迪自然保护区徒步（无人区，需坐船进、有向导）；拉特拉尔角海崖看海鹦（夏季，冰岛最西点）；丁坚地瀑布（Dynjandi）。冬季有山地滑雪。",
+    whenAndTips:
+      "6–9 月道路可靠、徒步季；其余时间大雪和雪崩风险高，山口可能封闭数日，行程要留大量弹性。飞机比开车省时但天气一差就取消，两手准备。看海鹦和进霍恩斯特兰迪只在夏季。",
+  },
+};

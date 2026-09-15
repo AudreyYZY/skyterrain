@@ -106,7 +106,7 @@ export default function ReadingPanel({
     }
 
     return (
-      <aside className="absolute right-0 top-0 bottom-0 z-30 w-full max-w-[420px] panel-slide-in">
+      <aside data-testid="route-panel" className="absolute right-0 top-12 bottom-0 z-30 w-full max-w-[420px] panel-slide-in">
         <div className="flex h-full flex-col border-l border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl">
           <div className="flex items-start justify-between gap-3 border-b border-[color:var(--hairline)] px-6 py-4">
             <div className="min-w-0">
@@ -114,7 +114,7 @@ export default function ReadingPanel({
                 {t("journey.routes", language)}
               </span>
               {flyoverName && (
-                <h2 className="editorial-title mt-1 text-[20px] leading-tight">
+                <h2 data-testid="flyover-name" className="editorial-title mt-1 text-[20px] leading-tight">
                   {flyoverName}
                 </h2>
               )}
@@ -138,6 +138,7 @@ export default function ReadingPanel({
                   return (
                     <span
                       key={i}
+                      data-testid={isActive ? "route-sentence-active" : "route-sentence"}
                       ref={isActive ? activeRef : undefined}
                       className={[
                         "transition-colors duration-500",
@@ -177,7 +178,7 @@ export default function ReadingPanel({
   // ---- Article state ----
   if (expanded) {
     return (
-      <aside className="absolute right-0 top-0 bottom-0 z-30 w-full max-w-[420px] panel-slide-in">
+      <aside data-testid="reading-article" className="absolute right-0 top-12 bottom-0 z-30 w-full max-w-[420px] panel-slide-in">
         <div className="flex h-full flex-col border-l border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl">
           {/* sticky header */}
           <div className="flex items-start justify-between gap-3 border-b border-[color:var(--hairline)] px-6 py-4">
@@ -188,7 +189,7 @@ export default function ReadingPanel({
                   {isPreparing ? t("panel.preparing", language) : t("panel.narrating", language)}
                 </span>
               )}
-              <h2 className="editorial-title truncate text-[22px] leading-tight">
+              <h2 data-testid="reading-title" className="editorial-title truncate text-[22px] leading-tight">
                 {terrain.name}
               </h2>
               {elevLabel && (
@@ -259,11 +260,11 @@ export default function ReadingPanel({
 
   // ---- Card state ----
   return (
-    <aside className="absolute right-3 top-12 z-30 max-h-[calc(100vh-6rem)] w-[320px] overflow-y-auto panel-slide-in reading-scroll">
+    <aside data-testid="reading-card" className="absolute right-3 top-12 z-30 max-h-[calc(100vh-6rem)] w-[320px] overflow-y-auto panel-slide-in reading-scroll">
       <div className="glass-panel rounded-2xl px-5 py-5">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
-            <h2 className="editorial-title text-[24px] leading-tight">{terrain.name}</h2>
+            <h2 data-testid="reading-title" className="editorial-title text-[24px] leading-tight">{terrain.name}</h2>
             {elevLabel && (
               <p className="mt-1 text-[11px] text-[color:var(--ink-faint)]">{elevLabel}</p>
             )}
@@ -279,7 +280,7 @@ export default function ReadingPanel({
         </div>
 
         {summary && (
-          <p className="reading-body mt-3 line-clamp-3 text-[0.95rem]">{summary}</p>
+          <p data-testid="reading-summary" className="reading-body mt-3 line-clamp-3 text-[0.95rem]">{summary}</p>
         )}
 
         <div className="mt-5 flex items-center gap-2">

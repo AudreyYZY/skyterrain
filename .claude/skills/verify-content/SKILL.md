@@ -30,8 +30,8 @@ description: 每批新增/改动地形、城市、航线之后，把这批内容
 grep '^lastVerifiedCommit:' docs/verification-ledger.md
 
 # 这之后动过的内容文件
-git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
-  lib/travel-content.*.ts lib/places-registry.ts lib/terrain-registry.ts data/routes/
+git diff --name-only <lastVerifiedCommit>..HEAD -- lib/content/ data/routes/
+# 2026-09-14 起正文按国家存放：lib/content/<country>/{registry,terrain.zh,terrain.en,cities,travel.zh,travel.en,pois,routes}.ts
 ```
 
 从 diff 里取出**具体条目 id**（不是文件名）：新增的条目全核；改动的条目只核改动的字段。
@@ -183,7 +183,7 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 npm run verify:apply -- <findings.json> --dry-run
 npm run verify:apply -- <findings.json>
 
-# 城市/国家概览的正文句子（lib/travel-content.{zh,en}.ts）
+# 城市/国家概览的正文句子（lib/content/<country>/travel.{zh,en}.ts）
 npm run verify:apply-text -- <findings.json> --dry-run
 npm run verify:apply-text -- <findings.json>
 ```
@@ -287,10 +287,10 @@ findings JSON 的形状：
 
 | 档 | `kind` | `key` | `verify:apply-text` 改哪个文件 |
 |---|---|---|---|
-| 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` | `lib/travel-content.{zh,en}.ts` |
-| 地形 | `terrain` | `terrain/<id>/<话题>` | `lib/terrain-content.{zh,en}.ts` |
+| 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` | `lib/content/<country>/travel.{zh,en}.ts` |
+| 地形 | `terrain` | `terrain/<id>/<话题>` | `lib/content/<country>/terrain.{zh,en}.ts` |
 | 航线的航班信息 | `routes` | `routes/<id>/flight` | `data/routes/*.json`（走 `verify:apply`，不是 apply-text） |
-| 航线的**解说文字** | `route` | `route/<id>/<话题>` | `lib/route-narration.ts`，`field` 是 `study` 或 `travel` |
+| 航线的**解说文字** | `route` | `route/<id>/<话题>` | `lib/content/<country>/routes.ts`（国际线在非中国一侧的国家），`field` 是 `study` 或 `travel` |
 
 ⚠️ **改了航线解说文字必须跑 `npm run gen:anchors`**，否则句数与
 `lib/route-anchors.data.ts` 对不上、`npm run check:anchors` 会报错

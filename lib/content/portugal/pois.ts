@@ -1,0 +1,115 @@
+import type { CityPoi } from "@/lib/places-registry";
+
+export const POIS: Record<string, CityPoi[]> = {
+  // ── 葡萄牙 ──
+  lisbon: [
+    { nameZh: "阿尔法玛老城", nameEn: "Alfama", lon: -9.1318, lat: 38.7128, kind: "district" },
+    { nameZh: "圣乔治城堡", nameEn: "São Jorge Castle", lon: -9.1335, lat: 38.7139, kind: "landmark" },
+    { nameZh: "热罗尼莫斯修道院", nameEn: "Jerónimos Monastery", lon: -9.2062, lat: 38.6979, kind: "landmark" },
+    { nameZh: "贝伦塔", nameEn: "Belém Tower", lon: -9.2159, lat: 38.6916, kind: "landmark" },
+    { nameZh: "发现者纪念碑", nameEn: "Monument to the Discoveries", lon: -9.2058, lat: 38.6935, kind: "landmark" },
+    { nameZh: "圣胡斯塔升降机", nameEn: "Santa Justa Lift", lon: -9.1394, lat: 38.7139, kind: "landmark" },
+  ],
+  sintra: [
+    { nameZh: "佩纳宫", nameEn: "Pena Palace", lon: -9.3906, lat: 38.7876, kind: "landmark" },
+    { nameZh: "雷加莱拉宫", nameEn: "Quinta da Regaleira", lon: -9.3976, lat: 38.7969, kind: "landmark" },
+    { nameZh: "摩尔人城堡遗迹", nameEn: "Moorish Castle", lon: -9.3903, lat: 38.7929, kind: "landmark" },
+    { nameZh: "辛特拉国家王宫", nameEn: "National Palace of Sintra", lon: -9.3906, lat: 38.7975, kind: "landmark" },
+  ],
+  porto: [
+    { nameZh: "里贝拉河岸区", nameEn: "Ribeira", lon: -8.6122, lat: 41.1405, kind: "district" },
+    { nameZh: "路易一世大桥", nameEn: "Dom Luís I Bridge", lon: -8.6095, lat: 41.1400, kind: "landmark" },
+    { nameZh: "加亚新城酒窖区", nameEn: "Vila Nova de Gaia Wine Cellars", lon: -8.6112, lat: 41.1350, kind: "district" },
+    { nameZh: "莱罗书店", nameEn: "Livraria Lello", lon: -8.6145, lat: 41.1469, kind: "landmark" },
+    { nameZh: "圣本笃火车站", nameEn: "São Bento Railway Station", lon: -8.6108, lat: 41.1456, kind: "landmark" },
+    { nameZh: "克莱里科斯塔", nameEn: "Clérigos Tower", lon: -8.6156, lat: 41.1456, kind: "landmark" },
+  ],
+  braga: [
+    { nameZh: "布拉加主教座堂", nameEn: "Braga Cathedral", lon: -8.4266, lat: 41.5503, kind: "landmark" },
+    { nameZh: "邦热苏斯朝圣教堂", nameEn: "Bom Jesus do Monte", lon: -8.3789, lat: 41.5486, kind: "landmark" },
+    { nameZh: "老城主广场", nameEn: "Old Town Main Square", lon: -8.4257, lat: 41.5495, kind: "district" },
+    { nameZh: "圣母怀胎朝圣地", nameEn: "Sameiro Sanctuary", lon: -8.3906, lat: 41.5289, kind: "landmark" },
+  ],
+  guimaraes: [
+    { nameZh: "吉马良斯城堡", nameEn: "Guimarães Castle", lon: -8.2951, lat: 41.4478, kind: "landmark" },
+    { nameZh: "布拉干萨公爵宫", nameEn: "Palace of the Dukes of Braganza", lon: -8.2958, lat: 41.4467, kind: "landmark" },
+    { nameZh: "老城主广场", nameEn: "Main Square", lon: -8.2918, lat: 41.4425, kind: "district" },
+    { nameZh: "佩尼亚山缆车", nameEn: "Penha Hill Cable Car", lon: -8.2683, lat: 41.4306, kind: "nature" },
+  ],
+  aveiro: [
+    { nameZh: "运河区", nameEn: "Canal District", lon: -8.6455, lat: 40.6420, kind: "district" },
+    { nameZh: "新艺术博物馆", nameEn: "Art Nouveau Museum", lon: -8.6483, lat: 40.6412, kind: "landmark" },
+    { nameZh: "阿威罗大教堂", nameEn: "Aveiro Cathedral", lon: -8.6497, lat: 40.6389, kind: "landmark" },
+    { nameZh: "科斯塔诺瓦条纹渔村", nameEn: "Costa Nova", lon: -8.7500, lat: 40.6060, kind: "district" },
+  ],
+  coimbra: [
+    { nameZh: "科英布拉大学老校区", nameEn: "University of Coimbra (old campus)", lon: -8.4246, lat: 40.2082, kind: "landmark" },
+    { nameZh: "乔安尼娜图书馆", nameEn: "Joanina Library", lon: -8.4241, lat: 40.2081, kind: "landmark" },
+    { nameZh: "圣克拉拉修道院旧址", nameEn: "Convent of Santa Clara", lon: -8.4234, lat: 40.1998, kind: "landmark" },
+    { nameZh: "老城主教座堂", nameEn: "Old Cathedral", lon: -8.4280, lat: 40.2075, kind: "landmark" },
+  ],
+  evora: [
+    { nameZh: "罗马神庙遗址", nameEn: "Roman Temple", lon: -7.9070, lat: 38.5722, kind: "landmark" },
+    { nameZh: "埃武拉大教堂", nameEn: "Évora Cathedral", lon: -7.9068, lat: 38.5711, kind: "landmark" },
+    { nameZh: "人骨小教堂", nameEn: "Chapel of Bones", lon: -7.9058, lat: 38.5697, kind: "landmark" },
+    { nameZh: "老城城墙", nameEn: "Old Town Walls", lon: -7.9096, lat: 38.5714, kind: "landmark" },
+  ],
+  faro: [
+    { nameZh: "法鲁老城", nameEn: "Faro Old Town", lon: -7.9308, lat: 37.0148, kind: "district" },
+    { nameZh: "法鲁主教座堂", nameEn: "Faro Cathedral", lon: -7.9309, lat: 37.0146, kind: "landmark" },
+    { nameZh: "福尔摩沙潟湖国家公园", nameEn: "Ria Formosa Natural Park", lon: -7.9800, lat: 37.0000, kind: "nature" },
+    { nameZh: "皮耶达德角", nameEn: "Ponta da Piedade", lon: -8.6670, lat: 37.0830, kind: "nature" },
+    { nameZh: "本嘎多岛", nameEn: "Ilha Deserta", lon: -7.9200, lat: 36.9700, kind: "nature" },
+  ],
+  funchal: [
+    { nameZh: "老城区街巷", nameEn: "Old Town", lon: -16.9095, lat: 32.6469, kind: "district" },
+    { nameZh: "蒙特村缆车", nameEn: "Monte Cable Car", lon: -16.9109, lat: 32.6716, kind: "landmark" },
+    { nameZh: "蒙特热带植物园", nameEn: "Monte Palace Tropical Garden", lon: -16.9130, lat: 32.6738, kind: "nature" },
+    { nameZh: "皮库鲁伊武峰", nameEn: "Pico Ruivo", lon: -16.9425, lat: 32.7597, kind: "nature" },
+    { nameZh: "吉朗角观景台", nameEn: "Cabo Girão", lon: -17.0011, lat: 32.6494, kind: "nature" },
+  ],
+  "ponta-delgada": [
+    { nameZh: "海滨拱门", nameEn: "City Gates (Portas da Cidade)", lon: -25.6725, lat: 37.7392, kind: "landmark" },
+    { nameZh: "圣塞巴斯蒂昂教堂", nameEn: "São Sebastião Church", lon: -25.6733, lat: 37.7401, kind: "landmark" },
+    { nameZh: "七城破火山口", nameEn: "Sete Cidades Caldera", lon: -25.7897, lat: 37.8608, kind: "nature" },
+    { nameZh: "富尔纳斯地热区", nameEn: "Furnas Geothermal Area", lon: -25.3181, lat: 37.7697, kind: "nature" },
+    { nameZh: "圣米格尔茶园", nameEn: "São Miguel Tea Plantations", lon: -25.3400, lat: 37.8200, kind: "nature" },
+  ],
+  // ── 葡萄牙 批2（2026-09-05）──
+  lagos: [
+    { nameZh: "虔诚角", nameEn: "Ponta da Piedade", lon: -8.6690, lat: 37.0800, kind: "nature" },
+    { nameZh: "多娜安娜海滩", nameEn: "Praia Dona Ana", lon: -8.6690, lat: 37.0910, kind: "nature" },
+    { nameZh: "奴隶市场博物馆", nameEn: "Mercado de Escravos", lon: -8.6720, lat: 37.1000, kind: "landmark" },
+    { nameZh: "老城与城墙", nameEn: "Old Town & Walls", lon: -8.6740, lat: 37.1010, kind: "district" },
+    { nameZh: "梅亚海滩", nameEn: "Meia Praia", lon: -8.6500, lat: 37.1100, kind: "nature" },
+    { nameZh: "拉戈斯站", nameEn: "Lagos Station", lon: -8.6760, lat: 37.1060, kind: "transport" },
+  ],
+  tavira: [
+    { nameZh: "罗马桥", nameEn: "Roman Bridge", lon: -7.6500, lat: 37.1270, kind: "landmark" },
+    { nameZh: "塔维拉城堡", nameEn: "Tavira Castle", lon: -7.6510, lat: 37.1250, kind: "landmark" },
+    { nameZh: "共和国广场", nameEn: "Praça da República", lon: -7.6500, lat: 37.1260, kind: "district" },
+    { nameZh: "塔维拉岛渡轮", nameEn: "Ilha de Tavira Ferry", lon: -7.6550, lat: 37.1180, kind: "transport" },
+    { nameZh: "盐田与里亚福尔莫萨", nameEn: "Salt Pans & Ria Formosa", lon: -7.6300, lat: 37.1100, kind: "nature" },
+  ],
+  nazare: [
+    { nameZh: "北滩（巨浪）", nameEn: "Praia do Norte", lon: -9.0850, lat: 39.6080, kind: "nature" },
+    { nameZh: "圣米格尔堡与灯塔", nameEn: "Fort of São Miguel Arcanjo", lon: -9.0850, lat: 39.6040, kind: "landmark" },
+    { nameZh: "西蒂奥与缆车", nameEn: "Sítio & Funicular", lon: -9.0770, lat: 39.6050, kind: "landmark" },
+    { nameZh: "纳扎雷海滩", nameEn: "Praia da Nazaré", lon: -9.0730, lat: 39.6000, kind: "nature" },
+    { nameZh: "纳扎雷圣母教堂", nameEn: "Church of Our Lady of Nazaré", lon: -9.0760, lat: 39.6050, kind: "landmark" },
+  ],
+  obidos: [
+    { nameZh: "城堡与城墙", nameEn: "Castle & Walls", lon: -9.1570, lat: 39.3620, kind: "landmark" },
+    { nameZh: "直街", nameEn: "Rua Direita", lon: -9.1580, lat: 39.3600, kind: "district" },
+    { nameZh: "城门与瓷砖礼拜堂", nameEn: "Porta da Vila", lon: -9.1580, lat: 39.3580, kind: "landmark" },
+    { nameZh: "圣玛利亚教堂", nameEn: "Igreja de Santa Maria", lon: -9.1575, lat: 39.3610, kind: "landmark" },
+    { nameZh: "奥比杜什潟湖", nameEn: "Óbidos Lagoon", lon: -9.2200, lat: 39.4100, kind: "nature" },
+  ],
+  "viana-do-castelo": [
+    { nameZh: "圣卢西亚圣殿", nameEn: "Santa Luzia Sanctuary", lon: -8.8340, lat: 41.7010, kind: "landmark" },
+    { nameZh: "埃菲尔桥", nameEn: "Ponte Eiffel", lon: -8.8270, lat: 41.6900, kind: "landmark" },
+    { nameZh: "共和国广场", nameEn: "Praça da República", lon: -8.8290, lat: 41.6930, kind: "district" },
+    { nameZh: "吉尔·埃亚内斯医院船", nameEn: "Gil Eannes Hospital Ship", lon: -8.8320, lat: 41.6900, kind: "landmark" },
+    { nameZh: "卡贝德洛海滩", nameEn: "Praia do Cabedelo", lon: -8.8450, lat: 41.6800, kind: "nature" },
+  ],
+};

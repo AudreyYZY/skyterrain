@@ -1,0 +1,175 @@
+import type { TravelGuide } from "@/lib/travel-lesson";
+
+export const TRAVEL_ZH: Record<string, TravelGuide> = {
+  // ============ 卢森堡 ============
+  "luxembourg-overview": {
+    // identity sources: STATEC《Lower migration, low fertility: the demographic slowdown continues》：2025-01-01 总人口 681,973 人。https://statistiques.public.lu/en/actualites/2025/stn16-population-2025.html
+    //   核实日 2026-09-07，来源级别 1
+    identity:
+      "卢森堡大公国地处西欧，面积约2586平方公里，是欧洲面积最小的主权国家之一，2025年1月1日人口约68.2万（卢森堡统计局），与法国、德国、比利时接壤，是欧盟创始成员国与重要的金融中心。",
+    layout:
+      "国土可大致分为两大区域：北部埃斯灵（阿登山地余脉，河谷与高原交织）与南部古特兰（地势平缓，首都卢森堡市所在地，另含东部米勒达尔砂岩“小瑞士”、东南部摩泽尔河谷葡萄酒产区、最南端米内特红土地）。",
+    gettingAround:
+      "卢森堡芬德尔机场是全境唯一的机场，因此没有国内定期航班；铁路与公交网络密集，2020年起全国公共交通对所有乘客免费（欧洲首个实现全境公共交通免费的国家）。自驾靠右行驶，国土狭小、城际车程通常在1小时以内。属温带海洋性气候，全年温和多雨。餐厅账单通常已含服务费，不强制额外小费。电压230V，欧标两圆脚插头。",
+    culture:
+      "官方语言为卢森堡语、法语与德语三语并行，日常商业与政府文件常用法语，英语普及率也很高。卢森堡人口构成中外籍居民比例接近一半，是欧洲文化多元程度最高的国家之一。餐厅账单通常不强制小费，凑整即可。",
+    seeAndDo:
+      "自然地貌：米勒达尔·贝多夫砂岩区“小瑞士”、希森滕佩尔瀑布、奥尔河谷维安登城堡、上苏尔湖。历史人文：卢森堡市老城与要塞（世界遗产）、佩特吕斯地堡、克莱尔沃城堡（突出部战役纪念）、埃希特纳赫本笃会修道院。美食体验：摩泽尔河谷葡萄酒之旅。",
+    whenAndTips:
+      "5-9月最宜人，也是徒步米勒达尔小径的最佳季节；国土面积小，租车一日可覆盖多个城镇，公共交通免费也是探索全境的便捷选择。",
+  },
+  "luxembourg-city": {
+    // identity sources: 人口：卢森堡市政府「La ville en chiffres」2025-12-31 = 137,696（1 级；英文维基引同一页 2026-01-21 抓到 137,678，差 18 人，属不同抓取时点）。口径是市镇（commune de Luxembourg）常住人口，不是全国、也不是跨境通勤圈。卢森堡统计局 STATEC 的全国 1 月 1 日数通常当年 1—2 月发布。identity 与 howItWorks 两段已统一。
+    identity:
+      "卢森堡市是卢森堡大公国首都，2025年末人口约13.8万（卢森堡市政府），坐落于卢森堡砂岩台地之上，是欧盟机构重要驻地之一与全球领先的金融中心，1994年老城与要塞列入世界遗产名录。",
+    // howItWorks sources: 人口：与 identity 段同一来源与基准日（卢森堡市政府 2025-12-31 = 137,696）。
+    howItWorks:
+      "卢森堡市是卢森堡大公国的首都，也是一个约 51 平方公里的市镇，2025年末人口约13.8万，由民选的市议会与市长治理；约 70% 的居民是外国籍，来自约 160 个国家，市下分 24 个街区。全国约 68 万人，每天有二十万上下的人从法国、比利时、德国跨境上班，2020 年起全国公共交通免费。城市建在阿尔泽特河与佩特吕斯河切出的 70 米深峡谷之上：上城在高地上，是 1994 年列入世界遗产的老城与要塞遗迹，博克炮台就在崖边；格伦德与普法芬塔尔在谷底，靠电梯与桥上下；基希贝格高原是欧盟机构——欧洲法院、欧洲投资银行——与银行的所在地，火车站区在南面。2017 年通车的有轨电车连起车站、市中心与基希贝格。卢森堡语、法语与德语并为官方语言，路牌与公文三语并行。芬德尔机场在东面 6 公里。地址写“街道、门牌、四位邮编”，邮编 L- 开头。初来的人最容易犯的错，是把卢森堡市当作一座小国的小首都，而它是欧洲的金融中心之一，居民多数不是卢森堡人。",
+    layout:
+      "老城建于阿尔泽特河与佩特吕斯河深切台地形成的峡谷环绕的高地之上，博克岩石扼守台地一角，新城区（欧盟机构与金融区所在地）位于老城东北、阿尔泽特河谷对岸的基希贝格（Kirchberg）高地。",
+    gettingAround:
+      "芬德尔机场距市中心约6公里，有巴士接驳；公共交通（公交、轻轨）全境免费。老城步行可达，多座桥梁连接峡谷两岸的不同片区。属温带海洋性气候，全年温和多雨。",
+    culture:
+      "官方语言为卢森堡语、法语、德语三语并行，英语普及率也很高。作为国际金融中心，城市人口中外籍居民占比很高，文化氛围多元国际化。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "佩特吕斯地堡（凿入砂岩的地下要塞工事）；博克岩石与博克要塞遗址；宪法广场（“黄金少女”纪念碑）；大公宫；周边峡谷步道系统（“科尔尼什”，被称为“欧洲最美阳台”）。",
+    whenAndTips:
+      "5-9月最宜人；老城紧凑，步行加峡谷步道系统即可覆盖主要景点，建议留出半日专门游览地堡与峡谷步道。",
+  },
+  "esch-sur-alzette": {
+    identity:
+      "埃施阿尔泽特是按人口计卢森堡第二大城市，人口约3.6万，坐落于阿尔泽特河畔米内特工业区核心地带，19世纪起因铁矿开采与钢铁工业而兴起。",
+    // howItWorks sources: Wikipedia (2026-09): Esch-sur-Alzette (commune 14.35 km²; ~37,900 2025; second-largest; Minett/French border; ARBED 1911; last furnace 1997; Belval university campus; Rockhal; ECoC 2022)
+    howItWorks:
+      "埃施是卢森堡第二大市镇，约 14 平方公里，2025 年人口约 3.8 万，由民选的市议会与市长治理；它在南部的“米内特”铁矿区，法国边境就在城边，对面是法国的奥当勒蒂什。1850 年代发现铁矿之后，这座村庄长成了钢铁城：1911 年创立的 ARBED 是它的雇主，葡萄牙与意大利移民的后代至今是市民的重要构成；1970 年代的钢铁危机之后矿山关闭，贝尔瓦尔的最后一座高炉 1997 年停产。今天贝尔瓦尔是卢森堡大学的校区，高炉被保留在校园中间，Rockhal 音乐厅在旁边，2022 年埃施是欧洲文化之都。阿尔泽特街是市中心的步行街。全国公共交通免费，火车到卢森堡市约 20 分钟。地址写“街道、门牌、四位邮编”。初来的人最容易犯的错，是把埃施当作一座衰落的矿城，而它是卢森堡的大学城与文化重镇。",
+    layout:
+      "城区沿阿尔泽特河而建，紧邻法国边境，周边分布多处历史矿区遗址，部分已改造为工业遗产公园（如贝尔瓦尔高炉园区）。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约20公里）；公共交通全境免费，市内有巴士网络（卢森堡市至埃施的快速轻轨规划于2030年代分段通车）。属温带海洋性气候。",
+    culture:
+      "官方语言三语并行，因历史上吸引大量意大利、葡萄牙移民从事矿业与钢铁业，城市文化融合了多国移民传统。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "贝尔瓦尔高炉工业遗产园区（保留A、B两座分别建于1965年与1970年的炼铁高炉，1997年停产，2014年起对外开放）；米内特国家矿业博物馆；周边可探索米内特生物圈保护区的采矿遗迹步道。",
+    whenAndTips:
+      "5-9月最宜人；作为工业遗产旅游门户，建议安排半日专门探访贝尔瓦尔高炉园区与矿业博物馆。",
+  },
+  echternach: {
+    identity:
+      "埃希特纳赫是卢森堡现存最古老的城镇，建城可追溯至公元698年圣威利布罗德创立的本笃会修道院，人口约6千，是探索米勒达尔“小瑞士”的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Echternach (Luxembourg; commune with city status in the east near the German border on the Sûre; 5,936 residents in 2025 over 20.49 km²; the oldest town in Luxembourg, grown around the abbey founded in 698 by St Willibrord, an English monk from Ripon, who was abbot until his death in 739 and became the first bishop of Utrecht; the dancing procession on Whit Tuesday, UNESCO intangible heritage 2010; Basilica of St Willibrord with his tomb in the crypt; gateway to the Mullerthal hiking region)
+    howItWorks:
+      "埃希特纳赫是卢森堡东部的一个市镇，享有城市地位，2025 年人口约 5,900，市域约 20.5 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省，因此小镇直接对着国家部门办事。它是卢森堡最古老的城镇：698 年，来自英格兰里彭的修士维利布罗德在这里创立本笃会修道院，此后他任院长直到 739 年去世，并成为乌得勒支的第一位主教，镇子就是围着这座修道院长起来的。每年圣灵降临节后的星期二举行“跳舞游行”，队伍以特定的步伐边跳边前进到圣维利布罗德大教堂，那里的地下室安放着他的墓，这项习俗 2010 年列入非物质文化遗产名录。苏尔河是这里与德国的界河，对岸有桥相通；镇西是“小瑞士”米勒塔尔的砂岩谷地徒步区。初来的人最容易犯的错，是把这座五千多人的镇当村子，而它是卢森堡第一座城。",
+    layout:
+      "老城沿苏尔河而建，本笃会修道院与老城市集广场构成历史核心，紧邻德国边境，米勒达尔砂岩地貌区在城镇西南侧展开。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约30公里）；公共交通全境免费。老城步行可达，前往米勒达尔徒步区需自驾或乘公交。属温带海洋性气候。",
+    culture:
+      "官方语言三语并行。埃希特纳赫每年圣灵降临节次日举行的“跳跃游行”（舞蹈朝圣仪式）是联合国教科文组织非物质文化遗产，历史可追溯至中世纪。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "本笃会修道院与圣威利布罗德教堂地下墓室；老城市集广场；周边米勒达尔小径徒步（贝多夫砂岩区、希森滕佩尔瀑布）。",
+    whenAndTips:
+      "5-9月最宜人，也是米勒达尔徒步旺季；圣灵降临节次日的跳跃游行是体验当地传统的独特时机。",
+  },
+  remich: {
+    identity:
+      "雷米希是摩泽尔河谷卢森堡段的核心小镇，人口约3.5千，是卢森堡唯一葡萄酒产区的中心，被称为“摩泽尔明珠”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Remich (Luxembourg; commune with city status on the left bank of the Moselle, which forms the border with Germany; the smallest commune in Luxembourg by area at 5.29 km², 4,149 residents in 2025, 46th largest commune; from the Roman Remacum; the St Nicolas gate of 952 a protected monument; one of the most prominent wine towns of the Moselle valley; the three-day Fuesend Karneval with the Stréimännchen burned from the Moselle bridge)
+    howItWorks:
+      "雷米希是卢森堡东南部的市镇，享有城市地位，市域约 5.3 平方公里，是全国面积最小的市镇，2025 年人口约 4,150，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。它在摩泽尔河的左岸，河的对岸就是德国，因此这条河既是风景也是国界，沿岸的公路与河上的游船是本地的日常。地名来自罗马时期的 Remacum，罗马人撤走后演变成今天的写法；952 年的圣尼古拉门是受保护的古迹，是老城墙留下的一段。这一带是卢森堡摩泽尔葡萄酒区的核心，白葡萄酒与起泡酒“克雷芒”是当地的产业，酒庄沿河排开，河堤上的长廊夏天全是人。狂欢节持续三天，最后把稻草人从摩泽尔桥上点燃投下，是本地特有的做法。初来的人最容易犯的错，是把摩泽尔当作一条普通的河，而它是国界，过桥就是另一个国家。",
+    layout:
+      "小镇沿摩泽尔河而建，河对岸即为德国，滨河步道与葡萄酒庄园构成小镇景观核心。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约20公里）；公共交通全境免费。小镇步行可达，探索沿河葡萄园需自驾或骑行。属温带海洋性气候，是卢森堡气候最温和的地区。",
+    culture:
+      "官方语言三语并行。雷米希及周边村镇是卢森堡起泡酒“克雷芒”与雷司令等白葡萄酒的核心产区，酒庄品鉴是当地重要的旅游体验。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "摩泽尔河滨河步道；酒庄品鉴（当地雷司令与克雷芒起泡酒）；摩泽尔河游船；周边可骑行探索葡萄酒之路沿线村镇。",
+    whenAndTips:
+      "5-9月最宜人，9-10月葡萄采收季可参与相关庆典；沿河自行车道是探索摩泽尔河谷的经典方式。",
+  },
+  diekirch: {
+    identity:
+      "迪基希是卢森堡北部苏尔河畔的历史小镇，人口约7千，以国家军事历史博物馆闻名，是探索苏尔河谷与埃斯灵高原的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Diekirch (Luxembourg; commune with city status on the Sûre in the north-east, 7,336 residents in 2025 over 12.42 km², 21st of 100 communes; the name from Diet-Kirch, people's church; St Laurence church a Roman building and remains of a large Roman villa; fortified in the 14th century by John the Blind; National Museum of Military History and the Battle of the Bulge, headquarters of the Luxembourg Army's operational command at the Haerebierg centre; the donkey as town mascot; International March of Diekirch since 1968; Paul Eyschen born here)
+    howItWorks:
+      "迪基希是卢森堡东北部的市镇，享有城市地位，2025 年人口约 7,340，市域约 12.4 平方公里，在全国 100 个市镇中排第 21，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。城市在苏尔河边、厄斯林丘陵的谷地里，地名出自“Diet-Kirch”，意为“民众的教堂”。罗马时期这里已有大型庄园，圣洛朗教堂的底层就是罗马建筑，14 世纪盲人约翰给它筑了城墙。1944 至 1945 年的阿登战役在这一带打了几个月，国家军事历史博物馆因此设在城中，卢森堡军队的作战指挥部也驻在附近的哈尔山营区。驴是这座城的吉祥物，街心的喷泉都做成驴的样子；1968 年起的迪基希国际徒步大会每年吸引各国走路的人。埃特尔布吕克在西面 5 公里，有铁路通往卢森堡市。初来的人最容易犯的错，是把这座七千人的城当作旅游小镇，而它是卢森堡北部的行政与驻军中心之一。",
+    layout:
+      "老城沿苏尔河而建，历史街区保留中世纪格局，国家军事历史博物馆是小镇的主要地标。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约35公里）；公共交通全境免费。老城步行可达。属温带海洋性气候。",
+    culture:
+      "官方语言三语并行。迪基希因1944至1945年突出部战役期间的历史地位，是卢森堡重要的二战纪念地之一。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "国家军事历史博物馆（突出部战役详实展陈）；圣洛朗教堂地下考古遗址；苏尔河滨河步道；周边可前往上苏尔湖或维安登。",
+    whenAndTips:
+      "5-9月最宜人；作为埃斯灵高原南部门户，适合安排半日游览博物馆后继续前往维安登或上苏尔湖。",
+  },
+  ettelbruck: {
+    identity:
+      "埃特尔布吕克是卢森堡北部阿尔泽特河与苏尔河交汇处的小镇，人口约9千，是埃斯灵高原地区重要的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ettelbruck (Luxembourg; commune with city status at the confluence of the Sûre, Alzette and Wark, about 10,149 residents; a major transport hub second only to Luxembourg City, the railway junction where the Diekirch line branches from the Luxembourg–Liège main line, with the A7 reached via trunk road B7; occupied 10 May 1940, liberated 11 September 1944, retaken 16 December, liberated again by Patton's forces on Christmas Day 1944; General Patton Memorial Museum opened July 1995; the national anthem first performed publicly here in 1864)
+    howItWorks:
+      "埃特尔布吕克是卢森堡北部的市镇，享有城市地位，人口约 1.02 万，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。它的分量来自位置：苏尔河、阿尔泽特河与瓦尔克河在这里汇合，铁路上通往迪基希的支线从卢森堡—列日主干线在此分出，公路经 B7 接入 A7 高速，因此它是全国仅次于首都的交通枢纽，北部各镇的人换车都在这一站。1940 年 5 月 10 日德军占领此地，1944 年 9 月 11 日美军解放，同年 12 月 16 日阿登战役中再度失守，圣诞节当天巴顿的部队重新夺回并在阿尔泽特河谷挡住了德军攻势；1995 年开放的巴顿将军纪念馆与“巴顿广场”都是这段历史的标记。1864 年卢森堡国歌在这里首次公开演唱。初来的人最容易犯的错，是把它与相邻的迪基希混为一谈，两座城相距 5 公里，是两个各自独立的市镇。",
+    layout:
+      "小镇位于两河交汇的谷地平坦处，是连接卢森堡市与北部埃斯灵高原各城镇的铁路与公路枢纽。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约35公里）；公共交通全境免费，火车站是北部地区重要的换乘枢纽。属温带海洋性气候。",
+    culture:
+      "官方语言三语并行。埃特尔布吕克因二战期间美国将军巴顿曾在此指挥作战而设有巴顿广场纪念碑，是卢森堡二战历史的重要见证地。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "巴顿广场与将军纪念碑；埃特尔布吕克军事博物馆；周边可换乘前往维安登、克莱尔沃或迪基希。",
+    whenAndTips:
+      "全年皆宜；作为北部交通枢纽，适合作为探索埃斯灵高原多个城镇的中转基地而非目的地本身。",
+  },
+  vianden: {
+    identity:
+      "维安登是卢森堡北部奥尔河谷畔的小镇，人口约2千，维安登城堡是卢森堡现存规模最大的封建城堡，也是国内最具代表性的河谷城堡景观。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vianden (Luxembourg; commune in the north-east on the Our near the German border, 2,221 residents in 2025; Vianden Castle built between the 11th and 14th centuries, one of the largest fortified castles west of the Rhine, sold in 1820 and left to decay until Grand Duke Jean ceded it to the State in 1977, since restored as a museum; Victor Hugo stayed here several times between 1862 and 1871, his house now a museum; seasonal chairlift; the Vianden pumped-storage hydro plant; about 47 km from Luxembourg City, buses from Diekirch and Ettelbruck)
+    howItWorks:
+      "维安登是卢森堡东北部的市镇，2025 年人口约 2,220，在乌尔河的谷地里，河对岸就是德国；卢森堡只有市镇与国家两级，中间没有省，由民选的市长与市议会治理。维安登城堡建于 11 至 14 世纪，是莱茵河以西规模最大的封建城堡之一，1820 年被出售后长期荒废，直到 1977 年让大公把它移交给国家，此后逐步修复，如今作为博物馆开放，谷底的镇子就在它的脚下沿河铺开。雨果 1862 至 1871 年间数次在这里居住，写下过关于这一带的文字，他的故居也是博物馆。缆椅在旅游季运行，从河谷通到对面的山脊看城堡。山体里另有一处抽水蓄能电站，是欧洲较早的一批，与旅游业并行支撑着这个小镇。卢森堡市在南面约 47 公里，需从迪基希或埃特尔布吕克换乘公共汽车。初来的人最容易犯的错，是以为有火车直达，而这里只有公路进出。",
+    layout:
+      "小镇沿奥尔河谷底而建，城堡矗立在河谷东岸悬崖之上，一座缆车连接谷底小镇与城堡所在高地。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约45公里）；公共交通全境免费。小镇步行可达，登城堡可步行或乘缆车。属温带海洋性气候，河谷地形使气候相对凉爽。",
+    culture:
+      "官方语言三语并行。19世纪法国作家维克多·雨果曾流亡至此，其故居现辟为纪念博物馆，是当地重要的文化地标。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "维安登城堡（卢森堡现存最大封建城堡）；雨果故居博物馆；缆车登顶观景；奥尔河谷徒步步道。",
+    whenAndTips:
+      "5-9月最宜人；城堡与小镇景观在秋季森林变色时节尤为壮观，建议安排半日专门游览城堡内部。",
+  },
+  clervaux: {
+    identity:
+      "克莱尔沃是卢森堡北部克莱尔沃河谷畔的小镇，人口约1.6千，中世纪城堡雄踞谷地中央高地，是突出部战役的重要历史见证地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Clervaux (Luxembourg; commune in the north, town population 1,609 in 2025 and commune 6,289 over 85.05 km² after mergers; Clervaux Castle, its oldest parts from the 12th century built by Gerard, Count of Sponheim, damaged in the Battle of the Bulge in December 1944 and rebuilt; the castle houses Edward Steichen's The Family of Man exhibition and a Battle of the Bulge museum; French Benedictine monks founded Clervaux Abbey in 1910; railway station with trains to Luxembourg City and Liège)
+    howItWorks:
+      "克莱尔沃是卢森堡北部的市镇，2025 年镇上约 1,600 人，合并后的整个市镇约 6,290 人，市域约 85 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。镇子挤在克莱尔沃河的一道深谷里，城堡在谷中的岩台上，最早的部分是 12 世纪斯庞海姆伯爵格哈德所建，1944 年 12 月阿登战役中被打坏，战后重建。城堡里如今有两处展览：一是爱德华·斯泰肯 1955 年策划的摄影展《人类一家》的永久陈列，2003 年列入世界记忆名录；二是阿登战役博物馆。1910 年一批法国本笃会修士来此创建克莱尔沃修道院，教堂立在对面的山坡上，俯瞰全镇。铁路从卢森堡市通到这里并继续往比利时的列日，是北上出境的主线。初来的人最容易犯的错，是把这座镇当作一处景点，而它是山谷里少见的铁路小城，两侧的坡把它压成了长长的一条。",
+    layout:
+      "小镇沿克莱尔沃河谷两岸而建，城堡位于谷地中央的高地上，本笃会修道院坐落在附近的山丘上，俯瞰整个谷地。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约55公里）；公共交通全境免费。小镇步行可达。属温带海洋性气候。",
+    culture:
+      "官方语言三语并行。克莱尔沃城堡内长期展出摄影家爱德华·斯泰肯策展的经典摄影展“人类大家庭”，是联合国教科文组织世界记忆名录项目。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "克莱尔沃城堡（“人类大家庭”摄影展常设展）；圣莫里斯与莫尔本笃会修道院；突出部战役相关历史遗迹；克莱尔沃河谷徒步。",
+    whenAndTips:
+      "5-9月最宜人；建议安排半日游览城堡摄影展与修道院，也可结合周边维安登一同游览。",
+  },
+  "esch-sur-sure": {
+    identity:
+      "埃施叙尔苏尔是上苏尔湖畔的小镇，人口约3百，古老城堡与老城依苏尔河河曲而建，是探索上苏尔自然公园与湖区的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Esch-sur-Sûre (Luxembourg; commune in the Wiltz canton in the north-west, 3,279 residents in 2025 over 51.26 km² after Neunhausen and Heiderscheid were merged in 2011; the town proper about 415 people, set on a spur within a sharp meander of the Sûre, entered through a tunnel; 10th-century castle ruins above; the Upper Sûre Lake, an artificial reservoir built in the 1960s and extending about 10 km up the valley, supplying drinking water; Upper Sûre Natural Park)
+    howItWorks:
+      "埃施叙尔苏尔是卢森堡西北维尔茨县的市镇，2011 年与诺伊豪森、海德沙伊德合并后人口约 3,280，市域约 51 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。镇子本身只有约 415 人，地形是它的全部说明：苏尔河在这里绕了一个近乎闭合的急弯，把一块岩脊几乎围成孤岛，房子挤在这块岩脊上，进镇要穿过一条开在山体里的隧道，10 世纪的城堡废墟压在最高处。1960 年代国家在上游筑坝，形成了长约十公里的上苏尔湖——这座水库是卢森堡全国最主要的饮用水源，因此湖区的活动受管理，围绕它设立了上苏尔自然公园。卢森堡市在东南约 45 公里。初来的人最容易犯的错，是把水库当作普通的游泳湖，而它是全国的水源地，哪些水面可以下水由规定说了算。",
+    layout:
+      "小镇建在苏尔河一处近乎闭合的河曲半岛上，城堡遗址俯瞰整个老城与河曲，上苏尔湖水库紧邻小镇西侧。",
+    gettingAround:
+      "本地无商业机场，最近机场为卢森堡芬德尔机场（约45公里）；公共交通全境免费，湖区探索建议自驾或骑行。属温带海洋性气候。",
+    culture:
+      "官方语言三语并行。小镇规模虽小，但因上苏尔湖是卢森堡重要的饮用水源地，当地长期重视生态保护，是卢森堡生态旅游的重要示范区域。餐厅账单通常已含服务费。",
+    seeAndDo:
+      "埃施叙尔苏尔城堡遗址；老城河曲半岛漫步；上苏尔湖水上活动（皮划艇、帆船）；上苏尔自然公园徒步与骑行步道。",
+    whenAndTips:
+      "5-9月最宜人，也是湖区水上活动旺季；建议安排一日环湖骑行或徒步，充分感受上苏尔自然公园的湖光山色。",
+  },
+};

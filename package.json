@@ -15,7 +15,7 @@
     "check:camera": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-terrain-camera.ts",
     "check:places": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-places.ts",
     "check:routes": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-routes.ts",
-    "check": "npm run typecheck && npm run lint && npm run check:regions && npm run check:camera && npm run check:places && npm run check:routes && npm run check:tts && npm run check:flight && npm run check:anchors && npm run check:claims",
+    "check": "npm run check:content && npm run typecheck && npm run lint && npm run check:regions && npm run check:camera && npm run check:places && npm run check:routes && npm run check:tts && npm run check:flight && npm run check:anchors && npm run check:claims",
     "check:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-tts-cache.ts",
     "warm:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/warm-tts.ts",
     "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts",
@@ -34,7 +34,10 @@
     "check:issues": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-issues.ts",
     "sample:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/sample-claims.ts",
     "gen:verify-status": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-verification-status.ts",
-    "check:bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-bearings.ts"
+    "check:bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-bearings.ts",
+    "gen:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts",
+    "check:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts --check",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -45,6 +48,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

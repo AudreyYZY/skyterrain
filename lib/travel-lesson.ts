@@ -1,5 +1,7 @@
 import type { Language } from "@/lib/i18n";
 import { t } from "@/lib/i18n";
+import { getCityById } from "@/lib/places-registry";
+import { TRAVEL_EN_LOADERS, TRAVEL_ZH_LOADERS } from "@/lib/content/_generated/loaders";
 
 export interface TravelGuide {
   /** 1. 这是座什么城 —— 性格、地位、第一印象 */
@@ -37,28 +39,32 @@ export function travelSectionHeading(key: string, lang: Language): string {
 }
 
 /**
- * 两份内容文件合计约 1.25 万行，用动态 import 延后到真正打开一篇攻略时才加载
- * （见 lib/terrain-content.ts 同样的处理），加载后常驻内存缓存。
+ * 攻略正文按国家存放在 lib/content/<country>/travel.{zh,en}.ts。打开一篇攻略时只下载该国那一份
+ * （每国一个 chunk），加载后常驻内存缓存。id 形如 `<city>` 或 `<country>-overview`。
  */
-let zhPromise: Promise<Record<string, TravelGuide>> | null = null;
-let enPromise: Promise<Record<string, TravelGuide>> | null = null;
+const cache = new Map<string, Promise<Record<string, TravelGuide>>>();
 
-function loadZh(): Promise<Record<string, TravelGuide>> {
-  if (!zhPromise) {
-    zhPromise = import("@/lib/travel-content.zh").then((m) => m.TRAVEL_CONTENT_ZH);
+function loadCountry(country: string, lang: Language): Promise<Record<string, TravelGuide>> {
+  const key = `${country}:${lang}`;
+  let p = cache.get(key);
+  if (!p) {
+    const loader = (lang === "zh-CN" ? TRAVEL_ZH_LOADERS : TRAVEL_EN_LOADERS)[country];
+    p = loader ? loader() : Promise.resolve({});
+    p.catch(() => cache.delete(key));
+    cache.set(key, p);
   }
-  return zhPromise;
+  return p;
 }
 
-function loadEn(): Promise<Record<string, TravelGuide>> {
-  if (!enPromise) {
-    enPromise = import("@/lib/travel-content.en").then((m) => m.TRAVEL_CONTENT_EN);
-  }
-  return enPromise;
+function countryOfGuide(id: string): string | undefined {
+  if (id.endsWith("-overview")) return id.slice(0, -"-overview".length);
+  return getCityById(id)?.country;
 }
 
 export async function resolveTravelGuide(id: string, lang: Language): Promise<TravelGuide | null> {
-  const [zh, en] = await Promise.all([loadZh(), loadEn()]);
+  const country = countryOfGuide(id);
+  if (!country) return null;
+  const [zh, en] = await Promise.all([loadCountry(country, "zh-CN"), loadCountry(country, "en-US")]);
   const primary = lang === "zh-CN" ? zh : en;
   const fallback = lang === "zh-CN" ? en : zh;
   return primary[id] ?? fallback[id] ?? null;

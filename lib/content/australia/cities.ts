@@ -1,0 +1,341 @@
+import type { CityEntry } from "@/lib/places-registry";
+
+export const CITIES: CityEntry[] = [
+  {
+    id: "sydney", nameZh: "悉尼", nameEn: "Sydney", country: "australia", tier: "major", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 151.2093, lat: -33.8688,
+    airport: { iata: "SYD", nameZh: "悉尼金斯福德·史密斯机场", nameEn: "Sydney Kingsford Smith", lon: 151.177, lat: -33.946 },
+    source: "悉尼市中心 -33.8688,151.2093；SYD 机场坐标：公开资料",
+  },
+  {
+    id: "melbourne", nameZh: "墨尔本", nameEn: "Melbourne", country: "australia", tier: "major", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 144.9631, lat: -37.8136,
+    airport: { iata: "MEL", nameZh: "墨尔本机场（图拉马林）", nameEn: "Melbourne (Tullamarine)", lon: 144.843, lat: -37.669 },
+    source: "墨尔本 CBD -37.8136,144.9631；MEL 机场：公开资料",
+  },
+  {
+    id: "geelong", nameZh: "吉朗", nameEn: "Geelong", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 144.3617, lat: -38.1499,
+    airport: { iata: "AVV", nameZh: "阿瓦隆机场", nameEn: "Avalon Airport", lon: 144.4708, lat: -38.0406 },
+    source: "吉朗市中心 -38.1499,144.3617；AVV 阿瓦隆机场（吉朗东北约20km，是吉朗地区主要商用机场）：公开资料",
+  },
+  {
+    id: "brisbane", nameZh: "布里斯班", nameEn: "Brisbane", country: "australia", tier: "major", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 153.0251, lat: -27.4698,
+    airport: { iata: "BNE", nameZh: "布里斯班机场", nameEn: "Brisbane", lon: 153.117, lat: -27.384 },
+    source: "布里斯班 CBD -27.4698,153.0251；BNE 机场：公开资料",
+  },
+  {
+    id: "perth", nameZh: "珀斯", nameEn: "Perth", country: "australia", tier: "major", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 115.8605, lat: -31.9523,
+    airport: { iata: "PER", nameZh: "珀斯机场", nameEn: "Perth", lon: 115.967, lat: -31.940 },
+    source: "珀斯 CBD -31.9523,115.8605；PER 机场：公开资料",
+  },
+  {
+    id: "adelaide", nameZh: "阿德莱德", nameEn: "Adelaide", country: "australia", tier: "major", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 138.6007, lat: -34.9285,
+    airport: { iata: "ADL", nameZh: "阿德莱德机场", nameEn: "Adelaide", lon: 138.531, lat: -34.945 },
+    source: "阿德莱德 CBD -34.9285,138.6007；ADL 机场：公开资料",
+  },
+  {
+    id: "cairns", nameZh: "凯恩斯", nameEn: "Cairns", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 145.7710, lat: -16.9203,
+    airport: { iata: "CNS", nameZh: "凯恩斯机场", nameEn: "Cairns", lon: 145.755, lat: -16.885 },
+    source: "凯恩斯 -16.9203,145.7710；CNS 机场：公开资料",
+  },
+  {
+    id: "darwin", nameZh: "达尔文", nameEn: "Darwin", country: "australia", tier: "major", zone: "au-nt", admin1Zh: "北领地", admin1En: "Northern Territory",
+    lon: 130.8456, lat: -12.4634,
+    airport: { iata: "DRW", nameZh: "达尔文机场", nameEn: "Darwin", lon: 130.877, lat: -12.415 },
+    source: "达尔文 -12.4634,130.8456；DRW 机场：公开资料",
+  },
+  {
+    id: "canberra", nameZh: "堪培拉", nameEn: "Canberra", country: "australia", tier: "capital", zone: "au-act", admin1Zh: "首都领地", admin1En: "Australian Capital Territory",
+    lon: 149.1300, lat: -35.2809,
+    airport: { iata: "CBR", nameZh: "堪培拉机场", nameEn: "Canberra", lon: 149.195, lat: -35.307 },
+    source: "堪培拉市中心 -35.2809,149.1300；CBR 机场：公开资料",
+  },
+  {
+    id: "newcastle", nameZh: "纽卡斯尔", nameEn: "Newcastle", country: "australia", tier: "major", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 151.7817, lat: -32.9283,
+    airport: { iata: "NTL", nameZh: "纽卡斯尔机场（威廉敦）", nameEn: "Newcastle (Williamtown)", lon: 151.834, lat: -32.795 },
+    source: "纽卡斯尔 CBD -32.9283,151.7817；NTL 机场：公开资料",
+  },
+  {
+    id: "gold-coast", nameZh: "黄金海岸", nameEn: "Gold Coast", country: "australia", tier: "major", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 153.4000, lat: -28.0167,
+    airport: { iata: "OOL", nameZh: "黄金海岸机场（库兰加塔）", nameEn: "Gold Coast (Coolangatta)", lon: 153.505, lat: -28.164 },
+    source: "黄金海岸冲浪者天堂一带 -28.0167,153.4000；OOL 机场：公开资料",
+  },
+  {
+    id: "hobart", nameZh: "霍巴特", nameEn: "Hobart", country: "australia", tier: "major", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 147.3272, lat: -42.8821,
+    airport: { iata: "HBA", nameZh: "霍巴特机场", nameEn: "Hobart", lon: 147.510, lat: -42.836 },
+    source: "霍巴特 CBD -42.8821,147.3272；HBA 机场：公开资料",
+  },
+  {
+    id: "launceston", nameZh: "朗塞斯顿", nameEn: "Launceston", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 147.1441, lat: -41.4332,
+    airport: { iata: "LST", nameZh: "朗塞斯顿机场", nameEn: "Launceston", lon: 147.214, lat: -41.545 },
+    source: "朗塞斯顿 CBD -41.4332,147.1441；LST 机场：公开资料",
+  },
+  {
+    id: "alice-springs", nameZh: "爱丽斯泉", nameEn: "Alice Springs", country: "australia", tier: "notable", zone: "au-nt", admin1Zh: "北领地", admin1En: "Northern Territory",
+    lon: 133.8807, lat: -23.6980,
+    airport: { iata: "ASP", nameZh: "爱丽斯泉机场", nameEn: "Alice Springs", lon: 133.902, lat: -23.807 },
+    source: "爱丽斯泉 -23.6980,133.8807；ASP 机场：公开资料",
+  },
+  {
+    id: "katherine", nameZh: "凯瑟琳", nameEn: "Katherine", country: "australia", tier: "notable", zone: "au-nt", admin1Zh: "北领地", admin1En: "Northern Territory",
+    lon: 132.2635, lat: -14.4652,
+    airport: { iata: "KTR", nameZh: "凯瑟琳机场（廷达尔）", nameEn: "Katherine (Tindal)", lon: 132.378, lat: -14.521 },
+    source: "凯瑟琳 -14.4652,132.2635；KTR/廷达尔 机场：公开资料",
+  },
+  {
+    id: "broome", nameZh: "布鲁姆", nameEn: "Broome", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 122.2359, lat: -17.9614,
+    airport: { iata: "BME", nameZh: "布鲁姆机场", nameEn: "Broome", lon: 122.232, lat: -17.945 },
+    source: "布鲁姆 -17.9614,122.2359；BME 机场：公开资料",
+  },
+  {
+    id: "exmouth", nameZh: "埃克斯茅斯", nameEn: "Exmouth", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 114.1281, lat: -21.9316,
+    airport: { iata: "LEA", nameZh: "勒尔蒙斯机场", nameEn: "Learmonth", lon: 114.089, lat: -22.235 },
+    source: "埃克斯茅斯镇 -21.9316,114.1281；LEA/勒尔蒙斯 机场（镇南约35km）：公开资料",
+  },
+  {
+    id: "coober-pedy", nameZh: "库伯佩迪", nameEn: "Coober Pedy", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 134.7544, lat: -29.0139,
+    airport: { iata: "CPD", nameZh: "库伯佩迪机场", nameEn: "Coober Pedy", lon: 134.721, lat: -29.040 },
+    source: "库伯佩迪 -29.0139,134.7544；CPD 机场：公开资料",
+  },
+
+  // ── 澳大利亚 批2（2026-09-05）：各州/领地按 ABS 主要城区补充 ──
+  {
+    id: "wollongong", nameZh: "卧龙岗", nameEn: "Wollongong", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 150.8939, lat: -34.4272,
+    source: "Wollongong -34.4272,150.8939（Wikipedia）；本地 Shellharbour Airport（WOL）自 2026-05 起无定期航班，就近悉尼机场约 74 公里，条目不写机场字段",
+  },
+  {
+    id: "byron-bay", nameZh: "拜伦湾", nameEn: "Byron Bay", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 153.6150, lat: -28.6431,
+    airport: { iata: "BNK", nameZh: "巴利纳拜伦门户机场", nameEn: "Ballina Byron Gateway", lon: 153.5617, lat: -28.8333 },
+    source: "Byron Bay -28.6431,153.6150（Wikipedia）；BNK 机场在巴利纳，距拜伦湾约 35 公里（Wikipedia）",
+  },
+  {
+    id: "coffs-harbour", nameZh: "科夫斯港", nameEn: "Coffs Harbour", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 153.1189, lat: -30.3022,
+    airport: { iata: "CFS", nameZh: "科夫斯港机场", nameEn: "Coffs Harbour Airport", lon: 153.1167, lat: -30.3200 },
+    source: "Coffs Harbour -30.3022,153.1189；CFS 机场：Wikipedia（市区南约 3 公里）",
+  },
+  {
+    id: "katoomba", nameZh: "卡通巴（蓝山）", nameEn: "Katoomba (Blue Mountains)", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 150.3167, lat: -33.7167,
+    source: "Katoomba -33.7167,150.3167（Wikipedia，海拔 1017 米）；无机场，悉尼机场约 100 公里 + 蓝山线火车约 2 小时，条目不写机场字段",
+  },
+  {
+    id: "ballarat", nameZh: "巴拉瑞特", nameEn: "Ballarat", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 143.8475, lat: -37.5608,
+    source: "Ballarat -37.5608,143.8475（Wikipedia）；无商业机场，墨尔本机场约 1.5 小时 + V/Line 火车，条目不写机场字段",
+  },
+  {
+    id: "bendigo", nameZh: "本迪戈", nameEn: "Bendigo", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 144.2667, lat: -36.7500,
+    source: "Bendigo -36.7500,144.2667（Wikipedia）；本迪戈机场无定期客运航班，墨尔本机场约 1.5–2 小时 + V/Line 火车，条目不写机场字段",
+  },
+  {
+    id: "sunshine-coast", nameZh: "阳光海岸", nameEn: "Sunshine Coast", country: "australia", tier: "major", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 153.0933, lat: -26.6542,
+    airport: { iata: "MCY", nameZh: "阳光海岸机场", nameEn: "Sunshine Coast Airport", lon: 153.0917, lat: -26.6033 },
+    source: "Sunshine Coast（Maroochydore 中心）-26.6542,153.0933；MCY 机场：Wikipedia（Marcoola，Maroochydore 以北约 10 公里）",
+  },
+  {
+    id: "townsville", nameZh: "汤斯维尔", nameEn: "Townsville", country: "australia", tier: "major", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 146.8167, lat: -19.2500,
+    airport: { iata: "TSV", nameZh: "汤斯维尔机场", nameEn: "Townsville Airport", lon: 146.7650, lat: -19.2533 },
+    source: "Townsville -19.2500,146.8167；TSV 机场：Wikipedia（市中心以西约 4 公里，与空军基地共用）",
+  },
+  {
+    id: "toowoomba", nameZh: "图文巴", nameEn: "Toowoomba", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 151.9500, lat: -27.5667,
+    airport: { iata: "WTB", nameZh: "图文巴韦尔坎普机场", nameEn: "Toowoomba Wellcamp Airport", lon: 151.7933, lat: -27.5583 },
+    source: "Toowoomba -27.5667,151.9500（海拔约 691 米）；WTB 机场：Wikipedia（市中心以西约 16 公里，2014-11 启用）",
+  },
+  {
+    id: "airlie-beach", nameZh: "埃尔利海滩", nameEn: "Airlie Beach", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 148.7150, lat: -20.2744,
+    airport: { iata: "PPP", nameZh: "圣灵海岸机场", nameEn: "Whitsunday Coast Airport", lon: 148.5517, lat: -20.4950 },
+    source: "Airlie Beach -20.2744,148.7150；PPP 机场：Wikipedia（Proserpine 以南约 14 公里，距小镇约 40 公里）",
+  },
+  {
+    id: "albany", nameZh: "奥尔巴尼", nameEn: "Albany", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 117.8814, lat: -35.0228,
+    airport: { iata: "ALH", nameZh: "奥尔巴尼机场", nameEn: "Albany Airport", lon: 117.8089, lat: -34.9433 },
+    source: "Albany -35.0228,117.8814；ALH 机场：Wikipedia（市区西北约 11 公里，仅珀斯航线）",
+  },
+  {
+    id: "busselton", nameZh: "巴瑟尔顿", nameEn: "Busselton", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 115.3458, lat: -33.6478,
+    airport: { iata: "BQB", nameZh: "巴瑟尔顿玛格丽特河机场", nameEn: "Busselton Margaret River Airport", lon: 115.4003, lat: -33.6872 },
+    source: "Busselton -33.6478,115.3458；BQB 机场：Wikipedia（镇中心约 6.5 公里；2026 年悉尼航线暂停至 9 月）",
+  },
+  {
+    id: "mount-gambier", nameZh: "甘比尔山", nameEn: "Mount Gambier", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 140.7828, lat: -37.8294,
+    airport: { iata: "MGB", nameZh: "甘比尔山机场", nameEn: "Mount Gambier Airport", lon: 140.7836, lat: -37.7456 },
+    source: "Mount Gambier -37.8294,140.7828；MGB 机场：Wikipedia（市区北约 9 公里）",
+  },
+  {
+    id: "devonport", nameZh: "德文波特", nameEn: "Devonport", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 146.3503, lat: -41.1800,
+    airport: { iata: "DPO", nameZh: "德文波特机场", nameEn: "Devonport Airport", lon: 146.4303, lat: -41.1697 },
+    source: "Devonport -41.1800,146.3503；DPO 机场：Wikipedia（市区东约 10 公里，仅墨尔本航线）",
+  },
+  {
+    id: "yulara", nameZh: "尤拉拉（乌鲁鲁）", nameEn: "Yulara (Uluru)", country: "australia", tier: "notable", zone: "au-nt", admin1Zh: "北领地", admin1En: "Northern Territory",
+    lon: 130.9889, lat: -25.2406,
+    airport: { iata: "AYQ", nameZh: "艾尔斯岩机场", nameEn: "Ayers Rock Airport", lon: 130.9756, lat: -25.1861 },
+    source: "Yulara -25.2406,130.9889；AYQ 机场：Wikipedia（镇北约 6 公里）；乌鲁鲁 -25.3444,131.0369",
+  },
+
+  // ── 澳大利亚 批3（2026-09-05）──
+  {
+    id: "gosford", nameZh: "戈斯福德（中央海岸）", nameEn: "Gosford (Central Coast)", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 151.3333, lat: -33.4167,
+    source: "Gosford -33.4167,151.3333（en.wikipedia）；无商业机场，悉尼机场约 90 公里 + 火车约 1.5 小时，条目不写机场字段",
+  },
+  {
+    id: "port-macquarie", nameZh: "麦夸里港", nameEn: "Port Macquarie", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 152.9000, lat: -31.4333,
+    airport: { iata: "PQQ", nameZh: "麦夸里港机场", nameEn: "Port Macquarie Airport", lon: 152.8633, lat: -31.4358 },
+    source: "Port Macquarie -31.4333,152.9000；PQQ 机场：en.wikipedia（镇西约 4 公里）",
+  },
+  {
+    id: "wagga-wagga", nameZh: "瓦加瓦加", nameEn: "Wagga Wagga", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 147.3689, lat: -35.1189,
+    airport: { iata: "WGA", nameZh: "瓦加瓦加机场", nameEn: "Wagga Wagga Airport", lon: 147.4664, lat: -35.1653 },
+    source: "Wagga Wagga -35.1189,147.3689；WGA 机场：en.wikipedia（Forest Hill，市区东南约 11 公里）",
+  },
+  {
+    id: "mildura", nameZh: "米尔迪拉", nameEn: "Mildura", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 142.1583, lat: -34.1889,
+    airport: { iata: "MQL", nameZh: "米尔迪拉机场", nameEn: "Mildura Airport", lon: 142.0856, lat: -34.2292 },
+    source: "Mildura -34.1889,142.1583；MQL 机场：en.wikipedia（市区西南约 7 公里）",
+  },
+  {
+    id: "phillip-island", nameZh: "菲利普岛（考斯）", nameEn: "Phillip Island (Cowes)", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 145.2419, lat: -38.4511,
+    source: "Cowes -38.4511,145.2419（en.wikipedia）；无机场，墨尔本机场约 2 小时，条目不写机场字段；企鹅归巢 -38.5100,145.1430",
+  },
+  {
+    id: "mackay", nameZh: "麦凯", nameEn: "Mackay", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 149.1858, lat: -21.1411,
+    airport: { iata: "MKY", nameZh: "麦凯机场", nameEn: "Mackay Airport", lon: 149.1825, lat: -21.1708 },
+    source: "Mackay -21.1411,149.1858；MKY 机场：en.wikipedia（South Mackay）",
+  },
+  {
+    id: "rockhampton", nameZh: "罗克汉普顿", nameEn: "Rockhampton", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 150.5136, lat: -23.3781,
+    airport: { iata: "ROK", nameZh: "罗克汉普顿机场", nameEn: "Rockhampton Airport", lon: 150.4750, lat: -23.3817 },
+    source: "Rockhampton -23.3781,150.5136；ROK 机场：en.wikipedia（West Rockhampton）",
+  },
+  {
+    id: "port-douglas", nameZh: "道格拉斯港", nameEn: "Port Douglas", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 145.4653, lat: -16.4833,
+    source: "Port Douglas -16.4833,145.4653（en.wikipedia）；无机场，凯恩斯机场约 60 公里/1 小时，条目不写机场字段",
+  },
+  {
+    id: "bunbury", nameZh: "邦伯里", nameEn: "Bunbury", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 115.6369, lat: -33.3272,
+    source: "Bunbury -33.3272,115.6369（en.wikipedia）；邦伯里机场（BUY）仅通用航空、无定期客运航班，珀斯约 175 公里 + Australind 列车，条目不写机场字段",
+  },
+  {
+    id: "kalgoorlie", nameZh: "卡尔古利—博尔德", nameEn: "Kalgoorlie-Boulder", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 121.4658, lat: -30.7489,
+    airport: { iata: "KGI", nameZh: "卡尔古利—博尔德机场", nameEn: "Kalgoorlie-Boulder Airport", lon: 121.4617, lat: -30.7894 },
+    source: "Kalgoorlie -30.7489,121.4658；KGI 机场：en.wikipedia（城南约 6 公里，仅珀斯航线）",
+  },
+  {
+    id: "port-lincoln", nameZh: "林肯港", nameEn: "Port Lincoln", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 135.8586, lat: -34.7322,
+    airport: { iata: "PLO", nameZh: "林肯港机场", nameEn: "Port Lincoln Airport", lon: 135.8803, lat: -34.6053 },
+    source: "Port Lincoln -34.7322,135.8586；PLO 机场：en.wikipedia（North Shields，镇北约 13 公里，仅阿德莱德航线）",
+  },
+  {
+    id: "burnie", nameZh: "伯尼", nameEn: "Burnie", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 145.8753, lat: -41.0636,
+    airport: { iata: "BWT", nameZh: "伯尼机场（温亚德）", nameEn: "Burnie Airport (Wynyard)", lon: 145.7311, lat: -40.9989 },
+    source: "Burnie -41.0636,145.8753；BWT 机场：en.wikipedia（在温亚德，距伯尼约 17 公里）",
+  },
+
+  // ── 澳大利亚 批4（2026-09-05） ──
+  {
+    id: "albury", nameZh: "奥尔伯里", nameEn: "Albury", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 146.9158, lat: -36.0806,
+    airport: { iata: "ABX", nameZh: "奥尔伯里机场", nameEn: "Albury Airport", lon: 146.9583, lat: -36.0683 },
+    source: "Albury -36.0806,146.9158（en.wikipedia）；ABX 机场：en.wikipedia（城东约 4 公里）；ABS 2021 Albury–Wodonga SUA",
+  },
+  {
+    id: "dubbo", nameZh: "达博", nameEn: "Dubbo", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 148.6011, lat: -32.2569,
+    airport: { iata: "DBO", nameZh: "达博地区机场", nameEn: "Dubbo Regional Airport", lon: 148.5750, lat: -32.2167 },
+    source: "Dubbo -32.2569,148.6011（en.wikipedia）；DBO 机场：en.wikipedia（城西北约 4 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "tamworth", nameZh: "塔姆沃思", nameEn: "Tamworth", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 150.9291, lat: -31.0906,
+    airport: { iata: "TMW", nameZh: "塔姆沃思机场", nameEn: "Tamworth Airport", lon: 150.8494, lat: -31.0839 },
+    source: "Tamworth -31.0906,150.9291（en.wikipedia）；TMW 机场：en.wikipedia（城西约 10 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "cessnock", nameZh: "塞斯诺克（猎人谷）", nameEn: "Cessnock (Hunter Valley)", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 151.3555, lat: -32.8342,
+    airport: { iata: "NTL", nameZh: "纽卡斯尔机场（威廉敦）", nameEn: "Newcastle (Williamtown)", lon: 151.8340, lat: -32.7950 },
+    source: "Cessnock -32.8342,151.3555（en.wikipedia）；本地 Cessnock Airport 无定期客运航班，与纽卡斯尔条目共用 NTL（约 53 公里）；ABS 2021 Morisset–Cooranbong 之外的 Cessnock SUA",
+  },
+  {
+    id: "warrnambool", nameZh: "瓦南布尔", nameEn: "Warrnambool", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 142.4880, lat: -38.3818,
+    source: "Warrnambool -38.3818,142.4880（en.wikipedia）；Warrnambool Airport（YWBL）无定期客运航班，条目不写机场字段，交通以 V/Line 铁路为主；ABS 2021 SUA",
+  },
+  {
+    id: "bright", nameZh: "布赖特", nameEn: "Bright", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 146.9597, lat: -36.7297,
+    source: "Bright -36.7297,146.9597（en.wikipedia）；无机场，最近商业机场为奥尔伯里 ABX（约 90 公里），条目不写机场字段；维多利亚高山区门户小镇（2021 普查约 2,600 人）",
+  },
+  {
+    id: "bundaberg", nameZh: "班达伯格", nameEn: "Bundaberg", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 152.3489, lat: -24.8661,
+    airport: { iata: "BDB", nameZh: "班达伯格机场", nameEn: "Bundaberg Airport", lon: 152.3186, lat: -24.9039 },
+    source: "Bundaberg -24.8661,152.3489（en.wikipedia）；BDB 机场：en.wikipedia（城西南约 5 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "hervey-bay", nameZh: "赫维湾", nameEn: "Hervey Bay", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 152.8235, lat: -25.2882,
+    airport: { iata: "HVB", nameZh: "赫维湾机场", nameEn: "Hervey Bay Airport", lon: 152.8817, lat: -25.3206 },
+    source: "Hervey Bay -25.2882,152.8235（en.wikipedia）；HVB 机场：en.wikipedia（乌兰甘，距市区约 9 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "geraldton", nameZh: "杰拉尔顿", nameEn: "Geraldton", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 114.6089, lat: -28.7744,
+    airport: { iata: "GET", nameZh: "杰拉尔顿机场", nameEn: "Geraldton Airport", lon: 114.7061, lat: -28.7964 },
+    source: "Geraldton -28.7744,114.6089（en.wikipedia）；GET 机场：en.wikipedia（城东约 11 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "esperance", nameZh: "埃斯佩兰斯", nameEn: "Esperance", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 121.8914, lat: -33.8613,
+    airport: { iata: "EPR", nameZh: "埃斯佩兰斯机场", nameEn: "Esperance Airport", lon: 121.8250, lat: -33.6831 },
+    source: "Esperance -33.8613,121.8914（en.wikipedia）；EPR 机场：en.wikipedia（吉布森，镇西北约 20 公里，仅珀斯航线）；ABS 2021 SUA",
+  },
+  {
+    id: "tanunda", nameZh: "塔南达（巴罗萨谷）", nameEn: "Tanunda (Barossa Valley)", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 138.9600, lat: -34.5233,
+    source: "Tanunda -34.5233,138.9600（en.wikipedia）；巴罗萨谷无机场，最近为阿德莱德 ADL（约 70 公里），条目不写机场字段；ABS 2021 Nuriootpa–Tanunda SUA",
+  },
+  {
+    id: "strahan", nameZh: "斯特拉恩", nameEn: "Strahan", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 145.3283, lat: -42.1531,
+    airport: { iata: "SRN", nameZh: "斯特拉恩机场", nameEn: "Strahan Airport", lon: 145.2914, lat: -42.1556 },
+    source: "Strahan -42.1531,145.3283（en.wikipedia）；SRN 机场：en.wikipedia（村西约 4 公里，Par Avion 每周三班往返霍巴特）；塔斯马尼亚荒野世界遗产区门户（2021 普查约 630 人）",
+  },
+];

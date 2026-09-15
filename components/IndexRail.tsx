@@ -174,6 +174,7 @@ export default function IndexRail({
           type="button"
           onClick={() => setPinned((p) => !p)}
           aria-label={title}
+          data-testid="rail-toggle"
           className="mb-1 flex h-8 w-8 items-center justify-center text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
         >
           <span className="text-[13px]">{expanded ? "‹" : "≡"}</span>
@@ -220,6 +221,7 @@ export default function IndexRail({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={searchPlaceholder}
+            data-testid="rail-search"
             className="mb-3 w-full shrink-0 rounded-lg border border-[color:var(--hairline)] bg-white/[0.03] px-3 py-1.5 text-[12px] text-[color:var(--ink)] placeholder:text-[color:var(--ink-faint)] focus:border-[color:var(--accent-line)] focus:outline-none"
           />
 
@@ -230,6 +232,7 @@ export default function IndexRail({
                   <button
                     key={item.id}
                     type="button"
+                    data-testid="rail-result"
                     onClick={() => pick(item.id)}
                     className={[
                       "flex flex-col border-b border-[color:var(--hairline)] py-2.5 text-left transition-colors",

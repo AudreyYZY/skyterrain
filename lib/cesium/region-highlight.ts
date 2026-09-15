@@ -7,6 +7,8 @@
  * 不再做染色填充和 3D 抬升。
  */
 
+import { TERRAIN_SAMPLE_TIMEOUT_MS } from "@/lib/cesium/camera-flight";
+
 // 统一暖琥珀 —— hover / focus 只是强弱不同，始终一眼可辨"这是被高亮的地块"
 export const REGION_CSS = "#d7dee8"; // 冷淡浅灰蓝，读作"界面选择线"而非"地物"
 export const REGION_RIM_ALPHA_HOVER = 0.3;
@@ -50,7 +52,12 @@ export async function sampleRegionGround(
       r.groundHeights = r.ringDeg.map(() => r.landmarkElev);
     } else {
       const carto = r.ringDeg.map(([lon, lat]) => Cesium.Cartographic.fromDegrees(lon, lat));
-      const sampled = await Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, carto);
+      // 同 camera-flight.ts：采样不带超时会一直挂着，抬升高亮就永远不出来
+      const sampled = await Promise.race([
+        Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, carto),
+        new Promise<null>((res) => setTimeout(() => res(null), TERRAIN_SAMPLE_TIMEOUT_MS)),
+      ]);
+      if (!sampled) throw new Error("terrain sample timeout");
       r.groundHeights = sampled.map((c) =>
         Number.isFinite(c.height) ? (c.height as number) : r.landmarkElev
       );

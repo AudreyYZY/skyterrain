@@ -24,10 +24,18 @@ import {
   planRouteFlight,
   sampleFlight,
   MAX_SPEED_OVER_HEIGHT,
+  curveSpeedAt,
   type FlightCurve,
   type Vec3,
 } from "../lib/cesium/route-flight.ts";
 import { bearingRadians, haversineMeters } from "../lib/geo.ts";
+import {
+  audioToPlanSec,
+  newFlightClock,
+  stepFlightClock,
+  START_WAIT_MAX_MS,
+  type NarrationSignal,
+} from "../lib/cesium/narration-clock.ts";
 import { ROUTE_ANCHORS } from "../lib/route-anchors.data.ts";
 import { buildAnchoringForNarration } from "../lib/route-anchors.ts";
 import { splitSentences } from "../lib/sentences.ts";
@@ -81,6 +89,9 @@ interface Row {
   oldMeanKmS: number;
 }
 const rows: Row[] = [];
+/** 镜头与解说的同步误差上限（秒，排镜时间轴上）—— 一句解说大约 5–10 秒 */
+const SYNC_TOL_SEC = 2;
+const syncStats: { id: string; scenario: string; maxErr: number }[] = [];
 let anchoredCount = 0;
 
 for (const route of getAllRoutes()) {
@@ -226,6 +237,61 @@ for (const route of getAllRoutes()) {
     fail(route.id, `转向过快：${maxTurn.toFixed(0)} 度/秒`);
   }
 
+  // ── 镜头时钟 × 真实解说播放（2026-09-14）─────────────────────────────
+  // 浏览器里实测：TTS 缓存未命中时解说要等几秒才开口，原来镜头照常起飞，整段领先解说。
+  // 现在镜头时钟跟着解说走（lib/cesium/narration-clock.ts）。这里按 20 Hz 模拟四种情况：
+  //   快缓存 / 慢合成 + 声音比估算慢一成 / 中等延迟 + 快一成 / TTS 彻底不出声，
+  // 断言：① 解说开口 6 秒之后镜头与解说在排镜时间轴上的误差 ≤ SYNC_TOL_SEC；
+  //       ② 追赶时也不越过糊画面红线；③ 解说永远不出声时，飞行最多多等 START_WAIT_MAX_MS。
+  {
+    const planNarr = anchoring?.narrationSec ?? narrationSec;
+    const SIM_DT = 50;
+    const scenarios: { name: string; latencyMs: number; factor: number; silent?: boolean }[] = [
+      { name: "缓存命中", latencyMs: 300, factor: 1.0 },
+      { name: "慢合成+慢一成", latencyMs: 12_000, factor: 1.1 },
+      { name: "中等延迟+快一成", latencyMs: 4_000, factor: 0.9 },
+      { name: "不出声", latencyMs: Infinity, factor: 1, silent: true },
+    ];
+    for (const sc of scenarios) {
+      const audioDurMs = planNarr * 1000 * sc.factor;
+      let clock = newFlightClock();
+      let wall = 0;
+      let maxErr = 0;
+      let maxOver = 0;
+      const durationMs = plan.durationSec * 1000;
+      while (clock.elapsedMs < durationMs && wall < durationMs * 3 + 60_000) {
+        wall += SIM_DT;
+        const audioMs = wall - sc.latencyMs;
+        const started = !sc.silent && audioMs >= 0;
+        const done = started && audioMs >= audioDurMs;
+        // audio.currentTime 在浏览器里大约 250ms 一跳
+        const quantSec = Math.floor(Math.max(0, audioMs) / 250) * 0.25;
+        const signal: NarrationSignal = started && !done
+          ? { started: true, done: false, planSec: audioToPlanSec(quantSec, audioDurMs / 1000, planNarr) }
+          : { started, done, planSec: 0 };
+        const pNow = Math.min(1, clock.elapsedMs / durationMs);
+        const speed = curveSpeedAt(curve, pNow);
+        const rateMax = (MAX_SPEED_OVER_HEIGHT * heightAt(pNow)) / Math.max(1, speed);
+        clock = stepFlightClock(clock, SIM_DT, signal, rateMax);
+        if (planNarr > 0 && started && !done && audioMs > 6_000 && clock.elapsedMs < durationMs) {
+          maxErr = Math.max(maxErr, Math.abs(signal.planSec - clock.elapsedMs / 1000));
+        }
+        maxOver = Math.max(maxOver, (speed * clock.rate) / heightAt(pNow));
+      }
+      if (sc.silent) {
+        if (wall > durationMs + START_WAIT_MAX_MS + 1000) {
+          fail(route.id, `解说不出声时飞行 ${(wall / 1000).toFixed(0)}s，超过 ${(plan.durationSec + START_WAIT_MAX_MS / 1000).toFixed(0)}s`);
+        }
+      } else if (maxErr > SYNC_TOL_SEC) {
+        fail(route.id, `「${sc.name}」镜头与解说差 ${maxErr.toFixed(1)}s（上限 ${SYNC_TOL_SEC}s）`);
+      }
+      if (maxOver > MAX_SPEED_OVER_HEIGHT * 1.02) {
+        fail(route.id, `「${sc.name}」追赶解说时每秒扫过 ${maxOver.toFixed(2)} 个取景高度（红线 ${MAX_SPEED_OVER_HEIGHT}）`);
+      }
+      syncStats.push({ id: route.id, scenario: sc.name, maxErr });
+    }
+  }
+
   rows.push({
     id: route.id,
     intl: route.depCountry !== route.arrCountry,
@@ -341,6 +407,16 @@ for (const r of durRows.slice(0, 6)) {
 }
 console.log(`  镜头时长中位 ${[...durRows].sort((a, b) => a.sec - b.sec)[Math.floor(durRows.length / 2)]!.sec.toFixed(0)}s · 干飞上限 ${MAX_SILENT_TAIL_SEC}s · 绝对上限 ${MAX_SINGLE_FLIGHT_SEC}s`);
 
+{
+  const byScenario = new Map<string, number[]>();
+  for (const r of syncStats) byScenario.set(r.scenario, [...(byScenario.get(r.scenario) ?? []), r.maxErr]);
+  console.log("\n镜头时钟跟随解说（模拟，解说开口 6 秒后在排镜时间轴上的误差）");
+  for (const [name, errs] of byScenario) {
+    if (name === "不出声") { console.log(`  ${name.padEnd(10)} ${errs.length} 条：最多在起飞位等 ${START_WAIT_MAX_MS / 1000}s 后照常飞完`); continue; }
+    console.log(`  ${name.padEnd(10)} ${errs.length} 条  中位 ${p(errs, 0.5).toFixed(2)}s  最大 ${p(errs, 1).toFixed(2)}s（上限 ${SYNC_TOL_SEC}s）`);
+  }
+  if (!syncStats.length) fail("sync", "一条都没模拟到 —— 这不是没问题，是脚本坏了");
+}
 console.log(`\n其中 ${anchoredCount} 条按解说锚点排镜头（第 4 步），其余按航点均匀停留`);
 console.log(`\n${rows.length} 条航线, ${failures} 项异常`);
 process.exit(failures > 0 ? 1 : 0);

@@ -16,6 +16,7 @@ export default function ModeToggle({ mode, onChange, language }: Props) {
         <button
           key={m}
           type="button"
+          data-testid={`mode-${m}`}
           onClick={() => onChange(m)}
           className={`rounded-full px-2.5 py-1 transition-colors ${
             mode === m

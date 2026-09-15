@@ -90,6 +90,7 @@ export default function RegionSelector({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
+        data-testid="region-toggle"
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-controls={listId}
@@ -125,6 +126,7 @@ export default function RegionSelector({
                 <button
                   type="button"
                   disabled={!hasData}
+                  data-testid={`region-${region.id}`}
                   onClick={() => hasData && handleSelect(region)}
                   className={[
                     "flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-[12px] transition-colors",

@@ -27,11 +27,11 @@ export async function cameraAt(
       ground = fallbackElevation;
     } else {
       try {
-        const [sampled] = await Cesium.sampleTerrainMostDetailed(
-          viewer.terrainProvider,
-          [cartographic]
+        const res = await withTimeout(
+          Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, [cartographic]),
+          TERRAIN_SAMPLE_TIMEOUT_MS,
         );
-        ground = sampled.height ?? fallbackElevation;
+        ground = res?.[0]?.height ?? fallbackElevation;
       } catch {
         ground = fallbackElevation;
       }
@@ -40,6 +40,17 @@ export async function cameraAt(
   }
 
   return Cesium.Cartesian3.fromDegrees(lon, lat, ground + heightAboveGround);
+}
+
+/**
+ * 地表高程采样的超时。sampleTerrainMostDetailed 本身不带超时：地形瓦片请求卡住（网络差、
+ * Cesium 请求调度被影像瓦片占满、无头浏览器软件渲染）时会一直挂着，航线就永远停在「航线加载中…」。
+ * 2026-09-14 浏览器自动化测试里复现过三分钟不返回。超时后回退到航点自带的海拔（镜头高度差几百米，无感）。
+ */
+export const TERRAIN_SAMPLE_TIMEOUT_MS = 6000;
+
+function withTimeout<T>(p: Promise<T>, ms: number): Promise<T | null> {
+  return Promise.race([p, new Promise<null>((r) => setTimeout(() => r(null), ms))]);
 }
 
 export async function preloadRoute(
@@ -70,11 +81,11 @@ export async function preloadRoute(
       Cesium.Cartographic.fromDegrees(w.lon, w.lat)
     );
     try {
-      const sampled = await Cesium.sampleTerrainMostDetailed(
-        viewer.terrainProvider,
-        positions
+      const sampled = await withTimeout(
+        Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, positions),
+        TERRAIN_SAMPLE_TIMEOUT_MS,
       );
-      sampled.forEach((p, i) => {
+      sampled?.forEach((p, i) => {
         const w = waypoints[i]!;
         cache.set(
           heightCacheKey(w.lon, w.lat),

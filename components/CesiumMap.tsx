@@ -21,7 +21,10 @@ import {
   sampleFlight,
   type FlightCurve,
   type RouteAnchoring,
+  curveSpeedAt,
+  MAX_SPEED_OVER_HEIGHT,
 } from "@/lib/cesium/route-flight";
+import { newFlightClock, stepFlightClock, type NarrationSignal } from "@/lib/cesium/narration-clock";
 import { quarticEaseOut, sleep, waitForTilesSettled } from "@/lib/cesium/utils";
 import {
   forwardRef,
@@ -88,6 +91,11 @@ export interface RouteFlyCallbacks {
    * 那里，这是「文字播报的地方和地图上的位置对不上」的正解。缺省则按航点均匀停留。
    */
   anchoring?: RouteAnchoring | null;
+  /**
+   * 解说实际播放进度（逐帧查询）。给了就让镜头时钟跟着真正出声的解说走 ——
+   * 没开口时在起飞位等、领先时放慢、落后时在不糊的上限内追。见 lib/cesium/narration-clock.ts。
+   */
+  narrationSignal?: () => NarrationSignal;
   onPreparingRoute?: () => void;
   onRouteReady?: () => void;
   onComplete: () => void;
@@ -141,6 +149,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const onReadyRef = useRef(onReady);
     onReadyRef.current = onReady;
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
+    /** 地球初始化完成之前被调用的动作用它等 viewer（轮询，最多 timeoutMs） */
+    const waitForViewer = async (timeoutMs: number): Promise<import("cesium").Viewer | null> => {
+      const t0 = Date.now();
+      while (Date.now() - t0 < timeoutMs) {
+        const v = viewerRef.current;
+        if (v && !v.isDestroyed()) return v;
+        await sleep(100);
+      }
+      return null;
+    };
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
@@ -427,10 +445,17 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
       flyRoute(route: FlightRoute, callbacks: RouteFlyCallbacks) {
         flightCancelledRef.current = false;
-        const viewer = viewerRef.current;
-        if (!viewer) return;
 
         void import("cesium").then(async (Cesium) => {
+          // 地球还没初始化完就点了「开始飞行」（慢网络 / 慢设备首屏要十几秒）：原来这里直接 return，
+          // 界面停在「航线加载中…」再也不动（2026-09-14 浏览器自动化测试复现）。现在等地球就绪，
+          // 等不到（60 秒）就按取消处理，把界面状态还原。
+          const viewer = viewerRef.current ?? (await waitForViewer(60_000));
+          if (!viewer || flightCancelledRef.current) {
+            setRoutePreparing(false);
+            callbacks.onCancelled?.();
+            return;
+          }
           const waypoints = resolveRouteWaypoints(route);
           if (waypoints.length < 2) return;
 
@@ -547,7 +572,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           canvas.addEventListener("pointerdown", relinquish, { passive: true });
 
           const durationMs = plan.durationSec * 1000;
-          let elapsedMs = 0;
+          let clock = newFlightClock();
           let lastFrameMs = performance.now();
           let firedUpTo = 0;
 
@@ -562,10 +587,19 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               //
               // 单帧推进封顶 100ms：标签页被切走时浏览器会停发 requestAnimationFrame，
               // 若直接用挂钟时间差，切回来的那一帧会把积攒的几十秒一次性走完，镜头瞬移。
+              //
+              // 节拍跟着真正出声的解说走（2026-09-14）：TTS 合成要几秒，原来镜头在请求解说的那一帧就起飞，
+              // 缓存未命中时整段领先解说十几秒。stepFlightClock 在解说开口前停在起飞位、之后按误差平滑调速。
               const now = performance.now();
-              elapsedMs += Math.min(100, Math.max(0, now - lastFrameMs));
+              const signal = callbacks.narrationSignal?.() ?? null;
+              const pNow = Math.min(1, clock.elapsedMs / durationMs);
+              const rateMax =
+                signal?.started && !signal.done
+                  ? (MAX_SPEED_OVER_HEIGHT * heightAt(pNow)) / Math.max(1, curveSpeedAt(curve, pNow))
+                  : 1;
+              clock = stepFlightClock(clock, now - lastFrameMs, signal, rateMax);
               lastFrameMs = now;
-              const p = Math.min(1, elapsedMs / durationMs);
+              const p = Math.min(1, clock.elapsedMs / durationMs);
               const { position, heading, segmentIndex } = sampleFlight(curve, p);
 
               if (!userTookOver) {

@@ -1,0 +1,127 @@
+import type { CityPoi } from "@/lib/places-registry";
+
+export const POIS: Record<string, CityPoi[]> = {
+  // 马来西亚
+  "kuala-lumpur": [
+    { nameZh: "双峰塔", nameEn: "Petronas Twin Towers", lon: 101.7118, lat: 3.1579, kind: "landmark" },
+    { nameZh: "独立广场", nameEn: "Merdeka Square", lon: 101.6947, lat: 3.1478, kind: "landmark" },
+    { nameZh: "黑风洞", nameEn: "Batu Caves", lon: 101.6839, lat: 3.2379, kind: "nature" },
+    { nameZh: "茨厂街", nameEn: "Petaling Street", lon: 101.6969, lat: 3.1436, kind: "district" },
+    { nameZh: "秋杰路", nameEn: "Brickfields", lon: 101.6856, lat: 3.1281, kind: "district" },
+  ],
+  "george-town": [
+    { nameZh: "姓氏桥", nameEn: "Clan Jetties", lon: 100.3419, lat: 5.4133, kind: "district" },
+    { nameZh: "张弼士故居", nameEn: "Cheong Fatt Tze Mansion", lon: 100.3364, lat: 5.4147, kind: "landmark" },
+    { nameZh: "升旗山", nameEn: "Penang Hill", lon: 100.2769, lat: 5.3986, kind: "nature" },
+    { nameZh: "康华利斯堡", nameEn: "Fort Cornwallis", lon: 100.3439, lat: 5.4225, kind: "landmark" },
+    { nameZh: "小印度", nameEn: "Little India", lon: 100.3378, lat: 5.4106, kind: "district" },
+  ],
+  "johor-bahru": [
+    { nameZh: "柔佛古皇宫博物馆", nameEn: "Sultan Abu Bakar Museum", lon: 103.7469, lat: 1.4569, kind: "landmark" },
+    { nameZh: "新山中央市场", nameEn: "Johor Bahru Central Market", lon: 103.7625, lat: 1.4553, kind: "district" },
+    { nameZh: "乐高乐园马来西亚", nameEn: "Legoland Malaysia", lon: 103.6317, lat: 1.4267, kind: "landmark" },
+    { nameZh: "新柔长堤", nameEn: "Johor–Singapore Causeway", lon: 103.7692, lat: 1.4636, kind: "landmark" },
+  ],
+  "malacca-city": [
+    { nameZh: "荷兰红屋广场", nameEn: "Dutch Square (Stadthuys)", lon: 102.2497, lat: 2.1936, kind: "landmark" },
+    { nameZh: "圣保罗山", nameEn: "St Paul's Hill", lon: 102.2486, lat: 2.1911, kind: "landmark" },
+    { nameZh: "鸡场街", nameEn: "Jonker Street", lon: 102.2478, lat: 2.1958, kind: "district" },
+    { nameZh: "峇峇娘惹博物馆", nameEn: "Baba-Nyonya Heritage Museum", lon: 102.2464, lat: 2.1961, kind: "landmark" },
+    { nameZh: "圣地亚哥城门", nameEn: "Porta de Santiago (A Famosa)", lon: 102.2494, lat: 2.1911, kind: "landmark" },
+  ],
+  ipoh: [
+    { nameZh: "东姑洞", nameEn: "Gua Tempurung", lon: 101.187, lat: 4.433, kind: "nature" },
+    { nameZh: "怡保旧城区壁画街", nameEn: "Ipoh Old Town Mural Street", lon: 101.0819, lat: 4.5967, kind: "district" },
+    { nameZh: "怡保火车站", nameEn: "Ipoh Railway Station", lon: 101.0808, lat: 4.5978, kind: "landmark" },
+    { nameZh: "近打老街", nameEn: "Concubine Lane", lon: 101.0819, lat: 4.5964, kind: "district" },
+  ],
+  "kota-kinabalu": [
+    { nameZh: "丹绒亚路海滩", nameEn: "Tanjung Aru Beach", lon: 116.0511, lat: 5.9425, kind: "nature" },
+    { nameZh: "加雅街", nameEn: "Gaya Street", lon: 116.0728, lat: 5.9836, kind: "district" },
+    { nameZh: "东姑阿都拉曼海洋公园", nameEn: "Tunku Abdul Rahman Marine Park", lon: 115.9967, lat: 6.0206, kind: "nature" },
+    { nameZh: "京那巴鲁山", nameEn: "Mount Kinabalu", lon: 116.5581, lat: 6.0754, kind: "nature" },
+    { nameZh: "信号山观景台", nameEn: "Signal Hill Observatory", lon: 116.0806, lat: 5.9822, kind: "landmark" },
+  ],
+  kuching: [
+    { nameZh: "古晋河滨长廊", nameEn: "Kuching Waterfront", lon: 110.3453, lat: 1.5583, kind: "district" },
+    { nameZh: "马格努宫", nameEn: "Astana", lon: 110.3478, lat: 1.5658, kind: "landmark" },
+    { nameZh: "砂拉越博物馆", nameEn: "Sarawak Museum", lon: 110.3475, lat: 1.5567, kind: "landmark" },
+    { nameZh: "巴哥国家公园", nameEn: "Bako National Park", lon: 110.47, lat: 1.72, kind: "nature" },
+    { nameZh: "古晋老巴刹", nameEn: "Old Bazaar", lon: 110.3444, lat: 1.5583, kind: "district" },
+  ],
+  "kota-bharu": [
+    { nameZh: "中央市场", nameEn: "Central Market (Pasar Siti Khadijah)", lon: 102.2417, lat: 6.1319, kind: "district" },
+    { nameZh: "伊斯兰艺术博物馆", nameEn: "Islamic Arts Museum", lon: 102.2394, lat: 6.1300, kind: "landmark" },
+    { nameZh: "吉兰丹河沿岸", nameEn: "Kelantan Riverside", lon: 102.2453, lat: 6.1350, kind: "nature" },
+  ],
+  kuantan: [
+    { nameZh: "德立海滩", nameEn: "Teluk Cempedak Beach", lon: 103.3628, lat: 3.8244, kind: "nature" },
+    { nameZh: "关丹州立清真寺", nameEn: "Kuantan State Mosque", lon: 103.3269, lat: 3.8083, kind: "landmark" },
+    { nameZh: "彭亨河口渔村", nameEn: "Pahang River-Mouth Fishing Village", lon: 103.3506, lat: 3.8092, kind: "district" },
+    { nameZh: "琴宁湖", nameEn: "Tasik Chini", lon: 102.89, lat: 3.42, kind: "nature" },
+  ],
+  sandakan: [
+    { nameZh: "山打根中央市场", nameEn: "Sandakan Central Market", lon: 118.1181, lat: 5.8394, kind: "district" },
+    { nameZh: "沙比洛红毛猩猩康复中心", nameEn: "Sepilok Orangutan Rehabilitation Centre", lon: 118.0797, lat: 5.8742, kind: "nature" },
+    { nameZh: "京那巴当岸河（苏高）", nameEn: "Kinabatangan River (Sukau)", lon: 118.35, lat: 5.50, kind: "nature" },
+    { nameZh: "艾格尼丝凯斯故居", nameEn: "Agnes Keith House", lon: 118.1164, lat: 5.8461, kind: "landmark" },
+  ],
+  miri: [
+    { nameZh: "加拿大山油井纪念公园", nameEn: "Canada Hill", lon: 113.9958, lat: 4.4064, kind: "landmark" },
+    { nameZh: "美里海滨长廊", nameEn: "Miri Waterfront", lon: 113.9903, lat: 4.4008, kind: "district" },
+    { nameZh: "姆鲁山国家公园", nameEn: "Gunung Mulu National Park", lon: 114.90, lat: 4.05, kind: "nature" },
+    { nameZh: "尼亚洞穴", nameEn: "Niah Caves", lon: 113.77, lat: 3.825, kind: "nature" },
+  ],
+  "langkawi-city": [
+    { nameZh: "浮罗交怡天空之桥", nameEn: "Langkawi Sky Bridge", lon: 99.6708, lat: 6.3831, kind: "landmark" },
+    { nameZh: "基林河喀斯特地质森林公园", nameEn: "Kilim Karst Geoforest Park", lon: 99.85, lat: 6.42, kind: "nature" },
+    { nameZh: "珍南海滩", nameEn: "Pantai Cenang", lon: 99.7286, lat: 6.2894, kind: "nature" },
+    { nameZh: "瓜镇免税购物区", nameEn: "Kuah Duty-Free District", lon: 99.8494, lat: 6.3181, kind: "district" },
+  ],
+  // ── 马来西亚 批2（2026-09-05）──
+  putrajaya: [
+    { nameZh: "布特拉清真寺", nameEn: "Putra Mosque", lon: 101.6900, lat: 2.9360, kind: "landmark" },
+    { nameZh: "首相署（布特拉大厦）", nameEn: "Perdana Putra", lon: 101.6910, lat: 2.9380, kind: "landmark" },
+    { nameZh: "布特拉广场", nameEn: "Putra Square", lon: 101.6900, lat: 2.9350, kind: "district" },
+    { nameZh: "斯里瓦瓦桑桥", nameEn: "Seri Wawasan Bridge", lon: 101.6850, lat: 2.9200, kind: "landmark" },
+    { nameZh: "铁清真寺", nameEn: "Tuanku Mizan Zainal Abidin Mosque", lon: 101.6800, lat: 2.9160, kind: "landmark" },
+    { nameZh: "布城湿地公园", nameEn: "Putrajaya Wetlands Park", lon: 101.7000, lat: 2.9700, kind: "nature" },
+  ],
+  "cameron-highlands": [
+    { nameZh: "丹那拉打镇", nameEn: "Tanah Rata Town", lon: 101.3833, lat: 4.4667, kind: "district" },
+    { nameZh: "BOH 茶园（双溪帕拉斯）", nameEn: "BOH Tea Plantation (Sungai Palas)", lon: 101.4100, lat: 4.5300, kind: "nature" },
+    { nameZh: "苔藓森林与布林昌山", nameEn: "Mossy Forest & Gunung Brinchang", lon: 101.3900, lat: 4.5200, kind: "nature" },
+    { nameZh: "碧兰璋镇", nameEn: "Brinchang", lon: 101.3900, lat: 4.4950, kind: "district" },
+    { nameZh: "草莓农场", nameEn: "Strawberry Farms", lon: 101.3950, lat: 4.5000, kind: "nature" },
+  ],
+  taiping: [
+    { nameZh: "太平湖公园", nameEn: "Taiping Lake Gardens", lon: 100.7450, lat: 4.8520, kind: "nature" },
+    { nameZh: "霹雳博物馆", nameEn: "Perak Museum", lon: 100.7420, lat: 4.8600, kind: "landmark" },
+    { nameZh: "太平动物园（夜间动物园）", nameEn: "Taiping Zoo & Night Safari", lon: 100.7530, lat: 4.8500, kind: "nature" },
+    { nameZh: "拉律山（麦斯威尔山）", nameEn: "Bukit Larut (Maxwell Hill)", lon: 100.7900, lat: 4.8600, kind: "nature" },
+    { nameZh: "十八丁红树林", nameEn: "Kuala Sepetang Mangroves", lon: 100.6300, lat: 4.8300, kind: "nature" },
+    { nameZh: "太平火车站", nameEn: "Taiping Station", lon: 100.7350, lat: 4.8500, kind: "transport" },
+  ],
+  "alor-setar": [
+    { nameZh: "扎希尔清真寺", nameEn: "Zahir Mosque", lon: 100.3670, lat: 6.1200, kind: "landmark" },
+    { nameZh: "亚罗士打塔", nameEn: "Alor Setar Tower", lon: 100.3690, lat: 6.1220, kind: "landmark" },
+    { nameZh: "大会堂", nameEn: "Balai Besar", lon: 100.3680, lat: 6.1195, kind: "landmark" },
+    { nameZh: "稻米博物馆", nameEn: "Paddy Museum", lon: 100.3500, lat: 6.1500, kind: "landmark" },
+    { nameZh: "星期三市集", nameEn: "Pekan Rabu", lon: 100.3700, lat: 6.1180, kind: "district" },
+    { nameZh: "瓜拉吉打码头（往兰卡威）", nameEn: "Kuala Kedah Jetty (Langkawi ferry)", lon: 100.2900, lat: 6.1000, kind: "transport" },
+  ],
+  semporna: [
+    { nameZh: "仙本那码头", nameEn: "Semporna Jetty", lon: 118.6100, lat: 4.4800, kind: "transport" },
+    { nameZh: "马布岛", nameEn: "Mabul Island", lon: 118.6300, lat: 4.2450, kind: "nature" },
+    { nameZh: "西巴丹岛", nameEn: "Sipadan Island", lon: 118.6280, lat: 4.1150, kind: "nature" },
+    { nameZh: "敦沙卡兰海洋公园（珍珠岛）", nameEn: "Tun Sakaran Marine Park (Bohey Dulang)", lon: 118.7700, lat: 4.6000, kind: "nature" },
+    { nameZh: "卡帕莱岛", nameEn: "Kapalai", lon: 118.6600, lat: 4.2300, kind: "nature" },
+  ],
+  sibu: [
+    { nameZh: "大伯公庙与七层宝塔", nameEn: "Tua Pek Kong Temple & Pagoda", lon: 111.8270, lat: 2.2880, kind: "landmark" },
+    { nameZh: "诗巫中央市场", nameEn: "Sibu Central Market", lon: 111.8290, lat: 2.2880, kind: "district" },
+    { nameZh: "天鹅像与市镇广场", nameEn: "Swan Statue & Town Square", lon: 111.8250, lat: 2.2870, kind: "landmark" },
+    { nameZh: "拉让江快艇码头", nameEn: "Rajang Express Boat Wharf", lon: 111.8300, lat: 2.2900, kind: "transport" },
+    { nameZh: "巴旺阿山伊班长屋", nameEn: "Bawang Assan Iban Longhouses", lon: 111.7000, lat: 2.2600, kind: "district" },
+  ],
+};
