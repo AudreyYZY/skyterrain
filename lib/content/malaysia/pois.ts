@@ -110,13 +110,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "星期三市集", nameEn: "Pekan Rabu", lon: 100.3700, lat: 6.1180, kind: "district" },
     { nameZh: "瓜拉吉打码头（往兰卡威）", nameEn: "Kuala Kedah Jetty (Langkawi ferry)", lon: 100.2900, lat: 6.1000, kind: "transport" },
   ],
-  semporna: [
-    { nameZh: "仙本那码头", nameEn: "Semporna Jetty", lon: 118.6100, lat: 4.4800, kind: "transport" },
-    { nameZh: "马布岛", nameEn: "Mabul Island", lon: 118.6300, lat: 4.2450, kind: "nature" },
-    { nameZh: "西巴丹岛", nameEn: "Sipadan Island", lon: 118.6280, lat: 4.1150, kind: "nature" },
-    { nameZh: "敦沙卡兰海洋公园（珍珠岛）", nameEn: "Tun Sakaran Marine Park (Bohey Dulang)", lon: 118.7700, lat: 4.6000, kind: "nature" },
-    { nameZh: "卡帕莱岛", nameEn: "Kapalai", lon: 118.6600, lat: 4.2300, kind: "nature" },
-  ],
   sibu: [
     { nameZh: "大伯公庙与七层宝塔", nameEn: "Tua Pek Kong Temple & Pagoda", lon: 111.8270, lat: 2.2880, kind: "landmark" },
     { nameZh: "诗巫中央市场", nameEn: "Sibu Central Market", lon: 111.8290, lat: 2.2880, kind: "district" },

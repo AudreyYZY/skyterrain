@@ -8,7 +8,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     identity:
       "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of 112.7 million in the 2024 census (Philippine Statistics Authority); its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
     layout:
-      "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao (Davao and others — the southern islands); Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
+      "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao in the south; Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
     gettingAround:
       "Domestic flights are hubbed at Ninoy Aquino International Airport in Manila, reaching major cities and islands nationwide; inter-island travel can also be done by ferry, with some outlying islands requiring multiple legs of transport. Taxis, jeepneys (converted mini-buses) and Grab ride-hailing are common ways to get around within cities. Visa-free arrangements for short-term visitors vary by nationality — check the Philippines' official current announcements.",
     culture:
@@ -62,29 +62,6 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Magellan's Cross and the Basilica del Santo Niño; Fort San Pedro; beach resorts on Mactan Island; local specialties such as Cebu lechon (roast pig); island-hopping to nearby islands (on the outskirts).",
     whenAndTips:
       "December to May is the dry season, a good time to explore Cebu and its surrounding islands; June to November is the wet and typhoon season — check the weather before travelling.",
-  },
-  "davao-city": {
-    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
-    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
-    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
-    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
-    //   达沃市 2024 年普查 **1,848,947** 人（2020 年 1,776,949）。**原文的「逾190万」比任何一期普查都高** —— 2024 年实际数比它还低，方向就是错的。
-    //   同条目「按行政区划面积计菲律宾陆地面积最大」复核后**仍成立**（2,443.61 km²，第二名普林塞萨港 2,381.02 km²）。
-    identity:
-      "Davao City is the largest city on Mindanao and, by land area, the largest city in the Philippines, with a population of about 1.85 million at the 2024 census; it is Mindanao's political and economic centre and the core gateway to Mount Apo.",
-    // howItWorks sources: 「按面积计菲律宾最大的城市（2,443.61 km²）」与「2024 年普查 1,848,947、大马尼拉之外人口最多」**均核实属实**；面积第二是普林塞萨港 2,381.02 km²，与该条目的「第二大」互相自洽。2026-09-12 核。
-    howItWorks:
-      "Davao City is a 'highly urbanized city' and the centre of the Davao Region, covering about 2,444 km², the largest city in the Philippines by area, though most of it is mountain and farmland and the urban area is a small corner; it is divided into three congressional districts, eleven administrative districts and 182 barangays, each barangay with an elected captain and council. It had about 1.85 million people at the 2024 census, the most populous city outside Metro Manila. The centre is the Poblacion district, with San Pedro Cathedral and the Roxas night market, while Lanang, Matina and Ecoland are the newer commercial and residential districts. Mount Apo, the highest peak in the Philippines, stands in the city's south-west, and Samal Island lies across the Davao Gulf to the east. Cebuano is the everyday language. The city is known for strict local ordinances — a smoking ban, a firecracker ban, speed limits — and durian is its emblem. There is no rail, and jeepneys, tricycles and cars carry the traffic. Addresses give number, street, barangay and city. Newcomers most often go wrong by picturing Davao as one big city, when most of its territory is mountain.",
-    layout:
-      "The city centre runs along Davao Gulf, with commercial and residential areas spread across a broad administrative territory; the silhouette of Mount Apo is clearly visible to the northeast of the city.",
-    gettingAround:
-      "Francisco Bangoy International Airport is about 6.9 km in a straight line from the city centre; taxis, jeepneys and Grab are the main ways to get around, with a drive or hired car of about 1.5–2 hours needed to reach Mount Apo.",
-    culture:
-      "The official languages are Filipino and English, with local indigenous communities and migrant populations together shaping Davao's diverse culture. Davao is known for orderly city governance and abundant tropical fruit, especially durian. Restaurant bills often already include service.",
-    seeAndDo:
-      "Hiking in Mount Apo National Park; the Davao Crocodile Park; People's Park; sampling durian and other tropical fruit; Eden Nature Park (on the outskirts).",
-    whenAndTips:
-      "Mindanao lies south of the main typhoon belt and has a relatively stable climate year-round; December to May sees less rainfall, a better season for climbing Mount Apo — book a permit and guide in advance.",
   },
   baguio: {
     // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。

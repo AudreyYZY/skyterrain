@@ -260,13 +260,11 @@ import sdkBki from "./sdk-bki.json" with { type: "json" };
 import kchMyy from "./kch-myy.json" with { type: "json" };
 // 菲律宾
 import mnlCeb from "./mnl-ceb.json" with { type: "json" };
-import mnlDvo from "./mnl-dvo.json" with { type: "json" };
 import mnlPps from "./mnl-pps.json" with { type: "json" };
 import mnlMph from "./mnl-mph.json" with { type: "json" };
 import mnlUsu from "./mnl-usu.json" with { type: "json" };
 import mnlTag from "./mnl-tag.json" with { type: "json" };
 import mnlDrp from "./mnl-drp.json" with { type: "json" };
-import cebDvo from "./ceb-dvo.json" with { type: "json" };
 // 印度尼西亚
 import cgkDps from "./cgk-dps.json" with { type: "json" };
 import cgkSub from "./cgk-sub.json" with { type: "json" };
@@ -564,13 +562,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   sdkBki,
   kchMyy,
   mnlCeb,
-  mnlDvo,
   mnlPps,
   mnlMph,
   mnlUsu,
   mnlTag,
   mnlDrp,
-  cebDvo,
   cgkDps,
   cgkSub,
   cgkKno,

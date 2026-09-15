@@ -47,21 +47,6 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     history:
       "The 1991 eruption coincided with Typhoon Yunya, and ash-laden rain added extra weight to roofs; a large share of the 847 deaths resulted from roof collapses. The resulting crater lake is today a well-known hiking destination in the Philippines.",
   },
-  "mount-apo": {
-    // 全六段 sources: 海拔 2954 m（主流口径；另有 2956 m 流传，未见 NAMRIA 重测）、菲律宾最高峰；1880 年达沃总督 Joaquín Rajal 首登；1936 年设国家公园（Proclamation No. 59）—— 为本库 mayon-volcano / hundred-islands-national-park「首座国家公园」改正提供了时间锚点。核实 2026-09-11，未改动
-    seeing:
-      "Mount Apo is the highest peak in the Philippines at 2,954 m, a dormant stratovolcano within the Apo-Talomo Mountain Range on Mindanao, its slopes covered in tall tropical hardwood forest.",
-    formation:
-      "Mount Apo is a dormant stratovolcano on the Pacific Ring of Fire, built up by long-term magmatic activity and the accumulation of pyroclastic material into its towering cone; solfataric (sulfur) vent activity persists near its summit, showing it remains dormant rather than extinct.",
-    observation:
-      "From the air, Mount Apo appears as a tall peak densely covered in tropical hardwood forest, its outline visible from Davao City 45 km away, forming a sharp vertical contrast with the lower-elevation terrain of Mindanao around it.",
-    distinguish:
-      "Both Mount Apo and Mount Pinatubo are Philippine stratovolcanoes, but Apo is the country's highest peak, a dormant volcano with ongoing summit sulfur-vent activity, while Pinatubo underwent a violent eruption in 1991 that formed a caldera.",
-    concept:
-      "Mount Apo National Park is an important habitat for the Philippine eagle and other rare species, making it an important sample for studying the relationship between altitudinal vegetation zonation on tropical mountains and the conservation of endangered flagship species.",
-    history:
-      "\"Apo\" means \"grandfather\" or \"revered elder\" in the local Manobo and Kalagan languages; the mountain is regarded as the home of the guardian spirit Apo Sandawa. Its first recorded ascent was in 1880, led by Davao governor Joaquin Rajal.",
-  },
   "mount-pulag": {
     // 全六段 sources: 海拔 2928 m、吕宋岛最高、全国第三（阿波山 2954 > 杜朗杜朗 2938 > 普拉格）—— 与 cordillera-central-luzon、mount-apo 并读一致。核实 2026-09-11，未改动
     seeing:
@@ -71,7 +56,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, Mount Pulag's summit is often shrouded each morning in a dense sea of cloud with only its peak breaking through, interweaving with the continuous mountainous terrain of the surrounding Cordillera Central to form one of the Philippines' best-known highland viewpoints.",
     distinguish:
-      "Both Mount Pulag and Mount Apo are high peaks in the Philippines, but Pulag is a non-volcanic high mountain within the Cordillera Central known for its sea-of-clouds views, while Apo is a dormant volcano still showing signs of activity.",
+      "Mount Pulag and Mayon Volcano are both well-known mountains of Luzon, but Pulag is a non-volcanic high mountain within the Cordillera Central known for its sea-of-clouds views, while Mayon is an active volcano with an almost symmetrical cone.",
     concept:
       "The open alpine grassland ecosystem at Mount Pulag's summit is an important sample for studying how non-forest vegetation zones form at high elevation in the tropics.",
     history:
@@ -266,41 +251,11 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air, the Cagayan River shows a broad, winding channel running through the extensive agricultural plain of the Cagayan Valley in northeastern Luzon, rice paddies and dryland crops interweaving along its banks, with a clear delta landform at its mouth near Aparri.",
     distinguish:
-      "Both the Cagayan River and Lake Lanao are important water bodies in the Philippines, but the Cagayan is a dynamic, flowing river running the length of Luzon, while Lake Lanao is a comparatively still tectonic lake on Mindanao.",
+      "The Cagayan River and Taal Lake are both important water bodies on Luzon, but the Cagayan is a dynamic, flowing river running the length of Luzon, while Taal Lake is a comparatively still lake in a volcanic caldera.",
     concept:
       "As the Philippines' highest-discharge river, the Cagayan's basin pattern is an important sample for studying the relationship between the mountain-valley-plain landform gradient of northeastern Luzon and agricultural development.",
     history:
       "The Cagayan Valley has historically been an important agricultural and population centre in northern Luzon, the river long providing irrigation water and inland shipping routes for the provinces of Cagayan, Isabela and others along its banks.",
-  },
-  "lake-lanao": {
-    seeing:
-      "Lake Lanao is the Philippines' second-largest lake, covering about 340 km² in Lanao del Sur Province on Mindanao, and one of the world's few so-called ancient lakes.",
-    formation:
-      "Lake Lanao formed when a basin between two mountain ranges was dammed by combined tectonic and volcanic activity, accompanied by the collapse of a large volcano — a classic case of tectonic and volcanic processes together shaping a large lake basin.",
-    observation:
-      "From the air, Lake Lanao's broad water surface is set among the interior mountains of Mindanao, mosque architecture dotting its shores, its water flowing north via the Agus River over the dramatic drop of Maria Cristina Falls.",
-    distinguish:
-      "Both Lake Lanao and Agusan Marsh are important wetland water bodies on Mindanao, but Lake Lanao is a higher-elevation lake of tectonic-volcanic origin, while Agusan Marsh is a low-elevation marsh wetland formed on a river floodplain.",
-    concept:
-      "Lake Lanao is home to 18 endemic Philippine cyprinid fish species, making it an important sample for studying how long-term evolution in an isolated ancient lake produces endemic species radiation.",
-    // history sources: 面积约 340 km²、菲律宾第二大湖、18 种特有鲤科鱼类。「古老湖泊」全球计数文献 15–20 不等，原 seeing 写 17、concept 写 15 自相矛盾，两处都改为不带计数。阿古斯水电占棉兰老岛用电：原写「约七成」（约 2013–2015 年状态）；NPC 官方「逾 50%」未注时点、DOE 2023–24 经媒体转述约三成，冲突且最新值只有 3 级来源，**只写定性下降、不补数字**，下轮找 DOE 原始数据回来补。⚠️ 红线自查：玛拉瑙人信仰只作人口学事实，未涉自治 / 冲突。核实 2026-09-11
-    history:
-      "The Agus River hydroelectric system fed by Lake Lanao has long been one of Mindanao's main power sources (its share has fallen markedly in recent years as coal-fired capacity expanded); the Maranao people who live around the lake are almost entirely Muslim, and numerous mosques are found around its shores.",
-  },
-  "agusan-marsh": {
-    // 全六段 sources: 40,940.96 ha；1999-11-12 列入拉姆萨尔（Ramsar RIS 1009，1 级）；2018-11-08 东盟遗产公园（ASEAN Centre for Biodiversity，1 级）。⚠️ 红线自查：未涉棉兰老自治 / 冲突。核实 2026-09-11，未改动
-    seeing:
-      "Agusan Marsh is an extensive floodplain wetland in the Agusan River basin of northeastern Mindanao, its legislated protected area covering about 40,941 ha, inscribed on the Ramsar List of Wetlands of International Importance in 1999.",
-    formation:
-      "Agusan Marsh is a low-lying floodplain formed where multiple tributaries of the Agusan River basin converge over a long period; seasonal floods repeatedly inundate the marsh, and long-term vegetation colonisation combined with peat accumulation has shaped today's extensive swamp forest and peat swamp forest.",
-    observation:
-      "From the air, Agusan Marsh shows open water interwoven with dense swamp forest, a crisscrossing network of channels, forming Mindanao's largest contiguous inland wetland ecosystem.",
-    distinguish:
-      "Both Agusan Marsh and Lake Lanao are important wetland water bodies on Mindanao, but Agusan Marsh is a low-elevation river floodplain marsh known for its peat swamp forest, while Lake Lanao is a higher-elevation lake of tectonic-volcanic origin.",
-    concept:
-      "Agusan Marsh preserves the largest surviving peat swamp forest in the Philippines, making it an important sample for studying the long-term flood-storage and carbon-storage functions of tropical river floodplain wetlands.",
-    history:
-      "Agusan Marsh has long provided flood-storage capacity for Butuan City and the surrounding area, easing downstream flood pressure; it was recognised as an ASEAN Heritage Park in 2018.",
   },
   "hundred-islands-national-park": {
     seeing:

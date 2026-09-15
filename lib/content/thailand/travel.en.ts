@@ -137,23 +137,23 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
     //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Chiang Rai is the capital of Thailand's northernmost province, with a registered municipal population of about 74,000 in 2025, near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+      "Chiang Rai is the capital of Thailand's northernmost province, with a registered municipal population of about 74,000 in 2025, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     // howItWorks sources: 清莱府 DOPA 登记 **1,297,657 人（2024）**，与正文「约 130 万」精确吻合。
     //   清莱市自治市最近可查为 **69,888 人（2012）**，与「约 7 万」大致吻合 —— **年份很旧**，
     //   本轮未找到更新数据（DOPA 一手站点 stat.bora.dopa.go.th 直连失败）。3 级，2026-09-08 核。
     //   下一轮换网络环境直连 DOPA 复核市一级的数。
     howItWorks:
-      "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 74,000 people in 2025, while the province held about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, the Golden Triangle about 55 km north-east at Chiang Saen, the Myanmar border at Mae Sai about 60 km and Doi Tung to the north-west. Newcomers most often go wrong by expecting the White Temple and the Golden Triangle in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
+      "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 74,000 people in 2025, while the province held about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, and the Mae Salong tea hills in the mountains to the north-west. Newcomers most often go wrong by expecting the White Temple and the hill tea plantations in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
     layout:
-      "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the Golden Triangle viewpoint at the confluence of the Mekong and Ruak rivers lies in the province's north.",
+      "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the north and north-west of the province are mountainous.",
     gettingAround:
-      "Chiang Rai International Airport is about 6.4 km in a straight line from the city centre; a car or hired driver is recommended for the Golden Triangle viewpoint and the Mae Sai border crossing.",
+      "Chiang Rai International Airport is about 6.4 km in a straight line from the city centre; a car or hired driver is recommended for the temples outside town and the hill tea plantations.",
     culture:
       "Chiang Rai Province is home to several of northern Thailand's hill-tribe communities, and traditional handicrafts and produce from these communities are common at local markets.",
     seeAndDo:
-      "Wat Rong Khun (the White Temple, a contemporary Buddhist art building); the Blue Temple; the Black House museum; the Golden Triangle history and opium museum; the hillside tea plantations of Mae Salong.",
+      "Wat Rong Khun (the White Temple, a contemporary Buddhist art building); the Blue Temple; the Black House museum; the hillside tea plantations of Mae Salong.",
     whenAndTips:
-      "November to February, the cool season, is most pleasant, with cooler mornings in the hills; the Golden Triangle viewpoint sits at the meeting point of Thailand, Myanmar, and Laos, so stay within official border-crossing areas and follow local border regulations.",
+      "November to February, the cool season, is most pleasant, with cooler mornings in the hills. The north of the province lies near the national border; keep trips to the city and the main sights, and don't travel to border crossings or across them.",
   },
   "koh-samui": {
     // identity sources: 苏梅岛 DOPA 登记人口 **70,059 人（2019）**；面积约 229 km²，按面积计是泰国第二大岛
@@ -343,33 +343,6 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Wat Phra That Lampang Luang; the Kad Kong Ta weekend night market; the Ratsadaphisek bridge and the Wang riverside; the Burmese temples (Wat Si Rong Muang, Wat Chedi Sao); a horse-carriage tour of the old town; the Thai Elephant Conservation Center; ceramics workshops (rooster bowls); the Chae Son hot springs and falls; the hilltop Wat Phra That Doi Phra Chan.",
     whenAndTips:
       "November–February is most comfortable and the season of the weekend market; March–April brings haze. A day for the town, a day for the outlying temple and the elephant centre. A quieter Lanna destination than Chiang Mai, linked with Phitsanulok or Sukhothai.",
-  },
-  "hat-yai": {
-    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
-    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
-    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
-    //   合艾市自治市（เทศบาลนครหาดใหญ่）**2025-12-31 登记 138,582 人**（3 级转引 DOPA，2026-09-09 核）。
-    //   **原文的「约 19 万」在这条曲线上找不到任何一年能对上**：1994 年 152,438 → 2003 年峰值 160,669 →
-    //   2017 年 159,233 → 2025 年 138,582，持续下降。
-    //   **「与宋卡合成约 65 万人的都会区」查无官方口径**，已删；唯一查到的类似表述是一句未标年份与出处的
-    //   「หาดใหญ่-สงขลา 都会区约 103 万」，与 65 万本身也对不上。
-    identity:
-      "Hat Yai lies in Songkhla Province in southern Thailand about 50 km from the Malaysian border, with a town population of about 139,000 in 2025 — the largest city and commercial centre of the south. It grew as a railway junction and is now a shopping and eating destination for Malaysian and Singaporean visitors: Kim Yong Market, the night markets and the southern Thai street food are its draws, and the hill in the municipal park carries a great Buddha and a cable car. Songkhla, about 30 km north-east, has an old town, Samila Beach and Songkhla Lake. Hat Yai's airport is one of southern Thailand's main airports, with flights to Kuala Lumpur and Singapore.",
-    // howItWorks sources: 站点规模：查不到「泰国南部最大的车站」的官方排名口径（站台数／客运量／官方声明都没有），只能核到「一等站」「南部最重要的枢纽」与 6 站台 16 股道、泰国最南端机务段这些可核事实，已据此降级（C1b）。跨境铁路：合艾—巴东勿刹每日两班、约 50 分钟，2026-10-01 起车次编号由 947/948/949/950 改为 741/742/743/744 并涨价（3 级）。2026-09-12 核。
-    // howItWorks sources: 直线 12.4 公里；两段统一为约 13 公里。
-    howItWorks:
-      "Hat Yai is the largest city of southern Thailand, yet not a provincial seat: it lies in Songkhla province, whose governor is appointed by the Ministry of Interior and whose seat is the town of Songkhla 30 km away, while Hat Yai is the region's commercial centre. The city is a 'city municipality' with an elected mayor and council, with a registered municipal population of about 139,000 in 2025; figures for the wider built-up and metropolitan areas have no reliable official basis. The city was born of the railway: Hat Yai Junction is a first-class station of the State Railway of Thailand, with six platforms and sixteen tracks and the country's southernmost locomotive depot, the Southern Line runs from here to Padang Besar and Malaysia, the border lies 60 km away, and Malaysian and Singaporean visitors give its commerce a cross-border flavour. Kim Yong Market is the city's heart, and Prince of Songkla University lies on its southern edge. Thai Chinese and Thai Malay residents form a noticeably larger share than in other Thai cities. The airport lies to the south-west. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Hat Yai for the seat of Songkhla province, when the seat is the smaller, older town of Songkhla by the sea.",
-    layout:
-      "The city spreads around Hat Yai Junction station, with Niphat Uthit roads 1–3 as the hotel, dining and shopping streets and Kim Yong Market in the centre; the municipal park lies on a hillside about 6 km south-east, with a cable car linking the Buddha and the Guanyin statue. The airport is about 13 km west. Songkhla lies about 26 km in a straight line north-east: the old town (Nakhon Nok and Nakhon Nai roads) sits by the outlet of Songkhla Lake, Samila Beach and the mermaid statue at the northern tip of the peninsula, and Chinatown and the temples within the old town.",
-    // gettingAround sources: 机场距离：注册表坐标算出直线 12.4 公里；原文短于直线、不可能成立，已改。
-    gettingAround:
-      "Hat Yai International Airport (HDY), about 13 km from the city, has flights to Bangkok (Don Mueang and Suvarnabhumi) and Chiang Mai and to Kuala Lumpur and Singapore. Trains from Bangkok take about 14–16 hours (overnight); Hat Yai is the hub of the southern line, with trains towards Malaysia (change at Padang Besar); buses take about 4 hours from Penang and about 7 from Kuala Lumpur. In town use songthaews, tuk-tuks and motorbike taxis; Songkhla is about 40 minutes by minibus. The climate is tropical monsoon, wet from April to December and drier from January to March.",
-    culture:
-      "Thai and the southern dialect are spoken, the Chinese community is large, and Hokkien and Malay are common. Hat Yai is a food city — Hat Yai fried chicken, noodles, dim sum breakfasts, night-market grills — and Kim Yong Market sells dried goods and snacks. The Buddha in the municipal park is a religious site — dress modestly. Songkhla's old town has murals and cafés in old shophouses. Chinese temples are lively at the Hungry Ghost and Nine Emperor Gods festivals. Tipping is not expected.",
-    seeAndDo:
-      "Kim Yong Market and the night markets (ASEAN and Greenway); the municipal park (the Buddha, the Guanyin statue, the cable car); Hat Yai fried chicken and dim sum; a walk through Songkhla old town; Samila Beach and the mermaid statue; Songkhla Lake and the Tang Kuan hill lookout; Ton Nga Chang waterfall; the Khlong Hae floating market.",
-    whenAndTips:
-      "January–March is driest and most comfortable; showers are common from April to December, heaviest in October–December. A day for the city, half a day to a day for Songkhla. The gateway into southern Thailand by land from Malaysia, linked with Surat Thani and Penang.",
   },
   "ko-chang": {
     identity:

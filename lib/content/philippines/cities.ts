@@ -14,12 +14,6 @@ export const CITIES: CityEntry[] = [
     source: "宿务市中心 10.3157,123.8854；CEB机场（位于麦克坦岛，距市区约16km）：公开资料",
   },
   {
-    id: "davao-city", nameZh: "达沃市", nameEn: "Davao City", country: "philippines", tier: "major", zone: "ph-mindanao", admin1Zh: "南达沃省", admin1En: "Davao del Sur",
-    lon: 125.6128, lat: 7.0731,
-    airport: { iata: "DVO", nameZh: "弗朗西斯科·邦戈伊国际机场", nameEn: "Francisco Bangoy International Airport", lon: 125.6458, lat: 7.1255 },
-    source: "达沃市中心 7.0731,125.6128；DVO机场（距市区约11km）：公开资料",
-  },
-  {
     id: "baguio", nameZh: "碧瑶", nameEn: "Baguio", country: "philippines", tier: "major", zone: "ph-luzon", admin1Zh: "本格特省", admin1En: "Benguet",
     lon: 120.5960, lat: 16.4023,
     airport: { iata: "MNL", nameZh: "尼诺伊·阿基诺国际机场", nameEn: "Ninoy Aquino International Airport", lon: 121.0198, lat: 14.5086 },

@@ -166,8 +166,8 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "en-US": { perSentence: [0, 0, 0, 0, 0, 2, 3, 3, 3], source: "auto" },
   },
   "can-syd": {
-    "zh-CN": { perSentence: [0, 1, 2, 2, 2, 2, 2, 3, 4, 4], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 2, 2, 2, 2, 3, 4, 4], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 1, 1, 1, 1, 2, 3, 3], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 1, 1, 1, 1, 2, 3, 3], source: "auto" },
   },
   "can-tas": {
     "zh-CN": { perSentence: [0, 1, 2, 2, 2, 2, 3, 3, 3, 5, 5, 5, 5], source: "auto" },
@@ -588,10 +588,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
   "mnl-drp": {
     "zh-CN": { perSentence: [0, 0, 1], source: "auto" },
     "en-US": { perSentence: [0, 0, 1], source: "auto" },
-  },
-  "mnl-dvo": {
-    "zh-CN": { perSentence: [0, 1, 1], source: "auto" },
-    "en-US": { perSentence: [0, 1, 1], source: "auto" },
   },
   "mnl-tag": {
     "zh-CN": { perSentence: [0, 1, 1], source: "auto" },

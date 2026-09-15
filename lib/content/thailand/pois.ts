@@ -37,7 +37,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "白龙寺", nameEn: "Wat Rong Khun (White Temple)", lon: 99.7736, lat: 19.8067, kind: "landmark" },
     { nameZh: "蓝庙", nameEn: "Wat Rong Suea Ten (Blue Temple)", lon: 99.8189, lat: 19.9350, kind: "landmark" },
     { nameZh: "黑屋博物馆", nameEn: "Baan Dam Museum", lon: 99.8378, lat: 19.9622, kind: "landmark" },
-    { nameZh: "金三角景观区", nameEn: "Golden Triangle", lon: 100.0856, lat: 20.3556, kind: "nature" },
   ],
   "koh-samui": [
     { nameZh: "查汶海滩", nameEn: "Chaweng Beach", lon: 100.0611, lat: 9.5386, kind: "nature" },
@@ -85,13 +84,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "拉差纳达拉桥", nameEn: "Ratsadaphisek Bridge", lon: 99.4980, lat: 18.2900, kind: "landmark" },
     { nameZh: "泰国大象保护中心", nameEn: "Thai Elephant Conservation Center", lon: 99.3050, lat: 18.3950, kind: "nature" },
     { nameZh: "南邦火车站", nameEn: "Nakhon Lampang Station", lon: 99.4830, lat: 18.2820, kind: "transport" },
-  ],
-  "hat-yai": [
-    { nameZh: "金荣市场", nameEn: "Kim Yong Market", lon: 100.4700, lat: 7.0080, kind: "district" },
-    { nameZh: "合艾市立公园（大佛与缆车）", nameEn: "Hat Yai Municipal Park", lon: 100.4900, lat: 6.9950, kind: "nature" },
-    { nameZh: "合艾火车站", nameEn: "Hat Yai Junction", lon: 100.4700, lat: 7.0060, kind: "transport" },
-    { nameZh: "宋卡老城", nameEn: "Songkhla Old Town", lon: 100.5900, lat: 7.1990, kind: "district" },
-    { nameZh: "沙米拉海滩（美人鱼像）", nameEn: "Samila Beach", lon: 100.5950, lat: 7.2100, kind: "nature" },
   ],
   "ko-chang": [
     { nameZh: "白沙滩", nameEn: "White Sand Beach", lon: 102.2900, lat: 12.1200, kind: "nature" },
