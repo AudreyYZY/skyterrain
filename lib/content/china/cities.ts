@@ -1023,4 +1023,24 @@ export const CITIES: CityEntry[] = [
     lon: 107.7863, lat: 29.4399,
     source: "锚点天生三桥 29.4399,107.7863（OSM；游客最集中的景区）；重庆市武隆区；重庆仙女山机场 CQW 距天生三桥直线约 9.4 km，但 2025 年全年起降 208 架次（民航局《2025年全国民用运输机场吞吐量排名》，1 级），不能算有定期航班，条目不写机场字段；重庆江北 CKG 直线约 115 km（按坐标算）；渝怀铁路武隆站 Wikidata 29.3299,107.7682（Tier 3 名镇批 2，2026-09-15）",
   },
+  {
+    id: "emeishan", nameZh: "峨眉山", nameEn: "Emeishan (Mount Emei)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 103.4822, lat: 29.6017,
+    source: "峨眉山市区 29.6017,103.4822（OSM）；乐山市代管的县级市；市境无民用机场，成都双流 CTU 直线约 115 km；乐山机场 2026-07 完成验证试飞、民航局 2025 年排名无乐山、截至 2026-09 未见正式通航，不填 airport（Tier 3 名镇批 3，2026-09-16）",
+  },
+  {
+    id: "dengfeng", nameZh: "登封", nameEn: "Dengfeng", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 113.0445, lat: 34.4552,
+    source: "登封市区 34.4552,113.0445（OSM）；郑州市代管的县级市；无民用机场，郑州新郑 CGO 直线约 74 km、洛阳 LYA 约 68 km，不填 airport；UNESCO 1305（2010）8 处 11 项坐标取 UNESCO（Tier 3 名镇批 3，2026-09-16）",
+  },
+  {
+    id: "qiandaohu", nameZh: "千岛湖（淳安）", nameEn: "Qiandao Lake (Chun'an)", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 119.0369, lat: 29.6121,
+    source: "淳安县政府（千岛湖镇）29.6121,119.0369（OSM）；杭州市淳安县；无民用机场，衢州 JUZ 直线约 73 km、黄山屯溪 TXN 约 77 km、杭州萧山 HGH 约 151 km，不填 airport（Tier 3 名镇批 3，2026-09-16）",
+  },
+  {
+    id: "nanyue", nameZh: "南岳（衡山）", nameEn: "Nanyue (Mount Heng)", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 112.7321, lat: 27.2352,
+    source: "南岳区政府 27.2352,112.7321（OSM）；衡阳市南岳区（与湖南省南岳管理局一套人马，区政府网 1 级）；无机场，衡阳南岳机场 HNY 在衡阳市区以南、直线约 58 km，不填 airport；不用 hengshan 作 id（衡山县是另一个县）（Tier 3 名镇批 3，2026-09-16）",
+  },
 ];

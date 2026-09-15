@@ -238,8 +238,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "河南博物院", nameEn: "Henan Museum", lon: 113.660, lat: 34.795, kind: "landmark" },
     { nameZh: "黄河风景名胜区", nameEn: "Yellow River Scenic Area", lon: 113.470, lat: 34.920, kind: "nature" },
     { nameZh: "二七纪念塔", nameEn: "Erqi Memorial Tower", lon: 113.652, lat: 34.751, kind: "landmark" },
-    { nameZh: "少林寺", nameEn: "Shaolin Temple", lon: 112.935, lat: 34.508, kind: "landmark" },
-    { nameZh: "中岳庙", nameEn: "Zhongyue Temple", lon: 113.100, lat: 34.490, kind: "landmark" },
     { nameZh: "郑州商城遗址", nameEn: "Zhengzhou Shang City Ruins", lon: 113.680, lat: 34.750, kind: "landmark" },
   ],
 
@@ -526,7 +524,6 @@ export const POIS: Record<string, CityPoi[]> = {
   leshan: [
     { nameZh: "乐山大佛", nameEn: "Leshan Giant Buddha", lon: 103.7717, lat: 29.5453, kind: "landmark" },
     { nameZh: "凌云山·乌尤山", nameEn: "Lingyun & Wuyou Hills", lon: 103.7700, lat: 29.5480, kind: "nature" },
-    { nameZh: "峨眉山金顶", nameEn: "Mount Emei Golden Summit", lon: 103.3340, lat: 29.5200, kind: "nature" },
   ],
   kaili: [
     { nameZh: "西江千户苗寨", nameEn: "Xijiang Qianhu Miao Village", lon: 108.1702, lat: 26.4956, kind: "district" },
@@ -1261,5 +1258,37 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "仙女山", nameEn: "Fairy Mountain", lon: 107.76415, lat: 29.43138, kind: "nature" },
     { nameZh: "芙蓉洞", nameEn: "Furong Cave", lon: 107.90333, lat: 29.22889, kind: "nature" },
     { nameZh: "武隆站", nameEn: "Wulong Station", lon: 107.76823, lat: 29.32993, kind: "transport" },
+  ],
+  emeishan: [
+    { nameZh: "报国寺", nameEn: "Baoguo Temple", lon: 103.4404, lat: 29.5705, kind: "landmark" },
+    { nameZh: "伏虎寺", nameEn: "Fuhu Temple", lon: 103.4341, lat: 29.5633, kind: "landmark" },
+    { nameZh: "清音阁", nameEn: "Qingyin Pavilion", lon: 103.3921, lat: 29.5738, kind: "landmark" },
+    { nameZh: "万年寺", nameEn: "Wannian Temple", lon: 103.3806, lat: 29.582, kind: "landmark" },
+    { nameZh: "峨眉山金顶（华藏寺）", nameEn: "Golden Summit (Huazang Temple)", lon: 103.3371, lat: 29.5228, kind: "nature" },
+    { nameZh: "峨眉山站", nameEn: "Emeishan Railway Station", lon: 103.4647, lat: 29.5786, kind: "landmark" },
+  ],
+  dengfeng: [
+    { nameZh: "少林寺", nameEn: "Shaolin Temple", lon: 112.9352, lat: 34.5085, kind: "landmark" },
+    { nameZh: "中岳庙", nameEn: "Zhongyue Temple", lon: 113.0677, lat: 34.4593, kind: "landmark" },
+    { nameZh: "嵩阳书院", nameEn: "Songyang Academy", lon: 113.0272, lat: 34.4814, kind: "landmark" },
+    { nameZh: "嵩岳寺塔", nameEn: "Songyue Temple Pagoda", lon: 113.0159, lat: 34.5016, kind: "landmark" },
+    { nameZh: "观星台", nameEn: "Dengfeng Observatory", lon: 113.1407, lat: 34.4026, kind: "landmark" },
+    { nameZh: "峻极峰", nameEn: "Junji Peak", lon: 113.0407, lat: 34.5111, kind: "nature" },
+  ],
+  qiandaohu: [
+    { nameZh: "东南湖区旅游码头", nameEn: "South-east lake area tourist pier", lon: 119.0703, lat: 29.5871, kind: "landmark" },
+    { nameZh: "龙山岛", nameEn: "Longshan Island", lon: 118.9762, lat: 29.6086, kind: "nature" },
+    { nameZh: "渔乐岛", nameEn: "Yule Island", lon: 118.9383, lat: 29.578, kind: "nature" },
+    { nameZh: "黄山尖", nameEn: "Huangshanjian", lon: 118.9334, lat: 29.6734, kind: "nature" },
+    { nameZh: "淳安县博物馆", nameEn: "Chun'an County Museum", lon: 119.1068, lat: 29.5979, kind: "landmark" },
+    { nameZh: "千岛湖站", nameEn: "Qiandao Lake Railway Station", lon: 119.1869, lat: 29.7377, kind: "landmark" },
+  ],
+  nanyue: [
+    { nameZh: "南岳大庙", nameEn: "Grand Temple of Nanyue", lon: 112.7288, lat: 27.2484, kind: "landmark" },
+    { nameZh: "祝融峰", nameEn: "Zhurong Peak", lon: 112.6897, lat: 27.2972, kind: "nature" },
+    { nameZh: "藏经殿", nameEn: "Cangjing Hall", lon: 112.6731, lat: 27.2774, kind: "landmark" },
+    { nameZh: "方广寺", nameEn: "Fangguang Temple", lon: 112.6383, lat: 27.2341, kind: "landmark" },
+    { nameZh: "游客服务中心", nameEn: "Visitor centre", lon: 112.7263, lat: 27.25, kind: "landmark" },
+    { nameZh: "衡山西站", nameEn: "Hengshan West Station", lon: 112.7838, lat: 27.2511, kind: "landmark" },
   ],
 };
