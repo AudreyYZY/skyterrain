@@ -308,6 +308,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "hr-dalmatia": { zh: "达尔马提亚", en: "Dalmatia", order: 392 },
   "hr-dubrovnik": { zh: "杜布罗夫尼克地区", en: "Dubrovnik Region", order: 393 },
   "hr-slavonia": { zh: "斯拉沃尼亚", en: "Slavonia", order: 394 },
+  "hr-north": { zh: "克罗地亚北部", en: "Northern Croatia", order: 395 },
   // 捷克
   "cz-prague": { zh: "布拉格地区", en: "Prague Region", order: 400 },
   "cz-west-bohemia": { zh: "西波希米亚", en: "West Bohemia", order: 401 },

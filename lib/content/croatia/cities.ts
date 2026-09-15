@@ -59,4 +59,14 @@ export const CITIES: CityEntry[] = [
     lon: 13.5935, lat: 45.2280,
     source: "波雷奇老城半岛 45.2280,13.5935（取尤弗拉西苏斯圣殿与德库马努斯之间，OSM / UNESCO 坐标）；普拉 PUY 直线约 45 km（按 OurAirports 算），附近小机场无定期航班，不填机场字段；最近火车站帕津直线约 27 km；UNESCO 809（1997）（已有城市补充批，2026-09-15）",
   },
+  {
+    id: "varazdin", nameZh: "瓦拉日丁", nameEn: "Varaždin", country: "croatia", tier: "notable", zone: "hr-north", admin1Zh: "瓦拉日丁县", admin1En: "Varaždin County",
+    lon: 16.3379, lat: 46.3081,
+    source: "瓦拉日丁国王托米斯拉夫广场 46.308089,16.337851（OSM Nominatim；Wikidata P625 几乎同点）；市域内的瓦拉日丁小机场（LDVA）与周边几处均 scheduled_service=no，不填 airport；最近有定期航班的是萨格勒布 ZAG，直线约 66 km（算）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "trogir", nameZh: "特罗吉尔", nameEn: "Trogir", country: "croatia", tier: "notable", zone: "hr-dalmatia", admin1Zh: "斯普利特-达尔马提亚县", admin1En: "Split-Dalmatia County",
+    lon: 16.2512, lat: 43.5170,
+    source: "特罗吉尔若望保禄二世广场 43.516959,16.251184（OSM；UNESCO 810 官方坐标 43.5170833,16.2513611 几乎同点）；斯普利特机场 SPU 直线约 4.5 km 但在邻市卡什泰拉市域内，按既有波雷奇 / 希贝尼克的做法不填 airport、在正文里写清楚（已有城市补充批，2026-09-16）",
+  },
 ];

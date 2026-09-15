@@ -77,4 +77,14 @@ export const CITIES: CityEntry[] = [
     lon: 23.2747, lat: 45.0342,
     source: "特尔古日乌市中心 45.0342,23.2747（Wikidata）；戈尔日县县府；本地巴尔扎机场无定期航班，最近有定期航班的是克拉约瓦 CRA（直线约 93 km）、锡比乌 SBZ（约 105 km），不填机场字段；布朗库西组雕 UNESCO 1473（2024）（已有城市补充批，2026-09-15）",
   },
+  {
+    id: "sinaia", nameZh: "锡纳亚", nameEn: "Sinaia", country: "romania", tier: "notable", zone: "ro-south", admin1Zh: "普拉霍瓦县", admin1En: "Prahova County",
+    lon: 25.5508, lat: 45.3524,
+    source: "锡纳亚镇中心（卡罗尔一世大道、吉卡公园一带）45.352433,25.550768（OSM Nominatim）；周边机场（扎尔内什蒂、伯内什蒂、吉姆巴夫）均 scheduled_service=no，不填 airport；最近有定期航班的是布拉索夫 GHV 直线约 39 km、布加勒斯特 OTP 约 97 km（算）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "curtea-de-arges", nameZh: "阿尔杰什河畔库尔泰亚", nameEn: "Curtea de Argeș", country: "romania", tier: "notable", zone: "ro-south", admin1Zh: "阿尔杰什县", admin1En: "Argeș County",
+    lon: 24.6780, lat: 45.1469,
+    source: "阿尔杰什河畔库尔泰亚市区中部 45.146934,24.677982（OSM Nominatim；Wikidata P625 45.1167,24.6667 是粗点，未用）；最近机场均无定期航班，不填 airport；最近有定期航班的是锡比乌 SBZ 直线约 85 km、布拉索夫 GHV 约 91 km（算）；离乌克兰约 279 km、摩尔多瓦约 270 km（Natural Earth 10m 算）（已有城市补充批，2026-09-16）",
+  },
 ];

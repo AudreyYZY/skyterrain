@@ -86,4 +86,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "戈尔日县博物馆", nameEn: "Gorj County Museum", lon: 23.2760, lat: 45.0393, kind: "landmark" },
     { nameZh: "布朗库西故居（霍比察村）", nameEn: "Brâncuși Memorial House, Hobița", lon: 23.0557, lat: 45.0538, kind: "landmark" },
   ],
+  sinaia: [
+    { nameZh: "佩莱什城堡", nameEn: "Peleș Castle", lon: 25.542733, lat: 45.360085, kind: "landmark" },
+    { nameZh: "佩利绍尔城堡", nameEn: "Pelișor Castle", lon: 25.539143, lat: 45.360601, kind: "landmark" },
+    { nameZh: "锡纳亚修道院", nameEn: "Sinaia Monastery", lon: 25.54937, lat: 45.355333, kind: "landmark" },
+    { nameZh: "锡纳亚赌场建筑（国际会议中心）", nameEn: "Sinaia Casino (conference centre)", lon: 25.553374, lat: 45.355178, kind: "landmark" },
+    { nameZh: "迪米特里耶·吉卡公园", nameEn: "Dimitrie Ghica Park", lon: 25.551767, lat: 45.354145, kind: "nature" },
+    { nameZh: "缆车下站", nameEn: "Sinaia cable car base station", lon: 25.545949, lat: 45.349485, kind: "district" },
+  ],
+  "curtea-de-arges": [
+    { nameZh: "阿尔杰什修道院", nameEn: "Curtea de Argeș Monastery", lon: 24.675461, lat: 45.156796, kind: "landmark" },
+    { nameZh: "圣尼古拉公爵教堂", nameEn: "Princely Church of St Nicholas", lon: 24.675741, lat: 45.14203, kind: "landmark" },
+    { nameZh: "公爵宫遗址", nameEn: "Princely Court ruins", lon: 24.675091, lat: 45.141924, kind: "landmark" },
+    { nameZh: "市博物馆", nameEn: "Municipal Museum", lon: 24.675583, lat: 45.141218, kind: "landmark" },
+    { nameZh: "维德拉鲁大坝", nameEn: "Vidraru Dam", lon: 24.631465, lat: 45.366308, kind: "nature" },
+  ],
 };

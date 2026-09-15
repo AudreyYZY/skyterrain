@@ -65,4 +65,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "圣尼古拉岛", nameEn: "Sveti Nikola Island", lon: 13.5838, lat: 45.2250, kind: "nature" },
     { nameZh: "巴雷迪内溶洞", nameEn: "Baredine Cave", lon: 13.6619, lat: 45.2703, kind: "nature" },
   ],
+  varazdin: [
+    { nameZh: "老城堡（瓦拉日丁城市博物馆）", nameEn: "Stari grad (Varaždin City Museum)", lon: 16.333894, lat: 46.310163, kind: "landmark" },
+    { nameZh: "圣母升天主教座堂", nameEn: "Cathedral of the Assumption", lon: 16.338689, lat: 46.307551, kind: "landmark" },
+    { nameZh: "帕塔契奇宫", nameEn: "Patačić Palace", lon: 16.337116, lat: 46.307679, kind: "landmark" },
+    { nameZh: "老城堡岗楼", nameEn: "Watchtower of the Old Castle", lon: 16.335345, lat: 46.309488, kind: "landmark" },
+    { nameZh: "克罗地亚国家剧院瓦拉日丁", nameEn: "Croatian National Theatre in Varaždin", lon: 16.337227, lat: 46.305696, kind: "landmark" },
+    { nameZh: "市立墓园", nameEn: "Varaždin City Cemetery", lon: 16.322641, lat: 46.308979, kind: "nature" },
+  ],
+  trogir: [
+    { nameZh: "圣老楞佐主教座堂", nameEn: "Cathedral of St Lawrence", lon: 16.251441, lat: 43.51705, kind: "landmark" },
+    { nameZh: "市凉廊", nameEn: "Town Loggia", lon: 16.251132, lat: 43.516672, kind: "landmark" },
+    { nameZh: "大奇皮科宫", nameEn: "Great Ćipiko Palace", lon: 16.250978, lat: 43.517145, kind: "landmark" },
+    { nameZh: "卡梅伦戈要塞", nameEn: "Kamerlengo Fortress", lon: 16.24761, lat: 43.515279, kind: "landmark" },
+    { nameZh: "圣马可塔", nameEn: "St Mark's Tower", lon: 16.246664, lat: 43.516291, kind: "landmark" },
+    { nameZh: "圣尼古拉修道院", nameEn: "Monastery of St Nicholas", lon: 16.250961, lat: 43.515902, kind: "landmark" },
+    { nameZh: "北城门", nameEn: "North Town Gate", lon: 16.25054, lat: 43.517572, kind: "landmark" },
+  ],
 };
