@@ -1,0 +1,33 @@
+{
+  "id": "pvg-cmb",
+  "name": "上海 — 科伦坡",
+  "nameEn": "Shanghai — Colombo",
+  "description": "江南丘陵 · 雪峰山 · 云贵高原 · 北中部干旱带平原 · 尼甘布潟湖",
+  "descriptionEn": "Jiangnan Hills · Xuefeng Mountains · Yunnan–Guizhou Plateau · Dry Zone Plain · Negombo Lagoon",
+  "depCountry": "china",
+  "arrCountry": "sri-lanka",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU6017",
+    "aircraft": "Airbus A330",
+    "depIata": "PVG",
+    "arrIata": "CMB",
+    "durationMin": 425
+  },
+  "source": {
+    "ref": "https://www.shanghaiairport.com/flights/index.html",
+    "checkedOn": "2026-09-16",
+    "note": "上海机场集团官网航班查询（1 级，2026-09-16/17）：MU6017 出发地 PVG（浦东 T1）→ 目的地 CMB，经停地为空，计划 14:25 起飞、21:30 到达（北京时间），即 425 分钟；科伦坡班达拉奈克国际机场运营方 AASL 每周航班时刻表（1 级，2026-09-16）：MU6017 每天 19:00 到达、来自 Shanghai，机型 A330，回程 MU6018 飞回上海、不续飞第三地；FlightAware（3 级）计划门到门 425 分钟、机型 A332。机型写到 A330 系列（两源一致），细分型号只有追踪站一源，不写。班期不写。航点经江南丘陵—雪峰山—云贵高原—孟加拉湾—斯里兰卡北中部为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.1434, "lon": 121.8052, "airport": true },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "terrain", "terrainId": "xuefeng" },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "terrain", "terrainId": "sri-lanka-dry-zone-plain" },
+    { "kind": "terrain", "terrainId": "negombo-lagoon" },
+    { "kind": "city", "id": "cmb", "name": "科伦坡班达拉奈克", "nameEn": "Colombo Bandaranaike", "lat": 7.1808, "lon": 79.8841, "airport": true }
+  ]
+}

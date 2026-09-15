@@ -76,4 +76,74 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
         "October–November is the wettest period island-wide, so watch for landslides and road closures in the hills in the rainy season; many beaches have dangerous swells and rip currents in some months, so check the warnings before swimming.",
     },
   },
+  // pvg-cmb sources（2026-09-16 首写；核实 2026-09-16 当批（content-verifier 独立检索，航班号机型时长与两套解说无 wrong；can-cmb 机型改为 A320 / A330））：长江三角洲水网平原（china yangtze-delta 条目）；江南丘陵无主脊、红壤坡地与盆地水田（china jiangnan-hills 条目）；
+  // 雪峰山东北—西南走向、西接云贵高原东接丘陵、大致对应第二三级阶梯分界（china xuefeng 条目）；云贵高原喀斯特峰丛洼地与地下河（china yunnan-guizhou 条目）；
+  // 孟加拉湾季风一年两次转向（同 tfu-cmb）；北中部干旱带平原、水库与孤立岩丘（sri-lanka sri-lanka-dry-zone-plain 条目）；尼甘布潟湖与机场跑道（sri-lanka negombo-lagoon 条目）；
+  // 大圆距离约 5,100 km（按两端机场坐标算）；东航 MU6017、A330、约 7 h 05 min（见 data/routes/pvg-cmb.json source，上海机场集团 + AASL 周时刻表，1 级）。旅游段口径同 tfu-cmb。
+  // 零争议：航线经过的其他国家不点名；签证天数与收费、价格不写。
+  "pvg-cmb": {
+    study: {
+      "zh-CN":
+        "上海飞科伦坡，全程约5100公里，是一条从长江口一路向西南、斜穿中国南方的丘陵与高原，再飞越孟加拉湾抵达印度洋岛国的航线。飞机从浦东国际机场起飞，下方是长江三角洲河湖密布的水网平原，向西南很快进入江南丘陵：这是长江以南一片没有主脊、连绵起伏的绿色低山，山间是红壤坡地、梯田和一块块盆地里的水田与城镇。" +
+        "继续向西南，湘西出现一道东北—西南走向的深绿色山岭，这是雪峰山。它的西边地势明显抬高、连着更高的高原，东边逐级下降进入丘陵和湖区平原，大致对应中国地形第二级与第三级阶梯的分界。" +
+        "越过雪峰山，飞机来到云贵高原上空。这里是大片的石灰岩地区，雨水沿着岩石裂隙溶蚀，留下峰丛、洼地和地下河，地面起伏破碎，河流深切在高原里。" +
+        "高原向南逐渐降低，一道道南北走向的山岭和河谷继续向南延伸。飞机越过中南半岛北部的山地，前方出现海岸线，随后进入孟加拉湾上空。接下来的两千多公里几乎都是海面：孟加拉湾的季风一年两次转向，夏季刮西南季风，冬季刮东北季风，云和雨的分布也跟着变化。天气好时，下方是一片深蓝，积云在海面上投下一块块影子。" +
+        "海面尽头，斯里兰卡岛从东北方向进入视野。飞机斜穿岛的北中部，下方是一片平坦的绿褐色大地，干季偏黄、雨季转绿，上面散落着大大小小的水面，那是古代与现代修建的水库；远处偶尔有一座灰色岩丘从平原上直直升起。" +
+        "平原一直延伸到西海岸。飞机下降时能看到一片浅绿色的水面通过狭窄的口门与大海相连，这是尼甘布潟湖，东侧不远就是班达拉奈克国际机场的跑道。飞机在这里降落，科伦坡在南面直线约28公里。",
+      "en-US":
+        "Shanghai to Colombo covers about 5,100 km, a route that runs south-west from the mouth of the Yangtze, cutting diagonally across the hills and plateaus of southern China and then over the Bay of Bengal to an island nation in the Indian Ocean. Taking off from Pudong International Airport, the flight passes over the Yangtze delta, a plain laced with rivers and lakes, and soon reaches the Jiangnan Hills to the south-west: an expanse of rolling green low mountains south of the Yangtze with no main ridge, their slopes of red soil and terraces, and paddy fields and towns in the small basins between them. " +
+        "Further south-west, a dark green ridge running north-east to south-west appears in western Hunan — the Xuefeng Mountains. To its west the land rises distinctly towards higher plateau country, to its east it steps down into hills and lake plains, roughly marking the boundary between the second and third of China's great topographic steps. " +
+        "Beyond the Xuefeng the flight is over the Yunnan–Guizhou Plateau, a vast limestone region where rainwater dissolving along cracks in the rock has left clusters of peaks, sinkholes and underground rivers, a broken surface with rivers cut deep into the plateau. " +
+        "The plateau gradually drops to the south, with ridges and valleys running north–south. The flight crosses the mountains of the northern Indochinese Peninsula, a coastline appears ahead, and then it is out over the Bay of Bengal. For the next two thousand kilometres and more there is almost nothing but sea: the monsoon here reverses twice a year, south-west in summer and north-east in winter, with cloud and rain shifting as the wind changes. In good weather the sea below is deep blue, with cumulus clouds casting patches of shadow on the water. " +
+        "At the far side of the sea, the island of Sri Lanka comes into view from the north-east. The flight crosses the North Central region diagonally, over a flat green-brown land that turns yellow in the dry season and green in the rains, scattered with sheets of water large and small — reservoirs built in ancient and modern times — with now and then a grey rock rising sheer from the plain in the distance. " +
+        "The plain runs all the way to the west coast. As the flight descends, a pale green sheet of water appears, joined to the sea by a narrow inlet — Negombo Lagoon — with the runway of Bandaranaike International Airport a short distance to the east. The flight lands here, with Colombo about 28 km to the south in a straight line.",
+    },
+    travel: {
+      "zh-CN":
+        "上海到科伦坡约7小时05分，这条航线由中国东方航空执飞。入境斯里兰卡前须在线申请电子旅行许可（ETA），具体规定以斯里兰卡移民与出入境局最新公布为准，行前确认。" +
+        "班达拉奈克国际机场在科伦坡北面，距市中心直线约28公里，离尼甘布只有约6公里，晚上到达的航班可以先在尼甘布住一晚。" +
+        "斯里兰卡的标准插座是英式三方脚（G型），货币是斯里兰卡卢比，主要城镇有ATM，但并非都接受外国卡。进寺庙要遮住肩膀和腿、脱鞋脱帽，不要背对佛像合影；每月月圆的波耶日全国停售酒类。" +
+        "西南季风在5–9月，雨主要落在西南部；10–11月是全岛雨最多的时期；东北季风在12–2月，主要影响东半部。",
+      "en-US":
+        "Shanghai to Colombo takes about 7 hours 5 minutes, and the route is operated by China Eastern Airlines. Before entering Sri Lanka you must apply online for an Electronic Travel Authorisation (ETA); follow the latest announcements of Sri Lanka's Department of Immigration and Emigration and confirm before travelling. " +
+        "Bandaranaike International Airport is north of Colombo, about 28 km from the centre in a straight line and only about 6 km from Negombo, so after an evening arrival you can spend the first night in Negombo. " +
+        "Sri Lanka's standard socket is the British three-square-pin type (Type G), and the currency is the Sri Lankan rupee; main towns have ATMs, but not all accept foreign cards. In temples cover shoulders and legs, take off shoes and hats, and don't pose with your back to a Buddha statue; alcohol sales stop nationwide on the monthly full-moon Poya day. " +
+        "The south-west monsoon from May to September brings rain mainly to the south-west; October–November is the wettest period island-wide; the north-east monsoon from December to February mainly affects the eastern half.",
+    },
+  },
+  // can-cmb sources（2026-09-16 首写；核实 2026-09-16 当批（content-verifier 独立检索，航班号机型时长与两套解说无 wrong；can-cmb 机型改为 A320 / A330））：珠江三角洲河网（china pearl-delta 条目）；雷州半岛低平玄武岩台地、红树林滩涂、隔琼州海峡与海南岛相望（china leizhou 条目）；
+  // 红河三角洲冲积平原、稻田村落与蜿蜒河道（vietnam red-river-delta 条目）；茵他侬山为泰国最高峰、海拔 2,565 m、山顶常年云雾（thailand doi-inthanon 条目）；
+  // 孟加拉湾季风（同 tfu-cmb）；锡吉里耶岩约 180 m、5 世纪王宫遗址（sri-lanka sigiriya-rock 条目，UNESCO 202）；尼甘布潟湖（sri-lanka negombo-lagoon 条目）；
+  // 大圆距离约 4,000 km（按两端机场坐标算）；斯里兰卡航空 UL881、A320、约 5 h 25 min（见 data/routes/can-cmb.json source，白云机场官网 + AASL 周时刻表，1 级）。
+  // 零争议：航线经过的其他国家只写越南红河三角洲与泰国北部，中南半岛其余国家不点名；签证天数与收费、价格不写。
+  "can-cmb": {
+    study: {
+      "zh-CN":
+        "广州飞科伦坡，全程约4000公里，是一条从珠江口向西南、掠过北部湾沿岸与中南半岛，再飞越孟加拉湾抵达斯里兰卡的航线。飞机从广州白云国际机场起飞，向西南飞过珠江三角洲的河网与城镇，下方很快出现雷州半岛：一块伸进海里的暗红色低平陆地，是玄武岩台地，几乎没有山，海岸有大片红树林和滩涂，半岛南端隔着琼州海峡与海南岛相望。" +
+        "飞越北部湾，前方是越南的红河三角洲：红河及其支流的泥沙长期沉积形成的三角形冲积平原，地势开阔平坦，稻田与村落密密交织，河道在平原上蜿蜒穿行。" +
+        "继续向西，地势抬升，中南半岛北部的山岭一道道南北排列。飞机经过泰国北部上空，那里的茵他侬山是泰国最高峰，海拔2565米，是一座花岗岩山体，山顶常年云雾缭绕。" +
+        "过了山地，海岸线出现，飞机进入孟加拉湾上空。这片海湾的季风一年两次转向，夏季刮西南季风，冬季刮东北季风，天气好时下方是一片深蓝，积云在海面投下影子。" +
+        "海面尽头，斯里兰卡岛从东北方向进入视野。飞机斜穿岛的北中部，下方是平坦的绿褐色平原和散落的水库，一块巨大的灰褐色方墩从丛林里陡然升起约180米，这就是锡吉里耶岩，岩顶保存着5世纪的王宫遗址。" +
+        "飞过平原来到西海岸，一片浅绿色的水面通过狭窄的口门与大海相连，这是尼甘布潟湖，东侧不远就是班达拉奈克国际机场的跑道。飞机在这里降落，科伦坡在南面直线约28公里。",
+      "en-US":
+        "Guangzhou to Colombo covers about 4,000 km, a route that heads south-west from the Pearl River estuary, skirting the coast of the Gulf of Tonkin and crossing the Indochinese Peninsula before flying over the Bay of Bengal to Sri Lanka. Taking off from Guangzhou Baiyun International Airport and passing south-west over the waterways and towns of the Pearl River delta, the flight soon has the Leizhou Peninsula below: a dark red, low-lying tongue of land reaching into the sea, a basalt tableland with almost no mountains, broad mangroves and mudflats along its coast, and at its southern tip Hainan Island across the Qiongzhou Strait. " +
+        "Across the Gulf of Tonkin lies Vietnam's Red River Delta: a triangular alluvial plain built up over a long time from the silt of the Red River and its tributaries, open and flat, with rice fields and villages closely interwoven and river channels winding across the plain. " +
+        "Further west the land rises, with the ranges of the northern Indochinese Peninsula lined up north to south. The flight passes over northern Thailand, where Doi Inthanon is the country's highest peak at 2,565 m, a granite massif whose summit is often wrapped in cloud. " +
+        "Past the mountains a coastline appears and the flight is out over the Bay of Bengal, where the monsoon reverses twice a year, south-west in summer and north-east in winter; in good weather the sea below is deep blue, with cumulus clouds casting shadows on the water. " +
+        "At the far side of the sea, the island of Sri Lanka comes into view from the north-east. The flight crosses the North Central region, over flat green-brown plains and scattered reservoirs, where a huge grey-brown block rises abruptly about 180 m from the jungle — Sigiriya Rock, with the ruins of a 5th-century royal palace on its summit. " +
+        "Across the plain to the west coast, a pale green sheet of water is joined to the sea by a narrow inlet — Negombo Lagoon — with the runway of Bandaranaike International Airport a short distance to the east. The flight lands here, with Colombo about 28 km to the south in a straight line.",
+    },
+    travel: {
+      "zh-CN":
+        "广州到科伦坡约5小时25分，这条航线由斯里兰卡航空执飞。入境斯里兰卡前须在线申请电子旅行许可（ETA），具体规定以斯里兰卡移民与出入境局最新公布为准，行前确认。" +
+        "班达拉奈克国际机场在科伦坡北面，距市中心直线约28公里，离尼甘布只有约6公里；清晨到达后，去西南海岸的加勒、山地里的康提和北中部的古城都可以坐车前往。" +
+        "斯里兰卡的标准插座是英式三方脚（G型），货币是斯里兰卡卢比，主要城镇有ATM，但并非都接受外国卡。进寺庙要遮住肩膀和腿、脱鞋脱帽，不要背对佛像合影；每月月圆的波耶日全国停售酒类。" +
+        "西南季风在5–9月，雨主要落在西南部；10–11月是全岛雨最多的时期；东北季风在12–2月，主要影响东半部。",
+      "en-US":
+        "Guangzhou to Colombo takes about 5 hours 25 minutes, and the route is operated by SriLankan Airlines. Before entering Sri Lanka you must apply online for an Electronic Travel Authorisation (ETA); follow the latest announcements of Sri Lanka's Department of Immigration and Emigration and confirm before travelling. " +
+        "Bandaranaike International Airport is north of Colombo, about 28 km from the centre in a straight line and only about 6 km from Negombo; after an early-morning arrival, Galle on the south-west coast, Kandy in the hills and the ancient cities of the North Central region can all be reached by road. " +
+        "Sri Lanka's standard socket is the British three-square-pin type (Type G), and the currency is the Sri Lankan rupee; main towns have ATMs, but not all accept foreign cards. In temples cover shoulders and legs, take off shoes and hats, and don't pose with your back to a Buddha statue; alcohol sales stop nationwide on the monthly full-moon Poya day. " +
+        "The south-west monsoon from May to September brings rain mainly to the south-west; October–November is the wettest period island-wide; the north-east monsoon from December to February mainly affects the eastern half.",
+    },
+  },
 };
