@@ -62,4 +62,10 @@ export const CITIES: CityEntry[] = [
     lon: 80.6542, lat: 7.8514,
     source: "丹布勒中心 7.8514,80.6542（Wikidata Q377343）；丹布勒市议会（普查表，1 级）；UNESCO 561「丹布勒金寺」1991、202「锡吉里耶古城」1982（1 级）；锡吉里耶岩距丹布勒中心直线约 16.5 km（按坐标算）；锡吉里耶机场只有季节性小型航班，条目不写机场字段",
   },
+  {
+    id: "polonnaruwa", nameZh: "波隆纳鲁沃", nameEn: "Polonnaruwa", country: "sri-lanka", tier: "notable", zone: "lk-dry-zone",
+    admin1Zh: "北中部省", admin1En: "North Central Province",
+    lon: 81.0000, lat: 7.9333,
+    source: "波隆纳鲁沃 7.9333,81.0000（Wikidata，落在古城区与帕拉克拉马湖之间）；UNESCO 201「波隆纳鲁沃古城」1982（1 级）；本地没有定期航班的机场，CMB 直线约 149 km，按既有斯里兰卡口径不填 airport；离亭可马里、拜蒂克洛两城直线均 > 70 km（已有城市补充批，2026-09-16）",
+  },
 ];

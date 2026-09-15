@@ -56,4 +56,10 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
     source: "埃施叙尔苏尔市中心 49.9167,5.9167；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约45km）：公开资料",
   },
+  {
+    id: "mondorf-les-bains", nameZh: "蒙多夫莱班", nameEn: "Mondorf-les-Bains", country: "luxembourg", tier: "notable", zone: "lu-gutland", admin1Zh: "雷米希县", admin1En: "Remich",
+    lon: 6.2756, lat: 49.5060,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "蒙多夫莱班镇中心广场 49.5060,6.2756（OSM）；LUX 直线约 14 km（按 OurAirports 算），与既有卢森堡条目一致填 LUX（已有城市补充批，2026-09-16）",
+  },
 ];

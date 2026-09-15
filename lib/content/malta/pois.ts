@@ -53,4 +53,11 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "圣保罗群岛", nameEn: "St Paul's Islands", lon: 14.4000, lat: 35.9700, kind: "landmark" },
     { nameZh: "西马尔湿地保护区", nameEn: "Is-Simar Nature Reserve", lon: 14.3822, lat: 35.9456, kind: "landmark" },
   ],
+  qrendi: [
+    { nameZh: "哈扎伊姆神庙", nameEn: "Ħaġar Qim Temples", lon: 14.4422, lat: 35.8278, kind: "landmark" },
+    { nameZh: "姆纳德拉神庙", nameEn: "Mnajdra Temples", lon: 14.4364, lat: 35.8267, kind: "landmark" },
+    { nameZh: "蓝洞", nameEn: "Blue Grotto", lon: 14.45, lat: 35.8167, kind: "landmark" },
+    { nameZh: "泽里格谷渔村", nameEn: "Wied iż-Żurrieq", lon: 14.4586, lat: 35.8225, kind: "landmark" },
+    { nameZh: "马克卢巴塌陷坑", nameEn: "Il-Maqluba sinkhole", lon: 14.4578, lat: 35.8306, kind: "landmark" },
+  ],
 };

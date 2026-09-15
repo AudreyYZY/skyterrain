@@ -69,4 +69,10 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "锡吉里耶博物馆", nameEn: "Sigiriya Museum", lon: 80.7516, lat: 7.9570, kind: "landmark" },
     { nameZh: "明内里耶国家公园", nameEn: "Minneriya National Park", lon: 80.8489, lat: 7.9789, kind: "nature" },
   ],
+  polonnaruwa: [
+    { nameZh: "波隆纳鲁沃考古博物馆", nameEn: "Polonnaruwa Archaeological Museum", lon: 80.999, lat: 7.9418, kind: "landmark" },
+    { nameZh: "圣方院与圆形佛殿", nameEn: "Sacred Quadrangle and Vatadage", lon: 81.0011, lat: 7.9472, kind: "landmark" },
+    { nameZh: "兰科特塔", nameEn: "Rankoth Vehera", lon: 81.0034, lat: 7.9582, kind: "landmark" },
+    { nameZh: "伽尔寺", nameEn: "Gal Vihara", lon: 81.005, lat: 7.9659, kind: "landmark" },
+  ],
 };

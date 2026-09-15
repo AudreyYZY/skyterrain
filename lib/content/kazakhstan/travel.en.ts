@@ -186,4 +186,21 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May through September is the best season for a summer trip and outdoor activities at Burabay, with weekends and summer holidays bringing more visitors; in winter Burabay's lakes freeze over, offering ice fishing and snow activities.",
   },
+  oskemen: {
+    // 全七段 sources: 同中文侧（Bureau of National Statistics population on 1 January 2026 xlsx, tier 1; OurAirports distance computed; rail and airport schedule sites, tier 3）。 核实 2026-09-16 当批（content-verifier 独立检索，火车车程「将近一天」对阿斯塔纳不准、主站方位有歧义，已改，其余 ok）。
+    identity:
+      "Oskemen is the capital of East Kazakhstan Region in eastern Kazakhstan; its Russian name is Ust-Kamenogorsk, and official statistical tables use both names. The city stands where the Ulba flows into the Irtysh, and on 1 January 2026 its city administration area had about 381,000 people, about 361,000 of them in the urban area (Bureau of National Statistics). It is one of the main cities on the way towards the Altai mountains in the east.",
+    howItWorks:
+      "Oskemen is the capital of East Kazakhstan Region; local administration in Kazakhstan has two levels, regions and districts, with regional governors appointed by the president and local assemblies elected. In 2022 Abai Region was split off from East Kazakhstan with its capital at Semey, leaving Oskemen's region noticeably smaller. Statistically, 'Oskemen city' is more than the urban area: the city administration also covers surrounding villages, and about 20,000 of its 381,000 people live in rural settlements. The centre is around the confluence of the two rivers, where the regional museum of history and local lore and the riverside embankment are, and the rivers divide the city into several parts linked by bridges. Addresses give the street, building number and flat number. Daily life is shaped by the rivers and the railway, and long trips are mostly by air, since trains to Astana or Almaty take from well over half a day to about a full day. Newcomers most often take 'Oskemen' and 'Ust-Kamenogorsk' for two different cities, when they are simply the Kazakh and Russian names of the same place.",
+    layout:
+      "The city centre is at the confluence of the Irtysh and the Ulba, with the regional museum of history and local lore and the embankment near the meeting of the rivers; the city spreads along the banks of both rivers, with residential districts extending to the north-east and north-west. The city has more than one railway station, and the airport lies north-west of the city, about 13 km away in a straight line.",
+    gettingAround:
+      "Oskemen Airport (UKK), about 13 km from the centre in a straight line, has scheduled domestic flights. Long-distance trains run to Astana and Almaty, taking from well over half a day to about a full day (checked September 2026); the city has more than one station, so check the departure station and times with the railway company. The city has buses and trams, and taxis and ride-hailing are widely used.",
+    culture:
+      "Kazakh is the official language and Russian is widely spoken; English is usable among younger people but not common outside tourism. Winters are long and cold, so bring warm clothing.",
+    seeAndDo:
+      "The confluence of the two rivers and the embankment; the regional museum of history and local lore; the East Kazakhstan regional museum-reserve of architecture, ethnography and natural landscapes; and, in summer, trips from here into the eastern mountains and lakes.",
+    whenAndTips:
+      "June–September is the most comfortable; winters are severe with long snow cover. Routes and access to the eastern mountains depend heavily on the season, so check with local tour operators or the managing authorities before setting off.",
+  },
 };

@@ -55,4 +55,10 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "KOV", nameZh: "科克舍套机场", nameEn: "Kokshetau Airport", lon: 69.5942, lat: 53.3325 },
     source: "科克舍套市中心 53.2833,69.3833；KOV机场（距市区约18km），是前往布拉拜国家公园的主要门户：公开资料",
   },
+  {
+    id: "oskemen", nameZh: "厄斯克门", nameEn: "Oskemen (Ust-Kamenogorsk)", country: "kazakhstan", tier: "notable", zone: "kz-east", admin1Zh: "东哈萨克斯坦州", admin1En: "East Kazakhstan Region",
+    lon: 82.6275, lat: 49.9484,
+    airport: { iata: "UKK", nameZh: "厄斯克门机场", nameEn: "Oskemen Airport", lon: 82.4961, lat: 50.0350 },
+    source: "厄斯克门市中心 49.9484,82.6275（OSM）；UKK 机场 OurAirports 50.0350,82.4961，距中心直线约 13.5 km，有定期航班（航班追踪站 3 级）；离国界约 85 km（按 Natural Earth 国界算，已有城市补充批，2026-09-16）",
+  },
 ];

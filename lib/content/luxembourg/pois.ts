@@ -39,4 +39,8 @@ export const POIS: Record<string, CityPoi[]> = {
   "esch-sur-sure": [
     { nameZh: "埃施叙尔苏尔城堡遗址", nameEn: "Esch-sur-Sûre Castle Ruins", lon: 5.9169, lat: 49.9169, kind: "landmark" },
   ],
+  "mondorf-les-bains": [
+    { nameZh: "蒙多夫温泉疗养中心与温泉公园", nameEn: "Mondorf Domaine Thermal and spa park", lon: 6.2819, lat: 49.5017, kind: "landmark" },
+    { nameZh: "圣米迦勒教堂", nameEn: "Church of St Michael", lon: 6.2706, lat: 49.5059, kind: "landmark" },
+  ],
 };
