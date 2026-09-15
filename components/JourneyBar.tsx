@@ -155,7 +155,14 @@ export default function JourneyBar({
   );
 
   return (
-    <div className="absolute bottom-0 left-[52px] right-0 z-20 flex flex-col items-center pb-3">
+    // 航线飞行时右侧会展开 420px 宽的航线面板（ReadingPanel route-panel，z-30），
+    // 窄条若仍居中铺到右边缘，「停止」按钮会被面板盖住点不到 —— 飞行中把窄条收到面板左侧。
+    <div
+      className={[
+        "absolute bottom-0 left-[52px] z-20 flex flex-col items-center pb-3",
+        isFlying ? "right-0 sm:right-[420px]" : "right-0",
+      ].join(" ")}
+    >
       <div className="glass-panel w-full max-w-[760px] rounded-2xl px-3 py-2.5">
         {/* 窄条 */}
         <div className="flex items-center gap-2">

@@ -741,6 +741,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           } else {
             terrainProvider = new Cesium.EllipsoidTerrainProvider();
+            // 没有 Ion token 时不能让 Viewer 建默认底图：默认底图走 Cesium 自带的演示 token，
+            // 过期后 api.cesium.com 返回 401 并在控制台报错（CI 的浏览器测试就是这么挂的）。
+            // 改用 Cesium 包里自带的离线 Natural Earth II 影像，不发任何外部请求。
+            try {
+              imageryProvider = await Cesium.TileMapServiceImageryProvider.fromUrl(
+                Cesium.buildModuleUrl("Assets/Textures/NaturalEarthII"),
+              );
+            } catch {
+              // 离线影像也取不到时就只显示椭球底色
+            }
           }
 
           if (cancelled || !containerRef.current) return;
@@ -757,6 +767,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             selectionIndicator: false,
             timeline: false,
             terrainProvider,
+            // 有 token 时沿用原行为（默认底图 + 下面显式替换成 Bing）；没有 token 时不建默认底图
+            ...(ionToken ? {} : { baseLayer: false as const }),
             creditContainer: document.createElement("div"),
             requestRenderMode: false,
           });
