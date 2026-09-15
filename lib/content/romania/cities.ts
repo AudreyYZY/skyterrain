@@ -64,4 +64,17 @@ export const CITIES: CityEntry[] = [
     lon: 24.7922, lat: 46.2194,
     source: "锡吉什瓦拉历史中心 46.2178,24.7922 一带（UNESCO / Wikidata），坐标取 46.2194,24.7922；本地无机场，不填 airport 字段；有定期航班的最近机场为特尔古穆列什 TGM，直线约 40 km（按坐标算）；锡吉什瓦拉是 municipiu 但不是县府（县府为特尔古穆列什）",
   },
+  {
+    id: "craiova", nameZh: "克拉约瓦", nameEn: "Craiova", country: "romania", tier: "major", zone: "ro-south",
+    admin1Zh: "多尔日县", admin1En: "Dolj County",
+    lon: 23.7949, lat: 44.3180,
+    airport: { iata: "CRA", nameZh: "克拉约瓦国际机场", nameEn: "Craiova International Airport", lon: 23.888599, lat: 44.3181 },
+    source: "米哈伊勇敢者广场 44.3180,23.7949（OSM，历史中心；Wikidata 点偏北 2.4 km 不用）；多尔日县县府；CRA 机场 OurAirports 44.3181,23.8886，距历史中心直线约 7.5 km，机场官网航线图（2026-05-23 起）只有国际定期航班，机场为县属自治公司（机场官网，1 级）（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "targu-jiu", nameZh: "特尔古日乌", nameEn: "Târgu Jiu", country: "romania", tier: "notable", zone: "ro-south",
+    admin1Zh: "戈尔日县", admin1En: "Gorj County",
+    lon: 23.2747, lat: 45.0342,
+    source: "特尔古日乌市中心 45.0342,23.2747（Wikidata）；戈尔日县县府；本地巴尔扎机场无定期航班，最近有定期航班的是克拉约瓦 CRA（直线约 93 km）、锡比乌 SBZ（约 105 km），不填机场字段；布朗库西组雕 UNESCO 1473（2024）（已有城市补充批，2026-09-15）",
+  },
 ];

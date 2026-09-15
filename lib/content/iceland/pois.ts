@@ -62,4 +62,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "霍恩斯特兰迪自然保护区", nameEn: "Hornstrandir Nature Reserve", lon: -22.4000, lat: 66.4200, kind: "nature" },
     { nameZh: "博伦加维克（水族馆一带）", nameEn: "Bolungarvík", lon: -23.2540, lat: 66.1560, kind: "district" },
   ],
+  selfoss: [
+    { nameZh: "奥尔福萨河大桥", nameEn: "Ölfusá Bridge", lon: -21.0048, lat: 63.9388, kind: "transport" },
+    { nameZh: "塞尔福斯新市中心（复建老房子街区）", nameEn: "Selfoss New Town Centre", lon: -21.0035, lat: 63.9362, kind: "district" },
+    { nameZh: "特里格维小屋", nameEn: "Tryggvaskáli", lon: -21.0034, lat: 63.9378, kind: "landmark" },
+    { nameZh: "塞尔福斯教堂", nameEn: "Selfoss Church", lon: -21.0093, lat: 63.9383, kind: "landmark" },
+    { nameZh: "英格尔夫斯山", nameEn: "Ingólfsfjall", lon: -21.0388, lat: 63.9821, kind: "nature" },
+  ],
+  heimaey: [
+    { nameZh: "埃尔德费尔火山", nameEn: "Eldfell", lon: -20.2473, lat: 63.4323, kind: "nature" },
+    { nameZh: "赫尔加山", nameEn: "Helgafell", lon: -20.2596, lat: 63.4293, kind: "nature" },
+    { nameZh: "火山博物馆「火之家」", nameEn: "Eldheimar", lon: -20.2601, lat: 63.4350, kind: "landmark" },
+    { nameZh: "赫约尔夫谷", nameEn: "Herjólfsdalur", lon: -20.2982, lat: 63.4425, kind: "nature" },
+    { nameZh: "斯坎辛", nameEn: "Skansinn", lon: -20.2615, lat: 63.4438, kind: "landmark" },
+    { nameZh: "兰达教堂", nameEn: "Landakirkja", lon: -20.2723, lat: 63.4370, kind: "landmark" },
+  ],
 };

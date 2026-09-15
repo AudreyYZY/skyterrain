@@ -70,4 +70,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "有顶楼梯", nameEn: "Covered Staircase", lon: 24.7915, lat: 46.2188, kind: "landmark" },
     { nameZh: "比耶尔坦设防教堂", nameEn: "Biertan Fortified Church", lon: 24.5213, lat: 46.1352, kind: "landmark" },
   ],
+  craiova: [
+    { nameZh: "米哈伊勇敢者广场", nameEn: "Mihai Viteazul Square", lon: 23.7949, lat: 44.3180, kind: "district" },
+    { nameZh: "克拉约瓦艺术博物馆（让·米哈伊尔宫）", nameEn: "Craiova Art Museum (Jean Mihail Palace)", lon: 23.7951, lat: 44.3191, kind: "landmark" },
+    { nameZh: "巴尼亚之家（奥尔特尼亚博物馆民族志部）", nameEn: "Casa Băniei (Oltenia Museum, Ethnography)", lon: 23.7923, lat: 44.3146, kind: "landmark" },
+    { nameZh: "马林·索雷斯库国家剧院", nameEn: "Marin Sorescu National Theatre", lon: 23.7992, lat: 44.3191, kind: "landmark" },
+    { nameZh: "尼古拉·罗马内斯库公园", nameEn: "Nicolae Romanescu Park", lon: 23.8100, lat: 44.2976, kind: "nature" },
+    { nameZh: "克拉约瓦火车站", nameEn: "Craiova Railway Station", lon: 23.8167, lat: 44.3288, kind: "transport" },
+  ],
+  "targu-jiu": [
+    { nameZh: "无尽之柱", nameEn: "Endless Column", lon: 23.2854, lat: 45.0375, kind: "landmark" },
+    { nameZh: "圣使徒彼得与保罗教堂", nameEn: "Holy Apostles Peter and Paul Church", lon: 23.2788, lat: 45.0382, kind: "landmark" },
+    { nameZh: "吻之门", nameEn: "Gate of the Kiss", lon: 23.2687, lat: 45.0394, kind: "landmark" },
+    { nameZh: "沉默之桌", nameEn: "Table of Silence", lon: 23.2667, lat: 45.0396, kind: "landmark" },
+    { nameZh: "戈尔日县博物馆", nameEn: "Gorj County Museum", lon: 23.2760, lat: 45.0393, kind: "landmark" },
+    { nameZh: "布朗库西故居（霍比察村）", nameEn: "Brâncuși Memorial House, Hobița", lon: 23.0557, lat: 45.0538, kind: "landmark" },
+  ],
 };

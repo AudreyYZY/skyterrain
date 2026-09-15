@@ -171,4 +171,38 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June to September is Hvar's peak season, with July and August the busiest for yachts and visitors. Lavender typically blooms from mid-to-late June through July, the best time to photograph the fields. The island depends on ferries, so book tickets ahead, especially on peak-season weekends.",
   },
+  sibenik: {
+    // 全七段 sources: 同中文侧（DZS 2021 census, tier 1; Šibenik city website, tier 1; UNESCO 963 / 1533, tier 1; Krka National Park FAQ, tier 1; HŽ passenger notices 2026-09-15, tier 1; Jadrolinija, tier 1; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Šibenik is a port city in central Dalmatia and the seat of Šibenik-Knin County, built up a hillside on the bay where the Krka reaches the sea. The Cathedral of St James in the old town was inscribed as a World Heritage site in 2000, and St Nicholas Fortress at the entrance to the harbour channel joined the World Heritage list in 2017 as part of the Venetian Republic's defence works. In the 2021 census the City of Šibenik had about 42,600 people (Croatian Bureau of Statistics).",
+    howItWorks:
+      "Šibenik is run by an elected mayor and city council, and the city is divided into 16 city districts and 29 local committees. The 'City of Šibenik' is much larger than the old town: the four inhabited islands of Zlarin, Kaprije, Žirje and Krapanj offshore and inland villages such as Lozovac all belong to it. That produces a common misunderstanding: people think Krka National Park is at Skradin, when the park's main road entrance at Lozovac and the Skradinski buk falls themselves lie within the City of Šibenik, while Skradin is a separate town from which you enter the park by boat. Locals place things by the old town, the fortresses and the harbour, and addresses give street, number and a postcode beginning 22000. Daily life follows the sea and a branch railway: island residents come into town by ferry, and trains to Split or Zagreb require a change at Perković.",
+    layout:
+      "The old town climbs the hillside from the waterfront up to St Michael's Fortress, with the Cathedral of St James and the Rector's Palace on the seaward side and the Barone and St John fortresses on the heights behind; the harbour lies in the bay and reaches the open sea through a long, narrow channel, with St Nicholas Fortress guarding its entrance; the Skradinski buk falls in Krka National Park are about 10 km north-east of the centre in a straight line.",
+    gettingAround:
+      "Šibenik has no airport with scheduled flights; the nearest is Split Airport (SPU, about 39 km in a straight line), with Zadar (ZAD) about 59 km. The railway is a branch-line terminus, so trains to Split and Zagreb require a change at Perković, and replacement buses are common on the branch. The outer islands are reached by Jadrolinija passenger ships and car ferries. For Krka National Park, drive to the Lozovac entrance and park; from April to November a park bus runs down to the falls, or go to Skradin and enter the park by boat.",
+    culture:
+      "Croatian is spoken locally. The Cathedral of St James is a working church, so dress modestly and keep quiet inside. In Krka National Park swimming is allowed only in designated areas from June to September; you cannot swim at Skradinski buk or jump from the falls or bridges.",
+    seeAndDo:
+      "The Cathedral of St James; the climb to St Michael's Fortress for views of the old town and bay; the Barone and St John fortresses; the city museum in the Rector's Palace; St Nicholas Fortress at the harbour mouth; the Skradinski buk falls in Krka National Park; a boat to Zlarin and the other outer islands.",
+    whenAndTips:
+      "May–June and September are pleasant and less crowded than midsummer; July–August is hot and the national park is busy. Follow the park's official announcements for swimming areas and seasons, and the operators' announcements for fortress opening hours.",
+  },
+  porec: {
+    // 全七段 sources: 同中文侧（DZS 2021 census and 2025 tourism release, tier 1; Poreč city website, tier 1; UNESCO 809, tier 1; Istria County government on the Parenzana, tier 1; ferry operator, tier 1; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Poreč is a small town on the west coast of Croatia's Istrian peninsula, its old town built on a small peninsula reaching into the Adriatic. The Episcopal Complex of the Euphrasian Basilica in the old town was inscribed as a World Heritage site in 1997; Christianity was already established here in the 4th century. In the 2021 census the Town of Poreč had about 16,600 people (Croatian Bureau of Statistics).",
+    howItWorks:
+      "Poreč is run by an elected mayor and town council, and the town has 10 local committees, each with a seven-member committee. It is a town that runs on tourism: according to the Croatian Bureau of Statistics, tourists in commercial accommodation spent about 3.3 million nights here in 2025, the third-highest number of overnight stays in the country, while the permanent population is only a little over 16,000, so the tourist season sets the town's rhythm. The basilica, squares and old streets are on the old-town peninsula, with the bus station at its base; across Istria County as a whole, about four in ten commercial overnight stays are at campsites. Outsiders often make two mistakes: thinking Poreč is Istria's capital, when the county seat is inland at Pazin, and thinking the Baredine cave a few kilometres out of town belongs to Poreč, when it belongs to the neighbouring municipality.",
+    layout:
+      "The old town sits on the small peninsula, with the Euphrasian Basilica on its north side, Marafor Square at its western tip and the Pentagonal Tower and the heritage museum on the old streets; the bus station is at the base of the peninsula; Sveti Nikola island lies about 1 km offshore; Baredine cave is about 7 km north-east of town in a straight line.",
+    gettingAround:
+      "Poreč has no airport with scheduled flights; the nearest is Pula Airport (PUY, about 45 km in a straight line). There is no railway either, the nearest station being Pazin (about 27 km in a straight line); from 1902 to 1935 a narrow-gauge railway ran to Poreč, and its old trackbed is now a cycling and walking route. Travel is mainly by coach or car; in summer there are fast boats to Venice, with schedules as announced by the operator. The old town is walkable.",
+    culture:
+      "Croatian is spoken locally. The Euphrasian Basilica is a working church, so dress modestly when visiting.",
+    seeAndDo:
+      "The Episcopal Complex of the Euphrasian Basilica (basilica, atrium, baptistery and bishop's palace); Marafor Square; the Pentagonal Tower and the old streets; the Poreč heritage museum; a boat to Sveti Nikola island; cycling the former Parenzana railway route; Baredine cave outside town.",
+    whenAndTips:
+      "May–June and September are warm and less crowded than midsummer; July–August is peak season, so book accommodation early. Follow the operators' announcements for fast-boat schedules and cave opening hours.",
+  },
 };

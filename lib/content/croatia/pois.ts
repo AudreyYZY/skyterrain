@@ -48,4 +48,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "斯塔里格拉德平原", nameEn: "Stari Grad Plain", lon: 16.5972, lat: 43.1878, kind: "nature" },
     { nameZh: "帕克莱尼岛群", nameEn: "Pakleni Islands", lon: 16.4053, lat: 43.1667, kind: "nature" },
   ],
+  sibenik: [
+    { nameZh: "圣雅各布主教座堂", nameEn: "Cathedral of St James", lon: 15.8891, lat: 43.7357, kind: "landmark" },
+    { nameZh: "圣米迦勒要塞", nameEn: "St Michael's Fortress", lon: 15.8896, lat: 43.7376, kind: "landmark" },
+    { nameZh: "巴罗内要塞", nameEn: "Barone Fortress", lon: 15.8964, lat: 43.7373, kind: "landmark" },
+    { nameZh: "圣约翰要塞", nameEn: "St John's Fortress", lon: 15.8940, lat: 43.7408, kind: "landmark" },
+    { nameZh: "圣尼古拉要塞", nameEn: "St Nicholas Fortress", lon: 15.8547, lat: 43.7214, kind: "landmark" },
+    { nameZh: "大公宫（市博物馆）", nameEn: "Rector's Palace (City Museum)", lon: 15.8892, lat: 43.7352, kind: "landmark" },
+    { nameZh: "斯克拉丁瀑布", nameEn: "Skradinski buk", lon: 15.9640, lat: 43.8051, kind: "nature" },
+  ],
+  porec: [
+    { nameZh: "尤弗拉西苏斯圣殿", nameEn: "Euphrasian Basilica", lon: 13.5933, lat: 45.2286, kind: "landmark" },
+    { nameZh: "马拉福尔广场", nameEn: "Marafor Square", lon: 13.5909, lat: 45.2282, kind: "landmark" },
+    { nameZh: "五角塔", nameEn: "Pentagonal Tower", lon: 13.5946, lat: 45.2276, kind: "landmark" },
+    { nameZh: "波雷奇地方博物馆", nameEn: "Poreč Heritage Museum", lon: 13.5933, lat: 45.2278, kind: "landmark" },
+    { nameZh: "圣尼古拉岛", nameEn: "Sveti Nikola Island", lon: 13.5838, lat: 45.2250, kind: "nature" },
+    { nameZh: "巴雷迪内溶洞", nameEn: "Baredine Cave", lon: 13.6619, lat: 45.2703, kind: "nature" },
+  ],
 };

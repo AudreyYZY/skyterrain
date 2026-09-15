@@ -156,4 +156,38 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to October is best, with the most visitors during the medieval festival in July; the citadel's cobbled lanes are steep and slippery, so wear non-slip shoes. Sighișoara combines well with Brașov and Sibiu on a Transylvania itinerary.",
   },
+  craiova: {
+    // 全七段 sources: 同中文侧（INS RPL2021 table 1.3.2, tier 1; ADR South-West Oltenia, tier 1; Craiova Airport website, tier 1; Craiova city hall history page, tier 1; Oltenia Museum, tier 1; Eco Urbis, tier 1; Craiova Art Museum, tier 1; clubferoviar.ro, tier 2; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Craiova is the seat of Dolj County in south-western Romania, on the plain on the left bank of the Jiu River, with about 234,000 residents in the 2021 census (National Institute of Statistics) — the most populous of the five county seats in the South-West Oltenia development region. It first appears in documents in 1475, its historic centre keeps the Casa Băniei begun in the late 15th century, and the sculptor Brâncuși studied at its school of arts and crafts as a young man.",
+    howItWorks:
+      "Craiova is run by an elected mayor and local council and is also the seat of Dolj County; the 'Oltenia' people talk about is not a tier of government but a historical region name, and although the South-West Oltenia regional development agency has its headquarters here, the development region is only a planning and statistical unit. One division of responsibility is easy to miss: Craiova International Airport on the edge of town belongs to the county, as a county-owned autonomous company, not to the city. The historic centre is around Mihai Viteazul Square, with the art museum, the national theatre, the metropolitan cathedral and the Casa Băniei all within a few hundred metres on foot, and the railway station about 2 km to the north-east. Addresses use six-digit postcodes, Craiova's beginning with 200. The most common misunderstanding is that you can fly from here to Bucharest: the airport currently has only international scheduled flights, and the train to the capital takes about 4 hours, so flying abroad from Craiova is easier than flying to the capital.",
+    layout:
+      "The historic centre is around Mihai Viteazul Square: the art museum (the Jean Mihail Palace) is on the square, the national theatre to the east, and the Casa Băniei and the metropolitan cathedral a few hundred metres to the south-west; the railway station is about 2 km to the north-east; Nicolae Romanescu Park is about 2.6 km to the south; the airport is about 7.5 km east of town in a straight line.",
+    gettingAround:
+      "Craiova International Airport (CRA) is about 7.5 km from the historic centre in a straight line and has only international scheduled flights; city bus route 9 serves the airport (as of September 2026). Craiova station is a rail hub, about 4 hours from Bucharest North. The city has buses, and the historic centre is walkable.",
+    culture:
+      "Romanian is spoken locally. Churches are in use, so dress modestly when visiting. The art museum has a Brâncuși room holding several of his early works. The Oltenia Museum has several sections, its ethnography section housed in the Casa Băniei.",
+    seeAndDo:
+      "Mihai Viteazul Square and the historic centre; the Brâncuși room at the Craiova Art Museum; the Casa Băniei (the Oltenia Museum's ethnography section); the Marin Sorescu National Theatre; Nicolae Romanescu Park (opened in 1903, with a lake, islands and a suspension bridge).",
+    whenAndTips:
+      "Spring and autumn are the most comfortable; summers are hot and winters cold. It is a starting point for Brâncuși's ensemble in Târgu Jiu — the two cities are linked through the sculptor.",
+  },
+  "targu-jiu": {
+    // 全七段 sources: 同中文侧（INS RPL2021 table 1.3.2, tier 1; ADR South-West Oltenia, tier 1; UNESCO 1473, tier 1; clubferoviar.ro, tier 2; CNAIR notices, tier 1; Romsilva via search summary, tier 2; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Târgu Jiu is the seat of Gorj County in south-western Romania, on the Jiu River, with about 73,500 residents in the 2021 census (National Institute of Statistics). The memorial ensemble the sculptor Constantin Brâncuși created here in 1937–1938 was inscribed as a World Heritage site in 2024 as the 'Brâncuși Monumental Ensemble of Târgu Jiu', commemorating those who died defending the city in the First World War.",
+    howItWorks:
+      "Târgu Jiu is run by an elected mayor and local council and is the seat of Gorj County; the South-West Oltenia development region has only a regional office here, its headquarters being in Craiova. The city's central axis is Brâncuși's work itself: an axis about 1.5 km long runs across town along the Avenue of the Heroes, with the Table of Silence, the Gate of the Kiss and the Alley of Chairs in the Brâncuși Park by the Jiu River at the western end, the long-standing Church of the Holy Apostles Peter and Paul in the middle, and the Endless Column in the park at the eastern end. Addresses use six-digit postcodes beginning with 210. Daily life is shaped by roads and rail: the nearest airport with scheduled flights is in Craiova, about 90 km away in a straight line, and the railway heads north through the Jiu Gorge. The most common misunderstanding is to think the Brâncuși ensemble is a single sculpture park, when it is a memorial axis crossing the city with its two ends 1.5 km apart in a straight line and streets and a church in between, walked from one end to the other.",
+    layout:
+      "Brâncuși Park is by the Jiu River on the west side of town, with the Table of Silence and the Gate of the Kiss inside it; from the park the Avenue of the Heroes runs east past the Gorj County Museum area and the Church of the Holy Apostles Peter and Paul to the park at the eastern end with the Endless Column; the railway station lies south of the axis; Brâncuși's childhood home is in the village of Hobița, about 17 km west of town in a straight line.",
+    gettingAround:
+      "Târgu Jiu has no airport with scheduled flights; the nearest is Craiova International (CRA, about 93 km in a straight line), with Sibiu (SBZ) about 105 km. The railway runs on the Bucharest–Craiova–Petroșani line. North of town the road enters the mountains through Jiu Gorge National Park, whose southern entrance is about 18 km from town in a straight line; the high section of the Transalpina mountain road is closed in winter, with opening dates as announced by the national road company. In town you can walk the whole ensemble along the Avenue of the Heroes.",
+    culture:
+      "Romanian is spoken locally. The Church of the Holy Apostles Peter and Paul is in use, so dress modestly when visiting. The Brâncuși ensemble is a memorial, so don't climb on the sculptures.",
+    seeAndDo:
+      "A walk from the Table of Silence and the Gate of the Kiss along the Avenue of the Heroes to the Endless Column; the Alley of Chairs in Brâncuși Park; the Gorj County Museum; Brâncuși's childhood home in Hobița outside town; the Jiu Gorge to the north.",
+    whenAndTips:
+      "Late spring to early autumn is best for walking the ensemble; winters are cold and the high mountain road is closed. The two ends of the ensemble are 1.5 km apart in a straight line, so allow half a day.",
+  },
 };
