@@ -426,7 +426,7 @@ export const POIS: Record<string, CityPoi[]> = {
   wenzhou: [
     { nameZh: "江心屿", nameEn: "Jiangxin Island", lon: 120.6319, lat: 28.0300, kind: "nature" },
     { nameZh: "五马街历史文化街区", nameEn: "Wuma Street", lon: 120.6650, lat: 28.0150, kind: "district" },
-    { nameZh: "雁荡山", nameEn: "Yandang Mountain", lon: 120.6500, lat: 28.3400, kind: "nature" },
+    { nameZh: "雁荡山", nameEn: "Yandang Mountain", lon: 121.0837, lat: 28.3654, kind: "nature" },
     { nameZh: "温州博物馆", nameEn: "Wenzhou Museum", lon: 120.7000, lat: 28.0000, kind: "landmark" },
   ],
 
@@ -812,8 +812,8 @@ export const POIS: Record<string, CityPoi[]> = {
   ],
   shangrao: [
     { nameZh: "三清山", nameEn: "Mount Sanqing", lon: 118.0670, lat: 28.9080, kind: "nature" },
-    { nameZh: "婺源篁岭", nameEn: "Huangling, Wuyuan", lon: 117.9800, lat: 29.2000, kind: "district" },
-    { nameZh: "婺源江湾", nameEn: "Jiangwan, Wuyuan", lon: 117.9700, lat: 29.2500, kind: "district" },
+    { nameZh: "婺源篁岭", nameEn: "Huangling, Wuyuan", lon: 118.1171, lat: 29.3201, kind: "district" },
+    { nameZh: "婺源江湾", nameEn: "Jiangwan, Wuyuan", lon: 118.0476, lat: 29.3706, kind: "district" },
     { nameZh: "龟峰（弋阳）", nameEn: "Guifeng (Yiyang)", lon: 117.4300, lat: 28.3200, kind: "nature" },
     { nameZh: "上饶站", nameEn: "Shangrao Station", lon: 117.9300, lat: 28.4300, kind: "transport" },
   ],
@@ -917,7 +917,6 @@ export const POIS: Record<string, CityPoi[]> = {
 
   // 批9（2026-09-05）
   huzhou: [
-    { nameZh: "南浔古镇", nameEn: "Nanxun Ancient Town", lon: 120.4230, lat: 30.8730, kind: "district" },
     { nameZh: "莫干山", nameEn: "Moganshan", lon: 119.8700, lat: 30.6000, kind: "nature" },
     { nameZh: "安吉大竹海", nameEn: "Anji Bamboo Sea", lon: 119.6200, lat: 30.5300, kind: "nature" },
     { nameZh: "飞英塔", nameEn: "Feiying Pagoda", lon: 120.0980, lat: 30.8730, kind: "landmark" },
@@ -1200,5 +1199,67 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "川北道贡院", nameEn: "Northern Sichuan Examination Hall", lon: 105.9658, lat: 31.5805, kind: "landmark" },
     { nameZh: "锦屏山", nameEn: "Jinping Hill", lon: 105.9615, lat: 31.5708, kind: "nature" },
     { nameZh: "南津关古镇", nameEn: "Nanjinguan Old Quarter", lon: 105.9669, lat: 31.5695, kind: "district" },
+  ],
+  tongli: [
+    { nameZh: "退思园", nameEn: "Retreat & Reflection Garden", lon: 120.71632, lat: 31.15985, kind: "landmark" },
+    { nameZh: "太平桥", nameEn: "Taiping Bridge", lon: 120.71251, lat: 31.16015, kind: "landmark" },
+    { nameZh: "吉利桥", nameEn: "Jili Bridge", lon: 120.71298, lat: 31.15992, kind: "landmark" },
+    { nameZh: "长庆桥", nameEn: "Changqing Bridge", lon: 120.71315, lat: 31.16005, kind: "landmark" },
+    { nameZh: "耕乐堂", nameEn: "Gengle Hall", lon: 120.71102, lat: 31.16015, kind: "landmark" },
+    { nameZh: "罗星洲", nameEn: "Luoxing Islet", lon: 120.72702, lat: 31.15999, kind: "nature" },
+    { nameZh: "苏州轨道交通4号线同里站", nameEn: "Tongli Station (Suzhou Metro Line 4)", lon: 120.69565, lat: 31.13960, kind: "transport" },
+  ],
+  xitang: [
+    { nameZh: "烟雨长廊", nameEn: "Misty Rain Corridor", lon: 120.88967, lat: 30.94779, kind: "landmark" },
+    { nameZh: "送子来凤桥", nameEn: "Songzi Laifeng Bridge", lon: 120.88918, lat: 30.94790, kind: "landmark" },
+    { nameZh: "环秀桥", nameEn: "Huanxiu Bridge", lon: 120.88765, lat: 30.94753, kind: "landmark" },
+    { nameZh: "卧龙桥", nameEn: "Wolong Bridge", lon: 120.89064, lat: 30.95059, kind: "landmark" },
+    { nameZh: "王宅（种福堂）", nameEn: "Wang Residence (Zhongfu Hall)", lon: 120.88732, lat: 30.94718, kind: "landmark" },
+  ],
+  nanxun: [
+    { nameZh: "小莲庄", nameEn: "Xiaolian Garden", lon: 120.42495, lat: 30.87198, kind: "landmark" },
+    { nameZh: "嘉业堂藏书楼", nameEn: "Jiaye Hall Library", lon: 120.42321, lat: 30.87210, kind: "landmark" },
+    { nameZh: "张石铭旧宅", nameEn: "Zhang Shiming Residence", lon: 120.42653, lat: 30.87344, kind: "landmark" },
+    { nameZh: "南浔丝业会馆", nameEn: "Nanxun Silk Guild Hall", lon: 120.42639, lat: 30.87728, kind: "landmark" },
+    { nameZh: "刘氏梯号", nameEn: "Liu Family Tihao Mansion", lon: 120.42667, lat: 30.87557, kind: "landmark" },
+    { nameZh: "百间楼", nameEn: "Baijian Lou (Hundred Rooms)", lon: 120.42631, lat: 30.88399, kind: "landmark" },
+    { nameZh: "湖州南浔站", nameEn: "Huzhou Nanxun Station", lon: 120.40320, lat: 30.82917, kind: "transport" },
+  ],
+  huangyao: [
+    { nameZh: "黄姚戏台", nameEn: "Huangyao Opera Stage", lon: 111.19771, lat: 24.25107, kind: "landmark" },
+    { nameZh: "黄姚古镇东北门", nameEn: "Northeast Gate of Huangyao", lon: 111.20347, lat: 24.25323, kind: "landmark" },
+    { nameZh: "黄姚古镇游客中心", nameEn: "Huangyao Visitor Centre", lon: 111.20652, lat: 24.24883, kind: "landmark" },
+  ],
+  wuyuan: [
+    { nameZh: "篁岭", nameEn: "Huangling", lon: 118.11707, lat: 29.32012, kind: "district" },
+    { nameZh: "江湾", nameEn: "Jiangwan", lon: 118.04758, lat: 29.37056, kind: "district" },
+    { nameZh: "汪口村", nameEn: "Wangkou Village", lon: 117.99119, lat: 29.35066, kind: "district" },
+    { nameZh: "李坑", nameEn: "Likeng", lon: 117.92662, lat: 29.32565, kind: "district" },
+    { nameZh: "理坑村", nameEn: "Likeng Village (Tuochuan)", lon: 117.82454, lat: 29.52741, kind: "district" },
+    { nameZh: "彩虹桥", nameEn: "Rainbow Bridge", lon: 117.76987, lat: 29.41738, kind: "landmark" },
+    { nameZh: "婺源县博物馆", nameEn: "Wuyuan County Museum", lon: 117.85180, lat: 29.27932, kind: "landmark" },
+    { nameZh: "婺源站", nameEn: "Wuyuan Station", lon: 117.87243, lat: 29.24210, kind: "transport" },
+  ],
+  yongjia: [
+    { nameZh: "丽水古街", nameEn: "Lishui Old Street", lon: 120.73086, lat: 28.34152, kind: "district" },
+    { nameZh: "芙蓉古村", nameEn: "Furong Ancient Village", lon: 120.73202, lat: 28.33328, kind: "district" },
+    { nameZh: "苍坡古村", nameEn: "Cangpo Ancient Village", lon: 120.74591, lat: 28.36261, kind: "district" },
+    { nameZh: "石桅岩", nameEn: "Shiwei Rock", lon: 120.89337, lat: 28.39086, kind: "nature" },
+    { nameZh: "温州北站", nameEn: "Wenzhou North Station", lon: 120.69119, lat: 28.07227, kind: "transport" },
+  ],
+  luguhu: [
+    { nameZh: "大洛水", nameEn: "Daluoshui", lon: 100.76868, lat: 27.68267, kind: "district" },
+    { nameZh: "里格半岛", nameEn: "Lige Peninsula", lon: 100.74613, lat: 27.73232, kind: "district" },
+    { nameZh: "小洛水", nameEn: "Xiaoluoshui", lon: 100.76878, lat: 27.74717, kind: "district" },
+    { nameZh: "草海", nameEn: "Caohai Wetland", lon: 100.85253, lat: 27.70404, kind: "nature" },
+    { nameZh: "木垮", nameEn: "Mukua", lon: 100.82469, lat: 27.73865, kind: "district" },
+  ],
+  wulong: [
+    { nameZh: "天生三桥", nameEn: "Three Natural Bridges", lon: 107.78633, lat: 29.43993, kind: "nature" },
+    { nameZh: "天福官驿", nameEn: "Tianfu Post House", lon: 107.79252, lat: 29.43795, kind: "landmark" },
+    { nameZh: "龙水峡地缝", nameEn: "Longshui Gorge Fissure", lon: 107.78826, lat: 29.40069, kind: "nature" },
+    { nameZh: "仙女山", nameEn: "Fairy Mountain", lon: 107.76415, lat: 29.43138, kind: "nature" },
+    { nameZh: "芙蓉洞", nameEn: "Furong Cave", lon: 107.90333, lat: 29.22889, kind: "nature" },
+    { nameZh: "武隆站", nameEn: "Wulong Station", lon: 107.76823, lat: 29.32993, kind: "transport" },
   ],
 };
