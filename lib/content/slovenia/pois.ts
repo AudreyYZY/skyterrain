@@ -48,4 +48,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "普图伊主广场", nameEn: "Ptuj Town Square", lon: 15.8697, lat: 46.4197, kind: "landmark" },
     { nameZh: "多明我会修道院", nameEn: "Dominican Monastery", lon: 15.8722, lat: 46.4214, kind: "landmark" },
   ],
+  idrija: [
+    { nameZh: "安东尼坑道", nameEn: "Anthony's Main Road (Antonijev rov)", lon: 14.0226, lat: 45.9997, kind: "landmark" },
+    { nameZh: "汞冶炼厂访客中心", nameEn: "Mercury Smelting Plant", lon: 14.0309, lat: 46.0073, kind: "landmark" },
+    { nameZh: "格韦尔肯埃格城堡（伊德里亚市立博物馆）", nameEn: "Gewerkenegg Castle (Idrija Municipal Museum)", lon: 14.0187, lat: 46.0007, kind: "landmark" },
+    { nameZh: "卡姆什特木制水轮泵", nameEn: "Kamšt water wheel", lon: 14.0325, lat: 45.9987, kind: "landmark" },
+    { nameZh: "弗朗西斯竖井", nameEn: "Frančiška Shaft", lon: 14.0247, lat: 46.0024, kind: "landmark" },
+    { nameZh: "野湖", nameEn: "Wild Lake (Divje jezero)", lon: 14.028, lat: 45.9821, kind: "landmark" },
+  ],
+  postojna: [
+    { nameZh: "波斯托伊纳溶洞入口", nameEn: "Postojna Cave entrance", lon: 14.2039, lat: 45.7827, kind: "landmark" },
+    { nameZh: "洞螈馆", nameEn: "Vivarium Proteus", lon: 14.2049, lat: 45.7827, kind: "landmark" },
+    { nameZh: "普雷德亚马城堡", nameEn: "Predjama Castle", lon: 14.1267, lat: 45.8158, kind: "landmark" },
+    { nameZh: "普拉尼纳洞", nameEn: "Planina Cave", lon: 14.2456, lat: 45.8199, kind: "landmark" },
+    { nameZh: "内卡尼奥拉博物馆", nameEn: "Notranjska Museum Postojna", lon: 14.2175, lat: 45.7772, kind: "landmark" },
+  ],
 };

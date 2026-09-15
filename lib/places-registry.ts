@@ -312,6 +312,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "cz-south-bohemia": { zh: "南波希米亚", en: "South Bohemia", order: 402 },
   "cz-central-bohemia": { zh: "中波希米亚", en: "Central Bohemia", order: 403 },
   "cz-moravia": { zh: "摩拉维亚", en: "Moravia", order: 404 },
+  "cz-east-bohemia": { zh: "东波希米亚", en: "East Bohemia", order: 405 },
   // 智利（南美首个国家，北→中→南→巴塔哥尼亚→复活节岛）
   "cl-norte-grande": { zh: "北大区（阿塔卡马）", en: "Norte Grande (Atacama)", order: 410 },
   "cl-norte-chico": { zh: "小北区（科金博）", en: "Norte Chico (Coquimbo)", order: 411 },

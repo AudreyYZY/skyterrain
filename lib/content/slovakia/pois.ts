@@ -55,4 +55,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "玛丽亚山朝圣教堂", nameEn: "Marian Hill pilgrimage church", lon: 20.5919, lat: 49.0342, kind: "landmark" },
     { nameZh: "斯皮什城堡", nameEn: "Spiš Castle", lon: 20.7683, lat: 48.9994, kind: "landmark" },
   ],
+  nitra: [
+    { nameZh: "尼特拉城堡", nameEn: "Nitra Castle", lon: 18.0868, lat: 48.3181, kind: "landmark" },
+    { nameZh: "圣埃默拉姆主教座堂", nameEn: "St Emmeram's Cathedral", lon: 18.0871, lat: 48.3185, kind: "landmark" },
+    { nameZh: "上城", nameEn: "Upper Town (Horné mesto)", lon: 18.0877, lat: 48.3164, kind: "landmark" },
+    { nameZh: "安德烈·巴加尔剧院", nameEn: "Andrej Bagar Theatre", lon: 18.0888, lat: 48.3141, kind: "landmark" },
+    { nameZh: "佐博尔山", nameEn: "Zobor", lon: 18.0977, lat: 48.3288, kind: "landmark" },
+  ],
+  trnava: [
+    { nameZh: "城市塔", nameEn: "Town Tower", lon: 17.5856, lat: 48.3779, kind: "landmark" },
+    { nameZh: "三位一体广场", nameEn: "Holy Trinity Square", lon: 17.5858, lat: 48.3775, kind: "landmark" },
+    { nameZh: "圣施洗约翰主教座堂", nameEn: "Cathedral of St John the Baptist", lon: 17.5884, lat: 48.3805, kind: "landmark" },
+    { nameZh: "西斯洛伐克博物馆", nameEn: "West Slovak Museum", lon: 17.5934, lat: 48.3755, kind: "landmark" },
+    { nameZh: "扬·帕拉里克剧院", nameEn: "Ján Palárik Theatre", lon: 17.5851, lat: 48.3774, kind: "landmark" },
+  ],
 };

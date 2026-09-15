@@ -56,4 +56,16 @@ export const CITIES: CityEntry[] = [
     lon: 20.5889, lat: 49.0222,
     source: "莱沃恰市中心 49.0222,20.5889；本地无民用机场，最近机场为波普拉德—塔特拉（约 28 km），有稳定定期航班的机场为科希策（约 95 km）：公开资料",
   },
+  {
+    id: "nitra", nameZh: "尼特拉", nameEn: "Nitra", country: "slovakia", tier: "major", zone: "sk-west",
+    admin1Zh: "尼特拉州", admin1En: "Nitra Region",
+    lon: 18.0885, lat: 48.3138,
+    source: "尼特拉市中心广场 48.3138,18.0885（OSM）；尼特拉州首府；城东南的小型机场无定期航班（OurAirports LZNI），不填 airport；布拉迪斯拉发 BTS 直线约 67 km（按 OurAirports 算）；离国界约 62 km（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "trnava", nameZh: "特尔纳瓦", nameEn: "Trnava", country: "slovakia", tier: "major", zone: "sk-west",
+    admin1Zh: "特尔纳瓦州", admin1En: "Trnava Region",
+    lon: 17.5858, lat: 48.3775,
+    source: "特尔纳瓦三位一体广场 48.3775,17.5858（OSM）；特尔纳瓦州首府；附近两处小型机场无定期航班（OurAirports），不填 airport；布拉迪斯拉发 BTS 直线约 36 km（按 OurAirports 算）；离国界约 46 km（已有城市补充批，2026-09-15）。注：罗马尼亚条目里的「特尔纳瓦河 / 台地」是 Târnava，与本市无关",
+  },
 ];
