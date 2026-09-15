@@ -36,7 +36,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Three airports: JFK, LaGuardia (LGA) and Newark (EWR, in New Jersey). From JFK the AirTrain connects to the subway. The subway runs 24 hours and is dense — tap a phone or bank card with OMNY; most of Manhattan is walkable. The climate is humid continental: summers are hot and muggy (often above 32°C in July–August), winters are cold with snow, and spring and autumn are short and pleasant.",
     culture:
-      "English is universal, and this is one of the most linguistically diverse cities in the world. Life moves fast, and people walk fast; the subway and queues have unspoken rules. Tip 18–20% for table service, USD 1–2 a drink at a bar. Many museums open on Sundays and holidays, but check the day's hours. In any big city, watch your belongings and avoid empty stations late at night.",
+      "English is universal, and this is one of the most linguistically diverse cities in the world. Life moves fast, and people walk fast; the subway and queues have unspoken rules. Tip 15–20% for table service, USD 1–2 a drink at a bar. Many museums open on Sundays and holidays, but check the day's hours. In any big city, watch your belongings and avoid empty stations late at night.",
     seeAndDo:
       "The Statue of Liberty and Ellis Island (by ferry); an observation deck at the Empire State Building, Rockefeller Center or the World Trade Center; Central Park; the Metropolitan Museum, MoMA and the American Museum of Natural History; Times Square and a Broadway show; the High Line and a walk over the Brooklyn Bridge; the 9/11 Memorial (a place to be respectful).",
     whenAndTips:
@@ -62,7 +62,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Three airports: Reagan (DCA, closest, on the Metro), Dulles (IAD, on the Silver Line) and Baltimore (BWI). The Metro and buses use a SmarTrip card; the Mall is large and a long walk end to end, so consider a bikeshare. The climate is temperate: summers are hot and humid, winters are cold with occasional heavy snow, and there are cherry blossoms in spring and colour in autumn.",
     culture:
-      "English is universal; this is a city of international institutions and embassies, with people from everywhere. The Smithsonian museums are all free and most can be entered directly; the most popular ones (Air and Space, African American History and Culture) need a free timed-entry pass booked online. Metro escalators have a 'stand right, walk left' rule. Tip 18–20% for table service. Political events and marches are common — follow on-site directions if a route is closed.",
+      "English is universal; this is a city of international institutions and embassies, with people from everywhere. The Smithsonian museums are all free and most can be entered directly; the most popular ones (Air and Space, African American History and Culture) need a free timed-entry pass booked online. Metro escalators have a 'stand right, walk left' rule. Tip 15–20% for table service. Political events and marches are common — follow on-site directions if a route is closed.",
     seeAndDo:
       "The National Mall: the Capitol, the Washington Monument, the Lincoln Memorial, the WWII and Vietnam memorials (places to be respectful); the Smithsonian's National Air and Space Museum, Natural History Museum and National Museum of African American History and Culture; the White House (viewable only from outside — interior tours must be requested far ahead); Arlington National Cemetery; the Cherry Blossom Festival in March–April.",
     whenAndTips:
@@ -89,7 +89,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Two airports: O'Hare (ORD, on the Blue Line, about 45 minutes to downtown) and Midway (MDW, on the Orange Line). The 'L' elevated trains plus buses use a Ventra card; downtown is flat and good for walking and cycling (the lakefront path is long). The climate is humid continental with four clear seasons: warm summers with thunderstorms, hard winters with lake-effect snow, strong wind ('the Windy City'), and short spring and autumn.",
     culture:
-      "English is universal; historically a city of many immigrant communities, with strongly ethnic neighbourhoods. Chicagoans identify strongly with local sport and architecture. Tip 18–20% for table service. In winter the indoor–outdoor temperature gap is large and pavements ice over — dress warm and watch your footing.",
+      "English is universal; historically a city of many immigrant communities, with strongly ethnic neighbourhoods. Chicagoans identify strongly with local sport and architecture. Tip 15–20% for table service. In winter the indoor–outdoor temperature gap is large and pavements ice over — dress warm and watch your footing.",
     seeAndDo:
       "'Cloud Gate' (the Bean) in Millennium Park; an observation deck at Willis Tower or 360 Chicago; a Chicago Architecture Center river cruise (the classic way to see both banks); the Art Institute, the Field Museum and the Shedd Aquarium; Navy Pier; a ride along the lakefront path. Deep-dish pizza and an Italian beef sandwich are the local musts.",
     whenAndTips:
@@ -112,7 +112,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Louis Armstrong Airport (MSY) is west of the city, with an airport bus and rideshare. The city has streetcars (the St Charles line is living history) and buses, using a Le Pass; the French Quarter is best on foot. The climate is humid subtropical: summers are very hot and muggy with an almost daily afternoon thunderstorm, June–November is hurricane season, and winters are mild.",
     culture:
-      "English is universal, with traces of French and Creole culture (Mardi Gras, second-line parades, gumbo and jambalaya, beignets). Music is part of daily life, with live bands on the street and in bars. Tip 18–20% for table service, and something for street performers. Mardi Gras and the Jazz Fest draw huge crowds.",
+      "English is universal, with traces of French and Creole culture (Mardi Gras, second-line parades, gumbo and jambalaya, beignets). Music is part of daily life, with live bands on the street and in bars. Tip 15–20% for table service, and something for street performers. Mardi Gras and the Jazz Fest draw huge crowds.",
     seeAndDo:
       "The French Quarter: Jackson Square, St Louis Cathedral, Royal Street and Bourbon Street (loud at night); the St Charles streetcar past the Garden District mansions; live jazz on Frenchmen Street; a paddle-steamer cruise on the Mississippi; the National WWII Museum (a place to be respectful); City Park and its sculpture garden. Out of town: plantation history and the swamps (a boat tour with a guide — watch for alligators).",
     whenAndTips:
@@ -166,7 +166,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Denver International Airport (DEN) is well east of the city, with the A Line commuter train (about 37 minutes to Union Station). The city has light rail and buses, and downtown is walkable; the mountains and ski resorts essentially need a rental car, and in winter mountain passes require chains or all-wheel drive. The climate is semi-arid and high: lots of sun, dry air, big day–night temperature swings; winters are snowy but not extreme, and summer afternoons often bring thunderstorms.",
     culture:
-      "English is universal. Denverites take the outdoors seriously — hiking, cycling, skiing and running are a way of life. Because of the altitude, new arrivals may feel mild altitude effects (shortness of breath, headache) — drink plenty of water and go easy on alcohol for a day or two. Cannabis and alcohol are legal in Colorado with age and place limits. Tip 18–20% at restaurants.",
+      "English is universal. Denverites take the outdoors seriously — hiking, cycling, skiing and running are a way of life. Because of the altitude, new arrivals may feel mild altitude effects (shortness of breath, headache) — drink plenty of water and go easy on alcohol for a day or two. Cannabis and alcohol are legal in Colorado with age and place limits. Tip 15–20% at restaurants.",
     seeAndDo:
       "Union Station and the LoDo district, and 16th Street; the Denver Art Museum and the Museum of Nature and Science; Red Rocks Amphitheatre (for a show, or just for the rocks); Boulder and Flatirons an hour west; Rocky Mountain National Park (Trail Ridge Road is open in summer, for alpine tundra); skiing at the resorts in winter.",
     whenAndTips:
@@ -252,7 +252,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Los Angeles International Airport (LAX) is on the coast to the south-west; Burbank (BUR) is closer to Hollywood. The city has a metro and light rail (currently being expanded) with limited coverage, and the vast majority of people drive (on the right), with heavy congestion at peak times. Use a TAP card for transit. The climate is Mediterranean: warm and dry year-round with lots of sun, heatwaves and a wildfire season in summer and autumn, occasional heavy rain in winter, and a big coast-to-inland temperature difference.",
     culture:
-      "English and Spanish are both used; this is a city of immigrants, with distinct communities (Koreatown, Little Tokyo, Little Ethiopia and more). Life revolves around cars and the outdoors, and people arrange to meet in a particular district rather than 'downtown'. Tip 18–20% for table service. In wildfire season (roughly late summer into autumn) watch air-quality and evacuation information.",
+      "English and Spanish are both used; this is a city of immigrants, with distinct communities (Koreatown, Little Tokyo, Little Ethiopia and more). Life revolves around cars and the outdoors, and people arrange to meet in a particular district rather than 'downtown'. Tip 15–20% for table service. In wildfire season (roughly late summer into autumn) watch air-quality and evacuation information.",
     seeAndDo:
       "The Hollywood Walk of Fame, the Dolby Theatre and the Griffith Observatory (for the Hollywood Sign and the city at night); the Getty Center and the Getty Villa (free, book parking) and LACMA; the Santa Monica Pier and Venice Beach; Universal Studios; the Huntington Library and Gardens in Pasadena. Beyond: Joshua Tree, Santa Barbara, and San Diego to the south.",
     whenAndTips:

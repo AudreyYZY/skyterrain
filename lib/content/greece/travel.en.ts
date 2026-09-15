@@ -11,7 +11,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "A dense domestic flight network links Athens and Thessaloniki with the main islands and is a common way to cover long distances quickly; Piraeus is the country's largest ferry hub, connecting the Aegean and Ionian islands. Intercity travel on the mainland relies mainly on long-distance coaches (KTEL); the rail network is comparatively limited, covering mainly the Athens–Thessaloniki line. Driving is on the right. The climate is Mediterranean — hot, dry summers and mild, wetter winters, with cold, snowy winters in the mountains. Power is 230V, with the European two-round-pin plug.",
     culture:
-      "The official language is Greek; English is widely spoken in tourist areas. Meal times run late, with dinner often starting after 9pm; tipping around 5–10% of the bill, or rounding up, is customary. Most residents are Greek Orthodox, and major festivals follow the Orthodox calendar; Orthodox Easter often falls on a different date from the Catholic/Protestant Easter. Dress modestly when visiting Orthodox churches and monasteries, covering shoulders and knees; some monasteries (such as those at Meteora) keep wraps or long skirts at the entrance for visitors in shorts or short skirts.",
+      "The official language is Greek; English is widely spoken in tourist areas. Meal times run late, with dinner often starting after 9pm; tipping is not compulsory and rounding up is enough. Most residents are Greek Orthodox, and major festivals follow the Orthodox calendar; Orthodox Easter often falls on a different date from the Catholic/Protestant Easter. Dress modestly when visiting Orthodox churches and monasteries, covering shoulders and knees; some monasteries (such as those at Meteora) keep wraps or long skirts at the entrance for visitors in shorts or short skirts.",
     seeAndDo:
       "Classical sites: the Acropolis of Athens, Delphi, Mycenae, Olympia. Natural landforms: the Santorini caldera, the Meteora pinnacles, the Samaria and Vikos gorges. Islands: Crete, the medieval old town of Rhodes, Corfu's old town. Ferry island-hopping is a classic way to experience the Aegean islands.",
     whenAndTips:
@@ -38,7 +38,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 20 km south-east of the centre, linked by metro and suburban rail. Athens's metro, tram and bus network covers the main districts, and the old town around the Acropolis is walkable. The climate is Mediterranean — hot, dry summers (June–August) and mild, wetter winters, with occasional brief snowfall. Power is 230V, European two-round-pin plug.",
     culture:
-      "The official language is Greek; English is widely spoken in tourist areas. Meal times run late, with dinner often starting after 9pm; tipping around 5–10% of the bill, or rounding up, is customary. Most residents are Greek Orthodox, and major festivals follow the Orthodox calendar.",
+      "The official language is Greek; English is widely spoken in tourist areas. Meal times run late, with dinner often starting after 9pm; tipping is not compulsory and rounding up is enough. Most residents are Greek Orthodox, and major festivals follow the Orthodox calendar.",
     seeAndDo:
       "The Acropolis, the Parthenon and the Acropolis Museum; the Plaka old quarter; Syntagma Square and the changing of the guard; the National Archaeological Museum; day trips from Piraeus to Aegean islands such as Hydra and Poros.",
     whenAndTips:
@@ -66,7 +66,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 16 km south-east of the centre, linked by bus and taxi. The city bus network covers the main districts, and the seafront area is good for walking and cycling. The climate is Mediterranean, with hot summers and winters slightly cooler than Athens, with occasional snow.",
     culture:
-      "The official language is Greek. As a major university city, Thessaloniki has a lively youth and café culture. Meal times run late, with dinner often after 9pm; tipping around 5–10% of the bill is customary. The city has long been a crossroads of cultures, still visible in its Byzantine- and Ottoman-era architecture.",
+      "The official language is Greek. As a major university city, Thessaloniki has a lively youth and café culture. Meal times run late, with dinner often after 9pm; tipping is not compulsory and rounding up is enough. The city has long been a crossroads of cultures, still visible in its Byzantine- and Ottoman-era architecture.",
     seeAndDo:
       "The White Tower and the seafront promenade; the Arch of Galerius and the Rotunda; the Paleochristian and Byzantine Monuments of Thessaloniki, including the Church of Saint Demetrius (a UNESCO World Heritage site); the traditional streets of the upper town; day trips to the beaches of the Halkidiki Peninsula.",
     whenAndTips:
@@ -89,7 +89,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 5 km east of the city. City buses connect the main sights, and the old town is walkable. The climate is Mediterranean, with hot, dry summers and mild, wetter winters — among the warmer regions of Greece.",
     culture:
-      "The official language is Greek. Cretans take particular pride in the island's traditional food (olive oil, dakos salad) and customs. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Cretans take particular pride in the island's traditional food (olive oil, dakos salad) and customs. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "The Palace of Knossos; the Heraklion Archaeological Museum, home to major Minoan artefacts; the Venetian harbour and Koules Fortress; day trips to the Lasithi Plateau, the White Mountains and the Samaria Gorge.",
     whenAndTips:
@@ -112,7 +112,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 14 km north-east of the centre. The old town is best explored on foot, with bus and taxi links to the airport and harbour. The climate is Mediterranean, with hot, dry summers and mild, wetter winters.",
     culture:
-      "The official language is Greek. Chania preserves Crete's traditional market culture — the central market hall near the old harbour, built in 1913, is still in use today. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Chania preserves Crete's traditional market culture — the central market hall near the old harbour, built in 1913, is still in use today. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "The Venetian harbour and lighthouse; Chania's central market; the old town lanes and the remains of the old synagogue; day trips for hiking the Samaria Gorge, or to the White Mountains and Balos Beach.",
     whenAndTips:
@@ -134,7 +134,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 14 km south-west of the centre. The old town is pedestrian, its narrow streets closed to vehicles; buses connect the new town. The climate is Mediterranean, one of the sunniest regions of Greece, with hot, dry summers and mild winters.",
     culture:
-      "The official language is Greek. Rhodes was ruled successively by the Byzantines, the Knights Hospitaller, the Ottomans and Italy, and this layered history is visible throughout the town's architecture. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Rhodes was ruled successively by the Byzantines, the Knights Hospitaller, the Ottomans and Italy, and this layered history is visible throughout the town's architecture. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "The medieval old town and the Palace of the Grand Master; the Street of the Knights; Mandraki Harbour, traditionally associated with the site of the Colossus of Rhodes; day trips to the Acropolis of Lindos and Mount Attavyros.",
     whenAndTips:
@@ -152,7 +152,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport sits on the island's eastern side, about 7 km from Fira. Getting around relies mainly on buses, taxis or rental cars; the road between Fira and Oia winds along the caldera cliffs. The climate is Mediterranean, with hot, dry, windy summers and mild, wetter winters, when visitor numbers drop sharply and some facilities close seasonally.",
     culture:
-      "The official language is Greek; tourism is highly developed on the island, and English is widely spoken. In peak season, crowds are dense, and the sunset viewpoints in Fira and Oia can get very busy. Tipping around 5–10% of the bill is customary.",
+      "The official language is Greek; tourism is highly developed on the island, and English is widely spoken. In peak season, crowds are dense, and the sunset viewpoints in Fira and Oia can get very busy. Tipping is not compulsory; rounding up is enough.",
     seeAndDo:
       "The caldera-rim footpath from Fira to Oia (about 10 km); sunset viewing at Oia; the Bronze Age site at Akrotiri; the Red Beach and Black Beach; boat trips to the resurgent volcanic islet of Nea Kameni in the centre of the caldera.",
     whenAndTips:
@@ -175,7 +175,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 3 km south of the centre. The old town is best explored on foot, with buses or rental cars covering the rest of the island. The climate is Mediterranean; being on the Ionian side, Corfu receives markedly more rainfall than the Aegean islands, keeping its vegetation green year-round.",
     culture:
-      "The official language is Greek. Corfu was under Venetian rule for centuries, a history still visible in the town's architectural style and in some Italian loanwords. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Corfu was under Venetian rule for centuries, a history still visible in the town's architectural style and in some Italian loanwords. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "The old town and its two Venetian fortresses; the Liston promenade and the Spianada; the Achilleion Palace; day trips to Paleokastritsa Bay and Mount Pantokrator.",
     whenAndTips:
@@ -202,7 +202,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; visitors usually connect via Athens airport and travel overland (about a 2-hour drive). The old town is walkable. The climate is Mediterranean, with hot summers and mild, wetter winters.",
     culture:
-      "The official language is Greek. Nafplio is a popular weekend getaway for mainland Greeks. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Nafplio is a popular weekend getaway for mainland Greeks. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "The Palamidi Fortress; the Bourtzi Fortress (reachable by small boat); the old town streets and Syntagma Square; day trips to the archaeological site of Mycenae and the ancient theatre of Epidaurus.",
     whenAndTips:
@@ -222,7 +222,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 5 km south-east of the centre. City buses cover the main districts, the old town is walkable, and the lake island is reached by boat. The climate is continental, unlike coastal Greek cities — winters are cold, influenced by the surrounding mountains, while summers are comparatively mild.",
     culture:
-      "The official language is Greek. Ioannina was long the administrative centre of the Ottoman-era Pashalik of Yanina, and traces of this period remain in the town's architecture. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Ioannina was long the administrative centre of the Ottoman-era Pashalik of Yanina, and traces of this period remain in the town's architecture. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "Ioannina Castle and the Aslan Pasha Mosque; Lake Pamvotis and its island monasteries; day trips to the Vikos Gorge and the ancient oracle site of Dodona.",
     whenAndTips:
@@ -245,7 +245,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 8 km west of the centre. City buses cover the main districts, and the old town is walkable. The climate is Mediterranean, with hot, dry summers and mild, wetter winters — among the warmer regions of Greece.",
     culture:
-      "The official language is Greek. Kalamata olives and olive oil are an important local product and a source of local identity. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Kalamata olives and olive oil are an important local product and a source of local identity. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "Kalamata Castle; the waterfront promenade; the archaeological and Byzantine museums; day trips to the Mani Peninsula, the Diros Caves, and hiking on Taygetus.",
     whenAndTips:
@@ -265,7 +265,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 25 km south-west of the centre. City buses cover the main districts; a rental car or local transport is recommended for reaching the villages of Mount Pelion. The climate is Mediterranean along the coast, while the higher, wetter Pelion mountains are comparatively cool and humid.",
     culture:
-      "The official language is Greek. Volos and the surrounding Pelion region preserve much of traditional Greek rural life. Meal times run late; tipping around 5–10% of the bill is customary.",
+      "The official language is Greek. Volos and the surrounding Pelion region preserve much of traditional Greek rural life. Meal times run late; tipping is not compulsory and rounding up is enough.",
     seeAndDo:
       "The waterfront promenade and the archaeological museum; the traditional villages of Mount Pelion, such as Makrinitsa and Portaria; day trips to Meteora and the Thessalian Plain.",
     whenAndTips:
@@ -287,7 +287,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Mykonos Airport (JMK), about 3 km in a straight line from town, is about 25 minutes from Athens, with direct flights from other European cities in summer. Ferries take about 5 hours from Piraeus (fast boats 2.5–3) and about 2.5 from Rafina, with fast boats to Santorini, Naxos and Paros. The town is walked (no cars); beaches are reached by bus, by small boats from Platys Gialos, or by hire car or quad; taxis are scarce. The climate is Mediterranean, hot, dry and windy in summer.",
     culture:
-      "Greek is universal and English widespread. The lanes are narrow and closed to vehicles — luggage goes by trolley. Dress modestly in churches; Delos is an archaeological site visited only on day trips (no overnight stays) — bring water and a hat. Beach clubs are expensive, some with minimum spends. Nightlife runs until dawn. High-season prices are among the highest in Greece. Tipping is optional, 5–10%.",
+      "Greek is universal and English widespread. The lanes are narrow and closed to vehicles — luggage goes by trolley. Dress modestly in churches; Delos is an archaeological site visited only on day trips (no overnight stays) — bring water and a hat. Beach clubs are expensive, some with minimum spends. Nightlife runs until dawn. High-season prices are among the highest in Greece. Tipping is optional; rounding up is enough.",
     seeAndDo:
       "The lanes of Mykonos town, sunset at Little Venice, the Kato Mili windmills, Paraportiani; the ruins of Delos (half a day); the south-coast beaches (Ornos, Platys Gialos, Paradise, Elia); the pelicans and fishing boats of the old port; the archaeological and folklore museums; the monastery and traditional life of Ano Mera; sunset at the Armenistis lighthouse.",
     whenAndTips:

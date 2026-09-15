@@ -10,7 +10,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Ireland can be divided roughly into: Leinster (Dublin, the eastern plain and capital region), Munster (Cork, Limerick and Kerry, the southern and south-western coast and mountains), Connacht (Galway, the western coast and Gaeltacht areas), and the Republic's portion of Ulster (Donegal, the north-west coast). The centre of the country is dominated by low-lying land and peat bog, with most upland concentrated around the coastal margins.",
     gettingAround:
-      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — essentially just Dublin–Donegal (a government-subsidised PSO route) and Dublin–Kerry (a commercial Ryanair route, unsubsidised since 2021). Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. Restaurant bills typically don't include a tip; around 10% or rounding up is customary. The voltage is 230V with UK-style three-pin plugs.",
+      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — essentially just Dublin–Donegal (a government-subsidised PSO route) and Dublin–Kerry (a commercial Ryanair route, unsubsidised since 2021). Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation. The voltage is 230V with UK-style three-pin plugs.",
     culture:
       "The official languages are Irish (Gaelic) and English; English is used in daily life throughout most of the country, while parts of the western coast (the Gaeltacht) still use Irish as the primary spoken language. The Irish are known for their conversational warmth, humour and hospitality, and pub culture is a central part of social life. Traditional music, dance and Celtic festivals such as St Patrick's Day are widely celebrated across the country.",
     seeAndDo:
@@ -34,7 +34,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Dublin Airport is about 10 km by road from the centre, reached by bus or taxi; there is no direct metro link yet. Getting around the city relies mainly on walking, the Luas tram and buses, with the historic Southside walkable on foot. The climate is temperate maritime, mild and rainy year-round with changeable weather.",
     culture:
-      "The official languages are Irish and English, with English used in daily life. Dublin has a strong pub culture, with the Temple Bar district a hub of nightlife, and the city hosts the main St Patrick's Day parade. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used in daily life. Dublin has a strong pub culture, with the Temple Bar district a hub of nightlife, and the city hosts the main St Patrick's Day parade. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "Trinity College and the Book of Kells; Dublin Castle; the Guinness Storehouse; St Patrick's Cathedral; the Temple Bar district; Phoenix Park, one of Europe's largest city parks. Day trips to the Wicklow Mountains and Glendalough.",
     whenAndTips:
@@ -55,7 +55,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Dublin Airport (about 120 km, roughly 1.5 hours by train). The old town is walkable. The climate is temperate maritime; its inland position means slightly less rainfall than coastal areas.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Kilkenny is an important centre for crafts and design in Ireland and is also known nationally as a craft-beer town. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Kilkenny is an important centre for crafts and design in Ireland and is also known nationally as a craft-beer town. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "Kilkenny Castle; St Canice's Cathedral and round tower; the Medieval Mile walking route; the ruins of the Black Abbey (St Francis Abbey). Day trips to Jerpoint Abbey nearby.",
     whenAndTips:
@@ -76,7 +76,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Cork Airport is about 6.4 km in a straight line from the centre, reached by bus. Getting around the city centre relies mainly on walking, as the old town is compact. The climate is temperate maritime, mild and rainy year-round.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Cork is known for its local food culture, and the English Market is central to daily food life in the city. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Cork is known for its local food culture, and the English Market is central to daily food life in the city. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "The English Market; St Fin Barre's Cathedral; University College Cork. Day trips to nearby Cobh (the Titanic's last port of call) and Blarney Castle (home of the \"Blarney Stone\").",
     whenAndTips:
@@ -97,7 +97,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Kerry Airport is about 14 km in a straight line from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "Killarney National Park and its three lakes; Muckross House and Estate; a jaunting-car tour through the Gap of Dunloe; hiking in MacGillycuddy's Reeks (Carrauntoohil); the classic starting point for a Ring of Kerry drive.",
     whenAndTips:
@@ -114,7 +114,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Kerry Airport (about 50 km). The town itself is walkable, but exploring the peninsula's coastal scenic route requires a car or a tour. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
     culture:
-      "The official languages are Irish and English; Dingle sits in the Gaeltacht, and many local signs and place names appear in Irish. The town is known for its seafood and traditional-music pubs. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English; Dingle sits in the Gaeltacht, and many local signs and place names appear in Irish. The town is known for its seafood and traditional-music pubs. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "The Slea Head viewpoint; early Christian remains such as the Gallarus Oratory beehive huts; whale- and dolphin-watching boat trips from Dingle Harbour (Fungie, the bottlenose dolphin resident in the harbour since 1983, has not been seen since October 2020, and a bronze statue of him stands on the pier); the Slea Head loop drive along the peninsula's coast.",
     whenAndTips:
@@ -135,7 +135,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Waterford Airport currently has no scheduled passenger flights; most travellers connect via Cork Airport (about 110 km) or Dublin Airport (about 165 km), or take the train to and from Dublin (about 2.5 hours). The old town is walkable. The climate is temperate maritime.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Waterford Crystal is one of Ireland's signature craft brands, and the city's history is closely tied to its Viking and Norman settlement traditions. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Waterford Crystal is one of Ireland's signature craft brands, and the city's history is closely tied to its Viking and Norman settlement traditions. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "A tour of the Waterford Crystal workshop; Reginald's Tower (Ireland's oldest surviving urban building); the medieval museum cluster in the Viking Triangle. Day trips to the Comeragh Mountains nearby.",
     whenAndTips:
@@ -158,7 +158,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Shannon Airport is about 21 km in a straight line from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is generally taken to be the namesake of the five-line comic verse form, the \"limerick,\" though the exact origin of the name remains unsettled. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is generally taken to be the namesake of the five-line comic verse form, the \"limerick,\" though the exact origin of the name remains unsettled. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "King John's Castle; St Mary's Cathedral, Limerick; a walk along the Shannon. Day trips to medieval sites along the Shannon such as Bunratty Castle.",
     whenAndTips:
@@ -179,7 +179,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Galway Airport no longer operates scheduled services; the nearest airport is Shannon (about 100 km). The city centre is walkable; reaching Connemara and the Aran Islands requires a car, a tour, or a ferry. The climate is temperate maritime, rainy and windy.",
     culture:
-      "The official languages are Irish and English; Galway and its surrounding area form an important Gaeltacht region, with a lively atmosphere of street performers and traditional-music pubs. The Galway International Arts Festival (July) is a major cultural event in Ireland. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English; Galway and its surrounding area form an important Gaeltacht region, with a lively atmosphere of street performers and traditional-music pubs. The Galway International Arts Festival (July) is a major cultural event in Ireland. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "The Latin Quarter streets and St Nicholas' Church; the Salthill promenade; the Corrib weir and its salmon-run viewing point; the classic starting point for day trips to the Twelve Bens of Connemara and the Aran Islands.",
     whenAndTips:
@@ -196,7 +196,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Ireland West Airport Knock is about 47 km in a straight line from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Westport is known for its neatly planned town centre and lively music-pub culture, and is an important hub for outdoor tourism in western Ireland. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Westport is known for its neatly planned town centre and lively music-pub culture, and is an important hub for outdoor tourism in western Ireland. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "Hiking Croagh Patrick, an important pilgrimage mountain in Ireland; the cliffs at Keem Bay on Achill Island; the ferry to Clare Island; the Westport House estate and Mall.",
     whenAndTips:
@@ -213,7 +213,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Donegal Airport (Carrickfinn) is about 46 km in a straight line from town and has a government-subsidised route to Dublin. The town itself is walkable; reaching Slieve League and Glenveagh National Park requires a car. The climate is temperate maritime and among the windier parts of Ireland.",
     culture:
-      "The official languages are Irish and English; County Donegal is an important Gaeltacht region. The area is known for the traditional craft of hand-woven Donegal tweed. Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English; County Donegal is an important Gaeltacht region. The area is known for the traditional craft of hand-woven Donegal tweed. If a service charge is already on the bill there is no need to add more; otherwise tipping is discretionary, not an obligation.",
     seeAndDo:
       "Donegal Castle; the Diamond market square. Slieve League nearby (one of Europe's highest sea cliffs) and Glenveagh National Park; the scenery along Donegal Bay.",
     whenAndTips:

@@ -51,7 +51,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Almaty International Airport (ALA) is about 21 km in a straight line from the city centre; the city has a single metro line and a bus network, while reaching mountain sites like Medeu or Big Almaty Lake usually requires a hired car or a local tour; Charyn Canyon and the Kolsai-Kaindy lakes require a one- or two-day trip out of Almaty.",
     culture:
-      "The official language is Kazakh, with Russian widely used in Almaty — in some contexts even more common. Almaty is one of Kazakhstan's most cosmopolitan and secular cities, and everyday dress is fairly relaxed; religious sites still call for basic etiquette such as removing shoes and women carrying a headscarf. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+      "The official language is Kazakh, with Russian widely used in Almaty — in some contexts even more common. Almaty is one of Kazakhstan's most cosmopolitan and secular cities, and everyday dress is fairly relaxed; religious sites still call for basic etiquette such as removing shoes and women carrying a headscarf. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
     seeAndDo:
       "The Medeu high-altitude skating rink and viewpoint; Big Almaty Lake (a glacial lake and alpine hiking); Panfilov Park and the Ascension Cathedral (a wooden Orthodox church); Republic Square and the Abay Opera and Ballet Theatre; using Almaty as a base for a one- or multi-day trip to Charyn Canyon or the Kolsai and Kaindy lakes.",
     whenAndTips:
@@ -88,7 +88,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Aktau International Airport (SCO) is about 24 km in a straight line from the city centre; taxis are the main way to get around town, while reaching desert sites like Bozzhyra and Karagiye involves rough terrain and usually requires a rented 4x4 with a local guide familiar with the route.",
     culture:
-      "The official language is Kazakh, with Russian widely used. Aktau is an oil-industry city on the Caspian coast, and the pace of local life leans business-oriented; shoes come off before entering religious sites, and women should carry a headscarf. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+      "The official language is Kazakh, with Russian widely used. Aktau is an oil-industry city on the Caspian coast, and the pace of local life leans business-oriented; shoes come off before entering religious sites, and women should carry a headscarf. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
     seeAndDo:
       "Bozzhyra Canyon (chalk \"fang\" rock towers and \"Martian\" terrain); the Karagiye Depression (Kazakhstan's lowest point); Torysh, the Valley of Balls (spherical sandstone concretions); Aktau's seaside promenade and Blue Bay beach; the Mangystau Regional History Museum.",
     whenAndTips:
@@ -107,7 +107,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Hazrat Sultan International Airport (HSA), opened in 2020, is about 24 km in a straight line from the city centre; taxis are the main way to get around town, and the city is easily reached from either Shymkent or its own airport.",
     culture:
-      "The official language is Kazakh. The Yasawi Mausoleum is one of Kazakhstan's most important Islamic sacred sites — dress modestly and remove shoes before entering the mausoleum complex, and women should carry a headscarf; as a pilgrimage site, keep noise down and be respectful of worshippers in prayer. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+      "The official language is Kazakh. The Yasawi Mausoleum is one of Kazakhstan's most important Islamic sacred sites — dress modestly and remove shoes before entering the mausoleum complex, and women should carry a headscarf; as a pilgrimage site, keep noise down and be respectful of worshippers in prayer. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
     seeAndDo:
       "The Yasawi Mausoleum (commissioned by Timur in 1389–1405, a UNESCO World Heritage Site and a showcase of Timurid architectural experimentation); the archaeological heritage park surrounding the mausoleum; the Hazrat Sultan Mosque; the Turkestan Regional History Museum.",
     whenAndTips:
@@ -149,7 +149,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     // culture sources: ⚠️ 零争议红线，**只改这一句**：删掉「承受深重的核辐射影响」这半句评价性表述（谈的是活着的人群的健康后果），保留「有严肃的纪念与教育设施、参观请保持尊重」这条对读者有用的实用信息。
     //   **核实方建议把核试验场整块删掉，没有照办** —— 它给的依据是「任务指令本身」，而那是我在 prompt 里写的黑名单。按仓库判据逐句量：howItWorks 那句是日期与次数、无评价词（8 月 29 日成为联合国国际禁核试日是公开事实），seeAndDo 的纪念馆是真实公开运营的场馆——两处都与越南保留挂牌景点的判例同型，**保留**。**英文侧本来就更克制**（写的是 carries the serious historical legacy…，完全没提辐射影响），只有中文那半句带评价——又一处中文比英文过火的中英不同步。2026-09-10 判定。
     culture:
-      "The official language is Kazakh, with Russian widely used. Semey carries the serious historical legacy of the Soviet nuclear test site nearby, and the city maintains solemn memorial and educational facilities related to this history — visit related memorials respectfully. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+      "The official language is Kazakh, with Russian widely used. Semey carries the serious historical legacy of the Soviet nuclear test site nearby, and the city maintains solemn memorial and educational facilities related to this history — visit related memorials respectfully. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
     seeAndDo:
       "The Semey cable-stayed bridge (a landmark spanning the Irtysh River); the Abai Memorial Museum (documents and artefacts related to the Kazakh national poet Abai); the Dostoevsky Literary Memorial Museum; the Museum of Nuclear Test Victims (learning about the Soviet nuclear testing history).",
     whenAndTips:

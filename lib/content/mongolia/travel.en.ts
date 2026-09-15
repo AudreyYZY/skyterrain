@@ -32,7 +32,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Chinggis Khaan International Airport opened in 2021 about 52 km south of the city centre; an airport bus takes about an hour into town. Around the city, buses and taxis are the main options, and rush-hour traffic congestion is common.",
     culture:
-      "The official language is Mongolian; the average annual temperature is about -0.8°C, making it one of the coldest capital cities in the world. The city blends Soviet-era architecture, Tibetan Buddhist monasteries and modern high-rises. Tipping is not mandatory, but leaving 5–10% at city restaurants is fairly common.",
+      "The official language is Mongolian; the average annual temperature is about -0.8°C, making it one of the coldest capital cities in the world. The city blends Soviet-era architecture, Tibetan Buddhist monasteries and modern high-rises. Tipping is not a local tradition; it has become more common in city restaurants in recent years, with no set rate.",
     seeAndDo:
       "Sükhbaatar Square (Chinggis Square); Gandantegchinlen Monastery; the National Museum of Mongolia; the Chinggis Khaan equestrian statue (on the outskirts); the Bogd Khaan Palace Museum.",
     whenAndTips:

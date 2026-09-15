@@ -46,7 +46,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Debrecen International Airport is about 6 km south of the centre with a few European routes. Trains to Budapest take about two and a half to three hours. The city has trams — line 1 is a loop tying the station, the centre and the Great Forest together — and buses, and the centre is walkable.",
     culture:
-      "Hungarian is universal, with better English around the university. The Reformed tradition is strong here and the churches are plain inside, without statuary — quite unlike a Catholic interior. The 'Debrecen sausage' known abroad is a different thing from the local product; the spicy sausage itself is easy to find in butchers and at the market. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with better English around the university. The Reformed tradition is strong here and the churches are plain inside, without statuary — quite unlike a Catholic interior. The 'Debrecen sausage' known abroad is a different thing from the local product; the spicy sausage itself is easy to find in butchers and at the market. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The Reformed Great Church and the old college; Kossuth Square in the centre; the Great Forest park (thermal baths, zoo, botanic garden); the Déri Museum; riding tram 1 the length of the city's axis; and Hortobágy, about 40 km west, as a day out.",
     whenAndTips:
@@ -63,7 +63,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Szeged has no scheduled passenger airport; international flights go via Budapest, about 155 km away in a straight line and about two and a half hours by train. The city has trams and trolleybuses covering the rings and the main avenues, and the centre is walkable.",
     culture:
-      "Hungarian is universal, with better English around the university. Paprika is the local product and strings of drying peppers are a market sight; the Tisza fish soup (halászlé) is made differently here from elsewhere. The open-air theatre festival is held on the cathedral square in summer. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with better English around the university. Paprika is the local product and strings of drying peppers are a market sight; the Tisza fish soup (halászlé) is made differently here from elsewhere. The open-air theatre festival is held on the cathedral square in summer. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The Votive Church and cathedral square; the town hall and the art nouveau buildings of the old town; a walk along the Tisza; the thermal baths in Újszeged; buying paprika at the market; the summer open-air theatre on the cathedral square.",
     whenAndTips:
@@ -79,7 +79,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Pécs-Pogány airport has no scheduled passenger service; international flights go via Budapest, about 170 km away in a straight line and about three hours by train. City buses cover the slope, and the centre is walkable, though north–south means gradient.",
     culture:
-      "Hungarian is universal, with better English around the university. The city's fabric layers Roman, medieval and Ottoman work in a way rare in Hungary. Zsolnay porcelain is the local industrial tradition and has a quarter of its own devoted to it. The wines of the Villány region, about 30 km south, are the local reds. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with better English around the university. The city's fabric layers Roman, medieval and Ottoman work in a way rare in Hungary. Zsolnay porcelain is the local industrial tradition and has a quarter of its own devoted to it. The wines of the Villány region, about 30 km south, are the local reds. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "Széchenyi Square and the domed church that was a mosque; the cathedral and the early Christian necropolis (World Heritage); the Zsolnay quarter; the viewpoints and trails on the Mecsek; the wineries of Villány about 30 km south.",
     whenAndTips:
@@ -95,7 +95,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Győr has no scheduled passenger airport; international flights go via Budapest, about 106 km away in a straight line, or Vienna. Trains reach Budapest in about an hour and a half and Vienna in a little over an hour. City buses and walking serve the compact old town.",
     culture:
-      "Hungarian is universal, and German is also in common use this close to Austria. The baroque old town is dense with buildings, and many of its courtyards can be walked through. Art and music are active here and there is a street arts festival in summer. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, and German is also in common use this close to Austria. The baroque old town is dense with buildings, and many of its courtyards can be walked through. Art and music are active here and there is a street arts festival in summer. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "Chapter Hill and the cathedral; the baroque old town and its courtyards; a walk along the meeting of the rivers; the town hall; and from here the side channels and floodplain forest of the Szigetköz, or the Benedictine abbey at Pannonhalma about 20 km to the south-east.",
     whenAndTips:
@@ -113,7 +113,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Eger has no airport with scheduled flights; international flights go via Budapest, about 106 km away in a straight line and about two hours by train. The town is walkable, and the cellar valley can be reached on foot or by bus. Buses for the Bükk leave from the coach station.",
     culture:
-      "Hungarian is universal, with English usable in tourism. The local red, Egri Bikavér, is a blend made to the region's rules from several varieties; tasting by the glass in the cellars is the usual way and not expensive. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with English usable in tourism. The local red, Egri Bikavér, is a blend made to the region's rules from several varieties; tasting by the glass in the cellars is the usual way and not expensive. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "Dobó Square and the baroque town; Eger castle; the Ottoman minaret; the cathedral and the archdiocesan library; the cellars in the Valley of the Beautiful Women; and the Bükk from here, for walking and caves.",
     whenAndTips:
@@ -130,7 +130,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Sopron has no scheduled passenger airport; international flights go via Budapest, about 185 km away in a straight line, or Vienna. Trains reach Vienna in a little over an hour and Budapest in about two and a half. The old town is small and walkable.",
     culture:
-      "Hungarian is universal, and German is also in common use here. The local wines are chiefly reds, made from Blaufränkisch, and the wineries around the town generally receive visitors. Courtyards and cellars in the old town often show Roman, medieval and baroque work in one building. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, and German is also in common use here. The local wines are chiefly reds, made from Blaufränkisch, and the wineries around the town generally receive visitors. Courtyards and cellars in the old town often show Roman, medieval and baroque work in one building. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The Fire Tower and the main square; the medieval lanes and courtyards of the old town; the Roman remains; the wineries around the town; the reed belts and birdwatching at Lake Fertő; the Esterházy palace at Fertőd, about 25 km east.",
     whenAndTips:
@@ -147,7 +147,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The HÉV suburban railway from Budapest takes about 40 minutes; there are also buses and, in season, boats on the Danube. The town is walkable, though the lanes up the slope have steps.",
     culture:
-      "Hungarian is universal, with English usable in tourism. The Orthodox churches were built by communities who settled here in the seventeenth and eighteenth centuries, and both their architecture and their interiors differ from the Catholic and Reformed churches usual in Hungary. Galleries and craft shops are dense, many of them converted studios. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with English usable in tourism. The Orthodox churches were built by communities who settled here in the seventeenth and eighteenth centuries, and both their architecture and their interiors differ from the Catholic and Reformed churches usual in Hungary. Galleries and craft shops are dense, many of them converted studios. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The main square and the lanes of the old town; the Orthodox churches and the view from church hill; the galleries and ceramic studios; the Danube promenade; the open-air ethnographic museum (Skanzen) outside town; and continuing north to Visegrád and Esztergom.",
     whenAndTips:
