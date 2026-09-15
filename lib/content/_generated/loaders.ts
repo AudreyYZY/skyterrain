@@ -162,6 +162,7 @@ export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, Trav
   "lithuania": () => import("@/lib/content/lithuania/travel.zh").then((m) => m.TRAVEL_ZH),
   "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/travel.zh").then((m) => m.TRAVEL_ZH),
   "sri-lanka": () => import("@/lib/content/sri-lanka/travel.zh").then((m) => m.TRAVEL_ZH),
+  "brunei": () => import("@/lib/content/brunei/travel.zh").then((m) => m.TRAVEL_ZH),
 };
 
 export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
@@ -215,4 +216,5 @@ export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, Trav
   "lithuania": () => import("@/lib/content/lithuania/travel.en").then((m) => m.TRAVEL_EN),
   "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/travel.en").then((m) => m.TRAVEL_EN),
   "sri-lanka": () => import("@/lib/content/sri-lanka/travel.en").then((m) => m.TRAVEL_EN),
+  "brunei": () => import("@/lib/content/brunei/travel.en").then((m) => m.TRAVEL_EN),
 };

@@ -809,6 +809,10 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4, 4], source: "auto" },
     "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
   },
+  "pkx-bwn": {
+    "zh-CN": { perSentence: [0, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4], source: "auto" },
+  },
   "pkx-hel": {
     "zh-CN": { perSentence: [0, 1, 1, 2, 3, 4, 4], source: "auto" },
     "en-US": { perSentence: [0, 1, 1, 2, 3, 4, 4], source: "auto" },

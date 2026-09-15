@@ -50,6 +50,7 @@ import { CITIES as uzbekistan } from "@/lib/content/uzbekistan/cities";
 import { CITIES as lithuania } from "@/lib/content/lithuania/cities";
 import { CITIES as kyrgyzstan } from "@/lib/content/kyrgyzstan/cities";
 import { CITIES as sri_lanka } from "@/lib/content/sri-lanka/cities";
+import { CITIES as brunei } from "@/lib/content/brunei/cities";
 
 export const ALL_CITIES: CityEntry[] = [
   ...china,
@@ -102,4 +103,5 @@ export const ALL_CITIES: CityEntry[] = [
   ...lithuania,
   ...kyrgyzstan,
   ...sri_lanka,
+  ...brunei,
 ];

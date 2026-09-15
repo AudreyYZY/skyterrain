@@ -50,6 +50,7 @@ import { TRAVEL_EN as uzbekistan } from "@/lib/content/uzbekistan/travel.en";
 import { TRAVEL_EN as lithuania } from "@/lib/content/lithuania/travel.en";
 import { TRAVEL_EN as kyrgyzstan } from "@/lib/content/kyrgyzstan/travel.en";
 import { TRAVEL_EN as sri_lanka } from "@/lib/content/sri-lanka/travel.en";
+import { TRAVEL_EN as brunei } from "@/lib/content/brunei/travel.en";
 
 export const ALL_TRAVEL_EN: Record<string, TravelGuide> = {
   ...china,
@@ -102,4 +103,5 @@ export const ALL_TRAVEL_EN: Record<string, TravelGuide> = {
   ...lithuania,
   ...kyrgyzstan,
   ...sri_lanka,
+  ...brunei,
 };

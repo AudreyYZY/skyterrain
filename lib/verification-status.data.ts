@@ -2223,4 +2223,10 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/negombo": { f: 7, v: 1, d: "2026-09-15" },
   "travel/anuradhapura": { f: 7, v: 1, d: "2026-09-15" },
   "travel/dambulla": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/brunei-overview": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/bandar-seri-begawan": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/kampong-ayer": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/tutong": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/kuala-belait": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/bangar": { f: 7, v: 1, d: "2026-09-15" },
 };
