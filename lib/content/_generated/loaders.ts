@@ -53,6 +53,7 @@ export const TERRAIN_ZH_LOADERS: Record<string, () => Promise<Record<string, Ter
   "uzbekistan": () => import("@/lib/content/uzbekistan/terrain.zh").then((m) => m.TERRAIN_ZH),
   "lithuania": () => import("@/lib/content/lithuania/terrain.zh").then((m) => m.TERRAIN_ZH),
   "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "sri-lanka": () => import("@/lib/content/sri-lanka/terrain.zh").then((m) => m.TERRAIN_ZH),
 };
 
 export const TERRAIN_EN_LOADERS: Record<string, () => Promise<Record<string, TerrainLesson>>> = {
@@ -105,6 +106,7 @@ export const TERRAIN_EN_LOADERS: Record<string, () => Promise<Record<string, Ter
   "uzbekistan": () => import("@/lib/content/uzbekistan/terrain.en").then((m) => m.TERRAIN_EN),
   "lithuania": () => import("@/lib/content/lithuania/terrain.en").then((m) => m.TERRAIN_EN),
   "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/terrain.en").then((m) => m.TERRAIN_EN),
+  "sri-lanka": () => import("@/lib/content/sri-lanka/terrain.en").then((m) => m.TERRAIN_EN),
 };
 
 export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
