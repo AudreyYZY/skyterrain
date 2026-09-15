@@ -31,10 +31,11 @@
     "check:distance": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-distance.ts",
     "check:pending": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-pending.ts",
     "check:airports": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-airports.ts",
+    "check:bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-bearings.ts",
     "check:issues": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-issues.ts",
     "sample:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/sample-claims.ts",
     "gen:verify-status": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-verification-status.ts",
-    "check:bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-bearings.ts",
+    "check:layout-bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-layout-bearings.ts",
     "gen:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts",
     "check:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts --check",
     "test:e2e": "playwright test"

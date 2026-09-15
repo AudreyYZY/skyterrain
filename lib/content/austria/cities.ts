@@ -89,13 +89,13 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "eisenstadt", nameZh: "艾森施塔特", nameEn: "Eisenstadt", country: "austria", tier: "notable", zone: "at-burgenland", admin1Zh: "布尔根兰州", admin1En: "Burgenland",
-    lon: 16.5167, lat: 47.8500,
+    lon: 16.5233, lat: 47.8457,
     airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International Airport (via Vienna)", lon: 16.5697, lat: 48.1103 },
-    source: "Eisenstadt 47.8500,16.5167（en.wikipedia）；无自有机场，与维也纳条目共用 VIE（约 45 公里）；人口 16,118（2025）",
+    source: "Eisenstadt 老城 47.8457,16.5233（2026-09-16 由 en.wikipedia 度分粗坐标改为老城核心，check:layout-bearings 查出）；无自有机场，与维也纳条目共用 VIE（约 45 公里）；人口 16,118（2025）",
   },
   {
     id: "st-anton", nameZh: "圣安东（阿尔贝格）", nameEn: "St. Anton am Arlberg", country: "austria", tier: "notable", zone: "at-tirol", admin1Zh: "蒂罗尔州", admin1En: "Tyrol",
-    lon: 10.2667, lat: 47.1167,
-    source: "St. Anton am Arlberg 47.1167,10.2667（en.wikipedia，海拔 1,304 米）；无机场，最近为因斯布鲁克（约 100 公里）、苏黎世（约 200 公里），条目不写机场字段，阿尔贝格铁路直达；人口 2,357（2021）",
+    lon: 10.2670, lat: 47.1300,
+    source: "St. Anton am Arlberg 村中心 47.1300,10.2670（2026-09-16 由 en.wikipedia 度分粗坐标改为村中心 / 车站一带，check:layout-bearings 查出；海拔 1,304 米）；无机场，最近为因斯布鲁克（约 100 公里）、苏黎世（约 200 公里），条目不写机场字段，阿尔贝格铁路直达；人口 2,357（2021）",
   },
 ];

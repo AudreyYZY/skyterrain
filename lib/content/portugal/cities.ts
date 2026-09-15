@@ -88,8 +88,8 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "viana-do-castelo", nameZh: "维亚纳堡", nameEn: "Viana do Castelo", country: "portugal", tier: "notable", zone: "pt-north", admin1Zh: "维亚纳堡区", admin1En: "Viana do Castelo District",
-    lon: -8.8300, lat: 41.7000,
+    lon: -8.8283, lat: 41.6935,
     airport: { iata: "OPO", nameZh: "波尔图机场（经波尔图转乘）", nameEn: "Porto Airport (via Porto)", lon: -8.6814, lat: 41.2481 },
-    source: "Viana do Castelo 41.7000,-8.8300（en.wikipedia）；无自有机场，与波尔图条目共用 OPO（约 60 公里，米尼奥线火车约 1.5 小时）；市镇人口 85,778（2021）",
+    source: "Viana do Castelo 共和国广场 41.6935,-8.8283（2026-09-16 由 en.wikipedia 粗坐标改为 OSM 广场点：原坐标偏在圣卢西亚山一侧，check:layout-bearings 查出）；无自有机场，与波尔图条目共用 OPO（约 60 公里，米尼奥线火车约 1.5 小时）；市镇人口 85,778（2021）",
   },
 ];
