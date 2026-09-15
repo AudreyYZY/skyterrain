@@ -57,4 +57,17 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "KSQ", nameZh: "卡尔希机场", nameEn: "Karshi Airport", lon: 65.773068, lat: 38.802246 },
     source: "卡尔希市中心 38.8667,65.8（Wikidata Q644008）；KSQ 机场 OurAirports 38.8022,65.7731，距市中心直线约 7.5 km（按坐标算）；有飞往塔什干的定期航班（uzairports.com，1 级）",
   },
+  {
+    id: "margilan", nameZh: "马尔吉兰", nameEn: "Margilan", country: "uzbekistan", tier: "major", zone: "uz-east",
+    admin1Zh: "费尔干纳州", admin1En: "Fergana Region",
+    lon: 71.7195, lat: 40.4695,
+    airport: { iata: "FEG", nameZh: "费尔干纳国际机场", nameEn: "Fergana International Airport", lon: 71.7450, lat: 40.3588 },
+    source: "马尔吉兰市中心 40.4695,71.7195（OSM）；机场在费尔干纳市一侧、不在马尔吉兰，FEG 距马尔吉兰中心直线约 12 km，uzairports.com 航班屏 2026-09-15 见往返塔什干的定期航班（1 级快照）；离国界约 22 km（按 OSM 国界算，已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "nurata", nameZh: "努拉塔", nameEn: "Nurata", country: "uzbekistan", tier: "notable", zone: "uz-center",
+    admin1Zh: "纳沃伊州", admin1En: "Navoiy Region",
+    lon: 65.6904, lat: 40.5628,
+    source: "努拉塔镇中心 40.5628,65.6904（OSM）；本地没有定期航班的机场，不填 airport；纳沃伊 NVI 直线约 66 km（按 OurAirports 算，航班屏 2026-09-15 见往返塔什干航班）；离国界约 108 km（已有城市补充批，2026-09-16）；中文译名与仓库地形条目「努拉塔山」对齐（zhwiki 作「努羅塔」）",
+  },
 ];

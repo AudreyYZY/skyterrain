@@ -50,4 +50,12 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "科奇科尔牲畜市场", nameEn: "Kochkor Livestock Market", lon: 75.7340, lat: 42.2120, kind: "landmark" },
     { nameZh: "松湖", nameEn: "Song-Köl", lon: 75.1732, lat: 41.8414, kind: "nature" },
   ],
+  bokonbayevo: [
+    { nameZh: "博孔巴伊公园", nameEn: "Bokonbai park", lon: 76.9984, lat: 42.1143, kind: "landmark" },
+    { nameZh: "童话峡谷", nameEn: "Skazka (Fairy Tale) Canyon", lon: 77.3541, lat: 42.1566, kind: "landmark" },
+  ],
+  "at-bashy": [
+    { nameZh: "科绍伊—科尔贡遗址与博物馆", nameEn: "Koshoy-Korgon ruins and museum", lon: 75.6981, lat: 41.1238, kind: "landmark" },
+    { nameZh: "塔什拉巴特商队驿站", nameEn: "Tash-Rabat caravanserai", lon: 75.2887, lat: 40.8231, kind: "landmark" },
+  ],
 };

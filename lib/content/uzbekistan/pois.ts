@@ -49,4 +49,16 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "奥迪纳清真寺", nameEn: "Odina Mosque", lon: 65.8032, lat: 38.8677, kind: "landmark" },
     { nameZh: "卡尔希主麻清真寺", nameEn: "Jami Mosque of Karshi", lon: 65.7911, lat: 38.8637, kind: "landmark" },
   ],
+  margilan: [
+    { nameZh: "约德戈尔利克丝绸厂", nameEn: "Yodgorlik silk factory", lon: 71.7173, lat: 40.4759, kind: "landmark" },
+    { nameZh: "赛义德·艾哈迈德·霍贾经学院", nameEn: "Said Ahmad Khoja Madrasa", lon: 71.7252, lat: 40.4719, kind: "landmark" },
+    { nameZh: "霍纳霍清真寺", nameEn: "Khonakhoh Mosque", lon: 71.7257, lat: 40.4765, kind: "landmark" },
+    { nameZh: "中央公园", nameEn: "Central park", lon: 71.7142, lat: 40.4687, kind: "landmark" },
+    { nameZh: "马尔吉兰火车站", nameEn: "Margilan railway station", lon: 71.7231, lat: 40.4426, kind: "landmark" },
+  ],
+  nurata: [
+    { nameZh: "查什马历史建筑群", nameEn: "Chashma historical complex", lon: 65.6802, lat: 40.5552, kind: "landmark" },
+    { nameZh: "努尔古堡遗址", nameEn: "Nur fortress ruins", lon: 65.6799, lat: 40.554, kind: "landmark" },
+    { nameZh: "萨尔米什赛岩画", nameEn: "Sarmishsay petroglyphs", lon: 65.6036, lat: 40.3002, kind: "landmark" },
+  ],
 };

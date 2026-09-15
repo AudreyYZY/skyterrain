@@ -51,4 +51,16 @@ export const CITIES: CityEntry[] = [
     lon: 75.7555, lat: 42.2157,
     source: "科奇科尔中心 42.2157,75.7555（Wikidata Q2349614）；纳伦州科奇科尔区区中心，行政上是村（统计表 825 列为 с. Кочкор，1 级）；没有定期航班的机场（OurAirports 无条目、airport.kg 机场表无），最近有定期航班的纳伦机场直线约 89 km；距松湖（地形锚点）直线约 64 km（按坐标算）",
   },
+  {
+    id: "bokonbayevo", nameZh: "博孔巴耶沃", nameEn: "Bokonbayevo", country: "kyrgyzstan", tier: "notable", zone: "kg-issykkul",
+    admin1Zh: "伊塞克湖州", admin1En: "Issyk-Kul Region",
+    lon: 76.9889, lat: 42.1161,
+    source: "博孔巴耶沃村中心 42.1161,76.9889（OSM）；伊塞克湖州通区下的村（统计委员会表 825，1 级）；没有定期航班的机场（airport.kg 机场表无，1 级），塔姆奇的伊塞克湖国际机场只有季节性航班、直线约 57 km；离国界约 90 km（已有城市补充批，2026-09-16）；Wikidata 无中文标签，译名按俄文 Боконбаево 音译",
+  },
+  {
+    id: "at-bashy", nameZh: "阿特巴什", nameEn: "At-Bashy", country: "kyrgyzstan", tier: "notable", zone: "kg-inner",
+    admin1Zh: "纳伦州", admin1En: "Naryn Region",
+    lon: 75.8144, lat: 41.1689,
+    source: "阿特巴什村中心 41.1689,75.8144（OSM）；纳伦州阿特巴什区下的村（统计委员会表 825，1 级）；没有定期航班的机场，纳伦机场直线约 40 km、有 Asman 往返比什凯克航班但无 IATA 码，不填 airport；离国界约 59 km（已有城市补充批，2026-09-16）；中文译名沿用仓库地形条目「阿特巴什山」（Wikidata zh 作「阿特巴希」）",
+  },
 ];

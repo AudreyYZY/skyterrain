@@ -137,4 +137,38 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June to September is the season for Song-Köl; the lake lies at about 3,000 m and is cold even in summer, so bring plenty of warm clothing and watch for altitude sickness; the lake starts freezing around the end of September. Transport to Song-Köl can be arranged in Kochkor.",
   },
+  bokonbayevo: {
+    // 全七段 sources: 同中文侧（National Statistical Committee tables 825 and 769, tier 1; airport.kg airport list, tier 1; UNESCO tentative list 5518 and MAB, tier 1; UNESCO national commission on falconry, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Bokonbayevo is a large village on the south shore of Issyk-Kul in Kyrgyzstan, in Ton District of Issyk-Kul Region, with about 13,400 people at the start of 2026 according to the village government. It lies on the road along the south shore, with the lake to the north and valleys of the Tian Shan to the south; ruins of a medieval town near the Ton river nearby are on the World Heritage tentative list.",
+    howItWorks:
+      "Administratively Bokonbayevo is a village run by its rural district (aiyl aimak) government, not a city government, and the roughly 58,000 residents of Ton District are all classed as rural. Its daily radius is set by a single lakeshore road running west to Balykchy and east to Karakol, stringing the villages of the south shore together, with roads into the southern valleys branching off it. The village stretches along the road, with a park and a community tourism information point in the centre. Locals find their way by the road, the park and the lakeshore. Newcomers most often assume the south shore has an airport and resort strip like Cholpon-Ata on the north shore — there is no airport with scheduled flights here, and the airport at Tamchy on the north shore has only seasonal flights — and that the red sandstone canyon beside the lakeshore road is on the village's doorstep, when it is about 30 km east.",
+    layout:
+      "The village sits on the south side of Issyk-Kul, stretched along the east–west lakeshore road with a park in the centre; the lake lies to the north, and the Ton and other valleys lead south into the Tian Shan. About 30 km east along the road, by the lakeshore, is the red sandstone canyon popularly called Fairy Tale Canyon; Balykchy lies to the west and Karakol to the east.",
+    gettingAround:
+      "Bokonbayevo has no airport with scheduled flights; the nearest, Issyk-Kul International Airport at Tamchy on the north shore, has only seasonal flights and is about 57 km away across the lake in a straight line, and year-round scheduled flights mean going to Bishkek. From Bishkek most people travel via Balykchy and along the south-shore road by shared taxi or minibus; in summer a tourist train also runs from Bishkek to Balykchy, where you change. Driving or hiring a car is easiest between the lakeside villages.",
+    culture:
+      "Kyrgyz is the main language. Falconry is part of Kyrgyz nomadic tradition, and Kyrgyzstan joined UNESCO's listing of falconry as intangible cultural heritage of humanity in 2021; the traditional felt carpets ala-kiyiz and shyrdak are common too. The whole Issyk-Kul area is a UNESCO biosphere reserve. Drinking alcohol in public places is illegal.",
+    seeAndDo:
+      "The park and lakeshore in the village; the red sandstone canyon beside the lakeshore road about 30 km east; the villages and beaches of the south shore; high pastures in the valleys to the south; and learning about nomadic traditions such as falconry and felt-making.",
+    whenAndTips:
+      "June–September is best for the lake and valleys; winters are cold, and in the summer peak it is worth booking accommodation and transport ahead.",
+  },
+  "at-bashy": {
+    // 全七段 sources: 同中文侧（National Statistical Committee tables 825 and 769, tier 1; airport.kg, tier 1; UNESCO tentative list 5518 (2010), tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条 ok；盆地南北格局沿用仓库地形条目）。
+    identity:
+      "At-Bashy is a large village in At-Bashy District of Naryn Region, Kyrgyzstan, in the At-Bashy basin at a little over 2,000 metres, with about 15,300 people at the start of 2026 according to the village government. Outside the village are two Silk Road sites on the World Heritage tentative list: the walls of Koshoy-Korgon about 11 km away in a straight line, and the stone caravanserai of Tash-Rabat in a high valley to the south-west at about 3,200 metres.",
+    howItWorks:
+      "Administratively At-Bashy is a village run by the At-Bashy rural district (aiyl aimak) government; the roughly 63,000 residents of At-Bashy District are all classed as rural, and in the whole of Naryn Region only the regional capital, Naryn, counts as urban. The village stretches along its main street, with the market and cultural centre together in one area. Daily life is shaped by the basin: irrigated farmland to the north, the At-Bashy range to the south, and for longer trips a drive of about 30 km north to Naryn, whose airport also has the flights to Bishkek. Locals find their way by the main street, the market and the road to Naryn. Newcomers most often assume Tash-Rabat is next to the village, when it lies about 58 km south-west in a straight line, in a side valley at about 3,200 metres, and needs a hired car; they also imagine Koshoy-Korgon as a complete fortress, when it is the ruin of mud-brick walls, with a site museum built beside it in 2007.",
+    layout:
+      "The village lies in the At-Bashy basin, stretched along its main street with the market and cultural centre in the middle; across the basin to the south is the At-Bashy range. About 11 km west are the Koshoy-Korgon ruins and museum, about 58 km south-west into the mountains is Tash-Rabat, and about 30 km north is the town of Naryn.",
+    gettingAround:
+      "At-Bashy has no airport with scheduled flights; the nearest is Naryn Airport, about 40 km away in a straight line, with scheduled flights to Bishkek, and more flights go through Manas International Airport in Bishkek. By road, come from Bishkek via Naryn by shared taxi or minibus; Koshoy-Korgon and Tash-Rabat need a hired car, and road conditions and access requirements for Tash-Rabat should be checked with a local tour operator before setting off. The climate is continental and alpine, with severe winters.",
+    culture:
+      "Kyrgyz is the main language. Tash-Rabat is a square building of slate slabs with one large dome and nineteen small domes inside; according to the World Heritage tentative list it dates from the 11th–12th centuries and was restored in the late 1970s. When visiting herders' homes, follow the host's lead; drinking alcohol in public places is illegal.",
+    seeAndDo:
+      "The Koshoy-Korgon walls and site museum; the stone caravanserai of Tash-Rabat; the pastures of the At-Bashy basin and views of the At-Bashy range; the village market; and an inner Tian Shan route combined with Naryn and Kochkor.",
+    whenAndTips:
+      "June–September is the time to go; Tash-Rabat is at about 3,200 metres and cold even in summer, so watch for altitude sickness and bring warm clothes; mountain roads may be difficult in winter.",
+  },
 };
