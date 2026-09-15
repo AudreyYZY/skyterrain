@@ -49,4 +49,18 @@ export const POIS: Record<string, CityPoi[]> = {
   bialystok: [
     { nameZh: "布拉尼茨基宫", nameEn: "Branicki Palace", lon: 23.1636, lat: 53.1300, kind: "landmark" },
   ],
+  lodz: [
+    { nameZh: "皮奥特尔科夫斯卡街", nameEn: "Piotrkowska Street", lon: 19.4569, lat: 51.77689, kind: "district" },
+    { nameZh: "曼努法克图拉", nameEn: "Manufaktura", lon: 19.4444, lat: 51.77946, kind: "landmark" },
+    { nameZh: "波兹南斯基宫（罗兹城市博物馆）", nameEn: "Poznański Palace (Museum of the City of Łódź)", lon: 19.4511, lat: 51.7793, kind: "landmark" },
+    { nameZh: "神父磨坊", nameEn: "Księży Młyn", lon: 19.4788, lat: 51.7552, kind: "district" },
+    { nameZh: "EC1 罗兹文化城", nameEn: "EC1 Łódź – City of Culture", lon: 19.4686, lat: 51.76747, kind: "landmark" },
+  ],
+  lublin: [
+    { nameZh: "卢布林城堡与三一礼拜堂", nameEn: "Lublin Castle and Holy Trinity Chapel", lon: 22.5717, lat: 51.25046, kind: "landmark" },
+    { nameZh: "老城广场与王室法庭", nameEn: "Market Square and Crown Tribunal", lon: 22.5679, lat: 51.24782, kind: "landmark" },
+    { nameZh: "克拉科夫门", nameEn: "Kraków Gate", lon: 22.5664, lat: 51.24755, kind: "landmark" },
+    { nameZh: "卢布林主教座堂", nameEn: "Lublin Archcathedral", lon: 22.5687, lat: 51.24671, kind: "landmark" },
+    { nameZh: "卢布林乡村露天博物馆", nameEn: "Museum of the Lublin Village", lon: 22.506, lat: 51.26001, kind: "landmark" },
+  ],
 };

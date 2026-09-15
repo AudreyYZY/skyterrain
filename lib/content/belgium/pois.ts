@@ -56,4 +56,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "温泉浴场", nameEn: "Thermal Baths", lon: 5.8631, lat: 50.4933, kind: "landmark" },
     { nameZh: "斯帕—弗朗科尔尚赛道", nameEn: "Circuit de Spa-Francorchamps", lon: 5.9714, lat: 50.4372, kind: "landmark" },
   ],
+  mechelen: [
+    { nameZh: "圣龙博塔楼与主教座堂", nameEn: "St Rumbold's Tower and Cathedral", lon: 4.47895, lat: 51.02887, kind: "landmark" },
+    { nameZh: "大广场与市政厅", nameEn: "Grote Markt and Town Hall", lon: 4.48194, lat: 51.02794, kind: "landmark" },
+    { nameZh: "大贝居安会院", nameEn: "Great Beguinage", lon: 4.47403, lat: 51.03208, kind: "landmark" },
+    { nameZh: "布斯莱登宫博物馆", nameEn: "Museum Hof van Busleyden", lon: 4.48226, lat: 51.03112, kind: "landmark" },
+    { nameZh: "玛格丽特宫（萨伏依宫）", nameEn: "Hof van Savoye (Palace of Margaret of Austria)", lon: 4.48607, lat: 51.02857, kind: "landmark" },
+  ],
+  tournai: [
+    { nameZh: "图尔奈圣母大教堂", nameEn: "Notre-Dame Cathedral of Tournai", lon: 3.38885, lat: 50.60647, kind: "landmark" },
+    { nameZh: "钟楼", nameEn: "Belfry of Tournai", lon: 3.38802, lat: 50.60574, kind: "landmark" },
+    { nameZh: "洞桥", nameEn: "Pont des Trous", lon: 3.38373, lat: 50.61292, kind: "landmark" },
+    { nameZh: "美术馆", nameEn: "Museum of Fine Arts", lon: 3.38543, lat: 50.60257, kind: "landmark" },
+    { nameZh: "挂毯与纺织艺术博物馆", nameEn: "TAMAT (Tapestry and Textile Arts Museum)", lon: 3.38839, lat: 50.60417, kind: "landmark" },
+  ],
 };

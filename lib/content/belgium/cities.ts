@@ -68,4 +68,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）（经布鲁塞尔转乘）", nameEn: "Brussels Airport (Zaventem) (via Brussels)", lon: 4.4844, lat: 50.9014 },
     source: "斯帕市中心 50.4914,5.8642；本地无商业机场；列日机场直线约 34 km 但已无定期客运航班，故 airport 字段填布鲁塞尔机场（直线约 107 km，按本条目坐标算）：公开资料",
   },
+  {
+    id: "mechelen", nameZh: "梅赫伦", nameEn: "Mechelen", country: "belgium", tier: "notable", zone: "be-antwerp", admin1Zh: "安特卫普省", admin1En: "Antwerp Province",
+    lon: 4.4797, lat: 51.0280,
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）", nameEn: "Brussels Airport (Zaventem)", lon: 4.4844, lat: 50.9014 },
+    source: "梅赫伦大广场 Grote Markt 51.02804,4.47970（OSM）；BRU 直线约 14 km，火车直达约 10–11 分钟（iRail / NMBS 时刻，2 级，2026-09）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "tournai", nameZh: "图尔奈", nameEn: "Tournai", country: "belgium", tier: "notable", zone: "be-hainaut", admin1Zh: "埃诺省", admin1En: "Hainaut",
+    lon: 3.3872, lat: 50.6062,
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）（经布鲁塞尔转乘）", nameEn: "Brussels Airport (Zaventem) (via Brussels)", lon: 4.4844, lat: 50.9014 },
+    source: "图尔奈大广场 Grand-Place 50.60620,3.38719（OSM）；本地没有定期航班的机场（附近 Maubray 等小机场无定期航班）；比利时境内最近有定期航班的是 CRL（直线约 77 km），airport 字段按与布鲁塞尔南站一小时直达的衔接填 BRU（直线约 84 km）；法国里尔 LIL 直线约 21 km（均按坐标算）（已有城市补充批，2026-09-16）",
+  },
 ];

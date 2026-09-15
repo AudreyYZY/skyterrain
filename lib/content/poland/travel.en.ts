@@ -248,4 +248,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most pleasant season and also the best time for birdwatching and exploring the primeval forest; Białowieża Forest is about a 1.5-hour drive from the city — plan at least a full day specifically to visit.",
   },
+
+  lodz: {
+    // 全七段 sources: 同中文侧（GUS area and population yearbook 2026, Table 20, tier 1; Sejm ISAP on direct mayoral elections, tier 1; UML Łódź on the 1821 settlement and 36 osiedla, tier 1; WUOZ Łódź on the 2015 Historic Monument decree, tier 1; Cities of Film / culture.pl, tier 2; manufaktura.com and lodz.travel, tier 1; timetable aggregator, tier 3; UOKiK, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Łódź is the capital of Łódź Voivodeship in central Poland, with a population of about 640,000 at the end of 2025 (GUS), fourth among Polish cities by population in the same statistical table. It is a textile-industry city built to a plan in the 19th century: \"Łódź – multicultural landscape of an industrial city\" was declared a Monument of History in 2015, and in 2017 Łódź joined the UNESCO Creative Cities Network as a City of Film.",
+    howItWorks:
+      "Łódź's mayor is directly elected by residents, serving five-year terms alongside the city council; Łódź is a city with county rights and the capital of Łódź Voivodeship. The city's five traditional districts stopped being administrative units in 1993, though their names are still in everyday use, and since 2000 the city has been divided into 36 neighbourhood units, each with its own council, as auxiliary bodies. The city's backbone is a single north–south street: in 1821 Łódź was designated an industrial settlement and a new town was laid out along Piotrkowska Street, its octagonal New Market becoming today's Plac Wolności; industrialists then built their factories, workers' housing and their own palaces side by side, and the complexes of Poznański, Scheibler and others remain the city's landmarks. After the textile industry declined in the late 20th century, the mills were turned into shopping centres, museums and cultural venues — Poznański's cotton mill became Manufaktura in 2006, and the city's first power station became EC1. The mistake newcomers most often make is to look for a medieval old town square, which Łódź does not have; its main street is an avenue about 4.2 km long, and its landmarks are factories.",
+    layout:
+      "Plac Wolności is at the northern end of Piotrkowska Street, which runs south from here; Poznański Palace is a short way north-west of the square, and Manufaktura lies less than 1 km west of it. Łódź Fabryczna station and EC1 are south-east of the square, about 1.3–1.4 km away in a straight line, and Księży Młyn is further south-east, about 3 km from the square in a straight line.",
+    gettingAround:
+      "Łódź Władysław Reymont Airport is about 7 km from the centre in a straight line and has scheduled flights; more international flights are available via Warsaw. Trains from Warsaw to Łódź Fabryczna take between about an hour and an hour and a half. Trams and buses are the main way around the city, and Piotrkowska Street is best on foot. The climate is temperate continental, with cold winters.",
+    culture:
+      "The official language is Polish. Łódź has close ties to film, and the pavement of Piotrkowska Street has a Walk of Fame for film. Restaurant bills usually do not include a service charge, and it is customary to round up or tip around 10%; if a restaurant does add a service charge, it must tell you before you order.",
+    seeAndDo:
+      "Piotrkowska Street and the OFF Piotrkowska courtyard; Manufaktura, including its factory museum and the ms² modern art gallery; Poznański Palace (Museum of the City of Łódź); the Księży Młyn industrial housing complex; and the science and technology centre and planetarium at EC1.",
+    whenAndTips:
+      "May–September is the time for outdoor tables on Piotrkowska Street; winters are cold. The industrial heritage is spread across the city, and Księży Młyn is about 3 km from Plac Wolności in a straight line, so allow time for getting between sites.",
+  },
+
+  lublin: {
+    // 全七段 sources: 同中文侧（GUS area and population yearbook 2026, Table 20, tier 1; Sejm ISAP, tier 1; lublin.eu / BIP on the council and 27 districts, tier 1; National Heritage Board zabytek.pl, tier 1; PKP Intercity 2025/2026 timetable release, tier 1; UOKiK, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，正文全部 ok；注释里主教座堂年份改为两说）。
+    identity:
+      "Lublin is the capital of Lublin Voivodeship in eastern Poland, with a population of about 327,000 at the end of 2025 (GUS). It received its town charter in 1317, and in 1569 Poland and Lithuania signed the Union of Lublin at its castle; Lublin's historic architectural and urban complex was declared a Monument of History in 2007.",
+    howItWorks:
+      "Lublin's mayor is directly elected by residents, serving five-year terms alongside the 31-member city council; the city's 27 districts are auxiliary units, each set up over the years on residents' initiative and each with its own district council, not separate governments. The old town and the castle stand on two neighbouring hills: in the middle of the old town's market square is the former Crown Tribunal, which from 1578 housed the highest court of appeal for the nobility of the kingdom; the castle is on the hill north-east of the old town, its present look the result of a neo-Gothic rebuilding in 1823–1826, and inside, the Holy Trinity Chapel preserves Byzantine–Ruthenian-style frescoes completed in 1418. From the 16th century the city spread beyond its walls along Krakowskie Przedmieście, west of the Kraków Gate, which is still the main shopping street. The mistake newcomers most often make is to treat the old town as the whole city centre, when the main street is outside the Kraków Gate and the railway station is nearly 2 km south of the old town; many also assume each of the 27 districts has its own government.",
+    layout:
+      "The market square and the former Crown Tribunal are the centre of the old town; the Kraków Gate is west of the square, with Krakowskie Przedmieście beyond it; the cathedral is a short way south of the square; and the castle is on a separate hill less than 400 m north-east of the square. Lublin Główny station is about 1.8 km south of the old town in a straight line, and the open-air village museum is on the west side of the city, about 4.5 km from the old town in a straight line.",
+    gettingAround:
+      "Lublin Airport is about 10 km from the old town in a straight line and has scheduled flights. Between Warsaw and Lublin the PKP Intercity 2025/2026 timetable has 16 pairs of trains a day, taking about two hours (as of 2026). The old town and castle are walkable, and buses serve the station and the open-air museum. The climate is temperate continental, with cold winters.",
+    culture:
+      "The official language is Polish. Lublin has several universities. Restaurant bills usually do not include a service charge, and it is customary to round up or tip around 10%; if a restaurant does add a service charge, it must tell you before you order.",
+    seeAndDo:
+      "The market square and the Kraków Gate; Lublin Castle and the frescoes of the Holy Trinity Chapel (part of the National Museum in Lublin); the cathedral; the underground cellar route beneath the old town; and the Museum of the Lublin Village.",
+    whenAndTips:
+      "May–September is pleasant, and winters are cold. The old town and castle sit on two hills with slopes and steps between them, so wear comfortable shoes.",
+  },
 };

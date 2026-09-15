@@ -257,6 +257,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "pl-wielkopolska-slask": { zh: "大波兰与西里西亚", en: "Greater Poland & Silesia", order: 262 },
   "pl-pomorze": { zh: "波美拉尼亚", en: "Pomerania", order: 263 },
   "pl-mazury-podlasie": { zh: "瓦尔米亚—马祖里与波德拉谢", en: "Warmia-Masuria & Podlasie", order: 264 },
+  "pl-lodz-lublin": { zh: "罗兹与卢布林", en: "Łódź & Lublin", order: 265 },
   // 越南（北部→中部→中部高原→南部）
   "vn-north": { zh: "北部", en: "Northern Vietnam", order: 310 },
   "vn-central": { zh: "中部", en: "Central Vietnam", order: 311 },
