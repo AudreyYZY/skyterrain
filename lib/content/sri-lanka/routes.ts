@@ -146,4 +146,36 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
         "The south-west monsoon from May to September brings rain mainly to the south-west; October–November is the wettest period island-wide; the north-east monsoon from December to February mainly affects the eastern half.",
     },
   },
+  // kmg-cmb sources（2026-09-16 首写；核实 2026-09-16 当批（content-verifier 独立检索，source 与两套解说全部 ok））：昆明在云贵高原上、峰林峰丛与坝子（china yunnan-guizhou 条目）；滇西南山岭河谷南北排列（同 tfu-cmb 口径）；孟加拉湾季风（同 tfu-cmb）；
+  // 北中部干旱带平原、水库与孤立岩丘（sri-lanka sri-lanka-dry-zone-plain 条目）；尼甘布潟湖与机场跑道（sri-lanka negombo-lagoon 条目）；大圆距离约 3,160 km（按两端机场坐标算）。
+  // ⚠️ route.source.status = "flight-unknown"：两套解说**不点名承运人、航班号与机型**，也不写航程时长（出发时刻只有追踪站）。旅游段口径同 tfu-cmb。
+  // 零争议：航线经过的其他国家不点名；签证天数与收费、价格不写。
+  "kmg-cmb": {
+    study: {
+      "zh-CN":
+        "昆明飞科伦坡，全程约3160公里，是一条从云贵高原向西南、翻过滇西南的山岭河谷，再飞越孟加拉湾抵达斯里兰卡的航线。昆明本身就坐落在云贵高原上，飞机起飞后，下方是一片起伏的绿色高地：密密麻麻的圆锥形、馒头形小山头是喀斯特峰林和峰丛，山间封闭的洼地和小盆地被称作坝子，耕地和城镇都挤在坝子里，地表河流常常钻进地下又冒出来。" +
+        "向西南飞，高原逐渐被一道道南北走向的山岭和深谷切开，河流在谷底向南奔流，山坡上是梯田和森林。越过这片山地，地势继续降低，前方出现海岸线，飞机进入孟加拉湾上空。" +
+        "接下来的一千多公里几乎都是海面。孟加拉湾的季风一年两次转向，夏季刮西南季风，冬季刮东北季风，云和雨的分布也跟着变化；天气好时下方是一片深蓝，积云在海面上投下一块块影子，雨季时云层很厚，海面若隐若现。" +
+        "海面尽头，斯里兰卡岛从东北方向进入视野。飞机斜穿岛的北中部，下方是一片平坦的绿褐色大地，干季偏黄、雨季转绿，上面散落着大大小小的水库，远处偶尔有一座灰色岩丘从平原上直直升起。" +
+        "平原一直延伸到西海岸。飞机下降时能看到一片浅绿色的水面通过狭窄的口门与大海相连，这是尼甘布潟湖，东侧不远就是班达拉奈克国际机场的跑道。飞机在这里降落，科伦坡在南面直线约28公里。",
+      "en-US":
+        "Kunming to Colombo covers about 3,160 km, a route that runs south-west from the Yunnan–Guizhou Plateau over the ridges and valleys of south-western Yunnan and then across the Bay of Bengal to Sri Lanka. Kunming itself sits on the Yunnan–Guizhou Plateau, and after take-off the land below is a rolling green upland crowded with conical and dome-shaped hills — karst peak forests and peak clusters — with enclosed hollows and small basins between them, called bazi, where the fields and towns are packed, and rivers that often vanish underground and reappear. " +
+        "Heading south-west, the plateau is gradually cut up by ridges and deep valleys running north to south, with rivers flowing south along the valley floors and terraces and forest on the slopes. Beyond these mountains the land keeps dropping, a coastline appears ahead, and the flight heads out over the Bay of Bengal. " +
+        "For the next thousand kilometres and more there is almost nothing but sea. The monsoon over the Bay of Bengal reverses twice a year, south-west in summer and north-east in winter, with cloud and rain shifting as the wind changes; in good weather the sea below is deep blue with cumulus clouds casting patches of shadow, while in the rainy season thick cloud leaves the sea only half visible. " +
+        "At the far side of the sea, the island of Sri Lanka comes into view from the north-east. The flight crosses the North Central region diagonally, over a flat green-brown land that turns yellow in the dry season and green in the rains, scattered with reservoirs large and small, with now and then a grey rock rising sheer from the plain in the distance. " +
+        "The plain runs all the way to the west coast. As the flight descends, a pale green sheet of water appears, joined to the sea by a narrow inlet — Negombo Lagoon — with the runway of Bandaranaike International Airport a short distance to the east. The flight lands here, with Colombo about 28 km to the south in a straight line.",
+    },
+    travel: {
+      "zh-CN":
+        "昆明到科伦坡的航班一般在晚上抵达。入境斯里兰卡前须在线申请电子旅行许可（ETA），具体规定以斯里兰卡移民与出入境局最新公布为准，行前确认。" +
+        "班达拉奈克国际机场在科伦坡北面，距市中心直线约28公里，离尼甘布只有约6公里，晚上到达可以先在尼甘布住一晚。" +
+        "斯里兰卡的标准插座是英式三方脚（G型），货币是斯里兰卡卢比，主要城镇有ATM，但并非都接受外国卡。进寺庙要遮住肩膀和腿、脱鞋脱帽，不要背对佛像合影；每月月圆的波耶日全国停售酒类。" +
+        "西南季风在5–9月，雨主要落在西南部；10–11月是全岛雨最多的时期；东北季风在12–2月，主要影响东半部。",
+      "en-US":
+        "Flights from Kunming to Colombo generally arrive in the evening. Before entering Sri Lanka you must apply online for an Electronic Travel Authorisation (ETA); follow the latest announcements of Sri Lanka's Department of Immigration and Emigration and confirm before travelling. " +
+        "Bandaranaike International Airport is north of Colombo, about 28 km from the centre in a straight line and only about 6 km from Negombo, so after an evening arrival you can spend the first night in Negombo. " +
+        "Sri Lanka's standard socket is the British three-square-pin type (Type G), and the currency is the Sri Lankan rupee; main towns have ATMs, but not all accept foreign cards. In temples cover shoulders and legs, take off shoes and hats, and don't pose with your back to a Buddha statue; alcohol sales stop nationwide on the monthly full-moon Poya day. " +
+        "The south-west monsoon from May to September brings rain mainly to the south-west; October–November is the wettest period island-wide; the north-east monsoon from December to February mainly affects the eastern half.",
+    },
+  },
 };

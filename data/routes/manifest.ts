@@ -33,6 +33,10 @@ import ckgCmb from "./ckg-cmb.json" with { type: "json" };
 import pvgCmb from "./pvg-cmb.json" with { type: "json" };
 import canCmb from "./can-cmb.json" with { type: "json" };
 import pekTas from "./pek-tas.json" with { type: "json" };
+import kmgCmb from "./kmg-cmb.json" with { type: "json" };
+import nngBwn from "./nng-bwn.json" with { type: "json" };
+import hghBwn from "./hgh-bwn.json" with { type: "json" };
+import urcBsz from "./urc-bsz.json" with { type: "json" };
 import pkxBwn from "./pkx-bwn.json" with { type: "json" };
 import btsKsc from "./bts-ksc.json" with { type: "json" };
 import tllUre from "./tll-ure.json" with { type: "json" };
@@ -372,6 +376,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   pvgCmb,
   canCmb,
   pekTas,
+  kmgCmb,
+  nngBwn,
+  hghBwn,
+  urcBsz,
   pkxBwn,
   btsKsc,
   tllUre,

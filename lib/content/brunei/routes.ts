@@ -36,4 +36,68 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
         "Brunei is hot and rainy all year; the capital's mosques and Kampong Ayer, Tasek Merimbun in the western part and the Temburong rainforest in the eastern part are all worth a visit — but don't hike the rainforest alone.",
     },
   },
+  // nng-bwn sources（2026-09-16 首写；核实 2026-09-16 当批（content-verifier 独立检索，source 与两套解说全部 ok））：海南岛中间高四周低、中央热带雨林山地外围台地农田与沙滩（china hainan 条目）；文莱湾内湾红树林岛屿与潮沟（brunei brunei-bay-mangroves 条目）；
+  // 文莱河口两岸城市与红树林、水村高脚屋（brunei brunei-river-estuary 条目）；大圆距离约 2,090 km（按两端机场坐标算）；计划约 3 h 40 min（文莱皇家航空时刻表，1 级）；旅游段口径同 pkx-bwn。
+  // ⚠️ route.source.status = "flight-unknown"：两套解说**不点名承运人、航班号与机型**。
+  // 零争议：南海只写「飞越南海」与海面景象，不写任何岛礁、海域与主张；国界、王室、宗教评价不写；签证天数不写。
+  "nng-bwn": {
+    study: {
+      "zh-CN":
+        "南宁飞斯里巴加湾，全程约2090公里，是一条从广西南部向东南飞越海南岛与南海、抵达加里曼丹岛西北岸的航线。飞机从南宁吴圩国际机场起飞，下方是桂南的丘陵和河谷，很快到达北部湾沿岸。" +
+        "越过海湾，前方是海南岛。从空中看它是一个环状结构：中央是墨绿色的热带雨林山地，外围一圈浅绿色的台地和农田，再往外是白色的沙滩；整个岛中间高、四周低。" +
+        "离开海南岛，飞机进入南海上空。接下来的一千多公里几乎都是海面：天气好的时候，海水从近岸的浑绿逐渐变成深蓝，一团团积云在海面上投下影子；热带海面上常有高耸的积雨云，飞机会绕开它们飞行。夜航时窗外大多是一片黑暗，偶尔能看到远处船只的灯光。" +
+        "海面尽头，前方出现加里曼丹岛西北岸的海岸线：这就是文莱。飞机下降时先经过文莱湾，湾里是一块块深绿色的红树林岛屿，岛与岛之间是蜿蜒的潮沟，水是浑浊的褐绿色。" +
+        "再往西南，一条宽阔的褐色河流在城市旁边流过，岸边的红树林像深绿色的镶边，河面上成片的高脚屋沿着木栈道排列，小船在屋群之间穿梭，这就是文莱河口的水村。飞机降落在文莱国际机场，首都斯里巴加湾市就在南面约6公里。",
+      "en-US":
+        "Nanning to Bandar Seri Begawan covers about 2,090 km, a route that heads south-east from southern Guangxi across Hainan Island and the South China Sea to the north-west coast of Borneo. Taking off from Nanning Wuxu International Airport, the flight passes over the hills and river valleys of southern Guangxi and soon reaches the coast of the Gulf of Tonkin. " +
+        "Across the gulf lies Hainan Island. From the air it is a ring-shaped structure: dark green tropical rainforest mountains in the centre, a band of pale green tableland and farmland around them, and white beaches beyond — the whole island high in the middle and low around the edges. " +
+        "Leaving Hainan, the flight heads out over the South China Sea. For the next thousand kilometres and more there is almost nothing but sea: in good weather the water turns from murky green near the coast to deep blue, with cumulus clouds casting shadows on the surface; tropical seas often breed towering thunderclouds that aircraft steer around. At night the window shows mostly darkness, with the occasional light of a distant ship. " +
+        "At the far side of the sea, the north-west coast of Borneo appears ahead: this is Brunei. On the descent the flight first passes over Brunei Bay, dotted with dark green mangrove islands separated by winding tidal channels in murky brown-green water. " +
+        "Further south-west a broad brown river flows past a city, its banks edged with dark green mangroves, and on the water rows of stilt houses line wooden walkways with small boats weaving among them — the water village of Kampong Ayer on the Brunei River estuary. The flight lands at Brunei International Airport, with the capital, Bandar Seri Begawan, about 6 km to the south.",
+    },
+    travel: {
+      "zh-CN":
+        "南宁到斯里巴加湾约3小时40分。入境文莱前须在线填写电子入境卡，护照有效期至少6个月，签证与免签规定以文莱移民局最新公布为准，行前确认。" +
+        "文莱国际机场距首都市中心直线约6公里；这里没有Grab和Uber，打车用本地应用Dart，出租车打表。" +
+        "文莱不售卖酒类，成年非穆斯林可限量携带入境，但必须申报，只能在私人场所饮用。每周五中午12点到下午2点，商店、餐馆和银行都会关门。货币是文莱元，与新加坡元按1比1互换。" +
+        "文莱全年炎热多雨，首都的水村、西块的默林本湖和东块的淡布隆雨林都值得一去；进雨林不要独自徒步。",
+      "en-US":
+        "Nanning to Bandar Seri Begawan takes about 3 hours 40 minutes. Before entering Brunei you must fill in the online E-Arrival Card, and your passport must be valid for at least 6 months; for visa rules follow the latest announcements of Brunei's immigration department and confirm before travelling. " +
+        "Brunei International Airport is about 6 km from the capital's centre in a straight line; Grab and Uber don't operate here, so book taxis on the local app Dart, and taxis are metered. " +
+        "Alcohol is not sold in Brunei; adult non-Muslims may bring in a limited amount but must declare it and may drink it only in private. Every Friday from 12:00 to 14:00 shops, restaurants and banks close. The currency is the Brunei dollar, interchangeable one-to-one with the Singapore dollar. " +
+        "Brunei is hot and rainy all year; the capital's water village, Tasek Merimbun in the western part and the Temburong rainforest in the eastern part are all worth a visit — but don't hike the rainforest alone.",
+    },
+  },
+  // hgh-bwn sources（2026-09-16 首写；核实 2026-09-16 当批（content-verifier 独立检索，source 与两套解说全部 ok））：钱塘江下游平原与浙闽丘陵（概述，不作航点）；武夷山闽赣之间东北—西南走向、九曲溪丹霞地貌（china wuyi 条目；「东南大陆最高峰」不写）；
+  // 南海海面景象与文莱湾、文莱河口同 nng-bwn；大圆距离约 2,870 km（按两端机场坐标算）；计划约 4 h 20 min（文莱皇家航空时刻表，1 级）；旅游段口径同 pkx-bwn。
+  // ⚠️ route.source.status = "flight-unknown"：两套解说**不点名承运人、航班号与机型**；每周一班且有除外日，班期不写。
+  // 零争议：南海只写海面，不写岛礁、海域与主张；航线经过台湾海峡一带，不写海峡两岸与政治；国界、王室、宗教评价不写。
+  "hgh-bwn": {
+    study: {
+      "zh-CN":
+        "杭州飞斯里巴加湾，全程约2870公里，是一条从钱塘江畔向南纵穿中国东南丘陵，再飞越南海抵达加里曼丹岛西北岸的航线。飞机从杭州萧山国际机场起飞，下方是钱塘江下游的平原和水网，向南很快进入浙江与福建的丘陵山地。" +
+        "往西南方向望去，闽赣之间是一片连绵的深绿色中山，这是武夷山。它走向东北—西南，主脊两侧沟谷纵横；九曲溪一段格外醒目，一条碧绿的溪流在赤红色的方山和石柱之间绕出九道大弯，两岸是茶园。" +
+        "过了山地就是福建沿海，海岸线曲折，港湾和岛屿很多。飞机离开大陆，进入南海上空。接下来的两千多公里几乎都是海面：天气好时海水从近岸的浑绿逐渐变成深蓝，积云在海面上投下影子；热带海面上常有高耸的积雨云，飞机会绕开它们飞行。" +
+        "海面尽头，前方出现加里曼丹岛西北岸的海岸线：这就是文莱。飞机下降时先经过文莱湾，湾里是一块块深绿色的红树林岛屿，岛与岛之间是蜿蜒的潮沟。" +
+        "再往西南，一条宽阔的褐色河流在城市旁边流过，河面上成片的高脚屋沿着木栈道排列，这就是文莱河口的水村。飞机降落在文莱国际机场，首都斯里巴加湾市就在南面约6公里。",
+      "en-US":
+        "Hangzhou to Bandar Seri Begawan covers about 2,870 km, a route that runs south from the Qiantang River down through the hills of south-east China and then across the South China Sea to the north-west coast of Borneo. Taking off from Hangzhou Xiaoshan International Airport, the flight passes over the plains and waterways of the lower Qiantang and soon heads south into the hills and mountains of Zhejiang and Fujian. " +
+        "Looking south-west, a stretch of rolling dark green mountains lies between Fujian and Jiangxi — the Wuyi Mountains. They run north-east to south-west, with valleys cutting in on both sides of the main ridge; the Nine-Bend Stream stands out, a jade-green river winding in nine great bends between red flat-topped hills and rock pillars, with tea gardens on its banks. " +
+        "Beyond the mountains lies the Fujian coast, a ragged shoreline full of harbours and islands. The flight leaves the mainland and heads out over the South China Sea. For the next two thousand kilometres and more there is almost nothing but sea: in good weather the water turns from murky green near the coast to deep blue, with cumulus clouds casting shadows on the surface; tropical seas often breed towering thunderclouds that aircraft steer around. " +
+        "At the far side of the sea, the north-west coast of Borneo appears ahead: this is Brunei. On the descent the flight first passes over Brunei Bay, dotted with dark green mangrove islands separated by winding tidal channels. " +
+        "Further south-west a broad brown river flows past a city, with rows of stilt houses lining wooden walkways on the water — the water village of Kampong Ayer on the Brunei River estuary. The flight lands at Brunei International Airport, with the capital, Bandar Seri Begawan, about 6 km to the south.",
+    },
+    travel: {
+      "zh-CN":
+        "杭州到斯里巴加湾约4小时20分，这条航线班次很少，出发前查好航司当期时刻。入境文莱前须在线填写电子入境卡，护照有效期至少6个月，签证与免签规定以文莱移民局最新公布为准，行前确认。" +
+        "文莱国际机场距首都市中心直线约6公里；这里没有Grab和Uber，打车用本地应用Dart，出租车打表。" +
+        "文莱不售卖酒类，成年非穆斯林可限量携带入境，但必须申报，只能在私人场所饮用。每周五中午12点到下午2点，商店、餐馆和银行都会关门。货币是文莱元，与新加坡元按1比1互换。" +
+        "文莱全年炎热多雨，首都的水村、西块的默林本湖和东块的淡布隆雨林都值得一去；进雨林不要独自徒步。",
+      "en-US":
+        "Hangzhou to Bandar Seri Begawan takes about 4 hours 20 minutes; flights on this route are infrequent, so check the airline's current timetable before planning. Before entering Brunei you must fill in the online E-Arrival Card, and your passport must be valid for at least 6 months; for visa rules follow the latest announcements of Brunei's immigration department and confirm before travelling. " +
+        "Brunei International Airport is about 6 km from the capital's centre in a straight line; Grab and Uber don't operate here, so book taxis on the local app Dart, and taxis are metered. " +
+        "Alcohol is not sold in Brunei; adult non-Muslims may bring in a limited amount but must declare it and may drink it only in private. Every Friday from 12:00 to 14:00 shops, restaurants and banks close. The currency is the Brunei dollar, interchangeable one-to-one with the Singapore dollar. " +
+        "Brunei is hot and rainy all year; the capital's water village, Tasek Merimbun in the western part and the Temburong rainforest in the eastern part are all worth a visit — but don't hike the rainforest alone.",
+    },
+  },
 };

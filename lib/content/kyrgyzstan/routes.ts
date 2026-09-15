@@ -70,4 +70,33 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
         "June to September is best for the lake and the mountains, and high-altitude hikers should watch for altitude sickness; winters are cold and mountain roads may be closed by snow.",
     },
   },
+  // urc-bsz sources（2026-09-16 首写；核实 2026-09-16 当批（content-verifier 独立检索，source 与两套解说全部 ok））：天山横贯新疆中部、平行山脊与冰川、山前冲积扇绿洲（china tianshan 条目）；伊犁河谷朝西敞开的三角形谷地（china ili-valley 条目）；
+  // 外伊犁阿拉套山东西延展约 350 km、雪峰连绵、北麓阿拉木图（kazakhstan zailiysky-alatau 条目）；楚河谷地海拔约 500–1,200 m、灌溉农田棋盘、南侧吉尔吉斯山（kyrgyzstan chuy-valley 条目）；
+  // 大圆距离约 1,050 km（按两端机场坐标算）；计划约 2 h 10 min（南航时刻表，1 级）；BSZ 距比什凯克市中心直线约 23 km；旅游段口径同 pek-bsz（英国外交部 2026-09-14，1 级）。
+  // ⚠️ route.source.status = "flight-unknown"：两套解说**不点名承运人、航班号与机型**。
+  // 零争议：航线经过的邻国、边界、界河与口岸不写（外伊犁阿拉套山只写山与阿拉木图，不写国界）；签证天数、价格不写。
+  "urc-bsz": {
+    study: {
+      "zh-CN":
+        "乌鲁木齐飞比什凯克，全程约1050公里，是一条沿着天山北侧一路向西、飞进中亚山间谷地的短航线。飞机从乌鲁木齐天山国际机场起飞，南面就是天山：连续平行的东西向山脊，山顶是冰川和终年积雪，山前是一排巨大的冲积扇，扇缘上散布着一串绿洲城市。" +
+        "沿着山脉向西，群山之间出现一片朝西敞开的三角形谷地，这是伊犁河谷。谷底是伊犁河的曲流和大片方格农田，两侧山坡是深色的云杉林和高山草甸，比新疆其他地方湿润、翠绿得多。" +
+        "继续向西，南侧是一道雪峰连绵的山脉，这是外伊犁阿拉套山，属于北天山的一段，东西延展约350公里，最高峰海拔4979米；山的北麓是一片城市化的平原，阿拉木图就坐落在那里，北坡的森林与草甸一层层分得很清楚。" +
+        "飞机开始下降，下方出现一块整齐的农田棋盘，灌渠像网格一样纵横交错，村镇和道路沿着渠道排列，这是楚河谷地，海拔约500到1200米；南边是突然耸起的吉尔吉斯山。飞机降落在谷地里的玛纳斯国际机场，比什凯克就在南面。",
+      "en-US":
+        "Ürümqi to Bishkek covers about 1,050 km, a short route that runs west along the northern side of the Tian Shan into the mountain valleys of Central Asia. Taking off from Ürümqi Tianshan International Airport, the Tian Shan lies to the south: continuous parallel east–west ridges with glaciers and permanent snow on the summits, and a line of huge alluvial fans at the mountain foot with a string of oasis towns along their edges. " +
+        "Following the range west, a triangular valley opening to the west appears among the mountains — the Ili Valley — with the meanders of the Ili River and broad chequerboard fields on its floor and dark spruce forest and alpine meadows on the slopes, far wetter and greener than the rest of Xinjiang. " +
+        "Further west, a range of snow peaks runs along the southern side — the Trans-Ili Alatau, a northern branch of the same mountain system, stretching about 350 km east to west with a highest peak of 4,979 m; at its northern foot lies an urbanised plain with the city of Almaty, and the forest and meadow belts on its northern slopes stand out clearly in layers. " +
+        "As the flight descends, a neat chequerboard of fields appears below, with irrigation canals criss-crossing like a grid and villages and roads lined up along them — the Chuy Valley, at about 500 to 1,200 m — and to the south the Kyrgyz Range rises abruptly. The flight lands at Manas International Airport in the valley, with Bishkek to the south.",
+    },
+    travel: {
+      "zh-CN":
+        "乌鲁木齐到比什凯克约2小时10分。吉尔吉斯斯坦的签证与入境要求按国籍不同，以吉尔吉斯斯坦驻当地使领馆最新公布为准，行前确认。" +
+        "玛纳斯国际机场的代码是BSZ，机场在比什凯克城北，距市中心直线约23公里，最好用预约出租车进城。" +
+        "在吉尔吉斯斯坦要随身带护照或公证复印件，公共场所饮酒违法。货币是索姆，Visa大多数地方能刷，MasterCard有时不收，去乡村要带现金。自2026年起餐厅账单不再单列服务费，小费自愿。",
+      "en-US":
+        "Ürümqi to Bishkek takes about 2 hours 10 minutes. Visa and entry requirements for Kyrgyzstan vary by nationality and are as most recently published by Kyrgyzstan's embassy or consulate in your country — confirm before travelling. " +
+        "Manas International Airport's code is BSZ; it lies north of Bishkek, about 23 km from the centre in a straight line, and a pre-booked taxi is the best way into town. " +
+        "In Kyrgyzstan carry your passport or a notarised copy, and drinking alcohol in public places is illegal. The currency is the som; Visa is accepted in most places while MasterCard sometimes is not, and take cash to rural areas. Since 2026 restaurant bills no longer list a separate service charge, and tipping is voluntary.",
+    },
+  },
 };

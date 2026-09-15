@@ -1,0 +1,52 @@
+{
+  "id": "urc-bsz",
+  "name": "乌鲁木齐 — 比什凯克",
+  "nameEn": "Ürümqi — Bishkek",
+  "description": "天山 · 伊犁河谷 · 外伊犁阿拉套山 · 楚河谷地",
+  "descriptionEn": "Tian Shan · Ili Valley · Trans-Ili Alatau · Chuy Valley",
+  "depCountry": "china",
+  "arrCountry": "kyrgyzstan",
+  "source": {
+    "ref": "https://airport.kg/ru/international-airports/2",
+    "checkedOn": "2026-09-16",
+    "status": "flight-unknown",
+    "note": "**机场对、承运人与航班号已核实，机型未核实**：中国南方航空《航班时刻表》PDF（1 级，2026-06-04 版）：乌鲁木齐 08:00 → 比什凯克 08:10（当地时间）CZ6005，即计划 2 h 10 min；玛纳斯国际机场官网航班屏（1 级，2026-09-15/16）：CZ6005 自乌鲁木齐到达、Regular。机型：FlightAware 逐班标出南航机队里并不存在的 737-200 / -400 / -600，**追踪站这条线的机型不可信**，其余只有 OTA 摘要 —— 按本库规矩**不填 flight 字段**、解说不点名承运人、航班号与机型。实际班期比 6 月版时刻表多，班期不写。玛纳斯机场 IATA 代码 2025-08-09 起为 BSZ（见 pek-bsz）。航点沿天山—伊犁河谷—外伊犁阿拉套山—楚河谷地为按大圆的示意，不代表实际航路；沿线国界与邻国不写。"
+  },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "urc",
+      "name": "乌鲁木齐天山",
+      "nameEn": "Ürümqi Tianshan",
+      "lat": 43.9071,
+      "lon": 87.4742,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tianshan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ili-valley"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "zailiysky-alatau"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chuy-valley"
+    },
+    {
+      "kind": "city",
+      "id": "bsz",
+      "name": "比什凯克玛纳斯",
+      "nameEn": "Bishkek Manas",
+      "lat": 43.0613,
+      "lon": 74.4776,
+      "airport": true
+    }
+  ]
+}
