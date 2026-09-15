@@ -271,3 +271,5 @@ C6-j（归 `check:pending`）与 C6-c / C3-b（没有脚本）一律不表态 �
 核完确认「issue 记的缺陷已经不在了」，要自己补一条评论再关（2026-09-12 的 #216 就是这样）。
 
 `mkfindings.py` 自检：`python3 scripts/verify/mkfindings.py`。
+
+- **暂缓航线复查（2026-09-16）**：九条里 `pvg-cmb` / `can-cmb` / `pek-tas` 三条已收；**号的方向是这一轮最大的坑** —— 此前记下的 UL880 / UL884、BI627、BI639 都是回程号（中国出发应为 UL881 / UL885、BI628、BI640）。其余六条（昆明 MU713、南宁 BI628、杭州 BI640、西安 GJ8937、大兴 CZ5067、乌鲁木齐 CZ6005）号与机场对已属实，缺的是机型的第二来源或包机 / 定期性质，可按 `flight-unknown` 收，或补机型来源后按 verified 收；FlightAware 对南航乌鲁木齐航班标出机队里不存在的 737-200 / -400 / -600，**追踪站的细分机型不能当第二来源**。事实表 `scratchpad/pending-routes-facts.md` 已记下各机场官网可用的查询接口。
