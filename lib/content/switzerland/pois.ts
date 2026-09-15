@@ -82,4 +82,17 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "甘德里亚（湖边小村）", nameEn: "Gandria", lon: 9.0010, lat: 46.0060, kind: "district" },
     { nameZh: "贝林佐纳三城堡", nameEn: "Bellinzona castles", lon: 9.0270, lat: 46.1950, kind: "landmark" },
   ],
+  "st-gallen": [
+    { nameZh: "修道院图书馆与主教座堂", nameEn: "Abbey Library and Cathedral", lon: 9.3764, lat: 47.4228, kind: "landmark" },
+    { nameZh: "纺织博物馆", nameEn: "Textile Museum", lon: 9.3736, lat: 47.4234, kind: "landmark" },
+    { nameZh: "三池塘", nameEn: "Drei Weieren", lon: 9.3873, lat: 47.4214, kind: "nature" },
+    { nameZh: "OLMA 展会场地", nameEn: "OLMA exhibition grounds", lon: 9.3845, lat: 47.4325, kind: "landmark" },
+  ],
+  schaffhausen: [
+    { nameZh: "穆诺特要塞", nameEn: "Munot fortress", lon: 8.6399, lat: 47.6969, kind: "landmark" },
+    { nameZh: "万圣修道院博物馆", nameEn: "Museum zu Allerheiligen", lon: 8.6359, lat: 47.6949, kind: "landmark" },
+    { nameZh: "骑士之家", nameEn: "Haus zum Ritter", lon: 8.6349, lat: 47.6962, kind: "landmark" },
+    { nameZh: "莱茵瀑布", nameEn: "Rhine Falls", lon: 8.6149, lat: 47.6784, kind: "nature" },
+    { nameZh: "莱茵河畔施泰因", nameEn: "Stein am Rhein", lon: 8.8591, lat: 47.6596, kind: "landmark" },
+  ],
 };

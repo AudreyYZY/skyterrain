@@ -57,4 +57,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "三角形市集广场", nameEn: "The Diamond", lon: -8.1089, lat: 54.6536, kind: "district" },
     { nameZh: "斯利夫利格悬崖", nameEn: "Slieve League", lon: -8.6833, lat: 54.6167, kind: "nature" },
   ],
+  ennis: [
+    { nameZh: "恩尼斯修道院遗址", nameEn: "Ennis Friary", lon: -8.9814, lat: 52.846, kind: "landmark" },
+    { nameZh: "克莱尔博物馆", nameEn: "Clare Museum", lon: -8.9817, lat: 52.8442, kind: "landmark" },
+    { nameZh: "莫赫悬崖游客中心", nameEn: "Cliffs of Moher visitor centre", lon: -9.4258, lat: 52.9719, kind: "nature" },
+    { nameZh: "伯伦国家公园", nameEn: "Burren National Park", lon: -8.9875, lat: 53.0118, kind: "nature" },
+    { nameZh: "邦拉蒂城堡", nameEn: "Bunratty Castle", lon: -8.812, lat: 52.6967, kind: "landmark" },
+  ],
+  sligo: [
+    { nameZh: "斯莱戈修道院遗址", nameEn: "Sligo Abbey", lon: -8.47, lat: 54.271, kind: "landmark" },
+    { nameZh: "卡罗莫尔新石器墓群", nameEn: "Carrowmore Megalithic Cemetery", lon: -8.5193, lat: 54.2495, kind: "landmark" },
+    { nameZh: "诺克纳雷山", nameEn: "Knocknarea", lon: -8.5745, lat: 54.2588, kind: "nature" },
+    { nameZh: "德拉姆克利夫叶芝墓", nameEn: "Yeats's grave, Drumcliffe", lon: -8.4934, lat: 54.3262, kind: "landmark" },
+    { nameZh: "本布尔宾山", nameEn: "Benbulbin", lon: -8.4742, lat: 54.3649, kind: "nature" },
+    { nameZh: "斯特兰德希尔", nameEn: "Strandhill", lon: -8.5943, lat: 54.27, kind: "nature" },
+  ],
 };

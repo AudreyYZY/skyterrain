@@ -57,4 +57,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "ZRH", nameZh: "苏黎世机场（经苏黎世转乘）", nameEn: "Zurich Airport (via Zurich)", lon: 8.5492, lat: 47.4647 },
     source: "卢加诺市中心 46.0037,8.9511；LUG 卢加诺-阿尼奥机场目前无定期客运、只服务公务机与包机（luganoairport.ch，1 级，核实 2026-09-12），按列日的约定改为经苏黎世转乘：公开资料",
   },
+  {
+    id: "st-gallen", nameZh: "圣加仑", nameEn: "St. Gallen", country: "switzerland", tier: "notable", zone: "ch-plateau", admin1Zh: "圣加仑州", admin1En: "St. Gallen",
+    lon: 9.3752, lat: 47.4260,
+    airport: { iata: "ZRH", nameZh: "苏黎世机场", nameEn: "Zurich Airport", lon: 8.5492, lat: 47.4647 },
+    source: "圣加仑老城市集广场 47.4260,9.3752（OSM）；ZRH 直线约 62 km、机场站有直达火车（瑞士开放时刻表数据，1 级）；城东北的圣加仑—阿尔滕莱茵机场 ACH 直线约 15 km 只有少量定期航班，按卢加诺的约定填 ZRH（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "schaffhausen", nameZh: "沙夫豪森", nameEn: "Schaffhausen", country: "switzerland", tier: "notable", zone: "ch-plateau", admin1Zh: "沙夫豪森州", admin1En: "Schaffhausen",
+    lon: 8.6335, lat: 47.6970,
+    airport: { iata: "ZRH", nameZh: "苏黎世机场", nameEn: "Zurich Airport", lon: 8.5492, lat: 47.4647 },
+    source: "沙夫豪森老城 Fronwagplatz 47.6970,8.6335（OSM）；ZRH 直线约 27 km（按 OurAirports 算）；莱茵瀑布北岸属诺伊豪森市镇、离老城直线约 2.5 km，与地形条目 rhine-falls 互相点名（已有城市补充批，2026-09-16）",
+  },
 ];

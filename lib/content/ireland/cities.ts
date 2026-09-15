@@ -62,4 +62,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "CFN", nameZh: "多尼戈尔机场（卡里克芬）", nameEn: "Donegal Airport (Carrickfinn)", lon: -8.3405, lat: 55.0442 },
     source: "多尼戈尔镇市中心 54.6539,-8.1097；CFN 机场（距市区约65km）：公开资料",
   },
+  {
+    id: "ennis", nameZh: "恩尼斯", nameEn: "Ennis", country: "ireland", tier: "notable", zone: "ie-munster", admin1Zh: "克莱尔郡", admin1En: "County Clare",
+    lon: -8.9837, lat: 52.8435,
+    airport: { iata: "SNN", nameZh: "香农机场", nameEn: "Shannon Airport", lon: -8.9248, lat: 52.7019 },
+    source: "恩尼斯镇中心 52.8435,-8.9837（OSM）；SNN 香农机场直线约 16 km（按坐标算，离恩尼斯比离利默里克市中心近）；莫赫悬崖与伯伦地形条目的门户（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "sligo", nameZh: "斯莱戈", nameEn: "Sligo", country: "ireland", tier: "notable", zone: "ie-connacht", admin1Zh: "斯莱戈郡", admin1En: "County Sligo",
+    lon: -8.4751, lat: 54.2721,
+    airport: { iata: "NOC", nameZh: "爱尔兰西部诺克机场", nameEn: "Ireland West Airport Knock", lon: -8.8185, lat: 53.9103 },
+    source: "斯莱戈镇中心 54.2721,-8.4751（OSM）；斯莱戈机场 SXL 直线约 8 km 没有定期航班（机场官网，1 级）；最近有定期航班的是 NOC，直线约 46 km（按坐标算）（已有城市补充批，2026-09-16）",
+  },
 ];
