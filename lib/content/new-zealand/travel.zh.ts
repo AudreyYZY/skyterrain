@@ -79,7 +79,7 @@ export const TRAVEL_ZH: Record<string, TravelGuide> = {
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rotorua (Rotorua Lakes Council, Bay of Plenty; urban area ~58,500, 13th largest in NZ; southern shore of Lake Rotorua in the Rotorua Caldera; Pōhutu Geyser at Whakarewarewa; hydrogen sulfide smell, "Sulphur City"; Te Arawa settled from the 14th century, Ohinemutu; 46% Māori (2023 census; not the national highest — Gisborne is higher); health care and hospitality the largest employers)
     // howItWorks sources（2026-09-13 回扫改）：删「新西兰毛利人比例最高的城市」—— 2023 年普查吉斯伯恩约 55–56% 更高（Te Ao Māori News 引 Stats NZ，2 级）；46% 本身保留。核实 2026-09-13
     howItWorks:
-      "罗托鲁瓦是新西兰丰盛湾大区的一座城，由罗托鲁瓦湖区议会管辖，城区人口约 5.85 万（2025 年 6 月，新西兰统计局），是全国第 13 大城区；议会管垃圾、道路与规划，警察、学校与医院归中央政府。城市建在罗托鲁瓦破火山口的湖南岸，地热从地下涌上来：华卡雷瓦雷瓦的波胡图间歇泉、蒸腾的泥浆池与硫磺的气味是它的日常，“硫磺城”是它的绰号。14 世纪起特阿拉瓦部族在此定居，欧希内穆图的村落就在湖边，全市约 46% 的居民是毛利人，毛利文化表演与地热景观是它的旅游支柱，红木森林的山地车道在城东。奥克兰在西北约 220 公里，陶波在南面约 80 公里，机场在城东北，没有客运铁路。初来的人最容易犯的错，是以为地热景观都在城外，而市区的公园与街边就在冒着蒸汽。",
+      "罗托鲁瓦是新西兰丰盛湾大区的一座城，由罗托鲁瓦湖区议会管辖，城区人口约 5.85 万（2025 年 6 月，新西兰统计局），是全国第 13 大城区；议会管垃圾、道路与规划，警察、学校与医院归中央政府。城市建在罗托鲁瓦破火山口的湖南岸，地热从地下涌上来：华卡雷瓦雷瓦的波胡图间歇泉、蒸腾的泥浆池与硫磺的气味是它的日常，“硫磺城”是它的绰号。14 世纪起特阿拉瓦部族在此定居，欧希内穆图的村落就在湖边，毛利文化表演与地热景观是它的旅游支柱，红木森林的山地车道在城东。奥克兰在西北约 220 公里，陶波在南面约 80 公里，机场在城东北，没有客运铁路。初来的人最容易犯的错，是以为地热景观都在城外，而市区的公园与街边就在冒着蒸汽。",
     layout:
       "城市在罗托鲁瓦湖南岸、政府花园一带。地热区分布在城内外：库伊劳公园就在市区，怀奥塔普（“地热仙境”）、蒂普亚、怀曼古在城南；红木森林（Whakarewarewa Forest）在城东南，是骑行和跑步的地方。周边有十几个火山湖。",
     gettingAround:
