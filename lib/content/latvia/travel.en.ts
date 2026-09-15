@@ -174,4 +174,21 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September is best, with crowds at summer weekends; the rapid is widest in spring when the water is high. Coaches are limited, so drive or stay a night in town and combine it with Ventspils and the Jūrkalne cliffs on a Kurzeme trip.",
   },
+  valmiera: {
+    // 全七段 sources: 同中文侧（CSP IRS031 2026-01-01, tier 1; Law on Administrative Territories and Populated Areas, likumi.lv, tier 1; Valmiera municipality website history, theatre and train news, tier 1; Central Finance and Contracting Agency, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，老城与火车站的东西岸方位疑写反，改为不写方位的「隔河相对」，其余 ok）。
+    identity:
+      "Valmiera is a town in Vidzeme in northern Latvia, divided by the Gauja river, with about 22,700 people in the town itself and about 50,300 in Valmiera Municipality on 1 January 2026 (Central Statistical Bureau of Latvia). First mentioned in writing in 1323, it had a castle of the Livonian Order and belonged to the Hanseatic League in the Middle Ages, and today it is one of Vidzeme's centres for transport and education.",
+    howItWorks:
+      "In law Valmiera is one of Latvia's ten 'state cities', yet it has no government of its own: since 2021 it has been merged with seven former municipalities around it into Valmiera Municipality, governed by an elected municipal council, whose territory also includes four other towns and more than twenty rural parishes over nearly 3,000 km². That is the key difference from state cities such as Liepāja and Daugavpils, which have their own governments. The centre is the old town beside the Gauja, where St Simon's Church, the castle ruins and museum and the theatre stand close together, the castle built on high ground between the Gauja and the deep valley of a tributary. Locals find their way by the church, the river and the railway station. Daily life stretches along the Gauja valley and the railway, with Cēsis twenty-odd kilometres to the south. Newcomers often assume a 'state city' must govern itself like Riga, or count the whole municipality's population as the town's.",
+    layout:
+      "The old town stands on high ground beside the Gauja, grouping St Simon's Church, the ruins of the Livonian Order castle, Valmiera Museum and the theatre; the Gauja runs through the town with parks and paths along its banks. Newer districts spread along both sides of the river, with the railway station on the other side of the river from the old town. South along the Gauja valley are Cēsis and Sigulda, and to the north lie the farmland and forests of Vidzeme.",
+    gettingAround:
+      "There is no airport with scheduled flights here; scheduled flights go through Riga International Airport (RIX), about 111 km away in a straight line. Valmiera is on the Riga–Valga railway, and since January 2026 the Tallinn–Tartu–Riga international train also stops here. Buses and walking cover the town, and the old town is walkable.",
+    culture:
+      "Latvian is spoken, and English is widely used among younger people. Valmiera Theatre counts 1923, when regular professional performances began, as its founding year, and it reopened after major renovation in 2024. The renovated tower of St Simon's Church has a viewing platform over the Gauja valley and the town.",
+    seeAndDo:
+      "St Simon's Church and its tower viewing platform; the ruins of the Order castle and Valmiera Museum; a walk along the Gauja riverside paths; a performance at Valmiera Theatre; and a trip south along the Gauja valley to Cēsis and Sigulda.",
+    whenAndTips:
+      "May–September is the most comfortable, with boating on the Gauja in summer; winters are cold with short days. International trains run only a few times a day, so check the operator's timetable before travelling.",
+  },
 };

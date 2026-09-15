@@ -72,4 +72,10 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "库拉塔民族志建筑群", nameEn: "Kulata Ethnographic Complex", lon: 25.3980, lat: 42.6242, kind: "landmark" },
     { nameZh: "科普林卡水库", nameEn: "Koprinka Reservoir", lon: 25.3056, lat: 42.6181, kind: "landmark" },
   ],
+  tryavna: [
+    { nameZh: "钟楼", nameEn: "Clock tower", lon: 25.4895, lat: 42.8662, kind: "landmark" },
+    { nameZh: "老学堂", nameEn: "Old School", lon: 25.4898, lat: 42.8664, kind: "landmark" },
+    { nameZh: "博任齐村", nameEn: "Bozhentsi", lon: 25.4232, lat: 42.874, kind: "landmark" },
+    { nameZh: "埃塔尔露天博物馆", nameEn: "Etar Open-Air Museum", lon: 25.3484, lat: 42.8057, kind: "landmark" },
+  ],
 };

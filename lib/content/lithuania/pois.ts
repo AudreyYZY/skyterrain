@@ -64,4 +64,10 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "比尔什托纳斯观景塔", nameEn: "Birštonas Observation Tower", lon: 24.0133, lat: 54.6037, kind: "landmark" },
     { nameZh: "疗养会所", nameEn: "Birštonas Kurhaus", lon: 24.0335, lat: 54.6004, kind: "landmark" },
   ],
+  anyksciai: [
+    { nameZh: "圣马太教堂", nameEn: "St Matthew's Church", lon: 25.1004, lat: 55.5244, kind: "landmark" },
+    { nameZh: "树冠步道", nameEn: "Treetop Walking Path", lon: 25.0621, lat: 55.4856, kind: "landmark" },
+    { nameZh: "蓬图卡斯巨石", nameEn: "Puntukas boulder", lon: 25.0554, lat: 55.4749, kind: "landmark" },
+    { nameZh: "马博物馆", nameEn: "Horse Museum", lon: 25.0858, lat: 55.5736, kind: "landmark" },
+  ],
 };

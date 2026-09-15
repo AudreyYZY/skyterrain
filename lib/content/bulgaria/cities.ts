@@ -66,4 +66,10 @@ export const CITIES: CityEntry[] = [
     lon: 25.3932, lat: 42.6188,
     source: "卡赞勒克镇中心 42.6188,25.3932（Wikidata Q192926）；无机场，最近的有定期航班机场为普罗夫迪夫 PDV，直线约 75.8 km（按坐标算），不填 airport；UNESCO 中文名作「卡赞利克的色雷斯古墓」",
   },
+  {
+    id: "tryavna", nameZh: "特里亚夫纳", nameEn: "Tryavna", country: "bulgaria", tier: "notable", zone: "bg-north",
+    admin1Zh: "加布罗沃州", admin1En: "Gabrovo Province",
+    lon: 25.4895, lat: 42.8662,
+    source: "特里亚夫纳钟楼广场 42.8662,25.4895（OSM）；本地没有定期航班的机场，不填 airport；普罗夫迪夫 PDV 直线约 103 km、索非亚 SOF 约 170 km（按 OurAirports 算）；离国界约 84 km（已有城市补充批，2026-09-16）",
+  },
 ];

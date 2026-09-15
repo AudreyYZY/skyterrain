@@ -171,4 +171,21 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September is best for riverside walks and cycling; the sanatoriums are open all year, and it is best to book accommodation in advance.",
   },
+  anyksciai: {
+    // 全七段 sources: 同中文侧（Statistics Lithuania S3R167 2026-01-01, tier 1; STVK protected-areas cadastre, tier 1; siaurukas.eu narrow-gauge railway, tier 1; baranauskas.lt memorial museum, tier 1; jp.lt on the treetop walkway, tier 2; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Anykščiai is a small town on the Šventoji river in north-eastern Lithuania, with about 8,200 people in the town and about 21,500 in Anykščiai District Municipality on 1 January 2026 (Statistics Lithuania). Around it lies the pine-covered Anykščiai Regional Park, and its treetop walkway, the glacier-carried Puntukas boulder and a narrow-gauge railway still running tourist trains make it a weekend destination for Lithuanians.",
+    howItWorks:
+      "Anykščiai is the administrative centre of Anykščiai District Municipality, run by a directly elected mayor and an elected municipal council, whose territory is far larger than the town. The Anykščiai Regional Park beyond the town, about 15,600 hectares, is managed by the state's protected-areas authority, not the municipality. The centre of town is around St Matthew's Church by the Šventoji, whose twin-towered brick bulk is the town's landmark. Locals find their way by the church, the river and the narrow-gauge station. The town's structure is that the sights are outside it: the treetop walkway and Puntukas boulder are in the pine forest about 5 km south-west, the Horse Museum is in a village about 5 km north, and the narrow-gauge railway links the villages and towns along its line. Daily life runs on the roads, as there is no regular passenger train. Newcomers most often mistake the narrow-gauge line for a commuter railway, when it mainly runs tourist trains on summer weekends, and underestimate the distances between the sights, which without a car are best planned by bike or taxi.",
+    layout:
+      "The town spreads along both banks of the Šventoji, with St Matthew's Church by the river in the centre and the narrow-gauge station and railway museum in town. South-west along the river is the Anykščiai pine forest, home to the treetop walkway and the Puntukas boulder; about 5 km north is the Horse Museum in Niūronys. All around are the pine woods, river valleys and lakes of the regional park.",
+    gettingAround:
+      "There is no airport with scheduled flights here; scheduled flights go through Kaunas (KUN), about 90 km away in a straight line, or Vilnius (VNO), about 100 km. There is no regular passenger train, so travel to Vilnius or Kaunas by coach or car. On summer weekends the narrow-gauge railway runs tourist trains to and from Lake Rubikiai. The town is walkable, and the forest and memorial museums are easier by bike or car.",
+    culture:
+      "Lithuanian is spoken, with English usable among younger people. The poet Antanas Baranauskas wrote the long poem Anykščių šilelis (The Forest of Anykščiai) in 1858–1859 in a small granary in town, now part of his memorial museum. The narrow-gauge railway is an old 750 mm line and is a nationally protected cultural monument.",
+    seeAndDo:
+      "The treetop walkway and observation tower in the pine forest; the 5.7-metre Puntukas boulder; the Baranauskas granary memorial museum; the Horse Museum in Niūronys; the narrow-gauge railway museum and, on summer weekends, a tourist train ride; St Matthew's Church; and cycling or canoeing along the Šventoji.",
+    whenAndTips:
+      "May–September is the most comfortable, and the treetop walkway is busy at weekends, so go early; autumn colours in the forest and valley are good. The narrow-gauge tourist train's season and timetable are as announced by the operator.",
+  },
 };

@@ -67,4 +67,10 @@ export const CITIES: CityEntry[] = [
     lon: 24.0333, lat: 54.6000,
     source: "比尔什托纳斯镇中心 54.6000,24.0333（Wikidata）；本地无机场，不填 airport 字段；考纳斯 KUN 直线约 41 km（按坐标算）；选它而不选德鲁斯基宁凯是零争议取舍（后者紧邻国界、史实段以二十世纪归属更迭为主）",
   },
+  {
+    id: "anyksciai", nameZh: "阿尼克什奇艾", nameEn: "Anykščiai", country: "lithuania", tier: "notable", zone: "lt-north",
+    admin1Zh: "乌田纳县", admin1En: "Utena County",
+    lon: 25.1030, lat: 55.5250,
+    source: "阿尼克什奇艾镇中心圣马太教堂一带 55.5250,25.1030（OSM）；本地没有定期航班的机场，不填 airport；考纳斯 KUN 直线约 90 km、维尔纽斯 VNO 约 100 km（按 OurAirports 算）；离国界约 70 km（已有城市补充批，2026-09-16）",
+  },
 ];

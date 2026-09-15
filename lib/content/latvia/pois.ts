@@ -62,4 +62,9 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "市政厅广场", nameEn: "Town Hall Square", lon: 21.9708, lat: 56.9679, kind: "landmark" },
     { nameZh: "里耶祖佩沙洞（镇外）", nameEn: "Riežupe Sand Caves (outside the town)", lon: 21.9866, lat: 57.0069, kind: "landmark" },
   ],
+  valmiera: [
+    { nameZh: "圣西门教堂", nameEn: "St Simon's Church", lon: 25.4264, lat: 57.5385, kind: "landmark" },
+    { nameZh: "瓦尔米耶拉博物馆与城堡遗址", nameEn: "Valmiera Museum and castle ruins", lon: 25.4279, lat: 57.5392, kind: "landmark" },
+    { nameZh: "瓦尔米耶拉剧院", nameEn: "Valmiera Theatre", lon: 25.4258, lat: 57.5393, kind: "landmark" },
+  ],
 };

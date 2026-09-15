@@ -64,4 +64,10 @@ export const CITIES: CityEntry[] = [
     lon: 21.9700, lat: 56.9672,
     source: "库尔迪加镇中心 56.9672,21.9700（Wikidata）；本地无定期航班机场，不填 airport 字段；里加 RIX 直线约 122 km（按坐标算）",
   },
+  {
+    id: "valmiera", nameZh: "瓦尔米耶拉", nameEn: "Valmiera", country: "latvia", tier: "notable", zone: "lv-vidzeme",
+    admin1Zh: "维泽梅规划区域", admin1En: "Vidzeme Planning Region",
+    lon: 25.4264, lat: 57.5385,
+    source: "瓦尔米耶拉老城圣西门教堂一带 57.5385,25.4264（OSM）；国家城市、属瓦尔米耶拉市镇（likumi.lv，1 级）；本地没有定期航班的机场，不填 airport；里加 RIX 直线约 111 km（按 OurAirports 算）；离国界约 43 km（已有城市补充批，2026-09-16）",
+  },
 ];

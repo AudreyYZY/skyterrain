@@ -171,4 +171,21 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Late May to early June is rose-picking season; the flowers are picked in the early morning, so get up early to see it; summers in the basin are hot. Kazanlak is a feasible day trip by train from Sofia, and combines well with Veliko Tarnovo and Plovdiv.",
   },
+  tryavna: {
+    // 全七段 sources: 同中文侧（NSI 2025-12-31 and 2021 census tables, tier 1; tryavna.bg, tier 1; tryavna-museum.eu, tier 1; Bulgarka Nature Park directorate, tier 1; BDZ timetable 2026-09-15, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，定居点无人 / 不足 10 人的细分 unknown，已删，其余 ok）。
+    identity:
+      "Tryavna is a small town on the northern slopes of the Balkan Mountains in north-central Bulgaria, in Gabrovo Province, with about 6,800 people in the town and about 8,500 in Tryavna Municipality at the end of 2025 (National Statistical Institute). In the 18th and 19th centuries it was known for its builders, woodcarvers and icon painters, and its old town keeps stone-paved streets, houses with carved woodwork and a clock tower built in 1814.",
+    howItWorks:
+      "Tryavna Municipality is run by a directly elected mayor and a municipal council, and it is a municipality in its own right, not part of neighbouring Gabrovo. Its structure is one town plus more than a hundred mountain villages: in the 2021 census the municipality had 106 settlements, most of them apart from the town being mountain villages with very few people, and about four in five of its people live in the town. The centre is the old square with the clock tower, with the Old School, the woodcarving museum and a pedestrian street of old houses all within a few hundred metres. Locals find their way by the clock tower, the old street and the railway station. Daily life follows the valley: the town stretches along it, the hillsides around are forest and scattered hamlets, and Bulgarka Nature Park covers part of the municipality's land. Newcomers often take it for a suburb of Gabrovo, when it has its own mayor and council, and assume the village of Bozhentsi and the Etar open-air museum are in Tryavna, when both are in neighbouring Gabrovo Municipality.",
+    layout:
+      "The old town lies in the valley, centred on the clock-tower square, with the Old School on the square, the woodcarving museum in the Daskalov House nearby and a pedestrian street of preserved houses leading off it. The railway station is in town, and forests and hamlets cover the slopes around. About 5 km west in a straight line is the village of Bozhentsi, about 13 km the Etar open-air museum near Gabrovo, and about 26 km north-east Veliko Tarnovo.",
+    gettingAround:
+      "There is no airport with scheduled flights here; the nearest with scheduled flights is Plovdiv (PDV), about 103 km away in a straight line, with Sofia further. Tryavna is on the Gorna Oryahovitsa–Stara Zagora railway, with direct trains to Stara Zagora and Veliko Tarnovo. The town is walkable, and Bozhentsi and Etar need a car or bus.",
+    culture:
+      "Bulgarian is spoken, with English usable in tourism. Tryavna's woodcarvers and icon painters formed their own school: the two carved 'sun' ceilings in the Daskalov House were finished in 1808, and the house is now the museum of woodcarving and icon painting; the Old School opened in 1839 and shows a restored 19th-century classroom. The town also has a museum of Asian and African art. Nodding and shaking the head mean the opposite of what they do in most countries: a nod means 'no' and a shake means 'yes'.",
+    seeAndDo:
+      "The clock-tower square and the 1814 clock tower; the Old School; the woodcarving museum and its two 'sun' ceilings in the Daskalov House; the icon museum; the old houses along the pedestrian street; Bozhentsi village and the Etar open-air museum to the west; and forest trails in Bulgarka Nature Park.",
+    whenAndTips:
+      "May–October is the most comfortable, with good autumn colours in the hills; winters in the mountains are cold. The museum's sites open separately, so check the museum's published hours.",
+  },
 };
