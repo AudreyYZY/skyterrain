@@ -2193,4 +2193,12 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/palanga": { f: 7, v: 1, d: "2026-09-15" },
   "travel/nida": { f: 7, v: 1, d: "2026-09-16" },
   "travel/birstonas": { f: 7, v: 1, d: "2026-09-16" },
+  "travel/kyrgyzstan-overview": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/bishkek": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/karakol": { f: 7, v: 1, d: "2026-09-18" },
+  "travel/cholpon-ata": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/balykchy": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/naryn": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/talas": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/kochkor": { f: 7, v: 1, d: "2026-09-15" },
 };
