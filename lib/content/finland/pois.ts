@@ -52,4 +52,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "西伊达萨米博物馆", nameEn: "Siida Sámi Museum", lon: 27.0264, lat: 68.9061, kind: "landmark" },
     { nameZh: "伊纳里湖畔", nameEn: "Lake Inari Shore", lon: 27.0300, lat: 68.9100, kind: "nature" },
   ],
+  rauma: [
+    { nameZh: "老劳马", nameEn: "Old Rauma", lon: 21.5132, lat: 61.128, kind: "landmark" },
+    { nameZh: "圣十字教堂", nameEn: "Church of the Holy Cross", lon: 21.5122, lat: 61.1296, kind: "landmark" },
+    { nameZh: "老市政厅（劳马博物馆）", nameEn: "Old Town Hall (Rauma Museum)", lon: 21.5112, lat: 61.1279, kind: "landmark" },
+    { nameZh: "马雷拉船东宅博物馆", nameEn: "Marela Shipowner's House", lon: 21.5151, lat: 61.128, kind: "landmark" },
+    { nameZh: "萨马拉赫登迈基青铜时代墓葬群", nameEn: "Sammallahdenmäki Bronze Age Burial Site", lon: 21.7752, lat: 61.1177, kind: "landmark" },
+    { nameZh: "凯尔米皮赫拉亚灯塔", nameEn: "Kylmäpihlaja lighthouse", lon: 21.3028, lat: 61.1446, kind: "nature" },
+  ],
+  vaasa: [
+    { nameZh: "集市广场", nameEn: "Market Square", lon: 21.6158, lat: 63.0958, kind: "landmark" },
+    { nameZh: "瓦萨教堂", nameEn: "Vaasa Church", lon: 21.6101, lat: 63.0947, kind: "landmark" },
+    { nameZh: "博滕博物馆与克瓦尔肯自然中心", nameEn: "Ostrobothnian Museum and Terranova", lon: 21.6019, lat: 63.0996, kind: "landmark" },
+    { nameZh: "昆奇现代艺术博物馆", nameEn: "Kuntsi Museum of Modern Art", lon: 21.6003, lat: 63.0964, kind: "landmark" },
+    { nameZh: "旧瓦萨", nameEn: "Old Vaasa", lon: 21.7228, lat: 63.0734, kind: "landmark" },
+    { nameZh: "雷普洛特桥", nameEn: "Replot Bridge", lon: 21.4727, lat: 63.2067, kind: "nature" },
+  ],
 };

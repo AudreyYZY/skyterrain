@@ -233,6 +233,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "fi-lounais-suomi": { zh: "西南芬兰", en: "Southwest Finland", order: 241 },
   "fi-jarvi-suomi": { zh: "湖区芬兰", en: "Finnish Lakeland", order: 242 },
   "fi-pohjois-suomi": { zh: "北芬兰（含拉普兰）", en: "Northern Finland (incl. Lapland)", order: 243 },
+  "fi-lansi-suomi": { zh: "西芬兰沿岸（博滕）", en: "Western Finland coast (Ostrobothnia)", order: 244 },
   // 卢森堡（埃斯灵—古特兰）
   "lu-oesling": { zh: "埃斯灵", en: "Oesling", order: 250 },
   "lu-gutland": { zh: "古特兰", en: "Gutland", order: 251 },

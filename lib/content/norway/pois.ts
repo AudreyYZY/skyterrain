@@ -84,4 +84,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "阿尔塔峡谷", nameEn: "Alta Canyon", lon: 23.5500, lat: 69.7500, kind: "nature" },
     { nameZh: "芬马克高原（内陆方向）", nameEn: "Finnmarksvidda", lon: 23.5000, lat: 69.5000, kind: "nature" },
   ],
+  svolvaer: [
+    { nameZh: "港边广场", nameEn: "Harbour square", lon: 14.5647, lat: 68.2322, kind: "landmark" },
+    { nameZh: "斯维内亚岛", nameEn: "Svinøya", lon: 14.5791, lat: 68.2342, kind: "nature" },
+    { nameZh: "北挪威艺术家中心", nameEn: "North Norwegian Artists' Centre", lon: 14.565, lat: 68.2317, kind: "landmark" },
+    { nameZh: "弗洛亚山", nameEn: "Fløya", lon: 14.6013, lat: 68.2483, kind: "nature" },
+    { nameZh: "沃根教堂（卡伯尔沃格）", nameEn: "Vågan Church, Kabelvåg", lon: 14.4837, lat: 68.2157, kind: "landmark" },
+    { nameZh: "亨宁斯韦尔", nameEn: "Henningsvær", lon: 14.2007, lat: 68.1529, kind: "nature" },
+  ],
+  roros: [
+    { nameZh: "勒罗斯教堂", nameEn: "Røros Church", lon: 11.3878, lat: 62.5774, kind: "landmark" },
+    { nameZh: "冶炼厂博物馆", nameEn: "Smelthytta museum", lon: 11.3913, lat: 62.5772, kind: "landmark" },
+    { nameZh: "矿渣堆", nameEn: "Slag heaps", lon: 11.3953, lat: 62.5759, kind: "landmark" },
+    { nameZh: "奥拉夫矿", nameEn: "Olav mine", lon: 11.5629, lat: 62.631, kind: "landmark" },
+    { nameZh: "费蒙斯许塔冶炼遗址", nameEn: "Femundshytta smelter site", lon: 11.912, lat: 62.3114, kind: "landmark" },
+  ],
 };
