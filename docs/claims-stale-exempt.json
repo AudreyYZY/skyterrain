@@ -9,18 +9,6 @@
       "recheckAfter": "2027-01"
     },
     {
-      "key": "travel/aktau/howItWorks",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/aktau/identity",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
       "key": "travel/amsterdam/howItWorks",
       "reason": "MRA（大都市区阿姆斯特丹）自报 262 万人是 2024 年数，MRA 是跨市镇治理联合体、不按年固定发布；阿姆斯特丹 gemeente 本身的 2026-01-01 数已写在同段前半句。",
       "confirmedOn": "2026-09-09",
@@ -255,12 +243,6 @@
       "recheckAfter": "2026-12"
     },
     {
-      "key": "travel/kokshetau/identity",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
       "key": "travel/krabi/howItWorks",
       "reason": "甲米镇 32,644 人（2020）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
@@ -399,12 +381,6 @@
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/pavlodar/identity",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
       "key": "travel/phu-quoc-city/howItWorks",
       "reason": "富国特区 2024-12-31 口径 157,629 是已核实的最新数；越南 2025 年行政改革后特区级 2025 年数未见官方发布。",
       "confirmedOn": "2026-09-15",
@@ -459,12 +435,6 @@
       "recheckAfter": "2031-06"
     },
     {
-      "key": "travel/semey/identity",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
       "key": "travel/split/howItWorks",
       "reason": "克罗地亚统计局 DZS 没有逐年发布的市镇（grad）级人口估计：年中人口估计（STAN 系列）只到县级，PxWeb「Gradovi i Općine」表停在 2011/2013；市镇级唯一口径是 2021 年普查，即当前最新一期。下次普查约 2031 年。",
       "confirmedOn": "2026-09-15",
@@ -491,18 +461,6 @@
     {
       "key": "travel/surabaya/identity",
       "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/turkestan/howItWorks",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
-      "confirmedOn": "2026-09-15",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/turkestan/identity",
-      "reason": "哈萨克斯坦国家统计局 stat.gov.kz 的常规月度 / 年度公报只发布到州（oblast）一级，城市级人口没有稳定的官方定期发布；本轮找到的城市数只有媒体转述或打不开的文件链接，不满足一手门槛。现有数字是能核实的最新城市级数，下一轮直接找州统计分局的城市表。",
       "confirmedOn": "2026-09-15",
       "recheckAfter": "2027-03"
     },
