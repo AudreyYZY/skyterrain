@@ -1,0 +1,33 @@
+{
+  "id": "ckg-cmb",
+  "name": "重庆 — 科伦坡",
+  "nameEn": "Chongqing — Colombo",
+  "description": "四川盆地 · 云贵高原 · 锡吉里耶岩 · 康提高原 · 尼甘布潟湖",
+  "descriptionEn": "Sichuan Basin · Yunnan–Guizhou Plateau · Sigiriya Rock · Kandy Plateau · Negombo Lagoon",
+  "depCountry": "china",
+  "arrCountry": "sri-lanka",
+  "flight": {
+    "airline": "重庆航空",
+    "airlineEn": "Chongqing Airlines",
+    "flightNo": "OQ2393",
+    "aircraft": "Airbus A320neo",
+    "depIata": "CKG",
+    "arrIata": "CMB",
+    "durationMin": 340
+  },
+  "source": {
+    "ref": "https://www.cq.gov.cn/ywdt/bmts/202406/t20240604_13263668.html",
+    "checkedOn": "2026-09-15",
+    "note": "重庆市人民政府网 2024-06-04：重庆航空 6 月 24 日起开通重庆⇋科伦坡⇋马累客运航线，空客 A320NEO，去程 CZ553/OQ2393 经停科伦坡后抵达马累，回程 CZ554/OQ2394（1 级）；机场运营方 AASL 班达拉奈克国际机场每周航班时刻表（2026-09-15 抓取，1 级）：OQ2393 从重庆到达科伦坡后同号续飞马累、OQ2394 马累—科伦坡—重庆，机型 A320 —— 重庆—科伦坡段不经停（比照 pek-otp 同号续飞的处理）；FlightAware 计划时刻 CKG→CMB 5 h 40、机型 A320neo（3 级）。班期 2024 与 2026 不同，不写班期与时刻。代码共享 CZ553 不作主号。航点经云贵高原—孟加拉湾—斯里兰卡北中部为按大圆的示意，不代表实际航路。"
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    { "kind": "city", "id": "ckg", "name": "重庆江北", "nameEn": "Chongqing Jiangbei", "lat": 29.7123, "lon": 106.6519, "airport": true },
+    { "kind": "terrain", "terrainId": "sichuan" },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "terrain", "terrainId": "sigiriya-rock" },
+    { "kind": "terrain", "terrainId": "kandy-plateau" },
+    { "kind": "terrain", "terrainId": "negombo-lagoon" },
+    { "kind": "city", "id": "cmb", "name": "科伦坡班达拉奈克", "nameEn": "Colombo Bandaranaike", "lat": 7.1808, "lon": 79.8841, "airport": true }
+  ]
+}
