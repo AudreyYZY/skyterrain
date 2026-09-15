@@ -1357,7 +1357,7 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/guangzhou": { f: 7, v: 2, d: "2026-05-10", l: 1 },
   "travel/shenzhen": { f: 7, v: 2, d: "2026-05-25", l: 1 },
   "travel/chengdu": { f: 7, v: 2, d: "2026-04-14", l: 2 },
-  "travel/chongqing": { f: 7, v: 2, d: "2026-03-26", l: 1 },
+  "travel/chongqing": { f: 7, v: 2, d: "2026-09-12", l: 1 },
   "travel/xian": { f: 7, v: 2, d: "2026-05-15", l: 2 },
   "travel/hangzhou": { f: 7, v: 2, d: "2026-04-30", l: 2 },
   "travel/kunming": { f: 7, v: 2, d: "2026-05-21", l: 2 },
