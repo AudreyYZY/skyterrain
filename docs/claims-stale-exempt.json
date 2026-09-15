@@ -177,6 +177,12 @@
       "recheckAfter": "2027-01"
     },
     {
+      "key": "travel/jianshui/identity",
+      "reason": "建水县统计局 2025 年公报截至 2026-09-15 未查到，县统计局 2026-04-27 发布的《2025 年经济运行情况》不含人口；现有 2024 年末常住人口（2025-05-30 发布）是能取到的最新一期。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-12"
+    },
+    {
       "key": "travel/jiaozuo/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
@@ -559,6 +565,12 @@
       "reason": "印尼 BPS 各市《Dalam Angka 2026》（含 2025 年数）已于 2026-02-27 发布，但 *.bps.go.id 对脚本与浏览器检索全线 Cloudflare 403；二手转载给出的 2025 年数互相矛盾、疑为 BPS 推算与 Dukcapil 户籍两套口径混用，按 C6-b 规矩不采信。现有 2024 年 BPS 数是能核实的最新一期。 日惹另有市民政局户籍口径（2025 下半年约 41.6 万），与 BPS 推算口径不同，未混用。",
       "confirmedOn": "2026-09-15",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/yuanyang/identity",
+      "reason": "元阳县统计局《2025年国民经济和社会发展统计公报》截至 2026-09-15 未在县政府网与公报库查到（2024 年公报 2025-05-16 发布）；现有 2024 年末户籍人口是能取到的最新一期。下一轮先查县政府网统计信息栏。",
+      "confirmedOn": "2026-09-15",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/zhenjiang/identity",
