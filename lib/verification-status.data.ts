@@ -2150,7 +2150,7 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/ostrava": { f: 7, v: 1, d: "2026-09-16" },
   "travel/hradec-kralove": { f: 7, v: 1, d: "2026-09-16" },
   "travel/hungary-overview": { f: 7, v: 0, d: "2026-09-13" },
-  "travel/budapest": { f: 7, v: 0, d: "2026-09-13" },
+  "travel/budapest": { f: 7, v: 0, d: "2026-09-16" },
   "travel/debrecen": { f: 7, v: 0, d: "2026-09-13" },
   "travel/szeged": { f: 7, v: 2, d: "2026-09-13" },
   "travel/pecs": { f: 7, v: 0, d: "2026-09-13" },
