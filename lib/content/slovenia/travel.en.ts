@@ -222,7 +222,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     culture:
       "Slovene is spoken. Hay racks and herdsmen's huts are the vernacular architecture of these valleys, and Stara Fužina has a museum of alpine dairying. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill. The supply is 230 V with two-round-pin continental sockets.",
     seeAndDo:
-      "The church of St John the Baptist and the stone bridge at the eastern end of the lake; the walk around the shore; the Savica waterfall beyond the western end; the path into the Mostnica gorge; the alpine dairy museum at Stara Fužina; and the cable car up Vogel for the view over lake and mountains — though as of September 2026 it is closed for refurbishment, expected to reopen before the end of the year, so check operating notices.",
+      "The church of St John the Baptist and the stone bridge at the eastern end of the lake; the walk around the shore; the Savica waterfall beyond the western end; the path into the Mostnica gorge; the alpine dairy museum at Stara Fužina; and the cable car up Vogel for the view over lake and mountains — it is scheduled to close for major maintenance from 21 September to about 30 November 2026 and runs normally the rest of the year, so check operating notices.",
     whenAndTips:
       "June to September suits walking and the lake, and winter is the snow season. Parking by the lake is tight in summer, so buses and walking are easier; mountain weather changes fast, so take wind- and waterproof layers.",
   },
