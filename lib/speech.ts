@@ -56,7 +56,11 @@ export function getCurrentWordBoundaries(): WordBoundary[] {
  */
 const CHARS_PER_SEC: Record<Language, number> = {
   "zh-CN": 4.44,
-  "en-US": 15.24,
+  // 2026-09-17：`npm run check:tts` 的 120 段实测是 14.59，原来写的 15.24 偏大 4.5%。
+  // 常数偏大意味着英文解说的实际朗读时间比估算长 —— 逐句高亮的回退估时会跑在语音前面，
+  // 航线镜头也可能在解说没播完时就飞完。这两个数**以 check:tts 的实测为准**，
+  // 偏差超过 3% 就回来改（见 issue #308）。
+  "en-US": 14.6,
 };
 
 /** 没传 language 时按 CJK 字符占比判语言——宁可猜也不要沿用写死的中文语速 */

@@ -15,7 +15,7 @@
     "check:camera": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-terrain-camera.ts",
     "check:places": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-places.ts",
     "check:routes": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-routes.ts",
-    "check": "npm run check:content && npm run typecheck && npm run lint && npm run check:regions && npm run check:camera && npm run check:places && npm run check:routes && npm run check:tts && npm run check:flight && npm run check:anchors && npm run check:claims",
+    "check": "npm run check:content && npm run check:sentence-split && npm run check:highlight-sync && npm run typecheck && npm run lint && npm run check:regions && npm run check:camera && npm run check:places && npm run check:routes && npm run check:tts && npm run check:flight && npm run check:anchors && npm run check:claims",
     "check:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-tts-cache.ts",
     "warm:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/warm-tts.ts",
     "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts",
@@ -38,7 +38,9 @@
     "check:layout-bearings": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-layout-bearings.ts",
     "gen:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts",
     "check:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts --check",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "check:sentence-split": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-sentence-split.ts",
+    "check:highlight-sync": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-highlight-sync.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
