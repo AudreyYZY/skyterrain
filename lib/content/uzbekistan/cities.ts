@@ -70,4 +70,15 @@ export const CITIES: CityEntry[] = [
     lon: 65.6904, lat: 40.5628,
     source: "努拉塔镇中心 40.5628,65.6904（OSM）；本地没有定期航班的机场，不填 airport；纳沃伊 NVI 直线约 66 km（按 OurAirports 算，航班屏 2026-09-15 见往返塔什干航班）；离国界约 108 km（已有城市补充批，2026-09-16）；中文译名与仓库地形条目「努拉塔山」对齐（zhwiki 作「努羅塔」）",
   },
+  {
+    id: "namangan", nameZh: "纳曼干", nameEn: "Namangan", country: "uzbekistan", tier: "major", zone: "uz-east", admin1Zh: "纳曼干州", admin1En: "Namangan Region",
+    lon: 71.6719, lat: 41.0003,
+    airport: { iata: "NMA", nameZh: "纳曼干国际机场", nameEn: "Namangan International Airport", lon: 71.5578, lat: 40.9846 },
+    source: "纳曼干市政府（хокимият）41.0003,71.6719（OSM way/174040717，amenity=townhall；州政府在 100 m 外，是另一个对象）；NMA 直线约 10 km、有定期客运航班（机场官方清单与航班屏 2026-09-16，1 级），填 airport；离国界约 25 km；与地形条目 fergana-valley、syr-darya 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "jizzakh", nameZh: "吉扎克", nameEn: "Jizzakh", country: "uzbekistan", tier: "major", zone: "uz-center", admin1Zh: "吉扎克州", admin1En: "Jizzakh Region",
+    lon: 67.8231, lat: 40.1321,
+    source: "吉扎克州政府（хокимият）40.1321,67.8231（OSM way/309357649；OSM 里没有市政府对象，州政府在城市主干道上、离 Nominatim 的 place=city 点约 130 m —— ⚠️ Wikidata 的吉扎克点在 2.9 km 外，不要混用）；市域内没有定期航班的机场，全州唯一有定期航班的扎敏机场（OMN）在东南直线约 52 km、不在本市，不填 airport；离国界约 53 km；与地形条目 mirzachul、hissar-range 互指（已有城市补充批，2026-09-16）",
+  },
 ];

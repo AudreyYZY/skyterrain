@@ -63,4 +63,14 @@ export const CITIES: CityEntry[] = [
     lon: 75.8144, lat: 41.1689,
     source: "阿特巴什村中心 41.1689,75.8144（OSM）；纳伦州阿特巴什区下的村（统计委员会表 825，1 级）；没有定期航班的机场，纳伦机场直线约 40 km、有 Asman 往返比什凯克航班但无 IATA 码，不填 airport；离国界约 59 km（已有城市补充批，2026-09-16）；中文译名沿用仓库地形条目「阿特巴什山」（Wikidata zh 作「阿特巴希」）",
   },
+  {
+    id: "kara-balta", nameZh: "卡拉巴尔塔", nameEn: "Kara-Balta", country: "kyrgyzstan", tier: "notable", zone: "kg-north", admin1Zh: "楚河州", admin1En: "Chuy Region",
+    lon: 73.8521, lat: 42.8016,
+    source: "卡拉巴尔塔市政府大楼 42.8016,73.8521（OSM way/176363638）；市域内的机场与直升机坪在 OurAirports 里均标 closed、25 km 内无有定期航班的机场，最近的是玛纳斯国际机场（BSZ）直线约 59 km —— 不填 airport；离国界约 28 km；与地形条目 chuy-valley、kyrgyz-ala-too、suusamyr-valley 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "toktogul", nameZh: "托克托古尔", nameEn: "Toktogul", country: "kyrgyzstan", tier: "notable", zone: "kg-west", admin1Zh: "贾拉拉巴德州", admin1En: "Jalal-Abad Region",
+    lon: 72.9397, lat: 41.8702,
+    source: "托克托古尔市政府 41.8702,72.9397（OSM way/191268826，office=government，与市政府官网公布的街名一致）；市域西边约 6.5 km 的机场 scheduled_service=no，不填 airport —— 直线最近的两个有定期航班的机场所在城市离国界都不足 10 km、仓库本来就不收，正文因此只写「进出靠公路」，不点名（见注释）；离国界约 71 km；与地形条目 toktogul-reservoir、naryn-river 互指（已有城市补充批，2026-09-16）",
+  },
 ];

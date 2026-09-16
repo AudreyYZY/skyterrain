@@ -372,6 +372,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "kg-north": { zh: "北部", en: "Northern Kyrgyzstan", order: 520 },
   "kg-issykkul": { zh: "伊塞克湖", en: "Issyk-Kul", order: 521 },
   "kg-inner": { zh: "内天山", en: "Inner Tian Shan", order: 522 },
+  "kg-west": { zh: "西部", en: "Western Kyrgyzstan", order: 523 },
   "lk-west": { zh: "西部海岸", en: "West coast", order: 530 },
   "lk-hill": { zh: "中央山地", en: "Hill Country", order: 531 },
   "lk-dry-zone": { zh: "干区（古都一带）", en: "Dry Zone", order: 532 },

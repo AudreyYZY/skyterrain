@@ -171,4 +171,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–September is the time to go; Tash-Rabat is at about 3,200 metres and cold even in summer, so watch for altitude sickness and bring warm clothes; mountain roads may be difficult in winter.",
   },
+
+  "kara-balta": {
+    // 全七段 sources: 同中文侧（National Statistical Committee table 825 at 1 January 2026, tier 1, digit-checked against Bishkek in the repo; the same table's ordering shows it ranked alongside the districts rather than inside one; OurAirports for the closed airfields and the Manas flight board, tier 1/3; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Kara-Balta stands in the western Chuy valley of northern Kyrgyzstan, at the northern foot of the Kyrgyz Range, with 61,364 residents at the start of 2026 (National Statistical Committee). Its position is the whole point of it: the Bishkek-Osh road leaves the valley here and climbs south along the Kara-Balta river towards the Töö-Ashuu pass — coming up from the flat country, this is the last town of any size before the mountains.",
+    howItWorks:
+      "A Kyrgyz \"city\" is not one tier but two, and Kara-Balta is a specimen of the first. The statistical tables list it alongside Tokmok and Kant ahead of the districts, level with them — a city of regional status, counted inside no district at all. Yet the administration of Jaiyl district sits in this very town: two governments in one place, one running the town, the other running the countryside around it but not the town, counted separately in the tables. Toktogul, written in the same batch, is the mirror image — a city listed inside its district. None of this is visible on a map, but it decides which door you go to. The town itself is a long strip along the road and the railway: the road towards the pass is the spine, the town hall stands on it, the station is a kilometre or so north, and the housing is north of that again. The living radius is set by that road — an hour north to the capital, and straight into the mountains as soon as you turn south.",
+    layout:
+      "The town hall stands on the main axis, with the monument at the town entrance right in front of it. The railway station is about 1.7 km north, with the housing beyond it. Manas International Airport is about 59 km north-east, and the Suusamyr valley about 76 km south over the Töö-Ashuu pass.",
+    gettingAround:
+      "Kara-Balta has no airport with scheduled flights — the airfield and helipads within the town are closed, and the nearest airport with scheduled service is Manas International, about 59 km away in a straight line. Getting in and out means the Bishkek-Osh road or the commuter train to Bishkek. The climate is temperate continental with cold winters, and the pass to the south is often closed in winter, so check road conditions before setting out.",
+    culture:
+      "Kyrgyz and Russian are spoken. Since 1 January 2026 restaurants in Kyrgyzstan may no longer add a separate service charge.",
+    seeAndDo:
+      "The town has few built sights of its own; what it is good for is as a gateway — south over the Töö-Ashuu pass into the Suusamyr valley, or north into the Chuy valley and towards the capital. In town, the streets and markets along the main axis are what there is.",
+    whenAndTips:
+      "May to September suits going south into the mountains. The pass can close or be restricted for snow in winter and spring, so check road conditions whatever the season; lodging and supplies in town are limited, and most people treat this as a stop on the way.",
+  },
+
+  toktogul: {
+    // 全七段 sources: 同中文侧（table 825, Jalal-Abad page, at 1 January 2026, tier 1 — the town's own website still carries an older, pre-boundary-reform figure and the two are deliberately not compared in one sentence; both the town and the district administration websites for the two seats, tier 1; OurAirports, tier 3; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Toktogul lies in western Kyrgyzstan in the Ketmen-Töbö basin on the upper Naryn, with 37,869 residents at the start of 2026 (National Statistical Committee, on the post-reform boundaries). The Bishkek-Osh road drops into the basin here after crossing the Ala-Bel pass and threading the Chychkan gorge; the low ground of the basin holds the large reservoir of the same name.",
+    howItWorks:
+      "Kara-Balta, written in the same batch, is a city of regional status; Toktogul is the opposite — the tables list it inside Toktogul district, a district-level town. So this town of thirty-odd thousand also has two governments, but the relationship is reversed: the town administration runs the town, while the district's state administration runs the villages of the whole district, and that district was itself formed in 1998 by merging two others, with its seat here. A Kyrgyz \"city\" therefore has to be read two ways, depending on whether the table puts it before its district or inside it. The shape of the town is set by the basin and the road: houses on the gentle slope on the northern side, the road entering from the gorge mouth to the north-east and running through towards the south-west. The living radius is almost entirely that road — it is the only through route into the basin, north over the passes towards the capital, south and down towards the edge of the Fergana valley.",
+    layout:
+      "The town administration is in the centre. The mouth of the Chychkan is about 3 km due west, the centre of the Ketmen-Töbö basin about 4.5 km south-west, and the near shore of the Toktogul Reservoir about 9 km south-west. The Alatai State Nature Park is about 63 km west-north-west.",
+    gettingAround:
+      "Toktogul has no airport with scheduled flights — there is an airfield about 6.5 km west of the town, but nothing scheduled uses it. Getting in and out is almost entirely the Bishkek-Osh road: north over the Ala-Bel and Töö-Ashuu passes, or south down through the gorge. The climate is temperate continental, hot in the basin in summer and cold in winter, with the passes often closed by snow.",
+    culture:
+      "Kyrgyz and Russian are spoken. Since 1 January 2026 restaurants in Kyrgyzstan may no longer add a separate service charge.",
+    seeAndDo:
+      "There are no built antiquities here; what there is to look at is landscape — the basin and the mountains around it, the water of the reservoir, and the Chychkan gorge on the way in. The Alatai State Nature Park lies to the west-north-west.",
+    whenAndTips:
+      "May to September is the most comfortable; both passes can close in winter, so checking road conditions before setting out is not optional. Expect small-town lodging and supplies — this is a staging point on a long road, where most people spend a night or restock and move on.",
+  },
 };

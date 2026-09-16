@@ -58,4 +58,14 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "科绍伊—科尔贡遗址与博物馆", nameEn: "Koshoy-Korgon ruins and museum", lon: 75.6981, lat: 41.1238, kind: "landmark" },
     { nameZh: "塔什拉巴特商队驿站", nameEn: "Tash-Rabat caravanserai", lon: 75.2887, lat: 40.8231, kind: "landmark" },
   ],
+  "kara-balta": [
+    { nameZh: "城市入口处的纪念碑", nameEn: "Monument at the town entrance", lon: 73.85289, lat: 42.80116, kind: "landmark" },
+    { nameZh: "卡拉巴尔塔火车站", nameEn: "Kara-Balta railway station", lon: 73.85895, lat: 42.81602, kind: "transport" },
+  ],
+  toktogul: [
+    { nameZh: "奇奇坎河河口", nameEn: "Mouth of the Chychkan", lon: 72.90355, lat: 41.87003, kind: "nature" },
+    { nameZh: "克特门-托别盆地", nameEn: "Ketmen-Töbö basin", lon: 72.91667, lat: 41.83333, kind: "nature" },
+    { nameZh: "托克托古尔水库", nameEn: "Toktogul Reservoir", lon: 72.8742, lat: 41.8064, kind: "nature" },
+    { nameZh: "阿拉泰国家自然公园", nameEn: "Alatai State Nature Park", lon: 72.19984, lat: 41.9912, kind: "nature" },
+  ],
 };

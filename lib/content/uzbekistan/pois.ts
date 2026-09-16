@@ -61,4 +61,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "努尔古堡遗址", nameEn: "Nur fortress ruins", lon: 65.6799, lat: 40.554, kind: "landmark" },
     { nameZh: "萨尔米什赛岩画", nameEn: "Sarmishsay petroglyphs", lon: 65.6036, lat: 40.3002, kind: "landmark" },
   ],
+  namangan: [
+    { nameZh: "穆拉·吉尔吉斯经学院", nameEn: "Mulla Qirgʻiz Madrasah", lon: 71.68116, lat: 41.00256, kind: "landmark" },
+    { nameZh: "穆拉·博佐尔·奥洪礼拜寺与陵墓", nameEn: "Mulla Bozor Oxund mosque and mausoleum", lon: 71.67465, lat: 41.01128, kind: "landmark" },
+    { nameZh: "马夫隆布瓦陵", nameEn: "Mavlonbuva Mausoleum", lon: 71.6329, lat: 40.9998, kind: "landmark" },
+    { nameZh: "巴布尔公园", nameEn: "Bobur Park", lon: 71.67083, lat: 40.99806, kind: "nature" },
+    { nameZh: "「传说之谷」公园", nameEn: "Afsonalar Vodiysi park", lon: 71.61694, lat: 41.00333, kind: "nature" },
+    { nameZh: "州历史与文化博物馆", nameEn: "Regional museum of history and culture", lon: 71.66895, lat: 40.99866, kind: "landmark" },
+  ],
+  jizzakh: [
+    { nameZh: "帖木儿门（铁门）", nameEn: "Amir Temur Darvozasi (Tamerlane's Gate)", lon: 67.69228, lat: 40.07193, kind: "nature" },
+    { nameZh: "奥利姆忠与祖尔菲娅文学博物馆", nameEn: "Olimjon and Zulfiya literary museum", lon: 67.81542, lat: 40.14582, kind: "landmark" },
+    { nameZh: "老城集市", nameEn: "Old-town bazaar", lon: 67.83075, lat: 40.1568, kind: "district" },
+    { nameZh: "圣尼古拉教堂", nameEn: "Church of St Nicholas", lon: 67.81981, lat: 40.10636, kind: "landmark" },
+    { nameZh: "吉扎克火车站", nameEn: "Jizzakh railway station", lon: 67.84253, lat: 40.0983, kind: "transport" },
+  ],
 };

@@ -171,4 +171,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "April–May and September–October are the most comfortable; summers on the desert edge are fiercely hot and winters cold. Accommodation in town is limited, so arrange cars and guides for the petroglyphs and mountain villages in advance.",
   },
+
+  namangan: {
+    // 全七段 sources: 同中文侧（State Statistics Committee open dataset 246 at the start of 2026, tier 1, digit-checked 8/8 against the repo's existing Uzbek cities; the rank is written with its caliber; the two city districts of 2020 and 2021 are tier-2 relays of the Senate decisions; uzairports.com for NMA, tier 1; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Namangan lies on the northern rim of the Fergana valley in eastern Uzbekistan, with about 728,000 residents at the start of 2026 (State Statistics Committee) — on that table's city-administrative measure, the second most populous city in the country. It sits on a fan of ground built up by a tributary of the Syr Darya; the old town centres on the quarters and madrasah around Chorsu, with orchards and nurseries all around, and the local horticulture is well known.",
+    howItWorks:
+      "What trips people up in Namangan is the word \"district\", because it means two things here at once. The city has two districts of its own — Davlatobod, created in 2020, and Yangi Namangan, created in 2021 — but both are on the outskirts, and between them they took 49 of the city's 79 mahallas; the remaining thirty-odd, including the old centre and the ground the city administration stands on, belong to no district at all and are run by the city directly. Meanwhile there is a separate government called Namangan District, seated at Toshbuloq outside the city, which runs the surrounding countryside — and the city does not belong to it; the statistical tables carry the two as separate lines. Below all that is the mahalla, whose chairman is elected and which is not a state body, and that is the level people actually use when they give an address. So the full address language is the mahalla first and the district second — and when someone says \"the district\", it is worth working out whether they mean one inside the city or the one outside it.",
+    layout:
+      "The city administration is in the centre. The regional museum of history and culture is about 0.3 km south-west and Bobur Park about 0.3 km south-west; the Mulla Qirgʻiz Madrasah is about 0.8 km east-north-east and the Mulla Bozor Oxund mosque and mausoleum about 1.2 km due north. The Mavlonbuva Mausoleum is about 3.3 km due west and the Afsonalar Vodiysi park about 4.6 km due west.",
+    gettingAround:
+      "Namangan International Airport is about 10 km due west in a straight line, with scheduled passenger flights. Rail and road run to the other towns of the valley and towards the capital. The climate is temperate continental, hot and dry in summer and not severely cold in winter. Visitors must register their stay within three days of arrival.",
+    culture:
+      "Uzbek is spoken, with Russian also in use. The city is known for its horticulture and its flowers and trees. Restaurants may charge a service fee, normally shown in the menu or on the bill.",
+    seeAndDo:
+      "The Mulla Qirgʻiz Madrasah in the old town; the Mulla Bozor Oxund mosque and mausoleum to the north; the Mavlonbuva Mausoleum to the west; Bobur Park and, further west, the Afsonalar Vodiysi park; and the regional museum of history and culture.",
+    whenAndTips:
+      "April to May and September to October are the most comfortable; high summer is very hot. The sights are strung out over a few kilometres east to west, so allow half a day to a day, and count travel in and out of the valley separately.",
+  },
+
+  jizzakh: {
+    // 全七段 sources: 同中文侧（dataset 246 at the start of 2026, tier 1, same 8/8 digit check; the district around the city has been named Sharof Rashidov since 2017 and is carried as a separate line from the city, tier 1/3; uzairports.com's airport list and flight board for Zomin, tier 1 — note Zomin is absent from OurAirports altogether, another instance of that dataset lagging; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Jizzakh lies in central Uzbekistan between the northern foot of the Turkestan Range and the Mirzachul plain, with about 203,000 residents at the start of 2026 (State Statistics Committee), and is the seat of Jizzakh Region. The Tashkent-Samarkand road and railway both pass through; a dozen kilometres to the south-west, the Sanzar river cuts its narrowest defile at the foot of the hills — the pass long known as Tamerlane's Gate.",
+    howItWorks:
+      "The district that surrounds Jizzakh is not called Jizzakh District — since 2017 it has been Sharof Rashidov District. City and district are two governments, the city belongs to no district, and the statistical tables carry them as two separate lines; so whether \"Jizzakh\" means the town or the countryside around it depends on the sentence. The second counter-intuitive thing is about travel: the only airport in the region with scheduled passenger flights is not at the regional seat but at Zomin, some fifty kilometres to the south-east on the way to the mountain sanatoria — the seat itself has no usable civil airport, and gets by on the trunk road and the railway. The shape of the town follows that trunk route: the new town and the regional administration on one side of it, the old town and its bazaars two or three kilometres north, and the railway station four kilometres south — three centres that do not coincide, which is why people say whether they mean the old town or the new one before they give a street.",
+    layout:
+      "The regional administration is in the centre beside the trunk route. The polytechnic institute is about 1.1 km east-south-east, the Olimjon and Zulfiya literary museum about 1.7 km north-north-west, the old-town bazaar about 2.8 km north-east, the Church of St Nicholas about 2.9 km due south and the railway station about 4.1 km south-south-east. Tamerlane's Gate is about 13 km west-south-west.",
+    gettingAround:
+      "There is no airport with scheduled flights within Jizzakh; the region's only airport with scheduled passenger service is at Zomin, about 52 km south-east in a straight line and not in this city. The Tashkent-Samarkand main line runs through with a passenger station here, and the road carries the rest. The climate is temperate continental, hot and dry in summer. Visitors must register their stay within three days of arrival.",
+    culture:
+      "Uzbek is spoken, with Russian also in use. Restaurants may charge a service fee, normally shown in the menu or on the bill.",
+    seeAndDo:
+      "The defile and rock walls of Tamerlane's Gate to the south-west; the bazaars of the old town; the Olimjon and Zulfiya literary museum; the architecture of the Church of St Nicholas; and, further south-east, the mountains towards Zomin.",
+    whenAndTips:
+      "April to May and September to October are the most comfortable; high summer on the plain is very hot. Tamerlane's Gate and the Zomin direction are both tens of kilometres out and need a hired car or a long-distance bus, half a day each; the town itself takes half a day.",
+  },
 };
