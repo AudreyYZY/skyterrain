@@ -69,4 +69,15 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "ZRH", nameZh: "苏黎世机场", nameEn: "Zurich Airport", lon: 8.5492, lat: 47.4647 },
     source: "沙夫豪森老城 Fronwagplatz 47.6970,8.6335（OSM）；ZRH 直线约 27 km（按 OurAirports 算）；莱茵瀑布北岸属诺伊豪森市镇、离老城直线约 2.5 km，与地形条目 rhine-falls 互相点名（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "neuchatel", nameZh: "纳沙泰尔", nameEn: "Neuchâtel", country: "switzerland", tier: "notable", zone: "ch-plateau", admin1Zh: "纳沙泰尔州", admin1En: "Neuchâtel",
+    lon: 6.9285, lat: 46.9907,
+    source: "纳沙泰尔老城 Place des Halles 46.9907,6.9285（OSM Nominatim）；本地机场只有通用航空，不填 airport（比照仓库洛桑 / 卢塞恩的既有做法）；火车到日内瓦机场约 1 小时 26 分（瑞士开放时刻表，2 级，2026-09 样本）；2021-01-01 与三个邻镇合并（市官网，1 级）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "appenzell", nameZh: "阿彭策尔", nameEn: "Appenzell", country: "switzerland", tier: "notable", zone: "ch-plateau", admin1Zh: "阿彭策尔内罗德州", admin1En: "Appenzell Innerrhoden",
+    lon: 9.4076, lat: 47.3315,
+    airport: { iata: "ZRH", nameZh: "苏黎世机场", nameEn: "Zurich Airport", lon: 8.5492, lat: 47.4647 },
+    source: "阿彭策尔兰茨盖迈因德广场 47.3315,9.4076（OSM）；ZRH 直线约 66 km、火车换 1 次约 1 小时 40 分（算 + 瑞士开放时刻表）；更近的圣加仑—阿尔滕莱茵机场 ACH 直线约 20 km、定期航线很少（上一批已核）；本州的「市镇」一级叫区（Bezirk），BFS 表里的 3101 Appenzell 就是这一行（已有城市补充批，2026-09-16）",
+  },
 ];

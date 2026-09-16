@@ -43,4 +43,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "蒙多夫温泉疗养中心与温泉公园", nameEn: "Mondorf Domaine Thermal and spa park", lon: 6.2819, lat: 49.5017, kind: "landmark" },
     { nameZh: "圣米迦勒教堂", nameEn: "Church of St Michael", lon: 6.2706, lat: 49.5059, kind: "landmark" },
   ],
+  differdange: [
+    { nameZh: "迪弗当日城堡（大学校区）", nameEn: "Château de Differdange", lon: 5.8892, lat: 49.5213, kind: "landmark" },
+    { nameZh: "卢森堡科学中心", nameEn: "Luxembourg Science Center", lon: 5.8943, lat: 49.5221, kind: "landmark" },
+    { nameZh: "旧市政厅区域文化中心", nameEn: "Aalt Stadhaus cultural centre", lon: 5.8875, lat: 49.521, kind: "landmark" },
+    { nameZh: "拉索瓦日村", nameEn: "Lasauvage", lon: 5.8358, lat: 49.5221, kind: "district" },
+    { nameZh: "钢厂区", nameEn: "Steelworks", lon: 5.9, lat: 49.5303, kind: "district" },
+  ],
+  mersch: [
+    { nameZh: "梅尔施城堡（市政厅）", nameEn: "Mersch Castle (town hall)", lon: 6.1032, lat: 49.7479, kind: "landmark" },
+    { nameZh: "圣米歇尔塔", nameEn: "Tour Saint-Michel", lon: 6.1028, lat: 49.7464, kind: "landmark" },
+    { nameZh: "国家文学中心", nameEn: "National Literature Centre", lon: 6.1082, lat: 49.751, kind: "landmark" },
+    { nameZh: "舍恩费尔斯城堡", nameEn: "Schoenfels Castle", lon: 6.0934, lat: 49.7197, kind: "landmark" },
+    { nameZh: "霍伦费尔斯城堡（邻镇）", nameEn: "Hollenfels Castle (neighbouring commune)", lon: 6.0516, lat: 49.7121, kind: "landmark" },
+  ],
 };

@@ -95,4 +95,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "莱茵瀑布", nameEn: "Rhine Falls", lon: 8.6149, lat: 47.6784, kind: "nature" },
     { nameZh: "莱茵河畔施泰因", nameEn: "Stein am Rhein", lon: 8.8591, lat: 47.6596, kind: "landmark" },
   ],
+  neuchatel: [
+    { nameZh: "纳沙泰尔城堡（州政府与州议会所在地）", nameEn: "Château de Neuchâtel", lon: 6.927, lat: 46.9922, kind: "landmark" },
+    { nameZh: "教务教堂", nameEn: "Collégiale de Neuchâtel", lon: 6.9263, lat: 46.992, kind: "landmark" },
+    { nameZh: "艺术与历史博物馆", nameEn: "Museum of Art and History", lon: 6.9354, lat: 46.9916, kind: "landmark" },
+    { nameZh: "拉泰尼姆考古博物馆（邻镇）", nameEn: "Laténium (neighbouring commune)", lon: 6.9712, lat: 47.0073, kind: "landmark" },
+    { nameZh: "凡岩谷", nameEn: "Creux du Van", lon: 6.728, lat: 46.933, kind: "nature" },
+  ],
+  appenzell: [
+    { nameZh: "兰茨盖迈因德广场", nameEn: "Landsgemeindeplatz", lon: 9.4076, lat: 47.3315, kind: "district" },
+    { nameZh: "主街的彩绘立面", nameEn: "Painted façades of the Hauptgasse", lon: 9.4093, lat: 47.3307, kind: "district" },
+    { nameZh: "阿彭策尔博物馆", nameEn: "Museum Appenzell", lon: 9.4099, lat: 47.3309, kind: "landmark" },
+    { nameZh: "森蒂斯", nameEn: "Säntis", lon: 9.343, lat: 47.249, kind: "nature" },
+    { nameZh: "埃本阿尔卑缆车站（瓦瑟劳恩）", nameEn: "Ebenalp cable car at Wasserauen", lon: 9.4201, lat: 47.2857, kind: "nature" },
+  ],
 };
