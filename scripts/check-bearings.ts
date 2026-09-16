@@ -82,7 +82,7 @@ for (const c of CITY_REGISTRY) {
       if (!poi) continue;                       // 不在 POI 表里 / 不同名 → 不猜、不比
       if (name === c.nameZh || c.nameZh.startsWith(name!)) continue;  // 主语是这座城自己，不是地标
       const claimed = Number(numStr);
-      if (!(claimed >= 1 && claimed <= 500)) continue;
+      if (!(claimed >= 0.2 && claimed <= 500)) continue;
       const want = DIRS.find(([d]) => d === dirWord)![1];
       const real = km(c.lat, c.lon, poi.lat, poi.lon);
       const brg = bearing(c.lat, c.lon, poi.lat, poi.lon);
@@ -94,12 +94,22 @@ for (const c of CITY_REGISTRY) {
           `实算 ${brg.toFixed(0)}°（差 ${angDiff(want, brg).toFixed(0)}°）\n     …${ctx}…`,
         );
       }
-      // 绝对差 ≥3 km 才报：短距离上「城市坐标取在哪个点」本身就能差出一两公里，
+      // 长距离：绝对差 ≥3 km 才报 —— 短距离上「城市坐标取在哪个点」本身就能差出一两公里，
       // 「圣泽诺大殿在老城西面约 1 公里」对直线 1.2 公里这种不值得占清单。
-      if (Math.abs(claimed - real) >= 3 && (claimed < real * 0.85 || claimed > real * 2.2)) {
+      const farWrong = Math.abs(claimed - real) >= 3 && (claimed < real * 0.85 || claimed > real * 2.2);
+      // 短距离：改按**倍数**判（2026-09-16 补）。塔尔迪库尔干把「0.21 / 0.18 公里」写成
+      // 「0.8 / 0.9 公里」差了 4–5 倍，却因为 ① 声称值 <1 km 被整条跳过、② 绝对差不到 3 km
+      // 而两条规则都没碰到 —— 成因是那批的距离表**原点不是条目采用的城市中心**，
+      // 偏差方向一致所以方位角全对，`check:layout-bearings` 也一声没响（见 known-errors）。
+      // 0.5 km 的绝对下限保住「城市坐标取在哪个点」的合理噪声，2.5 倍保住口语粗度。
+      const nearWrong =
+        claimed < 3 &&
+        Math.abs(claimed - real) >= 0.5 &&
+        (claimed >= real * 2.5 || claimed <= real * 0.4);
+      if (farWrong || nearWrong) {
         distHits.push(
-          `⚑ ${c.id}「${c.nameZh}」[${f}] ${poi.nameZh}：正文 ${claimed} 公里，直线 ${real.toFixed(1)} 公里` +
-          `（${claimed < real ? "**比直线还短 —— 公路里程不可能短于直线**" : "超过直线两倍以上"}）\n     …${ctx}…`,
+          `⚑ ${c.id}「${c.nameZh}」[${f}] ${poi.nameZh}：正文 ${claimed} 公里，直线 ${real.toFixed(2)} 公里` +
+          `（${claimed < real ? "**比直线还短 —— 公路里程不可能短于直线**" : farWrong ? "超过直线两倍以上" : `差 ${(claimed / real).toFixed(1)} 倍`}）\n     …${ctx}…`,
         );
       }
     }
@@ -119,7 +129,8 @@ for (const l of [...dirHits, ...distHits]) console.log("\n" + l);
 if (dirHits.length || distHits.length) {
   console.log(
     "\n⚑ 要人看：地标可能有多个入口、城市坐标可能取在老城而正文从新区算起。" +
-    "方位容差已放到 67.5°（「西」与「西北」这种口语粗度不报），距离容差 0.85×–2.2× 且绝对差 ≥3 km。\n" +
+    "方位容差已放到 67.5°（「西」与「西北」这种口语粗度不报）；距离：≥3 km 的差按 0.85×–2.2× 判，\n" +
+    "  声称值不到 3 km 的改按倍数判（2.5 倍以上或 0.4 倍以下、且绝对差 ≥0.5 km），下限从 1 km 放到 0.2 km。\n" +
     "**这是清单不是门禁，永远 exit 0。**",
   );
 }
