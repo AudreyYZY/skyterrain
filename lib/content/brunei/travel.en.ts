@@ -139,4 +139,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "It is hot and wet all year, and forest tracks are slippery after rain. Brunei police advise against hiking alone in the forest; phone coverage here is patchy, so tell someone your plans and sort out fuel before heading in.",
   },
+
+  gadong: {
+    // 全七段 sources: 同中文侧（2021 Census of Population and Housing, Annex B, DEPS, tier 1 — the same table the repo's existing Brunei entries use, digit-checked against Sengkurong, Mentiri, Pekan Muara, Mukim Serasa and Mukim Labi; Statistical Yearbook 2025 for the 100.36 km² municipal area, tier 1; the 2007 boundary change is NOT written, being tier 2-3 only and absent from the municipal board's own history page; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Gadong lies in the western suburbs of Brunei's capital, with 73,491 people across the two mukims that carry the name at the 2021 census (Department of Economic Planning and Statistics). When people in Brunei say they are going into town, this is usually where they mean: the malls, the night market, the restaurants and the offices cluster where a few roads meet, while the capital's old centre is some kilometres to the south-east.",
+    howItWorks:
+      "Gadong is what people in Brunei mean by \"town\", and yet it is not a town in any administrative sense — it is part of the municipal area of Bandar Seri Begawan. That produces an unusual mismatch: the capital's actual central district had 314 residents at the 2021 census, while the people and the shops are a few kilometres away under this other name. The municipal area runs to just over a hundred square kilometres and is run by the Bandar Seri Begawan Municipal Board under the Ministry of Home Affairs; the country has only three municipal boards in total, and everywhere else day-to-day matters run through the district office and the mukim and village heads. So the answer to who runs Gadong is the capital's municipal board — not some Gadong council, because no such thing exists. Addresses are given by mukim and kampong and then the road, and the commonest misconception among visitors is that the old quarter near the river is where the city's life happens.",
+    layout:
+      "The Mall and the roads around it form the centre of Gadong, with the night market about 0.2 km east-south-east. The Jame' 'Asr Hassanil Bolkiah Mosque is about 1 km south-south-east and the Kiulap commercial area about 1.6 km south-east. Brunei International Airport is about 4.4 km north-north-east, and the capital's old centre about 3.3 km south-east.",
+    gettingAround:
+      "Brunei International Airport is about 4.4 km north-north-east in a straight line — closer than the capital's old centre. Almost everything here assumes a car, public transport is infrequent, and the only ride-hailing service available is the local one. The climate is equatorial, hot and wet all year. The whole country closes between noon and 2 pm on Fridays.",
+    culture:
+      "Malay is spoken, with English widely used. Gadong is the country's commercial and eating-out centre, and the night market is an everyday habit rather than a sight. Dress modestly at the mosque, and check on the spot for the hours when non-Muslim visitors may enter. Brunei and Singapore dollars are interchangeable at par.",
+    seeAndDo:
+      "The Mall and the shops around it; the night market in the evening for grilled chicken and kuih; the architecture of the Jame' 'Asr Hassanil Bolkiah Mosque; and the shops and restaurants of Kiulap to the south-east.",
+    whenAndTips:
+      "Any time of year, with thundery afternoons. Plan around the Friday closure from noon to 2 pm; the night market only opens in the evening, and by day there is nothing to see but empty stalls. The area was built around driving, so even short hops are easier by car.",
+  },
+
+  jerudong: {
+    // 全七段 sources: 同中文侧（2021 Census Annex B for the village and mukim figures, tier 1, same digit check as the Gadong entry; Brunei Tourism place pages for Jerudong Park, Bukit Shahbandar's 70 ha and the Empire, tier 1 — the sea wording in the tourism board's own text is deliberately dropped under the Brunei red lines, and the park's "largest in Borneo" is written with that attribution; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Jerudong lies on the coast about twelve kilometres north-west of Brunei's capital, with 3,650 people in the village at the 2021 census (Department of Economic Planning and Statistics). The name is known to everyone in the country — the theme park, the beach, the forest park on the ridge and the large hotel by the shore all carry it — while administratively it is only a village within Mukim Sengkurong, which has over forty thousand people.",
+    howItWorks:
+      "Jerudong and Gadong, written in the same batch, are mirror images. Gadong is a commercial district inside the capital's municipal area, famous but with no government of its own; Jerudong is just as well known, yet it is not even a mukim — only a village within Mukim Sengkurong, with some 3,650 people at the 2021 census against the mukim's forty thousand. And it lies outside the capital's municipal area: Brunei has only three municipal boards and Jerudong belongs to none of them, so day-to-day matters run through the district office and the mukim and village heads. The answer to \"what is Jerudong\" therefore differs sharply between the map and ordinary speech: in speech it is a stretch of resorts and amusements, on paper it is the name of a village. The living radius is the coast road, which strings all of it together — and without a car you will not get to any of it.",
+    layout:
+      "Measured from the middle of the Jerudong area, the theme park is about 0.8 km south-west, the Bukit Shahbandar forest park about 1.8 km north-east, Jerudong beach about 2 km due north, and the Empire country club and its golf course about 3.6 km north-north-east. Brunei International Airport is about 9.6 km due east and the capital's old centre about 12.3 km east-south-east.",
+    gettingAround:
+      "Brunei International Airport is about 9.6 km due east in a straight line. The area assumes a car, public transport is infrequent, and the only ride-hailing service available is the local one. The climate is equatorial, hot and wet all year. The whole country closes between noon and 2 pm on Fridays.",
+    culture:
+      "Malay is spoken, with English widely used. This is where people from the capital come to relax, and the beach and the parks are busy at weekends. Brunei and Singapore dollars are interchangeable at par.",
+    seeAndDo:
+      "Jerudong Park, which the tourism board calls the largest amusement park in Borneo; the rainforest trails and lookouts of the Bukit Shahbandar park, some 70 hectares; sunset on Jerudong beach; and the golf course and shore around the Empire country club.",
+    whenAndTips:
+      "Any time of year, with thundery afternoons. Opening days and prices at the theme park change, so check official notices before going; the Bukit Shahbandar trails climb and are slippery after rain, so wear shoes for it. The country closes between noon and 2 pm on Fridays.",
+  },
 };

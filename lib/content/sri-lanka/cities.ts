@@ -68,4 +68,14 @@ export const CITIES: CityEntry[] = [
     lon: 81.0000, lat: 7.9333,
     source: "波隆纳鲁沃 7.9333,81.0000（Wikidata，落在古城区与帕拉克拉马湖之间）；UNESCO 201「波隆纳鲁沃古城」1982（1 级）；本地没有定期航班的机场，CMB 直线约 149 km，按既有斯里兰卡口径不填 airport；离亭可马里、拜蒂克洛两城直线均 > 70 km（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "ratnapura", nameZh: "拉特纳普勒", nameEn: "Ratnapura", country: "sri-lanka", tier: "major", zone: "lk-hill", admin1Zh: "萨伯勒格穆沃省", admin1En: "Sabaragamuwa Province",
+    lon: 80.4023, lat: 6.68037,
+    source: "拉特纳普勒 6.68037,80.40230（OSM node/637897018 place=city；市政厅节点只在 0.23 km 外，取哪个都不影响距离表）；本地没有定期航班的机场，国际航班走科伦坡的班达拉奈克国际机场、直线约 80 km，按斯里兰卡除科伦坡外一律不填的做法不填 airport；中文另有「拉特纳普拉」一说，本库按与「库鲁内格勒」同一套音节处理取「拉特纳普勒」；与地形条目 adams-peak-range、sinharaja-forest 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "kurunegala", nameZh: "库鲁内格勒", nameEn: "Kurunegala", country: "sri-lanka", tier: "major", zone: "lk-dry-zone", admin1Zh: "西北省", admin1En: "North Western Province",
+    lon: 80.36491, lat: 7.48705,
+    source: "库鲁内格勒 7.48705,80.36491（OSM node/2907017040 place=city；OSM 上没有 amenity=townhall 节点，与拉特纳普勒统一取 place=city）；20 km 内没有任何机场，国际航班走班达拉奈克国际机场、直线约 63 km，不填 airport；⚠️ **该市市议会的 .mc.gov.lk 域名已被无关的第三方站点占用，任何情况下不作来源**；与地形条目 sri-lanka-dry-zone-plain 互指（已有城市补充批，2026-09-16）",
+  },
 ];

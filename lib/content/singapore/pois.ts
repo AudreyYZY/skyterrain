@@ -53,4 +53,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "樟宜角海岸栈道", nameEn: "Changi Point Coastal Walk", lon: 103.98276, lat: 1.39262, kind: "nature" },
     { nameZh: "乌敏岛", nameEn: "Pulau Ubin", lon: 103.9648, lat: 1.4103, kind: "nature" },
   ],
+  "tiong-bahru": [
+    { nameZh: "中峇鲁巴刹与熟食中心", nameEn: "Tiong Bahru Market & Food Centre", lon: 103.83255, lat: 1.28479, kind: "district" },
+    { nameZh: "成保茶园", nameEn: "Seng Poh Tea Garden", lon: 103.83113, lat: 1.28379, kind: "nature" },
+    { nameZh: "中峇鲁防空洞", nameEn: "Tiong Bahru air-raid shelter", lon: 103.83084, lat: 1.28342, kind: "landmark" },
+    { nameZh: "齐天宫", nameEn: "Qi Tian Gong", lon: 103.83434, lat: 1.28385, kind: "landmark" },
+    { nameZh: "中峇鲁公园", nameEn: "Tiong Bahru Park", lon: 103.8244, lat: 1.28778, kind: "nature" },
+    { nameZh: "中峇鲁地铁站", nameEn: "Tiong Bahru MRT station", lon: 103.8272, lat: 1.2861, kind: "transport" },
+  ],
+  punggol: [
+    { nameZh: "可尼岛公园", nameEn: "Coney Island Park", lon: 103.92147, lat: 1.40942, kind: "nature" },
+    { nameZh: "榜鹅水道公园", nameEn: "Punggol Waterway Park", lon: 103.90568, lat: 1.40934, kind: "nature" },
+    { nameZh: "我的水道@榜鹅", nameEn: "My Waterway@Punggol", lon: 103.9004, lat: 1.40896, kind: "nature" },
+    { nameZh: "榜鹅数码园区", nameEn: "Punggol Digital District", lon: 103.90879, lat: 1.41281, kind: "district" },
+    { nameZh: "新加坡理工大学榜鹅校园", nameEn: "SIT Punggol Campus", lon: 103.91064, lat: 1.4127, kind: "landmark" },
+    { nameZh: "榜鹅角码头", nameEn: "Punggol Point Jetty", lon: 103.91065, lat: 1.42177, kind: "landmark" },
+  ],
 };

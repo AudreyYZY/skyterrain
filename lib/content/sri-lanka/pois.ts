@@ -75,4 +75,23 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "兰科特塔", nameEn: "Rankoth Vehera", lon: 81.0034, lat: 7.9582, kind: "landmark" },
     { nameZh: "伽尔寺", nameEn: "Gal Vihara", lon: 81.005, lat: 7.9659, kind: "landmark" },
   ],
+  ratnapura: [
+    { nameZh: "钟楼", nameEn: "Clock tower", lon: 80.40223, lat: 6.68023, kind: "landmark" },
+    { nameZh: "中央市场", nameEn: "Public market", lon: 80.40169, lat: 6.67968, kind: "district" },
+    { nameZh: "国家博物馆", nameEn: "National Museum Ratnapura", lon: 80.39956, lat: 6.68429, kind: "landmark" },
+    { nameZh: "萨伯勒格穆·马哈萨曼神庙", nameEn: "Sabaragamu Maha Saman Devalaya", lon: 80.37985, lat: 6.69049, kind: "landmark" },
+    { nameZh: "卡图加斯瀑布", nameEn: "Katugas Ella", lon: 80.39887, lat: 6.68678, kind: "nature" },
+    { nameZh: "博帕特瀑布", nameEn: "Bopath Ella", lon: 80.36921, lat: 6.80176, kind: "nature" },
+    { nameZh: "帕拉巴德勒亚当峰步道口", nameEn: "Palabaddala Sri Pada trailhead", lon: 80.47017, lat: 6.80777, kind: "nature" },
+    { nameZh: "辛哈拉加库达瓦入口", nameEn: "Sinharaja Kudawa entrance", lon: 80.42045, lat: 6.44297, kind: "nature" },
+  ],
+  kurunegala: [
+    { nameZh: "埃图加拉岩（象岩）", nameEn: "Athugala (Elephant Rock)", lon: 80.37113, lat: 7.48927, kind: "nature" },
+    { nameZh: "埃图加拉大佛", nameEn: "Athugala Buddha statue", lon: 80.37031, lat: 7.48523, kind: "landmark" },
+    { nameZh: "库鲁内格勒湖", nameEn: "Kurunegala Lake", lon: 80.36251, lat: 7.49472, kind: "nature" },
+    { nameZh: "拉贾皮希拉公园", nameEn: "Rajapihilla Park", lon: 80.36571, lat: 7.48515, kind: "nature" },
+    { nameZh: "中央市场", nameEn: "Central market", lon: 80.36532, lat: 7.48618, kind: "district" },
+    { nameZh: "埃特坎达寺", nameEn: "Ethkanda Rajamaha Viharaya", lon: 80.36845, lat: 7.48251, kind: "landmark" },
+    { nameZh: "亚帕胡沃岩堡遗址", nameEn: "Yapahuwa rock fortress", lon: 80.31169, lat: 7.81589, kind: "landmark" },
+  ],
 };

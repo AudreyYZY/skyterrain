@@ -139,4 +139,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "It is hot all year with afternoon thunderstorms. Bumboats leave only when twelve passengers have gathered, so allow waiting time both ways and follow the jetty's notices if no boat is running; barbecue pits at the beach park must be booked in advance.",
   },
+
+  "tiong-bahru": {
+    // 全七段 sources: 同中文侧（SingStat table C020123, General Household Survey 2025, resident population — citizens and permanent residents, rounded to 10 — tier 1, digit-checked against Katong, Chinatown, Changi Point and the city centre in the repo; URA conservation guidance and Roots.gov.sg for the SIT flats of 1936-1940 and the 2003 conservation designation, tier 1; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Tiong Bahru sits on the south-western edge of central Singapore, with about 12,150 residents in the subzone that holds the conservation area and about 36,000 across the three subzones that carry the name (Department of Statistics, 2025 household survey). Its signature is twenty blocks of pre-war flats with curved balconies and rounded stair towers, set among a market, pocket gardens and a few narrow streets.",
+    howItWorks:
+      "Tiong Bahru is usually introduced as Singapore's first public housing, but the Housing and Development Board did not build it — the board was founded in 1960, and these blocks went up between 1936 and 1940 under its predecessor, the Singapore Improvement Trust. More counter-intuitive is how they are held today: the twenty blocks are under URA conservation control, so façades, balconies and stairwells cannot simply be altered, yet the flats themselves are private property traded on the open market, an entirely different regime from the HDB blocks a few streets away. So in one neighbourhood the older-looking housing is the more expensive, the more freely traded and the harder to renovate. Singapore has no tier of local government, so \"who runs Tiong Bahru\" splits in two: how the buildings look is the planning authority's business, and who owns them is the owners'. People give addresses by block number — several blocks run in sequence — and the mistake newcomers make is treating the place as a sight, when it is first of all somewhere people live, better read at the market early or late than in the cafés.",
+    layout:
+      "The pocket garden at Seng Poh is the middle of it, with the market and food centre about 0.2 km north-east, Qi Tian Gong about 0.3 km due east, the air-raid shelter under a block about 0.1 km south-west and Tiong Bahru Park about 0.9 km west-north-west. The Tiong Bahru MRT station is about 0.5 km west-north-west and Havelock station a few hundred metres north-east. Chinatown is about 1.4 km south-east.",
+    gettingAround:
+      "Changi Airport is about 20 km east-north-east in a straight line. There is an East-West line station on the west side of the neighbourhood and a Thomson-East Coast line station to the north-east; the place is small enough that walking is the way to see it. The climate is equatorial, hot and wet all year.",
+    culture:
+      "English, Mandarin, Malay and Tamil are all in use. This is a residential quarter, and the market and food centre are the centre of daily life morning and evening. Bills normally already include service charge and GST, and tipping is not expected. The tap water is drinkable. Sockets are type G, the British three-pin.",
+    seeAndDo:
+      "The rows of pre-war flats with their curved balconies; the food centre at Tiong Bahru market; the pocket gardens around Seng Poh; the air-raid shelter beneath a block; Qi Tian Gong; and the walk north-west to Tiong Bahru Park.",
+    whenAndTips:
+      "Any time of year, with thundery afternoons. People live here, so mind their privacy when photographing and stay out of stairwells and courtyards; the market is busiest in the morning and many stalls shut by the afternoon.",
+  },
+
+  punggol: {
+    // 全七段 sources: 同中文侧（SingStat C020123, GHS 2025, resident population, tier 1, same digit check — note several subzones including Coney Island are shown as "-", meaning no data or too small to publish, not zero; NParks for Coney Island Park, 87 ha, opened October 2015, tier 1; JTC/URA for the digital district, first phase 21 ha from Q3 2024 within 50 ha overall, tier 1; SIT for the campus, first intake in the 2024 academic year, capacity 12,000, tier 1; LTA for the Punggol Coast station opening on 10 December 2024, tier 1; distances computed from this entry's own coordinates）。 核实 2026-09-16 当批。
+    identity:
+      "Punggol occupies the north-eastern corner of Singapore, with about 204,000 residents at the 2025 household survey (Department of Statistics), one of the most populous towns on the island. It is a 21st-century new town: an artificial waterway runs through the middle with housing on both banks, and beyond the eastern end lies a small island opened as a park.",
+    howItWorks:
+      "One planning area holds two hundred thousand residents and also a subzone with no resident figure at all — Coney Island, eighty-seven hectares, opened as a park only in October 2015, run by the parks board, barely two kilometres east of the town centre. The mistake newcomers make is taking Punggol for a stretch of new flats; it is really a sample of three agencies dividing one piece of ground: the flats belong to the housing board, the digital district to JTC (a first phase of twenty-one hectares phased in from the third quarter of 2024, within fifty overall), the campus to the Singapore Institute of Technology (first intake in the 2024 academic year, built for twelve thousand students), and the woodland and beaches on the island to the parks board. Singapore has no tier of local government, so who runs Punggol depends on which piece of ground you are standing on. People give addresses by subzone first and block number second, and the waterway is the reference line for every direction.",
+    layout:
+      "The town centre sits on the LRT loop. My Waterway@Punggol passes just west of it, with Punggol Waterway Park about 0.5 km due east, the digital district about 0.9 km east-north-east, the SIT campus about 1.1 km east-north-east, Punggol Point Jetty about 1.7 km north-east and Coney Island Park about 2.2 km due east. The island's western entrance is on the Punggol side and its eastern one towards Lorong Halus, while the Lorong Halus wetland itself is across the water in the Pasir Ris planning area.",
+    gettingAround:
+      "Changi Airport is about 11 km east-south-east in a straight line; Seletar Airport is closer still, about 4 km from the town centre, and also has scheduled flights, though on a much smaller scale. The North East MRT line reaches the town and was extended to Punggol Coast station in December 2024, with an LRT loop inside the town. The climate is equatorial, hot and wet all year.",
+    culture:
+      "English, Mandarin, Malay and Tamil are all in use. This is a new town, and daily life runs around the malls and hawker centres of the housing estates. Bills normally already include service charge and GST, and tipping is not expected. The tap water is drinkable. Sockets are type G, the British three-pin.",
+    seeAndDo:
+      "Walking or cycling along My Waterway@Punggol; Punggol Waterway Park; crossing east into the woodland and beaches of Coney Island Park; the shoreline around Punggol Point Jetty; and the newer cityscape of the digital district and the campus.",
+    whenAndTips:
+      "Any time of year, with thundery afternoons. Coney Island has no shops and limited shade, so carry water and sun protection, and motorised scooters are not allowed on it; the cycle paths along the waterway are a local weekend habit, with rental points on the town-centre side.",
+  },
 };

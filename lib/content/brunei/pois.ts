@@ -43,4 +43,16 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "特拉加瀑布", nameEn: "Wasai Teraja", lon: 114.43068, lat: 4.28762, kind: "nature" },
     { nameZh: "特拉加山", nameEn: "Bukit Teraja", lon: 114.43499, lat: 4.30575, kind: "nature" },
   ],
+  gadong: [
+    { nameZh: "The Mall 商场", nameEn: "The Mall, Gadong", lon: 114.91708, lat: 4.9061, kind: "district" },
+    { nameZh: "加东夜市", nameEn: "Gadong Night Market", lon: 114.91902, lat: 4.90509, kind: "district" },
+    { nameZh: "哈桑纳尔·博尔基亚清真寺", nameEn: "Jame' 'Asr Hassanil Bolkiah Mosque", lon: 114.92191, lat: 4.89798, kind: "landmark" },
+    { nameZh: "求乐坡商业区", nameEn: "Kiulap", lon: 114.92774, lat: 4.89698, kind: "district" },
+  ],
+  jerudong: [
+    { nameZh: "哲鲁东游乐园", nameEn: "Jerudong Park", lon: 114.83617, lat: 4.93369, kind: "landmark" },
+    { nameZh: "哲鲁东海滩", nameEn: "Jerudong beach", lon: 114.8391, lat: 4.95586, kind: "nature" },
+    { nameZh: "沙班达山休憩公园", nameEn: "Bukit Shahbandar Recreational Park", lon: 114.85377, lat: 4.9493, kind: "nature" },
+    { nameZh: "帝国乡村俱乐部与高尔夫球场", nameEn: "The Empire country club and golf course", lon: 114.85383, lat: 4.96831, kind: "landmark" },
+  ],
 };

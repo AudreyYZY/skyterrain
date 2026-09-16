@@ -188,4 +188,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "The ruins are very exposed in the daytime, so visit early or late and carry plenty of water. Tickets and opening hours are as announced by the Central Cultural Fund; the stone paving gets hot to walk on barefoot, so a pair of socks helps.",
   },
+
+  ratnapura: {
+    // 全七段 sources: 同中文侧（DCS Census of Population and Housing 2024 at 19 December 2024, DS-division level, tier 1, digit-checked against Colombo and Kotte in the repo; the municipal council's own history page for the 1877/1922/1940/1967 sequence and the 22.18 km² area, tier 1; NGJA licensing page, tier 1; distances computed from this entry's own coordinates — note the council's own "101 km to Colombo" is by road, about 66 km straight-line）。 核实 2026-09-16 当批。
+    identity:
+      "Ratnapura lies in the wet-zone hills at the south-western foot of Sri Lanka's central highlands, with 121,166 people in the divisional secretariat at the 2024 census (Department of Census and Statistics) — a wider area than the town itself, only about two fifths of it counted as urban. The name means \"city of gems\": the gravels the Kalu Ganga and its tributaries bring down off the mountains carry them, and the town is built on that valley floor.",
+    howItWorks:
+      "The industry this town is famous for is the one thing its own government does not control. Where a gem pit may be dug and how deep is written on a mining licence issued by the National Gem and Jewellery Authority, a central body — not the municipal council, and not the province. What the council does run is a different set of things: it began as a local board in 1877, became an urban council in 1922, a municipal body in 1940 and a maha municipal council in 1967, over an area of just over twenty-two square kilometres. And one fact is the other side of the gem trade: by the council's own account about thirteen per cent of that area is liable to flood — the valleys the gems come from and the valleys that flood are the same valleys, and the water level in the wet season decides whether a pit can be worked. The living radius is set by two mountain roads: the Sri Pada trailhead to the north-east and the rainforest entrance to the south, both within an hour, with the town as the supply point for each.",
+    layout:
+      "The clock tower and the public market are in the centre. The national museum is about 0.5 km north-west, the Katugas Ella falls about 0.8 km north-north-west, and the Sabaragamu Maha Saman Devalaya about 2.7 km west-north-west. Bopath Ella is about 14 km north-north-west, the Palabaddala Sri Pada trailhead about 16 km north-north-east, and the Kudawa entrance to the Sinharaja rainforest about 26 km due south.",
+    gettingAround:
+      "Ratnapura has no airport with scheduled flights; international flights go through Bandaranaike International outside Colombo, about 80 km away in a straight line. There is no railway — only an old rail bridge east of town — so roads carry everything; Colombo is about 101 km by road and about 66 km in a straight line. The climate is tropical and hot all year, with heavy rain in both monsoons, May to September and November to January.",
+    culture:
+      "Sinhala is spoken, with English in tourist settings. The gem trade is part of daily life here, with dealers and brokers along the streets. Restaurant bills usually include a service charge. Alcohol is not sold on Poya (full-moon) days. Play safe with tap water and drink bottled or boiled water. Sockets are type G, the British three-pin.",
+    seeAndDo:
+      "The national museum and the market in town; the Maha Saman Devalaya and Katugas Ella to the north-west; Bopath Ella to the north; the Sri Pada climb from the Palabaddala trailhead; and the Kudawa entrance into the Sinharaja rainforest to the south.",
+    whenAndTips:
+      "December to March is the drier stretch and suits walking and the rainforest; in the monsoons the mountain roads slip and the valleys flood, so check conditions first. The Sri Pada pilgrimage season runs from December to May — outside it the path has neither lights nor stalls; the rainforest needs a guide and a ticket under the reserve's rules.",
+  },
+
+  kurunegala: {
+    // 全七段 sources: 同中文侧（DCS Census 2024, DS-division level, tier 1, same table and same digit check; the urban-sector share is from the same census; distances computed from this entry's own coordinates. ⚠️ the city's own .mc.gov.lk domain is now occupied by an unrelated third-party site and is never used as a source, so the council's founding year, ward count and area — tier 3 only — are not written at all）。 核实 2026-09-16 当批。
+    identity:
+      "Kurunegala stands on the plains of north-western Sri Lanka, with 88,999 people in the divisional secretariat at the 2024 census (Department of Census and Statistics). A ring of bare rock hills encloses the town, the largest of them Athugala — locally explained as the \"elephant rock\", gala being Sinhala for rock — and at their foot lies a tank, the town spread over the flat ground between water and stone.",
+    howItWorks:
+      "This is a good place to see what Sri Lanka's \"urban\" figure actually counts. The 2024 census gives the Kurunegala divisional secretariat 89,000 people, but under the national definition — only municipal and urban council areas count as urban — just 26,000 of them are urban, and the remaining two thirds are statistically rural. In other words, \"how many people live in Kurunegala\" has answers that differ threefold depending on which layer you ask about. That is general in Sri Lanka, where the national urban share is about 17.5 per cent, not because most people live in fields but because much continuous built-up area falls under village councils. The town's shape is set by the rock hills: flat land is limited, so the market, the station and the government offices are packed between the tank and the rock while housing runs outward along a few radial roads — and people give directions by the hills and the water rather than by street names.",
+    layout:
+      "The clock tower and the central market are in the centre. Rajapihilla Park is about 0.2 km south-south-east, the Athugala Buddha statue about 0.6 km east-south-east, the Ethkanda temple about 0.6 km south-east, Athugala itself about 0.7 km east-north-east and the tank about 0.9 km north-north-west. The railway station is about 1.5 km south-east. The rock fortress of Yapahuwa is about 37 km due north.",
+    gettingAround:
+      "Kurunegala has no airport with scheduled flights; international flights go through Bandaranaike International, about 63 km away in a straight line. As of September 2026 the northern main line through the town is running again, while the Colombo-Kandy main line has still not reopened, so that journey has to go round. Roads carry the rest, with the town at a junction of several trunk routes. The climate is tropical and hot all year.",
+    culture:
+      "Sinhala is spoken, with English in tourist settings. Restaurant bills usually include a service charge. Alcohol is not sold on Poya (full-moon) days. Play safe with tap water and drink bottled or boiled water. Sockets are type G, the British three-pin.",
+    seeAndDo:
+      "The climb up Athugala for the view over town and tank; the Buddha statue on the rock; the walk around the tank; the viewpoint in Rajapihilla Park; the central market and the Ethkanda temple; and, within an hour's drive, the rock fortress of Yapahuwa.",
+    whenAndTips:
+      "Any time of year works, with rain in both monsoons, May to September and November to January. The rock is slippery after rain and the stone is fierce at midday, so climb early or late; temples mean bare feet and covered knees.",
+  },
 };

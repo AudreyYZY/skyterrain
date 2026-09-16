@@ -50,4 +50,16 @@ export const CITIES: CityEntry[] = [
     lon: 114.4658, lat: 4.4044,
     source: "拉比 4.4044,114.4658 —— OSM 上没有 Kg Labi 的 place 节点，锚点取本地的中华拉比学校（OSM way 1084907132）；BWN 直线约 79 km（算），不填 airport；与地形条目 labi-hills（拉比丘陵，锚点为特拉加山）互指（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "gadong", nameZh: "加东（文莱）", nameEn: "Gadong", country: "brunei", tier: "notable", zone: "bn-west", admin1Zh: "文莱—摩拉区", admin1En: "Brunei-Muara District",
+    lon: 114.91708, lat: 4.9061,
+    airport: { iata: "BWN", nameZh: "文莱国际机场", nameEn: "Brunei International Airport", lon: 114.928001, lat: 4.9442 },
+    source: "加东 The Mall 一带 4.90610,114.91708（OSM node/12307277626；OSM 上没有干净的「加东镇中心」对象，此处是商业区的实际重心）；BWN 直线约 4.4 km、比首都条目的 6.3 km 还近，填 airport；⚠️ **中文名与新加坡的 Katong（加东）撞车**，本条目用「加东（文莱）」区分，新加坡一侧见 lib/content/singapore/cities.ts 的 `katong`；加东夜市与哈桑纳尔·博尔基亚清真寺两个 POI 与 bandar-seri-begawan 条目共用（地理上在加东一侧，而首都条目的正文也点名了它们）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "jerudong", nameZh: "哲鲁东", nameEn: "Jerudong", country: "brunei", tier: "notable", zone: "bn-west", admin1Zh: "文莱—摩拉区", admin1En: "Brunei-Muara District",
+    lon: 114.84174, lat: 4.93783,
+    airport: { iata: "BWN", nameZh: "文莱国际机场", nameEn: "Brunei International Airport", lon: 114.928001, lat: 4.9442 },
+    source: "哲鲁东 4.93783,114.84174（OSM relation/8747351 boundary=administrative 的边界中心）；BWN 直线约 9.6 km，落在既有做法「填」的一侧（斯里巴加湾 6.3 km 填 / 摩拉 18.2 km 不填）；⚠️ **中文名是本库自拟音译**，文莱中文媒体对 Jerudong 没有统一写法、查到的说法都围绕游乐园且均为 3 级（已有城市补充批，2026-09-16）",
+  },
 ];
