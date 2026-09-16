@@ -70,4 +70,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "蓬图卡斯巨石", nameEn: "Puntukas boulder", lon: 25.0554, lat: 55.4749, kind: "landmark" },
     { nameZh: "马博物馆", nameEn: "Horse Museum", lon: 25.0858, lat: 55.5736, kind: "landmark" },
   ],
+  plunge: [
+    { nameZh: "奥金斯基宫（热马伊蒂亚美术馆）", nameEn: "Oginski Palace (Samogitian Art Museum)", lon: 21.8446, lat: 55.918, kind: "landmark" },
+    { nameZh: "庄园园林", nameEn: "Plungė manor park", lon: 21.843, lat: 55.9178, kind: "nature" },
+    { nameZh: "甘丁加古堡山", nameEn: "Gandinga hillfort", lon: 21.7717, lat: 55.8869, kind: "nature" },
+    { nameZh: "普拉特利艾镇与国家公园管理局", nameEn: "Plateliai and the national park headquarters", lon: 21.815, lat: 56.042, kind: "district" },
+    { nameZh: "普拉特利艾湖", nameEn: "Lake Plateliai", lon: 21.87306, lat: 56.04722, kind: "nature" },
+  ],
+  alytus: [
+    { nameZh: "白玫瑰人行桥", nameEn: "White Rose footbridge", lon: 24.0813, lat: 54.3932, kind: "landmark" },
+    { nameZh: "阿利图斯古堡山", nameEn: "Alytus hillfort", lon: 24.08, lat: 54.3966, kind: "nature" },
+    { nameZh: "市立花园", nameEn: "City Garden", lon: 24.0475, lat: 54.3937, kind: "nature" },
+    { nameZh: "青年公园", nameEn: "Youth Park", lon: 24.03, lat: 54.4046, kind: "nature" },
+    { nameZh: "茹温塔斯保护区游客中心", nameEn: "Žuvintas reserve visitor centre", lon: 23.6404, lat: 54.457, kind: "nature" },
+  ],
 };

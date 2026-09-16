@@ -67,4 +67,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "瓦尔米耶拉博物馆与城堡遗址", nameEn: "Valmiera Museum and castle ruins", lon: 25.4279, lat: 57.5392, kind: "landmark" },
     { nameZh: "瓦尔米耶拉剧院", nameEn: "Valmiera Theatre", lon: 25.4258, lat: 57.5393, kind: "landmark" },
   ],
+  rezekne: [
+    { nameZh: "拉特加莱使馆 GORS 音乐厅", nameEn: "Latgale Embassy GORS", lon: 27.3262, lat: 56.5029, kind: "landmark" },
+    { nameZh: "创意服务中心 Zeimuļs", nameEn: "Zeimuļs creative centre", lon: 27.3337, lat: 56.5032, kind: "landmark" },
+    { nameZh: "古堡山与城堡遗址", nameEn: "Castle mound and ruins", lon: 27.3351, lat: 56.5025, kind: "landmark" },
+    { nameZh: "拉特加莱文化历史博物馆", nameEn: "Latgale Culture and History Museum", lon: 27.3322, lat: 56.5076, kind: "landmark" },
+    { nameZh: "科夫舒湖", nameEn: "Kovšu Lake", lon: 27.3273, lat: 56.4997, kind: "nature" },
+  ],
+  madona: [
+    { nameZh: "马多纳地方志与艺术博物馆", nameEn: "Madona Museum of Local History and Art", lon: 26.2103, lat: 56.8526, kind: "landmark" },
+    { nameZh: "斯梅采雷斯松林运动基地", nameEn: "Smeceres sils sports centre", lon: 26.1761, lat: 56.8281, kind: "nature" },
+    { nameZh: "盖津卡尔恩斯山（全国最高点）", nameEn: "Gaiziņkalns", lon: 25.9594, lat: 56.87, kind: "nature" },
+    { nameZh: "采斯瓦伊内城堡", nameEn: "Cesvaine Castle", lon: 26.3121, lat: 56.9694, kind: "landmark" },
+    { nameZh: "泰伊奇沼泽", nameEn: "Teiči bog", lon: 26.4421, lat: 56.6129, kind: "nature" },
+  ],
 };

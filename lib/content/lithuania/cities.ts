@@ -73,4 +73,14 @@ export const CITIES: CityEntry[] = [
     lon: 25.1030, lat: 55.5250,
     source: "阿尼克什奇艾镇中心圣马太教堂一带 55.5250,25.1030（OSM）；本地没有定期航班的机场，不填 airport；考纳斯 KUN 直线约 90 km、维尔纽斯 VNO 约 100 km（按 OurAirports 算）；离国界约 70 km（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "plunge", nameZh: "普伦盖", nameEn: "Plungė", country: "lithuania", tier: "notable", zone: "lt-west", admin1Zh: "特尔希艾县", admin1En: "Telšiai County",
+    lon: 21.8534, lat: 55.9139,
+    source: "普伦盖 55.9139,21.8534（OSM place 节点，靠近车站；庄园在城西北约 1 km）；20 km 内无有定期航班的机场，最近是帕兰加 PLQ、直线约 48 km（算）；热马伊蒂亚国家公园管理局与游客中心在本市镇的普拉特利艾镇（公园官网地址，1 级），与地形条目 plateliai-lake、zemaiciai-upland 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "alytus", nameZh: "阿利图斯", nameEn: "Alytus", country: "lithuania", tier: "major", zone: "lt-central", admin1Zh: "阿利图斯县", admin1En: "Alytus County",
+    lon: 24.0459, lat: 54.3961,
+    source: "阿利图斯 54.3961,24.0459（OSM place 节点）；城边 2 km 确有一座机场但 scheduled_service=no，按规则 ⑬ 正文写「没有定期航班的机场」、不填 airport；最近有定期航班的是考纳斯 KUN、直线约 63 km（算）；与地形条目 nemunas-river、dzukai-upland、zuvintas 互指（已有城市补充批，2026-09-16）",
+  },
 ];

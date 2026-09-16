@@ -188,4 +188,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most comfortable, and the treetop walkway is busy at weekends, so go early; autumn colours in the forest and valley are good. The narrow-gauge tourist train's season and timetable are as announced by the operator.",
   },
+
+  plunge: {
+    // 全七段 sources: 同中文侧（Statistics Lithuania S3R167 at 1 January 2026, tier 1; Visuotinė lietuvių enciklopedija on the municipality and the manor, tier 2; Žemaitija National Park official site for the headquarters address, tier 1; protected-areas cadastre for the park's 1991 designation and area, tier 1; rail passenger service deliberately omitted as unverified）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Plungė lies on the southern edge of the Samogitian upland in western Lithuania, with 16,714 people in the town and 32,319 in Plungė district municipality at the start of 2026 (Statistics Lithuania). The Babrungas river runs through it, and north-west of the centre stand the 19th-century Oginski palace and its 58-hectare park, the palace now the Samogitian Art Museum; Žemaitija National Park lies to the north.",
+    howItWorks:
+      "Plungė is the seat of Plungė district municipality. Two easily confused tiers sit below that in Lithuania: the seniūnija is an administrative branch of the municipality, while the smaller seniūnaitija is a unit of resident self-government — this municipality created sixty-eight of them at once in 2009. What really makes the town the gateway to this upland is easy to miss: the headquarters and visitor centre of Žemaitija National Park are not in the county town but at Plateliai, a small town a dozen kilometres north within this municipality, and the lake is there too. The park was designated in 1991 and covers more than 21,000 hectares. The town's own beginnings are elsewhere as well: the earliest settlement was at the Gandinga hillfort about six kilometres to the south-west, and only in the later 16th century did Plungė take its place as the local centre. Today the manor is the focus: the Oginski family bought the estate in 1873, the palace completed in 1879 has housed the art museum since 1994, and the park around it runs to more than fifty hectares. Newcomers assume national park business is done in the county town, when the headquarters are in this municipality.",
+    layout:
+      "The centre is by the Babrungas, with the railway and coach stations close to it. The Oginski palace and the manor park are about 1 km north-west of the centre and the church of St John the Baptist just under a kilometre to the south-west. The Gandinga hillfort is about 6 km south-west in a straight line; Plateliai and the national park headquarters are about 14 km north, with Lake Plateliai just east of that town.",
+    gettingAround:
+      "Plungė has no airport with scheduled flights; the nearest with them is Palanga, about 48 km away in a straight line. Travel is mainly by road, with coaches to nearby towns; reaching the park and the lake needs a car or a bus, and the town itself is walkable. The climate is maritime-continental, with snowy winters.",
+    culture:
+      "Lithuanian is spoken, and the Samogitian dialect is common in this region. The art museum occupies the manor palace, and the park is open in all seasons. Restaurant bills sometimes include a service charge, so check the receipt before paying; the supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The Oginski palace and the Samogitian Art Museum; the old trees and outbuildings of the manor park; the Gandinga hillfort; the national park visitor centre at Plateliai to the north; and the shore paths at Lake Plateliai.",
+    whenAndTips:
+      "May to September is best for the park and the lakeshore, and winters are snowy. Facilities in the national park open seasonally, so check its notices first; a car is easier than the infrequent buses for reaching the lake.",
+  },
+
+  alytus: {
+    // 全七段 sources: 同中文侧（Statistics Lithuania S3R167 at 1 January 2026, tier 1; Visuotinė lietuvių enciklopedija on the two municipalities and the absence of seniūnijos in the city, tier 2; protected-areas cadastre for Žuvintas — its statutory purpose names the largest lake-and-mire complex in Lithuania, tier 1; the White Rose bridge's height and ranking omitted as unverified; rail passenger service omitted）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Alytus stands on both banks of the Nemunas in southern Lithuania, with 49,940 people in the city at the start of 2026 (Statistics Lithuania) — sixth among Lithuanian cities on that table and the largest town of the Dzūkija region. The river loops widely past the city, dividing it in two with three bridges between, and the lake-and-mire reserve of Žuvintas lies some twenty-seven kilometres to the north-west.",
+    howItWorks:
+      "Two governments here share a name: Alytus city municipality and Alytus district municipality were both created in 1995, and the district's offices are in the city too, though what it governs is the ring of rural areas outside. Rarer still is the arrangement below that: the city municipality has no seniūnijos at all, and since 2018 is divided only into fourteen units of resident self-government, while the capital's municipality has twenty-one seniūnijos — two quite different bottom tiers within the same country. The river gives the city its shape: the Nemunas loops past, so the city sits on both banks with three bridges between them, one of them a footbridge and cycle bridge about 240 metres long and, according to Lithuanian encyclopaedic sources, some 38 metres high, built on the piers of an old railway bridge and opened in 2016. Some twenty-seven kilometres north-west lies Žuvintas, whose statutory purpose is to protect what it calls the largest lake-and-mire complex in Lithuania. Newcomers take the city and district municipalities for one thing, when they are two governments.",
+    layout:
+      "The centre is on the west bank, with the City Garden a few hundred metres to its south and the Youth Park about 1.4 km north-west. The White Rose footbridge and the hillfort are around the river bend about 2.2 to 2.3 km east. The coach station is about 2.6 km north-west, and the Žuvintas visitor centre about 27 km north-west in a straight line.",
+    gettingAround:
+      "Alytus has no airport with scheduled flights — there is an airfield on the edge of town, but no scheduled service; the nearest airport with them is Kaunas, about 63 km away in a straight line. Travel is mainly by road and coach, towards Kaunas and Vilnius; the city has buses and nearly thirty kilometres of cycling and walking paths along both banks. The climate is temperate, with cold winters.",
+    culture:
+      "Lithuanian is spoken, and this is the Dzūkija region, where forests and mushrooms are part of the local table. The city has nine museums, the oldest founded in 1928. Restaurant bills sometimes include a service charge, so check the receipt before paying; the supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The walk across the White Rose bridge over the Nemunas; the hillfort by the river bend; the City Garden and the Youth Park; the museum of local history; a ride along the cycle paths on both banks; and the Žuvintas visitor centre and observation tower to the north-west.",
+    whenAndTips:
+      "May to September suits cycling and birdwatching, with the main birding seasons at Žuvintas in spring and autumn. The reserve has access restrictions, so follow its management's arrangements; paths by the river bend are muddy after rain.",
+  },
 };

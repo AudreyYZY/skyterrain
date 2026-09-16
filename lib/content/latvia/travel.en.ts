@@ -191,4 +191,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most comfortable, with boating on the Gauja in summer; winters are cold with short days. International trains run only a few times a day, so check the operator's timetable before travelling.",
   },
+
+  rezekne: {
+    // 全七段 sources: 同中文侧（Central Statistical Bureau IRS031 at 1 January 2026, tier 1; National Encyclopaedia of Latvia on the two governments in the city, the landscape and the river, tier 2; city tourism site on the castle, tier 1; Vivi timetable effective 2 September 2026, tier 1; OurAirports; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Rēzekne stands on the northern edge of the Latgale upland in eastern Latvia, with 25,978 people in the city at the start of 2026 (Central Statistical Bureau) — seventh among Latvian cities on that same table. The city sits in the hollow of the Rēzekne river, ringed by hills, with the river splitting it roughly in two; that 116-kilometre river links Latvia's two largest lakes, Rāzna and Lubāns.",
+    howItWorks:
+      "The striking thing here is that two governments sit in the same city. Rēzekne is one of Latvia's ten state cities and one of the seven that have their own local government and council; at the same time the administration of Rēzekne municipality is based in the city, though what it governs is the ring of rural parishes outside it. After the 2021 reform the country's local governments are the seven self-governing state cities plus thirty-five municipalities, and this arrangement is not unusual — Jelgava and Daugavpils work the same way, while Valmiera, also a state city, has no government of its own and sits inside a municipality. The terrain is worth noticing too: the lowest ground in the city, in the river valley, is around 130 m while nearby hilltops reach into the 180s, several hills stand more than thirty metres above their surroundings, and according to the National Encyclopaedia this makes Rēzekne one of the most interesting Latvian cities in landscape terms — locals call it the city of seven hills. Newcomers take \"Rēzekne municipality\" for the city's own government, when the two govern different places.",
+    layout:
+      "The old core is on the east bank around the castle mound, with the castle ruins and the Zeimuļs creative centre there. The GORS concert hall is a few hundred metres south-west of the centre and the Latgale Culture and History Museum a short way north. Kovšu Lake lies about 1 km south-west of the centre, with a park along its shore, and the two railway stations are at the west and north-east ends of the city.",
+    gettingAround:
+      "Rēzekne has no airport with scheduled flights; the nearest with them is Riga, about 210 km away in a straight line. Passenger trains run towards Riga, coaches serve Riga, Daugavpils and the surrounding municipalities, city buses run locally, and the old core is walkable. The climate is temperate continental, with cold snowy winters.",
+    culture:
+      "Latvian is spoken, alongside the written tradition of Latgalian — the creative centre's name, Zeimuļs, is Latgalian for \"pencil\". Latgalian pottery is the old craft of this region, with a permanent display at the culture and history museum. Restaurant bills sometimes include a service charge, so check the receipt before paying; tap water is drinkable according to the utilities. The supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The castle mound and ruins; a performance at the GORS concert hall; the architecture of the Zeimuļs centre; the pottery display at the culture and history museum; a walk around Kovšu Lake; and trips out to Lake Rāzna to the south-east and Lake Lubāns to the north-east.",
+    whenAndTips:
+      "May to September is the most comfortable; winters are cold with short days. Both lakes need a car or a coach, services are infrequent, so check return times first.",
+  },
+
+  madona: {
+    // 全七段 sources: 同中文侧（CSB IRS031 at 1 January 2026 — note the two AREA codes before and after the 1 July 2025 merger, tier 1; National Encyclopaedia of Latvia on the administrator arrangement and the town's layout, tier 2; Vivi timetable, tier 1; the Gaiziņkalns tower deliberately omitted as its status is unknown）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Madona lies on the edge of the Vidzeme upland in central Latvia, with 6,502 people in the town and 29,466 in Madona municipality at the start of 2026 (Central Statistical Bureau). Gaiziņkalns, the country's highest point at 311.94 m, is about 16 km west, and the great bog of Teiči about 30 km south; the town itself straddles a morainic ridge, with more than sixty metres between its highest and lowest ground.",
+    howItWorks:
+      "Madona is not a state city, and it does not even have a council of its own: it had a town government until 2009, and since Madona municipality was formed in 2021 the town has been run by an administrator appointed by the municipality — the only arrangement of its kind among the Latvian towns in this library. The municipality itself is still changing: on 1 July 2025 Varakļāni municipality was merged into Madona municipality, taking effect with the first sitting of the council elected that year; after the reform the country's local governments are seven self-governing state cities and thirty-five municipalities. The railway divides the town: the centre, the shops and most of the residents are north of the line, while south of it are detached houses, the sports ground and the recreation area by the water. Two things set the living radius — the railway to Riga, and the upland outside town, where the country's highest point, a cross-country skiing and biathlon centre and a large protected bog all lie within half an hour to an hour by car. Newcomers take the municipality for the town, when the municipality is far larger.",
+    layout:
+      "The centre is north of the railway, with the museum of local history and art in it and the railway and coach stations a few hundred metres to the south-east. The Smeceres sils sports centre is about 3.7 km south-west of town, Gaiziņkalns about 16 km west in a straight line, Cesvaine Castle about 14 km north-east, and the Teiči bog about 30 km south.",
+    gettingAround:
+      "Madona has no airport with scheduled flights; the nearest with them is Riga, about 137 km away in a straight line. Passenger trains run towards Riga; the town itself has only two bus routes, sealed roads link the municipality's parishes, and reaching the upland or the bog needs a car. The climate is temperate continental with cold snowy winters, which is why this area is a centre for cross-country skiing.",
+    culture:
+      "Latvian is spoken. A potato festival has been held in town each autumn since 1999. Restaurant bills sometimes include a service charge, so check the receipt before paying; tap water is drinkable according to the utilities. The supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The museum of local history and art; the ski and cycle trails at Smeceres sils; the drive up to Gaiziņkalns to stand on the country's highest point; Cesvaine Castle; and the edge of the protected bog at Teiči to the south.",
+    whenAndTips:
+      "June to September suits walking on the upland and around the bog, and December to March is the snow season. There are no visitor facilities on the summit of Gaiziņkalns, and the view depends on the weather; the bog reserve has access restrictions, so visits go through its management.",
+  },
 };

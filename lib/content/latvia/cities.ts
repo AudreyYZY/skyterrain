@@ -70,4 +70,14 @@ export const CITIES: CityEntry[] = [
     lon: 25.4264, lat: 57.5385,
     source: "瓦尔米耶拉老城圣西门教堂一带 57.5385,25.4264（OSM）；国家城市、属瓦尔米耶拉市镇（likumi.lv，1 级）；本地没有定期航班的机场，不填 airport；里加 RIX 直线约 111 km（按 OurAirports 算）；离国界约 43 km（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "rezekne", nameZh: "雷泽克内", nameEn: "Rēzekne", country: "latvia", tier: "major", zone: "lv-latgale", admin1Zh: "拉特加莱规划区域", admin1En: "Latgale Planning Region",
+    lon: 27.3307, lat: 56.5063,
+    source: "雷泽克内 56.5063,27.3307（OSM place=city）；20 km 内没有有定期航班的机场（OurAirports：Adamova 6.8 km no、本地机场 closed、Dricāni 19.9 km no），不填 airport，最近有定期航班的是里加 RIX、直线约 210 km（算）；与地形条目 lake-razna、lake-lubans、latgale-upland 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "madona", nameZh: "马多纳", nameEn: "Madona", country: "latvia", tier: "notable", zone: "lv-vidzeme", admin1Zh: "维泽梅规划区域", admin1En: "Vidzeme Planning Region",
+    lon: 26.2185, lat: 56.8517,
+    source: "马多纳 56.8517,26.2185（OSM place=town）；20 km 内无有定期航班的机场，最近是里加 RIX、直线约 137 km（算）；人口取中央统计局 IRS031 的 2026-01-01 数（⚠️ 该表马多纳市镇有两个 AREA 代码，2025-07-01 合并前后各一条，要取现界线那条）；与地形条目 vidzeme-upland（锚点即全国最高点盖津卡尔恩斯）、teici-bog、lake-lubans 互指（已有城市补充批，2026-09-16）",
+  },
 ];
