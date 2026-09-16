@@ -658,7 +658,11 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   唯一实现，`app/api/tts/route.ts` 与 `scripts/warm-tts.ts` 共用。缓存键是
   `sha256(voice + " " + text)`，改键算法等于作废整个 `.tts-cache/`。
   预热 `npm run warm:tts`（可中断可续跑，支持 `--kinds/--langs/--ids/--limit`），
-  覆盖率 `npm run check:tts`。全站 23,802 段播报、约 4.9 GB、167 小时音频。
+  覆盖率 `npm run check:tts`。
+  ⚠️ **新增内容必须当批预热**（2026-09-17 立）：没命中缓存就要现场合成，中文冷合成实测约 19 秒，
+  而 `section-narration` 连续 2 段失败就**整篇降级成浏览器 TTS** —— 那就是用户听到的「不自然的机械音」。
+  所以「点开刚加的城市全是机械音、点开老城市是自然人声」不是音色配置问题，是**预热没跟上**。
+  加完城市 / 地形 / 航线，跟「当批核实」一样跑一遍 `npm run warm:tts`（见 issue #307）。全站 23,802 段播报、约 4.9 GB、167 小时音频。
   **`.tts-cache/` 是本机 gitignore 目录，不进仓库**；换机器/换服务器重跑预热即可。
   **线上部署（Vercel）读不到本机缓存**：2026-09-14 起 `lib/tts-cache.ts` 支持远端只读缓存 ——
   把 `.tts-cache/` 上传到能按 URL 公开读的存储，设 `TTS_REMOTE_CACHE_URL`，本机未命中时去那里取（3 秒超时，取不到才现场合成）。
@@ -666,7 +670,8 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 - 播报文本清单由 `lib/tts-manifest.ts` 生成，一律调用客户端同一套函数
   （`resolveLesson`+`lessonSections` / `resolveTravelGuide`+`travelGuideToSections` /
   `getRouteNarration`），保证与线上请求逐字节一致 —— 不一致则预热白做。
-- **语速常数分语言**（`lib/speech.ts` `CHARS_PER_SEC`：zh 4.44 / en 15.24 字符每秒），
+- **语速常数分语言**（`lib/speech.ts` `CHARS_PER_SEC`：zh 4.44 / en **14.6** 字符每秒，
+  2026-09-17 按 `check:tts` 的 120 段实测把 en 从 15.24 改过来 —— **这两个数以实测为准，偏差超 3% 就回来改**），
   从缓存音频的 word boundary 实测而来；`npm run check:tts` 会复算并比对。
   以前只有一个按中文校准的 4.5，英文被高估 3.4 倍，航线兜底节拍因此错得离谱。
 - 降级策略是**连续失败计数**（`lib/section-narration.ts`，连续 2 段才整篇降级），
@@ -676,7 +681,18 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 - 逐句高亮：Edge TTS 成功 → `startHighlightWithTiming`（word boundary 精确同步）；
   失败回退浏览器 TTS → `speakBrowserAndWait` 在 `utterance.onstart` 触发 `onPlaying`
   （不是等播完），`startHighlightSections` 按字数估时推进。
-- 切句在 `lib/sentences.ts`，逐句高亮 / 面板显示 / 航点锚定共用同一套。
+- **切句只许有一份，在 `lib/sentences.ts`**（2026-09-17 立，`npm run check:sentence-split` 强制）：
+  - `splitSentences`：按句末标点切 —— **航线解说与航点锚定用它**（`route-anchors.data.ts` 的锚点表
+    按它的句序生成，换了句数 `check:anchors` 会失败）；
+  - `splitForHighlight`：**讲解 / 攻略的面板渲染与逐句高亮用它** —— 在句末标点之外，再按「朗读权重」
+    （不是字数：中文里一个数字念出来是好几个音节）在从句标点 / 括号 / 引号处把过长的句子切开，
+    每块目标约 5.5 秒，并且**在候选断点里挑最接近目标的那个**，不是遇到第一个超过目标的就切。
+  - ⚠️ **面板渲染与高亮必须用同一个函数**。`StructuredLesson` 曾自带一份缺了小数点保护的实现，
+    正文里只要出现「1300.2 米」面板就多切一句，**此后整篇全局句子索引错位**——
+    全库 2,650 段城市攻略（20.5%）与 517 段地形讲解中招，表现为「语音念到后面了、高亮还停在前面」。
+    这一类**类型能过、测试能过、两份实现各自都"对"，错的是它们不一致**，只能靠不许有第二份来守。
+  - `npm run check:highlight-sync`：拿 `.tts-cache/` 里**真实的 word boundary** 跑生产用的时间映射，
+    断言每块高亮的区间单调、不重叠、覆盖整段音频、且没有超过 13 秒的块（CI 无缓存时自动跳过）。
   **数字里的小数点不算句号**：「海拔 7508.9 米」裸按句号切会切出一句以「9 米，……」
   开头的残句 —— 高亮会跳、朗读在数字中间停顿、锚定还拿这半句去匹配地名。
 - 英文解说是多段字符串拼接出来的，**上一段以句号结尾时下一段要以空格开头**，
