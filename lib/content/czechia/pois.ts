@@ -63,4 +63,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "皮亚里斯特会圣十字架寻获教堂", nameEn: "Piarist Church of the Finding of the Holy Cross", lon: 16.3125, lat: 49.872, kind: "landmark" },
     { nameZh: "地区博物馆", nameEn: "Regional Museum", lon: 16.3119, lat: 49.8723, kind: "landmark" },
   ],
+  ostrava: [
+    { nameZh: "下维特科维采（博尔特塔）", nameEn: "Dolní Vítkovice (Bolt Tower)", lon: 18.2767, lat: 49.8194, kind: "landmark" },
+    { nameZh: "新市政厅观景塔", nameEn: "New Town Hall viewing tower", lon: 18.2916, lat: 49.8417, kind: "landmark" },
+    { nameZh: "兰德克公园（采矿博物馆）", nameEn: "Landek Park mining museum", lon: 18.263, lat: 49.8666, kind: "landmark" },
+    { nameZh: "西里西亚俄斯特拉发城堡", nameEn: "Silesian Ostrava Castle", lon: 18.2997, lat: 49.8305, kind: "landmark" },
+    { nameZh: "救世主主教座堂", nameEn: "Cathedral of the Divine Saviour", lon: 18.289, lat: 49.8358, kind: "landmark" },
+    { nameZh: "埃马矸石山", nameEn: "Ema spoil heap", lon: 18.3149, lat: 49.8398, kind: "nature" },
+  ],
+  "hradec-kralove": [
+    { nameZh: "白塔", nameEn: "White Tower", lon: 15.8308, lat: 50.209, kind: "landmark" },
+    { nameZh: "圣灵主教座堂", nameEn: "Cathedral of the Holy Spirit", lon: 15.831, lat: 50.2088, kind: "landmark" },
+    { nameZh: "东波希米亚博物馆", nameEn: "Museum of Eastern Bohemia", lon: 15.8345, lat: 50.2129, kind: "landmark" },
+    { nameZh: "胡恰克水电站", nameEn: "Hučák hydroelectric station", lon: 15.8254, lat: 50.2072, kind: "landmark" },
+    { nameZh: "易北河与奥尔利采河汇流处", nameEn: "Confluence of the Elbe and the Orlice", lon: 15.8254, lat: 50.2049, kind: "nature" },
+    { nameZh: "乌尔里赫广场与戈恰尔阶梯", nameEn: "Ulrich Square and the Gočár Steps", lon: 15.8221, lat: 50.2105, kind: "district" },
+  ],
 };

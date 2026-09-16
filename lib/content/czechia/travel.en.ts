@@ -9,7 +9,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
     gettingAround:
-      "Václav Havel Airport Prague is the main international gateway; the domestic rail and long-distance bus network is extensive, with journeys between major cities typically taking 2 to 4 hours, since domestic commercial flights are essentially nonexistent. Driving is on the right, and a toll vignette (dálniční známka) is required for motorways. The climate is temperate continental with distinct seasons. The currency is the Czech koruna (CZK), as the country has not adopted the euro; as a Schengen member, most nationalities follow standard Schengen short-stay rules; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "Václav Havel Airport Prague is the main international gateway; the domestic rail and long-distance bus network is extensive, with journeys between major cities typically taking 2 to 4 hours, since domestic commercial flights are essentially nonexistent. Driving is on the right, and a toll vignette (dálniční známka) is required for motorways. The climate is temperate continental with distinct seasons. The currency is the Czech koruna (CZK), as the country has not adopted the euro; as a Schengen member, most nationalities follow standard Schengen short-stay rules; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     culture:
       "The official language is Czech, and English is widely spoken among younger people and in tourist areas. Czechs typically use formal address (surname plus Mr./Mrs.) on first meeting, switching to first names only once acquainted; modest dress is expected in churches and other religious sites; Czechia is one of the world's heaviest beer-consuming countries per capita, and pub and beer-hall culture runs deep.",
     seeAndDo:
@@ -52,7 +52,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Brno-Tuřany Airport is about 8 km in a straight line from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
     culture:
-      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a functionalist modern house designed by Mies van der Rohe and completed in 1930, UNESCO World Heritage since 2001); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
     whenAndTips:
@@ -72,7 +72,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; most travelers connect via Prague Airport and continue by train or bus (about 1 to 1.5 hours); the old town is entirely walkable.",
     culture:
-      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Bartholomew and other religious sites; as the birthplace of lager culture, pubs and beer halls are a central part of local social life — by local custom you let the server top up your glass rather than pouring your own; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Bartholomew and other religious sites; as the birthplace of lager culture, pubs and beer halls are a central part of local social life — by local custom you let the server top up your glass rather than pouring your own; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "A tour of the Pilsner Urquell Brewery and its underground brewing history exhibit; Republic Square and the Cathedral of St. Bartholomew (102 m spire, the tallest church spire in Czechia); the historic Pilsen Underground (a roughly 20-km network of tunnels dug from the 14th century onward); and the Great Synagogue, one of the largest synagogues in Europe.",
     whenAndTips:
@@ -97,7 +97,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Karlovy Vary Airport is about 4.3 km in a straight line from the town center; the colonnades along the valley are all walkable, with a funicular connecting hillside hotels and viewpoints on some of the steeper slopes.",
     culture:
-      "The official language is Czech, and English is widely spoken given the town's international reputation for spa tourism and its film festival. Locals traditionally drink the spring water from a special porcelain spa cup with a built-in drinking spout, available as a souvenir at local shops; the Karlovy Vary International Film Festival is held every summer, one of the oldest film festivals in Central and Eastern Europe; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "The official language is Czech, and English is widely spoken given the town's international reputation for spa tourism and its film festival. Locals traditionally drink the spring water from a special porcelain spa cup with a built-in drinking spout, available as a souvenir at local shops; the Karlovy Vary International Film Festival is held every summer, one of the oldest film festivals in Central and Eastern Europe; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "The Mill Colonnade (built 1871-1881, 132 m long with 12 allegorical statues); the Hot Spring Colonnade (home to the Vřídlo geyser, which shoots up to 12 m, Karlovy Vary's highest-yield spring); the Grandhotel Pupp (a landmark hotel with over three centuries of history); and nearby Czech spa towns such as Mariánské Lázně.",
     whenAndTips:
@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no local airport; most travelers connect via Prague Airport or České Budějovice and continue by bus, with the journey from Prague taking about 2.5 to 3 hours; the old town core is walkable, though its cobblestone streets are steep, so comfortable footwear is recommended.",
     culture:
-      "The official language is Czech, and English is widely spoken as this is a popular tourist town. Some areas inside the castle can only be visited on a timed guided tour; modest dress is expected when entering St. Vitus Church and other religious sites; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "The official language is Czech, and English is widely spoken as this is a popular tourist town. Some areas inside the castle can only be visited on a timed guided tour; modest dress is expected when entering St. Vitus Church and other religious sites; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "Krumlov Castle (founded in the 13th century, with its Bear Moat and three-tiered Cloak Bridge); the castle tower viewpoint overlooking the town's meander; the old town square and town hall; and rafting or canoeing on the Vltava, a popular summer activity offering a close-up view of the meander landform.",
     whenAndTips:
@@ -136,7 +136,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no local airport; most travelers connect via Prague Airport and continue by train or bus, with the journey from Prague taking about 1 to 1.5 hours; the old town core is walkable, and St. Barbara's Church and the Sedlec Ossuary are about a 20-minute walk apart, or reachable by local bus.",
     culture:
-      "The official language is Czech. Modest, quiet behavior is expected when visiting St. Barbara's Church and the Bone Church; inside the ossuary, touching the bone decorations is forbidden and photography is restricted in some areas out of respect for the dead — watch for posted signage; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "The official language is Czech. Modest, quiet behavior is expected when visiting St. Barbara's Church and the Bone Church; inside the ossuary, touching the bone decorations is forbidden and photography is restricted in some areas out of respect for the dead — watch for posted signage; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "St. Barbara's Church (a Gothic masterpiece dedicated to the patron saint of miners); the Sedlec Ossuary (a cemetery chapel decorated with the remains of roughly 40,000 people); the Czech Museum of Silver (on the site of a medieval mint); and the stone fountain and old town square.",
     whenAndTips:
@@ -156,7 +156,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There are no scheduled commercial flights locally; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
     culture:
-      "The official language is Czech. Modest dress is expected when entering St. Wenceslas Cathedral and other religious sites; as a university city, Olomouc has a lively student population and strong café and pub culture in the old town; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+      "The official language is Czech. Modest dress is expected when entering St. Wenceslas Cathedral and other religious sites; as a university city, Olomouc has a lively student population and strong café and pub culture in the old town; In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "The Holy Trinity Column (built 1716-1754, one of the largest free-standing Baroque sculptures in Central Europe, UNESCO World Heritage); the old town's six Baroque fountains; the Olomouc Astronomical Clock (repainted in a Socialist Realist style quite different from Prague's clock); and Olomouc's cathedral and archbishop's palace.",
     whenAndTips:
@@ -173,7 +173,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; the airport south-west of the city had only summer holiday charters in 2026, and scheduled flights go through Prague (PRG), about 126 km away in a straight line. České Budějovice is on the main railway south from Prague, and in the 2026 timetable the 'Jižní expres' InterCity takes about 1 hour 40 minutes from Prague main station, with other trains taking different times. Český Krumlov, about 22 km south-west in a straight line, is reachable by train or bus. The old town is walkable, and the city has buses and trolleybuses.",
     culture:
-      "Czech is the official language, with English usable among younger people and in tourism. Beer is part of daily life, and draught beer from the local brewery is common in old-town pubs. Restaurant bills usually do not include a service charge; a 5–10% tip or rounding up is customary.",
+      "Czech is the official language, with English usable among younger people and in tourism. Beer is part of daily life, and draught beer from the local brewery is common in old-town pubs. In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "Přemysl Otakar II Square and the Samson Fountain; climbing the Black Tower to see the old town's grid of streets; St Nicholas Cathedral; the Dominican monastery; the South Bohemian Museum; the brewery north of the centre; Hluboká Castle about 9 km north, and Český Krumlov to the south-west.",
     whenAndTips:
@@ -190,7 +190,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Telč has no airport with scheduled flights; they go through Brno (BRQ), about 90 km away in a straight line, or Prague (PRG), about 133 km. The town is on a regional branch railway rather than a main line, so train journeys usually involve a change, and long-distance buses are an alternative. The railway and bus stations are about 1 km from the square, and the town is walkable.",
     culture:
-      "Czech is the official language, with English usable in tourism. The castle is visited on guided routes with timed entry; most houses on the square are still lived in or run as shops, and the arcades are public walkways. Restaurant bills usually do not include a service charge; a 5–10% tip or rounding up is customary.",
+      "Czech is the official language, with English usable in tourism. The castle is visited on guided routes with timed entry; most houses on the square are still lived in or run as shops, and the arcades are public walkways. In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "Zachariáš of Hradec Square and its arcaded houses; the guided routes and gardens of Telč State Castle; the Church of St James; the interactive exhibition on the town's history in the Tower of the Holy Spirit; and a walk around the inner town along Ulický and Štěpnický ponds.",
     whenAndTips:
@@ -207,10 +207,46 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here. The nearest with scheduled flights is Pardubice (PED), about 44 km away in a straight line, served by Ryanair on a small number of routes; for more flights go through Brno (BRQ), about 85 km away, or Prague. Litomyšl is the terminus of the Choceň–Vysoké Mýto–Litomyšl branch railway, so train journeys usually involve a change at Choceň, and long-distance buses are an alternative. The town is walkable.",
     culture:
-      "Czech is the official language, with English usable in tourism. Smetana, composer of the cycle of symphonic poems Má vlast, was born in a flat in the castle brewery, which reopened with a new exhibition in 2024 after renovation; the 'Smetana's Litomyšl' festival is held in the castle grounds every summer, when beds are scarce. The castle is visited on guided routes. Restaurant bills usually do not include a service charge; a 5–10% tip or rounding up is customary.",
+      "Czech is the official language, with English usable in tourism. Smetana, composer of the cycle of symphonic poems Má vlast, was born in a flat in the castle brewery, which reopened with a new exhibition in 2024 after renovation; the 'Smetana's Litomyšl' festival is held in the castle grounds every summer, when beds are scarce. The castle is visited on guided routes. In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
     seeAndDo:
       "Litomyšl State Castle and its castle theatre of 1797; Smetana's birthplace in the castle brewery; the arcades and old town hall of Smetana Square; the Piarist church; the regional museum; and the summer music festival.",
     whenAndTips:
       "May–September is the most comfortable, and book ahead during the festival; the castle's season and tour routes are as announced by the National Heritage Institute. The town is small, so a day is enough, and it combines well with other small towns in the Pardubice Region.",
+  },
+
+  ostrava: {
+    // 全七段 sources: 同中文侧（ČSÚ regional balance table at 31 December 2025 = 1 January 2026, tier 1; ostrava.cz on the 23 self-governing city districts and the city statute, tier 1; airport website for scheduled service, tier 1; Czech Trade Inspection Authority for the pricing convention, tier 1; distances computed）。 核实 2026-09-16 当批。
+    identity:
+      "Ostrava lies in the Moravian-Silesian Region of eastern Czechia, with 280,853 residents at the start of 2026 (Czech Statistical Office) — on that measure the country's third largest city. Four rivers meet here, old coal and steel works stand inside the city, and the blast furnaces of Dolní Vítkovice have been turned into museums and event spaces; the Moravian-Silesian Beskids rise to the south and the Jeseníky to the north-west.",
+    howItWorks:
+      "Czech self-government has only two tiers, region and municipality, but Ostrava adds a layer below the city: it is divided into twenty-three city districts, each with its own elected assembly, board and mayor, and a city statute sets out item by item what belongs to the city and what to the districts. That makes it a counterpart to Hradec Králové, written in the same batch: both are statutory cities, but one distributes power to twenty-three district governments and the other only has advisory local commissions. Nor is there a single continuous centre: four rivers and old mining land cut the city into separate pieces, the old centre is on Masaryk Square while the town hall stands on another square a few hundred metres away, and the core of the industrial heritage is in a different district to the south, half an hour by tram from Landek in the north. So people here give the district name first and the street second. Newcomers picture a single coal-and-steel city centre, when this is twenty-three governed pieces stitched together.",
+    layout:
+      "Masaryk Square is the old centre, with the Cathedral of the Divine Saviour a few hundred metres west and the New Town Hall and its tower about 700 m north. The industrial heritage area of Dolní Vítkovice is about 2 km south, Silesian Ostrava Castle about 600 m east across the river, the Ema spoil heap about 1.8 km east-north-east and Landek Park about 4 km north-west.",
+    gettingAround:
+      "Leoš Janáček Airport is about 20 km south-west in a straight line with scheduled flights, and it has its own railway station with the platform connected to the terminal. A dense tram network ties the scattered districts together, and the main railway line runs through the station north-west of the old centre. The climate is temperate continental, with cold winters.",
+    culture:
+      "Czech is spoken. Converted industrial sites are the city's signature, with festivals held among the blast furnaces in summer. In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
+    seeAndDo:
+      "The blast furnaces and Bolt Tower at Dolní Vítkovice; the viewing tower on the New Town Hall; the mining museum at Landek Park, where you can go down a shaft; Silesian Ostrava Castle; the climb up the Ema spoil heap for the view; and the bars around Stodolní street.",
+    whenAndTips:
+      "May to September is the most comfortable. Tours of the industrial sites run to fixed times and shafts and furnaces are guided, so book ahead; the city is spread out, so a day ticket for public transport pays for itself.",
+  },
+
+  "hradec-kralove": {
+    // 全七段 sources: 同中文侧（ČSÚ regional table, preliminary figures at 31 December 2025, tier 1; hradeckralove.org on the 21 local areas and their advisory commissions under Act 128/2000, tier 1; White Tower height and dates, tier 2; Pardubice airport website, tier 1; distances computed）。 核实 2026-09-16 当批。
+    identity:
+      "Hradec Králové is in north-eastern Czechia, with 93,534 residents at the start of 2026 (Czech Statistical Office, preliminary), and is the capital of the region of the same name. The old town stands on a terrace above the confluence of the Elbe and the Orlice, with the White Tower and the Cathedral of the Holy Spirit side by side on the main square; below the terrace, across the river, is the new town laid out in the 20th century.",
+    howItWorks:
+      "This city and Ostrava, written in the same batch, make a pair: both are statutory cities, but Ostrava has twenty-three separately elected district governments beneath the city and Hradec Králové has none — its twenty-one local areas have commissions established by the city board under the local government act, bodies that initiate and advise rather than govern, while formal power stays with the council, the board and a city office of seven departments. The shape of the city is the product of two one-off decisions: at the end of the 19th century the fortress was wound up and its walls came down, leaving the land that became today's ring road and belt of parks; and in the 1920s the architect Josef Gočár drew up a regulatory plan that fixed the block sizes and building heights of the new town. So there are two centres — the medieval square on the terrace and the planned new town below it — linked by structures such as Gočár's steps. Newcomers take \"the salon of the republic\" for a tourist slogan, when it refers to the form left behind by that plan.",
+    layout:
+      "The main square is the centre of the old town, with the White Tower and the cathedral on its southern side and the Museum of Eastern Bohemia about 500 m north-east by the river. Ulrich Square and the Gočár Steps are about 800 m west, the Hučák hydroelectric station about 700 m south-west on the Elbe, and the confluence of the two rivers about 600 m south-west of the old town. The railway station is about 1.6 km west.",
+    gettingAround:
+      "The local airfield within the city has no scheduled passenger flights; the nearest airport that has them is Pardubice, about 23 km away in a straight line. Trains and coaches are the way in and out, with the station west of the old town, and the city has trolleybuses and buses while the old town is walkable. The climate is temperate continental with four distinct seasons.",
+    culture:
+      "Czech is spoken. The city is known for its 20th-century architecture, with works by Gočár and Kotěra scattered across the new town. In Czech restaurants the menu price is the final price and no percentage service charge may be added on top (Czech Trade Inspection Authority); tipping is voluntary, and rounding the total up is the usual practice.",
+    seeAndDo:
+      "The climb up the White Tower for the view over the two rivers and the terrace; the main square and the cathedral; Kotěra's Museum of Eastern Bohemia; the walk along the Elbe to the Hučák station and the confluence; and the new town around Ulrich Square as Gočár planned it.",
+    whenAndTips:
+      "May to September is the most comfortable. The old town sits above the new one, so moving between them means a climb; the tower stairs are steep, and opening hours are worth checking first.",
   },
 };

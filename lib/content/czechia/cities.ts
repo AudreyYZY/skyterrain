@@ -57,4 +57,15 @@ export const CITIES: CityEntry[] = [
     lon: 16.3106, lat: 49.8714,
     source: "利托米什尔斯美塔那广场 49.8714,16.3106（Wikidata）；本地没有定期航班的机场，不填 airport；帕尔杜比采 PED 直线约 44 km、有瑞安航空定期航班（瑞安航空新闻稿，1 级，当批核实改正），本市仍不填 airport；布尔诺 BRQ 直线约 85 km、布拉格 PRG 约 149 km（按 OurAirports 算）；UNESCO 901（1999）；离国界约 35 km（已有城市补充批，2026-09-15）",
   },
+  {
+    id: "ostrava", nameZh: "俄斯特拉发", nameEn: "Ostrava", country: "czechia", tier: "major", zone: "cz-moravia", admin1Zh: "摩拉维亚—西里西亚州", admin1En: "Moravian-Silesian Region",
+    lon: 18.2913, lat: 49.8353,
+    airport: { iata: "OSR", nameZh: "俄斯特拉发莱奥什·亚纳切克机场", nameEn: "Leoš Janáček Ostrava Airport", lon: 18.1161, lat: 49.6969 },
+    source: "俄斯特拉发马萨里克广场 49.8353,18.2913（OSM Nominatim）；OSR 直线约 20 km、有定期客运航班（机场官网 2026-09-16），机场以本城命名、由州（州府即本城）所有 —— 按「是不是这座城市自己的机场」这条线填 airport；与地形条目 moravskoslezske-beskydy、jeseniky 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "hradec-kralove", nameZh: "赫拉德茨-克拉洛韦", nameEn: "Hradec Králové", country: "czechia", tier: "major", zone: "cz-east-bohemia", admin1Zh: "赫拉德茨-克拉洛韦州", admin1En: "Hradec Králové Region",
+    lon: 15.8328, lat: 50.2093,
+    source: "赫拉德茨-克拉洛韦大广场 50.2093,15.8328（OSM Nominatim）；市域内的本地机场没有定期客运航班，最近有定期航班的是帕尔杜比采 PED（直线约 23 km）—— 那是帕尔杜比采的机场，按 2026-09 起的做法不填 airport（与利托米什尔条目一致）；与地形条目 krkonose、adrspach-teplice-rocks、labe-river 互指（已有城市补充批，2026-09-16）",
+  },
 ];

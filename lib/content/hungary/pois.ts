@@ -76,4 +76,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "匈牙利素人艺术家博物馆", nameEn: "Museum of Hungarian Naïve Artists", lon: 19.687, lat: 46.9061, kind: "landmark" },
     { nameZh: "自然之家（基什孔沙格国家公园访客中心）", nameEn: "House of Nature (Kiskunság National Park visitor centre)", lon: 19.703, lat: 46.92, kind: "landmark" },
   ],
+  miskolc: [
+    { nameZh: "迪欧什哲尔城堡", nameEn: "Diósgyőr Castle", lon: 20.6894, lat: 48.0978, kind: "landmark" },
+    { nameZh: "米什科尔茨陶波尔曹溶洞浴场", nameEn: "Miskolctapolca cave bath", lon: 20.7444, lat: 48.0606, kind: "landmark" },
+    { nameZh: "安娜洞", nameEn: "Anna Cave", lon: 20.625, lat: 48.1051, kind: "nature" },
+    { nameZh: "圣伊什特万洞", nameEn: "St Stephen's Cave", lon: 20.6214, lat: 48.0997, kind: "nature" },
+    { nameZh: "哈莫尔湖（利劳弗赖德）", nameEn: "Hámori Lake at Lillafüred", lon: 20.6159, lat: 48.1079, kind: "nature" },
+    { nameZh: "奥沃什观景塔", nameEn: "Avas lookout tower", lon: 20.7755, lat: 48.0994, kind: "landmark" },
+  ],
+  keszthely: [
+    { nameZh: "费斯特蒂奇宫", nameEn: "Festetics Palace", lon: 17.2419, lat: 46.7707, kind: "landmark" },
+    { nameZh: "巴拉顿博物馆", nameEn: "Balaton Museum", lon: 17.2424, lat: 46.7588, kind: "landmark" },
+    { nameZh: "市立湖滨浴场", nameEn: "Town lakeside beach", lon: 17.2495, lat: 46.7568, kind: "nature" },
+    { nameZh: "赫维兹温泉湖（邻市）", nameEn: "Lake Hévíz (neighbouring town)", lon: 17.1928, lat: 46.7868, kind: "nature" },
+    { nameZh: "凯斯特海伊车站", nameEn: "Keszthely railway station", lon: 17.2475, lat: 46.7579, kind: "district" },
+  ],
 };
