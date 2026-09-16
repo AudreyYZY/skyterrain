@@ -361,10 +361,10 @@ const TSAGAAN_SUVARGA: TerrainEntry = {
   category: "hills",
   regionId: "asia",
   country: "mongolia",
-  landmark: { name: "查干苏日格崖壁", lon: 105.40, lat: 46.70, elevation: 1300, kind: "escarpment" },
-  bbox: [105.30, 46.60, 105.55, 46.80],
-  label: { lon: 105.40, lat: 46.82, rotation: 0 },
-  source: "查干苏日格（白塔崖）：中戈壁省乌力吉区一处石灰岩与粘土质侵蚀崖壁，最高处逾60米、延伸长度约400米，岩层记录了这一带曾为古海底沉积环境的地质历史，崖面呈现白、橙、锈红等分层色带，偶见细小化石残片（Wikipedia/travelchinaguide.com WebSearch 2026）",
+  landmark: { name: "查干苏日格崖壁", lon: 105.7173, lat: 44.5769, elevation: 1300, kind: "escarpment" },
+  bbox: [105.62, 44.50, 105.82, 44.66],
+  label: { lon: 105.7173, lat: 44.68, rotation: 0 },
+  source: "查干苏日格（白塔崖）：中戈壁省南部一处石灰岩与粘土质侵蚀崖壁，最高处逾60米、延伸长度约400米，岩层记录了这一带曾为古海底沉积环境的地质历史，崖面呈现白、橙、锈红等分层色带，偶见细小化石残片（Wikipedia/travelchinaguide.com WebSearch 2026）",
 };
 
 export const TERRAINS: TerrainEntry[] = [

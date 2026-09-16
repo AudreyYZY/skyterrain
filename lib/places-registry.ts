@@ -268,7 +268,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "mn-central": { zh: "中部", en: "Central Mongolia", order: 320 },
   "mn-north": { zh: "北部", en: "Northern Mongolia", order: 321 },
   "mn-west": { zh: "西部", en: "Western Mongolia", order: 322 },
-  "mn-gobi": { zh: "戈壁南部", en: "South Gobi", order: 323 },
+  "mn-gobi": { zh: "戈壁", en: "Gobi", order: 323 },
   "mn-east": { zh: "东部", en: "Eastern Mongolia", order: 324 },
   // 马来西亚
   "my-central": { zh: "中部", en: "Central Malaysia", order: 330 },

@@ -10,9 +10,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Sweden can be divided roughly into: Svealand (Stockholm and its surroundings, the political and economic centre), Götaland (Gothenburg, Malmö and the island of Gotland, the southern coastal and farming region), and Norrland (Kiruna and Luleå, the northern forest and Lapland mountain region, covering about two-thirds of the country's area but sparsely populated).",
     gettingAround:
-      "Stockholm Arlanda Airport is the main international gateway; domestic flights are hubbed through Stockholm across more than 80 routes nationwide, and the rail network also covers the main cities, though a north-south journey across the country can take anywhere from several hours to over ten. Driving is on the right. The climate transitions from temperate continental in the south to subarctic in the north; Lapland in the far north has long, severe winters with midnight sun in summer, while the south is comparatively mild. Restaurant bills typically already include service, with no extra tip required. The voltage is 230V with EU-style two-round-pin plugs.",
+      "Stockholm Arlanda Airport is the main international gateway; domestic flights are hubbed through Stockholm across more than 80 routes nationwide, and the rail network also covers the main cities, though a north-south journey across the country can take anywhere from several hours to over ten. Driving is on the right. The climate transitions from temperate continental in the south to subarctic in the north; Lapland in the far north has long, severe winters with midnight sun in summer, while the south is comparatively mild. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough. The voltage is 230V with EU-style two-round-pin plugs.",
     culture:
-      "The official language is Swedish, and English proficiency is extremely high. Swedes value equality, simplicity and the philosophy of \"lagom\" (just the right amount), and society places strong emphasis on environmental protection and gender equality. Northern Lapland is the traditional homeland of the Indigenous Sámi people, and reindeer-herding culture continues there today. Anything stronger than low-alcohol beer can only be bought at the state-run Systembolaget shops, which keep limited hours and are usually closed on Sundays — ordinary supermarkets sell only low-alcohol drinks. Restaurant bills typically don't require a tip; rounding up is fine.",
+      "The official language is Swedish, and English proficiency is extremely high. Swedes value equality, simplicity and the philosophy of \"lagom\" (just the right amount), and society places strong emphasis on environmental protection and gender equality. Northern Lapland is the traditional homeland of the Indigenous Sámi people, and reindeer-herding culture continues there today. Anything stronger than low-alcohol beer can only be bought at the state-run Systembolaget shops, which keep limited hours and are usually closed on Sundays — ordinary supermarkets sell only low-alcohol drinks. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Natural landforms: Kebnekaise and Sarek National Park, the High Coast (a World Heritage Site), Lapporten, the Stockholm Archipelago, the medieval town of Visby on Gotland (a World Heritage Site). Heritage and culture: Stockholm's Old Town and the Vasa Museum, Uppsala Cathedral, the naval city of Karlskrona (a World Heritage Site). Polar experiences: the northern lights and the Ice Hotel at Kiruna.",
     whenAndTips:
@@ -34,7 +34,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Arlanda Airport is about 40 km from the centre, with a direct express train. The city has an extensive metro network (often called \"the world's longest art gallery\"), and buses and walking are also good options. The climate is temperate continental, cold and snowy in winter, cool in summer.",
     culture:
-      "The official language is Swedish, and English proficiency is extremely high. Stockholm is the birthplace of Swedish design brands such as IKEA and H&M, and the site of the Nobel Prize ceremony. \"Fika\" (a coffee-break social ritual) is an important Swedish tradition. Restaurant bills typically already include service.",
+      "The official language is Swedish, and English proficiency is extremely high. Stockholm is the birthplace of Swedish design brands such as IKEA and H&M, and the site of the Nobel Prize ceremony. \"Fika\" (a coffee-break social ritual) is an important Swedish tradition. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Gamla Stan old town and the Royal Palace; the Vasa Museum (displaying a fully recovered 17th-century warship); City Hall (venue of the Nobel banquet); Skansen open-air museum. A boat trip out into the Stockholm Archipelago nearby.",
     whenAndTips:
@@ -55,7 +55,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Uppsala's own airport has no scheduled passenger service; the nearest with scheduled flights is Arlanda (about 40 km); from Stockholm a direct train takes about 40 minutes. The old town is walkable, and cycling is an important part of daily local transport. The climate is temperate continental.",
     culture:
-      "The official language is Swedish, with high English proficiency and a lively university-town atmosphere. Uppsala is where the botanist Carl Linnaeus lived and worked for much of his life, and the Linnaeus Garden survives today. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency and a lively university-town atmosphere. Uppsala is where the botanist Carl Linnaeus lived and worked for much of his life, and the Linnaeus Garden survives today. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Uppsala Cathedral (a former coronation site for Swedish monarchs); Uppsala Castle; the Linnaeus Garden and Linnaeus Museum; the Old Uppsala burial mounds (a Viking-age royal burial site).",
     whenAndTips:
@@ -78,7 +78,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Göteborg Landvetter Airport is about 25 km by road from the centre, reached by bus; from Stockholm the train takes about 3 hours. The city has an extensive tram network, and walking or cycling are also good options. The climate is temperate maritime, with a rainy coast.",
     culture:
-      "The official language is Swedish, with high English proficiency. Gothenburgers are known for their humour and directness and are often considered Sweden's most down-to-earth big-city residents. \"Fika\" coffee culture is equally strong here. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Gothenburgers are known for their humour and directness and are often considered Sweden's most down-to-earth big-city residents. \"Fika\" coffee culture is equally strong here. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Liseberg amusement park (one of the largest in Northern Europe); Gothenburg Cathedral; Feskekôrka (the \"Fish Church\" fish market); the Frihamnen waterfront cultural district. A day trip to the Koster Islands on the Bohuslän Coast nearby.",
     whenAndTips:
@@ -98,7 +98,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Malmö Airport is about 28 km in a straight line from the centre; a train across the Øresund Bridge also reaches Copenhagen Airport directly (about 25 minutes). The city has an extensive network of cycle lanes, and buses and walking are also good options. The climate is temperate maritime, one of the mildest in Sweden.",
     culture:
-      "The official language is Swedish, with high English proficiency and a culturally diverse population due to a high share of immigrants. Malmö and Copenhagen together form the Øresund metropolitan region, with frequent daily commuting between the two. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency and a culturally diverse population due to a high share of immigrants. Malmö and Copenhagen together form the Øresund metropolitan region, with frequent daily commuting between the two. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Malmö Castle; the view from the Turning Torso (one of the tallest buildings in Scandinavia); the old town square; the Western Harbour sustainable district. A day trip across the Øresund Bridge to Copenhagen.",
     whenAndTips:
@@ -119,7 +119,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Visby Airport is about 4 km in a straight line from the centre; ferries also run from Stockholm or ports in Södermanland. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, moderated by the surrounding sea.",
     culture:
-      "The official language is Swedish, with high English proficiency. Visby hosts Almedalen Week each July, a major political gathering and medieval-themed festival, and is an important venue for Swedish cultural and political events. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Visby hosts Almedalen Week each July, a major political gathering and medieval-themed festival, and is an important venue for Swedish cultural and political events. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "A walk along Visby's medieval city walls; St Mary's Cathedral; the ruins of St Catherine's Church. Day trips to Stora Alvaret and the sea stacks of Fårö nearby.",
     whenAndTips:
@@ -137,7 +137,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Ronneby Airport is about 23 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 5 hours. The old town is walkable; exploring the Blekinge Archipelago nearby requires a car or boat. The climate is temperate maritime.",
     culture:
-      "The official language is Swedish, with high English proficiency. Karlskrona's civic identity is closely tied to the history of the Swedish Royal Navy, and it remains an important naval base today. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Karlskrona's civic identity is closely tied to the history of the Swedish Royal Navy, and it remains an important naval base today. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "The Naval Museum; the Church of Saint Mary and Trinity Church (Baroque architecture landmarks); the old town square. A boat tour of the Blekinge Archipelago nearby.",
     whenAndTips:
@@ -158,7 +158,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Kalmar Airport is about 4.9 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 4.5 hours. The old town is walkable; Öland is reachable by car across the bridge. The climate is temperate maritime.",
     culture:
-      "The official language is Swedish, with high English proficiency. Kalmar Castle was the site where the Kalmar Union — the 1397 union of the crowns of Denmark, Sweden and Norway — was concluded, an important landmark in Nordic history. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Kalmar Castle was the site where the Kalmar Union — the 1397 union of the crowns of Denmark, Sweden and Norway — was concluded, an important landmark in Nordic history. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Kalmar Castle; Kalmar Cathedral; the Baroque old-town district. A day trip across the bridge to Stora Alvaret on Öland.",
     whenAndTips:
@@ -179,7 +179,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Kiruna Airport is about 6 km in a straight line from the centre, reached by bus; from Stockholm the night train takes about 17 hours. The town centre is walkable; reaching Kebnekaise and Abisko requires a car or train. The climate is subarctic, with long, severe winters (temperatures can fall below -30°C) and midnight sun in summer.",
     culture:
-      "The official language is Swedish, and Kiruna is also an important centre of Swedish Sámi Indigenous culture, home to the Sámi Parliament's museum. Restaurant bills typically already include service.",
+      "The official language is Swedish, and Kiruna is also an important centre of Swedish Sámi Indigenous culture, home to the Sámi Parliament's museum. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Kiruna Church (a timber church moved intact to its new site); the Sámi cultural centre; the Icehotel (rebuilt from ice and snow each winter). Hiking Kebnekaise nearby, or watching the northern lights at Abisko.",
     whenAndTips:
@@ -199,7 +199,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Luleå Airport is about 4.8 km in a straight line from the centre, reached by bus; from Stockholm the train takes about 14 hours, or about 1.5 hours by air. The city centre is walkable. The climate is subarctic, with severe winters and a frozen bay.",
     culture:
-      "The official language is Swedish, with high English proficiency. Luleå is an important steel-industry and technology centre in northern Sweden, and a transport hub for reaching the northern archipelago and Lapland. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Luleå is an important steel-industry and technology centre in northern Sweden, and a transport hub for reaching the northern archipelago and Lapland. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Gammelstad Church Town (a World Heritage Site); the Luleå archipelago (walkable or ski-able across the frozen sea in winter); the Norrbotten Museum.",
     whenAndTips:
@@ -221,7 +221,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Sundsvall-Timrå Airport (about 45 km); from Stockholm the train takes about 4.5 hours. The old town is walkable; exploring the High Coast requires a car. The climate is temperate continental, with cold winters.",
     culture:
-      "The official language is Swedish, with high English proficiency. Härnösand was historically an important Swedish timber-trading port and is now the gateway town for exploring the geological wonder of the High Coast. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Härnösand was historically an important Swedish timber-trading port and is now the gateway town for exploring the geological wonder of the High Coast. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "The old town's 19th-century wooden building district; the view from the High Coast Bridge. A hike along the uplifted shoreline trails of the High Coast nearby.",
     whenAndTips:
@@ -244,10 +244,46 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Åre Östersund Airport is about 80 km in a straight line from town, reached by bus; from Stockholm the train takes about 6.5 hours. The town itself is walkable; the ski area is reached by cable car or shuttle. The climate is subarctic mountain, cold and snowy in winter, cool in summer.",
     culture:
-      "The official language is Swedish, with high English proficiency. Åre is a favourite retreat of Swedish royalty and celebrities, and home to the largest ski resort in Northern Europe. Restaurant bills typically already include service.",
+      "The official language is Swedish, with high English proficiency. Åre is a favourite retreat of Swedish royalty and celebrities, and home to the largest ski resort in Northern Europe. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough.",
     seeAndDo:
       "Skiing Åreskutan (one of the largest ski areas in Northern Europe); canoeing and fishing on Lake Åre in summer; a cable-car ride to the summit for the view; hiking the Jämtland mountains nearby.",
     whenAndTips:
       "December–April is peak ski season; June–August is peak season for summer outdoor activities — one of the few destinations with both a winter ski season and a summer hiking season.",
+  },
+
+  falun: {
+    // 全七段 sources: 同中文侧（SCB municipality and tätort tables, tier 1; UNESCO 1027, tier 1; Länsstyrelsen Dalarna 2023 report on Falu gruva, tier 1; Dala Airport official site and SVT on the end of scheduled flights, tier 1/2; SCB election statistics for council seats, tier 1; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Falun is the capital of Dalarna County in Sweden, with 59,974 people in the municipality at the end of 2025 and 39,939 in the built-up area (Statistics Sweden). Just over a kilometre south-west of town is the pit of the Great Copper Mountain, where mining goes back at least to the 9th century according to the World Heritage summary and ended in 1992; the mining area and the 17th-century planned town were inscribed together as World Heritage in 2001.",
+    howItWorks:
+      "Swedish local government has two tiers: municipalities run schools, elderly care and planning, regions run hospitals and public transport, the state runs the police and the universities, and local self-government and the right to tax are written into the constitution. Falun is the capital of Dalarna County, with both the county administrative board and the regional authority based in town, and its municipal council had 61 seats in the 2022–2026 term. The World Heritage site is governed separately: under the Historic Environment Act any intervention in listed buildings or archaeological remains needs the approval of the county administrative board, the mine itself is owned by the Great Copper Mountain Foundation, most of the miners' houses in town are private, and a World Heritage council brings together the municipality, the foundation, the Dalarna Museum and the county board. Buy an old house here and want to change a window, in other words, and it is a county-level board you answer to rather than the municipality. The shape of the town is itself part of the site: the 17th-century planned centre is Stora Torget and Kristine Church, the pit and the slag heaps lie just over a kilometre to the south-west, and the miners' timber quarter sits between them. One more thing catches people out: Falun is the county capital, but the airport, the rail junction and the national transport administration's head office are all in Borlänge, 17 km away.",
+    layout:
+      "Stora Torget and Kristine Church form the centre of town, with the Dalarna Museum a few hundred metres south-west of the square. The Falu mine and its Great Pit lie about 1.4 km south-west of the centre, and the Elsborg miners' quarter between them, about 0.8 km out. The Lugnet ski arena is about 2 km north-east and the Carl Larsson house about 9 km north-east at Sundborn; the railway station is just under a kilometre south of the centre.",
+    gettingAround:
+      "There are no scheduled passenger flights to Falun: as of September 2026 Dala Airport in neighbouring Borlänge handles only charters, and the nearest airport with scheduled service is Stockholm Arlanda, about 165 km away in a straight line. Trains are the way in and out, with Falun on the Dalarna line running through Borlänge towards Stockholm. The centre is walkable and the mine is an easy walk or cycle. The climate is inland and cold-temperate, with snowy winters and cool summers.",
+    culture:
+      "Swedish is spoken, and English is widely used. The red-pigment works stand within the mining area itself, and the Falu red paint colour comes from the residue of this mine. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough. Tap water is safe to drink, from the cold tap only.",
+    seeAndDo:
+      "The Falu mine and its Great Pit, with a descent into the visitor mine; the mining museum and the 18th-century houses in the mining area; Stora Torget and Kristine Church; the Dalarna Museum; the miners' timber quarter at Elsborg; the Carl Larsson house at Sundborn outside town; and the ski arena at Lugnet.",
+    whenAndTips:
+      "June to September is pleasant, and winter is the ski season though daylight is short. The visitor mine is cold and the footing wet, so follow the clothing rules on site, and check opening times before you go as the tours change with the season.",
+  },
+
+  umea: {
+    // 全七段 sources: 同中文侧（SCB TAB628 and TAB5357, tier 1; SCB election statistics, tier 1; Region Västerbotten on the university hospital, tier 1; Trafikverket on the Norrbotnia line, tier 2–3 with a dated qualifier; Wasaline, tier 1; the 1888 fire and the birches only tier 3 and written as reported）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Umeå is the capital of Västerbotten County in northern Sweden, near the mouth of the Ume river, with 135,273 people in the municipality at the end of 2025 and 94,243 in the built-up area at the 2023 count (Statistics Sweden) — on that measure the largest built-up area in Norrland. Neither of the two engines that made the city belongs to the municipality: Umeå University, founded in 1965, and the Norrland University Hospital, which serves the four northernmost regions of Sweden.",
+    howItWorks:
+      "Swedish local government has two tiers: municipalities run schools, elderly care and planning, regions run hospitals and public transport, and the state runs the police and the universities. Umeå's municipal council had 65 seats in the 2022–2026 term, and both Region Västerbotten and the county administrative board are based in the city. What really shapes the population are two institutions the municipality does not run: the university, founded in 1965, which brings in students by the thousand, and the Norrland University Hospital, run by the region, which provides specialist care for the four northernmost regions along with some national highly specialised services and employs around 5,200 people — the region calls it the largest workplace in Norrland. The centre is around Rådhustorget on the north bank of the Ume river, with the university and hospital forming a single area about 2 km east and the main commuting corridor in between. The great fire of 1888 is reported to have destroyed the eastern half of the town, after which close to three thousand birches were planted along widened avenues as firebreaks, giving the city its nickname, the city of birches. Newcomers often assume Norrland's towns are all small, and often expect a port town — the harbour is 14 km away in a straight line at Holmsund.",
+    layout:
+      "Rådhustorget on the north bank of the Ume river is the centre, with the Väven cultural centre and Norrlandsoperan nearby. Umeå University is about 2 km east, with Bildmuseet on the riverside edge of its campus, and the Västerbotten Museum and the Gammlia open-air museum about 1.5 km north-east. Backen Church is about 4.6 km west, the central station about 0.5 km north of the centre, and the port of Holmsund about 14 km south-east.",
+    gettingAround:
+      "Umeå Airport is about 4 km from the centre in a straight line, with domestic and international scheduled flights. Trains run south on the Botnia line, opened in 2010; the Norrbotnia line northwards is under construction and, as of September 2026, not yet through, with progress announced by the Swedish Transport Administration. Ferries from Holmsund cross to Vaasa in Finland in about four hours. Within the city, walking, cycling and buses do the work. The climate is northern continental, with cold snowy winters and cool summers, and very light nights around midsummer.",
+    culture:
+      "Swedish is spoken, and English is widely used. The city has an opera house, a contemporary art museum and the county museum, and in 2014 Umeå was one of the European Capitals of Culture. Restaurant bills sometimes include a service charge, and when they do it is clearly stated on the bill; tipping is not expected, and rounding up is enough. Tap water is safe to drink, from the cold tap only.",
+    seeAndDo:
+      "Rådhustorget and the riverside Väven; Bildmuseet; the Västerbotten Museum and the Gammlia open-air museum; a performance at Norrlandsoperan; a walk along the Ume river paths; and the ferry from Holmsund to Vaasa in Finland.",
+    whenAndTips:
+      "June to August has the longest days and the best weather; winter is cold with short days but good for the northern lights and winter sports. Buses and cycle paths link the centre with the university, and pavements ice over in winter, so wear shoes with grip.",
   },
 };

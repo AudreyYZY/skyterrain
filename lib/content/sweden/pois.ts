@@ -54,4 +54,22 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "奥勒斯基山滑雪区", nameEn: "Åreskutan Ski Area", lon: 13.0836, lat: 63.4394, kind: "nature" },
     { nameZh: "奥勒湖", nameEn: "Lake Åre", lon: 13.0783, lat: 63.3958, kind: "nature" },
   ],
+  falun: [
+    { nameZh: "法伦铜矿与「大坑」", nameEn: "Falu Mine and the Great Pit", lon: 15.612407, lat: 60.599309, kind: "landmark" },
+    { nameZh: "克里斯蒂娜教堂", nameEn: "Falu Kristine Church", lon: 15.631212, lat: 60.607726, kind: "landmark" },
+    { nameZh: "斯托拉广场", nameEn: "Stora Torget", lon: 15.630088, lat: 60.607399, kind: "district" },
+    { nameZh: "达拉纳博物馆", nameEn: "Dalarna Museum", lon: 15.627476, lat: 60.605945, kind: "landmark" },
+    { nameZh: "埃尔斯堡矿工木屋区", nameEn: "Elsborg miners' quarter", lon: 15.626337, lat: 60.601746, kind: "district" },
+    { nameZh: "卡尔·拉松故居（松德博恩）", nameEn: "Carl Larsson House (Sundborn)", lon: 15.775784, lat: 60.650047, kind: "landmark" },
+    { nameZh: "隆内特滑雪场馆", nameEn: "Lugnet ski arena", lon: 15.656935, lat: 60.621663, kind: "nature" },
+  ],
+  umea: [
+    { nameZh: "市政厅广场", nameEn: "Rådhustorget", lon: 20.263159, lat: 63.825457, kind: "district" },
+    { nameZh: "于默奥大学", nameEn: "Umeå University", lon: 20.304316, lat: 63.821776, kind: "district" },
+    { nameZh: "图像博物馆", nameEn: "Bildmuseet", lon: 20.276307, lat: 63.820325, kind: "landmark" },
+    { nameZh: "西博滕博物馆与加姆利亚露天博物馆", nameEn: "Västerbotten Museum and Gammlia", lon: 20.28932, lat: 63.829376, kind: "landmark" },
+    { nameZh: "诺尔兰歌剧院", nameEn: "Norrlandsoperan", lon: 20.268955, lat: 63.828012, kind: "landmark" },
+    { nameZh: "韦文文化宫", nameEn: "Väven", lon: 20.260399, lat: 63.8246, kind: "landmark" },
+    { nameZh: "巴肯教堂", nameEn: "Backen Church", lon: 20.169897, lat: 63.830704, kind: "landmark" },
+  ],
 };

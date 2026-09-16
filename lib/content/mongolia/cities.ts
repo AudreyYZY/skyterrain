@@ -61,4 +61,14 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "UBN", nameZh: "成吉思汗国际机场", nameEn: "Chinggis Khaan International", lon: 106.8161, lat: 47.6467 },
     source: "车车尔勒格市中心 47.4767,101.4544；本地设有车车尔勒格机场（TSZ）但客运航班暂不稳定，通常经乌兰巴托方向公路往返（约420km）：公开资料",
   },
+  {
+    id: "sainshand", nameZh: "赛音山达", nameEn: "Sainshand", country: "mongolia", tier: "notable", zone: "mn-gobi", admin1Zh: "东戈壁省", admin1En: "Dornogovi Province",
+    lon: 110.1431, lat: 44.8884,
+    source: "赛音山达 44.888391,110.143126（OSM Nominatim administrative 节点）；本地机场 OurAirports scheduled_service=no、无 IATA 码，不填 airport；进出以铁路为主，车站在城区北片 44.9158,110.1415（OSM）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "bayankhongor", nameZh: "巴彦洪戈尔", nameEn: "Bayankhongor", country: "mongolia", tier: "notable", zone: "mn-central", admin1Zh: "巴彦洪戈尔省", admin1En: "Bayankhongor Province",
+    lon: 100.7143, lat: 46.1937,
+    source: "巴彦洪戈尔 46.193665,100.714265（OSM Nominatim administrative 节点；同一查询的 45.238,99.515 是省的中心，未用）；本地 BYN 机场在城区约 3.5 km，OurAirports 标有定期航班，但国内航班班次的四个来源互相矛盾、MIAT 官网取不到，按规则 ⑬ 的保守做法不填 airport、正文写「班次很少，出发前查询」（已有城市补充批，2026-09-16）",
+  },
 ];
