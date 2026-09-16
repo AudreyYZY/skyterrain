@@ -72,4 +72,14 @@ export const CITIES: CityEntry[] = [
     lon: 25.4895, lat: 42.8662,
     source: "特里亚夫纳钟楼广场 42.8662,25.4895（OSM）；本地没有定期航班的机场，不填 airport；普罗夫迪夫 PDV 直线约 103 km、索非亚 SOF 约 170 km（按 OurAirports 算）；离国界约 84 km（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "shumen", nameZh: "舒门", nameEn: "Shumen", country: "bulgaria", tier: "major", zone: "bg-north", admin1Zh: "舒门州", admin1En: "Shumen Province",
+    lon: 26.9244, lat: 43.2701,
+    source: "舒门市政厅 43.2701,26.9244（OSM Nominatim relation/4033337）；市域内的舒门机场 scheduled_service=no，最近有定期航班的是瓦尔纳 VAR、直线约 73 km —— 超出既有填写范围，与大特尔诺沃 / 鲁塞 / 卡赞勒克一致不填 airport；离国界约 90 km；与地形条目 danubian-plain 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "vratsa", nameZh: "弗拉察", nameEn: "Vratsa", country: "bulgaria", tier: "major", zone: "bg-west", admin1Zh: "弗拉察州", admin1En: "Vratsa Province",
+    lon: 23.5476, lat: 43.203,
+    source: "弗拉察市政厅 43.2030,23.5476（OSM node/5929206835，amenity=townhall、townhall:type=municipality —— 同城的州政府是另一个对象 way/329923397，不要混用）；市域内的弗拉察机场 scheduled_service=no，最近有定期航班的是索非亚 SOF、直线约 57 km，按班斯科的先例不填 airport；离国界约 46 km；与地形条目 balkan-mountains、iskar-river 互指（已有城市补充批，2026-09-16）",
+  },
 ];

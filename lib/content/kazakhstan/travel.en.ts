@@ -12,7 +12,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Domestic flights are the main way to travel between regions, with Air Astana, SCAT and other carriers covering major cities; the rail network is extensive, and long-distance sleeper trains are an economical if slow option (some routes exceed 20 hours). Since March 2024 Kazakhstan has used a single UTC+5 time zone nationwide (previously the east and west fell into two separate zones). The climate is a classic continental one — hot, dry summers and long, severe winters, with large diurnal and seasonal temperature swings. Citizens of many countries can enter visa-free for up to 30 days — check Kazakhstan's Ministry of Foreign Affairs for current rules.",
     culture:
-      "Kazakhstan is a secular, multi-ethnic country where Islam and Orthodox Christianity are the main religions, and the religious atmosphere is generally moderate. Kazakh hospitality (konakasy) is taken very seriously — guests invited into a home are typically served generously, and accepting food offered by a host is basic courtesy. Shoes come off before entering a mosque or mausoleum, and women should carry a headscarf. Unlike many Southeast Asian countries, tipping is customary in Kazakhstan — typically 5–10% of the restaurant bill, though upscale places may already include a service charge.",
+      "Kazakhstan is a secular, multi-ethnic country where Islam and Orthodox Christianity are the main religions, and the religious atmosphere is generally moderate. Kazakh hospitality (konakasy) is taken very seriously — guests invited into a home are typically served generously, and accepting food offered by a host is basic courtesy. Shoes come off before entering a mosque or mausoleum, and women should carry a headscarf. Unlike many Southeast Asian countries, tipping is customary in Kazakhstan — typically 5–10% of the restaurant bill, though a service charge has to be disclosed in advance, whether by a notice, the menu or the waiter.",
     seeAndDo:
       "The Zailiysky Alatau, Charyn Canyon and the Kolsai-Kaindy lakes around Almaty; Astana's futuristic architecture; the Yasawi Mausoleum in Turkestan (a UNESCO World Heritage Site); the desert wonders of Bozzhyra Canyon and the Karagiye Depression in Mangystau; Lake Balkhash's \"two waters in one lake\" phenomenon; the Saryarka steppe and the Korgalzhyn migratory-bird reserve.",
     whenAndTips:
@@ -32,7 +32,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Astana International Airport (NQZ) is about 18 km in a straight line from the city centre; taxis, ride-hailing apps and buses are the main way to get around town, and the left-bank new city's wide boulevards mean walking distances there tend to be long.",
     culture:
-      "The official language is Kazakh, with Russian widely spoken. Kazakh hospitality is taken seriously, and accepting food offered by a host is basic courtesy. Shoes come off before entering the Nur-Astana Mosque or other religious sites, and women should carry a headscarf. Tipping is customary in Kazakhstan — typically an extra 5–10% on top of the restaurant bill.",
+      "The official language is Kazakh, with Russian widely spoken. Kazakh hospitality is taken seriously, and accepting food offered by a host is basic courtesy. Shoes come off before entering the Nur-Astana Mosque or other religious sites, and women should carry a headscarf. Tipping is customary in Kazakhstan — typically an extra 5–10% on top of the restaurant bill. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
     seeAndDo:
       "The Bayterek Tower (climb up for a view over the city and steppe); the Khan Shatyr entertainment centre (designed by Norman Foster, the world's largest tent-like structure); the Nur-Astana Mosque (2005) and the Astana Grand Mosque (completed in 2022, the largest mosque in Central Asia); the National Museum of Kazakhstan; the Presidential Cultural Centre and Independence Square.",
     whenAndTips:
@@ -51,7 +51,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Almaty International Airport (ALA) is about 21 km in a straight line from the city centre; the city has a single metro line and a bus network, while reaching mountain sites like Medeu or Big Almaty Lake usually requires a hired car or a local tour; Charyn Canyon and the Kolsai-Kaindy lakes require a one- or two-day trip out of Almaty.",
     culture:
-      "The official language is Kazakh, with Russian widely used in Almaty — in some contexts even more common. Almaty is one of Kazakhstan's most cosmopolitan and secular cities, and everyday dress is fairly relaxed; religious sites still call for basic etiquette such as removing shoes and women carrying a headscarf. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
+      "The official language is Kazakh, with Russian widely used in Almaty — in some contexts even more common. Almaty is one of Kazakhstan's most cosmopolitan and secular cities, and everyday dress is fairly relaxed; religious sites still call for basic etiquette such as removing shoes and women carrying a headscarf. According to the trade ministry's consumer-protection committee, a service charge has to be disclosed in advance — a notice at the entrance, a line in the menu or the waiter telling you all count; anything beyond it is voluntary.",
     seeAndDo:
       "The Medeu high-altitude skating rink and viewpoint; Big Almaty Lake (a glacial lake and alpine hiking); Panfilov Park and the Ascension Cathedral (a wooden Orthodox church); Republic Square and the Abay Opera and Ballet Theatre; using Almaty as a base for a one- or multi-day trip to Charyn Canyon or the Kolsai and Kaindy lakes.",
     whenAndTips:
@@ -69,7 +69,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Shymkent International Airport (CIT) is about 12 km in a straight line from the city centre; buses and taxis are the main way to get around town, and reaching Turkestan usually means about 2 hours by highway.",
     culture:
-      "The official language is Kazakh, and the city carries a comparatively strong traditional Kazakh cultural atmosphere, one of the places in southern Kazakhstan where older customs are best preserved. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+      "The official language is Kazakh, and the city carries a comparatively strong traditional Kazakh cultural atmosphere, one of the places in southern Kazakhstan where older customs are best preserved. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
     seeAndDo:
       "Shymkent's central bazaar (everyday local market life); Independence Park and Al-Farabi Square; the Regional History Museum; using Shymkent as a base for a visit to the Yasawi Mausoleum in Turkestan.",
     whenAndTips:
@@ -88,7 +88,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Aktau International Airport (SCO) is about 24 km in a straight line from the city centre; taxis are the main way to get around town, while reaching desert sites like Bozzhyra and Karagiye involves rough terrain and usually requires a rented 4x4 with a local guide familiar with the route.",
     culture:
-      "The official language is Kazakh, with Russian widely used. Aktau is an oil-industry city on the Caspian coast, and the pace of local life leans business-oriented; shoes come off before entering religious sites, and women should carry a headscarf. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
+      "The official language is Kazakh, with Russian widely used. Aktau is an oil-industry city on the Caspian coast, and the pace of local life leans business-oriented; shoes come off before entering religious sites, and women should carry a headscarf. According to the trade ministry's consumer-protection committee, a service charge has to be disclosed in advance — a notice at the entrance, a line in the menu or the waiter telling you all count; anything beyond it is voluntary.",
     seeAndDo:
       "Bozzhyra Canyon (chalk \"fang\" rock towers and \"Martian\" terrain); the Karagiye Depression (Kazakhstan's lowest point); Torysh, the Valley of Balls (spherical sandstone concretions); Aktau's seaside promenade and Blue Bay beach; the Mangystau Regional History Museum.",
     whenAndTips:
@@ -107,7 +107,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Hazrat Sultan International Airport (HSA), opened in 2020, is about 24 km in a straight line from the city centre; taxis are the main way to get around town, and the city is easily reached from either Shymkent or its own airport.",
     culture:
-      "The official language is Kazakh. The Yasawi Mausoleum is one of Kazakhstan's most important Islamic sacred sites — dress modestly and remove shoes before entering the mausoleum complex, and women should carry a headscarf; as a pilgrimage site, keep noise down and be respectful of worshippers in prayer. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
+      "The official language is Kazakh. The Yasawi Mausoleum is one of Kazakhstan's most important Islamic sacred sites — dress modestly and remove shoes before entering the mausoleum complex, and women should carry a headscarf; as a pilgrimage site, keep noise down and be respectful of worshippers in prayer. According to the trade ministry's consumer-protection committee, a service charge has to be disclosed in advance — a notice at the entrance, a line in the menu or the waiter telling you all count; anything beyond it is voluntary.",
     seeAndDo:
       "The Yasawi Mausoleum (commissioned by Timur in 1389–1405, a UNESCO World Heritage Site and a showcase of Timurid architectural experimentation); the archaeological heritage park surrounding the mausoleum; the Hazrat Sultan Mosque; the Turkestan Regional History Museum.",
     whenAndTips:
@@ -127,7 +127,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Sary-Arka Airport (KGF) is about 23 km in a straight line from the city centre; buses and taxis are the main way to get around town, and reaching Karkaraly or Bektau-Ata usually requires a hired car, each several hours' drive on mountain roads.",
     culture:
-      "The official language is Kazakh, with Russian widely used in Karaganda. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+      "The official language is Kazakh, with Russian widely used in Karaganda. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
     seeAndDo:
       "The Karaganda Regional History Museum; using Karaganda as a base for a trip to Karkaraly National Park (granite mountains, pine forest and lakes); hiking and rock climbing among the granite boulders of Bektau-Ata.",
     whenAndTips:
@@ -149,7 +149,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     // culture sources: ⚠️ 零争议红线，**只改这一句**：删掉「承受深重的核辐射影响」这半句评价性表述（谈的是活着的人群的健康后果），保留「有严肃的纪念与教育设施、参观请保持尊重」这条对读者有用的实用信息。
     //   **核实方建议把核试验场整块删掉，没有照办** —— 它给的依据是「任务指令本身」，而那是我在 prompt 里写的黑名单。按仓库判据逐句量：howItWorks 那句是日期与次数、无评价词（8 月 29 日成为联合国国际禁核试日是公开事实），seeAndDo 的纪念馆是真实公开运营的场馆——两处都与越南保留挂牌景点的判例同型，**保留**。**英文侧本来就更克制**（写的是 carries the serious historical legacy…，完全没提辐射影响），只有中文那半句带评价——又一处中文比英文过火的中英不同步。2026-09-10 判定。
     culture:
-      "The official language is Kazakh, with Russian widely used. Semey carries the serious historical legacy of the Soviet nuclear test site nearby, and the city maintains solemn memorial and educational facilities related to this history — visit related memorials respectfully. Restaurant bills often already include a service charge, and anything beyond it is voluntary.",
+      "The official language is Kazakh, with Russian widely used. Semey carries the serious historical legacy of the Soviet nuclear test site nearby, and the city maintains solemn memorial and educational facilities related to this history — visit related memorials respectfully. According to the trade ministry's consumer-protection committee, a service charge has to be disclosed in advance — a notice at the entrance, a line in the menu or the waiter telling you all count; anything beyond it is voluntary.",
     seeAndDo:
       "The Semey cable-stayed bridge (a landmark spanning the Irtysh River); the Abai Memorial Museum (documents and artefacts related to the Kazakh national poet Abai); the Dostoevsky Literary Memorial Museum; the Museum of Nuclear Test Victims (learning about the Soviet nuclear testing history).",
     whenAndTips:
@@ -169,7 +169,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Pavlodar Airport (PWQ) is about 13 km in a straight line from the city centre; buses and taxis are the main way to get around town.",
     culture:
-      "The official language is Kazakh, with Russian widely used. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+      "The official language is Kazakh, with Russian widely used. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
     seeAndDo:
       "The Irtysh riverside promenade; the Pavlodar Regional History Museum; the central square and civic building cluster; nearby steppe lakes such as Lake Bayanaul.",
     whenAndTips:
@@ -188,7 +188,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Kokshetau Airport (KOV) is about 15 km in a straight line from the city centre; taxis are the main way to get around town, and reaching Burabay usually requires a hired car, about an hour's drive.",
     culture:
-      "The official language is Kazakh, with Russian widely used. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+      "The official language is Kazakh, with Russian widely used. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
     seeAndDo:
       "Using Kokshetau as a base for a trip to Burabay National Park: boating on Lake Burabay, hiking the granite hills, and taking in the pine-forest scenery; the Kokshetau Regional History Museum.",
     whenAndTips:
@@ -210,5 +210,41 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The confluence of the two rivers and the embankment; the regional museum of history and local lore; the East Kazakhstan regional museum-reserve of architecture, ethnography and natural landscapes; and, in summer, trips from here into the eastern mountains and lakes.",
     whenAndTips:
       "June–September is the most comfortable; winters are severe with long snow cover. Routes and access to the eastern mountains depend heavily on the season, so check with local tour operators or the managing authorities before setting off.",
+  },
+
+  atyrau: {
+    // 全七段 sources: 同中文侧（Kazakhstan Bureau of National Statistics, population by sex and type of locality at 1 January 2026, tables 2 and 3, tier 1, published 13 February 2026, digit-checked against Turkistan and Astana in the repo; OurAirports for GUW, tier 1; distances computed. The Ural as the Europe-Asia boundary is written as one common convention, not as settled fact）。 核实 2026-09-16 当批。
+    identity:
+      "Atyrau lies in western Kazakhstan on the last stretch of the Ural before it reaches the Caspian, with 328,541 people in the city at the start of 2026 (Bureau of National Statistics). It spreads along both banks on very flat ground; by one common convention the Ural is taken as the boundary between Europe and Asia, which is why the footbridge in town carries markers at either end — though that line has no single authoritative definition.",
+    howItWorks:
+      "Atyrau has two population figures a hundred thousand apart, and almost all of the difference lives in villages: 328,500 in the city proper, 431,100 in the city administration that includes the countryside around it, and the 102,600 in between are counted as rural. A Kazakh \"city\" is often a ring of villages around a town, so crossing the city limits is not the same as arriving in the city — the same pattern holds in Taldykorgan, Kokshetau and Oskemen, while Astana, Shymkent and Karaganda have no rural population at all. It shapes how people give an address: first which bank of the river, then which microdistrict, then the street. The river shapes the town too — each bank has its own centre, joined by a handful of bridges, one of them for pedestrians; low brick-and-timber building on the old side, blocks of flats across. The commonest misconception among newcomers is that the airport must be far out of town: it is seven kilometres due west, closer than crossing from one bank to the other.",
+    layout:
+      "The centre is on the eastern bank of the Ural. The Imangali Mosque is about 1 km west, the Dormition Cathedral about 1.1 km north-west, the regional drama theatre about 1.5 km due east, and the footbridge over the Ural about 1.9 km south-west. The Saraishyq museum-reserve is about 46 km north-west, in a neighbouring district.",
+    gettingAround:
+      "Atyrau International Airport is about 7 km due west in a straight line, with domestic and international scheduled flights. Railways run north and east, roads carry most local traffic, and crossing the river means using a bridge. The climate is temperate continental and dry, with hot summers and cold, windy winters.",
+    culture:
+      "Kazakh and Russian are spoken. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
+    seeAndDo:
+      "Walking the footbridge over the Ural; the Imangali Mosque and the Dormition Cathedral as buildings; the regional drama theatre; the riverside walks; and the Saraishyq museum-reserve some forty-odd kilometres to the north-west.",
+    whenAndTips:
+      "May and September to October are the most comfortable; high summer is very hot and winters are windy. The city straddles the river with a centre on each bank, so check which side you are booking on; Saraishyq needs a half-day of its own for the drive.",
+  },
+
+  taldykorgan: {
+    // 全七段 sources: 同中文侧（same statistics publication, tables 2 and 3 at 1 January 2026, tier 1; the 2022 creation of Jetisu Region and the move of Almaty Region's seat to Konayev, tier 2 reporting — the decree number could not be retrieved, so only the year and the fact are written; OurAirports for TDK, tier 1; distances computed. How akims are selected has changed repeatedly between 2023 and 2026 and is deliberately not written）。 核实 2026-09-16 当批。
+    identity:
+      "Taldykorgan lies in south-eastern Kazakhstan in the valley of the Karatal, at the western foot of the Dzungarian Alatau, with 171,851 people in the city at the start of 2026 (Bureau of National Statistics), and is the seat of Jetisu Region. It stands on a green strip between mountains and desert, laid out on a regular grid and densely planted with street trees — which is what the willows in its name refer to.",
+    howItWorks:
+      "This city has been the seat of three different regions without ever moving. It was the seat of Taldykorgan Region; that region was abolished in 1997 and absorbed into Almaty Region; in 2001 Almaty Region moved its own seat here from the city of Almaty; and in June 2022 a new Jetisu Region was created with its seat here, while Almaty Region's seat moved the same day to Konayev. Two things newcomers therefore get wrong: the city of Almaty is not the seat of Almaty Region (it is a city of republican significance), and this city is no longer that seat either. The second layer is population: 171,900 in the city, but 210,300 in the city administration that includes the villages around it — close to a fifth of \"Taldykorgan\" lives rurally, the normal shape of a Kazakh city, where the limits enclose more than the town. Its living radius is set by a river and a road: the valley brings the water and the street trees, and the road ties it to the mountains to the south-east and the great lake to the south-west.",
+    layout:
+      "The centre is around the akimat building. The Ilyas Zhansugurov house museum is about 0.2 km east, the Tynyshpayev museum about 0.3 km south-east and Central Park about 0.2 km east — all three within a few blocks of the centre; Zhastar Park is about 3.1 km south-west.",
+    gettingAround:
+      "Taldykorgan Airport is about 13 km north-east in a straight line, with domestic scheduled flights. Roads are the main way around and out, towards the lake to the south-west and the mountains to the south-east; the railway also reaches the city. The climate is temperate continental, with hot summers and cold winters.",
+    culture:
+      "Kazakh and Russian are spoken. A service charge has to be disclosed in advance — by a notice at the entrance, a line in the menu or the waiter telling you; anything beyond it is voluntary.",
+    seeAndDo:
+      "The two house-and-figure museums; Central Park and Zhastar Park; and, using the city as a base, the mountains to the south-east and the lake to the south-west — the desert landforms around Altyn-Emel lie within the region, but they are a long way out and need a trip of their own.",
+    whenAndTips:
+      "May to June and September are the most comfortable; high summer is hot. What there is to see in the city sits within a few kilometres of the centre and takes half a day; the real destinations are the mountains and deserts elsewhere in the region, reached by hired car or a local trip and counted in days.",
   },
 };

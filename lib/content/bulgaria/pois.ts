@@ -78,4 +78,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "博任齐村", nameEn: "Bozhentsi", lon: 25.4232, lat: 42.874, kind: "landmark" },
     { nameZh: "埃塔尔露天博物馆", nameEn: "Etar Open-Air Museum", lon: 25.3484, lat: 42.8057, kind: "landmark" },
   ],
+  shumen: [
+    { nameZh: "马达拉骑士岩雕", nameEn: "Madara Rider", lon: 27.11889, lat: 43.27737, kind: "landmark" },
+    { nameZh: "舒门要塞", nameEn: "Shumen Fortress", lon: 26.89465, lat: 43.26261, kind: "landmark" },
+    { nameZh: "通布尔清真寺", nameEn: "Tombul Mosque", lon: 26.91, lat: 43.26944, kind: "landmark" },
+    { nameZh: "舒门地区历史博物馆", nameEn: "Regional Historical Museum of Shumen", lon: 26.92753, lat: 43.27034, kind: "landmark" },
+    { nameZh: "舒门高原自然公园", nameEn: "Shumen Plateau Nature Park", lon: 26.87638, lat: 43.26689, kind: "nature" },
+    { nameZh: "「凉亭」公园", nameEn: "Kyoshkovete Park", lon: 26.89425, lat: 43.26678, kind: "nature" },
+  ],
+  vratsa: [
+    { nameZh: "弗拉察塔隘口", nameEn: "Vratsata pass", lon: 23.53054, lat: 43.19151, kind: "nature" },
+    { nameZh: "莱德尼卡洞", nameEn: "Ledenika Cave", lon: 23.49366, lat: 43.20443, kind: "nature" },
+    { nameZh: "弗拉察地区历史博物馆", nameEn: "Regional Historical Museum of Vratsa", lon: 23.54764, lat: 43.20076, kind: "landmark" },
+    { nameZh: "库尔特帕沙塔楼", nameEn: "Tower of Kurt Pasha", lon: 23.5475, lat: 43.2008, kind: "landmark" },
+    { nameZh: "弗拉察斯卡卡利亚瀑布", nameEn: "Vrachanska Skaklya waterfall", lon: 23.54983, lat: 43.18206, kind: "nature" },
+    { nameZh: "博罗夫卡马克瀑布", nameEn: "Borov Kamak waterfall", lon: 23.5047, lat: 43.15188, kind: "nature" },
+  ],
 };

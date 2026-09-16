@@ -188,4 +188,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–October is the most comfortable, with good autumn colours in the hills; winters in the mountains are cold. The museum's sites open separately, so check the museum's published hours.",
   },
+
+  shumen: {
+    // 全七段 sources: 同中文侧（NSI timeseries tables Pop_6.1.4 and Pop_6.1.1 at 31 December 2025, tier 1, final figures released 29 April 2026, digit-checked against Sofia in the repo; shumen.bg register of the 26 kmetstva and the state administrative register IISDA, tier 1; OurAirports for scheduled service, tier 1; distances computed）。 核实 2026-09-16 当批。
+    identity:
+      "Shumen stands on the Danubian Plain in north-eastern Bulgaria, with 66,399 people in the town and 77,095 in the municipality at the end of 2025 (National Statistical Institute). The town lies against the eastern edge of the Shumen Plateau, whose tableland comes right up to its western side, carrying the fortress ruins and the nature park; some fifteen kilometres east, on a cliff face, is the Madara Rider, a World Heritage site.",
+    howItWorks:
+      "Most people know only one tier of Bulgarian local government, the municipality — Shumen is a good place to see the second. The municipality is run by a directly elected mayor and council, and with fewer than 300,000 people it has no city districts; but what it governs is not only the town. It also covers twenty-six villages, and each of those is its own kmetstvo with its own directly elected village mayor, listed separately in the state administrative register with its own contact address. Madara makes the point best: the cliff with the rider on it belongs to Shumen municipality, the village has its own elected mayor, and the carving itself falls under a national reserve — three tiers stacked on one rock face. So the answer to \"is the Madara Rider in Shumen?\" is yes, but the mayor of Shumen is not who looks after it. The shape of the town follows the plateau: the old town spreads onto the plain while the fortress, the park and the mosque are all on the rising western side, and people give directions as \"up towards the plateau\" or \"down towards the plain\".",
+    layout:
+      "The town hall and the regional historical museum both stand on Slavyanski Boulevard, about 250 m apart. The Tombul Mosque is about 1.2 km west, the fortress about 2.5 km west on the edge of the plateau, Kyoshkovete Park about 2.5 km west, and the main body of the Shumen Plateau Nature Park about 4 km west. The Madara Rider is about 15.8 km due east.",
+    gettingAround:
+      "Shumen has no airport with scheduled flights — there is an airfield about 2.4 km north-east, but nothing scheduled uses it; the nearest airport with scheduled service is Varna, about 73 km away in a straight line. Rail and road are the way in and out, with the town on the east-west main line. The climate is temperate continental, with hot summers and cold winters.",
+    culture:
+      "Bulgarian is spoken, written in Cyrillic. Tipping is voluntary. Tap water is supplied to the national drinking-water standard. The supply is 230 V with the two-pin European plug. Bulgaria has used the euro since 1 January 2026.",
+    seeAndDo:
+      "The Madara Rider and the cliff it is carved into; the fortress ruins on the edge of the plateau; the architecture of the Tombul Mosque; the regional historical museum; and the paths through Kyoshkovete Park and the nature park along the plateau rim.",
+    whenAndTips:
+      "May to October is the most comfortable. The fortress, the parks and Madara are all outside the town and involve climbing or walking, so wear shoes for it; Madara is a good fifteen kilometres out, so allow half a day and check opening arrangements yourself on the day.",
+  },
+
+  vratsa: {
+    // 全七段 sources: 同中文侧（NSI same two tables, tier 1; vr-balkan.net for the state park directorate under the Executive Forest Agency and vratza.bg for the municipality running Ledenika since 6 March 2010, tier 1; OurAirports, tier 1; distances computed — note Ledenika is 4.4 km in a straight line but about 16 km by the mountain road, and both are written out）。 核实 2026-09-16 当批。
+    identity:
+      "Vratsa lies in north-western Bulgaria at the mouth of a pass through the northern slope of the Balkan Mountains, with 47,874 people in the town and 58,721 in the municipality at the end of 2025 (National Statistical Institute). The town faces a limestone gorge called the Vratsata, whose walls rise almost against its southern edge; the Ledenika cave and several waterfalls are on that same slope.",
+    howItWorks:
+      "What is structurally interesting about Vratsa is not in the town but on the mountain beside it — where two governments share one range and do not look after the same things. The Vrachanski Balkan Nature Park is run by a state directorate under the Executive Forest Agency, part of the agriculture ministry rather than of the municipality; the Ledenika cave inside the park has been operated by Vratsa municipality since March 2010. So the ticket for the cave is sold by the municipality, and the path you walk out onto belongs to the state park. There is a second pair of bodies people confuse in town: Vratsa is both a municipality and the seat of Vratsa Province, and the provincial administration and the municipal one are separate offices in separate buildings — the mayor and council are elected, while the provincial governor is appointed by the Council of Ministers and answers to the government, not to the municipality. The town has no city districts, being far below the 300,000 threshold Bulgaria sets for them. Its living radius is set by the pass: the town spreads north onto the gentle ground, and everything to walk to is on the rising side to the south.",
+    layout:
+      "The town hall is in the centre, with the regional historical museum and the Tower of Kurt Pasha about 250 m south. The Vratsata pass is about 1.9 km south-west, the Vrachanska Skaklya waterfall about 2.3 km due south, the Ledenika cave about 4.4 km due west in a straight line (some 16 km by the mountain road), and the Borov Kamak waterfall about 6.7 km south-west. The park directorate's office is about 4.4 km south-east.",
+    gettingAround:
+      "Vratsa has no airport with scheduled flights — there is an airfield about 6 km north, but nothing scheduled uses it; the nearest airport with scheduled service is Sofia, about 57 km away in a straight line. Rail and road towards Sofia are the way in and out. The climate is temperate continental, a little cooler on the slope.",
+    culture:
+      "Bulgarian is spoken, written in Cyrillic. Tipping is voluntary. Tap water is supplied to the national drinking-water standard. The supply is 230 V with the two-pin European plug. Bulgaria has used the euro since 1 January 2026.",
+    seeAndDo:
+      "Walking into the Vratsata pass between its limestone walls; the Ledenika cave; the regional historical museum and the Tower of Kurt Pasha; the walk south to the Vrachanska Skaklya waterfall; and the park paths out to Borov Kamak.",
+    whenAndTips:
+      "May to October suits the mountain; the waterfalls carry most water in the spring melt and can be thin by late summer. Ledenika is only four kilometres away in a straight line but sixteen by the mountain road, so budget by the road distance; the cave stays cold all year, so take a jacket, and check opening arrangements yourself on the day.",
+  },
 };
