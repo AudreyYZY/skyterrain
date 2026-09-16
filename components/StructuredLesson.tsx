@@ -1,4 +1,5 @@
 import { stripEmojis } from "@/lib/strip-emojis";
+import { splitForHighlight } from "@/lib/sentences";
 import { LESSON_SECTION_ORDER, sectionHeading } from "@/lib/lesson";
 import type { Language } from "@/lib/i18n";
 import type { TerrainLesson } from "@/types/terrain";
@@ -26,15 +27,6 @@ interface StructuredLessonProps {
 const SECTION_KEYS: (keyof TerrainLesson)[] = LESSON_SECTION_ORDER.map(
   (k) => k as keyof TerrainLesson,
 );
-
-/**
- * 将文本按中文/英文句号、问号、感叹号分割成句子
- */
-function splitSentences(text: string): string[] {
-  if (!text.trim()) return [];
-  const parts = text.split(/(?<=[。！？.!?])/g).filter((s) => s.trim().length > 0);
-  return parts;
-}
 
 export default function StructuredLesson({
   lesson,
@@ -83,7 +75,7 @@ export default function StructuredLesson({
     const text = stripEmojis(textFor(s.key));
     if (text.length === 0) continue;
     sectionOffsets.set(s.key, cumulativeOffset);
-    cumulativeOffset += splitSentences(text).length;
+    cumulativeOffset += splitForHighlight(text).length;
   }
 
   return (
@@ -92,7 +84,7 @@ export default function StructuredLesson({
         const body = stripEmojis(textFor(key));
         if (!body) return null;
 
-        const sentences = splitSentences(body);
+        const sentences = splitForHighlight(body);
         const offset = sectionOffsets.get(key) ?? 0;
         const isActiveSection = activeSection === key;
 

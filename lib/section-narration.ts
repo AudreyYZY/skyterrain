@@ -7,7 +7,8 @@
  */
 
 import type { Language } from "@/lib/i18n";
-import { splitSentences } from "@/lib/sentences";
+import { splitForHighlight } from "@/lib/sentences";
+import { stripEmojis } from "@/lib/strip-emojis";
 import {
   synthesizeSpeech,
   playSynthesized,
@@ -84,7 +85,9 @@ export function createSectionNarration(): SectionNarration {
           return;
         }
         const s = parts[i]!;
-        const sentenceCount = splitSentences(s.text).length;
+        // 与面板、高亮同一套口径：都先去表情符号再切（面板 StructuredLesson 与
+        // useSentenceHighlight 都是这么做的，这里不跟上就会整段错位）
+        const sentenceCount = splitForHighlight(stripEmojis(s.text)).length;
 
         const got = degraded ? null : await nextSynth;
         if (!degraded) {
