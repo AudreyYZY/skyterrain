@@ -67,4 +67,14 @@ export const CITIES: CityEntry[] = [
     lon: 14.2131, lat: 45.7751,
     source: "波斯托伊纳镇中心 45.7751,14.2131（OSM）；普通市镇（gov.si，1 级）；本地没有定期航班的机场，不填 airport；卢布尔雅那 LJU 直线约 53 km（按 OurAirports 算）；溶洞入口在镇中心西北约 1.1 km、普雷德亚马城堡直线约 8 km（按 OSM 坐标算）；离国界约 28 km（已有城市补充批，2026-09-15）",
   },
+  {
+    id: "kamnik", nameZh: "卡姆尼克", nameEn: "Kamnik", country: "slovenia", tier: "notable", zone: "si-central", admin1Zh: "中斯洛文尼亚统计区", admin1En: "Central Slovenia Statistical Region",
+    lon: 14.6119, lat: 46.2257,
+    source: "卡姆尼克主广场一带 46.2257,14.6119（OSM）；卢布尔雅那机场直线约 12 km，但机场在采尔克列市镇、不在本市域内（与既有克拉尼条目同一处理），不填 airport；与地形条目 velika-planina、kamnik-savinja-alps 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "bohinj", nameZh: "博希尼", nameEn: "Bohinj", country: "slovenia", tier: "notable", zone: "si-alps", admin1Zh: "上卡尼奥拉统计区", admin1En: "Upper Carniola Statistical Region",
+    lon: 13.8888, lat: 46.2766,
+    source: "坐标取湖东端的里布切夫拉兹 46.2766,13.8888（OSM）—— 市镇的行政驻地其实是 5 km 外的博希尼斯卡比斯特里察（13.9539,46.2724），但游客口中的「博希尼」指的是湖东端这一带，条目正文把两者的区别写清楚；市域内无机场，最近有定期航班的是卢布尔雅那 LJU、直线约 44 km（算）；与地形条目 lake-bohinj、julian-alps-slovenia、triglav-lakes-valley 互指（已有城市补充批，2026-09-16）",
+  },
 ];

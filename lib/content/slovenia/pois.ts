@@ -63,4 +63,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "普拉尼纳洞", nameEn: "Planina Cave", lon: 14.2456, lat: 45.8199, kind: "landmark" },
     { nameZh: "内卡尼奥拉博物馆", nameEn: "Notranjska Museum Postojna", lon: 14.2175, lat: 45.7772, kind: "landmark" },
   ],
+  kamnik: [
+    { nameZh: "马利格拉德岩丘与礼拜堂", nameEn: "Mali grad", lon: 14.6117, lat: 46.2246, kind: "landmark" },
+    { nameZh: "舒特纳街与主广场", nameEn: "Šutna street and Glavni trg", lon: 14.612, lat: 46.2257, kind: "district" },
+    { nameZh: "扎普里采城堡（博物馆）", nameEn: "Zaprice Castle", lon: 14.6057, lat: 46.2231, kind: "landmark" },
+    { nameZh: "梅金耶修道院", nameEn: "Mekinje Monastery", lon: 14.6149, lat: 46.2348, kind: "landmark" },
+    { nameZh: "沃尔奇波托克树木园", nameEn: "Arboretum Volčji Potok", lon: 14.6137, lat: 46.1881, kind: "nature" },
+    { nameZh: "韦利卡普拉尼纳高山牧场", nameEn: "Velika planina", lon: 14.652, lat: 46.2959, kind: "nature" },
+  ],
+  bohinj: [
+    { nameZh: "博希尼湖", nameEn: "Lake Bohinj", lon: 13.8586, lat: 46.2847, kind: "nature" },
+    { nameZh: "圣约翰洗者堂与石桥", nameEn: "Church of St John the Baptist and the stone bridge", lon: 13.8867, lat: 46.2787, kind: "landmark" },
+    { nameZh: "萨维察瀑布", nameEn: "Savica Waterfall", lon: 13.7963, lat: 46.2932, kind: "nature" },
+    { nameZh: "沃格尔索道下站", nameEn: "Vogel cable car base station", lon: 13.8381, lat: 46.2698, kind: "district" },
+    { nameZh: "莫斯特尼察隘谷", nameEn: "Mostnica gorge", lon: 13.8855, lat: 46.2981, kind: "nature" },
+    { nameZh: "博希尼斯卡比斯特里察（市镇驻地）", nameEn: "Bohinjska Bistrica", lon: 13.9539, lat: 46.2724, kind: "district" },
+  ],
 };

@@ -14,7 +14,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Ljubljana Jože Pučnik Airport is the main air gateway; there are no year-round scheduled domestic flights between Slovenian cities, so travel is by rail, intercity coach and car. The rail network radiates from Ljubljana, but some mountain and coastal lines run infrequently and coaches are often more convenient. Traffic drives on the right, and motorways and expressways require an electronic vignette (e-vinjeta). Slovenia has used the euro since 1 January 2007 and joined the Schengen Area in 2007.",
     culture:
-      "Slovene is the official language; in municipalities where the Italian and Hungarian national communities live, Italian or Hungarian is also official and signs are bilingual. English is widely spoken among younger people and in tourism. Alpine dairy pastures and cheese, air-dried ham and wine on the karst plateau, and spa culture in the north-east are among the country's most distinctive local traditions. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy. Mains power is 230 V with standard two-pin European plugs.",
+      "Slovene is the official language; in municipalities where the Italian and Hungarian national communities live, Italian or Hungarian is also official and signs are bilingual. English is widely spoken among younger people and in tourism. Alpine dairy pastures and cheese, air-dried ham and wine on the karst plateau, and spa culture in the north-east are among the country's most distinctive local traditions. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill. Mains power is 230 V with standard two-pin European plugs.",
     seeAndDo:
       "Landscapes: Triglav and the Julian Alps, Lakes Bled and Bohinj, Vintgar Gorge, the Soča valley, the Škocjan Caves, intermittent Lake Cerknica and the Logar Valley. Towns and heritage: Ljubljana's old town and Plečnik's architecture, Maribor's Drava riverfront, Ptuj's old town and carnival tradition, Piran's Tartini Square and Koper's Venetian-style old town.",
     whenAndTips:
@@ -31,7 +31,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Jože Pučnik Airport is at Brnik north of the city, about 26 km by road, served by airport shuttles and city buses. Getting around town is mainly by bus, and the Urbana card works on buses and the castle funicular; the heart of the old town is largely pedestrian. The railway station is the hub of the national network, with trains for Bled, Maribor and the coast. The old town is small and its main sights are walkable; you can walk up to the castle or take the funicular.",
     culture:
-      "Slovene is spoken, and English is widely understood. Riverside cafés and the open-air market are part of everyday life in the old town, and the area around the Central Market is where local produce is most concentrated. Plečnik's bridges, colonnades and public spaces are the city's most distinctive heritage. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene is spoken, and English is widely understood. Riverside cafés and the open-air market are part of everyday life in the old town, and the area around the Central Market is where local produce is most concentrated. Plečnik's bridges, colonnades and public spaces are the city's most distinctive heritage. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "Ljubljana Castle and the view over the city; the Triple Bridge, Prešeren Square and the Ljubljanica embankments; Plečnik's Central Market colonnade; the Dragon Bridge; Tivoli Park; the wetland trails of the Ljubljana Marsh on the southern edge of the city; and, as a base, day trips to Bled, Bohinj and the karst region.",
     whenAndTips:
@@ -48,7 +48,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The local Edvard Rusjan Airport has no stable scheduled passenger flights; the nearest airports with scheduled services are Graz in Austria and Ljubljana. Maribor is a railway hub with lines to Ljubljana and towards Austria. The city has a bus network; the old town is walkable, and buses run to the Pohorje cable car station.",
     culture:
-      "Slovene is spoken, with English usable in tourism. The Styrian region around Maribor has a deep vine-growing and winemaking tradition, and the Old Vine on the Lent riverfront, recognised by Guinness World Records, is still harvested every year. In winter Pohorje is the city's ski slope. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene is spoken, with English usable in tourism. The Styrian region around Maribor has a deep vine-growing and winemaking tradition, and the Old Vine on the Lent riverfront, recognised by Guinness World Records, is still harvested every year. In winter Pohorje is the city's ski slope. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "The Lent riverfront and the Old Vine House; the main square and town hall; a walk along the Drava; the cable car up Pohorje for hiking or skiing; and, as a base, Ptuj's old town and the wine country of the Slovene Hills.",
     whenAndTips:
@@ -65,7 +65,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; the nearest one is Ljubljana. Celje is on the Ljubljana–Maribor main line, with frequent trains. The old town is entirely walkable; the Old Castle can be reached on foot by trail or by car to near the top.",
     culture:
-      "Slovene is spoken, with English usable among younger people. The story of the Counts of Celje is at the heart of local heritage, and the castle often hosts medieval-themed events. The surrounding Savinja valley is known for growing hops. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene is spoken, with English usable among younger people. The story of the Counts of Celje is at the heart of local heritage, and the castle often hosts medieval-themed events. The surrounding Savinja valley is known for growing hops. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "The Old Castle of Celje and the view of the Savinja valley from its walls; the old town and the Roman remains in the regional museum; riverside paths along the Savinja; and, as a base, the Laško valley to the south and nearby spa towns.",
     whenAndTips:
@@ -82,7 +82,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The city has no airport of its own; Ljubljana Jože Pučnik Airport lies about 9.5 km east of town, in the municipality of Cerklje na Gorenjskem rather than in Kranj. Kranj is on the railway and motorway from Ljubljana towards Upper Carniola and the north-western mountains, with frequent trains and coaches to the capital. The old town and the canyon trail are walkable.",
     culture:
-      "Slovene is spoken, with English usable among younger people. The Slovene poet France Prešeren spent his last years in Kranj and is buried here, and the grove around his grave is an important place of remembrance. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene is spoken, with English usable among younger people. The Slovene poet France Prešeren spent his last years in Kranj and is buried here, and the grove around his grave is an important place of remembrance. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "The old town and its main street on the promontory; the Kokra canyon trail; Prešeren Grove; views of the high mountains from the edge of the old town; and, as a base, Bled, Bohinj and the Kamnik–Savinja Alps.",
     whenAndTips:
@@ -99,7 +99,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; the nearest one is Trieste in Italy, followed by Ljubljana. Koper has a railway line to Ljubljana and convenient coaches, and local buses run along the coast to Izola and Piran. The old town is entirely walkable, with few slopes.",
     culture:
-      "Slovene and Italian are both official, with English usable in tourism. The old town's Venetian-style architecture, seaside seafood and olive oil, and wine from the hills behind are at the core of local heritage and food. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene and Italian are both official, with English usable in tourism. The old town's Venetian-style architecture, seaside seafood and olive oil, and wine from the hills behind are at the core of local heritage and food. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "The old town's central square and the Praetorian Palace; the cathedral and its bell tower; the old town's narrow streets and small squares; the coastal path towards Izola; and the wine villages in the hills behind the city.",
     whenAndTips:
@@ -116,7 +116,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with stable scheduled passenger flights here; the nearest with scheduled services is Trieste in Italy, followed by Ljubljana. There is no railway, so coaches serve Ljubljana and Koper, and local buses link Piran and Portorož within the municipality. The old town is closed to cars: park in the garage outside town and take the minibus to the square.",
     culture:
-      "Slovene and Italian are both official, and English is widely spoken in tourism. The old town's Venetian-style architecture, seafood and sea salt from the saltpans are at the core of local heritage and food; Tartini's birthplace and statue are the focus of the square. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene and Italian are both official, and English is widely spoken in tourism. The old town's Venetian-style architecture, seafood and sea salt from the saltpans are at the core of local heritage and food; Tartini's birthplace and statue are the focus of the square. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "Tartini Square and Tartini's birthplace; the bell tower of the church at the top of the peninsula for a view over the town; a stretch of the old town walls; the seafront walk to Portorož; and a slow wander through the old town's lanes.",
     whenAndTips:
@@ -133,7 +133,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; Bled's tourist board puts it about 35 km from Ljubljana Airport and about 55 km from Ljubljana, both with direct coaches. There is a railway station nearby on lines towards Ljubljana and towards Bohinj. The town and the lake circuit are entirely walkable; the traditional pletna boats go to the island, and coaches or a car take you to Vintgar Gorge and Bohinj.",
     culture:
-      "Slovene is spoken, and English is widely spoken in tourism. Bled cream cake is the town's signature sweet, and the pletna boats on the lake, rowed by hand, are a traditional livelihood that has been kept alive. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene is spoken, and English is widely spoken in tourism. Bled cream cake is the town's signature sweet, and the pletna boats on the lake, rowed by hand, are a traditional livelihood that has been kept alive. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "A full circuit of the lake path; a pletna boat to the island; Bled Castle and its view of the lake; Vintgar Gorge to the north; Lake Bohinj and the Savica waterfall to the west; and cream cake by the lake.",
     whenAndTips:
@@ -150,7 +150,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; the nearest ones are Graz in Austria and Ljubljana. Ptuj has a railway line towards Maribor and can also be reached by coach. The old town is entirely walkable, and the castle is a short walk up the trail.",
     culture:
-      "Slovene is spoken, with English usable among younger people. At the end of winter, during carnival, the Kurenti — figures dressed in sheepskins and masks with bells at their waists — go from door to door to drive winter away, a tradition inscribed in 2017 on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. Wine from the two surrounding hill districts is an important part of local food. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are happy.",
+      "Slovene is spoken, with English usable among younger people. At the end of winter, during carnival, the Kurenti — figures dressed in sheepskins and masks with bells at their waists — go from door to door to drive winter away, a tradition inscribed in 2017 on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. Wine from the two surrounding hill districts is an important part of local food. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "Ptuj Castle and its museum; the old town's squares, monasteries and churches; a walk along the Drava; the Kurent rounds and carnival at the end of winter; and the wine villages of the Haloze hills to the south and the Slovene Hills to the north.",
     whenAndTips:
@@ -167,7 +167,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; the nearest is Ljubljana (LJU), about 42 km away in a straight line. Idrija has no railway: coming by train from the Ljubljana, Postojna or Koper direction, get off at Logatec and change to a bus, and there are also direct buses between Idrija and Ljubljana. By car, leave the A1 motorway at Logatec. The town is walkable.",
     culture:
-      "Slovene is spoken, with English usable at the sights. Idrija lace is a craft handed down in miners' families and the town has a lace school; bobbin lacemaking in Slovenia is on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. Idrijski žlikrofi, small potato-filled dumplings, are registered as an EU Traditional Speciality Guaranteed. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are pleased.",
+      "Slovene is spoken, with English usable at the sights. Idrija lace is a craft handed down in miners' families and the town has a lace school; bobbin lacemaking in Slovenia is on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. Idrijski žlikrofi, small potato-filled dumplings, are registered as an EU Traditional Speciality Guaranteed. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "Put on protective gear and go down Anthony's Main Road; the smelting plant visitor centre; the municipal museum in Gewerkenegg Castle, with exhibitions on the mercury mine and lace; the Kamšt wooden water wheel; the mining machinery at the Frančiška Shaft; Wild Lake south of town; and a plate of žlikrofi.",
     whenAndTips:
@@ -184,10 +184,46 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no airport with scheduled flights here; the nearest is Ljubljana (LJU), about 53 km away in a straight line. Postojna is on the railway from Ljubljana towards the coast, with the station close to the town centre; walking from the station to the cave entrance takes a little over 20 minutes. From 27 June to 30 September 2026 a shuttle bus runs between Postojna Cave and Predjama Castle for visitors holding tickets to both, taking about 20 minutes; at other times you need a car or a hired driver to reach the castle.",
     culture:
-      "Slovene is spoken, and English is widely used at the sights. The caves are home to the olm, an eyeless amphibian you can see in the vivarium; Postojna Cave, Planina Cave and the surrounding karst are the landscape locals think of as home. Restaurant bills usually do not include a service charge; about ten per cent, or rounding up, is customary if you are pleased.",
+      "Slovene is spoken, and English is widely used at the sights. The caves are home to the olm, an eyeless amphibian you can see in the vivarium; Postojna Cave, Planina Cave and the surrounding karst are the landscape locals think of as home. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill.",
     seeAndDo:
       "Ride the train into Postojna Cave; the olm vivarium and the karst exhibition; Predjama Castle, built into a cliff; the underground river in Planina Cave; the Notranjska Museum in town; and further afield, the Škocjan Caves and the intermittent Lake Cerknica.",
     whenAndTips:
       "The cave is open all year and cool inside, so bring a jacket even in summer. July–August and public holidays are busy, so buy tickets in advance and pick an early tour. The shuttle bus season and timetable are announced each year by the regional tourist board, so check before you go.",
+  },
+
+  kamnik: {
+    // 全七段 sources: 同中文侧（SURS SiStat at 1 January 2026 for the municipality and the settlement, tier 1; kamnik.si on the 22 local communities with SURS-sourced population as of 1 July 2025, tier 1; SURS on area and rankings, tier 1; slovenia.info for voltage and sockets, tier 1; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Kamnik stands at the mouth of the Kamniška Bistrica valley in central Slovenia, with 29,830 people in the municipality and 13,745 in the town itself at the start of 2026 (Statistical Office). The old town is anchored by the rock of Mali grad, which carries a two-storey Romanesque chapel, and the road north leads up to the high pastures of Velika planina and into the Kamnik-Savinja Alps.",
+    howItWorks:
+      "Kamnik is an ordinary municipality rather than an urban municipality — only twelve of Slovenia's two-hundred-odd municipalities are the latter — even though the town itself has been a town historically. The municipality covers 266 km² and is divided into twenty-two local and village communities, whose populations the municipality publishes one by one; those figures show where the weight of the place really lies: the largest is Duplica in the south, with over 4,400 people, more than the central community that holds the old town, with about 3,200. Industry and housing are to the south, the old town to the north, and that is the line people use when giving addresses. There is also a second, easily confused structure: the state's administrative unit is also called Kamnik, but it is an arm of the state rather than the elected municipality, and its boundaries need not match. The living radius is set by the valley: the town sits at its mouth, one road leads north into the mountains, and the capital and its airport are twenty kilometres south, so many people live here and work in Ljubljana. Newcomers plan by straight-line distance — the Logar valley looks a dozen kilometres away, but it lies in another municipality with a long road around, and is not part of the same valley system.",
+    layout:
+      "Glavni trg and Šutna form the north–south axis of the old town, with the rock of Mali grad closing off the old town on its southern side, right beside the street. Zaprice Castle is about 600 m south-west of the old town and Mekinje Monastery about 1 km north. The Volčji Potok arboretum is about 4.2 km south, the herdsmen's settlement on Velika planina about 8 km north-east, and the head of the Kamniška Bistrica valley about 9.7 km north.",
+    gettingAround:
+      "Ljubljana Airport is about 12 km west in a straight line, though it lies in another municipality; Kamnik has a branch railway towards Ljubljana, and the capital is about twenty kilometres away by road. Reaching the mountains means driving or taking a bus to the valley and changing to the cable car. The climate is temperate, with snow in the mountains in winter.",
+    culture:
+      "Slovene is spoken. Šutna in the old town is pedestrianised, with markets and events through the summer. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill. The supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The rock of Mali grad and its two-storey chapel; Šutna and Glavni trg; the museum in Zaprice Castle; Mekinje Monastery; the Volčji Potok arboretum to the south; and the cable car up to the high pastures of Velika planina.",
+    whenAndTips:
+      "May to September suits the mountains and the arboretum, and winter is the snow season up top. Cable cars and mountain facilities run to season and weather, so check operating notices; do not plan the Logar valley by straight-line distance, as the road goes a long way round.",
+  },
+
+  bohinj: {
+    // 全七段 sources: 同中文侧（SURS SiStat at 1 January 2026 for the municipality and settlements, tier 1; municipal statute on the four local communities, tier 1; SURS on the administrative unit being at Radovljica, tier 1; bohinj.si for the lake and Savica figures, tier 1; vogel.si on the cable car closure from 21 September 2026, tier 1; the national park's area and founding year deliberately omitted as only tier 2 was available）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Bohinj lies in the Julian Alps of north-western Slovenia, with 5,216 people in the municipality at the start of 2026 (Statistical Office). On the map the name covers a municipality of 334 km², sixth largest in the country by area; in visitors' usage it usually means the small settlement at the eastern end of the lake, Ribčev Laz, home to 217 people. Lake Bohinj is about four kilometres long and some 45 m deep, and up the valley beyond its western end the Savica waterfall drops 78 m.",
+    howItWorks:
+      "Start with what \"Bohinj\" means: it is a municipality of twenty-four settlements scattered around the lake and the valleys, the largest of them, Bohinjska Bistrica, holding barely 1,700 people out of just over five thousand in all, while what visitors call Bohinj is usually Ribčev Laz at the lake's eastern end, with a couple of hundred. So people here do not give Bohinj as an address; they say Ribčev Laz, Stara Fužina, Ukanc or Bohinjska Bistrica. Nor is there only one authority: the municipality is self-governing with four local communities beneath it, while the state's administrative unit for this area sits outside the municipality at Radovljica, and over the same mountains and water lies the authority of Triglav National Park, the country's only one. The administrative centre and the visitor centre are not in the same place either: the municipal offices and the railway station are at Bohinjska Bistrica, while the church, the stone bridge and the tourist office are five kilometres away at the lake. There are only two ways out of the valley: east towards Bled and the capital, or south-west by train through a tunnel of more than six kilometres to the Soča side, which by road is a long detour.",
+    layout:
+      "Ribčev Laz is at the eastern end of the lake, with the church of St John the Baptist and the stone bridge there. The Savica waterfall is beyond the western end, about 7.3 km from the eastern end in a straight line, and the Vogel cable car base station is at Ukanc on the south-western shore, about 4 km away. The Mostnica gorge is about 2.4 km north and the alpine dairy museum at Stara Fužina about 1.5 km; Bohinjska Bistrica, the municipal seat, and the railway station are about 5 km east.",
+    gettingAround:
+      "Bohinj has no airport with scheduled flights; the nearest with them is Ljubljana, about 44 km away in a straight line. The railway is the Bohinj line, with the station at Bohinjska Bistrica, and a car-carrying train runs south-west through the tunnel to the Soča side, its times published by Slovenian Railways for each period. Buses and cars serve the valley, and parking by the lake is tight in summer. The climate is alpine, with snowy winters.",
+    culture:
+      "Slovene is spoken. Hay racks and herdsmen's huts are the vernacular architecture of these valleys, and Stara Fužina has a museum of alpine dairying. Tipping is not obligatory; rounding up or about ten per cent is usual if you are pleased, and whether a service charge is itemised is shown on the bill. The supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The church of St John the Baptist and the stone bridge at the eastern end of the lake; the walk around the shore; the Savica waterfall beyond the western end; the path into the Mostnica gorge; the alpine dairy museum at Stara Fužina; and the cable car up Vogel for the view over lake and mountains — though as of September 2026 it is closed for refurbishment, expected to reopen before the end of the year, so check operating notices.",
+    whenAndTips:
+      "June to September suits walking and the lake, and winter is the snow season. Parking by the lake is tight in summer, so buses and walking are easier; mountain weather changes fast, so take wind- and waterproof layers.",
   },
 };

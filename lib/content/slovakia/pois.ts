@@ -69,4 +69,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "西斯洛伐克博物馆", nameEn: "West Slovak Museum", lon: 17.5934, lat: 48.3755, kind: "landmark" },
     { nameZh: "扬·帕拉里克剧院", nameEn: "Ján Palárik Theatre", lon: 17.5851, lat: 48.3774, kind: "landmark" },
   ],
+  trencin: [
+    { nameZh: "特伦钦城堡", nameEn: "Trenčín Castle", lon: 18.0451, lat: 48.8946, kind: "landmark" },
+    { nameZh: "和平广场", nameEn: "Peace Square", lon: 18.0418, lat: 48.895, kind: "district" },
+    { nameZh: "教区台阶", nameEn: "Parish Steps", lon: 18.0424, lat: 48.894, kind: "landmark" },
+    { nameZh: "岩壁上的罗马铭文（观看点）", nameEn: "Roman inscription on the rock", lon: 18.0442, lat: 48.8959, kind: "landmark" },
+    { nameZh: "布雷齐纳林园", nameEn: "Brezina woods", lon: 18.0477, lat: 48.8861, kind: "nature" },
+  ],
+  "liptovsky-mikulas": [
+    { nameZh: "解放者广场", nameEn: "Liberators' Square", lon: 19.6124, lat: 49.0837, kind: "district" },
+    { nameZh: "圣尼古拉教堂", nameEn: "Church of St Nicholas", lon: 19.6126, lat: 49.0831, kind: "landmark" },
+    { nameZh: "德明诺夫斯卡自由洞（邻乡）", nameEn: "Demänovská Cave of Liberty (neighbouring municipality)", lon: 19.5854, lat: 48.9982, kind: "nature" },
+    { nameZh: "乔波克与亚斯纳（邻乡）", nameEn: "Chopok and Jasná (neighbouring municipality)", lon: 19.5927, lat: 48.943, kind: "nature" },
+    { nameZh: "利普托夫斯卡马拉水库", nameEn: "Liptovská Mara reservoir", lon: 19.5199, lat: 49.1089, kind: "nature" },
+    { nameZh: "利普托夫乡村博物馆（普里比利纳）", nameEn: "Museum of the Liptov Village at Pribylina", lon: 19.8003, lat: 49.1107, kind: "landmark" },
+  ],
 };
