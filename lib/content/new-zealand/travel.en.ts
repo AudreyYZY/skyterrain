@@ -258,7 +258,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     seeAndDo:
       "Whale watching (by boat, light aircraft or helicopter); swimming with dolphins and seal viewing; the Kaikōura Peninsula walkway (Point Kean seal colony); seal pups at Ōhau Point (winter); the coastal stretch of the Coastal Pacific train; roadside crayfish stalls; the Mount Fyffe track in the Kaikōura Range; albatross birdwatching trips.",
     whenAndTips:
-      "Whales can be seen all year; October–March has the steadiest weather and migrating humpbacks too; winter seas bring more cancellations. Take seasickness remedies before sailing. Plan one night as a stop between Christchurch and Picton.",
+      "Whales can be seen all year, sperm whales being the resident ones; October to March has the steadiest weather and the calmest seas, while humpbacks pass through on their migration in the southern winter, when rougher seas also mean more cancellations. Take seasickness remedies before sailing. Plan one night as a stop between Christchurch and Picton.",
   },
   wanaka: {
     identity:
