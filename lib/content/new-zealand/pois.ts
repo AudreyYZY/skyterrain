@@ -105,4 +105,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "卡德罗纳滑雪场", nameEn: "Cardrona Alpine Resort", lon: 168.9400, lat: -44.8700, kind: "nature" },
     { nameZh: "瓦纳卡镇中心", nameEn: "Wānaka Town Centre", lon: 169.1400, lat: -44.6990, kind: "district" },
   ],
+  "new-plymouth": [
+    { nameZh: "塔拉纳基山", nameEn: "Taranaki Maunga", lon: 174.063803, lat: -39.296216, kind: "nature" },
+    { nameZh: "北埃格蒙特访客中心", nameEn: "North Egmont Visitor Centre", lon: 174.09595, lat: -39.2703, kind: "landmark" },
+    { nameZh: "恩加莫图 / 糖塔群岛", nameEn: "Ngā Motu / Sugar Loaf Islands", lon: 174.013551, lat: -39.053479, kind: "nature" },
+    { nameZh: "帕里图图岩", nameEn: "Paritutu", lon: 174.023389, lat: -39.059528, kind: "nature" },
+    { nameZh: "普克库拉公园", nameEn: "Pukekura Park", lon: 174.07974, lat: -39.06483, kind: "nature" },
+    { nameZh: "普凯阿里基博物馆", nameEn: "Puke Ariki", lon: 174.07189, lat: -39.05702, kind: "landmark" },
+    { nameZh: "特雷瓦雷瓦桥", nameEn: "Te Rewa Rewa Bridge", lon: 174.11228, lat: -39.03778, kind: "landmark" },
+  ],
+  "te-anau": [
+    { nameZh: "蒂阿瑙湖", nameEn: "Lake Te Anau", lon: 167.773155, lat: -45.219681, kind: "nature" },
+    { nameZh: "蒂阿瑙萤火虫洞", nameEn: "Te Ana-au Glow-Worm Caves", lon: 167.72644, lat: -45.2945, kind: "nature" },
+    { nameZh: "凯普勒步道", nameEn: "Kepler Track", lon: 167.68619, lat: -45.42344, kind: "nature" },
+    { nameZh: "蒂阿瑙鸟类保护区", nameEn: "Punanga Manu o Te Anau", lon: 167.71334, lat: -45.43265, kind: "nature" },
+    { nameZh: "马纳波里", nameEn: "Manapouri", lon: 167.6134, lat: -45.56515, kind: "district" },
+    { nameZh: "米尔福德峡湾", nameEn: "Milford Sound / Piopiotahi", lon: 167.89717, lat: -44.640893, kind: "nature" },
+  ],
 };

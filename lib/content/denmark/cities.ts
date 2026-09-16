@@ -74,4 +74,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "RNN", nameZh: "博恩霍尔姆机场", nameEn: "Bornholm Airport", lon: 14.7594, lat: 55.0633 },
     source: "龙讷市中心 55.0997,14.7069；RNN 机场（距市区约5km）：公开资料",
   },
+  {
+    id: "vejle", nameZh: "瓦埃勒", nameEn: "Vejle", country: "denmark", tier: "notable", zone: "dk-syddanmark", admin1Zh: "南丹麦大区", admin1En: "Region of Southern Denmark",
+    lon: 9.53294, lat: 55.70793,
+    airport: { iata: "BLL", nameZh: "比隆机场", nameEn: "Billund Airport", lon: 9.1517, lat: 55.7403 },
+    source: "瓦埃勒市中心 55.70793,9.53294（OSM Nominatim）；本地只有无定期航班的小机场，最近有定期航班的是比隆机场 BLL，直线约 24 km（算）；耶灵世界遗产在同一市镇内、市中心西北直线约 8.6 km；注：丹麦统计局城区表里另有一个同名的 Vejle（菲英岛法堡-米菲恩市镇的小村，1,095 人），与本条目无关（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "stege", nameZh: "斯泰厄", nameEn: "Stege", country: "denmark", tier: "notable", zone: "dk-sjaelland", admin1Zh: "西兰大区", admin1En: "Region Zealand",
+    lon: 12.28613, lat: 54.98638,
+    airport: { iata: "CPH", nameZh: "哥本哈根机场", nameEn: "Copenhagen Airport", lon: 12.6476, lat: 55.618 },
+    source: "斯泰厄镇中心 54.98638,12.28613（OSM Nominatim）；本地 Kostervig Møn 机场 scheduled_service=no，最近有定期客运航班的是哥本哈根机场、直线约 74 km（算；OurAirports 把罗斯基勒 RKE 标为有定期航班，与仓库既有罗斯基勒条目的核实结论不符，按既有结论处理）；中文名为音译，中文维基无此条目（已有城市补充批，2026-09-16）",
+  },
 ];

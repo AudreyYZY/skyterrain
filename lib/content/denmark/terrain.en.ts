@@ -65,7 +65,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
   "mons-klint": {
     // 全六段 sources: 崖顶最高处约 128 m（Dronningestolen）是崖体本身的高度 —— **未与附近独立山丘 Aborrebjerg（142/143 m）混淆**；白垩为马斯特里赫特期约 70 Ma 颗石藻钙质残骸堆积，末次冰期冰川挤压致褶皱变形。核实 2026-09-11，未改动
     seeing:
-      "Møns Klint is Denmark's tallest sea cliff, reaching about 128 m at its highest point, built of Late Cretaceous chalk.",
+      "Møns Klint is Denmark's tallest sea cliff, reaching about 128 m at its highest point, built of Late Cretaceous chalk; in July 2025 the glaciotectonic landscape here was inscribed on the World Heritage List under criterion (viii), with a property of 4,123 hectares.",
     formation:
       "The chalk was deposited in a shallow sea around 70 million years ago during the Late Cretaceous, made up mainly of the calcareous remains of tiny marine organisms (coccolithophores); last-glacial ice pressure folded the originally horizontal chalk beds, producing today's steep, structured cliff face.",
     observation:
@@ -375,7 +375,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
       "Both Grejsdalen and the valley landforms along the Gudenå illustrate river-valley landforms in Jutland, but Grejsdalen is a classic, tightly confined subglacial tunnel valley with steep walls, while the Gudenå valley is broader and gentler, linking several lakes along its course.",
     concept:
       "Grejsdalen is a classic case for studying how subglacial meltwater erosion produces the distinctive tunnel-valley landform, fundamentally different from a broad valley carved directly by surface glacial ice.",
-    // history sources: 15 座水力磨坊（韦勒市政府，1 级）。核实 2026-09-12
+    // history sources: 15 座水力磨坊（瓦埃勒市政府，1 级）。核实 2026-09-12
     history:
       "Thanks to its strong current, the Grejs Å has driven 15 water-powered mills over the years, busiest in the late 19th and early 20th centuries; the forest trails preserved in the valley today are an important hiking area in Denmark.",
   },

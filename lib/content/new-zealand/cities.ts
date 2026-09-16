@@ -74,4 +74,15 @@ export const CITIES: CityEntry[] = [
     lon: 169.1500, lat: -44.7000,
     source: "Wānaka -44.7000,169.1500（en.wikipedia，海拔 290 米）；Wānaka Airport 无定期商业航班，最近为皇后镇 ZQN（经皇冠山脉公路约 70 公里），条目不写机场字段；人口 13,200（2025-06 估计）",
   },
+  {
+    id: "new-plymouth", nameZh: "新普利茅斯", nameEn: "New Plymouth", country: "new-zealand", tier: "notable", zone: "nz-north", admin1Zh: "塔拉纳基大区", admin1En: "Taranaki Region",
+    lon: 174.083182, lat: -39.056023,
+    airport: { iata: "NPL", nameZh: "新普利茅斯机场", nameEn: "New Plymouth Airport", lon: 174.179001, lat: -39.008598 },
+    source: "新普利茅斯 -39.056023,174.083182（LINZ 新西兰地名地籍，1 级）；NPL OurAirports -39.0086,174.1790，直线约 10 km，有定期航班；注：地籍里没有给这座城市官方并用毛利语名（Ngāmotu 在地籍里指的是别处），正文只用官方并用名 Ngā Motu / Sugar Loaf Islands、Taranaki Maunga（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "te-anau", nameZh: "蒂阿瑙", nameEn: "Te Anau", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "南地大区", admin1En: "Southland Region",
+    lon: 167.715672, lat: -45.414649,
+    source: "蒂阿瑙 -45.414649,167.715672（LINZ 新西兰地名地籍，1 级；新西兰统计局写作 Te Ānau，带长音符，本库按地名机构口径用 Te Anau）；马纳波里机场 TEU 在镇南直线约 14 km、scheduled_service=no，不填 airport；最近有定期航班的是皇后镇 ZQN、直线约 92 km（算，公路要绕湖、远于直线）（已有城市补充批，2026-09-16）",
+  },
 ];
