@@ -152,7 +152,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Lausanne climbs from the lake up the hillside, a drop of about 500 m — one of the few European cities built on such a steep slope, with a fully automatic metro (the m2) that works like a funicular, linking the lakefront, the centre and the upper town. The Old Town and the Gothic cathedral are up high; Ouchy on the lake has the parks, the piers and the Olympic Museum.",
     gettingAround:
-      "Lausanne has no airport with scheduled flights; the nearest is Geneva Airport, about 40 minutes by direct train. The city has two metro lines (m1, m2), buses and funicular-style shuttles; the m2 solves most of the climbing. Trains to Geneva and Montreux are quick. The climate is temperate, warmer by the lake than up the hill.",
+      "Lausanne has no airport with scheduled flights; the nearest is Geneva Airport, about 50 minutes by train. The city has two metro lines (m1, m2), buses and funicular-style shuttles; the m2 solves most of the climbing. Trains to Geneva and Montreux are quick. The climate is temperate, warmer by the lake than up the hill.",
     culture:
       "French is the main language; the university and the international sports bodies bring many foreigners, and English is fairly widespread. Lausanne feels young and lively, with more nightlife than most Swiss cities (the Flon district). Restaurants do not require tipping. There is an annual city music festival.",
     seeAndDo:

@@ -56,7 +56,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Marienplatz is the old town's centre, with the glockenspiel show on the New Town Hall's tower a signature scene; Nymphenburg Palace, the Bavarian royal family's summer residence, lies to the west; the English Garden is one of Europe's largest urban parks, where a branch of the Isar draws river surfers.",
     gettingAround:
-      "The airport is about 30 km from the centre, with a rail line running directly there. The city's metro, tram and bus network is extensive, and the old town is walkable. Continental climate: warm summers, cold and snowy winters; being near the Alps, weather can change quickly, with an occasional Föhn wind bringing brief warm spells.",
+      "The airport is about 30 km from the centre, with S-Bahn suburban trains running directly there in about 40 minutes. The city's metro, tram and bus network is extensive, and the old town is walkable. Continental climate: warm summers, cold and snowy winters; being near the Alps, weather can change quickly, with an occasional Föhn wind bringing brief warm spells.",
     culture:
       "Bavarians take pride in traditional dress (lederhosen for men, dirndls for women) and local festivals, and Oktoberfest is the year's biggest event. Beer-hall culture is a key part of daily life in Munich. Tipping is customary — round up or give 5–10%.",
     seeAndDo:
