@@ -60,4 +60,18 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "塔穆拉湖", nameEn: "Lake Tamula", lon: 26.9837, lat: 57.8396, kind: "landmark" },
     { nameZh: "沃鲁县博物馆", nameEn: "Võru County Museum", lon: 26.9921, lat: 57.846, kind: "landmark" },
   ],
+  toila: [
+    { nameZh: "奥鲁公园", nameEn: "Oru Park", lon: 27.5272, lat: 59.4219, kind: "nature" },
+    { nameZh: "托伊拉港（小艇码头）", nameEn: "Toila marina", lon: 27.5333, lat: 59.4268, kind: "district" },
+    { nameZh: "瓦拉斯泰瀑布", nameEn: "Valaste Waterfall", lon: 27.3351, lat: 59.4438, kind: "nature" },
+    { nameZh: "翁蒂卡陡崖", nameEn: "Ontika klint", lon: 27.3023, lat: 59.4429, kind: "nature" },
+  ],
+  vosu: [
+    { nameZh: "沃苏海滩", nameEn: "Võsu beach", lon: 25.9655, lat: 59.581, kind: "nature" },
+    { nameZh: "凯斯穆（船长村）", nameEn: "Käsmu", lon: 25.8967, lat: 59.6035, kind: "district" },
+    { nameZh: "凯斯穆漂砾群", nameEn: "Käsmu boulder field", lon: 25.9084, lat: 59.609, kind: "nature" },
+    { nameZh: "帕尔姆塞庄园（国家公园访客中心）", nameEn: "Palmse Manor (park visitor centre)", lon: 25.9562, lat: 59.5128, kind: "landmark" },
+    { nameZh: "萨加迪庄园与森林博物馆", nameEn: "Sagadi Manor and Forest Museum", lon: 26.0837, lat: 59.5378, kind: "landmark" },
+    { nameZh: "阿尔特亚渔村", nameEn: "Altja fishing village", lon: 26.1097, lat: 59.5797, kind: "district" },
+  ],
 };

@@ -71,4 +71,14 @@ export const CITIES: CityEntry[] = [
     lon: 26.9958, lat: 57.8480,
     source: "沃鲁中心广场 57.8480,26.9958（OSM）；本地没有定期航班的机场，不填 airport；塔尔图 TAY 直线约 54 km（只飞赫尔辛基），其余航线经塔林 TLL（按 OurAirports 算）；离国界约 24 km（按 OSM 边界算，已有城市补充批，2026-09-16）",
   },
+  {
+    id: "toila", nameZh: "托伊拉", nameEn: "Toila", country: "estonia", tier: "notable", zone: "ee-northeast", admin1Zh: "伊达维鲁县", admin1En: "Ida-Viru County",
+    lon: 27.5133, lat: 59.4209,
+    source: "托伊拉 59.4209,27.5133（OSM Nominatim，Toila alevik）；本地没有定期航班的机场，最近有定期航班的是塔林 TLL、直线约 152 km（算）；**托伊拉乡已于 2025 年 11 月并入约赫维乡**（2017 年市镇改革后爱沙尼亚的第一起市镇合并，地区与农业部 2025-04-29 政府令，1 级），人口只能写乡级；与地形条目 valaste-waterfall、north-estonian-klint 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "vosu", nameZh: "沃苏（拉赫马国家公园）", nameEn: "Võsu (Lahemaa)", country: "estonia", tier: "notable", zone: "ee-north", admin1Zh: "西维鲁县", admin1En: "Lääne-Viru County",
+    lon: 25.9554, lat: 59.5765,
+    source: "沃苏 59.5765,25.9554（OSM Nominatim，Võsu alevik）；本地没有定期航班的机场，最近有定期航班的是塔林 TLL、直线约 66 km（算）；人口只能写海良拉乡一级（统计局 RV0240 不到 alevik）；与地形条目 lahemaa-coast（锚点凯斯穆半岛）互指（已有城市补充批，2026-09-16）",
+  },
 ];

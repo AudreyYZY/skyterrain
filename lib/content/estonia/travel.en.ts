@@ -188,4 +188,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–September is the most comfortable, with swimming in the lake; winters are cold and the days short. There is no train, so check bus times before you travel.",
   },
+
+  toila: {
+    // 全七段 sources: 同中文侧（Statistics Estonia RV0240 at 1 January 2026, tier 1; Ministry of Regional Affairs and Agriculture on the 2025 merger of Toila into Jõhvi — the first municipal merger since the 2017 reform, tier 1; Jõhvi municipality on the service centres, tier 1; Oru Park history tier 2; waterfall and klint figures reused from this library's terrain entries）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Toila lies on Estonia's north-eastern coast around the mouth of the Pühajõgi, a summer resort that grew with the railway in the late 19th century. The coast to its west carries the highest stretch of the North Estonian klint, about 55 m at Ontika, and the Valaste waterfall is some 10 km away in a straight line, its drop varying with the flow. Beside the town is Oru Park, a protected landscape.",
+    howItWorks:
+      "Start with what has already changed: the municipality of Toila no longer exists. A government decree in 2025 merged Toila with Jõhvi into a new Jõhvi municipality, effective after that year's local elections — according to the ministry responsible, the first municipal merger in Estonia since the 2017 reform. The statistics show it: Toila municipality has no figures in the January 2026 release, while Jõhvi rose from about 12,000 to about 16,000 in the same period. So the answer to who runs Toila today is Jõhvi municipality, with its offices in Jõhvi and a service centre left in Toila handling residence registration, civil registry matters, nurseries and schools; counties have not been a tier of government since 2018 and serve as statistical and regional units. The town itself is a small stretch along the river and the shore, with the park, the spa and the harbour all in it. What sets this place apart is the coast to the west: the North Estonian klint is at its highest at Ontika, and both the waterfall and the cliff-top paths are along that stretch. Newcomers working from older material go looking for a Toila municipal office, and that address no longer has a government behind it.",
+    layout:
+      "The centre is around the mouth of the Pühajõgi, with Oru Park along the right bank about 1 km away and the marina about 1 km to the north-east. The Valaste waterfall is about 10 km west in a straight line, and the Ontika klint about 14 km west, with the Saka stretch of the same cliff further west again.",
+    gettingAround:
+      "Toila has no airport with scheduled flights; the nearest with them is Tallinn, about 152 km away in a straight line. The nearest railway station is at Jõhvi, about 9 km from town in a straight line, and getting around town or out to the cliffs means a car or a bus. The climate is maritime-continental, with cold snowy winters and cool summers.",
+    culture:
+      "Estonian is spoken here. The town has been a summer resort since the late 19th century, and its park and spa tradition go back to that. Tipping in restaurants is not compulsory, with around ten per cent usual for exceptional service. Tap water is safe to drink. The supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The paths and river valley in Oru Park; the Valaste waterfall and the stairway below the cliff (check on-site notices for the state of the facilities); the klint at Ontika; a stretch of the cliff-top woodland path; and the sea from around the harbour in summer.",
+    whenAndTips:
+      "June–August is the most comfortable, with long days; in winter the cliff paths ice over. The waterfall's flow varies a lot with the season, with the most water during the spring melt; keep back from the cliff edge where there is no railing.",
+  },
+
+  vosu: {
+    // 全七段 sources: 同中文侧（Statistics Estonia RV0240 at 1 January 2026, tier 1; haljala.ee on the municipality's area, settlements and share within the national park, tier 1; Environmental Board / kaitsealad.ee on Lahemaa's 1971 designation and 74,784 ha across three municipalities, tier 1; Käsmu boulders reused from this library's lahemaa-coast entry）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Võsu sits on Estonia's north coast inside Lahemaa National Park, one of the two small towns of Haljala municipality, whose population was 3,909 at the start of 2026 (Statistics Estonia). The park, designated in 1971, is the country's oldest and largest at 74,784 hectares — about 48,000 on land and 27,000 at sea — and spans three municipalities; both the beach at Võsu and the Käsmu peninsula to its west lie within it.",
+    howItWorks:
+      "Who runs this place and where people actually are come apart into three points. Administratively Võsu belongs to Haljala municipality — 550 km², two small towns and more than seventy villages, with the municipal offices at Haljala rather than Võsu; counties have not been a tier of government since 2018. In conservation terms about four tenths of the municipality lies inside Lahemaa National Park, whose rules are set by the environmental authorities, while the park's visitor centre is in yet another village, Palmse, run by the state forest management centre. And the place visitors actually gather is the beach at Võsu. The park itself spans three municipalities, so a good many \"Lahemaa sights\" are not in this one — worth keeping straight when planning. The coast here was shaped by ice: the Käsmu peninsula is strewn with boulders, most carried here by glaciers around 12,500 years ago. Newcomers treat a national park as a gated attraction, when this one is a large protected area with villages and farmland inside it.",
+    layout:
+      "The town spreads along its bay, with the beach immediately north. Käsmu village is about 7 km north-west on its peninsula, with the boulder field just north of the village. Palmse Manor and the park visitor centre are about 7 km south, Sagadi Manor and its forest museum about 12 km south-east, and the fishing village of Altja about 9 km east.",
+    gettingAround:
+      "Võsu has no airport with scheduled flights; the nearest with them is Tallinn, about 66 km away in a straight line. Getting here and moving around the park is mostly by car, with intercity buses passing through; villages within the park are well apart, so allow driving time when planning a day. The climate is maritime-continental, with cold snowy winters and cool summers.",
+    culture:
+      "Estonian is spoken here. Käsmu was known as the captains' village, with a ship's master or mate in almost every house. Tipping in restaurants is not compulsory, with around ten per cent usual for exceptional service. Tap water is safe to drink. The supply is 230 V with two-round-pin continental sockets.",
+    seeAndDo:
+      "The beach at Võsu; the Käsmu peninsula and the boulder field north of the village; Palmse Manor and the park visitor centre; Sagadi Manor and its forest museum; the net sheds of the fishing village at Altja; and the forest paths through the park.",
+    whenAndTips:
+      "June–August is the most comfortable and the busiest by the sea; outside that season many privately run museums and manors keep shorter hours, so check first. Phone coverage is patchy in places within the park, so read the trail markings before heading into the forest.",
+  },
 };

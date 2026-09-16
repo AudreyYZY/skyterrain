@@ -72,10 +72,21 @@ export const CITIES: CityEntry[] = [
     source: "圣保罗湾 35.9483,14.4017（布吉巴、夸拉同属本地方议会）；MLA 机场直线约 12 km（按本条目坐标算）：维基坐标、圣保罗湾地方议会官网",
   },
   {
-    id: "qrendi", nameZh: "奎伦迪", nameEn: "Qrendi", country: "malta", tier: "notable", zone: "mt-south",
+    id: "qrendi", nameZh: "奎伦迪", nameEn: "Qrendi", country: "malta", tier: "notable", zone: "mt-west",
     admin1Zh: "西部大区", admin1En: "Western Region",
     lon: 14.4589, lat: 35.8342,
     airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
     source: "奎伦迪 35.8342,14.4589（Wikidata）；属西部大区（regjunpunent.gov.mt，1 级）；MLA 直线约 3.1 km（按本条目坐标算）；中文译名沿用仓库地形条目「奎伦迪」（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "xaghra", nameZh: "沙拉（戈佐岛）", nameEn: "Ix-Xagħra", country: "malta", tier: "notable", zone: "mt-gozo", admin1Zh: "戈佐大区", admin1En: "Gozo Region",
+    lon: 14.2648, lat: 36.0503,
+    source: "沙拉辖区中心 36.0503,14.2648（OSM Nominatim，与教区圣殿基本重合）；戈佐岛没有定期航班，不填 airport，最近有定期航班的是 MLA、直线约 29 km（算）；与地形条目 gozo-uplands、ramla-bay 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "mosta", nameZh: "莫斯塔", nameEn: "Il-Mosta", country: "malta", tier: "major", zone: "mt-north", admin1Zh: "北部大区", admin1En: "Northern Region",
+    lon: 14.4258, lat: 35.9101,
+    airport: { iata: "MLA", nameZh: "马耳他国际机场", nameEn: "Malta International Airport", lon: 14.4775, lat: 35.8575 },
+    source: "莫斯塔圆顶教堂前的广场 35.9101,14.4258（OSM）；MLA 直线约 7.5 km（算）；地形条目 great-fault-malta 的锚点就在本辖区北端的莫斯塔堡一带，两边互指（已有城市补充批，2026-09-16）",
   },
 ];
