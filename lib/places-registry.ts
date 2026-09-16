@@ -117,6 +117,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "is-east": { zh: "东部", en: "East", order: 73 },
   "is-north": { zh: "北部", en: "North", order: 74 },
   "is-westfjords": { zh: "西部峡湾", en: "Westfjords", order: 75 },
+  "is-west": { zh: "西部", en: "West", order: 76 },
   // 瑞士（中部高原→日内瓦湖区→伯尔尼高地→瓦莱→格劳宾登→提契诺）
   "ch-plateau": { zh: "中部高原", en: "Swiss Plateau", order: 80 },
   "ch-lake-geneva": { zh: "日内瓦湖区", en: "Lake Geneva Region", order: 81 },

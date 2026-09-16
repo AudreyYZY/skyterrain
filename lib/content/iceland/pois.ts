@@ -77,4 +77,17 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "斯坎辛", nameEn: "Skansinn", lon: -20.2615, lat: 63.4438, kind: "landmark" },
     { nameZh: "兰达教堂", nameEn: "Landakirkja", lon: -20.2723, lat: 63.4370, kind: "landmark" },
   ],
+  stykkisholmur: [
+    { nameZh: "挪威木屋（地区博物馆）", nameEn: "Norska húsið (regional museum)", lon: -22.726941, lat: 65.077197, kind: "landmark" },
+    { nameZh: "水之图书馆", nameEn: "Vatnasafn / Library of Water", lon: -22.728725, lat: 65.07724, kind: "landmark" },
+    { nameZh: "苏甘迪塞岛与灯塔", nameEn: "Súgandisey island and lighthouse", lon: -22.722915, lat: 65.079975, kind: "nature" },
+    { nameZh: "斯蒂基斯霍尔米教堂", nameEn: "Stykkishólmskirkja", lon: -22.721819, lat: 65.073898, kind: "landmark" },
+    { nameZh: "市政厅", nameEn: "Town hall", lon: -22.726778, lat: 65.077371, kind: "district" },
+  ],
+  seydisfjordur: [
+    { nameZh: "蓝教堂", nameEn: "Seyðisfjarðarkirkja (the Blue Church)", lon: -14.010597, lat: 65.261317, kind: "landmark" },
+    { nameZh: "斯卡夫特费尔视觉艺术中心", nameEn: "Skaftfell Center for Visual Art", lon: -13.997864, lat: 65.261578, kind: "landmark" },
+    { nameZh: "东部技术博物馆", nameEn: "Technical Museum of East Iceland", lon: -13.991947, lat: 65.265266, kind: "landmark" },
+    { nameZh: "「双声」声音雕塑", nameEn: "Tvísöngur sound sculpture", lon: -13.981864, lat: 65.26781, kind: "landmark" },
+  ],
 };
