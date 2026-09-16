@@ -2069,6 +2069,8 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/chinatown-singapore": { f: 7, v: 0 },
   "travel/kampong-glam": { f: 7, v: 0 },
   "travel/little-india-singapore": { f: 7, v: 0 },
+  "travel/katong": { f: 7, v: 1, d: "2026-09-16" },
+  "travel/changi-village": { f: 7, v: 1, d: "2026-09-16" },
   "travel/philippines-overview": { f: 6, v: 1, d: "2026-09-07", l: 1 },
   "travel/manila": { f: 7, v: 1, d: "2026-09-15" },
   "travel/cebu-city": { f: 7, v: 0, d: "2025-07-11" },
@@ -2298,4 +2300,6 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/tutong": { f: 7, v: 1, d: "2026-09-15" },
   "travel/kuala-belait": { f: 7, v: 1, d: "2026-09-15" },
   "travel/bangar": { f: 7, v: 1, d: "2026-09-15" },
+  "travel/muara": { f: 7, v: 1, d: "2026-09-16" },
+  "travel/labi": { f: 7, v: 1, d: "2026-09-16" },
 };

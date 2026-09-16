@@ -32,4 +32,15 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "乌鲁淡布隆国家公园林冠步道", nameEn: "Ulu Temburong National Park canopy walk", lon: 115.15976, lat: 4.55209, kind: "nature" },
     { nameZh: "淡布隆大桥", nameEn: "Temburong Bridge", lon: 115.09292, lat: 4.84214, kind: "transport" },
   ],
+  muara: [
+    { nameZh: "摩拉海滩", nameEn: "Muara Beach", lon: 115.07956, lat: 5.03794, kind: "nature" },
+    { nameZh: "丹戎巴都海滩", nameEn: "Tanjong Batu Beach", lon: 115.06171, lat: 5.03898, kind: "nature" },
+    { nameZh: "摩拉镇中心", nameEn: "Muara town centre", lon: 115.07023, lat: 5.02626, kind: "district" },
+  ],
+  labi: [
+    { nameZh: "卢岸拉拉沼泽", nameEn: "Luagan Lalak", lon: 114.47537, lat: 4.51631, kind: "nature" },
+    { nameZh: "门达兰的长屋", nameEn: "Mendaram longhouse", lon: 114.4189, lat: 4.28421, kind: "landmark" },
+    { nameZh: "特拉加瀑布", nameEn: "Wasai Teraja", lon: 114.43068, lat: 4.28762, kind: "nature" },
+    { nameZh: "特拉加山", nameEn: "Bukit Teraja", lon: 114.43499, lat: 4.30575, kind: "nature" },
+  ],
 };

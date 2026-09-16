@@ -36,4 +36,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "竹脚中心", nameEn: "Tekka Centre", lon: 103.8497, lat: 1.3061, kind: "landmark" },
     { nameZh: "实龙岗路商铺街", nameEn: "Serangoon Road Shops", lon: 103.8496, lat: 1.3067, kind: "district" },
   ],
+  katong: [
+    { nameZh: "坤成路土生华人排屋", nameEn: "Koon Seng Road Peranakan terrace houses", lon: 103.90246, lat: 1.31037, kind: "landmark" },
+    { nameZh: "兴都庙（锡兰路）", nameEn: "Sri Senpaga Vinayagar Temple", lon: 103.90251, lat: 1.30552, kind: "landmark" },
+    { nameZh: "慈光阁（土生华人收藏馆）", nameEn: "The Intan", lon: 103.90098, lat: 1.31468, kind: "landmark" },
+    { nameZh: "欧亚裔文化馆", nameEn: "Eurasian Heritage Gallery", lon: 103.89932, lat: 1.31004, kind: "landmark" },
+    { nameZh: "海格路巴刹与熟食中心", nameEn: "Haig Road Market & Food Centre", lon: 103.89558, lat: 1.31513, kind: "landmark" },
+    { nameZh: "滨海湾东区巴刹与熟食中心", nameEn: "Marine Parade Market & Food Centre", lon: 103.90634, lat: 1.30218, kind: "landmark" },
+    { nameZh: "东海岸公园", nameEn: "East Coast Park", lon: 103.91261, lat: 1.30032, kind: "nature" },
+  ],
+  "changi-village": [
+    { nameZh: "樟宜村巴刹与熟食中心", nameEn: "Changi Village Market & Hawker Centre", lon: 103.98815, lat: 1.38942, kind: "landmark" },
+    { nameZh: "樟宜角渡轮码头（往乌敏岛）", nameEn: "Changi Point Ferry Terminal", lon: 103.98754, lat: 1.39104, kind: "district" },
+    { nameZh: "樟宜村巴士总站", nameEn: "Changi Village bus terminal", lon: 103.9879, lat: 1.38947, kind: "district" },
+    { nameZh: "樟宜海滩公园", nameEn: "Changi Beach Park", lon: 103.99128, lat: 1.39132, kind: "nature" },
+    { nameZh: "樟宜角海岸栈道", nameEn: "Changi Point Coastal Walk", lon: 103.98276, lat: 1.39262, kind: "nature" },
+    { nameZh: "乌敏岛", nameEn: "Pulau Ubin", lon: 103.9648, lat: 1.4103, kind: "nature" },
+  ],
 };

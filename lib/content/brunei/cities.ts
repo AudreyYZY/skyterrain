@@ -40,4 +40,14 @@ export const CITIES: CityEntry[] = [
     lon: 115.07244, lat: 4.70765,
     source: "邦阿镇 OSM node 1699103550 4.70765,115.07244；淡布隆区中心，没有市政委员会（统计局《统计年鉴 2025》预算表只列三个市政委员会，1 级）；约 30 km 的淡布隆大桥 2020 年 3 月通车（旅游局地点页，1 级）；BWN 直线约 31 km（按坐标算），本地没有定期航班的机场（只有直升机坪，OurAirports，3 级），不填机场字段",
   },
+  {
+    id: "muara", nameZh: "摩拉", nameEn: "Muara", country: "brunei", tier: "notable", zone: "bn-west", admin1Zh: "文莱—摩拉区", admin1En: "Brunei-Muara District",
+    lon: 115.07023, lat: 5.02626,
+    source: "摩拉镇 5.02626,115.07023（OSM node 369493516，place=town）；本地没有定期航班的机场，BWN 直线约 18 km（算）—— 比照都东（约 33 km 不填）与斯里巴加湾（约 6 km 填）的既有做法，本条目不填 airport，在正文里写距离（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "labi", nameZh: "拉比", nameEn: "Labi", country: "brunei", tier: "notable", zone: "bn-west", admin1Zh: "马来奕区", admin1En: "Belait District",
+    lon: 114.4658, lat: 4.4044,
+    source: "拉比 4.4044,114.4658 —— OSM 上没有 Kg Labi 的 place 节点，锚点取本地的中华拉比学校（OSM way 1084907132）；BWN 直线约 79 km（算），不填 airport；与地形条目 labi-hills（拉比丘陵，锚点为特拉加山）互指（已有城市补充批，2026-09-16）",
+  },
 ];

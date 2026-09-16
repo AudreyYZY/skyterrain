@@ -31,4 +31,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
     source: "小印度核心区 1.3067,103.8496；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
   },
+  {
+    id: "katong", nameZh: "加东", nameEn: "Katong", country: "singapore", tier: "notable", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.90234, lat: 1.30726,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "加东分区边界中心 1.30726,103.90234（OSM relation 19910225）；SIN 直线约 12 km（算）；注：文莱的 Gadong 在本库写作「加东」，两者同名不同地，见 lib/content/brunei（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "changi-village", nameZh: "樟宜村", nameEn: "Changi Village", country: "singapore", tier: "notable", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
+    lon: 103.98808, lat: 1.38966,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "樟宜村 1.38966,103.98808（OSM node 2970751698，place=suburb）；SIN 直线约 2.8 km（算），是全库离樟宜机场最近的城市条目；往乌敏岛的驳船从紧邻的樟宜角渡轮码头开出（已有城市补充批，2026-09-16）",
+  },
 ];

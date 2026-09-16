@@ -103,4 +103,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "It rains all year, and after rain rivers rise and forest trails get slippery, so plans may change. The UK Foreign Office advises against hiking alone in the forest: hire a reliable guide, stay on the trails, carry water and food, and wear closed shoes.",
   },
+
+  muara: {
+    // 全七段 sources: 同中文侧（DEPS 2021 census subdistrict figures and 2025 district estimate, tier 1; Brunei Tourism place pages for the four beaches, tier 1; municipal boards limited to three nationwide, tier 1; distances computed。 红线：无国界、海域、渡轮航线、港口经营与在建扩建、军事设施、王室与政治体制）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Muara is a small town at the northern end of the Brunei-Muara district, with 2,539 people in the town area at the 2021 census (Department of Economic Planning and Statistics). The town itself amounts to a single street; the villages and beaches around it are the substance of the area, with four stretches of sand — Muara, Tanjong Batu, Serasa and Meragang — all within a few kilometres.",
+    howItWorks:
+      "Brunei has only three municipal boards, and Muara is not one of them: town and village matters here fall to the district office, with a penghulu at subdistrict level and a village head below that, and addresses are given as subdistrict, village and landmark. Two numbers say most about what is happening here: the town area fell from 3,244 people in 2011 to 2,539 in 2021, while in the same subdistrict the village of Meragang rose from 28 to 9,190 — people have not left the area, they have moved out of the old town into newly built housing. So Muara today is more a place name than a town: it has a post office, a library and a clinic, but shopping, schooling and work are mostly tens of kilometres away towards the capital. Newcomers expect a seaside town to live off fishing and the harbour, when daily life here runs on commuting by road.",
+    layout:
+      "The town centre is a single street, holding the post office, the library and the clinic, with the bus terminal by the road. Muara Beach is about 1.5 km north-east, Tanjong Batu Beach about 1.7 km north-west, Serasa Beach to the south-west and Meragang Beach to the west, both within a few kilometres (precise positions for these two were not obtained from a primary source, so no exact distances are given).",
+    gettingAround:
+      "Muara has no airport with scheduled flights; the country's only airport with them is about 18 km south-west in a straight line, and the centre of Bandar Seri Begawan about 21 km south-west, linked by road, so most travel is by car. The town is walkable. The climate is equatorial, hot and wet all year.",
+    culture:
+      "Malay is the common language and English is widely used. Food stalls appear by the beaches at weekends. Around midday on Fridays, during Friday prayers, shops generally close. Tipping is generally not needed, and Brunei dollars and Singapore dollars are interchangeable at par.",
+    seeAndDo:
+      "The white sand and weekend food stalls at Muara Beach; the seawall walk and sunsets at Tanjong Batu; water sports at Serasa; the quiet shore around Meragang; and the small streets and market in town.",
+    whenAndTips:
+      "It is hot all year with afternoon thunderstorms. Getting between the beaches needs a car as public transport is sparse, and most shops close around midday on Fridays, so plan around it.",
+  },
+
+  labi: {
+    // 全七段 sources: 同中文侧（DEPS 2021 census subdistrict and village figures, tier 1; Brunei Tourism place pages for Luagan Lalak, the Mendaram longhouse and Wasai Teraja, tier 1; drive times reused from the repo's labi-hills entry, tier 1; FCDO 2026-03-19 on the police advice against hiking alone, tier 1; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Labi is inland in Brunei's Belait district — a strip of countryside strung along one road: at the 2021 census the Labi subdistrict had 727 people (Department of Economic Planning and Statistics), spread across a dozen or so villages along Labi Road. Forest reserves and peat swamp line the road, with the open water of Luagan Lalak and the hill of Bukit Teraja along the way.",
+    howItWorks:
+      "There is no town centre here and no municipal board — Brunei has only three, and Labi is not one of them. The district office runs things, with a penghulu at subdistrict level and village heads below, while the forest reserves belong to the forestry department. The way addresses work says a lot about the shape of the place: people give a position as Labi Road plus the number of a side turning, because the villages are strung along that one road, and even the largest has only about a hundred people. The same road sets the living radius: shopping and errands mean going down to the coast, with Kuala Belait about 36 km away in a straight line and the capital about an hour and a half by road according to the tourism board. Newcomers take Labi for a town, when it is a road, a string of villages and several forest reserves — and the longhouses along it are homes, not attractions.",
+    layout:
+      "Labi Road runs inland from the coast, with villages, the school and the fire station along it. Luagan Lalak lies on the northern stretch, about 12 km north of the anchor point in a straight line; Bukit Teraja and Wasai Teraja are at the southern end, about 11 to 13 km away; and the Mendaram longhouse is also on the southern stretch.",
+    gettingAround:
+      "Labi has no airport with scheduled flights; the country's only airport with them is about 79 km north-east in a straight line. The one way in and out is Labi Road, by car or hired vehicle; according to the tourism board the drive from the capital takes about an hour and a half, and from Kuala Belait about 45 minutes. Forest trails mean dirt tracks and stream crossings, muddy after rain. The climate is equatorial, hot and wet all year.",
+    culture:
+      "Malay is the common language and English is widely used. The longhouses along the road are Iban homes, so ask before visiting or passing through. Around midday on Fridays, during Friday prayers, shops generally close. Tipping is generally not needed.",
+    seeAndDo:
+      "The boardwalk and viewing platforms at Luagan Lalak; Wasai Teraja, reached by a forest track and a stream crossing; the climb up Bukit Teraja for a view over the forest; and the drive along Labi Road through peat swamp forest and villages.",
+    whenAndTips:
+      "It is hot and wet all year, and forest tracks are slippery after rain. Brunei police advise against hiking alone in the forest; phone coverage here is patchy, so tell someone your plans and sort out fuel before heading in.",
+  },
 };
