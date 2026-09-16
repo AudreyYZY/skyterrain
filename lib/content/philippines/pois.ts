@@ -60,4 +60,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "维甘大教堂", nameEn: "Vigan Cathedral", lon: 120.3878, lat: 17.5747, kind: "landmark" },
     { nameZh: "西索克南遗产村", nameEn: "Syquia Mansion", lon: 120.3861, lat: 17.5731, kind: "landmark" },
   ],
+  "iloilo-city": [
+    { nameZh: "卡列雷亚尔老街", nameEn: "Calle Real", lon: 122.5699009, lat: 10.6956101, kind: "district" },
+    { nameZh: "哈罗主教座堂与钟楼", nameEn: "Jaro Cathedral and Belfry", lon: 122.556161, lat: 10.7235033, kind: "landmark" },
+    { nameZh: "莫洛教堂", nameEn: "Molo Church", lon: 122.5448377, lat: 10.6974422, kind: "landmark" },
+    { nameZh: "伊洛伊洛河滨步道", nameEn: "Iloilo River Esplanade", lon: 122.5550093, lat: 10.7029972, kind: "nature" },
+    { nameZh: "伊洛伊洛博物馆", nameEn: "Museo Iloilo", lon: 122.5685065, lat: 10.7027845, kind: "landmark" },
+    { nameZh: "圣佩德罗堡", nameEn: "Fort San Pedro", lon: 122.580063, lat: 10.687971, kind: "landmark" },
+  ],
+  banaue: [
+    { nameZh: "巴纳威主观景台", nameEn: "Banaue main viewpoint", lon: 121.0573118, lat: 16.9354701, kind: "nature" },
+    { nameZh: "巴塔德梯田", nameEn: "Batad Rice Terraces", lon: 121.1378218, lat: 16.9314274, kind: "nature" },
+    { nameZh: "邦阿安梯田与村落", nameEn: "Bangaan Rice Terraces and village", lon: 121.1268156, lat: 16.9106647, kind: "nature" },
+    { nameZh: "塔皮亚瀑布", nameEn: "Tappiya Falls", lon: 121.1365037, lat: 16.9391695, kind: "nature" },
+    { nameZh: "巴纳威博物馆", nameEn: "Banaue Museum", lon: 121.0602614, lat: 16.9118542, kind: "landmark" },
+  ],
 };

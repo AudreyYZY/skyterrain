@@ -67,4 +67,15 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "LAO", nameZh: "拉瓦格国际机场", nameEn: "Laoag International Airport", lon: 120.5310, lat: 18.1751 },
     source: "维甘市中心 17.5747,120.3869；本地维甘机场客运航班暂不稳定，多数游客经马尼拉方向公路往返（约400km，车程约7至8小时）：公开资料；机场字段 2026-09-12 由 MNL（马尼拉，348 km）改为 LAO 拉瓦格国际机场（直线 69 km、有定期航班，OurAirports/RPLI）——本条目正文本来就写着「机场在北面 80 公里的拉瓦格」，注册表与正文原本矛盾",
   },
+  {
+    id: "iloilo-city", nameZh: "伊洛伊洛市", nameEn: "Iloilo City", country: "philippines", tier: "major", zone: "ph-visayas", admin1Zh: "伊洛伊洛省", admin1En: "Iloilo",
+    lon: 122.5733, lat: 10.6933,
+    airport: { iata: "ILO", nameZh: "伊洛伊洛国际机场", nameEn: "Iloilo International Airport", lon: 122.4934, lat: 10.8330 },
+    source: "伊洛伊洛市中心（卡列雷亚尔一带）10.6932884,122.5732604（OSM Nominatim）；ILO OurAirports 10.8330,122.4934，直线约 18 km —— 机场在伊洛伊洛省卡巴图安镇、不在市域内（与宿务市的 CEB 同一结构），正文写明；admin1 按仓库既有惯例仍填地理上所在的省，但本市是高度城市化市、不受省政府管辖（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "banaue", nameZh: "巴纳威", nameEn: "Banaue", country: "philippines", tier: "notable", zone: "ph-luzon", admin1Zh: "伊富高省", admin1En: "Ifugao",
+    lon: 121.0608, lat: 16.9127,
+    source: "巴纳威镇中心（Poblacion）16.9127250,121.0608282（OSM Nominatim）；镇内与近旁的小机场（Lepanto Mines 30 km、Bagabag 39 km）均 scheduled_service=no，不填 airport；最近有定期航班的是伊莎贝拉省卡瓦延 CYZ、直线约 74 km（算）；与地形条目 banaue-ifugao-rice-terraces（本库写作「班奈梯田」）互指（已有城市补充批，2026-09-16）",
+  },
 ];

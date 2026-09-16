@@ -240,4 +240,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Liveaboard trips typically run 2–3 days — book in advance through a reputable operator and confirm the boat's and guide's credentials; the dry season (roughly May–September) offers more stable river conditions and better wildlife viewing.",
   },
+
+  semarang: {
+    // 全七段 sources: 同中文侧（Semarang civil registry office 2026-02-09 on 2025 year-end registered population, tier 1; BPS yearbook for area and subdivisions, tier 1; UNESCO Tentative List 2015-01-30, tier 1; Ministry of Energy and Mineral Resources geological agency 2017-03-01 on subsidence, tier 1; OurAirports and computed distances）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Semarang is the capital of Central Java in Indonesia, with about 1.70 million registered residents at the end of 2025 (Semarang civil registry office). It sits on Java's north coast, where the Dutch-era old town and the port of Tanjung Emas line the shore and the land rises southwards to the newer commercial centre on higher ground. The old town entered UNESCO's Tentative List in 2015.",
+    howItWorks:
+      "Three layers need separating here: the Central Java provincial government sits in the city, the city of Semarang is a self-governing unit in its own right with 16 districts and 177 sub-districts, and the identically named Semarang Regency is a separate government of equal standing based at Ungaran outside the city. Governors and mayors are directly elected, while district and sub-district heads are appointed civil servants, and addresses carry RT/RW neighbourhood numbers below the street name. The city has two centres: the old town and the port on the northern shore, and the area around Simpang Lima on the higher ground to the south, which is the commercial centre today — the city climbs from near sea level to over 300 m, and people speak of the upper and lower town as a matter of course. What sets the living radius is the ground itself: in 2017 the geological agency of the Ministry of Energy and Mineral Resources reported that the northern part of the city was subsiding by 7 to 9 cm a year, mainly because of groundwater extraction, and that no new extraction permits were being issued in the worst-affected zones; tidal flooding along the coast is routine. Newcomers often assume there is only one Semarang government, and often take the old town in the north for the city centre.",
+    layout:
+      "The old town is on the coast about 3 km north of the centre in a straight line, with Blenduk Church at its heart and the port of Tanjung Emas about 2 km beyond it. Lawang Sewu and the Tugu Muda monument are about 1.5 km west of the centre, Simpang Lima is just to its south, Sam Poo Kong about 3 km west, and the Great Mosque of Central Java about 2.5 km east.",
+    gettingAround:
+      "Jenderal Ahmad Yani Airport is about 6 km from the centre in a straight line, with domestic and international scheduled flights. The city has the Tawang and Poncol stations on Java's northern main line, with trains west to Jakarta and east to Surabaya. Getting around means cars, motorbikes and ride-hailing; the low-lying north floods at high tides. The climate is tropical monsoon, hot all year, with the rainy season running roughly from November to March.",
+    culture:
+      "Indonesian is the common language, and Javanese is spoken locally. The old town keeps its Dutch-era commercial buildings, and the city also has Chinese temples and the provincial grand mosque — dress modestly at religious sites and follow the rules posted there. Local snacks include lumpia spring rolls and rice-based sweets.",
+    seeAndDo:
+      "The old town and Blenduk Church; Lawang Sewu; Sam Poo Kong; the Great Mosque of Central Java; the night markets and malls around Simpang Lima; and the ships at Tanjung Emas.",
+    whenAndTips:
+      "May to September is relatively dry; in the rainy season the low-lying north floods at high tides, so check conditions before setting out. The height difference across the city means even short trips often call for a taxi.",
+  },
+
+  mataram: {
+    // 全七段 sources: 同中文侧（West Nusa Tenggara provincial civil registry via the Satu Data NTB open-data portal, first half of 2025, tier 1; OurAirports; distances computed; UNESCO Global Geopark status only tier 2 and probably excludes the city, so not written）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Mataram is the capital of West Nusa Tenggara province in Indonesia, on the west coast of Lombok, with about 465,000 registered residents in 2025 (civil-registry figures). It is where the province does its paperwork, schooling, hospital visits and shopping; the airport, beaches and trailheads visitors know are mostly in the neighbouring regencies.",
+    howItWorks:
+      "The provincial government of West Nusa Tenggara sits in the city, while Mataram itself is a self-governing city of six districts and several dozen sub-districts; West, Central and North Lombok regencies next door each have their own regent and are separate governments. Mayors and governors are directly elected, district and sub-district heads are appointed civil servants; addresses carry RT/RW below the street name, and below the sub-district there is a further tier here called the lingkungan. The city is really three old towns grown together: Ampenan, the old port on the west coast; Mataram in the middle, where the offices are; and Cakranegara to the east, where the commerce and the temples are — those three are the names locals actually use. What matters for the living radius lies beyond the city limits: Lombok International Airport is in Central Lombok, the Senggigi resort strip and the ferry port of Lembar for Bali are in West Lombok, and the Gili islands and the Rinjani trailheads are in the north and east. Newcomers often treat Mataram as Lombok's resort gateway, when it is a working provincial capital.",
+    layout:
+      "The centre is around the Mataram district: Ampenan old town is about 3.5 km west on the coast and Loang Baloq beach about 4 km south-west; Pura Meru and Taman Mayura face each other across the street about 3 km east in Cakranegara; the NTB Islamic Center is a short way west of the centre and the Sayang-Sayang art market about 2.5 km north-east. Mount Rinjani is about 43 km north-east in a straight line.",
+    gettingAround:
+      "Lombok International Airport is about 27 km from the centre in a straight line and has scheduled flights, but it lies in Central Lombok rather than in the city. The island has no railways, so travel is by car, motorbike and ride-hailing; ferries to Bali leave from Lembar in West Lombok, and boats to the Gili islands from Bangsal in North Lombok. The climate is tropical and hot all year, with the rainy season running roughly from November to March.",
+    culture:
+      "Indonesian is the common language, and Sasak is spoken locally. The city has both Hindu temples and the provincial mosque — dress modestly at religious sites and follow the rules posted there. Local food runs hot, and the markets sell handwoven textiles and pottery.",
+    seeAndDo:
+      "The old streets of Ampenan; Pura Meru and Taman Mayura in Cakranegara; the NTB Islamic Center; handwoven textiles at the Sayang-Sayang market; and sunset at Loang Baloq beach.",
+    whenAndTips:
+      "May to September is relatively dry and is also the season for climbing Rinjani; the rainy season brings frequent showers. Most destinations are in the surrounding regencies, so build driving time into the plan.",
+  },
 };
