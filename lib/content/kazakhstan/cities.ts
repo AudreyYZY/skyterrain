@@ -55,4 +55,22 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "KOV", nameZh: "科克舍套机场", nameEn: "Kokshetau Airport", lon: 69.5942, lat: 53.3325 },
     source: "科克舍套市中心 53.2833,69.3833；KOV机场（距市区约18km），是前往布拉拜国家公园的主要门户：公开资料",
   },
+  {
+    id: "oskemen", nameZh: "厄斯克门", nameEn: "Oskemen (Ust-Kamenogorsk)", country: "kazakhstan", tier: "notable", zone: "kz-east", admin1Zh: "东哈萨克斯坦州", admin1En: "East Kazakhstan Region",
+    lon: 82.6275, lat: 49.9484,
+    airport: { iata: "UKK", nameZh: "厄斯克门机场", nameEn: "Oskemen Airport", lon: 82.4961, lat: 50.0350 },
+    source: "厄斯克门市中心 49.9484,82.6275（OSM）；UKK 机场 OurAirports 50.0350,82.4961，距中心直线约 13.5 km，有定期航班（航班追踪站 3 级）；离国界约 85 km（按 Natural Earth 国界算，已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "atyrau", nameZh: "阿特劳", nameEn: "Atyrau", country: "kazakhstan", tier: "major", zone: "kz-west", admin1Zh: "阿特劳州", admin1En: "Atyrau Region",
+    lon: 51.9139, lat: 47.1067,
+    airport: { iata: "GUW", nameZh: "阿特劳国际机场", nameEn: "Atyrau International Airport", lon: 51.8203, lat: 47.1213 },
+    source: "阿特劳城市中心 47.1067,51.9139（OSM relation/9347854，place=city；旁证：名为「阿基姆」的公交站在 0.1 km 内）；GUW 直线约 7 km、有定期航班（OurAirports scheduled_service=yes），填 airport；离国界约 219 km；与地形条目 ural-river、caspian-sea-coast-kazakhstan 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "taldykorgan", nameZh: "塔尔迪库尔干", nameEn: "Taldykorgan", country: "kazakhstan", tier: "major", zone: "kz-southeast", admin1Zh: "热提苏州", admin1En: "Jetisu Region",
+    lon: 78.3817, lat: 45.0185,
+    airport: { iata: "TDK", nameZh: "塔尔迪库尔干机场", nameEn: "Taldykorgan Airport", lon: 78.4428, lat: 45.1226 },
+    source: "塔尔迪库尔干阿基姆行政楼 45.0185,78.3817（OSM way/250550274；OSM 里没有 amenity=townhall 对象，该楼未区分市级 / 州级）；TDK 直线约 13 km、有国内定期航班（OurAirports scheduled_service=yes），填 airport；离国界约 117 km；热提苏州 2022 年新设、州府定在本市；与地形条目 altyn-emel-singing-dune、lake-balkhash 互指（已有城市补充批，2026-09-16）",
+  },
 ];

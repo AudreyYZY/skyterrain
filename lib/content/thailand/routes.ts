@@ -59,17 +59,17 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
     study: {
     "zh-CN":
       "曼谷廊曼飞清莱，是连接首都与泰国最北端府份的航线。飞机离开廊曼后向北飞行，中途掠过通萨兰銮草原——泰国中北部一片海拔300至1028米的高原草甸，被称为“泰国的稀树草原”，开阔草地与稀疏松林交错分布。" +
-      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔在2175至2275米之间，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——紧邻缅甸与老挝边境“金三角”地区的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
+      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔在2175至2275米之间，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——泰国最北端的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
     "en-US":
       "Flying from Bangkok Don Mueang to Chiang Rai links the capital with Thailand's northernmost province. After leaving Don Mueang the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation in north-central Thailand known as \"Thailand's savanna,\" its open grassland interspersed with sparse pine forest." +
-      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak, put at between 2,175 and 2,275 m depending on the source, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     },
     // travel sources: 全四段（study/travel × 中英）: 清道山泰国第三高峰 2175–2275 m 与本库一致。核实 2026-09-11
     travel: {
     "zh-CN":
-      "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱是探索金三角景观区与白庙等当代宗教艺术建筑的理想门户。",
+      "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱以白庙、蓝庙等当代宗教艺术建筑闻名，城外还有山区茶园。",
     "en-US":
-      "Bangkok Don Mueang to Chiang Rai takes about 80 minutes, same time zone, operated by Nok Air as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Chiang Rai International Airport is about 8 km from the city centre. Chiang Rai is an ideal gateway for the Golden Triangle viewpoint and contemporary religious-art buildings such as the White Temple.",
+      "Bangkok Don Mueang to Chiang Rai takes about 80 minutes, same time zone, operated by Nok Air as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Chiang Rai International Airport is about 8 km from the city centre. Chiang Rai is known for contemporary religious-art buildings such as the White and Blue Temples, with hill tea plantations outside town.",
     },
   },
 

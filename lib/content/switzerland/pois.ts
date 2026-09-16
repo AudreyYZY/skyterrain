@@ -82,4 +82,31 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "甘德里亚（湖边小村）", nameEn: "Gandria", lon: 9.0010, lat: 46.0060, kind: "district" },
     { nameZh: "贝林佐纳三城堡", nameEn: "Bellinzona castles", lon: 9.0270, lat: 46.1950, kind: "landmark" },
   ],
+  "st-gallen": [
+    { nameZh: "修道院图书馆与主教座堂", nameEn: "Abbey Library and Cathedral", lon: 9.3764, lat: 47.4228, kind: "landmark" },
+    { nameZh: "纺织博物馆", nameEn: "Textile Museum", lon: 9.3736, lat: 47.4234, kind: "landmark" },
+    { nameZh: "三池塘", nameEn: "Drei Weieren", lon: 9.3873, lat: 47.4214, kind: "nature" },
+    { nameZh: "OLMA 展会场地", nameEn: "OLMA exhibition grounds", lon: 9.3845, lat: 47.4325, kind: "landmark" },
+  ],
+  schaffhausen: [
+    { nameZh: "穆诺特要塞", nameEn: "Munot fortress", lon: 8.6399, lat: 47.6969, kind: "landmark" },
+    { nameZh: "万圣修道院博物馆", nameEn: "Museum zu Allerheiligen", lon: 8.6359, lat: 47.6949, kind: "landmark" },
+    { nameZh: "骑士之家", nameEn: "Haus zum Ritter", lon: 8.6349, lat: 47.6962, kind: "landmark" },
+    { nameZh: "莱茵瀑布", nameEn: "Rhine Falls", lon: 8.6149, lat: 47.6784, kind: "nature" },
+    { nameZh: "莱茵河畔施泰因", nameEn: "Stein am Rhein", lon: 8.8591, lat: 47.6596, kind: "landmark" },
+  ],
+  neuchatel: [
+    { nameZh: "纳沙泰尔城堡（州政府与州议会所在地）", nameEn: "Château de Neuchâtel", lon: 6.927, lat: 46.9922, kind: "landmark" },
+    { nameZh: "教务教堂", nameEn: "Collégiale de Neuchâtel", lon: 6.9263, lat: 46.992, kind: "landmark" },
+    { nameZh: "艺术与历史博物馆", nameEn: "Museum of Art and History", lon: 6.9354, lat: 46.9916, kind: "landmark" },
+    { nameZh: "拉泰尼姆考古博物馆（邻镇）", nameEn: "Laténium (neighbouring commune)", lon: 6.9712, lat: 47.0073, kind: "landmark" },
+    { nameZh: "凡岩谷", nameEn: "Creux du Van", lon: 6.728, lat: 46.933, kind: "nature" },
+  ],
+  appenzell: [
+    { nameZh: "兰茨盖迈因德广场", nameEn: "Landsgemeindeplatz", lon: 9.4076, lat: 47.3315, kind: "district" },
+    { nameZh: "主街的彩绘立面", nameEn: "Painted façades of the Hauptgasse", lon: 9.4093, lat: 47.3307, kind: "district" },
+    { nameZh: "阿彭策尔博物馆", nameEn: "Museum Appenzell", lon: 9.4099, lat: 47.3309, kind: "landmark" },
+    { nameZh: "森蒂斯", nameEn: "Säntis", lon: 9.343, lat: 47.249, kind: "nature" },
+    { nameZh: "埃本阿尔卑缆车站（瓦瑟劳恩）", nameEn: "Ebenalp cable car at Wasserauen", lon: 9.4201, lat: 47.2857, kind: "nature" },
+  ],
 };

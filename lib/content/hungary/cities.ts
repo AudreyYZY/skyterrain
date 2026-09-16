@@ -46,4 +46,26 @@ export const CITIES: CityEntry[] = [
     lon: 19.0770, lat: 47.6690,
     source: "圣安德烈市中心 47.6690,19.0770；本地无机场，从布达佩斯乘 HÉV 郊区铁路约 40 分钟可达：公开资料",
   },
+  {
+    id: "veszprem", nameZh: "维斯普雷姆", nameEn: "Veszprém", country: "hungary", tier: "notable", zone: "hu-transdanubia",
+    admin1Zh: "维斯普雷姆州", admin1En: "Veszprém",
+    lon: 17.9064, lat: 47.0944,
+    source: "维斯普雷姆老城广场 47.0944,17.9064（OSM）；州府、州权市（KSH 地名录 2025，1 级）；本地没有定期航班的机场，不填 airport；布达佩斯 BUD 直线约 109 km（按 OurAirports 算）；Hévíz-Balaton（SOB）只有零星季节航班，不算；离国界约 72 km（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "kecskemet", nameZh: "凯奇凯梅特", nameEn: "Kecskemét", country: "hungary", tier: "major", zone: "hu-great-plain",
+    admin1Zh: "巴奇-基什孔州", admin1En: "Bács-Kiskun",
+    lon: 19.6917, lat: 46.9073,
+    source: "凯奇凯梅特科苏特广场 46.9073,19.6917（OSM）；州府、州权市（KSH 地名录 2025，1 级）；本地没有定期航班的机场，不填 airport；布达佩斯 BUD 直线约 67 km（按 OurAirports 算）；离国界约 79 km（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "miskolc", nameZh: "米什科尔茨", nameEn: "Miskolc", country: "hungary", tier: "major", zone: "hu-north", admin1Zh: "包尔绍德-奥包乌伊-曾普伦州", admin1En: "Borsod-Abaúj-Zemplén",
+    lon: 20.7785, lat: 48.1035,
+    source: "米什科尔茨市政厅广场 48.1035,20.7785（OSM Nominatim）；本地机场没有定期客运航班，最近有定期航班的是德布勒森 DEB（直线约 93 km）与布达佩斯 BUD（约 136 km），不填 airport；与地形条目 bukk、zemplen 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "keszthely", nameZh: "凯斯特海伊", nameEn: "Keszthely", country: "hungary", tier: "notable", zone: "hu-transdanubia", admin1Zh: "佐洛州", admin1En: "Zala",
+    lon: 17.243, lat: 46.7649,
+    source: "凯斯特海伊主广场 46.7649,17.2430（OSM Nominatim）；市域内没有机场，西南约 11 km 的赫维兹-巴拉顿机场（SOB）只有少量季节性航班（2026-09-16 核实；春夏季亦有季节航线，不写「集中在某季」，按规则 ⑫ 不列通航点），全年有定期航班的是 BUD、直线约 170 km —— 与既有维斯普雷姆条目的判断一致，不填 airport；与地形条目 lake-balaton、lake-heviz 互指（已有城市补充批，2026-09-16）",
+  },
 ];

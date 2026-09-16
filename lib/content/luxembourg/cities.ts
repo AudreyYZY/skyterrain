@@ -56,4 +56,22 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
     source: "埃施叙尔苏尔市中心 49.9167,5.9167；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约45km）：公开资料",
   },
+  {
+    id: "mondorf-les-bains", nameZh: "蒙多夫莱班", nameEn: "Mondorf-les-Bains", country: "luxembourg", tier: "notable", zone: "lu-gutland", admin1Zh: "雷米希县", admin1En: "Remich",
+    lon: 6.2756, lat: 49.5060,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "蒙多夫莱班镇中心广场 49.5060,6.2756（OSM）；LUX 直线约 14 km（按 OurAirports 算），与既有卢森堡条目一致填 LUX（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "differdange", nameZh: "迪弗当日", nameEn: "Differdange", country: "luxembourg", tier: "major", zone: "lu-gutland", admin1Zh: "阿尔泽特河畔埃施县", admin1En: "Esch-sur-Alzette",
+    lon: 5.89139, lat: 49.52417,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "迪弗当日 49.52417,5.89139（市官网 chiffres 页自报，1 级）；LUX 直线约 25 km（算），卢森堡既有条目均填 LUX；人口 31,421（STATEC 2026-01-01，1 级；市官网自写 31,415，差 6 人，正文用 STATEC）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "mersch", nameZh: "梅尔施", nameEn: "Mersch", country: "luxembourg", tier: "notable", zone: "lu-gutland", admin1Zh: "梅尔施县", admin1En: "Mersch",
+    lon: 6.1032, lat: 49.7479,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "梅尔施城堡（即市政厅）Place Saint-Michel 49.7479,6.1032（OSM）；LUX 直线约 16 km（算）；卢森堡语作 Miersch（市官网页眉，1 级）；与地形条目 eisch-valley 互指 —— 七堡谷的城堡分属几个市镇，本市镇内有 Schoenfels 与 Pettingen 两座（已有城市补充批，2026-09-16）",
+  },
 ];

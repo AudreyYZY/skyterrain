@@ -62,4 +62,15 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "YEI", nameZh: "布尔萨耶尼谢希尔机场", nameEn: "Bursa Yenişehir Airport", lon: 29.5622, lat: 40.2530 },
     source: "布尔萨市中心 40.1826,29.0665；YEI机场（距市区约45km），奥斯曼帝国首个都城，紧邻乌鲁山：公开资料",
   },
+  {
+    id: "safranbolu", nameZh: "萨夫兰博卢", nameEn: "Safranbolu", country: "turkey", tier: "notable", zone: "tr-black-sea", admin1Zh: "卡拉比克省", admin1En: "Karabük Province",
+    lon: 32.6930, lat: 41.2457,
+    source: "萨夫兰博卢老城（钟楼与琴吉客栈之间）41.245666,32.692957（OSM Nominatim）；55 km 内没有任何机场记录（OurAirports 2026-09），不填 airport；ONQ 直线约 58 km（2026 年只有国际定期航班）、KFS 约 93 km、ESB 约 127 km（算）（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "amasya", nameZh: "阿马西亚", nameEn: "Amasya", country: "turkey", tier: "notable", zone: "tr-black-sea", admin1Zh: "阿马西亚省", admin1En: "Amasya Province",
+    lon: 35.8329, lat: 40.6503,
+    airport: { iata: "MZH", nameZh: "阿马西亚梅尔济丰机场", nameEn: "Amasya Merzifon Airport", lon: 35.5220, lat: 40.8294 },
+    source: "阿马西亚老城（耶希尔河南岸）40.650325,35.832915（OSM Nominatim）；MZH OurAirports 40.8294,35.5220，在梅尔济丰区、直线约 33 km，有国内定期航班；注：Nominatim 查「Amasya Saat Kulesi」返回的是梅尔济丰区的钟楼，不是本市的（已有城市补充批，2026-09-16）",
+  },
 ];

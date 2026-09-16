@@ -66,4 +66,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "ALF", nameZh: "阿尔塔机场", nameEn: "Alta Airport", lon: 23.3717, lat: 69.9761 },
     source: "阿尔塔 69.9689,23.2716；ALF 机场：公开资料",
   },
+  {
+    id: "svolvaer", nameZh: "斯沃尔韦尔（罗弗敦）", nameEn: "Svolvær (Lofoten)", country: "norway", tier: "notable", zone: "no-northern", admin1Zh: "诺尔兰郡", admin1En: "Nordland County",
+    lon: 14.5646, lat: 68.2322,
+    airport: { iata: "SVJ", nameZh: "斯沃尔韦尔赫勒机场", nameEn: "Svolvær Airport, Helle", lon: 14.6692, lat: 68.2433 },
+    source: "斯沃尔韦尔港边广场 68.2322,14.5646（OSM）；SVJ 机场 OurAirports 68.2433,14.6692，直线约 4.5 km，2026-09-17 有往返博德的定期航班（Entur，1 级）；沃根市镇行政中心（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "roros", nameZh: "勒罗斯", nameEn: "Røros", country: "norway", tier: "notable", zone: "no-central", admin1Zh: "特伦德拉格郡", admin1En: "Trøndelag County",
+    lon: 11.3836, lat: 62.5746,
+    airport: { iata: "RRS", nameZh: "勒罗斯机场", nameEn: "Røros Airport", lon: 11.3423, lat: 62.5784 },
+    source: "勒罗斯镇中心 62.5746,11.3836（OSM）；RRS 机场 OurAirports 62.5784,11.3423，直线约 2.2 km，2026-09 有往返奥斯陆的定期航班（Entur，1 级）；地形条目 glomma / femund 已用「勒罗斯」译名（已有城市补充批，2026-09-16）",
+  },
 ];

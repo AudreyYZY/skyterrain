@@ -19,23 +19,6 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
     },
   },
 
-  "mnl-dvo": {
-    study: {
-    "zh-CN":
-      "马尼拉飞达沃，是连接吕宋岛与棉兰老岛的核心航线，全程约950公里，是菲律宾南北跨度最大的国内航线之一。飞机离开马尼拉后向东南飞行，越过米沙鄄群岛上空，脚下先掠过内格罗斯岛，甘伦火山椭圆形破火山口在云隙间隐约可见——这座维萨亚斯群岛最高峰仍是菲律宾第三活跃的火山。" +
-      "飞机继续向东南飞行，跨越棉兰老海后进入棉兰老岛北部空域，脚下地形逐渐由星罗棋布的岛屿海域过渡为棉兰老岛连绵的陆地轮廓，最终降落在达沃——棉兰老岛最大城市，是探索菲律宾最高峰阿波山的核心门户。",
-    "en-US":
-      "Flying from Manila to Davao is the core route linking Luzon with Mindanao, spanning about 950 km. After leaving Manila the flight heads southeast over the Visayas, passing above Negros Island, the elongated caldera of Mount Kanlaon faintly visible through gaps in the clouds — the highest peak in the Visayas and still the Philippines' third-most-active volcano." +
-      " The flight continues southeast across the Mindanao Sea into the airspace of northern Mindanao, before landing in Davao, Mindanao's largest city and the core gateway to Mount Apo, the Philippines' highest peak.",
-    },
-    // travel sources: 全四段（study/travel × 中英）: 甘伦火山第三活跃、阿波山最高峰与本库一致。核实 2026-09-11
-    travel: {
-    "zh-CN":
-      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空快线（PAL Express）运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
-    "en-US":
-      "Manila to Davao is about 130 minutes, same time zone, operated by PAL Express as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
-    },
-  },
 
   "mnl-pps": {
     study: {
@@ -127,23 +110,6 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
     },
   },
 
-  "ceb-dvo": {
-    study: {
-    "zh-CN":
-      "宿务飞达沃，是连接米沙鄄群岛与棉兰老岛两大区域中心城市的航线，全程约390公里，是菲律宾南部区域间往来的重要空中通道，客流量位居国内航线前列。飞机离开宿务后向东南飞行，越过米沙鄄海开阔水域，脚下岛屿星罗棋布。" +
-      "飞机继续向东南飞行，跨越棉兰老海后进入棉兰老岛北部空域，脚下地形逐渐由星罗棋布的岛屿海域过渡为连绵陆地与农田景观，最终降落在达沃——棉兰老岛最大城市，阿波山轮廓在降落前于机窗东北方向清晰可见。",
-    "en-US":
-      "Flying from Cebu to Davao links the regional centres of the Visayas and Mindanao, spanning about 390 km. After leaving Cebu the flight heads southeast, crossing the open waters of the Visayan Sea, islands scattered below." +
-      " The flight continues southeast across the Mindanao Sea into the airspace of northern Mindanao, before landing in Davao, Mindanao's largest city, the outline of Mount Apo visible to the northeast just before landing.",
-    },
-    // travel sources: 全四段（study/travel × 中英）: 全程约 390 km 与大圆一致。核实 2026-09-11
-    travel: {
-    "zh-CN":
-      "宿务到达沃飞约65分钟，同一时区，是宿务太平洋航空运营的国内航班之一。麦克坦—宿务国际机场距宿务市区约16公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
-    "en-US":
-      "Cebu to Davao is about 65 minutes, same time zone, operated by Cebu Pacific as one of the Philippines' domestic routes. Mactan-Cebu International Airport is about 16 km from central Cebu City; Francisco Bangoy International Airport is about 11 km from central Davao.",
-    },
-  },
 
   "can-mnl": {
     // study sources: 全四段（study/travel × 中英）: 皮纳图博 1991 年喷发为 20 世纪第二大（仅次于 1912 年诺瓦鲁普塔，USGS 转述），与本库 terrain/mount-pinatubo 一致。核实 2026-09-11

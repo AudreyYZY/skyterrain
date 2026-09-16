@@ -43,6 +43,14 @@ import { POIS as slovenia } from "@/lib/content/slovenia/pois";
 import { POIS as malta } from "@/lib/content/malta/pois";
 import { POIS as estonia } from "@/lib/content/estonia/pois";
 import { POIS as chile } from "@/lib/content/chile/pois";
+import { POIS as latvia } from "@/lib/content/latvia/pois";
+import { POIS as romania } from "@/lib/content/romania/pois";
+import { POIS as bulgaria } from "@/lib/content/bulgaria/pois";
+import { POIS as uzbekistan } from "@/lib/content/uzbekistan/pois";
+import { POIS as lithuania } from "@/lib/content/lithuania/pois";
+import { POIS as kyrgyzstan } from "@/lib/content/kyrgyzstan/pois";
+import { POIS as sri_lanka } from "@/lib/content/sri-lanka/pois";
+import { POIS as brunei } from "@/lib/content/brunei/pois";
 
 export const ALL_POIS: Record<string, CityPoi[]> = {
   ...china,
@@ -88,4 +96,12 @@ export const ALL_POIS: Record<string, CityPoi[]> = {
   ...malta,
   ...estonia,
   ...chile,
+  ...latvia,
+  ...romania,
+  ...bulgaria,
+  ...uzbekistan,
+  ...lithuania,
+  ...kyrgyzstan,
+  ...sri_lanka,
+  ...brunei,
 };

@@ -35,7 +35,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is organised along the Chao Phraya River, with the old town (home to the Grand Palace and Wat Phra Kaew) on the east bank, modern commercial districts such as Siam and Silom in the city centre and east, and a canal network still serving as an important mode of transport in some areas.",
     gettingAround:
-      "Suvarnabhumi Airport is the main international gateway, about 30 km from the city centre; domestic low-cost carriers mostly use Don Mueang Airport. The BTS Skytrain and MRT subway cover the main commercial districts, and Chao Phraya River ferries are also a convenient way to get around.",
+      "Suvarnabhumi Airport is the main international gateway, about 28 km in a straight line from the city centre; domestic low-cost carriers mostly use Don Mueang Airport. The BTS Skytrain and MRT subway cover the main commercial districts, and Chao Phraya River ferries are also a convenient way to get around.",
     culture:
       "Thai is the official language, and English is fairly widely spoken in tourist areas. Bangkok has a strong night-market culture, and street food is an important part of local food culture. Tipping is not mandatory at restaurants, but leaving small change is common etiquette.",
     seeAndDo:
@@ -58,7 +58,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is a square bounded by walls and a moat on all four sides, densely dotted with temples, while the Nimman Road area is a hub of modern cafés and design shops.",
     gettingAround:
-      "Chiang Mai International Airport is about 3 km from the city centre, the aviation hub of northern Thailand; the old town is easily explored on foot or by songthaew (converted pickup-truck taxi).",
+      "Chiang Mai International Airport is about 3.4 km in a straight line from the city centre, the aviation hub of northern Thailand; the old town is easily explored on foot or by songthaew (converted pickup-truck taxi).",
     culture:
       "The local Lanna dialect exists alongside standard Thai; Chiang Mai is known for its Sunday walking-street night market and craft markets. Tipping at restaurants is not mandatory.",
     seeAndDo:
@@ -67,12 +67,13 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; in some years, February–April sees reduced air quality from surrounding agricultural burning, so check the air quality index before travelling.",
   },
   phuket: {
+    // howItWorks sources（2026-09-15 核实，add-year）: 普吉镇 71,284（2024）、普吉府 429,583（2024-12-31，DOPA，1 级；2025 年末一期因 DOPA 站点连不上未核）；下一期约 2026-10
     // identity sources: 普吉府 429,583（2024-12-31，NSO 报告，级别 1）；普吉镇 71,284（2024，3 级）。**identity 用府口径、howItWorks 用镇口径，两段各自准确、不是数字打架** —— 这一点写在这里免得下一轮被「统一」掉。截至 2026-09-10 未见 2025 年末更新一期（NSO 报告惯例次年发布，值得下一轮回来确认）。2026-09-10 复核，维持 2026-09-09 结论。
     identity:
       "Phuket is Thailand's largest island, with a registered population of about 430,000 in 2024, in the Andaman Sea, and the country's most famous island resort destination.",
     // howItWorks sources: Wikipedia (2026-09): Phuket (city) (thesaban nakhon ~12 km², 71,284 2024; provincial capital; Old Town Sino-Portuguese; airport 36 km; Patong in Kathu district); Local government in Thailand
     howItWorks:
-      "Phuket is a province of Thailand whose governor is appointed by the Ministry of Interior, with three districts on the island; Phuket Town is the provincial seat and itself a 'city municipality' with an elected mayor and council, covering only about 12 km² with about 71,000 people, while the island's registered population is about 430,000 and its real population far larger. Most of what people picture as 'Phuket' lies outside the town: the beach resorts of Patong, Karon and Kata are in Kathu district on the west coast, each under a local body of its own, the airport lies 36 km north in Thalang district, and the Sarasin Bridge ties the island to the mainland. The town is the Chinese trading settlement of the tin-mining era, and its Sino-Portuguese shophouses and Peranakan food and festivals are its identity, recognised in 2015 as a UNESCO Creative City of Gastronomy. Songthaews are the local public transport, and there is no railway. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Phuket Town for a resort, when it is the provincial seat where islanders live and do business, with the beaches in other districts.",
+      "Phuket is a province of Thailand whose governor is appointed by the Ministry of Interior, with three districts on the island; Phuket Town is the provincial seat and itself a 'city municipality' with an elected mayor and council, covering only about 12 km² with about 71,000 people in 2024, while the island's registered population was about 430,000 at the end of 2024 (Department of Provincial Administration) and its real population far larger. Most of what people picture as 'Phuket' lies outside the town: the beach resorts of Patong, Karon and Kata are in Kathu district on the west coast, each under a local body of its own, the airport lies 36 km north in Thalang district, and the Sarasin Bridge ties the island to the mainland. The town is the Chinese trading settlement of the tin-mining era, and its Sino-Portuguese shophouses and Peranakan food and festivals are its identity, recognised in 2015 as a UNESCO Creative City of Gastronomy. Songthaews are the local public transport, and there is no railway. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Phuket Town for a resort, when it is the provincial seat where islanders live and do business, with the beaches in other districts.",
     layout:
       "The west coast is lined with major beach resort areas including Patong, Karon, and Kata, while Phuket Town preserves an old quarter blending Portuguese and Chinese architectural styles.",
     gettingAround:
@@ -99,7 +100,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Krabi Town sits at the mouth of the Krabi River and serves as the transport hub for Railay, Ao Nang Beach, and the Phi Phi Islands, with numerous island-hopping boat piers around the town.",
     gettingAround:
-      "Krabi International Airport is about 18 km from Krabi Town; Railay Peninsula, enclosed on three sides by cliffs, is reachable only by longtail boat.",
+      "Krabi International Airport is about 9 km in a straight line from Krabi Town; Railay Peninsula, enclosed on three sides by cliffs, is reachable only by longtail boat.",
     culture:
       "Krabi is one of the southern Thai provinces with a comparatively large Muslim population, and local cuisine blends Thai and Malay influences.",
     seeAndDo:
@@ -113,14 +114,14 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   https://en.wikipedia.org/wiki/Pattaya
     //   ⚠️ **这是本库第三次确认同一个坑**：en.wikipedia 的 Pattaya 信息框把这个 2019 年的数标成「2025 年 1 月」，**脚注引的却是 2019 年的报告** —— 二手来源的年份标注本身可能是错的，凡引二手必须点开脚注看一手。
     identity:
-      "Pattaya is a seaside resort city on Thailand's eastern gulf coast, with a registered population of about 120,000 in 2019 (higher during peak tourist season; no reliable later figure found), about 150 km from Bangkok and a traditional weekend getaway for Bangkok residents.",
+      "Pattaya is a seaside resort city on Thailand's eastern gulf coast, with a registered population of about 120,000 in 2019 (higher during peak tourist season; no reliable later figure found), about 150 km by road from Bangkok and a traditional weekend getaway for Bangkok residents.",
     // howItWorks sources: 建制沿革：1978 年设立时为市经理制（市议会推举市长、报府尹任命）；后经修法改为直选。英文与泰文维基互证的年份是 **1999 年修法、2004-03 首次直选市长**，但两处都只到 3 级，**没有拿到内政部或皇家公报的一手文本**，所以正文不写这两个年份、只写沿革顺序。下一轮若能取到公报再补。⚠️ 这与「把公告年份当生效年份」是同一族错：把制度史上两个不同的年份压成了一个。
     howItWorks:
       "Pattaya is Thailand's only 'special local administrative area' besides Bangkok, established in 1978 under a city-manager arrangement in which the council picked the mayor, with direct election of the mayor introduced by a later reform, yet it lies within Chonburi province, whose governor is appointed by the Ministry of Interior, and police and schools belong to the state. The city covers about 53 km² with a registered population of about 120,000 in 2019 (no reliable later figure found), several times that in actual residents, and Greater Pattaya about 351,000 in 2021 on a lower-grade source. The city runs along the coast in three parts — Naklua to the north, Pattaya Beach and Walking Street in the middle, Jomtien to the south — each with a character of its own, Ko Larn offshore, U-Tapao airport about 30 km to the south-east, Bangkok 150 km away; the Eastern Economic Corridor high-speed line meant to link the three airports has never broken ground since the 2018 concession, and in 2026 the concessionaire and the government were still disputing whether to terminate it, so check the Ministry of Transport and the EEC Office for the latest. Newcomers most often go wrong by taking Pattaya for an independent city, when it is a special area within Chonburi province, whose government sits 30 km away in Chonburi.",
     layout:
       "The city runs along Pattaya Bay, with Pattaya Beach, Jomtien Beach, and Wong Amat Beach lying from north to south; Pattaya Walking Street is the centre of its nightlife.",
     gettingAround:
-      "U-Tapao International Airport is about 30 km from the city centre; it is also reachable by road from Bangkok's two airports in about 2 to 2.5 hours. Songthaews are the main form of public transport within the city.",
+      "U-Tapao International Airport is about 30 km in a straight line from the city centre; it is also reachable by road from Bangkok's two airports in about 2 to 2.5 hours. Songthaews are the main form of public transport within the city.",
     culture:
       "Pattaya is one of Thailand's most concentrated nightlife destinations, while also having developed a diverse tourism scene including family holidays and water sports.",
     seeAndDo:
@@ -136,23 +137,23 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
     //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Chiang Rai is the capital of Thailand's northernmost province, with a registered municipal population of about 74,000 in 2025, near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+      "Chiang Rai is the capital of Thailand's northernmost province, with a registered municipal population of about 74,000 in 2025, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     // howItWorks sources: 清莱府 DOPA 登记 **1,297,657 人（2024）**，与正文「约 130 万」精确吻合。
     //   清莱市自治市最近可查为 **69,888 人（2012）**，与「约 7 万」大致吻合 —— **年份很旧**，
     //   本轮未找到更新数据（DOPA 一手站点 stat.bora.dopa.go.th 直连失败）。3 级，2026-09-08 核。
     //   下一轮换网络环境直连 DOPA 复核市一级的数。
     howItWorks:
-      "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 74,000 people in 2025, while the province held about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, the Golden Triangle about 55 km north-east at Chiang Saen, the Myanmar border at Mae Sai about 60 km and Doi Tung to the north-west. Newcomers most often go wrong by expecting the White Temple and the Golden Triangle in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
+      "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 74,000 people in 2025, while the province held about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, and the Mae Salong tea hills in the mountains to the north-west. Newcomers most often go wrong by expecting the White Temple and the hill tea plantations in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
     layout:
-      "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the Golden Triangle viewpoint at the confluence of the Mekong and Ruak rivers lies in the province's north.",
+      "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the north and north-west of the province are mountainous.",
     gettingAround:
-      "Chiang Rai International Airport is about 8 km from the city centre; a car or hired driver is recommended for the Golden Triangle viewpoint and the Mae Sai border crossing.",
+      "Chiang Rai International Airport is about 6.4 km in a straight line from the city centre; a car or hired driver is recommended for the temples outside town and the hill tea plantations.",
     culture:
       "Chiang Rai Province is home to several of northern Thailand's hill-tribe communities, and traditional handicrafts and produce from these communities are common at local markets.",
     seeAndDo:
-      "Wat Rong Khun (the White Temple, a contemporary Buddhist art building); the Blue Temple; the Black House museum; the Golden Triangle history and opium museum; the hillside tea plantations of Mae Salong.",
+      "Wat Rong Khun (the White Temple, a contemporary Buddhist art building); the Blue Temple; the Black House museum; the hillside tea plantations of Mae Salong.",
     whenAndTips:
-      "November to February, the cool season, is most pleasant, with cooler mornings in the hills; the Golden Triangle viewpoint sits at the meeting point of Thailand, Myanmar, and Laos, so stay within official border-crossing areas and follow local border regulations.",
+      "November to February, the cool season, is most pleasant, with cooler mornings in the hills. The north of the province lies near the national border; keep trips to the city and the main sights, and don't travel to border crossings or across them.",
   },
   "koh-samui": {
     // identity sources: 苏梅岛 DOPA 登记人口 **70,059 人（2019）**；面积约 229 km²，按面积计是泰国第二大岛
@@ -194,7 +195,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historical park sits on an island-like area encircled by the Chao Phraya, Lopburi, and Pa Sak rivers, densely dotted with temple ruins and adjoining the surrounding modern town.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Bangkok's Don Mueang International Airport (about 60 km away); a train or long-distance bus from Bangkok takes about 1.5 to 2 hours, and a rented bicycle is recommended within the historical park.",
+      "There is no commercial airport locally; the nearest is Bangkok's Don Mueang International Airport (about 60 km away by road); a train or long-distance bus from Bangkok takes about 1.5 to 2 hours, and a rented bicycle is recommended within the historical park.",
     culture:
       "The Ayutthaya kingdom was a major international trading centre in 17th-century Southeast Asia, with frequent commercial exchange with Europe, China, and Japan; the temple ruins in today's historical park record this era of prosperity.",
     seeAndDo:
@@ -218,7 +219,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historical park is divided into central, northern, western, and southern zones, with the Wat Mahathat ruins at the core of the central zone, ringed by remnants of a moat and city wall.",
     gettingAround:
-      "Sukhothai Airport, privately operated by Bangkok Airways, is about 27 km from the historical park; a long-distance bus from Bangkok takes about 6 to 7 hours, and a rented bicycle is recommended within the historical park.",
+      "Sukhothai Airport, privately operated by Bangkok Airways, is about 27 km in a straight line from the historical park; a long-distance bus from Bangkok takes about 6 to 7 hours, and a rented bicycle is recommended within the historical park.",
     culture:
       "The Sukhothai kingdom is regarded as an important birthplace of the Thai script and Buddhist art; the Thai alphabet is traditionally said to have been created by King Ramkhamhaeng of Sukhothai in the 13th century.",
     seeAndDo:
@@ -263,7 +264,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city follows a typical Thai provincial-capital layout, with Nong Prajak Park at the city centre serving as the main recreational space for local residents.",
     gettingAround:
-      "Udon Thani International Airport is about 5 km from the city centre; it can also be reached by train via the Nong Khai rail line, and is one of the common road gateways to Vientiane, Laos.",
+      "Udon Thani International Airport is about 5 km by road from the city centre; it can also be reached by train via the Nong Khai rail line, and is one of the common road gateways to Vientiane, Laos.",
     culture:
       "The Ban Chiang site in Udon Thani Province has yielded painted pottery and bronze artefacts dating to around 2000 BC, an important archaeological site for studying Southeast Asian prehistory.",
     seeAndDo:
@@ -297,6 +298,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
 
   // ── Thailand batch 2 (2026-09-05) ──
   kanchanaburi: {
+    // howItWorks sources（2026-09-15 核实，add-year）: 北碧镇 24,624（2024-12-31，DOPA 转引，3 级）；下一期约 2026-10
     // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
     //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
     //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
@@ -307,14 +309,14 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   **湄公河（Mekong）是另一条国际河流**，与北碧毫无关系。**与「因河被写成多瑙河」是同一形状的错。**
     //   北碧府 19,483 km²「泰国面积第三大」经核成立。
     identity:
-      "Kanchanaburi lies about 120 km west of Bangkok where the Khwae Noi and Khwae Yai rivers meet to form the Mae Klong — a different river from the Mekong — with a town population of about 25,000 in 2024. In the Second World War the Japanese army built the Thailand–Burma 'Death Railway' with Allied prisoners of war and Asian labourers, about half of whom died of disease, maltreatment and accidents; the Bridge over the River Kwai, the Kanchanaburi War Cemetery, the Thailand–Burma Railway Centre and Hellfire Pass commemorate that history. The province also holds the seven-tiered Erawan Falls, Sai Yok and the Mon wooden bridge at Sangkhlaburi near the Myanmar border, making it one of the most popular day and overnight trips from Bangkok.",
+      "Kanchanaburi lies about 120 km by road west of Bangkok where the Khwae Noi and Khwae Yai rivers meet to form the Mae Klong — a different river from the Mekong — with a registered town population of about 24,600 at the end of 2024. In the Second World War the Japanese army built the Thailand–Burma 'Death Railway' with Allied prisoners of war and Asian labourers, about half of whom died of disease, maltreatment and accidents; the Bridge over the River Kwai, the Kanchanaburi War Cemetery, the Thailand–Burma Railway Centre and Hellfire Pass commemorate that history. The province also holds the seven-tiered Erawan Falls, Sai Yok and the Mon wooden bridge at Sangkhlaburi near the Myanmar border, making it one of the most popular day and overnight trips from Bangkok.",
     // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
     //   北碧镇 **24,624（2024-12-31，DOPA）**，与同条目 identity 一致；原 howItWorks 的 25,651 是 **2017 年**旧数。2026-09-10 复核。
     //   **这是泰国这批「identity 已更新、howItWorks 没回填」的第三例**（清迈、呵叻、北碧）—— 见 known-errors 里对这个方向的记录。
     howItWorks:
-      "Kanchanaburi town is the seat of Kanchanaburi province, whose governor is appointed by the Ministry of Interior; the town itself is a 'town municipality' with an elected mayor and about 25,000 people at the end of 2024, while the province of about 19,000 km² is Thailand's third-largest, reaching to the Myanmar border. The town lies where the Kwai Yai and Kwai Noi rivers meet, the Bridge on the River Kwai spans the river just north of town, built by prisoners of war and labourers in 1942–43, two war cemeteries and museums lie in town and raft houses on the river are the local lodging; Hellfire Pass lies about 80 km north-west, the Erawan falls about 65 km north, Bangkok about 120 km east and the train comes from Thonburi. Newcomers most often go wrong by taking Kanchanaburi for a bridge, when the bridge is in town and the province's forests and waterfalls are another hour or two away.",
+      "Kanchanaburi town is the seat of Kanchanaburi province, whose governor is appointed by the Ministry of Interior; the town itself is a 'town municipality' with an elected mayor and about 24,600 registered residents at the end of 2024 (Department of Provincial Administration), while the province of about 19,000 km² is Thailand's third-largest, reaching to the Myanmar border. The town lies where the Kwai Yai and Kwai Noi rivers meet, the Bridge on the River Kwai spans the river just north of town, built by prisoners of war and labourers in 1942–43, two war cemeteries and museums lie in town and raft houses on the river are the local lodging; Hellfire Pass lies about 80 km north-west, the Erawan falls about 65 km north, Bangkok about 120 km east and the train comes from Thonburi. Newcomers most often go wrong by taking Kanchanaburi for a bridge, when the bridge is in town and the province's forests and waterfalls are another hour or two away.",
     layout:
-      "The town lies on the east bank of the Khwae Yai, with hotels, floating raft houses and restaurants along the river; the bridge stands about 3 km north of town, the war cemetery and the railway centre beside the station, and the JEATH museum by the river. The Death Railway runs north-west from the bridge along the Khwae Noi to Nam Tok, passing the Tham Krasae cliff trestle; Hellfire Pass is about 80 km north-west. Erawan National Park lies about 65 km north, Sai Yok about 100 km north-west and Sangkhlaburi about 220 km north-west.",
+      "The town lies on the east bank of the Khwae Yai, with hotels, floating raft houses and restaurants along the river; the bridge stands about 3 km north of town, the war cemetery and the railway centre beside the station, and the JEATH museum by the river. The Death Railway runs north-west from the bridge along the Khwae Noi to Nam Tok, passing the Tham Krasae cliff trestle; Hellfire Pass is about 73 km in a straight line north-west. Erawan National Park lies about 65 km north, Sai Yok about 100 km north-west and Sangkhlaburi about 220 km north-west.",
     gettingAround:
       "Kanchanaburi has no airport with scheduled flights; from Bangkok's Suvarnabhumi or Don Mueang it is about 2.5–3 hours by road. Trains from Bangkok's Thonburi station take about 3 hours (twice daily, slow but scenic) and continue to Nam Tok along the Death Railway — the bridge-to-Tham Krasae stretch is the classic ride; minibuses from Bangkok take about 2 hours. In town walk or hire a bicycle or motorbike; Erawan is about 1.5 hours by bus, and Hellfire Pass needs a hired car or a tour. The climate is tropical savanna — cool and dry from November to February, hot from March to May and wet from May to October.",
     culture:
@@ -327,7 +329,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   lampang: {
     // identity sources: 人口：DOPA 2560/2017 年登记人口 53,614，与正文一致（identity 与 howItWorks 两段都已写明年份与「登记人口」口径）。**取不到更新一期**：DOPA 在线库 stat.bora.dopa.go.th 域名解析失败、且为逐年下拉的动态查询系统，与本库另外 14 个「渠道本身取不到数」的条目同类。2026-09-12 复核，本轮无需改动。下一轮若能直连 DOPA 再取 2024/2025 年数。
     identity:
-      "Lampang lies in the Wang river valley of northern Thailand about 100 km south-east of Chiang Mai, with about 54,000 registered residents in 2017 — one of the old Lanna capitals and the only Thai city where horse-drawn carriages (introduced in 1916) still carry passengers. Wat Phra That Lampang Luang is the archetype of Lanna timber temple architecture and keeps nineteenth-century murals; of the 31 Burmese-style temples surviving in Thailand, nine — built by nineteenth-century Burmese teak merchants — are in Lampang. The Thai Elephant Conservation Center outside town is the national elephant institution, Chae Son National Park has hot springs and waterfalls, and Lampang is known for ceramics, with the rooster bowl as its emblem.",
+      "Lampang lies in the Wang river valley of northern Thailand about 100 km by road south-east of Chiang Mai, with about 54,000 registered residents in 2017 — one of the old Lanna capitals and the only Thai city where horse-drawn carriages (introduced in 1916) still carry passengers. Wat Phra That Lampang Luang is the archetype of Lanna timber temple architecture and keeps nineteenth-century murals; of the 31 Burmese-style temples surviving in Thailand, nine — built by nineteenth-century Burmese teak merchants — are in Lampang. The Thai Elephant Conservation Center outside town is the national elephant institution, Chae Son National Park has hot springs and waterfalls, and Lampang is known for ceramics, with the rooster bowl as its emblem.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lampang (thesaban nakhon ~58,000 2010, 22 km²; capital of Lampang province; Wang River valley; horse carriages; Wat Phra That Lampang Luang ~18 km; ceramics; Elephant Conservation Center; Chiang Mai 101 km; rail; airport; Mae Moh lignite)
     howItWorks:
       "Lampang is the seat of Lampang province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor, about 22 km² with about 54,000 registered residents in 2017. The town lies in the valley of the Wang River, the old quarter along the bank, horse carriages still its emblem, ceramics works scattered on the outskirts making the rooster bowls; Wat Phra That Lampang Luang lies about 18 km south-west at Ko Kha, the Thai Elephant Conservation Center about 30 km west, Chiang Mai 101 km north-west, the railway a stop on the Bangkok-Chiang Mai line, the airport south of town and the Mae Moh lignite plant to the east. Newcomers most often go wrong by taking Lampang for a stop on the way to Chiang Mai, when it is a provincial seat that keeps the streets of the Lanna and teak years at a far slower pace than Chiang Mai.",
@@ -341,33 +343,6 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Wat Phra That Lampang Luang; the Kad Kong Ta weekend night market; the Ratsadaphisek bridge and the Wang riverside; the Burmese temples (Wat Si Rong Muang, Wat Chedi Sao); a horse-carriage tour of the old town; the Thai Elephant Conservation Center; ceramics workshops (rooster bowls); the Chae Son hot springs and falls; the hilltop Wat Phra That Doi Phra Chan.",
     whenAndTips:
       "November–February is most comfortable and the season of the weekend market; March–April brings haze. A day for the town, a day for the outlying temple and the elephant centre. A quieter Lanna destination than Chiang Mai, linked with Phitsanulok or Sukhothai.",
-  },
-  "hat-yai": {
-    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
-    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
-    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
-    //   合艾市自治市（เทศบาลนครหาดใหญ่）**2025-12-31 登记 138,582 人**（3 级转引 DOPA，2026-09-09 核）。
-    //   **原文的「约 19 万」在这条曲线上找不到任何一年能对上**：1994 年 152,438 → 2003 年峰值 160,669 →
-    //   2017 年 159,233 → 2025 年 138,582，持续下降。
-    //   **「与宋卡合成约 65 万人的都会区」查无官方口径**，已删；唯一查到的类似表述是一句未标年份与出处的
-    //   「หาดใหญ่-สงขลา 都会区约 103 万」，与 65 万本身也对不上。
-    identity:
-      "Hat Yai lies in Songkhla Province in southern Thailand about 50 km from the Malaysian border, with a town population of about 139,000 in 2025 — the largest city and commercial centre of the south. It grew as a railway junction and is now a shopping and eating destination for Malaysian and Singaporean visitors: Kim Yong Market, the night markets and the southern Thai street food are its draws, and the hill in the municipal park carries a great Buddha and a cable car. Songkhla, about 30 km north-east, has an old town, Samila Beach and Songkhla Lake. Hat Yai's airport is one of southern Thailand's main airports, with flights to Kuala Lumpur and Singapore.",
-    // howItWorks sources: 站点规模：查不到「泰国南部最大的车站」的官方排名口径（站台数／客运量／官方声明都没有），只能核到「一等站」「南部最重要的枢纽」与 6 站台 16 股道、泰国最南端机务段这些可核事实，已据此降级（C1b）。跨境铁路：合艾—巴东勿刹每日两班、约 50 分钟，2026-10-01 起车次编号由 947/948/949/950 改为 741/742/743/744 并涨价（3 级）。2026-09-12 核。
-    // howItWorks sources: 直线 12.4 公里；两段统一为约 13 公里。
-    howItWorks:
-      "Hat Yai is the largest city of southern Thailand, yet not a provincial seat: it lies in Songkhla province, whose governor is appointed by the Ministry of Interior and whose seat is the town of Songkhla 30 km away, while Hat Yai is the region's commercial centre. The city is a 'city municipality' with an elected mayor and council, with a registered municipal population of about 139,000 in 2025; figures for the wider built-up and metropolitan areas have no reliable official basis. The city was born of the railway: Hat Yai Junction is a first-class station of the State Railway of Thailand, with six platforms and sixteen tracks and the country's southernmost locomotive depot, the Southern Line runs from here to Padang Besar and Malaysia, the border lies 60 km away, and Malaysian and Singaporean visitors give its commerce a cross-border flavour. Kim Yong Market is the city's heart, and Prince of Songkla University lies on its southern edge. Thai Chinese and Thai Malay residents form a noticeably larger share than in other Thai cities. The airport lies to the south-west. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Hat Yai for the seat of Songkhla province, when the seat is the smaller, older town of Songkhla by the sea.",
-    layout:
-      "The city spreads around Hat Yai Junction station, with Niphat Uthit roads 1–3 as the hotel, dining and shopping streets and Kim Yong Market in the centre; the municipal park lies on a hillside about 6 km south-east, with a cable car linking the Buddha and the Guanyin statue. The airport is about 13 km west. Songkhla lies about 30 km north-east: the old town (Nakhon Nok and Nakhon Nai roads) sits by the outlet of Songkhla Lake, Samila Beach and the mermaid statue at the northern tip of the peninsula, and Chinatown and the temples within the old town.",
-    // gettingAround sources: 机场距离：注册表坐标算出直线 12.4 公里；原文短于直线、不可能成立，已改。
-    gettingAround:
-      "Hat Yai International Airport (HDY), about 13 km from the city, has flights to Bangkok (Don Mueang and Suvarnabhumi) and Chiang Mai and to Kuala Lumpur and Singapore. Trains from Bangkok take about 14–16 hours (overnight); Hat Yai is the hub of the southern line, with trains towards Malaysia (change at Padang Besar); buses take about 4 hours from Penang and about 7 from Kuala Lumpur. In town use songthaews, tuk-tuks and motorbike taxis; Songkhla is about 40 minutes by minibus. The climate is tropical monsoon, wet from April to December and drier from January to March.",
-    culture:
-      "Thai and the southern dialect are spoken, the Chinese community is large, and Hokkien and Malay are common. Hat Yai is a food city — Hat Yai fried chicken, noodles, dim sum breakfasts, night-market grills — and Kim Yong Market sells dried goods and snacks. The Buddha in the municipal park is a religious site — dress modestly. Songkhla's old town has murals and cafés in old shophouses. Chinese temples are lively at the Hungry Ghost and Nine Emperor Gods festivals. Tipping is not expected.",
-    seeAndDo:
-      "Kim Yong Market and the night markets (ASEAN and Greenway); the municipal park (the Buddha, the Guanyin statue, the cable car); Hat Yai fried chicken and dim sum; a walk through Songkhla old town; Samila Beach and the mermaid statue; Songkhla Lake and the Tang Kuan hill lookout; Ton Nga Chang waterfall; the Khlong Hae floating market.",
-    whenAndTips:
-      "January–March is driest and most comfortable; showers are common from April to December, heaviest in October–December. A day for the city, half a day to a day for Songkhla. The gateway into southern Thailand by land from Malaysia, linked with Surat Thani and Penang.",
   },
   "ko-chang": {
     identity:
@@ -393,7 +368,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     howItWorks:
       "Khao Lak is not a town but a string of villages along about 25 km of coast in Takua Pa district of Phang Nga province — Bang Niang, Nang Thong, Khuk Khak, Bang Sak — with no common municipal government, each village under a subdistrict body of the district, and the provincial governor appointed by the Ministry of Interior. The resorts are scattered along the coast road with no centre, the tsunami of 2004 took more than four thousand lives here, the police boat carried inland stands at Bang Niang as a memorial, and the rules since have kept buildings low; Similan liveaboards leave from Thap Lamu pier to the south, Phuket airport lies sixty or seventy kilometres south, and Takua Pa old town about 30 km north. Newcomers most often go wrong by looking for 'Khao Lak town' on the map, when it is only a collective name, and whichever village you stay in is the beach you have.",
     layout:
-      "Khao Lak stretches north–south along Highway 4 and the coast: Khao Lak beach and Nang Thong at the southern end near the national park, then Bang Niang (the boat 813 memorial and the tsunami museum), Khuk Khak and White Sand beach, with Pakarang Cape at the northern end; Thap Lamu pier about 15 km south is where the Similan and Surin boats leave. Takua Pa old town lies about 25 km north and Khao Sok National Park (karst rainforest and Cheow Lan lake) about 80 km north-east. Phuket's airport is about 65 km south.",
+      "Khao Lak stretches north–south along Highway 4 and the coast: Khao Lak beach and Nang Thong at the southern end near the national park, then Bang Niang (the boat 813 memorial and the tsunami museum), Khuk Khak and White Sand beach, with Pakarang Cape at the northern end; Thap Lamu pier about 15 km in a straight line south is where the Similan and Surin boats leave. Takua Pa old town lies about 25 km north and Khao Sok National Park (karst rainforest and Cheow Lan lake) about 80 km north-east. Phuket's airport is about 65 km south.",
     gettingAround:
       "Khao Lak has no airport with scheduled flights; from Phuket International (HKT) it is about 1–1.5 hours by road, with minibuses and shuttles. Between the villages use songthaews, motorbikes or a hire car; the Similans are about 1.5 hours by speedboat for a day trip, or by liveaboard. The climate is tropical monsoon, dry from November to April and wet with rough seas from May to October, when the Similan islands close (mid-May to mid-October).",
     culture:

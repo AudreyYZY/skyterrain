@@ -597,7 +597,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     //   1998 年中国科考队首次徒步穿越；下游称布拉马普特拉河、汇入孟加拉湾（纯地理事实）。
     //   2026-09-08 核。**零争议红线复核通过**：`history` 段无边界线描述、无主权表述。
     seeing:
-      "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the 1994 measurements of Chinese scientists it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — the deepest and longest canyon in the world.",
+      "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the survey published by China's National Bureau of Surveying and Mapping in 1999, it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — among the deepest canyons in the world.",
     formation:
       "The Yarlung Tsangpo flows west to east across the Tibetan Plateau; here it meets Namcha Barwa, a mountain rising fast, and is forced into a nearly 180° bend, then turns south, cutting through the Himalaya and off the plateau toward South Asia. The mountain rises fast and the river cuts hard, producing the extreme peak-to-valley relief.",
     observation:
@@ -748,6 +748,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
   },
 
   bosten: {
+    // formation sources（2026-09-15 抽样 seed=12 核实）：孔雀河流向盆地东端的罗布泊，原写 southern 有误，改 eastern。
     // seeing sources: 海拔 1048 m；大湖面积约 988 km²，含小湖区共 1646 km² —— 新疆维吾尔自治区文化和旅游厅
     //   https://wlt.xinjiang.gov.cn/wlt/c112782/202208/008cef60035646c3ae9d0397e613f8fa.shtml（1 级，2026-09-08 核）。
     //   「中国最大的内陆淡水湖」成立：这个口径专指不入海的内流区淡水湖，呼伦湖微咸且经额尔古纳河
@@ -757,7 +758,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     seeing:
       "Bosten Lake lies in the Yanqi Basin at the southern foot of the Tianshan, at about 1,050 m, and is often called China's largest inland freshwater lake. The Kaidu River enters from the north-west and the Konqi River leaves to the south-west — it is an unusual inland lake with both an inflow and an outflow. Its west shore has extensive reed wetlands. It was anciently called the \"Western Sea.\"",
     formation:
-      "Bosten Lake fills a fault-depression basin. Tianshan snowmelt reaches it via the Kaidu River, and the surplus leaves via the Konqi River toward the southern Tarim Basin (finally lost in the desert, never reaching the sea). Because there is an outlet, salt does not build up as it does in a purely closed lake, so the body of the lake is fresh, with only the eastern part slightly brackish.",
+      "Bosten Lake fills a fault-depression basin. Tianshan snowmelt reaches it via the Kaidu River, and the surplus leaves via the Konqi River toward the eastern Tarim Basin (finally lost in the desert, never reaching the sea). Because there is an outlet, salt does not build up as it does in a purely closed lake, so the body of the lake is fresh, with only the eastern part slightly brackish.",
     observation:
       "From the air Bosten is an irregular sheet of turquoise at the southern foot of the Tianshan, mountains to the north and oasis farmland to the south. The west shore is a spread of pale reed marsh and small lakes (the \"small-lake district\"); the main body is open and deep blue. The Kaidu River has built a delta where it enters.",
     distinguish:
@@ -1561,7 +1562,7 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air Tiger Leaping Gorge is a straight deep slit between the Jade Dragon and Haba snow mountains, the muddy-yellow Jinsha a thread on the floor. The walls are near-vertical, and a full sequence of vegetation belts is stacked from the subtropical valley floor to the snow and ice on top. Just outside the southern mouth, the Jinsha makes the famous \"First Bend of the Yangtze\" at Shigu.",
     distinguish:
-      "Tiger Leaping Gorge and the Three Gorges of the Yangtze: both are canyons where the Yangtze system cuts through mountains, but Tiger Leaping Gorge is on the upper river (the Jinsha reach), held between two snow mountains, and far deeper and narrower; the Three Gorges are on the middle river, cutting a lower fold range, and known for ruggedness and the dam. Tiger Leaping Gorge and the Yarlung Tsangpo Grand Canyon: the latter is longer, with greater peak-to-valley relief — the deepest and longest canyon in the world.",
+      "Tiger Leaping Gorge and the Three Gorges of the Yangtze: both are canyons where the Yangtze system cuts through mountains, but Tiger Leaping Gorge is on the upper river (the Jinsha reach), held between two snow mountains, and far deeper and narrower; the Three Gorges are on the middle river, cutting a lower fold range, and known for ruggedness and the dam. Tiger Leaping Gorge and the Yarlung Tsangpo Grand Canyon: the latter is longer, with greater peak-to-valley relief — among the deepest canyons in the world.",
     concept:
       "Tiger Leaping Gorge is an extreme sample of \"river downcutting keeping pace with uplift\": as long as uplift is not too fast and the river's discharge and gradient are enough, the water keeps sawing down at its original level — the higher the mountains grow, the deeper the gorge cuts. This narrow deep slot between Jade Dragon and Haba was \"sawn\" this way over a few million years.",
     history:

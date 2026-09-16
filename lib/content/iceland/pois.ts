@@ -62,4 +62,32 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "霍恩斯特兰迪自然保护区", nameEn: "Hornstrandir Nature Reserve", lon: -22.4000, lat: 66.4200, kind: "nature" },
     { nameZh: "博伦加维克（水族馆一带）", nameEn: "Bolungarvík", lon: -23.2540, lat: 66.1560, kind: "district" },
   ],
+  selfoss: [
+    { nameZh: "奥尔福萨河大桥", nameEn: "Ölfusá Bridge", lon: -21.0048, lat: 63.9388, kind: "transport" },
+    { nameZh: "塞尔福斯新市中心（复建老房子街区）", nameEn: "Selfoss New Town Centre", lon: -21.0035, lat: 63.9362, kind: "district" },
+    { nameZh: "特里格维小屋", nameEn: "Tryggvaskáli", lon: -21.0034, lat: 63.9378, kind: "landmark" },
+    { nameZh: "塞尔福斯教堂", nameEn: "Selfoss Church", lon: -21.0093, lat: 63.9383, kind: "landmark" },
+    { nameZh: "英格尔夫斯山", nameEn: "Ingólfsfjall", lon: -21.0388, lat: 63.9821, kind: "nature" },
+  ],
+  heimaey: [
+    { nameZh: "埃尔德费尔火山", nameEn: "Eldfell", lon: -20.2473, lat: 63.4323, kind: "nature" },
+    { nameZh: "赫尔加山", nameEn: "Helgafell", lon: -20.2596, lat: 63.4293, kind: "nature" },
+    { nameZh: "火山博物馆「火之家」", nameEn: "Eldheimar", lon: -20.2601, lat: 63.4350, kind: "landmark" },
+    { nameZh: "赫约尔夫谷", nameEn: "Herjólfsdalur", lon: -20.2982, lat: 63.4425, kind: "nature" },
+    { nameZh: "斯坎辛", nameEn: "Skansinn", lon: -20.2615, lat: 63.4438, kind: "landmark" },
+    { nameZh: "兰达教堂", nameEn: "Landakirkja", lon: -20.2723, lat: 63.4370, kind: "landmark" },
+  ],
+  stykkisholmur: [
+    { nameZh: "挪威木屋（地区博物馆）", nameEn: "Norska húsið (regional museum)", lon: -22.726941, lat: 65.077197, kind: "landmark" },
+    { nameZh: "水之图书馆", nameEn: "Vatnasafn / Library of Water", lon: -22.728725, lat: 65.07724, kind: "landmark" },
+    { nameZh: "苏甘迪塞岛与灯塔", nameEn: "Súgandisey island and lighthouse", lon: -22.722915, lat: 65.079975, kind: "nature" },
+    { nameZh: "斯蒂基斯霍尔米教堂", nameEn: "Stykkishólmskirkja", lon: -22.721819, lat: 65.073898, kind: "landmark" },
+    { nameZh: "市政厅", nameEn: "Town hall", lon: -22.726778, lat: 65.077371, kind: "district" },
+  ],
+  seydisfjordur: [
+    { nameZh: "蓝教堂", nameEn: "Seyðisfjarðarkirkja (the Blue Church)", lon: -14.010597, lat: 65.261317, kind: "landmark" },
+    { nameZh: "斯卡夫特费尔视觉艺术中心", nameEn: "Skaftfell Center for Visual Art", lon: -13.997864, lat: 65.261578, kind: "landmark" },
+    { nameZh: "东部技术博物馆", nameEn: "Technical Museum of East Iceland", lon: -13.991947, lat: 65.265266, kind: "landmark" },
+    { nameZh: "「双声」声音雕塑", nameEn: "Tvísöngur sound sculpture", lon: -13.981864, lat: 65.26781, kind: "landmark" },
+  ],
 };

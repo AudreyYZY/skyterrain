@@ -60,4 +60,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "绿色清真寺", nameEn: "Green Mosque (Yeşil Cami)", lon: 29.0764, lat: 40.1836, kind: "landmark" },
     { nameZh: "科扎商队旅馆", nameEn: "Koza Han", lon: 29.0656, lat: 40.1831, kind: "district" },
   ],
+  safranbolu: [
+    { nameZh: "琴吉客栈", nameEn: "Cinci Han", lon: 32.693464, lat: 41.244605, kind: "landmark" },
+    { nameZh: "萨夫兰博卢钟楼", nameEn: "Safranbolu Clock Tower", lon: 32.690393, lat: 41.246165, kind: "landmark" },
+    { nameZh: "伊泽特·迈赫迈特帕夏清真寺", nameEn: "İzzet Mehmet Pasha Mosque", lon: 32.693112, lat: 41.243876, kind: "landmark" },
+    { nameZh: "「县长宅」民居博物馆", nameEn: "Kaymakamlar House Museum", lon: 32.694191, lat: 41.244129, kind: "landmark" },
+    { nameZh: "赫德尔勒克山丘观景点", nameEn: "Hıdırlık Hill viewpoint", lon: 32.69574, lat: 41.243874, kind: "nature" },
+    { nameZh: "因杰卡亚引水渠与托卡特勒峡谷", nameEn: "İncekaya Aqueduct and Tokatlı Canyon", lon: 32.685039, lat: 41.282126, kind: "nature" },
+    { nameZh: "布拉克（门吉利斯）溶洞", nameEn: "Bulak (Mencilis) Cave", lon: 32.62457, lat: 41.273797, kind: "nature" },
+  ],
+  amasya: [
+    { nameZh: "本都诸王岩凿墓", nameEn: "Rock Tombs of the Pontic Kings", lon: 35.830613, lat: 40.653462, kind: "landmark" },
+    { nameZh: "阿马西亚城堡（哈尔谢纳山）", nameEn: "Amasya Castle (Mount Harşena)", lon: 35.827452, lat: 40.655211, kind: "landmark" },
+    { nameZh: "哈泽兰宅", nameEn: "Hazeranlar Mansion", lon: 35.829787, lat: 40.652291, kind: "landmark" },
+    { nameZh: "苏丹巴耶济德二世清真寺", nameEn: "Sultan Bayezid II Mosque", lon: 35.827037, lat: 40.650344, kind: "landmark" },
+    { nameZh: "阿马西亚博物馆", nameEn: "Amasya Museum", lon: 35.824547, lat: 40.649379, kind: "landmark" },
+    { nameZh: "费尔哈特引水渠", nameEn: "Ferhat water channel", lon: 35.81431, lat: 40.63299, kind: "landmark" },
+  ],
 };

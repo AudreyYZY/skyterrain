@@ -12,7 +12,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Austria's federal railway (ÖBB) network is dense, with intercity express trains linking the major cities — often more convenient than flying between them. Vienna has an extensive metro and tram network. Driving is on the right; a toll sticker (Vignette) is required on motorways. The climate transitions from temperate continental to Alpine — the mountains are cold and snowy in winter, making Austria an important European ski destination, while summers are mild and good for hiking and lake holidays. Power is 230V, European two-round-pin plug.",
     culture:
-      "The official language is German; English is widely spoken in tourist areas. Austrians value courtesy and punctuality; restaurants usually include a service charge, and an additional 5–10% tip or rounding up is customary. Coffeehouse culture runs especially deep in Vienna — \"Viennese Coffee House Culture\" was inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Austria has a rich classical-music tradition, with composers such as Mozart, Haydn and Schubert all leaving major marks here.",
+      "The official language is German; English is widely spoken in tourist areas. Austrians value courtesy and punctuality; restaurants include service by law, so tipping is voluntary and rounding up is enough. Coffeehouse culture runs especially deep in Vienna — \"Viennese Coffee House Culture\" was inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Austria has a rich classical-music tradition, with composers such as Mozart, Haydn and Schubert all leaving major marks here.",
     seeAndDo:
       "Classical music and historic architecture: Vienna's Schönbrunn Palace, St. Stephen's Cathedral, Salzburg's old town. Alpine landforms: Grossglockner in the Hohe Tauern, the Dachstein glacier, the Krimml Waterfalls. Lake scenery: the Salzkammergut lake district (including Hallstatt), Carinthia's lakes (Wörthersee, Millstätter See).",
     whenAndTips:
@@ -38,7 +38,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 18 km south-east of the centre, linked by the City Airport Train (CAT) and metro. Vienna's metro, tram and bus network covers the whole city and is among the most developed public transport systems in Europe. The climate is temperate continental, with mild summers (June–August) and cold winters, often snowy in December. Power is 230V, European two-round-pin plug.",
     culture:
-      "The official language is German; English is widely spoken in tourist areas. Vienna's coffeehouse culture runs deep — sitting in a café to read, write or socialise is part of the traditional way of life, inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German; English is widely spoken in tourist areas. Vienna's coffeehouse culture runs deep — sitting in a café to read, write or socialise is part of the traditional way of life, inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "Schönbrunn Palace and the Hofburg; St. Stephen's Cathedral; the Vienna State Opera (book a classical concert or opera performance); the Kunsthistorisches Museum; a day trip to the Wienerwald.",
     whenAndTips:
@@ -59,7 +59,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 4 km west of the centre. The old town is walkable, and a funicular climbs to Hohensalzburg Fortress. The climate is temperate continental, with mild summers and cold, snowy winters — rainfall is comparatively abundant owing to its proximity to the Alps.",
     culture:
-      "The official language is German. As Mozart's birthplace, Salzburg is renowned for its classical music festivals — the Salzburg Festival is one of Europe's oldest and most prestigious classical-music festivals. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. As Mozart's birthplace, Salzburg is renowned for its classical music festivals — the Salzburg Festival is one of Europe's oldest and most prestigious classical-music festivals. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "Hohensalzburg Fortress; Mozart's birthplace and residence; the Cathedral Square; day trips to the Salzkammergut lake district (including Hallstatt) or Liechtensteinklamm.",
     whenAndTips:
@@ -79,7 +79,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 4 km west of the centre. The old town is walkable, and several cable car lines connect the city to surrounding ski areas. The climate is Alpine, with cold, snowy winters (peak ski season) and comparatively mild summers good for hiking.",
     culture:
-      "The official language is German. The Tyrol region preserves a strong Alpine traditional culture, including folk costume, folk music and Alpine pasture traditions. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. The Tyrol region preserves a strong Alpine traditional culture, including folk costume, folk music and Alpine pasture traditions. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The Golden Roof and old-town streets; the Innsbruck Court Church; the Nordkette cable car (straight up to a Karwendel viewpoint); day trips to the Ötztal Alps or the Zillertal ski areas.",
     whenAndTips:
@@ -98,7 +98,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 10 km south of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate continental, with mild summers and cold winters — rainfall is more evenly distributed than in Tyrol.",
     culture:
-      "The official language is German. Graz is an important university city in Austria with a lively youth culture. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Graz is an important university city in Austria with a lively youth culture. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "Schlossberg and its clock tower; the old-town streets of Graz; the Kunsthaus Graz; a walk along the Mur; day trips to Styria's wine-growing region.",
     whenAndTips:
@@ -123,7 +123,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 12 km south-west of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate continental, with mild summers and cold winters — typical of the Danube corridor.",
     culture:
-      "The official language is German. Linz is an important centre for electronic and media art in Austria, and its annual Ars Electronica Festival is internationally known. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Linz is an important centre for electronic and media art in Austria, and its annual Ars Electronica Festival is internationally known. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The Hauptplatz and Linz Castle; the Ars Electronica Center; Linz Cathedral; a Danube river cruise; day trips to the Wachau or Hallstatt.",
     whenAndTips:
@@ -141,7 +141,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport lies about 3 km north-west of the centre. The old town is walkable; buses or bicycles are recommended for reaching the Wörthersee shoreline. The climate is temperate continental, with Carinthia's comparatively warm microclimate giving it higher summer temperatures than much of the rest of Austria.",
     culture:
-      "The official language is German. Carinthia's comparatively warm summer climate has made it a favoured summer and lake-resort destination for Austrians. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Carinthia's comparatively warm summer climate has made it a favoured summer and lake-resort destination for Austrians. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The Lindwurm fountain and Neuer Platz; the Europapark; the Wörthersee lakeside resort area; day trips to the Millstätter See or Villach.",
     whenAndTips:
@@ -159,7 +159,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Klagenfurt Airport (about 40 km). The old town is walkable. The climate is temperate continental, comparatively mild owing to its position on the southern flank of the Alps.",
     culture:
-      "The official language is German. Villach's proximity to the Italian and Slovenian borders gives it a somewhat multicultural character. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Villach's proximity to the Italian and Slovenian borders gives it a somewhat multicultural character. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The old-town Hauptplatz; a walk along the Drava; day trips to the Warmbad Villach thermal spa resort, the Carnic Alps, or the Plöcken Pass on the Italian border.",
     whenAndTips:
@@ -180,7 +180,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Salzburg Airport (about 70 km). The village is small and best explored on foot; in peak season it gets very crowded, so plan your visit timing carefully. The climate is Alpine, with mild summers, cold winters and consistently high humidity around the lake.",
     culture:
-      "The official language is German. Hallstatt has become an extremely popular photo destination in recent years thanks to its lake-and-mountain scenery, and the community is working out how to balance visitor management with residents' daily life. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Hallstatt has become an extremely popular photo destination in recent years thanks to its lake-and-mountain scenery, and the community is working out how to balance visitor management with residents' daily life. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The Marktplatz and lakeside promenade; the salt-mine funicular and tour (one of Europe's oldest salt-mining sites); the Bone House (Beinhaus); the viewpoint across the lake for the classic Hallstatt panorama.",
     whenAndTips:
@@ -198,7 +198,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Innsbruck Airport (about 80 km). The town is best explored on foot, with cable cars and shuttle buses linking the ski areas. The climate is Alpine, with cold, snowy winters (peak ski season) and comparatively mild summers good for hiking and mountain biking.",
     culture:
-      "The official language is German. Kitzbühel has a long ski history and was one of the first Alpine regions to develop modern skiing. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Kitzbühel has a long ski history and was one of the first Alpine regions to develop modern skiing. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The historic old-town streets; the Hahnenkamm race course (open to visitors outside race periods); cable car rides for mountain views; day hikes in the Kitzbühel Alps.",
     whenAndTips:
@@ -221,7 +221,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Friedrichshafen Airport in Germany (about 25 km). City buses cover the main districts, and the old town is walkable. The climate is temperate maritime, moderated by Lake Constance — milder winters and cooler summers than Austria's interior.",
     culture:
-      "The official language is German. Vorarlberg's location bordering Switzerland and Germany gives its dialect and culture some Alemannic influence. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Vorarlberg's location bordering Switzerland and Germany gives its dialect and culture some Alemannic influence. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The lake stage (the main venue of the Bregenz Festival, held each July–August); the old-town walls and streets; the Pfänder cable car for views; a Lake Constance cruise (with views of the Swiss and German shores).",
     whenAndTips:
@@ -241,7 +241,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "There is no commercial airport locally; the nearest is Salzburg Airport (about 80 km). The town is best explored on foot, with bicycles available for a loop around the lake. The climate is Alpine, with cold, snowy winters and mild summers when the lake is warm enough for swimming.",
     culture:
-      "The official language is German. Zell am See is one of the few Austrian resorts offering both lakeside summer holidays and high-Alpine skiing in one place. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+      "The official language is German. Zell am See is one of the few Austrian resorts offering both lakeside summer holidays and high-Alpine skiing in one place. Restaurants include service by law, so tipping is voluntary and rounding up is enough.",
     seeAndDo:
       "The lakeside path around the Zeller See and swimming; the Kitzsteinhorn cable car (year-round snow at the summit, with views over the Hohe Tauern peaks); day trips to the Krimml Waterfalls or Hohe Tauern National Park.",
     whenAndTips:
@@ -251,7 +251,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   // ── Austria batch 2 (2026-09-05) ──
   "sankt-polten": {
     identity:
-      "Sankt Pölten is the capital of Lower Austria, on the Traisen river about 60 km west of Vienna, with about 60,000 people (2025). Built on the site of the Roman town of Aelium Cetium, it was among the first Austrian towns to receive a charter (1159); in 1986 the Lower Austrian parliament resolved to move the state capital here from Vienna, and the government arrived in 1997, so beside the Baroque old town stands a government quarter built in the 1990s, with the Klangturm sound tower and the Festspielhaus as its landmarks. It is the midway stop between Vienna and the Wachau valley.",
+      "Sankt Pölten is the capital of Lower Austria, on the Traisen river about 60 km in a straight line west of Vienna, with about 60,000 people (2025). Built on the site of the Roman town of Aelium Cetium, it was among the first Austrian towns to receive a charter (1159); in 1986 the Lower Austrian parliament resolved to move the state capital here from Vienna, and the government arrived in 1997, so beside the Baroque old town stands a government quarter built in the 1990s, with the Klangturm sound tower and the Festspielhaus as its landmarks. It is the midway stop between Vienna and the Wachau valley.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sankt Pölten (statutory city, Lower Austria capital since 1986, government moved 1997; 108 km²; ~59,800 2025; Traisen; Roman Aelium Cetium; Baroque old town; Landhaus/Klangturm; Westbahn Vienna ~25 min; charter 1159)
     howItWorks:
       "Sankt Pölten is the capital of Lower Austria, chosen by the state parliament in 1986 to replace Vienna, with the state government moving into a newly built government quarter in 1997; it is a 'statutory city' of about 108 km² with about 60,000 people in 2025. The old town lies on the west bank of the Traisen, the Baroque Rathausplatz its centre, its charter of 1159 letting it call itself the oldest city in Austria, with Roman remains beneath the old town; the government quarter lies on the east bank with the Klangturm as its landmark, and the station on the Western Railway is about 25 minutes from Vienna. Newcomers most often go wrong by assuming Lower Austria's capital is Vienna, when Vienna has been a state of its own since 1922 and Lower Austria's government sits in this small city of 60,000.",
@@ -260,7 +260,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "St. Pölten has no airport with scheduled flights; the nearest is Vienna International (about 85 km, about 1 hour by direct Railjet). Railjet trains on the Western line take about 25 minutes from Vienna's Westbahnhof, about 50 from Linz and about 1.5 hours from Salzburg. The town is walkable, with buses; regional trains or buses reach the Wachau. The climate is temperate continental with warm summers and cold winters.",
     culture:
-      "German is universal. The cathedral and the Franciscan church are working churches — no visits during services. The state museum is free or cheap and the Klangturm can be climbed. Markets are held in the old town on Thursdays and Saturdays. Lower Austrian food includes Most (pear cider), roasts and Wachau apricot desserts. Tip about 10% in restaurants.",
+      "German is universal. The cathedral and the Franciscan church are working churches — no visits during services. The state museum is free or cheap and the Klangturm can be climbed. Markets are held in the old town on Thursdays and Saturdays. Lower Austrian food includes Most (pear cider), roasts and Wachau apricot desserts. Restaurant bills include service by law, so tipping is voluntary.",
     seeAndDo:
       "The Rathausplatz and the Franciscan church; the cathedral; the government quarter and the Klangturm; the state museum (Museum Niederösterreich); a performance at the Festspielhaus; the Traisen riverside path; day trips to the Wachau (Melk Abbey, Krems, Dürnstein) and Lilienfeld Abbey.",
     whenAndTips:
@@ -283,13 +283,14 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Krems has no airport with scheduled flights; the nearest is Vienna (about 90 km). Trains from Vienna's Franz-Josefs-Bahnhof take about 1 hour; from April to October Danube boats run from Vienna to Krems, Dürnstein and Melk. The old town is walkable; Dürnstein is a train ride (about 10 minutes), a boat or a bicycle ride away, and Göttweig a bus or a walk uphill. The climate is temperate, with warm summers in the valley that suit the vines.",
     culture:
-      "German is universal. The Wachau's wineries and 'Heuriger' taverns (marked by a hung bundle of pine) open seasonally — mind the drink-driving limit; apricot season (July) brings an apricot festival and apricot brandy. Göttweig is a Benedictine abbey — keep quiet. The Danube cycle path (Passau–Vienna) passes through and bicycles are easy to hire. Tip about 10% in restaurants.",
+      "German is universal. The Wachau's wineries and 'Heuriger' taverns (marked by a hung bundle of pine) open seasonally — mind the drink-driving limit; apricot season (July) brings an apricot festival and apricot brandy. Göttweig is a Benedictine abbey — keep quiet. The Danube cycle path (Passau–Vienna) passes through and bicycles are easy to hire. Restaurant bills include service by law, so tipping is voluntary.",
     seeAndDo:
       "The Steiner Tor and the old town; the Kunstmeile (the state gallery, the caricature museum); the old streets of Stein; Göttweig Abbey (the terrace over the valley); Dürnstein (the blue church tower, the castle ruin); cycling or a boat through the Wachau to Melk; winery tastings (Grüner Veltliner); farm stalls in apricot season.",
     whenAndTips:
       "Early April for blossom, July for apricots and September–October for the harvest are best; boats stop and taverns close in winter. Half a day for Krems, a day for the Wachau. An easy day trip from Vienna, or a night in Dürnstein.",
   },
   "bad-ischl": {
+    // 抽样 seed=17（2026-09-16）：howItWorks「城北的皇帝别墅」改为镇中心以西、河对岸（salzkammergut.at，并按坐标算方位约 238°；本条 layout 本来就写河西岸，两段自相矛盾）。
     // 零改动留痕（2026-09-10）：市域 162.85 km² 与正文「约 163 平方公里」一致；当地无民用商业机场，正文表述无误。
     //   哈布斯堡避暑史（1854 年皇帝别墅、1914-07-28 宣战书在此签署）为广泛记载史实、无评价性表述。
     // identity sources: 人口：2026-01-01 主住所 14,116（Statistik Austria 终版）；市政府官网 2025-01-01 为 14,129（1 级）。**只取主住所口径**——另有约 3,140 副住所，合计约 1.73 万，不要混用。2026-09-10 核。
@@ -297,13 +298,13 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Bad Ischl lies in the Salzkammergut of Upper Austria where the Ischl meets the Traun, with about 14,000 people at the start of 2026. Brine cures made it a fashionable spa in the nineteenth century; in 1854 the mother of Emperor Franz Joseph I gave him the Kaiservilla as a wedding present, and for nearly sixty years he spent every summer here — on 28 July 1914 he signed the declaration of war on Serbia in the villa. The composer Lehár lived here, Brahms and Bruckner visited, and the Zauner pastry shop founded in 1832 served the court. In 2024 Bad Ischl and the Salzkammergut were European Capital of Culture, with Hallstatt and the Wolfgangsee close by.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bad Ischl (town in Gmunden district, Upper Austria; 163 km²; ~14,000; Salzkammergut centre; Kaiservilla 1854; Zauner 1832; Lehár villa; ECoC 2024 with Salzkammergut; Traun; Salzburg ~55 km; Hallstatt ~20 km)
     howItWorks:
-      "Bad Ischl is a town of Gmunden district in Upper Austria, about 163 km² with about 14,000 people at the start of 2026, an elected council and mayor, and police and schools belonging to the state. It is the centre of the Salzkammergut: a fashionable spa for brine cures from the early nineteenth century, from 1854 Emperor Franz Joseph spent every summer at the Kaiservilla north of town, the court and the composers followed, Lehár's villa stands by the river and the Zauner café opened in 1832 still trades on the main street; the town lies where the Ischl meets the Traun, in 2024 it was European Capital of Culture together with the whole region, Salzburg lies about 55 km west and Hallstatt about 20 km south. Newcomers most often go wrong by taking Bad Ischl for a stop on the way to Hallstatt, when it is the historic centre and transport hub of the lake district.",
+      "Bad Ischl is a town of Gmunden district in Upper Austria, about 163 km² with about 14,000 people at the start of 2026, an elected council and mayor, and police and schools belonging to the state. It is the centre of the Salzkammergut: a fashionable spa for brine cures from the early nineteenth century, from 1854 Emperor Franz Joseph spent every summer at the Kaiservilla west of the town centre, across the river, the court and the composers followed, Lehár's villa stands by the river and the Zauner café opened in 1832 still trades on the main street; the town lies where the Ischl meets the Traun, in 2024 it was European Capital of Culture together with the whole region, Salzburg lies about 55 km west and Hallstatt about 20 km south. Newcomers most often go wrong by taking Bad Ischl for a stop on the way to Hallstatt, when it is the historic centre and transport hub of the lake district.",
     layout:
       "The town sits in the valley where the two rivers meet, with the pedestrian Pfarrgasse, the Zauner café and the parish church at the centre on the east bank of the Traun, the Kaiservilla and its park at the foot of the hill on the west bank, and the Lehár Villa on the Traun. The station lies south of the centre. The salt mine is in the hills to the south-east. Hallstatt is about 20 km south, the Wolfgangsee about 10 km west, and Gmunden and the Traunsee about 30 km north.",
     gettingAround:
       "Bad Ischl has no airport with scheduled flights; the nearest is Salzburg (about 55 km, about 1 hour by road). Trains take about 2 hours from Salzburg via Attnang-Puchheim and about 2 from Linz; the 150 bus from Salzburg is more direct at about 1.5 hours. The town is walkable; Hallstatt is about 25 minutes by train and the Wolfgangsee a bus ride. The climate is temperate mountain, with cool wet summers and snowy winters.",
     culture:
-      "German is universal. The Kaiservilla still belongs to the imperial descendants and is seen by guided tour without interior photography; the Lehár Villa opens in summer. Zauner's Zaunerstollen and the Kaiser coffee are the tradition. Commemorations are held on 18 August, the emperor's birthday, and the Lehár Festival runs in summer. The EurothermenResort offers brine baths. Tip about 10% in restaurants.",
+      "German is universal. The Kaiservilla still belongs to the imperial descendants and is seen by guided tour without interior photography; the Lehár Villa opens in summer. Zauner's Zaunerstollen and the Kaiser coffee are the tradition. Commemorations are held on 18 August, the emperor's birthday, and the Lehár Festival runs in summer. The EurothermenResort offers brine baths. Restaurant bills include service by law, so tipping is voluntary.",
     seeAndDo:
       "The Kaiservilla and its park (the Marble Palace); the Lehár Villa; the Zauner pastry shop; the pedestrian street and the town museum; the salt-mine tour; the Katrin cable car; the brine spa; day trips to Hallstatt, the Wolfgangsee (St. Wolfgang, the Schafberg rack railway), the Gosau lakes and the Traunsee.",
     whenAndTips:
@@ -316,11 +317,11 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     howItWorks:
       "Eisenstadt is the capital of Burgenland and the smallest state capital in Austria, a 'statutory city' of about 43 km² with about 16,000 people in 2025; the state parliament and government sit in town, and police and schools belong to the state. This land passed from Hungary to Austria only in 1921, and the city became capital in 1925; the Esterházy Palace stands at the top of the old town, Haydn served here for decades as court musician and lies in the Bergkirche, vineyards climb the slopes of the Leitha hills, the Hungarian border lies about 12 km east, Vienna about 50 km north-west, and Croats and Hungarians are the state's minorities. Newcomers most often go wrong by taking Eisenstadt for a suburb of Vienna, when it is the capital of a state with a court, a parliament and wine of its own.",
     layout:
-      "The old town is tiny: the Esterházy palace stands at its western end, with the main square and the pedestrian Hauptstraße in front, Haydn's house on the Hauptstraße, the Bergkirche on the hill west of the palace and the Jewish quarter north of it. The station lies south-east of the old town. Rust on the Neusiedler See (storks' nests and wine village) is about 15 km south-east, and Mörbisch on the lake stages a summer operetta festival on the water.",
+      "The old town is tiny: the Esterházy palace stands at its western end, with the main square and the pedestrian Hauptstraße in front, Haydn's house on the Hauptstraße, the Bergkirche on the hill west of the palace and the Jewish quarter north of it. The station lies south-east of the old town. Rust on the Neusiedler See (storks' nests and wine village) is about 13 km in a straight line south-east, and Mörbisch on the lake stages a summer operetta festival on the water.",
     gettingAround:
       "Eisenstadt has no airport with scheduled flights; Vienna International is about 45 km away. Trains from Vienna take about 1 hour 15 (changing at Neusiedl or Wiener Neustadt), buses about 1 hour. The old town is walkable; buses or bicycles (a cycle path rings the lake) reach the Neusiedler See. The climate is continental, with hot dry summers — one of the sunniest parts of Austria.",
     culture:
-      "German is universal, with Croatian and Hungarian minority communities. The Haydn Hall of the palace is famed for its acoustics, and the Haydn Festival is held in September; the Bergkirche is a working church, with Haydn's mausoleum in a side chapel. Keep quiet in the Jewish museum and cemetery. Burgenland wines (Blaufränkisch, sweet wines) are tasted in the taverns of Rust. Tip about 10% in restaurants.",
+      "German is universal, with Croatian and Hungarian minority communities. The Haydn Hall of the palace is famed for its acoustics, and the Haydn Festival is held in September; the Bergkirche is a working church, with Haydn's mausoleum in a side chapel. Keep quiet in the Jewish museum and cemetery. Burgenland wines (Blaufränkisch, sweet wines) are tasted in the taverns of Rust. Restaurant bills include service by law, so tipping is voluntary.",
     seeAndDo:
       "The Esterházy palace (the Haydn Hall, the palace gardens); Haydn's house; the Bergkirche, Haydn's mausoleum and the Calvary; the Jewish quarter and the Austrian Jewish Museum; the state museum; the Neusiedler See (the storks of Rust, the lake stage at Mörbisch, cycling round the lake); the vineyard trails of the Leitha hills; the Haydn Festival in September.",
     whenAndTips:
@@ -337,7 +338,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "St. Anton has no airport with scheduled flights; the nearest are Innsbruck (about 100 km, about 1 hour 15 by train) and Zurich (about 200 km, about 2.5 hours by train). Railjets reach the village station directly in about 5.5 hours from Vienna, 1 hour 15 from Innsbruck and 2.5 hours from Zurich. The village is walkable, free ski buses link the lifts and St. Christoph, and Lech is about 30 minutes by bus. The climate is alpine, snowy in winter and cool in summer.",
     culture:
-      "German is universal and English is widespread in winter. Ski within the marked pistes; off-piste and deep snow need a guide and avalanche gear; the lift pass covers the whole Arlberg. St. Anton is famous for après-ski, with bars such as the MooserWirt in full swing from mid-afternoon. The ski museum is in the village. Mountain weather changes fast in summer. Tip about 10% in restaurants.",
+      "German is universal and English is widespread in winter. Ski within the marked pistes; off-piste and deep snow need a guide and avalanche gear; the lift pass covers the whole Arlberg. St. Anton is famous for après-ski, with bars such as the MooserWirt in full swing from mid-afternoon. The ski museum is in the village. Mountain weather changes fast in summer. Restaurant bills include service by law, so tipping is voluntary.",
     seeAndDo:
       "Winter skiing (the Galzig, the Valluga, the Rendl, the 'White Ring' circuit to Lech); the Valluga viewing platform; après-ski; the Arlberg ski museum; summer hiking (the Verwall hut, the Verwallsee) and mountain biking; the Arlberg WellCom pool; the villages of Lech and Zürs.",
     whenAndTips:

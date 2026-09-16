@@ -45,9 +45,9 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "labuan-bajo", nameZh: "拉布安巴焦", nameEn: "Labuan Bajo", country: "indonesia", tier: "notable", zone: "id-nusa-tenggara", admin1Zh: "东努沙登加拉省", admin1En: "East Nusa Tenggara",
-    lon: 119.8886, lat: -8.4874,
+    lon: 119.8936, lat: -8.4960,
     airport: { iata: "LBJ", nameZh: "科莫多机场", nameEn: "Komodo Airport", lon: 119.8892, lat: -8.4864 },
-    source: "拉布安巴焦市中心 -8.4874,119.8886；LBJ机场（距市区约2km）：公开资料",
+    source: "拉布安巴焦市中心 -8.4960,119.8936（OSM Nominatim「city」节点，2026-09-15 改：原坐标落在机场上）；LBJ机场（距市中心直线约1.2km）：公开资料",
   },
   {
     id: "balikpapan", nameZh: "巴厘巴板", nameEn: "Balikpapan", country: "indonesia", tier: "notable", zone: "id-kalimantan", admin1Zh: "东加里曼丹省", admin1En: "East Kalimantan",
@@ -66,5 +66,17 @@ export const CITIES: CityEntry[] = [
     lon: 111.6165, lat: -2.6822,
     airport: { iata: "PKN", nameZh: "伊斯坎达尔机场", nameEn: "Iskandar Airport", lon: 111.6725, lat: -2.7048 },
     source: "邦卡兰文市中心 -2.6822,111.6165；PKN机场（距市区直线约 7 km，按本条目坐标算），是前往丹绒普丁国家公园的主要门户：公开资料",
+  },
+  {
+    id: "semarang", nameZh: "三宝垄", nameEn: "Semarang", country: "indonesia", tier: "major", zone: "id-java", admin1Zh: "中爪哇省", admin1En: "Central Java",
+    lon: 110.4229, lat: -6.9904,
+    airport: { iata: "SRG", nameZh: "艾哈迈德·亚尼将军机场", nameEn: "Jenderal Ahmad Yani Airport", lon: 110.3732, lat: -6.9707 },
+    source: "三宝垄市中心（老城与五岔路广场之间）-6.9903988,110.4229104（OSM Nominatim r12 行政多边形中心）；SRG OurAirports -6.9707,110.3732，直线约 6 km，有国内与国际定期航班；注：同名的三宝垄县（Kabupaten Semarang）是另一个政府、驻温加兰（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "mataram", nameZh: "马塔兰", nameEn: "Mataram", country: "indonesia", tier: "notable", zone: "id-nusa-tenggara", admin1Zh: "西努沙登加拉省", admin1En: "West Nusa Tenggara",
+    lon: 116.1069, lat: -8.5838,
+    airport: { iata: "LOP", nameZh: "龙目国际机场", nameEn: "Lombok International Airport", lon: 116.2782, lat: -8.7600 },
+    source: "马塔兰市中心 -8.5837726,116.1068500（OSM Nominatim r12 行政多边形中心）；LOP OurAirports -8.7600,116.2782，直线约 27 km，有定期航班 —— 机场在中龙目县普朱特、不在本市市域内，正文写明（已有城市补充批，2026-09-16）",
   },
 ];

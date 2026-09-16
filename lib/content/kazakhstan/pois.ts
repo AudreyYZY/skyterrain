@@ -44,4 +44,21 @@ export const POIS: Record<string, CityPoi[]> = {
   kokshetau: [
     { nameZh: "科克舍套地区历史博物馆", nameEn: "Kokshetau Regional History Museum", lon: 69.3833, lat: 53.2833, kind: "landmark" },
   ],
+  oskemen: [
+    { nameZh: "东哈萨克斯坦州历史地方志博物馆", nameEn: "East Kazakhstan Regional Museum of History and Local Lore", lon: 82.6215, lat: 49.9467, kind: "landmark" },
+    { nameZh: "额尔齐斯河与乌尔巴河汇流口滨河路", nameEn: "Irtysh–Ulba confluence embankment", lon: 82.6194, lat: 49.9426, kind: "landmark" },
+  ],
+  atyrau: [
+    { nameZh: "伊曼加利清真寺", nameEn: "Imangali Mosque", lon: 51.90051, lat: 47.10583, kind: "landmark" },
+    { nameZh: "圣母安息主教座堂", nameEn: "Dormition Cathedral", lon: 51.90421, lat: 47.11409, kind: "landmark" },
+    { nameZh: "州立话剧院", nameEn: "Atyrau Regional Drama Theatre", lon: 51.93304, lat: 47.10508, kind: "landmark" },
+    { nameZh: "跨乌拉尔河人行桥", nameEn: "Footbridge over the Ural", lon: 51.89393, lat: 47.09604, kind: "landmark" },
+    { nameZh: "萨赖希克博物馆保护区（邻区）", nameEn: "Saraishyq museum-reserve (neighbouring district)", lon: 51.71799, lat: 47.49801, kind: "landmark" },
+  ],
+  taldykorgan: [
+    { nameZh: "扬苏古罗夫故居博物馆", nameEn: "Ilyas Zhansugurov house museum", lon: 78.38409, lat: 45.01773, kind: "landmark" },
+    { nameZh: "特内什帕耶夫博物馆", nameEn: "Tynyshpayev museum", lon: 78.38441, lat: 45.01621, kind: "landmark" },
+    { nameZh: "中央公园", nameEn: "Central Park", lon: 78.38393, lat: 45.01898, kind: "nature" },
+    { nameZh: "扎斯塔尔公园", nameEn: "Zhastar Park", lon: 78.34681, lat: 45.00543, kind: "nature" },
+  ],
 };

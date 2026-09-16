@@ -43,6 +43,14 @@ import { TRAVEL_EN as slovenia } from "@/lib/content/slovenia/travel.en";
 import { TRAVEL_EN as malta } from "@/lib/content/malta/travel.en";
 import { TRAVEL_EN as estonia } from "@/lib/content/estonia/travel.en";
 import { TRAVEL_EN as chile } from "@/lib/content/chile/travel.en";
+import { TRAVEL_EN as latvia } from "@/lib/content/latvia/travel.en";
+import { TRAVEL_EN as romania } from "@/lib/content/romania/travel.en";
+import { TRAVEL_EN as bulgaria } from "@/lib/content/bulgaria/travel.en";
+import { TRAVEL_EN as uzbekistan } from "@/lib/content/uzbekistan/travel.en";
+import { TRAVEL_EN as lithuania } from "@/lib/content/lithuania/travel.en";
+import { TRAVEL_EN as kyrgyzstan } from "@/lib/content/kyrgyzstan/travel.en";
+import { TRAVEL_EN as sri_lanka } from "@/lib/content/sri-lanka/travel.en";
+import { TRAVEL_EN as brunei } from "@/lib/content/brunei/travel.en";
 
 export const ALL_TRAVEL_EN: Record<string, TravelGuide> = {
   ...china,
@@ -88,4 +96,12 @@ export const ALL_TRAVEL_EN: Record<string, TravelGuide> = {
   ...malta,
   ...estonia,
   ...chile,
+  ...latvia,
+  ...romania,
+  ...bulgaria,
+  ...uzbekistan,
+  ...lithuania,
+  ...kyrgyzstan,
+  ...sri_lanka,
+  ...brunei,
 };

@@ -29,7 +29,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport at Luqa is about 8 km by road, and the TD4 airport express runs direct to Valletta. Inside the city you walk; the streets are steep with many steps, and a lift below the Upper Barrakka Gardens runs down to the waterfront. Ferries go to Sliema and the Three Cities, and most buses to the rest of the island leave from outside City Gate. Vehicle access to the old city is restricted, so driving in is not recommended.",
     culture:
-      "Maltese and English are both spoken. Most churches, palaces and museums keep set hours and dress codes, and shoulders and knees should be covered in churches. The Saluting Battery below the Upper Barrakka Gardens fires its guns at noon and 4 pm, Monday to Saturday. Cafés and wine bars cluster in the side streets off Republic Street and Merchants Street. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken. Most churches, palaces and museums keep set hours and dress codes, and shoulders and knees should be covered in churches. The Saluting Battery below the Upper Barrakka Gardens fires its guns at noon and 4 pm, Monday to Saturday. Cafés and wine bars cluster in the side streets off Republic Street and Merchants Street. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "St John's Co-Cathedral; the Upper Barrakka Gardens and the Saluting Battery; the Grandmaster's Palace; Fort St Elmo and the National War Museum; Republic Street and Merchants Street; the waterfront promenade below the walls; a ferry ride for views of the Grand Harbour and the Three Cities.",
     whenAndTips:
@@ -46,7 +46,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 6.5 km in a straight line, with bus connections. The quickest way to Valletta is the ferry across Marsamxett Harbour, just a few minutes; buses also link Sliema with Valletta and the north. Within Sliema you walk, and the promenade continues all the way to St Julian's. Roads are congested at peak hours and parking is difficult.",
     culture:
-      "Maltese and English are both spoken, and restaurants, hotels and language schools are concentrated here. The promenade is where residents take their evening walk, and in summer the rock-cut bathing areas along the shelving are busy. Dress modestly in churches. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken, and restaurants, hotels and language schools are concentrated here. The promenade is where residents take their evening walk, and in summer the rock-cut bathing areas along the shelving are busy. Dress modestly in churches. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "The seafront promenade and Tower Road; Tigné Point and its view of Valletta; the ferry to Valletta; swimming from the rock shelving; walking along the coast to Spinola Bay in St Julian's.",
     whenAndTips:
@@ -63,7 +63,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 6.9 km in a straight line, with bus connections. For Valletta take the bus, or walk to Sliema for the ferry. Within the area you walk; at night Paceville is crowded with people and traffic, so take care.",
     culture:
-      "Maltese and English are both spoken. Spinola Bay is for seafood and strolling, while Paceville's bars and clubs stay open late, especially at weekends and in summer. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken. Spinola Bay is for seafood and strolling, while Paceville's bars and clubs stay open late, especially at weekends and in summer. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "The fishing boats and waterfront restaurants of Spinola Bay; the square and church at Balluta Bay; the small beach at St George's Bay; the coastal walk to Sliema; Paceville's nightlife.",
     whenAndTips:
@@ -80,7 +80,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 7.4 km in a straight line, with bus connections; from Valletta the bus takes about half an hour to the gate. Mdina can only be explored on foot, and Rabat's main sights are also within walking distance. For the Dingli Cliffs, continue from Rabat by bus or taxi.",
     culture:
-      "Mdina is known for its quiet, and residents ask visitors to keep their voices down and not disturb homes. Churches and museums expect modest dress covering shoulders and knees. Rabat's bakeries and snack shops are the place to try everyday Maltese food. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Mdina is known for its quiet, and residents ask visitors to keep their voices down and not disturb homes. Churches and museums expect modest dress covering shoulders and knees. Rabat's bakeries and snack shops are the place to try everyday Maltese food. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "Mdina's main gate and walls; St Paul's Cathedral and the Cathedral Museum; the viewpoints on the bastions; St Paul's Catacombs in Rabat; the Roman town house remains; Rabat's parish church and old streets.",
     whenAndTips:
@@ -97,7 +97,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 5.3 km in a straight line, with bus connections. For Valletta, take the ferry across the Grand Harbour from the waterfront, or the bus. The Three Cities are walkable from one to another, and Birgu's streets are narrow but not steep.",
     culture:
-      "Maltese and English are both spoken. The Three Cities keep a strong community life, with processions and fireworks for summer patron-saint feasts and solemn religious rites around Easter. Churches expect modest dress. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken. The Three Cities keep a strong community life, with processions and fireworks for summer patron-saint feasts and solemn religious rites around Easter. Churches expect modest dress. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "Fort St Angelo; the Inquisitor's Palace; the Malta Maritime Museum; Birgu's old streets and squares; the watchtower garden at Senglea's tip; a walk along the waterfront and a ferry ride for a sea-level view of Valletta's walls.",
     whenAndTips:
@@ -114,7 +114,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Gozo has no airport with scheduled flights; the nearest is Malta International Airport. The ferry from Ċirkewwa at Malta's northern tip to Mġarr harbour takes about 25 minutes, runs 24 hours a day all year and carries vehicles; passenger-only fast ferries also run from Valletta to Mġarr. Buses link Mġarr with Victoria, and the island network is hubbed on Victoria with fewer services than on Malta; a hire car or driver gives more flexibility. Traffic drives on the left.",
     culture:
-      "Maltese and English are both spoken, and the pace is slower than on Malta. Each village's patron-saint feast is the big event of summer, and Victoria's opera houses and band traditions are well known in Malta. Gozitan cheese and honey are common local products. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken, and the pace is slower than on Malta. Each village's patron-saint feast is the big event of summer, and Victoria's opera houses and band traditions are well known in Malta. Gozitan cheese and honey are common local products. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "The citadel and its visitor centre; the morning market in Independence Square; the Ġgantija temples; the Inland Sea and Fungus Rock at Dwejra; the red sand of Ramla Bay; Xlendi Bay; the Ta' Pinu basilica; the salt pans and wave-cut rocks along the north coast.",
     whenAndTips:
@@ -131,7 +131,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 6.3 km in a straight line, with bus connections, and buses run from Valletta. The village is walkable. There is no direct bus to St Peter's Pool; people usually walk, take a taxi or drive, and parking is hard on summer weekends.",
     culture:
-      "Maltese and English are both spoken. Waterfront restaurants focus on fish and seafood, and Sunday lunch is family time for locals, so restaurants are often full. The eye painted on the bow is a traditional decoration of Maltese fishing boats. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken. Waterfront restaurants focus on fish and seafood, and Sunday lunch is family time for locals, so restaurants are often full. The eye painted on the bow is a traditional decoration of Maltese fishing boats. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "The painted fishing boats in the harbour; the Sunday fish market and general market; a fish lunch at a waterfront restaurant; the rock pool of St Peter's Pool on the Delimara peninsula; a walk around the bay.",
     whenAndTips:
@@ -148,7 +148,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 15 km in a straight line, with bus connections. The Ċirkewwa ferry terminal and Gozo are close; Valletta is about an hour by bus depending on traffic. The slope between the town centre and the beach is steep, so the bus is the easier option.",
     culture:
-      "Maltese and English are both spoken. In summer Mellieħa Bay is a busy beach for local families and visitors, with full facilities. The Sanctuary of Our Lady of Mellieħa is an important Marian pilgrimage site in Malta. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken. In summer Mellieħa Bay is a busy beach for local families and visitors, with full facilities. The Sanctuary of Our Lady of Mellieħa is an important Marian pilgrimage site in Malta. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "The beach at Mellieħa Bay; the Għadira Nature Reserve; the Sanctuary of Our Lady of Mellieħa; Anchor Bay and Popeye Village; the Red Tower on Marfa Ridge; the ferry from Ċirkewwa to Gozo and Comino.",
     whenAndTips:
@@ -165,10 +165,63 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The airport is about 12 km in a straight line, with bus connections. Buġibba is a major bus stop for the north, with easy connections to Valletta, Mellieħa and the Ċirkewwa ferry terminal. The resort is walkable. St Paul's Islands can be seen from the sea on a boat trip.",
     culture:
-      "Maltese and English are both spoken, and restaurants, bars and hotels are concentrated in the resort. The annual feast of St Paul's Shipwreck is a public holiday in Malta, with religious celebrations across the islands. Tipping is not compulsory; check whether the bill already lists a service charge.",
+      "Maltese and English are both spoken, and restaurants, bars and hotels are concentrated in the resort. The annual feast of St Paul's Shipwreck is a public holiday in Malta, with religious celebrations across the islands. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
     seeAndDo:
       "The promenades of Buġibba and Qawra; Qawra Point; a boat trip to see St Paul's Islands and the statue of St Paul on them; the Is-Simar wetland reserve; the bay and footpaths at Xemxija.",
     whenAndTips:
       "May–October is the holiday season, busy and lively at night in summer; in winter many resort facilities cut back their hours. Swimming is mostly from rock shelving, so watch for slippery rocks and swell.",
+  },
+  qrendi: {
+    // 全七段 sources: 同中文侧（NSO NR 120/2026 table 11, tier 1; Western Regional Council website, tier 1; Qrendi Local Council, tier 1; Heritage Malta, tier 1; Malta Public Transport route 74, tier 1; distances computed）。 核实 2026-09-16 当批（content-verifier 独立检索，本条 ok；2025 年末人口 NSO 官网对脚本 403，研究阶段在浏览器取表、与既有条目同表自检一致）。
+    identity:
+      "Qrendi is a village in the south-west of the island of Malta, with about 3,400 people at the end of 2025 (National Statistics Office). The village sits on inland high ground, but its territory runs down to the sea: the Ħaġar Qim and Mnajdra temples, more than five thousand years old, stand on the clifftop outside the village and were inscribed on the World Heritage list in 1992 as part of the Megalithic Temples of Malta, and the fishing inlet of Wied iż-Żurrieq and the Blue Grotto on the coast also come under Qrendi.",
+    howItWorks:
+      "Qrendi is a local council locality, with an elected local council looking after streets and local matters, and belongs to the Western Region, whose regional council is made up of the mayors of its local councils. The two temples themselves are managed by the national heritage agency Heritage Malta, not the local council. There is a mismatch in names here: the fishing inlet of Wied iż-Żurrieq and the Blue Grotto sound as if they belong to the neighbouring town of Żurrieq, and the bus stops carry Żurrieq's name, but the 1993 Local Councils Act placed them within Qrendi's locality. More confusingly, the National Statistics Office counts Qrendi in the 'South Eastern' statistical district while its regional council is the Western Region — statistical and administrative groupings are two different systems. The centre of the village is around the parish church, and the sights are on the clifftops and shore a kilometre or two away. Locals find their way by the village centre, the temples and Wied iż-Żurrieq. Daily life happens within a small radius: the airport is about 3 km away in a straight line, and route 74 buses link the village, the temples and the Blue Grotto. The commonest mistake newcomers make is assuming the Blue Grotto belongs to Żurrieq.",
+    layout:
+      "The village is on high ground in the south-west of Malta, with the parish church at its centre and a large collapse sinkhole, il-Maqluba, just outside. About 2 km south-west on the clifftop by the sea is Ħaġar Qim, with Mnajdra about 500 m downhill; south towards the sea is the fishing inlet of Wied iż-Żurrieq, with the Blue Grotto's sea arch on the nearby cliffs.",
+    gettingAround:
+      "Malta International Airport (MLA) is about 3 km away in a straight line. Route 74 buses from Valletta serve Qrendi village, the temples and the Blue Grotto area, and the temples are a few minutes' walk from the nearest stop. To see the Blue Grotto's sea arch, take a small boat from Wied iż-Żurrieq; whether boats run depends on the sea.",
+    culture:
+      "Maltese and English are spoken. The doorway of Mnajdra's South Temple aligns with sunrise at the spring and autumn equinoxes. The temple sites are covered by protective shelters; do not climb on the stones. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
+    seeAndDo:
+      "Ħaġar Qim temple and visitor centre; Mnajdra temple downhill; a boat trip from Wied iż-Żurrieq to the Blue Grotto; clifftop walks above the sea; and the il-Maqluba sinkhole at the edge of the village.",
+    whenAndTips:
+      "Spring and autumn are the most comfortable; in summer the clifftops have no shade and the midday sun is fierce, so go early or late in the day. Blue Grotto boats depend on the wind and waves and stop when it is rough. Temple opening hours and tickets are as announced by Heritage Malta.",
+  },
+
+  xaghra: {
+    // 全七段 sources: 同中文侧（NSO NR 120/2026 table 11 at 31 December 2025, tier 1; Heritage Malta on Ġgantija and the Ta' Kola windmill, tier 1; Gozo Channel on the ferry, tier 1; MTA on tipping and drinking water, tier 1; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Xagħra stands on a plateau in the middle of Gozo, with 5,386 residents at the end of 2025 (National Statistics Office) — on that same release the second most populous of the fourteen local council areas of Gozo and Comino. Within its boundaries are the Ġgantija temples, the Gozo component of the Megalithic Temples of Malta World Heritage site, and below the plateau to the north lies the red sand of Ramla Bay.",
+    howItWorks:
+      "Malta has no tier of city government: there are 68 local councils, 54 on Malta and 14 on Gozo, and Xagħra is one of them, with council size set by population; since 2021 a layer of six regional councils sits above them, and Xagħra belongs to the Gozo region. Gozo also has a layer Malta lacks — a ministry for Gozo, set up in 1987, which handles most Gozitan business. So counting who runs Xagħra takes three layers: the local council, the regional council and that ministry. The locality itself is a raised plateau: the village sits on top, Ġgantija stands at its edge, and the plateau drops away northwards to Ramla Bay. There is also something rarely found elsewhere: two caves beneath private houses in the village, opened to visitors by the householders themselves, so whether they are open depends on the day. Newcomers often assume everything on Gozo is in Victoria, when this World Heritage component is here; many also take the neighbouring village of Marsalforn for part of Xagħra, when it belongs to another locality.",
+    layout:
+      "The square with the basilica is the centre of the village, the Ta' Kola windmill about 200 m to its east, and the Ġgantija temples about 400 m to its south-east. Ninu Cave is under a house just north of the square. Ramla Bay lies about 1.6 km north-east in a straight line, down off the edge of the plateau.",
+    gettingAround:
+      "Gozo has no scheduled flights; the nearest airport with them is Malta International, about 29 km away in a straight line. Reaching the island means the ferry: the state-owned operator runs across to Malta all year, with sailings adjusted by season, so check the notices before travelling. Buses run from Victoria to Xagħra and to Ramla Bay. The village is walkable, and the beach is downhill going and uphill coming back. The climate is Mediterranean, hot and dry in summer, mild and wet in winter.",
+    culture:
+      "Maltese is spoken and English is also official. The basilica and the parish feast are part of local life, so dress modestly when visiting churches. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
+    seeAndDo:
+      "The Ġgantija temples and their interpretation centre; the Ta' Kola windmill; the basilica on the village square; the caves beneath village houses, opened by their owners at irregular hours; and the walk down off the plateau to the red sand of Ramla Bay.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; high summer is fierce. There is a real height difference between the village and the beach, so the return is a climb, and ferry sailings change with the season, so leave time for the trip back.",
+  },
+
+  mosta: {
+    // 全七段 sources: 同中文侧（NSO NR 120/2026 table 11, tier 1; Northern Region council self-description, tier 1; Heritage Malta on the Ta' Bistra catacombs, tier 1; the Rotunda's dome diameter and basilica date deliberately omitted because sources disagree; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Mosta lies in the middle of Malta, with 25,845 residents at the end of 2025 (National Statistics Office) — on that release the third most populous of the country's 68 local council areas, while the capital, Valletta, had just 5,189. Its centre is the 19th-century domed church, and the locality reaches north to the top of the fault escarpment that runs across the island.",
+    howItWorks:
+      "Malta has no tier of city government: Mosta is one of the 68 local council areas, with a regional council layer added in 2021, and it belongs to the Northern Region. The distribution of people is the key to this country: the capital has barely five thousand residents while Mosta has over twenty-five thousand — the political centre and the population centre parted company long ago. The shape of the locality is worth noticing too: dense town at the southern end, rising ground northwards to the top of the fault escarpment, where the forts and the continuous infantry wall built by the British in the 19th century run along the crest; Fort Mosta's address falls within this locality, though it is not open to visitors. The domed church in the centre was begun in 1833 and finished in 1860 on the site of a church of about 1614, built largely by volunteer labour from the parish; on 9 April 1942 a bomb pierced the dome without exploding. West of the town lies a group of ancient catacombs which, according to the heritage agency, is as far as is known the largest set of tombs and catacombs beyond the confines of the ancient city. Newcomers take Mosta for a place with one church, when it is among the most populous localities in the country.",
+    layout:
+      "The square in front of the domed church is the centre, with the Ta' Bistra catacombs about 1 km north-west. Wied il-Għasel cuts into the escarpment north of town, its mouth a few hundred metres from the square, and Speranza Valley lies about 1.5 km to the south-west. Fort Mosta is about 1.4 km due north on the crest, and is not open to visitors.",
+    gettingAround:
+      "Malta International Airport is about 7.5 km south-east in a straight line and Valletta about 8 km south-east. Buses and cars do the work on the island, Mosta sits where several main routes meet, and the town itself is walkable. The climate is Mediterranean, hot and dry in summer, mild and wet in winter.",
+    culture:
+      "Maltese is spoken and English is also official. The domed church is a working parish church, so dress modestly and avoid visiting during Mass. Tipping is common here, unless a service charge is already on the bill. For drinking water, bottled or filtered water is advised.",
+    seeAndDo:
+      "The domed church and its displays; the Ta' Bistra catacombs; a walk into Wied il-Għasel where it cuts the escarpment; the paths in Speranza Valley; and the line of the Victoria Lines along the crest.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable. The church is in daily parish use and closed to visitors during Mass; the valley paths have no shade in summer, so take water and a hat.",
   },
 };

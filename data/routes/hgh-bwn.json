@@ -1,0 +1,48 @@
+{
+  "id": "hgh-bwn",
+  "name": "杭州 — 斯里巴加湾",
+  "nameEn": "Hangzhou — Bandar Seri Begawan",
+  "description": "武夷山 · 南海 · 文莱湾红树林 · 文莱河口",
+  "descriptionEn": "Wuyi Mountains · South China Sea · Brunei Bay mangroves · Brunei River estuary",
+  "depCountry": "china",
+  "arrCountry": "brunei",
+  "source": {
+    "ref": "https://www.flyroyalbrunei.com/",
+    "checkedOn": "2026-09-16",
+    "status": "flight-unknown",
+    "note": "**机场对、承运人与航班号已核实，机型未核实**：文莱皇家航空「Operating Flights」时刻表（1 级，有效至 2026-10-24）：Hangzhou – Brunei BI640，每周二一班、另有 6 个除外日，计划 4 h 20 min；文莱民航局航班信息（1 级，2026-09-15）：BI640 22:30 到达、来自 Hangzhou。**BI639 是斯里巴加湾→杭州的回程号**，此前记录反了。机型 2026 年只有 FlightAware（3 级）A320neo 一个直接来源，按本库规矩**不填 flight 字段**、解说不点名承运人、航班号与机型；班期与除外日不写进解说。航点经武夷山—南海—文莱湾为按大圆的示意，不代表实际航路；南海只写海面，不写任何岛礁与海域。"
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "hgh",
+      "name": "杭州萧山",
+      "nameEn": "Hangzhou Xiaoshan",
+      "lat": 30.2295,
+      "lon": 120.4344,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "wuyi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "brunei-bay-mangroves"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "brunei-river-estuary"
+    },
+    {
+      "kind": "city",
+      "id": "bwn",
+      "name": "斯里巴加湾",
+      "nameEn": "Bandar Seri Begawan",
+      "lat": 4.9442,
+      "lon": 114.928,
+      "airport": true
+    }
+  ]
+}

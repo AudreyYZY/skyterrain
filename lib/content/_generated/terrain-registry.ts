@@ -43,6 +43,14 @@ import { TERRAINS as slovenia } from "@/lib/content/slovenia/registry";
 import { TERRAINS as malta } from "@/lib/content/malta/registry";
 import { TERRAINS as estonia } from "@/lib/content/estonia/registry";
 import { TERRAINS as chile } from "@/lib/content/chile/registry";
+import { TERRAINS as latvia } from "@/lib/content/latvia/registry";
+import { TERRAINS as romania } from "@/lib/content/romania/registry";
+import { TERRAINS as bulgaria } from "@/lib/content/bulgaria/registry";
+import { TERRAINS as uzbekistan } from "@/lib/content/uzbekistan/registry";
+import { TERRAINS as lithuania } from "@/lib/content/lithuania/registry";
+import { TERRAINS as kyrgyzstan } from "@/lib/content/kyrgyzstan/registry";
+import { TERRAINS as sri_lanka } from "@/lib/content/sri-lanka/registry";
+import { TERRAINS as brunei } from "@/lib/content/brunei/registry";
 
 export const ALL_TERRAINS: TerrainEntry[] = [
   ...china,
@@ -88,4 +96,12 @@ export const ALL_TERRAINS: TerrainEntry[] = [
   ...malta,
   ...estonia,
   ...chile,
+  ...latvia,
+  ...romania,
+  ...bulgaria,
+  ...uzbekistan,
+  ...lithuania,
+  ...kyrgyzstan,
+  ...sri_lanka,
+  ...brunei,
 ];

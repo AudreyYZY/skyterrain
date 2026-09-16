@@ -56,7 +56,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "Marienplatz is the old town's centre, with the glockenspiel show on the New Town Hall's tower a signature scene; Nymphenburg Palace, the Bavarian royal family's summer residence, lies to the west; the English Garden is one of Europe's largest urban parks, where a branch of the Isar draws river surfers.",
     gettingAround:
-      "The airport is about 30 km from the centre, with a rail line running directly there. The city's metro, tram and bus network is extensive, and the old town is walkable. Continental climate: warm summers, cold and snowy winters; being near the Alps, weather can change quickly, with an occasional Föhn wind bringing brief warm spells.",
+      "The airport is about 30 km from the centre, with S-Bahn suburban trains running directly there in about 40 minutes. The city's metro, tram and bus network is extensive, and the old town is walkable. Continental climate: warm summers, cold and snowy winters; being near the Alps, weather can change quickly, with an occasional Föhn wind bringing brief warm spells.",
     culture:
       "Bavarians take pride in traditional dress (lederhosen for men, dirndls for women) and local festivals, and Oktoberfest is the year's biggest event. Beer-hall culture is a key part of daily life in Munich. Tipping is customary — round up or give 5–10%.",
     seeAndDo:
@@ -91,6 +91,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
 
   cologne: {
+    // 抽样 seed=17（2026-09-16）：街区数 85 → 86（芬肯贝格 2007-08-24 成为第 86 个 Stadtteil，科隆市政府与德语维基）。
     // identity sources: 德国各州统计局的 Gemeinde（市本身）人口，**基准均为 Zensus 2022**（2022 年人口普查导致不少城市的官方人口被下修，此后在新基准上逐年推算 —— 引用德国数字时必须区分 Zensus 前后）。
     //   **德国有两套并存的官方口径**：州统计局的 Zensus 调节数 vs 城市自己的居民登记（Melderegister，常含次要住所），两者可以差好几万，正文必须写明用的是哪一档。
     //   发布节奏：巴伐利亚州**次年 5 月**；汉堡与石荷州（Statistikamt Nord）**次年 7 月初**；北威州 IT.NRW **次年 6 月中**；黑森州**次年 6—7 月**；**巴登-符腾堡州滞后特别长（约 16 个月）** —— 2024-06-30 的数迟至 2025-10 才发布，别按其他州的节奏去催。城市自己的登记口径多在次年 2—3 月。
@@ -106,7 +107,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   发布节奏：巴伐利亚州**次年 5 月**；汉堡与石荷州（Statistikamt Nord）**次年 7 月初**；北威州 IT.NRW **次年 6 月中**；黑森州**次年 6—7 月**；**巴登-符腾堡州滞后特别长（约 16 个月）** —— 2024-06-30 的数迟至 2025-10 才发布，别按其他州的节奏去催。城市自己的登记口径多在次年 2—3 月。
     //   同上。
     howItWorks:
-      "Cologne is the largest city of North Rhine-Westphalia, governed by a Lord Mayor and council, with nine boroughs (Stadtbezirke) and 85 quarters (Stadtteile); with about 1.026 million people at the end of 2025 by the state statistical office (about 1.10 million on the city's own register) it is Germany's fourth city, forms a metropolitan region of about 3.5 million with Bonn, and belongs to the Rhine-Ruhr agglomeration of more than eleven million. The Rhine divides it: the left bank holds the old city and the cathedral, the right bank Deutz with the trade fair and new offices, and the medieval walls have become the Ring boulevards. Cologne people identify strongly with their 'Veedel', the neighbourhood, and the carnival societies are organised by them. Addresses give street, number and postcode, and the KVB light rail joins the banks. The state capital, Düsseldorf, lies about 35 km north-west, and the rivalry between the two is a favourite local topic. Newcomers most often go wrong by assuming Cologne is the state capital, when that is Düsseldorf next door.",
+      "Cologne is the largest city of North Rhine-Westphalia, governed by a Lord Mayor and council, with nine boroughs (Stadtbezirke) and 86 quarters (Stadtteile); with about 1.026 million people at the end of 2025 by the state statistical office (about 1.10 million on the city's own register) it is Germany's fourth city, forms a metropolitan region of about 3.5 million with Bonn, and belongs to the Rhine-Ruhr agglomeration of more than eleven million. The Rhine divides it: the left bank holds the old city and the cathedral, the right bank Deutz with the trade fair and new offices, and the medieval walls have become the Ring boulevards. Cologne people identify strongly with their 'Veedel', the neighbourhood, and the carnival societies are organised by them. Addresses give street, number and postcode, and the KVB light rail joins the banks. The state capital, Düsseldorf, lies about 35 km north-west, and the rivalry between the two is a favourite local topic. Newcomers most often go wrong by assuming Cologne is the state capital, when that is Düsseldorf next door.",
     layout:
       "Cologne Cathedral sits right next to the main train station, the city's signature landmark; the old town runs along the Rhine, and the Hohenzollern Bridge is covered in \"love locks\"; the museum district clusters around the cathedral, with the Museum Ludwig known for its modern-art collection.",
     gettingAround:
@@ -252,6 +253,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
 
   stralsund: {
+    // gettingAround sources（2026-09-15 核实，抽样 seed=13）: 施特拉尔松—罗斯托克-拉格机场按注册表坐标直线约 68 km；公路约 80–85 km（rome2rio，3 级）。原「约 70 公里」与直线口径一致、缺口径，补「直线」
     identity:
       "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town; its old town was World Heritage-listed as a whole in 2002 together with the old town of Wismar, and it is the main gateway to Rügen's chalk cliffs.",
     // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
@@ -261,7 +263,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town sits on a peninsula surrounded by water on three sides, with brick Gothic churches such as St. Nicholas's defining the skyline; the Ozeaneum, in the port district, is a well-known German marine-life museum; across the Strelasund strait lies the island of Rügen.",
     gettingAround:
-      "The nearest commercial airport is Rostock-Laage (about 70 km); the city has a train station, and the old town is walkable. Temperate maritime climate — cool, pleasant summers and windy winters, changeable year-round, so carry a jacket.",
+      "The nearest commercial airport is Rostock-Laage (about 68 km in a straight line); the city has a train station, and the old town is walkable. Temperate maritime climate — cool, pleasant summers and windy winters, changeable year-round, so carry a jacket.",
     culture:
       "Stralsund is a classic northern German Hanseatic town, and brick Gothic architecture is the local hallmark style. Local fishing and Baltic seafood are culinary specialties. Tipping is customary — round up or give 5–10%.",
     seeAndDo:
@@ -280,7 +282,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town lies within a ring road and is compact: the Markt and the old town hall are at the centre, the Thomaskirche on the west side, the Nikolaikirche on the east, and Augustusplatz (the Gewandhaus, the opera, the university) on the eastern edge; the covered arcades threading the old town (Auerbachs Keller in the Mädler arcade) are a local feature. The main station stands on the northern edge of the old town. The Battle of the Nations monument lies about 4 km south-east, the Spinnerei in the Plagwitz district to the west, and the Karl-Heine canal and the new lake district (former open-cast mines turned lakes) in the south are the leisure grounds. The airport is about 20 km north-west.",
     gettingAround:
-      "Leipzig/Halle Airport (LEJ), about 20 km from the city, is about 15 minutes from the main station by S-Bahn; its passenger routes are mainly holiday services, and it is DHL's European cargo hub. ICE trains take about 1 hour 15 from Berlin, about 3 hours from Munich and about 3 from Frankfurt. The city has S-Bahn, trams and buses, and the old town is walkable; take a tram to the monument and the S-Bahn to the Spinnerei. The climate is temperate continental with warm summers and cold winters.",
+      "Leipzig/Halle Airport (LEJ), about 20 km by road from the city, is about 15 minutes from the main station by S-Bahn; its passenger routes are mainly holiday services, and it is DHL's European cargo hub. ICE trains take about 1 hour 15 from Berlin, about 3 hours from Munich and about 3 from Frankfurt. The city has S-Bahn, trams and buses, and the old town is walkable; take a tram to the monument and the S-Bahn to the Spinnerei. The climate is temperate continental with warm summers and cold winters.",
     culture:
       "German is universal and English is common among the young. The Thomaskirche holds motet performances by the boys' choir on Fridays and Saturdays, and Bach's grave lies before the altar; the Nikolaikirche is a memorial of the 1989 peaceful revolution — keep quiet. Book Gewandhaus concerts ahead. The book fair in March and the Bach Festival in June are the major events. Local food includes Leipziger Allerlei (mixed vegetables), the Lerche pastry and Gose beer. Tip about 10% in restaurants.",
     seeAndDo:
@@ -380,7 +382,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     //   发布节奏：巴伐利亚州**次年 5 月**；汉堡与石荷州（Statistikamt Nord）**次年 7 月初**；北威州 IT.NRW **次年 6 月中**；黑森州**次年 6—7 月**；**巴登-符腾堡州滞后特别长（约 16 个月）** —— 2024-06-30 的数迟至 2025-10 才发布，别按其他州的节奏去催。城市自己的登记口径多在次年 2—3 月。
     //   雷根斯堡 2025-12-31 = **151,517**（巴伐利亚州统计局，级别 1）。
     identity:
-      "Regensburg lies on the northernmost bend of the Danube in eastern Bavaria, where the Regen and the Naab flow in, with about 151,500 people (end of 2025). The Romans founded the Castra Regina camp here in AD 179, in the Middle Ages it was one of the most prosperous cities of the Holy Roman Empire, and from 1663 to 1806 the Imperial Diet sat here permanently; the old town survives almost intact with nearly 1,500 listed buildings, inscribed as a World Heritage site in 2006 and called 'the largest medieval city north of the Alps'. The Stone Bridge of 1135–1146 is a masterpiece of medieval bridge-building, St Peter's Cathedral is the model of Bavarian Gothic and its choir, the Domspatzen, has a thousand-year history; the historic sausage kitchen at the bridgehead claims to be the oldest sausage restaurant in the world. The palace of the Thurn und Taxis family lies in the south of the old town, and the Walhalla temple about 10 km downstream.",
+      "Regensburg lies on the northernmost bend of the Danube in eastern Bavaria, where the Regen and the Naab flow in, with about 151,500 people (end of 2025). The Romans founded the Castra Regina camp here in AD 179, in the Middle Ages it was one of the most prosperous cities of the Holy Roman Empire, and from 1663 to 1806 the Imperial Diet sat here permanently; the old town survives almost intact with nearly 1,500 listed buildings, inscribed as a World Heritage site in 2006 and called 'the largest medieval city north of the Alps'. The Stone Bridge of 1135–1146 is a masterpiece of medieval bridge-building, St Peter's Cathedral is the model of Bavarian Gothic and its choir, the Domspatzen, has a thousand-year history; the historic sausage kitchen at the bridgehead claims to be the oldest sausage restaurant in the world. The palace of the Thurn und Taxis family lies in the south of the old town, and the Walhalla temple about 11 km in a straight line downstream.",
     // howItWorks sources: 德国各州统计局的 Gemeinde（市本身）人口，**基准均为 Zensus 2022**（2022 年人口普查导致不少城市的官方人口被下修，此后在新基准上逐年推算 —— 引用德国数字时必须区分 Zensus 前后）。
     //   **德国有两套并存的官方口径**：州统计局的 Zensus 调节数 vs 城市自己的居民登记（Melderegister，常含次要住所），两者可以差好几万，正文必须写明用的是哪一档。
     //   发布节奏：巴伐利亚州**次年 5 月**；汉堡与石荷州（Statistikamt Nord）**次年 7 月初**；北威州 IT.NRW **次年 6 月中**；黑森州**次年 6—7 月**；**巴登-符腾堡州滞后特别长（约 16 个月）** —— 2024-06-30 的数迟至 2025-10 才发布，别按其他州的节奏去催。城市自己的登记口径多在次年 2—3 月。

@@ -58,4 +58,27 @@ export const CITIES: CityEntry[] = [
     lon: 26.4983, lat: 58.0572,
     source: "奥泰佩镇中心 58.0572,26.4983（维基）；本地无定期航班机场（附近 Tõutsi 有私人小型机场，无商业航班），不填 airport 字段；塔尔图 TAY 直线约 30 km（仅飞赫尔辛基），其余航线经塔林 TLL（按坐标算）",
   },
+  {
+    id: "kardla", nameZh: "凯尔德拉（希乌马岛）", nameEn: "Kärdla (Hiiumaa)", country: "estonia", tier: "notable", zone: "ee-islands",
+    admin1Zh: "希乌马县", admin1En: "Hiiu County",
+    lon: 22.7497, lat: 58.9978,
+    airport: { iata: "KDL", nameZh: "凯尔德拉机场", nameEn: "Kärdla Airport", lon: 22.8307, lat: 58.9908 },
+    source: "凯尔德拉中心广场一带 58.9978,22.7497；KDL 机场 OurAirports 58.9908,22.8307，距中心直线约 4.7 km，有飞塔林的国内定期航班（airport.ee，1 级；仓库 tll-kdl 航线已核）；离陆地国界约 154 km（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "voru", nameZh: "沃鲁", nameEn: "Võru", country: "estonia", tier: "notable", zone: "ee-south",
+    admin1Zh: "沃鲁县", admin1En: "Võru County",
+    lon: 26.9958, lat: 57.8480,
+    source: "沃鲁中心广场 57.8480,26.9958（OSM）；本地没有定期航班的机场，不填 airport；塔尔图 TAY 直线约 54 km（只飞赫尔辛基），其余航线经塔林 TLL（按 OurAirports 算）；离国界约 24 km（按 OSM 边界算，已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "toila", nameZh: "托伊拉", nameEn: "Toila", country: "estonia", tier: "notable", zone: "ee-northeast", admin1Zh: "伊达维鲁县", admin1En: "Ida-Viru County",
+    lon: 27.5133, lat: 59.4209,
+    source: "托伊拉 59.4209,27.5133（OSM Nominatim，Toila alevik）；本地没有定期航班的机场，最近有定期航班的是塔林 TLL、直线约 152 km（算）；**托伊拉乡已于 2025 年 11 月并入约赫维乡**（2017 年市镇改革后爱沙尼亚的第一起市镇合并，地区与农业部 2025-04-29 政府令，1 级），人口只能写乡级；与地形条目 valaste-waterfall、north-estonian-klint 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "vosu", nameZh: "沃苏（拉赫马国家公园）", nameEn: "Võsu (Lahemaa)", country: "estonia", tier: "notable", zone: "ee-north", admin1Zh: "西维鲁县", admin1En: "Lääne-Viru County",
+    lon: 25.9554, lat: 59.5765,
+    source: "沃苏 59.5765,25.9554（OSM Nominatim，Võsu alevik）；本地没有定期航班的机场，最近有定期航班的是塔林 TLL、直线约 66 km（算）；人口只能写海良拉乡一级（统计局 RV0240 不到 alevik）；与地形条目 lahemaa-coast（锚点凯斯穆半岛）互指（已有城市补充批，2026-09-16）",
+  },
 ];

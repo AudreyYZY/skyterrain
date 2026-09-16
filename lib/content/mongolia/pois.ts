@@ -54,4 +54,16 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "特日和音查干湖", nameEn: "Terkhiin Tsagaan Lake", lon: 99.7000, lat: 48.1900, kind: "nature" },
     { nameZh: "扎雅音格根寺", nameEn: "Zayain Gegeenii Süm", lon: 101.4500, lat: 47.4800, kind: "landmark" },
   ],
+  sainshand: [
+    { nameZh: "赛音山达火车站", nameEn: "Sainshand Railway Station", lon: 110.141458, lat: 44.915776, kind: "district" },
+    { nameZh: "哈马林寺", nameEn: "Khamaryn Khiid", lon: 110.2735, lat: 44.5978, kind: "landmark" },
+    { nameZh: "丹赞拉布扎博物馆与省博物馆一带", nameEn: "Danzanravjaa Museum area", lon: 110.1395, lat: 44.8922, kind: "landmark" },
+  ],
+  bayankhongor: [
+    { nameZh: "省历史与民族志博物馆", nameEn: "Museum of History and Ethnography", lon: 100.7236, lat: 46.1958, kind: "landmark" },
+    { nameZh: "省自然史博物馆", nameEn: "Natural History Museum", lon: 100.7245, lat: 46.1933, kind: "landmark" },
+    { nameZh: "音乐戏剧剧院", nameEn: "Music and Drama Theatre", lon: 100.7166, lat: 46.1965, kind: "landmark" },
+    { nameZh: "夏尔嘎勒朱特温泉", nameEn: "Shargaljuut Hot Springs", lon: 101.225623, lat: 46.330178, kind: "nature" },
+    { nameZh: "奥罗格湖", nameEn: "Orog Lake", lon: 100.609161, lat: 45.068272, kind: "nature" },
+  ],
 };

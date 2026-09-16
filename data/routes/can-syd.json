@@ -2,8 +2,8 @@
   "id": "can-syd",
   "name": "广州 — 悉尼",
   "nameEn": "Guangzhou — Sydney",
-  "description": "南海 · 阿波山 · 珊瑚海 · 玻璃屋山",
-  "descriptionEn": "South China Sea · Mount Apo · Coral Sea · Glass House Mountains",
+  "description": "南海 · 珊瑚海 · 玻璃屋山",
+  "descriptionEn": "South China Sea · Coral Sea · Glass House Mountains",
   "depCountry": "china",
   "arrCountry": "australia",
   "flight": {
@@ -37,10 +37,6 @@
       "nameEn": "South China Sea",
       "lon": 116,
       "lat": 18
-    },
-    {
-      "kind": "terrain",
-      "terrainId": "mount-apo"
     },
     {
       "kind": "feature",

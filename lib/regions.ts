@@ -47,7 +47,7 @@ export const REGIONS: Region[] = [
     name: "亚洲",
     nameEn: "Asia",
     center: { lon: 90.0, lat: 40.0, height: 14000000 },
-    terrainCount: 349,
+    terrainCount: 432,
     available: true,
   },
   {
@@ -55,7 +55,7 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 669,
+    terrainCount: 777,
     available: true,
   },
   {
@@ -162,6 +162,10 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   philippines: "south-eastern-asia",
   indonesia: "south-eastern-asia",
   kazakhstan: "central-asia",
+  kyrgyzstan: "central-asia",
+  "sri-lanka": "southern-asia",
+  brunei: "south-eastern-asia",
+  uzbekistan: "central-asia",
   mongolia: "eastern-asia",
   malaysia: "south-eastern-asia",
   turkey: "western-asia",
@@ -174,6 +178,8 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   norway: "northern-europe",
   ireland: "northern-europe",
   estonia: "northern-europe",
+  latvia: "northern-europe",
+  lithuania: "northern-europe",
   denmark: "northern-europe",
   sweden: "northern-europe",
   finland: "northern-europe",
@@ -190,6 +196,8 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   luxembourg: "western-europe",
   poland: "eastern-europe",
   czechia: "eastern-europe",
+  romania: "eastern-europe",
+  bulgaria: "eastern-europe",
   slovakia: "eastern-europe",
   hungary: "eastern-europe",
   croatia: "southern-europe",
@@ -224,24 +232,30 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "south-korea", name: "韩国", nameEn: "South Korea", code: "KR" },
   { slug: "mongolia", name: "蒙古", nameEn: "Mongolia", code: "MN" },
   { slug: "japan", name: "日本", nameEn: "Japan", code: "JP" },
-  // 中亚
+  // 中亚（拼音：哈萨克斯坦 Hāsàkèsītǎn → 吉尔吉斯斯坦 Jí'ěrjísīsītǎn → 乌兹别克斯坦 Wūzībiékèsītǎn）
   { slug: "kazakhstan", name: "哈萨克斯坦", nameEn: "Kazakhstan", code: "KZ" },
+  { slug: "kyrgyzstan", name: "吉尔吉斯斯坦", nameEn: "Kyrgyzstan", code: "KG" },
+  { slug: "uzbekistan", name: "乌兹别克斯坦", nameEn: "Uzbekistan", code: "UZ" },
   // 西亚
   { slug: "turkey", name: "土耳其", nameEn: "Turkey", code: "TR" },
-  // 南亚（暂空）
-  // 东南亚（拼音：菲律宾 Fēilǜbīn → 马来西亚 Mǎláixīyà → 泰国 Tàiguó → 新加坡 Xīnjiāpō → 印度尼西亚 Yìndùníxīyà → 越南 Yuènán）
+  // 南亚（拼音：斯里兰卡 Sīlǐlánkǎ）
+  { slug: "sri-lanka", name: "斯里兰卡", nameEn: "Sri Lanka", code: "LK" },
+  // 东南亚（拼音：菲律宾 Fēilǜbīn → 马来西亚 Mǎláixīyà → 泰国 Tàiguó → 文莱 Wénlái → 新加坡 Xīnjiāpō → 印度尼西亚 Yìndùníxīyà → 越南 Yuènán）
   { slug: "philippines", name: "菲律宾", nameEn: "Philippines", code: "PH" },
   { slug: "malaysia", name: "马来西亚", nameEn: "Malaysia", code: "MY" },
   { slug: "thailand", name: "泰国", nameEn: "Thailand", code: "TH" },
+  { slug: "brunei", name: "文莱", nameEn: "Brunei", code: "BN" },
   { slug: "singapore", name: "新加坡", nameEn: "Singapore", code: "SG" },
   { slug: "indonesia", name: "印度尼西亚", nameEn: "Indonesia", code: "ID" },
   { slug: "vietnam", name: "越南", nameEn: "Vietnam", code: "VN" },
-  // 北欧（拼音：爱尔兰 Ài'ěrlán → 爱沙尼亚 Àishāníyà → 冰岛 Bīngdǎo → 丹麦 Dānmài → 芬兰 Fēnlán → 挪威 Nuówēi → 瑞典 Ruìdiǎn → 英国 Yīngguó）
+  // 北欧（拼音：爱尔兰 Ài'ěrlán → 爱沙尼亚 Àishāníyà → 冰岛 Bīngdǎo → 丹麦 Dānmài → 芬兰 Fēnlán → 拉脱维亚 Lātuōwéiyà → 立陶宛 Lìtáowǎn → 挪威 Nuówēi → 瑞典 Ruìdiǎn → 英国 Yīngguó）
   { slug: "ireland", name: "爱尔兰", nameEn: "Ireland", code: "IE" },
   { slug: "estonia", name: "爱沙尼亚", nameEn: "Estonia", code: "EE" },
   { slug: "iceland", name: "冰岛", nameEn: "Iceland", code: "IS" },
   { slug: "denmark", name: "丹麦", nameEn: "Denmark", code: "DK" },
   { slug: "finland", name: "芬兰", nameEn: "Finland", code: "FI" },
+  { slug: "latvia", name: "拉脱维亚", nameEn: "Latvia", code: "LV" },
+  { slug: "lithuania", name: "立陶宛", nameEn: "Lithuania", code: "LT" },
   { slug: "norway", name: "挪威", nameEn: "Norway", code: "NO" },
   { slug: "sweden", name: "瑞典", nameEn: "Sweden", code: "SE" },
   { slug: "uk", name: "英国", nameEn: "United Kingdom", code: "UK" },
@@ -261,9 +275,11 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "spain", name: "西班牙", nameEn: "Spain", code: "ES" },
   { slug: "greece", name: "希腊", nameEn: "Greece", code: "GR" },
   { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
-  // 东欧（拼音：波兰 Bōlán → 捷克 Jiékè → 斯洛伐克 Sīluòfákè → 匈牙利 Xiōngyálì）
+  // 东欧（拼音：保加利亚 Bǎojiālìyà → 波兰 Bōlán → 捷克 Jiékè → 罗马尼亚 Luómǎníyà → 斯洛伐克 Sīluòfákè → 匈牙利 Xiōngyálì）
+  { slug: "bulgaria", name: "保加利亚", nameEn: "Bulgaria", code: "BG" },
   { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
   { slug: "czechia", name: "捷克", nameEn: "Czechia", code: "CZ" },
+  { slug: "romania", name: "罗马尼亚", nameEn: "Romania", code: "RO" },
   { slug: "slovakia", name: "斯洛伐克", nameEn: "Slovakia", code: "SK" },
   { slug: "hungary", name: "匈牙利", nameEn: "Hungary", code: "HU" },
   // 北美（拼音：加拿大 Jiānádà → 美国 Měiguó）

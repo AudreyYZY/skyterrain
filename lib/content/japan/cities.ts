@@ -70,9 +70,9 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "hiroshima", nameZh: "广岛", nameEn: "Hiroshima", country: "japan", tier: "major", zone: "jp-chugoku", admin1Zh: "广岛县", admin1En: "Hiroshima Prefecture",
-    lon: 132.4553, lat: 34.3853,
+    lon: 132.4753, lat: 34.3977,
     airport: { iata: "HIJ", nameZh: "广岛机场", nameEn: "Hiroshima", lon: 132.919, lat: 34.436 },
-    source: "广岛站一带 34.3853,132.4553；HIJ 机场：公开资料",
+    source: "广岛站一带 34.3977,132.4753（2026-09-16 改：原坐标 34.3853,132.4553 离广岛站约 1.8 km，check:layout-bearings 查出）；HIJ 机场：公开资料",
   },
   {
     id: "takamatsu", nameZh: "高松", nameEn: "Takamatsu", country: "japan", tier: "notable", zone: "jp-shikoku", admin1Zh: "香川县", admin1En: "Kagawa Prefecture",

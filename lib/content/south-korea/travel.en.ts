@@ -98,7 +98,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The historic core sits on the flat land at the city centre, with the Daereungwon tomb cluster, Cheomseongdae observatory, and Bulguksa Temple and Seokguram Grotto spread across the city and its outskirts.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Pohang Gyeongju Airport (about 35 km away); the KTX Singyeongju station reaches Seoul in about 2 hours. The compact historic core is easily covered on foot or by rented bicycle.",
+      "There is no commercial airport locally; the nearest is Pohang Gyeongju Airport (about 35 km away by road); the KTX Singyeongju station reaches Seoul in about 2 hours. The compact historic core is easily covered on foot or by rented bicycle.",
     culture:
       "As Silla's ancient capital, Gyeongju preserves a dense concentration of royal tombs and Buddhist heritage spanning a thousand years; the \"Gyeongju Historic Areas\" were inscribed on the UNESCO World Heritage List in 2000.",
     seeAndDo:
@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city is built along the Taehwa River, with the Taehwa River National Garden running along its banks, while industrial zones, residential areas, and natural parks occupy separate districts.",
     gettingAround:
-      "Ulsan Airport is about 15 km from the city centre; the KTX reaches Seoul in about 2 hours. The city bus network covers the main areas.",
+      "Ulsan Airport is about 7.1 km in a straight line from the city centre; the KTX reaches Seoul in about 2 hours. The city bus network covers the main areas.",
     culture:
       "Ulsan has a historic association with whaling and whale-watching; Jangsaengpo Whale Culture Village and Whale Museum document this tradition, and the waters off Ulsan remain a site for whale-watching activities today.",
     seeAndDo:
@@ -138,7 +138,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the coast of the Yeosu Peninsula, with the city centre adjoining the former Expo grounds; Dolsan Island and the main part of Yeosu are linked by a bridge.",
     gettingAround:
-      "Yeosu Airport is about 20 km from the city centre; the KTX Yeosu EXPO station reaches Seoul in about 3 hours. Getting around the city and Dolsan Island's coastal sights is best done by car or bus.",
+      "Yeosu Airport is about 10 km in a straight line from the city centre; the KTX Yeosu EXPO station reaches Seoul in about 3 hours. Getting around the city and Dolsan Island's coastal sights is best done by car or bus.",
     culture:
       "Yeosu became known for its marine ecology exhibits following the 2012 Expo's theme, \"The Living Ocean and Coast\"; its cross-sea cable car and musical fountain at night are among the city's signature evening experiences.",
     seeAndDo:
@@ -159,7 +159,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city stretches along Yeongil Bay, with steel-industry zones and residential areas separate from the seaside Yeongildae Park; Homigot Park sits at the easternmost point of the coast, the classic sunrise spot.",
     gettingAround:
-      "Pohang Gyeongju Airport is about 10 km from the city centre; the KTX reaches Seoul in about 2 hours. Getting around the city and coastal sights is best done by car or bus.",
+      "Pohang Gyeongju Airport is about 10 km by road from the city centre; the KTX reaches Seoul in about 2 hours. Getting around the city and coastal sights is best done by car or bus.",
     culture:
       "Pohang grew rapidly from a fishing village into an industrial city in the late 20th century following the establishment of POSCO, making it a representative city of Korea's postwar industrialisation.",
     seeAndDo:
@@ -179,7 +179,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city extends along the east coast, with Gyeongpo Lagoon and Gyeongpo Beach adjoining each other on its north side, and the Anmok coffee street lined with sea-view cafés along the shoreline.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 40 km away, with limited domestic scheduled service); the KTX Gangneung Line reaches Seoul's Cheongnyangni Station in about 2 hours. Getting around the city and Gyeongpo Lagoon is best done by car or bus.",
+      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 40 km in a straight line away, with limited domestic scheduled service); the KTX Gangneung Line reaches Seoul's Cheongnyangni Station in about 2 hours. Getting around the city and Gyeongpo Lagoon is best done by car or bus.",
     culture:
       "The annual Gangneung Danoje Festival, held at Dano, blends shamanic ritual, mask drama, and market events; it was inscribed on the UNESCO Intangible Cultural Heritage list in 2005.",
     seeAndDo:
@@ -203,7 +203,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city sits right on the east coast, with Cheongcho Lake lagoon and Sokcho Port within the city, while the entrance to Seoraksan National Park lies inland, about 10 km to the west.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 20 km away, with limited domestic scheduled service); an express bus from Seoul takes about 2 to 2.5 hours. Getting around the city and to the Seoraksan entrance is best done by bus or hired car.",
+      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 20 km in a straight line away, with limited domestic scheduled service); an express bus from Seoul takes about 2 to 2.5 hours. Getting around the city and to the Seoraksan entrance is best done by bus or hired car.",
     // culture sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
     //   **这一处在 `culture` 段** —— 红线的适用范围不只是 `history` 段，任何段落里可能读作立场表态的句子都算。2026-09-10。
     culture:
@@ -223,11 +223,11 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Chuncheon is the seat of the Gangwon State provincial government, with a population of about 290,000, sitting at the confluence of the Soyang and North Han rivers; it is known for its lake scenery and as the birthplace of dakgalbi (spicy stir-fried chicken).",
     // howItWorks sources: 「江原特别自治道的道厅所在地」与「最近为原州机场（约 65 公里）」**均核实属实**：道厅一直在春川；原州机场仍由真气航空运营春川—原州—济州航线，路网测算约 64.3 公里，比襄阳（约 85 公里）、金浦（约 90 公里）近。2026-09-12 核。
     howItWorks:
-      "Chuncheon is the seat of Gangwon State, covering about 1,167 km² with about 290,000 people, governed by an elected mayor, with the provincial government and assembly in town. The city lies in the valley where the Soyang and Bukhan rivers meet, the Soyang and Uiam dams damming them into a chain of lakes that ring the town, which is why it is called the lake city; dak-galbi, invented by a pork butcher here in the 1960s, and buckwheat mak-guksu are its two dishes; Nami Island lies about 25 km south-west and belongs administratively to Gapyeong county in Gyeonggi Province, and Legoland Korea opened in 2022 on an island in Uiam lake. The Gyeongchun line and the ITX-Cheongchun run direct from Seoul in about an hour, and Kangwon National University and Hallym University are in town. Newcomers most often go wrong by taking Nami Island for a Chuncheon sight, when it lies in a county of the neighbouring province and is merely easiest to reach from here.",
+      "Chuncheon is the seat of Gangwon State, covering about 1,167 km² with about 290,000 people, governed by an elected mayor, with the provincial government and assembly in town. The city lies in the valley where the Soyang and Bukhan rivers meet, the Soyang and Uiam dams damming them into a chain of lakes that ring the town, which is why it is called the lake city; dak-galbi, invented by a pork butcher here in the 1960s, and buckwheat mak-guksu are its two dishes; Nami Island lies about 21 km in a straight line south-west and belongs administratively to Gapyeong county in Gyeonggi Province, and Legoland Korea opened in 2022 on an island in Uiam lake. The Gyeongchun line and the ITX-Cheongchun run direct from Seoul in about an hour, and Kangwon National University and Hallym University are in town. Newcomers most often go wrong by taking Nami Island for a Chuncheon sight, when it lies in a county of the neighbouring province and is merely easiest to reach from here.",
     layout:
       "The city is surrounded by bodies of water including Soyang Lake and Uiam Lake, with the Myeongdong shopping district, Nami Island, and the Soyang Dam lying in different directions from the city centre.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Wonju Airport (about 65 km away); Seoul's subway Gyeongchun Line runs directly to Chuncheon Station in about 1 to 1.5 hours, making it one of the most accessible cities near Seoul.",
+      "There is no commercial airport locally; the nearest is Wonju Airport (about 70 km away by road); Seoul's subway Gyeongchun Line runs directly to Chuncheon Station in about 1 to 1.5 hours, making it one of the most accessible cities near Seoul.",
     culture:
       "Chuncheon is known internationally as the filming location of the Korean drama \"Winter Sonata\" on Nami Island, and is also the birthplace of dakgalbi; the city's Dakgalbi Street is a signature local food experience.",
     seeAndDo:
@@ -271,7 +271,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The Jeonju Hanok Village occupies one corner of the city centre, in striking contrast with the modern commercial districts around it; Jeondong Catholic Church and Gyeonggijeon Shrine sit at the village's edge.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 83.4 公里；原文短于直线、不可能成立，已改。⚠️ 群山机场（KUV）离全州更近（约 50 公里），原文很可能把两座机场弄混；本轮只改被点名那座的距离。
     gettingAround:
-      "There is no commercial airport locally; the nearest is Gwangju Airport (about 90 km away); the KTX Jeonju station reaches Seoul in about 2 hours, and long-distance buses also run directly into the city. The Hanok Village area is walkable.",
+      "There is no commercial airport locally; the nearest is Gwangju Airport (about 90 km in a straight line away); the KTX Jeonju station reaches Seoul in about 2 hours, and long-distance buses also run directly into the city. The Hanok Village area is walkable.",
     culture:
       "Jeonju is recognised by UNESCO as a \"City of Gastronomy\"; Jeonju bibimbap originated here, and the Hanok Village is dense with traditional teahouses and craft workshops.",
     seeAndDo:
@@ -366,7 +366,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     howItWorks:
       "Daejeon is a 'Metropolitan City', ranking with the provinces and governed by an elected mayor, divided into five autonomous districts, each with its own head and council; with about 1.44 million people in 2026 it is Korea's fifth city. Its weight is divided three ways: the old centre around Daejeon Station, the new centre at Dunsan — the Government Complex, city hall and Hanbat Arboretum — and the Daedeok research complex and KAIST to the north, whose twenty-odd government institutes let the city call itself the capital of science. One metro line strings Daejeon Station, Dunsan and Yuseong hot springs together; the KTX reaches Seoul in about 50 minutes, and Daejeon is the hub of the national rail network. Addresses use road name and building number, and locals speak of 'the old town', 'Dunsan' and 'Yuseong'. Newcomers most often go wrong by taking the station area for downtown, when the administrative and commercial centre has long since moved to Dunsan.",
     layout:
-      "The city sits in a basin crossed by the Gapcheon and Daejeoncheon streams: the old centre lies around Daejeon Station (Sungsimdang, the central market), the new centre at Dunsan (the government complex, Hanbat Arboretum, the city art museum), the Expo park and the National Science Museum across the Gapcheon north of Dunsan, and the Daedeok complex and KAIST beyond; Yuseong hot springs lie in the west and Gyeryongsan about 15 km west of the city. Seodaejeon Station (Honam line) is in the south-west.",
+      "The city sits in a basin crossed by the Gapcheon and Daejeoncheon streams: the old centre lies around Daejeon Station (Sungsimdang, the central market), the new centre at Dunsan (the government complex, Hanbat Arboretum, the city art museum), the Expo park and the National Science Museum across the Gapcheon north of Dunsan, and the Daedeok complex and KAIST beyond; Yuseong hot springs lie in the west and Gyeryongsan about 15 km west of the city. Seodaejeon Station (Honam line) is to the south.",
     gettingAround:
       "Daejeon has no airport with scheduled flights; the nearest are Cheongju International (about 40 km, about 1 hour by bus) and Incheon International (about 3 hours by direct airport bus). KTX trains reach Daejeon in about 50 minutes from Seoul and about 1.5 hours from Busan — the hub of Korea's rail network. A single metro line links Daejeon Station, the centre and Yuseong, with frequent buses. Gyeryongsan is about 40 minutes by bus. The climate is temperate monsoon with humid summers and cold winters.",
     culture:

@@ -54,7 +54,8 @@ for (const [kind, path] of SOURCES) {
   // 去注释（注释里的 sources 留痕不是对外文案，不进样本池）
   const body = raw.replace(/^\s*\/\/.*$/gm, "");
   // 逐个条目块，好让样本能报出「哪一条」
-  const entryRe = /^\s{2,4}"?([a-z0-9][a-z0-9-]*)"?:\s*\{\s*$/gm;
+  // 只认两格缩进的条目键 —— 航线解说里四格缩进的 study: { / travel: { 是字段不是条目（2026-09-14 修：原来抽到的航线句子都标成 route/study）
+  const entryRe = /^ {2}"?([a-z0-9][a-z0-9-]*)"?:\s*\{\s*$/gm;
   const marks: { id: string; at: number }[] = [];
   for (const m of body.matchAll(entryRe)) marks.push({ id: m[1]!, at: m.index! });
   for (let i = 0; i < marks.length; i++) {

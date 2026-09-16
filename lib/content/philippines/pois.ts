@@ -14,12 +14,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "麦克坦岛海滩度假区", nameEn: "Mactan Island Beach Resorts", lon: 123.9700, lat: 10.2600, kind: "nature" },
     { nameZh: "宿务IT商业园区", nameEn: "Cebu IT Park", lon: 123.9057, lat: 10.3306, kind: "district" },
   ],
-  "davao-city": [
-    { nameZh: "阿波山国家公园入口", nameEn: "Mount Apo National Park Entrance", lon: 125.30, lat: 7.00, kind: "nature" },
-    { nameZh: "达沃鳄鱼公园", nameEn: "Davao Crocodile Park", lon: 125.5772, lat: 7.1275, kind: "landmark" },
-    { nameZh: "人民公园", nameEn: "People's Park", lon: 125.6100, lat: 7.0736, kind: "landmark" },
-    { nameZh: "埃甸自然公园", nameEn: "Eden Nature Park", lon: 125.4494, lat: 7.1656, kind: "nature" },
-  ],
   baguio: [
     { nameZh: "碧瑶大教堂", nameEn: "Baguio Cathedral", lon: 120.5943, lat: 16.4128, kind: "landmark" },
     { nameZh: "彩虹公园", nameEn: "Burnham Park", lon: 120.5931, lat: 16.4113, kind: "landmark" },
@@ -65,5 +59,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "横甘街", nameEn: "Calle Crisologo", lon: 120.3872, lat: 17.5747, kind: "district" },
     { nameZh: "维甘大教堂", nameEn: "Vigan Cathedral", lon: 120.3878, lat: 17.5747, kind: "landmark" },
     { nameZh: "西索克南遗产村", nameEn: "Syquia Mansion", lon: 120.3861, lat: 17.5731, kind: "landmark" },
+  ],
+  "iloilo-city": [
+    { nameZh: "卡列雷亚尔老街", nameEn: "Calle Real", lon: 122.5699009, lat: 10.6956101, kind: "district" },
+    { nameZh: "哈罗主教座堂与钟楼", nameEn: "Jaro Cathedral and Belfry", lon: 122.556161, lat: 10.7235033, kind: "landmark" },
+    { nameZh: "莫洛教堂", nameEn: "Molo Church", lon: 122.5448377, lat: 10.6974422, kind: "landmark" },
+    { nameZh: "伊洛伊洛河滨步道", nameEn: "Iloilo River Esplanade", lon: 122.5550093, lat: 10.7029972, kind: "nature" },
+    { nameZh: "伊洛伊洛博物馆", nameEn: "Museo Iloilo", lon: 122.5685065, lat: 10.7027845, kind: "landmark" },
+    { nameZh: "圣佩德罗堡", nameEn: "Fort San Pedro", lon: 122.580063, lat: 10.687971, kind: "landmark" },
+  ],
+  banaue: [
+    { nameZh: "巴纳威主观景台", nameEn: "Banaue main viewpoint", lon: 121.0573118, lat: 16.9354701, kind: "nature" },
+    { nameZh: "巴塔德梯田", nameEn: "Batad Rice Terraces", lon: 121.1378218, lat: 16.9314274, kind: "nature" },
+    { nameZh: "邦阿安梯田与村落", nameEn: "Bangaan Rice Terraces and village", lon: 121.1268156, lat: 16.9106647, kind: "nature" },
+    { nameZh: "塔皮亚瀑布", nameEn: "Tappiya Falls", lon: 121.1365037, lat: 16.9391695, kind: "nature" },
+    { nameZh: "巴纳威博物馆", nameEn: "Banaue Museum", lon: 121.0602614, lat: 16.9118542, kind: "landmark" },
   ],
 };

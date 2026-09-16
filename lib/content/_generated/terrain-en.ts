@@ -43,6 +43,14 @@ import { TERRAIN_EN as slovenia } from "@/lib/content/slovenia/terrain.en";
 import { TERRAIN_EN as malta } from "@/lib/content/malta/terrain.en";
 import { TERRAIN_EN as estonia } from "@/lib/content/estonia/terrain.en";
 import { TERRAIN_EN as chile } from "@/lib/content/chile/terrain.en";
+import { TERRAIN_EN as latvia } from "@/lib/content/latvia/terrain.en";
+import { TERRAIN_EN as romania } from "@/lib/content/romania/terrain.en";
+import { TERRAIN_EN as bulgaria } from "@/lib/content/bulgaria/terrain.en";
+import { TERRAIN_EN as uzbekistan } from "@/lib/content/uzbekistan/terrain.en";
+import { TERRAIN_EN as lithuania } from "@/lib/content/lithuania/terrain.en";
+import { TERRAIN_EN as kyrgyzstan } from "@/lib/content/kyrgyzstan/terrain.en";
+import { TERRAIN_EN as sri_lanka } from "@/lib/content/sri-lanka/terrain.en";
+import { TERRAIN_EN as brunei } from "@/lib/content/brunei/terrain.en";
 
 export const ALL_TERRAIN_EN: Record<string, TerrainLesson> = {
   ...china,
@@ -88,4 +96,12 @@ export const ALL_TERRAIN_EN: Record<string, TerrainLesson> = {
   ...malta,
   ...estonia,
   ...chile,
+  ...latvia,
+  ...romania,
+  ...bulgaria,
+  ...uzbekistan,
+  ...lithuania,
+  ...kyrgyzstan,
+  ...sri_lanka,
+  ...brunei,
 };

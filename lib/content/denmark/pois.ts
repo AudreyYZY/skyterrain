@@ -61,4 +61,22 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "乐高乐园", nameEn: "Legoland Billund", lon: 9.1258, lat: 55.7325, kind: "landmark" },
     { nameZh: "乐高之家", nameEn: "LEGO House", lon: 9.1207, lat: 55.7311, kind: "landmark" },
   ],
+  vejle: [
+    { nameZh: "耶灵古迹（世界遗产）", nameEn: "Jelling Mounds, Runic Stones and Church", lon: 9.42, lat: 55.7564, kind: "landmark" },
+    { nameZh: "王者耶灵体验中心", nameEn: "Kongernes Jelling", lon: 9.41816, lat: 55.75687, kind: "landmark" },
+    { nameZh: "格赖斯河谷", nameEn: "Grejsdalen", lon: 9.53263, lat: 55.73133, kind: "nature" },
+    { nameZh: "波浪大厦", nameEn: "Bølgen (The Wave)", lon: 9.55644, lat: 55.70951, kind: "landmark" },
+    { nameZh: "瓦埃勒峡湾大桥", nameEn: "Vejle Fjord Bridge", lon: 9.57277, lat: 55.69942, kind: "landmark" },
+    { nameZh: "蒙克山", nameEn: "Munkebjerg", lon: 9.61482, lat: 55.68687, kind: "nature" },
+  ],
+  stege: [
+    { nameZh: "磨坊门（中世纪城门）", nameEn: "Mølleporten", lon: 12.2893, lat: 54.9872, kind: "landmark" },
+    { nameZh: "斯泰厄教堂", nameEn: "Stege Church", lon: 12.28424, lat: 54.98415, kind: "landmark" },
+    { nameZh: "默恩岛白垩崖（世界遗产）", nameEn: "Møns Klint", lon: 12.54274, lat: 54.98104, kind: "nature" },
+    { nameZh: "默恩崖地质中心", nameEn: "GeoCenter Møns Klint", lon: 12.54834, lat: 54.96606, kind: "landmark" },
+    { nameZh: "利塞伦德庄园与园林", nameEn: "Liselund", lon: 12.51898, lat: 54.99986, kind: "landmark" },
+    { nameZh: "埃尔梅伦德教堂", nameEn: "Elmelunde Church", lon: 12.40077, lat: 54.99507, kind: "landmark" },
+    { nameZh: "克林霍尔姆港", nameEn: "Klintholm Havn", lon: 12.46909, lat: 54.95402, kind: "district" },
+    { nameZh: "尼奥兹岛", nameEn: "Nyord", lon: 12.19549, lat: 55.04125, kind: "nature" },
+  ],
 };

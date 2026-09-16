@@ -68,4 +68,15 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "IVL", nameZh: "伊瓦洛机场", nameEn: "Ivalo Airport", lon: 27.4053, lat: 68.6072 },
     source: "伊纳里村中心 68.9061,27.0272；IVL 机场（距市区约40km）：公开资料",
   },
+  {
+    id: "rauma", nameZh: "劳马", nameEn: "Rauma", country: "finland", tier: "notable", zone: "fi-lounais-suomi", admin1Zh: "萨塔昆塔区", admin1En: "Satakunta",
+    lon: 21.5132, lat: 61.1280,
+    source: "劳马老城（集市广场一带）61.1280,21.5132（OSM）；本地没有定期航班的机场，不填 airport；最近有定期航班的是波里机场 POR，直线约 40 km、国家购买服务飞赫尔辛基（Finavia 2026-06，1 级）；截至 2026-09 无客运火车（已有城市补充批，2026-09-16）。注：挪威地形条目里的「劳马河」是 Rauma 河，与本市无关",
+  },
+  {
+    id: "vaasa", nameZh: "瓦萨", nameEn: "Vaasa", country: "finland", tier: "notable", zone: "fi-lansi-suomi", admin1Zh: "博滕区", admin1En: "Ostrobothnia",
+    lon: 21.6159, lat: 63.0958,
+    airport: { iata: "VAA", nameZh: "瓦萨机场", nameEn: "Vaasa Airport", lon: 21.7625, lat: 63.0502 },
+    source: "瓦萨集市广场 63.0958,21.6159（OSM）；VAA 机场 OurAirports 63.0502,21.7625，距市中心直线约 9 km、有定期航班；克瓦尔肯群岛地形条目的门户（遗产区主体在邻市科尔斯霍尔姆）（已有城市补充批，2026-09-16）。注：瑞典条目的「瓦萨沉船博物馆」是斯德哥尔摩的 Vasa 号，与本市无关",
+  },
 ];

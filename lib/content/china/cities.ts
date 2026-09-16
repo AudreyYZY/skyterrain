@@ -716,9 +716,9 @@ export const CITIES: CityEntry[] = [
   },
   {
     id: "xuzhou", nameZh: "徐州", nameEn: "Xuzhou", country: "china", tier: "major", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
-    lon: 117.2830, lat: 34.2050,
+    lon: 117.1810, lat: 34.2660,
     airport: { iata: "XUZ", nameZh: "徐州观音国际机场", nameEn: "Xuzhou Guanyin Int'l", lon: 117.5553, lat: 34.0592 },
-    source: "徐州市区 34.2050,117.2830（zh.wikipedia）；XUZ 机场：zh.wikipedia（睢宁县，距市区约 30 公里）",
+    source: "徐州市区 34.2660,117.1810（彭城广场，OSM Nominatim；2026-09-15 改：原坐标 34.2050,117.2830 是东面新城区的市政府一带，与正文「老城在鼓楼、云龙两区」「徐州东站在城东」的参照点不符）；XUZ 机场：zh.wikipedia（睢宁县，距彭城广场直线约 41 公里）",
   },
   {
     id: "danzhou", nameZh: "儋州", nameEn: "Danzhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",
@@ -931,5 +931,116 @@ export const CITIES: CityEntry[] = [
     lon: 130.3180, lat: 46.8000,
     airport: { iata: "JMU", nameZh: "佳木斯松江国际机场", nameEn: "Jiamusi Songjiang Int'l", lon: 130.4643, lat: 46.8428 },
     source: "佳木斯市区 46.80,130.318（zh.wikipedia）；JMU 机场 OurAirports 46.8428,130.4643，原佳木斯东郊国际机场、2026-01 更名（民航函〔2025〕1013 号），距市中心直线约 12 km",
+  },
+  {
+    id: "wuzhen", nameZh: "乌镇", nameEn: "Wuzhen", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 120.4819, lat: 30.7465,
+    source: "乌镇镇 30.7465,120.4819（OSM place=town）；属嘉兴市代管县级市桐乡市；嘉兴南湖机场 JNH 直线约 18 km（在嘉兴市区，2025-12-26 通航，不在本市）、杭州萧山 HGH 直线约 57 km，按 OurAirports 算；机场不在本县级市境内，条目不写机场字段（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "zhouzhuang", nameZh: "周庄", nameEn: "Zhouzhuang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 120.8456, lat: 31.1153,
+    source: "周庄古镇景区 31.1153,120.8456（OSM）；属苏州市代管县级市昆山市；最近高铁站苏州南站（吴江区黎里镇，沪苏湖高铁 2024-12-26 开通）直线约 7 km（昆山市政府网称 7.6 km）；上海虹桥 SHA 直线约 47 km；条目不写机场字段（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "yixian", nameZh: "黟县（宏村·西递）", nameEn: "Yi County (Hongcun & Xidi)", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "安徽省", admin1En: "Anhui",
+    lon: 117.9847, lat: 30.0048,
+    source: "宏村 30.0048,117.9847（OSM place=village）；西递村 29.9061,117.9913，两村直线约 11 km；属黄山市黟县；黄山屯溪国际机场 TXN 在屯溪区，距宏村直线约 40 km、距西递约 32 km（按 OurAirports 算），不在本县，条目不写机场字段；黟县东站（2023-12-27 开通）距西递直线约 5 km、宏村约 14 km（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "yangshuo", nameZh: "阳朔", nameEn: "Yangshuo", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
+    lon: 110.4897, lat: 24.7782,
+    source: "阳朔西街 24.7782,110.4897（OSM）；属桂林市阳朔县，县城阳朔镇；桂林两江国际机场 KWL 直线约 67 km（在临桂区，不在本县，条目不写机场字段）；阳朔站（贵广高铁，OSM 24.9636,110.5634）距县城直线约 22 km（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "zhenyuan", nameZh: "镇远", nameEn: "Zhenyuan", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
+    lon: 108.4279, lat: 27.0508,
+    source: "镇远古城 27.0508,108.4279（OSM）；属黔东南州镇远县，县城㵲阳镇；凯里黄平机场 KJH 直线约 44 km（在黄平县，不在本县，条目不写机场字段）；镇远站（沪昆铁路普速，OSM 27.0402,108.4074）距古城直线约 2 km，沪昆高铁不设镇远站（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "xijiang", nameZh: "西江千户苗寨", nameEn: "Xijiang Miao Village", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
+    lon: 108.1702, lat: 26.4956,
+    source: "西江千户苗寨 26.4956,108.1702（OSM）；属黔东南州雷山县西江镇；凯里黄平机场 KJH 直线约 56 km、凯里南站（沪昆高铁）直线约 29 km；条目不写机场字段（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "jiuzhaigou", nameZh: "九寨沟", nameEn: "Jiuzhaigou", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 103.9177, lat: 33.2681,
+    source: "九寨沟风景名胜区沟口 33.2681,103.9177（OSM 景区点）；属阿坝藏族羌族自治州九寨沟县漳扎镇；九寨黄龙机场 JZH 在松潘县，距沟口直线约 51 km（按 OurAirports 算），不在本县，条目不写机场字段；川青铁路黄龙九寨站（松潘县，2024-08-30 开通）距沟口直线约 64 km（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "yuanyang", nameZh: "元阳（哈尼梯田）", nameEn: "Yuanyang (Hani Rice Terraces)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
+    lon: 102.7446, lat: 23.1588,
+    source: "新街镇 23.1588,102.7446（OSM）—— 元阳老县城、梯田游客落脚地；县政府驻南沙镇（OSM 23.2225,102.8337，两地直线约 11.5 km）；属红河哈尼族彝族自治州元阳县；县内没有民用机场，昆明长水 KMG 直线约 218 km；红河蒙自机场 2026-07-30 完成飞行校验、截至 2026-09 未通航（检索摘要，3 级）；无铁路，建水站直线约 57 km（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "jianshui", nameZh: "建水", nameEn: "Jianshui", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
+    lon: 102.8295, lat: 23.6192,
+    source: "建水古城朝阳楼（东门）23.6192,102.8295（OSM）；属红河州建水县，县城临安镇；县内没有民用机场，昆明长水 KMG 直线约 166 km；建水站（OSM 23.6611,102.8710）直线约 6 km（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "langzhong", nameZh: "阆中", nameEn: "Langzhong", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 105.9651, lat: 31.5774,
+    airport: { iata: "LZG", nameZh: "阆中古城机场", nameEn: "Langzhong Gucheng Airport", lon: 106.0344, lat: 31.5019 },
+    source: "阆中古城 31.5774,105.9651（OSM）；南充市代管县级市阆中市；LZG 机场 OurAirports 31.5019,106.0344，距古城直线约 11 km，2023-12-17 通航（四川在线，2 级）；阆中站（兰渝铁路，OSM 31.5601,105.9535）直线约 2 km；南充高坪 NAO 直线约 89 km（Tier 3 名镇批 1，2026-09-15）",
+  },
+  {
+    id: "tongli", nameZh: "同里", nameEn: "Tongli", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 120.7143, lat: 31.1592,
+    source: "同里古镇游览区 31.1592,120.7143（OSM）；苏州市吴江区同里镇，由吴江经济技术开发区管辖（吴江区政府网《同里镇》2024-04-18，1 级）；苏南硕放 WUX 直线约 46 km、上海虹桥 SHA 约 59 km（按 OurAirports 算），机场不在吴江区，条目不写机场字段；苏州轨道交通 4 号线同里站 OSM 31.1396,120.6957 直线约 2.8 km（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "xitang", nameZh: "西塘", nameEn: "Xitang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 120.8898, lat: 30.9461,
+    source: "西塘古镇 30.9461,120.8898（OSM）；嘉兴市嘉善县西塘镇；嘉兴南湖 JNH 直线约 35 km（2025-12-26 通航）、上海虹桥 SHA 约 51 km（按 OurAirports 算），机场不在本县，条目不写机场字段；嘉善站（沪昆铁路）OSM 30.8515,120.9123 直线约 10.7 km、嘉善南站（沪杭高铁）约 17.8 km（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "nanxun", nameZh: "南浔", nameEn: "Nanxun", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 120.4240, lat: 30.8720,
+    source: "南浔古镇景区 30.8720,120.4240（OSM）；湖州市南浔区南浔镇（区政府驻地）；嘉兴南湖 JNH 直线约 30 km、苏南硕放 WUX 约 70 km、杭州萧山 HGH 约 71 km（按 OurAirports 算），JNH 在嘉兴市，条目不写机场字段；湖州南浔站（沪苏湖高铁，2024-12-26 开通）Wikidata 30.8292,120.4032 直线约 5.2 km；湖州市区直线约 32 km（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "huangyao", nameZh: "黄姚", nameEn: "Huangyao", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
+    lon: 111.2012, lat: 24.2511,
+    source: "黄姚古镇景区中心 24.2511,111.2012（OSM）；贺州市昭平县黄姚镇；梧州西江 WUZ 直线约 95 km、桂林两江 KWL 约 159 km（按 OurAirports 算），县内没有民用机场，条目不写机场字段；钟山西站（贵广高铁）OSM 24.5552,111.3268 直线约 36 km、贺州站约 41 km；到昭平县政府、贺州市政府直线均约 40 km（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "wuyuan", nameZh: "婺源", nameEn: "Wuyuan", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江西省", admin1En: "Jiangxi",
+    lon: 117.8558, lat: 29.2507,
+    source: "婺源县城 29.2507,117.8558（OSM place）；上饶市婺源县；古村分散在县境东线与北线，锚点放县城；黄山屯溪 TXN 直线约 66 km、景德镇罗家 JDZ 约 67 km、上饶三清山 SQD 约 97 km（按 OurAirports 算），县内没有民用机场，条目不写机场字段；婺源站（合福高铁）OSM 29.2421,117.8724 直线约 1.9 km（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "yongjia", nameZh: "永嘉", nameEn: "Yongjia", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 120.7294, lat: 28.3416,
+    source: "锚点岩头镇 28.3416,120.7294（OSM place=town；楠溪江古村集中处，县城北城街道在瓯江北岸、不是游客去处）；温州市永嘉县；温州龙湾 WNZ 距岩头镇直线约 49 km、距县城约 32 km（按 OurAirports 算），县内没有民用机场，条目不写机场字段；温州北站 OSM 28.0723,120.6912 在县境南部，距县城约 9.6 km、距岩头镇约 30 km（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "luguhu", nameZh: "泸沽湖", nameEn: "Lugu Lake", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
+    lon: 100.7896, lat: 27.7063,
+    source: "泸沽湖湖面 27.7063,100.7896（OSM relation 13495 中心）；湖跨云南丽江市宁蒗彝族自治县永宁镇与四川凉山彝族自治州盐源县泸沽湖镇（丽江市政府网 / 凉山州政府网管理局页，1 级），admin1 取游客集散地大洛水与机场所在的云南侧；宁蒗泸沽湖机场 NLH 2025 年全年起降 96 架次（民航局《2025年全国民用运输机场吞吐量排名》，1 级），不能算有定期航班，条目不写机场字段；丽江三义 LJG 距大洛水直线约 123 km、西昌青山 XIC 距湖心约 143 km（按坐标算）（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "wulong", nameZh: "武隆", nameEn: "Wulong", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "重庆市", admin1En: "Chongqing",
+    lon: 107.7863, lat: 29.4399,
+    source: "锚点天生三桥 29.4399,107.7863（OSM；游客最集中的景区）；重庆市武隆区；重庆仙女山机场 CQW 距天生三桥直线约 9.4 km，但 2025 年全年起降 208 架次（民航局《2025年全国民用运输机场吞吐量排名》，1 级），不能算有定期航班，条目不写机场字段；重庆江北 CKG 直线约 115 km（按坐标算）；渝怀铁路武隆站 Wikidata 29.3299,107.7682（Tier 3 名镇批 2，2026-09-15）",
+  },
+  {
+    id: "emeishan", nameZh: "峨眉山", nameEn: "Emeishan (Mount Emei)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 103.4822, lat: 29.6017,
+    source: "峨眉山市区 29.6017,103.4822（OSM）；乐山市代管的县级市；市境无民用机场，成都双流 CTU 直线约 115 km；乐山机场 2026-07 完成验证试飞、民航局 2025 年排名无乐山、截至 2026-09 未见正式通航，不填 airport（Tier 3 名镇批 3，2026-09-16）",
+  },
+  {
+    id: "dengfeng", nameZh: "登封", nameEn: "Dengfeng", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 113.0445, lat: 34.4552,
+    source: "登封市区 34.4552,113.0445（OSM）；郑州市代管的县级市；无民用机场，郑州新郑 CGO 直线约 74 km、洛阳 LYA 约 68 km，不填 airport；UNESCO 1305（2010）8 处 11 项坐标取 UNESCO（Tier 3 名镇批 3，2026-09-16）",
+  },
+  {
+    id: "qiandaohu", nameZh: "千岛湖（淳安）", nameEn: "Qiandao Lake (Chun'an)", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 119.0369, lat: 29.6121,
+    source: "淳安县政府（千岛湖镇）29.6121,119.0369（OSM）；杭州市淳安县；无民用机场，衢州 JUZ 直线约 73 km、黄山屯溪 TXN 约 77 km、杭州萧山 HGH 约 151 km，不填 airport（Tier 3 名镇批 3，2026-09-16）",
+  },
+  {
+    id: "nanyue", nameZh: "南岳（衡山）", nameEn: "Nanyue (Mount Heng)", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 112.7321, lat: 27.2352,
+    source: "南岳区政府 27.2352,112.7321（OSM）；衡阳市南岳区（与湖南省南岳管理局一套人马，区政府网 1 级）；无机场，衡阳南岳机场 HNY 在衡阳市区以南、直线约 58 km，不填 airport；不用 hengshan 作 id（衡山县是另一个县）（Tier 3 名镇批 3，2026-09-16）",
   },
 ];

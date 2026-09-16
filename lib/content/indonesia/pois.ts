@@ -66,4 +66,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "利基营地（红毛猩猩喂食站）", nameEn: "Camp Leakey", lon: 111.9333, lat: -2.7167, kind: "nature" },
     { nameZh: "塞孔耶尔河船宿码头", nameEn: "Sekonyer River Dock", lon: 111.8500, lat: -2.7500, kind: "transport" },
   ],
+  semarang: [
+    { nameZh: "三宝垄老城", nameEn: "Semarang Old Town", lon: 110.4268983, lat: -6.96723, kind: "district" },
+    { nameZh: "布伦杜克教堂", nameEn: "Blenduk Church", lon: 110.4274633, lat: -6.9681633, kind: "landmark" },
+    { nameZh: "千门大楼", nameEn: "Lawang Sewu", lon: 110.4107909, lat: -6.9839786, kind: "landmark" },
+    { nameZh: "三保洞", nameEn: "Sam Poo Kong", lon: 110.3983842, lat: -6.9958722, kind: "landmark" },
+    { nameZh: "中爪哇大清真寺", nameEn: "Great Mosque of Central Java", lon: 110.4455923, lat: -6.9836458, kind: "landmark" },
+    { nameZh: "五岔路广场", nameEn: "Simpang Lima", lon: 110.4235821, lat: -6.9893202, kind: "district" },
+    { nameZh: "丹绒马斯港", nameEn: "Tanjung Emas Port", lon: 110.4282515, lat: -6.9464685, kind: "district" },
+  ],
+  mataram: [
+    { nameZh: "安佩南老城", nameEn: "Ampenan Old Town", lon: 116.0773385, lat: -8.5717135, kind: "district" },
+    { nameZh: "梅鲁庙", nameEn: "Pura Meru", lon: 116.1312306, lat: -8.5876944, kind: "landmark" },
+    { nameZh: "马尤拉水宫", nameEn: "Taman Mayura", lon: 116.1331976, lat: -8.586649, kind: "landmark" },
+    { nameZh: "西努省伊斯兰中心", nameEn: "NTB Islamic Center", lon: 116.1008337, lat: -8.580264, kind: "landmark" },
+    { nameZh: "洛昂巴洛克海滩", nameEn: "Loang Baloq Beach", lon: 116.0740182, lat: -8.6028864, kind: "nature" },
+    { nameZh: "沙洋沙洋艺术市场", nameEn: "Sayang-Sayang Art Market", lon: 116.1270748, lat: -8.5659896, kind: "district" },
+  ],
 };

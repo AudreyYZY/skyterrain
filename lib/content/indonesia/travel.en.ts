@@ -96,7 +96,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The old town preserves historic Dutch colonial and Arab/Chinese quarter streetscapes, and the city sits on the Madura Strait as a key eastern Java port hub; the Bromo Tengger Semeru National Park lies about three hours south of the city.",
     // gettingAround sources: 行政归属：机场在西多阿佐县 Sedati 区，不在泗水市内（3 级）。距离：注册表坐标算出直线 14.1 公里、正南，公路约 20 公里合理，故保留 20。
     gettingAround:
-      "Juanda International Airport (SUB) lies in Sidoarjo Regency south of Surabaya, outside the city's own boundary, about 20 km from the centre; Surabaya is the eastern rail hub of Java, with trains to Yogyakarta, Jakarta and other cities; taxis and ride-hailing apps are the main way to get around town.",
+      "Juanda International Airport (SUB) lies in Sidoarjo Regency south of Surabaya, outside the city's own boundary, about 20 km by road from the centre; Surabaya is the eastern rail hub of Java, with trains to Yogyakarta, Jakarta and other cities; taxis and ride-hailing apps are the main way to get around town.",
     culture:
       "The official language is Indonesian, with a direct-spoken local dialect of Javanese common in Surabaya. The city is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; dress relatively modestly in public. Tipping isn't expected.",
     seeAndDo:
@@ -117,7 +117,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The old town centre preserves substantial Dutch-era Art Deco architecture, with Jalan Asia Afrika, home to the Asian-African Conference Museum, forming the historic core; the city is ringed by volcanoes and tea plantations, with Mount Tangkuban Perahu to the north and Mount Kawah Putih to the south being popular day trips.",
     // gettingAround sources: BDO：印尼交通部宣布自 2026-09-17 起恢复喷气机商业航班（跑道翻修与救援等级升级完成），国际航线目标 2026 年 10 月（2 级，2026-09-12 核）。KJT 截至 2026-06 只有 Scoot 每周两班新加坡航线。⚠️ 本条写的是「已宣布自某日恢复」，**恢复本身尚未发生**，下一轮回来确认是否如期。
     gettingAround:
-      "Husein Sastranegara Airport (BDO) is about 4 km from the city centre; since October 2023 most jet services have moved to West Java International Airport (KJT), and Indonesia's transport ministry has announced that BDO resumes commercial jet flights from 17 September 2026, so check the airport's latest notices for the routes actually operating; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
+      "Husein Sastranegara Airport (BDO) is about 5 km in a straight line from the city centre; since October 2023 most jet services have moved to West Java International Airport (KJT), and Indonesia's transport ministry has announced that BDO resumes commercial jet flights from 17 September 2026, so check the airport's latest notices for the routes actually operating; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
     culture:
       "The official language is Indonesian, with Sundanese spoken locally. Bandung hosted the 1955 Bandung Conference, commemorated at the Asian-African Conference Museum; the city's cool climate lends itself to relatively casual dress, and Sundanese cuisine is a local specialty. Tipping isn't expected.",
     seeAndDo:
@@ -155,7 +155,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along the Makassar Strait; the old town around Fort Rotterdam preserves Dutch and Portuguese-era colonial buildings, and Losari Beach promenade is a popular spot for evening sunsets; Tana Toraja lies about 8–9 hours north by road.",
     gettingAround:
-      "Sultan Hasanuddin International Airport (UPG) is about 21 km from the city centre and is Sulawesi's main aviation hub; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town, and reaching Tana Toraja usually means a long-distance bus or hired car.",
+      "Sultan Hasanuddin International Airport (UPG) is about 21 km by road from the city centre and is Sulawesi's main aviation hub; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town, and reaching Tana Toraja usually means a long-distance bus or hired car.",
     culture:
       "The official language is Indonesian, with Makassarese and Buginese spoken locally. Makassar is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; the local Bugis people have a long historical tradition of traditional wooden shipbuilding (the pinisi schooner). Tipping isn't expected.",
     seeAndDo:
@@ -173,7 +173,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town sits along a harbour, its main street lined with hotels, dive shops and restaurants; visiting Komodo National Park requires a boat from the harbour, whether as a single-day trip or a multi-day island-hopping cruise.",
     gettingAround:
-      "Komodo Airport (LBJ) is about 2 km from the town centre and is western Flores' main air gateway; most of the town is walkable, and visiting Komodo National Park requires booking a boat through the harbour.",
+      "Komodo Airport (LBJ) is less than 2 km in a straight line from the town centre and is western Flores' main air gateway; most of the town is walkable, and visiting Komodo National Park requires booking a boat through the harbour.",
     culture:
       "The official language is Indonesian. Flores has historically been shaped by Portuguese and Dutch Catholic missionary activity and is one of the few Catholic-majority regions in Indonesia, differing from the country's overall Muslim-majority makeup, which also means a broader range of dining options here. Bring sunscreen and motion-sickness medication for liveaboard island-hopping trips.",
     seeAndDo:
@@ -182,9 +182,10 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The dry season (April–October) brings calmer seas and is the best time for island-hopping and diving; the wet season (November–March) occasionally brings strong winds that can affect boat trips — confirm boat arrangements in advance.",
   },
   balikpapan: {
+    // identity sources（2026-09-15 核实，update）: berandapost.com 2026-02-22、beritakaltim.co 2026-02-23 转引巴厘巴板市民政局 Disdukcapil 局长发布（3 级，两文末三位 766,502/766,052 略有出入，正文取约数）；BPS 站点 403；下一期约 2027-02
     // identity sources: 人口：2024 年中 757,418（与本条目 howItWorks 一致），原 identity 的「约 70 万」低了近 8 万且无年份。3 级。「通往努桑塔拉的主要空中门户」「新首都在建设中」已妥善带不确定性限定，不改。2026-09-10 核。
     identity:
-      "Balikpapan is East Kalimantan's oil-industry city, with a population of about 757,000 in mid-2024; it is one of Indonesia's most important economic centres on Borneo and the main air gateway to Nusantara, the country's new capital under construction.",
+      "Balikpapan is East Kalimantan's oil-industry city, with a registered population of about 770,000 in the first half of 2026 (Balikpapan City Civil Registry); it is one of Indonesia's most important economic centres on Borneo and the main air gateway to Nusantara, the country's new capital under construction.",
     // howItWorks sources: 与 layout 段统一为「以北」，并写明两个县名。
     howItWorks:
       "Balikpapan is a seaport city on the east coast of Borneo in East Kalimantan, Indonesia, with 757,418 residents in mid-2024; Indonesia runs on regional autonomy and the heads of provinces and of cities and regencies alike are directly elected. One relation is commonly mistaken here: Balikpapan is the largest economic centre in the province but not its capital — the capital is Samarinda to the north-east, joined to it by a toll road completed in 2021. The city exists because of oil: the first well was drilled here on 10 February 1897 as the beginning of the Indonesian oil industry, a Dutch petroleum company built works from 1907, the city and refinery were destroyed in the Second World War and rebuilt by 1950, and the state refinery remains the heart of the place while international energy companies keep regional offices and Kalimantan's financial business concentrates here. Because it was laid out around that industry, its streets and appearance are more orderly than those of Indonesian cities of similar size. It has gained a further role of late: Nusantara, the new Indonesian capital under construction, lies in the neighbouring regencies of Penajam Paser Utara and Kutai Kartanegara to the north and much of the traffic to the site passes through this city. The Sungai Wain protected forest outside town holds sun bears and proboscis monkeys. Newcomers most often go wrong by assuming it is the provincial capital, when that is Samarinda.",
@@ -192,7 +193,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along the Makassar Strait, its centre dominated by modern commercial districts and petroleum industry facilities; the core zone of the new capital Nusantara lies north of Balikpapan across the regencies of Penajam Paser Utara and Kutai Kartanegara, with a planned toll road of about 47 km to link the two directly and about 90 km, or two hours, by existing roads, the site of Indonesia's major ongoing capital-relocation project.",
     gettingAround:
-      "Sultan Aji Muhammad Sulaiman Airport (BPN) is about 11 km from the city centre; taxis and ride-hailing apps are the main way to get around town, and reaching the Nusantara site or the Borneo interior generally requires a hired car.",
+      "Sultan Aji Muhammad Sulaiman Airport (BPN) is about 11 km by road from the city centre; taxis and ride-hailing apps are the main way to get around town, and reaching the Nusantara site or the Borneo interior generally requires a hired car.",
     culture:
       "The official language is Indonesian. Balikpapan is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; as an oil-industry city, the pace of local life leans relatively business-oriented. Tipping isn't expected.",
     seeAndDo:
@@ -211,7 +212,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city runs along a bay, with the Boulevard waterfront a popular spot for sunset dining; Bunaken National Park lies in the waters north of Manado and is the area's premier diving and snorkelling destination.",
     gettingAround:
-      "Sam Ratulangi International Airport (MDC) is about 13 km from the city centre; reaching Bunaken National Park requires a boat from the harbour, typically booked through a dive centre or tour operator along with a snorkelling or diving itinerary.",
+      "Sam Ratulangi International Airport (MDC) is about 13 km in a straight line from the city centre; reaching Bunaken National Park requires a boat from the harbour, typically booked through a dive centre or tour operator along with a snorkelling or diving itinerary.",
     culture:
       "The official language is Indonesian, with the local Minahasan language also spoken. Manado and the surrounding North Sulawesi region were significantly shaped by Dutch colonial and Christian missionary history and are one of the few Christian-majority areas in Indonesia; pork dishes are commonly found on local menus, unlike in most of the country's predominantly halal dining scene. Tipping isn't expected.",
     seeAndDo:
@@ -231,12 +232,48 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The town sits along a tributary of the Arut River; visiting Tanjung Puting National Park means boarding a traditional klotok riverboat from the local dock for a journey up the Sekonyer River into the park — the area's signature way to explore.",
     // gettingAround sources: 机场距离：注册表坐标算出直线 6.7 公里；原文短于直线、不可能成立，已改。
     gettingAround:
-      "Iskandar Airport (PKN) is about 7 km from the town centre; the town itself is small enough to cover on foot or by motorbike taxi, and visiting the national park requires booking a boat and guide through a local tour operator.",
+      "Iskandar Airport (PKN) is about 6.7 km in a straight line from the town centre; the town itself is small enough to cover on foot or by motorbike taxi, and visiting the national park requires booking a boat and guide through a local tour operator.",
     culture:
       "The official language is Indonesian. Pangkalan Bun is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; as a national-park gateway town, the pace of life here is relaxed, and most visitors come primarily to observe wildlife. Tipping isn't expected.",
     seeAndDo:
       "Orangutan viewing in Tanjung Puting National Park (feeding stations such as Camp Leakey); a liveaboard trip along the Sekonyer River; watching proboscis monkeys and tropical birdlife within the park.",
     whenAndTips:
       "Liveaboard trips typically run 2–3 days — book in advance through a reputable operator and confirm the boat's and guide's credentials; the dry season (roughly May–September) offers more stable river conditions and better wildlife viewing.",
+  },
+
+  semarang: {
+    // 全七段 sources: 同中文侧（Semarang civil registry office 2026-02-09 on 2025 year-end registered population, tier 1; BPS yearbook for area and subdivisions, tier 1; UNESCO Tentative List 2015-01-30, tier 1; Ministry of Energy and Mineral Resources geological agency 2017-03-01 on subsidence, tier 1; OurAirports and computed distances）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Semarang is the capital of Central Java in Indonesia, with about 1.70 million registered residents at the end of 2025 (Semarang civil registry office). It sits on Java's north coast, where the Dutch-era old town and the port of Tanjung Emas line the shore and the land rises southwards to the newer commercial centre on higher ground. The old town entered UNESCO's Tentative List in 2015.",
+    howItWorks:
+      "Three layers need separating here: the Central Java provincial government sits in the city, the city of Semarang is a self-governing unit in its own right with 16 districts and 177 sub-districts, and the identically named Semarang Regency is a separate government of equal standing based at Ungaran outside the city. Governors and mayors are directly elected, while district and sub-district heads are appointed civil servants, and addresses carry RT/RW neighbourhood numbers below the street name. The city has two centres: the old town and the port on the northern shore, and the area around Simpang Lima on the higher ground to the south, which is the commercial centre today — the city climbs from near sea level to over 300 m, and people speak of the upper and lower town as a matter of course. What sets the living radius is the ground itself: in 2017 the geological agency of the Ministry of Energy and Mineral Resources reported that the northern part of the city was subsiding by 7 to 9 cm a year, mainly because of groundwater extraction, and that no new extraction permits were being issued in the worst-affected zones; tidal flooding along the coast is routine. Newcomers often assume there is only one Semarang government, and often take the old town in the north for the city centre.",
+    layout:
+      "The old town is on the coast about 3 km north of the centre in a straight line, with Blenduk Church at its heart and the port of Tanjung Emas about 2 km beyond it. Lawang Sewu and the Tugu Muda monument are about 1.5 km west of the centre, Simpang Lima is just to its south, Sam Poo Kong about 3 km west, and the Great Mosque of Central Java about 2.5 km east.",
+    gettingAround:
+      "Jenderal Ahmad Yani Airport is about 6 km from the centre in a straight line, with domestic and international scheduled flights. The city has the Tawang and Poncol stations on Java's northern main line, with trains west to Jakarta and east to Surabaya. Getting around means cars, motorbikes and ride-hailing; the low-lying north floods at high tides. The climate is tropical monsoon, hot all year, with the rainy season running roughly from November to March.",
+    culture:
+      "Indonesian is the common language, and Javanese is spoken locally. The old town keeps its Dutch-era commercial buildings, and the city also has Chinese temples and the provincial grand mosque — dress modestly at religious sites and follow the rules posted there. Local snacks include lumpia spring rolls and rice-based sweets.",
+    seeAndDo:
+      "The old town and Blenduk Church; Lawang Sewu; Sam Poo Kong; the Great Mosque of Central Java; the night markets and malls around Simpang Lima; and the ships at Tanjung Emas.",
+    whenAndTips:
+      "May to September is relatively dry; in the rainy season the low-lying north floods at high tides, so check conditions before setting out. The height difference across the city means even short trips often call for a taxi.",
+  },
+
+  mataram: {
+    // 全七段 sources: 同中文侧（West Nusa Tenggara provincial civil registry via the Satu Data NTB open-data portal, first half of 2025, tier 1; OurAirports; distances computed; UNESCO Global Geopark status only tier 2 and probably excludes the city, so not written）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（同中文侧）。
+    identity:
+      "Mataram is the capital of West Nusa Tenggara province in Indonesia, on the west coast of Lombok, with about 465,000 registered residents in 2025 (civil-registry figures). It is where the province does its paperwork, schooling, hospital visits and shopping; the airport, beaches and trailheads visitors know are mostly in the neighbouring regencies.",
+    howItWorks:
+      "The provincial government of West Nusa Tenggara sits in the city, while Mataram itself is a self-governing city of six districts and several dozen sub-districts; West, Central and North Lombok regencies next door each have their own regent and are separate governments. Mayors and governors are directly elected, district and sub-district heads are appointed civil servants; addresses carry RT/RW below the street name, and below the sub-district there is a further tier here called the lingkungan. The city is really three old towns grown together: Ampenan, the old port on the west coast; Mataram in the middle, where the offices are; and Cakranegara to the east, where the commerce and the temples are — those three are the names locals actually use. What matters for the living radius lies beyond the city limits: Lombok International Airport is in Central Lombok, the Senggigi resort strip and the ferry port of Lembar for Bali are in West Lombok, and the Gili islands and the Rinjani trailheads are in the north and east. Newcomers often treat Mataram as Lombok's resort gateway, when it is a working provincial capital.",
+    layout:
+      "The centre is around the Mataram district: Ampenan old town is about 3.5 km west on the coast and Loang Baloq beach about 4 km south-west; Pura Meru and Taman Mayura face each other across the street about 3 km east in Cakranegara; the NTB Islamic Center is a short way west of the centre and the Sayang-Sayang art market about 2.5 km north-east. Mount Rinjani is about 43 km north-east in a straight line.",
+    gettingAround:
+      "Lombok International Airport is about 27 km from the centre in a straight line and has scheduled flights, but it lies in Central Lombok rather than in the city. The island has no railways, so travel is by car, motorbike and ride-hailing; ferries to Bali leave from Lembar in West Lombok, and boats to the Gili islands from Bangsal in North Lombok. The climate is tropical and hot all year, with the rainy season running roughly from November to March.",
+    culture:
+      "Indonesian is the common language, and Sasak is spoken locally. The city has both Hindu temples and the provincial mosque — dress modestly at religious sites and follow the rules posted there. Local food runs hot, and the markets sell handwoven textiles and pottery.",
+    seeAndDo:
+      "The old streets of Ampenan; Pura Meru and Taman Mayura in Cakranegara; the NTB Islamic Center; handwoven textiles at the Sayang-Sayang market; and sunset at Loang Baloq beach.",
+    whenAndTips:
+      "May to September is relatively dry and is also the season for climbing Rinjani; the rainy season brings frequent showers. Most destinations are in the surrounding regencies, so build driving time into the plan.",
   },
 };

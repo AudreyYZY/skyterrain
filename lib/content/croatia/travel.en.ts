@@ -12,7 +12,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Domestic flights connect Zagreb with major coastal cities. The coast has hot, dry summers and mild winters, while the interior has a distinct continental climate. Long-distance buses are extensive, and ferries and catamarans link the Dalmatian coastal towns to the islands. As a Schengen and eurozone member, entry and currency use follow the same rules as other Schengen countries.",
     culture:
-      "The official language is Croatian, and most residents are Catholic. Modest dress is expected in churches; swimwear is fine on beaches but should be changed before leaving the beach area. Restaurant tips are typically around 10% of the bill, or simply rounding up.",
+      "The official language is Croatian, and most residents are Catholic. Modest dress is expected in churches; swimwear is fine on beaches but should be changed before leaving the beach area. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card.",
     seeAndDo:
       "The travertine lakes and waterfalls of Plitvice Lakes National Park; Dubrovnik's Old Town walls; Diocletian's Palace in Split; Zagreb's Upper Town; and the Dalmatian coastal islands (Hvar, Brač, Kornati).",
     whenAndTips:
@@ -30,9 +30,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city has an Upper Town (the historic old town, home to St. Mark's Church and the government buildings) and a Lower Town (a grid of 19th-century streets centered on Ban Jelačić Square and numerous museums), linked by the traditional Dolac Market.",
     gettingAround:
-      "Zagreb Airport is about 17 km from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
+      "Zagreb Airport is about 17 km by road from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
     culture:
-      "The official language is Croatian. Modest dress is expected when visiting St. Mark's Church and other religious sites. Restaurant tips are typically around 10% of the bill. Zagreb has a faster pace of life than the coastal cities, with a strong outdoor café culture.",
+      "The official language is Croatian. Modest dress is expected when visiting St. Mark's Church and other religious sites. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card. Zagreb has a faster pace of life than the coastal cities, with a strong outdoor café culture.",
     seeAndDo:
       "St. Mark's Church (its colorful tiled roof forms the coats of arms of Croatia and Zagreb); the Stone Gate and Lotrščak Tower in the Upper Town; Dolac open-air market; the Museum of Broken Relationships; and the Zagreb Christmas Market each year from November to January.",
     whenAndTips:
@@ -51,9 +51,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The old town sits entirely within the site of Diocletian's Palace; the palace cellars, the Cathedral of St. Domnius (originally Diocletian's mausoleum), and the street layout still follow the Roman-era plan. The Riva waterfront promenade links the old town with the harbor for everyday leisure.",
     // gettingAround sources: 随机抽样审计（seed=2）抽中。2026-09-13 核。
     gettingAround:
-      "Split Airport is about 19 km from the city center. The old town is walkable, and ferries and catamarans to the Dalmatian islands (Hvar, Brač, Kornati) depart from Split's harbor.",
+      "Split Airport is about 12 km in a straight line from the city center. The old town is walkable, and ferries and catamarans to the Dalmatian islands (Hvar, Brač, Kornati) depart from Split's harbor.",
     culture:
-      "The official language is Croatian. Modest dress is expected when visiting the Cathedral of St. Domnius and other religious sites. Restaurant tips are typically around 10% of the bill. The old town gets crowded in summer, so keep an eye on valuables.",
+      "The official language is Croatian. Modest dress is expected when visiting the Cathedral of St. Domnius and other religious sites. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card. The old town gets crowded in summer, so keep an eye on valuables.",
     seeAndDo:
       "The cellars of Diocletian's Palace along with the Silver and Golden Gates; the Cathedral of St. Domnius; the Riva waterfront promenade; Marjan Hill for panoramic views of the city and bay; and Split as the gateway to Dalmatian islands such as Hvar and Brač.",
     whenAndTips:
@@ -68,9 +68,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The Old Town sits entirely within a ring of medieval walls nearly 2 km long. The main street, Stradun, runs east–west through the town, with stepped side lanes climbing toward the walls on either side. The Old Port on the town's east side was historically the Republic of Ragusa's trading gateway.",
     gettingAround:
-      "Dubrovnik Airport is about 20 km from the city center. Motor vehicles are banned inside the Old Town, so walking is the only way to get around; a full lap of the city walls takes about two hours.",
+      "Dubrovnik Airport is about 17 km in a straight line from the city center. Motor vehicles are banned inside the Old Town, so walking is the only way to get around; a full lap of the city walls takes about two hours.",
     culture:
-      "The official language is Croatian. Sun on the city walls is intense at midday, so bring sun protection and water. Restaurant tips in the Old Town are typically 10–15% of the bill. In peak season, it's best to walk the walls before the morning rush of cruise-ship groups.",
+      "The official language is Croatian. Sun on the city walls is intense at midday, so bring sun protection and water. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card. In peak season, it's best to walk the walls before the morning rush of cruise-ship groups.",
     seeAndDo:
       "The medieval walls encircling the Old Town (with views over red-tiled roofs and the Adriatic); Stradun; the Sponza Palace and Franciscan Monastery; Lokrum Island (a day-trip island just offshore); and the Srđ cable car for panoramic views.",
     whenAndTips:
@@ -88,9 +88,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The city stretches along the Kvarner Gulf coastline, with the port area tightly linked to the city center. Trsat Castle stands on a hill north of the mouth of the Rječina River, overlooking the whole city and harbor.",
     gettingAround:
-      "Rijeka Airport is on the island of Krk, about 30 km from the city center, reached by road via the Krk Bridge. The city has a good bus network and serves as a gateway to the Kvarner Gulf coast and islands.",
+      "Rijeka Airport is on the island of Krk, about 16 km in a straight line from the city center, reached by road via the Krk Bridge. The city has a good bus network and serves as a gateway to the Kvarner Gulf coast and islands.",
     culture:
-      "The official language is Croatian. Rijeka is an industrial port city with fewer tourists, giving it a more local feel than the coastal resort towns. Restaurant tips are typically around 10% of the bill.",
+      "The official language is Croatian. Rijeka is an industrial port city with fewer tourists, giving it a more local feel than the coastal resort towns. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card.",
     seeAndDo:
       "Trsat Castle and its pilgrimage church; Korzo pedestrian street; the port-side architecture of the city center; and Rijeka as a gateway to Učka Nature Park and the Kvarner islands (Cres, Krk).",
     whenAndTips:
@@ -107,9 +107,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town sits on a narrow peninsula, with the Roman Forum ruins and the Church of St. Donatus at its core. At the tip of the waterfront promenade stand the contemporary landmarks the Sea Organ and Sun Salutation.",
     gettingAround:
-      "Zadar Airport is about 8 km from the city center. The old town is walkable, and boats and buses to Kornati National Park and Lake Vrana depart from Zadar.",
+      "Zadar Airport is about 9.3 km in a straight line from the city center. The old town is walkable, and boats and buses to Kornati National Park and Lake Vrana depart from Zadar.",
     culture:
-      "The official language is Croatian. Modest dress is expected when visiting the Church of St. Donatus and other religious sites. The Sea Organ draws crowds at sunset, so arrive early to find a spot. Restaurant tips are typically around 10% of the bill.",
+      "The official language is Croatian. Modest dress is expected when visiting the Church of St. Donatus and other religious sites. The Sea Organ draws crowds at sunset, so arrive early to find a spot. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card.",
     seeAndDo:
       "The Sea Organ (an art installation that makes sound from the waves); Sun Salutation (a circular light installation illuminated at night); the Church of St. Donatus and Roman Forum ruins; the Cathedral of St. Anastasia; and Zadar as the gateway to Kornati National Park and Lake Vrana.",
     whenAndTips:
@@ -126,9 +126,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town centers on the Roman Arena, with the Forum and a Roman triumphal arch scattered through its compact old-town streets. The harbor lies southeast of the old town, historically Istria's traditional naval and shipbuilding center.",
     gettingAround:
-      "Pula Airport is about 6 km from the city center. The old town is walkable; reaching Rovinj, Poreč, and other towns on Istria's west coast requires a car or local bus.",
+      "Pula Airport is about 6.5 km in a straight line from the city center. The old town is walkable; reaching Rovinj, Poreč, and other towns on Istria's west coast requires a car or local bus.",
     culture:
-      "The official language is Croatian (Italian is also widely used in Istria and shares official status regionally). Restaurant tips are typically around 10% of the bill. Pula Arena often hosts open-air film festivals and concerts in summer, so check for events that may affect a visit before buying tickets.",
+      "The official language is Croatian (Italian is also widely used in Istria and shares official status regionally). Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card. Pula Arena often hosts open-air film festivals and concerts in summer, so check for events that may affect a visit before buying tickets.",
     seeAndDo:
       "Pula Arena (a Roman amphitheater with all four walls intact, seating 23,000); the Temple of Augustus and the Forum; the Golden Gate (a Roman triumphal arch); and Pula as the gateway to the red-soil coastal towns of Rovinj and Poreč.",
     whenAndTips:
@@ -146,9 +146,9 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old Tvrđa fortress district preserves an 18th-century Habsburg-era Baroque quarter within a star-shaped fortification outline. The city center stretches along the Drava's north bank, with a riverside promenade for everyday leisure.",
     gettingAround:
-      "Osijek Airport is about 20 km from the city center, with a good city tram network. Osijek is the main gateway to Kopački Rit wetland park, a drive of just over ten kilometers away.",
+      "Osijek Airport is about 14 km in a straight line from the city center, with a good city tram network. Osijek is the main gateway to Kopački Rit wetland park, a drive of just over ten kilometers away.",
     culture:
-      "The official language is Croatian. Modest dress is expected at religious sites. Restaurant tips are typically around 10% of the bill. Osijek sees far fewer visitors than the coast, making it a representative city for experiencing inland Slavonian life and cuisine (known for grilled sausages and paprika-seasoned dishes).",
+      "The official language is Croatian. Modest dress is expected at religious sites. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card. Osijek sees far fewer visitors than the coast, making it a representative city for experiencing inland Slavonian life and cuisine (known for grilled sausages and paprika-seasoned dishes).",
     seeAndDo:
       "The Tvrđa fortress old town; the Co-Cathedral of Sts. Peter and Paul (locally called the 'Green Church,' its Gothic Revival spire a city landmark); the Drava riverside promenade; and Osijek as the gateway to birdwatching at Kopački Rit wetland park.",
     whenAndTips:
@@ -165,10 +165,80 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Hvar Island has no airport with scheduled flights; visitors arrive via ferry or catamaran from Split or Dubrovnik airports through the harbor, with the Split–Hvar Town catamaran crossing taking about an hour. The town itself is walkable.",
     culture:
-      "The official language is Croatian. Modest dress is expected when visiting St. Stephen's Cathedral. Hvar is a well-known resort and nightlife island, with dense crowds of visitors and yachts in summer and higher dining prices than inland cities. Restaurant tips are typically around 10% of the bill.",
+      "The official language is Croatian. Modest dress is expected when visiting St. Stephen's Cathedral. Hvar is a well-known resort and nightlife island, with dense crowds of visitors and yachts in summer and higher dining prices than inland cities. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card.",
     seeAndDo:
       "Fortica fortress for panoramic views; St. Stephen's Square and Cathedral; the Stari Grad Plain (an ancient Greek agricultural site and World Heritage listing); day trips to the Pakleni Islands; and summer lavender fields near the inland village of Velo Grablje.",
     whenAndTips:
       "June to September is Hvar's peak season, with July and August the busiest for yachts and visitors. Lavender typically blooms from mid-to-late June through July, the best time to photograph the fields. The island depends on ferries, so book tickets ahead, especially on peak-season weekends.",
+  },
+  sibenik: {
+    // 全七段 sources: 同中文侧（DZS 2021 census, tier 1; Šibenik city website, tier 1; UNESCO 963 / 1533, tier 1; Krka National Park FAQ, tier 1; HŽ passenger notices 2026-09-15, tier 1; Jadrolinija, tier 1; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Šibenik is a port city in central Dalmatia and the seat of Šibenik-Knin County, built up a hillside on the bay where the Krka reaches the sea. The Cathedral of St James in the old town was inscribed as a World Heritage site in 2000, and St Nicholas Fortress at the entrance to the harbour channel joined the World Heritage list in 2017 as part of the Venetian Republic's defence works. In the 2021 census the City of Šibenik had about 42,600 people (Croatian Bureau of Statistics).",
+    howItWorks:
+      "Šibenik is run by an elected mayor and city council, and the city is divided into 16 city districts and 29 local committees. The 'City of Šibenik' is much larger than the old town: the four inhabited islands of Zlarin, Kaprije, Žirje and Krapanj offshore and inland villages such as Lozovac all belong to it. That produces a common misunderstanding: people think Krka National Park is at Skradin, when the park's main road entrance at Lozovac and the Skradinski buk falls themselves lie within the City of Šibenik, while Skradin is a separate town from which you enter the park by boat. Locals place things by the old town, the fortresses and the harbour, and addresses give street, number and a postcode beginning 22000. Daily life follows the sea and a branch railway: island residents come into town by ferry, and trains to Split or Zagreb require a change at Perković.",
+    layout:
+      "The old town climbs the hillside from the waterfront up to St Michael's Fortress, with the Cathedral of St James and the Rector's Palace on the seaward side and the Barone and St John fortresses on the heights behind; the harbour lies in the bay and reaches the open sea through a long, narrow channel, with St Nicholas Fortress guarding its entrance; the Skradinski buk falls in Krka National Park are about 10 km north-east of the centre in a straight line.",
+    gettingAround:
+      "Šibenik has no airport with scheduled flights; the nearest is Split Airport (SPU, about 39 km in a straight line), with Zadar (ZAD) about 59 km. The railway is a branch-line terminus, so trains to Split and Zagreb require a change at Perković, and replacement buses are common on the branch. The outer islands are reached by Jadrolinija passenger ships and car ferries. For Krka National Park, drive to the Lozovac entrance and park; from April to November a park bus runs down to the falls, or go to Skradin and enter the park by boat.",
+    culture:
+      "Croatian is spoken locally. The Cathedral of St James is a working church, so dress modestly and keep quiet inside. In Krka National Park swimming is allowed only in designated areas from June to September; you cannot swim at Skradinski buk or jump from the falls or bridges.",
+    seeAndDo:
+      "The Cathedral of St James; the climb to St Michael's Fortress for views of the old town and bay; the Barone and St John fortresses; the city museum in the Rector's Palace; St Nicholas Fortress at the harbour mouth; the Skradinski buk falls in Krka National Park; a boat to Zlarin and the other outer islands.",
+    whenAndTips:
+      "May–June and September are pleasant and less crowded than midsummer; July–August is hot and the national park is busy. Follow the park's official announcements for swimming areas and seasons, and the operators' announcements for fortress opening hours.",
+  },
+  porec: {
+    // 全七段 sources: 同中文侧（DZS 2021 census and 2025 tourism release, tier 1; Poreč city website, tier 1; UNESCO 809, tier 1; Istria County government on the Parenzana, tier 1; ferry operator, tier 1; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Poreč is a small town on the west coast of Croatia's Istrian peninsula, its old town built on a small peninsula reaching into the Adriatic. The Episcopal Complex of the Euphrasian Basilica in the old town was inscribed as a World Heritage site in 1997; Christianity was already established here in the 4th century. In the 2021 census the Town of Poreč had about 16,600 people (Croatian Bureau of Statistics).",
+    howItWorks:
+      "Poreč is run by an elected mayor and town council, and the town has 10 local committees, each with a seven-member committee. It is a town that runs on tourism: according to the Croatian Bureau of Statistics, tourists in commercial accommodation spent about 3.3 million nights here in 2025, the third-highest number of overnight stays in the country, while the permanent population is only a little over 16,000, so the tourist season sets the town's rhythm. The basilica, squares and old streets are on the old-town peninsula, with the bus station at its base; across Istria County as a whole, about four in ten commercial overnight stays are at campsites. Outsiders often make two mistakes: thinking Poreč is Istria's capital, when the county seat is inland at Pazin, and thinking the Baredine cave a few kilometres out of town belongs to Poreč, when it belongs to the neighbouring municipality.",
+    layout:
+      "The old town sits on the small peninsula, with the Euphrasian Basilica on its north side, Marafor Square at its western tip and the Pentagonal Tower and the heritage museum on the old streets; the bus station is at the base of the peninsula; Sveti Nikola island lies about 1 km offshore; Baredine cave is about 7 km north-east of town in a straight line.",
+    gettingAround:
+      "Poreč has no airport with scheduled flights; the nearest is Pula Airport (PUY, about 45 km in a straight line). There is no railway either, the nearest station being Pazin (about 27 km in a straight line); from 1902 to 1935 a narrow-gauge railway ran to Poreč, and its old trackbed is now a cycling and walking route. Travel is mainly by coach or car; in summer there are fast boats to Venice, with schedules as announced by the operator. The old town is walkable.",
+    culture:
+      "Croatian is spoken locally. The Euphrasian Basilica is a working church, so dress modestly when visiting.",
+    seeAndDo:
+      "The Episcopal Complex of the Euphrasian Basilica (basilica, atrium, baptistery and bishop's palace); Marafor Square; the Pentagonal Tower and the old streets; the Poreč heritage museum; a boat to Sveti Nikola island; cycling the former Parenzana railway route; Baredine cave outside town.",
+    whenAndTips:
+      "May–June and September are warm and less crowded than midsummer; July–August is peak season, so book accommodation early. Follow the operators' announcements for fast-boat schedules and cave opening hours.",
+  },
+
+  varazdin: {
+    // 全七段 sources: 同中文侧（DZS 2021 census tables, tier 1; Statute of the City of Varaždin 3/2018, tier 1; city website history page, tier 1; UNESCO Creative Cities open data 2023, tier 1; Varaždin tourist board, tier 1; Croatian Tax Administration on tips, tier 1; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Varaždin is a baroque city in inland northern Croatia and the seat of Varaždin County, with 43,782 people in the municipality and 36,187 in the settlement of Varaždin itself at the 2021 census (DZS). In 2023 it joined the UNESCO Creative Cities Network as a City of Music — the Creative Cities Network, not the World Heritage List.",
+    howItWorks:
+      "Varaždin is run by an elected mayor and city council; the municipality takes in 10 settlements and is subdivided only into 16 local committees, with no city districts (city statute), and the Varaždin County government sits in the city as well. The city's origin point is King Tomislav Square: the town hall has stood here since 1523, the cathedral and several baroque palaces are within a hundred or two metres of it, and the old castle is about 400 m north-west, separated from the square by a green belt made out of the former bastions and moat. The look of today's centre comes from the rebuilding that followed the great fire of 1776; the walls and moat were dismantled and filled in from 1807, and the theatre went up in 1873. Besides the main town the municipality contains nine villages, home to 7,595 people at the 2021 census, and the municipal bus routes end in those villages. Newcomers tend to equate the city with its old town, and to assume every Croatian city is on the coast — this one is inland, less than 70 km from the capital in a straight line.",
+    layout:
+      "King Tomislav Square is the centre of the old town, with the town hall on the square itself; the Cathedral of the Assumption is south-east of it and the Patačić Palace south-west, both within a couple of hundred metres, and the Croatian National Theatre is about 300 m south of the square. The old castle and its watchtower are about 400 m north-west, the city cemetery is about 1.2 km west of the centre, and the bus station about 500 m south-west of the square.",
+    gettingAround:
+      "Varaždin has no airport with scheduled flights — there are small airfields nearby, but none with scheduled service — and the nearest airport with scheduled flights is Zagreb, about 66 km away in a straight line. Trains and long-distance buses run to Zagreb. The old town is walkable, and municipal buses reach the villages within the municipality. The climate is temperate continental, with cold winters.",
+    culture:
+      "Croatian is spoken locally. The city has a dense musical tradition and joined the UNESCO Creative Cities Network as a City of Music in 2023; the Špancirfest street-arts festival runs over the last ten days of August, a baroque music festival is held in early autumn, and a courtyards festival takes place on the last weekend of June (according to the city tourist board). Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card.",
+    seeAndDo:
+      "The old castle and the Varaždin City Museum (still under restoration as of September 2026 — check opening with the museum); King Tomislav Square and the town hall; the Cathedral of the Assumption; the Patačić Palace; the Croatian National Theatre; and the city cemetery, laid out in 1773 and rearranged as a French-style garden in 1905.",
+    whenAndTips:
+      "May–June and September are comfortable; the city is at its busiest during Špancirfest at the end of August, so book accommodation early. Check the state of the old castle's restoration and its exhibitions before you go.",
+  },
+
+  trogir: {
+    // 全七段 sources: 同中文侧（DZS 2021 census, tier 1; trogir.hr on local committees and offices, tier 1; UNESCO 810 open data and official description, tier 1; Split Airport official site, tier 1; Croatian Tax Administration on tips, tier 1; distances computed）。 核实 2026-09-16 当批。 核实 2026-09-16 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Trogir is a small city on Croatia's Dalmatian coast, with 12,393 people in the municipality and 10,107 in the settlement of Trogir itself at the 2021 census (DZS). Its old town stands on an islet between the mainland and the island of Čiovo, and was inscribed as the Historic City of Trogir on the World Heritage List in 1997, with a property of only 6.4 hectares.",
+    howItWorks:
+      "Trogir is a city in its own right, with its own elected mayor and council, and the city offices are in the Duke's Palace on the old town's main square; the municipality is divided into nine local committees, three of them across the water on Čiovo and two of them on offshore islands — so the city is far more than that 6.4-hectare World Heritage islet. The street plan goes back to the Greek colony founded on the islet in the 3rd century BC: streets were laid out on a grid, the two ancient main streets are still in use, the site has been inhabited ever since, in the Middle Ages it spread into two concentric rings of houses and lanes, and the Venetian fortifications took in the Kamerlengo fortress at the west end of the islet (according to UNESCO). The Cathedral of St Lawrence was begun around 1200, its south door completed in 1213 and its main west portal by Master Radovan in 1240, with the bell tower added only in the late 16th century, so Romanesque, Gothic and Renaissance work sit on the same building. Newcomers get two things wrong most often: that Split Airport is in fact closer to Trogir — the airport's own site gives 6 km to Trogir and 20 km to Split, although the airport lies in the neighbouring municipality of Kaštela — and that Trogir is a district of Split.",
+    layout:
+      "The square of John Paul II is the centre of the old town, with the Cathedral of St Lawrence, the town loggia, the Great Ćipiko Palace and the Duke's Palace all within a hundred metres of it; the Monastery of St Nicholas is a little over a hundred metres south of the square, and the north town gate a short way north. The Kamerlengo fortress lies about 300 m south-west and St Mark's Tower about 400 m west, both at the western end of the islet. The bus station is about 200 m north of the old town, and the bridge across to Čiovo is close by.",
+    gettingAround:
+      "Split Airport is about 5 km north-east of town in a straight line, though it lies within the neighbouring municipality of Kaštela rather than in Trogir; the airport's own site gives 6 km to Trogir and 20 km to Split, and public bus lines from the airport serve both. The centre of Split is about 15 km east in a straight line. The old town is small and walkable, with parking outside it. The climate is Mediterranean, hot and dry in summer and mild and wet in winter.",
+    culture:
+      "Croatian is spoken locally. The Cathedral of St Lawrence is a working church, so dress modestly and keep quiet inside. Tipping is voluntary; Croatia brings tips in hospitality into its fiscalisation reporting system, and they can be given in cash or by card.",
+    seeAndDo:
+      "The Cathedral of St Lawrence and Radovan's portal; the town loggia and the Duke's Palace; the Great Ćipiko Palace; the Kamerlengo fortress and St Mark's Tower at the west end of the islet; the Monastery of St Nicholas; and a walk right around the old town along the waterfront.",
+    whenAndTips:
+      "May–June and September have warm water and fewer people than midsummer; in July and August the old town is crowded by day. The old town is on an islet with narrow lanes, wheeled luggage is awkward on the stone paving, and it is worth asking about parking before booking.",
   },
 };

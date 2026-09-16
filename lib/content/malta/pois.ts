@@ -53,4 +53,25 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "圣保罗群岛", nameEn: "St Paul's Islands", lon: 14.4000, lat: 35.9700, kind: "landmark" },
     { nameZh: "西马尔湿地保护区", nameEn: "Is-Simar Nature Reserve", lon: 14.3822, lat: 35.9456, kind: "landmark" },
   ],
+  qrendi: [
+    { nameZh: "哈扎伊姆神庙", nameEn: "Ħaġar Qim Temples", lon: 14.4422, lat: 35.8278, kind: "landmark" },
+    { nameZh: "姆纳德拉神庙", nameEn: "Mnajdra Temples", lon: 14.4364, lat: 35.8267, kind: "landmark" },
+    { nameZh: "蓝洞", nameEn: "Blue Grotto", lon: 14.45, lat: 35.8167, kind: "landmark" },
+    { nameZh: "泽里格谷渔村", nameEn: "Wied iż-Żurrieq", lon: 14.4586, lat: 35.8225, kind: "landmark" },
+    { nameZh: "马克卢巴塌陷坑", nameEn: "Il-Maqluba sinkhole", lon: 14.4578, lat: 35.8306, kind: "landmark" },
+  ],
+  xaghra: [
+    { nameZh: "季甘蒂亚神庙（世界遗产）", nameEn: "Ġgantija temples", lon: 14.2691, lat: 36.0472, kind: "landmark" },
+    { nameZh: "塔科拉风车", nameEn: "Ta' Kola Windmill", lon: 14.2668, lat: 36.0498, kind: "landmark" },
+    { nameZh: "圣母诞辰圣殿", nameEn: "Basilica of the Nativity of Our Lady", lon: 14.265, lat: 36.0503, kind: "landmark" },
+    { nameZh: "尼努溶洞", nameEn: "Ninu Cave", lon: 14.2646, lat: 36.0512, kind: "nature" },
+    { nameZh: "拉姆拉湾（红沙滩）", nameEn: "Ir-Ramla l-Ħamra", lon: 14.2824, lat: 36.0622, kind: "nature" },
+  ],
+  mosta: [
+    { nameZh: "莫斯塔圆顶教堂", nameEn: "Mosta Rotunda", lon: 14.4258, lat: 35.9101, kind: "landmark" },
+    { nameZh: "塔比斯特拉地下墓穴", nameEn: "Ta' Bistra Catacombs", lon: 14.4162, lat: 35.9155, kind: "landmark" },
+    { nameZh: "莫斯塔堡（不对外开放）", nameEn: "Fort Mosta (not open to visitors)", lon: 14.4263, lat: 35.9226, kind: "landmark" },
+    { nameZh: "加塞尔谷", nameEn: "Wied il-Għasel", lon: 14.4268, lat: 35.9124, kind: "nature" },
+    { nameZh: "斯佩兰扎谷", nameEn: "Speranza Valley", lon: 14.4118, lat: 35.9061, kind: "nature" },
+  ],
 };

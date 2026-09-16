@@ -42,4 +42,30 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "BRQ", nameZh: "布尔诺-图拉尼机场", nameEn: "Brno-Tuřany Airport", lon: 16.6944, lat: 49.1514 },
     source: "奥洛穆茨市中心 49.5939,17.2508；本地机场客运航班有限，最近有稳定定期航班的机场为布尔诺机场（距市区约75km）：公开资料",
   },
+  {
+    id: "ceske-budejovice", nameZh: "捷克布杰约维采", nameEn: "České Budějovice", country: "czechia", tier: "major", zone: "cz-south-bohemia", admin1Zh: "南波希米亚州", admin1En: "South Bohemian Region",
+    lon: 14.4742, lat: 48.9744,
+    source: "普热米斯尔·奥托卡二世广场 48.9744,14.4742（Wikidata）；南波希米亚州首府、法定市（市政府官网，1 级）；城西南 JCL 机场 2026 年只有夏季度假团航班（机场官网，1 级），不算定期航班、不填 airport；布拉格 PRG 直线约 126 km（按 OurAirports 算）；离国界约 33 km（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "telc", nameZh: "泰尔奇", nameEn: "Telč", country: "czechia", tier: "notable", zone: "cz-moravia", admin1Zh: "维索基纳州", admin1En: "Vysočina Region",
+    lon: 15.4528, lat: 49.1842,
+    source: "泰尔奇扎哈里亚什·赫拉德茨广场 49.1842,15.4528（Wikidata）；本地没有机场，不填 airport；布尔诺 BRQ 直线约 90 km、布拉格 PRG 约 133 km（按 OurAirports 算）；UNESCO 621（1992）；离国界约 23 km（按 OSM 边界算，已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "litomysl", nameZh: "利托米什尔", nameEn: "Litomyšl", country: "czechia", tier: "notable", zone: "cz-east-bohemia", admin1Zh: "帕尔杜比采州", admin1En: "Pardubice Region",
+    lon: 16.3106, lat: 49.8714,
+    source: "利托米什尔斯美塔那广场 49.8714,16.3106（Wikidata）；本地没有定期航班的机场，不填 airport；帕尔杜比采 PED 直线约 44 km、有瑞安航空定期航班（瑞安航空新闻稿，1 级，当批核实改正），本市仍不填 airport；布尔诺 BRQ 直线约 85 km、布拉格 PRG 约 149 km（按 OurAirports 算）；UNESCO 901（1999）；离国界约 35 km（已有城市补充批，2026-09-15）",
+  },
+  {
+    id: "ostrava", nameZh: "俄斯特拉发", nameEn: "Ostrava", country: "czechia", tier: "major", zone: "cz-moravia", admin1Zh: "摩拉维亚—西里西亚州", admin1En: "Moravian-Silesian Region",
+    lon: 18.2913, lat: 49.8353,
+    airport: { iata: "OSR", nameZh: "俄斯特拉发莱奥什·亚纳切克机场", nameEn: "Leoš Janáček Ostrava Airport", lon: 18.1161, lat: 49.6969 },
+    source: "俄斯特拉发马萨里克广场 49.8353,18.2913（OSM Nominatim）；OSR 直线约 20 km、有定期客运航班（机场官网 2026-09-16），机场以本城命名、由州（州府即本城）所有 —— 按「是不是这座城市自己的机场」这条线填 airport；与地形条目 moravskoslezske-beskydy、jeseniky 互指（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "hradec-kralove", nameZh: "赫拉德茨-克拉洛韦", nameEn: "Hradec Králové", country: "czechia", tier: "major", zone: "cz-east-bohemia", admin1Zh: "赫拉德茨-克拉洛韦州", admin1En: "Hradec Králové Region",
+    lon: 15.8328, lat: 50.2093,
+    source: "赫拉德茨-克拉洛韦大广场 50.2093,15.8328（OSM Nominatim）；市域内的本地机场没有定期客运航班，最近有定期航班的是帕尔杜比采 PED（直线约 23 km）—— 那是帕尔杜比采的机场，按 2026-09 起的做法不填 airport（与利托米什尔条目一致）；与地形条目 krkonose、adrspach-teplice-rocks、labe-river 互指（已有城市补充批，2026-09-16）",
+  },
 ];

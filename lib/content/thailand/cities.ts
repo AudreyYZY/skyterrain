@@ -88,12 +88,6 @@ export const CITIES: CityEntry[] = [
     source: "Lampang 18.2900,99.4900（en.wikipedia）；LPT 机场：en.wikipedia（紧邻市区南侧，仅曼谷廊曼航线）；人口 58,074（2010 普查）",
   },
   {
-    id: "hat-yai", nameZh: "合艾", nameEn: "Hat Yai", country: "thailand", tier: "major", zone: "th-south", admin1Zh: "宋卡府", admin1En: "Songkhla",
-    lon: 100.4670, lat: 7.0170,
-    airport: { iata: "HDY", nameZh: "合艾国际机场", nameEn: "Hat Yai International", lon: 100.3928, lat: 6.9331 },
-    source: "Hat Yai 7.0170,100.4670（en.wikipedia）；HDY 机场：en.wikipedia（市区西约 9 公里，有吉隆坡/新加坡航线）；市镇人口 191,696（2024），泰南最大城市",
-  },
-  {
     id: "ko-chang", nameZh: "象岛", nameEn: "Ko Chang", country: "thailand", tier: "notable", zone: "th-east", admin1Zh: "达叻府", admin1En: "Trat",
     lon: 102.3519, lat: 12.1036,
     airport: { iata: "TDX", nameZh: "达叻机场", nameEn: "Trat Airport", lon: 102.3190, lat: 12.2746 },

@@ -68,4 +68,15 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "OSD", nameZh: "奥勒—厄斯特松德机场", nameEn: "Åre Östersund Airport", lon: 14.5008, lat: 63.1936 },
     source: "奥勒市中心 63.3986,13.0817；OSD 机场（距市区直线约 75 km，按本条目坐标算）：公开资料",
   },
+  {
+    id: "falun", nameZh: "法伦", nameEn: "Falun", country: "sweden", tier: "notable", zone: "se-svealand", admin1Zh: "达拉纳省", admin1En: "Dalarna County",
+    lon: 15.6323, lat: 60.6070,
+    source: "法伦市中心 60.607007,15.632306（OSM Nominatim；UNESCO 1027 官方遗产点 60.604720,15.630830）；达拉机场 BLE 在邻市博伦厄、2023-11-16 起无定期客运航班（机场官网只讲包机，1 级，2026-09-16 核）——OurAirports 仍标 scheduled_service=yes，是滞后数据；最近有定期航班的是 ARN，直线约 165 km（算），不填 airport（已有城市补充批，2026-09-16）",
+  },
+  {
+    id: "umea", nameZh: "于默奥", nameEn: "Umeå", country: "sweden", tier: "major", zone: "se-norrland", admin1Zh: "西博滕省", admin1En: "Västerbotten County",
+    lon: 20.2631, lat: 63.8257,
+    airport: { iata: "UME", nameZh: "于默奥机场", nameEn: "Umeå Airport", lon: 20.2828, lat: 63.7918 },
+    source: "于默奥市政厅广场 63.825657,20.263074（OSM Nominatim）；UME OurAirports 63.7918,20.2828，直线约 4 km，有国内与国际定期航班；霍尔姆松德港在城东南约 14 km、有通芬兰瓦萨的渡轮（已有城市补充批，2026-09-16）",
+  },
 ];

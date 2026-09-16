@@ -223,10 +223,11 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
   },
 
   "skeidararsandur": {
+    // seeing sources（2026-09-15 核实，fix，抽样 seed=13）: 斯凯扎拉桑德面积约 1,300 km²（冰岛南部旅游局 south.is 与维基一致，2–3 级；原写约 1,000 km²）
     // seeing sources: 外冲平原面积约 1000 平方公里（可查范围 1000–1300，属区间内的常见估值，3 级）；1996 年 Gjálp 冰下湖溃决洪峰约 5 万立方米每秒（学术文献 45,000–53,000，等同级别 2）；环岛公路最后一段 1974 年通车。2026-09-09 核，本轮无需改动。
     //   https://www.lpi.usra.edu/meetings/polar2000/pdf/4021.pdf
     seeing:
-      "Skeiðarársandur, on Iceland's south-east coast, lies between the Skeiðarárjökull outlet glacier of Vatnajökull and the sea — the largest glacial outwash plain (Icelandic sandur, \"sand plain\") in the world, about 1,000 km². It is an almost perfectly flat, vegetation-free black gravel desert cut by countless braided channels — a long straight section of Iceland's Ring Road runs right across it.",
+      "Skeiðarársandur, on Iceland's south-east coast, lies between the Skeiðarárjökull outlet glacier of Vatnajökull and the sea — the largest glacial outwash plain (Icelandic sandur, \"sand plain\") in the world, about 1,300 km². It is an almost perfectly flat, vegetation-free black gravel desert cut by countless braided channels — a long straight section of Iceland's Ring Road runs right across it.",
     formation:
       "Skeiðarársandur was \"built up\" by glacial rivers. The base of the glacier grinds up huge amounts of rock, and the meltwater, laden with this gravel, sand and mud, comes out of the mountains; where the slope suddenly flattens and the flow splits into many strands (braided), its carrying capacity drops and the sediment is spread out layer by layer, filling the space between the glacier snout and the sea into a large plain. Besides the everyday glacial rivers, the glacial flood from Grímsvötn every few years brings a sudden, enormous pulse of water and sediment that can reshape the channels of the whole sandur in one event.",
     observation:

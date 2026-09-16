@@ -21,12 +21,15 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "The seasons are distinct, with hot summers and cold winters. May–June and September–October are the most comfortable and the wine regions at their best; July–August is the Balaton high season and lakeside rooms need booking ahead. An inland climate means a wide day-to-night range, more so in the hills.",
   },
   budapest: {
+    // 人口 sources（2026-09-16 全国刷新）：KSH 常规表 8.1.2.9《全国人口最多的 50 个聚落》，时点 2026-01-01，2026-09-15 更新（https://www.ksh.hu/stadat_files/fol/hu/fol0014.html，1 级）——
+    //   布达佩斯 1,675,777 / 德布勒森 202,331 / 塞格德 157,596 / 米什科尔茨 139,246 / 佩奇 137,976 / 杰尔 128,225 / 凯奇凯梅特 108,106 / 肖普朗 60,035 / 维斯普雷姆 54,590 / 埃格尔 47,921 / 圣安德烈 28,433。
+    //   正文按既有写法取整到万位（中英两侧同口径）。**凯斯特海伊不在 50 大表内**，仍用 HNT 2025-01-01 的 17,455。
     identity:
-      "Budapest is the capital of Hungary and its only large city, with about 1.7 million people in 2025 (Hungarian Central Statistical Office). The Danube runs through it and divides it in two: Buda on the west bank is hills, Pest on the east is flat, and the two kinds of ground have produced two quite different cities.",
+      "Budapest is the capital of Hungary and its only large city, with about 1.68 million residents on 1 January 2026 (Hungarian Central Statistical Office). The Danube runs through it and divides it in two: Buda on the west bank is hills, Pest on the east is flat, and the two kinds of ground have produced two quite different cities.",
     howItWorks:
       "Budapest is both the capital and an administrative unit in its own right, ranking with the counties, divided into 23 districts (kerület), each with its own elected mayor and council alongside the city-wide mayor and assembly — the division of powers between district and city is the first thing to grasp about how it runs. It was formed only in 1873, by the merger of Buda and Óbuda on the west bank with Pest on the east; before that they were three separate towns. Addresses read district, street, number, and locals give the district number before the street name; Metro Line 1, opened in 1896, is the oldest underground railway on the European mainland. Newcomers most often go wrong by treating a river crossing as merely changing banks, when Buda is hills and Pest is plain, and the gradients, the scale of the streets and the pace of life differ on either side.",
     layout:
-      "The Danube runs north to south through the city and is its axis. On the west bank Buda centres on Castle Hill, with the old royal palace and the Matthias Church on top and narrow lanes and thermal springs below; further west rise Gellért Hill and the higher Buda hills. The east bank is flat: rings and radiating avenues spread outward from the Chain Bridge, Andrássy Avenue runs straight from the centre to Heroes' Square and the City Park, and the Parliament stands on the river. Margaret Island to the north is a park island in midstream.",
+      "The Danube runs north to south through the city and is its axis. On the west bank Buda centres on Castle Hill, with the old royal palace and the Matthias Church on top and narrow lanes and thermal springs below; Gellért Hill rises to the south and, farther west, the higher Buda hills. The east bank is flat: rings and radiating avenues spread outward from the Chain Bridge, Andrássy Avenue runs straight from the centre to Heroes' Square and the City Park, and the Parliament stands on the river. Margaret Island to the north is a park island in midstream.",
     gettingAround:
       "Ferenc Liszt International Airport lies about 16 km south-east, with an airport bus and the 100E coach into the centre. The city has four metro lines plus trams and buses; tram 2 runs along the Pest embankment and is the easiest way to see Castle Hill across the water. A funicular climbs Castle Hill. Much of the centre is walkable and all the Danube bridges can be crossed on foot.",
     culture:
@@ -38,7 +41,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
   debrecen: {
     identity:
-      "Debrecen stands on the Great Plain in eastern Hungary and is the country's second city, with about 200,000 people in 2025 (Hungarian Central Statistical Office). There are no hills and no great river; the plain runs to the horizon in every direction — and the history of this city is of one that grew in such a place on its market and its school.",
+      "Debrecen stands on the Great Plain in eastern Hungary and is the country's second city, with about 202,000 residents on 1 January 2026 (Hungarian Central Statistical Office). There are no hills and no great river; the plain runs to the horizon in every direction — and the history of this city is of one that grew in such a place on its market and its school.",
     howItWorks:
       "Debrecen is the seat of Hajdú-Bihar county and also a city of county rank — in the Hungarian system such a city is outside county administration and ranks with it. It is run by an elected mayor and assembly. From the sixteenth century it was the centre of Hungarian Reformed (Calvinist) life, earning it the name 'the Calvinist Rome'; the Reformed Great Church and the old college beside it are the origin point of the town, and the University of Debrecen is one of the largest in the country, its student numbers noticeably affecting the size of the city. Addresses read street and number, and locals orient by the Great Church, the Great Forest park and the university. Newcomers most often go wrong by taking it for an old town with a church, when it is at the same time the industrial and research centre of eastern Hungary.",
     layout:
@@ -46,7 +49,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Debrecen International Airport is about 6 km south of the centre with a few European routes. Trains to Budapest take about two and a half to three hours. The city has trams — line 1 is a loop tying the station, the centre and the Great Forest together — and buses, and the centre is walkable.",
     culture:
-      "Hungarian is universal, with better English around the university. The Reformed tradition is strong here and the churches are plain inside, without statuary — quite unlike a Catholic interior. The 'Debrecen sausage' known abroad is a different thing from the local product; the spicy sausage itself is easy to find in butchers and at the market. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with better English around the university. The Reformed tradition is strong here and the churches are plain inside, without statuary — quite unlike a Catholic interior. The 'Debrecen sausage' known abroad is a different thing from the local product; the spicy sausage itself is easy to find in butchers and at the market. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The Reformed Great Church and the old college; Kossuth Square in the centre; the Great Forest park (thermal baths, zoo, botanic garden); the Déri Museum; riding tram 1 the length of the city's axis; and Hortobágy, about 40 km west, as a day out.",
     whenAndTips:
@@ -55,7 +58,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   szeged: {
     // identity sources: 「阳光之城」是传统称号；实测日照佩奇略高于塞格德，故不作排名断言。2026-09-13 核。
     identity:
-      "Szeged lies in southern Hungary where the Tisza and the Maros meet, with about 160,000 people in 2025 (Hungarian Central Statistical Office), and has long been known as the city of sunshine. Its present shape came out of a flood: in 1879 the Tisza broke its banks and destroyed most of the town, and what stands now was rebuilt to a single plan.",
+      "Szeged lies in southern Hungary where the Tisza and the Maros meet, with about 158,000 residents on 1 January 2026 (Hungarian Central Statistical Office), and has long been known as the city of sunshine. Its present shape came out of a flood: in 1879 the Tisza broke its banks and destroyed most of the town, and what stands now was rebuilt to a single plan.",
     howItWorks:
       "Szeged is the seat of Csongrád-Csanád county and a city of county rank, run by an elected mayor and assembly. After the flood of 1879 the rebuilding did not follow the old lanes but adopted a radial and ring plan — from the air the street pattern today is a set of concentric ring roads with avenues running out from the centre, which is unusual among Hungarian towns. The University of Szeged is one of the city's largest institutions. Addresses read street and number, and locals orient by the cathedral square and the ring roads. Newcomers most often go wrong by assuming so regular a street plan is what the old town always looked like, when it is in fact the product of a disaster.",
     layout:
@@ -63,7 +66,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Szeged has no scheduled passenger airport; international flights go via Budapest, about 155 km away in a straight line and about two and a half hours by train. The city has trams and trolleybuses covering the rings and the main avenues, and the centre is walkable.",
     culture:
-      "Hungarian is universal, with better English around the university. Paprika is the local product and strings of drying peppers are a market sight; the Tisza fish soup (halászlé) is made differently here from elsewhere. The open-air theatre festival is held on the cathedral square in summer. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with better English around the university. Paprika is the local product and strings of drying peppers are a market sight; the Tisza fish soup (halászlé) is made differently here from elsewhere. The open-air theatre festival is held on the cathedral square in summer. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The Votive Church and cathedral square; the town hall and the art nouveau buildings of the old town; a walk along the Tisza; the thermal baths in Újszeged; buying paprika at the market; the summer open-air theatre on the cathedral square.",
     whenAndTips:
@@ -71,7 +74,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
   pecs: {
     identity:
-      "Pécs lies in south-western Hungary at the southern foot of the Mecsek, with about 140,000 people in 2025 (Hungarian Central Statistical Office). Sheltered by the range and far enough south, it is warmer than the rest of the country and grows plants seen nowhere else in it; it is also among the earliest places in Hungary to have had urban life — there was a town here in Roman times.",
+      "Pécs lies in south-western Hungary at the southern foot of the Mecsek, with about 138,000 residents on 1 January 2026 (Hungarian Central Statistical Office). Sheltered by the range and far enough south, it is warmer than the rest of the country and grows plants seen nowhere else in it; it is also among the earliest places in Hungary to have had urban life — there was a town here in Roman times.",
     howItWorks:
       "Pécs is the seat of Baranya county and a city of county rank, run by an elected mayor and assembly. It is built against the southern slope of the Mecsek, so its streets run downhill to the south and grow steeper to the north. Its urban history comes in layers: Roman Sopianae left the early Christian necropolis inscribed on the World Heritage list in 2000; in the Middle Ages it was a bishop's city; the Ottoman period left several mosques, one of which later became a Catholic church and is still the most conspicuous building on the main square. Addresses read street and number, and locals orient by the main square and by whether something is up or down the slope. Newcomers most often go wrong by picturing an old town on flat ground, when this is a city built on a hillside with a real difference in level from north to south.",
     layout:
@@ -79,7 +82,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Pécs-Pogány airport has no scheduled passenger service; international flights go via Budapest, about 170 km away in a straight line and about three hours by train. City buses cover the slope, and the centre is walkable, though north–south means gradient.",
     culture:
-      "Hungarian is universal, with better English around the university. The city's fabric layers Roman, medieval and Ottoman work in a way rare in Hungary. Zsolnay porcelain is the local industrial tradition and has a quarter of its own devoted to it. The wines of the Villány region, about 30 km south, are the local reds. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with better English around the university. The city's fabric layers Roman, medieval and Ottoman work in a way rare in Hungary. Zsolnay porcelain is the local industrial tradition and has a quarter of its own devoted to it. The wines of the Villány region, about 30 km south, are the local reds. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "Széchenyi Square and the domed church that was a mosque; the cathedral and the early Christian necropolis (World Heritage); the Zsolnay quarter; the viewpoints and trails on the Mecsek; the wineries of Villány about 30 km south.",
     whenAndTips:
@@ -87,7 +90,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   },
   gyor: {
     identity:
-      "Győr stands on the Little Plain in north-western Hungary, squarely between Budapest and Vienna, with about 130,000 people in 2025 (Hungarian Central Statistical Office). Three rivers meet here and the old town sits on the spit between them; it is at the same time one of Hungary's most important centres of the motor industry.",
+      "Győr stands on the Little Plain in north-western Hungary, squarely between Budapest and Vienna, with about 128,000 residents on 1 January 2026 (Hungarian Central Statistical Office). Three rivers meet here and the old town sits on the spit between them; it is at the same time one of Hungary's most important centres of the motor industry.",
     howItWorks:
       "Győr is the seat of Győr-Moson-Sopron county and a city of county rank, run by an elected mayor and assembly. Its position has set its role: it lies on the main corridor between Budapest and Vienna, was a fortress and a trading node historically, and is a freight and manufacturing hub today. The old town is a remarkably complete baroque quarter, standing in contrast to the modern industrial estates outside it. Addresses read street and number, and locals orient by the Chapter Hill, the town hall and the rivers. Newcomers most often go wrong by treating it as an industrial town to pass through, when the density and preservation of its old town are among the best in Hungary.",
     layout:
@@ -95,7 +98,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Győr has no scheduled passenger airport; international flights go via Budapest, about 106 km away in a straight line, or Vienna. Trains reach Budapest in about an hour and a half and Vienna in a little over an hour. City buses and walking serve the compact old town.",
     culture:
-      "Hungarian is universal, and German is also in common use this close to Austria. The baroque old town is dense with buildings, and many of its courtyards can be walked through. Art and music are active here and there is a street arts festival in summer. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, and German is also in common use this close to Austria. The baroque old town is dense with buildings, and many of its courtyards can be walked through. Art and music are active here and there is a street arts festival in summer. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "Chapter Hill and the cathedral; the baroque old town and its courtyards; a walk along the meeting of the rivers; the town hall; and from here the side channels and floodplain forest of the Szigetköz, or the Benedictine abbey at Pannonhalma about 20 km to the south-east.",
     whenAndTips:
@@ -104,7 +107,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   eger: {
     // identity sources: KSH 2025-01-01：48,686。新写内容的当批核实查出。2026-09-13 核。
     identity:
-      "Eger lies in northern Hungary at the southern foot of the Bükk, with about 49,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town and a red-wine region — the vineyards on the slopes and the cellars in the town are two ends of the same thing.",
+      "Eger lies in northern Hungary at the southern foot of the Bükk, with about 48,000 residents on 1 January 2026 (Hungarian Central Statistical Office). It is a baroque town and a red-wine region — the vineyards on the slopes and the cellars in the town are two ends of the same thing.",
     // howItWorks sources: 1994 年起州首府自动获州权市地位。2026-09-13 核。
     howItWorks:
       "Eger is the seat of Heves county and, as a county seat, automatically a city of county rank, run by an elected mayor and assembly. The town sits in a small river valley at the southern foot of the Bükk, hills to the north and the plain opening to the south — a position that gave it both the south-facing slopes vines need and, historically, a place on a north–south corridor, which is why the castle still stands on high ground to the east. The Ottoman period left a minaret here, among the northernmost surviving examples of its kind. Addresses read street and number, and locals orient by the main square, the castle and the cellar valley. Newcomers most often go wrong by staying in the town and never walking out to the cellar valley, which is the other half of local life.",
@@ -113,7 +116,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Eger has no airport with scheduled flights; international flights go via Budapest, about 106 km away in a straight line and about two hours by train. The town is walkable, and the cellar valley can be reached on foot or by bus. Buses for the Bükk leave from the coach station.",
     culture:
-      "Hungarian is universal, with English usable in tourism. The local red, Egri Bikavér, is a blend made to the region's rules from several varieties; tasting by the glass in the cellars is the usual way and not expensive. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with English usable in tourism. The local red, Egri Bikavér, is a blend made to the region's rules from several varieties; tasting by the glass in the cellars is the usual way and not expensive. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "Dobó Square and the baroque town; Eger castle; the Ottoman minaret; the cathedral and the archdiocesan library; the cellars in the Valley of the Beautiful Women; and the Bükk from here, for walking and caves.",
     whenAndTips:
@@ -122,7 +125,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   sopron: {
     // identity sources: KSH 2025-01-01：60,820。2026-09-13 核。
     identity:
-      "Sopron lies at Hungary's western edge, with Austria on three sides of it, and had about 61,000 people in 2025 (Hungarian Central Statistical Office). Its medieval core is among the most complete in the country, its street pattern largely unchanged for centuries; vineyards and low hills surround it.",
+      "Sopron lies at Hungary's western edge, with Austria on three sides of it, and had about 60,000 residents on 1 January 2026 (Hungarian Central Statistical Office). Its medieval core is among the most complete in the country, its street pattern largely unchanged for centuries; vineyards and low hills surround it.",
     howItWorks:
       "Sopron is a city of county rank, run by an elected mayor and assembly. Its position is unusual: hard against the border, with everyday movement across it — commuting and shopping both — entirely routine, and German in common local use. The old town is an almost complete medieval ring, with Roman wall foundations beneath it and the Fire Tower standing on the line of the old gate. Addresses read street and number, and locals orient by the main square, the tower and whether something is inside or outside the ring. Newcomers most often go wrong by taking it for a border town, when it is a place with two thousand years of continuous settlement.",
     layout:
@@ -130,7 +133,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Sopron has no scheduled passenger airport; international flights go via Budapest, about 185 km away in a straight line, or Vienna. Trains reach Vienna in a little over an hour and Budapest in about two and a half. The old town is small and walkable.",
     culture:
-      "Hungarian is universal, and German is also in common use here. The local wines are chiefly reds, made from Blaufränkisch, and the wineries around the town generally receive visitors. Courtyards and cellars in the old town often show Roman, medieval and baroque work in one building. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, and German is also in common use here. The local wines are chiefly reds, made from Blaufränkisch, and the wineries around the town generally receive visitors. Courtyards and cellars in the old town often show Roman, medieval and baroque work in one building. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The Fire Tower and the main square; the medieval lanes and courtyards of the old town; the Roman remains; the wineries around the town; the reed belts and birdwatching at Lake Fertő; the Esterházy palace at Fertőd, about 25 km east.",
     whenAndTips:
@@ -139,7 +142,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   szentendre: {
     // identity sources: KSH 2025-01-01：28,483。2026-09-13 核。
     identity:
-      "Szentendre stands on the west bank of the Danube about 20 km north of Budapest, with about 28,000 people in 2025 (Hungarian Central Statistical Office). It is a baroque town on a slope above the river, and from the twentieth century a place where painters settled; galleries and craft shops are what it is known for today.",
+      "Szentendre stands on the west bank of the Danube about 20 km in a straight line north of Budapest, with about 28,000 residents on 1 January 2026 (Hungarian Central Statistical Office). It is a baroque town on a slope above the river, and from the twentieth century a place where painters settled; galleries and craft shops are what it is known for today.",
     howItWorks:
       "Szentendre belongs to Pest county and is run by an elected mayor and council. Administratively it is a town in its own right, but in daily life it is closely tied to Budapest — the HÉV suburban railway runs straight there, and many people live here and work in the capital. Its present appearance dates from the seventeenth and eighteenth centuries, when Serb communities who settled here built several Orthodox churches whose towers are still part of the skyline. Addresses read street and number, and locals orient by the main square, the riverfront and the church up the slope. Newcomers most often go wrong by walking only the shopping street along the river, when the narrow lanes up the slope are what the old town is really about.",
     layout:
@@ -147,10 +150,80 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     gettingAround:
       "The HÉV suburban railway from Budapest takes about 40 minutes; there are also buses and, in season, boats on the Danube. The town is walkable, though the lanes up the slope have steps.",
     culture:
-      "Hungarian is universal, with English usable in tourism. The Orthodox churches were built by communities who settled here in the seventeenth and eighteenth centuries, and both their architecture and their interiors differ from the Catholic and Reformed churches usual in Hungary. Galleries and craft shops are dense, many of them converted studios. Tipping in restaurants is usually about ten per cent.",
+      "Hungarian is universal, with English usable in tourism. The Orthodox churches were built by communities who settled here in the seventeenth and eighteenth centuries, and both their architecture and their interiors differ from the Catholic and Reformed churches usual in Hungary. Galleries and craft shops are dense, many of them converted studios. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary.",
     seeAndDo:
       "The main square and the lanes of the old town; the Orthodox churches and the view from church hill; the galleries and ceramic studios; the Danube promenade; the open-air ethnographic museum (Skanzen) outside town; and continuing north to Visegrád and Esztergom.",
     whenAndTips:
       "April–June and September–October are the most comfortable; summer weekends and holidays are crowded, and mornings are quieter. Half a day for the old town, a full day with the Skanzen.",
+  },
+  veszprem: {
+    // 全七段 sources: 同中文侧（KSH Detailed Gazetteer 2025 xlsx, tier 1; veszprem.hu, tier 1; European Commission on the 2023 Capitals of Culture, tier 1; MÁV Group press release 2026-05-29, tier 1; Archdiocese of Veszprém, tier 1; hu.wikipedia for chapel frescoes and viaduct, tier 3; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok，KSH 常住人口口径与内政部户籍口径不同、条目用对）。
+    identity:
+      "Veszprém is a county seat in Transdanubia, western Hungary, built on a terrace at the southern foot of the Bakony hills about 11 km in a straight line from the north shore of Lake Balaton; its resident population on 1 January 2026 was about 55,000 (Hungarian Central Statistical Office). The castle quarter stands on a ridge beside the old town, with the cathedral and the archbishop's palace; in 2023 Veszprém and the Balaton region were a European Capital of Culture.",
+    howItWorks:
+      "Veszprém is the seat of Veszprém County and a city with county rights, run by a directly elected mayor and a city assembly; under a 1997 local decree the city is divided into 14 districts, and since 2022 each district has had its own flag. It is an example of a Balaton county whose seat is not on the lake: county institutions, the university and schools are concentrated in the town on its terrace, while the lakeshore is a separate string of resort towns. The castle quarter is a narrow ridge carrying a single street lined with churches and the archbishop's palace above the Séd valley, and a viaduct links the castle hill with the hill to the west. The diocese is old — its existence is attested at the latest by a charter from the time of King Stephen — and the city calls itself the 'City of Queens'. Locals find their way by the castle quarter, the old town square and the viaduct. Newcomers often take it for a lakeside town, or expect the railway station to be in the centre, when the lake is ten-odd kilometres south and the station is on the north side of town.",
+    layout:
+      "The old town square lies at the foot of the castle hill, with the Fire Tower on its edge; walking north up into the castle quarter, the cathedral, the Gizella Chapel and the archbishop's palace line the ridge, and at its northern tip stand statues of King Stephen and Queen Gisela. West of the castle quarter are the Séd valley and the St Stephen Viaduct, with the zoo in the valley. The railway station is about 3 km north of the centre in a straight line; ten-odd kilometres south are Balatonalmádi and Balatonfüred on the lake's north shore, and the Tihany peninsula is about 20 km away in a straight line.",
+    gettingAround:
+      "There is no airport with scheduled flights here; international flights go through Budapest (BUD), about 109 km away in a straight line. Veszprém is on railway line 20, and since 30 May 2026 the Veszprém–Ajka section has reopened, ending a long period of replacement buses, so direct trains through Veszprém once again reach the capital and cities to the west. The station is about 3 km from the old town in a straight line, so take a city bus. The coach station is close to the old town square, and buses are the usual way to the towns along Lake Balaton. The old town and castle quarter are walkable.",
+    culture:
+      "Hungarian is spoken, with English usable among younger people and in tourism. Veszprém is a university town and a bishop's see, and the churches in the castle quarter are in use, so dress modestly and keep quiet inside. The north shore of Lake Balaton is a wine region, and nearby Herend is known for its porcelain. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary, so check the bill before tipping.",
+    seeAndDo:
+      "The old town square and the Fire Tower; St Michael's Cathedral and the Gizella Chapel in the castle quarter; the view over the Séd valley from the northern end of the castle; the St Stephen Viaduct; Veszprém Zoo; the Laczkó Dezső Museum; and a trip south to the north shore of Lake Balaton and the Tihany peninsula.",
+    whenAndTips:
+      "May–September is the most comfortable, and in summer you can combine the town with the lakeshore; the lake is crowded and beds are scarce in July–August. The railway station is not in the centre, so allow time for a bus if you have luggage.",
+  },
+  kecskemet: {
+    // 全七段 sources: 同中文侧（KSH Detailed Gazetteer 2025 xlsx, tier 1; kecskemet.hu, tier 1; Kodály Institute of the Liszt Academy, tier 1 institution; Katona József Museum on the Cifrapalota, tier 1; UNESCO MAB and Kiskunság National Park Directorate, tier 1; eAmbrosia register, tier 1; distances computed）。 核实 2026-09-15 当批（content-verifier 独立检索，本条全部 ok）。
+    identity:
+      "Kecskemét lies on the Great Plain between the Danube and the Tisza in central Hungary and is the seat of Bács-Kiskun County; its resident population on 1 January 2026 was about 108,000 (Hungarian Central Statistical Office). It is the birthplace of the composer Zoltán Kodály, its centre is a chain of squares lined with Art Nouveau buildings from the late 19th and early 20th centuries, and beyond the city lie the sands and alkaline grasslands of Kiskunság National Park.",
+    howItWorks:
+      "Kecskemét is the seat of Bács-Kiskun County and a city with county rights, run by a directly elected mayor and a city assembly whose members come partly from single-member districts and partly from party lists. Its centre is a chain of squares: the town hall, the Franciscan church, the Kodály Institute, the Reformed church, the Great Church and the Cifrapalota are all within a few hundred metres. Much of the city's face was built by the council itself at the end of the 19th century — the town hall was a municipal project, and the Cifrapalota began as a rental block built by the city, with the Zsolnay works in Pécs specially engaged for its glazed ceramic facade. The city is also home to the Kiskunság National Park Directorate, but the park is a set of separate protected areas scattered across the plain, not something on the edge of town. Locals find their way by Kossuth Square, the railway station and neighbourhood names. Newcomers most often assume the national park begins where the city ends, or that the airfield by the city has flights — it is a military base, and flying means going to Budapest.",
+    layout:
+      "Kossuth Square and Liberty Square form the centre, with the town hall, the Franciscan church and Kodály Institute, the Great Church, the Reformed church and the Cifrapalota all around them; the photography museum, the naïve art museum and the toy museum are in the streets around the squares. The railway and coach stations are about 1 km north-east of the squares, the national park's House of Nature visitor centre is in the north-east of the city, and the arboretum is to the west. Orchards, farmland and sand country surround the city.",
+    gettingAround:
+      "There is no airport with scheduled flights here; international flights go through Budapest (BUD), about 67 km away in a straight line. Kecskemét is on the Budapest–Kecskemét railway line, with the railway and coach stations side by side about 1 km from the centre, an easy walk or city bus ride. The squares in the centre are walkable; the national park's protected areas need a car or one of the park's organised programmes.",
+    culture:
+      "Hungarian is spoken, with English usable among younger people and in tourism. Zoltán Kodály was born here in 1882, and the music education institute named after him occupies a former Franciscan monastery in the centre; the carillon on the town hall facade plays on the hour. Kecskeméti barackpálinka, apricot brandy, is an EU geographical indication spirit. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary, so check the bill before tipping.",
+    seeAndDo:
+      "The town hall and its hourly carillon; the art collection and Peacock Hall in the Cifrapalota; the Franciscan church and the Kodály Institute; the Hungarian Museum of Photography; the naïve art and toy museums; the House of Nature visitor centre; the arboretum west of the centre; and the sands and alkaline lakes of Kiskunság National Park.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; midsummer on the plain is hot and dry. The Cifrapalota is closed on Mondays, and other museums' hours are as announced by each. Before heading to the park's protected areas, check which are open and when at the House of Nature or on the park directorate's website.",
+  },
+
+  miskolc: {
+    // 全七段 sources: 同中文侧（KSH gazetteer 2025 at 1 January 2025 for population and area, tier 1, with the ranking written as \"excluding Budapest's districts\"; KSH settlement-part table for the built-up areas inside the city, tier 1 but on census caliber; MVK on the 1897 tramway, tier 1; the castle's closure for restoration with no announced reopening date as of 16 September 2026, tier 1; distances computed）。 核实 2026-09-16 当批。
+    identity:
+      "Miskolc lies in north-eastern Hungary, with 139,246 residents at the start of 2026 (Central Statistical Office) — on that table, and excluding the districts of Budapest, the country's fourth largest city. The city runs along the Szinva, and its territory reaches right into the Bükk hills: villages up in the hills such as Lillafüred and Hámor are administratively part of it, and so are the caves, the travertine cave and the mountain lake.",
+    howItWorks:
+      "The city wears three hats at once: regional capital, city of county rank, and seat of a state administrative district — and that last tier is not self-government at all but a branch of the government office, separate from the elected city administration. Only Budapest has boroughs in Hungary, so there is no district government below the city here. What really shapes life is the shape of the territory: it reaches into the Bükk, where the built-up areas of Lillafüred, Hámor, Ómassa and Bükkszentlászló together hold under 1,200 people while the central built-up area holds about 132,000 — going into the hills here is not leaving the city, a municipal bus will take you. The result is four separate centres: the city centre with the Avas hill, Diósgyőr to the west with its castle and old industry, Miskolctapolca to the south with its cave bath, and Lillafüred up in the hills; the official tourist material is organised around exactly those four, and locals give one of those names before any street. Conversely, the national park authority sits in the city while the park itself is not run by the city.",
+    layout:
+      "The town hall square and the Szinva terrace form the centre, with the Avas lookout tower about 1 km south on the hillside. Diósgyőr Castle is about 6.6 km west in a straight line, Hámori Lake and the Anna Cave about 11 to 12 km west at Lillafüred, with St Stephen's Cave there too, and the cave bath at Miskolctapolca about 5.4 km south-west.",
+    gettingAround:
+      "The local airfield has no scheduled passenger flights; the nearest airports that do are Debrecen, about 93 km away in a straight line, and Budapest, about 136 km. Trams have run since 1897 and still form the spine from the centre out to Diósgyőr, with buses reaching the built-up areas up in the hills; the railway station is south-east of the centre. The climate is temperate continental, with cold winters.",
+    culture:
+      "Hungarian is spoken. Lillafüred and Miskolctapolca up in the hills are where people go at weekends, and the cave bath is the city's signature facility. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary, so check the bill before tipping.",
+    seeAndDo:
+      "The cave bath at Miskolctapolca; Hámori Lake, the Anna Cave and St Stephen's Cave at Lillafüred; the view from the Avas lookout tower; Diósgyőr Castle — closed for restoration as of September 2026 with no reopening date announced, so check official notices; and the tram ride along the axis from the centre out to Diósgyőr.",
+    whenAndTips:
+      "May to September suits the hills and the baths, and the Bükk carries snow in winter. Caves stay cold all year, so take a jacket; the hill settlements are part of the city but not close, so allow driving time for a day out.",
+  },
+
+  keszthely: {
+    // 全七段 sources: 同中文侧（KSH gazetteer 2025, tier 1; the Zala county government office page on the district office seated here and its 33 settlements, tier 1; Festetics Palace begun 1745 and two centuries in the family, tier 1; Balaton Museum building 1925–1928, tier 1; Hévíz-Balaton airport timetable, tier 1; distances computed）。 核实 2026-09-16 当批。
+    identity:
+      "Keszthely stands at the western end of Lake Balaton, with 17,455 residents at the start of 2025 (Central Statistical Office). Its landmark is the Festetics Palace, begun in 1745 and held by the Festetics family for some two centuries, now a museum; the family also placed a school, a library and their estate here, which is why a town of seventeen thousand carries a density of cultural institutions out of all proportion to its size.",
+    howItWorks:
+      "Keszthely is a town with its own council and municipal office, but it is not the county seat — that is some thirty kilometres west in a straight line. Its other hat is as the seat of a state administrative district, whose office sits on Kossuth street here and covers thirty settlements including Hévíz. That is where the common misunderstanding lies: Hévíz is a separate town with its own municipal government, and only belongs to Keszthely in the sense that the state's district office covers it — self-governing municipalities and state administrative districts are two entirely different things. The shape of the town is a little counter-intuitive too: the main square and the axis running north to the palace form the old town, while the lakeside beach, the museum and the railway station are more than a kilometre to the south — this lakeside town has its back to the lake. Its living radius is set by a palace and a lake: the palace brought the institutions, while the lake and the thermal water at Hévíz, four kilometres away, bring the visitors.",
+    layout:
+      "The main square is the centre of the old town, with the Festetics Palace about 700 m north and the old town's axis between them. The Balaton Museum is about 700 m south, the town beach about 1 km south-east on the lake, and the railway station about 800 m south. Lake Hévíz is about 4.5 km north-west in a straight line, in another town.",
+    gettingAround:
+      "There is no airport within Keszthely; Hévíz-Balaton Airport, about 11 km south-west, has only a few seasonal flights, and the nearest airport with year-round scheduled service is Budapest, about 170 km away in a straight line. The railway is a branch off the southern Balaton line, and most services involve a change at Balatonszentgyörgy; buses and boats serve the lake in summer. The town is walkable. The climate is temperate continental, with hot summers.",
+    culture:
+      "Hungarian is spoken. This is the cultural centre of the western Balaton, with the palace library and the estate museum open to visitors and a lively lakefront in summer. Restaurants may charge a service fee, but it has to be shown on the bill; anything beyond it is voluntary, so check the bill before tipping.",
+    seeAndDo:
+      "The Festetics Palace and its library; the Balaton Museum; the town beach and the lakeside path; the thermal lake at Hévíz to the north-west; and a ride south along the Balaton cycle route.",
+    whenAndTips:
+      "June to August is the lake's high season and accommodation books up, while May and September are quieter with good weather. The palace and the lakefront are at opposite ends of town, a kilometre or two apart, and Hévíz is a separate town, so allow for the bus and the journey.",
   },
 };

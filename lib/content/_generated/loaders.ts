@@ -47,6 +47,14 @@ export const TERRAIN_ZH_LOADERS: Record<string, () => Promise<Record<string, Ter
   "malta": () => import("@/lib/content/malta/terrain.zh").then((m) => m.TERRAIN_ZH),
   "estonia": () => import("@/lib/content/estonia/terrain.zh").then((m) => m.TERRAIN_ZH),
   "chile": () => import("@/lib/content/chile/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "latvia": () => import("@/lib/content/latvia/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "romania": () => import("@/lib/content/romania/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "bulgaria": () => import("@/lib/content/bulgaria/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "uzbekistan": () => import("@/lib/content/uzbekistan/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "lithuania": () => import("@/lib/content/lithuania/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "sri-lanka": () => import("@/lib/content/sri-lanka/terrain.zh").then((m) => m.TERRAIN_ZH),
+  "brunei": () => import("@/lib/content/brunei/terrain.zh").then((m) => m.TERRAIN_ZH),
 };
 
 export const TERRAIN_EN_LOADERS: Record<string, () => Promise<Record<string, TerrainLesson>>> = {
@@ -93,6 +101,14 @@ export const TERRAIN_EN_LOADERS: Record<string, () => Promise<Record<string, Ter
   "malta": () => import("@/lib/content/malta/terrain.en").then((m) => m.TERRAIN_EN),
   "estonia": () => import("@/lib/content/estonia/terrain.en").then((m) => m.TERRAIN_EN),
   "chile": () => import("@/lib/content/chile/terrain.en").then((m) => m.TERRAIN_EN),
+  "latvia": () => import("@/lib/content/latvia/terrain.en").then((m) => m.TERRAIN_EN),
+  "romania": () => import("@/lib/content/romania/terrain.en").then((m) => m.TERRAIN_EN),
+  "bulgaria": () => import("@/lib/content/bulgaria/terrain.en").then((m) => m.TERRAIN_EN),
+  "uzbekistan": () => import("@/lib/content/uzbekistan/terrain.en").then((m) => m.TERRAIN_EN),
+  "lithuania": () => import("@/lib/content/lithuania/terrain.en").then((m) => m.TERRAIN_EN),
+  "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/terrain.en").then((m) => m.TERRAIN_EN),
+  "sri-lanka": () => import("@/lib/content/sri-lanka/terrain.en").then((m) => m.TERRAIN_EN),
+  "brunei": () => import("@/lib/content/brunei/terrain.en").then((m) => m.TERRAIN_EN),
 };
 
 export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
@@ -139,6 +155,14 @@ export const TRAVEL_ZH_LOADERS: Record<string, () => Promise<Record<string, Trav
   "malta": () => import("@/lib/content/malta/travel.zh").then((m) => m.TRAVEL_ZH),
   "estonia": () => import("@/lib/content/estonia/travel.zh").then((m) => m.TRAVEL_ZH),
   "chile": () => import("@/lib/content/chile/travel.zh").then((m) => m.TRAVEL_ZH),
+  "latvia": () => import("@/lib/content/latvia/travel.zh").then((m) => m.TRAVEL_ZH),
+  "romania": () => import("@/lib/content/romania/travel.zh").then((m) => m.TRAVEL_ZH),
+  "bulgaria": () => import("@/lib/content/bulgaria/travel.zh").then((m) => m.TRAVEL_ZH),
+  "uzbekistan": () => import("@/lib/content/uzbekistan/travel.zh").then((m) => m.TRAVEL_ZH),
+  "lithuania": () => import("@/lib/content/lithuania/travel.zh").then((m) => m.TRAVEL_ZH),
+  "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/travel.zh").then((m) => m.TRAVEL_ZH),
+  "sri-lanka": () => import("@/lib/content/sri-lanka/travel.zh").then((m) => m.TRAVEL_ZH),
+  "brunei": () => import("@/lib/content/brunei/travel.zh").then((m) => m.TRAVEL_ZH),
 };
 
 export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, TravelGuide>>> = {
@@ -185,4 +209,12 @@ export const TRAVEL_EN_LOADERS: Record<string, () => Promise<Record<string, Trav
   "malta": () => import("@/lib/content/malta/travel.en").then((m) => m.TRAVEL_EN),
   "estonia": () => import("@/lib/content/estonia/travel.en").then((m) => m.TRAVEL_EN),
   "chile": () => import("@/lib/content/chile/travel.en").then((m) => m.TRAVEL_EN),
+  "latvia": () => import("@/lib/content/latvia/travel.en").then((m) => m.TRAVEL_EN),
+  "romania": () => import("@/lib/content/romania/travel.en").then((m) => m.TRAVEL_EN),
+  "bulgaria": () => import("@/lib/content/bulgaria/travel.en").then((m) => m.TRAVEL_EN),
+  "uzbekistan": () => import("@/lib/content/uzbekistan/travel.en").then((m) => m.TRAVEL_EN),
+  "lithuania": () => import("@/lib/content/lithuania/travel.en").then((m) => m.TRAVEL_EN),
+  "kyrgyzstan": () => import("@/lib/content/kyrgyzstan/travel.en").then((m) => m.TRAVEL_EN),
+  "sri-lanka": () => import("@/lib/content/sri-lanka/travel.en").then((m) => m.TRAVEL_EN),
+  "brunei": () => import("@/lib/content/brunei/travel.en").then((m) => m.TRAVEL_EN),
 };
