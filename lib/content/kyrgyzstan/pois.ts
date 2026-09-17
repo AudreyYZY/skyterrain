@@ -63,7 +63,6 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "卡拉巴尔塔火车站", nameEn: "Kara-Balta railway station", lon: 73.85895, lat: 42.81602, kind: "transport" },
   ],
   toktogul: [
-    { nameZh: "奇奇坎河河口", nameEn: "Mouth of the Chychkan", lon: 72.90355, lat: 41.87003, kind: "nature" },
     { nameZh: "克特门-托别盆地", nameEn: "Ketmen-Töbö basin", lon: 72.91667, lat: 41.83333, kind: "nature" },
     { nameZh: "托克托古尔水库", nameEn: "Toktogul Reservoir", lon: 72.8742, lat: 41.8064, kind: "nature" },
     { nameZh: "阿拉泰国家自然公园", nameEn: "Alatai State Nature Park", lon: 72.19984, lat: 41.9912, kind: "nature" },
