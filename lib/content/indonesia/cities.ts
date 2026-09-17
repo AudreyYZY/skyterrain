@@ -79,4 +79,16 @@ export const CITIES: CityEntry[] = [
     airport: { iata: "LOP", nameZh: "龙目国际机场", nameEn: "Lombok International Airport", lon: 116.2782, lat: -8.7600 },
     source: "马塔兰市中心 -8.5837726,116.1068500（OSM Nominatim r12 行政多边形中心）；LOP OurAirports -8.7600,116.2782，直线约 27 km，有定期航班 —— 机场在中龙目县普朱特、不在本市市域内，正文写明（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "palembang", nameZh: "巨港", nameEn: "Palembang", country: "indonesia", tier: "major", zone: "id-sumatra", admin1Zh: "南苏门答腊省", admin1En: "South Sumatra",
+    lon: 104.756728, lat: -2.991045,
+    airport: { iata: "PLM", nameZh: "苏丹马哈茂德·巴达鲁丁二世机场", nameEn: "Sultan Mahmud Badaruddin II Airport", lon: 104.698147, lat: -2.897653 },
+    source: "巨港市长办公楼（旧水塔楼）-2.991045,104.756728（OSM way/605453912）；PLM 直线约 12 km、**在本市市域内**（苏卡拉米区），有国内与国际定期航班 —— 与本库马塔兰 LOP、三宝垄 SRG 的「机场在隔壁县」不同，正文可以正面写；⚠️ 该机场的国际身份 2024 年被撤销、2025 年恢复，正文带年份；与地形条目 krakatoa、lake-toba 所在的苏门答腊一侧呼应（本库无穆西河条目）（已有城市补充批，2026-09-17）",
+  },
+  {
+    id: "banjarmasin", nameZh: "班贾尔马辛", nameEn: "Banjarmasin", country: "indonesia", tier: "major", zone: "id-kalimantan", admin1Zh: "南加里曼丹省", admin1En: "South Kalimantan",
+    lon: 114.588732, lat: -3.327742,
+    airport: { iata: "BDJ", nameZh: "沙姆苏丁·努尔国际机场", nameEn: "Syamsudin Noor International Airport", lon: 114.761209, lat: -3.440112 },
+    source: "班贾尔马辛市政厅 -3.327742,114.588732（OSM way/558907717 amenity=townhall）；BDJ 直线约 23 km、有定期航班，**机场在班贾尔巴鲁市、不在本市市域** —— 与「省会 2022 年也搬到了班贾尔巴鲁」是同一条线索；比照既有做法仍填 airport；与地形条目 kapuas-river、tanjung-puting 所在的加里曼丹一侧呼应（本库无巴里托河条目）（已有城市补充批，2026-09-17）",
+  },
 ];
