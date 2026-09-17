@@ -207,4 +207,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September is the most comfortable; both passes can close in winter, so checking road conditions before setting out is not optional. Expect small-town lodging and supplies — this is a staging point on a long road, where most people spend a night or restock and move on.",
   },
+
+  kazarman: {
+    // 全七段 sources: 同中文侧（National Statistical Committee table 825 at 1 January 2026, tier 1, digit-checked 5/5 against Toktogul, Kara-Balta, Bishkek, Naryn and Talas already in the repo; the country's list of 33 cities from the state registration service's structure table, tier 1, which is what makes the "still a village" point checkable; UNESCO Tentative List ref 1512 for the petroglyphs, tier 1 — only the archaeology and dating are written, not the beliefs the listing text mentions; distances computed from this entry's own coordinates. The airfield has scheduled flights but no `airport` field is filled, because the IATA codes the airline's own API returns for it, Naryn and Talas are absent from OurAirports and the conflict is unresolved）。 核实 2026-09-17 当批。
+    identity:
+      "Kazarman lies in western Kyrgyzstan in the Naryn valley on the eastern slope of the Fergana range, with 11,892 residents at the start of 2026 (National Statistical Committee). It is the administrative centre of Toguz-Toro district, ringed by mountains — north over a pass towards Naryn, west down towards Jalal-Abad — and an airfield with scheduled flights sits just outside the village.",
+    howItWorks:
+      "In Kyrgyzstan a \"city\" is an act of legislation, not a population threshold. Kazarman has nearly twelve thousand people, an airfield and a district to administer, and is still officially a village; meanwhile Kok-Jangak in the same region, with about thirteen thousand, is a city, and Shopokov over in Chuy, with three hundred fewer people than here, is a city too. The country's thirty-three cities are listed one by one in the state registration service's structure table, and this place is not among them. So the question of whether somewhere counts as a city is answered by that list, not by the population column. It also explains what is unusual here: a village that is a district seat, with the village administration and the district's own offices on the same street. The living radius is set by the mountains — the pass to the north is often closed by snow in winter, and then the flight is how people come and go, which is rare for a settlement of this size.",
+    layout:
+      "The village administration is in the middle with the bazaar about 0.2 km west of it. Kazarman airfield is about 1.8 km east-north-east. The Saimaly-Tash petroglyphs are about 30 km south-west up in the mountains, and the national nature park of the same name about 31 km south-south-west.",
+    gettingAround:
+      "Kazarman has an airfield with scheduled flights about 1.8 km north-east of the village — unusual for a settlement of ten thousand or so. Overland access means mountain roads: north over the passes towards Naryn, west down towards Jalal-Abad, with the passes often snowed in during winter, so check conditions before setting out. The climate is temperate continental, hot in the valley in summer and cold in winter.",
+    culture:
+      "Kyrgyz and Russian are spoken. Since 1 January 2026 restaurants in Kyrgyzstan may no longer add a separate service charge.",
+    seeAndDo:
+      "The village itself is a mountain settlement and what there is to see is up in the hills: according to the UNESCO Tentative List text, some ten thousand stones bearing images have been identified at Saimaly-Tash, the earliest dating to the third and early second millennia BC, and a national nature park covers the area around them. Going up needs a guide and the right season.",
+    whenAndTips:
+      "June to September is the season for the mountains; at other times the passes and the track up are often impassable. The petroglyph area is high with no supplies, so a local guide is essential and worth asking whether the route is open on the day; lodging in the village is family-run and very limited.",
+  },
+
+  "kyzyl-suu": {
+    // 全七段 sources: 同中文侧（table 825 at 1 January 2026, tier 1, same digit check; the district's own website confirms the administration's address here, tier 1; the region's city list from the state registration service's structure table, tier 1, which is what makes "the largest district with no city in it" checkable; distances computed from this entry's own coordinates — the Jeti-Ögüz rocks POI shares its coordinates digit-for-digit with the terrain entry's anchor. OurAirports flags Tamga as having scheduled service while the airline's own route list does not include it, so that row is not used）。 核实 2026-09-17 当批。
+    identity:
+      "Kyzyl-Suu stands on the southern shore of Issyk-Kul where the rivers come out of the Terskey Ala-Too, with 15,716 residents at the start of 2026 (National Statistical Committee). It is the administrative centre of Jeti-Ögüz district; some eighteen kilometres east, red sandstone has been cut into a row of standing forms — the place known as the Seven Bulls.",
+    howItWorks:
+      "Jeti-Ögüz is the most populous district in the Issyk-Kul region, with over a hundred thousand people, more than any of the other four; and it is also the only district in the region with no city inside it at all — the region's three cities are all in other districts. So the largest district is administered from a village of fifteen thousand. There is a further layer that confuses people: within this district the name Jeti-Ögüz refers to three different places — the district itself, a village of about 3,900 that shares the name, and a separately counted resort settlement of about 280 — and the district administration is in none of them, but here, eighteen kilometres away. So \"going to Jeti-Ögüz\" always needs saying which one. The village itself is simple in plan: the district offices, the bazaar and a few main streets together, the road into the mountains heading east and the road down to the lake heading north.",
+    layout:
+      "The district administration is in the middle of the village, the bazaar about 0.2 km west of it and the destination information centre about 0.7 km north-east. The Jeti-Ögüz rocks and the Broken Heart are about 18.7 km due east and the red rocks viewpoint about 19.3 km due east; the administration of Jeti-Ögüz village is about 20 km east-north-east.",
+    gettingAround:
+      "Kyzyl-Suu has no airport with scheduled flights; the nearest that does is Karakol, about 38 km east-north-east. The road along the southern shore is the main route, east to Karakol and west towards Balykchy, while the roads into the mountains are strongly seasonal. The climate is temperate continental, milder by the lake than up the valleys.",
+    culture:
+      "Kyrgyz and Russian are spoken. Since 1 January 2026 restaurants in Kyrgyzstan may no longer add a separate service charge.",
+    seeAndDo:
+      "The drive east into the valley for the red rock forms of the Seven Bulls and the Broken Heart, with the red rocks viewpoint beside them; the bazaar in the village; and the southern shore road, using the village as a base.",
+    whenAndTips:
+      "June to September suits the mountains, and the valley roads can be hard going under snow in winter. The valley floods easily after rain and during the melt, so ask locally about the day's conditions; lodging in the village is family-run.",
+  },
 };

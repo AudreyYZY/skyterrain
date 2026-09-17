@@ -207,4 +207,40 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "April to May and September to October are the most comfortable; high summer on the plain is very hot. Tamerlane's Gate and the Zomin direction are both tens of kilometres out and need a hired car or a long-distance bus, half a day each; the town itself takes half a day.",
   },
+
+  nurafshon: {
+    // 全七段 sources: 同中文侧（State Statistics Committee open dataset 246, start-of-2026 column, tier 1, digit-checked 10/10 against every Uzbek city already in the repo; the 2017 Senate resolution that renamed Toʻytepa, changed its boundaries, made it a city of regional subordination and designated it the region's administrative centre, tier 2 relaying the resolution — written as an administrative fact, with none of the renaming's symbolism, no serving officials and none of the promotional positioning; OurAirports flags Tashkent-Khumo as having scheduled service when it is a business-aviation gateway, so it is not used; distances computed from this entry's own coordinates）。 核实 2026-09-17 当批。
+    identity:
+      "Nurafshon lies on the plain about twenty-five kilometres south-east of Tashkent, with about 58,800 residents at the start of 2026 (State Statistics Committee), and is the administrative centre of Tashkent Region. It was called Toʻytepa until 2017, when it was renamed and its boundaries enlarged; the town is small, with the regional administration and a few main streets at its centre and a reservoir some ten kilometres south.",
+    howItWorks:
+      "Tashkent Region had no administrative centre at all before 2017. A Senate resolution that year renamed Toʻytepa as Nurafshon, changed its boundaries, made it a city of regional subordination and designated it the region's centre — the town was renamed and enlarged precisely for that. Two further layers make it harder: the region is called Tashkent Region, but the city of Tashkent is a first-order unit in its own right and does not belong to it, while Tashkent District, confusingly, does. And the town itself was once the centre of Oʻrta Chirchiq district; since separating in 2017 it no longer belongs to that district, though the district is still administered from within it. So around here, whether \"Tashkent\" means the city, the region or the district depends entirely on the sentence. The living radius is the road to Tashkent, and people give addresses by mahalla first and street second.",
+    layout:
+      "The regional administration is at the centre, with the state services centre about 0.1 km south-west of it. The Toʻytepa Friday Mosque is about 1.2 km north-west and the stele at the town entrance about 4 km north-north-west. The Tuyabuguz Reservoir is about 9.4 km south-south-west, and Tashkent International Airport about 25 km north-north-west.",
+    gettingAround:
+      "Nurafshon has no airport with scheduled flights; the nearest that does is Tashkent International, about 25 km north-north-west and inside the city of Tashkent. The road to Tashkent carries most traffic. The climate is temperate continental, hot and dry in summer and not severely cold in winter. Visitors must register their stay within three days of arrival.",
+    culture:
+      "Uzbek is spoken, with Russian also in use. This is a small administrative and educational town, and daily life runs around the mahallas and the markets. Restaurants may charge a service fee, normally shown in the menu or on the bill.",
+    seeAndDo:
+      "There is not a great deal in the town itself: the Toʻytepa Friday Mosque, a couple of campuses and the stele at the entrance; the shore of the Tuyabuguz Reservoir to the south; and Tashkent twenty-odd kilometres north-west, which is what most people are here for.",
+    whenAndTips:
+      "April to May and September to October are the most comfortable; high summer is very hot. Half a day covers the town, and it is close enough to Tashkent to treat as a commute.",
+  },
+
+  kogon: {
+    // 全七段 sources: 同中文侧（dataset 246 at the start of 2026, tier 1, same 10/10 digit check, with Bukhara's 304.7 matching the repo's own entry; the two separate gov.uz institution pages for the city and the district of the same name, tier 1; the station serving Bukhara sits in this city — the repo's Bukhara entry already noted it. The 1888–1900 railway-era buildings are written purely as architecture under the country's red lines, with none of the imperial context; the Emir's palace carries a timestamp because its restoration and reopening could not be confirmed）。 核实 2026-09-17 当批。
+    identity:
+      "Kogon lies about twelve kilometres south-east of Bukhara in central Uzbekistan, with about 66,100 residents at the start of 2026 (State Statistics Committee). It is a town that exists because of the railway: when the main line reached this area in the late 1880s the station and its associated buildings went up outside the old city, and that brick-built quarter still stands.",
+    howItWorks:
+      "The train to Bukhara does not stop in Bukhara. The main-line station is officially called Buxoro 1, and it stands in Kogon — so a ticket to \"Bukhara\" puts you down inside another city's administration, twelve kilometres short. The second thing people mix up is local: the city of Kogon and Kogon district are two separate administrations with two separate offices, listed as two institutions on the government portal and counted separately in the statistics — 66,100 for the city, 88,000 for the district — and the city does not belong to the district. That arrangement is not unusual in Uzbekistan; the library records two other instances of it. The railway defines the town's shape: the station, the park in front of it and that group of old buildings sit together with housing spread along both sides of the line, while the living radius is the twelve kilometres to Bukhara, where many residents work or trade.",
+    layout:
+      "Measured from the historic core, Buxoro 1 station is about 0.6 km west-south-west, the Railwaymen's Park about 0.8 km due west and the Emir's palace about 0.9 km due west. The former synagogue building is about 0.3 km due south and the Hazrati Bilol Friday Mosque about 0.6 km south-east. The Bahouddin Naqshband complex is about 8.7 km due north and lies outside the city.",
+    gettingAround:
+      "Kogon has no airport with scheduled flights; the nearest that does is Bukhara International, about 8.5 km north-west on the Bukhara side. This is the rail gateway for Bukhara, with the main-line station in the town itself; Bukhara is twelve kilometres away with frequent road and suburban traffic. The climate is temperate continental and dry, with hot summers. Visitors must register their stay within three days of arrival.",
+    culture:
+      "Uzbek is spoken, with Russian also in use. This is a town of railways and through traffic, and the area around the station is the liveliest part of it. Restaurants may charge a service fee, normally shown in the menu or on the bill.",
+    seeAndDo:
+      "The brick buildings put up between the late 1880s and about 1900: Buxoro 1 station, the Railwaymen's Park in front of it, and the Emir's palace — begun in August 1895 and finished in 1898, long used as a civil registry office and handed to the city administration in 2022 with restoration planned since, though whether it is open as of September 2026 could not be confirmed — along with the former synagogue building and a couple of mosques, all read as architecture. The Bahouddin Naqshband complex is eight or nine kilometres north, outside the city.",
+    whenAndTips:
+      "April to May and September to October are the most comfortable; high summer is very hot. Most people base themselves in Bukhara and treat this as the station plus a half-day; the old buildings are scattered within a kilometre or two of the station, walkable but with little shade.",
+  },
 };
