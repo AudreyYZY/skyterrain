@@ -90,4 +90,54 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "东部技术博物馆", nameEn: "Technical Museum of East Iceland", lon: -13.991947, lat: 65.265266, kind: "landmark" },
     { nameZh: "「双声」声音雕塑", nameEn: "Tvísöngur sound sculpture", lon: -13.981864, lat: 65.26781, kind: "landmark" },
   ],
+
+  // ── 冰岛补城批（2026-09-18）四处 ──
+  // 坐标来源：OSM / Overpass（3 级）；每个点相对镇中心的方位与直线距离由研究阶段按 haversine 自算，
+  // 写进正文的都是**直线距离**。⚠️ 赫韦拉格迪的温泉河谷有三种口径（谷口直线 2.9 km / 步道长度约 3 km /
+  // 谷内更深的 OSM 点 5.9 km），正文分开写，POI 取谷口那个点。
+  // 米湖畔的地热浴场**已官方改名**：原 Mývatn Nature Baths（Jarðböðin）→ Earth Lagoon Mývatn（旧域名 301 跳转，站内自述 Formerly…）。
+  // 邵扎克罗库尔北面的 Tindastóll 山按名在 OSM 查不到点，**如实不收，不倒推坐标**。
+  siglufjordur: [
+    { nameZh: "鲱鱼时代博物馆", nameEn: "The Herring Era Museum (Síldarminjasafn Íslands)", lon: -18.91332, lat: 66.14748, kind: "landmark" },
+    { nameZh: "锡格吕菲厄泽教堂", nameEn: "Siglufjarðarkirkja", lon: -18.91215, lat: 66.15114, kind: "landmark" },
+    { nameZh: "冰岛诗歌中心", nameEn: "Ljóðasetur Íslands (Icelandic Poetry Centre)", lon: -18.91000, lat: 66.15140, kind: "landmark" },
+    { nameZh: "民歌中心", nameEn: "Folk Music Centre (Þjóðlagasetur)", lon: -18.90714, lat: 66.15013, kind: "landmark" },
+    { nameZh: "Herhúsið 艺术中心", nameEn: "Herhúsið arts centre", lon: -18.90645, lat: 66.15101, kind: "landmark" },
+    { nameZh: "哈夫纳希尔纳山", nameEn: "Hafnarhyrna", lon: -18.94127, lat: 66.15407, kind: "nature" },
+    { nameZh: "斯特拉卡尔山", nameEn: "Strákar", lon: -18.92508, lat: 66.17523, kind: "nature" },
+  ],
+  saudarkrokur: [
+    { nameZh: "邵扎克罗库尔教堂", nameEn: "Sauðárkrókskirkja", lon: -19.65063, lat: 65.74975, kind: "landmark" },
+    { nameZh: "斯卡加峡湾地区图书馆", nameEn: "Héraðsbókasafn Skagfirðinga", lon: -19.64837, lat: 65.74727, kind: "landmark" },
+    { nameZh: "市政游泳池", nameEn: "Sundlaug Sauðárkróks", lon: -19.64667, lat: 65.74628, kind: "landmark" },
+    { nameZh: "“1238：冰岛之战”展馆", nameEn: "1238: The Battle of Iceland", lon: -19.65172, lat: 65.75242, kind: "landmark" },
+    { nameZh: "格劳姆拜尔草皮农舍博物馆", nameEn: "Glaumbær (Skagafjörður Folk Museum)", lon: -19.50467, lat: 65.61098, kind: "landmark" },
+    { nameZh: "格雷蒂斯温泉池", nameEn: "Grettislaug", lon: -19.73654, lat: 65.88223, kind: "nature" },
+    { nameZh: "冰岛移民中心（霍夫索斯）", nameEn: "Icelandic Emigration Center, Hofsós", lon: -19.41846, lat: 65.89898, kind: "landmark" },
+    { nameZh: "德朗艾岛", nameEn: "Drangey", lon: -19.68903, lat: 65.94684, kind: "nature" },
+  ],
+  reykjahlid: [
+    { nameZh: "雷恰赫利兹教堂", nameEn: "Reykjahlíðarkirkja", lon: -16.91666, lat: 65.64587, kind: "landmark" },
+    { nameZh: "斯托拉皲裂隙", nameEn: "Stóragjá", lon: -16.91006, lat: 65.63825, kind: "nature" },
+    { nameZh: "格约塔皲裂隙温泉洞", nameEn: "Grjótagjá", lon: -16.88297, lat: 65.62641, kind: "nature" },
+    { nameZh: "米湖地热浴场（原米湖自然浴场）", nameEn: "Earth Lagoon Mývatn (formerly Mývatn Nature Baths)", lon: -16.84819, lat: 65.63054, kind: "landmark" },
+    { nameZh: "纳玛山", nameEn: "Námafjall", lon: -16.82112, lat: 65.64015, kind: "nature" },
+    { nameZh: "赫维尔地热场（沸泥塘）", nameEn: "Hverir (Námaskarð geothermal field)", lon: -16.80918, lat: 65.64114, kind: "nature" },
+    { nameZh: "赫维尔山爆破火山口", nameEn: "Hverfjall (Hverfell)", lon: -16.87395, lat: 65.60506, kind: "nature" },
+    { nameZh: "黑暗城堡熔岩石林", nameEn: "Dimmuborgir", lon: -16.90932, lat: 65.58878, kind: "nature" },
+    { nameZh: "斯库图斯塔济假火山口群", nameEn: "Skútustaðagígar pseudo-craters", lon: -17.02871, lat: 65.57138, kind: "nature" },
+    { nameZh: "西居尔盖尔鸟类博物馆", nameEn: "Sigurgeir's Bird Museum", lon: -16.99500, lat: 65.62882, kind: "landmark" },
+    { nameZh: "莱尔赫努克火山区", nameEn: "Leirhnjúkur (Krafla)", lon: -16.79354, lat: 65.72127, kind: "nature" },
+  ],
+  hveragerdi: [
+    { nameZh: "赫韦拉格迪教堂", nameEn: "Hveragerðiskirkja", lon: -21.18729, lat: 64.00227, kind: "landmark" },
+    { nameZh: "镇中心地热公园", nameEn: "Hveragarðurinn (Geothermal Park)", lon: -21.18740, lat: 64.00069, kind: "nature" },
+    { nameZh: "阿尔内辛加美术馆", nameEn: "LÁ Art Museum (Listasafn Árnesinga)", lon: -21.18502, lat: 63.99638, kind: "landmark" },
+    { nameZh: "「2008 年地震」展与图书馆", nameEn: "\"Quake 2008\" exhibition & library, Sunnumörk", lon: -21.18911, lat: 63.99536, kind: "landmark" },
+    { nameZh: "劳加斯卡尔兹游泳池", nameEn: "Laugaskarð swimming pool", lon: -21.17988, lat: 64.00156, kind: "landmark" },
+    { nameZh: "园林公园", nameEn: "Skrúðgarðurinn", lon: -21.18269, lat: 64.00165, kind: "nature" },
+    { nameZh: "莱尔格尔泽地热喷口", nameEn: "Leirgerður geothermal vent", lon: -21.18082, lat: 64.00714, kind: "nature" },
+    { nameZh: "雷恰达勒温泉河谷（谷口步道起点）", nameEn: "Reykjadalur hot-spring valley (trailhead)", lon: -21.21116, lat: 64.02116, kind: "nature" },
+    { nameZh: "英戈尔夫斯山", nameEn: "Ingólfsfjall", lon: -21.07074, lat: 63.99895, kind: "nature" },
+  ],
 };
