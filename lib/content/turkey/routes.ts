@@ -91,6 +91,12 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
     },
   },
 
+  // travel 解说 sources（2026-09-18 抽样 seed=19 改正）: 原写「恰尔达克机场距棉花堡约 65 公里」——
+  //   **65 公里是机场到代尼兹利市中心的公路里程**（tr.wikipedia 原话「Denizli il merkezine 65 km」），
+  //   不是到棉花堡的距离；棉花堡在代尼兹利以北、与机场方向相反，公路约 70 公里。
+  //   按两端坐标实算：机场（37.7856,29.7013）→ 棉花堡（37.9203,29.1247）**直线 52.8 公里**，
+  //   机场 → 代尼兹利市中心直线 54.0 公里，代尼兹利 → 棉花堡直线 16.3 公里。正文改写为「直线约 53 公里」并点明方位。
+  //   错法归类：**两个地点的距离被混成一个数字**（A→B 的里程被当成 A→C 的）。
   "ist-dnz": {
     study: {
     "zh-CN":
@@ -103,9 +109,9 @@ export const ROUTES: Record<string, RouteNarrationEntry> = {
     // travel sources: 全四段（study/travel × 中英）: 棉花堡 1988 年列入 UNESCO、成因表述正确；全程距离原写约 460 km，改为约 400 km。核实 2026-09-11
     travel: {
     "zh-CN":
-      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
+      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场在棉花堡东南，直线约53公里。",
     "en-US":
-      "Istanbul to Denizli is about 80 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
+      "Istanbul to Denizli is about 80 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport lies south-east of Pamukkale, about 53 km away in a straight line.",
     },
   },
 

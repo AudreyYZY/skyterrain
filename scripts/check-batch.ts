@@ -155,12 +155,15 @@ if (missing.length > 0) {
   console.log("   ✓ 这一批全部命中缓存，点开就是自然人声");
 }
 if (silentIds.length > 0) {
-  // 硬失败：不是「没问题」，是「什么都没查」
-  hardFailures.push(
+  const msg =
     `${silentIds.length} 个条目一段播报都取不到：${silentIds.join(", ")}\n` +
-      `      → 可能是 id 打错、条目还没进注册表（cities.ts / registry.ts），或 travel.zh 有块而 cities.ts 没有。\n` +
-      `      → 这种情况下「全部命中缓存」是假通过，所以判失败而不是跳过。`,
-  );
+    `      → 可能是 id 打错、条目还没进注册表（cities.ts / registry.ts），或 travel.zh 有块而 cities.ts 没有。\n` +
+    `      → 「全部命中缓存」在这种情况下是假通过，所以要说出来。`;
+  // **显式 --ids 里取不到 = 打错了**，硬失败；
+  // 而 diff 反算出来的 id 取不到，更可能是解析把某个字段当成了条目（踩过一次：registry.ts 的
+  // landmark / bbox / axis / label / pois），或者这批正好删了一个条目 —— 那不该拦住提交，报出来让人看。
+  if (explicitIds) hardFailures.push(msg);
+  else reports.push(msg);
 }
 
 // ─────────────────────────────────────────────────────────────────────
