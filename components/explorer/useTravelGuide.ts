@@ -28,6 +28,7 @@ export interface TravelGuideDeps {
     wb: WordBoundary[],
     audio: HTMLAudioElement,
     baseIndex: number,
+    fine?: boolean,
   ) => void;
   startHighlightChunkEstimated: (key: string, text: string, baseIndex: number) => void;
   stopHighlight: () => void;
@@ -75,7 +76,7 @@ export function useTravelGuide(deps: TravelGuideDeps) {
           onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
             if (!isCurrent()) return;
             if (wordBoundaries.length > 0 && audio) {
-              startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
+              startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex, true);
             } else {
               startHighlightChunkEstimated(key, text, baseIndex);
             }

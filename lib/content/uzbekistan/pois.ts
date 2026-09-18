@@ -76,4 +76,19 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "圣尼古拉教堂", nameEn: "Church of St Nicholas", lon: 67.81981, lat: 40.10636, kind: "landmark" },
     { nameZh: "吉扎克火车站", nameEn: "Jizzakh railway station", lon: 67.84253, lat: 40.0983, kind: "transport" },
   ],
+  nurafshon: [
+    { nameZh: "塔什干州政府", nameEn: "Tashkent Region administration", lon: 69.35877, lat: 41.03793, kind: "landmark" },
+    { nameZh: "国家服务中心", nameEn: "State services centre", lon: 69.35757, lat: 41.03736, kind: "landmark" },
+    { nameZh: "托伊特帕聚礼清真寺", nameEn: "Toʻytepa Friday Mosque", lon: 69.34791, lat: 41.04495, kind: "landmark" },
+    { nameZh: "城市入口的纪念柱", nameEn: "Stele at the town entrance", lon: 69.33732, lat: 41.06967, kind: "landmark" },
+    { nameZh: "图亚布古兹水库", nameEn: "Tuyabuguz Reservoir", lon: 69.32249, lat: 40.95755, kind: "nature" },
+  ],
+  kogon: [
+    { nameZh: "布哈拉 1 号火车站", nameEn: "Buxoro 1 railway station", lon: 64.54841, lat: 39.72249, kind: "transport" },
+    { nameZh: "埃米尔宫", nameEn: "Palace of the Emir", lon: 64.54482, lat: 39.7243, kind: "landmark" },
+    { nameZh: "铁路工人公园", nameEn: "Railwaymen's Park", lon: 64.54529, lat: 39.72373, kind: "nature" },
+    { nameZh: "原犹太会堂建筑", nameEn: "Former synagogue building", lon: 64.55535, lat: 39.72185, kind: "landmark" },
+    { nameZh: "哈兹拉蒂·比洛尔聚礼清真寺", nameEn: "Hazrati Bilol Friday Mosque", lon: 64.56046, lat: 39.72167, kind: "landmark" },
+    { nameZh: "巴哈乌丁·纳克什班迪建筑群（在市外）", nameEn: "Bahouddin Naqshband complex (outside the city)", lon: 64.53722, lat: 39.80118, kind: "landmark" },
+  ],
 };

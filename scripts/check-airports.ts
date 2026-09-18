@@ -23,6 +23,11 @@
 import { readFileSync, existsSync } from "node:fs";
 import { CITY_REGISTRY } from "@/lib/places-registry";
 import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
+import { makeScopeFilter } from "./lib/scope-filter.ts";
+
+const scope = makeScopeFilter(process.argv.slice(2));
+// 「检查要能说出自己查了多少个对象」—— 收窄时尤其要说，否则「0 处命中」看不出是干净还是没查
+if (scope.active) console.log(scope.label);
 
 const CSV = process.argv.find((a) => a.startsWith("--csv="))?.slice(6)
   ?? ".cache/ourairports/airports.csv";
@@ -82,6 +87,7 @@ const km = (aLat: number, aLon: number, bLat: number, bLon: number) => {
 const far: string[] = [], unknown: string[] = [];
 let ok = 0, scanned = 0;
 for (const c of CITY_REGISTRY) {
+  if (!scope.inScope(c.id)) continue;
   if (!c.airport) continue;
   scanned++;
   const cands = byIata.get(c.airport.iata.toUpperCase());
@@ -137,6 +143,7 @@ const tooShort: string[] = [], conflict: string[] = [];
 let entriesWithDistance = 0;
 
 for (const c of CITY_REGISTRY) {
+  if (!scope.inScope(c.id)) continue;
   const guide = TRAVEL_CONTENT_ZH[c.id];
   if (!c.airport || !guide || KNOWN_OK.has(c.id)) continue;
   const real = km(c.lat, c.lon, c.airport.lat, c.airport.lon);
@@ -221,6 +228,7 @@ const srcShort: string[] = [], srcName: string[] = [];
 let srcScanned = 0;
 
 for (const c of CITY_REGISTRY) {
+  if (!scope.inScope(c.id)) continue;
   if (!c.airport || !c.source) continue;
   srcScanned++;
   const real = km(c.lat, c.lon, c.airport.lat, c.airport.lon);
@@ -269,6 +277,7 @@ const SAYS_NONE = /没有(?:定期航班的|民用|商业)机场/;
 const nearSched: string[] = [];
 let saysNone = 0;
 for (const c of CITY_REGISTRY) {
+  if (!scope.inScope(c.id)) continue;
   const guide = TRAVEL_CONTENT_ZH[c.id];
   if (!guide) continue;
   const hit = Object.values(guide).find((t) => typeof t === "string" && SAYS_NONE.test(t)) as string | undefined;

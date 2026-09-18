@@ -73,4 +73,14 @@ export const CITIES: CityEntry[] = [
     lon: 72.9397, lat: 41.8702,
     source: "托克托古尔市政府 41.8702,72.9397（OSM way/191268826，office=government，与市政府官网公布的街名一致）；市域西边约 6.5 km 的机场 scheduled_service=no，不填 airport —— 直线最近的两个有定期航班的机场所在城市离国界都不足 10 km、仓库本来就不收，正文因此只写「进出靠公路」，不点名（见注释）；离国界约 71 km；与地形条目 toktogul-reservoir、naryn-river 互指（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "kazarman", nameZh: "卡扎尔曼", nameEn: "Kazarman", country: "kyrgyzstan", tier: "notable", zone: "kg-west", admin1Zh: "贾拉拉巴德州", admin1En: "Jalal-Abad Region",
+    lon: 74.025608, lat: 41.403154,
+    source: "托古兹-托罗乡政府 41.403154,74.025608（OSM way/236163375 amenity=townhall）；⚠️ **本地机场有定期客运航班（2025-08 复航，Asman 执飞），但不填 airport** —— 航司自有接口把它写作 KZM、纳伦写作 NRU、塔拉斯写作 TLG、克尔本写作 KRH，而 OurAirports 对这几个的 iata_code 全是空。**当批核实查清了：这几个都是内部 / 航司系统码，不是 IATA 官方分配的三字码**（四个机场的资料均标 IATA: none），所以 OurAirports 留空无误、本库「无 IATA 码就不填」的既定处理也无误，**纳伦 / 塔拉斯不需要回改**；正文只写「有定期航班」；离国界约 94 km；与地形条目 fergana-range、naryn-river 互指（已有城市补充批，2026-09-17）",
+  },
+  {
+    id: "kyzyl-suu", nameZh: "克孜勒苏（杰特奥古兹）", nameEn: "Kyzyl-Suu", country: "kyrgyzstan", tier: "notable", zone: "kg-issykkul", admin1Zh: "伊塞克湖州", admin1En: "Issyk-Kul Region",
+    lon: 78.003165, lat: 42.340583,
+    source: "杰特奥古兹区国家行政机关 42.340583,78.003165（OSM way/336685761，地址与区政府官网公布的一致）；⚠️ **中文名同名地极多** —— 中国有克孜勒苏柯尔克孜自治州，本国阿赖谷地另有克孜勒苏河（见地形条目 alay-valley），楚河州还有一个同名村，故条目名带「（杰特奥古兹）」区分；市域内没有定期航班的机场（紧邻的机场标 closed），最近有定期航班的是卡拉科尔 IKG、直线约 38 km，是 karakol 条目已填的机场，本条目不填 airport；⚠️ OurAirports 把 41.7 km 外的塔姆加机场标成有定期航班，而航司通航点清单里没有它，**不要据此写**；离国界约 57 km；与地形条目 jeti-oguz（锚点与本条目的七公牛岩 POI 坐标逐位相同）、issyk-kul、terskey-ala-too 互指（已有城市补充批，2026-09-17）",
+  },
 ];

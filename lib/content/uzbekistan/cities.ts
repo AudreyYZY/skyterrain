@@ -81,4 +81,14 @@ export const CITIES: CityEntry[] = [
     lon: 67.8231, lat: 40.1321,
     source: "吉扎克州政府（хокимият）40.1321,67.8231（OSM way/309357649；OSM 里没有市政府对象，州政府在城市主干道上、离 Nominatim 的 place=city 点约 130 m —— ⚠️ Wikidata 的吉扎克点在 2.9 km 外，不要混用）；市域内没有定期航班的机场，全州唯一有定期航班的扎敏机场（OMN）在东南直线约 52 km、不在本市，不填 airport；离国界约 53 km；与地形条目 mirzachul、hissar-range 互指（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "nurafshon", nameZh: "努拉夫尚", nameEn: "Nurafshon", country: "uzbekistan", tier: "notable", zone: "uz-east", admin1Zh: "塔什干州", admin1En: "Tashkent Region",
+    lon: 69.358773, lat: 41.03793,
+    source: "塔什干州政府 41.037930,69.358773（OSM way/491246912 office=government；OSM 里没有市政府对象，与上一批吉扎克的处理一致）；市域内没有定期航班的机场，最近有定期航班的是塔什干国际机场 TAS、直线约 25 km，在塔什干市、不在本市，不填 airport；⚠️ **OurAirports 把 30.7 km 外的塔什干-胡莫机场（TVT）标成有定期航班，实际是公务航空专用口岸** —— 照抄会把「最近有定期航班的机场」写错，已记进错误台账；离国界约 28 km；本条目是本库在塔什干州的第一座城（已有城市补充批，2026-09-17）",
+  },
+  {
+    id: "kogon", nameZh: "卡甘", nameEn: "Kogon", country: "uzbekistan", tier: "notable", zone: "uz-center", admin1Zh: "布哈拉州", admin1En: "Bukhara Region",
+    lon: 64.555091, lat: 39.724628,
+    source: "卡甘历史核心 39.724628,64.555091（OSM way/45589941 place=town）—— ⚠️ **没有用政府建筑作原点**：OSM 上唯一的候选对象乌兹别克语名写作「卡甘区政府」、俄语名写作「卡甘市政府」，自相矛盾，而市与区恰恰是这座城的核心结构，选错会把整条写反；市域内没有定期航班的机场，最近有定期航班的是布哈拉国际机场 BHK、直线约 8.5 km，是 bukhara 条目已填的机场，本条目不填 airport；**布哈拉的干线车站「Buxoro 1」就在本市**（bukhara 条目的注释早已写过「火车站在卡甘市」，译名与之对齐）；离国界约 83 km（已有城市补充批，2026-09-17）",
+  },
 ];

@@ -78,4 +78,16 @@ export const CITIES: CityEntry[] = [
     lon: 121.0608, lat: 16.9127,
     source: "巴纳威镇中心（Poblacion）16.9127250,121.0608282（OSM Nominatim）；镇内与近旁的小机场（Lepanto Mines 30 km、Bagabag 39 km）均 scheduled_service=no，不填 airport；最近有定期航班的是伊莎贝拉省卡瓦延 CYZ、直线约 74 km（算）；与地形条目 banaue-ifugao-rice-terraces（本库写作「班奈梯田」）互指（已有城市补充批，2026-09-16）",
   },
+  {
+    id: "bacolod", nameZh: "巴科洛德", nameEn: "Bacolod", country: "philippines", tier: "major", zone: "ph-visayas", admin1Zh: "内格罗斯西部省", admin1En: "Negros Occidental",
+    lon: 122.9464, lat: 10.66933,
+    airport: { iata: "BCD", nameZh: "巴科洛德-西莱国际机场", nameEn: "Bacolod–Silay International Airport", lon: 123.018879, lat: 10.776237 },
+    source: "巴科洛德市中心广场 10.66933,122.94640（OSM way/53385483 leisure=park；新市政厅是另一个对象、在东南偏东 2.48 km，不要混用）；BCD 直线约 14 km、有国内与国际定期航班，**机场在北边的西莱市、不在本市市域**（比照伊洛伊洛 ILO 在卡巴图安镇的既有做法仍填 airport，正文写明）；离 FCDO 劝阻区（棉兰老）很远，见事实表 §1.1；与地形条目 mount-kanlaon 互指（已有城市补充批，2026-09-17）",
+  },
+  {
+    id: "angeles", nameZh: "安赫莱斯", nameEn: "Angeles", country: "philippines", tier: "major", zone: "ph-luzon", admin1Zh: "邦板牙省", admin1En: "Pampanga",
+    lon: 120.608022, lat: 15.165536,
+    airport: { iata: "CRK", nameZh: "克拉克国际机场", nameEn: "Clark International Airport", lon: 120.559998, lat: 15.186 },
+    source: "安赫莱斯市政厅 15.165536,120.608022（OSM way/96584426 amenity=townhall）—— ⚠️ **市政厅不在老城里**，老城（圣罗萨里奥一带）在西南偏南约 4 km，本条目所有距离都以市政厅为原点算，不要与老城原点混用；CRK 直线约 5.6 km、有国内与国际定期航班，**机场在克拉克自由港区内、行政上属马巴拉卡特市**，比照 ILO / SRG 的既有做法仍填 airport；与地形条目 mount-pinatubo 互指（已有城市补充批，2026-09-17）",
+  },
 ];

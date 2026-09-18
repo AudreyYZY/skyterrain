@@ -1,92 +1,8 @@
 import type { WordBoundary } from "@/lib/speech";
 import { stripEmojis } from "@/lib/strip-emojis";
-import { splitSentences } from "@/lib/sentences";
+import { splitSentences, splitForHighlight } from "@/lib/sentences";
+import { buildSentenceTimeMap, estimateSentenceMs, type HighlightSection, type SentenceTimeRange } from "@/lib/sentence-timing";
 import { useCallback, useEffect, useRef, useState } from "react";
-
-interface HighlightSection {
-  key: string;
-  text: string;
-}
-
-/**
- * 估算一句话的朗读时长（毫秒）—— 仅用于浏览器 TTS 回退（Edge TTS 有精确 word boundary）。
- * 中文按字数，英文按词数，两种语速差异很大。
- */
-function estimateSentenceMs(sentence: string): number {
-  const hasCJK = /[一-鿿]/.test(sentence);
-  if (hasCJK) {
-    const chars = sentence.replace(/\s/g, "").length;
-    return chars * 280 + 300;
-  }
-  const words = sentence.trim().split(/\s+/).filter(Boolean).length;
-  return words * 360 + 300;
-}
-
-interface SentenceTimeRange {
-  sectionKey: string;
-  /** 开始时间（秒） */
-  startSec: number;
-  /** 结束时间（秒） */
-  endSec: number;
-}
-
-/**
- * 将 word boundaries 映射到句子时间范围
- * 通过匹配词文本累积到句子中，确定每句的开始/结束时间
- */
-function buildSentenceTimeMap(
-  sections: HighlightSection[],
-  wordBoundaries: WordBoundary[]
-): SentenceTimeRange[] {
-  const result: SentenceTimeRange[] = [];
-
-  // 构建全局句子列表
-  const allSentences: { sectionKey: string; text: string }[] = [];
-  for (const section of sections) {
-    const cleaned = stripEmojis(section.text);
-    const sentences = splitSentences(cleaned);
-    for (const s of sentences) {
-      allSentences.push({ sectionKey: section.key, text: s });
-    }
-  }
-
-  if (allSentences.length === 0 || wordBoundaries.length === 0) return result;
-
-  // 将 word boundaries 匹配到句子
-  // 同时支持中文和英文标点
-  const punctuationRegex = /[。，！？、；：""''（）.,!?;:'"()\s]/g;
-  let wordIdx = 0;
-  let sentenceStartSec = wordBoundaries[0]?.start ?? 0;
-
-  for (let si = 0; si < allSentences.length; si++) {
-    const sentence = allSentences[si]!;
-    // 清理句子中的标点和空格，用于匹配
-    const sentenceChars = sentence.text.replace(punctuationRegex, "");
-
-    let matchedChars = 0;
-    let lastMatchEnd = sentenceStartSec;
-    const sentenceStart = sentenceStartSec;
-
-    // 消耗 word boundaries 直到匹配完这个句子
-    while (wordIdx < wordBoundaries.length && matchedChars < sentenceChars.length) {
-      const word = wordBoundaries[wordIdx]!;
-      const wordClean = word.text.replace(punctuationRegex, "");
-      matchedChars += wordClean.length;
-      lastMatchEnd = word.end;
-      wordIdx++;
-    }
-
-    result.push({
-      sectionKey: sentence.sectionKey,
-      startSec: sentenceStart,
-      endSec: lastMatchEnd,
-    });
-
-    sentenceStartSec = lastMatchEnd;
-  }
-
-  return result;
-}
 
 interface UseSentenceHighlightReturn {
   activeSentenceIndex: number | null;
@@ -94,7 +10,7 @@ interface UseSentenceHighlightReturn {
   startHighlight: (text: string, sectionKey?: string) => void;
   startHighlightSections: (sections: HighlightSection[]) => void;
   /** 基于 word boundaries 启动时间同步高亮。baseIndex：本段第一句的全局索引（分段播放用）。 */
-  startHighlightWithTiming: (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement, baseIndex?: number) => void;
+  startHighlightWithTiming: (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement, baseIndex?: number, fine?: boolean) => void;
   /** 分段播放的估时高亮（无 word boundary 时）：只高亮 sectionKey 段，全局索引从 baseIndex 起。 */
   startHighlightChunkEstimated: (sectionKey: string, text: string, baseIndex: number) => void;
   stopHighlight: () => void;
@@ -227,10 +143,13 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
    * 通过 requestAnimationFrame 持续跟踪音频播放进度
    */
   const startHighlightWithTiming = useCallback(
-    (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement, baseIndex = 0) => {
+    (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement, baseIndex = 0, fine = false) => {
       stopHighlight();
 
-      const timeMap = buildSentenceTimeMap(sections, wordBoundaries);
+      // fine = 讲解 / 攻略（与面板的 splitForHighlight 一致）；航线解说用粗切分，
+      // 因为 route-anchors.data.ts 的锚点表是按 splitSentences 的句序生成的。
+      const split = fine ? splitForHighlight : splitSentences;
+      const timeMap = buildSentenceTimeMap(sections, wordBoundaries, split);
       if (timeMap.length === 0) return;
 
       timeMapRef.current = timeMap;
@@ -241,7 +160,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
       let offset = baseIndex;
       for (const section of sections) {
         const cleaned = stripEmojis(section.text);
-        const count = splitSentences(cleaned).length;
+        const count = split(cleaned).length;
         if (count > 0) {
           allSections.push({ key: section.key, start: offset, end: offset + count });
           offset += count;
@@ -305,7 +224,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
   const startHighlightChunkEstimated = useCallback(
     (sectionKey: string, text: string, baseIndex: number) => {
       stopHighlight();
-      const sentences = splitSentences(stripEmojis(text));
+      const sentences = splitForHighlight(stripEmojis(text));
       if (sentences.length === 0) return;
 
       setActiveSection(sectionKey);

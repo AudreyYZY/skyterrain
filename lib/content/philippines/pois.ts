@@ -75,4 +75,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "塔皮亚瀑布", nameEn: "Tappiya Falls", lon: 121.1365037, lat: 16.9391695, kind: "nature" },
     { nameZh: "巴纳威博物馆", nameEn: "Banaue Museum", lon: 121.0602614, lat: 16.9118542, kind: "landmark" },
   ],
+  bacolod: [
+    { nameZh: "市中心广场", nameEn: "Bacolod City Plaza", lon: 122.9464, lat: 10.66933, kind: "district" },
+    { nameZh: "圣塞巴斯蒂安主教座堂", nameEn: "San Sebastian Cathedral", lon: 122.947153, lat: 10.670345, kind: "landmark" },
+    { nameZh: "内格罗斯博物馆", nameEn: "The Negros Museum", lon: 122.950321, lat: 10.67516, kind: "landmark" },
+    { nameZh: "省府大楼与省府公园", nameEn: "Provincial Capitol and its park", lon: 122.950932, lat: 10.676469, kind: "landmark" },
+    { nameZh: "帕纳德公园与体育场", nameEn: "Panaad Park and Stadium", lon: 122.964807, lat: 10.62379, kind: "nature" },
+    { nameZh: "「废墟」宅邸（在塔利赛市）", nameEn: "The Ruins (in Talisay)", lon: 122.982664, lat: 10.709244, kind: "landmark" },
+  ],
+  angeles: [
+    { nameZh: "圣罗萨里奥堂", nameEn: "Holy Rosary Parish Church", lon: 120.590267, lat: 15.134293, kind: "landmark" },
+    { nameZh: "安赫莱斯市博物馆", nameEn: "Museo ning Angeles", lon: 120.591015, lat: 15.134724, kind: "landmark" },
+    { nameZh: "帕明图安宅邸", nameEn: "Pamintuan Mansion", lon: 120.591517, lat: 15.135716, kind: "landmark" },
+    { nameZh: "卡邦板牙研究中心", nameEn: "Center for Kapampangan Studies", lon: 120.58982, lat: 15.133148, kind: "landmark" },
+    { nameZh: "巴亚尼汉公园（克拉克主门）", nameEn: "Bayanihan Park at the Clark main gate", lon: 120.587004, lat: 15.168572, kind: "nature" },
+    { nameZh: "克拉克博物馆", nameEn: "Clark Museum", lon: 120.526884, lat: 15.182183, kind: "landmark" },
+  ],
 };

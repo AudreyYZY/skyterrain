@@ -83,4 +83,21 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "洛昂巴洛克海滩", nameEn: "Loang Baloq Beach", lon: 116.0740182, lat: -8.6028864, kind: "nature" },
     { nameZh: "沙洋沙洋艺术市场", nameEn: "Sayang-Sayang Art Market", lon: 116.1270748, lat: -8.5659896, kind: "district" },
   ],
+  palembang: [
+    { nameZh: "安佩拉大桥", nameEn: "Ampera Bridge", lon: 104.763715, lat: -2.992025, kind: "landmark" },
+    { nameZh: "库托贝萨克堡", nameEn: "Kuto Besak Fort", lon: 104.759678, lat: -2.991693, kind: "landmark" },
+    { nameZh: "苏丹马哈茂德·巴达鲁丁二世博物馆", nameEn: "Sultan Mahmud Badaruddin II Museum", lon: 104.76106, lat: -2.990287, kind: "landmark" },
+    { nameZh: "甲必丹村文化保护区", nameEn: "Kampung Kapitan heritage quarter", lon: 104.763261, lat: -2.995239, kind: "district" },
+    { nameZh: "西贡当山森林公园", nameEn: "Bukit Siguntang park", lon: 104.725595, lat: -2.99732, kind: "nature" },
+    { nameZh: "雅卡巴林体育城", nameEn: "Jakabaring Sport City", lon: 104.794803, lat: -3.016839, kind: "district" },
+  ],
+  banjarmasin: [
+    { nameZh: "西林河滨观景塔", nameEn: "Menara Pandang riverside tower", lon: 114.593121, lat: -3.317037, kind: "landmark" },
+    { nameZh: "长鼻猴雕像", nameEn: "Bekantan statue", lon: 114.594493, lat: -3.321808, kind: "landmark" },
+    { nameZh: "西林河滨水上市集", nameEn: "Siring floating market", lon: 114.593489, lat: -3.319513, kind: "district" },
+    { nameZh: "苏丹苏里安夏清真寺", nameEn: "Sultan Suriansyah Mosque", lon: 114.57619, lat: -3.294356, kind: "landmark" },
+    { nameZh: "花岛", nameEn: "Pulau Kembang", lon: 114.560753, lat: -3.306406, kind: "nature" },
+    { nameZh: "绿色村", nameEn: "Kampung Hijau", lon: 114.607837, lat: -3.315464, kind: "district" },
+    { nameZh: "洛克拜因坦水上市场（在邻县）", nameEn: "Lok Baintan floating market (neighbouring regency)", lon: 114.692023, lat: -3.296334, kind: "district" },
+  ],
 };
