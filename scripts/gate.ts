@@ -42,6 +42,14 @@ const stages = new Set(
 const skipE2e = has("skip-e2e");
 
 const batchArgs = baseArg ? [`--base=${baseArg}`] : [];
+/**
+ * 报告类脚本走**收窄模式**（#310）：它们是全库扫描、输出几百行、永远 exit 0，
+ * 存量会把新加的那几行淹没 —— 等于新内容实际上没人看。
+ * 收窄之后 check:airports 从 34 条 ⚑ 降到这一批自己的 1 条（kogon，已知的设计内假阳性）。
+ * 想看全库时单独跑 `npm run check:airports`（不带参数 = 全库，行为一字未改）。
+ * check:pending 故意不收窄 —— 它是「承诺过的年份到了没有」的常驻清单，按定义要看存量。
+ */
+const narrowArgs = baseArg ? [`--base=${baseArg}`] : ["--only-new"];
 
 const STEPS: Step[] = [
   // ── ① 静态与自洽 ───────────────────────────────────────────────
@@ -63,9 +71,9 @@ const STEPS: Step[] = [
   // ── ③ 内容交叉 ─────────────────────────────────────────────────
   { stage: 3, name: "check:zhen", cmd: ["npm", "run", "check:zhen"], why: "中英两侧同一字段的数字对不上（单边改动的唯一防线）" },
   { stage: 3, name: "check:distance", cmd: ["npm", "run", "check:distance"], why: "航线声称里程 vs 大圆距离" },
-  { stage: 3, name: "check:layout-bearings", cmd: ["npm", "run", "check:layout-bearings"], why: "layout 段方位词与 POI 坐标", report: true },
-  { stage: 3, name: "check:bearings", cmd: ["npm", "run", "check:bearings"], why: "带距离的方位句与 POI 坐标", report: true },
-  { stage: 3, name: "check:airports", cmd: ["npm", "run", "check:airports"], why: "「没有定期航班」与 OurAirports 对照", report: true },
+  { stage: 3, name: "check:layout-bearings", cmd: ["npm", "run", "check:layout-bearings", "--", ...narrowArgs], why: "layout 段方位词与 POI 坐标", report: true },
+  { stage: 3, name: "check:bearings", cmd: ["npm", "run", "check:bearings", "--", ...narrowArgs], why: "带距离的方位句与 POI 坐标", report: true },
+  { stage: 3, name: "check:airports", cmd: ["npm", "run", "check:airports", "--", ...narrowArgs], why: "「没有定期航班」与 OurAirports 对照", report: true },
   { stage: 3, name: "check:rvt", cmd: ["npm", "run", "check:rvt"], why: "航线解说 vs 地形条目的名次冲突", report: true },
   { stage: 3, name: "check:pending", cmd: ["npm", "run", "check:pending"], why: "「在建 / 计划 X 年通车」这类句子里承诺的年份已经到了", report: true },
 

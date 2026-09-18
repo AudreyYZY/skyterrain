@@ -28,6 +28,11 @@
 import { CITY_REGISTRY } from "@/lib/places-registry";
 import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
 import { POIS_BY_CITY } from "@/lib/travel-pois";
+import { makeScopeFilter } from "./lib/scope-filter.ts";
+
+const scope = makeScopeFilter(process.argv.slice(2));
+// 「检查要能说出自己查了多少个对象」—— 收窄时尤其要说，否则「0 处命中」看不出是干净还是没查
+if (scope.active) console.log(scope.label);
 
 const DIRS: Record<string, number> = {
   东北: 45, 东南: 135, 西南: 225, 西北: 315, 东: 90, 南: 180, 西: 270, 北: 0,
@@ -62,6 +67,7 @@ const hits: string[] = [];
 const perField: Record<string, number> = {};
 
 for (const city of CITY_REGISTRY) {
+  if (!scope.inScope(city.id)) continue;
   const guide = TRAVEL_CONTENT_ZH[city.id];
   const pois = POIS_BY_CITY[city.id] ?? [];
   if (!guide || pois.length === 0) continue;

@@ -146,6 +146,21 @@ npm run gate -- --stage=3    # check:zhen / check:distance / bearings / airports
 
 `check:zhen` 是「只改了一侧」的唯一防线（中英是分开写的，人核实时又是按语言读的）。
 
+**报告类脚本在 `gate` 里走收窄模式**（2026-09-18，#310）：
+`check:bearings` / `check:layout-bearings` / `check:airports` 是全库扫描、输出几百行、永远 exit 0 ——
+存量会把新加的那几行淹没，等于新内容实际上没人看。这与 G1/G2 是同一个病：检查跑了，但没对准这一批。
+现在它们都接受 `--only-new` / `--base=<ref>` / `--ids=a,b,c`，`gate` 第 3 段自动带上，
+并且**收窄时会先打一行「范围：…动过的 N 个条目」** —— 否则「0 处命中」看不出是干净还是没查。
+实测：`check:airports` 从 34 条 ⚑ 降到这一批自己的 1 条。
+
+```bash
+npm run check:airports                    # 不带参数 = 全库（行为一字未改，定期回扫时用）
+npm run check:airports -- --only-new      # 只看这一批
+npm run check:bearings -- --ids=kazarman,kogon
+```
+
+`check:pending` 故意**不**收窄 —— 它是「承诺过的年份到了没有」的常驻清单，按定义要看存量。
+
 ## G6 代码审查
 
 **只要这一批动过 `components/` / `lib/` / `scripts/` 下的代码（不只是内容文本），就必须做。**

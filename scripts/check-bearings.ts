@@ -22,6 +22,11 @@
 import { CITY_REGISTRY } from "@/lib/places-registry";
 import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
 import { POIS_BY_CITY } from "@/lib/travel-pois";
+import { makeScopeFilter } from "./lib/scope-filter.ts";
+
+const scope = makeScopeFilter(process.argv.slice(2));
+// 「检查要能说出自己查了多少个对象」—— 收窄时尤其要说，否则「0 处命中」看不出是干净还是没查
+if (scope.active) console.log(scope.label);
 
 const FIELDS = ["identity", "howItWorks", "layout", "gettingAround", "seeAndDo", "whenAndTips"] as const;
 
@@ -66,6 +71,7 @@ const dirHits: string[] = [], distHits: string[] = [];
 let pairs = 0, entries = 0;
 
 for (const c of CITY_REGISTRY) {
+  if (!scope.inScope(c.id)) continue;
   const guide = TRAVEL_CONTENT_ZH[c.id];
   const pois = POIS_BY_CITY[c.id];
   if (!guide || !pois?.length) continue;
