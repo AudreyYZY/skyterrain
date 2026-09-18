@@ -72,4 +72,52 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "本布尔宾山", nameEn: "Benbulbin", lon: -8.4742, lat: 54.3649, kind: "nature" },
     { nameZh: "斯特兰德希尔", nameEn: "Strandhill", lon: -8.5943, lat: 54.27, kind: "nature" },
   ],
+
+  // ── 爱尔兰补城批（2026-09-18）四处 ──
+  // 坐标来源 OSM / Nominatim（3 级）；每个点相对镇中心参考点的方位与直线距离由研究阶段按坐标自算，
+  // 正文写的都是**直线距离**（旅游资料常见的「离 X 公里」多为公路里程，本批未取到官方公路里程，故不并列第二个数）。
+  // ⚠️ 如实不收的几处：德罗赫达的 Dowth 甬道墓本体（OSM 上只有 Dowth Hall Passage Tomb 与 Dowth Henge，
+  //   两者都不等于它，不拿来顶替）；科夫的旧教堂公墓（牵涉一战海难叙事，按红线不收）；
+  //   卡舍尔的民俗村（OSM 查不到该名，其自述的「距岩 350 m」无独立来源）；德罗赫达的 Highlanes 画廊（OSM 无该名坐标）。
+  // ⚠️ 科夫那排彩色联排住宅的俗称在 OSM 上没有对应要素，只收它所在的街（West View），不把俗称当官方名。
+  drogheda: [
+    { nameZh: "圣劳伦斯门", nameEn: "St Laurence's Gate", lon: -6.347051, lat: 53.715889, kind: "landmark" },
+    { nameZh: "西街圣彼得教堂", nameEn: "St Peter's Church, West Street", lon: -6.352425, lat: 53.715379, kind: "landmark" },
+    { nameZh: "米尔芒特博物馆", nameEn: "Millmount Museum", lon: -6.349499, lat: 53.711624, kind: "landmark" },
+    { nameZh: "马格达伦塔", nameEn: "Magdalene Tower", lon: -6.351048, lat: 53.718230, kind: "landmark" },
+    { nameZh: "博因河铁路高架桥", nameEn: "Boyne Viaduct", lon: -6.337470, lat: 53.716375, kind: "landmark" },
+    { nameZh: "博利厄宅与花园", nameEn: "Beaulieu House and Gardens", lon: -6.293508, lat: 53.728098, kind: "landmark" },
+    { nameZh: "梅利芳特修院遗址", nameEn: "Mellifont Abbey", lon: -6.466572, lat: 53.742263, kind: "landmark" },
+    { nameZh: "莫纳斯特博伊斯高十字架", nameEn: "Muiredach's High Cross, Monasterboice", lon: -6.418033, lat: 53.777797, kind: "landmark" },
+    { nameZh: "博因河湾游客中心", nameEn: "Brú na Bóinne Visitor Centre", lon: -6.4467, lat: 53.6947, kind: "landmark" },
+    { nameZh: "纽格莱奇墓", nameEn: "Newgrange", lon: -6.475552, lat: 53.694697, kind: "landmark" },
+    { nameZh: "诺斯墓", nameEn: "Knowth", lon: -6.491401, lat: 53.701204, kind: "landmark" },
+  ],
+  cobh: [
+    { nameZh: "圣科尔曼大教堂", nameEn: "St Colman's Cathedral", lon: -8.293768, lat: 51.851467, kind: "landmark" },
+    { nameZh: "科夫遗产中心", nameEn: "Cobh Heritage Centre", lon: -8.299573, lat: 51.848816, kind: "landmark" },
+    { nameZh: "泰坦尼克主题展馆", nameEn: "Titanic Experience Cobh", lon: -8.294808, lat: 51.849962, kind: "landmark" },
+    { nameZh: "科夫博物馆", nameEn: "Cobh Museum", lon: -8.299466, lat: 51.849388, kind: "landmark" },
+    { nameZh: "肯尼迪海滨公园", nameEn: "John F. Kennedy Park", lon: -8.295787, lat: 51.849538, kind: "nature" },
+    { nameZh: "西景街（彩色联排住宅）", nameEn: "West View (the coloured terrace)", lon: -8.295393, lat: 51.851701, kind: "district" },
+    { nameZh: "斯派克岛", nameEn: "Spike Island", lon: -8.285712, lat: 51.834207, kind: "landmark" },
+    { nameZh: "坎登炮台", nameEn: "Camden Fort Meagher", lon: -8.277805, lat: 51.808870, kind: "landmark" },
+  ],
+  athlone: [
+    { nameZh: "阿斯隆城堡", nameEn: "Athlone Castle", lon: -7.942671, lat: 53.423198, kind: "landmark" },
+    { nameZh: "鲁安美术馆", nameEn: "Luan Gallery", lon: -7.942883, lat: 53.423880, kind: "landmark" },
+    { nameZh: "阿斯隆火车站", nameEn: "Athlone Railway Station", lon: -7.935685, lat: 53.426882, kind: "landmark" },
+    { nameZh: "蒙克斯兰（罗斯康芒一侧）", nameEn: "Monksland (Roscommon side)", lon: -7.998259, lat: 53.423969, kind: "district" },
+    { nameZh: "克朗麦克诺伊斯修院遗址", nameEn: "Clonmacnoise", lon: -7.985743, lat: 53.326313, kind: "landmark" },
+    { nameZh: "里湖", nameEn: "Lough Ree", lon: -7.988540, lat: 53.559331, kind: "nature" },
+  ],
+  cashel: [
+    { nameZh: "卡舍尔之岩", nameEn: "Rock of Cashel", lon: -7.890638, lat: 52.520183, kind: "landmark" },
+    { nameZh: "科马克礼拜堂", nameEn: "Cormac's Chapel", lon: -7.890315, lat: 52.519961, kind: "landmark" },
+    { nameZh: "霍尔修院遗址", nameEn: "Hore Abbey", lon: -7.897903, lat: 52.518697, kind: "landmark" },
+    { nameZh: "布鲁博鲁文化中心", nameEn: "Brú Ború", lon: -7.888510, lat: 52.521273, kind: "landmark" },
+    { nameZh: "卡舍尔宫（原大主教邸宅）", nameEn: "Cashel Palace", lon: -7.889244, lat: 52.517292, kind: "landmark" },
+    { nameZh: "阿萨瑟尔修院遗址", nameEn: "Athassel Priory", lon: -7.983223, lat: 52.479196, kind: "landmark" },
+    { nameZh: "卡希尔城堡", nameEn: "Cahir Castle", lon: -7.927132, lat: 52.374393, kind: "landmark" },
+  ],
 };
