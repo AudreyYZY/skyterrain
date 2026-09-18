@@ -31,8 +31,23 @@ function git(args: string[]): string {
   return execFileSync("git", args, { encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
 }
 
-/** 默认基准：当前分支与 main 的分叉点；分叉点取不到（就在 main 上）时退回 HEAD~1 */
+/**
+ * 默认基准。
+ *
+ * **工作区里只要有未提交的内容改动，就以 HEAD 为基准** —— 那才是「这一批」：
+ * 长期分支上攒了十几批内容，与 origin/main 的分叉点会把整条分支都算进来
+ * （实测一次算出 665 个文件、2,637 个条目），批次门禁就退化成全库扫描，
+ * 既慢又让「范围」这一行失去意义。
+ * 内容已经提交干净时才退回分叉点，那时候的意图通常是「复查整条分支」。
+ */
 export function defaultBase(): string {
+  try {
+    const dirty = git(["diff", "--name-only", "HEAD", "--", "lib/content", "data/routes"]).trim();
+    const untracked = git(["ls-files", "--others", "--exclude-standard", "--", "lib/content", "data/routes"]).trim();
+    if (dirty || untracked) return git(["rev-parse", "HEAD"]).trim();
+  } catch {
+    /* 落到下面的分叉点逻辑 */
+  }
   for (const candidate of ["origin/main", "main"]) {
     try {
       const merged = git(["merge-base", "HEAD", candidate]).trim();
@@ -99,16 +114,21 @@ function changedLines(base: string, paths: string[]): Map<string, Set<number>> {
  *   · 键值式（travel.zh.ts / terrain.en.ts / pois.ts / routes.ts）：`  xxx: {` / `  xxx: [` 开一块
  * 一块从它的起始行延伸到下一块的起始行之前。
  */
-function entryRanges(src: string): { id: string; from: number; to: number }[] {
+function entryRanges(src: string, keyed: boolean): { id: string; from: number; to: number }[] {
   const lines = src.split("\n");
   const starts: { id: string; from: number }[] = [];
   lines.forEach((line, i) => {
-    const arrayShape = /^\s*\{?\s*id:\s*"([A-Za-z0-9_-]+)"/.exec(line);
-    if (arrayShape) {
-      starts.push({ id: arrayShape[1]!, from: i + 1 });
+    if (!keyed) {
+      // 数组式文件（cities.ts / registry.ts）：条目以 `id: "xxx"` 开头
+      const arrayShape = /^\s*\{?\s*id:\s*"([A-Za-z0-9_-]+)"/.exec(line);
+      if (arrayShape) starts.push({ id: arrayShape[1]!, from: i + 1 });
       return;
     }
-    // 只认缩进 2 格的顶层键，避免把嵌套字段当成条目
+    // 键值式文件（travel.zh / terrain.en / pois / routes）：条目是缩进 2 格的顶层键。
+    // ⚠️ 这个判据**不能**用在数组式文件上：registry.ts 的条目里有 `landmark: {`、`bbox: {`、
+    // `axis: {`、`label: {`、`pois: [` 这些同样缩进 2 格的**字段**，会被当成条目 id，
+    // 于是 check:batch 拿着 terrain/landmark 这种不存在的 id 去找播报、一段也找不到，
+    // 再被「一段都取不到 = 假通过」那条规则判成硬失败。（2026-09-18 踩到并修。）
     const keyShape = /^ {2}"?([a-z][A-Za-z0-9_-]*)"?:\s*[[{]/.exec(line);
     if (keyShape) starts.push({ id: keyShape[1]!, from: i + 1 });
   });
@@ -144,7 +164,9 @@ export function changedEntries(base = defaultBase()): ChangedEntries {
     const kind = KIND_BY_FILE.find((k) => k.test(file))?.kind;
     if (!kind) continue;
     if (!existsSync(file)) continue;
-    const ranges = entryRanges(readFileSync(file, "utf8"));
+    // cities.ts / registry.ts 是数组，其余是键值 map
+    const keyed = !/\/(cities|registry)\.ts$/.test(file);
+    const ranges = entryRanges(readFileSync(file, "utf8"), keyed);
     for (const r of ranges) {
       for (const ln of lines) {
         if (ln >= r.from && ln <= r.to) {
