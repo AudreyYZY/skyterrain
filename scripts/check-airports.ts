@@ -196,9 +196,16 @@ console.log(
   `\n正文机场距离 × 注册表坐标：${entriesWithDistance} 个条目的正文给了距离，` +
   `比直线还短 ${tooShort.length} 个，同条目自相矛盾 ${conflict.length} 个`,
 );
+// **「0 个对象」在收窄模式下是正常的**（2026-09-18 补）：这三处自检原本是「0 = 正则或字段坏了」，
+// 立它的理由是本库踩过三次「取不到值被当成没问题」。但加了 --only-new / --ids 之后，
+// 一个小范围里某一段本来就可能没有对象 —— 那时候 0 说明的是「这一批没有这类句子」，不是脚本坏了。
+// 所以：全库模式下 0 仍然判失败，收窄模式下只提示。**收窄不能把自检变成假通过，也不能让它误报。**
 if (!entriesWithDistance) {
-  console.error("✗ 一个都没扫到 —— 字段名或正则坏了");
-  process.exit(1);
+  if (scope.active) console.log("（收窄范围内没有带距离的正文句，跳过这一段）");
+  else {
+    console.error("✗ 一个都没扫到 —— 字段名或正则坏了");
+    process.exit(1);
+  }
 }
 for (const l of [...tooShort, ...conflict]) console.log("\n" + l);
 if (tooShort.length || conflict.length) {
@@ -255,8 +262,11 @@ console.log(
   `source 里的距离比直线还短 ${srcShort.length} 个，source 说的机场与 airport 字段对不上 ${srcName.length} 个`,
 );
 if (!srcScanned) {
-  console.error("✗ 一个都没扫到 —— 字段名坏了");
-  process.exit(1);
+  if (scope.active) console.log("（收窄范围内没有带 source 的机场条目，跳过这一段）");
+  else {
+    console.error("✗ 一个都没扫到 —— 字段名坏了");
+    process.exit(1);
+  }
 }
 for (const l of [...srcShort, ...srcName]) console.log("\n" + l);
 
@@ -299,7 +309,10 @@ console.log(
   `${NEAR_KM} km 内有标「有定期航班」机场的 ${nearSched.length} 个（清单，要人判断：可能在邻城 / 跨境 / 数据集滞后）`,
 );
 if (!saysNone) {
-  console.error("✗ 一个都没扫到 —— 正则或字段坏了");
-  process.exit(1);
+  if (scope.active) console.log("（收窄范围内没有「没有定期航班的机场」这类句子，跳过这一段）");
+  else {
+    console.error("✗ 一个都没扫到 —— 正则或字段坏了");
+    process.exit(1);
+  }
 }
 for (const l of nearSched) console.log("\n" + l);

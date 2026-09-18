@@ -46,7 +46,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built along the Alzette, right on the French border; numerous historic mining sites surround it, some now converted into industrial-heritage parks, such as the Belval blast-furnace site.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide, with a bus network in the city (a fast tram line from Luxembourg City to Esch is planned to open in stages during the 2030s). The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 22 km in a straight line); public transport is free nationwide, with a bus network in the city (a fast tram line from Luxembourg City to Esch is planned to open in stages during the 2030s). The climate is temperate maritime.",
     culture:
       "All three official languages are in use; the city's historic draw of Italian and Portuguese immigrants for mining and steelwork has given it a culturally blended immigrant heritage. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -63,7 +63,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Sûre, with the Benedictine abbey and the old market square forming its historic core; it sits right on the German border, with the Mullerthal sandstone region unfolding to the south-west.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 30 km); public transport is free nationwide. The old town is walkable; reaching the Mullerthal hiking area requires a car or bus. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 26 km in a straight line); public transport is free nationwide. The old town is walkable; reaching the Mullerthal hiking area requires a car or bus. The climate is temperate maritime.",
     culture:
       "All three official languages are in use. Echternach's annual \"Hopping Procession,\" held the day after Whit Monday — a dancing pilgrimage tracing back to the Middle Ages — is inscribed on the UNESCO Intangible Cultural Heritage list. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -80,7 +80,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built along the Moselle, with Germany directly across the river; the riverside promenade and wine estates form the core of the town's landscape.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide. The town itself is walkable; exploring the riverside vineyards requires a car or bicycle. The climate is temperate maritime, the mildest in Luxembourg.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 15 km in a straight line); public transport is free nationwide. The town itself is walkable; exploring the riverside vineyards requires a car or bicycle. The climate is temperate maritime, the mildest in Luxembourg.",
     culture:
       "All three official languages are in use. Remich and the surrounding villages are the core production area for Luxembourg's Crémant sparkling wine and Riesling and other white wines, and winery tastings are a key local tourist experience. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -97,7 +97,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The old town is built along the Sûre, its historic quarter preserving a medieval layout, with the National Museum of Military History as the town's main landmark.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 35 km); public transport is free nationwide. The old town is walkable. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 27 km in a straight line); public transport is free nationwide. The old town is walkable. The climate is temperate maritime.",
     culture:
       "All three official languages are in use. Diekirch's historic role during the Battle of the Bulge in 1944–45 makes it an important Second World War memorial site in Luxembourg. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -115,7 +115,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town sits on the flat valley floor where the two rivers meet, a rail and road hub connecting Luxembourg City with the towns of the northern Oesling.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 35 km); public transport is free nationwide, and the train station is an important interchange for the north of the country. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 26 km in a straight line); public transport is free nationwide, and the train station is an important interchange for the north of the country. The climate is temperate maritime.",
     culture:
       "All three official languages are in use. Ettelbruck's Patton Square, commemorating the American general who directed operations from here during the Second World War, is an important witness to Luxembourg's wartime history. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -128,11 +128,11 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Vianden is a small town on the Our in northern Luxembourg, with a population of about 2,000; Vianden Castle is the largest surviving feudal castle in Luxembourg and one of the country's most iconic valley-and-castle landscapes.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vianden (Luxembourg; commune in the north-east on the Our near the German border, 2,221 residents in 2025; Vianden Castle built between the 11th and 14th centuries, one of the largest fortified castles west of the Rhine, sold in 1820 and left to decay until Grand Duke Jean ceded it to the State in 1977, since restored as a museum; Victor Hugo stayed here several times between 1862 and 1871, his house now a museum; seasonal chairlift; the Vianden pumped-storage hydro plant; about 47 km from Luxembourg City, buses from Diekirch and Ettelbruck)
     howItWorks:
-      "Vianden is a commune in north-eastern Luxembourg with about 2,240 residents in 2026, in the valley of the Our with Germany across the water; Luxembourg has only communes and the state, with no provincial layer between, and an elected council governs it, with a mayor appointed by the Grand Duke from among the councillors. Vianden Castle was built between the eleventh and fourteenth centuries as one of the largest fortified castles west of the Rhine, sold in 1820 and left to decay until Grand Duke Jean ceded it to the State in 1977, restored since and open as a museum, with the town spread along the river directly below it. Victor Hugo stayed here several times between 1862 and 1871 and wrote of the district, and his house is a museum too. A chairlift runs in season from the valley to the ridge opposite for the view of the castle. Inside the mountain is a pumped-storage hydroelectric plant, among the earlier ones in Europe, which supports the town alongside tourism. Luxembourg City lies about 47 km south, reached by changing to a bus at Diekirch or Ettelbruck. Newcomers most often go wrong by expecting a train, when the only way in is by road.",
+      "Vianden is a commune in north-eastern Luxembourg with about 2,240 residents in 2026, in the valley of the Our with Germany across the water; Luxembourg has only communes and the state, with no provincial layer between, and an elected council governs it, with a mayor appointed by the Grand Duke from among the councillors. Vianden Castle was built between the eleventh and fourteenth centuries as one of the largest fortified castles west of the Rhine, sold in 1820 and left to decay until Grand Duke Jean ceded it to the State in 1977, restored since and open as a museum, with the town spread along the river directly below it. Victor Hugo stayed here several times between 1862 and 1871 and wrote of the district, and his house is a museum too. A chairlift runs in season from the valley to the ridge opposite for the view of the castle. Inside the mountain is a pumped-storage hydroelectric plant, among the earlier ones in Europe, which supports the town alongside tourism. Luxembourg City lies about 36 km south in a straight line, reached by changing to a bus at Diekirch or Ettelbruck. Newcomers most often go wrong by expecting a train, when the only way in is by road.",
     layout:
       "The town is built along the floor of the Our Valley, with the castle standing atop a cliff on the eastern bank; a cable car connects the valley-floor town to the high ground where the castle sits.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 45 km); public transport is free nationwide. The town itself is walkable; reaching the castle is possible on foot or by cable car. The climate is temperate maritime, comparatively cool due to the valley setting.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 35 km in a straight line); public transport is free nationwide. The town itself is walkable; reaching the castle is possible on foot or by cable car. The climate is temperate maritime, comparatively cool due to the valley setting.",
     culture:
       "All three official languages are in use. The 19th-century French writer Victor Hugo lived here in exile, and his former residence is now a memorial museum, an important local cultural landmark. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -149,7 +149,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built along both banks of the Clerve Valley, with the castle on high ground at the valley's centre and a Benedictine abbey on a nearby hill overlooking the whole valley.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 55 km); public transport is free nationwide. The town itself is walkable. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 50 km in a straight line); public transport is free nationwide. The town itself is walkable. The climate is temperate maritime.",
     culture:
       "All three official languages are in use. Clervaux Castle permanently houses \"The Family of Man,\" the classic photography exhibition curated by Edward Steichen, inscribed on the UNESCO Memory of the World Register. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
@@ -162,11 +162,11 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
       "Esch-sur-Sûre is a small town on the shore of the Upper Sûre Lake, with a population of about 300; its old castle and old town are built on a bend of the Sûre, and it is the core gateway to the Upper Sûre Nature Park and the lake district.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Esch-sur-Sûre (Luxembourg; commune in the Wiltz canton in the north-west, 3,279 residents in 2025 over 51.26 km² after Neunhausen and Heiderscheid were merged in 2011; the town proper about 415 people, set on a spur within a sharp meander of the Sûre, entered through a tunnel; 10th-century castle ruins above; the Upper Sûre Lake, an artificial reservoir built in the 1960s and extending about 10 km up the valley, supplying drinking water; Upper Sûre Natural Park)
     howItWorks:
-      "Esch-sur-Sûre is a commune of Wiltz canton in north-western Luxembourg with about 3,280 residents over 51 km² after Neunhausen and Heiderscheid were merged into it in 2011, governed by an elected council, with a mayor appointed by the Grand Duke from among the councillors; Luxembourg has only communes and the state, with no provincial layer between. The town proper holds only about 415 people, and the ground explains everything about it: the Sûre loops here into a nearly closed meander that all but islands a rock spur, the houses crowd onto that spur, the way in runs through a tunnel cut in the hillside, and the ruins of a tenth-century castle press down on the summit. In the 1960s the state dammed the river upstream to form the Upper Sûre Lake, about ten kilometres long — the reservoir is the country's main source of drinking water, so activity on it is regulated and the Upper Sûre Natural Park was created around it. Luxembourg City lies about 45 km south-east. Newcomers most often go wrong by taking the reservoir for an ordinary swimming lake, when it is the national water supply and the rules say which stretches may be entered.",
+      "Esch-sur-Sûre is a commune of Wiltz canton in north-western Luxembourg with about 3,280 residents over 51 km² after Neunhausen and Heiderscheid were merged into it in 2011, governed by an elected council, with a mayor appointed by the Grand Duke from among the councillors; Luxembourg has only communes and the state, with no provincial layer between. The town proper holds only about 415 people, and the ground explains everything about it: the Sûre loops here into a nearly closed meander that all but islands a rock spur, the houses crowd onto that spur, the way in runs through a tunnel cut in the hillside, and the ruins of a tenth-century castle press down on the summit. In the 1960s the state dammed the river upstream to form the Upper Sûre Lake, about ten kilometres long — the reservoir is the country's main source of drinking water, so activity on it is regulated and the Upper Sûre Natural Park was created around it. Luxembourg City lies about 37 km south-east in a straight line. Newcomers most often go wrong by taking the reservoir for an ordinary swimming lake, when it is the national water supply and the rules say which stretches may be entered.",
     layout:
       "The town is built on a near-closed river-bend peninsula of the Sûre, with the castle ruins overlooking the whole old town and river bend; the Upper Sûre reservoir lies right beside the town to the west.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 45 km); public transport is free nationwide, though exploring the lake district is best done by car or bicycle. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 39 km in a straight line); public transport is free nationwide, though exploring the lake district is best done by car or bicycle. The climate is temperate maritime.",
     culture:
       "All three official languages are in use. Though small, the town has long prioritised ecological protection given the Upper Sûre Lake's role as an important drinking-water source for Luxembourg, making it an important model area for ecotourism in the country. By law menu prices include service and no cover charge may be added for eating in, so tipping is not required. Tap water is safe to drink.",
     seeAndDo:
