@@ -3,6 +3,11 @@
 > 更新于 **2026-09-15**（抽样 seed=1..11、爱沙尼亚当批核实、「没有机场」回扫之后）。这份文档只回答一个问题：**新开一个会话，第一件事做什么。**
 > 错误分类与历史记录在 [`known-errors.md`](known-errors.md)，逐轮流水账在 [`verification-ledger.md`](verification-ledger.md)，
 > 流程在 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)。
+>
+> ⚠️ **如果这个会话要做的是「加一批城市 / 地形 / 航线」而不是「核实存量」，去
+> [`content-pipeline.md`](content-pipeline.md)**（G0–G9 固定流程，机器版 `npm run gate`，
+> 入口 `/add-content`）—— 核实只是那条流程里的 G5 一关，前面还有安全前置、
+> 预热与批次门禁，后面还有代码审查与 CI。
 
 ## 0. 一句话现状（2026-09-13）
 
