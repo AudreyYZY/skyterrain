@@ -77,13 +77,26 @@ async function checkSection(where: string, text: string, lang: "zh-CN" | "en-US"
   }
 }
 
+/**
+ * 均匀跨步抽样，**不要用 `slice(0, N)`**（2026-09-18 改）。
+ * 原先取的是头 40 个 —— 注册表按国家排序、新内容追加在末尾，于是这个检查
+ * **永远只看第一个国家（中国）的前 40 条，一次都没看过任何新加的内容**。
+ * 用户报的高亮错位正是新加的城市，而这道防线当时就在跑、也「通过」了。
+ * 跨步抽样让每个国家都进得来；单批新内容仍由 `npm run check:batch` 按 id 精确覆盖。
+ */
+function stride<T>(arr: readonly T[], n: number): T[] {
+  if (arr.length <= n) return [...arr];
+  const step = arr.length / n;
+  return Array.from({ length: n }, (_, i) => arr[Math.floor(i * step)]!);
+}
+
 for (const lang of ["zh-CN", "en-US"] as const) {
-  for (const c of CITY_REGISTRY.slice(0, SAMPLE)) {
+  for (const c of stride(CITY_REGISTRY, SAMPLE)) {
     const g = await resolveTravelGuide(c.id, lang);
     if (!g) continue;
     for (const s of travelGuideToSections(g, lang)) await checkSection(`travel/${c.id}/${s.key} [${lang}]`, s.text, lang);
   }
-  for (const t of TERRAIN_REGISTRY.slice(0, SAMPLE)) {
+  for (const t of stride(TERRAIN_REGISTRY, SAMPLE)) {
     const l = await resolveLesson(t.id, lang);
     if (!l) continue;
     for (const s of lessonSections(l)) await checkSection(`terrain/${t.id}/${s.key} [${lang}]`, s.text, lang);
@@ -92,7 +105,7 @@ for (const lang of ["zh-CN", "en-US"] as const) {
 
 const avgCoverage = coverages.length ? coverages.reduce((a, b) => a + b, 0) / coverages.length : 0;
 console.log(
-  `逐句高亮 × 真实 word boundary：核对了 ${checkedSections} 段（缓存里没有、跳过 ${cacheMisses} 段）\n` +
+  `逐句高亮 × 真实 word boundary：核对了 ${checkedSections} 段（缓存里没有 word boundary、跳过 ${cacheMisses} 段）\n` +
   `  平均覆盖音频 ${(avgCoverage * 100).toFixed(1)}%；最长的一块高亮 ${maxBlockSec.toFixed(1)} 秒（${maxBlockWhere}）`,
 );
 

@@ -40,7 +40,9 @@
     "check:content": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-content-index.ts --check",
     "test:e2e": "playwright test",
     "check:sentence-split": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-sentence-split.ts",
-    "check:highlight-sync": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-highlight-sync.ts"
+    "check:highlight-sync": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-highlight-sync.ts",
+    "check:batch": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-batch.ts",
+    "gate": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gate.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
