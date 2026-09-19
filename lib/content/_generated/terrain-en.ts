@@ -51,6 +51,7 @@ import { TERRAIN_EN as lithuania } from "@/lib/content/lithuania/terrain.en";
 import { TERRAIN_EN as kyrgyzstan } from "@/lib/content/kyrgyzstan/terrain.en";
 import { TERRAIN_EN as sri_lanka } from "@/lib/content/sri-lanka/terrain.en";
 import { TERRAIN_EN as brunei } from "@/lib/content/brunei/terrain.en";
+import { TERRAIN_EN as namibia } from "@/lib/content/namibia/terrain.en";
 
 export const ALL_TERRAIN_EN: Record<string, TerrainLesson> = {
   ...china,
@@ -104,4 +105,5 @@ export const ALL_TERRAIN_EN: Record<string, TerrainLesson> = {
   ...kyrgyzstan,
   ...sri_lanka,
   ...brunei,
+  ...namibia,
 };

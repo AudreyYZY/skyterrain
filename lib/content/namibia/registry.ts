@@ -1,0 +1,255 @@
+import type { TerrainEntry } from "@/lib/terrain-registry";
+
+// ============================================================
+// 非洲 / 纳米比亚
+//
+// 非洲首个收录国家，选定理由与另外五个候选各自推后的原因见
+// docs/africa-country-selection-2026-09-18.md。
+//
+// 本国的来源格局与其它国家不同，写条目前必须知道：
+//   · 地质调查局（mme.gov.na / gsn.gov.na）DNS 无法解析，**本国没有可用的国家地质机构来源**，
+//     地质内容只能靠 UNESCO 申报文本（1 级，但只覆盖纳米布沙海一带）与文献转引；
+//   · 环境部已由 MET 改名 **MEFT**（meft.gov.na），旧域名已死、新域名有结构化公园页
+//     （Park size / Proclamation / Natural features）—— 保护区面积与设立年份的 1 级来源；
+//   · 拉姆萨尔网页版 418 反爬，但 `Ramsar-Sites-annotated-summary-Namibia.pdf` 返回 200，
+//     742（沃尔维斯湾）/ 743（桑威奇）的面积、编号、中心点、指定日均出自它，其 RIS 信息为 1995 年口径。
+//
+// 红线（本国特别严）：`history` 段只写地质史、前现代史、保护区设立年份、UNESCO 列入；
+// 殖民史、1904 年事件、独立战争一律不碰；跨境河流只写境内段、不提邻国国名。
+// ============================================================
+
+const NAMIB_DESERT: TerrainEntry = {
+  id: "namib-desert",
+  nameZh: "纳米布沙漠",
+  nameEn: "Namib Desert",
+  category: "desert",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "戈巴贝布", lon: 15.0402, lat: -23.5612, elevation: 403, kind: "dune" },
+  bbox: [11.7, -28.7, 16.6, -17.2],
+  axis: [[16.45, -28.63], [11.85, -17.3]],
+  viewScale: 2.0,
+  label: { lon: 13.8, lat: -23.0, rotation: -15 },
+  source:
+    "纳米布沙漠：沿非洲西南岸延伸的海岸沙漠，纳米比亚境内为其主体段（按 repo 既定做法只写境内、不提邻国）。" +
+    "锚点戈巴贝布在库伊塞布河畔，是沙海、砾石平原、河谷三者唯一能同框的位置（坐标 OSM Nominatim，海拔按 SRTM 30 m 采样 403 米，均 3 级）。" +
+    "海岸线约 1,570 公里、内陆宽度 25–180 公里，取 UNESCO 纳米布沙海申报文本所附 MET（今 MEFT）规划文书（1 级）；" +
+    "纳米布-诺克卢福特公园 49,768 平方公里、1907/1968/1979 三个年份取 MEFT 公园页（1 级）。" +
+    "中文维基条目名为「纳米比沙漠」，与国名只差一字易读成「纳米比亚的沙漠」，本库取更通行的「纳米布沙漠」。" +
+    "流传的「南北超过 2,000 公里」只有 3 级出处且是跨国口径，未采用。",
+};
+
+const NAMIB_SAND_SEA: TerrainEntry = {
+  id: "namib-sand-sea",
+  nameZh: "纳米布沙海",
+  nameEn: "Namib Sand Sea",
+  category: "desert",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "索苏斯盐沼", lon: 15.2877, lat: -24.7398, elevation: 568, kind: "dune" },
+  bbox: [14.4, -26.2, 15.95, -23.3],
+  axis: [[14.52, -23.4], [15.4, -25.6]],
+  viewScale: 1.7,
+  label: { lon: 15.0, lat: -24.8, rotation: 20 },
+  source:
+    "纳米布沙海：2013 年列入世界遗产名录的风成沙海，纳米比亚唯一的自然遗产。" +
+    "遗产地面积 3,077,700 公顷、缓冲区 899,500 公顷、沿海近 300 公里、内陆约 100 公里、申报中心点 15.183°E/24.485°S，" +
+    "全部取 UNESCO 申报文本 1430.pdf（缔约方 MET 署名，1 级）；注意另有「沙丘与沙质平原约 4,000,000 公顷」的管理区口径，两者不可混用。" +
+    "锚点索苏斯盐沼坐标取维基数据 Q1932730（3 级），与申报中心点方位一致；海拔 SRTM 30 m 采样 568 米（3 级）。" +
+    "中文维基把 Deadvlei 译作「處死湖」（把 dead 当动词，且 vlei 是盐沼不是湖），本库写「死亡盐沼」；" +
+    "Sossusvlei 沿用「索苏斯盐沼」。锚点不用 Big Daddy 沙丘：其「325 米」只有旅游站来源，无 1–2 级出处。",
+};
+
+const SKELETON_COAST: TerrainEntry = {
+  id: "skeleton-coast",
+  nameZh: "骷髅海岸",
+  nameEn: "Skeleton Coast",
+  category: "coast",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "特勒斯湾", lon: 13.03, lat: -19.98, elevation: 2, kind: "dune" },
+  bbox: [11.7, -21.3, 14.05, -17.2],
+  axis: [[13.62, -21.18], [12.0, -18.43]],
+  viewScale: 1.8,
+  label: { lon: 12.7, lat: -19.5, rotation: -25 },
+  source:
+    "骷髅海岸：取 MEFT 骷髅海岸公园页的公园口径（1 级）—— 南自乌加布河向北 500 公里至库内内河、内陆约 40 公里，" +
+    "面积 16,390 平方公里，1971 年初设、1973 年成今日形态；地衣逾 100 种、鸟类 306 种同页。" +
+    "另有把多罗布一段也算进来的地理通称口径（3 级），本库不采用。" +
+    "锚点特勒斯湾坐标 OSM Nominatim（3 级）—— 注意英文维基的同名条目指加拿大安大略省的 Terrace Bay，勿取错。" +
+    "axis 两端取乌加布河口与弗里乌角（均为实测点）；库内内河口坐标 Nominatim 无命中，未作为端点写入，bbox 北界按公园北止于库内内河的 1 级描述取值。" +
+    "流传的「一千多艘沉船」只有 3 级出处、MEFT 自身只写 a number of，未采用。",
+};
+
+const CENTRAL_NAMIB_GRAVEL_PLAINS: TerrainEntry = {
+  id: "central-namib-gravel-plains",
+  nameZh: "中纳米布砾石平原",
+  nameEn: "Central Namib Gravel Plains",
+  category: "desert",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "月球景观", lon: 14.7904, lat: -22.6899, elevation: 295, kind: "escarpment" },
+  bbox: [14.35, -23.6, 15.9, -22.1],
+  axis: [[14.55, -22.55], [15.7, -23.3]],
+  viewScale: 1.4,
+  label: { lon: 15.0, lat: -22.8, rotation: 10 },
+  source:
+    "中纳米布砾石平原：纳米布三大地貌单元里沙海与海岸之外的那一块，英文名 Central Namib gravel plains 见 UNESCO 申报文本所附 MET 规划文书（1 级）。" +
+    "基岩准平原自海平面升至沙丘东缘 800–1,000 米，取申报文本（1 级，原文 bedrock peneplain）；" +
+    "多罗布国家公园 7,800 平方公里、2010 年设立，取 MEFT 公园页（1 级），地衣原野与百岁兰同页。" +
+    "锚点月球景观（斯瓦科普河谷）坐标 OSM（3 级），海拔 SRTM 30 m 采样 295 米（3 级）。" +
+    "分类取 desert：docs/terrain-taxonomy.md §3.2 的 desert 判据原文就是「风成沙漠、沙地或**砾质戈壁**」，本条正是砾质戈壁；" +
+    "而 plain 的判据是「**低平的堆积**地面」，本条恰恰是**剥蚀**面、且向内陆升到 800–1,000 米，两项都不合。\n" +
+    "（曾一度判 plain，理由是「本国已有两个 desert 条目，归 plain 能让分类覆盖更完整」—— 那是覆盖率配平、不是分类判据，已纠正；" +
+    "同批的 docs/africa-country-selection-2026-09-18.md 对卡拉哈里也写明「判 desert、不判 plain」，口径一致。）",
+};
+
+const SANDWICH_HARBOUR: TerrainEntry = {
+  id: "sandwich-harbour",
+  nameZh: "桑威奇潟湖",
+  nameEn: "Sandwich Harbour",
+  category: "coast",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "桑威奇潟湖", lon: 14.4831, lat: -23.3831, elevation: 0, kind: "lake" },
+  bbox: [14.42, -23.5, 14.62, -23.28],
+  label: { lon: 14.5, lat: -23.38, rotation: 0 },
+  source:
+    "桑威奇潟湖：拉姆萨尔湿地编号 743，面积 16,500 公顷，1995-08-23 指定，中心点 23°22′59″S/14°28′59″E —— " +
+    "全部取拉姆萨尔秘书处导出的纳米比亚 RIS 摘要 PDF（1 级；网页版 418 反爬，摘要 PDF 可取），其 RIS 信息为 1995 年口径。" +
+    "本条是本批唯一锚点坐标有 1 级出处的条目。水鸟约 75,000 只（曾达 400,000）、2008 年 1 月火烈鸟计数、" +
+    "人类利用此处海洋资源可追溯至约 1,600 年前，取 UNESCO 申报文本 1430.pdf（1 级）。" +
+    "中文「桑威奇」已被南桑威奇群岛占用，且申报文本原文写明它 no longer a functioning harbour，故取「桑威奇潟湖」而非「桑威奇港」。" +
+    "名字来源有捕鲸船说与德语讹变说两说且都涉殖民语境，按红线不写。",
+};
+
+const WALVIS_BAY_LAGOON: TerrainEntry = {
+  id: "walvis-bay-lagoon",
+  nameZh: "沃尔维斯湾潟湖",
+  nameEn: "Walvis Bay Lagoon",
+  category: "coast",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "鹈鹕角", lon: 14.4487, lat: -22.868, elevation: 0, kind: "lake" },
+  bbox: [14.4, -23.08, 14.6, -22.83],
+  label: { lon: 14.48, lat: -22.95, rotation: 0 },
+  source:
+    "沃尔维斯湾潟湖：拉姆萨尔湿地编号 742，面积 12,600 公顷，1995-08-23 指定，中心点 23°00′S/14°27′E，行政区埃龙戈，" +
+    "水鸟 37,000–79,000 只、常规出现的受胁鸟种 11 种 —— 全部取拉姆萨尔纳米比亚 RIS 摘要 PDF（1 级，1995 年口径，已 30 年未更新）。" +
+    "锚点鹈鹕角沙嘴尖端坐标 OSM Nominatim（3 级，类型标为 cape）。" +
+    "中文维基「鲸湾港」是城市条目，为免与将来的旅游模式城市条目撞名，地形条目取「沃尔维斯湾潟湖」、城市留给「鲸湾港／沃尔维斯湾」。" +
+    "流传的「南部非洲最重要的海岸湿地」不可写 —— 拉姆萨尔原文的最高级带 One of 且给的是桑威奇、限定词只到 Namibia's；" +
+    "「Dune 7 高 383 米」亦无 1–2 级出处，未采用。",
+};
+
+const BRANDBERG: TerrainEntry = {
+  id: "brandberg",
+  nameZh: "布兰德贝格山",
+  nameEn: "Brandberg",
+  category: "inselberg",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "国王岩峰", lon: 14.5776, lat: -21.1485, elevation: 2573, kind: "peak" },
+  bbox: [14.4033, -21.2429, 14.6961, -21.0022],
+  viewFrom: 135,
+  label: { lon: 14.55, lat: -21.12, rotation: 0 },
+  source:
+    "布兰德贝格山：主峰国王岩峰海拔 2,573 米、为纳米比亚海平面以上最高点 —— 本轮升级为 1 级双源明文" +
+    "（纳米比亚地质调查局 GSN Geosite 单页「standing 2573 m above sea level its central peak, Königstein, is the highest elevation in Namibia」+ UNESCO 预备名录 TL 1744）。" +
+    "⚠️ 纳米比亚统计局不发布高程数据，这条的 1 级来源是 GSN 与 UNESCO、不是 NSA。另有 2,575／2,579／2,606 米流传，口径不明。" +
+    "GSN 站点本身已死（mme.gov.na 无 A 记录；gsn.gov.na 有 A 记录但端口不通），全套 Geosite 说明书经 web.archive.org 取得 —— " +
+    "这条通道推翻了 docs/africa-country-selection-2026-09-18.md 里「本国没有可用地质机构来源」的判定。" +
+    "bbox 为 OSM natural=bare_rock 多边形实测外接矩形（约 30×27 公里），与 1 级「almost circular inselberg」及 2 级「直径 23 公里花岗岩体」吻合。" +
+    "相对高差两个 1 级来源冲突（GSN >2,000 米 vs TL >1,800 米），正文取保守下界。" +
+    "已列为国家纪念地、面积逾 450 平方公里，2002 年列入预备名录（TL 1744）；3 级来源称 1951 年划定，因会牵出当时治理主体，年份不写。" +
+    "中文名撞车已核：「布兰德山」是奥地利 2,610 米山峰，中文维基另有「布兰德贝格山 (奥地利)」条目，而不带括号的「布兰德贝格山」中文维基判给本山，故沿用。" +
+    "「世界最大花岗岩独石」在 1–2 级来源零命中，未采用。",
+};
+
+const SPITZKOPPE: TerrainEntry = {
+  id: "spitzkoppe",
+  nameZh: "斯皮茨科普山",
+  nameEn: "Spitzkoppe",
+  category: "inselberg",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "大斯皮茨科普峰", lon: 15.1688, lat: -21.8247, elevation: 1728, kind: "peak" },
+  bbox: [15.02, -21.9, 15.23, -21.78],
+  viewFrom: 135,
+  label: { lon: 15.12, lat: -21.84, rotation: 25 },
+  source:
+    "斯皮茨科普山：GSN Geosite 单页标题为 SPITZKOPPE AND PONTOK MOUNTAINS，高出纳米布平原 600–700 米、侵入年代约 1.35 亿年前、围岩达马拉超群约 6.5 亿年（均 1 级，经 Wayback 取得）。" +
+    "「非洲的马特洪峰」这个绰号有 1 级记录（GSN 原文 dubbed the 'Matterhorn of Africa'）。" +
+    "锚点大斯皮茨科普峰坐标与海拔 1,728 米取 OSM（wikidata Q31784688，3 级）—— ⚠️ GSN 单页只给相对高差、未给绝对海拔。" +
+    "bbox 由大／小斯皮茨科普与蓬托克山三个实测峰点外扩得到（中置信，非实测多边形：本轮 Overpass 三个镜像全部 406）。" +
+    "**不给 axis**：与布兰德贝格／埃龙戈一致，按 docs/terrain-taxonomy.md §6.1 —— 这一族没有主脊线与走向，给不出 axis 本身就是信号；" +
+    "且实测带 axis 时 deriveViewFrom 走在轴判定的边界上（northHalf 阈值只差约 0.0009°≈100 m），锚点微调就会让镜头翻到山体另一侧。改为显式 viewFrom。" +
+    "中文名不稳定（另见斯皮兹考比／斯派特壳朴等译法，中文维基无条目），本库统一用「斯皮茨科普山」；" +
+    "不用「斯普利特山谷」—— 既非山谷，又撞克罗地亚的斯普利特。不在 MEFT 32 个公园清单内（1 级否证），故不写保护区身份；" +
+    "蓬托克山东端的 Bushman's Paradise 岩画点有国家纪念地地位（1 级 GSN），专名保留不译义。",
+};
+
+const ERONGO_MOUNTAINS: TerrainEntry = {
+  id: "erongo-mountains",
+  nameZh: "埃龙戈山",
+  nameEn: "Erongo Mountains",
+  category: "inselberg",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "霍恩施泰因峰", lon: 15.5285, lat: -21.728, elevation: 2319, kind: "peak" },
+  bbox: [15.45, -21.82, 15.82, -21.48],
+  viewFrom: 225,
+  label: { lon: 15.63, lat: -21.66, rotation: 0 },
+  source:
+    "埃龙戈山：直径约 35 公里、高出周边达马拉准平原逾 1,000 米、位于奥马鲁鲁西南约 25 公里、环状辉绿岩岩脉（GSN 原文 dolerite）最厚 200 米、" +
+    "成因事件 1.37–1.24 亿年前（全部 1 级 GSN Geosite「ERONGO」，经 Wayback 取得）。" +
+    "分类判 inselberg 而非 mountain_system：GSN 记其为近圆形环状杂岩、四周为花岗岩断崖，**无主脊线、无走向**，mountain_system 的判据本身不成立；" +
+    "也不判 basin —— 本库把 basin 给的是今日地形上呈洼地的破火山口，而埃龙戈是被剥蚀出来的岩核、地形上是凸的。" +
+    "规模先例：哈萨克斯坦 bektau-ata（约 23×22 公里）、乌兹别克斯坦 tamdytau（约 75×44 公里）同为 inselberg。" +
+    "⚠️ bbox 为中低置信推导值（按 GSN 的直径与方位 + OSM mountain_range 节点反推；Overpass 本轮不可用），**待在 CesiumMap 目视复核高亮块是否套住环形山体**。" +
+    "最高峰霍恩施泰因 2,319 米只有 OSM 等 3 级来源，GSN 未给峰名与海拔，正文标明口径。" +
+    "法定地位务必写对：**不是国家公园、也不是国家级保护区**（MEFT 32 个公园页实测无此条，1 级否证）；" +
+    "实际是私人土地自愿联合的自然保护区（仅 3 级来源，成立年份与面积不写）。山中三处岩画洞穴已列为国家纪念地（1 级 GSN）。" +
+    "同名的埃龙戈区是以本山命名的行政区，非同一对象。",
+};
+
+const FISH_RIVER_CANYON: TerrainEntry = {
+  id: "fish-river-canyon",
+  nameZh: "鱼河峡谷",
+  nameEn: "Fish River Canyon",
+  category: "gorge",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "霍巴斯主观景台", lon: 17.6061, lat: -27.6102, elevation: 900, kind: "gorge" },
+  bbox: [17.35, -27.96, 17.95, -26.82],
+  axis: [[17.79, -26.85], [17.49, -27.92]],
+  viewScale: 1.3,
+  label: { lon: 17.6, lat: -27.4, rotation: -15 },
+  source:
+    "鱼河峡谷：长度只写有口径的那一个 —— 56 公里，「沿河道量算，自最北观景台以北的第一处瀑布至楚达乌布三角点对面」（1 级 UNESCO 预备名录 TL 1745，2002）。" +
+    "北段宽 8 公里／深 160–190 米、南段宽 5 公里／深 460–550 米，GSN 与 TL 1745 逐字一致（1 级双源）。" +
+    "⚠️ 流传的「160 公里长」在 1–2 级来源零命中；「宽 27 公里」与 1 级冲突（那是外围地堑两侧断崖间距，不是峡谷宽度）；两者均未采用。" +
+    "/Ai-/Ais 温泉禁猎公园 1968 年设立、1988 年并入洪斯山区扩界、面积 4,611 平方公里、2003 年 8 月签约设立跨境公园（1 级 MEFT）—— " +
+    "跨境那条按本库既定做法只写签约事实，不写对岸国名与对方公园名；界河同样只写境内段。" +
+    "温泉水温 60℃／上游硫泉 56℃、纳马语 /Ai-/Ais 意为「灼热的水」（1 级 MEFT 与 TL 一致）。" +
+    "锚点霍巴斯主观景台坐标取 OSM valley 节点（中高置信）；**elevation 900 米是按上下两段深度反推的谷缘量级近似值、仅供相机高度补偿，不是引用数据**，正文不写此数。" +
+    "「世界第二大峡谷」本轮又找到两个新的 1 级出处（GSN、TL 1745）共三个，但三个都不给单位、GSN 那句还把可量的 size 与不可量的 grandeur 捆在一起，维持不写；" +
+    "「非洲最大天然峡谷」（MEFT，1 级）亦不写 —— 同样无单位，且青尼罗河峡谷深约 1,500 米、鱼河峡谷最深 460–550 米，以深度计明显不成立。" +
+    "MEFT 的「历经 6 亿多年演化」与 GSN／TL 的分期口径完全不同，改写分期事实。" +
+    "按 GSN／TL 的叙述，河与谷是同一个对象，故不再为「鱼河」单列 river 条目。" +
+    "⚠️ bbox（约 59×126 公里）是自塞海姆一带到 /Ai-/Ais 温泉的**整条走廊**，**不是**正文那 56 公里量算段的范围 —— " +
+    "正文已写明 56 公里的口径是「沿河道量算、自某瀑布至某三角点对面」，两者不是一回事，勿据 bbox 反推长度。",
+};
+
+export const TERRAINS: TerrainEntry[] = [
+  NAMIB_DESERT,
+  NAMIB_SAND_SEA,
+  SKELETON_COAST,
+  CENTRAL_NAMIB_GRAVEL_PLAINS,
+  SANDWICH_HARBOUR,
+  WALVIS_BAY_LAGOON,
+  BRANDBERG,
+  SPITZKOPPE,
+  ERONGO_MOUNTAINS,
+  FISH_RIVER_CANYON,
+];
