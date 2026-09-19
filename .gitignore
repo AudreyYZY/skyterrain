@@ -69,3 +69,6 @@ __pycache__/
 # Playwright
 /test-results/
 /playwright-report/
+
+# 研究事实表的工作底稿（docs/content-pipeline.md G1 约定落在这里），不进仓库
+scratchpad/
