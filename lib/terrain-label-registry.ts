@@ -298,6 +298,11 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lake-trasimeno": "national",
   marmolada: "poi",
   "dune-di-piscinas": "poi",
+  // 纳米比亚：布兰德贝格是 T1 骨架条目又是全国最高点，而 inselberg 的默认 importance 是 poi
+  // （默认假设「岛山 = 点状小地物」，对 30×27 km 的环状杂岩不成立），不抬级常规缩放下看不到标签。
+  brandberg: "national",
+  // 埃龙戈 38×38 km，是本批三个 inselberg 里最大的一个，同样不该停在默认 poi
+  "erongo-mountains": "regional",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {
