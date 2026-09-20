@@ -301,6 +301,9 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   // 纳米比亚：布兰德贝格是 T1 骨架条目又是全国最高点，而 inselberg 的默认 importance 是 poi
   // （默认假设「岛山 = 点状小地物」，对 30×27 km 的环状杂岩不成立），不抬级常规缩放下看不到标签。
   brandberg: "national",
+  // 埃托沙是全国尺度的盆地骨架；库内内是西北部唯一的常年主河，均按 T1 排序与显示。
+  "etosha-pan": "national",
+  "kunene-river-namibia": "national",
   // 埃龙戈 38×38 km，是本批三个 inselberg 里最大的一个，同样不该停在默认 poi
   "erongo-mountains": "regional",
 };
