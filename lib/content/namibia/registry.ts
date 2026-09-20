@@ -7,8 +7,8 @@ import type { TerrainEntry } from "@/lib/terrain-registry";
 // docs/africa-country-selection-2026-09-18.md。
 //
 // 本国的来源格局与其它国家不同，写条目前必须知道：
-//   · 地质调查局（mme.gov.na / gsn.gov.na）DNS 无法解析，**本国没有可用的国家地质机构来源**，
-//     地质内容只能靠 UNESCO 申报文本（1 级，但只覆盖纳米布沙海一带）与文献转引；
+//   · 地质调查局现站（mme.gov.na / gsn.gov.na）不稳定，但新版 MIME 出版页与搜索索引可取，
+//     旧版 Geosite 单页也可经 Wayback 恢复；GSN 因而是本国地学内容的主力 1 级来源；
 //   · 环境部已由 MET 改名 **MEFT**（meft.gov.na），旧域名已死、新域名有结构化公园页
 //     （Park size / Proclamation / Natural features）—— 保护区面积与设立年份的 1 级来源；
 //   · 拉姆萨尔网页版 418 反爬，但 `Ramsar-Sites-annotated-summary-Namibia.pdf` 返回 200，
@@ -241,6 +241,187 @@ const FISH_RIVER_CANYON: TerrainEntry = {
     "正文已写明 56 公里的口径是「沿河道量算、自某瀑布至某三角点对面」，两者不是一回事，勿据 bbox 反推长度。",
 };
 
+const CAPE_CROSS: TerrainEntry = {
+  id: "cape-cross",
+  nameZh: "开普十字角",
+  nameEn: "Cape Cross",
+  category: "coast",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "开普十字角", lon: 13.9508, lat: -21.7728, elevation: 4, kind: "escarpment" },
+  bbox: [13.9, -21.85, 14.05, -21.7],
+  label: { lon: 13.97, lat: -21.78, rotation: 0 },
+  source:
+    "开普十字角：保护区面积 60 平方公里、1968 年设立、繁殖季（11–12 月）海豹数量可达 21 万只、" +
+    "自然特征记为岩质海湾／沙滩／盐沼 —— 全部取 MEFT 开普十字海豹保护区页（1 级）。" +
+    "1486 年葡萄牙航海者迪奥戈·康在此登陆并立石柱（padrão）、现地可见复制品、该区已列为国家遗产地，同页（1 级，属前现代史，可写）。" +
+    "锚点坐标取英文维基 GeoData（3 级），海拔按 SRTM 30 m 采样 4 米（3 级）。" +
+    "⚠️ MEFT 原文写「the world's largest breeding colony of Cape fur seals」，属无限定最高级、撞 check:claims 棘轮，正文降为「之一」。" +
+    "🚫 不写 19 世纪的鸟粪采集与海豹产业、不写工人死亡（MEFT 页面都有，1 级，但属殖民期史）；不写当前的年度捕猎配额（属现行政策且会过期）。",
+};
+
+const KALAHARI_NAMIBIA: TerrainEntry = {
+  id: "kalahari-namibia",
+  nameZh: "卡拉哈里沙地",
+  nameEn: "Kalahari Sandveld",
+  category: "desert",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "斯坦普里特沙垄区", lon: 18.3973, lat: -24.349, elevation: 1169, kind: "dune" },
+  bbox: [17.6, -27.0, 20.9, -19.6],
+  axis: [[18.2, -26.6], [20.6, -21.0]],
+  viewScale: 2.2,
+  label: { lon: 19.2, lat: -23.6, rotation: -35 },
+  source:
+    "卡拉哈里沙地（纳米比亚东部）：UNESCO 纳米布沙海申报文本把这一带记为卡拉哈里盆地西缘，描述为" +
+    "「linear, vegetated sand dunes relatively well stabilised by grassland vegetation and separated by wide interdune valleys」，" +
+    "活动沙脊高度 <20 米、沿纳米比亚东部延伸逾 1,000 公里（1 级，1430.pdf 及其表 3.c.10）。" +
+    "⚠️ 申报文本那句原文是「东部国境线」口径**且同句点了六个邻国国名** —— 数字可引、句子不可照抄，正文只写「纳米比亚东部」。" +
+    "分类取 desert：taxonomy §3.2 的 desert 判据原文含「**沙地**」一档，中文地理学里「沙地」正指浑善达克这类半固定、有草被的风成沙丘区，与本条同型；" +
+    "不取 grassland（判据要求地貌与植被一体，这里地貌是沙丘、植被只是覆盖层，归 grassland 会丢掉「红色线形沙垄 + 丘间谷地」这个唯一的空中识别特征）；" +
+    "不取 plain（有规则起伏的沙垄阵，不是低平堆积面）。Tier T2。" +
+    "⚠️ 锚点是村镇点不是地貌点（OSM 斯坦普里特，3 级）—— **1 级拿不到任何「卡拉哈里纳米比亚段」的官方命名地标**，MEFT 在这一带没有公园页；" +
+    "axis 的沙垄走向按南部非洲线形沙垄的区域通例（NW–SE）推得，**无 1 级出处**。" +
+    "中文维基条目名为「喀拉哈里沙漠」，本库用更常见的「卡拉哈里」；条目名取「沙地」而非「沙漠」是有意的，正文亦明写它不是流动沙漠。",
+};
+
+const KUISEB_CANYON: TerrainEntry = {
+  id: "kuiseb-canyon",
+  nameZh: "库伊塞布峡谷",
+  nameEn: "Kuiseb Canyon",
+  category: "gorge",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "库伊塞布峡谷观景台", lon: 15.7451, lat: -23.3419, elevation: 650, kind: "gorge" },
+  bbox: [15.0, -23.7, 16.1, -23.2],
+  axis: [[16.05, -23.52], [15.05, -23.56]],
+  viewScale: 1.2,
+  label: { lon: 15.6, lat: -23.42, rotation: -8 },
+  source:
+    "库伊塞布峡谷：源头在中部内陆高原、温得和克西南约 20 公里；大陡崖以西切入晚前寒武纪变质沉积岩成「deeply incised gorge」，" +
+    "至距海约 65 公里处开阔，距海 20–40 公里之间谷宽约 1–2 公里；深切由第三纪末陆内抬升启动，第四纪多期堆积／再切交替 —— " +
+    "全部取纳米比亚地质调查局 Memoir 9（1987，库伊塞布谷新生代层序，1 级，经 Wayback 取得）。" +
+    "「河挡住沙海北进」双 1 级：Memoir 9「forms the northern boundary of the main Namib Sand Sea」+ 申报文本「intermittent Kuiseb floods impede the dunes ... from extending northward」。" +
+    "锚点取 OSM C14 公路旁观景台节点，**并有 1 级交叉印证**：Memoir 9 把 Karpfenkliff 组层型地点记为 23°20′S/15°45′E，与该点相距约 1 公里。" +
+    "**elevation 650 米是谷缘量级的近似值、仅供相机高度补偿，不是引用数据**，正文不写此数。" +
+    "⚠️ **峡谷的深度与长度 1 级拿不到**（流传的「逾 200 米」「约 150 公里」均为 3 级），正文一律不写这两个数，只写 1 级能支撑的形态描述。" +
+    "⚠️ axis 为推导值（Overpass 本轮不可用，未能从河道图层描线），bbox 西端按 Memoir 9「距海 65 公里处开阔」反算、与戈巴贝布位置互相印证。" +
+    "中文名无权威定名（中文维基无条目），本库用音译「库伊塞布」。" +
+    "🚫 **绝对不写** GSN 塞斯瑞姆单页里那句二战期间两位德国地质学家躲避拘留的轶事（二战 + 拘留 + 殖民期国籍，三重红线，最容易被当成有趣的地质学家故事顺手写进去）；" +
+    "不写 MEFT 页里「托普纳尔人的居住权由维多利亚女王保障」与 1907 年设园动机那两段；不写公园内铀矿探矿权。",
+};
+
+const ETOSHA_PAN: TerrainEntry = {
+  id: "etosha-pan",
+  nameZh: "埃托沙盐沼",
+  nameEn: "Etosha Pan",
+  category: "lake",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "埃托沙盐沼中心", lon: 16.3667, lat: -18.7667, elevation: 1078, kind: "salt-lake" },
+  bbox: [15.8405, -19.1423, 16.9184, -18.4237],
+  axis: [[15.88, -18.82], [16.88, -18.72]],
+  viewScale: 1.5,
+  label: { lon: 16.37, lat: -18.78, rotation: -5 },
+  source:
+    "埃托沙盐沼：UNESCO 预备名录 TL 6095（2016，纳米比亚全国委员会提交）给出面积 4,730 平方公里、中心点 18°46′S/16°22′E、" +
+    "海拔 1,071–1,086 米，并明确它是库韦莱水系位于奥万博盆地最低处的终端盐沼；雨季偶发浅水通常不超过 1 米（1 级）。" +
+    "GSN Geosite 单页给出近似面积 4,760 平方公里，属不同取整口径；正文统一采用 UNESCO 的 4,730 平方公里，不混用。" +
+    "GSN 记古湖约 500–700 万年前形成、约 200 万年前河流袭夺切断主要来水，随后蒸发与风蚀共同塑成今日盐沼（1 级）。" +
+    "bbox 取 OSM relation 5694335 外接矩形，和 UNESCO 中心点、椭圆形描述一致（3 级几何；中心与高程为 1 级）。" +
+    "埃托沙国家公园 1907 年设立、现面积 22,935 平方公里，取 MEFT 公园页（1 级）；公园面积不是盐沼面积，正文分开写。" +
+    "⚠️ MEFT 与 UNESCO 均含多处最高级／排名句，正文只保留可量事实；中文取「盐沼」而非「湖」，因为它绝大多数时间是干燥盐壳，仅异常湿年形成浅水面。",
+};
+
+const WATERBERG_PLATEAU: TerrainEntry = {
+  id: "waterberg-plateau",
+  nameZh: "瓦特贝格高原",
+  nameEn: "Waterberg Plateau",
+  category: "plateau",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "瓦特贝格高原观景点", lon: 17.2412, lat: -20.5046, elevation: 1650, kind: "escarpment" },
+  bbox: [17.0944, -20.6048, 17.5605, -20.2295],
+  axis: [[17.12, -20.58], [17.52, -20.27]],
+  viewScale: 1.15,
+  label: { lon: 17.31, lat: -20.42, rotation: -38 },
+  source:
+    "瓦特贝格高原：MEFT 公园页给出 50 公里长的多孔砂岩山体、山脚永久泉群、公园面积 405 平方公里、1972 年设立（1 级）。" +
+    "GSN Geosite『WATERBERG & MOUNT ETJO』记其平顶、最高面约 1,930 米；砂岩覆盖页岩与泥岩，地层约 2.2–1.8 亿年前沉积，" +
+    "顶部为保存古沙丘形态的风成埃乔砂岩；雨水渗入多孔砂岩，在下伏致密泥岩界面重新出露成泉（1 级）。" +
+    "分类取 plateau：主体是约 50 公里长、连续平顶且由砂岩硬盖保护的桌状高地；GSN 在区域成因讨论中亦把它列入 Karoo-age inselbergs，" +
+    "但本库按今日形态与观察尺度判 plateau，不把整块长条高原降成单体岩丘。" +
+    "bbox 取 OSM Waterberg Plateau Park way 79371984；锚点为 OSM Waterberg Plateau Viewpoint，海拔 1,650 米为相机补偿近似值、正文不写（3 级）。" +
+    "🚫 MEFT 页面第 11 行整段涉及 1904 年事件，本文完全不用；history 只写地质、足迹与 1972 年设园。",
+};
+
+const ETENDEKA_PLATEAU: TerrainEntry = {
+  id: "etendeka-plateau",
+  nameZh: "埃滕德卡高原",
+  nameEn: "Etendeka Plateau",
+  category: "plateau",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "塔费尔贝格", lon: 14.1505, lat: -20.1713, elevation: 1602, kind: "peak" },
+  bbox: [13.15, -21.05, 14.9, -18.95],
+  axis: [[13.45, -20.8], [14.55, -19.15]],
+  viewScale: 1.65,
+  label: { lon: 14.0, lat: -20.0, rotation: -30 },
+  source:
+    "埃滕德卡高原：GSN Geosite 单页给出白垩纪火山岩地貌、胡阿布河至霍阿尼布河之间约 78,000 平方公里、东缘高出深切基底 700–800 米，" +
+    "并解释 Etendeka 在当地语言中意为『平顶山之地』（1 级）。" +
+    "约 80% 火山岩为玄武质熔岩，其余为层间石英粗面岩与少量粗面岩；塔费尔贝格保留厚度 880 米、原始最大地层厚度可能超过 1,000 米，" +
+    "早期熔岩与下伏特韦弗尔方丹风成砂岩互层（1 级）。" +
+    "成因取 GSN 的裂隙喷发解释：不是单一火山锥，而是冈瓦纳裂解期由大量裂隙反复溢流形成的洪流玄武岩高原；" +
+    "与对岸同龄火山岩的跨洋对比只在概念段说明曾属同一火成省，不写现代国名。" +
+    "锚点塔费尔贝格坐标与海拔取 OSM node 12382685756（3 级），其位置和 GSN『高原东南部』一致；bbox 按 GSN 两条河界与地质图概括，非实测多边形。" +
+    "⚠️ GSN 单页把胡阿布变质杂岩年代写成约 1.6 million years，显系 1.6 billion 的排字错误；正文不引用这个数。",
+};
+
+const NAUKLUFT_MOUNTAINS: TerrainEntry = {
+  id: "naukluft-mountains",
+  nameZh: "奈克拉夫特山",
+  nameEn: "Naukluft Mountains",
+  category: "mountain_system",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "巴肯科普峰", lon: 16.1922, lat: -24.1568, elevation: 1978, kind: "peak" },
+  bbox: [15.75, -24.5, 16.43, -23.75],
+  axis: [[15.82, -24.35], [16.35, -23.85]],
+  viewScale: 1.25,
+  label: { lon: 16.08, lat: -24.1, rotation: -35 },
+  source:
+    "奈克拉夫特山：GSN Geosite『NAUKLUFT』明确分出三套单元——18–10 亿年前的基底、约 6 亿年前浅海沉积的纳马群砂岩与碳酸盐岩、" +
+    "以及最上部由白云岩／灰岩／页岩／砾岩／石英岩组成的奈克拉夫特推覆体（1 级）。" +
+    "推覆体原沉积于以北约 80 公里处，约 5.5–5.0 亿年前沿一层薄白云岩向南滑移到当前位置；后期碳酸盐岩溶蚀形成地下排水、泉池与钙华（1 级）。" +
+    "MEFT 把奈克拉夫特山列为纳米布—奈克拉夫特公园自然特征；奈克拉夫特山斑马公园 1968 年设立，1979 年与既有沙漠公园及国有地合并（1 级）。" +
+    "分类取 mountain_system：这是多片强烈褶皱、层状推覆体叠置成的山块，有连续山脊与深切谷地；不取 plateau（顶面并非单一平面），也不取 inselberg。" +
+    "锚点巴肯科普峰坐标与 1,978 米海拔取 OSM node 8697337393（3 级）；bbox 按 GSN 卫星图与公园东界概括，非实测多边形。" +
+    "🚫 GSN 单页末段涉及 20 世纪初武装冲突，本文完全不用；只保留石器与岩画的前现代记录。",
+};
+
+const KUNENE_RIVER_NAMIBIA: TerrainEntry = {
+  id: "kunene-river-namibia",
+  nameZh: "库内内河（纳米比亚段）",
+  nameEn: "Kunene River (Namibian Reach)",
+  category: "river",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "埃普帕瀑布", lon: 13.2447, lat: -17.0016, elevation: 600, kind: "gorge" },
+  bbox: [11.7, -17.75, 14.25, -16.92],
+  axis: [[14.2181, -17.3931], [11.75, -17.25]],
+  viewScale: 1.55,
+  label: { lon: 13.15, lat: -17.24, rotation: -5 },
+  source:
+    "库内内河只收纳米比亚段：MEFT《Ruacana Landscape Profile》写明河在鲁阿卡纳进入纳米比亚，西部山地属于大陡崖，" +
+    "地势急降在鲁阿卡纳最明显；谷地为冲积土，河水支撑沿岸小规模灌溉（1 级）。" +
+    "MEFT 骷髅海岸公园页把库内内河口列为重要湿地，并以河口作为公园北端（1 级）；GSN 全国地质景点图列出鲁阿卡纳瀑布与埃普帕瀑布（1 级）。" +
+    "GSN 埃托沙单页提供地质联系：古埃托沙湖约 500–700 万年前曾接收古库内内水系，约 200 万年前河流袭夺使主要来水转向西流，古湖随之萎缩（1 级）。" +
+    "锚点埃普帕瀑布坐标取 OSM node 6084367435；鲁阿卡纳瀑布取 node 1486960514；河口约 11.75°E/17.25°S，" +
+    "axis 与 bbox 只用于覆盖纳米比亚最北缘的下游走廊，海拔 600 米为相机补偿近似值，均属 3 级几何。" +
+    "正文不写全河长度、流域跨境面积、上游工程或对岸国名；条目名明确加『纳米比亚段』，避免把整条河归入单一国家。",
+};
+
 export const TERRAINS: TerrainEntry[] = [
   NAMIB_DESERT,
   NAMIB_SAND_SEA,
@@ -252,4 +433,12 @@ export const TERRAINS: TerrainEntry[] = [
   SPITZKOPPE,
   ERONGO_MOUNTAINS,
   FISH_RIVER_CANYON,
+  CAPE_CROSS,
+  KALAHARI_NAMIBIA,
+  KUISEB_CANYON,
+  ETOSHA_PAN,
+  WATERBERG_PLATEAU,
+  ETENDEKA_PLATEAU,
+  NAUKLUFT_MOUNTAINS,
+  KUNENE_RIVER_NAMIBIA,
 ];

@@ -151,4 +151,124 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     history:
       "The geological history is described above; the exposed metamorphic basement was metamorphosed more than a billion years ago, and the horizontal sediments above it are about 550 million years old. The canyon is a national monument, and was added to the UNESCO World Heritage Tentative List in 2002 as Fishriver Canyon. The hot springs game park it sits in was proclaimed in 1968, greatly enlarged in 1988 by the addition of the Huns Mountains, covers 4,611 km², and in August 2003 a treaty established a transfrontier park. Groundwater rising along the bounding fault belt feeds the springs: the spring in the canyon runs at 60 °C and the sulphur spring upstream at 56 °C, and the Nama name of the springs means burning water. Within the park, the Apollo 11 Cave holds animal images more than 25,000 years old; that cave lies in the Huns Mountains and is not inside the canyon itself.",
   },
+  "cape-cross": {
+    // sources: 见 terrain.zh.ts 同条目注释（MEFT 的无限定最高级已降为 one of）
+    seeing:
+      "Cape Cross is a rocky headland on the middle stretch of the Namib coast, declared a seal reserve in 1968 and covering 60 km², with rocky bays, beaches and salt pans as its recorded natural features. It holds one of the world's largest breeding colonies of Cape fur seals, which in the November-to-December breeding season can reach 210,000 animals.",
+    formation:
+      "The headland itself is a rocky projection of this coast, flanked by beaches and salt pans. What makes it exceptional is not the landform but the water: cold upwelling in the Benguela Current brings deep nutrients to the surface and sustains dense fish shoals, and that is the direct reason a seal colony of this size can persist here.",
+    observation:
+      "From the air this short stretch of coast differs in both colour and texture from what lies on either side — the rocky bay reads dark, set against pale beach and whitish salt pan. In the breeding season the seals form a dense dark band along the shoreline, which is the easiest way to pick the place out.",
+    distinguish:
+      "Unlike the Skeleton Coast, which is dominated by dunes and dry riverbeds on an open shore, this is a rocky headland; and unlike the lagoons at Walvis Bay and Sandwich Harbour, which owe their low-energy water to a sheltering spit, there is no shelter here at all — it faces the open sea directly.",
+    concept:
+      "The biological significance of a coast is often set by currents rather than by terrain. Geomorphologically this stretch is unremarkable; it is the Benguela upwelling, lifting nutrients to the surface and feeding the fish, that makes it a major seal breeding site. Change the current and the same rocky shore is just a rocky shore.",
+    history:
+      "In 1486 the Portuguese navigator Diogo Cão landed here and raised a stone pillar; a replica of it stands on the site today, and the area has been declared a national heritage site. The seal reserve was proclaimed in 1968 and covers 60 km².",
+  },
+  "kalahari-namibia": {
+    // sources: 见 terrain.zh.ts 同条目注释（申报文本原句点了六个邻国国名，数字可引、句子不可照抄）
+    seeing:
+      "The Kalahari sandveld occupies the eastern half of Namibia and forms the western edge of the Kalahari Basin. It is not a mobile desert but a field of linear dunes half-fixed by grass cover: parallel red sand ridges separated by wide interdune valleys, with active crests standing under 20 m. This landscape runs for more than 1,000 km along eastern Namibia.",
+    formation:
+      "The Kalahari Basin is a structural basin filled with a thick body of sand, of which Namibia holds only the western margin. The ridges were shaped by wind and then stabilised by grass cover, becoming mobile again only where that cover is stripped away. The interdune valleys are broad and flat, and are where run-off and grazing concentrate after rain.",
+    observation:
+      "From the air this reads as sets of parallel pale-red lines, widely spaced and low in relief, with broad light-toned interdune floors between them. It and the Namib Sand Sea make two completely different pictures: there, the shadows and crest-lines of enormous mobile dunes; here, a soft-edged grid of grass-covered ridges.",
+    distinguish:
+      "The contrast with the Namib Sand Sea is the key to reading both: the sand sea carries enormous mobile dunes, some 200 to 300 m high and changing shape with the wind, whereas the active crests here stand under 20 m, are fixed by grass and hold their form. Their moisture sources are opposites too — the western sand sea lives on coastal fog, this eastern sandveld on summer rain.",
+    concept:
+      "The name says desert, but this is half-fixed sand on semi-arid savanna. Whether a dune field is active or fixed is judged by vegetation cover and crest form, not by its name. In good rainfall years there is usable grazing across it, shared by wildlife and livestock — which is the most practical difference between this and a genuinely mobile desert.",
+    history:
+      "The geological history here is the long accumulation and wind-reworking of a thick sand body, on a timescale far longer than the grass cover above it. Today that cover both stabilises the ridges and makes the broad interdune ground usable grazing for wildlife and livestock.",
+  },
+  "kuiseb-canyon": {
+    // sources: 见 terrain.zh.ts 同条目注释（深度与长度 1 级拿不到，正文不写）
+    seeing:
+      "The Kuiseb River rises on the central interior plateau about 20 km south-west of Windhoek and is one of the main ephemeral rivers crossing the Namib to the Atlantic. West of the Great Escarpment it cuts into late Precambrian metasediments as a deeply incised gorge, which opens out only about 65 km from the coast; downstream of that the valley widens to around 2 km.",
+    formation:
+      "Incision was initiated by epeirogenic uplift at the end of the Tertiary. What followed through the Quaternary was not steady downcutting but alternating fill and re-incision: an early Pleistocene conglomerate first, then late Pleistocene silt and mud, then a final re-incision that left the gravels on today's valley floor. Upstream on the plateau the river only cuts a shallow, meandering channel; the gorge proper begins at the escarpment.",
+    observation:
+      "The most telling thing here is not the gorge but its two banks: tall linear dunes to the south, grey-black gravel plain to the north, and a dry riverbed slicing dead straight between the two — a boundary clearly legible on satellite imagery. Downstream of the gorge, large linear dunes press right up against the left flank of the valley, continuing to about 20 km from the coast.",
+    distinguish:
+      "Compared with the Fish River Canyon, which has a clear graben-and-fault framework and two sections of different origin, incision here was initiated by epeirogenic uplift and then passed through repeated Quaternary cycles of filling and re-excavation. The rock differs too: the Fish River cuts horizontal sediments and the metamorphic basement beneath, the Kuiseb cuts late Precambrian metasediments.",
+    concept:
+      "The ephemeral river is the key to this landscape. This river flows for only a short spell each year, yet it is the reason the Namib Sand Sea has a northern limit: dunes are not defeated by wind but by occasional floods that strip away their toe — intermittent Kuiseb floods carry off the sand pushed into the channel, so the sand sea cannot cross northward. The relationship runs both ways, too: the sand sea has been pushing the river north, and fossil channels now lie buried beneath the dunes.",
+    history:
+      "Evidence of Stone Age life in the Kuiseb valley dates back about 200,000 years. Topnaar people still live along the river and harvest the nara melon. On the north bank stands the Gobabeb research and training centre, the base for desert-environment research in this area. The Namib-Naukluft Park was formed in 1979 by amalgamating two existing protected areas with state land.",
+  },
+  "etosha-pan": {
+    // sources: see the matching Chinese entry; 4,730 km² is the UNESCO measure, not the park area
+    seeing:
+      "Etosha Pan is a vast oval salt crust in northern Namibia, covering about 4,730 km² at an elevation of 1,071 to 1,086 m. It occupies the lowest part of the Owambo Basin and is the terminal playa of the Cuvelai drainage. Most of the time its surface is hard, pale, nearly vegetation-free saline clay; only in exceptionally wet rainy seasons is it partly flooded, forming sheets of water usually no more than 1 m deep.",
+    formation:
+      "About 5 to 7 million years ago this was an inland lake supplied in part by the ancient Kunene drainage. Around 2 million years ago, river capture redirected its main inflow westward, and the lake shrank under continued evaporation. Since then short-lived rainy-season flows have brought in fine sediment, while dry-season winds have removed loose silt and left salts and clay behind. Deposition by water and deflation by wind still alternate today.",
+    observation:
+      "From the air, the first cue is an immense flat oval in white to green-grey. Glauconite in the surface sediment gives some areas the green-grey tint, while desiccation cracks divide the salt clay into small polygons. In the dry season dust devils trail pale plumes across the pan; in exceptionally wet years broad mirrors of shallow water replace them. A rim of springs, grassland and shrubland marks the sharp boundary with the bare floor.",
+    distinguish:
+      "Sossusvlei is a small river-end basin enclosed by giant dunes inside a sand sea; Etosha is a basin-scale terminal playa, far larger and ringed by open grassland rather than dunes. Nor is it a coastal lagoon like Walvis Bay: Etosha lies inland, has no tidal inlet, and holds water only briefly in unusually wet years.",
+    concept:
+      "A terminal playa is the lowest point of a drainage system with no outlet to the sea. Inflow carries dissolved salts into the basin; evaporation removes the water but leaves those salts behind, so repeated wetting and drying concentrates them. The fact that Etosha occasionally becomes a shallow lake does not make it a permanent lake — its long-term hydrology is that of a salt pan.",
+    history:
+      "Ancient shorelines, stromatolites, fossil beds and calcrete sequences record repeated wet and dry phases since the Pleistocene, while fossils of wetland antelope and a large catfish show that the basin was once wetter. Etosha National Park was proclaimed in 1907 and now covers 22,935 km²; the pan itself covers about 4,730 km², so the two figures describe different areas. Etosha Pan entered UNESCO's Tentative List in 2016.",
+  },
+  "waterberg-plateau": {
+    // sources: see the matching Chinese entry; the MEFT paragraph on the 1904 event is deliberately excluded
+    seeing:
+      "Waterberg Plateau is a flat-topped sandstone highland about 50 km long, its red cliffs rising from thornbush savanna on the western edge of the Kalahari sandveld. Porous sandstone makes up the main body, underlain by denser shale and mudstone. The park covers 405 km² and was proclaimed in 1972. A chain of permanent springs at the foot of the plateau makes this long wall in dry country a dependable source of water as well.",
+    formation:
+      "Between about 220 and 180 million years ago, conglomerate, sandstone and mudstone accumulated in an inland basin, later capped by the Etjo Sandstone, which preserves ancient dunes. Regional uplift and prolonged erosion then lowered the softer country rock while the resistant sandstone cap protected this table-like remnant. Rain sinks through the porous cap, moves sideways when it reaches impermeable mudstone and reappears along the foot as springs.",
+    observation:
+      "From the air it resembles a long red flat-topped ship: a dark-green upper surface enclosed by a rim of steep, brightly coloured sandstone cliffs, with fine-textured bush savanna outside. A continuous deeper-green band along the base reveals the spring line. Cross-bedding in the cliff face preserves the slopes of ancient dunes and is the most direct sign that the cap is wind-built sandstone.",
+    distinguish:
+      "Both Waterberg and Etendeka show table-like outlines, but their rocks are entirely different. Waterberg is one long highland protected by a sandstone cap and marked by springs at its foot; Etendeka is a volcanic plateau of stacked basalt and quartz-latite sheets broken into many flat-topped hills. Naukluft, by contrast, is folded carbonate thrust terrain with karst rather than a simple sandstone cap.",
+    concept:
+      "This is relief inversion controlled by caprock. Sand that was once deposited in a basin became resistant sandstone; after softer rocks around it wore down, that formerly unremarkable layer stood up as high ground. The spring line shows how groundwater obeys rock boundaries: permeable sandstone stores and transmits water, while dense mudstone holds it up and forces it back to the surface.",
+    history:
+      "The same Waterberg–Etjo rock province preserves animals that lived along lakes and river flats about 220 million years ago, as well as dinosaurs that crossed interdune valleys about 200 million years ago. At Otjihaenamaparero one three-toed track can be followed for 28 m, and related skeletal material is displayed at the National Earth Science Museum in Windhoek. Waterberg Plateau Park was proclaimed in 1972.",
+  },
+  "etendeka-plateau": {
+    // sources: see the matching Chinese entry; the obvious million/billion typo in the GSN sheet is not repeated
+    seeing:
+      "Etendeka Plateau is a tract of Cretaceous volcanic rock in north-western Namibia, covering about 78,000 km² between the Huab and Hoanib rivers. It rises gradually from the coastal plain in the west but stands 700 to 800 m above the deeply dissected basement terrain to the east. The name Etendeka means place of flat-topped mountains, an exact description of the table-like hillocks scattered across it.",
+    formation:
+      "This is not one enormous volcanic cone. During the break-up of Gondwana, lava and hot volcanic debris repeatedly spread from many fissures. About 80% of the volcanic rock is basaltic lava, with interbedded quartz latites and minor latites making up most of the rest. Tafelberg preserves an 880 m pile, while the original maximum thickness probably exceeded 1,000 m; the earliest lavas locally interleave with sandstone made from fossil dunes beneath them.",
+    observation:
+      "From the air, continuous dark red-brown volcanic benches are cut apart by valleys, leaving many remnants with flat tops and steep sides. Successive flows form regular steps on the slopes. Pale-yellow lenses of sandstone interleaved with the darker lava appear as bright seams, and Tafelberg is the anchor for reading the most complete preserved stack.",
+    distinguish:
+      "Waterberg is not a stack of lava flows but a single sandstone-capped highland. Brandberg and Erongo differ in another way: they are intrusive complexes, magma that cooled underground and was later uncovered by erosion, whereas Etendeka preserves lava and volcanic debris that spread across the land surface.",
+    concept:
+      "This landform is a flood-basalt plateau. Magma rises along long fissures, travels far and spreads in broad sheets, layer upon layer, instead of building a cone around a central crater. Etendeka and volcanic rocks now exposed across the Atlantic once belonged to the same Paraná–Etendeka igneous province before the ocean basin opened between them.",
+    history:
+      "The sequence of events is written in the contacts between layers. Ancient dunes first hardened into the Twyfelfontein sandstone; early lava then entered the dune field and interleaved with sand; large fissure eruptions buried both; and prolonged erosion finally cut the once-continuous plateau into today's tablelands. Quartz, agate, zeolite and calcite geodes in altered basalt are mineral records of that volcanic history.",
+  },
+  "naukluft-mountains": {
+    // sources: see the matching Chinese entry; the conflict paragraph in the GSN sheet is deliberately excluded
+    seeing:
+      "The Naukluft Mountains stand on the high edge of the Great Escarpment as a mountain block of pale carbonate thrust sheets, continuous ridges and deeply cut valleys. Their layers are not a simple pile formed in place: ancient basement lies in the foothills, overlain by sandstone and carbonate of the roughly 600-million-year-old Nama Group, while strongly folded sheets transported from elsewhere sit on top.",
+    formation:
+      "The upper Naukluft Nappe Complex consists of dolomite, limestone, shale, conglomerate and quartzite originally deposited about 80 km to the north. Roughly 550 to 500 million years ago, crustal compression detached the layered package and drove it southward along a thin dolomite band that acted as a weak glide plane. Later groundwater dissolved the carbonate rocks, producing cavities, underground drainage, springs, pools and tufa.",
+    observation:
+      "From the air, pale stratified sheets curve through folds and faults to form row after row of ridges, while deep valleys expose the stack of nappes directly. Dark-green strips on valley floors, pools and pale tufa crusts mark places where underground water returns to the surface. Against the surrounding dry upland, these concentrated water lines stand out immediately.",
+    distinguish:
+      "Waterberg is one flat-topped sandstone highland, with springs emerging along the sandstone-mudstone boundary. Naukluft is a mountain system built from several carbonate thrust sheets, with water moving through fractures and karst to emerge in deep valleys. Nor is it a granite inselberg like Brandberg: it has continuous ridges, complex folds and groups of valleys.",
+    concept:
+      "A nappe is a blanket of rock transported a long distance sideways by thrusting. What lies on top today is therefore not always what formed there. Geologists recognise transport by matching rock types, folds, faults and regional stratigraphy. At Naukluft an entire layered package travelled about 80 km along a weak horizon and came to rest as a stack of overlapping sheets.",
+    history:
+      "The widespread tufa shows that the recent geological past included wetter phases, and some springs still deposit porous calcium carbonate today. Stone artefacts and rock paintings record early use of dependable water and rock shelters in the mountains. Naukluft Mountain Zebra Park was proclaimed in 1968 and in 1979 was combined with an existing desert park and state land to form today's Namib-Naukluft Park.",
+  },
+  "kunene-river-namibia": {
+    // sources: see the matching Chinese entry; this entry deliberately covers only the Namibian reach
+    seeing:
+      "The Namibian reach of the Kunene runs west along the country's northern edge through arid mountain country. Where the river enters Namibia at Ruacana it crosses the steep relief of the Great Escarpment; downstream come a rocky channel, gorges and Epupa Falls before the river reaches the sea at the northern end of the Skeleton Coast. It is a rare perennial river in this region, and its mouth forms an important wetland.",
+    formation:
+      "West of Ruacana the Namibian escarpment concentrates relief and gradient. Perennial flow has incised along structural weaknesses, cutting narrow gorges and dropping over resistant rock steps as falls and rapids. Farther into the western desert, alluvium in the valley retains moisture and sustains a continuous green corridor; at the coast, fresh water, river sediment and waves interact to shape the mouth wetland.",
+    observation:
+      "From the air it is a narrow deep-green line crossing brown bare-rock mountains. Near Epupa the channel suddenly divides around rocky islands and falls in many white ribbons, a sharp contrast with the red-brown gorge. Farther west the valley narrows again through still more barren country before spreading into wetland at the coast.",
+    distinguish:
+      "Unlike the Kuiseb and Fish rivers, the Kunene maintains perennial flow along its Namibian reach; those rivers are dry channels for most of the year and carry water mainly during brief floods. Nor is the Kunene like the shallow seasonal channels of the Cuvelai: it has a continuous main channel, gorges, waterfalls and a defined river mouth.",
+    concept:
+      "This is an allogenic river: most of its water comes from a wetter upstream basin, yet it crosses a locally arid landscape. Looking only at the climate beside the channel would make permanent flow seem impossible; the whole catchment controls discharge. Such rivers sustain alluvial soil, vegetation and wetlands through desert country, creating a linear ecological corridor unlike the ground around it.",
+    history:
+      "The river's geological history is tied to Etosha Pan. About 5 to 7 million years ago, the ancient Kunene drainage fed inland into Lake Etosha. Around 2 million years ago, river capture redirected the main flow westward; the lake gradually contracted into a salt pan while the lower river began cutting toward the Atlantic. Today's Ruacana drop, Epupa Falls and mouth wetland record the gradient, erosion and deposition along that west-flowing course.",
+  },
 };
