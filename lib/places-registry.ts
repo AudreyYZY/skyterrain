@@ -384,6 +384,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "na-coast": { zh: "中部海岸", en: "Central Coast", order: 551 },
   "na-south": { zh: "南部海岸与高原", en: "Southern Coast & Plateau", order: 552 },
   "na-northeast": { zh: "东北河谷与湿地", en: "North-east Rivers & Wetlands", order: 553 },
+  // 南非（豪登→西开普→自由州→夸祖鲁-纳塔尔→东开普→林波波，先三首都+最大城市，再沿海，再内陆）
+  "za-gauteng": { zh: "豪登省", en: "Gauteng", order: 560 },
+  "za-western-cape": { zh: "西开普省", en: "Western Cape", order: 561 },
+  "za-free-state": { zh: "自由州省", en: "Free State", order: 562 },
+  "za-kwazulu-natal": { zh: "夸祖鲁-纳塔尔省", en: "KwaZulu-Natal", order: 563 },
+  "za-eastern-cape": { zh: "东开普省", en: "Eastern Cape", order: 564 },
+  "za-limpopo": { zh: "林波波省", en: "Limpopo", order: 565 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -490,6 +497,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "sri-lanka", nameZh: "斯里兰卡", nameEn: "Sri Lanka" },
   { country: "brunei", nameZh: "文莱", nameEn: "Brunei" },
   { country: "namibia", nameZh: "纳米比亚", nameEn: "Namibia" },
+  { country: "south-africa", nameZh: "南非", nameEn: "South Africa" },
 ];
 
 /** 城市按国家存放在 lib/content/<country>/cities.ts，这里是合并结果（顺序与 CONTENT_COUNTRIES 一致）。 */
@@ -551,6 +559,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   lithuania: "europe",
   chile: "south-america",
   namibia: "africa",
+  "south-africa": "africa",
 };
 
 export function continentOfCountry(country: string): string | undefined {

@@ -2405,4 +2405,13 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/luderitz": { f: 7, v: 0 },
   "travel/rundu": { f: 7, v: 0 },
   "travel/katima-mulilo": { f: 7, v: 0 },
+  "travel/south-africa-overview": { f: 7, v: 1, d: "2026-09-22" },
+  "travel/pretoria": { f: 7, v: 0 },
+  "travel/cape-town": { f: 7, v: 0 },
+  "travel/bloemfontein": { f: 7, v: 0 },
+  "travel/johannesburg": { f: 7, v: 0 },
+  "travel/durban": { f: 7, v: 0 },
+  "travel/gqeberha": { f: 7, v: 0, d: "2021-02-23" },
+  "travel/stellenbosch": { f: 7, v: 0 },
+  "travel/polokwane": { f: 7, v: 0 },
 };
