@@ -17,7 +17,7 @@
 
 | 模式 | 面向的问题 | 内容 |
 |---|---|---|
-| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 1394 处地貌 + 6 板块讲解 |
+| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 1401 处地貌 + 6 板块讲解 |
 | **旅游出行模式** | "到了这个陌生城市，衣食住行要注意什么？" | 城市概览 —— 地理格局 / 衣食住行 / 人文习俗 / 出行提示 |
 
 两套内容系统平行、互不影响。
@@ -26,7 +26,7 @@
 `check-places.ts` / `check-routes.ts` 每次运行都会打印准确计数——这三行数字随内容持续
 增长，**这里的数字如果对不上，以脚本输出为准**；按国家的详细分布见 [`CLAUDE.md`](CLAUDE.md)
 "范围"一节，那里随每次扩展同步更新，本文件不重复维护第二份、避免又和实际脱节）：
-- 学习模式 —— 亚洲 · 欧洲 · 非洲 · 北美洲 · 南美洲 · 大洋洲共 53 个国家，1394 处地貌，中英双语
+- 学习模式 —— 亚洲 · 欧洲 · 非洲 · 北美洲 · 南美洲 · 大洋洲共 53 个国家，1401 处地貌，中英双语
 - 旅游模式 —— 覆盖学习模式已上线国家中的 52 个，共 52 个国家概览 + 944 座城市，中英双语；
   297 条航线（国内 + 国际，每条附机场/地形航点 + 学习/旅游两套双语解说）——
   **其中 283 条有经核实后可展示的航班信息**，见下面「数据可靠性」
@@ -39,7 +39,7 @@
 
 ### 地形集 —— 单一真实源
 
-- **1394 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，14 类：
+- **1401 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，14 类：
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg`。
 - 每处记录**锚点**（主峰 / 主湖 / 枢纽城市 + 经纬度 + 海拔）、**边界框**、**走向轴**、
@@ -67,7 +67,7 @@
 - 朝向由地形走向 + 可选的 `viewFrom`（相机在锚点哪一侧，编辑决策）推导。
 - 俯角 / 距离由地形尺度推导；大面积高原 / 大盆地 / 大平原 / 大沙漠在注册表的 `WIDE_VIEW` 里
   给 `viewScale`，取景放宽到能看出"一整片高地 / 盆地"的地貌特征，而非锚点周边一个局部景物。
-- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（1394/1394）。
+- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（1401/1401）。
 
 ### 区域高亮 —— 克制的轮廓
 
@@ -111,7 +111,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 - 内容写在 [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)（`getTerrainContent(id, lang)`），
   参照中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
   等公开资料整理而成，不是文学化旁白，但**也不是逐条核过的权威资料**。
-- **1394 处全部有中英双语讲解**。写作口径：去比较性 / 主观评价，有争议的加限定或并列，
+- **1401 处全部有中英双语讲解**。写作口径：去比较性 / 主观评价，有争议的加限定或并列，
   查不到宁可删，数字尽量对齐权威口径；新增国家优先查该国官方地质 / 国家公园 / 地名机构。
   **这是写作时的自我要求，不等于事后有人逐条验收过。** `source` 字段留了痕，但只有
   部分条目点名了可复核的具体来源，其余写的是"概略"或笼统的机构名；个别条目明确标注
@@ -151,7 +151,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 
 ## 数据可靠性
 
-这个项目的文字量很大（1394 处地形 × 6 板块 + 944 座城市 × 7 段 + 297 条航线 × 2 套解说，
+这个项目的文字量很大（1401 处地形 × 6 板块 + 944 座城市 × 7 段 + 297 条航线 × 2 套解说，
 中英双语），**它是依据公开资料整理生成的，没有人逐条审核过**。已经发现并修掉的事实错误
 不在少数，还没被发现的一定也有。下面写清楚哪些是可查的、哪些不可信、以及靠什么防线兜着。
 
@@ -171,7 +171,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 ```bash
 npm run check          # 一次跑完下面全部
 npm run check:regions  # 大洲/次区域/国家 ↔ 地形计数一致性
-npm run check:camera   # 相机几何（1394/1394）
+npm run check:camera   # 相机几何（1401/1401）
 npm run check:places    # 城市坐标 / IATA / 来源 / 双语内容齐全
 npm run check:routes    # 航点单调性、解说时长、机型与数据是否自相矛盾、
                         # 未核实航线的解说不得点名机型或航班号
@@ -251,7 +251,7 @@ npm run lint       # ESLint
 npm run typecheck  # tsc --noEmit
 
 npm run check:regions   # 大洲/次区域/国家地形计数一致性自检
-npm run check:camera    # 相机几何自检（1394/1394）
+npm run check:camera    # 相机几何自检（1401/1401）
 npm run check:places    # 旅游地点自检（城市坐标/IATA/来源/双语内容齐全）
 npm run check:routes    # 航线自检（waypoint 单调性、解说时长、核实留痕、机型一致性）
 npm run check:flight    # 镜头运动自检（地速/高度比、加速度、转向、干飞时长）
@@ -286,7 +286,7 @@ components/
   RegionSelector.tsx       — 顶栏大洲 / 次区域两级切换
 
 lib/
-  terrain-registry.ts       — 【单一真实源】1394 处地形的锚点/范围/走向/中英名/来源
+  terrain-registry.ts       — 【单一真实源】1401 处地形的锚点/范围/走向/中英名/来源
   terrain-camera.ts         — computeTerrainCamera() 数据驱动相机推导
   terrain-content.{zh,en}.ts— 权威 6 板块讲解内容（中/英）
   terrain-lesson.ts         — resolveLesson(id, lang)：一处决定用哪份讲解
