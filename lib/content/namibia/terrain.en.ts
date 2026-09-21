@@ -271,4 +271,109 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     history:
       "The river's geological history is tied to Etosha Pan. About 5 to 7 million years ago, the ancient Kunene drainage fed inland into Lake Etosha. Around 2 million years ago, river capture redirected the main flow westward; the lake gradually contracted into a salt pan while the lower river began cutting toward the Atlantic. Today's Ruacana drop, Epupa Falls and mouth wetland record the gradient, erosion and deposition along that west-flowing course.",
   },
+  gamsberg: {
+    // sources: see matching Chinese entry; GSN Gamsberg Geosite
+    seeing:
+      "Gamsberg is an exceptionally clean-edged table mountain on Namibia's Great Escarpment, reaching 2,347 m. It stands about 450 m above the plateau to the east and roughly 1,100 m above the Namib plain to the west, like a heavy stone table set on the rim of the highland.",
+    formation:
+      "Granite intruded much older basement about 1.1 billion years ago and was later buried by sediment. Damara mountain building around 540 million years ago deformed and raised the succession, after which long erosion uncovered the granite again. Wind-blown sandstone deposited about 180 million years ago was silicified into a resistant cap roughly 30 m thick, protecting the rock below from rapid removal.",
+    observation:
+      "From the air, begin with the nearly level dark top and the cliffs around it. The eastern plateau is comparatively gentle, while to the west the land drops abruptly and changes in colour and vegetation density. A continuous pale resistant band at the rim is the clearest expression of the sandstone cap.",
+    distinguish:
+      "Waterberg is also flat-topped, but it is a roughly 50-km sandstone highland with a continuous spring line at its foot. Gamsberg is more compact, mostly granite, with sandstone surviving only as a cap. Brandberg is a rounded intrusive complex without this straight table surface.",
+    concept:
+      "This is differential erosion: the resistant cap acts like a roof, protecting rock below while unprotected country around it is lowered. A flat top does not mean the whole mountain is one horizontal layer; the key is the single resistant bed at the summit.",
+    history:
+      "Gamsberg combines events separated by immense spans of time — granite intrusion, Damara deformation and erosion, and Jurassic dune sand hardened into caprock. Its present table outline was not produced at once, but preserved through later erosion by that cap.",
+  },
+  brukkaros: {
+    // sources: see matching Chinese entry; GSN Brukkaros Geosite and Lorenz et al.
+    seeing:
+      "Brukkaros rises in isolation about 600 m above the Nama plain. Its base is roughly 7 km across, a broken ring ridge surrounds a central depression about 3 km wide, and the summit area is near 1,600 m. It resembles an eroded volcanic crater, but its origin is more complex than an ordinary cone.",
+    formation:
+      "About 75 million years ago shallow magma lifted the overlying sandstone and shale into a dome cut by radial fractures. Contact between magma and groundwater drove violent phreatomagmatic explosions, leaving dykes and breccia pipes. Removal of material underground then allowed the roof to subside, producing the central depression and ring ridge.",
+    observation:
+      "The aerial signature is a near-circular mountain, radial gullies and a depressed centre. Erosion breaks the ridge into jagged segments rather than a complete rim. Pale layered sedimentary rock on the inner walls is cut by darker dykes.",
+    distinguish:
+      "Erongo also has a ring pattern, but on a larger scale as a complex granitic mountain mass with radial dykes. Brukkaros is a more isolated single hill with an obvious sunken centre. Nor is it an impact crater: intrusions, dykes and phreatomagmatic breccia identify a magmatic process.",
+    concept:
+      "A circular landform is not automatically a crater. At Brukkaros, several processes made the ring: shallow intrusion first domed the cover, magma–water explosions fragmented it, and later loss of material below caused subsidence. Similar shapes can therefore conceal very different internal structures.",
+    history:
+      "Lake sediment preserved inside the central depression shows that water sometimes collected after the ring had formed. Erosion then deepened radial gullies and carved the former dome-and-subsidence structure into the ring-shaped inselberg visible today.",
+  },
+  "keetmanshoop-dolerite-hills": {
+    // sources: see matching Chinese entry; GSN Dolerite Hills Geosite
+    seeing:
+      "Low hills around Keetmanshoop consist of dark dolerite benches, piles of rounded boulders and open shallow valleys. At the representative Giant's Playground, blocks look as if they were stacked into walls and towers, but the arrangement formed naturally as exposed sheets broke down along joints.",
+    formation:
+      "About 180 million years ago basaltic magma rose in dykes and spread sideways between older sedimentary layers as two sills roughly 150 m and 120 m thick. Once erosion stripped off the cover, water and temperature change entered vertical and horizontal joints, rounding each block layer by layer.",
+    observation:
+      "Dark brown sills appear from the air as discontinuous benches and low ridges, their margins broken into dense boulder fields with pale soil between them. Under low sun every block throws a clear shadow, making joint-controlled rows of rock towers especially easy to see.",
+    distinguish:
+      "Spitzkoppe is a huge smooth granite dome; this is a broad field of low dolerite hills and countless smaller boulders. Brukkaros has one circular ridge and centre, whereas the dolerite hills have no central crater — they are steps left from eroded sheets.",
+    concept:
+      "Spheroidal weathering does not mean that rock crystallised as spheres. Water attacks a joint block from faces, edges and corners; corners are reached from three directions and weather fastest, edges next, faces last. A right-angled block therefore becomes rounded and sheds onion-like shells.",
+    history:
+      "The dolerite was emplaced between sedimentary beds underground, yet now makes positive relief because the surrounding softer rock eroded faster. Long denudation inverted the landscape, turning buried horizontal sills into its most resistant benches and boulder hills.",
+  },
+  "twyfelfontein-valley": {
+    // sources: see matching Chinese entry; GSN Twyfelfontein Geosite and UNESCO nomination 1255
+    seeing:
+      "Twyfelfontein is a small valley cut into red-brown sandstone tableland about 60 km west of Khorixas. Blocky sandstone covers the slopes, yet a tiny freshwater spring emerges near the floor. Nearby are the black-purple slopes of Burnt Mountain and the organ-pipe columns of jointed dolerite.",
+    formation:
+      "Porous wind-blown and river sandstone rests on impermeable shale and mudstone. Rain passes through the sandstone, is stopped at the fine-grained beds and re-emerges where the contact reaches the slope, while the valley cuts along weaker material. Nearby intrusion baked and discoloured organic-rich sediment, and contraction during cooling split dolerite into columns.",
+    observation:
+      "Look first for a short valley on the edge of the sandstone tableland and a thin green line at the spring. Then separate three textures: pale-red flat sandstone faces, the dark bare slope of Burnt Mountain and regular dark columns at the Organ Pipes. The site is small, so rock contacts matter more than overall relief.",
+    distinguish:
+      "The Ugab terraces are broad gravel platforms at several levels, marked by the Vingerklip remnant. Twyfelfontein is a sandstone tributary valley centred on a small spring at an aquifer contact. Nor is it like the Kuiseb Canyon: it is shorter and shallower, with its identity in the rock combination rather than great incision.",
+    concept:
+      "Groundwater commonly emerges at a rock contact. If an upper bed transmits water and a lower one is tight, water moves sideways along their boundary until a slope cuts across it. In an arid landscape, even a low-yield spring can become the valley's decisive geographic point.",
+    history:
+      "Flat sandstone surfaces preserve a large concentration of prehistoric engravings, showing the long attraction of dependable water and workable rock faces. Twyfelfontein was inscribed as World Heritage in 2007, with natural valley, spring and cultural remains managed as one connected landscape.",
+  },
+  "otjikoto-guinas-lakes": {
+    // sources: see matching Chinese entry; GSN Otjikoto Geosite; military-history paragraph excluded
+    seeing:
+      "Otjikoto and Guinas are two near-circular deep-water holes in the northern carbonate plateau, roughly 20 km apart. Otjikoto is about 102 m across at maximum and 75 m deep; Guinas is about 140 m across and 153 m deep. Near-vertical walls make each blue-green lake look like a window suddenly opened in the ground.",
+    formation:
+      "Rainwater absorbs carbon dioxide and becomes weakly acidic. It percolates along fractures in roughly 650-million-year-old carbonate rock and slowly enlarges cavities. Once a cave roof loses support it collapses into a steep-sided sinkhole; where the collapse intersects the groundwater table, a permanent karst lake appears.",
+    observation:
+      "From above, both are dark round patches without broad shallow margins — water meets steep wall almost directly. Guinas is the narrower, deeper hole; Otjikoto is more accessible and slightly less regular. On an otherwise gentle surface, this small, abrupt and deep form is the identifying contrast.",
+    distinguish:
+      "Etosha is a shallow terminal pan thousands of square kilometres across, dry and pale most of the time. These lakes are only about a hundred metres wide but deep and permanently wet. They are not crater lakes either: no volcanic cone or lava surrounds them, only soluble carbonate rock.",
+    concept:
+      "A karst lake can be a window into groundwater rather than a pit filled by surface runoff. Its level reflects the regional water table and water enters and leaves through hidden fractures, so a lake with no obvious river still belongs to a much larger underground drainage network.",
+    history:
+      "Their sequence is dissolution, cave enlargement, roof collapse and exposure of groundwater. The circular cliff seen today is only the final step; the wider fracture-and-cave system underground controls the depth and water supply.",
+  },
+  "ugab-river-terraces": {
+    // sources: see matching Chinese entry; GSN Vingerklip & Ugab Terraces Geosite
+    seeing:
+      "Level gravel platforms step up the sides of the broad Ugab valley, with the main terrace about 160 m above the present channel. Vingerklip is a slender remnant about 30 m high, standing alone in the valley as an obvious gauge of the former terrace surface.",
+    formation:
+      "The river first deposited thick sand and gravel on a higher surface, later capped by carbonate-cemented sandstone. When the channel cut down, that old bed was left hanging on the valley sides as a terrace. Repeated shifts between wetter and drier conditions drove several cycles of deposition and renewed incision, making three main levels.",
+    observation:
+      "The present channel winds along the floor, with flat-topped terraces arranged like broad parallel steps on either side and scarps throwing long shadows. Vingerklip is the narrowest remnant, but the key is to reconnect it mentally with platforms at the same height and reconstruct the once-continuous terrace.",
+    distinguish:
+      "Kuiseb Canyon is known for incision into bedrock and its boundary with the sand sea, its walls more continuous and confined. The Ugab site is wider and defined by depositional platforms. Twyfelfontein is a nearby small sandstone tributary valley without these continuous high gravel terraces.",
+    concept:
+      "A river terrace is an abandoned floodplain or channel floor. It shows that a river has not always flowed at its present height: deposition raises a bed, whereas a change in gradient, flow or base level can make incision dominate and leave the old surface beside the new channel. Several levels are stacked snapshots of valley height through time.",
+    history:
+      "The main terrace rests on an Eocene erosion surface, and its thick sand and gravel record the carrying power of an older river. Lower terraces belong to later stages. Alternating conglomerate and sandstone in Vingerklip preserve changing discharge, while the cemented cap slowed erosion enough for the pillar to survive.",
+  },
+  "nkasa-rupara-floodplain": {
+    // sources: see matching Chinese entry; MEFT Nkasa Rupara National Park
+    seeing:
+      "Nkasa Rupara is a low wetland mosaic of reed-bed channels, shallow lagoons, seasonally flooded grass and slightly higher termite-mound islands. At high water many channels and depressions connect, and much of the 320 km² park becomes a network resembling an inland delta.",
+    formation:
+      "Gradient is extremely small, so floodwater entering the lowland slows and spreads along old channels, depressions and tiny differences in height. Fine mud settles in low places, while termite mounds and tree roots build local high ground. Repeated seasonal flooding divides the plain into open water, reed beds and island-like patches that remain dry for longer.",
+    observation:
+      "There is no single straight trunk river from the air, but a web of blue-black channels between pale-green reeds and dark-green tree islands. Water surfaces shrink and grassland expands in the dry season; in high water boundaries blur and many islands are reduced to termite mounds and tall trees above the flood.",
+    distinguish:
+      "Walvis Bay is a tidal coastal lagoon beside salt works and a sand spit. Nkasa Rupara is inland, its water level controlled by seasonal flooding. It also differs from Etosha: that is a closed saline pan with a bare floor, while this floodplain has active channels, reeds and wooded islands.",
+    concept:
+      "A floodplain is not merely flat ground beside a river; it is the river's second channel system at high water. Channels and depressions that are separate in the dry season connect during floods, moving sediment, nutrients and organisms. A height difference of less than a metre can decide whether ground becomes open water, seasonal grass or tree island.",
+    history:
+      "The park was proclaimed in 1990. Management and access must follow water level rather than fixed roads: some tracks disappear in high water and return in the dry season. That shifting land–water boundary is the landform's central process, not an abnormal condition to be corrected.",
+  },
 };

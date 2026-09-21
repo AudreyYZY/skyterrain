@@ -309,6 +309,14 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 2, 2, 2], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 2, 2], source: "auto" },
   },
+  "ers-mpa": {
+    "zh-CN": { perSentence: [0, 0, 2, 2, 2, 2, 2, 2], source: "auto" },
+    "en-US": { perSentence: [0, 0, 0, 2, 2, 2, 2, 2, 2, 2], source: "auto" },
+  },
+  "ers-ndu": {
+    "zh-CN": { perSentence: [0, 0, 1, 1, 1, 1, 1, 1], source: "auto" },
+    "en-US": { perSentence: [0, 0, 1, 1, 1, 1, 1, 1], source: "auto" },
+  },
   "esb-ayt": {
     "zh-CN": { perSentence: [0, 0, 1], source: "auto" },
     "en-US": { perSentence: [0, 0, 1], source: "auto" },
