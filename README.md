@@ -17,7 +17,7 @@
 
 | 模式 | 面向的问题 | 内容 |
 |---|---|---|
-| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 1041 处地貌 + 6 板块讲解 |
+| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 1377 处地貌 + 6 板块讲解 |
 | **旅游出行模式** | "到了这个陌生城市，衣食住行要注意什么？" | 城市概览 —— 地理格局 / 衣食住行 / 人文习俗 / 出行提示 |
 
 两套内容系统平行、互不影响。
@@ -26,12 +26,12 @@
 `check-places.ts` / `check-routes.ts` 每次运行都会打印准确计数——这三行数字随内容持续
 增长，**这里的数字如果对不上，以脚本输出为准**；按国家的详细分布见 [`CLAUDE.md`](CLAUDE.md)
 "范围"一节，那里随每次扩展同步更新，本文件不重复维护第二份、避免又和实际脱节）：
-- 学习模式 —— 亚洲 · 欧洲 · 北美洲 · 南美洲 · 大洋洲共 38 个国家，1041 处地貌，中英双语
-- 旅游模式 —— 覆盖学习模式已上线的全部 38 个国家，共 38 个国家概览 + 691 座城市，中英双语；
-  280 条航线（国内 + 国际，每条附机场/地形航点 + 学习/旅游两套双语解说）——
-  **其中 192 条的航班号/机型经过核实**，见下面「数据可靠性」
+- 学习模式 —— 亚洲 · 欧洲 · 非洲 · 北美洲 · 南美洲 · 大洋洲共 52 个国家，1377 处地貌，中英双语
+- 旅游模式 —— 覆盖学习模式已上线的全部 52 个国家，共 52 个国家概览 + 944 座城市，中英双语；
+  297 条航线（国内 + 国际，每条附机场/地形航点 + 学习/旅游两套双语解说）——
+  **其中 283 条有经核实后可展示的航班信息**，见下面「数据可靠性」
 
-**规划**：继续扩展学习模式地形覆盖（非洲待启动）+ 按旅游热度扩展各国旅游模式覆盖城市。
+**规划**：继续逐国扩展全球地形覆盖 + 按旅游热度扩展各国旅游模式覆盖城市。
 
 ---
 
@@ -39,7 +39,7 @@
 
 ### 地形集 —— 单一真实源
 
-- **1041 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，14 类：
+- **1377 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，14 类：
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg`。
 - 每处记录**锚点**（主峰 / 主湖 / 枢纽城市 + 经纬度 + 海拔）、**边界框**、**走向轴**、
@@ -67,7 +67,7 @@
 - 朝向由地形走向 + 可选的 `viewFrom`（相机在锚点哪一侧，编辑决策）推导。
 - 俯角 / 距离由地形尺度推导；大面积高原 / 大盆地 / 大平原 / 大沙漠在注册表的 `WIDE_VIEW` 里
   给 `viewScale`，取景放宽到能看出"一整片高地 / 盆地"的地貌特征，而非锚点周边一个局部景物。
-- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（1041/1041）。
+- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（1377/1377）。
 
 ### 区域高亮 —— 克制的轮廓
 
@@ -111,7 +111,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 - 内容写在 [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)（`getTerrainContent(id, lang)`），
   参照中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
   等公开资料整理而成，不是文学化旁白，但**也不是逐条核过的权威资料**。
-- **1041 处全部有中英双语讲解**。写作口径：去比较性 / 主观评价，有争议的加限定或并列，
+- **1377 处全部有中英双语讲解**。写作口径：去比较性 / 主观评价，有争议的加限定或并列，
   查不到宁可删，数字尽量对齐权威口径；新增国家优先查该国官方地质 / 国家公园 / 地名机构。
   **这是写作时的自我要求，不等于事后有人逐条验收过。** `source` 字段留了痕，但只有
   部分条目点名了可复核的具体来源，其余写的是"概略"或笼统的机构名；个别条目明确标注
@@ -122,11 +122,11 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 
 ### 航线飞行
 
-- **280 条航线**（`data/routes/*.json`，覆盖上面列出的所有国家，含国内航线与
+- **297 条航线**（`data/routes/*.json`，含国内航线与
   中国—他国国际航线），每条 = 一对真实通航的城市 + 出发到达机场 + 沿途地形航点，
-  数据里另存有航司 / 航班号 / 机型。
-  **不要把这 280 条整体当成"真实商业航班"**：城市对与机场是可查的，但写入时给出的
-  航班号/机型是当时的一个示例，280 条逐条核下来 189 条至少有一处对不上（68%）。
+  数据里在核实得到时另存航司 / 航班号 / 机型。
+  **不要把航班字段当成实时航班表**：它们只是 `checkedOn` 当天的快照；无法可靠核实的航线
+  只保留地理路线，不展示航班号、机型或时长。
 - 一次 ≤3 分钟：镜头立即摆到起点机场上空 → 立刻开始播这条航线**专属的一段连贯解说**
   （[`lib/route-narration.ts`](lib/route-narration.ts)，中英，教材区域地理口径）→
   镜头同时沿航点匀速飞完。
@@ -137,8 +137,9 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
   或留痕结论为 `wrong` 的航线，界面、搜索、解说里都**不出现**航班号与机型，航线照常
   可飞、地理解说照常播。`npm run check:routes` 会硬性拦截"未核实航线的解说里点名机型
   或航班号"。
-- **现状：280 条已全部核完**（2026-09-07）—— 91 条属实、163 条有误已改正、
-  26 条有误且找不到可靠替代（这 26 条界面/搜索/解说都不显示航班号）。
+- **现状：297 条均有机器可读的来源状态**——283 条可展示核实后的航班信息；
+  5 条已查明原信息有误、9 条只能确认航点关系，后 14 条不显示航班号或机型。
+  2026-09-07 的首轮 280 条审计结果是 91 条属实、163 条有误已改正、26 条有误且找不到可靠替代。
   **逐条核下来 189 条至少有一处错，占 68%**；冰岛、挪威、法国、意大利、西班牙、
   葡萄牙、丹麦、蒙古八国的国内线错误率是 100%。另有 15 条现实中根本没有不经停航班
   的航线已整条移除（295 → 280）。
@@ -150,7 +151,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 
 ## 数据可靠性
 
-这个项目的文字量很大（1041 处地形 × 6 板块 + 691 座城市 × 7 段 + 280 条航线 × 2 套解说，
+这个项目的文字量很大（1377 处地形 × 6 板块 + 944 座城市 × 7 段 + 297 条航线 × 2 套解说，
 中英双语），**它是依据公开资料整理生成的，没有人逐条审核过**。已经发现并修掉的事实错误
 不在少数，还没被发现的一定也有。下面写清楚哪些是可查的、哪些不可信、以及靠什么防线兜着。
 
@@ -163,14 +164,14 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 | 城市的**坐标 / IATA / 机场** | 较高 | `check:places` 强制齐全；机场更名等变动靠人工发现后修（见 known-errors） |
 | 城市的**运转与生活描述** | 中 | 同地形讲解；人口/面积一类数字**很多没有写年份和口径** |
 | 航线的**城市对与机场** | 较高 | 都是真实通航的城市对 |
-| 航线的**航班号 / 机型** | 中（已全部核过一遍） | 280 条逐条核实完毕；其中 26 条查明有误又找不到替代，界面/搜索/解说都不显示 |
+| 航线的**航班号 / 机型** | 中（有来源状态） | 283 条可展示核实信息；5 条 `wrong` + 9 条 `flight-unknown` 不显示航班号或机型 |
 
 ### 已有的自动防线
 
 ```bash
 npm run check          # 一次跑完下面全部
 npm run check:regions  # 大洲/次区域/国家 ↔ 地形计数一致性
-npm run check:camera   # 相机几何（1041/1041）
+npm run check:camera   # 相机几何（1377/1377）
 npm run check:places    # 城市坐标 / IATA / 来源 / 双语内容齐全
 npm run check:routes    # 航点单调性、解说时长、机型与数据是否自相矛盾、
                         # 未核实航线的解说不得点名机型或航班号
@@ -250,7 +251,7 @@ npm run lint       # ESLint
 npm run typecheck  # tsc --noEmit
 
 npm run check:regions   # 大洲/次区域/国家地形计数一致性自检
-npm run check:camera    # 相机几何自检（1041/1041）
+npm run check:camera    # 相机几何自检（1377/1377）
 npm run check:places    # 旅游地点自检（城市坐标/IATA/来源/双语内容齐全）
 npm run check:routes    # 航线自检（waypoint 单调性、解说时长、核实留痕、机型一致性）
 npm run check:flight    # 镜头运动自检（地速/高度比、加速度、转向、干飞时长）
@@ -285,13 +286,13 @@ components/
   RegionSelector.tsx       — 顶栏大洲 / 次区域两级切换
 
 lib/
-  terrain-registry.ts       — 【单一真实源】1041 处地形的锚点/范围/走向/中英名/来源
+  terrain-registry.ts       — 【单一真实源】1377 处地形的锚点/范围/走向/中英名/来源
   terrain-camera.ts         — computeTerrainCamera() 数据驱动相机推导
   terrain-content.{zh,en}.ts— 权威 6 板块讲解内容（中/英）
   terrain-lesson.ts         — resolveLesson(id, lang)：一处决定用哪份讲解
   terrain-label-registry.ts — 标签（由注册表生成，含 nameEn）
   lesson.ts                 — 讲解板块顺序 / 标题 / 拼接
-  routes.ts / route-narration.ts — 航线（当前 280 条，国内+国际；航班号仅在核实过时对外显示）
+  routes.ts / route-narration.ts — 航线（当前 297 条，国内+国际；航班号仅在核实过时对外显示）
                                     + 每条学习/旅游两套连贯解说
   app-mode.ts               — AppMode 类型 + localStorage 读写
   places-registry.ts        — 【旅游模式单一真实源】城市 + 国家概览
@@ -310,7 +311,7 @@ features/
 
 data/
   *.json                    — 早期地形数据（坐标现由 terrain-registry 覆盖）
-  routes/                   — 航线定义（当前 280 条，国内+国际，含 source 核实留痕）
+  routes/                   — 航线定义（当前 297 条，国内+国际，含 source 核实留痕）
   gis/                      — Natural Earth 原始 shp/dbf（不入库）
 
 public/data/gis/exports/    — 提取出的 42 个地形边界 geojson
@@ -382,7 +383,7 @@ TerrainEntry（注册表：锚点 landmark + bbox + axis + viewFrom）
 | 地形高程 | Cesium World Terrain |
 | 地形讲解 | 参照中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO 等公开资料整理生成，**未经人工逐条审核** |
 | 旅游讲解 | 参照各国官方旅游机构 / 气象机构气候平均值 / 入境信息 / 通行旅行指南整理生成，**未经人工逐条审核** |
-| 航班号 / 机型 | 280 条已于 2026-09-07 逐条上网核实（26 条查明有误无替代，不对外显示）；**其余也只是核实当日的快照**，航司改期换机不会自动同步 |
+| 航班号 / 机型 | 297 条均有来源状态；283 条可展示，5 条 `wrong` + 9 条 `flight-unknown` 不对外显示；**其余也只是核实当日的快照**，航司改期换机不会自动同步 |
 
 ---
 
