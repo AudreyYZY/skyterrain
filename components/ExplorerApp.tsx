@@ -27,6 +27,7 @@ import ExplorerHeader from "@/components/explorer/ExplorerHeader";
 import FlyoverBubble from "@/components/explorer/FlyoverBubble";
 import CityMarkers from "@/components/CityMarkers";
 import { type AppMode, getStoredMode, setStoredMode } from "@/lib/app-mode";
+import { continentAvailabilities } from "@/lib/continent-availability";
 import {
   getCitiesForContinent,
   getCityById,
@@ -357,7 +358,14 @@ export default function ExplorerApp() {
    */
   const railGroups: RailGroup[] = useMemo(() => studyRailGroups(activeRegion, language), [activeRegion, language]);
 
-  const terrainCount = railGroups.reduce((n, g) => n + g.items.length, 0);
+  const activeEntryCount = useMemo(
+    () => continentAvailabilities(mode).find(({ region }) => region.id === activeRegion)?.count ?? 0,
+    [activeRegion, mode],
+  );
+  const travelGroups = useMemo(
+    () => travelRailGroups(activeRegion, language),
+    [activeRegion, language],
+  );
 
   /** 底部航线面板：当前大洲下有航线的国家 + 聚焦国家 + 两组航线 */
   const journeyCountrySlugs = useMemo(() => journeyCountrySlugsFor(activeRegion), [activeRegion]);
@@ -394,9 +402,24 @@ export default function ExplorerApp() {
       setDisplayCards(null);
       clearRouteText();
       clearTravelSelection();
-      flyToCountryOverview();
+      const currentAvailable = continentAvailabilities(m).find(
+        ({ region, available }) => region.id === activeRegion && available,
+      );
+      const target = currentAvailable ?? continentAvailabilities(m).find(({ available }) => available);
+      if (target && target.region.id !== activeRegion) {
+        setActiveRegionState(target.region.id);
+        persistRegion(target.region.id);
+        mapRef.current?.flyToRegion({
+          lon: target.region.center.lon,
+          lat: target.region.center.lat,
+          height: target.region.center.height,
+          duration: 1.5,
+        });
+      } else {
+        flyToCountryOverview();
+      }
     },
-    [mode, flyToCountryOverview, stopSpeaking, clearTravelSelection, clearRouteText],
+    [mode, activeRegion, flyToCountryOverview, stopSpeaking, clearTravelSelection, clearRouteText],
   );
 
 
@@ -476,7 +499,7 @@ export default function ExplorerApp() {
       <ExplorerHeader
         showIntro={showIntro}
         regionName={language === "zh-CN" ? activeRegionName : activeRegionNameEn}
-        terrainCount={terrainCount}
+        entryCount={activeEntryCount}
         mode={mode}
         onModeChange={handleModeChange}
         activeRegion={activeRegion}
@@ -489,7 +512,7 @@ export default function ExplorerApp() {
       {!showIntro && (
         <IndexRail
           title={t(mode === "travel" ? "rail.title.travel" : "rail.title", language)}
-          groups={mode === "travel" ? travelRailGroups(activeRegion, language) : railGroups}
+          groups={mode === "travel" ? travelGroups : railGroups}
           activeId={mode === "travel" ? travelId : (activeTerrain?.id ?? null)}
           onSelect={mode === "travel" ? handleSelectCity : handleSelectById}
           searchPlaceholder={t("rail.search", language)}

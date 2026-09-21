@@ -8,12 +8,15 @@
  * 地形的地理重心。数据驱动：新增 / 开启大洲只需改 lib/regions.ts。
  */
 
-import { REGIONS, SUBREGIONS, type Region, hasTerrainData } from "@/lib/regions";
+import type { AppMode } from "@/lib/app-mode";
+import { continentAvailabilities } from "@/lib/continent-availability";
+import { REGIONS, SUBREGIONS, type Region } from "@/lib/regions";
 import { subregionGeosForContinent, type SubregionGeo } from "@/lib/subregion-geo";
 import type { Language } from "@/lib/i18n";
-import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 
 interface RegionSelectorProps {
+  mode: AppMode;
   activeRegion: string;
   onRegionChange: (region: Region) => void;
   /** 选中某次区域 —— 切到其大洲（若需要）并飞向其重心 */
@@ -25,6 +28,7 @@ interface RegionSelectorProps {
 const SUB_NAME = new Map(SUBREGIONS.map((s) => [s.id, s]));
 
 export default function RegionSelector({
+  mode,
   activeRegion,
   onRegionChange,
   onSubregionChange,
@@ -32,6 +36,7 @@ export default function RegionSelector({
   language = "zh-CN",
 }: RegionSelectorProps) {
   const [open, setOpen] = useState(false);
+  const [browseRegionId, setBrowseRegionId] = useState(activeRegion);
   const rootRef = useRef<HTMLDivElement | null>(null);
   const listId = useId();
 
@@ -63,6 +68,25 @@ export default function RegionSelector({
     [onSubregionChange],
   );
 
+  const options = useMemo(() => continentAvailabilities(mode), [mode]);
+  const currentOption = options.find((o) => o.region.id === activeRegion);
+  const browseOption = options.find((o) => o.region.id === browseRegionId)
+    ?? options.find((o) => o.available)
+    ?? options[0];
+  const browseSubs = browseOption?.available
+    ? subregionGeosForContinent(browseOption.region.id, mode)
+    : [];
+
+  const toggleOpen = useCallback(() => {
+    setOpen((wasOpen) => {
+      if (!wasOpen) {
+        const active = options.find((o) => o.region.id === activeRegion && o.available);
+        setBrowseRegionId((active ?? options.find((o) => o.available) ?? options[0])?.region.id ?? activeRegion);
+      }
+      return !wasOpen;
+    });
+  }, [activeRegion, options]);
+
   // 点击外部 / Esc 关闭
   useEffect(() => {
     if (!open) return;
@@ -89,9 +113,9 @@ export default function RegionSelector({
     <div ref={rootRef} className="relative">
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={toggleOpen}
         data-testid="region-toggle"
-        aria-haspopup="listbox"
+        aria-haspopup="dialog"
         aria-expanded={open}
         aria-controls={listId}
         className={[
@@ -102,64 +126,81 @@ export default function RegionSelector({
         ].join(" ")}
       >
         <span className="truncate">{currentName}</span>
-        {current && current.terrainCount > 0 && (
-          <span className="text-[9px] tabular-nums opacity-50">{current.terrainCount}</span>
+        {currentOption && currentOption.count > 0 && (
+          <span className="text-[9px] tabular-nums opacity-50">{currentOption.count}</span>
         )}
         <span aria-hidden className="text-[9px] opacity-60">{open ? "▴" : "▾"}</span>
       </button>
 
       {open && (
-        <ul
+        <div
           id={listId}
-          role="listbox"
+          role="dialog"
+          aria-label={language === "en-US" ? "Choose region" : "选择区域"}
           className={[
-            "absolute right-0 top-[calc(100%+6px)] z-50 min-w-[180px] overflow-hidden rounded-xl py-1",
+            "fixed left-2 right-2 top-12 z-50 flex w-auto overflow-hidden rounded-xl",
+            "sm:absolute sm:left-auto sm:right-0 sm:top-[calc(100%+6px)] sm:w-[min(92vw,440px)]",
+            "max-h-[min(70vh,520px)]",
             "border border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl shadow-xl",
           ].join(" ")}
         >
-          {REGIONS.map((region) => {
-            const isActive = activeRegion === region.id;
-            const hasData = hasTerrainData(region);
-            const subs = hasData ? subregionGeosForContinent(region.id) : [];
-            return (
-              <li key={region.id} role="option" aria-selected={isActive}>
+          <div className="w-[46%] min-w-0 overflow-y-auto border-r border-[color:var(--hairline)] py-1">
+            {options.map(({ region, count, available }) => {
+              const isActive = activeRegion === region.id;
+              const isBrowsing = browseOption?.region.id === region.id;
+              return (
                 <button
+                  key={region.id}
                   type="button"
-                  disabled={!hasData}
                   data-testid={`region-${region.id}`}
-                  onClick={() => hasData && handleSelect(region)}
+                  disabled={!available}
+                  onClick={() => available && setBrowseRegionId(region.id)}
+                  onFocus={() => available && setBrowseRegionId(region.id)}
+                  onMouseEnter={() => available && setBrowseRegionId(region.id)}
                   className={[
                     "flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-[12px] transition-colors",
-                    isActive
-                      ? "text-[color:var(--accent)]"
-                      : hasData
-                        ? "text-[color:var(--ink-body)] hover:bg-white/[0.05] hover:text-[color:var(--ink)]"
-                        : "cursor-default text-[color:var(--ink-faint)]",
+                    isBrowsing ? "bg-white/[0.06] text-[color:var(--ink)]" : "",
+                    isActive ? "text-[color:var(--accent)]" : "",
+                    available
+                      ? "hover:bg-white/[0.05]"
+                      : "cursor-default text-[color:var(--ink-faint)]",
                   ].join(" ")}
                 >
                   <span className="truncate">{nameOf(region)}</span>
-                  {hasData ? (
-                    region.terrainCount > 0 && (
-                      <span className="text-[9px] tabular-nums opacity-50">
-                        {region.terrainCount}
-                      </span>
-                    )
+                  {available ? (
+                    <span className="text-[9px] tabular-nums opacity-50">{count}</span>
                   ) : (
                     <span className="text-[9px] opacity-50">Soon</span>
                   )}
                 </button>
+              );
+            })}
+          </div>
 
-                {subs.length >= 1 && (
-                  <div className="pb-1">
-                    {subs.map((g) => (
+          <div className="min-w-0 flex-1 overflow-y-auto py-1" data-testid="region-subregions">
+            {browseOption && (
+              <>
+                <p className="px-3 pb-1 pt-2 text-[9px] uppercase tracking-[0.14em] text-[color:var(--ink-faint)]">
+                  {nameOf(browseOption.region)}
+                </p>
+                <button
+                  type="button"
+                  data-testid={`region-all-${browseOption.region.id}`}
+                  onClick={() => handleSelect(browseOption.region)}
+                  className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-[12px] text-[color:var(--ink-body)] transition-colors hover:bg-white/[0.05] hover:text-[color:var(--ink)]"
+                >
+                  <span>{language === "en-US" ? "View whole continent" : "查看整个大洲"}</span>
+                  <span aria-hidden className="opacity-50">→</span>
+                </button>
+                {browseSubs.length > 0 && (
+                  <div className="border-t border-[color:var(--hairline)] pt-1">
+                    {browseSubs.map((g) => (
                       <button
                         key={g.id}
                         type="button"
+                        data-testid={`subregion-${g.id}`}
                         onClick={() => handleSub(g)}
-                        className={[
-                          "flex w-full items-center justify-between gap-3 py-1.5 pl-6 pr-3 text-left text-[11px] transition-colors",
-                          "text-[color:var(--ink-dim)] hover:bg-white/[0.05] hover:text-[color:var(--ink)]",
-                        ].join(" ")}
+                        className="flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-[11px] text-[color:var(--ink-dim)] transition-colors hover:bg-white/[0.05] hover:text-[color:var(--ink)]"
                       >
                         <span className="truncate">{subNameOf(g.id)}</span>
                         <span className="text-[9px] tabular-nums opacity-50">{g.count}</span>
@@ -167,10 +208,10 @@ export default function RegionSelector({
                     ))}
                   </div>
                 )}
-              </li>
-            );
-          })}
-        </ul>
+              </>
+            )}
+          </div>
+        </div>
       )}
     </div>
   );

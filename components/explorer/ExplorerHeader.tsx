@@ -1,5 +1,5 @@
 "use client";
-/** 顶栏：当前大洲 + 地形数 · 学习/旅游切换 · 大洲下拉 · 中英切换（2026-09-14 从 ExplorerApp 搬出，外观不变） */
+/** 顶栏：当前大洲 + 当前模式条目数 · 学习/旅游切换 · 大洲下拉 · 中英切换 */
 import ModeToggle from "@/components/ModeToggle";
 import RegionSelector from "@/components/RegionSelector";
 import type { AppMode } from "@/lib/app-mode";
@@ -11,7 +11,7 @@ type SubregionGeo = Parameters<NonNullable<React.ComponentProps<typeof RegionSel
 export default function ExplorerHeader(props: {
   showIntro: boolean;
   regionName: string;
-  terrainCount: number;
+  entryCount: number;
   mode: AppMode;
   onModeChange: (m: AppMode) => void;
   activeRegion: string;
@@ -20,20 +20,21 @@ export default function ExplorerHeader(props: {
   language: Language;
   onToggleLanguage: () => void;
 }) {
-  const { showIntro, regionName, terrainCount, mode, onModeChange, activeRegion, onRegionChange, onSubregionChange, language, onToggleLanguage } = props;
+  const { showIntro, regionName, entryCount, mode, onModeChange, activeRegion, onRegionChange, onSubregionChange, language, onToggleLanguage } = props;
   return (
-    <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-2.5">
+    <header className="pointer-events-none absolute inset-x-0 top-0 z-40 flex items-center justify-between px-4 py-2.5">
       <div className={`flex items-baseline gap-2.5 transition-opacity duration-300 ${showIntro ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}>
         <span className="editorial-title text-[15px] text-[color:var(--ink)]">
           {regionName}
         </span>
         <span className="text-[10px] tabular-nums text-[color:var(--ink-faint)]">
-          {terrainCount}
+          {entryCount}
         </span>
       </div>
       <div className={`flex items-center gap-3 transition-opacity duration-300 ${showIntro ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}>
         <ModeToggle mode={mode} onChange={onModeChange} language={language} />
         <RegionSelector
+          mode={mode}
           activeRegion={activeRegion}
           onRegionChange={onRegionChange}
           onSubregionChange={onSubregionChange}

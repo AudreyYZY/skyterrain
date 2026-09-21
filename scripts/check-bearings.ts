@@ -128,8 +128,11 @@ console.log(
   `  方位差出一格半以上：${dirHits.length} 处\n  距离不可能：${distHits.length} 处`,
 );
 if (!entries) {
-  console.error("✗ 一个条目都没扫到 —— 这不是「没问题」，是取不到值");
-  process.exit(1);
+  if (scope.active) console.log("（收窄范围内没有带 POI 坐标的城市条目，跳过方位与距离比对）");
+  else {
+    console.error("✗ 一个条目都没扫到 —— 这不是「没问题」，是取不到值");
+    process.exit(1);
+  }
 }
 for (const l of [...dirHits, ...distHits]) console.log("\n" + l);
 if (dirHits.length || distHits.length) {
