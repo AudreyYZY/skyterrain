@@ -63,7 +63,7 @@ export const REGIONS: Region[] = [
     name: "非洲",
     nameEn: "Africa",
     center: { lon: 19.0, lat: 3.0, height: 13000000 },
-    terrainCount: 25,
+    terrainCount: 35,
     available: true,
   },
   {
@@ -204,6 +204,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   slovenia: "southern-europe",
   malta: "southern-europe",
   namibia: "southern-africa",
+  "south-africa": "southern-africa",
   chile: "south-america",
 };
 
@@ -283,8 +284,9 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "romania", name: "罗马尼亚", nameEn: "Romania", code: "RO" },
   { slug: "slovakia", name: "斯洛伐克", nameEn: "Slovakia", code: "SK" },
   { slug: "hungary", name: "匈牙利", nameEn: "Hungary", code: "HU" },
-  // 南部非洲（非洲首个收录国家，见 docs/africa-country-selection-2026-09-18.md）
+  // 南部非洲（非洲首个/第二个收录国家，见 docs/africa-country-selection-2026-09-18.md；拼音：纳米比亚 Nàmǐbǐyà → 南非 Nánfēi）
   { slug: "namibia", name: "纳米比亚", nameEn: "Namibia", code: "NA" },
+  { slug: "south-africa", name: "南非", nameEn: "South Africa", code: "ZA" },
   // 北美（拼音：加拿大 Jiānádà → 美国 Měiguó）
   { slug: "canada", name: "加拿大", nameEn: "Canada", code: "CA" },
   { slug: "usa", name: "美国", nameEn: "United States", code: "US" },
