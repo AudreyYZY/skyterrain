@@ -153,4 +153,123 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Summer (November to March) is hot and rainy; winter (June to August) is dry and mild, with a wide day-night temperature swing.",
   },
+
+  ekurhuleni: {
+    identity:
+      "Ekurhuleni is the only one of South Africa's eight metropolitan municipalities with no single historic core city, with the Census 2022 population of the whole metro at about 4.07 million, the fourth-largest of the metros by population. It sits in Gauteng province's East Rand area; this entry is anchored at Germiston, the metro's administrative headquarters and itself a town that grew up during the gold-mining boom of the late 19th century.",
+    howItWorks:
+      "Johannesburg, Cape Town and Durban are all metros that grew outward from a single historic core city; Ekurhuleni is entirely different — it was formed by merging a string of separately-developed East Rand towns, including Alberton, Benoni, Boksburg, Brakpan, Edenvale, Germiston, Springs, Kempton Park and Nigel. A common misunderstanding is assuming \"Ekurhuleni\" names one specific city — it's actually a federation of around ten peer towns with no true centre, and Germiston hosting the administrative headquarters is just one of those historic towns taking on that role.",
+    layout:
+      "The whole metro is stitched together from the built-up areas of multiple historic towns, often separated by farmland or industrial zones rather than forming one continuous urban area. Germiston is the administrative centre, Kempton Park sits next to OR Tambo International Airport, and towns like Boksburg and Benoni each keep their own independent town centre and high street.",
+    gettingAround:
+      "OR Tambo International Airport, the country's busiest by passenger traffic, actually sits within this metro near Kempton Park, though the airport's brand has historically been associated with Johannesburg rather than this city. Getting around relies mainly on taxis and ride-hailing; moving between the historic towns usually requires a car or public transport.",
+    culture:
+      "English is used across public services, alongside Zulu and other local languages. As an industrial belt stitched together from multiple towns, daily life here is more dispersed than in a single-core city, with each town keeping its own community identity.",
+    seeAndDo:
+      "Explore Germiston's old town for architecture surviving from the late-19th-century gold-mining boom; the metro contains several independent historic town centres worth visiting by interest rather than treating the whole area as one city.",
+    whenAndTips:
+      "Summer (November to March) often brings afternoon thunderstorms; winter (June to August) is dry with cool nights, matching the climate of the rest of Gauteng province.",
+  },
+
+  "east-london": {
+    identity:
+      "East London is South Africa's only river-port city, with the Census 2022 population of the Buffalo City metropolitan municipality it belongs to at about 975,000, the smallest of the country's eight metros. The city sits between the Buffalo River and the Nahoon River, and was formally named in 1848 as an eastern counterpart to London, marking it as a gateway port for the British Empire in the Eastern Cape. Note: in February 2026 a government gazette approved renaming the city to \"KuGompo City\" (from a Xhosa name for Gompo Rock on the coast); as of September 2026 this renaming remains under public objection review and legal challenge and has not taken final effect, so this entry uses the current name, East London.",
+    howItWorks:
+      "The Buffalo City metropolitan municipality this city belongs to shares its jurisdiction with Bhisho, Eastern Cape province's capital — the provincial capital and the province's largest city fall under the very same metro, a step further than the usual \"capital isn't the largest city\" pattern. In 1836, John Rex and John Bailie surveyed the mouth of the Buffalo River, originally naming it \"Port Rex\" and using it as a supply base; Fort Glamorgan was completed in 1847-48, and in January 1848 Cape Governor Sir Harry Smith formally incorporated the site into the Cape Colony and renamed it \"East London\".",
+    layout:
+      "The city stretches along both banks of the Buffalo River mouth, the country's only natural river harbour; the old town and commercial district sit close to the river mouth, with residential areas extending out along the coastline.",
+    gettingAround:
+      "King Phalo Airport (renamed from East London Airport in 2021) has scheduled flights run by FlySafair, Airlink and CemAir. Getting around relies mainly on taxis.",
+    culture:
+      "English and Xhosa are both common here. As a port city, the pace is more relaxed than the major metros, with the maritime history and river-port function forming an important backdrop to local life.",
+    seeAndDo:
+      "Walk along the Buffalo River mouth to see the country's only natural river harbour; explore the old town's early-colonial architecture; the nearby beaches are also part of everyday local life.",
+    whenAndTips:
+      "Subtropical climate: summer (November to March) is warm and humid, winter (June to August) mild and dry — a year-round destination.",
+  },
+
+  kimberley: {
+    identity:
+      "Kimberley is the capital of Northern Cape province, with the Census 2022 population of the Sol Plaatje local municipality it belongs to at about 270,000, grown up around a 19th-century diamond rush. Digging began in 1871 on a small rise called Colesberg Kopje; the town that grew up around the mine was first named \"New Rush\" before being renamed \"Kimberley\", reaching a population of about 50,000 by 1872.",
+    howItWorks:
+      "Kimberley is a local municipality, falling under the Frances Baard District Municipality, and is the capital of Northern Cape province — the capital coincides with the province's largest city here. The municipality is named after Sol Plaatje, a writer, linguist and a founding member of the African National Congress.",
+    layout:
+      "The Big Hole is the city's geographic and historical core, with the mine pit itself and its museum complex sitting at the centre of town, the rest of the city built up around this historic mining site.",
+    gettingAround:
+      "Kimberley Airport has Airlink-operated scheduled flights to Johannesburg and Cape Town. Getting around relies mainly on taxis.",
+    culture:
+      "English and Southern Sotho are both common here. The city's identity is closely tied to its diamond-mining history, with museums and historic buildings forming the main sightseeing content.",
+    seeAndDo:
+      "Visit the Big Hole and its museum — this mine was dug by hand from mid-July 1871 to 14 August 1914, removing more than 22 million tonnes of rock, one of the largest hand-dug excavations in the world, about 240 m deep and 1.6 km around, yielding a cumulative 2,722 kg of diamonds.",
+    whenAndTips:
+      "Semi-arid interior climate: summer (November to March) is hot, winter (June to August) dry and cool with a wide day-night temperature swing.",
+  },
+
+  george: {
+    identity:
+      "George is the gateway city to the scenic Garden Route coastal highway, with the Census 2022 population of the local municipality at about 295,000, one of the fastest-growing tourism cities in the country over the past decade, reflecting rapid urbanisation in this area. The city sits between the Western and Eastern Cape, falling under the Garden Route District Municipality — renamed from the Eden District Municipality in 2018.",
+    howItWorks:
+      "George is a local municipality (not a metro); George Airport is the only airport in the Garden Route area with scheduled commercial flights, and neighbouring tourist towns like Knysna all rely on it for connections — meaning that although George itself isn't the largest place around, it functions as the whole Garden Route's actual transport hub.",
+    layout:
+      "The city centre sits at the foot of the Outeniqua Mountains, with the airport to the south along the coast, and roads leading east and west to other towns along the Garden Route.",
+    gettingAround:
+      "George Airport is run by Airlink, CemAir and FlySafair, with 2025 passenger traffic over 910,000, up about 11% year on year, and currently operating at full capacity. Getting around relies mainly on taxis and self-driving; the Garden Route itself is usually explored by car.",
+    culture:
+      "English and Afrikaans are both common here. As a transport-hub city, the pace is more practical and more tourism-service-dependent than the resort towns around it.",
+    seeAndDo:
+      "Use George as a base for hiking and golf in the Outeniqua Mountains along the Garden Route; the city is also the common starting point for trips to nearby towns like Knysna and Mossel Bay.",
+    whenAndTips:
+      "Temperate oceanic climate with rainfall spread fairly evenly through the year: summer (November to March) is warm, winter (June to August) cooler and wetter.",
+  },
+
+  "richards-bay": {
+    identity:
+      "Richards Bay is Africa's largest coal-export port, and one of the world's largest coal-export terminals by annual throughput capacity. Richards Bay town itself isn't an independent local municipality; the uMhlathuze local municipality it belongs to had a Census 2022 population of about 412,000, covering Richards Bay itself and surrounding towns including Empangeni.",
+    howItWorks:
+      "The Richards Bay Coal Terminal exported more than 52 million tonnes in 2024, mostly from Mpumalanga province's coalfields, with India the largest export market (roughly half of the total), followed by other Asian countries and Europe. The port sits at the mouth of an artificially widened natural lagoon, a straight-line distance of about 160 km north of Durban.",
+    layout:
+      "The port occupies the main shoreline at the lagoon mouth, with industrial and terminal facilities concentrated there; the town's residential and commercial areas extend inland around the port.",
+    gettingAround:
+      "Richards Bay Airport is run exclusively by Airlink with scheduled flights to Johannesburg, switching to the Embraer 170 aircraft type in December 2023, typically three flights on weekdays and one on weekends. Getting around relies mainly on taxis.",
+    culture:
+      "English and Zulu are both common here. As an industrial port town, daily life revolves around port operations, with relatively few tourists.",
+    seeAndDo:
+      "Observe the coal-loading operations and lagoon landform from a distance; this city works better as a stop for understanding South Africa's industrial geography than as a conventional tourist destination.",
+    whenAndTips:
+      "Subtropical climate: summer (November to March) hot and humid, winter (June to August) mild and dry.",
+  },
+
+  upington: {
+    identity:
+      "Upington is the largest town in Northern Cape province's \"Green Kalahari\" area, on the banks of the already-catalogued Orange River, with the Census 2022 population of the Dawid Kruiper local municipality it belongs to at about 126,000. The municipality is named after the late Khoisan leader Dawid Kruiper.",
+    howItWorks:
+      "Upington falls under the ZF Mgcawu District Municipality, the country's third-largest district municipality by area at about 102,000 km². The local airport's runway is 4,900 m long, the longest civilian runway in the Southern Hemisphere and on the African continent — a scale far beyond the everyday aviation needs of a mid-sized town, and this area's single most distinctive piece of infrastructure.",
+    layout:
+      "The town stretches along both banks of the Orange River, with river-irrigated vineyards and farmland dominating the surrounding landscape, contrasting with the semi-arid Kalahari terrain further out.",
+    gettingAround:
+      "Upington International Airport is run exclusively by Airlink with scheduled flights to Johannesburg and Cape Town, and is also an important grape-export cargo hub. Getting around relies mainly on taxis and self-driving.",
+    culture:
+      "English and Afrikaans are both common here. The local economy centres on irrigated agriculture (grape-growing especially) and the town's role as a regional transport hub.",
+    seeAndDo:
+      "Tour the vineyards along both banks of the Orange River; the town is also a common starting point for trips to the already-catalogued Augrabies Falls and the Orange River landform further along.",
+    whenAndTips:
+      "Semi-arid interior climate: summer (November to March) is extremely hot, winter (June to August) dry and cool with a very wide day-night temperature swing.",
+  },
+
+  knysna: {
+    identity:
+      "Knysna is a lagoon and oyster town along the Garden Route, with the Census 2022 population of the local municipality at about 96,000. The Knysna Heads — sandstone cliffs flanking the lagoon's mouth to the sea — are the area's landmark sight.",
+    howItWorks:
+      "Knysna is a local municipality falling under the Garden Route District Municipality, with no local airport handling scheduled flights — day-to-day air travel relies on George Airport, about a 60 km drive away, a transport pattern shared by several Garden Route tourist towns, with George functioning as the whole scenic route's aviation hub.",
+    layout:
+      "The town wraps around the Knysna Lagoon, with the sandstone Knysna Heads flanking the mouth to the sea as the area's landmark, and the Featherbed Nature Reserve on the lagoon's western shore.",
+    gettingAround:
+      "There's no local airport with scheduled flights; transfers from George Airport typically take about an hour, or the Garden Route road can be driven directly. The town centre is walkable, while reaching nearby nature reserves usually requires a car or a tour.",
+    culture:
+      "English and Afrikaans are both common here. Oyster farming and lagoon tourism form a significant part of the local economy.",
+    seeAndDo:
+      "Visit the Knysna Heads to see the sandstone cliff landform at the lagoon's mouth to the sea; visit the Featherbed Nature Reserve; sample the local oysters.",
+    whenAndTips:
+      "Temperate oceanic climate with rainfall spread fairly evenly through the year. A wildfire in June 2017 caused serious damage; the community has since rebuilt through grassroots efforts, and tourism and facilities like the Featherbed Nature Reserve have largely recovered, now operating to stricter fire-safety standards.",
+  },
 };

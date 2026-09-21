@@ -38,4 +38,29 @@ export const POIS: Record<string, CityPoi[]> = {
   polokwane: [
     { nameZh: "波罗奎瓦内市中心", nameEn: "Polokwane City Centre", lon: 29.4689, lat: -23.9045, kind: "district" },
   ],
+  ekurhuleni: [
+    { nameZh: "日耳曼斯顿老城", nameEn: "Germiston Old Town", lon: 28.1672, lat: -26.2178, kind: "district" },
+    { nameZh: "博克斯堡", nameEn: "Boksburg", lon: 28.2620, lat: -26.2130, kind: "district" },
+  ],
+  "east-london": [
+    { nameZh: "水牛河口", nameEn: "Buffalo River Mouth", lon: 27.9130, lat: -33.0230, kind: "nature" },
+    { nameZh: "东伦敦老城区", nameEn: "East London Old Town", lon: 27.9116, lat: -33.0153, kind: "district" },
+  ],
+  kimberley: [
+    { nameZh: "大洞", nameEn: "Big Hole", lon: 24.7573, lat: -28.7385, kind: "landmark" },
+  ],
+  george: [
+    { nameZh: "乌斯河山", nameEn: "Outeniqua Mountains", lon: 22.4500, lat: -33.9200, kind: "nature" },
+  ],
+  "richards-bay": [
+    { nameZh: "理查兹湾潟湖", nameEn: "Richards Bay Lagoon", lon: 32.0700, lat: -28.7700, kind: "nature" },
+    { nameZh: "理查兹湾煤炭码头", nameEn: "Richards Bay Coal Terminal", lon: 32.0950, lat: -28.7900, kind: "landmark" },
+  ],
+  upington: [
+    { nameZh: "奥兰治河葡萄园", nameEn: "Orange River Vineyards", lon: 21.2561, lat: -28.4478, kind: "nature" },
+  ],
+  knysna: [
+    { nameZh: "克尼斯纳头", nameEn: "Knysna Heads", lon: 23.0700, lat: -34.0800, kind: "landmark" },
+    { nameZh: "费瑟贝德自然保护区", nameEn: "Featherbed Nature Reserve", lon: 23.0500, lat: -34.0850, kind: "nature" },
+  ],
 };

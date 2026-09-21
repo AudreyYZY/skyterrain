@@ -391,6 +391,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "za-kwazulu-natal": { zh: "夸祖鲁-纳塔尔省", en: "KwaZulu-Natal", order: 563 },
   "za-eastern-cape": { zh: "东开普省", en: "Eastern Cape", order: 564 },
   "za-limpopo": { zh: "林波波省", en: "Limpopo", order: 565 },
+  "za-northern-cape": { zh: "北开普省", en: "Northern Cape", order: 566 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {

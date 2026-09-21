@@ -2414,4 +2414,11 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "travel/gqeberha": { f: 7, v: 0, d: "2021-02-23" },
   "travel/stellenbosch": { f: 7, v: 0 },
   "travel/polokwane": { f: 7, v: 0 },
+  "travel/ekurhuleni": { f: 7, v: 0 },
+  "travel/east-london": { f: 7, v: 0, d: "2026-09-22" },
+  "travel/kimberley": { f: 7, v: 0 },
+  "travel/george": { f: 7, v: 0 },
+  "travel/richards-bay": { f: 7, v: 0, d: "2026-09-22" },
+  "travel/upington": { f: 7, v: 0 },
+  "travel/knysna": { f: 7, v: 1, d: "2026-09-22" },
 };
