@@ -1,0 +1,61 @@
+{
+  "id": "ers-mpa",
+  "name": "温得和克 — 卡蒂马穆利洛",
+  "nameEn": "Windhoek — Katima Mulilo",
+  "description": "中部高原 · 卡拉哈里沙地 · 东北水道 · 恩卡萨—鲁帕拉洪泛平原",
+  "descriptionEn": "Central Highlands · Kalahari sandveld · north-eastern channels · Nkasa Rupara Floodplain",
+  "depCountry": "namibia",
+  "arrCountry": "namibia",
+  "source": {
+    "ref": "https://flynam.com/destinations/",
+    "checkedOn": "2026-09-21",
+    "status": "flight-unknown",
+    "note": "FlyNamibia 官方当前航点页把 Katima Mulilo 列为从 Windhoek 出发的国内航点；但公开静态页拿不到当日航班号、机型与准确时长，因此不填 flight，不对外显示未经核实的班次信息。"
+  },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "ers",
+      "name": "温得和克埃罗斯机场",
+      "nameEn": "Windhoek Eros Airport",
+      "lat": -22.60492,
+      "lon": 17.079002,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "中部高原",
+      "nameEn": "Central Highlands",
+      "lat": -21.25,
+      "lon": 18.6
+    },
+    {
+      "kind": "feature",
+      "name": "卡拉哈里沙地北部",
+      "nameEn": "Northern Kalahari sandveld",
+      "lat": -19.65,
+      "lon": 20.55
+    },
+    {
+      "kind": "feature",
+      "name": "东北水道与林地",
+      "nameEn": "North-eastern channels and woodland",
+      "lat": -18.35,
+      "lon": 22.65
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nkasa-rupara-floodplain"
+    },
+    {
+      "kind": "city",
+      "id": "mpa",
+      "name": "卡蒂马穆利洛机场",
+      "nameEn": "Katima Mulilo Airport",
+      "lat": -17.634258,
+      "lon": 24.176688,
+      "airport": true
+    }
+  ]
+}

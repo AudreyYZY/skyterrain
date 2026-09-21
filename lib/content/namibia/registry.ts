@@ -422,6 +422,140 @@ const KUNENE_RIVER_NAMIBIA: TerrainEntry = {
     "正文不写全河长度、流域跨境面积、上游工程或对岸国名；条目名明确加『纳米比亚段』，避免把整条河归入单一国家。",
 };
 
+const GAMSBERG: TerrainEntry = {
+  id: "gamsberg",
+  nameZh: "加姆斯贝格桌状山",
+  nameEn: "Gamsberg Table Mountain",
+  category: "plateau",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "加姆斯贝格", lon: 16.2168, lat: -23.3425, elevation: 2347, kind: "peak" },
+  bbox: [16.14, -23.39, 16.28, -23.29],
+  axis: [[16.15, -23.37], [16.27, -23.31]],
+  viewScale: 1.15,
+  label: { lon: 16.21, lat: -23.34, rotation: -24 },
+  source:
+    "加姆斯贝格：GSN《Namibia's Geological Treasures: Gamsberg》给出海拔 2,347 米、平顶、属于大陡崖、" +
+    "高出东侧高原约 450 米且向西至纳米布平原高差约 1,100 米；约 1.1 Ga 花岗岩侵入更老基底，后被 700–600 Ma 沉积层覆盖，" +
+    "约 540 Ma 达马拉造山后长期剥蚀使花岗岩重新出露，顶部约 180 Ma 的风成砂岩硅化成约 30 米厚硬盖（1 级，2026-09-21 核）。" +
+    "分类取 plateau：观察对象是大陡崖上的平顶硬盖残丘，顶面连续且内部平坦；不是由中心侵入体构成的环状 inselberg。" +
+    "坐标取 Wikidata/GeoNames 交叉（3 级），高程用 GSN 1 级；bbox 与 axis 按 GSN 航片概括，非实测边界。",
+};
+
+const BRUKKAROS: TerrainEntry = {
+  id: "brukkaros",
+  nameZh: "布鲁卡罗斯山",
+  nameEn: "Brukkaros",
+  category: "inselberg",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "布鲁卡罗斯环脊", lon: 17.7815, lat: -25.8556, elevation: 1600, kind: "peak" },
+  bbox: [17.72, -25.91, 17.84, -25.80],
+  viewScale: 1.1,
+  label: { lon: 17.78, lat: -25.855, rotation: 0 },
+  source:
+    "布鲁卡罗斯：GSN Geosite 单页与 Lorenz 等官方地调论文给出约 75 Ma、基底直径约 7 km、" +
+    "高出纳马平原约 600 m、峰面约 1,600 m；外形像火山但不是普通火山锥，成因为岩浆浅部侵入隆起、" +
+    "地下水参与的蒸汽岩浆爆发、物质亏损与顶板下陷共同形成环脊和约 3 km 中央洼地（1 级，2026-09-21 核）。" +
+    "分类遵守 taxonomy §6.1 取 inselberg：官方论文称 volcano-shaped inselberg，主体是孤立环状岩丘；中央洼地不足以把整体判成 basin。" +
+    "锚点取政府公报 Brukkaros radio tower 25°51′20.1″S/17°46′53.3″E（1 级），bbox 按 7 km 基底直径扩展。",
+};
+
+const KEETMANSHOOP_DOLERITE_HILLS: TerrainEntry = {
+  id: "keetmanshoop-dolerite-hills",
+  nameZh: "基特曼斯胡普辉绿岩丘陵",
+  nameEn: "Keetmanshoop Dolerite Hills",
+  category: "hills",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "巨人游乐场", lon: 18.2692, lat: -26.4658, elevation: 1100, kind: "peak" },
+  bbox: [17.65, -27.05, 18.85, -25.85],
+  viewScale: 1.55,
+  label: { lon: 18.23, lat: -26.42, rotation: 0 },
+  source:
+    "基特曼斯胡普辉绿岩丘陵：GSN《Dolerite Hills》记基特曼斯胡普辉绿岩杂岩约 180 Ma、分布逾 18,000 km²；" +
+    "两套岩床分别约 150 m 与 120 m 厚，侵入较老的 Karoo 沉积层，岩墙为供给通道。长期剥蚀暴露岩床，" +
+    "球状风化把辉绿岩沿节理剥成圆角巨石与起伏丘面；巨人游乐场在基特曼斯胡普东北约 25 km（1 级，2026-09-21 核）。" +
+    "锚点坐标取 Mindat/OSM 交叉（3 级）；elevation 1,100 m 仅作相机补偿，正文不写；bbox 为杂岩核心景观范围的概括，不等同完整 18,000 km² 地质体。",
+};
+
+const TWYFELFONTEIN_VALLEY: TerrainEntry = {
+  id: "twyfelfontein-valley",
+  nameZh: "特韦弗尔方丹谷地",
+  nameEn: "Twyfelfontein Valley",
+  category: "valley",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "特韦弗尔方丹泉谷", lon: 14.3726, lat: -20.5956, elevation: 600, kind: "corridor" },
+  bbox: [14.32, -20.64, 14.48, -20.52],
+  axis: [[14.34, -20.61], [14.46, -20.55]],
+  viewScale: 1.15,
+  label: { lon: 14.39, lat: -20.585, rotation: -22 },
+  source:
+    "特韦弗尔方丹谷地：GSN Geosite 单页记该谷为胡阿布水系支谷，切入 140–280 Ma 的特韦弗尔方丹砂岩与 Karoo 页岩／泥岩；" +
+    "多孔风成—河流砂岩覆盖不透水细粒岩，地下水在坡脚接触带出露成小泉。附近燃烧山是辉绿岩侵入加热沉积层的接触变质景观，" +
+    "风琴管则是辉绿岩冷却收缩形成的柱状节理（1 级，2026-09-21 核）。" +
+    "UNESCO nomination 1255 给出中心坐标 S20°35′44.1″/E14°22′21.3″，遗址 2007 年列入世界遗产（1 级）；" +
+    "正文只写前现代岩刻与 2007 年列入，不写近现代命名史。",
+};
+
+const OTJIKOTO_GUINAS_LAKES: TerrainEntry = {
+  id: "otjikoto-guinas-lakes",
+  nameZh: "奥奇科托—吉纳斯岩溶湖",
+  nameEn: "Otjikoto and Guinas Karst Lakes",
+  category: "lake",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "奥奇科托湖", lon: 17.5497, lat: -19.1948, elevation: 1250, kind: "lake" },
+  bbox: [17.31, -19.27, 17.59, -19.16],
+  axis: [[17.3526, -19.2329], [17.5497, -19.1948]],
+  viewScale: 1.25,
+  label: { lon: 17.46, lat: -19.21, rotation: -8 },
+  source:
+    "奥奇科托—吉纳斯岩溶湖：GSN《Otjikoto》记两湖位于约 650 Ma 的达马拉带碳酸盐岩中；含碳酸的地下水沿裂隙溶蚀成洞穴，" +
+    "洞顶坍塌后形成近圆形、近垂直壁的落水洞湖，两湖都是北流地下水面的窗口。奥奇科托最大直径约 102 m、深约 75 m；" +
+    "吉纳斯约 140 m 宽、153 m 深（1 级，2026-09-21 核）。" +
+    "两湖坐标取 OSM/GeoNames（3 级）；elevation 1,250 m 仅作相机补偿。🚫 GSN 单页后半含一战军事遗物叙事，正文完全不用；" +
+    "区域资料把两湖地下相连只写为未经证实的说法，正文不作事实陈述。",
+};
+
+const UGAB_RIVER_TERRACES: TerrainEntry = {
+  id: "ugab-river-terraces",
+  nameZh: "乌加布河阶地",
+  nameEn: "Ugab River Terraces",
+  category: "valley",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "芬格克利普", lon: 15.4339, lat: -20.3829, elevation: 950, kind: "escarpment" },
+  bbox: [15.20, -20.55, 15.80, -20.20],
+  axis: [[15.75, -20.28], [15.25, -20.48]],
+  viewScale: 1.3,
+  label: { lon: 15.48, lat: -20.37, rotation: 18 },
+  source:
+    "乌加布河阶地：GSN《Vingerklip & Ugab Terraces》记间歇性乌加布河切入早第三纪地表，在奥乔至芬格克利普一带保留三级河阶；" +
+    "主阶地高出现河床约 160 m，覆盖 Eocene 侵蚀面，含逾 100 m 沙与砾岩并有碳酸盐砂岩硬盖；较低第二阶地约高 30 m。" +
+    "芬格克利普是主阶地残留的一根约 30 m 高岩柱，砾岩与砂岩互层记录流量变化（1 级，2026-09-21 核）。" +
+    "锚点取 OSM 芬格克利普坐标（3 级），elevation 为相机补偿近似值；bbox/axis 按 GSN 地图概括。",
+};
+
+const NKASA_RUPARA_FLOODPLAIN: TerrainEntry = {
+  id: "nkasa-rupara-floodplain",
+  nameZh: "恩卡萨—鲁帕拉洪泛平原",
+  nameEn: "Nkasa Rupara Floodplain",
+  category: "plain",
+  regionId: "africa",
+  country: "namibia",
+  landmark: { name: "恩卡萨岛湿地", lon: 23.7656, lat: -18.3961, elevation: 930, kind: "delta" },
+  bbox: [23.55, -18.56, 24.00, -18.17],
+  viewScale: 1.25,
+  label: { lon: 23.77, lat: -18.38, rotation: 0 },
+  source:
+    "恩卡萨—鲁帕拉洪泛平原：MEFT 公园页给出公园面积 320 km²、1990 年设立；主体由芦苇水道、潟湖和白蚁丘岛屿组成，" +
+    "植被列为赞比西洪泛平原的芦苇、莎草、纸莎草与水缘高树。高水位时多条水道与洼地相连成近似三角洲的系统（1 级，2026-09-21 核）。" +
+    "分类取 plain：观察对象是低平、季节性淹水的冲积洪泛面，水道是其内部结构；不取 river（无单一主槽）或 lake（无固定湖盆）。" +
+    "中心坐标取公园公开坐标（3 级），elevation 930 m 仅作相机补偿。🚫 来源页含现代政治与邻国国名，正文一律不用。",
+};
+
 export const TERRAINS: TerrainEntry[] = [
   NAMIB_DESERT,
   NAMIB_SAND_SEA,
@@ -441,4 +575,11 @@ export const TERRAINS: TerrainEntry[] = [
   ETENDEKA_PLATEAU,
   NAUKLUFT_MOUNTAINS,
   KUNENE_RIVER_NAMIBIA,
+  GAMSBERG,
+  BRUKKAROS,
+  KEETMANSHOOP_DOLERITE_HILLS,
+  TWYFELFONTEIN_VALLEY,
+  OTJIKOTO_GUINAS_LAKES,
+  UGAB_RIVER_TERRACES,
+  NKASA_RUPARA_FLOODPLAIN,
 ];

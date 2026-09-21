@@ -230,6 +230,33 @@ export default function ContinentIntro({
           ))}
         </div>
 
+        <nav
+          aria-label={language === "zh-CN" ? "大洲直达" : "Choose a continent"}
+          data-testid="intro-continent-nav"
+          className="mx-auto mt-5 flex max-w-full flex-wrap items-center justify-center gap-2"
+        >
+          {cards.map((c, i) => (
+            <button
+              key={c.id}
+              type="button"
+              data-testid={`intro-continent-${c.id}`}
+              aria-current={i === idx ? "true" : undefined}
+              onClick={() => {
+                setNavigated(true);
+                setIdx(i);
+              }}
+              className={[
+                "rounded-full border px-3 py-1.5 text-[11px] transition-colors",
+                i === idx
+                  ? "border-[color:var(--accent-line)] bg-[color:var(--accent-soft)] text-[color:var(--accent)]"
+                  : "border-[color:var(--hairline)] bg-[color:var(--panel)] text-[color:var(--ink-dim)] hover:text-[color:var(--ink)]",
+              ].join(" ")}
+            >
+              {language === "zh-CN" ? c.name : c.nameEn}
+            </button>
+          ))}
+        </nav>
+
         <button
           type="button"
           data-testid="intro-enter"

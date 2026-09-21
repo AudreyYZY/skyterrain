@@ -36,6 +36,7 @@ async function enter(page: Page, region: string): Promise<void> {
   await page.getByTestId("intro-enter").click();
   await page.getByTestId("region-toggle").click();
   await page.getByTestId(`region-${region}`).click();
+  await page.getByTestId(`region-all-${region}`).click();
 }
 
 async function searchRail(page: Page, query: string): Promise<void> {
@@ -43,6 +44,25 @@ async function searchRail(page: Page, query: string): Promise<void> {
   await page.getByTestId("rail-search").fill(query);
   await page.getByTestId("rail-result").first().click();
 }
+
+test("首页大洲导航可直达非洲，地区菜单按当前大洲分栏显示", async ({ page }) => {
+  await page.goto("/");
+
+  const africa = page.getByTestId("intro-continent-africa");
+  await expect(africa).toBeVisible();
+  await africa.click();
+  await expect(africa).toHaveAttribute("aria-current", "true");
+  await page.getByTestId("intro-enter").click();
+
+  await page.getByTestId("region-toggle").click();
+  await expect(page.getByTestId("region-all-africa")).toBeVisible();
+  await expect(page.getByTestId("subregion-southern-africa")).toBeVisible();
+
+  await page.getByTestId("region-europe").hover();
+  await expect(page.getByTestId("region-all-europe")).toBeVisible();
+  await expect(page.getByTestId("subregion-northern-europe")).toBeVisible();
+  await expect(page.getByTestId("subregion-southern-africa")).toHaveCount(0);
+});
 
 test("学习模式：打开爱沙尼亚地形只下载该国的讲解，中英切换正常", async ({ page }) => {
   const errors = collectErrors(page);

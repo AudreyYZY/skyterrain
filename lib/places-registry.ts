@@ -379,6 +379,11 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "lk-south": { zh: "南部海岸", en: "South coast", order: 533 },
   "bn-west": { zh: "西部（文莱—摩拉、都东、马来奕）", en: "Western Brunei", order: 540 },
   "bn-east": { zh: "淡布隆", en: "Temburong", order: 541 },
+  // 纳米比亚（中部高原→海岸→南部→东北水系）
+  "na-central": { zh: "中部高原", en: "Central Highlands", order: 550 },
+  "na-coast": { zh: "中部海岸", en: "Central Coast", order: 551 },
+  "na-south": { zh: "南部海岸与高原", en: "Southern Coast & Plateau", order: 552 },
+  "na-northeast": { zh: "东北河谷与湿地", en: "North-east Rivers & Wetlands", order: 553 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -484,6 +489,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "kyrgyzstan", nameZh: "吉尔吉斯斯坦", nameEn: "Kyrgyzstan" },
   { country: "sri-lanka", nameZh: "斯里兰卡", nameEn: "Sri Lanka" },
   { country: "brunei", nameZh: "文莱", nameEn: "Brunei" },
+  { country: "namibia", nameZh: "纳米比亚", nameEn: "Namibia" },
 ];
 
 /** 城市按国家存放在 lib/content/<country>/cities.ts，这里是合并结果（顺序与 CONTENT_COUNTRIES 一致）。 */
@@ -544,6 +550,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   brunei: "asia",
   lithuania: "europe",
   chile: "south-america",
+  namibia: "africa",
 };
 
 export function continentOfCountry(country: string): string | undefined {

@@ -1,0 +1,50 @@
+{
+  "id": "ers-ndu",
+  "name": "温得和克 — 伦杜",
+  "nameEn": "Windhoek — Rundu",
+  "description": "中部高原 · 北部沙地林地 · 卡万戈河",
+  "descriptionEn": "Central Highlands · northern sandveld woodland · Kavango River",
+  "depCountry": "namibia",
+  "arrCountry": "namibia",
+  "source": {
+    "ref": "https://flynam.com/destinations/",
+    "checkedOn": "2026-09-21",
+    "status": "flight-unknown",
+    "note": "FlyNamibia 官方当前航点页把 Rundu 列为从 Windhoek 出发的国内航点；但公开静态页拿不到当日航班号、机型与准确时长，因此不填 flight，不对外显示未经核实的班次信息。"
+  },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "ers",
+      "name": "温得和克埃罗斯机场",
+      "nameEn": "Windhoek Eros Airport",
+      "lat": -22.60492,
+      "lon": 17.079002,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "中部高原",
+      "nameEn": "Central Highlands",
+      "lat": -21.25,
+      "lon": 17.85
+    },
+    {
+      "kind": "feature",
+      "name": "北部沙地林地",
+      "nameEn": "Northern sandveld woodland",
+      "lat": -19.6,
+      "lon": 18.75
+    },
+    {
+      "kind": "city",
+      "id": "ndu",
+      "name": "伦杜机场",
+      "nameEn": "Rundu Airport",
+      "lat": -17.956499,
+      "lon": 19.7194,
+      "airport": true
+    }
+  ]
+}

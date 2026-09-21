@@ -351,6 +351,9 @@ import sclZco from "./scl-zco.json" with { type: "json" };
 import sclPmc from "./scl-pmc.json" with { type: "json" };
 import sclPuq from "./scl-puq.json" with { type: "json" };
 import sclIpc from "./scl-ipc.json" with { type: "json" };
+// 纳米比亚国内（当前航点已由航司确认；航班号/机型未知，按 flight-unknown 不展示）
+import ersNdu from "./ers-ndu.json" with { type: "json" };
+import ersMpa from "./ers-mpa.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -648,4 +651,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   sclPmc,
   sclPuq,
   sclIpc,
+  ersNdu,
+  ersMpa,
 ] as unknown as FlightRoute[];

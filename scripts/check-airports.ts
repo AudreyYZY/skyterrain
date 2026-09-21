@@ -106,9 +106,16 @@ console.log(
   `机场 × OurAirports 离线比对：城市注册表里有机场字段的 ${scanned} 个条目，` +
   `坐标对得上（≤${LIMIT_KM} km）${ok} 个，偏差超限 ${far.length} 个，IATA 查不到 ${unknown.length} 个`,
 );
-if (!scanned || !byIata.size) {
+if (!byIata.size) {
   console.error("\n✗ 扫到 0 个 —— 这不是「没问题」，是脚本或数据集坏了");
   process.exit(1);
+}
+if (!scanned) {
+  if (scope.active) console.log("（收窄范围内没有带机场字段的城市条目，跳过机场坐标比对）");
+  else {
+    console.error("\n✗ 扫到 0 个 —— 这不是「没问题」，是脚本或数据集坏了");
+    process.exit(1);
+  }
 }
 for (const l of far) console.log("\n" + l);
 if (unknown.length) console.log("\n--- IATA 在 OurAirports 里查不到 ---\n" + unknown.join("\n"));
