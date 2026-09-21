@@ -1408,6 +1408,7 @@ export const VERIFICATION_STATUS: Record<string, VerificationRow> = {
   "terrain/kruger-lowveld": { f: 6, v: 0, d: "2026-09-22" },
   "terrain/blouberg-limpopo": { f: 6, v: 0 },
   "terrain/cape-agulhas": { f: 6, v: 0 },
+  "terrain/meiringspoort": { f: 6, v: 0 },
   "travel/china-overview": { f: 6, v: 1, d: "2026-02-28", l: 1 },
   "travel/beijing": { f: 7, v: 2, d: "2026-03-25", l: 1 },
   "travel/shanghai": { f: 7, v: 2, d: "2026-04-22", l: 1 },

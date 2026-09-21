@@ -360,4 +360,19 @@ export const TERRAIN_EN: Record<string, TerrainLesson> = {
     history:
       "\"Africa's true southernmost point\" is an internationally recognised, uncontested geographic fact and can be stated plainly. The Cape Agulhas Lighthouse has served as an important landmark for shipping passing between the two oceans since its completion in 1849 — these waters remain among the most important fishing grounds in the Southern Hemisphere to this day.",
   },
+
+  meiringspoort: {
+    seeing:
+      "Meiringspoort lies inland in the Western Cape, where the N12 national road follows this gorge through the Swartberg range, between Beaufort West and Oudtshoorn, about five hours' drive from Cape Town. The gorge stretches about 25 km, and along that distance the road crosses the same river 25 times. It is just one crossing point through the roughly 230-km-long Swartberg range — whose highest point, Seweweekspoortpiek, stands at 2,325 m — but this entry is anchored at the gorge itself rather than that summit, since this is where the range's folded structure is most directly visible.",
+    formation:
+      "The Swartberg belongs to the Cape Fold Belt, its massif built mainly of quartzitic sandstone dating from the Carboniferous to the Permian. Around 330 million years ago, as Gondwana collided with other landmasses in the assembly of the supercontinent Pangaea, a subduction zone formed to the south, subjecting the Cape Supergroup's sedimentary layers to intense compression and uplift — the originally horizontal rock beds were folded into the range seen today during this mountain-building episode.",
+    observation:
+      "From the air, the northern end of the gorge shows quartzite cliffs of the upper Table Mountain Group standing roughly 700 m high, often folded through 90 degrees or more — beds that should lie flat now stand nearly vertical. Along the route at least three distinct rock units can be made out: the Tchando Formation at the top, a narrow band of Cederberg Formation shale below it, and beneath that a roughly 75-m-thick, intensely folded cliff of Peninsula Formation sandstone, its layered texture clearly visible on the rock face.",
+    distinguish:
+      "Meiringspoort and the already-catalogued Blyde River Canyon both fall under the `gorge` category, but their rock and climate are entirely different: the Blyde River Canyon cuts through Transvaal Supergroup quartzite and dolomite in north-eastern Mpumalanga, where a wet climate supports dense vegetation, earning it the nickname \"green canyon\"; Meiringspoort instead cuts through Cape Fold Belt Table Mountain Group sandstone at the semi-arid inland edge of the Western Cape, where the real draw isn't vegetation but the folded structure itself, visible to the naked eye — anticlines and synclines, beds twisted through 90 degrees — that is the gorge's core landform feature.",
+    concept:
+      "Meiringspoort shares the same Table Mountain Group/Cape Supergroup sequence already catalogued at the Cederberg, the Cape Peninsula Coast, Tsitsikamma and Cape Agulhas, but presents it differently — here the sequence appears after intense Cape Fold Belt deformation, then cut into cross-section by a river, making this the most directly visible display of structural deformation among this collection's Table Mountain Group entries: standing in the gorge, you can see directly that a once-horizontal layer of rock has been twisted into a near-vertical position, without needing an explanation to picture it.",
+    history:
+      "The geological history is above. The Swartberg is often described by geologists as \"one of the finest exposed fold mountain chains in the world\" — a claim that carries the qualifier \"one of\", not an unsupported standalone assertion. A waterfall along the route offers another worthwhile stop on this crossing.",
+  },
 };

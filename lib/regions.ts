@@ -63,7 +63,7 @@ export const REGIONS: Region[] = [
     name: "非洲",
     nameEn: "Africa",
     center: { lon: 19.0, lat: 3.0, height: 13000000 },
-    terrainCount: 49,
+    terrainCount: 50,
     available: true,
   },
   {
