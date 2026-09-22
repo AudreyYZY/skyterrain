@@ -1,0 +1,49 @@
+{
+  "id": "jnb-ptg",
+  "name": "约翰内斯堡 — 波罗奎瓦内",
+  "nameEn": "Johannesburg — Polokwane",
+  "description": "豪登省都会区 · 布什维尔德杂岩体 · 林波波省门户",
+  "descriptionEn": "Gauteng metro belt · Bushveld Igneous Complex · Limpopo gateway",
+  "depCountry": "south-africa",
+  "arrCountry": "south-africa",
+  "flight": {
+    "airline": "Airlink",
+    "airlineEn": "Airlink",
+    "flightNo": "4Z801",
+    "aircraft": "Embraer 135",
+    "depIata": "JNB",
+    "arrIata": "PTG",
+    "durationMin": 50
+  },
+  "source": {
+    "ref": "Airportia + FlightAware + flyteam.jp 航班时刻交叉核对（2026-09-22）",
+    "checkedOn": "2026-09-22",
+    "status": "verified",
+    "note": "Airlink 在这对城市上按方向分单双号：4Z801（06:35→07:30）与 4Z803（09:35→10:30）都是 JNB→PTG，4Z802 实际是反方向 PTG→JNB——条目最初误用了 4Z802，2026-09-22 核实后改正为 4Z801；机型 Embraer 135（37座）两个方向一致，未受影响。时长按航程估算，非直接取自官方时刻表。"
+  },
+  "cruiseHeight": 6800,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "jnb",
+      "name": "约翰内斯堡OR·坦博国际机场",
+      "nameEn": "OR Tambo International Airport, Johannesburg",
+      "lat": -26.1392,
+      "lon": 28.246,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "bushveld-igneous-complex"
+    },
+    {
+      "kind": "city",
+      "id": "ptg",
+      "name": "波罗奎瓦内国际机场",
+      "nameEn": "Polokwane International Airport",
+      "lat": -23.8497,
+      "lon": 29.4587,
+      "airport": true
+    }
+  ]
+}

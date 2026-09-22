@@ -1,0 +1,59 @@
+{
+  "id": "jnb-rcb",
+  "name": "约翰内斯堡 — 理查兹湾",
+  "nameEn": "Johannesburg — Richards Bay",
+  "description": "豪登省都会区 · 姆普马兰加高地边缘 · 夸祖鲁-纳塔尔沿海低地",
+  "descriptionEn": "Gauteng metro belt · Mpumalanga highveld margin · KwaZulu-Natal coastal lowland",
+  "depCountry": "south-africa",
+  "arrCountry": "south-africa",
+  "flight": {
+    "airline": "Airlink",
+    "airlineEn": "Airlink",
+    "flightNo": "4Z883",
+    "aircraft": "Embraer 170",
+    "depIata": "JNB",
+    "arrIata": "RCB",
+    "durationMin": 65
+  },
+  "source": {
+    "ref": "Airportia + 理查兹湾机场官网航班时刻表 + FlightAware 航班时刻交叉核对（2026-09-22）",
+    "checkedOn": "2026-09-22",
+    "status": "verified",
+    "note": "Airlink 在这对城市上按方向分单双号：4Z883（10:35→11:45）与 4Z885（16:00→17:10）都是 JNB→RCB，4Z884 实际是反方向 RCB→JNB（12:25→13:35）——条目最初误用了 4Z884，2026-09-22 核实后改正为 4Z883；机型 Embraer 170/175 两个方向一致，未受影响。时长按航程估算，非直接取自官方时刻表。"
+  },
+  "cruiseHeight": 7200,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "jnb",
+      "name": "约翰内斯堡OR·坦博国际机场",
+      "nameEn": "OR Tambo International Airport, Johannesburg",
+      "lat": -26.1392,
+      "lon": 28.246,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "姆普马兰加高地边缘",
+      "nameEn": "Mpumalanga highveld margin",
+      "lat": -27.1,
+      "lon": 30.1
+    },
+    {
+      "kind": "feature",
+      "name": "夸祖鲁-纳塔尔沿海低地",
+      "nameEn": "KwaZulu-Natal coastal lowland",
+      "lat": -28.1,
+      "lon": 31.4
+    },
+    {
+      "kind": "city",
+      "id": "rcb",
+      "name": "理查兹湾机场",
+      "nameEn": "Richards Bay Airport",
+      "lat": -28.7409,
+      "lon": 32.0917,
+      "airport": true
+    }
+  ]
+}

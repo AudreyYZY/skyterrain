@@ -319,6 +319,8 @@ const BENIGN = new Set([
   "pus-cju/travel/zh-CN/大韩航空",
   "pus-cju/travel/en-US/Korean Air",
   "nqz-cit/travel/en-US/FlyArystan", // 提到同集团另一品牌，属补充说明
+  "pvg-dub/travel/zh-CN/Airlink", // 都柏林机场巴士品牌名，与南非同名的支线航司无关
+  "pvg-dub/travel/en-US/Airlink",
 ]);
 const carrierNames = new Set<string>();
 for (const r of ALL_ROUTES) {
