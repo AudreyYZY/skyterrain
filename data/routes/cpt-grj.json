@@ -1,0 +1,59 @@
+{
+  "id": "cpt-grj",
+  "name": "开普敦 — 乔治",
+  "nameEn": "Cape Town — George",
+  "description": "桌山半岛 · 开普褶皱带内陆 · 花园大道海岸",
+  "descriptionEn": "Cape Peninsula · Cape Fold Belt inland · Garden Route coast",
+  "depCountry": "south-africa",
+  "arrCountry": "south-africa",
+  "flight": {
+    "airline": "Airlink",
+    "airlineEn": "Airlink",
+    "flightNo": "4Z621",
+    "aircraft": "支线喷气客机（E-Jet/ERJ系列，机型按班次调配）",
+    "depIata": "CPT",
+    "arrIata": "GRJ",
+    "durationMin": 55
+  },
+  "source": {
+    "ref": "Planefinder + Airportia 航班页（方向确认）+ planemapper.com 返程 4Z622 直读时刻（GRJ 08:25 起飞、CPT 09:20 抵达）+ flightmapper.net 4Z627 直读（2026-09-23）",
+    "checkedOn": "2026-09-23",
+    "status": "verified",
+    "note": "4Z621（CPT→GRJ，周一至周五）与返程 4Z622（GRJ→CPT）两个方向均有明确航班页确认，另有 4Z627（周日）、4Z636/4Z638（GRJ→CPT）等同模式航班。机型两个信源冲突——flightmapper 对 4Z627 给出 Embraer ERJ 135，另一渠道对 4Z621 给出机身大得多的 E195-E2——本线是较繁忙的花园大道航线，Airlink 不同班次很可能调配不同大小的支线喷气机，未能对 4Z621/4Z622 本身取得单一确认机型，如实写成不锁定具体子型号的泛化表述，不猜。时长取自 4Z622 返程直读时刻，去程未取得完整起降时刻对，按同量级估算。"
+  },
+  "cruiseHeight": 6800,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "cpt",
+      "name": "开普敦国际机场",
+      "nameEn": "Cape Town International Airport",
+      "lat": -33.9648,
+      "lon": 18.6017,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "开普褶皱带内陆",
+      "nameEn": "Cape Fold Belt inland",
+      "lat": -33.979,
+      "lon": 19.924
+    },
+    {
+      "kind": "feature",
+      "name": "花园大道海岸",
+      "nameEn": "Garden Route coast",
+      "lat": -33.993,
+      "lon": 21.246
+    },
+    {
+      "kind": "city",
+      "id": "grj",
+      "name": "乔治机场",
+      "nameEn": "George Airport",
+      "lat": -34.0056,
+      "lon": 22.3789,
+      "airport": true
+    }
+  ]
+}

@@ -358,6 +358,10 @@ import ersMpa from "./ers-mpa.json" with { type: "json" };
 import jnbBfn from "./jnb-bfn.json" with { type: "json" };
 import jnbPtg from "./jnb-ptg.json" with { type: "json" };
 import jnbRcb from "./jnb-rcb.json" with { type: "json" };
+// 南非国内批2（Airlink，航班号方向双源确认；cpt-grj 机型两源冲突改用泛化表述）
+import jnbKim from "./jnb-kim.json" with { type: "json" };
+import jnbUtn from "./jnb-utn.json" with { type: "json" };
+import cptGrj from "./cpt-grj.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -660,4 +664,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   jnbBfn,
   jnbPtg,
   jnbRcb,
+  jnbKim,
+  jnbUtn,
+  cptGrj,
 ] as unknown as FlightRoute[];

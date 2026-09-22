@@ -1,0 +1,52 @@
+{
+  "id": "jnb-utn",
+  "name": "约翰内斯堡 — 乌平通",
+  "nameEn": "Johannesburg — Upington",
+  "description": "豪登省都会区 · 高地草原过渡 · 奥兰治河谷",
+  "descriptionEn": "Gauteng metro belt · Highveld transition · Orange River valley",
+  "depCountry": "south-africa",
+  "arrCountry": "south-africa",
+  "flight": {
+    "airline": "Airlink",
+    "airlineEn": "Airlink",
+    "flightNo": "4Z763",
+    "aircraft": "Embraer 135",
+    "depIata": "JNB",
+    "arrIata": "UTN",
+    "durationMin": 95
+  },
+  "source": {
+    "ref": "flightmapper.net 航班页直读（JNB 10:15 起飞、UTN 11:50 抵达，机型 Embraer ERJ 135）+ AirNav Radar 尾号追溯（ZS-SYT/ZS-SWN/ZS-SNX/ZS-OTN，均登记为 Airlink ERJ 135LR）交叉核对（2026-09-23）",
+    "checkedOn": "2026-09-23",
+    "status": "verified",
+    "note": "4Z763（JNB→UTN）与返程 4Z764/4Z762（UTN→JNB）两个方向各有明确的出发到达机场与时刻，不是仅凭单双号规律推断；机型为 ERJ 135（比同批 jnb-kim 用的 ERJ 140 更小，两者不要混淆）。班期近年逐步加密至每日，此处不写死频次；时长取自 flightmapper 直读的具体时刻。"
+  },
+  "cruiseHeight": 7400,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "jnb",
+      "name": "约翰内斯堡OR·坦博国际机场",
+      "nameEn": "OR Tambo International Airport, Johannesburg",
+      "lat": -26.1392,
+      "lon": 28.246,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "奥兰治河谷",
+      "nameEn": "Orange River valley",
+      "lat": -28.42,
+      "lon": 21.6
+    },
+    {
+      "kind": "city",
+      "id": "utn",
+      "name": "乌平通国际机场",
+      "nameEn": "Upington International Airport",
+      "lat": -28.3999,
+      "lon": 21.2603,
+      "airport": true
+    }
+  ]
+}
