@@ -108,4 +108,17 @@ export const CITIES: CityEntry[] = [
     lon: 23.0471, lat: -34.0363,
     source: "市中心 -34.0363,23.0471（Wikidata Q928836）；克尼斯纳地方自治市 2022 年普查全域人口 96,055，隶属花园大道区自治市（Stats SA Census 2022 Municipal Fact Sheet，1 级，2026-09-22 核实）；本地无定期客运机场，依赖约 60 公里外的乔治机场，不填 airport 字段；2017-06-07 野火事件按中性事实性语言处理，不渲染灾害细节",
   },
+  {
+    id: "mbombela", nameZh: "姆邦贝拉", nameEn: "Mbombela", country: "south-africa", tier: "capital", zone: "za-mpumalanga",
+    admin1Zh: "姆普马兰加省", admin1En: "Mpumalanga",
+    lon: 30.9853, lat: -25.4658,
+    airport: { iata: "MQP", nameZh: "克鲁格姆普马兰加国际机场", nameEn: "Kruger Mpumalanga International Airport", lon: 31.1056, lat: -25.3833 },
+    source: "中文译名「姆邦贝拉」依中文维基百科词条标题（原名内尔斯普雷特，1 级）；市中心坐标 25°27′57″S,30°59′07″E 据 Wikipedia infobox；姆邦贝拉是姆普马兰加省首府，所属姆邦贝拉市 2022 年普查全域人口 809,674（Stats SA Census 2022 Municipal Fact Sheet 原始 PDF 表格，1 级——该 PDF 开篇勘误声明明确指出姆邦贝拉与塔巴楚韦两市首次发布的人口数已被修正，809,674 是修正后数字，818,925 为已作废的初版数字，citypopulation.de 等二级站点尚未同步更新，2026-09-23 核实时发现并订正，正文口径写「市辖区全域」），同时是埃兰扎尼区自治市驻地；2016-08-03 乌姆津迪地方自治市并入姆邦贝拉市，原驻地巴伯顿（19 世纪 80 年代金矿小镇）自此成为本市辖区内一座城镇（Wikipedia「Mbombela Local Municipality」/「Umjindi Local Municipality」，2/3 级）；MQP 机场坐标据 Wikipedia/机场官网，距市中心约 27 公里（行政上仍属姆邦贝拉市辖区，靠近白河镇），有往返约翰内斯堡的多班定期航班及开普敦等航线；本地无轨道交通，出行以自驾与出租车为主；⚠️ 已收录的「神之窗」（God's Window，属 blyde-river-canyon 地形条目所在的潘诺拉马观景公路一带）距本市车程约 90-106 公里（2026-09-23 核实修正，原估 75-90 公里偏低），不作本市地标，仅作一日往返提及",
+  },
+  {
+    id: "rustenburg", nameZh: "鲁斯滕堡", nameEn: "Rustenburg", country: "south-africa", tier: "major", zone: "za-north-west",
+    admin1Zh: "西北省", admin1En: "North West",
+    lon: 27.2428, lat: -25.6667,
+    source: "市中心 25°40′00″S,27°14′34″E 据 Wikipedia「Rustenburg」infobox 坐标；鲁斯滕堡地方自治市 2022 年普查全域人口 562,315（Stats SA Census 2022 Municipal Fact Sheet 原始 PDF 表格核对无误，1 级，2026-09-23 核实），同时是博亚纳拉铂金区自治市驻地；市议会 2021 年 11 月选举后无单一政党过半、由多党联合治理（Wikipedia，2/3 级；下一届地方选举 2026-11-04，本条须在届时复核）；本市位于已收录的布什维尔德杂岩体地形条目西瓣——该条目正文已写明西瓣「鲁斯滕堡一带最著名」，本条目不新增地质断言；本地鲁斯滕堡机场（FARG）无定期客运航班，最近有定期航班的机场是公路里程约 107 公里外的兰赛里亚机场，约翰内斯堡 OR·坦博国际机场更远、约 173 公里（2026-09-23 核实修正，原写「OR·坦博约 112 公里」既低估了距离也选错了最近机场），不填 airport 字段；太阳城/皮兰斯堡自然保护区距本市约 32-44 公里（视路线而定），非本市行政辖区、本库未收录该地形，仅作地理邻近提及",
+  },
 ];

@@ -272,4 +272,38 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Temperate oceanic climate with rainfall spread fairly evenly through the year. A wildfire in June 2017 caused serious damage; the community has since rebuilt through grassroots efforts, and tourism and facilities like the Featherbed Nature Reserve have largely recovered, now operating to stricter fire-safety standards.",
   },
+
+  mbombela: {
+    identity:
+      "Mbombela (formerly Nelspruit) is the capital of Mpumalanga province. The City of Mbombela Local Municipality had a Census 2022 population of about 810,000 (Stats SA) across a wide municipal area that includes Barberton and other outlying towns beyond the city itself.",
+    howItWorks:
+      "Mbombela is the shared seat of two tiers of government — Mbombela Local Municipality and Ehlanzeni District Municipality — a structure this country's provincial-capital and district-seat cities repeat elsewhere (Bloemfontein with Mangaung, Kimberley with Sol Plaatje). On 3 August 2016, the former Umjindi Local Municipality was dissolved and merged into Mbombela; its seat, Barberton, an 1880s gold-rush town, became a town within the larger Mbombela municipal area rather than a separate local government.",
+    layout:
+      "The city sits in the valley of the Crocodile River, ringed by low hills; Barberton and other absorbed towns lie in the municipality's south-western reaches, some distance from the city centre.",
+    gettingAround:
+      "Kruger Mpumalanga International Airport is about 27 km from the city centre by road (about 16 km in a straight line), still within Mbombela's municipal boundary, with multiple daily flights to Johannesburg and service to Cape Town and other cities — it's the usual air gateway to Kruger National Park. Getting around locally is by car or taxi; there's no rail transit.",
+    culture:
+      "English, Afrikaans and siSwati (the majority home language in this area) are all common here.",
+    seeAndDo:
+      "The city is a key supply and transit point for Kruger National Park; Numbi Gate, the closest entrance to the city, is about a 40 km drive away. Sudwala Caves, a dolomite cave system, is about a 35 km drive from the city and can be visited. Panorama Route sights such as God's Window, already covered by this app's Blyde River Canyon terrain entry, are about a 90–106 km drive away and need a day trip — they are not within the city itself.",
+    whenAndTips:
+      "Humid subtropical climate: hot, rainy summers (November–March) and mild, dry winters (June–August).",
+  },
+
+  rustenburg: {
+    identity:
+      "Rustenburg is North West province's largest city. Rustenburg Local Municipality had a Census 2022 population of about 562,000 (Stats SA), and the city is one of the country's major platinum-group-metal mining centres, sitting on the western limb of this app's already-published Bushveld Igneous Complex terrain entry.",
+    howItWorks:
+      "Rustenburg is the shared seat of Rustenburg Local Municipality and Bojanala Platinum District Municipality. Since the November 2021 local election, no single party has held a majority on the city council, and it has been governed by multi-party arrangement ever since — the next local election is set for 4 November 2026.",
+    layout:
+      "The city sits in an open valley on the northern foot of the Magaliesberg range, surrounded by several platinum-group-metal mining areas.",
+    gettingAround:
+      "The local Rustenburg Airfield has no scheduled flights; the nearest airport with scheduled service is Lanseria, about 107 km away by road — OR Tambo International in Johannesburg is farther, about 173 km. Local public transport is mainly minibus taxis, with ride-hailing also available.",
+    culture:
+      "Setswana and Afrikaans are both common here. The city's economy is built around platinum-group-metal mining.",
+    seeAndDo:
+      "The city is a common stopover for the Sun City resort and Pilanesberg Nature Reserve, both roughly a 32–44 km drive away depending on route; the nearby Magaliesberg hills are also a spot for hiking and views.",
+    whenAndTips:
+      "Semi-arid bushveld climate: hot, rainy summers (November–March) and mild, dry winters (June–August) with a wide day–night temperature swing.",
+  },
 };

@@ -63,4 +63,10 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "克尼斯纳头", nameEn: "Knysna Heads", lon: 23.0700, lat: -34.0800, kind: "landmark" },
     { nameZh: "费瑟贝德自然保护区", nameEn: "Featherbed Nature Reserve", lon: 23.0500, lat: -34.0850, kind: "nature" },
   ],
+  mbombela: [
+    { nameZh: "苏德瓦拉洞", nameEn: "Sudwala Caves", lon: 30.6998, lat: -25.3698, kind: "nature" },
+  ],
+  rustenburg: [
+    { nameZh: "太阳城/皮兰斯堡自然保护区", nameEn: "Sun City / Pilanesberg Nature Reserve", lon: 27.0878, lat: -25.3375, kind: "nature" },
+  ],
 };
