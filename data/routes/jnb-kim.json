@@ -1,0 +1,49 @@
+{
+  "id": "jnb-kim",
+  "name": "约翰内斯堡 — 金伯利",
+  "nameEn": "Johannesburg — Kimberley",
+  "description": "豪登省都会区 · 弗里德堡陨石坑 · 北开普省门户",
+  "descriptionEn": "Gauteng metro belt · Vredefort Dome · Northern Cape gateway",
+  "depCountry": "south-africa",
+  "arrCountry": "south-africa",
+  "flight": {
+    "airline": "Airlink",
+    "airlineEn": "Airlink",
+    "flightNo": "4Z723",
+    "aircraft": "Embraer 140",
+    "depIata": "JNB",
+    "arrIata": "KIM",
+    "durationMin": 70
+  },
+  "source": {
+    "ref": "Airportia + AirNav Radar 尾号追溯（ZS-ALJ/ZS-ALG，均登记为 Airlink Embraer ERJ 140LR）+ Trip.com 机型摘要交叉核对（2026-09-23）",
+    "checkedOn": "2026-09-23",
+    "status": "verified",
+    "note": "4Z723（JNB→KIM）与返程 4Z724（KIM→JNB）两个方向各有明确的出发到达机场与大致时刻，不是仅凭单双号规律推断；机型经两个独立信源（聚合网站文字 + 该航班号实际追踪到的具体尾号注册信息）交叉确认为 ERJ 140LR。时长按已知起降时刻估算，非直接取自当前官方时刻表。"
+  },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "jnb",
+      "name": "约翰内斯堡OR·坦博国际机场",
+      "nameEn": "OR Tambo International Airport, Johannesburg",
+      "lat": -26.1392,
+      "lon": 28.246,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vredefort-dome"
+    },
+    {
+      "kind": "city",
+      "id": "kim",
+      "name": "金伯利机场",
+      "nameEn": "Kimberley Airport",
+      "lat": -28.8026,
+      "lon": 24.7645,
+      "airport": true
+    }
+  ]
+}
