@@ -899,9 +899,23 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   所以「点开刚加的城市全是机械音、点开老城市是自然人声」不是音色配置问题，是**预热没跟上**。
   加完城市 / 地形 / 航线，跟「当批核实」一样跑一遍 `npm run warm:tts`（见 issue #307）。全站 23,802 段播报、约 4.9 GB、167 小时音频。
   **`.tts-cache/` 是本机 gitignore 目录，不进仓库**；换机器/换服务器重跑预热即可。
-  **线上部署（Vercel）读不到本机缓存**：2026-09-14 起 `lib/tts-cache.ts` 支持远端只读缓存 ——
-  把 `.tts-cache/` 上传到能按 URL 公开读的存储，设 `TTS_REMOTE_CACHE_URL`，本机未命中时去那里取（3 秒超时，取不到才现场合成）。
-  全量缓存约 10 GB（实测平均每段约 0.4 MB），存储选型（R2 / S3 / Blob）要用户决定并提供账号。
+  **线上远端缓存已接通（2026-09-24）**：`lib/tts-cache.ts` 2026-09-14 就支持了远端只读缓存
+  （`TTS_REMOTE_CACHE_URL` 未命中本机时去远端取，3 秒超时取不到才现场合成），但**存储账号一直
+  没配置，2026-09-14 到 2026-09-24 这十天线上其实一直在裸跑现场合成**——`npm run warm:tts`
+  只预热本机磁盘、从不触达线上，`check:batch`/`check:tts` 也只检查本机缓存命中率，**没有任何
+  门禁在检查"线上到底读不读得到这份缓存"**，这个缺口是用户凭实际播放体验发现的，不是被测出来的。
+  现状：已开 Vercel Blob 公开桶 `skyterrain-tts-cache`（store id `store_YatKuQaR5ASjTBji`），
+  Production 环境变量 `TTS_REMOTE_CACHE_URL=https://yatkuqar5asjtbji.public.blob.vercel-storage.com/tts`
+  已设置；新写的 `npm run upload:tts-cache`（`scripts/upload-tts-cache.ts`）把 `.tts-cache/` 同步
+  上去，路径用 `tts/<cacheKey>.json`（`addRandomSuffix:false`，与 `readRemoteCache` 的拼接方式
+  对应），可中断可续跑（启动时先分页列出远端已有对象，本地已存在的跳过）。
+  ⚠️ **实测瓶颈是带宽不是并发**——同一份小文件，`Promise.all` 直接打 40 个并发能跑到 34 req/s，
+  但换成读真实缓存文件（均值约 204 KB）上传，并发数从 8 提到 64 全程卡在约 1.5-2.2 文件/秒，
+  用 `undici.Agent({connections})` 调大连接池也没用（已验证 `maxInflight` 确实等于设的并发数，
+  不是并发没生效）；6.9 GB 全量同步在当前环境里实测要跑数小时，**别再靠调大并发数试图提速**。
+  **⚠️ 这是持续性动作，不是一次性修复**：往后每批新增城市/地形/航线，`npm run warm:tts` 预热
+  完之后必须再跑一遍 `npm run upload:tts-cache`，否则这一批在本机测着是自然人声、线上用户
+  听到的还是机械音——和"预热没跟上"是完全一样的坑，只是这次是"预热了但没传到线上"。
 - 播报文本清单由 `lib/tts-manifest.ts` 生成，一律调用客户端同一套函数
   （`resolveLesson`+`lessonSections` / `resolveTravelGuide`+`travelGuideToSections` /
   `getRouteNarration`），保证与线上请求逐字节一致 —— 不一致则预热白做。

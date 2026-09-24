@@ -112,6 +112,7 @@ npm run gate -- --stage=1
 ```bash
 npm run warm:tts -- --ids=<这批新增的 id，逗号分隔>
 npm run gate -- --stage=2     # 等价于 npm run check:batch
+npm run upload:tts-cache      # 把刚预热的音频同步到线上（2026-09-24 起必须做，见下）
 ```
 
 `check:batch` 自己从 git diff 算出这一批动过哪些条目（`--base=` 可指定基准，
@@ -125,6 +126,13 @@ npm run gate -- --stage=2     # 等价于 npm run check:batch
 
 > **它第一次跑就抓到了一处真的**：批 18 的 `toktogul` 有 2 段在预热之后被改过、没有重新预热 ——
 > 用户点开那一条听到的就会是机械音。这正是这一关要拦的东西。
+
+⚠️ **`check:batch` ① 只检查本机 `.tts-cache/`，检查不到"线上是否也有这份缓存"**——
+`TTS_REMOTE_CACHE_URL` 2026-09-14 就写进了代码，但存储账号一直没配、线上裸跑现场合成
+整整十天，是用户凭实际播放体验发现的，不是任何门禁测出来的（详见 CLAUDE.md「语音播报」
+一节）。2026-09-24 起已接通 Vercel Blob，**`npm run upload:tts-cache` 是这一步新增的必做
+命令**，把 `.tts-cache/` 同步到线上能读到的地方；只跑 `warm:tts` 不跑这一步，线上照样是
+机械音——这本身没有门禁能拦，靠这份文档记住。
 
 ## G5 内容核实
 
