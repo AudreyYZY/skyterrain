@@ -899,9 +899,21 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   所以「点开刚加的城市全是机械音、点开老城市是自然人声」不是音色配置问题，是**预热没跟上**。
   加完城市 / 地形 / 航线，跟「当批核实」一样跑一遍 `npm run warm:tts`（见 issue #307）。全站 23,802 段播报、约 4.9 GB、167 小时音频。
   **`.tts-cache/` 是本机 gitignore 目录，不进仓库**；换机器/换服务器重跑预热即可。
-  **线上部署（Vercel）读不到本机缓存**：2026-09-14 起 `lib/tts-cache.ts` 支持远端只读缓存 ——
-  把 `.tts-cache/` 上传到能按 URL 公开读的存储，设 `TTS_REMOTE_CACHE_URL`，本机未命中时去那里取（3 秒超时，取不到才现场合成）。
-  全量缓存约 10 GB（实测平均每段约 0.4 MB），存储选型（R2 / S3 / Blob）要用户决定并提供账号。
+  **线上远端缓存至今没有接通（2026-09-25 现状）**：`lib/tts-cache.ts` 2026-09-14 就支持了远端只读缓存
+  （`TTS_REMOTE_CACHE_URL` 未命中本机时去远端取，3 秒超时取不到才现场合成），但**存储一直没有真正
+  配置好，线上其实一直在裸跑现场合成**——`npm run warm:tts` 只预热本机磁盘、从不触达线上，
+  `check:batch`/`check:tts` 也只检查本机缓存命中率，**没有任何门禁在检查"线上到底读不读得到这份缓存"**，
+  这个缺口是用户凭实际播放体验发现的，不是被测出来的。
+  ⚠️ **2026-09-24 试过 Vercel Blob，走不通**：Hobby 免费档存储上限只有 **1 GB**（传到 989 MB 时
+  整个 store 被硬暂停、`Billing State: Inactive`，之后读也 403，不是静默扣费），而全量缓存约
+  **6.9 GB / 33,780 段**，装不下；用户不愿为此付费升级。已删掉当时设置的 `TTS_REMOTE_CACHE_URL`
+  环境变量、撤掉专用上传脚本；Blob store `skyterrain-tts-cache`（`store_YatKuQaR5ASjTBji`）还在但已暂停、
+  里面约 4,800 段没有用处。**免费且够大的候选只有需要另开账号的**：Cloudflare R2（免费 10 GB 存储、
+  永远不收出流量费）或 Backblaze B2（免费 10 GB）——都是 S3 兼容接口，`readRemoteCache` 本身只是
+  `${URL}/${key}.json` 的公开读取，不用改；缺的是"把 `.tts-cache/` 推上去"的一步，等有了桶再写并实测。
+  **这一步没做之前，新加的每一批在线上都是现场合成——本机预热得再干净也一样。**
+  另有实测教训：上传瓶颈是带宽不是并发（小文件 `Promise.all` 能到 34 req/s，真实缓存文件均值约 204 KB
+  却卡在约 1.5–2.2 文件/秒，调大并发和 undici 连接池都没用），6.9 GB 全量同步要跑数小时。
 - 播报文本清单由 `lib/tts-manifest.ts` 生成，一律调用客户端同一套函数
   （`resolveLesson`+`lessonSections` / `resolveTravelGuide`+`travelGuideToSections` /
   `getRouteNarration`），保证与线上请求逐字节一致 —— 不一致则预热白做。
