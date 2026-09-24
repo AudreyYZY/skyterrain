@@ -18,6 +18,7 @@
     "check": "npm run check:content && npm run check:sentence-split && npm run check:highlight-sync && npm run typecheck && npm run lint && npm run check:regions && npm run check:camera && npm run check:places && npm run check:routes && npm run check:tts && npm run check:flight && npm run check:anchors && npm run check:claims",
     "check:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-tts-cache.ts",
     "warm:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/warm-tts.ts",
+    "upload:tts-cache": "node --experimental-strip-types --env-file=.env.local --import ./scripts/ts-alias-loader.mjs scripts/upload-tts-cache.ts",
     "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts",
     "verify:apply": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/verify-apply.ts",
     "verify:report": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/verify-issues.ts",
@@ -46,6 +47,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
+    "@vercel/blob": "^2.8.0",
     "cesium": "^1.141.0",
     "edge-tts-universal": "^1.4.0",
     "next": "16.2.6",
