@@ -3583,4 +3583,140 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Spring and autumn are the most comfortable; in winter the summit may have ice and rime, making paths slippery. The central mountain scenic area and the Grand Temple are ticketed separately, so buy what you need before setting off; tickets, shuttle buses and cable cars are as announced by the scenic area.",
   },
+  huaian: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Huaian is a prefecture-level city in north-central Jiangsu, at the junction of the Grand Canal and the Huai River, with a resident population of about 4.4934 million at the end of 2025 (Huai'an Statistics Bureau). Historically a hub of grain-transport shipping and commerce, it was ranked with Suzhou, Hangzhou and Yangzhou as one of the 'four canal cities'. Today's prefecture-level Huaian and the old walled town that carried the name 'Huaian' for over a thousand years are, in fact, two different places.",
+    howItWorks:
+      "Before 2000, the district where the Huaian city government now sits, Qingjiangpu, belonged to a city called Huaiyin. In December 2000 the State Council approved renaming Huaiyin to Huaian — and at the same moment, the old walled town that had genuinely carried the name 'Huaian' for over a thousand years (birthplace of Zhou Enlai) was downgraded and renamed Chuzhou District. The name 'Huaian' was taken by the new prefecture-level seat, while the old town itself lost even that name, not regaining it as Huaian District until 2011. So the place labelled 'Huaian' on today's map, and the 'Huaian (District)' that visitors go to for the Zhou Enlai memorial and Hexia Old Town, are two different urban areas within the same city that share a name on paper but swapped it for a decade. Locals asked 'going to Huaian?' often have to clarify whether that means the district or the city centre.",
+    layout:
+      "The city centre, Qingjiangpu District, sits where the Huai River meets the Grand Canal; the old walled town, Huaian District, lies to the south-east and holds the Zhou Enlai memorial and former residence, plus Hexia Old Town; Hongze Lake, one of Jiangsu's largest, lies in the south-west of the municipal area.",
+    gettingAround:
+      "Huai'an Lianshui International Airport (HIA) is about 22 km from the city centre in a straight line and has scheduled flights, serving as a regional hub for northern Jiangsu. The Grand Canal and the Huai River meet in the urban area — historically the city's lifeline by water — but rail and expressways are now the main ways to travel. Buses, taxis and ride-hailing cover the city; it's about a 30-minute drive between Qingjiangpu and Huaian District.",
+    culture:
+      "Mandarin is widely used. Huaiyang cuisine, one of China's four major culinary traditions, originated in this area; soup dumplings from Wenlou and Pingqiao tofu are signature dishes. The old streets along the canal and Hexia Old Town retain a Ming-Qing street layout. Tipping is not customary.",
+    seeAndDo:
+      "The Zhou Enlai memorial hall and former residence; the Ming-Qing lanes of Hexia Old Town; the Hongze Lake dyke; the historic canal-side streets of the Qingjiangpu scenic area; sampling Huaiyang cuisine.",
+    whenAndTips:
+      "April–May and September–October are the most comfortable; summers are hot and humid, winters cold. Hongze Lake's water level varies a lot in the flood season, so the dry season gives better views. Huaian District is about 20 km from the Qingjiangpu centre in a straight line, so allow travel time when planning.",
+  },
+  xuchang: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Xuchang is a prefecture-level city in central Henan. During the Three Kingdoms period, Cao Cao made it his de facto capital while 'holding the emperor to command the nobles'; it had a resident population of about 4.346 million at the end of 2025 (Xuchang Statistics Bureau), with an urbanisation rate of 58.02%. Historic sites in the city, such as Chunqiu Pavilion and Baling Bridge, are tied to the Three Kingdoms-era stories of Guan Yu in Xuchang.",
+    howItWorks:
+      "Xuchang municipality covers two urban districts, Weidu and Jian'an, two counties, Yanling and Xiangcheng, and administers two county-level cities, Yuzhou and Changge. This layout is recent: in November 2016 the State Council approved abolishing Xuchang County and setting up Jian'an District, ending an arrangement in which Xuchang had only one urban district (Weidu) and a county that confusingly shared the city's own name. After the change, the combined area and headcount of Weidu and Jian'an districts together far exceeded what Weidu alone had covered before. In other words, the seemingly unified 'urban Xuchang' on today's map only took its current shape less than a decade ago, when the former Xuchang County was folded into the city proper.",
+    layout:
+      "The city centre is Weidu District, where Chunqiu Pavilion, Baling Bridge and the Prime Minister Cao Cao Mansion — all tied to Three Kingdoms history — are clustered; Jian'an District rings Weidu and is the former Xuchang County territory absorbed into the urban area in 2016; Yanling County is known for its nursery and flower cultivation, and Xiangcheng County lies in the south-west of the municipality.",
+    gettingAround:
+      "Xuchang has no civil airport; the nearest is Zhengzhou Xinzheng International Airport (CGO), about 55 km from the city centre in a straight line, reachable by intercity rail or coach. The city's high-speed rail station is on the Beijing–Guangzhou line, about 30 minutes from Zhengzhou. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used. Xuchang is a major centre for ornamental plant and tree nurseries, with Yanling County's flower-growing tradition especially long; hot and sour soup (hu la tang) is a common local breakfast. Three Kingdoms-era sites are scattered through the city — treat them as historical fact rather than dwelling on the embellished details of the classic novel. Tipping is not customary.",
+    seeAndDo:
+      "Chunqiu Pavilion, a historic complex tied to Guan Yu; Baling Bridge; the Prime Minister Cao Cao Mansion; the Yanling flower and tree gardens; the historic streets along the city moat.",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather, and spring is the best season to see Yanling's flowers. Summers are hot, winters cold and dry. Allow at least an hour to reach the Zhengzhou airport.",
+  },
+  putian: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Putian is a coastal prefecture-level city in Fujian and the birthplace of Mazu worship; the Mazu Ancestral Temple on Meizhou Island is revered as the founding temple of more than a thousand Mazu temples worldwide. It had a resident population of about 3.184 million at the end of 2025 (Putian Statistics Bureau), with an urbanisation rate of 66.96%.",
+    howItWorks:
+      "Putian municipality has four urban districts — Licheng, Chengxiang, Hanjiang and Xiuyu — plus Xianyou County, along with two management bodies answering directly to the city government rather than to any district: the Meizhou Island National Tourism Resort Administrative Committee and the Meizhou Bay North Shore Economic Development Zone Administrative Committee. Meizhou Island, home of the Mazu Ancestral Temple, geographically falls under Meizhou Town in Xiuyu District, but its development and tourism management are actually handled by the city-level Meizhou Island committee, running in parallel to the Xiuyu district government. In other words, Putian's most internationally known landmark sits outside the ordinary district-government chain of command, managed instead by a special body reporting straight to the city.",
+    layout:
+      "The city centre is Chengxiang District, with the historic Guanghua Temple on the eastern slope of Fenghuang Hill in its south-western outskirts; Meizhou Island lies in the sea south-east of the municipality, under the separate management of the Meizhou Island committee; Hanjiang and Licheng districts ring the centre, and Xianyou County occupies the hilly west.",
+    gettingAround:
+      "Putian has no civil airport — a local airport has been planned for years but remains stalled over airspace coordination. The nearest airport is Fuzhou Changle International Airport (FOC), about 86 km away in a straight line and roughly 1.5–2 hours by road; Xiamen Gaoqi International Airport (XMN) is farther, about 133 km in a straight line. Buses and taxis cover the city; reaching Meizhou Island requires a ferry from the pier.",
+    culture:
+      "The local Puxian dialect (a branch of Min) is spoken alongside Mandarin. Mazu worship was inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity in 2009 and is a worldwide folk religion — visit the ancestral temple respectfully and avoid evaluative commentary. Putian braised noodles and Xinghua rice noodles are signature local snacks. Tipping is not customary.",
+    seeAndDo:
+      "The Mazu Ancestral Temple on Meizhou Island (reached by ferry); Guanghua Temple; Meizhou Island's beaches and temple gardens; the traditional lanes of Hanjiang District; watching Puxian opera, a local theatrical form.",
+    whenAndTips:
+      "Crowds peak on the island around Mazu's birthday on the 23rd day of the third lunar month, so book accommodation ahead; April–June and September–November have the most comfortable weather, and typhoons can affect the coast in summer and autumn — check forecasts. Allow time for the ferry queue to Meizhou Island.",
+  },
+  ningde: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Ningde is a coastal prefecture-level city in north-eastern Fujian; Sansha Bay is one of China's few naturally deep-water harbours. It had a resident population of about 3.173 million at the end of 2025 (Ningde Statistics Bureau), with an urbanisation rate of 66.06%.",
+    howItWorks:
+      "Ningde's central urban area is actually made up of two administrative bodies of equal rank — the county-level Jiaocheng District, and the Dongqiao Economic and Technological Development Zone, upgraded to national level by the State Council in 2012. Dongqiao is also county-level in administrative rank, covering about 40.7 km² and home to roughly 160,000, though its territory still sits inside Jiaocheng District. Local government documents and procurement notices routinely refer to them together as the 'two districts, Jiaocheng and Dongqiao,' jointly responsible for the central city's economic and social development functions. In other words, the 'city centre' that residents live in day to day is managed jointly, in separate zones, by an ordinary district government and a national-level development-zone committee — not by a single government.",
+    layout:
+      "Jiaocheng District, the city centre, sits alongside the Dongqiao Economic and Technological Development Zone, which lies within Jiaocheng's territory on the shore of Dong Lake; Sansha Bay, a natural deep-water harbour, lies in a bay to the south-east of the municipality; Zhiti Shan, home to Huayan Temple, is about 50 km north-west of the centre in Huotong town; Fu'an and Fuding are two county-level cities that report directly to the province but are administered by Ningde.",
+    gettingAround:
+      "Ningde has no civil airport; the nearest is Fuzhou Changle International Airport (FOC), about 82 km away in a straight line and roughly 2 hours by road — an intercity rail line to the airport is under construction. Buses and taxis cover the city; a hired car or self-drive is recommended for hill sites such as Zhiti Shan.",
+    culture:
+      "Mandarin is widely used, with the Eastern Min dialect (closely related to Fuzhou speech) spoken in parts of the municipality. Ningde is a major centre for large yellow croaker farming and new-energy battery manufacturing, though visitors encounter these mostly as background industry rather than as sights. Seafood dominates the local diet. Tipping is not customary.",
+    seeAndDo:
+      "Huayan Temple on Zhiti Shan, a noted Chan Buddhist site; the scenery of Sansha Bay; Dong Lake Park in the Dongqiao development zone; the historic lanes of old Jiaocheng.",
+    whenAndTips:
+      "April–June and September–November have the most comfortable weather; watch typhoon warnings along the coast in summer and autumn. Zhiti Shan is a longer drive, so plan a full day for it. There is no direct airport at Ningde yet, so check on progress of the intercity rail line before you travel.",
+  },
+  bengbu: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12；2025 population bulletin is image-only, kept as claims-stale-exempt）。
+    identity:
+      "Bengbu is a prefecture-level city in northern Anhui, on the middle reaches of the Huai River, which built its early fortunes on water transport and was long a hub for river and rail traffic in Anhui. It had a resident population of about 3.262 million at the end of 2024 (Bengbu Statistics Bureau, released 2025), with an urbanisation rate of 60.79%.",
+    howItWorks:
+      "The Ministry of Water Resources maintains four river-basin management agencies nationwide; the one responsible for the Huai River basin, which spans Henan, Anhui, Jiangsu and Shandong, is the Huai River Water Conservancy Commission, a bureau-level body under the ministry. It is not headquartered in any provincial capital — it has long been based in Bengbu instead. Its predecessor, the Huai River Harnessing Commission, was founded in Bengbu on 6 November 1950, the very first river-management body of the People's Republic, and was renamed to its current name in 1990, with the same headquarters ever since. In other words, a national ministry's dispatched agency responsible for water affairs across four provinces along the Huai River — with an administrative rank at least equal to a prefecture-level city — is permanently based in an ordinary prefecture-level city rather than a provincial capital, a rare arrangement among China's four basin commissions.",
+    layout:
+      "The city centre is Longzihu District, where Zhanggong Shan Park is the signature urban green space; the Huai River runs through the city, splitting it into a northern and a southern bank; the Huai River Water Conservancy Commission's headquarters is in the eastern part of the urban area; Bengbu Tenghu Airport is in Huaiyuan County's Baihe town, to the north-west of the municipality.",
+    gettingAround:
+      "Bengbu Tenghu Airport (IATA: BFY) opened in April 2026 as Anhui's eighth civil transport airport, about 37 km from the city centre in a straight line; it has been operating only a short time with a limited flight schedule, so check current flight information before travelling. By rail, the Beijing–Shanghai and Beijing–Fuzhou high-speed lines meet at Bengbu South station, giving easy access to Nanjing, Shanghai and Beijing. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used. Bengbu is one of the important birthplaces of Huagudeng (Flower-Drum Lantern), a folk dance tradition of Anhui, and is home to the Shuangdun culture, a Neolithic archaeological site. River fish from the Huai is a local specialty. Tipping is not customary.",
+    seeAndDo:
+      "Zhanggong Shan Park; the Shuangdun archaeological site, a Neolithic-era find; the riverside scenery around the Bengbu Sluice on the Huai River; the city's water-conservancy heritage tied to the Huai River Commission.",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather; summers are hot and humid along the river, winters cold and dry. Bengbu Tenghu Airport has only just opened with a limited schedule — confirm your flight in advance rather than showing up and hoping.",
+  },
+  hezhou: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Hezhou is a prefecture-level city in eastern Guangxi, bordering both Guangdong and Hunan, where Lingnan culture meets Hakka culture. It had a resident population of about 1.9863 million at the end of 2025 (Hezhou Statistics Bureau), down 2,900 from the year before, with an urbanisation rate of 52.52%.",
+    howItWorks:
+      "Pingui District, part of Hezhou municipality, spent nine years in a status somewhere between a township and a formal district before becoming one: in April 2007 the Guangxi government approved setting up the 'Hezhou Pingui Management Area,' which was legally only a dispatched body of the Hezhou city government, not a formal administrative division approved by the State Council. Although it carried out county/district-level management functions, the townships within its territory remained formally registered under Babu District and Zhongshan County on paper — meaning the land the Pingui Management Area actually administered legally still belonged to other districts and counties. This state of 'managed in practice, undetermined in law' lasted until July 2016, when the State Council finally approved converting the 'Pingui Management Area' into the formal Pingui District, completing its transition from a dispatched body to a statutory administrative division.",
+    layout:
+      "The city centre is Babu District; Pingui District wraps around it to the north-west and only became a formal urban district in 2016; Zhaoping County lies to the south and is home to Huangyao Old Town (part of Hezhou but outside the city centre); Fuchuan Yao Autonomous County, Zhongshan County and Guposhan lie around the rest of the municipality.",
+    gettingAround:
+      "Hezhou has no civil airport; the nearest is Wuzhou Xijiang Airport (WUZ), about 110 km away in a straight line, with Guilin Liangjiang International Airport (KWL) farther still at about 176 km — both require a connecting bus or train. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used, with Hakka and Cantonese spoken in parts of the municipality. Hezhou is one of the more concentrated areas of Hakka settlement in Guangxi, and Hakka walled-house architecture is a local feature; Yao, Zhuang and other ethnic groups live in the hill country around the city. Tipping is not customary.",
+    seeAndDo:
+      "Yushilin, a rare landscape of white marble stone pillars; Guposhan National Forest Park; Huangyao Old Town (in Zhaoping County); traditional villages tied to Hakka culture.",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather; summers are hot, humid and rainy. Reaching Hezhou means flying into Wuzhou or Guilin first and then travelling overland — allow at least 2–3 hours for the connection.",
+  },
+  hechi: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Hechi is a prefecture-level city in north-western Guangxi, crossed by the Longjiang and Hongshui rivers, and home to a mountainous mix of several ethnic minority groups. It had a resident population of about 3.2726 million at the end of 2025 (Hechi Statistics Bureau), down 40,900 from the year before, with an urbanisation rate of 49.11%.",
+    howItWorks:
+      "Hechi municipality has two urban districts, four ordinary counties, and five autonomous counties — the Luocheng Mulao, Huanjiang Maonan, Bama Yao, Du'an Yao and Dahua Yao autonomous counties — meaning nearly half of its eleven county-level divisions are ethnic autonomous counties. In July 2023, the Bronze Drum Culture (Hechi) Ecological Protection Zone, covering all eleven county-level divisions of the municipality, was upgraded from an experimental zone to a full national-level cultural ecological protection zone — an example of a specific cultural-heritage protection mechanism applied across an entire prefecture-level city's territory. Bronze-drum culture itself spans several long-settled ethnic groups here, including Zhuang, Yao, Mulao and Maonan.",
+    layout:
+      "The city centre is Jinchengjiang District; Bama Yao Autonomous County lies to the south and is known for its longevity-culture tourism; Du'an and Dahua, two Yao autonomous counties, lie in the south-east with pronounced karst terrain; Huanjiang and Luocheng, two autonomous counties, lie to the north.",
+    gettingAround:
+      "Hechi Jinchengjiang Airport (HCJ), at an elevation of about 677 metres, is the highest civil airport in Guangxi. It sits in Hechi town, Jinchengjiang District, about 40 km from the city centre in a straight line, opened in August 2014, and has scheduled flights. By rail, the Guizhou–Guangxi line passes through the urban area. Buses and taxis cover the city, though reaching counties such as Bama and Du'an takes a fair drive.",
+    culture:
+      "Mandarin is widely used, alongside Zhuang, Yao, Mulao and Maonan languages within their respective autonomous counties. Bronze-drum culture is a shared heritage of several long-settled ethnic groups here — visit related displays and ceremonies respectfully and avoid evaluative commentary. Tipping is not customary.",
+    seeAndDo:
+      "The karst countryside of Bama Yao Autonomous County; the karst peak clusters of Du'an and Dahua; displays related to bronze-drum culture; the riverside cityscape of Jinchengjiang District along the Longjiang.",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather; summers are hot, humid and rainy, so watch mountain-road conditions. Reaching Bama, Du'an and other counties takes a long drive, so plan a full day.",
+  },
+  haidong: {
+    // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
+    identity:
+      "Haidong is a prefecture-level city in eastern Qinghai, where the Yellow River and the Huangshui River meet, and one of the most densely populated parts of the province. It had a resident population of about 1.3158 million at the end of 2025 (Haidong Statistics Bureau), down 12,800 from the year before, with an urbanisation rate of 47.96%.",
+    howItWorks:
+      "Qinghai's only civil international airport, Xining Caojiabu International Airport (IATA: XNN), is not actually within Xining's boundaries at all — it sits in Gaozhai town, Huzhu Tu Autonomous County, part of Haidong municipality, about 9–12 km in a straight line from Haidong's own centre in Ping'an District, closer than it is to the centre of Xining (about 25.5–30 km in a straight line), the city it's nominally named after. This isn't just a geographic curiosity: Haidong itself was built up step by step over less than 50 years. In 1978, Ping'an County was carved out of Huangzhong County specifically to house the seat of a regional administrative office; in 1979 the 'Haidong Prefecture' was established; in 2013 Haidong Prefecture was converted into a proper prefecture-level city, Qinghai's fourth; and in 2015 the seat, Ping'an County, was itself upgraded to Ping'an District. In short, locals flying out of 'their' airport are actually using their neighbour's road, and the city they live in was assembled, one administrative upgrade at a time, from a prefectural office's seat.",
+    layout:
+      "The city centre is Ping'an District; Ledu District lies to the west, home to the historic Qutan Temple; Minhe Hui and Tu Autonomous County lies to the east, bordering Gansu; Huzhu Tu Autonomous County lies to the north and is where Xining Caojiabu Airport actually sits; the Yellow River and the Huangshui River meet within the municipality.",
+    gettingAround:
+      "Haidong has no separately named civil airport of its own, but Xining Caojiabu International Airport (XNN) actually lies within Haidong's Huzhu Tu Autonomous County, about 9–12 km in a straight line from Ping'an District — closer than it is to central Xining — making it the natural airport of choice. By rail, the Lanzhou–Xinjiang high-speed line passes through Ping'an District. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used, with Monguor (Tu), Salar and Tibetan spoken within their respective autonomous counties. Huzhu Tu Autonomous County is China's only Tu autonomous county, and highland-barley liquor brewing is part of the local cultural backdrop. The diet centres on wheat noodles and beef or mutton. Tipping is not customary.",
+    seeAndDo:
+      "Huzhu Tu Ethnic Cultural Park, a national 5A scenic area themed on Tu culture; Qutan Temple in Ledu District; the Liuwan painted-pottery site in Minhe County; the Hehuang Valley scenery where the Yellow River meets the Huangshui.",
+    whenAndTips:
+      "May–September has the most comfortable weather; the high elevation brings a wide swing between day and night temperatures, so pack warm layers, and winters are cold and dry. Although Xining Airport is nominally Xining's, it actually sits closer to central Haidong — worth factoring into where you choose to stay.",
+  },
 };
