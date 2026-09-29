@@ -1292,7 +1292,7 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "衡山西站", nameEn: "Hengshan West Station", lon: 112.7838, lat: 27.2511, kind: "landmark" },
   ],
   huaian: [
-    { nameZh: "周恩来纪念馆", nameEn: "Zhou Enlai Memorial Hall", lon: 119.1372, lat: 33.5082, kind: "landmark" },
+    { nameZh: "周恩来故居", nameEn: "Zhou Enlai's Former Residence", lon: 119.1372, lat: 33.5082, kind: "landmark" },
   ],
   xuchang: [
     { nameZh: "春秋楼", nameEn: "Chunqiu Pavilion", lon: 113.8275, lat: 34.02722, kind: "landmark" },

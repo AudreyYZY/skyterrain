@@ -3620,7 +3620,7 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
   putian: {
     // 全七段 sources: 同中文侧（2026-09-30 首写，China batch 12）。
     identity:
-      "Putian is a coastal prefecture-level city in Fujian and the birthplace of Mazu worship; the Mazu Ancestral Temple on Meizhou Island is revered as the founding temple of more than a thousand Mazu temples worldwide. It had a resident population of about 3.184 million at the end of 2025 (Putian Statistics Bureau), with an urbanisation rate of 66.96%.",
+      "Putian is a coastal prefecture-level city in Fujian and the birthplace of Mazu worship; the Mazu Ancestral Temple on Meizhou Island is revered as the founding temple of more than 10,000 Mazu temples worldwide. It had a resident population of about 3.184 million at the end of 2025 (Putian Statistics Bureau), with an urbanisation rate of 66.96%.",
     howItWorks:
       "Putian municipality has four urban districts — Licheng, Chengxiang, Hanjiang and Xiuyu — plus Xianyou County, along with two management bodies answering directly to the city government rather than to any district: the Meizhou Island National Tourism Resort Administrative Committee and the Meizhou Bay North Shore Economic Development Zone Administrative Committee. Meizhou Island, home of the Mazu Ancestral Temple, geographically falls under Meizhou Town in Xiuyu District, but its development and tourism management are actually handled by the city-level Meizhou Island committee, running in parallel to the Xiuyu district government. In other words, Putian's most internationally known landmark sits outside the ordinary district-government chain of command, managed instead by a special body reporting straight to the city.",
     layout:
