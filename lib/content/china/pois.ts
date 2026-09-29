@@ -1310,4 +1310,22 @@ export const POIS: Record<string, CityPoi[]> = {
   tonghua: [
     { nameZh: "龙湾群国家森林公园", nameEn: "Longwanqun National Forest Park", lon: 126.4149, lat: 42.3445, kind: "nature" },
   ],
+  pingliang: [
+    { nameZh: "崆峒山", nameEn: "Kongtong Shan", lon: 106.5192, lat: 35.5767, kind: "nature" },
+  ],
+  qingyang: [
+    { nameZh: "北石窟寺", nameEn: "Beishiku Temple", lon: 107.5333, lat: 35.6097, kind: "landmark" },
+  ],
+  ulanqab: [
+    { nameZh: "集宁路古城遗址", nameEn: "Jining Road Ancient City Site", lon: 113.3728, lat: 40.9553, kind: "landmark" },
+  ],
+  jinzhou: [
+    { nameZh: "笔架山", nameEn: "Bijia Shan", lon: 121.07917, lat: 40.8075, kind: "nature" },
+  ],
+  huludao: [
+    { nameZh: "兴城古城", nameEn: "Xingcheng Old Town", lon: 120.7075, lat: 40.62083, kind: "landmark" },
+  ],
+  yingkou: [
+    { nameZh: "西炮台遗址", nameEn: "West Fort Site", lon: 122.1640582, lat: 40.6670054, kind: "landmark" },
+  ],
 };
