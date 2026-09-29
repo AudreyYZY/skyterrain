@@ -1307,4 +1307,7 @@ export const POIS: Record<string, CityPoi[]> = {
   bengbu: [
     { nameZh: "张公山公园", nameEn: "Zhanggong Shan Park", lon: 117.335, lat: 32.9235, kind: "nature" },
   ],
+  tonghua: [
+    { nameZh: "龙湾群国家森林公园", nameEn: "Longwanqun National Forest Park", lon: 126.4149, lat: 42.3445, kind: "nature" },
+  ],
 };
