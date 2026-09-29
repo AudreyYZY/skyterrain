@@ -3719,4 +3719,55 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September has the most comfortable weather; the high elevation brings a wide swing between day and night temperatures, so pack warm layers, and winters are cold and dry. Although Xining Airport is nominally Xining's, it actually sits closer to central Haidong — worth factoring into where you choose to stay.",
   },
+  jinchang: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 13）。
+    identity:
+      "Jinchang is a prefecture-level city in the middle of the Hexi Corridor in Gansu, born from a mine and built to run it. It had a resident population of about 436,800 at the end of 2025 (Jinchang Statistics Bureau) — one of the smallest of any prefecture-level city in Gansu — yet an urbanisation rate of 80.76%, among the highest in the province.",
+    howItWorks:
+      "Jinchang is a textbook case of a Chinese city created to serve an enterprise: in 1958 a geological team found a small piece of malachite on Longshou Shan, which led to the discovery of China's largest — and the world's third-largest — nickel-copper sulphide deposit at Jinchuan. To support the national nickel-and-cobalt industrial base, the State Council formally approved setting up Jinchang city in February 1981, built on top of the mining district; the official summary phrase is 'born of the ore, built for the enterprise.' In other words, this city did not start as a settlement that later got an administrative seat — it happened the other way round: the ore was found first, then came the company (Jinchuan Group), and only then, to manage that company and its mine, did the State Council approve a prefecture-level city — the reason for the city's existence is written directly into the document that created it. This also explains another of Jinchang's features: the smallest population in Gansu, yet the highest urbanisation rate — it has been an industrial city from day one, without the gradual rural-population buildup other cities go through.",
+    layout:
+      "The city centre is Jinchuan District, with Jinchuan Group (the core company of Jinchang's nickel-cobalt industry) and its mining district around the urban area; Yongchang County lies to the south and is home to the Liqian ancient town site (Zhelaizhai), tied to a disputed legend of descendants of a first-century-BC Roman legion that went into exile there — an unresolved academic debate, included here only as a place-name legend.",
+    gettingAround:
+      "Jinchang Jinchuan Airport (JIC) is about 16 km from the city centre in a straight line and has scheduled flights; it opened in August 2011. By rail, the Lanzhou–Xinjiang line passes through the city. Buses and taxis cover the city. The Hexi Corridor climate is arid with a wide swing between day and night temperatures.",
+    culture:
+      "Mandarin is widely used. Jinchang is known as China's 'nickel capital' — Jinchuan Group's nickel and cobalt output is nationally significant, though this is mostly background industry rather than something visitors encounter directly. The diet centres on north-western wheat noodles and beef or mutton. Tipping is not customary.",
+    seeAndDo:
+      "The Liqian ancient town site (Zhelaizhai), tied to the legendary Roman legion; Jinchuan Park; the industrial cityscape around Longshou Shan; the Gobi scenery of the Hexi Corridor.",
+    whenAndTips:
+      "May–September is relatively comfortable, though the wide day-night temperature swing calls for a jacket; winters are cold and dry. The 'Roman legion descendants' legend at Liqian is widely told but unresolved among scholars — worth taking in as a colourful local legend rather than settled history.",
+  },
+  tonghua: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 13）。
+    identity:
+      "Tonghua is a prefecture-level city in south-eastern Jilin, ringed by outlying ranges of the Changbai Mountains, and a major producer of Chinese medicinal herbs and grape wine. It had a resident population of about 1.147 million at the end of 2025 (Tonghua Statistics Bureau, excluding the county-level city of Meihekou, which it administers); the bulletin does not give a separate urbanisation figure for this caliber.",
+    howItWorks:
+      "Tonghua municipality nominally covers two urban districts and three counties, and administers two county-level cities — but one of those, Meihekou, has been a pilot 'province-directly-administered county' since November 2013, granted prefecture-level economic and social management authority directly, with personnel, finance and approvals routed straight to the province rather than through Tonghua; in 2019 it was further designated a 'modernised regional centre city' for priority development. Yet in the formal administrative-division sequence kept by the National Bureau of Statistics and the Jilin provincial government, Meihekou still sits under Tonghua on paper — which is exactly why Tonghua's statistical bulletins have to specify 'excluding Meihekou': the statistics are reported separately while the administrative listing still shows it as one of Tonghua's county-level cities. This split between nominal subordination and actual management authority isn't a piece of history — it's something the city still has to account for every time it publishes a bulletin.",
+    layout:
+      "The city centre is Dongchang District, with the Hun River running through it; Huinan County lies to the north-west, home to the Longwanqun National Forest Park, a cluster of volcanic crater lakes in the Longgang range of the Changbai Mountains; Meihekou, the county-level city Tonghua administers, lies to the west and is in practice run directly by Jilin province for economic and social affairs; Ji'an, the other county-level city under Tonghua, lies to the south and faces North Korea across the Yalu River — it falls outside the scope of this entry.",
+    gettingAround:
+      "Tonghua Sanyuanpu Airport (TNH) is about 40 km from the city centre in a straight line (about 51 km by road) and has scheduled flights; it opened in June 2014. Buses and taxis cover the city; reaching hill sites such as Longwanqun takes a fair drive. The climate is temperate monsoon, with a long, cold winter.",
+    culture:
+      "Mandarin is widely used. Tonghua is a major distribution centre for Chinese medicinal herbs and a mountain-grape-wine producing region with a long winemaking history. North-eastern Chinese cuisine and forest produce are local specialties. Tipping is not customary.",
+    seeAndDo:
+      "Longwanqun National Forest Park, a cluster of volcanic crater lakes in Huinan County; the riverside cityscape of Dongchang District along the Hun River; the local wine industry and tastings.",
+    whenAndTips:
+      "June–September has the most comfortable weather; winters are long and cold, good for winter sports. Hill sites such as Longwanqun take a longer drive, so allow a full day.",
+  },
+  "yichun-heilongjiang": {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 13）。
+    identity:
+      "Yichun is a prefecture-level city in north-eastern Heilongjiang, set in the heart of the Lesser Khingan Range and once one of China's most important timber-producing bases. It had a resident population of about 802,000 at the end of 2025 (Yichun Statistics Bureau), with an urbanisation rate as high as 87.1% and one of the faster rates of population decline in Heilongjiang.",
+    howItWorks:
+      "In July 2019 the State Council approved a restructuring of Yichun's administrative divisions proposed by Heilongjiang province: fifteen urban districts were abolished in one stroke and replaced with eight new county-level divisions (four new counties — Tangwang, Fenglin, Nanchan and Dajinghan — and four districts — Yimei, Wucui, Youhao and Jinlin) — a rare, large-scale 'slimming down' for a Chinese prefecture-level city. Why did Yichun have as many as fifteen urban districts before that? The root cause traces to June 1964, when Yichun was converted into the 'Yichun Special Zone,' piloting a system that fused the forestry administration with local government: forestry work answered to the Ministry of Forestry, local affairs to Heilongjiang province, and the city was carved up so that, roughly speaking, each state-owned forestry bureau's territory became its own urban district. This fused enterprise-and-government system ran for over half a century, until the economy of the forest region kept shrinking after Heilongjiang's key state-owned forests fully banned commercial logging of natural forest in 2014, and the districts were finally consolidated in 2019. Dropping from fifteen districts to four is the most dramatic single administrative reshuffle among the Chinese cities in this collection so far.",
+    layout:
+      "The city centre is Yimei District; Fenglin County lies to the north and is home to Wuying National Forest Park, with its old-growth Korean pine seed forest; Youhao, Wucui and Jinlin districts ring the centre; Nanchan, Dajinghan and Tangwang counties are the new counties set up in 2019.",
+    gettingAround:
+      "Yichun Lindu Airport (LDS) is about 9.4 km from the city centre in a straight line and has scheduled flights from carriers including China Eastern and China Southern; it opened in August 2009. Buses and taxis cover the city. The climate is cold-temperate continental monsoon, with a long, severe winter.",
+    culture:
+      "Mandarin is widely used. Yichun is a major forestry city that fully banned commercial logging of natural forest starting in 2013, and is shifting from timber production toward eco-tourism. The diet centres on north-eastern Chinese cuisine and forest produce (farmed or market-sourced within legal categories). Tipping is not customary.",
+    seeAndDo:
+      "Wuying National Forest Park, with its old-growth Korean pine seed forest; the forest scenery of the Lesser Khingan Range; the forestry-city streetscape of Yimei District; winter snow and forest tourism.",
+    whenAndTips:
+      "June–August is cool and pleasant, making it a summer retreat; winters are long and severe, good for winter sports but pack warm layers. Wuying National Forest Park is some distance from the city centre, so allow a full day.",
+  },
 };
