@@ -1291,4 +1291,20 @@ export const POIS: Record<string, CityPoi[]> = {
     { nameZh: "游客服务中心", nameEn: "Visitor centre", lon: 112.7263, lat: 27.25, kind: "landmark" },
     { nameZh: "衡山西站", nameEn: "Hengshan West Station", lon: 112.7838, lat: 27.2511, kind: "landmark" },
   ],
+  huaian: [
+    { nameZh: "周恩来纪念馆", nameEn: "Zhou Enlai Memorial Hall", lon: 119.1372, lat: 33.5082, kind: "landmark" },
+  ],
+  xuchang: [
+    { nameZh: "春秋楼", nameEn: "Chunqiu Pavilion", lon: 113.8275, lat: 34.02722, kind: "landmark" },
+  ],
+  putian: [
+    { nameZh: "湄洲妈祖祖庙", nameEn: "Mazu Ancestral Temple", lon: 119.14302, lat: 25.09367, kind: "landmark" },
+    { nameZh: "广化寺", nameEn: "Guanghua Temple", lon: 118.9847, lat: 25.4283, kind: "landmark" },
+  ],
+  ningde: [
+    { nameZh: "支提华严寺", nameEn: "Huayan Temple (Zhiti Shan)", lon: 119.39333, lat: 26.82139, kind: "landmark" },
+  ],
+  bengbu: [
+    { nameZh: "张公山公园", nameEn: "Zhanggong Shan Park", lon: 117.335, lat: 32.9235, kind: "nature" },
+  ],
 };
