@@ -3770,4 +3770,106 @@ export const TRAVEL_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–August is cool and pleasant, making it a summer retreat; winters are long and severe, good for winter sports but pack warm layers. Wuying National Forest Park is some distance from the city centre, so allow a full day.",
   },
+  pingliang: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 14）。
+    identity:
+      "Pingliang is a prefecture-level city in eastern Gansu, at the meeting point of Gansu, Shaanxi and Ningxia, home to Kongtong Shan, a Taoist mountain and national 5A scenic area. It had a resident population of about 1.7532 million at the end of 2025 (Pingliang Statistics Bureau), down 19,500 from the year before, with an urbanisation rate of 50.99%.",
+    howItWorks:
+      "In 2023 the Kongtong Shan scenic area went through a 'three-way split' reform: the Pingliang municipal party committee and government merged the Kongtong Shan Scenic Area Management Committee, previously answering to Kongtong District, with the Kongtong Shan Administration Bureau into a single body with two nameplates, placing it directly under the city government rather than the district. At the same time, operating rights for the scenic area were handed to a local subsidiary of a provincial state-owned enterprise — Gansu Provincial Highway and Tourism Group's Pingliang Culture and Tourism Investment Company — which now runs ticketing, the cable car and day-to-day operations. In other words, ownership, administrative authority and operating rights for this national 5A scenic area now sit with three different levels — Kongtong District (the land), Pingliang city (administrative oversight) and a provincial state enterprise (actual operation) — not because of any merger or administrative upgrade, but because the mountain's three separate rights were handed to three separate parties.",
+    layout:
+      "The city centre is Kongtong District, with Kongtong Shan about 12 km to the west; Pingliang sits at the meeting point of Gansu, Shaanxi and Ningxia, serving as Gansu's eastern gateway toward those two provinces.",
+    gettingAround:
+      "The Kongtong Shan Airport within Pingliang is still under construction and not yet open. The nearest airports are Xi'an Xianyang International (XIY) and Lanzhou Zhongchuan International (LHW), both a long drive away. Buses and taxis cover the city, with a tourist line running to Kongtong Shan.",
+    culture:
+      "Mandarin is widely used. Kongtong Shan is revered as 'the foremost mountain under heaven' in Taoism — visit respectfully and avoid evaluative commentary on the faith. The diet centres on north-western wheat noodles, and Pingliang red beef cattle (a local livestock brand) are locally known. Tipping is not customary.",
+    seeAndDo:
+      "Kongtong Shan (cable car and hiking trails); the cluster of Taoist temples across the Kongtong Shan scenic area; the old town of Pingliang.",
+    whenAndTips:
+      "April–October is peak season for Kongtong Shan; the summit is colder in winter, so pack warm layers. The airport isn't open yet, so confirm your onward connection time from Xi'an or Lanzhou before you travel.",
+  },
+  qingyang: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 14）。
+    identity:
+      "Qingyang is a prefecture-level city in eastern Gansu and the largest oil-and-gas production base in the Longdong region. It had a resident population of about 2.1025 million at the end of 2025 (Qingyang Statistics Bureau), with an urbanisation rate of 48.03%.",
+    howItWorks:
+      "The Changqing Oilfield — one of the highest-output oil and gas fields operated by PetroChina, with exploration and production spanning Shaanxi, Gansu, Ningxia, Inner Mongolia and Shanxi — moved its headquarters from Qingyang, Gansu, to Xi'an, Shaanxi, in 1998. In other words, this major oilfield, which still explores and produces intensively within Qingyang and underpins the local economy, had its decision-making and research centre leave the very ground it operates on for another province's capital. The Changqing Oilfield itself started out in Changqingqiao town, Ning County, in Qingyang — the split between the headquarters and the resource base it left behind remains part of Qingyang's economic geography today.",
+    layout:
+      "The city centre is Xifeng District; Beishiku Temple lies about 25 km south-west of the district, at the confluence of the Pu and Ru rivers, the only cave-temple complex in Gansu built primarily around carved stone statues, begun in 509 CE under the Northern Wei; Huachi County lies to the north-east and was one of the sites of early revolutionary activity in the Shaanxi-Gansu border region.",
+    gettingAround:
+      "Qingyang Xifeng Airport (IQN) is about 9 km from the city centre in a straight line and has scheduled flights; it first opened in 1977, closed and reopened twice since. Buses and taxis cover the city. The climate is temperate continental monsoon, with four distinct seasons.",
+    culture:
+      "Mandarin is widely used. Qingyang is a centre of Longdong folk culture, with embroidered sachets and paper-cutting widely practised. The diet centres on Longdong-style wheat noodles. Tipping is not customary.",
+    seeAndDo:
+      "Beishiku Temple, a Northern Wei cave-temple complex; Zhouzuling Forest Park; Longdong embroidered sachets and folk crafts; the old streets of Xifeng District.",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather; summers are hot, winters cold and dry. Beishiku Temple is a bit of a drive from the city centre, so allow half a day.",
+  },
+  ulanqab: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 14）。
+    identity:
+      "Ulanqab is a prefecture-level city in central Inner Mongolia; Jining District, its centre, once belonged to Suiyuan province. It had a resident population of about 1.557 million at the end of 2025 (Ulanqab Statistics Bureau), with an urbanisation rate of 64.07%.",
+    howItWorks:
+      "The name 'Chahar' survives today only in the names of three banners under Ulanqab municipality — Chahar Right Front, Chahar Right Middle and Chahar Right Rear. Under the Qing dynasty, Chahar was one of the Eight Banners, the grazing territory of the Chahar Eight Banners, covering roughly today's Ulanqab, the southern part of Xilingol League and north-western Hebei. In 1913 the Republican government converted it into the 'Chahar Special District'; in 1928 it became 'Chahar Province'; in 1952 Chahar Province was abolished, its territory divided among Inner Mongolia, Hebei and Shanxi. In other words, a provincial-level entity that existed for nearly forty years has completely vanished from today's map — the only trace it left behind is the 'Chahar' in the names of these three Ulanqab banners.",
+    layout:
+      "The city centre is Jining District; the Jining Road ancient city site (from the Yuan-dynasty administrative unit 'Jining Road,' which gave the place-name 'Jining' its origin) lies about 25 km to the west, within Chahar Right Front Banner; Chahar Right Middle Banner lies to the south-west of the municipality and is home to the Huitengxile grasslands.",
+    gettingAround:
+      "Ulanqab Jining Airport (UCB) is about 11 km from the city centre in a straight line and has scheduled flights from multiple carriers; it opened in April 2016. By rail, the Beijing–Baotou line and the Beijing–Lanzhou high-speed line pass through the city. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used, with Mongolian spoken in some Mongol-populated areas. Ulanqab's cool climate makes it a summer retreat for parts of North China. Youmian (oat-flour noodles) is a signature local staple. Tipping is not customary.",
+    seeAndDo:
+      "The Jining Road ancient city site (Chahar Right Front Banner); the Huitengxile grasslands, with their wind turbines and alpine meadows; the streets of central Jining District.",
+    whenAndTips:
+      "June–August is cool and the peak season for escaping summer heat; winters are long and cold. A hired car or self-drive is recommended for out-of-town sights such as the Jining Road site and the Huitengxile grasslands.",
+  },
+  jinzhou: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 14）。
+    identity:
+      "Jinzhou is a regional centre city in western Liaoning and a port and logistics hub on the Bohai coast. It had a resident population of about 2.594 million at the end of 2024 (Jinzhou Statistics Bureau), with an urbanisation rate of 62.33%; the 2025 bulletin did not republish a resident-population figure, giving only a household-registered population of 2.731 million.",
+    howItWorks:
+      "The Jinzhou Economic and Technological Development Zone (also known externally as 'Jinzhou Coastal New Area') was upgraded to national-level status in 2010. It is more than an industrial park — its management committee directly administers three subdistricts (Tianqiao, Xingshan and Niangniangong), home to roughly 100,000 people. In other words, a body named for economic development and investment promotion actually runs the day-to-day administration of nearly 100,000 people, carrying out the full functions of a district government — yet in Jinzhou's formal administrative-division listing, it is still classed as a 'development zone,' not an urban district like Guta or Linghe.",
+    layout:
+      "The city centre is Guta District; the Jinzhou Economic and Technological Development Zone (Coastal New Area) lies along the coast in the south of the municipality, governing the Tianqiao, Xingshan and Niangniangong subdistricts; Bijia Shan, about 35 km south of Jinzhou in Liaodong Bay, reveals a natural sandbar 'bridge' to the mainland at low tide, submerged at high tide — popularly called 'China's Moses parting the sea.'",
+    gettingAround:
+      "Jinzhou Jinzhouwan Airport (JNZ) is about 24 km from the city centre in a straight line, opened in December 2015, and ran four routes in the 2025 winter-spring season with scheduled flights. By rail, Jinzhou station is a key node on the Beijing–Harbin line. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used. Jinzhou-style barbecue is a signature local dish, and Jinzhou pickled vegetables are a local specialty. Tipping is not customary.",
+    seeAndDo:
+      "Bijia Shan, with its low-tide sandbar bridge; the Jinzhou World Horticultural Exposition Garden; the streets of Guta District; sampling Jinzhou-style barbecue.",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather; winters are cold. Bijia Shan's sandbar bridge only appears at low tide, so check the tide table before visiting.",
+  },
+  huludao: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 14）。
+    identity:
+      "Huludao is a coastal prefecture-level city in western Liaoning, one of the last of the province's prefecture-level cities to be established. It had a resident population of about 2.318 million at the end of 2024 (Huludao Statistics Bureau), with an urbanisation rate of 57.32%; the 2025 bulletin did not republish a resident-population figure, giving only a household-registered population of 2.636 million.",
+    howItWorks:
+      "The name 'Huludao' only became official in 1994. On 12 June 1989 the State Council approved (Guohan [1989] No. 42) elevating Jinxi city to prefecture-level status with a city-administering-counties system; the newly created prefecture-level city was called 'Jinxi,' not 'Huludao.' It wasn't until 20 September 1994 that a second State Council approval (Guohan [1994] No. 97) renamed Jinxi to Huludao (after the well-known island of the same name within its territory), with the former Huludao District renamed Longgang District at the same time. In other words, the name that now sounds like it has always belonged to this place was actually 'Jinxi' for a full five years before it became 'Huludao' in 1994.",
+    layout:
+      "The city centre is Lianshan District; Longgang District (formerly Huludao District) lies along the coast in the south of the municipality; the old town of Xingcheng, a well-preserved Ming-dynasty garrison town, lies in Xingcheng city to the south-west; Suizhong County lies to the west, bordering Hebei.",
+    gettingAround:
+      "Huludao has no civil airport — Xingcheng Airport is a military field not open to civil aviation. The nearest civil airports are Jinzhou Jinzhouwan (JNZ) and Qinhuangdao Beidaihe (BPE). Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used. Huludao has a substantial coastal fishing industry, and seafood dominates the local diet. Xingcheng's old town retains a Ming-Qing street layout. Tipping is not customary.",
+    seeAndDo:
+      "The old town of Xingcheng, a Ming-dynasty garrison town; Xingcheng's beaches; the coastal scenery of Longgang District; Jiumenkou Great Wall in Suizhong County, a key Ming Great Wall pass and part of the World Heritage listing.",
+    whenAndTips:
+      "June–September has the most comfortable weather, good for the coast; winters are cold. There's no civil airport, so plan to connect via Jinzhou or Qinhuangdao.",
+  },
+  yingkou: {
+    // 全七段 sources: 同中文侧（2026-10-01 首写，China batch 14）。
+    identity:
+      "Yingkou is a coastal port city in southern Liaoning, at the mouth of the Liao River. It had a resident population of about 2.242 million at the end of 2024 (Yingkou Statistics Bureau), with an urbanisation rate of 68.65%; the 2025 bulletin did not republish a resident-population figure, giving only a household-registered population of 2.216 million.",
+    howItWorks:
+      "Yingkou's West Fort — one of the earliest Qing-dynasty fortifications built to a modern Western-style coastal-defence design, begun in 1882–1888 and now a national key cultural-heritage site — commands the left bank of the Liao River's mouth, guarding the choke point between the Bohai Sea and inland shipping on the Liao. Yingkou's own opening as a treaty port, one of the earliest in north-eastern China after the 1861 Convention of Peking, depended on that same Liao River channel. In other words, the geographic logic behind why today's Yingkou exists and thrives, and behind the fort built to defend it, share a single anchor point: the mouth of the Liao River.",
+    layout:
+      "The city centre is Zhanqian District; the West Fort site lies on the left bank of the Liao River's mouth in Xi District; Bayuquan District lies in the south of the municipality and is home to Yingkou's deep-water port; Gaizhou city lies to the south-west and was historically a Ming-Qing coastal-defence garrison.",
+    gettingAround:
+      "Yingkou Lanqi Airport (YKH) is about 17 km from the city centre in a straight line, opened in February 2016, and has scheduled flights. By rail, the Harbin–Dalian high-speed line passes through the city. Buses and taxis cover the city.",
+    culture:
+      "Mandarin is widely used. As a port city at the Liao River's mouth, seafood and Liaoning cuisine define the local diet. Tipping is not customary.",
+    seeAndDo:
+      "The West Fort site, a Qing-dynasty coastal fortification; the scenery along the Liao River's mouth; the port views of Bayuquan District; the treaty-port-era old town of Yingkou.",
+    whenAndTips:
+      "May–September has the most comfortable weather, good for the coast; winters are cold. The West Fort site is not far from the city centre, so it can be seen in half a day.",
+  },
 };
